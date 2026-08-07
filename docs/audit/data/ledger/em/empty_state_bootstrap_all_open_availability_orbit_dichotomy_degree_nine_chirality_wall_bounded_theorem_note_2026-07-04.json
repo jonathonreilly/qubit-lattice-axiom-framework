@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0b4d8af5a284c4d28b8630d05b776697336464a8a045ad64c514b26140970e62",
+  "note_hash": "b3f49c0394f50e03471243594b7a5742d6ffdd1c45e949f22ffc1daaa6c33daf",
   "note_path": "docs/EMPTY_STATE_BOOTSTRAP_ALL_OPEN_AVAILABILITY_ORBIT_DICHOTOMY_DEGREE_NINE_CHIRALITY_WALL_BOUNDED_THEOREM_NOTE_2026-07-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -55,7 +55,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04.py",
-  "title": "The Empty-State Bootstrap: \"Records Form\" Grounds the First Availability Set, Proper Covariance Makes It Cubic-Invariant, Its Orbits Split Into Mirror-Locus (Achiral) and Generic Twin (Chiral) Classes, and Content Chirality Is Invisible Below Degree Nine \u2014 the Unique Minimal Detector Is the l = 9 Cubic Harmonic, and a Chiral First Availability Set Spends the Same Single Orientation Bit (Bounded Theorem)",
+  "title": "The Empty-State Bootstrap: Proper Covariance Makes the First Support Cubic-Invariant, Its Orbits Split Into Mirror-Locus and Generic-Twin Classes, and the Minimal Cubic Det-Character Polynomial Has Degree Nine (Bounded Theorem)",
   "transitive_descendants": 5,
   "verdict_rationale": null
 }

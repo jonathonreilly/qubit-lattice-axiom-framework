@@ -1,598 +1,42 @@
 {
-  "audit_date": "2026-08-03T11:15:59.514190+00:00",
-  "audit_invocation_history": [
-    "b6575ce7ed9c4d348a1b984c3862a7d7",
-    "18b92f9b76cf4461ba10ee5824eaf42e",
-    "f729f144e0a14ff7b81304404d121e14"
-  ],
-  "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 8,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-      "digest": "e39df4c01ec0d812fcd68535935379e06494815df15a92619913680dd4d0fe1a",
-      "judgment": {
-        "audit_date": "2026-08-03T11:15:59.514190+00:00",
-        "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-judicial-1-20260803-be94e6f3",
-        "auditor_confidence": "judicial",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
-        "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-        "claim_type": "positive_theorem",
-        "claim_type_provenance": "judicial_review",
-        "cross_confirmation": {
-          "agreement_schema": "audit_tuple_v2",
-          "first_audit": {
-            "audit_date": "2026-08-03T11:02:04.417380+00:00",
-            "audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
-            "auditor": "codex-audit-batch-A-20260803-0ae7a2ac",
-            "auditor_family": "codex-gpt-5.6",
-            "auditor_model": "gpt-5.6-sol",
-            "auditor_reasoning_effort": "xhigh",
-            "chain_closes": true,
-            "chain_closure_explanation": "For three atoms, the constructed generator has Q_ij=1/pi_j off diagonal and Q_jj=-2/pi_j, so each component of Q pi equals 1+1-2=0; reversibility and irreducibility give one zero mode and negative transverse modes. Positive rescaling preserves the kernel, while the two-state kernel depends only on the product rt.",
-            "claim_scope": "For s=1,2,3 on the stated three-atom dial, explicit reversible Markov generators stabilize the sampled distributions; generator rescaling preserves each stationary distribution, and the displayed two-state example shows that a transition kernel fixes only the rate-clock product.",
-            "claim_type": "positive_theorem",
-            "decoration_parent_claim_id": null,
-            "independence": "cross_family",
-            "load_bearing_step": "For each sampled positive dial distribution pi(s), the explicit reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-            "load_bearing_step_class": "A",
-            "negative_assertion_classes": [],
-            "notes_for_re_audit_if_any": "Recheck if the claim is extended beyond the sampled dial points or beyond supplied-generator and relative-rate statements.",
-            "open_dependency_paths": [],
-            "runner_check_breakdown": {
-              "A": 4,
-              "B": 13,
-              "C": 8,
-              "D": 5,
-              "total_pass": 30
-            },
-            "verdict": "audited_clean",
-            "verdict_rationale": "The constructive claim is self-contained and exact: the specified generator has zero column sums, detailed balance, Qpi=0, and an irreducible reversible spectrum with one zero and negative transverse modes. Independent substitution confirms the displayed eigenvalue signs, positive-rescaling behavior, and the shared transition matrix at rt=log(2)/2; no observational value is tuned. The accepted Record boundary supplies no formation weighting or rate, and the note explicitly excludes generator choice, dial selection, probability origin, and physical-unit assignment from its scope."
-          },
-          "judicial_panel_record_v1": {
-            "cid": "record_clock_rate_normalization_gate_2026-06-06",
-            "disagreement_fingerprint": {
-              "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-              "first_audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
-              "note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
-              "schema": "judicial_disagreement_fingerprint_v1",
-              "seat_summaries_sha256": "1cb4ec4e35e31e27ffe593ebbde0a5c9634eae957c7f567eefb4484f216ed98a",
-              "second_audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e"
-            },
-            "failures": [],
-            "invocation_id": "f729f144e0a14ff7b81304404d121e14",
-            "majority_count": 5,
-            "panel": 2,
-            "result": "majority_candidate",
-            "schema": "judicial_panel_record_v1",
-            "tally": [
-              {
-                "count": 5,
-                "tuple": [
-                  "second",
-                  "audited_conditional",
-                  "positive_theorem",
-                  "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-                  "A",
-                  null,
-                  [
-                    "derived_no_go_boundary"
-                  ]
-                ]
-              }
-            ],
-            "votes": [
-              {
-                "auditor": "codex-judicial-1-20260803-be94e6f3",
-                "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
-                "hybrid_resolution_note": null,
-                "judge": 1,
-                "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-                "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_conditional",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-2-20260803-d625766c",
-                "first_auditor_error": "The first auditor treated the negative interface conclusions as mere coverage disclaimers, despite the note asserting Record-only dial-selection and absolute-rate exclusions; its clean vote also omitted the mandatory N1-N8 certification.",
-                "hybrid_resolution_note": null,
-                "judge": 2,
-                "judgment_rationale": "The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-                "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_conditional",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-3-20260803-92bf52a3",
-                "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying audited_clean despite the five firewall checks being hard-coded True assertions and the absence of required N1-N8 evidence.",
-                "hybrid_resolution_note": null,
-                "judge": 3,
-                "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-                "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_conditional",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-4-20260803-ee21bbb2",
-                "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
-                "hybrid_resolution_note": null,
-                "judge": 4,
-                "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-                "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_conditional",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-5-20260803-ff8bc087",
-                "first_auditor_error": "It treated the Record-only dial-selection and absolute-rate exclusions as non-load-bearing disclaimers, despite their inclusion in the source\u2019s exact interface result and the runner implementing all five firewall checks as literal True assertions without N1-N8 stress-test evidence.",
-                "hybrid_resolution_note": null,
-                "judge": 5,
-                "judgment_rationale": "The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-                "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_conditional",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              }
-            ]
-          },
-          "mode": "judicial_panel_majority",
-          "second_audit": {
-            "audit_date": "2026-08-03T11:02:04.424073+00:00",
-            "audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e",
-            "auditor": "codex-audit-batch-B-20260803-a028836b",
-            "auditor_family": "codex-gpt-5.6",
-            "auditor_model": "gpt-5.6-sol",
-            "auditor_reasoning_effort": "xhigh",
-            "chain_closes": false,
-            "chain_closure_explanation": "The constructive algebra closes, but the runner's five firewall conclusions are literal True assertions rather than executed checks, and current-cycle N1-N8 evidence is absent for the derived negative boundary.",
-            "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-            "claim_type": "positive_theorem",
-            "decoration_parent_claim_id": null,
-            "independence": "fresh_context",
-            "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-            "load_bearing_step_class": "A",
-            "negative_assertion_classes": [
-              "derived_no_go_boundary"
-            ],
-            "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-            "open_dependency_paths": [],
-            "runner_check_breakdown": {
-              "A": 4,
-              "B": 13,
-              "C": 8,
-              "D": 5,
-              "total_pass": 30
-            },
-            "verdict": "audited_conditional",
-            "verdict_rationale": "Issue: the generator, stationarity, and rate-clock algebra is computed, but all five claim-firewall checks are hard-coded as check(..., True). Why this blocks: the source includes those negative interface conclusions in its exact theorem, while the live runner neither tests them nor supplies the mandatory N1-N8 evidence for clean certification. Repair target: replace the literal booleans with executed checks against the supplied Record premise and exact scale-covariance algebra, then add current-cycle negative-boundary stress tests. Claim boundary until fixed: the explicit s=1,2,3 construction, rescaling invariance, and displayed two-state degeneracy remain exact, but the broader firewall certification is conditional."
-          },
-          "status": "third_confirmed_second",
-          "third_audit": {
-            "audit_date": "2026-08-03T11:15:59.514190+00:00",
-            "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
-            "auditor": "codex-judicial-1-20260803-be94e6f3",
-            "auditor_family": "codex-gpt-5.6",
-            "auditor_model": "gpt-5.6-sol",
-            "auditor_reasoning_effort": "xhigh",
-            "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-            "claim_type": "positive_theorem",
-            "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
-            "independence": "judicial_review",
-            "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
-            "load_bearing_step_class": "A",
-            "negative_assertion_classes": [
-              "derived_no_go_boundary"
-            ],
-            "second_auditor_error": "none",
-            "sided_with": "second",
-            "verdict": "audited_conditional"
-          }
-        },
-        "decoration_parent_claim_id": null,
-        "independence": "judicial_review",
-        "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 0,
-          "B": 0,
-          "C": 0,
-          "D": 0,
-          "total_pass": 0
-        },
-        "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 11.537,
-    "packet_policy_fingerprint": {
-      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f",
-    "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "8e8c59aafac097d030a61d7a1bc779363e8ed9332df2deffb08e18bde23631a7",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-        "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-        "claim_type": "positive_theorem",
-        "ledger_note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
-        "note_path": "docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md",
-        "note_sha256": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438"
-      }
-    },
-    "transitive_descendants": 742
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-judicial-1-20260803-be94e6f3",
-  "auditor_confidence": "judicial",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-  "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-08-03T11:15:59.514190+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "agreement_schema": "audit_tuple_v2",
-    "first_audit": {
-      "audit_date": "2026-08-03T11:02:04.417380+00:00",
-      "audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
-      "auditor": "codex-audit-batch-A-20260803-0ae7a2ac",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": true,
-      "chain_closure_explanation": "For three atoms, the constructed generator has Q_ij=1/pi_j off diagonal and Q_jj=-2/pi_j, so each component of Q pi equals 1+1-2=0; reversibility and irreducibility give one zero mode and negative transverse modes. Positive rescaling preserves the kernel, while the two-state kernel depends only on the product rt.",
-      "claim_scope": "For s=1,2,3 on the stated three-atom dial, explicit reversible Markov generators stabilize the sampled distributions; generator rescaling preserves each stationary distribution, and the displayed two-state example shows that a transition kernel fixes only the rate-clock product.",
-      "claim_type": "positive_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "cross_family",
-      "load_bearing_step": "For each sampled positive dial distribution pi(s), the explicit reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "Recheck if the claim is extended beyond the sampled dial points or beyond supplied-generator and relative-rate statements.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 4,
-        "B": 13,
-        "C": 8,
-        "D": 5,
-        "total_pass": 30
-      },
-      "verdict": "audited_clean",
-      "verdict_rationale": "The constructive claim is self-contained and exact: the specified generator has zero column sums, detailed balance, Qpi=0, and an irreducible reversible spectrum with one zero and negative transverse modes. Independent substitution confirms the displayed eigenvalue signs, positive-rescaling behavior, and the shared transition matrix at rt=log(2)/2; no observational value is tuned. The accepted Record boundary supplies no formation weighting or rate, and the note explicitly excludes generator choice, dial selection, probability origin, and physical-unit assignment from its scope."
-    },
-    "judicial_panel_record_v1": {
-      "cid": "record_clock_rate_normalization_gate_2026-06-06",
-      "disagreement_fingerprint": {
-        "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-        "first_audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
-        "note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
-        "schema": "judicial_disagreement_fingerprint_v1",
-        "seat_summaries_sha256": "1cb4ec4e35e31e27ffe593ebbde0a5c9634eae957c7f567eefb4484f216ed98a",
-        "second_audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e"
-      },
-      "failures": [],
-      "invocation_id": "f729f144e0a14ff7b81304404d121e14",
-      "majority_count": 5,
-      "panel": 2,
-      "result": "majority_candidate",
-      "schema": "judicial_panel_record_v1",
-      "tally": [
-        {
-          "count": 5,
-          "tuple": [
-            "second",
-            "audited_conditional",
-            "positive_theorem",
-            "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-            "A",
-            null,
-            [
-              "derived_no_go_boundary"
-            ]
-          ]
-        }
-      ],
-      "votes": [
-        {
-          "auditor": "codex-judicial-1-20260803-be94e6f3",
-          "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
-          "hybrid_resolution_note": null,
-          "judge": 1,
-          "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-          "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-2-20260803-d625766c",
-          "first_auditor_error": "The first auditor treated the negative interface conclusions as mere coverage disclaimers, despite the note asserting Record-only dial-selection and absolute-rate exclusions; its clean vote also omitted the mandatory N1-N8 certification.",
-          "hybrid_resolution_note": null,
-          "judge": 2,
-          "judgment_rationale": "The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-          "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-3-20260803-92bf52a3",
-          "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying audited_clean despite the five firewall checks being hard-coded True assertions and the absence of required N1-N8 evidence.",
-          "hybrid_resolution_note": null,
-          "judge": 3,
-          "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-          "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-4-20260803-ee21bbb2",
-          "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
-          "hybrid_resolution_note": null,
-          "judge": 4,
-          "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-          "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-5-20260803-ff8bc087",
-          "first_auditor_error": "It treated the Record-only dial-selection and absolute-rate exclusions as non-load-bearing disclaimers, despite their inclusion in the source\u2019s exact interface result and the runner implementing all five firewall checks as literal True assertions without N1-N8 stress-test evidence.",
-          "hybrid_resolution_note": null,
-          "judge": 5,
-          "judgment_rationale": "The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-          "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        }
-      ]
-    },
-    "mode": "judicial_panel_majority",
-    "second_audit": {
-      "audit_date": "2026-08-03T11:02:04.424073+00:00",
-      "audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e",
-      "auditor": "codex-audit-batch-B-20260803-a028836b",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": false,
-      "chain_closure_explanation": "The constructive algebra closes, but the runner's five firewall conclusions are literal True assertions rather than executed checks, and current-cycle N1-N8 evidence is absent for the derived negative boundary.",
-      "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-      "claim_type": "positive_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "fresh_context",
-      "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [
-        "derived_no_go_boundary"
-      ],
-      "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 4,
-        "B": 13,
-        "C": 8,
-        "D": 5,
-        "total_pass": 30
-      },
-      "verdict": "audited_conditional",
-      "verdict_rationale": "Issue: the generator, stationarity, and rate-clock algebra is computed, but all five claim-firewall checks are hard-coded as check(..., True). Why this blocks: the source includes those negative interface conclusions in its exact theorem, while the live runner neither tests them nor supplies the mandatory N1-N8 evidence for clean certification. Repair target: replace the literal booleans with executed checks against the supplied Record premise and exact scale-covariance algebra, then add current-cycle negative-boundary stress tests. Claim boundary until fixed: the explicit s=1,2,3 construction, rescaling invariance, and displayed two-state degeneracy remain exact, but the broader firewall certification is conditional."
-    },
-    "status": "third_confirmed_second",
-    "third_audit": {
-      "audit_date": "2026-08-03T11:15:59.514190+00:00",
-      "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
-      "auditor": "codex-judicial-1-20260803-be94e6f3",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
-      "claim_type": "positive_theorem",
-      "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [
-        "derived_no_go_boundary"
-      ],
-      "second_auditor_error": "none",
-      "sided_with": "second",
-      "verdict": "audited_conditional"
-    }
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 4,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 11.537,
-  "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
   "note_path": "docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -5531,6 +4975,599 @@
         "total_pass": 30
       },
       "verdict_rationale": "Independently, each row of Q pi equals -2+1+1=0, detailed balance gives Q_ij pi_j=Q_ji pi_i=1, and the associated symmetric form has one zero direction and two strictly negative directions. Positive rescaling preserves the kernel and scales the nonzero spectrum, while both displayed rate-clock pairs give exp(-2rt)=1/2 and hence the same transition matrix. The five section-D checks do not compute their assertions, so the clean verdict is confined to the explicit finite construction and rate-clock product example stated in the audited scope."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.783533+00:00",
+      "audit_date": "2026-08-03T11:15:59.514190+00:00",
+      "audit_invocation_history": [
+        "b6575ce7ed9c4d348a1b984c3862a7d7",
+        "18b92f9b76cf4461ba10ee5824eaf42e",
+        "f729f144e0a14ff7b81304404d121e14"
+      ],
+      "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 8,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
+          "digest": "e39df4c01ec0d812fcd68535935379e06494815df15a92619913680dd4d0fe1a",
+          "judgment": {
+            "audit_date": "2026-08-03T11:15:59.514190+00:00",
+            "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
+            "audit_status": "audited_conditional",
+            "auditor": "codex-judicial-1-20260803-be94e6f3",
+            "auditor_confidence": "judicial",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+            "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+            "claim_type": "positive_theorem",
+            "claim_type_provenance": "judicial_review",
+            "cross_confirmation": {
+              "agreement_schema": "audit_tuple_v2",
+              "first_audit": {
+                "audit_date": "2026-08-03T11:02:04.417380+00:00",
+                "audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
+                "auditor": "codex-audit-batch-A-20260803-0ae7a2ac",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "chain_closes": true,
+                "chain_closure_explanation": "For three atoms, the constructed generator has Q_ij=1/pi_j off diagonal and Q_jj=-2/pi_j, so each component of Q pi equals 1+1-2=0; reversibility and irreducibility give one zero mode and negative transverse modes. Positive rescaling preserves the kernel, while the two-state kernel depends only on the product rt.",
+                "claim_scope": "For s=1,2,3 on the stated three-atom dial, explicit reversible Markov generators stabilize the sampled distributions; generator rescaling preserves each stationary distribution, and the displayed two-state example shows that a transition kernel fixes only the rate-clock product.",
+                "claim_type": "positive_theorem",
+                "decoration_parent_claim_id": null,
+                "independence": "cross_family",
+                "load_bearing_step": "For each sampled positive dial distribution pi(s), the explicit reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Recheck if the claim is extended beyond the sampled dial points or beyond supplied-generator and relative-rate statements.",
+                "open_dependency_paths": [],
+                "runner_check_breakdown": {
+                  "A": 4,
+                  "B": 13,
+                  "C": 8,
+                  "D": 5,
+                  "total_pass": 30
+                },
+                "verdict": "audited_clean",
+                "verdict_rationale": "The constructive claim is self-contained and exact: the specified generator has zero column sums, detailed balance, Qpi=0, and an irreducible reversible spectrum with one zero and negative transverse modes. Independent substitution confirms the displayed eigenvalue signs, positive-rescaling behavior, and the shared transition matrix at rt=log(2)/2; no observational value is tuned. The accepted Record boundary supplies no formation weighting or rate, and the note explicitly excludes generator choice, dial selection, probability origin, and physical-unit assignment from its scope."
+              },
+              "judicial_panel_record_v1": {
+                "cid": "record_clock_rate_normalization_gate_2026-06-06",
+                "disagreement_fingerprint": {
+                  "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
+                  "first_audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
+                  "note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
+                  "schema": "judicial_disagreement_fingerprint_v1",
+                  "seat_summaries_sha256": "1cb4ec4e35e31e27ffe593ebbde0a5c9634eae957c7f567eefb4484f216ed98a",
+                  "second_audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e"
+                },
+                "failures": [],
+                "invocation_id": "f729f144e0a14ff7b81304404d121e14",
+                "majority_count": 5,
+                "panel": 2,
+                "result": "majority_candidate",
+                "schema": "judicial_panel_record_v1",
+                "tally": [
+                  {
+                    "count": 5,
+                    "tuple": [
+                      "second",
+                      "audited_conditional",
+                      "positive_theorem",
+                      "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                      "A",
+                      null,
+                      [
+                        "derived_no_go_boundary"
+                      ]
+                    ]
+                  }
+                ],
+                "votes": [
+                  {
+                    "auditor": "codex-judicial-1-20260803-be94e6f3",
+                    "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
+                    "hybrid_resolution_note": null,
+                    "judge": 1,
+                    "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+                    "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_conditional",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-2-20260803-d625766c",
+                    "first_auditor_error": "The first auditor treated the negative interface conclusions as mere coverage disclaimers, despite the note asserting Record-only dial-selection and absolute-rate exclusions; its clean vote also omitted the mandatory N1-N8 certification.",
+                    "hybrid_resolution_note": null,
+                    "judge": 2,
+                    "judgment_rationale": "The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+                    "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_conditional",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-3-20260803-92bf52a3",
+                    "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying audited_clean despite the five firewall checks being hard-coded True assertions and the absence of required N1-N8 evidence.",
+                    "hybrid_resolution_note": null,
+                    "judge": 3,
+                    "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+                    "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_conditional",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-4-20260803-ee21bbb2",
+                    "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
+                    "hybrid_resolution_note": null,
+                    "judge": 4,
+                    "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+                    "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_conditional",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-5-20260803-ff8bc087",
+                    "first_auditor_error": "It treated the Record-only dial-selection and absolute-rate exclusions as non-load-bearing disclaimers, despite their inclusion in the source\u2019s exact interface result and the runner implementing all five firewall checks as literal True assertions without N1-N8 stress-test evidence.",
+                    "hybrid_resolution_note": null,
+                    "judge": 5,
+                    "judgment_rationale": "The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+                    "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_conditional",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  }
+                ]
+              },
+              "mode": "judicial_panel_majority",
+              "second_audit": {
+                "audit_date": "2026-08-03T11:02:04.424073+00:00",
+                "audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e",
+                "auditor": "codex-audit-batch-B-20260803-a028836b",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "chain_closes": false,
+                "chain_closure_explanation": "The constructive algebra closes, but the runner's five firewall conclusions are literal True assertions rather than executed checks, and current-cycle N1-N8 evidence is absent for the derived negative boundary.",
+                "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                "claim_type": "positive_theorem",
+                "decoration_parent_claim_id": null,
+                "independence": "fresh_context",
+                "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+                "open_dependency_paths": [],
+                "runner_check_breakdown": {
+                  "A": 4,
+                  "B": 13,
+                  "C": 8,
+                  "D": 5,
+                  "total_pass": 30
+                },
+                "verdict": "audited_conditional",
+                "verdict_rationale": "Issue: the generator, stationarity, and rate-clock algebra is computed, but all five claim-firewall checks are hard-coded as check(..., True). Why this blocks: the source includes those negative interface conclusions in its exact theorem, while the live runner neither tests them nor supplies the mandatory N1-N8 evidence for clean certification. Repair target: replace the literal booleans with executed checks against the supplied Record premise and exact scale-covariance algebra, then add current-cycle negative-boundary stress tests. Claim boundary until fixed: the explicit s=1,2,3 construction, rescaling invariance, and displayed two-state degeneracy remain exact, but the broader firewall certification is conditional."
+              },
+              "status": "third_confirmed_second",
+              "third_audit": {
+                "audit_date": "2026-08-03T11:15:59.514190+00:00",
+                "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
+                "auditor": "codex-judicial-1-20260803-be94e6f3",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                "claim_type": "positive_theorem",
+                "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
+                "independence": "judicial_review",
+                "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [
+                  "derived_no_go_boundary"
+                ],
+                "second_auditor_error": "none",
+                "sided_with": "second",
+                "verdict": "audited_conditional"
+              }
+            },
+            "decoration_parent_claim_id": null,
+            "independence": "judicial_review",
+            "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 0,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 0
+            },
+            "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 11.537,
+        "packet_policy_fingerprint": {
+          "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f",
+        "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "8e8c59aafac097d030a61d7a1bc779363e8ed9332df2deffb08e18bde23631a7",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
+            "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+            "claim_type": "positive_theorem",
+            "ledger_note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
+            "note_path": "docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md",
+            "note_sha256": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438"
+          }
+        },
+        "transitive_descendants": 742
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judicial-1-20260803-be94e6f3",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+      "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-08-03T11:15:59.514190+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "agreement_schema": "audit_tuple_v2",
+        "first_audit": {
+          "audit_date": "2026-08-03T11:02:04.417380+00:00",
+          "audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
+          "auditor": "codex-audit-batch-A-20260803-0ae7a2ac",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": true,
+          "chain_closure_explanation": "For three atoms, the constructed generator has Q_ij=1/pi_j off diagonal and Q_jj=-2/pi_j, so each component of Q pi equals 1+1-2=0; reversibility and irreducibility give one zero mode and negative transverse modes. Positive rescaling preserves the kernel, while the two-state kernel depends only on the product rt.",
+          "claim_scope": "For s=1,2,3 on the stated three-atom dial, explicit reversible Markov generators stabilize the sampled distributions; generator rescaling preserves each stationary distribution, and the displayed two-state example shows that a transition kernel fixes only the rate-clock product.",
+          "claim_type": "positive_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "For each sampled positive dial distribution pi(s), the explicit reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "Recheck if the claim is extended beyond the sampled dial points or beyond supplied-generator and relative-rate statements.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 13,
+            "C": 8,
+            "D": 5,
+            "total_pass": 30
+          },
+          "verdict": "audited_clean",
+          "verdict_rationale": "The constructive claim is self-contained and exact: the specified generator has zero column sums, detailed balance, Qpi=0, and an irreducible reversible spectrum with one zero and negative transverse modes. Independent substitution confirms the displayed eigenvalue signs, positive-rescaling behavior, and the shared transition matrix at rt=log(2)/2; no observational value is tuned. The accepted Record boundary supplies no formation weighting or rate, and the note explicitly excludes generator choice, dial selection, probability origin, and physical-unit assignment from its scope."
+        },
+        "judicial_panel_record_v1": {
+          "cid": "record_clock_rate_normalization_gate_2026-06-06",
+          "disagreement_fingerprint": {
+            "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
+            "first_audit_invocation_id": "b6575ce7ed9c4d348a1b984c3862a7d7",
+            "note_hash": "d775b4df1b6999b927703fc3400cccc9b0d900b52f58727be0f21b76fff71438",
+            "schema": "judicial_disagreement_fingerprint_v1",
+            "seat_summaries_sha256": "1cb4ec4e35e31e27ffe593ebbde0a5c9634eae957c7f567eefb4484f216ed98a",
+            "second_audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e"
+          },
+          "failures": [],
+          "invocation_id": "f729f144e0a14ff7b81304404d121e14",
+          "majority_count": 5,
+          "panel": 2,
+          "result": "majority_candidate",
+          "schema": "judicial_panel_record_v1",
+          "tally": [
+            {
+              "count": 5,
+              "tuple": [
+                "second",
+                "audited_conditional",
+                "positive_theorem",
+                "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+                "A",
+                null,
+                [
+                  "derived_no_go_boundary"
+                ]
+              ]
+            }
+          ],
+          "votes": [
+            {
+              "auditor": "codex-judicial-1-20260803-be94e6f3",
+              "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
+              "hybrid_resolution_note": null,
+              "judge": 1,
+              "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+              "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-2-20260803-d625766c",
+              "first_auditor_error": "The first auditor treated the negative interface conclusions as mere coverage disclaimers, despite the note asserting Record-only dial-selection and absolute-rate exclusions; its clean vote also omitted the mandatory N1-N8 certification.",
+              "hybrid_resolution_note": null,
+              "judge": 2,
+              "judgment_rationale": "The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+              "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-3-20260803-92bf52a3",
+              "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying audited_clean despite the five firewall checks being hard-coded True assertions and the absence of required N1-N8 evidence.",
+              "hybrid_resolution_note": null,
+              "judge": 3,
+              "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+              "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-4-20260803-ee21bbb2",
+              "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
+              "hybrid_resolution_note": null,
+              "judge": 4,
+              "judgment_rationale": "The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+              "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-5-20260803-ff8bc087",
+              "first_auditor_error": "It treated the Record-only dial-selection and absolute-rate exclusions as non-load-bearing disclaimers, despite their inclusion in the source\u2019s exact interface result and the runner implementing all five firewall checks as literal True assertions without N1-N8 stress-test evidence.",
+              "hybrid_resolution_note": null,
+              "judge": 5,
+              "judgment_rationale": "The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+              "ratified_claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            }
+          ]
+        },
+        "mode": "judicial_panel_majority",
+        "second_audit": {
+          "audit_date": "2026-08-03T11:02:04.424073+00:00",
+          "audit_invocation_id": "18b92f9b76cf4461ba10ee5824eaf42e",
+          "auditor": "codex-audit-batch-B-20260803-a028836b",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": false,
+          "chain_closure_explanation": "The constructive algebra closes, but the runner's five firewall conclusions are literal True assertions rather than executed checks, and current-cycle N1-N8 evidence is absent for the derived negative boundary.",
+          "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+          "claim_type": "positive_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 13,
+            "C": 8,
+            "D": 5,
+            "total_pass": 30
+          },
+          "verdict": "audited_conditional",
+          "verdict_rationale": "Issue: the generator, stationarity, and rate-clock algebra is computed, but all five claim-firewall checks are hard-coded as check(..., True). Why this blocks: the source includes those negative interface conclusions in its exact theorem, while the live runner neither tests them nor supplies the mandatory N1-N8 evidence for clean certification. Repair target: replace the literal booleans with executed checks against the supplied Record premise and exact scale-covariance algebra, then add current-cycle negative-boundary stress tests. Claim boundary until fixed: the explicit s=1,2,3 construction, rescaling invariance, and displayed two-state degeneracy remain exact, but the broader firewall certification is conditional."
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-08-03T11:15:59.514190+00:00",
+          "audit_invocation_id": "f729f144e0a14ff7b81304404d121e14",
+          "auditor": "codex-judicial-1-20260803-be94e6f3",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "It treated the rate-clock nonidentifiability and Record-only selection exclusions as mere scope disclaimers, leaving negative_assertion_classes empty and ratifying clean despite the five firewall checks being hard-coded True assertions with no N1-N8 stress-test evidence.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "science_changed:framework_premise_epoch",
+      "load_bearing_step": "For each sampled dial distribution pi(s), the constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and negative transverse eigenmodes.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: replace the five literal-True firewall checks with executed premise/algebra tests and add current-cycle N1-N8 stress-test evidence before requesting a clean re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
     }
   ],
   "prose_corrections": [],
@@ -5545,5 +5582,5 @@
   "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
   "title": "Record Clock/Rate Normalization And Stable-Dial Gate",
   "transitive_descendants": 742,
-  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-be94e6f3\", \"judge\": 1, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-d625766c\", \"judge\": 2, \"rationale\": \"The constructive generator, stationarity, rescaling, and two-state rate-clock algebra closes exactly. However, the broader negative interface conclusions are represented in the runner by five literal True assertions and lack current-cycle N1-N8 evidence, so the full scoped claim is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-92bf52a3\", \"judge\": 3, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. However, the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; those firewall conclusions are not executed by the runner, and the packet lacks current-cycle N1-N8 evidence. The full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-ee21bbb2\", \"judge\": 4, \"rationale\": \"The constructive algebra is exact: the supplied generators stabilize the three sampled distributions, and positive rescaling preserves stationarity. But the note also asserts derived exclusions concerning Record-only dial selection and absolute-rate extraction; the runner does not execute those firewall checks, and the packet lacks current-cycle N1-N8 evidence, so the full scoped result is conditional rather than clean.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-ff8bc087\", \"judge\": 5, \"rationale\": \"The constructive algebra closes for the sampled distributions, generator rescaling, and two-state rate-clock example. However, the source also presents Record-only dial selection and absolute-rate extraction as excluded, while the runner merely hard-codes those firewall conclusions and supplies no current-cycle N1-N8 evidence; the full scoped result therefore remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"For the stated three-atom dial at s=1,2,3, the supplied generators stabilize the sampled distributions and rate rescaling preserves stationarity, while the note further treats Record-only dial selection and absolute-rate extraction as excluded.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
+  "verdict_rationale": null
 }

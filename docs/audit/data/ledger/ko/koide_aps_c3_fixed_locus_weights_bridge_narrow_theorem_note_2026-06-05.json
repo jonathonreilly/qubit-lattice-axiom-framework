@@ -1,95 +1,44 @@
 {
-  "audit_date": "2026-07-12T18:27:34Z",
-  "audit_invocation_history": [
-    "bcd5eb07eaf543eba04d9d0c4a86bbe0",
-    "260c384fe1c67d664918e3d8d7912346"
-  ],
-  "audit_invocation_id": "260c384fe1c67d664918e3d8d7912346",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "load_bearing_score": 19.96,
-    "runner_hash": "ee6497e987b1a31d3619025d699d453371a12d1269f0079bfc665b81aa20c1bd",
-    "transitive_descendants": 497
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-gpt-5.6-sol-xhigh-c3-fixed-locus-second-seat-2026-07-12",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The Lattice axiom supplies the proper cubic body-diagonal rotation, and exact two-dimensional linear algebra computes both nonidentity normal determinants without any additional physical bridge. Substitution into the explicitly defined finite group average gives 2/9.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-  "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-12T18:27:34Z",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-07-12T18:04:33Z",
-      "audit_invocation_id": "bcd5eb07eaf543eba04d9d0c4a86bbe0",
-      "auditor": "codex-audit-loop-gpt-5.6-sol-xhigh-c3-fixed-locus-2026-07-12",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
-      "claim_type": "positive_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "second_audit": {
-      "audit_date": "2026-07-12T18:27:34Z",
-      "audit_invocation_id": "260c384fe1c67d664918e3d8d7912346",
-      "auditor": "codex-gpt-5.6-sol-xhigh-c3-fixed-locus-second-seat-2026-07-12",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
-      "claim_type": "positive_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "status": "confirmed"
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms"
   ],
   "direct_in_degree": 22,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained",
-  "load_bearing_score": 24.604,
-  "load_bearing_step": "For k=1,2 the real normal determinants det_R(I-P^k|_N) are both 3, so the defined group average is (1/3)(1/3+1/3)=2/9.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "retained_no_go",
-  "max_descendant_status_rank": 100,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 20.604,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2",
   "note_path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": "Second-seat cross-confirmation: re-check any downstream citation for attempts to promote this local defined average into an APS, charged-lepton, readout, probability, or physical-axis claim.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4685,19 +4634,108 @@
         "total_pass": 16
       },
       "verdict_rationale": "The local arithmetic closes exactly: P restricts in the displayed normal basis to [[0,-1],[1,-1]], giving det(I-P|_N)=det(I-P^2|_N)=3 and the defined average 2/9. An independent hand calculation reproduces every displayed matrix, polynomial, determinant, and normalization. The clean scope is only this local representation-theory value; physical charged-lepton, APS, h-unit, probability, and readout uses remain outside the theorem."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.739555+00:00",
+      "audit_date": "2026-07-12T18:27:34Z",
+      "audit_invocation_history": [
+        "bcd5eb07eaf543eba04d9d0c4a86bbe0",
+        "260c384fe1c67d664918e3d8d7912346"
+      ],
+      "audit_invocation_id": "260c384fe1c67d664918e3d8d7912346",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 19.96,
+        "runner_hash": "ee6497e987b1a31d3619025d699d453371a12d1269f0079bfc665b81aa20c1bd",
+        "transitive_descendants": 497
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-c3-fixed-locus-second-seat-2026-07-12",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Lattice axiom supplies the proper cubic body-diagonal rotation, and exact two-dimensional linear algebra computes both nonidentity normal determinants without any additional physical bridge. Substitution into the explicitly defined finite group average gives 2/9.",
+      "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T18:27:34Z",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-12T18:04:33Z",
+          "audit_invocation_id": "bcd5eb07eaf543eba04d9d0c4a86bbe0",
+          "auditor": "codex-audit-loop-gpt-5.6-sol-xhigh-c3-fixed-locus-2026-07-12",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-12T18:27:34Z",
+          "audit_invocation_id": "260c384fe1c67d664918e3d8d7912346",
+          "auditor": "codex-gpt-5.6-sol-xhigh-c3-fixed-locus-second-seat-2026-07-12",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "For k=1,2 the real normal determinants det_R(I-P^k|_N) are both 3, so the defined group average is (1/3)(1/3+1/3)=2/9.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second-seat cross-confirmation: re-check any downstream citation for attempts to promote this local defined average into an APS, charged-lepton, readout, probability, or physical-axis claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "In the displayed integer basis, independent recomputation gives N=[[0,-1],[1,-1]], N^2=[[-1,1],[-1,0]], and det(I-N)=det(I-N^2)=3; independently, the invariant rotation formula det(I-R_theta)=2-2*cos(theta) gives 3 at theta=+/-2*pi/3. Averaging the two inverse determinants with the stated 1/|C3| factor gives exactly 2/9. The source explicitly excludes physical-axis selection and all APS, charged-lepton, readout, probability, and global-identification bridges, so no such bridge is being ratified; residual risk is confined to downstream uses that exceed this narrow scope."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 13,
-    "B": 2,
-    "C": 1,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 16
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
   "title": "C\u2083 Body-Diagonal Fixed Locus and Local Inverse-Determinant Density",
   "transitive_descendants": 777,
-  "verdict_rationale": "In the displayed integer basis, independent recomputation gives N=[[0,-1],[1,-1]], N^2=[[-1,1],[-1,0]], and det(I-N)=det(I-N^2)=3; independently, the invariant rotation formula det(I-R_theta)=2-2*cos(theta) gives 3 at theta=+/-2*pi/3. Averaging the two inverse determinants with the stated 1/|C3| factor gives exactly 2/9. The source explicitly excludes physical-axis selection and all APS, charged-lepton, readout, probability, and global-identification bridges, so no such bridge is being ratified; residual risk is confined to downstream uses that exceed this narrow scope."
+  "verdict_rationale": null
 }

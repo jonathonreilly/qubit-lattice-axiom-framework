@@ -1,44 +1,24 @@
 {
-  "audit_date": "2026-07-11T23:47:04.173951+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": "The supplied free one-orbital nearest-neighbor scalar Hamiltonian on periodic simple-cubic Z\u00b3 lattices L \u2208 {6,8}, audited for its step-1 parity Schur complement at E=0, one E=0.3 covariance probe, retained-site resolvent equality, and the stated integer parity lemma.",
-      "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": "d=3 free E=0 finite periodic boxes L=8,10,12,14 with t=1, mu=5: step-2 shell range growth, L=12/14 near-shell convergence, L=8 box limitation, and even-d2 truncation behavior of the next-checkerboard block."
-    },
-    "dep_claim_type": {
-      "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": "bounded_theorem",
-      "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": "retained_bounded",
-      "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": "retained_bounded"
-    },
-    "deps": [
-      "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
-      "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12"
-    ],
-    "load_bearing_score": 1.5,
-    "runner_hash": "529b5252f5a2f2c7e9dd49eba735ec3c0b96feb9430180e71a45853ba99ffce1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00408-d3_truncation_commensuration",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The runner constructs the cubic Hamiltonian and both Schur steps, exhaustively checks K-chart parity correspondence, and directly computes H_kd_before and H_kd_after for all six lattice sizes. These computations establish the stated finite-grid equivalence from the retained-bounded authorities and declared test setup.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
-  "claim_scope": "Finite-dimensional d=3, E=0, t=1, mu=5 synthetic step-2 K-chart family with periods (L/2,L,L/2) on L={8,10,12,14,16,18}, testing equivalence among all-even periods, parity correspondence, and truncation protection.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-11T23:47:04.173951+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -47,19 +27,19 @@
     "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "The full step-2 Schur computation verifies that, on the tested grid, parity correspondence holds if and only if the even-d2-truncated next-checkerboard block satisfies H_kd_after < 1e-14.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "unknown",
-  "max_descendant_status_rank": 70,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "1685341b7d593f0eb224e4334358c978de19c27fbeb986e27fcfc2c82eae90a6",
   "note_path": "docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -226,19 +206,79 @@
         "total_pass": 18
       },
       "verdict_rationale": "Clean within the stated finite bounded scope. The runner completed with TOTAL: PASS=18 FAIL=0 and computes the step-1 dense Schur anchor, step-2 Schur complement, exhaustive K-chart parity correspondence, and L=16/L=18 branch checks rather than importing a fitted physical comparator. The claim does not extrapolate beyond the listed synthetic chart family or assert a broader physical truncation theorem."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.680452+00:00",
+      "audit_date": "2026-07-11T23:47:04.173951+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": "The supplied free one-orbital nearest-neighbor scalar Hamiltonian on periodic simple-cubic Z\u00b3 lattices L \u2208 {6,8}, audited for its step-1 parity Schur complement at E=0, one E=0.3 covariance probe, retained-site resolvent equality, and the stated integer parity lemma.",
+          "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": "d=3 free E=0 finite periodic boxes L=8,10,12,14 with t=1, mu=5: step-2 shell range growth, L=12/14 near-shell convergence, L=8 box limitation, and even-d2 truncation behavior of the next-checkerboard block."
+        },
+        "dep_claim_type": {
+          "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
+          "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "529b5252f5a2f2c7e9dd49eba735ec3c0b96feb9430180e71a45853ba99ffce1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00408-d3_truncation_commensuration",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the cubic Hamiltonian and both Schur steps, exhaustively checks K-chart parity correspondence, and directly computes H_kd_before and H_kd_after for all six lattice sizes. These computations establish the stated finite-grid equivalence from the retained-bounded authorities and declared test setup.",
+      "claim_scope": "Finite-dimensional d=3, E=0, t=1, mu=5 synthetic step-2 K-chart family with periods (L/2,L,L/2) on L={8,10,12,14,16,18}, testing equivalence among all-even periods, parity correspondence, and truncation protection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T23:47:04.173951+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The full step-2 Schur computation verifies that, on the tested grid, parity correspondence holds if and only if the even-d2-truncated next-checkerboard block satisfies H_kd_after < 1e-14.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 2,
+        "C": 10,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner is not a print-only or constant-replay harness: it builds the finite operators, performs the Schur complements, enumerates all relevant chart pairs, and computes the protected and unprotected branches. The hard-coded L=10 and L=14 wave-8 values are two cross-note consistency gates, not the load-bearing support for the full-grid criterion or the computed L=16/L=18 extension. Both cited authorities are retained_bounded, and the conclusion remains explicitly limited to the tested grid and synthetic chart family."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 6,
-    "B": 2,
-    "C": 10,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 18
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
   "title": "d=3 Even-d2 Truncation Protection Coincides With the Chart-Period Commensuration Criterion on the Tested Step-2 Grid L = {8,10,12,14,16,18} (Out-of-Sample L=16/18 Confirmed; Bounded)",
   "transitive_descendants": 1,
-  "verdict_rationale": "The runner is not a print-only or constant-replay harness: it builds the finite operators, performs the Schur complements, enumerates all relevant chart pairs, and computes the protected and unprotected branches. The hard-coded L=10 and L=14 wave-8 values are two cross-note consistency gates, not the load-bearing support for the full-grid criterion or the computed L=16/L=18 extension. Both cited authorities are retained_bounded, and the conclusion remains explicitly limited to the tested grid and synthetic chart family."
+  "verdict_rationale": null
 }

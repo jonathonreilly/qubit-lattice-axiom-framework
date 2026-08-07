@@ -1,70 +1,46 @@
 {
-  "audit_date": "2026-05-24T20:47:44.313664+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
-      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
-      "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited."
-    },
-    "dep_claim_type": {
-      "graph_first_selector_derivation_note": "positive_theorem",
-      "graph_first_su3_integration_note": "positive_theorem",
-      "left_handed_charge_matching_note": "decoration"
-    },
-    "dep_effective_status": {
-      "graph_first_selector_derivation_note": "retained",
-      "graph_first_su3_integration_note": "retained",
-      "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note"
-    },
-    "deps": [
-      "graph_first_selector_derivation_note",
-      "graph_first_su3_integration_note",
-      "left_handed_charge_matching_note"
-    ],
-    "load_bearing_score": 11.264,
-    "runner_hash": "adbc3f8b4481a9198702717fa991caf95bddfea51166dfb7ee6f2b08d1e21b98",
-    "transitive_descendants": 614
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T204628Z-01253e41-lhcm_matter_assignment_f-01",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The representation split follows from the retained graph-first SU(3) integration authority plus standard finite-dimensional SU(3) representation facts. The quark/lepton labels are explicitly conventional and are not used as a derived physics step.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-  "claim_scope": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention.",
+  "claim_scope": null,
   "claim_type": "decoration",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-24T20:47:44.313664+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "graph_first_su3_integration_note",
+  "decoration_parent_claim_id": null,
   "deps": [
     "graph_first_selector_derivation_note",
     "graph_first_su3_integration_note",
     "left_handed_charge_matching_note"
   ],
   "direct_in_degree": 5,
-  "effective_status": "decoration_under_graph_first_su3_integration_note",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 12.544,
-  "load_bearing_step": "The retained graph-first SU(3) integration gives a residual C^4 = Sym^2 \u2295 Anti^2 = C^3 \u2295 C^1 split with structural SU(3) acting as the 3-dimensional fundamental on Sym^2 and trivially on the 1-dimensional Anti^2 block, so the LH doublet sector is (2,3) \u2295 (2,1).",
-  "load_bearing_step_class": "A",
-  "max_descendant_status": "unknown",
-  "max_descendant_status_rank": 70,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "bd6a7e6811afc4071818adadd62e489f59939e5802e3eb5de2296a825c72f4c9",
   "note_path": "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md",
-  "notes_for_re_audit_if_any": "Second auditor should re-check that the ledger's exact claim_id for GRAPH_FIRST_SU3_INTEGRATION_NOTE.md matches decoration_parent_claim_id; the packet provides the path but not the canonical claim_id.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -123,19 +99,83 @@
         "total_pass": 64
       },
       "verdict_rationale": "The load-bearing work is algebraic: project C^4 under the residual swap, import the upstream gl(3)\u2295gl(1) commutant/SU(3) structure, and apply standard representation theory to identify a triplet and singlet. The runner confirms these matrix and dimension identities but does not add a first-principles computation beyond the cited graph-first SU3 integration result. There are zero external comparator checks, and the result is a support-level restatement of the upstream structural SU(3) theorem with SM naming conventions attached."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.756490+00:00",
+      "audit_date": "2026-05-24T20:47:44.313664+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "left_handed_charge_matching_note": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "left_handed_charge_matching_note"
+        ],
+        "load_bearing_score": 11.264,
+        "runner_hash": "adbc3f8b4481a9198702717fa991caf95bddfea51166dfb7ee6f2b08d1e21b98",
+        "transitive_descendants": 614
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T204628Z-01253e41-lhcm_matter_assignment_f-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The representation split follows from the retained graph-first SU(3) integration authority plus standard finite-dimensional SU(3) representation facts. The quark/lepton labels are explicitly conventional and are not used as a derived physics step.",
+      "claim_scope": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-24T20:47:44.313664+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The retained graph-first SU(3) integration gives a residual C^4 = Sym^2 \u2295 Anti^2 = C^3 \u2295 C^1 split with structural SU(3) acting as the 3-dimensional fundamental on Sym^2 and trivially on the 1-dimensional Anti^2 block, so the LH doublet sector is (2,3) \u2295 (2,1).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the ledger's exact claim_id for GRAPH_FIRST_SU3_INTEGRATION_NOTE.md matches decoration_parent_claim_id; the packet provides the path but not the canonical claim_id.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 64,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 64
+      },
+      "verdict_rationale": "All load-bearing checks are class-A algebra over the already retained graph-first SU(3) selected-axis package: the runner verifies the swap decomposition, standard SU(3) fundamental matrices on the 3-block, triviality on the 1-block, and the tensor dimensions. The runner does not import external comparators or tuned numerical inputs. Because the claim reduces to a direct algebraic corollary of the graph-first SU(3) integration parent plus standard representation terminology, it is a decoration rather than an independent positive theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 64,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 64
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_lhcm_matter_assignment.py",
   "title": "LHCM Matter Assignment from SU(3) Representation Content",
   "transitive_descendants": 1055,
-  "verdict_rationale": "All load-bearing checks are class-A algebra over the already retained graph-first SU(3) selected-axis package: the runner verifies the swap decomposition, standard SU(3) fundamental matrices on the 3-block, triviality on the 1-block, and the tensor dimensions. The runner does not import external comparators or tuned numerical inputs. Because the claim reduces to a direct algebraic corollary of the graph-first SU(3) integration parent plus standard representation terminology, it is a decoration rather than an independent positive theorem."
+  "verdict_rationale": null
 }

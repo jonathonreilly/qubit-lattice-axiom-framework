@@ -1,44 +1,24 @@
 {
-  "audit_date": "2026-06-11T14:11:42.881573+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "fifth_family_complex_boundary_note": "On the finite sampled radial-shell fifth-family slice with drifts {0.05, 0.20, 0.30} and seeds {0, 1}, all six rows pass the Born/F~M gates and exactly the two drift=0.20 rows show TOWARD -> AWAY crossover.",
-      "fifth_family_radial_note": "Finite sampled radial-shell sweep for targets (0.05,0), (0.20,0), and (0.30,1) in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py."
-    },
-    "dep_claim_type": {
-      "fifth_family_complex_boundary_note": "positive_theorem",
-      "fifth_family_radial_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "fifth_family_complex_boundary_note": "retained",
-      "fifth_family_radial_note": "retained_bounded"
-    },
-    "deps": [
-      "fifth_family_complex_boundary_note",
-      "fifth_family_radial_note"
-    ],
-    "load_bearing_score": 5.524,
-    "runner_hash": "8bc746b2ee971e85a06b424ccdf624fc51e42b4dfd0c81f700ed0ea57c0b1ce7",
-    "transitive_descendants": 22
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260611-141120-523f0f60de-fifth_family_complex_note",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The provided runner source builds the sampled grown geometry, radial-shell connectivity, source field, propagation amplitudes, Born proxy, F~M scaling proxies, and crossover flags rather than merely printing constants. The cached output matches the stated six-row table and assertion gate for the bounded sampled claim.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "fifth_family_complex_note",
-  "claim_scope": "Audited the finite sampled claim that, on drifts [0.05, 0.20, 0.30] and seeds [0, 1], exactly rows (0.20, 0) and (0.20, 1) pass the Born/F~M gates and TOWARD -> AWAY crossover gate.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-06-11T14:11:42.881573+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -47,22 +27,22 @@
     "fifth_family_complex_boundary_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
     "scripts/gate_b_no_restore_farfield.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 3.959,
-  "load_bearing_step": "The complex-action targeted runner computes Born/F~M gates and the TOWARD -> AWAY crossover on all six sampled radial-shell rows and finds exactly the drift-0.20 seed pair survives.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "b43c291b448cb715566757aee1ca1fe559570769062b3cc6bb6c54422e81e36d",
   "note_path": "docs/FIFTH_FAMILY_COMPLEX_NOTE.md",
-  "notes_for_re_audit_if_any": "Second auditor should re-check the helper-chain independence and the sampled-only scope, especially that the radial-shell connectivity in the targeted runner intentionally matches the claimed slice.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -186,6 +166,66 @@
         "total_pass": 1
       },
       "verdict_rationale": "The runner source performs an actual finite sampled computation over the stated grid, but the included completed cache refutes the source note's load-bearing singleton. Directly reading the runner table shows all six rows pass Born/F~M gates, and both drift-0.20 seeds have t01=1 and t05=0. The cited boundary note also explicitly says the older seed-singleton claim is not retained by the repaired computation. The claim therefore does not close on its own restricted packet."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.694452+00:00",
+      "audit_date": "2026-06-11T14:11:42.881573+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fifth_family_complex_boundary_note": "On the finite sampled radial-shell fifth-family slice with drifts {0.05, 0.20, 0.30} and seeds {0, 1}, all six rows pass the Born/F~M gates and exactly the two drift=0.20 rows show TOWARD -> AWAY crossover.",
+          "fifth_family_radial_note": "Finite sampled radial-shell sweep for targets (0.05,0), (0.20,0), and (0.30,1) in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py."
+        },
+        "dep_claim_type": {
+          "fifth_family_complex_boundary_note": "positive_theorem",
+          "fifth_family_radial_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "fifth_family_complex_boundary_note": "retained",
+          "fifth_family_radial_note": "retained_bounded"
+        },
+        "deps": [
+          "fifth_family_complex_boundary_note",
+          "fifth_family_radial_note"
+        ],
+        "load_bearing_score": 5.524,
+        "runner_hash": "8bc746b2ee971e85a06b424ccdf624fc51e42b4dfd0c81f700ed0ea57c0b1ce7",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-141120-523f0f60de-fifth_family_complex_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner source builds the sampled grown geometry, radial-shell connectivity, source field, propagation amplitudes, Born proxy, F~M scaling proxies, and crossover flags rather than merely printing constants. The cached output matches the stated six-row table and assertion gate for the bounded sampled claim.",
+      "claim_scope": "Audited the finite sampled claim that, on drifts [0.05, 0.20, 0.30] and seeds [0, 1], exactly rows (0.20, 0) and (0.20, 1) pass the Born/F~M gates and TOWARD -> AWAY crossover gate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:11:42.881573+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The complex-action targeted runner computes Born/F~M gates and the TOWARD -> AWAY crossover on all six sampled radial-shell rows and finds exactly the drift-0.20 seed pair survives.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the helper-chain independence and the sampled-only scope, especially that the radial-shell connectivity in the targeted runner intentionally matches the claimed slice.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing step is a bounded first-principles computation within the provided framework runner and helper chain, not a renaming, external comparator, or tuned numerical match. The runner source includes the contested gates and asserts the exact companion set {(0.20, 0), (0.20, 1)} from computed row data. The cited radial authority is retained_bounded and the boundary authority is marked retained, so the restricted packet supplies retained-grade upstream support for the bounded sampled scope. No primitive-registry issue is relevant to this claim."
     }
   ],
   "prose_corrections": [],
@@ -193,12 +233,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 1
+    "total_pass": 0
   },
   "runner_path": "scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py",
   "title": "Fifth Family Complex Companion Live Packet",
   "transitive_descendants": 10,
-  "verdict_rationale": "The load-bearing step is a bounded first-principles computation within the provided framework runner and helper chain, not a renaming, external comparator, or tuned numerical match. The runner source includes the contested gates and asserts the exact companion set {(0.20, 0), (0.20, 1)} from computed row data. The cited radial authority is retained_bounded and the boundary authority is marked retained, so the restricted packet supplies retained-grade upstream support for the bounded sampled scope. No primitive-registry issue is relevant to this claim."
+  "verdict_rationale": null
 }

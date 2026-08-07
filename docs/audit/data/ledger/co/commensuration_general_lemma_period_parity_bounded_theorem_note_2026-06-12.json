@@ -1,60 +1,44 @@
 {
-  "audit_date": "2026-07-12T04:18:56.272539+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": "Finite-dimensional d=3, E=0, t=1, mu=5 synthetic step-2 K-chart family with periods (L/2,L,L/2) on L={8,10,12,14,16,18}, testing equivalence among all-even periods, parity correspondence, and truncation protection."
-    },
-    "dep_claim_type": {
-      "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": "retained_bounded"
-    },
-    "deps": [
-      "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
-    ],
-    "load_bearing_score": 0.0,
-    "runner_hash": "89cd7b4dcaf85417530588650fb188d69c36e83b915222cf59bdd623d234c1f3",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00388-commensuration_general_lemma",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The residue-parity conclusion follows algebraically on the supplied chart family, but it is not an independent physics closure: it is a standard mod-2 consequence of the single retained-bounded commensuration parent. The broader Hamiltonian equivalence is not established beyond the two stated anchors.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12",
-  "claim_scope": "For the specified d=3 step-2 chart family with K-periods (L/2, L, L/2), the minimal-vector d^2 mod 2 parity correspondence holds for even L >= 8 exactly when L = 0 mod 4; the Hamiltonian tie is audited only at L=8 and L=10.",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-12T04:18:56.272539+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
+  "decoration_parent_claim_id": null,
   "deps": [
     "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
   ],
   "direct_in_degree": 0,
-  "effective_status": "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "If a period is even, replacing a residue difference by its minimal representative does not change parity; if it is odd, wrapping flips parity, so correspondence holds exactly when all periods (L/2, L, L/2) are even, equivalently L = 0 mod 4.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "5bf04c0a3d9165e84e21a9e69ba2374899a65c410e141c1ed45070796c793e70",
   "note_path": "docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -159,19 +143,75 @@
         "total_pass": 21
       },
       "verdict_rationale": "Closure holds under the note's scoped boundary. The proof is elementary residue-class algebra over the retained chart family, and the runner independently checks the symbolic case split plus an extended finite grid. Residual risk is downstream misuse: this clean result should not be cited as a general H_kd_after theorem beyond the stated Hamiltonian anchors."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.673316+00:00",
+      "audit_date": "2026-07-12T04:18:56.272539+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": "Finite-dimensional d=3, E=0, t=1, mu=5 synthetic step-2 K-chart family with periods (L/2,L,L/2) on L={8,10,12,14,16,18}, testing equivalence among all-even periods, parity correspondence, and truncation protection."
+        },
+        "dep_claim_type": {
+          "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "89cd7b4dcaf85417530588650fb188d69c36e83b915222cf59bdd623d234c1f3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00388-commensuration_general_lemma",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The residue-parity conclusion follows algebraically on the supplied chart family, but it is not an independent physics closure: it is a standard mod-2 consequence of the single retained-bounded commensuration parent. The broader Hamiltonian equivalence is not established beyond the two stated anchors.",
+      "claim_scope": "For the specified d=3 step-2 chart family with K-periods (L/2, L, L/2), the minimal-vector d^2 mod 2 parity correspondence holds for even L >= 8 exactly when L = 0 mod 4; the Hamiltonian tie is audited only at L=8 and L=10.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-12T04:18:56.272539+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "If a period is even, replacing a residue difference by its minimal representative does not change parity; if it is odd, wrapping flips parity, so correspondence holds exactly when all periods (L/2, L, L/2) are even, equivalently L = 0 mod 4.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing argument is elementary residue-class parity algebra applied to the chart periods supplied by one retained-bounded parent. The runner genuinely computes the symbolic case split and finite combinatorial correspondence, while its frozen L=8 and L=10 values serve only as parent-anchor checks. With no external comparator and no new framework-level physics derivation, the result is algebraic decoration of the upstream commensuration criterion."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 17,
-    "B": 3,
-    "C": 1,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 21
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_commensuration_general_lemma_2026_06_12.py",
   "title": "Commensuration General Lemma Period-Parity Bounded Theorem Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The load-bearing argument is elementary residue-class parity algebra applied to the chart periods supplied by one retained-bounded parent. The runner genuinely computes the symbolic case split and finite combinatorial correspondence, while its frozen L=8 and L=10 values serve only as parent-anchor checks. With no external comparator and no new framework-level physics derivation, the result is algebraic decoration of the upstream commensuration criterion."
+  "verdict_rationale": null
 }

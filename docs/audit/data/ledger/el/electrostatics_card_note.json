@@ -1,69 +1,44 @@
 {
-  "audit_date": "2026-05-04T23:50:38.970936+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_effective_status": {},
-    "deps": [],
-    "load_bearing_score": 9.238,
-    "runner_hash": "0ca61c81613ee1d47c97c61e17e22b10eda584a2112b2148571e93335c0caf9a",
-    "transitive_descendants": 301
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_card_note-006",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The runner explicitly instantiates the 3D ordered lattice, constructs scalar source fields, propagates charged test packets, and computes the reported centroid shifts rather than printing constants. The audited conclusion is limited to the constructed scalar sign-law probe and does not require Maxwell, gauge, magnetic, or radiative structure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "electrostatics_card_note",
-  "claim_scope": "A narrow scalar sign-coupled electrostatic-like response was audited on the fixed retained 3D ordered-lattice family using the provided runner and cached stdout, excluding any claim of full electromagnetism.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-04T23:50:38.970936+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-05-04T23:32:40.709667+00:00",
-      "auditor": "codex-cli-gpt-5.5-20260504-232946-c1a20bdf-electrostatics_card_note-010",
-      "auditor_family": "codex-gpt-5.5",
-      "claim_scope": "The audited claim is limited to the runner-demonstrated scalar electrostatic-like sign law on the fixed ordered 3D lattice family, excluding Maxwell, gauge, magnetic, and radiative claims.",
-      "claim_type": "positive_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "second_audit": {
-      "audit_date": "2026-05-04T23:50:38.970936+00:00",
-      "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_card_note-006",
-      "auditor_family": "codex-gpt-5.5",
-      "claim_scope": "A narrow scalar sign-coupled electrostatic-like response was audited on the fixed retained 3D ordered-lattice family using the provided runner and cached stdout, excluding any claim of full electromagnetism.",
-      "claim_type": "positive_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "status": "confirmed"
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/two_body_momentum_harness.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.522,
-  "load_bearing_step": "The same ordered-lattice machinery can support an electrostatic-like scalar sign law in which like charges repel, unlike charges attract, null superpositions cancel, dipoles flip sign, response scales linearly, and screening attenuates.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "dab2944b2b5dc6a4280ec3c3869f6083a5eb2afc25a080a944ea9f77710b8103",
   "note_path": "docs/ELECTROSTATICS_CARD_NOTE.md",
-  "notes_for_re_audit_if_any": "A second auditor should re-check whether the hand-chosen scalar coupling and source field are acceptable as part of the narrow claim surface rather than an imported physical bridge.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -171,6 +146,73 @@
         "signed_antisymmetry_ratio": "-1.000"
       },
       "verdict_rationale": "Issue: The load-bearing electrostatic-like law is introduced in the runner by hand through the scalar 1/r source field and the q_test * lf action deformation, while the note treats the resulting sign behavior as retained support from the ordered-lattice machinery. Why this blocks: A hostile review can accept every printed numerical check and still reject the positive theorem, because the bridge from retained lattice inputs to charge carriers, source law, coupling sign, and attraction/repulsion readout is not derived. Repair target: Provide a retained theorem deriving the scalar source field, test-charge coupling, allowed normalization/power, and detector centroid readout from ordered-lattice primitives, and update the runner so those objects are constructed from that theorem rather than configured. Claim boundary until fixed: The safe claim is a conditional numerical demonstration: given this imposed scalar sign-coupled field model on the retained lattice family, the listed sign, null, dipole, scaling, and screening probes behave as reported."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.687894+00:00",
+      "audit_date": "2026-05-04T23:50:38.970936+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.238,
+        "runner_hash": "0ca61c81613ee1d47c97c61e17e22b10eda584a2112b2148571e93335c0caf9a",
+        "transitive_descendants": 301
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_card_note-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner explicitly instantiates the 3D ordered lattice, constructs scalar source fields, propagates charged test packets, and computes the reported centroid shifts rather than printing constants. The audited conclusion is limited to the constructed scalar sign-law probe and does not require Maxwell, gauge, magnetic, or radiative structure.",
+      "claim_scope": "A narrow scalar sign-coupled electrostatic-like response was audited on the fixed retained 3D ordered-lattice family using the provided runner and cached stdout, excluding any claim of full electromagnetism.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-04T23:50:38.970936+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-04T23:32:40.709667+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260504-232946-c1a20bdf-electrostatics_card_note-010",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "The audited claim is limited to the runner-demonstrated scalar electrostatic-like sign law on the fixed ordered 3D lattice family, excluding Maxwell, gauge, magnetic, and radiative claims.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-04T23:50:38.970936+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_card_note-006",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "A narrow scalar sign-coupled electrostatic-like response was audited on the fixed retained 3D ordered-lattice family using the provided runner and cached stdout, excluding any claim of full electromagnetism.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The same ordered-lattice machinery can support an electrostatic-like scalar sign law in which like charges repel, unlike charges attract, null superpositions cancel, dipoles flip sign, response scales linearly, and screening attenuates.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the hand-chosen scalar coupling and source field are acceptable as part of the narrow claim surface rather than an imported physical bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory."
     }
   ],
   "prose_corrections": [],
@@ -178,12 +220,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 6,
+    "C": 0,
     "D": 0,
-    "total_pass": 6
+    "total_pass": 0
   },
   "runner_path": "scripts/electrostatics_card.py",
   "title": "Electrostatics Card Note",
   "transitive_descendants": 64,
-  "verdict_rationale": "The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory."
+  "verdict_rationale": null
 }

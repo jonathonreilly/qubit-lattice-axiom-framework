@@ -1,114 +1,46 @@
 {
-  "audit_date": "2026-05-25T10:18:49.309520+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
-      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
-      "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
-    },
-    "dep_claim_type": {
-      "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
-      "graph_first_su3_integration_note": "positive_theorem",
-      "native_gauge_closure_note": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
-      "graph_first_su3_integration_note": "retained",
-      "native_gauge_closure_note": "retained"
-    },
-    "deps": [
-      "ew_current_fierz_channel_decomposition_note_2026-05-01",
-      "graph_first_su3_integration_note",
-      "native_gauge_closure_note"
-    ],
-    "load_bearing_score": 16.438,
-    "runner_hash": "f02fe4b335ce3bb8db4ff0b13786a1683bf5ec97c32a78836cb4c39cc6d7baef",
-    "transitive_descendants": 980
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-judicial-panel-per-site-k1-20260525T101849Z-yukawa_color_projection_theorem-majority",
-  "auditor_confidence": "judicial_panel_majority",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "yukawa_color_projection_theorem",
-  "claim_scope": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-05-25T10:18:49.309520+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-05-25T10:11:25.758679+00:00",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T101037Z-b5c3a8f1-yukawa_color_projection_-01",
-      "auditor_family": "codex-gpt-5.5",
-      "auditor_model": "gpt-5.5",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Finite-dimensional SU(N_c) color-bilinear channel counting: N_c tensor N_c-bar = 1 plus adj, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and f_adj,dim = 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
-      "claim_type": "positive_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "A",
-      "verdict": "audited_clean"
-    },
-    "mode": "judicial_third_pass",
-    "second_audit": {
-      "audit_date": "2026-05-25T10:13:46.552089+00:00",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T101151Z-b5c3a8f1-yukawa_color_projection_-02",
-      "auditor_family": "codex-gpt-5.5",
-      "auditor_model": "gpt-5.5",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Pure SU(N_c) channel-counting statement: N_c tensor N_c-bar = 1 plus adj gives f_adj,dim = (N_c^2 - 1)/N_c^2, hence 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
-      "claim_type": "decoration",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "A",
-      "verdict": "audited_decoration"
-    },
-    "status": "third_confirmed_second",
-    "third_audit": {
-      "audit_date": "2026-05-25T10:18:49.309520+00:00",
-      "auditor": "codex-judicial-panel-per-site-k1-20260525T101849Z-yukawa_color_projection_theorem-majority",
-      "auditor_family": "codex-gpt-5.5",
-      "auditor_model": "gpt-5.5",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
-      "claim_type": "decoration",
-      "decoration_parent_claim_id": "graph_first_su3_integration_note",
-      "first_auditor_error": "Did not apply the audited_clean vs audited_decoration tie-breaker for a class A, zero-D, standard-math consequence of the retained SU(3) parent surface.",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem.",
-      "load_bearing_step_class": "A",
-      "second_auditor_error": "none",
-      "sided_with": "second",
-      "verdict": "audited_decoration"
-    }
-  },
-  "decoration_parent_claim_id": "graph_first_su3_integration_note",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
   "deps": [
     "ew_current_fierz_channel_decomposition_note_2026-05-01",
     "native_gauge_closure_note",
     "graph_first_su3_integration_note"
   ],
   "direct_in_degree": 11,
-  "effective_status": "decoration_under_graph_first_su3_integration_note",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 15.399,
-  "load_bearing_step": "The color bilinear representation decomposes as N_c tensor N_c-bar = 1 plus adj, so the adjoint representation-dimension fraction is (N_c^2 - 1)/N_c^2 and equals 8/9 at N_c = 3.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "3e47c2b7d5acb2528e574287a7c1c8eec0bbb2fbd3e7b4260a0cc0c9bfb85f31",
   "note_path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
-  "notes_for_re_audit_if_any": "Re-check downstream uses to ensure the 8/9 representation-dimension fraction is not promoted into a dynamical trace or physical Yukawa matching coefficient without a separate bridge theorem.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -550,6 +482,114 @@
         "total_pass": 31
       },
       "verdict_rationale": "The load-bearing step is an algebraic dimension-count identity, not a numerical comparator or tuned match. The cited inputs needed for SU(3)/N_c = 3 are retained-grade, and the Fierz identity is standard math proved and checked inline. The runner source constructs normalized SU(N) generators, checks the Fierz identity for random matrices, and verifies the exact rational 8/9 count; it does not import R_conn or a physical Yukawa correction. The open matching rules in the historical context are explicitly outside the audited scope."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.879662+00:00",
+      "audit_date": "2026-05-25T10:18:49.309520+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 16.438,
+        "runner_hash": "f02fe4b335ce3bb8db4ff0b13786a1683bf5ec97c32a78836cb4c39cc6d7baef",
+        "transitive_descendants": 980
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-judicial-panel-per-site-k1-20260525T101849Z-yukawa_color_projection_theorem-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem.",
+      "claim_scope": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-25T10:18:49.309520+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T10:11:25.758679+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T101037Z-b5c3a8f1-yukawa_color_projection_-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional SU(N_c) color-bilinear channel counting: N_c tensor N_c-bar = 1 plus adj, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and f_adj,dim = 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-25T10:13:46.552089+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T101151Z-b5c3a8f1-yukawa_color_projection_-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure SU(N_c) channel-counting statement: N_c tensor N_c-bar = 1 plus adj gives f_adj,dim = (N_c^2 - 1)/N_c^2, hence 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
+          "claim_type": "decoration",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-25T10:18:49.309520+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260525T101849Z-yukawa_color_projection_theorem-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim.",
+          "claim_type": "decoration",
+          "decoration_parent_claim_id": "graph_first_su3_integration_note",
+          "first_auditor_error": "Did not apply the audited_clean vs audited_decoration tie-breaker for a class A, zero-D, standard-math consequence of the retained SU(3) parent surface.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_decoration"
+        }
+      },
+      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "independence": "judicial_review",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The color bilinear representation decomposes as N_c tensor N_c-bar = 1 plus adj, so the adjoint representation-dimension fraction is (N_c^2 - 1)/N_c^2 and equals 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check downstream uses to ensure the 8/9 representation-dimension fraction is not promoted into a dynamical trace or physical Yukawa matching coefficient without a separate bridge theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem."
     }
   ],
   "prose_corrections": [],
@@ -564,5 +604,5 @@
   "runner_path": "scripts/frontier_yukawa_color_projection_boundary.py",
   "title": "Yukawa Color-Projection Channel-Fraction Theorem",
   "transitive_descendants": 954,
-  "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is a genuine class A algebraic identity and dimension count, and the runner source checks real SU(N) generator normalization, Fierz completeness, exact fractions, and the narrowed non-physical boundary. There are zero external comparator checks and no imported open physical matching bridge inside the scoped claim. Under the rubric's clean-vs-decoration tie-breaker, this is better classified as audited_decoration because the audited content is a standard-math channel-counting consequence over the retained graph-first SU(3) color substrate, not a new physical theorem. | The load-bearing step is class A finite-dimensional SU(N_c) representation algebra and dimension counting. The scoped claim closes because the retained graph-first SU(3) surface supplies N_c = 3, while the Fierz authority's open EW matching rule is explicitly outside the claim boundary. Under the rubric's clean-vs-decoration tie-break, this is best treated as an algebraic decoration: there are no external comparator checks, no new physical matching theorem, and the row packages a standard mathematical corollary under the retained SU(3) color substrate. | The load-bearing step is standard finite-dimensional SU(N_c) representation algebra and dimension counting, with zero external comparator checks and no physical matching bridge imported. The only framework-specific input needed for the scoped numerical value is the retained graph-first SU(3) color surface supplying N_c = 3; the Fierz authority's open EW matching rule is explicitly outside this row's scope. Under the clean-vs-decoration tie-break, this is better classified as an algebraic decoration than as a new positive theorem. | The load-bearing step is class A: standard SU(N_c) representation decomposition plus dimension counting, with N_c = 3 supplied by the retained graph-first SU(3) surface. The packet contains no external comparator checks and no physical matching step; the note explicitly excludes dynamical trace, Higgs normalization, Yukawa correction, and top-mass claims. Under the tie-break rule, a zero-D algebraic consequence of a retained parent plus standard mathematics is audited_decoration rather than audited_clean. | The load-bearing step is a standard algebraic SU(N_c) representation decomposition and dimension count, and the runner performs real generator-normalization, Fierz, and rational fraction checks with zero external comparator checks. The only framework-specific retained input needed for the scoped numerical specialization is the graph-first SU(3) / N_c = 3 surface; the open EW matching rule is explicitly excluded from the claim. Under the rubric tie-break, this is an algebraic decoration rather than a new positive physical theorem."
+  "verdict_rationale": null
 }

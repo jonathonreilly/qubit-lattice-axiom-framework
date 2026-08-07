@@ -1,88 +1,44 @@
 {
-  "audit_date": "2026-07-11T22:28:51.109843+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "load_bearing_score": 9.788,
-    "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
-    "transitive_descendants": 441
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00351-luders_sequential_effect_com",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Each conclusion follows directly from the stated finite-matrix hypotheses by positivity under congruence, projection order, adjoints, and trace cyclicity. No measurement-side bridge is used.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
-  "claim_scope": "Finite-dimensional matrix theorem: for the stated projections, effects, and density operator, PEP is a supported effect and satisfies the trace, boundary, and nested-compression identities, without any L\u00fcders-update, Born-rule, or probability interpretation.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-11T22:28:51.109843+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-07-11T22:05:41.414820+00:00",
-      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00341-luders_sequential_effect_com",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Finite-dimensional matrix identities showing that PEP is a supported effect, satisfies the stated trace identity and boundary cases, and obeys the stated nested-compression identity, without measurement or probability semantics.",
-      "claim_type": "bounded_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "A",
-      "verdict": "audited_clean"
-    },
-    "second_audit": {
-      "audit_date": "2026-07-11T22:28:51.109843+00:00",
-      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00351-luders_sequential_effect_com",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Finite-dimensional matrix theorem: for the stated projections, effects, and density operator, PEP is a supported effect and satisfies the trace, boundary, and nested-compression identities, without any L\u00fcders-update, Born-rule, or probability interpretation.",
-      "claim_type": "bounded_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "A",
-      "verdict": "audited_clean"
-    },
-    "status": "confirmed"
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms"
   ],
   "direct_in_degree": 2,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.977,
-  "load_bearing_step": "Congruence preserves positivity and finite-dimensional trace cyclicity gives 0 <= PEP <= P <= I, Tr(rho PEP) = Tr(P rho P E), and P(QFQ)P = (QP)^*F(QP).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "295d133afd744e1dea008409f1120a3a7d1c16af007cf288bc80bbca9d6d991b",
   "note_path": "docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -427,19 +383,103 @@
         "total_pass": 32
       },
       "verdict_rationale": "The load-bearing content is genuine class-A finite matrix algebra rather than a definition, renaming, calibrated numerical match, or imported measurement rule. The proof establishes positivity, order bounds, trace cyclicity, boundary cases, and nested compression from explicit hypotheses, and the runner independently exercises exact and randomized instances with 32 passing checks. The note explicitly excludes L\u00fcders-update, Born-rule, and probability interpretations, so the audited conclusion does not overreach those open measurement bridges."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.758564+00:00",
+      "audit_date": "2026-07-11T22:28:51.109843+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.788,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 441
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00351-luders_sequential_effect_com",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Each conclusion follows directly from the stated finite-matrix hypotheses by positivity under congruence, projection order, adjoints, and trace cyclicity. No measurement-side bridge is used.",
+      "claim_scope": "Finite-dimensional matrix theorem: for the stated projections, effects, and density operator, PEP is a supported effect and satisfies the trace, boundary, and nested-compression identities, without any L\u00fcders-update, Born-rule, or probability interpretation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T22:28:51.109843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T22:05:41.414820+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00341-luders_sequential_effect_com",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional matrix identities showing that PEP is a supported effect, satisfies the stated trace identity and boundary cases, and obeys the stated nested-compression identity, without measurement or probability semantics.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-11T22:28:51.109843+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00351-luders_sequential_effect_com",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional matrix theorem: for the stated projections, effects, and density operator, PEP is a supported effect and satisfies the trace, boundary, and nested-compression identities, without any L\u00fcders-update, Born-rule, or probability interpretation.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Congruence preserves positivity and finite-dimensional trace cyclicity gives 0 <= PEP <= P <= I, Tr(rho PEP) = Tr(P rho P E), and P(QFQ)P = (QP)^*F(QP).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The source is correctly narrowed to finite matrix algebra and explicitly excludes measurement and probability semantics. The runner substantively performs exact symbolic and randomized checks, including a Jordan-symmetrization guard, rather than printing constants or importing a contested premise. The cited minimal-axiom authority is an accepted premise used only for matrix-carrier context, while the theorem itself closes from its explicit hypotheses."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 27,
-    "B": 5,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 32
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
   "title": "L\u00fcders Sequential-Effect PEP Bridge \u2014 Finite Projection-Compression Trace Identity Note",
   "transitive_descendants": 62,
-  "verdict_rationale": "The source is correctly narrowed to finite matrix algebra and explicitly excludes measurement and probability semantics. The runner substantively performs exact symbolic and randomized checks, including a Jordan-symmetrization guard, rather than printing constants or importing a contested premise. The cited minimal-axiom authority is an accepted premise used only for matrix-carrier context, while the theorem itself closes from its explicit hypotheses."
+  "verdict_rationale": null
 }

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_sqrt_sigma_b2_static_energy_bridge.py
-runner_sha256: 2e8b1608adc3a7f269c197a60b0bbdfe21e84b549407726a5b5777b114bfe9ab
+runner_sha256: a6fba25485626f9ee7cae5f5a89c376f190bd92f4cf4a8e20db88fb188051343
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.07
@@ -77,6 +77,15 @@ Part 5: Theorem 0 chain check (retained no-go siblings)
   [PASS] note declares load-bearing-step class downgrade from D to B
   derived: every candidate has closes()=False given A1, A2
   [PASS] Theorem 0 mechanically derives no-go on current surface  (gate G requires g5 AND g6; A1 forbids g5; A2 forbids g6)
+
+----------------------------------------------------------------------------------------
+N5 execution certificate: resolution granularity of this bridge scout
+----------------------------------------------------------------------------------------
+per_element: checked — the closure predicate is resolved bit by bit on the six named gate elements (non_circular_source, sea_quark_dynamics, observable_defined, uncertainty_budget, unique_sigma_scheme, framework_b5_link); the two elements that fail are always the last two, which is why closes() is an AND over all six and every candidate lands short of it.
+per_site: checked and not executed — this runner constructs no lattice and measures no static energy of its own; TUMQCD and CLS site-level configurations are consumed only as published scalar comparators (r0, r1, r0*sqrt(sigma)), so there is no site-resolved Wilson loop or correlator here to interrogate.
+per_mode: checked and not executed — no spectral or mode decomposition appears anywhere in this runner; the nearest structure is the pair of static-potential normalization conventions A_r0 and pi/12, which are scheme choices rather than modes, and their 3.02% split (467.39 MeV against 481.71 MeV) is reported as a convention ambiguity.
+per_block: checked — the gate is resolved one candidate block at a time: CLS_2025_force_scales at 4/6 with closes=False; TUMQCD_2023_fit_window_sigma at 4/6 with closes=False; rough_x0p96_repo_factor at 1/6 with closes=False — so the no-go is established block by block rather than as a single aggregate verdict.
+lattice_wide: checked and not executed — this runner takes no lattice-wide or continuum limit itself; it quotes already-extrapolated external collaboration results and then applies boolean closure, and Theorem 0's content is exactly that no such current-surface comparator promotes the Lane 1 sqrt(sigma) row, with all 3 candidates blocked on g5 by A1 and on g6 by A2.
 
 ========================================================================================
 PASS=21 FAIL=0

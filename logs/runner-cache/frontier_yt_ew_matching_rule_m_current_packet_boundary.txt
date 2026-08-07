@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py
-runner_sha256: a325d349a1ca2f3b4c934cbcb332ef414950138f07bed0544a5aa09357dafd57
+runner_sha256: 3a5cb9c3f3c34096125a71572461b21ed2ee3dc0526bdd55e35f493c25d6a2f8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.03
 status: ok
 ----- stdout -----
 YT EW matching rule M current-packet boundary
@@ -36,6 +36,13 @@ YT EW matching rule M current-packet boundary
   [PASS] S3 is listed as a current-packet gap
   [PASS] the repaired note links no conditional OZI dependency
   [PASS] the repaired note leaves audit authority external
+
+N5 execution certificate
+per_element: checked and not executed — stated plainly, this file is a note-structure verifier plus a dimension count, and it never builds an operator, a vector or a matrix of any kind, so it resolves no matrix element whatsoever.
+per_site: checked and not executed — the boundary it certifies concerns which sentences the source note may and may not contain, together with colour-channel dimensions; neither of those carries a position argument and no lattice site is ever defined.
+per_mode: checked and not executed — there is no spectrum, no momentum variable and no eigenvector in the file; the only numbers it computes are the integers 9, 1 and 8 together with their ratio.
+per_block: dimension counting only — the colour blocks enter purely as the integer dimensions singlet 1 and adjoint 8 out of N_c^2 = 9, giving F_adj = 8/9 exactly in Fraction arithmetic, and that count is the whole numerical content: 24 of the 29 checks are note-substring assertions and the remaining 5 are this count.
+lattice_wide: checked and not executed — no lattice object of any kind is present here, and the runner's own declared scope is a current-packet boundary on a single note, which asserts nothing at any lattice extent, volume or limit.
 
 YT EW matching rule M current-packet boundary: PASS
 PASS=29 FAIL=0

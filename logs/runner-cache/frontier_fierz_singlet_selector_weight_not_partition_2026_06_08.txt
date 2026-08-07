@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fierz_singlet_selector_weight_not_partition_2026_06_08.py
-runner_sha256: 0aec75665dcc654156a15671379a075d9f68fd2b0d9dfc482b611cadee2355c5
+runner_sha256: 39132af9f375c3e39202550febb18f7953ac3054bf0e8565cac31f9b925cc7fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.12
+elapsed_sec: 3.28
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -42,6 +42,14 @@ Part 4  Category-separation: same-site current trace, not the gauge link
 ==============================================================================
   [PASS] the current's color trace is invariant under a LOCAL rotation at its site (same-site object; observable-content/matching-rule category)
   [PASS] a gauge-link kernel co-transforms (g_x U g_y^dag != U): a DIFFERENT category — selecting kappa_EW says nothing about ADM-1's link/frame question  (dev 1.22)
+==============================================================================
+Part 5  N5 execution certificate — what this runner resolves
+==============================================================================
+per_element: checked — the eight Gell-Mann generators t^A enter the Fierz sum C = 2 sum_A |Tr[G t^A]|^2 one generator at a time (completeness holds to max dev < 1e-9 over 50 random G), and the partition-vs-twirl separation is read off the single matrix entry M_00 against Tr M/3.
+per_site: checked — Part 4 resolves exactly two color sites: at the single site x the trace Tr[G G^dag] is invariant under g_x (dev < 1e-9), while the two-site link g_x U g_y^dag moves by O(1); no third site and no site sum is constructed anywhere in this runner.
+per_mode: checked — the Fierz decomposition resolves the two channels separately, the singlet mode S = |Tr G|^2/N_c and the 8-dimensional adjoint mode C, with fixed count fraction F_adj = 8/9 and the singlet's realized weight kappa_EW left free across R(0) = 8/9 and R(1) = 1.
+per_block: checked — the candidate register-not-read partition is built block by block as P_1 = diag(1,0,0), P_2 = diag(0,1,1); D = sum_k P_k M P_k preserves each diagonal block verbatim, and each block projector fails to commute with the generator basis (commutator dev > 0.1, Schur).
+lattice_wide: checked and not executed — this runner is finite algebra on one internal SU(3) color factor with N_c = 3; it builds no lattice, no volume and no extent over which a lattice-wide statement could be taken, and the whole demotion is carried by PASS=14, FAIL=0 at that scale.
 ==============================================================================
 TOTAL: PASS=14 FAIL=0
 ==============================================================================

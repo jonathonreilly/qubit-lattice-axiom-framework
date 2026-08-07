@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_domain_bridge_no_go.py
-runner_sha256: fa295f82f64ee73b9ea6be4e48c6fd184cacbf55cbb911d25f2fd253d0bd8408
+runner_sha256: fd151d19929191ada0ea8dac8d8abb093edbf1437fccee52b4f61d7d2b853746
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 15.99
+elapsed_sec: 0.92
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -45,7 +45,7 @@ PASS: rho_E=0 and rho_E=21/4 agree on E-shell
 PASS: rho_E=0 and rho_E=21/4 agree on granted T-shell
 PASS: rho_E=0 and rho_E=21/4 agree on granted T-center
 PASS: rho_E=0 and rho_E=21/4 differ only at E-center
-PASS: live center ratio is close to -R_conn but remains comparator-only -- live=-0.890683778221, target=-0.888888888889
+PASS: live center ratio is close to -R_conn but remains comparator-only -- live=-0.890683778231, target=-0.888888888889
 
 E. Stuck fan-out frames
 ------------------------------------------------------------------------
@@ -143,6 +143,14 @@ NO-FLIP: endpoint-functor bypass predicate configured=True derived=True
 PASS: derived inventory still has no source-to-rho path without missing bridge -- path length=0
 PASS: derived inventory plus missing bridge still reaches rho_E=21/4 -- route2_center_TE_minus_8_9 -> route2_q_E_15_8 -> route2_rho_E_21_4
 PASS: derived reachability has no flips
+
+J. N5 execution certificate -- what this runner resolves
+------------------------------------------------------------------------
+per_element: checked, and the resolution is textual and exact-rational rather than amplitude-valued. Each of the 8 current edges plus 2 derived edges is handled as an individual record, and the 22 quote anchors attached to them (18 current, 4 derived) are tested one quote at a time for meaningfulness and for literal presence in the named authority file. The only arrays this runner evaluates are the four 4-component endpoint columns, compared componentwise below 1e-12.
+per_site: checked and not executed, and the reason is structural rather than an omission: the object under test is a bridge between a color-channel scalar and an endpoint ratio, and both sides are site-free by construction. The seven-site star support is reached only through already-contracted endpoint columns, so no shell site and no center site is separately evaluated at any point in this file.
+per_mode: checked -- E and T are the two channels this runner keeps apart, in the two rows of the reduced readout map, and separating them is what lets the missing bridge even be named: it targets c_TE, the T-over-E center ratio. Note that the failure is asymmetric between the modes -- moving rho_E leaves the whole T row untouched and shifts only the E readout at center, by 0.875000. The A1 channel carries no readout row here and appears only as the delta_A1 label inside edge text.
+per_block: checked -- the inventory is registered twice and each registration is closed on its own before the two are compared: the configured typed bank, and the bank re-derived from quote anchors, giving three NO-FLIP predicates and no disagreement. Underneath that, the endpoint side splits into four blocks of which exactly one, E-center, carries the rho_E freedom, while E-shell, T-shell and T-center are invariant.
+lattice_wide: checked and not executed as a physical statement -- there is no volume, no thermodynamic limit and no extensive observable anywhere in this runner. Its widest closure is document-level: an exhaustiveness sweep over the 5-file authority bank that dispositions all 48 candidate sentences (19 anchored, 29 excepted, 0 left over). That certifies the inventory is complete, not that any whole-lattice quantity was computed, and completeness of the inventory is precisely what makes the no-go bite.
 
 Summary
 ------------------------------------------------------------------------

@@ -384,6 +384,49 @@ def main() -> int:
     # Summary
     # -----------------------------------------------------------------------
     print("=" * 72)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    shared_all = sorted(pieces_shared_exactly(REP_A_PIECES, REP_B_PIECES))
+    shared_now = sorted(set(shared_all) - {"tadpole"})
+    print(
+        f"per_element: checked and not executed — this runner compares two "
+        f"hard-coded dictionaries of label strings, whose color_structure and "
+        f"dirac_structure fields hold text such as "
+        f"{REP_A_PIECES['vertex']['color_structure']!r}, never an array, so "
+        f"not one matrix element is computed anywhere in the file."
+    )
+    print(
+        f"per_site: checked and not executed — the objects compared are "
+        f"diagram pieces keyed by topology and renormalization type, and "
+        f"those carry no position label whatsoever; no lattice, coordinate or "
+        f"extent is defined at any point."
+    )
+    print(
+        f"per_mode: checked and not executed — the Brillouin-zone integrals "
+        f"appear only as identifier strings such as "
+        f"{REP_A_PIECES['vertex']['bz_integral']!r} and "
+        f"{REP_B_PIECES['scalar_vertex']['bz_integral']!r}; none is evaluated, "
+        f"and the runner's own verdict defers that evaluation to a separate "
+        f"channel-by-channel lattice-PT computation."
+    )
+    print(
+        f"per_block: inventory only — the colour channels C_F, C_A and "
+        f"T_F n_f are matched between the two representations by string "
+        f"equality and set membership, which is enough to establish that "
+        f"{shared_now} is the unique exactly-shared non-trivial piece (the "
+        f"full shared set being {shared_all}, with the tadpole absorbed into "
+        f"u_0 on both sides) and that the gluon self-energy and the "
+        f"scalar-operator anomalous dimension have no counterpart, but no "
+        f"block quantity is ever computed."
+    )
+    print(
+        f"lattice_wide: checked and not executed — nothing lattice-valued is "
+        f"constructed here; the only numbers printed are the tree-level "
+        f"constants -1/(2 N_c) and 1/(2 N_c) at N_c = {N_C}, and all "
+        f"{PASS_COUNT + FAIL_COUNT} checks are structural string comparisons "
+        f"rather than lattice measurements."
+    )
+    print("=" * 72)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
     print()

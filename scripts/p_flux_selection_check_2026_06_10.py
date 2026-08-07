@@ -628,6 +628,85 @@ def main():
              "carrier only (boundary B-P3)")
 
     print()
+    print("=" * 72)
+    print("N5 execution certificate: what this runner resolves")
+    print("=" * 72)
+    print(
+        "per_element: resolved with amplitudes. Every hopping is written into a "
+        "single matrix entry per site and direction together with its Hermitian "
+        "partner - the constant 1 on the flux(+1) branch against the Kawamoto-Smit "
+        "signs eta_1 = 1, eta_2 = (-1)^x1, eta_3 = (-1)^(x1+x2) on flux(-1) - and "
+        "each plaquette flux is then formed as an explicit product of four "
+        "individual hoppings, 192 of them at L = 4, every one returning exactly +1 "
+        "or exactly -1. The translation, rotation and chirality operators are "
+        "likewise permutation and diagonal matrices laid down one entry at a time, "
+        "and Hermiticity is verified across the whole matrix."
+    )
+    print(
+        "per_site: resolved with amplitudes over the full torus. The construction "
+        "loop visits every one of the 64, 216 and 512 sites at L = 4, 6 and 8, "
+        "writing three directed hops per site whose signs depend on that site's own "
+        "coordinates; the chirality operator assigns each site its individual value "
+        "eps(x) = (-1)^(x1 + x2 + x3); and the 24 proper cubic rotations act by "
+        "permuting sites through modular wraparound, so every site is followed "
+        "explicitly through the whole group."
+    )
+    print(
+        "per_mode: resolved with amplitudes. Each branch is diagonalized and its "
+        "zero-mode sector extracted, giving kernel dimensions 8 and 8 on flux(-1) "
+        "against 20 and 68 on flux(+1) at L = 4 and 8, and 0 against 24 at L = 6. "
+        "The restricted translations are then simultaneously diagonalized mode by "
+        "mode, with each vector defensively re-verified as a genuine joint "
+        "eigenvector, and the eight Klein-cube characters are identified with "
+        "multiplicity exactly one apiece, the three weight-one triples being "
+        "(-1,+1,+1), (+1,-1,+1) and (+1,+1,-1)."
+    )
+    print(
+        "per_block: resolved with amplitudes, and this is where the carrier lives. "
+        "The cube carries the Hamming grading 1 + 3 + 3 + 1; the weight-one triplet "
+        "spans a three-dimensional block on which the commutant of the restricted "
+        "translation triple is computed and comes back diagonal of dimension 3; the "
+        "sector projectors together with the C3 rotation generate the full nine-"
+        "dimensional M_3(C), which is what gives irreducibility and the "
+        "observable-stable count 3; and the embedded-cube census returns exactly one "
+        "pi-cube inside the flux(+1) kernel at both L = 4 and L = 8, with the "
+        "remaining 12 zero modes at L = 4 sitting outside the carrier."
+    )
+    print(
+        "lattice_wide: resolved as whole-torus invariants, but with no asymptotics "
+        "and with the selector itself absent. The flux is a genuine global "
+        "invariant, uniform across every plaquette on each branch; exact invariance "
+        "of the flux(+1) operator under the three translations and all 24 rotations "
+        "is checked on the entire lattice; and the kernel-growth comparison 20 -> 68 "
+        "against 8 -> 8 is a whole-lattice scaling readout. What is not established "
+        "is anything asymptotic: three even volumes are instantiated and no L -> "
+        "infinity limit is taken, while the runner's own L = 6 leg shows the carrier "
+        "vanishing on both branches, so carrier existence at finite volume is wrap-"
+        "convention data. The selector the note hunts is exactly what is missing."
+    )
+    print(
+        "  scope: the runner declares its own open boundaries rather than closing "
+        "them, printing five RESIDUAL lines (B-P1 through B-P5). In particular the "
+        "realization predicate G is this note's reading of the retained package and "
+        "not itself a retained requirement, and the two separating observables found "
+        "are the same kinetic-order datum already named by B-BIT - no new wall is "
+        "introduced here."
+    )
+    print(
+        "  scope: zero modes are identified by the numerical threshold "
+        "|eigenvalue| < 1e-9 rather than by an exact kernel computation, which is "
+        "doing real work at 512 modes; and the Klein-cube identification is "
+        "existential over base lines, trying each kernel index until a dressing "
+        "phase succeeds, so the predicate certifies that some dressing works, with "
+        "uniqueness supplied separately by the embedded-cube census."
+    )
+    print(
+        "  scope: only the three even volumes L = 4, 6 and 8 are exercised; odd L is "
+        "never tested and the cube census returns zero there by construction. The "
+        "runner is fully deterministic - no RNG stream and no optimizer anywhere."
+    )
+
+    print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print("VERDICT: the existing matter-content/observable package "

@@ -350,10 +350,58 @@ def part4_interpretation() -> None:
     print("  They do not supply the missing microscopic selector for Q = 2/3.")
 
 
+def part5_n5_execution_certificate() -> None:
+    """Granularity report. Prints only; adds no check and changes no count."""
+    print()
+    print("=" * 88)
+    print("PART 5: N5 execution certificate — what this runner resolves")
+    print("=" * 88)
+    print(
+        "  per_element: resolved, and unusually sharply, because the whole live degree of "
+        "freedom sits in one matrix entry. The selected-slice block is written out as "
+        "[[A, x + i c], [x - i c, B]] with A, B and c = -sqrt(2)/3 all constant, its "
+        "Hermiticity is confirmed by requiring k2 - k2.H to be exactly zeros(2, 2), and the "
+        "only entry carrying m is the off-diagonal one through x = m - 4 sqrt(2)/9."
+    )
+    print(
+        "  per_site: checked and not executed — no lattice, site index or neighbour term "
+        "appears anywhere. The carrier is a single canonical doublet block on one selected "
+        "slice, and the missing datum being hunted is one real scalar on that block, so "
+        "there is nothing to distribute over sites and no site-resolved form of the "
+        "question."
+    )
+    print(
+        "  per_mode: resolved — the two eigenmodes of the block are pinned by two exact "
+        "statements rather than by numerical diagonalization. Their sum is constant on the "
+        "entire selected slice, since the trace does not depend on m at all, and their "
+        "separation is fixed to Gap^2 = 4 x^2 + 11/9, which is bounded below by 11/9 and "
+        "therefore never lets the two modes cross. The canonical identities "
+        "Q = T^2 - 2 D and Gap^2 = T^2 - 4 D are verified exactly alongside."
+    )
+    print(
+        "  per_block: resolved — the object under study is itself a block, the canonical "
+        "2x2 Z3 doublet block sliced out of the larger carrier as rows and columns 1 to 2, "
+        "and every invariant used is a block invariant: trace, determinant, quadratic trace "
+        "and eigenvalue-gap square. Each is shown to be an exact affine function of x^2, "
+        "symbolically and then numerically against the block rebuilt from the upstream "
+        "construction at five sampled m values, agreeing below 1e-10."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, site sum or limit is formed. "
+        "The only sweep is along the scalar coordinate m, on 500 nodes between the two "
+        "branch endpoints, which is a parameter range and not a system size. Extending "
+        "anything could not help either: every completed spectral scalar depends on x alone "
+        "through x^2, and x stays strictly negative across the whole physical branch, so "
+        "the raw spectral scalars are monotone there and no interior critical point exists "
+        "to be found at any scale."
+    )
+
+
 def main() -> int:
     det_center, tr2_center, gap_sq_center = part1_exact_selected_slice_spectral_completion()
     part2_reflection_symmetry_and_spectral_collapse(det_center, tr2_center, gap_sq_center)
     part3_minimal_local_spectral_law_no_go()
+    part5_n5_execution_certificate()
     part4_interpretation()
 
     print()

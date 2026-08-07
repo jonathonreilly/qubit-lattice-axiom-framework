@@ -475,6 +475,51 @@ def test_part10_no_go():
 # Main
 # =============================================================================
 
+def test_part11_n5_execution_certificate():
+    """N5 execution certificate: reporting only, adds no check."""
+    print("\n=== Part 11: N5 execution certificate — resolved granularity ===\n")
+
+    neighbors = forward_neighbors(max_d=3)
+
+    print(
+        "per_element: checked - the Cl(3) edge amplitude is built explicitly on the "
+        "Qubit one-site algebra M_2(C) from the Pauli basis, and every one of its "
+        "matrix entries is w(theta) times a Kronecker delta; reading the trace back "
+        "as exactly 2 w(theta) for all seven kernels is precisely how the runner "
+        "shows the Cl(3) structure carries no angular information at entry level."
+    )
+    print(
+        f"per_site: checked - all moments are accumulated over the {len(neighbors)} "
+        "explicit forward edges (0,0,0) -> (1, dy, dz), each carrying its own length "
+        "L and polar angle theta = atan2(sqrt(dy^2 + dz^2), 1); the azimuthal test "
+        "additionally evaluates w at the four rotated offsets (2,1), (-1,2), (-2,-1) "
+        "and (1,-2) and requires agreement to under 1e-14."
+    )
+    print(
+        "per_mode: checked and not executed - no angular harmonic is ever formed. "
+        "Azimuthal invariance is established by comparing w at rotated offsets rather "
+        "than by expanding in m, and the kernels are separated by raw second and "
+        "fourth moments <r_perp^2> and <r_perp^4>, so the higher angular channels "
+        "where the seven kernels actually differ are never given mode coefficients."
+    )
+    print(
+        "per_block: checked and not executed - there is no block index in this "
+        "runner: the only operator is the per-edge 2x2 scalar w(theta) I, edges are "
+        "never assembled into a transfer matrix or a block-diagonal form, and the two "
+        "constructions separated in Parts 8 and 9 are distinct claim surfaces, the "
+        "staggered/Laplacian and directional-measure lanes, not operator blocks."
+    )
+    print(
+        "lattice_wide: checked - every reported number is a ratio of two whole-layer "
+        "sums, numerator and normalizer Z both running over the full edge set, which "
+        "is what makes <r_perp^2> spanning 4.5 to 8.0 and <r_perp^4> spanning 40 to "
+        "88 genuine layer functionals; but the layer is a single forward step at "
+        "max_d = 3, with no multi-step composition and no continuum limit taken."
+    )
+
+    return True
+
+
 def main():
     print("=" * 78)
     print("Angular Kernel Underdetermination No-Go (with Phase 4 decoupling)")
@@ -495,6 +540,7 @@ def main():
     test_part8_staggered_no_kernel()
     test_part9_decoupling()
     test_part10_no_go()
+    test_part11_n5_execution_certificate()
 
     print()
     print("=" * 78)

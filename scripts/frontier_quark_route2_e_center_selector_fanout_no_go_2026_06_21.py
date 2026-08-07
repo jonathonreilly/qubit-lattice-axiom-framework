@@ -293,6 +293,53 @@ def part5_verdict(items: list[Selector]) -> None:
     print("  rho_E=21/4 unless the missing signed center-ratio bridge is supplied.")
 
 
+def part6_n5_execution_certificate(items: list[Selector]) -> None:
+    """N5 execution certificate: print-only; it contributes no check."""
+    print("\n" + "=" * 72)
+    print("PART 6: N5 Execution Certificate")
+    print("=" * 72)
+    cross_role = sum(1 for item in items if "shell" in item.equation)
+    bridges = sum(1 for item in items if item.uses_missing_bridge)
+    print(
+        f"  per_element: the three known endpoint entries E_shell={fraction_text(E_SHELL)}, "
+        f"T_shell={fraction_text(T_SHELL)} and T_center={fraction_text(T_CENTER)} are the "
+        f"atoms, and all {len(items)} selectors are solved for q_E one equation at a time "
+        "from those same three numbers; nine solutions stay exact rationals and the tenth, "
+        "the row-norm selector, is the closed form sqrt(20/9) compared under a named 1e-12 "
+        "tolerance rather than any fitted or sampled quantity."
+    )
+    print(
+        f"  per_site: resolved exactly at the two star roles and no finer -- shell and "
+        f"center arrive as separately named constants and {cross_role} of the "
+        f"{len(items)} selector equations are literally relations tying a center entry to "
+        "a shell entry, such as q_E - E_shell = -(T_center - T_shell), while the remaining "
+        f"{len(items) - cross_role} mention center data alone; no arm, coordinate or "
+        "occupancy exists here, so nothing below the center/shell split can be stated."
+    )
+    print(
+        "  per_mode: the two channels are deliberately asymmetric and both are inspected -- "
+        "the T channel is fully given at both roles, which fixes q_T=5/6 and the shell "
+        "ratio -2, whereas the E channel is given only at the shell, leaving q_E as the "
+        "one unknown; every selector is an attempt to transport T-channel structure onto "
+        "the E channel, and each such transport is evaluated separately."
+    )
+    print(
+        f"  per_block: the endpoint pair is probed through its block invariants rather than "
+        f"entry by entry -- row sum, cross ratio, signed shift in both directions, row "
+        f"product, vanishing determinant, determinant set to the shell product, and "
+        f"Euclidean row norm each give one candidate, and a further block of {bridges} "
+        "bridge-equivalent selectors plus a five-sample nu family (15/4, 5/2, 15/8, 45/32, "
+        "15/16) shows the target arriving only when nu is set to 1 by hand."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- a single two-by-two endpoint pattern is "
+        "the entire arena of this runner, and it grows no box, no volume and no limit of "
+        "any kind; the whole-surface object that would decide the question is the "
+        "signed center-ratio bridge itself, and this runner's finding is exactly that the "
+        "bridge has to be supplied rather than recovered from the pattern's symmetries."
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("  FRONTIER: Route-2 E-Center Selector Fan-Out No-Go")
@@ -303,6 +350,7 @@ def main() -> int:
     items = part3_selector_fanout()
     part4_scale_family()
     part5_verdict(items)
+    part6_n5_execution_certificate(items)
 
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

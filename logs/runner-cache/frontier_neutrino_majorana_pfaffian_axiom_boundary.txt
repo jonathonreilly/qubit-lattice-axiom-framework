@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_pfaffian_axiom_boundary.py
-runner_sha256: 079f662dd5057d6cd87cc43007a6d0cab796fc8a0355ce91257d2b2154736f3a
+runner_sha256: dd37f904a2b4bd722c2cd4eaa7783f002818ca5c007004dfb164e2821abba142
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -55,6 +55,18 @@ PART 3: MU = 0 AND MU != 0 BOTH FIT THE CURRENT BOUNDARY DATA
   does not distinguish the zero and nonzero Pfaffian amplitudes.
   Therefore the Pfaffian/Nambu sector is not forced by the current
   retained derivation stack.
+
+========================================================================================
+N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
+========================================================================================
+per_element: resolved with amplitudes. The Dirac algebra is assembled 2 x 2 block by 2 x 2 block into four 4 x 4 gammas, with g5 and C = i g2 g0 formed as explicit products; the internal factor is a 16 x 16 matrix carrying exactly one nonzero entry, [15, 15] = 1.0; the Kronecker product places C P_R into a 64 x 64 seed whose support is then located by scanning all 4096 entries with np.nonzero. The normal kernel is written entry by entry (0.4, 0.2 - 0.1j, 0.05 + 0.03j, -0.3, 0.15, 0.2, -0.07j, 0.1) and the Pfaffian routine reads matrix[0, j] one at a time.
+per_site: checked and not executed. The note frames this as the retained Cl(3)-on-Z^3 stack, but no Z^3 lattice is instantiated anywhere in this runner: the 16-dimensional factor is a slot inventory with a single occupied index and the 4-dimensional factor is a spinor index, and neither carries a coordinate, a neighbour relation or a volume.
+per_mode: resolved, and it supplies the comparison object of Part 3. eigvalsh returns the full four-eigenvalue normal signature of the retained kernel at scale 1.2, [-0.480195381249, 0.07039922729, 0.315879189167, 0.573916964791], held to 12 decimals, and matrix_rank resolves the 64 x 64 seed to rank 2, that is to exactly one Majorana pair. No eigenvector, and no eigenmode of the pairing seed itself, is ever computed.
+per_block: resolved as location and support rather than as a coupled decomposition. The seed is a Kronecker product of a Dirac block with an internal block, the chirality projector (1 + g5)/2 is itself a block projector, and the support scan certifies that the occupied internal row is exactly one of the 16, index 15, the nu_R slot. The normal kernel and the pairing seed are never assembled into a common Nambu matrix, so no inter-block coupling is ever formed, and the block_diag helper defined in this file is never called.
+lattice_wide: checked and not executed, and the missing global theorem is exactly what this note is about. The claim is that the retained stack does not force the Pfaffian sector, so the forcing theorem a stack-wide argument would have to supply is precisely the absent object; execution here exhibits two admissible extensions side by side rather than quantifying over the stack, and no volume, no sequence and no limit of any kind is taken.
+  scope: the determinant-blindness comparisons are not computed. In Part 2 the loop appends the same precomputed scalar det_obs three times, so a zero spread follows from repetition; in Part 3 both signatures are the identical expression evaluated on the identical kernel, so those two checks compare a value with itself. The substantive content is structural - the retained data never encode Delta at all - and the source comment already says so.
+  scope: the Pfaffian side of Parts 2 and 3 is a stand-in, not the real family. What is probed is the 2 x 2 canonical_j(2.0 + mu) and canonical_j(2.3 + mu), whose Pfaffian is just the single entry 2.0 + mu (resp. 2.3 + mu), so the reported |Pf1 - Pf0| is simply mu1 - mu0. The Pfaffian of the actual 64 x 64 family mu * S_unique is never computed anywhere in this runner.
+  scope: fully deterministic - no RNG stream and no optimizer is used, so every quantity above follows from literal constants in the source.
 
 ========================================================================================
 RESULT

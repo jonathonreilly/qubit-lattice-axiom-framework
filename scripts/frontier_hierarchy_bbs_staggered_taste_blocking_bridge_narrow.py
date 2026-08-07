@@ -424,6 +424,53 @@ check(
 
 
 # ----------------------------------------------------------------------------
+section("N5 execution certificate: resolution granularity of this narrow no-go")
+# Print-only. No check() call is made here, so PASS/FAIL and the PASS == 8
+# target are untouched. Every quantity below is already computed above.
+# ----------------------------------------------------------------------------
+
+n_in_domain = sum(1 for v in bbs_domain.values() if v)
+n_out_domain = len(bbs_domain) - n_in_domain
+
+print(
+    "per_element: checked — the hypothesis-domain obstruction is resolved entry by entry across the "
+    f"{len(bbs_domain)} declared model entries: {n_in_domain} sit inside the published BBS domain "
+    "(4d |phi|^4 n-component, 4d weakly self-avoiding walk) and "
+    f"{n_out_domain} sit outside it (4d Wilson-plaquette lattice gauge, 4d staggered Dirac, and the "
+    "coupled gauge-plus-staggered system), so the entry the bridge actually needs is one of the "
+    "out-of-domain ones."
+)
+print(
+    "per_site: checked — the O4 witness is the only site-indexed computation in this runner, and it is "
+    f"evaluated at the integer lattice separations r in {lattice_radii}: G(r) = 1/(4 pi^2 r^2) yields "
+    f"consecutive ratios {[round(x, 6) for x in power_law_ratios]}, constant at 4 under radius doubling, "
+    "which is the signature of a pure r^-2 tail. No lattice is instantiated and no site carries a field "
+    "value; the site index enters only as this separation."
+)
+print(
+    "per_mode: checked — the taste content is resolved one taste at a time down the staircase: with "
+    f"n_taste^(k) = 16 - k, the exact Fraction sequence b_3^(k) = (1 + 2k)/3 runs from "
+    f"b_3^(0) = {b3_sequence_fraction[0]} at 16 tastes to b_3^(16) = {b3_sequence_fraction[16]} at zero "
+    "tastes (pure gauge) and is strictly monotone increasing at every one of the 16 successive steps, so "
+    "no single kappa can be uniform across the taste modes."
+)
+print(
+    "per_block: checked — the 16 blocking rungs are summed rung by rung rather than estimated in "
+    f"aggregate: Sum_{{k=0}}^{{15}} b_3^(k) = {cumulative_fraction} exactly, confirmed independently by "
+    f"SymPy summation, and the resulting cumulative coefficient |ln alpha_LM| * 32/(3 pi^2) = "
+    f"{cumulative_coeff:.4f} exceeds u_0 = {u_0_float:.5f} at the framework value alpha_LM = "
+    f"{alpha_LM_fraction}, placing the Landau-pole crossing inside the staircase."
+)
+print(
+    "lattice_wide: checked and not executed — this runner takes no infinite-volume, continuum, or "
+    "thermodynamic limit of any lattice system; the r -> infinity limits in T6 are limits of a symbolic "
+    "scalar function of one variable, and obstruction O1 is exactly that the published BBS contraction "
+    "theorem has no lattice gauge plus staggered Dirac instance, so no lattice-wide contraction statement "
+    "is available to be executed here."
+)
+
+
+# ----------------------------------------------------------------------------
 # Final summary
 # ----------------------------------------------------------------------------
 

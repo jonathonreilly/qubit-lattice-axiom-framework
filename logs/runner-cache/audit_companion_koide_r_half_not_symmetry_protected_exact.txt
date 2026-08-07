@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py
-runner_sha256: 5d31f21cba4b95f09f621d6806edc9375d6a808c66ec286161301453c2de6940
+runner_sha256: 198c48cc5c00e45b8876bbdd43b64af02738d7d8588699d00299f870e3c5c2d5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 PASS - (1a) Q = (1 + (q/p)^2)/3 for the C3 decomposition (singlet p, doublet q)
@@ -22,6 +22,15 @@ r free (4), the 1-vs-2-dim irreps cannot be swapped (5), and C3-compatible coeff
 rephasing/doublet-basis calibration preserves |b|^2/a^2 (6). These routes are not asserted to
 exhaust the symmetry-protection space; any positive derivation must enter through dynamics,
 extra structure, or another route not checked here rather than through those symmetry/calibration routes.
+
+==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+  per_element: THIN and reported as such - the sole matrix whose entries are written down is the S3 form H = alpha*eye(3) + beta*(J - eye(3)), handed straight to sympy eigenvals; the circulant a*I + b*C + conj(b)*C^2 that this whole no-go is about is never instantiated, so the channel energies E+ = 3a^2 and E_perp = 6|b|^2 are typed in as literal expressions rather than summed from that circulant's entries.
+  per_site: resolution at the three generation-axis granularity is real but narrow - v = p*uhat + q*what is expanded into components, each v[i] is squared individually to build m, and Q = sum(m)/(sum v)^2 is evaluated from those three axis entries; the perpendicular direction is however fixed once and for all to what = (1,-1,0)/sqrt(2), so only one doublet direction out of the 2-plane is ever tested.
+  per_mode: singlet and doublet channels are separated and each is carried by its own coordinate - p along uhat = (1,1,1)/sqrt(3) and q transverse - and the mode-level content is the closed form Q = (1 + (q/p)^2)/3 with Q(q=p) = 2/3, plus Q = (1 + 2r)/3 whose exact derivative in r is the nonzero constant 2/3, which is precisely the statement that the C3 symmetry leaves the dial r free.
+  per_block: block dimensions are computed once and then restated as a tautology - eigenvals() on the S3 form yields multiplicities sorted to [1, 2], and the 2-plane block is separately shown rigid, since Groebner reduction of (c*x - s*y)^2 + (s*x + c*y)^2 - (x^2 + y^2) modulo c^2 + s^2 - 1 leaves remainder 0; but check (5), which is the one that names the 1-vs-2 dimension gap, is literally the expression 1 != 2 and forms no representation object at all.
+  lattice_wide: checked and not executed - the file never leaves 3x3 sympy algebra over abstract symbols, with no volume, no boundary, no limit and no site index; and the runner's own closing paragraph disclaims exactly this granularity, stating that the tested routes are not asserted to exhaust the symmetry-protection space, so no whole-system theorem is being offered here.
 
 ----- stderr -----
 

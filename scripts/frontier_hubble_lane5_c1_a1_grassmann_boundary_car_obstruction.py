@@ -169,6 +169,50 @@ def main() -> int:
         print(f"[{status}] {check.name}: {check.detail}")
         passed += int(check.passed)
     failed = len(checks) - passed
+
+    # N5 execution certificate. Print-only: no Check is appended, so the
+    # PASS/FAIL tally above is untouched.
+    print("-" * 78)
+    print("N5 execution certificate: resolution granularity of this CAR obstruction")
+    print("-" * 78)
+    print(
+        "per_element: checked — the two candidate projections differ in nothing but which basis elements "
+        "they keep, and that alone flips the result: P_reducing keeps diagonal indices [0, 2, 4, 6] (the "
+        "third occupation bit fixed) and P_nonreducing keeps [0, 1, 2, 7], both with exactly four unit "
+        f"entries, identical rank and identical trace, yet the compressed CAR residual is "
+        f"{reducing_car:.3e} for the first and {nonreducing_car:.3e} for the second. The obstruction is "
+        "entirely in the choice of retained basis elements."
+    )
+    print(
+        "per_site: checked and not executed — this runner works inside one cell only; every operator acts "
+        f"on the single {dim_bulk}-dimensional Fock space F(C^3) of that cell, and the Jordan-Wigner Z "
+        "strings run over the internal mode index, never over a lattice site index, so no site-resolved "
+        "or multi-cell statement is made or attempted."
+    )
+    print(
+        "per_mode: checked — the CAR relations are verified pair by pair over the modes rather than in "
+        "aggregate: all 9 ordered pairs (i, j) drawn from the three bulk modes are tested for both "
+        f"{{c_i, c_j^dagger}} - delta_ij I and {{c_i, c_j}}, giving worst bulk residual {bulk_error:.3e}; "
+        f"the compression is then applied to the selected pair c0, c1, whose commutator residual with the "
+        f"projection is {reducing_comm:.3e} for the reducing choice and {nonreducing_comm:.3e} for the "
+        "non-reducing one."
+    )
+    print(
+        "per_block: checked — three distinct rank-four blocks are compared as whole objects: the reducing "
+        "compression which retains CAR, the non-reducing compression of the same rank and trace which "
+        f"does not, and a two-qubit block on C^2 tensor C^2 whose generators commute "
+        f"(commutator {two_qubit_comm:.3e}) rather than anticommute (anticommutator {two_qubit_anti:.3e}) "
+        f"while carrying the identical parity spectrum {spectral_signature(qubit_parity)}. Rank, trace and "
+        "parity therefore do not determine the block's algebra."
+    )
+    print(
+        "lattice_wide: checked and not executed — nothing in this runner extends past the single cell: no "
+        "cell-to-cell gluing rule, transfer operator, or global Fock space is constructed, and the "
+        f"{passed} executed checks already settle the question locally by exhibiting a same-rank "
+        "counterexample, so a lattice-wide statement would require the very P_A module-morphism theorem "
+        "the note names as missing."
+    )
+
     print("-" * 78)
     print(f"TOTAL: PASS={passed}, FAIL={failed}")
     if failed == 0:

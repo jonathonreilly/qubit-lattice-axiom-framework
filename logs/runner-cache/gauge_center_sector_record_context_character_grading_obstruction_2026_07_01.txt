@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py
-runner_sha256: d2d4d96987ba9c1bf00fdedfe47ac6cc42456e84777c41ae4cbd9bd1edce26ac
+runner_sha256: 17c24a03698c8afdf6c799e8d53e589330a8dd7ca75dc45ed524b422195eb2e3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 Section A: center action is diagonal on characters
@@ -40,12 +40,12 @@ Section C: transfer-vector sector weights
          Z = [0.98513, 0.007435, 0.007435]
   [PASS] C1 beta=1: conjugation pairing Z_1 = Z_2 exactly
   [PASS] C1 beta=1: truncation-stable (cone 30 vs 24)
-         max drift = 8.67e-19
+         max drift = 5.20e-18
   [PASS] C1 beta=6: Z_k > 0 on every center sector
          Z = [0.572386, 0.213807, 0.213807]
   [PASS] C1 beta=6: conjugation pairing Z_1 = Z_2 exactly
   [PASS] C1 beta=6: truncation-stable (cone 30 vs 24)
-         max drift = 5.55e-17
+         max drift = 1.11e-16
   [PASS] C1 beta=12: Z_k > 0 on every center sector
          Z = [0.346236, 0.326882, 0.326882]
   [PASS] C1 beta=12: conjugation pairing Z_1 = Z_2 exactly
@@ -76,6 +76,12 @@ Section F: source-note discipline
   [PASS] F1 note keeps decision history as non-linked provenance
   [PASS] F1 note graph-links the retained RP-half no-go row
   [PASS] F1 unaudited no-winding-carrier note is non-load-bearing context
+Section G: N5 execution certificate -- what this runner resolves
+  per_element: checked -- irreps are resolved one label at a time: the center identity is verified for each of (1,0), (0,1), (1,1), (2,0), (3,1), (2,2) at four torus points, each fusion channel of rule_F and rule_Fb is listed, and F.(1,0) carries raw labels {2, -1}.
+  per_site: checked and not executed -- no lattice site index exists in this runner; the only locality structure is the disjoint-region pair of E1, where the center acts as Delta x Delta and labels add mod 3, which is a region-level statement carrying no site geometry.
+  per_mode: checked -- the transfer vector is resolved mode by mode over the irrep cone: the full cone p+q <= 30 is compared against the retained sub-cone p+q <= 24 with drift at most 1.1e-16 at beta = 1, 6, 12, and the SU(2) ladder is carried out to spin n = 20.
+  per_block: checked -- the three center sectors are the blocks: P_k are orthogonal, idempotent and complete, P_k' J6 P_k vanishes unless k' = k +- 1 with no diagonal block at all, and each block carries strictly positive weight with Z_1 = Z_2 exactly at every beta.
+  lattice_wide: checked and not executed -- the transfer vector is a single exp(beta J/2) applied to the trivial irrep, not a lattice partition function; no volume, no multi-link geometry and no infinite-volume or continuum limit is formed at any point here.
 TOTAL: PASS=56 FAIL=0
 
 ----- stderr -----

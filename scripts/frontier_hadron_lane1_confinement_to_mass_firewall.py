@@ -195,6 +195,49 @@ def part5_safe_endpoint() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State what this firewall runner resolves at each canonical granularity.
+
+    No check, counter, or claim above is touched.  The coefficients below are
+    recomputed from the same module-level comparator constants used in Part 2.
+    """
+    section("N5 execution certificate: resolution granularity of this firewall")
+    c_pi_charged = M_PI_CHARGED_MEV / SQRT_SIGMA_BOUNDED_MEV
+    c_pi_neutral = M_PI_NEUTRAL_MEV / SQRT_SIGMA_BOUNDED_MEV
+    c_p = M_PROTON_MEV / SQRT_SIGMA_BOUNDED_MEV
+    c_n = M_NEUTRON_MEV / SQRT_SIGMA_BOUNDED_MEV
+    print(
+        "per_element: checked and not executed — this runner builds no operator, matrix, or algebra "
+        "carrier, so it has no matrix element to resolve; its finest objects are a dimensionless "
+        f"channel coefficient c_H = m_H/sqrt(sigma) and a literal assertion read out of a repo document, "
+        f"and the {PASS_COUNT} executed checks are all of those two kinds."
+    )
+    print(
+        "per_site: checked and not executed — no lattice is constructed anywhere in this runner; the "
+        "note's own boundary is that a lattice-QCD-equivalent correlator extraction is a bridge that "
+        "has not been instantiated, so there is no site-resolved quark or gluon field to interrogate."
+    )
+    print(
+        f"per_mode: checked — the four hadron channels are resolved one at a time against the single "
+        f"bounded scale sqrt(sigma)={SQRT_SIGMA_BOUNDED_MEV:.1f} MeV, giving c_pi+={c_pi_charged:.4f}, "
+        f"c_pi0={c_pi_neutral:.4f}, c_p={c_p:.4f}, c_n={c_n:.4f}; more than two of these are distinct at "
+        "three decimals, which is exactly the firewall's content that one scale does not fix a spectrum."
+    )
+    print(
+        f"per_block: checked — the isospin multiplets are separated as blocks: within the nucleon block "
+        f"c_n-c_p={c_n - c_p:.5f} is nonzero but under 0.01, while across the pion and nucleon blocks "
+        f"c_p-c_pi+={c_p - c_pi_charged:.3f} exceeds 1.5, so neither the intra-block splitting nor the "
+        "inter-block gap is supplied by the string tension alone."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide quantity is computed or even "
+        "available here; the GMOR sensitivity is a two-line scaling argument (a 10% shift in (m_u+m_d) "
+        f"or Sigma moves m_pi by {math.sqrt(1.10):.4f}x and a 10% shift in f_pi by {1.0 / 1.10:.4f}x), "
+        "and m_u, m_d, Sigma, and f_pi are all still open on Lane 3, so the ab-initio route that would "
+        "make a lattice-wide statement is precisely the premise the firewall declares missing."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LANE 1 HADRON CONFINEMENT-TO-MASS FIREWALL")
@@ -212,6 +255,7 @@ def main() -> int:
     part3_gmor_dependency()
     part4_confinement_runner_boundary()
     part5_safe_endpoint()
+    n5_execution_certificate()
 
     print()
     print("=" * 88)

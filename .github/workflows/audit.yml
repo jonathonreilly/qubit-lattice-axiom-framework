@@ -128,6 +128,7 @@ jobs:
             python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
             bash docs/audit/scripts/run_pipeline.sh
             python3 docs/audit/scripts/generate_conditional_prompts.py
+            python3 docs/audit/scripts/compute_science_fix_backlog.py
             commit_if_needed || exit 0
           done
 

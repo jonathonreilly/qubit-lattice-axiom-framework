@@ -49,8 +49,9 @@ Skills that must invoke this gate before approving negative-claim output:
 
 Each item must be answered IN WRITING in the cycle's `CLAIM_STATUS_CERTIFICATE.md`
 (or in a dedicated `NO_GO_DISCIPLINE_CHECKLIST.md`) before the negative claim
-can ship. The checklist must be visible in the PR body or review verdict so
-the audit lane and reviewers can see exactly what was tested.
+can ship. The checklist must LAND as a committed artifact (see Output below)
+so the audit lane and reviewers can see exactly what was tested. Copying it
+into the PR body or review verdict as well is a courtesy, not the record.
 
 ### N1 — Alternative route enumeration
 
@@ -267,8 +268,10 @@ If the gate produces `FAIL`:
 
 If the gate produces `PASS`:
 
-- ship the negative claim with the checklist visible in the PR body or
-  review verdict;
+- ship the negative claim with both Output artifacts LANDING in the same PR:
+  the N1-N8 checklist as a committed artifact, and the N5 execution
+  certificate in the primary runner's cached stdout. A PR-body-only copy
+  does not satisfy this;
 - the independent audit lane and other reviewers can then see exactly what
   was tested and what alternative routes were closed.
 

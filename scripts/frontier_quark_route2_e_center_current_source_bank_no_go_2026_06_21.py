@@ -94,6 +94,49 @@ def contains_all(haystack: str, needles: tuple[str, ...]) -> bool:
     return all(needle in haystack for needle in needles)
 
 
+def n5_execution_certificate(bank: CurrentSourceBank) -> None:
+    """N5 execution certificate: print-only; no check is registered by it."""
+    print("=" * 72)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    field_count = len(bank.__dataclass_fields__)
+    print(
+        f"per_element: the source bank is compared field by field, all {field_count} of "
+        f"them -- delta_step={bank.delta_step}, q_T={bank.q_t}, s_TE={bank.s_te}, "
+        f"F_adj={bank.f_adj}, kappa={bank.kappa}, kappa^2={bank.kappa_squared} and the "
+        "three booleans agree exactly for rho_E=0, rho_E=1 and rho_E=21/4, while over the "
+        "same three rows q_E runs 1, 7/6, 15/8 and c_TE runs -5/3, -10/7, -8/9."
+    )
+    print(
+        "per_site: checked and not executed -- the one site-derived number in this file is "
+        f"the center-minus-arm-mean support step {bank.delta_step}, which arrives as a "
+        "bare constant and is corroborated only by locating its formula as a string in the "
+        "center-excess authority; no seven-site star is assembled here, no arm mean is "
+        "summed, and no per-site amplitude is ever evaluated."
+    )
+    print(
+        f"per_mode: the two bright channels are separated and only one of them moves -- "
+        f"the T channel is held at q_T={bank.q_t} with shell ratio s_TE={bank.s_te} across "
+        "every row, so the entire variation lands in the E channel through c_TE; the "
+        "companion Schur statement that Hom(E,T1) vanishes is carried in the record as a "
+        f"fixed boolean flag ({bank.hom_e_t1_zero}) and is asserted, not computed, here."
+    )
+    print(
+        "per_block: resolved twice over, once as whole-record equality and once as an "
+        "inventory of closure blocks -- the frozen dataclass comparison bank_zero == "
+        "bank_target is a single block-level test rather than a conjunction of field "
+        "tests, and three separate added premises each solve to 21/4 (c_TE=-F_adj, "
+        "q_E/q_T=kappa^2, q_E=15/8) against one falsifying N_c=2 block that gives 22/3."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no box, site count, volume or limit is "
+        "constructed anywhere in this runner; the only infinite-volume language it touches "
+        "is a substring search confirming that another note calls its calibration an exact "
+        "infinite-volume identification, which authenticates that note's wording and "
+        "evaluates nothing, and the missing global object remains the E-center lift itself."
+    )
+
+
 def main() -> int:
     print("Route-2 E-center current source-bank no-go verifier")
     print("=" * 72)
@@ -233,6 +276,8 @@ def main() -> int:
             ),
         ),
     )
+
+    n5_execution_certificate(bank_zero)
 
     print("=" * 72)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

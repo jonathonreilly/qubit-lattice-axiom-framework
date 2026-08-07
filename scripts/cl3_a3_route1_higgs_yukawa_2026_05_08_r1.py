@@ -565,6 +565,59 @@ def section8_counterfactual_fourier_species():
 
 
 # --------------------------------------------------------------------
+# Section 9 — N5 execution certificate (reporting only; no new checks)
+# --------------------------------------------------------------------
+
+def section9_n5_execution_certificate():
+    print("Section 9 — N5 execution certificate: what this runner resolves")
+
+    a, b = 0.7, 0.3 + 0.4j
+    Y = make_circulant(a, b)
+    fourier_diag = [
+        float(np.real((DFT3.conj().T @ Y @ DFT3)[k, k])) for k in range(3)
+    ]
+    off_diag = float(
+        np.max(np.abs((DFT3.conj().T @ Y @ DFT3) - np.diag(np.diag(DFT3.conj().T @ Y @ DFT3))))
+    )
+
+    print(
+        "per_element: checked - the obstruction is decided on individual matrix "
+        "entries: the corner expectations are the diagonal entries Y[alpha, alpha], "
+        f"equal at {a} for the circulant and split to [1.0, 0.0, 0.0] for the "
+        "counterfactual Y_break, while the off-diagonal entries |Y[0,1]| = |Y[1,2]| = "
+        "0.500 are what carry the corner mixing that makes the equality nontrivial."
+    )
+    print(
+        "per_site: checked and not executed - Z^3 enters this runner only as the "
+        "label set for the C_3[111] axis permutation, never as an instantiated "
+        "lattice; the sole site-level object is the Qubit one-site algebra M_2(C) "
+        "spanned by sigma_1, sigma_2, sigma_3, whose Clifford relations and Killing "
+        "form are checked at one site, with no second site and no hopping built."
+    )
+    print(
+        "per_mode: checked - the three C_3-Fourier modes are resolved one at a time, "
+        f"carrying distinct masses {[round(x, 6) for x in fourier_diag]}, each matched "
+        "against the Brannen-Rivero closed form, each verified to be an eigenvector of "
+        "the circulant and a C_3 eigenstate up to phase, with the residual mass mixing "
+        f"between modes bounded by {off_diag:.2e}."
+    )
+    print(
+        "per_block: checked and not executed - two distinct algebras appear, the "
+        "2x2 Cl(3) spin block of Section 1 and the 3x3 hw=1 generation block of "
+        "Sections 2 through 8, and the runner never tensors or otherwise assembles "
+        "them into a joint block structure, so no quantity is compared from one block "
+        "to another and the generation block is treated as the whole content."
+    )
+    print(
+        "lattice_wide: checked and not executed - Section 6 is named for loop "
+        "integrals but executes matrix squares and cubes of a 3x3 circulant plus one "
+        "3x3 determinant; no momentum is integrated over a Brillouin zone, no volume "
+        "is summed and no continuum or large-volume limit is taken, so the route is "
+        "foreclosed structurally rather than by any lattice-wide evaluation."
+    )
+
+
+# --------------------------------------------------------------------
 # Main runner
 # --------------------------------------------------------------------
 
@@ -584,6 +637,7 @@ def main():
     all_results += section6_loop_preserves_c3()
     all_results += section7_counterfactual_c3_breaking()
     all_results += section8_counterfactual_fourier_species()
+    section9_n5_execution_certificate()
 
     n_total = len(all_results)
     n_pass = sum(all_results)

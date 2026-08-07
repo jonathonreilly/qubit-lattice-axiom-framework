@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_parity_dim5_formal_sign_repair.py
-runner_sha256: b849c8188a702ef4ed3d08dd0914a3de7cc501eb3334781fb8cbe3ac94c5b018
+runner_sha256: f3a02a1a33516302970dd1cfbf84b5b85293e5e56078d527ecb0dc34cc846f29
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 Parity dimension-5 formal sign repair
@@ -181,6 +181,15 @@ PART 1: EXHAUSTIVE FORMAL PARITY SIGN ALGEBRA
   [PASS] P-symmetric projection vanishes on odd-N sector  (max=0.00e+00)
   [PASS] P-antisymmetric projection vanishes on even-N sector  (max=0.00e+00)
   [PASS] exhaustive record count matches expected basis enumeration  (records=144)
+
+========================================================================================
+PART 2: N5 EXECUTION CERTIFICATE (reporting only; adds no check)
+========================================================================================
+  per_element: resolved one enumerated structure at a time — each of the 144 index assignments in the four dimension-5 families is conjugated on its own by gamma^0 M gamma^0, multiplied by its own derivative sign factor, and then matched entrywise against +M or -M at atol=1e-10, so every record carries its own verdict line instead of a per-family summary verdict.
+  per_site: checked and not executed — no lattice is ever built here, so there is no position label to resolve; that absence is the note's own declared boundary, which declines to derive how combined staggered parity acts on the actual lattice derivative representatives, and the missing site-resolved conjugation is exactly the theorem this row does not prove.
+  per_mode: resolved one spacetime direction at a time, but only as sign characters — derivative_parity_sign walks the derivative index tuple and contributes a factor of -1 for each of partial_1, partial_2, partial_3 while partial_0 contributes +1; these are index characters and spatial-index counts, and no momentum-space amplitude or dispersion relation is evaluated anywhere in this runner.
+  per_block: resolved family by family and then sector by sector — the enumeration splits into 64 gamma^mu d_nu d_rho records, 16 unit-Clifford d_mu d_nu records, 16 gamma_5 gamma^mu d_nu records and 48 sigma^{mu nu} d_rho records for the pinned total of 144, after which the P-symmetric projection norm is maximized over the odd-N block alone and the P-antisymmetric projection norm over the even-N block alone, each required below 1e-10.
+  lattice_wide: checked and not executed — nowhere in PART 0 or PART 1 is a volume, a site sum, a continuum limit or a thermodynamic limit formed; the row states its own boundary, that a whole-action statement would first have to prove the actual staggered derivative representatives and their coefficients obey the same (-1)^N character, and that action-level theorem is precisely what this runner does not supply.
 
 ========================================================================================
 SUMMARY

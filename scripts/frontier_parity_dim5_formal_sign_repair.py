@@ -203,6 +203,56 @@ def part1_formal_sign_algebra() -> None:
     check("exhaustive record count matches expected basis enumeration", len(records) == 144, f"records={len(records)}")
 
 
+def part2_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, records no PASS/FAIL item, adds no check.
+    """
+    section("PART 2: N5 EXECUTION CERTIFICATE (reporting only; adds no check)")
+    print(
+        "  per_element: resolved one enumerated structure at a time — each of "
+        "the 144 index assignments in the four dimension-5 families is "
+        "conjugated on its own by gamma^0 M gamma^0, multiplied by its own "
+        "derivative sign factor, and then matched entrywise against +M or -M "
+        "at atol=1e-10, so every record carries its own verdict line instead "
+        "of a per-family summary verdict."
+    )
+    print(
+        "  per_site: checked and not executed — no lattice is ever built here, "
+        "so there is no position label to resolve; that absence is the note's "
+        "own declared boundary, which declines to derive how combined "
+        "staggered parity acts on the actual lattice derivative "
+        "representatives, and the missing site-resolved conjugation is exactly "
+        "the theorem this row does not prove."
+    )
+    print(
+        "  per_mode: resolved one spacetime direction at a time, but only as "
+        "sign characters — derivative_parity_sign walks the derivative index "
+        "tuple and contributes a factor of -1 for each of partial_1, "
+        "partial_2, partial_3 while partial_0 contributes +1; these are index "
+        "characters and spatial-index counts, and no momentum-space amplitude "
+        "or dispersion relation is evaluated anywhere in this runner."
+    )
+    print(
+        "  per_block: resolved family by family and then sector by sector — "
+        "the enumeration splits into 64 gamma^mu d_nu d_rho records, 16 "
+        "unit-Clifford d_mu d_nu records, 16 gamma_5 gamma^mu d_nu records and "
+        "48 sigma^{mu nu} d_rho records for the pinned total of 144, after "
+        "which the P-symmetric projection norm is maximized over the odd-N "
+        "block alone and the P-antisymmetric projection norm over the even-N "
+        "block alone, each required below 1e-10."
+    )
+    print(
+        "  lattice_wide: checked and not executed — nowhere in PART 0 or PART "
+        "1 is a volume, a site sum, a continuum limit or a thermodynamic limit "
+        "formed; the row states its own boundary, that a whole-action "
+        "statement would first have to prove the actual staggered derivative "
+        "representatives and their coefficients obey the same (-1)^N "
+        "character, and that action-level theorem is precisely what this "
+        "runner does not supply."
+    )
+
+
 def main() -> int:
     print("Parity dimension-5 formal sign repair")
     print(f"Claim: {CLAIM_ID}")
@@ -210,6 +260,7 @@ def main() -> int:
 
     part0_source_firewall()
     part1_formal_sign_algebra()
+    part2_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("SUMMARY")

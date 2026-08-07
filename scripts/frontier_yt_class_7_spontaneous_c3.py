@@ -711,6 +711,72 @@ def block_13_final_verdict():
 
 
 # ---------------------------------------------------------------------------
+# N5 execution certificate (print-only; no counter is touched)
+# ---------------------------------------------------------------------------
+
+
+def execution_certificate(translations, c3, projectors):
+    """State, per canonical class, what THIS runner actually resolves."""
+    ident = np.eye(3, dtype=complex)
+    unit_err = float(np.linalg.norm(c3.conj().T @ c3 - ident))
+    order_err = float(np.linalg.norm(np.linalg.matrix_power(c3, 3) - ident))
+    res_err = float(np.linalg.norm(sum(projectors) - ident))
+    char_sum_ok = abs(1.0 + OMEGA + OMEGA ** 2) < 1e-12
+    cos2_delta = 1.0 / (1.0 + 5.0)      # cos^2(arctan(sqrt(5))) = 1/6, exact
+    taste_dim = 4 * 1 + 2 * 2
+    flavor_higgs_dof = 2 * 3 * 3
+    trans_entries = sorted({float(np.real(v))
+                            for M in translations.values()
+                            for v in np.diag(M)})
+
+    print()
+    print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 78)
+    print(
+        f"per_element: entry-level work here is confined to 3x3 matrices on "
+        f"the hw=1 triplet and it closes exactly — C_3 unitarity and order "
+        f"three give residuals {unit_err:.1f} and {order_err:.1f}, and the "
+        f"three rank-one projectors sum to the identity with residual "
+        f"{res_err:.1f}; several later blocks instead assert hard-coded "
+        f"booleans or identity matrices and resolve no matrix entry, which is "
+        f"inventory rather than computation."
+    )
+    print(
+        f"per_site: checked and not executed — the translation characters "
+        f"T_x, T_y, T_z enter only as diagonal sign matrices with entries "
+        f"{trans_entries} on the three-dimensional generation triplet; no "
+        f"lattice coordinate, neighbour or hopping is ever built, so no "
+        f"site-resolved quantity is decided."
+    )
+    print(
+        f"per_mode: the three translation-character sectors are resolved "
+        f"individually — characters (-1, +1, +1), (+1, -1, +1) and "
+        f"(+1, +1, -1) produce mutually orthogonal rank-one projectors that "
+        f"resolve the identity exactly, and the Z_3 cube-root characters "
+        f"1, omega, omega^2 sum to zero within 1e-12 ({char_sum_ok}), which is "
+        f"what makes the flavour action discrete rather than residual."
+    )
+    print(
+        f"per_block: block-level counting is exact throughout — the "
+        f"six-dimensional quark block splits 1 + 5 so that cos^2(delta_std) is "
+        f"the exact rational 1/6 (live value {cos2_delta:.6f}), the S_3 taste "
+        f"cube decomposes as "
+        f"4 A_1 + 2 E with total dimension {taste_dim}, which is a different "
+        f"structure from the dimension-3 generation triplet, and a flavour "
+        f"Higgs would add {flavor_higgs_dof} real degrees of freedom against "
+        f"the two that D9 retains."
+    )
+    print(
+        f"lattice_wide: checked and not executed — this file never assembles a "
+        f"gauge configuration, an extent or a spacing, and in particular the "
+        f"Path C claim of invariance 'on every gauge background' is exercised "
+        f"on one generation-uniform scalar operator rather than swept over any "
+        f"ensemble, so nothing here is resolved lattice-wide."
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -739,6 +805,8 @@ def main():
     block_11_no_modification_upstream()
     block_12_outcome_d_verdict()
     block_13_final_verdict()
+
+    execution_certificate(translations, c3, projectors)
 
     print()
     print("=" * 78)

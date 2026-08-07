@@ -140,6 +140,43 @@ def main() -> int:
     check("current result is a no-go for semigroup-derived raw q scaling", True)
     check("this does not rule out future nonsemigroup readout primitives", True)
 
+    banner("6. N5 execution certificate")
+    print(
+        "per_element: checked -- every comparison in this gate is between two individually "
+        f"constructed exact rationals, with no averaging or tolerance anywhere: q_T = {q_t} and "
+        f"lambda = {lambda_sq} give q_target = {q_target} and rho_target = {rho_target} with "
+        f"c_TE = {c_te}; the composition witnesses q1 = {q1} and q2 = {q2} give "
+        f"F(q1 q2) = {raw_composite_left} against F(q1) F(q2) = {raw_composite_right}; and the "
+        f"generator coordinates give {increment_scaled_q} and {increment_scaled_rho} additively "
+        f"and the bound {sign_flip_upper_bound} in the sign-flipped log direction."
+    )
+    print(
+        "per_site: checked and not executed -- nothing positional exists in this runner. The "
+        "slice family is handled entirely through scalar endpoint ratios, the seven-site support "
+        "behind those ratios is never rebuilt, and no quantity here could be attributed to one "
+        "site rather than another even in principle."
+    )
+    print(
+        "per_mode: checked but THIN, resolved in exactly one place -- the E and T channels enter "
+        "only as the two named endpoint ratios q_E and q_T, and the entire test is whether a "
+        "coordinate law can carry q_T into q_E. No channel amplitude is formed, and in "
+        "particular no eigenmode of the slice generator Lambda_R is constructed anywhere, so the "
+        "semigroup's own mode content is left completely untouched by this evidence."
+    )
+    print(
+        "per_block: checked and not executed -- there is no block decomposition in this file to "
+        "resolve. Lambda_R is never decomposed, the readout row is never split, and the three "
+        "candidate coordinate laws are alternatives to one another rather than blocks of one "
+        "object, so reporting a block-resolved result would misdescribe what was run."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no volume and no lattice appear, and the one "
+        "direction that could carry a global or asymptotic statement, the semigroup time t in "
+        "exp(-t Lambda_R), is never integrated or evaluated here; its law is taken from the "
+        "parent note by quoted marker only. The gate is closed at the level of finite exact "
+        "inequalities between fixed rationals, and nothing beyond that scope is certified."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

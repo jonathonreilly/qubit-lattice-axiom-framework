@@ -292,6 +292,43 @@ def main() -> int:
     check("note links conversion source", "RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md" in note)
     check("note does not use generated audit ledger as authority", "AUDIT_LEDGER.md](" not in note)
 
+    section("H. N5 execution certificate (reporting only; adds no check)")
+    print(
+        "per_element: checked - the decisive comparison is made field by field rather "
+        "than slot by slot: each of the four primitive slots carries its own type and "
+        "value entry, and the no-go turns on kinetic_isotropy and h_unit both holding "
+        "the value 1 while their type fields kinetic_form_ratio and "
+        "angle_readout_coefficient differ, which is what blocks the laundering."
+    )
+    print(
+        "per_site: checked and not executed - the one slot that could carry site "
+        "resolution is realized_state, whose declared type is literally "
+        "pointwise_evaluation_slot, and the runner verifies its value is None; the "
+        "pointwise evaluation is therefore empty by construction, so no quantity in "
+        "this no-go is settled at any individual lattice position."
+    )
+    print(
+        "per_mode: checked and not executed - Phi_beta = beta * S_sum is a single "
+        "scalar product, and S_sum = 3L arrives already summed over the three "
+        "fixed-locus weights, so the individual mode contributions are aggregated "
+        "before beta ever acts; no weight is varied on its own and no mode-resolved "
+        "sensitivity is computed."
+    )
+    print(
+        "per_block: checked - the summand count is exercised explicitly: beta = 1/3 "
+        "is confirmed to return exactly one density L = 2/9, beta = 1 the full "
+        "three-summand target 2/3, and beta = 3 three times that target, so the "
+        "block-count scaling of Phi_beta is resolved rather than assumed, and beta = 1 "
+        "is shown to be the unique solution hitting the target."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice, volume or limit is "
+        "constructed; sections A through E and G are registry, ledger-row and "
+        "note-text accounting, so the conclusion that eliminating rival carriers is "
+        "not an h-unit derivation rests on premise bookkeeping and a type "
+        "distinction, not on any whole-lattice evaluation."
+    )
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL} CHECKS={PASS + FAIL}")
     return 0 if FAIL == 0 else 1
 

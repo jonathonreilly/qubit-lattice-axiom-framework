@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
-runner_sha256: 7f0f9361a168da15c7d7e7ccea9268e4fa325afcdd570e6ef09c08be8884498b
+runner_sha256: aec997ee3faa8c1757e049ffbcac33df8a7274c4a92fd9b8832b83210bea8391
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.81
+elapsed_sec: 3.25
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
@@ -163,6 +163,15 @@ G. note/source cross-checks
 [PASS] note carries phrase: No registry, axiom, primitive, audit verdict, or
 [PASS] markdown link inventory is controlled
 [PASS] note line count is bounded
+
+========================================================================================
+H. N5 execution certificate: what this runner resolves
+========================================================================================
+per_element: checked — the target decomposes into individual defect summands and each is resolved exactly: L = 2/9 per summand, three of them give S_sum = 2/3, and the runner confirms Phi = 3 * delta exactly while the fixed-locus source is verified to exclude any physical single-summand readout, so no per-element readout is being borrowed.
+per_site: checked and not executed — no lattice appears in this runner at all; the C3 fixed locus is an orbit-level object with no site index, so there is nothing here that could be resolved site by site and no site-resolved claim is made.
+per_mode: checked — the available character-mode angles are enumerated and each is shown exactly distinct from the targets: the C3 root angle 2*pi/3, the canonical U(1) packagings 2*pi*L = 4*pi/9 and 2*pi*S_sum = 4*pi/3, none of which equals delta = 2/9 or Phi = 2/3.
+per_block: checked and not executed — this runner carries no block decomposition; the C3 fixed locus is handled as one indivisible orbit-level object and no sub-block of it is ever separately resolved, so no block-resolved statement is available from the executed evidence.
+lattice_wide: checked and not executed — the whole argument is exact angle arithmetic plus two finite scans (55 homogeneous coefficients lambda and 17 inhomogeneous alpha values), with no lattice, no volume and no continuum limit anywhere, so the missing R-eta license is certified only at that scope, with PASS=128, FAIL=0.
 
 ========================================================================================
 TOTAL: PASS=128 FAIL=0

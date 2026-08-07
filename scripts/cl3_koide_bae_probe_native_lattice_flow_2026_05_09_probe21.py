@@ -736,6 +736,56 @@ report("9.3 Behavior at BAE: native = neutral (Jacobian=1); SM RGE = drift away"
 
 
 # ============================================================
+# N5 execution certificate: what this runner actually resolves at each
+# canonical granularity.  Nothing below adds a check or changes a count;
+# it records the granularity at which the six barriers were established.
+# ============================================================
+print("\n--- N5 execution certificate: what this runner resolves ---")
+print(
+    "  per_element: checked — the carrier is the 3x3 circulant H = a I + b C + b_bar C^2 "
+    "and its individual matrix entries are the objects tested: Hermiticity via "
+    "||H - H^dag||_F, C_3 equivariance via ||[C, H]||_F, and C^3 = I are each required to "
+    "vanish entrywise, and the coefficient extraction a = Tr(H)/3, b = Tr(H C^2)/3 is "
+    "confirmed by requiring the reconstructed matrix to agree with the block-averaged one "
+    "entry by entry at atol 1e-10 (Sections 1 and 2.4)."
+)
+print(
+    "  per_site: checked — sites of Z^3 each carry their own circulant H_x = a_x I + "
+    "b_x C + b_bar_x C^2, and the block step is applied to genuinely site-resolved data: "
+    "Section 2.3 loads eight sites with independent (a_x, b_x) values and confirms the "
+    "site-wise average is still a circulant to 1e-16, while Section 3.2 lays down 64 sites. "
+    "Site resolution is what makes the block-spin a lattice operation rather than an "
+    "algebraic rescaling."
+)
+print(
+    "  per_mode: checked — the C_3 Fourier modes alpha = 0, 1, 2 with "
+    "lambda_alpha = a + b omega^alpha + b_bar omega^(-alpha) are the coordinates in which "
+    "the interaction-induced flow is integrated: sm_rge_step advances each of the three "
+    "modes separately under d(lambda)/dt = (1/16 pi^2)[3 |lambda|^2 lambda - gauge*lambda] "
+    "for 5000 Euler steps at gauge_term = 1.0, then inverse-transforms back to (a, b). "
+    "Barrier NL4's drive-away is produced mode by mode; the bilinear block-spin of NL1 "
+    "instead leaves every mode label untouched, which is exactly why it cannot select BAE."
+)
+print(
+    "  per_block: checked — the Wilson-Kadanoff block is explicit, 2^3 = 8 sites per block "
+    "with wave-function renormalization Z = sqrt(8), and blocks are the unit at which the "
+    "flow is read: Section 3.2 runs two decimations, 64 sites -> 8 blocks -> 1 block, and "
+    "requires |b|^2/a^2 to equal the BAE value 0.5 after each. Section 3.1 repeats the "
+    "single block step for the seven UV ratios 0.10, 0.30, 0.50, 0.70, 1.00, 1.50, 2.00 "
+    "with max |delta ratio| below 1e-12."
+)
+print(
+    "  lattice_wide: checked at fixed finite volume and not executed as a limit — the 64 "
+    "sites are decimated all the way to one block and the whole-lattice ratio still equals "
+    "the UV ratio, but no infinite-volume, continuum or infinite-iteration IR limit is ever "
+    "taken. That is the note's own obstruction rather than a gap: the flow is the identity "
+    "on (a, b) modulo the scale Z, so there is no asymptotic IR limit that could do "
+    "selection work, and 'not IR-attractive' is settled by the Jacobian eigenvalue 1.0 at "
+    "BAE (Section 5), not by any lattice-wide asymptotics."
+)
+
+
+# ============================================================
 # 10. Summary: Six barriers verified
 # ============================================================
 print("\n" + "=" * 70)

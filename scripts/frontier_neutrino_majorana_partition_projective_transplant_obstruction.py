@@ -216,6 +216,99 @@ def test_density_cocycle_does_not_create_new_lambda_dependence() -> None:
     check("So the refinement/overlap cocycle introduces no new lambda dependence", max_err < 1e-9, "the density cocycle is lambda-blind after compensation")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    Nothing drawn from the seeded chart-map stream is quoted; every number
+    below is a closed-form invariant, a named constant or a structural count.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    k_op = build_positive_background_operator()
+    dim = k_op.shape[0]
+    copies = 10
+    internal = dim // copies
+    j0 = np.linspace(1.0, float(dim), dim, dtype=float)
+    coeff = float(j0 @ np.linalg.solve(k_op, j0))
+    keep = np.arange(copies)
+    elim = np.setdiff1d(np.arange(dim), keep, assume_unique=True)
+    cross = k_op[np.ix_(keep, elim)]
+    cross_nonzero = int(np.count_nonzero(np.abs(cross) > 1e-15))
+
+    print(
+        "per_element: resolved with amplitudes. The background operator is written "
+        "from named entries - the ten reciprocals 1/(d_i d_j) over d = (2, 3, 5, 7), "
+        "so 1/4, 1/9, 1/25, 1/49 on the squares and 1/6, 1/10, 1/14, 1/15, 1/21, "
+        "1/35 on the mixed pairs, times the internal matrix whose entries are 2.0, "
+        "0.2, 1.7, 0.1, 1.4 with exact zeros at [0, 2] and [2, 0]. The source vector "
+        f"carries the {dim} distinct components 1 through {dim} laid down one at a "
+        f"time, the quadratic form contracts all of them into <J_0, K^-1 J_0> = "
+        f"{coeff:.6e}, and the Schur test compares the reduced source entry by entry "
+        f"as a maximum over the {copies} retained components."
+    )
+    print(
+        "per_site: checked and not executed. There is no geometry to resolve: the "
+        f"{dim} indices factor as a {copies}-element inventory of dimension pairs "
+        f"drawn from d = (2, 3, 5, 7) crossed with a {internal}-dimensional internal "
+        "sector, and none of those labels is a position. No lattice, no neighbour "
+        "relation and no volume is ever constructed in this runner."
+    )
+    print(
+        "per_mode: checked and not executed. The only spectral operation applied to "
+        "the background operator is slogdet, which collapses the whole spectrum into "
+        "a single scalar; neither the operator, nor its Schur complement, nor the "
+        f"{internal} x {internal} internal block is ever diagonalized, so no "
+        "eigenvalue, normal mode or mode-resolved weight exists anywhere here. The "
+        "QR factorization in the chart map builds a transformation, it does not "
+        "resolve any mode of the operator."
+    )
+    print(
+        "per_block: resolved, and the structure is copies. Because the dimension-pair "
+        f"factor is diagonal, the operator is exactly block diagonal: {copies} copies "
+        f"of the same {internal} x {internal} internal matrix, copy a scaled by its "
+        "own reciprocal 1/(d_i d_j). The Schur step then partitions the indices into "
+        f"{keep.size} kept and {elim.size} eliminated and forms all four sub-blocks "
+        "explicitly. The limitation is worth naming: the retained set is an index "
+        "range, not a block-aligned choice, so copies 0-2 are kept whole and copies "
+        "4-9 removed whole, and since the copies do not couple, the entire cross "
+        f"block holds exactly {cross_nonzero} nonzero entry - the elimination does "
+        "real work inside copy 3 only."
+    )
+    print(
+        "lattice_wide: checked, but resolved only as whole-object scalars and a "
+        "documentation inventory, and the missing global ingredient is the note's own "
+        "obstruction. Part 1's seven checks are substring searches in five Markdown "
+        "files: they certify that the atlas rows and companion notes exist by name "
+        "and evaluate no amplitude at all. Part 4's compensated density is a single "
+        "whole-operator scalar (log-determinant plus one quadratic form minus a chart "
+        "Jacobian), exercised with one chart map rather than an actual refinement net "
+        "or any limit of one, so nothing asymptotic and nothing genuinely global is "
+        "established; the absolute staircase selector the note is hunting stays absent."
+    )
+    print(
+        "  scope: two of Part 2's checks cannot discriminate as written. The "
+        "derivative list is formed directly as lambda * <J_0, K^-1 J_0> from positive "
+        "scales and a positive coefficient rather than by differentiating anything, "
+        "and the fourth check simply re-tests those same two conditions; the "
+        "quadratic-in-lambda spread test divides a quadratic form by lambda^2, so it "
+        "confirms the algebraic homogeneity of a bilinear form rather than probing a "
+        "response."
+    )
+    print(
+        f"  scope: the three scales exercised are ALPHA_LM^7, ^8 and ^9 for the module "
+        f"constant ALPHA_LM = {ALPHA_LM}, a narrow window at the very small end near "
+        "5.0e-08 down to 4.1e-10; no scale of order one and no wide sweep is tested."
+    )
+    print(
+        "  scope: the Part 4 chart map is drawn from a seeded stream (seed 17). Two "
+        "back-to-back executions of this runner are byte-identical, and no sampled "
+        "quantity is quoted anywhere in the lines above."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: PARTITION / PROJECTIVE TRANSPLANT OBSTRUCTION")
@@ -230,6 +323,7 @@ def main() -> int:
     test_partition_density_stays_monotone_on_the_ray()
     test_projective_schur_closure_preserves_the_same_source_law()
     test_density_cocycle_does_not_create_new_lambda_dependence()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

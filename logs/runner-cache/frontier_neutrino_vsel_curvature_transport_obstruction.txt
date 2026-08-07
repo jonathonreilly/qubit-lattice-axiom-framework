@@ -3,7 +3,7 @@ runner: scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
 runner_sha256: 8d4437b95eb46d0be47491a2d3e3cdb76598333ad15e648aca363792cc1b29fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 PASS T1 taste-cube V_sel = 32 sum_{i<j} phi^2 phi^2 (axis-selector)

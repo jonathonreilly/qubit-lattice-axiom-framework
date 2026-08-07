@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py
-runner_sha256: 38c7c04db8a223dedcc7c0f484a56afae695c16e47eefbdb7cf47f4e3f801738
+runner_sha256: 81f14e271c8a24a6191da5535c0df8af6d98c8e7ca57d4a59533134067d103b7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.92
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ======================================================================
@@ -119,11 +119,11 @@ Probe 5 to drive |b|^2/a^2 AWAY from BAE.
 
 We cross-validate Probe 5's drift result here on a fresh integration.
 
-/private/tmp/cl3-review-open-prs-20260509e.JVWm6a/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:521: RuntimeWarning: overflow encountered in multiply
+/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/a42ff97a-19d7-584b-a62e-978467346cf5/scratchpad/wt-w08/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:521: RuntimeWarning: overflow encountered in multiply
   deigs = (1.0 / (16 * np.pi**2)) * (3 * np.abs(eigs)**2 * eigs - gauge_term * eigs)
-/private/tmp/cl3-review-open-prs-20260509e.JVWm6a/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:521: RuntimeWarning: invalid value encountered in multiply
+/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/a42ff97a-19d7-584b-a62e-978467346cf5/scratchpad/wt-w08/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:521: RuntimeWarning: invalid value encountered in multiply
   deigs = (1.0 / (16 * np.pi**2)) * (3 * np.abs(eigs)**2 * eigs - gauge_term * eigs)
-/private/tmp/cl3-review-open-prs-20260509e.JVWm6a/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:522: RuntimeWarning: invalid value encountered in multiply
+/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/a42ff97a-19d7-584b-a62e-978467346cf5/scratchpad/wt-w08/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:522: RuntimeWarning: invalid value encountered in multiply
   new_eigs = eigs + dt * deigs
 
 6.1 SM-style RGE flow from BAE (with gauge interaction):
@@ -219,6 +219,13 @@ flow that fixes BAE along with everything else (no selection).
 [PASS] 9.1 Native flow uses tree-level bilinear block-spin (no loop integrals): framework's retained Hamiltonian is bilinear at range r=1
 [PASS] 9.2 Probe 5 SM RGE uses perturbative cubic Y Y† Y (loop-induced): SM matrix β-function is cubic in Y_e (1-loop)
 [PASS] 9.3 Behavior at BAE: native = neutral (Jacobian=1); SM RGE = drift away: structurally distinct fixed-point character
+
+--- N5 execution certificate: what this runner resolves ---
+  per_element: checked — the carrier is the 3x3 circulant H = a I + b C + b_bar C^2 and its individual matrix entries are the objects tested: Hermiticity via ||H - H^dag||_F, C_3 equivariance via ||[C, H]||_F, and C^3 = I are each required to vanish entrywise, and the coefficient extraction a = Tr(H)/3, b = Tr(H C^2)/3 is confirmed by requiring the reconstructed matrix to agree with the block-averaged one entry by entry at atol 1e-10 (Sections 1 and 2.4).
+  per_site: checked — sites of Z^3 each carry their own circulant H_x = a_x I + b_x C + b_bar_x C^2, and the block step is applied to genuinely site-resolved data: Section 2.3 loads eight sites with independent (a_x, b_x) values and confirms the site-wise average is still a circulant to 1e-16, while Section 3.2 lays down 64 sites. Site resolution is what makes the block-spin a lattice operation rather than an algebraic rescaling.
+  per_mode: checked — the C_3 Fourier modes alpha = 0, 1, 2 with lambda_alpha = a + b omega^alpha + b_bar omega^(-alpha) are the coordinates in which the interaction-induced flow is integrated: sm_rge_step advances each of the three modes separately under d(lambda)/dt = (1/16 pi^2)[3 |lambda|^2 lambda - gauge*lambda] for 5000 Euler steps at gauge_term = 1.0, then inverse-transforms back to (a, b). Barrier NL4's drive-away is produced mode by mode; the bilinear block-spin of NL1 instead leaves every mode label untouched, which is exactly why it cannot select BAE.
+  per_block: checked — the Wilson-Kadanoff block is explicit, 2^3 = 8 sites per block with wave-function renormalization Z = sqrt(8), and blocks are the unit at which the flow is read: Section 3.2 runs two decimations, 64 sites -> 8 blocks -> 1 block, and requires |b|^2/a^2 to equal the BAE value 0.5 after each. Section 3.1 repeats the single block step for the seven UV ratios 0.10, 0.30, 0.50, 0.70, 1.00, 1.50, 2.00 with max |delta ratio| below 1e-12.
+  lattice_wide: checked at fixed finite volume and not executed as a limit — the 64 sites are decimated all the way to one block and the whole-lattice ratio still equals the UV ratio, but no infinite-volume, continuum or infinite-iteration IR limit is ever taken. That is the note's own obstruction rather than a gap: the flow is the identity on (a, b) modulo the scale Z, so there is no asymptotic IR limit that could do selection work, and 'not IR-attractive' is settled by the Jacobian eigenvalue 1.0 at BAE (Section 5), not by any lattice-wide asymptotics.
 
 ======================================================================
 SUMMARY: Six barriers verified — bounded structural obstruction

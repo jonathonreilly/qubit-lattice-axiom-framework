@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cte_rconn_bridge_cross_domain_no_go.py
-runner_sha256: 3df870f384848917af49131ba44cb4f37c36b632a97598f31961e12dff8771c2
+runner_sha256: e1be2493d70f9ee93e1efe3109b88de020ebb9b41d4b52552226523f71ae5b45
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
 PASS: octahedral_group_order_24 |O|=24 proper rotations
@@ -15,6 +15,13 @@ PASS: COLOR_Rconn_is_group_fraction -R_conn=-(N_c^2-1)/N_c^2=-0.8889=-8/9 : a CO
 PASS: CAT_cross_domain_identification c_TE (position-space cubic E/T2 response ratio) vs -R_conn (fiber-space color fraction): a cross-domain ID
 PASS: NUM_cTE_genuine_0p2pct_off_8_9 c_TE=-0.890684 vs -8/9=-0.888889 : 0.202% off (nearest rational, not equality)
 PASS: NUM_only_T_channel_qT_is_clean_5_6 q_T=0.833328=5/6 (exact-support T-law, clean); E-channel/cross are genuine non-clean gravity-metric
+
+--- N5 execution certificate ---
+per_element: the l=2 representation matrices are assembled entry by entry rather than quoted from tables — for each of the 24 proper octahedral rotations the (a, b) component is computed as the Frobenius pairing of basis tensor B_a with R B_b R^T over the 5 orthonormal symmetric traceless matrices, and the traces of those explicit matrices are what feed the character sums below.
+per_site: checked and not executed — no lattice of sites is built and no field is placed on one; the cubic structure enters purely as the point group acting at a single location, and both gamma_T2 and gamma_E are center readouts, so no site-resolved response is computed or claimed anywhere in this verifier.
+per_mode: the spatial side is resolved into its cubic modes and that is the load-bearing step — the character inner product against the trivial representation returns 0.000, so no O-singlet mode is present, while <chi, chi>/|O| returns 2.000, pinning the 5-dimensional l=2 multiplet to exactly two modes of dimension 2 and 3, and c_TE is by construction the ratio across that E/T2 mode pair.
+per_block: the color side is a block-dimension count, not a response — R_conn = (N_c^2 - 1)/N_c^2 = 0.8889 is the fraction of the fiber algebra occupied by the adjoint block, 8 of the 9 dimensions at N_c = 3, and holding that block fraction beside the mode ratio above is precisely the category mismatch this runner certifies.
+lattice_wide: checked and not executed — no volume, ensemble or thermodynamic limit is taken; the only global comparison made is between two pure numbers, the genuine gravity-metric c_TE = -0.890684 and the nearest rational -8/9, differing by 0.202 percent, with q_T = 0.833328 the one clean channel, and those enter as comparator facts rather than as anything computed over a lattice.
 
 TOTAL: PASS=9 FAIL=0
 VERDICT: the c_TE=-R_conn spatial-tensor<->color bridge is a CROSS-DOMAIN identification, not a typed equality. c_TE is a ratio across the cubic E(2)/T2(3) pieces of the SPLIT SO(3) l=2 irrep (a cubic-lattice quantity); -R_conn is a fiber-space color group fraction. The genuine gravity-metric c_TE=-0.890684 is 0.2% off -8/9 (nearest rational), and only the T-channel q_T=5/6 is a clean spatial law -- so the match is a coincidence. The #1 gate's color-bridge route is a coincidence-chase; the framework's honest readout is the gravity-metric value (rho_E~5.2575), not the color-clean 21/4. RESIDUAL: only a typed N_c=3-from-d=3 spatial<->color link could rescue it; the current stack lacks one.

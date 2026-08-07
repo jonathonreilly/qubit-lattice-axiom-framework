@@ -136,6 +136,28 @@ def main() -> int:
     check("explicit numeric bracket remains image-derived, not table-derived", True)
     check("future acceptable path is table/source-data extraction or repo-owned SDP reproduction", True)
 
+    print("\nE. N5 execution certificate -- what this runner resolves")
+    print("per_element: checked -- the elements resolved are the 16 extracted "
+          "vertices of each source path: endpoints are matched pairwise, "
+          "monotonicity is tested on every consecutive pair, and each bracket "
+          "value comes from the single segment that contains the queried x.")
+    print("per_site: checked and not executed -- no lattice configuration is "
+          "ever built here; the inputs are page-space coordinates of two vector "
+          "paths in an EPS figure, so no site, link or field variable exists on "
+          "which a per-site statement could be made.")
+    print("per_mode: checked and not executed -- the only quantity carried is "
+          "the scalar plaquette coordinate u_p read off the figure; there is no "
+          "operator, spectrum or momentum variable anywhere in this checker, so "
+          "no mode decomposition is available to resolve.")
+    print("per_block: checked -- resolution is by evaluation block in the "
+          "lambda coordinate: the Wilson beta=6 image at lambda = N^2/beta = "
+          "1.5 gives width 0.245195, the plotted lambda = 3.0 block gives width "
+          "0.048725, and the mismatch between these two blocks is the pruning.")
+    print("lattice_wide: checked and not executed -- nothing is simulated on a "
+          "lattice at any size; the SU(3) beta=6 bracket is inherited from an "
+          "external figure, and the named acceptable remedy, a repo-owned "
+          "beta=6 reproduction, is exactly the work this runner does not do.")
+
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if PASS > 0 and FAIL == 0:

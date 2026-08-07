@@ -10,6 +10,12 @@ last changed 2026-08-05). STALE the moment
 `git rev-parse --short origin/main` differs — re-verify the lines you rely on
 (protocol at bottom) before planning.
 
+**Premise-epoch reset (2026-08-07, `5e74dd6ed3`..`5481a3f749`):** the audit
+lane INVALIDATED audits predating the 2026-08-05 axiom refinement — every
+pre-reset grade is suspect; re-pull shards from origin/main before citing ANY.
+Verified instance: `hypercharge_identification_note` audited_conditional →
+unaudited.
+
 **Premise authority (policy header, 2026-07-11):** foundation = four axioms +
 three approved primitives, NOTHING else; everything else is conditional/open at
 zero premise weight; "Tier-A/admission" is historical vocabulary — keep it out
@@ -47,8 +53,9 @@ endstate ALSO needs line 11 — wall retirement alone flips ~0 bounded rows.
    proves axioms+primitives alone don't derive readout selection).
    `project_defect_identity_unit_rescale_obstruction_2026_07_01.md`
 6. **Hypercharge** (fanout 1035): waits on OWNER decision — not
-   science-attackable; `hypercharge_identification_note` audited_conditional
-   (ledger-verified 2026-08-07).
+   science-attackable; `hypercharge_identification_note` unaudited since the
+   premise-epoch reset (was audited_conditional; re-audit belongs to the
+   audit lane).
 7. **r=1/2 / δ pins**: settings not forced (lane-scoped forcing PERMITTED
    never REQUIRED; universal falsified). Positive closure here = Root A weight
    (δ) + Root B boundary (r) — don't attack standalone.

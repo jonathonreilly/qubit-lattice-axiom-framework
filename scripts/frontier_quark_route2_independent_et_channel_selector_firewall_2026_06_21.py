@@ -270,6 +270,48 @@ def main() -> int:
     check("covariance surface already says inverse-square is the gap", "q_X" in covariance_text and "w_X" in covariance_text and "inverse" in covariance_text.lower())
     check("E-center blindness surface requires a genuine E-center lift", "genuine E-center lift" in blindness_text)
 
+    print("\nH. N5 execution certificate")
+    print("-" * 72)
+    print(
+        f"per_element: the representation is assembled one matrix cell at a time -- "
+        f"perm_matrix writes a single 1.0 per column by resolving that column's arm image, "
+        f"across all {len(group)} signed permutations, and the projector properties are then "
+        f"verified entrywise as maximum absolute deviations held below the named tolerance "
+        f"{TOL:g}, so symmetry, idempotence, orthogonality and completeness are cell-level "
+        "statements rather than aggregate residuals."
+    )
+    print(
+        "per_site: checked and not executed -- the six arms are direction labels for one "
+        "star's neighbourhood and carry no occupancy, amplitude or weight of their own, the "
+        "center site is never represented in the six-dimensional space at all, and the "
+        "endpoint quantities q_T and q_E enter as granted scalars rather than as anything "
+        "computed from site data, so no site-resolved selector statement is available."
+    )
+    print(
+        f"per_mode: each channel is handed its own independent coefficient and that is "
+        f"exactly the freedom being reported -- the invariant operator is built as "
+        f"c_A1*P_A1 + c_E*P_E + c_T*P_T1, the E and T1 projectors commute with all "
+        f"{len(perms)} arm actions to within {TOL:g} and annihilate each other, and all "
+        f"{len(candidates)} candidate ratios 1, 3/2, 9/4 and 4/9 give equally invariant "
+        "positive operators, so mode existence is established while mode ratio is not."
+    )
+    print(
+        f"per_block: the Schur block structure is resolved and then shown to be the loose "
+        f"joint -- three central blocks of ranks {ranks} exhaust the six arms, each block "
+        "carries one free scalar, and after T normalization the surviving E:T1 ratio is that "
+        "free scalar; the target and neutral operators differ by exactly (5/4)*P_E, whose "
+        "Frobenius norm is the closed form (5/4)*sqrt(2), and the affine block fitted "
+        "through the two weights imports a=19/4, b=-15/2 and c_A1=7/2 rather than deriving "
+        "them."
+    )
+    print(
+        "lattice_wide: checked and not executed -- this runner never leaves a single "
+        "six-dimensional arm space, builds no box or volume and takes no limit, and the one "
+        "whole-operator quantity it forms is a Frobenius norm on that fixed space rather "
+        "than an extensive observable; the global law still owed is the coefficient-law "
+        "selector, either the inverse-square premise or an equivalent affine law."
+    )
+
     print("\nSummary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

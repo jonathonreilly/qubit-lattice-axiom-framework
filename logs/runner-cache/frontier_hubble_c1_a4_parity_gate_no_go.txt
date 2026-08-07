@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_c1_a4_parity_gate_no_go.py
-runner_sha256: 90cb96aa4d3c67152328eabf08d7856f714ce922d3695658fe30640824faf1d1
+runner_sha256: 85f668a44bef8d80aa3c5647d4ff74fb5faa4235e3b798d0c42649aafb7fdbf2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -34,6 +34,15 @@ invoking bulk-axiom-3 projection?
 [PASS] parity-gate carrier theorem assumes CAR; cannot derive (G1): Assumption 1 of the theorem is exactly the (G1) edge-statistics principle on P_A H_cell
 [PASS] bare parity-gate Z_2 structure does not force CAR vs. non-CAR: all three semantics (CAR, two-qubit spin, ququart) preserve 2+2 parity grading and self-dual half-zone measure 1/2
 [PASS] A4 attack frame is structurally falsified: neither the parity-gate carrier theorem (CAR-input) nor the bare parity-gate Z_2 structure (CAR/non-CAR underdetermined) supplies a derivation of CAR semantics on P_A H_cell
+
+==============================================================================
+N5 EXECUTION CERTIFICATE: RESOLUTION GRANULARITY OF THIS PARITY-GATE NO-GO
+==============================================================================
+per_element: checked — the semantics are separated on individual algebra elements, not on summary labels: the CAR Majorana pair built from c_0 anticommutes exactly, ||{gamma_0, gamma_1}|| = 0.00e+00, whereas the corresponding two-qubit generators X otimes I and I otimes X commute exactly, ||[.,.]|| = 0.00e+00, and violate CAR with ||{.,.}|| = 4.00e+00. That element-level contrast is the only thing separating the two carriers, and the parity gate never sees it.
+per_site: checked and not executed — no real-space lattice site is ever formed; the block carrying the parity gate is one cell's rank-four boundary block, and the transverse analysis lives entirely in the momentum zone, where the nearest-neighbour dispersion enters as Delta_perp = 1 - (sum cos q)/n and is never Fourier-inverted back to sites.
+per_mode: checked — resolution here is mode by mode in two independent senses. Spectrally, each Z_2 involution is diagonalized and its eigenvalues counted: CAR (-1)^N gives (2, 2), two-qubit Z otimes Z gives (2, 2), and ququart Z_4^2 gives (2, 2), identical in all three. In the transverse zone, every grid mode is classified individually against the self-dual threshold, giving n_low=31 against n_high=31 in one transverse direction and n_low=1985 against n_high=1985 in two, exact equality in both.
+per_block: checked — three inequivalent algebras are placed on the same rank-4 block and compared as blocks: CAR two-orbital Fock F(C^2), commuting two-qubit spin on C^2 tensor C^2, and ququart clock-shift Z_4. Each supplies a genuine Z_2 involution squaring to the identity with a 2+2 grading, so every block-level invariant the parity gate can read is shared, and the block alone cannot select CAR.
+lattice_wide: checked — the half-zone measure is established across the entire discretized Brillouin zone rather than on a patch: the involution tau(q) = q + pi is applied to all 64 modes in one transverse direction and all 4096 modes in two, leaving 2 and 126 modes exactly on the Delta_perp = 1 surface. The resulting mu = 1/2 is exact by involution counting, but the continuum statement Delta_perp(tau q) = 2 - Delta_perp(q) is argued rather than obtained as a grid limit, and it is a Z_2 zone symmetry that holds irrespective of fermion semantics — which is exactly why it cannot close (G1).
 
 ==============================================================================
 SUMMARY: PASS=19  FAIL=0

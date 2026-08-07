@@ -288,6 +288,45 @@ def main() -> int:
         f"C1={c1_verdict}; C2={c2_verdict}; C3={c3_verdict}",
     )
 
+    # N5 execution certificate (reporting only; adds no check).
+    print("N5 execution certificate: resolved granularity")
+    print(
+        "per_element: checked - the exact rational data is compared component by "
+        f"component, with the small-carrier identity on O = a I + b.sigma at "
+        f"a={fmt_fraction(a)}, B={fmt_fraction(b_sum)} giving Tr(O U^2) equal to the "
+        "conjugate-negated Tr(O U) as an exact pair, and each candidate's phase map "
+        "matched entry against entry rather than through any aggregate."
+    )
+    print(
+        "per_site: checked and not executed - no site index exists here, and that is "
+        "the runner's own finding rather than an omission: every candidate fails the "
+        "registrability screen at record_content_alone, and the closing summary "
+        "records the record-content occurrence map as absent, which is exactly the "
+        "site-resolved readout a per-site certification would require."
+    )
+    print(
+        f"per_mode: checked - the three C3 sectors k = 1, 2, 3 are each carried "
+        f"separately: Candidate 1 holds the Z6 torsion phases {fmt_map(p_plus_phases)} "
+        f"and {fmt_map(p_minus_phases)}, and Candidate 2's real cut is computed sector "
+        f"by sector as {fmt_map(real_cut_eta)}, so the K-odd cancellation is "
+        "located in each individual sector and not merely in their sum."
+    )
+    print(
+        "per_block: checked - two block structures are resolved: the plus and minus "
+        f"holonomy branches accumulate independently to {fmt_map(branch_products)}, "
+        f"and the parent fixed locus is split into the j = 1, 2 blocks "
+        f"{fmt_map(parent_weights)} summing to {fmt_fraction(parent_total)}, against "
+        "which candidate decompositions are matched blockwise, with a separate guard "
+        "rejecting any total-only accidental agreement."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice, volume or orbit count "
+        "is built anywhere; the parent value 2/9 enters as a given fixed-locus "
+        "decomposition rather than being computed from a lattice, so this runner "
+        "certifies only that the three candidate carriers fail to reproduce it "
+        "exactly, and offers no whole-lattice derivation of the target."
+    )
+
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print(
         "SUMMARY files: "

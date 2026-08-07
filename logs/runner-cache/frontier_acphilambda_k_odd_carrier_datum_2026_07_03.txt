@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py
-runner_sha256: e0cab1ab06c0ab8aa68e1be9a18652e9cc13c4d9e503ced8ec9f488880b7d399
+runner_sha256: 3d1055a68c4084e64369efcb69138fc5b2849d8f5e3ce2cee31108bc17b25dc3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 CHECK 01: PASS - escape-condition quote guard
@@ -34,6 +34,12 @@ CHECK 25: PASS - Candidate 3 registrability screen records fixed-locus readback 
 CHECK 26: PASS - I4b consistency: holonomy phase trivializes on positive Hermitian restriction -- phase=0
 CHECK 27: PASS - I4b consistency: centered eta trivializes on positive Hermitian restriction -- centered_eta=0
 CHECK 28: PASS - No A1 derivation claim is triggered -- C1=NO-MATCH; C2=NO-MATCH; C3=NO-MATCH
+N5 execution certificate: resolved granularity
+per_element: checked - the exact rational data is compared component by component, with the small-carrier identity on O = a I + b.sigma at a=5/7, B=11/13 giving Tr(O U^2) equal to the conjugate-negated Tr(O U) as an exact pair, and each candidate's phase map matched entry against entry rather than through any aggregate.
+per_site: checked and not executed - no site index exists here, and that is the runner's own finding rather than an omission: every candidate fails the registrability screen at record_content_alone, and the closing summary records the record-content occurrence map as absent, which is exactly the site-resolved readout a per-site certification would require.
+per_mode: checked - the three C3 sectors k = 1, 2, 3 are each carried separately: Candidate 1 holds the Z6 torsion phases {1: -1/6, 2: -1/3, 3: 1/2} and {1: 1/6, 2: 1/3, 3: 1/2}, and Candidate 2's real cut is computed sector by sector as {1: 0, 2: 0, 3: 0}, so the K-odd cancellation is located in each individual sector and not merely in their sum.
+per_block: checked - two block structures are resolved: the plus and minus holonomy branches accumulate independently to {P_plus: 0, P_minus: 0}, and the parent fixed locus is split into the j = 1, 2 blocks {1: 1/9, 2: 1/9} summing to 2/9, against which candidate decompositions are matched blockwise, with a separate guard rejecting any total-only accidental agreement.
+lattice_wide: checked and not executed - no lattice, volume or orbit count is built anywhere; the parent value 2/9 enters as a given fixed-locus decomposition rather than being computed from a lattice, so this runner certifies only that the three candidate carriers fail to reproduce it exactly, and offers no whole-lattice derivation of the target.
 TOTAL: PASS=28 FAIL=0
 SUMMARY files: docs/ACPHILAMBDA_K_ODD_CARRIER_REGISTERED_DATUM_TEST_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py
 SUMMARY checks: PASS=28 FAIL=0

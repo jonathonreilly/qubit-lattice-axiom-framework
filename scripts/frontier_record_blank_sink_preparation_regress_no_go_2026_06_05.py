@@ -140,6 +140,40 @@ def main() -> int:
     for label, phrase in forbidden_wording:
         check(f"forbidden wording absent: {label}", phrase not in text)
 
+    section("N5 EXECUTION CERTIFICATE (print-only; registers no check)")
+    emit(
+        "  per_element: checked and not executed -- this runner builds no matrix, operator, amplitude or state "
+        "vector, so there is no element for anything to be resolved at. Its objects are bitstrings, tuples and set "
+        "cardinalities, and every conclusion is a counting statement about label sets rather than an entrywise "
+        "comparison of any array."
+    )
+    emit(
+        "  per_site: thin, and reported as thin -- register cells enter only through the width k, which fixes the "
+        "label count 2^k and the size k of the bit loss under closed blanking, and one concrete 3-cell word (101) is "
+        "exhibited moving outward intact. Comparisons are made on whole words, not cell by cell, so no individual "
+        "site is separately resolved and no site-level dynamics is executed anywhere."
+    )
+    emit(
+        "  per_mode: checked and not executed -- there is no state space, no basis and no dynamics in this file at "
+        "all, hence nothing that could carry a mode. No spectrum is formed, no channel is projected, and the "
+        "capacity ledger it computes would read identically under any relabelling of an underlying mode structure "
+        "that does not exist here."
+    )
+    emit(
+        "  per_block: exercised, but only at the single split the argument needs -- the register is partitioned into "
+        "an inner sink and an outer sink, and the two routes are distinguished exactly by what crosses that "
+        "boundary: closed blanking keeps everything inside and collapses the block to one label, while the "
+        "outer-sink route moves the old k-cell word across and preserves all 2^k labels. No finer block "
+        "decomposition exists in this runner and none is claimed."
+    )
+    emit(
+        "  lattice_wide: exercised, and it is inherently a finite-N statement -- the result is a whole-system "
+        "capacity ledger: m repeated clean resets need k*m exported bits, and a fixed environment of B bits "
+        "therefore supports floor(B/k) cycles and no more. The runner executes this over widths k = 1..5, cycle "
+        "counts m = 1..5 and capacities B in {0, 3, 6, 9}; the whole force of the no-go is that the budget stays "
+        "finite, so no limiting or large-system extrapolation is taken."
+    )
+
     section("SCORECARD")
     emit(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

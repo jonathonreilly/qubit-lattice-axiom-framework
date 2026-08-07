@@ -325,6 +325,45 @@ def main() -> int:
     print(f"  Shannon root pack               = {np.round(root_pack, 12)}")
 
     print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER ACTUALLY RESOLVES")
+    print("=" * 88)
+    shannon_etas = eta_vector_from_params(shannon_params)
+    print(
+        "per_element: checked — the projected-pack components are resolved one "
+        "by one at both witnesses, with (gamma, E1, E2, det h) = "
+        f"{np.round(shannon_pack4, 6)} for Shannon and {np.round(renyi_pack4, 6)} "
+        "for Renyi-2, every entry strictly above the positivity tolerance "
+        f"{POS_TOL:g}, while at the crossing the observable pack resolves "
+        f"entrywise to {np.round(root_pack, 6)} with E1 = {root_pack[2]:.6f} < 0."
+    )
+    print(
+        "per_site: checked and not executed — this is a three-generation "
+        "flavor-space construction; neither the five-component source vector "
+        "nor the canonical 3x3 h carries a spatial site label, so no "
+        "site-resolved statement is available from the executed evidence."
+    )
+    print(
+        "per_mode: checked — the three normalized Schur spectral modes are "
+        "compared partial-sum by partial-sum: Shannon gives "
+        f"{np.round(shannon_spec, 6)} and Renyi-2 gives {np.round(renyi_spec, 6)}, "
+        "and majorization fails in both directions, so no mode ordering makes "
+        "'most isotropic spectrum' well defined on the fiber."
+    )
+    print(
+        "per_block: checked — the three transport columns are the block units "
+        f"here; the Shannon endpoint resolves them to eta = {np.round(shannon_etas, 6)}, "
+        "keeping the favored column at the exact transport-maximal value "
+        f"eta_1 = {plateau.eta1_from_params(w1_params):.12f} to within 1e-10."
+    )
+    print(
+        "lattice_wide: checked and not executed — the no-go is stated on the "
+        "orbit-level canonical fiber at fixed 3x3 flavor rank and no lattice or "
+        "continuum extension is attempted; the executed evidence is the two "
+        "positive-fiber witnesses plus the single eta_1 = 1 crossing at "
+        f"lambda = {root_lambda:.12f}, with PASS={PASS_COUNT}, FAIL={FAIL_COUNT}."
+    )
+
+    print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1

@@ -252,6 +252,48 @@ def part5_firewall() -> None:
     check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
+def part6_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only; it adds no check to the tally."""
+    print("\nF. N5 execution certificate")
+    scan = low_ratio_set(64, 64)
+    metric_ratio = diagonal_quadratic_metric_ratio(TARGET_Q_E)
+    print(
+        f"per_element: the carrier columns are validated component by component, with the "
+        f"largest absolute deviation of the imported E-shell and E-center columns from "
+        f"(1,0,0,0) and (1,0,1/6,0) required to stay under the named tolerance "
+        f"{EXACT_TOL:g}; everything downstream of that is exact Fraction work, so the "
+        "granted center value -5/3 is not assumed but formed as shell_TE times q_T."
+    )
+    print(
+        f"per_site: resolved as two complete source vectors, one per star role -- the shell "
+        f"vector {source_shell()} and the center vector (q_E, {GAMMA_T_CENTER}) are built "
+        "separately and every selector equation in the fan-out is a relation between those "
+        "two vectors; below that the runner has nothing, since no shell arm is enumerated "
+        "and no coordinate or displacement is carried anywhere in the file."
+    )
+    print(
+        "per_mode: each source vector is read as an (E, T) pair and only one slot is ever "
+        "unknown -- the T slot is pinned at both roles while the E slot is pinned only at "
+        "the shell, so the five conservation-style selectors (no lift, slope, product, L1 "
+        "and center absolute balance) each push the free E slot to a different exact value, "
+        "namely q_E = 1, 5/6, 6/5, 4/3 and 5/3 with rho_E = 0, -1, 6/5, 2 and 4."
+    )
+    print(
+        f"per_block: the quadratic block is solved and then searched -- a diagonal metric "
+        f"a*q_E^2 + b*(25/9) matched to a + 4b forces the block coefficient ratio "
+        f"b/a = 9(q_E^2-1)/11, which at the target equals {metric_ratio}, and that ratio is "
+        f"then shown absent from a ten-element bank of primitive ratios and from a scan of "
+        f"{len(scan)} distinct positive rationals with numerator and denominator at most 64."
+    )
+    print(
+        "lattice_wide: checked and not executed -- two four-component carrier columns and "
+        "two two-component source vectors are the whole of what this runner holds, so "
+        "nothing with an extent, a volume or a limit arises; the object that would settle "
+        "question globally is a theorem delivering the signed center bridge c_TE = -8/9 or "
+        "the metric ratio 1449/704, and the note records both as still owed."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("ROUTE-2 FIXED-CARRIER SELECTOR EQUATION BOUNDARY")
@@ -262,6 +304,7 @@ def main() -> int:
     part3_selector_fanout()
     part4_metric_and_bridge_boundary()
     part5_firewall()
+    part6_n5_execution_certificate()
 
     print("\nSummary")
     print("-" * 72)

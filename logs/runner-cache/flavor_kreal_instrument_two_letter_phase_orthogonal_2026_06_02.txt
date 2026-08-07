@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_kreal_instrument_two_letter_phase_orthogonal_2026_06_02.py
-runner_sha256: 108c8ee1324d5237d33e4b6ad81bf5002a360037ff2974410f51b448ce0d6e7c
+runner_sha256: aa994bd3f608532f4fc6ae43787cad8392a34e4bdcaf7b7ccca30b2c277a1330
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 [PASS] S=C+C^2 is K-even Hermitian with spectrum {2,-1,-1}
@@ -21,6 +21,13 @@ status: ok
 [PASS] dimension count gives r=1 while block count gives r=1/2
 [PASS] note keeps Record downstream of a supplied readout context
 [PASS] note does not force r=1/2 or a two-letter measure selector
+
+N5 EXECUTION CERTIFICATE -- what this runner resolves
+per_element: checked -- the two circulant letters are built and verified one at a time, S = C + C^2 and J = i(C - C^2), each Hermitian, with conj(J) = -J and the individual overlaps Tr(I J) = 0 and Tr(S J) = 0 vanishing to better than 1e-12.
+per_site: checked and not executed -- the 3x3 index here is the generation label of one internal circulant factor, not a lattice site; no site variable, no site-dependent coupling and no neighbour relation is constructed anywhere in this instrument check.
+per_mode: checked -- the spectra are resolved mode by mode, spec(S) = {2, -1, -1} and spec(J) = {-sqrt3, 0, sqrt3}, and it is the mode degeneracy of S that supplies the doublet while J's mode pattern carries the K-odd Brannen phase removed by the K-even projection.
+per_block: checked -- the K-even record splits into exactly two blocks, the trivial 1-dimensional block and the 2-dimensional doublet; the two-letter record removes exactly p_doublet*log 2 = 0.462098 of entropy, and dimension count gives r = 1 while block count gives 1/2.
+lattice_wide: checked and not executed -- this runner never leaves the single fixed 3-dimensional generation factor, so no lattice, extent or limit exists here; the residual it hands on is the measure on the two-letter record, which is a within-block question, not a lattice one.
 
 SCORECARD PASS=11 FAIL=0
 FINDING: under a K-real instrument, the record alphabet is the K-even two-sector split while the Brannen phase lies in the K-odd channel.

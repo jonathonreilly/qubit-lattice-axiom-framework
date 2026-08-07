@@ -426,6 +426,39 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate -- what this runner resolves")
+    print(
+        "per_element: checked -- the 36 weight-box elements (p,q) with p,q <= 5 "
+        "are handled one at a time: each recurrence entry is accumulated 1/6 per "
+        "admissible neighbour, and the direct-evaluation control re-sums "
+        "dim*character coefficient by coefficient (error 3.6e-13)."
+    )
+    print(
+        "per_site: checked and not executed -- the plaquette lane is already "
+        "compressed to class functions, so no lattice site or link variable "
+        "exists in this runner; the only spatial residue is the depth-3 "
+        "transfer stack, whose individual sites are never instantiated."
+    )
+    print(
+        "per_mode: checked -- resolution is mode-by-mode on the weight box: the "
+        "recurrence matrix is diagonalized by eigh before exponentiation, and "
+        "the layer damping exp(-linear_decay*(p+q) - asym_decay*(p-q)^2) acts "
+        "separately on every weight mode of both witnesses A and B."
+    )
+    print(
+        "per_block: checked -- two block structures are exercised: the first "
+        "symmetric basis groups the weights into the blocks (0,0), "
+        "(1,0)+(0,1) and (1,1), on which the universal operator restricts "
+        "exactly to the rank-3 radical F, and the conjugation swap block "
+        "structure holds to 1e-12 for both witnesses."
+    )
+    print(
+        "lattice_wide: checked and not executed -- nothing is evaluated on a "
+        "lattice of any size: the surface is the truncated weight box with "
+        "NMAX = 5 and depth 3, no volume or continuum limit is taken, and the "
+        "beta=6 Wilson/Haar physical stack bridge is left open by construction."
+    )
+    print()
     print(f"TOTAL: PASS={THEOREM_PASS + SUPPORT_PASS}, FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

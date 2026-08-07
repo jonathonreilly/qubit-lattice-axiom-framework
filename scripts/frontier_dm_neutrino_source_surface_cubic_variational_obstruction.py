@@ -712,6 +712,66 @@ def part7_obstruction_statement() -> None:
   )
 
 
+def part8_n5_execution_certificate() -> None:
+  """Part 8: N5 execution certificate — what this runner resolves per class."""
+  print("\n" + "=" * 88)
+  print("PART 8: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE")
+  print("=" * 88)
+
+  def re_w3_bdy(t: float) -> float:
+    q = SQRT83 - t
+    return q * (q ** 2 - 3.0 * t ** 2)
+
+  t_plus = 2.0 / math.sqrt(3.0)
+  t_minus = -2.0 / math.sqrt(3.0)
+  r_axis = SQRT83 / (math.cos(0.0) + math.sin(0.0))
+  theta2 = 2.0 * math.pi / 3.0
+  r_second = SQRT83 / (math.cos(theta2) + math.sin(theta2))
+
+  print(
+    " per_element: checked — every stationary point is named and tested "
+    "individually rather than found by a bulk scan: the two boundary critical "
+    "points t_+-(m) = m/2 +- sqrt(9 m^2 - 12 sqrt(6) m + 48)/6 solve the "
+    "explicit quadratic 12 t^2 - 12 m t + 4 sqrt(6) m - 16 = 0, the three "
+    "joint (m, t) points (2 sqrt(6)/3, 0), (2 sqrt(6)/3 - 2 sqrt(2), "
+    "sqrt(6) - sqrt(2)) and (2 sqrt(6)/3 + 2 sqrt(2), sqrt(6) + sqrt(2)) are "
+    "each checked separately against det = 0, and the two cubic extrema at "
+    f"t = +-2/sqrt(3) give Re(w^3) = {re_w3_bdy(t_plus):.6f} and "
+    f"{re_w3_bdy(t_minus):.6f} one at a time."
+  )
+  print(
+    " per_site: checked and not executed — the only coordinates in this runner "
+    "are the Schur baseline scale m and the active pair (delta, q_+) of one "
+    "3x3 chart; no lattice is instantiated and no quantity carries a position "
+    "index, so the cubic obstruction is never resolved site by site and this "
+    "runner makes no site-level claim."
+  )
+  print(
+    " per_mode: checked — the three Z_3 rays arg(w) in {0, 2 pi/3, -2 pi/3} "
+    "are the modes and each is evaluated on its own: all three carry the "
+    "identical cubic value cos(3 arg w) = +1, so the cubic cannot tell them "
+    f"apart, and the chamber admits exactly two of them, at r = {r_axis:.4f} "
+    f"for arg(w) = 0 and r = {r_second:.4f} for arg(w) = 2 pi/3, while "
+    "-2 pi/3 is inaccessible — mode degeneracy is the obstruction itself."
+  )
+  print(
+    " per_block: checked — the active circulant J_act is block-diagonalized by "
+    "the Z_3 character transform into one singlet eigenvalue and a doublet "
+    "pair, and every cubic invariant tested here is a symmetric function over "
+    "those blocks, which is exactly why they collapse: tr(J_act^3) = "
+    "6 Re(w^3) and det(J_act) = 2 Re(w^3), so no cubic functional separates "
+    "the singlet block from the doublet block."
+  )
+  print(
+    " lattice_wide: checked and not executed — the only limit taken anywhere "
+    "is m -> infinity in the baseline scale, where t_-(m) = sqrt(6)/3 "
+    "- 2/(3 m) + O(1/m^2) recovers the Schur-Q point; that is a scale limit on "
+    "a fixed 3x3 chart and is precisely the regime where the cubic term "
+    "vanishes, so it certifies nothing. No volume, site sum or thermodynamic "
+    "limit is taken, and no lattice-scale statement is made."
+  )
+
+
 def print_summary() -> None:
   print("\n" + "=" * 88)
   print(f"TOTAL: PASS = {PASS_COUNT}, FAIL = {FAIL_COUNT}")
@@ -732,6 +792,7 @@ def main() -> int:
   part5_z3_orbit_is_not_unique_in_chamber()
   part6_sign_of_cubic_is_post_axiom()
   part7_obstruction_statement()
+  part8_n5_execution_certificate()
 
   print_summary()
   return 1 if FAIL_COUNT else 0

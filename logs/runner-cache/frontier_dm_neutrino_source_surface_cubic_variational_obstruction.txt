@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_cubic_variational_obstruction.py
-runner_sha256: ff7977c932d4bc29c52f8d0149fd9e7f70a22ecae48de849d69c822aaab895b3
+runner_sha256: 21942acb2f2d200849f6ee43dc801e3f5ddd103094e530840c68d12f0b750414
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -90,6 +90,15 @@ PART 7: OBSTRUCTION STATEMENT
  closure, or a canonical Z_3-sector convention with independent justification).
  [PASS (C)] the cubic variational selection obstruction obstruction theorem established (cubic route cannot close G1) (five-part obstruction verified)
  [PASS (C)] the selector gate remains OPEN (the selector principle is not promoted by this runner) (claim discipline preserved: no theorem-grade promotion)
+
+========================================================================================
+PART 8: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+ per_element: checked — every stationary point is named and tested individually rather than found by a bulk scan: the two boundary critical points t_+-(m) = m/2 +- sqrt(9 m^2 - 12 sqrt(6) m + 48)/6 solve the explicit quadratic 12 t^2 - 12 m t + 4 sqrt(6) m - 16 = 0, the three joint (m, t) points (2 sqrt(6)/3, 0), (2 sqrt(6)/3 - 2 sqrt(2), sqrt(6) - sqrt(2)) and (2 sqrt(6)/3 + 2 sqrt(2), sqrt(6) + sqrt(2)) are each checked separately against det = 0, and the two cubic extrema at t = +-2/sqrt(3) give Re(w^3) = -1.803754 and 10.513051 one at a time.
+ per_site: checked and not executed — the only coordinates in this runner are the Schur baseline scale m and the active pair (delta, q_+) of one 3x3 chart; no lattice is instantiated and no quantity carries a position index, so the cubic obstruction is never resolved site by site and this runner makes no site-level claim.
+ per_mode: checked — the three Z_3 rays arg(w) in {0, 2 pi/3, -2 pi/3} are the modes and each is evaluated on its own: all three carry the identical cubic value cos(3 arg w) = +1, so the cubic cannot tell them apart, and the chamber admits exactly two of them, at r = 1.6330 for arg(w) = 0 and r = 4.4614 for arg(w) = 2 pi/3, while -2 pi/3 is inaccessible — mode degeneracy is the obstruction itself.
+ per_block: checked — the active circulant J_act is block-diagonalized by the Z_3 character transform into one singlet eigenvalue and a doublet pair, and every cubic invariant tested here is a symmetric function over those blocks, which is exactly why they collapse: tr(J_act^3) = 6 Re(w^3) and det(J_act) = 2 Re(w^3), so no cubic functional separates the singlet block from the doublet block.
+ lattice_wide: checked and not executed — the only limit taken anywhere is m -> infinity in the baseline scale, where t_-(m) = sqrt(6)/3 - 2/(3 m) + O(1/m^2) recovers the Schur-Q point; that is a scale limit on a fixed 3x3 chart and is precisely the regime where the cubic term vanishes, so it certifies nothing. No volume, site sum or thermodynamic limit is taken, and no lattice-scale statement is made.
 
 ========================================================================================
 TOTAL: PASS = 26, FAIL = 0

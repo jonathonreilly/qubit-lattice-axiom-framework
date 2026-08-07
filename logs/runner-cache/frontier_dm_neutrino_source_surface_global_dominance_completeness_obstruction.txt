@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_global_dominance_completeness_obstruction.py
-runner_sha256: 81bdf0676630bfdc3c3671713cc99855356b5258b4c2eb202db7d1093d7b7071
+runner_sha256: cec70ebd05ed872b0dee7bb917c66fc0ce0e3738747240f5a956096145c2aa7d
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,9 +17,9 @@ Question:
 ========================================================================================
 PART 1: THE PREFERRED RECOVERED POINT IS A REAL RECOVERED-CARRIER WINNER
 ========================================================================================
-  [PASS] The recovered carrier still consists of the same five clustered exact lifts  (repairs=[1.58687471 2.52224944 2.69898576 3.81245795 5.52618588])
+  [PASS] The recovered carrier still consists of the same five clustered exact lifts  (repairs=[1.586875 2.522249 2.698986 3.812458 5.526186])
   [PASS] The preferred recovered lift is still the unique least-repair point on that recovered carrier  ((winner,gap)=(0,9.353747250847e-01))
-  [PASS] That preferred recovered lift is still the named target point on the active sheet  (preferred=[1.02103884 1.38079143 0.21567748])
+  [PASS] That preferred recovered lift is still the named target point on the active sheet  (preferred=[1.021039 1.380791 0.215677])
   [PASS] The preferred recovered target in (delta,q_+) is unchanged on the branch  (target=(1.380791428982,0.467879209399))
 
 ========================================================================================
@@ -47,6 +47,15 @@ PART 3: EXACT-CARRIER COMPLETENESS AND GLOBAL DOMINANCE REMAIN UNPROVED
   [PASS] The obstruction note now sharpens the missing carrier theorem further to interval-certified control on the two explicit local upper-face neighborhoods
   [PASS] The branch conclusion note keeps the overall branch verdict at obstruction
   [PASS] The branch conclusion note names exact-carrier completeness / global dominance as one of the two exact blockers
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+  per_element: checked -- the recovered carrier is resolved lift by lift, not as a cloud: all 5 exact lifts carry their own repair value [1.586875, 2.522249, 2.698986, 3.812458, 5.526186], the winner is identified as the unique least-repair element with a strictly positive gap 9.353747250847e-01 to the runner-up, and its target is checked componentwise as (delta, q_+) = (1.380791428982, 0.467879209399).
+  per_site: checked and not executed -- the objects compared here are lifts and repair scalars on the active source sheet, indexed only by carrier label and by the rival coordinate; this runner instantiates no lattice and no position variable, so the dominance question is never posed site by site.
+  per_mode: checked and not executed -- no spectral, character or Fourier decomposition is performed anywhere in this runner; repairs and targets are scalars produced by the upstream support module and are never separated into modes, so nothing here certifies the winner or the rival windows mode by mode.
+  per_block: checked -- the rival side is resolved into three named disjoint interval blocks and each is handled separately: endpoint (-1.899713, -1.87), split_1 (-1.16, -1.1) and split_2 (-0.19, -0.14), verified ordered and non-overlapping, with the residual pressure shown to collapse onto the split-2 block alone while endpoint and split_1 pressure is already absent.
+  lattice_wide: checked and not executed -- and this is exactly the obstruction the runner exists to record: there is no lattice here at all, and the analogous global object -- an interval-certified exclusion theorem or a global lower-bound theorem over the whole exact carrier -- is precisely what the note states is missing, so the winner is certified only on the recovered carrier, never globally.
 
 ========================================================================================
 RESULT

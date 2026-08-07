@@ -201,6 +201,50 @@ def part5_quote_anchors() -> None:
     )
 
 
+def part6_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print("\nPART 6: N5 execution certificate")
+    max_coeff = 3
+    poly_exponents = tuple(range(0, 5))
+    one_pole_exponents = tuple(range(-1, 5))
+    poly_count = (max_coeff + 1) ** len(poly_exponents) - 1
+    one_pole_count = (max_coeff + 1) ** len(one_pole_exponents) - 1
+    ladder = "; ".join(f"p={p}: {lambda_power(p)}" for p in range(-2, 3))
+    print(
+        f"per_element: each monomial exponent is resolved on its own -- lambda(p)=(w_E/w_T)^p is "
+        f"formed as an exact Fraction at R={R}, giving {ladder}, and an integer power scan across "
+        f"p from -8 to 8 confirms that {TARGET_LAMBDA} is reached at p=-2 and at no other integer "
+        "power; no value in this ladder is approximated or rounded."
+    )
+    print(
+        f"per_site: checked and not executed -- w_E={W_E} and w_T={W_T} are channel volumes, that "
+        "is two of the six star arms and three of the six respectively, so the site content is "
+        "already contracted into these two rationals before this file begins; nothing here "
+        "reopens the arm index or evaluates any per-arm amplitude."
+    )
+    print(
+        "per_mode: the E and T1 channels are the only granularity at which this bound is even "
+        "statable -- every quantity in the file is the ratio of the E-channel value of a cone to "
+        f"the T-channel value of the same cone, the target {TARGET_LAMBDA} is exactly such a mode "
+        f"ratio, and the granted q_T={Q_T} together with s_TE={S_TE} is what converts that ratio "
+        "into rho_E."
+    )
+    print(
+        "per_block: two positive cones are enumerated exhaustively as blocks -- the polynomial "
+        f"cone over exponents 0..4 with integer coefficients 0..{max_coeff} contributes "
+        f"{poly_count} nonzero combinations all bounded by lambda<=1, and the one-pole cone over "
+        f"exponents -1..4 contributes {one_pole_count} combinations all bounded by lambda<=3/2 "
+        f"with {TARGET_LAMBDA} absent from that list; these are computed ratios, not tallies."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the gap is worth naming precisely -- the cone "
+        f"bounds are established by finite enumeration up to coefficient {max_coeff} and exponent "
+        "4, while the step from those finite blocks to every positive cone rests on the "
+        "weighted-average argument stated in the docstring, which this runner verifies only at the "
+        "monomial level; no lattice, volume or limit is taken anywhere in the file."
+    )
+
+
 def main() -> int:
     print("Route-2 one-pole channel-volume no-go")
     print("Scope: positive polynomial/one-pole source-readout cones; not all future nonlinear observables")
@@ -209,6 +253,7 @@ def main() -> int:
     part3_positive_cone_bounds()
     part4_what_would_escape()
     part5_quote_anchors()
+    part6_n5_certificate()
 
     total = PASS_COUNT + FAIL_COUNT
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={total}")

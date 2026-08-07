@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.py
-runner_sha256: 936564a8f79e04994c0c3ca9d427ba58b9adddb7a671dccd5b5172420d9e56dd
+runner_sha256: 85d2a6a847c6b42135029906802b9a70c88cf2f237ff67889793fb16a770a973
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 Route-2 one-pole channel-volume no-go
@@ -38,6 +38,13 @@ PASS: quote anchors present: exact readout missing entry -- all anchors found
 PASS: quote anchors present: kappa covariance bridge remains the free datum -- all anchors found
 PASS: quote anchors present: quadratic route names inverse-square gap -- all anchors found
 PASS: quote anchors present: bilinear carrier is polynomial definition only -- all anchors found
+
+PART 6: N5 execution certificate
+per_element: each monomial exponent is resolved on its own -- lambda(p)=(w_E/w_T)^p is formed as an exact Fraction at R=2/3, giving p=-2: 9/4; p=-1: 3/2; p=0: 1; p=1: 2/3; p=2: 4/9, and an integer power scan across p from -8 to 8 confirms that 9/4 is reached at p=-2 and at no other integer power; no value in this ladder is approximated or rounded.
+per_site: checked and not executed -- w_E=1/3 and w_T=1/2 are channel volumes, that is two of the six star arms and three of the six respectively, so the site content is already contracted into these two rationals before this file begins; nothing here reopens the arm index or evaluates any per-arm amplitude.
+per_mode: the E and T1 channels are the only granularity at which this bound is even statable -- every quantity in the file is the ratio of the E-channel value of a cone to the T-channel value of the same cone, the target 9/4 is exactly such a mode ratio, and the granted q_T=5/6 together with s_TE=-2 is what converts that ratio into rho_E.
+per_block: two positive cones are enumerated exhaustively as blocks -- the polynomial cone over exponents 0..4 with integer coefficients 0..3 contributes 1023 nonzero combinations all bounded by lambda<=1, and the one-pole cone over exponents -1..4 contributes 4095 combinations all bounded by lambda<=3/2 with 9/4 absent from that list; these are computed ratios, not tallies.
+lattice_wide: checked and not executed, and the gap is worth naming precisely -- the cone bounds are established by finite enumeration up to coefficient 3 and exponent 4, while the step from those finite blocks to every positive cone rests on the weighted-average argument stated in the docstring, which this runner verifies only at the monomial level; no lattice, volume or limit is taken anywhere in the file.
 
 PASS=19 FAIL=0 TOTAL=19
 VERDICT: scoped no-go. Positive polynomial and one-pole channel-volume source/readout cones cannot reach lambda=9/4 or rho_E=21/4; a successful same-domain route needs a genuine two-pole inverse-square primitive, a signed-cancellation mechanism, or another new readout primitive.

@@ -229,6 +229,29 @@ def main():
           ))
 
     # =====================================================================
+    section("Part H: N5 execution certificate -- what this runner resolves (narration -- not tests)")
+    print("  per_element: checked -- resolution goes down to individual "
+          "entries: the Casimirs C_F=4/3, T_F=1/2, C_A=3 are each tested, they "
+          "populate the four entries of the 2x2 velocity RG matrix, and "
+          "gamma_crit is computed one bound at a time for the four species.")
+    print("  per_site: checked and not executed -- this is a scale/RG "
+          "comparison in coupling space with no site variable anywhere; the "
+          "lattice enters only as the bare-coupling normalization alpha_s = "
+          "1/(4 pi) at beta=6 and as the bare-vs-MS-bar false-escape guard.")
+    print("  per_mode: checked -- the coupled (v_F, v_b) system is diagonalized "
+          "for N_f = 1, 3, 6 and both modes are resolved every time: the "
+          "difference mode carries the whole eigenvalue (C_F + T_F N_f) alpha_s "
+          "while the common overall-velocity mode has eigenvalue exactly 0.")
+    print("  per_block: checked -- the species split into the tight block "
+          "(photon 1e-20, electron 1e-22, nucleon 1e-27, gamma_crit ~ 0.95 to "
+          "1.32) and the weak quark/gluon block (1e-12, gamma_crit ~ 0.53); the "
+          "decisive comparison is made against the tight block only.")
+    print("  lattice_wide: checked and not executed -- no lattice, volume or "
+          "extent is built; the two whole-flow exponents S_AF ~ 7 and "
+          "S_needed ~ 42 are entered as representative constants rather than "
+          "integrated over the range, which enters only as log10(M_Pl/mu).")
+
+    # =====================================================================
     section("Verdict and honest scope (narration -- not tests)")
     note("VERDICT: gamma ~ 0.15-0.34 (inflated over-estimate <= 0.58) is below the tight gamma_crit ~ 0.9-1.3, robustly")
     note("(to factor-2 c_v, max colour leak, large N_f, the IR regime, and the 9-decade delta_v_UV sweep). So the")

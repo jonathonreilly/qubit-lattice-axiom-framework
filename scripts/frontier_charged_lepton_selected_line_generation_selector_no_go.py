@@ -384,6 +384,50 @@ def main() -> int:
         in ratio_firewall,
     )
 
+    section("G. N5 execution certificate")
+
+    print(
+        f"per_element: each component of the granted carrier is built and "
+        f"inspected on its own, the three values "
+        f"{tuple(round(v, 8) for v in vector)} coming from "
+        f"1 + sqrt(2) cos(delta + 2 pi k / 3) at k = 0, 1, 2 and each tested for "
+        f"positivity, and the candidate sources are likewise compared with their "
+        f"rotations component against component rather than through any summary "
+        f"invariant."
+    )
+    print(
+        f"per_site: the slot-level scan is what shows the source data cannot "
+        f"point anywhere — three onsite samples are rotated and matched against "
+        f"themselves, returning fixed = {source_fixed} so that only the uniform "
+        f"assignment survives, and that surviving assignment assigns the same "
+        f"value to every slot, which is exactly why it distinguishes no "
+        f"generation."
+    )
+    print(
+        "per_mode: checked and not executed — the k = 0, 1, 2 phase offsets are "
+        "used only to generate the carrier's three real components, and the data "
+        "are never projected onto the C3 isotype channels, so no trivial-versus-"
+        "doublet decomposition or other mode-resolved quantity is formed; the "
+        "obstruction this runner reports lives at the level of labels, not modes."
+    )
+    print(
+        f"per_block: the closed readout total is split into blocks and the split "
+        f"is shown to be free — with eta_APS = {eta_aps:.10f} the runner admits "
+        f"the pairs {tuple((round(a, 6), round(b, 6)) for a, b in endpoint_splits)} "
+        f"and every one reconstitutes the total to within 1e-15, so closing the "
+        f"readout pins only the sum while leaving the selected-line endpoint "
+        f"block undetermined."
+    )
+    print(
+        f"lattice_wide: checked and not executed as a lattice statement — there "
+        f"is no volume, no lattice and no limit anywhere; the widest sweep the "
+        f"runner performs is over the whole generation orbit, where the free C3 "
+        f"action leaves fixed_single_labels = {fixed_single_labels}, every cyclic "
+        f"copy returns Q = 2/3 with the largest slot travelling through "
+        f"{max_slots}, and equivariant selectors appear only in the count of "
+        f"three that a basepoint choice would supply."
+    )
+
     print()
     print("=" * 88)
     print("Summary")

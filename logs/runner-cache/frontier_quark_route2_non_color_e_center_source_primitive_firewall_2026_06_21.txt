@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_non_color_e_center_source_primitive_firewall_2026_06_21.py
-runner_sha256: a188d5d6209f43961960f8eca3939a74f67b563a991760a22baccab3fd8beb4c
+runner_sha256: 0aad9eb836c66b1a9de7505e0070e032611467889b5f86481b6ec7d6ecd7421b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -109,6 +109,14 @@ PASS: fan-out route Oh_covariance recorded -- fails: kappa is present but invers
 PASS: fan-out route measured_calibration recorded -- fails: comparator value is finite-box, not exact identification
 PASS: fan-out route definition_only_primitive recorded -- fails: bilinear K_R is definition-only and readout is endpoint-fitted
 PASS: fan-out includes six independent non-color frames
+
+I. N5 execution certificate
+------------------------------------------------------------------------
+per_element: each exact readout witness is resolved on its own -- 5 Readout records are built from their own rho_E and every one returns its own q_E, q_T and c_TE by exact Fraction arithmetic, the target giving q_E=15/8, q_T=5/6 and c_TE=-8/9; no float, tolerance or fit enters any of them.
+per_site: executed, and it is the pivot the whole firewall turns on -- the center and shell roles are held apart by the center-excess step delta_A1=1/6, and the blind signature on (E-shell, T-shell, T-center) is recomputed for all 5 witnesses and comes out identically (1, -2, -5/3), so only the E-center column moves; the companion rank-3-versus-rank-4 statement is asserted from declared constants rather than computed from the carrier matrix, and is recorded here as such.
+per_mode: resolved as a power fan-out on the two support weights -- w_E=1/3 and w_T1=1/2 give the ratio 2/3, whose powers evaluate to p=-2: 9/4, p=-1: 3/2, p=0: 1, p=1: 2/3, p=2: 4/9; p=-2 alone lands on the covariance target, and the E and T rows are kept as separate quantities q_E and q_T throughout the endpoint algebra rather than averaged together.
+per_block: two inventory blocks are swept and nothing beyond them -- the 10-atom non-color primitive inventory splits into 6 supplied support/comparator atoms and 4 absent ones, and the 6-frame stuck fan-out records one failure reason per frame; both resolve membership and counts only, with no field amplitude evaluated at block level.
+lattice_wide: checked and not executed -- the arithmetic sits on one fixed finite O_h star carrying no size parameter, nothing is summed or extrapolated over volume, and the single place an infinite-volume statement could enter is checked in the opposite direction, namely that the measured-calibration surface still leaves exact infinite-volume identification open; a lattice-wide certification here would assert precisely the identification that surface withholds.
 
 Summary
 ------------------------------------------------------------------------

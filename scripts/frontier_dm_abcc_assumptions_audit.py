@@ -431,6 +431,52 @@ def task_a11_route_summary():
 # ---------------------------------------------------------------------------
 # A12: Final verdict
 # ---------------------------------------------------------------------------
+def task_a13_n5_execution_certificate():
+    print("\n=== A13: N5 execution certificate ===")
+    print()
+    evals_base = np.linalg.eigvalsh(H_BASE)
+    gaps = [abs(evals_base[i + 1] - evals_base[i]) for i in range(2)]
+    print(
+        f"  per_element: every verdict here rests on explicit 3x3 matrix "
+        f"entries — H is assembled as H_base + m T_M + d T_D + q T_Q from three "
+        f"fixed integer generators and its determinant is read off those "
+        f"entries, with det(H_base) = {float(np.linalg.det(H_BASE).real):.4f} "
+        f"against det(-H_base) of the opposite sign and det(T_M) = "
+        f"{float(np.linalg.det(T_M).real):.4f} driving the large-m behaviour."
+    )
+    print(
+        "  per_site: checked and not executed — no lattice site carries anything "
+        "in this audit; Z^3 appears only as the label of orientation Route 3, "
+        "and the runner's finding there is that the pseudoscalar constrains "
+        "GL(3) transformations rather than Hermitian observables, so no "
+        "site-resolved quantity is ever formed."
+    )
+    print(
+        f"  per_mode: the spectrum is resolved mode by mode and that is what "
+        f"kills two routes — the eigenvalues of H_base come out "
+        f"{np.round(evals_base, 4).tolist()} with gaps "
+        f"{[float(round(g, 4)) for g in gaps]}, so all three modes are non-degenerate "
+        f"and Kramers pairing is absent, while the odd count of three modes is "
+        f"itself what forbids a quaternionic embedding of even dimension 2n."
+    )
+    print(
+        f"  per_block: the nearest block structure is the two-component split of "
+        f"source space into det > 0 and det < 0, and the runner does resolve it "
+        f"component by component — Basin 1 sits at det = {det_real(*BASIN1):.4f} "
+        f"in C_base while Basin 2 and Basin X sit at "
+        f"{det_real(*BASIN2):.2e} and {det_real(*BASIN_X):.2e} in C_neg, each "
+        f"basin then being tested separately against the T2K bound; no matrix "
+        f"block decomposition is performed."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, lattice or "
+        "thermodynamic limit is involved; the widest sweep is a grid over the "
+        "physical chamber, where a majority of the scanned points already carry "
+        "det < 0, which is a parameter-space census establishing that the "
+        "chamber constraint alone does not select the sheet."
+    )
+
+
 def task_a12_verdict():
     print("\n=== A12: Final verdict ===")
     print()
@@ -476,6 +522,7 @@ if __name__ == "__main__":
     task_a9_p3_circularity()
     task_a10_observational_grounding()
     task_a11_route_summary()
+    task_a13_n5_execution_certificate()
     task_a12_verdict()
 
     print()

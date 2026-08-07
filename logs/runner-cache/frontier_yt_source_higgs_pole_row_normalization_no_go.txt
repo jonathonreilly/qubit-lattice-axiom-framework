@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py
-runner_sha256: 3e16df982278fcfff0cb668a4bdbe0c350cda8d0ef64fec412611070b43b0413
+runner_sha256: b644b55cf1ab617d009cd4bf94b412a696ca36754df0937989bf346dc8c7f3e9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -72,6 +72,14 @@ Part 5: note claim-boundary guards
 [PASS] source avoids overclaim/import phrase 'm_t(pole)'
 [PASS] source avoids overclaim/import phrase 'y_t(v)'
 
+==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+per_element: the two-by-two residue Gram of the source and Higgs interpolators is formed explicitly from exact rationals — with amplitudes a_S = 5/3, a_H = 7/4 and pole factor q = 5/7 at separation t = 3, the entries C_SS = 3125/3087, C_SH = 625/588 and C_HH = 125/112 are all strictly positive while the determinant C_SH^2 - C_SS C_HH is exactly 0, so the matrix is rank one entry for entry.
+per_site: checked and not executed — the only index this runner carries is a Euclidean time separation, evaluated at t = 3 and t = 4 inside a closed-form geometric row; no spatial site, link or volume is instantiated, so nothing is decided per site.
+per_mode: exactly one pole mode is present and it is resolved cleanly — C(t) = a^2 q^t yields the effective-mass ratio C(t)/C(t+1) = 7/5 in exact arithmetic, and that ratio is unchanged under every tested amplitude rescaling (values ['7/5']), so the mode location is pinned while the mode amplitude is not.
+per_block: the source/Higgs operator block is where the no-go bites — across 4 independent rescalings (mu, lambda) the Gram determinant stays ['0'], C_SS scales as mu^2 and C_HH as lambda^2, the normalized residue ratio C_SH^2/(C_SS C_HH) stays exactly 1, and the whole kappa_Y ambiguity is absorbed by the single block normalization lambda^2 = 9/8 carrying K_Y from 8/9 to 1.
+lattice_wide: checked and not executed — a pole row at fixed separation says nothing about extent, and neither a volume, a boundary condition nor a continuum limit appears anywhere in this file; 22 of its 50 checks are source-document reads (4 file-existence tests and 18 substring assertions) that resolve nothing numerical.
 ==============================================================================
 RESULT: PASS=50 FAIL=0
 ==============================================================================

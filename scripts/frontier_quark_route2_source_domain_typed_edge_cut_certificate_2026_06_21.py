@@ -286,6 +286,53 @@ def main() -> int:
         check(f"new note lists discharge edge: {label}", label in new_note)
 
     print()
+    print("G. N5 execution certificate -- what this runner resolves")
+    print("-" * 78)
+    tested_edges = (
+        len(equivalent_discharge_edges) + len(weak_additions) + 4
+    )
+    print(
+        "per_element: checked, with the elements being candidate edges rather than physical "
+        f"quantities -- {tested_edges} of them, each adjoined to the same "
+        f"{len(base_edges)}-edge base bank on its own and re-queried on its own, so no failure "
+        "or success is inferred from a group. Alongside that the arithmetic side is resolved "
+        f"singly in exact Fractions: F_adj = {f}, the signed bridge giving "
+        f"{rho_e_from_center_ratio(-f)}, and the unsigned one giving "
+        f"{rho_e_from_center_ratio(f)}. No amplitude is computed anywhere in this file."
+    )
+    print(
+        "per_site: checked and not executed -- a reachability certificate has no configuration "
+        "space. Every object here is a named node or a labelled edge between two named nodes, "
+        "and the Route-2 support that ultimately underlies those names is never built, so no "
+        "quantity in this run is attached to a location."
+    )
+    print(
+        "per_mode: checked but THIN, and confined to a single quantity -- the one mode-relative "
+        "fact computed is the orientation of the T-over-E center ratio, evaluated in exactly one "
+        f"place: the ratio -8/9 returns rho_E = {rho_e_from_center_ratio(-f)} while +8/9 returns "
+        f"{rho_e_from_center_ratio(f)}. That sign is what the wrong-signed weak addition encodes "
+        "in the graph. Beyond it, E and T occur only inside node names and no channel amplitude "
+        "is ever formed."
+    )
+    print(
+        "per_block: checked, and this is the shape the certificate is really about -- the "
+        "inventory divides into a color-domain block and a Route-2 readout block, and every "
+        "result is a statement about crossing between them. All "
+        f"{len(weak_additions)} weak additions fail because they never land inside the readout "
+        f"block, all {len(equivalent_discharge_edges)} discharge edges succeed because each "
+        "lands in one of its three nodes, and the scalarization split shows the crossing can be "
+        "made in two steps while neither the scalar step nor the typecast step suffices alone."
+    )
+    print(
+        "lattice_wide: checked and not executed -- there is no lattice, no volume and no limit "
+        "to take. The honest scope limit is different in kind here and worth naming: the cut is "
+        f"certified against a hand-listed candidate set of {tested_edges} edges, so what is "
+        "established is that these named additions fail or succeed as described, not a minimality "
+        "theorem over all conceivable additions. The note's own target, a source-domain E-center "
+        "rule, is what would close that gap."
+    )
+
+    print()
     print("Summary")
     print("-" * 78)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

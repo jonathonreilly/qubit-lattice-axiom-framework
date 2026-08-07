@@ -638,6 +638,55 @@ print("       by an arithmetic coincidence.")
 
 
 # ======================================================================
+# N5 execution certificate (reporting only; records no PASS/FAIL item)
+# ======================================================================
+
+_section(11, "N5 execution certificate — resolution classes exercised here")
+
+print(
+    "  per_element: resolved entry by entry on the flavor operator — the "
+    "circulant H = a I + b U + b* U^{-1} is written out as an explicit 3x3 "
+    "array and tested entrywise for Hermiticity against H^dagger and for "
+    "C_3-equivariance via U H = H U at 1e-12, and the gauge/flavor "
+    "commutator [J_3, H_circ] is resolved component by component to "
+    "max|.| = 0.00e+00 rather than through a norm shortcut."
+)
+print(
+    "  per_site: checked and not executed — nothing in this runner carries a "
+    "Z^3 position index; the three states of hw=1 are Brillouin-zone corner "
+    "labels cycled by C_3[111], so they are momentum-space labels rather "
+    "than sites, and no site sum, neighbour relation or position-space "
+    "quantity is formed anywhere in Sections 1-10."
+)
+print(
+    "  per_mode: resolved mode by mode on the generation sector — hw=1 is "
+    "decomposed into its three C_3 characters, trivial + omega + omega-bar "
+    "with omega = e^{2 pi i/3}, and those exact characters are what the "
+    "Section 3 comparison uses to reject the A_1 adjoint whose weights are "
+    "the integers {-2, 0, +2}; the two Section 5 circulants at the same "
+    "ratio |b|^2/a^2 = 1/2 also have all three eigenvalues printed "
+    "individually, showing equal ratios with different spectra."
+)
+print(
+    "  per_block: resolved block by block, which is Barriers 2, 3 and 5 — "
+    "the gauge block is the 2-dim A_1 fundamental inside Cl^+(3) = H, the "
+    "flavor block is the 3-dim hw=1 sector, the runner checks that no A_1 "
+    "irrep matches dim 3 in the fundamental and that the 3-dim adjoint "
+    "carries the wrong weights, that the two blocks commute exactly, and "
+    "that sl(3) would need 8 generators on the flavor block of which the "
+    "retained content supplies 0."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice is instantiated, "
+    "no volume, no site sum and no continuum limit is taken; the Z^3 "
+    "structure enters only as the fixed three-corner label set of hw=1, and "
+    "both sides of the candidate identity are lattice-free, the left being a "
+    "Cartan-Killing length-squared fixed by a normalization convention and "
+    "the right an operator-coefficient ratio, which is Barrier 4 itself."
+)
+
+
+# ======================================================================
 # Summary
 # ======================================================================
 

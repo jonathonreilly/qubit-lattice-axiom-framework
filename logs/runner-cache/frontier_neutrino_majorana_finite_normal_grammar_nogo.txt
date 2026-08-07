@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_finite_normal_grammar_nogo.py
-runner_sha256: 70c7448cc49f7affe38d2aaea2894b4b2fcfa147988024c552b87fb57d5c6832
+runner_sha256: 4b0b71939bd584329d6cf3a1106c7725c8ec0623c8e83ab602c6f466f2b8294f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -64,6 +64,17 @@ PART 3: AN EXPLICIT DELTAL=2 INSERTION IS WHAT CHANGES THE RESULT
   This is the exact lane boundary in one line:
   more charge-zero interaction complexity does nothing, but a genuine
   DeltaL=2 microscopic insertion changes the symmetry class.
+
+========================================================================================
+N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
+========================================================================================
+per_element: resolved as literal matrix entries. Jordan-Wigner writes each c_k as an explicit Kronecker product of sigma_z, sigma_minus and I, so all 16 x 16 = 256 complex entries of every monomial are laid down individually, and the charge gradings [N, O] = q O are then entrywise identities certified in Frobenius norm across that whole entry set for the hopping, density, scattering, triple-density, cc and c^dag c^dag monomials.
+per_site: checked and not executed. This runner never instantiates a spatial lattice: the 4 tensor factors are internal fermionic modes of a single Fock algebra, carrying no coordinate, no neighbour relation and no translation, and the index choices in the (0,2 | 3,1) scattering monomial are arbitrary labels rather than positions, so no site-indexed amplitude exists here to evaluate.
+per_mode: resolved with amplitudes. The four modes are built one at a time with their own Jordan-Wigner string, the mode-resolved occupations n_0, n_1, n_2, n_3 enter H_sourced with distinct coefficients +0.14, -0.09, +0.06 and +0.19, the Gibbs state at beta = 0.9 returns the mode-resolved occupation <n_0> = 0.410328, and the Majorana bilinear tested is the specific mode pair c_0 c_1 rather than a mode-summed object.
+per_block: checked, but only the grading is resolved, not the sectors. rotation_from_number spectrally decomposes N so U(theta) acts diagonally on the integer fermion-number eigenspaces q = [0, 1, 2, 3, 4] of the 16-dimensional Fock space, and the no-go is precisely the two-block offset of cc against a block-diagonal state; the runner never prints a sector dimension and evaluates no within-sector amplitude, so the block content stays implicit.
+lattice_wide: checked and not executed, and this is the note's own stated obstruction. Everything above happens at fixed size 4 modes with Gibbs states at beta = 0.9 and 1.1; no sequence of growing mode number and no thermodynamic limit is taken, and the note's 'What this does not close' section leaves thermodynamic-limit / spontaneous-symmetry-breaking analysis explicitly open, so the missing infinite-volume theorem is the boundary here.
+  scope: the theorem quantifies over any finite charge-zero family, but the runner instantiates representatives, not a sweep - one H_sourced, one H_pair at mu = 0.27 - so the generality is carried by the U(1) algebra itself (<cc> = 0.00e+00 against <density> = 0.158729), not by enumeration of the grammar.
+  scope: the reduction target named in the note, the charge-two primitive, is a separate script; no task in this runner tests it, so nothing here certifies that companion.
 
 ========================================================================================
 RESULT

@@ -328,10 +328,11 @@ def main() -> int:
     )
     print(
         "lattice_wide: checked — the quantities actually compared are whole-lattice "
-        "functionals: on the full periodic 3-torus the K1 heat traces against Rt and "
-        f"Rt^2 agree to {max(k1_diffs):.3e} and the K0 traces likewise agree below "
-        f"{TOL:g}, but only at the two volumes N=4 and N=6, with no large-N or "
-        "continuum limit executed."
+        "functionals: on the full periodic 4^3 3-torus the K1 heat traces against Rt "
+        f"and Rt^2 agree to {max(k1_diffs):.3e} and the K0 traces likewise agree below "
+        f"{TOL:g}. Every heat trace in this runner is taken at N=4 only; the N=6 block "
+        "is closed on the exact covariance-residual and cube identities, not on any "
+        "heat trace, and no large-N or continuum limit is executed."
     )
 
     elapsed = time.perf_counter() - t0

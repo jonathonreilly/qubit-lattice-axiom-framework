@@ -366,7 +366,7 @@ print(
     f"Gamma_chi, the anticommuting representative having spectrum {spec_num} summing to 0."
 )
 print(
-    "lattice_wide: checked and not executed — the Lattice = Z^3 and Quantum = M_2(C) "
+    "lattice_wide: checked and not executed — the Lattice = Z^3 and Qubit = M_2(C) "
     "baselines are cited as provenance only and nothing is evaluated beyond the single "
     "three-generation factor, so the readout contrast Q(signed) = "
     f"{Q_signed_theta09:.6f} vs Q(singular) = {Q_singular_theta09:.6f} is certified at "

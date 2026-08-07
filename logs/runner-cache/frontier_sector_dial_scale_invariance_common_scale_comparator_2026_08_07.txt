@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py
 runner_sha256: 74dfcea1c582995221384f0c46d2e91140bcfce1049d859d8916d298ae4bdaba
-input_fingerprint_sha256: 7fdf6086f980a4c77a15342f5e1e429159836ed604ff2e2b9775efeceadece94
+input_fingerprint_sha256: 3bd5a426a887753964d8a9846c12d8220a77ee9b1860e0347417194b1028c848
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.16

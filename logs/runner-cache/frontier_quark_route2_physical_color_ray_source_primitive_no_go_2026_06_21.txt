@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.py
-runner_sha256: d775b588f738d4bf25715f9a548e97f0cea1bd09592753f970e15523cc99d026
+runner_sha256: 48845f9cae384da7e6f349336ca4a8b52a42a539371f62b8a7557d44d3608d77
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 Route-2 physical color-ray source primitive current-bank no-go
@@ -44,6 +44,13 @@ PASS: quote anchors present: Fierz support is channel algebra -- all anchors fou
 PASS: quote anchors present: Rconn/readout selector open gate -- all anchors found
 PASS: quote anchors present: Z3 color/generation bridge open -- all anchors found
 PASS: quote anchors present: Route-2 E-center primitive remains open -- all anchors found
+
+PART 6: N5 execution certificate
+per_element: the finest resolution actually performed is basis-entry level -- all 64 Gell-Mann pairings Tr(T_a T_b) are evaluated and matched against delta_ab/2 within the named tolerance 1e-10, which is what licenses reading adjoint coordinates entrywise; no individual matrix entry, norm or singular value is quoted in this certificate, since those are floating-point decomposition outputs.
+per_site: checked and not executed -- everything in this file lives on the fixed internal color factor C^3 and its adjoint, where the indices are color labels and not lattice sites; there is no star, no arm and no spatial coordinate anywhere in the runner, so no site-resolved quantity exists for it to evaluate.
+per_mode: genuinely resolved on the color channel content -- the 3 x 3bar product splits as 1 + 8 = 9, the adjoint fraction is exactly F_adj = 8/9, and the isotropic adjoint block is confirmed to have rank 8 with a spectrum flat to within 1e-10, so no single mode inside the adjoint is distinguished; that flatness is exactly why a channel count cannot stand in for a ray.
+per_block: the blocks here are the adjoint decomposition and the typed reachability graph -- a supplied ray's line projector has rank 1 against a complement of rank 7 inside the 8-dimensional adjoint, giving the exact fraction 7/8, while the graph side sweeps 8 current-bank edges, 6 conditional ray edges and one bridging primitive edge; the ranks are computed at a 1e-09 threshold and the edge counts are inventory rather than amplitude.
+lattice_wide: checked and not executed -- the ad-invariant traceless subspace is found to be zero-dimensional, so there is not even a global invariant direction inside the internal factor to certify, and past that the file carries no lattice, no volume and no limit; what it does assert is current-bank reachability, which is by construction a claim about the present source bank and not about all possible sources.
 
 PASS=26 FAIL=0 TOTAL=26
 VERDICT: current source bank does not supply a physical color-ray source primitive; adding such a primitive would conditionally reach rho_E=21/4 through the adjoint-line complement route.

@@ -117,6 +117,39 @@ def main() -> int:
     check("frequency claims require sequence law, not only one-step law", True)
     check("no physical generator, clock/rate, or dial value is selected", True)
 
+    print("\nF. N5 execution certificate (print-only; registers no check)")
+    print(
+        f"per_element: exercised exactly, over small tables -- each joint law is a {len(iid)}-entry table of sympy "
+        "Rationals and both marginals are formed by adding named entries one pair at a time, not by any aggregate "
+        "reduction. The decisive comparison is also entry-level: the (0,0) entries of the two laws are put side by "
+        "side and differ, while equality throughout is exact rational equality with no tolerance anywhere."
+    )
+    print(
+        "per_site: checked and not executed -- there is no site index in this file. The two record slots are "
+        "sequence positions, the first and second production, and nothing attaches them to a location; the alphabet "
+        "is two abstract letters. A site-resolved reading of this firewall would attribute structure the runner "
+        "never builds."
+    )
+    print(
+        "per_mode: checked and not executed -- no state space, operator or basis appears at all, so nothing can be "
+        "decomposed into modes. The vectors here are classical probability distributions over a two-letter alphabet; "
+        "no spectrum is taken, and the one-step vector is explicitly checked to be a distribution rather than a "
+        "realized atom, which is a typing statement and not a modal one."
+    )
+    print(
+        f"per_block: exercised -- the {len(iid)} two-record words are partitioned into "
+        f"{len(count0_distribution(iid))} count blocks by how many zeros they contain, and the entire result is "
+        "visible at that granularity: the two laws agree on both marginals and even on the expected count, yet "
+        "their count-block distributions differ and so do their variances. The obstruction is a block-level "
+        "difference invisible to the one-step law."
+    )
+    print(
+        "lattice_wide: checked and not executed -- nothing of any extent exists here and no size is varied; the run "
+        "stops deliberately at two records. That absence is the substance of the no-go rather than a gap in it: a "
+        "typicality or large-sample statement is exactly what a one-shot production probability fails to supply, so "
+        "there is no finite-N ladder to report and no limit is approached."
+    )
+
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if PASS > 0 and FAIL == 0:

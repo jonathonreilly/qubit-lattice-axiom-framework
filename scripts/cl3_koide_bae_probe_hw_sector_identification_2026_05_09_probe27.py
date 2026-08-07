@@ -955,6 +955,58 @@ check("12.3 hw=N classification depends only on F_2-bit count (lattice-independe
 
 
 # ----------------------------------------------------------------------
+# Section 13: N5 execution certificate (reporting only; adds no check)
+# ----------------------------------------------------------------------
+
+print()
+print("=== Section 13: N5 execution certificate ===")
+print()
+print(
+    "  per_element: resolved corner by corner and entry by entry — all eight "
+    "BZ corners of {0,1}^3 are enumerated individually and sorted by Hamming "
+    "weight, each corner's image under C_3[111] is traced so the orbit is "
+    "exhibited rather than asserted, and the diagonal of each translation "
+    "T_x, T_y and T_z is checked entry by entry against the sign pattern "
+    "(-1)^{c_mu} separately at hw=1 and at hw=2."
+)
+print(
+    "  per_site: checked and not executed — the lattice translations do "
+    "appear here, but only through their momentum-space representation as "
+    "diagonal signs on the corner basis; no position-space site index is "
+    "formed anywhere, no site sum is taken, and the entire sector inventory "
+    "is over corner labels rather than over sites."
+)
+print(
+    "  per_mode: resolved mode by mode on the doubler tastes, which is what "
+    "this probe is about — the corner modes are the taste labels, their "
+    "multiplicities come out (1, 3, 3, 1) across hw = 0, 1, 2, 3, the "
+    "3-cycle structure is verified separately for the hw=1 and hw=2 triplets "
+    "and shown absent for the two singlets, and complementation is checked to "
+    "map the hw=1 modes bijectively onto the hw=2 modes while flipping every "
+    "T_mu eigenvalue."
+)
+print(
+    "  per_block: resolved block by block on two nested decompositions — each "
+    "hw sector is treated as its own block and put through Tests A to F "
+    "separately, with hw=1 and hw=2 each shown to have {T_x, T_y, T_z, C_3} "
+    "generating the full 9-dimensional M_3(C) and a commutant of dimension 1 "
+    "by Schur; and inside that algebra the Hermitian part splits into a "
+    "trivial isotype block of dimension 3 and a non-trivial block of "
+    "dimension 6, giving the Frobenius split 3a^2 + 6|b|^2 identically at "
+    "hw=1 and hw=2, which is why relocation cannot change the F1/F3 answer."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice of any volume is "
+    "instantiated, no site sum is formed and no thermodynamic or continuum "
+    "limit is taken; the corner inventory is the finite set {0,1}^3 and the "
+    "decisive facts are character-theoretic, which the runner states outright "
+    "when it records that the hw classification depends only on the F_2 bit "
+    "count and is lattice-independent, so nothing here is certified at "
+    "lattice scale."
+)
+
+
+# ----------------------------------------------------------------------
 # Total summary
 # ----------------------------------------------------------------------
 

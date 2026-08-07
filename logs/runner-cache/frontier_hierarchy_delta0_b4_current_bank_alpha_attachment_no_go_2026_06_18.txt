@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18.py
-runner_sha256: 2316fd370bee8635a37b3ea3600cd799971df67234b0d9adf81a6998cf62328e
+runner_sha256: bb6d3eeaa0f65d94f9a4446f108e268c132cd9b392d6a3bb04dc3b10e7c5d1eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.35
+elapsed_sec: 15.26
 status: ok
 ----- stdout -----
 
@@ -69,6 +69,15 @@ Source markers and boundary discipline
   [PASS][D] ratio-normalized source contains marker: one factor `alpha_s` per taste decoupling
   [PASS][D] ratio-normalized source contains marker: the `alpha_s` PER-DECOUPLING ATTACHMENT rule
   [PASS][D] ratio-normalized source contains marker: UNSUPPLIED
+
+================================================================================
+N5 execution certificate: resolution granularity of this current-bank no-go
+================================================================================
+per_element: checked — all 91 candidate rows of the current bank are resolved row by row on the pair (alpha_exp, has_readout_mechanism): 50 rows carry a genuine readout mechanism and every one of them has alpha_exp = 0, while the 41 rows that do carry a nonzero alpha exponent are exactly the supplier-chain rows with no readout mechanism. No individual row sits in both categories, which is the whole content of the firewall.
+per_site: checked and not executed — this runner instantiates no lattice and evaluates no field at a site; the bank rows are declared summary readouts, and the site-resolved objects some of them summarise (plaquette action costs, Brillouin-zone log-determinant shares) enter as imported declarations from the enumeration source rather than as computations performed here.
+per_mode: checked — the taste- and mode-resolved families are present and are individually cleared: K6 equal-share mode-sum ratios (5 rows), K8 per-taste BZ log-det shares (4 rows) all carry alpha_exp = 0, so no per-taste or per-mode readout supplies even a single factor of alpha_s = (1, -2); the sixteen-taste target (16, -32) would need one such factor per decoupling, sixteen in all.
+per_block: checked — the bank is partitioned into 9 named blocks spanning K1-K8, and the closure sampling forms products and quotients over the 7 genuine readout blocks with each exponent ranging over -3..3; the entire sampled family collapses to 1 distinct alpha-signature, alpha_exp = 0, so neither alpha_s nor alpha_s^16 is reachable by any combination of blocks in the readout half of the bank.
+lattice_wide: checked and not executed — no lattice-wide or continuum object is constructed; the note narrows itself explicitly to the current K1-K8 bank, states it is not a global B4 no-go, and the parent gate keeps outside-K1-K8 routes and beyond-mean-field link fluctuations open, so a lattice-wide attachment statement is outside what this bank can decide.
 
 CLASS_COUNTS: {'A': 6, 'B': 8, 'C': 27, 'D': 10}
 VERDICT: hierarchy DELTA0 B4 current-bank alpha-attachment no-go checks pass.

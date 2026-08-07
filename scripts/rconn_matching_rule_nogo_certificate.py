@@ -207,6 +207,49 @@ def run_note_checks(checks: Checkbook) -> None:
     )
 
 
+def print_n5_execution_certificate() -> None:
+    """Print-only granularity record; adds no Check to the Checkbook."""
+    gens = su_generators(3)
+    ortho = orthonormality_error(gens)
+    fierz = fierz_error(gens)
+
+    print()
+    print("N5 EXECUTION CERTIFICATE")
+    print(
+        f"  per_element: exercised at full index resolution -- the Fierz test walks every one of the {3 ** 4} index "
+        "quadruples (i,j,k,l) of the SU(3) color space and compares the two sides of the completeness identity entry "
+        f"against entry, while orthonormality evaluates Tr(T_a T_b) for all {len(gens) ** 2} ordered generator pairs "
+        f"against delta_ab/2. The worst entrywise residuals here are {fierz:.3e} and {ortho:.3e} against the atol of "
+        "1e-12 the runner asserts with."
+    )
+    print(
+        "  per_site: checked and not executed -- no lattice and no spatial index exists in this file. Every index it "
+        "carries is an internal color index of the N_c x N_c-bar space, and the tadpole factors that appear later "
+        "are bare rationals (1/2, 4/5, 13/10) chosen to expose a cancellation, not measurements taken at any site."
+    )
+    print(
+        f"  per_mode: exercised in the color-channel sense, which is the only mode structure present -- each of the "
+        f"N_c^2-1 adjoint generators is resolved on its own rather than in bulk. The construction lays down three "
+        "explicit families, symmetric and antisymmetric off-diagonal pairs plus the N_c-1 Cartan diagonals, counts "
+        "them against N_c^2-1 at N_c = 2, 3, 4, 5, and certifies every single one orthonormal. These are internal "
+        "color channels, not dynamical or spatial modes, and nothing wider is claimed."
+    )
+    print(
+        "  per_block: exercised, and this is where the no-go actually lives -- the readout space splits into exactly "
+        "two blocks, the adjoint block of weight F_adj = (N_c^2-1)/N_c^2 and the singlet block of weight 1 - F_adj, "
+        "and kappa_EW is by definition the free coefficient multiplying the second block. The demonstration that CMT "
+        "scaling cannot fix it is itself a block statement: scaling both blocks by the same u0^2 leaves K unchanged "
+        "at all three tested u0 values, so the underdetermination is exhibited precisely at block granularity."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- no system of any extent is built, so there is no whole-system "
+        "quantity to report and no finite-N or limiting statement to make. The N this runner varies is the color "
+        "rank N_c over 2, 3, 4, 5, which is the dimension of an internal space and not a volume. The physical "
+        "lattice connected-trace readout that a whole-system statement would concern is exactly the object this "
+        "packet declines to derive, which is the note's own obstruction."
+    )
+
+
 def main() -> None:
     checks = Checkbook()
     print("=" * 92)
@@ -223,6 +266,7 @@ def main() -> None:
     print("  F_adj=8/9 is exact SU(3) Fierz/channel-count support.")
     print("  K_EW=9/8 is only the kappa_EW=0 specialization.")
     print("  The current packet does not derive kappa_EW=0.")
+    print_n5_execution_certificate()
     print()
     checks.report()
     print()

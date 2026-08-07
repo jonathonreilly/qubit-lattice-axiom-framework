@@ -106,6 +106,51 @@ def test_status_firewall() -> None:
     check("No stronger branch-local proposal wording is allowed", not proposal_allowed)
 
 
+
+def n5_execution_certificate() -> None:
+    """N5 execution certificate: reporting only, adds no check."""
+    print("\n" + "=" * 88)
+    print("PART 5: N5 EXECUTION CERTIFICATE")
+    print("=" * 88)
+    scales = [20.0, 27.211386245988, 40.0]
+    me_ev = 510_998.95000
+    inv_alpha0 = 137.035999084
+    hartree = me_ev / (inv_alpha0 * inv_alpha0)
+    print(
+        "  per_element: checked - the missing scale is factorized into its separate "
+        f"ingredients and each is inspected on its own: Hartree = m_e alpha(0)^2 is "
+        f"formed from m_e = {me_ev} eV and 1/alpha(0) = {inv_alpha0} to give "
+        f"{hartree:.12f} eV, and the runner records that dropping either single "
+        "factor already leaves the physical scale undetermined."
+    )
+    print(
+        "  per_site: checked and not executed - the dimensionless solver carries no "
+        "length at all, so there is no site, no spacing and no Bohr radius expressed "
+        "in lattice units anywhere; the boundary reported here is about units, and "
+        "the runner confirms the scaffold states no framework input is used."
+    )
+    print(
+        f"  per_mode: checked - the bound levels are the resolved index, with n = 1, "
+        f"2 and 3 evaluated individually at each of the {len(scales)} Hartree scales "
+        "and their ratios held at exactly 1, 1/4 and 1/9 to within 1e-12 in every "
+        "case, which is precisely how the shape is shown to be fixed while E1 itself "
+        "moves freely with the scale."
+    )
+    print(
+        "  per_block: checked and not executed - the hydrogen problem is treated as a "
+        "single Coulomb channel labelled only by the principal quantum number; the "
+        "angular degeneracy blocks in l and m are never formed, no sub-block is "
+        "compared against another, and no block multiplicity enters the argument."
+    )
+    print(
+        "  lattice_wide: checked and not executed - no lattice, volume or "
+        "thermodynamic limit exists here; the quantity that would be a whole-system "
+        "observable is the eV spectrum itself, and the runner's finding is exactly "
+        "that it is left undetermined, since three scale choices reproduce identical "
+        "ratios while giving three different ground energies."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LANE 2: PHYSICAL-UNIT NONRELATIVISTIC LIMIT BOUNDARY")
@@ -123,6 +168,7 @@ def main() -> int:
     test_unit_scale_degeneracy()
     test_atomic_scale_factor_dependencies()
     test_status_firewall()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

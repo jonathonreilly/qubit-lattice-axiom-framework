@@ -454,7 +454,12 @@ print(f"    mixed-scale, MSbar top : Q_up={mixQu:.6f} r_up={mixru:.6f} | "
       f"Q_down={mixQd:.6f} r_down={mixrd:.6f}")
 print(f"    open-gate note's list  : Q_up={ogQu:.6f} r_up={ogru:.6f} | "
       f"Q_down={ogQd:.6f} r_down={ogrd:.6f}")
-inv = tab[3]
+# Quote the headline from a CANONICAL row (mu >= m_t), not a display-only one:
+# tab[4] is mu = 162.5 GeV.  All rows agree to 3.65e-12, so this changes no
+# displayed digit -- it only stops the note's load-bearing prescription and its
+# quoted numbers coming from different rows.
+inv = tab[4]
+assert tab[4][0] >= PARS['mt']
 print(f"    common-scale (invariant): Q_up={inv[1]:.6f} r_up={inv[2]:.6f} | "
       f"Q_down={inv[3]:.6f} r_down={inv[4]:.6f}")
 check("comparator: the open-gate note's displayed r_up reproduces from its own list",
@@ -466,13 +471,15 @@ check("comparator: mixed-scale and common-scale dials differ well beyond float n
       f"delta r_up = {inv[2]-ogru:+.4f}, delta r_down = {inv[4]-ogrd:+.4f}")
 
 print()
-print("  D3. Linear error propagation on the common-scale dial (mu = M_Z):")
-base = _sector_dials(PARS, 91.1876)
+MU_CANON = 162.5   # >= m_t: the canonical common scale, per the note
+print(f"  D3. Linear error propagation on the common-scale dial (mu = {MU_CANON} GeV,")
+print("      the canonical mu >= m_t row, not the display-only M_Z row):")
+base = _sector_dials(PARS, MU_CANON)
 var = {'Qu': 0.0, 'Qd': 0.0, 'ru': 0.0, 'rd': 0.0}
 for k, e in ERRS.items():
     p = dict(PARS)
     p[k] = PARS[k] + e
-    (Qu, ru, _), (Qd, rd, _) = _sector_dials(p, 91.1876)
+    (Qu, ru, _), (Qd, rd, _) = _sector_dials(p, MU_CANON)
     var['Qu'] += (Qu - base[0][0]) ** 2
     var['ru'] += (ru - base[0][1]) ** 2
     var['Qd'] += (Qd - base[1][0]) ** 2

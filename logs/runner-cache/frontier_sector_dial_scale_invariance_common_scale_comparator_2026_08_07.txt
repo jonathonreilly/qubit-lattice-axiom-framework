@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py
-runner_sha256: 9f59e8137e11e23eceae2cc7c10854633a1a40dc2ca59fbae259773eb9d8a10c
+runner_sha256: 88e308b7b5a9bafd580f77b08018de5de069dc1e83fbb752827efc4c5df322c6
 input_fingerprint_sha256: 34d78b7e66378629fa0393855663ca1450b329588e76e104b93aed7aaecbd320
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.11
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 
@@ -118,7 +118,8 @@ D. COMPARATOR ONLY: what this means for the displayed quark numbers
   [PASS] comparator: the open-gate note's displayed r_down reproduces from its own list  (recomputed 0.597141 vs displayed 0.597141)
   [PASS] comparator: mixed-scale and common-scale dials differ well beyond float noise  (delta r_up = +0.0573, delta r_down = +0.0239)
 
-  D3. Linear error propagation on the common-scale dial (mu = M_Z):
+  D3. Linear error propagation on the common-scale dial (mu = 162.5 GeV,
+      the canonical mu >= m_t row, not the display-only M_Z row):
     Q_up   = 0.887314 +- 0.001469      r_up   = 0.830971 +- 0.002204
     Q_down = 0.747393 +- 0.004890      r_down = 0.621090 +- 0.007335
 

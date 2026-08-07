@@ -129,6 +129,49 @@ def main() -> int:
                   and np.max(np.abs(Thn.T @ HS @ Thn - HS)) < 1e-9)
     check("WITNESS diag(3,6,6) [the (1,2) weighting] is PD, C_3- and Theta-invariant", witness_ok)
 
+    section("N5 execution certificate - what this runner resolves")
+    print(
+        "  per_element: resolved, and it is how the freedom is located. The Gram is carried "
+        "as six independent symbols and the C_3-invariance condition is imposed on all nine "
+        "entries of R^T G R - G, then solved, which is what forces g01, g02 and g12 to zero "
+        "and g22 to equal g11 while leaving the single ratio g00 : g11 free. The two "
+        "antilinear-Theta residuals are likewise required to be zeros(3) entry by entry "
+        "across the whole cone."
+    )
+    print(
+        "  per_site: checked and not executed — no lattice, position index or neighbour "
+        "term appears. The arena is one three-dimensional coordinate space (a, b_re, b_im) "
+        "over a single generation operator span, and the question is which inner products "
+        "on that one space survive the listed real-structure constraints. Nothing about "
+        "that survives or fails differently at another site, because no other site exists "
+        "here."
+    )
+    print(
+        "  per_mode: resolved, and it is what disqualifies the fusion argument. The three "
+        "eigenvalues of the Hermitian circulant are computed symbolically and all shown "
+        "real, and the two doublet eigenvalues are then shown to be genuinely independent "
+        "reals, distinct from one another and with nonzero derivative in b_im, rather than "
+        "a complex-conjugate pair. The contrast case is run explicitly: a non-Hermitian "
+        "real circulant does produce a conjugate pair with clearly nonzero imaginary parts."
+    )
+    print(
+        "  per_block: resolved — the singlet and doublet projectors are built and their "
+        "ranks confirmed as 1 and 2, the real determinant of a block-diagonal combination "
+        "is verified to factor as alpha times beta squared at three separate (alpha, beta) "
+        "pairs, exhibiting the (1, 2) weighting inside a genuine real determinant, and the "
+        "block Gram diag(3, 6, 6) is checked positive-definite and invariant under both the "
+        "C_3 rotation and Theta."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, site sum or limit is formed, "
+        "and the logical shape of the claim makes one unnecessary. This is a "
+        "permitted-not-forced result, established by exhibiting one explicit object, the "
+        "diag(3, 6, 6) witness, that satisfies every listed constraint while carrying the "
+        "(1, 2) weighting. A single surviving witness cannot be removed by extending the "
+        "system; only an additional constraint could remove it, which is the open handle "
+        "the note names."
+    )
+
     section("Summary")
     print(f"PASS={PASS} FAIL={FAIL}")
     print("The listed real-structure constraints do NOT forbid (1,2); (1,1) is permitted-not-forced.")

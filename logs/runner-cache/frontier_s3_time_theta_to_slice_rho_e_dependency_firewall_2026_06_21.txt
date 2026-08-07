@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py
-runner_sha256: a7ff7e15e1507fd4774dd0a1dfea68582fe3b00a6eda61e48e87c5c6dc8cd9db
+runner_sha256: daa0bd570aa8a7435d9f8fb0f86c05be5bdbcd14c1519aa94f2b830f3f92bf81
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.66
+elapsed_sec: 12.41
 status: ok
 ----- stdout -----
 S3-time theta-to-slice rho_E dependency firewall
@@ -28,6 +28,16 @@ S3-time theta-to-slice rho_E dependency firewall
        checked t -> t+0.5 where both times are in the sample set
 [PASS] the target endpoint factor q_E=15/8 is exactly the E-center/E-shell source ratio
        center/shell=15/8
+
+========================================================================================
+N5 execution certificate (print-only; adds no check and no counter)
+========================================================================================
+per_element: resolved in two layers -- on the source side the arithmetic is exact Fraction, only the row-0 column-2 entry of P(rho_E) is permitted to move, and differencing the four carrier columns between rho_E = 0 and rho_E = 21/4 returns (0, 0) on three of them and exactly (7/8, 0) on E-center. On the transported side the comparison stays entrywise: the residual max over every component of the 2 x 1052 tensor is taken against the shared EXACT_TOL = 1e-12, not against an aggregate norm.
+per_site: exercised only as a uniform all-sites tolerance test, and reported as exactly that -- the transported tensors carry one component per boundary-trace site, all 1052 of them, and each comparison is a maximum taken across every one, so agreement is certified site by site. Yet no site is ever distinguished: the slice seed u_* is the uniform unit vector over the whole trace set, and every scalar this runner reports is a max or a norm across it, so no individual site amplitude is resolved and none is claimed.
+per_mode: resolved as a two-channel source split -- gamma_E = u_E + rho_E * delta_u_E and gamma_T = -2 u_T + 2 delta_u_T are formed separately, and the T channel is certified rho-independent by exact rational equality at its granted values (0, -2) on T-shell and (0, -5/3) on T-center. The E channel alone carries the endpoint freedom, through q_E = 1 + rho_E/6, which is exactly 1 at rho_E = 0 and exactly 15/8 at rho_E = 21/4.
+per_block: resolved as one sensitive column against three blind ones -- of the four carrier columns only E-center responds to rho_E while E-shell, T-shell and T-center are exactly invariant, and that same partition is re-verified at the non-load-bearing comparison point rho_E = 526/100, where q_E becomes 563/300 and the blind block still differences to zero. The surviving rho-dependence is rank one: a single source factor times the same slice seed.
+lattice_wide: resolved as a finite-N statement on one fixed grid -- Lambda_R is the symmetrized Schur complement of the 15-cubed discrete Laplacian onto its boundary trace at cutoff radius 4.0, a genuinely whole-grid operator of dimension 1052, and it is certified as a whole here: symmetry residual 3.331e-16 against EXACT_TOL, smallest eigenvalue 1.148587e+00 strictly positive, and the one-step transfer exp(-Lambda_R) contractive with largest eigenvalue 3.170846e-01 below one. Grid size 15 and cutoff 4.0 are the only ones executed; no thermodynamic limit is taken and nothing here is asserted about growing the box.
+Determinism: this runner uses no RNG, optimizer, root-finding or Monte Carlo. The only sweep is the fixed time list [0.0, 0.5, 1.0, 2.0], with the semigroup step t -> t+0.5 taken wherever both endpoints lie in that list; tolerances are EXACT_TOL = 1e-12, 5e-14 for the semigroup residual and 1e-12 for the norm ratio. The eigenvalue and symmetry figures above are interpolated from this run's own backbone rather than quoted from a past run, since LAPACK and expm residuals move between environments while the verdicts do not.
 
 ========================================================================================
 PASS=10 FAIL=0

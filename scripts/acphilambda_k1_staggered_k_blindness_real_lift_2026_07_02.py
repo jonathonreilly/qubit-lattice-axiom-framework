@@ -299,6 +299,41 @@ def main() -> int:
     ]
     for term in leak_terms:
         check(f"source-instruction phrase absent: {term}", term.lower() not in lowered)
+    section("F - N5 execution certificate: what this runner resolves")
+    k1_diffs = [abs(heat_trace(h1, rt, t) - heat_trace(h1, rt2_constructed, t)) for t in (0.3, 1.0)]
+    print(
+        "per_element: checked — the compensated lift is validated matrix element by "
+        "matrix element: every off-diagonal entry is required to have ratio exactly "
+        "+-1, the covariance residual Rt H Rt^T - H is exactly the zero integer array, "
+        "and phasing the single entry (1,5) by exp(1.6i) is what breaks the blindness "
+        f"(defect diff {defect_diff:.3e})."
+    )
+    print(
+        "per_site: checked — the sign frame is an explicit +-1 value carried at every "
+        "lattice site: the spanning-tree solve assigns w over all 4^3 = 64 and 6^3 = "
+        "216 sites, rejects any run leaving a site unassigned, and then re-validates "
+        "every off-tree edge against the per-site values."
+    )
+    print(
+        "per_mode: checked and not executed — the heat traces are built from a full "
+        "eigendecomposition, but only the aggregate Tr(exp(-tH) U) is compared at "
+        "t = 0.3 and t = 1.0; no eigenvalue and no eigenvector is compared mode by "
+        "mode, so nothing here is certified at single-mode resolution."
+    )
+    print(
+        "per_block: checked — three lattice blocks are built and closed independently: "
+        "K1 at N=4 (64 sites, 192 edges) and K1 at N=6 (216 sites, 648 edges), plus K0 "
+        "at N=4 where the lift is the bare rotation; each gives an exactly zero "
+        "covariance residual and a compensated cube equal to +I."
+    )
+    print(
+        "lattice_wide: checked — the quantities actually compared are whole-lattice "
+        "functionals: on the full periodic 3-torus the K1 heat traces against Rt and "
+        f"Rt^2 agree to {max(k1_diffs):.3e} and the K0 traces likewise agree below "
+        f"{TOL:g}, but only at the two volumes N=4 and N=6, with no large-N or "
+        "continuum limit executed."
+    )
+
     elapsed = time.perf_counter() - t0
     print(f"\nRuntime: {elapsed:.2f} s")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

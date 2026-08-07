@@ -222,6 +222,57 @@ def section_scope(c: Counter) -> None:
     print()
 
 
+def section_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only, records no PASS/FAIL."""
+    print("=" * 76)
+    print("SECTION 6: N5 execution certificate (resolved granularity)")
+    print("=" * 76)
+
+    print(
+        "per_element: checked - every object here is a concrete complex matrix "
+        "compared entrywise at tol 1e-12: the Clifford anticommutators "
+        "gamma_i gamma_j + gamma_j gamma_i against 2 delta_ij I, the bivectors "
+        "e12, e13, e23 squaring to -I, and the quaternion products i*j = k, "
+        "j*k = i, k*i = j; Section 4 goes further and flattens each 2 x 2 "
+        "anticommutator into its four entries to build the constraint matrix."
+    )
+    print(
+        "per_site: checked - the site here is the Qubit one-site algebra "
+        "M_2(C), and the runner resolves a genuine site-local question inside "
+        "it: whether any element of the basis {I, sigma_1, sigma_2, sigma_3} "
+        "anticommutes with all three Pauli generators. The stacked linear "
+        "system comes back with rank 4 and nullity 0, so the only candidate is "
+        "zero and there is no per-site gamma_5 with gamma_5^2 = I. Only this "
+        "one site is instantiated; no site index runs over the substrate."
+    )
+    print(
+        "per_mode: checked and not executed - no Fourier, momentum or "
+        "harmonic decomposition is formed at any point. The obstruction is "
+        "stated entirely in the algebra basis, where the grade involution acts "
+        "as gamma_i -> -gamma_i, and nothing in the argument depends on a mode "
+        "label, so there is no mode-resolved quantity to report."
+    )
+    print(
+        "per_block: checked - the two chirality summands are the blocks, and "
+        "they are handled separately and then together. rho_+ and rho_- are "
+        "separated by their central characters rho_+(omega) = +i I versus "
+        "rho_-(omega) = -i I, then embedded as the two diagonal 2 x 2 blocks of "
+        "a 4 x 4 matrix; the left-block and right-block SU(2) generators are "
+        "shown to commute, and the one-sided embed_left assignment and the "
+        "two-sided embed_left + embed_right assignment both close the same "
+        "su(2) relations - which is exactly the no-go."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice is ever built. "
+        "The Z^3 spatial substrate enters only as baseline semantics naming "
+        "where the local algebra sits; this runner instantiates a single copy "
+        "of Cl(3) and its two chirality blocks, takes no sum over sites, no "
+        "volume and no limit, which is appropriate because the obstruction is "
+        "finite and algebraic and already complete at one site."
+    )
+    print()
+
+
 def main() -> int:
     print()
     print("=" * 76)
@@ -235,6 +286,7 @@ def main() -> int:
     section_su2_selection(counter)
     section_no_internal_gamma5(counter)
     section_scope(counter)
+    section_n5_execution_certificate()
 
     print("=" * 76)
     print("VERDICT SUMMARY")

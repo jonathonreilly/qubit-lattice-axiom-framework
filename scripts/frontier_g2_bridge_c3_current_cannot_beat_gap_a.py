@@ -204,9 +204,34 @@ def _expm_herm(M: np.ndarray) -> np.ndarray:
     return V @ np.diag(np.exp(1j * w)) @ V.conj().T
 
 
+def n5_execution_certificate() -> None:
+    section("N5 execution certificate: what this runner resolves")
+    print("per_element: the two generation operators are built and interrogated "
+          "one at a time, S = C+C^2 (Hermitian, K-even) and A = i(C-C^2) "
+          "(Hermitian, K-odd), and each of the three sampled C_3-invariant "
+          "K-odd operators is individually shown proportional to A.")
+    print("per_site: checked and not executed -- the three indices here are "
+          "positions on one C_3 generation orbit, not lattice sites, and every "
+          "operator formed is a polynomial in C, hence C_3-invariant; no single "
+          "position and no neighbour relation is ever resolved on its own.")
+    print("per_mode: checked -- the modes are the C_3 Fourier eigenvalues: S "
+          "has {+2, -1, -1} so its doublet stays degenerate, while A has "
+          "{-sqrt3, 0, +sqrt3} and separates all three; the A-flow is periodic "
+          "with exp(i*(2pi/sqrt3)A) = I and indefinite in sign.")
+    print("per_block: checked -- the registered partition is the two blocks "
+          "P_singlet (rank 1) and P_doublet (rank 2) summing to I, and the "
+          "off-block norms ||P0 H P1|| vanish for all five sampled couplings, "
+          "as does ||P0 A P1|| and the whole delta direction H - Hbar.")
+    print("lattice_wide: checked and not executed -- the entire check lives on "
+          "one 3-dimensional generation factor with no lattice, volume or "
+          "extent; the contrast with the monotone clock H_gen >= 0 is taken "
+          "from the retained single-clock input, not recomputed over a lattice.")
+
+
 def main() -> int:
     positive_half()
     negative_half()
+    n5_execution_certificate()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
         print("VERDICT: G2-bridge C_3-current no-go checks FAILED.")

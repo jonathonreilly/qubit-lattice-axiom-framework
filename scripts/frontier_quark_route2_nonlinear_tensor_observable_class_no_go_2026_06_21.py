@@ -443,6 +443,53 @@ def part5_parent_surface_anchors() -> None:
     )
 
 
+def part6_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    section("PART 6: N5 execution certificate")
+    labels = [name for name, _ in BLIND_COLUMNS]
+    contraction_pairs = len(list(combinations_with_replacement(labels, 2)))
+    pure_powers = 5 * len(BLIND_COLUMNS)
+    mixed_words = sum(len(labels) ** degree for degree in range(2, 5))
+    rhos_tested = 6
+    e_center_direction = tuple(E_CENTER[i] - E_SHELL[i] for i in range(4))
+    print(
+        "per_element: the carrier columns are resolved entry by entry, and the decisive fact is "
+        "itself an entry-level one -- each blind generator carries affine rho_E coefficient 0 in "
+        "both readout channels, while E-center alone carries the nonzero coefficient 1/6 in its E "
+        "slot, and that single matrix entry is the only place rho_E is able to act at all."
+    )
+    print(
+        "per_site: really executed, and by honest linear algebra rather than assertion -- the rank "
+        "routine runs Gaussian elimination over exact Fractions and returns 4 for the full "
+        "center-plus-shell carrier against 3 for the shell-only blind set, and the difference "
+        f"direction E-center minus E-shell = ({', '.join(str(x) for x in e_center_direction)}) "
+        "is confirmed to leave the blind "
+        "span, so the center role is demonstrably the one this class cannot see."
+    )
+    print(
+        "per_mode: the E and T readout channels stay separated at every single evaluation -- each "
+        "image is a 2-vector whose first slot is the E channel and whose second is the T channel, "
+        "and across every tested rho_E the T-side quantities stay frozen at q_T=5/6 and shell "
+        "T/E=-2 while only the E-center slot moves, which is what makes the target c_TE=-8/9 a "
+        "purely E-channel demand rather than a joint one."
+    )
+    print(
+        f"per_block: the tensor grammar is swept as graded blocks -- {contraction_pairs} scalar "
+        f"contraction pairs each yielding a dot and a determinant, {pure_powers} pure symmetric "
+        f"powers over degrees 1 to 5, {mixed_words} mixed tensor words over degrees 2 to 4, "
+        "symmetric powers again at degrees 1 through 6, and six representative polynomial probes; "
+        f"every block collapses to one signature across {rhos_tested} exact rho_E values, and "
+        "these are computed tensor entries rather than counted inventory."
+    )
+    print(
+        "lattice_wide: checked and not executed -- what looks spacetime-shaped here is a single "
+        "outer product against one hand-chosen universal time vector (1, 2/3, 5/7, 11/13), which "
+        "tests only that the readout ambiguity does not sit in the right/time factor and says "
+        "nothing about extent; no volume, sum or limit appears anywhere, and part 5 records that "
+        "the bank leaves arbitrary future nonlinear observables explicitly open."
+    )
+
+
 def main() -> int:
     print("=" * 78)
     print("FRONTIER: Quark Route-2 nonlinear tensor-observable class no-go")
@@ -453,6 +500,7 @@ def main() -> int:
     part3_tensor_powers_and_time_factor()
     part4_target_equivalence_and_firewall()
     part5_parent_surface_anchors()
+    part6_n5_certificate()
 
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

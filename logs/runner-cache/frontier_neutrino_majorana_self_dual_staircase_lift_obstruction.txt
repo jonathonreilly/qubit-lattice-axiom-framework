@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_self_dual_staircase_lift_obstruction.py
-runner_sha256: f15e4e666b85f092f269d7ca1c5176de700c0db480a997c26c2fb4d1adb2f5d9
+runner_sha256: cbb3424887b85b68ee138524c6daa40931909e89860267b5747f748dffce8084
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -36,7 +36,7 @@ PART 1: THE SELECTED LOCAL SELF-DUAL POINT COLLAPSES TO ONE POSITIVE RAY
 ========================================================================================
 PART 2: THE CURRENT Z3 LIFT STAYS HOMOGENEOUS AFTER THE LOCAL SELF-DUAL SELECTION
 ========================================================================================
-  [PASS (C)] Normalized three-generation pairing blocks are identical across rescalings of the selected local ray  (max normalized block difference=1.94e-16)
+  [PASS (C)] Normalized three-generation pairing blocks are identical across rescalings of the selected local ray  (max normalized block difference=0.00e+00)
   [PASS (C)] The singlet/doublet texture ratios are unchanged by those rescalings  (max normalized eigenvalue difference=3.33e-16)
 
   So the current Z3 texture lift does not convert the selected local
@@ -47,11 +47,23 @@ PART 2: THE CURRENT Z3 LIFT STAYS HOMOGENEOUS AFTER THE LOCAL SELF-DUAL SELECTIO
 PART 3: THE CHARGE SECTOR STILL DOES NOT DISTINGUISH THE SELECTED LEVELS
 ========================================================================================
   [PASS (C)] Each lifted self-dual family member remains a charge-minus-two pairing operator  (max charge error=1.23e-23)
-  [PASS (C)] The operator norm still scales linearly with the free rescaling parameter  (spread in ||Q||/scale=5.33e-15)
+  [PASS (C)] The operator norm still scales linearly with the free rescaling parameter  (spread in ||Q||/scale=7.11e-15)
 
   So the current charge classification still sees one pairing family
   with a free overall scale, even after the local self-dual point has
   already been selected exactly.
+
+========================================================================================
+N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
+========================================================================================
+per_element: resolved with amplitudes, and the pairing sum is driven one entry at a time. The texture is written as 2.0 on the singlet, 0.25 on the doublet diagonal and 1.0 off it with exact zeros elsewhere; J2 carries +1 at [0, 1] and -1 at [1, 0]; and pair_operator_from_delta then walks all 15 strictly upper-triangular entries of the 6 x 6 pairing matrix, of which 5 are nonzero, adding delta[a, b] c_a c_b for each one separately.
+per_site: checked and not executed. Nothing in this runner is placed anywhere: the three-valued index is a generation label under the Z3 singlet/doublet split, the two-valued index inside J2 is the Majorana pair index, and the 6 fermionic modes of Part 3 are exactly those (generation, pair) slots. None of them has a coordinate, a neighbour or a volume, so there is no site here at which to evaluate anything.
+per_mode: resolved on both of the runner's two mode notions. The three texture eigenvalues are computed and sorted, [-0.75, 1.25, 2.0], and normalized for comparison across scales; and the local self-dual kernel sigma_z + sigma_x is diagonalized to its pair of eigenvalues [-1.414214, 1.414214], that is +-sqrt(2). Separately Part 3 builds each of the 6 fermionic modes individually by Jordan-Wigner into a 64-dimensional Fock space and sums their occupations into the total number operator.
+per_block: resolved with amplitudes, and unlike a block-diagonal case the blocks here genuinely couple. The Z3 texture is a singlet entry plus a 2 x 2 doublet whose off-diagonal 1.0 links the second and third generations, so the Kronecker product with J2 gives a 6 x 6 pairing matrix with three on-block Majorana pairs plus cross-generation pairing entries, and every one of them is carried into the Fock-space operator and into the charge commutator. No block is inspected in isolation, however - the block content is only ever read out through whole-matrix norms.
+lattice_wide: checked and not executed, and the absent object is the note's own stated obstruction. No lattice is constructed anywhere; and the axis the claim actually lives on, the staircase scale, is never taken to a limit - three fixed positive scales are evaluated and nothing asymptotic is approached. The note's conclusion is that closure needs a genuinely new non-homogeneous local-to-generation bridge or a new absolute-scale datum, and that global object is precisely what cannot be produced by execution on a fixed finite block.
+  scope: three of Part 1's four checks confirm that a constant is constant. rho_values is written down literally as [1.0, 1.0, 1.0] rather than measured from any kernel, and W_rel and Q_rel are then evaluated at that same constant, giving (1/2) log 2 and 1 three times over; the self-dual kernel is never used to compute rho at all.
+  scope: the invariance results across Parts 1, 2 and 3 are guaranteed by the constructors rather than discovered. Every object is built as scale times a scale-independent matrix - the self-dual kernel, the lifted pairing block and the Fock-space pairing operator alike - so normalizing, or dividing the norm by the scale, removes that factor identically.
+  scope: one texture representative is exercised (2.0, 1.0, 0.25) with no family swept, and the three scales are consecutive powers ALPHA_LM^7 to ALPHA_LM^9 of the single constant ALPHA_LM = 0.09067, so no independent scale direction is probed. The runner is fully deterministic: no RNG stream and no optimizer appears in it.
 
 ========================================================================================
 RESULT

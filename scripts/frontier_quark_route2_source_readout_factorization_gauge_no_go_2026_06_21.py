@@ -158,6 +158,45 @@ def main() -> int:
         "No observed masses, fitted targets, PDG values, nearest-rational selection, or live endpoint fit is used." in new_note,
     )
 
+    print("\n-- N5 execution certificate --")
+    print(
+        "per_element: checked -- every number in this gauge argument is written down "
+        f"individually and compared individually. The weight census gives w_A1 = {w_a1}, "
+        f"w_E = {w_e}, w_T = {w_t} and kappa = {kappa}; each of the {len(split_rows)} degree "
+        "splits is computed to its own source ratio, readout ratio and product; and the "
+        f"channelwise witness is fully explicit, with S_E = {source_e}, S_T = {source_t}, "
+        f"R_E = {readout_e}, R_T = {readout_t} and gauges g_E = {gauge_e}, g_T = {gauge_t}."
+    )
+    print(
+        "per_site: checked and not executed -- the six arms of the star are referred to only "
+        "through three already-reduced weight fractions that this runner takes as constants. "
+        "Not one arm amplitude is formed, so nothing here distinguishes any site from any "
+        "other, and the gauge freedom under study is not a site-level object in the first place."
+    )
+    print(
+        "per_mode: checked, and it is where the degeneracy becomes visible -- the gauge acts "
+        f"channelwise with different factors on the two modes, {gauge_e} on E and {gauge_t} on "
+        f"T, and the executed result is a clean split between what survives and what does not: "
+        f"the per-mode products are invariant at Q_E = {product_e} and Q_T = {product_t}, while "
+        f"the per-mode attribution moves, the source ratio going from {source_e / source_t} to "
+        f"{source_e_g / source_t_g} and the readout ratio from {readout_e / readout_t} to "
+        f"{readout_e_g / readout_t_g}. Mode-resolved products cannot see the split."
+    )
+    print(
+        "per_block: checked, but only as a census, and one of the blocks is inert -- the three "
+        "O_h projector blocks are named once with their weights, after which the A1 block plays "
+        "no further part in any computation in this file. Only the E and T blocks feed the "
+        "degree and gauge arguments, so the block-level evidence here is two weights in use and "
+        "one weight recorded but unused."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no limit is taken. "
+        "The scope of the degeneracy claim also deserves an exact reading: it is exhibited by "
+        f"{len(split_rows)} named degree splits sharing total degree two and by one explicit "
+        "gauge pair, so the executed evidence is a demonstration that the endpoint product fails "
+        "to separate these cases, not a classification of the full gauge orbit."
+    )
+
     print("\n" + "=" * 84)
     print(f"PASS={PASS} FAIL={FAIL}")
     print(

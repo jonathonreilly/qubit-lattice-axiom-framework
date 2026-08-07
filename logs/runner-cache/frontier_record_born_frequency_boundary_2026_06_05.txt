@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_born_frequency_boundary_2026_06_05.py
-runner_sha256: 0af6108b676a2c0b3c44322eb4bca0e8f24eacea49bf6688064e43e3221faf8b
+runner_sha256: af16d42d67a88cfbcbbf38027dc816765453a89f85dfb6e6fc97e5e77062f3e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.03
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -61,6 +61,15 @@ no-go / finite history-count runner
   [PASS] forbidden wording absent: selection closure
   [PASS] forbidden wording absent: dial closure
   [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE (print-only; registers no check)
+------------------------------------------------------------------------------
+  per_element: checked and not executed -- nothing array-valued is constructed in this runner. No operator, density matrix or amplitude vector appears, so there is no entry to compare against another; the objects are integer tuples, Hamming counts and a list of binomial weights, and every conclusion is drawn from set membership and cardinality rather than from any entrywise test.
+  per_site: checked and not executed -- there is no spatial index anywhere here. The only position index carried is the slot inside a length-4 history word, which is a time-ordered record step rather than a site, and even that slot is consumed almost entirely through the total count of ones. Reading this boundary as a site-resolved result would misdescribe what the file does.
+  per_mode: checked and not executed -- no state space, basis or dynamics exists, so nothing can carry a mode. The binomial weights that appear in section 3 are a classical probability model handed in from outside with p supplied by hand; they are not a spectral decomposition, and the point of the section is precisely that this model is an extra input the history grammar does not produce.
+  per_block: exercised, and the no-go is visible at exactly this granularity -- the 16 histories are partitioned into 5 Hamming-count blocks k = 0..4, and the run shows the middle block k=2 contains 6 distinct histories. That many-to-one block structure is the reason a count, and hence a frequency, cannot identify a history or fix a probability.
+  lattice_wide: exercised, and stated only for finite n -- the enumeration is exhaustive over the whole space of 16 histories at fixed n = 4, and the whole-space quantities are read off directly: the frequency set has 5 attainable values and the supplied binomial weights over all 5 count classes sum to one. No sequence of growing n is compared and no limit is taken, which is the substance of the boundary: the history grammar supplies no convergence and no IID structure.
 
 ------------------------------------------------------------------------------
 SCORECARD

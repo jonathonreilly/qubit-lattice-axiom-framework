@@ -745,6 +745,52 @@ check("10.3 C -> C^{-1} = C^2 preserves C_3-action structure",
 # ----------------------------------------------------------------------
 
 print()
+print("=== Section 10b: N5 execution certificate ===")
+print()
+print(
+    "  per_element: resolved one basis matrix at a time — the real basis "
+    "B_0 = I, B_1 = C + C^2 and B_2 = i(C - C^2) is checked element by "
+    "element for reality and Hermiticity, their Frobenius norms are computed "
+    "separately as 3, 6 and 6, and the K-action is read off on each "
+    "individually as K(B_0) = B_0, K(B_1) = B_1 and K(B_2) = -B_2; the same "
+    "granularity shows K fixing the a-parameter while conjugating b."
+)
+print(
+    "  per_site: checked and not executed — the retained antiunitary content "
+    "surveyed at the top genuinely is site-indexed, sublattice parity "
+    "epsilon(x) = (-1)^{x1+x2+x3} and spatial inversion x -> -x mod L, but "
+    "this probe never instantiates that lattice; it works only with the "
+    "induced action on the fixed 3x3 matter algebra, where the parity factor "
+    "has already collapsed to a unitary on M_3, so no quantity here is "
+    "resolved site by site."
+)
+print(
+    "  per_mode: resolved character by character on \\hat{C_3} — v_omega is "
+    "confirmed an omega-eigenvector of Ad(C) and v_obar an omega-bar "
+    "eigenvector, K is shown to map one to the other so its orbit structure "
+    "is exactly one singleton {chi_1} plus one swapped pair "
+    "{chi_omega, chi_obar}, and the competing weightings are then compared "
+    "mode by mode, Plancherel at (1/3, 1/3, 1/3) against K-orbit-uniform at "
+    "(1/2, 1/4, 1/4)."
+)
+print(
+    "  per_block: resolved block by block on the reduced two-slot carrier, "
+    "and Test 4 fails there — the trivial block and the doublet block are "
+    "weighted separately, real-Plancherel on K-orbits gives (1/3, 2/3), the "
+    "same (1, 2) ratio rather than the (1, 1) the closure needs, the "
+    "K-orbit-uniform extremum lands at |b|^2 = a^2/4 instead of a^2/2, and "
+    "only the block balance rho_+ = rho_perp reproduces A1."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice of any volume is "
+    "built here and no thermodynamic or continuum limit is taken; the "
+    "lattice-wide inputs, CPT exactness on even periodic lattices and the "
+    "RP-reconstructed transfer matrix, enter only as surveyed retained "
+    "context in the Phase 1 prose and are never re-executed at any volume by "
+    "this probe."
+)
+
+print()
 print("=== Section 11: Summary ===")
 print()
 print(f"K (entry-wise complex conjugation) — retained as T factor of CPT.")

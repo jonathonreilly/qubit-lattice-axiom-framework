@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/ks_eta_vs_jw_string_car_locality.py
-runner_sha256: b715831fd0e6239ee1d57f36d6d8d5fccc80fbf954024044cbc44f6ef471fde6
+runner_sha256: 8f989870be9be95c6fe690a30a2f2b0547016106a1c145c2eac4738e067cf1bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 5.11
 status: ok
 ----- stdout -----
 [setup] L=2  N=8 sites  dim H = 256  nearest-neighbour links = 12
@@ -57,6 +57,13 @@ C6  HCB and JW generators span the SAME M_{2^N}(C) on a three-site subpatch
 C7  ungraded tensor locality horn: JW tails are non-endpoint-local on the 2x2x2 patch
   PASS  min grid-graph bandwidth over ALL orderings = 4 > 1 (no total order makes every NN link string-free)
   PASS  lexicographic slow-axis NN link (0, 0, 0)-(1, 0, 0) spans 4 positions => string non-trivial over intermediate sites [(0, 0, 1), (0, 1, 0), (0, 1, 1)]
+
+C8  N5 execution certificate -- resolved granularity (reporting only)
+per_element: checked - every operator here is an explicit 256 x 256 complex matrix assembled as an 8-fold Kronecker product of 2 x 2 factors, and each identity is verified as a full matrix equality on that space: b_x^2 = 0, {c_x, c_y} = 0 for all x != y, {c_x, c_x^dag} = I and {c_x, c_y^dag} = 0. The eta table is resolved at the same grain as one integer per (mu, x), 24 c-numbers in all.
+per_site: checked - the patch carries 8 sites, each with its own Qubit one-site algebra M_2(C), and site support is decided site by site by the acts_as_identity_on_site reshaping test. That is how the two frames are separated: each hard-core ladder b_x = sigma_+^(x) is found to be supported on exactly one site, while the JW string S_x = product_{y < x} sigma_3^(y) is built by walking every site preceding x in the lexicographic order.
+per_mode: checked, and resolved only to the point of showing the taste index is diagonalized away - no per-taste amplitude survives. The spin rotation T(x) = sx^x1 sy^x2 sz^x3 is applied and T(x)^dag gamma_mu T(x + mu_hat) is asserted to be a pure scalar eta_mu(x) I_2 for all 24 (mu, x) pairs, which is exactly why eta is a c-number and carries no statistics. Downstream the ladders hold one Qubit per site with no taste label, and no momentum or Fourier mode is ever formed on the patch.
+per_block: checked, as a subalgebra dimension count rather than an amplitude - a three-site block of the patch is taken and the dimension of the operator algebra generated inside it is computed by row-reduction over words, returning 64 = 4^3 for the hard-core-boson generators and 64 for the Jordan-Wigner generators, i.e. both frames fill the same full ungraded matrix algebra on that block. The fermion-parity grading is never split into even and odd blocks; C4 only checks that one global parity anticommutes with both frames.
+lattice_wide: checked - genuine whole-patch quantities are formed on the 2x2x2 Z^3 patch. The staggered kinetic operator is summed over all 12 nearest-neighbour links in both realizations and the two whole-patch sums are shown to differ; the string tally is lattice-wide (8 of 12 link terms carry non-endpoint support); and the ordering horn is exhaustive over the patch, brute-forcing all 8! site orderings to a minimum grid-graph bandwidth of 4 > 1. All of this is bounded to L = 2 with open boundaries: no larger volume is run and no thermodynamic limit is taken.
 
 ========================================================================
 SCORECARD: PASS=35 FAIL=0

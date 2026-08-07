@@ -480,6 +480,58 @@ def check():
        span > 1 and len(string_support) > 0)
     print()
 
+    # ---- C8: N5 execution certificate (print-only; adds no check)
+    print("C8  N5 execution certificate -- resolved granularity (reporting only)")
+    print(
+        "per_element: checked - every operator here is an explicit "
+        f"{D} x {D} complex matrix assembled as an {N}-fold Kronecker product of "
+        "2 x 2 factors, and each identity is verified as a full matrix equality "
+        "on that space: b_x^2 = 0, {c_x, c_y} = 0 for all x != y, "
+        "{c_x, c_x^dag} = I and {c_x, c_y^dag} = 0. The eta table is resolved at "
+        f"the same grain as one integer per (mu, x), {3 * N} c-numbers in all."
+    )
+    print(
+        f"per_site: checked - the patch carries {N} sites, each with its own "
+        "Qubit one-site algebra M_2(C), and site support is decided site by "
+        "site by the acts_as_identity_on_site reshaping test. That is how the "
+        "two frames are separated: each hard-core ladder b_x = sigma_+^(x) is "
+        "found to be supported on exactly one site, while the JW string "
+        "S_x = product_{y < x} sigma_3^(y) is built by walking every site "
+        "preceding x in the lexicographic order."
+    )
+    print(
+        "per_mode: checked, and resolved only to the point of showing the taste "
+        "index is diagonalized away - no per-taste amplitude survives. The "
+        "spin rotation T(x) = sx^x1 sy^x2 sz^x3 is applied and "
+        "T(x)^dag gamma_mu T(x + mu_hat) is asserted to be a pure scalar "
+        f"eta_mu(x) I_2 for all {3 * N} (mu, x) pairs, which is exactly why eta "
+        "is a c-number and carries no statistics. Downstream the ladders hold "
+        "one Qubit per site with no taste label, and no momentum or Fourier "
+        "mode is ever formed on the patch."
+    )
+    print(
+        "per_block: checked, as a subalgebra dimension count rather than an "
+        "amplitude - a three-site block of the patch is taken and the dimension "
+        "of the operator algebra generated inside it is computed by "
+        "row-reduction over words, returning 64 = 4^3 for the hard-core-boson "
+        "generators and 64 for the Jordan-Wigner generators, i.e. both frames "
+        "fill the same full ungraded matrix algebra on that block. The "
+        "fermion-parity grading is never split into even and odd blocks; C4 "
+        "only checks that one global parity anticommutes with both frames."
+    )
+    print(
+        f"lattice_wide: checked - genuine whole-patch quantities are formed on "
+        f"the {L}x{L}x{L} Z^3 patch. The staggered kinetic operator is summed "
+        f"over all {len(links)} nearest-neighbour links in both realizations and "
+        "the two whole-patch sums are shown to differ; the string tally is "
+        f"lattice-wide (8 of {len(links)} link terms carry non-endpoint support); "
+        f"and the ordering horn is exhaustive over the patch, brute-forcing all "
+        f"{N}! site orderings to a minimum grid-graph bandwidth of {bw} > 1. All "
+        "of this is bounded to L = 2 with open boundaries: no larger volume is "
+        "run and no thermodynamic limit is taken."
+    )
+    print()
+
     print("="*72)
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     print("="*72)

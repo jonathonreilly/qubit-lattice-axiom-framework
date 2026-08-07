@@ -339,5 +339,41 @@ check("circulant Q=2/3 operator is the Gamma_chi-COMMUTING (non-chiral on this f
 
 print()
 print("="*78)
+print("PART 8 -- N5 execution certificate: what this runner resolves, per class")
+print("="*78)
+print(
+    "per_element: checked — the operator identities are resolved entry by entry on "
+    "3x3 matrices: Gamma_chi = (2/3)J - I matches the circulant (-1/3, 2/3, 2/3) in "
+    "all nine entries, [Gamma_chi, R] and [H_circ, Gamma_chi] vanish in all nine, and "
+    "the circulant/Gamma_chi anticommutator is nonzero at both basis points (1,0), (0,1)."
+)
+print(
+    "per_site: checked and not executed — every operator here lives on the internal "
+    "three-generation R^3 factor; the Z^3 lattice baseline named in the header is "
+    "never instantiated, so no spatial site carries any of these operators and no "
+    "site-resolved statement about the readout is produced."
+)
+print(
+    "per_mode: checked — the three Z3 character modes are resolved individually with "
+    f"Gamma_chi grades (+1, -1, -1): at theta=pi the grade/sign pairs are {patt_pi} so "
+    f"the +1 singlet mode is the negative one, while at theta=0.9 they are {patt_0p9} "
+    "so a -1 doublet mode is negative — the sign roams across grades."
+)
+print(
+    "per_block: checked — the Gamma_chi grading splits the generation factor into a "
+    "1-dimensional +1 block and a 2-dimensional -1 block, and the two operator classes "
+    "over those blocks are disjoint: no nonzero Hermitian circulant anticommutes with "
+    f"Gamma_chi, the anticommuting representative having spectrum {spec_num} summing to 0."
+)
+print(
+    "lattice_wide: checked and not executed — the Lattice = Z^3 and Quantum = M_2(C) "
+    "baselines are cited as provenance only and nothing is evaluated beyond the single "
+    "three-generation factor, so the readout contrast Q(signed) = "
+    f"{Q_signed_theta09:.6f} vs Q(singular) = {Q_singular_theta09:.6f} is certified at "
+    f"that scope alone, with PASS={PASS}, FAIL={FAIL}."
+)
+
+print()
+print("="*78)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
 print("="*78)

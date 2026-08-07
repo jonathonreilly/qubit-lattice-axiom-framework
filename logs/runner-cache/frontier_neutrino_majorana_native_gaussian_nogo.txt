@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_native_gaussian_nogo.py
-runner_sha256: 669be91670686255478b4e25f19d8c77e635087cdee3a351780d147c28db6bf2
+runner_sha256: cc7cd5a34b34edaffbf8ce3d726962d3e99f41f45d515555cc0eba3582e5b6a3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -51,6 +51,17 @@ PART 2: THE NATIVE STAGGERED KERNEL NEVER POPULATES A PAIRING BLOCK
   normal c^dag c block. The same-chirality Majorana operator sits in
   the anomalous pairing block Delta, which is absent identically until
   one adds a new microscopic pairing source.
+
+========================================================================================
+N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
+========================================================================================
+per_element: resolved by explicit assembly, with one degeneracy that must be stated. Part 1 writes the 4 x 4 normal kernel entry by entry (0.3, 0.2 - 0.1j, -0.05 and their conjugates) and carries all 16 x 16 = 256 Fock entries into the commutator norms; Part 2 lays down each staggered hop as a single += of -0.5j times a sign into hop[i, j], and the pairing block is populated by exactly two entries, Delta[0, 1] = +0.2 and Delta[1, 0] = -0.2. But at the only volume this runner builds, L = 2, the periodic wrap makes the forward and backward neighbour the same site, so every directed hop is written twice with opposite sign and the entire hopping matrix cancels: the off-diagonal part of K measures 0.000e+00.
+per_site: resolved with real amplitudes over all 8 sites of the Z^3_2 torus. The triple loop visits every site and writes the site-resolved staggered mass 0.35 * (-1)^(x + y + z), giving the two sublattice values [-0.35, 0.35], and local_projector_source then hands each site its own weight along linspace(-0.25, 0.25, 8), from -0.2500 to +0.2500 in steps of 1/14. The site-dependent hop phases eta_y = (-1)^x and eta_z = (-1)^(x + y) are computed per site but, by the L = 2 cancellation above, never survive into the kernel that is tested.
+per_mode: checked and aggregated away, not resolved. The four fermionic modes of Part 1 are addressed individually on the input side - K is given mode pair by mode pair and the source J is diag(0.12, -0.07, 0.05, -0.03) - but every reported quantity is a Frobenius norm over a whole operator, and neither the 4 x 4 kernel, nor the 8 x 8 staggered kernel, nor the 16 x 16 BdG matrix is ever diagonalized, so no eigenvalue, band, dispersion or mode-resolved amplitude is produced anywhere in this runner.
+per_block: resolved, and this is the granularity the claim lives at, though two of the three block readings are settled by construction. nambu_bdg assembles [[K, Delta], [-conj(Delta), -K^T]] at 16 x 16, and for the native and locally-sourced cases delta_block is None, so the function writes a literal zero array into the anomalous slot and the norm then re-reads it: those two checks certify the modelling assignment (the native c^dag(K + J)c family maps to Delta = None), not a computed cancellation. The third case, with Delta[0, 1] = 0.2 explicitly inserted, is the genuine contrast showing the norm is not blind. The lower-left -conj(Delta) block and the -K^T block are never inspected.
+lattice_wide: partially resolved, and the missing global statement is the note's own boundary. The kernel is assembled across the entire periodic torus - all 8 sites and all three directions with modulo wraparound - and the Hermiticity and anomalous-block norms are whole-lattice aggregates, so there is a real global object here. What is absent is any asymptotics: a single volume L = 2 is instantiated, no L-sequence and no infinite-volume or continuum limit is taken, and that single volume is the degenerate one, so nothing is established beyond this one small torus.
+  scope: the note's second structural argument runs through the determinant source family Z[J] = det(D + J) and the generator W[J] = log|det(D + J)| - log|det D|. No determinant is computed anywhere in this runner; the Gaussian surface enters only as the modelling choice delta_block = None, so nothing here certifies the determinant-side half of the note's argument.
+  scope: this runner is fully deterministic - no RNG stream and no optimizer is used, and every number above is fixed by the literal constants 0.35, +-0.25, +-0.5j and 0.2 written into the source.
 
 ========================================================================================
 RESULT

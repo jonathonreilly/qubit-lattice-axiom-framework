@@ -611,6 +611,91 @@ def test_T13_source_note_boundary() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no_go.
+
+    Reporting only: adds no check() call and moves no PASS/FAIL count.
+    """
+    section("N5 execution certificate: what this runner resolves")
+
+    per_site_dim = 2
+    joint_dims = [per_site_dim ** n for n in range(1, 6)]
+    doc_scan_checks = 11
+    dim_arith_checks = 3
+    symbolic_checks = 9
+
+    print(
+        "per_element: resolved symbolically, entry by entry. T10 carries the Qubit "
+        "one-site baseline M_2(C) as fully general 2 x 2 matrices with named entries - "
+        "sigma_A as (a1, a2, a3, a4), sigma_B as (b1..b4), E_A as (e1..e4), E_B as "
+        "(f1..f4) - forms the Kronecker product into a 4 x 4, expands its trace, and "
+        "certifies the factorization identity as an exact symbolic zero over all 16 "
+        "free entries rather than at sample values. T6 then pins the defects at exact "
+        "Fraction precision: 6 - 5 = 1 at p = 1, 36 - 13 = 23 at p = 2, 216 - 35 = 181 "
+        "at p = 3, and 6 - 5 = 1 again for the p = 1/2 case on the perfect squares 4 "
+        "and 9."
+    )
+    print(
+        "per_site: checked, and only a dimension count is resolved - no amplitude is "
+        "evaluated at any site. The per-site factor is fixed at dim 2 for the Qubit "
+        f"one-site baseline, joint registers are enumerated as 2^|Lambda| = "
+        f"{joint_dims} for |Lambda| = 1 to 5, and the whole of G2 turns on comparing "
+        "those integers to the hypothesis thresholds: Gleason's dim >= 3 is satisfied "
+        "on the joint register from |Lambda| = 2 onward while Wallach's per-factor "
+        "dim >= 3 fails at every single site. No site carries a state, an effect or a "
+        "readout value anywhere in this runner."
+    )
+    print(
+        "per_mode: checked and not executed. Nothing here is diagonalized. States and "
+        "effects are kept as general symbolic 2 x 2 matrices with no spectral "
+        "decomposition and no eigenvalue constraint imposed, so the standard "
+        "spectrum-in-[0,1] property of effects is never exercised on this route; and "
+        "the F_p family is a family of scalar functionals of a positive real, which "
+        "has no modes to resolve at all."
+    )
+    print(
+        "per_block: resolved, and it is the granularity the entire no_go lives at. "
+        "The object under test is the two-block bipartition H_A (x) H_B: T10 verifies "
+        "that the Gleason output factorizes multiplicatively across those two blocks "
+        "as an exact symbolic identity, T6 exhibits explicit block-additivity defects "
+        "for the F_p family on the same two-block split at exact Fraction precision, "
+        "and T8 separates the two block granularities that matter - the per-site "
+        "factor at dim 2, where Wallach uniqueness fails, against the per-region "
+        "bipartition at dim 2^|A| >= 4, where it succeeds and which is the split that "
+        "is load-bearing for P1."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global theorem is "
+        "precisely this note's obstruction. No lattice-wide object is ever built; "
+        "|Lambda| enters only through the dimension count above, and no volume, "
+        "sequence or limit is taken. The route-level obstructions the note records - "
+        "that Gleason-Busch takes additivity as an input hypothesis (G1), and that "
+        "bridging its multiplicative output to an additive generator runs through the "
+        "Cauchy log classifier, which is P1 restated (G3) - are exactly statements "
+        "that the missing global derivation does not exist. Execution can exhibit "
+        "witnesses against it but cannot supply it."
+    )
+    print(
+        f"  scope: of the {PASS + FAIL} checks in this runner, {doc_scan_checks} are "
+        "substring scans over the source Markdown (T1 to T5, the documentation halves "
+        f"of T7, T8 and T9, and T11 to T13), {dim_arith_checks} are integer dimension "
+        f"arithmetic in T8, and {symbolic_checks} are exact symbolic or Fraction "
+        "computations. The majority of the check count therefore certifies the state "
+        "of the note's prose rather than any computed quantity."
+    )
+    print(
+        "  scope: the F_p leg is existential by design and the runner says so - the "
+        "check passes on at least one nonzero defect out of six witnesses, all at "
+        "rational or integer p, with the p = 1/2 case chosen on perfect squares so the "
+        "root stays exact. No irrational exponent is exercised, and T9 reuses the same "
+        "(2, 3) witness pair that T6 already used."
+    )
+    print(
+        "  scope: fully deterministic - no RNG stream and no optimizer appears "
+        "anywhere, and every numerical comparison is exact Fraction or SymPy."
+    )
+
+
 def main() -> int:
     print("=" * 78)
     print("Runner: observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21")
@@ -634,6 +719,7 @@ def main() -> int:
     test_T11_audit_disposition_yaml()
     test_T12_no_go_scope_boundary()
     test_T13_source_note_boundary()
+    n5_execution_certificate()
 
     print()
     print("=" * 78)

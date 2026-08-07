@@ -445,6 +445,81 @@ def test_T10_source_note_boundary() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no_go.
+
+    Reporting only: adds no check() call and moves no PASS/FAIL count.
+    """
+    section("N5 execution certificate: what this runner resolves")
+
+    p_grid = 6
+    r_pairs = 3
+    doc_scan_checks = 14
+    computed_checks = 8
+
+    print(
+        "per_element: resolved symbolically over named free entries. T5 writes two "
+        "explicit 2 x 2 blocks, M1 = [[a, b], [-b, a]] and M2 = [[c, d], [-d, c]], "
+        "assembles them into a 4 x 4 block-diagonal matrix and certifies "
+        "det(M1 (+) M2) = det(M1) det(M2) as an exact symbolic zero in all four free "
+        "entries, then exhibits the non-additive residual symbolically as well. T3 "
+        "adds entry-level exactness on the source side, with r-pairs given as exact "
+        "rationals (2, 3), (3/2, 5/7) and (11/13, 7/5)."
+    )
+    print(
+        "per_site: checked and not executed, and here the absence is total. This "
+        "runner contains no site index, no lattice, no per-site dimension and no "
+        "register count anywhere in the file - the subsystem split it reasons about "
+        "is the abstract pair (J_A, J_B) with no underlying geometry attached. There "
+        "is consequently nothing site-shaped even to count, let alone to evaluate."
+    )
+    print(
+        "per_mode: checked and not executed. No spectral operation occurs in this "
+        "runner at all: the two 2 x 2 blocks are consumed only through their "
+        "determinants, nothing is diagonalized, and no eigenvalue, singular value or "
+        "spectral weight is formed. The F_p family is a family of scalar functionals "
+        "of a positive real and has no mode structure to resolve."
+    )
+    print(
+        "per_block: resolved, and it is the granularity the entire no_go is stated "
+        "at. The claim is block-additivity on the two-block split J_A (+) J_B, and "
+        "the runner exercises exactly that split three independent ways: F_p is shown "
+        "multiplicatively factorizing across the two blocks as an exact symbolic "
+        f"identity; additivity is shown to fail across a {p_grid} x {r_pairs} = "
+        f"{p_grid * r_pairs}-point grid of (p, r_A, r_B); and the determinant of an "
+        "explicit block-diagonal matrix is confirmed multiplicative with a nonzero "
+        "additive residual, which is the concrete form of the obstruction."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global object is "
+        "this note's own obstruction. Nothing global is constructed - no volume, no "
+        "sequence, no limit - and the note's own statement of what would close the "
+        "gap is a retained primitive that supplies scalar block-additivity directly. "
+        "That primitive is by definition absent, so no execution of this runner "
+        "could exhibit it; what the runner can and does exhibit is the "
+        "counterexample family that blocks the alternatives."
+    )
+    print(
+        "  scope: the file's own docstring states that all numerical checks use exact "
+        "Fraction arithmetic or SymPy symbolic verification with no floating-point "
+        "comparator inputs, but the block-additivity grid in T3 does not meet that "
+        "standard: it evaluates float(r_A * r_B) ** float(p) against a 1e-9 threshold "
+        "in double precision, and the exact-Fraction value it prepares for the "
+        "integer-p cases is computed and then never used. The other seven computed "
+        "checks are exact as described."
+    )
+    print(
+        f"  scope: of the {PASS + FAIL} checks, {doc_scan_checks} are substring scans "
+        f"over the source Markdown and only {computed_checks} compute anything. And "
+        "the 'fails for all tested p != 0' statement is quantified over a six-value "
+        "rational p grid crossed with three r-pairs, not over all real p."
+    )
+    print(
+        "  scope: fully deterministic - no RNG stream and no optimizer appears "
+        "anywhere in this runner."
+    )
+
+
 def main() -> int:
     print("# Observable-principle P1 bridge Route D sharpened no_go runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
@@ -458,6 +533,7 @@ def main() -> int:
     test_T8_no_go_scope_boundary()
     test_T9_out_of_scope_no_upstream_promotion()
     test_T10_source_note_boundary()
+    n5_execution_certificate()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
     return 0 if FAIL == 0 else 1
 

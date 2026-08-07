@@ -249,11 +249,62 @@ def firewall_checks() -> None:
     report("stable setting selects dial flag is false", not stable_setting_selects_dial)
 
 
+def n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no report(), leaves PASS/FAIL alone.
+    """
+    section("N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved statistic by statistic — endpoint_ab, "
+        "endpoint_ba and second_is_b are each expanded into their own exact "
+        "Fraction expectation over the length-2 law, the shared target names "
+        "endpoint_ba = 1/3 and second_is_b = 2/3 as separate components, and "
+        "the loss adds one weighted squared deviation per component rather "
+        "than comparing any aggregate."
+    )
+    print(
+        "  per_site: checked and not executed — this file instantiates no "
+        "geometry of any kind, so there is no site to resolve; the position "
+        "sensitivity that does exist is in the statistics themselves, where "
+        "endpoint_ab and endpoint_ba read word[0] against word[-1] and "
+        "second_is_b reads word[1], and at word length 2 those positions are "
+        "the only structure separating the two candidates."
+    )
+    print(
+        "  per_mode: checked and not executed — the length-2 law is formed by "
+        "a single source-mass times kernel-row product and is never iterated, "
+        "so no stationary distribution, spectral gap, relaxation mode or "
+        "eigenvector of either candidate kernel is computed anywhere in this "
+        "runner."
+    )
+    print(
+        "  per_block: resolved twice over, first across kernel rows and then "
+        "across candidate kernels — row_stochastic requires each of the rows "
+        "at A and at B to sum to exactly 1 with nonnegative entries "
+        "separately, and k3 and k4 are then carried as independent copies, "
+        "each producing its own law, its own statistic vector and its own "
+        "loss under each supplied rule; note that the two reported findings "
+        "about weight dependence rest on the identical comparison "
+        "winners_a != winners_b, so they are one computation reported twice."
+    )
+    print(
+        "  lattice_wide: checked and not executed — the entire witness sits at "
+        "word length 2 over a two-letter alphabet with two candidate kernels "
+        "and two supplied rules, so no volume, no longer horizon and no limit "
+        "of any kind is taken; the note is explicit that this decides nothing "
+        "about a broader Record-derived target route, and of the recorded "
+        "passes 15 are string-presence checks over four repository documents "
+        "while 10 are firewall booleans hardcoded False in this file."
+    )
+
+
 def main() -> int:
     source_anchor_checks()
     target_weight_firewall_checks()
     missing_target_checks()
     firewall_checks()
+    n5_execution_certificate()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE")

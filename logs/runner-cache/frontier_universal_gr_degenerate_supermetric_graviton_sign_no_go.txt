@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py
-runner_sha256: c82020b40951b21e06296ce044b371bde8de4bd3c0a45b22384c11ab2ea7b21e
+runner_sha256: 7f86a347194ae73ee3ca98ee7ce2fc9ca6707be0f0d0061197a954efd452d196
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.70
+elapsed_sec: 0.92
 status: ok
 ----- stdout -----
 PASS T1 framework lambda=0: G_trace ~ G_shear sign-equal (degenerate); conformal term vanishes on TT
@@ -21,6 +21,14 @@ framework lambda=0 comparator gluing: omega^2_trace=0.245  omega^2_TT=-0.245 (op
 GR lambda=1 control in the same convention: omega^2_trace=0.122  omega^2_TT=0.245 (same positive sign)
 BOUNDARY = sign algebra for framework-derived comparator signs plus derived finite quadratic gluing;
 open = 4D/timelike Regge action/fiber metric, action orientation, and finite-k W/stress routes.
+
+N5 execution certificate
+per_element: the ten independent components of the symmetric perturbation h_ab are carried symbolically all the way through — the linearized Einstein operator is differentiated component by component into a 10x10 Hessian at omega = 0, and contracting that on the normalized channel directions returns the exact closed forms V_trace = -kk**2/2 and V_TT = kk**2/2 with no floating-point step; the T2a bridge guard, by contrast, is a substring test over an upstream note and cache and resolves nothing numerically.
+per_site: checked and not executed — nothing in this runner carries a position-space index; the metric perturbation lives in momentum space from beginning to end and no site, link, spacing or real-space neighbour is ever constructed, so no site-resolved quantity is decided.
+per_mode: dispersion is resolved separately for each ADM channel through the imported gluing law omega^2 = V / G, and the per-momentum metric-Hessian of W is resolved over 2000 seeded momentum draws (seed 3, each component uniform on (0.2, pi - 0.2)), which return matrix rank [1] on every single draw while the transverse-traceless overlap stays below the runner's 1e-14 kernel threshold throughout (True).
+per_block: weighing the two ADM blocks against each other is the whole no-go — at lambda = 0 the DeWitt fiber metric gives G_trace and G_shear the same sign (degenerate) while at lambda = 1 it gives them opposite signs, and against the derived opposite-signed potentials the degenerate block pair forces omega^2_trace * omega^2_TT < 0 for both choices of the overall normalization sign (True).
+lattice_wide: checked and not executed — momenta here are drawn from a continuous open box rather than enumerated on any finite lattice, and no volume, spacing, boundary condition or Brillouin-zone mode list is constructed at all; the global-sign theorem is an algebraic statement about the fiber metric that never references a lattice extent.
+
 TOTAL: PASS=9 FAIL=0
 
 ----- stderr -----

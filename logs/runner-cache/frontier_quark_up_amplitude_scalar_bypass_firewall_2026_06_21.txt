@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py
-runner_sha256: 28ac12627c0bccbc3846dcd24babc03fa715e9689f45ba4b8d1a8254437f0111
+runner_sha256: 332fd389d0fcf1ab493ff4807328281d0a9197d8dd5dc27803cc0329d5319454
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 16.17
+elapsed_sec: 26.76
 status: ok
 ----- stdout -----
 ========================================================================
@@ -81,12 +81,12 @@ PART 3: Exact Algebra Boundaries
   live alpha_T/alpha_E = -2.005382749600
   live beta_E/alpha_E = +5.257476782082
   target triple        = (-1.0, -2.0, 5.250000000000)
-  tensor |b_E/b_T|     = 2.621601678209
+  tensor |b_E/b_T|     = 2.621602843803
   [PASS] current endpoint ratios do not land the selected Route-2 triple  (the readout-map theorem target remains false on live endpoint data)
   [PASS] the live E-channel entry is not exactly beta_E/alpha_E = 21/4  (gap=+7.476782082175e-03)
-  [PASS] the tensor slope ratio is not exactly sqrt(7)  (gap=-2.414963285538e-02)
-  [PASS] the tensor slope ratio is not exactly 21/8  (gap=-3.398321790788e-03)
-  [PASS] rho_E=0 and rho_E=21/4 agree on the E-shell carrier  (shell residual=2.220e-16)
+  [PASS] the tensor slope ratio is not exactly sqrt(7)  (gap=-2.414846726154e-02)
+  [PASS] the tensor slope ratio is not exactly 21/8  (gap=-3.397156196948e-03)
+  [PASS] rho_E=0 and rho_E=21/4 agree on the E-shell carrier  (shell residual=3.331e-16)
   [PASS] rho_E=0 and rho_E=21/4 differ on the E-center carrier  (center delta=0.875000000000)
 
 ========================================================================
@@ -94,12 +94,12 @@ PART 4: Independent Scalar Support Does Not Select P_R
 ========================================================================
   RPSR a_u                 = 0.774886561056
   RPSR identity residual   = 0.000e+00
-  anchored scalar a_u      = 0.778161628656
-  anchored scalar kappa    = 0.956341163278
+  anchored scalar a_u      = 0.778161627337
+  anchored scalar kappa    = 0.956341172638
   scalar bridge interval   = [0.772011886721, 0.782460796436]
   [PASS] RPSR reduced-amplitude algebra closes without rho_E  (a_u/sin_d + rho = 1 + rho/49)
   [PASS] RPSR scalar value is not a readout-map triple entry  (dimensionless reduced amplitude is not beta/alpha readout data)
-  [PASS] the scalar-comparison bridge brackets the anchored up-amplitude without choosing P_R  (kappa_anchor=0.956341163278)
+  [PASS] the scalar-comparison bridge brackets the anchored up-amplitude without choosing P_R  (kappa_anchor=0.956341172638)
   [PASS] the scalar bridge variable kappa is distinct from the Route-2 E-center variable rho_E  (kappa lives in the scalar-comparison interval, not in the readout-map family)
 
 ========================================================================
@@ -110,6 +110,16 @@ PART 5: Firewall Verdict
   [PASS] a positive bypass would require a new typed edge not present in the classified routes  (needed edge: reduced amplitude or scalar support -> selected Route-2 P_R / E-center ratio)
   Verdict: current scalar routes sharpen the search, but do not bypass
   the selected-readout-map problem for the S3/Route-2 endpoint.
+
+========================================================================
+PART 6: N5 Execution Certificate
+========================================================================
+per_element: exercised -- both readout comparisons in PART 3 are componentwise maxima rather than aggregate norms. The E-shell pair agrees to 3.331e-16 against EXACT_TOL = 1e-12, the E-center pair is separated by exactly 7/8, and the whole separation is carried by one readout entry: the two matrices differ in exactly 1 of their eight slots, namely P[0,2] = rho_E.
+per_site: checked and not executed -- this firewall never addresses a site. Both of its numerical inputs arrive pre-contracted: restricted_readout_data() hands over four 4-component endpoint columns, and tensor_endpoint_data() hands over slopes and intercepts already fitted across the two support endpoints. The bypass being foreclosed is a readout-selection route, so no site-level quantity would be relevant even if one were available.
+per_mode: exercised -- the live endpoint data is reported and tested channel by channel: beta_T/alpha_T and alpha_T/alpha_E on the T side against beta_E/alpha_E on the E side, and theorem_target_lands() is a joint condition on q_T together with the T/E shell and center ratios. Attributing the residual gap to the E-center entry, which is the whole point of the firewall, is only meaningful because the two bright modes are carried separately throughout.
+per_block: thin, and reported as thin -- the only block-against-block invariance actually driven by the rho_E dial here is the E-side pair, with E-shell certified unchanged and E-center certified to move. T-shell and T-center enter as printed ratios but are never put through the same dial in this file, so this runner supports a block statement over two of the four endpoint blocks and no more.
+lattice_wide: checked and not executed -- no lattice, no volume and no whole-system operator is built anywhere in this file, so there is no finite-N quantity to certify and no limit is taken. The deepest structure reached is the adapted seven-site basis sitting behind tensor_endpoint_data(), and it is already reduced to endpoint slopes before it arrives. The route classification in PART 2 is likewise an inventory of six documented routes, not a computation of any extended object.
+  provenance: PART 4 consumes a seeded global optimizer (differential_evolution with seed=83, then L-BFGS-B) via solve_anchored_surface(); no converged or fitted value from that stream is quoted above and this certificate re-derives nothing from it.
 
 ========================================================================
 TOTAL: PASS=33, FAIL=0

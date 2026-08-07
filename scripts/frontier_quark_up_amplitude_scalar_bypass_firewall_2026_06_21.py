@@ -333,6 +333,58 @@ def part5_firewall_verdict(routes: list[RouteClass]) -> None:
     print("  the selected-readout-map problem for the S3/Route-2 endpoint.")
 
 
+def part6_n5_execution_certificate() -> None:
+    """Print-only granularity record; registers no check and moves no counter."""
+    print("\n" + "=" * 72)
+    print("PART 6: N5 Execution Certificate")
+    print("=" * 72)
+
+    data = restricted_readout_data()
+    p_zero = admissible_readout_matrix(1.0, 0.0, -2.0, 2.0)
+    p_target = admissible_readout_matrix(1.0, 21.0 / 4.0, -2.0, 2.0)
+    shell_residual = float(np.max(np.abs(p_zero @ data.carrier_e_shell - p_target @ data.carrier_e_shell)))
+    entries_differing = int(np.count_nonzero(np.abs(p_target - p_zero) > EXACT_TOL))
+
+    print(
+        "per_element: exercised -- both readout comparisons in PART 3 are componentwise maxima rather than aggregate "
+        f"norms. The E-shell pair agrees to {shell_residual:.3e} against EXACT_TOL = {EXACT_TOL:.0e}, the E-center "
+        "pair is separated by exactly 7/8, and the whole separation is carried by one readout entry: the two "
+        f"matrices differ in exactly {entries_differing} of their eight slots, namely P[0,2] = rho_E."
+    )
+    print(
+        "per_site: checked and not executed -- this firewall never addresses a site. Both of its numerical inputs "
+        "arrive pre-contracted: restricted_readout_data() hands over four 4-component endpoint columns, and "
+        "tensor_endpoint_data() hands over slopes and intercepts already fitted across the two support endpoints. "
+        "The bypass being foreclosed is a readout-selection route, so no site-level quantity would be relevant even "
+        "if one were available."
+    )
+    print(
+        "per_mode: exercised -- the live endpoint data is reported and tested channel by channel: beta_T/alpha_T and "
+        "alpha_T/alpha_E on the T side against beta_E/alpha_E on the E side, and theorem_target_lands() is a joint "
+        "condition on q_T together with the T/E shell and center ratios. Attributing the residual gap to the "
+        "E-center entry, which is the whole point of the firewall, is only meaningful because the two bright modes "
+        "are carried separately throughout."
+    )
+    print(
+        "per_block: thin, and reported as thin -- the only block-against-block invariance actually driven by the "
+        "rho_E dial here is the E-side pair, with E-shell certified unchanged and E-center certified to move. "
+        "T-shell and T-center enter as printed ratios but are never put through the same dial in this file, so this "
+        "runner supports a block statement over two of the four endpoint blocks and no more."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no whole-system operator is built "
+        "anywhere in this file, so there is no finite-N quantity to certify and no limit is taken. The deepest "
+        "structure reached is the adapted seven-site basis sitting behind tensor_endpoint_data(), and it is already "
+        "reduced to endpoint slopes before it arrives. The route classification in PART 2 is likewise an inventory "
+        "of six documented routes, not a computation of any extended object."
+    )
+    print(
+        "  provenance: PART 4 consumes a seeded global optimizer (differential_evolution with seed=83, then "
+        "L-BFGS-B) via solve_anchored_surface(); no converged or fitted value from that stream is quoted above and "
+        "this certificate re-derives nothing from it."
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("  FRONTIER: Quark Up-Amplitude Scalar-Bypass Firewall")
@@ -343,6 +395,7 @@ def main() -> int:
     part3_exact_algebra_boundaries()
     part4_independent_scalar_support()
     part5_firewall_verdict(routes)
+    part6_n5_execution_certificate()
 
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

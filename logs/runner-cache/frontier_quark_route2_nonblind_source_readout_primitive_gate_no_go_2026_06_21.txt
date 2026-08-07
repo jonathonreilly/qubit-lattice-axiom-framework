@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.py
-runner_sha256: 50597428bcc026e5cfe8e97616fc0586b67eab9c80c2f9f01493aa246676a39a
+runner_sha256: 2f4cf50a32b5f013a216042b67f9367da2144c915b933e9ce51c8010399066b3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 Route-2 nonblind source/readout primitive admissibility gate
@@ -120,6 +120,13 @@ PASS: companion note avoids overclaim: parent closure
 PASS: companion note avoids overclaim: endpoint triple derivation
 PASS: companion note avoids overclaim: current-surface rho_E derivation
 PASS: companion note avoids overclaim: global future-primitive impossibility
+
+PART 6: N5 execution certificate
+per_element: two different kinds of element live in this file and the certificate keeps them apart -- the endpoint algebra genuinely evaluates one exact rational per sample, q_E=1+rho_E/6 and c_TE=-5/(3 q_E) at rho_E in {-5, 0, 1, 21/4, 7}, every value an exact Fraction; the candidate grid by contrast holds 48 hand-declared gate flags across 8 rows, which are recorded classifications rather than quantities this runner computes.
+per_site: the center/shell split is the axis the whole gate is defined on -- q_E is gamma_E(center)/gamma_E(shell) and it is the center step delta_A1=1/6 that makes it differ from 1, which the arithmetic resolves exactly at every sample; the per-candidate nonblindness column asking whether a surface distinguishes E-center from E-shell is by contrast a declared judgement per row, and is certified only at that strength here.
+per_mode: the E and T1 rows stay distinct at every step -- q_T=5/6 is granted, s_TE=alpha_T/alpha_E=-2 carries the cross-channel scale, and c_TE=s_TE*q_T/q_E is a genuine E-against-T ratio rather than a single-channel number; separately the color channel count gives F_adj(N_c=3)=8/9 and the runner does compute that -F_adj equals the target c_TE=-8/9, while still classifying that coincidence as an untyped bridge and not a derivation.
+per_block: what gets resolved at block granularity is inventory and nothing else -- 8 candidate families are swept against six gate conditions with one named defect string apiece and none clears, and ten named source files are swept for 29 required markers; both sweeps resolve presence and counts, and no field amplitude is evaluated for any block.
+lattice_wide: checked and not executed, and executing it would breach this runner's own premise list -- no lattice, volume or limit appears anywhere in the file, the one candidate carrying volume information is the measured calibration which is admitted as comparator only with exact infinite-volume identification left open, and A_min expressly forbids treating that finite-box calibration as an infinite-volume theorem.
 
 TOTAL: PASS=77, FAIL=0
 VERDICT: no named current-bank nonblind source/readout primitive satisfies the admissibility gate. A future positive route must supply a target-free typed E-center selector q_E=15/8 or the typed center bridge c_TE=-8/9.

@@ -294,6 +294,45 @@ check("CONTROL: at a->0 the candidates coincide on <P> AND variance "
       "actions agree as a->0; distinctness is purely a finite-spacing (physical) effect")
 
 # ===========================================================================
+# Part 6.  N5 execution certificate (reporting only; adds no check).
+# ===========================================================================
+print("=" * 78)
+print("Part 6  N5 execution certificate: what this runner resolves")
+print("=" * 78)
+print(
+    "per_element: checked - the group measures are assembled from individual "
+    "eigenvalue phases: the SU(3) Vandermonde weight is built as an explicit "
+    "product over the three pairs (i, j) of the eigenvalue phases a, b and "
+    "c = -(a + b), and the SU(2) integrands are written directly in the single "
+    "angle theta with Haar factor sin^2(theta), so every weight is formed entrywise."
+)
+print(
+    "per_site: checked and not executed - every number here is a single-plaquette "
+    "group integral at V = 1, as the SU(3) check label itself records; no lattice of "
+    "sites is instantiated, no neighbouring plaquette is coupled and no site-to-site "
+    "correlation is computed, so nothing in this scoping is resolved site by site."
+)
+print(
+    f"per_mode: checked - the heat-kernel weight is summed representation by "
+    f"representation, over the {int(2 * 60 + 1)} SU(2) irreps j = 0, 1/2, ..., 60 "
+    "each carrying its own dimension (2j + 1) and Casimir C_2(j) = j(j + 1), and the "
+    "series is confirmed against the closed form exp(-3t/8); the SU(3) side uses the "
+    f"single fundamental Casimir C_2 = {C2_fund:.6f} to give exp(-2/3)."
+)
+print(
+    f"per_block: checked - the coupling staircase is resolved rung by rung over the "
+    f"{len(betas)} doublings beta = {[int(b) for b in betas]}, each rung evaluating "
+    "the Wilson and heat-kernel plaquette separately and the spread compared against "
+    "its neighbour to establish strict monotone decrease, with the log-log slope "
+    "d ln(spread)/d ln(1/beta) = 1.952 read off across the rungs."
+)
+print(
+    "lattice_wide: checked and not executed - no volume, no infinite-volume limit and "
+    "no continuum limit is taken; the a -> 0 behaviour is inferred from a six-point "
+    "finite staircase at V = 1, and the runner's own scope paragraph states it claims "
+    "NO continuum limit, so the a -> 0 coincidence is exhibited as a trend rather "
+    "than certified as a limit."
+)
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print(f"runner_check_breakdown = {{A: {PASS}, B: 0, C: 0, D: 0, total_pass: {PASS}}}")

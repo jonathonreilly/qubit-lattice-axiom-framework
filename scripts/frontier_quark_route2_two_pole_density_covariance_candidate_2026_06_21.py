@@ -225,6 +225,41 @@ def part5_quote_anchors() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    """Print-only record; this runner adds no check and moves no counter."""
+    print("\nPART 6: N5 execution certificate")
+    print(
+        "per_element: checked and not executed -- no matrix, operator or state vector is constructed anywhere in "
+        "this file, so there is no element for anything to be resolved at. Every quantity it handles is a closed-form "
+        "Python Fraction: the declared w_E, w_T, Q_T, S_TE and the derived triple (q_E, rho_E, c_TE). None of them is "
+        "a component of a larger object, and no entrywise comparison happens at any point."
+    )
+    print(
+        "per_site: checked and not executed -- there is no lattice here, no site index and no site amplitude. The "
+        "argument sits entirely downstream of site structure, in the O_h channel-weight bookkeeping, and what it "
+        "prunes is which readout functional could exist at all rather than anything a site does. Claiming a "
+        "site-resolved result from this file would be false."
+    )
+    print(
+        "per_mode: checked and not executed -- the labels E and T are present, but only as the two rational weights "
+        f"w_E={W_E} and w_T={W_T} taken as given from the upstream O_h surface. Nothing in this runner computes, "
+        "projects, diagonalizes or otherwise separates a mode; their ratio is typed in as a constant, not found by "
+        "execution, so the E/T structure here is inventory carried through exact arithmetic."
+    )
+    print(
+        "per_block: checked and not executed -- no block decomposition is built. The only two-way split in the file "
+        "is the same E/T channel pair already described, carried as scalars, and no A1, T2, shell or center block is "
+        "instantiated, so there is no block-resolved statement to certify and reporting one would misdescribe the run."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no system of any size is instantiated, which means there is no "
+        "whole-lattice quantity here and equally no finite-N or thermodynamic-limit content to report. What this file "
+        "does execute is exact rational algebra on the endpoint chain, a 5-by-4 enumeration over divisions 0..4 and "
+        "response degree 1..4 of the normalize-then-power family, breadth-first reachability over two small typed "
+        "edge sets, and literal quote anchors in four current notes."
+    )
+
+
 def main() -> int:
     print("Route-2 two-pole channel-density covariance primitive candidate")
     print("Scope: conditional support; current surface does not supply channel-density covariance primitive")
@@ -233,6 +268,7 @@ def main() -> int:
     part3_two_pole_necessity_in_simple_pipeline()
     part4_reachability_firewall()
     part5_quote_anchors()
+    part6_n5_execution_certificate()
 
     total = PASS_COUNT + FAIL_COUNT
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={total}")

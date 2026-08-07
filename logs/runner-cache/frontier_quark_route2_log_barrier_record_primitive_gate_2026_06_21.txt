@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_log_barrier_record_primitive_gate_2026_06_21.py
-runner_sha256: 19c705aea269f1340991af47c1a8127a5a5be90dda97587861db1a7b1d27f69b
+runner_sha256: 9f5ebf6913504f1968a9c81a2e8bf1f34ab054e7e0474c0b873fc593d01f8490
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 Route-2 log-barrier Record primitive gate
@@ -66,6 +66,15 @@ PASS: checked current bank does not supply a Hessian-to-readout bridge phrase
 PASS: no observed endpoint value is used as a proof input
 PASS: current status is no-go for Record/log-det-alone derivation
 PASS: conditional target is now precise: determinant quotient plus w-Hessian E-center bridge
+
+----------------------------------------------------------------------------------------
+N5 execution certificate
+----------------------------------------------------------------------------------------
+per_element: two channel-level curvature coefficients are actually evaluated, and they are what the whole gate turns on -- the pure log barrier gives C_E=9 and C_T=4, the epsilon=1 counterterm shifts each by 2*epsilon to C_E=11 and C_T=6, and every one of these is an exact Fraction obtained from 1/w^2 rather than from any numerical differentiation.
+per_site: checked and not executed, and the reason is specific to this file -- the note places the channel weights on the seven-site O_h star, but the runner receives them already reduced to the two numbers w_E=1/3 and w_T1=1/2 and never indexes the center or the six shell sites, so no site-resolved curvature or lift is computed here.
+per_mode: real, and the only granularity at which this gate's arithmetic actually moves -- the E and T1 channel modes carry separate curvatures whose ratio is lambda=9/4 under the pure barrier and lambda=11/6 once the additive counterterm is switched on, which drags the endpoint from rho_E=21/4 to rho_E=19/6 and is exactly the reason additivity alone cannot select the second-dual law.
+per_block: executed literally, as record additivity over disjoint blocks -- the channel weight list is split into the supplied block (1/3, 1/2) and the disjoint block (1/4), and the counterterm is confirmed additive across that split with both sides equal to 61/144; that block-level additivity is precisely what fails to pin the barrier, since the counterterm survives it untouched.
+lattice_wide: not executed, and this certificate declines to imply otherwise -- the countermodel is exhibited at the two exact points epsilon=0 and epsilon=1 rather than proved over the whole counterterm family, no sum or limit is taken over the star or over any extended lattice, and the global rule that would settle the matter, a determinant quotient excluding additive channel counterterms, is the note's own gap.
 
 ----------------------------------------------------------------------------------------
 Summary

@@ -491,9 +491,9 @@ def n5_execution_certificate() -> None:
         "additive residual, which is the concrete form of the obstruction."
     )
     print(
-        "lattice_wide: checked and not executed, and the missing global object is "
-        "this note's own obstruction. Nothing global is constructed - no volume, no "
-        "sequence, no limit - and the note's own statement of what would close the "
+        "lattice_wide: checked and not executed. Nothing of global extent is built "
+        "here at all - no volume, no sequence, no limit - and the note's statement "
+        "of what would close the "
         "gap is a retained primitive that supplies scalar block-additivity directly. "
         "That primitive is by definition absent, so no execution of this runner "
         "could exhibit it; what the runner can and does exhibit is the "

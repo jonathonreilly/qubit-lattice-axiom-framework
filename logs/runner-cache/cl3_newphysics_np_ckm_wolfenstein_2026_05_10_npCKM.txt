@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_newphysics_np_ckm_wolfenstein_2026_05_10_npCKM.py
-runner_sha256: 8cb35b87e89dc998a7cf791f07d6f94216561bb7a432ac9b845f0e64eb3e63a7
+runner_sha256: 0e1a966c4775a4e252931adfe2f92241b4a97eb52c7c7ad0444688644e2eaa37
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.62
+elapsed_sec: 1.52
 status: ok
 ----- stdout -----
 
@@ -113,7 +113,7 @@ lattice_wide: checked and not executed as a global proof. There is no lattice; a
   scope: the grid comment above Test 6 describes 30 x 30 x 30 x 30 = 810000 combinations, but the grids are built with linspace(..., 12), so the sweep actually visits 20736 points. The check's own detail string reports that number correctly; only the comment is stale.
   scope: Test 2 carries dead code - a double loop whose body is a bare pass, and a nontrivial_offdiag value that is computed and never used - and V_ud_pred in Test 4 is computed but never reported. None of this affects any check.
   scope: the generation assignment relies on eigh returning eigenvalues in ascending order to map (lightest, middle, heaviest) onto (gen1, gen2, gen3). That ordering is never tested for degeneracy, so at an accidentally degenerate spectrum the eigenvector assignment would be ambiguous; the sampled parameter ranges avoid this but the runner does not check it.
-  scope: Tests 3 and 7 draw from seeded streams (20260510 and 20260513). Two back-to-back executions of this runner are byte-identical, and no sampled quantity is quoted anywhere in the lines above.
+  scope: the random legs of Tests 3 and 7 come from two fixed seeds, 20260510 and 20260513. Running this file twice in succession reproduces its output byte for byte, and the certificate above deliberately quotes nothing that either stream produced - the counts and constants it cites are all fixed by the source text.
 
 ========================================================================
 TOTAL: PASS=24, FAIL=0

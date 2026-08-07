@@ -201,6 +201,49 @@ def lower_bank_text() -> str:
     return "\n".join(note_text(name) for name in AUTHORITY_BANK).lower()
 
 
+def n5_execution_certificate(weights: SchurWeights, rung_labels: tuple[str, ...]) -> None:
+    """N5 execution certificate: print-only; no check is defined or modified."""
+    print("\nPART 5: N5 execution certificate")
+    print(
+        "per_element: every entry that carries the arithmetic is written out singly -- "
+        "the antipodal permutation is filled from the explicit index pairing 0<->1, "
+        "2<->3, 4<->5 so exactly six of its thirty-six cells are 1, the all-ones "
+        f"projector holds 1/6 in all thirty-six cells, and the three Schur weights "
+        f"w_A1={weights.w_a1}, w_E={weights.w_e}, w_T={weights.w_t} are single diagonal "
+        "cells P_X[0][0], never traces or column sums."
+    )
+    print(
+        "per_site: checked and not executed -- the six indices here are antipodally "
+        "paired arm directions belonging to one octahedral center, so no displacement, "
+        "coordinate or neighbor label exists to hang a site-resolved claim on; the "
+        "remaining three parts of this runner scan marker strings across nine authority "
+        "documents and one source note, which are equally site-free objects."
+    )
+    print(
+        f"per_mode: the O_h channels are separated and normalized independently -- A1, E "
+        f"and T1 each receive their own projector, the same-domain leverage is "
+        f"w_T/w_E={weights.w_t / weights.w_e}, and the lift law q_X proportional to "
+        "w_X^(-p) is applied per channel so that lambda=(w_E/w_T)^(-p); that per-channel "
+        "application is the only place p enters the endpoint at all."
+    )
+    print(
+        "per_block: resolved on two independent block structures -- first the projector "
+        f"blocks of ranks A1={weights.rank_a1}, E={weights.rank_e}, T={weights.rank_t} "
+        f"which exhaust the six arms, and second the {len(rung_labels)} rungs of the "
+        "dualization staircase, where zero-dual gives (1, 5/6, -1, -2), source-only and "
+        "readout-only both give (3/2, 5/4, 3/2, -4/3) -- the degeneracy that fixes "
+        "one-sided dualization at p=1 -- and two-sided gives (9/4, 15/8, 21/4, -8/9)."
+    )
+    print(
+        "lattice_wide: checked and not executed -- there is no box, no site count and no "
+        f"limit anywhere in this file; the nearest whole-system statement it makes is an "
+        f"absence inventory, in which {len(ABSENT_DUALIZATION_MARKERS)} dualization "
+        "markers are each confirmed missing from the concatenated bank, which counts "
+        "strings rather than evaluating any amplitude, and the two-sided inverse-Schur "
+        "source/readout law that would be the global theorem is exactly what is absent."
+    )
+
+
 def main() -> int:
     print("Route-2 current-bank canonical-dualization gate")
     print("Status: no-go for current-bank canonical-dual shortcut; not an audit verdict.")
@@ -299,6 +342,8 @@ def main() -> int:
     )
     for label, marker in banned_markers:
         check(f"note avoids overclaim marker: {label}", marker not in note)
+
+    n5_execution_certificate(weights, tuple(expected))
 
     print("\nTOTAL: PASS=%d, FAIL=%d" % (PASS, FAIL))
     if FAIL:

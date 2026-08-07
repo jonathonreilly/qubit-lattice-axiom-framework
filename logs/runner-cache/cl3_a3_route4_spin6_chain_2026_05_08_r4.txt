@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_route4_spin6_chain_2026_05_08_r4.py
-runner_sha256: 7b338bf627b962cff5c0efadd700e15cde0e96ab715b12b15365dd2a5c09753e
+runner_sha256: 649e4bd6429b4c3cafe8d19205b0e55d3492fc21d958b99b8a085c86692b6b58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 
@@ -59,7 +59,7 @@ V6.  Branching of 6 of SU(4) under SU(3) x U(1)
 V7.  Action of SU(3) x U(1)_(B-L) on H_{hw=1} = C^3
 ========================================================================================
   [PASS] V7.1 U(1)_(B-L) acts as constant +1/3 on three quark corners  (all three corners share U(1) charge)
-  [PASS] V7.2 SU(3) on quark 3-subspace is irreducible (Schur)  (random traceless M has nonzero commutator: 23.4680)
+  [PASS] V7.2 SU(3) on quark 3-subspace is irreducible (Schur)  (random traceless M has nonzero commutator: 20.7230)
 
 ========================================================================================
 V8.  CRITICAL: Do three corners carry distinguishing U(1) charges?
@@ -101,6 +101,16 @@ V13.  Outer Z_2 involution on Spin(6) -- conjugate-rep exchange
 ========================================================================================
   [PASS] V13.1 Z_2 outer maps U(1)_(B-L) to -U(1)_(B-L)  (swaps quark/antiquark charges)
   [PASS] V13.2 After Z_2 outer, three corners still share charge (=-1/3)  (diag: [-0.333333 -0.333333 -0.333333])
+
+========================================================================================
+V14.  N5 execution certificate -- what this runner resolves
+========================================================================================
+per_element: checked - the chain is validated entry by entry on explicit matrices: the six Cl(6) generators on C^8 are contracted pairwise against 2 delta_ij, the 15 su(4) generators are checked Hermitian and traceless and their full Gram matrix Tr(T_a T_b) is matched to (1/2) delta_ab, and the B-L charges are read straight off the diagonal as [0.333333, 0.333333, 0.333333, -1.0].
+per_site: checked and not executed - exactly two copies of the Cl(3) = M_2(C) Qubit one-site algebra are instantiated and tensored into Cl(6) on C^8, but the two copies are never given lattice positions, never made to differ, and no third site or hopping term is built, so no quantity in this runner varies from one site of Z^3 to another.
+per_mode: checked - the weight content is resolved one weight at a time: the Cartan element i H_1 is split into its (-1/2)^4 and (+1/2)^4 eigenvalues, the 4 of SU(4) branches to the individual charges (1/3, 1/3, 1/3, -1), the 6 branches to (-2/3)^3 and (+2/3)^3, and C_3 is diagonalized to the distinct eigenvalues {1, omega, omega-bar} spanning the trivial plus 2-dimensional E rep.
+per_block: checked - the branching is executed block by block: SU(4)'s 15 generators separate into 8 SU(3) plus 6 off-diagonal plus 1 hypercharge, the 4 splits into the quark 3-block and the lepton 1-block with all eight SU(3) generators annihilating the singlet, the 6 splits into 3-bar and 3 with lambda_3 of rank 4, and the SU(3) Casimir is flat at [1.333333, 1.333333, 1.333333] across the quark block.
+lattice_wide: checked and not executed - no lattice of any extent is built and no volume or continuum limit is taken; the C_3[111] whose corner-blindness is the entire question enters only as a 3x3 permutation sitting inside SU(3), and V12.3 records the matching negative result that C_3[111] of the Z^3 substrate has no lift to a Spin(6) outer automorphism, whose outer group is only Z_2.
+  note: V7.2's Schur witness is an unseeded random traceless M, so its commutator magnitude differs run to run and is deliberately not quoted above; the PASS/FAIL totals do not depend on it.
 
 ========================================================================================
 SUMMARY

@@ -835,6 +835,57 @@ check("V13.2 After Z_2 outer, three corners still share charge (=-1/3)",
 # Therefore Z_2 outer does NOT distinguish corners.
 
 # ---------------------------------------------------------------------------
+# V14. N5 execution certificate (reporting only; adds no check)
+# ---------------------------------------------------------------------------
+section("V14.  N5 execution certificate -- what this runner resolves")
+
+_bl_diag = [round(float(x), 6) for x in np.diag(U_BL).real]
+_casimir_diag = [round(float(x), 6) for x in np.diag(quark_proj.T @ casimir_ops @ quark_proj).real]
+
+print(
+    "per_element: checked - the chain is validated entry by entry on explicit "
+    "matrices: the six Cl(6) generators on C^8 are contracted pairwise against "
+    "2 delta_ij, the 15 su(4) generators are checked Hermitian and traceless and "
+    "their full Gram matrix Tr(T_a T_b) is matched to (1/2) delta_ab, and the "
+    f"B-L charges are read straight off the diagonal as {_bl_diag}."
+)
+print(
+    "per_site: checked and not executed - exactly two copies of the Cl(3) = M_2(C) "
+    "Qubit one-site algebra are instantiated and tensored into Cl(6) on C^8, but the "
+    "two copies are never given lattice positions, never made to differ, and no third "
+    "site or hopping term is built, so no quantity in this runner varies from one "
+    "site of Z^3 to another."
+)
+print(
+    "per_mode: checked - the weight content is resolved one weight at a time: the "
+    "Cartan element i H_1 is split into its (-1/2)^4 and (+1/2)^4 eigenvalues, the 4 "
+    "of SU(4) branches to the individual charges (1/3, 1/3, 1/3, -1), the 6 branches "
+    "to (-2/3)^3 and (+2/3)^3, and C_3 is diagonalized to the distinct eigenvalues "
+    "{1, omega, omega-bar} spanning the trivial plus 2-dimensional E rep."
+)
+print(
+    "per_block: checked - the branching is executed block by block: SU(4)'s 15 "
+    "generators separate into 8 SU(3) plus 6 off-diagonal plus 1 hypercharge, the 4 "
+    "splits into the quark 3-block and the lepton 1-block with all eight SU(3) "
+    "generators annihilating the singlet, the 6 splits into 3-bar and 3 with lambda_3 "
+    f"of rank 4, and the SU(3) Casimir is flat at {_casimir_diag} "
+    "across the quark block."
+)
+print(
+    "lattice_wide: checked and not executed - no lattice of any extent is built and "
+    "no volume or continuum limit is taken; the C_3[111] whose corner-blindness is "
+    "the entire question enters only as a 3x3 permutation sitting inside SU(3), and "
+    "V12.3 records the matching negative result that C_3[111] of the Z^3 substrate "
+    "has no lift to a Spin(6) outer automorphism, whose outer group is only Z_2."
+)
+print(
+    "  note: V7.2's Schur witness is an unseeded random traceless M, so its "
+    "commutator magnitude differs run to run and is deliberately not quoted above; "
+    "the PASS/FAIL totals do not depend on it."
+)
+
+
+# ---------------------------------------------------------------------------
 # Final summary
 # ---------------------------------------------------------------------------
 section("SUMMARY")

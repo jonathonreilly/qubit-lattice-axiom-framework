@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py
-runner_sha256: 8b84527c3305968fdb63d7fe1a71e18e9e4b0d42db2474bdcac1570aa48ccc02
+runner_sha256: 29bf21a2dfdf55731f963bdf9909e08990b5b5ed63afceacd2133b8486cfb59c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 Observable-principle T1-d determinant-readout independence no-go
@@ -32,6 +32,15 @@ Observable-principle T1-d determinant-readout independence no-go
 [PASS] new note forbids treating T1-d as Record-derived
 [PASS] new note carries a source-visible no-go discipline gate
 [PASS] new note does not claim an audit-ratified retained status
+== N5 execution certificate: what this runner resolves ==
+per_element: resolved with amplitudes, and the whole no-go is elementwise. Each source is a finite positive diagonal block written entry by entry - diag(4, 1), diag(2, 2), diag(3, 5) - and the readout is assembled directly from those entries as their product and their sum. The separating witness is exactly an element-level one: diag(4, 1) and diag(2, 2) share the determinant 4 but have traces 5 and 4, so the two readouts differ by precisely epsilon. The smoothness leg then differentiates with respect to the individual entries, returning dW/dx = 1/x + epsilon and dW/dy = 1/y + epsilon.
+per_site: checked and not executed. No lattice is instantiated: the diagonal entries are source slots without coordinates, and the disjoint blocks of the record clause are the abstract index sets {1, 2} and {3, 4} with no adjacency, no distance and no volume attached. Nothing in this runner is evaluated at a position.
+per_mode: checked and supplied rather than resolved, and the reason is worth stating. Every source here is diagonal, so its entries are already its eigenvalues and the per-element and per-mode granularities coincide by construction; the spectrum is therefore an input to this runner, not an output of it. No diagonalization, eigenvector, dispersion or spectral weight is computed anywhere, because on this substrate none is needed.
+per_block: resolved with amplitudes, and it is the axis the additivity clause lives on. The direct sum is formed by concatenating the entry tuples, and additivity is then certified separately for the log-determinant part, the trace part and the full readout, alongside determinant multiplicativity det(A (+) C) = 60 = 4 x 15. The dimension-labelled variant sharpens the same axis by contrasting a one-entry block against a two-entry block of equal determinant 4, which differ by epsilon in the block-dimension term alone.
+lattice_wide: checked and not executed, and the missing global derivation is the note's own boundary. No volume, sequence or limit is taken; the entire argument runs on blocks of one and two entries. T1-d is declared by the parent as a bridge premise that is not derivable from the minimal axioms, and this runner's role is to supply countermodels against its being forced - it exhibits what does not follow, and cannot exhibit the derivation that is absent.
+  scope: the second independence check in T2 cannot fail as written. It asks whether c log(4) - log(4) - epsilon simplifies to zero while c and epsilon are free symbols, so the inequality is automatic; the substantive separation is carried entirely by the equal-determinant witness of T1, which is what the check's own detail string points at.
+  scope: the disjoint-record section is not a computation. It builds a hand-written dictionary that maps both blocks to the same record label and then reports set-disjointness and string inequality on it. That does establish the intended point - the implication is not a truth of pure logic - but it evaluates no source, no determinant and no readout.
+  scope: 7 of the 20 checks are substring scans over the parent note, the minimal-axiom memo and this note, certifying guardrail prose rather than any quantity. The countermodel family is carried symbolically in a nonzero epsilon and never instantiated numerically, which is a strength of the argument rather than a gap. The runner is fully deterministic: no RNG stream and no optimizer, exact SymPy throughout.
 ==============================================================================
 TOTAL: PASS=20 FAIL=0
 ==============================================================================

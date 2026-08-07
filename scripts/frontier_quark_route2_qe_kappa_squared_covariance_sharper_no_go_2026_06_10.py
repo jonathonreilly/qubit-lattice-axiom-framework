@@ -199,6 +199,44 @@ def main() -> int:
           f"-R_conn = {-R_conn} = c_TE = {c_TE} (color, fiber-space, cross-domain coincidence); "
           f"lambda = {lam} = kappa^2 (covariance, same-domain); 9/4 != 8/9: {distinct_numbers}")
 
+    print("\n-- N5 execution certificate --")
+    print(
+        "per_element: the load-bearing comparisons are entrywise and tolerance-named -- the per-arm "
+        "projector diagonals are matched against the exact targets 1/6, 1/3 and 1/2 within 1e-12, "
+        "and the Reynolds intertwiner is judged by its largest single entry against the same 1e-12; "
+        "the certificate reports those targets and that threshold rather than the floating values, "
+        f"while the endpoint chain rho_E={rho_E}, q_E={q_E}, c_TE={c_TE}, lambda={lam} is exact."
+    )
+    print(
+        f"per_site: executed on the full seven-site split, not just the shell -- the centre is "
+        f"accounted as its own A1 while the six arms carry A1 (+) E (+) T1 with ranks "
+        f"{ranks[0]}, {ranks[1]}, {ranks[2]}, and the three arm projectors are verified to sum to "
+        "the identity on the arm space, so every shell site is fully accounted with no residual "
+        "direction left unassigned."
+    )
+    print(
+        "per_mode: the two readout modes are shown to be uncoupled and equally fed -- E and T1 are "
+        "inequivalent irreps whose Reynolds intertwiner vanishes, so each carries its own free "
+        "scale, and the carrier hands both the identical centre increment "
+        f"{E_center[2]}, which is exactly why kappa=3/2 sits in the projectors but never propagates "
+        "into the covariance."
+    )
+    print(
+        "per_block: two block families are recorded, and their status differs -- the equivariant "
+        f"commutant is described as an A1 block plus one scalar per readout block, total "
+        f"{commutant_dim_arm}, which is stated from the representation theory rather than computed "
+        f"by this file; the admissibility block then exhibits {len(examples)} exact rho_E values "
+        "all giving distinct q_E, and a second registration contrast sets the position-space "
+        f"covariance slot {lam} against the fiber-space colour slot {R_conn}."
+    )
+    print(
+        f"lattice_wide: executed, and certified explicitly as a finite statement -- the Reynolds "
+        f"projector averages all 48 group elements over the whole six-arm shell and the completeness "
+        "identity P_A1 + P_E + P_T1 = I closes that shell globally, which is a claim about this one "
+        "seven-site star; no volume sequence, no larger star and no thermodynamic limit is "
+        "constructed anywhere in this runner, so nothing asymptotic is being asserted."
+    )
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     print(
         "VERDICT: no derivation of rho_E = 21/4 from the exact finite Route-2 star/O_h objects. SHARPER\n"

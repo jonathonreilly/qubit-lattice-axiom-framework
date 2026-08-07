@@ -233,6 +233,88 @@ def test_mu_zero_and_mu_nonzero_are_both_consistent_extensions() -> None:
     print("  retained derivation stack.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    s_unique = build_dirac_majorana_seed()
+    seed_dim = s_unique.shape[0]
+    internal_dim = 16
+    dirac_dim = seed_dim // internal_dim
+    rank = int(np.linalg.matrix_rank(s_unique, tol=1e-10))
+    k = build_normal_kernel(scale=1.2)
+    signature = tuple(round(float(v), 12) for v in np.linalg.eigvalsh(k))
+
+    print(
+        "per_element: resolved with amplitudes. The Dirac algebra is assembled 2 x 2 "
+        "block by 2 x 2 block into four 4 x 4 gammas, with g5 and C = i g2 g0 formed "
+        "as explicit products; the internal factor is a 16 x 16 matrix carrying "
+        "exactly one nonzero entry, [15, 15] = 1.0; the Kronecker product places "
+        f"C P_R into a {seed_dim} x {seed_dim} seed whose support is then located by "
+        f"scanning all {seed_dim * seed_dim} entries with np.nonzero. The normal "
+        "kernel is written entry by entry (0.4, 0.2 - 0.1j, 0.05 + 0.03j, -0.3, 0.15, "
+        "0.2, -0.07j, 0.1) and the Pfaffian routine reads matrix[0, j] one at a time."
+    )
+    print(
+        "per_site: checked and not executed. The note frames this as the retained "
+        "Cl(3)-on-Z^3 stack, but no Z^3 lattice is instantiated anywhere in this "
+        f"runner: the {internal_dim}-dimensional factor is a slot inventory with a "
+        f"single occupied index and the {dirac_dim}-dimensional factor is a spinor "
+        "index, and neither carries a coordinate, a neighbour relation or a volume."
+    )
+    print(
+        "per_mode: resolved, and it supplies the comparison object of Part 3. "
+        "eigvalsh returns the full four-eigenvalue normal signature of the retained "
+        f"kernel at scale 1.2, {list(signature)}, held to 12 decimals, and "
+        f"matrix_rank resolves the {seed_dim} x {seed_dim} seed to rank {rank}, that "
+        "is to exactly one Majorana pair. No eigenvector, and no eigenmode of the "
+        "pairing seed itself, is ever computed."
+    )
+    print(
+        "per_block: resolved as location and support rather than as a coupled "
+        "decomposition. The seed is a Kronecker product of a Dirac block with an "
+        "internal block, the chirality projector (1 + g5)/2 is itself a block "
+        "projector, and the support scan certifies that the occupied internal row is "
+        f"exactly one of the {internal_dim}, index 15, the nu_R slot. The normal "
+        "kernel and the pairing seed are never assembled into a common Nambu matrix, "
+        "so no inter-block coupling is ever formed, and the block_diag helper defined "
+        "in this file is never called."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global theorem is "
+        "exactly what this note is about. The claim is that the retained stack does "
+        "not force the Pfaffian sector, so the forcing theorem a stack-wide argument "
+        "would have to supply is precisely the absent object; execution here exhibits "
+        "two admissible extensions side by side rather than quantifying over the "
+        "stack, and no volume, no sequence and no limit of any kind is taken."
+    )
+    print(
+        "  scope: the determinant-blindness comparisons are not computed. In Part 2 "
+        "the loop appends the same precomputed scalar det_obs three times, so a zero "
+        "spread follows from repetition; in Part 3 both signatures are the identical "
+        "expression evaluated on the identical kernel, so those two checks compare a "
+        "value with itself. The substantive content is structural - the retained data "
+        "never encode Delta at all - and the source comment already says so."
+    )
+    print(
+        "  scope: the Pfaffian side of Parts 2 and 3 is a stand-in, not the real "
+        "family. What is probed is the 2 x 2 canonical_j(2.0 + mu) and "
+        "canonical_j(2.3 + mu), whose Pfaffian is just the single entry 2.0 + mu "
+        f"(resp. 2.3 + mu), so the reported |Pf1 - Pf0| is simply mu1 - mu0. The "
+        f"Pfaffian of the actual {seed_dim} x {seed_dim} family mu * S_unique is "
+        "never computed anywhere in this runner."
+    )
+    print(
+        "  scope: fully deterministic - no RNG stream and no optimizer is used, so "
+        "every quantity above follows from literal constants in the source."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: CURRENT PFAFFIAN AXIOM BOUNDARY")
@@ -254,6 +336,7 @@ def main() -> int:
     test_current_surface_fixes_only_the_channel_not_the_amplitude()
     test_current_determinant_data_are_blind_to_pfaffian_amplitude()
     test_mu_zero_and_mu_nonzero_are_both_consistent_extensions()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

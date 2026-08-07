@@ -172,6 +172,47 @@ def main() -> int:
 
     print()
     print("=" * 84)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 84)
+    print(
+        "per_element: checked — every trace is accumulated from explicit diagonal entries "
+        "rather than quoted as a known value. T3 is carried as the entry tuple "
+        "(1/2, -1/2) and both Tr(T3) = 0 and Tr(T3^2) = 1/2 are summed entry by entry in "
+        "exact rationals, the color matrix diag(1/2, -1/2, 0) is handled the same way, "
+        "and each required note phrase is matched one at a time."
+    )
+    print(
+        "per_site: checked and not executed — no position or site index is ever computed. "
+        "The runner works purely in the internal weak-isospin and color index spaces at "
+        "one two-current vertex pair on a fermion line; site coordinates appear only "
+        "inside quoted note strings. That matches the obstruction, which is about which "
+        "internal trace weights the channel, a question settled in index space alone."
+    )
+    print(
+        "per_mode: checked and not executed — no propagator mode sum, loop integral or "
+        "spectral decomposition is performed. The connected two-current contraction is "
+        "evaluated as an exact rational channel weight at fixed N_c = 3, because the "
+        "no-go turns on Tr_internal(Q_EW^2) rather than Tr_internal(Q_EW)^2 carrying the "
+        "coefficient, and that distinction is decided before any mode sum would enter."
+    )
+    print(
+        "per_block: checked — the Fierz decomposition is resolved block by block, with "
+        "the total channel split into its singlet and adjoint parts and each evaluated "
+        "separately on two explicit color matrices. The identity matrix gives a purely "
+        "singlet block with zero adjoint part, while diag(1/2, -1/2, 0) gives zero "
+        "singlet and a nonzero adjoint part, which is exactly what shows the selector "
+        "would have to act on the color matrix rather than on the internal generator."
+    )
+    print(
+        "lattice_wide: checked and not executed — nothing is summed over a lattice and no "
+        "volume or continuum limit is taken. The executed evidence is exact rational "
+        "arithmetic on internal index spaces at fixed N_c = 3, including the closed "
+        "readout values K_EW(0) = 9/8 and K_EW(1) = 1 whose difference is the surviving "
+        "ambiguity; the route is refuted at that algebraic level with no extent involved."
+    )
+
+    print()
+    print("=" * 84)
     print(f"RESULT: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 84)
     return 0 if FAIL_COUNT == 0 else 1

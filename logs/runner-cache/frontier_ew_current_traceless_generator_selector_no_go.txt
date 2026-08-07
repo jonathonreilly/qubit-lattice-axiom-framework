@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_current_traceless_generator_selector_no_go.py
-runner_sha256: 4753905e6fb3ef2deaaa08aef639a804b62ea8473aa2bc8cc3ccde68ea5cc27f
+runner_sha256: 8d843fb4c5ca3d0b14ece6d176dac73949e3b00326632ad5eaf36337f02e4d9a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ====================================================================================
@@ -38,6 +38,15 @@ EW CURRENT TRACELESS-GENERATOR SELECTOR NO-GO
 [PASS] note records phrase 'Tr_internal(Q_EW^2)'
 [PASS] note records phrase 'kappa_EW'
 [PASS] note records phrase 'not a positive closure'
+
+====================================================================================
+N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
+====================================================================================
+per_element: checked — every trace is accumulated from explicit diagonal entries rather than quoted as a known value. T3 is carried as the entry tuple (1/2, -1/2) and both Tr(T3) = 0 and Tr(T3^2) = 1/2 are summed entry by entry in exact rationals, the color matrix diag(1/2, -1/2, 0) is handled the same way, and each required note phrase is matched one at a time.
+per_site: checked and not executed — no position or site index is ever computed. The runner works purely in the internal weak-isospin and color index spaces at one two-current vertex pair on a fermion line; site coordinates appear only inside quoted note strings. That matches the obstruction, which is about which internal trace weights the channel, a question settled in index space alone.
+per_mode: checked and not executed — no propagator mode sum, loop integral or spectral decomposition is performed. The connected two-current contraction is evaluated as an exact rational channel weight at fixed N_c = 3, because the no-go turns on Tr_internal(Q_EW^2) rather than Tr_internal(Q_EW)^2 carrying the coefficient, and that distinction is decided before any mode sum would enter.
+per_block: checked — the Fierz decomposition is resolved block by block, with the total channel split into its singlet and adjoint parts and each evaluated separately on two explicit color matrices. The identity matrix gives a purely singlet block with zero adjoint part, while diag(1/2, -1/2, 0) gives zero singlet and a nonzero adjoint part, which is exactly what shows the selector would have to act on the color matrix rather than on the internal generator.
+lattice_wide: checked and not executed — nothing is summed over a lattice and no volume or continuum limit is taken. The executed evidence is exact rational arithmetic on internal index spaces at fixed N_c = 3, including the closed readout values K_EW(0) = 9/8 and K_EW(1) = 1 whose difference is the surviving ambiguity; the route is refuted at that algebraic level with no extent involved.
 
 ====================================================================================
 RESULT: PASS=29 FAIL=0

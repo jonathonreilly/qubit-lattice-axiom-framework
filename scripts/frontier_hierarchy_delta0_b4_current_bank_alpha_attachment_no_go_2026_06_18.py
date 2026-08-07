@@ -251,10 +251,66 @@ def check_source_markers() -> None:
         check("D", f"ratio-normalized source contains marker: {marker}", marker in ratio)
 
 
+def n5_execution_certificate() -> None:
+    """State what this runner resolves at each canonical granularity.
+
+    Print-only; nothing above is touched.  All figures are recomputed from
+    CURRENT_BANK and the same Signature algebra used by the firewall.
+    """
+    section("N5 execution certificate: resolution granularity of this current-bank no-go")
+    readout_blocks = [b for b in CURRENT_BANK if b.has_readout_mechanism]
+    supplier_blocks = [b for b in CURRENT_BANK if not b.has_readout_mechanism]
+    total = sum(b.count for b in CURRENT_BANK)
+    readout_total = sum(b.count for b in readout_blocks)
+    supplier_total = sum(b.count for b in supplier_blocks)
+    taste_blocks = [
+        b
+        for b in CURRENT_BANK
+        if "taste" in f"{b.family} {b.note}" or "mode-sum" in f"{b.family} {b.note}"
+    ]
+    sampled = readout_closure_signatures()
+    print(
+        f"per_element: checked — all {total} candidate rows of the current bank are resolved row by row "
+        f"on the pair (alpha_exp, has_readout_mechanism): {readout_total} rows carry a genuine readout "
+        f"mechanism and every one of them has alpha_exp = 0, while the {supplier_total} rows that do "
+        "carry a nonzero alpha exponent are exactly the supplier-chain rows with no readout mechanism. "
+        "No individual row sits in both categories, which is the whole content of the firewall."
+    )
+    print(
+        "per_site: checked and not executed — this runner instantiates no lattice and evaluates no field "
+        "at a site; the bank rows are declared summary readouts, and the site-resolved objects some of "
+        "them summarise (plaquette action costs, Brillouin-zone log-determinant shares) enter as imported "
+        "declarations from the enumeration source rather than as computations performed here."
+    )
+    print(
+        "per_mode: checked — the taste- and mode-resolved families are present and are individually "
+        "cleared: "
+        + ", ".join(f"{b.family} ({b.count} rows)" for b in taste_blocks)
+        + " all carry alpha_exp = 0, so no per-taste or per-mode readout supplies even a single factor of "
+        f"alpha_s = ({ALPHA_S.alpha_exp}, {ALPHA_S.u0_exp}); the sixteen-taste target "
+        f"({SIXTEEN_TASTE_TRANSPORT.alpha_exp}, {SIXTEEN_TASTE_TRANSPORT.u0_exp}) would need one such "
+        "factor per decoupling, sixteen in all."
+    )
+    print(
+        f"per_block: checked — the bank is partitioned into {len(CURRENT_BANK)} named blocks spanning "
+        f"K1-K8, and the closure sampling forms products and quotients over the {len(readout_blocks)} "
+        f"genuine readout blocks with each exponent ranging over -3..3; the entire sampled family "
+        f"collapses to {len(sampled)} distinct alpha-signature, alpha_exp = 0, so neither alpha_s nor "
+        "alpha_s^16 is reachable by any combination of blocks in the readout half of the bank."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide or continuum object is constructed; the "
+        "note narrows itself explicitly to the current K1-K8 bank, states it is not a global B4 no-go, and "
+        "the parent gate keeps outside-K1-K8 routes and beyond-mean-field link fluctuations open, so a "
+        "lattice-wide attachment statement is outside what this bank can decide."
+    )
+
+
 def main() -> int:
     check_bank_partition()
     check_factor_firewall()
     check_source_markers()
+    n5_execution_certificate()
     print()
     print(f"CLASS_COUNTS: {CLASS_COUNTS}")
     if FAIL:

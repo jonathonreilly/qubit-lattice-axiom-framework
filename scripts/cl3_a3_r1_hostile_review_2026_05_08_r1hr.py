@@ -649,6 +649,76 @@ def hr1_8_cluster_decomp_uniqueness():
     return results
 
 
+def n5_execution_certificate():
+    """N5 execution certificate — granularity at which this review resolves.
+
+    Reports only; adds no attack vector and no PASS/FAIL item.
+    """
+    print("N5 execution certificate — what this hostile review resolves")
+
+    # per_element / per_mode witnesses (recomputed, no new checks)
+    Y_bare = make_circulant(1.0, 0.5 + 0.3j)
+    Z_axis = np.diag([1.05, 1.10, 1.15])
+    Y_aniso = Z_axis @ Y_bare @ Z_axis
+    aniso_comm = np.max(np.abs(Y_aniso @ U_C3 - U_C3 @ Y_aniso))
+    Twist_aniso = np.diag([OMEGA, 1.0, 1.0])
+    twist_comm = np.max(np.abs(Twist_aniso @ U_C3 - U_C3 @ Twist_aniso))
+
+    a, b = 0.7, 0.3 + 0.4j
+    Y = make_circulant(a, b)
+    Y_in_F = DFT3.conj().T @ Y @ DFT3
+    gamma_per_eig = [1.05, 1.10, 1.15]
+    Y_in_F_renorm = np.diag([gamma_per_eig[k] * Y_in_F[k, k] for k in range(3)])
+    Y_renormed = DFT3 @ Y_in_F_renorm @ DFT3.conj().T
+    anom_comm = np.max(np.abs(Y_renormed @ U_C3 - U_C3 @ Y_renormed))
+    br_closed = sorted(
+        float(a + 2 * np.abs(b) * np.cos(np.angle(b) + 2 * np.pi * k / 3.0))
+        for k in range(3)
+    )
+
+    # lattice witnesses
+    N = 5
+    n_sites = (2 * N + 1) ** 3
+
+    print(
+        "per_element: checked - every equivariance verdict in this review is a max "
+        "over matrix entries of a commutator, and the counterfactuals are assembled "
+        "entry by entry: the anisotropic scheme Z_axis = diag(1.05, 1.10, 1.15) "
+        f"drives max|[Y_aniso, U_C3]| to {aniso_comm:.2e}, the single-axis twist "
+        f"diag(omega, 1, 1) to {twist_comm:.2e}, and the Z_2 mass matrix carries "
+        "corner diagonals [1.0, 0.5, 0.5] against K_C3's [0.0, 0.0, 0.0]."
+    )
+    print(
+        "per_site: checked - the dim-reg surrogate materializes the whole coordinate "
+        f"list of the (-{N}..{N})^3 grid and evaluates exp(-(x^2 + y^2 + z^2)) at each "
+        f"of its {n_sites} sites, with the C_3 map (x, y, z) -> (z, x, y) applied site "
+        "by site to that array; the site-resolved values are real but are then "
+        "contracted, so the reported assertion is made on their sum."
+    )
+    print(
+        "per_mode: checked - the three Fourier irreps are resolved separately, each "
+        "given its own anomalous dimension gamma_k = 1.05, 1.10, 1.15 before rotating "
+        f"back (max|[Y_renormed, U_C3]| = {anom_comm:.2e}), and the Brannen-Rivero "
+        f"closed form {[round(x, 6) for x in br_closed]} is matched eigenvalue by "
+        "eigenvalue against eigvalsh."
+    )
+    print(
+        "per_block: checked and not executed - the only block-indexed construct is the "
+        "RG block-spin test, which draws 50 circulant blocks and the measure test, "
+        "which draws 1000 C_3-symmetrized matrices; both average immediately and "
+        "report a single aggregate commutator, so no individual block is ever "
+        "resolved, compared, or allowed to differ from its neighbours."
+    )
+    print(
+        "lattice_wide: checked - the discrete-measure attack contracts the full grid "
+        "into a genuinely whole-lattice functional, sum f over all sites versus the "
+        "same sum after the C_3 axis permutation, and finds them equal; but the grid "
+        f"is fixed at N = {N} and no infinite-volume limit is taken, so the review "
+        "certifies C_3 invariance of a finite lattice sum, not an asymptotic one."
+    )
+    print()
+
+
 def main():
     print("=" * 70)
     print("A3 R1 HOSTILE REVIEW — C_3-equivariance theorem stress-test")
@@ -672,6 +742,8 @@ def main():
         section_results = fn()
         all_results += section_results
         print()
+
+    n5_execution_certificate()
 
     n_total = len(all_results)
     n_pass = sum(all_results)

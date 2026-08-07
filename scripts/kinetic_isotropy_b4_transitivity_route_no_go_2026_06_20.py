@@ -319,6 +319,54 @@ check("source note does not ship primitive-reduction or admission-ladder languag
 
 
 # ---------------------------------------------------------------------------
+banner("N5 EXECUTION CERTIFICATE -- resolution classes exercised here")
+print(
+    "per_element: resolved entry by entry, and this is where C2 lands -- the "
+    "time-space swap defect W^T G W - G is checked against "
+    "diag(c_s-c_t, c_t-c_s, 0, 0) component by component, so the (t,t) and "
+    "(x,x) entries carry the entire obstruction while the (y,y), (z,z) and "
+    "all off-diagonal entries are identically zero for symbolic c_t, c_s; the "
+    "Reynolds projector is likewise assembled one basis matrix at a time over "
+    "the 10 symmetric generators."
+)
+print(
+    "per_site: resolved along the Euclidean time axis only -- the OS "
+    "reflection Gram is built one time-slice site at a time as "
+    "M_ij = lambda^(t_i + t_j) over the six slices t = 1..6, so positivity is "
+    "certified slice by slice; the three spatial directions carry no site "
+    "index at all here because they are Fourier-transformed into k, so no "
+    "spatial site resolution is executed by this runner."
+)
+print(
+    "per_mode: resolved mode by mode over the full tested grid -- every one of "
+    "the 4x4x4 = 64 momenta (k_x, k_y, k_z) drawn from linspace(0, pi, 4) gets "
+    "its own transfer eigenvalue lambda(k), each required to lie strictly in "
+    "(0,1), and its own 6x6 reflection Gram, each required PSD to the -1e-10 "
+    "tolerance; the isotropic control c_t = c_s = 1.7 is swept over the same "
+    "64 modes, which is what makes RP non-selective rather than merely "
+    "non-violated at one mode."
+)
+print(
+    "per_block: resolved block by block on the form space -- the invariant "
+    "dimension is computed twice, once on the full 10-dimensional space of "
+    "symmetric 4x4 matrices and once restricted to the 4-dimensional diagonal "
+    "block, and O_h gives 2 on both while B4 gives 1 on both, so the collapse "
+    "is not an artifact of the diagonal restriction; correspondingly the "
+    "defect splits into a (t,x) 2x2 block carrying the whole obstruction and a "
+    "(y,z) 2x2 block that is identically zero."
+)
+print(
+    "lattice_wide: split, and stated as such -- C1 and C2 are exact "
+    "whole-lattice statements, because O_h and B4 are the point groups of the "
+    "hypercubic lattice itself and the Reynolds average is taken exactly over "
+    "all 48 and all 384 elements over Q with no truncation, so the "
+    "invariant-dimension wall needs no volume; C3 by contrast is NOT "
+    "lattice-wide -- it is a finite 64-mode grid and six time slices with no "
+    "volume, no site sum and no thermodynamic or continuum limit, exactly as "
+    "the note's C3 wording restricts it to the tested finite mode grid."
+)
+
+# ---------------------------------------------------------------------------
 banner("SUMMARY")
 print("C1: the diagonal-form invariant space is 2-dim under O_h, 1-dim under B4 ->")
 print("    deriving c_t=c_s == supplying the O_h->B4 (time-space) generator.")

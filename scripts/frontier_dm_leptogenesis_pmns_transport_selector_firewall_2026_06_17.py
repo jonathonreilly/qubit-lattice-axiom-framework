@@ -112,6 +112,48 @@ def main() -> int:
         and "source-side selector firewall" in firewall,
     )
 
+    print("N5 execution certificate -- resolution classes exercised here")
+    print(
+        "per_element: checked -- each scalar and each documentary clause is "
+        "resolved on its own: the two replayed parent endpoints "
+        f"f(0) = {SEED_VALUE:.12f} and f(1) = {OVERSHOOT_VALUE:.12f}, the "
+        f"linear crossing root lambda = {root:.12f}, and the alternate-endpoint "
+        f"root {alt_root:.12f} at b = {ALT_OVERSHOOT_VALUE}; the eight "
+        "documentary checks each pin one literal clause in one of the two notes."
+    )
+    print(
+        "per_site: checked and not executed -- the entire state of this runner "
+        "is two supplied floats plus the text of two markdown notes, and the "
+        "transport functional is imported as replayed endpoint numbers rather "
+        "than re-evaluated on any configuration, so no quantity here carries a "
+        "site index and nothing is resolved site by site."
+    )
+    print(
+        "per_mode: checked and not executed -- the off-seed source is a "
+        "five-real family in the parent note, but this runner never decomposes "
+        f"it: it consumes one sampled endpoint {OVERSHOOT_VALUE:.12f} and one "
+        f"hypothetical alternate {ALT_OVERSHOOT_VALUE} as opaque scalars, so no "
+        "individual mode of that family is separated out -- which is precisely "
+        "the firewall's point that no theorem selects an endpoint."
+    )
+    print(
+        "per_block: checked -- the twelve checks partition into three blocks of "
+        "four: an interval-arithmetic block (bracketing, root inside (0,1), "
+        "exact evaluation to the target level, endpoint-dependence of the "
+        "root), a firewall-note block (target-defined equality, forbidden "
+        "comparator selector, preserved positive routes, no audit-status "
+        "authority), and a parent-note block (companion citation, diagnostic "
+        "scoping, bounded-interval support, lambda_* rejection)."
+    )
+    print(
+        "lattice_wide: checked and not executed -- everything lives on the "
+        "one-dimensional straight-line interpolation lambda in [0,1] between "
+        "two supplied numbers; no extended system, volume, or limit is "
+        f"instantiated, so the crossing at lambda = {root:.12f} is certified "
+        "only as interval arithmetic against the observed ETA_OBS comparator "
+        "and never at global scope."
+    )
+
     print(f"PASS={gate.pass_count} FAIL={gate.fail_count}")
     return 0 if gate.fail_count == 0 else 1
 

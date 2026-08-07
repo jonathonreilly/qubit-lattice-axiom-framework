@@ -153,6 +153,51 @@ check("no empirical lepton mass is used", True)
 check("no lepton Yukawa prediction is made", True)
 check("result is an open gate for a missing physical-operator bridge", True)
 
+section("N5 execution certificate (print-only; adds no check)")
+
+print(
+    "per_element: checked and not executed - no matrix element is ever "
+    "evaluated, and that absence is the gate itself. The runner solves two "
+    "scalar equations symbolically for their positive root, g_s^2/6 = y_t^2 "
+    "and g_1^2 |Y_L Y_R| = y_tau^2, and the lepton one is recorded as "
+    "conditional on a supplied unit lepton scalar matrix element; the open "
+    "gate is precisely that the cited sources identify no physical operator "
+    "whose element could take that value."
+)
+print(
+    "per_site: checked and not executed - nothing is localized. The entire "
+    "computation consists of two coupling symbols g_s and g_1, two rational "
+    "hypercharges, and read access to two markdown source files; no local "
+    "algebra, no site index and no neighbour structure is constructed, so "
+    "there is no site at which anything could be resolved."
+)
+print(
+    "per_mode: checked and not executed - no mode, channel or harmonic "
+    "amplitude is formed. The one place channel structure could have entered "
+    "is the cited colour source, and the runner's role there is purely "
+    "custodial: it confirms that source is labelled a channel-fraction theorem "
+    "and that it disclaims being a Higgs wave-function normalization or a "
+    "physical Yukawa, and then declines to use it as a scalar-operator "
+    "authority. It computes no channel fraction of its own."
+)
+print(
+    "per_block: checked, but only as rational quantum-number bookkeeping - no "
+    "operator is built on either block. The lepton (2,1) block enters solely "
+    "through its hypercharges, Y_L = -1/2 on the left doublet and Y_R = -1 on "
+    "the right singlet, whose absolute product is verified symbolically to be "
+    "1/2, matched against the quark Q_L block factor 1/6. Those are charge "
+    "assignments carried into an algebraic identity, not amplitudes evaluated "
+    "block by block."
+)
+print(
+    "lattice_wide: checked and not executed - there is no lattice, no volume "
+    "and no extensive sum anywhere in this runner. The claim it supports is a "
+    "current-source-surface gate about which operator authority exists, so its "
+    "widest-scale operation is reading YT_WARD_IDENTITY_DERIVATION_THEOREM.md "
+    "and YUKAWA_COLOR_PROJECTION_THEOREM.md and testing them for specific "
+    "phrases; no continuum or infinite-volume limit is approached."
+)
+
 print()
 print("=" * 88)
 print(f"  TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

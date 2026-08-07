@@ -720,6 +720,93 @@ def test_T11_source_note_boundary() -> None:
 # main
 # ---------------------------------------------------------------------------
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the finding.
+
+    Reporting only: adds no check() call and moves no PASS/FAIL count.
+    """
+    section("N5 execution certificate: what this runner resolves")
+
+    local_dim = 2
+    n_factors = 2
+    joint_dim = local_dim ** n_factors
+    n_modes = 2
+    doc_scan_checks = 6
+    computed_checks = 20
+
+    print(
+        "per_element: resolved symbolically, entry by entry, and the identities are "
+        "certified as exact zero matrices rather than at sample points. Every operator "
+        "is written out explicitly - the Z3 cyclic shift, the generic 2 x 2 pair "
+        "[[2, 1], [0, 3]] and [[5, 0], [7, 1]], sigma_z and sigma_x, the block "
+        "[[j_A, a], [-a, j_A]] - the Kronecker products are formed, and the load-bearing "
+        f"comparisons collapse to the {joint_dim} x {joint_dim} zero matrix: "
+        "H = -log(T2)/2 against E1 n1 + E2 n2, and (T2)^s against its direct diagonal "
+        "form, both entrywise."
+    )
+    print(
+        f"per_site: resolved with amplitudes, but only at {n_factors} sites. Each "
+        f"factor carries its own explicit local operator on the Qubit one-site "
+        f"baseline of dimension {local_dim} - H_A = diag(e_A0, e_A1) against "
+        "H_B = diag(e_B0, e_B1), instantiated at the numeric spectra {1, 5} and "
+        "{2, 11} to give {3, 7, 12, 16}, and sigma_z on each site coupled by "
+        "g sigma_x (x) sigma_x in the steelman. That is genuine per-site data, but the "
+        "'lattice' is a two-factor split with no coordinate, no adjacency and no "
+        "volume; nothing here is indexed by position."
+    )
+    print(
+        f"per_mode: resolved with amplitudes over {n_modes} modes. The realized "
+        "transfer operator is built as a product over modes, T2 = (x)_p "
+        "diag(1, e^{-2 E(p)}), giving the explicit diagonal "
+        "(1, e^{-2E2}, e^{-2E1}, e^{-2(E1+E2)}); the generator is then read out in "
+        "mode-resolved number-operator form E1 n1 + E2 n2 with a separate number "
+        "operator per mode; and the whole exponent family (T2)^s is shown to stay a "
+        "product over the same modes for every s, which is the orbit statement the "
+        "pivot turns on."
+    )
+    print(
+        "per_block: resolved with amplitudes, and it is where the independent-subsystem "
+        "hypothesis is actually exercised. The substrate is the block-diagonal "
+        "D = D_A (+) D_B with the two block determinants computed in closed form as "
+        "Z_A = j_A^2 + a^2 and Z_B = j_B^2 + b^2, and the multiplicative-to-additive "
+        "bridge is certified on exactly that split: det factorizes as Z_A . Z_B and "
+        "log Z separates as log Z_A + log Z_B. The discrete side resolves the three "
+        "group-element classes of the Z3 regular representation as the character "
+        "vector (3, 0, 0)."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global object is this "
+        "note's own obstruction. No volume, no sequence and no limit is taken anywhere; "
+        "the entire argument runs on two factors and two modes. The finding the runner "
+        "supports is that the energy route reduces to P1 rather than closing it, so the "
+        "prior additive structure that a global argument would have to supply - one "
+        "independent of the log choice - is precisely what is shown to be absent. "
+        "Execution can relocate the dichotomy one level up; it cannot escape it."
+    )
+    print(
+        "  scope: the exp/log bridge is certified on the abelian slice only. "
+        "_matlog_diag refuses anything but a diagonal matrix, and the algebra-to-group "
+        "step is stated and tested for commuting tensor summands, so the "
+        "non-commuting case - where exp(A + B) and exp(A) exp(B) genuinely differ - is "
+        "never exercised in this runner."
+    )
+    print(
+        "  scope: two legs are narrower than their labels suggest, and the source says "
+        "so in its own detail strings. The non-additivity of F_p is tested at the "
+        "single representative p = 1, with uniqueness of log left to the Cauchy "
+        "classifier under continuity or measurability, which is not carried out here; "
+        "and the third synthesis check is the conjunction of the two preceding ones "
+        "rather than new content, with no classification of the full readout space."
+    )
+    print(
+        f"  scope: of the {PASS + FAIL} scored checks, {doc_scan_checks} are substring "
+        f"scans over live Markdown notes and {computed_checks} compute. The ledger "
+        "section is explicitly diagnostic and unscored, and the interacting-spectrum "
+        "leg compares floating-point evalf values against an exact list. The runner is "
+        "fully deterministic: no RNG stream and no optimizer anywhere."
+    )
+
+
 def main() -> int:
     section("RUNNER: observable-principle P1 symmetry-type / energy-readout note")
     test_T1_structure_survey()
@@ -733,6 +820,7 @@ def main() -> int:
     test_T9_ledger_context_presence()
     test_T10_honest_scope_strings()
     test_T11_source_note_boundary()
+    n5_execution_certificate()
 
     section(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     print(

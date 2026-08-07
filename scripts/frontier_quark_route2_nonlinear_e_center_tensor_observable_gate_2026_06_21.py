@@ -194,6 +194,45 @@ def main() -> int:
     check("block preserves positive target", True, "derive H_E/H_T channel law, do not fit endpoint values")
 
     print()
+    print("H. N5 execution certificate")
+    print("-" * 72)
+    print(
+        "per_element: resolution runs monomial by monomial in the bright variable -- each power "
+        "u^2, u^3, u^4, u^5, u^6, u^7 and u^8 is asked separately for its first variation at the "
+        "A1 background and only u^1 returns a nonzero one; that first-variation rule is applied "
+        "as a declared two-branch law rather than by symbolic differentiation, and the exact "
+        f"Fractions carrying the arithmetic are q_T={q_t}, q_E={q_e} and c_TE={center_te}."
+    )
+    print(
+        "per_site: executed at the two support backgrounds and nowhere else -- delta_A1 takes the "
+        f"value {delta_shell} on the shell and {delta_center} at the center, and every channel "
+        "ratio in this file is literally a dressing evaluated at those two roles, q=H(1/6)/H(0); "
+        "no individual arm of the star is opened, so the two site roles exhaust the site "
+        "resolution available here."
+    )
+    print(
+        "per_mode: this is where the gate actually closes -- H_E and H_T are the two channel "
+        f"dressings, a common scalar dressing pins the covariance at {common_ratio} while the "
+        f"target demands {lam}, and in affine form the modes require the unequal slopes "
+        f"rho_E={slope_e} and rho_T={slope_t}, so the missing object is precisely a law that "
+        "separates the E dressing from the T dressing."
+    )
+    print(
+        "per_block: the monomials are grouped into an even block u^2 through u^8 and an odd block "
+        "u^3 through u^7, each swept for the same vanishing first variation, and the coefficient "
+        f"block ({', '.join(free_affine_parameters)}) of {len(free_affine_parameters)} affine "
+        "constants is reported as reducing to two independent slopes after shell normalization; "
+        "these are count-level resolutions read off literal lists, not evaluated amplitudes."
+    )
+    print(
+        "lattice_wide: checked and not executed, because asserting it would contradict what this "
+        "runner verifies about its own note -- section B confirms the note does not claim that all "
+        "future nonlinear observables fail, and a lattice-wide certification would be exactly that "
+        "universal claim; there is in any case no lattice, volume or limit anywhere in the file, "
+        f"only the two-point background pair ({delta_shell}, {delta_center})."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

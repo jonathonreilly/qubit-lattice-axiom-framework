@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lensing_centroid_multipole_no_go.py
-runner_sha256: c36fd97f7404d96f5b92f5849cdfaa77358d684ebf4a151229d9b6c5f2695ec0
+runner_sha256: 1edbf5f09d8710c607c5b3d279ae0f2981e4f68801cc5ce03ce0039d3ad893bb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.22
+elapsed_sec: 5.90
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -32,6 +32,13 @@ Large-b exact vs three-term asymptotic:
 No-go control:
   Replacing the signed centroid coefficients by nonnegative |c_e| gives slope -0.997167, i.e. the uncancelled scalar-potential monopole.
   The old centered finite-path gradient surrogate on b={3,4,5,6} has slope -1.418838; it is a separate b/r^3 ray-gradient primitive, not the code's adjoint centroid functional.
+
+N5 execution certificate -- resolved granularity (print-only):
+per_element: checked - the element here is the individual directed edge, and all 903584 of them are visited one at a time. Each carries its own signed coefficient c_e built from the source amplitude A[i], the adjoint lam[j], the phase exp(i k L) and the angular weight exp(-beta theta^2), together with its own midpoint (x_e, z_e); the moments are accumulated edge by edge as m0 += c_e, m1 += c_e (z_e - eps), m2 += c_e ((z_e - eps)^2 - dx^2/2), and alpha(b) is likewise an edge-by-edge reciprocal sum.
+per_site: checked - the edge list is generated from an explicit grown lattice of NL = 25 layers at spacing H = 0.6, with every site holding a 3-vector position. Each edge reads two sites: the displacement (dx, dy, dz) and length L come from pos[i] and pos[j], the midpoint is the average of their coordinates, and sites whose forward amplitude satisfies |A[i]| < 1e-30 are dropped before any edge is emitted, so site occupancy genuinely gates the sum.
+per_mode: checked, in the multipole sense only - the runner separates the monopole, dipole and quadrupole channels of the signed edge measure and that separation is where the no-go lands: |M0|/sum|c| = 1.293740e-04 against |M1|/sum|c| = 1.243191e-01, so the l = 0 channel is cancelled while l = 1 is live, giving the measured slope -2.020343 instead of the nonnegative-weight control's -0.997167. No Fourier or k-space decomposition is performed: the harness runs at the single fixed phase k_phase = 4.16667 and one beta.
+per_block: checked and not executed - the blocks are the layers, and the runner deliberately does not resolve them. Every edge record carries a layer label round(pos[j][0]/H), but that field is bound to _layer and discarded in all three moment accumulators and in the exact edge sum, so no per-layer moment or amplitude is ever formed. That is the point of the note: the blocked bridge is the layer-weighted reduction, and this runner evaluates the full signed edge functional instead of any layer decomposition of it.
+lattice_wide: checked - every number reported above is a whole-lattice sum over the entire 903584-edge list of the fixed harness: M0, M1, M2, sum|c|, the sign split 0.500/0.500, and alpha(b) at each b. The scope is bounded exactly as the note states - one geometry at H = 0.6, T_phys = 15, NL = 25, from the single seeded growth realization - and no continuum H -> 0 or infinite-volume limit is taken anywhere.
 
 PASS finite edge list is nonempty
 PASS centroid kernel has mixed signs

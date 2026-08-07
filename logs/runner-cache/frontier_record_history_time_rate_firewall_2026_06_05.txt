@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
-runner_sha256: 5d73a2ed9b5601d34b12f4d9d03f61e1a593fedf22a1ebdec43374472e2a221e
+runner_sha256: 95f82dec0291a8afc115781ce2477ed70c8879ce64b4eb57903a0ebec6afe1c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -83,6 +83,15 @@ no-go / negative-route-pruning runner
   [PASS] forbidden wording absent: generator closure
   [PASS] forbidden wording absent: dial closure
   [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE (print-only; registers no check)
+------------------------------------------------------------------------------
+  per_element: exercised, but only over 2-by-2 objects -- the step kernel is validated entry by entry, every entry tested against -TOL for nonnegativity and each row summed separately to one at atol = 1e-10, and the two Euler generator estimates are compared entrywise with worst deviation 0.000e+00 before a single named off-diagonal entry is read out to exhibit the rate ambiguity. That is the whole of the element-level work in this file.
+  per_site: checked and not executed -- the record word carries no site tags at all. Symbols are drawn from a two-letter alphabet and indexed only by their position in the word, so there is nothing to attach to a location. This is the note's own declared boundary rather than an omission: the paired source states that it does not construct a map from a site-tagged record atom to a formation event.
+  per_mode: checked and not executed -- the two-state kernel is never diagonalized and no spectral quantity is taken anywhere. It is only applied to a normalized distribution and differenced against the identity to form Euler generator estimates, so no eigenvector, relaxation mode or spectral gap is computed, and none is needed for the rate ambiguity this firewall exhibits.
+  per_block: checked and not executed -- no state space is decomposed. The only partition in the file is the typed residual ledger of section 5, which sorts output names into 4 record, 2 kernel, 4 time and 5 causal labels and certifies those sets pairwise disjoint. That is provenance bookkeeping over strings, not a block decomposition of anything physical.
+  lattice_wide: checked and not executed -- nothing with spatial extent is constructed, so there is no whole-system quantity and no finite-N or limiting content. The only size dial turned is word length, 5 against 1000, and that is history length rather than volume; the firewall's point is that neither length fixes a duration, and it would read identically at any lattice size.
 
 ------------------------------------------------------------------------------
 SCORECARD

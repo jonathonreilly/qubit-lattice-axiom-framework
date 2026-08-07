@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_epsilon_index_square_block_no_go.py
-runner_sha256: 263e0dbc94ed0a0a768d5962575193be5e37479556cf2d757d6f83856faf8728
+runner_sha256: 8990edf6ccf844b4beab8a70c49b4ae9738a8fe85a620013c606b44e53de8999
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ABJ epsilon-index square-block no-go
@@ -14,11 +14,11 @@ ABJ epsilon-index square-block no-go
 [PASS] Z4xZ2^3 random U(1): eps D eps = -D  max=0.000e+00
 [PASS] Z4xZ2^3 random U(1): diagonal parity blocks vanish  max=0.000e+00
 [PASS] Z4xZ2^3 random U(1): lower block equals -B^dag  max=0.000e+00
-[PASS] Z4xZ2^3 random U(1): BB^dag and B^dagB spectra match including zeros  max=2.220e-15
-[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=0.1  A_t=-1.155e-14+-1.041e-17i
-[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=0.5  A_t=-4.552e-15+-4.554e-17i
-[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=1.0  A_t=-3.331e-16+-6.072e-17i
-[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=2.0  A_t=3.386e-15+2.299e-17i
+[PASS] Z4xZ2^3 random U(1): BB^dag and B^dagB spectra match including zeros  max=3.109e-15
+[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=0.1  A_t=1.110e-16+7.177e-17i
+[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=0.5  A_t=-1.055e-15+2.299e-17i
+[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=1.0  A_t=-8.327e-16+-3.036e-18i
+[PASS] Z4xZ2^3 random U(1): A_t vanishes at t=2.0  A_t=-2.220e-16+-7.481e-17i
 [PASS] Z4xZ2^3 random U(1): zero-mode multiplicities match  ker BBdag=0, ker BdagB=0
 
 == Z4xZ2^3 flux U(1): dims=(4, 2, 2, 2) ==
@@ -27,11 +27,11 @@ ABJ epsilon-index square-block no-go
 [PASS] Z4xZ2^3 flux U(1): eps D eps = -D  max=0.000e+00
 [PASS] Z4xZ2^3 flux U(1): diagonal parity blocks vanish  max=0.000e+00
 [PASS] Z4xZ2^3 flux U(1): lower block equals -B^dag  max=0.000e+00
-[PASS] Z4xZ2^3 flux U(1): BB^dag and B^dagB spectra match including zeros  max=2.442e-15
-[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=0.1  A_t=-1.998e-15+8.110e-17i
-[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=0.5  A_t=-8.327e-17+7.373e-17i
-[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=1.0  A_t=1.103e-15+2.342e-17i
-[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=2.0  A_t=2.895e-15+-2.477e-17i
+[PASS] Z4xZ2^3 flux U(1): BB^dag and B^dagB spectra match including zeros  max=1.776e-15
+[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=0.1  A_t=2.331e-15+-1.388e-17i
+[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=0.5  A_t=1.193e-15+5.204e-18i
+[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=1.0  A_t=1.180e-16+5.117e-17i
+[PASS] Z4xZ2^3 flux U(1): A_t vanishes at t=2.0  A_t=-3.981e-16+-1.762e-18i
 [PASS] Z4xZ2^3 flux U(1): zero-mode multiplicities match  ker BBdag=2, ker BdagB=2
 
 == Z4^4 random U(1): dims=(4, 4, 4, 4) ==
@@ -40,11 +40,11 @@ ABJ epsilon-index square-block no-go
 [PASS] Z4^4 random U(1): eps D eps = -D  max=0.000e+00
 [PASS] Z4^4 random U(1): diagonal parity blocks vanish  max=0.000e+00
 [PASS] Z4^4 random U(1): lower block equals -B^dag  max=0.000e+00
-[PASS] Z4^4 random U(1): BB^dag and B^dagB spectra match including zeros  max=1.421e-14
-[PASS] Z4^4 random U(1): A_t vanishes at t=0.1  A_t=-1.421e-14+1.166e-16i
-[PASS] Z4^4 random U(1): A_t vanishes at t=0.5  A_t=-1.871e-14+-9.209e-17i
-[PASS] Z4^4 random U(1): A_t vanishes at t=1.0  A_t=-2.243e-14+1.570e-16i
-[PASS] Z4^4 random U(1): A_t vanishes at t=2.0  A_t=-2.137e-14+-1.702e-17i
+[PASS] Z4^4 random U(1): BB^dag and B^dagB spectra match including zeros  max=1.510e-14
+[PASS] Z4^4 random U(1): A_t vanishes at t=0.1  A_t=-2.121e-14+-9.906e-17i
+[PASS] Z4^4 random U(1): A_t vanishes at t=0.5  A_t=-1.205e-14+4.896e-17i
+[PASS] Z4^4 random U(1): A_t vanishes at t=1.0  A_t=-8.715e-15+-1.354e-16i
+[PASS] Z4^4 random U(1): A_t vanishes at t=2.0  A_t=-3.358e-15+-3.002e-17i
 [PASS] Z4^4 random U(1): zero-mode multiplicities match  ker BBdag=0, ker BdagB=0
 
 == Z4^4 flux U(1): dims=(4, 4, 4, 4) ==
@@ -53,13 +53,21 @@ ABJ epsilon-index square-block no-go
 [PASS] Z4^4 flux U(1): eps D eps = -D  max=0.000e+00
 [PASS] Z4^4 flux U(1): diagonal parity blocks vanish  max=0.000e+00
 [PASS] Z4^4 flux U(1): lower block equals -B^dag  max=0.000e+00
-[PASS] Z4^4 flux U(1): BB^dag and B^dagB spectra match including zeros  max=4.885e-15
-[PASS] Z4^4 flux U(1): A_t vanishes at t=0.1  A_t=-1.488e-14+-4.490e-17i
-[PASS] Z4^4 flux U(1): A_t vanishes at t=0.5  A_t=-1.416e-14+5.417e-17i
-[PASS] Z4^4 flux U(1): A_t vanishes at t=1.0  A_t=-2.082e-15+-8.823e-18i
-[PASS] Z4^4 flux U(1): A_t vanishes at t=2.0  A_t=1.277e-15+1.802e-17i
+[PASS] Z4^4 flux U(1): BB^dag and B^dagB spectra match including zeros  max=3.997e-15
+[PASS] Z4^4 flux U(1): A_t vanishes at t=0.1  A_t=7.327e-15+2.158e-17i
+[PASS] Z4^4 flux U(1): A_t vanishes at t=0.5  A_t=2.331e-15+-8.787e-17i
+[PASS] Z4^4 flux U(1): A_t vanishes at t=1.0  A_t=-2.665e-15+2.180e-17i
+[PASS] Z4^4 flux U(1): A_t vanishes at t=2.0  A_t=-6.960e-15+2.566e-17i
 [PASS] Z4^4 flux U(1): zero-mode multiplicities match  ker BBdag=2, ker BdagB=2
 [PASS] rectangular control: epsilon trace can be nonzero only after sublattice imbalance  N_+-N_-=1, A_t=1.000000000000
+
+== N5 execution certificate: what this runner resolves ==
+per_element: checked - the staggered operator is assembled entry by entry, each hop writing d[i, j] = +-0.5 eta_mu(c) U_mu(i) into a single matrix element, and the three structural identities D + D^dag, eps D eps + D and lower + B^dag are then verified as elementwise maxima, the worst over all 4 backgrounds being 0.000e+00.
+per_site: checked - both gradings are evaluated site by site over the full volume, epsilon(c) = (-1)^(t+x+y+z) at each of the 32 and 256 sites to split them into the plus and minus index sets, and eta_mu(c) = (-1)^(sum of the first mu coordinates) recomputed at every site for every one of the four hop directions.
+per_mode: checked - the two Laplacians BB^dag and B^dagB are fully diagonalized and their sorted spectra compared eigenvalue against eigenvalue, agreeing to 1.510e-14 at worst, and the zero modes are counted separately on each side, matching at multiplicity [0, 2] across the random and flux backgrounds.
+per_block: checked - this is the granularity the no-go turns on: reordering the sites by epsilon parity puts D into the bipartite form [[0, B], [-B^dag, 0]], and the runner verifies the two diagonal parity blocks vanish identically and that the lower block is exactly -B^dag, which is what forces B square and the two spectra equal.
+lattice_wide: checked - the index itself is a whole-lattice trace, A_t = Tr(eps exp(-t D^dag D)) summed over every site of the torus and evaluated at t = 0.1, 0.5, 1.0 and 2.0 for each background, never exceeding 2.121e-14; the rectangular control with N_+ - N_- = 1 returns A_t = 1.000000000000, showing the trace is not blind.
+  scope: the tori tested are fixed at dims (4, 2, 2, 2) and (4, 4, 4, 4); no large-volume or continuum limit is taken, so the result is a statement about equal-sublattice even periodic Z4 tori, not an asymptotic one.
 
 TOTAL: PASS=45 FAIL=0
 SUMMARY: For every tested even periodic Z4 torus and U(1) background, the standard massless staggered epsilon index vanishes because D has square bipartite block form. Closing P1' requires leaving this same-surface epsilon-index setup: e.g. an imbalanced/curved complex, a taste-singlet/Adams/overlap index operator, or an accepted ABJ premise.

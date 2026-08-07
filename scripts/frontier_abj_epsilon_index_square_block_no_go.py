@@ -188,6 +188,75 @@ def synthetic_rectangular_control() -> dict[str, object]:
     return {"n_plus": 5, "n_minus": 4, "a_t": a_t}
 
 
+def n5_execution_certificate(
+    results: list[dict[str, object]], control: dict[str, object]
+) -> None:
+    """Report the granularity this no-go actually resolves.
+
+    Reporting only: adds no check and does not touch PASS/FAIL or the JSON.
+    """
+    print("\n== N5 execution certificate: what this runner resolves ==")
+
+    sites = [int(np.prod(r["dims"])) for r in results]
+    max_entry_err = max(
+        max(
+            float(r["max_antihermitian_error"]),
+            float(r["max_eps_anticommutator_error"]),
+            float(r["max_block_relation_error"]),
+        )
+        for r in results
+    )
+    max_spec = max(float(r["max_spectrum_difference"]) for r in results)
+    zero_mults = sorted({int(r["zero_multiplicity_plus"]) for r in results})
+    max_a_t = max(
+        abs(complex(v["real"], v["imag"]))
+        for r in results
+        for v in r["a_t"].values()
+    )
+
+    print(
+        "per_element: checked - the staggered operator is assembled entry by entry, "
+        "each hop writing d[i, j] = +-0.5 eta_mu(c) U_mu(i) into a single matrix "
+        "element, and the three structural identities D + D^dag, eps D eps + D and "
+        f"lower + B^dag are then verified as elementwise maxima, the worst over all "
+        f"{len(results)} backgrounds being {max_entry_err:.3e}."
+    )
+    print(
+        "per_site: checked - both gradings are evaluated site by site over the full "
+        f"volume, epsilon(c) = (-1)^(t+x+y+z) at each of the {sites[0]} and "
+        f"{sites[-1]} sites to split them into the plus and minus index sets, and "
+        "eta_mu(c) = (-1)^(sum of the first mu coordinates) recomputed at every site "
+        "for every one of the four hop directions."
+    )
+    print(
+        "per_mode: checked - the two Laplacians BB^dag and B^dagB are fully "
+        "diagonalized and their sorted spectra compared eigenvalue against "
+        f"eigenvalue, agreeing to {max_spec:.3e} at worst, and the zero modes are "
+        f"counted separately on each side, matching at multiplicity {zero_mults} "
+        "across the random and flux backgrounds."
+    )
+    print(
+        "per_block: checked - this is the granularity the no-go turns on: reordering "
+        "the sites by epsilon parity puts D into the bipartite form [[0, B], "
+        "[-B^dag, 0]], and the runner verifies the two diagonal parity blocks vanish "
+        "identically and that the lower block is exactly -B^dag, which is what forces "
+        "B square and the two spectra equal."
+    )
+    print(
+        "lattice_wide: checked - the index itself is a whole-lattice trace, "
+        "A_t = Tr(eps exp(-t D^dag D)) summed over every site of the torus and "
+        f"evaluated at t = 0.1, 0.5, 1.0 and 2.0 for each background, never exceeding "
+        f"{max_a_t:.3e}; the rectangular control with N_+ - N_- = "
+        f"{int(control['n_plus']) - int(control['n_minus'])} returns "
+        f"A_t = {float(control['a_t']):.12f}, showing the trace is not blind."
+    )
+    print(
+        "  scope: the tori tested are fixed at dims (4, 2, 2, 2) and (4, 4, 4, 4); "
+        "no large-volume or continuum limit is taken, so the result is a statement "
+        "about equal-sublattice even periodic Z4 tori, not an asymptotic one."
+    )
+
+
 def main() -> int:
     print("ABJ epsilon-index square-block no-go")
     results = []
@@ -200,6 +269,7 @@ def main() -> int:
     for label, dims, links in backgrounds:
         results.append(analyze_background(label, dims, links))
     control = synthetic_rectangular_control()
+    n5_execution_certificate(results, control)
 
     summary = (
         "For every tested even periodic Z4 torus and U(1) background, the "

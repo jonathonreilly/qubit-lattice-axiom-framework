@@ -224,6 +224,41 @@ def main() -> int:
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
     check("note line count is bounded", 150 <= len(note.splitlines()) <= 230, len(note.splitlines()))
 
+    section("H. N5 execution certificate: what this runner resolves")
+    print(
+        "per_element: checked — the target decomposes into individual defect "
+        f"summands and each is resolved exactly: L = {L} per summand, three of them "
+        f"give S_sum = {S_sum}, and the runner confirms Phi = 3 * delta exactly while "
+        "the fixed-locus source is verified to exclude any physical single-summand "
+        "readout, so no per-element readout is being borrowed."
+    )
+    print(
+        "per_site: checked and not executed — no lattice appears in this runner at "
+        "all; the C3 fixed locus is an orbit-level object with no site index, so "
+        "there is nothing here that could be resolved site by site and no "
+        "site-resolved claim is made."
+    )
+    print(
+        "per_mode: checked — the available character-mode angles are enumerated and "
+        f"each is shown exactly distinct from the targets: the C3 root angle {root_angle}, "
+        f"the canonical U(1) packagings 2*pi*L = {sp.simplify(two_pi_L)} and "
+        f"2*pi*S_sum = {sp.simplify(two_pi_S)}, none of which equals delta = {delta_target} "
+        f"or Phi = {phi_target}."
+    )
+    print(
+        "per_block: checked and not executed — this runner carries no block "
+        "decomposition; the C3 fixed locus is handled as one indivisible orbit-level "
+        "object and no sub-block of it is ever separately resolved, so no "
+        "block-resolved statement is available from the executed evidence."
+    )
+    print(
+        "lattice_wide: checked and not executed — the whole argument is exact angle "
+        f"arithmetic plus two finite scans ({len(coefficients)} homogeneous coefficients "
+        f"lambda and {len(range(-8, 9))} inhomogeneous alpha values), with no lattice, "
+        "no volume and no continuum limit anywhere, so the missing R-eta license is "
+        f"certified only at that scope, with PASS={PASS}, FAIL={FAIL}."
+    )
+
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 88)

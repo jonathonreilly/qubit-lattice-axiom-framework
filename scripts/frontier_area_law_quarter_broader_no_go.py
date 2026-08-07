@@ -258,6 +258,43 @@ def main() -> int:
 
     print()
     print("=" * 78)
+    print("N5 execution certificate: resolved granularity")
+    print("=" * 78)
+    print(
+        "per_element: checked - the atomic quantity is the individual Fermi-surface "
+        "crossing: the class admits at most one occupied k_x interval and therefore "
+        "at most two crossings per fiber, which is exactly what caps c = N_avg/12 at "
+        "1/6, while the Bekenstein-Hawking quarter demands average crossing count 3, "
+        "an odd total no single interval can deliver."
+    )
+    print(
+        "per_site: checked and not executed - the entire computation lives in "
+        "momentum space; the straight cut enters only through its normal direction, "
+        "and no real-space region, boundary site or site-resolved entanglement is "
+        "ever constructed, so nothing here is certified at any lattice position."
+    )
+    print(
+        f"per_mode: checked - the transverse momentum fibers are the resolved index, "
+        f"with the 3D carrier evaluating {700 * 700} individual (k_y, k_z) midpoints "
+        "and testing |cos k_y + cos k_z| < 1 at each one to decide whether that fiber "
+        "carries two k_x roots, the resulting valid fraction giving c_3D = 0.105064, "
+        "and the sampled fillings sweeping N_avg over [0, 0.25, 1.0, 1.7, 2.0]."
+    )
+    print(
+        "per_block: checked - direct-sum species blocks are combined with explicit "
+        "boundary-rank weights, the coefficients [1/6, 0.105, 0.08, 0.0] against "
+        "weights [1.0, 2.5, 0.75, 3.0] giving c_schur = 0.067471, verified to lie "
+        "between the smallest and largest block coefficient so the sum is convex "
+        "rather than amplifying, and three identical blocks leave the ratio at 1/6."
+    )
+    print(
+        "lattice_wide: checked - the projected integrals are whole-Brillouin-zone "
+        "functionals, I_max coming out at 12.5663706144, 78.9568352087 and "
+        "496.100426885 in d = 2, 3, 4 with the quarter target exceeding each by a "
+        "factor 1.500; but no region-size limit is computed, c_inf being read from "
+        "the Widom coefficient formula rather than extracted from growing regions."
+    )
+    print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 78)
 

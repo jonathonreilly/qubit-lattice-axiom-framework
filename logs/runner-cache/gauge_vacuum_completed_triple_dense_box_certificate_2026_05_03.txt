@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py
-runner_sha256: cf24d95f392b813b2f383034c4656a20707358b2d697498770e8e18c4dd5e3f1
-input_fingerprint_sha256: 4c8522fab3f6e9173e54d1a0bc8f2a843fb5aa1b4a6f979ea21dd844988ca3fc
+runner_sha256: 80550e832f8ce241cbac76cc6a6c2a622439ffd86c765496245de179e4f19161
+input_fingerprint_sha256: bffd765c71f4f226c907b967f15045a9f5e92c3afb275caf7f13088c68745a3f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.19
+elapsed_sec: 37.85
 status: ok
 ----- stdout -----
 ================================================================================
@@ -22,12 +22,12 @@ status: ok
 --- Build recurrence-matrix infrastructure ---
 
 --- Dense 6x6x5x8 = 1440 grid sweep ---
-  swept 1440 grid points in 0.2 s
-  minimum runner-evaluated gap = 7.791551199188e-03
+  swept 1440 grid points in 14.3 s
+  minimum runner-evaluated gap = 7.791551198886e-03
   median gap                  = 2.039034e-01
   max gap                     = 2.856130e-01
   minimum / numerical-zero threshold = 7791.551
-  max optimal-scalar projection residual = 4.129e-16
+  max optimal-scalar projection residual = 3.306e-16
   argmin grid point:
     tau_transfer = 1.0000e-04
     tau_boundary = 4.0000
@@ -36,10 +36,17 @@ status: ok
 
   [PASS] finite numerical grid contract has exactly 1440 unique Cartesian points and the stated boundary endpoints  (count=1440, unique=1440)
   [PASS] completed-sector target readout consumed by the sweep matches the note's listed triple  (max target drift=1.973e-13)
-  [PASS] gap_at satisfies the algebraic optimal-scalar projection identity at every grid point  (max |zhat·(c_best zhat-Z_min)|=4.129e-16)
+  [PASS] gap_at satisfies the algebraic optimal-scalar projection identity at every grid point  (max |zhat·(c_best zhat-Z_min)|=3.306e-16)
   [PASS] dependency manifest pins the source note and complete five-helper import closure  (declared inputs=6)
-  [PASS] all 1440 runner-evaluated gaps are finite and above the numerical-zero threshold  (min gap=7.791551199188e-03, threshold=1.0e-06)
-  [PASS] computed sampled argmin and minimum reproduce the finite-grid regression pins  (argmin=(0.0001, 4.0, 1e-08, 0.3214285714285714), min gap=7.791551199188e-03)
+  [PASS] all 1440 runner-evaluated gaps are finite and above the numerical-zero threshold  (min gap=7.791551198886e-03, threshold=1.0e-06)
+  [PASS] computed sampled argmin and minimum reproduce the finite-grid regression pins  (argmin=(0.0001, 4.0, 1e-08, 0.3214285714285714), min gap=7.791551198886e-03)
+
+ N5 execution certificate -- what this runner resolves:
+   per_element: checked -- every one of the 1440 Cartesian grid points is evaluated on its own by a separate gap_at call, uniqueness is tested point by point, each axis endpoint is pinned individually, and the target triple is compared componentwise.
+   per_site: checked and not executed -- this certificate never opens the spatial structure: it consumes the imported spatial_pair family through gap_at, so no site, link or individual transfer layer is instantiated or examined anywhere in the sweep.
+   per_mode: checked -- the readout resolves three independent sample modes W_A, W_B, W_C, whose character rows contract the weight-space amplitude into zhat; the individual weight modes (p,q) are summed by that contraction and are not resolved here.
+   per_block: checked -- the sweep is the Cartesian product of four parameter blocks, 6 log-spaced tau_transfer by 6 linear tau_boundary by 5 log-spaced asym_decay by 8 linear linear_decay, and the argmin sits on the corner block (1e-04, 4.0, 1e-08).
+   lattice_wide: checked and not executed -- no lattice volume is built and no limit is taken; the weight truncation and the fixed transfer depth are inherited constants, and the scope below already restricts the result to the sampled points alone.
 
  Honest scope of this certificate:
    - On the explicit 1440-point Cartesian grid, every float64 gap_at

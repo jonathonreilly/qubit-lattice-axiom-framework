@@ -556,6 +556,58 @@ def aggregate_sharpened_obstruction() -> Dict[str, bool]:
 
 
 # ---------------------------------------------------------------------------
+# N5 execution certificate (print-only; adds no check and no verdict)
+# ---------------------------------------------------------------------------
+
+def n5_execution_certificate() -> None:
+    """Report the resolution granularity actually exercised by this runner."""
+    print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 78)
+    print(
+        "  per_element: the matrix unit is the atom this runner actually "
+        "manipulates - all nine E_ij are built explicitly as "
+        "P_i U_C3^((i-j) mod 3) P_j, flattened into the columns of a 9x9 array "
+        "whose rank is required to be 9 at tol=1e-10, and the six off-diagonal "
+        "units are additionally tested one at a time for nonzero Frobenius norm "
+        "above 1e-10."
+    )
+    print(
+        "  per_site: checked and not executed - the only lattice object anywhere "
+        "in the file is the symbol Lambda inside the algebra name A(Lambda); "
+        "Section 0 opens already in momentum labels, printing each corner with its "
+        "translation eigenvalue triple, so the position sum has been diagonalized "
+        "before the first check runs and nothing indexed by a site vector is ever "
+        "formed."
+    )
+    print(
+        "  per_mode: each hw=1 corner is carried through the argument separately - "
+        "(1,0,0), (0,1,0) and (0,0,1) are printed with their exact translation "
+        "eigenvalue triples (-1,1,1), (1,-1,1) and (1,1,-1) and with their images "
+        "under the C_3[111] cycle, and the decisive contrast in Vector 6 is read "
+        "corner by corner, where H_broken = diag(1,2,3) gives three distinct "
+        "diagonal expectations while the C_3-symmetric H gives three equal ones."
+    )
+    print(
+        "  per_block: the runner settles the block question negatively and "
+        "exhaustively - every proper subspace of C^3 is enumerated, the three "
+        "single-corner lines and the three coordinate-pair planes, and each is "
+        "shown not to be C_3-invariant, while the commutant linear system returns "
+        "null dimension 9 minus rank equal to 1, so the center carries no classical "
+        "block label either."
+    )
+    print(
+        "  lattice_wide: checked and not executed - the reconstruction vector that "
+        "would carry a whole-lattice statement never leaves C^3: it performs one "
+        "unitary change of basis obtained by diagonalizing a seeded Hermitian 3x3 "
+        "draw, with no lattice volume, no boundary condition and no limit taken, "
+        "and the three continuum conclusions of that vector are recorded as literal "
+        "constants."
+    )
+    print()
+
+
+# ---------------------------------------------------------------------------
 # Main runner
 # ---------------------------------------------------------------------------
 
@@ -726,6 +778,8 @@ def main() -> int:
     print("=" * 78)
     print(f"SUMMARY: {pass_count} PASS, {fail_count} FAIL")
     print("=" * 78)
+    print()
+    n5_execution_certificate()
     if fail_count == 0:
         print("ROUTE 5 SHARPENED OBSTRUCTION: VERIFIED")
         print()

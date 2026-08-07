@@ -169,6 +169,44 @@ def main() -> int:
     check("current result is a no-go for value-only inverse-square closure", True)
     check("positive target is a typed q-coordinate selector theorem", True)
 
+    banner("N5 execution certificate")
+    print(
+        f"per_element: the {len(alternatives)} coordinate maps are resolved value by value -- each "
+        f"contributes its own exact (q_E, rho_E) pair, {2 * len(alternatives)} rationals in total, "
+        f"computed by exact Fraction arithmetic from q_T={q_t} and lambda={lambda_sq}; the "
+        f"selected q-coordinate pair is q_E={q_e_target}, rho_E={rho_e_target} and the increment "
+        f"map gives q_E={alternatives['increment_coordinate'][0]}, "
+        f"rho_E={alternatives['increment_coordinate'][1]}, with no float or tolerance anywhere."
+    )
+    print(
+        "per_site: this class is checked and not executed -- the runner's only structured object "
+        "is a name-keyed dictionary of coordinate maps, and the T-side calibration enters as the "
+        f"single granted scalar q_T={q_t} with rho_T={rho_t}; there is no site index, no arm sum, "
+        "and therefore no site-resolved lift to evaluate or compare."
+    )
+    print(
+        f"per_mode: genuinely exercised, on the two-channel ratio itself -- w_E={w_e} and w_T={w_t} "
+        f"give kappa={kappa} and the inverse-square value lambda={lambda_sq}, and the entire "
+        "question this gate poses is which coordinate that E-versus-T mode ratio multiplies; the "
+        "mode content is fixed and exact, and it is the coordinate, not the mode ratio, that the "
+        "current bank fails to select."
+    )
+    print(
+        f"per_block: the coordinate maps form the block structure here -- {len(alternatives)} "
+        f"T-calibrated maps collapse to {len({v for v in alternatives.values()})} distinct exact "
+        "outcomes, because the rho-coordinate and increment-coordinate blocks coincide at "
+        f"q_E={alternatives['rho_coordinate'][0]} and the direct-square and inverse-q blocks "
+        f"coincide at q_E={alternatives['inverse_q_coordinate'][0]}; exactly one of the "
+        f"{len(alternatives)} blocks reaches rho_E={rho_e_target}."
+    )
+    print(
+        "lattice_wide: checked and not executed as a resolution class -- the widest thing this file "
+        "actually runs is a bank-wide absence scan over the lowercased concatenation of seven "
+        "authority notes, which resolves whether a phrase occurs and nothing about any amplitude, "
+        "while the genuinely global object, a theorem selecting the multiplicative lift coordinate, "
+        "is precisely what the note reports as absent and what this gate exists to leave open."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

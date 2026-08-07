@@ -307,6 +307,50 @@ def main() -> int:
     for label, marker in banned_markers:
         check(f"note avoids overclaim marker: {label}", marker not in note)
 
+    print("\nPART 6: N5 execution certificate")
+    marker_total = sum(len(v) for v in REQUIRED_MARKERS.values())
+    print(
+        "per_element: checked -- the source map is a diagonal on four carrier coordinates and "
+        "the runner works with those entries one at a time, never with a norm or an aggregate. "
+        f"Each of the {len(source_cases)} channel-scalar cases is tested separately for three "
+        f"properties, giving {3 * len(source_cases)} entry-level assertions, and the authority "
+        f"side resolves {marker_total} required markers plus "
+        f"{len(SOURCE_SLOT_ABSENT_MARKERS)} absent source-slot markers individually. Everything "
+        "is exact Fraction equality."
+    )
+    print(
+        "per_site: checked and not executed -- the carrier coordinates (u_E, u_T, delta_A1 u_E, "
+        "delta_A1 u_T) are already contracted over the support before this runner sees them, so "
+        "the seven sites have been summed away and cannot be recovered. No site enters the "
+        "preparation map, and the no-go is not a statement about any site."
+    )
+    print(
+        "per_mode: checked, and the no-go is stated most sharply at this granularity -- the "
+        "preparation is diagonal in the two channels with independent scalars a_E and a_T, and "
+        "what a per-mode rescaling can and cannot do is fully separated by the run: it moves the "
+        f"cross-mode shell ratio by exactly a_T/a_E, taking the canonical inverse-Schur choice "
+        f"a_E = 1/w_E, a_T = 1/w_T from -2 to {canonical_eff.shell_te}, while leaving both "
+        f"per-mode center-over-shell ratios untouched at q_E = {base.q_e} and q_T = {base.q_t}. "
+        "The quantity the campaign needs is one of the invariants, not the one that moves."
+    )
+    print(
+        "per_block: checked, and it is where the obstruction actually lives -- the map "
+        "diag(a_E, a_T, a_E, a_T) reuses the same scalar on the shell block and on the center "
+        "block of a given channel, and that repetition is exactly why the center-over-shell "
+        "ratio cancels. Breaking it is executed too: allowing separate block scalars makes q_E "
+        f"move by b_E/a_E, the run pins the required tilt at {required_be_over_ae_from_base} "
+        f"from a readout-only {base.rho_e}, and holding q_T fixed forces b_T/a_T = 1, though "
+        "that last point is shown by two witnesses rather than solved."
+    )
+    print(
+        "lattice_wide: checked and not executed -- there is no lattice, no volume and no limit "
+        "in this runner, so nothing whole-system is on offer. One nuance is worth recording in "
+        f"the other direction: the channel-scalar invariance is structural rather than "
+        f"sample-limited, since a_X cancels identically between the center and shell entries of "
+        f"the same channel, and the {len(source_cases)} listed cases together with the canonical "
+        "inverse-Schur choice instantiate that cancellation rather than establish it."
+    )
+
     print("\nTOTAL: PASS=%d, FAIL=%d" % (PASS, FAIL))
     if FAIL:
         return 1

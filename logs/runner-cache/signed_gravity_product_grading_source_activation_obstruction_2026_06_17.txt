@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.py
-runner_sha256: e9c876cc9e59fb45e6ce11ffac57dab93cd009f6af02e6591f87b45280728f35
+runner_sha256: 4e55029b2ed938dff9e3b2c4a95ba587593b2e106d36357e3e14ed04ca3b6229
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,6 +26,18 @@ SIGNED GRAVITY PRODUCT-GRADING SOURCE-ACTIVATION OBSTRUCTION
 [PASS] Gamma source only fails action-reaction locked table  (ATTRACT,UNBALANCED,UNBALANCED,REPEL)
 [PASS] Gamma response only fails action-reaction locked table  (ATTRACT,UNBALANCED,UNBALANCED,REPEL)
 [PASS] Gamma source plus Gamma response gives locked table  (ATTRACT,REPEL,REPEL,ATTRACT)
+
+========================================================================================
+N5 execution certificate (print-only; adds no check and no counter)
+========================================================================================
+per_element: resolved as the two diagonal entries of a 2x2 coefficient -- every coefficient in the tested class is a*I + b*Gamma with Gamma = diag(1, -1), so its matrix is diagonal and the object this whole obstruction concerns is the pair of numbers sitting on that diagonal. The even coefficient places equal entries there, the odd one places opposite entries, and the locked-table gate reduces each entry further to its sign before pairing them across the four ordered sector pairs, so every verdict is decided entry by entry and never by a norm.
+per_site: resolved by an independent variation at each of the 17 packet points -- source_from_variation walks an index over the whole density array, perturbs the field at that single index by step 1e-6 while holding every other index fixed, forms the symmetric difference quotient of the action at that point, and stores it in its own slot before any summation happens. Each of the 17 sites therefore receives its own derivative rather than a single collective one, and the sweep is repeated independently for each of the two sectors.
+per_mode: resolved sector by sector -- the two eta labels are the +1 and -1 eigen-sectors of the product grading, and the source loop takes them one at a time, reading that sector's own coefficient off the diagonal and integrating that sector's active source alone. The carrier itself is certified mode-wise too: Gamma squares to the identity and is carried to minus itself by the orientation exchange R, which is what makes the two sectors genuinely opposite labels rather than a relabeling of one.
+per_block: resolved as the even/odd split of the coefficient algebra -- under conjugation by R the span of I and Gamma separates into an invariant block, the multiples of I, and an anti-invariant block, the multiples of Gamma, and each of the four named coefficients is sorted into one block, the other, or neither. The obstruction is then a block-spanning statement established twice over: least squares against the even-plus-spectator block alone leaves residual 3.889e+00, while adjoining the odd block drops it to 0.000e+00 below TOL = 1e-10, with the whole weight landing on Gamma.
+lattice_wide: executed as a fixed 17-site total, and scoped carefully here -- the packet enters the result through exactly one whole-array sum, and because packet_density normalizes rho to unit total that sum collapses to the mass times the sector coefficient with no residual dependence on the Gaussian's center 8.0 or width 2.2 whatsoever. The global quantity is therefore genuinely computed across the entire packet, but the packet shape is non-load-bearing by construction. One fixed size of 17 is run, no size is varied, no limit is taken, and this one-dimensional packet is not the Z^3 qubit lattice.
+Live figures at print time, since finite-difference quotients carry environment-dependent roundoff while the verdicts do not: even source [2.75 2.75], spectator source [0. 0.], odd Gamma source [ 2.75 -2.75], all judged at atol 1e-9 against their exact targets. The sector coefficients, the sign table, and the added-dimension count are exact integers and are quoted literally.
+Scope of the two opening checks: they are lowercase substring tests against two notes on disk and resolve no matrix element, no sector, and no block. They inventory authority text only; every quantitative claim certified above comes from the thirteen checks after them.
+Determinism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in this runner. The only sweeps are a fixed 17-point packet grid, a fixed two-sector loop, and a fixed four-element list of ordered sector pairs; the finite-difference step 1e-6 and the tolerances 1e-9 and 1e-10 are source literals quoted as written. Both least-squares calls solve small fixed systems with constant entries.
 
 INTERPRETATION
   The product grading supplies the odd label carrier Gamma.

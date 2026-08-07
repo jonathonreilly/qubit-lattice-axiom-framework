@@ -577,6 +577,82 @@ else:
     check("B", "forbidden promotion strings absent", False)
 
 # ----------------------------------------------------------------------
+# N5 execution certificate (reporting only: adds no check, moves no count)
+# ----------------------------------------------------------------------
+print("== N5 execution certificate: what this runner resolves ==")
+
+_dim = B.shape[0]
+_skew_values = (1, 2)
+_gram_spectrum = sorted(set(gram_eigs.keys()), key=lambda v: -sp.N(v))
+
+print(
+    "per_element: resolved exactly, entry by entry. The mixing rotation is written "
+    "out as a rational Givens matrix built from 3/5 and 4/5 and certified orthogonal "
+    f"by Q Q^T - I collapsing to the zero {_dim} x {_dim} matrix, antisymmetry is "
+    f"checked as B + B^T over all {_dim * _dim} entries, and every determinant and "
+    "endpoint value is an exact rational - det(I + B) = 10, z(0) = 1, z(1) = 85/64. "
+    "The witness readouts are likewise exact closed forms rather than samples: "
+    "z W' = 1 - (1/10) sin(log z) for the cos witness, z W' = 1 + 3 (log z)^2 for W_G."
+)
+print(
+    "per_site: checked and not executed. This runner has no lattice, no site index "
+    "and no register count anywhere - the 4-dimensional space it works in is a "
+    "source/amplitude coordinate space carrying a symplectic pairing, and the domain "
+    "the license clause quantifies over is the positive real half-line of a scale "
+    "variable. Nothing here is indexed by position, so no site-resolved amplitude "
+    "exists to report."
+)
+print(
+    "per_mode: resolved with amplitudes, and this is the sharpest granularity in the "
+    f"amplitude half of the runner. The antisymmetric operator is given the skew mode "
+    f"pair {_skew_values}, and the determinant is then reconstructed mode by mode as "
+    f"(1 + 1^2)(1 + 2^2) = 10 rather than cited; the Gram spectrum of the inverse "
+    f"comes back as exactly {_gram_spectrum}, that is the reciprocal squares of the "
+    "same two modes; and the amplitude branch factorizes per mode as "
+    "z(t) = (t^2 + 4)(t^2 + 16)/64, one positive conjugate-pair factor for each mode."
+)
+print(
+    "per_block: resolved, and the block structure is deliberately broken before use. "
+    "The source object is assembled as two 2 x 2 antisymmetric blocks of skew "
+    "strengths 1 and 2, and is then conjugated by the exact rational Givens rotation, "
+    "which mixes index 0 with 2 and 1 with 3 so that the working matrix is no longer "
+    "block-diagonal - the block content survives only as the invariant mode pair "
+    "recovered above. On the record side the block granularity is the two-outcome "
+    "sharp record with weights (1/2, 1/2) and values +-1, from which E_0[eps] = 0 and "
+    "E_0[eps^2] = 1 are recomputed."
+)
+print(
+    "lattice_wide: checked and not executed, and the missing global license is "
+    "precisely this note's obstruction. Nothing global is constructed, no volume or "
+    "limit is taken, and the gap the note names - a retained supplier for the "
+    "curvature clause (NU), reduced here to the response clause (BR) - is a "
+    "repository-wide licensing fact. The runner probes it by scanning the ledger and "
+    "finding zero retained-grade rows in the relevant vocabulary, which is evidence "
+    "of absence rather than a derivation, and is exactly why the clause stays open."
+)
+print(
+    "  scope: the T9 ledger scan applies its regular expression to row identifiers "
+    "alone. A retained-grade supplier whose claim_id happened not to spell out "
+    "curvature, barrier, response-bound or resolution vocabulary would pass through "
+    "the filter unseen, so the zero-match result bounds what is findable by name, not "
+    "what exists."
+)
+print(
+    "  scope: Lemma N is executed as verification, not as a proof of the comparison "
+    "theorem. The logistic and super-logistic comparison functions are exhibited in "
+    "closed form and confirmed to solve their ODEs with the right initial value, and "
+    "their blow-up points are checked exactly at one instance each (c = 2 nu giving "
+    "u* = u1 - log 2); the general comparison argument that turns those solutions into "
+    "the bound is carried by the note's prose, not by this execution."
+)
+print(
+    "  scope: every selection statement is computed over the five-member probe "
+    "p in {0, 2, 1, 1/2, -1/2} rather than over all real p, and of the 38 checks 6 "
+    "are ledger-key or Markdown scans while 32 compute. The runner is fully "
+    "deterministic: no RNG stream and no optimizer, with exact SymPy throughout."
+)
+
+# ----------------------------------------------------------------------
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 sys.exit(0 if FAIL == 0 else 1)

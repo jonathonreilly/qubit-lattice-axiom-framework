@@ -1,0 +1,43 @@
+# ai/execution — AI execution surface (never merges)
+
+Standing NON-science branch: the durable, versioned home for AI
+planning/targeting surfaces — TOE closure scorecard, and (as they accrue)
+campaign briefs, dispatch specs, strategy notes. Established at owner request
+2026-08-07.
+
+## Contract
+
+- **This branch NEVER merges into `main`.** It is an orphan root (no shared
+  history), so `git merge` refuses it as unrelated histories — a structural
+  guard, not just a convention. `main` remains the sole authority for science
+  content and audit status; everything here is derived, non-authoritative
+  planning material.
+- **Direct pushes are allowed here; `main` stays PR-only.** Commit messages
+  carry `[skip ci]` so branch pushes don't trigger workflow runs.
+- **The audit pipeline reads `main`'s tree only** — files here are invisible
+  to the citation graph BY DESIGN. Never copy or check these files out into a
+  `main` working tree: untracked docs in a working tree pollute the audit
+  pipeline.
+- **Language rules:** framework-terms-only applies to `main` PRs and notes,
+  not here. Internal planning vocabulary (root labels, fanout rankings) is
+  fine on this branch and must not migrate into science surfaces.
+- **Pointer legend:** backticked `project_*` / `feedback_*` names are Claude
+  session-memory pointers (local to the operating machine), not repo paths.
+  References to `docs/...` files resolve on `origin/main`, not on this branch.
+
+## Read (from any checkout, without touching your working tree)
+
+```bash
+git fetch origin ai/execution --quiet
+git show origin/ai/execution:TOE_SCORECARD.md
+```
+
+## Edit flow
+
+```bash
+git worktree add /tmp/ai-exec-wt ai/execution
+# edit files in /tmp/ai-exec-wt
+git -C /tmp/ai-exec-wt commit -am "chore(ai): <what moved> [skip ci]"
+git -C /tmp/ai-exec-wt push origin ai/execution
+git worktree remove /tmp/ai-exec-wt
+```

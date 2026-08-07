@@ -165,6 +165,44 @@ def main() -> int:
         "large-UV attractor is misplaced; successful point requires UV selection",
     )
 
+    print()
+    print("N5 execution certificate (print-only; registers no check and moves no counter)")
+    print("-" * 88)
+    print(
+        "per_element: thin -- the only indexed object anywhere in this runner is the 4-entry RG state "
+        "(g1, g2, g3, y_t), and it is handled componentwise for a reason: the gauge triple is integrated to M_Pl "
+        "once and reused, while y_t is read back at index 3 to build m_t. There is no matrix, operator or field "
+        "element in this file, so no element-resolved lattice quantity is executed and none is claimed."
+    )
+    print(
+        "per_site: checked and not executed -- no lattice is instantiated and no site is ever addressed. The "
+        "framework side reaches this runner only as already-reduced canonical scalars (plaquette, u0, alpha_bare, "
+        "alpha_s(v)) imported from canonical_plaquette_surface; they are single numbers before this file starts, and "
+        "everything else here is standard continuum RGE input. A site-resolved reading of this route foreclosure "
+        "would be fabricated."
+    )
+    print(
+        "per_mode: checked and not executed -- there is no spectrum, no eigenbasis and no normal-mode decomposition "
+        "at any point. What runs is a 4-dimensional first-order ODE in coupling space, integrated with RK45 at "
+        "rtol=1e-9, atol=1e-11 and max_step=0.5; its variables are running couplings rather than modes, and no "
+        "mode-resolved quantity is produced or compared."
+    )
+    print(
+        "per_block: exercised in exactly one coarse sense, which the run uses operationally -- at one loop the gauge "
+        "block (g1, g2, g3) closes on itself independently of y_t, and that is why the gauge triple is flowed up to "
+        f"M_Pl a single time and shared across all {uv_grid.size} ultraviolet scan points instead of being recomputed "
+        "per point. No finer block structure exists here, so the gauge/Yukawa split is the whole of what this runner "
+        "can honestly certify at block granularity."
+    )
+    print(
+        "lattice_wide: checked and not executed -- nothing of any spatial extent is simulated, so there is neither a "
+        "finite-N statement nor any limit to take. The foreclosure is a statement about a "
+        f"{uv_grid.size}-point ultraviolet scan of y_t(M_Pl) spanning {uv_grid.min():g} to {uv_grid.max():g}, flowed "
+        "between log(M_Pl) and log(v_ew) and compared against a 5% band around the external 172.69 GeV comparator; "
+        "it carries no volume dependence, and the docstring's own exclusion of the lattice Ward boundary as input is "
+        "precisely why no whole-lattice quantity appears."
+    )
+
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     print("=" * 88)

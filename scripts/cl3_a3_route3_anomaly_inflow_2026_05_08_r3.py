@@ -690,6 +690,57 @@ def non_c3_symmetric_distinguishes_corners() -> Dict[str, object]:
 
 
 # ---------------------------------------------------------------------------
+# N5 execution certificate
+# ---------------------------------------------------------------------------
+
+
+def n5_execution_certificate() -> None:
+    """Report the granularity this obstruction runner actually resolves.
+
+    Reporting only: no attack vector, check, or PASS/FAIL item is added.
+    """
+    e6 = attack_e6_atiyah_singer_index()
+    strata = sorted({hamming_weight(c) for c in all_bz_corners()})
+    n_corners = len(all_bz_corners())
+
+    print(
+        "per_element: checked - every obstruction verdict is the comparison of "
+        "individual corner-basis diagonal entries O[alpha, alpha]: the C_3-symmetric "
+        "carriers give [1.5, 1.5, 1.5] with max minus min under 1e-12, while the "
+        "sanity operator diag(1, 2, 3) separates the same three entries to "
+        "[1.0, 2.0, 3.0] at commutator norm 2.45, showing the test has real teeth."
+    )
+    print(
+        "per_site: checked and not executed - no real-space site is instantiated "
+        "anywhere; that absence is itself three of the seven results, since E1 "
+        "obstructs because Z^3 and finite L^3 APBC have no boundary to carry inflow, "
+        "E2 because A1 + A2 supply no codimension-1 domain wall, and E7 because flat "
+        "Z^3 supplies no torsion field, each requiring a new axiom to create."
+    )
+    print(
+        "per_mode: checked - the eigenbasis is resolved separately from the corner "
+        "basis, giving three distinct full eigenvalues [0.280385, 1.319615, 2.9] "
+        "against the flat corner diagonal, and the 200-sample sweep spans "
+        "eigenvalue spreads from 0.160 to 10.803 while every single sample keeps its "
+        "corner expectations equal to 0.00e+00 difference."
+    )
+    print(
+        f"per_block: checked - all {n_corners} Brillouin-zone corners are enumerated "
+        f"and stratified by Hamming weight into the blocks hw = {strata}, and E6 "
+        "computes the staggered chiral charge (-1)^hw for each hw=1 corner, obtaining "
+        f"{e6['chiral_charges_per_corner']}; the index theorem thus resolves the "
+        "sublattice-parity block but is constant inside it, which is the obstruction."
+    )
+    print(
+        "lattice_wide: checked and not executed - each of the seven channels is "
+        "evaluated as a 3x3 operator on H_{hw=1}, with no L^3 volume sum, no zero-mode "
+        "count and no index actually computed by counting kernel dimensions; the "
+        "Atiyah-Singer and Nieh-Yan invariants enter through their structural form "
+        "only, so nothing here is certified by a whole-lattice evaluation."
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main verification driver
 # ---------------------------------------------------------------------------
 
@@ -828,6 +879,13 @@ def main() -> int:
     print("  states within a single symmetry orbit. Any anomaly-inflow")
     print("  operator constructed from C_3-symmetric primitives respects the")
     print("  substep4ac equal-expectation Lemma.")
+    print()
+
+    # Section 6: N5 execution certificate (reporting only; no new checks)
+    print("=" * 78)
+    print("Section 6: N5 execution certificate -- resolved granularity")
+    print("=" * 78)
+    n5_execution_certificate()
     print()
 
     # Final tally

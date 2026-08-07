@@ -610,6 +610,58 @@ def test_t14_runner_seal() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State what this runner resolves at each canonical granularity."""
+    corners = boolean_lattice_corners(4)
+    weights = [hamming_weight(n) for n in corners]
+    multiplicities = tuple(weights.count(k) for k in range(5))
+
+    print()
+    print("=" * 76)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 76)
+    print(
+        "per_element: the Rota-Baxter machinery is exercised on individual "
+        "algebra elements rather than assumed — the pole-part projector is "
+        "applied to a canonical Laurent test element and shown to reproduce "
+        "itself under a second application, the weight +1 identity "
+        "pi(a)pi(b) = pi(pi(a)b + a pi(b) - ab) is verified on an explicit pair "
+        "of elements, and the depth-1 Birkhoff pieces -pi(phi) and (id - pi)(phi) "
+        "are formed elementwise and recombined."
+    )
+    print(
+        "per_site: checked and not executed — no position-space lattice is built "
+        "anywhere in this runner; the 16 objects it enumerates are Brillouin-zone "
+        "corners of the taste decomposition, which carry momentum labels rather "
+        "than positions, so there is no site variable for a site-resolved claim "
+        "to range over."
+    )
+    print(
+        f"per_mode: every corner is resolved individually and that is where the "
+        f"exponent mismatch appears — all {len(corners)} corners of 2^[4] are "
+        f"enumerated, each carrying its own Hamming weight, the level sets come "
+        f"out with multiplicities {multiplicities} matching binomial(4, k) and "
+        f"forming {len(set(weights))} S_4 orbits, and summing those per-corner "
+        f"weights gives {sum(weights)} against the framework target 16."
+    )
+    print(
+        "per_block: the block structure at issue is the A_- (+) A_+ splitting "
+        "Manchon II.5.1 requires, and the runner separates the two cases — the "
+        "imported pole-part projector is confirmed idempotent so it does split "
+        "the algebra into complementary blocks via pi and id - pi, while the "
+        "substrate's own partial-sum Rota-Baxter map is not idempotent and "
+        "supplies no such splitting, which is obstruction G2."
+    )
+    print(
+        f"lattice_wide: checked and not executed — no volume, ensemble or "
+        f"thermodynamic limit is taken; the widest quantity formed is a count "
+        f"over one hypercube, Sigma hw(n) = d 2^(d-1) giving {sum(weights)} at "
+        f"d = 4, and the numerical consequence alpha_LM^32 sitting a further 16 "
+        f"powers below alpha_LM^16, which is a substrate-counting fact rather "
+        f"than anything about lattice extent."
+    )
+
+
 def main() -> int:
     print("=" * 76)
     print("CONNES-KREIMER BOOLEAN-LATTICE IDEMPOTENT-RB SUBSTRATE NARROW NO-GO")
@@ -630,6 +682,7 @@ def main() -> int:
     test_t12_round2_admissions_status()
     test_t13_sensitivity()
     test_t14_runner_seal()
+    n5_execution_certificate()
 
     print()
     print("=" * 76)

@@ -17,8 +17,16 @@ triple intersection, and the ladder distances.  No floating point and no
 randomness appears after the input declaration.
 
 This runner derives no dial value, asserts no no-go, and closes no obligation.
-It excludes one named class of candidate supplies, subject to three walls that
+It excludes one named class of candidate supplies, subject to FOUR walls that
 are stated in the note and echoed in Part D.
+
+Novelty boundary.  The qualitative content of Part A -- that one universal value
+of r cannot reproduce the distinct sector dials -- is PRIOR ART in this repo
+(FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05, section 2.1, which already
+computes a best single universal value and reports that it misses a sector).
+What is new here is only the quantification: exact 5-sigma interval arithmetic,
+an exact minimax, and the common-scale comparators.  See the note's "Prior art"
+section.
 """
 
 from __future__ import annotations
@@ -118,22 +126,55 @@ for a, (ca, sa) in SECTORS.items():
         pull = abs(ca - cb) / sa
         print(f"    {a:16s} vs r* = {float(cb):.6f}: {float(pull):8.1f} sigma")
 
-# the weakest possible single value: the one minimising the largest pull
+# the weakest possible single value: the one minimising the largest pull.
+#
+# EXACT MINIMAX, not a grid scan.  P(r) = max_i |c_i - r| / s_i is a maximum of
+# V-shaped piecewise-linear functions, hence convex and piecewise linear, so its
+# minimum is attained at a breakpoint of the upper envelope.  Every breakpoint is
+# a crossing of a rising branch of one sector with a falling branch of another:
+#     (r - c_i)/s_i = (c_j - r)/s_j   =>   r = (s_i*c_j + s_j*c_i)/(s_i + s_j).
+# Enumerating all such crossings and taking the least value of P is therefore the
+# exact minimax, not an upper bound on it.  (A grid scan would only ever give an
+# UPPER bound, which is the wrong direction for an exclusion claim.)
 print()
 print("  Best-case single r*: minimise the largest pull over the three sectors.")
+print("  Exact minimax over all real r* (envelope-breakpoint enumeration).")
 best = None
-# exact scan on a rational grid fine enough to bracket the optimum, then report
-# the bound.  The bound is what matters, not the optimiser's precision.
-GRID = [Fraction(i, 2000) for i in range(1000, 1801)]
-for rstar in GRID:
+for (ca, sa), (cb, sb) in combinations(SECTORS.values(), 2):
+    rstar = (sa * cb + sb * ca) / (sa + sb)
     worst = max(abs(c - rstar) / s for c, s in SECTORS.values())
     if best is None or worst < best[1]:
         best = (rstar, worst)
 check(
     "even the best single r* is excluded by at least one sector",
     best[1] > K,
-    f"argmin r* = {float(best[0]):.4f}, largest pull there = {float(best[1]):.1f} sigma",
+    f"exact argmin r* = {float(best[0]):.7f}, largest pull there = "
+    f"{float(best[1]):.4f} sigma",
 )
+check(
+    "the exclusion does not depend on the choice of K",
+    best[1] > K,
+    f"T1 holds for every K < {float(best[1]):.4f}; K = {K} is far inside that range",
+)
+
+# ---------------------------------------------------------------------------
+# ROBUSTNESS: the input uncertainties are SYMMETRIC Gaussian linear propagations
+# of PDG inputs, several of which (m_u, m_d, m_s) have strongly ASYMMETRIC
+# published errors.  Symmetrising is only safe if the conclusion has margin
+# against inflating sigma.  These checks report the exact factor by which the
+# quoted sigmas would have to grow before T1 fails, so a reader can compare that
+# factor against the published asymmetry directly instead of trusting the
+# symmetrisation.
+# ---------------------------------------------------------------------------
+print()
+print("  Robustness of T1 to inflated (e.g. asymmetric-error) uncertainties:")
+for (n1, (c1, s1)), (n2, (c2, s2)) in combinations(SECTORS.items(), 2):
+    factor = abs(c1 - c2) / (K * (s1 + s2))
+    check(
+        f"{n1} / {n2} stay disjoint under uniform sigma inflation up to x{float(factor):.2f}",
+        factor > 1,
+        f"exact break-even inflation factor = {float(factor):.3f}",
+    )
 
 
 section("B. EXACT but WALL-CONDITIONAL: the uniform-count ladder")
@@ -183,6 +224,19 @@ check(
     f"distance from r = 1/2 is {float(abs(c-Fraction(1,2))/s):.1f} sigma",
 )
 
+# same asymmetric-error robustness question as Part A, for the ladder distances
+print()
+print("  Robustness of the 'strictly between rungs' finding to inflated sigma:")
+for name in ("down-type quark", "up-type quark"):
+    c, s = SECTORS[name]
+    nearest = min(RUNGS.values(), key=lambda v: abs(v - c))
+    factor = abs(c - nearest) / (K * s)
+    check(
+        f"{name} stays off-rung under sigma inflation up to x{float(factor):.2f}",
+        factor > 1,
+        f"exact break-even inflation factor = {float(factor):.3f}",
+    )
+
 
 section("C. EXACT: what the exclusion does NOT reach")
 
@@ -206,10 +260,15 @@ for name, (c, _) in SECTORS.items():
         "exact inverse; shows the rule-level route is untouched by Part A",
     )
 
+# The existence proof is only meaningful if the one rule genuinely needs THREE
+# DIFFERENT inputs; if the three required weights coincided, the "rule" would be
+# a disguised sector-independent value and Part A would exclude it after all.
+w_required = [1 / (1 + 2 * c) for c, _ in SECTORS.values()]
 check(
-    "so Part A excludes sector-independent VALUES, not sector-blind rules",
-    True,
-    "this is the N5 narrowing and is load-bearing on the claim's wording",
+    "the surviving rule-level route needs three DISTINCT sector inputs",
+    len(set(w_required)) == 3,
+    "so it is genuinely outside the class Part A excludes, not a disguised "
+    "single value; this is the N5 narrowing and is load-bearing on the wording",
 )
 
 
@@ -225,9 +284,15 @@ WALLS = {
         "only; SM Yukawa contributions to the mass anomalous dimension are "
         "flavour-DEPENDENT, so a dial supplied at a different scale need not "
         "equal the registered one",
-    "W3 energy dictionary":
+    "W3 energy dictionary (Part B only)":
         "Part B's weight-to-dial coordinate rides on an explicitly unadopted "
-        "energy dictionary; Part A is independent of it",
+        "energy dictionary; Part A is independent of THIS dictionary",
+    "W4 mass-to-dial dictionary (Part A too)":
+        "the comparators are not measured r; they are computed from PDG masses "
+        "through the C_3-circulant (Brannen) ansatz and the sqrt(m) one-leg "
+        "amplitude identification, which the quark circulant source-law "
+        "boundary note records as NON-RETAINED inputs.  Part A escapes W3 but "
+        "rides W4, which is a dictionary of the same kind",
 }
 for k, v in WALLS.items():
     print(f"  {k}: {v}")
@@ -235,10 +300,11 @@ for k, v in WALLS.items():
           NOTE.exists() and k.split()[0] in NOTE.read_text(encoding="utf-8"))
 
 print()
-check("Part A is independent of walls W3", True,
-      "Part A uses no weight-to-dial coordinate at all")
-check("Part A is NOT independent of walls W1 and W2", True,
-      "both are stated as load-bearing conditions of the claim, not as caveats")
+print("  Part A is independent of W3 (it uses no weight-to-dial coordinate at")
+print("  all), but is NOT independent of W1, W2 or W4.  All three are stated in")
+print("  the note as load-bearing conditions of the claim, not as caveats.")
+print("  'T1 survives if T2 falls' therefore means only that T1 escapes W3 --")
+print("  it does NOT mean T1 is free of dictionary dependence.")
 
 
 section("E. Scope guards")
@@ -252,6 +318,11 @@ if NOTE.exists():
         ("comparator", "note marks its numerics as comparators"),
         ("prior art", "note defers the ladder arithmetic to prior art"),
         ("proposed_retained", "note uses author-side status vocabulary only"),
+        ("FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05",
+         "note credits the prior art that already states Part A qualitatively"),
+        ("W4", "note names the mass-to-dial dictionary wall that Part A rides"),
+        ("does not resolve on this branch",
+         "note is explicit that its comparator source is not present yet"),
     ]:
         check(f"note contains discipline marker: {needle!r}", needle in text, why)
     for forbidden in ["effective_status", "audit_status"]:

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sector_independent_dial_exclusion_bounded_2026_08_07.py
-runner_sha256: 4328dcd3a809621a99e0d8009cd9e546110d68bfb62eadb606325781c2b0a064
-input_fingerprint_sha256: f25c7b3101357dc923be65bd0d2537835984b702866f2cdd9f6299d3095954e3
+runner_sha256: 8f6328b5a0136f444115ff0f8782005bc650a754a21e59b92b2bafb84ae49edc
+input_fingerprint_sha256: 7ebea71807013cd5dcfe7cfb20f76e31d3e3f83babfe98e3049f9cac8410db54
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 
@@ -34,7 +34,14 @@ A. EXACT: the K-sigma registered dial intervals are pairwise disjoint
     up-type quark    vs r* = 0.621090:     95.2 sigma
 
   Best-case single r*: minimise the largest pull over the three sectors.
-  [PASS] even the best single r* is excluded by at least one sector  (argmin r* = 0.5015, largest pull there = 149.5 sigma)
+  Exact minimax over all real r* (envelope-breakpoint enumeration).
+  [PASS] even the best single r* is excluded by at least one sector  (exact argmin r* = 0.5015155, largest pull there = 149.4807 sigma)
+  [PASS] the exclusion does not depend on the choice of K  (T1 holds for every K < 149.4807; K = 5 is far inside that range)
+
+  Robustness of T1 to inflated (e.g. asymmetric-error) uncertainties:
+  [PASS] charged lepton / down-type quark stay disjoint under uniform sigma inflation up to x3.30  (exact break-even inflation factor = 3.297)
+  [PASS] charged lepton / up-type quark stay disjoint under uniform sigma inflation up to x29.90  (exact break-even inflation factor = 29.896)
+  [PASS] down-type quark / up-type quark stay disjoint under uniform sigma inflation up to x4.40  (exact break-even inflation factor = 4.400)
 
 B. EXACT but WALL-CONDITIONAL: the uniform-count ladder
 -------------------------------------------------------
@@ -59,6 +66,10 @@ B. EXACT but WALL-CONDITIONAL: the uniform-count ladder
   [PASS] up-type quark: strictly between rungs  (nearest rung 1, exact distance 0.169029 = 76.7 sigma)
   [PASS] charged lepton: ON the n = 2 rung, within 1 sigma  (distance from r = 1/2 is 0.9 sigma)
 
+  Robustness of the 'strictly between rungs' finding to inflated sigma:
+  [PASS] down-type quark stays off-rung under sigma inflation up to x3.30  (exact break-even inflation factor = 3.302)
+  [PASS] up-type quark stays off-rung under sigma inflation up to x15.34  (exact break-even inflation factor = 15.338)
+
 C. EXACT: what the exclusion does NOT reach
 -------------------------------------------
   The excluded class is: candidate supplies that yield ONE numerical
@@ -69,7 +80,7 @@ C. EXACT: what the exclusion does NOT reach
   [PASS] charged lepton: one rule reproduces the registered dial from w = 0.500005  (exact inverse; shows the rule-level route is untouched by Part A)
   [PASS] down-type quark: one rule reproduces the registered dial from w = 0.445995  (exact inverse; shows the rule-level route is untouched by Part A)
   [PASS] up-type quark: one rule reproduces the registered dial from w = 0.375666  (exact inverse; shows the rule-level route is untouched by Part A)
-  [PASS] so Part A excludes sector-independent VALUES, not sector-blind rules  (this is the N5 narrowing and is load-bearing on the claim's wording)
+  [PASS] the surviving rule-level route needs three DISTINCT sector inputs  (so it is genuinely outside the class Part A excludes, not a disguised single value; this is the N5 narrowing and is load-bearing on the wording)
 
 D. Named walls, echoed from the note
 ------------------------------------
@@ -77,11 +88,16 @@ D. Named walls, echoed from the note
   [PASS] wall stated in the source note: W1
   W2 registration scale: the companion invariance theorem covers flavour-universal QCD running only; SM Yukawa contributions to the mass anomalous dimension are flavour-DEPENDENT, so a dial supplied at a different scale need not equal the registered one
   [PASS] wall stated in the source note: W2
-  W3 energy dictionary: Part B's weight-to-dial coordinate rides on an explicitly unadopted energy dictionary; Part A is independent of it
+  W3 energy dictionary (Part B only): Part B's weight-to-dial coordinate rides on an explicitly unadopted energy dictionary; Part A is independent of THIS dictionary
   [PASS] wall stated in the source note: W3
+  W4 mass-to-dial dictionary (Part A too): the comparators are not measured r; they are computed from PDG masses through the C_3-circulant (Brannen) ansatz and the sqrt(m) one-leg amplitude identification, which the quark circulant source-law boundary note records as NON-RETAINED inputs.  Part A escapes W3 but rides W4, which is a dictionary of the same kind
+  [PASS] wall stated in the source note: W4
 
-  [PASS] Part A is independent of walls W3  (Part A uses no weight-to-dial coordinate at all)
-  [PASS] Part A is NOT independent of walls W1 and W2  (both are stated as load-bearing conditions of the claim, not as caveats)
+  Part A is independent of W3 (it uses no weight-to-dial coordinate at
+  all), but is NOT independent of W1, W2 or W4.  All three are stated in
+  the note as load-bearing conditions of the claim, not as caveats.
+  'T1 survives if T2 falls' therefore means only that T1 escapes W3 --
+  it does NOT mean T1 is free of dictionary dependence.
 
 E. Scope guards
 ---------------
@@ -91,11 +107,14 @@ E. Scope guards
   [PASS] note contains discipline marker: 'comparator'  (note marks its numerics as comparators)
   [PASS] note contains discipline marker: 'prior art'  (note defers the ladder arithmetic to prior art)
   [PASS] note contains discipline marker: 'proposed_retained'  (note uses author-side status vocabulary only)
+  [PASS] note contains discipline marker: 'FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05'  (note credits the prior art that already states Part A qualitatively)
+  [PASS] note contains discipline marker: 'W4'  (note names the mass-to-dial dictionary wall that Part A rides)
+  [PASS] note contains discipline marker: 'does not resolve on this branch'  (note is explicit that its comparator source is not present yet)
   [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
   [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
 
 ================================================================
-TOTAL: PASS=29, FAIL=0
+TOTAL: PASS=37, FAIL=0
 ================================================================
 
 ----- stderr -----

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
-runner_sha256: e9dc3b7793894491e90e638f9aa795a33d181cdca4b6538aa41689fe3c2a1a08
+runner_sha256: 78215366bcb13b500eb85997e91f5a4b68a921e978fa83f05f21b6d5e7aae8f7
 input_fingerprint_sha256: 722df2a9e7dfc78deee2f48106c609ed4101a578b9c7c3baf9580a809b0cad3e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 1.27
 status: ok
 ----- stdout -----
 [PASS] [A] note boundary contains: Claim type:** no_go
@@ -42,6 +42,13 @@ status: ok
 [PASS] [A] kappa=2 gives Q=2/3
 [PASS] [A] AM-GM log objective is stationary at N/2
 [PASS] [A] AM-GM log objective is strictly concave at N/2 (second derivative = -8/N^2)
+
+=== N5 execution certificate: what this runner resolves ===
+  per_element: resolved symbolically at full generality — the two matrices are carried as 3x3 arrays of independent real symbols a0..a8 and b0..b8, the scalar and traceless parts are formed entry by entry from them, and the exactness of the algebra is confirmed on entries rather than norms: the one-parameter conjugator satisfies u u^T - I = zeros(3) as an exact symbolic matrix, and the traceless component's trace simplifies to exactly 0.
+  per_site: checked and not executed — there is no site index, lattice or neighbour relation in this computation. The entire question lives inside one copy of the 3x3 generation matrix algebra: which symmetric bilinear forms on that one algebra are admissible, and whether Frobenius is singled out among them. Nothing about that question changes with where the algebra sits.
+  per_mode: checked and not executed, and the runner shows why that is the right answer rather than a gap. B_{alpha,beta} is invariant under the adjoint action, so it cannot distinguish one mode from another inside an isotype; this is verified explicitly by conjugating a fixed pair of test matrices along the continuous orthogonal family u(t) = ((1 - t^2, 2t), (-2t, 1 - t^2))/(1 + t^2) and finding B_{1,1} exactly unchanged. Any mode basis would therefore return the same two numbers already reported per block.
+  per_block: resolved, and this is where the whole no-go lives. The two C_3 isotype blocks are shown B-orthogonal for every (alpha, beta), the full form is shown to split exactly as (alpha + 3 beta) on the scalar block plus alpha on the traceless block, and each weight is isolated by its own witness, the identity returning 3(alpha + 3 beta) and diag(1, -1, 0) returning 2 alpha. The separation is then made concrete on diag(1, 1, 2), where Frobenius gives 6 while B_{1,1} gives 22 with block weights (4, 1).
+  lattice_wide: checked and not executed — no lattice, volume or thermodynamic limit occurs anywhere. The global sweep that does the work is over the form family instead of over space, and it is exact rather than asymptotic: solving for equal weighted energies gives kappa(lambda) = 2/(1 + 3 lambda) across the whole one-parameter family, returning kappa = 2 at the Frobenius point lambda = 0 and kappa = 1 at lambda = 1/3. Non-uniqueness is therefore already complete at fixed algebra size and no lattice extent could add to it.
 
 Koide Frobenius isotype-weight freedom no-go certificate: PASS
 PASS=31 FAIL=0

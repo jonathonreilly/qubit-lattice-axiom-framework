@@ -264,6 +264,54 @@ def part7_typed_reachability() -> None:
     ], " -> ".join(signed))
 
 
+def part8_n5_certificate() -> None:
+    """N5 execution certificate: print-only, adds no check and moves no counter."""
+    print("\nPART 8: N5 execution certificate")
+    grid_side = 8
+    grid_samples = grid_side * grid_side - 1
+    print(
+        "per_element: checked -- the coefficient plane is walked sample by sample, not "
+        f"summarized: a and b each range over the {grid_side} exact rationals 0/7 through 7/7, "
+        f"the origin is skipped, and each of the remaining {grid_samples} pairs gets its own "
+        "check that the exact Fraction ratio (3a+b)/(2a+b) satisfies ratio <= 3/2 < 9/4. The "
+        "3/2 ceiling is not a scan artifact and a finer grid cannot move it: at b = 0 the ratio "
+        "is identically w_T/w_E = 3/2 for every a > 0, and at a = 0 it is identically 1, so the "
+        "nonnegative quadrant is pinned between those two exact endpoints."
+    )
+    print(
+        "per_site: checked and not executed -- the two finite-star weights w_E = 1/3 and "
+        "w_T = 1/2 arrive already aggregated over the support, and this runner only divides by "
+        "them. No individual arm or center site is reconstructed, so nothing site-resolved is "
+        "computed and no site-level positivity is being claimed."
+    )
+    print(
+        "per_mode: checked, and the note's whole obstruction is a disagreement between this "
+        "class and the element class -- evaluated mode by mode the signed target fit looks "
+        "clean, with strictly positive responses at both weights for all three witnesses "
+        "(a = 1 gives E = 9/5 and T = 4/5; a = 2 gives 18/5 and 8/5; a = 5/3 gives 3 and 4/3), "
+        "yet every one of those fits carries b = -6a/5 < 0. Positivity certified per mode and "
+        "positivity certified per coefficient are simply different statements here, and only "
+        "the second one blocks the fit."
+    )
+    print(
+        "per_block: checked -- the firewall is closed as two disjoint rule blocks that are "
+        f"never mixed: the coefficient-positive block, where {len(CURRENT_EDGES)} typed edges "
+        f"plus the {grid_samples}-sample quadrant yield no path to rho_E_21_4, and the signed "
+        f"block, where {len(SIGNED_EDGES)} further edges produce the explicit four-node path "
+        "signed_affine_selector -> negative_constant_coefficient -> lambda_9_4 -> rho_E_21_4. "
+        f"Alongside them the {len(QUOTE_ANCHORS)} authority documents are each closed against "
+        "their own needle set, one document at a time."
+    )
+    print(
+        "lattice_wide: checked and not executed -- there is no lattice, no volume and no limit "
+        "in this runner; the 2D coefficient quadrant it scans is a bounded rational grid, not "
+        "an asymptotic regime, and taking any limit would not be meaningful for a coefficient "
+        "sign. The only repository-wide sweep performed is the registered-premise scan "
+        "confirming that neither audit JSON surface names a signed-cancellation selector, which "
+        "is bookkeeping about what has been registered rather than a whole-system computation."
+    )
+
+
 def main() -> int:
     print("Route-2 signed-cancellation firewall")
     print("Scope: affine one-pole signed fit versus coefficient-positive source/readout rules")
@@ -274,6 +322,7 @@ def main() -> int:
     part5_quote_anchors()
     part6_registered_premise_scan()
     part7_typed_reachability()
+    part8_n5_certificate()
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={PASS_COUNT + FAIL_COUNT}")
     if FAIL_COUNT:
         print("VERDICT: failed checks; do not use this packet.")

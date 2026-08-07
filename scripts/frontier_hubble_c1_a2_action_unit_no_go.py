@@ -285,6 +285,54 @@ def main() -> int:
         " no-go from Cycle 2 propagates to A2",
     )
 
+    # ------------------------------------------------------------
+    # N5 execution certificate.  Print-only: no check() call is made
+    # here, so PASS_COUNT / FAIL_COUNT are untouched.
+    # ------------------------------------------------------------
+    print()
+    print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE: RESOLUTION GRANULARITY OF THIS ACTION-UNIT NO-GO")
+    print("=" * 78)
+    block_eigs = np.linalg.eigvalsh(H)
+    pa_support = int(round(float(np.trace(P_A).real)))
+    print(
+        "per_element: checked — the finite-trace obstruction is computed here rather than asserted: an "
+        "explicit pair of random Hermitian 4x4 generators is built and their commutator trace evaluated "
+        f"to |Tr[X,P]| = {abs(tr_comm):.2e}, against the Tr(i kappa I_4) = 4 i kappa that a canonical "
+        f"action commutator would demand. The projector P_A is diagonal with exactly {pa_support} unit "
+        f"entries among the {rho_cell.shape[0]} cell basis elements, so c_cell = Tr(rho_cell P_A) = "
+        f"{c_cell:.6f} is an exact element count on the uniform state rho_cell = I/{rho_cell.shape[0]}."
+    )
+    print(
+        "per_site: checked and not executed — the four binary axes indexing the 2^4 cell are internal "
+        "degrees of freedom of a single cell, not lattice sites; the Hamming-weight-one sector selects "
+        "one basis vector per axis but no neighbouring cell, hopping term, or site-to-site transport is "
+        "ever constructed, so nothing here is resolved across a lattice."
+    )
+    print(
+        "per_mode: checked — this is where the rescaling degeneracy is actually resolved: the flow is "
+        f"computed by diagonalizing the block Hamiltonian into its {len(block_eigs)} eigenmodes (spectrum "
+        f"spanning {block_eigs.min():.6f} to {block_eigs.max():.6f}) and giving each one the phase "
+        "exp(-i E_n t / kappa). Every eigenphase depends on the single ratio E_n t / kappa, so the joint "
+        f"rescalings hold mode by mode to {max(max_err_skappa, max_err_ht):.2e}, and no individual mode "
+        "supplies a scale that would pin kappa."
+    )
+    print(
+        f"per_block: checked — the rank-{dim_block} block P_A H_cell is the carrier throughout: amplitudes "
+        f"|<psi1|U|psi0>| = {abs(base_amp):.6f} are evaluated on it, a scalar action shift a={a} moves the "
+        "block amplitude only by a global U(1) phase, and the block trace fixes the Gauss-flux "
+        f"identification lambda = 4 c_cell = {lambda_pin:.6f}. The block therefore delivers a ratio, never "
+        "an absolute unit."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice, no lattice-wide action sum, and no "
+        "continuum or thermodynamic limit is constructed; the single on-package route that would fix "
+        "kappa beyond this block is the Gauss-flux source-unit identification c_cell = 1/(4 G_lambda), "
+        "which reads c_cell as the physical Newton coefficient and is therefore conditional on the "
+        "Clifford phase bridge and hence on (G1) -- shown in Cycle 2 not to follow from axiom 3 alone, "
+        "which is exactly why this runner stops at the block."
+    )
+
     print()
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")

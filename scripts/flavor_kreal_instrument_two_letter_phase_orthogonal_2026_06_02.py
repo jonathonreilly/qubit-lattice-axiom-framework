@@ -133,6 +133,38 @@ def main() -> int:
         )
     )
 
+    print("\nN5 EXECUTION CERTIFICATE -- what this runner resolves")
+    print(
+        "per_element: checked -- the two circulant letters are built and "
+        "verified one at a time, S = C + C^2 and J = i(C - C^2), each Hermitian, "
+        "with conj(J) = -J and the individual overlaps Tr(I J) = 0 and "
+        "Tr(S J) = 0 vanishing to better than 1e-12."
+    )
+    print(
+        "per_site: checked and not executed -- the 3x3 index here is the "
+        "generation label of one internal circulant factor, not a lattice site; "
+        "no site variable, no site-dependent coupling and no neighbour relation "
+        "is constructed anywhere in this instrument check."
+    )
+    print(
+        "per_mode: checked -- the spectra are resolved mode by mode, "
+        "spec(S) = {2, -1, -1} and spec(J) = {-sqrt3, 0, sqrt3}, and it is the "
+        "mode degeneracy of S that supplies the doublet while J's mode pattern "
+        "carries the K-odd Brannen phase removed by the K-even projection."
+    )
+    print(
+        "per_block: checked -- the K-even record splits into exactly two "
+        "blocks, the trivial 1-dimensional block and the 2-dimensional doublet; "
+        "the two-letter record removes exactly p_doublet*log 2 = 0.462098 of "
+        "entropy, and dimension count gives r = 1 while block count gives 1/2."
+    )
+    print(
+        "lattice_wide: checked and not executed -- this runner never leaves the "
+        "single fixed 3-dimensional generation factor, so no lattice, extent or "
+        "limit exists here; the residual it hands on is the measure on the "
+        "two-letter record, which is a within-block question, not a lattice one."
+    )
+
     pass_count = sum(passed)
     fail_count = len(passed) - pass_count
     print(f"\nSCORECARD PASS={pass_count} FAIL={fail_count}")

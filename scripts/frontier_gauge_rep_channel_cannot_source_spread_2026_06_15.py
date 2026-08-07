@@ -152,6 +152,42 @@ check("more distinct observed r (3) than unbroken-colour classes (2) => r is NOT
       n_distinct_r > len(colour_classes), kind="conditional")
 
 
+# ============================================================================
+# (E) N5 EXECUTION CERTIFICATE: what this runner actually resolves.
+# ============================================================================
+print("\n[E] N5 execution certificate -- what this runner resolves")
+print(
+    "  per_element: checked -- the resolved elements are the two supplied "
+    "couplings (a, b): each of the four common scalars s = 0.3, 1.7, 5.0, 0.01 "
+    "is applied and cancels in r to within 1e-12, and the control with distinct "
+    "factors (3a, b) moves r by more than 0.1."
+)
+print(
+    "  per_site: checked and not executed -- the generation circulant "
+    "C (C^3 = I) is declared but never entered: every check evaluates "
+    "r = |b|^2/a^2 from the two scalar couplings alone, so no matrix entry and "
+    "no on-site-versus-hop split at any generation position is formed here."
+)
+print(
+    "  per_mode: checked -- the modes that matter are the weak-isospin "
+    "components inside one multiplet, u against d and nu against e; the colour "
+    "rep is constant on them, and this runner separates u from d only by "
+    "right-handed Y_R = 2/3 vs -1/3 and by the anchors 0.773 vs 0.597."
+)
+print(
+    "  per_block: checked -- the four sectors are grouped into the two "
+    "left-handed multiplet blocks Q_L = (3,2,1/6) and L_L = (1,2,-1/2); a "
+    "colour-rep function is verified constant on each block, giving at most 2 "
+    "classes against 3 distinct observed r values -- the counting bound."
+)
+print(
+    "  lattice_wide: checked and not executed -- nothing in this runner extends "
+    "beyond a finite table of 4 sectors and 2 unbroken-colour classes plus a "
+    "scalar ratio identity; there is no lattice, no volume and no limit over "
+    "which a lattice-wide statement could be formed or falsified."
+)
+
+
 total_pass = ALGEBRA_PASS + CONDITIONAL_PASS
 total_fail = ALGEBRA_FAIL + CONDITIONAL_FAIL
 print(

@@ -157,6 +157,47 @@ def main() -> int:
         check(f"note boundary phrase: {phrase}", phrase in note_flat)
     check("parent note links the P-dep independence no-go", NOTE.name in parent_text)
 
+    n_pairs = len(disjoint_pairs())
+    orbits = sorted({orbit(k) for k in range(3)})
+    print("=" * 88)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 88)
+    print(
+        f"per_element: checked and not executed — no matrix is assembled "
+        f"anywhere in this file; lambda_k enters as the closed-form scalar "
+        f"a + 2b cos(delta + 2 pi k / 3) rather than as an entry or an "
+        f"eigenvalue of a constructed operator, so there is no matrix element "
+        f"here for anything to be resolved against."
+    )
+    print(
+        f"per_site: checked and not executed — the index k labels a C_3 sector "
+        f"of the registered datum, not a lattice position, and no spatial "
+        f"coordinate, neighbour relation or lattice extent is introduced at "
+        f"any point in the countermodel."
+    )
+    print(
+        f"per_mode: the three sector modes k = 0, 1, 2 are resolved one by one "
+        f"— the K/CPT map sigma(k) = -k mod 3 is confirmed to be an involution "
+        f"fixing exactly one label, the mode orbits come out as {orbits}, and "
+        f"lambda_(sigma(k))(-delta) matches lambda_k(delta) within "
+        f"{TOL:g} across all {len(params)} hard-coded (a, b, delta) triples."
+    )
+    print(
+        f"per_block: record blocks are enumerated exhaustively over the 8 "
+        f"subsets of {{0, 1, 2}} — all {n_pairs} disjoint subset pairs satisfy "
+        f"finite additivity, the empty record reads zero, and both the singlet "
+        f"and the doublet collections are invariant under delta -> -delta, for "
+        f"each of the {len(q_values)} unregistered scalings q in {q_values}."
+    )
+    print(
+        f"lattice_wide: checked and not executed — the countermodel lives on a "
+        f"three-element sector label set with no lattice, no volume and no "
+        f"limit of any kind; 6 of the {PASS + FAIL} checks are note and parent "
+        f"substring guards deciding nothing numerical, and the witness itself "
+        f"is the exact structural fact that I_q = q * sum lambda rescales with "
+        f"an unregistered q while the registered datum ([k], lambda_k) does "
+        f"not move."
+    )
     print("=" * 88)
     print(f"SUMMARY: UNORDERED MASS P-DEP RECORD-INDEPENDENCE NO-GO PASS={PASS} FAIL={FAIL}")
     print("=" * 88)

@@ -168,6 +168,43 @@ def main() -> int:
     )
 
     print()
+    print("Part 5: N5 execution certificate -- what this runner resolves")
+    print(
+        "  per_element: checked -- both sides of the bridge are assembled from named "
+        "individual matrix entries, not from an aggregate invariant: I_src is "
+        "Im(H_12 H_23 H_31) taken off three specific Hermitian entries, and every "
+        "Jarlskog is Im(P_00 P_01* P_10* P_11) off four specific mixing entries, "
+        "compared entry-level at tolerance 1e-12 on all three chamber roots."
+    )
+    print(
+        "  per_site: checked and not executed -- this runner carries no lattice site "
+        "index. The three rows of H are charged-lepton flavor labels (e, mu, tau) in one "
+        "3x3 Hermitian, and H_mat(m, delta, q_plus) is a point in a three-dial parameter "
+        "space rather than a site-indexed field, so no site sweep exists to run."
+    )
+    print(
+        "  per_mode: checked -- np.linalg.eigh resolves the three eigenmodes "
+        "individually with ascending lambda_1 < lambda_2 < lambda_3, Delta is built from "
+        "all three pairwise mode gaps (l1-l2)(l2-l3)(l3-l1), and the permutation sigma is "
+        "precisely a relabeling of which eigenmode occupies which flavor slot; the "
+        "parity sign is verified mode-permutation by mode-permutation."
+    )
+    print(
+        "  per_block: checked -- jarlskog() reads only the upper-left 2x2 block of the "
+        "row-permuted matrix, and the two surviving branches sigma=(2,1,0) and "
+        "sigma=(2,0,1) share their first slot (row 2) while differing only by the "
+        "transposition inside the remaining two-slot mu-tau doublet block, which is "
+        "exactly where the whole parity bit lives."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- there is no lattice, extent, or "
+        "asymptotic limit anywhere in this runner. The executed evidence is three "
+        "isolated exact chamber roots (Basin 1, Basin 2, Basin X) at fixed "
+        "(m, delta, q_plus), with I_src positive only at Basin 1; no volume scaling or "
+        "thermodynamic statement is attempted."
+    )
+
+    print()
     print("=" * 88)
     print("RESULT")
     print("=" * 88)

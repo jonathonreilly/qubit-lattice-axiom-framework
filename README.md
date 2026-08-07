@@ -1,9 +1,10 @@
 # ai/execution — AI execution surface (never merges)
 
 Standing NON-science branch: the durable, versioned home for AI
-planning/targeting surfaces — TOE closure scorecard, and (as they accrue)
-campaign briefs, dispatch specs, strategy notes. Established at owner request
-2026-08-07.
+planning/targeting surfaces — agent instructions (`AGENTS.md`, canonical home),
+TOE closure scorecard (`TOE_SCORECARD.md`), and (as they accrue) campaign
+briefs, dispatch specs, strategy notes. Established at owner request
+2026-08-07. Root docs on `main` (`CLAUDE.md`, pointer `AGENTS.md`) point here.
 
 ## Contract
 

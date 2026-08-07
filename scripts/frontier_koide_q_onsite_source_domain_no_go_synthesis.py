@@ -53,6 +53,53 @@ def ktl_from_z(z_value: sp.Expr) -> sp.Expr:
     return sp.simplify((r**2 - 1) / (4 * r))
 
 
+def n5_execution_certificate() -> None:
+    """Report the resolution granularity this runner actually exercises."""
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: entrywise sympy solves are where this file does its work - "
+        "A.2 pushes C diag(a,b,c) C^(-1) - diag(a,b,c) through sp.solve one matrix "
+        "entry at a time and returns exactly [{a: c, b: c}], B.7 collects the six "
+        "off-diagonal entries of alpha*I + beta*C + gamma*C^2 and returns the "
+        "unique [{beta: 0, gamma: 0}], and the decisive Z entries are the exact "
+        "rationals -1/3 on the diagonal and +2/3 off it."
+    )
+    print(
+        "  per_site: the three-generation orbit is carried as three explicit site "
+        "projectors diag(1,0,0), diag(0,1,0) and diag(0,0,1) spanning the diagonal "
+        "function algebra C^3, and A.2 settles invariance at that granularity: "
+        "C3-fixing a diagonal source forces a = b = c, so the fixed onsite source "
+        "space is one-dimensional, the common scalar s*I alone."
+    )
+    print(
+        "  per_mode: checked and not executed - the C3 characters are never formed "
+        "anywhere in the file; only the trivial-character projector P_plus = (I + C "
+        "+ C^2)/3 and its complement appear, C is never diagonalized, and the two "
+        "nontrivial cube-root-of-unity eigenvectors are never separated, so z "
+        "enters as one lumped amplitude on the whole complement instead of a "
+        "mode-resolved coefficient."
+    )
+    print(
+        "  per_block: two C3-isotypic blocks are built and contrasted head-on - "
+        "P_plus and P_perp are checked idempotent, mutually annihilating and "
+        "summing to I3, Z = P_plus - P_perp squares to I3, and this granularity is "
+        "exactly where the result breaks, because the rank-1/rank-2 split admits a "
+        "C3-invariant nonzero zZ that the per_site reading forbids; the obstruction "
+        "this note records IS that disagreement between per_site and per_block."
+    )
+    print(
+        "  lattice_wide: checked and not executed - nothing here leaves a single "
+        "three-element C3 orbit, with no lattice volume, no boundary condition and "
+        "no limit anywhere in the file, and the only document-wide statements are "
+        "section E's lexical sweeps of the note markdown for fixed flag strings, "
+        "which is a text search over one file and not a computation over an "
+        "extended system."
+    )
+    print()
+
+
 def main() -> int:
     a, b, c, alpha, beta, gamma, z = sp.symbols(
         "a b c alpha beta gamma z", real=True
@@ -263,6 +310,8 @@ def main() -> int:
         print(
             "RESIDUAL_Q=derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant"
         )
+        print()
+        n5_execution_certificate()
         return 0
 
     print("VERDICT: source-domain no-go synthesis has failing checks.")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_retained_boundary_source_principle_nogo.py
-runner_sha256: 1defd036c793ba90b81d6de160c65d2d82133642968695dd5744df0d2a4b476e
+runner_sha256: 1d6f54e084db7e70724200cf580a634b3efc18747e1002db83835addbeaa4131
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ========================================================================================================
@@ -22,7 +22,7 @@ SOURCE-CURRENT BASIS
 
 [PASS] retained APS/Wald/Gauss source basis cannot span signed source  (residual=1.414e+00, fitted=[-0. -0.])
 [PASS] gap penalties/constraints alone do not create a Phi source  (residual=1.414e+00, fitted=[-0. -0.])
-[PASS] signed source appears exactly when the cross term is added  (residual=1.110e-16, fitted=[ 1. -1.])
+[PASS] signed source appears exactly when the cross term is added  (residual=4.441e-16, fitted=[ 1. -1.])
 [PASS] retained positive source is orientation-even while desired source is orientation-odd
 
 APS GAP-PROTECTION CHECK
@@ -30,6 +30,16 @@ APS GAP-PROTECTION CHECK
 [PASS] finite gap penalty is not a topological superselection rule  (V_gap min=6.25e+00, midpoint=1.00e+06, max=1.00e+06)
 [PASS] hard gap protection works only as an added admissibility constraint  (allowed_path=[True, True, True, True, False, True, True, True, True])
 
+
+========================================================================================================
+N5 execution certificate (print-only; adds no check and no counter)
+========================================================================================================
+per_element: resolved as single-entry moves on a diagonal boundary operator -- the sector-crossing path is driven by rewriting exactly one entry, the [0,0] slot carrying the unpaired level, while all ten remaining diagonal entries stay pinned at their model values. The source side is decided component by component in the same spirit: each principle term contributes its own two-component column, and every verdict is the residual between the assembled column combination and the target components +1 and -1.
+per_site: checked and not executed -- the boundary operator is a toy spectral model, an eleven-by-eleven diagonal matrix of energy levels with no spatial index standing behind it, and the source objects are two-component sector amplitudes. No coordinate, neighbour relation, or site amplitude is built anywhere in the file, so there is no site-resolved quantity available to resolve and none is claimed.
+per_mode: resolved level by level -- the model carries eleven modes, one unpaired boundary level sitting at plus or minus the gap 0.4 and five symmetric pairs at 0.4 + 0.35*(j+1) for j from 0 through 4, whose positive and negative partners cancel out of eta by construction. eta_delta sorts each level individually into positive, negative, or zero against delta = 1e-9, so the invariant is assembled one mode at a time, and the gap recorded at every scan point is the minimum absolute level, again a per-mode reading.
+per_block: resolved as a paired-versus-unpaired spectral split, and separately as a retained-versus-added partition of the source basis -- the ten paired levels form a block contributing exactly nothing to eta while the single unpaired level is the entire eta carrier, which is precisely why moving that one level suffices to cross sectors. On the source side the six principle terms are partitioned three ways, into the retained block, that block extended by the two gap terms, and the retained block adjoined to the orientation-odd cross term, with least squares run separately on each partition.
+lattice_wide: checked and not executed -- no lattice, volume, box, or extent appears anywhere in this runner, the largest object being that eleven-by-eleven diagonal matrix. The blocking reason is the note's own finding: no retained boundary source principle is in hand, so there is no global theorem here whose lattice-scale content could be exercised, and this file asserts nothing about one.
+Determinism: no RNG, optimizer, root-finding, or Monte Carlo is used. The single sweep is a fixed grid of 9 evenly spaced values of t running from +1.0 down to -1.0, rescaling only the carrier level. Following the scan rule, this certificate names that grid size and range together with the tolerances delta = 1e-9 and TOL = 1e-10, the barrier regulator epsilon = 1e-3, and the hard-gap threshold g_min = 0.1, and it interpolates none of the scan-derived gap or barrier magnitudes. The sector labels along the path are exact integer classifications: four +1 readings, a single 0 exactly at the crossing, then four -1 readings.
 INTERPRETATION
   Retained positive source + APS spectator + positive Wald carrier cannot
   generate the orientation-odd signed source current.

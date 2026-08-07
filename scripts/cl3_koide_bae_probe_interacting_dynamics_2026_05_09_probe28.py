@@ -1213,6 +1213,57 @@ check(
 
 
 # ----------------------------------------------------------------------
+# Section 15 — N5 execution certificate (reporting only; adds no check)
+# ----------------------------------------------------------------------
+
+print()
+print("=" * 72)
+print("Section 15 — N5 execution certificate: resolution classes exercised here")
+print("=" * 72)
+print(
+    "  per_element: resolved one evaluation point at a time — the quartic "
+    "Tr(H^4) is checked separately at five named (a, b) points rather than on "
+    "a single representative, the fermion log-det is evaluated separately at "
+    "Y_e = 0.01, 0.1, 1.0 and 10.0 spanning four orders of magnitude, and the "
+    "quartic Hessian is reported as three individual real eigenvalues, one "
+    "for each real dimension of Herm_circ(3)."
+)
+print(
+    "  per_site: checked and not executed — the one site-level object that "
+    "enters, the Z_2 bipartite structure inherited from Cl(3)/Z^3, is shown "
+    "explicitly to act on the spatial lattice and not on the C_3 doublet, so "
+    "it cannot collapse the two-real-dimensional doublet; beyond that no site "
+    "index, site sum or position-dependent quantity is formed anywhere in "
+    "the eight interaction avenues."
+)
+print(
+    "  per_mode: resolved mode by mode, and this is what every avenue turns "
+    "on — each fluctuation determinant is written as a weighted sum over the "
+    "individual real modes of Herm_circ(3), one trivial mode plus two doublet "
+    "modes, giving Tr log K = 1 x log eig_+ plus 2 x log eig_perp; the "
+    "coefficient 2 in front of the doublet log is what makes every cited "
+    "interaction land in the F3 class, and the runner checks avenue by avenue "
+    "that none of them changes it."
+)
+print(
+    "  per_block: resolved block by block on the fluctuation kernel — the "
+    "trivial block entry and the doublet block are extracted separately, the "
+    "doublet block is confirmed to have rank 2 with two nonzero singular "
+    "values so no cited interaction opens a zero mode there, and the whole "
+    "F1-versus-F3 question is stated as the block weighting (1, 1) against "
+    "(1, 2), fixed by C_3 representation theory independently of the action."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice volume, no site "
+    "sum and no thermodynamic or continuum limit appears in this probe; the "
+    "interacting dynamics is an effective potential on a 3-real-dimensional "
+    "space, and the extremum statements are argmax over finite grids of "
+    "roughly fifty points on the constraint segment, so they are certified at "
+    "that resolution rather than as asymptotic or infinite-volume results."
+)
+
+
+# ----------------------------------------------------------------------
 # Final tally
 # ----------------------------------------------------------------------
 

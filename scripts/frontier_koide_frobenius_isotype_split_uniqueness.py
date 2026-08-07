@@ -142,9 +142,57 @@ def algebra_checks() -> None:
     check("AM-GM log objective is strictly concave at N/2", sp.simplify(sp.diff(objective, x, 2).subs(x, n / 2) + 8 / n**2) == 0, "second derivative = -8/N^2")
 
 
+def n5_execution_certificate() -> None:
+    """Report the granularity this runner reaches. Adds no check and no count."""
+    print("\n=== N5 execution certificate: what this runner resolves ===")
+    print(
+        "  per_element: resolved symbolically at full generality — the two matrices are "
+        "carried as 3x3 arrays of independent real symbols a0..a8 and b0..b8, the scalar "
+        "and traceless parts are formed entry by entry from them, and the exactness of the "
+        "algebra is confirmed on entries rather than norms: the one-parameter conjugator "
+        "satisfies u u^T - I = zeros(3) as an exact symbolic matrix, and the traceless "
+        "component's trace simplifies to exactly 0."
+    )
+    print(
+        "  per_site: checked and not executed — there is no site index, lattice or "
+        "neighbour relation in this computation. The entire question lives inside one copy "
+        "of the 3x3 generation matrix algebra: which symmetric bilinear forms on that one "
+        "algebra are admissible, and whether Frobenius is singled out among them. Nothing "
+        "about that question changes with where the algebra sits."
+    )
+    print(
+        "  per_mode: checked and not executed, and the runner shows why that is the right "
+        "answer rather than a gap. B_{alpha,beta} is invariant under the adjoint action, "
+        "so it cannot distinguish one mode from another inside an isotype; this is "
+        "verified explicitly by conjugating a fixed pair of test matrices along the "
+        "continuous orthogonal family u(t) = ((1 - t^2, 2t), (-2t, 1 - t^2))/(1 + t^2) and "
+        "finding B_{1,1} exactly unchanged. Any mode basis would therefore return the same "
+        "two numbers already reported per block."
+    )
+    print(
+        "  per_block: resolved, and this is where the whole no-go lives. The two C_3 "
+        "isotype blocks are shown B-orthogonal for every (alpha, beta), the full form is "
+        "shown to split exactly as (alpha + 3 beta) on the scalar block plus alpha on the "
+        "traceless block, and each weight is isolated by its own witness, the identity "
+        "returning 3(alpha + 3 beta) and diag(1, -1, 0) returning 2 alpha. The separation "
+        "is then made concrete on diag(1, 1, 2), where Frobenius gives 6 while B_{1,1} "
+        "gives 22 with block weights (4, 1)."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice, volume or thermodynamic "
+        "limit occurs anywhere. The global sweep that does the work is over the form "
+        "family instead of over space, and it is exact rather than asymptotic: solving for "
+        "equal weighted energies gives kappa(lambda) = 2/(1 + 3 lambda) across the whole "
+        "one-parameter family, returning kappa = 2 at the Frobenius point lambda = 0 and "
+        "kappa = 1 at lambda = 1/3. Non-uniqueness is therefore already complete at fixed "
+        "algebra size and no lattice extent could add to it."
+    )
+
+
 def main() -> int:
     note_boundary_checks()
     algebra_checks()
+    n5_execution_certificate()
     print("\nKoide Frobenius isotype-weight freedom no-go certificate:", "PASS" if FAIL_COUNT == 0 else "FAIL")
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

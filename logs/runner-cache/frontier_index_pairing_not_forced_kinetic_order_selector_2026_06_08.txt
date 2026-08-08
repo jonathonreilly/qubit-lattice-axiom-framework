@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_index_pairing_not_forced_kinetic_order_selector_2026_06_08.py
-runner_sha256: cd8947ec9be114fab11aa7ba285783c5aa60a3ef9d56f8498df628a13509929d
+runner_sha256: 69ae136edce86e545cc49ab3a0c4d2d5feb035ceb2548a790855f757700edfc7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -44,6 +44,15 @@ VERDICT
   [PASS] given first-order, the spin lift is unique among 2-dim O_h lifts with a vector vertex
   [PASS] first-order itself is not baseline-supplied: the 2nd-order Laplacian is a spectator
   [PASS] the gamma<->edge index pairing is not forced by the baseline; residual = kinetic-order selector
+
+--------------------------------------------------------------------------------------------
+N5 execution certificate
+--------------------------------------------------------------------------------------------
+  per_element: verdicts here are entrywise sup-norms on 2x2 arrays - the covariance test compares U sigma_j U^dagger against the rotated combination sum_i R[i,j] sigma_i position against position at atol 1e-9 for all 24 rotations and all three generators, and both the spectator and the vertex verdicts are the largest single absolute entry of a 2x2 commutator, so nothing is judged from a trace or a determinant
+  per_site: checked and not executed - the whole file is written in the momentum symbol p, and the nearest-neighbour character of cos p_mu and sin p_mu is stated in a source comment rather than realized as a hop between named sites; no coordinate, no spacing and no edge of the Qubit lattice is ever instantiated
+  per_mode: momenta are the resolved label but they are sampled rather than swept - one drawn p carries the orbit sums and the vertex commutator, a second drawn p carries the Laplacian spectator test, and a further two thousand drawn momenta carry the band comparison, all from one seeded generator, so uniformity over the Brillouin zone is inferred from those draws and not from any systematic grid
+  per_block: the representation-theoretic split is where this runner does real work - the conjugation action on the one-site M_2(C) algebra is decomposed into its scalar and vector pieces and the vector-irrep multiplicity is obtained from the exact 24-term class sum for each of the three candidate two-dimensional lifts, returning exactly 1 for the spin lift and exactly 0 for the trivial and E lifts, which is what makes the spin lift unique
+  lattice_wide: checked and not executed - the widest objects the file ever forms are the 24-element proper rotation group and the four cubic shells it generates, both finite symmetry sets rather than extended systems, so no site count, volume or limit exists; the Laplacian's boundedness is correspondingly a symbol-level statement about a sum of three cosines lying in the exact interval from -3 to +3
 
 ============================================================================================
 TOTAL: 11 PASS / 0 FAIL

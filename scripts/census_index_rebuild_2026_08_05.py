@@ -111,6 +111,7 @@ def batch_resolve(specs):
 
 
 def main() -> int:
+    failures = []
     shipped_raw = INDEX_PATH.read_bytes()
     shipped_sha256 = hashlib.sha256(shipped_raw).hexdigest()
     if shipped_sha256 != EXPECTED_INDEX_SHA256:
@@ -122,7 +123,6 @@ def main() -> int:
     index = json.loads(shipped_raw)
 
     items = index["items"]
-    failures = []
 
     # --- 1. Per-record existence verification against git -------------------
     resolvable = []  # (record, spec)

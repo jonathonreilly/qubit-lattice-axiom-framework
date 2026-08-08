@@ -65,8 +65,8 @@ table](https://pdg.lbl.gov/2022/tables/rpp2022-sum-quarks.pdf), while
 `α_s(M_Z)=0.1180±0.0009` comes from the [PDG 2023 QCD
 review](https://pdg.lbl.gov/2023/reviews/rpp2023-rev-qcd.pdf). The asymmetric
 mass errors are symmetrized as half the sum of their upper and lower
-magnitudes. These are comparator inputs, not a claim to reproduce the newest
-PDG table.
+magnitudes, then rounded to the precision displayed by the runner. These are
+comparator inputs, not a claim to reproduce the newest PDG table.
 
 The corrected values sit *further apart* than the ones they replace. Anyone
 using the sector spread should note that this correction widens it rather than

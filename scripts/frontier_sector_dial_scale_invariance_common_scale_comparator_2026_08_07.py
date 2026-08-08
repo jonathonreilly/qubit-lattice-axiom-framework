@@ -317,7 +317,7 @@ print("  Inputs (PDG 2022 quark table; alpha_s from the PDG 2023 QCD review):")
 print("    up-type   m_u(2 GeV)=2.16e-3, m_c(m_c)=1.27,  m_t(m_t)=162.5   GeV")
 print("    down-type m_d(2 GeV)=4.67e-3, m_s(2 GeV)=93.4e-3, m_b(m_b)=4.18 GeV")
 print("    alpha_s(M_Z) = 0.1180")
-print("    asymmetric mass errors are symmetrized by averaging their magnitudes")
+print("    asymmetric mass errors: average magnitudes, then round as displayed")
 print()
 
 Z3C = 1.2020569031595943

@@ -1,0 +1,77 @@
+{
+ "cycle": 743,
+ "failures": 0,
+ "gates": 66,
+ "headline": "The symmetry of the finite cutting system extends from the 48 cutting symmetries to a group of order 384 that fixes all eight readings pointwise. That group preserves exactly one partition of the 192 pieces into the supports of eight pairwise disjoint cuttings - eight blocks of 24, each meeting each of the four piece-orbits in 6. The induced action on the eight blocks realizes a hidden three-bit affine geometry: the image has order 192 and splits as the 8 translations together with the full 24-element stabilizer of a distinguished plane, and the original 48 cutting symmetries induce exactly the subgroup whose linear part additionally fixes a distinguished direction lying off that plane. The two automorphisms constructed in the previous cycle release that pinned direction, enlarging the linear part from 6 to 24.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "affine_three_bit_structure": {
+   "additive_label_pairs": 64,
+   "faithful_image_on_four_orbit": 24,
+   "fixed_directions_off_plane": 1,
+   "fixed_point_free_involutions": 25,
+   "invariant_planes": 1,
+   "invertible_matrices": 168,
+   "joint_stabilizer_matrices": 6,
+   "linear_parts": 24,
+   "linear_parts_of_the_48": 6,
+   "matrices_over_two_element_field": 512,
+   "normal_among_them": 1,
+   "plane_labels": 4,
+   "plane_preserving_matrices": 24,
+   "planes_in_the_space": 7,
+   "regular_elementary_abelian_subgroups": 4,
+   "split_product": 192,
+   "translations": 8
+  },
+  "cutting_orbits": {
+   "size_distribution": "8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25",
+   "under_the_48": 391,
+   "under_the_whole_group": 74
+  },
+  "eight_blocks": {
+   "block_action_kernel_order": 2,
+   "block_image_order": 192,
+   "image_of_the_48": 48,
+   "pairwise_disjoint": true,
+   "pieces_per_block_per_orbit": 6,
+   "support_of_each": 24,
+   "union_of_supports": 192,
+   "unique_orbit_of_size": 8
+  },
+  "element_order_censuses": {
+   "derived_subgroup": "1:1 2:19 3:32 4:12 6:32",
+   "the_48": "1:1 2:19 3:8 4:12 6:8",
+   "whole_group": "1:1 2:75 3:32 4:132 6:96 8:48"
+  },
+  "group_of_order_384": {
+   "abelianization_order": 4,
+   "centre_involution_fixed_pieces": 0,
+   "centre_order": 2,
+   "derived_equals_first_extra_closure": false,
+   "derived_subgroup_order": 96,
+   "elements_fixing_all_eight_readings": 384,
+   "elements_of_order_three": 32,
+   "first_extra_inside_second_closure": true,
+   "order_of_48_alone": 48,
+   "order_with_first_extra": 96,
+   "order_with_second_extra": 384,
+   "permutation_rank": 104,
+   "point_stabilizer_order": 2,
+   "stabilizer_involution_fixed_pieces": 16,
+   "subgroups_of_order_three": 16,
+   "transitive_on_pieces": 192
+  },
+  "rebuilt_system": {
+   "cutting_symmetries": 48,
+   "cutting_width": 24,
+   "distinct_cuttings": 15800,
+   "piece_orbits": 4,
+   "pieces": 192,
+   "readings": 8,
+   "uses_per_piece": 1975
+  }
+ }
+}

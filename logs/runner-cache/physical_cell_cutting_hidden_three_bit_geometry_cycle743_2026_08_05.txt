@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py
+runner_sha256: 3615996cb52b6015795ccf40d4e6032d28691fd887d3f0b46726ddba32f7dadc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.36
+status: ok
+----- stdout -----
+-- rebuild
+G01 shape: 15800x192 exp 15800x192 -> PASS
+G02 colsum: [1975] exp [1975] -> PASS
+G03 rowsupp: width 24 distinct 15800 exp 24 15800 -> PASS
+G04 perms48: 48 exp 48 -> PASS
+G05 orbits48: 4 of sizes [48, 48, 48, 48] exp 4 of 48 -> PASS
+G06 readings: 8 distinct, closed under xor exp 8 -> PASS
+G07 b0: an involution outside the 48 exp automorphism -> PASS
+G08 b1: an involution outside the 48 exp automorphism -> PASS
+G09 bfix: 8 of 8 readings kept exp 8 -> PASS
+-- the group E
+G10 ord48: 48 exp 48 -> PASS
+G11 ord48b0: 96 exp 96 -> PASS
+G12 ord48b1: 384 with b0 inside exp 384 -> PASS
+G13 ordE: 384 exp 384 -> PASS
+G14 trans: 1 orbit of 192 exp 1 of 192 -> PASS
+G15 stab: 2 exp 2 -> PASS
+G16 s0: an involution fixing 16 exp 16 -> PASS
+G17 rank: 104 = 16 + 88 exp 104 -> PASS
+G18 Efix: 384 elements keep 8 readings exp all -> PASS
+G19 censusE: 1:1 2:75 3:32 4:132 6:96 8:48 -> PASS
+G20 census48: 1:1 2:19 3:8 4:12 6:8 -> PASS
+G21 centre: 2 exp 2 -> PASS
+G22 zfree: 0 fixed pieces exp 0 -> PASS
+G23 zmem: inside 96, outside 48 exp 96 not 48 -> PASS
+G24 zorb: swaps first with second, third with fourth exp a double swap -> PASS
+G25 der: 96 exp 96 -> PASS
+G26 derne: not the 96 of b0, and does not hold the 48 exp distinct -> PASS
+G27 nonorm: 48 and 96 both non-normal exp neither -> PASS
+G28 abel: 384 squares inside, quotient 4 exp 384 and 4 -> PASS
+G29 censusder: 1:1 2:19 3:32 4:12 6:32 -> PASS
+G30 ord3: 32 elements in 16 subgroups exp 32 and 16 -> PASS
+G31 rows48: 391 exp 391 -> PASS
+G32 rowsE: 74 exp 74 -> PASS
+G33 rowdist: 8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25 -> PASS
+-- the eight blocks
+G34 one8: 1 exp 1 -> PASS
+G35 blocks: 8 supports of 24, pairwise disjoint exp 8 of 24 -> PASS
+G36 cover: 192 exp 192 -> PASS
+G37 quarter: each block meets each quarter in 6 exp 6 -> PASS
+G38 same48: one 48-orbit of size 8 exp 8 -> PASS
+G39 kernel: 2, the centre exp 2 -> PASS
+G40 imB: 192 exp 192 -> PASS
+G41 imB48: 48, faithful exp 48 -> PASS
+-- affine three-bit structure
+G42 fpf: 25 exp 25 -> PASS
+G43 regsub: 4 exp 4 -> PASS
+G44 normT: 1 exp 1 -> PASS
+G45 Treg: the 8 translations move the base block to all 8 exp 8 -> PASS
+G46 basis: 3 generators giving 8 labels exp 3 and 8 -> PASS
+G47 fixorig: every linear part keeps the base block exp 192 -> PASS
+G48 add: additive on all 64 label pairs exp 64 -> PASS
+G49 Lsize: 24 exp 24 -> PASS
+G50 Lclosed: closed under composition exp 24 -> PASS
+G51 split: meet 1, product 192 exp 1 and 192 -> PASS
+G52 censusL: 1:1 2:9 3:8 4:6 -> PASS
+G53 Lorb: [3, 4] exp [3, 4] -> PASS
+G54 nofix: 0 exp 0 -> PASS
+G55 plane: 4 labels closed under xor exp 4 -> PASS
+G56 uniqplane: 1 of 7 planes kept exp 1 of 7 -> PASS
+G57 faith: 24 on the four-orbit, the symmetric group on four exp 24 -> PASS
+G58 mats: 168 of 512 invertible exp 168 of 512 -> PASS
+G59 stabP: 24 keep the plane, and they are L exp 24 -> PASS
+G60 TinB48: all 8 translations already induced by the 48 exp 8 -> PASS
+G61 L48: 6, inside L, nonabelian exp 6 -> PASS
+G62 censusL48: 1:1 2:3 3:2 -> PASS
+G63 L48orb: [1, 3, 3] exp [1, 3, 3] -> PASS
+G64 vstar: 1 label kept by all of L48, off the plane exp 1 -> PASS
+G65 vin4: in the four-orbit, stabilizer 6 equal to L48 exp 6 -> PASS
+G66 jointstab: 6 keep plane and direction, and they are L48 exp 6 -> PASS
+TOTAL: PASS=66 FAIL=0
+
+----- stderr -----
+

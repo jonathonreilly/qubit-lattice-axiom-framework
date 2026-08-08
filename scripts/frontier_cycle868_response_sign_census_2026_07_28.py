@@ -373,7 +373,7 @@ def adjoint_pullback(array, live: bool = True) -> tuple:
 
 
 # --------------------------------------------------------------------------
-# the landed response objects
+# the stipulated response objects
 # --------------------------------------------------------------------------
 def response_objects(array, live: bool = True) -> dict[str, tuple[Poly, ...]]:
     graded = graded_source(array, live)
@@ -624,7 +624,7 @@ def objects_certificate(members: tuple[Member, ...]) -> dict[str, object]:
         "worked_member": ("k2", 0, 1, 2, 3),
         "worked_member_rows": tuple(sample_rows),
         "finding": (
-            "Six landed response objects are derived for every member of the "
+            "Six stipulated response objects are derived for every member of the "
             "family, each carried as an exact rational polynomial in the "
             "formal conformal sign. Arities are exact everywhere, no object "
             "exceeds sigma-degree 2, and the grading reduces to the undeformed "
@@ -943,6 +943,8 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
         and result["unbalanced_conformal_is_nonzero"]
         and len(extreme_rows) == 3
         and isinstance(symbolic_sum, tuple)
+        and all(coeff == 0 for coeff in symbolic_sum)
+        and extreme_all_zero
     )
     return result
 
@@ -1043,29 +1045,35 @@ def verdict_certificate(
     elif unattributed > 0:
         verdict = "SIGN_INVISIBLE_BUT_PARTLY_UNEXPLAINED"
     else:
-        verdict = "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE"
+        verdict = "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE"
     result = {
         "verdict_function": (
             "sensitive_total>0 -> CONSTRAINS; else unattributed>0 -> "
-            "INVISIBLE_BUT_PARTLY_UNEXPLAINED; else SCOPED_NO_GO"
+            "INVISIBLE_BUT_PARTLY_UNEXPLAINED; else EXACT_SUPPORT"
         ),
         "sensitive_total": sensitive_total,
         "unattributed_blind_total": unattributed,
         "verdict": verdict,
         "scope_of_the_claim": (
-            "the declared scope only: the landed k<=2 source family on the "
-            "two-endpoint held L=6 surface with the frozen (-2d,+d,+d) ledger "
-            "and the six landed response objects"
+            "the declared scope only: the k<=2 source family on the "
+            "two-endpoint held L=6 surface, with the sector-weight ladder "
+            "d=1..6 carried as an EXPLICIT SCOPE INPUT (not supplied by any "
+            "cited source), the stipulated traceless (-2d,+d,+d) ledger, and "
+            "the six response objects AS STIPULATED IN THIS PACKAGE; their "
+            "identification with any landed response lineage and the "
+            "identification of the sector-trace grading with the physical "
+            "conformal-mode sign are OPEN bridges, not established here"
         ),
         "named_escape_conditions": (
-            "the no-go dies if EITHER (a) a landed source acquires a nonzero "
-            "sector trace, i.e. the recoil ledger stops summing to zero, which "
-            "immediately makes O1_PUSHFORWARD and O3_FLUX_BALANCE "
-            "sign-sensitive; OR (b) a response object is admitted that is "
-            "linear in the endpoint exchange rather than factoring through "
-            "R*R and is not a sector-orthogonal contraction. Mechanism M1 "
-            "survives (a) alone and mechanism M2 survives (b) alone, so both "
-            "must fail together for the response surface to see the sign"
+            "boundaries of the exact-support statement: (a) a source with a "
+            "nonzero sector trace ALREADY restores sign-sensitivity of "
+            "O1_PUSHFORWARD and O3_FLUX_BALANCE, so the blanket blindness "
+            "statement dies under (a) alone; the structural sigma-evenness "
+            "mechanism (M1) still covers its four objects under (a). (b) an "
+            "admitted response object linear in the endpoint exchange (not "
+            "factoring through R*R, not a sector-orthogonal contraction) "
+            "escapes M1. The two mechanisms have SEPARATE escape boundaries; "
+            "no joint-failure condition exists"
         ),
         "what_is_not_claimed": (
             "no statement is made about the value of the conformal sign, about "
@@ -1073,22 +1081,21 @@ def verdict_certificate(
             "outside the declared six"
         ),
         "finding": (
-            f"At the declared scope the conformal-sector sign is invisible to "
-            f"the response surface: no landed response object on any member of "
-            f"the complete landed source family distinguishes sigma=+1 from "
-            f"sigma=-1, and the invisibility is fully explained by two "
-            f"mechanisms with no residue. This is a scoped no-go, not a "
-            f"selection: the one-admission reduction survives untouched, and "
-            f"the response surface is now shown to be the wrong instrument to "
-            f"discharge it. The escape is named and is exactly the conformal "
-            f"channel of the recoil ledger."
-        ) if verdict.startswith("SCOPED_NO_GO") else (
+            f"At the declared scope the sector-trace grading sign is invisible "
+            f"to the stipulated response-object algebra: no stipulated object "
+            f"on any member of the declared source family distinguishes "
+            f"sigma=+1 from sigma=-1, and the invisibility is fully explained "
+            f"by two mechanisms with no residue. This is exact algebraic "
+            f"support, not a no-go: the identifications with the landed "
+            f"response lineage and with the physical conformal-mode sign are "
+            f"open bridges, and the one-admission reduction is untouched."
+        ) if verdict.startswith("EXACT_SUPPORT") else (
             f"The census returned {sensitive_total} sign-sensitive pairs, so "
             f"the landed response surface DOES constrain the conformal-sector "
             f"sign at the declared scope; the sensitive objects and their "
             f"members are recorded in the census certificate."
         ) if sensitive_total > 0 else (
-            f"No landed response object distinguishes the two signs, but "
+            f"No stipulated response object distinguishes the two signs, but "
             f"{unattributed} blind pairs are not explained by either declared "
             f"mechanism. The invisibility is real at this scope and its cause "
             f"is not fully identified, so no no-go is claimed; the "
@@ -1103,7 +1110,7 @@ def verdict_certificate(
         verdict in {
             "RESPONSE_SURFACE_CONSTRAINS_THE_CONFORMAL_SIGN",
             "SIGN_INVISIBLE_BUT_PARTLY_UNEXPLAINED",
-            "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE",
+            "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE",
         }
         and isinstance(sensitive_total, int)
         and isinstance(unattributed, int)

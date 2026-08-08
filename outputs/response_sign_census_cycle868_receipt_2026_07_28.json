@@ -2,8 +2,6 @@
  "audit": "unset",
  "authority": "none",
  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (codex quota exhausted 2026-08-03; substitution disclosed); supervisor line-by-line review with hand-verified sigma-parity mechanism",
- "block": "toe-time-blockG1-20260802",
- "campaign": "toe-time-expansion-20260802",
  "certificates": {
   "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt": {
    "fail": 0,
@@ -22,36 +20,39 @@
   "sensitive_found": 0,
   "sigma_comparisons": 4998672
  },
- "claim_type": "no_go",
+ "claim_type": "bounded_theorem",
  "cycles": [
   868
  ],
  "files": {
   "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md": {
-   "git_blob": "3e0ddcdbef379383835b7b05a4b783d29fa51742",
-   "sha256": "3b3726ba023d8a6821870306f224e8a6e56a2d645641680edc79b5e79fcffe4e"
+   "git_blob": "f06713c42cc6c7ee83b21ff0cd4e2401dfb60dc0",
+   "sha256": "e9f5effd3d8376c3f353c7b8af52861a15d14da7e8984b47c5352e5bca56a7f0"
   },
   "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt": {
-   "git_blob": "1cdd55ce35dd7116ab3d4f959b5e21f5299ff5ed",
-   "sha256": "056b642e859e732d358be4632d4de8baa77b673704b1f5737bcd6ec566582d60"
+   "git_blob": "d0514bf7a85ff2a7ba287237e1d079cc0ee9edf9",
+   "sha256": "231c7460c80f45334f806bbe269ac503cd8d4f7aee101e45505c69229f33213e"
   },
   "logs/runner-cache/frontier_cycle868_sign_independent_check_2026_07_28.txt": {
-   "git_blob": "51dd153ae56873182e8a8349b6b05c2a70a35c2f",
-   "sha256": "76b39598ec792f5ead8771f92bfb1867c2af52d7646b24773891558eebc1c953"
+   "git_blob": "658afede2a583083d04f5b40c77bc43433d284ba",
+   "sha256": "e175d3338e660ab400948a9aa710226419392e3ee621a34019027a16b2ae5470"
   },
   "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": {
-   "git_blob": "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
-   "sha256": "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb"
+   "git_blob": "e378e6087024ee650bd78aa0d68e0bc4b705a2ed",
+   "sha256": "c0249b6a367bbff4367ae08fe59081595f2abaf26d85bd56bf7027e89ff230c9"
   },
   "scripts/frontier_cycle868_sign_independent_check_2026_07_28.py": {
-   "git_blob": "2e9d218a45f132934acfbf828a8a0a269f55b1e6",
-   "sha256": "b1fc3e80c245de9b31615616d3993e644fe995701e0559d3826ae05174374480"
+   "git_blob": "aa9a902fd3518150438276040926cd831cc35757",
+   "sha256": "714ce5a7dbaa2e17d09ba4e2ffd92ab5c66eed37c980cbf34bad8810b8689177"
   }
  },
- "headline": "SCOPED_NO_GO: all 8208 (member, response-object) pairs identical at sigma=+1/-1; blindness = M1 structural evenness + M2 traceless ledger, zero unattributed; escapes named",
+ "headline": "Exact support: on the stipulated k<=2 / L=6 / d=1..6 surface with the traceless (-2d,+d,+d) ledger, all 8,208 (member, object) pairs of the six stipulated response objects are blind to the sector-trace grading sign; the identifications with the landed response lineage and with the physical conformal-mode sign are OPEN bridges (demoted from scoped no-go at review-loop iteration 1, 2026-08-08)",
  "independence": "cross-context (integer two-world route vs rational polynomial route; import firewall; shared authoring model family)",
  "note": "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md",
  "prior_art_search_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+ "review_loop": {
+  "iteration_1": "FIX_THEN_PROCEED (Sol, 2026-08-08): no-go demoted to exact support; checker comparison gate now fails closed on disagreements; primary mechanism gate now gates the symbolic closures; fifth ancestor pinned (read cap 6->7); escape-logic contradiction fixed; weight ladder declared an explicit scope input"
+ },
  "runtime_seconds": {
   "checker": 0.46,
   "primary": 0.83

@@ -29,6 +29,7 @@ AUDIT_INPUT_PATHS = (
     "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
     "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
     "scripts/frontier_cycle768_response_law_candidate_2026_07_28.py",
+    "scripts/frontier_cycle812_mixed_input_response_2026_07_28.py",
 )
 
 import ast
@@ -48,9 +49,9 @@ PYTHON_PATHS = tuple(
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in PYTHON_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
+        "c0249b6a367bbff4367ae08fe59081595f2abaf26d85bd56bf7027e89ff230c9",
     AUDIT_INPUT_PATHS[1]:
-        "056b642e859e732d358be4632d4de8baa77b673704b1f5737bcd6ec566582d60",
+        "231c7460c80f45334f806bbe269ac503cd8d4f7aee101e45505c69229f33213e",
     AUDIT_INPUT_PATHS[2]:
         "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
     AUDIT_INPUT_PATHS[3]:
@@ -59,14 +60,17 @@ EXPECTED_SHA256 = {
         "ab9b852236f73ec4aecad9287e07a4029309159d956a1cb3043f9238342d6807",
     AUDIT_INPUT_PATHS[5]:
         "7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32",
+    AUDIT_INPUT_PATHS[6]:
+        "fe35718b8f5e84cfafed74026a5634e722da757782f04d536a756d7273d3ee9b",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
-    AUDIT_INPUT_PATHS[1]: "1cdd55ce35dd7116ab3d4f959b5e21f5299ff5ed",
+    AUDIT_INPUT_PATHS[0]: "e378e6087024ee650bd78aa0d68e0bc4b705a2ed",
+    AUDIT_INPUT_PATHS[1]: "d0514bf7a85ff2a7ba287237e1d079cc0ee9edf9",
     AUDIT_INPUT_PATHS[2]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
     AUDIT_INPUT_PATHS[3]: "de8b90b08707c000bb2489502823b02d62e38b29",
     AUDIT_INPUT_PATHS[4]: "cee674584704dd7d351cb2ffa947c74bee47d06e",
     AUDIT_INPUT_PATHS[5]: "0070722d7a12d47658346b6c812edd05424ae592",
+    AUDIT_INPUT_PATHS[6]: "39b5f24595f2271704bf68197103b62824a14cbf",
 }
 PRIMARY_REQUIRED_MARKERS = (
     "adjoint_pullback",
@@ -337,7 +341,7 @@ def source_controls() -> dict[str, object]:
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "literal_path_count": len(AUDIT_INPUT_PATHS),
-        "read_cap": 6,
+        "read_cap": 7,
         "source_rows": rows,
         "primary_required_AST_markers": PRIMARY_REQUIRED_MARKERS,
         "primary_required_AST_markers_present": markers_present,
@@ -348,14 +352,14 @@ def source_controls() -> dict[str, object]:
         "firewall_hits": tuple(FIREWALL.hits),
         "executable_science_inputs": (),
         "finding": (
-            "All six cited inputs are literal worktree-relative paths that "
+            "All seven cited inputs are literal worktree-relative paths that "
             "exist, match their pinned SHA-256 and git blob hashes, and are "
             "consumed as text or AST only; the primary runner carries every "
             "required structural marker and is blocked from import."
         ),
     }
     result["pass"] = (
-        len(rows) <= 6
+        len(rows) <= 7
         and all(
             row["exists_worktree_relative"]
             and row["sha256_exact"]
@@ -523,13 +527,13 @@ def comparison_certificate(
         "checker_independent_verdict": (
             "RESPONSE_SURFACE_CONSTRAINS_THE_CONFORMAL_SIGN"
             if hunt["members_with_any_sensitive_functional"] > 0
-            else "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE"
+            else "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE"
         ),
         "verdicts_agree": (
             final.get("verdict") == (
                 "RESPONSE_SURFACE_CONSTRAINS_THE_CONFORMAL_SIGN"
                 if hunt["members_with_any_sensitive_functional"] > 0
-                else "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE"
+                else "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE"
             )
         ),
     }
@@ -544,9 +548,12 @@ def comparison_certificate(
         f"{'matches' if result['verdicts_agree'] else 'does NOT match'} the "
         f"primary's {final.get('verdict')}."
     )
-    result["pass"] = all(
-        isinstance(row["checker"], (int, bool)) for row in rows
-    ) and object_count > 0
+    result["pass"] = (
+        all(isinstance(row["checker"], (int, bool)) for row in rows)
+        and object_count > 0
+        and not disagreements
+        and result["verdicts_agree"]
+    )
     return result
 
 
@@ -561,7 +568,7 @@ def adversary_certificate() -> dict[str, object]:
     detuned_hits = sensitive_functionals(detuned)
     fake_claims = {
         "final": {
-            "verdict": "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE",
+            "verdict": "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE",
             "pairs_censused": 999_999,
             "sign_sensitive_pairs": 0,
             "sign_blind_pairs": 999_999,

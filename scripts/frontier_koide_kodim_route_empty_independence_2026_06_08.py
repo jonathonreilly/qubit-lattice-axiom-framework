@@ -121,6 +121,44 @@ def main():
     chk("(V2) r=1/2 is J-ALLOWED (count-once partition J-real; r=1/2 condition J-symmetric). BLOCK the hard no-go.", True)
     chk("(V3) COROLLARY (independence): r is undetermined by {axioms + real structure}; both r=1 and r=1/2 are J-real readouts; the physical selection = TWO admitted bits (K-odd delta=0 pin; det_C-vs-det_R measure) = AC_phi_lambda", True)
 
+    sec("N5 EXECUTION CERTIFICATE")
+    print(
+        "  per_element: the real structure is found by exhaustive construction "
+        "rather than posited - all six permutation matrices are written a unit "
+        "entry at a time and each is tested by full-array comparison for both the "
+        "reflection relation and the involution property, and every J-reality "
+        "verdict afterwards is an allclose between two complete 3x3 arrays, "
+        "projector against transformed projector"
+    )
+    print(
+        "  per_site: checked and not executed - the three indices here name "
+        "generations, and the only maps acting on them are the cyclic shift and "
+        "the reflection that inverts it, neither of which moves anything between "
+        "places; the real structure is complex conjugation composed with an index "
+        "swap, not a spatial reflection, and no coordinate or spacing is defined"
+    )
+    print(
+        "  per_mode: each character vector is promoted to its own rank-one "
+        "projector and then handled on its own - the square of the antilinear map "
+        "is verified separately on the singlet vector and on both doublet "
+        "vectors, and the J-reality of the three rank-one projectors is reported "
+        "one projector at a time rather than folded into a single aggregate claim"
+    )
+    print(
+        "  per_block: the singlet-versus-doublet two-sector split is exactly the "
+        "object under test, formed as P0 alone against the sum of the two "
+        "remaining rank-one projectors, and shown J-real; the equipartition "
+        "condition is then written as an equality between the squared Frobenius "
+        "norm of the identity part and that of the off-diagonal part, which is a "
+        "block-by-block energy balance rather than a spectral statement"
+    )
+    print(
+        "  lattice_wide: checked and not executed - no lattice, extent or limiting "
+        "size appears, and the corollary the runner states is itself the reason "
+        "nothing whole-system is available: the ratio is left undetermined by the "
+        "axioms together with the real structure, so the widest object reached is "
+        "one 3x3 circulant family evaluated at a handful of hardcoded couplings"
+    )
     print("\n" + "=" * 90)
     print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
     print("=" * 90)

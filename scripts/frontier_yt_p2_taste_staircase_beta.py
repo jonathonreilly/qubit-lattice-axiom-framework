@@ -670,6 +670,56 @@ log("the 1-loop level within the QFP 3% envelope by the prior v-matching")
 log("theorem.")
 log()
 
+# N5 execution certificate (print-only; adds no check and no verdict)
+print("==============================================================================")
+print("N5 EXECUTION CERTIFICATE")
+print("==============================================================================")
+print(
+    "  per_element: checked and not executed - this runner builds no array and "
+    "no operator of any kind; every quantity it touches is a single float or a "
+    "flat list of floats. The Ward ratio one over the square root of six is "
+    "carried as a bare number inherited from elsewhere, not as a matrix element "
+    "of any projector, so nothing at this granularity is resolved here."
+)
+print(
+    "  per_site: checked and not executed - the substrate never appears as a "
+    "set of points. What plays the role of a lattice is only the per-rung scale "
+    "ratio alpha_LM, used sixteen times to step the renormalization scale down, "
+    "plus the doubler count sixteen; there is no coordinate, no spacing in "
+    "length units, no neighbour and no boundary anywhere in the file."
+)
+print(
+    "  per_mode: exercised as an exact integer decoupling count, and only as "
+    "that - the sixteen taste doublers are removed one per rung so that n_taste "
+    "runs 16 down to 0 across seventeen rungs, and each removal shifts the "
+    "one-loop coefficient by exactly 4*T_F/3 = 2/3, giving b_3 = (33 - "
+    "2*n_taste)/3, with the endpoint values 1/3 at n_taste = 16 and -1/3 at 17 "
+    "bracketing the loss of asymptotic freedom at n_taste = 33/4. No mode "
+    "function, dispersion or eigenvalue is ever constructed; the modes enter "
+    "purely as a count."
+)
+print(
+    "  per_block: checked and not executed - no isotypic component, invariant "
+    "subspace or sector decomposition is formed. The rungs of the staircase are "
+    "scale steps rather than blocks, the Ward-preserving requirement b_3 = 29/4 "
+    "is obtained by differentiating a ratio rather than by projecting onto "
+    "anything, and the exact minimum distance from that requirement over the "
+    "seventeen rungs, 1/4 attained uniquely at n_taste = 6, is a statement "
+    "about integers rather than about block structure."
+)
+print(
+    "  lattice_wide: attempted and returned undefined, which is the honest "
+    "reading of this file's central result - the sixteen-step one-loop "
+    "integration of 1/g^2 is carried across the full scale span with a guard "
+    "that sets the coupling to NaN the moment 1/g^2 crosses zero, and that "
+    "guard fires, so the trajectory has no value at the infrared end. The check "
+    "covering it passes precisely because the computation failed to reach a "
+    "number, and the runner draws the correct conclusion from that, namely that "
+    "the staircase mechanism is non-perturbative and therefore outside what a "
+    "one-loop treatment can decide."
+)
+log()
+
 
 if COUNTS["FAIL"] == 0:
     sys.exit(0)

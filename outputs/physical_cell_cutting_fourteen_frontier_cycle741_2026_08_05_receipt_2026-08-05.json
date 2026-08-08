@@ -1,0 +1,108 @@
+{
+ "cycle": 741,
+ "failures": 0,
+ "gates": 34,
+ "headline": "A complete search at exactly fourteen pieces over every licensed cell finds no set carrying any side of the three charges, and together with the complete and empty reproductions at sizes eight, ten and twelve and the parity bar on every odd size, the six charges need at least sixteen pieces. The zero reading has 34560 fourteen-piece carriers falling into 720 orbits of size 48 under the symmetries fixing it, and the one reading 26880 in 560 orbits of size 48; the licensed cells number 204 for an even reading and 140 for an odd-quarter reading, continuing the square-difference law, and the first quarter alone carries exactly the 164 weight-fourteen words of its dimension-14 subcode. A cell-cutting defect planted as a control, cutting only the heaviest quarter into eighths, is caught by the orbit inventory alone: its sizes-divide-48 test fails on exactly the orbit signature the defective first measurement produced, while five planted fourteen-piece readings are each recovered by searches blind to them.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "controls": {
+   "control_counts": [
+    2665,
+    274,
+    329,
+    236
+   ],
+   "planted_counts": [
+    1,
+    3,
+    11,
+    2,
+    6
+   ],
+   "planted_profiles": [
+    "7-7-0-0",
+    "4-4-4-2",
+    "2-2-4-6",
+    "0-2-4-8",
+    "0-0-2-12"
+   ],
+   "seed": 74100
+  },
+  "floor": {
+   "complete_and_empty_even_sizes": [
+    8,
+    10,
+    12,
+    14
+   ],
+   "odd_sizes_barred_by_forced_even_total": true,
+   "six_charges_need_at_least": 16
+  },
+  "fourteen_search": {
+   "cells_searched": 344,
+   "charge_carriers": 0,
+   "distinct_splits": 2562,
+   "one_carriers": 26880,
+   "recorded_sets_verified": 64967,
+   "synthetic_carriers": 0,
+   "zero_carriers": 34560
+  },
+  "incidence": {
+   "distinct_cuttings": 15800,
+   "gf2_rank": 88,
+   "kernel_dimension": 104,
+   "pieces": 192,
+   "uses_per_piece_odd": 1975
+  },
+  "licensed_cells": {
+   "even_ladder_sizes_2_to_14": [
+    5,
+    14,
+    30,
+    55,
+    91,
+    140,
+    204
+   ],
+   "even_reading": 204,
+   "odd_quarter_ladder_sizes_2_to_14": [
+    1,
+    5,
+    14,
+    30,
+    55,
+    91,
+    140
+   ],
+   "odd_quarter_reading": 140,
+   "square_differences": true
+  },
+  "orbits": {
+   "all_orbit_sizes": 48,
+   "one_orbits": 560,
+   "planted_readings_all_singletons": true,
+   "zero_orbits": 720
+  },
+  "quarter_subcode": {
+   "dimension": 14,
+   "first_quarter_search_matches_subcode": true,
+   "least_nonzero_weight": 8,
+   "weight_12_words": 63,
+   "weight_14_words": 164,
+   "weight_8_words": 30
+  },
+  "reproductions": {
+   "eight_one": 192,
+   "eight_zero": 648,
+   "ten_counts": [
+    108,
+    1,
+    2
+   ],
+   "twelve_one": 3072,
+   "twelve_zero": 7808
+  }
+ }
+}

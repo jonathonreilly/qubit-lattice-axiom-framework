@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_adjoint_map_quotients_spinor_z2.py
-runner_sha256: 26a64cffe733faaf6e971099085893c3f98c1db472e1a19dcac6ea7af264691e
+runner_sha256: 34084b2911b502172467eb28b36ad2e337712bc4246903ad2b6ccaa08c5f414b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 
@@ -46,6 +46,15 @@ F. Generalization: rotation-equivariant quaternion-to-vector candidates factor t
 G. Consistency with BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN (z central, +1 on non-spinorial reps)
 ============================================================================
 [PASS] z is central in SU(2) and acts +1 on every non-spinorial (integer-spin / vector) rep -- consistent with binary_octahedral (retained_bounded): the on-site spinor sign is decoupled from the rest
+
+============================================================================
+N5 EXECUTION CERTIFICATE (print-only; adds no check)
+============================================================================
+per_element: the rotation matrix is assembled a column at a time - adjoint_rot conjugates each of the three imaginary basis quaternions in turn and stacks the resulting vectors as columns, the body-diagonal reflection is written as the outer product 2 v v^T minus the identity, and every verdict is an np.allclose comparison of two full 3x3 arrays position against position
+per_site: checked and not executed - this is a single on-site algebraic statement about the quaternion group and its rotation image, with no lattice, no site index and no neighbour relation anywhere; even the phrase on-site in the last section refers to the internal sign at one site, and a second site is never formed
+per_mode: the three eigenvalues of the body-diagonal pi-rotation are computed and the full sorted triple is compared element for element after rounding, so the single fixed direction and the two reversed transverse directions are separated rather than summarized, and the central element's action is separately evaluated as (-1)^(2j) at the spin labels zero, one half and one
+per_block: the two modules are kept apart and the whole argument is that they disagree - the central element is evaluated as minus the identity on the two-dimensional pseudoreal spin-one-half block and as plus the identity on the real three-dimensional vector block, and the Frobenius-Schur reality indicator is what labels the two blocks as different objects
+lattice_wide: checked and not executed - nothing in the file reaches past a single copy of the quaternion algebra and its three-dimensional adjoint module, so no extent, volume or limiting sequence exists; the runner's own classification states the missing piece, a non-equivariant frame-dependent identification of an axis with the body diagonal, which is an unsupplied import rather than a computation at any scale
 
 ============================================================================
 RESULT

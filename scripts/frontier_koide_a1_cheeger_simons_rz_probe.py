@@ -628,6 +628,48 @@ def main() -> int:
     task_H_verdict()
 
     print()
+    print("=" * 88)
+    print("N5 execution certificate")
+    print("=" * 88)
+    print(
+        "  per_element: checked and not executed - not one array, sympy Matrix or "
+        "Kronecker product occurs anywhere in this file, so there is no (i,j) "
+        "position in existence; the Z_3 generator U_g is named in section D and "
+        "its cube-root-of-unity spectrum is asserted through a record whose "
+        "condition is the bare literal True, never by writing the operator down"
+    )
+    print(
+        "  per_site: checked and not executed - section G announces a 3x3x3 cubical "
+        "lattice carrying the cyclic map (x,y,z) -> (y,z,x) and then allocates "
+        "nothing: the holonomy it describes as numerically simulated is the plain "
+        "assignment 2.0/9.0, so no cell, vertex or edge of that announced lattice "
+        "is ever visited or summed over"
+    )
+    print(
+        "  per_mode: checked and not executed - no diagonalization, transform or "
+        "spectral index appears at any point; the two spectra the text does "
+        "mention, the cube roots of unity on the Z_3 generator and the "
+        "unit-circle Wilson-loop values, both arrive through literal-True records "
+        "rather than through any computed eigenvalue"
+    )
+    print(
+        "  per_block: the finest decomposition genuinely evaluated is the character "
+        "sum over the two nontrivial Z_3 group elements - the ABSS eta invariant "
+        "for weights (1,2) is built term by term, each element k contributing "
+        "1/((omega^k - 1)(omega^(2k) - 1)) with omega the exact sympy primitive "
+        "cube root of unity, and the sum divided by three returns exactly 2/9 as "
+        "an exact rational rather than a float"
+    )
+    print(
+        "  lattice_wide: checked and not executed - the four whole-orbifold "
+        "cohomology groups of T^3/Z_3 that section A reports are all recorded "
+        "with literal-True conditions and the shared detail line calling them a "
+        "standard equivariant calculation, so nothing global is computed; the "
+        "runner's own residual states the reason, namely that the literal "
+        "one-radian period of R/Z is a non-canonical structural input the "
+        "retained lattice does not supply"
+    )
+    print()
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
     n_total = len(PASSES)
     print("=" * 88)

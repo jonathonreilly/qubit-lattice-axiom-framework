@@ -518,8 +518,14 @@ def sm_rge_step(a, b, dt=1e-4, gauge_term=0.5):
     eigs = np.array(eigs, dtype=complex)
     # SM matrix RGE on eigenvalues (Y is normal so Y Y^† = |Y|^2 diag in eigenbasis)
     # dλ/dt = (1/16π²) [3 |λ|² λ - gauge_term * λ]
-    deigs = (1.0 / (16 * np.pi**2)) * (3 * np.abs(eigs)**2 * eigs - gauge_term * eigs)
-    new_eigs = eigs + dt * deigs
+    # The deliberately unstable Euler trajectory overflows before the final
+    # drive-away verdict.  Suppress those expected diagnostics so cached
+    # evidence does not embed an environment-specific worktree path.
+    with np.errstate(over="ignore", invalid="ignore"):
+        deigs = (1.0 / (16 * np.pi**2)) * (
+            3 * np.abs(eigs)**2 * eigs - gauge_term * eigs
+        )
+        new_eigs = eigs + dt * deigs
     # Recover (a, b) from eigenvalues: λ_α = a + 2 Re(b ω^α). Inverse Fourier:
     # a = (λ_0 + λ_1 + λ_2) / 3
     # b = (λ_0 + ω̄ λ_1 + ω λ_2) / 3 (using ω = exp(2πi/3))

@@ -1,6 +1,6 @@
 {
- "edge_count": 15424,
- "node_count": 4636,
+ "edge_count": 15440,
+ "node_count": 4644,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2473,6 +2473,10 @@
   "companion_gauge_work_center_controllability_cycle797_bounded_theorem_note_2026-07-30": {
    "deps_hash": "27100503e5e0",
    "out_degree": 3
+  },
+  "complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "complete_prediction_chain_2026_04_15": {
    "deps_hash": "ed7953444551",
@@ -8930,6 +8934,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "lock_point_menu_record_and_likelihood_lemma_cycle911_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "9250d476c7ae",
+   "out_degree": 3
+  },
   "lorentz_boost_covariance_2d_theorem_note": {
    "deps_hash": "a2ed572eed55",
    "out_degree": 1
@@ -10126,6 +10134,10 @@
    "deps_hash": "95b72757a210",
    "out_degree": 5
   },
+  "occurrence_rate_route_arithmetic_cycle924_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "37584c377e11",
+   "out_degree": 3
+  },
   "oh_schur_boundary_action_note": {
    "deps_hash": "5a94355f1c1f",
    "out_degree": 1
@@ -11305,6 +11317,10 @@
   "primordial_spectrum_note": {
    "deps_hash": "8d76f496f6c9",
    "out_degree": 3
+  },
+  "probability_readout_underdetermination_cycle912_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "7b707271a9a8",
+   "out_degree": 2
   },
   "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": {
    "deps_hash": "cbe42f571241",
@@ -12558,6 +12574,10 @@
    "deps_hash": "be5222e9afb2",
    "out_degree": 4
   },
+  "recorded_selection_nonfunctionality_lemma_cycle913_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "7b707271a9a8",
+   "out_degree": 2
+  },
   "records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11": {
    "deps_hash": "a32c4dfe71ec",
    "out_degree": 7
@@ -13509,6 +13529,10 @@
   "source_acceptance_harness_support_note_2026-07-28": {
    "deps_hash": "60dbe33abca2",
    "out_degree": 6
+  },
+  "source_action_bridge_pricing_cycle871_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "46b48790e32b",
+   "out_degree": 5
   },
   "source_driven_field_recovery_h025_pocket_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15934,6 +15958,10 @@
    "deps_hash": "2dd3a68f91ed",
    "out_degree": 3
   },
+  "within_world_constraint_arithmetic_cycle909_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -17965,6 +17993,10 @@
   "work_history.yt.yt_unbounded_program_note": {
    "deps_hash": "91d7cc45b2cd",
    "out_degree": 8
+  },
+  "world_setup_bookkeeping_terminology_meta_note_2026-08-08": {
+   "deps_hash": "c9025ba861e7",
+   "out_degree": 1
   },
   "writing_voice_guide_2026-04-25": {
    "deps_hash": "8990b3713089",

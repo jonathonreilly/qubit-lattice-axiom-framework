@@ -1,16 +1,28 @@
 #!/usr/bin/env python3
 """Cycle 870: the general-n census law and the composite-ring (n=12) test.
 
-Wave-1 of Campaign 5.  The landed Cycle-857 census fixed n=11 and reported
-N_k = C(10-k, k-1) * 4 * 11 / k.  This runner derives the law for general n
-(transfer matrix / eigenvalue expansion, plus an origin-marking double
-count), reproduces the landed n=11 row exactly, builds the composite
-falsification table at n=12 from a native orbit computation, and prices the
-selection no-go at composite n.
+Derives the unphased law I(n,k) for general n (transfer matrix /
+eigenvalue expansion, plus an origin-marking double count), reproduces
+the landed Cycle-857 k=2..5 phased row and extends it to k=1 as a new
+consequence of the general law, builds the composite table at n=12 from
+a native orbit computation, and proves the spf(n) floor for nonempty
+C_n-invariant subsets of placements ("selection" below means exactly
+that finite invariant-subset object and nothing broader).
 
-Self-contained: no declared repo inputs, no imports of other cycle runners,
-no writes.  Every reported number is derived in-process; the external n=12
-prediction is carried only as a comparator and is scored, not assumed.
+Demoted surfaces (review iteration 1, 2026-08-08, FIX_THEN_PROCEED):
+every factor-four phased statement is CONDITIONAL on a supplied premise
+-- one global four-valued label attached to the whole placement as a
+free Cartesian Z_4 factor, independent of the site subset.  That
+premise is supplied, not derived; certificate S5 checks the arithmetic
+conditional on it and cannot certify the premise itself.  The n=12
+comparator tuple is a stipulated in-file literal with no source
+artifact, so its comparison is a local scope observation attributing
+nothing to any external document.  The running branch and HEAD are
+recorded as provenance only and carry no PASS authority.
+
+Self-contained: no declared repo inputs, no imports of other cycle
+runners, no writes.  Every reported number is derived in-process; the
+supplied comparator and landed-row literals are scored, not assumed.
 """
 from __future__ import annotations
 
@@ -32,26 +44,34 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150_000
-EXPECTED_BRANCH = "physics-loop/toe-time-blockN1-20260802"
 SELF_PATH = "scripts/frontier_cycle870_general_n_census_2026_07_28.py"
 
 # No repo file is read as evidence: the census is derived from scratch.
 DECLARED_INPUT_PATHS: tuple[str, ...] = ()
 BLOCKLISTED_MODULE_PREFIXES = ("frontier_", "kcpt_", "final_", "full_law_")
 
+# SUPPLIED phase premise (not derived): one global four-valued label
+# attached to the whole placement as a free Cartesian Z_4 factor,
+# independent of the site subset.  Every factor-four value below is
+# conditional on this premise; nothing in this runner certifies it.
 PHASE_COUNT = 4
 LANDED_CYCLE857_N = 11
-# Landed Cycle-857 phased census row, k = 1..5 (comparator, not an input).
-LANDED_CYCLE857_PHASED = {1: 44, 2: 176, 3: 308, 4: 220, 5: 44}
+# Landed Cycle-857 phased census row at its declared k = 2..5 scope
+# (stipulated comparator literal, not an input).  k = 1 is NOT part of
+# the landed row: this package's 4*I(11,1) value is a new extension of
+# the general law, reported separately below.
+LANDED_CYCLE857_PHASED_K2_5 = {2: 176, 3: 308, 4: 220, 5: 44}
 LANDED_CYCLE857_QUOTED_SUBROW = (176, 308, 220, 44)
 
 COMPOSITE_N = 12
-# External Cycle-870 prediction, carried verbatim as a comparator.  It is
-# stated in the brief as the spectrum of "unphased k=2 placements"; this
-# runner re-derives every candidate scope natively and scores the claim.
-EXTERNAL_UNPHASED_SPECTRUM = {2: 1, 3: 1, 4: 1, 6: 2, 12: 24}
-EXTERNAL_PHASED_ROW = (4, 4, 4, 8, 96)
-EXTERNAL_DECLARED_SCOPE = "K_EQ_2"
+# Supplied n=12 comparator tuple, stipulated in-file.  No source artifact
+# for this tuple is pinned or cited anywhere; its former external-source
+# attribution was removed at review iteration 1.  The comparison below is
+# a local scope observation about this literal, not a statement about any
+# external document.  Declared scope as supplied: k = 2.
+SUPPLIED_COMPARATOR_SPECTRUM = {2: 1, 3: 1, 4: 1, 6: 2, 12: 24}
+SUPPLIED_COMPARATOR_PHASED_ROW = (4, 4, 4, 8, 96)
+SUPPLIED_COMPARATOR_DECLARED_SCOPE = "K_EQ_2"
 
 BRUTE_N_MAX = 18
 LAW_SPOT_N_MAX = 14
@@ -303,7 +323,9 @@ def certificate_a_general_law() -> dict[str, object]:
         sp.expand_func(form_alt) - sp.expand_func(form_origin)
     )
 
-    # S5: the phase label is a free Z_4 factor.
+    # S5 (conditional): multiply both sides of the proved unphased
+    # identity by the SUPPLIED phase constant.  This certifies the
+    # conditional arithmetic only, never the premise itself.
     phase_rows = []
     phase_ok = True
     for n in range(3, BRUTE_N_MAX + 1):
@@ -318,8 +340,12 @@ def certificate_a_general_law() -> dict[str, object]:
         phase_rows.append({"n": n, "total_is_lucas": lucas_ok, "L_n": total})
 
     theorem = (
-        "N(n,k) = 4 * (n/k) * C(n-k-1, k-1) = 4 * n/(n-k) * C(n-k, k) "
-        "for 3 <= n and 1 <= k <= floor(n/2); N(n,0) = 4."
+        "I(n,k) = (n/k) * C(n-k-1, k-1) = n/(n-k) * C(n-k, k) "
+        "for 3 <= n and 1 <= k <= floor(n/2); I(n,0) = 1.  "
+        "Conditional on the supplied phase premise (one global "
+        "four-valued label attached to the whole placement as a free "
+        "Cartesian Z_4 factor, independent of the site subset -- "
+        "supplied, not derived): N(n,k) = 4 * I(n,k) and N(n,0) = 4."
     )
     proof_steps = (
         "S1 TRANSFER_MATRIX :: with T(x) = [[1,x],[1,0]] on the "
@@ -342,17 +368,27 @@ def certificate_a_general_law() -> dict[str, object]:
         "S4 FORM_IDENTITY :: n/(n-k) C(n-k,k) - n/k C(n-k-1,k-1) simplifies "
         "to 0 for symbolic n,k, so the eigenvalue route and the "
         "origin-marking route are the same law, not two coincident tables.",
-        "S5 PHASE_FACTOR :: the phase label is a free Z_4 factor attached to "
-        "the whole placement, independent of which sites are selected, so "
-        "N(n,k) = 4 * I(n,k); the unphased totals sum_k I(n,k) reproduce the "
-        "Lucas numbers L_n as an independent check.",
+        "S5 PHASE_FACTOR (CONDITIONAL, SUPPLIED PREMISE) :: the four-valued "
+        "phase label is SUPPLIED as a free Cartesian Z_4 factor attached to "
+        "the whole placement, independent of which sites are selected; it is "
+        "not derived by this runner.  Conditional on that premise, "
+        "N(n,k) = 4 * I(n,k).  The check below multiplies both sides of the "
+        "already-proved unphased identity by the supplied constant, so it "
+        "certifies the conditional arithmetic, not the premise; the unphased "
+        "totals sum_k I(n,k) reproduce the Lucas numbers L_n as an "
+        "independent check.",
     )
 
     result = {
         "certificate": "A_GENERAL_LAW",
-        "finding": "GENERAL_N_LAW_DERIVED",
+        "finding": "UNPHASED_LAW_DERIVED_PHASE_LIFT_CONDITIONAL",
         "theorem": theorem,
         "proof_steps": proof_steps,
+        "phase_premise": (
+            "SUPPLIED free Cartesian Z_4 factor (one global four-valued "
+            "label independent of the site subset); not derived here -- "
+            "every factor-four value is conditional on it"
+        ),
         "s1_transfer_matrix_matches_brute": s1_ok,
         "s1_rows_checked": len(s1_rows),
         "s2_char_poly_residuals_zero": all(
@@ -365,7 +401,7 @@ def certificate_a_general_law() -> dict[str, object]:
         "s3_failures": tuple(s3_rows),
         "s4_symbolic_form_identity_residual": str(identity_residual),
         "s4_forms_identical": identity_residual == 0,
-        "s5_phase_factor_and_lucas_totals": phase_ok,
+        "s5_conditional_phase_arithmetic_and_lucas_totals": phase_ok,
         "s5_lucas_totals": tuple(
             (row["n"], row["L_n"]) for row in phase_rows
         ),
@@ -380,7 +416,7 @@ def certificate_a_general_law() -> dict[str, object]:
         and result["s3_origin_marking_double_count"]
         and not result["s3_failures"]
         and result["s4_forms_identical"]
-        and result["s5_phase_factor_and_lucas_totals"]
+        and result["s5_conditional_phase_arithmetic_and_lucas_totals"]
     )
     return result
 
@@ -395,29 +431,38 @@ def certificate_b_n11() -> dict[str, object]:
     brute = brute_profile(n)
     closed = {k: kaplansky_closed_form(n, k) for k in brute}
     alt = {k: kaplansky_alt_form(n, k) for k in brute}
-    cycle857_form = {
+    # The landed Cycle-857 literal formula is compared only at its
+    # declared k = 2..5 scope; the k = 1 evaluation is a NEW extension
+    # of this package, reported separately, never as landed provenance.
+    cycle857_form_k2_5 = {
         k: comb(10 - k, k - 1) * PHASE_COUNT * 11 // k
-        for k in range(1, n // 2 + 1)
+        for k in range(2, n // 2 + 1)
     }
     phased = {k: PHASE_COUNT * brute[k] for k in brute}
-    landed_rows = {k: phased[k] for k in LANDED_CYCLE857_PHASED}
+    landed_rows = {k: phased[k] for k in LANDED_CYCLE857_PHASED_K2_5}
     subrow = tuple(phased[k] for k in (2, 3, 4, 5))
 
     result = {
         "certificate": "B_N11_REPRODUCTION",
-        "finding": "LANDED_N11_ROW_REPRODUCED",
+        "finding": "LANDED_N11_SUBROW_REPRODUCED_K1_NEW",
         "n": n,
+        "phase_values_conditional_on_supplied_premise": True,
         "brute_unphased": key_str(brute),
         "closed_form_unphased": key_str(closed),
         "phased_census": key_str(phased),
         "brute_equals_closed_form": brute == closed,
         "brute_equals_alt_form": brute == alt,
-        "cycle857_literal_form_agrees": cycle857_form == {
-            k: phased[k] for k in cycle857_form
+        "cycle857_literal_form_agrees": cycle857_form_k2_5 == {
+            k: phased[k] for k in cycle857_form_k2_5
         },
-        "landed_row_reproduced": landed_rows == LANDED_CYCLE857_PHASED,
+        "landed_row_scope": "k = 2..5 (the landed Cycle-857 generator scope)",
+        "landed_subrow_reproduced": landed_rows == LANDED_CYCLE857_PHASED_K2_5,
         "quoted_subrow": subrow,
         "quoted_subrow_reproduced": subrow == LANDED_CYCLE857_QUOTED_SUBROW,
+        "k1_extension_value": phased[1],
+        "k1_extension_is_new_scope_not_landed": True,
+        "k1_formula_extension_agrees": phased[1]
+        == comb(10 - 1, 0) * PHASE_COUNT * LANDED_CYCLE857_N // 1,
         "unphased_total": sum(brute.values()),
         "unphased_total_is_lucas_11": sum(brute.values()) == lucas(11),
         "phased_total": sum(phased.values()),
@@ -426,15 +471,16 @@ def certificate_b_n11() -> dict[str, object]:
         result["brute_equals_closed_form"]
         and result["brute_equals_alt_form"]
         and result["cycle857_literal_form_agrees"]
-        and result["landed_row_reproduced"]
+        and result["landed_subrow_reproduced"]
         and result["quoted_subrow_reproduced"]
+        and result["k1_formula_extension_agrees"]
         and result["unphased_total_is_lucas_11"]
     )
     return result
 
 
 # ---------------------------------------------------------------------------
-# Certificate C: the composite (n = 12) falsification table
+# Certificate C: the composite (n = 12) comparator table
 # ---------------------------------------------------------------------------
 
 
@@ -492,8 +538,9 @@ def certificate_c_composite() -> dict[str, object]:
         name: sum(size * count for size, count in spectrum.items())
         for name, spectrum in native.items()
     }
-    # The phase label is a free Z_4 factor untouched by rotation, so each
-    # unphased orbit splits into 4 phased orbits of the same size.
+    # Conditional on the SUPPLIED premise: the free Cartesian Z_4 factor
+    # is untouched by rotation, so each unphased orbit splits into 4
+    # phased orbits of the same size.  Supplied, not derived.
     phased_spectrum = {
         name: {size: PHASE_COUNT * count for size, count in spectrum.items()}
         for name, spectrum in native.items()
@@ -501,17 +548,18 @@ def certificate_c_composite() -> dict[str, object]:
 
     matching_scopes = tuple(
         name for name, spectrum in native.items()
-        if spectrum == EXTERNAL_UNPHASED_SPECTRUM
+        if spectrum == SUPPLIED_COMPARATOR_SPECTRUM
     )
     declared_scope_matches = (
-        native[EXTERNAL_DECLARED_SCOPE] == EXTERNAL_UNPHASED_SPECTRUM
+        native[SUPPLIED_COMPARATOR_DECLARED_SCOPE]
+        == SUPPLIED_COMPARATOR_SPECTRUM
     )
-    external_row_sizes = tuple(sorted(EXTERNAL_UNPHASED_SPECTRUM))
+    comparator_row_sizes = tuple(sorted(SUPPLIED_COMPARATOR_SPECTRUM))
     phased_as_multiplicities = tuple(
-        phased_spectrum["K_GE_2"][size] for size in external_row_sizes
+        phased_spectrum["K_GE_2"][size] for size in comparator_row_sizes
     )
     phased_as_orbit_sizes = tuple(
-        PHASE_COUNT * size for size in external_row_sizes
+        PHASE_COUNT * size for size in comparator_row_sizes
     )
 
     # Burnside cross-check of the orbit count: fixed sets under rotation j
@@ -521,8 +569,9 @@ def certificate_c_composite() -> dict[str, object]:
 
     result = {
         "certificate": "C_COMPOSITE_TABLE",
-        "finding": "COMPOSITE_TABLE_BUILT_EXTERNAL_SCOPE_REFUTED",
+        "finding": "COMPOSITE_TABLE_BUILT_COMPARATOR_SCOPE_MISMATCH",
         "n": n,
+        "phase_values_conditional_on_supplied_premise": True,
         "unphased_census": key_str(brute),
         "unphased_matches_general_law": brute == closed,
         "phased_census": key_str(phased),
@@ -544,46 +593,51 @@ def certificate_c_composite() -> dict[str, object]:
             }
             for row in orbits if row["orbit_size"] < n
         ),
-        "external_unphased_spectrum": key_str(EXTERNAL_UNPHASED_SPECTRUM),
-        "external_declared_scope": EXTERNAL_DECLARED_SCOPE,
-        "external_declared_scope_native_spectrum":
-            key_str(native[EXTERNAL_DECLARED_SCOPE]),
-        "external_declared_scope_matches": declared_scope_matches,
-        "external_scope_refuted": not declared_scope_matches,
-        "external_spectrum_matching_scopes": matching_scopes,
-        "external_spectrum_correct_under_scope":
+        "supplied_comparator_spectrum": key_str(SUPPLIED_COMPARATOR_SPECTRUM),
+        "supplied_comparator_declared_scope":
+            SUPPLIED_COMPARATOR_DECLARED_SCOPE,
+        "comparator_declared_scope_native_spectrum":
+            key_str(native[SUPPLIED_COMPARATOR_DECLARED_SCOPE]),
+        "comparator_declared_scope_matches": declared_scope_matches,
+        "comparator_scope_label_mismatch": not declared_scope_matches,
+        "comparator_spectrum_matching_scopes": matching_scopes,
+        "comparator_matches_k_ge_2_only":
             matching_scopes == ("K_GE_2",),
-        "external_phased_row": EXTERNAL_PHASED_ROW,
+        "supplied_comparator_phased_row": SUPPLIED_COMPARATOR_PHASED_ROW,
         "phased_row_as_multiplicities": phased_as_multiplicities,
         "phased_row_as_orbit_sizes": phased_as_orbit_sizes,
-        "external_phased_row_is_multiplicities":
-            phased_as_multiplicities == EXTERNAL_PHASED_ROW,
-        "external_phased_row_is_orbit_sizes":
-            phased_as_orbit_sizes == EXTERNAL_PHASED_ROW,
+        "comparator_phased_row_is_multiplicities":
+            phased_as_multiplicities == SUPPLIED_COMPARATOR_PHASED_ROW,
+        "comparator_phased_row_is_orbit_sizes":
+            phased_as_orbit_sizes == SUPPLIED_COMPARATOR_PHASED_ROW,
         "burnside_fixed_point_total": burnside_total,
         "burnside_orbit_count": burnside_orbits,
         "burnside_agrees_with_enumeration": burnside_orbits == len(orbits),
         "verdict": (
-            "external numbers are the K_GE_2 spectrum (all placements with "
-            "k >= 2), NOT the k = 2 spectrum the brief labels them with; the "
-            "native k = 2 spectrum is {6:1, 12:4} on 54 placements.  The "
-            "phased row 4/4/4/8/96 is correct read as orbit MULTIPLICITIES "
-            "(x4 free phase label), and false read as orbit sizes."
+            "the supplied comparator tuple equals the native K_GE_2 "
+            "spectrum (all placements with k >= 2) and does NOT equal the "
+            "native k = 2 spectrum {6:1, 12:4} on 54 placements carried "
+            "under its declared K_EQ_2 label.  This is a local comparison "
+            "against an in-file stipulated literal with no source artifact; "
+            "it attributes nothing to any external document.  The supplied "
+            "phased row 4/4/4/8/96 equals the orbit-MULTIPLICITY table "
+            "under the supplied free Z_4 phase premise (conditional) and "
+            "is false read as orbit sizes."
         ),
     }
     result["pass"] = (
         result["unphased_matches_general_law"]
         and result["burnside_agrees_with_enumeration"]
-        and result["external_spectrum_correct_under_scope"]
-        and result["external_scope_refuted"]
-        and result["external_phased_row_is_multiplicities"]
-        and not result["external_phased_row_is_orbit_sizes"]
+        and result["comparator_matches_k_ge_2_only"]
+        and result["comparator_scope_label_mismatch"]
+        and result["comparator_phased_row_is_multiplicities"]
+        and not result["comparator_phased_row_is_orbit_sizes"]
     )
     return result
 
 
 # ---------------------------------------------------------------------------
-# Certificate D: the selection no-go at composite n
+# Certificate D: the invariant-subset floor at composite n
 # ---------------------------------------------------------------------------
 
 
@@ -661,31 +715,35 @@ def certificate_d_selection_scope() -> dict[str, object]:
         "2 spf(n), ...} and its rotations."
     )
     consequence = (
-        "SELECTION_SCOPE :: a C_n-covariant selection is a nonempty "
-        "C_n-invariant set of placements, so its size is a sum of orbit "
+        "INVARIANT_SUBSET_FLOOR :: DEFINITION: in this package a "
+        "'selection' means exactly a nonempty C_n-invariant subset of the "
+        "finite placement set (a union of rotation orbits).  Probabilistic, "
+        "framed, equivariant-map, dynamical, or physical selector notions "
+        "are OUTSIDE this object and are not excluded by this result.  "
+        "Within that definition the size of a selection is a sum of orbit "
         "sizes and its minimum is spf(n).  At prime n every nonempty orbit "
-        "is free of size n -- that is the landed free-C_11 no-go, and it "
-        "rides primality exactly here.  At n = 12 the floor drops to 2, "
-        "realised by {evens, odds}.  Size 1 remains impossible for every "
-        "n >= 3: the only C_n-fixed subsets are the empty set and Z_n, and "
-        "Z_n is not independent, so no canonical single placement exists at "
-        "any n.  Under the full C_n x Z_4 phase symmetry the free phase "
-        "factor multiplies the floor to 4 * spf(n) = 8 at n = 12 and 44 at "
-        "n = 11."
+        "is free of size n; at n = 12 the floor drops to 2, realised by "
+        "{evens, odds}.  A singleton invariant subset is impossible for "
+        "every n >= 3 within this definition: the only C_n-fixed subsets "
+        "are the empty set and Z_n, and Z_n is not independent.  "
+        "CONDITIONAL phase lift: under the separately SUPPLIED free "
+        "Cartesian Z_4 phase premise (supplied, not derived) the floor "
+        "multiplies to 4 * spf(n) = 8 at n = 12 and 44 at n = 11; no "
+        "coupled or diagonal phase action is analyzed here."
     )
 
     result = {
         "certificate": "D_SELECTION_SCOPE",
-        "finding": "NOGO_SCOPE_PRICED_SPF_FLOOR",
+        "finding": "SPF_FLOOR_FOR_INVARIANT_SUBSETS",
         "lemma": lemma,
         "consequence": consequence,
         "n": n,
         "min_nonempty_orbit_size_n12": min_orbit_size,
         "min_orbit_realisers_n12": minimisers,
-        "smallest_covariant_selection_rotation_only": min_orbit_size,
-        "smallest_covariant_selection_with_phase":
+        "min_invariant_subset_rotation_only": min_orbit_size,
+        "min_invariant_subset_with_phase_conditional":
             PHASE_COUNT * min_orbit_size,
-        "single_placement_selection_possible": False,
+        "singleton_invariant_subset_possible": False,
         "stabilised_placements_n12": tuple(
             {
                 "representative": row["representative"],
@@ -730,19 +788,21 @@ def falsification_probes() -> dict[str, object]:
     n11 = brute_profile(LANDED_CYCLE857_N)
     n12_orbits = orbit_table(COMPOSITE_N)
 
+    # Mutants are compared at the landed row's declared k = 2..5 scope so
+    # a key-set difference alone can never fake a refutation.
     mutant_binomial = {
         k: PHASE_COUNT * LANDED_CYCLE857_N * comb(11 - k, k - 1) // k
-        for k in range(1, 6)
+        for k in range(2, 6)
         if (PHASE_COUNT * LANDED_CYCLE857_N * comb(11 - k, k - 1)) % k == 0
     }
     mutant_no_label_division = {
         k: PHASE_COUNT * LANDED_CYCLE857_N * comb(10 - k, k - 1)
-        for k in range(1, 6)
+        for k in range(2, 6)
     }
     mutant_phase_power = {
-        k: PHASE_COUNT**k * n11[k] for k in range(1, 6)
+        k: PHASE_COUNT**k * n11[k] for k in range(2, 6)
     }
-    landed = LANDED_CYCLE857_PHASED
+    landed = LANDED_CYCLE857_PHASED_K2_5
     k2_spectrum = spectrum_for(n12_orbits, lambda row: row["k"] == 2)
     n11_orbit_sizes = {
         int(row["orbit_size"]) for row in orbit_table(LANDED_CYCLE857_N)
@@ -756,9 +816,9 @@ def falsification_probes() -> dict[str, object]:
         "NC1_shifted_binomial_law": mutant_binomial != landed,
         "NC2_law_without_label_division": mutant_no_label_division != landed,
         "NC3_phase_factor_4_to_the_k": mutant_phase_power != landed,
-        "NC4_external_spectrum_is_k_eq_2":
-            k2_spectrum != EXTERNAL_UNPHASED_SPECTRUM,
-        "NC5_n12_admits_single_placement_selection": n12_min_orbit != 1,
+        "NC4_comparator_spectrum_is_k_eq_2":
+            k2_spectrum != SUPPLIED_COMPARATOR_SPECTRUM,
+        "NC5_n12_admits_singleton_invariant_subset": n12_min_orbit != 1,
         "NC6_n11_has_a_stabilised_placement":
             n11_orbit_sizes == {LANDED_CYCLE857_N},
         "NC7_kaplansky_equals_plain_binomial": any(
@@ -816,17 +876,17 @@ def certificate_e_controls(
         "self_contained_no_repo_inputs": DECLARED_INPUT_PATHS == (),
         "literal_phase_count":
             literal_assignment(self_tree, "PHASE_COUNT") == PHASE_COUNT,
-        "literal_external_spectrum":
-            literal_assignment(self_tree, "EXTERNAL_UNPHASED_SPECTRUM")
-            == EXTERNAL_UNPHASED_SPECTRUM,
-        "literal_external_phased_row":
-            literal_assignment(self_tree, "EXTERNAL_PHASED_ROW")
-            == list(EXTERNAL_PHASED_ROW)
-            or literal_assignment(self_tree, "EXTERNAL_PHASED_ROW")
-            == EXTERNAL_PHASED_ROW,
-        "literal_landed_row":
-            literal_assignment(self_tree, "LANDED_CYCLE857_PHASED")
-            == LANDED_CYCLE857_PHASED,
+        "literal_comparator_spectrum":
+            literal_assignment(self_tree, "SUPPLIED_COMPARATOR_SPECTRUM")
+            == SUPPLIED_COMPARATOR_SPECTRUM,
+        "literal_comparator_phased_row":
+            literal_assignment(self_tree, "SUPPLIED_COMPARATOR_PHASED_ROW")
+            == list(SUPPLIED_COMPARATOR_PHASED_ROW)
+            or literal_assignment(self_tree, "SUPPLIED_COMPARATOR_PHASED_ROW")
+            == SUPPLIED_COMPARATOR_PHASED_ROW,
+        "literal_landed_subrow":
+            literal_assignment(self_tree, "LANDED_CYCLE857_PHASED_K2_5")
+            == LANDED_CYCLE857_PHASED_K2_5,
         "self_sha256": sha256(self_payload_before).hexdigest(),
         "self_git_blob": git_blob_sha(self_payload_before),
         "self_unchanged_by_run": self_payload_before == self_payload_after,
@@ -840,9 +900,11 @@ def certificate_e_controls(
         )),
         "imported_modules": tuple(sorted(imported)),
         "sympy_version": sp.__version__,
-        "running_branch": git_text("rev-parse", "--abbrev-ref", "HEAD"),
-        "expected_branch": EXPECTED_BRANCH,
-        "execution_head_sha": git_text("rev-parse", "HEAD"),
+        # Branch and HEAD are provenance only: they never gate PASS, so
+        # the runner is portable to main, detached, and audit worktrees.
+        "running_branch_provenance_only":
+            git_text("rev-parse", "--abbrev-ref", "HEAD"),
+        "execution_head_sha_provenance_only": git_text("rev-parse", "HEAD"),
         "determinism_replay": fingerprint_first == fingerprint_repeat,
         "falsification_probes": probes["probes"],
         "mutant_k2_spectrum": probes["mutant_k2_spectrum"],
@@ -857,14 +919,13 @@ def certificate_e_controls(
         result["literal_declared_input_paths"]
         and result["self_contained_no_repo_inputs"]
         and result["literal_phase_count"]
-        and result["literal_external_spectrum"]
-        and result["literal_external_phased_row"]
-        and result["literal_landed_row"]
+        and result["literal_comparator_spectrum"]
+        and result["literal_comparator_phased_row"]
+        and result["literal_landed_subrow"]
         and result["self_unchanged_by_run"]
         and result["no_write_calls_in_source"]
         and not result["blocked_runner_import_hits"]
         and not result["foreign_runner_modules_loaded"]
-        and result["running_branch"] == EXPECTED_BRANCH
         and result["determinism_replay"]
         and result["all_falsification_probes_refuted"]
         and runtime_seconds < AUDIT_TIMEOUT_SEC
@@ -902,8 +963,10 @@ def render(
     scope = tables["D_SELECTION_SCOPE"]
     lines = [
         "CYCLE870_GENERAL_N_CENSUS_LAW",
-        "SCOPE :: general-n census law + composite-ring (n=12) test; "
-        "self-contained derivation, no repo inputs",
+        "SCOPE :: unphased general-n census law + composite-ring (n=12) "
+        "test; self-contained derivation, no repo inputs; every factor-four "
+        "phased value is conditional on the supplied Z_4 phase premise "
+        "(supplied, not derived)",
         "THEOREM :: " + str(law["theorem"]),
     ]
     for step in law["proof_steps"]:
@@ -926,22 +989,29 @@ def render(
     lines.append("COMPARATOR_VERDICT :: " + str(composite["verdict"]))
     lines.append("FINAL :: " + compact({
         "general_law": law["theorem"],
+        "phase_values_conditional_on_supplied_premise": True,
         "n11_phased_census": tables["B_N11_REPRODUCTION"]["phased_census"],
         "n11_quoted_subrow_reproduced":
             tables["B_N11_REPRODUCTION"]["quoted_subrow_reproduced"],
+        "n11_k1_extension_is_new_scope_not_landed":
+            tables["B_N11_REPRODUCTION"]["k1_extension_is_new_scope_not_landed"],
         "n12_phased_census": composite["phased_census"],
         "n12_native_spectra": composite["native_spectra"],
-        "external_spectrum_matching_scopes":
-            composite["external_spectrum_matching_scopes"],
-        "external_declared_scope_matches":
-            composite["external_declared_scope_matches"],
-        "external_phased_row_is_multiplicities":
-            composite["external_phased_row_is_multiplicities"],
-        "min_covariant_selection_n12":
-            scope["smallest_covariant_selection_rotation_only"],
-        "min_covariant_selection_n12_with_phase":
-            scope["smallest_covariant_selection_with_phase"],
-        "selection_floor_law": "min covariant selection size = spf(n)",
+        "comparator_spectrum_matching_scopes":
+            composite["comparator_spectrum_matching_scopes"],
+        "comparator_declared_scope_matches":
+            composite["comparator_declared_scope_matches"],
+        "comparator_phased_row_is_multiplicities":
+            composite["comparator_phased_row_is_multiplicities"],
+        "min_invariant_subset_n12":
+            scope["min_invariant_subset_rotation_only"],
+        "min_invariant_subset_n12_with_phase_conditional":
+            scope["min_invariant_subset_with_phase_conditional"],
+        "invariant_subset_floor_law": (
+            "min nonempty C_n-invariant subset of placements has size "
+            "spf(n); the x4 phase lift is conditional on the supplied "
+            "Z_4 premise"
+        ),
         "runtime_seconds": controls["runtime_seconds"],
         "pass": all(value["pass"] for value in tables.values())
             and controls["pass"],

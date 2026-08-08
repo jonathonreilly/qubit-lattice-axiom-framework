@@ -154,6 +154,54 @@ def main() -> int:
         "tensor product or local tomography. A local-tomography/no-extra-"
         "global generation premise is the exact residual."
     )
+
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: matrix entries are the working level throughout, and the "
+        "file even declines to use a library for them - kron is a four-deep loop "
+        "writing out[i*rows_b + k, j*cols_b + l] = a[i,j]*b[k,l] one position at a "
+        "time, matrix_units manufactures each of the sixteen M_4(C) units by "
+        "setting a single entry to 1, and every dimension claim is settled by "
+        "flatten_rank, which reshapes each operator into a column of all its "
+        "entries, stacks those columns and takes a sympy rank."
+    )
+    print(
+        "  per_site: two distinct local sites are carried separately and both are "
+        "verified in place - each is a faithful copy of the one-site Qubit algebra "
+        "M_2(C), embedded into the 8-dimensional carrier as a duplicated direct "
+        "sum, each local image is confirmed to have rank exactly 4, and operational "
+        "locality is checked exhaustively by simplifying all sixteen commutators "
+        "between the two images to the 8x8 zero matrix."
+    )
+    print(
+        "  per_mode: checked and not executed - no momentum, frequency or "
+        "eigenvector is used anywhere. The Pauli list serves as an operator basis "
+        "for counting dimensions, nothing is diagonalized, and the only "
+        "spectral-looking object in the file, the sector observable eye(4) "
+        "direct-sum -eye(4), is written down by hand rather than obtained from any "
+        "spectrum."
+    )
+    print(
+        "  per_block: two blocks are what defeat the derivation, and they are "
+        "exhibited exactly - the composite is taken to be M_4(C) direct-sum M_4(C), "
+        "whose full unit basis has rank 32, while the products of the two local "
+        "images span only rank 16, the diagonally duplicated copy. The central "
+        "observable that is +I on the first block and -I on the second commutes "
+        "with every one of those products yet raises their span to 17, so it is an "
+        "operational-locality-respecting quantity that no local data can reach."
+    )
+    print(
+        "  lattice_wide: checked and not executed - only two local factors are ever "
+        "composed, and there is no third site, no chain, no volume and no limit; "
+        "nothing here scales with system size. The runner is explicit that the gap "
+        "is a premise rather than a computation, naming a local-tomography / "
+        "no-extra-global-generation assumption as the exact residual its narrow "
+        "no-go leaves standing."
+    )
     return 0 if failed == 0 else 1
 
 

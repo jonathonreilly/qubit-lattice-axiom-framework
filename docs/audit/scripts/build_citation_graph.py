@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "local_clock_relation_cycle869_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle869_relation_independent_check_2026_07_28.py",
+    ],
     "general_n_census_law_cycle870_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle870_census_independent_check_2026_07_28.py",
     ],

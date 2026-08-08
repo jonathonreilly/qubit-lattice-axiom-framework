@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
-runner_sha256: 470796c290dbf4762f25c6dc8049babb8816826edb27466e91ef1a1bc4de620d
+runner_sha256: 33905b49152e361e89199bfc99a5e761a8508fa56e990712c82023f3d672fd2b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 
@@ -55,6 +55,13 @@ status: ok
 [A] PASS: source note omits old overclaim phrase #4
 [A] PASS: source note omits old overclaim phrase #5
 [A] PASS: source note contains no tool-worktree paths
+
+=== N5 execution certificate ===
+per_element: the projector algebra is settled on complete arrays - the cyclic shift is written out as a 3x3 array of literal entries, the symmetric projector is formed as one third of the sum of its three powers, and idempotence together with mutual annihilation are required to simplify to the 3x3 zero matrix before the determinant of the weighted combination is factored to alpha times beta squared
+per_site: checked and not executed - the three slots this runner manipulates are isotype coordinates of a generation triple, and nothing in the file carries a position, a spacing or a neighbour; the only geometry present is the cyclic reordering of those three slots, which permutes labels and does not move anything anywhere
+per_mode: resolved only as far as the two real doublet coordinates, which are carried separately through the planar rotation so that the invariance of their squared radius can be checked component by component; the individual complex C_3 characters are never formed, and everywhere else the doublet is handled whole through its rank-two projector
+per_block: block resolution is the entire theorem here - the singlet and orthogonal-complement blocks are separated with ranks one and two, the weighted log-volume family with exponents mu and nu is solved under the fixed total-energy constraint to give each block its own share of that total, and the determinant of the unreduced carrier is shown to carry the weight pair one and two, which is what pins the leaf away from the equal-weight value
+lattice_wide: checked and not executed - the runner's own scope line limits the theorem to the unreduced carrier and it explicitly declines to derive the physical quotient bridge or the cos(3 arg b) decoupling, so the object a whole-system statement would need is absent by design; the only file-wide test present is Part 5, which is inventory, checking for the presence and absence of fixed phrases in the source note
 
 Interpretation:
   The bounded theorem is the unreduced 3x3 obstruction: determinant

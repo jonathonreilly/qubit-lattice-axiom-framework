@@ -1,6 +1,6 @@
 {
- "edge_count": 15447,
- "node_count": 4646,
+ "edge_count": 15458,
+ "node_count": 4647,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1623,8 +1623,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "9770b8cc1657",
-   "out_degree": 339
+   "deps_hash": "3f50e816bb63",
+   "out_degree": 340
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -4533,6 +4533,10 @@
   "exact_tier_path_integral_bounded_note_2026-05-07_exact": {
    "deps_hash": "ae423068470f",
    "out_degree": 7
+  },
+  "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "7734e49ea328",
+   "out_degree": 10
   },
   "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11": {
    "deps_hash": "50107746920d",

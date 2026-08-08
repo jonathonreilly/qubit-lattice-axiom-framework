@@ -555,41 +555,6 @@ def main() -> int:
             "PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18" in text,
         )
 
-    # -----------------------------------------------------------------------
-    section("Part 9: N5 execution certificate — what this runner resolves")
-    # -----------------------------------------------------------------------
-
-    print(
-        "per_element: checked — every generator and basis element is verified "
-        "individually: sigma_1, sigma_2, sigma_3 each square to I_2, the three "
-        "bivectors e12, e23, e31 equal i*sigma_3, i*sigma_1, i*sigma_2, and "
-        "B_1 = C + C^2, B_2 = i(C - C^2) are each exactly Hermitian on M_3(C)."
-    )
-    print(
-        "per_site: checked and not executed — this companion is a single-block "
-        "Clifford/circulant algebra probe carrying no lattice site index; the "
-        "three circulant positions enter only through the generator C with "
-        "C^3 = I_3, never as independently resolved sites."
-    )
-    print(
-        "per_mode: checked — the Z_3 cyclic action on Lambda^2 V_3 splits into "
-        "3 isotype modes whose eigenvalues are the cube roots of unity; the "
-        "trivial mode is i(sigma_1+sigma_2+sigma_3) and the residual doublet "
-        "mode is a genuine 2-plane, so no mode collapses it to one bivector."
-    )
-    print(
-        "per_block: checked — on the single Herm_circ(3) kappa block the "
-        "doublet pair satisfies [B_1, B_2] = 0 while the Cl(3) bivector pair "
-        "anticommutes, and the block-total extrema separate F1 at "
-        "E_+ = E_perp = E_tot/2 (kappa = 2) from F3 at E_+ = E_tot/3 (kappa = 1)."
-    )
-    print(
-        "lattice_wide: checked and not executed — nothing in this probe extends "
-        "past the fixed three-generation Herm_circ(3) block to a lattice or "
-        "continuum limit; the executed evidence is the exact-symbolic check set "
-        f"on that one block, PASS={PASS}, FAIL={FAIL}."
-    )
-
     print()
     print("=" * 88)
     print(f"=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")

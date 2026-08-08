@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19.py
-runner_sha256: ca60b043409517548791a1db9b59099eae0d8984ac26e32b2e7733c01af52f6a
+runner_sha256: e83f5828df5a6ad29bb622394550d88a764d8dc6b60fa862ddd48b34869a03a9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.62
+elapsed_sec: 8.97
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -14,27 +14,27 @@ DM WILSON DIRECT-DESCENDANT CANONICAL-FIBER SCHUR-ENTROPY CANDIDATE / NO-GO
 PART 1: THE ORBIT-LEVEL CANONICAL FIBER AND POSITIVE BRANCH ARE EXACTLY REPRESENTABLE
 ========================================================================================
   [PASS] The canonical favored-column orbit is fixed exactly by the two permutation-invariant moments (sum c_i^2, sum c_i^3)  ((p2,p3)=(0.865045876015,0.801108643551))
-  [PASS] The Shannon and Renyi-2 constructions both land on that orbit-level fiber and inside gamma > 0, E1 > 0, E2 > 0, Delta_src > 0  (Shannon pack=[0.394212 0.000325 0.000476 0.026684], Renyi2 pack=[0.119541 0.445072 0.005487 0.013695], fiber residuals=(3.33e-16,5.44e-15))
+  [PASS] The Shannon and Renyi-2 constructions both land on that orbit-level fiber and inside gamma > 0, E1 > 0, E2 > 0, Delta_src > 0  (Shannon pack=[0.394324 0.001431 0.001847 0.026616], Renyi2 pack=[0.053183 0.446447 0.004143 0.012267], fiber residuals=(2.00e-15,4.55e-15))
 
 ========================================================================================
 PART 2: THE PLATEAU SCHUR-ISOTROPY SLOGAN DOES NOT EXTEND CANONICALLY TO THE FULL FIBER
 ========================================================================================
-  [PASS] The Shannon construction beats the certified plateau witness W1 in Shannon entropy  ((S_H,W1)=(0.798000492593,0.510071681521))
-  [PASS] The Renyi-2 / participation construction beats W1 in Renyi-2 entropy  ((S_R,W1)=(0.711849776509,0.311764655074))
-  [PASS] Shannon and Renyi-2 rank the two positive-fiber witnesses oppositely  (H(S_H,S_R)=(0.798000492593,0.752666198181), R2(S_H,S_R)=(0.683120208749,0.711849776509))
-  [PASS] Their normalized Schur spectra are majorization-incomparable, so 'most isotropic spectrum' is not a well-defined law on the full fiber  (S_H=[0.632539 0.320514 0.046947], S_R=[0.540252 0.445721 0.014028])
+  [PASS] The Shannon construction beats the certified plateau witness W1 in Shannon entropy  ((S_H,W1)=(0.797755102040,0.510071681521))
+  [PASS] The Renyi-2 / participation construction beats W1 in Renyi-2 entropy  ((S_R,W1)=(0.718807116688,0.311764655074))
+  [PASS] Shannon and Renyi-2 rank the two positive-fiber witnesses oppositely  (H(S_H,S_R)=(0.797755102040,0.755115148545), R2(S_H,S_R)=(0.683061178595,0.718807116688))
+  [PASS] Their normalized Schur spectra are majorization-incomparable, so 'most isotropic spectrum' is not a well-defined law on the full fiber  (S_H=[0.632446 0.320767 0.046787], S_R=[0.511808 0.474552 0.01364 ])
 
 ========================================================================================
 PART 3: THE EXTRA AXIOM THAT PICKS SHANNON DOES GIVE AN EXPLICIT ENDPOINT CANDIDATE
 ========================================================================================
-  [PASS] The Shannon point is an explicit positive source on the canonical orbit-level fiber  (source5=[0.687782 0.633265 0.111723 0.229893 1.436355], spectrum=[0.632539 0.320514 0.046947])
-  [PASS] That candidate keeps the exact transport-maximal favored-column value eta_1 = 1.052220313052...  (etas=[0.855779 1.05222  0.853321])
+  [PASS] The Shannon point is an explicit positive source on the canonical orbit-level fiber  (source5=[0.68898  0.632972 0.111102 0.23146  1.437698], spectrum=[0.632446 0.320767 0.046787])
+  [PASS] That candidate keeps the exact transport-maximal favored-column value eta_1 = 1.052220313052...  (etas=[0.855395 1.05222  0.852571])
 
 ========================================================================================
 PART 4: EVEN THE SHANNON ENDPOINT DOES NOT YET SUPPLY THE PHYSICAL SELECTOR
 ========================================================================================
-  [PASS] The aligned-seed -> Shannon-endpoint segment still has a unique exact eta_1 = 1 crossing  (lambda=0.857168273739)
-  [PASS] That exact crossing is locally full-rank but it leaves the constructive chamber because E1 < 0  (root pack=[ 1.        0.340871 -0.017737  0.029036  0.029777])
+  [PASS] The aligned-seed -> Shannon-endpoint segment still has a unique exact eta_1 = 1 crossing  (lambda=0.857349816848)
+  [PASS] That exact crossing is locally full-rank but it leaves the constructive chamber because E1 < 0  (root pack=[ 1.        0.341093 -0.016794  0.030089  0.02972 ])
 
 ========================================================================================
 PART 5: BOTTOM LINE
@@ -43,20 +43,11 @@ PART 5: BOTTOM LINE
   [PASS] What the branch now has is a sharper conditional candidate: if one adds the entropy-additivity axiom, Shannon selects an explicit endpoint, but the constructive physical selector remains open  (the remaining gap is not generic spectral isotropy but the extra physical law beyond it)
 
   canonical orbit targets (p2,p3) = [0.865046 0.801109]
-  Shannon source5                 = [0.687782 0.633265 0.111723 0.229893 1.436355]
-  Shannon spectrum                = [0.632539 0.320514 0.046947]
-  Renyi2 source5                  = [0.814266 0.639781 0.059585 0.645649 2.388944]
-  Renyi2 spectrum                 = [0.540252 0.445721 0.014028]
-  Shannon root pack               = [ 1.        0.340871 -0.017737  0.029036  0.029777]
-
-========================================================================================
-N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER ACTUALLY RESOLVES
-========================================================================================
-per_element: checked — the projected-pack components are resolved one by one at both witnesses, with (gamma, E1, E2, det h) = [0.394212 0.000325 0.000476 0.026684] for Shannon and [0.119541 0.445072 0.005487 0.013695] for Renyi-2; the executed assertion is that every entry is strictly positive (POS_TOL = 1e-09 is the optimizer's own feasibility floor, not a separately re-checked margin), while at the crossing the observable pack resolves entrywise to [ 1.        0.340871 -0.017737  0.029036  0.029777] with E1 = -0.017737 < 0.
-per_site: checked and not executed — this is a three-generation flavor-space construction; neither the five-component source vector nor the canonical 3x3 h carries a spatial site label, so no site-resolved statement is available from the executed evidence.
-per_mode: checked — the three normalized Schur spectral modes are compared partial-sum by partial-sum: Shannon gives [0.632539 0.320514 0.046947] and Renyi-2 gives [0.540252 0.445721 0.014028], and majorization fails in both directions, so no mode ordering makes 'most isotropic spectrum' well defined on the fiber.
-per_block: checked — the three transport columns are the block units here; the Shannon endpoint resolves them to eta = [0.855779 1.05222  0.853321], keeping the favored column at the exact transport-maximal value eta_1 = 1.052220313052 to within 1e-10.
-lattice_wide: checked and not executed — the no-go is stated on the orbit-level canonical fiber at fixed 3x3 flavor rank and no lattice or continuum extension is attempted; the executed evidence is the two positive-fiber witnesses plus the single eta_1 = 1 crossing at lambda = 0.857168273739, with PASS=12, FAIL=0.
+  Shannon source5                 = [0.68898  0.632972 0.111102 0.23146  1.437698]
+  Shannon spectrum                = [0.632446 0.320767 0.046787]
+  Renyi2 source5                  = [0.810415 0.648506 0.07186  0.584573 2.889959]
+  Renyi2 spectrum                 = [0.511808 0.474552 0.01364 ]
+  Shannon root pack               = [ 1.        0.341093 -0.016794  0.030089  0.02972 ]
 
 ========================================================================================
 SUMMARY: PASS=12 FAIL=0

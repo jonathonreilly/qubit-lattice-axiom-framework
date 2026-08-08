@@ -1,6 +1,6 @@
 {
  "edge_count": 15422,
- "node_count": 4632,
+ "node_count": 4633,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12649,6 +12649,10 @@
   "repo.root_file_guide": {
    "deps_hash": "eebe2af4a8d1",
    "out_degree": 3
+  },
+  "repo.science_census_full_history_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "repo.vocabulary_hygiene_design": {
    "deps_hash": "002a5ce918ea",

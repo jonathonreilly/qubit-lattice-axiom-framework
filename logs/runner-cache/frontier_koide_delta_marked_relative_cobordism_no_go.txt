@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_marked_relative_cobordism_no_go.py
-runner_sha256: 35eeedf7e9e17286e508e55cd919abc48e967a6b0097f5113a5c5bdb767c8dd9
+runner_sha256: c2ae8ff50e578b8943629cfc6cdad194250f83115c9254e11edbdfe69da63bcb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 
@@ -19,8 +19,8 @@ A. Relative split with a boundary mark
 B.0 Bridge: retained Wilson/APS algebra is scalar on M_zeta (derived, not asserted)
 ========================================================================================
 [PASS] B.0a D|_{M_zeta} = 0 I_2 (derived from sibling Wilson construction)
-       r=1.0: lam_D=1.34e-18-1.65e-17j, lam_U=0.5+0.866025j, lam_Udag=0.5-0.866025j, lam_P0=1-8.33e-17j, lam_mark=1.30718+1.11022e-16j, all_scalar=True
-       r=1.425: lam_D=2.14e-16-1.28e-17j, lam_U=0.5+0.866025j, lam_Udag=0.5-0.866025j, lam_P0=1+4.34e-18j, lam_mark=1.30718+7.80626e-17j, all_scalar=True
+       r=1.0: lam_D=-4.14e-18-6.39e-19j, lam_U=0.5+0.866025j, lam_Udag=0.5-0.866025j, lam_P0=1-1.8e-17j, lam_mark=1.30718+7.89236e-17j, all_scalar=True
+       r=1.425: lam_D=1.94e-16+6.68e-18j, lam_U=0.5+0.866025j, lam_Udag=0.5-0.866025j, lam_P0=1-7.23e-17j, lam_mark=1.30718+8.59157e-17j, all_scalar=True
 [PASS] B.0b U|_{M_zeta} = zeta I_2 with zeta = exp(i pi/3) (derived)
        U restricted to M_zeta is scalar zeta * I at r in {1.0, 1.425}.
 [PASS] B.0c U^dag|_{M_zeta} = zeta_bar I_2 (derived)
@@ -80,6 +80,15 @@ F. Verdict
        RESIDUAL_ENDPOINT=-theta0 + theta_end - 2/9
 [PASS] F.2 residual is non-scalar boundary mark plus based endpoint section
        Need a retained non-scalar rank-one boundary mark and a retained zero endpoint section.
+
+========================================================================================
+N5 execution certificate
+========================================================================================
+  per_element: two-by-two entries are what the scalar test actually reads - each restricted operator is compared against its own averaged diagonal times the identity through a Frobenius norm against TOL = 1e-8, and on the symbolic side the retained mark is matched against Matrix([[lambda, 0], [0, lambda]]) position by position while the selector commutator is printed as the explicit zero matrix rather than as a scalar norm
+  per_site: exercised upstream and never resolved here - the imported Wilson construction lays out a periodic three-by-three-by-three arrangement and writes a one into each translation matrix at the pair of indices joining a site to its neighbour, but this runner consumes only the finished operators, so no occupation, amplitude or projector value at any single site is read back or reported
+  per_mode: the kernel is isolated mode by mode - the full Dirac operator is diagonalized with eigh, the eigenvalues whose modulus falls under TOL = 1e-8 select the zero block, the corresponding eigenvectors are assembled into the spectral projector, and the two zeta-character lines are then extracted from that kernel to span the multiplicity space
+  per_block: the rank-two character multiplicity space is the block and the entire no-go is that it will not split - all four retained objects, the Dirac operator, the character unitary, its adjoint and the zero-spectral projector, are restricted to that block and each restriction comes back proportional to the identity, so no rank-one line inside it is distinguished by retained data
+  lattice_wide: a finite-N statement over one periodic lattice of twenty-seven sites, repeated at the two Wilson parameters 1.0 and 1.425 and at nothing else - there is no volume sweep, no boundary variation and no limit in linear size, so the scalar-restriction conclusion is established on that fixed finite system and is not extended to any infinite-volume claim
 
 ========================================================================================
 Summary

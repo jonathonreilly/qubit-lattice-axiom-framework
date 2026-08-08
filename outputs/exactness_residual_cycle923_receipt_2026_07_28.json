@@ -1,13 +1,13 @@
 {
   "Q1_reconciliation": {
-    "composite_picture": "One point, one map, two time directions. Under the entropy-decreasing arrow the point is a separatrix with multiplier 2; under the entropy-increasing arrow it is a global attractor with multiplier 1/2. Neither scale-dependence nor reading-dependence in any deeper sense is involved.",
+    "composite_picture": "One point, one supplied map and its functional inverse. Under iteration of f the point is a separatrix with multiplier 2; under iteration of g it is a global attractor with multiplier 1/2. No physical time direction is derived or assigned; both maps are supplied.",
     "compression_artefact": "The apparent tension is an artefact of the reduction note's S6 compression: S6 places 'unstable (separatrix)' and 'maximized exactly at r=1/2 (thermalizing attractor)' in a single sentence without naming g(r)=sqrt(r/2), the map that carries the attraction. The reduction note never mentions g. The two cited source notes each state their own arrow explicitly and are mutually consistent.",
     "f_prime_half": 2.0,
     "g_prime_half": 0.5,
     "multiplier_product": 1.0,
-    "novelty_boundary": "The inverse identity g = f^{-1} is ALREADY PUBLISHED, in the durability note's erasure-honesty item (2026-06-11). New here: (i) using it to dissolve the S6 tension; (ii) the Lyapunov orientation that fixes which arrow is 'thermalizing'; (iii) the coincidence-deflation; (iv) the arrow-universality no-go (S4).",
+    "novelty_boundary": "The inverse identity g = f^{-1} is ALREADY PUBLISHED, in the durability note's erasure-honesty item (2026-06-11). New here: (i) using it to dissolve the reduction note's summary-sentence tension; (ii) the Lyapunov orientation that fixes which map is entropy-increasing; (iii) the coincidence-deflation; (iv) the narrow fixed-point alternation lemma (S4).",
     "second_reading_checked": "A cross-note apparent conflict was also checked and dissolved: 'the 3-real-DOF entropy S3 peaks at r=1' (separatrix note) vs 'the 3-eigenvalue spectral entropy peaks at r=0' (thermalizing note). These are two different functionals; both reproduce exactly. No inconsistency.",
-    "statement": "The separatrix fact and the attractor fact hold at the SAME point under TIME-REVERSED readings of the SAME map. g(r)=sqrt(r/2) is exactly f^{-1} for f(r)=2r^2 on [0,inf); therefore Fix(f)=Fix(g)={0,1/2} and the multipliers at a shared fixed point are reciprocal: f'(1/2)=2, g'(1/2)=1/2, product exactly 1. Stability is not a property of the point; it is a property of the pair (point, arrow), and exactly one arrow-flip separates the two published facts. The 2-sector entropy S2 is not a third dynamics: it is the strict Lyapunov function that ORIENTS the pair -- strictly decreasing under f (sharpening / measurement / entropy-decreasing), strictly increasing under g (thermalizing / entropy-increasing), everywhere off r=1/2. The S2 maximum at r=1/2 is a STATIC extremum; it becomes an 'attractor' only when the arrow g is additionally supplied.",
+    "statement": "The separatrix fact and the attractor fact hold at the SAME point under the supplied map and its FUNCTIONAL (composition) inverse. g(r)=sqrt(r/2) is exactly f^{-1} for f(r)=2r^2 on [0,inf); therefore Fix(f)=Fix(g)={0,1/2} and the multipliers at a shared fixed point are reciprocal: f'(1/2)=2, g'(1/2)=1/2, product exactly 1 (reciprocity by the inverse-function rule, which requires a C^1 local inverse with a finite nonzero derivative at the fixed point -- see the r=0 degeneracy for why the hypothesis is needed). Stability is not a property of the point; it is a property of the pair (point, map), and exactly one functional inversion separates the two published facts. The 2-sector entropy S2 is not a third dynamics: it is the strict Lyapunov function that ORIENTS the pair -- strictly decreasing under f (sharpening / entropy-decreasing), strictly increasing under g (entropy-increasing), everywhere off r=1/2. The S2 maximum at r=1/2 is a STATIC extremum; it becomes an 'attractor' only when the map g is additionally supplied as the operative iteration. OPEN BRIDGE (support-only, not claimed): identifying functional inversion with physical time reversal, or either map with an operative physical arrow, would require a dynamics/clock bridge that no artifact here supplies.",
     "verdict": "CONSISTENT -- the two source facts are not in tension; no inconsistency between source notes was found"
   },
   "Q2_exactness": {
@@ -22,47 +22,53 @@
       "verdict": "CRITERIAL, not dynamical -- neither GENERIC nor UNEXPLAINED in the dynamical sense"
     },
     "branch_f_sharpening": {
-      "anchor_note": "f carries the STRONGER anchor: it is grounded in retained_bounded luders_rule_from_composition_consistency; g is supplied only",
-      "backward_tuning_law": "|delta_0| = 3e-6 * 2^{-N}; the Lebesgue length of the admitted initial set halves every step",
-      "backward_tuning_values": {
+      "backward_tuning_law_exact": "|delta_0^+| = (1/2)[(1+2*3e-6)^(2^-N) - 1] exactly; the admitted window width is (1/2)[(1+6e-6)^(2^-N) - (1-6e-6)^(2^-N)] exactly",
+      "backward_tuning_law_linearized": "3e-6 * 2^{-N} is the small-eps LINEARIZATION of the closed form (relative error of order 3e-6); it is NOT exact",
+      "backward_tuning_values_exact": {
+        "N=10": 2.9296787195556736e-09,
+        "N=100": 2.3665756159432873e-36,
+        "N=50": 2.6645272655265726e-21
+      },
+      "backward_tuning_values_linearized": {
         "N=10": 2.9296875e-09,
         "N=100": 2.3665827156630355e-36,
         "N=50": 2.6645352591003758e-21
       },
       "blockers": [
         "under f the exactness is amplified, not explained",
-        "f destroys the r=1 lane (runs to infinity)"
+        "r=1 is not a fixed point of f (the orbit leaves toward +inf)"
       ],
       "expansion": "geometric, factor exactly 2 per registration step; the operative fixed point IS the separatrix",
+      "provenance_note": "f is the map supplied by the Luders-rule composition-consistency note; g by the thermalizing-arrow note. Both citations are provenance-only: neither source row is independently retained on current origin/main (effective_status unaudited), and no authority grade is inherited from them here.",
       "residence_steps_from_3e-6_until_leaving_1e-1": 15,
-      "verdict": "UNEXPLAINED, and positively surprising (anti-explanatory)"
+      "verdict": "UNEXPLAINED under this reading (support-only interpretation over supplied inputs)"
     },
     "branch_g_thermalizing": {
       "basin": "(0, inf) -- the entire positive dial except the single point r=0",
       "blockers": [
-        "the arrow is not derived as physical (the source note says so in terms)",
-        "inadmissible as LANE-UNIVERSAL law content: it collapses r=0 and r=1 onto 1/2 (S4 no-go)"
+        "the map is not derived as physically operative (the source note says so in terms)",
+        "within the S4 alternation lemma's hypothesis class, no single monotone map makes all three registered settings locally asymptotically attracting; under g the settings r=0 (repelling fixed point) and r=1 (not fixed) are not locally attracting"
       ],
       "contraction": "geometric, ratio exactly 1/2 per registration step; ln u_n = 2^{-n} ln u_0 exactly and globally",
       "steps_to_1e-6_from_r=1": 19,
       "steps_to_3e-6_from_r=1": 17,
       "steps_to_3e-6_from_r=5": 19,
       "tuning_required": "none -- contraction is global",
-      "verdict": "GENERIC, conditional on the arrow"
+      "verdict": "GENERIC, conditional on g being the operative map (not derived)"
     },
     "curvature_S2_at_max_bits": -1.4426950408889634,
     "curvature_S2_at_max_nats": -1.0,
     "entropy_deficit_at_1e-5_nats": 5.000000000000001e-11,
     "entropy_deficit_at_3e-6_nats": 4.500000000000001e-12,
-    "headline_gloss": "No DERIVED dynamics concentrates a registered pattern at r=1/2, because no dynamics is derived at all on this surface: both flow notes state that their map is SUPPLIED. The two supplied arrows give OPPOSITE verdicts, and the one carrying the retained anchor is the one under which the operative fixed point IS the separatrix -- so on that branch the exactness is POSITIVELY surprising, exactly the spec's UNEXPLAINED cell.",
-    "headline_verdict": "UNEXPLAINED on the current surface",
-    "lebesgue_length_of_preimage_window_3e-6": {
-      "N=0": 5.999999999950489e-06,
-      "N=10": 5.8593749852065e-09,
-      "N=20": 5.721978446615594e-12,
-      "N=5": 1.8749999997069722e-07,
-      "N=50": 5.551115123125783e-17
+    "exact_preimage_width_of_3e-6_window": {
+      "N=0": 6e-06,
+      "N=10": 5.8593750000702096e-09,
+      "N=20": 5.722045898506164e-12,
+      "N=5": 1.8750000000214565e-07,
+      "N=50": 5.3290705182647e-21
     },
+    "headline_gloss": "No DERIVED dynamics concentrates a registered pattern at r=1/2, because no dynamics is derived at all on this surface: both flow notes state that their map is SUPPLIED. The two supplied maps give OPPOSITE verdicts. Under f -- the map supplied by the Luders-rule composition-consistency note (provenance-only citation; that source row is UNAUDITED on current origin/main and no authority grade is inherited) -- the operative fixed point IS the separatrix. This verdict is an INTERPRETIVE reading over supplied inputs, not a consequence of the algebra; it cannot inherit theorem grade.",
+    "headline_verdict": "UNEXPLAINED on the current surface (support-only interpretation, conditional on which supplied map is operative)",
     "linearizations": {
       "r=0.0": {
         "f_prime": 0.0,
@@ -84,7 +90,7 @@
       }
     },
     "measure_caveat": "Lebesgue length is a STATED AUXILIARY and is NOT a probability. Converting any window length into 'surprise', 'fine-tuning' or 'typicality' requires a measure over law-admissible realized states, which the realized-state primitive explicitly declines to supply ('no averaging over alternatives, no typical or generic claim'). No such conversion is performed anywhere in this runner. See Q3 item (c3).",
-    "spec_trichotomy_fit": "MARGINAL is FALSIFIED as a description: nothing on this surface contracts slowly. Both arrows are geometric in the exact log-coordinate (conjugacy u=2r), with multipliers 2 and 1/2. The split is in the SIGN of the exponent, not its size. GENERIC is not available unconditionally, because the branch that would deliver it is blocked twice (arrow not derived; and inadmissible as lane-universal law, S4). The surface therefore sits in the UNEXPLAINED cell, with a named conditional escape to GENERIC.",
+    "spec_trichotomy_fit": "MARGINAL is FALSIFIED as a description: nothing on this surface contracts slowly. Both supplied maps are geometric in the exact log-coordinate (conjugacy u=2r), with multipliers 2 and 1/2. The split is in the SIGN of the exponent, not its size. GENERIC is not available unconditionally, because the branch that would deliver it is blocked (no map is derived as operative; and within the S4 alternation lemma's hypothesis class no single monotone map leaves all three registered settings locally attracting). The surface therefore sits in the UNEXPLAINED cell, with a named conditional escape to GENERIC.",
     "table_A_entry_under_g": {
       "0.0001": {
         "r0=0.05": {
@@ -217,50 +223,51 @@
     },
     "table_C_backward_tuning_under_f": {
       "0.1": {
-        "N=0": 0.09999999999999998,
-        "N=10": 8.903212343147615e-05,
-        "N=100": 0.0,
-        "N=20": 8.69377005940919e-08,
-        "N=5": 0.0028569052748861345,
-        "N=50": 0.0
+        "N=0": 0.10000000000000002,
+        "N=10": 8.90321234314497e-05,
+        "N=100": 7.191317416689159e-32,
+        "N=20": 8.69377005789619e-08,
+        "N=5": 0.002856905274886155,
+        "N=50": 8.096703609526065e-17
       },
       "1e-05": {
-        "N=0": 9.99999999995449e-06,
-        "N=10": 9.765527497762605e-09,
-        "N=100": 0.0,
-        "N=20": 9.53659373692517e-12,
-        "N=5": 3.124969726320259e-07,
-        "N=50": 0.0
+        "N=0": 1e-05,
+        "N=10": 9.76552744041759e-09,
+        "N=100": 7.888530167171395e-36,
+        "N=20": 9.536647797993354e-12,
+        "N=5": 3.124969726959833e-07,
+        "N=50": 8.881695380343503e-21
       },
       "1e-06": {
-        "N=0": 1.0000000000287557e-06,
-        "N=10": 9.765614983336945e-10,
-        "N=100": 0.0,
-        "N=20": 9.53570555850547e-13,
-        "N=5": 3.1249969723035065e-08,
-        "N=50": 0.0
+        "N=0": 1e-06,
+        "N=10": 9.765615243924746e-10,
+        "N=100": 7.888601163611584e-37,
+        "N=20": 9.536733627341148e-13,
+        "N=5": 3.124996972660224e-08,
+        "N=50": 8.881775315228898e-22
       },
       "3e-06": {
-        "N=0": 2.9999999999752447e-06,
-        "N=10": 2.9296787218413556e-09,
-        "N=100": 0.0,
-        "N=20": 2.860933712156566e-12,
-        "N=5": 9.374972753661837e-08,
-        "N=50": 0.0
+        "N=0": 3e-06,
+        "N=10": 2.9296787195556736e-09,
+        "N=100": 2.3665756159432873e-36,
+        "N=20": 2.8610143661924198e-12,
+        "N=5": 9.374972754013531e-08,
+        "N=50": 2.6645272655265726e-21
       }
-    }
+    },
+    "table_C_convention": "each Table C cell is the EXACT one-sided offset (1/2)[(1+2 eps)^(2^-N) - 1]; binary64 iteration confirms N<=20 and underflows for N>=50, so the closed form is authoritative for those cells"
   },
   "Q3_priced": {
     "a_derives": [
-      "Q1: the separatrix fact and the attractor fact are the SAME fixed point read under time-reversed arrows of the SAME map. g = f^{-1} exactly; multipliers reciprocal (2 and 1/2, product exactly 1).",
+      "Q1: the separatrix fact and the attractor fact are the SAME fixed point read under the supplied map and its functional (composition) inverse. g = f^{-1} exactly; multipliers reciprocal (2 and 1/2, product exactly 1, by the inverse-function rule under its C^1 local-diffeomorphism / nonzero-derivative hypotheses). No physical time-reversal reading is derived.",
       "S2 is a strict Lyapunov function orienting the pair: strictly decreasing under f, strictly increasing under g, everywhere off r=1/2. This is what makes 'thermalizing' well-defined.",
       "COINCIDENCE-DEFLATION: 'interior fixed point of sharpening', 'maximum of the 2-sector entropy' and 'HS equipartition 3a^2=6|b|^2' are ONE fact (2-outcome uniformity) in three costumes; only the r<->1-r swap fixed point is separate, and it is arithmetic. The distinguished point is singly, not multiply, distinguished.",
       "Exact conjugacy u = 2r: f is u->u^2, g is u->sqrt(u); ln u_n = 2^{+/-n} ln u_0 in closed form, so every rate is exact rather than asymptotic.",
       "Rates: f'(1/2)=2, g'(1/2)=1/2, f'(0)=0 (quadratic superstability), g'(0)=+inf. S2''(1/2) = -1 nats exactly (-1.442695 bits). Entropy deficit at |r-1/2|=3e-6 is 4.5e-12 nats below ln2.",
       "Basins: basin(f,0)=[0,1/2); basin(f,+inf)=(1/2,inf); basin(g,1/2)=(0,inf) entire, verified over 600 decades and proved by the conjugacy.",
-      "Step counts: under g, 3e-6 is reached from r=1 in 17 steps and from every tested seed in at most 19; under f, a pattern registered at 3e-6 leaves the 1e-1 window in 15 steps, and the admitted initial set halves every step (|delta_0| = 3e-6 * 2^{-N}).",
+      "Step counts: under g, 3e-6 is reached from r=1 in 17 steps and from every tested seed in at most 19; under f, a pattern registered at 3e-6 leaves the 1e-1 window in 15 steps, and the admitted initial offset obeys the EXACT law |delta_0^+| = (1/2)[(1+6e-6)^(2^-N) - 1] (its small-eps linearization 3e-6 * 2^{-N}, the 'halves every step' reading, is accurate only to a relative 3e-6).",
       "Dial geometry: each registered setting {0, 1/2, 1} is the unique maximum of a DIFFERENT derived functional (S_spec, S2, S3), so extremality alone cannot select a lane.",
-      "ARROW-UNIVERSALITY NO-GO: no arrow, flow or durability criterion on the current surface both concentrates onto r=1/2 and leaves the r=0 and r=1 lanes persistent; and for any C^1 strictly increasing map with Fix exactly {0,1/2,1}, stability alternates. Any exactness account must therefore be lane-conditional.",
+      "FIXED-POINT ALTERNATION LEMMA (narrow): for a continuous strictly increasing self-map of [0,1] with fixed set exactly {0,1/2,1}, the three fixed points cannot all be locally asymptotically attracting; and none of the six candidates coded in this runner is attracting at all three registered settings. NOT claimed: any universal 'every exactness account must be lane-conditional' consequence (withdrawn at review iteration 1).",
       "The apparent Q1 tension is a compression artefact of the reduction note's S6 sentence, which names the entropy maximum a 'thermalizing attractor' without naming g(r)=sqrt(r/2), the map that supplies the attraction.",
       "Q2 verdict: UNEXPLAINED on the current surface, with the two branch verdicts and their rates quantified; MARGINAL is falsified as a description because nothing here contracts slowly."
     ],
@@ -274,7 +281,7 @@
       {
         "discriminating_measurement": "Compute r for the non-charged-lepton lanes from their registered signed roots and measure |r - s| against that lane's registered setting s in {0, 1}.",
         "item": "Whether the other registered lanes also sit on their distinguished cells to comparable precision.",
-        "what_it_would_decide": "Lane-universal versus lane-conditional concentration. Comparable exactness on more than one lane forces the named escape of the arrow-universality no-go, i.e. a flow with additional fixed points and therefore additional distinguished cells the dial does not register -- a falsifiable prediction. Generic offsets on the other lanes support lane-conditionality and keep the residual local to the charged-lepton lane."
+        "what_it_would_decide": "Lane-universal versus lane-conditional concentration. Comparable exactness on more than one lane would, WITHIN the alternation lemma's monotone-map hypothesis class, force the lemma's named escape, i.e. a map with additional fixed points and therefore additional distinguished cells the dial does not register -- a falsifiable prediction conditional on that class. Generic offsets on the other lanes would keep the residual local to the charged-lepton lane."
       },
       {
         "discriminating_measurement": "Count record-formation events on the lane in the realized history. This is a countable feature of the state, not of the laws, so it is registration-side data rather than a derivation target.",
@@ -292,7 +299,7 @@
         "designates_unique_r": false,
         "item": "The arrow itself -- that the lane's registered r evolves under an entropy-increasing two-sector map.",
         "minimal_sentence": "On the charged-lepton lane, re-registration moves the two-sector power split toward uniformity (equivalently, the lane's r evolves under g(r) = sqrt(r/2)).",
-        "note": "Cannot arrive as LANE-UNIVERSAL law content: as a universal flow it collapses r=0 and r=1 onto 1/2 and falsifies those lanes (arrow-universality no-go). Admissible only lane-conditionally, with the arrow carried as lane data. This is the single highest-value item: it alone moves Q2 from UNEXPLAINED to GENERIC.",
+        "note": "Cannot arrive as a lane-universal monotone map with fixed set exactly {0,1/2,1}: within that hypothesis class the alternation lemma bars simultaneous local attraction at all three registered settings (under g, r=0 repels and r=1 is not fixed). Whether some OTHER lane-universal account (stateful, stochastic, sector-conditioned, or nonmonotone) could work is OPEN -- not excluded here. This is the single highest-value item: it alone moves Q2 from UNEXPLAINED to GENERIC.",
         "surface": "lane_conditional_derivation_route"
       },
       {
@@ -306,7 +313,7 @@
         "designates_unique_r": false,
         "item": "A measure over law-admissible realized states, without which 'exactness' cannot be stated AS A SURPRISE.",
         "minimal_sentence": "Law-admissible realized states carry a measure mu, with respect to which typicality and fine-tuning statements may be quoted.",
-        "note": "This premise CONTRADICTS the realized-state primitive as written ('no averaging over alternatives, no typical or generic claim, and no quoting a number that would differ had another law-admissible state been realized'). Priced consequence, not a recommendation: the residual splits in two. Component (i), 'the registered r lies within 3.3e-6 of the unique interior distinguished point', is a measure-free statement of fact that the current surface fully supports and that carries no explanatory deficit. Component (ii), 'and that is surprising', is currently UNSTATABLE on this surface rather than merely unexplained. Any work that treats the residual as a deficit is implicitly importing mu.",
+        "note": "This premise is OUTSIDE the realized-state primitive as written: the primitive supplies pointwise evaluation only and supplies NO measure, averaging, weighting, probability or typicality ('no averaging over alternatives, no typical or generic claim'). A separately derived or explicitly named measure would be a NEW premise beyond the primitive's scope -- an extension, not a contradiction of it. Priced consequence, not a recommendation: the residual splits in two. Component (i), 'the registered r lies within the published gate of the unique interior distinguished point', is a measure-free statement of fact that the current surface fully supports and that carries no explanatory deficit. Component (ii), 'and that is surprising', is not statable FROM THE CURRENT SUPPLIED PREMISES ALONE; stating it requires a separate measure/typicality bridge. Any work that treats the residual as a deficit is implicitly importing mu.",
         "surface": "new_premise"
       },
       {
@@ -324,7 +331,7 @@
         "surface": "realized_state_registration"
       }
     ],
-    "generic_clause_response": "Q2 does NOT land on GENERIC unconditionally, so the residual does NOT dissolve into 'persistence at an attractor'. It dissolves ONLY on the g-branch, and that branch is blocked twice: the arrow is not derived as physical, and as lane-universal law content it is refuted by the arrow-universality no-go. On the f-branch -- the branch carrying the retained anchor -- the operative fixed point IS the separatrix and the exactness is positively surprising. If item (c1) were ever supplied lane-conditionally, then and only then would the remaining content reduce to why the initial registration was in the basin, and that basin is (0, inf), which the primitive already assigns to the world rather than the laws (item c5)."
+    "generic_clause_response": "Q2 does NOT land on GENERIC unconditionally, so the residual does NOT dissolve into 'persistence at an attractor'. It dissolves ONLY on the g-branch, and that branch is blocked twice: no map is derived as physically operative, and its one lane-universal monotone-map packaging is barred by the alternation lemma within that lemma's hypothesis class. On the f-branch -- whose map is cited provenance-only from the Luders-rule composition-consistency note (unaudited on current origin/main) -- the operative fixed point IS the separatrix and the exactness is amplified rather than explained (a support-only reading). If item (c1) were ever supplied lane-conditionally, then and only then would the remaining content reduce to why the initial registration was in the basin, and that basin is (0, inf), which the primitive already assigns to the world rather than the laws (item c5)."
   },
   "S4_dial_geometry": {
     "S_spec_delta_dependence": {
@@ -332,42 +339,49 @@
       "delta=0.5236": 0.9321193489414912,
       "delta=1.0472": 1.0549201679861442
     },
-    "arrow_universality_no_go": {
+    "fixed_point_alternation_lemma": {
       "candidates": {
         "S2-gradient (aux)": {
-          "concentrates_on_half": true,
-          "preserves_0": false,
-          "preserves_1": false
+          "half_attracting": true,
+          "r0_attracting": false,
+          "r1_attracting": false
         },
         "S3-gradient (aux)": {
-          "concentrates_on_half": false,
-          "preserves_0": false,
-          "preserves_1": true
+          "half_attracting": false,
+          "r0_attracting": false,
+          "r1_attracting": true
         },
         "S_spec-gradient (aux)": {
-          "concentrates_on_half": false,
-          "preserves_0": true,
-          "preserves_1": false
+          "half_attracting": false,
+          "r0_attracting": true,
+          "r1_attracting": false
         },
         "durability under f or g": {
-          "concentrates_on_half": false,
-          "preserves_0": true,
-          "preserves_1": false
+          "half_attracting": false,
+          "r0_attracting": true,
+          "r1_attracting": false
         },
-        "f (sharpening, retained anchor)": {
-          "concentrates_on_half": false,
-          "preserves_0": true,
-          "preserves_1": false
+        "f (sharpening, supplied)": {
+          "half_attracting": false,
+          "r0_attracting": true,
+          "r1_attracting": false
         },
         "g (thermalizing reverse, supplied)": {
-          "concentrates_on_half": true,
-          "preserves_0": false,
-          "preserves_1": false
+          "half_attracting": true,
+          "r0_attracting": false,
+          "r1_attracting": false
         }
       },
-      "escape": "a map with additional fixed points inside (0,1/2) or (1/2,1) evades the theorem, at the cost of unregistered distinguished cells",
-      "firewall_direction": "this no-go FORBIDS promoting any concentration mechanism to lane-universal law; it derives no lane's r",
-      "statement": "No arrow, flow, or durability criterion available on the current surface is simultaneously (i) capable of concentrating a registered pattern onto r=1/2 and (ii) compatible with the persistence (well-formedness) of the lanes registering r=0 and r=1. Hence any exactness account must be LANE-CONDITIONAL: the arrow is itself lane / registered data. This sharpens the reduction note's (i-realization) frontier -- its content is the ARROW-ASSIGNMENT, not only the grain."
+      "escape": "a map with additional fixed points inside (0,1/2) or (1/2,1) evades the lemma (constructed above: the quintic with fixed points at 1/4 and 3/4), at the cost of unregistered distinguished cells",
+      "escape_witness_multipliers": {
+        "0.0": 0.9906249999997815,
+        "0.25": 1.002343749986756,
+        "0.5": 0.9984374999827406,
+        "0.75": 1.002343750056145,
+        "1.0": 0.9906250000302208
+      },
+      "firewall_direction": "the lemma bars one specific lane-universal packaging (a single monotone map with this exact fixed set attracting at all three settings); it derives no lane's r and licenses no broader negative claim",
+      "statement": "LEMMA (narrow; conditional on its stated hypotheses): for a continuous strictly increasing self-map h of [0,1] whose fixed-point set is exactly {0, 1/2, 1}, the three fixed points cannot all be locally asymptotically attracting relative to [0,1] (attraction at 0 and 1 read one-sidedly). Separately, none of the six candidates coded in this runner is attracting at all three registered settings. SCOPE (review iteration 1): this replaces the formerly claimed 'arrow-universality no-go'. It does NOT establish that every exactness account must be lane-conditional, and it says nothing about nonmonotone maps, higher-dimensional or stateful dynamics, stochastic evolutions, sector-conditioned laws, maps with other fixed sets, or persistence predicates weaker than asymptotic attraction. Repelling fixed points remain exact fixed points; no lane is 'destroyed'."
     },
     "functional_argmax": {
       "S2_2sector": 0.5000008333333333,
@@ -501,7 +515,7 @@
       },
       {
         "designates": [],
-        "id": "arrow_universality_no_go",
+        "id": "fixed_point_alternation_lemma",
         "supplied": null
       },
       {
@@ -560,7 +574,7 @@
       "id": "T4"
     },
     {
-      "description": "COMPARATOR ISOLATION: poisoning the PDG comparator to NaN leaves EVERY derived result bit-identical",
+      "description": "COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. This guards the payload route against a future edit that leaks comparator values into it; it is NOT a whole-runner dependency trace, and it covers only quantities routed through derived_payload",
       "detail": "derived payload identical under the poisoned comparator",
       "fired": true,
       "id": "T5"
@@ -584,8 +598,8 @@
       "id": "T8"
     },
     {
-      "description": "a planted omnipotent candidate arrow (concentrates on 1/2 AND preserves both other lanes) BREAKS the arrow-universality no-go, so the no-go has content and is not vacuous",
-      "detail": "the no-go correctly reports FALSE for the planted candidate",
+      "description": "FUNCTION-LEVEL MUTATION TEST of the candidate sweep: the SAME alternation_predicate implementation that passed at S4 returns False once a planted omnipotent candidate (attracting at 1/2, 0 AND 1) is added to the table -- a real counterexample among the coded candidates would have been caught",
+      "detail": "predicate(base)=True predicate(base+planted)=False",
       "fired": true,
       "id": "T9"
     },
@@ -596,7 +610,7 @@
       "id": "T10"
     },
     {
-      "description": "the r=1 lane is NOT preserved by either supplied map -- the load-bearing input to the arrow-universality no-go is itself falsifiable and here it fires",
+      "description": "r=1 is not a fixed point of either supplied map (f(1)=2, g(1)=0.707..) -- the load-bearing r1_attracting=False entries in the candidate-sweep table are themselves falsifiable and here they fire",
       "detail": "f(1)=2.0, g(1)=0.707107",
       "fired": true,
       "id": "T11"
@@ -616,8 +630,6 @@
     "r_pdg_via_S4_3_functional": 0.49999669512175027,
     "r_pdg_via_lever": 0.49999669512175027
   },
-  "block": "blockR1",
-  "campaign": "toe-time-expansion-20260802",
   "checks": [
     {
       "detail": "sha256=d95cdf68285242a8.. blob=ed574c9b40232818..",
@@ -670,12 +682,6 @@
     {
       "detail": "sha256=b9ef043d6503f970.. blob=532a2c3095188609..",
       "name": "pin present: docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "ok": true,
-      "section": "S0"
-    },
-    {
-      "detail": "sha256=fc4d60cce8154cec.. blob=4a863da1f3f25535..",
-      "name": "pin present: docs/MINIMAL_AXIOMS_2026-06-29.md",
       "ok": true,
       "section": "S0"
     },
@@ -1340,26 +1346,86 @@
       "section": "S3-Q2"
     },
     {
-      "detail": "N=0:6.000e-06 N=5:1.875e-07 N=20:5.722e-12 N=50:5.551e-17",
-      "name": "under f the admitted initial set halves EXACTLY once per registration step (Lebesgue length of f^{-N} of the 3e-6 window)",
+      "detail": "",
+      "name": "TABLE C exact closed form matches binary64 iteration for N<=20 at eps=0.1 (|diff|<1e-15)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C at eps=0.1: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C exact closed form matches binary64 iteration for N<=20 at eps=1e-05 (|diff|<1e-15)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C at eps=1e-05: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C exact closed form matches binary64 iteration for N<=20 at eps=3e-06 (|diff|<1e-15)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C at eps=3e-06: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C exact closed form matches binary64 iteration for N<=20 at eps=1e-06 (|diff|<1e-15)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "",
+      "name": "TABLE C at eps=1e-06: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "N=0:6.000000e-06 N=5:1.875000e-07 N=20:5.722046e-12 N=50:5.329071e-21",
+      "name": "EXACT preimage-width law: the Lebesgue length of f^{-N} of the 3e-6 window is (1/2)[(1+2eps)^(2^-N) - (1-2eps)^(2^-N)]; binary64 iteration confirms it for N<=10 to 1e-15",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "relative deviations at N=5,10,20,50: ['1.144e-11', '1.198e-11', '1.200e-11', '1.200e-11']",
+      "name": "the 'halves every step' law is a LINEARIZATION, not exact: the width deviates from 2 eps * 2^-N by a relative O((2 eps)^2) ~ 1.2e-11, nonzero at every N>=1",
+      "ok": true,
+      "section": "S3-Q2"
+    },
+    {
+      "detail": "relative deviation at N=10: 2.997e-06",
+      "name": "the one-sided offset likewise deviates from eps * 2^-N by a relative O(eps) ~ 3e-6 -- the dyadic form must always be quoted as the linearization of the closed form",
       "ok": true,
       "section": "S3-Q2"
     },
     {
       "detail": "-1.000000063",
-      "name": "AUX (constructed here, NOT source content): the S2-gradient flow in r linearizes to -1 (e-fold time 1)",
+      "name": "AUX (constructed here, NOT source content): flat-metric (Euclidean) gradient ascent of S2 in the r coordinate linearizes to -1 (e-fold time 1)",
       "ok": true,
       "section": "S3-Q2"
     },
     {
       "detail": "-4.000000053",
-      "name": "AUX: the SAME flow written in p linearizes to -4 -- the RATE is metric/coordinate dependent, the SIGN and the exponential character are not; the Q2 verdict depends only on the sign",
+      "name": "AUX: flat-metric gradient ascent of S2 applied anew in the p coordinate is a DIFFERENT gradient system (a different metric choice), NOT the same flow rewritten -- under a genuine coordinate change the linearization eigenvalue of a 1-d vector field at a fixed point is invariant. Its linearization is -4. The SIGN agrees across every positive metric choice; only the sign is used by the exactness verdict.",
       "ok": true,
       "section": "S3-Q2"
     },
     {
       "detail": "t_r=12.0238 t_p=3.0059",
-      "name": "AUX: time to reach 3e-6 from |delta|=0.5 is 12.02 e-folds (r-metric) or 3.01 (p-metric): log(1/eps), never tuned",
+      "name": "AUX: time to reach 3e-6 from |delta|=0.5 is 12.02 e-folds (flat metric in r) or 3.01 (flat metric in p): log(1/eps), never tuned",
       "ok": true,
       "section": "S3-Q2"
     },
@@ -1412,26 +1478,26 @@
       "section": "S4-dial"
     },
     {
-      "detail": "",
-      "name": "FIREWALL EXHIBIT 2: on this surface the r=0 setting has the STRONGEST exactness story -- finite-time arrival under its own functional's gradient flow, and quadratic (superstable) convergence under the RETAINED-ANCHORED map f. Run as an argument, the geometry favours r=0, not r=1/2.",
+      "detail": "S_spec-gradient destination=0.000e+00",
+      "name": "FIREWALL EXHIBIT 2: on this surface the r=0 setting has the STRONGEST exactness story -- finite-time arrival under its own functional's gradient flow (the computed destination above), and quadratic (superstable) convergence under the supplied map f (f'(0)=0, verified at S3). Run as an argument, the geometry favours r=0, not r=1/2.",
       "ok": true,
       "section": "S4-dial"
     },
     {
-      "detail": "6 candidates swept, 0 satisfy both requirements",
-      "name": "ARROW-UNIVERSALITY NO-GO (candidate sweep): NO candidate available on the current surface both concentrates onto r=1/2 AND leaves the r=0 and r=1 lanes persistent",
+      "detail": "6 candidates swept, 0 satisfy all three attraction requirements",
+      "name": "CANDIDATE SWEEP (six in-repo candidates; attraction-based, finite, NOT a universal no-go): no candidate coded here is locally asymptotically attracting at r=1/2 AND at r=0 AND at r=1. This sweep covers exactly these six coded candidates; it does NOT establish that every exactness account must be lane-conditional.",
       "ok": true,
       "section": "S4-dial"
     },
     {
-      "detail": "8/8 constructed monotone maps confirm the alternation",
-      "name": "ARROW-UNIVERSALITY NO-GO (theorem): for a C^1 strictly increasing map h with Fix(h) exactly {0, 1/2, 1}, stability ALTERNATES, so the three registered settings CANNOT all be asymptotically stable. Proof: on (0,1/2) the sign of h(x)-x is constant, so exactly one endpoint of that interval attracts.",
+      "detail": "8/8 constructed monotone maps consistent with the alternation",
+      "name": "FIXED-POINT ALTERNATION LEMMA -- finite consistency exhibit, NOT a proof of the lemma: 8 members of one polynomial family of strictly increasing self-maps with Fix exactly {0, 1/2, 1} each fail to make all three fixed points locally attracting. The LEMMA itself (continuous strictly increasing self-map h of [0,1] with fixed set exactly {0,1/2,1} => the three fixed points cannot all be locally asymptotically attracting relative to [0,1]) is proved by the monotone-orbit sign argument recorded in the note: on (0,1/2), h(x)-x has constant sign, so orbits there converge monotonically to exactly one endpoint of that interval; likewise on (1/2,1). This executable check certifies only the finite family.",
       "ok": true,
       "section": "S4-dial"
     },
     {
-      "detail": "",
-      "name": "NAMED ESCAPE (honest): the theorem's hypothesis is Fix(h) == {0,1/2,1}. A map with EXTRA fixed points inside (0,1/2) or (1/2,1) CAN make all three registered settings attracting -- at the price of predicting additional distinguished cells that the dial does not register. That price is falsifiable.",
+      "detail": "multipliers: 0.0:0.990625, 0.25:1.002344, 0.5:0.998437, 0.75:1.002344, 1.0:0.990625",
+      "name": "NAMED ESCAPE, CONSTRUCTED (no literal PASS): the lemma's hypothesis is Fix(h) == {0,1/2,1}. The quintic h(x) = x - 0.1 x(x-1/4)(x-1/2)(x-3/4)(x-1) is strictly increasing on [0,1] with EXTRA fixed points at 1/4 and 3/4, and makes ALL THREE registered settings locally attracting -- at the price of predicting additional distinguished cells that the dial does not register. That price is falsifiable.",
       "ok": true,
       "section": "S4-dial"
     },
@@ -1599,7 +1665,7 @@
     },
     {
       "detail": "derived payload identical under the poisoned comparator",
-      "name": "T5 FIRED: COMPARATOR ISOLATION: poisoning the PDG comparator to NaN leaves EVERY derived result bit-identical",
+      "name": "T5 FIRED: COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. This guards the payload route against a future edit that leaks comparator values into it; it is NOT a whole-runner dependency trace, and it covers only quantities routed through derived_payload",
       "ok": true,
       "section": "S6-teeth"
     },
@@ -1622,8 +1688,8 @@
       "section": "S6-teeth"
     },
     {
-      "detail": "the no-go correctly reports FALSE for the planted candidate",
-      "name": "T9 FIRED: a planted omnipotent candidate arrow (concentrates on 1/2 AND preserves both other lanes) BREAKS the arrow-universality no-go, so the no-go has content and is not vacuous",
+      "detail": "predicate(base)=True predicate(base+planted)=False",
+      "name": "T9 FIRED: FUNCTION-LEVEL MUTATION TEST of the candidate sweep: the SAME alternation_predicate implementation that passed at S4 returns False once a planted omnipotent candidate (attracting at 1/2, 0 AND 1) is added to the table -- a real counterexample among the coded candidates would have been caught",
       "ok": true,
       "section": "S6-teeth"
     },
@@ -1635,7 +1701,7 @@
     },
     {
       "detail": "f(1)=2.0, g(1)=0.707107",
-      "name": "T11 FIRED: the r=1 lane is NOT preserved by either supplied map -- the load-bearing input to the arrow-universality no-go is itself falsifiable and here it fires",
+      "name": "T11 FIRED: r=1 is not a fixed point of either supplied map (f(1)=2, g(1)=0.707..) -- the load-bearing r1_attracting=False entries in the candidate-sweep table are themselves falsifiable and here they fire",
       "ok": true,
       "section": "S6-teeth"
     },
@@ -1754,13 +1820,13 @@
       "section": "S8-priced"
     },
     {
-      "detail": "scanned 8678 chars against 7 verbs",
+      "detail": "scanned 9526 chars against 7 verbs",
       "name": "PRICE ONLY: no recommendation verb anywhere in the priced list",
       "ok": true,
       "section": "S8-priced"
     }
   ],
-  "claim_scope": "the geometry and dynamics of the derived distinguished point r=1/2 on the multi-lane dial: reconciliation of the separatrix and attractor facts, quantified persistence structure, and the exactness residual priced",
+  "claim_scope": "CONDITIONAL algebra/rate result over the supplied maps f(r)=2r^2, g(r)=sqrt(r/2) and the supplied two-sector coarse-graining: the inverse identity, fixed sets, reciprocal multipliers, Lyapunov orientation, coincidence deflation, exact log-coordinate rates and entry/residence tables, the narrow fixed-point alternation lemma, and the priced residual split. Physical-arrow readings are support-only; no broad no-go is claimed",
   "cycle": 923,
   "date_label": "2026-07-28",
   "determinism_digest_sha256": "55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346",
@@ -1769,7 +1835,7 @@
   "open_boundaries": [
     "the physical arrow on the charged-lepton lane is not derived; both maps are supplied",
     "the 2-sector versus 3-mode partition (the einselected record basis) remains the sources' open object",
-    "no measure over law-admissible realized states exists on this surface, so 'surprise' is unstatable, not merely unexplained",
+    "no measure over law-admissible realized states is supplied on this surface, so 'surprise' is not statable from the current supplied premises alone; a separately supplied measure/typicality bridge (a new premise outside the realized-state primitive's scope) would be required",
     "the delta=0 / K-reality pin (G2) is standing and untouched here; S_spec is delta-dependent",
     "no audit status is asserted or predicted for any note; no registry, axiom, primitive, policy or queue surface is touched"
   ],
@@ -1897,12 +1963,6 @@
         "present": true,
         "sha256": "d352c069a5c8fa96b79c9b24b04a63124829b388e05a7b1348c0da6b418b8916"
       },
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": {
-        "bytes": 8846,
-        "git_blob_sha1": "4a863da1f3f255354839277271a3a69a5c205133",
-        "present": true,
-        "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-      },
       "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
         "bytes": 5313,
         "git_blob_sha1": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
@@ -1946,19 +2006,26 @@
         "sha256": "72d179f5bb08374a8a2b88ac7d3b11d581c75d94cba5bc141a8ff41c5d1ee60b"
       }
     },
-    "runner_sha256": "9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366"
+    "runner_sha256": "893b05b523d8af1aa072a91ac9855cfe5a15ca87a5170724210c09cabaa97f12"
+  },
+  "review_loop": {
+    "date": "2026-08-08",
+    "disposition": "FIX_THEN_PROCEED",
+    "fix_summary": "exact preimage law replaces the dyadic 'exact halving' claim (dyadic form relabeled a linearization); Table C computed from the closed form with underflow documented; the broad arrow-universality no-go narrowed to the fixed-point alternation lemma and its lane-data consequence withdrawn; physical time-reversal reading demoted to an open bridge; measure 'contradiction' reworded to out-of-scope-premise; reciprocal-multiplier rule stated with C^1 diffeomorphism hypotheses; gradient systems relabeled as distinct metric choices; literal-True checks replaced or honestly scoped; retained-anchor grading removed (provenance-only citations); stale MINIMAL_AXIOMS pin removed from the input closure",
+    "iteration": 1,
+    "reviewer": "Sol"
   },
   "role": "primary",
   "runner": "scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
-  "runtime_sec": 0.307,
+  "runtime_sec": 0.305,
   "schema": "cycle923-exactness-residual-v1",
   "scorecard": {
     "fail": 0,
-    "pass": 190,
+    "pass": 199,
     "per_section": {
       "S0": {
         "fail": 0,
-        "pass": 16
+        "pass": 15
       },
       "S1-restriction": {
         "fail": 0,
@@ -1974,7 +2041,7 @@
       },
       "S3-Q2": {
         "fail": 0,
-        "pass": 28
+        "pass": 38
       },
       "S4-dial": {
         "fail": 0,

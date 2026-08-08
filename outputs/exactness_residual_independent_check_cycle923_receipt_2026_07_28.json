@@ -1,21 +1,32 @@
 {
-  "block": "blockR1",
-  "campaign": "toe-time-expansion-20260802",
+  "alternation_lemma_attack": {
+    "alternation_lemma_survives": true,
+    "c_value": -4.0,
+    "constructed_map": "h(x) = x + c*x(x-1/2)(x-1)*exp(-20(x-1/2)^2), c chosen so h'(1/2)=2",
+    "multipliers": {
+      "0.0": 0.986524106001829,
+      "0.5": 2.0,
+      "1.0": 0.986524106001829
+    },
+    "named_escape_verified": true,
+    "scope_note": "the attack targets only the narrow fixed-point alternation lemma (monotone self-maps of [0,1] with fixed set exactly {0,1/2,1}; local asymptotic attraction); no broad arrow-universality claim is certified",
+    "strictly_increasing": true
+  },
   "checks": [
     {
-      "detail": "sha256=5bdeca39e99eeac2..",
+      "detail": "sha256=93fe493d71422caa..",
       "name": "pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json",
       "ok": true,
       "section": "K0"
     },
     {
-      "detail": "sha256=9c03a600e3963bfb..",
+      "detail": "sha256=893b05b523d8af1a..",
       "name": "pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
       "ok": true,
       "section": "K0"
     },
     {
-      "detail": "sha256=da37104fb632c908..",
+      "detail": "sha256=ec23e2adba7b8816..",
       "name": "pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt",
       "ok": true,
       "section": "K0"
@@ -57,7 +68,7 @@
       "section": "K0"
     },
     {
-      "detail": "stable_sha256=1db681b63888f14cafc93a0845da9dbd98b0d181e155213af5de75ad1882dfcd",
+      "detail": "stable_sha256=0f71e73b9db6c8bfc98547bf863c8373994966d0b872458b9a970607c1abf747",
       "name": "primary receipt has a runtime-independent stable content digest (durable pin)",
       "ok": true,
       "section": "K0"
@@ -129,8 +140,8 @@
       "section": "K1-symbolic"
     },
     {
-      "detail": "verified as an identity of the inverse-function rule",
-      "name": "LEMMA (general, not map-specific): differentiating h^{-1}(h(x)) = x gives (h^{-1})'(h(x)) h'(x) = 1; at a fixed point h(xs)=xs this is (h^{-1})'(xs) = 1/h'(xs). The 'unstable vs attracting' pair is therefore FORCED for ANY invertible map, not special to 2r^2.",
+      "detail": "chain factors = (Derivative(hfun(x), x), Derivative(hinv(hfun(x)), hfun(x))); solve(m_inv*m_h=1) -> [1/m_h]",
+      "name": "LEMMA (with hypotheses; symbolic, no literal PASS): if h is a C^1 local diffeomorphism at a shared fixed point x* with h'(x*) != 0 finite, then (h^{-1})'(x*) = 1/h'(x*). Sympy chain rule factors d/dx[h^{-1}(h(x))] into (outer)*(h'(x)); equating to 1 and solving at the fixed point gives exactly [1/m_h]. MERE INVERTIBILITY IS NOT SUFFICIENT: at r=0 this branch's own f has f'(0)=0, the hypothesis fails, and g' diverges (the K1 limit check above) -- so the 'unstable vs attracting' reciprocity holds for the supplied pair at r=1/2 because f'(1/2)=2 is finite and nonzero, not for arbitrary invertible maps.",
       "ok": true,
       "section": "K1-symbolic"
     },
@@ -184,7 +195,7 @@
     },
     {
       "detail": "",
-      "name": "INDEPENDENT CONFIRMATION of the primary's anti-diagonal: S_spec peaks at r=0, S2 at r=1/2, S3 at r=1 -- each registered setting maximizes a different derived functional",
+      "name": "INDEPENDENT CONFIRMATION of the primary's anti-diagonal (computed, no literal PASS): the symbolic stationarity solves above give S2 -> r=1/2, S3 -> r=1, S_spec (delta=0) -> r=0 with negative curvature -- each registered setting maximizes a different derived functional",
       "ok": true,
       "section": "K2-symbolic"
     },
@@ -203,6 +214,24 @@
     {
       "detail": "7 cells re-derived; mismatches=[]",
       "name": "TABLE B: every residence-step count under f reproduces at 60 dps",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "24 cells re-derived; mismatches=[]",
+      "name": "TABLE C: EVERY backward-tuning cell (including N=50 and N=100, where a binary64 iteration underflows to zero) reproduces the exact closed form (1/2)[(1+2 eps)^(2^-N) - 1] at 60 dps (rel tol 1e-13)",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "5 widths re-derived; mismatches=[]",
+      "name": "PREIMAGE-WIDTH LAW: every published window width reproduces the exact closed form (1/2)[(1+2 eps)^(2^-N) - (1-2 eps)^(2^-N)] at 60 dps",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "N=10: 1.198e-11; N=20: 1.200e-11; N=5: 1.144e-11; N=50: 1.200e-11",
+      "name": "the 'halves every step' reading is confirmed to be a LINEARIZATION, not exact: at 60 dps the width deviates from 2 eps * 2^-N by a strictly positive relative O((2 eps)^2) at every N >= 1",
       "ok": true,
       "section": "K3-mpmath"
     },
@@ -249,38 +278,32 @@
       "section": "K4-degeneracy"
     },
     {
-      "detail": "primary headline = UNEXPLAINED on the current surface",
+      "detail": "primary headline = UNEXPLAINED on the current surface (support-only interpretation, conditional on which supplied map is operative)",
       "name": "the primary's headline verdict survives the degeneracy hunt (the hunt adds a verdict, it does not remove the reason for the headline)",
       "ok": true,
       "section": "K4-degeneracy"
     },
     {
-      "detail": "",
-      "name": "REFUTATION CHECK: no reading was found under which the exactness is GENERIC *and* the arrow is derived rather than supplied",
-      "ok": true,
-      "section": "K4-degeneracy"
-    },
-    {
       "detail": "c = -4, min h' on [0,1] = 0.534392",
-      "name": "constructed a STRICTLY INCREASING map h with Fix(h) exactly {0, 1/2, 1} and h'(1/2) = 2 (same local data as the supplied f) -- this is precisely the map that could break the no-go",
+      "name": "constructed a STRICTLY INCREASING map h with Fix(h) exactly {0, 1/2, 1} and h'(1/2) = 2 (same local data as the supplied f) -- this is precisely the map that could break the alternation lemma",
       "ok": true,
       "section": "K5-nogo-attack"
     },
     {
       "detail": "multipliers = {0: 0.986524, 1/2: 2.000000, 1: 0.986524}",
-      "name": "for the constructed h, 1/2 REPELS (h'=2) and 0 and 1 ATTRACT -- so h preserves both other lanes but does NOT concentrate onto 1/2",
+      "name": "for the constructed h, 1/2 REPELS (h'=2) while 0 and 1 are locally ATTRACTING -- so h leaves the outer settings attracting but does NOT concentrate onto 1/2",
       "ok": true,
       "section": "K5-nogo-attack"
     },
     {
       "detail": "inverse multipliers = {0: 1.013660, 1/2: 0.500000, 1: 1.013660}",
-      "name": "for its inverse h^{-1}, 1/2 ATTRACTS (multiplier 1/2) but 0 and 1 REPEL -- so h^{-1} concentrates onto 1/2 but destroys both other lanes",
+      "name": "for its inverse h^{-1}, 1/2 ATTRACTS (multiplier 1/2) while 0 and 1 REPEL. NOTE (review iteration 1): 0 and 1 REMAIN EXACT FIXED POINTS of h^{-1} -- they are repelling, i.e. they lose local asymptotic attraction only; no 'lane destruction' or loss of fixed-point persistence is claimed",
       "ok": true,
       "section": "K5-nogo-attack"
     },
     {
-      "detail": "rows = {'h': {'concentrates_on_half': False, 'preserves_0': True, 'preserves_1': True}, 'h^{-1}': {'concentrates_on_half': True, 'preserves_0': False, 'preserves_1': False}}",
-      "name": "THE NO-GO SURVIVES the constructed attack: computed row by row, neither h nor h^{-1} satisfies all three requirements simultaneously",
+      "detail": "rows = {'h': {'half_attracting': False, 'r0_attracting': True, 'r1_attracting': True}, 'h^{-1}': {'half_attracting': True, 'r0_attracting': False, 'r1_attracting': False}}",
+      "name": "THE ALTERNATION LEMMA SURVIVES the constructed attack: computed row by row, neither h nor h^{-1} is locally attracting at all three registered settings simultaneously",
       "ok": true,
       "section": "K5-nogo-attack"
     },
@@ -339,8 +362,8 @@
       "section": "K6-determinacy"
     },
     {
-      "detail": "",
-      "name": "DETERMINACY, local: the stated text fixes the LOCAL picture uniquely -- any invertible map with a fixed point of multiplier 2 has an inverse with multiplier 1/2 there (the K1 lemma), so no second local reading is consistent with the text",
+      "detail": "lemma_ok=True; f'(1/2)=2; g'(1/2)=1/2",
+      "name": "DETERMINACY, local (conditioned on the K1 lemma actually verifying, not on a literal True): the stated text fixes the LOCAL picture uniquely -- any map that is a C^1 local diffeomorphism with a nonzero-derivative fixed point of multiplier 2 has an inverse with multiplier 1/2 there (the K1 lemma, symbolically verified above), so no second local reading is consistent with the text",
       "ok": true,
       "section": "K6-determinacy"
     },
@@ -411,14 +434,14 @@
       "section": "K7-comparator"
     },
     {
-      "detail": "1776.93 (reduction runner) -> 3.305e-06; 1776.86 (PDG central, other tables) -> 9.233e-06; 1776.99 -> 1.776e-06; 1777.00 -> 2.623e-06",
-      "name": "TAU-MASS SENSITIVITY SCAN of the comparator",
+      "detail": "1776.93 (reduction runner) -> 3.305e-06; 1776.86 (alternate committed convention; external edition not verified in-repo) -> 9.233e-06; 1776.99 -> 1.776e-06; 1777.00 -> 2.623e-06; spread=5.20",
+      "name": "TAU-MASS SENSITIVITY SCAN of the comparator (computed condition, no literal PASS): all four scanned conventions produce a nonnegative deviation and the max/min spread exceeds 2, demonstrating material convention sensitivity of the headline digit",
       "ok": true,
       "section": "K7-comparator"
     },
     {
       "detail": "exact crossing at m_tau = 1776.96902708 MeV, i.e. 0.0390 MeV above the reduction runner's value",
-      "name": "the signed deviation r_PDG - 1/2 CHANGES SIGN inside the plausible tau-mass window, so there is a tau mass at which the charged-lepton lane sits EXACTLY on the distinguished cell",
+      "name": "the signed deviation r_PDG - 1/2 CHANGES SIGN inside the SCANNED tau-mass window (window asserted for sensitivity analysis; not an externally sourced uncertainty), so there is a tau mass at which the charged-lepton lane sits EXACTLY on the distinguished cell",
       "ok": true,
       "section": "K7-comparator"
     },
@@ -471,8 +494,8 @@
       "section": "K-teeth"
     },
     {
-      "detail": "",
-      "name": "K-T8 FIRED: the no-go search HAS POWER: a planted omnipotent candidate is correctly flagged as breaking the no-go, so a real counterexample would not have been missed",
+      "detail": "predicate(attack)=True predicate(attack+planted)=False",
+      "name": "K-T8 FIRED: FUNCTION-LEVEL MUTATION TEST: the SAME k5_alternation_predicate implementation that passed the K5 attack returns False once a planted omnipotent row (attracting at 1/2, 0 AND 1) is added to the attack table -- a real counterexample would not have been missed",
       "ok": true,
       "section": "K-teeth"
     },
@@ -501,7 +524,7 @@
       "section": "K-teeth"
     }
   ],
-  "claim_scope": "independent symbolic and high-precision refutation attempt against the cycle923 primary",
+  "claim_scope": "independent symbolic and high-precision refutation attempt against the cycle-923 exactness-residual primary (conditional algebra/rate content only)",
   "comparator_recheck": {
     "abs_dev_r_60dps": "3.3048782497373952069e-6",
     "masses_MeV": {
@@ -510,7 +533,7 @@
       "m_tau": "1776.93"
     },
     "tau_mass_sensitivity_scan": {
-      "1776.86 (PDG central, other tables)": 9.232783921641718e-06,
+      "1776.86 (alternate committed convention; external edition not verified in-repo)": 9.232783921641718e-06,
       "1776.93 (reduction runner)": 3.304878249737395e-06,
       "1776.99": 1.7759902486587803e-06,
       "1777.00": 2.6227842999614616e-06
@@ -518,15 +541,24 @@
   },
   "cycle": 923,
   "date_label": "2026-07-28",
-  "determinism_digest_sha256": "261278b00eb43d94824a9657cd4c05c6b8c59cb080ae800437e34569da4c90c6",
+  "determinism_digest_sha256": "ec9c787c7c7b5cd7d0b41495729a915f8262b581ce68ec0cf58e0e4723483840",
   "epsilon_window_recheck": {
     "3e-6_endpoint_ceiling": 17,
     "3e-6_endpoint_iterated": 17,
     "3e-6_endpoint_real_valued_n": "16.8178440237324",
     "from_1e300": 27,
+    "preimage_width_mismatches": [],
     "residence_3e-6_to_1e-1": 15,
     "table_A_mismatches": [],
-    "table_B_mismatches": []
+    "table_B_mismatches": [],
+    "table_C_cells_rechecked": 24,
+    "table_C_mismatches": [],
+    "width_linearization_relative_deviations": {
+      "N=10": 1.1982427597304571e-11,
+      "N=20": 1.1999982834126962e-11,
+      "N=5": 1.1443359375242691e-11,
+      "N=50": 1.2000000000259184e-11
+    }
   },
   "failures": [],
   "findings": [
@@ -542,23 +574,28 @@
     },
     {
       "kind": "CONFIRMATION",
-      "text": "The primary's ARROW-UNIVERSALITY NO-GO withstands a targeted construction attack. A strictly increasing map with fixed-point set exactly {0, 1/2, 1} and multiplier 2 at 1/2 does exist (so the no-go is not vacuously true for lack of candidates), but it and its inverse split exactly as the alternation theorem requires: one preserves the outer lanes without concentrating, the other concentrates while destroying them. No map on the hypothesis does both.",
+      "text": "MANUAL ASSERTION (not an executable check; removed from the scorecard at review iteration 1): every reading in the table above uses a map or flow that is SUPPLIED by a source note or CONSTRUCTED inside this checker; none is derived from the axioms. This is an author-audited statement about the table's construction, and it carries no machine-checked force.",
+      "witness": "table built in this file; readings enumerated above"
+    },
+    {
+      "kind": "CONFIRMATION",
+      "text": "The primary's FIXED-POINT ALTERNATION LEMMA (narrow; formerly styled an arrow-universality no-go, since withdrawn as a broad claim) withstands a targeted construction attack. A strictly increasing map with fixed-point set exactly {0, 1/2, 1} and multiplier 2 at 1/2 does exist (so the lemma is not vacuously true for lack of candidates), but it and its inverse split exactly as the alternation lemma requires: one leaves the outer fixed points attracting without concentrating onto 1/2, the other concentrates onto 1/2 while the outer fixed points repel (they remain exact fixed points). No map in the hypothesis class does both.",
       "witness": "h(x) = x + c*x(x-1/2)(x-1)*exp(-20(x-1/2)^2) with c = -4.000000; min h' = 0.534392 > 0"
     },
     {
       "kind": "CONFIRMATION",
-      "text": "The primary's named escape from its own no-go is genuine and correctly priced: allowing fixed points at 1/4 and 3/4 does make all three registered settings simultaneously attracting, at the stated cost of two distinguished cells the dial does not register.",
+      "text": "The primary's named escape from the alternation lemma's hypothesis class is genuine and correctly priced: allowing fixed points at 1/4 and 3/4 does make all three registered settings simultaneously attracting, at the stated cost of two distinguished cells the dial does not register.",
       "witness": "h(x) = x - (1/10) x(x-1/4)(x-1/2)(x-3/4)(x-1); all three multipliers have modulus < 1"
     },
     {
       "kind": "DETERMINACY",
-      "text": "The primary's Q1 statement determines the reconciliation LOCALLY but not GLOBALLY. Read as a standalone sentence it does not entail the r=1 behaviour that the S4 no-go's f-row uses: the K5 map satisfies every numeric claim in the statement while fixing r=1. The primary's own runner does use the explicit global forms 2r^2 and sqrt(r/2), so the no-go is sound as computed; but any downstream consumer quoting only the Q1 sentence would not be entitled to the r=1 row. Recommended framing for the supervisor's note: state the global map forms alongside the reconciliation, not the multipliers alone.",
+      "text": "The primary's Q1 statement determines the reconciliation LOCALLY but not GLOBALLY. Read as a standalone sentence it does not entail the r=1 behaviour that the S4 candidate-sweep f-row uses: the K5 map satisfies every numeric claim in the statement while fixing r=1. The primary's own runner does use the explicit global forms 2r^2 and sqrt(r/2), so the sweep is sound as computed; but any downstream consumer quoting only the Q1 sentence would not be entitled to the r=1 row. Recommended framing for the supervisor's note: state the global map forms alongside the reconciliation, not the multipliers alone.",
       "witness": "K5 map h fixes 0, 1/2 and 1 with h'(1/2)=2, satisfying the Q1 statement's numerics; f(1)=2 does not"
     },
     {
       "kind": "CAVEAT",
-      "text": "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention, and the signed deviation CHANGES SIGN inside the plausible window. With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06 (a factor of 2.79); and at m_tau = 1776.96903 MeV it is EXACTLY ZERO. So across a ~0.15 MeV tau window the deviation sweeps the whole range from 0 to about 9e-6. The reduction note's published GATE (|r_PDG - 1/2| < 1e-5) is robust across every scanned convention, and because the Q2 epsilon tables are logarithmic in eps this moves the g-branch step count by at most 2 steps and changes NO verdict. But the hostile-guard's quoted '~3e-6' is a single-convention figure, and no downstream text should treat that specific value as the thing to be explained: the explanandum is the GATE, not the digit.",
-      "witness": "1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (PDG central, other tables) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06; exact zero crossing at m_tau = 1776.96902708 MeV"
+      "text": "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention, and the signed deviation CHANGES SIGN inside the scanned window (asserted for sensitivity analysis; no external edition or uncertainty is cited or verified in-repo). With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06 (a factor of 2.79); and at m_tau = 1776.96903 MeV it is EXACTLY ZERO. So across a ~0.15 MeV tau window the deviation sweeps the whole range from 0 to about 9e-6. The reduction note's published GATE (|r_PDG - 1/2| < 1e-5) is robust across every scanned convention, and because the Q2 epsilon tables are logarithmic in eps this moves the g-branch step count by at most 2 steps and changes NO verdict. But the hostile-guard's quoted '~3e-6' is a single-convention figure, and no downstream text should treat that specific value as the thing to be explained: the explanandum is the GATE, not the digit.",
+      "witness": "1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (alternate committed convention; external edition not verified in-repo) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06; exact zero crossing at m_tau = 1776.96902708 MeV"
     }
   ],
   "independence_statement": "This checker imports nothing from the primary. All algebra is sympy-symbolic and all window arithmetic is mpmath at 60 decimal digits. The primary receipt is read only as a source of CLAIMS to be attacked.",
@@ -588,8 +625,8 @@
     {
       "kind": "continuous flow",
       "multiplier_or_rate": -4.0,
-      "note": "linearization -4; 3.01 e-folds; RATE is metric-dependent, SIGN is not",
-      "reading": "S2-gradient flow in the p coordinate",
+      "note": "linearization -4; 3.01 e-folds; under a genuine coordinate change the eigenvalue would be invariant, so the -1 vs -4 split is a metric difference; only the SIGN is common to all positive metrics",
+      "reading": "S2-gradient flow in the p coordinate (flat metric in p -- a DIFFERENT metric choice, hence a different gradient system, NOT the r-coordinate flow rewritten)",
       "verdict": "GENERIC"
     },
     {
@@ -635,19 +672,7 @@
       "verdict": "CRITERIAL"
     }
   ],
-  "no_go_attack": {
-    "c_value": -4.0,
-    "constructed_map": "h(x) = x + c*x(x-1/2)(x-1)*exp(-20(x-1/2)^2), c chosen so h'(1/2)=2",
-    "multipliers": {
-      "0.0": 0.986524106001829,
-      "0.5": 2.0,
-      "1.0": 0.986524106001829
-    },
-    "named_escape_verified": true,
-    "no_go_survives": true,
-    "strictly_increasing": true
-  },
-  "overall_verdict": "The primary's Q1 reconciliation and Q2 headline verdict SURVIVE independent symbolic re-derivation. No refutation of a primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent, sweeping 0 to about 9e-6 across a ~0.15 MeV tau window (it is EXACTLY zero at m_tau = 1776.96903 MeV), though the published <1e-5 gate and every Q2 verdict are robust to it. The explanandum is the GATE, not the digit.",
+  "overall_verdict": "The primary's Q1 reconciliation (functional-inverse reading) and its map-conditional Q2 verdict SURVIVE independent symbolic re-derivation of the conditional algebra/rate content. No refutation of a checked primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the undischarged element is which supplied map is operative'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the candidate sweep must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent, sweeping 0 to about 9e-6 across a ~0.15 MeV tau window (it is EXACTLY zero at m_tau = 1776.96903 MeV), though the published <1e-5 gate and every Q2 verdict are robust to it. The explanandum is the GATE, not the digit. Tables A, B and C and the preimage-width law are all re-derived at 60 dps. The broad 'arrow-universality no-go' and its lane-data consequence are withdrawn upstream (review iteration 1) and are NOT certified by this checker; only the narrow fixed-point alternation lemma is attacked and survives within its hypothesis class.",
   "provenance": {
     "pin_note": "the primary receipt embeds runtime_sec, so its raw file sha256 varies across re-runs by construction; the stable digest above is the durable cross-reference",
     "pins": {
@@ -688,35 +713,42 @@
         "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
       },
       "logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt": {
-        "bytes": 37445,
-        "git_blob_sha1": "be6d3ffe4cb1e4236bbea617c708ffc2730a528a",
+        "bytes": 41308,
+        "git_blob_sha1": "70de8a862bcdda169de687c70b0ab01d884e85ff",
         "present": true,
-        "sha256": "da37104fb632c908e88daccd235d2cb5f7f8af4c4e033e9c2c8e035017fb5106"
+        "sha256": "ec23e2adba7b8816e95385676d29f6d25787c371acae7d3f908c9ff69e3ed031"
       },
       "outputs/exactness_residual_cycle923_receipt_2026_07_28.json": {
-        "bytes": 90627,
-        "git_blob_sha1": "08dd6e8e3ee65f817a50ad7e7c7ab8166cdd952e",
+        "bytes": 99578,
+        "git_blob_sha1": "026dc29bcc72a63070bca588ee6ede2b626455a3",
         "present": true,
-        "sha256": "5bdeca39e99eeac21f8f0de2d28cc4a6b5e12bc6aa3d7d928dd13e7570411a29"
+        "sha256": "93fe493d71422caa9ab328908baa4f5cfd9d88787ffa9937d90b6aefd96263d3"
       },
       "scripts/frontier_cycle923_exactness_residual_2026_07_28.py": {
-        "bytes": 76797,
-        "git_blob_sha1": "e023c8c03359c3a5d606da758a5cb8ef17c03d05",
+        "bytes": 89273,
+        "git_blob_sha1": "99f2dc4421e3572cd028e5f99349e383f52c2965",
         "present": true,
-        "sha256": "9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366"
+        "sha256": "893b05b523d8af1aa072a91ac9855cfe5a15ca87a5170724210c09cabaa97f12"
       }
     },
-    "primary_receipt_sha256": "5bdeca39e99eeac21f8f0de2d28cc4a6b5e12bc6aa3d7d928dd13e7570411a29",
-    "primary_receipt_stable_sha256_runtime_excluded": "1db681b63888f14cafc93a0845da9dbd98b0d181e155213af5de75ad1882dfcd",
-    "runner_sha256": "363079f5be4cbee9a4bac0b28c2e95f553ae929eae3530563df53e18922255ee"
+    "primary_receipt_sha256": "93fe493d71422caa9ab328908baa4f5cfd9d88787ffa9937d90b6aefd96263d3",
+    "primary_receipt_stable_sha256_runtime_excluded": "0f71e73b9db6c8bfc98547bf863c8373994966d0b872458b9a970607c1abf747",
+    "runner_sha256": "8a9eefcab62b8707e90428d03d616e83580ba64e1f263f7e963ff21844dd6bf9"
+  },
+  "review_loop": {
+    "date": "2026-08-08",
+    "disposition": "FIX_THEN_PROCEED",
+    "fix_summary": "Table C and the preimage-width law now fully re-derived at 60 dps; reciprocal-multiplier lemma stated with C^1 local-diffeomorphism hypotheses and verified symbolically (literal True removed); 'destroyed lanes' wording replaced by repelling-fixed-point language; prose-substring and hard-coded-boolean checks replaced by computed conditions or demoted to manual findings; tau-mass variant labels de-scoped to committed conventions (no external edition cited); block/campaign fields dropped from the receipt",
+    "iteration": 1,
+    "reviewer": "Sol"
   },
   "role": "independent_checker",
   "runner": "scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py",
-  "runtime_sec": 0.252,
+  "runtime_sec": 0.267,
   "schema": "cycle923-exactness-residual-independent-check-v1",
   "scorecard": {
     "fail": 0,
-    "pass": 83,
+    "pass": 85,
     "per_section": {
       "K-teeth": {
         "fail": 0,
@@ -736,11 +768,11 @@
       },
       "K3-mpmath": {
         "fail": 0,
-        "pass": 6
+        "pass": 9
       },
       "K4-degeneracy": {
         "fail": 0,
-        "pass": 5
+        "pass": 4
       },
       "K5-nogo-attack": {
         "fail": 0,
@@ -836,8 +868,8 @@
       "id": "K-T7"
     },
     {
-      "description": "the no-go search HAS POWER: a planted omnipotent candidate is correctly flagged as breaking the no-go, so a real counterexample would not have been missed",
-      "detail": "",
+      "description": "FUNCTION-LEVEL MUTATION TEST: the SAME k5_alternation_predicate implementation that passed the K5 attack returns False once a planted omnipotent row (attracting at 1/2, 0 AND 1) is added to the attack table -- a real counterexample would not have been missed",
+      "detail": "predicate(attack)=True predicate(attack+planted)=False",
       "fired": true,
       "id": "K-T8"
     },

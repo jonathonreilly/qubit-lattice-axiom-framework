@@ -26,36 +26,37 @@
  ],
  "files": {
   "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md": {
-   "git_blob": "f06713c42cc6c7ee83b21ff0cd4e2401dfb60dc0",
-   "sha256": "e9f5effd3d8376c3f353c7b8af52861a15d14da7e8984b47c5352e5bca56a7f0"
+   "git_blob": "6b7cc42f1caff9d6ec91b51cf0db8ab0d8a75d3a",
+   "sha256": "6fbc2093e504360114324bbf6e2d725ddbb4c63faa70cc30f15b9930c5e51cce"
   },
   "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt": {
-   "git_blob": "d0514bf7a85ff2a7ba287237e1d079cc0ee9edf9",
-   "sha256": "231c7460c80f45334f806bbe269ac503cd8d4f7aee101e45505c69229f33213e"
+   "git_blob": "38a0ecf77aaef1b37d1c9fcca49bbd74edd40796",
+   "sha256": "efb45439065ca7c92db20e29a1f261cfeaec71f96ae21d5774e617dfdc295c55"
   },
   "logs/runner-cache/frontier_cycle868_sign_independent_check_2026_07_28.txt": {
-   "git_blob": "658afede2a583083d04f5b40c77bc43433d284ba",
-   "sha256": "e175d3338e660ab400948a9aa710226419392e3ee621a34019027a16b2ae5470"
+   "git_blob": "c72d44f932f9610b830b2d4e22e3bc24d1b33855",
+   "sha256": "e87fde7c187d4d1977f6b522f9242ca054019adbd237b8eb0277e10b208b120f"
   },
   "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": {
-   "git_blob": "e378e6087024ee650bd78aa0d68e0bc4b705a2ed",
-   "sha256": "c0249b6a367bbff4367ae08fe59081595f2abaf26d85bd56bf7027e89ff230c9"
+   "git_blob": "c155a2dafaccde60c17047303c6de358445711c3",
+   "sha256": "dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a"
   },
   "scripts/frontier_cycle868_sign_independent_check_2026_07_28.py": {
-   "git_blob": "aa9a902fd3518150438276040926cd831cc35757",
-   "sha256": "714ce5a7dbaa2e17d09ba4e2ffd92ab5c66eed37c980cbf34bad8810b8689177"
+   "git_blob": "c7709792d4d2941dae243233ce7ea13b9433b319",
+   "sha256": "8dc27750f6a9a2b3eef226e8daeae27e9b12295e92e268a7238b1062e3ac39db"
   }
  },
- "headline": "Exact support: on the stipulated k<=2 / L=6 / d=1..6 surface with the traceless (-2d,+d,+d) ledger, all 8,208 (member, object) pairs of the six stipulated response objects are blind to the sector-trace grading sign; the identifications with the landed response lineage and with the physical conformal-mode sign are OPEN bridges (demoted from scoped no-go at review-loop iteration 1, 2026-08-08)",
+ "headline": "Exact support (bounded theorem): on the stipulated k<=2 / L=6 / d=1..6 surface with the traceless (-2d,+d,+d) ledger, all 8,208 (member, object) pairs of the six stipulated response objects are blind to the sector-trace grading sign; the object-lineage and physical-sign identifications are OPEN bridges",
  "independence": "cross-context (integer two-world route vs rational polynomial route; import firewall; shared authoring model family)",
  "note": "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md",
  "prior_art_search_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
  "review_loop": {
-  "iteration_1": "FIX_THEN_PROCEED (Sol, 2026-08-08): no-go demoted to exact support; checker comparison gate now fails closed on disagreements; primary mechanism gate now gates the symbolic closures; fifth ancestor pinned (read cap 6->7); escape-logic contradiction fixed; weight ladder declared an explicit scope input"
+  "iteration_1": "FIX_THEN_PROCEED (Sol, 2026-08-08): no-go demoted to exact support; checker comparison gate now fails closed on disagreements; primary mechanism gate now gates the symbolic closures; fifth ancestor pinned (read cap 6->7); escape-logic contradiction fixed; weight ladder declared an explicit scope input",
+  "iteration_2": "FIX round 2 (Sol confirmation FAIL, 2026-08-08): runners made self-contained -- the Cycle-320/322/749/768/812 lineage removed from both runners' audit inputs (primary now declares zero audit inputs; checker pins only the primary source and cache) with ledger/family/objects stipulated in-file; residual no-go / landed-surface / physical-sign language retired from the note, runner docstrings and emitted certificates; O1_PUSHFORWARD parity claim corrected and gated in the mechanism certificate; note status block set to support / bounded_theorem with an upstream_support trace role"
  },
  "runtime_seconds": {
-  "checker": 0.46,
-  "primary": 0.83
+  "checker": 0.48,
+  "primary": 0.84
  },
  "worker_read_cap_deviation": "7 files consulted vs 6 spec cap (5 grep/head only); disclosed and accepted"
 }

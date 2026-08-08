@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
-"""Independent adversarial checker for the Cycle-868 response sign census.
+"""Independent adversarial checker for the Cycle-868 sign census.
 
-This checker is specified to REFUTE.  Its job is to find one landed response
-functional that distinguishes the conformal sign, which would kill the
-primary's scoped no-go outright.  It therefore does not re-run the primary's
-six declared objects: it searches a deliberately much larger functional space
-built from the same landed surface -- every coordinate of the graded source,
-the pushforward and the composed pullback, every index contraction of the
-pushforward, and every unordered quadratic in that whole base -- across the
-complete landed source family.
+This checker is specified to REFUTE.  Its job is to find one functional on
+the stipulated response surface that distinguishes the grading sign, which
+would refute the primary's EXACT-SUPPORT claim over the DECLARED source
+family.  It therefore does not re-run the primary's six stipulated objects:
+it searches a deliberately much larger functional space built from the same
+stipulated surface -- every coordinate of the graded source, the pushforward
+and the composed pullback, every index contraction of the pushforward, and
+every unordered quadratic in that whole base -- across the declared source
+family.
 
-Nothing from the primary lineage is executed.  The primary runner, its pinned
-stdout, and the four cited lineage sources are SHA-pinned text evidence behind
-a meta-path import firewall.  The arithmetic route is independent as well: the
-primary carried a formal sigma as a rational polynomial, while this checker
-hard-wires two integer worlds (sigma=+1 and sigma=-1) and compares them with
-integer arithmetic only, so a bug in the primary's polynomial algebra cannot
-reproduce itself here.
+Everything decisive is STIPULATED IN-FILE, mirroring the primary: the
+traceless three-sector recoil ledger (-2d, +d, +d), the sector-weight ladder
+d = 1..6 (an explicit scope input; no cited supplier), the two-endpoint
+exchange, and the sector-trace grading.  The ONLY audit inputs are the
+primary runner and its pinned stdout, both SHA-pinned text evidence behind a
+meta-path import firewall.  The Cycle-320/322/749/768/812 lineage is
+provenance-only, non-load-bearing context; its modules are import-blocklisted
+as a belt and are not read, hashed, or otherwise consumed.  The arithmetic
+route is independent as well: the primary carried a formal sigma as a
+rational polynomial, while this checker hard-wires two integer worlds
+(sigma=+1 and sigma=-1) and compares them with integer arithmetic only, so a
+bug in the primary's polynomial algebra cannot reproduce itself here.
 """
 from __future__ import annotations
 
@@ -25,11 +31,6 @@ STDOUT_LIMIT_BYTES = 150_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
     "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt",
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
-    "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
-    "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
-    "scripts/frontier_cycle768_response_law_candidate_2026_07_28.py",
-    "scripts/frontier_cycle812_mixed_input_response_2026_07_28.py",
 )
 
 import ast
@@ -46,37 +47,34 @@ PRIMARY_PATH, PRIMARY_CACHE = AUDIT_INPUT_PATHS[0], AUDIT_INPUT_PATHS[1]
 PYTHON_PATHS = tuple(
     path for path in AUDIT_INPUT_PATHS if path.endswith(".py")
 )
-BLOCKLISTED_MODULES = tuple(Path(path).stem for path in PYTHON_PATHS)
+# Provenance-only ancestor modules (non-load-bearing context; not audit
+# inputs).  The blocklist is a belt that fails closed if any of them -- or
+# the primary itself -- is ever imported.
+PROVENANCE_BLOCKLIST_STEMS = (
+    "unit_weight_carried_link_recoil_cycle320_2026_07_18",
+    "two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18",
+    "frontier_cycle749_response_comparison_harness_2026_07_28",
+    "frontier_cycle768_response_law_candidate_2026_07_28",
+    "frontier_cycle812_mixed_input_response_2026_07_28",
+)
+BLOCKLISTED_MODULES = tuple(
+    Path(path).stem for path in PYTHON_PATHS
+) + PROVENANCE_BLOCKLIST_STEMS
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "c0249b6a367bbff4367ae08fe59081595f2abaf26d85bd56bf7027e89ff230c9",
+        "dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a",
     AUDIT_INPUT_PATHS[1]:
-        "231c7460c80f45334f806bbe269ac503cd8d4f7aee101e45505c69229f33213e",
-    AUDIT_INPUT_PATHS[2]:
-        "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
-    AUDIT_INPUT_PATHS[3]:
-        "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
-    AUDIT_INPUT_PATHS[4]:
-        "ab9b852236f73ec4aecad9287e07a4029309159d956a1cb3043f9238342d6807",
-    AUDIT_INPUT_PATHS[5]:
-        "7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32",
-    AUDIT_INPUT_PATHS[6]:
-        "fe35718b8f5e84cfafed74026a5634e722da757782f04d536a756d7273d3ee9b",
+        "efb45439065ca7c92db20e29a1f261cfeaec71f96ae21d5774e617dfdc295c55",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "e378e6087024ee650bd78aa0d68e0bc4b705a2ed",
-    AUDIT_INPUT_PATHS[1]: "d0514bf7a85ff2a7ba287237e1d079cc0ee9edf9",
-    AUDIT_INPUT_PATHS[2]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
-    AUDIT_INPUT_PATHS[3]: "de8b90b08707c000bb2489502823b02d62e38b29",
-    AUDIT_INPUT_PATHS[4]: "cee674584704dd7d351cb2ffa947c74bee47d06e",
-    AUDIT_INPUT_PATHS[5]: "0070722d7a12d47658346b6c812edd05424ae592",
-    AUDIT_INPUT_PATHS[6]: "39b5f24595f2271704bf68197103b62824a14cbf",
+    AUDIT_INPUT_PATHS[0]: "c155a2dafaccde60c17047303c6de358445711c3",
+    AUDIT_INPUT_PATHS[1]: "38a0ecf77aaef1b37d1c9fcca49bbd74edd40796",
 }
 PRIMARY_REQUIRED_MARKERS = (
     "adjoint_pullback",
     "census_certificate",
     "grading_operator",
-    "landed_ledger",
+    "stipulated_ledger",
     "response_objects",
     "verdict_certificate",
 )
@@ -100,9 +98,10 @@ sys.meta_path.insert(0, FIREWALL)
 
 
 # --------------------------------------------------------------------------
-# the scope, restated here from the landed lineage rather than read from the
-# primary: three sectors, the (-2d,+d,+d) ledger, six signed axis directions,
-# six carried weights from the held L=6 edge, two endpoints, k <= 2
+# the scope, restated here from the stipulated definitions rather than read
+# from the primary: three sectors, the (-2d,+d,+d) ledger, six signed axis
+# directions, six carried weights (an explicit scope input with cardinality
+# matching the held L=6 edge; no cited supplier), two endpoints, k <= 2
 # --------------------------------------------------------------------------
 SECTOR_COUNT = 3
 AXIS_COUNT = 3
@@ -341,7 +340,7 @@ def source_controls() -> dict[str, object]:
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "literal_path_count": len(AUDIT_INPUT_PATHS),
-        "read_cap": 7,
+        "read_cap": 2,
         "source_rows": rows,
         "primary_required_AST_markers": PRIMARY_REQUIRED_MARKERS,
         "primary_required_AST_markers_present": markers_present,
@@ -352,14 +351,17 @@ def source_controls() -> dict[str, object]:
         "firewall_hits": tuple(FIREWALL.hits),
         "executable_science_inputs": (),
         "finding": (
-            "All seven cited inputs are literal worktree-relative paths that "
-            "exist, match their pinned SHA-256 and git blob hashes, and are "
-            "consumed as text or AST only; the primary runner carries every "
-            "required structural marker and is blocked from import."
+            "Both cited inputs -- the primary runner and its pinned stdout, "
+            "the checker's ONLY audit inputs -- are literal worktree-relative "
+            "paths that exist, match their pinned SHA-256 and git blob "
+            "hashes, and are consumed as text or AST only; the primary "
+            "carries every required structural marker and is blocked from "
+            "import, and the provenance-only ancestor modules stay "
+            "blocklisted without being consumed."
         ),
     }
     result["pass"] = (
-        len(rows) <= 7
+        len(rows) <= 2
         and all(
             row["exists_worktree_relative"]
             and row["sha256_exact"]
@@ -461,7 +463,7 @@ def refutation_hunt(members: tuple[tuple, ...]) -> dict[str, object]:
         "conformal_nonzero_members": conformal_nonzero,
         "hunt_stream_sha256": stream.hexdigest(),
         "finding": (
-            f"The hunt swept {len(members)} landed source configurations "
+            f"The hunt swept {len(members)} declared source configurations "
             f"against {FUNCTIONAL_COUNT} response functionals each -- "
             f"{len(members) * FUNCTIONAL_COUNT} exact integer comparisons "
             f"between the sigma=+1 and sigma=-1 worlds, a functional space "
@@ -562,9 +564,9 @@ def comparison_certificate(
 # --------------------------------------------------------------------------
 def adversary_certificate() -> dict[str, object]:
     seed = ("k2", 2, 4, 5, 3)
-    landed = scaled_source(seed)
+    stipulated = scaled_source(seed)
     detuned = scaled_source(seed, rule=detuned_ledger)
-    landed_hits = sensitive_functionals(landed)
+    stipulated_hits = sensitive_functionals(stipulated)
     detuned_hits = sensitive_functionals(detuned)
     fake_claims = {
         "final": {
@@ -586,10 +588,10 @@ def adversary_certificate() -> dict[str, object]:
     fake_comparison = comparison_certificate(fake_claims, fake_hunt, (("k1", 0, 0, 1),))
     result = {
         "seed_member": seed,
-        "landed_sensitive_functional_count": len(landed_hits),
+        "stipulated_ledger_sensitive_functional_count": len(stipulated_hits),
         "detuned_sensitive_functional_count": len(detuned_hits),
         "detector_fires_on_detuned_ledger": len(detuned_hits) > 0,
-        "detector_silent_on_landed_ledger": len(landed_hits) == 0,
+        "detector_silent_on_stipulated_ledger": len(stipulated_hits) == 0,
         "planted_false_claim_fields_caught":
             tuple(fake_comparison["disagreements"]),
         "planted_false_claim_detected":
@@ -597,16 +599,16 @@ def adversary_certificate() -> dict[str, object]:
         "calibration_scope_note": (
             "the detuned ledger is an OFF-SCOPE synthetic probe and the "
             "planted claim block is fabricated; both calibrate the checker's "
-            "discriminating power and neither is evidence about the landed "
+            "discriminating power and neither is evidence about the declared "
             "family"
         ),
         "finding": (
             f"The checker demonstrates it can refute. On an off-scope source "
             f"whose ledger is detuned by one unit the hunt fires on "
-            f"{len(detuned_hits)} distinct functionals, while on the landed "
-            f"ledger at the same configuration it fires on "
-            f"{len(landed_hits)}. A fabricated claim block with wrong counts "
-            f"is caught on "
+            f"{len(detuned_hits)} distinct functionals, while on the "
+            f"stipulated ledger at the same configuration it fires on "
+            f"{len(stipulated_hits)}. A fabricated claim block with wrong "
+            f"counts is caught on "
             f"{len(fake_comparison['disagreements'])} comparison fields, so a "
             f"primary that misreported its census would not pass this "
             f"comparison unnoticed."

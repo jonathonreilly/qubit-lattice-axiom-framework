@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_three_generation_rooting_coordinate_no_go.py
-runner_sha256: c09914dabed1a50478400392e4e222503e890fef8ccf5133bcf0b6926e5f1a8d
+runner_sha256: d55f888c7941dd69a505a3a75d3ba90ba76734725e98d524a05eff3ccd1d451c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 Three-generation BZ-corner rooting coordinate no-go
@@ -39,6 +39,15 @@ PART 3: TASTE-FLIP ORBIT CLOSURE NO-GO
   [PASS] three bit flips act transitively on the eight corners  (orbit=[0, 1, 2, 3, 4, 5, 6, 7])
   [PASS] all nonempty proper coordinate subsets checked for taste closure  (total=254)
   [PASS] no nonempty proper coordinate subset is closed under all taste flips  (closed=[])
+
+========================================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================================
+per_element: matrix entries are resolved exactly and in both directions — on the full C^8 carrier every entry of {Gamma_i, Gamma_j} - 2 delta_ij I is an exact zero (max Frobenius error 0.0), while the best of all coordinate compressions still leaves a Clifford error of exactly 2.0; the five Part-0 firewall checks, by contrast, are note-substring assertions and resolve no matrix element whatsoever.
+per_site: checked and not executed — this runner builds no Hamiltonian, no hopping term, no lattice extent L and no site index at any point; it operates only inside the eight-dimensional taste carrier, so there is nothing for it to decide site by site.
+per_mode: checked and not executed — no Fourier transform, momentum grid or dispersion relation appears here, and the eight corner indices enter purely as tensor-factor bit labels with no momentum value ever attached, so no statement is made mode by mode.
+per_block: coordinate blocks are the whole content of this runner and they are exhausted, not sampled — all 254 nonempty proper corner subsets, distributed by size as {1: 8, 2: 28, 3: 56, 4: 70, 5: 56, 6: 28, 7: 8}, are compressed and tested; none preserves Cl(3) at the 1e-10 threshold, exactly 0 are closed under the three bit flips, and the flip orbit of corner 0 sweeps all 8 corners.
+lattice_wide: checked and not executed — there is simply no lattice in this file to make a statement about, with no volume, boundary condition, spacing or limit of any kind; the no-go is asserted about a single eight-dimensional internal carrier, never about an extended lattice.
 
 ========================================================================================
 SUMMARY

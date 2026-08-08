@@ -139,6 +139,58 @@ def run_note_checks(checks: Checkbook) -> None:
     )
 
 
+def execution_certificate(checks: Checkbook) -> None:
+    """Print-only N5 execution certificate; appends no check, counts nothing."""
+    family = {str(kappa): str(k_ew(kappa)) for kappa in KAPPAS}
+    base = sin2(G1_LATTICE, G2_LATTICE)
+    rescale_ok = all(
+        math.isclose(
+            sin2(G1_LATTICE * math.sqrt(float(k_ew(kappa))),
+                 G2_LATTICE * math.sqrt(float(k_ew(kappa)))),
+            base,
+            rel_tol=0.0,
+            abs_tol=1e-15,
+        )
+        for kappa in KAPPAS
+    )
+    print("N5 EXECUTION CERTIFICATE")
+    print(
+        f"per_element: checked and not executed — nothing matrix-valued is "
+        f"instantiated in this certificate; F_adj = (N_c^2 - 1)/N_c^2 is "
+        f"evaluated straight from N_c = {NC} as an exact Fraction, so there is "
+        f"no operator whose individual entries could be resolved."
+    )
+    print(
+        f"per_site: checked and not executed — the readout coefficient family "
+        f"is a global matching statement with no positional content at all: no "
+        f"coordinate, neighbour or extent is defined, so the question of what "
+        f"happens at a given site does not arise here."
+    )
+    print(
+        f"per_mode: checked and not executed — no eigenvalue problem, momentum "
+        f"variable or normal-mode expansion occurs; g_1 and g_2 are two fixed "
+        f"scalar couplings, not modes, so this runner decides nothing at mode "
+        f"granularity."
+    )
+    print(
+        f"per_block: the adjoint and singlet colour blocks carry everything "
+        f"this runner resolves, in exact rational arithmetic — with "
+        f"F_adj = {f_adj()} the selector family "
+        f"K_EW(kappa) = 1 / (F_adj + kappa (1 - F_adj)) takes the values "
+        f"{family} at kappa = 0, 1/2, 1, 2, and each of those stays invariant "
+        f"under the common CMT rescalings {[str(s) for s in COMMON_SCALES]}, "
+        f"so the block weights fix the family but never the selector."
+    )
+    print(
+        f"lattice_wide: checked and not executed — the lattice appears only as "
+        f"the two scalar anchors g_1 = {G1_LATTICE} and g_2 = {G2_LATTICE} "
+        f"taken as given, with no volume, spacing or configuration built "
+        f"anywhere; the weak-angle result is the algebraic fact that a common "
+        f"rescaling cancels in sin^2 theta_W and in g_1/g_2 for every kappa in "
+        f"the family, verified at abs tol 1e-15 ({rescale_ok})."
+    )
+
+
 def main() -> None:
     checks = Checkbook()
     print("=" * 92)
@@ -156,6 +208,8 @@ def main() -> None:
     print("  The current packet does not derive kappa_EW=0.")
     print()
     checks.report()
+    print()
+    execution_certificate(checks)
     print()
     print(f"RUNNER STATUS: {'PASS' if checks.fail_count == 0 else 'FAIL'} (PASS={checks.pass_count} FAIL={checks.fail_count})")
     if checks.fail_count:

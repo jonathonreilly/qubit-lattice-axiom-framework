@@ -216,6 +216,47 @@ def main() -> int:
 
     print()
     print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 78)
+    n_c_list = [2, 3, 4, 5, 10]
+    sums_all_one = all(f_adj(n) + f_singlet(n) == 1 for n in n_c_list)
+    ky_family = [str(k_y(3, Fraction(x, 2))) for x in (0, 1, 2)]
+    print(
+        f"per_element: checked and not executed — this runner constructs no "
+        f"matrix of any kind; the colour channel weights are exact Fractions "
+        f"computed from N_c alone, and even the traceless generator enters "
+        f"only through the closed-form statement Tr t^A = 0 rather than as an "
+        f"explicit array, so there is no matrix element for it to resolve."
+    )
+    print(
+        f"per_site: checked and not executed — nothing in this file carries a "
+        f"position, a neighbour relation or a lattice extent; the whole "
+        f"argument is a matching statement about colour-channel weights and is "
+        f"independent of where anything sits."
+    )
+    print(
+        f"per_mode: checked and not executed — no momentum, eigenvalue or "
+        f"normal mode appears anywhere; the only decomposition performed is "
+        f"into group-representation channels, which is block structure rather "
+        f"than mode structure and is certified on the per_block line instead."
+    )
+    print(
+        f"per_block: colour blocks are the entire executed content and they "
+        f"close exactly in rational arithmetic — F_adj = (N_c^2 - 1)/N_c^2 and "
+        f"F_singlet = 1/N_c^2 sum to one for every N_c in {n_c_list} "
+        f"({sums_all_one}), at N_c = 3 they are {f_adj(3)} and "
+        f"{f_singlet(3)}, and the undetermined completion parameter sweeps "
+        f"K_Y across {ky_family} for kappa_Y = 0, 1/2, 1, which is exactly the "
+        f"ambiguity the no-go reports."
+    )
+    print(
+        f"lattice_wide: checked and not executed — neither a lattice, a "
+        f"volume, a spacing nor a limit exists here; separately, 18 of "
+        f"its {PASS_COUNT + FAIL_COUNT} checks read the two source documents "
+        f"(2 file-existence tests and 16 substring assertions) and resolve "
+        f"nothing numerical, which is inventory rather than computation."
+    )
+    print("=" * 78)
     print(f"RESULT: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
     return 0 if FAIL_COUNT == 0 else 1

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_color_projection_correction.py
-runner_sha256: b640f7b2d46ee89fbb30783393a80fef4a3d9df0fd556966ec0b8c5cee89f12d
+runner_sha256: ac2e4f613b07ba12896d7205544fe1ab835b34342b82229797e0f026267cd9ff
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -64,6 +64,14 @@ Part 5: overclaim guards
 [PASS] source contains boundary phrase 'No-Go Discipline Gate'
 [PASS] source contains boundary phrase 'Status:** PASS'
 
+==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+per_element: checked and not executed — this runner constructs no matrix of any kind; the colour channel weights are exact Fractions computed from N_c alone, and even the traceless generator enters only through the closed-form statement Tr t^A = 0 rather than as an explicit array, so there is no matrix element for it to resolve.
+per_site: checked and not executed — nothing in this file carries a position, a neighbour relation or a lattice extent; the whole argument is a matching statement about colour-channel weights and is independent of where anything sits.
+per_mode: checked and not executed — no momentum, eigenvalue or normal mode appears anywhere; the only decomposition performed is into group-representation channels, which is block structure rather than mode structure and is certified on the per_block line instead.
+per_block: colour blocks are the entire executed content and they close exactly in rational arithmetic — F_adj = (N_c^2 - 1)/N_c^2 and F_singlet = 1/N_c^2 sum to one for every N_c in [2, 3, 4, 5, 10] (True), at N_c = 3 they are 8/9 and 1/9, and the undetermined completion parameter sweeps K_Y across ['8/9', '17/18', '1'] for kappa_Y = 0, 1/2, 1, which is exactly the ambiguity the no-go reports.
+lattice_wide: checked and not executed — neither a lattice, a volume, a spacing nor a limit exists here; separately, 18 of its 42 checks read the two source documents (2 file-existence tests and 16 substring assertions) and resolve nothing numerical, which is inventory rather than computation.
 ==============================================================================
 RESULT: PASS=42 FAIL=0
 ==============================================================================

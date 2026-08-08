@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py
-runner_sha256: 75afc8a06cdf3404ef7812a9d01c4d34ce0a3496354b39318c351b33e8b87689
+runner_sha256: 496dd90e5ab3d2d7e48586834db7b40ef2c74f2368486ffe7468b5409edc1a61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 Section A: SU(2) torus dual
@@ -30,7 +30,7 @@ Section D: gluing stability
 Section E: Weyl-shift obstruction
   [PASS] E1 su(2): the W-average of the Cartan action is 0 (fixed subspace zero)
   [PASS] E2 su(3): the W-average restricted to the Cartan (sum-zero subspace) is exactly 0 — no W-fixed direction exists
-         norm = 9.80e-33
+         norm = 9.35e-33
   [PASS] E3 every tested nonzero lattice shift of the SU(3) dual table (including diagonal shifts) breaks full-W anti-invariance: the U(1)-template label-shift theta slot does not lift to the nonabelian torus dual
   [PASS] F1 note declares canonical claim type
   [PASS] F2 legacy source status labels absent
@@ -40,6 +40,12 @@ Section E: Weyl-shift obstruction
   [PASS] F6 load-bearing markdown dependencies are exact
   [PASS] F7 stale in-flight wording absent
   [PASS] F8 historical PR #4768 is not a dependency
+N5 execution certificate
+per_element: the only entrywise linear algebra performed here is the Weyl action on the Cartan — the six 3x3 permutation matrices are averaged and sandwiched between sum-zero projectors, and every entry of the result vanishes to Frobenius norm below 1e-14 (True), so no W-fixed direction survives element by element.
+per_site: checked and not executed — every grid index in this runner labels a maximal-torus angle (phi for SU(2), the pair theta_1, theta_2 for SU(3)), never a lattice site, and no site variable, link variable or plaquette occupancy is constructed anywhere in Sections A through F.
+per_mode: mode-by-mode resolution is the substance of this runner — the SU(2) dressed weight has vanishing zero mode and reproduces A n exp(-t n^2 / 4) at t = 0.7 for every n from 1 to 28 at relative tolerance 1e-10 on a 1024-point offset angle grid, and on the 48x48 SU(3) offset grid all 841 window modes with |n_1|, |n_2| <= 14 match the signed d_R exp(-t C_2) table to 1e-6 relative, 372 of them nonzero.
+per_block: the center-graded blocks come out as coset shadows of the dual lattice — restricting SU(2) to integer spins kills the even-mu modes and leaves only the odd-mu coset populated, while the SU(3) table populates all three triality cosets [0, 1, 2] and the non-regular lines n_1 = n_2, n_1 = 0 and n_2 = 0 carry identically zero weight.
+lattice_wide: checked and not executed as a spatial-lattice statement — no Z^3 or T^4 volume, spacing or boundary condition exists in this runner, so there is nothing to resolve over a physical lattice; the only lattice swept is the rho-shifted SU(3) weight lattice, and even that support claim is confined to the finite window |n_1|, |n_2| <= 14 with no infinite-volume or thermodynamic limit taken.
 TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----

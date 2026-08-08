@@ -411,4 +411,51 @@ check("F6 load-bearing markdown dependencies are exact", EXPECTED_DEPS == {Path(
 check("F7 stale in-flight wording absent", "in-flight" not in NOTE)
 check("F8 historical PR #4768 is not a dependency", "PR #4768 is historical context, not a dependency" in " ".join(NOTE.split()))
 
+# ---------------------------------------------------------------------------
+# N5 execution certificate (print-only; no counter is touched)
+# ---------------------------------------------------------------------------
+print("N5 execution certificate")
+
+_modes_checked = (2 * MWIN + 1) ** 2
+_cosets = sorted(cosets)
+
+print(
+    f"per_element: the only entrywise linear algebra performed here is the "
+    f"Weyl action on the Cartan — the six 3x3 permutation matrices are "
+    f"averaged and sandwiched between sum-zero projectors, and every entry of "
+    f"the result vanishes to Frobenius norm below 1e-14 "
+    f"({norm_fixed < 1e-14}), so no W-fixed direction survives element by "
+    f"element."
+)
+print(
+    f"per_site: checked and not executed — every grid index in this runner "
+    f"labels a maximal-torus angle (phi for SU(2), the pair theta_1, theta_2 "
+    f"for SU(3)), never a lattice site, and no site variable, link variable "
+    f"or plaquette occupancy is constructed anywhere in Sections A through F."
+)
+print(
+    f"per_mode: mode-by-mode resolution is the substance of this runner — the "
+    f"SU(2) dressed weight has vanishing zero mode and reproduces "
+    f"A n exp(-t n^2 / 4) at t = {T_HK} for every n from 1 to 28 at relative "
+    f"tolerance 1e-10 on a {NG}-point offset angle grid, and on the "
+    f"{NGD}x{NGD} SU(3) offset grid all {_modes_checked} window modes with "
+    f"|n_1|, |n_2| <= {MWIN} match the signed d_R exp(-t C_2) table to 1e-6 "
+    f"relative, {nz} of them nonzero."
+)
+print(
+    f"per_block: the center-graded blocks come out as coset shadows of the "
+    f"dual lattice — restricting SU(2) to integer spins kills the even-mu "
+    f"modes and leaves only the odd-mu coset populated, while the SU(3) table "
+    f"populates all three triality cosets {_cosets} and the non-regular lines "
+    f"n_1 = n_2, n_1 = 0 and n_2 = 0 carry identically zero weight."
+)
+print(
+    f"lattice_wide: checked and not executed as a spatial-lattice statement — "
+    f"no Z^3 or T^4 volume, spacing or boundary condition exists in this "
+    f"runner, so there is nothing to resolve over a physical lattice; the only "
+    f"lattice swept is the rho-shifted SU(3) weight lattice, and even that "
+    f"support claim is confined to the finite window |n_1|, |n_2| <= {MWIN} "
+    f"with no infinite-volume or thermodynamic limit taken."
+)
+
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

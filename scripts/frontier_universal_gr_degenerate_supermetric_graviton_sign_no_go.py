@@ -233,4 +233,49 @@ print("framework lambda=0 comparator gluing: omega^2_trace=%.3f  omega^2_TT=%.3f
 print("GR lambda=1 control in the same convention: omega^2_trace=%.3f  omega^2_TT=%.3f (same positive sign)" % (wt1, ws1))
 print("BOUNDARY = sign algebra for framework-derived comparator signs plus derived finite quadratic gluing;")
 print("open = 4D/timelike Regge action/fiber metric, action orientation, and finite-k W/stress routes.")
+print()
+print("N5 execution certificate")
+print(
+    "per_element: the ten independent components of the symmetric "
+    "perturbation h_ab are carried symbolically all the way through — the "
+    "linearized Einstein operator is differentiated component by component "
+    "into a 10x10 Hessian at omega = 0, and contracting that on the "
+    "normalized channel directions returns the exact closed forms "
+    "V_trace = %s and V_TT = %s with no floating-point step; the T2a bridge "
+    "guard, by contrast, is a substring test over an upstream note and cache "
+    "and resolves nothing numerically."
+    % (V_trace_sym, V_TT_sym)
+)
+print(
+    "per_site: checked and not executed — nothing in this runner carries a "
+    "position-space index; the metric perturbation lives in momentum space "
+    "from beginning to end and no site, link, spacing or real-space "
+    "neighbour is ever constructed, so no site-resolved quantity is decided."
+)
+print(
+    "per_mode: dispersion is resolved separately for each ADM channel through "
+    "the imported gluing law omega^2 = V / G, and the per-momentum "
+    "metric-Hessian of W is resolved over %d seeded momentum draws (seed 3, "
+    "each component uniform on (0.2, pi - 0.2)), which return matrix rank %s "
+    "on every single draw while the transverse-traceless overlap stays below "
+    "the runner's 1e-14 kernel threshold throughout (%s)."
+    % (len(ranks), sorted(int(r) for r in set(ranks)), max(overlaps) < 1e-14)
+)
+print(
+    "per_block: weighing the two ADM blocks against each other is the whole "
+    "no-go — at lambda = 0 the DeWitt fiber metric gives G_trace and G_shear "
+    "the same sign (degenerate) while at lambda = 1 it gives them opposite "
+    "signs, and against the derived opposite-signed potentials the degenerate "
+    "block pair forces omega^2_trace * omega^2_TT < 0 for both choices of the "
+    "overall normalization sign (%s)."
+    % gs_ok
+)
+print(
+    "lattice_wide: checked and not executed — momenta here are drawn from a "
+    "continuous open box rather than enumerated on any finite lattice, and no "
+    "volume, spacing, boundary condition or Brillouin-zone mode list is "
+    "constructed at all; the global-sign theorem is an algebraic statement "
+    "about the fiber metric that never references a lattice extent."
+)
+print()
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

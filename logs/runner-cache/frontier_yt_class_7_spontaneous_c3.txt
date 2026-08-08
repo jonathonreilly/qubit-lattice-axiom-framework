@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_class_7_spontaneous_c3.py
-runner_sha256: 960bfebe758fe1f2e44997abfa741fc27fe6c24b43301761c682804f5e4f8fbb
+runner_sha256: 3c3d850c650b280a0476baadd899fce390f5b6aa0a556c239be7e1d18b130ec5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -58,7 +58,7 @@ Block 6: Path E -- promoted CKM phase is explicit via Z_3 source
   [PASS] Retained delta_std = arctan(sqrt(5)) = 65.905 deg  (delta_std = 65.905157 deg)
   [PASS] cos^2(delta_std) = 1/6 from the 1+5 projector on 6-dim quark block  (cos^2 = 0.166667, expected 1/6 = 0.166667)
   [PASS] Z_3 source has discrete cube-root eigenvalues (1, omega, omega^2)  (explicit discrete source, not spontaneous breaking of continuous flavor)
-  [PASS] Z_3 characters sum to 0 (destructive on singlet, discrete flavor action)  (|sum| = 3.33e-16)
+  [PASS] Z_3 characters sum to 0 (destructive on singlet, discrete flavor action)  (|sum| = 3.51e-16)
   [PASS] Retained gauge group: SU(3)_C x SU(2)_L x U(1)_Y; no continuous flavor  (Z_3 is explicit, not residual from spontaneous breaking of larger flavor)
 
 ==============================================================================
@@ -107,6 +107,15 @@ Block 12: Outcome D verdict explicit (retained no-go)
 Block 13: Final retention verdict -- Outcome D (retained no-go)
 ==============================================================================
   [PASS] Outcome D fully documented  (verdict components = 9/9)
+
+==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+per_element: entry-level work here is confined to 3x3 matrices on the hw=1 triplet and it closes exactly — C_3 unitarity and order three give residuals 0.0 and 0.0, and the three rank-one projectors sum to the identity with residual 0.0; several later blocks instead assert hard-coded booleans or identity matrices and resolve no matrix entry, which is inventory rather than computation.
+per_site: checked and not executed — the translation characters T_x, T_y, T_z enter only as diagonal sign matrices with entries [-1.0, 1.0] on the three-dimensional generation triplet; no lattice coordinate, neighbour or hopping is ever built, so no site-resolved quantity is decided.
+per_mode: the three translation-character sectors are resolved individually — characters (-1, +1, +1), (+1, -1, +1) and (+1, +1, -1) produce mutually orthogonal rank-one projectors that resolve the identity exactly, and the Z_3 cube-root characters 1, omega, omega^2 sum to zero within 1e-12 (True), which is what makes the flavour action discrete rather than residual.
+per_block: block-level counting is exact throughout — the six-dimensional quark block splits 1 + 5 so that cos^2(delta_std) is the exact rational 1/6 (live value 0.166667), the S_3 taste cube decomposes as 4 A_1 + 2 E with total dimension 8, which is a different structure from the dimension-3 generation triplet, and a flavour Higgs would add 18 real degrees of freedom against the two that D9 retains.
+lattice_wide: checked and not executed — this file never assembles a gauge configuration, an extent or a spacing, and in particular the Path C claim of invariance 'on every gauge background' is exercised on one generation-uniform scalar operator rather than swept over any ensemble, so nothing here is resolved lattice-wide.
 
 ==============================================================================
 RESULT: PASS=41, FAIL=0

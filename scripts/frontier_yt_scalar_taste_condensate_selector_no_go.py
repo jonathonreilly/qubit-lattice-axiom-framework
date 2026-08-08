@@ -215,6 +215,57 @@ def main() -> int:
 
     print()
     print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 78)
+    ns = (2, 3, 4, 5)
+    id_traces = {n: str(trace(scalar_identity(n))) for n in ns}
+    lam3 = diag((Fraction(1), Fraction(-1), Fraction(0)))
+    lam8 = diag((Fraction(1), Fraction(1), Fraction(-2)))
+    singlet_weights = {n: str(rho_singlet(scalar_identity(n))) for n in ns}
+    traceless_weights = {
+        "diag(1,-1,0)": str(rho_singlet(lam3)),
+        "diag(1,1,-2)": str(rho_singlet(lam8)),
+    }
+    total_checks = PASS_COUNT + FAIL_COUNT
+    print(
+        f"per_element: colour insertion matrices are assembled and read entry "
+        f"by entry in exact rational arithmetic — the scalar identity is built "
+        f"explicitly for N in {list(ns)} with traces {id_traces}, and at N = 3 "
+        f"the two traceless diagonal insertions diag(1,-1,0) and diag(1,1,-2) "
+        f"are confirmed to have trace exactly {trace(lam3)} and "
+        f"{trace(lam8)}."
+    )
+    print(
+        f"per_site: checked and not executed — a colour insertion matrix "
+        f"carries a colour index pair and nothing else; it is never placed on "
+        f"a lattice, no coordinate is introduced, and no sum over any set of "
+        f"points is performed anywhere in the file."
+    )
+    print(
+        f"per_mode: checked and not executed — nothing here is diagonalized or "
+        f"Fourier transformed and no dispersion or spectral index exists; the "
+        f"insertion is characterized entirely by its trace and its "
+        f"Hilbert-Schmidt norm, which are basis-independent scalars rather "
+        f"than mode-resolved data."
+    )
+    print(
+        f"per_block: the singlet and traceless colour channels are separated "
+        f"exactly — the projection weight rho_singlet returns "
+        f"{singlet_weights} on the identity insertion across those same N, and "
+        f"{traceless_weights} on the two traceless SU(3) insertions, which is "
+        f"precisely why a colour-singlet condensate diagnoses K_Y = "
+        f"{k_y_for_kappa(Fraction(1))} rather than "
+        f"{k_y_for_kappa(Fraction(0))}."
+    )
+    print(
+        f"lattice_wide: checked and not executed — a colour projection weight "
+        f"is scale-free, and this runner introduces no extent, no boundary "
+        f"condition and no limit of any kind; of its "
+        f"{total_checks} checks 23 read the two source documents (one "
+        f"existence test and 22 substring assertions), so a large part of the "
+        f"run is inventory rather than computation."
+    )
+    print("=" * 78)
     print(f"RESULT: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
     return 0 if FAIL_COUNT == 0 else 1

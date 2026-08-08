@@ -165,6 +165,87 @@ def part3_taste_flip_orbit_no_go() -> None:
     check("no nonempty proper coordinate subset is closed under all taste flips", not closed_subsets, f"closed={closed_subsets[:3]}")
 
 
+def execution_certificate() -> None:
+    """Print-only N5 execution certificate; touches no counter.
+
+    Recomputed from this runner's own deterministic finite algebra.  There
+    is no RNG, no optimizer and no grid anywhere in this file, so every
+    quantity below is an exact integer or an exactly representable norm.
+    """
+    generators = gammas()
+    ident8 = np.eye(8, dtype=complex)
+    full_error = 0.0
+    for i, gi in enumerate(generators):
+        for j, gj in enumerate(generators):
+            expected = (2.0 if i == j else 0.0) * ident8
+            full_error = max(
+                full_error,
+                float(np.linalg.norm(anticommutator(gi, gj) - expected)),
+            )
+
+    sizes: dict[int, int] = {}
+    total = 0
+    min_error = math.inf
+    n_closed = 0
+    for size in range(1, 8):
+        sizes[size] = 0
+        for subset in itertools.combinations(range(8), size):
+            total += 1
+            sizes[size] += 1
+            min_error = min(min_error, subset_clifford_error(subset, generators))
+            if subset_closed_under_flips(subset):
+                n_closed += 1
+
+    orbit = {0}
+    changed = True
+    while changed:
+        changed = False
+        for index in list(orbit):
+            for axis in range(3):
+                image = bit_flip(index, axis)
+                if image not in orbit:
+                    orbit.add(image)
+                    changed = True
+
+    section("N5 EXECUTION CERTIFICATE")
+    print(
+        f"per_element: matrix entries are resolved exactly and in both "
+        f"directions — on the full C^8 carrier every entry of "
+        f"{{Gamma_i, Gamma_j}} - 2 delta_ij I is an exact zero (max Frobenius "
+        f"error {full_error:.1f}), while the best of all coordinate "
+        f"compressions still leaves a Clifford error of exactly "
+        f"{min_error:.1f}; the five Part-0 firewall checks, by contrast, are "
+        f"note-substring assertions and resolve no matrix element whatsoever."
+    )
+    print(
+        f"per_site: checked and not executed — this runner builds no "
+        f"Hamiltonian, no hopping term, no lattice extent L and no site index "
+        f"at any point; it operates only inside the eight-dimensional taste "
+        f"carrier, so there is nothing for it to decide site by site."
+    )
+    print(
+        f"per_mode: checked and not executed — no Fourier transform, momentum "
+        f"grid or dispersion relation appears here, and the eight corner "
+        f"indices enter purely as tensor-factor bit labels with no momentum "
+        f"value ever attached, so no statement is made mode by mode."
+    )
+    print(
+        f"per_block: coordinate blocks are the whole content of this runner "
+        f"and they are exhausted, not sampled — all {total} nonempty proper "
+        f"corner subsets, distributed by size as {sizes}, are compressed and "
+        f"tested; none preserves Cl(3) at the 1e-10 threshold, exactly "
+        f"{n_closed} are closed under the three bit flips, and the flip orbit "
+        f"of corner 0 sweeps all {len(orbit)} corners."
+    )
+    print(
+        f"lattice_wide: checked and not executed — there is simply no lattice "
+        f"in this file to make a statement about, with no volume, boundary "
+        f"condition, spacing or limit of any kind; the no-go is asserted about "
+        f"a single eight-dimensional internal carrier, never about an extended "
+        f"lattice."
+    )
+
+
 def main() -> int:
     print("Three-generation BZ-corner rooting coordinate no-go")
     print(f"Claim: {CLAIM_ID}")
@@ -174,6 +255,7 @@ def main() -> int:
     part1_full_clifford_carrier()
     part2_coordinate_projection_no_go()
     part3_taste_flip_orbit_no_go()
+    execution_certificate()
 
     print("\n" + "=" * 88)
     print("SUMMARY")

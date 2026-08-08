@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py
-runner_sha256: 7a59118d0bcb5320f074da32db598d6211cc39e9a6ee782cc09965fc6d1494f2
+runner_sha256: 9a4f9866511a2c9f79051fa2f52e75d414963359708ad698f31beab5b9359e75
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 1.18
 status: ok
 ----- stdout -----
 [PASS] [A] note boundary contains: Claim type:** no_go
@@ -36,6 +36,13 @@ status: ok
 [PASS] [B] candidate misses target by witness-scale margin (gap=0.1644256831, gap/eps=542.7)
 [PASS] [B] uniform-pairing shortcut cannot close target (0.4291049969 < 0.5935306800)
   Perron eigenvalue: 3.5169423991
+
+=== N5 execution certificate ===
+per_element: element-level resolution is exact and integer or rational — the 64x64 recurrence operator J carries 322 nonzero entries taking 1 distinct value, confirmed live to be the single rational 1/6 (True), while the local and environment factors are strictly diagonal, so every off-diagonal element of those two matrices is exactly zero; the 12 note-boundary substring checks above resolve no matrix element whatsoever and are inventory only.
+per_site: the periodic L_s=2 cube carries 8 spatial sites and this runner resolves each of them by explicit enumeration — every site anchors exactly 3 distinct directed links in the plaquette list, giving the 24 directed links that the shortcut exponent counts.
+per_mode: SU(3) weight modes are resolved over the declared boxes, not sampled — rho is built on the 25-weight box 0 <= p, q <= 4 and the Perron solve on the 64-weight box 0 <= p, q <= 7, each Wilson character coefficient coming from a Bessel determinant truncated at |mode| <= 200 with beta = 6.0; mode equality rho(1,0) = rho(0,1) is asserted at abs tol 1e-12 and the two cached mode values at 5e-8 and 5e-9.
+per_block: block granularity is where this runner's whole shortcut lives and it closes exactly — the 48 cyclic index nodes are glued by 48 link-induced identifications into precisely 8 connected components, which fixes the uniform-pairing trace exponent at the exact integer -16 = 8 - 24.
+lattice_wide: this is a finite-N statement on the single L_s=2 periodic cube with 12 unique plaquettes and no thermodynamic limit taken anywhere — the candidate Perron value is pinned to the runner's declared 0.4291049969 within 5e-10, and its shortfall against the declared bridge-support target 0.5935306800 clears the runner's 500x threshold on the witness scale 3.03e-04 (True).
 
 SU(3) cube uniform-pairing shortcut no-go certificate: PASS
 PASS=25 FAIL=0

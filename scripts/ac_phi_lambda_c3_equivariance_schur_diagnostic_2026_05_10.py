@@ -171,7 +171,7 @@ def run_schur_check() -> None:
     check(
         "eigenvalues of numerical H match the circulant spectrum formula",
         eig_match,
-        detail=f"eigvals = {list(H_num_eigvals_set)}",
+        detail=f"eigvals = {sorted(H_num_eigvals_set, key=lambda e: float(e))}",
     )
 
     # 7. Counterfactual: a non-C_3-equivariant H (e.g., diag(1, 2, 3)) does

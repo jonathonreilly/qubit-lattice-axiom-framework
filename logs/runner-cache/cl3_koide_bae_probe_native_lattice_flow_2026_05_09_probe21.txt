@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py
-runner_sha256: 81f14e271c8a24a6191da5535c0df8af6d98c8e7ca57d4a59533134067d103b7
+runner_sha256: d0bba9f5ff9ed2bfed07801d37ade4e8d1679c91bf5b5dcbf7c37b734dca32ba
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ======================================================================
@@ -119,12 +119,6 @@ Probe 5 to drive |b|^2/a^2 AWAY from BAE.
 
 We cross-validate Probe 5's drift result here on a fresh integration.
 
-/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/a42ff97a-19d7-584b-a62e-978467346cf5/scratchpad/wt-w08/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:521: RuntimeWarning: overflow encountered in multiply
-  deigs = (1.0 / (16 * np.pi**2)) * (3 * np.abs(eigs)**2 * eigs - gauge_term * eigs)
-/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/a42ff97a-19d7-584b-a62e-978467346cf5/scratchpad/wt-w08/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:521: RuntimeWarning: invalid value encountered in multiply
-  deigs = (1.0 / (16 * np.pi**2)) * (3 * np.abs(eigs)**2 * eigs - gauge_term * eigs)
-/tmp/claude-0/-home-user-qubit-lattice-axiom-framework/a42ff97a-19d7-584b-a62e-978467346cf5/scratchpad/wt-w08/scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py:522: RuntimeWarning: invalid value encountered in multiply
-  new_eigs = eigs + dt * deigs
 
 6.1 SM-style RGE flow from BAE (with gauge interaction):
     UV ratio = 0.5000 (BAE)

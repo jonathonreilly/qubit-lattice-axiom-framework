@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py
-runner_sha256: 5bef94d3b4c5dbfb4ab3366c667e1b83201513cb43464453abf61356531ddb16
+runner_sha256: 75da3e061e0b81b23cb3341b9dfbe72ea54bf062466ec6505aa90261e15da4dd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 AC_phi_lambda preserved-C_3 structural foreclosure diagnostic
@@ -21,7 +21,7 @@ PASS: H commutes with U_C3 ([H, U_C3] = 0)
 PASS: <c_alpha|H|c_alpha> = a (constant over alpha) | diag = [a, a, a]
 PASS: a = Tr(H) / 3 (cyclic identity) | Tr(H)/3 = a
 PASS: numerical instance a=3/2, b=7/10 gives diag (3/2, 3/2, 3/2) | diag_num = [3/2, 3/2, 3/2]
-PASS: eigenvalues of numerical H match the circulant spectrum formula | eigvals = [29/10, 4/5]
+PASS: eigenvalues of numerical H match the circulant spectrum formula | eigvals = [4/5, 29/10]
 PASS: counterfactual: non-C_3-equivariant H distinguishes corners | break_diag = [1, 2, 3]
 PASS: counterfactual: non-C_3-equivariant H does NOT commute with U_C3
 

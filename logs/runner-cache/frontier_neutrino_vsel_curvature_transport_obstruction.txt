@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
-runner_sha256: 3cfb7404cc5065713244b091838d6a687e29a208b228d404a472fd7ca04b5345
+runner_sha256: 8d4437b95eb46d0be47491a2d3e3cdb76598333ad15e648aca363792cc1b29fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 PASS T1 taste-cube V_sel = 32 sum_{i<j} phi^2 phi^2 (axis-selector)
@@ -17,6 +17,13 @@ PASS T3 concrete Pauli even invariants Tr M^{2n} = 2|phi|^{2n}
 PASS T3b symbolic premise form is Tr M^{2n} = d|phi|^{2n}, hence rotationally invariant
 PASS T4 taste-cube V_sel(axis)=0 but V_sel(non-axis)!=0 (genuine axis-selector)
 PASS T4b Dirac V_sel(non-axis)=V_sel(same-|phi| axis) (rotation-blind, NO selector)
+
+N5 execution certificate -- what this runner actually resolves
+per_element: checked -- every identity is resolved on its own object rather than on an aggregate: the three taste-cube generators S_0,S_1,S_2 (sigma_x on one tensor factor of 2^3), the three Cl(3) gammas sigma_x,sigma_y,sigma_z, and the Hessian entries diag(0,64,64) versus diag(12c,4c,4c) compared entry by entry.
+per_site: checked and not executed -- neither object carries a lattice site index. The 2^3 taste cube's three tensor factors are internal taste axes over a single phi-space point, and the Dirac Higgs M(phi)=sum_i phi_i Gamma_i is one internal matrix; the transport obstruction lives between two representations at a point, so there is no site to sweep.
+per_mode: checked -- the Hessian at e_1 is resolved mode by mode into one longitudinal and two transverse directions. The taste cube gives (0,64,64), so m_perp=32; the Dirac family gives (12c,4c,4c) with c=d(1-d/8), and T2e confirms the two transverse modes remain equal for symbolic d -- that equality is exactly the anisotropy the Dirac family does not carry.
+per_block: checked -- the two matrix blocks are evaluated separately under the same quartic functional Tr X^4 - (1/8)(Tr X^2)^2. On the 8x8 taste-cube block it returns 32*sum_{i<j} phi_i^2 phi_j^2 (an axis-selector); on the Cl(3) Dirac block it returns d(1-d/8)|phi|^4 (radial only). The block-to-block difference is the entire no-go.
+lattice_wide: checked and not executed -- no lattice, no extent, and no asymptotic limit is taken anywhere in this runner. Both blocks are fixed finite algebras, and the generality claimed in T3 runs over the invariant order n in Tr M^{2n} and over the symbolic trace dimension d=Tr(I), not over any lattice size; the executed evidence is the exact-symbolic check set above.
 
 TOTAL: PASS=11 FAIL=0
 

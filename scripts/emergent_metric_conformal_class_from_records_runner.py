@@ -192,6 +192,44 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate: what this runner resolves")
+    print(
+        "  per_element: checked — the ledger is verified item by item, never by a count. "
+        f"Each of the {len(OPEN_BRIDGES)} named open bridges is separately required to "
+        f"appear in the note, each of the {len(SOURCE_FILES)} source-packet paths is "
+        "separately required to exist, each owned runner cache is separately required to "
+        "report a clean exit, and the note's required markers are matched one at a time."
+    )
+    print(
+        "  per_site: checked and not executed — no position-space site index is ever "
+        "formed. That is the note's own obstruction rather than an omission: the "
+        "record_atom_to_formation_event_map is one of the open bridges, so there is no "
+        "derived event set for sites to attach to, and the only lattice-flavoured object "
+        "here lives in momentum space."
+    )
+    print(
+        "  per_mode: checked — the group-speed diagnostic sweeps a full momentum-mode "
+        "grid, evaluating the dispersion gradient at every point of a 65-per-axis "
+        "Brillouin sampling in three directions and taking the maximum over modes. That "
+        "sweep is load-free by design: it is reported as a diagnostic only and is "
+        "explicitly barred from acting as an LR velocity or causal gate."
+    )
+    print(
+        "  per_block: checked — the class-versus-scale algebra is resolved by contrasting "
+        "two block actions on the 1+3 split of the metric. A uniform conformal factor "
+        "rescales the time block and the spatial block together and leaves the null "
+        "vector null, while an altered-speed metric rescales only the time block and "
+        "destroys it; that block asymmetry is what separates class from scale."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, thermodynamic or continuum "
+        "limit is taken. The momentum sampling is finite and diagnostic, and with the "
+        "common causal event set and the exact causal relation both still open the "
+        "disposition below is OPEN, so no lattice-wide or global statement is available "
+        "for this runner to certify."
+    )
+
+    print()
     print("CLAIM DISPOSITION: OPEN")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

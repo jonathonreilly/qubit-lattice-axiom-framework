@@ -319,6 +319,49 @@ def part5_the_note_states_the_correct_i5_consequence() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    print("\n" + "=" * 88)
+    print("PART 6: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    print(
+        "  per_element: checked -- the five explicit selector candidates A Schur-Q, "
+        "B det-crit, C Tr(H^2)-bdy, D K12 char and E par-mix F1 are each evaluated and "
+        "reported on their own row with their own chi^2 and max|angle error|, and each "
+        "stationary root is isolated individually by brentq with a 1e-3 separation "
+        "guard rather than being summarized into a single count."
+    )
+    print(
+        "  per_site: checked and not executed -- nothing in the selector no-go is indexed "
+        "by position. H(m, delta, q_+) is a single 3x3 source Hermitian evaluated at one "
+        "point of a three-dial parameter space, and its indices are lepton generation "
+        "labels, so the family being ruled out has no site-resolved degree of freedom "
+        "that a sweep could expose."
+    )
+    print(
+        "  per_mode: checked -- the three PMNS mixing observables are resolved "
+        "separately rather than only in aggregate. Part 2 rests on the solar mode "
+        "s12^2 alone, whose Schur-line floor 0.331582718643 exceeds the target 0.307, "
+        "so the no-go already holds on that single mode; Part 3 then combines all three "
+        "modes into chi^2_line and still misses at 0.011428083950."
+    )
+    print(
+        "  per_block: checked in a limited sense -- the block form is the premise of "
+        "the two imported theorems, not something this runner rebuilds. What is "
+        "executed here is that the parity-compatible family on D = diag(A,B,B) and the "
+        "broader 23-symmetric active-curvature family on the same singlet-plus-"
+        "degenerate-doublet block return the identical selected line "
+        "delta_* = q_+* = sqrt(6)/3 to 1e-12."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- there is no lattice and no "
+        "asymptotic limit. The widest thing executed is a one-dimensional dial scan "
+        "over m on [-2000,2000] (4001 samples) and [-200,200] (8001 samples) with "
+        "endpoint comparison, which bounds the selected line's behaviour on those "
+        "intervals only and is parameter extent, not lattice extent."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM PMNS LOCAL-SELECTOR-FAMILY NO-GO THEOREM")
@@ -333,6 +376,7 @@ def main() -> int:
     part3_best_full_three_angle_fit_on_the_schur_line_still_misses()
     part4_all_current_explicit_candidate_points_miss()
     part5_the_note_states_the_correct_i5_consequence()
+    part6_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

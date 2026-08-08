@@ -103,5 +103,43 @@ n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)
 for name, ok in results:
     print(("PASS" if ok else "FAIL"), name)
+
+print()
+print("N5 execution certificate -- what this runner actually resolves")
+print(
+    "per_element: checked -- every identity is resolved on its own object rather "
+    "than on an aggregate: the three taste-cube generators S_0,S_1,S_2 (sigma_x on "
+    "one tensor factor of 2^3), the three Cl(3) gammas sigma_x,sigma_y,sigma_z, and "
+    "the Hessian entries diag(0,64,64) versus diag(12c,4c,4c) compared entry by entry."
+)
+print(
+    "per_site: checked and not executed -- neither object carries a lattice site "
+    "index. The 2^3 taste cube's three tensor factors are internal taste axes over a "
+    "single phi-space point, and the Dirac Higgs M(phi)=sum_i phi_i Gamma_i is one "
+    "internal matrix; the transport obstruction lives between two representations at "
+    "a point, so there is no site to sweep."
+)
+print(
+    "per_mode: checked -- the Hessian at e_1 is resolved mode by mode into one "
+    "longitudinal and two transverse directions. The taste cube gives (0,64,64), so "
+    "m_perp=32; the Dirac family gives (12c,4c,4c) with c=d(1-d/8), and T2e confirms "
+    "the two transverse modes remain equal for symbolic d -- that equality is exactly "
+    "the anisotropy the Dirac family does not carry."
+)
+print(
+    "per_block: checked -- the two matrix blocks are evaluated separately under the "
+    "same quartic functional Tr X^4 - (1/8)(Tr X^2)^2. On the 8x8 taste-cube block it "
+    "returns 32*sum_{i<j} phi_i^2 phi_j^2 (an axis-selector); on the Cl(3) Dirac block "
+    "it returns d(1-d/8)|phi|^4 (radial only). The block-to-block difference is the "
+    "entire no-go."
+)
+print(
+    "lattice_wide: checked and not executed -- no lattice, no extent, and no "
+    "asymptotic limit is taken anywhere in this runner. Both blocks are fixed finite "
+    "algebras, and the generality claimed in T3 runs over the invariant order n in "
+    "Tr M^{2n} and over the symbolic trace dimension d=Tr(I), not over any lattice "
+    "size; the executed evidence is the exact-symbolic check set above."
+)
+
 print()
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

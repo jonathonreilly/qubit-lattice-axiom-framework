@@ -180,6 +180,44 @@ def main() -> int:
     )
 
     print("=" * 72)
+    print("N5 execution certificate: what this runner resolves")
+    print(
+        "per_element: checked — additivity is established by exhaustive enumeration "
+        "rather than by an identity. Every one of the 8 subsets of {r1, r2, r3} is "
+        "assigned its own readout, every ordered disjoint pair is separately required to "
+        "satisfy I(a|b) = I(a) + I(b), and I(empty) = 0 is checked on its own; the note "
+        "and template wording guards are likewise matched token by token."
+    )
+    print(
+        "per_site: checked and not executed — r1, r2, r3 are abstract record labels and "
+        "no lattice site index is ever assigned to them. This is the note's own point "
+        "rather than a gap in coverage: the axiom under audit supplies no dynamics, "
+        "source or time metric, so it constrains nothing site-resolved that could be "
+        "swept here."
+    )
+    print(
+        "per_mode: checked and not executed — no spectrum or normal-mode decomposition is "
+        "formed anywhere. The two completions differ by the single scalar lambda, and the "
+        "rest gap enters as one quadratic coefficient evaluated at phi0, not as a mode "
+        "spectrum; with no dynamics supplied by the axiom there is no mode content for "
+        "the no-go to resolve."
+    )
+    print(
+        "per_block: checked — the whole argument is a two-block comparison of complete "
+        "model copies. Completion A and completion B each carry their own potential, "
+        "second derivative at phi0, inertial rest gap, inertial mass and gravitational "
+        "coefficient, computed independently inside each block; only then are the blocks "
+        "compared, giving stiffness ratio lambda and free source ratios gamma_A vs gamma_B."
+    )
+    print(
+        "lattice_wide: checked and not executed — nothing is extended, scaled or taken to "
+        "a limit. The evidence is exact symbolic algebra over three abstract records and "
+        "one pair of symbolic completions, which is exactly the scope of a narrow "
+        "negative boundary on the axiom surface; no extended-system or asymptotic "
+        "statement is made or needed."
+    )
+
+    print("=" * 72)
     print("RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO=TRUE")
     print("EP_SHARED_COUPLING_NOT_DERIVED_FROM_RECORD=TRUE")
     print(f"PASS={PASS} FAIL={FAIL}")

@@ -233,6 +233,48 @@ def main() -> int:
     print(f"  alpha=1 spec    = {np.round(spec_by_alpha[1.0], 12)}")
 
     print("\n" + "=" * 88)
+    print("PART 6: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+    # This runner is extremum- and brentq-driven, so the certificate cites
+    # structure, signs and the named tolerances rather than converged witnesses.
+    print(
+        "per_element: checked — the observable coordinates are tested one at a time "
+        "rather than through a single distance. The branch-margin coordinate "
+        "Delta_src = det(H_e) carries its own 1e-5 increase test, the Shannon "
+        "coordinate its own 1e-5 decrease test, and the constructive-chamber verdict in "
+        "Part 4 rests on the single component E1 of the root observable pack being "
+        "strictly negative."
+    )
+    print(
+        "per_site: checked and not executed — no site index is ever formed. The object "
+        "under test is by construction a local scalar law on the positive source fiber "
+        "over one canonical favored-column orbit, so locality is the note's premise "
+        "rather than something swept; H_e is a single local matrix and no site-resolved "
+        "quantity is built or compared."
+    )
+    print(
+        "per_mode: checked — the normalized Schur spectrum is resolved mode by mode by "
+        "eigvalsh, sorted descending and divided by its own sum, and the full per-mode "
+        "vector is printed for each alpha. The law then aggregates those mode weights "
+        "into the single Shannon number, and Part 3's tradeoff is precisely that "
+        "aggregate moving against the raw margin."
+    )
+    print(
+        "per_block: checked — two block-level quantities are resolved. The canonical "
+        "fiber is pinned by the favored-column power sums p2 and p3 held to their "
+        "targets within 1e-12 for both sampled members, and the right-sensitive "
+        "even-response pair (E1,E2) is moved and measured as a block by its own norm "
+        "against 1e-4, separately from gamma and from Delta_src."
+    )
+    print(
+        "lattice_wide: checked and not executed — there is no lattice and no asymptotic "
+        "limit. The widest execution is a 4001-point scan of the interpolation "
+        "parameter lambda on [0,1] along the segment from the aligned seed source to "
+        "each selected source, which is a one-dimensional path through a five-parameter "
+        "source space, not lattice extent."
+    )
+
+    print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1

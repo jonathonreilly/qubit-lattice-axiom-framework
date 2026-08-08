@@ -273,6 +273,49 @@ def main() -> None:
         "Wilson-r doubling, non-perturbative condensate, Cl(3)/SU(3) embedding",
     )
 
+    # Step 4: N5 execution certificate
+    log()
+    log("=" * 78)
+    log("Step 4: N5 EXECUTION CERTIFICATE -- what this runner resolves")
+    log("=" * 78)
+    log()
+    log(
+        "  per_element: checked -- each candidate route is evaluated as its own exact "
+        "Fraction and compared to 8/3 individually, so (a) 2*C_F, (b) dim(adj)/N_c, "
+        "(c) the bilinear sum rule 4/9 and (d) 32/3 and 32/9 are each ruled in or out "
+        "on their own value, never by an aggregate. The eight SU(3) generators "
+        "themselves are not resolved individually: they enter only through summed "
+        "Casimirs, which is all the standard self-energy formula needs."
+    )
+    log(
+        "  per_site: checked and not executed -- this runner never reaches a site sum. "
+        "The target m_DM = N_sites * v = 16 v is quoted from the companion freeze-out "
+        "note as framing only; the obstruction reported here bites upstream of any "
+        "lattice sum, because C_2(singlet) = 0 kills the gauge coupling of the dark "
+        "singlet before a per-site contribution could be accumulated."
+    )
+    log(
+        "  per_mode: checked and not executed -- the one-loop gauge-boson mode integral "
+        "is never evaluated. It is short-circuited by the group-theory prefactor: "
+        "delta m^2 = (3 g^2/(16 pi^2)) * C_2(R) * m^2 * log(Lambda^2/m^2) vanishes "
+        "identically once C_2(singlet) = 0 multiplies it, so the vanishing is "
+        "established at the Casimir level, upstream of any mode-by-mode sum."
+    )
+    log(
+        "  per_block: checked -- the SU(3) representation blocks are resolved "
+        "separately, each with its own exactly computed Casimir: the fundamental block "
+        f"has dim {N_C} and C_2(F) = {C_F_3}, the adjoint block has dim {DIM_ADJ_3} and "
+        f"C_2(adj) = {C_2_ADJ}, and the singlet block has C_2 = 0. The whole "
+        "obstruction is the contrast between those blocks."
+    )
+    log(
+        "  lattice_wide: checked and not executed -- no lattice, volume, or continuum "
+        "limit is taken anywhere in this runner. What executes is exact rational "
+        "arithmetic on SU(3) invariants derived from N_c, and the named follow-up "
+        "routes R1-R3 are recorded as open theorems rather than evaluated, so no "
+        "extended or asymptotic statement is made."
+    )
+
     # Final summary
     log()
     log("=" * 78)

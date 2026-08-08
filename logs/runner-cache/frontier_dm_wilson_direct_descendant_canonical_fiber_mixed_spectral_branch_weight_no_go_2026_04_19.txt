@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_mixed_spectral_branch_weight_no_go_2026_04_19.py
-runner_sha256: f3cdbb318246d87e05e950352982ebd7038fcfa921c38f0319748fc1b8402a6c
+runner_sha256: 4420cc28439e9b55ad098b3ca78b05e82c04c6ce80a3e763e435810ea4ade7b6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 41.07
+elapsed_sec: 23.16
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,26 +13,26 @@ DM WILSON DIRECT-DESCENDANT CANONICAL-FIBER MIXED SPECTRAL/BRANCH-WEIGHT NO-GO
 ========================================================================================
 PART 1: THE MIXED FAMILY LIVES ON THE SAME EXACT POSITIVE CANONICAL FIBER
 ========================================================================================
-  [PASS] Both sampled mixed-law points are exact positive sources on the canonical favored-column fiber  (alpha=0 pack=[0.39432401 0.00143109 0.00184739 0.0266158 ], alpha=1 pack=[0.39490679 0.0004979  0.00192101 0.02671075])
+  [PASS] Both sampled mixed-law points are exact positive sources on the canonical favored-column fiber  (alpha=0 pack=[0.394212 0.000325 0.000476 0.026684], alpha=1 pack=[0.394999 0.000024 0.000231 0.026754])
   [PASS] So the mixed family F_alpha = Shannon(normalized spectrum) + alpha log Delta_src is a same-carrier law family on L_e / H_e  (the branch-discriminant and normalized-spectrum factors coexist on the exact local source fiber)
 
 ========================================================================================
 PART 2: THE WEIGHT ALPHA IS LOAD-BEARING
 ========================================================================================
-  [PASS] Alpha = 0 and alpha = 1 select distinct exact positive-fiber sources  ((source sep, pack sep)=(0.016159109627, 0.001106759834))
-  [PASS] Each sampled law prefers its own selected point over the point chosen by the other law  (F0(S0,S1)=(0.797755102040,0.797625131681), F1(S0,S1)=(-2.828495236161,-2.825063939073))
+  [PASS] Alpha = 0 and alpha = 1 select distinct exact positive-fiber sources  ((source sep, pack sep)=(0.017945765793, 0.000880212039))
+  [PASS] Each sampled law prefers its own selected point over the point chosen by the other law  (F0(S0,S1)=(0.798000492593,0.797726103625), F1(S0,S1)=(-2.825685975928,-2.823332369599))
 
 ========================================================================================
 PART 3: THE FAMILY TRADES NORMALIZED SPECTRAL ISOTROPY AGAINST RAW BRANCH MARGIN
 ========================================================================================
-  [PASS] Turning on alpha raises the raw branch-discriminant margin Delta_src  (Delta(S0,S1)=(0.026615797774,0.026710752728))
-  [PASS] The same turn simultaneously lowers the normalized spectral-isotropy score  (H(S0,S1)=(0.797755102040,0.797625131681))
-  [PASS] The right-sensitive even-response channels move materially under the alpha reweighting  ((E1,E2)_alpha=0=[0.00143109 0.00184739], (E1,E2)_alpha=1=[0.0004979  0.00192101])
+  [PASS] Turning on alpha raises the raw branch-discriminant margin Delta_src  (Delta(S0,S1)=(0.026684124764,0.026754342745))
+  [PASS] The same turn simultaneously lowers the normalized spectral-isotropy score  (H(S0,S1)=(0.798000492593,0.797726103625))
+  [PASS] The right-sensitive even-response channels move materially under the alpha reweighting  ((E1,E2)_alpha=0=[0.000325 0.000476], (E1,E2)_alpha=1=[0.000024 0.000231])
 
 ========================================================================================
 PART 4: THIS NATURAL MIXED FAMILY STILL DOES NOT RECOVER THE CONSTRUCTIVE ROOT
 ========================================================================================
-  [PASS] For both sampled alphas, the aligned-seed exact eta_1 = 1 crossing remains unique but leaves the constructive chamber because E1 < 0  (alpha=0: lambda=0.857349816848, root pack=[ 1.          0.34109294 -0.01679389  0.03008909  0.02972   ] | alpha=1: lambda=0.856566183642, root pack=[ 1.          0.34126105 -0.01771997  0.03145404  0.02981986])
+  [PASS] For both sampled alphas, the aligned-seed exact eta_1 = 1 crossing remains unique but leaves the constructive chamber because E1 < 0  (alpha=0: lambda=0.857168273739, root pack=[ 1.        0.340871 -0.017737  0.029036  0.029777] | alpha=1: lambda=0.856442175541, root pack=[ 1.        0.341341 -0.018158  0.030313  0.029854])
 
 ========================================================================================
 PART 5: BOTTOM LINE
@@ -40,12 +40,21 @@ PART 5: BOTTOM LINE
   [PASS] The current branch therefore does not yet fix the weighting between normalized spectral isotropy and raw branch margin on the canonical source fiber  (alpha remains a real free selector coefficient in a natural same-carrier law family)
   [PASS] So the sharp remaining DM source-fiber object is no longer a vague microscopic law, but the unique mixed spectral/right-sensitive weighting theorem, or a deeper bridge that replaces it  (pure Shannon and the alpha-weighted branch-margin family are now both explicit and runner-tested)
 
-  alpha=0 source5 = [0.68897954 0.63297204 0.11110204 0.23146031 1.43769822]
-  alpha=0 pack4   = [0.39432401 0.00143109 0.00184739 0.0266158 ]
-  alpha=0 spec    = [0.6324459  0.32076736 0.04678674]
-  alpha=1 source5 = [0.68429724 0.63699771 0.11889667 0.21877002 1.43660864]
-  alpha=1 pack4   = [0.39490679 0.0004979  0.00192101 0.02671075]
-  alpha=1 spec    = [0.63302239 0.32005445 0.04692317]
+  alpha=0 source5 = [0.687782 0.633265 0.111723 0.229893 1.436355]
+  alpha=0 pack4   = [0.394212 0.000325 0.000476 0.026684]
+  alpha=0 spec    = [0.632539 0.320514 0.046947]
+  alpha=1 source5 = [0.682629 0.638076 0.120318 0.215819 1.436997]
+  alpha=1 pack4   = [0.394999 0.000024 0.000231 0.026754]
+  alpha=1 spec    = [0.632999 0.320034 0.046967]
+
+========================================================================================
+PART 6: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
+========================================================================================
+per_element: checked — the observable coordinates are tested one at a time rather than through a single distance. The branch-margin coordinate Delta_src = det(H_e) carries its own 1e-5 increase test, the Shannon coordinate its own 1e-5 decrease test, and the constructive-chamber verdict in Part 4 rests on the single component E1 of the root observable pack being strictly negative.
+per_site: checked and not executed — no site index is ever formed. The object under test is by construction a local scalar law on the positive source fiber over one canonical favored-column orbit, so locality is the note's premise rather than something swept; H_e is a single local matrix and no site-resolved quantity is built or compared.
+per_mode: checked — the normalized Schur spectrum is resolved mode by mode by eigvalsh, sorted descending and divided by its own sum, and the full per-mode vector is printed for each alpha. The law then aggregates those mode weights into the single Shannon number, and Part 3's tradeoff is precisely that aggregate moving against the raw margin.
+per_block: checked — two block-level quantities are resolved. The canonical fiber is pinned by the favored-column power sums p2 and p3 held to their targets within 1e-12 for both sampled members, and the right-sensitive even-response pair (E1,E2) is moved and measured as a block by its own norm against 1e-4, separately from gamma and from Delta_src.
+lattice_wide: checked and not executed — there is no lattice and no asymptotic limit. The widest execution is a 4001-point scan of the interpolation parameter lambda on [0,1] along the segment from the aligned seed source to each selected source, which is a one-dimensional path through a five-parameter source space, not lattice extent.
 
 ========================================================================================
 SUMMARY: PASS=10 FAIL=0

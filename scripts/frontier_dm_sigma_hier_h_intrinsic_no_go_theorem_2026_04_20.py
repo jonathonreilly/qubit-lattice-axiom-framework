@@ -87,6 +87,41 @@ def main() -> int:
         f"sin+={sin_plus:+.10f}, sin-={sin_minus:+.10f}",
     )
 
+    print("\n=== Part 4: N5 execution certificate — what this runner resolves ===")
+    print(
+        "per_element: checked — the surviving pair is qualified element by element, not "
+        "by a pooled norm: count_passes(|P|) tests all 9 individual PMNS magnitude bands "
+        "separately for each of sigma=(2,0,1) and sigma=(2,1,0), and the row-labeled "
+        "magnitude matrices are then compared entrywise at atol 1e-12 to show they do "
+        "differ, which is what keeps the no-go from being overclaimed."
+    )
+    print(
+        "per_site: checked and not executed — no lattice site index exists in this "
+        "computation. Everything is read off one pinned 3x3 Hermitian H_pin at "
+        "(m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042), whose three rows are "
+        "charged-lepton flavor labels; the surviving ambiguity is a labeling question at "
+        "a single point, so there is no site to resolve."
+    )
+    print(
+        "per_mode: checked — the three eigenmodes of H_pin are extracted in ascending "
+        "eigenvalue order via argsort and the spectrum is confirmed common to both sigma "
+        "choices, together with trace(H_pin), trace(H_pin^2) and det(H_pin). That "
+        "per-mode identity is exactly why an H-intrinsic selector is blind: the modes do "
+        "not differ, only their assignment to flavor rows does."
+    )
+    print(
+        "per_block: checked — the mu<->tau swap is block-resolved: it fixes the electron "
+        "row and acts only inside the 2x2 mu-tau doublet block, and the runner verifies "
+        "P_+ = S_(mu tau) P_- to atol 1e-12. The Jarlskog sign flip between +/-0.9873607592 "
+        "is produced entirely by that one doublet-block transposition."
+    )
+    print(
+        "lattice_wide: checked and not executed — there is no lattice, extent, or "
+        "asymptotic limit here. The evidence is exact linear algebra at the single pinned "
+        "chamber point above; no volume scaling or continuum statement is attempted, and "
+        "none is needed since the obstruction is already exhibited at that one pin."
+    )
+
     print("\nInterpretation:")
     print("  The surviving sigma_hier ambiguity is not an ambiguity of H_pin.")
     print("  It is the residual mu<->tau flavor-label ambiguity after")

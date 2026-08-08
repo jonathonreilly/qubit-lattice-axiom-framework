@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py
-runner_sha256: 19da90afd27907579dea608b2b20cbb8c1a322c8c9774fe4b581e4e89654fcf2
+runner_sha256: 46420baa5e981dc38df1d569a87c800a435b394797c4550fa4761b6e11e3a9a6
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 21.41
+elapsed_sec: 36.34
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -36,18 +36,18 @@ PART 3: GEODESIC LANGUAGE DOES NOT MAKE THE CURRENT SEGMENT UNIQUE
 PART 4: THE OBVIOUS SEED-BASED ETA_1 GRADIENT FLOW IS METRIC-DEPENDENT
 ========================================================================================
   [PASS] The Euclidean and x1-heavy eta_1 gradient flows both hit exact eta_1 = 1 roots  (euclid: eta_1=1.000000000000, x1-heavy: eta_1=1.000000000000)
-  [PASS] Those gradient-flow roots are distinct, so the flow law depends on the chosen metric  (dist=0.077857)
-  [PASS] Neither obvious eta_1 gradient flow lands on the current constructive path-selected root  (euclid: dist_to_P=1.624077, x1-heavy: dist_to_P=1.649936)
-  [PASS] Neither obvious eta_1 gradient flow root is constructive positive  (euclid: pack=[ 1.        0.       -0.299518  0.013576  0.037176]; x1-heavy: pack=[ 1.        0.       -0.341405 -0.103937  0.036317])
+  [PASS] Those gradient-flow roots are distinct, so the flow law depends on the chosen metric  (dist=0.077834)
+  [PASS] Neither obvious eta_1 gradient flow lands on the current constructive path-selected root  (euclid: dist_to_P=1.624072, x1-heavy: dist_to_P=1.649935)
+  [PASS] Neither obvious eta_1 gradient flow root is constructive positive  (euclid: pack=[ 1.        0.       -0.299487  0.013649  0.037178]; x1-heavy: pack=[ 1.        0.       -0.341397 -0.103936  0.036317])
 
 ========================================================================================
 PART 5: NATURAL CARRIER PULLBACK GEOMETRIES STILL DO NOT RECOVER THE CURRENT ROOT
 ========================================================================================
   [PASS] The canonical Y- and H-carriers induce positive-definite pullback metrics at the aligned seed  (H-pullback: min eig=5.968896e-02; Y-pullback: min eig=9.404444e-02)
   [PASS] The H- and Y-pullback eta_1 flows both hit exact eta_1 = 1 roots  (H-pullback: eta_1=1.000000000000, Y-pullback: eta_1=1.000000000000)
-  [PASS] Those pullback-flow roots are distinct, so even natural carrier geometries do not produce one canonical eta_1 flow  (dist=0.021071)
-  [PASS] Neither pullback-flow root lands on the current constructive path-selected point  (H-pullback: dist_to_P=1.594876, Y-pullback: dist_to_P=1.594849)
-  [PASS] Neither pullback-flow root is constructive positive  (H-pullback: pack=[ 1.        0.       -0.236996  0.2245    0.038069]; Y-pullback: pack=[ 1.        0.       -0.244058  0.208244  0.037635])
+  [PASS] Those pullback-flow roots are distinct, so even natural carrier geometries do not produce one canonical eta_1 flow  (dist=0.020661)
+  [PASS] Neither pullback-flow root lands on the current constructive path-selected point  (H-pullback: dist_to_P=1.594873, Y-pullback: dist_to_P=1.594871)
+  [PASS] Neither pullback-flow root is constructive positive  (H-pullback: pack=[ 1.        0.       -0.237026  0.224533  0.038068]; Y-pullback: pack=[ 1.        0.       -0.243957  0.208375  0.037645])
 
 ========================================================================================
 PART 6: THE SOURCE-SURFACE SELECTOR PACKET DOES NOT DESCEND TO THIS LANE
@@ -67,10 +67,19 @@ PART 7: BOTTOM LINE
   competing root A+ = [1.014977 0.492209 0.653283 0.119128 1.412372]
   competing root B+ = [0.860633 0.327351 0.713328 0.104582 1.590138]
   competing root C+ = [1.00713  0.301884 0.795716 0.029973 2.193449]
-  flow root   euclid = [0.586277 0.418078 0.265861 0.209304 0.      ]
-  flow root x1-heavy = [0.569279 0.422267 0.195765 0.238317 0.      ]
-  pullback root H-pullback = [0.651101 0.431933 0.307134 0.186394 0.      ]
-  pullback root Y-pullback = [0.639532 0.421837 0.321049 0.182577 0.      ]
+  flow root   euclid = [0.586318 0.418098 0.265834 0.209317 0.      ]
+  flow root x1-heavy = [0.569279 0.422268 0.195768 0.238319 0.      ]
+  pullback root H-pullback = [0.651108 0.43193  0.307133 0.186365 0.      ]
+  pullback root Y-pullback = [0.639706 0.422019 0.32074  0.182686 0.      ]
+
+========================================================================================
+PART 8: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
+========================================================================================
+  per_element: checked — constructive_positive() never accepts a root on a pooled score. It gates each observable coordinate on its own: |eta_1 - 1| below 1e-10, and then gamma, E1, E2 and Delta_src each required strictly positive individually. The same five coordinates are re-read one by one at every competing, flow and pullback root.
+  per_site: checked and not executed — no lattice site index is constructed anywhere. The whole audit lives in the five-component source chart (x0, x1, y0, y1, delta) on the canonical carrier, and the open question is which path through that chart is selected, not what any site contributes.
+  per_mode: checked — singular and eigen modes are resolved individually. local_rank_data() counts the observable Jacobian's singular values one at a time against 1e-8 and reports the smallest, and solve_metric() eigendecomposes each flow metric and floors its eigenvalues mode by mode at 1e-8 before inverting, so every metric direction is handled separately.
+  per_block: checked — local_rank_data() performs an explicit block split of the observable Jacobian. The eta_1 constraint row jac[0:1,:] defines the tangent block through null_space, and the remaining response rows jac[1:,:] are restricted onto that block and re-ranked on their own, so transverse rank is certified separately from the constraint direction.
+  lattice_wide: checked and not executed — nothing here has extent and no asymptotic limit is taken. The longest executions are a gradient flow capped at 8000 steps of size 2e-3 with a 60-step bisection onto eta_1 = 1, and brentq on the segment parameter lambda over [0,1]; these are trajectories in a five-parameter chart, not a lattice sweep.
 
 ========================================================================================
 SUMMARY: PASS=25 FAIL=0

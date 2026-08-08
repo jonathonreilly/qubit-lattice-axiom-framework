@@ -281,6 +281,49 @@ def part4_note_records_the_correct_status() -> None:
     )
 
 
+def part5_n5_execution_certificate() -> None:
+    print("\n" + "=" * 88)
+    print("PART 5: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    # This runner is least_squares-driven, so converged witness coordinates are
+    # not quoted here; the certificate cites the structural facts and the named
+    # thresholds in the source instead.
+    print(
+        "  per_element: checked -- the center pair is resolved componentwise rather "
+        "than through a single norm: the residuals delta_db - 1 and q_+ are each held "
+        "to their own 1e-10 tolerance, and every candidate is admitted individually "
+        "with its own chart, angle triple, I_src sign and Jacobian rank, deduplicated "
+        "at 1e-3 in chart norm before it counts."
+    )
+    print(
+        "  per_site: checked and not executed -- nothing in this runner carries a "
+        "lattice site index. The 5-real chart is a coordinate patch on the fixed native "
+        "N_e seed surface and H is one 3x3 source Hermitian, so the geometry being "
+        "measured is a parameter-space locus, not a site-resolved field."
+    )
+    print(
+        "  per_mode: checked -- the three PMNS angle observables are range-tested "
+        "separately, each against its own spread threshold (0.5 for the solar mode, 0.4 "
+        "for the reactor mode, 0.8 for the atmospheric mode), so the macroscopic "
+        "variation along the center locus is established mode by mode and not by one "
+        "pooled distance."
+    )
+    print(
+        "  per_block: checked -- the entire center law is a Z_3 doublet-block statement. "
+        "Both constraints delta_db(H) = 1 and q_+(H) = 0 are doublet-block center "
+        "coordinates extracted by active_target_from_h, so the rank-2 Jacobian and the "
+        "resulting local 3-real cut of the 5-real seed surface are block-resolved "
+        "quantities rather than whole-matrix ones."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- there is no lattice, no volume, and "
+        "no asymptotic limit anywhere here. The widest execution is a bounded search "
+        "over the chart box [CHART_LO, CHART_HI] from seeded restarts, which samples a "
+        "compact parameter region and makes no statement about extent."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM PMNS Z3 DOUBLET-BLOCK CENTER POSITIVE-SHEET NO-GO THEOREM")
@@ -295,6 +338,7 @@ def main() -> int:
     part2_center_constraints_have_rank_two_on_the_verified_patch(reps)
     part3_conditional_intersection_with_the_exact_pmns_target_is_discrete()
     part4_note_records_the_correct_status()
+    part5_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

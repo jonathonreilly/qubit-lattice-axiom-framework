@@ -110,3 +110,52 @@ print(
     "unless a separate retained derivation supplies it. This is not a universal no-go against\n"
     "NCG or two-factor models; it prunes the flavor-blind route only."
 )
+
+# N5 execution certificate (print-only; adds no check and no verdict)
+print()
+print("==============================================================================")
+print("N5 EXECUTION CERTIFICATE")
+print("==============================================================================")
+print(
+    "  per_element: thin but real, and it is computed rather than asserted - "
+    "the Frobenius split is obtained by actually forming M_singlet = a*eye(3) "
+    "and M_doublet = b*C + conj(b)*C^2 and taking trace(M.H * M) in sympy, "
+    "which returns the exact closed forms 3*a^2 and 6*(bre^2 + bim^2), i.e. "
+    "three diagonal entries of modulus a and six off-diagonal entries of "
+    "modulus |b|; the one indexed lookup in the file, W[0,0], serves only to "
+    "build the scalarity comparison W - W[0,0]*eye(3)."
+)
+print(
+    "  per_site: checked and not executed - none of the three generation slots "
+    "is ever addressed on its own. Every quantity computed here is a rank, a "
+    "trace, or a full-matrix simplify to the zero matrix, and the two "
+    "projectors are used as indivisible objects throughout, so nothing in the "
+    "argument would change if the slots were relabelled arbitrarily."
+)
+print(
+    "  per_mode: checked and not executed - the extension operations the whole "
+    "pruning rests on act on isotype projectors wholesale and never reach a "
+    "character. kronecker_product(P, eye(n)) for n = 1 through 6, sp.diag of "
+    "two and three copies, and the KO doubling against eye(2) all multiply a "
+    "projector by an identity, C is multiplied but never diagonalized, and the "
+    "two nontrivial cube roots of unity appear nowhere in the file."
+)
+print(
+    "  per_block: this is the only granularity carrying weight, and it carries "
+    "it by exact integer ranks - P_plus and P_doublet are checked to have rank "
+    "1 and rank 2, then the flavor-blind extensions are shown to scale that "
+    "pair rigidly to (n, 2n) for every n in 1..6, to (copies, 2*copies) for two "
+    "and three summands, and to (2, 4) under the real-structure doubling, so "
+    "the 1:2 block ratio survives every flavor-blind factor tested. The "
+    "obstruction is a clash of two granularities: balancing per real dimension "
+    "yields r = 1 while balancing per block yields r = 1/2, and only the "
+    "isotype-distinguishing W = P_plus + (1/2)*P_doublet, verified to commute "
+    "with C yet not be a multiple of the identity, converts one into the other."
+)
+print(
+    "  lattice_wide: checked and not executed - there is no substrate here at "
+    "all, only fixed matrices over C^3 and small tensor extensions of them, and "
+    "no limit or extent of any kind. The runner's closing paragraph draws the "
+    "same boundary itself, stating that this is not a universal no-go against "
+    "NCG or two-factor models and prunes the flavor-blind route only."
+)

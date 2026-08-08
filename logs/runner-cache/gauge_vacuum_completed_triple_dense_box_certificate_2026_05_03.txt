@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py
-runner_sha256: cf24d95f392b813b2f383034c4656a20707358b2d697498770e8e18c4dd5e3f1
+runner_sha256: e488939e31f417d1c5290a0f1c51a7cc158f58cf4b490d73cf67ad31a750565a
 input_fingerprint_sha256: 7555f605bb71ecce49f8d5023ea3468803f427dfec98f21ae9535a7be9a3bb05
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.25
+elapsed_sec: 9.55
 status: ok
 ----- stdout -----
 ================================================================================
@@ -22,7 +22,7 @@ status: ok
 --- Build recurrence-matrix infrastructure ---
 
 --- Dense 6x6x5x8 = 1440 grid sweep ---
-  swept 1440 grid points in 0.3 s
+  swept 1440 grid points in 0.2 s
   minimum runner-evaluated gap = 7.791551199075e-03
   median gap                  = 2.039034e-01
   max gap                     = 2.856130e-01
@@ -49,6 +49,13 @@ status: ok
      unsampled continuous-family statements remain outside this claim.
    - The finite numerical result is the exhaustive runner predicate above,
      including its explicit threshold and optimal-scalar projection check.
+
+ N5 execution certificate (print-only; adds no check)
+per_element: partially executed -- completed_sector_data supplies the three entries of Z_min and the runner checks all three against the listed target by taking their maximum absolute drift, but the no-go predicate is the Euclidean norm of the whole fitted three-vector; it does not prove a separate nonzero residual for each target entry.
+per_site: checked and not executed -- this wrapper constructs no spatial site, link, plaquette, field amplitude, or position-space sum. Its four axes are transfer-family parameters, not lattice coordinates, and every spatial object arrives already reduced through imported helpers.
+per_mode: partially executed as finite representation bookkeeping only -- build_recurrence_matrix enumerates the retained SU(3) weight basis and gap_at acts on the resulting matrices, but the wrapper contracts each run to one fitted three-vector gap and asserts no mode-by-mode exclusion.
+per_block: checked and not executed -- neither the 4D Cartesian parameter grid nor the three-component target is a decomposition into physical operator blocks, and the runner performs no blockwise no-go test; its optimal-scalar projection and threshold predicate are whole-vector tests.
+lattice_wide: checked and not executed in the canonical lattice sense -- the only exhaustive object is the finite 1440-point parameter grid, whose every float64 gap is tested against 1e-6. No lattice volume is varied, no continuum or thermodynamic limit is taken, and unsampled continuous-parameter points are explicitly outside the claim.
 
 ================================================================================
  SUMMARY: PASS=6, FAIL=0

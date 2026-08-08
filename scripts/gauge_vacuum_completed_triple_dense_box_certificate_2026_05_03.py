@@ -108,6 +108,44 @@ def linspace(lo: float, hi: float, n: int) -> list[float]:
     return values
 
 
+def n5_execution_certificate(total: int) -> None:
+    """Print the canonical-resolution boundary without changing the tally."""
+    print()
+    print(" N5 execution certificate (print-only; adds no check)")
+    print(
+        "per_element: partially executed -- completed_sector_data supplies the "
+        "three entries of Z_min and the runner checks all three against the listed "
+        "target by taking their maximum absolute drift, but the no-go predicate is "
+        "the Euclidean norm of the whole fitted three-vector; it does not prove a "
+        "separate nonzero residual for each target entry."
+    )
+    print(
+        "per_site: checked and not executed -- this wrapper constructs no spatial "
+        "site, link, plaquette, field amplitude, or position-space sum. Its four "
+        "axes are transfer-family parameters, not lattice coordinates, and every "
+        "spatial object arrives already reduced through imported helpers."
+    )
+    print(
+        "per_mode: partially executed as finite representation bookkeeping only -- "
+        "build_recurrence_matrix enumerates the retained SU(3) weight basis and "
+        "gap_at acts on the resulting matrices, but the wrapper contracts each run "
+        "to one fitted three-vector gap and asserts no mode-by-mode exclusion."
+    )
+    print(
+        "per_block: checked and not executed -- neither the 4D Cartesian parameter "
+        "grid nor the three-component target is a decomposition into physical "
+        "operator blocks, and the runner performs no blockwise no-go test; its "
+        "optimal-scalar projection and threshold predicate are whole-vector tests."
+    )
+    print(
+        f"lattice_wide: checked and not executed in the canonical lattice sense -- "
+        f"the only exhaustive object is the finite {total}-point parameter grid, "
+        "whose every float64 gap is tested against 1e-6. No lattice volume is "
+        "varied, no continuum or thermodynamic limit is taken, and unsampled "
+        "continuous-parameter points are explicitly outside the claim."
+    )
+
+
 def main() -> int:
     print("=" * 80)
     print(" gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py")
@@ -250,6 +288,8 @@ def main() -> int:
     print(f"     unsampled continuous-family statements remain outside this claim.")
     print(f"   - The finite numerical result is the exhaustive runner predicate above,")
     print(f"     including its explicit threshold and optimal-scalar projection check.")
+
+    n5_execution_certificate(total)
     print()
 
     print("=" * 80)

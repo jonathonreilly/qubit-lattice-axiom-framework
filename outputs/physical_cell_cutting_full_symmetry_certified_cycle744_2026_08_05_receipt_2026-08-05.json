@@ -1,0 +1,52 @@
+{
+ "cycle": 744,
+ "failures": 0,
+ "gates": 42,
+ "headline": "The group of order 384 constructed in the previous cycle is certified to be the complete symmetry group of the finite cutting system: a complete search - sound because its refinement keys are invariant under every symmetry of the incidence structure - finds no permutation of the 192 pieces beyond that group which maps cuttings to cuttings. The hidden three-bit affine geometry is therefore the whole symmetry of the system, not merely a symmetry within it.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "conclusion": {
+   "equals_the_previous_cycle_group": true,
+   "full_automorphism_group_order": 384,
+   "orbit_of_a_piece": 192,
+   "point_stabilizer": 2
+  },
+  "piece_pair_overlap_profile": {
+   "diagonal_value": 1975,
+   "distinct_cutting_rows": 15800,
+   "off_diagonal_distinct_values": 47,
+   "off_diagonal_maximum": 1266
+  },
+  "rebuilt_system": {
+   "cutting_symmetries": 48,
+   "cutting_width": 24,
+   "distinct_cuttings": 15800,
+   "piece_orbits": 4,
+   "pieces": 192,
+   "readings": 8,
+   "uses_per_piece": 1975
+  },
+  "refinement_certificate": {
+   "base_cells": 1,
+   "base_rounds": 1,
+   "branch_rounds": 3,
+   "candidates_verified_directly": 2,
+   "cells_after_one_individualization": 104,
+   "discrete_branch_cells": 192,
+   "generators_passing_direct_check": 50,
+   "point_stabilizer_candidates": 2,
+   "rounds_to_stable": 3,
+   "singleton_cells": 16,
+   "two_element_cells": 88
+  },
+  "the_group_of_order_384": {
+   "elements_fixing_all_eight_readings": 384,
+   "order": 384,
+   "point_stabilizer_order": 2,
+   "stabilizer_involution_fixed_pieces": 16,
+   "transitive_on_pieces": 192
+  }
+ }
+}

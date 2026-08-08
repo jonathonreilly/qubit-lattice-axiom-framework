@@ -1,0 +1,50 @@
+-- rebuild
+G01 shape: 15800x192 exp 15800x192 -> PASS
+G02 colsum: [1975] exp [1975] -> PASS
+G03 rowsupp: width 24 distinct 15800 exp 24 15800 -> PASS
+G04 perms48: 48 exp 48 -> PASS
+G05 orbits48: 4 of sizes [48, 48, 48, 48] exp 4 of 48 -> PASS
+G06 readings: 8 distinct, closed under xor exp 8 -> PASS
+G07 b0: an involution outside the 48 exp automorphism -> PASS
+G08 b1: an involution outside the 48 exp automorphism -> PASS
+G09 bfix: 8 of 8 readings kept exp 8 -> PASS
+-- the group E
+G10 ordE: 384 exp 384 -> PASS
+G11 trans: 1 orbit of 192 exp 1 of 192 -> PASS
+G12 stab: 2 exp 2 -> PASS
+G13 s0: an involution keeping 16 exp 16 -> PASS
+G14 Efix: 384 elements keep 8 readings exp all -> PASS
+-- overlaps
+G15 diag: [1975] exp [1975] -> PASS
+G16 offmax: 1266, under the diagonal entry exp 1266 -> PASS
+G17 offvals: 47 exp 47 -> PASS
+G18 rowdist: 15800 exp 15800 -> PASS
+-- refinement
+G19 basecells: 1 exp 1 -> PASS
+G20 baserounds: 1 exp 1 -> PASS
+-- the stabilizer partition
+G21 cells: 104 exp 104 -> PASS
+G22 sizes: 1:16 2:88 exp 1:16 2:88 -> PASS
+G23 rounds: 3 exp 3 -> PASS
+G24 kept: the colouring is kept by the stabilizer element exp kept -> PASS
+G25 singles: 16 singleton cells, exactly the kept pieces exp 16 -> PASS
+G26 pairs: every larger cell is a stabilizer orbit exp orbits -> PASS
+-- the two branches
+G27 discA: 192 cells exp 192 -> PASS
+G28 roundsA: 3 exp 3 -> PASS
+G29 discB: 192 cells exp 192 -> PASS
+G30 roundsB: 3 exp 3 -> PASS
+G31 align: the branch colourings agree along the stabilizer element exp aligned -> PASS
+G32 matchB: the branch map is the stabilizer element exp s0 -> PASS
+G33 s0aut: carries the family onto itself exp automorphism -> PASS
+G34 idaut: carries the family onto itself exp automorphism -> PASS
+G35 matchA: the branch map is the identity exp identity -> PASS
+-- rejectors and the count
+G36 rjswap: a two-piece swap rejected exp rejected -> PASS
+G37 rjedit: an edited table rejected exp rejected -> PASS
+G38 rjmatch: mismatched colourings rejected exp rejected -> PASS
+G39 gens: 50 generators carry the family onto itself exp 50 -> PASS
+G40 orbit: 192 images of the base piece exp 192 -> PASS
+G41 stabsame: 2 elements, the same two exp 2 -> PASS
+G42 count: 192 times 2 is 384 exp 384 -> PASS
+TOTAL: PASS=42 FAIL=0

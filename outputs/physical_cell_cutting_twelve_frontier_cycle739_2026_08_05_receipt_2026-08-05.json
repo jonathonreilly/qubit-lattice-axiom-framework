@@ -1,0 +1,273 @@
+{
+ "cycle": 739,
+ "failures": 0,
+ "gates": 38,
+ "headline": "On the 15800 least-cost cuttings of the single cell, the complete search moves from ten pieces to twelve. The forced-parity certificate licenses 140 cells per even reading and 91 per odd quarter reading, 1167 distinct splits in all, and every licensed cell is covered completely against eighteen readings at once. No set of exactly twelve pieces computes any of the six physical charges; with the forced even total, every odd size is barred as well, so each of the six charges needs at least fourteen pieces. The engine first reproduces the previous cycle exactly - 648 even octets and 192 odd octets at eight or fewer, the four controls at 108, 1, 2 and 0 sets of ten - recovers all five planted twelve-piece readings blind, including the two that force the eighth split, and verifies all 11648 recorded returns piece by piece with 0 mismatched. Beside the search, the certificate tree is measured: internal parity dimensions 0,0,0,0,0,0,1,2 on the eight blocks and 0,0,6,13 on the quarters, the first quarter degenerate at column rank 34 with a subcode of dimension 14 whose 30 weight-eight words are exactly among the octets and whose 63 weight-twelve words are among the 7808 zero-reading sets at twelve, and all seventeen real readings inside the 88-dimensional column space, so each charge is carried at some size - just not at twelve or below.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "certificate_tree": {
+   "column_ranks_blocks_of_24": [
+    19,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24
+   ],
+   "column_ranks_halves": [
+    55,
+    75
+   ],
+   "column_ranks_quarters": [
+    34,
+    48,
+    48,
+    48
+   ],
+   "duality_blocks_and_unions_checked": 22,
+   "internal_blocks_of_24": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2
+   ],
+   "internal_halves": [
+    13,
+    33
+   ],
+   "internal_mixed_quarter_pairs": [
+    9,
+    13,
+    15,
+    22
+   ],
+   "internal_quarter_complements": [
+    54,
+    40,
+    40,
+    40
+   ],
+   "internal_quarters": [
+    0,
+    0,
+    6,
+    13
+   ]
+  },
+  "column_space": {
+   "dimension": 88,
+   "real_readings_inside": 17,
+   "synthetic_reading_inside": false
+  },
+  "complete_search_at_twelve": {
+   "counts": [
+    7808,
+    3072,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    661,
+    25,
+    38,
+    38,
+    1,
+    1,
+    1,
+    2,
+    1,
+    0
+   ],
+   "duplicate_returns": 0,
+   "licensed_cells_per_reading": [
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    91,
+    91,
+    140,
+    140,
+    91,
+    91,
+    91,
+    140,
+    140,
+    0
+   ],
+   "mismatched": 0,
+   "planted_recovered": 5,
+   "readings": 18,
+   "splits_all_distinct": 1167,
+   "twelve_sets_verified": 11648
+  },
+  "floor": {
+   "complete_and_empty_sizes": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "odd_sizes_barred_by_parity": true,
+   "physical_charge_floor": 14
+  },
+  "forced_parity_certificate": {
+   "forced_blocks": [
+    "whole",
+    "left half",
+    "right half",
+    "third quarter",
+    "fourth quarter"
+   ],
+   "forced_quarter_pattern_first_twelve": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "free_blocks": 10,
+   "odd_total_reading_licenses_zero_cells": true,
+   "planted_quarter_parities": [
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "planted_readings_force_exactly_own_parities": 5
+  },
+  "orbits_at_twelve": {
+   "one_reading_orbit_sizes_and_counts": [
+    [
+     8,
+     2
+    ],
+    [
+     16,
+     2
+    ],
+    [
+     24,
+     6
+    ],
+    [
+     48,
+     60
+    ]
+   ],
+   "one_reading_orbits": 70,
+   "readings_with_trivial_stabilizer": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "zero_reading_orbit_sizes_and_counts": [
+    [
+     8,
+     2
+    ],
+    [
+     16,
+     1
+    ],
+    [
+     24,
+     18
+    ],
+    [
+     48,
+     153
+    ]
+   ],
+   "zero_reading_orbits": 174
+  },
+  "parity_law": {
+   "gf2_rank": 88,
+   "kernel_dimension": 104,
+   "uses_per_piece_odd": 1975
+  },
+  "quarter_subcode": {
+   "block_words_inside_quarter_subcode": true,
+   "dimension": 14,
+   "first_block_dimension": 5,
+   "first_block_words": 32,
+   "least_nonzero_weight": 8,
+   "weight_eight_words": 30,
+   "weight_eight_words_among_octets": true,
+   "weight_twelve_words": 63,
+   "weight_twelve_words_among_twelve_sets": true,
+   "words": 16384
+  },
+  "rerun_below_twelve": {
+   "even_octets": 648,
+   "even_orbits_of_24": 17,
+   "even_orbits_of_48": 5,
+   "licensed_cells_by_size": {
+    "eight": 55,
+    "four": 14,
+    "six": 30,
+    "ten": 91,
+    "twelve": 140,
+    "two": 5
+   },
+   "mismatched": 0,
+   "octets_verified": 845,
+   "odd_octets": 192,
+   "odd_orbits_of_24": 2,
+   "odd_orbits_of_48": 3,
+   "physical_charges_at_eight": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "ten_counts_first_twelve": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    108,
+    1,
+    2,
+    0
+   ],
+   "ten_sets_verified": 111
+  }
+ }
+}

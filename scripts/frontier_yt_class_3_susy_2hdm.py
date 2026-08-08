@@ -823,6 +823,54 @@ def main() -> int:
     print("  falsification on m_b stands; the required primitive lies outside")
     print("  the originally enumerated set.")
 
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: six-by-six arrays are constructed and inspected position by "
+        "position - the iso projectors are laid down with np.diag as (1,1,1,0,0,0) "
+        "and (0,0,0,1,1,1), checked symmetric and idempotent and shown to sum to "
+        "the identity, and the decomposition P_up = (I_6 + T3_6)/2 is confirmed to "
+        "machine precision by matrix norm. The unit scalar's six component weights "
+        "are likewise pulled out one index at a time and their squares summed to "
+        "one."
+    )
+    print(
+        "  per_site: checked and not executed - the six indices of the Q_L block "
+        "are a colour label times an isospin label, both internal, and no spatial "
+        "coordinate, displacement or neighbour appears in the file. Nothing changes "
+        "if the block is relabelled, because no index in it refers to a location."
+    )
+    print(
+        "  per_mode: checked and not executed - no transform or eigenvalue problem "
+        "is set up, and the representation labels (1,1), (1,8), (3,1) and (8,3) "
+        "that organize the argument are not modes obtained from any decomposition "
+        "performed here. Their normalizations arrive as four literal floats "
+        "assigned at module level, so no mode is separated by computation."
+    )
+    print(
+        "  per_block: the block algebra is genuinely worked out, and it is the one "
+        "place where this file computes rather than tabulates - the up-iso and "
+        "down-iso sub-blocks each carry trace exactly 3 against the retained value "
+        "6 for the whole Q_L block, the unit scalar is shown to commute with all "
+        "three isospin generators while the sub-block projector demonstrably does "
+        "not, and that commutation contrast is what forbids the two-scalar split. "
+        "The comparison target itself is not derived here: the four normalizations "
+        "it is measured against are typed in."
+    )
+    print(
+        "  lattice_wide: checked and not executed, and the distinction matters here "
+        "because much of the file looks global without being computational - Blocks "
+        "3, 4, 9, 10, 12 and 13 are an inventory of retained-versus-admitted "
+        "framework flags held in plain booleans and dictionary keys, and an "
+        "inventory that records what is absent from a corpus is not a whole-system "
+        "calculation. No volume, no limit and no extended object appears, and the "
+        "runner's own closing text concedes the outcome by saying the required "
+        "primitive lies outside the enumerated set."
+    )
+
     return FAIL_COUNT
 
 

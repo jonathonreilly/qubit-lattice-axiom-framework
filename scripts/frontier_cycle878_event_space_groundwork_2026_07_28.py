@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
 """Cycle 878: the composed-record event space as a sample space (groundwork).
 
-Campaign-5 Born GROUNDWORK.  Strictly structural.  NO probability
-postulate is introduced, NO Born rule is claimed, NO candidate weighting
-is selected.  Every fraction emitted here is a BOOKKEEPING FRACTION, NOT
-A PROBABILITY, and is labelled as such in the emitted certificates.
+Finite composed-record event-space and weighting inventory.  Strictly
+structural.  NO probability postulate is introduced, NO Born rule is
+claimed, NO candidate weighting is selected.  Every fraction emitted here
+is a BOOKKEEPING FRACTION, NOT A PROBABILITY, and is labelled as such in
+the emitted certificates.
 
-Substrate: the Cycle-867 composed record-write model (records as genuine
-state content -- register writes at bank clean-edges into structurally
-dead wires).  Cycle 867 is a SHA/blob-pinned, text/AST-only specification
-primary (BLOCKLISTED from import); its construction is rebuilt here from
-the landed Cycle-719 core and the landed Cycle-863 replay substrate.
+Substrate (STIPULATED IN-FILE MODEL, conditional): a composed
+record-write model (records as genuine state content -- register writes
+at bank clean-edges into structurally dead wires) whose census, seeds,
+initial states, dirty partition, schedules, dead-wire register, slot
+allocation, and consistency replay are ALL defined in this file from the
+landed Cycle-719 core -- the ONLY input in the closure.  SELF-CONTAINMENT
+DISCLOSURE: the Cycle-852/856/863/867 lineage of this model is
+provenance context, NON-LOAD-BEARING: those files are absent from
+origin/main, are NOT read, pinned, or imported here (the legacy module
+names are import-blocklisted), and the identification of this stipulated
+model with any landed substrate is an OPEN bridge.  Every result below
+is CONDITIONAL on the stipulated model and its declared scope inputs.
 
 A. EVENT_SPACE: extract the exact set of realized record-write events
    (world, moment, tag, ordinal, content) at the declared horizon; certify
@@ -19,43 +27,56 @@ A. EVENT_SPACE: extract the exact set of realized record-write events
    partitions, the full refinement/crossing lattice over them (does the
    (bank-tag, ordinal) family refine the global-tag family?), and that the
    atoms are singletons (so the generated sigma-algebra is 2^E).
-B. MEASURE_CANDIDATE_INVENTORY (admissibility only, NO selection):
-   record-native weightings available WITHOUT new axioms -- counting
-   measure on events, per-world uniform, occupation-weighted (from the
-   landed Cycle-863 occupation ledger), formation-moment-weighted (two
-   declared readings), plus a declared NEGATIVE CONTROL (content
-   diversity) that is record-native but NOT additive.  For each: exact
-   PASS/FAIL on finite additivity over the certified disjoint families,
-   normalizability, and permutation covariance under the landed
-   symmetries (the Cycle-856 monitor-phase Z_11 relabelling of worlds and
-   the bank-label swap on tags).  Support-faithfulness is reported as a
-   disclosed extra diagnostic, not as a demanded axiom.
-C. FRACTION_LEDGER: exact rational event-fraction tables per (admissible
-   candidate, certified family) -- bookkeeping fractions, not
-   probabilities -- plus the exact pairwise DISAGREEMENT matrix with
-   witness cells (the discriminating atoms are the future experiment
-   surface).
-D. BOUNDARY: what the framework does NOT supply, quoted verbatim from the
-   sha/blob-pinned in-tree axiom baseline.
+B. MEASURE_CANDIDATE_INVENTORY (finite-measure candidacy only, NO
+   selection): declared candidate weightings computable from the
+   stipulated model's record bookkeeping -- counting measure on events,
+   per-world uniform, occupation-weighted (from the in-file occupation
+   replay), formation-moment-weighted (two declared readings), plus a
+   declared NEGATIVE CONTROL (content diversity) that is record-native
+   but NOT additive.  For each: exact PASS/FAIL on finite additivity over
+   the certified disjoint families and normalizability
+   ("finite-measure candidate" -- an algebraic bookkeeping predicate,
+   NOT framework Admissibility, whose local-to-event bridge is OPEN),
+   plus coarse-marginal invariance diagnostics: constancy of F_WORLD cell
+   masses on the orbits of the in-file monitor-phase Z_11 world
+   relabelling (the map has NO well-defined action on event atoms) and
+   equality of (tag, ordinal) cell masses under the bank-label swap.
+   These are marginal-invariance facts about selected coarse marginals;
+   no symmetry-transport statement about any weighting on E is made.
+   Support-faithfulness is reported as a disclosed extra diagnostic, not
+   as a demanded axiom.
+C. FRACTION_LEDGER: exact rational event-fraction tables per
+   (finite-measure candidate, certified family) -- bookkeeping fractions,
+   not probabilities -- plus the exact pairwise DISAGREEMENT matrix with
+   witness cells (the discriminating atoms are a mathematical
+   discriminator surface; no operational/experimental bridge is claimed).
+D. STIPULATED_BOUNDARY: the block's own boundary, mechanically checked
+   (every ledger table carries the bookkeeping label; no selection
+   marker exists; no axiom text is in the input closure).  Framework
+   compatibility is NOT tested; on current origin/main the revised
+   Admissibility supplies a nearest-neighbor-conditioned probability
+   distribution whose values and local-to-event lift remain open.
 E. CONTROLS.
 
 Exact arithmetic: every candidate weighting is carried as an INTEGER
 numerator vector over a single common denominator, so all masses, sums
 and fractions are exact rationals with no floating point anywhere.
 
-Declared scope and caps (all disclosed in the certificates): B=2, the
-Cycle-852 census (748 worlds, 11 stations), horizon 16,384 orbits;
-dead-wire derivation window 512 orbits at chunk granularity then orbit
-granularity to 4,096; register cap 64 wire-visible ordinals per
-(bank-tag, world); one formation slot per world.
+Declared scope inputs and caps (all disclosed in the certificates; these
+are stipulated computational boundary conditions that materially
+determine the event set and every count below): B=2 banks; source
+counts 2-5 over the 11 stations with cyclic isolation (the in-file
+census construction; 748 worlds); horizon 16,384 orbits; dead-wire
+derivation window 512 orbits at chunk granularity then orbit granularity
+to 4,096; register cap 64 wire-visible ordinals per (bank-tag, world);
+one formation slot per world.
 
-Relation to the landed Cycle-867 register: 867 wire-wrote its global tag
-ONLY at boundary 0.  This cycle writes a formation tag F at each world's
-FIRST global-clean boundary; the F-events at moment 0 are certified to be
-exactly the 867 global-tag writes, so the event space strictly extends the
-landed register rather than replacing it.
+Moment-zero consistency: the formation tag F writes at each world's
+FIRST global-clean boundary, so the moment-0 F-events are certified to
+be exactly the globally clean lanes at boundary 0.
 
-Supervisor-authored primary.  bounded_theorem, authority none, audit
+Supervisor-authored primary.  bounded_theorem (conditional finite
+combinatorics on the stipulated in-file model), authority none, audit
 unset.  Independent audit still required.
 """
 from __future__ import annotations
@@ -65,6 +86,7 @@ from collections import Counter
 from fractions import Fraction
 from hashlib import sha1, sha256
 import importlib.abc
+from itertools import combinations
 import json
 from math import gcd
 from pathlib import Path
@@ -73,31 +95,27 @@ from time import monotonic
 
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150 * 1024
+# SELF-CONTAINED input closure: the ONLY input is the landed Cycle-719
+# core (present on origin/main at this exact blob).  The composed
+# record-write model itself is stipulated IN-FILE below.  No unlanded or
+# stale file is read, pinned, or imported.
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
-    "scripts/frontier_cycle867_composed_record_write_2026_07_28.py",
-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
-COMPUTATIONAL_INPUT_PATHS = AUDIT_INPUT_PATHS[:2]
-TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[2:3]
-TEXT_ONLY_PATHS = AUDIT_INPUT_PATHS[3:]
-BLOCKLISTED_MODULES = tuple(Path(p).stem for p in TEXT_AST_ONLY_PATHS)
+COMPUTATIONAL_INPUT_PATHS = AUDIT_INPUT_PATHS
+# Import firewall against the legacy fixture-lineage modules: these are
+# NAME STRINGS only (provenance context, non-load-bearing); the files are
+# NOT inputs and need not exist for this runner to run.
+BLOCKLISTED_MODULES = (
+    "frontier_cycle863_time_from_records_2026_07_28",
+    "frontier_cycle867_composed_record_write_2026_07_28",
+)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-    AUDIT_INPUT_PATHS[1]:
-        "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
-    AUDIT_INPUT_PATHS[2]:
-        "49605f6d0730e224d6c4cd25a182ec49e0c7d2f2316851bc2755632dcbe2c828",
-    AUDIT_INPUT_PATHS[3]:
-        "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "871b9e986ca5e684ceadce25ff3e03164ef26c98",
-    AUDIT_INPUT_PATHS[2]: "5f923e8429373fa5afc71a417cd4e6f787ec71b8",
-    AUDIT_INPUT_PATHS[3]: "4a863da1f3f255354839277271a3a69a5c205133",
 }
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -119,8 +137,10 @@ PRIMARY_FIREWALL = _PrimaryFirewall()
 sys.meta_path.insert(0, PRIMARY_FIREWALL)
 
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
-import frontier_cycle863_time_from_records_2026_07_28 as C863
 
+FIXTURE_BANKS = 2
+MIN_SOURCES = 2
+MAX_SOURCES = 5
 HORIZON = 16_384
 DEAD_CHUNK_ORBITS = 512
 DEAD_ORBIT_ORBITS = 4_096
@@ -132,22 +152,26 @@ TOTAL_TABLE_BYTE_BUDGET = 60_000
 TOP_CELLS_REPORTED = 5
 FRACTION_LABEL = "bookkeeping fraction, not probability"
 
-# The exclusion list of the axiom baseline, quoted VERBATIM from the
-# sha/blob-pinned in-tree source docs/MINIMAL_AXIOMS_2026-06-29.md
-# ("Open Gates Outside The Axioms").  Presence in the pinned file is
-# certified byte-for-byte at run time; nothing here paraphrases it.
-EXCLUSION_NEEDLE = (
-    "- context selection, measurement basis selection, Born weights,"
-    " probability\n  rules, update laws, decoherence mechanisms, and"
-    " formation rules (which\n  admissible possibility a new record locks,"
-    " at which site, with what weight,\n  or at what rate);"
+# No axiom text is read, pinned, or quoted by this runner: axiom files
+# are OUTSIDE the input closure.  The disclosure below is prose context
+# emitted verbatim in certificate D so the block cannot be read as a
+# negative theorem about the axiom surface.
+AXIOM_SURFACE_DISCLOSURE = (
+    "no axiom text is load-bearing here and none is in the input closure;"
+    " on current origin/main the revised Admissibility axiom supplies a"
+    " nearest-neighbor-conditioned probability distribution on the local"
+    " possibility domain with availability as its support; nothing in"
+    " this block tests, uses, or constrains that content; the precise"
+    " open obligations are the distribution's values and a derived lift"
+    " from the local conditional law through Record to these composed"
+    " event atoms"
 )
 BOUNDARY_STATEMENT = (
     "this block supplies no occurrence rule, no probability, no update"
     " law, and selects no candidate weighting; it certifies a finite"
-    " event space, a refinement lattice, and an admissibility inventory"
-    " of record-native weightings -- selection remains the named open"
-    " gate"
+    " event space, a refinement lattice, and a finite-measure candidate"
+    " inventory over a stipulated in-file model -- selection and the"
+    " framework-Admissibility bridge remain open"
 )
 
 CANDIDATE_NAMES = (
@@ -184,7 +208,7 @@ def lcm(a: int, b: int) -> int:
 
 def source_controls() -> dict:
     payloads = {p: (ROOT / p).read_bytes() for p in AUDIT_INPUT_PATHS}
-    for p in COMPUTATIONAL_INPUT_PATHS + TEXT_AST_ONLY_PATHS:
+    for p in COMPUTATIONAL_INPUT_PATHS:
         ast.parse(payloads[p], filename=p)
     self_tree = ast.parse(
         Path(__file__).read_text(encoding="utf-8"), filename=Path(__file__).name
@@ -200,12 +224,20 @@ def source_controls() -> dict:
     blob_rows = {p: git_blob(b) for p, b in payloads.items()}
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "input_closure_statement": (
+            "self-contained: the only input is the landed Cycle-719 core;"
+            " the composed record-write model is stipulated in-file; the"
+            " legacy fixture-lineage module names are import-blocklisted"
+            " and their files are not read, pinned, or required to exist"
+        ),
         "literal_ok": literal == AUDIT_INPUT_PATHS,
         "existing_worktree_relative": all(
             not Path(p).is_absolute() and (ROOT / p).is_file()
             for p in AUDIT_INPUT_PATHS
         ),
-        "text_only_paths_not_imported": TEXT_ONLY_PATHS,
+        "no_docs_paths_in_input_closure": not any(
+            p.startswith("docs/") for p in AUDIT_INPUT_PATHS
+        ),
         "sha256": sha_rows,
         "git_blobs": blob_rows,
         "blocked_modules_loaded": tuple(
@@ -216,6 +248,7 @@ def source_controls() -> dict:
     result["pass"] = (
         result["literal_ok"]
         and result["existing_worktree_relative"]
+        and result["no_docs_paths_in_input_closure"]
         and sha_rows == EXPECTED_SHA256
         and blob_rows == EXPECTED_GIT_BLOBS
         and not result["blocked_modules_loaded"]
@@ -225,12 +258,250 @@ def source_controls() -> dict:
 
 
 # ---------------------------------------------------------------------------
-# The composed model (Cycle-867 construction, rebuilt from the landed core)
+# Stipulated in-file model machinery (built from the landed Cycle-719 core
+# alone).  Everything below this banner is part of THIS runner's stipulated
+# definition of the composed record-write model: census, seeds, initial
+# states, dirty partition, lane packing, masked schedules, and an
+# occupation replay used as an in-file consistency cross-check.  No other
+# file supplies any of it.
+# ---------------------------------------------------------------------------
+
+def pairwise_separated(positions, stations):
+    occupied = set(positions)
+    return all((s + 1) % stations not in occupied for s in occupied)
+
+
+def derive_event_seeds(program):
+    banks, links = K.B.chain_genesis(FIXTURE_BANKS)
+    state = K.M.pack_state(banks, links)
+    allocator = K.M.global_allocator_word(FIXTURE_BANKS)
+    rows = []
+    for event in range(2 * FIXTURE_BANKS):
+        direction = (1, 0) if event % 2 == 0 else (0, 1)
+        before = K.M.prepare_endpoint(state, direction)
+        after, rail_a, rail_b, trace = K.run_orbit(before, program)
+        if not (
+            after == K.A.apply_semantic(before, allocator)
+            and rail_a == (1,) + (0,) * (len(program) - 1)
+            and not any(rail_b)
+            and len(trace) == len(program)
+        ):
+            raise AssertionError(("event seed", event))
+        rows.append((event, before))
+        state = after
+    return tuple(rows)
+
+
+def derive_census():
+    program = K.interleaved_program(FIXTURE_BANKS)
+    stations = len(program)
+    event_seeds = derive_event_seeds(program)
+    keys = tuple(
+        (k, event, positions)
+        for k in range(MIN_SOURCES, MAX_SOURCES + 1)
+        for positions in combinations(range(stations), k)
+        if pairwise_separated(positions, stations)
+        for event, _s in event_seeds
+    )
+    return program, event_seeds, tuple(sorted(keys))
+
+
+def watched_registers():
+    return (
+        ("POINTER", K.A.POINTER), ("U_TO_V", K.A.U_TO_V),
+        ("V_TO_U", K.A.V_TO_U), ("DIRECTION_OK", K.A.DIRECTION_OK),
+        *((f"FRESH_{i}", w) for i, w in enumerate(K.A.FRESH)),
+        *((f"ZERO_WORK_{i}", w) for i, w in enumerate(K.A.ZERO_WORK)),
+        ("TOKEN_OK", K.A.TOKEN_OK),
+    )
+
+
+def dirty_partition():
+    """Global dirty coordinates partitioned: per-bank, links, source pointer."""
+    banks0, links0 = K.B.chain_genesis(FIXTURE_BANKS)
+    zero_banks = tuple(tuple(0 for _ in bank) for bank in banks0)
+    zero_links = tuple(tuple(0 for _ in link) for link in links0)
+    baseline = K.M.pack_state(zero_banks, zero_links)
+    per_bank: list[set] = [set() for _ in zero_banks]
+    for bank_index in range(len(zero_banks)):
+        for _name, wire in watched_registers():
+            changed = [list(b) for b in zero_banks]
+            changed[bank_index][wire] = 1
+            marked = K.M.pack_state(
+                tuple(tuple(b) for b in changed), zero_links
+            )
+            diffs = [
+                i for i, (l, r) in enumerate(zip(baseline, marked)) if l != r
+            ]
+            if len(diffs) != 1:
+                raise AssertionError(("bank marker", diffs))
+            per_bank[bank_index].add(diffs[0])
+    link_set: set = set()
+    for link_index, link in enumerate(zero_links):
+        for wire in range(len(link)):
+            changed = [list(row) for row in zero_links]
+            changed[link_index][wire] = 1
+            marked = K.M.pack_state(zero_banks, tuple(tuple(r) for r in changed))
+            diffs = [
+                i for i, (l, r) in enumerate(zip(baseline, marked)) if l != r
+            ]
+            if len(diffs) != 1:
+                raise AssertionError(("link marker", diffs))
+            link_set.add(diffs[0])
+    return (
+        tuple(tuple(sorted(s)) for s in per_bank),
+        tuple(sorted(link_set)),
+        K.R3.X.SOURCE_POINTER,
+    )
+
+
+def build_initial_states(program, event_seeds, census):
+    seed_by_event = dict(event_seeds)
+    states = []
+    failures = 0
+    for _k, event, positions in census:
+        before = seed_by_event[event]
+        after, rail_a, rail_b, _ = K.run_orbit(
+            before, program, token_positions=positions
+        )
+        expected_rail = tuple(
+            int(s in positions) for s in range(len(program))
+        )
+        failures += rail_a != expected_rail or any(rail_b)
+        states.append(after)
+    return tuple(states), failures
+
+
+def pack_lanes(states):
+    return [
+        sum(state[wire] << lane for lane, state in enumerate(states))
+        for wire in range(len(states[0]))
+    ]
+
+
+def compile_masked_gate(gate, mask):
+    if gate.kind == "X":
+        return (0, gate.wires[0], 0, 0, mask)
+    if gate.kind == "CNOT":
+        return (1, gate.wires[0], gate.wires[1], 0, mask)
+    if gate.kind == "TOF":
+        return (2, gate.wires[0], gate.wires[1], gate.wires[2], mask)
+    raise ValueError(("gate", gate))
+
+
+def masked_h_schedules(program, census):
+    stations = len(program)
+    rows = []
+    for step in range(stations):
+        schedule = []
+        for station, row in enumerate(program):
+            mask = sum(
+                1 << lane
+                for lane, (_k, _e, positions) in enumerate(census)
+                if (station - step) % stations in positions
+            )
+            if mask:
+                schedule.extend(
+                    compile_masked_gate(g, mask) for g in K.mapped_macro(row)
+                )
+        rows.append(tuple(schedule))
+    return tuple(rows)
+
+
+def compile_fast(schedules):
+    fns = []
+    for schedule in schedules:
+        src = ["def apply_chunk(c):"]
+        for kind, a, b, c3, mask in schedule:
+            if kind == 0:
+                src.append(f" c[{a}] ^= {mask}")
+            elif kind == 1:
+                src.append(f" c[{b}] ^= c[{a}] & {mask}")
+            else:
+                src.append(f" c[{c3}] ^= c[{a}] & c[{b}] & {mask}")
+        ns: dict = {}
+        exec("\n".join(src), {"__builtins__": {}}, ns)
+        fns.append(ns["apply_chunk"])
+    return tuple(fns)
+
+
+def mask_over(columns, indices, universe):
+    dirty = 0
+    for wire in indices:
+        dirty |= columns[wire]
+    return universe & ~dirty
+
+
+def lanes_of(mask):
+    out = []
+    while mask:
+        bit = mask & -mask
+        out.append(bit.bit_length() - 1)
+        mask ^= bit
+    return out
+
+
+def lane_state(columns, lane):
+    bit = 1 << lane
+    return tuple(int(bool(col & bit)) for col in columns)
+
+
+def occupation_replay(program, event_seeds, census, horizon):
+    """In-file consistency replay of the BASE dynamics (no register
+    writes): recomputes the occupation ledger, the first-formation
+    moments, and the duplicate-lane mismatch count along the same
+    trajectory, as a second in-file path to cross-check the composed
+    scan's bookkeeping."""
+    states, init_fail = build_initial_states(program, event_seeds, census)
+    n = len(census)
+    sim = census + (census[0],)
+    dup = n
+    columns = pack_lanes(states + (states[0],))
+    fast = compile_fast(masked_h_schedules(program, sim))
+    per_bank, links, source_ptr = dirty_partition()
+    global_dirty = tuple(sorted(
+        set(per_bank[0]) | set(per_bank[1]) | set(links) | {source_ptr}
+    ))
+    universe_all = (1 << n) - 1
+    universe_sim = (1 << (n + 1)) - 1
+    stations = len(program)
+
+    e1_moment: dict = {}
+    counts_global = [0] * n
+    mismatches = 0
+
+    g0 = mask_over(columns, global_dirty, universe_sim)
+    mismatches += int(bool(g0 & 1) != bool(g0 & (1 << dup)))
+    for lane in lanes_of(g0 & universe_all):
+        counts_global[lane] += 1
+        e1_moment.setdefault(census[lane], 0)
+
+    for orbit in range(1, horizon + 1):
+        for step, chunk in enumerate(fast, 1):
+            chunk(columns)
+            boundary = (orbit - 1) * stations + step
+            g = mask_over(columns, global_dirty, universe_sim)
+            mismatches += int(bool(g & 1) != bool(g & (1 << dup)))
+            ga = g & universe_all
+            for lane in lanes_of(ga):
+                counts_global[lane] += 1
+                e1_moment.setdefault(census[lane], boundary)
+
+    return {
+        "counts_global": counts_global,
+        "e1_moment": e1_moment,
+        "mismatches": mismatches,
+        "init_failures": init_fail,
+    }
+
+
+# ---------------------------------------------------------------------------
+# The composed model (stipulated in-file construction over the landed core)
 # ---------------------------------------------------------------------------
 
 def dead_wire_rig(program, sim, columns_proto):
     """Derive boundary-dead wires, then the structurally inert safe slots."""
-    fast = C863.compile_fast(C863.masked_h_schedules(program, sim))
+    fast = compile_fast(masked_h_schedules(program, sim))
     universe_sim = (1 << len(sim)) - 1
     work = list(columns_proto)
     acc = list(work)
@@ -248,7 +519,7 @@ def dead_wire_rig(program, sim, columns_proto):
     )
     gate_inputs: set = set()
     gate_targets: set = set()
-    for schedule in C863.masked_h_schedules(program, sim):
+    for schedule in masked_h_schedules(program, sim):
         for kind, a, b, c3, _mask in schedule:
             if kind == 0:
                 gate_targets.add(a)
@@ -287,8 +558,8 @@ def composed_scan(program, census, states, rig, orbits):
     fast = rig["fast"]
     n = len(census)
     dup = n
-    columns = C863.pack_lanes(states + (states[0],))
-    per_bank, links, source_ptr = C863.dirty_partition()
+    columns = pack_lanes(states + (states[0],))
+    per_bank, links, source_ptr = dirty_partition()
     global_dirty = tuple(sorted(
         set(per_bank[0]) | set(per_bank[1]) | set(links) | {source_ptr}
     ))
@@ -317,20 +588,20 @@ def composed_scan(program, census, states, rig, orbits):
         columns[wire] |= bit
 
     def content_of(lane):
-        return sha256(bytes(C863.lane_state(columns, lane))).hexdigest()[:16]
+        return sha256(bytes(lane_state(columns, lane))).hexdigest()[:16]
 
-    g0 = C863.mask_over(columns, global_dirty, uni_sim)
+    g0 = mask_over(columns, global_dirty, uni_sim)
     mismatches += int(bool(g0 & 1) != bool(g0 & (1 << dup)))
     ga0 = g0 & uni_all
     b_mask = [
-        C863.mask_over(columns, bank_dirty[b], uni_all) for b in (0, 1)
+        mask_over(columns, bank_dirty[b], uni_all) for b in (0, 1)
     ]
-    for lane in C863.lanes_of(ga0):
+    for lane in lanes_of(ga0):
         occ_global[lane] += 1
     for b in (0, 1):
-        for lane in C863.lanes_of(b_mask[b]):
+        for lane in lanes_of(b_mask[b]):
             occ_bank[b][lane] += 1
-    for lane in C863.lanes_of(ga0):
+    for lane in lanes_of(ga0):
         formed[lane] = 0
         wire_write(("F", 0), lane)
         events.append((lane, 0, "F", 0, content_of(lane)))
@@ -341,20 +612,20 @@ def composed_scan(program, census, states, rig, orbits):
         for chunk in fast:
             chunk(columns)
             boundary += 1
-            g = C863.mask_over(columns, global_dirty, uni_sim)
+            g = mask_over(columns, global_dirty, uni_sim)
             mismatches += int(bool(g & 1) != bool(g & (1 << dup)))
             ga = g & uni_all
-            for lane in C863.lanes_of(ga):
+            for lane in lanes_of(ga):
                 occ_global[lane] += 1
                 if lane not in formed:
                     formed[lane] = boundary
                     wire_write(("F", 0), lane)
                     events.append((lane, boundary, "F", 0, content_of(lane)))
             for b in (0, 1):
-                bm = C863.mask_over(columns, bank_dirty[b], uni_all)
-                for lane in C863.lanes_of(bm):
+                bm = mask_over(columns, bank_dirty[b], uni_all)
+                for lane in lanes_of(bm):
                     occ_bank[b][lane] += 1
-                for lane in C863.lanes_of(bm & ~prev_bank[b]):
+                for lane in lanes_of(bm & ~prev_bank[b]):
                     ordinal = bank_ordinal[lane][b]
                     if ordinal < REGISTER_CAP:
                         wire_write((f"B{b}", ordinal), lane)
@@ -385,7 +656,7 @@ def composed_scan(program, census, states, rig, orbits):
         "global_dirty": global_dirty,
         "bank_dirty": bank_dirty,
         "boundaries": boundary,
-        "initial_global_clean_lanes": len(C863.lanes_of(ga0)),
+        "initial_global_clean_lanes": len(lanes_of(ga0)),
     }
 
 
@@ -430,14 +701,16 @@ def refines(keys_a, keys_b):
 
 
 # ---------------------------------------------------------------------------
-# Landed symmetries
+# Symmetry maps for the marginal diagnostics (stipulated in-file)
 # ---------------------------------------------------------------------------
 
 def monitor_phase_action(census, stations):
-    """The Cycle-856 landed symmetry: moving the controller-orbit cut to
-    monitor phase m advances the sources by m stations.  On census keys
-    (k, event, positions) this is positions -> positions + m (mod
-    stations), a Z_stations action on the worlds."""
+    """Monitor-phase relabelling (stipulated in-file): moving the
+    controller-orbit cut to monitor phase m advances the sources by m
+    stations.  On census keys (k, event, positions) this is positions ->
+    positions + m (mod stations), a Z_stations action on the worlds.  It
+    is used ONLY for coarse world-marginal diagnostics: it has no
+    well-defined action on event atoms (checked and emitted below)."""
     index_of = {key: i for i, key in enumerate(census)}
     perms = []
     for m in range(stations):
@@ -480,9 +753,11 @@ def group_orbits(perms, size):
 # ---------------------------------------------------------------------------
 
 def build_candidates(events, occ_global, formed, boundaries):
-    """Record-native weightings available without new axioms.  Each
-    additive candidate is an EVENT-LEVEL weight w: E -> Q_{>=0}, carried
-    as integer numerators over one common denominator per candidate."""
+    """Declared candidate weightings computable from the stipulated
+    model's record bookkeeping alone.  Each additive candidate is an EVENT-LEVEL weight
+    w: E -> Q_{>=0}, carried as integer numerators over one common
+    denominator per candidate.  "Candidate" means finite-measure
+    candidate; NO framework-Admissibility compatibility is claimed."""
     per_world = Counter(e[0] for e in events)
     supported = sorted(per_world)
     n_supported = len(supported)
@@ -515,7 +790,7 @@ def build_candidates(events, occ_global, formed, boundaries):
             "each world carrying at least one event gets equal mass"
             " 1/|supported worlds|, spread uniformly over its own events"
         ),
-        "record_native_source": "the world index of the Cycle-852 census",
+        "record_native_source": "the world index of the in-file census",
         "supported_worlds": n_supported,
     }
 
@@ -527,7 +802,7 @@ def build_candidates(events, occ_global, formed, boundaries):
             " uniform within the world"
         ),
         "record_native_source": (
-            "the landed Cycle-863 occupation ledger counts['global']"
+            "the in-file occupation replay's global ledger"
             " (boundaries at which the world is globally clean)"
         ),
         "occupation_total_over_supported_worlds":
@@ -588,13 +863,13 @@ def build_candidates(events, occ_global, formed, boundaries):
 def main() -> int:
     started = monotonic()
     controls = source_controls()
-    program, event_seeds, census = C863.derive_census()
+    program, event_seeds, census = derive_census()
     stations = len(program)
     n = len(census)
-    states, init_fail = C863.build_initial_states(program, event_seeds, census)
+    states, init_fail = build_initial_states(program, event_seeds, census)
     sim = census + (census[0],)
     rig = dead_wire_rig(
-        program, sim, C863.pack_lanes(states + (states[0],))
+        program, sim, pack_lanes(states + (states[0],))
     )
     slot_of = rig["slot_of"]
 
@@ -603,13 +878,8 @@ def main() -> int:
     boundaries = scan["boundaries"]
     total_events = len(events)
 
-    old_h = C863.TRAJECTORY_HORIZON
-    C863.TRAJECTORY_HORIZON = HORIZON
-    try:
-        rep = C863.replay(program, event_seeds, census)
-    finally:
-        C863.TRAJECTORY_HORIZON = old_h
-    ledger_agrees = list(rep["counts"]["global"]) == list(scan["occ_global"])
+    rep = occupation_replay(program, event_seeds, census, HORIZON)
+    ledger_agrees = list(rep["counts_global"]) == list(scan["occ_global"])
     anno_e1 = rep["e1_moment"]
     formed_by_key = {census[lane]: b for lane, b in scan["formed"].items()}
     formation_agrees = formed_by_key == dict(anno_e1)
@@ -691,24 +961,28 @@ def main() -> int:
             "duplicate_lane_mismatches": scan["mismatches"],
             "initial_state_failures": init_fail,
         },
-        "relation_to_landed_cycle867": {
+        "moment_zero_formation_consistency": {
             "f_events_at_moment_zero": f_events_at_zero,
-            "cycle867_global_tag_writes_at_boundary_zero":
+            "global_clean_lanes_at_boundary_zero":
                 scan["initial_global_clean_lanes"],
-            "extends_not_replaces":
+            "f_equals_global_clean_at_zero":
                 f_events_at_zero == scan["initial_global_clean_lanes"],
             "statement": (
-                "Cycle 867 wire-wrote its global tag only at boundary 0;"
-                " the F tag here writes at each world's FIRST global-clean"
-                " boundary, so the moment-0 F events are exactly the 867"
-                " global writes"
+                "the F tag writes at each world's FIRST global-clean"
+                " boundary, so the moment-0 F events are exactly the"
+                " globally clean lanes at boundary 0"
             ),
         },
-        "landed_ledger_crosscheck": {
-            "occupation_ledger_matches_cycle863_replay": ledger_agrees,
-            "formation_moments_match_cycle863_e1": formation_agrees,
-            "cycle863_e1_stamps_at_horizon": len(anno_e1),
-            "cycle863_duplicate_lane_mismatches": rep["mismatches"],
+        "independent_replay_crosscheck": {
+            "occupation_ledger_matches_replay": ledger_agrees,
+            "formation_moments_match_replay_e1": formation_agrees,
+            "replay_e1_stamps_at_horizon": len(anno_e1),
+            "replay_duplicate_lane_mismatches": rep["mismatches"],
+            "statement": (
+                "a second in-file path (base-dynamics replay, no register"
+                " writes) recomputes the occupation ledger and formation"
+                " moments along the same trajectory"
+            ),
         },
         "finding": (
             "the realized record-write event space at the declared horizon"
@@ -805,7 +1079,11 @@ def main() -> int:
                 all(v > 0 for v in nums[name]),
             "zero_weight_events": sum(1 for v in nums[name] if v == 0),
         }
-        inventory[name]["admissible"] = bool(
+        # An algebraic bookkeeping predicate (additive + normalizable),
+        # deliberately NOT named "admissible": framework Admissibility is
+        # a separate axiom-level notion whose local-to-event bridge is
+        # open and is not tested here.
+        inventory[name]["finite_measure_candidate"] = bool(
             inventory[name][
                 "finite_additivity_over_certified_disjoint_families"]
             and inventory[name]["normalizable"]
@@ -839,7 +1117,7 @@ def main() -> int:
             v > 0 for v in diversity_by_family["F_ATOM"].values()
         ),
         "zero_weight_events": 0,
-        "admissible": False,
+        "finite_measure_candidate": False,
     }
 
     perms, perm_ok = monitor_phase_action(census, stations)
@@ -864,7 +1142,7 @@ def main() -> int:
             world_cell = masses_by_family["F_WORLD"][name]
             tag_cell = masses_by_family["F_TAG_ORDINAL"][name]
             zero = 0
-        covariant_world = all(
+        world_marginal_ok = all(
             world_cell.get(("w", orbit[0]), zero)
             == world_cell.get(("w", x), zero)
             for orbit in world_orbits for x in orbit
@@ -874,29 +1152,45 @@ def main() -> int:
             == tag_cell.get(("to", "B1", key[2]), zero)
             for key in bank_keys
         )
-        inventory[name]["permutation_covariance"] = {
-            "landed_monitor_phase_group_on_worlds": covariant_world,
-            "bank_label_swap_on_tag_ordinal_cells": bank_swap,
-            "covariant_under_both": bool(covariant_world and bank_swap),
+        inventory[name]["marginal_symmetry_diagnostics"] = {
+            "world_marginal_constant_on_monitor_orbits": world_marginal_ok,
+            "tag_ordinal_marginal_equal_under_bank_swap": bank_swap,
+            "both_marginal_diagnostics_hold":
+                bool(world_marginal_ok and bank_swap),
         }
 
-    admissible = tuple(
-        name for name in sorted(inventory) if inventory[name]["admissible"]
+    fm_candidates = tuple(
+        name for name in sorted(inventory)
+        if inventory[name]["finite_measure_candidate"]
     )
     cert_b = {
         "certificate": "B_MEASURE_CANDIDATE_INVENTORY",
         "no_selection_statement": (
             "this certificate enumerates record-native weightings and"
-            " certifies admissibility ONLY; it does NOT select among them"
-            " and asserts no probability interpretation for any of them"
+            " certifies finite-measure candidacy ONLY (nonnegative,"
+            " additive over the certified disjoint families,"
+            " normalizable); it does NOT select among them, asserts no"
+            " probability interpretation for any of them, and does NOT"
+            " test compatibility with framework Admissibility, whose"
+            " local-to-event bridge is an open obligation"
         ),
         "certified_disjoint_families_used": disjoint_families,
         "common_within_world_denominator": common,
-        "landed_symmetries": {
+        "symmetry_diagnostics": {
+            "scope_statement": (
+                "coarse-marginal diagnostics ONLY: constancy of F_WORLD"
+                " cell masses on the orbits of the in-file monitor-phase"
+                " world relabelling, and equality of (tag, ordinal) cell"
+                " masses under the bank-label swap; the monitor map has no"
+                " well-defined action on event atoms (unequal per-world"
+                " tag populations obstruct any atom permutation), so no"
+                " symmetry-transport statement about any weighting on E"
+                " is made or implied"
+            ),
             "monitor_phase_group": (
-                "Cycle-856 monitor-phase relabelling: positions ->"
-                f" positions + m (mod {stations}), a Z_{stations} action"
-                " on worlds"
+                "monitor-phase relabelling (stipulated in-file):"
+                f" positions -> positions + m (mod {stations}), a"
+                f" Z_{stations} action on worlds"
             ),
             "action_is_a_census_bijection": perm_ok,
             "world_orbit_count": len(world_orbits),
@@ -907,23 +1201,25 @@ def main() -> int:
             "bank_label_swap": "B0 <-> B1 on (tag, ordinal) cells",
         },
         "candidates": inventory,
-        "admissible_candidates": admissible,
-        "inadmissible_candidates": tuple(
+        "finite_measure_candidates": fm_candidates,
+        "finite_measure_noncandidates": tuple(
             name for name in sorted(inventory)
-            if not inventory[name]["admissible"]
+            if not inventory[name]["finite_measure_candidate"]
         ),
         "additivity_reading": (
             "every event-level weight is finitely additive over ANY"
             " disjoint family by construction; DISJOINTNESS is what is"
             " load-bearing, which is why the declared negative control"
             " (a non-additive record-native set function) is carried in"
-            " the inventory and why the independent checker attacks the"
-            " certification with overlapping pseudo-families"
+            " the inventory and why the independent checker exercises the"
+            " summation with disjoint unions not copied from any"
+            " precomputed partition, inclusion-exclusion identities,"
+            " complement identities, and a separate normalization check"
         ),
         "finding": (
             "the inventory is the deliverable: exact pass/fail per"
-            " candidate per axiom, with selection left as the named open"
-            " gate"
+            " candidate per declared bookkeeping predicate, with selection"
+            " left as the named open gate"
         ),
     }
     cert_b["pass"] = bool(
@@ -932,12 +1228,13 @@ def main() -> int:
         and all(
             set(row) >= {
                 "finite_additivity_over_certified_disjoint_families",
-                "normalizable", "permutation_covariance", "admissible",
+                "normalizable", "marginal_symmetry_diagnostics",
+                "finite_measure_candidate",
             }
             for row in inventory.values()
         )
         and all(
-            inventory[name]["admissible"] == bool(
+            inventory[name]["finite_measure_candidate"] == bool(
                 inventory[name][
                     "finite_additivity_over_certified_disjoint_families"]
                 and inventory[name]["normalizable"]
@@ -952,7 +1249,7 @@ def main() -> int:
     fraction_tables = {}
     sums_ok = True
     table_bytes_spent = 0
-    for name in admissible:
+    for name in fm_candidates:
         ledger[name] = {}
         for fam in disjoint_families:
             cell_map = masses_by_family[fam][name]
@@ -1002,7 +1299,8 @@ def main() -> int:
             ledger[name][fam] = emitted
 
     all_pairs = [
-        (a, b) for i, a in enumerate(admissible) for b in admissible[i + 1:]
+        (a, b) for i, a in enumerate(fm_candidates)
+        for b in fm_candidates[i + 1:]
     ]
     disagreement = {}
     for a, b in all_pairs:
@@ -1036,7 +1334,7 @@ def main() -> int:
             " no occurrence rule, no probability, and no update law is"
             " asserted or implied by any number in this table"
         ),
-        "admissible_candidates_tabulated": admissible,
+        "finite_measure_candidates_tabulated": fm_candidates,
         "families_tabulated": disjoint_families,
         "inlined_table_bytes": table_bytes_spent,
         "inlined_table_byte_budget": TOTAL_TABLE_BYTE_BUDGET,
@@ -1050,9 +1348,11 @@ def main() -> int:
             k for k, v in sorted(disagreement.items()) if not v["disagree"]
         ),
         "finding": (
-            "the atom families on which admissible candidates already"
-            " differ are the future experiment surface; pairs that agree"
-            " on every certified family are not separated by any"
+            "the atom families on which finite-measure candidates already"
+            " differ are a mathematical discriminator surface (witness"
+            " cells only; no operational bridge to preparations,"
+            " observables, or sampling is claimed); pairs that agree on"
+            " every certified family are not separated by any"
             " event-fraction bookkeeping over those families"
         ),
     }
@@ -1061,7 +1361,7 @@ def main() -> int:
         and len(disagreement) == len(all_pairs)
         and all(
             ledger[name][fam]["sum_of_fractions"] == "1/1"
-            for name in admissible for fam in disjoint_families
+            for name in fm_candidates for fam in disjoint_families
         )
         and all(
             (v["first_witness_cell"] is not None) == v["disagree"]
@@ -1069,38 +1369,53 @@ def main() -> int:
         )
     )
 
-    # ---- Certificate D: the boundary --------------------------------------
-    axiom_path = AUDIT_INPUT_PATHS[3]
-    axiom_bytes = (ROOT / axiom_path).read_bytes()
-    needle_present = EXCLUSION_NEEDLE in axiom_bytes.decode("utf-8")
+    # ---- Certificate D: the stipulated boundary ----------------------------
+    ledger_labels_ok = all(
+        ledger[name][fam].get("label") == FRACTION_LABEL
+        for name in fm_candidates for fam in disjoint_families
+    )
+    no_selection_marker = not any(
+        "selected" in row for row in inventory.values()
+    )
     cert_d = {
-        "certificate": "D_BOUNDARY_WHAT_IS_NOT_SUPPLIED",
-        "pinned_source": axiom_path,
-        "pinned_sha256": sha256(axiom_bytes).hexdigest(),
-        "pinned_git_blob": git_blob(axiom_bytes),
-        "section": "Open Gates Outside The Axioms",
-        "verbatim_exclusion_list": EXCLUSION_NEEDLE,
-        "verbatim_present_in_pinned_source": needle_present,
+        "certificate": "D_STIPULATED_BOUNDARY",
         "block_boundary": BOUNDARY_STATEMENT,
+        "axiom_surface_disclosure": AXIOM_SURFACE_DISCLOSURE,
+        "no_axiom_text_in_input_closure": not any(
+            p.startswith("docs/") for p in AUDIT_INPUT_PATHS
+        ),
+        "every_ledger_table_carries_bookkeeping_label": ledger_labels_ok,
+        "no_candidate_carries_a_selection_marker": no_selection_marker,
         "explicitly_not_supplied_here": (
-            "an occurrence rule (which admissible possibility a new record"
-            " locks, at which site, with what weight, or at what rate)",
+            "an occurrence rule (which possibility a forming record locks,"
+            " at which site, with what weight, or at what rate)",
             "a probability measure, or any probability interpretation of"
             " the emitted fractions",
             "an update law",
             "a selection among the measure candidates",
             "a Born rule, or any amplitude-to-weight bridge",
+            "any compatibility claim between the finite-measure candidates"
+            " and framework Admissibility",
+        ),
+        "open_obligations": (
+            "the values of the framework's nearest-neighbor-conditioned"
+            " local probability distribution",
+            "a derived lift of that local conditional law through Record"
+            " to these composed event atoms",
+            "an operational bridge from discriminating atoms to"
+            " preparations, observables, and outcome statistics",
         ),
         "finding": (
-            "the block supplies a finite sample space and an admissibility"
-            " inventory; the exclusion list quoted above is untouched by"
-            " anything in this cycle"
+            "the block supplies a finite sample space and a finite-measure"
+            " candidate inventory over a stipulated in-file model, and"
+            " nothing else; the boundary is a statement about THIS block"
+            " only, not a negative theorem about the axiom surface"
         ),
     }
     cert_d["pass"] = bool(
-        needle_present
-        and sha256(axiom_bytes).hexdigest() == EXPECTED_SHA256[axiom_path]
-        and git_blob(axiom_bytes) == EXPECTED_GIT_BLOBS[axiom_path]
+        cert_d["no_axiom_text_in_input_closure"]
+        and ledger_labels_ok
+        and no_selection_marker
     )
 
     # ---- E: controls, including determinism --------------------------------
@@ -1134,19 +1449,19 @@ def main() -> int:
         "A_EVENT_SPACE": cert_a["pass"],
         "B_MEASURE_CANDIDATE_INVENTORY": cert_b["pass"],
         "C_FRACTION_LEDGER": cert_c["pass"],
-        "D_BOUNDARY_WHAT_IS_NOT_SUPPLIED": cert_d["pass"],
+        "D_STIPULATED_BOUNDARY": cert_d["pass"],
         "E_CONTROLS": cert_e["pass"],
     }
     lines = [
         "CYCLE878_EVENT_SPACE_GROUNDWORK",
-        "BORN_GROUNDWORK_STRUCTURAL_ONLY_NO_PROBABILITY_POSTULATE",
+        "EVENT_SPACE_AND_WEIGHTING_INVENTORY_STRUCTURAL_ONLY_NO_PROBABILITY_POSTULATE",
         "EVERY_EMITTED_FRACTION_IS_A_BOOKKEEPING_FRACTION_NOT_A_PROBABILITY",
     ]
     for name, payload in (
         ("A_EVENT_SPACE", cert_a),
         ("B_MEASURE_CANDIDATE_INVENTORY", cert_b),
         ("C_FRACTION_LEDGER", cert_c),
-        ("D_BOUNDARY_WHAT_IS_NOT_SUPPLIED", cert_d),
+        ("D_STIPULATED_BOUNDARY", cert_d),
         ("E_CONTROLS", cert_e),
     ):
         lines.append(
@@ -1157,7 +1472,7 @@ def main() -> int:
         "checks": checks,
         "cycle": 878,
         "event_cardinality": total_events,
-        "admissible_candidates": admissible,
+        "finite_measure_candidates": fm_candidates,
         "discriminating_pairs": cert_c["discriminating_pairs"],
         "runtime_seconds": runtime,
         "pass": all(checks.values()),

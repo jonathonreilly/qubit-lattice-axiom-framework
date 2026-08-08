@@ -750,6 +750,60 @@ print()
 
 
 # ----------------------------------------------------------------------
+# Section 14: N5 execution certificate
+# ----------------------------------------------------------------------
+
+print()
+print("=" * 70)
+print("Section 14: N5 execution certificate")
+print("=" * 70)
+print()
+
+print(
+    "  per_element: exercised only at construction level, and that is the honest ceiling "
+    "here. hermitian_circulant builds the 3x3 matrix from its entries and the runner forms "
+    "the entrywise products H, H@H and H@H@H, but every accepted quantity is a trace of "
+    "those matrices, matched to 3a, 3a^2 + 6r^2 and 3a^3 + 18 a r^2 + 6 r^3 cos(3 phi) "
+    "within 1e-9. Nothing finer is available by construction: V_total = Tr V(H) is a "
+    "spectral function, so it cannot depend on any entry except through the spectrum."
+)
+print(
+    "  per_site: checked and not executed — V(m) is defined on the local Clifford trace "
+    "m = Tr(K_sel) at a single point, and the promotion under test replaces that one real "
+    "coordinate by the three real coordinates (a, r, phi) of the hw=1 orbit at the same "
+    "point. No site index, neighbour coupling or hopping term is written anywhere, so "
+    "there is no site-resolved statement to make; the hypothesis being falsified is "
+    "entirely about one local orbit."
+)
+print(
+    "  per_mode: resolved, and it carries the second of the two routes. The three C_3 "
+    "eigenmodes lambda_k = a + 2 r cos(phi + 2 pi k / 3) are kept individually, the "
+    "angular mode gives dV/dphi = -3 r^3 sin(3 phi) exactly, and Section 10 imposes "
+    "V'(lambda_k) = 0 mode by mode: at L = 0 the roots are lambda in {0, -6}, the four "
+    "realizable C_3 triples are enumerated, and their r^2/a^2 values come out as 0.25, "
+    "1.0 and two degenerate cases — none within 1e-6 of the BAE value 1/2."
+)
+print(
+    "  per_block: resolved as the C_3-isotype split of the coordinates, the trivial block "
+    "carrying a and the doublet block carrying (r, phi). The extremization is genuinely "
+    "done block by block: the doublet angular equation decouples completely to "
+    "sin(3 phi) = 0, fixing eps = cos(3 phi) = +/-1, and only then does the remaining "
+    "coupled pair collapse along r = -eps(6 + 2a) to the single quadratic "
+    "9 a^2 + 54 a + 72 + 2 L = 0, to be compared with the BAE quadratic "
+    "7 a^2 + 48 a + 72 = 0."
+)
+print(
+    "  lattice_wide: checked and not executed — no Z^3 sum, volume or thermodynamic limit "
+    "appears. It would also be inert if added: at a homogeneous configuration a site sum "
+    "multiplies V_total by a constant site count, which leaves dV/da, dV/dr and dV/dphi "
+    "proportional to what is solved here and moves no root. The obstruction is instead "
+    "exhibited at fixed finite size, as an exact comparison of two linearly independent "
+    "quadratics in a whose shared-root condition admits only the two L values printed in "
+    "Section 7, neither of them the retained L."
+)
+
+
+# ----------------------------------------------------------------------
 # Final summary
 # ----------------------------------------------------------------------
 

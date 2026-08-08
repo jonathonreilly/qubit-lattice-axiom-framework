@@ -199,6 +199,50 @@ check("R_physical_is_bare_radian_not_index_phase", abs(delta_pdg - 2 * pi / 9.0)
 
 
 print()
+print("N5 execution certificate: what this runner resolves")
+print(
+    "  per_element: resolved — the mirror action is established componentwise on the "
+    "3-vector of Born weights, not through any scalar summary. For each of 73 azimuth "
+    "nodes the runner compares p(-delta) with the index-permuted p(delta)[0, 2, 1] entry "
+    "by entry and requires the largest componentwise difference below 1e-12, repeats the "
+    "same test on the amplitudes lambda_k, and separately requires the componentwise gap "
+    "between p(+2/9) and p(-2/9) to exceed 1e-3 so the two mirror configurations are "
+    "genuinely different mass orderings."
+)
+print(
+    "  per_site: checked and not executed — the carrier is a three-outcome records simplex "
+    "indexed by generation, and the runner is written on 3-vectors only, with no position "
+    "index, neighbour relation or spatial extent anywhere. A records functional here eats "
+    "one probability vector, so there is no site at which a separate version of the "
+    "mirror-degeneracy statement could be posed."
+)
+print(
+    "  per_mode: resolved — chirality is diagnosed in the C_3 character modes. The odd "
+    "witness A(delta) = sum_k p_k sin(2 pi k / 3) is precisely the imaginary part of the "
+    "C_3 character contracted against the weights, and it is verified odd to 1e-12 across "
+    "the sweep while separating +2/9 from -2/9 above 1e-6. The magnitude source is mode "
+    "arithmetic too: L_3(1, 2) is rebuilt from the cube root z = exp(2 pi i / 3) and the "
+    "family L_d(1, d-1) = (d^2 - 1)/(12 d) is confirmed for d = 2..6, meeting the rank "
+    "fraction only at d = 3."
+)
+print(
+    "  per_block: resolved — the singlet/doublet block split is the content of the cone "
+    "check. The runner normalizes the amplitude vector, projects it onto the democratic "
+    "direction (1, 1, 1)/sqrt(3), and requires the Fisher-Rao polar angle to equal pi/4 to "
+    "1e-12 at every positive-branch node, which is exactly the statement that the singlet "
+    "block and its orthogonal complement carry equal weight, r = 1/2; Q = 2/3 is "
+    "independently held to 1e-12 across the whole sweep."
+)
+print(
+    "  lattice_wide: checked and not executed — there is no lattice, no volume and no "
+    "extensive quantity in this computation; the only sweep is over the azimuth parameter "
+    "delta on 73 nodes of [-pi, pi], which is a parameter range and not a system size. "
+    "Nor would an asymptotic version add anything, because the obstruction is an exact "
+    "identity rather than a trend: every achiral functional tested satisfies "
+    "F(+delta) = F(-delta) to 1e-12 at every node, so the degeneracy is already total at "
+    "fixed finite size."
+)
+print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("VERDICT: Brannen-delta azimuth selection on the C_3 records simplex requires a "
       "chirality-odd functional; every achiral records/Born functional is mirror-degenerate "

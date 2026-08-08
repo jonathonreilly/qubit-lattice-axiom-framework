@@ -327,6 +327,54 @@ check("=> DICHOTOMY: a group preserves the trivial/doublet split (bit defined, b
       "no intermediate group simultaneously defines and pins the value bit")
 
 # ----------------------------------------------------------------------
+# SECTION 9. N5 execution certificate. Reporting only: no check, no count.
+# ----------------------------------------------------------------------
+print()
+print("=" * 78)
+print("SECTION 9.  N5 execution certificate: what this runner resolves")
+print("=" * 78)
+print(
+    "  per_element: resolved — the invariant spaces are computed from explicit elementary "
+    "matrices and read back entry by entry. Symmetric forms are expanded in the six "
+    "elements E_ii and E_ij + E_ji and averaged coefficient-wise, the commutant is built "
+    "from all nine elementary 3x3 matrices, and the conclusions are entrywise identities: "
+    "the unique O_h-invariant form normalizes to eye(3) exactly, and the O_h average of "
+    "the democratic projector equals I/3 entry for entry."
+)
+print(
+    "  per_site: checked and not executed — no lattice, position index or neighbour "
+    "relation is constructed. The three coordinates are the generation axes of one R^3 "
+    "carrier, and the 48 group elements are handled as abstract signed permutations acting "
+    "on that single carrier; nothing in the over-constraint argument refers to where the "
+    "carrier sits or to any second copy of it."
+)
+print(
+    "  per_mode: resolved by dimension counting on the averaging projectors, which is "
+    "exactly a count of invariant modes. The C_3-invariant symmetric forms come out "
+    "2-dimensional, spanned by I and J - I, the O_h-invariant ones exactly 1-dimensional, "
+    "and the split-preserving subgroup C_3v returns to 2. The irreducibility that drives "
+    "the verdict is a mode statement too: R^3 carries the single O_h mode T_1u, confirmed "
+    "by the democratic projector averaging to the isotropic I/3, and the chiral grading is "
+    "identified by its spectrum {+1, -1, -1}."
+)
+print(
+    "  per_block: resolved — the trivial and doublet blocks of the C_3 split are the "
+    "objects whose relative energy sets the value bit, and the runner evaluates them "
+    "separately on three explicit spectra: A^2 : D^2 equal to 1:0, 1:1 and 1:2, returning "
+    "Q = 1/3, 2/3 and 1. The operator side is block-counted as well, the commutant falling "
+    "from 3 parameters under C_3 to a forced scalar under O_h and sitting at 2 under C_3v, "
+    "while on Herm(3) both the Frobenius and the scalar form survive so the "
+    "scalar/traceless block ratio there stays free."
+)
+print(
+    "  lattice_wide: checked and not executed — there is no lattice extent, volume or "
+    "limit in this runner, and adding one could not change the verdict, because every step "
+    "is a dimension count on a fixed 3-dimensional carrier: 48 group elements, invariant "
+    "form dimensions 2, 1 and 2, commutant dimensions 3, 1 and 2. Those integers are "
+    "properties of the representation and are unaffected by how many copies of the carrier "
+    "one lays down."
+)
+
 print()
 print("=" * 78)
 print("VERDICT")

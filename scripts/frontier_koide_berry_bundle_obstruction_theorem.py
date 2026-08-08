@@ -342,6 +342,53 @@ check("(G5) nearby flat connections give distinct holonomies",
       f"|h_near - h_target| = {abs(h_near - h_target):.6f}")
 
 
+# ---------------------------------------------------------------------------
+# (H) N5 execution certificate
+# ---------------------------------------------------------------------------
+
+print("\n(H) N5 execution certificate: what this runner resolves")
+print("-" * 72)
+
+print(
+    "  per_element: resolved — positivity, which is what cuts the physical base out of "
+    "the full circle, is decided coordinate by coordinate: at each of 3601 sampled angles "
+    "the runner requires all three components of the normalized sqrt-mass vector to exceed "
+    "1e-10 individually, and the frame {e_+, u_1, u_2} is confirmed orthonormal by "
+    "comparing basis.T @ basis with the identity entry by entry at 1e-12."
+)
+print(
+    "  per_site: checked and not executed — the three coordinates here are generation "
+    "labels of one sqrt-mass vector in R^3, not sites of a spatial substrate, and no "
+    "position index, neighbour relation or lattice appears anywhere in the argument. The "
+    "obstruction being proved is about the topology of a one-dimensional base and its C_3 "
+    "quotient, which is settled without any notion of where in space it sits."
+)
+print(
+    "  per_mode: resolved — the C_3 representation is split into its singlet and doublet "
+    "modes and each is checked separately. The singlet axis is verified fixed, "
+    "C_3 e_+ = e_+ at 1e-12, while the doublet mode is extracted as the 2x2 matrix of C in "
+    "the (u_1, u_2) frame and matched to the rotation R(2 pi / 3) at 1e-12; the induced "
+    "action on the angular mode is then confirmed as phi -> phi + 2 pi / 3 and "
+    "phi -> phi + 4 pi / 3 at 13 sampled angles to 1e-10."
+)
+print(
+    "  per_block: resolved — the blocks here are the three copies of the fundamental "
+    "domain. The positivity mask is decomposed into connected runs on the periodic angle "
+    "grid and the runner requires exactly three arcs, of equal length to within 5e-3, with "
+    "C_3 carrying the centre of each arc into the positive region. That three-copies-plus-"
+    "free-action structure is exactly what makes the physical quotient a single interval "
+    "rather than a circle."
+)
+print(
+    "  lattice_wide: checked and not executed — there is no Z^3 substrate, no volume and "
+    "no extensive quantity in this computation, so no lattice-wide aggregate exists. The "
+    "global statements that do the work are topological rather than extensive: the Betti "
+    "numbers are computed as ranks of explicit CW boundary matrices on 24-vertex cycle and "
+    "path complexes, giving (1, 1, 0) for the sign-relaxed conic and (1, 0, 0) for the "
+    "quotient interval, and beta_2 = 0 in both cases is what forces c_1 = 0."
+)
+
+
 print()
 print("=" * 72)
 print(f"PASS={PASS} FAIL={FAIL}")

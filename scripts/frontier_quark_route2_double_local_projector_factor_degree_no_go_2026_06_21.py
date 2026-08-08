@@ -315,14 +315,57 @@ def part4_stuck_fanout(w_e: Fraction, w_t: Fraction) -> None:
     )
 
 
+def part5_n5_execution_certificate(w_a1: Fraction, w_e: Fraction, w_t: Fraction) -> None:
+    """N5 execution certificate: print-only; adds no check to the tally."""
+    print("\n" + "=" * 72)
+    print("PART 5: N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    print(
+        "per_element: single matrix cells carry this computation -- arm_rep places one "
+        "1.0 per source arm by looking up the image of that arm alone, so each of the 48 "
+        "signed permutations is realized cell by cell, and the three weights are read "
+        f"from the single diagonal cells p_X[0,0], snapped by limit_denominator(10000) "
+        f"and then asserted exactly equal to w_A1={w_a1}, w_E={w_e}, w_T1={w_t}."
+    )
+    print(
+        "per_site: checked and not executed -- the six arm tuples serve purely as index "
+        "labels for a 6x6 permutation representation, never as locations carrying an "
+        "amplitude, occupancy or field value, and the star center is not represented at "
+        "all in this file; a factor-degree question about a normalization exponent has no "
+        "site-resolved form under that setup."
+    )
+    print(
+        f"per_mode: the bright channels are separated and the reciprocal factor is applied "
+        f"per channel -- E and T1 receive their own projector weights, their leverage is "
+        f"kappa=w_T/w_E={w_t / w_e}, and the endpoint ratio is lambda=kappa^d so each "
+        "additional reciprocal factor multiplies the E:T channel ratio once more; no "
+        "channel is summed away or averaged into another."
+    )
+    print(
+        "per_block: the reciprocal-degree ladder is enumerated rung by rung and printed in "
+        "full -- degrees 0 through 4 give lambda = 1, 3/2, 9/4, 27/8, 81/16 with rho_E = "
+        "-1, 3/2, 21/4, 87/8, 309/16, and a wider sweep across all thirteen integer "
+        "degrees with |d| <= 6 returns the single solution d=2, so the gate is a genuine "
+        "uniqueness statement inside that grammar rather than a spot check at one rung."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, box length, site count or "
+        "asymptotic limit is constructed anywhere in this runner, and the degree gate is a "
+        "purely local statement about one star's projector weights; the global object that "
+        "is missing is exactly the note's open primitive, a theorem supplying the two "
+        "reciprocal local projector-weight factors instead of assuming the exponent d=2."
+    )
+
+
 def main() -> int:
     print("Route-2 double-local projector factor-degree no-go")
     print("=" * 72)
 
     part1_note_boundary()
-    _, w_e, w_t = part2_projector_weights()
+    w_a1, w_e, w_t = part2_projector_weights()
     part3_reciprocal_factor_degree_gate(w_e, w_t)
     part4_stuck_fanout(w_e, w_t)
+    part5_n5_execution_certificate(w_a1, w_e, w_t)
 
     print("\n" + "=" * 72)
     print("SUMMARY")

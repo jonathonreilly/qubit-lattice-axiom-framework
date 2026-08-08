@@ -233,6 +233,44 @@ def main() -> int:
     check("note names the shortest next positive theorem target", "derive e_E := q_E - 1 = rho_E / 6 = 7/8" in note)
     check("note records no audit verdict", "any audit verdict" in note and "This packet does not establish" in note)
 
+    print("\nH. N5 execution certificate")
+    print(
+        "per_element: every rational this packet leans on is derived singly and exactly -- "
+        f"rho_E/6 collapses to {e_e}, q_E to {q_e}, c_TE to {c_te}, the reversal 6*(7/8) "
+        "returns 21/4 and 1+7/8 returns 15/8, the no-lift control at q_E=1 gives -5/3, and "
+        f"on the color side {color_complement} and {f_adj} are formed separately and then "
+        "divided to expose the gap 63/64 between them."
+    )
+    print(
+        "per_site: checked and not executed -- the objects handled in this file are four "
+        f"rational anchors, a {len(current_edges)}-edge equivalence graph and eleven source "
+        "files; the words center and shell occur only inside quoted strings being located "
+        "in other documents, never as constructed columns, so nothing here could carry a "
+        "site index even in principle."
+    )
+    print(
+        "per_mode: checked, and resolved as provenance rather than as arithmetic performed "
+        "here -- the anchor labelled a per-mode lattice coincidence is authenticated purely "
+        "by locating the sentence stating R_lat(3)=7/8 inside the hierarchy note, and the "
+        "thermal ratio I_F/I_B = eta(4)/zeta(4) = 7/8 likewise; no mode sum is taken, no "
+        "eta or zeta value is evaluated, and no mode index is instantiated in this runner."
+    )
+    print(
+        f"per_block: resolved as a per-domain reachability partition -- the "
+        f"{len(UNTYPED_ANCHORS)} anchors are held in separate blocks with their own "
+        "forbidden-token sets, and each block is tested twice, first showing no current "
+        "path to route2_rho_E_21_4 and then showing that adjoining exactly one typed "
+        "bridge edge opens that path; block membership and graph paths are what get "
+        "resolved, not any amplitude."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the very word lattice reaches this file "
+        "only through one anchor's own role label, and nothing with an extent, a volume or "
+        "a limit is built here; the global statement the packet actually rests on is the "
+        "absence of a typed edge from any same-rational anchor into route2_e_E_7_8, which "
+        "is precisely the import the note declines to make and the theorem it leaves owed."
+    )
+
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

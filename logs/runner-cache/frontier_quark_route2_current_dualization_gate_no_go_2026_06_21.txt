@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_current_dualization_gate_no_go_2026_06_21.py
-runner_sha256: eda7a464416411da6cb8e085a3e4db415549dbe51261035bc50c88b1a9238df7
+runner_sha256: 5c24999530295a279023f243e28abb1cebedc6ab7acfc26a1f9b31c042b71bd8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 Route-2 current-bank canonical-dualization gate
@@ -86,6 +86,13 @@ PASS: note avoids overclaim marker: branch-local status-promotion phrase
 PASS: note avoids overclaim marker: future-retention phrase
 PASS: note avoids overclaim marker: promotion-to-retention phrase
 PASS: note avoids overclaim marker: no-future-theorem phrase
+
+PART 5: N5 execution certificate
+per_element: every entry that carries the arithmetic is written out singly -- the antipodal permutation is filled from the explicit index pairing 0<->1, 2<->3, 4<->5 so exactly six of its thirty-six cells are 1, the all-ones projector holds 1/6 in all thirty-six cells, and the three Schur weights w_A1=1/6, w_E=1/3, w_T=1/2 are single diagonal cells P_X[0][0], never traces or column sums.
+per_site: checked and not executed -- the six indices here are antipodally paired arm directions belonging to one octahedral center, so no displacement, coordinate or neighbor label exists to hang a site-resolved claim on; the remaining three parts of this runner scan marker strings across nine authority documents and one source note, which are equally site-free objects.
+per_mode: the O_h channels are separated and normalized independently -- A1, E and T1 each receive their own projector, the same-domain leverage is w_T/w_E=3/2, and the lift law q_X proportional to w_X^(-p) is applied per channel so that lambda=(w_E/w_T)^(-p); that per-channel application is the only place p enters the endpoint at all.
+per_block: resolved on two independent block structures -- first the projector blocks of ranks A1=1, E=2, T=3 which exhaust the six arms, and second the 4 rungs of the dualization staircase, where zero-dual gives (1, 5/6, -1, -2), source-only and readout-only both give (3/2, 5/4, 3/2, -4/3) -- the degeneracy that fixes one-sided dualization at p=1 -- and two-sided gives (9/4, 15/8, 21/4, -8/9).
+lattice_wide: checked and not executed -- there is no box, no site count and no limit anywhere in this file; the nearest whole-system statement it makes is an absence inventory, in which 12 dualization markers are each confirmed missing from the concatenated bank, which counts strings rather than evaluating any amplitude, and the two-sided inverse-Schur source/readout law that would be the global theorem is exactly what is absent.
 
 TOTAL: PASS=62, FAIL=0
 VERDICT: no-go for the current-bank canonical-dual shortcut. The current Route-2 authority bank does not already supply the two-sided inverse-Schur source/readout law; deriving that law remains the next science target.

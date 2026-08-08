@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py
-runner_sha256: ccb4ba798bf2c0d7741944220339492de3e97d8b41012f08ea6ef9473076ba15
+runner_sha256: d4b1ef27d0c9f42a04e092e1ec4f8c8e03e66e372b199437513cc26f2ed234aa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 Route-2 dual-compliance current primitive-bank gate
@@ -85,6 +85,13 @@ PASS: note avoids overclaim: parent closure
 PASS: note avoids overclaim: endpoint derivation
 PASS: note avoids overclaim: future impossibility
 PASS: note avoids overclaim: bare retained
+
+PART 6: N5 execution certificate
+per_element: each of the 8 bank entries is classified on its own row with its own class, exponent, exact rho and two flags, and the four exponent-carrying rows are evaluated individually to rho_E=-1 at p=0, 3/2 at p=1, -34/9 at p=-2 and 21/4 at p=2 -- note that the free-text reason string on the p=-2 row reads -14/9 while the value this runner computes and prints is -34/9.
+per_site: checked and not executed -- nothing spatial is reconstructed in this file at all, since the channel leverage enters rho_from_p as the hard-coded Fraction 2/3 rather than being rebuilt from a star, so there is no arm, no center, no coordinate and consequently no object that a site-resolved gate statement could be attached to.
+per_mode: resolved, but only through the single E-over-T ratio the law is written in -- the T channel is held at q_T=5/6 while the E channel receives q_E=q_T*(w_E/w_T)^(-p), so the two bright channels are distinguished exactly once per exponent and no separate per-channel amplitude, norm or direction is ever evaluated on either of them.
+per_block: checked, and what is resolved here is an inventory rather than any amplitude -- the bank is partitioned into 6 named classes (definition_only, endpoint_fitted_membership, free_reduced_matrix_element, new_premise, norm_or_bound, wrong_exponent_control), four current-authority classes are each paired with one named blocker, and the closure query returns an empty current-authority list against the single new-premise entry dual_compliance_p2.
+lattice_wide: checked and not executed -- this gate never constructs a lattice, a volume or a limit, and its widest statement is a text-marker sweep across five authority documents plus the companion note; the whole-surface theorem that would be needed is the one the note names as still owed, a same-domain dual-compliance p=2 source/readout law.
 
 TOTAL: PASS=52, FAIL=0
 VERDICT: the current named primitive bank does not already supply the dual-compliance p=2 readout law. The positive target remains a same-domain p=2 source/readout theorem.

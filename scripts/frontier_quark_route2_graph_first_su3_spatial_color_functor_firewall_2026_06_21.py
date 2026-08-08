@@ -249,6 +249,50 @@ def main() -> int:
     check("fan-out includes five independent frames", len(fanout) == 5)
 
     print()
+    print("I. N5 execution certificate")
+    print("-" * 72)
+    print(
+        f"per_element: each candidate fraction is pushed through the negative-center map on "
+        f"its own and lands on its own exact slope -- the {len(candidates)} entries give "
+        f"rho_E = {candidates[0].negative_center_rho()}, "
+        f"{candidates[1].negative_center_rho()}, {candidates[2].negative_center_rho()}, "
+        f"{candidates[3].negative_center_rho()}, {candidates[4].negative_center_rho()}, "
+        f"{candidates[5].negative_center_rho()} and {candidates[6].negative_center_rho()} "
+        "respectively, with exactly one of them equal to 21/4."
+    )
+    print(
+        f"per_site: checked, and the seven-site star appears here only as arm bookkeeping -- "
+        f"its sector dimensions ({star_a1_dim}, {star_e_dim}, {star_t1_dim}) are recorded "
+        "and the ratio 3/2 is read off them, but no site is instantiated, the center site "
+        "is never represented at all, and no amplitude is attached to any arm; what is "
+        "resolved at this granularity is a count of representation dimensions, not a field."
+    )
+    print(
+        "per_mode: two entirely separate mode inventories are carried and deliberately not "
+        f"mixed -- on the color side End(C^3) gives adjoint {su3_dim} out of "
+        f"{symmetric_base_dim * symmetric_base_dim} with commutant block dimension "
+        f"{commutant_dim}, while on the spatial side the O_h l=2 sector splits as "
+        f"{e_dim} + {t2_dim} = {l2_dim}; the internal spatial ratios 3/5, 2/5, 3/2 and 2/3 "
+        "are formed mode by mode and none of them reaches 8/9."
+    )
+    print(
+        f"per_block: the graph-first construction is resolved block by block -- a "
+        f"{weak_fiber_dim}-point selected-axis fiber over a {graph_base_dim}-point base, "
+        f"that base splitting as {symmetric_base_dim} + {antisymmetric_base_dim}, the "
+        f"commutant assembling as {symmetric_base_dim}^2 + {antisymmetric_base_dim}^2, and "
+        f"su(3) as {symmetric_base_dim}^2 - 1; a further inventory block of "
+        f"{len(supplied_atoms)} functor atoms records three supplied and five absent, so "
+        "the package is incomplete by enumeration rather than by any amplitude test."
+    )
+    print(
+        "lattice_wide: checked and not executed -- spatial content here is exhausted by two "
+        "fixed representation splittings, and beyond them the runner builds no extent, no "
+        "volume and no limit at all; the whole-system object it reports missing is the typed "
+        "functor itself, specifically the object map, the O_h representation compatibility, "
+        "the scalar rule to c_TE, the sign and center slot, and the matter realization."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

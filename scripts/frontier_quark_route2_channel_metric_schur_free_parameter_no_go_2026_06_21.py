@@ -138,6 +138,53 @@ def ratio_endpoint(lambda_ratio: F) -> tuple[F, F, F]:
     return q_e, rho_e, c_te
 
 
+def n5_execution_certificate(
+    a_e: sp.Rational,
+    a_t: sp.Rational,
+    rank_full: int,
+    rank_et: int,
+) -> None:
+    """N5 execution certificate: print-only, defines and evaluates no check."""
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 88)
+    print(
+        "per_element: resolved on the six oriented arms taken one at a time -- each of "
+        "the 48 signed permutation matrices is built explicitly and its induced arm "
+        "permutation is read entry by entry, and the arm-diagonal projector entries "
+        "w_A1=1/6, w_E=1/3, w_T=1/2 are single matrix entries P_X[0,0], so the leverage "
+        "kappa=w_T/w_E=3/2 is an entrywise ratio and never a summed or averaged quantity."
+    )
+    print(
+        "per_site: checked and not executed -- every object in this runner lives on the "
+        "six-arm star of one octahedral center, the arm tuples carry direction labels "
+        "only and no site coordinate, displacement or neighbor index is ever formed, so "
+        "the runner has no second site against which any site-resolved statement about "
+        "the E:T1 normalization scalar could be made."
+    )
+    print(
+        "per_mode: resolved on the three O_h irreducible channels -- A1, E and T1 are "
+        f"separated by their own projectors of ranks 1, 2 and 3, the invariant symmetric "
+        f"forms span dimension {rank_full} on the full arm space and dimension {rank_et} "
+        "after restriction to E (+) T1, and the mode-weight powers w, w^2, w^-1, w^-2 are "
+        "evaluated one per mode pair to give 2/3, 4/9, 3/2 and 9/4 respectively."
+    )
+    print(
+        "per_block: resolved on the Schur blocks of the Reynolds-projected metric -- the "
+        f"generic integer seed averages to diagonal blocks a_E={a_e} on E and a_T={a_t} on "
+        "T1, each exactly a scalar multiple of its own projector, with the E:T1 cross "
+        "block identically zero; that is the whole content of the free ratio c_E/c_T, "
+        "since two independent block scalars admit ratios 1, 3/2, 9/4, 1/5 and 7 alike."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the classification never leaves the "
+        "single star, so no box length, site count, volume or thermodynamic limit appears "
+        "anywhere in this file; the missing global object is precisely the note's result, "
+        "namely an inverse-square normalization law c_X proportional to w_X^-2 that would "
+        "have to be supplied as a new primitive rather than derived here."
+    )
+
+
 def main() -> int:
     print("Route-2 channel metric Schur-free-parameter no-go")
     print("=" * 88)
@@ -279,6 +326,8 @@ def main() -> int:
         all_invariant,
         f"checked ratios={free_ratio_examples}",
     )
+
+    n5_execution_certificate(a_e, a_t, rank_full, rank_et)
 
     print("\n" + "=" * 88)
     print(f"PASS={PASS} FAIL={FAIL}")

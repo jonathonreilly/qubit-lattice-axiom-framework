@@ -294,6 +294,57 @@ def part4_low_rational_firewall() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only; it registers no new check."""
+    print("\n" + "=" * 72)
+    print("  N5 Execution Certificate")
+    print("=" * 72)
+    print()
+    candidates = low_rational_family()
+    admissible = [
+        rho
+        for rho in candidates
+        if e_center_blind_signature(ReducedReadout(rho))
+        == e_center_blind_signature(ReducedReadout(Fraction(0)))
+    ]
+    print(
+        "  per_element: the whole no-go turns on one coordinate of the four-component "
+        "carrier -- subtracting E-shell from E-center leaves (0, 0, 1/6, 0), so d_E is "
+        "the single slot rho_E can reach through beta_E*d_E, and that is why the four "
+        "tested slopes -1, 0, 1 and 21/4 move the E-center image through 5/6, 1, 7/6 and "
+        "15/8 while leaving every other component untouched."
+    )
+    print(
+        "  per_site: resolved at both site roles on both channels -- shell and center "
+        "vectors are built separately for E and for T, the readout is applied to all four "
+        "of them, and the center-over-shell ratios are taken per channel to give q_T=5/6 "
+        "against a free q_E; what is absent is any finer site structure, since the six "
+        "shell arms are never individually addressed and no coordinate is carried."
+    )
+    print(
+        "  per_mode: the two channels are separated by the readout's own block form -- "
+        "apply returns alpha_E*x_E + beta_E*d_E in the first slot and alpha_T*x_T + "
+        "beta_T*d_T in the second, so with alpha_T=-2 and beta_T=2 the T mode is pinned "
+        "at T-shell -2 and T-center -5/3, and the residual sits wholly in the E mode; the "
+        "second slot is exactly 0 on both E vectors, so no cross-channel leakage exists."
+    )
+    print(
+        "  per_block: resolved as an exact subspace-rank statement -- the E-center-blind "
+        "block spanned by E-shell, T-shell and T-center has rank 3, the full carrier basis "
+        "has rank 4, and the lift direction fails to lie in the blind span, raising the "
+        "rank from 3 to 4; that missing dimension is the entire content of the blindness, "
+        "not an approximation or a tolerance."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- this runner works inside one "
+        "four-dimensional endpoint carrier and never sums over sites, grows a box or takes "
+        f"a limit; its widest sweep is a finite grammar of {len(candidates)} distinct low "
+        f"rationals of which all {len(admissible)} are E-center-blind admissible, which "
+        "counts candidates rather than evaluating any extended field, and the global "
+        "object still owed is the E-center lift the summary names."
+    )
+
+
 def part5_summary() -> None:
     print("\n" + "=" * 72)
     print("PART 5: Summary")
@@ -322,6 +373,7 @@ def main() -> int:
     part2_invariance()
     part3_target_equivalence()
     part4_low_rational_firewall()
+    n5_execution_certificate()
     part5_summary()
 
     print("\n" + "=" * 72)

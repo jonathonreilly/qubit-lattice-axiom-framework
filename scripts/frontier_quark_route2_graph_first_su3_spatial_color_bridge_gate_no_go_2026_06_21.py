@@ -175,6 +175,46 @@ def part4_companion_note() -> None:
         check(f"note avoids overclaim: {label}", phrase not in text)
 
 
+def part5_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only; it registers no check."""
+    print()
+    print("PART 5: N5 execution certificate")
+    print(
+        "per_element: checked, and what is resolved here is a count and nothing more -- no "
+        "matrix element of End(R^3) is ever written down, no basis is constructed and no "
+        "amplitude is evaluated; the nine elements enter only as the integer 9 against "
+        "which the sector sizes 1, 3, 5, 2 and 3 are balanced, so every statement in this "
+        "runner is a dimension statement rather than a statement about any entry."
+    )
+    print(
+        "per_site: checked and not executed -- the three in R^3 arrives as the spatial axis "
+        "count granted by the graph-first steelman, not as a set of lattice positions, and "
+        "the runner builds no star, no neighbor relation and no coordinate; a bridge gate "
+        "phrased entirely in sector dimensions has no place for a site index."
+    )
+    print(
+        "per_mode: resolved sector by sector, which is the real content here -- the scalar "
+        "A1 carries 1, the antisymmetric T1 carries 3, the symmetric-traceless spin-2 "
+        "sector carries 5, and inside that sector the cubic E carries 2 against T2's 3; "
+        "thirteen distinct ratios are then formed among these modes and each is compared "
+        "against 8/9 individually, with exactly one match and it is not an E/T2 ratio."
+    )
+    print(
+        "per_block: resolved as an exact two-stage partition -- 9 = 1 + 3 + 5 splits "
+        "End(R^3) into singlet and traceless adjoint blocks, and 5 = 2 + 3 splits the "
+        "spin-2 block into its cubic sub-blocks, so 8/9 is pinned as the adjoint block over "
+        "the whole space while c_TE is an internal ratio of the spin-2 block; every block "
+        "ratio formed is strictly positive, so none of them can carry the sign c_TE needs."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the argument would read identically at "
+        "any system size, because it never leaves a single nine-dimensional matrix space "
+        "and constructs neither a volume, a site count nor a limit of any kind; "
+        "the global object still missing is the extra readout functional or orientation "
+        "selector the verdict names, which no dimension count can supply."
+    )
+
+
 def main() -> int:
     print("Route-2 graph-first SU(3) spatial-color bridge gate")
     print("Status: no-go for the graph-first spatial-color escape; not an audit verdict.")
@@ -184,6 +224,7 @@ def main() -> int:
     part2_spatial_matrix_decomposition()
     part3_bridge_failure()
     part4_companion_note()
+    part5_n5_execution_certificate()
     print()
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0:

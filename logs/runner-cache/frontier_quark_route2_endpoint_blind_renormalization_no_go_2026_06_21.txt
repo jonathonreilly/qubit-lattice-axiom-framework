@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py
-runner_sha256: a9ec119e697d28a1fd2d2689d71aaa638cc8b20a3de26993d0ac4a556709b9e9
+runner_sha256: 962945217dc493749ac4604ae9ff1f3ef21ab725da532a372be6489853a44da1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 Route-2 endpoint-blind renormalization no-go
@@ -37,6 +37,14 @@ N    q_T         q_E         lambda=q_E/q_T   common->q_T gives q_E   common->q_
     C_lambda(N)=(9/4)/lambda(N): N=17: +0.076, N=19: +0.245, N=21: +0.341, N=25: +0.452, N=29: +0.518
 [FIREWALL] PASS: the paired note carries the claim-status and forbidden-import firewall
     required boundary phrases present
+
+N5 execution certificate
+--------------------------------------------------------------------------------------
+per_element: the invariance is derived on four independent endpoint amplitudes held as separate nonzero symbols, g_E(center), g_E(shell), g_T(center) and g_T(shell), each multiplied by its own channel factor and its own role factor before the ratios are rebuilt; it is that per-amplitude bookkeeping, not a numerical fit, that makes c_E and c_T cancel identically in q_E and q_T alike.
+per_site: resolved at the two star roles, and unusually for this stack the roles are given their own independent rescalings r_center and r_shell -- the symbolic outcome is that the single surviving common factor is exactly r_center/r_shell, so a separable scheme can move the role ratio and nothing else; no individual arm or coordinate is represented, since the site sums live upstream in the box scan.
+per_mode: both bright channels are given their own free factor and both drop out -- c_E and c_T cancel between center and shell in their own channel, which leaves lambda=q_E/q_T exactly invariant, and that single mode-ratio invariance is the entire no-go; the parsed table then keeps q_T and q_E as separate columns for all 8 boxes so the two modes are never averaged together.
+per_block: the boxes are split into the N=15 pinning row and a 5-row bulk block, and each block is judged against its own named threshold -- exactly one row lies within 0.02 of 9/4, every bulk row sits further than 1.0 away, every bulk row fails the fix-q_T repair by more than 1.0 and the fix-q_E repair by more than 0.25, and the counterterm block spreads by more than 0.25 while staying more than 0.45 away from unity throughout.
+lattice_wide: executed at finite volume only, and certified as exactly that -- the evidence spans 8 boxes up to N=29, read from a stored upstream scan rather than recomputed here, and no thermodynamic or infinite-volume limit is taken anywhere in this file; the boundary proved is algebraic and holds box by box, and the rescue it leaves open, a nonseparable E-specific center/shell counterterm, is the missing readout primitive restated.
 
 Verdict:
 Endpoint-blind/separable finite-box renormalizations cannot rescue the Route-2 endpoint triple. They preserve lambda=q_E/q_T, and the live bulk lambda rows miss 9/4.  A rescue therefore needs a nonseparable E-specific center/shell counterterm, which is the missing E-center readout datum rather than a harmless size-stable normalization.

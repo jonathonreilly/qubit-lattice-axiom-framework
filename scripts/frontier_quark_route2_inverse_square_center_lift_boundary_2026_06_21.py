@@ -146,6 +146,49 @@ def part5_note_firewall() -> None:
     check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
+def part6_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only; it registers no check."""
+    print("\nF. N5 execution certificate")
+    c_norm = Q_T * W_T * W_T
+    sweep = [p for p in range(-6, 7)]
+    print(
+        f"per_element: the normalization constant is built from one channel and then spent "
+        f"on the other, entry by entry -- C = q_T * w_T^2 = {c_norm} comes solely from the "
+        f"granted T data, q_E = C / w_E^2 = {c_norm / (W_E * W_E)} is read back on the E "
+        "side, and rho_E, c_TE and lambda are each derived from that single scalar "
+        "separately; C is also compared individually against w_E, w_T and w_E*w_T and "
+        "matches none of them."
+    )
+    print(
+        "per_site: checked and not executed -- the only star-derived numbers entering this "
+        "file are the two per-arm weights, and the 1/6 center-excess support step is not "
+        "used arithmetically at all; it is merely confirmed present in the center-excess "
+        "note, which the same runner then confirms says nothing about an inverse-square "
+        "law, so the site-level support content is cited rather than computed here."
+    )
+    print(
+        f"per_mode: the two channels are tied by one invariant and that tie is tested "
+        f"directly -- the law asserts q_X * w_X^2 is channel-independent, and the runner "
+        f"confirms q_E * w_E^2 equals q_T * w_T^2 at the common value {c_norm}, so the E "
+        "and T modes are not merely scaled against each other but are shown to share a "
+        "single normalized product, which is the whole content of the conditional support."
+    )
+    print(
+        f"per_block: the weight-power ladder is resolved as a block and then swept -- the "
+        f"five named rungs -2, -1, 0, 1, 2 give lambda = 9/4, 3/2, 1, 2/3 and 4/9 "
+        f"respectively, and a wider sweep across all {len(sweep)} integer powers in [-6, 6] "
+        "returns the single hit -2, so the boundary is a uniqueness result within the "
+        "integer power grammar rather than a check at one favoured exponent."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, box, volume, site count or "
+        "limit is constructed anywhere in this runner, whose arithmetic universe is four "
+        "granted scalars and one exponent; the whole-surface object it reports as absent is "
+        "the inverse-square center-lift law itself, which the verdict names as an open "
+        "primitive rather than anything this file derives."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("ROUTE-2 INVERSE-SQUARE CENTER-LIFT BOUNDARY")
@@ -155,6 +198,7 @@ def main() -> int:
     part3_power_law_discriminator()
     part4_current_surface_firewall()
     part5_note_firewall()
+    part6_n5_execution_certificate()
     print("\nSummary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

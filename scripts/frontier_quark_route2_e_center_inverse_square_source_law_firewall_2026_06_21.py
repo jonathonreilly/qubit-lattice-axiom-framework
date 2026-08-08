@@ -364,6 +364,44 @@ def main() -> int:
         and "derive the inverse-square source/readout law" in note,
     )
 
+    print("\nN5 execution certificate")
+    print(
+        f"per_element: every law in the scan is evaluated as its own isolated pair -- the "
+        f"{len(law_expectations)} falsifier rows return (q_E, rho_E) equal to (15/8, 21/4) "
+        "at p=-2, (5/4, 3/2) at p=-1, (5/6, -1) at p=0, (5/9, -8/3) at p=1 and "
+        "(10/27, -34/9) at p=2, and the endpoint scalars q_T, q_E, lambda and c_TE are "
+        "each formed separately before any of them are compared."
+    )
+    print(
+        "per_site: checked and not executed -- the seven-site geometry survives in this "
+        "file only as the bare center denominator 6 sitting in a default argument and the "
+        "two weight literals inside lambda_from_power, with the 1/6 support step "
+        "corroborated by locating its formula in the center-excess note; no arm is "
+        "enumerated, no star assembled, and the O_h source is itself only text-checked."
+    )
+    print(
+        f"per_mode: the channel split does all the work and is kept explicit -- the T1 mode "
+        f"is held at q_T={q_t} while the E mode absorbs the entire law through "
+        f"lambda=(w_E/w_T1)^p built from w_E={w_e} and w_T1={w_t}, so the leverage "
+        f"{leverage} and its square {leverage ** 2} are mode ratios and every falsifier "
+        "moves the E channel alone with the T channel never re-derived."
+    )
+    print(
+        f"per_block: the exponent ladder is swept as a block and closed two ways -- across "
+        f"all {len(powers)} integer powers from -4 to 4 the target 9/4 is hit at exactly "
+        f"one exponent, and separately the whole nonnegative block p=0..4 yields "
+        f"{nonnegative_lambdas} which is bounded above by 1 and therefore cannot reach 9/4 "
+        f"at all; a further {len(fanout)}-frame fan-out block records one orthogonal "
+        "obstruction per frame."
+    )
+    print(
+        "lattice_wide: checked and not executed -- nothing in this runner builds a box, a "
+        "site count or a limit, and the two infinite-volume statements it touches are "
+        "located as literal substrings in the box-size-scan and measured-calibration "
+        "notes, so the bulk-limit closure is inherited as provenance rather than "
+        "recomputed; the global law still owed is the inverse-square one the note names."
+    )
+
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     print(

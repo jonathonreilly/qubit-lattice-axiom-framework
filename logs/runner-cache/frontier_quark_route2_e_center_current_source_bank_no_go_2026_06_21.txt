@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
-runner_sha256: 6a733f2125889bed971557b0f23dc0d63d14ee80dc3a5dcad6ff7346ae78a85a
+runner_sha256: c11812ee0f0a36c6c8d92baf2211611f57ab0e989b6f10ca5501f764080905b8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 Route-2 E-center current source-bank no-go verifier
@@ -29,6 +29,14 @@ PASS: adding q_E=15/8 would conditionally pin rho_E=21/4
 PASS: wrong color count falsifies an untyped F_adj recipe (N_c=2 recipe gives rho=22/3)
 PASS: a third positive sample shares the bank but gives a third E-center value
 PASS: note records the exact counter-witness pair
+========================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================
+per_element: the source bank is compared field by field, all 9 of them -- delta_step=1/6, q_T=5/6, s_TE=-2, F_adj=8/9, kappa=3/2, kappa^2=9/4 and the three booleans agree exactly for rho_E=0, rho_E=1 and rho_E=21/4, while over the same three rows q_E runs 1, 7/6, 15/8 and c_TE runs -5/3, -10/7, -8/9.
+per_site: checked and not executed -- the one site-derived number in this file is the center-minus-arm-mean support step 1/6, which arrives as a bare constant and is corroborated only by locating its formula as a string in the center-excess authority; no seven-site star is assembled here, no arm mean is summed, and no per-site amplitude is ever evaluated.
+per_mode: the two bright channels are separated and only one of them moves -- the T channel is held at q_T=5/6 with shell ratio s_TE=-2 across every row, so the entire variation lands in the E channel through c_TE; the companion Schur statement that Hom(E,T1) vanishes is carried in the record as a fixed boolean flag (True) and is asserted, not computed, here.
+per_block: resolved twice over, once as whole-record equality and once as an inventory of closure blocks -- the frozen dataclass comparison bank_zero == bank_target is a single block-level test rather than a conjunction of field tests, and three separate added premises each solve to 21/4 (c_TE=-F_adj, q_E/q_T=kappa^2, q_E=15/8) against one falsifying N_c=2 block that gives 22/3.
+lattice_wide: checked and not executed -- no box, site count, volume or limit is constructed anywhere in this runner; the only infinite-volume language it touches is a substring search confirming that another note calls its calibration an exact infinite-volume identification, which authenticates that note's wording and evaluates nothing, and the missing global object remains the E-center lift itself.
 ========================================================================
 TOTAL: PASS=21, FAIL=0
 

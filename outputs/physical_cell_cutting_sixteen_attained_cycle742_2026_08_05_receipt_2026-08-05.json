@@ -1,0 +1,187 @@
+{
+ "cycle": 742,
+ "failures": 0,
+ "gates": 55,
+ "headline": "On every single orbit of the 48 cutting symmetries the linear system for each of the six charges is inconsistent, so no charge lives on one orbit alone; complete enumeration of the two enumerable pair codes finds exactly 36 weight-sixteen carriers of the four reading, 24 in one pair and 6 in each of two partner pairs, so the floor of sixteen from the previous cycle is attained and the four charge needs exactly sixteen pieces. Two further incidence automorphisms, built by seeded refinement of the exact overlap table, fix all eight readings and extend the 48 cutting symmetries to a group transitive on all 192 pieces; under the extended group the 36 carriers grow to 120 weight-sixteen carriers falling into orbits of sizes 12, 12, 24, 24 and 48. Recorded witness cuttings pin the remaining charges into narrow intervals - four-flip between sixteen and twenty, six and six-flip between sixteen and twenty-four, seven and seven-flip between sixteen and thirty - while the one reading is no charge: its least carriers have weight twelve.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "extended_group": {
+   "closure_of_census": 120,
+   "extended_orbit_sizes": [
+    12,
+    12,
+    24,
+    24,
+    48
+   ],
+   "new_automorphisms_fixing_all_readings": 2,
+   "profile_counts": [
+    [
+     [
+      0,
+      0,
+      8,
+      8
+     ],
+     36
+    ],
+    [
+     [
+      0,
+      8,
+      0,
+      8
+     ],
+     6
+    ],
+    [
+     [
+      8,
+      0,
+      8,
+      0
+     ],
+     6
+    ],
+    [
+     [
+      8,
+      8,
+      0,
+      0
+     ],
+     24
+    ],
+    [
+     [
+      4,
+      4,
+      4,
+      4
+     ],
+     24
+    ],
+    [
+     [
+      6,
+      6,
+      2,
+      2
+     ],
+     24
+    ]
+   ],
+   "transitive_on_pieces": 192,
+   "words_meeting_at_least_three_orbits": 48
+  },
+  "first_pair_enumerator": {
+   "four_coset_least_weight": 16,
+   "four_coset_words_at_least_weight": 24,
+   "kernel_words": 32768,
+   "palindromic": true,
+   "six_and_seven_flip_cosets_constant_weight": 48,
+   "weights_multiple_of_eight": true
+  },
+  "one_reading": {
+   "is_a_charge": false,
+   "least_weight": 12,
+   "least_weight_carriers": 16
+  },
+  "pair_kernels": {
+   "dimensions": [
+    15,
+    16,
+    16,
+    27,
+    27,
+    37
+   ],
+   "first_pair_keeps": [
+    "zero",
+    "four",
+    "six",
+    "seven-flip"
+   ],
+   "other_five_pairs_keep": [
+    "zero",
+    "one",
+    "four",
+    "four-flip"
+   ],
+   "pairs_carrying_six_flip_or_seven": 0
+  },
+  "reproductions": {
+   "distinct_cuttings": 15800,
+   "distinct_supports": 15800,
+   "gram_diagonal_constant": 1975,
+   "pieces": 192,
+   "uses_per_piece": 1975
+  },
+  "single_orbits": {
+   "augmented_ranks_for_four": [
+    49,
+    49,
+    42,
+    42
+   ],
+   "charges_carried_by_any_single_orbit": 0,
+   "orbit_ranks": [
+    48,
+    48,
+    41,
+    41
+   ]
+  },
+  "weight_sixteen_census": {
+   "distinct_four_carriers": 36,
+   "forty_eight_orbit_splits": [
+    [
+     6,
+     6,
+     6,
+     6
+    ],
+    [
+     6
+    ],
+    [
+     6
+    ]
+   ],
+   "per_pair": [
+    24,
+    6,
+    6
+   ],
+   "stabilizer_order": 8
+  },
+  "witness_intervals": {
+   "four": [
+    16,
+    16
+   ],
+   "four_flip": [
+    16,
+    20
+   ],
+   "seven": [
+    16,
+    30
+   ],
+   "seven_flip": [
+    16,
+    30
+   ],
+   "six": [
+    16,
+    24
+   ],
+   "six_flip": [
+    16,
+    24
+   ]
+  }
+ }
+}

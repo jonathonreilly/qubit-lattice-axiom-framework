@@ -78,6 +78,45 @@ P=sum(1 for _,o in R if o); F=sum(1 for _,o in R if not o)
 for l,o in R: print(("PASS" if o else "FAIL"),"-",l)
 print("\n%d PASS, %d FAIL"%(P,F))
 if F: raise SystemExit(1)
+print("\nN5 EXECUTION CERTIFICATE")
+print(
+    "per_element: symbolic equality is demanded on whole arrays here, not on "
+    "summary invariants - the mass circulant is assembled from the cyclic "
+    "permutation written out as an explicit 3x3 array, and the squared Dirac "
+    "identity is settled by requiring D*D minus the block diagonal to simplify to "
+    "the 6x6 zero matrix, all thirty-six entries at once, while the eigenvector "
+    "relation is likewise driven to the 3x1 zero column"
+)
+print(
+    "per_site: checked and not executed - the three indices carried through this "
+    "file are generation labels on a C_3 circulant rather than positions, so no "
+    "lattice coordinate, spacing or hopping term is written anywhere, and the "
+    "doubling that produces the six-dimensional block is an internal left-right "
+    "chirality label and not a second site"
+)
+print(
+    "per_mode: the three C_3 Fourier vectors are constructed one at a time as (1, "
+    "w^k, w^(2k)) and each is separately shown to be an exact eigenvector with "
+    "eigenvalue a + b w^k + bbar w^(2k), which is what makes the coupling "
+    "parameter drop out of the eigenbasis, and the Koide readout is then rebuilt "
+    "as a sum over those same three mode values"
+)
+print(
+    "per_block: the off-diagonal chiral arrangement is the object the theorem is "
+    "about - the Dirac operator is written as the block form with the mass matrix "
+    "above the diagonal and its adjoint below, its determinant is shown to equal "
+    "minus the squared modulus of det M so that the odd block size supplies the "
+    "sign, and its square is shown to be exactly the two positive semidefinite "
+    "diagonal blocks"
+)
+print(
+    "lattice_wide: checked and not executed - a six-by-six symbolic matrix over "
+    "one generation triple is as far as this file ever reaches, with no extent, "
+    "no volume and no sequence of sizes, and the residual the runner itself "
+    "records names what a whole-system statement would still need: an unforced "
+    "sign convention for the square-root masses together with a "
+    "readout-to-branch-selection bridge that stays open"
+)
 print("\nBLOCK-2 (bounded): on the current A_min matrix surface, a 3-generation Dirac block determinant is\n"
       "-|det M|^2 (odd-block sign; second-order) and the singular-value readout is sign-blind; the L-R coupling\n"
       "M(b)(x)sigma_+ is Berry-flat (factorizes) so it does NOT reach r=1/2 by this algebraic route. The residual\n"

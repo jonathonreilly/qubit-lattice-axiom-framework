@@ -182,6 +182,52 @@ def main():
     print("\n" + "=" * 94)
     print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
     print("=" * 94)
+
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: checked and not executed - not one array, operator or "
+        "matrix is constructed anywhere in this file. Everything it does is scalar "
+        "float arithmetic: numpy is imported solely for pi, log10 and exp, and the "
+        "quantity under discussion, delta v, is a single number rather than a "
+        "coefficient sitting in some structured object, so there is no matrix "
+        "element here to resolve."
+    )
+    print(
+        "  per_site: checked and not executed - the substrate enters this file only "
+        "through two scalar identifications and is never built: the Wilson "
+        "bare-coupling relation beta = 2N/g^2 evaluated at beta = 6 with N = 3, "
+        "giving exactly g^2 = 1, and the identification of the inverse spacing with "
+        "M_Pl = 1.22e19 GeV. There is no spacing array, no neighbour rule and no "
+        "site index."
+    )
+    print(
+        "  per_mode: checked and not executed - the power-divergent loop that is "
+        "said to regenerate the marginal coefficient is never evaluated. Its "
+        "outcome is supplied in closed order-of-magnitude form as alpha_s/(4pi), "
+        "which with g^2 = 1 is the exact constant 1/(16*pi^2), so no loop momentum, "
+        "no shell integration and no individual mode ever enters the arithmetic."
+    )
+    print(
+        "  per_block: inventory-only - the four comparator rows named photon, "
+        "electron, nucleon and quark/gluon are a typed-in table of (label, bound, "
+        "mu) triples taken from the SME/Kostelecky-Russell literature, not sectors "
+        "this runner decomposes anything into. Each row is pushed through the same "
+        "single expression, gamma_crit = log10(dv_UV/bound)/log10(M_Pl/mu), so the "
+        "per-row spread reflects the imported inputs rather than any block "
+        "structure computed here."
+    )
+    print(
+        "  lattice_wide: checked and not executed - the widest thing computed is "
+        "one scalar suppression factor (mu/M_Pl)^gamma at mu = 1 GeV for gamma in "
+        "{0.1, 0.2, 0.3}, plus a single e-fold estimate exp(-1). The runner states "
+        "its own limits in its closing lines: it does not derive the regeneration "
+        "coefficient, the physical gamma range, or the absence of hidden protection "
+        "mechanisms, so nothing whole-system is being established."
+    )
     return 0 if FAIL == 0 else 1
 
 

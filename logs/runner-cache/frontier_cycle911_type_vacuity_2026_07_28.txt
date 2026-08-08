@@ -1,113 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle911_type_vacuity_2026_07_28.py
-runner_sha256: 6474f1e919c97fcb3336a8cea480b5e824fe48f4ea5ce4592c1b75bc0b0007d1
-timeout_sec: 900
+runner_sha256: b5c683e35ef17cb321540f43e8b8a0f5a8f5b0939753e892bae8ea055fa354bc
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 104.922
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
-CYCLE 911 -- THE TYPE OF THE BORN LANE'S OBJECT, AND THE VACUITY QUESTION
 ==============================================================================
-  every fraction below: bookkeeping fraction, not probability
+CYCLE 911 -- CENSUS-CONSISTENCY ARITHMETIC AND THE DECLARED-LIKELIHOOD LEMMA
+==============================================================================
 
-CERTIFICATE A_PINS PASS  (18 pinned inputs, firewall hits 0, blocked modules loaded [])
-CERTIFICATE B_RESTRICTION_GATE PASS  41/41 gates reproduce
+SCOPE: self-contained.  The unlanded substrate closure is removed;
+the worlds/setups re-typing is a CONVENTION recorded in a separate
+meta note and asserted nowhere in this runner; the likelihood lemma
+is conditional on declared model imports named in the receipt.
 
-C1 -- THE SAMPLE-SPACE PREMISE A-SAMPLE, NAMED AND TESTED
-------------------------------------------------------------------------------
-  census keys 748 = 187 position sets x 4 event seeds; k in [2, 3, 4, 5]; stations 11
-  state vectors: one per key, width 5815; distinct tick-0 state vectors 323
-  reading (i) co-present sub-registers of ONE configuration: False
-  reading (ii) alternative initial conditions of the same law: True
-  NO-COUPLING AST SWEEP: {'statements': 34166, 'augassign_bitxor': 34166, 'subscript_targets': 34166, 'bitand_nodes': 39688, 'constant_masks': 73854, 'column_reads': 39688}
-     violations []; planted cross-lane shift detected True
-     runtime perturbation witness: 6 samples, 24 orbits each, total leak outside the perturbed lane's own bit = 0
-  BRANCH MATRIX over 279378 world pairs:
-      SETUP_DIFFERS_AT_TICK_0                274210
-      SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY    5168
-      pairs sharing a tick-0 state               5168
-      of those, also sharing a schedule          0
-      co-simulated sample 1024, diverged 1024, first-divergence histogram {1: 584, 2: 154, 3: 109, 4: 67, 5: 43, 6: 28, 7: 19, 8: 13, 9: 7}
-      BRANCH PAIRS FOUND: 0   planted branch pair detected: True
-  setup coordinates that differ: {'event': 1122, 'event|positions': 64944, 'k|event|positions': 143748, 'k|positions': 47916, 'positions': 21648}
-  C1 VERDICT: WORLDS-ARE-SETUPS
-  the weighting question on this census is APPORTIONMENT OVER ALTERNATIVE INITIAL CONDITIONS, not occurrence weighting over dynamical alternatives.  The realized-state primitive addresses exactly that object and forbids it: "Nothing more is supplied: no averaging over alternatives...".  So the Born lane's weightings are not occurrence weights on this census, and P-SAMPLE-SPACE must be carried by every consumer.
+-- stipulated recorded census -------------------------------------------
+  position_sets: 187
+  event_seeds: 4
+  census_worlds: 748
+  world_pairs: 279378
+  shared_tick0_pairs: 5168
+  distinct_tick0_vectors: 323
+  lock_points: 164
+  menu_size_at_every_lock_point: 2
+  recorded_branch_pairs: 0
 
-C2 -- SINGLETON AVAILABILITY AT FORMATION
-------------------------------------------------------------------------------
-  formation events: 164; lock boundaries [0, 162183]; locks at moment 0: 24
-  |A| histogram OP_PREPARE     {2: 164}
-  |A| histogram OP_ORBIT       {2: 164}
-  |A| histogram OP_SATURATION (corrected)  {0: 164}   as pinned-863 slices it {0: 161, 2: 3}   (constructor errors 0)
-  PINNED-863 CHUNK-SLICING DEFECT: word length 6212 over 11 stations, divisible=False, per-step gate counts [757, 861, 764, 861, 13, 504, 368, 605, 378, 598, 503]
-  O3 vacuous on this census: False
-  FIRST GENUINE SELECTION SITE: world 176 key (3, 0, (0, 2, 4)) at boundary 0, menu [(1, 0), (0, 1)] (orbit-consistent: [(1, 0), (0, 1)])
-  restricted-menu falsifier detected: True
-  MENU-MULTIPLICITY SPECTRUM over the classified covariant rule space:
-      k=2  proper orbits   10  classes realized 3  class sizes {'0': 67, '1': 3, '2': 94}  achievable |A| assignments 27  distinct distributions 27
-      k=3  proper orbits   57  classes realized 6  class sizes {'0': 67, '1': 2, '2': 1, '3': 45, '4': 48, '5': 1}  achievable |A| assignments 729  distinct distributions 378
-      k=4  proper orbits  240  classes realized 7  class sizes {'0': 67, '1': 2, '2': 1, '4': 31, '5': 24, '6': 25, '8': 14}  achievable |A| assignments 2187  distinct distributions 1821
-  with the chunk boundaries corrected, the Cycle-863 saturation diagnostic returns |A| = 0 at 164 of 164 realized formation events; as the pinned Cycle-863 source actually slices the word it returns {0: 161, 2: 3}.  A menu that is EMPTY at a realized record-write is a reductio on the diagnostic, not on the census: the one-chunk flags-clean test is a saturation probe, not the admissibility menu.  Formation-as-saturation is REFUTED at full census scale under BOTH readings, extending the pinned Cycle-863 bounded sample
+CLAIMS_JSON: {"computed_world_pairs":279378,"lemma_trials":390,"lemma_violations":0,"merged_atom_control":true,"science_digest":"73a7419a4f4337b10c783bee13b3fb434dca0125d953064b82600b59ce710bae"}
 
-C3 -- THE REALIZATION DILEMMA, AND THE O1 CORRECTION
-------------------------------------------------------------------------------
-  878 note, byte-quoted: '**92,260\nrealized record-write events**'
-      M3_OCCUPATION_WEIGHTED     zero on  73088 / 92260  = 18272/23065  (= 365440/4613% exactly, 79.22% rounded)  [bookkeeping fraction, not probability]
-      M4_FORMATION_LIFETIME      zero on  73088 / 92260  = 18272/23065  (= 365440/4613% exactly, 79.22% rounded)  [bookkeeping fraction, not probability]
-      M5_FORMATION_MOMENT        zero on  76184 / 92260  = 19046/23065  (= 380920/4613% exactly, 82.58% rounded)  [bookkeeping fraction, not probability]
-      M6_ABSOLUTE_ORBIT_UNIFORM  zero on  90841 / 92260  = 90841/92260  (= 454205/4613% exactly, 98.46% rounded)  [bookkeeping fraction, not probability]
-  EITHER the Born lane's weightings are not occurrence weights -- C1's certified verdict, since the 748 worlds are alternative setups of one law and the realized-state primitive forbids averaging over them -- OR every interface-surviving candidate assigns NON-OCCURRENCE to between 79.22% and 98.46% (exact fractions in the rows above) of events that the pinned Cycle-878 note certifies as REALIZED record-writes.  The horns compose: the first is what makes the second survivable, and nothing on the lane licenses the second on its own.
-  O1 CORRECTION:
-      878 note says: "The axiom baseline's exclusion list — no occurrence rule, no\nprobability, no update law among what the foundation supplies — is\nquoted verbatim from `docs/MINIMAL_AXIOMS_2026-06-29.md`"
-      pinned memo says: 'The 2026-07-04 owner-approved revision appended the formation sentence "Records\nform." to the Record axiom: occurrence became named axiom content, while every\nformation rule (which admissible possibility, at which site, with what weight,\nat what rate) remained downstream supplier content.'
-      byte fact: the pinned docs/MINIMAL_AXIOMS_2026-06-29.md contains the string 'occurrence' exactly 1 time(s), and it is NOT in the Open Gates exclusion list: the list's formation clause reads 'formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)'.  The memo's single use of the word says the opposite of the attribution: 'occurrence became named axiom content'.
-      correction: O1 (does a record occur at all -- actuality) is CLOSED: axiom-forced by the 'Records form.' append of 2026-07-04 and by the 2026-07-05 narrowing of the no-go.  The Cycle-878 boundary certificate's 'no occurrence rule' item is superseded and mis-attributed to the pinned baseline.  O2 (which admissible possibility, at which site) and O3 (with what weight, at what rate) are the open remainder, and they are what the exclusion list actually names.
+-- CERTIFICATES --------------------------------------------------------
+  PASS  L1_CENSUS_CONSISTENCY              187*4=748 C(748,2)=279378 recorded_pairs=279378
+  PASS  L2_LIKELIHOOD_LEMMA_CONDITIONAL    random_nonuniform_vectors=390 violations=0 uniform_attains_bound=True merged_atom_control_moves_MLE=True
+  PASS  L3_DETERMINISM                     double_run_digest_equal=True
+  PASS  L4_RUNTIME                         elapsed_s=0.0 budget_s=300
 
-C4 -- THE CLAIMED FOUR-WAY CONVERGENCE
-------------------------------------------------------------------------------
-      (i) IF1's event-level decision                       independent=True
-          HOLDS (M1, M2 true; M6 false; M3/M4/M5 undecided)
-      (ii) maximum likelihood on the census                independent=True
-          HOLDS UNCONDITIONALLY.  argmax is the uniform/counting measure for every finite event space; the interface survivors have likelihood EXACTLY ZERO because they assign zero to realized atoms
-      (iii) transitive-symmetry forcing                    independent=False
-          INAPPLICABLE.  The lemma is exact but no landed symmetry acts transitively on the 92260 events; the tag partition is invariant.  Conditional on an unsupplied symmetry
-      (iv) the readout-functional argument (Lemma I-CONST) independent=False
-          CONDITIONAL ON PURITY.  Site-independence and additivity are forced; constancy needs the locked possibility to be pure.  The Bloch radius is an exhibited non-constant unitary invariant, so a non-privileging non-constant readout exists on non-pure locked possibilities.  On THIS census purity holds (classical endpoint directions), so I-CONST holds here
-  surviving independent mechanisms: 2 of 4
-  ML: argmax = ['M1_COUNTING']; zero-likelihood candidates = ['M3_OCCUPATION_WEIGHTED', 'M4_FORMATION_LIFETIME', 'M5_FORMATION_MOMENT', 'M6_ABSOLUTE_ORBIT_UNIFORM']
-  transitivity: world orbits 68, tag blocks {'B0': 47872, 'B1': 44224, 'F': 164}, transitive on events = False
-  I-CONST: transitivity on pure possibilities certified = True; non-constant invariant exists = True
-  I-CONST IS FORCED ONLY UNDER PURITY.  Steps 1 and 3 are unconditional; step 2 needs the locked possibility to be pure, and the crack is exhibited: the Bloch radius is a non-constant unitarily-invariant readout on non-pure locked possibilities, so a non-privileging non-constant readout EXISTS
-  THE HORN: the framework's occurrence-shaped principles select M1_COUNTING (mechanism (ii) unconditionally, mechanism (i) jointly with M2); the pinned Cycle-905 gravity interface EXCLUDED EXACTLY ['M1_COUNTING', 'M2_PER_WORLD_UNIFORM'] -- M1 and M2 -- and its exclusion is purely the demand for a NON-EMPTY zero set under premise P-NONEMPTY.  The two point in opposite directions, and the conflict is PREMISE-LEVEL, not census-level: the same 92,260 events certify both sides.  What collides is P-NONEMPTY (with the IF1..IF6 interface premises behind it) against the occurrence reading of the weightings.
+TOTAL: PASS=4 FAIL=0
+VERDICT: PASS
 
-CERTIFICATE G_FALSIFIERS PASS  (7 teeth)
-      planted_cross_lane_shift                         detected=True
-      planted_branch_pair                              detected=True
-      planted_nonbranch_divergence                     detected=True
-      restricted_menu_reported_as_restricted           detected=True
-      perturbation_leak_is_zero                        detected=True
-      every_C1_verdict_class_reachable                 detected=True
-      vacuity_verdict_is_data_driven_not_hardcoded     detected=True
-CERTIFICATE H_DOUBLE_BUILD PASS  A=9d8f035dfeef7e02 B=9d8f035dfeef7e02 identical=True pinned-prefix-identical=True slots-inert=True
-CERTIFICATE I_RUNTIME PASS  104.454s / 900s
+----- stderr -----
 
-THEOREMS
-------------------------------------------------------------------------------
-  C911-T1 THE 748 WORLDS ARE SETUPS, NOT BRANCHES.  Every census key (k, event, positions) carries its OWN packed state vector, built by seeding the key's own event and driving the key's own token positions; the packed columns are a bit-parallel bundle of 748 separate states, and the composed scan's entire state-access pattern is position-wise bitwise (34166 generated statements, all `c[i] ^= AND-tree`, zero cross-lane operators), so the worlds are dynamically decoupled -- certified again at runtime by a perturbation witness with zero leak.  Over all 279378 world pairs, 0 are branch pairs.  274210 differ at tick 0; 5168 share a tick-0 state but differ in the SCAN SCHEDULE, i.e. in the setup parameter that selects which stations carry a token -- so their later divergence is a difference of law-instance, not a branching of one law.  No pair shares both a tick-0 state and a schedule.  VERDICT: WORLDS-ARE-SETUPS.
-
-  C911-T2 THE MENU AT EVERY LOCK POINT HAS TWO ELEMENTS: O3 IS NOT VACUOUS.  At all 164 realized formation events the lock state is globally clean, so BOTH endpoint possibilities are constructible (|A| = 2 at 164/164 under OP_PREPARE) and BOTH complete a lawful orbit (|A| = 2 at 164/164 under OP_ORBIT), with zero constructor errors.  Every lock point is therefore a genuine selection site, and the earliest sits at boundary 0 in world 176, key (3, 0, (0, 2, 4)).  The prediction that |A| = 1 everywhere is REFUTED, and so is the vacuity route: the weight question has an object at every one of the 164 lock points.
-
-  C911-T3 FORMATION-AS-SATURATION IS REFUTED AT FULL CENSUS SCALE, AND THE PINNED DIAGNOSTIC HAS A CHUNK-SLICING DEFECT.  The Cycle-863 certificate-A diagnostic (prepare, apply one chunk, demand all bank flags clean) returns, with the chunk boundaries CORRECTED, {0: 164} over the 164 realized formation events; as the pinned source actually slices the word, {0: 161, 2: 3}.  Neither reading ever returns 1.  The defect is exact and disclosed: the pinned source takes per_chunk = len(word) // stations, but the per-step gate counts differ station by station and len(word) % stations = 8 != 0, so the pinned chunk is not a step.  An empty menu at a realized record-write is incoherent either way, so the diagnostic is a saturation probe rather than the admissibility menu.
-
-  C911-T4 THE CLASSIFIED COVARIANT RULE SPACE CANNOT RESOLVE THE LOCK POINTS BEYOND A HANDFUL OF CONDITION CLASSES.  Under the declared condition embedding, the 164 formation contexts fall into 3 proper-cubic orbit classes at the openness alphabet k=2 (of 10 available), 6 at k=3 and 7 at k=4.  Every covariant rule is constant on a class, so the achievable menu-multiplicity spectrum is exactly the set of class-wise assignments of |A| in {0,1,2}: 27 rules at k=2 distinguishable at the level of |A|.  The landed operators sit at the constant-2 point of that spectrum.
-
-  C911-T5 THE REALIZATION DILEMMA, CERTIFIED AS A DISJUNCTION.  The pinned Cycle-878 note certifies all 92260 events as REALIZED record-writes.  The interface-surviving candidates assign zero to 73088, 73088, 76184 and 90841 of them -- 79.22% to 98.46% -- and Cycle 905's exclusion of M1 and M2 is nothing but the demand for a NON-EMPTY zero set.  EITHER the weightings are not occurrence weights (C911-T1's verdict) OR non-occurrence is assigned to 79.22-98.46% of certified-realized events.  There is no third horn on the committed data.
-
-  C911-T6 THE O1 CORRECTION.  The Cycle-878 support note attributes to the pinned axiom baseline an exclusion list containing 'no occurrence rule', quoted as verbatim.  The pinned docs/MINIMAL_AXIOMS_2026-06-29.md contains the string 'occurrence' exactly 1 time(s), not in the Open Gates list, and its single use states the opposite: 'occurrence became named axiom content'.  The Open Gates list's formation clause names which possibility, at which site, with what weight, at what rate.  O1 (actuality) is CLOSED and axiom-forced; O2 and O3 are the open remainder.
-
-  C911-T7 THE CONVERGENCE IS TWO-WAY, NOT FOUR-WAY, AND THE HORN STANDS.  (ii) maximum likelihood forces the counting measure unconditionally -- by AM-GM the census likelihood is maximal iff the weighting is uniform, and every interface survivor has likelihood EXACTLY ZERO because it assigns zero to realized atoms.  (i) IF1 decides M1 and M2 positive and M6 negative on the pinned Cycle-907 receipt.  (iii) is INAPPLICABLE: the forcing lemma is exact but no landed symmetry is transitive on the events -- the monitor-phase action alone has 68 world orbits and the tag partition is invariant.  (iv) is CONDITIONAL ON PURITY: site independence and additivity are forced, constancy is not, and the Bloch radius is an exhibited non-constant unitary invariant on non-pure locked possibilities.  Two independent mechanisms survive, both selecting M1_COUNTING, which Cycle 905 EXCLUDED.  The conflict is premise-level: P-NONEMPTY against the occurrence reading.
-
-VERDICT: RE-TYPED
-all_certificates_pass: True
-receipt: outputs/type_vacuity_cycle911_receipt_2026_07_28.json
-science_digest: 7a988705c1bfe8af6e9074a16b990e97d264646a5bc72a6312e21d92f8abce94

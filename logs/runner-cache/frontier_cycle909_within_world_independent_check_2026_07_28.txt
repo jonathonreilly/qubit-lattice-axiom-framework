@@ -1,78 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle909_within_world_independent_check_2026_07_28.py
-runner_sha256: 14169fbc8285c7439b983b02aac7577244cb983a52fe4472821e005f19b4ee8c
-timeout_sec: 900
+runner_sha256: 3687f78cf47a4d29692f1dfbf7d743caaf44c8f728c0651b64bfe20996959ffa
+input_fingerprint_sha256: 84b95588484331e94dadcc0c010009bb30647664b9f78d8b79e56a5e3ccf3b6d
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 76.957
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
-CYCLE 909 INDEPENDENT CHECKER -- SPECIFIED TO REFUTE
 ==============================================================================
-pins verified: True   firewall hits: 0
+CYCLE 909 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
 
-R1 INDEPENDENT SHAPE EXTRACTION
-------------------------------------------------------------------------------
-  block sizes force one designated event per world per atom: True
-  checker block masses  degree0 [171600, 32010, 5412, 11]  degree2 [19008, 2904, 1188, 0]
-  totals [209033, 23100] agree with the 907 checker receipt: True
-  checker constraint set degree0: {'position_1': '2910/19003', 'position_2': '492/19003', 'position_3': '1/19003', 'everything_else': '15600/19003'}
-  checker constraint set degree2: {'position_1': '22/175', 'position_2': '9/175', 'position_3': '0/1', 'everything_else': '144/175'}
-  agreement with the primary: {'degree0': True, 'degree2': True, 'designated_positions': True}
-  free dimension by rank 1406 vs primary 1406 -> agrees True
-  free-coordinate perturbation preserves the shape: True; pinned-coordinate perturbation breaks it: True
-  DISAGREEMENT: False
+Scope: the revised primary's stipulated-table claims only.  The
+unlanded census closure is removed; no universal negative exists to
+check and none is certified.
 
-R2 INDEPENDENT RECIPE INSTANTIATION
-------------------------------------------------------------------------------
-  one          d0=False d2=False  profile ['42/43', '1/129', '1/129', '1/129']
-  occ          d0=False d2=False  profile ['42/43', '1/129', '1/129', '1/129']
-  index1       d0=False d2=False  profile ['2792/2795', '2/8385', '1/2795', '4/8385']
-  content      d0=False d2=False  profile ['<long exact fraction>', '<long exact fraction>', '<long exact fraction>', '<long exact fraction>']
-  moment1      d0=False d2=False  profile ['<long exact fraction>', '<long exact fraction>', '<long exact fraction>', '<long exact fraction>']
-  ordinal1     d0=False d2=False  profile ['45709/45771', '20/45771', '13/45771', '29/45771']
-  isF          d0=False d2=False  profile ['1/1', '0/1', '0/1', '0/1']
-  formed       d0=False d2=False  profile ['42/43', '1/129', '1/129', '1/129']
-  uniform profile   ['42/43', '1/129', '1/129', '1/129']
-  required profile  ['15600/19003', '2910/19003', '492/19003', '1/19003']
-  DISAGREEMENT: False
+  PASS  R0_PINNED_EVIDENCE                   scripts/frontier_cycle909_within_world_pricing_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt:MATCH
+  PASS  R0b_CLAIMS_PARSED                    claims_line_found=True
+  PASS  R1_FACTORIZATION                     19003=31*613 primality independently confirmed; primary_factors={'31': 1, '613': 1}
+  PASS  R2_TABLE_BY_MULTIPLICATION           sites*per_site==column for both degrees: True
+  PASS  R3_TWO_SQUARES_INDEPENDENT           counts=[3, 2, 1, 1] product=6 primary=[3, 2, 1, 1]/6
+  PASS  R4_DENOMINATOR_LEMMA_INDEPENDENT     trials=3000 violations=0 primary_violations=0
+  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300
 
-R3 CENSUS COMPLETENESS -- THE HIGHEST-STAKES ATTACK
-------------------------------------------------------------------------------
-  recipes tested outside the declared closure: 3220
-  survivors of the degree-0 denominator filter: 2
-  survivors of the degree-2 denominator filter: 208
-  HUNT B: fields whose world sums reach 31: ['content_hi16', 'moment', 'occ0']
-          fields whose world sums reach 613: []
-          fields reaching BOTH: []
-  HUNT C position-ratio hits: []
-  realizers found: []
-  VERDICT: NO_REALIZER_FOUND_OUTSIDE_THE_DECLARED_CLOSURE
+TOTAL: PASS=7 FAIL=0
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK
 
-R4 THE DEGREE-2 RELATIONSHIP
-------------------------------------------------------------------------------
-  brute-force layer amplitudes [[36, 2], [22, 1], [9, 1], [1, 0]]  agree with the primary: True
-  admissible degree-2 columns: checker 6 vs primary 6
-      SCALAR                                       holds=False
-      AFFINE c_2 = a c_0 + b                       holds=False
-      SITE PROPORTIONAL c_2 = k * sites            holds=False
-      QUADRATIC in c_0, fitted on three atoms      holds=False
-      SQRT-LINKED c_2 = 2 sqrt(c_0 * k)            holds=False
-  DISAGREEMENT: False
+----- stderr -----
 
-R5 TEETH (8)
-------------------------------------------------------------------------------
-  TAMPERED_PIN                         bites=True
-  PLANTED_REALIZER_BLINDNESS           bites=True
-  LEAKED_REALIZATION                   bites=True
-  SKIPPED_WORLD                        bites=True
-  DROPPED_RECIPE                       bites=True
-  HARDCODED_VERDICT                    bites=True
-  LEMMA_STRESS                         bites=True
-  ANSWER_LEAKED_INTO_THE_FIELD_LIST    bites=True
-
-cross checks: {'escape_orbit_matches_906': True, 'event_cardinality': 92260, 'support_events': 1419, 'support_matches_906': True, 'primary_verdict': 'WITHIN_WORLD_DISTRIBUTION_IS_A_PURCHASE', 'primary_all_certificates_pass': True}
-
-CHECKER_VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-disagreements: []
-receipt: outputs/within_world_independent_check_cycle909_receipt_2026_07_28.json
-elapsed_sec: 76.957

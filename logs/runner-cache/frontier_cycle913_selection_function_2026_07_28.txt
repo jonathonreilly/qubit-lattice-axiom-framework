@@ -1,294 +1,43 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle913_selection_function_2026_07_28.py
-runner_sha256: b349f873aa1e88558fcd63fc432a6edd249f48f103ecbd3d28fd62d070e689ef
-timeout_sec: 900
+runner_sha256: 193540a3fa3862f03524d365bd2b86440ef024c46aedf14e922e5d2d18399711
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 75.667
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
-CYCLE 913 -- O2 AS A COMPUTATION: THE LANDED SELECTION FUNCTION
 ==============================================================================
-  every fraction below: bookkeeping fraction, not probability
-
-A_PINS                      PASS  (12 pinned; sha256+git-blob; firewall hits 0)
-B_RESTRICTION_GATE          PASS  (39/39 reproduce)
-
-------------------------------------------------------------------------------
-C1  THE SELECTION TABLE  (164 lock points, menu {(1,0), (0,1)})
-------------------------------------------------------------------------------
-  four independent readouts agree on every row: True
-  RD-REARM: the scan's own next endpoint preparation matches K.M.prepare_endpoint
-            bit-for-bit on all 5815 wires at 164/164 lock points; the counterfactual item
-            differs at exactly [2] wires
-  independent serial replay from tick 0: 109 worlds, all agree = True
-  ENDPOINT WIRE LEMMA: LEFT(1) and RIGHT(6) are gate INPUTS
-     (True/True) and NEVER gate targets (False/False) across all 34166 compiled gates
-  split: [0, 1] -> 80 (20/41), [1, 0] -> 84 (21/41)
-
-  world  key                      tick  ph  selected  ord0/ord1  context
-      0  (2,0,(0, 2))                  9   9  (1, 0)       0/0     57475217265c6345
-      1  (2,0,(0, 3))                  8   8  (1, 0)       0/0     57475217265c6345
-      2  (2,0,(0, 4))                  7   7  (1, 0)       0/0     57475217265c6345
-      3  (2,0,(0, 5))                  6   6  (1, 0)       0/0     57475217265c6345
-      4  (2,0,(0, 6))                  5   5  (1, 0)       0/0     57475217265c6345
-      5  (2,0,(0, 7))                  4   4  (1, 0)       0/0     57475217265c6345
-      6  (2,0,(0, 8))                  3   3  (1, 0)       0/0     57475217265c6345
-      7  (2,0,(0, 9))                  2   2  (1, 0)       0/0     57475217265c6345
-     11  (2,0,(1, 6))             162183  10  (1, 0)    1329/26009 33d889ebf2bdde64
-     12  (2,0,(1, 7))             162183  10  (1, 0)    1329/26009 33d889ebf2bdde64
-     19  (2,0,(2, 7))             162182   9  (1, 0)    1329/26009 33d889ebf2bdde64
-     20  (2,0,(2, 8))             162182   9  (1, 0)    1329/26009 33d889ebf2bdde64
-     26  (2,0,(3, 8))             162181   8  (1, 0)    1329/26009 33d889ebf2bdde64
-     27  (2,0,(3, 9))             162181   8  (1, 0)    1329/26009 33d889ebf2bdde64
-     32  (2,0,(4, 9))             162180   7  (1, 0)    1329/26009 33d889ebf2bdde64
-     33  (2,0,(4, 10))            162180   7  (1, 0)    1329/26009 33d889ebf2bdde64
-     37  (2,0,(5, 10))            162179   6  (1, 0)    1329/26009 33d889ebf2bdde64
-     47  (2,1,(0, 5))              52740   6  (0, 1)     429/8429  7c4994aaf7b6340e
-     48  (2,1,(0, 6))              52739   5  (0, 1)     429/8429  7c4994aaf7b6340e
-     51  (2,1,(0, 9))                 57   2  (0, 1)       0/0     37cf0b68631c097a
-     91  (2,2,(0, 5))              52729   6  (1, 0)     427/8427  f9245e808a151605
-     92  (2,2,(0, 6))              52728   5  (1, 0)     427/8427  f9245e808a151605
-     95  (2,2,(0, 9))                 46   2  (1, 0)       0/0     37cf0b68631c097a
-    132  (2,3,(0, 2))               3683   9  (0, 1)     431/14    de5dca6279b0502a
-    133  (2,3,(0, 3))               6003   8  (0, 1)     396/2     ec0d121b1a03c23c
-    135  (2,3,(0, 5))                  6   6  (0, 1)       1/1     8e84b6c3dfe5449c
-    136  (2,3,(0, 6))                  5   5  (0, 1)       1/1     8e84b6c3dfe5449c
-    137  (2,3,(0, 7))               4081   0  (0, 1)     274/2     99f2ae07da00a83b
-    140  (2,3,(1, 3))               2791   8  (0, 1)     331/10    5e2228682f8bb4bf
-    147  (2,3,(1, 10))              2771  10  (0, 1)     327/7     5e2228682f8bb4bf
-    148  (2,3,(2, 4))               2790   7  (0, 1)     331/10    5e2228682f8bb4bf
-    155  (2,3,(3, 5))               2789   6  (0, 1)     331/9     5e2228682f8bb4bf
-    161  (2,3,(4, 6))               2788   5  (0, 1)     331/9     5e2228682f8bb4bf
-    166  (2,3,(5, 7))               2787   4  (0, 1)     331/9     5e2228682f8bb4bf
-    170  (2,3,(6, 8))               2786   3  (0, 1)     331/9     5e2228682f8bb4bf
-    173  (2,3,(7, 9))               2785   2  (0, 1)     331/9     5e2228682f8bb4bf
-    175  (2,3,(8, 10))              2784   1  (0, 1)     331/9     5e2228682f8bb4bf
-    176  (3,0,(0, 2, 4))               0   0  (1, 0)       0/0     57475217265c6345
-    177  (3,0,(0, 2, 5))               0   0  (1, 0)       0/0     57475217265c6345
-    178  (3,0,(0, 2, 6))               0   0  (1, 0)       0/0     57475217265c6345
-    179  (3,0,(0, 2, 7))               0   0  (1, 0)       0/0     57475217265c6345
-    180  (3,0,(0, 2, 8))               0   0  (1, 0)       0/0     57475217265c6345
-    181  (3,0,(0, 2, 9))               0   0  (1, 0)       0/0     57475217265c6345
-    182  (3,0,(0, 3, 5))               0   0  (1, 0)       0/0     57475217265c6345
-    183  (3,0,(0, 3, 6))               0   0  (1, 0)       0/0     57475217265c6345
-    184  (3,0,(0, 3, 7))               0   0  (1, 0)       0/0     57475217265c6345
-    185  (3,0,(0, 3, 8))               0   0  (1, 0)       0/0     57475217265c6345
-    186  (3,0,(0, 3, 9))               0   0  (1, 0)       0/0     57475217265c6345
-    187  (3,0,(0, 4, 6))               0   0  (1, 0)       0/0     57475217265c6345
-    188  (3,0,(0, 4, 7))               0   0  (1, 0)       0/0     57475217265c6345
-    189  (3,0,(0, 4, 8))               0   0  (1, 0)       0/0     57475217265c6345
-    190  (3,0,(0, 4, 9))               0   0  (1, 0)       0/0     57475217265c6345
-    191  (3,0,(0, 5, 7))               0   0  (1, 0)       0/0     57475217265c6345
-    192  (3,0,(0, 5, 8))               0   0  (1, 0)       0/0     57475217265c6345
-    193  (3,0,(0, 5, 9))               0   0  (1, 0)       0/0     57475217265c6345
-    194  (3,0,(0, 6, 8))               0   0  (1, 0)       0/0     57475217265c6345
-    195  (3,0,(0, 6, 9))               0   0  (1, 0)       0/0     57475217265c6345
-    196  (3,0,(0, 7, 9))               0   0  (1, 0)       0/0     57475217265c6345
-    215  (3,0,(1, 7, 9))             541   2  (1, 0)      67/3     3b900e25e9ef6903
-    217  (3,0,(1, 8, 10))            386   1  (1, 0)      44/2     abf7c9b3671e2e70
-    232  (3,0,(2, 8, 10))            540   1  (1, 0)      67/3     3b900e25e9ef6903
-    253  (3,1,(0, 2, 4))              64   9  (0, 1)       3/3     37cf0b68631c097a
-    254  (3,1,(0, 2, 5))              39   6  (0, 1)       0/0     37cf0b68631c097a
-    255  (3,1,(0, 2, 6))              38   5  (0, 1)       0/0     37cf0b68631c097a
-    256  (3,1,(0, 2, 7))              37   4  (0, 1)       0/0     37cf0b68631c097a
-    257  (3,1,(0, 2, 8))              36   3  (0, 1)       0/0     37cf0b68631c097a
-    258  (3,1,(0, 2, 9))              35   2  (0, 1)       0/0     37cf0b68631c097a
-    265  (3,1,(0, 4, 7))               0   0  (0, 1)       0/0     db4de2f60fbb1206
-    269  (3,1,(0, 5, 8))               0   0  (0, 1)       0/0     d6defdd0b847ace9
-    271  (3,1,(0, 6, 8))            2068   0  (0, 1)     225/7     d74da4c9d8a9d7ed
-    273  (3,1,(0, 7, 9))           15226   2  (0, 1)    2334/72    85ad845c1c4a01a9
-    274  (3,1,(1, 3, 5))             382   8  (0, 1)      42/2     1a0b6e5f56d29051
-    275  (3,1,(1, 3, 6))             536   8  (0, 1)      65/3     e144d46470076956
-    295  (3,1,(2, 4, 6))             381   7  (0, 1)      42/2     1a0b6e5f56d29051
-    296  (3,1,(2, 4, 7))             535   7  (0, 1)      65/3     e144d46470076956
-    310  (3,1,(3, 5, 7))             380   6  (0, 1)      42/1     1a0b6e5f56d29051
-    311  (3,1,(3, 5, 8))             534   6  (0, 1)      65/2     e144d46470076956
-    320  (3,1,(4, 6, 8))             379   5  (0, 1)      42/1     1a0b6e5f56d29051
-    321  (3,1,(4, 6, 9))             533   5  (0, 1)      65/2     e144d46470076956
-    326  (3,1,(5, 7, 9))             378   4  (0, 1)      42/1     1a0b6e5f56d29051
-    327  (3,1,(5, 7, 10))            532   4  (0, 1)      65/2     e144d46470076956
-    329  (3,1,(6, 8, 10))            377   3  (0, 1)      42/1     1a0b6e5f56d29051
-    330  (3,2,(0, 2, 4))           15222   9  (1, 0)    2334/72    57f1f2783ea06e0f
-    331  (3,2,(0, 2, 5))            2063   6  (1, 0)     225/6     351443057d83d961
-    335  (3,2,(0, 2, 9))              55   0  (1, 0)       1/2     37cf0b68631c097a
-    340  (3,2,(0, 3, 9))              30   8  (1, 0)       0/0     37cf0b68631c097a
-    344  (3,2,(0, 4, 9))              29   7  (1, 0)       0/0     37cf0b68631c097a
-    347  (3,2,(0, 5, 9))              28   6  (1, 0)       0/0     37cf0b68631c097a
-    349  (3,2,(0, 6, 9))              27   5  (1, 0)       0/0     37cf0b68631c097a
-    350  (3,2,(0, 7, 9))              26   4  (1, 0)       0/0     37cf0b68631c097a
-    356  (3,2,(1, 3, 10))            373  10  (1, 0)      41/1     eef03bde32b6280a
-    361  (3,2,(1, 4, 10))            527  10  (1, 0)      63/1     da1ee3976169344b
-    407  (3,3,(0, 2, 4))            2121   9  (0, 1)     289/10    3e6000cc932ef612
-    408  (3,3,(0, 2, 5))            3031   6  (0, 1)     332/11    d53af31b25b5d7e0
-    412  (3,3,(0, 2, 9))               0   0  (0, 1)       0/0     4a778aceda030e0c
-    413  (3,3,(0, 3, 5))            2651   0  (0, 1)     268/6     8693265de893e24a
-    422  (3,3,(0, 5, 7))           36971   0  (0, 1)    4355/168   3016c68327188159
-    425  (3,3,(0, 6, 8))             891   0  (0, 1)     100/4     7fcb2cc5317e4a51
-    429  (3,3,(1, 3, 6))            4683   8  (0, 1)     540/6     387174913ed71070
-    430  (3,3,(1, 3, 7))           36150   4  (0, 1)    4307/100   3ebb704302b07742
-    432  (3,3,(1, 3, 9))             640   2  (0, 1)      70/1     26f7badf8dee0e1d
-    433  (3,3,(1, 3, 10))            593  10  (0, 1)      78/1     5e276c7d3cb16851
-    438  (3,3,(1, 4, 10))           1924  10  (0, 1)     207/4     74425d5167c17b4c
-    450  (3,3,(2, 4, 7))            4682   7  (0, 1)     540/6     387174913ed71070
-    451  (3,3,(2, 4, 8))           36149   3  (0, 1)    4307/100   3ebb704302b07742
-    453  (3,3,(2, 4, 10))            639   1  (0, 1)      70/1     26f7badf8dee0e1d
-    465  (3,3,(3, 5, 8))            4681   6  (0, 1)     540/6     387174913ed71070
-    466  (3,3,(3, 5, 9))           36148   2  (0, 1)    4307/100   3ebb704302b07742
-    475  (3,3,(4, 6, 9))            4680   5  (0, 1)     540/6     387174913ed71070
-    476  (3,3,(4, 6, 10))          36147   1  (0, 1)    4307/100   3ebb704302b07742
-    481  (3,3,(5, 7, 10))           4679   4  (0, 1)     540/6     387174913ed71070
-    486  (4,0,(0, 2, 4, 8))            3   3  (1, 0)       0/1     33f0f2d03e31cd77
-    487  (4,0,(0, 2, 4, 9))           42   9  (1, 0)       2/1     a24f1840ae325ff6
-    489  (4,0,(0, 2, 5, 8))            3   3  (1, 0)       0/1     00e3712dfd95131f
-    490  (4,0,(0, 2, 5, 9))            2   2  (1, 0)       0/0     33f0f2d03e31cd77
-    496  (4,0,(0, 3, 5, 9))           30   8  (1, 0)       0/0     a24f1840ae325ff6
-    498  (4,0,(0, 3, 6, 9))           30   8  (1, 0)       0/0     a24f1840ae325ff6
-    499  (4,0,(0, 3, 7, 9))           30   8  (1, 0)       0/0     a24f1840ae325ff6
-    501  (4,0,(0, 4, 6, 9))           29   7  (1, 0)       0/0     a24f1840ae325ff6
-    502  (4,0,(0, 4, 7, 9))           29   7  (1, 0)       0/0     a24f1840ae325ff6
-    503  (4,0,(0, 5, 7, 9))           28   6  (1, 0)       0/0     a24f1840ae325ff6
-    519  (4,0,(1, 4, 8, 10))         498   3  (1, 0)      64/3     2b7136c01585534e
-    520  (4,0,(1, 5, 7, 9))          754   6  (1, 0)      65/3     aa168e2377dfaa06
-    533  (4,0,(2, 6, 8, 10))         753   5  (1, 0)      65/3     aa168e2377dfaa06
-    540  (4,1,(0, 2, 4, 7))           26   4  (0, 1)       0/0     37cf0b68631c097a
-    541  (4,1,(0, 2, 4, 8))           25   3  (0, 1)       0/0     37cf0b68631c097a
-    542  (4,1,(0, 2, 4, 9))           24   2  (0, 1)       0/0     37cf0b68631c097a
-    550  (4,1,(0, 3, 5, 8))           25   3  (0, 1)       0/0     37cf0b68631c097a
-    551  (4,1,(0, 3, 5, 9))           24   2  (0, 1)       0/0     37cf0b68631c097a
-    555  (4,1,(0, 4, 6, 8))         1815   0  (0, 1)     185/3     22276c3ee10f6d0e
-    556  (4,1,(0, 4, 6, 9))           24   2  (0, 1)       0/0     37cf0b68631c097a
-    558  (4,1,(0, 5, 7, 9))           35   2  (0, 1)       1/0     37cf0b68631c097a
-    560  (4,1,(1, 3, 5, 8))          494  10  (0, 1)      63/3     561cdeabc91d05e9
-    565  (4,1,(1, 3, 6, 10))         749   1  (0, 1)      65/3     30375d1b401321c6
-    580  (4,1,(2, 4, 6, 9))          493   9  (0, 1)      63/3     561cdeabc91d05e9
-    590  (4,1,(3, 5, 7, 10))         492   8  (0, 1)      63/3     561cdeabc91d05e9
-    597  (4,2,(0, 2, 4, 9))           31   9  (1, 0)       0/0     37cf0b68631c097a
-    600  (4,2,(0, 2, 5, 9))         1810   6  (1, 0)     184/3     edb8baa2fb31ee31
-    606  (4,2,(0, 3, 5, 9))           19   8  (1, 0)       0/0     37cf0b68631c097a
-    608  (4,2,(0, 3, 6, 9))           19   8  (1, 0)       0/0     37cf0b68631c097a
-    609  (4,2,(0, 3, 7, 9))           19   8  (1, 0)       0/0     37cf0b68631c097a
-    611  (4,2,(0, 4, 6, 9))           18   7  (1, 0)       0/0     37cf0b68631c097a
-    612  (4,2,(0, 4, 7, 9))           18   7  (1, 0)       0/0     37cf0b68631c097a
-    613  (4,2,(0, 5, 7, 9))           17   6  (1, 0)       0/0     37cf0b68631c097a
-    629  (4,2,(1, 4, 8, 10))         487   3  (1, 0)      62/3     6168600e1b3d3bd5
-    630  (4,2,(1, 5, 7, 9))          743   6  (1, 0)      65/3     119b3f9355366051
-    643  (4,2,(2, 6, 8, 10))         742   5  (1, 0)      65/3     119b3f9355366051
-    652  (4,3,(0, 2, 4, 9))            9   9  (0, 1)       1/1     8e84b6c3dfe5449c
-    664  (4,3,(0, 3, 7, 9))         7015   8  (0, 1)     858/22    d9fd399e7d66d33a
-    665  (4,3,(0, 4, 6, 8))         1804   0  (0, 1)     183/3     79ed5c4073dbd733
-    670  (4,3,(1, 3, 5, 8))          483  10  (0, 1)      62/3     bafa77197a946d25
-    690  (4,3,(2, 4, 6, 9))          482   9  (0, 1)      62/3     bafa77197a946d25
-    700  (4,3,(3, 5, 7, 10))         481   8  (0, 1)      62/3     bafa77197a946d25
-    706  (5,0,(0, 2, 4, 7, 9))     12551   0  (1, 0)    2172/125   42a0b20f333d7fbe
-    707  (5,0,(0, 2, 5, 7, 9))        22   0  (1, 0)       0/0     a24f1840ae325ff6
-    712  (5,0,(1, 3, 6, 8, 10))     2872   1  (1, 0)     489/13    2ba3f328663d8993
-    715  (5,1,(0, 2, 4, 6, 8))     12547   7  (0, 1)    2172/124   4cef997d0152875d
-    716  (5,1,(0, 2, 4, 6, 9))        18   7  (0, 1)       0/0     37cf0b68631c097a
-    721  (5,1,(1, 3, 5, 7, 10))     2868   8  (0, 1)     487/13    995e139f6b9d45c4
-    729  (5,2,(0, 2, 5, 7, 9))     12542   2  (1, 0)    2172/124   1667616fa938dd78
-    730  (5,2,(0, 3, 5, 7, 9))        13   2  (1, 0)       0/0     37cf0b68631c097a
-    735  (5,2,(1, 4, 6, 8, 10))     2863   3  (1, 0)     486/12    38b09411e265feaf
-    740  (5,3,(0, 2, 5, 7, 9))      3181   2  (0, 1)     530/13    24579ce1e875c0e5
-    741  (5,3,(0, 3, 5, 7, 9))      3172   4  (0, 1)     529/13    24579ce1e875c0e5
-
-------------------------------------------------------------------------------
-C2  WHAT DETERMINES THE SELECTION
-------------------------------------------------------------------------------
-  fingerprint                                               groups  function?
-  R1_nearest_neighbour_record_content                           54  no  (1 collision class(es), largest 30)
-  R1_nearest_neighbour_openness_only                             4  no  (2 collision class(es), largest 94)
-  R1_nearest_neighbour_exact_ordinals                           51  no  (5 collision class(es), largest 67)
-  R2_shell2_add_link_and_banks_2_3                              54  no  (1 collision class(es), largest 30)
-  R3_shell3_whole_substrate_minus_the_site                      54  no  (1 collision class(es), largest 30)
-  R3_plus_schedule_phase                                       116  no  (6 collision class(es), largest 8)
-  R3_plus_phase_plus_lock_tick                                 128  no  (2 collision class(es), largest 3)
-  R3_plus_phase_plus_tick_plus_token_positions                 164  YES  [VACUOUS: individuates every lock point]
-  R3_plus_phase_plus_tick_plus_tokens_plus_source_count        164  YES  [VACUOUS: individuates every lock point]
-  FULL_STATE_MINUS_THE_TWO_ENDPOINT_WIRES                      164  YES  [VACUOUS: individuates every lock point]
-  SITE_BLOCK_including_the_endpoint_wires                        2  YES
-  SITE_ENDPOINT_WIRES_ONLY                                       2  YES
-  SITE_BLOCK_MINUS_THE_ENDPOINT_WIRES                            1  no  (1 collision class(es), largest 164)
-  SETUP_event_index                                              4  YES
-  SETUP_event_parity                                             2  YES
-  SETUP_token_positions_only                                    97  no  (28 collision class(es), largest 4)
-  SCHEDULE_phase_only                                           11  no  (11 collision class(es), largest 34)
-  SCHEDULE_lock_tick_only                                      116  no  (6 collision class(es), largest 24)
-  EMPTY_CONTEXT                                                  1  no  (1 collision class(es), largest 164)
-
-  WITNESS (identical nearest-neighbour conditions, different selection):
-    world 51 key [2, 1, [0, 9]] tick 57 -> [0, 1]
-    world 95 key [2, 2, [0, 9]] tick 46 -> [1, 0]
-
-  widest non-site context (86 varying wires outside the site) determines? False
-  exhaustive single-wire sweep over all 5815 wires: 88 vary, and exactly
-    2 determine the selection: [1, 6] = LEFT_ENDPOINT, RIGHT_ENDPOINT
-  any determining wire OUTSIDE the site? False
-  MINIMAL DETERMINING CONTEXT: cardinality 1 (the empty context determines? False)
-
-  translation covariance: 784 in-set image checks under the landed Z_11 action, 0 violations; invariant = True
-  cubic k=2: proper 10 / full 10 orbits; contexts realize 3 classes; selection class-constant = False
-  cubic k=3: proper 57 / full 56 orbits; contexts realize 6 classes; selection class-constant = False
-  cubic k=4: proper 240 / full 220 orbits; contexts realize 7 classes; selection class-constant = False
-
-------------------------------------------------------------------------------
-C3  IS IT A FUNCTION OF RECORD CONTENT?
-------------------------------------------------------------------------------
-  record registers at the lock tick:  False   (54 groups, 1 collision class(es))
-  prior record-event history:         False   (51 groups)
-  openness only (k=2 alphabet):       False   (4 groups)
-  lock points with NO prior record event: 67; their selections [0, 1]x16, [1, 0]x51
-  lock points at tick 0: 24; their selections [0, 1]x3, [1, 0]x21
-
-------------------------------------------------------------------------------
-C4  DO THE CONTEXTS VARY AT ALL?
-------------------------------------------------------------------------------
-  distinct nearest-neighbour contexts: 54   (bank0 words 10, bank1 words 41, link words 1)
-  distinct contexts outside the site: 54; distinct site blocks: 2 (differing only at wires [1, 6])
-  symmetry classes: k=2 -> 3, k=3 -> 6, k=4 -> 7
-  all contexts equivalent under the symmetries? False
-  pinned Cycle-911 menu size at every lock point: [2]
-
-------------------------------------------------------------------------------
-C5  THE CLASSIFIED COVARIANT RULE SPACE
-------------------------------------------------------------------------------
-  k=2: proper 10 / full 10 (0 chiral pairs); note says 10 and 10; reproduced = True
-  k=3: proper 57 / full 56 (1 chiral pairs); note says 57 and 56; reproduced = True
-  k=4: proper 240 / full 220 (20 chiral pairs); note says 20 pairs; reproduced = True
-  landed selection is a function of the neighbour colouring? False
-  => NOT a member of the classified space; within either setup sector it is
-     the CONSTANT rule (achiral, fully covariant), and which constant is fixed
-     by one imported bit -- the Theorem-5 dichotomy resolved by import.
-
-------------------------------------------------------------------------------
-C6  THE O2/O3 LEDGER VERDICT
-------------------------------------------------------------------------------
-  O2: SUPPLIED BY THE LANDED DYNAMICS, AND MEASURED.
-      realized(w) = (1,0) if the setup event index is even, else (0,1);
-      carried on wires 1/6, which the scan reads at every source
-      and finalizer station and never writes.  The scan does not choose; it
-      carries.  Not neighbour-determined, not content-determined, not in the
-      classified rule space.  DERIVABLE? no -- SUPPLIED.
-  O3: the A3 arena is exactly 164 sites x 2 possibilities = 328 pairs
-      (164 realized, 164 counterfactual).  Within-world frequency is
-      degenerate (one lock per world); the cross-world split 80/84 is an
-      average over SETUPS, which the realized-state primitive forbids.  And
-      the counterfactual coordinate IS a setup coordinate, so a weight over
-      the menu is a weight over setups under another name.  TERMINAL here.
-
-------------------------------------------------------------------------------
-G_FALSIFIERS                PASS  (9 teeth)
-    [x] planted_nonlocal_selection_detected_as_nonlocal
-    [x] planted_local_selection_detected_as_local
-    [x] planted_single_wire_determination_found_by_the_sweep
-    [x] planted_constant_selection_makes_the_empty_context_determine
-    [x] corrupted_readout_breaks_the_agreement_gate
-    [x] restricted_menu_fails_to_cover_the_realized_items
-    [x] planted_double_realization_breaks_uniqueness
-    [x] dropped_lock_point_breaks_the_c911_gate
-    [x] local_verdict_is_data_driven
-H_DOUBLE_BUILD              PASS  (A 32.541s / B 33.367s; identical = True)
-I_RUNTIME                   PASS  (75.232s / 900s)
-
+CYCLE 913 -- FINITE NON-FUNCTIONALITY LEMMA AND RECORDED-TABLE ARITHMETIC
 ==============================================================================
-VERDICT: O2 SUPPLIED, MEASURED, AND NOT LOCAL
-receipt: outputs/selection_function_cycle913_receipt_2026_07_28.json
+
+SCOPE: self-contained.  The unlanded substrate closure is removed.
+No terminality claim, no derivability denial, and no prohibition
+claim is made; the realized-state primitive supplies no measure but
+does not forbid a separately derived or explicitly imported one.
+
+-- stipulated recorded table --------------------------------------------
+  lock_points: 164
+  realized_left_right: [84, 80]
+  menu_size: 2
+  site_possibility_pairs: 328
+  record_free_lock_points: 67
+  record_free_split: [51, 16]
+  largest_neighbour_collision_class: 30
+  collision_class_split: [15, 15]
+  compiled_gates: 34166
+  gates_targeting_endpoint_wires: 0
+
+CLAIMS_JSON: {"lock_points":164,"realized_split":[84,80],"recorded_ratio":[0,34166],"science_digest":"8590445e2a26b3dc5e075540bcfc707257eb3555d29a6bc529963f5f41ead7be","site_possibility_pairs":328,"soundness_errors":0,"witness_not_function":true}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  L1_CONSISTENCY_ARITHMETIC        84+80=164 164*2=328 51+16=67 15+15=30
+  PASS  L2_NONFUNCTIONALITY_LEMMA        witness_rows_not_a_function=True planted_functional_detected=True soundness_trials=600 errors=0
+  PASS  L3_RECORDED_VALUE_ECHO           recorded reads-never-writes ratio 0/34166 (STIPULATED history; certifies nothing about a landed substrate)
+  PASS  L4_DETERMINISM                   double_run_digest_equal=True
+  PASS  L5_RUNTIME                       elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=5 FAIL=0
+VERDICT: PASS
+
+----- stderr -----
+

@@ -1,53 +1,58 @@
 {
-  "audit": "unset",
-  "authority": "none",
-  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); worker's first hypothesis corrected mid-block from measurement; checker's first run HONEST_FAILed its own coverage gate \u2014 both disclosed; supervisor line-by-line review",
-  "block": "toe-time-blockT5-20260802",
-  "campaign": "toe-time-expansion-20260802",
-  "certificates": {
-    "checker": "10/10 gates PASS, 577s; findings_the_primary_did_not_report EMPTY; 2,553 law-attack cells 0 mismatches; 7/7 teeth",
-    "primary": "10/10 gates PASS, deterministic double-build, 299s; seal computed and printed before any holdout corpus existed"
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); worker's first hypothesis corrected mid-block from measurement; checker's first run HONEST_FAILed its own coverage gate \u2014 both disclosed; supervisor line-by-line review",
+ "certificates": {
+  "checker": "exit 0; PASS=6 FAIL=0; PRIMARY_SURVIVES_THIS_CHECK",
+  "primary": "exit 0; PASS=4 FAIL=0; self-contained fail-closed"
+ },
+ "claim_type": "bounded_theorem",
+ "cluster_cap_evaluation": "re-evaluated after review-loop demotion: the block ships bounded conditional cores only; no closure, no-go, or unification claim",
+ "cycles": [
+  891
+ ],
+ "files": {
+  "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "1c3c40776d4f08ed660da6c4eb255d8db8abbd15",
+   "sha256": "22715b6bf2deadac3e441b032bc45cccd251ad4321db5ec45670f9abf923409c"
   },
-  "claim_type": "bounded_theorem",
-  "cluster_cap_evaluation": "OPEN \u2014 5th T-family PR: closes both named open questions of its parent with a sealed-holdout mechanism derivation and a strictly-generalizing exact law; the partial carrier miss is reported as data; nothing corollary",
-  "cycles": [
-    891
-  ],
-  "files": {
-    "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
-      "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c"
-    },
-    "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt": {
-      "git_blob": "7f2f15677a906c638d526389318568dec33360f8",
-      "sha256": "2372d2d55c386ff05af6cee8126469ca5baad6d49fc3a60bbf93b6c064df1061"
-    },
-    "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt": {
-      "git_blob": "7099e5ece90f4b59acec9bf27af29468c4e6b746",
-      "sha256": "47b07a1f1428e50bab41890dff77345130cfa9456b887bafbb00df360027409c"
-    },
-    "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
-      "git_blob": "478f19642c1d66a6e1575798f9974b645c9f9a18",
-      "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f"
-    },
-    "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
-      "git_blob": "f537715a927b00b817f8de2569953d78929c86db",
-      "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd"
-    },
-    "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
-      "git_blob": "53f5cf560f6dfad20dc6b4b91b0c003c848c6bea",
-      "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568"
-    },
-    "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
-      "git_blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
-      "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7"
-    }
+  "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt": {
+   "git_blob": "133e0d7814f8efa192dbd593bc6f3f5c4de053a3",
+   "sha256": "a258fc6e30f3fa6664a28a97b44d117214ef0ef1d9de2e139b91934951e796fb"
   },
-  "headline": "Both 889 open questions CLOSED: the complement mechanism derived (transport = the four rows of an incident edge incl. HANDOFF; three shapes; DELTA is an EDGE property, its complement a BANK property b=B-2-e) with a SEALED B=4/5-derive B=6/7-holdout (B=6 exact; B=7 value-level 4/4, carrier-level 3/4 \u2014 the P=32 carrier miss reported; 40/48 residuals 2 episodes each, anatomized); the k-run law derived exactly (I_max = max cyclic gap of W sym-diff (W-P) minus 1, + finite form): 6,148 cells zero mismatches, 889's law recovered as the k=2 sub-case, all four B=7 anomalies resolved as stretch-local readings with the honest boundary stated (which word a stretch carries is dynamical, not derived)",
-  "independence": "cross-context and algorithmic (interval-algebra detector, bitmask never formed; independent program reconstruction; second tick generator; holdout audited from the rule's stated text alone; 7/7 teeth)",
-  "note": "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-  "runtime_seconds": {
-    "checker": 577,
-    "primary": 299
+  "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt": {
+   "git_blob": "0eaa4213899bdbe1ac2ea55c33d137e8bf496f5c",
+   "sha256": "e47d1c8f2dd3724d734f852ad2bf399a923ed2f1a056002ed451184fe64af347"
+  },
+  "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
+   "git_blob": "87f66cea48d4d7103ca3f8ed887f25fb34cbe8b9",
+   "sha256": "679d08d42ff29659d2935954f004f43f1061646af6f4f3d46e9692f232c778de"
+  },
+  "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+   "git_blob": "2245ee67dfdfd8f894172a7f73f56d31e913a674",
+   "sha256": "bd18665d0fb9d46ad9ae0e92512b5da35487a6195696c58a29b8f3d5e4f5341c"
+  },
+  "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
+   "git_blob": "460d3d1882b0e21c1fc57c35f61800cb0dae44f7",
+   "sha256": "8961886a0e10da3368bc572f592c98d63f2fa08233e68af307e940b1383641d1"
+  },
+  "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+   "git_blob": "e196bbc11932163035d57b522af3b0a6067f00d6",
+   "sha256": "6e5c58df6a9c75244c64141b5a1405a6413110e685ccd802530956e920b6563d"
   }
+ },
+ "headline": "bank/edge identity algebra (exhaustive B=3..8; wide-grid checker) and the cyclic k-run alignment law verified against literal ground truths with a breaking perturbation control.  SELF-CONTAINED after review: the unlanded corpus lineage is provenance-only recorded history, and the historical holdout was an in-process order guard, not a sealed blind holdout",
+ "independence": "checker recomputes every claim by a structurally different route from its own copy of the stipulations, pins the primary and its cache by sha256, and exits fail-closed on refutation",
+ "note": "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "review_loop": {
+  "date": "2026-08-08",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix": "'sealed holdout' demoted; unlanded closure removed; bounded cores recomputed self-contained",
+  "iteration": 1,
+  "reviewer": "Sol"
+ },
+ "runtime_seconds": {
+  "checker": 577,
+  "primary": 299
+ }
 }

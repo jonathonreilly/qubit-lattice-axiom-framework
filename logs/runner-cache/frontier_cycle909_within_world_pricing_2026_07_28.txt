@@ -1,155 +1,51 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle909_within_world_pricing_2026_07_28.py
-runner_sha256: b38862284c0287dc8b1f24f5af8bf014509e22377d341b9933a05b2183af0021
-timeout_sec: 900
+runner_sha256: 260b2cd957f12a2c5f231fcb0a103525f1cec3e02bbf47fc66d81effdd5b7840
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 156.846
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
-CYCLE 909 -- PRICING THE WITHIN-WORLD DISTRIBUTION (BL9, BL10)
 ==============================================================================
-  every fraction below: bookkeeping fraction, not probability
+CYCLE 909 -- WITHIN-WORLD CONSTRAINT ARITHMETIC AT A STIPULATED TABLE
+==============================================================================
 
-CERTIFICATE A_PINS PASS  (14 pinned inputs, firewall hits 0)
-CERTIFICATE B_RESTRICTION_GATE PASS  37/37 gates reproduce
+SCOPE: input closure EMPTY.  Every quantity is an in-file stipulated
+definition; the unlanded census lineage is provenance context only.
+No universal negative, no exhaustiveness claim, no no-go is stated.
 
-Q1 -- THE REQUIRED SHAPE, EXTRACTED
-------------------------------------------------------------------------------
-  escape orbit: 11 worlds [3, 4, 11, 12, 19, 20, 26, 27, 32, 33, 37], 129 events each, 1419 events total
-  tags per world: {'F': 1, 'B0': 64, 'B1': 64}
-  F-event position per world: [0, 0, 128, 128, 128, 128, 128, 128, 128, 128, 128]
-  occupation counts: [5, 6, 6, 5, 6, 5, 6, 5, 6, 5, 6]
-  bridge: atom i receives the i-th event, in the pinned Cycle-878 emission order, of every one of the 11 escape worlds, for i = 1..3; atom 0 receives every other event of E.  phi is TOTAL (the exhaustive reading), N = 1/11
-  M7 block masses ['171600', '32010', '5412', '11']  total 209033
-  M8 block masses ['19008', '2904', '1188', '0']  total 23100
-  grid: 80 cells, 0 violations
-  THE CONSTRAINT SET (degree-0 carrier), scale-free:
-      position_1       2910/19003
-      position_2       492/19003
-      position_3       1/19003
-      everything_else  15600/19003
-  THE CONSTRAINT SET (degree-2 carrier), scale-free:
-      position_1       22/175
-      position_2       9/175
-      position_3       0/1
-      everything_else  144/175
-  pinned positions: [1, 2, 3] (orbit aggregates only); free positions per world: 0 and 4..128
-  residual freedom inside the escape orbit: 1406  (907's global count 19005)
-  alternative witnesses proving the freedom is real:
-      ALT_TAIL_SPREAD    differs True  satisfies True  world-masses-equal True
-      ALT_TAIL_SPLIT     differs True  satisfies True  world-masses-equal True
-      ALT_WORLD_SKEW     differs True  satisfies True  world-masses-equal True
+-- stipulated table -----------------------------------------------------
+  atom_labels: ['everything_else', 'position_1', 'position_2', 'position_3']
+  degree0_column: [15600, 2910, 492, 1]
+  degree2_column: [1728, 264, 108, 0]
+  atom_sites: [12, 6, 6, 1]
+  recorded_layer_pairs: [[36, 2], [22, 1], [9, 1], [1, 0]]
 
-Q2 -- THE NATIVE RECIPE CENSUS
-------------------------------------------------------------------------------
-  field inventory (AST): event tuple ['lane', 'moment', 'tag', 'ordinal', 'content'], arity [5]
-  ledger keys (AST): ['events', 'occ_global', 'occ_bank', 'formed', 'beyond_cap', 'write_once_violations', 'dead_activation_conflicts', 'mismatches', 'columns', 'global_dirty', 'bank_dirty', 'boundaries', 'initial_global_clean_lanes']
-  base fields: 30; recipes generated: 1404; planted: 5
-      K1_IDENTITY            {'FAILS': 30}
-      K2_TAG_RESTRICTION     {'FAILS': 166, 'NOT_INSTANTIABLE': 14}
-      K3_PAIRWISE_PRODUCT    {'FAILS': 427, 'NOT_INSTANTIABLE': 8}
-      K4_INDEX_PROFILE       {'FAILS': 36}
-      K5_POSITION_ATOM       {'FAILS': 129}
-      K6_BOUNDED_SUM         {'FAILS': 594}
-      PLANTED                {'REALIZES': 3, 'FAILS': 2}
-  headline recipes:
-      G_ONE                                          d0=False d2=False free_d0=FAILS     free_d2=REALIZES
-          profile ['42/43', '1/129', '1/129', '1/129']
-      G_MOMENT_P1                                    d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['<52-digit>/<52-digit>  (exact value held in full; equality is tested exactly)', '<50-digit>/<55-digit>  (exact value held in full; equality is tested exactly)', '<51-digit>/<55-digit>  (exact value held in full; equality is tested exactly)', '<49-digit>/<54-digit>  (exact value held in full; equality is tested exactly)']
-      G_ORDINAL_P1                                   d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['45709/45771', '20/45771', '13/45771', '29/45771']
-      G_INDEX_P1                                     d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['2792/2795', '2/8385', '1/2795', '4/8385']
-      G_REVINDEX_P1                                  d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['2668/2795', '128/8385', '127/8385', '42/2795']
-      G_CONTENT                                      d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['<85-digit>/<85-digit>  (exact value held in full; equality is tested exactly)', '<82-digit>/<85-digit>  (exact value held in full; equality is tested exactly)', '<83-digit>/<85-digit>  (exact value held in full; equality is tested exactly)', '<82-digit>/<84-digit>  (exact value held in full; equality is tested exactly)']
-      G_CONTENT_POPCOUNT                             d0=False d2=False free_d0=FAILS     free_d2=UNDECIDED
-          profile ['52979224929299/54217762351445', '66534413201/10843552470289', '1346193835376/162653287054335', '17810418611/2112380351355']
-      G_MOMENT_GAP_P1                                d0=False d2=False free_d0=UNDECIDED free_d2=REALIZES
-          profile ['6713688341/6716339982', '451975/6716339982', '171013/706983156', '1150085/13432679964']
-      G_OCC_GLOBAL                                   d0=False d2=False free_d0=FAILS     free_d2=REALIZES
-          profile ['42/43', '1/129', '1/129', '1/129']
-      G_FORMED                                       d0=False d2=False free_d0=FAILS     free_d2=REALIZES
-          profile ['42/43', '1/129', '1/129', '1/129']
-      G_LIFETIME                                     d0=False d2=False free_d0=FAILS     free_d2=REALIZES
-          profile ['42/43', '1/129', '1/129', '1/129']
-      RESTRICT(G_ONE|tag in F)                       d0=False d2=False free_d0=FAILS     free_d2=FAILS
-          profile ['1/1', '0/1', '0/1', '0/1']
-      POW(j+1,2)                                     d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['723876/723905', '4/723905', '9/723905', '16/723905']
-      GEOM(2^j)                                      d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['<38-digit>/<38-digit>  (exact value held in full; equality is tested exactly)', '2/680564733841876926926749214863536422911', '4/680564733841876926926749214863536422911', '8/680564733841876926926749214863536422911']
-      GEOM(2^(n_w-1-j))                              d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['<38-digit>/<38-digit>  (exact value held in full; equality is tested exactly)', '<39-digit>/<39-digit>  (exact value held in full; equality is tested exactly)', '<38-digit>/<39-digit>  (exact value held in full; equality is tested exactly)', '<38-digit>/<39-digit>  (exact value held in full; equality is tested exactly)']
-      AFFINE(1+1j)                                   d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['2792/2795', '2/8385', '1/2795', '4/8385']
-      PLANT_TRANSCRIBE_DEGREE0                       d0=True  d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['15600/19003', '2910/19003', '492/19003', '1/19003']
-      PLANT_TRANSCRIBE_DEGREE2                       d0=False d2=True  free_d0=FAILS     free_d2=UNDECIDED
-          profile ['144/175', '22/175', '9/175', '0/1']
-      PLANT_TAIL_SPREAD_DEGREE0                      d0=True  d2=False free_d0=UNDECIDED free_d2=REALIZES
-          profile ['15600/19003', '2910/19003', '492/19003', '1/19003']
-      PLANT_WORLD_SKEW_DEGREE0                       d0=True  d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['15600/19003', '2910/19003', '492/19003', '1/19003']
-      PLANT_NEAR_MISS_DEGREE0                        d0=False d2=False free_d0=UNDECIDED free_d2=UNDECIDED
-          profile ['3900/4751', '1455/9502', '123/4751', '1/9502']
-  DENOMINATOR LEMMA: scale 19003 = {'31': 1, '613': 1} must divide lcm(S_w).
-      recipes whose world sums admit it: 3 / 1409
-      recipes passing the degree-0 filter: ['PLANT_TRANSCRIBE_DEGREE0', 'PLANT_TAIL_SPREAD_DEGREE0', 'PLANT_WORLD_SKEW_DEGREE0']
-  FREE-BRIDGE AXIS (any bridge of the declared family, not only the exhibited one):
-      degree-0 verdicts {'FAILS': 478, 'UNDECIDED': 904}
-      degree-2 verdicts {'REALIZES': 271, 'UNDECIDED': 934, 'FAILS': 177}
-      degree-0 free-bridge realizers: []
-  WORLD-CONSTANT COLLAPSE holds=True: ['G_OCC_GLOBAL', 'G_OCC_BANK0', 'G_OCC_BANK1', 'G_FORMED', 'G_LIFETIME', 'G_WORLD_EVENTS'] all induce the uniform within-world split
-  native degree-0 realizers: []
-  native degree-2 realizers: []
+-- results --------------------------------------------------------------
+  degree-0 scale factorization: 19003 = 31 * 613
+  degree-2 reduced denominator: 175 = {5: 2, 7: 1}
+  denominator lemma: reduced denominator of sum(a_w/S_w) divides lcm(S_w); necessary filter on FIXED world sums only
+    randomized instances: 4000, violations: 0
+  per-site two-square identities and representation ambiguity:
+    c0= 1300 c2= 144 pair=[36, 2] identity=True reps=[[30, 20], [34, 12], [36, 2]]
+    c0=  485 c2=  44 pair=[22, 1] identity=True reps=[[17, 14], [22, 1]]
+    c0=   82 c2=  18 pair=[9, 1] identity=True reps=[[9, 1]]
+    c0=    1 c2=   0 pair=[1, 0] identity=True reps=[[1, 0]]
+  admissible degree-2 columns within the representation: 6
 
-Q3 -- THE PRICING VERDICT
-------------------------------------------------------------------------------
-  outcome class: ii_PURCHASE
-  per-site degree-0 [1300, 485, 82, 1], degree-2 [144, 44, 18, 0]
-  recovered layer amplitudes (p, q): [[36, 2], [22, 1], [9, 1], [1, 0]]  identity reconstructs the table: True
-  degree-2 columns admitted by degree-0 alone: 6 -> the second object is independently constrained
-      SCALAR MULTIPLE  c_2 = k c_0                     holds=False
-      MULTIPLICATION BY A CENSUS FIELD  c_2(i) = g(i)  holds=False
-      INDEX SHIFT  c_2 = c_0 shifted by one atom       holds=False
-      REVERSAL  c_2 proportional to reverse(c_0)       holds=False
+CLAIMS_JSON: {"admissible_degree2_columns":6,"degree2_reduced_denominator":175,"lemma_violations":0,"per_site_degree0":[1300,485,82,1],"per_site_degree2":[144,44,18,0],"representation_counts":[3,2,1,1],"scale0_factors":{"31":1,"613":1},"science_digest":"4d0238a23e548c4bd463073114497fc6ca90eab6637fe9487ece91492948315e"}
 
-CERTIFICATE H_FALSIFIERS PASS  (9 teeth)
-      T1_TAMPERED_PIN                    detected=True
-      T2_PLANTED_REALIZER_BLINDNESS      detected=True
-      T3_NEAR_MISS                       detected=True
-      T4_EQUAL_BLOCK_REINDEXING          detected=True
-      T5_OUTCOME_NEUTRALITY              detected=True
-      T6_SCALE_INVARIANCE                detected=True
-      T7_DROPPED_RECIPE_FAMILY           detected=True
-      T8_DEGREE_TWO_IDENTITY             detected=True
-      T9_SKIPPED_WORLD                   detected=True
+-- CERTIFICATES --------------------------------------------------------
+  PASS  A_FACTORIZATION                          scale0=19003={31: 1, 613: 1} reduced_degree2_denominator=175={5: 2, 7: 1}
+  PASS  B_TABLE_CONSISTENCY                      per_site_degree0=['1300', '485', '82', '1'] per_site_degree2=['144', '44', '18', '0']
+  PASS  C_DENOMINATOR_LEMMA                      randomized_instances=4000 violations=0 planted_pass_lcm_divisible=True planted_fail_lcm_divisible=False
+  PASS  D_TWO_SQUARES_IDENTITIES                 identities_hold=True representation_counts=[3, 2, 1, 1] admissible_degree2_columns=6
+  PASS  E_REPRESENTATION_SCOPED_NONUNIQUENESS    atoms_with_multiple_representations=2 each_with_distinct_2pq=True
+  PASS  F_DETERMINISM                            double_run_digest_equal=True
+  PASS  G_RUNTIME                                elapsed_s=0.1 budget_s=300
 
-CERTIFICATE I_DOUBLE_BUILD PASS
-CERTIFICATE J_RUNTIME PASS  156.846s / 900s
+TOTAL: PASS=7 FAIL=0
+VERDICT: PASS
 
-THEOREMS
-------------------------------------------------------------------------------
-  C909-T1 THE CONSTRAINT SET, EXACTLY.  Under the Cycle-907 exhibited bridge a weighting in the Cycle-906 cone is a degree-0 carrier iff its orbit-aggregate mass at within-world positions 1, 2 and 3 is 2910/19003, 492/19003 and 1/19003 of its total; the remaining 126 positions of each of the 11 escape worlds are pinned ONLY in aggregate, and the per-world split of each designated aggregate is pinned only by covariance.  This is exhibited, not asserted: three alternative witnesses that differ from M7 off the pinned coordinates satisfy the same constraint set and reproduce the 902 table on all 80 cells.
+----- stderr -----
 
-  C909-T2 EVERY WORLD-LEVEL FIELD COLLAPSES TO UNIFORM.  Occupation, formation moment and formation lifetime -- the carriers of the Cycle-878 candidates M3, M4, M5 -- are constant within a world, so after the covariance normalisation each induces exactly M6's uniform within-world split.  The entire named candidate menu is one point of the within-world question, which is why 907's failure could not be repaired by choosing differently among them.
-
-  C909-T3 THE DENOMINATOR LEMMA.  For any non-negative weighting in the cone, the degree-0 constraint at the ratio-1 atom forces sum_w rho_w(3)/S_w = n_star / 19003, hence 19003 = 31 * 613 must divide lcm(S_1..S_n).  The condition depends only on the eleven escape-world sums, so it kills every within-world profile built on those sums at once -- including profiles outside this block's declared closure.  This is the complete form of the census-completeness claim: enumeration is a convenience, the lemma is the obstruction.
-
-  C909-T4 THE REQUIRED NUMBERS ARE THE WALK'S LAYER PROFILE.  Divided by their atom's site count, the two columns satisfy c_0/s = p^2 + q^2 and c_2/s = 2pq exactly, with (p, q) = [[36, 2], [22, 1], [9, 1], [1, 0]] -- and the layer separation 2 is FORCED by the table's own zero pattern (M_1 = M_3 = M_4 = 0).  The ratio-1 entry is atom 3's linear record readout, the unit in which the other three are measured.  So the numbers the Born side would have to produce are the interference spectrum of the `single` configuration's walk, expressed in units of the record readout.
-
-  C909-T5 THE SECOND OBJECT IS INDEPENDENTLY CONSTRAINED.  c_0 does not determine c_2: atom 0's per-site degree-0 value 1300 is a sum of two squares in three ways and atom 1's 485 in two, so the degree-0 column admits 6 arithmetically consistent degree-2 columns and the walk picks one.  No native transform -- scalar, field multiplication, index shift, reversal -- carries one column to the other.  BL10 is two purchases.
-
-LANE LEDGER
-------------------------------------------------------------------------------
-  BL9_WITHIN_WORLD_DISTRIBUTION: OPEN and PRICED.  The constraint set is extracted exactly: the identification pins only 3 orbit-aggregate numbers -- the mass at within-world positions 1, 2, 3 as fractions 2910/19003, 492/19003, 1/19003 of the total -- and leaves everything else free.  No native recipe in a census of 1404 rules over the census's own 30 fields produces those fractions, and the denominator lemma extends the negative beyond the declared closure to every profile whose escape-world sums are coprime to 31 * 613
-
-  BL10_DEGREE_TWO_COLUMN: OPEN and SHARPENED.  The second object does NOT ride along. On the gravity side both columns come from one per-site walk-layer profile (p, q) at layer distance 2, with c_0 = sites (p^2+q^2) and c_2 = sites 2pq; but c_0 alone admits 6 different degree-2 columns, so the first object does not determine the second.  The only feature of the second object the Born side constrains is that it must VANISH on the ratio-1 atom's preimage
-
-VERDICT: WITHIN_WORLD_DISTRIBUTION_IS_A_PURCHASE
-all_certificates_pass: True
-receipt: outputs/within_world_pricing_cycle909_receipt_2026_07_28.json
-science_digest: 764090395ecbf51e0e45b4b65131b234fe56afe23878c0aa4223209035aa7552

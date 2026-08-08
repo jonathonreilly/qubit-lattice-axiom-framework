@@ -1,90 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle912_a3_channel_independent_check_2026_07_28.py
-runner_sha256: 72617e76f7bf6b1fa45ef99b551e77ca2f5d817f26273b576d800b055fb37070
-timeout_sec: 900
+runner_sha256: 30eef13d1376c6b315cd9f4b5ea2f43c8b5e39f352e412d03c523ea4950219e8
+input_fingerprint_sha256: 2bddf403e94b5283c2416db178e31986f9542258a2cf476863f3daee3d4f1c09
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 79.412
+elapsed_sec: 85.54
 status: ok
 ----- stdout -----
-CYCLE912_A3_CHANNEL_INDEPENDENT_CHECK
-SPECIFIED_TO_REFUTE -- exit 0 regardless of claim survival
+==============================================================================
+CYCLE 912 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
 
-CERTIFICATE X0_PINS PASS {"firewall_hits":[],"mismatches":[]}
-primary receipt sha256 817b9b938b901a8d
-primary runner sha256 42f22b1660b01fbb
+  PASS  R0_PINNED_EVIDENCE                   scripts/frontier_cycle912_a3_channel_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle912_a3_channel_2026_07_28.txt:MATCH
+  PASS  R0c_MODEL_STIPULATION_PRESENT        primary_source_contains_declared_model=True
+  PASS  R0b_CLAIMS_PARSED                    claims_line_found=True
+  PASS  R1_INVISIBILITY_RANDOMIZED           preserving_pairs=48352 random_readouts=400 separations=0 planted_tooth_fired=True
+  PASS  R2_SIMPLEX_DIMENSION_INDEPENDENT     vertex_rank=4 n_cells=5 primary_dim=4
+  PASS  R3_EXISTENCE_DOES_NOT_SELECT         both_witnesses_are_state_functional_probabilities=True witnesses_differ=True -> the existence premise selects nothing; uniform counting pins one point
+  PASS  R4_RECORDED_SCALE                    52018-1=52017 primary=52017 (counts stipulated, arithmetic only)
+  PASS  R5_RUNTIME                           elapsed_s=85.4 budget_s=300
 
-[event space rebuilt independently at 77.5s: 92260 events]
+TOTAL: PASS=8 FAIL=0
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK
 
-==========================================================================
-X1 -- CONTENT-MEASURABILITY, REBUILT FROM DEFINITIONS
-==========================================================================
-  content cells by union-find: 52018  (primary claimed 52018; agrees=True)
-  S2 constraint rank: 40242
-  M1_COUNTING                 measurable=True   violating_cells=0
-  M2_PER_WORLD_UNIFORM        measurable=False  violating_cells=85
-  M3_OCCUPATION_WEIGHTED      measurable=False  violating_cells=1002
-  M4_FORMATION_LIFETIME       measurable=False  violating_cells=2670
-  M5_FORMATION_MOMENT         measurable=False  violating_cells=2670
-  M6_ABSOLUTE_ORBIT_UNIFORM   measurable=False  violating_cells=5
-  disagreements: NONE
-  VERDICT: PRIMARY_SURVIVES_THIS_CHECK
+----- stderr -----
 
-==========================================================================
-X2 -- THE A3 CHANNEL, INDEPENDENTLY FORMALIZED
-==========================================================================
-  checker encoding : explicit homogeneous linear system over the 92,260 event weights, one equation per content-equality edge; forcing decided by ROW-SPACE MEMBERSHIP
-  primary encoding : one free value per content cell; forcing decided by vanishing of the difference functional's coefficient vector
-  readout space dim   checker=52018  primary=52018
-  prob affine dim     checker=52017  primary=52017
-  P_A forced=True  P_B forced=False
-  checker verdict=PARTIALLY-FORCED  primary verdict=PARTIALLY-FORCED
-  material differences: NONE
-  IDENTIFIED: two materially different encodings of the same landed sentences -- a per-content-cell model space and an explicit linear system decided by row-space membership -- return the same dimensions and the same verdict.  The channel's answer does not depend on which formalization is chosen.
-  VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-
-==========================================================================
-X3 -- PROVENANCE, VERIFIED AGAINST GIT INDEPENDENTLY
-==========================================================================
-  commits: {'a61fa74c3b': 'a61fa74c3bda229ef90b6ef6e113168e93953af7', '1c277078dd': '1c277078ddf53fffe49a2b17b8b6467f427f7433'}
-  note sha256   21c22981929f0304efbe15459fc2a9c43c3c4d2af2a69f06bd22d8efcfc2ccfd
-  runner sha256 a45a7315a5815a578458248363eb73e00334df95c672aa52840a699f95a5eee1
-  deletion commits: NONE
-  ancestor of HEAD: {'a61fa74c3b': False, '1c277078dd': False}
-  refs containing : ['refs/remotes/origin/born-from-envariance-2026-06-05']
-  A3 admission present in the recovered note: True
-  orphan mechanism independently confirmed: True
-  mismatches: NONE
-  VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-
-==========================================================================
-X4 -- RESIDUE VECTORS, RECOMPUTED BY A DIFFERENT GROUPING
-==========================================================================
-  recipes observed=1404  predicted from closure arities=1404  match=True
-  arities: {"K1_IDENTITY":30,"K2_TAG_RESTRICTION":180,"K3_PAIRWISE_PRODUCT":435,"K4_INDEX_PROFILE":36,"K5_POSITION_ATOM":129,"K6_BOUNDED_SUM":594}
-  distinct residue vectors mod 613   : 853
-  distinct residue vectors mod 31    : 671
-  distinct residue vectors mod 19003 : 874
-  distinct residue vectors mod 175   : 816
-  distinct residue vectors mod 5     : 391
-  distinct residue vectors mod 7     : 426
-  distinct residue vectors mod 25    : 669
-  degree0 native=0  degree2 native=188
-  null 0.00539 reproduced: True  null 85.8 reproduced: True
-  mismatches: NONE
-  VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-
-==========================================================================
-CERTIFICATE X_TEETH PASS  8/8 tampers caught
-  X_T1_TAMPERED_PIN                     True   
-  X_T2_DROPPED_WEIGHTING                True   primary carries 6 weightings
-  X_T3_HARDCODED_CHANNEL_VERDICT        True   
-  X_T4_LEAKED_FORCING                   True   
-  X_T5_PLANTED_FORCING_BLINDNESS        True   
-  X_T6_SKIPPED_RECIPE                   True   
-  X_T7_PLANTED_CELL_MERGE               True   1 conflicts detected after the merge
-  X_T8_PLANTED_WORLD_SUM_PERTURBATION   True   2 -> 3 distinct vectors
-
-CHECKER VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-per-check: {"X1_CONTENT_MEASURABILITY":"PRIMARY_SURVIVES_THIS_CHECK","X2_A3_CHANNEL":"PRIMARY_SURVIVES_THIS_CHECK","X3_PROVENANCE":"PRIMARY_SURVIVES_THIS_CHECK","X4_RESIDUE_VECTORS":"PRIMARY_SURVIVES_THIS_CHECK"}
-receipt -> outputs/a3_channel_independent_check_cycle912_receipt_2026_07_28.json
-elapsed 78.9s

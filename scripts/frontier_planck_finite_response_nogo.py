@@ -180,6 +180,52 @@ def main() -> int:
             "the Planck lane still needs the realified response surface and "
             "the gravitational boundary/action carrier identification."
         )
+        # N5 execution certificate (print-only; adds no check and no verdict)
+        print()
+        print("==============================================================================")
+        print("N5 EXECUTION CERTIFICATE")
+        print("==============================================================================")
+        print(
+            "  per_element: every matrix in this file is built and read one entry at a "
+            "time, in pure Python with integer arithmetic - signed_permutation_matrices "
+            "lays down each of the 384 group elements by setting values[col] = "
+            "signs[row] on an otherwise zero row, frobenius_distance_from_identity "
+            "walks all sixteen positions subtracting the Kronecker delta, and matmul is "
+            "an explicit triple loop, so the exact identity gap min ||g - I||_F = 2 and "
+            "the commutator trace 0 against Tr(I_4) = 4 are entrywise results."
+        )
+        print(
+            "  per_site: checked and not executed - the only index set present is the "
+            "four frame axes t, x, y, z of a single time-locked event cell, and axes "
+            "are not positions. No second cell, no neighbour relation and no site label "
+            "is constructed anywhere, so there is nothing in the file that could be "
+            "resolved cell by cell."
+        )
+        print(
+            "  per_mode: the ten metric-response directions are counted but never "
+            "built, which is the honest state of this class here - Sym^2(R^4) enters "
+            "only through the closed count n*(n+1)/2 = 10, not one of those ten "
+            "symmetric directions is instantiated, and the finite tangent dimension it "
+            "gets compared against is the literal 0 assigned two lines earlier rather "
+            "than a dimension extracted from the group."
+        )
+        print(
+            "  per_block: checked and not executed - the hyperoctahedral group is "
+            "handled as a flat set of 384 matrices and never decomposed. No invariant "
+            "subspace, no isotypic component and no cycle-type stratification is "
+            "formed; the only operations performed on the collection are a Frobenius "
+            "distance to the identity, a minimum over those distances, and a "
+            "set-membership test after casting entries to float."
+        )
+        print(
+            "  lattice_wide: checked and not executed - the file contains no extended "
+            "system, no coupling and no limiting process; its largest object is a 4x4 "
+            "integer matrix and its largest collection is 384 of them. The runner's "
+            "closing verdict marks this granularity as still owed rather than "
+            "delivered, naming the realified response surface and the gravitational "
+            "boundary/action carrier identification as what the Planck lane still "
+            "needs."
+        )
         return 0
     return 1
 

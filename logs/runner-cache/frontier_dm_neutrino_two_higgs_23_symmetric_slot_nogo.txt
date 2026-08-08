@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_two_higgs_23_symmetric_slot_nogo.py
-runner_sha256: 34d9f3d263c3cd1075991ba1e1955667143f77e5787ab1bb2a05ccb7c8abf1af
+runner_sha256: a458785ccfb5017755de1718b5fb3153334246ae56a9a9133ed6ca4b7e817bc4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.20
+elapsed_sec: 4.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -43,6 +43,15 @@ PART 3: ON THIS SUBLANE THE PHYSICAL CP TENSOR IS PROPORTIONAL TO b d
   So this restricted sublane does not merely fail to derive the needed
   singlet-doublet carrier. Its exact source-phase aligned branch is
   structurally CP-empty.
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+  per_element: checked -- the 2<->3 restriction is imposed entrywise, x_2 = x_3 = b and y_2 = y_3 = d collapsing the six lane amplitudes to the four symbols a, b, c, d, and the runner then finds the whole obstruction living in the single product b d, which occupies exactly 4 entries of the kernel at positions [(0, 2), (1, 2), (2, 0), (2, 1)]; the alignment demands are read off kz[0,1] and kz[0,2] individually.
+  per_site: checked and not executed -- the 2<->3 exchange that defines this sublane acts on the internal generation labels 2 and 3 of a single fixed factor, not on any pair of lattice positions; the runner builds no lattice, so the restriction is a symmetry of the internal index only and nothing here is resolved per site.
+  per_mode: checked -- conjugating by UZ3 sends the kernel to the Z_3 character basis, and the exact source phase exp(2 pi i / 3) is imposed separately on the two singlet-to-doublet mode pairs, yielding two independent real polynomials whose sum collapses to the single obstruction -sqrt(3)*b*d/2; neither mode pair alone forces it.
+  per_block: checked -- because the sublane is 2<->3 symmetric it is exactly the exchange-even subfamily, so its Z_3 doublet block is degenerate by construction, and that is why a four-parameter sublane is more tightly constrained than the full lane; the real rotation R then carries the singlet fixed and the doublet block into the mass basis, where Im[(K_mass)_02^2] = sqrt(3)*b*d*(4*a**2 + 2*a*c - 4*b**2 - 5*b*d - 2*c**2 + 2*d**2)/12.
+  lattice_wide: checked and not executed -- the whole no-go is exact symbolic algebra in four real symbols on one 3x3 kernel, with no volume, no site sum, no ensemble and no limit anywhere, so the CP-emptiness of the aligned branch is certified for this sublane at single-factor scope and is never lifted to a lattice-scale claim.
 
 ========================================================================================
 RESULT

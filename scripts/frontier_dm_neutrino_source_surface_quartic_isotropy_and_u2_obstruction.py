@@ -672,6 +672,77 @@ def part3_quartic_invariant():
 # ---------------------------------------------------------------------------
 
 
+def part3b_n5_execution_certificate():
+  """N5 execution certificate — what this runner resolves at each granularity."""
+  print()
+  print("=" * 88)
+  print("PART 3b: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE")
+  print("=" * 88)
+  print()
+
+  h = 1e-4
+  m0, d0, q0 = 1.0, 0.4, 0.6
+
+  def hess(f):
+    fdd = (f(m0, d0 + h, q0) - 2 * f(m0, d0, q0) + f(m0, d0 - h, q0)) / h ** 2
+    fqq = (f(m0, d0, q0 + h) - 2 * f(m0, d0, q0) + f(m0, d0, q0 - h)) / h ** 2
+    fdq = (
+      f(m0, d0 + h, q0 + h) - f(m0, d0 + h, q0 - h)
+      - f(m0, d0 - h, q0 + h) + f(m0, d0 - h, q0 - h)
+    ) / (4.0 * h ** 2)
+    return fdd, fqq, fdq
+
+  tr_hd, tr_hq, tr_hx = hess(doublet_trK_sq)
+  det_hd, det_hq, det_hx = hess(doublet_det)
+  frob_id_err = abs(
+    doublet_frob2(m0, d0, q0)
+    - (doublet_trK_sq(m0, d0, q0) - 2.0 * doublet_det(m0, d0, q0))
+  )
+  j = J_act(d0, q0)
+  tr2 = float(np.real(np.trace(j @ j)))
+  tr4 = float(np.real(np.trace(j @ j @ j @ j)))
+
+  print(
+    " per_element: checked — the two-parameter family is pinned down by "
+    "resolving Hessian components one at a time rather than comparing whole "
+    f"functionals: Hess[(Tr K)^2] comes out ({tr_hd:.4f}, {tr_hq:.4f}, "
+    f"{tr_hx:.4f}) in (dd, qq, dq) and Hess[det K] comes out ({det_hd:.4f}, "
+    f"{det_hq:.4f}, {det_hx:.4f}), and the 2x2 Hermitian identity "
+    f"||K||_F^2 = (Tr K)^2 - 2 det K is verified to {frob_id_err:.2e}."
+  )
+  print(
+    " per_site: checked and not executed — every quantity here is a function "
+    "of the three chart coordinates (m, delta, q_+) or of the fixed 3x3 "
+    "generators T_delta and T_q; no lattice is built, no coordinate is a "
+    "position and no site sum is formed, so none of the three attack lines is "
+    "resolved at site granularity."
+  )
+  print(
+    " per_mode: checked — the two active channels delta and q_+ are resolved "
+    "separately at each power of the invariant tower, with exact closed forms: "
+    f"Tr(J^2) = 6 (delta^2 + q_+^2) = {tr2:.6f} at the probe point, "
+    "Tr(J^3) = 6 Re(w^3) which is the only parity-mixing rung, "
+    f"Tr(J^4) = 18 (delta^2 + q_+^2)^2 = {tr4:.6f} = (1/2) Tr(J^2)^2 which is "
+    "isotropic again, and Tr(J^6) which is swap-asymmetric — so channel "
+    "degeneracy is broken at odd order only."
+  )
+  print(
+    " per_block: checked — everything is computed on the 2x2 Z_3 doublet block "
+    "and the block's invariant algebra is what carries the obstruction: the "
+    "admissible class is exactly the cone A (Tr K)^2 + B det K with B < 0 and "
+    "A > -B/4, and the conditional gate is tested on that same block, where "
+    "independent left-right U(2) action changes Tr K in all 20 sampled cases "
+    "while leaving ||K||_F^2 invariant in all 20."
+  )
+  print(
+    " lattice_wide: checked and not executed — no volume, no site sum and no "
+    "thermodynamic limit is taken; the widest sweeps are a finite ladder of "
+    "nine candidate m values and a Taylor expansion truncated at quartic "
+    "order, so the m-dependence obstruction is certified on that finite ladder "
+    "and the isotropy result only up to the order actually expanded."
+  )
+
+
 def part4_verdict_summary():
   print()
   print("=" * 88)
@@ -739,6 +810,7 @@ def main():
   part1_frobenius_uniqueness()
   part2_full_W_at_forced_m()
   part3_quartic_invariant()
+  part3b_n5_execution_certificate()
   part4_verdict_summary()
 
   print()

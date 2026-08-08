@@ -194,6 +194,47 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate -- what this runner resolves per class:")
+    print(
+        "  per_element: checked -- each transfer coefficient is carried across "
+        "on its own rather than as a bundle: c12 goes "
+        f"{c12_geom:.6f} -> {c12_phys:.6f}, c23 goes {c23_geom:.6f} -> "
+        f"{c23_phys:.6f} and the Schur-generated c13 goes {c13_geom:.6f} -> "
+        f"{c13_phys:.6f}; separately every entry of H_phase is inspected, with "
+        f"max |offdiag| = {np.max(np.abs(offdiag)):.2e}."
+    )
+    print(
+        "  per_site: checked and not executed -- every atlas tool this runner "
+        "attempts to transplant (GST hierarchy, mass-basis NNI, Schur "
+        "complement, Jarlskog phase) is a generation-space construction, and "
+        "y0, the singular values and the c_ij all carry only that internal "
+        "index; no lattice position enters, so no site-resolved transfer is "
+        "attempted or claimed here."
+    )
+    print(
+        "  per_mode: checked -- the three singular modes of Y' are resolved "
+        "individually and are exactly degenerate, all three sitting at "
+        f"y_0 = {y0:.12f} with max |s_i - y_0| = "
+        f"{np.max(np.abs(singular_values - y0)):.2e}; that is why the three "
+        f"mode ratios sqrt(s1/s2), sqrt(s2/s3), sqrt(s1/s3) come out as "
+        f"{r12:.6f}, {r23:.6f}, {r13:.6f} and leave no hierarchy to transfer."
+    )
+    print(
+        "  per_block: checked -- the right basis change factorizes into a "
+        "diagonal Z_3 phase block diag(1, e^{2 pi i/3}, e^{-2 pi i/3}) and a "
+        "real rotation fixing index 1 while rotating the (2,3) block, and the "
+        "Schur-complement route is itself a block-elimination statement, "
+        f"c13 = c12 * c23 = {c13_geom:.6f}; both block structures are evaluated "
+        "and neither introduces a suppression factor."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- all four transfer routes "
+        "are evaluated once on a single fixed 3x3 bridge Y = y_0 I with no "
+        "ensemble, no volume and no limit anywhere in the runner, so the "
+        "no-transfer verdict is certified only for that one bridge and is "
+        "never promoted to a lattice-scale or asymptotic statement."
+    )
+    print()
     print("Result:")
     print("  The current CKM/NNI atlas toolkit does not transfer to the current")
     print("  exact universal neutrino Dirac bridge. The bridge has no singular-value")

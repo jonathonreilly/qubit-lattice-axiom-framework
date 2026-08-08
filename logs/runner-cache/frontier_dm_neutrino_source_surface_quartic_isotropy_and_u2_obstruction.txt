@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_quartic_isotropy_and_u2_obstruction.py
-runner_sha256: 6203f948a4289b874aa6e6b8b42a609615a6d67f17dce64513bb77ce1110e9ff
+runner_sha256: a897889969878a3b70adb0abc48a467f032fd0800a5d4162de092b854217f535
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -16,7 +16,7 @@ LINE 1: FROBENIUS UNIQUENESS FROM PD + COERCIVITY + GAUGE-INV + QUADRATIC
 ========================================================================================
  [PASS] ||K_doublet||_F^2 = (Tr K)^2 - 2 det K (Hermitian 2x2 identity) (err = 0.00e+00)
  [PASS] Hess[(Tr K)^2] = diag(0, 8) (no delta dependence; q^2 coeff = 4) ((hd2, hq2, hdq) = (0.0000, 8.0000, 0.0000))
- [PASS] Hess[det K] = diag(-6, 2) (delta-concave, q-convex — indefinite) ((hd2, hq2, hdq) = (-6.0000, 2.0000, -0.0000))
+ [PASS] Hess[det K] = diag(-6, 2) (delta-concave, q-convex — indefinite) ((hd2, hq2, hdq) = (-6.0000, 2.0000, 0.0000))
  [PASS] PD cone { A > -B/4, B < 0 } correctly characterises {Hess F = diag(-6B, 8A+2B) PD}
  [PASS] Line 1 member (A,B)=(1,-2) i.e. F1 reproduces delta_* = sqrt(6)/2 - sqrt(2)/18 (delta = 1.14617745 vs 1.14617745)
  [PASS] Line 1 obstruction: >=3 DISTINCT chamber-boundary minimizers in the PD cone (3 of 4 non-F1 members give a different delta_*)
@@ -67,7 +67,7 @@ LINE 2: FULL-W EXTREMUM AT PHYSICALLY-FORCED m
 LINE 3: QUARTIC EXTENSION OF THE OBSERVABLE PRINCIPLE
 ========================================================================================
  [PASS] Tr(J_act^2) = 6 (delta^2 + q_+^2) [parity-DEFINITE / isotropic] (max err = 3.55e-15)
- [PASS] Tr(J_act^3) = 6 (q_+^3 - 3 delta^2 q_+) = 6 Re(w^3) [parity-MIXING cubic] (max err = 1.42e-14)
+ [PASS] Tr(J_act^3) = 6 (q_+^3 - 3 delta^2 q_+) = 6 Re(w^3) [parity-MIXING cubic] (max err = 2.84e-14)
  [PASS] Tr(J_act^4) = 18 (delta^2 + q_+^2)^2 [parity-DEFINITE / isotropic AGAIN] (max err = 1.14e-13)
  [PASS] Tr(J_act^4) = (1/2) [Tr(J_act^2)]^2 (quartic is SQUARE of quadratic)
  [PASS] Tr(J_act^6) is NOT isotropic under (delta, q_+) swap (higher-order terms DO carry parity information, but not at quartic)
@@ -86,6 +86,16 @@ LINE 3: QUARTIC EXTENSION OF THE OBSERVABLE PRINCIPLE
   Tr(J^4) = 18 r^4 = (1/2) Tr(J^2)^2 is ISOTROPIC (no new parity-mixing).
   Hence the observable-principle Taylor expansion's parity-mixing
   content is concentrated at cubic order (already the cubic variational selection obstruction obstructed).
+
+========================================================================================
+PART 3b: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+
+ per_element: checked — the two-parameter family is pinned down by resolving Hessian components one at a time rather than comparing whole functionals: Hess[(Tr K)^2] comes out (0.0000, 8.0000, 0.0000) in (dd, qq, dq) and Hess[det K] comes out (-6.0000, 2.0000, 0.0000), and the 2x2 Hermitian identity ||K||_F^2 = (Tr K)^2 - 2 det K is verified to 0.00e+00.
+ per_site: checked and not executed — every quantity here is a function of the three chart coordinates (m, delta, q_+) or of the fixed 3x3 generators T_delta and T_q; no lattice is built, no coordinate is a position and no site sum is formed, so none of the three attack lines is resolved at site granularity.
+ per_mode: checked — the two active channels delta and q_+ are resolved separately at each power of the invariant tower, with exact closed forms: Tr(J^2) = 6 (delta^2 + q_+^2) = 3.120000 at the probe point, Tr(J^3) = 6 Re(w^3) which is the only parity-mixing rung, Tr(J^4) = 18 (delta^2 + q_+^2)^2 = 4.867200 = (1/2) Tr(J^2)^2 which is isotropic again, and Tr(J^6) which is swap-asymmetric — so channel degeneracy is broken at odd order only.
+ per_block: checked — everything is computed on the 2x2 Z_3 doublet block and the block's invariant algebra is what carries the obstruction: the admissible class is exactly the cone A (Tr K)^2 + B det K with B < 0 and A > -B/4, and the conditional gate is tested on that same block, where independent left-right U(2) action changes Tr K in all 20 sampled cases while leaving ||K||_F^2 invariant in all 20.
+ lattice_wide: checked and not executed — no volume, no site sum and no thermodynamic limit is taken; the widest sweeps are a finite ladder of nine candidate m values and a Taylor expansion truncated at quartic order, so the m-dependence obstruction is certified on that finite ladder and the isotropy result only up to the order actually expanded.
 
 ========================================================================================
 PART 4: CONSOLIDATED VERDICT

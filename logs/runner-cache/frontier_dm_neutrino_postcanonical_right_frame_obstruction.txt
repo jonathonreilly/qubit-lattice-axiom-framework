@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_postcanonical_right_frame_obstruction.py
-runner_sha256: 18972e43e254f14130f8107125a2d9ac6d5955bf9485519c9a1835c94beae63b
+runner_sha256: 2f314c0a9625f06f34d1114b06ec8f8fe5b29a3560a6d8272158bb33f61dc6d6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,7 +17,7 @@ Question:
 ========================================================================================
 PART 1: THE RETAINED HERMITIAN DATA STAY FIXED ALONG THE RIGHT ORBIT
 ========================================================================================
-  [PASS (C)] A right-unitary transform leaves H = Y Y^dag exactly fixed  (H error = 2.25e-16)
+  [PASS (C)] A right-unitary transform leaves H = Y Y^dag exactly fixed  (H error = 2.22e-16)
   [PASS (C)] So the retained left/Hermitian data cannot see the right-orbit motion  (the same H supports multiple right-sensitive kernels K)
 
   This is the DM-side analogue of the PMNS right-frame obstruction:
@@ -27,7 +27,7 @@ PART 1: THE RETAINED HERMITIAN DATA STAY FIXED ALONG THE RIGHT ORBIT
 PART 2: THE POST-CANONICAL SLOT DATA CHANGE ALONG THE SAME ORBIT
 ========================================================================================
   [PASS (C)] The singlet-doublet slot amplitudes are not fixed by the retained H data alone  ((u,v)_0=(0.082500-0.238157j,-0.137500-0.088046j), (u,v)_1=(0.129349-0.218419j,-0.016487+0.155846j))
-  [PASS (C)] The physical heavy-neutrino-basis CP tensor also varies along that orbit  (CP0=(0.015083275782579014, -0.11193378343913891), CP1=(0.13745215229505714, 0.034720575498981186))
+  [PASS (C)] The physical heavy-neutrino-basis CP tensor also varies along that orbit  (CP0=(0.015083275782579017, -0.11193378343913894), CP1=(0.13745215229505714, 0.03472057549898119))
 
   So the post-canonical slot-supported bridge is not intrinsic on the
   current retained stack. It moves on an exact right-unitary orbit.
@@ -40,6 +40,15 @@ PART 3: WHAT THE CURRENT STACK STILL LACKS
   [PASS (C)] Deriving it needs a new right-frame-fixing theorem or right-sensitive observable principle  (that is the remaining theorem target if DM is to close)
 
   So the honest answer is no: not from the current stack.
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+  per_element: checked -- the moving quantities are located in named single entries, not in a summary norm: kz[0,1] runs from -0.255000+0.210733j to -0.110621-0.066455j and kz[0,2] from 0.020000+0.265581j to 0.251205+0.313430j along the right orbit, while the entrywise difference of H itself is only 2.22e-16 -- the same entries that the retained bank leaves undetermined are the ones exhibited here.
+  per_site: checked and not executed -- the three indices carrying x = [1.0, 0.8, 1.1] and y = [0.4, 0.6, 0.5] are internal generation slots that the CYCLE matrix permutes, not lattice positions, and the right-frame ambiguity is an ambiguity of internal basis; no position-dependent quantity is formed anywhere in this runner.
+  per_mode: checked -- the two singlet-doublet slot amplitudes are the mode-resolved even and odd combinations of the two Z_3 doublet characters at phase phi = 2 pi/3, and both move: u goes 0.082500-0.238157j -> 0.129349-0.218419j and v goes -0.137500-0.088046j -> -0.016487+0.155846j, so the obstruction is visible mode by mode and not only in an aggregate.
+  per_block: checked -- the right rotation U_R(0.41) is the identity on the singlet index and a rotation of the 2-dimensional doublet block alone, which is exactly why it is invisible to H and visible to K; the runner evaluates the complete slot-and-CP block on both orbit copies Y and Y U_R^dag and compares them copy against copy.
+  lattice_wide: checked and not executed -- only two representatives of one right-unitary orbit on a single 3x3 bridge are instantiated, with no volume, no ensemble over the orbit and no limit taken; the obstruction is that the orbit is never quotiented by a frame-fixing theorem, which is a statement about this one fiber, not about scale.
 
 ========================================================================================
 RESULT

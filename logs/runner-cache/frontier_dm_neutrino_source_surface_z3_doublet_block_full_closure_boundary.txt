@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_full_closure_boundary.py
-runner_sha256: 5f10b7e8582d97e69533ba574d0f2096e435e136d48f25d74a4dd9c85cf72ddf
+runner_sha256: 189bbb9241b0402ed1b21928b65c2ef944ca6f7c39a9da6711651dd389efd800
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,15 +26,15 @@ PART 1: THE CURRENT SOURCE-FACING BANK IS ALREADY FIXED
 ========================================================================================
 PART 2: THE REMAINING TARGET IS EXACTLY THE 2-REAL ACTIVE PAIR
 ========================================================================================
-  [PASS] Changing delta at fixed q_+ changes the first active coordinate only  ((delta,q_+) : (0.20000000000000007, 1.8329931618554522) -> (0.9, 1.8329931618554522))
-  [PASS] Changing q_+ at fixed delta changes the second active coordinate only  ((delta,q_+) : (0.20000000000000007, 1.8329931618554522) -> (0.19999999999999982, 2.5000000000000004))
+  [PASS] Changing delta at fixed q_+ changes the first active coordinate only  ((delta,q_+) : (0.19999999999999996, 1.8329931618554522) -> (0.9, 1.8329931618554522))
+  [PASS] Changing q_+ at fixed delta changes the second active coordinate only  ((delta,q_+) : (0.19999999999999996, 1.8329931618554522) -> (0.19999999999999996, 2.5000000000000004))
   [PASS] So the remaining microscopic target is exactly the 2-real pair (delta, q_+)  (equivalently the intrinsic Z3 doublet block)
 
 ========================================================================================
 PART 3: THE CURRENT EXACT BANK IS POINT-BLIND ON THAT CHAMBER
 ========================================================================================
   [PASS] Distinct live-sheet points with different delta and q_+ share the same exact current-bank signature  (same (gamma,E1,E2,cp1,cp2,a_*,b_*,T_slot))
-  [PASS] Those same points still have different active targets  (targets=(0.19999999999999982, 2.2), (0.9, 2.2), (0.19999999999999982, 2.5000000000000004))
+  [PASS] Those same points still have different active targets  (targets=(0.19999999999999996, 2.2000000000000006), (0.9000000000000001, 2.2000000000000006), (0.19999999999999996, 2.5000000000000004))
   [PASS] Therefore the current exact bank is exact but point-blind on the live chamber  (no hidden selector appears inside the current bank)
 
 ========================================================================================
@@ -49,6 +49,15 @@ PART 5: THE NOTE RECORDS THE FULL CLOSEOUT CLEANLY
 ========================================================================================
   [PASS] The note records the fixed source-facing tuple and the moving 2-real target
   [PASS] The note records the negative closeout of the current bank at the final gate
+
+========================================================================================
+PART 6: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+  per_element: checked -- the two active coordinates are moved and read back one at a time, so the blindness is coordinate-resolved rather than aggregate: raising delta leaves the second coordinate pinned at 2.200000000000 while the first moves 0.200000 -> 0.900000, and raising q_+ leaves the first pinned while the second moves 2.200000 -> 2.500000; same_signature likewise compares all eight bank components separately.
+  per_site: checked and not executed -- the last microscopic gate this runner probes is microscopic in the sense of chart coordinates, not of space: the carriers are 3x3 Hermitian points and the target is a pair of real numbers, with no lattice, no neighbourhood and no site label constructed anywhere, so nothing is certified per site.
+  per_mode: checked -- the two unresolved reals are read out of the intrinsic Z_3 character kernel, delta from the imaginary doublet mixing and q_+ from the centered doublet trace, while the singlet-facing readouts stay pinned at gamma = 0.500000000000, E1 = 1.632993161855, E2 = 0.942809041582 across every sample; the bank sees the singlet modes and misses the doublet modes, and that split is exhibited mode by mode.
+  per_block: checked -- four carrier copies are compared block against block, and the fourth deliberately switches on the spectator generator at m = 1.1, so the point-blindness is verified not only along the two active doublet-block directions but also against the spectator block; all four copies return one and the same signature while carrying different doublet blocks.
+  lattice_wide: checked and not executed -- exactly four points of one affine chart are instantiated, with no volume, no sweep to infinity and no limit of any kind; the negative closeout is therefore certified as a statement about the current bank on those points, and this runner asserts nothing at lattice or asymptotic scale.
 
 ========================================================================================
 RESULT

@@ -182,6 +182,61 @@ def part3_the_current_stack_law_for_the_odd_slot_is_zero() -> None:
     print("  It is the zero law c_odd,current = 0.")
 
 
+def part4_n5_execution_certificate() -> None:
+    print("\n" + "=" * 88)
+    print("PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE")
+    print("=" * 88)
+
+    a = 1.4 + 0.3j
+    b = 0.8 - 0.2j
+    uz3 = z3_bridge()
+    y_even = even_slice_from_split(a, b, uz3)
+    h_even = y_even.conj().T @ y_even
+    d_cur, r_cur, c_future = 1.15, 0.33, 0.19
+    k_even = circulant_from_even_data(d_cur, r_cur)
+    k_odd = k_even + 1j * c_future * (S - S2)
+    d_split = np.diag([a, b, b]).astype(complex)
+    site_even_err = np.linalg.norm(P23 @ d_split @ P23.conj().T - d_split)
+
+    print(
+        "  per_element: checked -- the odd slot is not a norm but one specific "
+        "matrix entry, Im K[0,1], and it is extracted separately for every "
+        f"kernel this runner builds: {odd_coeff(h_even):.2e} on the bridged "
+        f"Hermitian kernel, {odd_coeff(k_even):.2e} on the retained even "
+        f"circulant, and {odd_coeff(k_odd):.6f} on the hypothetical activated "
+        "kernel, so the zero law is read off an entry rather than inferred."
+    )
+    print(
+        "  per_site: checked -- the three-element local site basis on which the "
+        "shift S and the residual-Z2 transposition P23 act is resolved site by "
+        f"site: the weak-axis split puts a = {a} on site 1 and the identical "
+        f"b = {b} on sites 2 and 3, and evenness is verified as the exact "
+        f"site-permutation identity P23 D P23^dag = D to {site_even_err:.2e}."
+    )
+    print(
+        "  per_mode: checked and not executed -- the Z_3 character modes are "
+        "never separated here; uz3 is applied only as a whole-matrix "
+        "conjugation and no eigenvalue or character amplitude is taken, so the "
+        "runner does not exhibit the odd slot as the splitting between the two "
+        "doublet characters even though that is where it would live."
+    )
+    print(
+        "  per_block: checked -- the residual-Z2 orbit structure gives a "
+        "1-dimensional weak-axis block and a 2-dimensional degenerate block, "
+        "and all four representative bank functionals (Y^dag Y, Hermitian "
+        "symmetrization, the Hermitian quadratic combination, the resolvent) "
+        "are evaluated against that block structure and each stays even, so no "
+        "single block of the retained bank activates the slot."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- the entire system is the "
+        "one three-site orbit above; there is no extended lattice, no volume "
+        "and no limit taken anywhere in this runner, so c_odd,current = 0 is "
+        "certified as a present-tense statement about that single retained "
+        "bank and is not promoted to any lattice-scale zero law."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM NEUTRINO ODD-CIRCULANT CURRENT-STACK ZERO LAW")
@@ -199,6 +254,7 @@ def main() -> int:
     part1_the_current_local_input_surface_is_residual_z2_even()
     part2_equivariant_functionals_of_even_data_stay_even()
     part3_the_current_stack_law_for_the_odd_slot_is_zero()
+    part4_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

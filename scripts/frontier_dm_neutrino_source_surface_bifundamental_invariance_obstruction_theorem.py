@@ -927,6 +927,58 @@ def part10_verdict():
 
 
 # ---------------------------------------------------------------------------
+# Part 11: N5 execution certificate
+# ---------------------------------------------------------------------------
+
+
+def part11_n5_execution_certificate():
+  print()
+  print("=" * 88)
+  print("PART 11: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE")
+  print("=" * 88)
+
+  print(
+    " per_element: checked — line L4 is an entrywise statement and is tested "
+    "that way: the retained Z_3 support is a named set of matrix positions, "
+    "{(1,1),(2,2),(3,3)} at q_H = 0, {(1,2),(2,3),(3,1)} at q_H = +1 and "
+    "{(1,3),(2,1),(3,2)} at q_H = -1, and is_diagonal_support measures exactly "
+    "which entries become populated; line L3 likewise resolves H into its "
+    "seven Hermitian coordinates (d1, d2, d3, r12, r23, r31, phi) one by one."
+  )
+  print(
+    " per_site: checked and not executed — the Cl(3)/Z^3 axiom enters this "
+    "runner only as the provenance deciding which unitary actions count as "
+    "retained; every object actually built is an internal carrier (3x3 charts, "
+    "the 2x2 doublet block, a 16x16 Dirac involution) with no site index, so "
+    "no attack line is resolved position by position."
+  )
+  print(
+    " per_mode: checked — the Z_3 characters are the organising modes "
+    "throughout: K_Z3 = U_Z3^dag H U_Z3 separates the singlet mode from the "
+    "doublet pair, and L4 resolves the mode charges individually, using the "
+    "phase triple (1, exp(2 pi i/3), exp(-2 pi i/3)) and the retained locking "
+    "constraint q_L + q_H + q_R = 0 mod 3 that ties the left mode charges to "
+    "the right ones."
+  )
+  print(
+    " per_block: checked — this is the sharpest class here. The active object "
+    "is the 2x2 doublet block K_Z3[1:,1:]; the retained Dirac carrier is a "
+    "single 16-dimensional Hermitian involution with no (L,R) block split; and "
+    "L3 states the obstruction as an explicit block-dimension budget, the "
+    "retained gauge algebra being 1-dimensional (the common shift) against the "
+    "8 generators of u(2)_L + u(2)_R, leaving 7 generators missing."
+  )
+  print(
+    " lattice_wide: checked and not executed — no lattice sum, volume or "
+    "asymptotic limit is taken anywhere; the widest sweeps are a 5001-point "
+    "one-dimensional scan along the chamber boundary q_+ = sqrt(8/3) - delta "
+    "and 20-trial Haar unitary ensembles, both on fixed finite carriers, so "
+    "the falsification of the F1 antecedent at (sqrt(6)/2 - sqrt(2)/18, "
+    "sqrt(6)/6 + sqrt(2)/18) is certified at chart scope only."
+  )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -953,6 +1005,7 @@ def main() -> int:
   part8_l5_schur_collapse()
   part9_weaker_invariances_do_not_pin_f1()
   part10_verdict()
+  part11_n5_execution_certificate()
 
   print()
   print("=" * 88)

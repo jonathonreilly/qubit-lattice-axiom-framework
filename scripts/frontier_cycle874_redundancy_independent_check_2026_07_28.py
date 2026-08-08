@@ -1,14 +1,27 @@
 #!/usr/bin/env python3
-"""Cycle 874 copy-redundancy: INDEPENDENT ADVERSARIAL CHECKER.
+"""Cycle 874 whole-state-digest replication: INDEPENDENT ADVERSARIAL
+CHECKER (bounded support grade).
 
-Isolated re-implementation, spec'd to REFUTE.  The 874 primary, the 867
-primary it extends, the 863 replay substrate and the 866-867 finale
-checker are all BLOCKLISTED at import: they are read as text/AST only.
-Every number below is re-derived here from the pinned Cycle-719 kernel
-alone, with this checker's own census, own dirty partition, own dead-wire
+Isolated re-implementation, spec'd to REFUTE the 874 primary's emitted
+numbers.  The 874 primary is BLOCKLISTED at import: it is read as
+text/AST only.  Every number below is re-derived here from the pinned,
+landed Cycle-719 kernel alone -- the only computed input of this file --
+with this checker's own census, own dirty partition, own dead-wire
 derivation, own slot allocation (a DIFFERENT tag ordering, so agreement
 cannot come from sharing an allocation), own composed scan, own content
 model and own perturbation probe.
+
+Grade and semantic scope (demoted on physics review, iteration 1,
+2026-08-08): the reproduced cells are bounded support certificates, not
+a redundancy no-go.  Every perturbation here changes the SOURCE state
+before any copy is formed (common-mode), so for identical replicas the
+majority R-invariance is forced by construction; no stored copy slot is
+faulted after writing.  Sides are FIXED perturbation banks (bank0/bank1
+payload wires), not a near/far record-locality contrast: no
+record-location selector is defined and no bank-swap control was run.
+The content word is a stipulated model fingerprint (truncated SHA-256 of
+the packed lane state with register slots zeroed); no framework
+record-content identification is claimed.
 
 Attacks:
   THE_REDUNDANT_REGISTER -- own R-fold register: pool, disjointness,
@@ -17,19 +30,19 @@ Attacks:
       declared numbers and, independently, that a DIFFERENT choice of
       safe slot wires yields the SAME content words (the primary's
       payload-projection claim).
-  THE_CONTENT_PROBE -- own four declared perturbation classes near/far,
-      own per-R per-mode cells, own R-dependence verdict and own
-      decomposition of the restore-class near/far contrast into a firing
-      gap and a content gap.
+  THE_CONTENT_PROBE -- own four declared perturbation classes on the
+      fixed bank0/bank1 sides, own per-R per-mode cells, own
+      R-dependence verdict and own decomposition of the restore-class
+      bank0/bank1 gap into a firing gap and a content gap.
   THE_HARDER_REDUNDANCY -- the refutation attempt.  Two redundancy
       schemes STRONGER than the primary's are built and measured: a
       DEEP-STAGGERED scheme (copies at clean edges 1, 1+stride,
       1+2*stride, a wider temporal spread than the primary's consecutive
       edges) and a PROJECTION-SHARDED scheme (copy c digests a different
       block of the live state).  If deep staggering buys an R-gain the
-      primary missed, the primary's null is REFUTED.  The sharded scheme
-      is not copy-identical, so a positive there is reported as an
-      adjacent finding, not a refutation.
+      primary missed, the primary's emitted null is REFUTED.  The
+      sharded scheme is not copy-identical; its any_copy_survives row is
+      a partial observation only (no reconstruction is attempted).
   THE_SCOPE_AUDIT -- AST over the primary: every declared cap constant
       must be referenced inside an emitted certificate payload, and the
       certificate pass-gates must not reference the outcome objects.
@@ -39,9 +52,15 @@ Declared probe of this checker (complete): B=2, k=2..5 census (748
 lanes), horizon 16,384 orbits, dead-wire window 512 orbits chunk-granular
 then 4,096 orbit-granular, existence register cap 64 per (tag, lane),
 content word 32 bits, R in {1,2,3}, consecutive-edge stagger walk cap 64
-boundaries, deep-stagger stride 4 with walk cap 512 boundaries, locality
-sample 32 lanes with first-clean boundary <= 1,100, 4 payload wires per
-side.  bounded_theorem, authority none, audit unset.
+boundaries, deep-stagger stride 4 with walk cap 512 boundaries, sample
+32 lanes with first-clean boundary <= 1,100, 4 payload wires per side.
+
+Provenance context (non-load-bearing): the design descends from the
+unlanded Cycle-863/866/867 line; nothing from that line is read, pinned,
+imported, or gated on here.
+
+claim_type bounded_theorem carried as a bounded support note; authority
+none; audit unset.
 """
 from __future__ import annotations
 
@@ -58,33 +77,21 @@ AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
-    "scripts/frontier_cycle867_composed_record_write_2026_07_28.py",
-    "scripts/frontier_cycle866_867_finale_independent_check_2026_07_28.py",
     "scripts/frontier_cycle874_copy_redundancy_content_2026_07_28.py",
 )
 KERNEL_PATH = AUDIT_INPUT_PATHS[0]
-PRIMARY_PATH = AUDIT_INPUT_PATHS[4]
+PRIMARY_PATH = AUDIT_INPUT_PATHS[1]
 TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:]
 BLOCKLISTED_MODULES = tuple(Path(p).stem for p in TEXT_AST_ONLY_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[1]:
-        "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
-    AUDIT_INPUT_PATHS[2]:
-        "49605f6d0730e224d6c4cd25a182ec49e0c7d2f2316851bc2755632dcbe2c828",
-    AUDIT_INPUT_PATHS[3]:
-        "265498fc24a0b71d56e5de6ef1ebc4113510963407e0247fa80940c935e277ba",
-    AUDIT_INPUT_PATHS[4]:
-        "02ffdec2e7e2c18b86900a428fd4360ccd54dc62d35e1ef5f72f89a6545439d3",
+        "e81e8724eaefc421a05e4d35f30b96adb4e97e9cebab9c8ff96c1a6b676861bc",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "871b9e986ca5e684ceadce25ff3e03164ef26c98",
-    AUDIT_INPUT_PATHS[2]: "5f923e8429373fa5afc71a417cd4e6f787ec71b8",
-    AUDIT_INPUT_PATHS[3]: "4b6f18b00b087787c9f253d0c9b23a9ec74f9cb1",
-    AUDIT_INPUT_PATHS[4]: "7f4c00a5ef5d47db8a0061a34975ff1ce78294fc",
+    AUDIT_INPUT_PATHS[1]: "aa8d6f44ccd8ac985ea5f4ac5f53a4be381cdf21",
 }
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -120,27 +127,29 @@ MODES = ("replicated", "staggered")
 STAGGER_WALK_CAP = 64
 DEEP_STAGGER_STRIDE = 4
 DEEP_STAGGER_WALK_CAP = 512
-LOC_LANE_CAP = 32
-LOC_BOUNDARY_CAP = 1_100
+SAMPLE_LANE_CAP = 32
+SAMPLE_BOUNDARY_CAP = 1_100
 PAYLOAD_WIRES_PER_SIDE = 4
 CLASSES = ("one_flip", "late_acting", "untouched_in_chunk",
            "flip_and_restore")
+SIDES = ("bank0", "bank1")
 DEAD_ZERO_SAMPLE = 64
 
 # ---- the primary's declared numbers, reproduced or refuted here --------
-# (probes, fired, majority_equal) per class and side, identical at every R
-# in the primary's emitted tally -- that constancy IS the primary's claim.
+# (probes, fired, majority_equal) per class and fixed bank side,
+# identical at every R in the primary's emitted tally -- that constancy
+# is the primary's emitted (constructionally forced) identity.
 _REP_CELLS = {
-    "one_flip": {"near": (32, 32, 0), "far": (32, 32, 0)},
-    "late_acting": {"near": (13, 13, 0), "far": (25, 25, 0)},
-    "untouched_in_chunk": {"near": (19, 19, 0), "far": (15, 15, 0)},
-    "flip_and_restore": {"near": (32, 32, 32), "far": (32, 29, 29)},
+    "one_flip": {"bank0": (32, 32, 0), "bank1": (32, 32, 0)},
+    "late_acting": {"bank0": (13, 13, 0), "bank1": (25, 25, 0)},
+    "untouched_in_chunk": {"bank0": (19, 19, 0), "bank1": (15, 15, 0)},
+    "flip_and_restore": {"bank0": (32, 32, 32), "bank1": (32, 29, 29)},
 }
 _STAG_CELLS = {
-    "one_flip": {"near": (28, 28, 0), "far": (28, 28, 0)},
-    "late_acting": {"near": (10, 10, 0), "far": (22, 22, 0)},
-    "untouched_in_chunk": {"near": (18, 18, 0), "far": (11, 11, 0)},
-    "flip_and_restore": {"near": (28, 28, 28), "far": (28, 25, 25)},
+    "one_flip": {"bank0": (28, 28, 0), "bank1": (28, 28, 0)},
+    "late_acting": {"bank0": (10, 10, 0), "bank1": (22, 22, 0)},
+    "untouched_in_chunk": {"bank0": (18, 18, 0), "bank1": (11, 11, 0)},
+    "flip_and_restore": {"bank0": (28, 28, 28), "bank1": (28, 25, 25)},
 }
 CLAIM_874 = {
     "dead_wire_count": 5_668,
@@ -159,27 +168,29 @@ CLAIM_874 = {
     "content_lanes_staggered_all_copies": 157,
     "agreement_replicated_R3": 164,
     "agreement_staggered_R3": 115,
-    "locality_lanes": 32,
+    "sampled_lanes": 32,
     "per_r_cells": {
         "replicated": {str(r): _REP_CELLS for r in R_VALUES},
         "staggered": {str(r): _STAG_CELLS for r in R_VALUES},
     },
     "r_dependence_any_change": {"replicated": False, "staggered": False},
     "r_dependence_any_gain": {"replicated": False, "staggered": False},
-    "restore_contrast_by_r": {
+    "restore_gap_by_r": {
         "replicated": {"1": 0.09375, "2": 0.09375, "3": 0.09375},
         "staggered": {"1": 0.107143, "2": 0.107143, "3": 0.107143},
     },
 }
 DECLARED_CAPS = (
+    "BANKS", "KMIN", "KMAX",
     "HORIZON", "DEAD_CHUNK_ORBITS", "DEAD_ORBIT_ORBITS", "REGISTER_CAP",
     "CONTENT_BITS", "R_VALUES", "R_MAX", "REDUNDANCY_MODES",
-    "STAGGER_WALK_CAP", "LOCALITY_SAMPLE", "LOCALITY_BOUNDARY_CAP",
-    "PAYLOAD_WIRES_PER_SIDE", "PERTURBATION_CLASSES", "AUDIT_TIMEOUT_SEC",
+    "STAGGER_WALK_CAP", "SAMPLE_LANE_CAP", "SAMPLE_BOUNDARY_CAP",
+    "PAYLOAD_WIRES_PER_SIDE", "PERTURBATION_CLASSES", "SIDES",
+    "AUDIT_TIMEOUT_SEC",
 )
 GATE_MUST_NOT_REFERENCE = (
     "r_dependence", "computed", "contrast_by_r", "verdict_bits",
-    "contrast_decomposition", "LANDED_867",
+    "contrast_decomposition",
 )
 
 
@@ -716,7 +727,6 @@ def walk_probes(ctx, schemes):
     program, census = ctx["program"], ctx["census"]
     stations = ctx["stations"]
     seeds = ctx["seeds"]
-    bank_dirty = ctx["bank_dirty"]
     bank_payload = ctx["bank_payload"]
     chunks_for, clean, edge_words = (
         ctx["chunks_for"], ctx["clean"], ctx["edge_words"]
@@ -743,12 +753,12 @@ def walk_probes(ctx, schemes):
         name: {str(r): {cls: {side: {
             "probes": 0, "fired": 0, "copy_survivals": 0,
             "all_copies_equal": 0, "any_copy_equal": 0, "majority_equal": 0}
-            for side in ("near", "far")} for cls in CLASSES}
+            for side in SIDES} for cls in CLASSES}
             for r in R_VALUES}
         for name, _k, _p in schemes
     }
     full_tally = {cls: {side: {"probes": 0, "fired": 0, "content_equal": 0}
-                        for side in ("near", "far")} for cls in CLASSES}
+                        for side in SIDES} for cls in CLASSES}
     stats = {"sampled": 0, "base_not_clean": 0, "restore_skips": 0,
              "base_incomplete": {name: 0 for name, _k, _p in schemes},
              "probe_incomplete": {name: 0 for name, _k, _p in schemes},
@@ -780,12 +790,14 @@ def walk_probes(ctx, schemes):
             stats["scan_agree"] += int(
                 ctx["scan_words"][lane] == content_word(base_after)
             )
-        rec_bank = 0 if all(base_after[w] == 0 for w in bank_dirty[0]) else 1
+        # Sides are FIXED perturbation banks; the earlier "record bank"
+        # selector was tautological (candidate cleanliness forces bank 0),
+        # so no record-location labelling is available from this probe.
         first_touch: dict = {}
         for idx, gate in enumerate(last_chunk):
             for w in gate.wires:
                 first_touch.setdefault(w, idx)
-        for side, bank in (("near", rec_bank), ("far", 1 - rec_bank)):
+        for side, bank in (("bank0", 0), ("bank1", 1)):
             pool = bank_payload[bank]
             picks = {"one_flip": pool[0], "flip_and_restore": pool[0]}
             touched = [w for w in pool if w in first_touch]
@@ -868,7 +880,7 @@ def attack_probe(ctx):
     for name, _k, _p in schemes:
         deltas = {}
         for cls in CLASSES:
-            for side in ("near", "far"):
+            for side in SIDES:
                 a = rates(tally, name, 1, cls, side, "majority_equal")
                 b = rates(tally, name, R_MAX, cls, side, "majority_equal")
                 deltas[f"{cls}.{side}"] = (
@@ -883,52 +895,53 @@ def attack_probe(ctx):
     contrast = {
         name: {str(r): (
             None
-            if rates(tally, name, r, "flip_and_restore", "near",
+            if rates(tally, name, r, "flip_and_restore", "bank0",
                      "majority_equal") is None
-            or rates(tally, name, r, "flip_and_restore", "far",
+            or rates(tally, name, r, "flip_and_restore", "bank1",
                      "majority_equal") is None
             else round(
-                rates(tally, name, r, "flip_and_restore", "near",
+                rates(tally, name, r, "flip_and_restore", "bank0",
                       "majority_equal")
-                - rates(tally, name, r, "flip_and_restore", "far",
+                - rates(tally, name, r, "flip_and_restore", "bank1",
                         "majority_equal"), 6)
         ) for r in R_VALUES}
         for name, _k, _p in schemes
     }
     decomposition = {
         name: {
-            "firing_gap_near_minus_far": (
+            "firing_gap_bank0_minus_bank1": (
                 None
-                if rates(tally, name, 1, "flip_and_restore", "near", "fired")
+                if rates(tally, name, 1, "flip_and_restore", "bank0", "fired")
                 is None
                 else round(
-                    rates(tally, name, 1, "flip_and_restore", "near", "fired")
-                    - rates(tally, name, 1, "flip_and_restore", "far",
+                    rates(tally, name, 1, "flip_and_restore", "bank0",
+                          "fired")
+                    - rates(tally, name, 1, "flip_and_restore", "bank1",
                             "fired"), 6)
             ),
-            "content_gap_given_fired_near_minus_far": (
+            "content_gap_given_fired_bank0_minus_bank1": (
                 None
-                if given_fired(tally, name, 1, "flip_and_restore", "near",
+                if given_fired(tally, name, 1, "flip_and_restore", "bank0",
                                "majority_equal") is None
-                or given_fired(tally, name, 1, "flip_and_restore", "far",
+                or given_fired(tally, name, 1, "flip_and_restore", "bank1",
                                "majority_equal") is None
                 else round(
-                    given_fired(tally, name, 1, "flip_and_restore", "near",
+                    given_fired(tally, name, 1, "flip_and_restore", "bank0",
                                 "majority_equal")
-                    - given_fired(tally, name, 1, "flip_and_restore", "far",
+                    - given_fired(tally, name, 1, "flip_and_restore", "bank1",
                                   "majority_equal"), 6)
             ),
         }
         for name, _k, _p in schemes
     }
     observed = {
-        "locality_lanes": stats["sampled"],
+        "sampled_lanes": stats["sampled"],
         "per_r_cells": {
             name: {str(r): {cls: {
                 side: (tally[name][str(r)][cls][side]["probes"],
                        tally[name][str(r)][cls][side]["fired"],
                        tally[name][str(r)][cls][side]["majority_equal"])
-                for side in ("near", "far")} for cls in CLASSES}
+                for side in SIDES} for cls in CLASSES}
                 for r in R_VALUES}
             for name, _k, _p in schemes
         },
@@ -938,7 +951,7 @@ def attack_probe(ctx):
         "r_dependence_any_gain": {
             name: r_dep[name]["any_gain"] for name, _k, _p in schemes
         },
-        "restore_contrast_by_r": contrast,
+        "restore_gap_by_r": contrast,
     }
     refutations = [
         f"probe.{k}: primary={CLAIM_874[k]} checker={v}"
@@ -949,21 +962,34 @@ def attack_probe(ctx):
     result = {
         "attack": "THE_CONTENT_PROBE",
         "declared_sample": {
-            "lanes": stats["sampled"], "lane_cap": LOC_LANE_CAP,
-            "boundary_cap": LOC_BOUNDARY_CAP,
+            "lanes": stats["sampled"], "lane_cap": SAMPLE_LANE_CAP,
+            "boundary_cap": SAMPLE_BOUNDARY_CAP,
             "wires_per_side": PAYLOAD_WIRES_PER_SIDE, "classes": CLASSES,
-            "r_values": R_VALUES,
+            "r_values": R_VALUES, "sides": SIDES,
             "stagger_walk_cap": STAGGER_WALK_CAP,
             "base_not_clean_skips": stats["base_not_clean"],
             "degenerate_restore_skips": stats["restore_skips"],
             "base_incomplete": stats["base_incomplete"],
             "probe_incomplete": stats["probe_incomplete"],
         },
+        "side_semantics": (
+            "sides are FIXED perturbation banks (bank0/bank1 payload"
+            " wires), NOT a near/far record-locality contrast; no"
+            " record-location selector is defined and no bank-swap"
+            " control was run"
+        ),
+        "probe_semantics": (
+            "every perturbation changes the SOURCE state before any copy"
+            " is formed (common-mode); no stored copy slot is faulted"
+            " after writing, so identical-replica majority R-invariance"
+            " is forced by construction (an exact identity, not"
+            " fault-tolerance evidence)"
+        ),
         "observed": observed,
         "per_r_full_cells": tally,
         "full_state_content_tally": full_tally,
         "r_dependence": r_dep,
-        "restore_contrast_decomposition": decomposition,
+        "restore_gap_decomposition": decomposition,
         "scan_vs_probe_content":
             f"{stats['scan_agree']}/{stats['scan_checked']}",
         "refutations": refutations,
@@ -989,7 +1015,7 @@ def attack_harder(ctx):
         deltas = {}
         any_rows = {}
         for cls in CLASSES:
-            for side in ("near", "far"):
+            for side in SIDES:
                 a = rates(tally, name, 1, cls, side, "majority_equal")
                 b = rates(tally, name, R_MAX, cls, side, "majority_equal")
                 deltas[f"{cls}.{side}"] = (
@@ -1043,9 +1069,12 @@ def attack_harder(ctx):
             "projection sharding is NOT copy redundancy (each copy holds a"
             " different word), so a bitwise majority over its copies is"
             " meaningless and its majority_delta row must NOT be read as"
-            " an R-gain; the meaningful row is any_copy_survives, which"
-            " prices a DIFFERENT successor (block-local record content)"
-            " rather than this cycle's claim: "
+            " an R-gain; the meaningful row is any_copy_survives, a"
+            " PARTIAL OBSERVATION only -- at least one of the three shard"
+            " digests stays equal to its own baseline under the sampled"
+            " single-wire probes; reconstruction of any content from"
+            " surviving shards is NOT attempted, so no protection claim"
+            " follows: "
             + compact(rows["projection_sharded"]["any_copy_survives_at_R3"])
         ),
         "refutations": refutations,
@@ -1163,8 +1192,8 @@ def main() -> int:
     key_index = {key: lane for lane, key in enumerate(census)}
     candidates = sorted(
         (b, key_index[key]) for key, b in ctx["first_moment"].items()
-        if 0 < b <= LOC_BOUNDARY_CAP
-    )[:LOC_LANE_CAP]
+        if 0 < b <= SAMPLE_BOUNDARY_CAP
+    )[:SAMPLE_LANE_CAP]
     ctx["candidates"] = candidates
     probe_common(ctx)
     a2 = attack_probe(ctx)

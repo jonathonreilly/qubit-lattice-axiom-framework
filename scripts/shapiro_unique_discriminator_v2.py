@@ -132,6 +132,51 @@ def main() -> int:
     print("  - a stricter discriminator needs a second observable beyond this phase line")
     print()
     print(f"ASSERTIONS: {'PASS' if ok else 'FAIL'}")
+
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: checked and not executed - this is a cache-and-note "
+        "verifier, so it resolves no matrix element at all. It builds no array and "
+        "no operator; its numeric content is three flat lists of four floats "
+        "scraped out of an upstream cache file by regular expression, plus two "
+        "root-mean-square differences between them."
+    )
+    print(
+        "  per_site: checked and not executed - the four columns are values of the "
+        "coupling c at 2.0, 1.0, 0.5 and 0.25, and the detector line referred to in "
+        "the safe read lives in the upstream runner, not here. Nothing in this file "
+        "carries a position label, and no geometry is constructed for anything to "
+        "sit on."
+    )
+    print(
+        "  per_mode: checked and not executed - the column headed mode in the "
+        "printed table is a scheme label, listing causal dynamic cone, static cone "
+        "shape and static scheduling; those are three ways of generating a curve, "
+        "not eigenmodes, momentum labels or normal modes, and no decomposition of "
+        "any operator is attempted."
+    )
+    print(
+        "  per_block: checked and not executed - no partition into blocks or "
+        "sectors is formed. The only grouping in the file is the three named curve "
+        "rows, compared pairwise by the two thresholds this runner owns, cone RMSE "
+        "at most 5e-5 and schedule RMSE at least 5e-3, which is a comparison of "
+        "whole curves rather than of any block-resolved quantity."
+    )
+    print(
+        "  lattice_wide: checked and not executed, and the important honesty here "
+        "is about provenance - the curve agreement this runner reports is not "
+        "computed by it. The three curves are read back out of the SHA-pinned cache "
+        "of scripts/shapiro_static_discriminator.py, whose freshness is checked by "
+        "rehashing that source, and the remaining three checks are substring "
+        "presence and absence sweeps over the note markdown. A cache re-read plus a "
+        "lexical document sweep is not a whole-system computation, and the runner's "
+        "own safe read concedes that a stricter discriminator needs a second "
+        "observable beyond this phase line."
+    )
     return 0 if ok else 1
 
 

@@ -1,0 +1,54 @@
+# Historic intake: Claim Status Certificate
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_candidate_retained_grade_positive_theorem
+Stratum: pack_science_family
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Certifies a quantified projective-ratio implication as a clean positive theorem proved from explicit hypotheses with no dependency or import; open imports none, no cited dependencies.
+
+Original verdict: Review-loop pass; independent audit still required before effective retained.
+Scope: Source/readiness review only; sets no audit status.
+
+
+## Why pulled (supervisor decision, on the record)
+
+Clean unlanded positive: quantified projective-ratio implication proved from explicit hypotheses, review-loop pass. FLAG for audit: the note claims no dependencies or imports - verify that claim rather than inherit it.
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/physics-loops/lh-traceless-eigenvalue-ratio-stdout-repair-20260729/CLAIM_STATUS_CERTIFICATE.md`
+- Source commit: `cea51f45d369e5b38c4e4bbce201897485ca2e83`
+- git blob: `9805c86137e78f61db678e9c7bea56f83732b0bb`
+- sha256: `bc54c16520fb3830f66d1ee333ebb109fac72f08c749bc593b504590d303fa6b`
+- Lines: 24; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+claims 'no dependency or import' for a theorem in a stdout-repair cycle — verify against the ledger row it points at
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

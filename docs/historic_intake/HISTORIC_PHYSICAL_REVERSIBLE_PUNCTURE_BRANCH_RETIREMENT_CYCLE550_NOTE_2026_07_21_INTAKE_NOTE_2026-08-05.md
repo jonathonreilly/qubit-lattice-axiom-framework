@@ -1,0 +1,54 @@
+# Historic intake: Physical reversible puncture/branch-retirement attempt — Cycle 550
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Constructs a literal branch carrier — 24 proper-frame loops simultaneously installed in blank Cycle-527 microgrid sites, collision-free with only NN one-/two-M2 primitives, constant overhead, rotating into themselves under all 24 frames and 576 products with no runtime path selector — then SHARPLY FALSIFIES the exact-blank reversible puncture ansatz: any circuit accepting all eight lawful Wilson sectors, preserving arbitrary target/gauge data, returning to the same plus-sector terminal and satisfying terminal blankness must map eight orthogonal input rays to ONE output ray, giving rank one instead of eight and Gram residual one. The circuit-level witness is equally direct: after correction W_final = +1, reversing Wilson extraction XORs zero into the syndrome token, leaving the old syndrome behind.
+
+Original verdict: Does NOT show physical puncture surgery is impossible — Cycle 550 constructs carrier loops but not a topology-changing stabilizer-check surgery, and the non-CSS/subsystem probe is constructive with six branch bits transferring into six sink M2 nonblank on 63 of 64 branches.
+Scope: The statement survives arbitrary intermediate code deformation INCLUDING a genuine reversible puncture, because it uses only the declared input and terminal spaces.
+Escape conditions (negative claims): Escape conditions stated exactly: a persistent puncture, enlarged terminal gauge sink, reset bath, promised plus-sector input, or product encoder each CHANGES the terminal/domain contract and remains live. Broad negative gate FAIL / DO NOT SHIP; the narrow blank-terminal isometry lemma is eligible only after the N1-N8 audit.
+
+## Why pulled (supervisor decision, on the record)
+
+Shipped scoped no-go: blank-terminal puncture isometry - 24 proper-frame loops installed collision-free with NN operations only; does NOT show physical puncture surgery is impossible (Cycle 550 constructs [one]); escapes stated exactly (a pers~[istent...]).
+
+## Provenance (pinned)
+
+- Original path: `docs/work_history/repo/review_feedback/PHYSICAL_REVERSIBLE_PUNCTURE_BRANCH_RETIREMENT_CYCLE550_NOTE_2026-07-21.md`
+- Source commit: `0d24afde2f52cac0457ede57e26db65e9d1ace55`
+- git blob: `49709e9591e8feb36045c964a65b4a7438c58021`
+- sha256: `9624d032fcfac94dbe961d5f40bbde18e508e66328d63a4c6fd117f18fb5a2d5`
+- Lines: 469; runners named: scripts/physical_reversible_puncture_branch_retirement_cycle550_2026_07_21.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

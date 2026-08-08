@@ -1,0 +1,54 @@
+# Historic intake: Claim Status Certificate: Audit Cleanup Batch 2026-06-08
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_correction
+Stratum: pack_science_family
+Era: may_june_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Four scope narrows recorded as a bounded-support/demotion mix: newtonian_distance_law_confirmed becomes a clean historical pointer to a SHA-pinned bounded replay; gate_b_dynamics_note becomes a bounded generated-geometry source index rather than a physical-gravity or primitive-to-readout bridge; mesoscopic_surrogate_alternate_family_scout_note becomes a meta/support planning index instead of a bounded theorem; and the ordered-lattice lane README becomes a non-authority index.
+
+Original verdict: No artifact should be read as retained, proposed_retained or proposed_promoted.
+Scope: Pointer repairs and safe scope narrows only; docs/audit/** deliberately untouched.
+
+
+## Why pulled (supervisor decision, on the record)
+
+Four scope narrows against landed surfaces, incl. newtonian_distance_law_confirmed retitled to a SHA-pinned historical pointer; nothing in the set may be read as retained/proposed_retained/proposed_promoted. Work order.
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/physics-loops/audit-cleanup-batch-20260608/CLAIM_STATUS_CERTIFICATE.md`
+- Source commit: `e0b0eefa85a78b80035045c87fc5e0ca7fcf8dd5`
+- git blob: `448c548b6309f043bc321f6834645b84ad3cc3f6`
+- sha256: `df0ef90affa5d54213e0952bb8325f22b6cb214e6584c81188bcdbed212e2328`
+- Lines: 41; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+'newtonian_distance_law_confirmed' is retitled a historical pointer and the universal Newtonian theorem is explicitly not asserted - a significant walk-back of a flagship-sounding claim.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

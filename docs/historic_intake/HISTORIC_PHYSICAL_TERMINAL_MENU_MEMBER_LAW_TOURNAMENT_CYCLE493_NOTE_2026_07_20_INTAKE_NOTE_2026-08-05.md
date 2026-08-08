@@ -1,0 +1,54 @@
+# Historic intake: Physical terminal-menu member-law tournament — Cycle 493
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_negative_result
+Stratum: branch_only_never_mainlined
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+THE NON-BORN-SELECTOR FALSIFIER: a frozen UNIFORM selector (1/5,...,1/5) passes the SAME local, stationary, independent, normalization, refinement and held-size checks as selectors whose grades are copied from the actual Cycle-478 branch norms, and its one-trial marginal stays uniform at N=4 and N=12 at a fixed nonzero distance from the two incompatible inputs' norm vectors — so those structural premises ALONE DO NOT SELECT THE NORM GRADES. Route B's deterministic five-cycle courier gives train word 0123 and held word 012340123401 with exact count vectors (1,1,1,1,0) and (3,3,2,2,2) from a supplied seed.
+
+Original verdict: Route C derives all finite word coefficients, bins and deletion marginals from supplied grades plus stationarity and independence — retiring a separately supplied table for every word — but does NOT derive q, prepare the mixture, sample one member or renew a bath; and a coherent pointer correlation is not a realized member or history.
+Scope: Same Cycle-478 terminal menu (positive mixed root at new-row index 412, effect classes 679, 724, 767, 813, 1039) and same Cycle-483 FORM interface as Cycle 488; train N=4 and held N=12 with no refit, and two incompatible input states frozen BEFORE reading their branch norms.
+Escape conditions (negative claims): The falsifier is explicitly NOT a no-go against stronger operational, symmetry or decoherence premises — it only shows this premise set is insufficient.
+
+## Why pulled (supervisor decision, on the record)
+
+Reusable methodological control: the NON-BORN-SELECTOR FALSIFIER - a frozen UNIFORM selector (1/5,...) passes the SAME local gates as the Born candidate, proving the gate family cannot distinguish Born; Route C derives all finite word coefficients [without selecting]. Belongs next to the wall map (2941).
+
+## Provenance (pinned)
+
+- Original path: `docs/work_history/repo/review_feedback/PHYSICAL_TERMINAL_MENU_MEMBER_LAW_TOURNAMENT_CYCLE493_NOTE_2026-07-20.md`
+- Source commit: `db98fd197b60c12282ca7d79695230429e4b2952`
+- git blob: `b82d02022a4844f0fed31ac6e8e5100c08d68ceb`
+- sha256: `81cab7f7fa54bef5789c3991911dc197f7506e4aeaa721973a548685006cbd8a`
+- Lines: 424; runners named: scripts/physical_terminal_menu_member_law_tournament_cycle493_2026_07_20.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

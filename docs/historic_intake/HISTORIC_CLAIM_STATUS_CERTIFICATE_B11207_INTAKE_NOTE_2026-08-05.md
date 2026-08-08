@@ -1,0 +1,54 @@
+# Historic intake: Claim Status Certificate (YAML front matter)
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bounded_theorem_certificate
+Stratum: pack_science_family
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Certifies a bounded numerical witness against affinity at stated tolerances for one fixed operator, from a fixed finite-operator computation with source-step-free endpoints and an eleven-point residual bound. N1 records five attempted attacks on the witness (finite-difference truncation, misidentified max-absolute branch, normalization drift, floating cancellation, wrong scalar coordinate), with the active gap staying above 1.2e-5 and 60/90-digit and sparse-double implementations agreeing.
+
+Original verdict: Bounded theorem after an exact-to-bounded demotion; No-Go Discipline status PASS at iteration 2; independent audit required and no author/review artifact assigns an effective status.
+Scope: One fixed box, one fixed scalar segment, 11 backgrounds, three probes, all 27 trace-free entries, two tangent channels; A_min restored to Lattice+Qubit+Admissibility+Record; zero fitted/observed/literature inputs.
+Escape conditions (negative claims): N6 live routes: a validated numerical enclosure for exact nonaffinity, a physical principle selecting the interpolator/readout, a local/smooth observable removing the spline tail, and a physical tensor/GR bridge; N2 names walls W_I (interpolation/readout contract) and W_P (physical tensor observable) and explicitly declines to assert their independence.
+
+## Why pulled (supervisor decision, on the record)
+
+Self-documented exact-to-bounded demotion: a former exact/global affinity claim is demoted to a bounded numerical witness at stated tolerances for one fixed operator. The demotion itself is the record; N6 names the live routes back (validated numerical enclosure et al.).
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/physics-loops/s3-time-tensor-primitive/CLAIM_STATUS_CERTIFICATE.md`
+- Source commit: `60c90e0a6258b3394cf7235ab0b98106925e51c5`
+- git blob: `fa3a19c5c652735b32452bd0664ce63d63c6be3d`
+- sha256: `cc2d95b7bf806d7bdddb48d9a77c12449eb3ec96eac01beded3563b48e5c0d45`
+- Lines: 115; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- `.claude/science/physics-loops/s3-time-tensor-primitive/NO_GO_LEDGER.md` — Companion: only the WORDING is pruned at numerical tolerance; the sibling primitive note is recorded; three route families kept honest.
+
+## Flags carried
+
+self-documented CORRECTION: the claim was demoted from exact/global to bounded numerical after a steelman showed 60/90-digit stability is not an interval proof and both implementations share derivative algebra
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

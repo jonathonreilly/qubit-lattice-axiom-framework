@@ -134,6 +134,47 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate")
+    print(
+        "  per_element: checked and not executed - no link variable is ever "
+        "instantiated in this file, so there is nothing with an (i,j) index to "
+        "resolve; the single group-theoretic input, the Haar moment of the "
+        "squared real trace, enters as the literal constant 0.5 assigned in the "
+        "source rather than as an integral over any explicit SU(3) element"
+    )
+    print(
+        "  per_site: checked and not executed - the comparison is between two "
+        "coefficient numbers, one attributed to the full interacting vacuum and "
+        "one to a single plaquette, and neither carries a site index, a link, a "
+        "lattice spacing or a coordinate; nothing in the file knows where on a "
+        "lattice anything sits"
+    )
+    print(
+        "  per_mode: checked and not executed inside this runner - the "
+        "one-plaquette evaluation is delegated to the shared Bessel routine, "
+        "which internally truncates a sum over SU(3) representation modes and "
+        "returns the highest mode it needed, but that second return value is "
+        "dropped on the spot and never printed or thresholded, so no individual "
+        "mode is resolved anywhere in this file"
+    )
+    print(
+        "  per_block: the single-plaquette block against the full vacuum is "
+        "precisely the contrast this obstruction rests on - the block's "
+        "strong-coupling slope is obtained twice, once in closed form as 1/18 and "
+        "once numerically from the Bessel one-plaquette partition function "
+        "evaluated at beta = 1.0e-5 and agreeing to better than 2.0e-7, and the "
+        "constant-lift candidate then rescales that block slope by Gamma and "
+        "fails to reproduce the full-vacuum slope"
+    )
+    print(
+        "  lattice_wide: checked and not executed - the interacting whole-vacuum "
+        "object appears only as the number 1/18, reached by a docstring argument "
+        "that the first strong-coupling order picks out the same plaquette and "
+        "then by dividing a hardcoded Haar moment by nine; no sum over "
+        "plaquettes, no volume and no extent is ever constructed, so the "
+        "lattice-wide side of the comparison is asserted rather than evaluated"
+    )
+    print()
     print("=" * 78)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
     print("=" * 78)

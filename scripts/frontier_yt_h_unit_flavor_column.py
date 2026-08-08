@@ -783,5 +783,57 @@ log("  publication surface is made by this analysis.")
 log()
 log("  See docs/YT_H_UNIT_FLAVOR_COLUMN_DECOMPOSITION_NOTE_2026-04-18.md")
 
+# N5 execution certificate (print-only; adds no check and no verdict)
+print()
+print("==============================================================================")
+print("N5 EXECUTION CERTIFICATE")
+print("==============================================================================")
+print(
+    "  per_element: six-by-six operators are constructed and then compared "
+    "through genuine entry-level contractions - the projectors and the "
+    "weak-triplet direction are written as explicit diagonals, Frobenius inner "
+    "products Tr[A^dagger B] are taken over all thirty-six entries to test "
+    "orthonormality of the two basis operators, commutators are measured in the "
+    "infinity norm, and the identities P_up = (I_6 + T3_6)/2 and H_up = (H_unit "
+    "+ H_(3,1))/sqrt(2) both reproduce to a hard zero maximum error."
+)
+print(
+    "  per_site: checked and not executed - nowhere does this file attach a "
+    "quantity to a location. Its carrier is an internal isospin-times-colour "
+    "index set, and the runner is careful to record that this carrier is "
+    "disjoint from the three-dimensional generation space, so not even the "
+    "generation label doubles as a position. No coordinate, displacement or "
+    "neighbour relation is built anywhere in the file."
+)
+print(
+    "  per_mode: asserted rather than computed, and the distinction changes "
+    "what the result means - Block 10 assigns each of the three generation "
+    "sectors the same closed form N_c*N_iso = 6 and then observes that all "
+    "three agree. Nothing sector-dependent ever enters that expression, so the "
+    "uniformity it reports, and the absence of hierarchy drawn from it, follow "
+    "from evaluating one formula three times rather than from any "
+    "per-generation computation."
+)
+print(
+    "  per_block: this granularity is where the whole analysis lives and it is "
+    "carried out exactly - the normalized operators I_6/sqrt(6) and "
+    "T3_6/sqrt(6) are confirmed Frobenius-orthonormal, the up-iso projector is "
+    "shown to have projection exactly 1/sqrt(2) onto each with squared weights "
+    "closing to 1 (and the down-iso projector the same with a sign flip), the "
+    "sub-block residues come to Tr[P^2] = 3 against the retained value 6, and "
+    "the invariance contrast is decisive: the unit scalar commutes with all "
+    "three isospin generators while the sub-block operator commutes only with "
+    "T^3."
+)
+print(
+    "  lattice_wide: checked and not executed - no extent, coupling or limit "
+    "appears, and the file's most global-looking section is the weakest. Block "
+    "12's mass comparison runs on a hardcoded table of framework masses at the "
+    "electroweak scale, so the falsification it reports is arithmetic between "
+    "two typed-in tables rather than a prediction computed here; the runner's "
+    "own closeout is correspondingly modest, deferring the gap to candidate "
+    "classes two, three and four."
+)
+
 if COUNTS["FAIL"] > 0:
     sys.exit(1)

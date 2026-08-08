@@ -498,6 +498,62 @@ def main() -> int:
     print(f"  Total wallclock: {time.time() - t0:.0f}s")
     print()
 
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: a detector-detector coherence matrix is written index pair "
+        "by index pair inside the imported measurement stack - for each k the entry "
+        "rho[(d1,d2)] is psi_a*[d1] psi_a[d2]/na + psi_b*[d1] psi_b[d2]/nb over "
+        "every ordered pair of final-layer nodes, the whole array is rescaled by "
+        "its real trace once that trace clears 1e-30, and the reported purity is "
+        "the sum of squared moduli of all those entries, so individual matrix "
+        "elements really are formed and used."
+    )
+    print(
+        "  per_site: nodes are laid down and propagated one at a time - "
+        "gen_2d_mirror places 2*npl_half = 24 nodes on every non-source layer at "
+        "integer x with ordinates drawn as y and -y from a mirrored uniform draw on "
+        "[0.5, 10.0], keeps an explicit index-to-mirror-partner map, connects a "
+        "child to parents within connect radius 2.5 (looking back one layer "
+        "immediately after the chokepoint and two layers elsewhere), and carries "
+        "one complex amplitude per node with a blocked-node set applied at the "
+        "barrier layer."
+    )
+    print(
+        "  per_mode: checked and not executed - nothing in this probe is decomposed "
+        "into modes. The three entries of the k-band [3.0, 5.0, 7.0] are "
+        "phase-coupling settings that get averaged over, not momentum labels, the k "
+        "= 0.0 run is a null control on the same footing, and although the harness "
+        "carries an exact up/down mirror pairing it is never diagonalized into even "
+        "and odd sectors."
+    )
+    print(
+        "  per_block: the three-slit block structure is the sharpest granularity "
+        "actually executed - the chokepoint layer at index N//3 is partitioned by "
+        "transverse position into an upper slit above cy + 2.0, a lower slit below "
+        "cy - 2.0 and a central slit within 2.0 of cy, each capped at three nodes "
+        "with everything else blocked, and the Sorkin combination is built by "
+        "running the propagator seven separate times over the open-set family abc, "
+        "ab, ac, bc, a, b, c and combining the seven detector distributions with "
+        "alternating signs."
+    )
+    print(
+        "  lattice_wide: executed as a finite-N statement only, and the runner "
+        "argues that no other reading is available - the seven-point ladder N = 25, "
+        "40, 60, 80, 100, 150, 200 is swept at eight fixed seeds with npl_half, yr "
+        "= 10.0 and connect radius held constant, the five seed-mean observables "
+        "are stacked into one vector per N, and consecutive L2 increments are "
+        "power-fitted against sqrt(N1*N2) under the stated gate r < -0.4 and R^2 >= "
+        "0.85. The gate is not met, and the printed structural reason is that this "
+        "harness has no spacing knob at all: raising N moves the chokepoint at N//3 "
+        "and the mass layer at 2N//3 to new absolute positions, so the sweep walks "
+        "a family of configurations instead of refining one, and no continuum limit "
+        "is taken anywhere."
+    )
+    print()
+
     # Exit code: this is a no-go runner. It passes only when the no-go
     # boundary claimed by the source note is still present.
     if not born_ok:

@@ -103,6 +103,49 @@ def main() -> int:
             "the remaining positive target is an explicit no-hidden-character "
             "law or a direct carrier-identification theorem."
         )
+        # N5 execution certificate (print-only; adds no check and no verdict)
+        print()
+        print("==============================================================================")
+        print("N5 EXECUTION CERTIFICATE")
+        print("==============================================================================")
+        print(
+            "  per_element: checked and not executed - this file contains no array, no "
+            "operator and nothing with indices, so there is no matrix element to speak "
+            "of. Its entire state is two float pairs, parent_a = (0.25, 0.0) and "
+            "parent_b = (0.25, 0.10), acted on by three one-line accessors that return "
+            "either the first slot or the sum of both."
+        )
+        print(
+            "  per_site: checked and not executed - the symbol c_cell is named for a "
+            "cell but is only ever a bare number; no cell is constructed, none is "
+            "indexed, and no relation between two of them is written. What the file "
+            "calls a fiber is a pair of Python tuples that differ in their second "
+            "coordinate."
+        )
+        print(
+            "  per_mode: checked and not executed - nothing is decomposed and no "
+            "spectrum is taken. The object called the hidden direction is the fixed "
+            "tuple (0.0, 1.0), passed as an ordinary argument to the same accessors, "
+            "and it is a chosen coordinate label rather than an eigenvector, character "
+            "or normal mode of anything."
+        )
+        print(
+            "  per_block: checked and not executed - the carrier-versus-hidden split is "
+            "simply which of the two tuple slots each accessor reads, fixed by hand in "
+            "the function bodies rather than derived from an algebra, a symmetry or an "
+            "invariant subspace. Because schur_scalar returns c_cell + delta while "
+            "event_scalar returns c_cell, their difference is identically delta and "
+            "every comparison in the file restates that definition."
+        )
+        print(
+            "  lattice_wide: checked and not executed - no extended system, coupling or "
+            "limit appears; the only arithmetic beyond addition is "
+            "a_over_l_planck(coeff) = sqrt(4*coeff), evaluated at exactly two "
+            "coefficients so that the unperturbed one returns sqrt(1) = 1 exactly. The "
+            "runner's own verdict places this granularity outside what it has done, "
+            "naming an explicit no-hidden-character law or a direct "
+            "carrier-identification theorem as the still-missing positive result."
+        )
         return 0
     return 1
 

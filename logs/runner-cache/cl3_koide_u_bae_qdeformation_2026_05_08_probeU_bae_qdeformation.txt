@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_u_bae_qdeformation_2026_05_08_probeU_bae_qdeformation.py
-runner_sha256: 8bba9d7acfa03e6ae58f4f3c5f97d15ed876fead8d697fac456d3ce137232fb6
+runner_sha256: d1d20a8b71d9f90946200530a48696e7ed1ec8def77f68a03a2346e2a0e3f7fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 
@@ -32,7 +32,7 @@ Section 2 -- U_q(sl_2) q-dimension arithmetic at q = e^{i pi/3}
 ======================================================================
   PASS  2.1 [1]_q at q=e^(iπ/3) = 1 (computed 1.000000)
   PASS  2.2 [2]_q at q=e^(iπ/3) = 1 = 2cos(π/3) (computed 1.000000)
-  PASS  2.3 [3]_q at q=e^(iπ/3) = 0 (truncation; |[3]_q|=4.32e-16)
+  PASS  2.3 [3]_q at q=e^(iπ/3) = 0 (truncation; |[3]_q|=4.49e-16)
   PASS  2.4 truncation pattern (1,1,0,-1,-1,0) verified at q=e^(iπ/3)
   PASS  2.5 sl_2 spin-1/2 q-dim = [2]_q = 1 at q=e^(iπ/3) (the hypothesized BAE-friendly weight)
   PASS  2.6 classical limit [2]_{q=1} = 2 (recovers real-dim of sl_2 doublet)
@@ -138,6 +138,15 @@ ADMITTED:    11
 OVERALL: bounded no-go supported across the checked structural barriers.
 The proposed quantum-deformation route is structurally barred.
 BAE admission count UNCHANGED.
+
+==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+  per_element: checked and not executed - this is a dimension-counting probe, and it resolves no matrix entry. The one concrete circulant, hermitian_circulant(2.5, 1.0+0.5j), is built and split into trivial_part and doublet_part, and both are then discarded unused: check 0.3 compares the typed-in integers 3 and 6 instead, so no entry of H, U_C3 or any projector is ever read.
+  per_site: checked and not executed - the three basis labels |c_1>, |c_2>, |c_3> are Brillouin-zone corner labels on hw=1, not lattice positions, and U_C3 permutes those corner labels; the substrate Z^3 appears only inside the quoted theorem text in Section 10 and no coordinate, neighbour or site index is ever constructed.
+  per_mode: character arithmetic is the single granularity this file computes rather than tabulates - the three C_3 characters 1, w, w^2 are evaluated and summed to zero, the q-integers [n]_q at q = exp(i*pi/3) are evaluated from (q^n - q^-n)/(q - 1/q) for n = 1..6 and reproduce the exact truncation pattern 1, 1, 0, -1, -1, 0, and the two competing embeddings are separated by their exact characters 2cos(pi/3) = 1 for the SU(2) doublet against 1 + 2cos(2pi/3) = 0 for the spin-1 cyclic shift.
+  per_block: inventory-only, and stated as such - every trivial-versus-doublet weight pair in the file is a typed-in literal, namely (1,2) real-dim, (1,1) q-dim, (1,4) real-form Plancherel and (1,1) quantum Plancherel; checks 4.2 and 4.3 each compare a Fraction against the identical Fraction literal, and the runner's own Section 6 conclusion is that picking among those pairs IS the F1-versus-F3 selection rather than a derivation of it.
+  lattice_wide: checked and not executed - the file takes no limit and touches no extended system; its widest object is a single 3x3 circulant, the q -> 1 limit of Section 8 is evaluated by substituting the single point q = 1 + 1e-7j into a closed-form q-integer, and the closing statement is explicitly bounded to the one proposed route rather than to any whole-system claim.
 
 ----- stderr -----
 

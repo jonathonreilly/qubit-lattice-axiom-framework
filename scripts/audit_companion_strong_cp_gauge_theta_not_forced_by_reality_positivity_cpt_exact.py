@@ -100,3 +100,48 @@ GAUGE-THETA OBSTRUCTION (verified). theta_gauge=0 is NOT forced by any clean LOC
    multi-plaquette open). PARALLEL to Koide BAE: both Tier-A admissions ride on un-derived DYNAMICS (the gauge
    action for theta; the matter realization for r=1/2) that the kinematic axioms {Lattice,Quantum,Record} do not fix.
 """)
+
+# N5 execution certificate (print-only; adds no check and no verdict)
+print()
+print("==============================================================================")
+print("N5 EXECUTION CERTIFICATE")
+print("==============================================================================")
+print(
+    "  per_element: thin, and confined to the contrast check - the only matrix "
+    "in the file is the Hermitian mass circulant M = a*eye(3) + b*C + "
+    "conj(b)*C^2, written with exact symbolic entries, whose determinant is "
+    "taken by sympy and whose imaginary part is required to simplify to zero. "
+    "Nothing on the gauge side ever produces an array, so no matrix element "
+    "carries any part of the theta_gauge argument itself."
+)
+print(
+    "  per_site: checked and not executed - not one position appears in the "
+    "file. The integer label Q that everything is organized around is a "
+    "topological charge, the symbol chi is a susceptibility scale, and there is "
+    "no coordinate, link, neighbour or volume anywhere; the gauge side is "
+    "handled purely through sector weights."
+)
+print(
+    "  per_mode: checked and not executed - no transform is taken and nothing "
+    "is diagonalized, including the circulant C, which is only multiplied. The "
+    "single decomposition present is by integer topological charge, and a "
+    "superselection label is not a mode: there is no momentum, no dispersion "
+    "and no eigenvector in the source."
+)
+print(
+    "  per_block: the topological sectors are the granularity that carries the "
+    "argument, and they are handled explicitly - the symbolic step pairs the "
+    "sector Q against the sector -Q and shows their sine contributions cancel "
+    "identically for every theta, and the numeric step sums 401 sectors from Q "
+    "= -200 to Q = 200 with even Gaussian weights at chi = 1.0, evaluating the "
+    "sector sum at theta = 0.5 and at theta = 0 and comparing the resulting "
+    "free energies against a 1e-6 window."
+)
+print(
+    "  lattice_wide: checked and not executed - no lattice measure is ever "
+    "constructed. The sector weights are an explicitly labelled toy Gaussian "
+    "standing in for the framework's own measure, so the reality and positivity "
+    "statements are properties of that stand-in rather than of any whole "
+    "system, and the runner's own endpoint is the honest one: theta_gauge stays "
+    "genuinely admitted, gated on an action class this file does not derive."
+)

@@ -949,3 +949,20 @@ historic_intake_part1_shipped_20260806: >
   queued -> decide -> intake part 2 same mechanism. Ships pending
   review-loop: #6014 (946), #6015 (census), #6017 (947), #6018
   (intake 1).
+  - id: historic_intake_part2_shipped_20260808
+    date: 2026-08-08
+    summary: >-
+      Historic triage COMPLETE: 5,128 rows across 16 strata + 3,179-commit
+      octopus ledger, every item supervisor-reviewed with written reasons.
+      Part 2 shipped on PR #6018 branch (commits 03659e3611+7ed897e79e): 159
+      wrappers (branch09 26, packsci01 42, packsci02 33, packsci03 30,
+      packsci04 9, packsci05 19), 0 unresolved pins, 10/10 independent pin
+      re-verification, hazards file shipped alongside. Intake total: 781
+      wrappers + 1 era registry, all audit_required. Key registered sets:
+      r=1/2 adjudication set, A_min-to-Q contradiction pair, Axiom*-forcing
+      composition 10259, repo-state-scrub 10831-10833, source-action
+      inserted-premise 11218, Born wall map 2941/3044, pi-bridge withdrawal
+      arc, Tier-A-count-ZERO terminal 11409, ABJ decision item 11514.
+      Window 3 closed 2026-08-06 (weekly limit hit mid-wind-down); owner
+      directive 2026-08-07 resumed and extended: finish capture, then plan.
+      Next-phase plan banked at ~/NEXT_PHASE_PLAN_2026-08-08.md.

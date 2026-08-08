@@ -1,5 +1,5 @@
 {
- "edge_count": 15425,
+ "edge_count": 15424,
  "node_count": 4633,
  "nodes": {
   "3d_correction_master_note": {
@@ -10523,8 +10523,8 @@
    "out_degree": 2
   },
   "physical_scale_free_adjacency_dissection_bracket_cycle724_note_2026-08-03": {
-   "deps_hash": "bb5dc2c6f64d",
-   "out_degree": 3
+   "deps_hash": "0d988fd1ac07",
+   "out_degree": 2
   },
   "physical_source_stabilizer_coset_collapse_k_sign_law_cycle707_note_2026-08-01": {
    "deps_hash": "ef9523891aaa",

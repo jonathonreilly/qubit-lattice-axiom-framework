@@ -1,35 +1,52 @@
 """Cycle 724 - the scale-free adjacency ceiling and the dissection cost bracket.
 
+Everything here is a theorem of a SUPPLIED structural model, not of the framework
+axioms alone: cells are 4-simplices - five vertices with all ten vertex pairs graded -
+on the tick-extended domain Z^3 x {tick}, and a dissection is a family of such cells
+with pairwise disjoint interiors whose volumes sum to the region's. The Lattice axiom
+supplies only the spatial Z^3 6-NN adjacency that grades the vertex pairs; the
+registered kinetic-isotropy primitive supplies only the equal tick/edge graining under
+which the tick coordinate enters. Neither supplies a cell selection or a rule-to-tick
+correspondence: whether physical assembly cells are pairwise-adjacency simplices at
+all, and the physical tick-Admissibility realization bridge, are OPEN questions this
+runner does not touch.
+
 Every edge slot of a tick-extended cell is graded by its SPATIAL FOOTPRINT weight: the
 L1 weight of the spatial part of the slot's direction. Weight 0 is a same-site slot,
-weight 1 is a nearest-neighbour slot of the LATTICE axiom's own 6-NN adjacency, and
+weight 1 is a nearest-neighbour slot of the Lattice axiom's spatial 6-NN adjacency, and
 weight 2 or more exceeds that adjacency. The adjacency cost of a cell is the number of
 its ten vertex pairs of weight 2 or more; the cost of a dissection is the sum over its
 cells.
 
-Cycle 723 measured this on the sixteen corners of one cell. This runner removes the
-corner restriction from the ceiling and sharpens the cost bracket:
+On that supplied model this runner measures:
 
   (a) an adjacency clique lemma and an affine ceiling that hold at every lattice
       resolution, for every vertex choice, in every box - not just at the corners,
   (b) the exact per-cell cost floor and the complete structure of the cells attaining it,
-  (c) a volume-weighted cost floor for arbitrary corner dissections, and the same floor
-      recomputed on a twice-refined resolution of the same region,
+  (c) a volume-weighted cost lower bound for arbitrary corner dissections - no claim
+      that any dissection attains it - and the same bound recomputed on a twice-refined
+      resolution of the same region,
   (d) the exact unimodular census, its interior-disjointness compatibility graph, and
       two clique numbers that bound the cost of a unimodular dissection from below,
       against the explicit monotone-path dissection from above.
 
-All combinatorics is exact integer arithmetic. Interior-disjointness of two cells is
-decided by the exact separating-hyperplane scan over the 210 four-subsets of their ten
-vertices; a separating hyperplane, when one exists, is spanned by four affinely
-independent points of that union, so the scan decides the predicate. It is cross-checked
-against an independent linear-programming formulation of the same predicate, and against
-a deliberately overlapping pair.
+All combinatorics - censuses, costs, volumes, affine ranks, clique numbers - is exact
+integer arithmetic: determinants by integer cofactor expansion, ranks by fraction-free
+integer elimination, the three ratios as exact rationals printed at one decimal place.
+Interior-disjointness of two cells is decided by the exact separating-hyperplane scan
+over the 210 four-subsets of their ten vertices; a separating hyperplane, when one
+exists, is spanned by four affinely independent points of that union, so the scan
+decides the predicate. It is cross-checked against an independent linear-programming
+formulation of the same predicate - the one floating-point surface, held to TOL and
+fail-closed: only a proven-infeasible programme certifies disjointness, and any other
+unsuccessful solver termination aborts the run - and against a deliberately
+overlapping pair.
 """
 
 import itertools
 import json
 import sys
+from fractions import Fraction
 
 import numpy as np
 from scipy.optimize import linprog
@@ -65,8 +82,58 @@ def domain(vals, ticks):
                      for t in ticks], dtype=np.int64)
 
 
+def det3b(a, b, c):
+    """Batched three-by-three determinant of integer row triples."""
+    return (a[:, 0] * (b[:, 1] * c[:, 2] - b[:, 2] * c[:, 1])
+            - a[:, 1] * (b[:, 0] * c[:, 2] - b[:, 2] * c[:, 0])
+            + a[:, 2] * (b[:, 0] * c[:, 1] - b[:, 1] * c[:, 0]))
+
+
 def det4(M):
-    return int(round(float(np.linalg.det(np.asarray(M, dtype=np.float64)))))
+    """Exact four-by-four integer determinant by cofactor expansion, in Python ints."""
+    a = [[int(x) for x in row] for row in M]
+
+    def det3(m):
+        return (m[0][0] * (m[1][1] * m[2][2] - m[1][2] * m[2][1])
+                - m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0])
+                + m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]))
+
+    return sum(((-1) ** k) * a[0][k]
+               * det3([[a[r][c] for c in COLS[k]] for r in (1, 2, 3)])
+               for k in range(4))
+
+
+def det4b(D):
+    """Batched exact four-by-four integer determinant by cofactor expansion along the
+    first row; all arithmetic stays in int64, which these entry sizes cannot overflow."""
+    out = np.zeros(len(D), dtype=np.int64)
+    for k in range(4):
+        out += ((-1) ** k) * D[:, 0, k] * det3b(D[:, 1, COLS[k]], D[:, 2, COLS[k]],
+                                                D[:, 3, COLS[k]])
+    return out
+
+
+def rank_int(A):
+    """Exact rank of an integer matrix by fraction-free Gaussian elimination."""
+    rows = [[int(x) for x in r] for r in A]
+    ncols = len(rows[0]) if rows else 0
+    rank = 0
+    col = 0
+    r = 0
+    while r < len(rows) and col < ncols:
+        piv = next((i for i in range(r, len(rows)) if rows[i][col] != 0), None)
+        if piv is None:
+            col += 1
+            continue
+        rows[r], rows[piv] = rows[piv], rows[r]
+        for i in range(r + 1, len(rows)):
+            if rows[i][col] != 0:
+                f, p = rows[i][col], rows[r][col]
+                rows[i] = [p * rows[i][c] - f * rows[r][c] for c in range(ncols)]
+        r += 1
+        rank += 1
+        col += 1
+    return rank
 
 
 def cost(M):
@@ -106,7 +173,7 @@ for p in itertools.product(range(-1, 2), repeat=3):
     slabs += 1
     A = np.array([list(s) + [t] for s in ((0, 0, 0), p) for t in range(-2, 3)],
                  dtype=np.int64)
-    ranks.add(int(np.linalg.matrix_rank(A[1:] - A[0])))
+    ranks.add(rank_int(A[1:] - A[0]))
     for comb in itertools.combinations(range(len(A)), 5):
         M = A[list(comb)]
         dets.add(abs(det4(M[1:] - M[0])))
@@ -121,9 +188,9 @@ chk("no nondegenerate cell is adjacency-only, at any resolution or box",
 tight = np.array([[0, 0, 0, 0], [1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
                  dtype=np.int64)
 chk("rejector: a cell just above adjacency-only does reach affine rank four",
-    int(np.linalg.matrix_rank(tight[1:] - tight[0])) == 4 and cost(tight) == 3,
+    rank_int(tight[1:] - tight[0]) == 4 and cost(tight) == 3,
     "rank {0} at adjacency cost {1}".format(
-        int(np.linalg.matrix_rank(tight[1:] - tight[0])), cost(tight)))
+        rank_int(tight[1:] - tight[0]), cost(tight)))
 
 # ----------------------------------------------------------------------------------
 # (b) the exact per-cell floor at the native resolution, and what attains it
@@ -174,15 +241,16 @@ chk("every floor-cost cell is a doubled star on three axes, of minimal volume",
 # (c) volume-weighted floor for arbitrary corner dissections, and one refinement
 # ----------------------------------------------------------------------------------
 print("--- volume-weighted dissection floor ---")
-ratio1 = min(24.0 * e / v for (e, v) in joint1)
-arg1 = sorted((e, v) for (e, v) in joint1 if 24.0 * e / v == ratio1)
-chk("volume-weighted cost floor for an arbitrary corner dissection of the cell",
-    abs(ratio1 - 56.0) < TOL and arg1 == [(7, 3)],
-    "floor {0} attained at the cost and volume pair {1}".format(f1(ratio1), arg1))
-ratmin = min(24.0 * e / v for (e, v) in joint1 if e == floor1)
+ratio1 = min(Fraction(24 * e, v) for (e, v) in joint1)
+arg1 = sorted((e, v) for (e, v) in joint1 if Fraction(24 * e, v) == ratio1)
+chk("volume-weighted cost lower bound for an arbitrary corner dissection of the cell",
+    ratio1 == 56 and arg1 == [(7, 3)],
+    "lower bound {0} set by the ratio-minimising cost and volume class {1}; no claim"
+    " that any dissection attains it".format(f1(ratio1), arg1))
+ratmin = min(Fraction(24 * e, v) for (e, v) in joint1 if e == floor1)
 chk("the floor-cost cells are not the volume-efficient ones, so they do not set it",
     ratmin > ratio1,
-    "floor-cost cells run at {0} against the dissection floor {1}".format(
+    "floor-cost cells run at {0} against the dissection lower bound {1}".format(
         f1(ratmin), f1(ratio1)))
 
 
@@ -194,8 +262,7 @@ def sweep(A, chunk=200000):
         if not block:
             break
         M = A[np.array(block, dtype=np.int64)]
-        det = np.rint(np.linalg.det(
-            (M[:, 1:, :] - M[:, :1, :]).astype(np.float64))).astype(np.int64)
+        det = det4b(M[:, 1:, :] - M[:, :1, :])
         keep = det != 0
         if not keep.any():
             continue
@@ -211,13 +278,13 @@ def sweep(A, chunk=200000):
 
 J2 = sweep(domain((0, 1, 2), (0, 1)))
 tot2 = sum(J2.values())
-ratio2 = min(24.0 * e / v for (e, v) in J2)
-region2 = ratio2 * 8.0
+ratio2 = min(Fraction(24 * e, v) for (e, v) in J2)
+region2 = ratio2 * 8
 chk("the per-cell floor survives a twice-refined resolution of the same region",
     min(e for e, _ in J2) == 3 and tot2 == 2449800,
     "{0} nondegenerate refined cells, floor {1}".format(tot2, min(e for e, _ in J2)))
 chk("the refined region floor rises above the native-resolution region floor",
-    abs(ratio2 - 10.0) < TOL and region2 > ratio1,
+    ratio2 == 10 and region2 > ratio1,
     "refined {0} against native {1}".format(f1(region2), f1(ratio1)))
 
 # ----------------------------------------------------------------------------------
@@ -232,13 +299,6 @@ for w in UW:
 chk("unimodular corner cells and their adjacency-cost profile",
     len(UV) == 2672 and prof == {3: 64, 4: 384, 5: 1152, 6: 768, 7: 304},
     "{0} cells, profile {1}".format(len(UV), dict(sorted(prof.items()))))
-
-
-def det3b(a, b, c):
-    """Batched three-by-three determinant of integer row triples."""
-    return (a[:, 0] * (b[:, 1] * c[:, 2] - b[:, 2] * c[:, 1])
-            - a[:, 1] * (b[:, 0] * c[:, 2] - b[:, 2] * c[:, 0])
-            + a[:, 2] * (b[:, 0] * c[:, 1] - b[:, 1] * c[:, 0]))
 
 
 def disjoint_batch(P, Q):
@@ -270,7 +330,13 @@ def disjoint_batch(P, Q):
 def disjoint_lp(P, Q):
     """Independent reference for the same predicate, by linear programming rather than
     by hyperplane search: maximise the smallest barycentric coordinate over the points
-    common to both cells. The interiors meet exactly when that optimum is positive."""
+    common to both cells. The interiors meet exactly when that optimum is positive.
+
+    Fail-closed: a proven-infeasible programme is the one unsuccessful termination that
+    certifies disjointness (the closed cells share no point at all). Any other
+    unsuccessful termination - iteration limit, numerical failure, unboundedness -
+    certifies nothing and raises, aborting the run with a nonzero exit instead of
+    silently agreeing with the hyperplane scan."""
     obj = [0.0] * 10 + [-1.0]
     aeq, beq = [], []
     for d in range(4):
@@ -289,8 +355,12 @@ def disjoint_lp(P, Q):
         aub.append(row)
     res = linprog(obj, A_ub=aub, b_ub=[0.0] * 10, A_eq=aeq, b_eq=beq,
                   bounds=[(0.0, 1.0)] * 10 + [(None, None)])
-    if not res.success:
+    if res.status == 2:
         return True
+    if not res.success:
+        raise RuntimeError(
+            "linprog terminated abnormally (status {0}: {1}); no disjointness"
+            " certificate either way".format(res.status, res.message))
     return float(-res.fun) <= TOL
 
 
@@ -426,8 +496,9 @@ chk("that maximum is invariant under reversing the vertex order, and both witnes
 lower = 120 - k3 - k34
 chk("cost floor for any unimodular corner dissection",
     lower == 96,
-    "twenty-four cells at cost five is {0}; the floor-cost cells give back at most"
-    " {1} twice over and the below-average cells at most {2}, leaving {3}".format(
+    "twenty-four cells benchmarked at cost five give {0}; costs above five only add,"
+    " a cost-3 cell saves 2, a cost-4 cell saves 1, and the saving 2*n3 + n4 ="
+    " n3 + (n3 + n4) is at most {1} + {2}, leaving at least {3}".format(
         120, k3, k34, lower))
 
 kuhn = []
@@ -472,7 +543,7 @@ RECEIPT = {
     "adjacency_only_affine_ranks": sorted(ranks),
     "adjacency_only_cell_volumes": sorted(dets),
     "adjacency_only_five_subsets": sub5,
-    "rejector_affine_rank": int(np.linalg.matrix_rank(tight[1:] - tight[0])),
+    "rejector_affine_rank": rank_int(tight[1:] - tight[0]),
     "rejector_adjacency_cost": cost(tight),
     "corner_five_subsets": 4368,
     "corner_cells_nondegenerate": tot1,
@@ -501,6 +572,16 @@ RECEIPT = {
     "monotone_path_overlaps": kover,
     "monotone_path_dissection_cost": upper,
     "monotone_path_cost_profile": dict((str(k), v) for k, v in sorted(kprof.items())),
+    "review_loop": {
+        "iteration": 1,
+        "disposition": "FIX_THEN_PROCEED",
+        "reviewer": "Sol",
+        "date": "2026-08-08",
+        "fix": "narrowed the physical framing to the supplied tick-extended simplex"
+               " model, removed the 56-attainability claim, made the programme"
+               " cross-check fail-closed, made determinants/ranks/ratios exact, and"
+               " rewired the dependency edges to the actual premises",
+    },
 }
 print("RECEIPT " + json.dumps(RECEIPT, sort_keys=True))
 print("TOTAL: PASS={0} FAIL={1}".format(PASS, FAIL))

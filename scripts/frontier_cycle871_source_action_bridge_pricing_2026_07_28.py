@@ -12,15 +12,22 @@ Four sections, all findings computed rather than declared:
     its file, sha256, git blob and line number.  The extraction rule is fixed
     in advance and the quotes are byte-recovered from the pinned payloads.
 
-(B) FORCED vs FREE.  A candidate source-to-action map on a finite lattice
-    patch is a function A from admissible source configurations to action
-    values.  Three linear constraint families are read off the four axioms --
-    Record/empty-record (REC0), Record/count-once composition (REC1), and
-    Lattice translation covariance (LAT) -- and the exact dimension of the
-    surviving solution space is computed by two independent routes (sparse
-    exact Gaussian elimination over Q, and a triangular forward-substitution
-    route that never enumerates the configuration space).  An ablation ladder
-    then prices each axiom clause by how many free parameters it removes.
+(B) FORCED vs FREE, AT A DECLARED ANSATZ.  A candidate source-to-action map
+    on a finite lattice patch is a function A from admissible source
+    configurations to action values.  Three linear constraint families are
+    DECLARED for A: empty-record vanishing (REC0), disjoint finite additivity
+    (REC1), and translation invariance (LAT).  These clauses are MODELED ON
+    the Record axiom's sentences about the scalar readout I and on the
+    Lattice axiom; the canonical axiom text supplies additivity for the
+    readout I only, and the identification of the action functional A with
+    the readout I (or any readout-to-action / source-action bridge) is NOT
+    supplied by the axioms and is NOT proved here -- it is an OPEN bridge and
+    the results of this section are conditional on the declared clauses.
+    The exact dimension of the surviving solution space is computed by two
+    independent routes (sparse exact Gaussian elimination over Q, and a
+    triangular forward-substitution route that never enumerates the
+    configuration space).  An ablation ladder then prices each declared
+    clause by how many free parameters it removes.
 
 (C) NARROWEST SUB-GAP.  The landed Gate B interface note observes that in the
     linear form L(1 - lambda*strength/(r+eps)) a rescaling of lambda against
@@ -32,11 +39,14 @@ Four sections, all findings computed rather than declared:
     any finite difference or ratio of in-scope action values separates the two
     factors.  That decides the size of the bridge's normalization debt.
 
-(D) OBLIGATION MAP.  Every remaining clause quoted in (A) is given an explicit
-    unknowns/constraints model built from the same three axiom families, its
-    free dimension is computed by the same solver, and it is classified
-    weaker / equivalent / stronger relative to the bridge by a pure function of
-    those computed dimensions and generators.
+(D) OBLIGATION MAP (MODELED DIMENSIONS ONLY).  Every remaining clause quoted
+    in (A) is given an explicit unknowns/constraints model chosen by the
+    author, its free dimension is computed by the same solver, and its
+    modeled dimension is compared with the bridge model's by a pure function
+    of those computed integers.  Equal modeled dimension is NOT mutual
+    implication and larger modeled dimension is NOT logical strength: no
+    implication maps between the heterogeneous physical obligations are
+    constructed here, and none is claimed.
 
 No new axiom, primitive or premise is introduced.  Nothing here promotes a row
 or predicts an audit outcome.  Clauses that stay free are reported as imports
@@ -443,11 +453,15 @@ def dim_struct_route(dims: tuple[int, ...]) -> dict:
 
 
 AXIOM_CLAUSES = {
-    "REC0": "Record axiom, empty-record clause: a source configuration with no "
-            "registered record contributes no action content.",
-    "REC1": "Record axiom, count-once clause + Admissibility composition: "
-            "disjointly supported sources compose additively.",
-    "LAT": "Lattice axiom: the patch translation group acts covariantly.",
+    "REC0": "DECLARED action clause (modeled on the Record axiom's "
+            "empty-record readout sentence, which speaks about the readout I, "
+            "not about any action): A(empty) = 0.",
+    "REC1": "DECLARED action clause (modeled on the Record axiom's count-once "
+            "readout additivity for I; the readout-to-action identification "
+            "is an OPEN bridge, not supplied by the axioms): disjointly "
+            "supported sources compose additively under A.",
+    "LAT": "DECLARED action clause (modeled on the Lattice axiom): the patch "
+           "translation group leaves A invariant.",
     "QUBIT": "Qubit axiom: the per-site source alphabet is two-valued, so the "
              "configuration domain is the subset lattice (encoded in the model "
              "domain, contributing no separate row).",
@@ -673,10 +687,14 @@ def _dim_readout() -> int:
     return 3 - len(echelon(rows))
 
 
-def _dim_signed_term() -> tuple[int, int]:
-    """continuous scale plus the discrete orientation the signed lane locks."""
+def _dim_signed_term() -> tuple[int, int, int]:
+    """One continuous scale; the orientation is a two-point DISCRETE set, and
+    the signed lane LOCKS it, leaving zero residual discrete choices.  A
+    discrete cardinality is not a parameter-space dimension and is reported in
+    a separate field, never added to the continuous dimension."""
     signs = [s for s in (1, -1) if s * s == 1]
-    return 1, len(signs)
+    residual_sign_choices = 0  # the lane locks the orientation
+    return 1, len(signs), residual_sign_choices
 
 
 def section_d_map(section_b: dict, section_c: dict) -> dict:
@@ -686,7 +704,7 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
     window = _dim_window()
     conn = _dim_connectivity()
     readout = _dim_readout()
-    sig_cont, sig_discrete = _dim_signed_term()
+    sig_cont, sig_discrete, sig_residual = _dim_signed_term()
 
     clauses = [
         {"clause": "GB-S1a linear test-action shape",
@@ -699,7 +717,10 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
          "source": AUDIT_INPUT_PATHS[0], "model": "the residual free direction of "
          "REC0+REC1+LAT", "free_dim": bridge_dim, "generator": "uniform-scale"},
         {"clause": "physical Newton constant / SI normalization",
-         "source": AUDIT_INPUT_PATHS[0], "model": "same residual free direction",
+         "source": AUDIT_INPUT_PATHS[0],
+         "model": "DECLARED as the same one-parameter uniform-scale model; "
+                  "identity with the bridge residual (or with GB-S1b) is a "
+                  "modeling choice, NOT a proven implication",
          "free_dim": bridge_dim, "generator": "uniform-scale"},
         {"clause": "finite-core scalar 1/(r+0.1) vs the exact periodic "
                    "graph-Laplacian Green solution",
@@ -720,8 +741,12 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
         {"clause": "signed-gravity locked source-action term (scale plus locked "
                    "orientation)",
          "source": AUDIT_INPUT_PATHS[1],
-         "model": "uniform scale plus the discrete orientation the lane locks",
-         "free_dim": sig_cont + (sig_discrete - 1), "generator": "uniform-scale+sign"},
+         "model": "uniform scale plus the discrete orientation the lane locks "
+                  "(locked: zero residual sign choices; the two-point sign set "
+                  "has continuous dimension 0 and is reported separately)",
+         "free_dim": sig_cont, "discrete_sign_cardinality": sig_discrete,
+         "locked_orientation_residual_choices": sig_residual,
+         "generator": "uniform-scale+locked-sign"},
         {"clause": "h-class/h-unit density-to-angle readout identity",
          "source": AUDIT_INPUT_PATHS[6],
          "model": "density scale, angle scale and offset under REC0",
@@ -729,30 +754,36 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
     ]
 
     def classify(free_dim: int, generator: str) -> str:
+        # A comparison of MODELED dimensions only.  Equal modeled dimension
+        # does not establish mutual implication; a larger modeled dimension
+        # does not establish that one obligation is logically stronger.
         if free_dim < bridge_dim:
-            return "weaker"
-        if free_dim == bridge_dim and generator == "uniform-scale":
-            return "equivalent"
-        return "stronger"
+            return "smaller-model-dim"
+        if free_dim == bridge_dim:
+            return "equal-model-dim"
+        return "larger-model-dim"
 
     for c in clauses:
-        c["strength_vs_bridge"] = classify(c["free_dim"], c["generator"])
+        c["modeled_dim_vs_bridge"] = classify(c["free_dim"], c["generator"])
         c["role_if_free"] = (
-            "forced by the axioms; no import" if c["free_dim"] == 0 else
-            "import: one real normalization constant, narrow role = fixes the "
-            "source-to-action scale and nothing else"
-            if c["strength_vs_bridge"] == "equivalent" else
-            f"import: {c['free_dim']} free parameters, strictly more than the "
-            "bridge supplies")
+            "forced within this declared finite model; no import at the model "
+            "level" if c["free_dim"] == 0 else
+            "modeled import: one real normalization constant in this declared "
+            "finite model (equal modeled dimension is NOT mutual implication)"
+            if c["modeled_dim_vs_bridge"] == "equal-model-dim" else
+            f"modeled import: {c['free_dim']} free parameters in this declared "
+            "finite model, more than the bridge model's 1 (a model-size "
+            "comparison, NOT a logical-strength claim)")
     replay = [classify(c["free_dim"], c["generator"]) for c in clauses]
-    pure = replay == [c["strength_vs_bridge"] for c in clauses]
+    pure = replay == [c["modeled_dim_vs_bridge"] for c in clauses]
     modelled = all(isinstance(c["free_dim"], int) for c in clauses)
     certify("CERT-D/classification-is-computed", pure and modelled,
             f"clauses={len(clauses)} pure_function_replay={pure} "
             f"all_dims_computed={modelled}")
     tally: dict[str, int] = {}
     for c in clauses:
-        tally[c["strength_vs_bridge"]] = tally.get(c["strength_vs_bridge"], 0) + 1
+        tally[c["modeled_dim_vs_bridge"]] = tally.get(
+            c["modeled_dim_vs_bridge"], 0) + 1
     return {
         "bridge_free_dim": bridge_dim,
         "map_patch": list(MAP_PATCH),
@@ -813,7 +844,8 @@ def main() -> int:
     out: list[str] = []
     w = out.append
     w("=" * 78)
-    w("CYCLE 871 -- EXACT PRICING OF THE SOURCE-ACTION BRIDGE")
+    w("CYCLE 871 -- SOURCE-ACTION BRIDGE PRICING AT A DECLARED ANSATZ "
+      "(CONDITIONAL)")
     w("=" * 78)
     w("")
     w("SCOPE NOTE: no artifact named 'retention map' exists on this branch.")
@@ -848,7 +880,11 @@ def main() -> int:
             continue
         w(f"    {r['path']}:{r['line_no']} | {r['line_verbatim'][:110]}")
     w("")
-    w("-- (B) WHAT THE BRIDGE MUST SUPPLY: FORCED vs FREE ----------------------")
+    w("-- (B) DECLARED ACTION ANSATZ: FORCED vs FREE (conditional) -------------")
+    w("  NOTE: the additivity/empty/translation clauses below are DECLARED for")
+    w("  the action functional A, modeled on the Record axiom's readout-I")
+    w("  sentences.  The readout-to-action identification is an OPEN bridge;")
+    w("  every dimension below is conditional on the declared clauses.")
     for k, v in sec_b["axiom_clauses"].items():
         w(f"  {k}: {v}")
     w("")
@@ -893,11 +929,13 @@ def main() -> int:
       f"{sec_c['shape_free_dim_after_scale_quotient']}")
     w(f"  free dimension of the scale itself: {sec_c['scale_free_dim']}")
     w("")
-    w("-- (D) OBLIGATION MAP FOR THE REST -------------------------------------")
+    w("-- (D) OBLIGATION MAP FOR THE REST (modeled dimensions only) ------------")
+    w("  Each row is an author-declared finite model; equal or larger modeled")
+    w("  dimension is NOT an implication or logical-strength claim.")
     w(f"  bridge free dimension used as the yardstick: {sec_d['bridge_free_dim']}")
-    w(f"  {'free_dim':>9}  {'strength':<11} clause")
+    w(f"  {'free_dim':>9}  {'model_dim_vs_bridge':<19} clause")
     for c in sec_d["clauses"]:
-        w(f"  {c['free_dim']:>9}  {c['strength_vs_bridge']:<11} {c['clause']}")
+        w(f"  {c['free_dim']:>9}  {c['modeled_dim_vs_bridge']:<19} {c['clause']}")
         w(f"             model : {c['model']}")
         w(f"             source: {c['source']}")
         w(f"             role  : {c['role_if_free']}")
@@ -916,9 +954,10 @@ def main() -> int:
                f"{sorted(sec_a['blocker_rows_by_lane'])}.")
     fnd.append(f"F2 on every one of the {len(sec_b['per_patch'])} patches tested "
                f"(up to {max(e['sites'] for e in sec_b['per_patch'])} sites, 1D/2D/3D) "
-               f"the four axioms leave the source-to-action map with free "
-               f"dimension {sec_b['free_dims_observed']}; two independent routes "
-               f"agree wherever both ran.")
+               f"the DECLARED action clauses leave the source-to-action map "
+               f"with free dimension {sec_b['free_dims_observed']}; two "
+               f"independent routes agree wherever both ran (conditional on "
+               f"the declared ansatz; the readout-to-action bridge is open).")
     p0 = sec_b["axiom_price"][1]
     fnd.append(f"F3 on patch {tuple(p0['dims'])} the count-once clause removes "
                f"{p0['REC1_removes']} free parameters, translation covariance "
@@ -929,11 +968,14 @@ def main() -> int:
                f"group={sec_c['stabilizer_is_group_on_grid']}) and "
                f"{sec_c['separating_observables_found']} in-scope observables "
                f"separate the two factors.")
-    fnd.append(f"F5 the bridge's total import at weak-field linear order is "
+    fnd.append(f"F5 WITHIN the declared ansatz the bridge model's import is "
                f"{sec_b['bridge_free_dim']} real scalar; its shape content has "
                f"free dimension {sec_c['shape_free_dim_after_scale_quotient']} "
-               f"and is therefore forced, not imported.")
-    fnd.append(f"F6 obligation map tally over {len(sec_d['clauses'])} clauses: "
+               f"there.  This is conditional finite algebra: it does NOT show "
+               f"that the axioms force the physical source-action map's "
+               f"additivity, locality or shape.")
+    fnd.append(f"F6 obligation-map tally over {len(sec_d['clauses'])} clauses "
+               f"(modeled dimension counts, not logical strength): "
                f"{sec_d['tally']}.")
     for line in fnd:
         w("  " + line)

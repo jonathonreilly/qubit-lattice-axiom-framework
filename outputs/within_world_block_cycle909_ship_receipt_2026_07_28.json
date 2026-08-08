@@ -1,53 +1,58 @@
 {
-  "audit": "unset",
-  "authority": "none",
-  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); one new premise NAMED not absorbed (P-SITE-UNIFORM); supervisor line-by-line review",
-  "block": "toe-time-blockQ6-20260802",
-  "campaign": "toe-time-expansion-20260802",
-  "certificates": {
-    "checker": "exit 0, 77.0s; PRIMARY_SURVIVES_THIS_CHECK; zero disagreements; 8/8 teeth incl. leaked-realization (the lemma filter provably does not block a genuine realizer)",
-    "primary": "exit 0, 156.9s; restriction gates 37/37; falsifiers 9/9 incl. outcome-neutrality across all four verdict classes"
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); one new premise NAMED not absorbed (P-SITE-UNIFORM); supervisor line-by-line review",
+ "certificates": {
+  "checker": "exit 0; PASS=7 FAIL=0; PRIMARY_SURVIVES_THIS_CHECK",
+  "primary": "exit 0; PASS=7 FAIL=0; self-contained fail-closed"
+ },
+ "claim_type": "bounded_theorem",
+ "cluster_cap_evaluation": "re-evaluated after review-loop demotion: the block ships bounded conditional cores only; no closure, no-go, or unification claim",
+ "cycles": [
+  909
+ ],
+ "files": {
+  "docs/WITHIN_WORLD_CONSTRAINT_ARITHMETIC_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "0f2f112dbf108c0930358e222d82249dce25569c",
+   "sha256": "0d40d0ed8c56350ff05b6a5c72044f5076424ab35732b9d36cdcb69f3f48e4a2"
   },
-  "claim_type": "bounded_theorem",
-  "cluster_cap_evaluation": "OPEN \u2014 7th Q-family PR: prices the lane's live selection question with an arithmetic negative, a spectrum identification, and a carrier-independence result; distinct claim type vs Q7; nothing corollary",
-  "cycles": [
-    909
-  ],
-  "files": {
-    "docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "3e69fa8c800083a09f1707f40cd1c89c1e0932eb",
-      "sha256": "6dace6f813851692109901d5e5e7d9a7d2df70ba32f46d7dc13bf5d51aa9ccc3"
-    },
-    "logs/runner-cache/frontier_cycle909_within_world_independent_check_2026_07_28.txt": {
-      "git_blob": "35889a6acd49ee90ef8e2a4306ed6e7110df3c32",
-      "sha256": "cb2605b4ba0f56aedc8a6921a88fb12df354df6bbf17f641c10d5ba8baf99f18"
-    },
-    "logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt": {
-      "git_blob": "008281b1abb43bc151207bde22abe7c872035a8d",
-      "sha256": "be7a8be1f01e6aa446e673a32d8aef9db326995de1773a9dd462d307cc39e4bb"
-    },
-    "outputs/within_world_independent_check_cycle909_receipt_2026_07_28.json": {
-      "git_blob": "a58ac5a9ac38d4d87da57129f90a5e34361130dd",
-      "sha256": "5efff5211c4f805e996a7232a7ad3553f046de9e46f241b8d6d92ba680043e4c"
-    },
-    "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": {
-      "git_blob": "4843b2ca7dd5af0ee1c67ff11aa4e47d7cb22976",
-      "sha256": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52"
-    },
-    "scripts/frontier_cycle909_within_world_independent_check_2026_07_28.py": {
-      "git_blob": "86c81170840362e139404bea4801299497d2f6ce",
-      "sha256": "14169fbc8285c7439b983b02aac7577244cb983a52fe4472821e005f19b4ee8c"
-    },
-    "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py": {
-      "git_blob": "359b5a502fd9cbd05653f33e0b7931caaf868a25",
-      "sha256": "b38862284c0287dc8b1f24f5af8bf014509e22377d341b9933a05b2183af0021"
-    }
+  "logs/runner-cache/frontier_cycle909_within_world_independent_check_2026_07_28.txt": {
+   "git_blob": "9b41b14011ab6ee66272975ec70556e4d4c2a24c",
+   "sha256": "55c3757fdf5d059f73907ac13b7d25fdc1cb5806a2bd6ec0a6622caaaf2758e5"
   },
-  "headline": "BL9 PRICED AS PURCHASE: the constraint is THREE orbit-aggregate numbers (907's zero-elsewhere was a CHOICE; residual freedom 1,406); ZERO native realizers (1,404 declared + 3,220 out-of-closure recipes) and the negative is ARITHMETIC \u2014 C909-T3: the denominator needs the prime 613 and NO census field's escape-world sums reach it; C909-T2 collapse: all six world-level fields induce the identical column (the M3/M4/M5 menu was one point); the required numbers ARE the walk's two-layer interference spectrum (c0/s = p^2+q^2, c2/s = 2pq at (36,2),(22,1),(9,1),(1,0); ratio-1 = the linear record readout) \u2014 import P-WITHIN-WORLD taken twice (reading A supported; shared-object reading B NOT supported); BL10 independent (six-fold sum-of-squares ambiguity; the walk picks); the escape orbit is INHOMOGENEOUS (2 early / 9 late formers); future selection needs a NEW constraint \u2014 more search provably useless",
-  "independence": "cross-context (constraint set + 1,406-dim freedom reproduced by independent rank routes; the 3,220-recipe out-of-closure completeness attack; the prime-613 reach census; layer amplitudes re-derived by brute force; 9/9 + 8/8 teeth)",
-  "note": "docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-  "runtime_seconds": {
-    "checker": 76.96,
-    "primary": 156.85
+  "logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt": {
+   "git_blob": "2719b761ce35b9bd4ff10297fd76bd3b632f9f0a",
+   "sha256": "b0ea7d76a1b9701026798a2fa4fa3d607aa6bcf2a2c7fb030df708370ccdb666"
+  },
+  "outputs/within_world_independent_check_cycle909_receipt_2026_07_28.json": {
+   "git_blob": "a1331c8f2231eee1850ac3e9c166c156eeff0c28",
+   "sha256": "8195ffa279110ea6cc264ad48b6366714d20dbdec38290835676e78c5595207e"
+  },
+  "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": {
+   "git_blob": "7fc48fcb3125c88bc35cd47d49003477cd5743d1",
+   "sha256": "cb52a73060e18b750805511310ec6f8e2db358600fba73ba990281846863760a"
+  },
+  "scripts/frontier_cycle909_within_world_independent_check_2026_07_28.py": {
+   "git_blob": "88998d5e9149281f6731f735bf21d27c35b803dd",
+   "sha256": "3687f78cf47a4d29692f1dfbf7d743caaf44c8f728c0651b64bfe20996959ffa"
+  },
+  "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py": {
+   "git_blob": "9afc291f184349b76fa03e21a3f963a7d94105b1",
+   "sha256": "260b2cd957f12a2c5f231fcb0a103525f1cec3e02bbf47fc66d81effdd5b7840"
   }
+ },
+ "headline": "within-world constraint arithmetic at a stipulated carrier table: 19003 = 31 x 613; the necessary world-sum denominator filter (fixed sums only); exact per-site sum-of-two-squares identities; six-fold degree-2 ambiguity WITHIN the declared two-layer representation.  Universal negatives ('nothing native reaches 613', 'more search is provably useless', 'two purchases') WITHDRAWN after review",
+ "independence": "checker recomputes every claim by a structurally different route from its own copy of the stipulations, pins the primary and its cache by sha256, and exits fail-closed on refutation",
+ "note": "docs/WITHIN_WORLD_CONSTRAINT_ARITHMETIC_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "review_loop": {
+  "date": "2026-08-08",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix": "universal negatives withdrawn; forced-green degree-2 certificate replaced; self-contained rewrite",
+  "iteration": 1,
+  "reviewer": "Sol"
+ },
+ "runtime_seconds": {
+  "checker": 76.96,
+  "primary": 156.85
+ }
 }

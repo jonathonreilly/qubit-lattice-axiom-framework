@@ -1,229 +1,48 @@
 {
-  "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
-  "audit": "unset",
-  "authority": "none",
-  "block": "toe-time-blockAC1-20260802",
-  "campaign": "toe-time-expansion-20260802",
-  "cycle": 924,
-  "independence": "own rational arithmetic (hand-rolled Rat, not fractions.Fraction); own dense Gauss-Jordan nullity solver (not the primary's sparse echelon); Q1 re-derived from the notes' PROSE and cross-checked against the receipts; own referent scan; own pool construction",
-  "refutations": [],
-  "role": "independent checker",
-  "rows": [
-    {
-      "detail": "",
-      "id": "T1a",
-      "pass": true,
-      "what": "checker independently reproduces the angle-native no-go at PASS=128 FAIL=0"
-    },
-    {
-      "detail": "TOTAL: PASS=113 FAIL=0 CHECKS=113",
-      "id": "T1b",
-      "pass": true,
-      "what": "checker independently reproduces the stretch no-go at FAIL=0"
-    },
-    {
-      "detail": "observed=113 note_claim=TOTAL: PASS>=120 FAIL=0",
-      "id": "T1c",
-      "pass": true,
-      "what": "the primary discloses the stretch-no-go pass-count discrepancy with BOTH readings rather than silently picking one"
-    },
-    {
-      "detail": "files=40 bad=[]",
-      "id": "T2",
-      "pass": true,
-      "what": "every vendored artifact re-verifies against its ship receipt under the checker's own digest loop"
-    },
-    {
-      "detail": "",
-      "id": "T2b",
-      "pass": true,
-      "what": "tamper control: a modified byte stream yields a different digest"
-    },
-    {
-      "detail": "84=84 80=80 164=164",
-      "id": "T3a",
-      "pass": true,
-      "what": "the 913 note's prose carries the selection split and lock count"
-    },
-    {
-      "detail": "prose=(84,80,164) receipt=(84,80,164)",
-      "id": "T3b",
-      "pass": true,
-      "what": "the note's prose numbers agree with the receipt's numbers"
-    },
-    {
-      "detail": "84+80=164 vs 164",
-      "id": "T3c",
-      "pass": true,
-      "what": "the split sums to the lock count"
-    },
-    {
-      "detail": "21/41 20/41",
-      "id": "T3d",
-      "pass": true,
-      "what": "the checker's own rational arithmetic reproduces the receipt's shares 21/41 and 20/41"
-    },
-    {
-      "detail": "",
-      "id": "T3e",
-      "pass": true,
-      "what": "the 911 note states |A| = 2 at all lock points (the arity claim the primary relies on)"
-    },
-    {
-      "detail": "prose=52,017 receipt=52017",
-      "id": "T3f",
-      "pass": true,
-      "what": "the 912 note's simplex dimension agrees with its receipt"
-    },
-    {
-      "detail": "pool=38 pairs=1369",
-      "id": "T4a",
-      "pass": true,
-      "what": "checker's independent sweep evaluates the full ordered pool"
-    },
-    {
-      "detail": "checker=9 primary=9",
-      "id": "T4b",
-      "pass": true,
-      "what": "checker's hit count at 2/3 agrees with the primary's"
-    },
-    {
-      "detail": "",
-      "id": "T4c",
-      "pass": true,
-      "what": "the primary claims no candidate is licensed"
-    },
-    {
-      "detail": "periods=[8, 16, 24, 32, 40, 48] distinct_ratio_values=22 pairs_hitting_2/3=2",
-      "id": "T5a",
-      "pass": true,
-      "what": "the period-ratio sentence family reaches many distinct values, of which 2/3 is only one"
-    },
-    {
-      "detail": "e.g. the same 'ratio of two readable periods' sentence yields ['1/2', '1/3', '1/4', '1/5', '1/6', '2', '2/3', '2/5'] ...",
-      "id": "T5b",
-      "pass": true,
-      "what": "MODEL DEGENERACY CONFIRMED: a different pair of the same objects, under an equally well-formed sentence, gives a different value"
-    },
-    {
-      "detail": "candidates=9",
-      "id": "T5c",
-      "pass": true,
-      "what": "the primary records a model-degeneracy count for every candidate"
-    },
-    {
-      "detail": "small-integer pool entries (disclosed, none is 2/3): []",
-      "id": "T5d",
-      "pass": true,
-      "what": "hidden-import scan: no pooled quantity is the target value or its parts in disguise"
-    },
-    {
-      "detail": "hits={}",
-      "id": "T5e",
-      "pass": true,
-      "what": "REFERENT GAP re-confirmed independently: no charged-lepton referent in any pinned occurrence artifact"
-    },
-    {
-      "detail": "",
-      "id": "T5f",
-      "pass": true,
-      "what": "the referent scan is not blind (it finds a referent in a positive control string)"
-    },
-    {
-      "detail": "unknowns=8 free_dim=1",
-      "id": "T6a",
-      "pass": true,
-      "what": "checker's dense Gauss-Jordan gives free dimension 1 for the 871/stretch constraint family on the C3 patch"
-    },
-    {
-      "detail": "checker=1 primary=1",
-      "id": "T6b",
-      "pass": true,
-      "what": "checker and primary agree on the free dimension"
-    },
-    {
-      "detail": "no-cov=3 no-additivity=3 no-empty-record=2",
-      "id": "T6c",
-      "pass": true,
-      "what": "ablation controls change the dimension under the checker's own solver (the clauses are load-bearing)"
-    },
-    {
-      "detail": "['density']",
-      "id": "T6d",
-      "pass": true,
-      "what": "the inhomogeneous fixed-locus constraint pins exactly one menu member, alpha = 2/27"
-    },
-    {
-      "detail": "",
-      "id": "T6e",
-      "pass": true,
-      "what": "the nonzero menu members form a single scale orbit"
-    },
-    {
-      "detail": "2",
-      "id": "T6f",
-      "pass": true,
-      "what": "the readout obligation's free dimension is 2 under the checker's own solver"
-    },
-    {
-      "detail": "readout=2 bridge=1",
-      "id": "T6g",
-      "pass": true,
-      "what": "the readout obligation is strictly stronger than the bridge"
-    },
-    {
-      "detail": "C3=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] Z/3=[(0, 1, 2), (1, 2, 0), (2, 0, 1)]",
-      "id": "T7a",
-      "pass": true,
-      "what": "C3 covariance on three cells IS translation covariance on Z/3 (the groups are equal as permutation groups, not merely isomorphic)"
-    },
-    {
-      "detail": "S3 free_dim=1",
-      "id": "T7b",
-      "pass": true,
-      "what": "the free dimension is robust: the larger group S3 gives the same dimension 1, so the result does not depend on choosing C3 specifically"
-    },
-    {
-      "detail": "ccd98a3916cc40d5 vs ccd98a3916cc40d5",
-      "id": "T8a",
-      "pass": true,
-      "what": "the primary is deterministic across a double run"
-    },
-    {
-      "detail": "TOTAL: PASS=65 FAIL=0",
-      "id": "T8b",
-      "pass": true,
-      "what": "the primary exits 0 with FAIL=0"
-    },
-    {
-      "detail": "",
-      "id": "T8c",
-      "pass": true,
-      "what": "the primary adopts nothing"
-    },
-    {
-      "detail": "write_text occurrences=2",
-      "id": "T8d",
-      "pass": true,
-      "what": "the primary writes only its own receipt and runner cache"
-    },
-    {
-      "detail": "[]",
-      "id": "T8e",
-      "pass": true,
-      "what": "the primary writes to no axiom / registry / audit surface"
-    },
-    {
-      "detail": "7.5s / 900.0s",
-      "id": "T-RUNTIME",
-      "pass": true,
-      "what": "runtime within budget"
-    }
-  ],
-  "runtime_seconds": 7.5,
-  "teeth": 35,
-  "totals": {
-    "fail": 0,
-    "pass": 35
+ "all_certificates_pass": true,
+ "certificates": {
+  "R0_PINNED_EVIDENCE": {
+   "detail": "scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt:MATCH",
+   "pass": true
+  },
+  "R0b_CLAIMS_PARSED": {
+   "detail": "claims_line_found=True",
+   "pass": true
+  },
+  "R1_RATIOS_CROSS_MULTIPLIED": {
+   "detail": "84*41=3444==21*164=3444; 2*41-3*21=19; 16*3=48==2*24=48",
+   "pass": true
+  },
+  "R2_NULLITY_STRUCTURAL": {
+   "detail": "singleton_orbits=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)] primary=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)]",
+   "pass": true
+  },
+  "R3_GROUP_EQUALITY_DIRECT": {
+   "detail": "equal=True",
+   "pass": true
+  },
+  "R4_NORMALIZATION_COLLAPSE": {
+   "detail": "3*(2/27)==2/9 by integers: 54==54; survivors=['alpha_2_27']",
+   "pass": true
+  },
+  "R5_OVERCLAIM_SCAN": {
+   "detail": "hits=none",
+   "pass": true
+  },
+  "R6_RUNTIME": {
+   "detail": "elapsed_s=0.0 budget_s=300",
+   "pass": true
   }
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 924,
+ "review_loop": {
+  "date": "2026-08-08",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix": "literal-True hidden-import check removed; all certificates bind to predicates; fail-closed exit; unlanded/generated closure removed",
+  "iteration": 1,
+  "reviewer": "Sol"
+ },
+ "role": "independent_checker",
+ "verdict": "PRIMARY_SURVIVES_THIS_CHECK"
 }

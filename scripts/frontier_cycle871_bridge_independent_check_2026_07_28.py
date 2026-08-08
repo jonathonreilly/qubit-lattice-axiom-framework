@@ -72,9 +72,9 @@ PYTHON_PATHS = tuple(p for p in AUDIT_INPUT_PATHS if p.endswith(".py"))
 BLOCKLISTED_MODULES = tuple(Path(p).stem for p in PYTHON_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "e27b91b699917aea27b3e603096fde16751c45d8cb3c1e7b0ff14bb1a46641fc",
+        "230cdeac9390f2e7dc67d3dd44b5c7fe3bdf90c8dcad83d9654871aa15b44b0f",
     AUDIT_INPUT_PATHS[1]:
-        "bf1e493cff5775bfba10e4f293ffe794c09cfe8448b3b5c4103e61d82ceb3ad8",
+        "5fa8607c740ab7895819e9ff6e8f4b0fcd078323f7e2c3ecb519dd48719fec90",
     AUDIT_INPUT_PATHS[2]:
         "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116",
     AUDIT_INPUT_PATHS[3]:
@@ -91,8 +91,8 @@ EXPECTED_SHA256 = {
         "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "b0515ad74f0a883e091fa3c9b4f3126c1fe6fe60",
-    AUDIT_INPUT_PATHS[1]: "d491b5f42ab1186bd8eb952583304c5d6769d7ac",
+    AUDIT_INPUT_PATHS[0]: "fd6381d91b48cca1c3fd2fdddeefc3f1172c8a44",
+    AUDIT_INPUT_PATHS[1]: "c2132438570907f6f6900003bed692353f34be45",
     AUDIT_INPUT_PATHS[2]: "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
     AUDIT_INPUT_PATHS[3]: "36c2b9dd0b799f7102c7685db5e4fc5121b933ce",
     AUDIT_INPUT_PATHS[4]: "f2256fe7c1bfd5099e462688cc56cd48c7956a63",
@@ -182,7 +182,9 @@ def evidence() -> dict:
 PATCH_ROW = re.compile(
     r"^\s+(\((?:\d+,\s*)*\d+,?\))\s+(\d+)\s+(\d+)\s+(\d+)\s+(-?\d+)\s+(\d+)\s+"
     r"(True|False|None)\s*$")
-MAP_ROW = re.compile(r"^\s+(\d+)\s+(weaker|equivalent|stronger)\s+(\S.*)$")
+MAP_ROW = re.compile(
+    r"^\s+(\d+)\s+(smaller-model-dim|equal-model-dim|larger-model-dim)"
+    r"\s+(\S.*)$")
 QUOTE_HEAD = re.compile(r"^\s+(\S+\.md):(\d+)\s+\[(\w+)\]\s+sha256=([0-9a-f]{12})")
 QUOTE_LINE = re.compile(r"^\s{4}VERBATIM LINE \| (.*)$")
 NUM_AFTER = re.compile(r":\s*(-?\d+)\s*$")

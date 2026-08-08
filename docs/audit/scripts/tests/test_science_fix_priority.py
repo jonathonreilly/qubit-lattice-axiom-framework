@@ -1,8 +1,10 @@
 """Science-fix scheduling: lane priority, category ranks, cross-clone dedupe."""
 from __future__ import annotations
 
+import io
 import json
 import sys
+import tarfile
 import tempfile
 import types
 import unittest
@@ -11,7 +13,9 @@ from unittest import mock
 
 REPO_ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
+sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 
+import compute_science_fix_backlog as backlog
 import science_fix_loop as sfl
 
 
@@ -208,6 +212,109 @@ class AuditHandoffTest(unittest.TestCase):
                         self._write(payload),
                         ledger_loader=lambda claim_id: self._ledger_row(),
                     )
+
+
+class ArchivedAdvisoryTest(unittest.TestCase):
+    @staticmethod
+    def _archive_bytes(rows):
+        buffer = io.BytesIO()
+        with tarfile.open(fileobj=buffer, mode="w") as archive:
+            for index, row in enumerate(rows):
+                data = (json.dumps(row) + "\n").encode("utf-8")
+                info = tarfile.TarInfo(
+                    f"docs/audit/data/ledger/aa/row-{index}.json"
+                )
+                info.size = len(data)
+                archive.addfile(info, io.BytesIO(data))
+        return buffer.getvalue()
+
+    @staticmethod
+    def _conditional_row(claim_id="claim_x"):
+        return {
+            "claim_id": claim_id,
+            "note_path": f"docs/{claim_id}.md",
+            "audit_status": "unaudited",
+            "previous_audits": [
+                {
+                    "audit_status": "audited_conditional",
+                    "claim_type": "bounded_theorem",
+                    "claim_scope": "A bounded claim.",
+                    "verdict_rationale": "The bridge remains unproved.",
+                    "notes_for_re_audit_if_any": (
+                        "missing_bridge_theorem: prove the bridge."
+                    ),
+                    "invalidation_reason": "science_changed:test",
+                    "archived_at": "2026-08-01T00:00:00+00:00",
+                }
+            ],
+        }
+
+    def test_canonical_archived_repair_field_drives_routing(self):
+        archived = {
+            "notes_for_re_audit_if_any": "missing_bridge_theorem: canonical",
+            "repair_target": "scope_too_broad: legacy fallback",
+        }
+        self.assertEqual(
+            sfl.archived_repair_target(archived),
+            "missing_bridge_theorem: canonical",
+        )
+
+        trailing_clean = self._conditional_row("claim_repaired")
+        trailing_clean["previous_audits"].append(
+            {
+                "audit_status": "audited_clean",
+                "verdict_rationale": "The bridge was repaired and rechecked.",
+            }
+        )
+        result = mock.Mock(
+            returncode=0,
+            stdout=self._archive_bytes(
+                [self._conditional_row(), trailing_clean]
+            ),
+            stderr=b"",
+        )
+        with mock.patch.object(sfl, "refresh_origin_main_for_handoff"), \
+             mock.patch.object(sfl.subprocess, "run", return_value=result):
+            rows = sfl.parse_archived_advisories()
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(
+            rows[0]["category"], "conditional_missing_bridge_theorem"
+        )
+        self.assertIn("prove the bridge", rows[0]["prompt_body"])
+        self.assertIn("VOID", rows[0]["prompt_body"])
+        self.assertIn("verify against CURRENT origin/main", rows[0]["prompt_body"])
+
+    def test_backlog_mirrors_archived_selector_and_missing_queue_state(self):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        root = Path(directory.name)
+        ledger_dir = root / "ledger"
+        shard_dir = ledger_dir / "aa"
+        shard_dir.mkdir(parents=True)
+        (shard_dir / "claim_x.json").write_text(
+            json.dumps(self._conditional_row()), encoding="utf-8"
+        )
+        out_path = root / "science_fix_backlog.json"
+
+        with mock.patch.object(backlog, "REPO_ROOT", root), \
+             mock.patch.object(backlog, "LEDGER_DIR", ledger_dir), \
+             mock.patch.object(backlog, "QUEUE_PATH", root / "audit_queue.json"), \
+             mock.patch.object(backlog, "OUT_PATH", out_path):
+            self.assertEqual(backlog.main(), 0)
+
+        payload = json.loads(out_path.read_text(encoding="utf-8"))
+        self.assertEqual(payload["archived_advisory"]["total"], 1)
+        self.assertEqual(
+            payload["archived_advisory"]["by_verdict"],
+            {"audited_conditional": 1},
+        )
+        self.assertEqual(
+            payload["archived_advisory"]["unmapped_category_records"], 0
+        )
+        self.assertEqual(payload["archived_advisory"]["incomplete_records"], 0)
+        self.assertFalse(payload["evidence_repair"]["queue_available"])
+        self.assertIsNone(payload["evidence_repair"]["total"])
 
 
 class CampaignRepairIntakeTest(unittest.TestCase):

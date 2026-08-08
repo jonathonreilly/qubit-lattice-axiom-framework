@@ -1,65 +1,83 @@
 #!/usr/bin/env python3
-"""Cycle 874: does COPY REDUNDANCY protect record CONTENT?
+"""Cycle 874: R-fold replication of a stipulated whole-state fingerprint
+into dead-wire slot groups -- BOUNDED SUPPORT CERTIFICATES ONLY.
 
-Campaign-5 continuation of the Cycle-867 composed record-write model (v3,
-sha-pinned below).  867 found: formation FIRING is robust (one-flip fires
-32/32 near and far) while record CONTENT is hypersensitive (content_equal
-0 in every direct-flip class), with the flip-and-restore class showing
-near 32/32 versus far 29/32 content preservation.
+Grade: bounded support (demoted on physics review, iteration 1,
+2026-08-08).  This runner certifies finite computations on a model built
+in this file over the landed, sha-pinned Cycle-719 kernel -- its ONLY
+computed input.  It does NOT establish a copy-redundancy no-go, a
+near/far locality effect, a framework-Record statement, or a
+sharding-protection theorem.  Earlier wordings of those four claims are
+retired.
 
-This cycle asks the reframed robust-formation question: is that content
-fragility a property of the SINGLE COPY -- in which case R-fold redundancy
-should rescue the majority readback and sharpen the near/far contrast --
-or a property of the FORMATION EVENT itself, in which case all copies
-corrupt together and R does nothing (a scoped negative that prices the
-copy-redundancy suspect out).
+What is stipulated in this file (model conventions, not framework
+content):
 
-The model.  867's register stored record EXISTENCE as single bits in
-structurally dead wires.  Here the register also stores record CONTENT:
-a CONTENT_BITS-wide word, derived from the lane's live payload projection
-at its formation edge, written bit-by-bit into R disjoint slot groups
-drawn from the same structurally-dead safe pool.  Content is therefore
-READ BACK FROM THE STATE, not from host metadata.  Two declared
-redundancy modes are built and measured:
+  content word -- the first CONTENT_BITS bits of SHA-256 over the packed
+      lane state with every register slot wire zeroed.  This is a
+      model-defined state fingerprint.  Whether it corresponds to
+      framework "record content" (one admissible local possibility) is
+      an OPEN bridge that this package does not supply.
+  decoder -- strict bitwise majority over the first r copies; an even-r
+      tie resolves to 0.
+  sides -- perturbation wires are drawn from two FIXED pools: bank0
+      (pack-state bank-0 payload wires) and bank1 (bank-1 payload
+      wires).  The sides are fixed bank labels, NOT distances from a
+      record: no record-location selector is defined in this package and
+      no bank-swap control was run, so no locality reading is available.
 
-  replicated -- the R copies hold the SAME word, written at the same
-                instant into disjoint slot groups (the mode the campaign
-                brief specifies: location redundancy only).
-  staggered  -- copy c holds the word sampled at the lane's (c+1)-th
-                global-clean edge (time redundancy: a genuinely second
-                channel, so the null is not true by construction).
+What the probes do and do not test (declared semantic scope): every
+perturbation changes the SOURCE state BEFORE any copy is formed, so all
+copies of a perturbed walk digest the same changed state (a common-mode
+probe).  For identical replicas majority([w]*r, r) = w for every r, so
+the emitted R-invariance of replicated-mode majority readback is forced
+by construction; it is reported as an exact identity, not as evidence
+about fault tolerance.  No stored copy slot is ever mutated, erased, or
+read under a fault after writing.  Untested routes, named: post-write
+faults on a proper subset of copy groups, erasure of selected copies,
+channel-local noise, error-detecting/erasure codes, and any decoder
+acting on a fixed message.
 
-A. A_REDUNDANT_CONTENT_REGISTER: derive the dead-wire safe pool as v3
-   does; allocate the existence register plus 2 x R_MAX x CONTENT_BITS
-   content slots; verify disjointness and structural inertness FOR ALL
-   COPIES; run the composed scan with real wire-mutating writes.
+Certificates:
+
+A. A_REDUNDANT_CONTENT_REGISTER: derive the structurally-dead safe pool;
+   allocate the existence register plus 2 x R_MAX x CONTENT_BITS content
+   slots; verify disjointness and structural inertness for all copies;
+   run the composed scan with real wire-mutating writes.
 B. B_CONTENT_READBACK: read every copy back out of the final state
    columns; per-R agreement census; readback-versus-host fidelity;
-   content diversity; scan-versus-probe content agreement.
-C. C_REDUNDANCY_UNDER_PERTURBATION: re-run v3's four declared
-   perturbation classes (one_flip, late_acting, untouched_in_chunk,
-   flip_and_restore) near/far by kernel pack-state bank membership, and
-   measure PER R in {1,2,3} and PER MODE: per-copy content survival,
-   majority-readback survival, and the restore-class near/far contrast.
-D. D_CONTROLS, including reproduction of the sha-pinned 867 numbers.
+   content diversity.
+C. C_REDUNDANCY_UNDER_PERTURBATION: the four declared perturbation
+   classes (one_flip, late_acting, untouched_in_chunk, flip_and_restore)
+   on the fixed bank0/bank1 wire pools; per R in {1,2,3} and per mode:
+   per-copy survival, majority-readback survival, and the flip-and-
+   restore firing/content decomposition between the two fixed banks.
+D. D_CONTROLS: source pins (Cycle-719 kernel only), seed/initial-state
+   integrity, determinism, runtime.
 
-Declared scope: B=2, the 852 census (748 lanes), horizon 16,384 orbits;
-dead-wire derivation window 512 orbits chunk-granular then 4,096
+Declared scope: B=2 banks, k=2..5 census (748 lanes), horizon 16,384
+orbits; dead-wire derivation window 512 orbits chunk-granular then 4,096
 orbit-granular; existence register cap 64 wire-visible ordinals per
 (tag, lane); content word 32 bits; R in {1,2,3}; staggered-copy walk cap
-64 boundaries; locality sample 32 early-formation lanes with first-clean
-boundary <= 1,100, up to 4 payload wires per side.  All caps disclosed in
-the emitted certificates.  Integrity gates are bookkeeping only: the
+64 boundaries; sample 32 early-formation lanes with first-clean boundary
+<= 1,100, up to 4 payload wires per side.  All caps disclosed in the
+emitted certificates.  Integrity gates are bookkeeping only: the
 R-dependence is reported as data whichever way it falls.
 
-bounded_theorem, authority none, audit unset.  Independent audit still
-required (companion checker spec'd to refute).
+Provenance context (non-load-bearing): the design descends from the
+unlanded Cycle-863/866/867 line.  Nothing from that line is read,
+pinned, imported, or gated on here; every needed definition is stipulated
+in this file over the landed kernel.
+
+claim_type bounded_theorem carried as a bounded support note; authority
+none; audit unset.  Independent audit still required (companion checker
+spec'd to refute).
 """
 from __future__ import annotations
 
 import ast
 from hashlib import sha1, sha256
-import importlib.abc
+from itertools import combinations
 import json
 from pathlib import Path
 import sys
@@ -69,49 +87,23 @@ AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
-    "scripts/frontier_cycle867_composed_record_write_2026_07_28.py",
 )
-IMPORTABLE_PATHS = AUDIT_INPUT_PATHS[:2]
-TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[2:]
-BLOCKLISTED_MODULES = tuple(Path(p).stem for p in TEXT_AST_ONLY_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-    AUDIT_INPUT_PATHS[1]:
-        "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
-    AUDIT_INPUT_PATHS[2]:
-        "49605f6d0730e224d6c4cd25a182ec49e0c7d2f2316851bc2755632dcbe2c828",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "871b9e986ca5e684ceadce25ff3e03164ef26c98",
-    AUDIT_INPUT_PATHS[2]: "5f923e8429373fa5afc71a417cd4e6f787ec71b8",
 }
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-
-class _PrimaryFirewall(importlib.abc.MetaPathFinder):
-    """The cited 867 primary is read as text/AST only, never imported."""
-
-    def __init__(self) -> None:
-        self.hits: list[str] = []
-
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.rsplit(".", 1)[-1] in BLOCKLISTED_MODULES:
-            self.hits.append(fullname)
-            raise ImportError(f"BLOCKLIST forbids primary import: {fullname}")
-        return None
-
-
-PRIMARY_FIREWALL = _PrimaryFirewall()
-sys.meta_path.insert(0, PRIMARY_FIREWALL)
-
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
-import frontier_cycle863_time_from_records_2026_07_28 as C863
 
 # ---- declared scope of this cycle (every cap is emitted below) ----------
+BANKS = 2
+KMIN = 2
+KMAX = 5
 HORIZON = 16_384
 DEAD_CHUNK_ORBITS = 512
 DEAD_ORBIT_ORBITS = 4_096
@@ -121,31 +113,14 @@ R_VALUES = (1, 2, 3)
 R_MAX = 3
 REDUNDANCY_MODES = ("replicated", "staggered")
 STAGGER_WALK_CAP = 64
-LOCALITY_SAMPLE = 32
-LOCALITY_BOUNDARY_CAP = 1_100
+SAMPLE_LANE_CAP = 32
+SAMPLE_BOUNDARY_CAP = 1_100
 PAYLOAD_WIRES_PER_SIDE = 4
 PERTURBATION_CLASSES = (
     "one_flip", "late_acting", "untouched_in_chunk", "flip_and_restore"
 )
+SIDES = ("bank0", "bank1")
 DETERMINISM_LANES = 4
-
-# Sha-pinned Cycle-867 v3 numbers, reproduced here as a control (never a
-# physics gate): the landed pool, the landed annotation match, and the
-# landed full-state locality cells (probes, fired, content_equal).
-LANDED_867 = {
-    "dead_wire_count": 5_668,
-    "safe_slot_pool": 5_270,
-    "moment_exact": 164,
-    "annotation_stamps": 164,
-    "composed_first_writes": 164,
-    "lanes_with_first_slot_bit": 748,
-    "locality_cells": {
-        "one_flip": {"near": (32, 32, 0), "far": (32, 32, 0)},
-        "late_acting": {"near": (13, 13, 0), "far": (25, 25, 0)},
-        "untouched_in_chunk": {"near": (19, 19, 0), "far": (15, 15, 0)},
-        "flip_and_restore": {"near": (32, 32, 32), "far": (32, 29, 29)},
-    },
-}
 
 
 def compact(v):
@@ -181,21 +156,174 @@ def source_controls():
             not Path(p).is_absolute() and (ROOT / p).is_file()
             for p in AUDIT_INPUT_PATHS
         ),
-        "text_ast_only": TEXT_AST_ONLY_PATHS,
-        "blocked_modules_loaded": tuple(
-            n for n in BLOCKLISTED_MODULES if n in sys.modules
+        "statement": (
+            "the only computed input is the landed Cycle-719 kernel; every"
+            " other definition used by this runner is stipulated in this"
+            " file"
         ),
-        "firewall_hits": tuple(PRIMARY_FIREWALL.hits),
     }
     result["pass"] = (
         result["literal_ok"]
         and result["existing_worktree_relative"]
         and sha_rows == EXPECTED_SHA256
         and blob_rows == EXPECTED_GIT_BLOBS
-        and not result["blocked_modules_loaded"]
-        and not result["firewall_hits"]
     )
     return result
+
+
+# ---- substrate, stipulated in-file over the landed kernel ---------------
+def lanes_of(mask):
+    out = []
+    while mask:
+        bit = mask & -mask
+        out.append(bit.bit_length() - 1)
+        mask ^= bit
+    return out
+
+
+def clean_mask(columns, indices, universe):
+    """Lanes whose every watched-dirty wire is zero (the clean edge)."""
+    dirty = 0
+    for w in indices:
+        dirty |= columns[w]
+    return universe & ~dirty
+
+
+def separated(positions, stations):
+    occ = set(positions)
+    return all((s + 1) % stations not in occ for s in occ)
+
+
+def build_census(program):
+    stations = len(program)
+    return tuple(sorted(
+        (k, event, pos)
+        for k in range(KMIN, KMAX + 1)
+        for pos in combinations(range(stations), k)
+        if separated(pos, stations)
+        for event in range(2 * BANKS)
+    ))
+
+
+def kernel_seeds(program, bank_count):
+    banks, links = K.B.chain_genesis(bank_count)
+    state = K.M.pack_state(banks, links)
+    allocator = K.M.global_allocator_word(bank_count)
+    stations = len(program)
+    seeds, failures = {}, 0
+    for event in range(2 * bank_count):
+        direction = (1, 0) if event % 2 == 0 else (0, 1)
+        before = K.M.prepare_endpoint(state, direction)
+        after, ra, rb, trace = K.run_orbit(before, program)
+        failures += int(not (
+            after == K.A.apply_semantic(before, allocator)
+            and ra == (1,) + (0,) * (stations - 1) and not any(rb)
+            and len(trace) == stations
+        ))
+        seeds[event] = before
+        state = after
+    return seeds, failures
+
+
+def watched_wires():
+    return (K.A.POINTER, K.A.U_TO_V, K.A.V_TO_U, K.A.DIRECTION_OK,
+            *K.A.FRESH, *K.A.ZERO_WORK, K.A.TOKEN_OK)
+
+
+def dirty_partition(bank_count):
+    """Row index sets: watched-per-bank, links, source pointer."""
+    banks, links = K.B.chain_genesis(bank_count)
+    zb = tuple(tuple(0 for _ in b) for b in banks)
+    zl = tuple(tuple(0 for _ in link) for link in links)
+    base = K.M.pack_state(zb, zl)
+    watched = set(watched_wires())
+    per_bank, bad = [], 0
+    for bi in range(bank_count):
+        w_rows = set()
+        for wire in range(len(zb[bi])):
+            ch = [list(b) for b in zb]
+            ch[bi][wire] = 1
+            marked = K.M.pack_state(tuple(tuple(b) for b in ch), zl)
+            d = [i for i, (l, r) in enumerate(zip(base, marked)) if l != r]
+            bad += int(len(d) != 1)
+            if wire in watched:
+                w_rows.add(d[0])
+        per_bank.append(tuple(sorted(w_rows)))
+    link_rows = set()
+    for li, link in enumerate(zl):
+        for wire in range(len(link)):
+            ch = [list(r) for r in zl]
+            ch[li][wire] = 1
+            marked = K.M.pack_state(zb, tuple(tuple(r) for r in ch))
+            d = [i for i, (l, r) in enumerate(zip(base, marked)) if l != r]
+            bad += int(len(d) != 1)
+            link_rows.add(d[0])
+    return {"per_bank": tuple(per_bank), "links": tuple(sorted(link_rows)),
+            "source": K.R3.X.SOURCE_POINTER, "marker_failures": bad}
+
+
+def masked_schedules(program, sim_keys):
+    stations = len(program)
+    macros = [K.mapped_macro(row) for row in program]
+    rows = []
+    for step in range(stations):
+        sched = []
+        for station in range(stations):
+            mask = sum(
+                1 << lane
+                for lane, (_k, _e, pos) in enumerate(sim_keys)
+                if (station - step) % stations in pos
+            )
+            if mask:
+                for g in macros[station]:
+                    if g.kind == "X":
+                        sched.append((0, g.wires[0], 0, 0, mask))
+                    elif g.kind == "CNOT":
+                        sched.append((1, g.wires[0], g.wires[1], 0, mask))
+                    else:
+                        sched.append(
+                            (2, g.wires[0], g.wires[1], g.wires[2], mask))
+        rows.append(tuple(sched))
+    return tuple(rows)
+
+
+def compile_chunks(schedules):
+    fns = []
+    for sched in schedules:
+        src = ["def step(c):"]
+        for kind, a, b, c3, mask in sched:
+            if kind == 0:
+                src.append(f" c[{a}] ^= {mask}")
+            elif kind == 1:
+                src.append(f" c[{b}] ^= c[{a}] & {mask}")
+            else:
+                src.append(f" c[{c3}] ^= c[{a}] & c[{b}] & {mask}")
+        ns: dict = {}
+        exec("\n".join(src), {"__builtins__": {}}, ns)
+        fns.append(ns["step"])
+    return tuple(fns)
+
+
+def initial_states(program, seeds, census):
+    stations = len(program)
+    states, failures = [], 0
+    for _k, event, pos in census:
+        after, ra, rb, _ = K.run_orbit(seeds[event], program,
+                                       token_positions=pos)
+        failures += int(ra != tuple(int(s in pos) for s in range(stations))
+                        or any(rb))
+        states.append(after)
+    return tuple(states), failures
+
+
+def pack_columns(states):
+    return [sum(s[w] << lane for lane, s in enumerate(states))
+            for w in range(len(states[0]))]
+
+
+def lane_state(columns, lane):
+    bit = 1 << lane
+    return tuple(int(bool(col & bit)) for col in columns)
 
 
 def true_step_chunks(program, positions):
@@ -248,17 +376,22 @@ def majority_word(words, r):
 def main() -> int:
     started = monotonic()
     controls = source_controls()
-    program, event_seeds, census = C863.derive_census()
+    program = K.interleaved_program(BANKS)
+    census = build_census(program)
     stations = len(program)
     n = len(census)
-    states, init_fail = C863.build_initial_states(program, event_seeds, census)
+    seeds, seed_fail = kernel_seeds(program, BANKS)
+    states, init_fail = initial_states(program, seeds, census)
     sim = census + (census[0],)
     dup = n
-    columns = C863.pack_lanes(states + (states[0],))
-    fast = C863.compile_fast(C863.masked_h_schedules(program, sim))
-    per_bank, links, source_ptr = C863.dirty_partition()
+    columns = pack_columns(states + (states[0],))
+    raw_schedules = masked_schedules(program, sim)
+    fast = compile_chunks(raw_schedules)
+    part = dirty_partition(BANKS)
+    per_bank = part["per_bank"]
     global_dirty = tuple(sorted(
-        set(per_bank[0]) | set(per_bank[1]) | set(links) | {source_ptr}
+        set(per_bank[0]) | set(per_bank[1]) | set(part["links"])
+        | {part["source"]}
     ))
     bank_dirty = (tuple(sorted(per_bank[0])), tuple(sorted(per_bank[1])))
     uni_all = (1 << n) - 1
@@ -281,7 +414,6 @@ def main() -> int:
     dead_wires = tuple(w for w in range(len(acc)) if (acc[w] & uni_sim) == 0)
     dead_set = set(dead_wires)
 
-    raw_schedules = C863.masked_h_schedules(program, sim)
     gate_inputs: set = set()
     gate_targets: set = set()
     for schedule in raw_schedules:
@@ -364,7 +496,7 @@ def main() -> int:
         ) & ((1 << CONTENT_BITS) - 1)
 
     # --- The composed scan: base dynamics + REAL existence and content ----
-    columns = C863.pack_lanes(states + (states[0],))
+    columns = pack_columns(states + (states[0],))
     register_counts = [0] * n
     bank_write_ordinal = [[0, 0] for _ in range(n)]
     write_once_violations = 0
@@ -398,17 +530,17 @@ def main() -> int:
         host_words[(mode, copy, lane)] = word
 
     prev_bank = [
-        C863.mask_over(columns, bank_dirty[b], uni_all) for b in (0, 1)
+        clean_mask(columns, bank_dirty[b], uni_all) for b in (0, 1)
     ]
     e1_first_composed: dict = {}
     stag_pending = 0
     stag_count = [0] * n
-    prev_global = C863.mask_over(columns, global_dirty, uni_sim)
+    prev_global = clean_mask(columns, global_dirty, uni_sim)
     mism = int(bool(prev_global & 1) != bool(prev_global & (1 << dup)))
-    for lane in C863.lanes_of(prev_global & uni_all):
+    for lane in lanes_of(prev_global & uni_all):
         e1_first_composed.setdefault(census[lane], 0)
         wire_write(("G", 0), lane)
-        word = content_word_of(C863.lane_state(columns, lane))
+        word = content_word_of(lane_state(columns, lane))
         for copy in range(R_MAX):
             content_write("replicated", copy, lane, word)
         content_write("staggered", 0, lane, word)
@@ -421,33 +553,33 @@ def main() -> int:
         for chunk in fast:
             chunk(columns)
             boundary += 1
-            g = C863.mask_over(columns, global_dirty, uni_sim)
+            g = clean_mask(columns, global_dirty, uni_sim)
             mism += int(bool(g & 1) != bool(g & (1 << dup)))
             ga = g & uni_all
             todo = ga & stag_pending
             if todo:
-                for lane in C863.lanes_of(todo):
+                for lane in lanes_of(todo):
                     copy = stag_count[lane]
                     content_write(
                         "staggered", copy, lane,
-                        content_word_of(C863.lane_state(columns, lane))
+                        content_word_of(lane_state(columns, lane))
                     )
                     stag_count[lane] = copy + 1
                     if copy + 1 >= R_MAX:
                         stag_pending &= ~(1 << lane)
-            for lane in C863.lanes_of(ga):
+            for lane in lanes_of(ga):
                 if census[lane] not in e1_first_composed:
                     e1_first_composed[census[lane]] = boundary
-                    word = content_word_of(C863.lane_state(columns, lane))
+                    word = content_word_of(lane_state(columns, lane))
                     for copy in range(R_MAX):
                         content_write("replicated", copy, lane, word)
                     content_write("staggered", 0, lane, word)
                     stag_count[lane] = 1
                     stag_pending |= 1 << lane
             for b in (0, 1):
-                bm = C863.mask_over(columns, bank_dirty[b], uni_all)
+                bm = clean_mask(columns, bank_dirty[b], uni_all)
                 edge = bm & ~prev_bank[b]
-                for lane in C863.lanes_of(edge):
+                for lane in lanes_of(edge):
                     ordinal = bank_write_ordinal[lane][b]
                     if ordinal < REGISTER_CAP:
                         wire_write((f"B{b}", ordinal), lane)
@@ -464,6 +596,8 @@ def main() -> int:
     cert_a = {
         "certificate": "A_REDUNDANT_CONTENT_REGISTER",
         "declared_scope": {
+            "banks": BANKS,
+            "census_k_range": (KMIN, KMAX),
             "horizon_orbits": HORIZON,
             "dead_window_chunk_granular_orbits": DEAD_CHUNK_ORBITS,
             "dead_window_orbit_granular_orbits": DEAD_ORBIT_ORBITS,
@@ -473,6 +607,12 @@ def main() -> int:
             "r_max": R_MAX,
             "redundancy_modes": REDUNDANCY_MODES,
         },
+        "content_word_convention": (
+            "the content word is a STIPULATED model fingerprint: the first"
+            " 32 bits of SHA-256 over the packed lane state with every"
+            " register slot wire zeroed; no framework record-content"
+            " identification is claimed (open bridge)"
+        ),
         "dead_wire_count": len(dead_wires),
         "safe_slot_pool": len(safe_slots_pool),
         "disjointness": disjointness,
@@ -486,10 +626,6 @@ def main() -> int:
             compact(key): bin(mask).count("1")
             for key, mask in sorted(written_lanes.items())
         },
-        "reproduces_landed_867_pool": (
-            len(dead_wires) == LANDED_867["dead_wire_count"]
-            and len(safe_slots_pool) == LANDED_867["safe_slot_pool"]
-        ),
     }
     cert_a["pass"] = (
         len(dead_wires) > 0
@@ -515,7 +651,7 @@ def main() -> int:
         )
 
     content_lanes = {
-        mode: sorted(C863.lanes_of(written_lanes[(mode, 0)]))
+        mode: sorted(lanes_of(written_lanes[(mode, 0)]))
         for mode in REDUNDANCY_MODES
     }
     readback_mismatches = 0
@@ -551,27 +687,19 @@ def main() -> int:
             }),
         }
 
-    old_h = C863.TRAJECTORY_HORIZON
-    C863.TRAJECTORY_HORIZON = HORIZON
-    try:
-        rep = C863.replay(program, event_seeds, census)
-    finally:
-        C863.TRAJECTORY_HORIZON = old_h
-    anno_e1 = rep["e1_moment"]
-    moment_exact = sum(
-        1 for key, b in e1_first_composed.items() if anno_e1.get(key) == b
-    )
     existence_lane_count = len(
-        set(C863.lanes_of(columns[exist_slot[("G", 0)]] & uni_all))
-        | set(C863.lanes_of(columns[exist_slot[("B0", 0)]] & uni_all))
-        | set(C863.lanes_of(columns[exist_slot[("B1", 0)]] & uni_all))
+        set(lanes_of(columns[exist_slot[("G", 0)]] & uni_all))
+        | set(lanes_of(columns[exist_slot[("B0", 0)]] & uni_all))
+        | set(lanes_of(columns[exist_slot[("B1", 0)]] & uni_all))
     )
     cert_b = {
         "certificate": "B_CONTENT_READBACK",
         "readback_source": (
-            "record CONTENT is reconstructed bit-by-bit from the final"
-            " state columns of the disjoint dead-wire slot groups; the"
-            " host word log is kept only to cross-check the readback"
+            "the stored content word (a stipulated model fingerprint, not"
+            " established framework record content) is reconstructed"
+            " bit-by-bit from the final state columns of the disjoint"
+            " dead-wire slot groups; the host word log is kept only to"
+            " cross-check the readback"
         ),
         "readback_host_mismatches": readback_mismatches,
         "content_words_written": len(host_words),
@@ -579,8 +707,6 @@ def main() -> int:
         "diversity": diversity,
         "existence_leg": {
             "composed_first_writes": len(e1_first_composed),
-            "annotation_stamps_at_horizon": len(anno_e1),
-            "moment_exact_matches": moment_exact,
             "lanes_with_any_first_slot_bit": existence_lane_count,
         },
         "tie_rule": (
@@ -602,7 +728,6 @@ def main() -> int:
     )
 
     # --- Certificate C: redundancy under the declared perturbations -------
-    seeds = dict(C863.derive_event_seeds(program))
     payload_pool = [
         w for w in range(len(columns))
         if w not in dead_set and w not in set(global_dirty)
@@ -646,7 +771,7 @@ def main() -> int:
 
     tally = {
         mode: {
-            str(r): {cls: {side: new_cell() for side in ("near", "far")}
+            str(r): {cls: {side: new_cell() for side in SIDES}
                      for cls in PERTURBATION_CLASSES}
             for r in R_VALUES
         }
@@ -654,7 +779,7 @@ def main() -> int:
     }
     full_state_tally = {
         cls: {side: {"probes": 0, "fired": 0, "content_equal": 0}
-              for side in ("near", "far")}
+              for side in SIDES}
         for cls in PERTURBATION_CLASSES
     }
     sampled = 0
@@ -665,12 +790,11 @@ def main() -> int:
     scan_probe_content_agree = 0
     scan_probe_content_checked = 0
     per_lane_determinism: list = []
+    key_index = {key: lane for lane, key in enumerate(census)}
     candidates = sorted(
-        (rep["stores"]["global"][lane][0], lane)
-        for lane, key in enumerate(census)
-        if rep["stores"]["global"][lane]
-        and 0 < rep["stores"]["global"][lane][0] <= LOCALITY_BOUNDARY_CAP
-    )[:LOCALITY_SAMPLE]
+        (b, key_index[key]) for key, b in e1_first_composed.items()
+        if 0 < b <= SAMPLE_BOUNDARY_CAP
+    )[:SAMPLE_LANE_CAP]
 
     for first, lane in candidates:
         key = census[lane]
@@ -703,13 +827,16 @@ def main() -> int:
             scan_probe_content_agree += int(
                 readback("replicated", 0, lane) == base_word
             )
-        rec_bank = 0 if all(base_after[w] == 0 for w in bank_dirty[0]) else 1
+        # Sides are FIXED perturbation banks.  (An earlier revision derived
+        # a "record bank" here, but its selector was tautological -- the
+        # accepted-candidate cleanliness condition forces bank 0 -- so no
+        # record-location labelling is available from this probe.)
         first_touch: dict = {}
         for idx, gate in enumerate(last_chunk):
             for w in gate.wires:
                 first_touch.setdefault(w, idx)
         lane_cells: list = []
-        for side, bank in (("near", rec_bank), ("far", 1 - rec_bank)):
+        for side, bank in (("bank0", 0), ("bank1", 1)):
             pool = bank_payload[bank]
             picks = {"one_flip": pool[0], "flip_and_restore": pool[0]}
             touched = [w for w in pool if w in first_touch]
@@ -813,31 +940,31 @@ def main() -> int:
             rows[str(r)] = {
                 "per_copy_survival": {
                     f"{cls}.{side}": copy_rate(mode, r, cls, side)
-                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                    for cls in PERTURBATION_CLASSES for side in SIDES
                 },
                 "majority_readback_survival": {
                     f"{cls}.{side}": rate(mode, r, cls, side, "majority_equal")
-                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                    for cls in PERTURBATION_CLASSES for side in SIDES
                 },
                 "majority_survival_given_fired": {
                     f"{cls}.{side}":
                         given_fired(mode, r, cls, side, "majority_equal")
-                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                    for cls in PERTURBATION_CLASSES for side in SIDES
                 },
                 "firing_rate": {
                     f"{cls}.{side}": rate(mode, r, cls, side, "fired")
-                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                    for cls in PERTURBATION_CLASSES for side in SIDES
                 },
-                "restore_near_far_contrast": (
+                "restore_bank0_minus_bank1": (
                     None
-                    if rate(mode, r, "flip_and_restore", "near",
+                    if rate(mode, r, "flip_and_restore", "bank0",
                             "majority_equal") is None
-                    or rate(mode, r, "flip_and_restore", "far",
+                    or rate(mode, r, "flip_and_restore", "bank1",
                             "majority_equal") is None
                     else round(
-                        rate(mode, r, "flip_and_restore", "near",
+                        rate(mode, r, "flip_and_restore", "bank0",
                              "majority_equal")
-                        - rate(mode, r, "flip_and_restore", "far",
+                        - rate(mode, r, "flip_and_restore", "bank1",
                                "majority_equal"), 6
                     )
                 ),
@@ -849,7 +976,7 @@ def main() -> int:
     for mode in REDUNDANCY_MODES:
         deltas = {}
         for cls in PERTURBATION_CLASSES:
-            for side in ("near", "far"):
+            for side in SIDES:
                 a = rate(mode, 1, cls, side, "majority_equal")
                 b = rate(mode, R_MAX, cls, side, "majority_equal")
                 deltas[f"{cls}.{side}"] = (
@@ -866,35 +993,37 @@ def main() -> int:
             "any_gain": bool(gains),
         }
     contrast_by_r = {
-        mode: {str(r): computed[mode][str(r)]["restore_near_far_contrast"]
+        mode: {str(r): computed[mode][str(r)]["restore_bank0_minus_bank1"]
                for r in R_VALUES}
         for mode in REDUNDANCY_MODES
     }
-    # Decompose the restore-class near/far contrast: is it a FIRING
-    # difference or a CONTENT difference?  Computed, not asserted.
+    # Decompose the restore-class fixed-bank gap: is it a FIRING
+    # difference or a CONTENT difference?  Computed, not asserted; this
+    # is bank-0-versus-bank-1 arithmetic on the declared sample, not a
+    # near/far locality statement.
     contrast_decomposition = {}
     for mode in REDUNDANCY_MODES:
         rows = {}
         for r in R_VALUES:
             fire = {
                 side: rate(mode, r, "flip_and_restore", side, "fired")
-                for side in ("near", "far")
+                for side in SIDES
             }
             cond = {
                 side: given_fired(mode, r, "flip_and_restore", side,
                                   "majority_equal")
-                for side in ("near", "far")
+                for side in SIDES
             }
             rows[str(r)] = {
                 "firing_rate": fire,
                 "majority_survival_given_fired": cond,
-                "firing_gap_near_minus_far": (
-                    None if fire["near"] is None or fire["far"] is None
-                    else round(fire["near"] - fire["far"], 6)
+                "firing_gap_bank0_minus_bank1": (
+                    None if fire["bank0"] is None or fire["bank1"] is None
+                    else round(fire["bank0"] - fire["bank1"], 6)
                 ),
-                "content_gap_given_fired_near_minus_far": (
-                    None if cond["near"] is None or cond["far"] is None
-                    else round(cond["near"] - cond["far"], 6)
+                "content_gap_given_fired_bank0_minus_bank1": (
+                    None if cond["bank0"] is None or cond["bank1"] is None
+                    else round(cond["bank0"] - cond["bank1"], 6)
                 ),
             }
         contrast_decomposition[mode] = rows
@@ -907,7 +1036,7 @@ def main() -> int:
             f"{len(dep['cells_changed_by_redundancy'])}/"
             f"{len(dep['majority_delta_R3_minus_R1'])} majority cells"
             f" ({len(dep['cells_improved_by_redundancy'])} improved);"
-            f" restore near-far contrast by R = "
+            f" restore bank0-minus-bank1 gap by R = "
             + ",".join(f"R{r}={contrast_by_r[mode][str(r)]}"
                        for r in R_VALUES)
         )
@@ -915,18 +1044,33 @@ def main() -> int:
         "certificate": "C_REDUNDANCY_UNDER_PERTURBATION",
         "declared_sample": {
             "lanes": sampled,
-            "boundary_cap": LOCALITY_BOUNDARY_CAP,
-            "lane_cap": LOCALITY_SAMPLE,
+            "boundary_cap": SAMPLE_BOUNDARY_CAP,
+            "lane_cap": SAMPLE_LANE_CAP,
             "wires_per_side": PAYLOAD_WIRES_PER_SIDE,
             "classes": PERTURBATION_CLASSES,
             "r_values": R_VALUES,
             "modes": REDUNDANCY_MODES,
+            "sides": SIDES,
             "stagger_walk_cap_boundaries": STAGGER_WALK_CAP,
             "base_not_clean_skips": base_not_clean,
             "degenerate_restore_skips": degenerate_restore_skips,
             "stagger_incomplete_base_lanes": stagger_incomplete_base,
             "stagger_incomplete_probes": stagger_incomplete_probe,
         },
+        "side_semantics": (
+            "sides are FIXED perturbation banks (bank0 = pack-state bank-0"
+            " payload wires, bank1 = bank-1 payload wires); they are NOT a"
+            " near/far record-locality contrast: no record-location"
+            " selector is defined in this package and no bank-swap control"
+            " was run"
+        ),
+        "probe_semantics": (
+            "every perturbation changes the SOURCE state before any copy"
+            " is formed (common-mode); no stored copy slot is faulted"
+            " after writing, so for identical replicas the majority"
+            " R-invariance is forced by construction and is reported as an"
+            " exact identity, not as fault-tolerance evidence"
+        ),
         "payload_derivation": {
             "pool_size": len(payload_pool),
             "bank_pool_sizes": [len(bank_payload[0]), len(bank_payload[1])],
@@ -936,20 +1080,21 @@ def main() -> int:
         "full_state_content_tally": full_state_tally,
         "computed_reading": computed,
         "r_dependence": r_dependence,
-        "restore_contrast_by_r": contrast_by_r,
-        "restore_contrast_decomposition": contrast_decomposition,
+        "restore_gap_by_r": contrast_by_r,
+        "restore_gap_decomposition": contrast_decomposition,
         "scan_probe_content_agreement":
             f"{scan_probe_content_agree}/{scan_probe_content_checked}",
         "finding": (
-            "the copy-redundancy question is answered by the computed"
-            " R-dependence, whichever way it falls -- "
+            "computed R-dependence of majority readback under the declared"
+            " common-mode probes (see probe_semantics; not a stored-copy"
+            " fault test) -- "
             + " | ".join(verdict_bits)
-            + " || restore-class decomposition at R=1: "
+            + " || restore-class decomposition at R=1, fixed banks: "
             + "; ".join(
                 f"{mode} firing_gap="
-                f"{contrast_decomposition[mode]['1']['firing_gap_near_minus_far']}"
+                f"{contrast_decomposition[mode]['1']['firing_gap_bank0_minus_bank1']}"
                 f" content_gap_given_fired="
-                f"{contrast_decomposition[mode]['1']['content_gap_given_fired_near_minus_far']}"
+                f"{contrast_decomposition[mode]['1']['content_gap_given_fired_bank0_minus_bank1']}"
                 for mode in REDUNDANCY_MODES
             )
         ),
@@ -961,14 +1106,15 @@ def main() -> int:
         and 0 <= cell["copy_survivals"] <= cell["fired"] * r
         for mode in REDUNDANCY_MODES for r in R_VALUES
         for cls in PERTURBATION_CLASSES
-        for cell in (tally[mode][str(r)][cls]["near"],
-                     tally[mode][str(r)][cls]["far"])
+        for cell in (tally[mode][str(r)][cls]["bank0"],
+                     tally[mode][str(r)][cls]["bank1"])
     )
     full_ok = all(
         0 <= cell["content_equal"] <= cell["fired"] <= cell["probes"]
         <= sampled
         for cls in PERTURBATION_CLASSES
-        for cell in (full_state_tally[cls]["near"], full_state_tally[cls]["far"])
+        for cell in (full_state_tally[cls]["bank0"],
+                     full_state_tally[cls]["bank1"])
     )
     # Integrity gates only -- bookkeeping consistency, never the outcome.
     cert_c["pass"] = (
@@ -982,27 +1128,6 @@ def main() -> int:
     )
 
     # --- Certificate D: controls -----------------------------------------
-    landed_cells = {
-        cls: {side: (full_state_tally[cls][side]["probes"],
-                     full_state_tally[cls][side]["fired"],
-                     full_state_tally[cls][side]["content_equal"])
-              for side in ("near", "far")}
-        for cls in PERTURBATION_CLASSES
-    }
-    reproduction = {
-        "pool": cert_a["reproduces_landed_867_pool"],
-        "annotation": (
-            moment_exact == LANDED_867["moment_exact"]
-            and len(anno_e1) == LANDED_867["annotation_stamps"]
-            and len(e1_first_composed) == LANDED_867["composed_first_writes"]
-            and existence_lane_count == LANDED_867["lanes_with_first_slot_bit"]
-        ),
-        "locality_cells": landed_cells == LANDED_867["locality_cells"],
-        "observed_locality_cells": landed_cells,
-    }
-    reproduction["pass"] = all(
-        reproduction[k] for k in ("pool", "annotation", "locality_cells")
-    )
     determinism = {
         "per_lane_probe_digests": per_lane_determinism,
         "slot_allocation_digest": digest(sorted(
@@ -1026,17 +1151,17 @@ def main() -> int:
     cert_d = {
         "certificate": "D_CONTROLS",
         "source_controls": controls,
+        "seed_failures": seed_fail,
         "initial_state_failures": init_fail,
+        "partition_marker_failures": part["marker_failures"],
         "duplicate_lane_mismatches": mism,
-        "replay_mismatches": rep["mismatches"],
-        "landed_867_reproduction": reproduction,
         "determinism": determinism,
         "runtime_seconds": runtime,
         "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
     }
     cert_d["pass"] = bool(
-        controls["pass"] and init_fail == 0 and mism == 0
-        and rep["mismatches"] == 0 and reproduction["pass"]
+        controls["pass"] and seed_fail == 0 and init_fail == 0
+        and part["marker_failures"] == 0 and mism == 0
         and determinism["pass"] and runtime < AUDIT_TIMEOUT_SEC
     )
 
@@ -1047,7 +1172,9 @@ def main() -> int:
         "D_CONTROLS": cert_d["pass"],
     }
     lines = ["CYCLE874_COPY_REDUNDANCY_CONTENT",
-             "CAMPAIGN5_CONTENT_ROBUSTNESS_NO_AXIOM_SURFACE_TOUCHED"]
+             "BOUNDED_SUPPORT_CERTIFICATES_ONLY_NO_AXIOM_SURFACE_TOUCHED",
+             "COMMON_MODE_PROBES_NO_STORED_COPY_FAULT_TESTED",
+             "SIDES_ARE_FIXED_BANKS_NOT_RECORD_LOCALITY"]
     for name, payload in (("A_REDUNDANT_CONTENT_REGISTER", cert_a),
                           ("B_CONTENT_READBACK", cert_b),
                           ("C_REDUNDANCY_UNDER_PERTURBATION", cert_c),
@@ -1057,21 +1184,26 @@ def main() -> int:
     summary = {
         "checks": checks, "cycle": 874,
         "r_values": R_VALUES, "modes": REDUNDANCY_MODES,
+        "semantic_scope": (
+            "common-mode probes on fixed bank sides; identical-replica"
+            " majority R-invariance is forced by construction; no"
+            " stored-copy fault, locality, or framework-record claim"
+        ),
         "redundancy_changes_majority_readback": {
             mode: r_dependence[mode]["any_change"] for mode in REDUNDANCY_MODES
         },
         "redundancy_improves_majority_readback": {
             mode: r_dependence[mode]["any_gain"] for mode in REDUNDANCY_MODES
         },
-        "restore_contrast_by_r": contrast_by_r,
-        "restore_contrast_is_firing_not_content": {
+        "restore_gap_by_r": contrast_by_r,
+        "restore_gap_decomposition_R1": {
             mode: {
                 "firing_gap_R1":
                     contrast_decomposition[mode]["1"][
-                        "firing_gap_near_minus_far"],
+                        "firing_gap_bank0_minus_bank1"],
                 "content_gap_given_fired_R1":
                     contrast_decomposition[mode]["1"][
-                        "content_gap_given_fired_near_minus_far"],
+                        "content_gap_given_fired_bank0_minus_bank1"],
             }
             for mode in REDUNDANCY_MODES
         },

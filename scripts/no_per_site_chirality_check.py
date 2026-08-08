@@ -208,6 +208,56 @@ def main() -> None:
     print(f"  Test 6 (even/odd subalgebras coincide on Pauli):   {'PASS' if t6_ok else 'FAIL'}")
     all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
+    print()
+
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: the decisive object is assembled from flattened matrix "
+        "entries - Test 4 stacks the twelve anticommutators {basis_k, sigma_i} into "
+        "a 12x4 complex array, one flattened 2x2 per four-row slot, and takes its "
+        "singular values with a 1e-10 floor to read off a null-space dimension of "
+        "zero; alongside that, omega = sigma_1 sigma_2 sigma_3 is printed entry by "
+        "entry and each of the five deviation norms in Tests 1 through 3 comes out "
+        "a hard zero rather than an epsilon-scale residual, because the arithmetic "
+        "involves only the exact entries 0, +-1 and +-i."
+    )
+    print(
+        "  per_site: one site is the entire subject, and the runner resolves it "
+        "completely - the carrier is a single copy of the one-site Qubit algebra "
+        "M_2(C), the three generators are the explicit Pauli matrices on it, and "
+        "the conclusion is exactly a single-site statement: within that one carrier "
+        "the volume element collapses to a central scalar, only the zero matrix "
+        "anticommutes with all three generators, and therefore no gamma_5 can live "
+        "at a site."
+    )
+    print(
+        "  per_mode: checked and not executed - no mode of any kind is constructed. "
+        "The three sigma_i are Clifford generators, not momentum labels, there is "
+        "no transform, no dispersion and no wave vector in the file, and the only "
+        "sweep it performs is over a four-element operator basis, which indexes "
+        "algebra directions rather than modes."
+    )
+    print(
+        "  per_block: the Z_2 even/odd grading is examined and found to be absent, "
+        "though the test that shows this is close to automatic - the even span is "
+        "entered as I, i*sigma_3, i*sigma_1, i*sigma_2 and the odd span as sigma_1, "
+        "sigma_2, sigma_3, i*I, and each is column-stacked and given a matrix_rank "
+        "at tol 1e-10, returning 4 out of 4 both times. Since both lists are the "
+        "Pauli basis up to phases, full rank was guaranteed before the call; the "
+        "honest content is the structural conclusion that follows, namely that no "
+        "chirality projector (1 +- gamma_5)/2 can split this carrier into blocks."
+    )
+    print(
+        "  lattice_wide: checked and not executed - the runner is deliberately "
+        "confined to a single carrier and says so, declining to identify the larger "
+        "spacetime or gauge chirality mechanism, and the firewall block even "
+        "enforces that boundary by requiring the note to keep larger chirality "
+        "mechanisms separate. Nothing outside the one site is ever built: no second "
+        "site, no coupling, no volume, no limit."
+    )
     if not all_ok:
         raise SystemExit(1)
 

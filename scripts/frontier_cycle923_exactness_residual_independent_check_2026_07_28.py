@@ -713,13 +713,18 @@ payload = {
     "role": "independent_checker", "runner": RUNNER_REL, "date_label": "2026-07-28",
     "claim_scope": "independent symbolic and high-precision refutation attempt against the cycle-923 exactness-residual primary (conditional algebra/rate content only)",
     "review_loop": {
-        "iteration": 1, "disposition": "FIX_THEN_PROCEED", "reviewer": "Sol", "date": "2026-08-08",
-        "fix_summary": ("Table C and the preimage-width law now fully re-derived at 60 dps; reciprocal-multiplier "
-                        "lemma stated with C^1 local-diffeomorphism hypotheses and verified symbolically (literal "
-                        "True removed); 'destroyed lanes' wording replaced by repelling-fixed-point language; "
-                        "prose-substring and hard-coded-boolean checks replaced by computed conditions or demoted to "
-                        "manual findings; tau-mass variant labels de-scoped to committed conventions (no external "
-                        "edition cited); block/campaign fields dropped from the receipt"),
+        "iteration": 2, "disposition": "FIX_THEN_PROCEED (iteration 1); confirmation fixes (iteration 2)",
+        "reviewer": "Sol", "date": "2026-08-08",
+        "fix_summary_iteration_1": (
+            "Table C and the preimage-width law now fully re-derived at 60 dps; reciprocal-multiplier "
+            "lemma stated with C^1 local-diffeomorphism hypotheses and verified symbolically (literal "
+            "True removed); 'destroyed lanes' wording replaced by repelling-fixed-point language; "
+            "prose-substring and hard-coded-boolean checks replaced by computed conditions or demoted to "
+            "manual findings; tau-mass variant labels de-scoped to committed conventions (no external "
+            "edition cited); block/campaign fields dropped from the receipt"),
+        "fix_summary_iteration_2": (
+            "re-pinned against the iteration-2 primary receipt (exact-closed-form priced field, "
+            "scientific-name-first headlines, and the T5 function-level comparator-isolation mutation test)"),
     },
     "independence_statement": (
         "This checker imports nothing from the primary. All algebra is sympy-symbolic and all window arithmetic is "

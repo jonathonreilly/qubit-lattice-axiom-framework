@@ -286,7 +286,7 @@
       {
         "discriminating_measurement": "Count record-formation events on the lane in the realized history. This is a countable feature of the state, not of the laws, so it is registration-side data rather than a derivation target.",
         "item": "N, the number of re-registration events in the lane's realized history.",
-        "what_it_would_decide": "Whether the g-branch has had enough steps (it needs N >= 17 to reach 3e-6 from the far end of the dial) and how severe the f-branch tuning is: |delta_0| = 3e-6 * 2^{-N}, i.e. 2.9e-9 at N=10, 2.7e-21 at N=50, 2.4e-36 at N=100."
+        "what_it_would_decide": "Whether the g-branch has had enough steps (it needs N >= 17 to reach 3e-6 from the far end of the dial) and how severe the f-branch tuning is: exactly |delta_0^+| = (1/2)[(1+6e-6)^(2^-N) - 1], i.e. 2.93e-9 at N=10, 2.66e-21 at N=50, 2.37e-36 at N=100 (the dyadic 3e-6 * 2^{-N} is the small-window LINEARIZATION of this closed form, accurate only to a relative 3e-6)."
       },
       {
         "discriminating_measurement": "The einselection / predictability-sieve question the sources already name: whether the commutant of the C3-invariant interaction Hamiltonian decoheres onto the singlet/doublet split or onto the 3 eigenmodes.",
@@ -574,8 +574,8 @@
       "id": "T4"
     },
     {
-      "description": "COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. This guards the payload route against a future edit that leaks comparator values into it; it is NOT a whole-runner dependency trace, and it covers only quantities routed through derived_payload",
-      "detail": "derived payload identical under the poisoned comparator",
+      "description": "COMPARATOR ISOLATION, FUNCTION-LEVEL MUTATION TEST: the real derived payload is bit-identical under a NaN-poisoned comparator, AND a deliberately leaky mutant builder (same payload plus one copied comparator field) DIFFERS under the same poisoning -- the poison-and-compare harness exercises the dependency route and would catch a real leak; scope: quantities routed through derived_payload",
+      "detail": "real payload identical=True; leaky mutant detected under poisoning=True",
       "fired": true,
       "id": "T5"
     },
@@ -1664,8 +1664,8 @@
       "section": "S6-teeth"
     },
     {
-      "detail": "derived payload identical under the poisoned comparator",
-      "name": "T5 FIRED: COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. This guards the payload route against a future edit that leaks comparator values into it; it is NOT a whole-runner dependency trace, and it covers only quantities routed through derived_payload",
+      "detail": "real payload identical=True; leaky mutant detected under poisoning=True",
+      "name": "T5 FIRED: COMPARATOR ISOLATION, FUNCTION-LEVEL MUTATION TEST: the real derived payload is bit-identical under a NaN-poisoned comparator, AND a deliberately leaky mutant builder (same payload plus one copied comparator field) DIFFERS under the same poisoning -- the poison-and-compare harness exercises the dependency route and would catch a real leak; scope: quantities routed through derived_payload",
       "ok": true,
       "section": "S6-teeth"
     },
@@ -1820,7 +1820,7 @@
       "section": "S8-priced"
     },
     {
-      "detail": "scanned 9526 chars against 7 verbs",
+      "detail": "scanned 9667 chars against 7 verbs",
       "name": "PRICE ONLY: no recommendation verb anywhere in the priced list",
       "ok": true,
       "section": "S8-priced"
@@ -2006,18 +2006,19 @@
         "sha256": "72d179f5bb08374a8a2b88ac7d3b11d581c75d94cba5bc141a8ff41c5d1ee60b"
       }
     },
-    "runner_sha256": "893b05b523d8af1aa072a91ac9855cfe5a15ca87a5170724210c09cabaa97f12"
+    "runner_sha256": "7023a18806445014fdacd0a393ac78677d0d3eb59b1747dbb44cc5871667e059"
   },
   "review_loop": {
     "date": "2026-08-08",
-    "disposition": "FIX_THEN_PROCEED",
-    "fix_summary": "exact preimage law replaces the dyadic 'exact halving' claim (dyadic form relabeled a linearization); Table C computed from the closed form with underflow documented; the broad arrow-universality no-go narrowed to the fixed-point alternation lemma and its lane-data consequence withdrawn; physical time-reversal reading demoted to an open bridge; measure 'contradiction' reworded to out-of-scope-premise; reciprocal-multiplier rule stated with C^1 diffeomorphism hypotheses; gradient systems relabeled as distinct metric choices; literal-True checks replaced or honestly scoped; retained-anchor grading removed (provenance-only citations); stale MINIMAL_AXIOMS pin removed from the input closure",
-    "iteration": 1,
+    "disposition": "FIX_THEN_PROCEED (iteration 1); confirmation fixes (iteration 2)",
+    "fix_summary_iteration_1": "exact preimage law replaces the dyadic 'exact halving' claim (dyadic form relabeled a linearization); Table C computed from the closed form with underflow documented; the broad arrow-universality no-go narrowed to the fixed-point alternation lemma and its lane-data consequence withdrawn; physical time-reversal reading demoted to an open bridge; measure 'contradiction' reworded to out-of-scope-premise; reciprocal-multiplier rule stated with C^1 diffeomorphism hypotheses; gradient systems relabeled as distinct metric choices; literal-True checks replaced or honestly scoped; retained-anchor grading removed (provenance-only citations); stale MINIMAL_AXIOMS pin removed from the input closure",
+    "fix_summary_iteration_2": "last unqualified '|delta_0| = 3e-6 * 2^-N' emitted field replaced by the exact closed form with the dyadic form labeled a linearization; the three code-label-led runner headlines now lead with scientific names (section/question codes demoted to trailing aliases); tooth T5 upgraded to a function-level mutation test (a deliberately leaky payload mutant must be caught by the poison-and-compare harness); candidate row added to the canonical harness index (unaudited) and the unresolved follow-ups routed through the active review queue",
+    "iteration": 2,
     "reviewer": "Sol"
   },
   "role": "primary",
   "runner": "scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
-  "runtime_sec": 0.305,
+  "runtime_sec": 0.519,
   "schema": "cycle923-exactness-residual-v1",
   "scorecard": {
     "fail": 0,

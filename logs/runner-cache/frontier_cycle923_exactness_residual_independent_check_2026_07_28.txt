@@ -1,25 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py
-runner_sha256: 8a9eefcab62b8707e90428d03d616e83580ba64e1f263f7e963ff21844dd6bf9
+runner_sha256: 105c0a96a82e127c5cb04f9430d41d710efe82b9fa75229f0c13e160b3f0d5b2
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.81
 status: ok
 ----- stdout -----
 
 --------------------------------------------------------------------------------------------
 K0 -- pins; the primary receipt is loaded as a CLAIM SOURCE only
 --------------------------------------------------------------------------------------------
-[PASS] [K0] pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json | sha256=93fe493d71422caa..
-[PASS] [K0] pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py | sha256=893b05b523d8af1a..
-[PASS] [K0] pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt | sha256=ec23e2adba7b8816..
+[PASS] [K0] pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json | sha256=6871a67f8887d2ba..
+[PASS] [K0] pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py | sha256=7023a18806445014..
+[PASS] [K0] pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt | sha256=c77fce9b45866367..
 [PASS] [K0] pin: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md | sha256=d95cdf68285242a8..
 [PASS] [K0] pin: docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md | sha256=5a72dfb482e8898e..
 [PASS] [K0] pin: docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md | sha256=32f4a0e27172c86f..
 [PASS] [K0] pin: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md | sha256=91b708236784a039..
 [PASS] [K0] pin: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md | sha256=755cfd4492443946..
 [PASS] [K0] pin: docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md | sha256=d352c069a5c8fa96..
-[PASS] [K0] primary receipt has a runtime-independent stable content digest (durable pin) | stable_sha256=0f71e73b9db6c8bfc98547bf863c8373994966d0b872458b9a970607c1abf747
+[PASS] [K0] primary receipt has a runtime-independent stable content digest (durable pin) | stable_sha256=54235adb19609d7c01ef5cd9d11c2d9ccf20f4b953243b2ecd56de2a3068b998
 [PASS] [K0] primary receipt parses and reports status=pass | status=pass
 [PASS] [K0] primary receipt declares its interpretation firewall
 
@@ -166,7 +166,7 @@ OVERALL VERDICT: The primary's Q1 reconciliation (functional-inverse reading) an
 
 receipt: outputs/exactness_residual_independent_check_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: ec9c787c7c7b5cd7d0b41495729a915f8262b581ce68ec0cf58e0e4723483840
-runtime_sec: 0.267
+runtime_sec: 0.404
 CYCLE923_INDEPENDENT_CHECK_PASS
 
 ----- stderr -----

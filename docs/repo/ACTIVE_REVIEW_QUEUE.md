@@ -27,6 +27,23 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-08-08-cycle923-exactness-residual-post-review-followups`
+  Scope: the exactness-residual distinguished-point geometry note
+  (`EXACTNESS_RESIDUAL_PRICED_ARROW_IS_LANE_DATA_CYCLE923_BOUNDED_THEOREM_NOTE_2026-07-28.md`)
+  and its primary/independent runner pair, after review-loop iterations 1-2
+  (FIX_THEN_PROCEED, Sol, 2026-08-08).
+  Finding: the conditional two-sector algebra/rate core and the narrow
+  fixed-point alternation lemma are bounded candidates (listed unaudited in
+  the canonical harness index). The formerly claimed broad arrow-universality
+  no-go and its lane-data consequence were withdrawn and must not be cited.
+  Still open: the physical-arrow / time-reversal bridge (support-only), the
+  lane-conditional operative-map sentence (priced, unadopted), the two-scale
+  and other-lane measurements, and the comparator-digit convention dependence
+  (cite the gate, not the digit). At landing the citation-graph manifest must
+  be regenerated and staged (the sole allowed generated audit-data change).
+  Disposition: `science-needed` for the open bridges; independent audit
+  required before any effective grade; no broad negative claim ships.
+
 - `2026-07-30-cycle734-supplied-position-and-guard-scope`
   Scope: the Cycle-734 externally positioned ring-11 logical pair template
   and its current Cycle-719/724/731 controller stack.

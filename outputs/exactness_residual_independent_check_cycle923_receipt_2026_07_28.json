@@ -14,19 +14,19 @@
   },
   "checks": [
     {
-      "detail": "sha256=93fe493d71422caa..",
+      "detail": "sha256=6871a67f8887d2ba..",
       "name": "pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json",
       "ok": true,
       "section": "K0"
     },
     {
-      "detail": "sha256=893b05b523d8af1a..",
+      "detail": "sha256=7023a18806445014..",
       "name": "pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
       "ok": true,
       "section": "K0"
     },
     {
-      "detail": "sha256=ec23e2adba7b8816..",
+      "detail": "sha256=c77fce9b45866367..",
       "name": "pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt",
       "ok": true,
       "section": "K0"
@@ -68,7 +68,7 @@
       "section": "K0"
     },
     {
-      "detail": "stable_sha256=0f71e73b9db6c8bfc98547bf863c8373994966d0b872458b9a970607c1abf747",
+      "detail": "stable_sha256=54235adb19609d7c01ef5cd9d11c2d9ccf20f4b953243b2ecd56de2a3068b998",
       "name": "primary receipt has a runtime-independent stable content digest (durable pin)",
       "ok": true,
       "section": "K0"
@@ -713,38 +713,39 @@
         "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
       },
       "logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt": {
-        "bytes": 41308,
-        "git_blob_sha1": "70de8a862bcdda169de687c70b0ab01d884e85ff",
+        "bytes": 41480,
+        "git_blob_sha1": "c40997bc9ed2801a935202b35b4f8215de621626",
         "present": true,
-        "sha256": "ec23e2adba7b8816e95385676d29f6d25787c371acae7d3f908c9ff69e3ed031"
+        "sha256": "c77fce9b4586636754660f1363f03c47a3e69b362bd79a33919af83097c70b96"
       },
       "outputs/exactness_residual_cycle923_receipt_2026_07_28.json": {
-        "bytes": 99578,
-        "git_blob_sha1": "026dc29bcc72a63070bca588ee6ede2b626455a3",
+        "bytes": 100365,
+        "git_blob_sha1": "9d0b6f841eebe7a4936e0feb819864c58202e2ad",
         "present": true,
-        "sha256": "93fe493d71422caa9ab328908baa4f5cfd9d88787ffa9937d90b6aefd96263d3"
+        "sha256": "6871a67f8887d2ba729c53b0ec46bc1f1cdfcde7d6f23c1a5770368dd5cc7637"
       },
       "scripts/frontier_cycle923_exactness_residual_2026_07_28.py": {
-        "bytes": 89273,
-        "git_blob_sha1": "99f2dc4421e3572cd028e5f99349e383f52c2965",
+        "bytes": 91102,
+        "git_blob_sha1": "08bf82ce7f40d1689732b39314c17a54ff6e4efd",
         "present": true,
-        "sha256": "893b05b523d8af1aa072a91ac9855cfe5a15ca87a5170724210c09cabaa97f12"
+        "sha256": "7023a18806445014fdacd0a393ac78677d0d3eb59b1747dbb44cc5871667e059"
       }
     },
-    "primary_receipt_sha256": "93fe493d71422caa9ab328908baa4f5cfd9d88787ffa9937d90b6aefd96263d3",
-    "primary_receipt_stable_sha256_runtime_excluded": "0f71e73b9db6c8bfc98547bf863c8373994966d0b872458b9a970607c1abf747",
-    "runner_sha256": "8a9eefcab62b8707e90428d03d616e83580ba64e1f263f7e963ff21844dd6bf9"
+    "primary_receipt_sha256": "6871a67f8887d2ba729c53b0ec46bc1f1cdfcde7d6f23c1a5770368dd5cc7637",
+    "primary_receipt_stable_sha256_runtime_excluded": "54235adb19609d7c01ef5cd9d11c2d9ccf20f4b953243b2ecd56de2a3068b998",
+    "runner_sha256": "105c0a96a82e127c5cb04f9430d41d710efe82b9fa75229f0c13e160b3f0d5b2"
   },
   "review_loop": {
     "date": "2026-08-08",
-    "disposition": "FIX_THEN_PROCEED",
-    "fix_summary": "Table C and the preimage-width law now fully re-derived at 60 dps; reciprocal-multiplier lemma stated with C^1 local-diffeomorphism hypotheses and verified symbolically (literal True removed); 'destroyed lanes' wording replaced by repelling-fixed-point language; prose-substring and hard-coded-boolean checks replaced by computed conditions or demoted to manual findings; tau-mass variant labels de-scoped to committed conventions (no external edition cited); block/campaign fields dropped from the receipt",
-    "iteration": 1,
+    "disposition": "FIX_THEN_PROCEED (iteration 1); confirmation fixes (iteration 2)",
+    "fix_summary_iteration_1": "Table C and the preimage-width law now fully re-derived at 60 dps; reciprocal-multiplier lemma stated with C^1 local-diffeomorphism hypotheses and verified symbolically (literal True removed); 'destroyed lanes' wording replaced by repelling-fixed-point language; prose-substring and hard-coded-boolean checks replaced by computed conditions or demoted to manual findings; tau-mass variant labels de-scoped to committed conventions (no external edition cited); block/campaign fields dropped from the receipt",
+    "fix_summary_iteration_2": "re-pinned against the iteration-2 primary receipt (exact-closed-form priced field, scientific-name-first headlines, and the T5 function-level comparator-isolation mutation test)",
+    "iteration": 2,
     "reviewer": "Sol"
   },
   "role": "independent_checker",
   "runner": "scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py",
-  "runtime_sec": 0.267,
+  "runtime_sec": 0.404,
   "schema": "cycle923-exactness-residual-independent-check-v1",
   "scorecard": {
     "fail": 0,

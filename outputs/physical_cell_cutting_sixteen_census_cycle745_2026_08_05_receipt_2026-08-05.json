@@ -1,0 +1,61 @@
+{
+ "cycle": 745,
+ "failures": 0,
+ "gates": 35,
+ "headline": "The sixteen-piece carriers of the six charge readings are completely enumerated. The four reading carries exactly 132 sixteen-piece sets, recovered as the group images of an 11-member anchored slice and re-verified one by one against the incidence columns; the other five charges carry none, and with odd sizes barred by parity their least open size rises to eighteen. The census folds into 15 orbits under the 48 cutting symmetries and into 6 orbits under the full group of order 384.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "anchored_search": {
+   "anchored_cells_with_a_last_quarter_piece": 204,
+   "control_splits_at_twelve": 371,
+   "licensed_cells_at_sixteen": 285,
+   "live_readings": 11,
+   "splits_at_sixteen": 2004
+  },
+  "census_of_the_four_reading": {
+   "anchored_slice_sets": 11,
+   "census_sets": 132,
+   "plant_set_counts": [
+    2,
+    6,
+    12,
+    1,
+    3
+   ],
+   "planted_controls_found": 5,
+   "sets_per_anchored_set": 12
+  },
+  "folds": {
+   "orbit_sizes_under_the_48": {
+    "size_12": 4,
+    "size_24": 1,
+    "size_6": 10
+   },
+   "orbit_sizes_under_the_full_group": {
+    "size_12": 3,
+    "size_24": 2,
+    "size_48": 1
+   },
+   "orbits_under_the_48": 15,
+   "orbits_under_the_full_group": 6
+  },
+  "other_charges": {
+   "charges_empty_at_sixteen": 5,
+   "next_open_size": "eighteen"
+  },
+  "rebuilt_system": {
+   "cutting_symmetries": 48,
+   "cutting_width": 24,
+   "distinct_cuttings": 15800,
+   "pieces": 192,
+   "readings": 8,
+   "uses_per_piece": 1975
+  },
+  "the_group": {
+   "anchor_orbit_pieces": 192,
+   "order": 384
+  }
+ }
+}

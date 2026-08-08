@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The W-response route closes the source-normalization half of t
 Scope: Exact support at tree level on the existing one-Higgs gauge-mass and Yukawa-selection surfaces; the required rows are absent.
 Escape conditions (negative claims): Three named sufficient supplements, each of which is separately gated (idx 2352, 2171, 2379).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The W/Z response route's positive form (per the chain map: the surviving conditional theorem of the gauge-normalized cluster).
 
@@ -32,7 +34,8 @@ The W/Z response route's positive form (per the chain map: the surviving conditi
 - Source commit: `6e695ce8bc2d388c1d229a46183bddbfd87b6c63`
 - git blob: `8d288380581d32aea80782e2b161b428fbdb5085`
 - sha256: `36ded4d85f7404b3bd424f55d60f2a3fb183413a0f943dc11388631f689ecdbb`
-- Lines: 54; runners named: scripts/frontier_yt_same_source_w_response_decomposition_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2393_YT_SAME_SOURCE_W_RESPONSE_DECOMPOSITION_THEOREM_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2393_YT_SAME_SOURCE_W_RESPONSE_DECOMPOSITION_THEOREM_NOTE_2026-05-04.md)
+- Lines: 54; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_same_source_w_response_decomposition_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

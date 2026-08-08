@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — LATTICE axiom's 6-NN adjacency and proper cubic rotations from MINIMAL_AXIOMS_2026-06-29 define the admissible set
 
@@ -22,7 +22,9 @@ Original verdict: The scale-free ceiling closes the refinement escape without en
 Scope: The affine-flatness result is scale-free and vertex-free; every subsequent cost statement is over corner vertex sets of a specified cell; the 96 floor is over unimodular corner dissections only; clique numbers 8 and 16 are maxima over the corner census only; the refined measurement is at one refinement step with no sequence, limit, or asymptotic claim; nothing here concerns the second-variation form, its spectrum, or any continuum quantity.
 Escape conditions (negative claims): The negative (no adjacency-only nondegenerate simplex) is escape-proof by construction — scale-free, vertex-free, box-free — which is precisely its point against the refinement escape the previous cycle left open. The refined region floor 80 exceeds the coarse floor 56 but sits BELOW the achieved coarse count 108, so nothing shows a finer construction must cost more; the note states this against interest.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Scale-free ceiling: adjacency-only vertex sets are affinely flat (escape-proof by construction) — closes the refinement escape without enumeration.
 
@@ -32,7 +34,8 @@ Scale-free ceiling: adjacency-only vertex sets are affinely flat (escape-proof b
 - Source commit: `c28a1e42f7441f98ceced0c41f348ebf15ef3dd2`
 - git blob: `fe63c75ccbb684c60e6553c7bb00f9b66006cbaf`
 - sha256: `18d228717a4ccf0bb9d3a3ac0d240b47e53d9f4de3d1794ef21354aa6e10ecab`
-- Lines: 216; runners named: scripts/physical_scale_free_adjacency_dissection_bracket_cycle724_2026_08_03.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3104_PHYSICAL_SCALE_FREE_ADJACENCY_DISSECTION_BRACKET_CYCLE724_NOTE_2026-08-03.md](../../archive_unlanded/historic_intake_originals/recovery/3104_PHYSICAL_SCALE_FREE_ADJACENCY_DISSECTION_BRACKET_CYCLE724_NOTE_2026-08-03.md)
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/physical_scale_free_adjacency_dissection_bracket_cycle724_2026_08_03(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records a caught error: an earlier reading of this graph took clique candidates 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

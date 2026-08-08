@@ -1,9 +1,11 @@
 # Historic intake: G1 Physicist-G: Microscopic Axiom-Level Silence Theorem on (delta, q_+)
 
+Explicit subject: Going below the reduced chart to the Cl(3)/Z^3 lattice axiom itself: T_q is exactly Z_3-invariant (= J - I_3), T_delta is purely doublet, T_m has both, and the affine chart is NOT preserved under conjugation by any retained microscopic symmetry - so the retained microscopic ... (The bare code `G1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: The microscopic Cl(3)/Z^3 axiom is GENUINELY SILENT on (delta,
 Scope: Retained/theorem-grade atlas input only, with no post-axiom inventions in the theorem hypotheses.
 Escape conditions (negative claims): The missing ingredient is identified precisely as a NONLOCAL selector principle - variational, information-geometric, transport-consistency, or effective-action matching - beyond the retained Cl(3)/Z^3 axiom; the silence is about local microscopic polynomials, not about all possible selectors.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The microscopic verdict: the Cl(3)/Z^3 axiom is GENUINELY SILENT on (delta, q_+) — the gauge-DOF reading legitimized; the missing ingredient named as a NONLOCAL selector.
 
@@ -32,7 +36,8 @@ The microscopic verdict: the Cl(3)/Z^3 axiom is GENUINELY SILENT on (delta, q_+)
 - Source commit: `92ae653862c1fdfb3b0316a721aedd8a2ef90578`
 - git blob: `ae6fba39b3528c8538e577bf1bf3cf1c1f0f9fbf`
 - sha256: `c9e9c304cf0d6755975c5088abb3ffa02dc687e67843f9ccc75706a7adc57ba7`
-- Lines: 352; runners named: scripts/frontier_g1_physicist_g_microscopic_axiom_level.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/532_G1_PHYSICIST_G_MICROSCOPIC_AXIOM_LEVEL_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch02/532_G1_PHYSICIST_G_MICROSCOPIC_AXIOM_LEVEL_NOTE_2026-04-17.md)
+- Lines: 352; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_g_microscopic_axiom_level(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Carries an explicit do-NOT-use instruction for publication-grade positive quanti
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

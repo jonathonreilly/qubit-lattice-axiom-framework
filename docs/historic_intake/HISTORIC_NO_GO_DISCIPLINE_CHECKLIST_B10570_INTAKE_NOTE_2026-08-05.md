@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: PASS for the narrow claim that the minimal-axiom plus retained
 Scope: Per supplied cyclic matrix; lattice-wide dynamics, record formation, physical species construction, and all possible future readouts are explicitly outside scope.
 Escape conditions (negative claims): Three positive paths, none requiring a new axiom: derive full SO(2) readout invariance, derive naturality under the full orthogonal automorphism group of the real C3 module, or derive exact quadratic physical grammar plus all-higher-order decoupling. The steelman (the actual observable may be exactly first-live and second order, whereupon real Schur theory forces radial dependence) is preserved as the next positive target.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Six distinct attacks fail to force the kappa selection from the minimal-axiom + retained cyclic-compression surface (the unreduced determinant route gives kappa=1); three positive paths named, none requiring a new axiom. Adjudication-set member.
 
@@ -32,6 +34,7 @@ Six distinct attacks fail to force the kappa selection from the minimal-axiom + 
 - Source commit: `e339004245d0e6c6a07a34f3a0ff1c7aa0bc6897`
 - git blob: `026a37c0e988d4d258433bc80fd0cbb21060d98a`
 - sha256: `3c8e51c5c9d87e360ffeaffa3842b6623f9888436a7e77fc9c9396cd00798a8e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10570_NO_GO_DISCIPLINE_CHECKLIST.md](../../archive_unlanded/historic_intake_originals/packsci02/10570_NO_GO_DISCIPLINE_CHECKLIST.md)
 - Lines: 85; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Six distinct attacks fail to force the kappa selection from the minimal-axiom + 
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Six distinct attacks fail to force the kappa selection from the minimal-axiom + retained cyclic-compression surface (the unreduced determinant route gives kappa=1); three positive paths named, none requiring a new axiom. Adjudication-set member.
+- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Six distinct attacks fail to force the kappa selection from the minimal-axiom + retained cyclic-compression surface (the unreduced determinant route gives kappa=1); three positive paths named, none requiring a new axiom. Adjudication-set member.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ The unreduced determinant route gives kappa = 1, not the kappa = 2 the r = 1/2 s
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

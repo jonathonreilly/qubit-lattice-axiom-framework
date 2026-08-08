@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Hold off main - a useful frontier control, not a mainline emer
 Scope: Audit of one commit and script; the model is a 1D toy, not the repo's primary staggered/open-cubic architecture, and there is no frozen/static-source control.
 Escape conditions (negative claims): Three named requirements for promotion: use a source-only kernel or self-consistent field update where the mass product is not pre-encoded; add a frozen/static-source control; and replay the observable on the primary staggered/open-cubic surface (or justify the 1D lane).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Circularity identification: the M1*M2 product law responds to a hard-coded bilinear kernel — promotion requirements named; integrity result.
 
@@ -32,7 +34,8 @@ Circularity identification: the M1*M2 product law responds to a hard-coded bilin
 - Source commit: `2636abd8f737971f487693030f8d611230380048`
 - git blob: `6187ba00f4e32b5f56d8e8c2895a868c639dbfe8`
 - sha256: `6a699fa6d14eac6c31f1c0037d72171e8db9c25b2020df90f525217c04d5bde4`
-- Lines: 73; runners named: scripts/exact_two_particle_product_law.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/453_EXACT_TWO_PARTICLE_PRODUCT_LAW_FRONTIER_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch02/453_EXACT_TWO_PARTICLE_PRODUCT_LAW_FRONTIER_NOTE_2026-04-11.md)
+- Lines: 73; runners named: historic runner (unpinned, not in this packet): `scripts/exact_two_particle_product_law(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Identifies a circularity in a sibling lane's headline claim (the product law is 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

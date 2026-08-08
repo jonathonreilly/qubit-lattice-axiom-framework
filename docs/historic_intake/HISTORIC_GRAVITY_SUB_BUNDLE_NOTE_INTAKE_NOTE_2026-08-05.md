@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: An honest accounting of what is exact, what is a corollary, wh
 Scope: Assumptions are named A1-A4 (framework axiom, self-consistency, locality, attraction) and inherited explicitly down the tiers.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The four-tier gravity accounting keyed to consumed assumptions — the lane's honest constitution, grading Poisson BOUNDED against 649's closure claim.
 
@@ -32,7 +34,8 @@ The four-tier gravity accounting keyed to consumed assumptions — the lane's ho
 - Source commit: `0b011c7821ce1dd25f17694750d85a0d310c184f`
 - git blob: `6c63f48a3260b56985102848e94b5503fbdf8418`
 - sha256: `a4e980dbd2bbf0b9b06489e1411ee91d82c271ca8638a3eb2d3f3905bc68d91f`
-- Lines: 410; runners named: scripts/frontier_gravity_sub_bundle.py, scripts/frontier_self_consistent_field_equation.py, scripts/frontier_poisson_exhaustive_uniqueness.py, scripts/frontier_distance_law_definitive.py, scripts/frontier_dimension_selection.py, scripts/frontier_bound_state_selection.py, scripts/frontier_emergent_product_law.py, scripts/frontier_geodesic_equation.py, scripts/frontier_emergent_gr_signatures.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/652_GRAVITY_SUB_BUNDLE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/652_GRAVITY_SUB_BUNDLE_NOTE.md)
+- Lines: 410; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gravity_sub_bundle(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_poisson_exhaustive_uniqueness(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_definitive(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dimension_selection(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_bound_state_selection(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_emergent_product_law(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_emergent_gr_signatures(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ Grades the Poisson step BOUNDED (numerical evidence, not closed proof), directly
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

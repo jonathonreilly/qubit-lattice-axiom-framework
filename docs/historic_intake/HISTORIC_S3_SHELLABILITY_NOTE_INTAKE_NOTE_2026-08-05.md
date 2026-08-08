@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: EXACT: a constructive Perelman-free proof that the compactific
 Scope: M_R = B_R cup cone(dB_R) for all R >= 2; computational verification at R = 2..5, general R by structural induction.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The constructive TERMINAL: deterministic two-phase shelling verified R=2..5 — a Perelman-free S^3 proof for computed radii, with the general-R caveat honest.
 
@@ -32,7 +34,8 @@ The constructive TERMINAL: deterministic two-phase shelling verified R=2..5 — 
 - Source commit: `5dbc5dfa20026e7fe7d1a140305e31c54fef8baf`
 - git blob: `7b2330cb6239f9fb64f0a60cf538cf6e4e4e63a5`
 - sha256: `e501dcf834eca62171b288bc952987b4fd3ce525bf6a8d53f2f7d69ba2176901`
-- Lines: 86; runners named: scripts/frontier_s3_shellability.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1874_S3_SHELLABILITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1874_S3_SHELLABILITY_NOTE.md)
+- Lines: 86; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_shellability(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -67,6 +70,7 @@ General-R claim rests on a structural argument, not machine verification beyond 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

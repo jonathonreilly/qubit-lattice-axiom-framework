@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The gate has exactly one import — selecting the transpositio
 Scope: Grounding characterization only: sets no audit verdict, proposes no axiom or admission, derives no Koide value; runner PART_A=PASS PART_B=PASS.
 Escape conditions (negative claims): Two hatches are recorded OPEN: the transposition-broken operator (which is the import) and a native chiral mass operator from the staggered-Dirac realization gate.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The chirality gate's terminal characterization: exactly ONE import (the C_3-breaking transposition tau), every other hatch exact-closed against the committed ledger, two hatches recorded OPEN.
 
@@ -32,7 +34,8 @@ The chirality gate's terminal characterization: exactly ONE import (the C_3-brea
 - Source commit: `27b9bc8abcfccfeee34e102edce1c9f2b95eb6ee`
 - git blob: `d5e2caa1ab186dc7ab98d3a165035ba1da76c63e`
 - sha256: `bf91ff7be50e544c8b1e69635a408448367454cbb13b4e7e5b930b3c5d871f37`
-- Lines: 116; runners named: scripts/audit_companion_chirality_gate_import_characterization_2026_06_05.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/147_CHIRALITY_GATE_IMPORT_CHARACTERIZATION_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch01/147_CHIRALITY_GATE_IMPORT_CHARACTERIZATION_2026-06-05.md)
+- Lines: 116; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_chirality_gate_import_characterization_2026_06_05(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

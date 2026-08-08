@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Structural framework derived, quantitative predictions estimat
 Scope: Quantitative predictions depend on three estimated/fitted inputs: the Planck-scale gauge coupling, taste splitting ratios, and the CP phase.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The surviving radiative CKM mechanism after the Z_3-charge route's death: democratic rank-1 tree matrix + 1-loop taste-dependent corrections — the era's mechanistic terminal for CKM origin.
 
@@ -32,7 +34,8 @@ The surviving radiative CKM mechanism after the Z_3-charge route's death: democr
 - Source commit: `3a97ccc6baa3450da5847425d60a66e69e879d44`
 - git blob: `2306c491ae75d613590c715dfe900755fd16e06c`
 - sha256: `4ce3a77c77bad5b7563c3963f707de813e89815295fae0354e5fe5edd19141cd`
-- Lines: 172; runners named: frontier_ckm_higgs_from_vev.py, scripts/frontier_ckm_higgs_from_vev.py, scripts/frontier_ckm_radiative.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/217_CKM_RADIATIVE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/217_CKM_RADIATIVE_NOTE.md)
+- Lines: 172; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_vev(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_higgs_from_vev(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_radiative(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

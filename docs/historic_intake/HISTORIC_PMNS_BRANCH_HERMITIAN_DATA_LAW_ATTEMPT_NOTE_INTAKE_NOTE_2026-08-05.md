@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_obstruction_theorem_for_the_branch_hermitian_data_law
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No positive axiom-side derivation - the minimal missing bridge
 Scope: Current retained atlas/axiom bank; aligned and generic full-rank points coexist on the same canonical support class with different breaking triplets.
 Escape conditions (negative claims): Escaped by a single axiom-side bridge producing H_core and B(delta,rho,gamma) as an exact package, plus the residual seed-edge selector on the canonical (0,1) pair.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Hermitian-branch consolidation: the global law is an exact 2+2+3 package with the minimal missing bridge named — the PMNS family's structural spine.
 
@@ -32,7 +34,8 @@ The Hermitian-branch consolidation: the global law is an exact 2+2+3 package wit
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `1b6f217a502daa374044c5403e38212ff10ffb1a`
 - sha256: `e1c152c42b23215153290830b01eb2e4e815dd169d834062a13baafde7e53097`
-- Lines: 176; runners named: scripts/frontier_pmns_branch_hermitian_data_law_attempt.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1516_PMNS_BRANCH_HERMITIAN_DATA_LAW_ATTEMPT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1516_PMNS_BRANCH_HERMITIAN_DATA_LAW_ATTEMPT_NOTE.md)
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_branch_hermitian_data_law_attempt(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_obstruction_theorem_for_the_branch_hermitian_data_law
 intake_directive: owner_2026-08-05
 ```
 

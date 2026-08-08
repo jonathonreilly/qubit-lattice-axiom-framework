@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_positive_seed_patch_value_law
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The seed patch is positively closed at the D level - the only 
 Scope: Aligned weak-axis seed patch only; does not derive the generic off-seed channel coefficients.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The one positive value law: the weak-axis seed patch closes exactly at the D level — the family's positive island.
 
@@ -32,7 +34,8 @@ The one positive value law: the weak-axis seed patch closes exactly at the D lev
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `c973b55cc2619c7279a5d087b73a8d3ba2f19cd6`
 - sha256: `d39479db02e0bb47b596b08355317cd4fa629b1f8bc6feafed6a5cba1df62a94`
-- Lines: 55; runners named: scripts/frontier_pmns_microscopic_delta_d_seed_law.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1557_PMNS_MICROSCOPIC_DELTA_D_SEED_LAW_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1557_PMNS_MICROSCOPIC_DELTA_D_SEED_LAW_NOTE.md)
+- Lines: 55; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_microscopic_delta_d_seed_law(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_positive_seed_patch_value_law
 intake_directive: owner_2026-08-05
 ```
 

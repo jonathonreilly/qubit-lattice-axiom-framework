@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: 294 transitive descendants inherit the corrected status; a ret
 Scope: Status classification only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Demotion packet: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md (294 transitive descendants, load-bearing score 26.70) has 4+1 admitted bridge assumptions sitting in load-bearing position; a retention path via firewalling is named. Work order for the audit lane.
 
@@ -32,7 +34,8 @@ Demotion packet: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md (294 transitive de
 - Source commit: `6facb61aa04296fbe23f3176438d8384918bc441`
 - git blob: `3f9e306a628822ac3152a4dd2860befee5c93653`
 - sha256: `0e04ccd46daa552414bbc5f6cc73135d5d5e7c65986e4f4da21e2541157603d5`
-- Lines: 39; runners named: scripts/frontier_observable_principle_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10156_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10156_CLAIM_STATUS_CERTIFICATE.md)
+- Lines: 39; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_observable_principle_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The observable principle is a load-bearing authority for the Koide and hierarchy
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

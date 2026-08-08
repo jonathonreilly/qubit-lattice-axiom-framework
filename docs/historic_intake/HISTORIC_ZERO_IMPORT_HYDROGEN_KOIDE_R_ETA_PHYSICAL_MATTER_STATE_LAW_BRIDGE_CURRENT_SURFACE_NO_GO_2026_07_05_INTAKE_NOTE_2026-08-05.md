@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; the bridge is unsupplied bec
 Scope: The parent physical matter-state law bridge that both the KS and elementary routes feed.
 Escape conditions (negative claims): Supply either the KS route theorem (2592) or the elementary route theorem (2552) as required by the contract, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The matter-state law bridge root terminal: both route theorems (KS and elementary) missing — the ladder's root blocker.
 
@@ -32,6 +34,7 @@ The matter-state law bridge root terminal: both route theorems (KS and elementar
 - Source commit: `0fbc8c7c35f9378f135307ae7bf840f621f0e1f4`
 - git blob: `c173a8040b49241ff7361bb9aff185b212cedd97`
 - sha256: `0c33dd31615663cf3a3ccdf782343654d08ae8409f462bc6faf539f061e0d2d4`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2599_ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2599_ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md)
 - Lines: 224; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

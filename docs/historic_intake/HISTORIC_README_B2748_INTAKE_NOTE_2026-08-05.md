@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Candidate closure proposed for landing on main, with all four 
 Scope: Charged-lepton Brannen phase on Cl(3)/Z^3; declares no new axioms beyond A0 plus retained cubic kinematics, three-generation and anomaly-forces-time.
 Escape conditions (negative claims): Residual 3's escape is definitional: m_* is declared axiom-native by the structural equation alpha(m_0) - alpha(m_*) = eta_ABSS = 2/9 with uniqueness by monotonicity + IVT, making the PDG match (0.0005%-0.003%) a forward prediction rather than an input.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
 
@@ -32,7 +34,8 @@ TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the 
 - Source commit: `ea6d99a8a13cc38c61b3063e0beb1b7efcb12044`
 - git blob: `d554a4ab17bf9265619719e5d8a166e54688bd32`
 - sha256: `1618860b2602abc321f91952cdfe6de18e6b7b74288646293fca7718143c43c7`
-- Lines: 76; runners named: scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem.py, scripts/frontier_koide_brannen_dirac_descent_theorem.py, scripts/frontier_koide_brannen_residual_closures.py, scripts/frontier_koide_brannen_physical_bridge_investigation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2748_README.md](../../archive_unlanded/historic_intake_originals/branch09/2748_README.md)
+- Lines: 76; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_dirac_descent_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_residual_closures(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_physical_bridge_investigation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,7 +47,7 @@ TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the 
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10161 (`.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle13-cluster-obstruction/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
+- Attaches across strata to [idx 10161](HISTORIC_CLAIM_STATUS_CERTIFICATE_B10161_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle13-cluster-obstruction/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
 
 ## Flags carried
 
@@ -56,6 +59,7 @@ Header 'ALL RESIDUALS CLOSED' with green checkmarks while the m_* residual is cl
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

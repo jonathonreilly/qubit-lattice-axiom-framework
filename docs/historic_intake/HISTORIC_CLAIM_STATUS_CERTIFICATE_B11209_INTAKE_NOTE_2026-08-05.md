@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: bounded-support, closes_by_correction; audit required before e
 Scope: Finite labeled-object parity correction; not a new axiom or convention.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of a prior parity-sector assignment: the repaired surface is scalar-i K-odd versus real J_cs K-even, and the labeled generation Vandermonde orientation is corrected; closes_by_correction. Relates to the J_cs elimination pulled from packsci01 (10302 attached there).
 
@@ -32,6 +34,7 @@ Correction of a prior parity-sector assignment: the repaired surface is scalar-i
 - Source commit: `5bcecc70e29e73b15fbd0d4d16e6c61fd68d0978`
 - git blob: `81b379b0ecb9be354c25f0608e29e70dd366582c`
 - sha256: `8ae431097f3bedcb898ab7e33f766d24c8ebee6f1f0d84ffcfea2ef142705265`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11209_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11209_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 16; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ retracts a prior parity-sector assignment; the supervisor should check whether t
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction_certificate
 intake_directive: owner_2026-08-05
 ```
 

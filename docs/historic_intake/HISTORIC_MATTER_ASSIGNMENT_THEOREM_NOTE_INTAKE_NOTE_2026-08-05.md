@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Anomaly cancellation FORCES one orbit to carry matter and the 
 Scope: Follows from the algebraic structure of Cl(3) with Z_3 symmetry, not from convention or additional input; depends on the SU(3) commutant theorem, the Z_3 orbit decomposition and chiral completion.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Matter assignment forced by anomaly cancellation (T_1/T_2 reversed multiplicities; matter/antimatter orbits) — era structural theorem.
 
@@ -32,7 +34,8 @@ Matter assignment forced by anomaly cancellation (T_1/T_2 reversed multiplicitie
 - Source commit: `1de438276ab6676ced4e83beef4ddea6921eef41`
 - git blob: `5a1e239a8249b4269a0f45fddcb2724570f8a130`
 - sha256: `3170b82cda6e8e0c1ecf7a540c442d0f214968c4ee2adbfc48e1d483aca07b7a`
-- Lines: 175; runners named: scripts/frontier_matter_assignment_theorem.py, scripts/frontier_generations_rigorous.py, scripts/frontier_chiral_completion.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1141_MATTER_ASSIGNMENT_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1141_MATTER_ASSIGNMENT_THEOREM_NOTE.md)
+- Lines: 175; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_matter_assignment_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generations_rigorous(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_chiral_completion(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

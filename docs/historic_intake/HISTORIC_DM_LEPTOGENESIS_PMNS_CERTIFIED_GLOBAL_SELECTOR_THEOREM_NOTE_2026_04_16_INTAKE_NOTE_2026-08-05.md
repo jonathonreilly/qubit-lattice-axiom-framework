@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-16; single framework axiom Cl(3) on Z^3
 
@@ -22,7 +22,9 @@ Original verdict: The selector is the unique global minimum of the exact seed-re
 Scope: Certified on the reduced surface only; explicitly does not claim a closed-form analytic classification of every symbolic stationary component, and no separate larger-domain uniqueness theorem is asserted because the exact admissible domain is argued to already be the reduced surface.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 PMNS certified global selector (two independent certification routes) — BUT its branch count/gap CONTRADICTS 3605 same-day; pulled as a pair so the audit lane rules.
 
@@ -32,7 +34,8 @@ PMNS certified global selector (two independent certification routes) — BUT it
 - Source commit: `d23e21908836bd8d77919a8f92287e1b72046568`
 - git blob: `76d3c372beb1fc40cbbd42dd362281cd7986f692`
 - sha256: `be8094a2daa3063d6fbb97e3f3bbd5af4241efdcf2d28bd6fb9aeb7892ccbe05`
-- Lines: 144; runners named: scripts/frontier_dm_leptogenesis_pmns_certified_global_selector_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3604_DM_LEPTOGENESIS_PMNS_CERTIFIED_GLOBAL_SELECTOR_THEOREM_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/recovery/3604_DM_LEPTOGENESIS_PMNS_CERTIFIED_GLOBAL_SELECTOR_THEOREM_NOTE_2026-04-16.md)
+- Lines: 144; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_certified_global_selector_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The 'exhaustive' certification is a deterministic lattice cover plus local minim
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

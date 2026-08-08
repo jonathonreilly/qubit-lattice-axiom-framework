@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The plaquette Perron reduction and strong-CP positivity are no
 Scope: Wilson surface only; does not support the stronger global claim that every live PF sector, especially PMNS, is a canonical projection of the same parent.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Parent compression theorem: plaquette Perron and strong-CP positivity are descendant constructions of ONE one-clock Wilson parent — orders the whole PF program.
 
@@ -32,7 +34,8 @@ Parent compression theorem: plaquette Perron and strong-CP positivity are descen
 - Source commit: `0e041394da73fb3343f9108d28ec25b1c6f3ac9c`
 - git blob: `01ea268bcf8412a5047456508fa5ff2398942c2f`
 - sha256: `b2496596ebf2a878a860a0937ebe8b3da3f93ca24bdd4f5c3d2b56148d2758db`
-- Lines: 189; runners named: scripts/frontier_gauge_vacuum_plaquette_parent_compression_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/588_GAUGE_VACUUM_PLAQUETTE_PARENT_COMPRESSION_THEOREM_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch02/588_GAUGE_VACUUM_PLAQUETTE_PARENT_COMPRESSION_THEOREM_NOTE_2026-04-17.md)
+- Lines: 189; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_parent_compression_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

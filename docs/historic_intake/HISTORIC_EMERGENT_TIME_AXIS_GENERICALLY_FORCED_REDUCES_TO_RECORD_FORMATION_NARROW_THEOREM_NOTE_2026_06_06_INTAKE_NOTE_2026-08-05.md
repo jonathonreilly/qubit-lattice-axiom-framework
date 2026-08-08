@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The time axis is generically - not axiomatically - forced; eff
 Scope: A_min (Lattice + Quantum + Record) has no dynamics axiom, so the result is genericity, not unconditional forcing; it forces the time AXIS, not a linear clock or its orientation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The time axis generically forced given R1 (records form): additive record count foliates, Lieb-Robinson makes slices spacelike — with the two irreducible residuals named.
 
@@ -32,7 +34,8 @@ The time axis generically forced given R1 (records form): additive record count 
 - Source commit: `74b9952e305abd03a03ef04e27bfd1dd1f4ae1c3`
 - git blob: `77b630ea82cdff08dc727485a554e8629a49829d`
 - sha256: `f3592806d35400bb1eaf8944f47ce60efdc0407561d383fb1336dc0a27e9316c`
-- Lines: 118; runners named: scripts/emergent_time_axis_generically_forced_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/430_EMERGENT_TIME_AXIS_GENERICALLY_FORCED_REDUCES_TO_RECORD_FORMATION_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/430_EMERGENT_TIME_AXIS_GENERICALLY_FORCED_REDUCES_TO_RECORD_FORMATION_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/emergent_time_axis_generically_forced_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Two named irreducible residuals: A_min has no dynamics axiom (the problem-of-tim
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

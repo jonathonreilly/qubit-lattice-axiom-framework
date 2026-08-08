@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: What survives is narrower than the early reads: the parity cou
 Scope: Screening status re-checked per result (sign selectivity 150/150 at mu^2 = 0.001, random 82%).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The April gravity lane's post-testing retraction record: one published prediction declared meaningless in physical units, several readings narrowed — the era's honest gravity terminal.
 
@@ -32,6 +34,7 @@ The April gravity lane's post-testing retraction record: one published predictio
 - Source commit: `84da1a307021a5645e8398a1ab3e13b588b36986`
 - git blob: `57c8037dd95162b195ab57fd96b6d190f4b56398`
 - sha256: `d7bce2f573affcb5d858f3c0daaf3b53aea03df67fbeedba2490fcdebff5fccb`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/294_DEFINITIVE_AUDIT_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch01/294_DEFINITIVE_AUDIT_2026-04-11.md)
 - Lines: 95; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Declares one published prediction meaningless in physical units and another prob
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

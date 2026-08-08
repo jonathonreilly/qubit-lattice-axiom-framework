@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Combined with the Koide Dirac zero-mode phase theorem (R1), th
 Scope: C_tau = SU(2)_L Casimir + GUT-normalized U(1)_Y = 3/4 + 1/4 = 1 uses the standard GUT normalization; alternative (Weinberg-scheme) normalizations would give different coefficients.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The one-loop radiative y_tau = alpha_LM/(4 pi) closure claim WITH its convention-dependence flag — era mass-lane claim for audit pricing.
 
@@ -32,7 +34,8 @@ The one-loop radiative y_tau = alpha_LM/(4 pi) closure claim WITH its convention
 - Source commit: `0b88c30ab5929303f7d6b7290de4385f2fc3ec51`
 - git blob: `f25b97662cf3975a222c185801c4a3045fe6ae4f`
 - sha256: `f462f3d308ed115c28f68353f54d6b06a0f682d1b7f65a672cb5eb27c0ecaba3`
-- Lines: 139; runners named: scripts/frontier_charged_lepton_radiative_yukawa_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/142_CHARGED_LEPTON_RADIATIVE_YUKAWA_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch01/142_CHARGED_LEPTON_RADIATIVE_YUKAWA_THEOREM.md)
+- Lines: 139; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_radiative_yukawa_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The load-bearing Casimir combination is convention-dependent, as the note's own 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

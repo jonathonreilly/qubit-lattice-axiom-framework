@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_consolidation_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Resolution A (a novel nonperturbative theorem from the framewo
 Scope: Negative-evidence packet only; future cycles should cite it rather than re-run these routes.
 Escape conditions (negative claims): Explicitly reopens if a NEW primitive distinguishes a future cycle from this analysis; Resolution C (industrial SDP) and Resolution B (governance/scheme reclassification) remain available.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Seven-angle exhaustion of Resolution A on the lattice-to-continuum plaquette obstruction — the consolidated negative the reframe rests on.
 
@@ -32,6 +34,7 @@ Seven-angle exhaustion of Resolution A on the lattice-to-continuum plaquette obs
 - Source commit: `d500c5e53b914a7996d571496dc00513bcf0f3a6`
 - git blob: `615ef182c54ab28ce8dc66167c6c54ef53460fe3`
 - sha256: `03739a48465951931c233e08c71e4f208a219c8350bef6dc0bcba3f630af9bb8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/124_BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md](../../archive_unlanded/historic_intake_originals/branch01/124_BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md)
 - Lines: 263; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_consolidation_no_go
 intake_directive: owner_2026-08-05
 ```
 

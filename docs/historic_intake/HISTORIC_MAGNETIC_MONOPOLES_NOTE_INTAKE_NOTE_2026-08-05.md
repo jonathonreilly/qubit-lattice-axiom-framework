@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis_prediction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Monopoles exist at ~2 M_Planck, are unobservably rare post-inf
 Scope: Physical QED sits at beta ~ 10.9 and the Planck scale at beta ~ 2.0, both deep in the Coulomb phase above beta_c ~ 1.01 (Monte Carlo verified on L=6).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Compact U(1) forces monopoles at ~2 M_Pl; the framework REQUIRES inflation (N_e > 21) — structural consequence with honest testability limits; 1160 attached.
 
@@ -32,7 +34,8 @@ Compact U(1) forces monopoles at ~2 M_Pl; the framework REQUIRES inflation (N_e 
 - Source commit: `b8fc470bf5429aab1b93b8ef746fc0ee2689de3e`
 - git blob: `6e197c5823847496ea31c3347ecab5d9a6a4bea0`
 - sha256: `052eaa3a46245220ef2dd735977d5082b50e9e3887eca6a4ff427955d126915a`
-- Lines: 128; runners named: scripts/frontier_magnetic_monopoles.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1126_MAGNETIC_MONOPOLES_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1126_MAGNETIC_MONOPOLES_NOTE.md)
+- Lines: 128; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_magnetic_monopoles(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-rates the mass estimate only MODERATE (depends on the c coefficient and alp
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis_prediction
 intake_directive: owner_2026-08-05
 ```
 

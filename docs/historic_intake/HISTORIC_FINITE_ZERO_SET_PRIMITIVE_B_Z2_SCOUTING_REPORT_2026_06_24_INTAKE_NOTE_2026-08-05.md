@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The prize is not in this repo as of 2026-06-24 - B-Z2 fails on
 Scope: Six sectors and their best-looking rows, not exhaustive over every retained row; density-based arguments are excluded up front because per-volume entropy and IR log-det densities vanish on both the K0 and K1 branches.
 Escape conditions (negative claims): The negative is about current downstream load-bearing, not about B-Z2's truth: it explicitly does not claim B-Z2 is false, unphysical or unnatural (it is the physically expected Dirac ray), does not claim K0 is physical, and does not claim exhaustiveness. Admitting B-Z2 explicitly would discharge phi = -1 and let A1 weaken from the Z^3 lattice primitive to a derived Z^d cap - but that admission must come from the owner/axiom lane, not from downstream reliance.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 B-Z2 scouting: the finite-zero-set primitive is SILENTLY ASSUMED nearly everywhere while inadmissible — governance finding for the d3/phi=-1 lane; escape honest.
 
@@ -32,6 +34,7 @@ B-Z2 scouting: the finite-zero-set primitive is SILENTLY ASSUMED nearly everywhe
 - Source commit: `a71e0c4df505db06f58c4199fab75c414c5756cd`
 - git blob: `4ffb670274c953a81df3d9b367302e1ff951efdf`
 - sha256: `0db64d4c62ee8d8612644cd2d5c2848358262de7d3c2b50adde5260e05363206`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/469_FINITE_ZERO_SET_PRIMITIVE_B_Z2_SCOUTING_REPORT_2026-06-24.md](../../archive_unlanded/historic_intake_originals/branch02/469_FINITE_ZERO_SET_PRIMITIVE_B_Z2_SCOUTING_REPORT_2026-06-24.md)
 - Lines: 540; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records that B-Z2 is silently assumed nearly everywhere while being independentl
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — cites MINIMAL_AXIOMS_2026-06-29; the LATTICE axiom's nearest-neighbour adjacency is assumed as framework axiom, not under test
 
@@ -22,7 +22,9 @@ Original verdict: Within the supplied family and under the executed protocol, no
 Scope: Supplied three-shell cubic-symmetric family within range 2 with conic (non-negative) weights only; geometry pinned to Cycle 700's source, detector sites, odd box sizes and boundary convention; no coupling value, sign, or scale is selected; the search certifies the searched domain under the stated deterministic protocol and is not a global nonexistence proof.
 Escape conditions (negative claims): Explicitly not a global nonexistence proof: longer-range shells, anisotropic or sign-indefinite weights, and non-Laplacian competitors lie outside the searched family; the near-flat first-order direction (-0.8583, 0.4831, 0.1730) is mixed in sign and so lies outside the conic family in both orientations; the first-order theorem is exact only in the small-deformation limit and (vi) shows the ratio saturates at finite weight (secant falls from -2.38393 at eps=1e-3 to -1.24214 at eps=0.1); Lemma 1 means the suite cannot measure overall coupling scale at all; no empirical falsification — every comparison is between supplied model laws with no observed target.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Bounded selection: the double-relational ratio is projectively unique within the declared conic three-shell family; causal-time lane; duplicate-vs-landed check required at intake.
 
@@ -32,7 +34,8 @@ Bounded selection: the double-relational ratio is projectively unique within the
 - Source commit: `refs/pull-cache/5886`
 - git blob: `bd08db1f5b71f904a8fe0268287a9d5051285c55`
 - sha256: `d86605f99366ac8e467d5f91f546e7e017dca43e97c7676c6f835a9d2accc96d`
-- Lines: 329; runners named: scripts/physical_finite_range_law_tournament_cycle703_2026_08_01.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3085_PHYSICAL_FINITE_RANGE_LAW_TOURNAMENT_CYCLE703_NOTE_2026-08-01.md](../../archive_unlanded/historic_intake_originals/recovery/3085_PHYSICAL_FINITE_RANGE_LAW_TOURNAMENT_CYCLE703_NOTE_2026-08-01.md)
+- Lines: 329; runners named: historic runner (unpinned, not in this packet): `scripts/physical_finite_range_law_tournament_cycle703_2026_08_01(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

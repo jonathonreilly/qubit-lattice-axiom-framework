@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The e-mu gap was a phantom; the irreducible target is the sing
 Scope: Reconnects the Jahn-Teller (diagonal, C_3-breaking) and Brannen (off-diagonal, C_3-symmetric) pictures as the two parts of one Yukawa; both a and b are vacuum/condensate quantities.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact consolidation: Q = 1/3 + (2/3)r theta-independently — the e-mu gap was a phantom; the target is one condensate ratio.
 
@@ -32,7 +34,8 @@ Exact consolidation: Q = 1/3 + (2/3)r theta-independently — the e-mu gap was a
 - Source commit: `4bbf156e6bb0a81ca437fc3020cb5638fc812371`
 - git blob: `fa3bbd927ce8603ace2037723a37b42d7ee942a8`
 - sha256: `be87e3ba083cd94851bdfedfb22eb24462041811b731dc71238a40ea2eefd718`
-- Lines: 63; runners named: scripts/flavor_yukawa_diag_offdiag_consolidation_2026_05_29.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/498_FLAVOR_YUKAWA_DIAG_OFFDIAG_CONSOLIDATION_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/498_FLAVOR_YUKAWA_DIAG_OFFDIAG_CONSOLIDATION_NOTE_2026-05-29.md)
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_yukawa_diag_offdiag_consolidation_2026_05_29(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

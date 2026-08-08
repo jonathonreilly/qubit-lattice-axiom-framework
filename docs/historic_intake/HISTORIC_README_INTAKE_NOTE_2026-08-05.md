@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_proposal
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Accepted planning package; its substantive content is the hone
 Scope: Lane scoping and priority only; opens no theorem, promotes no claim, changes no manuscript surface.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL index of the five outside-judge lanes (hadron mass, atomic scale, quark masses, neutrino, H_0) with lethality/approachability ratings; its substantive content is the honest admission of the exact derivation gap each lane must close to satisfy an outside judge. The five lane briefs attached. Direct input to next-phase planning.
 
@@ -32,6 +34,7 @@ TERMINAL index of the five outside-judge lanes (hadron mass, atomic scale, quark
 - Source commit: `ad58a0e9bb5a8d1ab66a8941beeb03f92529c660`
 - git blob: `fa09cbc56a4fbe05226d1546c6daca0d8afc4de9`
 - sha256: `32be04dfc7a305425fdcd4d1c999ed1e39808680ceacce66fe683cb4d9021a09`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2744_README.md](../../archive_unlanded/historic_intake_originals/branch09/2744_README.md)
 - Lines: 267; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_proposal
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: g_tt > 0 at all lattice sites generically, so no event horizon
 Scope: Depends only on the lattice Poisson equation, Watson finiteness, and the conformal metric form g_tt = (1-2phi)^2 — notably NOT on Schwarzschild holding anywhere; but it does depend on the conformal metric being correct in strong field.
 Escape conditions (negative claims): The result is a lattice artifact that survives only if the physical lattice spacing is nonzero (a = l_Planck); as a -> 0 the regularization disappears. Whether the conformal metric is the correct strong-field metric remains open.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 No-horizon theorem: G_L(0) finite bounds phi so g_tt > 0 generically — the frozen-star lane's exact basis, lattice-artifact escape stated.
 
@@ -32,7 +34,8 @@ No-horizon theorem: G_L(0) finite bounds phi so g_tt > 0 generically — the fro
 - Source commit: `d170649668480527c7724550c2380ed8d4ef28bb`
 - git blob: `7ad915e72b74f027900cd7114af419c6f568ef8e`
 - sha256: `a56acd31b747c0da05d04d5793d0845c64b6359d11db2c57fed72535c4e28b71`
-- Lines: 223; runners named: scripts/frontier_lattice_no_horizon.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1099_LATTICE_NO_HORIZON_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1099_LATTICE_NO_HORIZON_NOTE.md)
+- Lines: 223; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lattice_no_horizon(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

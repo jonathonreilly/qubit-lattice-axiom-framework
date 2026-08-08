@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Exact negative boundary; closes the shortcut only, leaving the
 Scope: The remaining Schur shortcut of reconstructing A/B/C from an already-compressed D_eff or D_eff'(x_pole).
 Escape conditions (negative claims): Real Schur kernel rows from a neutral scalar kernel theorem or measurement; or certified O_H/C_sH/C_HH pole rows, same-source W/Z response rows with identities and covariance, scalar-LSZ moment/threshold/FV authority, or a neutral-sector irreducibility certificate.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Schur-shortcut no-go: two partitions share pole, compressed denominator and residue — the shortcut is closed while the Schur route stays viable through real rows.
 
@@ -32,7 +34,8 @@ Schur-shortcut no-go: two partitions share pole, compressed denominator and resi
 - Source commit: `c04ad7945c75d30333b5467706748605a132a751`
 - git blob: `5c661318bf64250484adc782d290a2f8c683b41c`
 - sha256: `13d58eda3c8a4ca418669aeb67b851e3e1bf44b64422d53d04e981f1e2939398`
-- Lines: 59; runners named: scripts/frontier_yt_schur_compressed_denominator_row_bootstrap_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2426_YT_SCHUR_COMPRESSED_DENOMINATOR_ROW_BOOTSTRAP_NO_GO_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch08/2426_YT_SCHUR_COMPRESSED_DENOMINATOR_ROW_BOOTSTRAP_NO_GO_NOTE_2026-05-05.md)
+- Lines: 59; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_schur_compressed_denominator_row_bootstrap_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

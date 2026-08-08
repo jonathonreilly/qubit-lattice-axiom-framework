@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_global_boundary_theorem_at_the_sole_axiom_level
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Full positive PMNS/neutrino closure is not derivable from the 
 Scope: Sole axiom Cl(3) on Z^3 with no additional PMNS-side axiom; a global statement about the whole microscopic carrier, not a local no-go on one formula family.
 Escape conditions (negative claims): Escaped only by a further DERIVED dynamical law inside the same framework, not by more repackaging of the sole axiom.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The global PMNS no-go the whole family is organized around: the projected native span is ALL of M(3,C) — full closure not derivable from the sole axiom; escape = a further derived law.
 
@@ -32,7 +34,8 @@ The global PMNS no-go the whole family is organized around: the projected native
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `aa6fa7c061ee0312948f60201f576bcac93cd037`
 - sha256: `f78c2ea59a579fc855f0204e64bc183187c922619a7cdcfca7d19e08d8ea903b`
-- Lines: 106; runners named: scripts/frontier_pmns_single_axiom_microscopic_nonclosure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1593_PMNS_SINGLE_AXIOM_MICROSCOPIC_NONCLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1593_PMNS_SINGLE_AXIOM_MICROSCOPIC_NONCLOSURE_NOTE.md)
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_single_axiom_microscopic_nonclosure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -110,6 +113,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_global_boundary_theorem_at_the_sole_axiom_level
 intake_directive: owner_2026-08-05
 ```
 

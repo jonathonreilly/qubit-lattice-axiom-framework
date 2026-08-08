@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Closes the last scalar ambiguity on the star-supported class: 
 Scope: Seven-point star support with q_eff = (I - W G_S)^-1 m; both exact source families verified.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The rank-one active-response terminal: A_active = m_active 1^T exactly — the last scalar ambiguity on the star class closed.
 
@@ -32,7 +34,8 @@ The rank-one active-response terminal: A_active = m_active 1^T exactly — the l
 - Source commit: `4b70f97665d6fa614590246a1ddce480407eafbb`
 - git blob: `40ee49141fd6c2cd9a259d73f0486ff6bdd3b003`
 - sha256: `99fe4977c6eb3721ee1947cad73f721d4486fe266fa791f4cb4ab2bc00b0c612`
-- Lines: 117; runners named: scripts/frontier_support_renormalized_active_amplitude.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2019_SUPPORT_RENORMALIZED_ACTIVE_AMPLITUDE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2019_SUPPORT_RENORMALIZED_ACTIVE_AMPLITUDE_NOTE.md)
+- Lines: 117; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_support_renormalized_active_amplitude(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

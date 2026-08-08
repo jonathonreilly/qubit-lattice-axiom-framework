@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; five of eleven contract inpu
 Scope: The Lane 2 low-energy coupling input consumed by the static-source Rydberg lane.
 Escape conditions (negative claims): Supply the five missing inputs plus owner ratification and audit acceptance; note that admitted literature R(s) is retained-with-import and does not satisfy the zero-import branch.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Lane 2 terminal: alpha(0) transport not supplied — five of eleven inputs missing, the whole QED apparatus priced.
 
@@ -32,7 +34,8 @@ Lane 2 terminal: alpha(0) transport not supplied — five of eleven inputs missi
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `c64c4c53e7172a7a21c182f5000532021e3f1429`
 - sha256: `efcc8487b4e56e8bc4ddfdc60a14118f54d4b6130b6f06cac1ac6746b3efd863`
-- Lines: 320; runners named: scripts/frontier_zero_import_hydrogen_alpha0_transport_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2509_ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2509_ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 320; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_alpha0_transport_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

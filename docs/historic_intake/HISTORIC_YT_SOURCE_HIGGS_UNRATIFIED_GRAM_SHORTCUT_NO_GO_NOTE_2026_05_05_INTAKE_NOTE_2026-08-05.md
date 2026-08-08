@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: It does not — the rows certify at most purity relative to th
 Scope: Whether perfect Gram purity against an unratified supplied operator constitutes an O_H certificate.
 Escape conditions (negative claims): Supply a same-surface canonical-Higgs operator identity and normalization certificate, then produce production C_ss/C_sH/C_HH pole residues and rerun builder, postprocessor, retained-route certificate and the PR230 assembly gate.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Gram-purity terminal: even a perfect synthetic Gram witness certifies only purity relative to an unratified operator — the canonical-Higgs identity is the missing object.
 
@@ -32,7 +34,8 @@ Gram-purity terminal: even a perfect synthetic Gram witness certifies only purit
 - Source commit: `14b1551cb249bd4d67d937214714db71590dc13c`
 - git blob: `616616d6258e41406f17028844a1689d379c7e97`
 - sha256: `9b907945ad4c7b5b32cc7dc3cf194c9a8cc796b82046be3290ecb39dd1f1b1f6`
-- Lines: 63; runners named: scripts/frontier_yt_source_higgs_unratified_gram_shortcut_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2446_YT_SOURCE_HIGGS_UNRATIFIED_GRAM_SHORTCUT_NO_GO_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch08/2446_YT_SOURCE_HIGGS_UNRATIFIED_GRAM_SHORTCUT_NO_GO_NOTE_2026-05-05.md)
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_source_higgs_unratified_gram_shortcut_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -62,6 +65,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

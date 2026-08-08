@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Two independent walls survive: W1 derive and physically type M
 Scope: Finite-dimensional nondegenerate mass pairs and the stated equivariant/invariant map class; five claims explicitly excluded including that the framework derives M_u or M_d and that the CKM closure target is retired.
 Escape conditions (negative claims): The strongest escape is explicitly conceded and executed as the block's own Theorem 1: consume the pair (H_u, H_d) rather than down-only data. Also live: an externally supplied orientation projector, NNI textures, paired source/action dynamics.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Mixed-role bounded row on the quark mass problem: an exact positive identity plus an exact negative boundary for supplied nondegenerate quark mass-operator pairs, with N4 dropping all four candidate witnesses as non-matching; two independent walls survive (W1: derive and physically type M_u, M_d; W2 named in-note) and the steelman is conceded in full. The cleanest statement of where the mass problem actually stands.
 
@@ -32,6 +34,7 @@ Mixed-role bounded row on the quark mass problem: an exact positive identity plu
 - Source commit: `cb38dad699b2e882941204e0651a67dedda86d08`
 - git blob: `ba56d5c3e88872be2814f39f02d1235297f508ff`
 - sha256: `c419506d3f84c21ec5619da8138ea049e398fcbc8bb6e250afc1505542aabf42`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10307_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10307_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 149; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ The steelman is conceded in full: the mass problem is relational, so a down-only
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A complete documented derivation chain with one cross-sector b
 Scope: Hydrogen errors are finite-box artifacts at N = 60; the electron mass requires a separate mechanism whose blockage is structural.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The two-axiom era's end-to-end FRAMEWORK SYNTHESIS with a self-diagnosed numerical coincidence — era-terminal index.
 
@@ -32,7 +34,8 @@ The two-axiom era's end-to-end FRAMEWORK SYNTHESIS with a self-diagnosed numeric
 - Source commit: `6c83053d1409c0271b727e4b40a40286380c27ba`
 - git blob: `b271bf3f66529a61fcc24e4b894bb9ec48317a8d`
 - sha256: `dd3574396e6062fd7e3a13f561ea355e0607cd7d1f30bd33dfb0782e4efdd5a5`
-- Lines: 617; runners named: scripts/alpha_em_from_axioms.py, scripts/electron_mass_from_axioms.py, scripts/verify_cl3_sm_embedding.py, scripts/frontier_koide_gap_closure_theorem.py, scripts/frontier_koide_gap_exhaustive.py, scripts/frontier_abcc_cp_phase_no_go_theorem.py, scripts/frontier_dm_candidate_mass_window_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/507_FRAMEWORK_SYNTHESIS_2026-04-19.md](../../archive_unlanded/historic_intake_originals/branch02/507_FRAMEWORK_SYNTHESIS_2026-04-19.md)
+- Lines: 617; runners named: historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/electron_mass_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/verify_cl3_sm_embedding(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_gap_closure_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_gap_exhaustive(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_abcc_cp_phase_no_go_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_candidate_mass_window_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-diagnoses one of its own near-identities (3.05e-4) as numerical coincidence
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

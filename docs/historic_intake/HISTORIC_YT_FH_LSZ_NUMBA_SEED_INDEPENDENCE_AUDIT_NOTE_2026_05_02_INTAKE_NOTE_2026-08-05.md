@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Historical chunk001/chunk002 are production-format diagnostics
 Scope: Evidence-quality gate; closes no physics.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 REPRODUCIBILITY DEFECT: two 'independent' published chunks share an identical gauge ensemble (numba RNG never seeded) — invalidates the first two production checkpoints; audit work order.
 
@@ -32,7 +34,8 @@ REPRODUCIBILITY DEFECT: two 'independent' published chunks share an identical ga
 - Source commit: `05bae6b336cd54d6c31c9a3536d51c5e5eedfa7a`
 - git blob: `cfa0c4aa335e70ec708517725235b90f2a6114ac`
 - sha256: `8eefdd92c08767b270bef4db7d5dd8c0bbfec25254f7570d4871b233552e89a6`
-- Lines: 52; runners named: scripts/frontier_yt_fh_lsz_chunk_combiner_gate.py, scripts/frontier_yt_fh_lsz_numba_seed_independence_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2244_YT_FH_LSZ_NUMBA_SEED_INDEPENDENCE_AUDIT_NOTE_2026-05-02.md](../../archive_unlanded/historic_intake_originals/branch07/2244_YT_FH_LSZ_NUMBA_SEED_INDEPENDENCE_AUDIT_NOTE_2026-05-02.md)
+- Lines: 52; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_chunk_combiner_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_numba_seed_independence_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ A real reproducibility defect found post hoc: two chunks published as independen
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

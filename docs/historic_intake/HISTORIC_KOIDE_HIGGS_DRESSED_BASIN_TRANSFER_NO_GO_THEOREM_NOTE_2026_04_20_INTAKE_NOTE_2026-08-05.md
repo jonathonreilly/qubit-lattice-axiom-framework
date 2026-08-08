@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The Higgs-dressed transport route cannot bypass the open G1 ch
 Scope: Current known G1 competitor set surviving somewhere in the PMNS search stack.
 Escape conditions (negative claims): The negative is an indiscriminacy across competitors, so the escape is an independent G1 selector — the chamber/A-BCC route, PMNS basin selection, or a deeper retained derivation of the G1 pin.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Higgs-dressed transport chain's non-selectivity no-go: every G1 competitor shows the same missing-axis signature, and an excluded competitor fits observation — the route cannot bypass chamber selection.
 
@@ -32,7 +34,8 @@ The Higgs-dressed transport chain's non-selectivity no-go: every G1 competitor s
 - Source commit: `0a20305105c856eb1625b33fbca741d8db6c1248`
 - git blob: `695eea3fec88a61552f35ad8783ee6df6a39351a`
 - sha256: `59a9cdaa829aa6064b4adfb971e0a1b94cc09f1c842899593a606bf21e786cd9`
-- Lines: 109; runners named: scripts/frontier_koide_higgs_dressed_basin_transfer_no_go_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/853_KOIDE_HIGGS_DRESSED_BASIN_TRANSFER_NO_GO_THEOREM_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch03/853_KOIDE_HIGGS_DRESSED_BASIN_TRANSFER_NO_GO_THEOREM_NOTE_2026-04-20.md)
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_higgs_dressed_basin_transfer_no_go_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ An excluded, chamber-violating competitor fits the observed masses better than t
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

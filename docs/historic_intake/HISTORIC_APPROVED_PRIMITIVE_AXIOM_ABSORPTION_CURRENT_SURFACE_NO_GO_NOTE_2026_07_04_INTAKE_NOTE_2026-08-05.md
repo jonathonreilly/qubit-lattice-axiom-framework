@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: No approved primitive is retired by the current axiom text; th
 Scope: Current-surface triage of primitive absorption by the axiom text alone; retires and amends nothing.
 Escape conditions (negative claims): Scoped to the current axiom text — a future axiom edit could absorb them; the note separates axiom-level state typing from actual-history pointwise evaluation as the place a realized-state absorption would have to act.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Post-reset governance no-go: the 06-29 memo absorbs none of the three approved primitives, blocked primitive-by-primitive with scoped escapes — bears directly on the live axiom surface.
 
@@ -32,7 +34,8 @@ Post-reset governance no-go: the 06-29 memo absorbs none of the three approved p
 - Source commit: `57dcbde936d0368b01a674309b5ae49bcc2ca90c`
 - git blob: `8530261f692b4fccf047d82ec2ddc0da243f02ae`
 - sha256: `ed42516570a8821d1270a227d9fd5882794e38d9dd1daa3675c7120bd6208f16`
-- Lines: 99; runners named: ../scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04.py, scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/56_APPROVED_PRIMITIVE_AXIOM_ABSORPTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch01/56_APPROVED_PRIMITIVE_AXIOM_ABSORPTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md)
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `../scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04(.py)`; historic runner (unpinned, not in this packet): `scripts/approved_primitive_axiom_absorption_current_surface_no_go_2026_07_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

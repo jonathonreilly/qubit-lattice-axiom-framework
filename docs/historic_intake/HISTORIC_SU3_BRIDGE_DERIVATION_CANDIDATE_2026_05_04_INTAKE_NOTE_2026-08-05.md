@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: bounded_theorem, strong derivation candidate but UNAUDITED; ex
 Scope: L_s = 2 APBC cube with 12 plaquettes at beta = 6, Wilson character coefficients via Bessel determinant with mode_max = 200.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The K-plaquette tube candidate: rho = (c_pq/c_00)^12 gives P = 0.58879 vs 0.5934 — a real bounded derivation candidate WITH its picture-choice flag; feeds the beta6 lane.
 
@@ -32,7 +34,8 @@ The K-plaquette tube candidate: rho = (c_pq/c_00)^12 gives P = 0.58879 vs 0.5934
 - Source commit: `094e400916bcd39845c7346dcf12df04b15d5aa5`
 - git blob: `d868ab4b287513e12c6d4d5808c8331639b70f2c`
 - sha256: `6fc9ef5654b1dfd47f4d1aa298163b4c0cff04a54fd1cd3fa131456d3fdcfbf1`
-- Lines: 253; runners named: scripts/frontier_su3_bridge_rho_modification_scoping_2026_05_04.py, scripts/frontier_su3_bridge_mixed_ansatz_2026_05_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2011_SU3_BRIDGE_DERIVATION_CANDIDATE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch06/2011_SU3_BRIDGE_DERIVATION_CANDIDATE_2026-05-04.md)
+- Lines: 253; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_su3_bridge_rho_modification_scoping_2026_05_04(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_su3_bridge_mixed_ansatz_2026_05_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Chooses among physical pictures (independent product vs Haar pairing) partly bec
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

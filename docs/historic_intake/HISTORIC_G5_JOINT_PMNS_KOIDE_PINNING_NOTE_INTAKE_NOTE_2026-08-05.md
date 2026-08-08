@@ -1,9 +1,11 @@
 # Historic intake: G5 Joint PMNS + Koide Pinning Theorem - Structural-Link Attempt
 
+Explicit subject: Within the 9-dimensional real Hermitian algebra on H_hw=1, the H-chart tangent span and the species-diagonal subspace each have rank 3 while their sum has rank 6, so their intersection is ZERO-dimensional: H's parameter dependence is carried entirely by off-diagonal and ... (The bare code `G5` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: Four flagship gates do NOT close from one observational pin - 
 Scope: Rank computation verified to machine precision on the flattened real-Hermitian basis.
 Escape conditions (negative claims): Does NOT claim Koide Q = 2/3 is incompatible with the retained surface, does NOT claim G1 and G5 are unrelated (they share H_hw=1 and the axis basis), and does NOT foreclose the Higgs-VEV deployment lane; any map from the chart coordinates to the weights must be CONSTRUCTED rather than structurally inherited.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Joint-pinning no-go: chamber tangent and species-diagonal subspaces intersect in ZERO — four flagship gates do not close from one pin.
 
@@ -32,7 +36,8 @@ Joint-pinning no-go: chamber tangent and species-diagonal subspaces intersect in
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `81bdf5d45d1954ff4c99c99171b89af4d7dd43d2`
 - sha256: `43f7b86e4c118a4d7dc576063f3dcd5d8c5ab2bdebb1cedd931ebe98582a8ecb`
-- Lines: 290; runners named: scripts/frontier_g5_joint_pmns_koide_pinning.py, scripts/frontier_g5_gamma_1_second_order_return.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/547_G5_JOINT_PMNS_KOIDE_PINNING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/547_G5_JOINT_PMNS_KOIDE_PINNING_NOTE.md)
+- Lines: 290; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g5_joint_pmns_koide_pinning(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g5_gamma_1_second_order_return(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

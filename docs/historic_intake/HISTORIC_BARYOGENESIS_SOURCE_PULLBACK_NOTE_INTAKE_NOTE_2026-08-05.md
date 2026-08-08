@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: After the balance law, the source side is identified with an e
 Scope: Exact source-law reduction on the retained APBC/Higgs lane; the explicit same-surface source lift chi -> J_chi is not derived.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Source-side identification: S_src[chi] = W[J_chi] is the pullback of the already-derived scalar generator — connects baryogenesis to the landed generator surface.
 
@@ -32,7 +34,8 @@ Source-side identification: S_src[chi] = W[J_chi] is the pullback of the already
 - Source commit: `af7b13bf050882e07542c464d71703b6627c34c8`
 - git blob: `caa4031acf56fabfc6e5733f6e59dfe378a6acd2`
 - sha256: `e4b38d3ec1d4eb31fc612165e0c61b43984a93921a7f3fc8cc7c07d06dcf99f4`
-- Lines: 187; runners named: ./../scripts/frontier_baryogenesis_source_pullback.py, frontier_baryogenesis_source_pullback.py, scripts/frontier_baryogenesis_source_pullback.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/99_BARYOGENESIS_SOURCE_PULLBACK_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/99_BARYOGENESIS_SOURCE_PULLBACK_NOTE.md)
+- Lines: 187; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_source_pullback(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_source_pullback(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_source_pullback(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

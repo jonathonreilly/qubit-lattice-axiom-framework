@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_executable_no_go_for_closing_q_by_merely_translating_among_already_exposed_residual_scalars
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Q_RESIDUAL_SCALAR_UNIFICATION_CLOSES_Q=FALSE — the atlas red
 Scope: Retained-only Q closure by re-expressing already-exposed residual scalars; no new axioms, no PDG masses, no H_* pin, no promoted K_TL=0/Q=2/3/delta=2/9.
 Escape conditions (negative claims): Falsified/escaped by one retained charged-lepton equation setting any single Q residual to zero (RESIDUAL_PRIMITIVE=one_retained_equation_setting_any_Q_residual_to_zero); boundary/descent conditions named as the next live supplier since algebraic-democracy routes collapsed to measure choice.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Koide-Q residual-scalar atlas: ~40 residuals unified to one target — the lane's map; falsifier stated.
 
@@ -32,7 +34,8 @@ The Koide-Q residual-scalar atlas: ~40 residuals unified to one target — the l
 - Source commit: `7b2531e0084b600dbf3d410d117c568a230c5f88`
 - git blob: `dfb7e5bb87130d14dc5d7112a00057f81ca4f0b1`
 - sha256: `bf65c07f88010216061fb4ceacae2cc9da4f57eb8f596b9ac68b5d020a7629ac`
-- Lines: 737; runners named: scripts/frontier_koide_q_residual_scalar_unification_no_go.py, scripts/frontier_koide_hostile_review_guard.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1026_KOIDE_Q_RESIDUAL_SCALAR_UNIFICATION_NO_GO_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch04/1026_KOIDE_Q_RESIDUAL_SCALAR_UNIFICATION_NO_GO_NOTE_2026-04-24.md)
+- Lines: 737; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_residual_scalar_unification_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_hostile_review_guard(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -88,6 +91,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_executable_no_go_for_closing_q_by_merely_translating_among_already_exposed_residual_scalars
 intake_directive: owner_2026-08-05
 ```
 

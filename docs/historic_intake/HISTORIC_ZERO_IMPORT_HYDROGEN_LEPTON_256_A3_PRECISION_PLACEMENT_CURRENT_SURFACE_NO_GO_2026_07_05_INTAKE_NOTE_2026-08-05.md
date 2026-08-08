@@ -1,9 +1,11 @@
 # Historic intake: Lepton 1/256 A3 Precision-Placement Current-Surface No-Go
 
+Explicit subject: Narrowed claim: current surfaces do not supply A3_PRECISION_PLACEMENT_RETAINED. (The bare code `A3` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: Support-only non-supply boundary for the placement decision as
 Scope: The A3 precision-placement input consumed by the absolute charged-lepton scale assembly.
 Escape conditions (negative claims): Retain exactly one placement with its own derivation plus the no-double-count rule, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 A3 placement terminal: four numerically equivalent placements, none retained — the single-spend decision priced.
 
@@ -32,7 +36,8 @@ A3 placement terminal: four numerically equivalent placements, none retained —
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `3faf87af350c90e1d19ddb85c189ffb3e17a4e15`
 - sha256: `8dc322a2d85d02d328e536991997b5fb26d6c11091ee53f528df73b8876c44dd`
-- Lines: 302; runners named: scripts/frontier_zero_import_hydrogen_lepton_256_a3_precision_placement_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2635_ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2635_ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 302; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_a3_precision_placement_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

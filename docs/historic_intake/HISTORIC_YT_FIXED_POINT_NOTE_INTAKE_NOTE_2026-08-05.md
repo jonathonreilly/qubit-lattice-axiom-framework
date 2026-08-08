@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The lattice boundary condition is NOT at the IR fixed point, s
 Scope: 1-loop SM beta functions in the QCD-only limit.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Quasi-fixed-point coincidence refuted: the lattice boundary is NOT at the IR fixed point — kills a would-be 'double protection' myth.
 
@@ -32,7 +34,8 @@ Quasi-fixed-point coincidence refuted: the lattice boundary is NOT at the IR fix
 - Source commit: `c8b9fe390bb1094e0ff1b54a5c15b05fb5cda08c`
 - git blob: `b3c071fc14426e19d5e2cae993c9aa1869202f09`
 - sha256: `17526820f56202ad49445b37af8eaa1da6a709a767775ba397feaecde58a358f`
-- Lines: 166; runners named: scripts/frontier_yt_fixed_point.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2300_YT_FIXED_POINT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2300_YT_FIXED_POINT_NOTE.md)
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fixed_point(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Refutes a previously entertained 'double protection' framing for the framework's
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

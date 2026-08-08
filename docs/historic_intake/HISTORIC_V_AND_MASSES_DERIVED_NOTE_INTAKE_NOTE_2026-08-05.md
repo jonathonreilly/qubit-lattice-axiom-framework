@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The STRUCTURAL derivation chain is complete — every import c
 Scope: 1-loop CW with SM RGE running plus a taste threshold; 10 structural checks pass.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The April V_* head claim ('every import closed') WITH its title flag — the era's electroweak-scale derivation claim for audit.
 
@@ -32,7 +34,8 @@ The April V_* head claim ('every import closed') WITH its title flag — the era
 - Source commit: `e9868b5045af40e16b179a2568a5decc83ffe26b`
 - git blob: `ef1b425e6f3111c766d6fb6744b97f5fb5a88e4c`
 - sha256: `e0c8f2f3003fd23905106ae0307ce7c77171913ff9687ab25f66f3c11314cdd6`
-- Lines: 139; runners named: scripts/frontier_v_and_masses_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2101_V_AND_MASSES_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2101_V_AND_MASSES_DERIVED_NOTE.md)
+- Lines: 139; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_v_and_masses_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Title says masses are 'Derived' while the note's own grades put v at D (five ord
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

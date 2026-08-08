@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Removes the k = 0 flatness bounded assumption from the DM chai
 Scope: Freeze-out temperatures T_F > 1 MeV in the radiation era, curvature entering only through H.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 k-independence theorem: curvature term 1.2e-29 of radiation at T_F — removes the k=0 bounded input exactly.
 
@@ -32,7 +34,8 @@ k-independence theorem: curvature term 1.2e-29 of radiation at T_F — removes t
 - Source commit: `35b14de168ffbc3a270437c71f9265bd7fe4ece0`
 - git blob: `5209addd8f606d540e357fdaef20e244d18e215b`
 - sha256: `4dff5f30cc7f16286de5545628fc5c97d5aba605a7b404bc847a93937db945be`
-- Lines: 63; runners named: scripts/frontier_dm_k_independence.py, scripts/frontier_dm_friedmann_from_newton.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/367_DM_K_INDEPENDENCE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/367_DM_K_INDEPENDENCE_NOTE.md)
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_k_independence(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

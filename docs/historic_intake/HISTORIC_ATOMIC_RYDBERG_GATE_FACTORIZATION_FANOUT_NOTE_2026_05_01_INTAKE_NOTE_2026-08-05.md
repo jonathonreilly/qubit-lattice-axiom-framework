@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No frame supports retained Rydberg closure; the strongest hone
 Scope: Five non-overlapping attack frames, all failing; runner PASS=43 FAIL=0.
 Escape conditions (negative claims): Next actions named: prove a narrow framework-native kinetic/unit-map theorem, or prove a sharper no-go that threshold-resolved alpha(0) transport cannot be retained without upstream charged-mass and hadronic inputs.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the alpha(0)/Rydberg lane: retained Rydberg closure requires THREE independent gates (retained electron mass gate, threshold-resolved transport, kinetic bridge), not one substitution; quantifies two hidden-fit routes, sharpest that hitting the comparator via alpha_EM(M_Z) + b_QED = 32/3 requires a hidden 0.366 GeV effective threshold. Lane members attached.
 
@@ -32,7 +34,8 @@ TERMINAL of the alpha(0)/Rydberg lane: retained Rydberg closure requires THREE i
 - Source commit: `3abb8b5e140ca195848b187bec6121f60f274279`
 - git blob: `821f1d7d7b7f189db07046a4db5e9cd89fcb0615`
 - sha256: `4bc9ba982aaadf224f6ac7b957b0e162d7e70fd48882605a72b3d0144d2f7489`
-- Lines: 146; runners named: scripts/frontier_atomic_rydberg_gate_factorization_fanout.py, scripts/frontier_atomic_rydberg_dependency_firewall.py, scripts/frontier_atomic_qed_threshold_bridge_firewall.py, scripts/frontier_atomic_nr_coulomb_scale_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10593_ATOMIC_RYDBERG_GATE_FACTORIZATION_FANOUT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/packsci02/10593_ATOMIC_RYDBERG_GATE_FACTORIZATION_FANOUT_NOTE_2026-05-01.md)
+- Lines: 146; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_atomic_rydberg_gate_factorization_fanout(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_rydberg_dependency_firewall(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_qed_threshold_bridge_firewall(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_nr_coulomb_scale_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ Quantifies two hidden-fit routes: direct alpha_EM(M_Z) substitution shifts E_1 b
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

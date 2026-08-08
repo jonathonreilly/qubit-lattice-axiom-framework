@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Fixed-q_H single-Higgs neutrino Dirac textures are monomial: t
 Scope: The retained single-Higgs Dirac neutrino lane with fixed q_H; an exact obstruction theorem only.
 Escape conditions (negative claims): Escaping requires structure beyond this exact lane — the minimal escape is worked out in the two-Higgs note (idx_pos 1186).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact monomial no-go: single-Higgs fixed-charge Dirac textures give masses but NO mixing — the minimal escape named.
 
@@ -32,7 +34,8 @@ Exact monomial no-go: single-Higgs fixed-charge Dirac textures give masses but N
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `6646e955fa1fd03d1840bf920e4d83d288b7e365`
 - sha256: `260f7f0b6b2b278aeb0e5014f736b854e1c6dd0ac1b59307a40b133aa03b3733`
-- Lines: 148; runners named: scripts/frontier_neutrino_dirac_monomial_no_mixing.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1185_NEUTRINO_DIRAC_MONOMIAL_NO_MIXING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1185_NEUTRINO_DIRAC_MONOMIAL_NO_MIXING_NOTE.md)
+- Lines: 148; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_dirac_monomial_no_mixing(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No new no-go routes proven in this workstream.
 Scope: Inherited routes not to be re-explored without a new premise.
 Escape conditions (negative claims): Explicit three-part re-exploration rule: a route may be re-attempted only if the attempt names a new premise not already audited in the existing no-go note, starts from A_min plus that premise with no other smuggled imports, and records the new premise explicitly in the new note's status block.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Largest inherited no-go inventory in this stratum: roughly 45 closed routes across seven lanes (charged-lepton and siblings), incl. the M3 EW A4 flip record. Consolidated route memory; campaign-plan companions attached.
 
@@ -32,6 +34,7 @@ Largest inherited no-go inventory in this stratum: roughly 45 closed routes acro
 - Source commit: `7f76682238b8e2675f362ff2e529ae5d91320666`
 - git blob: `e27aeca37dde87a79ead440628a6581be9c5aebc`
 - sha256: `16d6b41fd529195de88c5a43fe43c2094f6a41d85bf3f3cc85a94af25df973bc`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10255_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10255_NO_GO_LEDGER.md)
 - Lines: 101; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ Records that the M3 EW A4 flavor-symmetry anchor rested on a FALSE PREMISE (conf
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

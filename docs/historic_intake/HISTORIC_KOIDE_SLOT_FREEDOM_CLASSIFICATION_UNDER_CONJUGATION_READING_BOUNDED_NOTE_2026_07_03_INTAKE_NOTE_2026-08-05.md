@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_classification_conditional_on_hypothetical_h_conj
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The dynamical discharge attempt was REFUTED and the fork stand
 Scope: Conditional on the hypothetical H-conj sentence, used only as a prepared reading for owner decision; lands nothing, changes no axiom text, sets no audit outcome.
 Escape conditions (negative claims): Exactly two owner-facing options and no third route in this lane: (a) add a new axiom sentence supplying one-slot weighting (weak intent defense — a prior five-seat panel ruled 'No possibility is privileged' does not name a weighting), or (b) keep the bit as the flavor admission's remaining sharply factorized content. Three refutation passes (June 8 static, July 3 individuation, July 3 discharge) closed the derivation attempts.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Slot-freedom classification with the dynamical-discharge REFUTATION on record and exactly two owner-facing options — the fork's decision surface.
 
@@ -32,7 +34,8 @@ Slot-freedom classification with the dynamical-discharge REFUTATION on record an
 - Source commit: `975e8bde801e298c10170793989f82fc6968006f`
 - git blob: `4042307f3f7b2826ed7863d21ab85b4bcfd450b5`
 - sha256: `cf0f188de5626ba0cf3cdfcba84aec525c15a40e106881439fa32e8937f1667b`
-- Lines: 197; runners named: scripts/frontier_koide_slot_freedom_classification_2026_07_03.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1086_KOIDE_SLOT_FREEDOM_CLASSIFICATION_UNDER_CONJUGATION_READING_BOUNDED_NOTE_2026-07-03.md](../../archive_unlanded/historic_intake_originals/branch04/1086_KOIDE_SLOT_FREEDOM_CLASSIFICATION_UNDER_CONJUGATION_READING_BOUNDED_NOTE_2026-07-03.md)
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_slot_freedom_classification_2026_07_03(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents an internal refutation of a previously claimed discharge; the note's o
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_classification_conditional_on_hypothetical_h_conj
 intake_directive: owner_2026-08-05
 ```
 

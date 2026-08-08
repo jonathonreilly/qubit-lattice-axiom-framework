@@ -1,9 +1,11 @@
 # Historic intake: Q1 keystone, angle C: holomorphy (det_C) does NOT supply the generation chirality grading
 
+Explicit subject: Each holomorphy-derived object fails the Gamma_chi requirements: J = (C - C^T)/sqrt3 is anti-Hermitian with J^2 = -P_d and commutes with the block projectors (on-block); K (complex conjugation) is a Hermitian involution but reflects WITHIN the doublet with P_s K P_d = 0 and its ... (The bare code `Q1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: Q1 is TWO gates, not one - the holomorphy fork closes only the
 Scope: Finite linear-algebra reconciliation on the generation factor R^3; sets no audit status, adopts no axiom, primitive or import.
 Escape conditions (negative claims): Five off-block-grading routes remain open and untouched (equivariant APS/Z_N spectral asymmetry, multi-factor Connes-Lott on a separate factor, C_3-breaking involutions such as G_off, twisted/modular spectral triples, larger Hilbert extensions); the note rules out only the holomorphy-derived objects.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Q1 is TWO gates, not one: the holomorphy fork closes only the value bit — corrects a circulated coverage-audit claim; five off-block routes left open.
 
@@ -32,7 +36,8 @@ Q1 is TWO gates, not one: the holomorphy fork closes only the value bit — corr
 - Source commit: `42ceba40bb895b4210625203c0c0c28b77798e9a`
 - git blob: `3682e7925f4b7a2e960d47b490a6cebbf2ae53e0`
 - sha256: `27504cac61984ad15246200911ae1364eb6240e573c6e6e74085ad4e0e2c213f`
-- Lines: 181; runners named: scripts/q1_holomorphy_chirality_double_unlock_2026_06_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1636_Q1_HOLOMORPHY_CHIRALITY_DOUBLE_UNLOCK_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch05/1636_Q1_HOLOMORPHY_CHIRALITY_DOUBLE_UNLOCK_NOTE_2026-06-04.md)
+- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/q1_holomorphy_chirality_double_unlock_2026_06_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Corrects a previously circulated coverage-audit claim (holomorphy = chirality, s
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

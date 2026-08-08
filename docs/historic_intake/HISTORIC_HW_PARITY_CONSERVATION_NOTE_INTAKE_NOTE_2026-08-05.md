@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: AIRTIGHT — combinatorial argument plus the Hamming-distance 
 Scope: BZ-corner operators built from site-phase products on an even-L cubic lattice.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Airtight Hamming-parity selection rule (68/68) — even-order polynomials preserve hw-parity.
 
@@ -32,7 +34,8 @@ Airtight Hamming-parity selection rule (68/68) — even-order polynomials preser
 - Source commit: `ddf443b4096131717a086480abb7a6a3150a7741`
 - git blob: `15fbf97a4896bb7b8fe10c41cb68cd5a7cce47e3`
 - sha256: `953f3570309a50d9330fef184d0fe058e9e79cfebaad36063fe891b8a641a9e1`
-- Lines: 87; runners named: scripts/frontier_hw_parity_conservation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/718_HW_PARITY_CONSERVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/718_HW_PARITY_CONSERVATION_NOTE.md)
+- Lines: 87; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hw_parity_conservation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

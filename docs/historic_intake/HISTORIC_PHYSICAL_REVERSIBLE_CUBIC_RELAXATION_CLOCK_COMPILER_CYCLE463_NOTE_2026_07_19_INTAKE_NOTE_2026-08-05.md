@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Broad gravity or no-go claim FAIL; no minimum-content theorem 
 Scope: Both E/G comparisons and both coarse/physical inverses exact, with work and boundary leakage, divisibility remainders, decoder mismatches, clock inverse failures and all-24 covariance failures all zero; the executable does NOT enumerate the elementary gates and is blank at word-block level.
 Escape conditions (negative claims): Explicitly avoids a prior recorded mistake: the lattice-greens ledger warns that finite fixed-parameter checks do not prove the required uniform infinite-distance asymptotic, and Cycle 463 does not repeat it; Cycle 459's local-relaxation reopening is exactly what this cycle executes, showing why the earlier boundary could not support a no-go.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Constructive retirement WITH a live numerical-integrity flag: replaces the hard-coded 3D orbit profile and 150 preparation angles with ONE reversible local six-neighbour rule - but held residuals degrade EIGHT ORDERS OF MAGNITUDE vs train (4.4e-16 -> 5.6e-8) and the degradation propagates unexplained through the downstream consumers (attached). Audit must treat the held-residual cliff as an open defect, not noise.
 
@@ -32,6 +34,7 @@ Constructive retirement WITH a live numerical-integrity flag: replaces the hard-
 - Source commit: `c8492afb9d09eb18d38c1c701b831c2d247c6462`
 - git blob: `caadc17f2536175c8a8b7af1b41477fcb92a34f1`
 - sha256: `833faec147b30d6de61de7b3a3b47afc7b7f01d97f18240f0a29e435b0c78e89`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3006_PHYSICAL_REVERSIBLE_CUBIC_RELAXATION_CLOCK_COMPILER_CYCLE463_NOTE_2026-07-19.md](../../archive_unlanded/historic_intake_originals/branch09/3006_PHYSICAL_REVERSIBLE_CUBIC_RELAXATION_CLOCK_COMPILER_CYCLE463_NOTE_2026-07-19.md)
 - Lines: 348; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ Held residuals degrade by eight orders of magnitude relative to train (5.59e-8 v
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Corrects a distinctness count from five to three by identifyin
 Scope: Counting distinct single-class values in the N_taste boundary.
 Escape conditions (negative claims): Deriving the uniform-16 assignment separately.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of landed content: the five Hamming-weight assignments are NOT five pairwise-distinct values - the k=0,4 and k=1,3 equalities are structural binomial symmetries - so a landed row's distinctness count of five is corrected to three.
 
@@ -32,6 +34,7 @@ Correction of landed content: the five Hamming-weight assignments are NOT five p
 - Source commit: `62f982e3d9292389ac980f0aeda007b85f6004ff`
 - git blob: `e28e8bf9291b08761c4eb580cc7b18429c57a2fd`
 - sha256: `3c2e5082d2685fc05f2ccce3a143277f861b6d68e225b364261c407ee920d840`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10517_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10517_NO_GO_LEDGER.md)
 - Lines: 6; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A landed row claimed five distinct values where structural symmetry gives three 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

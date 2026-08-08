@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: NEGATIVE RESULT — v = M_Pl alpha_LM^16 is a numerically accu
 Scope: 1-loop CW effective potential with rooted staggered tastes (N_eff = 12) versus the L_t = 2 taste-determinant power law.
 Escape conditions (negative claims): The negative rests on the taste formula arising from the multiplicative taste-determinant structure rather than the logarithmic effective potential; internal route verdicts name the escapes — the eigenvalue-prefactor route fails because the prefactor is an O(1) number, and one route is graded PROMISING STRUCTURE blocked only because the O(1) coefficients c_k are not computed.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 CW no-go: exp(-C/alpha) vs alpha^16 structurally different — C=1 not derivable from Coleman-Weinberg; route killed with the near-agreement caveat noted.
 
@@ -32,6 +34,7 @@ CW no-go: exp(-C/alpha) vs alpha^16 structurally different — C=1 not derivable
 - Source commit: `feebdff7b41775e54b63a550d7cd526f1257a8c1`
 - git blob: `9cd9813c359939ef088446f55d8cf38a4083d7ad`
 - sha256: `6e2155840f03875b7bce09eacce847aa131152ba47610db121b02103d0541a3a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/701_HIERARCHY_PREFACTOR_DERIVATION.md](../../archive_unlanded/historic_intake_originals/branch03/701_HIERARCHY_PREFACTOR_DERIVATION.md)
 - Lines: 381; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Notes the near-agreement of the taste exponent -38.41 with -4 pi^2 = -39.48 (2.7
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

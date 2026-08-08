@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_verification_note
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Algebra sound, 'CLOSES' language slightly outruns what the fin
 Scope: Finite-dimensional verification only (PASS=7 FAIL=0, 5 flags); does not alter the chain's verdict beyond scoping and does not touch the firewalled r=1/2.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Independent re-derivation of the chirality chain confirming the algebra while flagging three overstated runner checks and a hardcoded decoupling in landed-numbered PRs — an audit-relevant verification with named defects.
 
@@ -32,7 +34,8 @@ Independent re-derivation of the chirality chain confirming the algebra while fl
 - Source commit: `071dce904afcb8b18c69a83086cb5b05e6513887`
 - git blob: `ecbc9a92a48b373aaf71f7bcf130647871a247ca`
 - sha256: `cd1c6cffe79a986ff0b93679529fc6991bab6744f57445c1a13177a2db5e2328`
-- Lines: 33; runners named: scripts/adversarial_verify_chirality_chain_2026_06_09.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/41_ADVERSARIAL_VERIFICATION_CHIRALITY_CHAIN_3316_3317_3320_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch01/41_ADVERSARIAL_VERIFICATION_CHIRALITY_CHAIN_3316_3317_3320_NOTE_2026-06-09.md)
+- Lines: 33; runners named: historic runner (unpinned, not in this packet): `scripts/adversarial_verify_chirality_chain_2026_06_09(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Three PR runner checks overstated; #3317's decoupling rests on a hardcoded premi
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_verification_note
 intake_directive: owner_2026-08-05
 ```
 

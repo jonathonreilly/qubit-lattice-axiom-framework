@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_candidate_retained_grade_positive_theorem
+Claim type: positive_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Review-loop pass; independent audit still required before effe
 Scope: Source/readiness review only; sets no audit status.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean unlanded positive: quantified projective-ratio implication proved from explicit hypotheses, review-loop pass. FLAG for audit: the note claims no dependencies or imports - verify that claim rather than inherit it.
 
@@ -32,6 +34,7 @@ Clean unlanded positive: quantified projective-ratio implication proved from exp
 - Source commit: `cea51f45d369e5b38c4e4bbce201897485ca2e83`
 - git blob: `9805c86137e78f61db678e9c7bea56f83732b0bb`
 - sha256: `bc54c16520fb3830f66d1ee333ebb109fac72f08c749bc593b504590d303fa6b`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10625_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10625_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 24; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ claims 'no dependency or import' for a theorem in a stdout-repair cycle — veri
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_candidate_retained_grade_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

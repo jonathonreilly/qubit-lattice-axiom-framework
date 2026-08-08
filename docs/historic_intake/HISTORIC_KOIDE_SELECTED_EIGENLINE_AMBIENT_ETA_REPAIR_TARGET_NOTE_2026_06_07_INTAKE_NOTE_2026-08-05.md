@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_open_gate
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The ambient finite Wilson eta proxy is diagnostic-only and sho
 Scope: Companion/diagnostic only; does not modify the audit-ratified Tier-A witness KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24 and changes no audit or effective status.
 Escape conditions (negative claims): Closure of the selected endpoint still requires a selected rank-one line plus an endpoint-lift theorem (runner: alpha=0 and endpoint offset c=0).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 ERRATUM against a retained Tier-A witness: the finite Wilson eta proxy is diagnostic-only — repair tracked; audit work order.
 
@@ -32,7 +34,8 @@ ERRATUM against a retained Tier-A witness: the finite Wilson eta proxy is diagno
 - Source commit: `d3405f38d79206b0e755c5d3c46cc5eecab906f1`
 - git blob: `ca6e51f2089f83c529b08d4f1e90a76c18bb5707`
 - sha256: `515c3f50f8359fd8934ca5eb164451305e1c19f9ee7565213350a917f0cbfbe8`
-- Lines: 75; runners named: scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1081_KOIDE_SELECTED_EIGENLINE_AMBIENT_ETA_REPAIR_TARGET_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch04/1081_KOIDE_SELECTED_EIGENLINE_AMBIENT_ETA_REPAIR_TARGET_NOTE_2026-06-07.md)
+- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that a currently retained Tier-A witness carries wording the author beli
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_open_gate
 intake_directive: owner_2026-08-05
 ```
 

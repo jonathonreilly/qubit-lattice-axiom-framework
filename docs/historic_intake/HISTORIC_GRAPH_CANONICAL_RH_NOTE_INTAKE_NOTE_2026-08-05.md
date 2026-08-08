@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The 3D surface cannot produce SU(2) singlets from SU(2) double
 Scope: Answer splits: YES for antiparticle existence and right-handed quantum numbers, NO for SU(2) chirality.
 Escape conditions (negative claims): The negative is bounded to SU(2)-singlet production: the escape is the 4D chirality gamma_5 step, which the note reframes not as adding time by hand but as the minimal structure that breaks L/R degeneracy.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Graph-canonical RH boundary: the 3D surface cannot produce SU(2) singlets — the 4D step is the minimal additional structure; five attacks priced.
 
@@ -32,7 +34,8 @@ Graph-canonical RH boundary: the 3D surface cannot produce SU(2) singlets — th
 - Source commit: `c93dfdf19df1e953d81df9e31de56392816835b6`
 - git blob: `6b51770309aa2c282ec1e0a289b357507fcdd173`
 - sha256: `e673c57390d4aaa8d5bb509525f5fec5a3a2d39e19689a36f3693322e74bdd94`
-- Lines: 78; runners named: scripts/frontier_graph_canonical_rh.py, scripts/frontier_su3_formal_theorem.py, scripts/frontier_right_handed_sector.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/639_GRAPH_CANONICAL_RH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/639_GRAPH_CANONICAL_RH_NOTE.md)
+- Lines: 78; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_graph_canonical_rh(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_su3_formal_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_right_handed_sector(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

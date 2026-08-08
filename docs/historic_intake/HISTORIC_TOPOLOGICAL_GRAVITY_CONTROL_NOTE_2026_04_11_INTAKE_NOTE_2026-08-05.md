@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_control_refutation
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Edge-mode loss is triggered by a smooth parity-coupled structu
 Scope: One audited open SSH surface; exploratory only.
 Escape conditions (negative claims): The refutation is control-matched only on field scale — the note names the open routes: a structured non-gravitational control family beyond the free-density template, the same observable on a Wilson or open 2D surface, and matching low-frequency spatial profile as well as scale.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Control refutation on the record: edge modes lost to a smooth structured field at the same scale — the topological-gravity reading self-refuted.
 
@@ -32,7 +34,8 @@ Control refutation on the record: edge modes lost to a smooth structured field a
 - Source commit: `84da1a307021a5645e8398a1ab3e13b588b36986`
 - git blob: `80e52743899fb3dabda4b1eba44117f455699fb9`
 - sha256: `1d4eca30e1df8f0002b47879a5d56800b2805fc990ac4e06240b3e827208eccd`
-- Lines: 91; runners named: scripts/frontier_topological_phases.py, scripts/frontier_topological_control.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2074_TOPOLOGICAL_GRAVITY_CONTROL_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch07/2074_TOPOLOGICAL_GRAVITY_CONTROL_NOTE_2026-04-11.md)
+- Lines: 91; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_topological_phases(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_topological_control(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-refutation: the note retracts the gravity-specific/Einstein-like topologica
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_control_refutation
 intake_directive: owner_2026-08-05
 ```
 

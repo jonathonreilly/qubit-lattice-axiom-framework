@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_gate
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The firewall prevents the next bridge from accepting the same 
 Scope: Gate hardening only, bounded-support; supplies no O_H, no C_sH/C_HH rows, and no physical y_t.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The anti-definition-as-derivation firewall: future O_H certificates must carry non-shortcut identity and normalization references — the gate hardening that prevents the next H_unit.
 
@@ -32,7 +34,8 @@ The anti-definition-as-derivation firewall: future O_H certificates must carry n
 - Source commit: `9ace5d98b5142a559e996f58558386f3c256ccfc`
 - git blob: `4418d604fb09384088dffb8ef178ada4233e938f`
 - sha256: `7338f0e65284d8ad95c97a5372f3af865a673a29f98c5c49529b76163f707961`
-- Lines: 56; runners named: scripts/frontier_yt_canonical_higgs_operator_certificate_gate.py, scripts/frontier_yt_canonical_higgs_operator_semantic_firewall.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2150_YT_CANONICAL_HIGGS_OPERATOR_SEMANTIC_FIREWALL_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2150_YT_CANONICAL_HIGGS_OPERATOR_SEMANTIC_FIREWALL_NOTE_2026-05-04.md)
+- Lines: 56; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_canonical_higgs_operator_certificate_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_canonical_higgs_operator_semantic_firewall(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_gate
 intake_directive: owner_2026-08-05
 ```
 

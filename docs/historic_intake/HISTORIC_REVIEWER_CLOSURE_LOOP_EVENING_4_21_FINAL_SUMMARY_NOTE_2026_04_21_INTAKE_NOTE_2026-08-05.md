@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The Gate-2 open list is exhausted; the remaining Gate-1 primit
 Scope: 11 loop iterations on branch evening-4-21 against the canonical reviewer surface; 50 tests PASS across iters 8-11.
 Escape conditions (negative claims): States the two escapes for the residual primitives: new framework axioms beyond Cl(3)/Z^3, or new physical-dynamics mechanisms outside the observable-grounded reviewer surface.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Reviewer-closure loop TERMINAL: all four Gate-2 items closed across iters 8-11 â€” WITH the Nature-grade-on-dense-numerics flag.
 
@@ -32,6 +34,7 @@ Reviewer-closure loop TERMINAL: all four Gate-2 items closed across iters 8-11 â
 - Source commit: `155aaedba4848325e14e2ba342f11682d87357d4`
 - git blob: `e1e4a049d4fc68bc89f72aae74dc857f1a3b3279`
 - sha256: `164b4b9f8f6603c808b84ab7e0847945c183fd228b51302cedce5c37e2d02fe7`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1813_REVIEWER_CLOSURE_LOOP_EVENING_4_21_FINAL_SUMMARY_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch06/1813_REVIEWER_CLOSURE_LOOP_EVENING_4_21_FINAL_SUMMARY_NOTE_2026-04-21.md)
 - Lines: 197; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -60,6 +63,7 @@ Labels results 'Nature-grade' on the basis of dense-grid sampling and empirical 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

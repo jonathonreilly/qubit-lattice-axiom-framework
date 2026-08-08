@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: r = 1/2 is SYMMETRIC-STATIONARY (unstable under sharpening r -
 Scope: C_3-equivariant Hermitian circulant on hw=1; observed Koide Q values enter only as labelled observational inputs.
 Escape conditions (negative claims): The open gate is what dynamically selects the 2-sector block-count coarse-graining; the 'colored -> hierarchy, Majorana -> degenerate' story is explicitly a consistency narrative, not a derivation.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The dial-symmetry CORRECTION: the genuine symmetry is r -> 1/(4r), not r <-> 1-r — fixed point r = 1/2; corrects a prior claim, with the 1766 contradiction flagged.
 
@@ -32,7 +34,8 @@ The dial-symmetry CORRECTION: the genuine symmetry is r -> 1/(4r), not r <-> 1-r
 - Source commit: `8fb5ebd7d2c1f381456b088d6e53dde21df1b66f`
 - git blob: `c87d7303252a5496af42a2f8bb60602cd60f4237`
 - sha256: `5a9fb898302eef6e659d46e5031f8e1d9f469158e275d014d40bb2fee330ec3d`
-- Lines: 153; runners named: scripts/record_axiom_ptA_dial_stability_multilane_2026_06_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1763_RECORD_AXIOM_PTA_DIAL_STABILITY_MULTILANE_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch06/1763_RECORD_AXIOM_PTA_DIAL_STABILITY_MULTILANE_NOTE_2026-06-04.md)
+- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/record_axiom_ptA_dial_stability_multilane_2026_06_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that an earlier forcing version of this axiom was falsified by quark and
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

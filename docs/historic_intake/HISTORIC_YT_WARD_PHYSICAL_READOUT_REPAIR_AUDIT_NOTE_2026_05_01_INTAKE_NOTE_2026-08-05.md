@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Exact negative boundary / open repair map — the repo contain
 Scope: The repair requirements for the demoted Ward derivation theorem.
 Escape conditions (negative claims): A tree-level operator-matching theorem and runner computing functional derivatives before and after SSB, tracking chirality and scalar-leg factors, and proving no extra normalization enters.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The audit-derived repair map: the repo contains prose and arithmetic for the Ward derivation but not the required operator-matching theorem/runner — the work order that defines the lane's honest state.
 
@@ -32,7 +34,8 @@ The audit-derived repair map: the repo contains prose and arithmetic for the War
 - Source commit: `6aaeaead19d419b63cd504e3c722bce4ea61e76d`
 - git blob: `05e9fe619f906d8922234150c7973ba59a3a1ffe`
 - sha256: `38f2b3e1a2d86b9713d417552243ffd4dce3d6560a29d6bba490eb40d4fedf6b`
-- Lines: 67; runners named: scripts/frontier_yt_ward_physical_readout_repair_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2483_YT_WARD_PHYSICAL_READOUT_REPAIR_AUDIT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch08/2483_YT_WARD_PHYSICAL_READOUT_REPAIR_AUDIT_NOTE_2026-05-01.md)
+- Lines: 67; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_ward_physical_readout_repair_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

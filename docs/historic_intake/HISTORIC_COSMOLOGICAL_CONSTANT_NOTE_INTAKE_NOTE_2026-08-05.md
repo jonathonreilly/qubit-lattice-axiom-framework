@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The framework does NOT solve the cosmological constant problem
 Scope: Five tested approaches; the UV-IR observation is flagged as interesting but not a solution.
 Escape conditions (negative claims): Names four escape mechanisms explicitly: rho_vac scaling as N^-p with p >> 1, an emergent cancellation symmetry, dynamical topology adjustment, or a growing-graph vacuum unlike the sum-over-modes picture.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The adversarial CC negative: five approaches to constrain Lambda from graph vacuum energy ALL FAIL — 'the framework does NOT solve the CC problem', four escape mechanisms named; direct contradiction of the pulled CC terminal, both go to audit.
 
@@ -32,7 +34,8 @@ The adversarial CC negative: five approaches to constrain Lambda from graph vacu
 - Source commit: `623e6bd163ba604cf6200fed9418bac12a192705`
 - git blob: `9de0bc6eca11cf9a68e954ab094d94dca3f7b3a4`
 - sha256: `00d7b71a69fa59ec25f7d35ad43baf6c19832cf50520b9a35616f91cf6219b5e`
-- Lines: 110; runners named: scripts/frontier_cosmological_constant.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/264_COSMOLOGICAL_CONSTANT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/264_COSMOLOGICAL_CONSTANT_NOTE.md)
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cosmological_constant(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Directly contradicts the more positive framing of the other April cosmological-c
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

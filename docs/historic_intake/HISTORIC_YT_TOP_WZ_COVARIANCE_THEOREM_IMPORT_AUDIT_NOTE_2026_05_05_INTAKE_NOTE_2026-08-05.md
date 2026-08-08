@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: None can — exact negative boundary, no importable same-surfa
 Scope: Whether any current-branch artifact can be imported as the product-measure, conditional-independence, or closed-covariance theorem.
 Escape conditions (negative claims): Produce a genuine production/theorem artifact fixing cov_dE_top_dM_W on the same top/W source surface, or measure matched rows.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 W/Z covariance terminal: no importable same-surface top-W covariance theorem exists — every existing surface classified; the pairing-artifact mechanism exact.
 
@@ -32,7 +34,8 @@ W/Z covariance terminal: no importable same-surface top-W covariance theorem exi
 - Source commit: `d2e4a0e1086db4c3833befd5fbc450962ca10d26`
 - git blob: `bfa6b702f6ebfef8aa4e6570d994ad456221903f`
 - sha256: `b072740a669e2212ef7300a06b04b0f45e62204c036b15cd6430af5dfb53b949`
-- Lines: 68; runners named: scripts/frontier_yt_top_wz_covariance_theorem_import_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2470_YT_TOP_WZ_COVARIANCE_THEOREM_IMPORT_AUDIT_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch08/2470_YT_TOP_WZ_COVARIANCE_THEOREM_IMPORT_AUDIT_NOTE_2026-05-05.md)
+- Lines: 68; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_top_wz_covariance_theorem_import_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -69,6 +72,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

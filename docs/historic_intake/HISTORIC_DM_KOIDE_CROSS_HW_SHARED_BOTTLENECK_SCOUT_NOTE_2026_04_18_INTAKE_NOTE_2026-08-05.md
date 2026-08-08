@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: DEAD (structural) - the DM Case-3 and Koide bottlenecks are ge
 Scope: S_3-invariant retained scalar observables on the taste cube C^8 / C^16 built from the retained axis-hopping operators; dimensionless taste-cube basis, no mass units.
 Escape conditions (negative claims): The negative rests on (i) S_3-invariance of the observable, (ii) the absence of the A_2 sign irrep in the C^8 decomposition, and (iii) the retained-scalar/axiom-native restriction on which observables count; a delta-odd observable would need to break S_3 axis-permutation symmetry or introduce non-axiom-native content.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Structural cross-lane result: the DM Case-3 and Koide bottlenecks are one shared absence (no A_2 irrep in C^8's S_3 content) — with its three-part escape stated.
 
@@ -32,7 +34,8 @@ Structural cross-lane result: the DM Case-3 and Koide bottlenecks are one shared
 - Source commit: `5329f8dbf8643636c3de4ddce4214bd5a4d26794`
 - git blob: `a79c48ffeba996148c779242df0c4518917acb50`
 - sha256: `0292644bff7c563eae3a4ea3961a2d9acd8e379e62f2586c15df99da5be94458`
-- Lines: 275; runners named: scripts/frontier_dm_koide_cross_hw_shared_bottleneck_attack.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/366_DM_KOIDE_CROSS_HW_SHARED_BOTTLENECK_SCOUT_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/366_DM_KOIDE_CROSS_HW_SHARED_BOTTLENECK_SCOUT_NOTE_2026-04-18.md)
+- Lines: 275; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_koide_cross_hw_shared_bottleneck_attack(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-16
 
@@ -22,7 +22,9 @@ Original verdict: The bridge theorem is closed; what remains is the repo-wide nu
 Scope: The 3+1 scalar route on the minimal APBC block; the uniqueness argument is that a one-link object carries a first root and a two-link object a square root, so only the plaquette's four link powers admit the fourth root.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The scalar-bridge theorem closing the plaquette insertion gap by four exact ingredients — with the pending numeric-migration caveat carried.
 
@@ -32,7 +34,8 @@ The scalar-bridge theorem closing the plaquette insertion gap by four exact ingr
 - Source commit: `37b57b4edbd3764ec7cc0da5b66625c783671589`
 - git blob: `64b4a85734fa026fc27fe4ee9f51429c9a78d33a`
 - sha256: `043159c86c6a869c490add886a6a67b065eefaddd8ef0061216b472c67baa535`
-- Lines: 171; runners named: scripts/frontier_gauge_vacuum_plaquette_bridge_theorem.py, scripts/frontier_scalar_3plus1_temporal_ratio.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3610_GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3610_GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE.md)
+- Lines: 171; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_bridge_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_scalar_3plus1_temporal_ratio(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Numeric migration on main still pending a dedicated rerun, so downstream lanes s
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

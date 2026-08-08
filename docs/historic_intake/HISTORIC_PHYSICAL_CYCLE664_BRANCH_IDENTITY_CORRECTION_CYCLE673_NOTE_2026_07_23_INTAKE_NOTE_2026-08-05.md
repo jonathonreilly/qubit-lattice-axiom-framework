@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: WITHDRAWN: the identification of the L9/L13 beta=-0.30 and L13
 Scope: Four rows of Cycle 664 only; the correction is explicitly restricted to those rows and does not erase the finite-box discoveries.
 Escape conditions (negative claims): The methodological escape is explicit: replace 'smallest residual in a wide window' (Cycle 629's inherited global-minimum rule) with a branch-identity requirement, because many razor-thin finite-L zeros coexist inside the continuum window.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 CORRECTION that WITHDRAWS part of Cycle 664: only ONE of four selected roots agrees with the independently branch-tracked Cycle-662 surface - the L9/L13 identifications are withdrawn - and Cycle-629's global-minimum rule is RETRACTED; the correction propagates transitively to the global scoreboard. The methodological escape is explicit. The four-theta_2 table whose rows this withdraws is attached as evidence.
 
@@ -32,6 +34,7 @@ CORRECTION that WITHDRAWS part of Cycle 664: only ONE of four selected roots agr
 - Source commit: `617f83f851885c2817f681a7eab9d0d28cae0fbe`
 - git blob: `1592f71701a8a80f0b61a83e0385a7c9cd874710`
 - sha256: `5932990d3cd7efb840253ee93f61765c5a514388b7d8aba6dddfe979091deaee`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2832_PHYSICAL_CYCLE664_BRANCH_IDENTITY_CORRECTION_CYCLE673_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/2832_PHYSICAL_CYCLE664_BRANCH_IDENTITY_CORRECTION_CYCLE673_NOTE_2026-07-23.md)
 - Lines: 100; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Three of four previously reported identifications were wrong — a 75% error rat
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

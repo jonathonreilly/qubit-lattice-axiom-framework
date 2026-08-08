@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_science_only_direct_counting_theorem_plus_sharp_retained_residual
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The direct bridge c_cell = Tr(rho_cell P_A) is closed as a cel
 Scope: Cell-counting law only; quotient-only counting is shown physically inadmissible on two independent grounds.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The cell-counting classification terminus: every admissible elementary count observable forces c_cell = 1/4 — the direct bridge closed as counting.
 
@@ -32,7 +34,8 @@ The cell-counting classification terminus: every admissible elementary count obs
 - Source commit: `badaf1a4d383357e72fe570bd3fa0eb053db7dd3`
 - git blob: `ab4bd39cad632df5e07eaa9cfa7f87e227003630`
 - sha256: `f25041a9ea9b7efed79671a05c9d3d5008b8a5ee4ab97a5eb9a6558f3f2a7a55`
-- Lines: 386; runners named: scripts/frontier_planck_worldtube_to_boundary_cell_counting_theorem_lane.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1495_PLANCK_SCALE_WORLDTUBE_TO_BOUNDARY_CELL_COUNTING_THEOREM_LANE_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1495_PLANCK_SCALE_WORLDTUBE_TO_BOUNDARY_CELL_COUNTING_THEOREM_LANE_2026-04-23.md)
+- Lines: 386; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_worldtube_to_boundary_cell_counting_theorem_lane(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_science_only_direct_counting_theorem_plus_sharp_retained_residual
 intake_directive: owner_2026-08-05
 ```
 

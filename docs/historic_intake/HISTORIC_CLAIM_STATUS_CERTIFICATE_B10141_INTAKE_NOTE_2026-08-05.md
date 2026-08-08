@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A demotion/cleanup, not a theorem proof and not an audit verdi
 Scope: One document's claim type.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Demotion of landed content: docs/ASSUMPTION_DERIVATION_LEDGER.md retyped as meta with a runner firewall verifying the metadata - a broad roadmap ledger had been carrying theorem-shaped status. Work order for the audit lane.
 
@@ -32,6 +34,7 @@ Demotion of landed content: docs/ASSUMPTION_DERIVATION_LEDGER.md retyped as meta
 - Source commit: `53b99a9b9181bc763f18e6d67215765a702fc290`
 - git blob: `4a534050a1d36be384c7611c55184e93a9e66ef4`
 - sha256: `10db1f3fb48a4d322c1ec66cdb0228da9bf5712049b34d1329b16e74f3297421`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10141_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10141_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 15; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A broad roadmap ledger had been carrying theorem-shaped authority for ingredient
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

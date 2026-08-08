@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The chain stands closed up to the two named premises, with the
 Scope: Meta synthesis; nothing landed or promoted, independent audit of every cited note required.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The gravity-chain season terminal: six-link chain closed up to TWO named premises — localizes the landed #5061-#5081 season's residue exactly.
 
@@ -32,6 +34,7 @@ The gravity-chain season terminal: six-link chain closed up to TWO named premise
 - Source commit: `368d66e778770114709e2a04cd5a2fb8609fc03e`
 - git blob: `3d97c73f8967bae2a0686f98531d0d6af61d0f32`
 - sha256: `891d097ba955b52d82c8e4cbcc778ea032d349f5ff87e12e99dbb16a73da9c77`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/645_GRAVITY_CHAIN_CLOSURE_SEASON_SYNTHESIS_2026-07-08.md](../../archive_unlanded/historic_intake_originals/branch02/645_GRAVITY_CHAIN_CLOSURE_SEASON_SYNTHESIS_2026-07-08.md)
 - Lines: 97; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Lists its own falsifiers, including audit failure of the June conformal-class in
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: 1 monotone timelike axis + 3 reversible spacelike axes + a fin
 Scope: Delivers the 1-vs-3 split and the causal cone, NOT the full metric tensor or the overall sign (which is convention, matching Sylvester's two components). Unaudited candidate, graph-visible only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 (1,3) signature assembled from three structural facts (reversible spatial group, monotone record axis, finite cone) — clean assembly theorem.
 
@@ -32,7 +34,8 @@ Scope: Delivers the 1-vs-3 split and the causal cone, NOT the full metric tensor
 - Source commit: `35a8b9ea9d4384f43195ddd3862def4a68d52745`
 - git blob: `4994f03281a0f722b5b28a8525ae749895096771`
 - sha256: `3191911a56e7b7d2fe1a8648a444146ee103805575282f562066e8f9f79e9b45`
-- Lines: 99; runners named: scripts/lorentzian_signature_from_record_i_gradient_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1117_LORENTZIAN_SIGNATURE_FROM_THE_RECORD_I_GRADIENT_ONTOLOGICAL_ROUTE_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1117_LORENTZIAN_SIGNATURE_FROM_THE_RECORD_I_GRADIENT_ONTOLOGICAL_ROUTE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `scripts/lorentzian_signature_from_record_i_gradient_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

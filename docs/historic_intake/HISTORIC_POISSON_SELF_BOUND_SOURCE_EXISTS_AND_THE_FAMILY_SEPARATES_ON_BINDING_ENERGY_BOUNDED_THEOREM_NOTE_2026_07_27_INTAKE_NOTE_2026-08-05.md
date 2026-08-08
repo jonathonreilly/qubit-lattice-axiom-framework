@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — no axiom load-bearing; assumes the parent runner's Dirichlet graph Laplacian and operator family (verified against committed blobs in row P0)
 
@@ -22,7 +22,9 @@ Original verdict: It supplies the response-kernel bridge and the sign normalizat
 Scope: Parent note's own Dirichlet lattice and four-member family, finite lattices up to N=52 (N=96 for kernel-only rows), supplied t=1 and mu^2=0.25, and a supplied isolation condition; explicitly not shown: that no other local operator passes, that the limits exist as proved limits rather than fits, or that the separation survives a multi-particle source.
 Escape conditions (negative claims): The separation rests entirely on the stated isolation condition (an isolated object's binding energy must have a box-independent limit); row R14 shows the cost — biharmonic's local field differences across a fixed window ARE perfectly box-independent (1.15613 to 1.45532, bounded fit), so under a reference-to-fixed-radius choice biharmonic is not excluded at all. The hostile reading that this smuggles in an asymptotically-free Newtonian premise is accepted and the claim is demoted to a bounded theorem under a named condition rather than an unconditional no-go. Named falsifiers per row (e.g. exhibit a coupling at which converged biharmonic depth saturates).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Box-independent self-consistent source exists under per-operator sign normalization + the response-kernel bridge the ledger row asks for; carries the F1/F2 frozen-stars 3D-width finding (second independent attack on that landed note).
 
@@ -32,7 +34,8 @@ Box-independent self-consistent source exists under per-operator sign normalizat
 - Source commit: `7f49811a6b10985f7137e78a01a369d7c3884f8b`
 - git blob: `d7123f1b5cb03e8402c22527d3c7e94a5cf890a9`
 - sha256: `8a77a0a2afe82d24aea653ae7051f717495c95cffdb23669e1c6b6f3065eb6ec`
-- Lines: 137; runners named: scripts/physical_poisson_self_bound_source_exists_cycle713_2026_07_27.py, scripts/frontier_frozen_stars_rigorous.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3091_POISSON_SELF_BOUND_SOURCE_EXISTS_AND_THE_FAMILY_SEPARATES_ON_BINDING_ENERGY_BOUNDED_THEOREM_NOTE_2026-07-27.md](../../archive_unlanded/historic_intake_originals/recovery/3091_POISSON_SELF_BOUND_SOURCE_EXISTS_AND_THE_FAMILY_SEPARATES_ON_BINDING_ENERGY_BOUNDED_THEOREM_NOTE_2026-07-27.md)
+- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_self_bound_source_exists_cycle713_2026_07_27(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Rows F1/F2 find the landed FROZEN_STARS_RIGOROUS_NOTE's 3D width grows monotonic
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

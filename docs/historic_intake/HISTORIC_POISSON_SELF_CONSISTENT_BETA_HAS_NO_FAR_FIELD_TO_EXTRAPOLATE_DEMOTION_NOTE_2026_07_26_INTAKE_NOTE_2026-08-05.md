@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — no axiom load-bearing; assumes the parent propagator construction and check_field_physics diagnostic
 
@@ -22,7 +22,9 @@ Original verdict: The parent note's finite-size caveat is removed as the sole de
 Scope: Every row scoped to the tested construction at the parent note's parameters and stated lattice sizes (N=16..48; N=12 excluded because check_field_physics returns nan); not a claim that the lane's field equation is not Poisson, that any rival is better, or that no extrapolation family could reach 1.0 — only the two the repo's own distance-law script uses.
 Escape conditions (negative claims): Confined to the caveat and the diagnostic. Escapes named: another extrapolation family could in principle reach 1.0 (untested beyond two); S6 does not claim the field has no far field, only that this fit window does not sample one; the strongest objection (that a box-filling self-consistent source need not have a continuum limit at all) is accepted as correct physics but shown to strengthen rather than rescue, since either the limit is 1.16-1.27 or there is no continuum value to appeal to. The constructive repair — a localized source of fixed extent and fixed total mass with the exponent fitted outside it — is named as the successor and requires giving up the per-layer normalization, which cycle 710 R6 showed does not by itself repair the response kernel, so both repairs would be needed.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 No-go: self-consistent beta extrapolates to 1.27/1.16, never 1.0 — removes the finite-size caveat as sole defence of the landed Bounded Claim 1.
 
@@ -32,7 +34,8 @@ No-go: self-consistent beta extrapolates to 1.27/1.16, never 1.0 — removes the
 - Source commit: `refs/pull-cache/5662`
 - git blob: `0a6df449bc39d178db451b4bddcd6b20fbec2c47`
 - sha256: `f2ac73ea05b0a99266c2080493e43503ec9933ca9fba57be47d8f4f0b0a49241`
-- Lines: 230; runners named: scripts/physical_poisson_beta_has_no_continuum_limit_cycle711_2026_07_26.py, scripts/frontier_distance_law_definitive.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3093_POISSON_SELF_CONSISTENT_BETA_HAS_NO_FAR_FIELD_TO_EXTRAPOLATE_DEMOTION_NOTE_2026-07-26.md](../../archive_unlanded/historic_intake_originals/recovery/3093_POISSON_SELF_CONSISTENT_BETA_HAS_NO_FAR_FIELD_TO_EXTRAPOLATE_DEMOTION_NOTE_2026-07-26.md)
+- Lines: 230; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_beta_has_no_continuum_limit_cycle711_2026_07_26(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_definitive(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ audit_required_before_effective_retained: true, bare_retained_allowed: false; on
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

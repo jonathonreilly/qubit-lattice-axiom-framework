@@ -1,9 +1,11 @@
 # Historic intake: Cycle 514 — Route-C Q6 exact symbolic all-axis diagnostic
 
+Explicit subject: IDENTIFIES THE EXACT CAUSE of the Cycle-513 failure: Cycle 513 froze the axis-0 machine-exact matter-nonzero count for the update-3 pre-collision II factor as 35,857 while axis 1 has 35,815 and axis 2 has 35,756 — yet the underlying EXACT SYMBOLIC support is 30,207 on all three ... (The bare code `Q6` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: A REPRESENTATION DECISION, not completed update 3: the next gr
 Scope: Every separated prefix and geometry predicate passes on all three axes; all 27/27 exact matter and named-mediator factor rows pass; all 216 frame/factor comparisons pass with a PREDETERMINED exterior-CAR sign census of 12 positive and 12 negative frames and no fitted phase.
 Escape conditions (negative claims): Gate result FAIL for every broad negative; a compiler no-go is premature. Growth within this simulator does not by itself supply a physical parity compiler.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 RETRACTION identifying the exact cause of the Cycle-513 failure: Cycle 513 froze the axis-0 machine-exact matter-nonzero count for the update-3 pre-collision II f~[ixture] - a REPRESENTATION DECISION, not a completed update - so its nonzero-count fixture was a floating artifact. Failure receipt attached.
 
@@ -32,6 +36,7 @@ RETRACTION identifying the exact cause of the Cycle-513 failure: Cycle 513 froze
 - Source commit: `d2da826ffde432e0f0724ca0daf6555018d848fb`
 - git blob: `39075cf78e4b324027a0823837fb28a384bf64b7`
 - sha256: `e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3017_PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/3017_PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md)
 - Lines: 366; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

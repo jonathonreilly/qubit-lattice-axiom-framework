@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Not yet safe to promote as a full flagship DM-gate closure; th
 Scope: The 2026-04-19/20 gauge-vacuum plaquette first-sector notes and matching runners.
 Escape conditions (negative claims): Names what would suffice: derive the least-positive-bulk rule or label it a new principle, and supply a certified solve theorem reducing the set to two isolated real roots.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Promotion block on the Wilson/DM line-law branch: real new science, but the closure-endpoint note overclaims — the gate record.
 
@@ -32,7 +34,8 @@ Promotion block on the Wilson/DM line-law branch: real new science, but the clos
 - Source commit: `c5b8746c151520dc6cd8f202a5a1eb9ff71558eb`
 - git blob: `ab85ebbc97146abb3e1756a19f048f05dbde3583`
 - sha256: `c1bedc4e7694ff21f00bea6a963b89953271f5f821d2cea6ea93bbca346c6706`
-- Lines: 232; runners named: scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py, scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py, scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1908_SCIENCE_3PLUS1_LINE_LAW_REVIEW_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch06/1908_SCIENCE_3PLUS1_LINE_LAW_REVIEW_NOTE_2026-04-20.md)
+- Lines: 232; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ States that a companion closure-endpoint note overclaims, and that a doublet the
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

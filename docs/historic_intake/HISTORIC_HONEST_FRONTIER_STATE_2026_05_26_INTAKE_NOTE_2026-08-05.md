@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_note
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: single open bridge lemma; most upstream pieces audit-pending
 Scope: post-panel and post-hostile-review honest state
 Escape conditions (negative claims): lift substep-3 to retained; promote Brannen-Plancherel; derive the unit convention as forced; prove the descent lemma
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest terminal state of the pi-bridge after the reversal: hostile-review consolidation finds the 12-cycle no-go was wrong AND the panel reversal OVERSTATES closure - only 1 of 7 upstream bridge pieces is retained-grade, and the whole question reduces to a SINGLE OPEN BRIDGE LEMMA with the lift path named. This, not the reversal headline, is the citable state. Diagnosis companions attached.
 
@@ -32,6 +34,7 @@ The honest terminal state of the pi-bridge after the reversal: hostile-review co
 - Source commit: `e0dca4b49fad78f919ed83a0cf9ab3ec26f2b51a`
 - git blob: `fbfb1921507694ca441f0d7727f9a81196e3c5dd`
 - sha256: `c20b851d422d48efa3cef439bbdd9f31a1a4c5b0a07b3cba497a32896e4ff211`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11534_HONEST_FRONTIER_STATE_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11534_HONEST_FRONTIER_STATE_2026-05-26.md)
 - Lines: 121; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_note
 intake_directive: owner_2026-08-05
 ```
 

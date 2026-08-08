@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BARE normalization closed and described as the cleanest theore
 Scope: Bare cutoff normalization; the renormalized matching step Z_Y(mu) = Z_g(mu) is not fixed by these identities.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The bare-normalization theorem from two exact gauge-field-independent staggered identities — the lane's cleanest bare result.
 
@@ -32,7 +34,8 @@ The bare-normalization theorem from two exact gauge-field-independent staggered 
 - Source commit: `b07dda9e817560cdcc1808eb40116dadc6f00f4f`
 - git blob: `3e22941d013aeae76af9cf06c31a18af33f47c12`
 - sha256: `fa30f64b128f3b4c390703f5ee23e9dc22e352817e7c44fbacacf2ac73ee3618`
-- Lines: 69; runners named: scripts/frontier_yt_gauged_normalization_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2311_YT_GAUGED_NORMALIZATION_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2311_YT_GAUGED_NORMALIZATION_THEOREM_NOTE.md)
+- Lines: 69; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_gauged_normalization_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

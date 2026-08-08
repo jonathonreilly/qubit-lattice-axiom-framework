@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: AIRTIGHT (runner 70/70 PASS) — the full 8-dim generalization
 Scope: Pure math on Z_L^3 for L even; no downstream physics claim.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Airtight BZ-corner simultaneous-eigenbasis theorem (70/70) — full 8-dim generalization.
 
@@ -32,7 +34,8 @@ Airtight BZ-corner simultaneous-eigenbasis theorem (70/70) — full 8-dim genera
 - Source commit: `2a002cb80cfebe4b8cf150ef75d4d99bb5c6e111`
 - git blob: `2c216e6d9e93d271598b76a364debce120a6da05`
 - sha256: `59373c40f447fc3e9c1685471faf03684baaa18ac2665f3c1e6f621484a0a85e`
-- Lines: 74; runners named: scripts/frontier_translation_eigenvalue_bz_corners.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2077_TRANSLATION_EIGENVALUE_BZ_CORNERS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2077_TRANSLATION_EIGENVALUE_BZ_CORNERS_NOTE.md)
+- Lines: 74; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_translation_eigenvalue_bz_corners(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

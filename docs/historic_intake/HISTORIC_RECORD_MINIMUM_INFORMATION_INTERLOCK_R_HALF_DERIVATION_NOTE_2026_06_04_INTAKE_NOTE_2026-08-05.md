@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: FORCED-MODULO-TWO-POSITS: a clean closure modulo two named phy
 Scope: The 2-sector recordable content; the irreversibility half is used from the sister branch, not re-derived.
 Escape conditions (negative claims): Both principles are labelled posits; the note states neither alone forces r = 1/2 and does not claim derivation from the bare Lattice/Quantum/Record axioms.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 r = 1/2 FORCED-MODULO-TWO-POSITS: irreversibility + dimension-blind count — the June attack arc's terminal with both posits honestly labelled.
 
@@ -32,7 +34,8 @@ r = 1/2 FORCED-MODULO-TWO-POSITS: irreversibility + dimension-blind count — th
 - Source commit: `f4b99c105b56ad81d09e2769ba887e379af93d37`
 - git blob: `8d5dd69028667f4dd382ab4ee974da0d8dde07df`
 - sha256: `44265690ba0022d0d5d30c6098ed43a0ef53f96ddf4d5831e078d8cb46432acf`
-- Lines: 420; runners named: scripts/record_minimum_information_interlock_r_half_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1779_RECORD_MINIMUM_INFORMATION_INTERLOCK_R_HALF_DERIVATION_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch06/1779_RECORD_MINIMUM_INFORMATION_INTERLOCK_R_HALF_DERIVATION_NOTE_2026-06-04.md)
+- Lines: 420; runners named: historic runner (unpinned, not in this packet): `scripts/record_minimum_information_interlock_r_half_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The forcing rests on two principles the note itself classifies as outside the ap
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

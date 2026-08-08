@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: An exact topological obstruction to generation identification 
 Scope: Conditional on the Z_3 taste symmetry being physical and on 't Hooft matching applying in the full interacting theory with softly broken Z_3.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact topological obstruction: merging triplets changes nu mod 3 — generation identification blocked topologically; gate honestly not closed.
 
@@ -32,7 +34,8 @@ Exact topological obstruction: merging triplets changes nu mod 3 — generation 
 - Source commit: `9ec1dd93e41044b2cec078673fea56cdc55bfc33`
 - git blob: `384cb95ed6a4861b734c88dd3ca6619b82b20747`
 - sha256: `6e68b16b390b904cd72a85b656f59668c24a71f83984de3595abf1cbbe76a971`
-- Lines: 194; runners named: scripts/frontier_generation_anomaly_obstruction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/610_GENERATION_ANOMALY_OBSTRUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/610_GENERATION_ANOMALY_OBSTRUCTION_NOTE.md)
+- Lines: 194; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_anomaly_obstruction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

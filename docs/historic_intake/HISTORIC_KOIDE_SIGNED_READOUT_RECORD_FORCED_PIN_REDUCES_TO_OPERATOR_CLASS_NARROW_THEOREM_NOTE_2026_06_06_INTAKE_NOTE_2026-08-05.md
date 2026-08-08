@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The readout-class residual is removed and the Koide chirality 
 Scope: Does not settle the operator class, does not prove the native generation operator is Hermitian, does not derive delta=2/9, does not touch the weight r. Unaudited candidate, graph-visible only.
 Escape conditions (negative claims): The escape it exploits is named by the factor-split no-go's own steelman (N7): 'one reality structure acting on both the site and generation factors'; the hw=1-subspace restriction is exactly that route and is not a factor split. The live counter-escape is the Dirac/SVD steelman where [[0,M],[M^dag,0]] has positive spectrum |eig(M)|, absorbing the sign.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Signed-readout theorem: eigen-phases are Z_2 K-fixed signs the RECORD registers — reduces the chirality pin to one sharp question; undischarged admission flagged.
 
@@ -32,7 +34,8 @@ Signed-readout theorem: eigen-phases are Z_2 K-fixed signs the RECORD registers 
 - Source commit: `976921c6eb1f5036cdc95ac87074a6b4c3dd96ba`
 - git blob: `fd8a8a3bc829cac5468aa7e62629e27dd3bc068f`
 - sha256: `84ca1a380b8c3c561d4da9b2bff39e8c44a15d1c8d7ea0fad0f332ea18305085`
-- Lines: 122; runners named: scripts/signed_readout_record_forced_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1085_KOIDE_SIGNED_READOUT_RECORD_FORCED_PIN_REDUCES_TO_OPERATOR_CLASS_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1085_KOIDE_SIGNED_READOUT_RECORD_FORCED_PIN_REDUCES_TO_OPERATOR_CLASS_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 122; runners named: historic runner (unpinned, not in this packet): `scripts/signed_readout_record_forced_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-labelled unaudited candidate with an explicit undischarged gap; its own 'ho
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

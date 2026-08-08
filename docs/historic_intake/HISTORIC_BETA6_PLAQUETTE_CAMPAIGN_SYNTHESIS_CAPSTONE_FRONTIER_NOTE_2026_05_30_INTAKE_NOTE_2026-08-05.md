@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The campaign's retained no-gos show the missing object is a si
 Scope: Backward-looking synthesis of landed narrow content plus the live no-go ledger; not a closure, introduces no value or authority, sets no audit status.
 Escape conditions (negative claims): The three-fold wall is characterized rather than declared absolute; the note names the single decisive next step that would move it, and one wall (the no-real-bulk-transition certificate) is labeled UNDISCHARGED rather than proven.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The beta=6 plaquette campaign capstone: the most-cited open quantitative gate (feeds u_0 -> alpha_s -> v/y_t/m_t/m_H) characterized as one object seen from three sides with the decisive next step named — directly relevant to the LIVE hierarchy campaign.
 
@@ -32,6 +34,7 @@ The beta=6 plaquette campaign capstone: the most-cited open quantitative gate (f
 - Source commit: `39bac19621eae28988a4b48e15e08d0764e5fabd`
 - git blob: `467bc7db14c405fe0fc658b127eff52a82c2b94b`
 - sha256: `61cae66df76040ee308c9cabdedb77385cf946216a0609e75a4e602dfa736793`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/104_BETA6_PLAQUETTE_CAMPAIGN_SYNTHESIS_CAPSTONE_FRONTIER_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch01/104_BETA6_PLAQUETTE_CAMPAIGN_SYNTHESIS_CAPSTONE_FRONTIER_NOTE_2026-05-30.md)
 - Lines: 609; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

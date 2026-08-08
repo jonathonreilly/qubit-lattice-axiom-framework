@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The rooted 3-chain engine is the right next gauge-side object,
 Scope: Connected rooted 3-chains on the exact 3+1 lattice with q in dV, |V| <= 5; exact integer counts, not Monte Carlo.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Corrects a FALSE prior enumeration rule (boundary-shellable growth) with exact rooted counts — correction on the record.
 
@@ -32,7 +34,8 @@ Corrects a FALSE prior enumeration rule (boundary-shellable growth) with exact r
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `822742f636c68ede0e2faad1684164af75633c4a`
 - sha256: `d3bff1b3872c37736871229ecbd15175a329b2244c807fea5ab3249c81b35875`
-- Lines: 243; runners named: scripts/frontier_rooted_3chain_coefficient_engine.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1834_ROOTED_3CHAIN_COEFFICIENT_ENGINE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1834_ROOTED_3CHAIN_COEFFICIENT_ENGINE_NOTE.md)
+- Lines: 243; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_rooted_3chain_coefficient_engine(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that a prior enumeration rule in the same lane was false, so any counts 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

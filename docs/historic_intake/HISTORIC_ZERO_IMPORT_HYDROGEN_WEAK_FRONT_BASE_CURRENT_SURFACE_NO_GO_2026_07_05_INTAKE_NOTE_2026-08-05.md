@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; the three factors (front, so
 Scope: The weak-front input consumed by the absolute charged-lepton scale assembly.
 Escape conditions (negative claims): Supply the D17 block normalization and the SU(2) coupling context, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Weak-front base terminal: the three-factor decomposition priced with finite witnesses.
 
@@ -32,7 +34,8 @@ Weak-front base terminal: the three-factor decomposition priced with finite witn
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `b8954fe44c038eaed6d622a723b6cab96d9c96fd`
 - sha256: `a50930bfa27b1ee54bcc6325332e854b8f35e1a73e9a97042bd88be8c790deac`
-- Lines: 288; runners named: scripts/frontier_zero_import_hydrogen_weak_front_base_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2713_ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2713_ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 288; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_weak_front_base_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

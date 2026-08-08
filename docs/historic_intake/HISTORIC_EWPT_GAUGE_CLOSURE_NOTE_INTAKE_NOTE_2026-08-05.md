@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_closed
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: CLOSED - v/T >= 0.52 is established by Attack 1 with two indep
 Scope: The remaining external input is the magnetic mass coefficient c = 0.3 from generic pure-SU(2) lattice studies (Hart et al. 2000), not 2HDM-specific.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The EWPT gauge-closure claim (v/T = 0.56 +/- 0.05 above threshold) WITH its own two-of-three-attacks-short flags — belongs beside the nucleation negative at audit.
 
@@ -32,7 +34,8 @@ The EWPT gauge-closure claim (v/T = 0.56 +/- 0.05 above threshold) WITH its own 
 - Source commit: `8bc730019cff4daf26bd7ac57ee9c12fe4e038fc`
 - git blob: `9fd3650ba627ff6ee81e997dc45a43b15dca741c`
 - sha256: `bdc90425d3dabd70062fc1228a2b5d81834419f825cce3bbb33cc9dfc8c7a152`
-- Lines: 96; runners named: scripts/frontier_ewpt_gauge_closure.py, scripts/frontier_ewpt_lattice_mc.py, scripts/frontier_ewpt_strength.py, scripts/frontier_baryogenesis.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/443_EWPT_GAUGE_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/443_EWPT_GAUGE_CLOSURE_NOTE.md)
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_gauge_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_lattice_mc(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_strength(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Two of the three attacks (0.49 floor and 0.507) fall short of the 0.52 threshold
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_closed
 intake_directive: owner_2026-08-05
 ```
 

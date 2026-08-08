@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The anchors lane closes at general b - the six exhaustive ring
 Scope: Scoped to the nine-entry premise ledger; b values violating the eight Cycle-817 premises are outside the theorem by construction.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 General-b discharge as 13 exact identities — after the checker refuted the first assembly's hidden premises; the anchors lane's closure beyond rings.
 
@@ -32,7 +34,8 @@ General-b discharge as 13 exact identities — after the checker refuted the fir
 - Source commit: `92fb93a674e8bb27c6da6f023cf057badb0ece4c`
 - git blob: `a6bcf8eb0c40f127f296ec7b15f8a37b7d635a84`
 - sha256: `51d233ba387e5e5672c344e92a8dc73f960fca87a3c7c8159472be07002f6193`
-- Lines: 85; runners named: scripts/frontier_cycle827_general_b_discharge_2026_07_28.py, scripts/frontier_cycle827_discharge_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/602_GENERAL_B_DISCHARGE_CYCLE827_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch02/602_GENERAL_B_DISCHARGE_CYCLE827_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 85; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle827_general_b_discharge_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle827_discharge_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Records that the first assembly hid two load-bearing premises and was caught by 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

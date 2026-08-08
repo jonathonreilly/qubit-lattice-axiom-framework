@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The whole ~5.9 spread ratio that dogged the chunk sweep is a f
 Scope: Provenance/support result; not a physical readout switch.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The fit-window artifact diagnosis: the ~5.9 spread ratio across ~30 checkpoints was the fitter's per-shift window selection — the campaign's central instrument correction.
 
@@ -32,7 +34,8 @@ The fit-window artifact diagnosis: the ~5.9 spread ratio across ~30 checkpoints 
 - Source commit: `a455dfaf94665dcee02888de65e80923a8e0154e`
 - git blob: `e3cdbd8a3eab3ba6700dede8b51711194a1ffd8c`
 - sha256: `9c939db4beda289393c1cd3972cdd66874783212f0094c0c13845dab7a70f090`
-- Lines: 56; runners named: scripts/frontier_yt_fh_lsz_common_window_response_provenance.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2227_YT_FH_LSZ_COMMON_WINDOW_RESPONSE_PROVENANCE_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2227_YT_FH_LSZ_COMMON_WINDOW_RESPONSE_PROVENANCE_NOTE_2026-05-04.md)
+- Lines: 56; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_common_window_response_provenance(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Shows that the source-slope outliers reported as physics-neutral across ~30 chec
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

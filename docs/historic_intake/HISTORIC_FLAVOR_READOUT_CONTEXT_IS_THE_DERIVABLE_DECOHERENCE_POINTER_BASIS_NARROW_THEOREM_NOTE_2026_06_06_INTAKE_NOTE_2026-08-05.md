@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The RECORD axiom disclaims the decoherence dynamics only as a 
 Scope: The charged mass eigenbasis being corner rests on the unaudited Z_3 trichotomy; why the neutrino is light is separate; the predictability sieve itself is standard decoherence.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Same-day CORRECTION: the flavor readout context IS derivable (pointer basis from dominance) — the Record axiom disclaims only the primitive; reverses its sibling no-go.
 
@@ -32,7 +34,8 @@ Same-day CORRECTION: the flavor readout context IS derivable (pointer basis from
 - Source commit: `0ba01ec3946c9f25e3c40df5bb142e5d1d39c8c1`
 - git blob: `64f6e20384e7617bcd28957689e282c8a5e40e8f`
 - sha256: `5c873ad47735f946dc2fde2c9ed518069fdc7c1bdc6c790b728162b7c3be3ef4`
-- Lines: 114; runners named: scripts/flavor_readout_context_pointer_basis_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/490_FLAVOR_READOUT_CONTEXT_IS_THE_DERIVABLE_DECOHERENCE_POINTER_BASIS_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/490_FLAVOR_READOUT_CONTEXT_IS_THE_DERIVABLE_DECOHERENCE_POINTER_BASIS_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 114; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_readout_context_pointer_basis_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Reverses a same-day sibling no-go; two earlier mechanism guesses (gauge-localiza
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

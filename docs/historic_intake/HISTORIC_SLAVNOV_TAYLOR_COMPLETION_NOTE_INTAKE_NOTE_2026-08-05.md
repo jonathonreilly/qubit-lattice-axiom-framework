@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: CLOSED: Lane 4 (y_t matching) is upgraded from BOUNDED to CLOS
 Scope: d=3 staggered lattice, L=4, arbitrary SU(3) gauge configurations; argument relies on G5 centrality, true only for odd d.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Slavnov-Taylor CLOSED declaration on an L=4 lattice — pulled WITH the flag; the Lane-4 closure claim beside 1801/1803's reframes for audit.
 
@@ -32,7 +34,8 @@ The Slavnov-Taylor CLOSED declaration on an L=4 lattice — pulled WITH the flag
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `3c168aa484fb99fb112940a7784e5a3cebf2ba36`
 - sha256: `e4ad3852247d53ef34d794968da72c6549d06f5d9a2ad137b934f8328c4f1ce9`
-- Lines: 176; runners named: scripts/frontier_slavnov_taylor_completion.py, scripts/frontier_renormalized_yt.py, scripts/frontier_renormalized_yt_wildcard.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1939_SLAVNOV_TAYLOR_COMPLETION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1939_SLAVNOV_TAYLOR_COMPLETION_NOTE.md)
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_slavnov_taylor_completion(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt_wildcard(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Declares a lane CLOSED on the basis of an L=4 lattice and algebraic identities; 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Wilson remains the only positive reopening lever globally, but
 Scope: Current bank.
 Escape conditions (negative claims): Reopening requires stronger science supplying the sharpest local certificate.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL: the Wilson lane negatively closed on the current bank — reopening requires stronger science supplying the sharpest local certificate; the 65-note chain's end.
 
@@ -32,7 +34,8 @@ TERMINAL: the Wilson lane negatively closed on the current bank — reopening re
 - Source commit: `d9e0803795ffaae653a5bb5a4cb6040737160f57`
 - git blob: `eae74ac327668caa93f55a0dbcc114834a93c357`
 - sha256: `f5f44d9ce4dff623741e383f3e5084a0f49afecc2305bc5472927f1c03e009a5`
-- Lines: 123; runners named: scripts/frontier_perron_frobenius_wilson_current_bank_complete_closure_2026-04-18.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1320_PERRON_FROBENIUS_WILSON_CURRENT_BANK_COMPLETE_CLOSURE_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch04/1320_PERRON_FROBENIUS_WILSON_CURRENT_BANK_COMPLETE_CLOSURE_NOTE_2026-04-18.md)
+- Lines: 123; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_perron_frobenius_wilson_current_bank_complete_closure_2026-04-18(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -108,6 +111,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

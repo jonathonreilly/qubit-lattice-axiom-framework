@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: TERMINAL positive repair of the 518 defect; does not synthesiz
 Scope: Static isometry on the oriented twelve-cell patch preserving the native Cycle-311/315 branch grammar; per-column branch weights unchanged (4096, 20480, 4096, 102400 branches per column, each normalized).
 Escape conditions (negative claims): Broad no-go gate FAIL / DO NOT SHIP — two materially different constructive routes remain, forbidding a no-go inference.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL positive repair of the Cycle-518 Gram defect: appending one M2 carrying tau = N_L mod 2 (left-center parity) fixes injectivity while changing no face representative; the broad no-go gate still returns FAIL/DO-NOT-SHIP. Chain members (the 245,518,336-branch injectivity resolution and the twelve-cell static object) attached.
 
@@ -32,6 +34,7 @@ TERMINAL positive repair of the Cycle-518 Gram defect: appending one M2 carrying
 - Source commit: `3bf2368c8cead4371421d162d86fb29ac75fec68`
 - git blob: `aa1fd5d61b857d552db271105fa0f9178bd501aa`
 - sha256: `7f12c494376271906912f15ef2d0f88308dab37ece9a01af50d06dfc9d9a5995`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2773_PHYSICAL_ADJACENT_TWO_STAR_SEAM_TAG_PRESERVATION_CYCLE519_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/2773_PHYSICAL_ADJACENT_TWO_STAR_SEAM_TAG_PRESERVATION_CYCLE519_NOTE_2026-07-21.md)
 - Lines: 420; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ The runner reads logical occupations to update the tag and does not derive that 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Self-duality cannot elevate g=1 to a theorem; two independent 
 Scope: SU(N) Wilson plaquette action in 4D with standard beta = 2N_c/g^2; the Cl(3) normalization route is untouched and remains primary.
 Escape conditions (negative claims): Names three surviving routes: resolving the Cl(3) route on its own terms (showing A -> A/g with g != 1 violates a non-definitional axiom), a currently unknown lattice analog of Montonen-Olive S-duality, and a speculative gauge-gravity consistency condition tied to a = l_Planck.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Self-duality no-go: no exact Kramers-Wannier duality for SU(N) in 4D — the beta = 2N_c = 6 self-dual argument dies four ways; supersedes claims consumed elsewhere; three surviving routes.
 
@@ -32,7 +34,8 @@ Self-duality no-go: no exact Kramers-Wannier duality for SU(N) in 4D — the bet
 - Source commit: `185df821c46b41b836a19af00b8469b40f36da20`
 - git blob: `a6bc8f81eb9fa70ee1d3bd324743255fa8d676e5`
 - sha256: `2e5fa67be1cd806b93e61ff7ebb3cd254265f71194d027a5001636861f03ed48`
-- Lines: 195; runners named: scripts/frontier_g_bare_self_duality.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/659_G_BARE_SELF_DUALITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/659_G_BARE_SELF_DUALITY_NOTE.md)
+- Lines: 195; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g_bare_self_duality(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Retracts a previously advertised upgrade path and flags the beta=6 proximity to 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

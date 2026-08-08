@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Registration rejected pending a substantive Koide regression r
 Scope: Runner registration.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Verification-integrity: the Koide lane regression suite was FAILING (direct run exits nonzero at TOTAL 395/381, one subrunner broken) and registration was rejected pending substantive repair. The attached follow-up records the repaired 398/398 state AND that the registered runner is dominant-class D with ZERO asserts - audit should confirm both the repair and the assert gap.
 
@@ -32,6 +34,7 @@ Verification-integrity: the Koide lane regression suite was FAILING (direct run 
 - Source commit: `03baa0aed70d76959271562796f15c0c477d461d`
 - git blob: `ac02b9f180a2c3ef53151aff574f0ddad558a12c`
 - sha256: `7835fc4fdd3d28d7f0443347d5f9ca906479d8e415890189d51507bf946e5d07`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10237_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10237_NO_GO_LEDGER.md)
 - Lines: 7; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ The Koide lane regression suite was FAILING (395/381 with a 3/6 subrunner) at 20
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_ledger
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_authority_surface
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Materially stronger than the earlier 'support-only' wording, w
 Scope: Branch-local on the exact reduced N_e domain; does not touch the atlas.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The April PMNS/leptogenesis selector chain's TERMINAL authority: six exact pieces frozen with the residual (certification style, observation-tied closure surface) honest.
 
@@ -32,7 +34,8 @@ The April PMNS/leptogenesis selector chain's TERMINAL authority: six exact piece
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `a1a96824b471bad11cc4ed8c9284b686f8be2dbc`
 - sha256: `d11f2ad3688fa5b28fdcf207a5b24028d968038704bf560181ed1ba6ef387b39`
-- Lines: 165; runners named: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py, scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py, scripts/frontier_dm_leptogenesis_pmns_action_phase_reduction_theorem.py, scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py, scripts/frontier_dm_leptogenesis_pmns_selector_coincidence_theorem.py, scripts/frontier_dm_leptogenesis_pmns_real_slice_intrinsic_class_certificate.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/372_DM_LEPTOGENESIS_PMNS_NE_SELECTOR_CLOSURE_AUTHORITY_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/372_DM_LEPTOGENESIS_PMNS_NE_SELECTOR_CLOSURE_AUTHORITY_NOTE_2026-04-16.md)
+- Lines: 165; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_action_phase_reduction_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_selector_coincidence_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_real_slice_intrinsic_class_certificate(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -56,6 +59,7 @@ Explicitly does not claim an observation-free normalization law removing eta/eta
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_authority_surface
 intake_directive: owner_2026-08-05
 ```
 

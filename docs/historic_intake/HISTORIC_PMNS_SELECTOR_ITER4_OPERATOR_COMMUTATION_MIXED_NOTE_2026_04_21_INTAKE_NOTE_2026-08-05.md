@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_mixed_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Operator commutation is ruled out; delta q_+ = 2/3 becomes the
 Scope: Operator-commutation class plus a scalar-invariant scan against ~25 retained simple values; nothing reaches the 1e-4 threshold at the pinned point's 6-digit precision.
 Escape conditions (negative claims): The scalar scan is explicitly a near-hit search, not an identity proof - iter 5 is set up to settle whether 0.15% is rounding or a real miss.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The look-elsewhere disclosure: the candidate identity was found scanning ~33 scalars against ~25 constants — the provenance fact the iter-10 dependents must carry.
 
@@ -32,7 +34,8 @@ The look-elsewhere disclosure: the candidate identity was found scanning ~33 sca
 - Source commit: `62e4262dd62c0e9447e8f9c04a80d5b86441869f`
 - git blob: `cadd90f866f992ff5259fff7a4c0c7689bb6de6e`
 - sha256: `dde51bc49d292956f48815635e1131c02a712d409cf114ce920624f0e279fe21`
-- Lines: 106; runners named: scripts/frontier_pmns_selector_iter4_operator_commutation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1587_PMNS_SELECTOR_ITER4_OPERATOR_COMMUTATION_MIXED_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1587_PMNS_SELECTOR_ITER4_OPERATOR_COMMUTATION_MIXED_NOTE_2026-04-21.md)
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter4_operator_commutation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The candidate identity is discovered by scanning 33 scalars against ~25 simple c
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_mixed_result
 intake_directive: owner_2026-08-05
 ```
 

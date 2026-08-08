@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The loop stops; the honest recommendation is to consolidate I1
 Scope: Loop-termination note for branch evening-4-20; I5 mechanism, the delta_CP sign and the quark sector are listed open.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The evening-loop STOP terminal: stop criterion met at iteration 35, C1 discharged, honest recommendation recorded — including the process datum that the loop was re-invoked 34 times.
 
@@ -32,6 +34,7 @@ The evening-loop STOP terminal: stop criterion met at iteration 35, C1 discharge
 - Source commit: `b00df655f46ae410cfd03d691c1ab4ba24ff9dac`
 - git blob: `7b62bd8be881f9e23e472e0dc57d7ee16b946aeb`
 - sha256: `ecbe970a55f964bbe2d5de2af397e4dbb8d219f698999946eeba5d5ad7d1145f`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/870_KOIDE_LOOP_STOP_CRITERION_MET_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/870_KOIDE_LOOP_STOP_CRITERION_MET_2026-04-21.md)
 - Lines: 108; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ Notes the user re-invoked the loop 34 times after each completion and speculates
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

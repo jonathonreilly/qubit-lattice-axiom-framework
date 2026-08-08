@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Koide is a statement about recorded (pole) masses, which confi
 Scope: Qualitative explanation of the contrast, not a quantitative derivation of quark masses; PDG values are comparators only; neutrinos are a separate unaddressed case.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Koide holds iff recorded (pole) masses exist: confinement denies quarks pole masses, grounding the lepton/quark contrast in the recordable lens — clean physical insight extending a landed cluster.
 
@@ -32,7 +34,8 @@ Koide holds iff recorded (pole) masses exist: confinement denies quarks pole mas
 - Source commit: `28190d8ffe245f8c06ceeb99757d49aa1b5f043f`
 - git blob: `53059d6e8fb981bbbf5197ba1feac80f913efd44`
 - sha256: `e33f22afe615dc377589b4f11699c45f870b89934d90344739154f11305d303e`
-- Lines: 110; runners named: scripts/frontier_koide_holds_iff_recorded_free_2026_06_06.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/860_KOIDE_HOLDS_IFF_RECORDED_FREE_POLE_MASS_CONFINEMENT_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch03/860_KOIDE_HOLDS_IFF_RECORDED_FREE_POLE_MASS_CONFINEMENT_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_holds_iff_recorded_free_2026_06_06(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

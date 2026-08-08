@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: One P0 critical issue and several inflated claims; the O_h cov
 Scope: Reviews all 19 branches as a hostile referee, verdicts SURVIVES / CRITICAL ISSUE / INFLATED.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Hostile adjudication documenting that a landed note wrote 'Normal ordering preserved' on an inverted-ordering prediction (P0) — an attack on a landed row's label that must reach the audit lane.
 
@@ -32,6 +34,7 @@ Hostile adjudication documenting that a landed note wrote 'Normal ordering prese
 - Source commit: `0009ff9fd09141790e40f399a29ced192123deea`
 - git blob: `dd309abc2928a2a02903e9a1b9fcd2f3cc80e3ba`
 - sha256: `34cfc5414e76e00a7481c3586a24183b47c45daa56b26103339da9f1e8b31911`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/64_AUTONOMOUS_LOOP_NATURE_GRADE_REVIEW_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch01/64_AUTONOMOUS_LOOP_NATURE_GRADE_REVIEW_2026-04-22.md)
 - Lines: 366; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Documents that a landed note wrote 'Normal ordering preserved' on the basis of r
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

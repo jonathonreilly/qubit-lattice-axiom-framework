@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Does not promote the row and does not perform the independent 
 Scope: One row's displayed formula.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
 
@@ -32,6 +34,7 @@ Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branc
 - Source commit: `eab41b10dc1e292df5a6107800c5ef35ececfa24`
 - git blob: `f05df16d5faa22b4b0b01ebdf1b2ee34475e66ef`
 - sha256: `8e68aa262f0266d1ce89901e48f3180c414d38742c1035e70c6c7aec9211bb16`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10134_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10134_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 17; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -41,7 +44,7 @@ Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branc
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10152 (`.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle04-alpha-s-direct-wilson-honest-status/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
+- Attaches across strata to [idx 10152](HISTORIC_CLAIM_STATUS_CERTIFICATE_B10152_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle04-alpha-s-direct-wilson-honest-status/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
 
 ## Flags carried
 
@@ -53,6 +56,7 @@ A landed note's displayed formula had drifted from its own runner's reduction - 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

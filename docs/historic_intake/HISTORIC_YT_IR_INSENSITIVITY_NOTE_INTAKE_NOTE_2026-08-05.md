@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The gauge crossover remains a genuine blocker.
 Scope: SM 2-loop RGEs with the framework boundary y_t(M_Pl) = g_3/sqrt(6) and g_3 varied freely; the gauge trajectory still comes from the observed alpha_s(M_Z).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Refutes the QFP-insensitivity escape: m_t varies materially with g_3(M_Pl) — the crossover blocker is real.
 
@@ -32,7 +34,8 @@ Refutes the QFP-insensitivity escape: m_t varies materially with g_3(M_Pl) — t
 - Source commit: `1acae9ddc79350f95fd765194918ebb169a36c88`
 - git blob: `c5da1507e114bb393c36b327c72e3e632f776a09`
 - sha256: `95f488ca805cf5070ec20e380a4158884673069332b2f821d8c41226632a2807`
-- Lines: 143; runners named: scripts/frontier_yt_ir_insensitivity.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2322_YT_IR_INSENSITIVITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2322_YT_IR_INSENSITIVITY_NOTE.md)
+- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_ir_insensitivity(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Refutes an insensitivity claim that, had it held, would have removed the lane's 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

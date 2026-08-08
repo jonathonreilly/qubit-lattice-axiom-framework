@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The cosmological constant is the best candidate because Lambda
 Scope: Roadmap prompted by the LIGO echo investigation showing the framework predicts GR-consistent waveforms (evanescent barrier), i.e. no distinguishing signal there.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The era's falsification roadmap: which predictions actually differ from standard physics with public data (CC, triple-slit I3, generations = d) — the testability map.
 
@@ -32,6 +34,7 @@ The era's falsification roadmap: which predictions actually differ from standard
 - Source commit: `1959fe75dc214ce27f8a267c993d14782ff3747e`
 - git blob: `db94a3a7cf0fd78c4fc8c5b1352dd95d32045e59`
 - sha256: `bf4336ab760144f20ff94b973df448f8a51d65a7d515115e8e3de966833631b8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/332_DISTINCTIVE_PREDICTIONS_ROADMAP.md](../../archive_unlanded/historic_intake_originals/branch01/332_DISTINCTIVE_PREDICTIONS_ROADMAP.md)
 - Lines: 116; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

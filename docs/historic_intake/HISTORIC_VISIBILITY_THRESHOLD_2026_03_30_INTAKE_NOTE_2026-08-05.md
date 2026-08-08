@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — events as grid nodes; causal DAG edge A->B only if arrival_time(B) > arrival_time(A); barrier nodes blocked except at slits
 
@@ -22,7 +22,9 @@ Original verdict: Status CONFIRMED — the law R_c(y) = 1 + |y|/s is derived fro
 Scope: Rectangular grid with nearest-neighbour plus diagonal links, source at (1,0), barrier at x=w/2 with slits at y=+/-s, detector at x=w; the derivation assumes max deflection per step is exactly 1.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The era's one exact theorem: R_c(y) = 1 + |y|/s derived from DAG connectivity, 4/4 exact match, weakest link self-named (max-deflection-1 assumption). Attach 3114 (data), 3131 (mechanism), sanity audits.
 
@@ -32,6 +34,7 @@ The era's one exact theorem: R_c(y) = 1 + |y|/s derived from DAG connectivity, 4
 - Source commit: `c5c1745479599c85567e6500d57fd395702396c5`
 - git blob: `fa79eae1242ecb6892e8010e8c901df4d0876bd2`
 - sha256: `33245739623d554ff53090364dd79db402a7a6fbbef012d8720f3cb5ce77a4c0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3138_visibility-threshold-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3138_visibility-threshold-2026-03-30.md)
 - Lines: 100; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -51,6 +54,7 @@ Names its own weakest link: Step 1's assumption of max deflection 1 per step dep
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

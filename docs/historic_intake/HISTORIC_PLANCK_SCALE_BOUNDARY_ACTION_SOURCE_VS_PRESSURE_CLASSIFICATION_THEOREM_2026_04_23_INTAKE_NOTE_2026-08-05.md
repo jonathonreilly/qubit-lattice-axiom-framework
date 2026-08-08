@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_terminology_and_object_class_hardening_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The safe object is the normal-ordered primitive boundary actio
 Scope: Terminology/object-class scoping for the retained primitive gravitational boundary-action object class; explicitly concedes the lane does not close if a reviewer defines physical pressure exclusively as the scalar Schur free-energy observable.
 Escape conditions (negative claims): The negative (exact Planck closure fails on the scalar-Schur reading) is escaped only by the reviewer accepting the retained primitive gravitational boundary-action object class.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Terminology hardening separating three same-surface scalars — corrects previously circulated Planck-lane wording; safe-object rule stated.
 
@@ -32,7 +34,8 @@ Terminology hardening separating three same-surface scalars — corrects previou
 - Source commit: `4599b458d80f6a3c6e3ef0bf0a7c20538905aa5b`
 - git blob: `e25cec87e712eacb9b5c52524f4eb740dd2c66e8`
 - sha256: `e9d25bc0d5ce57b91957afd7d9ebb8c56ce2420dc60d1a32f1a1cb88026e884f`
-- Lines: 157; runners named: scripts/frontier_planck_boundary_action_source_vs_pressure_classification_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1383_PLANCK_SCALE_BOUNDARY_ACTION_SOURCE_VS_PRESSURE_CLASSIFICATION_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1383_PLANCK_SCALE_BOUNDARY_ACTION_SOURCE_VS_PRESSURE_CLASSIFICATION_THEOREM_2026-04-23.md)
+- Lines: 157; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_boundary_action_source_vs_pressure_classification_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Corrects previously circulated Planck-lane wording ('the observable-principle sc
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_terminology_and_object_class_hardening_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The framework's added content is that the kinetic operator and
 Scope: Level ratios only; the framework cannot predict E_1 in eV without alpha_EM and m_e, which is called a genuine deficit.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Honest comparison: numerically no better than a textbook solver; the framework's actual added content stated precisely.
 
@@ -32,7 +34,8 @@ Honest comparison: numerically no better than a textbook solver; the framework's
 - Source commit: `63defc0de0b06b24cf681f7bb727406882c852f9`
 - git blob: `668d3d762bc23acea7a691c24817c11e169e6d7b`
 - sha256: `5e1c4678696b682dc1a16b23a7cf961e136419eb957f779697aa300800d5527f`
-- Lines: 292; runners named: scripts/hydrogen_from_graph_dynamics.py, scripts/helium_hartree_scf.py, scripts/helium_jastrow_vmc.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/510_FRAMEWORK_VS_STANDARD_QM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/510_FRAMEWORK_VS_STANDARD_QM_NOTE.md)
+- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/hydrogen_from_graph_dynamics(.py)`; historic runner (unpinned, not in this packet): `scripts/helium_hartree_scf(.py)`; historic runner (unpinned, not in this packet): `scripts/helium_jastrow_vmc(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly concedes the numbers are no better than a textbook SE solver and name
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

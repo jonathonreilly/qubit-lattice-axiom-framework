@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The type gate returns NOT COMPARABLE for the native routes: Cy
 Scope: Three preregistered fixtures with Cycle661 unique weights 0.004395 / 0.001999 / 0.178810 versus Cycle666 finite-event weights 0.003845 / 0.001874 / 0.176016, all off-diagonal and conditional residuals EXACTLY 0.000e+00.
 Escape conditions (negative claims): Only four independent attempted families qualify and the dependent overlay does not inflate the count, so all gates fail. The named next step is a local covariant superselection or beable update supplying the missing map — which 'the protocol cannot manufacture from predecessor bookkeeping'.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Names the exact missing object for the whole program: the ONLY sequence relation is the predecessor path from the one-hot cursor to the root, and the type gate returns NOT COMPARABLE for the native routes - the missing map named here is precisely the object the successor lane needs. All24-enumeration companion attached.
 
@@ -32,6 +34,7 @@ Names the exact missing object for the whole program: the ONLY sequence relation
 - Source commit: `3aff134191d0ab6c4ba61609ef5e63197f9b0add`
 - git blob: `ef995dc59fc4971c14877e62d90b26a0f9a1906e`
 - sha256: `4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3044_PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/3044_PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md)
 - Lines: 155; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

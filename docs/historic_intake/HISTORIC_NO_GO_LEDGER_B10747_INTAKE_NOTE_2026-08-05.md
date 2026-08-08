@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction_of_a_landed_over_read_two_boundaries
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The all-degree bridge is not supplied; the previous wording wa
 Scope: The V=1 single-plaquette Picard-Fuchs row and its downstream reading.
 Escape conditions (negative claims): Supplying an independent R=3, D=2 bound makes the threshold arithmetic usable.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 MAJOR correction of previously published note wording: the scanned Koutschan-style system excludes order <= 2 only through coefficient degree 30, which does NOT imply all-degree exclusion - a landed note had treated the degree-30 finite grid as an all-degree bridge; wording corrected, escape (an independent R=3, D=2 bound) named. Companion wording retirements attached.
 
@@ -32,6 +34,7 @@ MAJOR correction of previously published note wording: the scanned Koutschan-sty
 - Source commit: `114fd806d393f393104ef51a20a39fa90c3919d2`
 - git blob: `4a46affe7763ecb2f92de06aa22e06168c015491`
 - sha256: `be12b53357cfe158e77d8a38d3f4e09f0087883eb0361461737017a0ba62f913`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10747_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10747_NO_GO_LEDGER.md)
 - Lines: 21; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ MAJOR: a landed note's wording treated a degree-30 finite grid as an all-degree 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction_of_a_landed_over_read_two_boundaries
 intake_directive: owner_2026-08-05
 ```
 

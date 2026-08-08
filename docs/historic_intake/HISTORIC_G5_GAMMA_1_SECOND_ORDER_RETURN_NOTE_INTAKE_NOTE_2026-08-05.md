@@ -1,9 +1,11 @@
 # Historic intake: G5 / Gamma_1 Second-Order Return - Hierarchy-Breaking Correction Survey
 
+Explicit subject: The shape theorem: the second-order return is the affine species-diagonal map diag(Sigma) = (w_O0, w_a, w_b) with the third T_2 state unreachable and irrelevant; of four correction candidates, Higgs fluctuations give a purely global scalar shift |eps|^2 I_3 (std(diag) = 0 to ... (The bare code `G5` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: The retained Gamma_1 algebra determines the SHAPE of the charg
 Scope: Exact symbolic construction on the retained C^16 carrier; Correction-C is underdetermined by construction rather than predictive.
 Escape conditions (negative claims): Explicitly does not claim Correction-C is the only route to G5 closure outside the retained surface; the underdetermination is a statement that the retained framework fixes the map's form, leaving the weights to be supplied by something else (which the sibling observational-pin note then does).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The G5 shape theorem: the retained Gamma_1 algebra determines the operator's SHAPE but not its values — weights underdetermined; the lane's structural core.
 
@@ -32,7 +36,8 @@ The G5 shape theorem: the retained Gamma_1 algebra determines the operator's SHA
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `61a625d2f9ce1a6d8c2c69afa4e41a0b8cb69bdf`
 - sha256: `68f6d4e4a1702e6a0ffc082db9f3d1dd72e3c4cc1202b406f0e601151aef0896`
-- Lines: 256; runners named: scripts/frontier_g5_gamma_1_second_order_return.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/545_G5_GAMMA_1_SECOND_ORDER_RETURN_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/545_G5_GAMMA_1_SECOND_ORDER_RETURN_NOTE.md)
+- Lines: 256; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g5_gamma_1_second_order_return(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +55,7 @@ The one surviving candidate is underdetermined - unconstrained weights match any
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

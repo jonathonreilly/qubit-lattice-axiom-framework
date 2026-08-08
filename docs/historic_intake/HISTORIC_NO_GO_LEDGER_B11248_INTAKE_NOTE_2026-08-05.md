@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: statistics forcing withdrawn; no audit verdict applied
 Scope: spin-statistics source packet boundaries
 Escape conditions (negative claims): hard-core bosons escape the CCR trace obstruction by violating the canonical CCR hypothesis
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Withdrawal narrowing the spin-statistics surface: statistics forcing remains WITHDRAWN, and hard-core bosons are NOT excluded by the CCR trace obstruction (they violate the canonical CCR hypothesis, so the obstruction never bites them) - the escape is stated in the proof body. Companions attached.
 
@@ -32,6 +34,7 @@ Withdrawal narrowing the spin-statistics surface: statistics forcing remains WIT
 - Source commit: `7e2db05c4b593e12a56799936f569d172b6104f0`
 - git blob: `5cf2b9a90f276c9d5941b534be8f70879720e3c3`
 - sha256: `8b9486a464379f80acc28b673f37565655b684060cb25c2e515a04ced65b48b2`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11248_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci05/11248_NO_GO_LEDGER.md)
 - Lines: 8; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_ledger
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Any framework claim relying on this specific mechanism as the 
 Scope: The natural minimal coupling L_int = y sum_i phi_i (psi-bar S_i psi) only.
 Escape conditions (negative claims): Explicitly does not rule out: V_sel plus an additional mechanism (e.g. explicit Yukawa couplings to a separate Higgs with flavor structure); more complex fermion-V_sel couplings (derivative, or explicit S_i S_j tensors); or V_sel playing a different role such as weak-axis selection rather than mass generation.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 SELF-FALSIFICATION: the V_sel mass mechanism gives exactly zero tree-level projected mass — any claim relying on it is falsified; escapes stated.
 
@@ -32,6 +34,7 @@ SELF-FALSIFICATION: the V_sel mass mechanism gives exactly zero tree-level proje
 - Source commit: `8bb0e3274daadeb94be0226fbd20a5fc051c9c31`
 - git blob: `0d55c0e48e7af89dffe8aab1d89e0503a897d644`
 - sha256: `cc7db9333b10a6b74d9bb06152380eaaec7b8bd7ab2f3d6243e3be903e050dcb`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1180_NEGATIVE_VSEL_WRONG_MASS_STRUCTURE.md](../../archive_unlanded/historic_intake_originals/branch04/1180_NEGATIVE_VSEL_WRONG_MASS_STRUCTURE.md)
 - Lines: 121; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A self-falsification of a framework mechanism.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

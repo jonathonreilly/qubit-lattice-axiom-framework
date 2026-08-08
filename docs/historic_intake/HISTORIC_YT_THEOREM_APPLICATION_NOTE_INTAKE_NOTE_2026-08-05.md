@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED, not CLOSED — per the cited review, bare theorem clo
 Scope: The full bare-to-renormalized y_t chain applied numerically on Cl(3)/Z^3 under axiom A5.
 Escape conditions (negative claims): Perform the 2-loop lattice-to-continuum matching and the full V-scheme to MSbar conversion for this action.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The April applied-chain 'no free parameters' top-mass claim WITH its own BOUNDED-not-CLOSED verdict — the era flagship claim in its honest form, for audit beside the May demotions.
 
@@ -32,7 +34,8 @@ The April applied-chain 'no free parameters' top-mass claim WITH its own BOUNDED
 - Source commit: `b32dc34f86011cdaa469ed6574e1d20e39ac3573`
 - git blob: `b4dbe5664d64db975cfe2ed315746675d8451340`
 - sha256: `98ec8947c686c35bd0a208ea1d14b1891f9a6cfdc3c2b5e8b11389565420f9cd`
-- Lines: 359; runners named: scripts/frontier_yt_applied_chain.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2459_YT_THEOREM_APPLICATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2459_YT_THEOREM_APPLICATION_NOTE.md)
+- Lines: 359; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_applied_chain(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Claims 'no free parameters' prediction of the top mass while the load-bearing ba
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

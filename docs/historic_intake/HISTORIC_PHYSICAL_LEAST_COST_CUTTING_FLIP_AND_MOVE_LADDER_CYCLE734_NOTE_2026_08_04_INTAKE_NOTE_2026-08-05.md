@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — cites MINIMAL_AXIOMS_2026-06-29 with nearest-neighbour adjacency and proper cubic rotations only
 
@@ -22,7 +22,9 @@ Original verdict: The floor is locally rigid and globally connected — nearly a
 Scope: Scoped to the single cell of one lattice step and one tick, with this adjacency cost and least volume; no statement about cells of other extent, other adjacency, other costs, or the lattice as a whole; time enters only as the fourth column and no result depends on an arrow (the tick flip is kept in the symmetry group).
 Escape conditions (negative claims): The absences at two and three pieces are proved by exhaustive pair/triple examination; the absence at five is only measured by a complete census, and the note keeps the two standings apart. It does not say what the largest local re-cut away from the floor is, nor whether the four-piece flip is smallest for costs above the floor — both explicitly open. Whether the per-region binary switches can be thrown independently is not measured. The 192-piece pool and the 5 region shapes are measured by search, not derived from symmetry.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Complete search: floor 144 reached by 15,800 cuttings on 192 pieces; locally rigid, globally connected — the floor's move-structure theorem.
 
@@ -32,7 +34,8 @@ Complete search: floor 144 reached by 15,800 cuttings on 192 pieces; locally rig
 - Source commit: `b480d7684c6a9e50cd7947f3e482b238c6eeb2ad`
 - git blob: `1eef4287ac8ec6c2dd2d8386d8ce8247fe8b4271`
 - sha256: `b3b73b7ba07df7770ab6d2227f51a9e1da2c84d712ac013d90c7355063f67400`
-- Lines: 193; runners named: scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py (named in artifacts section)
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3100_PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3100_PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md)
+- Lines: 193; runners named: historic runner (unpinned, not in this packet): `scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py (named in artifacts section)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that testing the scope of the integrality argument moved the claim: all 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

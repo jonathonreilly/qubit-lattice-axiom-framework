@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The lane is NOT closed — the 8x mismatch is real and unresol
 Scope: Gate assessment with derived, bounded and not-derived inputs itemized.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The self-declared y_t single-authority meta: exact algebra + NOT-closed verdict + the 8x crossover mismatch + internal alpha_V inconsistency flagged — the lane's April-May authority statement.
 
@@ -32,7 +34,8 @@ The self-declared y_t single-authority meta: exact algebra + NOT-closed verdict 
 - Source commit: `81a4efe78660d1bb27dc930c5e7cd8d8f2cc9149`
 - git blob: `4e1f2864af35f140ee7e473c113034120e8a34ce`
 - sha256: `1846858e13a765092078cb111b119328b75c5e2c687a757aa93bd64ff0c2c2fb`
-- Lines: 96; runners named: scripts/frontier_yt_cl3_preservation.py, scripts/frontier_wilsonian_eft.py, scripts/frontier_yt_boundary_resolution.py, scripts/frontier_yt_step_scaling.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2168_YT_CROSSOVER_HONEST_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2168_YT_CROSSOVER_HONEST_NOTE.md)
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_cl3_preservation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_wilsonian_eft(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_boundary_resolution(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_step_scaling(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Quotes alpha_V(M_Pl) ~ 0.15 where sibling notes in the same lane use 0.092-0.093
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

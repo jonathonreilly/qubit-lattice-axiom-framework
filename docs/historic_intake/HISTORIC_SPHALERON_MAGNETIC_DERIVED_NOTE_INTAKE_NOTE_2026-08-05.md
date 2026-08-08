@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Two imports eliminated: the baryogenesis chain now has zero re
 Scope: 3D SU(2) Monte Carlo at L=12 and L=16, beta=8, with g = 0.653 fixed from the lattice action at g_bare = 1.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Two baryogenesis imports 'derived' — reproducing the external values they replace (0.3 sigma / exact) — pulled WITH the reproduction flag for audit.
 
@@ -32,7 +34,8 @@ Two baryogenesis imports 'derived' — reproducing the external values they repl
 - Source commit: `ef06ee99afd7309695d0d2799dd1927cac3e0f13`
 - git blob: `7800a7f1ec1f41b22632e3b22b8db024a5972ac5`
 - sha256: `78c2ad7a5958fb0f7a6a6769606c7c0c1da0931cc14b5c82c92ae698e8aba472`
-- Lines: 90; runners named: scripts/frontier_sphaleron_magnetic_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1958_SPHALERON_MAGNETIC_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1958_SPHALERON_MAGNETIC_DERIVED_NOTE.md)
+- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sphaleron_magnetic_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The 'derivation' reproduces the external values it replaces to within error bars
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Final hold, not retained — a stronger same-surface transport
 Scope: mu2 = 0.001, same three irregular families, seeds 42-46, G = 5 and 10, 30 rows, packet family held fixed and only the observable changed; max norm drift 1.33e-15.
 Escape conditions (negative claims): The failure is localized to the k = 2 BFS cut; the note names the next credible step as a different transport definition on the same irregular surface, explicitly not another packet-family sweep.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The irregular-endogenous-sign lane's FINAL HOLD terminal: strongest same-surface transport diagnostic still fails k=2 cut; next credible move named — the lane's honest close.
 
@@ -32,7 +34,8 @@ The irregular-endogenous-sign lane's FINAL HOLD terminal: strongest same-surface
 - Source commit: `5a93eec0841d393a4dffaf118885ddda5213d7c0`
 - git blob: `bc8baac0276751a24d1beb0dabdc7ff3c80c4b3e`
 - sha256: `b719cea7273e51096876dd785e4232c0aa4739a1db69c8cb9624d19b20fb96cb`
-- Lines: 113; runners named: scripts/frontier_irregular_endogenous_sign_observable.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/734_IRREGULAR_ENDOGENOUS_SIGN_OBSERVABLE_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch03/734_IRREGULAR_ENDOGENOUS_SIGN_OBSERVABLE_NOTE_2026-04-11.md)
+- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_irregular_endogenous_sign_observable(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

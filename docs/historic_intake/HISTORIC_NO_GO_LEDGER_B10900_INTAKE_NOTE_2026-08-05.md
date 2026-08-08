@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_pruned_route_memory_with_an_owner_instruction_provenance
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Prior routes closed, some by owner instruction rather than by 
 Scope: Route memory for the binary source-jet block.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Provenance record the audit lane must see: SEVEN routes are marked pruned BY USER INSTRUCTION rather than by proof (typed-edge inventory, local-current singlet-annihilation, full-trace exclusion, positive E-center domain, ...). Owner-instructed closures are scope decisions, not theorems - any consumer treating them as proved no-gos inherits an unproved premise. Avoided-list companion attached.
 
@@ -32,6 +34,7 @@ Provenance record the audit lane must see: SEVEN routes are marked pruned BY USE
 - Source commit: `5c834aed8086cc6d57961ad46fd5b2d69e161da9`
 - git blob: `25525a77d3f4cdd9c1e39fdc34dbefda2ec6f350`
 - sha256: `27336b48cb6680b018f5c59575bace91c9d387b94a0163bcb85f977249525c81`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10900_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10900_NO_GO_LEDGER.md)
 - Lines: 11; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ seven routes are marked pruned 'by user instruction' rather than by proof — cl
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_pruned_route_memory_with_an_owner_instruction_provenance
 intake_directive: owner_2026-08-05
 ```
 

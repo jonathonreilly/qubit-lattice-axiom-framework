@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like_claimed_unconditional_closure_roundup
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: CLOSED UNCONDITIONALLY per the note — 24 parallel agents acr
 Scope: Claims closure for the two Koide items only; residual open items are the overall scale v_0 ~ 17.72 sqrt(MeV), the quark-sector analog, and the neutrino Brannen phase.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 'CLOSED UNCONDITIONALLY' final claim (24 agents, 4 rounds) — pulled WITH the anomaly that 40+ later notes run on Q open and the Nature-grade review fails the closest candidate; audit must rule.
 
@@ -32,7 +34,8 @@ The 'CLOSED UNCONDITIONALLY' final claim (24 agents, 4 rounds) — pulled WITH t
 - Source commit: `daeae2fac85d71d19ad136a811c57a158e94f3fb`
 - git blob: `ab079cf5c9ad9925962551d7b46f5195c3cab83e`
 - sha256: `143c09027bca7834a5bec6d77207548b503ee64de296c312687a7b14fc3fddb0`
-- Lines: 265; runners named: scripts/frontier_koide_qubit_lattice_dim_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1090_KOIDE_UNCONDITIONAL_CLOSURE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch04/1090_KOIDE_UNCONDITIONAL_CLOSURE_2026-04-20.md)
+- Lines: 265; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_qubit_lattice_dim_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Very strong claim ('CLOSED UNCONDITIONALLY', 'We broke new ground in physics ton
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like_claimed_unconditional_closure_roundup
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retained_unconditional_planck_target_3_closure_on_the_retained_surface
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Planck Target 3 is unconditionally closed on the retained surf
 Scope: Retained surface in natural phase/action units; no parameter imports, no SI decimal hbar claim; adjacent runners listed as still passing.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The terminal 'unconditionally closed' Target-3 claim — pulled WITH the flag that it is the third such declaration while 1502 refuses and 1499 retracts; the contradiction set goes to audit.
 
@@ -32,7 +34,8 @@ The terminal 'unconditionally closed' Target-3 claim — pulled WITH the flag th
 - Source commit: `2d5671b22866b52ffcb0b1163aaa6b56fdb0b937`
 - git blob: `e3a2efd56e293f939439c49d3183413a79135617`
 - sha256: `a90ae3b76193063ffd205dce322397212530e6aba5260be8e5a4dfca67ffd644`
-- Lines: 473; runners named: scripts/frontier_planck_target3_synthesis_unconditional_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1504_PLANCK_TARGET3_SYNTHESIS_UNCONDITIONAL_CLOSURE_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch05/1504_PLANCK_TARGET3_SYNTHESIS_UNCONDITIONAL_CLOSURE_THEOREM_NOTE_2026-04-26.md)
+- Lines: 473; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_synthesis_unconditional_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ Third note in this family to declare 'unconditional closure' after two predecess
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retained_unconditional_planck_target_3_closure_on_the_retained_surface
 intake_directive: owner_2026-08-05
 ```
 

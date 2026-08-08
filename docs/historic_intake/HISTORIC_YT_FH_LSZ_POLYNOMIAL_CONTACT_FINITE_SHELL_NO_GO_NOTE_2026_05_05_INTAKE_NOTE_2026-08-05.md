@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Finite-shell Stieltjes checks after an unconstrained polynomia
 Scope: Blocks promoting finite polefit8x8 rows via arbitrary higher-degree local contact subtraction.
 Escape conditions (negative claims): A constrained or derived contact term (a same-surface certificate or microscopic denominator theorem) is untouched by this argument.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Polynomial-contact no-go: unconstrained subtraction can manufacture any residual — closes the contact-fitting loophole exactly.
 
@@ -32,7 +34,8 @@ Polynomial-contact no-go: unconstrained subtraction can manufacture any residual
 - Source commit: `ad2370a628a50e6627db522b43e458ffe4cd1cd1`
 - git blob: `03e55838dd3a6211087cba487520acea8d00409d`
 - sha256: `259373360446bf1df2f2977a0140f36acc7e665ea51ff0690e6ae7173ad77264`
-- Lines: 72; runners named: scripts/frontier_yt_fh_lsz_polynomial_contact_finite_shell_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2275_YT_FH_LSZ_POLYNOMIAL_CONTACT_FINITE_SHELL_NO_GO_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch07/2275_YT_FH_LSZ_POLYNOMIAL_CONTACT_FINITE_SHELL_NO_GO_NOTE_2026-05-05.md)
+- Lines: 72; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polynomial_contact_finite_shell_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

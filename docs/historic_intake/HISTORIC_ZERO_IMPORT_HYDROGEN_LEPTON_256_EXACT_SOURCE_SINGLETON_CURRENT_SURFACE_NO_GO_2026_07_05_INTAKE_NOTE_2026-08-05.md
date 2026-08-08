@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary — notable as the sweep's cl
 Scope: The exact source-side input consumed by the K4 charged-lepton scale assembly.
 Escape conditions (negative claims): Owner ratification and audit acceptance (all technical clause inputs are recorded as available).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Source-singleton terminal: the sweep's CLOSEST-TO-COMPLETE contract — every technical clause supplied, blocked ONLY on owner ratification + audit acceptance; a live owner-decision surface.
 
@@ -32,7 +34,8 @@ Source-singleton terminal: the sweep's CLOSEST-TO-COMPLETE contract — every te
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `a0e8a958b90fec68cc9454fc79b2eb22850e5c20`
 - sha256: `0507aa9e00e48903a960c633008c210f93e1d8a3288d2bd9b711c34817a9e62d`
-- Lines: 306; runners named: scripts/frontier_zero_import_hydrogen_lepton_256_exact_source_singleton_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2639_ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2639_ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 306; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_exact_source_singleton_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -104,6 +107,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

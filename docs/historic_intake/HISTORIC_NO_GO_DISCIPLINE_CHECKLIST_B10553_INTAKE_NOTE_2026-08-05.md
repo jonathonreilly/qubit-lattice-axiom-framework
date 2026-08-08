@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: PASS on all eight checks; there is exactly one recovery condit
 Scope: Bilinear forms on Herm(3) plus the Herm_circ(3) restriction for AM-GM; no per-site, per-mode, or lattice-wide claim.
 Escape conditions (negative claims): Strengthening 'Ad-invariant positive inner product' to 'the Hilbert-Schmidt form inherited from the ambient matrix algebra with its trace normalization' fixes beta = 0 immediately and restores kappa = 2 — that inheritance with fixed relative normalization is precisely the missing premise.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Structural negative on the kappa parameter: on Herm(3) the family alpha*Tr(AB) + beta*tr(A)tr(B) is positive-definite on an open CONE, so kappa = 2 (the value the r=1/2 story leans on) is not selected by positivity - it is a free parameter; N8 finds later Koide notes reusing the same free isotypic weighting. Adjudication-set member.
 
@@ -32,6 +34,7 @@ Structural negative on the kappa parameter: on Herm(3) the family alpha*Tr(AB) +
 - Source commit: `b7a202dfb096e317abcebb26883b6a4d3a78ba00`
 - git blob: `2275bdafc72036a1a1b66af0acdd9ad98c3dc078`
 - sha256: `a39fcf00c3bb2815531851af1ac40485bc828cab9d84e675e5ae89d52355803e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10553_NO_GO_DISCIPLINE_CHECKLIST.md](../../archive_unlanded/historic_intake_originals/packsci02/10553_NO_GO_DISCIPLINE_CHECKLIST.md)
 - Lines: 93; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Structural negative on the kappa parameter: on Herm(3) the family alpha*Tr(AB) +
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Structural negative on the kappa parameter: on Herm(3) the family alpha*Tr(AB) + beta*tr(A)tr(B) is positive-definite on an open CONE, so kappa = 2 (the value the r=1/2 story leans on) is not selected by positivity - it is a free parameter; N8 finds later Koide notes reusing the same free isotypic weighting. Adjudication-set member.
+- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Structural negative on the kappa parameter: on Herm(3) the family alpha*Tr(AB) + beta*tr(A)tr(B) is positive-definite on an open CONE, so kappa = 2 (the value the r=1/2 story leans on) is not selected by positivity - it is a free parameter; N8 finds later Koide notes reusing the same free isotypic weighting. Adjudication-set member.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ kappa = 2 (the value the r = 1/2 story needs) turns out to require a normalizati
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

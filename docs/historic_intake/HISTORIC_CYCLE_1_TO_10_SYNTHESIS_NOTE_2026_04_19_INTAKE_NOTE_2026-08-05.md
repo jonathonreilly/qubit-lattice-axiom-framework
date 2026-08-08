@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Three independent closures all land on d = 3, which the note f
 Scope: Three full closures plus one conditional closure; the conditional rests on a single narrow LO algebraic identity.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 10-cycle scalar-selector terminal: three independent closures all landing on d = 3 flagged as the campaign's meta-finding; supersedes its chain.
 
@@ -32,7 +34,8 @@ The 10-cycle scalar-selector terminal: three independent closures all landing on
 - Source commit: `7d9085fe40c82379ce1e60ba7b332e18ce9a72f9`
 - git blob: `224d3b3edafbedbd4926b0b5ffd4f4cb256e2c9f`
 - sha256: `04d9dbcb45b068e245e18af5e8185321066d9da810c3c96b85f871ddadf284eb`
-- Lines: 296; runners named: frontier_dm_dple_theorem.py, frontier_koide_berry_phase_theorem.py, frontier_koide_kappa_two_orbit_dimension_factorization.py, frontier_koide_moment_ratio_uniformity_theorem.py, frontier_koide_z3_joint_projector_identity.py, frontier_quark_projector_parameter_audit.py, frontier_quark_up_amplitude_rpsr_conditional.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/280_CYCLE_1_TO_10_SYNTHESIS_NOTE_2026-04-19.md](../../archive_unlanded/historic_intake_originals/branch01/280_CYCLE_1_TO_10_SYNTHESIS_NOTE_2026-04-19.md)
+- Lines: 296; runners named: historic runner (unpinned, not in this packet): `frontier_dm_dple_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_berry_phase_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_kappa_two_orbit_dimension_factorization(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_moment_ratio_uniformity_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_z3_joint_projector_identity(.py)`; historic runner (unpinned, not in this packet): `frontier_quark_projector_parameter_audit(.py)`; historic runner (unpinned, not in this packet): `frontier_quark_up_amplitude_rpsr_conditional(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

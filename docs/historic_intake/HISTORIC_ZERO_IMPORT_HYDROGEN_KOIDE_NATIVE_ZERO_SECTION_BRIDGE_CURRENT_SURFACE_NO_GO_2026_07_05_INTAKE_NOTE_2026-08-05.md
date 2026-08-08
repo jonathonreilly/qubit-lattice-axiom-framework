@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; the physical Z1/Z2/Z3 licens
 Scope: The Koide native bridge input consumed by the physical electron mass lane; eight-input contract (bridge text lock, zero-source readout, real primitive Brannen endpoint, based determinant-line readout, no comparator, no new primitive/axiom, owner ratification, audit acceptance).
 Escape conditions (negative claims): Supply the zero-source readout, real primitive Brannen endpoint and based determinant-line readout, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Native zero-section bridge terminal: route algebra exact (z = 0 -> Q = 2/3) but the physical licenses are the missing content.
 
@@ -32,7 +34,8 @@ Native zero-section bridge terminal: route algebra exact (z = 0 -> Q = 2/3) but 
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `905696fd06e31ba40838d72720093ca25df11eb5`
 - sha256: `3864ec806796c844ec3f01e33c6e74b6bc1f5d9ae2ea67394d1b597ebfb9f217`
-- Lines: 264; runners named: scripts/frontier_koide_native_zero_section_closure_route.py, scripts/frontier_zero_import_hydrogen_koide_native_zero_section_bridge_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2545_ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2545_ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 264; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_native_zero_section_closure_route(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_koide_native_zero_section_bridge_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

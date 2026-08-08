@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Not a code bug but a genuine physics constraint: the simplest 
 Scope: Diagnostic of the single-phase NNI texture with phase confined to M_13, 1.4% up/down EW weight mismatch and extreme mass hierarchy m_u/m_t ~ 1e-5.
 Escape conditions (negative claims): Three named resolutions: phases in both sectors, phase in M_23 rather than only M_13, or independent c_13^u/c_13^d.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Jarlskog structural diagnosis: phase-loss in diagonalization is a genuine physics constraint of single-phase NNI (J would be 0.99x PDG if the phase survived) — three named resolutions; the family's terminal understanding.
 
@@ -32,7 +34,8 @@ The Jarlskog structural diagnosis: phase-loss in diagonalization is a genuine ph
 - Source commit: `5e3931471d9aa25b2884a0ca2ec81f99ec7313fd`
 - git blob: `1dc5db99c616fc491a4a1fc316b57b21817c2970`
 - sha256: `3eba7c59f4f653689cd8582a9caca37fb296b74fea33a59f0bc3a5a0da092f77`
-- Lines: 129; runners named: frontier_ckm_full_closure.py, scripts/frontier_ckm_jarlskog_diagnosis.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/202_CKM_JARLSKOG_DIAGNOSIS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/202_CKM_JARLSKOG_DIAGNOSIS_NOTE.md)
+- Lines: 129; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_full_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_jarlskog_diagnosis(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

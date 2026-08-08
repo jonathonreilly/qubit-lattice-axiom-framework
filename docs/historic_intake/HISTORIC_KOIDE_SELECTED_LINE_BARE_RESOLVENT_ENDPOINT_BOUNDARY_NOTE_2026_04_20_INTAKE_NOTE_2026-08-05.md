@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_constructive_boundary
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The missing endpoint theorem is not a bare local selected-line
 Scope: The smallest local selected-line bare-resolvent family only; does not rule out more structured resolvent families, ambient transport, or Wilson endpoint laws.
 Escape conditions (negative claims): The endpoint law must involve more than a local resolvent: nonlocal continuation/transport, extra ambient Wilson data, or a stronger branch law invisible inside this bare local family.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Selected-line kill: a bare local resolvent family can imitate the packet numerically, so the endpoint law must be nonlocal/self-consistent — eliminates a whole candidate class.
 
@@ -32,7 +34,8 @@ Selected-line kill: a bare local resolvent family can imitate the packet numeric
 - Source commit: `bd53a1cb7eca5773b860a28a36e66b8f4b942bb9`
 - git blob: `e4a749230b028bf929e2f3b56bb1d6ebe94e0fd8`
 - sha256: `8ac398b11d963e3d19ed3a75689fbfbbc92d55b789e240b6bc0916ca411fa232`
-- Lines: 191; runners named: scripts/frontier_koide_selected_line_bare_resolvent_endpoint_boundary_2026_04_20.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1082_KOIDE_SELECTED_LINE_BARE_RESOLVENT_ENDPOINT_BOUNDARY_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch04/1082_KOIDE_SELECTED_LINE_BARE_RESOLVENT_ENDPOINT_BOUNDARY_NOTE_2026-04-20.md)
+- Lines: 191; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_line_bare_resolvent_endpoint_boundary_2026_04_20(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_constructive_boundary
 intake_directive: owner_2026-08-05
 ```
 

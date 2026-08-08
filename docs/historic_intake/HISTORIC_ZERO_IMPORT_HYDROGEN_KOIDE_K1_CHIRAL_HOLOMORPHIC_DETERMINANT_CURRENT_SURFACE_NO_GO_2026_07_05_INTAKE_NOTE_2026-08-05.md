@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; native J_cs remains support 
 Scope: The chiral/holomorphic determinant subtarget inside the Koide K1 selector gate.
 Escape conditions (negative claims): Identify the fluctuation determinant object, show the readout functional factors through the complex slot, compute the chiral/holomorphic count on the retained realization, then obtain owner ratification and audit acceptance.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 K1 determinant terminal: five of fourteen inputs missing; the fluctuation-determinant object unidentified.
 
@@ -32,7 +34,8 @@ K1 determinant terminal: five of fourteen inputs missing; the fluctuation-determ
 - Source commit: `9e8750e993031431a5d99b29f7b636d54290c443`
 - git blob: `e37e8dfe0d36258b4677e4bc3ad31f3c913875c5`
 - sha256: `e89ec67f6d119fa3a106253b7be2018312bd06d4497cbec9f31a71c2f6ddbeb4`
-- Lines: 270; runners named: scripts/frontier_zero_import_hydrogen_koide_k1_chiral_holomorphic_determinant_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2523_ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2523_ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 270; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_koide_k1_chiral_holomorphic_determinant_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

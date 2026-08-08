@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_support
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A falsification and cross-extraction target, not a retained cl
 Scope: Conditional on two load-bearing inputs flagged as conditional support (P1) and open support target (P2); no PDG observable is a derivation input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest three-sector support note: the quadratic d = (N_c^2-3)/2 is a falsification target, NOT retained — and it documents its theorem-twin's overclaim.
 
@@ -32,7 +34,8 @@ The honest three-sector support note: the quadratic d = (N_c^2-3)/2 is a falsifi
 - Source commit: `fc5bcceb19642e8a16498ca2412bd07b5ed0a39c`
 - git blob: `03bb0d0f3a646253b0f9a0f025b21c9352331cdd`
 - sha256: `922780d4e18a9e924fa02290c0141d75f537fe861af21c0b627fbc6e9a8cc158`
-- Lines: 235; runners named: scripts/frontier_framework_three_sector_dimension_color_quadratic_identity.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/508_FRAMEWORK_THREE_SECTOR_DIMENSION_COLOR_QUADRATIC_IDENTITY_SUPPORT_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch02/508_FRAMEWORK_THREE_SECTOR_DIMENSION_COLOR_QUADRATIC_IDENTITY_SUPPORT_NOTE_2026-04-25.md)
+- Lines: 235; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_framework_three_sector_dimension_color_quadratic_identity(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Both load-bearing inputs are explicitly non-retained (one conditional support, o
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_support
 intake_directive: owner_2026-08-05
 ```
 

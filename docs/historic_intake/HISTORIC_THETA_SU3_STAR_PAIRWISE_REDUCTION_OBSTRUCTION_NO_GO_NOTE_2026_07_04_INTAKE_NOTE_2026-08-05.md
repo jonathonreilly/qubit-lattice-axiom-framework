@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: A sector/readout theorem for the SU(3) star cannot be replaced
 Scope: Answers the (i-b''-a) SU(3) star reduction question left open by the July-2 link-star theorem; claims nothing about future sector-level, phase-source, or governance routes.
 Escape conditions (negative claims): Handle the triple joint-star datum directly at sector level — the central-sector projection route of idx 2066 is the named escape, which controls (rather than reduces) the triple data.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 SU(2) pairwise reduction does NOT transfer to SU(3): identical pairwise data, different triple stars — the triple joint-star datum is irreducible.
 
@@ -32,7 +34,8 @@ SU(2) pairwise reduction does NOT transfer to SU(3): identical pairwise data, di
 - Source commit: `06f5962508939bec282bbd973953ffd047bcd0ec`
 - git blob: `4104a3beba43cff8d613c8bbcd6b3fe08df97822`
 - sha256: `de633a1b1557b2f2c69e2619af96cf5ea1fa5557a96ad7ee201347342cdb3025`
-- Lines: 213; runners named: scripts/theta_su3_star_pairwise_reduction_obstruction_2026_07_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2067_THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch07/2067_THETA_SU3_STAR_PAIRWISE_REDUCTION_OBSTRUCTION_NO_GO_NOTE_2026-07-04.md)
+- Lines: 213; runners named: historic runner (unpinned, not in this packet): `scripts/theta_su3_star_pairwise_reduction_obstruction_2026_07_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

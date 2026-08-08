@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_algebraic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Exact - the 5/5 algebraic steps are the proof; three of five n
 Scope: Explicit assumptions: translation invariance, nearest-neighbour connectivity, self-adjointness and exact 1/r decay; the proof is on infinite Z^3, with finite-lattice numerics as consistency checks only.
 Escape conditions (negative claims): The uniqueness bites only within the stated operator class - beyond nearest-neighbour or beyond exact 1/r decay it says nothing.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Poisson uniqueness within the stated class — WITH the EXACT-header-vs-3/5-numerical-FAILs flag on the record.
 
@@ -32,7 +34,8 @@ Poisson uniqueness within the stated class — WITH the EXACT-header-vs-3/5-nume
 - Source commit: `01fcc3c83d644fb34bb42cbc881565cd3b4d7e3f`
 - git blob: `46114a36df713f04767281651acfa9f11bd2447e`
 - sha256: `987e8ea34d882f6d9320c0f9c829884b9be9290b175c0c8a825e4cc102349150`
-- Lines: 166; runners named: scripts/frontier_poisson_uniqueness_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1605_POISSON_UNIQUENESS_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1605_POISSON_UNIQUENESS_THEOREM_NOTE.md)
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_poisson_uniqueness_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Header advertises EXACT while the same runner reports 3/5 numerical checks FAILI
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_algebraic_theorem
 intake_directive: owner_2026-08-05
 ```
 

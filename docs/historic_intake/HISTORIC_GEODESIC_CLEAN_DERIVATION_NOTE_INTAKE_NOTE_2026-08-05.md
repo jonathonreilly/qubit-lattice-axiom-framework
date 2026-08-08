@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The geodesic equation including Christoffel symbols follows fr
 Scope: One step is explicitly BOUNDED (conditional on the continuum limit); the rest are DERIVED or standard-mathematics THEOREM.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The geodesic chain with audited per-step provenance — Christoffels from the path-sum, with the conditional continuum step flagged mid-chain.
 
@@ -32,7 +34,8 @@ The geodesic chain with audited per-step provenance — Christoffels from the pa
 - Source commit: `6cb7204d1184a9826e67adb37cef9623f749e040`
 - git blob: `0ba0e53e73658e6d2161a42ab84581b366155e79`
 - sha256: `e971d12abf132bf073344dd02219f5677eb5cca44bb4c1589461e950951af7b8`
-- Lines: 414; runners named: scripts/frontier_geodesic_equation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/636_GEODESIC_CLEAN_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/636_GEODESIC_CLEAN_DERIVATION_NOTE.md)
+- Lines: 414; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ A continuum-limit-conditional BOUNDED step sits in the middle of a chain whose s
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

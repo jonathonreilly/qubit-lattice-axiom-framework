@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: An exact negative boundary for a geometry-free residual coeffi
 Scope: Prunes only the route treating the single-link packet or one finite cube packet as a universal environment across the two tested PBC sizes; does NOT establish fixed-L_s boundary-condition dependence and does not say a geometry-indexed coefficient cannot be computed.
 Escape conditions (negative claims): Explicitly leaves open the computation of a properly geometry-indexed coefficient rho^(env,L_s,BC); the obstruction is only to geometry-freeness, and the temporal mixed-kernel stripping question is separately open.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Geometry-dependence no-go: the environment coefficient has different strong-coupling orders at different sizes — no geometry-free sequence; earlier overclaims corrected.
 
@@ -32,7 +34,8 @@ Geometry-dependence no-go: the environment coefficient has different strong-coup
 - Source commit: `73eb72b7b88b9656546ad35fc549d7d5519ad586`
 - git blob: `890904d267d04b9c326545c0b58bccfa144bb805`
 - sha256: `83a9eb3f94eb6086914e38d882eef052c24fab0df2d2215f49ad56eadcb8a298`
-- Lines: 215; runners named: scripts/frontier_gauge_vacuum_plaquette_environment_geometry_dependence_no_go_2026_07_10.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/590_GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md](../../archive_unlanded/historic_intake_originals/branch02/590_GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md)
+- Lines: 215; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_environment_geometry_dependence_no_go_2026_07_10(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that earlier notes in this lane overclaimed a universal environment pack
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: COLOR_CORRECTION_FORCES_SQRT_65 = FALSE_BUT_NEAR — the Casim
 Scope: Structural support/negative note for candidate 5 of the G5 attack surface; promotes no Koide relation to a retained theorem in any sector.
 Escape conditions (negative claims): The obstruction is that the retained hw=1 generation algebra carries no species-dependent color-adjoint projector and the color-singlet projector R_conn = 8/9 is species-democratic so cancels in Q; escaping requires a species-dependent (or matrix-valued) correction on the circulant (a,b) parameters.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 FALSE_BUT_NEAR: the exact Casimir dressing predicts Q_d = 0.7303 with the up-type 5.75% failure honest — a falsifiable-adjacent near-miss with the missing species-charge named.
 
@@ -32,7 +34,8 @@ FALSE_BUT_NEAR: the exact Casimir dressing predicts Q_d = 0.7303 with the up-typ
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `40bd522085af7b07f4a375b1868cefa4d49619dd`
 - sha256: `e863cd3531864166c66e989199f8c09fb2719ed85aa33f4da43594330be784a8`
-- Lines: 274; runners named: scripts/frontier_koide_color_sector_correction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/770_KOIDE_COLOR_SECTOR_CORRECTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/770_KOIDE_COLOR_SECTOR_CORRECTION_NOTE.md)
+- Lines: 274; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_color_sector_correction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The up-type extension fails by 5.75%, undercutting the down-sector near-match as
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

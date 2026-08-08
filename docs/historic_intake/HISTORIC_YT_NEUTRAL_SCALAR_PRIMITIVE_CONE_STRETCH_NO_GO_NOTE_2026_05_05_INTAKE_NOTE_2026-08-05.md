@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The current source/neutral surface cannot force the primitive-
 Scope: Cycle 5 of the non-chunk loop with a minimal premise set excluding external targets, unit-operator/Ward readout, gauge-normalization and unit-overlap shortcuts, and source-only rows recast as Schur/W-Z/O_H rows.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Neutral-scalar rank-one TERMINAL: the obstruction is algebraic and non-data — reducible completions preserve all source rows; the certificate contract named.
 
@@ -32,7 +34,8 @@ Neutral-scalar rank-one TERMINAL: the obstruction is algebraic and non-data — 
 - Source commit: `15e75dd5781e0d0ce0ae330b70f0ce72c8eeea3b`
 - git blob: `37f65197d118aa13670be43ed4a5bb15352ac335`
 - sha256: `04e7f058fa834752dd21206ae9d12f6822dd6145d19e72737a998d562066ed09`
-- Lines: 49; runners named: scripts/frontier_yt_neutral_scalar_primitive_cone_stretch_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2344_YT_NEUTRAL_SCALAR_PRIMITIVE_CONE_STRETCH_NO_GO_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch07/2344_YT_NEUTRAL_SCALAR_PRIMITIVE_CONE_STRETCH_NO_GO_NOTE_2026-05-05.md)
+- Lines: 49; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_neutral_scalar_primitive_cone_stretch_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

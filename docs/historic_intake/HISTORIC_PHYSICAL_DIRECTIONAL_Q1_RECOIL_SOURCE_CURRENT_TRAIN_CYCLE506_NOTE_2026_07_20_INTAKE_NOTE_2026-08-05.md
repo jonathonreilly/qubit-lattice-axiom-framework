@@ -1,9 +1,11 @@
 # Historic intake: Genuine-3D directional-Q1 recoil/source-current train — Cycle 506
 
+Explicit subject: FORMAL PREREGISTRATION INVALID: the declared fixed word says contact g = 0.04 while the hashed executable and every science-log row use inherited Cycle-230 contact g = 0.37. (The bare code `Q1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: Because of the coefficient mismatch this is NOT a falsificatio
 Scope: Bounded strictly to the immutable Cycle-506 log, its observable, and the actual g = 0.37 executable; blind held unrun (0 authorized).
 Escape conditions (negative claims): FAIL for any broad no-go, minimum-content, shared-obstruction or axiom-pressure claim; the primary source-current target does not advance.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 PROTOCOL-INTEGRITY record: FORMAL PREREGISTRATION INVALID - the declared fixed word says contact g = 0.04 while the hashed executable and every science-log row use inherited g = 0.37, so the run is NOT a falsification of the [declared hypothesis]; second consecutive protocol failure in the same lane. The self-caught preflight withdrawal attached. The pair is the sweep's cleanest record of preregistration failure modes.
 
@@ -32,7 +36,8 @@ PROTOCOL-INTEGRITY record: FORMAL PREREGISTRATION INVALID - the declared fixed w
 - Source commit: `3bb1cb3adddbde94335031aa415f2488f81565c7`
 - git blob: `48ad736d77ed1aae78f4820d77e6840bb120a9b7`
 - sha256: `302afd4a829475ee46771405ff9439c4a82c4ca36242d1267cb44f994c2842ef`
-- Lines: 537; runners named: scripts/physical_directional_q1_recoil_source_current_science_train_cycle506_2026_07_20.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2841_PHYSICAL_DIRECTIONAL_Q1_RECOIL_SOURCE_CURRENT_TRAIN_CYCLE506_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/2841_PHYSICAL_DIRECTIONAL_Q1_RECOIL_SOURCE_CURRENT_TRAIN_CYCLE506_NOTE_2026-07-20.md)
+- Lines: 537; runners named: historic runner (unpinned, not in this packet): `scripts/physical_directional_q1_recoil_source_current_science_train_cycle506_2026_07_20(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Second consecutive protocol failure in the same Cycle-506 packet: the preflight 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

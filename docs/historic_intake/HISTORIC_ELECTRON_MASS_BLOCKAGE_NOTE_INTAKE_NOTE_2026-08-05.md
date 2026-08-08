@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: m_e is NOT DERIVED - closing it needs genuinely new machinery 
 Scope: On the current Cl(3)/Z^3 surface; the framework does supply three generations, Q = 2/3 automatically, and the 2 pi/3 phase spacing.
 Escape conditions (negative claims): The flatness obstruction breaks only via one of three named routes: an observable sensitive to the complex phase arg(z) (CP-odd or species-ordering-sensitive), a non-C_3-symmetric perturbation (different staircase thresholds per generation), or a charged-lepton Ward identity y_tau(M_Pl) = g_latt^tau/sqrt(N_tau) analogous to the top-quark one - with N_tau and g_latt^tau open.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Analytically exact obstruction: both DFT character components are theta-independent on the Koide family, so m_e is NOT derived — three named escape routes; the mass lane's sharp wall.
 
@@ -32,7 +34,8 @@ Analytically exact obstruction: both DFT character components are theta-independ
 - Source commit: `5d16934406a624cd2904484369a53cc2bab9eaad`
 - git blob: `39bd952a71575fefeb1ebbc7fdf5e2f92635c159`
 - sha256: `ce6cf4a4321689f60e9effec734d6296b9ca01eebbf01531bd5258a5022bdf41`
-- Lines: 174; runners named: scripts/electron_mass_from_axioms.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/423_ELECTRON_MASS_BLOCKAGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/423_ELECTRON_MASS_BLOCKAGE_NOTE.md)
+- Lines: 174; runners named: historic runner (unpinned, not in this packet): `scripts/electron_mass_from_axioms(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The only formula reaching m_tau exactly uses a fitted exponent 2.17 that is neit
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

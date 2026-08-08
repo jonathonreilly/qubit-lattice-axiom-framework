@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: DERIVED as an exponent-bookkeeping result, but the numerical o
 Scope: The correct power of the wavefunction renormalization in the Coleman-Weinberg hierarchy formula.
 Escape conditions (negative claims): 2-loop RGE corrections, gauge-boson contributions to V_CW, running of y_t between M_Pl and v, and O(alpha_s) corrections to the lambda_0 matching — all called calculable O(10%) effects.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Z_chi exponent bookkeeping resolution (v = 226 GeV, 8% low) WITH the severe exponential-sensitivity flag — the April hierarchy note in its honest form.
 
@@ -32,7 +34,8 @@ Z_chi exponent bookkeeping resolution (v = 226 GeV, 8% low) WITH the severe expo
 - Source commit: `59bf5717143119081ba18526e51f90e9e14b181e`
 - git blob: `e155d5bfa86bb41712365c9dd8a0733b197f2b22`
 - sha256: `9d7f70dc8eabf7dc2a76eb58c5c4025ea11954e5349ccab33d41c6050baf9a01`
-- Lines: 102; runners named: scripts/frontier_zchi_power.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2504_ZCHI_POWER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2504_ZCHI_POWER_NOTE.md)
+- Lines: 102; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zchi_power(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The stated sensitivity is severe: v depends exponentially on Sigma_1, and the no
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

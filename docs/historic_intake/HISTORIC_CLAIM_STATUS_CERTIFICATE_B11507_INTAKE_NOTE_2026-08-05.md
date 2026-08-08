@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_claim_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: candidate-retained-grade; review pass; audit required
 Scope: finite-dimensional normalization arithmetic only; no physical matching claim
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean unlanded positive: candidate-retained-grade self-contained exact finite-dimensional normalization theorem; review pass, audit-ready; the only pruned route is the out-of-scope physical identification (a shared numeri~[cal coincidence] is named, not used).
 
@@ -32,6 +34,7 @@ Clean unlanded positive: candidate-retained-grade self-contained exact finite-di
 - Source commit: `8ba262eaa1d6617ff44a076bfabf5db102fbdb99`
 - git blob: `4a1292ba0753fcb567e73ea3cf4da68b3d0153ee`
 - sha256: `cbe7ee70fc558e6ac6249d1a1529e3d3b4bbdacda7a47fae0171267dafce7089`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11507_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci05/11507_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 26; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

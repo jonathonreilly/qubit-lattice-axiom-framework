@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: It cannot without H_unit or an equivalent definition — exact
 Scope: Whether the prior Ward route (YT_WARD_IDENTITY_DERIVATION_THEOREM, classified audited_renaming) can be made audit-clean through WTI, HS, source-functional, or Fierz-alone routes.
 Escape conditions (negative claims): Permit D17 as a definition source rather than a consistency check (not permitted under the current forbiddance set).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Pass-2 terminal: four Ward routes ruled out — D17/H_unit is the SINGLE load-bearing obstruction; the landed 1/sqrt(6) is not audit-clean without it. The y_t lane's definitive audit-grade no-go.
 
@@ -32,7 +34,8 @@ Pass-2 terminal: four Ward routes ruled out — D17/H_unit is the SINGLE load-be
 - Source commit: `06251ac450a41c36ca6d74a8fab7ffdcdd4b2625`
 - git blob: `6c1e791273e865e9a16e313bc831ac647fac3b67`
 - sha256: `2f3cd7ad345bef463ed3f9d3317aa5f5253e29ffae9e656b697fcc0cf1338c0c`
-- Lines: 603; runners named: scripts/frontier_yt_top_mass_ward_decomp_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2468_YT_TOP_MASS_WARD_DECOMP_NO_GO_NOTE_2026-04-30.md](../../archive_unlanded/historic_intake_originals/branch08/2468_YT_TOP_MASS_WARD_DECOMP_NO_GO_NOTE_2026-04-30.md)
+- Lines: 603; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_top_mass_ward_decomp_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

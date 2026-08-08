@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The campaign queue is exhausted for non-duplicative source/rea
 Scope: The whole 2026-06-22 Route-2 source/readout campaign (Blocks ~84-149).
 Escape conditions (negative claims): Instructs that the listed routes not be reopened without a new primitive or a new repo surface, and names the next useful proof target exactly.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Route-2 quark sweep TERMINAL: queue exhaustion — every member reduces to the same c_TE = -8/9 missing primitive; the ~40-note chain's honest end.
 
@@ -32,7 +34,8 @@ Route-2 quark sweep TERMINAL: queue exhaustion — every member reduces to the s
 - Source commit: `79131cf336c6d1deed3dd6c0fa8bb440b5ceee76`
 - git blob: `0623d5654b5ad04db0ac505837d2d741be5a8979`
 - sha256: `456b785fe6948ba098f03675c2ab2614ffbdba1d84abf197928d849d5a6e6d96`
-- Lines: 51; runners named: scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1742_QUARK_ROUTE2_SOURCE_READOUT_PRIMITIVE_QUEUE_EXHAUSTION_2026-06-22.md](../../archive_unlanded/historic_intake_originals/branch06/1742_QUARK_ROUTE2_SOURCE_READOUT_PRIMITIVE_QUEUE_EXHAUSTION_2026-06-22.md)
+- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -94,6 +97,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

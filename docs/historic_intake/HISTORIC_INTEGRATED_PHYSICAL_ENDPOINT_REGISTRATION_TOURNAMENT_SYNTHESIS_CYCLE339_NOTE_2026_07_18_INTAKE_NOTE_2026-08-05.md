@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Closes the comparison connector but derives no contingent real
 Scope: The physical endpoint/content comparison connector open in Cycles 333-335; the approved realized-state primitive supplies the pointwise reference.
 Escape conditions (negative claims): Gate disposition: broad binding/permanence/Record no-go FAIL / DO NOT SHIP — no route-independent obstruction and no axiom pressure are supported.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Synthesis terminal of the endpoint-registration trio (Cycles 336/337/338): three positive bounded implementations of the export/registration comparison incl. a fixed 42-M2 reversible permutation handshake; closes the comparison connector while deriving no contingent realized content; broad binding/permanence gates dispositioned FAIL/DO-NOT-SHIP. Members attached.
 
@@ -32,7 +34,8 @@ Synthesis terminal of the endpoint-registration trio (Cycles 336/337/338): three
 - Source commit: `7485ce894bced1c5c1abf9d8242404b34d6516bd`
 - git blob: `8a1c87779a6105a4f4fcc9af1c81a82b74a9bd96`
 - sha256: `5e0e35877e5dcf8b1b8a9c6b5a56558f158d7b2bc9d7f981313c1afe09cdf001`
-- Lines: 351; runners named: scripts/integrated_physical_endpoint_registration_tournament_synthesis_cycle339_2026_07_18.py, scripts/physical_endpoint_registration_direct_route_cycle336_2026_07_18.py, scripts/physical_endpoint_registration_protected_route_cycle337_2026_07_18.py, scripts/physical_endpoint_registration_process_route_cycle338_2026_07_18.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2761_INTEGRATED_PHYSICAL_ENDPOINT_REGISTRATION_TOURNAMENT_SYNTHESIS_CYCLE339_NOTE_2026-07-18.md](../../archive_unlanded/historic_intake_originals/branch09/2761_INTEGRATED_PHYSICAL_ENDPOINT_REGISTRATION_TOURNAMENT_SYNTHESIS_CYCLE339_NOTE_2026-07-18.md)
+- Lines: 351; runners named: historic runner (unpinned, not in this packet): `scripts/integrated_physical_endpoint_registration_tournament_synthesis_cycle339_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_direct_route_cycle336_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_protected_route_cycle337_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_process_route_cycle338_2026_07_18(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

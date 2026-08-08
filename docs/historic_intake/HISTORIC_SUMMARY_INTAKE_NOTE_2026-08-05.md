@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exercise_result
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Model-scoped primitive adoption is sound; axiom-text amendment
 Scope: 11-site toy at one prime ring; the lattice/QCA lens explicitly warns that one dynamics on one prime ring is an existence proof, not a law.
 Escape conditions (negative claims): Axiom-text amendment is unblocked only by the general definition + scaling theorem, plus for E2 a non-empty infinite-volume reading.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Terminal decision surface of the 2026-08-01 foundation review: five physicist lenses all SUSTAINED; E1 fine clock (182 stamps, 33 monitor-independent absolutes) vs E2 recurrence-anchored coarse clock; verdict that model-scoped primitive adoption is sound and axiom-text amendment premature, with the unblocking condition named. Direct ancestor of the owner-approved admissibility revision (PR #6011). Review family attached, incl. the thermodynamicist dissent on E2.
 
@@ -32,6 +34,7 @@ Terminal decision surface of the 2026-08-01 foundation review: five physicist le
 - Source commit: `034fef8b1853179b4f9d8e2b7a4f673c229a21d9`
 - git blob: `24fe274c7180b7ebb181d60ed2e62c560075d5b4`
 - sha256: `c37adcde49e1510143141d6e209048c648b7fcd854fccbef971506d369079a10`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10043_SUMMARY.md](../../archive_unlanded/historic_intake_originals/packsci01/10043_SUMMARY.md)
 - Lines: 75; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -53,6 +56,7 @@ Thermodynamicist lens says E2's recurrence-anchored timing is 'thermodynamically
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exercise_result
 intake_directive: owner_2026-08-05
 ```
 

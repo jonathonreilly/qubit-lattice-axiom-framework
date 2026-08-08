@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The proposed constant-lift closure is exactly ruled out; what 
 Scope: Exact on a finite 3+1 Wilson lattice; the one-plaquette block is cross-checked against an independent Weyl-angle integral to machine precision (P_1plaq(6) = 0.422531739649983).
 Escape conditions (negative claims): The negative kills only CONSTANT lifts: it forces c = 1 for any identity valid on an interval, leaving non-constant (beta-dependent) lifts and other closure forms untouched.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact no-go: strong-coupling slope 1/18 on both objects forces c = 1 — every constant-lift closure (including the landed-adjacent 575) is ruled out.
 
@@ -32,7 +34,8 @@ Exact no-go: strong-coupling slope 1/18 on both objects forces c = 1 — every c
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `7c919d734b04fd836be4b57255d2eb12179c47e0`
 - sha256: `58efe8f729692c38acf7d5a2a6d398f1517471ae1b64720ecbbd6a2cfefc105b`
-- Lines: 226; runners named: scripts/frontier_gauge_plaquette_source_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/564_GAUGE_PLAQUETTE_SOURCE_NO_GO_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/564_GAUGE_PLAQUETTE_SOURCE_NO_GO_NOTE.md)
+- Lines: 226; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_plaquette_source_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

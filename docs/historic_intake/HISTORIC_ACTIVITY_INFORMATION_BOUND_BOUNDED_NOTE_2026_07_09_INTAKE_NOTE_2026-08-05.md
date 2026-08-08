@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_support
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The bridge premise weakens the way the sparsity premise did: o
 Scope: Runner returns BOUND-PARTIAL (exit 1); proportionality question deferred to d >= 2 alongside the redundancy bar.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Bridge-premise weakening with exact controls: activity-information necessity exhibited, rate-proportionality refuted (no linear gate) — a real negative on a consumable premise; runner exits 1 by design.
 
@@ -32,7 +34,8 @@ Bridge-premise weakening with exact controls: activity-information necessity exh
 - Source commit: `17f88bb35ad7c81ba7fbac32c7c40bfca4441312`
 - git blob: `d7b54a9899eb315798909b90ef962519837dd386`
 - sha256: `3073a4662da024f2794008affe336b15204c0adf5920dc694ffd57c95fb38d8a`
-- Lines: 79; runners named: ../scripts/activity_information_bound_2026_07_09.py, scripts/activity_information_bound_2026_07_09.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/34_ACTIVITY_INFORMATION_BOUND_BOUNDED_NOTE_2026-07-09.md](../../archive_unlanded/historic_intake_originals/branch01/34_ACTIVITY_INFORMATION_BOUND_BOUNDED_NOTE_2026-07-09.md)
+- Lines: 79; runners named: historic runner (unpinned, not in this packet): `../scripts/activity_information_bound_2026_07_09(.py)`; historic runner (unpinned, not in this packet): `scripts/activity_information_bound_2026_07_09(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Primary runner exits 1 (BOUND-PARTIAL) by design; the counterexamples are retain
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_support
 intake_directive: owner_2026-08-05
 ```
 

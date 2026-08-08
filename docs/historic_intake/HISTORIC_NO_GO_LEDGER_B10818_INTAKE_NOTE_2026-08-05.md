@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_six_row_falsification_closure_table_with_exact_lessons
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: These negatives prune routes, not the full record-instrument p
 Scope: Current surface and analyzed classes.
 Escape conditions (negative claims): The live escape is a separate classical record register coupled through a local instrument to a coherent carrier.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsifies two previously stated selector claims: the four axioms do NOT uniquely select staggered/Dirac kinetics - a symmetric SWAP-Laplacian completion is a counterexample - plus five further pruned negatives; three separate previously-held readings fall. QND-refutation companion attached.
 
@@ -32,6 +34,7 @@ Falsifies two previously stated selector claims: the four axioms do NOT uniquely
 - Source commit: `38a099d76c55cda4be26f77fe20723db5eb714df`
 - git blob: `262c57763580922fbd13c67e08936ca8e27def40`
 - sha256: `c038b3db34d7d1a875e8cacfb40d602705a1529f82a9674d911280346de515f4`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10818_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10818_NO_GO_LEDGER.md)
 - Lines: 14; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ three separate previously-held selection claims are falsified or rejected here, 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_six_row_falsification_closure_table_with_exact_lessons
 intake_directive: owner_2026-08-05
 ```
 

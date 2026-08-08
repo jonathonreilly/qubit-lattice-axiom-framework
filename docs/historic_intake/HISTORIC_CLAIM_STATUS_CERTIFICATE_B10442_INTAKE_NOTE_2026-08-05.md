@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Prior wording falsified and replaced by a two-element companio
 Scope: One sampled row; not a new axiom and not a family-wide promotion.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsification of prior row wording on the record: the repaired computation shows the claimed seed-singleton is actually the two-element companion pair (0.20, 0)/(...); prior wording withdrawn and replaced.
 
@@ -32,6 +34,7 @@ Falsification of prior row wording on the record: the repaired computation shows
 - Source commit: `f636a97d088b69da2ddffca6d05359f0e65f45e4`
 - git blob: `6052a7c2193ee9aee7f8434433066be425f1c355`
 - sha256: `2f712190c3ac207b35fc4d9854252428d15d6f3707477683c20758058b71e36a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10442_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10442_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 16; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A previously asserted singleton is actually a pair — a concrete correction of 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

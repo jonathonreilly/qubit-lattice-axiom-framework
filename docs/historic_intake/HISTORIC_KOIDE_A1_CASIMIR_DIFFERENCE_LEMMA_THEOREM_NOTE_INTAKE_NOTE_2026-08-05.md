@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Q = 2/3 moves from OPEN to CLOSED on schema (P1 + P2 with comm
 Scope: Schema-grade closure under the two named primitives; does not close the Brannen radian bridge, does not fix the overall lepton mass scale v_0, and does not universalise beyond Yukawa-doublet participants (L, H).
 Escape conditions (negative claims): Claims evasion of all nine retained A1 no-gos (audited by runner X5) because it imports SU(2)_L x U(1)_Y data rather than working from C_3 invariance on the hw=1 block alone.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Schema-grade theorem: Q = 2/3 iff 3Y^2 = T(T+1) under P1+P2 with common c — retained Cl(3) inputs satisfy it exactly; conditional honesty on the schema.
 
@@ -32,7 +34,8 @@ Schema-grade theorem: Q = 2/3 iff 3Y^2 = T(T+1) under P1+P2 with common c — re
 - Source commit: `6e3ed580c2be88e773f9e5d91bd6929ffea49929`
 - git blob: `dc6ad126d513a27b52c6e1216b64ce6bcdc69c35`
 - sha256: `52c387e34cc848699b16300adbd03a6c44791fef131fe251a998eea019e99b17`
-- Lines: 118; runners named: scripts/frontier_koide_a1_casimir_difference_lemma_skeleton.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/753_KOIDE_A1_CASIMIR_DIFFERENCE_LEMMA_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/753_KOIDE_A1_CASIMIR_DIFFERENCE_LEMMA_THEOREM_NOTE.md)
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_a1_casimir_difference_lemma_skeleton(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-labelled schema-grade: the closure is conditional on P1 and P2, which the n
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

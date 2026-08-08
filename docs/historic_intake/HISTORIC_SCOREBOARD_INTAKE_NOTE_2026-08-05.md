@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_campaign_final_scoreboard
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: What the owner receives: 'the axioms contain the lock law; sup
 Scope: Campaign-owned PRs only; bounded_theorem, authority none, independent audit still required throughout; no axiom, Tier-A or retained status touched.
 Escape conditions (negative claims): The forecast hypothesis class 'died honestly, in domain, 46 -> 0' — a self-reported falsification of the campaign's own hypothesis class.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL scoreboard of the proof-grade-close campaign: fifty-five PRs #5772-#5833 in one 24-hour window, every block shipping primary + independent adversarial checker + note + pinned caches + receipt; the owner-facing outcome is 'the axioms contain the lock law; supply the schedule', and the forecast hypothesis class died honestly in detail. One supervisor baseline error is disclosed in-pack. Axiom-update criterion companion attached.
 
@@ -32,6 +34,7 @@ TERMINAL scoreboard of the proof-grade-close campaign: fifty-five PRs #5772-#583
 - Source commit: `58b076f272350770ba49737342bafaefac7fe938`
 - git blob: `e9a54116ea03a776bb3cd6685fb481e0f2c95ca6`
 - sha256: `661dc3fe66fd6a7868e6c1e81d578e8d8c5a22bd3b1d29e7107cf29209d286ae`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10801_SCOREBOARD.md](../../archive_unlanded/historic_intake_originals/packsci03/10801_SCOREBOARD.md)
 - Lines: 73; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ one supervisor baseline error (the 801 'silent' compression) was caught by a che
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_campaign_final_scoreboard
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Stated as a self-contained theorem, but its load-bearing Ward-
 Scope: Scheme-independence of the RATIO y_t/g_s only, not of y_t or g_s individually; depends on A1-A5.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The April 'all orders in any scheme' y_t/g_s = 1/sqrt(6) THEOREM claim — pulled WITH the flags: its load-bearing Ward input was later ledger-demoted to audited_renaming and the May chain contradicts it; the era claim beside its demotion trail.
 
@@ -32,7 +34,8 @@ The April 'all orders in any scheme' y_t/g_s = 1/sqrt(6) THEOREM claim — pulle
 - Source commit: `7bfb3d129239c3ca1f5cd045372b360c9302adf1`
 - git blob: `68cd722017cb71f97feba8f7fbe32f023595f4a3`
 - sha256: `7f49e041aa493ef6a1dced050c7fc9ad9ab3ff0cf9e54a7037cd2786f2e12d67`
-- Lines: 149; runners named: scripts/frontier_yt_scheme_independence.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2424_YT_SCHEME_INDEPENDENCE_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch08/2424_YT_SCHEME_INDEPENDENCE_THEOREM.md)
+- Lines: 149; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_scheme_independence(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Title-overclaim risk: labelled 'THEOREM (self-contained proof)' and 'holds to al
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

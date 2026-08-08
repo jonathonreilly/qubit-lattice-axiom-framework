@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: APBC is derived from spin-statistics, not posited.
 Scope: Answers a specific Codex objection that APBC was an extra boundary-condition choice.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 APBC forced via five independent routes (spin-statistics from Cl(3) etc.) — a real structural theorem removing a boundary-condition choice.
 
@@ -32,7 +34,8 @@ APBC forced via five independent routes (spin-statistics from Cl(3) etc.) — a 
 - Source commit: `dc64695a347c4458b8114eabbdf5e6d6b6334f31`
 - git blob: `3daa824592a03bdd4eaa369264fb0fd0f0566544`
 - sha256: `c99d5e84b69ea321f47c61576a3094cdaaf65e645acb491097701a39d1ef8565`
-- Lines: 119; runners named: frontier_hierarchy_3plus1.py, scripts/frontier_apbc_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/55_APBC_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/55_APBC_DERIVED_NOTE.md)
+- Lines: 119; runners named: historic runner (unpinned, not in this packet): `frontier_hierarchy_3plus1(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_apbc_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The number is a coincidence but the mechanism is real — CW d
 Scope: Full re-derivation of the original 226 GeV chain plus identification of which lattice-integral combination 'Sigma_1' denotes.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 WHY-226 coincidence anatomy: two large errors nearly cancel, smuggled y_t identified — pairs with 696 as the era's numeric-integrity record.
 
@@ -32,7 +34,8 @@ WHY-226 coincidence anatomy: two large errors nearly cancel, smuggled y_t identi
 - Source commit: `3524a8b5c9e89bb310fbd48b590258242b374f70`
 - git blob: `f756c33c24da97d54aa2566ef96df83b9752e1e5`
 - sha256: `ce62ce56c2350ae983a4d677d2df73893d197011e4ad573dfef021f1d4b4d9e3`
-- Lines: 784; runners named: scripts/frontier_sigma1_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/708_HIERARCHY_WHY_226_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/708_HIERARCHY_WHY_226_NOTE.md)
+- Lines: 784; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents a smuggled observed input (y_t = 0.9369) in a published derivation cha
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

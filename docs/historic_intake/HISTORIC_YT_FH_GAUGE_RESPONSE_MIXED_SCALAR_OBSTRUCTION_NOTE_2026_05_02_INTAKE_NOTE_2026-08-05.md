@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The gauge-normalized ratio equals the canonical Yukawa only af
 Scope: A boundary on the shortcut, not a no-go against the future response route.
 Escape conditions (negative claims): Three named premises, the third of which (measure the orthogonal top coupling) is what the tomography builder at idx 2171 instruments.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 W/Z gauge-normalized terminal: the ratio equals the canonical Yukawa only after an unpurchased purity premise — the cluster's honest end.
 
@@ -32,7 +34,8 @@ W/Z gauge-normalized terminal: the ratio equals the canonical Yukawa only after 
 - Source commit: `6a82f43dc163cbdc95f0fe668d9675500d6c241a`
 - git blob: `6fcb46827e39a07ea519678c9a765db8ce74086b`
 - sha256: `b6790df553a1ac7c8a1b134e4cc861e63b4dca05e7cb6229de0e687caf391480`
-- Lines: 61; runners named: scripts/frontier_yt_fh_gauge_response_mixed_scalar_obstruction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2189_YT_FH_GAUGE_RESPONSE_MIXED_SCALAR_OBSTRUCTION_NOTE_2026-05-02.md](../../archive_unlanded/historic_intake_originals/branch07/2189_YT_FH_GAUGE_RESPONSE_MIXED_SCALAR_OBSTRUCTION_NOTE_2026-05-02.md)
+- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_gauge_response_mixed_scalar_obstruction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

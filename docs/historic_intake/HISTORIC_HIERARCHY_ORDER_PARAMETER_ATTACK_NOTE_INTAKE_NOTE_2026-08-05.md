@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The determinant-to-VEV map remains the real open theorem; the 
 Scope: Structural note on the remaining Part-3 gap; names three candidate intensive objects (condensate, effective-action difference, curvature at the minimum) as the correct attack surface.
 Escape conditions (negative claims): The negative applies to the mass-deformed extensive determinant ratio; the stated escape is to work with an intensive/local observable whose non-block terms are either coupling- and field-independent or UV-decoupled, plus a separate resolution of the even-L spatial APBC ambiguity.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 First negative on the determinant-to-VEV gap: raw factorization exact, mass-inserted ratio does not factorize — the real open theorem localized.
 
@@ -32,6 +34,7 @@ First negative on the determinant-to-VEV gap: raw factorization exact, mass-inse
 - Source commit: `1034780a399c1a8ee060fb2825ba66b2056c4e6e`
 - git blob: `f89f144f5ef68cc988015d12e44fa670ee9192e8`
 - sha256: `dec17924f77dfd8bcf1bc759975519ff1ca84ca7615615ec017ca5ddf0704293`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/700_HIERARCHY_ORDER_PARAMETER_ATTACK_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/700_HIERARCHY_ORDER_PARAMETER_ATTACK_NOTE.md)
 - Lines: 102; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

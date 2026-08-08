@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: OPEN-SELF-CONSISTENCY: a = l_P is assumed and anchored, not de
 Scope: Two candidate closure routes for a = l_P; the entire forward gravity chain is unaudited on origin/main.
 Escape conditions (negative claims): Stated as an open self-consistency rather than an impossibility claim; the closure a/l_P = 1 remains available as a conditional theorem on the open gravity lane.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Buckingham-Pi no-go: the dimensionless core cannot emit a second independent dimensionful number — a = l_P is assumed-and-anchored; the scale-axis truth.
 
@@ -32,6 +34,7 @@ Buckingham-Pi no-go: the dimensionless core cannot emit a second independent dim
 - Source commit: `3b7950c29e93ccf9092c39f0ffc777ae1ef1812f`
 - git blob: `6e2fc12eb867421d3953e624207c58b56b0fe828`
 - sha256: `44649edfa9ad0a9e27023b6f1b39baa9e10562c00f8d2fe8d09194c2ec421811`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1905_SCALE_AXIS_PLANCK_ANCHOR_SELFCONSISTENCY_SCOPING_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/1905_SCALE_AXIS_PLANCK_ANCHOR_SELFCONSISTENCY_SCOPING_2026-06-05.md)
 - Lines: 177; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Confirms that the framework's single dimensionful anchor is imported, which cond
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

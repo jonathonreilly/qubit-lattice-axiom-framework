@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The Planck pin is unconditional on the minimal stack, with the
 Scope: Closes all five [P1] residuals from the second-iteration Codex review, including 'boundary theorem defines the carrier it needs to derive' and 'runner constructs the disputed carrier by assignment'.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The carrier DERIVED (CAR algebra construction) superseding hand-assignment — the Planck pin's constructive form.
 
@@ -32,7 +34,8 @@ The carrier DERIVED (CAR algebra construction) superseding hand-assignment — t
 - Source commit: `a2e769392a546e008022082043b3d3fa1832472a`
 - git blob: `728d17f434bd0b04bd925700bdda05e6534e92c1`
 - sha256: `7f6ec8455eff1d8f9167edcb70a4dd77efc6ef2747c37b12feb1f905820449ed`
-- Lines: 374; runners named: scripts/frontier_planck_gravity_boundary_car_vacuum_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1363_PLANCK_GRAVITY_BOUNDARY_CAR_VACUUM_DERIVATION_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch04/1363_PLANCK_GRAVITY_BOUNDARY_CAR_VACUUM_DERIVATION_THEOREM_NOTE_2026-04-26.md)
+- Lines: 374; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_gravity_boundary_car_vacuum_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

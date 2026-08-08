@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: PASS on all eight gates; the phrases 'no selector exists', 'no
 Scope: Theory-level non-entailment: two completions agree on the entire base model including every lattice/record fact and disagree only on downstream selector interpretation.
 Escape conditions (negative claims): A downstream information theorem with named extra premises, a retained source/action variational bridge (docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md is bounded_theorem but unratified), a target-free physical-observable normalization theorem (no current authority; recorded in OPPORTUNITY_QUEUE.md), or an owner-approved selector primitive.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Six attack routes fail to derive the minimum-information PMNS source law from the four axioms; PASS on all eight gates with the claim held current-surface only. VERIFICATION-INTEGRITY FLAG: its N8 cross-cycle-echo table cites a pack scaffold that is EMPTY (attached) as if it were a real 'multipocket selector wall' - the citation defect must be visible to audit.
 
@@ -32,6 +34,7 @@ Six attack routes fail to derive the minimum-information PMNS source law from th
 - Source commit: `d0b7b38a1ea08cebd07173fb039ee974d731d31a`
 - git blob: `21d36cda474b0acb3793091c44ccf2087665dccc`
 - sha256: `0dfa7244da1f0188d7a2c45d6dae21b5128e71265bdec79fde0cdfdca35287e8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10400_NO_GO_DISCIPLINE_CHECKLIST.md](../../archive_unlanded/historic_intake_originals/packsci02/10400_NO_GO_DISCIPLINE_CHECKLIST.md)
 - Lines: 119; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ Explicitly current-surface only: N8 records that the kinetic-isotropy primitive 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

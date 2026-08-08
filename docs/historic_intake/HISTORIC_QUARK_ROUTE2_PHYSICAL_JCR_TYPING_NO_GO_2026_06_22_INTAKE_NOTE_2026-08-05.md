@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No - the current finite P_R surface, generic Fisher/Riesz supp
 Scope: Prunes only the shortcut from the formal binary exponential family to physical J_CR typing.
 Escape conditions (negative claims): Escaped by a physical J_CR source typing theorem constructing Omega_CR, P0, J_CR and X_CR, proving the readout is the same-source connected Hessian at p = 2/3 with the selected orientation, and that it is the same source consumed by the Riesz/isometry and orientation steps.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The QUARK_ROUTE2 terminal: the support theorem cannot type the source (p = 2/3 reproducing kappa = 0 is flagged as possibly coincidental); the missing J_CR typing theorem named — the 67-note chain's honest end.
 
@@ -32,7 +34,8 @@ The QUARK_ROUTE2 terminal: the support theorem cannot type the source (p = 2/3 r
 - Source commit: `47d7cd374bbc2747cce3f8f91ef3adfbcf9e3134`
 - git blob: `3a0b7272a08ecb4a3dd2d3477cfbee6058d8b7ef`
 - sha256: `425d96220a634768a14eed92e151286e70cc7e4223f36eafb39db3ea472c5cb9`
-- Lines: 80; runners named: scripts/frontier_quark_route2_physical_jcr_typing_no_go_2026_06_22.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1709_QUARK_ROUTE2_PHYSICAL_JCR_TYPING_NO_GO_2026-06-22.md](../../archive_unlanded/historic_intake_originals/branch05/1709_QUARK_ROUTE2_PHYSICAL_JCR_TYPING_NO_GO_2026-06-22.md)
+- Lines: 80; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_route2_physical_jcr_typing_no_go_2026_06_22(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -113,6 +116,7 @@ The parameter p = 2/3 that reproduces kappa = 0 is identified by scanning the fa
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

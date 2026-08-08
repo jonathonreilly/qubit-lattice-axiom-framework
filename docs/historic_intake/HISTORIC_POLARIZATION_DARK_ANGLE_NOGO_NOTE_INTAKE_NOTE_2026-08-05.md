@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The atlas has reduced the gravity obstruction to one angle but
 Scope: Current exact common bundle data after the residual gauge has collapsed to SO(2).
 Escape conditions (negative claims): Escaped by an exact angle-sensitive primitive on the dark complement plane: a canonical axial phase convention, an angle-sensitive support or curvature-localization observable, or a connection law whose holonomy detects the angle.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The polarization terminal no-go: every exact common object is SO(2)-invariant on the dark plane — the gravity obstruction reduced to one angle with no angle-sensitive primitive.
 
@@ -32,6 +34,7 @@ The polarization terminal no-go: every exact common object is SO(2)-invariant on
 - Source commit: `72cabd625afbd5089dff7b2ccbc20e71f76e4bcc`
 - git blob: `1e8080a81fe43c66c9f026b458010204d263fb54`
 - sha256: `2e049e2ff3414a0301cf9d621760dd37c5fb551fae47afe99fb28eb49be3350d`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1610_POLARIZATION_DARK_ANGLE_NOGO_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1610_POLARIZATION_DARK_ANGLE_NOGO_NOTE.md)
 - Lines: 111; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -56,6 +59,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

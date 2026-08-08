@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Both narrowing moves are taken with inline class-A lemmas veri
 Scope: Narrow companion that does not modify the parent text, does not lift its audited_conditional ledger row, supplies no H_Ward_norm, and adds no admissions.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Ledger re-audit work-order execution narrowing both branches of an audited_conditional parent — the work-order pattern, with the parent's miscitation documented.
 
@@ -32,7 +34,8 @@ Ledger re-audit work-order execution narrowing both branches of an audited_condi
 - Source commit: `e56a63e5d507c26a6663628e47a053d12cc39477`
 - git blob: `a122764bcd0bf0ac7151f115e3dcb022907aa3f3`
 - sha256: `284361d720d690c21fba2b2205f619ee2fa380bc9e468e742623d02cd73fe3ff`
-- Lines: 299; runners named: scripts/frontier_wigner_mode_low_d_no_ssb_narrow_scope_companion_verifier.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2117_WIGNER_MODE_LOW_D_NO_SSB_NARROW_SCOPE_COMPANION_NOTE_2026-06-02.md](../../archive_unlanded/historic_intake_originals/branch07/2117_WIGNER_MODE_LOW_D_NO_SSB_NARROW_SCOPE_COMPANION_NOTE_2026-06-02.md)
+- Lines: 299; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wigner_mode_low_d_no_ssb_narrow_scope_companion_verifier(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents that the parent cited AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE f
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

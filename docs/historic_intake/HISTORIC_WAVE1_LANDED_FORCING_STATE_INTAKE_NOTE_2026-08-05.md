@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Below the supply point only ONE bit remains free (P-FLUX K1-vs
 Scope: The staggered-Dirac/Kahler-Dirac forcing lane; all statuses transcribed from origin/main ledger shards (worktree 1057 files behind).
 Escape conditions (negative claims): The campaign target is named exactly: what additional datum, beyond four axioms and three approved primitives, promotes 'some covariant local qubit law' to 'a first-order bilinear in an anticommuting field'.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The occupancy campaign's supply-point finding: the matter action is supplied at the very first link and the repo ALREADY CONTAINS the theorem (STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING); below the supply point exactly ONE bit remains free (P-FLUX K1-vs-K0, three independent routes). MAJOR: a lane reading as a closed derivation is actually supplied-at-source. Prior-art companions attached.
 
@@ -32,6 +34,7 @@ The occupancy campaign's supply-point finding: the matter action is supplied at 
 - Source commit: `da21cedd78003472da3a2ebee2fbf87eff4610d2`
 - git blob: `f2c40ab3dcc8da09ca486dff52498bd08199e38a`
 - sha256: `0d8c82f15a12b45458287742ffdc52ebb684b2f733eb53dd0313702246bedf07`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10654_wave1_landed_forcing_state.md](../../archive_unlanded/historic_intake_originals/packsci03/10654_wave1_landed_forcing_state.md)
 - Lines: 474; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ MAJOR: documents that a lane reading as a closed derivation is on the ledger an 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

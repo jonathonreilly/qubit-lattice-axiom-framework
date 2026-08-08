@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_partial
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: PARTIAL - the Case 3 impossibility theorem's delta-evenness cl
 Scope: Drops assumption A1.2 (that the affine (m,delta,q_+) chart is the right parametrization); the delta-odd invariant is built from non-Hermitian operator insertions.
 Escape conditions (negative claims): The parent impossibility theorem survives only if the retained observable class is restricted to Hermitian-operator insertions; admitting the broader operator class (non-Hermitian C_3-eigenvector insertions T_{d,w}) produces an explicit real Z_3-invariant delta-odd polynomial and breaks delta-evenness.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Genuine counterexample refining a retained theorem's scope: Im(z^3) is a chart artifice but the correct doublet-phase coordinate exposes the delta-evenness claim as Hermitian-insertion-scoped — audit-relevant scope repair.
 
@@ -32,7 +34,8 @@ Genuine counterexample refining a retained theorem's scope: Im(z^3) is a chart a
 - Source commit: `5329f8dbf8643636c3de4ddce4214bd5a4d26794`
 - git blob: `de0ba82010d24fca61b94a3dc3ac6d0b0f46d234`
 - sha256: `e4991d7d9c84e6c3282bbaf6ec0f758b8305560757b60249a5050c09df259924`
-- Lines: 342; runners named: scripts/frontier_dm_neutrino_source_surface_z3_doublet_phase_chart_scout.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/384_DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_PHASE_CHART_SCOUT_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/384_DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_PHASE_CHART_SCOUT_NOTE_2026-04-18.md)
+- Lines: 342; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_z3_doublet_phase_chart_scout(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Finds a genuine counterexample to the parent theorem's delta-evenness claim unde
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_partial
 intake_directive: owner_2026-08-05
 ```
 

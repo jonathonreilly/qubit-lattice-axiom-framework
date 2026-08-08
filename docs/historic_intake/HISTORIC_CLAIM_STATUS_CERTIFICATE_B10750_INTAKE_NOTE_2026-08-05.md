@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_certificate
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Exact negative boundary awaiting independent audit; no propose
 Scope: The supplied event-cell exterior action, reconstructed symbolically by the runner; enlarged-premise routes (spinor-packet bridge, temporal Clifford operator, multiplicity selector, physical boundary-response identification) stay open.
 Escape conditions (negative claims): Four open enlarged-premise routes are named explicitly; the no-go forecloses only derivation on the supplied representation surface.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact negative correcting an old claim: the requested positive implication is FALSE on the supplied event-cell representation (proof independent of any specific carrier); demotes the old abstract-carrier reading. Discipline and route-table companions attached.
 
@@ -32,6 +34,7 @@ Exact negative correcting an old claim: the requested positive implication is FA
 - Source commit: `5d0194047b1f6ce0132afa4222af282f7ffede20`
 - git blob: `8316b24250b17d29fb07df60fb0d5cb0ba52e257`
 - sha256: `ccd4b049dafc11b1f807f621e67176cf83f45f3f0f1acabf0ec72aa83574b226`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10750_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10750_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 39; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_certificate
 intake_directive: owner_2026-08-05
 ```
 

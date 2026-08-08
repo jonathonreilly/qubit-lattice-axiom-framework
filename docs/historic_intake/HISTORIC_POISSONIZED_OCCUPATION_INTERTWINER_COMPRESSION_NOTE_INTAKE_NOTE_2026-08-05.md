@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_resummed_state_compressed_representation
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Exact law closed, exact finite small low-carrier closure impos
 Scope: Exact resummation with truncation tail bound; leaves only a faster evaluator or tighter recursion open.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact Poissonized resummed law (the useful exact evaluator surviving the finite low-carrier no-go).
 
@@ -32,7 +34,8 @@ Exact Poissonized resummed law (the useful exact evaluator surviving the finite 
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `d06ea8812a57e65f55c65779309a16809a6ff571`
 - sha256: `f020dde452de5b577cb3579f9a552e09542523e7a2a56c2768f75c6012e1deb9`
-- Lines: 225; runners named: scripts/frontier_poissonized_occupation_intertwiner_compression.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1604_POISSONIZED_OCCUPATION_INTERTWINER_COMPRESSION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1604_POISSONIZED_OCCUPATION_INTERTWINER_COMPRESSION_NOTE.md)
+- Lines: 225; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_poissonized_occupation_intertwiner_compression(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_resummed_state_compressed_representation
 intake_directive: owner_2026-08-05
 ```
 

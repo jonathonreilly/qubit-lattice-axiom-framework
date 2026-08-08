@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: PROPOSED symmetry theorem + runner; converts an empirical exha
 Scope: Retained hw=1 triplet on the cubic Z^3 taste orbit, generation-axis basis; a symmetry-group statement, not a mass calculation.
 Escape conditions (negative claims): Explicit iff-condition: M splits mu-tau if and only if M fails to commute with sigma_v(2<->3), so any candidate primitive must break D_4h.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Proved symmetry no-go with runner: Stab_Oh(e_1)=D_4h (|48|/|16|) contains sigma_v(2<->3), so any retained operator respecting cubic symmetry plus the EWSB axis-1 selector cannot split mu-tau; exact iff escape condition stated. Converts the 14-lane G5 exhaustion into structure. Near-duplicate sibling attached.
 
@@ -32,7 +34,8 @@ Proved symmetry no-go with runner: Stab_Oh(e_1)=D_4h (|48|/|16|) contains sigma_
 - Source commit: `45fa079edee9c8248a0b088a5bce4112ccfa7570`
 - git blob: `8fd296068dd28d91add100a67d35591eeb7c62d5`
 - sha256: `1bd9698c1eb9720203f7243ca6f7bbba9c0dc41f09d7817bd8a8fa3cb82155e9`
-- Lines: 293; runners named: scripts/frontier_tetragonal_stabilizer_mu_tau_invariance.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10027_tetragonal-stabilizer-mu-tau-invariance-2026-04-17.md](../../archive_unlanded/historic_intake_originals/packsci01/10027_tetragonal-stabilizer-mu-tau-invariance-2026-04-17.md)
+- Lines: 293; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_tetragonal_stabilizer_mu_tau_invariance(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Duplicate-of-sibling risk: idx 10016 states the same theorem on the same day; a 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

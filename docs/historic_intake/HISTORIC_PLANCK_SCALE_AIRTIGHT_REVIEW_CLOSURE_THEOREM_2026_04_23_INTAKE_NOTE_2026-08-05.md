@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_final_reviewer_gate_closure_statement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Airtight yes as a theorem on the accepted review contract; no 
 Scope: Six-clause accepted review contract: physical Cl(3)/Z^3 lattice semantics, time-locked C^16 cell, source-free default-datum state, accepted canonical gravitational boundary/action sector, same-surface single-sector compatibility, and S_grav/k_B = A/(4 l_P^2); imports no observed spacing, no fitted multiplier, no nu = 5/4, no SI hbar.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Planck review-contract closure: c_cell = 1/4 exact on the accepted contract — WITH the title-vs-body concession flag (airtight only on the contract, not bare-algebra).
 
@@ -32,7 +34,8 @@ Planck review-contract closure: c_cell = 1/4 exact on the accepted contract — 
 - Source commit: `aed038e1aab826bbd9a95c07555c3394f4e02fd3`
 - git blob: `55c66349497b4a0df7ed47e9aca356bc0c49735a`
 - sha256: `6e5547e4bb90065cd5aa817de7182ea5a49b7ef75f83e787493ce3d655832fc0`
-- Lines: 158; runners named: scripts/frontier_planck_airtight_review_closure_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1368_PLANCK_SCALE_AIRTIGHT_REVIEW_CLOSURE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1368_PLANCK_SCALE_AIRTIGHT_REVIEW_CLOSURE_THEOREM_2026-04-23.md)
+- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_airtight_review_closure_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Title says 'airtight closure' while the body concedes the bare Cl(3)/Z^3 claim i
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_final_reviewer_gate_closure_statement
 intake_directive: owner_2026-08-05
 ```
 

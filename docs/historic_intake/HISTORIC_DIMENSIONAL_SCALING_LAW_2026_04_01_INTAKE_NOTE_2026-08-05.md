@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: PARTIALLY CONFIRMED - monotonic trend HIGH confidence, exact f
 Scope: Unified d=1-4 comparison at matched graph parameters; 5D unreliable due to sparsity.
 Escape conditions (negative claims): The (d-1)/2 pattern could still emerge in a continuum limit if connect_radius/gap/nodes_per_layer are scaled together; not testable on finite discrete graphs here.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Retraction on the record: with unified matched parameters alpha runs 0.13/0.35/0.64/0.44 for d=1..4 against the predicted (d-1)/2, killing the exact law while keeping the monotonic trend HIGH-confidence. Pulled as a set with the retracted headline so audit sees both sides.
 
@@ -32,7 +34,8 @@ Retraction on the record: with unified matched parameters alpha runs 0.13/0.35/0
 - Source commit: `ad7c6e4e8db2afb50d625703fb16b0368c9ffe9e`
 - git blob: `056d8dbfb1a42c49b720af23e6f8b40fb172acba`
 - sha256: `3b0f5f26e82f69b6f1eafa9d14060801e2f07ce9df153eb6a214316a5fcd398c`
-- Lines: 82; runners named: scripts/dimensional_scaling_law.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10001_dimensional-scaling-law-2026-04-01.md](../../archive_unlanded/historic_intake_originals/packsci01/10001_dimensional-scaling-law-2026-04-01.md)
+- Lines: 82; runners named: historic runner (unpinned, not in this packet): `scripts/dimensional_scaling_law(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ None beyond the retraction it carries; note is honest about parameter dependence
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

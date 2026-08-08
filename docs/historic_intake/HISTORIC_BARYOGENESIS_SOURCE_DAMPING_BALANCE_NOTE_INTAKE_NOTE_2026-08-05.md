@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The remaining source and damping pieces are related exactly by
 Scope: Exact on the positive branch without evaluating nonperturbative dynamics; derives neither S_src nor I_damp nor chi(tau).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The exact logarithmic balance law eta = J exp(S_src - I_damp) with the observed target fixed — the program's sharpest quantitative frame.
 
@@ -32,7 +34,8 @@ The exact logarithmic balance law eta = J exp(S_src - I_damp) with the observed 
 - Source commit: `5baec48f76ab6d57d0d299aa04501c4574a64fe9`
 - git blob: `6fccfa848933d67d7cb291441b9f7fa9ecb7d743`
 - sha256: `dcb3a176703184466db5742070432488957d916606259740d68bf0036587fca4`
-- Lines: 185; runners named: ./../scripts/frontier_baryogenesis_source_damping_balance.py, frontier_baryogenesis_source_damping_balance.py, scripts/frontier_baryogenesis_source_damping_balance.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/98_BARYOGENESIS_SOURCE_DAMPING_BALANCE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/98_BARYOGENESIS_SOURCE_DAMPING_BALANCE_NOTE.md)
+- Lines: 185; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_source_damping_balance(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_source_damping_balance(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_source_damping_balance(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

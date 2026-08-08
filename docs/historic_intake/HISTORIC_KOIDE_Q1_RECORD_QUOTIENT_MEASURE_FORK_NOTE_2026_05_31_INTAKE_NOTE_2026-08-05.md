@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The cleanest form of the missing physical statement is that th
 Scope: Exact support / conditional bridge localization; the source-measure theorem legitimizes a quotient probability law but does not choose the reference law.
 Escape conditions (negative claims): Equal atom count is a genuine rank-erasing quotient/source principle, not a consequence of the existing full-trace state; Fisher geometry is shown not to hide the choice (the primitive signed score is valid only in the uniform reference).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE FORK THEOREM: full Hilbert trace gives (1/3,2/3), r=1, Q=1; the rank-erased counting trace gives (1/2,1/2), r=1/2, Q=2/3 — the cleanest statement of the entire Q problem, with the native reading's Q=1 stated plainly.
 
@@ -32,7 +34,8 @@ THE FORK THEOREM: full Hilbert trace gives (1/3,2/3), r=1, Q=1; the rank-erased 
 - Source commit: `9075c02ff91cd4273592f96eb210b72b2f4d368e`
 - git blob: `90a61b08e705a5310d8a56366bbc6e7bb368315d`
 - sha256: `90d8af6f2bd6311de488ca65d71ec1d666f46a4a5a3600fbe3e7540e883132d5`
-- Lines: 197; runners named: scripts/frontier_koide_q1_record_quotient_measure_fork.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/905_KOIDE_Q1_RECORD_QUOTIENT_MEASURE_FORK_NOTE_2026-05-31.md](../../archive_unlanded/historic_intake_originals/branch03/905_KOIDE_Q1_RECORD_QUOTIENT_MEASURE_FORK_NOTE_2026-05-31.md)
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_record_quotient_measure_fork(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -56,6 +59,7 @@ States that on the native full-trace reading the framework value is Q = 1, not t
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

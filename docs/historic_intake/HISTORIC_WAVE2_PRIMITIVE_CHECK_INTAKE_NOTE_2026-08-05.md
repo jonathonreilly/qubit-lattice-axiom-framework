@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Item 4 is an entry in a register the note itself calls INFORMA
 Scope: The register entry's binding force, not its content.
 Escape conditions (negative claims): The campaign is NOT closed by approved foundation content; however a separate derivation-obligation row carries a TERMINAL audit verdict (audited_renaming, effective_status_reason terminal_audit, audited 2026-07-11 at xhigh), so an independent audit lane has terminally affirmed a live obligation in this area.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Repo-wide integrity finding from the campaign: systematic prose-versus-ledger status audit finds at least EIGHT landed notes asserting retained_no_go where the live ledger disagrees; also adjudicates that the realized_state register item 4 is INFORMATIVE, not a closure authority. Work order for the audit lane.
 
@@ -32,7 +34,8 @@ Repo-wide integrity finding from the campaign: systematic prose-versus-ledger st
 - Source commit: `e26664d20fcc050daa8feaa47a0e4c4b7259a23e`
 - git blob: `68d52fd20dc0ba310410d49490c6f879b1a703d0`
 - sha256: `de528e41b2b810c3f04e7233e8dfd581c21411914575f9c0551189f4b036692e`
-- Lines: 651; runners named: identity_gate.py (scratch, 14 gates)
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10563_wave2_primitive_check.md](../../archive_unlanded/historic_intake_originals/packsci02/10563_wave2_primitive_check.md)
+- Lines: 651; runners named: historic runner (unpinned, not in this packet): `identity_gate.py (scratch, 14 gates)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ Repo-wide integrity finding from the campaign: systematic prose-versus-ledger st
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from packsci03 idx 10832 (`.claude/science/physics-loops/repo-state-scrub-20260725/phase1_prose_ledger_divergence.md`, decision PULL) — SYSTEMIC INTEGRITY MEASUREMENT: of 3872 tracked ledger rows, 3100 (80.1%) are unaudited and 772 are audit capital; 478 status-attribution defect lines measured (a note labels a status the ledger does not back), 89% sitting on true dependency paths; the specified auto-correct-and-log mechanism has never run; the churn guard does NOT bind this defect class. Companion to the prose-vs-ledger drift finding pulled from packsci02.
+- Cross-stratum reference from packsci03 [idx 10832](HISTORIC_PHASE1_PROSE_LEDGER_DIVERGENCE_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/repo-state-scrub-20260725/phase1_prose_ledger_divergence.md`, decision PULL) — SYSTEMIC INTEGRITY MEASUREMENT: of 3872 tracked ledger rows, 3100 (80.1%) are unaudited and 772 are audit capital; 478 status-attribution defect lines measured (a note labels a status the ledger does not back), 89% sitting on true dependency paths; the specified auto-correct-and-log mechanism has never run; the churn guard does NOT bind this defect class. Companion to the prose-vs-ledger drift finding pulled from packsci02.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Systematic prose-status drift across the Koide lane: many landed notes assert re
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

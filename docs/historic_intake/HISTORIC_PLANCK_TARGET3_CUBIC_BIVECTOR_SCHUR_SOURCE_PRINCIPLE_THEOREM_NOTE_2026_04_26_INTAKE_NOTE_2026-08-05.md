@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retained_positive_structural_support_theorem_responding_to_a_codex_review
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Replaces the rank-matching assertion with canonical retained c
 Scope: Structural support only; explicitly does NOT close the Hodge-dual selection, since the same Schur construction on P_3 gives an identical spectrum.
 Escape conditions (negative claims): The open residual is selecting P_1 over P_3 by a source principle rather than convention, since Hodge symmetry makes their Schur spectra identical.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The [P1] retraction: four review failures accepted, unconditional Target-3 closure withdrawn for two landed siblings (literal-True runner assertions among the failures) — mandatory audit material.
 
@@ -32,7 +34,8 @@ The [P1] retraction: four review failures accepted, unconditional Target-3 closu
 - Source commit: `e3f90ceff7be32373a00b5b22defa91e7f0b1913`
 - git blob: `6e73d27ca0508a353181b2e9729a47644472866a`
 - sha256: `7ad112f97b77b5776b1f3d46c586841298ffa95e6389c3a53eab8b94e9c10e6e`
-- Lines: 291; runners named: scripts/frontier_planck_target3_cubic_bivector_schur_source_principle.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1499_PLANCK_TARGET3_CUBIC_BIVECTOR_SCHUR_SOURCE_PRINCIPLE_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch05/1499_PLANCK_TARGET3_CUBIC_BIVECTOR_SCHUR_SOURCE_PRINCIPLE_THEOREM_NOTE_2026-04-26.md)
+- Lines: 291; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_cubic_bivector_schur_source_principle(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Retracts the unconditional-closure status of two previously landed sibling notes
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retained_positive_structural_support_theorem_responding_to_a_codex_review
 intake_directive: owner_2026-08-05
 ```
 

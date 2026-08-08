@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Material but narrow correction: no physical update, effect mat
 Scope: Finite-surface codec/interface on the actual 342-pair, 1710-menu, 21,302-occurrence Cycle-404 surface; the 1e-12 audit radius and 9-15 decimal sweep are supplied numerical choices and stability outside this surface is not inferred.
 Escape conditions (negative claims): No global no-go, minimum-content result or constitutional conclusion. Named load-bearing conditions: finite actual surface, scalar/Bloch coordinates, 9-15 sweep, 13-decimal choice, 1e-12 radius, complete proper-cubic group.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of a C_num interface defect: the 13-decimal matrix-entry key gave 3348 installed classes; after proper-c~[ubic canonicalization] the counts are 1158/3347 - and a FRAME-DEPENDENT count had been reported as invariant. Material but narrow; no physical update changes.
 
@@ -32,6 +34,7 @@ Correction of a C_num interface defect: the 13-decimal matrix-entry key gave 334
 - Source commit: `f801d6ea1be3b56b20987d321c28c84030685434`
 - git blob: `310af28dc214546aa31207620e9e6476ac68eb96`
 - sha256: `12c4ff427177c1169a6476145d39aa952147b429c83d8a156928750657a1903f`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2875_PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026-07-18.md](../../archive_unlanded/historic_intake_originals/branch09/2875_PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026-07-18.md)
 - Lines: 272; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A frame-dependent class count (3149/3347 in 16 of 24 frames vs 3150/3348 in the 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

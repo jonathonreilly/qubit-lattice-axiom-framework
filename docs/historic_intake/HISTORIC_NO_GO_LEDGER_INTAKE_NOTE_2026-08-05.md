@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The physical matching problem remains outside this theorem.
 Scope: Route memory for one block; not universal impossibility statements.
 Escape conditions (negative claims): A future physical derivation is explicitly not claimed impossible.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Route-memory rows correcting prior work, incl. the disclosure that a prior runner in the PR #5224 physical-backing attempt had a substantive bug; the physical matching problem stays outside scope. Verification-integrity record for the audit lane.
 
@@ -32,6 +34,7 @@ Route-memory rows correcting prior work, incl. the disclosure that a prior runne
 - Source commit: `dceded4c30155b26cea5e33034be1c0f7c79e274`
 - git blob: `faac68403fc74a434002e25447e06506166c253b`
 - sha256: `bd52f6e6900b8fb3534a9ee3616ff3e6bd69d5cbeb5880a633c82cfd50c666a0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10131_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10131_NO_GO_LEDGER.md)
 - Lines: 15; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A prior runner had a substantive defect assigning x_below = x_above; and a close
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_ledger
 intake_directive: owner_2026-08-05
 ```
 

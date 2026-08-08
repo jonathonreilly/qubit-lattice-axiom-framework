@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Hydrogen structural predictions confirmed and helium variation
 Scope: N = 20-60 lattices, g_EM = 0.5, g_nuc = 1.0; Z >= 3 unreliable because the Bohr radius 2/(Z g_EM) falls below 2 sites; absolute energies in eV blocked by the undreived electron mass.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Lattice hydrogen: Rydberg ratios to 4.3% with emergent Bohr radius, plus the correction that the earlier '27% gap' was a perturbative artifact.
 
@@ -32,7 +34,8 @@ Lattice hydrogen: Rydberg ratios to 4.3% with emergent Bohr radius, plus the cor
 - Source commit: `426fe9dd53ab0a03af34d10371bff360121b1902`
 - git blob: `8dfb6c0de8465ae555f717cfd029f08ca1dfe1c0`
 - sha256: `caf2c56ee105c438c554f03cc667842c7564db439e00fc41a78ed26c1e07422f`
-- Lines: 171; runners named: scripts/hydrogen_from_graph_dynamics.py, scripts/helium_hartree_scf.py, scripts/helium_jastrow_vmc.py, scripts/alpha_em_from_axioms.py, scripts/helium_isoelectronic_series.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/720_HYDROGEN_HELIUM_LATTICE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/720_HYDROGEN_HELIUM_LATTICE_NOTE.md)
+- Lines: 171; runners named: historic runner (unpinned, not in this packet): `scripts/hydrogen_from_graph_dynamics(.py)`; historic runner (unpinned, not in this packet): `scripts/helium_hartree_scf(.py)`; historic runner (unpinned, not in this packet): `scripts/helium_jastrow_vmc(.py)`; historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/helium_isoelectronic_series(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ n >= 3 degeneracy counts are WARN (finite box lifts the n^2 degeneracy); H- is u
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

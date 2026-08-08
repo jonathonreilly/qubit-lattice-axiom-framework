@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Downgrades 'I5 angles RETAINED-DERIVED at numerical level' to 
 Scope: Reviewer-quality self-examination of the branch's own language; separates what is retained-forced (I1, I2/P, Q = 3 delta, V_TBM) from what is conditional on the iteration-4 conjecture (SR2 conservation, theta_13 = 4/p^3, the numerical I5 values).
 Escape conditions (negative claims): Names the honest targets: derive theta_13 = delta*Q exactly from a retained Cl(3) mechanism, or exhibit a different (Q, delta) fit also matching NuFit at 1 sigma, which would show the conjecture is not unique.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest downgrade: 'I5 angles RETAINED-DERIVED' reduced to 'FIT retained (Q, delta) at two coincidences' — the lane's second self-correction, with the real targets named.
 
@@ -32,6 +34,7 @@ The honest downgrade: 'I5 angles RETAINED-DERIVED' reduced to 'FIT retained (Q, 
 - Source commit: `a9e4f0ac4141d4d80328864e2916e026cb6330d0`
 - git blob: `9dec29dbcd03f23ac89384dcb19a04ba5c39489d`
 - sha256: `e1a60ee77059c95926143eec015c238fd4f0f43d423c4b32713e7b944bb4ecfa`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/863_KOIDE_ITER_21_22_HONEST_CRITIQUE_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/863_KOIDE_ITER_21_22_HONEST_CRITIQUE_NOTE_2026-04-21.md)
 - Lines: 180; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A second self-correction in the same branch, this time of overclaiming language 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

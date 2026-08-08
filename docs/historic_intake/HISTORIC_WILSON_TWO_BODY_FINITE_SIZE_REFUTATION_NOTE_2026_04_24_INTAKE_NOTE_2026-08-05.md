@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_refutation
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The finite-size hypothesis is REFUTED: the (m_a + m_b) Newton 
 Scope: Single seed per side, one separation, one parameter set on the open-boundary Wilson Hartree carrier.
 Escape conditions (negative claims): Named falsifiers/escapes: a side > 17 sweep with significantly faster CV decrease would reopen finite size; a closed/periodic/staggered protocol reaching CV < 15% would isolate the failure to the open-boundary Hartree carrier; a static-source approximation would calibrate how much comes from dynamical wave-packet feedback.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 REFUTED terminal: the (m_a + m_b) Newton scaling fails as a finite-size hypothesis (CV flat 28.7->28.5% across sides) — the Wilson two-body chain's honest end.
 
@@ -32,7 +34,8 @@ REFUTED terminal: the (m_a + m_b) Newton scaling fails as a finite-size hypothes
 - Source commit: `01c13e53fd7d6f18c1bb77989897f3be5886b2eb`
 - git blob: `ca79cca0723feb8ca264418f39aaa200147357df`
 - sha256: `41b4ca35d88655666a0cad29c592e66e60058517b6177dcce87a459f9cc6f833`
-- Lines: 189; runners named: scripts/frontier_wilson_two_body_separation_acceleration_finite_size.py, scripts/frontier_wilson_two_body_open.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2130_WILSON_TWO_BODY_FINITE_SIZE_REFUTATION_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch07/2130_WILSON_TWO_BODY_FINITE_SIZE_REFUTATION_NOTE_2026-04-24.md)
+- Lines: 189; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_two_body_separation_acceleration_finite_size(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_wilson_two_body_open(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Refutes an active-queue target: the loop-2 both-masses result (CV 3.6%) is downg
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_refutation
 intake_directive: owner_2026-08-05
 ```
 

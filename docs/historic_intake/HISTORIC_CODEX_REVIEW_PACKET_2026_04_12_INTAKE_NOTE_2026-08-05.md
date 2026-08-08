@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Three gates upgraded to CLOSED and one to STRUCTURAL, with the
 Scope: Taste-physicality is explicitly conditional on the Cl(3) framework — a referee who puts in the SM gauge group and N_g = 3 by hand can root without contradiction.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Four gates in one: five independent no-continuum-limit proofs + the superselection theorem closing generation physicality to order of magnitude — real structural content with the 4% up-quark margin flagged.
 
@@ -32,7 +34,8 @@ Four gates in one: five independent no-continuum-limit proofs + the superselecti
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `20b1f52df5a1a488023fc084a5dd3e07750ac89a`
 - sha256: `28ab8c1ebaa9906f0b9afa0c76c27eea84ed61fa30f5e2250b19b1ebb480a929`
-- Lines: 247; runners named: frontier_dm_relic_gap_closure.py, frontier_dm_relic_mapping.py, frontier_dm_relic_mapping_wildcard.py, frontier_dm_relic_synthesis.py, frontier_generation_gap_closure.py, frontier_generation_physicality.py, frontier_generation_physicality_wildcard.py, frontier_generation_synthesis.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/240_CODEX_REVIEW_PACKET_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch01/240_CODEX_REVIEW_PACKET_2026-04-12.md)
+- Lines: 247; runners named: historic runner (unpinned, not in this packet): `frontier_dm_relic_gap_closure(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_relic_mapping(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_relic_mapping_wildcard(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_relic_synthesis(.py)`; historic runner (unpinned, not in this packet): `frontier_generation_gap_closure(.py)`; historic runner (unpinned, not in this packet): `frontier_generation_physicality(.py)`; historic runner (unpinned, not in this packet): `frontier_generation_physicality_wildcard(.py)`; historic runner (unpinned, not in this packet): `frontier_generation_synthesis(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ A 4% margin carries the up-quark mass-hierarchy closure.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

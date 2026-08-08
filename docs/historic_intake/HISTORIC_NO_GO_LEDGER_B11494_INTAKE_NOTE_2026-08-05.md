@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: both old numbers invalidated
 Scope: two invalidations of prior numbers plus one non-promotion
 Escape conditions (negative claims): controlled matching derivation
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Numerical-integrity correction pair: the old native-candidate bridge I_v_scalar = 3.902 -> P1_native = 3.754% is INVALIDATED by a scalar /N_TASTE = 16 DOUBLE-COUNT (an extra taste division after the full-BZ taste sum); both old numbers fall, and the correct route is a controlled matching derivation. Quarantine and boundary companions attached.
 
@@ -32,6 +34,7 @@ Numerical-integrity correction pair: the old native-candidate bridge I_v_scalar 
 - Source commit: `99dcaaa0de878c242163112fb20ecdb741a3d5b7`
 - git blob: `11594e360486ed1b51b9aaeb519e2d785eba0d66`
 - sha256: `06d8d410a12653f1fc32edc0f76ae04aee3ea4924f7e1a616316a32490c8c6c0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11494_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci05/11494_NO_GO_LEDGER.md)
 - Lines: 8; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis_conjecture
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The staggered model is strongest as a SPECTRAL/INFORMATION the
 Scope: A directions document; ranks ten candidates in three tiers with a recommended priority order.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The strategic diagnosis: the model is strongest as a SPECTRAL/INFORMATION theory, not a trajectory/force theory — reads a pattern across 15 probes.
 
@@ -32,6 +34,7 @@ The strategic diagnosis: the model is strongest as a SPECTRAL/INFORMATION theory
 - Source commit: `84da1a307021a5645e8398a1ab3e13b588b36986`
 - git blob: `7ddc57737c1eb4ae59b24d08480aeb50871d74e2`
 - sha256: `199e75e86753612d9bd41ac333a8ef2d5598a1ed361b451520c425d59c73e8ea`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1213_NEXT_HIGH_IMPACT_DIRECTIONS_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch04/1213_NEXT_HIGH_IMPACT_DIRECTIONS_2026-04-11.md)
 - Lines: 136; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Diagnoses that the discrete lattice produces the right qualitative phenomena thr
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis_conjecture
 intake_directive: owner_2026-08-05
 ```
 

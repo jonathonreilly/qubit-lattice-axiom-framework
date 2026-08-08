@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Consolidates Cycles 2, 6 and 7 into one publication-surface st
 Scope: 'Current axiom set' means A_min plus the stated posture; future axiom-side primitives would be a separate theorem on a different scope and could in principle re-open Majorana mass. No runner is authored — the proof is structural case analysis.
 Escape conditions (negative claims): Operational falsifier: any positive 0nu-beta-beta signal at any experimental precision falsifies the theorem (via Schechter-Valle: positive rate implies Majorana mass).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Dirac global lift consolidation retiring three alphas — with the operational falsifier (any 0nubb signal) and the no-runner flag.
 
@@ -32,6 +34,7 @@ The Dirac global lift consolidation retiring three alphas — with the operation
 - Source commit: `8ab1d3ba27b4a24741a06839bfc3729732b352b6`
 - git blob: `4f07fa970d65f9673a31d49f05913cbf208f73e7`
 - sha256: `1f9aa49022cda99ff880a187efcc480d79c0c2d715b449ec347a90c5de5d09b8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1184_NEUTRINO_DIRAC_GLOBAL_LIFT_CURRENT_AXIOM_SET_THEOREM_NOTE_2026-04-28.md](../../archive_unlanded/historic_intake_originals/branch04/1184_NEUTRINO_DIRAC_GLOBAL_LIFT_CURRENT_AXIOM_SET_THEOREM_NOTE_2026-04-28.md)
 - Lines: 313; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ No runner authored, so the claim rests entirely on structural case analysis plus
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

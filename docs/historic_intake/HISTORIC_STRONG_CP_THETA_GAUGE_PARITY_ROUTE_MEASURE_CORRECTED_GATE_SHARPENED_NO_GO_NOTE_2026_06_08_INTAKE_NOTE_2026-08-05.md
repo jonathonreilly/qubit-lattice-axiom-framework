@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: theta_gauge = 0 is NOT forced: requiring the coupling to vanis
 Scope: O_h/parity route on the cubic Z^3 lattice with the qubit Cl(3,0) volume element.
 Escape conditions (negative claims): Explicitly leaves open that a derived O_h-invariant minimal gauge action could later force color parity and retire the gate.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 theta_gauge = 0 NOT forced (parity requirement is a choice) — with its own earlier measure-cancellation claim corrected on the record.
 
@@ -32,6 +34,7 @@ theta_gauge = 0 NOT forced (parity requirement is a choice) — with its own ear
 - Source commit: `2d509298a7ae50dafd53ef82026eea8ca86ea8a0`
 - git blob: `df9da7ac6251857166bc62c103b4a07e7ddc765e`
 - sha256: `6cc2a9627c55007627c3f3132dada41ba335046f9993664bfdad4f32666dae90`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1996_STRONG_CP_THETA_GAUGE_PARITY_ROUTE_MEASURE_CORRECTED_GATE_SHARPENED_NO_GO_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch06/1996_STRONG_CP_THETA_GAUGE_PARITY_ROUTE_MEASURE_CORRECTED_GATE_SHARPENED_NO_GO_NOTE_2026-06-08.md)
 - Lines: 127; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records that an earlier version of this route rested on a measure-cancellation c
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

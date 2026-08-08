@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: A brutally honest PROVEN/CONDITIONAL/OPEN status with a single
 Scope: Frontier map only; closes nothing, asserts no value of <P>(6), proposes no mechanism as retained; the exact-coefficient runway (d_5..d_8) is exhausted.
 Escape conditions (negative claims): The structural fact that a re-cast cannot escape is argued explicitly; the escape named is the minimal required new input, with its legitimacy classification, plus possibly enumerating the weight-10+ supports.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The rho_{p,q}(6) selection-freedom characterization: four retained no-gos cut the same freedom at four layers leaving one invariant residual — PROVEN/CONDITIONAL/OPEN with the single decisive step; the lane's honest wall statement.
 
@@ -32,6 +34,7 @@ The rho_{p,q}(6) selection-freedom characterization: four retained no-gos cut th
 - Source commit: `cff6b3860bb49aeb4b20eb1a3818a61ba4469ac6`
 - git blob: `16d6697514fab59d182b739e5db631a4ae04419c`
 - sha256: `b99d7c70499998f745d06b00ecfe95f8dd0dd539e2a1fbfd4621d75a06ff6361`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/107_BETA6_RHO_PQ6_SELECTION_NEW_PHYSICS_FRONTIER_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch01/107_BETA6_RHO_PQ6_SELECTION_NEW_PHYSICS_FRONTIER_NOTE_2026-05-30.md)
 - Lines: 445; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

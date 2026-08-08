@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Three routes closed with revisit conditions.
 Scope: The mass-spectrum aggregate.
 Escape conditions (negative claims): Revisit only with theorem-grade closures for the named blockers, promotion of the imported inputs, or one of the named primitive closures for Koide.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
 
@@ -32,6 +34,7 @@ Route memory guarding the landed mass-spectrum note: full-retention promotion bl
 - Source commit: `91afabe5197b342585baa123ac9f2362e7d54859`
 - git blob: `aea93eba6a594276d0eea9444ef5a6d2d8e0b549`
 - sha256: `6be08bab8c8a9e3bd35db20af506cfe85dd8dffcd5b7b23ec0c5eaf8ed5c2158`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10235_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10235_NO_GO_LEDGER.md)
 - Lines: 8; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Route memory guarding the landed mass-spectrum note: full-retention promotion bl
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10254 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
+- Attaches across strata to [idx 10254](HISTORIC_CLAIM_STATUS_CERTIFICATE_B10254_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Confirms independently of the April Koide notes that charged-lepton Koide is a b
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

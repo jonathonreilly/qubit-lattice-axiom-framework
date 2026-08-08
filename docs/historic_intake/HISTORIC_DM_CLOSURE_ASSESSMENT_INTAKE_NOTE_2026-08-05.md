@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: R numerator derived, eta denominator bounded — baryogenesis 
 Scope: Runner 7/7 PASS; aligned with the review.md minimum-acceptable-success criterion.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The DM gate's terminal status note superseding all prior DM closure notes: R numerator derived / eta denominator bounded, the 0.2% headline conditional on an observational input — cross-flagged with the recovery-stratum DM flagship at intake.
 
@@ -32,7 +34,8 @@ The DM gate's terminal status note superseding all prior DM closure notes: R num
 - Source commit: `de583c58a9e39cc909a071a2af34d19e8de73676`
 - git blob: `bd0f4a2725bb00920e36e4d52d450ebb84a96f44`
 - sha256: `b8a81707184ff6a0d4e1dc3aa7fc93c93a8d071aa02bfa704d788f4737a2ebe9`
-- Lines: 186; runners named: frontier_dm_closure_attempt.py, frontier_dm_derived_coupling.py, frontier_dm_ewpt_taste_corrected.py, scripts/frontier_dm_closure_attempt.py, scripts/frontier_dm_derived_coupling.py, scripts/frontier_dm_ewpt_taste_corrected.py, scripts/frontier_taste_sector_resolved.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/341_DM_CLOSURE_ASSESSMENT.md](../../archive_unlanded/historic_intake_originals/branch01/341_DM_CLOSURE_ASSESSMENT.md)
+- Lines: 186; runners named: historic runner (unpinned, not in this packet): `frontier_dm_closure_attempt(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_derived_coupling(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_ewpt_taste_corrected(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_closure_attempt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_derived_coupling(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ewpt_taste_corrected(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_taste_sector_resolved(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The headline 0.2% agreement is conditional on an observational input (eta) that 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

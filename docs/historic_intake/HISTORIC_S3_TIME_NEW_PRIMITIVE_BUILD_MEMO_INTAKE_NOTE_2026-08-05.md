@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Route 2 is no longer a search for a hidden GR closure inside t
 Scope: Route-2 primitive chain and atlas support as of 2026-04-14.
 Escape conditions (negative claims): Gives the operational escape in three steps: build a new tensor-valued support observable, use delta_A1 as the background variable it must refine, then upgrade Theta_R^(0).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Route-2 tensor-primitive TERMINAL: no hidden GR closure in the existing stack â€” the operational three-step escape specified; the sweep's honest end.
 
@@ -32,6 +34,7 @@ Route-2 tensor-primitive TERMINAL: no hidden GR closure in the existing stack â€
 - Source commit: `a08f2542082b10f21b9c6e208b25210d5c3dcada`
 - git blob: `a02e16298a9eed79ae12f2d0f5205cafa3da9b00`
 - sha256: `d41957acd69e3c01c1099059c6356d2a44a5fb0708c63d0a5b5ccb39e4ba724d`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1888_S3_TIME_NEW_PRIMITIVE_BUILD_MEMO.md](../../archive_unlanded/historic_intake_originals/branch06/1888_S3_TIME_NEW_PRIMITIVE_BUILD_MEMO.md)
 - Lines: 141; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -62,6 +65,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

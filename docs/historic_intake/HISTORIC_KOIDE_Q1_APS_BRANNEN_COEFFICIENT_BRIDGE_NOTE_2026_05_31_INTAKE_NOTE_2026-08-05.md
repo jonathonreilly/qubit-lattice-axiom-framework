@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The bridge is exact but does not close the physical Brannen ph
 Scope: Exact at the coefficient/magnitude layer only; uses the offsite coefficient of the projected Q = 1 source, not the physical Q readout (Q/d would give 1/3).
 Escape conditions (negative claims): The named next target is either a signed selected-line readout/orientation law sending delta to -coeff_nonid(S_Q1), or a proof that the Q = 1 coefficient bridge is only an excluded source-domain shadow.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact C_3 group-algebra identity: the Q=1 source's every offsite coefficient is -2/9 = -eta_APS — the arithmetic bridge, with the parity obstruction honest.
 
@@ -32,7 +34,8 @@ Exact C_3 group-algebra identity: the Q=1 source's every offsite coefficient is 
 - Source commit: `3930329c09e76ebd064141b07a584c87787ba5ee`
 - git blob: `a8aeb60c204f03e927337112f7df603f825c381e`
 - sha256: `0528f33f38f349d12181ce0b2a01d0a83430a698cfdb54b7ad0273e4bb845fcf`
-- Lines: 181; runners named: scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/897_KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md](../../archive_unlanded/historic_intake_originals/branch03/897_KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md)
+- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_aps_brannen_coefficient_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

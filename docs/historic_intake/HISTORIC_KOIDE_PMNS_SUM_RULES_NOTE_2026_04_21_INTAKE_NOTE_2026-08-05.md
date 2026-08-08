@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Three apparent coincidences are one underlying relation plus a
 Scope: Sum rules derived FROM the iteration-4 conjecture, not from first principles; SR2 is a leading-order relation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The two PMNS sum rules: SR1 theta_13 = 2(theta_23 - pi/4) EXACT and SR2 at leading order — three coincidences become one relation; the structure behind the repo's live theta_23 falsifier.
 
@@ -32,7 +34,8 @@ The two PMNS sum rules: SR1 theta_13 = 2(theta_23 - pi/4) EXACT and SR2 at leadi
 - Source commit: `c29599d4d9f1b5b3aa281c088f71e3f2b32feadd`
 - git blob: `e36f132e69f7b9ea4e31bc21461774be818a7cac`
 - sha256: `a2c147d54d0248856e42c63eae7cfe8dac68eec02ec7bb43ec77c2ff2a20f086`
-- Lines: 124; runners named: scripts/frontier_koide_pmns_sum_rules.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/888_KOIDE_PMNS_SUM_RULES_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/888_KOIDE_PMNS_SUM_RULES_NOTE_2026-04-21.md)
+- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_sum_rules(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ The sum rules inherit the conjectural status of iteration 4 — the iteration-24
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

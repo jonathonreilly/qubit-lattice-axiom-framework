@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — four Minimal Framework Axioms (MINIMAL_AXIOMS_2026-06-29) supply only the Z^3/M2 setting; Cycle 870 supplies the matter law, boundary/coframe, clean domain, serial word, beta = -0.3, g_contact = 0.37
 
@@ -22,7 +22,9 @@ Original verdict: The recurrent sandwich closes as a positive bounded theorem, r
 Scope: Fixed open cubic L=2 and held L=3 on the one supplied clean Cycle-870 embedding; no autonomous genesis or all-volume scheduler claimed; n is not time, duration, or rate; coherently controlling different invocation counts is excluded because the projective phase becomes relative unless compensation is physically compiled.
 Escape conditions (negative claims): Negative-promotion stress test is explicitly FAIL for any impossibility, minimum-content, shared-obstruction, or axiom-pressure promotion: fewer than five normalized families are closed and one construction succeeds; local spent refusal, alternating buffers, moving garbage/entropy rails, local stabilizer pumps, and direct endpoint-incidence preparation all remain open, and none of the remaining boundaries presently requires an axiom.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Recurrent encode-update-decode sandwich: exp(-i phi_L) S_L J_L = J_L G_L for every n — retires forward-only replay by composition; physical-compiler lane theorem with the mass-number caveat honest.
 
@@ -32,7 +34,8 @@ Recurrent encode-update-decode sandwich: exp(-i phi_L) S_L J_L = J_L G_L for eve
 - Source commit: `40ebd54aa0f4950a5dcc57b4445b07559bb31f33`
 - git blob: `bf4399b63fb61983645ff8e705546ac5ea64595e`
 - sha256: `ce4a2c0032c841f17f0e634af918cdfcb3825718997cc8e54ee567bfd11f0931`
-- Lines: 130; runners named: scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_package_acceptance_2026_08_03.py, scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py, scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3107_RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md](../../archive_unlanded/historic_intake_originals/recovery/3107_RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md)
+- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_package_acceptance_2026_08_03(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The inherited one-particle mass numbers (analytic 0.4534056541748852, rest 0.453
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

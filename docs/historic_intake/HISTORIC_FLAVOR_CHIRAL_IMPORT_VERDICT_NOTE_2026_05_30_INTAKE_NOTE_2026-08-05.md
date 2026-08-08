@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: n_gen = 3 is derived, 3-distinctness is possibly native (posit
 Scope: A1 + A2 + retained; corrects an earlier framing by showing i(C - C^2) is circulant, C_3-equivariant and commutes with Gamma_chi, so it is not the chiral import.
 Escape conditions (negative claims): Two threads the no-gos do not close: (1) the exhaustive joint-commutant characterization of (Cl(3) site-action, Z^3 translations, hw=1 projector) - is there any native C_3-non-equivariant operator; and (2) whether r = 1/2 can be derived outside the operator-grading framing entirely.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 CHIRAL IMPORT VERDICT: seven native routes fail and ONE shared pin spans Koide/quark/generation-ID/strong-CP/DM — the major consolidation no-go with two threads left open.
 
@@ -32,7 +34,8 @@ CHIRAL IMPORT VERDICT: seven native routes fail and ONE shared pin spans Koide/q
 - Source commit: `8478b994cffc78cb6094d0c153959a7d5cad2d1f`
 - git blob: `2cf622b0d5b60c1e3d165030e1c794e4833ec18d`
 - sha256: `9133cc4d867636433c028bd7c310c620bf27db2a09769eb01118dd3dcbc9b981`
-- Lines: 75; runners named: scripts/flavor_chiral_import_verdict_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/477_FLAVOR_CHIRAL_IMPORT_VERDICT_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/477_FLAVOR_CHIRAL_IMPORT_VERDICT_NOTE_2026-05-30.md)
+- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_chiral_import_verdict_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The same single pin is shared across Koide, quark, generation-ID, strong-CP and 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

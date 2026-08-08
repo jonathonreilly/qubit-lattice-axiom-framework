@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem_plus_bounded_candidate
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Closes the sub-gap that the exact source-model foothold was li
 Scope: Exact for the finite-support diagonal source class; the metric candidate is bounded and this is not full nonlinear GR.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Strong-field source model extended from rank-one to the finite-support diagonal attractive class with exterior harmonicity — the model's strongest form.
 
@@ -32,7 +34,8 @@ Strong-field source model extended from rank-one to the finite-support diagonal 
 - Source commit: `dbfe8734b6b0739fce104ed58612e5894c4376b2`
 - git blob: `a533450898175f4f6740b35e7e3996dfe59d6962`
 - sha256: `449db484247ad85ec79099c1ee8a968a05e0220e99fa656e78c1b43bce07a32d`
-- Lines: 199; runners named: scripts/frontier_distributed_source_spacetime_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/333_DISTRIBUTED_SOURCE_SPACETIME_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/333_DISTRIBUTED_SOURCE_SPACETIME_CLOSURE_NOTE.md)
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_distributed_source_spacetime_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem_plus_bounded_candidate
 intake_directive: owner_2026-08-05
 ```
 

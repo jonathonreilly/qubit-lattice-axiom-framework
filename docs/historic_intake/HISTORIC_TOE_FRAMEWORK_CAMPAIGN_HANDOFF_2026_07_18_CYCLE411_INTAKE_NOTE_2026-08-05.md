@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_synthesis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: THE DECISIVE QUESTION IS NO LONGER WHETHER ANY BOUNDED PHYSICA
 Scope: Carries a per-cycle results table with exact pass counts and residuals for Cycles 396 through 409.
 Escape conditions (negative claims): No route-independent obstruction or axiom pressure survives; a failed exchange realization is not a fermion-to-qubit no-go, and the current axioms remain FALSIFIABLE SUBSTRATE HYPOTHESES that are neither the objective nor protected from revision — a possible axiom change can be considered ONLY after constructive work isolates content that cannot remain a candidate law, boundary condition or primitive reference.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Campaign handoff terminal for the whole autopilot sweep: states the goal (join operational quantum physics, causal time, matter/inertia ...) and the sweep's own conclusion that THE DECISIVE QUESTION IS NO LONGER WHETHER [the pieces exist but whether one substrate carries them]. With the two mid-sweep syntheses attached, this is the program's self-assessment going into the current campaigns; direct input to next-phase planning.
 
@@ -32,6 +34,7 @@ Campaign handoff terminal for the whole autopilot sweep: states the goal (join o
 - Source commit: `af3826b487238434f2e112b40e7591b5d83e151d`
 - git blob: `268cd13d477f803c8f4865ffe45e2b6a881d824e`
 - sha256: `9afc16a871fd72da77fd0c943e5f096d0392b2ad6d05b3164de7596693121b5a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3072_TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18_CYCLE411.md](../../archive_unlanded/historic_intake_originals/branch09/3072_TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18_CYCLE411.md)
 - Lines: 596; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_synthesis
 intake_directive: owner_2026-08-05
 ```
 

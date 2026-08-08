@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED, not closed — the route and mechanism (suppressed ru
 Scope: Non-perturbative gauge-side handoff from the framework strong boundary (alpha_s(M_Pl)=0.073, ~3.9x the SM 0.019) to the perturbative SM trajectory.
 Escape conditions (negative claims): Larger lattices (L = 16, 24, 32) for controlled continuum extrapolation and 100+ configurations per ensemble; a non-perturbative V-to-MSbar scheme conversion.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 April step-scaling: alpha_V flat over a factor 3 in scale (suppressed running mechanism real) WITH the honest 20.5%-off m_t = 208 GeV flag.
 
@@ -32,7 +34,8 @@ April step-scaling: alpha_V flat over a factor 3 in scale (suppressed running me
 - Source commit: `206c63374a99bb68f591245d74a587b7523f42bb`
 - git blob: `e535e2977e6b66516f8083cb2f9488ed6ef55da8`
 - sha256: `c6d4fd84a7b1efd7a80f5a189973ad8b11a89f08ef930df6236d1cae5080b35e`
-- Lines: 140; runners named: scripts/frontier_yt_step_scaling.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2455_YT_STEP_SCALING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2455_YT_STEP_SCALING_NOTE.md)
+- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_step_scaling(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Quantitative prediction m_t = 208 GeV is 20.5% off PDG and rests on 8 configs at
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

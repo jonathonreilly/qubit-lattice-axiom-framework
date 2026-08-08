@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Strongest closure route so far and the selector is no longer a
 Scope: Conditional on accepting that the EWSB order parameter must be built on the minimal resolved spinor temporal orbit rather than the unresolved L_t = 2 sign-flip endpoint.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Z4 spinor selector: L_t=4 unique via the full Z_4 double-cover orbit — the strongest closure route with its one interpretive bridge named.
 
@@ -32,7 +34,8 @@ The Z4 spinor selector: L_t=4 unique via the full Z_4 double-cover orbit — the
 - Source commit: `7ba2fdd5189dc1568f31550ccb065c2eb2208756`
 - git blob: `1037f2bcbdf791bf685b8573113fc82bd92fb094`
 - sha256: `83a7866384c77a930135b10fd6fc5c77cc6555ba4ac66dd1f27fc6bc354adb1d`
-- Lines: 90; runners named: scripts/frontier_hierarchy_z4_spinor_selector.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/709_HIERARCHY_Z4_SPINOR_SELECTOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/709_HIERARCHY_Z4_SPINOR_SELECTOR_NOTE.md)
+- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_z4_spinor_selector(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The DM relic mapping gate remains BOUNDED.
 Scope: Cl(3) on Z^3 staggered Hamiltonian; statuses graded at the paper bar per review.md and the Codex canonical claim ledger.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The DM lane's master accounting: 13-step chain scored 4 EXACT / 7 DERIVED / 2 BOUNDED with eta the only cosmological import — the single-source consolidation the audit lane needs beside the recovery-stratum DM flagship.
 
@@ -32,7 +34,8 @@ The DM lane's master accounting: 13-step chain scored 4 EXACT / 7 DERIVED / 2 BO
 - Source commit: `2f9e300459505fd8cc05889b3e6844f68418ebf5`
 - git blob: `b04293c1ed521830d69454b64ca2a9c75802199b`
 - sha256: `f2690544b8e9c10d9b8156d507ae6e3499903f2f27d2dd11e9cbbb5918c4f383`
-- Lines: 900; runners named: scripts/frontier_dm_clean_derivation.py, scripts/frontier_dm_relic_mapping.py, scripts/frontier_dm_relic_synthesis.py, scripts/frontier_dm_relic_gap_closure.py, scripts/frontier_dm_relic_mapping_wildcard.py, scripts/frontier_dm_boltzmann_theorem.py, scripts/frontier_dm_direct_boltzmann.py, scripts/frontier_dm_coulomb_from_lattice.py, scripts/frontier_dm_coupled_transport.py, scripts/frontier_dm_dqt_htl.py, scripts/frontier_dm_dqt_native.py, scripts/frontier_dm_ewpt_native.py, scripts/frontier_baryogenesis.py, scripts/frontier_bbn_from_framework.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/343_DM_CONSOLIDATED_STATUS.md](../../archive_unlanded/historic_intake_originals/branch02/343_DM_CONSOLIDATED_STATUS.md)
+- Lines: 900; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_mapping(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_gap_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_mapping_wildcard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_boltzmann_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_direct_boltzmann(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coulomb_from_lattice(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coupled_transport(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_dqt_htl(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_dqt_native(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ewpt_native(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_bbn_from_framework(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -67,6 +70,7 @@ Many sub-rows self-flag BOUNDED: v_w (detonation problem), C_tr calibration impo
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

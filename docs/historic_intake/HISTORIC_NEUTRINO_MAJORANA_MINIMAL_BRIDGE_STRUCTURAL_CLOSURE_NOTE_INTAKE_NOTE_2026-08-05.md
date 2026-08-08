@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Majorana is no longer the structural pacing item on this branc
 Scope: Structural closure on the admitted post-retained bridge; the pure-retained lane remains closed negative at mu = 0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The positive Majorana reopening on the minimal ADMITTED bridge (five-step chain) — flagged as resting on an admission; the pair with 1197 goes to audit.
 
@@ -32,7 +34,8 @@ The positive Majorana reopening on the minimal ADMITTED bridge (five-step chain)
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `34422a300a0eb504690db46da8946162bdef2c63`
 - sha256: `4041113511baa912b8a9326cbd6c92abec71c3f5d89bf9be7d616ffac1cd39ee`
-- Lines: 238; runners named: scripts/frontier_neutrino_majorana_minimal_bridge_structural_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1195_NEUTRINO_MAJORANA_MINIMAL_BRIDGE_STRUCTURAL_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1195_NEUTRINO_MAJORANA_MINIMAL_BRIDGE_STRUCTURAL_CLOSURE_NOTE.md)
+- Lines: 238; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_minimal_bridge_structural_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The positive closure rests on an ADMITTED post-retained bridge, not on the retai
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

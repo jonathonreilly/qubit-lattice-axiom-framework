@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No — the current class cannot fix the physical Brannen phase
 Scope: The exact Koide cyclic carrier and the current positive, self-adjoint, conjugation-symmetric ambient one-clock Wilson class on main.
 Escape conditions (negative claims): The missing law must refine the conjugation-even positive one-clock Wilson class by an orientation-sensitive / conjugation-ODD datum; that is exactly the escape the theorem leaves open.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean reduction: the conjugation-symmetric ambient Wilson class cannot fix the Brannen phase — the needed refinement named exactly.
 
@@ -32,7 +34,8 @@ Clean reduction: the conjugation-symmetric ambient Wilson class cannot fix the B
 - Source commit: `ea3abce5b1a1551df02ad7dced643cf4c680bfb7`
 - git blob: `e9e3909136cdd5f285243065c95850ee41fc4bbd`
 - sha256: `3f42715d945f5285b3debf64cabe100bff9fb9f0edd9ca87c749f05e4c747831`
-- Lines: 242; runners named: scripts/frontier_koide_brannen_phase_conjugation_symmetry_boundary_2026_04_21.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/764_KOIDE_BRANNEN_PHASE_CONJUGATION_SYMMETRY_BOUNDARY_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/764_KOIDE_BRANNEN_PHASE_CONJUGATION_SYMMETRY_BOUNDARY_NOTE_2026-04-21.md)
+- Lines: 242; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_phase_conjugation_symmetry_boundary_2026_04_21(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

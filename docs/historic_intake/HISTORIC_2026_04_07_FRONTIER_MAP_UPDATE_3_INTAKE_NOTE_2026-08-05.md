@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The classifier program is closed; the physics program is not -
 Scope: Off-scaffold generators: uniform, Gaussian, clustered, rotated, Halton, radial, stretched.
 Escape conditions (negative claims): Two named next moves that are not another metric search: matter/inertial closure, or a direct analytic derivation from path-sum plus S=L(1-f) targeting the density-and-symmetry structure that explains the 88.9% baseline.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the classifier double-reversal: the second reversal closes the classifier program (free_coh 17/21=81.0% scaffolded fails held-out like its predecessor) while keeping the physics program open; discloses that classifier search consistently under-delivers on this data. The reversed scorecards and the era census attached - audit should read the chain as one object.
 
@@ -32,6 +34,7 @@ TERMINAL of the classifier double-reversal: the second reversal closes the class
 - Source commit: `12e16e6385e0be5ef53709f394c24fe323f97d7c`
 - git blob: `c6c5a0268b7b83278b871cc312d7bb94f86623c3`
 - sha256: `96224579223fc576f6e5a2e44869585bcf533ed848884bfb42ab37981a2166e3`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10098_2026-04-07-frontier-map-update-3.md](../../archive_unlanded/historic_intake_originals/packsci01/10098_2026-04-07-frontier-map-update-3.md)
 - Lines: 82; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ Discloses that classifier search consistently underperforms human pattern matchi
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

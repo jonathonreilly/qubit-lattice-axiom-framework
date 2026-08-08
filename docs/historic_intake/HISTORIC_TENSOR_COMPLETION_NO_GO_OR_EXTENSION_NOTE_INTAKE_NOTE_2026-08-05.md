@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Fewer than two extra non-scalar shell coordinates cannot work;
 Scope: Current audited restricted family with the exact scalar shell trace f fixed.
 Escape conditions (negative claims): The escape is fully specified as a four-step attack: find microscopic observables reducing to a_vec and a_tf, derive their Schur/Dirichlet kernel, test closure on the restricted class, then widen.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The scalar-completion split: trace-only completion PERMANENTLY dead; the surviving route needs exactly two extra non-scalar shell coordinates — four-step escape specified.
 
@@ -32,6 +34,7 @@ The scalar-completion split: trace-only completion PERMANENTLY dead; the survivi
 - Source commit: `62433c11fa97fac8f945e507fda5c5041bb1f6e1`
 - git blob: `3e6516df9457334f3ff525bd03c5465933ac2aa7`
 - sha256: `ceac583dd9b14761eaa076c09399d8db262060d83c93add5a2412bf664cffc40`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2035_TENSOR_COMPLETION_NO_GO_OR_EXTENSION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2035_TENSOR_COMPLETION_NO_GO_OR_EXTENSION_NOTE.md)
 - Lines: 88; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -67,6 +70,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

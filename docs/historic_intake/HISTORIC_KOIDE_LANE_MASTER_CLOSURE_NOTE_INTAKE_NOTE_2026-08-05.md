@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Closure on retained atlas plus textbook math, with exactly one
 Scope: The only observational input is the UNORDERED set of three measured masses, used for set-equality comparison; names are treated as post-hoc nomenclature.
 Escape conditions (negative claims): Records that all attempted axiom-native derivations of A1 are negative on the retained framework (no C_3-invariant variational principle selects the cone, max-entropy at fixed trace gives b = 0, fixed-point/SSB arguments do not select |b|/a), so A1 needs either a new retained primitive such as real-irrep-block democracy or a different route.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Koide lane's canonical master-closure entry: sub-0.01% mass matches WITH the admitted load-bearing non-axiom step — headline and admission coexist; the audit lane prices exactly this.
 
@@ -32,7 +34,8 @@ The Koide lane's canonical master-closure entry: sub-0.01% mass matches WITH the
 - Source commit: `0b88c30ab5929303f7d6b7290de4385f2fc3ec51`
 - git blob: `eed5eee2566ae189714171bb3d43900bb3847e0d`
 - sha256: `19f87bf39d2ec5a481fdc48c7a2cb216b2930a8c0b4cad795e6f4e20f4f2dd76`
-- Lines: 517; runners named: scripts/frontier_koide_lane_regression.py, scripts/frontier_koide_positive_parent_operator_construction.py, scripts/frontier_koide_as_pin_replaces_h_star_witness.py, scripts/frontier_koide_name_free_set_equality.py, scripts/frontier_koide_selected_line_axis_fourier_bridge.py, scripts/frontier_koide_q_equals_lefschetz_sum.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/867_KOIDE_LANE_MASTER_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/867_KOIDE_LANE_MASTER_CLOSURE_NOTE.md)
+- Lines: 517; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_lane_regression(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_positive_parent_operator_construction(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_as_pin_replaces_h_star_witness(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_name_free_set_equality(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_line_axis_fourier_bridge(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_equals_lefschetz_sum(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Headline 'closes axiom-only' coexists with an admitted load-bearing non-axiom st
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

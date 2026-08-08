@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A sharp obstruction with sufficiency, necessity, irreducibilit
 Scope: Uses exactly A1-A5 with no imported physics, no fitting, no finite-size extrapolation; the bounded 1+1+1 hierarchy is noted but not needed.
 Escape conditions (negative claims): The escape route is explicit and named: without A5 the fourth-root trick reduces the three species to taste copies. Conversely, adopting A5 closes the gate - so the obstruction is exactly one axiom wide, with the same logical status as the gauge-group and spacetime derivations.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The A5 boundary theorem: generation physicality bounded by exactly ONE axiom with sufficiency/necessity/irreducibility/completeness proved and the escape named.
 
@@ -32,7 +34,8 @@ The A5 boundary theorem: generation physicality bounded by exactly ONE axiom wit
 - Source commit: `03cd433b0abefd4c70862393ec45420854e87bde`
 - git blob: `854c2ff9a042d3a46e30ea306442024b71ab86f2`
 - sha256: `d824d88a547f881e00aaa85410ac2c869a9068a2cb7e0319322f85e1cf7435da`
-- Lines: 239; runners named: scripts/frontier_generation_axiom_boundary.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/611_GENERATION_AXIOM_BOUNDARY_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/611_GENERATION_AXIOM_BOUNDARY_THEOREM_NOTE.md)
+- Lines: 239; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_axiom_boundary(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

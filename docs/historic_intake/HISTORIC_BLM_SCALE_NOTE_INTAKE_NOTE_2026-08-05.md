@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The BLM prescription does NOT naturally produce the alpha_V ~ 
 Scope: 1-loop BLM scale setting fed into the hierarchy formula, with sensitivity tables in alpha_V and y_t.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 BLM negative: the optimal-scale prescription gives v = 6 GeV, a factor ~40 short — a real falsifier of the naive hierarchy route, adverse evidence for the era's exact-match claims.
 
@@ -32,7 +34,8 @@ BLM negative: the optimal-scale prescription gives v = 6 GeV, a factor ~40 short
 - Source commit: `831d7d289e3ecb57405d09a5b5496778637d00d3`
 - git blob: `f8babefe632086e5912d07b305253a3a4f3c75c9`
 - sha256: `b49c3ee1af278bce50817dd736ab2aba4dc6ea1db1f1ce362b234ae90ba24886`
-- Lines: 115; runners named: scripts/frontier_blm_scale.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/111_BLM_SCALE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/111_BLM_SCALE_NOTE.md)
+- Lines: 115; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_blm_scale(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ A negative result against the hierarchy route: reproducing v would require unphy
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

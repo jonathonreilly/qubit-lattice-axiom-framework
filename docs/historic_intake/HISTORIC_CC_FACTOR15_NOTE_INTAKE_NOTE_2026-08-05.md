@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The factor is closed by self-consistency, not by holography â€
 Scope: Inputs are H_0 and Omega_Lambda from observation; explicitly does not predict Omega_Lambda = 0.685 or H_0 = 67.4, and the S^3 identification is an identification rather than a derivation from graph axioms.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The CC era terminal: the factor-15 closed by self-consistency forcing C=3 uniquely, with the two remaining observational inputs and the S^3 admission honest â€” pulled with the later-contradiction flag to be attached at intake.
 
@@ -32,7 +34,8 @@ The CC era terminal: the factor-15 closed by self-consistency forcing C=3 unique
 - Source commit: `dddbd20f59cb6cde4ca5bedc16caf133e08c3ff7`
 - git blob: `6b86d765ae8ecf5b80e22d602eab870d828f20ff`
 - sha256: `958a2e0707c054df22de3c40a0697915cadab18108844f31ed792146b1a73fdc`
-- Lines: 155; runners named: scripts/frontier_cc_factor15.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/136_CC_FACTOR15_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/136_CC_FACTOR15_NOTE.md)
+- Lines: 155; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Two observational inputs remain; the S^3 identification is admitted to be undire
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

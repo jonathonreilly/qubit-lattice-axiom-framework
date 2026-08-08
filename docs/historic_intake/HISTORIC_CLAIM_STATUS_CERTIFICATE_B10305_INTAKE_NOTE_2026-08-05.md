@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No audit verdict applied by the branch.
 Scope: One CHSH row.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of landed content pulled as a set: derives the CORRECT Landau identity for the CHSH square and adds a runner, closing an exact audit blocker (proposal_allowed true); the previously displayed identity in a landed CHSH note was wrong. Falsification companion attached.
 
@@ -32,6 +34,7 @@ Correction of landed content pulled as a set: derives the CORRECT Landau identit
 - Source commit: `db2dbb5a9347d4d6b83089b3821ca601f73218da`
 - git blob: `9f45d06e5ab83ce645495bbd04efdd7c5cd04ef4`
 - sha256: `59096e74547cc8c6a64b630ca13ec17b50a7b8d49ace5dca430c4fe1cb7ef30d`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10305_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10305_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 19; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A landed CHSH note carried an incorrect displayed identity until this repair - a
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

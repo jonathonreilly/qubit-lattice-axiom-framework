@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A universal selection rule for polynomial site-phase operator 
 Scope: Explicitly limited to products and linear combinations of the site-phase operators P_mu; non-constant phase profiles need separate analysis.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Universal Hamming-distance selection rule by character orthogonality — grind-program exact infrastructure.
 
@@ -32,7 +34,8 @@ Universal Hamming-distance selection rule by character orthogonality — grind-p
 - Source commit: `2a002cb80cfebe4b8cf150ef75d4d99bb5c6e111`
 - git blob: `70c99df92e8b705d3252e3f52371ee3e29ddef3a`
 - sha256: `2b1c0e980ebf1dab0dea47cf8d70caa3ff72d2f288c5e6b297dec5a7ed26301b`
-- Lines: 94; runners named: scripts/frontier_hamming_distance_selection_rule.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/669_HAMMING_DISTANCE_SELECTION_RULE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/669_HAMMING_DISTANCE_SELECTION_RULE_NOTE.md)
+- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hamming_distance_selection_rule(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

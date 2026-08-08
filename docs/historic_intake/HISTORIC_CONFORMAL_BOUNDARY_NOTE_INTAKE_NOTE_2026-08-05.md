@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: STRONG EVIDENCE for a d = 3 conformal boundary, connecting to 
 Scope: Five gates across d = 2, 3, 4, 5; correlator R^2 = 0.25 (oscillatory) is the weakest.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 d=3 conformal boundary evidence: 2D CFT structure (c = 1.47/mode, exact modular S and T only at d = 3) — the era's holography-adjacent positive, d=3-unique.
 
@@ -32,7 +34,8 @@ d=3 conformal boundary evidence: 2D CFT structure (c = 1.47/mode, exact modular 
 - Source commit: `623e6bd163ba604cf6200fed9418bac12a192705`
 - git blob: `d50390d1ceb436729a6141a9f0f85f8d2d70443a`
 - sha256: `2a5f16f74e37ca802db916c410abc0c0c1af70b62234afdaf706a98fdba1f36a`
-- Lines: 85; runners named: scripts/frontier_conformal_boundary.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/258_CONFORMAL_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/258_CONFORMAL_BOUNDARY_NOTE.md)
+- Lines: 85; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_conformal_boundary(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

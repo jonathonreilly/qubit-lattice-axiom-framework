@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_verdict
+Claim type: meta
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: This no-go is verified but is NOT a Lane 4 closure; Lane 4 rem
 Scope: Lane 4 checkpoint; a narrow compatibility fix was applied to the majorana zero-law runner after an origin/main fast-forward introduced Pfaffian/Nambu atlas rows.
 Escape conditions (negative claims): Derive a nonzero Majorana primitive or a tiny Dirac Y_nu activation law.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Lane 4 neutrino cycle-1 verdict: current-stack mu_current=0 verified, the diagonal seesaw atmospheric benchmark requires a nonzero invertible M_R, and direct one-Higgs Dirac use is excluded; escape named (derive a nonzero Majorana primitive or a tiny Dirac coupling). VERIFICATION-INTEGRITY FLAG: the authority runner was repaired mid-cycle because it gated on the literal string 'Pfaffian' rather than a computation. Lane family attached.
 
@@ -32,7 +34,8 @@ Lane 4 neutrino cycle-1 verdict: current-stack mu_current=0 verified, the diagon
 - Source commit: `e1e041d5740b00b1c4b255a1fc7518bf6650a8e5`
 - git blob: `1cdb0950ea113258ff478d25c23cd3a3e506a366`
 - sha256: `2538a995fd89e800be2b0576afaa4f38b672916523621e9b57f1c20a82d6bd14`
-- Lines: 61; runners named: scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go.py, scripts/frontier_neutrino_majorana_current_stack_zero_law.py, scripts/frontier_neutrino_mass_derived.py, scripts/frontier_neutrino_retained_observable_bounds.py, docs/audit/scripts/run_pipeline.sh, docs/audit/scripts/audit_lint.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10088_HANDOFF.md](../../archive_unlanded/historic_intake_originals/packsci01/10088_HANDOFF.md)
+- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_current_stack_zero_law(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_mass_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_retained_observable_bounds(.py)`; historic runner (unpinned, not in this packet): `docs/audit/scripts/run_pipeline.sh`; historic runner (unpinned, not in this packet): `docs/audit/scripts/audit_lint(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ An authority runner was found to be checking for a literal string rather than th
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_verdict
 intake_directive: owner_2026-08-05
 ```
 

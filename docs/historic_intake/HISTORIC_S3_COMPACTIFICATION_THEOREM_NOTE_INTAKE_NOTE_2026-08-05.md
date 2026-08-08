@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED (near-structural): S^3 is a strong conjecture supporte
 Scope: Audit of the finite-H -> regular graph -> closed -> simply connected -> Perelman chain; runner PASS=10 FAIL=2.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest S^3 downgrade: 'structural/derived' -> BOUNDED with two formal gaps named (homogeneity imported; prior regularity argument incorrect) — retraction on record.
 
@@ -32,7 +34,8 @@ The honest S^3 downgrade: 'structural/derived' -> BOUNDED with two formal gaps n
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `f69491b658c87720b001ac453f7517718dd55428`
 - sha256: `ad197f0b7249a7e42d85c437173fc81fa4c6c80a927bae18d7d6480d62954f62`
-- Lines: 140; runners named: scripts/frontier_s3_compactification.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1852_S3_COMPACTIFICATION_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1852_S3_COMPACTIFICATION_THEOREM_NOTE.md)
+- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_compactification(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly retracts a previously claimed structural result and calls a prior not
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

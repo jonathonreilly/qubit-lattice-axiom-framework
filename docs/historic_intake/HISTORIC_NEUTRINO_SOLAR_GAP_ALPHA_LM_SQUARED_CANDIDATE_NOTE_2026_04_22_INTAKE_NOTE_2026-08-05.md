@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conjecture
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Would CLOSE the retained solar-gap open lane (9/9 PASS) — th
 Scope: Conditional on deriving eps/B = alpha_LM^2 from retained structure via a proposed three-level staircase (k_C = 9) with second-order residual-sharing.
 Escape conditions (negative claims): The required extension is well-scoped and not a new axiom: extend the adjacent-placement theorem to a three-level staircase and prove second-order residual-sharing gives alpha_LM^2.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The solar-gap alpha_LM^2 proposal: first quantitative match on the retained open lane (9/9) — WITH the substituted-coefficient/look-elsewhere flag; displaces a retained coefficient, so audit must see it.
 
@@ -32,7 +34,8 @@ The solar-gap alpha_LM^2 proposal: first quantitative match on the retained open
 - Source commit: `7dc554495c13551d89f358f1042ce6e2d043c906`
 - git blob: `9ad622b9432f7c33069bd94d4979d73067c1cb28`
 - sha256: `16accb73db5a2a72bfed72d005cefd54ca8d9041cad7dcf6faca5f40b3caa41d`
-- Lines: 142; runners named: scripts/frontier_neutrino_solar_gap_alpha_lm_squared_candidate.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1209_NEUTRINO_SOLAR_GAP_ALPHA_LM_SQUARED_CANDIDATE_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch04/1209_NEUTRINO_SOLAR_GAP_ALPHA_LM_SQUARED_CANDIDATE_NOTE_2026-04-22.md)
+- Lines: 142; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_solar_gap_alpha_lm_squared_candidate(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ A numerical match found by substituting a different coefficient into a retained 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conjecture
 intake_directive: owner_2026-08-05
 ```
 

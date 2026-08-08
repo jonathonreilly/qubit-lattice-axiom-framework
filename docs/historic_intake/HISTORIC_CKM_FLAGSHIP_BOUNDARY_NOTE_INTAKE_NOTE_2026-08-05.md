@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED, with an explicit list of what would NOT help — refi
 Scope: All lattice work at finite L <= 8 with ~98% volume spread on the inter-valley overlap and no continuum extrapolation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The CKM flagship boundary: derived vs not-derived drawn exactly, three overclaiming practices warned against by name — supersedes earlier framings; the lane's constitution.
 
@@ -32,7 +34,8 @@ The CKM flagship boundary: derived vs not-derived drawn exactly, three overclaim
 - Source commit: `3e0fa5bf4b6cd2c109dc64289a083971db377d14`
 - git blob: `315decfe4c019a33b4f52699b86432f5c8438bea`
 - sha256: `c108913b4b330547cd93850b64354dc13cbadf489c37072aa15af60b9bfdba0e`
-- Lines: 199; runners named: scripts/frontier_ckm_c23_analytic.py, scripts/frontier_ckm_closure.py, scripts/frontier_ckm_from_mass_hierarchy.py, scripts/frontier_ckm_nni_coefficients.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/193_CKM_FLAGSHIP_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/193_CKM_FLAGSHIP_BOUNDARY_NOTE.md)
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_c23_analytic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_nni_coefficients(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly warns against three overclaiming practices that earlier notes in the 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_audit_finding
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The one-bit shape of the blocker is manufactured by two conven
 Scope: Exercise report on origin/main @ 1652deb63b; no repo surface edited, no audit verdict asserted; 26 exact sympy checks PASS=26 FAIL=0.
 Escape conditions (negative claims): If the same group acts on both sides: S_3 both sides gives a degenerate spectrum (excluded by observation); C_3 both sides leaves the doublet weights p_1 != p_2 free, i.e. TWO free parameters not one.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primitives, 5 landed theorems, 7 conventions or unexamined; the one-bit shape of the blocker is manufactured by conventions C1/C2; FOUR corrections to landed docs cited by file:line. Work order against landed content; counting-bit set member.
 
@@ -32,7 +34,8 @@ Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primit
 - Source commit: `bb8370de6c92c32933b36549f15d5295b0b3076a`
 - git blob: `64b3a8a30218a48370d28d1fc33f38ac61d65650`
 - sha256: `5670506265aa220cade717ffe645adf141fc13a4ecb79e2e39037581b2e9b41e`
-- Lines: 297; runners named: scratch sympy runners (not repo files), 26 checks
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10044_ex1_assumptions_ledger.md](../../archive_unlanded/historic_intake_originals/packsci01/10044_ex1_assumptions_ledger.md)
+- Lines: 297; runners named: historic runner (unpinned, not in this packet): `scratch sympy runners (not repo files), 26 checks`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primit
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10048 (`.claude/science/exercises/koide-counting-bit-20260724/ex5_reframing.md`, stratum packsci01) — Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primitives, 5 landed theorems, 7 conventions or unexamined; the one-bit shape of the blocker is manufactured by conventions C1/C2; FOUR corrections to landed docs cited by file:line. Work order against landed content; counting-bit set member.
+- Attaches across strata to [idx 10048](HISTORIC_EX5_REFRAMING_INTAKE_NOTE_2026-08-05.md) (`.claude/science/exercises/koide-counting-bit-20260724/ex5_reframing.md`, stratum packsci01) — Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primitives, 5 landed theorems, 7 conventions or unexamined; the one-bit shape of the blocker is manufactured by conventions C1/C2; FOUR corrections to landed docs cited by file:line. Work order against landed content; counting-bit set member.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Four separate corrections to landed docs, including that the single wall the who
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_audit_finding
 intake_directive: owner_2026-08-05
 ```
 

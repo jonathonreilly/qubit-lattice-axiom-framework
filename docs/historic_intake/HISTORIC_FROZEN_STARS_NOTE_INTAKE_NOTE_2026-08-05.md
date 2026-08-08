@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The lattice framework predicts a fundamentally different colla
 Scope: 1D lattice model missing 3D geometry (angular momentum, centrifugal barrier, radiation pressure); N_crit scaling rests on only two collapse data points; temperature estimates depend on identifying lattice units with Planck units.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 FROZEN STARS founding claim (M_Ch ~ 1.9 M_sun, no-horizon endpoint) — cross-flagged at intake with the echo post-hoc zeroing (416), the search (657) and the 3080/3091 attacks.
 
@@ -32,7 +34,8 @@ FROZEN STARS founding claim (M_Ch ~ 1.9 M_sun, no-horizon endpoint) — cross-fl
 - Source commit: `20c77d40dc98abf40437c3be9225291ef9ae0ba9`
 - git blob: `96329080aa3280bc5efe8816bfb6d90dd4b74222`
 - sha256: `079bb05a675decf114ee3de844f90ad529414570d5ddb22963e06bbcd5f3a8e7`
-- Lines: 153; runners named: scripts/frontier_frozen_stars.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/515_FROZEN_STARS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/515_FROZEN_STARS_NOTE.md)
+- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-listed caveats include a poorly constrained N_crit scaling (2 points) and a
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

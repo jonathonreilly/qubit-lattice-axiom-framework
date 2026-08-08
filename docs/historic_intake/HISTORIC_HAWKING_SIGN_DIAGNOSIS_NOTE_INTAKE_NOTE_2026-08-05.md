@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Hopping reduction compresses the bandwidth so the fitted T tra
 Scope: Applies to the 3D spherical quench with tanh profiles at fixed sigma = 2.0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The sign diagnosis: the lane's headline T-vs-kappa observable measured bandwidth compression, not radiation — retracts the 3D quench's physical reading.
 
@@ -32,7 +34,8 @@ The sign diagnosis: the lane's headline T-vs-kappa observable measured bandwidth
 - Source commit: `623e6bd163ba604cf6200fed9418bac12a192705`
 - git blob: `60a41bf7e2268e2ba1d0bb8913ca10c3f075f578`
 - sha256: `5969dc3ff44dcfdfafdc01719b4677b8835efd6f9ab1c586bc3ee43545ed34ca`
-- Lines: 109; runners named: scripts/frontier_hawking_sign_diagnosis.py, scripts/frontier_hawking_3d_quench.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/674_HAWKING_SIGN_DIAGNOSIS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/674_HAWKING_SIGN_DIAGNOSIS_NOTE.md)
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hawking_sign_diagnosis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hawking_3d_quench(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Establishes that the lane's own headline observable was measuring the wrong quan
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

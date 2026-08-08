@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; K1 is not ratified and r = 1
 Scope: The K1 counting-measure gate of the charged-lepton readout (the gate that would give r = 1/2 and Q = 2/3).
 Escape conditions (negative claims): Supply an orbit-or-holomorphic count selector and a dimension/Born default exclusion, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 K1 counting-measure terminal: the orbit-or-holomorphic count selector missing â€” r = 1/2 not derived on any current surface.
 
@@ -32,7 +34,8 @@ K1 counting-measure terminal: the orbit-or-holomorphic count selector missing â€
 - Source commit: `d6615067c4d10eb96fbe298ed1b24aa9fb9e76dd`
 - git blob: `e9a7d0f04fd762f9877a5035bcf47772b91c6f64`
 - sha256: `3ae5d1ac4230e53476f96e09393545241ed074c8aa18b17d3876969605e81fd8`
-- Lines: 284; runners named: scripts/frontier_zero_import_hydrogen_koide_k1_counting_measure_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2529_ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2529_ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 284; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_koide_k1_counting_measure_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -66,6 +69,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

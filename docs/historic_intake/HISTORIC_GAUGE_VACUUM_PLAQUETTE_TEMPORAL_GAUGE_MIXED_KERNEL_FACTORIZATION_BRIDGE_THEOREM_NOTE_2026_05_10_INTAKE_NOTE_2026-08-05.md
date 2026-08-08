@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Supplies exactly the bridge step the audit verdict recorded as
 Scope: Uses only A1/A2, the retained transfer-kernel authority and standard Peter-Weyl; consumes no closed form for kappa_(p,q)(6) or D_6, no residual environment operator, no P(6), no PDG comparators.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Discharges an audit-named missing bridge theorem (temporal-gauge factorization + reflection symmetry) without promoting downstream effects.
 
@@ -32,7 +34,8 @@ Discharges an audit-named missing bridge theorem (temporal-gauge factorization +
 - Source commit: `2d63c067d68580a63f3375597c89d76e7d8f9ee4`
 - git blob: `557080de02913702e0d95adbe2cc99663dbd86f3`
 - sha256: `bff68fcd81b405f977cd0946481ed7acf1b3365f6d24430acf84e0b4217c930e`
-- Lines: 409; runners named: scripts/frontier_gauge_vacuum_plaquette_temporal_gauge_mixed_kernel_factorization_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/596_GAUGE_VACUUM_PLAQUETTE_TEMPORAL_GAUGE_MIXED_KERNEL_FACTORIZATION_BRIDGE_THEOREM_NOTE_2026-05-10.md](../../archive_unlanded/historic_intake_originals/branch02/596_GAUGE_VACUUM_PLAQUETTE_TEMPORAL_GAUGE_MIXED_KERNEL_FACTORIZATION_BRIDGE_THEOREM_NOTE_2026-05-10.md)
+- Lines: 409; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_temporal_gauge_mixed_kernel_factorization_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ One supporting element is described as a witness for the bridge claim rather tha
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

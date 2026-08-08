@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-14; single axiom Cl(3) on Z^3 with g_bare = 1 canonical normalization
 
@@ -22,7 +22,9 @@ Original verdict: The y_t gate is BOUNDED with three honest readings: zero-impor
 Scope: BOUNDED, 12/12 PASS, zero external inputs; bounded uncertainties itemized as <P> lattice artifacts ~0.1%, 2-loop QCD running ~1%, 1-loop y_t RGE over 17 decades ~5% (the m_t bottleneck), threshold matching ~1%, scheme matching ~3%.
 Escape conditions (negative claims): The -4.2% m_t residual is attributed to the 1-loop y_t RGE systematic over 17 decades (~5%), with the named fix being a 2-loop y_t RGE; the zero-import chain explicitly trades 4.2% accuracy for zero imports where the 1-import chain trades one observed input for 0.1% accuracy.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The zero-import closure claim (v +0.03%, alpha_s +0.3%, m_t -4.2%) WITH the red flag that three m_t readings are presented as all honest — the mass-lane era flagship, pulled for audit with its own contradictions attached.
 
@@ -32,7 +34,8 @@ The zero-import closure claim (v +0.03%, alpha_s +0.3%, m_t -4.2%) WITH the red 
 - Source commit: `8912465c3f919075b667d5490b74f23f228f6a46`
 - git blob: `91a586b6e624775262143c5635fb1a3f5f38a75e`
 - sha256: `e08670791b88921a901b4f5da192ff625da7d481ca32eb74d817c0326e235fca`
-- Lines: 107; runners named: scripts/frontier_zero_import_chain.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3620_YT_ZERO_IMPORT_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3620_YT_ZERO_IMPORT_CLOSURE_NOTE.md)
+- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_chain(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ The zero-import closure claim (v +0.03%, alpha_s +0.3%, m_t -4.2%) WITH the red 
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from branch01 idx 40 (`docs/ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md`, decision PULL) — Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severity) + g_* inconsistency (106.75 vs 110.75) — direct adverse evidence against the pulled zero-import closure claim; audit lane needs both sides.
+- Cross-stratum reference from branch01 [idx 40](HISTORIC_ADVERSARIAL_CHAIN_AUDIT_2026_04_13_INTAKE_NOTE_2026-08-05.md) (`docs/ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md`, decision PULL) — Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severity) + g_* inconsistency (106.75 vs 110.75) — direct adverse evidence against the pulled zero-import closure claim; audit lane needs both sides.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Presents three different m_t readings (165.4, 173, 173.3 GeV) as all honest and 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

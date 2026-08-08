@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A sharp obstruction: the free Hamiltonian has too much symmetr
 Scope: Free staggered Cl(3) Hamiltonian on Z^3 with PBC, verified at L = 4 and 6.
 Escape conditions (negative claims): Four routes remain open and are named: EWSB breaking of the taste symmetry (the CW selector S_3 -> Z_2), Wilson-like terms explicitly breaking taste symmetry, anomaly-based dynamical distinction, and interaction effects breaking the free-field taste symmetry.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Little-groups REFUTATION: all 48 Oh elements are realized, so the eta-phase D2h claim was a gauge-restriction artifact — retracts a lane claim with four routes left open.
 
@@ -32,7 +34,8 @@ Little-groups REFUTATION: all 48 Oh elements are realized, so the eta-phase D2h 
 - Source commit: `25367d313180d1439d79aab50ea762aa4bbb6e3b`
 - git blob: `40993feeb8bda0509420c473081c8b045517b67c`
 - sha256: `53328f2758f04f5c6d87175b620375e42605042f6613fc68414b511f5b077444`
-- Lines: 94; runners named: scripts/frontier_generation_little_groups.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/621_GENERATION_LITTLE_GROUPS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/621_GENERATION_LITTLE_GROUPS_NOTE.md)
+- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_little_groups(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly retracts a prior lane claim as an artifact of restricting to diagonal
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

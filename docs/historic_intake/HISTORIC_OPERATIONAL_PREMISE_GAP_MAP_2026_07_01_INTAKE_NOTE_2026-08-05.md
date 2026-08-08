@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_gap_map_axiom_update_decision_aid
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The post-axiom stack does not point to another minimal ontolog
 Scope: Bounded gap localization, not a terminal no-go; sets no audit verdict, registers no primitive, changes no axioms. TOTAL PASS=90 FAIL=0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The typed-residual map: the post-axiom blockers are named operational selectors, not one 'dynamics' word — the stack's sharpest decomposition.
 
@@ -32,7 +34,8 @@ The typed-residual map: the post-axiom blockers are named operational selectors,
 - Source commit: `9f9b9677810d79e04a94d639e98f277ef22ea4b5`
 - git blob: `7750600c763759748e87e3b7e8a9c6ef427d6809`
 - sha256: `a1cf83efba439dee388c383e6000ef7c6b54c643f86e87d73006bcd1c946f3de`
-- Lines: 245; runners named: scripts/operational_premise_gap_map_2026_07_01.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1239_OPERATIONAL_PREMISE_GAP_MAP_2026-07-01.md](../../archive_unlanded/historic_intake_originals/branch04/1239_OPERATIONAL_PREMISE_GAP_MAP_2026-07-01.md)
+- Lines: 245; runners named: historic runner (unpinned, not in this packet): `scripts/operational_premise_gap_map_2026_07_01(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_gap_map_axiom_update_decision_aid
 intake_directive: owner_2026-08-05
 ```
 

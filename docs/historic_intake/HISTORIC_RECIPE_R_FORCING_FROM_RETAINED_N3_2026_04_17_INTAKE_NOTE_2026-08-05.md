@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: RETAINED - Recipe-R is a derived family-scope rule, no longer 
 Scope: Family-scope extension of the retained n=3 native-gauge identification under framework-native graph/eta-phase/taste rules on Z^n.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the 2026-04-17 native-gauge/Cl(3) chain: a Clifford grade-preservation lemma proves Recipe-R is forced (a derived family-scope rule, not an input axiom), closing the last reviewer blocker ('chosen, not forced'). Flag carried: the centre term Z(Cl(n)) is dropped from the forced set - audit should check that step. Chain members attached.
 
@@ -32,7 +34,8 @@ TERMINAL of the 2026-04-17 native-gauge/Cl(3) chain: a Clifford grade-preservati
 - Source commit: `3fdaae554e24396d3681e39c577533cf51a798f3`
 - git blob: `38b732914c3d832fa7df5b6f98fb0c6e586b2a9c`
 - sha256: `94a12be88c6f7becc4f2793ce1db89bd3c854f46237abb8f482fb10709a79c3f`
-- Lines: 242; runners named: scripts/frontier_recipe_r_forcing_from_retained_n3.py, scripts/frontier_non_abelian_gauge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10025_recipe-r-forcing-from-retained-n3-2026-04-17.md](../../archive_unlanded/historic_intake_originals/packsci01/10025_recipe-r-forcing-from-retained-n3-2026-04-17.md)
+- Lines: 242; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_recipe_r_forcing_from_retained_n3(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ The centre term Z(Cl(n)) is dropped from the forced answer by an extra nontrivia
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

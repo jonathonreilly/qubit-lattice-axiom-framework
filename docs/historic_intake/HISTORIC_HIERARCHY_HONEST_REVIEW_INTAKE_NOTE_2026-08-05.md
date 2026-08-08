@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: v is NOT derived — the framework gets the right order of mag
 Scope: Top-to-bottom review of the hierarchy derivation chain at M_Pl; corrects three specific inputs and recomputes v under each.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Erratum-grade: v = 226 GeV is NOT derived — three errors identified including a smuggled observed input; the honest kill of the hierarchy lane's numeric headline.
 
@@ -32,7 +34,8 @@ Erratum-grade: v = 226 GeV is NOT derived — three errors identified including 
 - Source commit: `5cccd784f8f9f31507dbcd617fd7191e2c9a7703`
 - git blob: `b1fef4b6e7182cfe09666687d3cceaca525ddf78`
 - sha256: `92e04a29cfe4c17c77e88f89799ebaa4a7e5c79121245f7a7372cc697ecf755a`
-- Lines: 246; runners named: scripts/frontier_sigma1_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/696_HIERARCHY_HONEST_REVIEW.md](../../archive_unlanded/historic_intake_originals/branch03/696_HIERARCHY_HONEST_REVIEW.md)
+- Lines: 246; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Erratum-grade: explicitly identifies a smuggled observed input (y_t = 0.9369) an
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The record restricts the result to necessity from the quoted a
 Scope: Necessity from the quoted verbal axiom; every finite N Hilbert model for the locality row.
 Escape conditions (negative claims): Reopen conditions per row: a stronger information geometry, a separate derivation of linear superposition, a finite-range/bounded-degree selector, a justified physical carrier basis, or a derivation of the chosen sparse structure.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of the old model-demonstration route for unitarity: six obstructions (a two-state stochastic contraction preserves total amount, so scalar conservation does not give unitarity; a norm-dependent reversible map ...) restrict the result to necessity from the quoted axiom; a methodological defect in the prior source is recorded, with per-row reopen conditions. Companions attached.
 
@@ -32,6 +34,7 @@ Correction of the old model-demonstration route for unitarity: six obstructions 
 - Source commit: `8ecbcf20c3be3ca236cb43887cde7d504e6f48a4`
 - git blob: `91d7f832f45192d8ea901f3c5f94db7458da262a`
 - sha256: `713e443c8279daf83435955a3b395e833120fb410f9727032ae3a7c544d004b5`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11224_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci04/11224_NO_GO_LEDGER.md)
 - Lines: 14; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ records a methodological defect in a prior source-note scope (structure chosen b
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_ledger
 intake_directive: owner_2026-08-05
 ```
 

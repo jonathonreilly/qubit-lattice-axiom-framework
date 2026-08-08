@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Two exact derived boundaries stand at narrow scope; independen
 Scope: Abstract finite-algebra scope of the source note; the lattice-wide resolution is explicitly NOT TESTED and out of scope.
 Escape conditions (negative claims): The Hermitian hypothesis closes the same-sign unitary refinement; faithfulness is recoverable only by going reducible; lattice-wide behaviour is untested.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean unlanded positive: candidate-retained-grade self-contained finite-dimensional algebra theorem with zero dependencies and zero open imports; two exact derived boundaries at narrow scope. Exactly the class the intake directive exists for.
 
@@ -32,6 +34,7 @@ Clean unlanded positive: candidate-retained-grade self-contained finite-dimensio
 - Source commit: `3b57398ed46539e807504e0cc1a8b6bfac5594fa`
 - git blob: `3ef3cd5b7ebcf42eaaad474b0ff5fca02f877039`
 - sha256: `b8b5a854528b47cb4adb802f736b860f0e3b487d5cb857046ecd4f24e1c136b9`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10327_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10327_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 29; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

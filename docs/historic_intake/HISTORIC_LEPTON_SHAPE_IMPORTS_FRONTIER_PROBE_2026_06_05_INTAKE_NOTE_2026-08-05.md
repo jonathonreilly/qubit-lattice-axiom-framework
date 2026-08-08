@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: R-HALF-IMPORT-CONFIRMED and THETA-IMPORT-CONFIRMED, with two n
 Scope: Characterizes why each value is currently an import; derives neither, closes neither gate, declares no global APS no-go (only the abelian-flux route on the staggered bulk), and consumes no PDG value.
 Escape conditions (negative claims): Explicitly named live routes: for r, not forcing an absent continuous U(1)_b but the which-vacuum question of whether an emergent record/persistence dynamics einselects the 2-sector isotype partition as the physical decoherence basis; for theta, Wilson-mass and boundary routes remain open (only the abelian-flux staggered-bulk route is closed).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Both shape imports CONFIRMED on their correct channels with two new exact structural facts and live routes named — the shape lane's honest state.
 
@@ -32,7 +34,8 @@ Both shape imports CONFIRMED on their correct channels with two new exact struct
 - Source commit: `ad43660d3898cc41aaae346533f7a397fb253b6e`
 - git blob: `2b9ae8f7b6219701501ff8856597663c7ab9499e`
 - sha256: `cac1964d8288cce235b095a0f254d21ea650a904596141eeab95dad3c64af848`
-- Lines: 227; runners named: scripts/lepton_shape_imports_frontier_probe_2026_06_05.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1105_LEPTON_SHAPE_IMPORTS_FRONTIER_PROBE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch04/1105_LEPTON_SHAPE_IMPORTS_FRONTIER_PROBE_2026-06-05.md)
+- Lines: 227; runners named: historic runner (unpinned, not in this packet): `scripts/lepton_shape_imports_frontier_probe_2026_06_05(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

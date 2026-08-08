@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Exact theorem for I_3 = 0 — but the title's 'Born rule deriv
 Scope: Assumes the Born rule P_S = |A_S|^2 and linearity of amplitudes; no lattice detail enters.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact I3=0 identity from amplitude linearity WITH the era-audited title overclaim on the record ('Born rule derived' while assuming Born) — prior art for the live Born lane.
 
@@ -32,7 +34,8 @@ Exact I3=0 identity from amplitude linearity WITH the era-audited title overclai
 - Source commit: `f0f65457a234d889d21c0258e0d19faef707cb63`
 - git blob: `d99588bce01359fb2ca6914bc8d40f5fe6dffc9b`
 - sha256: `886f47537ee820611fd93cdd0527d1aad1225d7dcf6b74bd286f4aad6d710a03`
-- Lines: 127; runners named: scripts/frontier_born_rule_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/115_BORN_RULE_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/115_BORN_RULE_DERIVED_NOTE.md)
+- Lines: 127; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_born_rule_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Title claims the Born rule is derived while the proof assumes it; flagged as OVE
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

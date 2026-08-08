@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_open_gate_certificate
+Claim type: open_gate
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: open_gate; audit required before effective retained status.
 Scope: Signed-gravity APS source-action boundary.
 Escape conditions (negative claims): The gate is marked an axiomatic-extension candidate, i.e. closable only by an axiom extension.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Open-gate declaration on the source-action bridge lane, on the record: the signed-gravity APS source-action row is marked a PERMANENT open gate because the locked source-action cross term is an INSERTED PREMISE, not a derivation - separable retained APS/Wald/Gauss ingredients do not produce it. This is the cleanest statement of the source-action bridge gap the retention map identified as blocking gravity, mass and causal-time at once.
 
@@ -32,7 +34,8 @@ Open-gate declaration on the source-action bridge lane, on the record: the signe
 - Source commit: `1de39b9b70e67e96eccaf2235ef55600c6ad2321`
 - git blob: `e6bbc81389eae5bd3a7680fa836ca5fc9108530f`
 - sha256: `f815a6661f2931033877ca0072c2c36e4250158fe5ce52d241440d7143a26ff6`
-- Lines: 18; runners named: scripts/signed_gravity_aps_source_action_boundary_repair.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11218_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11218_CLAIM_STATUS_CERTIFICATE.md)
+- Lines: 18; runners named: historic runner (unpinned, not in this packet): `scripts/signed_gravity_aps_source_action_boundary_repair(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_open_gate_certificate
 intake_directive: owner_2026-08-05
 ```
 

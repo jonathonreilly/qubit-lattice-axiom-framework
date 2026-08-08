@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: None of the flags invalidate the proposed Koide closure, but s
 Scope: Flags for reviewer attention on retained notes; explicitly not closure-blocking for the proposed Koide package.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Five named inaccuracies in retained atlas items cited by the Koide selector package — work orders against landed rows; the re-audit-notes-are-work-orders pattern.
 
@@ -32,7 +34,8 @@ Five named inaccuracies in retained atlas items cited by the Koide selector pack
 - Source commit: `8b60bea66816669d0c54ce1b62e0b005e8061cf7`
 - git blob: `7fc34b71a97586fb749e2f42d792287a60019346`
 - sha256: `fd8ad4a634a43a04df6091a4f0acb1d73d436dc41a5b8de6c9f80478978ba50e`
-- Lines: 183; runners named: scripts/frontier_higgs_dressed_propagator_v1.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/59_ATLAS_ISSUES_FLAGGED_DURING_KOIDE_REVIEW_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch01/59_ATLAS_ISSUES_FLAGGED_DURING_KOIDE_REVIEW_2026-04-21.md)
+- Lines: 183; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_higgs_dressed_propagator_v1(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Identifies a retained note whose 'coordinate-closed / no free internal parameter
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

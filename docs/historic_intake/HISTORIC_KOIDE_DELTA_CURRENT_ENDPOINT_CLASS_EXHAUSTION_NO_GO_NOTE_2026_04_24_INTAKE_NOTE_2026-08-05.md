@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The packet proves narrowing, not the bridge — the open probl
 Scope: Bounded theorem over the audited endpoint/APS bridge classes only, explicitly NOT a claim that no future boundary theory can close the Brannen phase.
 Escape conditions (negative claims): Falsifiers named: a retained open determinant-line trivialization mapping closed APS eta to the selected line, a boundary/variational theorem selecting the endpoint before APS matching, or a physical functor from spin-c/lens eta data to the selected-line open Berry phase.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the 56-note delta endpoint sweep: seventeen audited route classes exhausted — the open problem is not the number 2/9 but the physical endpoint identification; falsifiers named. Sweep members attached.
 
@@ -32,7 +34,8 @@ TERMINAL of the 56-note delta endpoint sweep: seventeen audited route classes ex
 - Source commit: `7b2531e0084b600dbf3d410d117c568a230c5f88`
 - git blob: `b54949d08323c38dc342d2b10f15dcba0e35254f`
 - sha256: `adef0fac8b1c6ded6d9b924addf62964d06e5e579248bf787496f6e53570eeac`
-- Lines: 111; runners named: scripts/frontier_koide_delta_current_endpoint_class_exhaustion_no_go.py, scripts/frontier_koide_hostile_review_guard.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/785_KOIDE_DELTA_CURRENT_ENDPOINT_CLASS_EXHAUSTION_NO_GO_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch03/785_KOIDE_DELTA_CURRENT_ENDPOINT_CLASS_EXHAUSTION_NO_GO_NOTE_2026-04-24.md)
+- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_delta_current_endpoint_class_exhaustion_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_hostile_review_guard(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -105,6 +108,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

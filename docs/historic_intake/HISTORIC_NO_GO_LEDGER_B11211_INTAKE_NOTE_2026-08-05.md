@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Two prior conclusions are narrowed with explicit degeneracy/in
 Scope: The two repaired rows only.
 Escape conditions (negative claims): Choosing a compatible Hermitian representative restores the daggered-CAR conclusion.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP conclusion CANNOT be stated on the full algebraic endpoint surface - at sin^2(theta_13) = 2/3, c12 = 0 and the phase is degenerate - plus a second narrowing with explicit degeneracy/invariance counterexamples; the compatible-Hermitian-representative escape is named. Same endpoint family as the CP-forcing falsification pulled from packsci03.
 
@@ -32,6 +34,7 @@ Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP
 - Source commit: `29ed3dac6e20cb2c932de7923bb102367d5c2865`
 - git blob: `0bcf02ee7add695b2abb8d73f1443460ba11a924`
 - sha256: `45d2bd619dee6965df09d9e7709dbd2b96a5f9f9423fd17fe4d7eefc51660f2e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11211_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci04/11211_NO_GO_LEDGER.md)
 - Lines: 15; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10778 (`.claude/science/physics-loops/pmns-tm2-nonsingular-repair-20260529/NO_GO_LEDGER.md`, stratum packsci03) — Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP conclusion CANNOT be stated on the full algebraic endpoint surface - at sin^2(theta_13) = 2/3, c12 = 0 and the phase is degenerate - plus a second narrowing with explicit degeneracy/invariance counterexamples; the compatible-Hermitian-representative escape is named. Same endpoint family as the CP-forcing falsification pulled from packsci03.
+- Attaches across strata to [idx 10778](HISTORIC_NO_GO_LEDGER_B10778_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/pmns-tm2-nonsingular-repair-20260529/NO_GO_LEDGER.md`, stratum packsci03) — Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP conclusion CANNOT be stated on the full algebraic endpoint surface - at sin^2(theta_13) = 2/3, c12 = 0 and the phase is degenerate - plus a second narrowing with explicit degeneracy/invariance counterexamples; the compatible-Hermitian-representative escape is named. Same endpoint family as the CP-forcing falsification pulled from packsci03.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ substantive correction of previously landed content: a maximal-CP conclusion is 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_ledger
 intake_directive: owner_2026-08-05
 ```
 

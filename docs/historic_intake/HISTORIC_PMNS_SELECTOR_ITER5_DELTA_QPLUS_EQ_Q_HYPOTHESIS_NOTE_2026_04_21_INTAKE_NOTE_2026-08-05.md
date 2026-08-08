@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_strong_intermediate_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: delta q_+ = 2/3 is NOT an exact identity at the pinned point b
 Scope: Also records a correction: the iter-5 initial draft used the wrong PMNS extraction convention (descending, no row permutation) giving angles 0.454, 0.185, 0.168 before correcting to ascending plus row permutation (2,1,0).
 Escape conditions (negative claims): Either the identity is exact and the 0.0003 shift in sin^2 theta_23 is a genuine prediction, or it is 2/3 plus a framework-native correction.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest kill: delta*q_+ = 2/3 FAILS at 1e-4 (0.16% deviation at high precision) — settles the iter-5 identity as a near-miss; the sharp-tolerance record.
 
@@ -32,7 +34,8 @@ The honest kill: delta*q_+ = 2/3 FAILS at 1e-4 (0.16% deviation at high precisio
 - Source commit: `3e6bd338e2ec8576efe54b92d68bf4f792dce1c0`
 - git blob: `eb7a64c109f3d9bd26559e73658b78e84b4fbf6f`
 - sha256: `d5c37c28323e01d73d8d23937b59ac909661d258cd1e6058012462e3f1d4f052`
-- Lines: 185; runners named: scripts/frontier_pmns_selector_iter5_precision_delta_qplus_product.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1588_PMNS_SELECTOR_ITER5_DELTA_QPLUS_EQ_Q_HYPOTHESIS_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1588_PMNS_SELECTOR_ITER5_DELTA_QPLUS_EQ_Q_HYPOTHESIS_NOTE_2026-04-21.md)
+- Lines: 185; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter5_precision_delta_qplus_product(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -55,6 +58,7 @@ Explicitly records the identity FAILS at 1e-4, yet the downstream iter-10 / prop
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_strong_intermediate_result
 intake_directive: owner_2026-08-05
 ```
 

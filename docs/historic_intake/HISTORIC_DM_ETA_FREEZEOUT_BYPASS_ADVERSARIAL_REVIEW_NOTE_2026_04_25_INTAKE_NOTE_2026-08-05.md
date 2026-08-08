@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_adversarial_review
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Every finding carries a recommended fix and an explicit fix-st
 Scope: Same-day internal self-review of DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md and its G1 Wilson-mass attempt runner.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Adversarial review with a CRITICAL provenance finding: the headline 16 in m_DM = 16v has two incompatible structural origins — self-diagnosed, with fix statuses; integrity record.
 
@@ -32,7 +34,8 @@ Adversarial review with a CRITICAL provenance finding: the headline 16 in m_DM =
 - Source commit: `727d6c4925a45a5ca7a0d7b3582f689099ee7465`
 - git blob: `1f15568696d4ebf373aa0650d042149de283841e`
 - sha256: `49a4c4e4c2e86c9bb3ea57d390d356e729eabcf2d566553f667ba74f889e79f4`
-- Lines: 243; runners named: scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem.py, scripts/frontier_dm_eta_freezeout_bypass_g1_wilson_mass_attempt.py, scripts/frontier_dm_eta_freezeout_bypass_null_distribution_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/352_DM_ETA_FREEZEOUT_BYPASS_ADVERSARIAL_REVIEW_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch02/352_DM_ETA_FREEZEOUT_BYPASS_ADVERSARIAL_REVIEW_NOTE_2026-04-25.md)
+- Lines: 243; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_g1_wilson_mass_attempt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_null_distribution_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-diagnosed CRITICAL provenance ambiguity in the headline number 16 plus a co
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_adversarial_review
 intake_directive: owner_2026-08-05
 ```
 

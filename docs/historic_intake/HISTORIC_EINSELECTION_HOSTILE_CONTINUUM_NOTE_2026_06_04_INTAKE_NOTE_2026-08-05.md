@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Both key findings go against the claim - DISCRETE-or-CONTINUUM
 Scope: Hostile skeptic-frame adjudication of the einselection pointer-basis-stability claim only; adds no derivation.
 Escape conditions (negative claims): A C_3-invariant gauge-respecting environment does genuinely discretize the PARTITION (3-mode vs 2-sector, modulo K-reality); what it cannot discretize is the VALUE r. Escaping requires a separate principle privileging the equal-power/block-counting measure over the Born/dimension measure (which gives r=1), plus a real T-odd structure selecting delta = 0.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Hostile-continuum no-go: an explicit monitored family einselects EVERY r in (0,1) — the einselectable set is a continuum; labels a sibling tautological; the partition-vs-value distinction preserved.
 
@@ -32,7 +34,8 @@ Hostile-continuum no-go: an explicit monitored family einselects EVERY r in (0,1
 - Source commit: `04495e40cd10c35cb5c1825a10a0b5f97a6f666c`
 - git blob: `2fc20c1209ee6e2706f1283900925d24e0d3f06c`
 - sha256: `fb7c75cb524495108fcbde147e5e06d5802f13430263822a20b278ef4642ce27`
-- Lines: 111; runners named: scripts/einselection_hostile_continuum_2026_06_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/419_EINSELECTION_HOSTILE_CONTINUUM_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch02/419_EINSELECTION_HOSTILE_CONTINUUM_NOTE_2026-06-04.md)
+- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/einselection_hostile_continuum_2026_06_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly labels a same-day sibling claim vacuous/tautological; also flags that
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

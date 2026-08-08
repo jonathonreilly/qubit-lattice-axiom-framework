@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The wall's full story is ceiling -> discriminator -> mechanism
 Scope: Cycle-752 battery under its landed rules; the counterfactual register-clearing surgery is a checker diagnostic, not a physics claim.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The W2 wall's complete mechanism: SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT, all rule-derived — ceiling -> discriminator -> mechanism.
 
@@ -32,7 +34,8 @@ The W2 wall's complete mechanism: SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT, all r
 - Source commit: `66cb8b7db89c40c11a932e41708a4df929be3c2f`
 - git blob: `f6dc5e25e491f164e7a49f7bf4eedc2a96984bcd`
 - sha256: `675adf944289016a1e64348d264a15a25a4ad0a63113409b53b914060a481df3`
-- Lines: 87; runners named: scripts/frontier_cycle811_w2_mechanism_2026_07_28.py, scripts/frontier_cycle811_mechanism_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2108_W2_MECHANISM_CYCLE811_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2108_W2_MECHANISM_CYCLE811_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 87; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle811_w2_mechanism_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle811_mechanism_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

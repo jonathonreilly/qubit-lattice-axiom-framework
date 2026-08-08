@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Resolves an internal documentation inconsistency across DM_SIG
 Scope: Relies on the cubical lattice being a PL 3-manifold plus Moise 1952 to apply Weyl's law, and on the taste-physicality theorem forbidding a -> 0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Limit-language correction across the lane: the claimed continuum dependencies are thermodynamic limits at fixed a — repairs a documentation inconsistency with real content.
 
@@ -32,7 +34,8 @@ Limit-language correction across the lane: the claimed continuum dependencies ar
 - Source commit: `877af207a69ad71993b44b19ca4c4c24a5aac8e5`
 - git blob: `dfc74f163c706e1a0b8268a49a79169f3560407b`
 - sha256: `0cff0f7aa89b453633f9c281a14a85c4dc701ee57ea23c2fc35cbe459dffba7b`
-- Lines: 250; runners named: scripts/frontier_dm_thermodynamic_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/408_DM_THERMODYNAMIC_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/408_DM_THERMODYNAMIC_CLOSURE_NOTE.md)
+- Lines: 250; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_thermodynamic_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

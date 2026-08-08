@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_certificate_candidate_retained_grade
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: candidate-retained-grade with no-go discipline status PASS sub
 Scope: The displayed finite-dimensional action and formulas only; no per-site, per-mode, continuum, lattice-wide, or general Einstein/Regge impossibility claim; load-bearing repo dependencies none; observations/fits/units/literature none.
 Escape conditions (negative claims): N6 names two partial-closure paths: admit the semigroup as an independent non-variational law (an import, not a derivation), or derive a full tensor-field action with generator I_4 tensor Lambda_R (illustrated by the completion control).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The only candidate-retained-grade certificate among the 96 in this stratum: an exact current-form obstruction - the displayed action I_TB does not generate the displayed Xi_TB semigroup - with a full N1 table of seven routes and N6 naming two partial-closure paths. Clean exact negative with demonstrated discipline; should be on the ledger.
 
@@ -32,6 +34,7 @@ The only candidate-retained-grade certificate among the 96 in this stratum: an e
 - Source commit: `7b409f5afb321b78a36de9a07e8bff41a91f08b1`
 - git blob: `90c9cdbf6672938a5c441564dea958176249342c`
 - sha256: `5251c14b6812cafc725b4b35486efb5154b0f28f4035d122afbe9a9134a707a6`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11200_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11200_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 109; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ only 1 of 96 certificates in this stratum claims candidate-retained-grade; N2 ex
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_certificate_candidate_retained_grade
 intake_directive: owner_2026-08-05
 ```
 

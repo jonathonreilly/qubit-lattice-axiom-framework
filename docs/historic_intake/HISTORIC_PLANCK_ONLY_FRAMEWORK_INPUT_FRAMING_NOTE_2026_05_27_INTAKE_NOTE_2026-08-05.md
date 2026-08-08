@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_synthesis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Framing only — explicitly not a derivation of 1.22e19 GeV, w
 Scope: Publication-surface framing after the 2026-05-25/27 hierarchy attack; asserts retained-grade on no single row and adds no new external input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Front-door framing terminal for the calibration story: A_min = {A1 per-site qubit, A2 Z^3 lattice} carries no numerical content and M_Pl is the single dimensionful translation, 1/a ~ M_Pl. Explicitly NOT a derivation of 1.22e19 GeV. FLAG carried: the 0.0255% observed vs 0.083% predicted residual is 'confirmed' only within-decade. The honest-demotion companion (lattice-unit theorem a*v = (7/8)^(1/4) * alpha_LM^16 separated from the absolute 15-digit v quote, absolute GeV row withdrawn) attached.
 
@@ -32,6 +34,7 @@ Front-door framing terminal for the calibration story: A_min = {A1 per-site qubi
 - Source commit: `d62c05a13b6208cee5e4ea7cae302a2924154f75`
 - git blob: `ff62f01febbf1ab4b6110645e0f5660896643ebf`
 - sha256: `76cc5ff1c84cebd098d233f9c16e83cc691698edf0db483e0fac14a1237c0f83`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2754_PLANCK_ONLY_FRAMEWORK_INPUT_FRAMING_NOTE_2026-05-27.md](../../archive_unlanded/historic_intake_originals/branch09/2754_PLANCK_ONLY_FRAMEWORK_INPUT_FRAMING_NOTE_2026-05-27.md)
 - Lines: 252; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ The 0.0255% observed vs 0.083% predicted residual is confirmed only 'at order-of
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_synthesis
 intake_directive: owner_2026-08-05
 ```
 

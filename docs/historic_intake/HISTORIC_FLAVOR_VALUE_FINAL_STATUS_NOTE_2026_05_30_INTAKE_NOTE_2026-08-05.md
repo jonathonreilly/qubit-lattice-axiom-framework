@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_capstone
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Q = 2/3 is derived-modulo-one-import: the count n_gen = 3 is d
 Scope: Operator, measure, dynamics, combinatorial, geometric, information-theoretic, number-theoretic and holographic framings all examined; symmetry-natural objects return Q = 1 and democratic ones Q = 1/3.
 Escape conditions (negative claims): Two live paths: an audited reason the emergent-time/record dynamics coarse-grains the C_3 isotypes into 2 sectors rather than 3 modes (which would derive the block-count MaxEnt), and a first-principles block-count-vs-Plancherel selection on R[Z_3] from the Cl(3) qubit structure (not found, not foreclosed).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 FLAVOR VALUE FINAL STATUS: derived-modulo-one-import, numerology called out (2/N cherry-picked over the framework's own (N-1)/N^2), do-not-cite anchor named — the campaign terminal.
 
@@ -32,7 +34,8 @@ FLAVOR VALUE FINAL STATUS: derived-modulo-one-import, numerology called out (2/N
 - Source commit: `9d5c9009fea9be0f4a739ee021cca35645dfee58`
 - git blob: `e9466331b6e0c61eda9088832bc28271912f0b03`
 - sha256: `d0866bd8e95cddd32098b8be726a5a5dafe29fa9d9480b69205e323cf9b61c32`
-- Lines: 75; runners named: scripts/flavor_value_final_status_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/497_FLAVOR_VALUE_FINAL_STATUS_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/497_FLAVOR_VALUE_FINAL_STATUS_NOTE_2026-05-30.md)
+- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_value_final_status_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly names a do-not-cite audited_failed anchor and calls out its own campa
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_capstone
 intake_directive: owner_2026-08-05
 ```
 

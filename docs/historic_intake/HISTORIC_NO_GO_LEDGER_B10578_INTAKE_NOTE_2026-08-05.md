@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Two previously stated bounds corrected by explicit counterexam
 Scope: One derived algebraic boundary inside a positive theorem; no broad no-go introduced.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Retraction by explicit counterexample: two previously asserted numeric bounds on the signed spectrum are REFUTED (theta = pi/12 has a zero eigenvalue yet still gives e_2 > 0 et al.); the overbroad statements are retired.
 
@@ -32,6 +34,7 @@ Retraction by explicit counterexample: two previously asserted numeric bounds on
 - Source commit: `9b54e4137059f0793c526fc566283829915b7cd4`
 - git blob: `e9c3530d9649617f0b00308a3aa3ab3c241aca52`
 - sha256: `4b019a8e1a156fb0882b1a7faded8696bfff6f28acbc07a7eab62e625553b4bb`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10578_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10578_NO_GO_LEDGER.md)
 - Lines: 13; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Two numeric bounds previously asserted are refuted by explicit spectra; the surv
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

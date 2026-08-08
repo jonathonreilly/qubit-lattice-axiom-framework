@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The point-selection law is now zero-import on the current bran
 Scope: Uses only atlas-native rows on the single-axiom surface (observable principle, active affine point-selection boundary, active half-plane theorem); no new selector axiom or variational input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The zero-import active-quadratic selector law: the point-selection law derived from W[J] curvature natively — the selector chain's positive terminal.
 
@@ -32,7 +34,8 @@ The zero-import active-quadratic selector law: the point-selection law derived f
 - Source commit: `46878979f38e28330ae04cf261e6473513e217db`
 - git blob: `55ef16a70d39fa20cfbc1dafc166f58d4296d67d`
 - sha256: `0fc3614f055bb8439b42ee5e22ed20846a20cfdd24a42b918c1ff1622767c145`
-- Lines: 224; runners named: scripts/frontier_dm_neutrino_source_surface_zero_import_active_quadratic_selector_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/385_DM_NEUTRINO_SOURCE_SURFACE_ZERO_IMPORT_ACTIVE_QUADRATIC_SELECTOR_THEOREM_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/385_DM_NEUTRINO_SOURCE_SURFACE_ZERO_IMPORT_ACTIVE_QUADRATIC_SELECTOR_THEOREM_NOTE_2026-04-16.md)
+- Lines: 224; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_zero_import_active_quadratic_selector_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

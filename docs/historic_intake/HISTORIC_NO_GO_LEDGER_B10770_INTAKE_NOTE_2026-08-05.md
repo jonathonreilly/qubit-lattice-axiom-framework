@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The previously used real-symmetric core is demoted from forced
 Scope: The PMNS axis-alignment normal form.
 Escape conditions (negative claims): CP, a real structure, or gauge fixing would each restore the old four-parameter form — as a supplied premise.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of a previously used normal form: the old real-symmetric PMNS core is NOT a consequence of residual P_23 invariance alone - recovering the old four-parameter form requires assumptions the axioms do not supply; the form is demoted. Companions attached.
 
@@ -32,6 +34,7 @@ Correction of a previously used normal form: the old real-symmetric PMNS core is
 - Source commit: `41e756d0d209ba1ac2b2fd9099108732b7381e97`
 - git blob: `c430ecc560ac6900e3275243ad08bbbbdabe34c4`
 - sha256: `4c8f791ae0e9e5629bff0b9b2b42b3dcb8f31023e919fcb024d18d4b8c76940a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10770_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10770_NO_GO_LEDGER.md)
 - Lines: 9; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ a real-symmetric normal form had been treated as a consequence of residual invar
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

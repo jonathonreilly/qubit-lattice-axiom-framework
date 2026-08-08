@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_full_theorem_closure
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-16; single framework axiom Cl(3) on Z^3
 
@@ -22,7 +22,9 @@ Original verdict: The theorem-native leptogenesis result undershoots observation
 Scope: Transport side only; 'axiom' means only Cl(3) on Z^3.
 Escape conditions (negative claims): The remaining issue is explicitly stated as numerical disagreement rather than missing derivation — the old exact boundary on H_rad(T) is gone.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The leptogenesis closure claim: transport-complete from Cl(3) on Z^3 with a factor-5.297 undershoot as the honest end state — title overclaims, bottom line doesn't; the audit lane should rule with the 3599/3600 contradiction attached.
 
@@ -32,7 +34,8 @@ The leptogenesis closure claim: transport-complete from Cl(3) on Z^3 with a fact
 - Source commit: `1523ca352b9d79f050f7ad1912e41f73e5736450`
 - git blob: `bafc7ac6cbe2c640bbb08e5f08156967e0341e4b`
 - sha256: `72620a7d0c2e572bf567aaeb0cf4a8cdbb43c7cec4e4923f2804bfb1a82c86df`
-- Lines: 50; runners named: scripts/frontier_dm_leptogenesis_full_axiom_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3602_DM_LEPTOGENESIS_FULL_THEOREM_CLOSURE_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/recovery/3602_DM_LEPTOGENESIS_FULL_THEOREM_CLOSURE_NOTE_2026-04-16.md)
+- Lines: 50; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_full_axiom_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ A note titled FULL THEOREM CLOSURE whose own bottom line is a factor-5.297 under
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_full_theorem_closure
 intake_directive: owner_2026-08-05
 ```
 

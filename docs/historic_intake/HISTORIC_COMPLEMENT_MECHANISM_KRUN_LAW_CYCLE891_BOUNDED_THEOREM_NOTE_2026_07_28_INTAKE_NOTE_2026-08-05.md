@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Complements belong to banks and the law generalizes to countin
 Scope: Owner-directed campaign-5; one carrier-level holdout miss and two 2-episode residuals are reported as partial results.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Closes Cycle 889's two named opens: derived complement mechanism with SEALED holdout + exact k-run law — derived-not-fitted, misses disclosed.
 
@@ -32,7 +34,8 @@ Closes Cycle 889's two named opens: derived complement mechanism with SEALED hol
 - Source commit: `331f1d6ff2efbca6584292aa41d0438874e83250`
 - git blob: `235965affc47ce7745327ef194e7c0ae31e6a6c8`
 - sha256: `5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c`
-- Lines: 203; runners named: ../scripts/frontier_cycle891_complement_independent_check_2026_07_28.py, ../scripts/frontier_cycle891_complement_mechanism_2026_07_28.py, frontier_cycle891_complement_independent_check_2026_07_28.py, frontier_cycle891_complement_mechanism_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/253_COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/253_COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 203; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle891_complement_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle891_complement_mechanism_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle891_complement_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle891_complement_mechanism_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Process disclosures record that the worker's first mechanism hypothesis was refu
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

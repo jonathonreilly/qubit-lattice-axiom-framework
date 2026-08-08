@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Eta and spectral flow are useful certificates for an already-o
 Scope: Finite obstruction on the current axiom surface; the required active source vector is orientation-odd [+1,-1] while the separable positive stack is orientation-even [+1,+1].
 Escape conditions (negative claims): Explicitly does NOT prove signed gravity, chirality, or all APS/eta mechanisms impossible; a later product-grading, Berry/holonomy, boundary-dynamics or generation-readout construction could still supply the selector. The escape requires a structure that breaks orientation symmetry BEFORE eta or spectral flow is read; multiplying a supplied chi = sign(eta) into the source stack works but is an additional cross term.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact no-go: eta/spectral flow carry unoriented endpoint data and cannot source the orientation — certificates for an already-oriented problem; the orientation-primitive theme's cleanest form.
 
@@ -32,7 +34,8 @@ Exact no-go: eta/spectral flow carry unoriented endpoint data and cannot source 
 - Source commit: `de91b864fe77c3c448435c132901e56f477452ba`
 - git blob: `f2a4181c6df430a94e1cd62e3c73da7fe301e3bb`
 - sha256: `452cdc66c275c1fbab96d670d0dd89216e762e5c580e6e307e212e40fe34fb69`
-- Lines: 130; runners named: scripts/frontier_eta_spectral_flow_boundary_filter_no_go_2026_06_07.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/439_ETA_SPECTRAL_FLOW_BOUNDARY_FILTER_NO_GO_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch02/439_ETA_SPECTRAL_FLOW_BOUNDARY_FILTER_NO_GO_NOTE_2026-06-07.md)
+- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_eta_spectral_flow_boundary_filter_no_go_2026_06_07(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

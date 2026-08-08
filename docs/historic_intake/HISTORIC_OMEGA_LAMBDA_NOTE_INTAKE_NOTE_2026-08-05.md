@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Omega_Lambda cannot be derived from the framework alone, but t
 Scope: Omega_Lambda = 0.685 depends on matter content (Omega_m = 0.315), which requires baryon asymmetry and DM abundance from particle physics.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Omega_Lambda honest negative: seven investigations, no derivation — the guaranteed-reframing survivor stated; cosmology lane terminal.
 
@@ -32,7 +34,8 @@ Omega_Lambda honest negative: seven investigations, no derivation — the guaran
 - Source commit: `a941e3c59b6c3887df7fdff5ceec89971cb14608`
 - git blob: `7c87077890e2e7b5bb1b232590450391be5a6ba3`
 - sha256: `399cb398631ccda28a92885ed39e6fd53d9f46f28ca9a3a4aa057fac7bd43dc7`
-- Lines: 144; runners named: scripts/frontier_omega_lambda_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1232_OMEGA_LAMBDA_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1232_OMEGA_LAMBDA_NOTE.md)
+- Lines: 144; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_omega_lambda_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-labelled honest negative; the surviving explanation of the coincidence is q
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

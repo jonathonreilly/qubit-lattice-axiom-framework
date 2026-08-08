@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The framework is empirically indistinguishable from smooth wea
 Scope: Assumes a ~ l_Planck; the one qualitative prediction (gravity mediates entanglement) is shared by all quantum gravity theories.
 Escape conditions (negative claims): The negative is conditioned entirely on a ~ l_Planck; the note tabulates exactly how large a would have to be for each experiment to detect the lattice (78 nm, 0.5 m, 31 um). A negative BMV result would falsify the framework, but positively distinguishing lattice from continuum gravity needs a larger spacing than existing bounds allow.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The falsifiability boundary: all three candidate tests undetectable at a = l_Planck with the required-scale inversions tabulated — the framework's honest empirical-reach statement.
 
@@ -32,7 +34,8 @@ The falsifiability boundary: all three candidate tests undetectable at a = l_Pla
 - Source commit: `39b3b2d69122ff66ad76e7b88212f1147aee7c33`
 - git blob: `241acf67f1fb74af9044d23c8fd874ffec6165e4`
 - sha256: `b6e32bd3d4a4756f0213cbe572284dfa795a4f06969cb7378dad02754b2fed94`
-- Lines: 103; runners named: scripts/frontier_experimental_predictions.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/455_EXPERIMENTAL_PREDICTIONS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/455_EXPERIMENTAL_PREDICTIONS_NOTE.md)
+- Lines: 103; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_experimental_predictions(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

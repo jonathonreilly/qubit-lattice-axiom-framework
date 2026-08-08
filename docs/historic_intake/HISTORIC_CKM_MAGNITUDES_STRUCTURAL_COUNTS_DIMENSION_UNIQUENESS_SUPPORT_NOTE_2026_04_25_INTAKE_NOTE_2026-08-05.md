@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conditional_support_corollary
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The dimension-uniqueness reading becomes a sharp falsification
 Scope: Explicitly conditional: does not promote either load-bearing premise, both of which remain open on main.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest premise-separation: packages what becomes available ONLY IF two open premises are accepted, and documents that its companion theorem asserts as retained what this note shows is open.
 
@@ -32,7 +34,8 @@ The honest premise-separation: packages what becomes available ONLY IF two open 
 - Source commit: `0aebc41febca6d1e8f8d7a1cc441ce798875ea5c`
 - git blob: `1830296a2d709001023ff15bfc1b899c2dc5085e`
 - sha256: `6064e8b277e37415401378fbf48199180ede21412d7f3a21b500a39cb9b9b583`
-- Lines: 289; runners named: scripts/canonical_plaquette_surface.py, scripts/frontier_ckm_magnitudes_structural_counts_dimension_uniqueness.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/208_CKM_MAGNITUDES_STRUCTURAL_COUNTS_DIMENSION_UNIQUENESS_SUPPORT_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/208_CKM_MAGNITUDES_STRUCTURAL_COUNTS_DIMENSION_UNIQUENESS_SUPPORT_NOTE_2026-04-25.md)
+- Lines: 289; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_magnitudes_structural_counts_dimension_uniqueness(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Its companion theorem note asserts as retained what this note documents as resti
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conditional_support_corollary
 intake_directive: owner_2026-08-05
 ```
 

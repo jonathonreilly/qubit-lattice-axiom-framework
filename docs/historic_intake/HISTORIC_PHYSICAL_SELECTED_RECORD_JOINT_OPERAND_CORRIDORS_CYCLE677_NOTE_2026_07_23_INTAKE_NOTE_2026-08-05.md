@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Not a general RLE decoder, all-face compiler, autonomous blank
 Scope: Completion explicitly excludes a host-selected path, blank-only scout, local kernel without operand access, general decoder, all-face result or full E; corridor vacuum is NOT supplied or required.
 Escape conditions (negative claims): Five normalized routes recorded; blank-only misses are route-specific implementation evidence ONLY and not a no-go, minimum-content result, shared obstruction or axiom-pressure argument. Axiom pressure none.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL closing the Cycle-670 residual: enumerates two simple coordinate paths for each of 8,821 active route-gate microphases (518 Fredkin words); explicitly NOT a general RLE decoder or autonomous genesis; five normalized routes recorded. Member attached.
 
@@ -32,6 +34,7 @@ TERMINAL closing the Cycle-670 residual: enumerates two simple coordinate paths 
 - Source commit: `fb0ab5636e557d8de1da8e643f419867ae69197a`
 - git blob: `beaf395573d91dd9e9018e495f276b4a17d57b8d`
 - sha256: `7b21cf36482832ab247d5087d2f8d62f21069e8844b384c4c9449b4737de4b05`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3021_PHYSICAL_SELECTED_RECORD_JOINT_OPERAND_CORRIDORS_CYCLE677_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/3021_PHYSICAL_SELECTED_RECORD_JOINT_OPERAND_CORRIDORS_CYCLE677_NOTE_2026-07-23.md)
 - Lines: 70; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

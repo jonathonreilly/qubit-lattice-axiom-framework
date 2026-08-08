@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Yes on the tested graph-shift/bilocal surface — a genuinely 
 Scope: Harness-level candidate, not a dynamical theorem; the low-degree Clifford triplets remain a hard no-go.
 Escape conditions (negative claims): The next theorem would need to derive the graph-shift/bilocal surface itself, or show the same-surface potential is unavoidable.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 A genuine graph-first selector EXISTS on the graph-shift/bilocal surface — the positive answering the low-degree no-gos; next theorem named.
 
@@ -32,7 +34,8 @@ A genuine graph-first selector EXISTS on the graph-shift/bilocal surface — the
 - Source commit: `7667a318abc5ca552e459e08211a93bd3c26dc50`
 - git blob: `a3bb5a59e5d7dda9de9a08029301b6a49b523782`
 - sha256: `cca334600a9415f9c7b9a337fce08aeba1443946faaf02c7440d23d5f971f748`
-- Lines: 109; runners named: scripts/frontier_native_nonlocal_selector.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1169_NATIVE_NONLOCAL_SELECTOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1169_NATIVE_NONLOCAL_SELECTOR_NOTE.md)
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_native_nonlocal_selector(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

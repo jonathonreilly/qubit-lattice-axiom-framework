@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Open with no full retained closure; the campaign leaves open i
 Scope: Process audit, not new physics.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The process self-audit: a real fan-out campaign was performed AND process non-compliance is self-reported — both facts on the record.
 
@@ -32,7 +34,8 @@ The process self-audit: a real fan-out campaign was performed AND process non-co
 - Source commit: `8b106854d1822c088ae1809176238467298ca218`
 - git blob: `1101cffab75b48825d37c7a67007b0b65ddbee45`
 - sha256: `182975c3c07638faa57815089f5b6db6bfcda2f1a03d4cb161cf21b0454b41eb`
-- Lines: 79; runners named: scripts/frontier_yt_pr230_physics_loop_assumption_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2376_YT_PR230_PHYSICS_LOOP_ASSUMPTION_AUDIT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2376_YT_PR230_PHYSICS_LOOP_ASSUMPTION_AUDIT_NOTE_2026-05-01.md)
+- Lines: 79; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_physics_loop_assumption_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-reports process non-compliance: the loop skipped the independent review/bac
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

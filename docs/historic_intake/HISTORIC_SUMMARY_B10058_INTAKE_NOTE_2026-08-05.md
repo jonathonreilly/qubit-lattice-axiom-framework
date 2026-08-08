@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The prior 'obstruction needing new physics' framing imported a
 Scope: Five subagents, literature enabled; the framework at beta=6 with a^-1=M_Pl and g^2=2N/beta=1 derived.
 Escape conditions (negative claims): Custodial symmetry / new strong UV is the fallback only if the computation lands above bound; the primary artifact is the species-differential marginal delta-v on the native continuous-time surface at beta=6.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the 2026-06-06 Lorentz exercise: corrected status UNCOMPUTED - tree level PASSES with only the dim-6 Planck-suppressed operator (|dE^2/E^2| ~ 1e-34 at LHC); the interacting velocity-difference computation has never been done; the prior 'obstruction needing new physics' framing imported an EFT category. Two live falsification exposures (UHECR-class) recorded. Exercise family attached.
 
@@ -32,6 +34,7 @@ TERMINAL of the 2026-06-06 Lorentz exercise: corrected status UNCOMPUTED - tree 
 - Source commit: `101862f631a1ed3d654371a8be66d39ee39f3179`
 - git blob: `7bf5b2c82f6d228bcae31ac9cd676210e03d4e8a`
 - sha256: `27c9b044638cd3975d6ce724df7755dd999b93c60390b4b1d96c03ba6cd99512`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10058_SUMMARY.md](../../archive_unlanded/historic_intake_originals/packsci01/10058_SUMMARY.md)
 - Lines: 60; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -53,6 +56,7 @@ Two live falsification exposures recorded: UHECR tree prediction 0.3 orders belo
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

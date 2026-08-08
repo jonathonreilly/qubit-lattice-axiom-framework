@@ -1,9 +1,11 @@
 # Historic intake: G1 Physicist-J - Perturbative-Scale Uniqueness Tightening of the PMNS-as-f(H) Closure
 
+Explicit subject: Adversarial review found the Physicist-H closure was NOT unique: over the wide box [-5,10]^3 there are exactly three in-chamber chi^2 = 0 basins - Basin 1 (0.657, 0.934, 0.715) with sin delta_CP = -0.987, Basin 2 (28.0, 20.7, 5.0) with +0.554, and Basin X at permutation (2,0,1) ... (The bare code `G1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: Closes four adversarial issues (basin non-uniqueness, permutat
 Scope: Uniqueness is SCALE uniqueness from the axiom-native log-det expansion's convergence discipline, not variational uniqueness; the closure is additionally CONDITIONAL on theta_23 being in the upper octant, with the threshold measured to 4 digits.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Adversarial tightening: THREE chi^2 = 0 basins (not one), permutation ambiguity, citation-chain repair — the closure corrected on the record.
 
@@ -32,7 +36,8 @@ Adversarial tightening: THREE chi^2 = 0 basins (not one), permutation ambiguity,
 - Source commit: `b2899d831e1257e5761a6c4c205d0e0c02d66853`
 - git blob: `00dc092cb21073da46530124edb528a8db44de41`
 - sha256: `200d19393b3093e3795124c0960f7e8126733f5e8d0f7e5776875659c78ef661`
-- Lines: 447; runners named: scripts/frontier_g1_physicist_j_perturbative_uniqueness_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/535_G1_PHYSICIST_J_PERTURBATIVE_UNIQUENESS_TIGHTENING_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch02/535_G1_PHYSICIST_J_PERTURBATIVE_UNIQUENESS_TIGHTENING_NOTE_2026-04-17.md)
+- Lines: 447; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_j_perturbative_uniqueness_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +54,7 @@ Two CRITICAL adversarial findings against the sibling closure, including a secon
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

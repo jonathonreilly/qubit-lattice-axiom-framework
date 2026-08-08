@@ -1,9 +1,11 @@
 # Historic intake: Charged-Lepton Koide / G5 Status Note
 
+Explicit subject: Consolidated G5 status after nineteen agents: Koide Q_l = 2/3 stays algebraically equivalent to the equal-character-weight condition on the retained hw=1 triplet, four distinct attack nulls are rigorously closed, and the framework does NOT derive Koide as a sole-axiom theorem — ... (The bare code `G5` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: The sharpest honest statement: cone forcing needs a genuinely 
 Scope: Current retained Cl(3)/Z^3 surface; the observational-pin closure is a 'generous reading' with honest caveats attached.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Nineteen-agent terminal consolidation of the charged-lepton Koide cone: four attack nulls rigorous, cone forcing needs a genuinely new retained primitive — and it documents a lane advertised as a derivation that closes on less.
 
@@ -32,7 +36,8 @@ Nineteen-agent terminal consolidation of the charged-lepton Koide cone: four att
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `c7fbd536dff917f7a10603905f080ee16c7df69d`
 - sha256: `852b18890e85f9c628c67423bfd18ad2db3df8dfb592e12cbb1ab21dda694d52`
-- Lines: 620; runners named: frontier_anomaly_forces_time.py, frontier_charged_lepton_curvature_lt_extension.py, frontier_charged_lepton_hw1_observable_curvature.py, frontier_charged_lepton_z3_source_response_crosscheck.py, frontier_g5_gamma_1_second_order_return.py, frontier_generation_fermi_point.py, frontier_generation_rooting_undefined.py, frontier_hierarchy_observable_principle_from_axiom.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/141_CHARGED_LEPTON_KOIDE_G5_STATUS_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch01/141_CHARGED_LEPTON_KOIDE_G5_STATUS_NOTE_2026-04-17.md)
+- Lines: 620; runners named: historic runner (unpinned, not in this packet): `frontier_anomaly_forces_time(.py)`; historic runner (unpinned, not in this packet): `frontier_charged_lepton_curvature_lt_extension(.py)`; historic runner (unpinned, not in this packet): `frontier_charged_lepton_hw1_observable_curvature(.py)`; historic runner (unpinned, not in this packet): `frontier_charged_lepton_z3_source_response_crosscheck(.py)`; historic runner (unpinned, not in this packet): `frontier_g5_gamma_1_second_order_return(.py)`; historic runner (unpinned, not in this packet): `frontier_generation_fermi_point(.py)`; historic runner (unpinned, not in this packet): `frontier_generation_rooting_undefined(.py)`; historic runner (unpinned, not in this packet): `frontier_hierarchy_observable_principle_from_axiom(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +54,7 @@ Records that a lane advertised as a Koide derivation in fact closes only via obs
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

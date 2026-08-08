@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Flavor factorization eta = J * K_NP is established exactly; on
 Scope: Exact on the current retained taste surface plus the promoted three-generation CKM package.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact flavor factorization eta = J * K_NP: the electroweak channel is generation-blind (taste operators I_gen x O_EW) — the April baryogenesis program's foundational exact theorem.
 
@@ -32,7 +34,8 @@ Exact flavor factorization eta = J * K_NP: the electroweak channel is generation
 - Source commit: `53acdf60cb67f95f68630fba740c9d40d54bde41`
 - git blob: `edb8bde10a0f41f68e77838704886a467a026164`
 - sha256: `5115215d77a6588e19310f66f169eaf04cd398d4e89b00fcdbdcbacd5f8fcb1d`
-- Lines: 176; runners named: ./../scripts/frontier_baryogenesis_jarlskog_factorization.py, frontier_baryogenesis_jarlskog_factorization.py, scripts/frontier_baryogenesis_jarlskog_factorization.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/87_BARYOGENESIS_JARLSKOG_FACTORIZATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/87_BARYOGENESIS_JARLSKOG_FACTORIZATION_NOTE.md)
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_jarlskog_factorization(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_jarlskog_factorization(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_jarlskog_factorization(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

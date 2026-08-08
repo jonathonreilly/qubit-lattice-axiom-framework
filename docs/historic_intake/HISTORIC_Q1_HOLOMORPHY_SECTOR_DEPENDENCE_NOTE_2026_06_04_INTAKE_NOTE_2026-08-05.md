@@ -1,9 +1,11 @@
 # Historic intake: Q1 keystone (angle B) - the holomorphic reading does not overreach and is not cleanly sector-dependent
 
+Explicit subject: The signed readout gives the exact identity Q(r) = (1 + 2r)/3 so det_C is the single point r = 1/2 and det_R the single point r = 1, while observed quark moduli sit strictly between (r_up ~ 0.77, r_down ~ 0.60); J_cs exists in every sector but is measure-neutral, and all three ... (The bare code `Q1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: NOT-CLEANLY-SECTOR-DEPENDENT and NOT-OVERREACHING - Q1 is the 
 Scope: Clarifies the STRUCTURE of the keystone; derives r = 1/2 for no sector and uses PDG masses only in an explicitly non-load-bearing sidecar.
 Escape conditions (negative claims): The named live thread is a finite-beta KMS / modular-equilibrium condition on the doublet block that could pin |b| = a/sqrt2 for charged leptons; a different sector property might still carry sector-dependence.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The exact continuum result Q(r) = (1+2r)/3 with observed quark moduli strictly interior — corrects two circulated framings; the signed-readout landscape's honest form.
 
@@ -32,7 +36,8 @@ The exact continuum result Q(r) = (1+2r)/3 with observed quark moduli strictly i
 - Source commit: `a23edb59dcb10af37c27bd9f77f9f681eac6a97e`
 - git blob: `50ac207281a239cd8e9fd110070e0827af3d2e02`
 - sha256: `64bf8bdb8c343fb7aae968f96ccecb9471d13ff2a6fff7b5ec085fc5b3810ec9`
-- Lines: 93; runners named: scripts/q1_holomorphy_sector_dependence_2026_06_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1639_Q1_HOLOMORPHY_SECTOR_DEPENDENCE_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch05/1639_Q1_HOLOMORPHY_SECTOR_DEPENDENCE_NOTE_2026-06-04.md)
+- Lines: 93; runners named: historic runner (unpinned, not in this packet): `scripts/q1_holomorphy_sector_dependence_2026_06_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +54,7 @@ Refutes two previously circulated framings within the same Koide/flavor cluster.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

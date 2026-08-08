@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_read_by_proof_prior_no_go_audit_with_escape_mining
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: U9 is a no-go against ONE SOURCE, not against self-consistency
 Scope: The Poisson self-bound-source lane's prior negative results.
 Escape conditions (negative claims): Explicitly mined: use a source term that is not the normalized propagator density; fix the measurement window in absolute units instead of box units (the mechanism that retired cycle 712's wall).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 MAJOR landed-content contradiction, mined from proofs not headlines: docs/BOUND_STATE_SELECTION_NOTE's prose claims a phenomenon its own runner NEVER FLAGGED, and a parent's corr = 0.93 re-measures as -0.06; also documents docs/MATTER_SELF_FOCUSING_NOTE's 123% discrepancy and mines four prior negatives for their escape conditions (use a source term that is not the target). Work order for the audit lane. Companions attached.
 
@@ -32,6 +34,7 @@ MAJOR landed-content contradiction, mined from proofs not headlines: docs/BOUND_
 - Source commit: `03d0738e1a3e5b3c2512883e78ca58b732b99307`
 - git blob: `119b977d94ad1c66a2df373566aefb9f17563994`
 - sha256: `505c0e83ac856a1170aa121158a4395062e9b92464f4501a9256e312b37f5749`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10782_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10782_NO_GO_LEDGER.md)
 - Lines: 73; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ MAJOR: names a landed note (BOUND_STATE_SELECTION_NOTE) whose prose claims a phe
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_read_by_proof_prior_no_go_audit_with_escape_mining
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The airtight domain is the gauge/algebraic structure (SU(2), S
 Scope: Curation, not new science; states where the framework sits honestly.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The DERIVED_SCIENCE_BAR: the era's own declaration of its hostile-reviewer-proof core (gauge/algebraic structure + EWSB mechanism) explicitly disqualifying its most-cited numerics — constitution-grade honesty.
 
@@ -32,7 +34,8 @@ The DERIVED_SCIENCE_BAR: the era's own declaration of its hostile-reviewer-proof
 - Source commit: `8bb0e3274daadeb94be0226fbd20a5fc051c9c31`
 - git blob: `797f947e1cfc4714806b3413026ad3619c615acd`
 - sha256: `d01e8da3ec715028aea8f2bbeb91ea3c1d6b202f7b869d028c712e083112815b`
-- Lines: 91; runners named: frontier_KR_A1_vanishing_proof.py, frontier_graph_first_selector_derivation.py, frontier_plaquette_single_exact.py, frontier_projector_algebra.py, frontier_vertex_power.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/304_DERIVED_SCIENCE_README.md](../../archive_unlanded/historic_intake_originals/branch01/304_DERIVED_SCIENCE_README.md)
+- Lines: 91; runners named: historic runner (unpinned, not in this packet): `frontier_KR_A1_vanishing_proof(.py)`; historic runner (unpinned, not in this packet): `frontier_graph_first_selector_derivation(.py)`; historic runner (unpinned, not in this packet): `frontier_plaquette_single_exact(.py)`; historic runner (unpinned, not in this packet): `frontier_projector_algebra(.py)`; historic runner (unpinned, not in this packet): `frontier_vertex_power(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly disqualifies the framework's most-cited numerical predictions from th
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -1,9 +1,11 @@
 # Historic intake: Theta G4 Theta-Bar Assembly Current-Surface No-Go Note
 
+Explicit subject: The inference 'paired-shift bookkeeping is derived + theta_bar is rephasing-invariant, therefore theta_bar = 0' is invalid: the exact paired-shift law (theta_gauge -> theta_gauge - n alpha, arg det M -> arg det M + n alpha, theta_bar = theta_gauge + arg det M) proves only ... (The bare code `G4` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: The current assembly material does not retire theta; G4 stays 
 Scope: Current-surface assembly test for the two Tier-A theta residual atoms (gauge_side_winding_account, mass_side_orientation_determinant_readout_bridge); retires nothing and edits no registry.
 Escape conditions (negative claims): Supply the physical values or a nontrivial transfer direction on either side — the note keeps a synthetic nonzero-transfer witness as an escape-hatch witness for the supplier class, explicitly not as a premise.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The theta G4 terminal gate: paired-shift bookkeeping + rephasing invariance do NOT retire theta — G4 stays gated behind G1-G3.
 
@@ -32,7 +36,8 @@ The theta G4 terminal gate: paired-shift bookkeeping + rephasing invariance do N
 - Source commit: `c507fecb00db48621c4914af767d95a33dbeb899`
 - git blob: `fac097158f5e745c18308323eacc7278ebe949cf`
 - sha256: `9d0e40be8c4f63da7d10ddcb223c0d76a5862ed9f75be8f79d13d962a52870ac`
-- Lines: 228; runners named: scripts/theta_g4_theta_bar_assembly_current_surface_no_go_2026_07_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2060_THETA_G4_THETA_BAR_ASSEMBLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch07/2060_THETA_G4_THETA_BAR_ASSEMBLY_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md)
+- Lines: 228; runners named: historic runner (unpinned, not in this packet): `scripts/theta_g4_theta_bar_assembly_current_surface_no_go_2026_07_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -58,6 +63,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

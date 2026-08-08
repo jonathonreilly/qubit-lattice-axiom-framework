@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — assumes fixed causal DAG with recorded/free sectors traversing the same path topology
 
@@ -22,7 +22,9 @@ Original verdict: Hypothesis REFUTED — decoherence in this model requires topo
 Scope: Fixed causal DAG; delay-field/amplitude perturbations on existing edges only; cluster radii 1 and 2; distortion parameter p in [0,1].
 Escape conditions (negative claims): The negative is stated to depend on the distortion being a FIELD acting equally on all paths through a region on a FIXED DAG, and on visibility being defined as (max-min)/(max+min) over a full phase sweep (invariant to path-independent amplitude rescaling); the escape named is topology change (add/remove nodes, change the DAG), which the note says gives massive effect (I3 up to 1e9). p=1.0 escapes by changing sector-labeling rather than the field.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact no-go: field perturbations cannot decohere on a fixed DAG (V unchanged for all p<1, both symmetries, radii 1-2); escape conditions stated (topology change; p=1 relabels sectors); survives the era's own corrections and is re-confirmed by the corrected-propagator single-pass failures.
 
@@ -32,6 +34,7 @@ Exact no-go: field perturbations cannot decohere on a fixed DAG (V unchanged for
 - Source commit: `7009321794f635282e2e9f6f28c129b62d50d990`
 - git blob: `399ce6ae2a5d42f25f88532532a49e50979af375`
 - sha256: `fc5de417d555c655dc21489130ab0d303afaec619a112daceb215c40f65cc738`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3109_asymmetric-decoherence-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3109_asymmetric-decoherence-2026-03-30.md)
 - Lines: 34; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The theta* A-value and its lambda/delta insensitivity survive;
 Scope: Mass-lane theta convention reconciliation on the frozen d=3 design plus its d=1 Schwinger comparator; no axiom, registry, or audit surface touched.
 Escape conditions (negative claims): The A-to-B comparison could be revived only by supplying the named bridge: a system map, baseline-kind identification, a doublet-convention fix B cannot supply, comparator-independent normalization, and grid closure at the true crossing rather than the swept 0.20 point.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The theta convention dictionary terminal: A-to-C exact and insensitive, A-to-B revivable only with a named supplier — the reconciliation the mass-lane memory records, in its full form.
 
@@ -32,7 +34,8 @@ The theta convention dictionary terminal: A-to-C exact and insensitive, A-to-B r
 - Source commit: `891642f2c4fb41581c4b17a4e3c66dc80c04aa32`
 - git blob: `2939c2b04d55b0efc9c5c77544319443c8d0a35b`
 - sha256: `e9921c10d626c608e55bba16751c0b65e5035648f813f7fb50650f38dda79ef4`
-- Lines: 201; runners named: scripts/frontier_cycle916_theta_reconciliation_2026_07_28.py, scripts/frontier_cycle916_theta_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2052_THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2052_THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 201; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle916_theta_reconciliation_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle916_theta_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-disclosed: one primary shortfall amended by the checker (a fourth void-comp
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

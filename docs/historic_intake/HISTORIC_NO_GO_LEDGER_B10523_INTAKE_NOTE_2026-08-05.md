@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Multiple lanes closed for the current surface; the strict read
 Scope: Campaign-wide inherited boundaries across Lanes 1-6 plus five block boundaries.
 Escape conditions (negative claims): Reopen rule stated explicitly: a blocked route may be reopened only with a new premise that breaks the exact obstruction; otherwise the block must record exact-support/no-go/open honestly and pivot. Lane 1 B2 needs a sea-fermion determinant ensemble, a sea-mass specification or budgeted comparator, and large-volume Creutz-ratio extraction; Lane 5 C2 needs a typed CKM-to-PMNS right-sensitive coupling theorem.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Consolidated multi-lane demotion ledger with three concrete falsifications of prior lane claims, sharpest: the anomaly-cancellation exhaustion is FALSIFIED by a gauge-singlet counterexample. Same work-order class as the alpha_s/lattice demotion packets.
 
@@ -32,6 +34,7 @@ Consolidated multi-lane demotion ledger with three concrete falsifications of pr
 - Source commit: `f3e640135ba135aae63b60713b46bab9d8e660fd`
 - git blob: `b8b053212d73d7699d29e95af6fab6b132d88751`
 - sha256: `65da207fd9dc8498f62bd22e7aa547b4fa0f4dee0c9b445e57ee11deeae851e9`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10523_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10523_NO_GO_LEDGER.md)
 - Lines: 70; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Three concrete falsifications of prior claims: anomaly-cancellation exhaustion, 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: CONDITIONAL PASS retiring Cycle 515's all-order frame wall on 
 Scope: Declared seven-cell, global-total-N<=2 code; every frame fixes cell 0, the star center. Does NOT synthesize the dense physical correction or its constraints from primitive M2 updates.
 Escape conditions (negative claims): A broad no-go has insufficient route coverage and fails N1; no such no-go is proposed. Cycle 515's former W_cov is not retained as a fifth wall.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the Cycle 515 -> 516 frame-covariance pair: closes the open proper-cubic covariance residual algebraically via the block-exchange character; CONDITIONAL PASS retiring the all-order frame wall on one bounded surface, with the no-go-coverage caveat stated. Member attached.
 
@@ -32,6 +34,7 @@ TERMINAL of the Cycle 515 -> 516 frame-covariance pair: closes the open proper-c
 - Source commit: `1d4ee879d5588cee3cae97731e150677e885f8f0`
 - git blob: `406029f70dd6db143916985880deb6c7190c153e`
 - sha256: `5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2830_PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/2830_PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md)
 - Lines: 421; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_process
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only goal packet: promotes no retained claim, adds no 
 Scope: Campaign-level goal and support packet for the zero-import hydrogen target.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE campaign umbrella: the 1,245-line zero-import hydrogen goal packet defining the full lane decomposition — the sweep's constitution (support-only, honest).
 
@@ -32,7 +34,8 @@ THE campaign umbrella: the 1,245-line zero-import hydrogen goal packet defining 
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `d496aca2c156e2ffe858f3fca2e45f3b5134899c`
 - sha256: `d1b25c1700222e91dae7193505f6e8ca9aa2b86ec6a15630562ba2de8cc82bcc`
-- Lines: 1245; runners named: scripts/frontier_zero_import_hydrogen_goal_packet.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2514_ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch08/2514_ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md)
+- Lines: 1245; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_goal_packet(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_process
 intake_directive: owner_2026-08-05
 ```
 

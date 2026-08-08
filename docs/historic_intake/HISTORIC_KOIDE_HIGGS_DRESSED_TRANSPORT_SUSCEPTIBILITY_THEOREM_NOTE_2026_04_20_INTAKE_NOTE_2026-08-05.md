@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: alpha is no longer a fit — the entire gap between bare chamb
 Scope: Exact local susceptibility identity at the physical root; no derivation of the backreaction, of lambda_*, or of Q = 2/3.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 alpha = 1 - lambda_*^2 (P_t t' + P_d d')/P_x exactly — the empirical slope becomes an exact identity; the transport chain's one genuine theorem.
 
@@ -32,7 +34,8 @@ alpha = 1 - lambda_*^2 (P_t t' + P_d d')/P_x exactly — the empirical slope bec
 - Source commit: `cdfc2ad52b45bca6d108ffc7e121fe6984d06328`
 - git blob: `eb00159248331be95184f54c2afbb73b39622c60`
 - sha256: `ffdc269d85d11effb8586548f3772a63cb39568abec34c1550c81c12cabccc60`
-- Lines: 167; runners named: scripts/frontier_koide_higgs_dressed_transport_susceptibility_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/859_KOIDE_HIGGS_DRESSED_TRANSPORT_SUSCEPTIBILITY_THEOREM_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch03/859_KOIDE_HIGGS_DRESSED_TRANSPORT_SUSCEPTIBILITY_THEOREM_NOTE_2026-04-20.md)
+- Lines: 167; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_higgs_dressed_transport_susceptibility_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

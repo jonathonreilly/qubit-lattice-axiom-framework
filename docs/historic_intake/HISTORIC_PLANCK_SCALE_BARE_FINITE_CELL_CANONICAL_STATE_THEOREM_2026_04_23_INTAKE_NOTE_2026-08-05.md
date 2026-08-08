@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_b2_closure_theorem_for_the_bare_cell_alone_upgrade_program
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: B2 is theorem-grade, provided 'bare cell alone' is read in the
 Scope: Only the canonical state of the bare no-extra-structure cell (no preparation, Hamiltonian, boundary condition or embedding datum); explicitly not a claim that every prepared or reduced physical state is tracial.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 B2 closed by two independent proofs (unitary naturality + no-extra-structure) â€” the bare-cell state theorem.
 
@@ -32,7 +34,8 @@ B2 closed by two independent proofs (unitary naturality + no-extra-structure) â€
 - Source commit: `6b31ec7600d9175c7422c5ec5019b5d2f0c50787`
 - git blob: `802b755904c717f406dedfa5dd9ae26d725004df`
 - sha256: `2385e82e715a6e8fd5fb5c047f46f22fbb50636bfa6b433b3a64f82ff855c0ca`
-- Lines: 182; runners named: scripts/frontier_planck_bare_finite_cell_canonical_state_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1379_PLANCK_SCALE_BARE_FINITE_CELL_CANONICAL_STATE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1379_PLANCK_SCALE_BARE_FINITE_CELL_CANONICAL_STATE_THEOREM_2026-04-23.md)
+- Lines: 182; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_finite_cell_canonical_state_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_b2_closure_theorem_for_the_bare_cell_alone_upgrade_program
 intake_directive: owner_2026-08-05
 ```
 

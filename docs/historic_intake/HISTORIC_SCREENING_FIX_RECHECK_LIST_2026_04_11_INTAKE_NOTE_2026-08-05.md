@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Strong screening materially distorted some long-range reads bu
 Scope: Repo-wide audit of Poisson-coupled results affected by the screening parameter, 2026-04-11.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The mu^2 = 0.22 confound work order: ~12 results need rerun at 0.001 — a parameter choice that invalidated published reads, on the record.
 
@@ -32,6 +34,7 @@ The mu^2 = 0.22 confound work order: ~12 results need rerun at 0.001 — a param
 - Source commit: `84da1a307021a5645e8398a1ab3e13b588b36986`
 - git blob: `130723cf30632526ea703f2b4884ed004837847d`
 - sha256: `817d519c07c96c53e05ece9f0c8914218581cb96a71800f4a23071073141ead0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1910_SCREENING_FIX_RECHECK_LIST_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch06/1910_SCREENING_FIX_RECHECK_LIST_2026-04-11.md)
 - Lines: 110; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Documents that a parameter choice invalidated or weakened at least a dozen previ
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

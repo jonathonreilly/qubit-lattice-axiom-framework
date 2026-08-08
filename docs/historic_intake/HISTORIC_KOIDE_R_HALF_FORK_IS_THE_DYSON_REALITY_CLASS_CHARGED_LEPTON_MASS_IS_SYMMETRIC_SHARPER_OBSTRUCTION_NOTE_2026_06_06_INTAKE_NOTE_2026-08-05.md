@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_obstruction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The det_C lever that would have derived r=1/2 is foreclosed fo
 Scope: Charged leptons only; explicitly does not apply to neutrinos (neutral, so Delta Q = 0 Majorana mass is allowed), making the Dyson-class reframe a prediction surface there. Sharper obstruction, not a metaphysical impossibility theorem.
 Escape conditions (negative claims): The honest residual named is the formal AC_phi-lambda staggered realization exhibiting the realized charged-lepton corner mass as a Dirac bilinear at lattice level — but that residual cannot evade charge conservation, so the escape is narrow and charge-foreclosed.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Dyson-class foreclosure: det_C IS the Pfaffian and needs K^2 = -1 the charged-lepton K/CPT does not supply — the fork's negative half, with the campaign goal self-described as falsified.
 
@@ -32,7 +34,8 @@ Dyson-class foreclosure: det_C IS the Pfaffian and needs K^2 = -1 the charged-le
 - Source commit: `720770b708c7d4c3861bb98ccd918e5f775b231f`
 - git blob: `4315435030dcb0c14d707852a3728cdad6037461`
 - sha256: `26f7fefd807cae19af113115b62e15bd7dfb541c9ba558c290f712e96c4dbf8e`
-- Lines: 128; runners named: scripts/audit_companion_koide_dyson_reality_class_sharper_obstruction_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1074_KOIDE_R_HALF_FORK_IS_THE_DYSON_REALITY_CLASS_CHARGED_LEPTON_MASS_IS_SYMMETRIC_SHARPER_OBSTRUCTION_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1074_KOIDE_R_HALF_FORK_IS_THE_DYSON_REALITY_CLASS_CHARGED_LEPTON_MASS_IS_SYMMETRIC_SHARPER_OBSTRUCTION_NOTE_2026-06-06.md)
+- Lines: 128; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_koide_dyson_reality_class_sharper_obstruction_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-describes the campaign goal as falsified ('the empirical Q=2/3 is the frame
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_obstruction
 intake_directive: owner_2026-08-05
 ```
 

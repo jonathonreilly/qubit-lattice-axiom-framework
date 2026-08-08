@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Three of four proposed negatives withdrawn or falsified; one e
 Scope: One frozen finite sector.
 Escape conditions (negative claims): Exhibit a nonscalar element of C*(D,U) or a rank-one M_zeta; derive a genuine stable eta mismatch in a separate claim; supply a separate endpoint theorem.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Honest mass-withdrawal: three of four proposed negatives withdrawn or falsified, incl. the ambient eta mismatch (a FLOATING-POINT PROXY in the former runner - proxy withdrawn) and the endpoint claim; one exact negative boundary survives. The floating-point-proxy disclosure is a verification-integrity record.
 
@@ -32,6 +34,7 @@ Honest mass-withdrawal: three of four proposed negatives withdrawn or falsified,
 - Source commit: `ec64a6ea500bfbaa74da0696f90ced0c2225be10`
 - git blob: `4fea9adf37413678b763bc161515e3bab7deac1e`
 - sha256: `820d3488f12057bbb65ba43e8ae8b4170655be9da06b431fccae81b37853385e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10546_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10546_NO_GO_LEDGER.md)
 - Lines: 8; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A prior runner used a floating-point eta proxy to support a negative claim; that
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

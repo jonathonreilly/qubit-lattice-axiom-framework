@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: All match at the few-percent level (23/23, 15/15, 14/14 PASS);
 Scope: No observed masses used as derivation inputs; the up-type inter-sector relations (m_c m_b = m_s m_t/N_c, 2 m_u m_b^2 = m_d m_s m_t) and the lepton exponents 5/4 and 7/3 are empirically discovered patterns with exact framework-constant labels, not first-principles derivations.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Seven charged-fermion mass ratios as powers of alpha_s(v) with exponents from four exact integers (23/23, 15/15, 14/14) — costs disclosed.
 
@@ -32,7 +34,8 @@ Seven charged-fermion mass ratios as powers of alpha_s(v) with exponents from fo
 - Source commit: `7f869e3f3cccb35a67b1231d37dc84ecf7e938a4`
 - git blob: `61cba502bbb219790d3c62266f55bbf05a965776`
 - sha256: `e3197ae7d485f9af92cf816cd1afbe44f3f2e8d9ffc32ca1cfa3541064f8f305`
-- Lines: 190; runners named: scripts/frontier_mass_ratio_ckm_dual.py, scripts/frontier_mass_ratio_up_sector.py, scripts/frontier_mass_ratio_lepton_sector.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1136_MASS_RATIO_CKM_DUAL_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1136_MASS_RATIO_CKM_DUAL_NOTE.md)
+- Lines: 190; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_ckm_dual(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_up_sector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_lepton_sector(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Two disclosed costs: the m_s/m_b agreement is scale-convention dependent (+0.2% 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

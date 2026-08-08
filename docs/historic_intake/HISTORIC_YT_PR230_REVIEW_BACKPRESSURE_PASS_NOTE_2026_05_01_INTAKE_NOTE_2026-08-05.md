@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_review
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Open — the central retained claim stays blocked by open impo
 Scope: Backpressure disposition after the process challenge.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Review disposition: the top-mass parameter is TUNABLE — demoted on the record; PR #230 held unmerged.
 
@@ -32,6 +34,7 @@ Review disposition: the top-mass parameter is TUNABLE — demoted on the record;
 - Source commit: `988b34ea06bcb600c8d51888b53308b8568adb5c`
 - git blob: `9b935b73e182546d273c829db40f812e2c82bd28`
 - sha256: `8cbc9c2e99299dc6ee7e89e57f691cf821eeab0ce10456f8cb71b38ee0c38a62`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2378_YT_PR230_REVIEW_BACKPRESSURE_PASS_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2378_YT_PR230_REVIEW_BACKPRESSURE_PASS_NOTE_2026-05-01.md)
 - Lines: 61; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records that the lane's top-mass parameter is tunable, so the readout is calibra
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_review
 intake_directive: owner_2026-08-05
 ```
 

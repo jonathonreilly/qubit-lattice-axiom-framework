@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Closes the 'ansatz vs principle' ambiguity — the bridge is a
 Scope: The current star-supported finite-rank class; holds for both the exact local O_h family and the broader finite-rank family.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The bridge upgraded from ansatz to PRINCIPLE: exact Schur-complement DtN boundary action — the gravity sewing lane's variational theorem; family attached.
 
@@ -32,7 +34,8 @@ The bridge upgraded from ansatz to PRINCIPLE: exact Schur-complement DtN boundar
 - Source commit: `d5b8bf0eddadeef6cb45be6e4a023077edcc79c6`
 - git blob: `d2b1c855c8754a7447168fb6398f59eec44b6120`
 - sha256: `7583c00bc6a9a555a088f49d1ce91f9fe126e9ff4e97fd05784b201d8b81e7c6`
-- Lines: 122; runners named: scripts/frontier_microscopic_dirichlet_bridge_principle.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1150_MICROSCOPIC_DIRICHLET_BRIDGE_PRINCIPLE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1150_MICROSCOPIC_DIRICHLET_BRIDGE_PRINCIPLE_NOTE.md)
+- Lines: 122; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_microscopic_dirichlet_bridge_principle(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -56,6 +59,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_blocked_claim_table_with_a_numerically_falsified_precision_claim
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Both the unbounded prediction and the tight precision claim fa
 Scope: The beta=6 perturbative plaquette prediction and its Pade precision sub-claim.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsification of a published precision claim: a previously stated tadpole-improved Pade prediction claimed 1e-5 precision and is FALSIFIED at 1.2e-4; the unbounded beta=6 perturbative plaquette prediction is blocked (supplied coefficient/normalization/scale/comparator inputs). Hidden-import exposure and narrowed repair attached.
 
@@ -32,6 +34,7 @@ Falsification of a published precision claim: a previously stated tadpole-improv
 - Source commit: `9bbf5621d8ff32eb86cdac0aa64117d55de1e862`
 - git blob: `1c577bbf037654d63be9096743eb30d25e4c0385`
 - sha256: `9702aee9a055b24932aae305c440a0f618fa5a2eea577c4343ea8a4f7117fbfa`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10760_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10760_NO_GO_LEDGER.md)
 - Lines: 9; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ a 1e-5 precision claim was published and is falsified here by 1.2e-4 and 9.5e-5 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_blocked_claim_table_with_a_numerically_falsified_precision_claim
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The earlier numerical 'mismatch' between corners was an artifa
 Scope: Pure algebraic derivation on the 8-dimensional taste space with the KS gamma matrices in tensor form.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Gauge universality resolved algebraically: corner commutants isomorphic with identical structure constants — the numerical mismatch was a basis artifact; pairs with the untracked-script flag (454).
 
@@ -32,7 +34,8 @@ Gauge universality resolved algebraically: corner commutants isomorphic with ide
 - Source commit: `c74e394a5ae2e0f0c6096e4724eefc55a7622701`
 - git blob: `4f5de1cae8e7efd7ef19a7ded74747bcf559af9d`
 - sha256: `3beb90aa9c0962de7361a6a682312e5b956601b191e5901f0cecf127d1ce004a`
-- Lines: 461; runners named: scripts/frontier_generation_gauge_universality.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/566_GAUGE_UNIVERSALITY_ALGEBRAIC_DERIVATION.md](../../archive_unlanded/historic_intake_originals/branch02/566_GAUGE_UNIVERSALITY_ALGEBRAIC_DERIVATION.md)
+- Lines: 461; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_gauge_universality(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Directly contradicts the sibling note's interpretation that the differing projec
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

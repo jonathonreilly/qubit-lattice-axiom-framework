@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A sharp falsifiable prediction: PDG 2024 gives alpha = 84.1 +/
 Scope: Direct geometric corollary of the retained CP-phase structural identity; falsifiability discussed explicitly.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Sharp falsifiable prediction: unitarity-triangle alpha = 90 degrees EXACTLY from retained (rho_bar, eta_bar) — PDG 84.1 +/- 4.0, ~1.5 sigma; one of the era's cleanest testable claims.
 
@@ -32,7 +34,8 @@ Sharp falsifiable prediction: unitarity-triangle alpha = 90 degrees EXACTLY from
 - Source commit: `bef846b04bbf31cab8154f3e1b58f9a6f4857ee9`
 - git blob: `6b741a4590aec039a1e15c28d92b521368a3c2a1`
 - sha256: `7860d23dfa6b62aaf5ca11568adbb02964685bf61890af932f6ac4c413013f78`
-- Lines: 268; runners named: scripts/frontier_ckm_unitarity_triangle_right_angle.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/225_CKM_UNITARITY_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch01/225_CKM_UNITARITY_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md)
+- Lines: 268; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_unitarity_triangle_right_angle(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

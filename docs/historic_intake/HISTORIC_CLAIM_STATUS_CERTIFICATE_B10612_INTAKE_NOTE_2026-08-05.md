@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Demoted; closes the blocker at source level only.
 Scope: The lattice Green asymptotic row.
 Escape conditions (negative claims): The uniform asymptotic theorem.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Explicit demotion on the record: an asymptotic-reading row is demoted to bounded support because the uniform asymptotic theorem is missing; the companion states the reusable fallacy exactly (pointwise finite checks cannot substitute for uniform asymptotics).
 
@@ -32,6 +34,7 @@ Explicit demotion on the record: an asymptotic-reading row is demoted to bounded
 - Source commit: `114fd806d393f393104ef51a20a39fa90c3919d2`
 - git blob: `deb3202258eb52dd856eadc8cd0ee3fb4933d01b`
 - sha256: `9e40b89439b23a6d313b29a3760ca0bf3ead7626638896ce44e370b4555d2f45`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10612_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10612_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 12; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Explicit demotion of an asymptotic claim to bounded support.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

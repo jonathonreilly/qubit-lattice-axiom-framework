@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The tanh^4(t) structure is a new, native, chirality-independen
 Scope: Five of seven panel angles returned structured output; lit comparators flagged as imports.
 Escape conditions (negative claims): The panel leaves one thread unforeclosed: whether a native cube normalization (not Koide input, not the dual position basis) can equalize the C_3 isotype weights at a derivable t.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Panel verdict: the cube heat kernel is exactly diagonal so nothing forces t — with one unforeclosed thread and its own caught errors on record.
 
@@ -32,7 +34,8 @@ Panel verdict: the cube heat kernel is exactly diagonal so nothing forces t — 
 - Source commit: `383f27c51f80523c0164e7c46770643a3a390a71`
 - git blob: `449deea6cfb10520e0a09226fcc3b4017998ab72`
 - sha256: `36e6f6e7e49b91ffbacaf6e350694a63ec3a822264b0c8eb03ad1bea6ec7d61c`
-- Lines: 70; runners named: scripts/flavor_panel_heat_kernel_verdict_2026_05_29.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/489_FLAVOR_PANEL_HEAT_KERNEL_VERDICT_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/489_FLAVOR_PANEL_HEAT_KERNEL_VERDICT_NOTE_2026-05-29.md)
+- Lines: 70; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_panel_heat_kernel_verdict_2026_05_29(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Catches a self-authored numerical label error and a wrong-escape-via-citation ri
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

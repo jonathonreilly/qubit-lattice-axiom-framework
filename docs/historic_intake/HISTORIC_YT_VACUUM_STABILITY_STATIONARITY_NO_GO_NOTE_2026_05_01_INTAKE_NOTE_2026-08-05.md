@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No — no-go / exact-negative-boundary; 'critical stability' c
 Scope: Whether a weaker vacuum-stability premise derives beta_lambda(M_Pl)=0.
 Escape conditions (negative claims): A multiple-point or double-zero theorem derived from the substrate saying the Planck boundary is a double zero (observed near-criticality is forbidden as a derivation input).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Planck-stationarity sign no-go: one-sided nonnegativity forces beta_lambda(t_Pl) <= 0, so 'critical stability' cannot upgrade the boundary condition — the fan-out's sharpest negative.
 
@@ -32,7 +34,8 @@ Planck-stationarity sign no-go: one-sided nonnegativity forces beta_lambda(t_Pl)
 - Source commit: `81b98f7ab7521d8be1cde1fa5002499382f4d95e`
 - git blob: `991dcc65c1637817cebb6d666f002d1ff2315a79`
 - sha256: `339a895522281845013d813461b7186c0e82c82378b6a8bd61d8713ae45dae23`
-- Lines: 134; runners named: scripts/frontier_yt_vacuum_stability_stationarity_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2478_YT_VACUUM_STABILITY_STATIONARITY_NO_GO_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch08/2478_YT_VACUUM_STABILITY_STATIONARITY_NO_GO_NOTE_2026-05-01.md)
+- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_vacuum_stability_stationarity_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

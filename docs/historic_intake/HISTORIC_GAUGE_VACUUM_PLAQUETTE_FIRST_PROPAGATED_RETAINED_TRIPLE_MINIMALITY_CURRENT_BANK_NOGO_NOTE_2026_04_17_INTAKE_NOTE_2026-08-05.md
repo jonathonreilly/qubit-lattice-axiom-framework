@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The next positive plaquette theorem target is still exactly th
 Scope: Current exact bank.
 Escape conditions (negative claims): The no-go is a statement about the CURRENT bank's evaluative reach; the named route forward is an operator-side evaluation supplying the triple itself, after which the exact radical inverse map recovers the coefficients.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The minimality consolidation: the propagated retained triple is the MINIMAL honest positive target, with no smaller exact target below it — six prior notes unified.
 
@@ -32,7 +34,8 @@ The minimality consolidation: the propagated retained triple is the MINIMAL hone
 - Source commit: `0e041394da73fb3343f9108d28ec25b1c6f3ac9c`
 - git blob: `bd779256ce683da721b62c5d7f69d436cdab683b`
 - sha256: `e64ed1013f54de6b05066a2473a81282d6db0fba9bb3f7ce069a0ccc2d4b8506`
-- Lines: 207; runners named: scripts/frontier_gauge_vacuum_plaquette_first_propagated_retained_triple_minimality_current_bank_nogo_2026_04_17.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/578_GAUGE_VACUUM_PLAQUETTE_FIRST_PROPAGATED_RETAINED_TRIPLE_MINIMALITY_CURRENT_BANK_NOGO_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch02/578_GAUGE_VACUUM_PLAQUETTE_FIRST_PROPAGATED_RETAINED_TRIPLE_MINIMALITY_CURRENT_BANK_NOGO_NOTE_2026-04-17.md)
+- Lines: 207; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_first_propagated_retained_triple_minimality_current_bank_nogo_2026_04_17(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_retained_positive
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-12; assumes the framework's single-axiom derivation chain and self-consistent Poisson gravity
 
@@ -22,7 +22,9 @@ Original verdict: SU(2) is retained with no free parameters or choices; SU(3) em
 Scope: Publication-facing claim boundary for the Cl(3)/Z^3 native gauge lane: safe retained reading is the exact native cubic Cl(3)/SU(2) algebra only; broader derivation memos or phenomenology notes are not retention authority unless separately promoted.
 Escape conditions (negative claims): The SU(3) gap is stated with its escape conditions: the cubic taste algebra CONTAINS a compatible SU(3) embedding and three independent arguments (commutant of SU(2)+SWAP23 giving su(3)+u(1) uniquely, taste breaking 1+3+3+1, anomaly cancellation with 3+3*) constrain the color group to SU(3) rather than SU(4) or larger, but each requires either choosing a subspace by hand, adding an identification layer, or importing modeled O(a^2) breaking coefficients. Closure would need a derivation from Cl(3) plus only already-retained structures (bipartite Z2, self-consistent Poisson, unitarity); three candidate paths are named, including proving the commutant chain follows from cubic symmetry alone since SWAP23 IS a cubic symmetry.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact SU(2) from the staggered Z^3 chain (topological, parameter-free) with the SU(3) gap honestly open + escape conditions — the graph-first gauge lineage's era surface.
 
@@ -32,7 +34,8 @@ Exact SU(2) from the staggered Z^3 chain (topological, parameter-free) with the 
 - Source commit: `64d3d10acd8c53cf901e4cb63d830fe48d9b0ed0`
 - git blob: `5207a6d2aa642429b73e36225a3da2e2efb2f759`
 - sha256: `0fb85ed5b52ed4a2d99c58971f411a70956acb9f80edb3a1fca018fd7fe144fc`
-- Lines: 100; runners named: scripts/frontier_non_abelian_gauge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3589_BOUNDED_NATIVE_GAUGE_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3589_BOUNDED_NATIVE_GAUGE_NOTE.md)
+- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-stated that the SU(2) taste-algebra result is not new in isolation (cites K
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_retained_positive
 intake_directive: owner_2026-08-05
 ```
 

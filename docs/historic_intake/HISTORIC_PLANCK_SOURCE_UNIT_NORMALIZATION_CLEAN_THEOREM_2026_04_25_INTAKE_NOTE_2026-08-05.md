@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_standalone_positive_closure_packet_for_the_a_1_m_pl_gate_subject_to_reviewer_acceptance_of_the_gauss_newton_source_unit_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The 4 pi gap closes if physical Newton mass is the Gauss/asymp
 Scope: Only external input is the conventional target definition l_P^2 = G_phys; no measured G, l_P, M_Pl or hbar is used, and no SI decimal is claimed.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Source-unit correction: repo wording G_lat = 1/(4 pi) makes the Planck map give 2 sqrt(pi) — the 4-pi gap localized to one physical identification; corrects circulated wording.
 
@@ -32,7 +34,8 @@ Source-unit correction: repo wording G_lat = 1/(4 pi) makes the Planck map give 
 - Source commit: `952d3ce6df0cb19b1189a96d1ebbc6eab1f4b89e`
 - git blob: `402a26567feaeeae67f9b449c07da1fa107b5f17`
 - sha256: `ed3f1a4ebb72e15acf499284831bd521c2e46e6cee8cc9ed8f7de93a1be93b23`
-- Lines: 369; runners named: scripts/frontier_planck_source_unit_normalization_clean_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1496_PLANCK_SOURCE_UNIT_NORMALIZATION_CLEAN_THEOREM_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch05/1496_PLANCK_SOURCE_UNIT_NORMALIZATION_CLEAN_THEOREM_2026-04-25.md)
+- Lines: 369; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_source_unit_normalization_clean_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Corrects previously circulated repo wording (G_lat = 1/(4 pi)) that, if kept, ma
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_standalone_positive_closure_packet_for_the_a_1_m_pl_gate_subject_to_reviewer_acceptance_of_the_gauss_newton_source_unit_theorem
 intake_directive: owner_2026-08-05
 ```
 

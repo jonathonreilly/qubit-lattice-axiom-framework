@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retained_zero_import_end_to_end_derivation
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Closes the CKM gate's imported-masses gap with two independent
 Scope: No PDG quark masses enter either derivation path; PDG values are post-derivation comparators only. The 5/6 strong-coupling exponentiation mechanism remains bounded support with its non-perturbative derivation at g = 1 open.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Quark mass ratios from alpha_s(v) + exact integers via two independent agreeing paths — the gate-closure form superseding the dual note.
 
@@ -32,7 +34,8 @@ Quark mass ratios from alpha_s(v) + exact integers via two independent agreeing 
 - Source commit: `ec9c2fd3d85b041fd0528731a73ee297e4a92f2a`
 - git blob: `177e0106f6b182ff4937e9953142092102f48999`
 - sha256: `cdbce6576ba56c7532b1db7a7e8fb7e51e18ab06bbd10be598711af09630cfd7`
-- Lines: 315; runners named: scripts/frontier_quark_mass_ratios_taste_staircase.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1642_QUARK_MASS_RATIOS_TASTE_STAIRCASE_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch05/1642_QUARK_MASS_RATIOS_TASTE_STAIRCASE_THEOREM_NOTE_2026-04-25.md)
+- Lines: 315; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_mass_ratios_taste_staircase(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retained_zero_import_end_to_end_derivation
 intake_directive: owner_2026-08-05
 ```
 

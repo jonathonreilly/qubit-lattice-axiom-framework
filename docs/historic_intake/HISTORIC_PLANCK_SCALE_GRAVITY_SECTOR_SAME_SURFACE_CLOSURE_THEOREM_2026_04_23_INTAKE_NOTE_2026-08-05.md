@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_final_hardening_of_the_gsi_physical_carrier_step
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: GSI is not a coefficient choice - the remaining rejection is o
 Scope: Accepted physical-gravity review contract with five named inputs (physical lattice, canonical gravity sector, same physical boundary surface, single-sector semantics, primitive source-free locality).
 Escape conditions (negative claims): A reviewer may still reject any of the five review-contract inputs; rejecting one changes the physical theory under review rather than exposing a coefficient fit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 GSI hardened from premise to same-surface compatibility consequence — the five review-contract inputs named.
 
@@ -32,7 +34,8 @@ GSI hardened from premise to same-surface compatibility consequence — the five
 - Source commit: `aed038e1aab826bbd9a95c07555c3394f4e02fd3`
 - git blob: `20506249e9f02714ea5d1269d450b87e08f7884e`
 - sha256: `44dda82a181ce4c28d63869469a92e86f524066fcb7990049b620a02fe6e6569`
-- Lines: 176; runners named: scripts/frontier_planck_gravity_sector_same_surface_closure_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1432_PLANCK_SCALE_GRAVITY_SECTOR_SAME_SURFACE_CLOSURE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1432_PLANCK_SCALE_GRAVITY_SECTOR_SAME_SURFACE_CLOSURE_THEOREM_2026-04-23.md)
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_gravity_sector_same_surface_closure_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_final_hardening_of_the_gsi_physical_carrier_step
 intake_directive: owner_2026-08-05
 ```
 

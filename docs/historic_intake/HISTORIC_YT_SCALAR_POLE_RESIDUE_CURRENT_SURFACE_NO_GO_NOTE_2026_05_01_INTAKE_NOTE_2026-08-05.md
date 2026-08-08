@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: It is not — PR #230 cannot reach retained top-Yukawa closure
 Scope: Whether the remaining scalar normalization is derivable from the current retained algebraic surface alone.
 Escape conditions (negative claims): One of: a retained scalar two-point pole-residue theorem deriving Z_phi for the source-selected scalar; a retained common-dressing theorem; or direct physical measurement from the strict lattice-correlator route.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL current-surface no-go: the same visible Ward-repair surface admits FOUR different y_t/g_s values (0.408/0.385/0.289/0.367) — PR #230 cannot close by repairing the old Ward chain; escapes named.
 
@@ -32,7 +34,8 @@ TERMINAL current-surface no-go: the same visible Ward-repair surface admits FOUR
 - Source commit: `98bad87c5e16f3b4846b0408fc4341712c47483a`
 - git blob: `ec68f5d252afc0ad3754a7a599f5840754f13b6d`
 - sha256: `0a08be6948664decbb6080f40ac1dfe3fb046a9c72a6937b214dc9fc0863d637`
-- Lines: 77; runners named: scripts/frontier_yt_scalar_pole_residue_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2413_YT_SCALAR_POLE_RESIDUE_CURRENT_SURFACE_NO_GO_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch08/2413_YT_SCALAR_POLE_RESIDUE_CURRENT_SURFACE_NO_GO_NOTE_2026-05-01.md)
+- Lines: 77; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_scalar_pole_residue_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

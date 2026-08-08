@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — assumes the landed Cycle-720 surface (fixtures, frozen P.direct_graph_basis order, private-dual atlas) unchanged
 
@@ -22,7 +22,9 @@ Original verdict: All three declared routes close positively at the bounded ceil
 Scope: Bounded conditional construction at the bounded ceiling on the same supplied sector/genesis inventory as Cycle 720; the one-time epoch, clean initial banks, declared stage order, and both input-leg conventions remain supplied; no renewal, positive-density multi-source composition, or autonomous scheduling claimed; no matter/FTL/mass/charge transfer implied.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Real bounded theorem: the doubled even-CAR Bell family compiles to literal H;controlled-Pauli words (11N+E rows, max support 2 cells), closing the Cycle-720 flag; physical-compiler lane closure.
 
@@ -32,7 +34,8 @@ Real bounded theorem: the doubled even-CAR Bell family compiles to literal H;con
 - Source commit: `refs/pull-cache/5697`
 - git blob: `a4dace76b2a2c978b8595a5e312af8fe1a23f156`
 - sha256: `5f4f389c3f16c0ca7adfbae43d2aabd04880e638c8de5284e07f4b80170e67be`
-- Lines: 379; runners named: scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py, scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28.py, scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28.py, scripts/frontier_cycle721_tournament_independent_adversary_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3075_CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/recovery/3075_CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 379; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_tournament_independent_adversary_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Notes a design-history record that a bare global-Jordan-Wigner input register wa
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

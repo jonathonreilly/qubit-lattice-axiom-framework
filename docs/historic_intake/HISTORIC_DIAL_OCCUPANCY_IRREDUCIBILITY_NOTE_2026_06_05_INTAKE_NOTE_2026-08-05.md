@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The dial occupancy is an irreducible per-sector input — the 
 Scope: Uses only facts already on origin/main with verified statuses cited inline plus a paired runner (PASS=32 FAIL=0); forces no r value and claims no closure.
 Escape conditions (negative claims): Section 5 opens paths without closing: occupancy texture might be a relation among the four s values rather than four independent numbers.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The dial-occupancy IRREDUCIBILITY finding: the framework derives the dial (Q = 1/3 + (2/3)r, three generations, carrier), not the setting — the r-landscape's sharpest honest localization.
 
@@ -32,7 +34,8 @@ The dial-occupancy IRREDUCIBILITY finding: the framework derives the dial (Q = 1
 - Source commit: `e2ad2c8ca19546aaa65ae225571236993cf27b4d`
 - git blob: `279a9df58dcbafa2fd3d6d92e9812f159f5876d7`
 - sha256: `41bd8760a1035895b937111ba47cebe8563323fe6a7274ebdfb110b9efb4f19e`
-- Lines: 239; runners named: ../scripts/frontier_dial_occupancy_irreducibility.py, scripts/frontier_dial_occupancy_irreducibility.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/318_DIAL_OCCUPANCY_IRREDUCIBILITY_NOTE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch01/318_DIAL_OCCUPANCY_IRREDUCIBILITY_NOTE_2026-06-05.md)
+- Lines: 239; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_dial_occupancy_irreducibility(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dial_occupancy_irreducibility(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

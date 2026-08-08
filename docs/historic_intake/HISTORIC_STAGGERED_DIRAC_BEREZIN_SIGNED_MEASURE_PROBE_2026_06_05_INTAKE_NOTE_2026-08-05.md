@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: RELOCATES-TO-DIRAC-NATURE-IMPORT: the signed-measure chain doe
 Scope: Charged-lepton r = 1/2 selector on the open staggered-Dirac realization gate; comparators only, no PDG proof inputs.
 Escape conditions (negative claims): Names one sharp search: a derived continuous horizontal/flavor U(1) rephasing b relative to a while reconcilable with C^3 = I, which must also reproduce the whole sector ordering (leptons 2/3 < down 0.73 < up 0.85).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The three-mechanism separation: Berezin (forced), signed readout (not forcing), Dirac-nature import (the actual fixer) — RELOCATES the r question to one named import; quark-sector refutation noted.
 
@@ -32,7 +34,8 @@ The three-mechanism separation: Berezin (forced), signed readout (not forcing), 
 - Source commit: `efb9afe703c87217d3b0f93f974b7122bb90b9a7`
 - git blob: `1989544b4c5524517154003c89ac23e55496826e`
 - sha256: `91b8596d9663465c22ce8166dd53183adfa90cc8583661f253a9eb551caf2087`
-- Lines: 152; runners named: scripts/staggered_dirac_berezin_signed_measure_probe_2026_06_05.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1967_STAGGERED_DIRAC_BEREZIN_SIGNED_MEASURE_PROBE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/1967_STAGGERED_DIRAC_BEREZIN_SIGNED_MEASURE_PROBE_2026-06-05.md)
+- Lines: 152; runners named: historic runner (unpinned, not in this packet): `scripts/staggered_dirac_berezin_signed_measure_probe_2026_06_05(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Notes the quark sector directly refutes the naive 'charged -> det_C -> 2/3' rule
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

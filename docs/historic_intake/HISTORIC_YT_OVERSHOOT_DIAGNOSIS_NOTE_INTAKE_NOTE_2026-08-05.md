@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The overshoot is not a single source, and the best consistent 
 Scope: Diagnostic, 9 PASS 0 FAIL; the boundary condition itself contributes 0% error.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The overshoot decomposition: the widely quoted 6.5% figure came from inconsistent scheme use — corrective accounting of the 184-vs-173 gap.
 
@@ -32,7 +34,8 @@ The overshoot decomposition: the widely quoted 6.5% figure came from inconsisten
 - Source commit: `6edb0c838aa3ed8873a055e88ea5cc40a43620fa`
 - git blob: `787aa3dc61a4632d620c7ac95fd39919d8bda045`
 - sha256: `f218a7dbed8e8b6e23d10cf3d519446ac47e581a401df19f96f8b8f4d711a7f7`
-- Lines: 118; runners named: scripts/frontier_yt_overshoot_diagnosis.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2357_YT_OVERSHOOT_DIAGNOSIS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2357_YT_OVERSHOOT_DIAGNOSIS_NOTE.md)
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_overshoot_diagnosis(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Shows that the widely quoted 6.5% figure came from an inconsistent approximation
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

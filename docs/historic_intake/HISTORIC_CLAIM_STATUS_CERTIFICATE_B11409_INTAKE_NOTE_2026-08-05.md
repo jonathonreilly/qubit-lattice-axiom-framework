@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_claim_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: genuine_admitted_input_count: 0; meta
 Scope: Class B/E owner-governance registry action; exact adopted text and boundaries only
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL owner-governance registry action, a program milestone: the live Tier-A admitted derivation target count is now ZERO. Pulled with the governance companions (allowlist = exactly four IDs; residuals are NOT axioms; adoption notes rejected as weight-bearing until an owner channel consumes them) and the sharpest surviving-gap witnesses from the elimination chain (the unforced I_alpha family, the theta_bar invariance-without-selection witness, the four non-selective scalar policies, and the AC_phi_lambda(iii) C3-grade partial retirement). The ~90-block shortcut-pruning chain behind it stays in the pack, each block a narrow no-go citing its landed docs authority.
 
@@ -32,6 +34,7 @@ TERMINAL owner-governance registry action, a program milestone: the live Tier-A 
 - Source commit: `b68baf1a4709982e3d46e293a31215e0e68ad655`
 - git blob: `bf9029046084aea0d566a6c9ac6723065c6c27ea`
 - sha256: `175f9db332cc146da290477d80ea9207850c6899de8637830a351ed7cd6281b8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11409_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci05/11409_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 51; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -58,6 +61,7 @@ adoption converts underivable content to owner-governed premises, not proofs —
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

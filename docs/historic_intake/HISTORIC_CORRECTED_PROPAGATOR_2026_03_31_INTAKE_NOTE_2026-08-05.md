@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — propagator exp(ikS)/L^p with spent-delay action and Laplacian-relaxation delay field on grids and generated causal DAGs
 
@@ -22,7 +22,9 @@ Original verdict: Overall confidence HIGH for the corrected propagator as an imp
 Scope: 30 experiments over 20 scripts; rectangular grids 40x31 to 80x71 and generated DAGs of 12-15 layers x 20-25 nodes (connect_radius=3.0, y_range=10.0); k from 0.01 to 20.0, attenuation power 0-3.0, 5-20 seeds per test, k-averaged over k in {3,...,8}; 9 action formulas and 6 attenuation modes searched.
 Escape conditions (negative claims): Five null results carry their conditions: 2D lensing is RETRACTED because the outgoing angle oscillates and reverses sign at large impact parameter; the universal force law holds on rectangular grids (R^2=0.91 for shift = C*k^2*Q3) but fails on random DAGs (R^2=0.20 for Q3, 0.04 for Delta-Q3) because topology dominates the coupling — only the k^2 scaling is universal, not the constant C; decoherence is weak (5/12, opaque mass 3/12 as paths route around blocked nodes) and is argued to need a mechanism beyond the propagator, namely topology change; mixed attenuation 1/(L(1+alpha*f))^p with small alpha does not restore distance falloff; and compact density y_range=3 kills attraction only because the field gradient saturates at 0.01 versus 0.46 at y_range=10. The (1+field)^p boost attracts 10/10 but is rejected as unstable (amplitude blow-up 7e9, inverted distance scaling, Born rule I3/P=0.46).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The era's flagship terminal result: standard-propagator repulsion diagnosed; gravity re-founded as pure phase (k=0 shift exactly 0; phase valley Delta-S ~ -L*sqrt(2f); k^2 scaling CV=0.10; 11/12 DAG attraction) while preserving interference (V=0.995) and I3 ~ 1e-16; carries the 2D-lensing retraction and five conditioned null results; 26 runners + 18 logs named.
 
@@ -32,7 +34,8 @@ The era's flagship terminal result: standard-propagator repulsion diagnosed; gra
 - Source commit: `9a89b4a21f6677e5bf8378b4907e2d90f4e351d5`
 - git blob: `7b9cfa4e1181410a6879e7d3645d0a958eb9010b`
 - sha256: `c5b19e988a1d03fdcdb4004b3ac21169a7d176fabca178cfa8bb74fb2cc1af25`
-- Lines: 192; runners named: scripts/amplitude_packet_action_sweep.py, scripts/amplitude_spent_fraction_deep.py, scripts/spent_fraction_generated_dag.py, scripts/amplitude_attenuation_attraction.py, scripts/attraction_sanity_checks.py, scripts/geometry_attenuation_definitive.py, scripts/attraction_k_resonance.py, scripts/corrected_unified_mechanism.py, scripts/growth_rule_attraction_selection.py, scripts/attenuation_first_principles.py, scripts/corrected_opaque_decoherence.py, scripts/corrected_distance_and_lorentz.py, scripts/distance_scaling_large_grid.py, scripts/compact_density_diagnosis.py, scripts/attraction_corridor_map.py, scripts/weak_coupling_distance.py, scripts/corrected_propagator_regression_v2.py, scripts/ray_slope_lensing_test.py, scripts/growing_graph_attraction_emergence.py, scripts/perturbative_attraction_derivation.py, scripts/gravitational_force_law.py, scripts/force_law_on_dags.py, scripts/force_law_delta_q3.py, generative_causal_dag_interference.py, generated_dag_gravity_induced_phase.py, toy_event_physics.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3163_corrected-propagator-2026-03-31.md](../../archive_unlanded/historic_intake_originals/march/3163_corrected-propagator-2026-03-31.md)
+- Lines: 192; runners named: historic runner (unpinned, not in this packet): `scripts/amplitude_packet_action_sweep(.py)`; historic runner (unpinned, not in this packet): `scripts/amplitude_spent_fraction_deep(.py)`; historic runner (unpinned, not in this packet): `scripts/spent_fraction_generated_dag(.py)`; historic runner (unpinned, not in this packet): `scripts/amplitude_attenuation_attraction(.py)`; historic runner (unpinned, not in this packet): `scripts/attraction_sanity_checks(.py)`; historic runner (unpinned, not in this packet): `scripts/geometry_attenuation_definitive(.py)`; historic runner (unpinned, not in this packet): `scripts/attraction_k_resonance(.py)`; historic runner (unpinned, not in this packet): `scripts/corrected_unified_mechanism(.py)`; historic runner (unpinned, not in this packet): `scripts/growth_rule_attraction_selection(.py)`; historic runner (unpinned, not in this packet): `scripts/attenuation_first_principles(.py)`; historic runner (unpinned, not in this packet): `scripts/corrected_opaque_decoherence(.py)`; historic runner (unpinned, not in this packet): `scripts/corrected_distance_and_lorentz(.py)`; historic runner (unpinned, not in this packet): `scripts/distance_scaling_large_grid(.py)`; historic runner (unpinned, not in this packet): `scripts/compact_density_diagnosis(.py)`; historic runner (unpinned, not in this packet): `scripts/attraction_corridor_map(.py)`; historic runner (unpinned, not in this packet): `scripts/weak_coupling_distance(.py)`; historic runner (unpinned, not in this packet): `scripts/corrected_propagator_regression_v2(.py)`; historic runner (unpinned, not in this packet): `scripts/ray_slope_lensing_test(.py)`; historic runner (unpinned, not in this packet): `scripts/growing_graph_attraction_emergence(.py)`; historic runner (unpinned, not in this packet): `scripts/perturbative_attraction_derivation(.py)`; historic runner (unpinned, not in this packet): `scripts/gravitational_force_law(.py)`; historic runner (unpinned, not in this packet): `scripts/force_law_on_dags(.py)`; historic runner (unpinned, not in this packet): `scripts/force_law_delta_q3(.py)`; historic runner (unpinned, not in this packet): `generative_causal_dag_interference(.py)`; historic runner (unpinned, not in this packet): `generated_dag_gravity_induced_phase(.py)`; historic runner (unpinned, not in this packet): `toy_event_physics(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Validation table records record suppression as MARGINAL (Delta-V = 0.002, 6/7 re
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

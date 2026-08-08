@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The door is SYMMETRIC between the horns — the no-go's N6 tab
 Scope: Exhaustive search of origin/main docs/ and scripts/ at 02f9359281; fourteen landed documents and five runners bear directly.
 Escape conditions (negative claims): A short correction note (not a construction wave) is recommended to fix CAMPAIGN.md's equivalence chain before any further wave.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Campaign kill-check verdict DEAD ON ARRIVAL - not because the 2026-07-04 no-go forecloses the question (that door is real and unique in the repo) but because the door is SYMMETRIC between the horns; of the 14 notes tabulated only ONE is retained-grade. The verdict that stopped the campaign, on the record for the r=1/2 adjudication.
 
@@ -32,7 +34,8 @@ Campaign kill-check verdict DEAD ON ARRIVAL - not because the 2026-07-04 no-go f
 - Source commit: `94f1d262dce5e904d7cd63ed7fe6cbe219dd42a0`
 - git blob: `4324a5b54fbcb9e9bb749df267d453579ff0c31a`
 - sha256: `0a02be7d57ca6df277bb7fe855678f7866949072f3e6fe54b9475f7708b2a246`
-- Lines: 678; runners named: scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10557_wave1_killcheck.md](../../archive_unlanded/historic_intake_originals/packsci02/10557_wave1_killcheck.md)
+- Lines: 678; runners named: historic runner (unpinned, not in this packet): `scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ Campaign kill-check verdict DEAD ON ARRIVAL - not because the 2026-07-04 no-go f
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Campaign kill-check verdict DEAD ON ARRIVAL - not because the 2026-07-04 no-go forecloses the question (that door is real and unique in the repo) but because the door is SYMMETRIC between the horns; of the 14 notes tabulated only ONE is retained-grade. The verdict that stopped the campaign, on the record for the r=1/2 adjudication.
+- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Campaign kill-check verdict DEAD ON ARRIVAL - not because the 2026-07-04 no-go forecloses the question (that door is real and unique in the repo) but because the door is SYMMETRIC between the horns; of the 14 notes tabulated only ONE is retained-grade. The verdict that stopped the campaign, on the record for the r=1/2 adjudication.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Self-flags three limitations: no runner was executed so all PASS totals are quot
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

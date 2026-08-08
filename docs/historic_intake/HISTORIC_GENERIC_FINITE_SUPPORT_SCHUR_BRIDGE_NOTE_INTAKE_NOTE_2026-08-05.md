@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The exact bridge package is no longer star-specific; the live 
 Scope: Finite support inside the current Dirichlet box on the current static conformal bridge surface.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Generic finite-support Schur bridge: any PSD support yields one renormalized harmonic exterior — the bridge de-specialized from stars; gaps honestly listed.
 
@@ -32,7 +34,8 @@ Generic finite-support Schur bridge: any PSD support yields one renormalized har
 - Source commit: `1639851a98e97a3b463306e65d339215f8f520a1`
 - git blob: `903b7b2c42e911b85dbd61af9fc263f1e6d8b47f`
 - sha256: `4494714462037047b77172d6612f4653ea1f7d6239f4acfe06af1f20a7fb178c`
-- Lines: 113; runners named: scripts/frontier_generic_finite_support_schur_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/634_GENERIC_FINITE_SUPPORT_SCHUR_BRIDGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/634_GENERIC_FINITE_SUPPORT_SCHUR_BRIDGE_NOTE.md)
+- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generic_finite_support_schur_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Lists three things it explicitly does not close: beyond the static conformal bri
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Four live gates remain bounded/open; several summary and full-
 Scope: Publication ledger, stricter than a backlog and broader than the retained paper surface; a claim must appear here before entering the manuscript.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 FULL CLAIM LEDGER: the era's five-bucket claim sort naming stale-authority file families — repo-constitution document.
 
@@ -32,7 +34,8 @@ FULL CLAIM LEDGER: the era's five-bucket claim sort naming stale-authority file 
 - Source commit: `db303095e369f85044553c9c3cb3bf1c7ff9bdac`
 - git blob: `d46d7fd61e4bb2daeb139d7458ba9ac2ca520fe2`
 - sha256: `4b6a41498e3c5ad88995b38739c4ff65ce4979ed6aa5e1bb4ba79945b3c6d494`
-- Lines: 122; runners named: scripts/frontier_anomaly_forces_time.py, scripts/frontier_born_rule_derived.py, scripts/frontier_cpt_exact.py, scripts/frontier_graph_first_su3_integration.py, scripts/frontier_non_abelian_gauge.py, scripts/frontier_right_handed_sector.py, scripts/frontier_single_axiom_hilbert.py, scripts/frontier_generation_fermi_point.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/517_FULL_CLAIM_LEDGER.md](../../archive_unlanded/historic_intake_originals/branch02/517_FULL_CLAIM_LEDGER.md)
+- Lines: 122; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_anomaly_forces_time(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_born_rule_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cpt_exact(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_graph_first_su3_integration(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_right_handed_sector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_single_axiom_hilbert(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_fermi_point(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ Section 5 names whole file families as stale or unsafe authority - notably summa
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

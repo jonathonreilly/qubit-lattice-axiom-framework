@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The Clifford/symplectic route is SHARPLY FALSIFIED for the req
 Scope: Three contracts kept strictly separate: true dimension-reducing blank retirement (EXCLUDED by the rank theorem), information transfer to an explicit three-qubit recipient (constructed, but not physical-content compression since the recipient is nonblank), and quotient/reclassification (frame degrees remain physically present as three gauge qubits, so not physical blanking).
 Escape conditions (negative claims): The theorem explicitly does NOT say frame retirement is broadly impossible — it is strictly narrower than a no-go for non-Clifford or subsystem maps, and enlarging the target/gauge factor only changes the inequality to 64D > 8D without helping. Broad negative gate FAIL / DO NOT SHIP.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Shipped exact rank theorem: the full lawful Cycle-553 sink has six independent branch qubits, so the requested 64-to-8 compression is SHARPLY FALSIFIED for the Clifford/symplectic route; the theorem explicitly does NOT say frames [are impossible] - scope held.
 
@@ -32,7 +34,8 @@ Shipped exact rank theorem: the full lawful Cycle-553 sink has six independent b
 - Source commit: `1192dc68cc8ae37677cefad731c6d782df95b1cd`
 - git blob: `61a9710427ca69f0f97a8faaa5d3aec7d07e6229`
 - sha256: `cd2a13f0949e7372e2ac97fb3c655ee8801c1200aa87ee15b75947692b154435`
-- Lines: 571; runners named: scripts/physical_relational_frame_compression_isometry_cycle556_2026_07_21.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2998_PHYSICAL_RELATIONAL_FRAME_COMPRESSION_ISOMETRY_CYCLE556_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/2998_PHYSICAL_RELATIONAL_FRAME_COMPRESSION_ISOMETRY_CYCLE556_NOTE_2026-07-21.md)
+- Lines: 571; runners named: historic runner (unpinned, not in this packet): `scripts/physical_relational_frame_compression_isometry_cycle556_2026_07_21(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

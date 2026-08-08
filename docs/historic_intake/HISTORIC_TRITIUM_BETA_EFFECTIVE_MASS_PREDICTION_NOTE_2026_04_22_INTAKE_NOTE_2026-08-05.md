@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_prediction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A single-valued Majorana-phase-independent prediction m_beta =
 Scope: Retained light-neutrino surface plus PDG PMNS NO; does not close the solar-gap lane, derive PMNS angles, or address the M_R = 0 Dirac surface.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsifiable single-valued m_beta = 9.86 meV prediction (Majorana-phase-independent) — with the observable-corrected input flagged.
 
@@ -32,7 +34,8 @@ Falsifiable single-valued m_beta = 9.86 meV prediction (Majorana-phase-independe
 - Source commit: `0009ff9fd09141790e40f399a29ced192123deea`
 - git blob: `10abc2194fe951ca9197457e1d788224e1359958`
 - sha256: `c3922b4c0809c2466de6107cee4e0bb6248650dfc2a33447b418c71c6e06799c`
-- Lines: 124; runners named: scripts/frontier_tritium_beta_mass_prediction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2079_TRITIUM_BETA_EFFECTIVE_MASS_PREDICTION_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch07/2079_TRITIUM_BETA_EFFECTIVE_MASS_PREDICTION_NOTE_2026-04-22.md)
+- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_tritium_beta_mass_prediction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ m_2 is observable-corrected via the measured Delta m^2_21 rather than derived, a
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_prediction
 intake_directive: owner_2026-08-05
 ```
 

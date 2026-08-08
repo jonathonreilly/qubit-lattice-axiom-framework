@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis_prediction_summary
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Lorentz violation YES (dim-6, a^2 p^4), CPT violation NO — a
 Scope: Predictions at Planck lattice spacing; suppression (E/E_Pl)^2 ~ 1e-38 at 1 GeV, below all current bounds by at least 6 orders, closest approach ~2 orders in photon birefringence at TeV.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean classification: dim-6 Lorentz violation YES, CPT violation NO (all SME-odd coefficients zero) — with the Greenberg-converse argument.
 
@@ -32,7 +34,8 @@ Clean classification: dim-6 Lorentz violation YES, CPT violation NO (all SME-odd
 - Source commit: `5b723e41720e159fa261b4cbbf23d32ad30f09c4`
 - git blob: `14f75e6dbd5739e9b8c9fdcb42ec2bc7fc12c1a6`
 - sha256: `741e7d6b83b107b75f01599358329d491a6893b5be1e2800663737113d00c7fe`
-- Lines: 183; runners named: scripts/frontier_lorentz_violation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1122_LORENTZ_VIOLATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1122_LORENTZ_VIOLATION_NOTE.md)
+- Lines: 183; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lorentz_violation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis_prediction_summary
 intake_directive: owner_2026-08-05
 ```
 

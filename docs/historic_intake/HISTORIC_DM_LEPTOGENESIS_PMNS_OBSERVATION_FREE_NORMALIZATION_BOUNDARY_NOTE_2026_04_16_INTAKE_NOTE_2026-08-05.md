@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Not yet - the observational closure surface is still doing rea
 Scope: Boundary on the CURRENT exact reduced-domain stack only, not a permanent impossibility.
 Escape conditions (negative claims): The negative is conditioned on the current bank's bounded observation-free searches and the one-parameter family Phi_a; deriving the coefficient a natively (e.g. from a canonical first-order transport-response law) escapes it, as does a theorem-grade global selector beyond the local rewrite.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Observation-free normalization no-go: the stack cannot replace eta/eta_obs = 1 by a native value law — the observational surface is doing real work; conditioned escapes stated.
 
@@ -32,7 +34,8 @@ Observation-free normalization no-go: the stack cannot replace eta/eta_obs = 1 b
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `deb98cfe97cb9f674cd0e156d1c9f033fdc751f2`
 - sha256: `0d962a3b48a73b97113fd7888dbdd75f2a86e43eb9aabd0b60a86098ea5f2574`
-- Lines: 141; runners named: scripts/frontier_dm_leptogenesis_pmns_observation_free_normalization_boundary.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/374_DM_LEPTOGENESIS_PMNS_OBSERVATION_FREE_NORMALIZATION_BOUNDARY_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/374_DM_LEPTOGENESIS_PMNS_OBSERVATION_FREE_NORMALIZATION_BOUNDARY_NOTE_2026-04-16.md)
+- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_observation_free_normalization_boundary(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

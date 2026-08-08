@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: You cannot skip the RGE — the lattice pole lives at the Plan
 Scope: Free staggered propagator pole plus 1-loop CW with SM couplings at Lambda = M_Planck.
 Escape conditions (negative claims): A non-perturbative mechanism generating the full hierarchy is the named alternative to the RGE route.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Planck-degeneracy fact: all eight corner eigenvalues at 2 M_Pl — you cannot skip the RGE; kills the direct-readout dream exactly.
 
@@ -32,7 +34,8 @@ The Planck-degeneracy fact: all eight corner eigenvalues at 2 M_Pl — you canno
 - Source commit: `fb4d882b586b3983f9cc6a2db7fe4f97eed84ab0`
 - git blob: `e5b5cd454f8d23b9757aad7471953140a65e0588`
 - sha256: `c7a3d6b76129218aab9e4dfb5d8908aa9f58703dcfdc8bb435a3fdf8ec8e413a`
-- Lines: 78; runners named: scripts/frontier_yt_direct_pole.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2175_YT_DIRECT_POLE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2175_YT_DIRECT_POLE_NOTE.md)
+- Lines: 78; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_direct_pole(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

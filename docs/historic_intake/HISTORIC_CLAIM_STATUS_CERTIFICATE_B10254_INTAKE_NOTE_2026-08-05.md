@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_claim_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Self-review PASS at audit-grade, with two hostile-review press
 Scope: Charged-lepton Koide Q = 2/3 only; delta = 2/9, the Brannen phase, v_0 and the quark sector are explicitly not closed.
 Escape conditions (negative claims): P1's own escape is stated: if independent audit judges the strict-reading inference to remain interpretive, V8 should be downgraded to support (the V4 framing) or the chain revised.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 certified proposed_retained on all seven criteria for the five-piece OP-composed chain, twelve days after sibling notes resolved TRUE_NO_PREDICTION on the same surface; P1's own escape condition is stated in-note. Audit must adjudicate the pair against the negative record (10010, 10100, 10298, 10235).
 
@@ -32,7 +34,8 @@ OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 cert
 - Source commit: `7f76682238b8e2675f362ff2e529ae5d91320666`
 - git blob: `0b457a9fe8d1878ead2619f119b548fe3025fa84`
 - sha256: `0ea910b936cf4a4f44ab0751535d9649d484569010ec14a9ac7b0cf2c7f2c1d4`
-- Lines: 159; runners named: scripts/frontier_koide_q_op_locality_source_domain_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10254_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10254_CLAIM_STATUS_CERTIFICATE.md)
+- Lines: 159; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_op_locality_source_domain_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,13 +43,19 @@ OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 cert
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 certified proposed_retained on all seven criteria for the five-piece OP-composed chain, twelve days after sibling notes resolved TRUE_NO_PREDICTION on the same surface; P1's own escape condition is stated in-note. Audit must adjudicate the pair against the negative record (10010, 10100, 10298, 10235).
-- Cross-stratum reference from packsci01 idx 10235 (`.claude/science/physics-loops/audit-unblock-block149-20260621/NO_GO_LEDGER.md`, decision PULL) — Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
-- Cross-stratum reference from packsci01 idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, decision PULL) — The full A_min-to-Q chain: locality via PHYSICAL_LATTICE_NECESSITY section 9 plus OP Theorems 1+2 gives the unique additive CPT-even scalar, claiming to RETIRE the observed m_e/m_mu/m_tau and Q_obs pins; the strict-reading inference is the named escape. CONTRADICTION SET with 10254 against the negative record (10010, 10100, 10298, 10235); its load-bearing locality authority is demoted by 10155. Highest-priority audit adjudication in this stratum.
+- Attaches across strata to [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 certified proposed_retained on all seven criteria for the five-piece OP-composed chain, twelve days after sibling notes resolved TRUE_NO_PREDICTION on the same surface; P1's own escape condition is stated in-note. Audit must adjudicate the pair against the negative record (10010, 10100, 10298, 10235).
+- Cross-stratum reference from packsci01 [idx 10235](HISTORIC_NO_GO_LEDGER_B10235_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/audit-unblock-block149-20260621/NO_GO_LEDGER.md`, decision PULL) — Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
+- Cross-stratum reference from packsci01 [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, decision PULL) — The full A_min-to-Q chain: locality via PHYSICAL_LATTICE_NECESSITY section 9 plus OP Theorems 1+2 gives the unique additive CPT-even scalar, claiming to RETIRE the observed m_e/m_mu/m_tau and Q_obs pins; the strict-reading inference is the named escape. CONTRADICTION SET with 10254 against the negative record (10010, 10100, 10298, 10235); its load-bearing locality authority is demoted by 10155. Highest-priority audit adjudication in this stratum.
 
 ## Flags carried
 
 OVERCLAIM RISK, HIGH PRIORITY: this is the strongest positive Koide claim in the stratum (proposed_retained for Q = 2/3) and it is bracketed by an earlier TRUE_NO_PREDICTION verdict and a later 'bounded pin' classification. The load-bearing new piece is admitted to be an interpretive strict reading. Review-loop was branch-local self-review only.
+
+## Review flags (review-loop 2026-08-08)
+
+- F10 (EQUIVALENT_STRENGTH_GAP, shared with the block-01 chain wrapper, quoted from review): the pinned runner behind this certified chain evaluates the descent only at the inserted value z=0 and marks chain availability with literal True flags; the certificate itself names the strict-locality inference and physical-lepton-domain membership as hostile-review pressure points. The V8 seven-criteria PASS record is algebra-only support, not closure of those obligations.
+
+These flags quote review-loop iteration 1 findings (Sol, 2026-08-08) for the future auditor. History is immutable: the pinned original and its runner are unchanged; this wrapper remains registration-only.
 
 ## Audit fields
 
@@ -54,6 +63,7 @@ OVERCLAIM RISK, HIGH PRIORITY: this is the strongest positive Koide claim in the
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

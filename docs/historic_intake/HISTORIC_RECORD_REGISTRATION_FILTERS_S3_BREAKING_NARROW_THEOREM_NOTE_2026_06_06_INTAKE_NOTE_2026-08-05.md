@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The S_3-breaking direction is unregistrable, so it is neither 
 Scope: C^3 generation orbit with the retained C_3-character bridge; scoped to the registration map, per N5 discipline.
 Escape conditions (negative claims): Explicitly does not assert the S_3 breaking cannot be sourced by some future structure outside the registration map.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Registration theorem: the S_3-breaking direction is UNREGISTRABLE (D(M) registers only circulant content) — reclassifies a standing derivation target.
 
@@ -32,7 +34,8 @@ Registration theorem: the S_3-breaking direction is UNREGISTRABLE (D(M) register
 - Source commit: `4f4ef2f04da94d136f175583a6ca722a99841103`
 - git blob: `ba55f40670b238990891df241d8981f58ccb56c8`
 - sha256: `c142525aec79fc6885652054a42eb69e4b6fc93a5a9692c1eb9bffbd0f03995b`
-- Lines: 156; runners named: scripts/frontier_record_registration_filters_s3_breaking.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1787_RECORD_REGISTRATION_FILTERS_S3_BREAKING_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch06/1787_RECORD_REGISTRATION_FILTERS_S3_BREAKING_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 156; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_record_registration_filters_s3_breaking(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Reclassifies a standing derivation gap as unregistrable rather than closing it, 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

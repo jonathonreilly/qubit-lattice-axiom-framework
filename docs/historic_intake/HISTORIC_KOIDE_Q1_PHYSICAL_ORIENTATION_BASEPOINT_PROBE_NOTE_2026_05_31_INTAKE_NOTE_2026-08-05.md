@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: P_ORIENT is not fully closed — the honest boundary narrows f
 Scope: Bounded support: the orientation carrier is identified but the selected-line endpoint/source/readout law is not derived.
 Escape conditions (negative claims): Five current firewalls are listed (taste-cube microscopic source law open, physical-carrier reading gated by the staggered-Dirac target, based endpoint is additional physical data, APS+parity leaves the identification open, PMNS forward-cycle convention disclaims unique forward/backward selection).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 P_ORIENT advanced: the bridge generator g IS the proper spatial C_3[111] rotation about the body diagonal — orientation narrowed from 'derive the frame' to one physical selection; five firewalls listed.
 
@@ -32,7 +34,8 @@ P_ORIENT advanced: the bridge generator g IS the proper spatial C_3[111] rotatio
 - Source commit: `1c0aade3eb5d9ecacb1fdab79c1019c1bb9afe5e`
 - git blob: `97080c196b19b932ba56fa878164eea9194e060c`
 - sha256: `cb2387501d643bbe749df2befe540e391284f494afc21f0db5c2a24a90a8239f`
-- Lines: 158; runners named: scripts/frontier_koide_q1_physical_orientation_basepoint_probe.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/903_KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md](../../archive_unlanded/historic_intake_originals/branch03/903_KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md)
+- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_physical_orientation_basepoint_probe(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

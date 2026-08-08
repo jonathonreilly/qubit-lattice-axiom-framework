@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Yes for existence (conditional), no for the scale - the v-scal
 Scope: The existence support is conditional on the Mexican-hat shape - the mu^2 < 0 input is a separate EWSB-pattern input not supplied by mass=recordedness; no PDG values, v = 246 GeV not used.
 Escape conditions (negative claims): The wall is route-specific: it prunes only the 'fix v from durability' route because durability is scale-free. Alternative routes to fix v (RG running / exponent-16, the M_Pl import, dynamical relaxation) live in the separate hierarchy lane with its own standing obstructions.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 EWSB existence from record durability (V''<0 not durable) but NOT the scale — a clean conditional theorem with the route-specific wall honest.
 
@@ -32,7 +34,8 @@ EWSB existence from record durability (V''<0 not durable) but NOT the scale — 
 - Source commit: `6d53de31a5c01f90e41bb741c09390a39601f485`
 - git blob: `c67034417352f3a29699db2f88a1c3348df83600`
 - sha256: `5760b9fc59ab7c2146c097d0f38bba2dee5db5f8ccf3368392a66b1108176bda`
-- Lines: 85; runners named: scripts/audit_companion_ewsb_existence_from_durability_not_scale_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/447_EWSB_EXISTENCE_FROM_DURABILITY_BUT_NOT_THE_SCALE_BOUNDED_SUPPORT_AND_WALL_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/447_EWSB_EXISTENCE_FROM_DURABILITY_BUT_NOT_THE_SCALE_BOUNDED_SUPPORT_AND_WALL_NOTE_2026-06-06.md)
+- Lines: 85; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_ewsb_existence_from_durability_not_scale_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The two Cycle-738 conditions did not survive contact with the 
 Scope: Theorem status is 'unconditional_for_admissible_b_le_12_with_amended_predicate'; beyond b = 12 the placement tables end, which is a new construction rather than a conjecture or a wall.
 Escape conditions (negative claims): The b <= 12 boundary is explicitly a finite-table property of the landed module with an exact IndexError witness, not an impossibility — escaped by enlarging the placement tables or making the mapper table-parameterized.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Both Cycle-738 identities were WRONG as stated; corrected to a six-term radius-one formula with a finite-table boundary — corrections against a shipped block.
 
@@ -32,7 +34,8 @@ Both Cycle-738 identities were WRONG as stated; corrected to a six-term radius-o
 - Source commit: `468cacdf2e56087d51bcdcf2dcaec5d714d220c6`
 - git blob: `478bfdd961ef4c5a437614568a45c7aadd0e16ac`
 - sha256: `7643e7fd4dbbb52085c1c3e2ac64d4707afb3fc76bdbf9db295063f3293da149`
-- Lines: 105; runners named: scripts/frontier_cycle739_identity_discharge_2026_07_28.py, scripts/frontier_cycle739_discharge_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/724_IDENTITY_DISCHARGE_CYCLE739_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch03/724_IDENTITY_DISCHARGE_CYCLE739_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 105; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle739_identity_discharge_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle739_discharge_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Freezes two corrections to the campaign's own prior statements (four-term predic
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

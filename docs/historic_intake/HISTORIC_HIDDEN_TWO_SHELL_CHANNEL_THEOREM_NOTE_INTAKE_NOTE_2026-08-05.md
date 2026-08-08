@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The rooted hidden sector is a genuine finite local shell hiera
 Scope: The one-step image of the n = 5 hidden quotient sector; a one 4-cube boundary plus two shared exterior 3-cells defect class.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Hidden-shell terminal: the second shell does NOT compress (226 orbits and growing) — kills the small-alphabet closure hope with exact counts.
 
@@ -32,7 +34,8 @@ Hidden-shell terminal: the second shell does NOT compress (226 orbits and growin
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `608d7d153c0d76248b8d0bf52c4c377d5965e5fa`
 - sha256: `388d97660c53feba132ed3974a8c884a3d6a2c7f8038b5246d3b3d4063e9b83e`
-- Lines: 133; runners named: scripts/frontier_hidden_two_shell_channel_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/676_HIDDEN_TWO_SHELL_CHANNEL_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/676_HIDDEN_TWO_SHELL_CHANNEL_THEOREM_NOTE.md)
+- Lines: 133; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hidden_two_shell_channel_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Records that the second shell does NOT compress to a small kernel, which weakens
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

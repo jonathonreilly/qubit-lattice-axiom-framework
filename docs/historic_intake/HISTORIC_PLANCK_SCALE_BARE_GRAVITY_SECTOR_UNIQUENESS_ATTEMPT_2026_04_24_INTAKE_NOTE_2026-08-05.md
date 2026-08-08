@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_b3_reduction_no_go_theorem
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Not yet - the conditional metric-sector uniqueness holds, but 
 Scope: Retained local event/translation algebra plus finite locality, 3+1 time-lock, tensorial covariance, additivity, second-order continuum consistency, no extra background fields and nondegenerate propagation.
 Escape conditions (negative claims): Escaped by deriving that primitive translation defects are represented by one soldered metric/coframe variable whose local frame redundancy yields the conserved symmetric spin-2 response Ward identity (delta S_matter = (1/2) int sqrt(|g|) T^{mu nu} delta g_{mu nu}).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 B3 status OPEN with the finite long-distance symbol menu and the exact missing representation statement — the hard target scoped.
 
@@ -32,7 +34,8 @@ B3 status OPEN with the finite long-distance symbol menu and the exact missing r
 - Source commit: `4eae7f6e94c3db917fa1c090431104a6d231566c`
 - git blob: `3051453241472a84fa7f244528f00ca05644245f`
 - sha256: `2ef8e2389ea83d96e97133e58363f4d1de7a6a468d716ac5291656d40ef9d199`
-- Lines: 219; runners named: scripts/frontier_planck_bare_gravity_sector_uniqueness_attempt.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1381_PLANCK_SCALE_BARE_GRAVITY_SECTOR_UNIQUENESS_ATTEMPT_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch05/1381_PLANCK_SCALE_BARE_GRAVITY_SECTOR_UNIQUENESS_ATTEMPT_2026-04-24.md)
+- Lines: 219; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_gravity_sector_uniqueness_attempt(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_b3_reduction_no_go_theorem
 intake_directive: owner_2026-08-05
 ```
 

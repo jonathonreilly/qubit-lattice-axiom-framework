@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: NO-GO with an exact residual: nothing that weighs 878's events
 Scope: Verdicts hold for every bridge map and every positive normalizer because the left side is AST-verified (configuration, theta)-free; one loud caveat — the 878 event-space side is a consistency REBUILD of the weighting layer, not an independent re-derivation, because the Cycle-863 dependency is absent from this branch.
 Escape conditions (negative claims): The escape is a sixth weighting carrying five named properties — P1 configuration arity (8 classes required, 1 supplied), P2 kernel arity (degree-4 Chebyshev, 5 coefficients per cell, 0 supplied), P3 the config-dependent zero set (42/648), P4 the off-record locus (844 outside vs 8 inside), P5 a window argument — with the checker's constructed BRIDGE-A defeating theorem C894-T1 outright yet still failing on the seven theta-moving configurations, so P1 alone buys nothing and P2 must come first.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact 25-cell interface no-go (all five weightings fail all five requirements) with the sixth-weighting escape named and a planted-survivor control that caught two real bugs.
 
@@ -32,7 +34,8 @@ Exact 25-cell interface no-go (all five weightings fail all five requirements) w
 - Source commit: `5daac2ff937f62d0b7977316c519849c9689f06d`
 - git blob: `4ccb8a5feaf5ca9a32ad8f3180a564d0fa07b848`
 - sha256: `4bcdfe6b1b29975f2dc0ec5de58b1a785163c8d84a1c77534b3dc02313fc18d6`
-- Lines: 195; runners named: scripts/frontier_cycle894_interface_attack_2026_07_28.py, scripts/frontier_cycle894_interface_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/728_INTERFACE_NOGO_FIVE_WEIGHTINGS_CYCLE894_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch03/728_INTERFACE_NOGO_FIVE_WEIGHTINGS_CYCLE894_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 195; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle894_interface_attack_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle894_interface_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ A planted-survivor control exposed two real verdict-cell bugs (an IF3 conjunctio
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

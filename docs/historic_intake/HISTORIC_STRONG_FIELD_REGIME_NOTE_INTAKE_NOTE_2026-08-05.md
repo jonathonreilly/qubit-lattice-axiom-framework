@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Honest negative: the framework does not contain strong-field G
 Scope: Discrete path-sum propagator with cos^2 kernel and 1/L^p attenuation; horizon radius fit r_h = 0.048*ms + 0.76 (R^2 = 0.986) versus expected 0.080*ms.
 Escape conditions (negative claims): Two named escapes: a normalized kernel that enforces unitarity, or a field equation that self-consistently limits f < 1; a true horizon would require an amplitude-attenuation mechanism absent from S = L(1-f).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The non-unitarity diagnosis: transfer spectral radius > 1 at ALL field strengths — the framework does not contain strong-field GR; reclassifies the Hawking-analog result; two escapes named.
 
@@ -32,7 +34,8 @@ The non-unitarity diagnosis: transfer spectral radius > 1 at ALL field strengths
 - Source commit: `2dfb2c7e50276de5d4a3d64233392d5503a03c25`
 - git blob: `ddf50a3e8cf828efc8c14bd0accf022d30d226fb`
 - sha256: `5f64e26c507b513ee403c79376bc59dffda76a92bd0de2a2132c0fe9541cea8b`
-- Lines: 162; runners named: scripts/frontier_strong_field_regime.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2001_STRONG_FIELD_REGIME_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2001_STRONG_FIELD_REGIME_NOTE.md)
+- Lines: 162; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_strong_field_regime(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Reclassifies a previously reported 'Hawking analog' amplification as a propagato
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

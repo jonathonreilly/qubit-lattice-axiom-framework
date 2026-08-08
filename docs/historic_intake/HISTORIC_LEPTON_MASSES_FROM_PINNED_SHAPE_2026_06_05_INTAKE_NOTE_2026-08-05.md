@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The pinned shape reproduces the observed charged-lepton mass r
 Scope: Forward accounting only; r=1/2 and theta=2/9 remain the AC_phi_lambda Tier-A import and the scale remains the units-only scale_reference_primitive. PDG is a labelled comparator, not a derivation input for the shape.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The pinned lepton shape reproduces mass ratios to 7e-5 — WITH the honest flag that theta = 2/9 is not the best-fit Brannen angle.
 
@@ -32,7 +34,8 @@ The pinned lepton shape reproduces mass ratios to 7e-5 — WITH the honest flag 
 - Source commit: `a0d0e2f80bb5af45e43290d940423035aae5b45e`
 - git blob: `4cd1ac1b1b61972f4f0527370cbb6451d72d96de`
 - sha256: `a6afdfbd82ea560b86bfbb1978b9093b0eaab06490f95d0318e9169d3d7efaa4`
-- Lines: 221; runners named: scripts/cl3_lepton_masses_from_pinned_shape_2026_06_05.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1104_LEPTON_MASSES_FROM_PINNED_SHAPE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch04/1104_LEPTON_MASSES_FROM_PINNED_SHAPE_2026-06-05.md)
+- Lines: 221; runners named: historic runner (unpinned, not in this packet): `scripts/cl3_lepton_masses_from_pinned_shape_2026_06_05(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Honestly reports that theta=2/9 is NOT the best-fit Brannen phase: theta_fit = 0
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

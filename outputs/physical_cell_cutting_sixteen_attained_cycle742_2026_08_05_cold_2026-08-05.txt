@@ -1,0 +1,57 @@
+PASS G01  table 15800 by 192, rank 88, kernel dim 104, eight readings consistent
+PASS G02  every piece lies in exactly 1975 cuttings, an odd count
+PASS G03  the eight readings come in R8 order and every reading weight is even
+PASS G04  XOR laws four+six+seven=one, four+six=seven-flip, one+four=four-flip
+PASS G05  four piece orbits of size 48, first-appearance labels, first piece in orbit 0
+PASS G06  all 48 column permutations verified as symmetries of the 192 pieces
+PASS G07  single-orbit ranks 48 48 41 41
+PASS G08  augmented ranks at four rise to 49 49 42 42
+PASS G09  four, six, six-flip, seven, seven-flip inconsistent on every single orbit
+PASS G10  pair kernel dims 15 16 16 27 27 37 for P01 P12 P03 P13 P02 P23
+PASS G11  P01 keeps zero four six seven-flip; the other five keep zero one four four-flip
+PASS G12  both consistent sets are order-four XOR subgroups meeting in zero and four
+PASS G13  six-flip and seven stay inconsistent on all six pairs and all four singles
+PASS G14  P01 dim 15 kernel total 32768 bins 0:1 16:18 24:176 32:1167 40:5712 48:18620 56:5712 64:1167 72:176 80:18 96:1
+PASS G15  P01 kernel palindromic, weights divisible by eight, all-ones word inside it
+PASS G16  P01 four total 32768 bins 16:24 24:176 32:1152 40:5712 48:18640 56:5712 64:1152 72:176 80:24
+PASS G17  P01 six and seven-flip cosets sit at constant weight 48, 32768 words each
+PASS G18  P12 dim 16 kernel total 65536 min nonzero 12 bins 0:1 12:8 16:12 24:140 28:144 32:441 84:8 96:1
+PASS G19  P12 four minimum weight 28 with count 72 and no weight-16 word
+PASS G20  P12 four-flip minimum 32 bins 32:192 34:576 36:592 38:768
+PASS G21  P12 one bins 12:16 22:48 24:64 26:48 and nothing at 13 through 21
+PASS G22  P03 dim 16 matches P12 bin for bin on all four cosets, no weight-16 four word
+PASS G23  P13 dim 27 for four and for four-flip, each coset totals 134217728 words
+PASS G24  P13 kernel min nonzero 12 bins 0:1 12:80 16:24 18:80 20:528
+PASS G25  P13 four min 16 bins 16:6 18:0 20:0 22:144
+PASS G26  P13 four-flip min 22 bins 22:48 24:320
+PASS G27  P02 matches P13 bin for bin on all three cosets, six weight-16 four words each
+PASS G28  census 24 + 6 + 6 = 36 distinct weight-16 four-carriers, every one re-verified
+PASS G29  48-symmetry splits P01 6 6 6 6, P13 6, P02 6, each stabilizer of order 8
+PASS G30  the Gram matrix of the table has constant diagonal 1975
+PASS G31  all 15800 cuttings carry distinct piece supports
+PASS G32  the anchored and the two seeded colour refinements are all discrete
+PASS G33  b0 is an order-two piece permutation with a matching cutting permutation
+PASS G34  b0 fixes all eight readings
+PASS G35  b0 orbit rows (0,48,0,0) (48,0,0,0) (0,0,0,48) (0,0,48,0), outside the 48
+PASS G36  b1 is an order-two piece permutation with a matching cutting permutation
+PASS G37  b1 fixes all eight readings
+PASS G38  b1 orbit rows (8,8,16,16) (8,8,16,16) (16,16,8,8) (16,16,8,8), outside the 48
+PASS G39  b0 and b1 are different permutations
+PASS G40  the 48 together with b0 and b1 act on the 192 pieces with one orbit, transitive
+PASS G41  propagating the census gives 120 words, each re-verified at weight 16 for four
+PASS G42  orbit profiles (0,0,8,8):36 (0,8,0,8):6 (4,4,4,4):24 (6,6,2,2):24 (8,0,8,0):6 (8,8,0,0):24
+PASS G43  48 of the 120 meet at least three orbits; the 36 flat words sit inside pair 2,3
+PASS G44  extended-group orbit sizes of the 120 are 12 12 24 24 48
+PASS G45  four-flip carrier of weight 20, orbit profile (0,0,12,8)
+PASS G46  six carrier of weight 24, orbit profile (6,6,6,6)
+PASS G47  six-flip carrier of weight 24, orbit profile (7,5,5,7)
+PASS G48  seven carrier of weight 30, orbit profile (11,7,7,5)
+PASS G49  seven-flip carrier of weight 30, orbit profile (7,5,11,7)
+PASS G50  the b0 image of the six witness is a second six-carrier of weight 24
+PASS G51  odd column sums bar odd sizes, the previous cycle swept every even size to 14, and 16 is reached
+PASS G52  four sits at 16 exactly; four-flip [16,20]; six [16,24]; six-flip [16,24]; seven [16,30]; seven-flip [16,30]
+PASS G53  the reading one is no charge: 16 carriers of weight 12 already inside pair 1,2
+PASS G54  the whole runner finishes under 700 seconds inside 2500 MB
+PASS G55  its output stays under 5500 characters
+
+TOTAL: PASS=55 FAIL=0

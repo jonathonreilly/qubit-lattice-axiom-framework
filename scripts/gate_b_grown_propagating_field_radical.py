@@ -548,6 +548,52 @@ def main() -> None:
     print("  the promoted observable is the detector-line phase ramp")
     print("  if the phase ramp and escape stay flat once the feedback field is")
     print("  self-consistent, this is a bounded no-go for the radical attempt")
+    print()
+    print("N5 EXECUTION CERTIFICATE")
+    print(
+        "  per_element: checked and not executed - the finest object the "
+        "propagation builds is a directed-edge amplitude factor, exp(i(K act + "
+        "phase)) times the angular weight exp(-BETA theta^2) times h^2/L^2 with "
+        "the coupling read from the average of the field at the two endpoints, "
+        "but that factor is consumed straight into the accumulating amplitude and "
+        "is never stored, compared or reported, so no edge and no matrix position "
+        "is resolved in any output line"
+    )
+    print(
+        "  per_site: node-level detail is where this probe does its work - every "
+        "node carries its own grown position, its own static source value "
+        "FIELD_STRENGTH divided by r + FIELD_EPS with FIELD_EPS = 0.1, and its "
+        "own complex amplitude, and the mass source itself is picked as the "
+        "single node of layer 2*NL//3 that minimizes y squared plus (z - 3.0) "
+        "squared, so one specific node and not a region is what sources the field"
+    )
+    print(
+        "  per_mode: checked and not executed - the transverse structure is handled "
+        "entirely in position space, since the layer smoothing applies a "
+        "four-neighbour discrete Laplacian on the (iy, iz) mesh rather than any "
+        "spectral filter, and nothing anywhere is carried into a wavevector or "
+        "eigenbasis, so there is no index by which a mode could be named let "
+        "alone resolved"
+    )
+    print(
+        "  per_block: the twenty-five grown layers are the blocks and the feedback "
+        "construction is explicitly block-recursive - each layer's real and "
+        "imaginary feedback is LAYER_MEMORY = 0.72 of the previous layer's value "
+        "plus the remaining 0.28 of that layer's own centred and smoothed density "
+        "or current, with layer 0 seeded from the single origin node and the "
+        "final layer serving as the detector over which escape and phase ramp are "
+        "read"
+    )
+    print(
+        "  lattice_wide: the whole-lattice operations are real but finite and are "
+        "reported as such - _normalize_layers divides by the maximum taken across "
+        "every layer at once, the residual is a mean over all nodes, and the "
+        "alpha = 0 reduction is exact by construction with escape identically 1 "
+        "because the reference and the test amplitudes are the same object; all "
+        "of this is one grown row of twenty-five layers on a 33 by 33 transverse "
+        "mesh from a single seed, with no sweep in layer count or width and no "
+        "limit taken"
+    )
     print(f"\nTotal time: {time.time() - t0:.1f}s")
 
 

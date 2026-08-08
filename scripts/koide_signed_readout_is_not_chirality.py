@@ -202,29 +202,35 @@ check("B: the anticommuting operator's EIGENVALUE readout is Q=infinity, NOT 2/3
 # Statement C (the equivalence test): is there ANY nonzero Hermitian H that BOTH
 #   (i) anticommutes with Gamma_chi AND (ii) is a circulant (signed spectrum class)?
 #   Retained no-go: comm(R) ∩ anticomm(Gamma_chi) = {0}. Re-verify directly:
-av, bv, cv = sp.symbols('av bv cv', real=True)
-H_circ_real = av*I3 + bv*R + cv*(R**2)          # real circulant (commutes with R)
-# Hermitian real circulant requires symmetric: b = c
-H_circ_sym = H_circ_real.subs(cv, bv)
+av, bvr, bvi = sp.symbols('av bvr bvi', real=True)
+bv = bvr + sp.I*bvi
+H_circ_herm = av*I3 + bv*R + sp.conjugate(bv)*(R**2)
+# Preserve the original real-symmetric sub-check while solving the kernel below
+# on the full Hermitian class, including i(R-R^2).
+H_circ_sym = av*I3 + bvr*(R + R**2)
 check("real Hermitian circulant requires b=c (symmetric)",
       sp.simplify(H_circ_sym - H_circ_sym.T) == sp.zeros(3,3))
-anti_circ = sp.simplify(H_circ_sym*Gam + Gam*H_circ_sym)
-sol = sp.solve([anti_circ[i,j] for i in range(3) for j in range(3)], [av, bv], dict=True)
-# Only solution should be av=bv=0
-trivial = (sol == [] ) or all(s.get(av,0)==0 and s.get(bv,0)==0 for s in sol) or \
-          (sp.simplify(anti_circ.subs({av:1,bv:0})) != sp.zeros(3,3))
-# direct: solve anticommutation forces av=bv=0
-forced = sp.solve([sp.Eq(anti_circ[i,j],0) for i in range(3) for j in range(3)], [av,bv], dict=True)
-only_zero = (len(forced)==0) or all((sp.simplify(s.get(av,av))==0 and sp.simplify(s.get(bv,bv))==0) for s in forced)
+anti_circ = sp.simplify(H_circ_herm*Gam + Gam*H_circ_herm)
+# Directly solve anticommutation on the full three-real-parameter Hermitian class.
+forced = sp.solve(
+    [sp.Eq(anti_circ[i,j],0) for i in range(3) for j in range(3)],
+    [av, bvr, bvi],
+    dict=True,
+)
+only_zero = forced == [{av: 0, bvr: 0, bvi: 0}]
 # Robust check: the ONLY circulant anticommuting with Gamma_chi is 0
-H_test = H_circ_sym  # av I + bv(R+R^2)
+H_test = H_circ_herm
 ac = sp.simplify(H_test*Gam + Gam*H_test)
-# ac must vanish identically only when av=bv=0
-ac_at_10 = sp.simplify(ac.subs({av:1, bv:0}))
-ac_at_01 = sp.simplify(ac.subs({av:0, bv:1}))
+# Retain explicit basis probes for the per-element certificate.
+ac_at_100 = sp.simplify(ac.subs({av:1, bvr:0, bvi:0}))
+ac_at_010 = sp.simplify(ac.subs({av:0, bvr:1, bvi:0}))
+ac_at_001 = sp.simplify(ac.subs({av:0, bvr:0, bvi:1}))
 check("C: NO nonzero Hermitian circulant anticommutes with Gamma_chi "
       "(comm(R) ∩ anticomm(Gamma_chi) = {0}, retained no-go)",
-      ac_at_10 != sp.zeros(3,3) and ac_at_01 != sp.zeros(3,3),
+      only_zero and all(
+          basis_image != sp.zeros(3,3)
+          for basis_image in (ac_at_100, ac_at_010, ac_at_001)
+      ),
       "Brannen-Q circulant class and anticommuting class are DISJOINT except at 0")
 
 # Statement D: therefore 'signed Hermitian (circulant) spectrum' is NOT equivalent to chirality.
@@ -345,7 +351,8 @@ print(
     "per_element: checked — the operator identities are resolved entry by entry on "
     "3x3 matrices: Gamma_chi = (2/3)J - I matches the circulant (-1/3, 2/3, 2/3) in "
     "all nine entries, [Gamma_chi, R] and [H_circ, Gamma_chi] vanish in all nine, and "
-    "the circulant/Gamma_chi anticommutator is nonzero at both basis points (1,0), (0,1)."
+    "the circulant/Gamma_chi anticommutator is nonzero on all three Hermitian-"
+    "circulant basis directions I, R+R^2, and i(R-R^2)."
 )
 print(
     "per_site: checked and not executed — every operator here lives on the internal "

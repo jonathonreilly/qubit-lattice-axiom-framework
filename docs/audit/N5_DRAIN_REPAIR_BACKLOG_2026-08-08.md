@@ -33,7 +33,7 @@ drain branches carry the per-item evidence; this file is the routing index.
 ## Fresh-cache/live mismatch rows (28)
 
 Every row below has a cache reading `fresh` (sha-keyed) whose recorded PASS/FAIL
-totals the live runner no longer reproduces. Root causes cluster in two
+totals the live runner no longer reproduces. Most root causes cluster in two
 upstream events: the probability-semantics repository repair (`fb5e056dd`),
 which deleted literal strings that note/registry greps assert, and the
 premise-epoch audit invalidation (`5e74dd6ed`), which reset ledger statuses
@@ -90,7 +90,7 @@ as print-only evidence changes.
 | `theta_mass_determinant_axiom_update_no_go_note_2026-07-04` | live 109/8 vs cached 117/0; parent ledger row reset by epoch invalidation plus wording drift. Repair the narrow source/runner assertions before recaching. |
 | `acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01` | live 117/2 vs cached 119/0; the probability-semantics repair deleted a grepped literal. Bind the check to the intended semantic surface rather than old wording. |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | live 136/4 vs cached 140/0; four grepped phrases were deleted by the same repair. Replace wording-dependent checks with semantic predicates before recaching. |
-| `koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector` | review found `E_perp = 6|b|^2`, so two-dimensional Lebesgue log-volume gives `2 log|b| = log E_perp + const` (the F1 coefficient), not `2 log Eperp` (the F3 coefficient); the runner's decisive “F3 naturally” predicate is literal `True`. Correct or demote the measure inference, bind the corrected statement to a real predicate, regenerate an authentic cache, and only then add the certificate. |
+| `koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector` | review found `E_perp = 6|b|^2`, so two-dimensional Lebesgue log-volume gives `2 log|b| = log E_perp + const` (the F1 coefficient), not `2 log E_perp` (the F3 coefficient); the runner's decisive “F3 naturally” predicate is literal `True`. Correct or demote the measure inference, bind the corrected statement to a real predicate, regenerate an authentic cache, and only then add the certificate. |
 | `dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_note_2026-04-19` | refreshed and fresh-live outputs changed complete optimizer witness vectors, packs, spectra, entropy values, and root while 12 qualitative predicates stayed green; the optimizer path is not bound to a deterministic witness contract. Choose and document a deterministic seed or remove stochastic witness dependence, verify stable margins, and regenerate an authentic cache before certification. |
 
 ## Nonzero exits and timeouts (18)
@@ -184,7 +184,7 @@ Two distinct ways a cache reads `fresh` while its stdout no longer reproduces:
 
 1. `declared_input_paths` does not cover doc/registry files that runners grep,
    so content drift there never invalidates the cache (mechanism behind most
-   of section A).
+   fresh-cache/live mismatches).
 2. Freshness is keyed on runner sha256, not re-execution, so toolchain drift
    (scipy/BLAS moving an optimizer inside its own tolerance) is invisible
    (mechanism behind the split2 row).

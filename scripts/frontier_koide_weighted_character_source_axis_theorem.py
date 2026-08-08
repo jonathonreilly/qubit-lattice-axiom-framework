@@ -266,12 +266,65 @@ def part5_degenerate_top_never_forces_a_unique_ray() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only, adds no check."""
+    print()
+    print("=" * 88)
+    print("PART 6: N5 EXECUTION CERTIFICATE (RESOLVED GRANULARITY)")
+    print("=" * 88)
+
+    print(
+        "per_element: checked - the weighted kernel is filled in one entry at a "
+        "time by the double loop S[i, j] = Tr(s_i^dag (M_L kron M_R) s_j), and "
+        "the same entries are reproduced symbolically as "
+        "diag(mu0*nu0, mu1*nu2, mu2*nu1) with every off-diagonal simplifying to "
+        "identically zero; the numeric fill agrees to 1e-12, e.g. the diagonal "
+        "12.0, 17.5, 7.5 at (mu, nu) = ((4, 2.5, 1.5), (3, 5, 7))."
+    )
+    print(
+        "per_site: checked and not executed - this runner has no spatial index. "
+        "The two tensor factors it kron's together are the left and right Z_3 "
+        "charge registers of the charged-lepton source triplet, not two lattice "
+        "sites, so nothing here is localized anywhere and no neighbour relation "
+        "or site sum exists to resolve."
+    )
+    print(
+        "per_mode: checked - the Z_3 characters are the modes and each one is "
+        "handled separately. The idempotent e_q = (1/3) sum_k omega^(-q k) T^k "
+        "is built mode by mode from the shift matrix, the orthogonality "
+        "e_p e_q = delta_pq e_p and normalization Tr(e_q) = 1 are verified for "
+        "all nine (p, q), and the class-function weights enter strictly as one "
+        "real number mu_q and nu_q per mode - which is exactly why the kernel "
+        "cannot leave the diagonal."
+    )
+    print(
+        "per_block: checked - the blocks are the three canonical sources "
+        "s_i = e_{q_L(i)} kron e_{q_R(i)} at the distinct charge pairs (0,0), "
+        "(1,2), (2,1); all nine products s_i^dag s_j are evaluated and come back "
+        "delta_ij s_i, so the sources are mutually orthogonal blocks, and the "
+        "no-go is then read off block multiplicities: a unique top gives one "
+        "block (eigenvalues 1, 2, 5, whose top eigenvector aligns with the first "
+        "canonical axis to within 1e-12 and carries Koide Q = 1), a twofold top "
+        "gives two (eigenvalues 1, 7, 7), a threefold top gives all three "
+        "(identity kernel)."
+    )
+    print(
+        "lattice_wide: checked and not executed - no extensive quantity is "
+        "formed and no limit is taken. Everything lives in a fixed "
+        "9-dimensional group algebra C[Z_3] tensor C[Z_3] reduced to a 3 x 3 "
+        "kernel, so the Koide comparison Q_axis = 1 against the cone value 2/3 "
+        "is a statement about one three-component ray, not about any "
+        "lattice-summed observable."
+    )
+
+
 def main() -> int:
     part1_character_source_primitives()
     part2_exact_weighted_kernel_formula()
     part3_plancherel_recovery()
     part4_unique_top_eigenvector_is_axis_and_off_cone()
     part5_degenerate_top_never_forces_a_unique_ray()
+    part6_n5_execution_certificate()
 
     print()
     print("Interpretation:")

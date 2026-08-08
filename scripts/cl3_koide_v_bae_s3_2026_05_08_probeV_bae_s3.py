@@ -1008,6 +1008,59 @@ def section12_verdict_synthesis(c: Counter) -> None:
 
 
 # ----------------------------------------------------------------------
+# SECTION 13 -- N5 execution certificate (print-only; adds no check)
+# ----------------------------------------------------------------------
+
+def section13_n5_execution_certificate() -> None:
+    """Report which resolution granularities this runner actually exercises.
+
+    Reporting only: records no PASS/FAIL and asserts nothing.
+    """
+    print()
+    print("Section 13 -- N5 execution certificate (resolved granularity)")
+    print(
+        "per_element: checked - the two named inputs are handled as explicit "
+        "3 x 3 matrices, C the cyclic shift and P_23 the transposition, with "
+        "unitarity, C^3 = I, P^2 = I and Im(P) = 0 all read off at 0.00e+00 "
+        "error; the Herm_circ basis B_0 = I, B_1 = C + C^2, B_2 = i(C - C^2) is "
+        "built entrywise and the reflection is resolved coordinate by "
+        "coordinate as (a, u, v) -> (a, u, -v)."
+    )
+    print(
+        "per_site: checked and not executed - no Z^3 site is instantiated. The "
+        "Z^3 x C_3 substrate is invoked only to motivate why S_3 is the natural "
+        "symmetry to test, and of that product only the C_3 factor is ever "
+        "represented; the three indices carried through every section are C_3 "
+        "cycle positions on hw = 1, so there is no spatial neighbour or site sum."
+    )
+    print(
+        "per_mode: checked - the C_3 Fourier modes are resolved as the "
+        "eigenvalues of C, {1, omega, omega_bar}, and the decisive negative "
+        "result is stated at that grain: the two non-trivial modes b and b_bar "
+        "are not re-coupled by the reflection but split further into Re b, which "
+        "lands in the S_3-trivial character, and Im b, which lands in the sign "
+        "character."
+    )
+    print(
+        "per_block: checked - the S_3 isotype blocks are counted by character "
+        "inner products, <chi, chi_trivial> = 2, <chi, chi_sign> = 1 and "
+        "<chi, chi_standard> = 0 summing to 3 = dim Herm_circ(3), and each block "
+        "then carries its own Frobenius energy E_triv = 3 a^2 + 6 (Re b)^2 "
+        "against E_sign = 6 (Im b)^2, equal at 3.000000, 4.500000 and 6.000000 "
+        "while |b|^2/a^2 moves through 0.5, 1.0 and 1.5 - the block equality "
+        "does not pin the amplitude ratio."
+    )
+    print(
+        "lattice_wide: checked and not executed - nothing extensive is computed. "
+        "Every quantity in this runner is a functional of the three real "
+        "coordinates (a, Re b, Im b) of a single hw = 1 circulant, so there is no "
+        "volume, no site count and no limit in which a lattice-wide sum could be "
+        "taken; the note's obstruction is the trivial C_3 action on "
+        "Herm_circ(3), which is already visible at fixed finite dimension."
+    )
+
+
+# ----------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------
 
@@ -1032,6 +1085,7 @@ def main() -> int:
     section10_cross_check_probe13(c)
     section11_dependency_disclosure(c)
     section12_verdict_synthesis(c)
+    section13_n5_execution_certificate()
 
     c.summary()
     return 0 if c.failed == 0 else 1

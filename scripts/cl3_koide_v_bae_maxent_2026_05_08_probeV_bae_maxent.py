@@ -912,6 +912,56 @@ check("11.7  Does NOT replace operator-level probes", True,
 
 
 # ----------------------------------------------------------------------
+# Section 12 — N5 execution certificate (print-only; adds no check)
+# ----------------------------------------------------------------------
+
+section("Section 12 — N5 execution certificate (resolved granularity)")
+
+print(
+    "per_element: checked - the Born readout is resolved entry by entry as "
+    "p_x = <x|rho|x> = diag(rho) on the basis {|0>, |1>, |2>}, and because the "
+    "Gibbs state commutes with the C_3 cycle C every one of those three "
+    "diagonal entries comes back at exactly 1/3 (min p_x = 3.333333e-01, "
+    "sum = 1); the circulant H = a I + b C + bbar C^2 is likewise assembled "
+    "and checked Hermitian at the level of its individual 3 x 3 entries."
+)
+print(
+    "per_site: checked and not executed - there is no Z^3 site index anywhere "
+    "in this probe. The whole computation lives on the single internal factor "
+    "hw = 1 ~ C^3, whose three labels are C_3 cycle positions, not lattice "
+    "sites; no spatial neighbour, no hopping and no site sum is formed, so the "
+    "Born density above is a density on the internal basis rather than on space."
+)
+print(
+    "per_mode: checked - the C_3 Fourier modes e_k = (1, omega^k, omega^2k)/"
+    "sqrt(3) carry the substance of the no-go. Each mode gets its own "
+    "eigenvalue lambda_k = a + 2|b| cos(phi - 2 pi k / 3), checked against the "
+    "numerically diagonalized spectrum inside the runner's allclose tolerance, "
+    "and its own Gibbs weight p_k = exp(-beta lambda_k)/Z; "
+    "at the BAE point the per-mode weights are [0.0514, 0.4743, 0.4743] with "
+    "range 0.4230, i.e. explicitly NOT the equipartitioned (1/3, 1/3, 1/3)."
+)
+print(
+    "per_block: checked - the two C_3 isotype blocks are resolved separately "
+    "with their own Frobenius energies, E_+ = 3 a^2 on the 1-real-dimensional "
+    "trivial block and E_perp = 6 |b|^2 on the 2-real-dimensional doublet "
+    "block, verified to saturate ||H||_F^2 at each test point (4.5000, 19.5000, "
+    "5.9999); imposing E_+ = E_perp block by block is exactly the (1, 1) "
+    "multiplicity admission that is algebraically equivalent to BAE, which is "
+    "why it is admitted rather than derived."
+)
+print(
+    "lattice_wide: checked and not executed - despite the thermodynamic "
+    "vocabulary no extensive or large-volume quantity is ever formed. F, S and "
+    "<H> are computed for one fixed 3 x 3 Hamiltonian and swept only in |b| and "
+    "beta, so the C^infinity smoothness across |b|/a = 1/sqrt(2) is a statement "
+    "about a finite-dimensional algebra; no N -> infinity limit, no free-energy "
+    "density and no lattice volume enter, which is the note's own bound on the "
+    "thermodynamic route."
+)
+
+
+# ----------------------------------------------------------------------
 # Final tally
 # ----------------------------------------------------------------------
 

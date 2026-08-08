@@ -130,6 +130,49 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate -- resolved granularity (print-only):")
+    print(
+        "  per_element: checked - the texture is laid out entry by entry as "
+        "rows (a, 0, 0), (0, eps, b), (0, b, eps) with a = A/B = 11.02900629, "
+        "b = 1 and eps = r b, and the structural facts are entrywise norms on "
+        "those matrices: m - m^T comes back at 0.00e+00 for every tested r, and "
+        "the Majorana lift delta = m kron J_2 satisfies delta + delta^T = "
+        "0.00e+00 likewise."
+    )
+    print(
+        "  per_site: checked and not executed - there is no site index in this "
+        "runner. The three matrix labels are generation positions in the Z_3 "
+        "texture and the extra 2-dimensional J_2 factor is the Majorana pairing "
+        "index, not a spatial direction; no neighbour, hopping or site sum is "
+        "ever constructed."
+    )
+    print(
+        "  per_mode: checked - the individual modes are exactly what moves, and "
+        "the runner resolves them. Numerical eigvals of the texture are matched "
+        "against the analytic triple (a, eps + b, eps - b) inside the runner's "
+        "1e-12 gate, and the normalized doublet spectrum |1 +- r| is recomputed "
+        "for each r, walking from [0.70000071, 0.71414214] at r = 0.01 to "
+        "[0.59439106, 0.80417614] at r = 0.15 - a spread of 1.388e-01 that no "
+        "other quantity here reproduces."
+    )
+    print(
+        "  per_block: checked - the singlet and doublet blocks are separated "
+        "and tracked apart, and the Majorana lift supplies the copies. The "
+        "texture is block diagonal by construction with the singlet carrying a "
+        "alone, the eigenvalue check confirms one singlet plus one doublet pair "
+        "at every r, the placement ratio A/B is verified fixed across all four "
+        "r at spread 0.00e+00, and tensoring with J_2 doubles each block into "
+        "its charge-two pairing copy without disturbing either."
+    )
+    print(
+        "  lattice_wide: checked and not executed - no lattice is present and "
+        "no limit is taken. The staircase indices k_A = 7 and k_B = 8 enter "
+        "only through the single fixed ratio A/B = 1/alpha_LM; the runner never "
+        "walks the staircase to a further rung or to an asymptotic regime, and "
+        "the only thing it sweeps is the dimensionless residual r over four "
+        "values."
+    )
+    print()
     print("Result:")
     print("  Once k_A = 7 and k_B = 8 are fixed, eps/B remains a residual")
     print("  dimensionless deformation of the same exact Z3 texture class.")

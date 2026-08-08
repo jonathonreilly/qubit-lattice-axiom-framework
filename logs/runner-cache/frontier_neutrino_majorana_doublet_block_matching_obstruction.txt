@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_doublet_block_matching_obstruction.py
-runner_sha256: a96db1f32b5400d75fa78bd90fdabec73accd5853d69544664a1d47ea883f236
+runner_sha256: 6157262131f1d65ebb02ec9a54c99b64a476cb410d57c52dafa7d5f345ad6b5c
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.03
@@ -32,6 +32,13 @@ Question:
   [PASS] The only positive log-response match is order-1: r = sqrt(3)  (r_W=1.732050807569)
   [PASS] The fitted perturbative band r ~ 0.01-0.15 is far from the local self-dual comparator target  (max deviation=0.999900)
   [PASS] The fitted perturbative band gives the wrong sign for the local log-response target  (max W_dbl=-0.000050, W_local=0.346574)
+
+N5 execution certificate -- resolved granularity (print-only):
+  per_element: checked and not executed - no matrix is instantiated anywhere in this runner. The doublet block G(r) = r I + sigma_x is named in the header line above, but the code evaluates only the two closed-form scalars Q_rel = r^2 and W_rel = (1/2) log|1 - r^2|, so no entry of either the doublet or the local self-dual block is ever placed or read back.
+  per_site: checked and not executed - the runner carries no site index, neighbour or spatial coordinate. The local side of the comparison enters purely as two supplied numbers, Q_rel = 1.000000 and W_rel = 0.346574; the local self-dual Majorana block that produced them is taken from the cited authority stack and is not rebuilt here.
+  per_mode: checked and not executed - nothing is diagonalized. Although Q_rel and W_rel are background-normalized invariants of the doublet block, this runner consumes them as functions of the single ratio r, so no individual eigenvalue, splitting or mode amplitude is ever formed or reported.
+  per_block: checked, but each block is reduced to two scalar summaries before comparison - the local self-dual block and the 2 x 2 generation doublet each enter as one pair (Q_rel, W_rel). The obstruction is then arithmetic on those pairs: quadratic matching forces r = 1.000000000000, log-response matching forces r = 1.732050807569, and the perturbative band r = 0.01 to 0.15 misses the quadratic target by up to 0.999900 while carrying the wrong sign for the log-response target, max -0.000050 against +0.346574.
+  lattice_wide: checked and not executed - no lattice, no volume and no limit appear. The staircase placement k_A = 7, k_B = 8 is held fixed as a premise from the cited authority stack rather than swept, and the only sweep this runner performs is over four sample values of the dimensionless ratio r, so there is no extensive sum and no asymptotic regime to enter.
 
 Result:
   The obvious normalized 2x2 local-to-doublet matching class fails.

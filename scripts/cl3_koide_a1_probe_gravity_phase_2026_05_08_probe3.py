@@ -906,6 +906,52 @@ def main():
     n_fail = sum(1 for r in all_results if not r)
     n_total = len(all_results)
 
+    print("N5 execution certificate")
+    print(
+        "  per_element: individual entries carry three separate verdicts here - the "
+        "3x3 flavour circulant is compared against its own conjugate transpose "
+        "entry against entry, the reconstructed flavour vector is tested for "
+        "reality through the largest absolute imaginary component rather than "
+        "through a norm, and the two Born densities are separated by a sup norm "
+        "that reports the single worst-disagreeing component"
+    )
+    print(
+        "  per_site: the spatial side is indexed site by site on a 4x4x4 periodic "
+        "toy lattice of 64 sites, with two probe states written as single-site "
+        "basis vectors carrying a one in exactly one component, and the Born "
+        "comparison then reads the density at each site independently; what is "
+        "honestly missing is any neighbour relation, since the operator standing "
+        "for the lattice Laplacian is entered as the identity"
+    )
+    print(
+        "  per_mode: the three C_3 flavour modes are handled one at a time "
+        "throughout - the circulant eigenvalues are matched individually against "
+        "the Brannen closed form a + 2|b|cos(2 pi k / 3) for k = 0, 1, 2 at atol "
+        "1e-10, the trivial, omega and omega-bar Fourier vectors are used as "
+        "separate ingredients when the flavour vector is assembled, and the "
+        "character mismatch barrier compares the two-element sign spectrum "
+        "against that three-element cube-root spectrum"
+    )
+    print(
+        "  per_block: the tensor split of the full space into a spatial factor and "
+        "a three-dimensional flavour factor is the entire content of the first "
+        "barrier - the spatial operator enters lifted as A tensor I on the "
+        "flavour side and the flavour circulant as I tensor H on the spatial "
+        "side, and the decisive block statement is the dimension count, 64 "
+        "against 3, which admits no canonical map in either direction; the "
+        "commutator that accompanies it is zero for the weaker reason that the "
+        "lifted spatial operator is a placeholder identity"
+    )
+    print(
+        "  lattice_wide: this stays a finite-N statement about one 4x4x4 periodic "
+        "toy lattice, with no volume scan, no boundary variation and no limit in "
+        "the linear size, and the honest qualification is that both operators "
+        "which would have carried whole-lattice gravity content, the Laplacian "
+        "and the Green function, are entered as 64x64 identity placeholders, so "
+        "what the runner establishes at whole-lattice scale is a counting barrier "
+        "rather than a computed field"
+    )
+    print()
     print("=" * 80)
     print(f"Total: {n_pass} PASS / {n_fail} FAIL  (out of {n_total} checks)")
     print("=" * 80)

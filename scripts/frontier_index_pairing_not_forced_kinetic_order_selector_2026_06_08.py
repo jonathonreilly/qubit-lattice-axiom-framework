@@ -143,6 +143,47 @@ def main():
     chk("first-order itself is not baseline-supplied: the 2nd-order Laplacian is a spectator", True)
     chk("the gamma<->edge index pairing is not forced by the baseline; residual = kinetic-order selector", True)
 
+    sec("N5 execution certificate")
+    print(
+        "  per_element: verdicts here are entrywise sup-norms on 2x2 arrays - the "
+        "covariance test compares U sigma_j U^dagger against the rotated "
+        "combination sum_i R[i,j] sigma_i position against position at atol 1e-9 "
+        "for all 24 rotations and all three generators, and both the spectator "
+        "and the vertex verdicts are the largest single absolute entry of a 2x2 "
+        "commutator, so nothing is judged from a trace or a determinant"
+    )
+    print(
+        "  per_site: checked and not executed - the whole file is written in the "
+        "momentum symbol p, and the nearest-neighbour character of cos p_mu and "
+        "sin p_mu is stated in a source comment rather than realized as a hop "
+        "between named sites; no coordinate, no spacing and no edge of the Qubit "
+        "lattice is ever instantiated"
+    )
+    print(
+        "  per_mode: momenta are the resolved label but they are sampled rather "
+        "than swept - one drawn p carries the orbit sums and the vertex "
+        "commutator, a second drawn p carries the Laplacian spectator test, and a "
+        "further two thousand drawn momenta carry the band comparison, all from "
+        "one seeded generator, so uniformity over the Brillouin zone is inferred "
+        "from those draws and not from any systematic grid"
+    )
+    print(
+        "  per_block: the representation-theoretic split is where this runner does "
+        "real work - the conjugation action on the one-site M_2(C) algebra is "
+        "decomposed into its scalar and vector pieces and the vector-irrep "
+        "multiplicity is obtained from the exact 24-term class sum for each of "
+        "the three candidate two-dimensional lifts, returning exactly 1 for the "
+        "spin lift and exactly 0 for the trivial and E lifts, which is what makes "
+        "the spin lift unique"
+    )
+    print(
+        "  lattice_wide: checked and not executed - the widest objects the file "
+        "ever forms are the 24-element proper rotation group and the four cubic "
+        "shells it generates, both finite symmetry sets rather than extended "
+        "systems, so no site count, volume or limit exists; the Laplacian's "
+        "boundedness is correspondingly a symbol-level statement about a sum of "
+        "three cosines lying in the exact interval from -3 to +3"
+    )
     print("\n"+"="*92); print(f"TOTAL: {PASS} PASS / {FAIL} FAIL"); print("="*92)
     return 0 if FAIL==0 else 1
 

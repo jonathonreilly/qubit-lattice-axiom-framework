@@ -45,6 +45,53 @@ def read_doc(path_rel: str) -> str:
     )
 
 
+def n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only, adds no audit and no verdict."""
+    print()
+    print("=" * 72)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    print(
+        "per_element: entries are written and compared one by one - the "
+        "Hamming-weight-1 projector is assembled by looping x over the 16 "
+        "computational labels of H_cell and setting P_A[x,x] = 1 exactly where "
+        "bin(x) has a single one bit, each S_4 element is filled in as M[j,i] = 1 "
+        "from its permutation tuple, and the Clifford question is decided by "
+        "testing whole anticommutators AB + BA against the zero array with "
+        "np.allclose."
+    )
+    print(
+        "per_site: resolved at exactly one of the four Qubit tensor factors of "
+        "H_cell and no further - the bulk flip is built as "
+        "sigma_x tensor I tensor I tensor I, i.e. acting on Qubit 0 alone, and the "
+        "part of its image leaving the weight-1 subspace has Frobenius norm exactly "
+        "2, since each of the four weight-1 basis states is carried to a weight-0 or "
+        "weight-2 state; the same probe is never repeated on Qubits 1, 2 or 3."
+    )
+    print(
+        "per_mode: checked and not executed - nothing in this file is diagonalized, "
+        "no momentum label or normal coordinate is introduced, and the Clifford "
+        "non-derivability is settled purely by anticommutator algebra among the 24 "
+        "group elements together with the count of 10 Hermitian involutions, so "
+        "there is no spectral index at which a mode could be resolved."
+    )
+    print(
+        "per_block: the weight grading of the 16-dimensional cell space is the "
+        "block structure that carries the argument, with the weight-1 block "
+        "isolated by Tr P_A = 4 and the bulk operator shown to map that block "
+        "outside itself rather than within it, and the block algebra is then "
+        "compared as a set against M_4(C)."
+    )
+    print(
+        "lattice_wide: checked and not executed - everything numerical happens "
+        "inside a single cell Hilbert space of dimension 16, with no lattice of "
+        "cells, no volume, no boundary condition and no limit anywhere, so the only "
+        "whole-stack statement available is the conjunction of Sections 1, 3 and 4, "
+        "which are inventory audits testing for the presence of fixed substrings in "
+        "the note files they read."
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("Axiom-Stack Minimality / Cl_4(C) No-Go Theorem (Block 4) audit")
@@ -314,6 +361,8 @@ def main() -> int:
         "9 retained no-go/audit cycles. Independent audit required before "
         "the repo treats this as effective retained.)"
     )
+
+    n5_execution_certificate()
 
     if fail_count == 0:
         print()

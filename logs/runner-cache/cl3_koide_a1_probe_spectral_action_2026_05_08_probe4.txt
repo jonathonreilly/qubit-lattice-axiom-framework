@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_spectral_action_2026_05_08_probe4.py
-runner_sha256: 190ac5fa38ea0e448c9bd76ef5c14d7608b6531f83647cc86777a1528a362bc3
+runner_sha256: 1f52d2a8a0b9859a0c70596b929b7052b8a6c4a613fc8976e8d96e5da466df79
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -219,7 +219,7 @@ Koide A1 Probe 4 — Spectral-Action Principle (Connes-style) bounded obstructio
         Tr f(H^2/Lambda^2) = 1.302558
 
       Y_3 (b/a = 1.0)
-        eigenvalues: [-3.33066907e-16  0.00000000e+00  3.00000000e+00]
+        eigenvalues: [-5.62416860e-16  7.30534741e-18  3.00000000e+00]
         Tr f(H^2/Lambda^2) = 2.000123
 
       Y_4 (b/a = 0.5)
@@ -358,6 +358,15 @@ Koide A1 Probe 4 — Spectral-Action Principle (Connes-style) bounded obstructio
     A1 prediction Q = 2/3 = 0.666667
     Delta = 6.155189e-06
   PASS : PDG anchor consistency: |Q_obs - 2/3| < 1e-3 (anchor-only, not derivation input) | |Q_obs - 2/3| = 6.155189e-06
+
+========================================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================================
+  per_element: checked and not executed - the C_3 circulant is assembled from three explicit ingredients, the identity, the corner permutation written out as a 3x3 array and its conjugate transpose, but not one reported number in this probe is an entry: every verdict is either a sorted eigenvalue triple, a Newton power sum or a quadrature moment, so the matrix positions are consumed and never inspected
+  per_site: checked and not executed - the probe lives entirely on the three-dimensional hw=1 flavour sector, and the Z^3 substrate that the surrounding framework supplies is mentioned only when the axiom accounting is discussed; no coordinate, spacing, hop or occupation number of any site is constructed at any point in the file
+  per_mode: eigenvalues are the working currency throughout - each circulant is diagonalized with eigvalsh and its three real eigenvalues sorted, and the spectral action is then formed as an explicit sum of the cutoff function evaluated at each eigenvalue separately, so when the action is scanned across the amplitude ratio it is three individual modes and not an aggregate invariant that move
+  per_block: the split into one nondegenerate mode and one doubly degenerate pair is what the equipartition question turns on, and the probe reads it directly off the sorted spectrum before contracting it into the first two Newton sums, sum of eigenvalues and sum of their squares; the finite-algebra side of the same split, the three summands of A_F, is only named and never built
+  lattice_wide: checked and not executed - the cutoff asymptotics quoted at the top are a Lambda to infinity statement borrowed from the literature rather than a limit the code takes, and nothing in the file has an extent: there is no volume, no site count and no sequence of system sizes, so the whole-system content stays the same three-dimensional flavour sector the rest of the probe uses
 
 ========================================================================================
 FINAL TALLY

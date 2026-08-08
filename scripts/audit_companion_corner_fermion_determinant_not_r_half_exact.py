@@ -98,3 +98,42 @@ print(
     "leading corner-sector dynamics do not rescue r=1/2. Residual (untested): taste-breaking scalar\n"
     "normalization; multi-factor Connes-Lott. CONDITIONAL on the open staggered-Dirac realization gate."
 )
+
+# ---- N5 execution certificate (print-only: adds no chk(), no verdict) ----
+print("\nN5 EXECUTION CERTIFICATE")
+print(
+    "per_element: resolution reaches the three independent circulant entries and stops "
+    "there - a, |b| and the phase delta are carried as sympy symbols and every statement "
+    "above is a symbolic identity in them, but no 3x3 array is ever instantiated and no "
+    "individual (i,j) position is evaluated on its own, because the determinant a^3 - 3 a "
+    "|b|^2 + 2 |b|^3 cos(3 delta) is entered as a closed form rather than expanded from "
+    "entries"
+)
+print(
+    "per_site: checked and not executed - the three hw=1 objects this runner works over are "
+    "Brillouin-zone corners, that is momentum labels, and no position-space site, spacing "
+    "or hopping ever appears; the corner Grassmann integral is taken as already performed, "
+    "so the site sum that would have produced it is upstream of the first line of code"
+)
+print(
+    "per_mode: checked and not executed - only the product of the three corner masses is "
+    "ever formed, since det(M) is the sole spectral object used; the individual corner "
+    "eigenvalues are never written down, and the two-fold mass degeneracy asserted where "
+    "the determinant vanishes is inferred from det = 0 alone rather than from any computed "
+    "eigenvalue list"
+)
+print(
+    "per_block: the C_3 singlet and the two-dimensional perpendicular doublet are tracked "
+    "as separate energy reservoirs, with fractions x and 1 - x on the fixed Frobenius "
+    "slice, and the binary entropy S = -x log x - (1 - x) log(1 - x) built on exactly that "
+    "two-block split is shown to be stationary at x = 1/2 with the exact value log 2, which "
+    "is what makes the balanced point a sector-symmetry statement rather than a dynamical "
+    "one"
+)
+print(
+    "lattice_wide: checked and not executed - the only global object in the file is the "
+    "single fixed-scale slice 3 a^2 + 6 |b|^2 = 1, and on that slice a scale-only scalar "
+    "potential is shown to have identically vanishing x-derivative; no volume, no particle "
+    "number and no extent of any kind is defined, so the whole-system content is one "
+    "constrained three-corner sector and no limit is taken in any direction"
+)

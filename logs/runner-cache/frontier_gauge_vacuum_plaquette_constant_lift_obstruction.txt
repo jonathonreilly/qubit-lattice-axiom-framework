@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py
-runner_sha256: b7aa72f79cfd12f29f19b29f51ba9974024f9b26ab0271057cda1d0256b567ce
+runner_sha256: 18769874c585d664486110fb1ab24aed9cf9c6eef3cc2f9bad7bd8cca41b10e5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -34,6 +34,13 @@ Constant-lift candidate
          delta slope = +0.030829
   [PASS] [SUPPORT] the remaining open target is a beta-dependent reduction law beta_eff(beta), not a constant lift
          exact class-level bridge survives; only the constant lift is ruled out
+
+N5 execution certificate
+  per_element: checked and not executed - no link variable is ever instantiated in this file, so there is nothing with an (i,j) index to resolve; the single group-theoretic input, the Haar moment of the squared real trace, enters as the literal constant 0.5 assigned in the source rather than as an integral over any explicit SU(3) element
+  per_site: checked and not executed - the comparison is between two coefficient numbers, one attributed to the full interacting vacuum and one to a single plaquette, and neither carries a site index, a link, a lattice spacing or a coordinate; nothing in the file knows where on a lattice anything sits
+  per_mode: checked and not executed inside this runner - the one-plaquette evaluation is delegated to the shared Bessel routine, which internally truncates a sum over SU(3) representation modes and returns the highest mode it needed, but that second return value is dropped on the spot and never printed or thresholded, so no individual mode is resolved anywhere in this file
+  per_block: the single-plaquette block against the full vacuum is precisely the contrast this obstruction rests on - the block's strong-coupling slope is obtained twice, once in closed form as 1/18 and once numerically from the Bessel one-plaquette partition function evaluated at beta = 1.0e-5 and agreeing to better than 2.0e-7, and the constant-lift candidate then rescales that block slope by Gamma and fails to reproduce the full-vacuum slope
+  lattice_wide: checked and not executed - the interacting whole-vacuum object appears only as the number 1/18, reached by a docstring argument that the first strong-coupling order picks out the same plaquette and then by dividing a hardcoded Haar moment by nine; no sum over plaquettes, no volume and no extent is ever constructed, so the lattice-wide side of the comparison is asserted rather than evaluated
 
 ==============================================================================
 SUMMARY: THEOREM PASS=6 SUPPORT=1 FAIL=0

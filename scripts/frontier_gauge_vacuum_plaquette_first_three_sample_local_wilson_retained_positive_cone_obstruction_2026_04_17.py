@@ -228,6 +228,49 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate")
+    print(
+        "  per_element: the sample matrix is fixed one entry at a time in exact "
+        "nested radicals over sqrt(2), printed in full as a sympy Matrix so every "
+        "position is visible, and inverted symbolically rather than numerically, "
+        "which makes the reconstruction law a_loc = F^(-1) Z_loc exact; the "
+        "closing residual is then the single largest entry of F a_loc - Z_loc, "
+        "taken over all three rows at 100-digit working precision"
+    )
+    print(
+        "  per_site: checked and not executed - W_A, W_B and W_C are named "
+        "Wilson-loop samples of a single plaquette measure, not places, so no "
+        "site index, link label or lattice spacing occurs anywhere in the file; "
+        "the first-symmetric qualifier refers to a character-channel ordering "
+        "rather than to any position on a lattice"
+    )
+    print(
+        "  per_mode: the SU(3) partition normalization at beta = 6 is assembled one "
+        "representation mode at a time - each mode contributes the determinant of "
+        "a 3x3 Bessel matrix, modes enter in signed pairs -m and +m, and the sum "
+        "halts at the first mode whose strip contribution drops below MODE_TOL = "
+        "1e-15 relative to the running total, under a hard ceiling MAX_MODE = "
+        "120, with the cutoff actually reached reported next to the partition "
+        "value"
+    )
+    print(
+        "  per_block: the cone test is applied channel by channel and exactly one "
+        "channel breaks it - the three reconstructed retained coordinates are "
+        "examined separately against a plus-or-minus 1e-12 band, the singlet and "
+        "fundamental channels come out strictly positive and the adjoint channel "
+        "strictly negative, and the minimal repair is read off that one failing "
+        "block rather than off any aggregate norm"
+    )
+    print(
+        "  lattice_wide: checked and not executed - this obstruction is "
+        "deliberately local and the runner's own fourth support check records "
+        "exactly why, since the full-slice rim-lift note still lists the explicit "
+        "closed-form B_6(W) as open, so the nonlocal completion a whole-lattice "
+        "statement would need does not yet exist; everything evaluated here is "
+        "the one-plaquette normalization, with no sum over plaquettes, no volume "
+        "and no limit"
+    )
+    print()
     print(f"THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

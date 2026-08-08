@@ -190,6 +190,50 @@ def part5_source_boundary() -> None:
     check("source note contains no tool-worktree paths", ".claude/" not in text)
 
 
+def n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only, adds no check."""
+    print("\n=== N5 execution certificate ===")
+    print(
+        "per_element: the projector algebra is settled on complete arrays - the "
+        "cyclic shift is written out as a 3x3 array of literal entries, the symmetric "
+        "projector is formed as one third of the sum of its three powers, and "
+        "idempotence together with mutual annihilation are required to simplify to "
+        "the 3x3 zero matrix before the determinant of the weighted combination is "
+        "factored to alpha times beta squared"
+    )
+    print(
+        "per_site: checked and not executed - the three slots this runner manipulates "
+        "are isotype coordinates of a generation triple, and nothing in the file "
+        "carries a position, a spacing or a neighbour; the only geometry present is "
+        "the cyclic reordering of those three slots, which permutes labels and does "
+        "not move anything anywhere"
+    )
+    print(
+        "per_mode: resolved only as far as the two real doublet coordinates, which "
+        "are carried separately through the planar rotation so that the invariance of "
+        "their squared radius can be checked component by component; the individual "
+        "complex C_3 characters are never formed, and everywhere else the doublet is "
+        "handled whole through its rank-two projector"
+    )
+    print(
+        "per_block: block resolution is the entire theorem here - the singlet and "
+        "orthogonal-complement blocks are separated with ranks one and two, the "
+        "weighted log-volume family with exponents mu and nu is solved under the "
+        "fixed total-energy constraint to give each block its own share of that "
+        "total, and the determinant of the unreduced carrier is shown to carry the "
+        "weight pair one and two, which is what pins the leaf away from the "
+        "equal-weight value"
+    )
+    print(
+        "lattice_wide: checked and not executed - the runner's own scope line limits "
+        "the theorem to the unreduced carrier and it explicitly declines to derive "
+        "the physical quotient bridge or the cos(3 arg b) decoupling, so the object a "
+        "whole-system statement would need is absent by design; the only file-wide "
+        "test present is Part 5, which is inventory, checking for the presence and "
+        "absence of fixed phrases in the source note"
+    )
+
+
 def main() -> int:
     part0_weight_classification()
     part1_unreduced_obstruction()
@@ -197,6 +241,7 @@ def main() -> int:
     part3_context_reduced_resolution()
     part4_context_summary()
     part5_source_boundary()
+    n5_execution_certificate()
 
     print("\nInterpretation:")
     print("  The bounded theorem is the unreduced 3x3 obstruction: determinant")

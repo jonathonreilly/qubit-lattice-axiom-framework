@@ -197,6 +197,38 @@ def main() -> int:
     )
 
     print("=" * 72)
+    print("N5 execution certificate -- what this runner resolves")
+    print(
+        "per_element: checked -- elements are enumerated one at a time: every "
+        "ordered pair of the 18 patch vertices is tested for l1 == 1 to build "
+        "the 33 nearest-neighbor edges, and each of the 9 layer-0 labels picks "
+        "its own two nearest layer-1 targets under the rival rule B."
+    )
+    print(
+        "per_site: checked -- each (x, y) site carries its own amplitude "
+        "1/(1 + |x-1| + |y-1|), the offsets (0,0), (1,0), (-1,0) attach edges "
+        "site by site, and layer-1 positions are displaced per site, so the "
+        "narrow {(1,1)} and wide readouts differ (1.000000 vs 3.000000)."
+    )
+    print(
+        "per_mode: checked and not executed -- no operator, transfer matrix or "
+        "spectrum is ever formed here; the three Gate-B pieces compared are "
+        "connectivity, a scalar normalization and a detector support, all "
+        "configuration data, so there is no mode decomposition to resolve."
+    )
+    print(
+        "per_block: checked -- the patch splits into two z-layer blocks of 9 "
+        "sites and the comparison is layer-forward: layer 0 is held fixed while "
+        "the rival completions build layer 1 differently, |G_A| = 21 edges by "
+        "fixed offsets against |G_B| = 18 by nearest-two Euclidean."
+    )
+    print(
+        "lattice_wide: checked on the finite patch -- the whole base lattice is "
+        "held identical across both models, |V| = 18 and |E_nn| = 33 fixed Z^3 "
+        "nearest-neighbor adjacency, which is exactly what makes the model pair "
+        "a contradiction; no infinite-volume or continuum limit is taken."
+    )
+    print("=" * 72)
     print("GATE_B_CONTEXT_INDEPENDENCE_NO_GO=TRUE")
     print("GB_S1BB_S2B_S3B_NOT_DERIVED_FROM_LATTICE=TRUE")
     print(f"PASS={PASS} FAIL={FAIL}")

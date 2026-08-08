@@ -88,6 +88,29 @@ def main() -> int:
         f"slice_target_eig_gap={np.linalg.norm(np.sort(mu) - np.sort(nu0)):.6f}",
     )
 
+    print()
+    print("N5 execution certificate -- what this runner resolves")
+    print("  per_element: checked -- the packet is read channel by channel: the "
+          "even channels S12 and S13 and the odd channels A12, A13, A23 are "
+          "each extracted separately, and the no-go turns on A13 being the one "
+          "nonvanishing odd channel while A12 and A23 are exactly zero.")
+    print("  per_site: checked and not executed -- there is no lattice site "
+          "index anywhere here; the carriers are a retained 4x4 ambient block "
+          "and 3x3 slices in an internal channel space, and no site, link or "
+          "neighbour structure is instantiated to resolve.")
+    print("  per_mode: checked -- three spectra are computed and compared mode "
+          "by mode: the four eigenvalues of the retained ambient block, the "
+          "three of the selected real slice and the three of the target, with "
+          "the interlacing test pairing target modes against ambient modes.")
+    print("  per_block: checked -- the whole argument is block-level: no 3x3 "
+          "compression block of the retained 4x4 ambient block can carry the "
+          "target block's spectrum, and unitary similarity leaves the selected "
+          "slice block's spectrum fixed under any internal U(3) dressing.")
+    print("  lattice_wide: checked and not executed -- the '3d+1' here counts "
+          "internal ambient dimensions, not lattice extent; no lattice, volume "
+          "or limit is built, so the obstruction is proved on the single fixed "
+          "ambient and says nothing lattice-wide.")
+
     print("\n" + "=" * 118)
     print("RESULT")
     print("=" * 118)

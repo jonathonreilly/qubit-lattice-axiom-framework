@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_2026_04_20.py
-runner_sha256: c87369f25c8378c72dd4ffa910ab286df3edc0e087036f7640d686400f3fb390
+runner_sha256: 92d0569917debf01ba6c4d22c1e96404ba3998326220303d01e4bf422c20cda2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 25.86
+elapsed_sec: 25.18
 status: ok
 ----- stdout -----
 ======================================================================================================================
@@ -15,15 +15,22 @@ Question:
   `3d+1` ambient also reproduce the full sparse-face projected-source
   Hermitian packet exactly?
 
-  eig(retained 4x4 block)                      = [-0.0, 0.00421394801, 0.023920003547, 3.364735298807]
+  eig(retained 4x4 block)                      = [0.0, 0.00421394801, 0.023920003547, 3.364735298807]
   eig(selected real slice)                     = [6.111469e-06, 0.02283651109, 1.156774232916]
-  eig(full sparse-face target)                 = [0.087543572606, 0.235016887886, 1.243477653447]
-  target full packet odd channels              = (0.000000000000, 0.042247097248, 0.000000000000)
+  eig(full sparse-face target)                 = [0.087543572601, 0.235016887882, 1.243477653467]
+  target full packet odd channels              = (0.000000000000, 0.042247097165, 0.000000000000)
 
   [PASS] The full sparse-face target Hermitian block is the exact matrix behind the target projected-source packet  ((S12,A13,S13)=(1.041425,0.042247,-0.239881))
   [PASS] Its eigenvalues violate Cauchy interlacing for any 3d compression of the selected retained 4x4 Wilson block  ((mu1,lam2,mu2,lam3)=(0.087544,0.004214,0.235017,0.023920))
   [PASS] Therefore no orthonormal real or complex 3d slice of the retained 3d+1 ambient can reproduce the full sparse-face target packet exactly  (full-packet equality would force forbidden compression eigenvalues)
   [PASS] In particular the selected real slice cannot reach the full sparse-face target even after arbitrary internal U(3) basis dressing, because unitary similarity preserves its slice spectrum  (slice_target_eig_gap=0.245359)
+
+N5 execution certificate -- what this runner resolves
+  per_element: checked -- the packet is read channel by channel: the even channels S12 and S13 and the odd channels A12, A13, A23 are each extracted separately, and the no-go turns on A13 being the one nonvanishing odd channel while A12 and A23 are exactly zero.
+  per_site: checked and not executed -- there is no lattice site index anywhere here; the carriers are a retained 4x4 ambient block and 3x3 slices in an internal channel space, and no site, link or neighbour structure is instantiated to resolve.
+  per_mode: checked -- three spectra are computed and compared mode by mode: the four eigenvalues of the retained ambient block, the three of the selected real slice and the three of the target, with the interlacing test pairing target modes against ambient modes.
+  per_block: checked -- the whole argument is block-level: no 3x3 compression block of the retained 4x4 ambient block can carry the target block's spectrum, and unitary similarity leaves the selected slice block's spectrum fixed under any internal U(3) dressing.
+  lattice_wide: checked and not executed -- the '3d+1' here counts internal ambient dimensions, not lattice extent; no lattice, volume or limit is built, so the obstruction is proved on the single fixed ambient and says nothing lattice-wide.
 
 ======================================================================================================================
 RESULT

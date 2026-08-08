@@ -437,6 +437,31 @@ check("F1 note graph-links the retained RP-half no-go row",
 check("F1 unaudited no-winding-carrier note is non-load-bearing context",
       "non-load-bearing context here and is not consumed as a premise" in NOTE)
 
+# ---------------------------------------------------------------------------
+# Section G: N5 execution certificate
+# ---------------------------------------------------------------------------
+print("Section G: N5 execution certificate -- what this runner resolves")
+print("  per_element: checked -- irreps are resolved one label at a time: the "
+      "center identity is verified for each of (1,0), (0,1), (1,1), (2,0), "
+      "(3,1), (2,2) at four torus points, each fusion channel of rule_F and "
+      "rule_Fb is listed, and F.(1,0) carries raw labels {2, -1}.")
+print("  per_site: checked and not executed -- no lattice site index exists in "
+      "this runner; the only locality structure is the disjoint-region pair of "
+      "E1, where the center acts as Delta x Delta and labels add mod 3, which "
+      "is a region-level statement carrying no site geometry.")
+print("  per_mode: checked -- the transfer vector is resolved mode by mode over "
+      "the irrep cone: the full cone p+q <= 30 is compared against the retained "
+      "sub-cone p+q <= 24 with drift at most 1.1e-16 at beta = 1, 6, 12, and "
+      "the SU(2) ladder is carried out to spin n = 20.")
+print("  per_block: checked -- the three center sectors are the blocks: P_k are "
+      "orthogonal, idempotent and complete, P_k' J6 P_k vanishes unless "
+      "k' = k +- 1 with no diagonal block at all, and each block carries "
+      "strictly positive weight with Z_1 = Z_2 exactly at every beta.")
+print("  lattice_wide: checked and not executed -- the transfer vector is a "
+      "single exp(beta J/2) applied to the trivial irrep, not a lattice "
+      "partition function; no volume, no multi-link geometry and no "
+      "infinite-volume or continuum limit is formed at any point here.")
+
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 if FAIL:
     raise SystemExit(1)

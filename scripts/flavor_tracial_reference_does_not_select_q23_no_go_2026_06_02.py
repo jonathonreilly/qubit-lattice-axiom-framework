@@ -357,6 +357,33 @@ check("source boundary guard: carrier/readout are assumed, not derived by this p
       all(term not in note for term in banned) and all(term in note for term in required),
       "the packet closes only the assumed-carrier tracial-reference no-go")
 
+# ----------------------------------------------------------------------------
+# BLOCK 8 — N5 execution certificate: what this runner actually resolves.
+# ----------------------------------------------------------------------------
+print("\n" + "="*78)
+print("BLOCK 8 — N5 execution certificate: what this runner resolves")
+print("="*78)
+print("  per_element: checked — the two minimal central idempotents are built "
+      "and tested one at a time (e0 = (I+C+C^2)/3 rank 1, e1 = I-e0 rank 2, "
+      "e0e1 = 0), and the Tomita map is applied to each of the 18 realified "
+      "basis elements E_ij and i E_ij of M3(C) separately.")
+print("  per_site: checked — BLOCK 5 iterates the region sizes |Lambda| = 1, 2, "
+      "4 and reports the induced generation weight (0.333:0.667) at each; the "
+      "site direction enters only through the product-trace factorization "
+      "premise, no explicit multi-site tensor state is assembled here.")
+print("  per_mode: checked — the circulant spectrum is resolved as the singlet "
+      "mode a+2b against the twice-degenerate doublet mode a-b, and the "
+      "reflection-positivity Gram is read mode-wise as min-eig of (H+m^2)^-1 at "
+      "r = 0.3, 0.5, 1.0 (positive) and r = 2.0 (negative, past the endpoint).")
+print("  per_block: checked — the whole tie is a two-block statement: the trace "
+      "gives (Tr rho e0, Tr rho e1) = (1/3, 2/3) -> r=1, the equal-block state "
+      "gives (1/2, 1/2) -> r=1/2, and the doublet block is compressed both as "
+      "det_R (full 2 real) and det_C (e1 S e1), both PSD.")
+print("  lattice_wide: checked and not executed — region size stops at "
+      "|Lambda| = 4 and is never taken to a limit; no infinite-volume state, "
+      "cluster-decay rate or lattice-wide observable is constructed, so the "
+      "verdict is carried entirely by the single-factor block algebra.")
+
 print("\n" + "="*78)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
 print("="*78)

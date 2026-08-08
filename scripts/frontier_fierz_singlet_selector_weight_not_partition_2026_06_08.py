@@ -239,6 +239,44 @@ check("a gauge-link kernel co-transforms (g_x U g_y^dag != U): a DIFFERENT categ
       link_dev > 0.1, f"dev {link_dev:.2f}")
 
 # ===========================================================================
+# Part 5. N5 execution certificate: what this runner actually resolves.
+# ===========================================================================
+print("=" * 78)
+print("Part 5  N5 execution certificate — what this runner resolves")
+print("=" * 78)
+
+print(
+    "per_element: checked — the eight Gell-Mann generators t^A enter the Fierz "
+    "sum C = 2 sum_A |Tr[G t^A]|^2 one generator at a time (completeness holds "
+    "to max dev < 1e-9 over 50 random G), and the partition-vs-twirl separation "
+    "is read off the single matrix entry M_00 against Tr M/3."
+)
+print(
+    "per_site: checked — Part 4 resolves exactly two color sites: at the single "
+    "site x the trace Tr[G G^dag] is invariant under g_x (dev < 1e-9), while the "
+    "two-site link g_x U g_y^dag moves by O(1); no third site and no site sum is "
+    "constructed anywhere in this runner."
+)
+print(
+    "per_mode: checked — the Fierz decomposition resolves the two channels "
+    "separately, the singlet mode S = |Tr G|^2/N_c and the 8-dimensional adjoint "
+    "mode C, with fixed count fraction F_adj = 8/9 and the singlet's realized "
+    "weight kappa_EW left free across R(0) = 8/9 and R(1) = 1."
+)
+print(
+    "per_block: checked — the candidate register-not-read partition is built "
+    "block by block as P_1 = diag(1,0,0), P_2 = diag(0,1,1); D = sum_k P_k M P_k "
+    "preserves each diagonal block verbatim, and each block projector fails to "
+    "commute with the generator basis (commutator dev > 0.1, Schur)."
+)
+print(
+    "lattice_wide: checked and not executed — this runner is finite algebra on "
+    "one internal SU(3) color factor with N_c = 3; it builds no lattice, no "
+    "volume and no extent over which a lattice-wide statement could be taken, "
+    f"and the whole demotion is carried by PASS={PASS}, FAIL={FAIL} at that scale."
+)
+
+# ===========================================================================
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)

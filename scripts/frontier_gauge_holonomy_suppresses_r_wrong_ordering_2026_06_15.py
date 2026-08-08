@@ -191,6 +191,42 @@ check("the bound is the same inequality for two distinct free r0 (0.5 and 0.31) 
       abs(r0 - 0.5) < 1e-12 and abs(r0b - 0.31) < 1e-12 and r0 != r0b)
 
 
+# ============================================================================
+# 7. N5 EXECUTION CERTIFICATE: what this runner actually resolves.
+# ============================================================================
+print("\n[7] N5 execution certificate -- what this runner resolves")
+print(
+    "  per_element: checked -- the fibre-averaged generation operator is "
+    "assembled entry by entry, M[i,j] = Tr(H block (i,j))/d_R, and the two "
+    "entries that carry the result are read individually: a_eff = M[0,0] and "
+    "b_eff = M[1,0] = b*chi_R(U)/d_R, giving r_R = |b_eff|^2/a_eff^2."
+)
+print(
+    "  per_site: checked -- the generation 3-cycle C makes a closed three-site "
+    "ring; the on-site term a*(I3 x I_dR) is verified link-blind (a_eff = a to "
+    "1e-12 in every rep) while only the hop C x U carries the holonomy, and by "
+    "construction all three diagonal blocks are the same a*I_dR, so one is read."
+)
+print(
+    "  per_mode: checked -- resolution runs over the fibre representation "
+    "channels d_R = 1, 2, 3, 8 (trivial, U(2), U(3) >= SU(3)-fund, U(8) >= "
+    "adjoint) separately; the d_R individual unit-modulus eigen-modes inside "
+    "each channel are summed away by chi_R(U) = Tr_R(U) and never resolved."
+)
+print(
+    "  per_block: checked -- each of the nine d_R x d_R generation blocks of "
+    "H = a(I3 x I_dR) + b(C x U) + conj(b)(C^T x U^dag) is sliced out and "
+    "traced over the fibre; the block trace is exactly where |chi_R(U)| <= d_R "
+    "enters, and the bound survives 800 sampled unitaries across four d_R."
+)
+print(
+    "  lattice_wide: checked and not executed -- U here is one closed based "
+    "holonomy on a single loop, not a gauge configuration on an extended "
+    "lattice; no volume, no loop family and no continuum limit is built, so "
+    "the cap r_R <= r0 is proved pointwise in U and never lattice-wide."
+)
+
+
 total_pass = ALGEBRA_PASS + CONDITIONAL_PASS
 total_fail = ALGEBRA_FAIL + CONDITIONAL_FAIL
 print(

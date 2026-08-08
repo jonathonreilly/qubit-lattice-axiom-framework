@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py
-runner_sha256: fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094
+runner_sha256: cfe698b2f0529daefd983d92b685de39168877e858f5fc5d26f38255682642b9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.47
+elapsed_sec: 2.47
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -64,6 +64,15 @@ on-site 2pi=-1 sign is NOT the discriminator; cross-site relation is
   [PASS] hard-core-boson algebra <sigma_+(x)I, sigma_3(x)I, I(x)sigma_+, I(x)sigma_3> = M_4(C) (complex dim 16)  (dim = 16)
   [PASS] JW-fermion algebra <c_0, c_1> = M_4(C) (complex dim 16)  (dim = 16)
   [PASS] both frames live on the SAME algebra (16 = dim End(C^4)) -> the discriminator is the cross-site relation, NOT the on-site sign
+
+------------------------------------------------------------------------------
+(7) N5 execution certificate -- what this runner resolves
+------------------------------------------------------------------------------
+  per_element: checked -- every operator is built and tested individually in exact sympy: U_2pi = -I_2 and U_4pi = +I_2, the swap P with P^2 = I_4, the nilpotents (sigma_+)^2 = (c_0)^2 = (c_1)^2 = 0 and the on-site {c_0, c_0^dag} = I_4.
+  per_site: checked -- the two Qubit sites of C^2 (x) C^2 are resolved separately: the left lift U_2pi (x) I and the right lift I (x) U_2pi are each shown to be the same scalar -I_4, and the ladders a_0, a_1 and c_0, c_1 are placed site by site.
+  per_mode: checked -- the exchange eigen-modes are resolved one at a time: |00>, |11> and |01>+|10> are +1 modes of P while |01>-|10> is the single -1 mode (spectrum {+1 x3, -1 x1}), and the on-site 2pi sign is verified to act as -1 on both mode types alike.
+  per_block: checked -- the generated *-algebras are compared as blocks: <U_2pi(x)I, I(x)U_2pi> closes at complex dim 1 (scalars), while the hard-core-boson and Jordan-Wigner generator sets each close at dim 16 = M_4(C), one and the same block.
+  lattice_wide: checked and not executed -- the Z^3 substrate is named in the premise but only two sites are instantiated here, with a Jordan-Wigner string of length at most one; the graph-braid pi_1 and graded-locality structures that need the full lattice stay open.
 
 ==============================================================================
 VERDICT

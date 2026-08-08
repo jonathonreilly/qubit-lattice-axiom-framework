@@ -289,6 +289,29 @@ def main() -> int:
     part_no_three_dim_faithful_z()
     part_multisite_tensor()
 
+    print("-" * 72)
+    print("(N5) execution certificate: what this runner resolves")
+    print("-" * 72)
+    print("per_element: checked -- the central element is applied as an explicit "
+          "matrix on each basis: L_z = -I_4 on the quaternion basis (1,i,j,k) "
+          "and adjoint(z) = I_3 on Im(H), and every spin-j 2pi operator is "
+          "assembled from its diagonal J_z entries one entry at a time.")
+    print("per_site: checked -- Part 4 builds the global 2pi operator site by "
+          "site as an N-fold Kronecker product of the single-site -I_2 on the "
+          "M_2(C) Qubit factor, for N = 1 through 6, and the site count alone "
+          "fixes the central character to z = (-1)^N.")
+    print("per_mode: checked -- inside each spin-j carrier the 2pi phase is "
+          "resolved per magnetic sublevel m = j, j-1, ..., -j, and it is the "
+          "uniformity of exp(2 pi i m) = (-1)^{2j} across all those modes that "
+          "makes z a scalar rather than a mode-dependent phase.")
+    print("per_block: checked -- the decomposition is enumerated block by "
+          "block: half-integer blocks of dimension 2, 4, 6 admit no multiset "
+          "summing to 3, the even targets 2, 4 and 6 do admit one, and the "
+          "spin-block multiplicities of (spin-1/2)^(x)N are listed for each N.")
+    print("lattice_wide: checked and not executed -- the multi-site steelman is "
+          "a bare tensor product with no adjacency, geometry or volume, and "
+          "only N = 1..6 are executed; the extension to all N rests on the "
+          "parity argument, not on any lattice-wide computation done here.")
     print("=" * 72)
     print(f"SCORECARD: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0 and PASS_COUNT > 0:

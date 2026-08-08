@@ -1,0 +1,677 @@
+{
+ "date": "2026-08-08",
+ "decision_files": [
+  "branch09_decisions.jsonl",
+  "packsci01_decisions.jsonl",
+  "packsci02_decisions.jsonl",
+  "packsci03_decisions.jsonl",
+  "packsci04_decisions.jsonl",
+  "packsci05_decisions.jsonl"
+ ],
+ "directive": "owner_2026-08-05 (pull historic science iff relevant and/or valuable; pulled items enter the ledger and are audited)",
+ "independent_pin_reverification": "10/10 sample OK (fetch->sha256->blob compare against part-2 manifest)",
+ "lint": "vocab_lint --fix clean for auto-fixes; 1 human-review finding disclosed (quoted historical _REVIEW_PACKET_ filename in an attachment line of HISTORIC_PLANCK_ONLY_FRAMEWORK_INPUT_FRAMING_NOTE_2026_05_27 wrapper; inherent to provenance pinning)",
+ "pins": {
+  "docs/historic_intake/HISTORIC_2026_04_07_FRONTIER_MAP_UPDATE_3_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ff93012a9825a2e671f529ff1428c9273a47b659",
+   "sha256": "ff843c5672996b71cf550a3767a1444961b210563a49252a6370146b6b05648e"
+  },
+  "docs/historic_intake/HISTORIC_ADMISSION_FLOOR_UNIFICATION_SYNTHESIS_2026_06_08_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "669fb1ef510984be3ffc961188bce745066b7e77",
+   "sha256": "1c7721b526d27769a130a681cd73b6bcfc335bce3d5489ecbe5ea58ad5874f2e"
+  },
+  "docs/historic_intake/HISTORIC_AFT_CLOSURE_PLAN_2026_05_26_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "0d69dc74a3e134c6a771372dc8dc5c007dcc0d43",
+   "sha256": "625609cc27d36da3a8707c6c89743361158105ede17b49bd677ae342251d6534"
+  },
+  "docs/historic_intake/HISTORIC_ATOMIC_RYDBERG_GATE_FACTORIZATION_FANOUT_NOTE_2026_05_01_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8081d0ac7f44cb32498bd142ea0153b7c6d31417",
+   "sha256": "f552ee8291d89caa9032540a906c54107548ba31539b409ce4f6f4e2bbce053e"
+  },
+  "docs/historic_intake/HISTORIC_AXIOM_CONVERSATION_DOSSIER_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "eb628481df6fcfc8bc9fb67f45e65fbf7b76b5bf",
+   "sha256": "cec813f4c7a042817c4bd286624736a3ec119ab0a952de9a03b8b79089d6b919"
+  },
+  "docs/historic_intake/HISTORIC_BLOCK03_PACK_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e8e9526f53b99db0c6e9bf0f5565dd48562321dd",
+   "sha256": "d201d79b46eb19e53baf64b027ea62d1644998db483fa0a71b55d11910506079"
+  },
+  "docs/historic_intake/HISTORIC_CAMPAIGN_REPORT_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "7e897e32a4a6e2f4f63f102d4a31eb10981a118f",
+   "sha256": "66bae814504844687b95d213b0097b859bd2ee8dae360e4eba6256dba9782d03"
+  },
+  "docs/historic_intake/HISTORIC_CHARGED_LEPTON_KOIDE_CONE_2026_04_17_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8715e20fec2b71fe14924a912b45bbe6081f7fef",
+   "sha256": "94167c03717c306574e8d0df8eb7a0eda13199a182869086252514c52c5ae2df"
+  },
+  "docs/historic_intake/HISTORIC_CHARGED_LEPTON_MASS_HIERARCHY_FROM_HW1_OBSERVABLE_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "67669c64841ee41e386272a123a8628169b69e92",
+   "sha256": "1e1116dd5ce6a120466a7191bb536fa3b7e361dc666f8baaa532655fcf1885d5"
+  },
+  "docs/historic_intake/HISTORIC_CL3_MINIMALITY_CONDITIONAL_SUPPORT_2026_04_17_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "d941e9215f404456da3ccd5f5d712dfc5bbe9e99",
+   "sha256": "daabd1f50a0a8682184ab47c971606463d44ed8a08307e81461156a1534032af"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10141_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b8611dc494116b30baa618510aef6f546bb9235c",
+   "sha256": "0bb8af9e1cfe45b1fb4dda248a723ac07650ca052fc2ca2b84534f67f82aab0b"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10143_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ad6f2172602ba598ba3e751b47ec1f07560e4dbb",
+   "sha256": "7d8f73adb7c14089683dc4796ced41bb94c0c43766fc1998ee601ffcf0bf1537"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10152_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "d865514607e439e9fb04c9fe5cc3b667806db798",
+   "sha256": "fdbb5034654aaa55f926e9dc940a9ae253096d38bd36577c6621126c3029a8df"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10155_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "699cec756dfdfc5611e97f29605e9aeb503da054",
+   "sha256": "d375f7a50e4e64fd41408848ed01781994ea0878956b95551c736118541b85ae"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10156_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e591d7a822467ce761b657183920ddf2bd4c3fd3",
+   "sha256": "604636d6be11b562f42831ed29ec2e82c5c9d6fcfe7faa3a58e2266251441a2e"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10161_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "4d63189a25b8ceb59a50b5d833a039d2b9ebf84c",
+   "sha256": "1c0de2ebd1ad3bec02e8e7097f41cbbcd98443bc21b820ec335c4325774512a4"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10175_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "5c88b0497116561ef2ff1a61959edecdece7f025",
+   "sha256": "4633b0b8b579688907764dbd6a9dae3aea400a3673db90e2a3bd0f7d72c79fd9"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10183_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "54fe70bd779ea2188d21adc7c5a8814c571f6440",
+   "sha256": "1cb6e4b1d5b60aba29a3478da62b1e9403ece7926d2d2fbb4fc5b88890f316c2"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10254_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b1b04e60519b6b59ffe9ad14c2613bf653c4591c",
+   "sha256": "4f7edc6dd3a5ff6673736d1c8bf902aa6b4cbd4fce5241681593fbf39518cf29"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10285_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "9e411fe2bf33c8e56d2109b670f90f18487738af",
+   "sha256": "23c746dd35b86918de5b30a567698da11a79d14a7aa24592bc2471877c3aac58"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10305_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "edbbb39164c95867febe5513af98bf939f557a4f",
+   "sha256": "bb0f421861ccd913d32123c8b23660ac757144ab05c4c7ad3fc50332eaf42224"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10307_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8fe1d5f6c1a0ac1b5cae72ae90d1018d7bf1d226",
+   "sha256": "a1d236628bf40a444539fcb69e6d53994cead86775fe26768554e30de3e51818"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10309_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "1e73cb69d8b0c66f006df0536660233c5c8cb9f8",
+   "sha256": "6569c4f48840779c311ac0a971d4bf8755f974fa5e1a3964c6725716a2234300"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10315_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "313f51a87b86616c3b7227a66962d3b9346ad50c",
+   "sha256": "ebce51ace0fb6d765b9d517ca4d5b972f8e1309d5459c471763232db23d6c22a"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10327_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "9b300ece119030ba5668089c239c74f22cd8016a",
+   "sha256": "f9330e4ecf1453b04c60752c9f821ecc4d6f265ac6f0fd515eecf41dbdf8e0cb"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10360_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "782ece171cd13a9219efdde8466c669efb990fb5",
+   "sha256": "ce444c6aad6acd85633db20c379dd7ec5e89b14914257db9cb596f615e8af560"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10361_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "20f3e0c4c715f18dd70728337519060f3a57febf",
+   "sha256": "36c2164821b85f70aa7759afe255918dfdba0acd138bd46eefd04f33df7163e4"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10442_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ce36864b87b4c79cbdbb1f90f5193adfbd914530",
+   "sha256": "b95b514083ae889ba8fcaac7dc8983498974a0d6ba72e70c9f3559026396c00b"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10450_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "fd24e194ce2ba3e8a887caf4153e556c87638db5",
+   "sha256": "1e8ad87893e314b8e08e405cc8b954f810d5ac11164169243240061dc30b5241"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10451_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "d9722ba77d707fdebc2894904cea91edabb00bce",
+   "sha256": "060cca5ebeeae80127abd35102993b4a4c39f51508f7c458dc370a6862216e20"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10471_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "bd242a7aae56e8f678a8085bff86abbd15b3fc60",
+   "sha256": "43da87d5361e65abb9cd3a4c8602ba54e9b3aa60ccc703f5f4a6f67e856a049d"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10577_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c253230d35bbf3c13cf98a614d1b2b83c7d9e9c7",
+   "sha256": "3286baa214df022d7a89c0a668cd9f3acd2a59075048335b52c0c0b4eca1eb81"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10612_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e99173faf277338b124c37789596886c3d41637d",
+   "sha256": "710e24e9131dbc9a1d87a0dfb10609ed59fddc84ef36954e36106cb9264ce56e"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10618_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ce768dd56f14044a7140f447f990fc94deef6629",
+   "sha256": "e88cf0bf9450c0871f5d91c2d6be03539c63509912d3aef1dc6b50414ab857cd"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10625_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c431098e9d13adce9de6838d6389118cc12d8e31",
+   "sha256": "e1f75c3ff689efd825311ae357804ecbfaba28888be57c4186dc4447a04a67fb"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10671_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "6403fdf16ddfb03e280ae9ea14b06aaac36a484b",
+   "sha256": "881c164a96c89a1cdc9e3d3fe2d6490eaf0ed45de39c76dcbf2c41a29a86f1a4"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10750_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "276926169039b402e8c8504991a9cf7c69033eb6",
+   "sha256": "e3a08d4d063e7d4333ffdab878397f3e473de3e7b32c1c7f10d3704f6856ec5a"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10834_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "63ea9cb3254dd01e7360ee016dd918deb353fa4b",
+   "sha256": "64284b13709728fe39918807aff1f29ccec2a76ba41420fe2f0d40f8108b1600"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10875_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c8bfd4a5bf540758ad908281d20617db77f58589",
+   "sha256": "6539623ede47302bbf4b766dc32a7410721374273543d97bd2dd7e28aa9c8936"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10876_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "35637f6731c6f32ab0ca1ba3d444775ef8a75084",
+   "sha256": "80bd58164fef05f07f8ed7d5a1bfc85314e16bad29103e06d62eaa672a2478db"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11200_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "06207f265584239f619af969c3c60b88bd264be0",
+   "sha256": "74a3e443687ad5558b0f9955a315ceed1ed9e3c06c810896f5fa6f3e300889b4"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11207_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "65696edfc0dbf916d9a487045d6e686731e88741",
+   "sha256": "06fac8b7a750dee1c380d68abb826a3c1750a743b610fd938f3d36cdabc1fc86"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11209_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "d6852af496a73b5fe7031347b92882da3e0e9d32",
+   "sha256": "fa70c032ee3bde88f361b76466b66bfe259908dfa00fab48bf0248fd2d5eb3a1"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11218_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c2bbef7773ba283cb9375f2ac8f67b117acb0768",
+   "sha256": "5bf8a3eb8c618881f7fd018512d84e84766e308a864c275f84cf2a34a198a78a"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11229_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "784b46cb2726f6276fe301f2a3a35f5a9d0eada3",
+   "sha256": "390826e48671b8e35818f8e931f49fb2aa24136be0addc50af851d05a6d9d6be"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11409_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e435fa850d6d91bb63a0f5471813847a02536ca8",
+   "sha256": "03a94bd66d0296d73a0488928fa88361892509e9c47bc9e9623cf262e2561943"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11448_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "5fd687093b5b5f2fb6c30ccb00898e73661cf6dd",
+   "sha256": "9b05c427ac43cea5ead8cadfa27fe11e9cf645bdc36ca97eaa5de87b0bd67f2c"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11469_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "d6841d18694f9ac2d36e27942257045d329fa7b6",
+   "sha256": "2c4d72b3aa59b65cf58f6a4f2e5def11757b33192c94326b2284eeb86070b9a7"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B11507_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "abd32d723f5616d3945b64ed3e05e16f091faf32",
+   "sha256": "f23c0de07466a582c4bd325167bd016b52631d43c542f0c801369dd4e692dabc"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_BLOCK03_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "02eda2cf014eadaa16ac820f0e54882ccab545e1",
+   "sha256": "32de7238fa06a51e3737f6854b9eff0b9e3b21b12a3bcfdbf93d99705e2db88e"
+  },
+  "docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "a56699cd4efc0aa2eb4c95c936942338c5e3f4f5",
+   "sha256": "c7c46ba0dfc8684d8dd5309f8e18ff74d0d40969e3336b75767f10e717025293"
+  },
+  "docs/historic_intake/HISTORIC_CLUSTER_CAP_EVALUATION_B09_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "f27d21d39face0d1b0d082b8ed05559896964c26",
+   "sha256": "4f75d75e039ab359ef19fb1537ba5cd6ea3b05d907141d94a8e203689751aede"
+  },
+  "docs/historic_intake/HISTORIC_DIMENSIONAL_SCALING_LAW_2026_04_01_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "58231c848413c5426902be5f3bad21fd44afa940",
+   "sha256": "6624b9e999ffb9b5368a8bddfe899afd8039c30e2ea389c7b39367b03b824b33"
+  },
+  "docs/historic_intake/HISTORIC_EX1_ASSUMPTIONS_LEDGER_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "41f016da82df80a9337b6181a324c09c23b5feaf",
+   "sha256": "a103ab74c7a84f1eae0f3b4220451d812fd779eb427118312b8f72ce2b441f01"
+  },
+  "docs/historic_intake/HISTORIC_EX4_MATH_SECTOR_SEARCH_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "84a23011a2fe9c9893c83be6d77825828a9f7b4c",
+   "sha256": "2a098070f9535c1016b956ccd5c08a6182c1a7dd85e18c60e36c6005eb226051"
+  },
+  "docs/historic_intake/HISTORIC_EX5_REFRAMING_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8f60d93b90016e325fb7b749cf1c9a7a71f4d016",
+   "sha256": "bc940e723a3c562622fa22d7d20a99ee33ca35519d2c5c3dbc83cc3b672372cd"
+  },
+  "docs/historic_intake/HISTORIC_HANDOFF_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c3f6babe49401bbc6f64a61cbf970873091a285e",
+   "sha256": "b9da4291f065b1c13013d57d8e2c801d45f3cc130836fa32de6a45718fa010c4"
+  },
+  "docs/historic_intake/HISTORIC_HONEST_FRONTIER_STATE_2026_05_26_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "59a537daf8788bd567328dae634dfae1e6c8ea7c",
+   "sha256": "2b3b4d6b5a3e71704aaa7c74023a54bc1d9c1776db682f8b2e4323d812280ca7"
+  },
+  "docs/historic_intake/HISTORIC_INTAKE_PART2_HAZARDS_2026-08-05.md": {
+   "git_blob": "bc9f1a06e29e274e29aa16d05d410796e545bf6d",
+   "sha256": "ce029cfbb5dedfd30dffa9a189f8e4ab5f0b47ded1c9d5917bd1c76b95463f2b"
+  },
+  "docs/historic_intake/HISTORIC_INTEGRATED_PHYSICAL_ENDPOINT_REGISTRATION_TOURNAMENT_SYNTHESIS_CYCLE339_NOTE_2026_07_18_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "db116b6ef790babd6e5de4cd4e5bb7f11993a26f",
+   "sha256": "05cfa160a3a91ea389e756dea3b3b6b1c3b4a21a2d21b64ce9c6f4967916a688"
+  },
+  "docs/historic_intake/HISTORIC_LATTICE_10_OF_10_2026_04_03_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "5ecdb0e79134ed73401ff682f2d2e454ee2fc8b7",
+   "sha256": "8b036e3b219ac978adc4dd0e4ad82028a5cc49ad57a9ede0d2295730068be129"
+  },
+  "docs/historic_intake/HISTORIC_MAJOR_RESULT_2026_05_26_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "42472b95378790c650d3f4a14850bb91f3db5bf1",
+   "sha256": "65c0d3d1a47206a81eddac4b397b3b67ff99f5a653f311095fec3dead7153632"
+  },
+  "docs/historic_intake/HISTORIC_NAMED_RECORD_CLOCK_MATCHER_REFINEMENT_CALIBRATION_TOURNAMENT_SYNTHESIS_CYCLE347_NOTE_2026_07_18_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "a927a6b7d7eb0142222795157c7ba718581068bd",
+   "sha256": "fba1647075457df2f98ed054302662876c259c3f1e5d0f63039798f9a310a0e5"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_DISCIPLINE_CHECKLIST_B10400_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ec42de70fda66ce2e37b40825de5abb89fdd39a1",
+   "sha256": "50be6244c294386febc9c233622adff13f6dd8e378fd0dd21b5012f638c452fd"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_DISCIPLINE_CHECKLIST_B10498_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "373045894752f410b69fb621e5085861745e4e0f",
+   "sha256": "09621093f5a2cf4c0cf0773ad300db3b207d6c77e22fd5ccf7bbf6057e3a1361"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_DISCIPLINE_CHECKLIST_B10553_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "fe1d11807e743ce06e602bb5304bcc4866113d4c",
+   "sha256": "ffeec5b24fc4ec1fec6b2b6e65dd925fe566dd4eccbaf9f3e930b6e86e8c0aee"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_DISCIPLINE_CHECKLIST_B10570_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "1bd5853669f0a3093697f918e9c03ca83f7819d5",
+   "sha256": "8e312e455e70c2691886763899223a931d228a3cf9b0e9c938dfd07d9b245a05"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_DISCIPLINE_CHECKLIST_B10695_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "188ed8a1be6b461c03863f69d90dc4f8e6ab964e",
+   "sha256": "698c05238d63a73ac6532a468e7bbb788c8956ff80069c3d4f124a2186affe81"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_DISCIPLINE_CHECKLIST_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "2289fe09388ab6f047103ff4369ea4b9d3978c65",
+   "sha256": "19baa1bd3b7fff39b62dad1b888afff831eb488488da7df3c33f5cf3413bf8fa"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10191_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "677aa558741a43d4d74b72b2c706308bb9d4d46a",
+   "sha256": "8266668a193e6f63a64e8975c84938f26cfdf1c201e8242689ac7b9f250b0f93"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10213_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "5bb2e3732a11f9f541c9e74c6e70245d8ccce140",
+   "sha256": "31605df6e685c4e67e770915ac1c244c9c0654308e68ab3d8331d88f54d9adc2"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10235_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b333634d6ace95d16af0afd211765f5b002bcb2b",
+   "sha256": "20b65234ff1cbec67a69b944ae8a7701b8cef50a50b94ccb16b235e341f94f71"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10237_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "f8b132a96e50541bf1495c212039fda74d43a3e4",
+   "sha256": "f0b075924d230577b0e08e4d46d596f46602e25ba3e23aea1f206b93bde2e00b"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10241_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "3c2b0973fa9741c13f45c12faba58c099035e9b8",
+   "sha256": "1506426dcced64eea80350a0b60eea78f794c70d652bc9d7cd4c82352e630cce"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10255_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "730de936b35c5968ce3467d7b66692c7564d68fb",
+   "sha256": "69cc7057aa557f283df87d467db68c567d5af75e0db88c4e9a423d45315e38cb"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10275_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "155bb57e62c28c37d3fad28decd19be06ee7c784",
+   "sha256": "e3a93f1eefc6ed1e8807cf96b0e3c34823c00f10b5c4d72f188e69fac1f59175"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10289_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "f990a8237e319525b5896e7e4ec58cfd98c7f314",
+   "sha256": "37f45aa1e5f98f917dc84463378221c9549ab4d2079f8177b85c9a4129f2f9e5"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10298_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "1f846dfab6b0c16da1be9fa81317f77943d592cf",
+   "sha256": "769b7ed4f0acd3ed9ffa0b7466414930485bd81ec267fccd5db1d7dc6fb5e73c"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10386_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "289658d214b6ec7a7b0ade06c9ffbc00d7195a3b",
+   "sha256": "e5c3533795a02b6dfad00f740a1be7dd256a1c7e041ea8fc83b5c1f03cd88974"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10388_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c8abfe1b4eb380d36428635c867abfa22b6faba1",
+   "sha256": "8db837c2a15198c1e8952ec9212772fa280d07094773a2686d8966f7bb883b51"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10437_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "28550cc29ee3bf768b14f7bc6023f90f3b83619e",
+   "sha256": "9a7188f4d32a4911f67ebc5c3868c44bf1f1f59cb9417aa00b9c42cd52bda5fa"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10474_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8fd1f8873af5bf6d988f3b9fcd93210eeae5c0f4",
+   "sha256": "7b70c035556f7894e45ec642788fed4efaa0519e4d405fa035df96b6b8f786f9"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10490_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "9119f6b0814405cef418a42fbb858c65aa3e5d78",
+   "sha256": "9d187ae2b228b4140715a2163041d4dc4cf9d2373aa38bbec5f392c83d804efe"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10515_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "452f32d89d8c1fd1604b7b3309e0ae59bf850d08",
+   "sha256": "2cab355f5da37c6b7e4ada3ec581cadf94026120a296f9424fac8dbe0a1c90f6"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10517_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "4ed4107d76c983cd0eae02630c56053ead1ba1f5",
+   "sha256": "94066da6a34012041c7fbc5f70d0dfce6104ff737adcddfcd3c373ee83dbf55c"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10523_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e671d530ac18d7fc51b20ef364ea82931f1a436f",
+   "sha256": "f70dab5bbdaa890e532b659669e8fa6b7f81cd0af921af241b804dce1d48fc81"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10546_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "60badcbc59c9a7254d86edcdbfd0a478023b512d",
+   "sha256": "bd9ee296c1aea141c6eb290abf2b93714d1ed76328f9e6146f39c53f92b373cc"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10547_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "a6a72642b925c3d20c988a7a53e6dd8c49cd0cf2",
+   "sha256": "9e49b1c344957a0830fcf93caf91f20a6b93de6b9934449dd40008a80b647888"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10578_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "1a0a13e3893ca00518fb7e0b457164548f123d4c",
+   "sha256": "6d5a00f73a573cf438f4b6c897f750bb7e86d9c1e435310c8a911d410fd524ee"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10719_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "6ffec354ad83c00cc684bf7dad652d2ae05a6803",
+   "sha256": "a13aec024036114ed63e11da30242f705cf073c6e1700bc1e929b0c01559fffe"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10721_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "4e034470fbe5687d1b8240880943127ab866abed",
+   "sha256": "5a528973714aa1e0f4c05754b3c20eb8b37e3e4e70f80796fa72aa73c1344e17"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10747_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "0d8d4e19c8fe70081cca636af0cc4cf79a530e20",
+   "sha256": "fa272c145504a8f395f70cc3aa36c481f384111863a5edfff4acda79d1fef905"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10756_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "dec0ca09e16ec3a443bc0569e56782a602dfc68d",
+   "sha256": "89b5f6bb93ec3d118346602a77efbc4457c0bba371e9b6d6bead288bb7bec7fd"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10760_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "f7e7afa37b0a092051ff5d70ae28a700f89d84af",
+   "sha256": "91eea8bfb4ae24db2d9a3b45be01015c2097f34f53b19085e418ef9023c28d24"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10770_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "0c1fa3d2ee7227c590434cece1f1648bbc9f02d4",
+   "sha256": "ae67ccb3e41067bb05eb0d9200fb2bdb5eaa5b8e8f4ac5f16c7830ccc8d4f7be"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10778_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "43864fa5ce9f37d043c92fa7ebf4aa7db7b01d69",
+   "sha256": "03db439ae3f72102cae0bec5c4344a0508280ea9db3a472865c7468e96316ef7"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10780_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "10dc39b2d418c5dda47fc7a52b2ce8ed464354d4",
+   "sha256": "ef25a1b80e57e5ef54b89667201665e4cd711adf55d55b36d95508c5d67d5f96"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10782_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8071fee3c64c5f62862fbd5dbed5df2ec4630b30",
+   "sha256": "3529813c26b579615ddae96ea7c3890cafe40fc08e5dcd4f98bfcb123a8b2fed"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10818_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "af3699d77c87cff62e88e2b6dc2a3f72c942f37b",
+   "sha256": "61951c629dc05720af46262326e48ec1baf74693b2e693b1c7e1d755b969bb91"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10824_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "9c6088f8ebfca3d810cbfdb03876c61fe906d3a0",
+   "sha256": "755fae38ba475b06c1842b1c33908951c0fade0f69adee59fd939b2ba2cea640"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10826_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "1208bff7d97de875e52eb284ec7c97a263806da5",
+   "sha256": "d6fe78d355f58f9420956a25d11d6c2b6d20f00bd134edd4f1275bcf1ad66214"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10900_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ddfdae0e77ae7d61b2ef20af817e47aa3a15ccf8",
+   "sha256": "4dfedba0136621ed6d1f109399a77b4b01beafe971820f5dca548165e5270bd5"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10910_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "9ff620ff4c3846665f7e88c03a2f212f91afd340",
+   "sha256": "6071bc3554cb4e0bdd9a08feb6e490e8ed97b81a17f795dcc5ccf5a7975800d8"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B10923_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b9a0a4fdac2cc332c49505a879f63ff85d270236",
+   "sha256": "e8e4381d2811e4b18cbbb003b5f6a1f5fc55bf5e8e00e33d1919ebb53784dd05"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11211_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "3303a655feb252a59950c563b3a953b78bcf75cb",
+   "sha256": "125669dadca29f85876e27c82b1d4af541367aad7a9197bdfd32d6cf5d17a4db"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11215_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "5b2b93c783e278e2cbee42e0338cd7fdcf858ddd",
+   "sha256": "b6d25546fb4e99fe125e85131cb25d2678a233862717f0504c12aefc56d2aabd"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11224_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b13b0e1e3be0bdc09b9cf1323a90a6873feefc35",
+   "sha256": "9934f76e1b496af62d0cfc8c4ae14b8e84f8846662b2c8413f21bf0431fd229f"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11238_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "6b61ea7a231ea48e20569d459c4c6ba42a4a297f",
+   "sha256": "f193f15e3630c632e4767c7c72be37709b05b148525de4959dc8b36e34763c18"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11248_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "622f8da5ddb46c8d83b2d32e23e3fe6d669f0c97",
+   "sha256": "eda3ef697a3b483df0e22cd247f3f7d6cf8b4b1a620fcc8b4a0c4451ec76f5fa"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11254_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "f4f8a3e9d7639fc22b4b9d0667bb98a657601ef4",
+   "sha256": "6d0758304446a1fc16d3781026c43bf1fc53c56e84e4962283cf1e50316d4e8f"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11259_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "94ab5e0347a5ac2a7f05e73fd6d7017923265e24",
+   "sha256": "fb9a5517be32b8b2d3cdedb486decf27653d9c67d34e96b70850f2b3300e6486"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11451_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "494b7b58e4580ce93690445afea998bf04beba4b",
+   "sha256": "113a940bdce6baeb246c135c8fdc33ac632b6ed3f3148d7b1c6966cbb5ff817f"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11471_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "0d719ce5966724e85520c9634b889728e999e5b0",
+   "sha256": "c030eea509670f90cca413c4ee3a3fcd79ce54eac6eddbe2b6633a60638f73a1"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_B11494_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "a91da2693f35d5a372a50c1dc1a3dfc0917d6d23",
+   "sha256": "121a2b585af6eb0f05d59cad99840308758ec07d456d8d09c1c4d0cd0a1b2858"
+  },
+  "docs/historic_intake/HISTORIC_NO_GO_LEDGER_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "04640d453472f63a132e678755908c4e141e4ef5",
+   "sha256": "d19c03c3163f0b257c9c85d796070eb967fad04b9d687318e03044794c06e23b"
+  },
+  "docs/historic_intake/HISTORIC_PANEL_REVERSAL_2026_05_26_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "044e7c4969b4859b02ca78622d5679f9b3b101ed",
+   "sha256": "226319db9e2b07ccd3826d9734e5a5cc2d6aaff5226d8e36f20238de0331657b"
+  },
+  "docs/historic_intake/HISTORIC_PANEL_VERDICT_2026_05_26_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "3af9ec0bbfab238f26fb24b614f5eb6ab69e3d19",
+   "sha256": "8838707d8661b4a3e5668728289b0e941794e85140fbabd73b76771b0211ab04"
+  },
+  "docs/historic_intake/HISTORIC_PHASE1_PIPELINE_GAP_ANALYSIS_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "7d5a1781fe16d2dbf9e8611325ba661d05c10b6e",
+   "sha256": "4f76b6f8937f21b90a20124693eac54ccf2f277692fcc7444d1bd79aff3b840a"
+  },
+  "docs/historic_intake/HISTORIC_PHASE1_PROSE_LEDGER_DIVERGENCE_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "9eb4c6c1a73055d482afc733dfab947c5a721194",
+   "sha256": "a30658e1032d956e2b4f92a4b5034cbb95b4151058de366b93837d66642720c8"
+  },
+  "docs/historic_intake/HISTORIC_PHASE1_REGISTRY_INTEGRITY_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "d73ae95648fc876fc919621e9335ec8b8873b9d1",
+   "sha256": "ea941ffcc09c1268beb3f8aa8c57f4b1898b0ca72f91e8d8e231cf35627e8f4f"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_HELD_CYCLE508_NOTE_2026_07_20_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "dde4bd07eb0ad7c2786249a4134c209ed7d53609",
+   "sha256": "f351b4b5a7ee48d2557c606e32b20020709bf078acc7fc56a5d14b758607f1d0"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_ADJACENT_TWO_STAR_SEAM_TAG_PRESERVATION_CYCLE519_NOTE_2026_07_21_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e1fdab6d1b4c0b1900cca114624c4e3f5f464ad7",
+   "sha256": "c69380c5149e06aa6a455335fb8f1d97f2b2d309cccc78bf6efe940e0cdc8ac2"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_BORN_SUPPORT_NINE_MIXED_QUOTIENT_AUXILIARY_CYCLE478_NOTE_2026_07_19_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "bd01b19644530a212f51b02123da98a8f68ba747",
+   "sha256": "72bb945f028148c4278f0acd34c59afb3130f9f6bce895b47d553231c357c2fd"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026_07_21_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "6a23dde2f4a123b151b3dabef1e25e8ca3b80950",
+   "sha256": "8c3b6ebb7ff16c604a0997be6c9a4a4709a46be25e9be06a71a747d348294f18"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_CYCLE664_BRANCH_IDENTITY_CORRECTION_CYCLE673_NOTE_2026_07_23_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "4984d94d9ec6d863b989a3800c95b2462c91e948",
+   "sha256": "50e1bd1e4a97a8c4ceb59791a0da6d2d789506c6f80ad2ad067280de9febd6c4"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_DIRECTIONAL_Q1_RECOIL_SOURCE_CURRENT_TRAIN_CYCLE506_NOTE_2026_07_20_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b6fcf643b55db953ffef3c05bfde22bc1e0e1398",
+   "sha256": "4c3b84ecd0405d936ba5feb72ba75b59dbef17fa628e78989393861a81a9805e"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026_07_18_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e38239a679541a78a3b87808595c95fa471e0228",
+   "sha256": "7ef4a342a5f152eb58993b307c06beaea38eba5435faf2dab47fb28dfe30f060"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_LOCAL_BOND_CHARACTER_AB_SCIENCE_TRAIN_CYCLE509_NOTE_2026_07_20_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "ba0ca41f85d7ba7fe63c910768bac813dda78db1",
+   "sha256": "d638e4fa27b3fc49ebbda7bcfba80288d6037e8b38d0d28e029f0f72fb2433e6"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026_07_23_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "272f9041f35988a5797985d42246cdb1bea9af52",
+   "sha256": "0b8738b619d253ced2855514b39ce9852643d30cac971e00779e82588f7e6332"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_QUANTUM_SOURCE_DENSITY_INTERFACE_TOURNAMENT_CYCLE473_NOTE_2026_07_19_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "8ee206704b783fcb64168b42207d49690bf94c3b",
+   "sha256": "6be23c54b8acc25b9ff02d03b7fe967735d93b6b4c09bf9d4586c71e45261766"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_RELATIONAL_FRAME_COMPRESSION_ISOMETRY_CYCLE556_NOTE_2026_07_21_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "656b533208b74247908137d2e2cc8f0830db1f89",
+   "sha256": "f52c209a7988fa227bd025a34904f22b4fac738cd97a2f432b95b2334c813bb8"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_REVERSIBLE_CUBIC_RELAXATION_CLOCK_COMPILER_CYCLE463_NOTE_2026_07_19_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c6e459b6583de1e9550b16ce56e66f9ef58ee156",
+   "sha256": "8f2b973d1a2163168fff0813921c31be4a66fd0c9778fd2899253aa6d148a9a3"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_REVERSIBLE_PUNCTURE_BRANCH_RETIREMENT_CYCLE550_NOTE_2026_07_21_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b540336a40dac3f805990156df6cfa16e4cb6c3f",
+   "sha256": "58d6c458d7ab5fecdedde1d4ce4ae6381b55cab11a1f59113a8455b6f7837492"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026_07_20_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "2daf052d466664c0cb20351d37e85349111969ed",
+   "sha256": "753386b1f1492f2c6961e873baf3d65d63028ed2670cff3d5170f58a53932783"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_SELECTED_RECORD_JOINT_OPERAND_CORRIDORS_CYCLE677_NOTE_2026_07_23_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "4c572f61d776d8e64abc77a68e2123fded3959d1",
+   "sha256": "ffbde466fc38a277b036314ee195e022cc7e68912f87def7612e37d3c3a77c7f"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_SOURCE_PROFILE_DUAL_ECHO_ROLLOVER_CYCLE507_FINAL_NOTE_2026_07_20_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "faa3058f6b2d0b80e65a4e31b893d4f9fb486afd",
+   "sha256": "82500db6d601be1917bf60894661bb1ab467fb37840ae05ebfb8b97113dade4c"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026_07_23_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "100f023293fdf1e7e7567e98c349f61e2dbf1bba",
+   "sha256": "3bfe82f768479cc946bdd9e95452668187c8d3e5ee8a64c1fe08e2880bf41821"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_TERMINAL_MENU_MEMBER_LAW_TOURNAMENT_CYCLE493_NOTE_2026_07_20_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "145d757d4664d1f00f69fa8d558d2c9fc4575bfe",
+   "sha256": "f978f951789c70adb1bb4559d17d36c396626c66eefdd56dd66c8de104c87bc2"
+  },
+  "docs/historic_intake/HISTORIC_PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026_07_23_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "803ce22af6d4512ae415e7123070024b6cf36f87",
+   "sha256": "168845c699587b2827d86ea554a583fa8788c7040cea09c320846c4ffaeacbe2"
+  },
+  "docs/historic_intake/HISTORIC_PLANCK_ONLY_FRAMEWORK_INPUT_FRAMING_NOTE_2026_05_27_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b58f183c85511e8c84d6c4ddab79adeb67f734d3",
+   "sha256": "91fa2d1f88d6e22af01891de18652c153549a587b0140ab7760b0d0f1da31708"
+  },
+  "docs/historic_intake/HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "977b6ea0e7c35a302896d7692afde6e1f240f78c",
+   "sha256": "0d13650605df67a5c5867e9a9b4a1aea9e6abb7e6d45e2ff47ab7b6bbe57f23a"
+  },
+  "docs/historic_intake/HISTORIC_PR_BODY_BLOCK04_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "40c741948d2ba4228b98d2ed4680fb3c6ff70f38",
+   "sha256": "a73b57562646a4ec410be3a2dda7a7ca5bc76733daeeec3df929ca5a4b789cb1"
+  },
+  "docs/historic_intake/HISTORIC_PR_BODY_BLOCK10_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "b4aabbb43ab896dc6df8d020352c5fa0b7206a3c",
+   "sha256": "f2c07f75f53612600a5893d27faa1498d1f6616bfce4a951c4386fff769fc424"
+  },
+  "docs/historic_intake/HISTORIC_README_B2748_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "53119526daeecec7d885ca5c6b56f1802f0a0928",
+   "sha256": "bd7c2973c324ba2c75fd6013423a5abd3ac1864f851bbb0a4e8e85e4d743f774"
+  },
+  "docs/historic_intake/HISTORIC_README_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c1d09d4be9763f02592bcf483f8d65232f0fa3f1",
+   "sha256": "350a5d8edb792ad83d2f0971aed55d78d1f39bccc01d5b5f29c59a49b3eedc42"
+  },
+  "docs/historic_intake/HISTORIC_RECIPE_R_FORCING_FROM_RETAINED_N3_2026_04_17_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "87005ef5ec303d6e49f4a0589067c7b5486a326a",
+   "sha256": "fb16019e2ce28c736c078b1c3cefc7558f20693d82c81c988791a738b33d76c3"
+  },
+  "docs/historic_intake/HISTORIC_RESUME_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "c59bc8c5f7fd84519d4436eeebcbed6545107e98",
+   "sha256": "22f67827b84ded41d2d56d3652779a6dddef1dfa5fd14f1370192f5475a836fc"
+  },
+  "docs/historic_intake/HISTORIC_SCOREBOARD_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "5524635d5feb461714b3674fccc188ad754bd74c",
+   "sha256": "7f83aeeb6b5743f1359a294f648f9b238b0faafafd496c204815da769f7debd3"
+  },
+  "docs/historic_intake/HISTORIC_SUMMARY_B10058_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "482fa1438eb556c63b86fc60d0a285edf54cc6e2",
+   "sha256": "722bab7f53e738c7f7330a526a2a3f23c9dcb3c0ded9c479d12b79e611a762bf"
+  },
+  "docs/historic_intake/HISTORIC_SUMMARY_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "078417856417a194f819ed698ede641e03eefab4",
+   "sha256": "bc333c8c68f57047d78eb6ad87b5121a21f47137d8ec80489dad9e12e2151a62"
+  },
+  "docs/historic_intake/HISTORIC_TETRAGONAL_STABILIZER_MU_TAU_INVARIANCE_2026_04_17_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "891d25cbba19ee603974136b65af68277b61e582",
+   "sha256": "edd27b19d7f72dbc61e567a091b481133213b7c40a24edda17ed5740c485c0e0"
+  },
+  "docs/historic_intake/HISTORIC_TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026_07_18_CYCLE411_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "078f09c6dc2cae02492eada8b482d90882a6d75a",
+   "sha256": "b655f44619a4980e2ecf431c54af9323833d154a18fc14a78c5039cb77bae6e6"
+  },
+  "docs/historic_intake/HISTORIC_WAVE1_KILLCHECK_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e0d857e1efb4f79e30825f9dd0b5301b3f66ca6f",
+   "sha256": "afe72054fba468f44c6bf55907a0874720ec0e325d99100253ea7ea79a33500e"
+  },
+  "docs/historic_intake/HISTORIC_WAVE1_LANDED_FORCING_STATE_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "78a3726762d8c2a794af98221a2ee2a3d8f8b118",
+   "sha256": "c1e886b402f902e3e8622835e2f06207cc2c4d93ea7fa795678803dd17f5f1be"
+  },
+  "docs/historic_intake/HISTORIC_WAVE1_WELLPOSEDNESS_KILLCHECK_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "888fbb1f654d42a627dac2ec072acb3eb005e965",
+   "sha256": "b1b9e8afca4be2118accb7f27c1809c9e486e471b3322d45141cbcebef8c1d75"
+  },
+  "docs/historic_intake/HISTORIC_WAVE2_BREACH_TARGET_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "3df9085d5a5c77c56da99e6b69439339130840f9",
+   "sha256": "8050462d8fc07c9dc963f33d3665fd562933fbbe797ee0cddb935f3714d29f6b"
+  },
+  "docs/historic_intake/HISTORIC_WAVE2_DEFEND_EX1_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "e59a6c6859d9a216fb483216b2218f580d262437",
+   "sha256": "5c83fda6b4e954bb964887d30abc556be7275f3ad203fc575dff3c972fa2da62"
+  },
+  "docs/historic_intake/HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "73e84c8f9bdc0bfb65efab35f63e4b6c9af9cdd9",
+   "sha256": "a11296ea21b883d3ff2f2603d02eca1cb9d00782938956962d0da88199166250"
+  },
+  "docs/historic_intake/HISTORIC_WAVE2_KILL_ATTEMPT_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "cbad281d58b1dc10b0a01f5603e475fcfe103d0c",
+   "sha256": "a3a34513bcc5ccb61944206d825f9411733fd5c7365f98895025e3d40a234588"
+  },
+  "docs/historic_intake/HISTORIC_WAVE2_PRIMITIVE_CHECK_INTAKE_NOTE_2026-08-05.md": {
+   "git_blob": "225acad51600a98b0ee32ebcf65873c1bc57e622",
+   "sha256": "24d0b9b5d49852db5e57a28139970ecefd776a7ba3dccef68f2fe7334e978dff"
+  },
+  "docs/historic_intake/INTAKE_INDEX_PART2_2026-08-05.md": {
+   "git_blob": "2bf80114fa966590531435272652b88f57b33e9e",
+   "sha256": "1e9c4f88e7f4188337e327071b88eede669c6b89ea31539db2798223dad6c77e"
+  },
+  "docs/historic_intake/INTAKE_MANIFEST_PART2_2026-08-05.json": {
+   "git_blob": "5855af767a23b845db2afce4c80d4625b1ca8b66",
+   "sha256": "99a83b8739a15ed53b5c8ecdabaa9c14d52de35143d9bfdb986b95fc35380610"
+  }
+ },
+ "ship": "historic_intake_part2",
+ "strata": {
+  "branch09": 26,
+  "packsci01": 42,
+  "packsci02": 33,
+  "packsci03": 30,
+  "packsci04": 9,
+  "packsci05": 19
+ },
+ "template_invariants": "159/159 carry audit_required_before_effective_retained: true and the audit sentinel",
+ "unresolved_pins": 0,
+ "worker_profile_disclosure": "extraction: Claude workers (general-purpose subagents) at session max effort; packsci05 extraction split across two workers after a weekly-limit interruption (rows 11240-11425 / 11426-11548), append-only preserved and validated (309 rows, 0 dups, 0 gaps); ALL pull/leave decisions and every wrapper reason: supervising agent (Fable), on the record in triage decisions JSONL; codex unavailable during extraction (quota), so extraction was single-family Claude with supervisor line review of digests - independence class disclosed per the workhorse skill",
+ "wrappers": 159
+}

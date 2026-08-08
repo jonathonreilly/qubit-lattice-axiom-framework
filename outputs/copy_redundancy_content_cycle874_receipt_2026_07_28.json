@@ -1,7 +1,7 @@
 {
  "audit": "unset",
  "authority": "none",
- "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); revised 2026-08-08 by a review-loop fix worker applying the iteration-1 physics review",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); revised 2026-08-08 by a review-loop fix worker applying the iteration-1 physics review and the iteration-2 confirmation findings",
  "certificates": {
   "logs/runner-cache/frontier_cycle874_copy_redundancy_content_2026_07_28.txt": {
    "fail": 0,
@@ -18,39 +18,40 @@
  ],
  "files": {
   "docs/COPY_REDUNDANCY_CONTENT_CYCLE874_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "8ee958dd7479e50b7c600f884c058a6b5db01343",
-   "sha256": "ce06622a52f77f78d5748ddd8267481a8aaa6062806c5c249da21581238ab13e"
+   "git_blob": "cb0f0d901eb1cf233890fad3be40026a436007bc",
+   "sha256": "09b4dc1725470ad99fbe01deec836d55ec45752f10252aad2614f25575058905"
   },
   "logs/runner-cache/frontier_cycle874_copy_redundancy_content_2026_07_28.txt": {
-   "git_blob": "b93046fc87ca93cebf598231456e37dd5bbd5db8",
-   "sha256": "28ef544dc6b06cf887040102e7db8acba06e5a34865c89ea18f9ef6c21986ef8"
+   "git_blob": "051026e85148b39441eae6876520b67df6cdfb13",
+   "sha256": "0eb621cf36ac61627a049a3fc8a429fcca903e02be29912a8ec3a14472196b52"
   },
   "logs/runner-cache/frontier_cycle874_redundancy_independent_check_2026_07_28.txt": {
-   "git_blob": "594238664c062cb52c95e65bbb6285bd4868a4ea",
-   "sha256": "4f147022d8b410ae56512c790ff0ab647f87f12ab36055f570df8296d59c1a31"
+   "git_blob": "625a31ff57205e621d0e2ffa3a5f32dc1007f717",
+   "sha256": "9e7d79f92a496201801690cef24bda8d3b5498eedab9af74df5847e75055fd41"
   },
   "scripts/frontier_cycle874_copy_redundancy_content_2026_07_28.py": {
-   "git_blob": "aa8d6f44ccd8ac985ea5f4ac5f53a4be381cdf21",
-   "sha256": "e81e8724eaefc421a05e4d35f30b96adb4e97e9cebab9c8ff96c1a6b676861bc"
+   "git_blob": "dcaed7a7d1a5ab0caab4c4ff76fb4a58ad0c9ad5",
+   "sha256": "3aee550eb2d0c2e9451ce47ab0c5faa318e3832f31969055d54840820ee96841"
   },
   "scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py": {
-   "git_blob": "ebbe131e5d140bc0bd40e9ca64e996327bff9ddc",
-   "sha256": "42edced16a2fb52db2daa0b8a07b31d2ab15e58a1d01c931142929ea68b484e7"
+   "git_blob": "a9fb7bcf52950f12edfe0087fcb8c9687fd6ba39",
+   "sha256": "6f444cd179cd07b304b2573e99c03210629a2b4200aa4eff2889d84d722cc785"
   }
  },
- "headline": "exact finite support certificates on the landed Cycle-719 kernel: R-fold replication of a stipulated 32-bit whole-state fingerprint into disjoint dead-wire slot groups (977 words, 0 readback mismatches); under the declared COMMON-MODE probes the majority readback is R-invariant by construction (no stored-copy fault tested, so no redundancy verdict); the flip-and-restore gap between the FIXED bank-0 and bank-1 perturbation sides (3/32, 3/28) is a firing gap with zero fired-conditioned content gap in this sample (no locality reading; selector retired as tautological); at least one projection-shard digest stays unchanged under every sampled direct flip (partial observation; reconstruction untested)",
- "independence": "cross-context (checker used a different slot allocator and wider redundancy schemes; both runners import only the landed Cycle-719 kernel; zero refutations)",
+ "headline": "exact finite support certificates on the landed Cycle-719 kernel: R-fold replication of a stipulated 32-bit whole-state fingerprint into disjoint dead-wire slot groups (977 words, 0 readback mismatches); under the declared COMMON-MODE probes every scheme shows zero majority-readback R-delta -- forced by construction for identical REPLICATED copies (majority([w]*R,R)=w), and a SAMPLED finite result for the staggered/deep-staggered schemes (invariance holding on the constructed objects, forcing open; no stored-copy fault tested, so no redundancy verdict); the flip-and-restore gap between the FIXED bank-0 and bank-1 perturbation sides (3/32, 3/28) is a firing gap with zero fired-conditioned content gap in this sample (no locality reading; selector retired as tautological); at least one projection-shard digest stays unchanged under every sampled direct flip (partial observation on the claim-scoped checker; reconstruction untested)",
+ "independence": "cross-context (checker used a different slot allocator and wider redundancy schemes; both runners import only the landed Cycle-719 kernel; zero refutations); the checker is claim-scoped and co-load-bearing and must be registered as an explicit packet helper runner at landing",
  "note": "docs/COPY_REDUNDANCY_CONTENT_CYCLE874_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "packet_helper_runner": "scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py",
  "review_loop": {
   "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix_summary": "demoted the negative/locality/record/sharding wrapper to a bounded support note; removed the unlanded Cycle-863/866/867 ancestors from both runners' input closures (self-contained over Cycle 719); replaced the tautological near/far selector with fixed bank0/bank1 sides; regenerated caches and receipt",
-  "iteration": 1,
+  "iteration": 2,
+  "iteration_1": "FIX_THEN_PROCEED -- demoted to bounded support note; unlanded Cycle-863/866/867 ancestors removed from both input closures (self-contained over Cycle 719); tautological near/far selector replaced with fixed bank0/bank1 sides",
+  "iteration_2": "confirmation FAIL fixed -- replicated-mode forced identity split from the sampled staggered/deep-staggered zero R-delta on every live surface; independent checker declared claim-scoped packet helper (packet_helper_runner status line; hard landing condition: claim-scoped entry in EXPLICIT_PACKET_HELPER_RUNNER_PATHS in docs/audit/scripts/build_citation_graph.py)",
   "reviewer": "Sol"
  },
  "runtime_seconds": {
-  "checker": 86.677,
-  "primary": 74.658
+  "checker": 71.715,
+  "primary": 77.507
  },
  "surface_status": "bounded support note"
 }

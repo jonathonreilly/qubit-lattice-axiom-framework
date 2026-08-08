@@ -1,6 +1,6 @@
 {
- "edge_count": 15423,
- "node_count": 4635,
+ "edge_count": 15424,
+ "node_count": 4636,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5996,6 +5996,10 @@
   },
   "gellmann_completeness_theorem_note_2026-05-02": {
    "deps_hash": "5e93d700a831",
+   "out_degree": 1
+  },
+  "general_n_census_law_cycle870_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "51bbcb706c9d",
    "out_degree": 1
   },
   "generated_finite_composition_minimality_theorem_2026-07-13": {

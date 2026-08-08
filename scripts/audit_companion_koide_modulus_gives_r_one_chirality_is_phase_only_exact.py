@@ -68,6 +68,44 @@ for l, o in R:
 print("\n%d PASS, %d FAIL" % (P, F))
 if F:
     raise SystemExit(1)
+print("\nN5 EXECUTION CERTIFICATE")
+print(
+    "per_element: Hermiticity is established as a nine-entry symbolic identity - "
+    "the circulant is assembled from the explicit cyclic shift array and the "
+    "difference between the matrix and its conjugate transpose is required to "
+    "simplify to the 3x3 zero matrix, so the vector-type mass claim rests on "
+    "every position separately rather than on a trace or a determinant argument"
+)
+print(
+    "per_site: checked and not executed - the only shift operator present "
+    "permutes generation labels rather than carrying anything between places, and "
+    "nothing in the file has a spacing, a hop amplitude or a boundary condition; "
+    "the effective potential that does the work is a function of exactly two real "
+    "numbers, the real and imaginary parts of a single coupling"
+)
+print(
+    "per_mode: the three eigenvalues a + 2|b|cos(theta + 2 pi k / 3) are formed "
+    "separately for k = 0, 1 and 2 inside the modulus potential, whose value is "
+    "the sum of twice the log of each of their absolute values, and at zero phase "
+    "the determinant is written in factored form as one simple eigenvalue times a "
+    "repeated one squared, which exhibits the mode multiplicities directly"
+)
+print(
+    "per_block: the real doublet of coupling components is the block being "
+    "weighed, and its rank is measured rather than assumed - three "
+    "finite-difference second derivatives are assembled into a symmetric "
+    "two-by-two Hessian whose numerical rank is taken at tol=1e-6, and the answer "
+    "two is contrasted against the rank one that a holomorphic counting of the "
+    "same coupling would produce"
+)
+print(
+    "lattice_wide: checked and not executed - a whole-system fluctuation "
+    "determinant would need a system with a size, and what is actually "
+    "differentiated here is one 3x3 determinant restricted to a fixed-scale "
+    "one-parameter branch; no extent, no mode count beyond three and no limit "
+    "occurs, and the runner's closing text records that a phase or holomorphic "
+    "determinant construction remains a separate open route"
+)
 print(
     "\nROUTE-SPECIFIC CORRECTION: the tested fluctuation-determinant modulus is an\n"
     "|b|^2-type function with a rank-2 doublet Hessian, so this modulus route counts\n"

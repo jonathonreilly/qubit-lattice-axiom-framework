@@ -241,6 +241,49 @@ def closeout() -> int:
 
     print()
     print("=" * 88)
+    print("N5 execution certificate")
+    print("=" * 88)
+    print(
+        "  per_element: checked and not executed - nothing with two indices exists "
+        "anywhere in this audit; no operator, array or Kronecker factor is built, "
+        "and the only indexed objects are flat tuples of rational multiples of "
+        "pi, so there is no matrix position that could be resolved even in "
+        "principle"
+    )
+    print(
+        "  per_site: checked and not executed - the lattice enters solely through "
+        "its extents appearing as denominators, the temporal length four in the "
+        "Matsubara spectrum and the spatial lengths three and four in the zone "
+        "spectra; no field is placed at a site, no site is indexed, and no "
+        "spacing or neighbour relation is written down"
+    )
+    print(
+        "  per_mode: every mode of every finite source is enumerated one at a time "
+        "and carried as an exact Fraction - the four antiperiodic Matsubara "
+        "coefficients (2n+1)/4, the zone coefficients 2n/3 and 2n/4, the three "
+        "Z_3 character coefficients, the nine C_9 coefficients, the two Wilson "
+        "sign values and the closed Berry orbits of order six and twelve, and the "
+        "ninth-power escape route is then re-enumerated mode by mode as 18k/order "
+        "for six separate orders"
+    )
+    print(
+        "  per_block: inventory only, and reported as such - the block content here "
+        "is the trace-factorization type of the Koide-Nishiura quartic, held as a "
+        "set of three labelled tuples and compared for disjointness against a "
+        "three-element single-trace basis set that is likewise written by hand; "
+        "no basis is constructed, no invariant is expanded and no spanning "
+        "computation of any kind is performed"
+    )
+    print(
+        "  lattice_wide: checked and not executed - no lattice object, volume or "
+        "system size sequence is created, and the audit's own closing flag names "
+        "the reason the whole-system statement is unavailable, namely that the "
+        "map from a dimensionless rational to a literal radian remains an "
+        "unsupplied observable law rather than a theorem the finite sources "
+        "deliver"
+    )
+    print()
+    print("=" * 88)
     print("Summary")
     print("=" * 88)
     print(f"PASSED: {PASS_COUNT}/{PASS_COUNT + FAIL_COUNT}")

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py
-runner_sha256: 210fc0386b927b53f60e643def8fcdc450e43e7736e621458b0871a3dfe6782d
-input_fingerprint_sha256: 614743e5d81a4aea4dd15da467e3e2757eaa043ca04adbbf9c40d966684530e1
+runner_sha256: ccdbfca3fbb27fcadb44c16a08eec37d30c6c89a2de9cfb49961f701f7cdcd85
+input_fingerprint_sha256: 84d5e554deceb364e48cc7228f7412ad598585e098ca0ae9a2362024ed1325bc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 
@@ -97,7 +97,7 @@ D. COMPARATOR ONLY: what this means for the displayed quark numbers
     up-type   m_u(2 GeV)=2.16e-3, m_c(m_c)=1.27,  m_t(m_t)=162.5   GeV
     down-type m_d(2 GeV)=4.67e-3, m_s(2 GeV)=93.4e-3, m_b(m_b)=4.18 GeV
     alpha_s(M_Z) = 0.1180
-    asymmetric mass errors are symmetrized by averaging their magnitudes
+    asymmetric mass errors: average magnitudes, then round as displayed
 
   D1. The dial computed at SIX common scales spanning three decades:
       mu [GeV] |      Q_up      r_up |    Q_down    r_down

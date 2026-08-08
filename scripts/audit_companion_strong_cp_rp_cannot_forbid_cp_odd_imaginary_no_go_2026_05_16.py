@@ -335,6 +335,63 @@ def main():
 
     print()
     print("=" * 78)
+    print("N5 execution certificate (print-only; adds no check and no counter)")
+    print("=" * 78)
+    print(
+        "per_element: checked and not executed -- no matrix or linear operator is built anywhere in "
+        "this runner. The half-action, the CP-odd density, and the observable basis are all "
+        "scalar-valued functions on the finite carrier, and every reflected expectation is a single "
+        "complex number formed by summation, so there is no matrix element here to resolve and none "
+        "is claimed."
+    )
+    print(
+        "per_site: resolved point by point across the whole carrier -- the involution is verified at "
+        "each carrier point by composing it with itself, Theta-invariance of the half-action is "
+        "established as an exact sympy simplification at each point separately rather than in "
+        "aggregate, and Theta-anti-invariance of the CP-odd density is established the same way, one "
+        "point at a time. Both carrier sizes, N = 6 and N = 10, are walked exhaustively."
+    )
+    print(
+        "per_mode: resolved separately in each Fourier mode -- the observable basis is "
+        "F_n(k) = exp(2 pi i n k / N), and modes n = 1, 2 and 3 are carried independently through "
+        "every diagnostic: the symmetric-modification identity is proved exactly in sympy per mode, "
+        "the single-side reflected expectation is tested for reality per mode at three separate "
+        "couplings, the c -> 0 limit is matched against the unmodified value per mode, and the "
+        "small-c suppression is fitted per mode. No mode is ever summed into another."
+    )
+    print(
+        "per_block: resolved orbit by orbit, and the orbit is exactly where the cancellation lives "
+        "-- the carrier decomposes into Theta-orbits, which the runner enumerates with a frozenset "
+        "key so each is visited once, separating the fixed points where a point is its own "
+        "reflection from the two-element orbits. Identity (B) is then a per-orbit statement: on a "
+        "two-element orbit the two single-side contributions must sum to 2 cos(c h(k)) times the "
+        "unmodified weight, which is precisely how the CP-odd phase disappears, while a fixed point "
+        "contributes its unmodified real value on its own."
+    )
+    print(
+        "lattice_wide: resolved as a whole-carrier normalized sum at two finite sizes -- every "
+        "reflected expectation in this file is the sum over all N carrier points divided by N, so "
+        "the quantity carrying the no-go is global rather than local, and it is computed "
+        "independently on X = Z/6 and on X = Z/10. Both are fixed finite carriers: no size is grown "
+        "beyond those two, no continuum or thermodynamic limit is taken, and the conclusion is "
+        "stated only for the cited retained half-action carrier."
+    )
+    print(
+        "Numeric handling: this certificate quotes only source literals and exact integers -- the "
+        "carrier sizes 6 and 10, the modes 1, 2 and 3, the couplings 0.5, 0.7 and 1.3, the small-c "
+        "probes 1e-3 and 1e-2 with their acceptance window of 50 to 200 around a predicted ratio of "
+        "100, and the comparison tolerances 1e-12 and 1e-14. The residual magnitudes those "
+        "tolerances judge are floating quantities that move between environments, so none of them is "
+        "reproduced here; the structural statements above rest on the tolerances themselves."
+    )
+    print(
+        "Determinism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in "
+        "this runner. The coupling values form a fixed three-element list rather than a sampled "
+        "sweep, orbit enumeration is deduplicated by an explicit frozenset key so no traversal order "
+        "can double count an orbit, the exact legs run in sympy rational and symbolic arithmetic, "
+        "and both carriers are enumerated in ascending index order."
+    )
+    print("=" * 78)
     print(f"PASS={COUNTS['PASS']}  FAIL={COUNTS['FAIL']}")
     print("=" * 78)
 

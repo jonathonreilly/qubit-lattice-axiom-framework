@@ -50,13 +50,23 @@ pipeline-generated and belong to the audit lane.)
 open-gate note, as displayed         0.773642    0.597141   (mixed scale; pole top)
 same inputs, MSbar top m_t(m_t)      0.767630    0.597141   (mixed scale only)
 canonical common scale               0.830971    0.621090
-                                     ± 0.002204  ± 0.007335
+                                     ± 0.002211  ± 0.007511
 ```
 
 The runner reproduces the open gate's two displayed values to six decimals from
 that note's own quoted mass list, which confirms the convention being compared
 is the one it actually used. The `+0.0573` shift in `r_up` splits as `−0.0060`
 from pole→MSbar and `+0.0633` from the scale correction.
+
+The numerical packet deliberately preserves the landed comparator's input
+vintage rather than silently substituting a newer fit: masses and their errors
+come from the [PDG 2022 quark summary
+table](https://pdg.lbl.gov/2022/tables/rpp2022-sum-quarks.pdf), while
+`α_s(M_Z)=0.1180±0.0009` comes from the [PDG 2023 QCD
+review](https://pdg.lbl.gov/2023/reviews/rpp2023-rev-qcd.pdf). The asymmetric
+mass errors are symmetrized as half the sum of their upper and lower
+magnitudes. These are comparator inputs, not a claim to reproduce the newest
+PDG table.
 
 The corrected values sit *further apart* than the ones they replace. Anyone
 using the sector spread should note that this correction widens it rather than
@@ -110,9 +120,12 @@ The common scale must be one at which all three masses are legitimate
 active-flavour MSbar masses. A quark below its **own** threshold is decoupled,
 so `μ ≥ m_t` for up-type and `μ ≥ m_b` for down-type; **taking `μ ≥ m_t`
 satisfies both and is the prescription adopted here.** At `μ ≥ m_t` every mass
-is transported *upward* only, so at each threshold it crosses it is a light
-(active) flavour, no sector member is ever the decoupled one, and the
-decoupling coefficient is common to the sector.
+is transported *upward* onto one `n_f=6` surface. Crossing a heavy-quark
+threshold also requires finite matching for the quarks light at that threshold
+([Liu and Steinhauser 2015](https://arxiv.org/abs/1502.04719)); that coefficient
+is common among those light flavours, not necessarily across a sector that
+contains the newly activated heavy member. It therefore need not cancel from a
+sector dial and remains a separately sized residual below.
 
 The sub-threshold rows of the runner's invariance table are **display-only**:
 they extrapolate `m_t` (both sectors, four of six rows including `μ = M_Z`) and
@@ -124,11 +137,14 @@ displayed digit depends on them.
 
 **Mass scheme is a named residual, not a resolved one.** Everything here sits
 inside one fixed scheme (MSbar); the invariance covers the reference scale
-only. A change of scheme is generally *not* a common rescaling — the MSbar→pole
-factor `1 + 4α_s(m_q)/3π + …` is evaluated at each quark's own mass (`≈1.164`
-at `m_c` against `≈1.046` at `m_t`), so converting the up-type sector to pole
-masses moves `r_up` by about `−0.010`, roughly `4.5σ` of the propagated input
-error. A framework-native dial target must still name its scheme.
+only. A scheme conversion is generally *not* a common rescaling. As an
+illustration, applying the one-loop MSbar→pole factor
+`1 + 4α_s(m_q)/3π + …` to the charm and top entries gives different factors
+(`≈1.164` at `m_c` against `≈1.046` at `m_t`) and moves `r_up` by about
+`−0.010`, roughly `4.5σ` of the propagated input error. This does not define a
+light-quark pole mass or a complete pole-scheme sector; it only exhibits the
+non-common character of the conversion. A framework-native dial target must
+still name its scheme.
 
 **The mass-to-dial dictionary is non-retained.** The values above are not
 measured values of `r`. They are computed from PDG masses through the
@@ -226,12 +242,15 @@ Grading is the audit lane's determination, not this note's.
 
 Three-generation sectors, real nonnegative generation coordinates, nonzero
 coordinate sum; `Q` and `r` are undefined at `Σx = 0`, which the runner
-excludes rather than samples. Symmetric linear error propagation from PDG
-inputs. Residual comparator systematics — the active-flavour convention on the
-quoted 2 GeV light-quark masses, and neglected higher-order decoupling — act on
-only the subset of masses quoted at 2 GeV and are therefore themselves unequal
-per-generation factors; the runner bounds them directly, and a common `+0.3%`
-shift on the 2 GeV masses moves `r_down` by `4.2e-4` (`0.06σ`).
+excludes rather than samples. Symmetric `±1σ` finite-difference error
+propagation from the sourced PDG-vintage inputs. Residual comparator
+systematics are sized separately: the active-flavour convention shifts the
+quoted 2 GeV `u,d,s` inputs, while neglected higher-order threshold matching
+acts on flavours light at each crossed heavy threshold — represented by
+`u,c` relative to `t` and `d,s` relative to `b`. With a deliberately common
+`+0.3%` proxy amplitude, the former moves `r_down` by `4.2e-4` (`0.056σ`), and
+the latter moves `r_up` by `3.1e-4` (`0.14σ`); both remain comparator-only
+residuals below one propagated input sigma.
 
 ## Reproduce
 

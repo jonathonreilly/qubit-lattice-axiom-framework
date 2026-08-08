@@ -1,0 +1,120 @@
+{
+ "cycle": 740,
+ "failures": 0,
+ "gates": 29,
+ "headline": "On the 15800 least-cost cuttings of the single cell, the forced piece sets form a space over the two element field, and the previous cycle's five forced blocks are its shadow on the block lattice. Row rank 88 against kernel dimension 104 on 192 pieces; the quarter-parity image of the kernel is exactly the two words 0000 and 1100, so of the 16 quarter unions exactly 8 are forced, the complements of the third and fourth quarters among them for the first time; the block-parity image measures dimension 5, attaining the bound of 5 that the previous cycle's five forced sets impose, so exactly 8 of the 256 block unions are forced, two to the 8 less 5, and every one is a union of quarters - no block of 24 pieces is forced alone, and the two quarters of the first half are forced only together. The whole set is the symmetric difference of all 15800 cuttings, every piece used an odd 1975 times, and is carried again by 48 pivot cuttings; explicit combinations carry the first half from 46 pivot cuttings, the third quarter from 26, and the two complements from 50 and 46. Every free block has a kernel witness of weight 8 with zero syndrome on all 15800 cuttings; the reduced kernel basis has least weight 8 and greatest 20. A planted forced set of weight 96 folded from 30 cuttings is recovered blind from 44 pivot cuttings, its symmetric difference with the first half - a set that is no block union - is forced too, and a planted 20 piece set is caught free by a weight-8 witness after 0 redraws.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_FORCED_CERTIFICATE_CYCLE740_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_forced_certificate_cycle740_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "block_image": {
+   "basis": [
+    "00000011",
+    "00001100",
+    "00110000",
+    "01100000",
+    "11000000"
+   ],
+   "bound_from_previous_cycle": 5,
+   "dimension": 5,
+   "words": 32
+  },
+  "block_unions": {
+   "all_forced_are_quarter_unions": true,
+   "forced": 8,
+   "of": 256,
+   "routes_agree_on_all": true,
+   "space_closed_under_symmetric_difference": true
+  },
+  "combinations": {
+   "L": 46,
+   "Q2": 26,
+   "compQ2": 50,
+   "compQ3": 46,
+   "whole": 48
+  },
+  "controls": {
+   "planted_forced_cuttings": 30,
+   "planted_forced_recovered_from_pivots": 44,
+   "planted_forced_weight": 96,
+   "planted_free_pieces": 20,
+   "planted_free_redraws": 0,
+   "planted_free_witness_weight": 8,
+   "seed": 74000,
+   "symmetric_difference_with_half_pivots": 44
+  },
+  "fifteen_blocks": {
+   "forced": [
+    "L",
+    "Q2",
+    "Q3",
+    "R",
+    "whole"
+   ],
+   "free": [
+    "E0",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "Q0",
+    "Q1"
+   ]
+  },
+  "parity_law": {
+   "distinct_cuttings": 15800,
+   "gf2_rank": 88,
+   "kernel_dimension": 104,
+   "pieces": 192,
+   "pieces_per_cutting": 24,
+   "uses_per_piece_odd": 1975
+  },
+  "quarter_image": {
+   "dimension": 1,
+   "words": [
+    "0000",
+    "1100"
+   ]
+  },
+  "quarter_unions": {
+   "forced": 8,
+   "forced_list": [
+    "empty",
+    "Q3",
+    "Q2",
+    "R",
+    "L",
+    "compQ2",
+    "compQ3",
+    "whole"
+   ],
+   "of": 16,
+   "routes_agree_on_all": true
+  },
+  "witnesses": {
+   "basis_greatest_weight": 20,
+   "basis_least_weight": 8,
+   "first_two_parity_words": [
+    "10011100",
+    "01011100"
+   ],
+   "free_blocks_with_witness": 10,
+   "least_basis_pair_weight": 8,
+   "witness_weights": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ]
+  }
+ }
+}

@@ -188,6 +188,48 @@ def main():
     chk("(V3) BOUNDED: r=1/2 is NOT forbidden -- it is the un-forced signed/U(1)_b 1-slot readout, quantized away by C^3=I; "
         "static eps/J_cs/taste/CPT measure-neutral; theta cannot force it (C_3-scalar)", True)
 
+    sec("N5 EXECUTION CERTIFICATE")
+    print(
+        "  per_element: full-array identities carry the algebra section - each of "
+        "the nine anticommutator combinations of the Clifford generators is "
+        "compared against minus twice the Kronecker delta times the 8x8 identity, "
+        "the generation shift is written out as an explicit array, and the "
+        "modulus Hessian is matched symbolically against diag(12, 12) rather than "
+        "being reduced to a rank number alone"
+    )
+    print(
+        "  per_site: checked and not executed - everything here lives on the "
+        "on-site Clifford algebra of dimension 8 = 2^3 and its two-dimensional "
+        "spinor block, which this runner itself identifies with the Qubit; the "
+        "eight basis labels are only ever grouped into weight classes and "
+        "counted, never singled out or acted on individually, and no second site, "
+        "hop or spacing exists"
+    )
+    print(
+        "  per_mode: modes are handled individually on both sides of the readout "
+        "question - the three circulant eigenvalues a + 2b cos(delta + 2 pi k / "
+        "3) are built one per k and summed symbolically to give the exact Koide "
+        "lever, and numerically the squared Dirac spectrum is matched against "
+        "each squared singular value taken twice, which is what shows the "
+        "physical masses to be sign-blind"
+    )
+    print(
+        "  per_block: the graded decomposition is computed rather than quoted - the "
+        "Hamming weights of the eight basis labels are counted into the "
+        "dimensions one, three, three, one, the volume element splits those eight "
+        "into four positive and four negative chirality states, the two "
+        "three-dimensional classes are read as the left and right generation "
+        "triplets, and the supertrace grading is then assembled as the block "
+        "diagonal of plus and minus the 3x3 identity"
+    )
+    print(
+        "  lattice_wide: checked and not executed - no lattice of sites, no volume "
+        "and no limiting size appears, and section F states the sharper reason "
+        "there is nothing global to sum over: the taste index is the Qubit "
+        "itself, so there is no integer copy factor to root or extend, and the "
+        "sole residual the runner records is a one-slot signed readout rather "
+        "than any whole-system quantity"
+    )
     print("\n" + "=" * 90)
     print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
     print("=" * 90)

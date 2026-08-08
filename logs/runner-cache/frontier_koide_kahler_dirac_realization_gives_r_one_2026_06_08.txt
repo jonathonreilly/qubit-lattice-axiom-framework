@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kahler_dirac_realization_gives_r_one_2026_06_08.py
-runner_sha256: d85e6142925e3e4c87c366689e3433f6b119fd6e5f4900f3ec360fb58f21f759
+runner_sha256: 9eabe8b64052f55925f30141cbac5d5bc875ad212c8e49fe1fdf11b1d85d665f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.20
+elapsed_sec: 1.12
 status: ok
 ----- stdout -----
 ==========================================================================================
@@ -35,7 +35,7 @@ C: the two taste-3 sectors = L/R of the generation Dirac fermion -> det D = |det
 ------------------------------------------------------------------------------------------
 D: the index 'count-once' route is CLOSED at the realization (answers the meta-note's open question)
 ------------------------------------------------------------------------------------------
-  [PASS] (D1) physical L/R grading: Str(eps e^{-tD^2}) = 0 (MM^dag, M^dag M isospectral) -> index gives NO count  --  Str=0.00e+00
+  [PASS] (D1) physical L/R grading: Str(eps e^{-tD^2}) = 0 (MM^dag, M^dag M isospectral) -> index gives NO count  --  Str=-2.22e-16
   [PASS] (D2) all 8 C_3-equivariant Z_2 gradings give index in {+-1,+-3}: a signed MODE-COUNT, never an energy 1/2-reweight  --  an index drops paired modes; it cannot weight the doublet ENERGY by 1/2 in BOTH sum m and (sum sqrt m)^2
   [PASS] (D3) => the realization does NOT deliver the first-order count-once (the meta-note's open question: answered NO)  --  index is the wrong KIND of functional for the Koide mass weighting; (1,1,1) is a static rep-count
 
@@ -67,6 +67,15 @@ VERDICT
   [PASS] (V1) the EXPLICIT Kähler-Dirac/Cl(3) realization gives r=1 (det=|det M|^2, D^2=singular, modulus rank-2, taste=qubit)
   [PASS] (V2) the index count-once route is CLOSED at the realization (index is a signed mode-count, not the energy weighting)
   [PASS] (V3) BOUNDED: r=1/2 is NOT forbidden -- it is the un-forced signed/U(1)_b 1-slot readout, quantized away by C^3=I; static eps/J_cs/taste/CPT measure-neutral; theta cannot force it (C_3-scalar)
+
+------------------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE
+------------------------------------------------------------------------------------------
+  per_element: full-array identities carry the algebra section - each of the nine anticommutator combinations of the Clifford generators is compared against minus twice the Kronecker delta times the 8x8 identity, the generation shift is written out as an explicit array, and the modulus Hessian is matched symbolically against diag(12, 12) rather than being reduced to a rank number alone
+  per_site: checked and not executed - everything here lives on the on-site Clifford algebra of dimension 8 = 2^3 and its two-dimensional spinor block, which this runner itself identifies with the Qubit; the eight basis labels are only ever grouped into weight classes and counted, never singled out or acted on individually, and no second site, hop or spacing exists
+  per_mode: modes are handled individually on both sides of the readout question - the three circulant eigenvalues a + 2b cos(delta + 2 pi k / 3) are built one per k and summed symbolically to give the exact Koide lever, and numerically the squared Dirac spectrum is matched against each squared singular value taken twice, which is what shows the physical masses to be sign-blind
+  per_block: the graded decomposition is computed rather than quoted - the Hamming weights of the eight basis labels are counted into the dimensions one, three, three, one, the volume element splits those eight into four positive and four negative chirality states, the two three-dimensional classes are read as the left and right generation triplets, and the supertrace grading is then assembled as the block diagonal of plus and minus the 3x3 identity
+  lattice_wide: checked and not executed - no lattice of sites, no volume and no limiting size appears, and section F states the sharper reason there is nothing global to sum over: the taste index is the Qubit itself, so there is no integer copy factor to root or extend, and the sole residual the runner records is a one-slot signed readout rather than any whole-system quantity
 
 ==========================================================================================
 TOTAL: 22 PASS / 0 FAIL

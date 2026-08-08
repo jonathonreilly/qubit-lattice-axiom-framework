@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle923_exactness_residual_2026_07_28.py
-runner_sha256: 9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366
+runner_sha256: 893b05b523d8af1aa072a91ac9855cfe5a15ca87a5170724210c09cabaa97f12
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 ============================================================================================
-cycle923 / blockR1 -- THE EXACTNESS RESIDUAL: geometry and dynamics of the distinguished point
-campaign toe-time-expansion-20260802
+THE EXACTNESS RESIDUAL: geometry and dynamics of the distinguished point (primary runner, cycle 923)
+Conditional algebra/rate result over SUPPLIED maps; narrowed at review iteration 1 (2026-08-08).
 ============================================================================================
 FIREWALL: nothing below derives, forces or prefers r = 1/2 as any lane's setting.
 PDG values are a labeled comparator only and feed no derivation (proved mechanically by tooth T5).
@@ -25,7 +25,6 @@ S0 -- provenance pins (sha256 + git blob sha1) for sources and inherited artifac
 [PASS] [S0] pin present: docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md | sha256=19fd7e0770fe0400.. blob=3ae6d9b5f99072f7..
 [PASS] [S0] pin present: docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md | sha256=d4ce8d7b07766e0d.. blob=6a95ca2ee50293eb..
 [PASS] [S0] pin present: docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md | sha256=b9ef043d6503f970.. blob=532a2c3095188609..
-[PASS] [S0] pin present: docs/MINIMAL_AXIOMS_2026-06-29.md | sha256=fc4d60cce8154cec.. blob=4a863da1f3f25535..
 [PASS] [S0] pin present: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py | sha256=2ce99b206d0112ec.. blob=a9c2afe0d520ce44..
 [PASS] [S0] pin present: scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py | sha256=bd114ae01808ec8e.. blob=a83a24d4fd26ddf7..
 [PASS] [S0] pin present: scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py | sha256=85c0d8a5eb226af0.. blob=1f65ba5f103bb019..
@@ -170,17 +169,30 @@ S3 -- Q2: what exactness does the geometry buy (rates and bounds, every claim a 
   eps0=1e-06      steps_to_exit_1e-1 = 17   (closed form 17)
 [PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=1e-06 | cf=17 it=17
 
-  TABLE C -- BACKWARD TUNING under f: the |delta_0| needed to still be within eps after N steps
-  eps=0.1       N=0:1.0000e-01  N=5:2.8569e-03  N=10:8.9032e-05  N=20:8.6938e-08  N=50:0.0000e+00  N=100:0.0000e+00
-  eps=1e-05     N=0:1.0000e-05  N=5:3.1250e-07  N=10:9.7655e-09  N=20:9.5366e-12  N=50:0.0000e+00  N=100:0.0000e+00
-  eps=3e-06     N=0:3.0000e-06  N=5:9.3750e-08  N=10:2.9297e-09  N=20:2.8609e-12  N=50:0.0000e+00  N=100:0.0000e+00
-  eps=1e-06     N=0:1.0000e-06  N=5:3.1250e-08  N=10:9.7656e-10  N=20:9.5357e-13  N=50:0.0000e+00  N=100:0.0000e+00
-[PASS] [S3-Q2] under f the admitted initial set halves EXACTLY once per registration step (Lebesgue length of f^{-N} of the 3e-6 window) | N=0:6.000e-06 N=5:1.875e-07 N=20:5.722e-12 N=50:5.551e-17
-[PASS] [S3-Q2] AUX (constructed here, NOT source content): the S2-gradient flow in r linearizes to -1 (e-fold time 1) | -1.000000063
-[PASS] [S3-Q2] AUX: the SAME flow written in p linearizes to -4 -- the RATE is metric/coordinate dependent, the SIGN and the exponential character are not; the Q2 verdict depends only on the sign | -4.000000053
-[PASS] [S3-Q2] AUX: time to reach 3e-6 from |delta|=0.5 is 12.02 e-folds (r-metric) or 3.01 (p-metric): log(1/eps), never tuned | t_r=12.0238 t_p=3.0059
+  TABLE C -- BACKWARD TUNING under f: the one-sided |delta_0| needed to still be within eps after N steps.
+  EXACT closed form (u = 2r conjugacy): delta_0^+(N) = (1/2)[(1+2 eps)^(2^-N) - 1]
+  = 0.5*expm1(2^-N * log1p(2 eps)). The dyadic law eps * 2^-N is its small-eps LINEARIZATION,
+  accurate only to a relative error of order eps; it is NOT exact.
+  eps=0.1       N=0:1.0000e-01  N=5:2.8569e-03  N=10:8.9032e-05  N=20:8.6938e-08  N=50:8.0967e-17  N=100:7.1913e-32
+[PASS] [S3-Q2] TABLE C exact closed form matches binary64 iteration for N<=20 at eps=0.1 (|diff|<1e-15)
+[PASS] [S3-Q2] TABLE C at eps=0.1: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)
+  eps=1e-05     N=0:1.0000e-05  N=5:3.1250e-07  N=10:9.7655e-09  N=20:9.5366e-12  N=50:8.8817e-21  N=100:7.8885e-36
+[PASS] [S3-Q2] TABLE C exact closed form matches binary64 iteration for N<=20 at eps=1e-05 (|diff|<1e-15)
+[PASS] [S3-Q2] TABLE C at eps=1e-05: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)
+  eps=3e-06     N=0:3.0000e-06  N=5:9.3750e-08  N=10:2.9297e-09  N=20:2.8610e-12  N=50:2.6645e-21  N=100:2.3666e-36
+[PASS] [S3-Q2] TABLE C exact closed form matches binary64 iteration for N<=20 at eps=3e-06 (|diff|<1e-15)
+[PASS] [S3-Q2] TABLE C at eps=3e-06: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)
+  eps=1e-06     N=0:1.0000e-06  N=5:3.1250e-08  N=10:9.7656e-10  N=20:9.5367e-13  N=50:8.8818e-22  N=100:7.8886e-37
+[PASS] [S3-Q2] TABLE C exact closed form matches binary64 iteration for N<=20 at eps=1e-06 (|diff|<1e-15)
+[PASS] [S3-Q2] TABLE C at eps=1e-06: binary64 iteration UNDERFLOWS to exactly 1/2 at N in {50,100}, so those cells are reported from the exact closed form (a direct float iteration cannot certify them)
+[PASS] [S3-Q2] EXACT preimage-width law: the Lebesgue length of f^{-N} of the 3e-6 window is (1/2)[(1+2eps)^(2^-N) - (1-2eps)^(2^-N)]; binary64 iteration confirms it for N<=10 to 1e-15 | N=0:6.000000e-06 N=5:1.875000e-07 N=20:5.722046e-12 N=50:5.329071e-21
+[PASS] [S3-Q2] the 'halves every step' law is a LINEARIZATION, not exact: the width deviates from 2 eps * 2^-N by a relative O((2 eps)^2) ~ 1.2e-11, nonzero at every N>=1 | relative deviations at N=5,10,20,50: ['1.144e-11', '1.198e-11', '1.200e-11', '1.200e-11']
+[PASS] [S3-Q2] the one-sided offset likewise deviates from eps * 2^-N by a relative O(eps) ~ 3e-6 -- the dyadic form must always be quoted as the linearization of the closed form | relative deviation at N=10: 2.997e-06
+[PASS] [S3-Q2] AUX (constructed here, NOT source content): flat-metric (Euclidean) gradient ascent of S2 in the r coordinate linearizes to -1 (e-fold time 1) | -1.000000063
+[PASS] [S3-Q2] AUX: flat-metric gradient ascent of S2 applied anew in the p coordinate is a DIFFERENT gradient system (a different metric choice), NOT the same flow rewritten -- under a genuine coordinate change the linearization eigenvalue of a 1-d vector field at a fixed point is invariant. Its linearization is -4. The SIGN agrees across every positive metric choice; only the sign is used by the exactness verdict. | -4.000000053
+[PASS] [S3-Q2] AUX: time to reach 3e-6 from |delta|=0.5 is 12.02 e-folds (flat metric in r) or 3.01 (flat metric in p): log(1/eps), never tuned | t_r=12.0238 t_p=3.0059
 
-Q2 HEADLINE VERDICT: UNEXPLAINED on the current surface
+Q2 HEADLINE VERDICT: UNEXPLAINED on the current surface (support-only interpretation, conditional on which supplied map is operative)
 
 --------------------------------------------------------------------------------------------
 S4 -- dial geometry at ALL registered settings {0, 1/2, 1} (doubles as the firewall exhibit)
@@ -197,10 +209,10 @@ S4 -- dial geometry at ALL registered settings {0, 1/2, 1} (doubles as the firew
 [PASS] [S4-dial] AUX gradient flow of S2 from r0=0.9 lands on r=1/2 | dest=0.500000000
 [PASS] [S4-dial] AUX gradient flow of S3 from r0=0.4 lands on r=1 | dest=0.999967237
 [PASS] [S4-dial] AUX gradient flow of S_spec from r0=0.4 lands on r=0 in FINITE TIME (S_spec ~ ln3 - r near 0, so rdot -> -1 and the flow ARRIVES rather than converging) | dest=0.000e+00
-[PASS] [S4-dial] FIREWALL EXHIBIT 2: on this surface the r=0 setting has the STRONGEST exactness story -- finite-time arrival under its own functional's gradient flow, and quadratic (superstable) convergence under the RETAINED-ANCHORED map f. Run as an argument, the geometry favours r=0, not r=1/2.
-[PASS] [S4-dial] ARROW-UNIVERSALITY NO-GO (candidate sweep): NO candidate available on the current surface both concentrates onto r=1/2 AND leaves the r=0 and r=1 lanes persistent | 6 candidates swept, 0 satisfy both requirements
-[PASS] [S4-dial] ARROW-UNIVERSALITY NO-GO (theorem): for a C^1 strictly increasing map h with Fix(h) exactly {0, 1/2, 1}, stability ALTERNATES, so the three registered settings CANNOT all be asymptotically stable. Proof: on (0,1/2) the sign of h(x)-x is constant, so exactly one endpoint of that interval attracts. | 8/8 constructed monotone maps confirm the alternation
-[PASS] [S4-dial] NAMED ESCAPE (honest): the theorem's hypothesis is Fix(h) == {0,1/2,1}. A map with EXTRA fixed points inside (0,1/2) or (1/2,1) CAN make all three registered settings attracting -- at the price of predicting additional distinguished cells that the dial does not register. That price is falsifiable.
+[PASS] [S4-dial] FIREWALL EXHIBIT 2: on this surface the r=0 setting has the STRONGEST exactness story -- finite-time arrival under its own functional's gradient flow (the computed destination above), and quadratic (superstable) convergence under the supplied map f (f'(0)=0, verified at S3). Run as an argument, the geometry favours r=0, not r=1/2. | S_spec-gradient destination=0.000e+00
+[PASS] [S4-dial] CANDIDATE SWEEP (six in-repo candidates; attraction-based, finite, NOT a universal no-go): no candidate coded here is locally asymptotically attracting at r=1/2 AND at r=0 AND at r=1. This sweep covers exactly these six coded candidates; it does NOT establish that every exactness account must be lane-conditional. | 6 candidates swept, 0 satisfy all three attraction requirements
+[PASS] [S4-dial] FIXED-POINT ALTERNATION LEMMA -- finite consistency exhibit, NOT a proof of the lemma: 8 members of one polynomial family of strictly increasing self-maps with Fix exactly {0, 1/2, 1} each fail to make all three fixed points locally attracting. The LEMMA itself (continuous strictly increasing self-map h of [0,1] with fixed set exactly {0,1/2,1} => the three fixed points cannot all be locally asymptotically attracting relative to [0,1]) is proved by the monotone-orbit sign argument recorded in the note: on (0,1/2), h(x)-x has constant sign, so orbits there converge monotonically to exactly one endpoint of that interval; likewise on (1/2,1). This executable check certifies only the finite family. | 8/8 constructed monotone maps consistent with the alternation
+[PASS] [S4-dial] NAMED ESCAPE, CONSTRUCTED (no literal PASS): the lemma's hypothesis is Fix(h) == {0,1/2,1}. The quintic h(x) = x - 0.1 x(x-1/4)(x-1/2)(x-3/4)(x-1) is strictly increasing on [0,1] with EXTRA fixed points at 1/4 and 3/4, and makes ALL THREE registered settings locally attracting -- at the price of predicting additional distinguished cells that the dial does not register. That price is falsifiable. | multipliers: 0.0:0.990625, 0.25:1.002344, 0.5:0.998437, 0.75:1.002344, 1.0:0.990625
 
 --------------------------------------------------------------------------------------------
 S5 -- FIREWALL check (mechanical)
@@ -256,13 +268,13 @@ S5 -- FIREWALL check (mechanical)   [PLANTED-VIOLATION RUN -- failures below are
 [PLANT-PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
 [PASS] [S6-teeth] T3 FIRED: a planted UNCONDITIONAL law-level selector (designates {1/2}, no supplied element) makes the S5 firewall check FAIL | clean_run=True planted_run=False
 [PASS] [S6-teeth] T4 FIRED: the restriction gate hard-fails a planted wrong published value (f'(1/2)=3 instead of 2) | |3 - 2| = 1 exceeds the 1e-15 gate by 15 orders
-[PASS] [S6-teeth] T5 FIRED: COMPARATOR ISOLATION: poisoning the PDG comparator to NaN leaves EVERY derived result bit-identical | derived payload identical under the poisoned comparator
+[PASS] [S6-teeth] T5 FIRED: COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. This guards the payload route against a future edit that leaks comparator values into it; it is NOT a whole-runner dependency trace, and it covers only quantities routed through derived_payload | derived payload identical under the poisoned comparator
 [PASS] [S6-teeth] T6 FIRED: a planted 1e-4 offset in the inverse identity is caught by the S2-R1 tolerance of 1e-12 | the planted offset exceeds the gate tolerance by 8 orders of magnitude
 [PASS] [S6-teeth] T7 FIRED: a planted anti-Lyapunov claim ('the reverse map decreases S2') is refuted at r=0.9 | S2(g(0.9))=0.682466 > S2(0.9)=0.651757
 [PASS] [S6-teeth] T8 FIRED: DETERMINISM: two independent builds of the derived payload are byte-identical | sha256=55500ff5a0dd576844ec4bd42a991e28..
-[PASS] [S6-teeth] T9 FIRED: a planted omnipotent candidate arrow (concentrates on 1/2 AND preserves both other lanes) BREAKS the arrow-universality no-go, so the no-go has content and is not vacuous | the no-go correctly reports FALSE for the planted candidate
+[PASS] [S6-teeth] T9 FIRED: FUNCTION-LEVEL MUTATION TEST of the candidate sweep: the SAME alternation_predicate implementation that passed at S4 returns False once a planted omnipotent candidate (attracting at 1/2, 0 AND 1) is added to the table -- a real counterexample among the coded candidates would have been caught | predicate(base)=True predicate(base+planted)=False
 [PASS] [S6-teeth] T10 FIRED: a planted 2-sector weight (1, 3r) moves the entropy maximum OFF the sharpening fixed point, so the coincidence-deflation is contentful rather than tautological | planted argmax=0.333300 != 0.5 (true weight (1,2r) gives 0.5)
-[PASS] [S6-teeth] T11 FIRED: the r=1 lane is NOT preserved by either supplied map -- the load-bearing input to the arrow-universality no-go is itself falsifiable and here it fires | f(1)=2.0, g(1)=0.707107
+[PASS] [S6-teeth] T11 FIRED: r=1 is not a fixed point of either supplied map (f(1)=2, g(1)=0.707..) -- the load-bearing r1_attracting=False entries in the candidate-sweep table are themselves falsifiable and here they fire | f(1)=2.0, g(1)=0.707107
 
 --------------------------------------------------------------------------------------------
 S7 -- comparator (LABELED; feeds no derivation; tooth T5 proves the isolation)
@@ -296,23 +308,23 @@ S8 -- Q3: the residual priced (price only; nothing recommended for adoption)
 [PASS] [S8-priced] (c) item 4 FIREWALL: its minimal sentence does not designate a unique r | A registered pattern is retained only if it is unchanged under re-
 [PASS] [S8-priced] (c) item 5 carries a minimal sentence and a named existing surface | surface=realized_state_registration
 [PASS] [S8-priced] (c) item 5 FIREWALL: its minimal sentence does not designate a unique r | The realized history's initial registration on the charged-lepton 
-[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 8678 chars against 7 verbs
+[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 9526 chars against 7 verbs
 
   (a) DERIVES: 11   (b) MEASURABLE-BUT-UNMEASURED: 4   (c) UNDERIVABLE: 5
 
   Q2 does NOT land on GENERIC unconditionally, so the residual does NOT dissolve into 'persistence at an attractor'.
-  It dissolves ONLY on the g-branch, and that branch is blocked twice: the arrow is not derived as physical, and as lane-universal law content it is refuted by the arrow-universality no-go.
-  On the f-branch -- the branch carrying the retained anchor -- the operative fixed point IS the separatrix and the exactness is positively surprising.
+  It dissolves ONLY on the g-branch, and that branch is blocked twice: no map is derived as physically operative, and its one lane-universal monotone-map packaging is barred by the alternation lemma within that lemma's hypothesis class.
+  On the f-branch -- whose map is cited provenance-only from the Luders-rule composition-consistency note (unaudited on current origin/main) -- the operative fixed point IS the separatrix and the exactness is amplified rather than explained (a support-only reading).
   If item (c1) were ever supplied lane-conditionally, then and only then would the remaining content reduce to why the initial registration was in the basin, and that basin is (0, inf), which the primitive already assigns to the world rather than the laws (item c5)..
 
 --------------------------------------------------------------------------------------------
 SCORECARD
 --------------------------------------------------------------------------------------------
-S0                 PASS=16    FAIL=0
+S0                 PASS=15    FAIL=0
 S1-text            PASS=20    FAIL=0
 S1-restriction     PASS=46    FAIL=0
 S2-Q1              PASS=14    FAIL=0
-S3-Q2              PASS=28    FAIL=0
+S3-Q2              PASS=38    FAIL=0
 S4-dial            PASS=12    FAIL=0
 S5-firewall        PASS=22    FAIL=0
 S6-teeth           PASS=12    FAIL=0
@@ -320,16 +332,16 @@ S7-comparator      PASS=4     FAIL=0
 S8-priced          PASS=16    FAIL=0
 
 ============================================================================================
-TOTAL: PASS=190 FAIL=0
+TOTAL: PASS=199 FAIL=0
 PLANTED-VIOLATION RUN (excluded from the scorecard by construction): 12 checks, 2 deliberate failures = tooth T3 evidence
 TEETH: 12/12 FIRED
 ============================================================================================
 receipt: outputs/exactness_residual_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: 55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346
-runtime_sec: 0.307
+runtime_sec: 0.305
 
-DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as arrow-conditional;
-nothing is recommended for adoption.
+DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as conditional on
+which SUPPLIED map is operative (neither is derived); nothing is recommended for adoption.
 CYCLE923_EXACTNESS_RESIDUAL_PASS
 
 ----- stderr -----

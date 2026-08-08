@@ -413,6 +413,55 @@ def main() -> int:
     print("=" * 78)
     print(f"OVERALL: {'PASS' if all_pass else 'FAIL'}")
     print("=" * 78)
+
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: checked and not executed - the Hermitian circulant H = a*I "
+        "+ b*C + conj(b)*C^2 is discussed throughout stanza (A) but never "
+        "instantiated as a matrix. Both trace functions are closed-form "
+        "expressions, 3*a plus b*Tr(C) + conj(b)*Tr(C^2), and the two traces come "
+        "from summing cube roots of unity rather than from any diagonal, so no "
+        "entry of H, C or a projector is ever addressed."
+    )
+    print(
+        "  per_site: checked and not executed - nothing in any of the three stanzas "
+        "is indexed by position. Stanza (B) is the closest thing to an enumeration "
+        "and it is pure bookkeeping: a hardcoded list of six Ingredient records is "
+        "filtered by status string and the survivors are counted, which resolves no "
+        "physical degree of freedom at any granularity."
+    )
+    print(
+        "  per_mode: genuinely exercised in stanza (A), though over only three "
+        "modes - the C3 eigenvalues exp(2*pi*i*k/3) for k = 0, 1, 2 are constructed "
+        "one by one from cos and sin, summed to give Tr(C), and squared before "
+        "summing to give Tr(C^2), with both required to vanish inside 1e-10; that "
+        "mode-level vanishing is precisely the mechanism the stanza rests on."
+    )
+    print(
+        "  per_block: this is the point of stanza (A) and it is settled negatively "
+        "at exactly this granularity - the trivial isotype span{I} and the doublet "
+        "span{C, C^2} are given separate trace contributions 3*a and b*Tr(C) + "
+        "conj(b)*Tr(C^2), and because the second contribution vanishes the "
+        "block-resolved linear functional tau_M coincides with the ordinary trace "
+        "on every sampled point to better than 1e-10. The block structure is "
+        "therefore invisible to any linear trace, and only the nonlinear log form "
+        "separates the blocks, its value at the quoted saddle being the exact "
+        "2*log(3)."
+    )
+    print(
+        "  lattice_wide: checked and not executed - no extended system, volume or "
+        "thermodynamic limit appears anywhere. The widest computation is stanza "
+        "(C)'s four-coupling one-loop flow, RK4-integrated with 200 steps between "
+        "ln(246) and ln(1.22e19) for the five ultraviolet boundary conditions 0.7, "
+        "1.0, 1.3, 1.6 and 1.8 plus the separate Ward value 0.4358; that is a "
+        "running-coupling trajectory in a single scale variable, not a whole-system "
+        "statement, and its verdict is about trajectory truncation rather than "
+        "about any lattice."
+    )
     return 0 if all_pass else 1
 
 

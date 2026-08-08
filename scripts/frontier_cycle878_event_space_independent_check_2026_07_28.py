@@ -2,11 +2,14 @@
 """Cycle 878 INDEPENDENT CHECK -- specified to REFUTE.
 
 Target: scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py and
-its committed stdout cache.  The target runner, the Cycle-867 composed
-record-write primary and the Cycle-863 replay substrate are ALL
-SHA/blob-pinned text/AST-only inputs and are BLOCKLISTED from import: the
-only computational import is the landed Cycle-719 core.  Everything the
-target claims is rebuilt here from that core with independent code.
+its committed stdout cache (both SHA/blob-pinned text-only inputs; the
+target module and the legacy fixture-lineage module names are
+BLOCKLISTED from import).  The only computational import is the landed
+Cycle-719 core.  Everything the target claims is rebuilt here from that
+core with independent code.  SELF-CONTAINMENT: no other file is read,
+pinned, or required to exist; the target's stipulated in-file model is
+rebuilt from its published definition, and every result is CONDITIONAL
+on that stipulated model and its declared scope inputs.
 
 Attacks mounted:
 
@@ -27,24 +30,31 @@ CK_B  Rebuild the refinement/crossing lattice by a DIFFERENT algorithm --
       that neither contains.
 CK_C  Recompute the measure-candidate inventory with plain Fraction
       arithmetic (the target uses integer numerators over a common
-      denominator; agreement is then a real cross-check).  Attack the
-      additivity certification with ADVERSARIAL family choices: an
-      overlapping pseudo-family and a non-covering pseudo-family MUST
-      break additivity for every candidate, otherwise the target's
-      additivity certificate is vacuous.  Attack the covariance
-      certification by feeding the SAME orbit-constancy predicate a
-      deterministic NON-symmetry (the transposition of the lightest and
-      heaviest world cells): it must break covariance wherever the world
-      masses are not already constant, and the certified verdicts must
-      separate the candidates, otherwise the predicate is inert.
+      denominator; agreement is then a real cross-check).  Exercise the
+      additivity implementation with REAL identities: disjoint-subset
+      unions NOT copied from any precomputed partition (index-residue
+      subsets that slice across every declared family), a three-part
+      disjoint cover, an inclusion-exclusion identity on genuinely
+      overlapping sets, and a complement identity for a non-covering
+      subfamily; test normalization SEPARATELY (positive total, singleton
+      masses summing to the total, normalized sum exactly 1).  Attack the
+      marginal-invariance certification by feeding the SAME
+      orbit-constancy predicate a deterministic NON-symmetry (the
+      transposition of the lightest and heaviest world cells): it must
+      break constancy wherever the world masses are not already constant,
+      and the certified verdicts must separate the candidates, otherwise
+      the predicate is inert.
 CK_D  Recompute every exact fraction table and every table digest,
       recompute the pairwise disagreement matrix and the atom-level
       disagreement counts, and verify that every emitted number carries
       the "bookkeeping fraction, not probability" label.
-CK_E  Verify the verbatim axiom-baseline exclusion quote byte-for-byte in
-      the pinned in-tree source AND inside the target's own emitted
-      certificate (no paraphrase), plus all shas/blobs, determinism, the
-      declared caps, runtime and stdout budgets.
+CK_E  Verify the target's stipulated-boundary certificate structurally
+      (no axiom path in its input closure, labels everywhere, no
+      selection marker), plus all shas/blobs, determinism, the declared
+      caps, runtime and stdout budgets.  A narrow banned-phrase scan of
+      the cache is reported as HYGIENE ONLY: it is an exact-substring
+      check, NOT a semantic boundary check, and it is NOT load-bearing
+      for any PASS.
 
 A FAIL here is a real refutation of the target, not a checker bug to be
 smoothed over.  bounded_theorem, authority none, audit unset.
@@ -64,37 +74,37 @@ from time import monotonic
 
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150 * 1024
+# SELF-CONTAINED input closure: the landed Cycle-719 core (computational),
+# the target runner (text/AST-only) and its committed cache (text-only).
+# Nothing else is read, pinned, or required to exist.
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
-    "scripts/frontier_cycle867_composed_record_write_2026_07_28.py",
     "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
     "logs/runner-cache/frontier_cycle878_event_space_groundwork_2026_07_28.txt",
-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 COMPUTATIONAL_INPUT_PATHS = AUDIT_INPUT_PATHS[:1]
-TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:4]
-TEXT_ONLY_PATHS = AUDIT_INPUT_PATHS[4:]
-BLOCKLISTED_MODULES = tuple(Path(p).stem for p in TEXT_AST_ONLY_PATHS)
+TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:2]
+TEXT_ONLY_PATHS = AUDIT_INPUT_PATHS[2:]
+# Import firewall: the target module plus the legacy fixture-lineage
+# module names.  The legacy names are NAME STRINGS only (provenance
+# context, non-load-bearing); their files are not inputs.
+BLOCKLISTED_MODULES = (
+    "frontier_cycle878_event_space_groundwork_2026_07_28",
+    "frontier_cycle863_time_from_records_2026_07_28",
+    "frontier_cycle867_composed_record_write_2026_07_28",
+)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[1]:
-        "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+        "786934d884581aa8e12de6421cc1d84fcf79679a99f050c2656c20f5c410f3bb",
     AUDIT_INPUT_PATHS[2]:
-        "49605f6d0730e224d6c4cd25a182ec49e0c7d2f2316851bc2755632dcbe2c828",
-    AUDIT_INPUT_PATHS[3]: "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
-    AUDIT_INPUT_PATHS[4]: "dbf33c9677cfff61e88f0bfe100fa09ae47a30d5aeb6d58b5a370dadb3c16a6b",
-    AUDIT_INPUT_PATHS[5]:
-        "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "41807bcb8019b8997c55a14905fca600dc759b4820603699a576f50bea346913",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "871b9e986ca5e684ceadce25ff3e03164ef26c98",
-    AUDIT_INPUT_PATHS[2]: "5f923e8429373fa5afc71a417cd4e6f787ec71b8",
-    AUDIT_INPUT_PATHS[3]: "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
-    AUDIT_INPUT_PATHS[4]: "ab88312b24487d1625cbbc1d75b79c44fc2062c4",
-    AUDIT_INPUT_PATHS[5]: "4a863da1f3f255354839277271a3a69a5c205133",
+    AUDIT_INPUT_PATHS[1]: "769f65e51ea2e896af750e92592a421464c3c0e1",
+    AUDIT_INPUT_PATHS[2]: "cf06fa349fd6a869d88dce03d758fd32c81dbc93",
 }
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -128,12 +138,6 @@ DETERMINISM_ORBITS = 192
 SEQUENTIAL_WORLDS = 12
 SEQUENTIAL_ORBITS = 96
 FRACTION_LABEL = "bookkeeping fraction, not probability"
-EXCLUSION_NEEDLE = (
-    "- context selection, measurement basis selection, Born weights,"
-    " probability\n  rules, update laws, decoherence mechanisms, and"
-    " formation rules (which\n  admissible possibility a new record locks,"
-    " at which site, with what weight,\n  or at what rate);"
-)
 CANDIDATE_NAMES = (
     "M1_COUNTING", "M2_PER_WORLD_UNIFORM", "M3_OCCUPATION_WEIGHTED",
     "M4_FORMATION_LIFETIME", "M5_FORMATION_MOMENT",
@@ -718,12 +722,12 @@ def source_controls():
 def main() -> int:
     started = monotonic()
     controls = source_controls()
-    cache_text = (ROOT / AUDIT_INPUT_PATHS[4]).read_text(encoding="utf-8")
+    cache_text = (ROOT / AUDIT_INPUT_PATHS[2]).read_text(encoding="utf-8")
     certs, summary = parse_cache(cache_text)
     t_a = certs["A_EVENT_SPACE"]
     t_b = certs["B_MEASURE_CANDIDATE_INVENTORY"]
     t_c = certs["C_FRACTION_LEDGER"]
-    t_d = certs["D_BOUNDARY_WHAT_IS_NOT_SUPPLIED"]
+    t_d = certs["D_STIPULATED_BOUNDARY"]
     t_e = certs["E_CONTROLS"]
 
     program = K.interleaved_program(BANKS)
@@ -775,7 +779,8 @@ def main() -> int:
             "census, seeds, initial states, dirty partition, schedules,"
             " dead wires and slot allocation all rebuilt from the"
             " Cycle-719 core with a reversed lane bit-layout; the target"
-            " runner and its two upstream primaries are blocklisted"
+            " runner and the legacy fixture-lineage module names are"
+            " blocklisted"
         ),
         "rebuilt_event_cardinality": total_events,
         "target_event_cardinality": t_a["event_cardinality"],
@@ -802,12 +807,13 @@ def main() -> int:
         "beyond_cap_agrees": scan["beyond_cap"] == t_a["declared_caps"][
             "bank_edge_events_beyond_cap_not_wire_visible"],
         "rebuilt_initial_global_clean": scan["initial_clean"],
-        "cycle867_relation_agrees": (
+        "moment_zero_agrees": (
             scan["initial_clean"]
-            == t_a["relation_to_landed_cycle867"][
-                "cycle867_global_tag_writes_at_boundary_zero"]
+            == t_a["moment_zero_formation_consistency"][
+                "global_clean_lanes_at_boundary_zero"]
             and scan["initial_clean"]
-            == t_a["relation_to_landed_cycle867"]["f_events_at_moment_zero"]
+            == t_a["moment_zero_formation_consistency"][
+                "f_events_at_moment_zero"]
         ),
         "rebuilt_integrity": {
             "write_once_violations": scan["rewrites"],
@@ -847,7 +853,7 @@ def main() -> int:
         ck_a["cardinality_agrees"] and ck_a["tag_counts_agree"]
         and ck_a["histogram_agrees"] and ck_a["worlds_with_events_agree"]
         and ck_a["digest_matches_some_declared_order"]
-        and ck_a["beyond_cap_agrees"] and ck_a["cycle867_relation_agrees"]
+        and ck_a["beyond_cap_agrees"] and ck_a["moment_zero_agrees"]
         and ck_a["integrity_agrees"] and sequential_agrees
         and init_fail == 0
     )
@@ -924,7 +930,7 @@ def main() -> int:
         and ck_b["atoms_are_singletons_agrees"] and duplicate_atoms == 0
     )
 
-    # ---- CK_C: measure inventory + adversarial attacks ---------------------
+    # ---- CK_C: measure inventory + real-identity checks --------------------
     weights, per_world, supported = candidate_weights(
         events, scan["occ_global"], scan["formed"], scan["boundaries"]
     )
@@ -959,7 +965,7 @@ def main() -> int:
             "total_mass": fr(totals[name]),
             "support_faithful": support,
             "zero_weight_events": zeros,
-            "admissible": bool(additive and normalizable),
+            "finite_measure_candidate": bool(additive and normalizable),
         }
         row["agrees"] = (
             additive == target_row[
@@ -969,7 +975,8 @@ def main() -> int:
             and support == target_row[
                 "support_faithful_disclosed_extra_diagnostic"]
             and zeros == target_row["zero_weight_events"]
-            and row["admissible"] == target_row["admissible"]
+            and row["finite_measure_candidate"]
+            == target_row["finite_measure_candidate"]
         )
         inventory_agrees = inventory_agrees and row["agrees"]
         rebuilt_rows[name] = row
@@ -985,36 +992,105 @@ def main() -> int:
     control_agrees = (
         control_additive == t_b["candidates"][CONTROL_NAME][
             "finite_additivity_over_certified_disjoint_families"]
-        and t_b["candidates"][CONTROL_NAME]["admissible"] is False
+        and t_b["candidates"][CONTROL_NAME][
+            "finite_measure_candidate"] is False
         and t_b["candidates"][CONTROL_NAME][
             "additivity_failure_witness"] is not None
     )
 
-    # ADVERSARIAL family 1: overlapping cells (tag F|B0 and tag B0|B1).
-    overlap_cells = [
-        {i for i, e in enumerate(events) if e[2] in ("F", "B0")},
-        {i for i, e in enumerate(events) if e[2] in ("B0", "B1")},
+    # REAL additivity identities.  Note the scope correction carried by
+    # this checker: finite additivity constrains DISJOINT unions only.
+    # The masses of an overlapping family obey inclusion-exclusion, and a
+    # non-covering subfamily sums to the complement identity; neither is
+    # "broken additivity", so neither is gated as such.
+    def subset_mass(name, idx):
+        return sum((weights[name][i] for i in idx), Fraction(0))
+
+    residue = [
+        frozenset(i for i in range(total_events) if i % 3 == r)
+        for r in (0, 1, 2)
     ]
-    overlap_breaks = {}
-    for name in CANDIDATE_NAMES:
-        summed = sum(
-            (sum((weights[name][i] for i in cell), Fraction(0))
-             for cell in overlap_cells), Fraction(0)
+    residues_disjoint = (
+        not (residue[0] & residue[1]) and not (residue[0] & residue[2])
+        and not (residue[1] & residue[2])
+    )
+    odd_moment = frozenset(
+        i for i, e in enumerate(events) if e[1] % 2 == 1
+    )
+    even_f = frozenset(
+        i for i, e in enumerate(events) if e[1] % 2 == 0 and e[2] == "F"
+    )
+    pair_disjoint = not (odd_moment & even_f)
+    pair_noncovering = len(odd_moment | even_f) < total_events
+    overlap_a = frozenset(i for i, e in enumerate(events)
+                          if e[2] in ("F", "B0"))
+    overlap_b = frozenset(i for i, e in enumerate(events)
+                          if e[2] in ("B0", "B1"))
+
+    def union_of_family_cells(subset, fam):
+        return all(
+            idx <= subset or not (idx & subset)
+            for idx in cellsets[fam].values()
         )
-        overlap_breaks[name] = summed != totals[name]
-    # ADVERSARIAL family 2: drop one nonempty cell (non-covering).
+
+    residue_slices_across_families = all(
+        not union_of_family_cells(residue[0], fam)
+        for fam in FAMILY_ORDER if fam != "F_ATOM"
+    )
     drop_key = sorted(cellsets["F_TAG_ORDINAL"])[0]
-    partial_breaks = {}
+    disjoint_union_checks = {}
+    inclusion_exclusion_checks = {}
+    complement_checks = {}
+    normalization_checks = {}
     for name in CANDIDATE_NAMES:
-        summed = sum(
+        m = lambda idx: subset_mass(name, idx)
+        disjoint_union_checks[name] = {
+            "residue_pair_union":
+                m(residue[0]) + m(residue[1]) == m(residue[0] | residue[1]),
+            "residue_triple_cover":
+                m(residue[0] | residue[1]) + m(residue[2]) == totals[name],
+            "cross_family_disjoint_pair_union":
+                m(odd_moment) + m(even_f) == m(odd_moment | even_f),
+            "residue_subset_slices_across_every_nonatom_family":
+                residue_slices_across_families,
+        }
+        inclusion_exclusion_checks[name] = (
+            m(overlap_a) + m(overlap_b)
+            == m(overlap_a | overlap_b) + m(overlap_a & overlap_b)
+        )
+        retained = sum(
             (masses["F_TAG_ORDINAL"][name][key]
              for key in cellsets["F_TAG_ORDINAL"] if key != drop_key),
             Fraction(0),
         )
-        partial_breaks[name] = summed != totals[name]
-    # ADVERSARIAL covariance: the SAME orbit-constancy predicate fed a
+        complement_checks[name] = (
+            retained
+            == totals[name] - masses["F_TAG_ORDINAL"][name][drop_key]
+        )
+        normalization_checks[name] = {
+            "total_positive": totals[name] > 0,
+            "all_weights_nonnegative":
+                all(w >= 0 for w in weights[name]),
+            "normalized_sum_is_one": sum(
+                (w / totals[name] for w in weights[name]), Fraction(0)
+            ) == 1,
+        }
+    additivity_identities_ok = (
+        residues_disjoint and pair_disjoint and pair_noncovering
+        and all(
+            all(v for v in row.values())
+            for row in disjoint_union_checks.values()
+        )
+        and all(inclusion_exclusion_checks.values())
+        and all(complement_checks.values())
+    )
+    normalization_ok = all(
+        all(v for v in row.values())
+        for row in normalization_checks.values()
+    )
+    # Marginal-invariance teeth: the SAME orbit-constancy predicate fed a
     # deterministic NON-symmetry (the transposition of the lightest and
-    # heaviest world cells).  It must break covariance wherever the world
+    # heaviest world cells).  It must break constancy wherever the world
     # masses are not already constant, otherwise the predicate is inert.
     world_mass = masses["F_WORLD"]
 
@@ -1025,7 +1101,7 @@ def main() -> int:
             for orbit in orbits for x in orbit
         )
 
-    covariance_teeth = {}
+    marginal_teeth = {}
     for name in CANDIDATE_NAMES:
         ordered_cells = sorted(
             world_mass[name].items(), key=lambda kv: (kv[1], str(kv[0]))
@@ -1033,15 +1109,15 @@ def main() -> int:
         lo_key, lo_val = ordered_cells[0]
         hi_key, hi_val = ordered_cells[-1]
         transposition = (tuple(sorted((lo_key[1], hi_key[1]))),)
-        covariance_teeth[name] = {
+        marginal_teeth[name] = {
             "world_masses_constant": lo_val == hi_val,
-            "nonsymmetry_breaks_covariance":
+            "nonsymmetry_breaks_constancy":
                 not orbit_constant(world_mass[name], transposition),
             "transposed_worlds": list(transposition[0]),
         }
-    covariance_agrees = True
+    bank_marginal_agrees = True
     for name in CANDIDATE_NAMES:
-        target_cov = t_b["candidates"][name]["permutation_covariance"]
+        target_diag = t_b["candidates"][name]["marginal_symmetry_diagnostics"]
         bank_keys = [k for k in cellsets["F_TAG_ORDINAL"] if k[1] == "B0"]
         rebuilt_bank = all(
             masses["F_TAG_ORDINAL"][name].get(k, Fraction(0))
@@ -1049,20 +1125,21 @@ def main() -> int:
                 ("to", "B1", k[2]), Fraction(0))
             for k in bank_keys
         )
-        if rebuilt_bank != target_cov["bank_label_swap_on_tag_ordinal_cells"]:
-            covariance_agrees = False
-        rebuilt_rows[name]["bank_swap_covariant"] = rebuilt_bank
+        if rebuilt_bank != target_diag[
+                "tag_ordinal_marginal_equal_under_bank_swap"]:
+            bank_marginal_agrees = False
+        rebuilt_rows[name]["bank_swap_marginal_equal"] = rebuilt_bank
     teeth_ok = all(
-        row["nonsymmetry_breaks_covariance"] or row["world_masses_constant"]
-        for row in covariance_teeth.values()
+        row["nonsymmetry_breaks_constancy"] or row["world_masses_constant"]
+        for row in marginal_teeth.values()
     ) and any(
-        row["nonsymmetry_breaks_covariance"]
-        for row in covariance_teeth.values()
+        row["nonsymmetry_breaks_constancy"]
+        for row in marginal_teeth.values()
     )
-    covariance_separates = (
+    marginal_verdict_separates = (
         len({
-            t_b["candidates"][name]["permutation_covariance"][
-                "landed_monitor_phase_group_on_worlds"]
+            t_b["candidates"][name]["marginal_symmetry_diagnostics"][
+                "world_marginal_constant_on_monitor_orbits"]
             for name in CANDIDATE_NAMES
         }) > 1
     )
@@ -1077,39 +1154,50 @@ def main() -> int:
         "inventory_agrees": inventory_agrees,
         "negative_control_agrees": control_agrees,
         "negative_control_additive_rebuilt": control_additive,
-        "adversarial_overlapping_family_breaks_additivity": overlap_breaks,
-        "adversarial_noncovering_family_breaks_additivity": partial_breaks,
-        "additivity_test_has_teeth": (
-            all(overlap_breaks.values()) and all(partial_breaks.values())
+        "additivity_identity_scope_note": (
+            "finite additivity constrains disjoint unions only; the"
+            " earlier draft's demand that overlapping and non-covering"
+            " families 'break additivity' was a category error and is"
+            " replaced by the identity checks below"
         ),
-        "covariance_nonsymmetry_attack": covariance_teeth,
-        "covariance_test_has_teeth": teeth_ok,
-        "covariance_verdict_separates_candidates": covariance_separates,
-        "bank_swap_covariance_agrees": covariance_agrees,
+        "disjoint_union_checks_not_from_any_partition":
+            disjoint_union_checks,
+        "inclusion_exclusion_on_overlapping_sets":
+            inclusion_exclusion_checks,
+        "noncovering_complement_identity": complement_checks,
+        "normalization_checks": normalization_checks,
+        "additivity_identities_all_hold": additivity_identities_ok,
+        "normalization_all_hold": normalization_ok,
+        "marginal_nonsymmetry_attack": marginal_teeth,
+        "marginal_predicate_has_teeth": teeth_ok,
+        "marginal_verdict_separates_candidates": marginal_verdict_separates,
+        "bank_swap_marginal_agrees": bank_marginal_agrees,
         "finding": (
-            "the target's additivity certificate is non-vacuous exactly"
-            " because disjointness is load-bearing: overlapping and"
-            " non-covering pseudo-families break it for every candidate;"
-            " the covariance predicate is non-inert because a declared"
-            " non-symmetry breaks it wherever world masses are not"
-            " already constant, and it separates the candidates"
+            "the exact inventory agrees row for row; disjoint unions"
+            " sliced across every declared family, inclusion-exclusion,"
+            " the complement identity, and separate normalization all hold"
+            " exactly; the marginal-constancy predicate is non-inert"
+            " because a declared non-symmetry breaks it wherever world"
+            " masses are not already constant, and it separates the"
+            " candidates"
         ),
     }
     ck_c["pass"] = bool(
         inventory_agrees and control_agrees
-        and ck_c["additivity_test_has_teeth"]
-        and teeth_ok and covariance_separates
-        and covariance_agrees
+        and additivity_identities_ok
+        and normalization_ok
+        and teeth_ok and marginal_verdict_separates
+        and bank_marginal_agrees
         and control_additive is False
     )
 
     # ---- CK_D: fraction tables recomputed exactly --------------------------
-    admissible = tuple(t_c["admissible_candidates_tabulated"])
+    tabulated = tuple(t_c["finite_measure_candidates_tabulated"])
     families = tuple(t_c["families_tabulated"])
     pairs = [
-        (a, b) for i, a in enumerate(admissible) for b in admissible[i + 1:]
+        (a, b) for i, a in enumerate(tabulated) for b in tabulated[i + 1:]
     ]
-    digest_rows = {name: {} for name in admissible}
+    digest_rows = {name: {} for name in tabulated}
     tables_agree = True
     labels_ok = True
     disagreement = {f"{a}|{b}": None for a, b in pairs}
@@ -1117,7 +1205,7 @@ def main() -> int:
     atom_counts_agree = True
     for fam in families:
         normalized = {}
-        for name in admissible:
+        for name in tabulated:
             rows = [
                 (compact(list(key)), value / totals[name])
                 for key, value in sorted(masses[fam][name].items())
@@ -1206,27 +1294,40 @@ def main() -> int:
         and atom_counts_agree and ck_d["discriminating_pairs_agree"]
     )
 
-    # ---- CK_E: boundary quote, controls ------------------------------------
-    axiom_bytes = (ROOT / AUDIT_INPUT_PATHS[5]).read_bytes()
-    needle_in_source = EXCLUSION_NEEDLE in axiom_bytes.decode("utf-8")
-    needle_in_target_cert = (
-        t_d["verbatim_exclusion_list"] == EXCLUSION_NEEDLE
-    )
-    forbidden = ("probability of", "Born rule holds", "we therefore select")
-    no_smuggled_claim = not any(
-        phrase in cache_text for phrase in forbidden
+    # ---- CK_E: stipulated boundary, controls -------------------------------
+    boundary_structural_ok = bool(
+        t_d.get("no_axiom_text_in_input_closure") is True
+        and t_d.get("every_ledger_table_carries_bookkeeping_label") is True
+        and t_d.get("no_candidate_carries_a_selection_marker") is True
+        and t_d.get("open_obligations")
+        and "selects no candidate weighting" in t_d.get("block_boundary", "")
     )
     label_everywhere = t_c["label_on_every_number"] == FRACTION_LABEL
+    # HYGIENE ONLY, non-load-bearing: an exact-substring scan of the
+    # committed primary cache for a short banned-phrase list.  This is a
+    # spelling check, NOT a semantic boundary check: it cannot certify
+    # the absence of probability claims and it does not gate any PASS.
+    banned_phrases = (
+        "probability of", "Born rule holds", "we therefore select",
+        "this is the probability", "Born weights follow", "is selected",
+    )
+    banned_phrase_scan = {
+        "scope": (
+            "exact-substring scan of the committed primary cache only;"
+            " hygiene check, not a semantic boundary check;"
+            " NOT load-bearing for any PASS"
+        ),
+        "phrases": banned_phrases,
+        "hits": tuple(
+            phrase for phrase in banned_phrases if phrase in cache_text
+        ),
+    }
     ck_e = {
         "certificate": "CK_E_BOUNDARY_AND_CONTROLS",
         "source_controls": controls,
-        "axiom_baseline_sha256": sha256(axiom_bytes).hexdigest(),
-        "axiom_baseline_git_blob": git_blob(axiom_bytes),
-        "verbatim_needle_present_in_pinned_source": needle_in_source,
-        "target_quoted_verbatim_not_paraphrased": needle_in_target_cert,
-        "target_boundary_certificate_passed": t_d[
-            "verbatim_present_in_pinned_source"],
-        "no_probability_claim_smuggled_into_cache": no_smuggled_claim,
+        "target_boundary_certificate_structurally_ok":
+            boundary_structural_ok,
+        "banned_phrase_scan_nonloadbearing": banned_phrase_scan,
         "fraction_label_declared_by_target": label_everywhere,
         "target_determinism": t_e["determinism"],
         "target_runtime_seconds": t_e["runtime_seconds"],
@@ -1238,9 +1339,8 @@ def main() -> int:
         "target_summary_pass": bool(summary and summary["pass"]),
     }
     ck_e["pass"] = bool(
-        controls["pass"] and needle_in_source and needle_in_target_cert
-        and t_d["verbatim_present_in_pinned_source"]
-        and no_smuggled_claim and label_everywhere
+        controls["pass"] and boundary_structural_ok
+        and label_everywhere
         and t_e["determinism"]["repeat_digest_equal"]
         and t_e["determinism"]["full_run_prefix_matches_short_scan"]
         and ck_e["target_runtime_within_budget"]
@@ -1258,7 +1358,7 @@ def main() -> int:
     verdict = "CORROBORATES" if all(checks.values()) else "REFUTES"
     lines = [
         "CYCLE878_EVENT_SPACE_INDEPENDENT_CHECK",
-        "SPECIFIED_TO_REFUTE_TARGET_AND_ITS_TWO_UPSTREAM_PRIMARIES_BLOCKLISTED",
+        "SPECIFIED_TO_REFUTE_TARGET_AND_LEGACY_MODULE_NAMES_BLOCKLISTED",
     ]
     for name, payload in (
         ("CK_A_EVENT_SPACE_REBUILD", ck_a),

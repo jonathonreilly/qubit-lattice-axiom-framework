@@ -1,17 +1,18 @@
 # The composed-record event space, measured for structure and nothing else — Cycle 878
 
-Date: 2026-08-03
+Date: 2026-08-03 (revised 2026-08-08, review iteration 1)
 
 Authority: none
 
 Audit: unset
 
-Status: bounded support (structural groundwork; one worker-authored
-primary and one independent checker spec'd to refute; owner-directed
-campaign-5 queue item 4; no axiom surface touched; NO probability
-postulate, NO Born-rule claim, NO measure selected)
+Status: conditional bounded theorem (exact finite combinatorics on a
+stipulated in-file model; one primary and one independent checker
+spec'd to refute; no axiom surface touched; NO probability postulate,
+NO Born-rule claim, NO measure selected, NO framework-compatibility
+claim)
 
-Claim type: support
+Claim type: bounded_theorem
 
 Runners:
 
@@ -27,39 +28,62 @@ Qualification, primitive, registry, policy, queue, audit result, or audit
 status.
 
 Worker disclosure: authored by a Claude Opus 5 worker under supervisor
-spec (codex quota exhausted 2026-08-03; substitution disclosed).
-Independent audit still required.
+spec (substitution disclosed 2026-08-03); revised under review-loop
+direction 2026-08-08. Independent audit still required.
+
+## What the claim is, exactly
+
+A conditional finite-combinatorics result. Both runners are
+SELF-CONTAINED: their only input is the landed Cycle-719 controller core
+([`frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py`](../scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py),
+sha/blob-pinned, present on `origin/main` at the pinned blob). The
+composed record-write model — census, seeds, initial states, dirty
+partition, schedules, dead-wire register, slot allocation, occupation
+replay — is stipulated IN-FILE in the primary and rebuilt independently
+in the checker. Everything below is conditional on that stipulated model
+and its declared scope inputs; nothing below is a statement about the
+axiom surface, about probability, or about physical occurrence.
 
 ## The event space, exactly
 
-From the composed record-write model at horizon 16,384: **92,260
-realized record-write events** — 164 formation (F), 47,872 B0-edge,
-44,224 B1-edge — spread over ALL 748 census worlds (64–129 events
-each; only 164 worlds ever form). The atoms are the
+From the stipulated composed record-write model at horizon 16,384:
+**92,260 realized record-write events** — 164 formation (F), 47,872
+B0-edge, 44,224 B1-edge — spread over ALL 748 census worlds (64–129
+events each; only 164 worlds ever form). The atoms are the
 (world, tag, ordinal) cells and are singletons, so the generated
 sigma-algebra is the full power set 2^E. The (bank-tag, ordinal)
 family REFINES the global-tag family; 17 of the 28 declared family
 pairs cross. Cap disclosed at event-space level: 3,856,705 bank-edge
 events beyond the 64-ordinal register cap are not wire-visible.
-Consistency: the 24 F-events at moment 0 equal the landed Cycle-867
-global writes (the space extends, not replaces), and the occupation
-ledger and formation moments match Cycle-863's replay exactly.
+Internal consistency: the 24 F-events at moment 0 equal the globally
+clean lanes at boundary 0, and the occupation ledger and formation
+moments match a second in-file replay path exactly.
 
 ## The measure-candidate inventory (no selection made)
 
-Five record-native weightings are ADMISSIBLE (finite additivity over
-the certified disjoint families; normalizability): counting,
-per-world uniform, occupation-weighted, formation-lifetime,
-formation-moment. The declared negative control (content diversity)
-FAILS additivity with an exhibited witness — the admissibility test is
-non-vacuous. Selection-relevant structure, certified but not acted on:
+Five record-native weightings are FINITE-MEASURE CANDIDATES —
+nonnegative event-level weights, finitely additive over the certified
+disjoint families, normalizable: counting, per-world uniform,
+occupation-weighted, formation-lifetime, formation-moment. This is an
+algebraic bookkeeping predicate and nothing more; it is deliberately
+NOT called "admissible", because framework Admissibility is an
+axiom-level notion and no lemma maps the framework's local conditional
+distribution through Record onto these event atoms (see Open). The
+declared negative control (content diversity) FAILS additivity with an
+exhibited witness — the candidacy test is non-vacuous.
 
-- the landed Cycle-856 monitor-phase Z_11 action is a free census
+Marginal-invariance diagnostics, certified but not acted on (these are
+facts about selected coarse marginals, NOT event-space symmetry
+statements — the monitor map has no well-defined action on atoms, and
+the unequal B0/B1 tag populations obstruct any atom permutation):
+
+- the in-file monitor-phase Z_11 world relabelling is a free census
   bijection (68 orbits of size 11) but is NOT well-defined on atoms;
-- only per-world uniform is covariant under it — and that covariance
-  is structural (uniform world mass), not dynamical;
-- NO candidate is covariant under bank-label swap (B0/B1 counts
-  differ);
+- only per-world uniform has F_WORLD cell masses constant on those
+  world orbits — a structural fact (uniform world mass), not a
+  dynamical one;
+- NO candidate has equal (tag, ordinal) cell masses under bank-label
+  swap (B0/B1 counts differ);
 - occupation- and formation-weighted candidates fail support
   faithfulness (73,088 / 73,088 / 76,184 zero-weight events): they
   assign zero mass to realized events of never-forming worlds.
@@ -67,80 +91,147 @@ non-vacuous. Selection-relevant structure, certified but not acted on:
 ## The fraction ledger
 
 Exact rational event-fraction tables for the certified atom families
-under each admissible candidate — every table labelled **"bookkeeping
-fraction, not probability."** All 10 admissible candidate pairs
+under each finite-measure candidate — every table labelled
+**"bookkeeping fraction, not probability."** All 10 candidate pairs
 DISCRIMINATE, most on all 92,260 atoms; no two candidates are
-indistinguishable. The discriminating atoms are the future experiment
-surface, nothing more.
-
-## The boundary, in the axioms' own words
-
-The axiom baseline's exclusion list — no occurrence rule, no
-probability, no update law among what the foundation supplies — is
-quoted verbatim from `docs/MINIMAL_AXIOMS_2026-06-29.md`
-(sha `fc4d60cc…`, blob `4a863da1`), byte-verified by the checker,
-which also confirms no probability claim is smuggled anywhere in the
-emitted cache. Measure SELECTION is the named open gate; it is not
-attempted here.
+indistinguishable. The discriminating atoms are a mathematical
+discriminator surface — witness cells only; no bridge to preparations,
+observables, or sampling frequencies exists, so nothing here is an
+experiment.
 
 ## Checker
 
-Independent rebuild of the event extraction, the disjointness/
-refinement lattice, and every fraction table (exact); adversarial
-family choices attack the additivity certifications; verdict
-CORROBORATES, 5/5, with the byte-verification of the exclusion quote.
+Independent rebuild of the event extraction (reversed lane bit-layout,
+independently derived census, seeds, dirty partition, dead-wire
+register and slot allocation), the disjointness/refinement lattice by
+set containment, and every fraction table (exact). The additivity
+implementation is exercised with REAL identities: disjoint-subset
+unions not copied from any precomputed partition (index-residue subsets
+that slice across every declared family), a three-part disjoint cover,
+inclusion-exclusion on genuinely overlapping sets, a complement
+identity for a non-covering subfamily, and a separate normalization
+check. The marginal-constancy predicate is fed a deterministic
+non-symmetry that must break it wherever world masses are not already
+constant. Verdict CORROBORATES, 5/5. A narrow banned-phrase scan of the
+committed cache is reported as hygiene only — it is an exact-substring
+check, not a semantic boundary check, and it gates nothing.
 
 ## Trace gate
 
 ```yaml
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "Born groundwork: the composed-record event space as sample space (campaign GOAL queue 4); the foundation supplies no probability, occurrence rule, or update law"
+target_blocker_text: "measure-selection groundwork: the composed-record event space as a sample space; selection requires the values of the framework's local conditional distribution and a derived local-to-event lift, both open"
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: runner_certificate
-next_trace_action: "any future measure-selection work starts from this inventory: the admissible five, their exact disagreement atlas, the covariance facts, and the support-faithfulness failures; selection itself remains the open gate"
+next_trace_action: "any future measure-selection work starts from this inventory: the five finite-measure candidates, their exact disagreement atlas, the marginal-invariance facts, and the support-faithfulness failures; selection itself remains the open gate"
 ```
 
 ## Status fields
 
 ```yaml
-actual_current_surface_status: bounded-support
-target_claim_type: support
-conditional_surface_status: null
+actual_current_surface_status: bounded_theorem (conditional finite combinatorics on the stipulated in-file model; unaudited)
+target_claim_type: bounded_theorem
+conditional_surface_status: conditional on the stipulated in-file model and its declared scope inputs
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "exact finite certificates of the event space, the refinement lattice, the admissibility table with a non-vacuous negative control, and the rational fraction ledger; nothing selected, nothing postulated"
+claim_type_reason: "exact finite certificates of the event space, the refinement lattice, the finite-measure candidate table with a non-vacuous negative control, and the rational fraction ledger; nothing selected, nothing postulated, no framework-compatibility claim"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
 ## Imports, derived, open
 
-### Imports
+### Imports (load-bearing; stipulated definitions and scope inputs only)
 
-- the 867-v3 composed model and the 863 machinery (sha-pinned);
-- the axiom baseline's exclusion list (byte-quoted).
+- the landed Cycle-719 controller core
+  ([`frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py`](../scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py),
+  sha256 `0c041791…`, blob `c123b8d6…`) — the only file input of either
+  runner;
+- the stipulated in-file composed record-write model definition
+  (census construction, event seeds, initial states, dirty partition,
+  dead-wire register, slot allocation, formation/bank tagging,
+  occupation replay);
+- explicit scope inputs, all stipulated computational boundary
+  conditions that materially determine the event set and every count:
+  B=2 banks; source counts 2–5 over 11 stations with cyclic isolation
+  (748 census worlds); horizon 16,384 orbits; dead-wire observation
+  windows 512 (chunk granularity) and 4,096 (orbit granularity);
+  register cap 64 wire-visible ordinals per (bank-tag, world); one
+  formation slot per world.
 
-### Derived
+### Provenance context (non-load-bearing)
+
+- the model's Cycle-852/856/863/867 lineage is provenance only: those
+  files are absent from `origin/main`, are not read, pinned, or
+  imported by either runner (the legacy module names are
+  import-blocklisted), and the identification of the stipulated
+  in-file model with any landed substrate is an OPEN bridge;
+- no axiom text is in either runner's input closure; the earlier
+  draft's byte-pinned quotation of the 2026-06-29 axiom snapshot was
+  removed because that snapshot is superseded on current `origin/main`
+  ([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md),
+  current sha256 `53175250…`), whose revised Admissibility supplies a
+  nearest-neighbor-conditioned probability distribution on the local
+  possibility domain with availability as its support.
+
+### Derived (conditional on the stipulated model)
 
 - the event space with its atoms and refinement lattice;
-- the five-candidate admissibility table and the negative control;
-- the covariance and support-faithfulness facts;
+- the five-candidate finite-measure table and the negative control;
+- the marginal-invariance and support-faithfulness facts;
 - the exact fraction ledger with its disagreement atlas.
 
 ### Open
 
-- measure selection (the named gate; requires foundation content the
-  axioms declare they do not supply, or a derivation nobody has);
-- the physics of the discriminating atoms.
+- measure selection among the five candidates (the named open gate;
+  this block selects none and derives no constraint that would);
+- the values of the framework's local conditional probability
+  distribution, and a derived lift of that local law through Record to
+  these composed event atoms (the framework-compatibility bridge);
+- an operational bridge from the discriminating atoms to preparations,
+  observables, and outcome statistics;
+- the identification of the stipulated in-file model with any landed
+  substrate.
+
+## Review record
+
+Review-loop iteration 1 (Sol, 2026-08-08, FIX_THEN_PROCEED) demoted
+this package on every live surface. What changed and why:
+
+- the invalid claim class `support` was replaced by a narrowly scoped
+  `bounded_theorem` (conditional finite combinatorics);
+- "admissible"/"lawful" candidate language was demoted to
+  finite-measure candidacy: the additive-plus-normalizable predicate is
+  not framework Admissibility, and no local-to-event bridge exists;
+- "covariance" claims were demoted to coarse-marginal invariance
+  diagnostics: no action on event atoms exists for the monitor map;
+- the "future experiment surface" wording was demoted to a mathematical
+  discriminator surface: no operational bridge exists;
+- the checker's overlapping/non-covering "must break additivity" gates
+  were a category error and were replaced by real disjoint-union,
+  inclusion-exclusion, complement, and normalization identities; its
+  three-string "no smuggled probability claim" check was demoted to a
+  non-load-bearing hygiene scan;
+- both runners were made self-contained: the unlanded Cycle-863/867
+  files and the stale axiom snapshot were removed from the input
+  closures entirely; the model is stipulated in-file;
+- the earlier draft's blanket negative boundary ("the foundation
+  supplies no probability", "the axioms say plainly that they do not
+  choose") was WITHDRAWN as stale and unestablished: current
+  `origin/main` Admissibility supplies a local conditional probability
+  distribution; what is open is its values and the local-to-event
+  lift, not probability content altogether. That withdrawn boundary
+  and the earlier draft's checker banner must NOT be cited as passed
+  gates.
 
 ## Verdict
 
 Before anyone can ask which weighting is true, someone has to say
-exactly what is being weighed; that is now done. The sample space is
-real, finite, and certified; five lawful ways of weighing it exist and
-disagree almost everywhere; and the axioms say plainly that they do
-not choose. The choice, when it comes, will have to come from
-somewhere — and now it is exactly clear what it must decide between.
-Independent audit still required.
+exactly what is being weighed; on this stipulated model, that is now
+done. The sample space is finite and certified twice over; five
+finite-measure candidates exist and disagree almost everywhere; and
+this block neither selects among them nor shows that anything else
+does. What selection will require is stated precisely in Open — no
+more, no less. Independent audit still required.

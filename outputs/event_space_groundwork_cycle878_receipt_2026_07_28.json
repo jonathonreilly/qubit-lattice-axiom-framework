@@ -1,10 +1,8 @@
 {
   "audit": "unset",
   "authority": "none",
-  "authorship": "one supervisor-authored primary runner and one independent checker specified to refute, both authored in this cycle; the checker blocklists the runner and both upstream primaries and rebuilds the event space from the Cycle-719 core alone",
-  "block": "toe-time-blockQ1-20260802",
-  "boundary": "bookkeeping fractions only, never probabilities; the axiom baseline's exclusion list is quoted verbatim from the pinned docs/MINIMAL_AXIOMS_2026-06-29.md and is untouched",
-  "campaign": "campaign-5-born-groundwork",
+  "authorship": "one supervisor-authored primary runner and one independent checker specified to refute, both authored in this cycle and revised at review iteration 1; the checker blocklists the runner and the legacy fixture-lineage module names and rebuilds the event space from the Cycle-719 core alone",
+  "boundary": "bookkeeping fractions only, never probabilities; no axiom text is in either runner's input closure; the block certifies its own boundary (labels everywhere, no selection marker) and makes no statement about the axiom surface",
   "certificates": {
     "logs/runner-cache/frontier_cycle878_event_space_groundwork_2026_07_28.txt": {
       "fail": 0,
@@ -17,25 +15,26 @@
   },
   "checker_verdict": "CORROBORATES",
   "claim_type": "bounded_theorem",
+  "conditionality": "every finding is conditional on the stipulated in-file composed record-write model and its declared scope inputs (B=2 banks, source counts 2-5 over 11 stations with cyclic isolation, horizon 16384 orbits, dead-wire windows 512/4096, register cap 64, one formation slot per world); the model's cycle lineage is provenance only, its files are absent from origin/main and outside both input closures, and its identification with any landed substrate is an open bridge",
   "cycles": [
     878
   ],
   "files": {
     "logs/runner-cache/frontier_cycle878_event_space_groundwork_2026_07_28.txt": {
-      "git_blob": "ab88312b24487d1625cbbc1d75b79c44fc2062c4",
-      "sha256": "dbf33c9677cfff61e88f0bfe100fa09ae47a30d5aeb6d58b5a370dadb3c16a6b"
+      "git_blob": "cf06fa349fd6a869d88dce03d758fd32c81dbc93",
+      "sha256": "41807bcb8019b8997c55a14905fca600dc759b4820603699a576f50bea346913"
     },
     "logs/runner-cache/frontier_cycle878_event_space_independent_check_2026_07_28.txt": {
-      "git_blob": "759d6b210373f91064a563f6048609bc26f97662",
-      "sha256": "c3bd96f78820cf3a8aa5685bd19a160330c8c07ea7467996c2e5bd9d436d2ada"
+      "git_blob": "149d36f83708e5aff38788003bd5cf31d90561ca",
+      "sha256": "5547941e5eaad2bf86757c43f1cfd6960055cd6fdc35e3c1986cfe6b3272fd36"
     },
     "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": {
-      "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
-      "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+      "git_blob": "769f65e51ea2e896af750e92592a421464c3c0e1",
+      "sha256": "786934d884581aa8e12de6421cc1d84fcf79679a99f050c2656c20f5c410f3bb"
     },
     "scripts/frontier_cycle878_event_space_independent_check_2026_07_28.py": {
-      "git_blob": "29f8b0635864462d04315ed0eb0d5b91a0553639",
-      "sha256": "234276720e2d6487a30bfbfff624e94e9c3e3585958bc6705bba842508f070ff"
+      "git_blob": "6ca19c9cd5eea4970ddf6bb45ce70d55a9db6b8f",
+      "sha256": "a1a29fcb9f6c6eb8a9626b22d2617c52b6ace53aef7a7aad466902126288e78c"
     }
   },
   "findings": {
@@ -45,11 +44,11 @@
     "candidate_verdicts": {
       "M0_CONTENT_DIVERSITY": {
         "additive": false,
-        "admissible": false,
-        "covariance": {
-          "bank_label_swap_on_tag_ordinal_cells": false,
-          "covariant_under_both": false,
-          "landed_monitor_phase_group_on_worlds": false
+        "finite_measure_candidate": false,
+        "marginal_symmetry_diagnostics": {
+          "both_marginal_diagnostics_hold": false,
+          "tag_ordinal_marginal_equal_under_bank_swap": false,
+          "world_marginal_constant_on_monitor_orbits": false
         },
         "normalizable": false,
         "support_faithful": true,
@@ -57,11 +56,11 @@
       },
       "M1_COUNTING": {
         "additive": true,
-        "admissible": true,
-        "covariance": {
-          "bank_label_swap_on_tag_ordinal_cells": false,
-          "covariant_under_both": false,
-          "landed_monitor_phase_group_on_worlds": false
+        "finite_measure_candidate": true,
+        "marginal_symmetry_diagnostics": {
+          "both_marginal_diagnostics_hold": false,
+          "tag_ordinal_marginal_equal_under_bank_swap": false,
+          "world_marginal_constant_on_monitor_orbits": false
         },
         "normalizable": true,
         "support_faithful": true,
@@ -69,11 +68,11 @@
       },
       "M2_PER_WORLD_UNIFORM": {
         "additive": true,
-        "admissible": true,
-        "covariance": {
-          "bank_label_swap_on_tag_ordinal_cells": false,
-          "covariant_under_both": false,
-          "landed_monitor_phase_group_on_worlds": true
+        "finite_measure_candidate": true,
+        "marginal_symmetry_diagnostics": {
+          "both_marginal_diagnostics_hold": false,
+          "tag_ordinal_marginal_equal_under_bank_swap": false,
+          "world_marginal_constant_on_monitor_orbits": true
         },
         "normalizable": true,
         "support_faithful": true,
@@ -81,11 +80,11 @@
       },
       "M3_OCCUPATION_WEIGHTED": {
         "additive": true,
-        "admissible": true,
-        "covariance": {
-          "bank_label_swap_on_tag_ordinal_cells": false,
-          "covariant_under_both": false,
-          "landed_monitor_phase_group_on_worlds": false
+        "finite_measure_candidate": true,
+        "marginal_symmetry_diagnostics": {
+          "both_marginal_diagnostics_hold": false,
+          "tag_ordinal_marginal_equal_under_bank_swap": false,
+          "world_marginal_constant_on_monitor_orbits": false
         },
         "normalizable": true,
         "support_faithful": false,
@@ -93,11 +92,11 @@
       },
       "M4_FORMATION_LIFETIME": {
         "additive": true,
-        "admissible": true,
-        "covariance": {
-          "bank_label_swap_on_tag_ordinal_cells": false,
-          "covariant_under_both": false,
-          "landed_monitor_phase_group_on_worlds": false
+        "finite_measure_candidate": true,
+        "marginal_symmetry_diagnostics": {
+          "both_marginal_diagnostics_hold": false,
+          "tag_ordinal_marginal_equal_under_bank_swap": false,
+          "world_marginal_constant_on_monitor_orbits": false
         },
         "normalizable": true,
         "support_faithful": false,
@@ -105,11 +104,11 @@
       },
       "M5_FORMATION_MOMENT": {
         "additive": true,
-        "admissible": true,
-        "covariance": {
-          "bank_label_swap_on_tag_ordinal_cells": false,
-          "covariant_under_both": false,
-          "landed_monitor_phase_group_on_worlds": false
+        "finite_measure_candidate": true,
+        "marginal_symmetry_diagnostics": {
+          "both_marginal_diagnostics_hold": false,
+          "tag_ordinal_marginal_equal_under_bank_swap": false,
+          "world_marginal_constant_on_monitor_orbits": false
         },
         "normalizable": true,
         "support_faithful": false,
@@ -146,33 +145,41 @@
       "F": 164
     },
     "indistinguishable_pairs": [],
-    "landed_symmetry": {
+    "open_gate": "selection among the finite-measure candidates; also open: the values of the framework's local conditional probability distribution and a derived lift of that local law through Record to these composed event atoms",
+    "per_world_event_count_range": [
+      64,
+      129
+    ],
+    "symmetry_diagnostics": {
       "action_is_a_census_bijection": true,
       "action_well_defined_on_atoms": false,
       "bank_label_swap": "B0 <-> B1 on (tag, ordinal) cells",
-      "monitor_phase_group": "Cycle-856 monitor-phase relabelling: positions -> positions + m (mod 11), a Z_11 action on worlds",
+      "monitor_phase_group": "monitor-phase relabelling (stipulated in-file): positions -> positions + m (mod 11), a Z_11 action on worlds",
+      "scope": "coarse-marginal invariance diagnostics only; no event-space symmetry statement is made for any candidate",
       "world_orbit_count": 68,
       "world_orbit_size_histogram": {
         "11": 68
       }
     },
-    "open_gate": "selection among the admissible weightings; the framework supplies no occurrence rule, no probability and no update law",
-    "per_world_event_count_range": [
-      64,
-      129
-    ],
     "worlds_with_at_least_one_event": 748
   },
-  "headline": "the realized record-write event space is a finite certified sample space: 92,260 events over 748 worlds, atoms are the (world, tag, ordinal) singletons, (bank-tag, ordinal) refines the global tag; five record-native weightings are admissible and all ten pairs already discriminate; per-world uniform is the only one covariant under the landed monitor-phase group; no probability, no occurrence rule, no update law is supplied",
-  "independence": "reversed lane bit-layout, independently derived census, seeds, dirty partition, dead-wire register and slot allocation; containment-based lattice algorithm; plain-Fraction arithmetic against the runner's integer-numerator arithmetic; slow per-lane semantic re-execution on a declared sample; adversarial overlapping and non-covering pseudo-families and a non-symmetry covariance attack",
-  "note": null,
-  "note_reason": "this worker was instructed not to write under docs/; the bounded-theorem note is left to the landing step",
+  "headline": "conditional finite combinatorics on a stipulated in-file composed-record model: the realized record-write event space is a finite certified sample space of 92,260 events over 748 worlds, atoms are the (world, tag, ordinal) singletons, (bank-tag, ordinal) refines the global tag; five finite-measure candidate weightings (nonnegative, additive, normalizable -- not framework Admissibility) are inventoried, none selected, and all ten pairs discriminate; only per-world uniform has world-marginal masses constant on the monitor-phase orbits; this block supplies no occurrence rule, no probability, and no update law",
+  "independence": "reversed lane bit-layout, independently derived census, seeds, dirty partition, dead-wire register and slot allocation; containment-based lattice algorithm; plain-Fraction arithmetic against the runner's integer-numerator arithmetic; slow per-lane semantic re-execution on a declared sample; disjoint-union, inclusion-exclusion, complement and normalization identity checks plus a non-symmetry marginal-constancy attack",
+  "note": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
   "review_chain": [
     "runner authored and run clean at the declared horizon",
-    "checker authored to refute; run clean; verdict recorded below"
+    "checker authored to refute; run clean; verdict recorded below",
+    "review-loop iteration 1: demoted and made self-contained; both runners revised and rerun clean"
   ],
+  "review_loop": {
+    "date": "2026-08-08",
+    "disposition": "FIX_THEN_PROCEED",
+    "fix_summary": "demoted the earlier framework-candidacy, symmetry-transport, experiment-surface, and negative-boundary framing to conditional finite combinatorics with coarse-marginal diagnostics; removed the unlanded Cycle-863/867 pins and the stale axiom pin from both input closures (model stipulated in-file); replaced the checker's category-error additivity attack with real disjoint-union, inclusion-exclusion, complement, and normalization identities; demoted the banned-phrase scan to non-load-bearing hygiene; removed branch/queue metadata fields from this receipt",
+    "iteration": 1,
+    "reviewer": "Sol"
+  },
   "runtime_seconds": {
-    "checker": 82.658,
-    "runner": 141.699
+    "checker": 87.19,
+    "runner": 140.986
   }
 }

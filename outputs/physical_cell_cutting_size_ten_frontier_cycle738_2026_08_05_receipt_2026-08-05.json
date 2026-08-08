@@ -1,0 +1,155 @@
+{
+ "cycle": 738,
+ "failures": 0,
+ "gates": 29,
+ "headline": "On the 15800 least-cost cuttings of the single cell, the search for least computing sets moves from eight pieces to ten. A forced-parity certificate produced by exact elimination shows that any computing set must meet the whole piece list and both halves of the fixed column ordering evenly, and the two quarters of the second half with fixed parities; the quarter-split cells those certificates license - 146 across the eighteen readings in play - are then covered completely. No set of exactly ten pieces computes any of the six physical charges, and no even or odd set of ten pieces exists: with the even-size law, every one of the six charges needs at least twelve pieces, and both octet families are isolated, the next even set and the next odd set lying at twelve pieces or beyond. The engine first reproduces the previous cycle's complete search below ten - 648 even octets, 192 odd octets, nothing for the charges - recovers all five planted ten-piece readings, carries the four control readings at exactly 108, 1, 2 and 0 sets of ten, and verifies every checked return piece by piece against all 15800 cuttings with 0 mismatched.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "complete_search_at_ten": {
+   "counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    108,
+    1,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "duplicate_returns": 0,
+   "licensed_cells": 146,
+   "mismatched": 0,
+   "planted_recovered": 5,
+   "readings": 18,
+   "readings_unmoved_by_all_symmetries": 8,
+   "ten_sets_verified": 109,
+   "verified_cap_per_reading": 100
+  },
+  "construction": {
+   "cell_symmetries": 48,
+   "cuttings": 15800,
+   "five_subsets": 4368,
+   "least_cost": 6,
+   "least_cost_pieces": 400,
+   "least_volume_pieces": 2672,
+   "piece_orbits": 4,
+   "pieces_per_cutting": 24,
+   "sample_points": 2736,
+   "search_nodes": 502838,
+   "used_pieces": 192
+  },
+  "floor": {
+   "complete_and_empty_sizes": [
+    2,
+    4,
+    6,
+    8,
+    10
+   ],
+   "odd_sizes_barred_by_parity": true,
+   "physical_charge_floor": 12
+  },
+  "forced_parity_certificate": {
+   "forced_blocks": [
+    "whole",
+    "left half",
+    "right half",
+    "third quarter",
+    "fourth quarter"
+   ],
+   "forced_quarter_pattern": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "free_blocks": 10,
+   "odd_total_reading_licenses_zero_cells": true,
+   "planted_readings_force_exactly_own_parities": 5,
+   "whole_and_halves_force_even_on_all": 17
+  },
+  "octet_isolation": {
+   "next_even_and_odd_sets_at_least": 12,
+   "one_reading_counts_below_eight_at_eight_at_ten": [
+    0,
+    192,
+    0
+   ],
+   "zero_reading_counts_below_eight_at_eight_at_ten": [
+    0,
+    648,
+    0
+   ]
+  },
+  "parity_law": {
+   "gf2_rank": 88,
+   "kernel_dimension": 104,
+   "reading_counts_all_even": [
+    0,
+    15800,
+    5664,
+    10136,
+    7704,
+    8096,
+    7424,
+    8376
+   ],
+   "uses_per_piece_odd": 1975
+  },
+  "rerun_below_ten": {
+   "even_octets": 648,
+   "even_octets_span": 104,
+   "even_orbits_of_24": 17,
+   "even_orbits_of_48": 5,
+   "licensed_cells_by_size": {
+    "eight": 55,
+    "four": 14,
+    "six": 30,
+    "two": 5
+   },
+   "mismatched": 0,
+   "octets_verified": 840,
+   "odd_family_orbit_sizes": [
+    24,
+    24,
+    48,
+    48,
+    48
+   ],
+   "odd_octets": 192,
+   "physical_charges_at_eight": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ }
+}

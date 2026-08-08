@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_per_site_su2_bridge_check_2026_05_07_w2bridge.py
-runner_sha256: c5ad62f94964a95c272f6bac1fe355a0794df7f71d9d41cea3d2fd8355e2fa4a
-timeout_sec: 60
+runner_sha256: c732f4035aabc8aca25739c6243b3ad3577ee04ea58dc1ad0896f7e9b03171bf
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 
@@ -321,6 +321,17 @@ SECTION 7 — Comparison with W2.binary result and sharpening
   the checked bridge gap reduces to the L3a surface.
 
   [PASS] [STRUCTURAL] W2.bridge sharpening: L3b reduces to L3a for the checked bridge
+
+========================================================================================
+SECTION 8 — N5 execution certificate (reporting only; adds no check)
+========================================================================================
+
+  per_element: resolved entry by entry in the two Gram matrices — every ordered pair (a, b) in {1,2,3} contributes its own trace Tr(T_a T_b), computed once on V_3 and once on the per-site Qubit factor C^2, and each 3x3 Gram is matched against (1/2) delta_ab at the runner's is_close tolerance of 1e-9; the (1,2)-block test is likewise elementwise, comparing the upper-left 2x2 sub-matrix of each Gell-Mann T_a against sigma_a/2.
+  per_site: resolved site by site across all three tensor factors — each of j = 0, 1, 2 receives its own generator triple sigma_a/2 acting on factor j and identity elsewhere, with Hermiticity and [T_1, T_2] = i T_3 verified separately at each site, and all 27 cross-site commutators [T_a^{site j1}, T_b^{site j2}] over the three site pairs confirmed to vanish, which is precisely what establishes (su(2))^3 instead of one diagonal SU(2).
+  per_mode: resolved eigenvalue by eigenvalue, and that is the decisive test here — the T_3 spectrum on V is compared as a full sorted 8-tuple, {+-1/2 with multiplicity 4} for site 0 against {+-1/2 with multiplicity 2, 0 with multiplicity 4} for the color SU(2) sub, so operator inequivalence is settled by a multiplicity inventory and not by any amplitude; correspondingly the A_1 (+) E permutation-rep split quoted in attack vector V5 is prose in the Section 4 table and is computed by no operator in this runner.
+  per_block: resolved block by block inside the base — the color generators are embedded as a 4x4 base matrix carrying T_a on the symmetric 3x3 block and exactly zero on the antisymmetric 1x1 block, then tensored with I_2 on the fiber, and the (1,2)-block of each T_a on V_3 is extracted and matched to the canonical sigma_a/2 for a = 1, 2, 3.
+  lattice_wide: executed, but strictly as a finite-N statement at N = 3 — the T_3 spectra, the 27 vanishing commutators and the (su(2))^3 generation are all taken on the whole 8-dimensional taste cube V = (C^2)^{(x)3} at once, which is the entire system this note scopes, and no larger Z^3 volume, thermodynamic limit or continuum limit is built anywhere; note also that the contrasting whole-V trace Tr_V(T_a T_b) = delta_ab that the note cites as factor-2 fiber inflation is asserted in the note and is evaluated by no check here, since both Gram computations use only V_3 and the per-site C^2.
+
 
 ========================================================================================
 FINAL SUMMARY

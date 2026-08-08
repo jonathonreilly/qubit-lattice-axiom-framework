@@ -298,6 +298,54 @@ def main() -> int:
         f"(P_1plaq+H_Dloc-P_full)[9] = {sp.factor(partial_combo[9])}",
     )
 
+    section("Part 4: N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved as individual exact rationals — every "
+        "comparison above is a single beta-power coefficient tested on its "
+        "own, c_(0,0) at orders 0, 1 and 2, P_1plaq at orders 1, 2 and 5, "
+        "H_Dloc against d_5..d_8 one order at a time, and the two named "
+        "mismatches -13/49589822592 at beta^9 and 1/944784 at beta^5; the "
+        "rho=delta instance is moreover formed as d_beta log c_(0,0) by "
+        "construction, so only those three of its coefficients are pinned and "
+        "no separate Perron recursion is run for it."
+    )
+    print(
+        "  per_site: checked and not executed — the object under test is one "
+        "marked plaquette and its four links compressed against a vacuum "
+        "state, and no spatial coordinate, link array or site sum ever "
+        "appears; that absence is part of the note's own negative, since the "
+        "full-transfer bridge carries a 6 L_s^3 per-step census that the "
+        "marked compression has no licensed counterpart for, and supplying "
+        "one is left as open work here."
+    )
+    print(
+        "  per_mode: resolved irrep by irrep across the SU(3) weight box — "
+        "each of the 121 highest weights (p,q) with p,q <= 10 carries its own "
+        "coefficient series, its own dimension (p+1)(q+1)(p+q+2)/2, and its "
+        "own local four-link amplitude a_(p,q)(beta)^4 formed by dividing "
+        "that weight's series by dim * c_(0,0) and taking the fourth power, "
+        "with the recurrence coupling weights only through the six "
+        "nearest-neighbour steps at rate 1/6."
+    )
+    print(
+        "  per_block: resolved by splitting the Hellmann-Feynman total into "
+        "its named pieces — the eigenvector recursion is carried in two "
+        "blocks, the vacuum component that becomes lambda_n and the "
+        "orthogonal residual that becomes psi_n, and the derivative is then "
+        "split as H_total = H_mark + H_Dloc; the third named piece H_env is "
+        "identically absent because the falsifier fixes rho = 1, and H_Dloc "
+        "is obtained here by subtracting H_mark from H_total rather than by "
+        "differentiating the a^4 packet directly."
+    )
+    print(
+        "  lattice_wide: checked and not executed — the whole falsifier lives "
+        "on one marked plaquette inside a weight box truncated at NMAX = 10 "
+        "and a series truncated at beta^10, with the box size justified only "
+        "as large enough for paths through that order; no all-weight "
+        "completion, no all-orders statement, no volume and no thermodynamic "
+        "limit is taken, and the note's own N5 audit states the negative at "
+        "exactly these two resolutions and no wider."
+    )
     print()
     print("FINDING: direct dressed local-packet pullback is refuted at beta^5.")
     print("FINDING: the D_loc prime term tracks Delta through beta^8 but leaves a beta^9 residual target.")

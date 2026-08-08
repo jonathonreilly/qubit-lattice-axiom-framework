@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_endpoint_denominator_admissibility.py
-runner_sha256: 177529f47dc267e86d83983e45564aee2b84b5c6fdc40723ea4ffa23789326e5
+runner_sha256: 65d97b7d81f657491b68577792ea86b25d8b3136278a412096e79940b4d3567e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 
@@ -80,6 +80,15 @@ PART 3: sqrt(7) Uniqueness / No-Go
   [PASS] sqrt(7) is not unique even among irrational seven-bearing realized denominators  (irrational seven-bearing class = ['sqrt(42)', 'sqrt(7)'])
   [PASS] sqrt(7) is the unique pure seven-only irrational generator  (generator class = ['6', '7', 'sqrt(6)', 'sqrt(7)'])
   [PASS] The simplified sqrt(42/5) denominator reduces to the sqrt(7) slot after restoring the fixed projector prefactor  (pair = (Fraction(0, 1), Fraction(1, 2)) -> 1/sqrt(7))
+
+========================================================================
+PART 4: N5 execution certificate (reporting only; adds no check)
+========================================================================
+  per_element: resolved one exponent triple at a time — each of the seven live endpoint atoms carries its own exact Fraction triple (a5, a6, a7), is printed on its own line with its own role, and is tested individually for half-integer support exponents; note that the printed basis line reads value = 5^(a5/2) 6^(a6/2) 7^(a7/2) while the stored exponents are direct powers, so 1/sqrt(42) is held as the pair (-1/2, -1/2) rather than (-1, -1).
+  per_site: checked and not executed — every object here is a scalar constant reduced to a pair of prime-slot exponents, and no field, link, site index or spatial sum is constructed; the endpoint atoms are amplitude constants on the quark endpoint lane and carry no position label for a certificate to resolve against.
+  per_mode: checked and not executed — nothing is diagonalized or expanded in a basis of states anywhere in this file; there is no operator, no eigenvalue, no character and no Fourier content, only additive bookkeeping on exponent pairs under multiplication and division.
+  per_block: resolved role class by role class — the seven atoms are partitioned into support-datum, bridge-ratio, support-reciprocal and projector-prefactor, and the classes are treated differently by construction: bridge ratios are excluded from pure denominators because they keep positive six content, the projector is stripped to its sqrt(6) slot, and the surviving pairs are then nested into the generator class {6, 7, sqrt(6), sqrt(7)} inside the realized class {6, 7, 42, sqrt(6), sqrt(7), sqrt(42)}.
+  lattice_wide: checked and not executed — the only thing this runner calls a lattice is arithmetic, the half-integer exponent lattice in the slots 6 and 7, and no spatial lattice, volume or limit exists anywhere; the admissibility statement covers a declared list of seven atoms rather than a search over the grammar, and in Part 3 the seven-bearing, irrational-seven-bearing and pure-generator sets are written as literals in the source, so two of its four findings compare a literal against itself while the other two test only membership of sqrt(7) in the computed classes.
 
 ========================================================================
 SUMMARY: PASS=11 FAIL=0

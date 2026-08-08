@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py
-runner_sha256: 3af7d7baef62d18db9cc1f175ff286dab76ce4f1e91882bfe13b63b48dc79722
+runner_sha256: cfda507046c980d342ac61eb568c47d20f1bf3046339bfc3cdb1e397629dbfc0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -71,6 +71,14 @@ PASS: therefore C3 splitting requires an extra orientation/reflection-breaking p
 PASS: forbidden proof inputs are absent -- ['Hermitian_Ward_endomorphism', 'S3_generation_action', 'commutant_linear_algebra', 'hw1_A1_plus_E_decomposition']
 PASS: new note leaves future source/readout input or bridge open
 PASS: new note does not overclaim future no-go
+
+F. N5 execution certificate (reporting only; adds no check)
+------------------------------------------------------------------------
+per_element: resolved one group element at a time — each of the six S_3 elements is turned into its own permutation matrix entry by entry, each is separately confirmed orthogonal and each contributes its own character, while the commutant system is assembled row by row as nine index pairs for each of the five non-identity elements, giving a 45-by-9 constraint matrix; the normal-form test is likewise elementwise, requiring all diagonal entries equal and all off-diagonal entries equal within TOL = 1e-10.
+per_site: checked and not executed — the three slots being permuted are generation labels on the retained hw=1 triplet, not positions, and no lattice array, link or spatial sum is constructed here; the runner in fact checks that the paired note routes its carrier through the three-generation authority and carries no dependency edge to the realization gate, so no site-resolved carrier is claimed at all.
+per_mode: resolved on the explicit A_1 and E eigenvectors — the characters 3, 1 and 0 on the identity, transposition and 3-cycle classes give multiplicities one A_1, zero A_2 and one E, and the sample operator is then evaluated separately on (1,1,1)/sqrt(3), (1,-1,0)/sqrt(2) and (1,1,-2)/sqrt(6), which is how the E-plane degeneracy is exhibited rather than merely asserted.
+per_block: resolved as the two isotype blocks — the commutant comes out two-dimensional, one free scalar per block, so the singlet block carries a + 3b while the whole E block carries the single value a; state plainly that this dimension is computed as the SVD nullity of the constraint system over the 9-dimensional space of real 3x3 matrices, so the complex Hermitian case is covered here only by the explicit oriented example in section E, not by that count.
+lattice_wide: checked and not executed — nothing spatial is instantiated, so no volume, thermodynamic limit or continuum limit can appear, and the widest scope statements are documentary rather than computed: 15 of the 47 recorded passes are file-existence or string-presence scans over five repository notes, and the forbidden-input check compares two set literals that are disjoint by construction.
 
 Summary
 ------------------------------------------------------------------------

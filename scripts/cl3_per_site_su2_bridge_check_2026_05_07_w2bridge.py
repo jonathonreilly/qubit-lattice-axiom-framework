@@ -613,6 +613,67 @@ def section_7_w2_binary_sharpening():
           True, kind="STRUCTURAL")
 
 # =========================================================================
+# Section 8 — N5 execution certificate (reporting only; adds no check)
+# =========================================================================
+def section_8_n5_execution_certificate():
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: no check() call, so PASS/FAIL and BPASS/BFAIL are
+    untouched by this section.
+    """
+    section("SECTION 8 — N5 execution certificate (reporting only; adds no check)")
+    print()
+    print(
+        "  per_element: resolved entry by entry in the two Gram matrices — "
+        "every ordered pair (a, b) in {1,2,3} contributes its own trace "
+        "Tr(T_a T_b), computed once on V_3 and once on the per-site Qubit "
+        "factor C^2, and each 3x3 Gram is matched against (1/2) delta_ab at "
+        "the runner's is_close tolerance of 1e-9; the (1,2)-block test is "
+        "likewise elementwise, comparing the upper-left 2x2 sub-matrix of "
+        "each Gell-Mann T_a against sigma_a/2."
+    )
+    print(
+        "  per_site: resolved site by site across all three tensor factors — "
+        "each of j = 0, 1, 2 receives its own generator triple sigma_a/2 "
+        "acting on factor j and identity elsewhere, with Hermiticity and "
+        "[T_1, T_2] = i T_3 verified separately at each site, and all 27 "
+        "cross-site commutators [T_a^{site j1}, T_b^{site j2}] over the three "
+        "site pairs confirmed to vanish, which is precisely what establishes "
+        "(su(2))^3 instead of one diagonal SU(2)."
+    )
+    print(
+        "  per_mode: resolved eigenvalue by eigenvalue, and that is the "
+        "decisive test here — the T_3 spectrum on V is compared as a full "
+        "sorted 8-tuple, {+-1/2 with multiplicity 4} for site 0 against "
+        "{+-1/2 with multiplicity 2, 0 with multiplicity 4} for the color "
+        "SU(2) sub, so operator inequivalence is settled by a multiplicity "
+        "inventory and not by any amplitude; correspondingly the A_1 (+) E "
+        "permutation-rep split quoted in attack vector V5 is prose in the "
+        "Section 4 table and is computed by no operator in this runner."
+    )
+    print(
+        "  per_block: resolved block by block inside the base — the color "
+        "generators are embedded as a 4x4 base matrix carrying T_a on the "
+        "symmetric 3x3 block and exactly zero on the antisymmetric 1x1 block, "
+        "then tensored with I_2 on the fiber, and the (1,2)-block of each T_a "
+        "on V_3 is extracted and matched to the canonical sigma_a/2 for "
+        "a = 1, 2, 3."
+    )
+    print(
+        "  lattice_wide: executed, but strictly as a finite-N statement at "
+        "N = 3 — the T_3 spectra, the 27 vanishing commutators and the "
+        "(su(2))^3 generation are all taken on the whole 8-dimensional taste "
+        "cube V = (C^2)^{(x)3} at once, which is the entire system this note "
+        "scopes, and no larger Z^3 volume, thermodynamic limit or continuum "
+        "limit is built anywhere; note also that the contrasting whole-V "
+        "trace Tr_V(T_a T_b) = delta_ab that the note cites as factor-2 fiber "
+        "inflation is asserted in the note and is evaluated by no check here, "
+        "since both Gram computations use only V_3 and the per-site C^2."
+    )
+    print()
+
+
+# =========================================================================
 # Final summary
 # =========================================================================
 def main():
@@ -631,6 +692,7 @@ def main():
     section_5_l3b_to_l3a_reduction(Tcolor_su2_V)
     section_6_remaining_admissions()
     section_7_w2_binary_sharpening()
+    section_8_n5_execution_certificate()
 
     section("FINAL SUMMARY")
     print(f"\nEXACT      : PASS = {PASS}, FAIL = {FAIL}")

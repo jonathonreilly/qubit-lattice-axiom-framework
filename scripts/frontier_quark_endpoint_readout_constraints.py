@@ -294,6 +294,60 @@ def part3_exact_no_go(data: EndpointReadout) -> None:
     )
 
 
+def part4_n5_execution_certificate(data: EndpointReadout) -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no check(), leaves the counters alone.
+    """
+    print("\n" + "=" * 72)
+    print("PART 4: N5 execution certificate (reporting only; adds no check)")
+    print("=" * 72)
+    print(
+        "  per_element: resolved one coefficient at a time — a_E and a_T are "
+        "taken as the shell values, b_E and b_T are each formed as their own "
+        "difference quotient over the endpoint gap 1/6, and four independent "
+        "residuals follow, one per channel per endpoint, each required below "
+        "EXACT_TOL = 1e-12; in the default replay these are exact arithmetic "
+        "over stored constants rather than freshly contracted tensors."
+    )
+    print(
+        "  per_site: checked and not executed — center and shell are two "
+        "values of the support functional delta_A1, a label on the internal "
+        "S3/time tensor space and not a position, and no lattice, link "
+        "variable or site sum is built anywhere; in this replay mode even the "
+        "adapted basis vectors are never constructed."
+    )
+    print(
+        "  per_mode: resolved as the two named readout channels — E and T each "
+        "carry their own intercept, their own slope, their own endpoint "
+        "residuals and their own bounded ratio, with b_T/a_T pinned near -1 "
+        "and gamma_T(center)/gamma_T(shell) pinned near the exact 5/6 at "
+        "RATIO_TOL = 5e-4; but the basis directions those channels are read "
+        "from, e0, s/sqrt(6), e_x and t1x, are assembled only on the "
+        "QUARK_ENDPOINT_FULL_TENSOR_REPLAY=1 path, which this run does not "
+        "take, so the mode structure is inherited from stored values rather "
+        "than rebuilt here."
+    )
+    print(
+        "  per_block: registered twice, at the shell and at the center — the "
+        "affine law is evaluated once at delta_A1 = 0, where the intercept is "
+        "read straight off, and once at delta_A1 = 1/6, where the slope must "
+        "close the gap, and both registrations have to reproduce their own "
+        "endpoint below 1e-12; there is no larger block decomposition here, "
+        "since the readout is two scalars and no sub-block of the tensor is "
+        "resolved separately."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no spatial system, volume "
+        "or limit appears, and the widest statements in this file are not "
+        "computed at all: five of the fourteen findings are string-presence "
+        "scans over five repository notes, and that is precisely how the "
+        "no-go is recorded, so the claim that the exact endpoint coefficient "
+        "theorem remains open rests on document text rather than on any "
+        "computation performed here."
+    )
+
+
 def main() -> int:
     print("Quark endpoint readout constraints")
     print("=" * 72)
@@ -308,6 +362,7 @@ def main() -> int:
     part1_exact_endpoint_fixation(data)
     part2_bounded_live_relations(data)
     part3_exact_no_go(data)
+    part4_n5_execution_certificate(data)
 
     print("\nVerdict:")
     print(

@@ -217,6 +217,51 @@ def main() -> int:
     print("    select the BICAC endpoint kappa = 1.")
 
     print()
+    print("  N5 execution certificate (reporting only; adds no check):")
+    print(
+        "    per_element: resolved atom by atom in the retained packet — "
+        "|p|^2 = 1, |r|^2 = 1/7 and a_d = Re(r) = rho are each tested on "
+        "their own below 1e-15, and packet_residuals carries eight separately "
+        "named residuals including the collinearity cross-term "
+        "Re(p) Im(r) - Im(p) Re(r) and the NLO contraction supp*delta_A1 - "
+        "1/49; two of those eight, supp - 6/7 and delta - 1/42, are written "
+        "as a value minus itself and are therefore identically zero by "
+        "construction rather than by any derivation."
+    )
+    print(
+        "    per_site: checked and not executed — everything here is scalar "
+        "amplitude algebra over cos_d, sin_d, rho and eta, with no site "
+        "index, link, lattice array or spatial sum; the note is explicit that "
+        "naming these amplitudes as the quark sector consumes the "
+        "staggered-Dirac realization gate, so the site-resolved carrier is an "
+        "open target elsewhere and is deliberately not built here."
+    )
+    print(
+        "    per_mode: checked and not executed — a_u(kappa) is a single "
+        "scalar function of one parameter, and no operator, spectrum, "
+        "eigenvalue or Fourier decomposition is ever formed; a_u and a_d are "
+        "two named channel amplitudes on the same ray rather than modes of "
+        "anything."
+    )
+    print(
+        "    per_block: resolved bridge point by bridge point — the support, "
+        "target and BICAC registrations are constructed as three separate "
+        "BridgePoint records, each carrying its own kappa and its own a_u, "
+        "with kappa_support = sqrt(6/7), kappa_target = 48/49 and "
+        "kappa_BICAC = 1, and the certificate of non-uniqueness is exactly "
+        "that all three distinct copies leave the same packet invariants "
+        "standing."
+    )
+    print(
+        "    lattice_wide: checked and not executed — nothing extended is "
+        "constructed, so no volume, thermodynamic limit or continuum limit "
+        "exists; the widest claim is the interval statement "
+        "sqrt(6/7) < 48/49 < 1, established by the exact rational comparison "
+        "(48/49)^2 - 6/7 = 246/2401 and one endpoint subtraction, while the "
+        "family a_u(kappa) itself is evaluated at exactly three points and is "
+        "never swept across the interval."
+    )
+    print()
     print("=" * 72)
     print(f"PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:

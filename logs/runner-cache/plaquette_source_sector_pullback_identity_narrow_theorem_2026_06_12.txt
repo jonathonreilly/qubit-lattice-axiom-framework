@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/plaquette_source_sector_pullback_identity_narrow_theorem_2026_06_12.py
-runner_sha256: 90c1da40ab4c56d815867afc0a9f4218fee722d3c23ec0974ae5e2245d585ac4
+runner_sha256: b3ee2522a9672834e179592026b94dc8142c7449e6f5cd9d19930f534ab4b9df
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.22
+elapsed_sec: 4.08
 status: ok
 ----- stdout -----
 Plaquette source-sector pullback identity narrow theorem runner
@@ -41,6 +41,15 @@ PASS: the candidate mismatch is exact rational arithmetic, not float-derived
       beta^5: 1/944784; beta^6: 7/11337408; beta^7: 5/34012224; beta^8: 5/544195584; beta^9: -6745/1586874322944
 PASS: isolated P_1plaq plus H_Dloc is only a partial match: beta^5..8 pass, beta^9 fails
       (P_1plaq+H_Dloc-P_full)[9] = -13/49589822592
+
+================================================================================================
+Part 4: N5 execution certificate (reporting only; adds no check)
+================================================================================================
+  per_element: resolved as individual exact rationals — every comparison above is a single beta-power coefficient tested on its own, c_(0,0) at orders 0, 1 and 2, P_1plaq at orders 1, 2 and 5, H_Dloc against d_5..d_8 one order at a time, and the two named mismatches -13/49589822592 at beta^9 and 1/944784 at beta^5; the rho=delta instance is moreover formed as d_beta log c_(0,0) by construction, so only those three of its coefficients are pinned and no separate Perron recursion is run for it.
+  per_site: checked and not executed — the object under test is one marked plaquette and its four links compressed against a vacuum state, and no spatial coordinate, link array or site sum ever appears; that absence is part of the note's own negative, since the full-transfer bridge carries a 6 L_s^3 per-step census that the marked compression has no licensed counterpart for, and supplying one is left as open work here.
+  per_mode: resolved irrep by irrep across the SU(3) weight box — each of the 121 highest weights (p,q) with p,q <= 10 carries its own coefficient series, its own dimension (p+1)(q+1)(p+q+2)/2, and its own local four-link amplitude a_(p,q)(beta)^4 formed by dividing that weight's series by dim * c_(0,0) and taking the fourth power, with the recurrence coupling weights only through the six nearest-neighbour steps at rate 1/6.
+  per_block: resolved by splitting the Hellmann-Feynman total into its named pieces — the eigenvector recursion is carried in two blocks, the vacuum component that becomes lambda_n and the orthogonal residual that becomes psi_n, and the derivative is then split as H_total = H_mark + H_Dloc; the third named piece H_env is identically absent because the falsifier fixes rho = 1, and H_Dloc is obtained here by subtracting H_mark from H_total rather than by differentiating the a^4 packet directly.
+  lattice_wide: checked and not executed — the whole falsifier lives on one marked plaquette inside a weight box truncated at NMAX = 10 and a series truncated at beta^10, with the box size justified only as large enough for paths through that order; no all-weight completion, no all-orders statement, no volume and no thermodynamic limit is taken, and the note's own N5 audit states the negative at exactly these two resolutions and no wider.
 
 FINDING: direct dressed local-packet pullback is refuted at beta^5.
 FINDING: the D_loc prime term tracks Delta through beta^8 but leaves a beta^9 residual target.

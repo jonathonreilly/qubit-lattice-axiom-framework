@@ -182,6 +182,58 @@ def part4_note_firewall() -> None:
     check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
+def part5_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no check(), leaves the counters alone.
+    """
+    print("\nE. N5 execution certificate (reporting only; adds no check)")
+    print(
+        "per_element: resolved one exact rational face at a time and in both "
+        "directions — rho_E = 21/4 against q_E = 15/8, c_TE = -8/9 against "
+        "q_E, lambda = 9/4 against q_E, and the diagonal metric ratio "
+        "1449/704 against q_E^2, every conversion carried in Fraction "
+        "arithmetic so equality is exact rather than tolerance-bounded; the "
+        "three coefficients of the general metric equation, 161/64, -9/4 and "
+        "-11/9, are additionally pinned one by one."
+    )
+    print(
+        "per_site: checked and not executed — the objects here are readout "
+        "ratios at two endpoint slots on the Route-2 carrier, and no lattice "
+        "coordinate, link or site sum is constructed; the runner itself "
+        "checks that the minimal-axioms surface records that the record "
+        "supplies no readout context, so the site-level realization that "
+        "would carry these ratios is deliberately absent rather than "
+        "overlooked."
+    )
+    print(
+        "per_mode: resolved channel by channel across the O_h irreps — the E "
+        "and T1 channels keep their own projector weights w_E = 1/3 and "
+        "w_T = 1/2, their own endpoint ratios q_E and q_T = 5/6, and the "
+        "covariance candidate is tested at two separate powers, with the "
+        "inverse square (w_E/w_T)^-2 hitting lambda = 9/4 and the one-power "
+        "form explicitly failing to."
+    )
+    print(
+        "per_block: resolved at the two endpoint registrations the atlas keeps "
+        "apart — the shell slot fixes s_TE = gamma_T(shell)/gamma_E(shell) = "
+        "-2 while the center slot carries c_TE = s_TE q_T / q_E, and the "
+        "general metric residual takes the center vector (q_E, -5/3) and the "
+        "shell vector (1, -2) as separate arguments, which is what lets the "
+        "target metric (a, b) = (704, 1449) annihilate the residual while the "
+        "identity metric does not."
+    )
+    print(
+        "lattice_wide: checked and not executed — no extended system, volume "
+        "or limit is instantiated anywhere, and the widest claim of this "
+        "block, that no current surface derives the center primitive, is "
+        "recorded documentarily rather than computed: 33 of the 49 recorded "
+        "passes are file-existence or string-presence scans over nine "
+        "repository documents, leaving the 16 exact rational identities of "
+        "section B as the whole of the arithmetic."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("ROUTE-2 CENTER PRIMITIVE EQUIVALENCE ATLAS")
@@ -190,6 +242,7 @@ def main() -> int:
     part2_equivalence_atlas()
     part3_firewall_authorities()
     part4_note_firewall()
+    part5_n5_execution_certificate()
     print("\nSummary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

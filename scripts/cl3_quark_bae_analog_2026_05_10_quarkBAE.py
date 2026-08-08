@@ -1176,6 +1176,57 @@ print(f"    Q values of 0.748, 0.892 in any obvious mapping to the F3 functional
 # Final summary
 # ----------------------------------------------------------------------
 
+section("Section 16 — N5 execution certificate (reporting only; adds no check)")
+
+print()
+print(
+    "  per_element: resolved one basis operator at a time — "
+    "basis_c3_invariant_hermitians_6d builds all twelve generators "
+    "explicitly as kron(HC, MW) over the three color circulant generators "
+    "I_3, C + C^2 and i(C - C^2) and the four weak Hermitian generators I_2, "
+    "sigma_x, sigma_y, sigma_z, and each of the twelve is separately tested "
+    "for Hermiticity and for vanishing commutator with C_3 (x) I_2 at "
+    "atol 1e-10, though the loop records those twelve outcomes as one "
+    "aggregate pass and breaks at the first failure."
+)
+print(
+    "  per_site: checked and not executed — the Z^3 substrate and the "
+    "{0,1}^3 BZ-corner inventory of Probe 27 enter this probe only as cited "
+    "upstream premises, and nothing here builds a site index, a link "
+    "variable, a lattice array or a spatial sum; every operator lives on "
+    "internal indices alone, three colors times two weak components."
+)
+print(
+    "  per_mode: resolved isotype by isotype — the three C_3 characters 1, "
+    "omega and omega_bar each get their own projector "
+    "(1/3) sum_k chi^{-k} C^k lifted by (x) I_2, the three projections are "
+    "required to reconstruct the operator at atol 1e-10, the passenger lift "
+    "is shown to carry exactly the three charged-lepton eigenvalues each "
+    "doubled, and at the BAE point a^2 = 2|b|^2 the spectrum comes out as "
+    "the doubled degenerate triplet rather than a hierarchical one."
+)
+print(
+    "  per_block: resolved weak block by weak block — C_3-equivariance forces "
+    "block-diagonality across the three isotype copies, each copy carrying a "
+    "full 2x2 Hermitian weak block, so the trivial copy contributes 4 real "
+    "degrees of freedom and the omega and omega_bar copies contribute 4 each; "
+    "said plainly, mu_quark = 1*4 and nu_quark = 2*4 are written as literals "
+    "in Sections 4 and 12 and then checked against 4, 8 and 12, so those "
+    "passes are count declarations, and the independent corroboration is the "
+    "twelve-element basis actually constructed in Section 3 together with the "
+    "projector reconstruction in Section 5."
+)
+print(
+    "  lattice_wide: checked and not executed — the entire probe sits inside "
+    "one fixed six-dimensional internal block C^3 (x) C^2, with no volume, no "
+    "site sum, no thermodynamic limit and no continuum limit constructed "
+    "anywhere; the generic tensor claim that (1,1,1) (x) (a,b,c) yields "
+    "(a+b+c, a+b+c, a+b+c) for every passenger triple is exercised on three "
+    "named weak assignments rather than proved over all triples, and the two "
+    "empirical Koide anchors of Section 15 are check(..., True) statements "
+    "with the PDG numbers appearing in prose only."
+)
+
 section("Summary")
 
 print()

@@ -90,6 +90,45 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate")
+    print(
+        "  per_element: checked and not executed - not a single array is "
+        "constructed in this file; the only matrix work, the 3x3 Bessel "
+        "determinants behind the one-plaquette value, happens inside the imported "
+        "support routine and comes back already contracted to one scalar per "
+        "coupling, so there is no entry left here to look at"
+    )
+    print(
+        "  per_site: checked and not executed - the file contains a list of six "
+        "coupling values and the plaquette numbers they map to, and nothing else "
+        "with an index; no site, link, spacing or boundary is defined, and the "
+        "periodic Wilson surface mentioned in the third and fourth claims is "
+        "never instantiated at any size"
+    )
+    print(
+        "  per_mode: checked and not executed - the representation-mode truncation "
+        "is performed six separate times, once for each sampled coupling, but "
+        "each call is immediately subscripted with [0] so all six mode cutoffs "
+        "are thrown away unread; nothing in this runner can say how deep any of "
+        "those sums had to go"
+    )
+    print(
+        "  per_block: exactly one block is ever evaluated, the local one-plaquette "
+        "block, and it is evaluated at six couplings from 0.1 up to 40 - the "
+        "companion claim that the same argument covers every finite periodic "
+        "Wilson source surface is carried by a check whose condition is the bare "
+        "literal True, so no second block of any size is formed and no "
+        "block-to-block comparison takes place"
+    )
+    print(
+        "  lattice_wide: checked and not executed - the whole-surface statement and "
+        "the beta to infinity limit are both asserted in prose inside detail "
+        "strings rather than computed, the largest coupling actually evaluated "
+        "being 40, and no lattice of any extent L is built at any point, so the "
+        "hierarchy-truncation obstruction is established only on the "
+        "single-plaquette measure"
+    )
+    print()
     print("=" * 78)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
     print("=" * 78)

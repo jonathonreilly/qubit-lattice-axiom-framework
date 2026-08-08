@@ -1,0 +1,58 @@
+# Historic intake: No-Go Discipline Checklist (Koide MRU quotient obstruction)
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: pack_science_family
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Six distinct attacks executed (granted cyclic invariant scalarity, granted conjugation, granted spectrum-scalar grammar, Record finite additivity, the unreduced determinant forcing route, and real-Schur quadratic uniqueness): the first three retain a cubic phase channel, Record has no carrier bridge and still admits two laws after one is granted, the unreduced determinant gives kappa = 1, and the last gives a positive theorem only through degree two. The collapsed wall set has exactly ONE member — eliminate the surviving cubic phase invariant from the physical scalar readout.
+
+Original verdict: PASS for the narrow claim that the minimal-axiom plus retained cyclic-compression packet does not force the physical SO(2) radius quotient.
+Scope: Per supplied cyclic matrix; lattice-wide dynamics, record formation, physical species construction, and all possible future readouts are explicitly outside scope.
+Escape conditions (negative claims): Three positive paths, none requiring a new axiom: derive full SO(2) readout invariance, derive naturality under the full orthogonal automorphism group of the real C3 module, or derive exact quadratic physical grammar plus all-higher-order decoupling. The steelman (the actual observable may be exactly first-live and second order, whereupon real Schur theory forces radial dependence) is preserved as the next positive target.
+
+## Why pulled (supervisor decision, on the record)
+
+Six distinct attacks fail to force the kappa selection from the minimal-axiom + retained cyclic-compression surface (the unreduced determinant route gives kappa=1); three positive paths named, none requiring a new axiom. Adjudication-set member.
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/physics-loops/koide-mru-quotient-obstruction-20260712/NO_GO_DISCIPLINE_CHECKLIST.md`
+- Source commit: `e339004245d0e6c6a07a34f3a0ff1c7aa0bc6897`
+- git blob: `026a37c0e988d4d258433bc80fd0cbb21060d98a`
+- sha256: `3c8e51c5c9d87e360ffeaffa3842b6623f9888436a7e77fc9c9396cd00798a8e`
+- Lines: 85; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- `.claude/science/physics-loops/koide-mru-quotient-obstruction-20260712/NO_GO_LEDGER.md` — Route-local memories with exact evidence: det(H) and tr(H^3) contain cos(3 arg b), so spectrum-native scalars do not close the gate.
+
+## Cross-stratum flags
+
+- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Six distinct attacks fail to force the kappa selection from the minimal-axiom + retained cyclic-compression surface (the unreduced determinant route gives kappa=1); three positive paths named, none requiring a new axiom. Adjudication-set member.
+
+## Flags carried
+
+The unreduced determinant route gives kappa = 1, not the kappa = 2 the r = 1/2 story needs — consistent with the other kappa findings in this pack.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

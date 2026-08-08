@@ -1,0 +1,54 @@
+# Historic intake: Claim-status certificate (Koide signed-vs-singular stdout closure)
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_positive_theorem
+Stratum: pack_science_family
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Candidate-retained-grade self-contained exact algebra with a complete current-cycle runner certificate and no load-bearing imports; the source note explicitly does NOT derive r = 1/2, does not select a physical charged-lepton operator/readout, and uses no observed mass as proof input. Full N1-N8 PASS with five ATTEMPTED families each carrying a live runner locator.
+
+Original verdict: Positive theorem at algebraic scope; independent audit remains the sole authority for audited_clean.
+Scope: Per-element and per-mode scopes tested; site/block/lattice scopes explicitly not claimed.
+Escape conditions (negative claims): N7 identifies zero-mode and arbitrary-r counterarguments as the strongest steelman, both of which narrow the claim and are checked exactly.
+
+## Why pulled (supervisor decision, on the record)
+
+Clean unlanded positive: candidate-retained-grade self-contained exact algebra with a complete current-cycle runner certificate and no load-bearing dependencies.
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/physics-loops/koide-signed-vs-singular-stdout-closure-20260729/CLAIM_STATUS_CERTIFICATE.md`
+- Source commit: `9b54e4137059f0793c526fc566283829915b7cd4`
+- git blob: `11386c42923e7bfd5c8acfd9f9b88244882930ed`
+- sha256: `96abc89105aedf6dc71b1e9d0fea97eced100228364c0b7d212f5ef6543c533b`
+- Lines: 38; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

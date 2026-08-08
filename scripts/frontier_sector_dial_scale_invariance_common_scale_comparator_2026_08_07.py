@@ -7,10 +7,10 @@ docs/SECTOR_DIAL_COMMON_SCALE_COMPARATOR_CORRECTION_META_NOTE_2026-08-07.md
 Load-bearing content is Parts A-C and is exact: `fractions.Fraction` and
 integers only, no floating point, no randomness.
 
-Part D is a COMPARATOR block.  It uses floating point and external PDG inputs
-and is not a derivation step.  It exists only to show, numerically, what the
-exact theorem of Parts A-C implies for the quark-sector comparators already
-displayed in
+Part D is a COMPARATOR block.  It uses floating point and explicitly sourced
+PDG-vintage inputs and is not a derivation step.  It exists only to show,
+numerically, what the exact theorem of Parts A-C implies for the quark-sector
+comparators already displayed in
 docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md.
 
 This runner derives no quark mass, no mass scale, no phase law, and no sector
@@ -213,8 +213,8 @@ section("C. EXACT: unequal per-generation factors DO move the dial")
 
 print("  A mixed-scale convention quotes different generations at different")
 print("  reference scales.  That applies m_k -> lam_k m_k with lam_k NOT all")
-print("  equal, which is outside Part A's hypothesis.  The converse below is")
-print("  exact and constructive.")
+print("  equal, which is outside Part A's hypothesis.  The sharpness witness")
+print("  below is exact and constructive.")
 print()
 
 # Lemma (exact).  For x = (1, 1, 0) and factors mu_1, mu_2 on the first two
@@ -313,10 +313,11 @@ print("  Everything in Part D is a comparator.  It uses external PDG central")
 print("  values and floating point, is not exact, is not a derivation step, and")
 print("  supplies no premise.  Parts A-C stand without it.")
 print()
-print("  Inputs (PDG-style MSbar, as quoted -- i.e. at MIXED reference scales):")
+print("  Inputs (PDG 2022 quark table; alpha_s from the PDG 2023 QCD review):")
 print("    up-type   m_u(2 GeV)=2.16e-3, m_c(m_c)=1.27,  m_t(m_t)=162.5   GeV")
 print("    down-type m_d(2 GeV)=4.67e-3, m_s(2 GeV)=93.4e-3, m_b(m_b)=4.18 GeV")
 print("    alpha_s(M_Z) = 0.1180")
+print("    asymmetric mass errors are symmetrized by averaging their magnitudes")
 print()
 
 Z3C = 1.2020569031595943
@@ -472,18 +473,21 @@ check("comparator: mixed-scale and common-scale dials differ well beyond float n
 
 print()
 MU_CANON = 162.5   # >= m_t: the canonical common scale, per the note
-print(f"  D3. Linear error propagation on the common-scale dial (mu = {MU_CANON} GeV,")
+print(f"  D3. Symmetric +/-1 sigma finite-difference error propagation (mu = {MU_CANON} GeV,")
 print("      the canonical mu >= m_t row, not the display-only M_Z row):")
 base = _sector_dials(PARS, MU_CANON)
 var = {'Qu': 0.0, 'Qd': 0.0, 'ru': 0.0, 'rd': 0.0}
 for k, e in ERRS.items():
-    p = dict(PARS)
-    p[k] = PARS[k] + e
-    (Qu, ru, _), (Qd, rd, _) = _sector_dials(p, MU_CANON)
-    var['Qu'] += (Qu - base[0][0]) ** 2
-    var['ru'] += (ru - base[0][1]) ** 2
-    var['Qd'] += (Qd - base[1][0]) ** 2
-    var['rd'] += (rd - base[1][1]) ** 2
+    p_hi, p_lo = dict(PARS), dict(PARS)
+    p_hi[k], p_lo[k] = PARS[k] + e, PARS[k] - e
+    (Qu_hi, ru_hi, _), (Qd_hi, rd_hi, _) = _sector_dials(p_hi, MU_CANON)
+    (Qu_lo, ru_lo, _), (Qd_lo, rd_lo, _) = _sector_dials(p_lo, MU_CANON)
+    # The centered +/-1 sigma displacement estimates (df/dp)*sigma while
+    # respecting the explicitly symmetrized input-error convention.
+    var['Qu'] += ((Qu_hi - Qu_lo) / 2) ** 2
+    var['ru'] += ((ru_hi - ru_lo) / 2) ** 2
+    var['Qd'] += ((Qd_hi - Qd_lo) / 2) ** 2
+    var['rd'] += ((rd_hi - rd_lo) / 2) ** 2
 sQu, sru = math.sqrt(var['Qu']), math.sqrt(var['ru'])
 sQd, srd = math.sqrt(var['Qd']), math.sqrt(var['rd'])
 print(f"    Q_up   = {base[0][0]:.6f} +- {sQu:.6f}      r_up   = {base[0][1]:.6f} +- {sru:.6f}")
@@ -496,9 +500,10 @@ print(f"    Q_down = {base[1][0]:.6f} +- {sQd:.6f}      r_down = {base[1][1]:.6f
 
 print()
 print("  D4. SCHEME dependence: the invariance covers the reference SCALE only.")
-print("      A scheme change is NOT a common rescaling -- the MSbar->pole factor")
-print("      1 + 4 a_s(m_q)/(3 pi) is evaluated at each quark's own mass, so it")
-print("      differs per generation.  This is a named residual, not a bound.")
+print("      As an illustration, the heavy-entry MSbar->pole factor")
+print("      1 + 4 alpha_s(m_q)/(3 pi) is evaluated at each heavy quark's own")
+print("      mass, so it differs by generation.  This is not a complete pole-")
+print("      scheme sector and supplies only a named residual, not a bound.")
 _R = _RG(PARS['aS'], PARS['mc'], PARS['mb'], PARS['mt'])
 
 
@@ -512,7 +517,7 @@ r_pole = _dial_f([PARS['mu'], PARS['mc'] * f_c, PARS['mt'] * f_t])[1]
 print(f"    MSbar->pole factors: at m_c {f_c:.4f}, at m_t {f_t:.4f} (NOT common)")
 print(f"    up-type r: MSbar {r_ms:.6f} -> pole {r_pole:.6f}  "
       f"(shift {r_pole - r_ms:+.6f} = {abs(r_pole - r_ms)/sru:.1f} sigma)")
-check("comparator: a uniform scheme change DOES move the dial",
+check("comparator: a non-common heavy-entry scheme conversion moves the dial",
       abs(r_pole - r_ms) > 5e-3,
       "so the dial is reference-scale-free within a scheme, NOT scheme-free")
 check("comparator: the MSbar->pole factors are not a common rescaling",
@@ -520,22 +525,37 @@ check("comparator: the MSbar->pole factors are not a common rescaling",
       f"|f_c - f_t| = {abs(f_c - f_t):.4f}; outside Part A's hypothesis")
 
 print()
-print("  D5. Active-flavour / decoupling systematic on the 2 GeV light masses.")
-print("      This acts on m_u alone (up) and m_d,m_s (down) -- an UNEQUAL")
-print("      per-generation factor in the sense of Part C, so it is not")
-print("      protected by the invariance and must be sized explicitly:")
+print("  D5. Active-flavour and heavy-threshold matching residuals.")
+print("      The 2 GeV active-flavour convention shifts m_u,m_d,m_s.  Finite")
+print("      heavy-threshold matching instead acts on flavours light at the")
+print("      crossed threshold: modelled here as m_u,m_c versus m_t and")
+print("      m_d,m_s versus m_b.  Neither pattern is common to a full sector:")
 for pct in (0.003, 0.01, 0.03):
-    p = dict(PARS)
+    p_2gev = dict(PARS)
     for k in ('mu', 'md', 'ms'):
-        p[k] = PARS[k] * (1.0 + pct)
-    (_, ru_s, _), (_, rd_s, _) = _sector_dials(p, 91.1876)
-    print(f"    zeta_m-style shift {pct*100:+5.1f}% : d r_up = {ru_s-base[0][1]:+.2e} "
-          f"({abs(ru_s-base[0][1])/sru:.3f} sigma)   "
-          f"d r_down = {rd_s-base[1][1]:+.2e} ({abs(rd_s-base[1][1])/srd:.3f} sigma)")
-    if abs(pct - 0.03) < 1e-12:
-        check("comparator: even a 3% light-mass convention shift stays under 1 sigma",
-              abs(ru_s - base[0][1]) / sru < 1.0 and abs(rd_s - base[1][1]) / srd < 1.0,
-              "supports the note's 'well inside PDG input errors' scope line")
+        p_2gev[k] = PARS[k] * (1.0 + pct)
+    (_, ru_2gev, _), (_, rd_2gev, _) = _sector_dials(p_2gev, MU_CANON)
+
+    p_thr = dict(PARS)
+    for k in ('mu', 'mc', 'md', 'ms'):
+        p_thr[k] = PARS[k] * (1.0 + pct)
+    (_, ru_thr, _), (_, rd_thr, _) = _sector_dials(p_thr, MU_CANON)
+
+    print(f"    2 GeV convention {pct*100:+5.1f}% : d r_up = {ru_2gev-base[0][1]:+.2e} "
+          f"({abs(ru_2gev-base[0][1])/sru:.3f} sigma)   "
+          f"d r_down = {rd_2gev-base[1][1]:+.2e} "
+          f"({abs(rd_2gev-base[1][1])/srd:.3f} sigma)")
+    print(f"    threshold proxy  {pct*100:+5.1f}% : d r_up = {ru_thr-base[0][1]:+.2e} "
+          f"({abs(ru_thr-base[0][1])/sru:.3f} sigma)   "
+          f"d r_down = {rd_thr-base[1][1]:+.2e} "
+          f"({abs(rd_thr-base[1][1])/srd:.3f} sigma)")
+    if abs(pct - 0.003) < 1e-12:
+        shifts = (ru_2gev, rd_2gev, ru_thr, rd_thr)
+        bases = (base[0][1], base[1][1], base[0][1], base[1][1])
+        sigmas = (sru, srd, sru, srd)
+        check("comparator: both 0.3% residual proxies stay under 1 sigma",
+              all(abs(v - b) / s < 1.0 for v, b, s in zip(shifts, bases, sigmas)),
+              "bounds the separately named active-flavour and threshold residuals")
 
 
 print()
@@ -562,7 +582,7 @@ _canon = [mu for mu in (2.0, 4.18, 10.0, 91.1876, 162.5, 1000.0)
 _all_up = all(mu >= _starts[k] for mu in _canon for k in _starts)
 check("comparator: at mu >= m_t every sector member runs UPWARD only",
       _all_up,
-      "so each is a light/active flavour at every threshold it crosses")
+      "all land on one nf=6 surface; finite threshold matching remains the D5 residual")
 
 # nf segmentation of the canonical mu = 1000 GeV row
 _thr = (PARS['mc'], PARS['mb'], PARS['mt'])

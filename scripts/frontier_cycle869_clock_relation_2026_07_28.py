@@ -661,6 +661,18 @@ def verify_witness(x_profile, y_profile, witness):
     member = witness["member"]
     x = x_profile["ticks"]
     y = y_profile["ticks"]
+    if member == "F2A":
+        # The tick-affine member DECLARES a positive rational slope with
+        # a != 1 (a = 1 is constant-offset territory) on equal-length
+        # cadences of at least three events; a witness outside that box is
+        # malformed and must fail closed, whatever it rebuilds.
+        if witness["a_den"] == 0 or witness["b_den"] == 0:
+            return False
+        slope = Fraction(witness["a_num"], witness["a_den"])
+        if slope <= 0 or slope == 1:
+            return False
+        if len(x) != len(y) or len(x) < 3:
+            return False
     if member == "F2B" and (witness["s"] < 1 or witness["r"] < 0):
         return False
     if member == "F3":
@@ -756,14 +768,17 @@ def family_controls(sample_profiles):
         thinned = cadence_profile(base[1::3])
         found = relate(source, thinned)
         checks["F2B_positive"] = bool(
-            found and found["member"] in ("F2B", "F3")
+            found and found["member"] == "F2B"
+            and found["s"] == 3 and found["r"] == 1
             and verify_witness(source, thinned, found)
         )
 
         lagged = cadence_profile(tuple(tick + 11 for tick in base[3:]))
         found = relate(source, lagged)
         checks["F3_positive"] = bool(
-            found and verify_witness(source, lagged, found)
+            found and found["member"] == "F3"
+            and found["L"] == 3 and found["d"] == 11
+            and verify_witness(source, lagged, found)
         )
 
         # Windowed-offset positive: shift X far enough that its final event is
@@ -954,6 +969,59 @@ def family_controls(sample_profiles):
         and all(any(label in row for row in rows) for label in required)
     )
     return rows, passed
+
+
+def verifier_regression_probes():
+    """Adversarial malformed-witness probes: every witness below violates its
+    member's declared definition and ``verify_witness`` must REFUSE it.
+
+    The first two are the review's concrete break cases (a window-shrunk
+    windowed-offset witness and a unit-slope tick-affine witness); the rest
+    pin the remaining fail-closed guards (non-positive slope, zero index
+    step, overlap floor, coverage floor, period mismatch).  These gate the
+    verifier itself: a verifier that accepts any of them is broken, whatever
+    the corpus says.
+    """
+    probes = {}
+    tiny_x = cadence_profile((0, 1))
+    tiny_y = cadence_profile((1, 2, 100))
+    probes["F1W_window_shrunk_witness_refused"] = not verify_witness(
+        tiny_x, tiny_y, {"member": "F1W", "c": 1, "window": [1, 2]}
+    )
+    three_x = cadence_profile((0, 1, 2))
+    three_y = cadence_profile((1, 2, 3))
+    probes["F2A_unit_slope_witness_refused"] = not verify_witness(
+        three_x, three_y,
+        {"member": "F2A", "a_num": 1, "a_den": 1, "b_num": 1, "b_den": 1},
+    )
+    probes["F2A_nonpositive_slope_witness_refused"] = not verify_witness(
+        three_x, three_y,
+        {"member": "F2A", "a_num": -1, "a_den": 1, "b_num": 3, "b_den": 1},
+    )
+    ramp = cadence_profile(tuple(range(0, 40, 2)))
+    probes["F2B_zero_step_witness_refused"] = not verify_witness(
+        ramp, ramp, {"member": "F2B", "s": 0, "r": 0}
+    )
+    short_run = cadence_profile(tuple(tick + 5 for tick in ramp["ticks"][:4]))
+    probes["F3_below_overlap_floor_refused"] = not verify_witness(
+        ramp, short_run, {"member": "F3", "L": 0, "d": 5, "overlap": 4}
+    )
+    wide_x = cadence_profile(tuple(range(0, 200, 2)))
+    slim_y = cadence_profile(tuple(range(1, 41, 2)))
+    # The first eight events DO rebuild exactly; only the declared 1/2
+    # coverage floor may refuse this witness, so the floor is what is probed.
+    probes["F3P_below_coverage_floor_refused"] = not verify_witness(
+        wide_x, slim_y, {"member": "F3P", "L": 0, "d": 1, "overlap": 8}
+    )
+    periodic = cadence_profile((3, 27) + tuple(
+        100 + 50 * repeat + residue
+        for repeat in range(40) for residue in (0, 7, 19)
+    ))
+    unit_ramp = cadence_profile(tuple(range(40)))
+    probes["F4_period_mismatch_witness_refused"] = not verify_witness(
+        periodic, unit_ramp, {"member": "F4", "P": 50, "c": 0}
+    )
+    return probes
 
 
 # ----------------------------------------------------------------------- report
@@ -1204,7 +1272,9 @@ def main():
                 control_pool.append((f"{short_key(keys[lane])}/pair{index}", profile))
         if len(control_pool) >= 6:
             break
-    control_rows, controls_pass = family_controls(control_pool)
+    control_rows, family_controls_pass = family_controls(control_pool)
+    verifier_probes = verifier_regression_probes()
+    controls_pass = family_controls_pass and all(verifier_probes.values())
 
     # ------------------------------------------------- within-key comparisons
     def is_saturated(profile):
@@ -1750,9 +1820,13 @@ def main():
                 "member's complete definition.  Negative controls require "
                 "refusal of a one-tick perturbation that manufactures two gap "
                 "values absent from the source, and refusal of a "
-                "triangular-index thinning.  These gate the tests themselves, "
-                "not the outcome."
+                "triangular-index thinning.  Verifier regression probes feed "
+                "known-malformed witnesses -- including the review's "
+                "window-shrunk windowed-offset and unit-slope tick-affine "
+                "break cases -- and require refusal by verify_witness.  These "
+                "gate the tests themselves, not the outcome."
             ),
+            "verifier_malformed_witness_probes": verifier_probes,
             "constructible_negative_controls": {
                 "one_tick_perturbation": sum(
                     1 for row in control_rows

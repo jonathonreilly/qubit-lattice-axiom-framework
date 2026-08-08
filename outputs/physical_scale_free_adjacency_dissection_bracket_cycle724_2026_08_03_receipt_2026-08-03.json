@@ -50,6 +50,13 @@
   "refined_region_floor": "80.0",
   "rejector_adjacency_cost": 3,
   "rejector_affine_rank": 4,
+  "review_loop": {
+    "date": "2026-08-08",
+    "disposition": "FIX_THEN_PROCEED",
+    "fix": "narrowed the physical framing to the supplied tick-extended simplex model, removed the 56-attainability claim, made the programme cross-check fail-closed, made determinants/ranks/ratios exact, and rewired the dependency edges to the actual premises",
+    "iteration": 1,
+    "reviewer": "Sol"
+  },
   "unimodular_cells": 2672,
   "unimodular_cost_lower_bound": 96,
   "unimodular_cost_profile": {

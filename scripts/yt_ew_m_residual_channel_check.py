@@ -282,6 +282,54 @@ def main() -> None:
     print("  Until (ii) is closed, (M) remains a structural input. This stretch")
     print("  attempt sharpens (M) to a single named question: which channel survives")
     print("  CMT improvement in the framework's specific EW current construction?")
+
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: matrices are written out literally and then contracted "
+        "entry against entry - the eight Gell-Mann matrices and the three Pauli "
+        "matrices are typed in component by component and halved to give the "
+        "generator bases, every channel weight is a trace of a matrix product "
+        "against one of those generators, and the Haar links are audited by norming "
+        "V^dagger V - I and by taking det(V) - 1 directly, both against a 1e-12 "
+        "bound."
+    )
+    print(
+        "  per_site: checked and not executed - what the file calls a link is a "
+        "single SU(N) matrix with no endpoints. No pair of sites is ever joined, no "
+        "path or plaquette is assembled, and the sampled matrices are independent "
+        "of one another, so nothing here distinguishes one position from another."
+    )
+    print(
+        "  per_mode: checked and not executed - no momentum variable, transform or "
+        "dispersion appears at any point. The only decomposition performed is by "
+        "group representation channel, and the generator index A that labels it "
+        "runs over an algebra basis rather than over modes of anything."
+    )
+    print(
+        "  per_block: the two-channel split is exactly what this file establishes, "
+        "and it establishes it cleanly - the Fierz identity Tr[M^dagger M] = |Tr "
+        "M|^2/N + 2*sum_A |Tr[M t^A]|^2 is checked to machine precision for N = 2 "
+        "and N = 3, the block dimensions are the exact integers 1 and N^2 - 1 "
+        "giving the fraction 8/9 at N = 3, a colour-diagonal matrix is shown to "
+        "place all its weight in the singlet block with the adjoint weight exactly "
+        "zero, and an overall rescaling is confirmed to carry the same square "
+        "factor into both blocks, which is precisely why it cannot separate them."
+    )
+    print(
+        "  lattice_wide: checked and not executed, and two things about this file "
+        "should not be mistaken for a whole-system result. First, the "
+        "adjoint-fraction claim is statistical rather than exact: it is a Monte "
+        "Carlo mean over seeded Haar draws compared with the closed form under a "
+        "fixed tolerance, so it estimates the fraction rather than deriving it. "
+        "Second, the runner's own residual section states that the framework's "
+        "lattice electroweak current is still implicit and needs an explicit "
+        "formula, so the object a whole-lattice statement would have to be about "
+        "does not yet exist in the file."
+    )
     if not all_ok:
         raise SystemExit(1)
 

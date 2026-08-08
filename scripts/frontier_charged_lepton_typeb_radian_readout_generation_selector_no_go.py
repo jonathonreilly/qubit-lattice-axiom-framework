@@ -426,6 +426,47 @@ def main() -> int:
         in note_text,
     )
 
+    section("G. N5 execution certificate")
+
+    print(
+        f"per_element: the granted premise is audited field by field on the "
+        f"frozen record — q = {scalar_data.q}, delta = {scalar_data.delta}, "
+        f"source_z = {scalar_data.source_z} and the unit law "
+        f"'{scalar_data.unit_law}' are each checked as exact values, and the "
+        f"record is interrogated directly for a generation_label or tau_label "
+        f"attribute, neither of which exists on it."
+    )
+    print(
+        "per_site: checked and not executed — unlike the source-domain audits "
+        "this cycle, no per-slot or per-site object is built here at all; the "
+        "premise granted is deliberately the strongest scalar one, and being a "
+        "scalar with no site or slot index is precisely the property that leaves "
+        "it invariant under every relabeling."
+    )
+    print(
+        f"per_mode: checked and not executed — nothing is decomposed into C3 "
+        f"characters or spectral modes anywhere in this runner; the only "
+        f"three-fold structures present are the k-offsets inside the carrier and "
+        f"the {len(alternate_unit_data)} unit-law variants of the same scalar "
+        f"record, and neither is a mode decomposition, so no mode-resolved "
+        f"quantity bears on the selector question."
+    )
+    print(
+        f"per_block: the label torsor is resolved into its based copies and that "
+        f"enumeration is the sharp content — the equivariant endpoint-to-label "
+        f"maps come out as exactly {based_maps}, one per basepoint choice, so the "
+        f"runner exhibits a three-fold block ambiguity that a physical basepoint "
+        f"law would have to break and that no scalar readout can."
+    )
+    print(
+        f"lattice_wide: checked and not executed as a lattice statement — no "
+        f"volume, lattice or limit occurs; at the whole-orbit level the scalar "
+        f"record is returned unchanged by all three shifts while the labels carry "
+        f"a free action, so the only nonempty invariant object over the entire "
+        f"orbit is {nonempty_invariant_subsets} and natural selectors from the "
+        f"quotient come out as {natural_selectors}."
+    )
+
     print()
     print("=" * 88)
     print("Summary")

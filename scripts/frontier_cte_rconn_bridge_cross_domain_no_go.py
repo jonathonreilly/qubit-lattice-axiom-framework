@@ -138,6 +138,48 @@ check("NUM_only_T_channel_qT_is_clean_5_6", abs(qT_live - 5 / 6) / (5 / 6) * 100
       f"q_T={qT_live:.6f}=5/6 (exact-support T-law, clean); E-channel/cross are genuine non-clean gravity-metric")
 
 print()
+print("--- N5 execution certificate ---")
+print(
+    f"per_element: the l=2 representation matrices are assembled entry by entry "
+    f"rather than quoted from tables — for each of the {len(O)} proper "
+    f"octahedral rotations the (a, b) component is computed as the Frobenius "
+    f"pairing of basis tensor B_a with R B_b R^T over the {len(B)} orthonormal "
+    f"symmetric traceless matrices, and the traces of those explicit matrices "
+    f"are what feed the character sums below."
+)
+print(
+    "per_site: checked and not executed — no lattice of sites is built and no "
+    "field is placed on one; the cubic structure enters purely as the point "
+    "group acting at a single location, and both gamma_T2 and gamma_E are "
+    "center readouts, so no site-resolved response is computed or claimed "
+    "anywhere in this verifier."
+)
+print(
+    f"per_mode: the spatial side is resolved into its cubic modes and that is "
+    f"the load-bearing step — the character inner product against the trivial "
+    f"representation returns {m_triv:.3f}, so no O-singlet mode is present, "
+    f"while <chi, chi>/|O| returns {norm2:.3f}, pinning the 5-dimensional l=2 "
+    f"multiplet to exactly two modes of dimension 2 and 3, and c_TE is by "
+    f"construction the ratio across that E/T2 mode pair."
+)
+print(
+    f"per_block: the color side is a block-dimension count, not a response — "
+    f"R_conn = (N_c^2 - 1)/N_c^2 = {Rconn:.4f} is the fraction of the fiber "
+    f"algebra occupied by the adjoint block, 8 of the 9 dimensions at N_c = 3, "
+    f"and holding that block fraction beside the mode ratio above is precisely "
+    f"the category mismatch this runner certifies."
+)
+print(
+    f"lattice_wide: checked and not executed — no volume, ensemble or "
+    f"thermodynamic limit is taken; the only global comparison made is between "
+    f"two pure numbers, the genuine gravity-metric c_TE = {cTE_live:.6f} and the "
+    f"nearest rational -8/9, differing by "
+    f"{abs(cTE_live + 8 / 9) / (8 / 9) * 100:.3f} percent, with q_T = "
+    f"{qT_live:.6f} the one clean channel, and those enter as comparator facts "
+    f"rather than as anything computed over a lattice."
+)
+
+print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("VERDICT: the c_TE=-R_conn spatial-tensor<->color bridge is a CROSS-DOMAIN identification, not "
       "a typed equality. c_TE is a ratio across the cubic E(2)/T2(3) pieces of the SPLIT SO(3) l=2 "

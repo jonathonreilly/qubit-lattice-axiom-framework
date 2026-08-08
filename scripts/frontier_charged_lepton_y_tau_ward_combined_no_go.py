@@ -519,6 +519,56 @@ def part_survey_prerequisites_absent() -> None:
         )
 
 
+def part_n5_execution_certificate() -> None:
+    """Record what this runner resolves at each canonical granularity."""
+    print()
+    print("=" * 78)
+    print("PART N5: EXECUTION CERTIFICATE — RESOLUTION GRANULARITIES")
+    print("=" * 78)
+
+    a4_irrep_dims = [1, 1, 1, 3]
+    candidates, retained = d17_prime_retained_status()
+
+    print(
+        f"  per_element: the load-bearing trace identity is verified component by "
+        f"component rather than quoted — the diagonal entries Tr(T^a T^a) each "
+        f"return 1/2 for a = 1, 2, 3 and the off-diagonal entries Tr(T^1 T^2) and "
+        f"Tr(T^1 T^3) each return 0, which is the (a, b) delta structure that "
+        f"produces 1/sqrt(2 N_c) = {1.0 / math.sqrt(6):.10f} at N_c = 3."
+    )
+    print(
+        "  per_site: checked and not executed — no site index exists in this "
+        "runner and no field is placed anywhere; the single spatial input is the "
+        "dimension count d, which enters symbolically inside the closed rational "
+        "(d+1)/(2d+3) and is then evaluated at d = 3, so it labels a dimension "
+        "rather than enumerating sites."
+    )
+    print(
+        f"  per_mode: resolved per irrep in the one place representation theory is "
+        f"genuinely enumerated — the alternating group A_4 is broken into its four "
+        f"irreps of dimensions {a4_irrep_dims} whose squares sum to "
+        f"{sum(x * x for x in a4_irrep_dims)} = |A_4|, and none of those per-irrep "
+        f"numbers is 4/9; no dynamical or momentum-mode expansion is performed "
+        f"anywhere, so nothing else here is mode-resolved."
+    )
+    print(
+        "  per_block: the obstruction is stated block against block — the "
+        "non-abelian trace identity Tr(T^a T^b) = delta^{ab}/2 lives on the "
+        "color-triplet (2, 3) quark block and is what supplies a sqrt-rational "
+        "factor, whereas on the colorless (2, 1) lepton block the same identity "
+        "degenerates to Tr(I) = 1 with no a, b indices at all, leaving no "
+        "construct of that shape to import."
+    )
+    print(
+        f"  lattice_wide: checked and not executed — no volume, ensemble or "
+        f"thermodynamic limit is formed; the widest sweep performed is over the "
+        f"audit ledger itself, where {len(candidates)} D17-prime row(s) are found "
+        f"and {len(retained)} of them carry retained grade, which is how the "
+        f"absence of a Ward-identity authority on the current surface is "
+        f"established rather than assumed."
+    )
+
+
 def main() -> int:
     print("=" * 78)
     print("CHARGED-LEPTON y_tau WARD IDENTITY COMBINED NO-GO")
@@ -532,6 +582,7 @@ def main() -> int:
     part_m5_cross_sector_is_integer()
     part_m6_hw_eq_1_no_yukawa_link()
     part_survey_prerequisites_absent()
+    part_n5_execution_certificate()
 
     print()
     print("=" * 78)

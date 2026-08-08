@@ -169,6 +169,49 @@ def main() -> int:
     )
 
     print()
+    print("D. N5 execution certificate")
+    print("-" * 72)
+    print(
+        f"per_element: the three components of the generation vectors are formed "
+        f"one label at a time and then compared — the Casimir vector comes out "
+        f"{tuple(str(v) for v in casimirs.values())} for (e, mu, tau) and the "
+        f"radiative Yukawa vector comes out identical to eighteen decimal places "
+        f"at {y_rad:.18f} in every component, so no component carries information "
+        f"that distinguishes it from the other two."
+    )
+    print(
+        "per_site: checked and not executed — no lattice, link or site variable "
+        "is constructed anywhere in this firewall; the inputs are electroweak "
+        "vertex charge assignments and two retained constants, so there is no "
+        "spatial index against which a site-resolved claim could be stated, and "
+        "none is made."
+    )
+    print(
+        "per_mode: checked and not executed — the one-loop content enters only as "
+        "the closed factor 1/(4 pi) and no propagator, loop momentum or mode sum "
+        "is evaluated here; the runner instead records that the diagrammatic lane "
+        "still cites its loop integral from an external quadrature surface, which "
+        "is why no mode-resolved statement is available to this firewall."
+    )
+    print(
+        f"per_block: the charge data is resolved by electroweak multiplet block — "
+        f"the left-handed doublet block contributes 2 * T(T+1) * 1/2 = 3/4 with "
+        f"T = 1/2, the hypercharge pairing of the doublet with the right-handed "
+        f"singlet contributes Y_L Y_R / 2 = 1/4, and those two blocks sum to "
+        f"exactly {charged_lepton_casimir()}, which is the whole reason the "
+        f"result carries no generation index."
+    )
+    print(
+        f"lattice_wide: checked and not executed — there is no volume, lattice or "
+        f"thermodynamic limit in this lane; the only whole-system statement made "
+        f"is that one universal radiative scale is applied to all three "
+        f"generations at once, giving {predicted_mass_mev:.6f} MeV against "
+        f"comparator ratios {tuple(round(ratios[g.label], 4) for g in GENERATIONS)} "
+        f"for (e, mu, tau), which shows a single universal number cannot be the "
+        f"hierarchy and is recorded as comparator evidence only."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

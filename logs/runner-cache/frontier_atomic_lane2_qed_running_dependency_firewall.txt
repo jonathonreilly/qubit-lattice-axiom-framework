@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_lane2_qed_running_dependency_firewall.py
-runner_sha256: 70a1ad5c02fa2cedcf0a91110a3523c41253401dd13020aeb55514f29bd82615
+runner_sha256: 6709471f19198d63d00e24e96d794889915a0a0bd51319e424e8da21474c5b2c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 
@@ -68,6 +68,15 @@ Part 5: forbidden-import role check
   [PASS] note marks PDG R-ratio comparator role explicitly
   [PASS] note marks Rydberg comparator role explicitly
   [PASS] note states no atomic observable is used to tune a framework parameter
+
+----------------------------------------------------------------------------------------
+N5 execution certificate — what this runner resolves at each granularity
+----------------------------------------------------------------------------------------
+  per_element: checked — the vacuum-polarization sum is resolved one charged fermion at a time, with Delta alpha_e = 0.01743, Delta alpha_mu = 0.00918, Delta alpha_tau = 0.00481 from the leptonic loop and Delta alpha_c = 0.00710, Delta alpha_b = 0.00116 from the perturbative heavy-quark loop, so each named loop element carries its own retained-mass dependency rather than a lumped total.
+  per_site: checked and not executed — this firewall lives entirely in scale space, its only running index being mu evaluated at the single point M_Z = 91187.6 MeV; no lattice is instantiated and no site-indexed quantity exists here, so there is nothing for a site-resolved statement to range over.
+  per_mode: checked and not executed — the mode-resolved object would be the hadronic spectral density R(s) under the dispersion integral over s' from 4 m_pi^2 upward, and refusing to evaluate that integral is exactly sub-residual R-Had-NP; the runner instead carries the single comparator number Delta alpha_had^(5) = 0.02766, which is a scaling import and not a mode decomposition.
+  per_block: checked — the decomposition is resolved block by block in the three named sub-residuals, R-Lep summing to 0.03142, R-Q-Heavy contributing the perturbative c+b tail 0.00826 bounded above by the full hadronic block, and R-Had-NP left open; Part 4 then walks the lane-closure blocks Lane 6, Lane 6 + Lane 3, and Lane 6 + Lane 3 + Lane 1 and reports the coverage flags of each sub-residual separately at every stage.
+  lattice_wide: checked and not executed — no framework lattice, volume, or thermodynamic limit enters this runner at any point; the only aggregate it forms is the leading-order flavour sum Delta alpha_total_LO = 0.05908 at one scale, and the global-level assertion it certifies is a dependency-chain statement about Lanes 1, 3, and 6 rather than any extensive lattice quantity.
 
 ----------------------------------------------------------------------------------------
 PASS=20 FAIL=0

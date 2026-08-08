@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_chiral_body_diagonal_source.py
-runner_sha256: 8ce9e331b9ab07a3b0be913414da59b84e47d37679802e24226cd8ccb26410b0
+runner_sha256: 8cd9d812b06d570af1d7827b3f1f597755a738ad45f16721800276089b02edf2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 [PASS] Gamma_chi eigenvalues {+1,-1,-1}  :: eigs=[np.float64(-1.0), np.float64(-1.0), np.float64(1.0)]
@@ -39,9 +39,9 @@ status: ok
   diagonal [ 1 -1  1]: singlet_comp=0.5774, doublet_part=[ 0.6667 -1.3333  0.6667], |h|=1.6330
   diagonal [-1  1  1]: singlet_comp=0.5774, doublet_part=[-1.3333  0.6667  0.6667], |h|=1.6330
   -- anticommuting test for H built from each off-diagonal's doublet part --
-     d=[ 1  1 -1]: ||{H,Gamma}||=4.892e-16 (anticommutes=True)
-     d=[ 1 -1  1]: ||{H,Gamma}||=4.649e-16 (anticommutes=True)
-     d=[-1  1  1]: ||{H,Gamma}||=3.706e-16 (anticommutes=True)
+     d=[ 1  1 -1]: ||{H,Gamma}||=4.895e-16 (anticommutes=True)
+     d=[ 1 -1  1]: ||{H,Gamma}||=4.562e-16 (anticommutes=True)
+     d=[-1  1  1]: ||{H,Gamma}||=4.041e-16 (anticommutes=True)
 [PASS] each off-body-diagonal's doublet part h gives an anticommuting H  :: so a SINGLE chosen off-diagonal WOULD source the chiral op
 
   -- C3 orbit structure of the 3 off-diagonals --
@@ -95,11 +95,11 @@ status: ok
 [PASS] a real-diagonal anisotropy can NEVER anticommute with Gamma_chi (needs off-diagonal singlet<->doublet mixing)
 [PASS] J_cs = (C - C^2)/sqrt3 equals the normalized staggered double-shift operator  :: the genuine KS staggered hop on the triplet IS the native complex structure J_cs (up to sign)
 [PASS] J_cs is C3-equivariant ([J_cs, C]=0)
-[PASS] J_cs COMMUTES with Gamma_chi (block-count route stays on the C3-equivariant side)  :: ||[J_cs,Gamma]||=4.4240e-17
+[PASS] J_cs COMMUTES with Gamma_chi (block-count route stays on the C3-equivariant side)  :: ||[J_cs,Gamma]||=5.4183e-17
 [PASS] J_cs is the nonscalar antisymmetric complex structure, not a scalar doublet mass block  :: doublet block=
 [[-0. -1.]
  [ 1.  0.]]
-[PASS] J_cs eigenvalues {0, +i, -i} (singlet real, doublet one complex line)  :: eigs=[ 0.+1.j  0.-1.j -0.+0.j]
+[PASS] J_cs eigenvalues {0, +i, -i} (singlet real, doublet one complex line)  :: eigs=[0.+1.j 0.-1.j 0.+0.j]
 [PASS] CONCLUSION: chiral/anticommuting route (needs off-C3 import) is DISTINCT from the native C3-equivariant J_cs block-count route — the native object reaches Q=2/3 via a reality-structure MEASURE choice, not via an anticommuting operator
 [PASS] Reynolds-average over C3 of ANY symmetric seed -> isotropic doublet block (no h)  :: doublet block of C3-average=
 [[-0.908874 -0.      ]
@@ -107,6 +107,15 @@ status: ok
 [PASS] FORCED: the singlet axis (1,1,1) is native (cube body-diagonal = triplet singlet)
 [PASS] NOT FORCED: the doublet h is C3-orbit-valued; native C3-symmetry leaves it isotropic
 [PASS] POSIT FLAG: selecting a single off-diagonal / axis-ordering to fix h breaks C3 = an import
+
+========================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================
+per_element: the operator dictionary is confirmed entry by entry, not by appeal — P S_mu P^T comes back as the 3x3 zero matrix for all three axes, P (S_y S_z + S_z S_x + S_x S_y) P^T reproduces J - I position by position, Gamma_chi squares to I_3, and the staggered hop matches R^T - R and R^2 - R element for element.
+per_site: the cube is built one corner at a time — all 8 corners of the unit cell are enumerated as 3-bit strings under the Qubit baseline C^2 per site, each bit-flip S_mu is assembled by toggling axis mu at every corner, and the Kogut-Susskind phase eta_mu is evaluated corner by corner from the bits of the axes earlier in the chosen ordering; the 3 weight-one corners are then projected out as the generation triplet.
+per_mode: the triplet is split into its C3 modes and each is tracked separately — Gamma_chi carries eigenvalues +1 on the (1,1,1) singlet mode and -1 twice on the doublet plane, the anticommuting family is found to be exactly 2-dimensional with every member sending the singlet mode wholly into the doublet, and the native complex structure J_cs is checked to have eigenvalues 0 on the singlet and a conjugate imaginary pair on the doublet.
+per_block: the decisive computation is the 2x2 doublet block — every native symmetric object is projected onto the plane orthogonal to (1,1,1) and its block is found degenerate, a C3 Reynolds average of a seed operator returns an isotropic block, the constraint system on the symmetric basis has rank 6 of 6 so the C3-equivariant anticommuting block is empty, and all 6 axis orderings leave 0 anticommuting staggered operators.
+lattice_wide: checked and not executed — the lattice here is one unit cell, the 8 corners of (Z_2)^3, and no extended Z^3 volume, no periodic sum over cells and no thermodynamic limit is ever formed; the question asked is whether a single cell's geometry sources h, and the answer that the three off-body-diagonals form one C3 orbit is a within-cell fact that no volume limit would change.
 
 ========================================================================
 SCORECARD: PASS=38 FAIL=0

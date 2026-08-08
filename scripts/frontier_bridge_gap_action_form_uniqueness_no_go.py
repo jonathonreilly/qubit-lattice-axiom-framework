@@ -136,6 +136,50 @@ def main() -> int:
 
     print()
     print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 78)
+    print(
+        f"per_element: the one granularity this verifier actually evaluates is a "
+        f"single plaquette element at V=1, where the Wilson candidate returns "
+        f"{WILSON_SINGLE_PLAQ:.10f} and the heat-kernel candidate returns "
+        f"exp(-2/3) = {HK_SINGLE_PLAQ:.10f}, a separation of "
+        f"{HK_SINGLE_PLAQ - WILSON_SINGLE_PLAQ:.10f} that already exhibits the "
+        f"finite-beta ambiguity on one lattice face without any further "
+        f"structure being built."
+    )
+    print(
+        "per_site: checked and not executed — the Z^3 substrate and the per-site "
+        "dimension-two premise are handled here only as enumerated entries of the "
+        "accepted-premise stack whose presence in the note is verified as text; "
+        "no site variable and no link variable is ever instantiated, so this "
+        "runner computes nothing that a site index could label."
+    )
+    print(
+        "per_mode: checked and not executed — the mode-resolved object would be "
+        "the character expansion P_t(U) = sum_lambda d_lambda exp(-t C_2(lambda)/2) "
+        "chi_lambda(U), and the runner never sums that series over irreps; it "
+        "uses the retained fundamental Casimir C_2(1,0) = 4/3 at t = 1 to "
+        "reproduce the single closed number exp(-2/3) instead."
+    )
+    print(
+        f"per_block: checked and not executed — no lattice blocking, RG step, or "
+        f"block-diagonal decomposition of any action appears; each of the three "
+        f"candidates is handled as one whole functional and the only splitting "
+        f"performed is by order in the lattice spacing, where parameter matching "
+        f"puts beta_W = {BETA_WILSON:.1f}, t_HK = {T_HEAT_KERNEL:.1f} and "
+        f"beta_M = {BETA_MANTON:.1f} on the same continuum leading term."
+    )
+    print(
+        "lattice_wide: checked and not executed — every number here is a V=1 "
+        "single-plaquette evaluation, with no volume, no ensemble average and no "
+        "thermodynamic limit taken; the corresponding lattice-wide quantity, the "
+        "thermodynamic heat-kernel plaquette expectation at beta = 6, is listed "
+        "by the note itself as a named open obstruction that this no-go does not "
+        "close."
+    )
+
+    print()
+    print("=" * 78)
     print("SUMMARY")
     print("=" * 78)
     print(f"TOTAL: PASS={gate.pass_count}, FAIL={gate.fail_count}")

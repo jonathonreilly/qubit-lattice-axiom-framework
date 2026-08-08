@@ -611,6 +611,48 @@ check(
 
 
 # ============================================================================
+section("N5 execution certificate")
+# ============================================================================
+
+print(
+    "  per_element: individual Hopf-algebra elements are evaluated rather than "
+    "described — the counit is applied to L_1, L_2, L_3 and to the unit, the "
+    "antipode is unwound recursively to S(L_2) = -L_2 + L_1^2 and "
+    "S(L_3) = -L_3 + 2 L_1 L_2 - L_1^3, and the Rota-Baxter identity is tested "
+    "on two explicit Laurent elements built from 1/epsilon and 1/epsilon^2."
+)
+print(
+    "  per_site: checked and not executed — no lattice of sites is constructed "
+    "at any point; the canonical surface enters only through the three frozen "
+    "conventions a = 1, g_bare^2 = 1 and beta = 6, which are global normalizations "
+    "rather than site data, and their fixedness is itself obstruction O2 since "
+    "it leaves no continuous parameter to project against."
+)
+print(
+    f"  per_mode: the taste content is tracked value by value down the staircase "
+    f"— n_taste runs from 16 to 1 with each value supplying its own "
+    f"b_3 = (33 - 2 n_taste)/3, the ultraviolet end at n_taste = 16 sitting "
+    f"marginal at b_3 = {b3_UV} while a single taste beyond it, n_taste = 17, "
+    f"already gives b_3 = {b3_17} and loses asymptotic freedom."
+)
+print(
+    f"  per_block: the rungs are resolved as ladder trees and counted — depths "
+    f"L_1 through L_{n_max} are covered to match the 16-fold composition, the "
+    f"coproduct of L_n is verified to carry exactly n + 1 terms at n = 1, 2, 3, 4 "
+    f"so branching never appears, |Delta(L_16)| comes out {len(delta_L_16)} from "
+    f"15 inner cuts plus two trivial terms, and the rung-by-rung beta "
+    f"coefficients accumulate to {b3_sum_rational}."
+)
+print(
+    f"  lattice_wide: checked and not executed — no volume, no continuum limit "
+    f"and no infinite-depth limit is taken; the one aggregate formed is the "
+    f"cumulative one-loop parameter {cumulative_1loop:.4f} set against "
+    f"1/g_s^2(M_Pl) = {inv_g2_MPl:.4f}, and that comparison is a statement about "
+    f"a fixed canonical surface rather than about any extensive lattice quantity."
+)
+
+
+# ============================================================================
 section("Summary and outcome")
 # ============================================================================
 

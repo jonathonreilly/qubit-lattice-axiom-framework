@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_op_local_source_selected_line_selector_no_go.py
-runner_sha256: ad2ec31f422c6c90d13fa77eaeebff226b687cf9b95748550ee3e09c2b4a3d54
+runner_sha256: 143a09329276076bf18387114d7146ecc0be71e9b3f35a9dbf262cfd5b36874f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 
@@ -78,6 +78,15 @@ F. Verdict
 ========================================================================================
 PASS: OP-local source plus selected-line support is not a generation selector
 PASS: mass retirement remains open
+
+========================================================================================
+G. N5 execution certificate
+========================================================================================
+per_element: the source matrices are compared entry by entry in exact rationals — is_scalar_identity inspects all nine positions of J = 11/7 I before granting C3-fixity, the nonuniform candidate differs from its conjugate C J C^T at specific entries, and the isotype projectors satisfy P_+ + P_perp = I_3 position by position with no floating-point step anywhere in this part.
+per_site: this is where the granted premise bites — a strict-onsite scalar source is the diagonal J = diag(j_1, j_2, j_3) carrying one independent value per site of the generation orbit, C3-fixity forces j_1 = j_2 = j_3 = 11/7, and the runner exhibits the contrast case diag(11/7, 11/7, 5/3) failing that condition.
+per_mode: the two C3 isotype channels are projected separately and that is what erases the Q-side coordinate — the trivial channel returns K_+ = 11/7 and the complementary channel returns K_perp = 11/7, so the reduced trace-zero coordinate is z = 0 and the criterion carrier gives Q = 2/3, while a nonzero z on that same carrier would move Q away from 2/3.
+per_block: the three cyclic copies of the selected-line orbit are each evaluated in full — every rotation returns Q = 2/3, the unordered heavy/middle/light profile is identical across copies at (0.79314606, 0.19340397, 0.01344997), and the heaviest slot lands at (0, 2, 1) across the three copies, so no copy is distinguished by anything the runner can compute.
+lattice_wide: checked and not executed as a lattice statement — no volume, no extended lattice and no thermodynamic limit appears here; the widest object exhausted is the three-element generation orbit itself, where enumerating all label subsets leaves [frozenset({0, 1, 2})] as the only nonempty C3-invariant one, a whole-orbit fact that is precisely why no single label is selectable.
 
 ========================================================================================
 Summary

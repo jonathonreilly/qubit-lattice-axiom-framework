@@ -85,6 +85,44 @@ def main() -> int:
     check("alternating-sign convention preserves the offending determinant", alt_minor == minor)
     check("scope guard: beta=6 value is not asserted", True)
 
+    section("N5 execution certificate")
+    print(
+        f"per_element: the three Hankel entries are pinned individually as exact "
+        f"rationals before any determinant is formed, d_5 = {D5} = 4/18^5, "
+        f"d_6 = {D6} = 7/(3*18^5) and d_7 = {D7} = 5/(9*18^5), and the off-diagonal "
+        f"entry is the single shared d_6, so the element-level content is that no "
+        f"floating-point rounding stands between the coefficients and the sign."
+    )
+    print(
+        "per_site: checked and not executed — the runner never instantiates a "
+        "lattice; the d_n arrive as three finished connected coefficients of the "
+        "plaquette expansion Delta(beta) = sum_{n>=5} d_n beta^n, already summed "
+        "over sites upstream in the beta6 coefficient lane, so no site-resolved "
+        "quantity exists here to be certified."
+    )
+    print(
+        "per_mode: checked and not executed — the mode-resolved object would be the "
+        "density of a positive measure mu on the real axis whose moments are the "
+        "d_n, that is the spectral modes of the real-axis continuation; the runner "
+        "constructs no such decomposition because its entire result is that no mu "
+        "exists, the necessary Hamburger condition already failing."
+    )
+    print(
+        f"per_block: the test is one principal 2 by 2 block of the infinite Hankel "
+        f"matrix, det [[d_5, d_6], [d_6, d_7]] = {minor} < 0, and that same block is "
+        f"then re-examined under two sign-preserving reparametrizations, the "
+        f"geometric integer rescaling m_5 = {int(m5)}, m_6 = {int(m6)}, "
+        f"m_7 = {int(m7)} giving {integer_minor}, and the alternating-sign "
+        f"convention giving back {alt_minor}."
+    )
+    print(
+        "lattice_wide: checked and not executed — no volume, no thermodynamic "
+        "limit, and no lattice observable is evaluated at any point, and the note "
+        "forbids the corresponding global reading: the foreclosure covers only the "
+        "positive-measure real-axis continuation family, asserting nothing about "
+        "P(6), about beta=6 closure, or about non-Stieltjes continuations."
+    )
+
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     print("Verdict: the displayed coefficient window is not Hamburger/Stieltjes.")

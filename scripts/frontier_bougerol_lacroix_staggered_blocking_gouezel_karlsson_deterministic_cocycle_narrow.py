@@ -451,6 +451,55 @@ def main() -> int:
         "identity does not select N=16",
     )
 
+    # ------------------------------------------------------------------
+    # N5 execution certificate
+    # ------------------------------------------------------------------
+    print("=" * 76)
+    print("N5 EXECUTION CERTIFICATE — RESOLUTION GRANULARITIES")
+    print("=" * 76)
+    print(
+        "per_element: the admitted carrier's operators are 1-by-1, so each T_k "
+        "has a single matrix element and the runner resolves exactly that one "
+        f"entry — symbolically it confirms the operator norm of [[alpha]] is "
+        f"|alpha| for every positive alpha, and numerically that entry is fixed "
+        f"to alpha_LM = {float(ALPHA_LM):.15f} by the carrier definition "
+        "T_k(x) = alpha_LM x, which is precisely why the non-tautology gate is "
+        "recorded as failing."
+    )
+    print(
+        "per_site: checked and not executed — nothing in this runner carries a "
+        "spatial index; the only index set built is Omega = {0, ..., 15} of "
+        "blocking-step labels with the shift T(k) = (k+1) mod 16 permuting those "
+        "labels, and no lattice, link, or site observable is instantiated, so a "
+        "site-resolved statement would have no domain to range over."
+    )
+    print(
+        "per_mode: checked and not executed — the runner establishes that the "
+        "admitted 1-dimensional scalar carrier supplies exactly one eigenvalue "
+        "per T_k, so there is no second Lyapunov exponent and the spectral gap "
+        "lambda_1 - lambda_2 is undefined; a mode-resolved quantity cannot be "
+        "computed until a higher-rank substrate-canonical carrier is supplied, "
+        "which obstruction G3 says is not available."
+    )
+    print(
+        f"per_block: the 16 staircase rungs are the resolved granularity — the "
+        f"uniform weights 1/{STEPS} over Omega sum exactly to 1, the cyclic shift "
+        f"orbit covers all {STEPS} rungs, the rung-by-rung product gives "
+        f"||Pi_16||_op = alpha_LM^{STEPS} ~= {float(pi_16_norm):.6e} with "
+        f"time-average A = {float(A_lyapunov):.6f} equal to log(alpha_LM), and "
+        f"the rung count itself is shown not to be selected by re-running the "
+        f"identity at N = {', '.join(str(n) for n in counter_step_values)}."
+    )
+    print(
+        "lattice_wide: checked and not executed — no volume, no thermodynamic "
+        "limit, and no N -> infinity limit is taken anywhere, and that refusal is "
+        "the content of obstruction G4: every cited MET-type theorem concludes "
+        "about lim (1/N) log ||Pi_N|| while this staircase is frozen at N = 16, "
+        f"so the only global numbers the runner forms are the finite-surface "
+        f"marginal lambda_marginal ~= {float(lambda_marginal):.4f} and its gap "
+        f"{float(gap):.4f} to alpha_LM."
+    )
+
     print("=" * 76)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 76)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle923_exactness_residual_2026_07_28.py
-runner_sha256: 893b05b523d8af1aa072a91ac9855cfe5a15ca87a5170724210c09cabaa97f12
+runner_sha256: 7023a18806445014fdacd0a393ac78677d0d3eb59b1747dbb44cc5871667e059
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -11,7 +11,7 @@ THE EXACTNESS RESIDUAL: geometry and dynamics of the distinguished point (primar
 Conditional algebra/rate result over SUPPLIED maps; narrowed at review iteration 1 (2026-08-08).
 ============================================================================================
 FIREWALL: nothing below derives, forces or prefers r = 1/2 as any lane's setting.
-PDG values are a labeled comparator only and feed no derivation (proved mechanically by tooth T5).
+PDG values are a labeled comparator only and feed no derivation (tooth T5 mutation-tests the isolation harness).
 
 --------------------------------------------------------------------------------------------
 S0 -- provenance pins (sha256 + git blob sha1) for sources and inherited artifacts
@@ -103,7 +103,7 @@ S1 -- RESTRICTION GATES: source values reproduced value-for-value (source runner
 [PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] r=1/2 HS equipartition 3a^2 = 6|b|^2 | published=3.0 recomputed=3.0 tol=1e-15
 
 --------------------------------------------------------------------------------------------
-S2 -- Q1: reconciling the separatrix fact and the attractor fact
+THE RECONCILIATION: the separatrix fact and the attractor fact are one inverse pair (section S2; question alias Q1)
 --------------------------------------------------------------------------------------------
 [PASS] [S2-Q1] R1: g = f^{-1} exactly on (0,10] -- g(f(r))=r AND f(g(r))=r | max|g(f(r))-r|=0.000e+00 max|f(g(r))-r|=1.776e-15
 [PASS] [S2-Q1] R1-provenance: this identity is NOT new here -- it is published in the durability note's erasure-honesty item (2026-06-11). What is new is using it to dissolve the S6 tension. | durability note carries the inverse identity
@@ -123,7 +123,7 @@ S2 -- Q1: reconciling the separatrix fact and the attractor fact
 Q1 VERDICT: CONSISTENT -- the two source facts are not in tension; no inconsistency between source notes was found
 
 --------------------------------------------------------------------------------------------
-S3 -- Q2: what exactness does the geometry buy (rates and bounds, every claim a number)
+THE EXACTNESS VERDICT: what exactness the geometry buys -- rates and bounds, every claim a number (section S3; question alias Q2)
 --------------------------------------------------------------------------------------------
 [PASS] [S3-Q2] linearization under f: f'(0)=0 (superstable, QUADRATIC), f'(1/2)=2 (repelling), r=1 not fixed
 [PASS] [S3-Q2] linearization under g: g'(1/2)=1/2 (contracting), g'(0)=+inf (repelling), r=1 not fixed
@@ -268,7 +268,7 @@ S5 -- FIREWALL check (mechanical)   [PLANTED-VIOLATION RUN -- failures below are
 [PLANT-PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
 [PASS] [S6-teeth] T3 FIRED: a planted UNCONDITIONAL law-level selector (designates {1/2}, no supplied element) makes the S5 firewall check FAIL | clean_run=True planted_run=False
 [PASS] [S6-teeth] T4 FIRED: the restriction gate hard-fails a planted wrong published value (f'(1/2)=3 instead of 2) | |3 - 2| = 1 exceeds the 1e-15 gate by 15 orders
-[PASS] [S6-teeth] T5 FIRED: COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. This guards the payload route against a future edit that leaks comparator values into it; it is NOT a whole-runner dependency trace, and it covers only quantities routed through derived_payload | derived payload identical under the poisoned comparator
+[PASS] [S6-teeth] T5 FIRED: COMPARATOR ISOLATION, FUNCTION-LEVEL MUTATION TEST: the real derived payload is bit-identical under a NaN-poisoned comparator, AND a deliberately leaky mutant builder (same payload plus one copied comparator field) DIFFERS under the same poisoning -- the poison-and-compare harness exercises the dependency route and would catch a real leak; scope: quantities routed through derived_payload | real payload identical=True; leaky mutant detected under poisoning=True
 [PASS] [S6-teeth] T6 FIRED: a planted 1e-4 offset in the inverse identity is caught by the S2-R1 tolerance of 1e-12 | the planted offset exceeds the gate tolerance by 8 orders of magnitude
 [PASS] [S6-teeth] T7 FIRED: a planted anti-Lyapunov claim ('the reverse map decreases S2') is refuted at r=0.9 | S2(g(0.9))=0.682466 > S2(0.9)=0.651757
 [PASS] [S6-teeth] T8 FIRED: DETERMINISM: two independent builds of the derived payload are byte-identical | sha256=55500ff5a0dd576844ec4bd42a991e28..
@@ -277,7 +277,7 @@ S5 -- FIREWALL check (mechanical)   [PLANTED-VIOLATION RUN -- failures below are
 [PASS] [S6-teeth] T11 FIRED: r=1 is not a fixed point of either supplied map (f(1)=2, g(1)=0.707..) -- the load-bearing r1_attracting=False entries in the candidate-sweep table are themselves falsifiable and here they fire | f(1)=2.0, g(1)=0.707107
 
 --------------------------------------------------------------------------------------------
-S7 -- comparator (LABELED; feeds no derivation; tooth T5 proves the isolation)
+THE COMPARATOR: labeled, feeds no derivation; tooth T5 mutation-tests the isolation harness (section S7)
 --------------------------------------------------------------------------------------------
   PDG masses (MeV, verbatim from the reduction runner): {'m_e': 0.51099895, 'm_mu': 105.6583755, 'm_tau': 1776.93}
   Q_pdg  = 0.6666644634145001
@@ -291,7 +291,7 @@ S7 -- comparator (LABELED; feeds no derivation; tooth T5 proves the isolation)
   entropy deficit of the comparator below S2max=ln2: 5.461110e-12 nats
 
 --------------------------------------------------------------------------------------------
-S8 -- Q3: the residual priced (price only; nothing recommended for adoption)
+THE RESIDUAL PRICED AND SPLIT: price only; nothing recommended for adoption (section S8; question alias Q3)
 --------------------------------------------------------------------------------------------
 [PASS] [S8-priced] (a) DERIVES is non-empty | 11 items
 [PASS] [S8-priced] (b) item 1 names a discriminating measurement AND what it would decide | Which arrow is operative on the charged-lepton lane (sharpening f 
@@ -308,7 +308,7 @@ S8 -- Q3: the residual priced (price only; nothing recommended for adoption)
 [PASS] [S8-priced] (c) item 4 FIREWALL: its minimal sentence does not designate a unique r | A registered pattern is retained only if it is unchanged under re-
 [PASS] [S8-priced] (c) item 5 carries a minimal sentence and a named existing surface | surface=realized_state_registration
 [PASS] [S8-priced] (c) item 5 FIREWALL: its minimal sentence does not designate a unique r | The realized history's initial registration on the charged-lepton 
-[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 9526 chars against 7 verbs
+[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 9667 chars against 7 verbs
 
   (a) DERIVES: 11   (b) MEASURABLE-BUT-UNMEASURED: 4   (c) UNDERIVABLE: 5
 
@@ -338,7 +338,7 @@ TEETH: 12/12 FIRED
 ============================================================================================
 receipt: outputs/exactness_residual_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: 55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346
-runtime_sec: 0.305
+runtime_sec: 0.519
 
 DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as conditional on
 which SUPPLIED map is operative (neither is derived); nothing is recommended for adoption.

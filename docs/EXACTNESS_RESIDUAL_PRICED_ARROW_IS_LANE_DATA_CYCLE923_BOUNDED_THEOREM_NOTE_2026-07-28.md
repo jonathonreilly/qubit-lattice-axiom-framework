@@ -55,6 +55,21 @@ supplies no measure; a measure would be a separate new premise, not
 a contradiction). The exact preimage law replaces the former "halves
 every step" exactness claim, whose dyadic form is a linearization.
 
+Iteration 2 (confirmation round, Sol, 2026-08-08): three residues
+repaired. The one remaining emitted field that stated the dyadic
+law as an unqualified equality now carries the exact closed form
+with the dyadic form labeled a linearization; the three runner
+headlines that led with bare section/question codes now lead with
+scientific names (codes demoted to trailing parenthetical aliases);
+and the comparator-isolation tooth was upgraded from a
+passes-by-construction check to a function-level mutation test (a
+deliberately leaky payload mutant must be detected by the same
+poison-and-compare harness). The candidate is listed in the
+unaudited live-science section of the canonical harness index, and
+the unresolved follow-ups (open bridges, landing-time
+citation-graph manifest, independent audit) are routed through the
+active review queue.
+
 Runners:
 
 - [`frontier_cycle923_exactness_residual_2026_07_28.py`](../scripts/frontier_cycle923_exactness_residual_2026_07_28.py)

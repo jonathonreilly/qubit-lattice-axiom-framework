@@ -311,3 +311,19 @@ Record each new finding as one bullet:
   packets and planning backlogs were moved out of the front-door `docs/`
   surface into [`docs/work_history/repo/review_feedback/`](../work_history/repo/review_feedback/README.md)
   and [`docs/work_history/repo/backlog/`](../work_history/repo/backlog/README.md)
+- `2026-08-08-cycle923-exactness-residual-post-review-followups`
+  Scope: the exactness-residual distinguished-point geometry note
+  (`EXACTNESS_RESIDUAL_PRICED_ARROW_IS_LANE_DATA_CYCLE923_BOUNDED_THEOREM_NOTE_2026-07-28.md`)
+  and its primary/independent runner pair, after review-loop iterations 1-2
+  (FIX_THEN_PROCEED, Sol, 2026-08-08).
+  Finding: the conditional two-sector algebra/rate core and the narrow
+  fixed-point alternation lemma are bounded candidates (listed unaudited in
+  the canonical harness index). The formerly claimed broad arrow-universality
+  no-go and its lane-data consequence were withdrawn and must not be cited.
+  Still open: the physical-arrow / time-reversal bridge (support-only), the
+  lane-conditional operative-map sentence (priced, unadopted), the two-scale
+  and other-lane measurements, and the comparator-digit convention dependence
+  (cite the gate, not the digit). At landing the citation-graph manifest must
+  be regenerated and staged (the sole allowed generated audit-data change).
+  Disposition: `science-needed` for the open bridges; independent audit
+  required before any effective grade; no broad negative claim ships.

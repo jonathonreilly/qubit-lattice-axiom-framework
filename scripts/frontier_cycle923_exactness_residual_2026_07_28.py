@@ -10,7 +10,7 @@ exactly there" without resolving it.
 This runner measures THE GEOMETRY AND DYNAMICS OF THE DISTINGUISHED POINT,
 conditional on the two SUPPLIED maps f(r) = 2r^2 and g(r) = sqrt(r/2) and the
 supplied two-sector coarse-graining. It certifies a conditional algebra/rate
-result only. REVIEW RECORD (iteration 1, Sol, FIX_THEN_PROCEED, 2026-08-08):
+result only. REVIEW RECORD (iterations 1-2, Sol, 2026-08-08):
 the formerly claimed broad "arrow-universality no-go" and its consequence
 ("any exactness account must be lane-conditional; the arrow is lane data")
 are WITHDRAWN from claim scope; what remains is the narrow fixed-point
@@ -30,8 +30,9 @@ content. A planted law-level selector MUST make S5 fail (tooth T3).
 ==================================================================================
 
 PDG values appear ONLY as a labeled comparator (the reduction note's S4.4
-boundary) and feed no derivation step. Tooth T5 proves the isolation
-mechanically by recomputing every derived result with the comparator poisoned.
+boundary) and feed no derivation step. Tooth T5 mutation-tests the isolation
+harness: the derived payload must be invariant under comparator poisoning
+while a deliberately leaky mutant builder must be caught by the same harness.
 
 Sections
   S0  provenance pins (sha256 + git blob) for every source note / artifact
@@ -413,13 +414,13 @@ def s1_restriction_gates() -> None:
 
 
 # --------------------------------------------------------------------------
-# S2 -- Q1 : THE RECONCILIATION
+# THE RECONCILIATION (section S2; question alias Q1)
 # --------------------------------------------------------------------------
 Q1: dict = {}
 
 
 def s2_reconciliation() -> None:
-    banner("S2 -- Q1: reconciling the separatrix fact and the attractor fact")
+    banner("THE RECONCILIATION: the separatrix fact and the attractor fact are one inverse pair (section S2; question alias Q1)")
 
     wfg = max(abs(g_reverse(f_sharpen(i / 400.0)) - i / 400.0) for i in range(1, 4001))
     wgf = max(abs(f_sharpen(g_reverse(i / 400.0)) - i / 400.0) for i in range(1, 4001))
@@ -518,7 +519,7 @@ def s2_reconciliation() -> None:
 
 
 # --------------------------------------------------------------------------
-# S3 -- Q2
+# THE EXACTNESS VERDICT (section S3; question alias Q2)
 # --------------------------------------------------------------------------
 Q2: dict = {}
 EPS_GRID = [1e-1, 1e-2, 1e-3, 1e-4, 1e-5, 3e-6, 1e-6]
@@ -548,7 +549,7 @@ def steps_to_exit_under_f(eps0: float, eps1: float) -> tuple[int, int]:
 
 
 def s3_exactness() -> None:
-    banner("S3 -- Q2: what exactness does the geometry buy (rates and bounds, every claim a number)")
+    banner("THE EXACTNESS VERDICT: what exactness the geometry buys -- rates and bounds, every claim a number (section S3; question alias Q2)")
 
     lin = {}
     for r0 in (0.0, 0.5, 1.0):
@@ -1051,14 +1052,27 @@ def s6_teeth() -> None:
     tooth("T4", "the restriction gate hard-fails a planted wrong published value (f'(1/2)=3 instead of 2)",
           abs(3.0 - 4.0 * 0.5) > 1e-15, "|3 - 2| = 1 exceeds the 1e-15 gate by 15 orders")
 
+    poisoned_cmp = {"poisoned": True, "r_pdg": float("nan"), "abs_dev": float("nan"), "Q_pdg": float("nan")}
     clean = derived_payload(COMPARATOR)
-    poison = derived_payload({"poisoned": True, "r_pdg": float("nan"), "abs_dev": float("nan"), "Q_pdg": float("nan")})
-    same = json.dumps(clean, sort_keys=True) == json.dumps(poison, sort_keys=True)
-    tooth("T5", "COMPARATOR ISOLATION (structural guard, honestly scoped): the derived-payload BUILDER ignores its "
-          "comparator argument BY CONSTRUCTION, and poisoning the comparator to NaN leaves the payload bit-identical. "
-          "This guards the payload route against a future edit that leaks comparator values into it; it is NOT a "
-          "whole-runner dependency trace, and it covers only quantities routed through derived_payload",
-          same, "derived payload identical under the poisoned comparator" if same else "LEAK: a derived result depends on the comparator")
+    poison = derived_payload(poisoned_cmp)
+    same_real = json.dumps(clean, sort_keys=True) == json.dumps(poison, sort_keys=True)
+
+    def leaky_payload_mutant(comparator: dict) -> dict:
+        """Deliberate MUTANT for tooth T5: identical to derived_payload except that it
+        consumes one comparator field. The isolation harness must catch it."""
+        out = derived_payload(comparator)
+        out["MUTANT_leaked_comparator_Q"] = comparator.get("Q_pdg")
+        return out
+
+    mut_clean = json.dumps(leaky_payload_mutant(COMPARATOR), sort_keys=True)
+    mut_poison = json.dumps(leaky_payload_mutant(poisoned_cmp), sort_keys=True)
+    mutant_detected = mut_clean != mut_poison
+    tooth("T5", "COMPARATOR ISOLATION, FUNCTION-LEVEL MUTATION TEST: the real derived payload is bit-identical under "
+          "a NaN-poisoned comparator, AND a deliberately leaky mutant builder (same payload plus one copied "
+          "comparator field) DIFFERS under the same poisoning -- the poison-and-compare harness exercises the "
+          "dependency route and would catch a real leak; scope: quantities routed through derived_payload",
+          same_real and mutant_detected,
+          f"real payload identical={same_real}; leaky mutant detected under poisoning={mutant_detected}")
 
     tooth("T6", "a planted 1e-4 offset in the inverse identity is caught by the S2-R1 tolerance of 1e-12",
           1e-4 > 1e-12, "the planted offset exceeds the gate tolerance by 8 orders of magnitude")
@@ -1097,7 +1111,7 @@ def s6_teeth() -> None:
 # --------------------------------------------------------------------------
 # PDG charged-lepton masses (MeV), taken verbatim from the reduction note's own
 # runner S4.4 block. LABELED COMPARATOR ONLY -- no derivation step consumes
-# these; tooth T5 proves the isolation mechanically.
+# these; tooth T5 mutation-tests the isolation harness.
 PDG_MASSES_MEV = {"m_e": 0.51099895, "m_mu": 105.6583755, "m_tau": 1776.93}
 
 
@@ -1118,7 +1132,8 @@ COMPARATOR = build_comparator()
 
 
 def derived_payload(comparator: dict) -> dict:
-    """Everything DERIVED. Must not depend on `comparator` -- tooth T5 enforces it."""
+    """Everything DERIVED. Must not depend on `comparator` -- tooth T5 mutation-tests
+    the enforcing harness (a leaky mutant of this builder must be caught)."""
     return {
         "f_prime_at_0": 0.0, "f_prime_at_half": 4.0 * 0.5, "g_prime_at_half": 1.0 / (2.0 * math.sqrt(1.0)),
         "multiplier_product": (4.0 * 0.5) * (1.0 / (2.0 * math.sqrt(1.0))),
@@ -1133,7 +1148,7 @@ def derived_payload(comparator: dict) -> dict:
 
 
 def s7_comparator() -> None:
-    banner("S7 -- comparator (LABELED; feeds no derivation; tooth T5 proves the isolation)")
+    banner("THE COMPARATOR: labeled, feeds no derivation; tooth T5 mutation-tests the isolation harness (section S7)")
     print(f"  PDG masses (MeV, verbatim from the reduction runner): {PDG_MASSES_MEV}")
     print(f"  Q_pdg  = {COMPARATOR['Q_pdg']!r}")
     print(f"  r_pdg  = {COMPARATOR['r_pdg_via_lever']!r}")
@@ -1151,7 +1166,7 @@ def s7_comparator() -> None:
 
 
 # --------------------------------------------------------------------------
-# S8 -- Q3
+# THE RESIDUAL PRICED AND SPLIT (section S8; question alias Q3)
 # --------------------------------------------------------------------------
 PRICED: dict = {}
 ALLOWED_SURFACES = {"realized_state_registration", "lane_conditional_derivation_route",
@@ -1161,7 +1176,7 @@ RECOMMENDATION_VERBS = ["should adopt", "we recommend", "must be adopted", "prop
 
 
 def s8_priced() -> None:
-    banner("S8 -- Q3: the residual priced (price only; nothing recommended for adoption)")
+    banner("THE RESIDUAL PRICED AND SPLIT: price only; nothing recommended for adoption (section S8; question alias Q3)")
 
     a_items = [
         "Q1: the separatrix fact and the attractor fact are the SAME fixed point read under the supplied map and its functional (composition) inverse. g = f^{-1} exactly; multipliers reciprocal (2 and 1/2, product exactly 1, by the inverse-function rule under its C^1 local-diffeomorphism / nonzero-derivative hypotheses). No physical time-reversal reading is derived.",
@@ -1186,7 +1201,7 @@ def s8_priced() -> None:
          "what_it_would_decide": "Lane-universal versus lane-conditional concentration. Comparable exactness on more than one lane would, WITHIN the alternation lemma's monotone-map hypothesis class, force the lemma's named escape, i.e. a map with additional fixed points and therefore additional distinguished cells the dial does not register -- a falsifiable prediction conditional on that class. Generic offsets on the other lanes would keep the residual local to the charged-lepton lane."},
         {"item": "N, the number of re-registration events in the lane's realized history.",
          "discriminating_measurement": "Count record-formation events on the lane in the realized history. This is a countable feature of the state, not of the laws, so it is registration-side data rather than a derivation target.",
-         "what_it_would_decide": "Whether the g-branch has had enough steps (it needs N >= 17 to reach 3e-6 from the far end of the dial) and how severe the f-branch tuning is: |delta_0| = 3e-6 * 2^{-N}, i.e. 2.9e-9 at N=10, 2.7e-21 at N=50, 2.4e-36 at N=100."},
+         "what_it_would_decide": "Whether the g-branch has had enough steps (it needs N >= 17 to reach 3e-6 from the far end of the dial) and how severe the f-branch tuning is: exactly |delta_0^+| = (1/2)[(1+6e-6)^(2^-N) - 1], i.e. 2.93e-9 at N=10, 2.66e-21 at N=50, 2.37e-36 at N=100 (the dyadic 3e-6 * 2^{-N} is the small-window LINEARIZATION of this closed form, accurate only to a relative 3e-6)."},
         {"item": "Which partition the physical record basis implements (2 isotype sectors versus 3 eigenmodes).",
          "discriminating_measurement": "The einselection / predictability-sieve question the sources already name: whether the commutant of the C3-invariant interaction Hamiltonian decoheres onto the singlet/doublet split or onto the 3 eigenmodes.",
          "what_it_would_decide": "WHICH functional's maximum is operative, hence which registered setting has an extremality story at all (S2 -> 1/2, S_spec -> 0, S3 -> 1). This is the sources' own open object and it sits UPSTREAM of the arrow question: without it, S2 is one functional among three and its maximum carries no privileged standing."},
@@ -1264,7 +1279,7 @@ def main() -> int:
     print("Conditional algebra/rate result over SUPPLIED maps; narrowed at review iteration 1 (2026-08-08).")
     print("=" * 92)
     print("FIREWALL: nothing below derives, forces or prefers r = 1/2 as any lane's setting.")
-    print("PDG values are a labeled comparator only and feed no derivation (proved mechanically by tooth T5).")
+    print("PDG values are a labeled comparator only and feed no derivation (tooth T5 mutation-tests the isolation harness).")
 
     pin_all()
     s1_restriction_gates()
@@ -1306,16 +1321,24 @@ def main() -> int:
                         "entry/residence tables, the narrow fixed-point alternation lemma, and the priced residual "
                         "split. Physical-arrow readings are support-only; no broad no-go is claimed"),
         "review_loop": {
-            "iteration": 1, "disposition": "FIX_THEN_PROCEED", "reviewer": "Sol", "date": "2026-08-08",
-            "fix_summary": ("exact preimage law replaces the dyadic 'exact halving' claim (dyadic form relabeled a "
-                            "linearization); Table C computed from the closed form with underflow documented; the "
-                            "broad arrow-universality no-go narrowed to the fixed-point alternation lemma and its "
-                            "lane-data consequence withdrawn; physical time-reversal reading demoted to an open "
-                            "bridge; measure 'contradiction' reworded to out-of-scope-premise; reciprocal-multiplier "
-                            "rule stated with C^1 diffeomorphism hypotheses; gradient systems relabeled as distinct "
-                            "metric choices; literal-True checks replaced or honestly scoped; retained-anchor grading "
-                            "removed (provenance-only citations); stale MINIMAL_AXIOMS pin removed from the input "
-                            "closure"),
+            "iteration": 2, "disposition": "FIX_THEN_PROCEED (iteration 1); confirmation fixes (iteration 2)",
+            "reviewer": "Sol", "date": "2026-08-08",
+            "fix_summary_iteration_1": (
+                "exact preimage law replaces the dyadic 'exact halving' claim (dyadic form relabeled a "
+                "linearization); Table C computed from the closed form with underflow documented; the "
+                "broad arrow-universality no-go narrowed to the fixed-point alternation lemma and its "
+                "lane-data consequence withdrawn; physical time-reversal reading demoted to an open "
+                "bridge; measure 'contradiction' reworded to out-of-scope-premise; reciprocal-multiplier "
+                "rule stated with C^1 diffeomorphism hypotheses; gradient systems relabeled as distinct "
+                "metric choices; literal-True checks replaced or honestly scoped; retained-anchor grading "
+                "removed (provenance-only citations); stale MINIMAL_AXIOMS pin removed from the input closure"),
+            "fix_summary_iteration_2": (
+                "last unqualified '|delta_0| = 3e-6 * 2^-N' emitted field replaced by the exact closed form with "
+                "the dyadic form labeled a linearization; the three code-label-led runner headlines now lead with "
+                "scientific names (section/question codes demoted to trailing aliases); tooth T5 upgraded to a "
+                "function-level mutation test (a deliberately leaky payload mutant must be caught by the "
+                "poison-and-compare harness); candidate row added to the canonical harness index (unaudited) and "
+                "the unresolved follow-ups routed through the active review queue"),
         },
         "interpretation_firewall": (
             "Nothing in this runner derives, forces or prefers r = 1/2 as any lane's setting. r is a multi-lane dial "

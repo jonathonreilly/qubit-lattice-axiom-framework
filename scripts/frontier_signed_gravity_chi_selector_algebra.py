@@ -333,6 +333,59 @@ def main() -> None:
     print()
     print(f"FINAL_TAG: {tag}")
 
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: everything decisive is an 8x8 Frobenius norm taken over all "
+        "sixty-four entries - the Clifford surface is verified by norming Gamma_i^2 "
+        "- I8, each anticommutator {Gamma_i, Gamma_j}, each {epsilon, Gamma_i} and "
+        "epsilon^2 - I8 against the module tolerance EPS = 1e-12, and each "
+        "candidate is graded by norming its commutators with the generators and the "
+        "three projector sandwiches P_+ epsilon P_-, P_+ (epsilon - I8) P_+ and P_- "
+        "(epsilon + I8) P_-."
+    )
+    print(
+        "  per_site: checked and not executed - the eight dimensions are the "
+        "internal Kogut-Susskind taste cell attached to one point, written as three "
+        "Pauli tensor slots, and slots are not neighbouring locations. No hopping "
+        "between two cells is ever assembled: the kinetic term arrives already "
+        "Fourier-transformed as sum_i sin(k_i) Gamma_i, so no position index "
+        "survives into any computation here."
+    )
+    print(
+        "  per_mode: exercised, but only at four hand-picked momenta - the sample "
+        "Hamiltonian H(k) = sum_i sin(k_i) Gamma_i + (m + Phi) epsilon is "
+        "instantiated at exactly the four wave vectors (0.1, 0.2, 0.3), (0.4, 0.0, "
+        "-0.2), (0.7, -0.5, 0.25) and (1.1, 0.8, -0.6) with mass 0.3 and Phi 0.04, "
+        "and the reported leakage is the maximum over just those four. There is no "
+        "Brillouin-zone sweep, no dispersion relation and no statement attached to "
+        "an individual band."
+    )
+    print(
+        "  per_block: this is where the no-go is actually decided, and it is "
+        "decided over a complete enumeration - for each of the 63 nontrivial "
+        "three-qubit Pauli strings the branch projectors P_+/- = (I8 +- Q)/2 are "
+        "formed, every one of them splits the cell 4 and 4, and each is tested for "
+        "whether epsilon stays block diagonal and further whether epsilon acts as "
+        "+I on one branch and -I on the other. The exhaustive counts are the "
+        "result: 7 strings commute with the three kinetic generators, exactly 3 of "
+        "those also commute with epsilon (the sorted set IXY, XYI, XZY, whose "
+        "off-diagonal leakage is an exact structural zero), exactly 1 string pins "
+        "the scalar sign, and the intersection is empty, which is the whole content "
+        "of the tag printed at the end."
+    )
+    print(
+        "  lattice_wide: checked and not executed - nothing extended is built. The "
+        "scan lives entirely inside one 8-dimensional cell plus four momentum "
+        "samples, with no volume, no boundary condition, no thermodynamic limit and "
+        "no source density anywhere, and the runner labels its own reach accurately "
+        "when it calls the result a local Pauli-string scan rather than a global "
+        "statement."
+    )
+
 
 if __name__ == "__main__":
     main()

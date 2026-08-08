@@ -61,6 +61,76 @@ SIGMA_MNU_OSC_NO = 0.0586  # eV; minimum Sigma m_nu in NO from osc
 SIGMA_MNU_OSC_IO = 0.0991  # eV; minimum Sigma m_nu in IO from osc
 
 
+def n5_execution_certificate(
+    sigma_mnu_lower_no: float,
+    sigma_mnu_lower_io: float,
+    sigma_mnu_h2_route: float,
+) -> None:
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.
+    """
+    print()
+    print("=" * 78)
+    print("N5 execution certificate (print-only; adds no check and no counter)")
+    print("=" * 78)
+    print(
+        "per_element: checked and not executed -- this runner builds no matrix, no operator, and no "
+        "linear map of any kind. Every quantity it handles is a scalar: a cosmological density "
+        "parameter, a squared mass splitting, or a neutrino mass in eV. There is no matrix element "
+        "here to resolve and nothing in this file should be read as supplying one."
+    )
+    print(
+        "per_site: checked and not executed -- the subject is a spatially homogeneous cosmological "
+        "density budget, which carries no position index at all. No lattice, grid, coordinate, "
+        "neighbour relation, or site amplitude appears anywhere in the run, so no site-resolved "
+        "quantity exists for the file to report."
+    )
+    print(
+        "per_mode: resolved at the level of the three neutrino mass eigenstates -- route F3-alpha "
+        "assembles the Sigma m_nu floor eigenstate by eigenstate out of the two squared splittings, "
+        "taking m_2 + m_3 with m_1 set to zero for normal ordering and m_1 + m_2 with m_3 set to zero "
+        "for inverted ordering, then comparing each against its PDG comparator at a tolerance of "
+        "5.0e-3 eV. This per-eigenstate assembly is the only genuinely resolved computation here."
+    )
+    print(
+        "per_block: checked and not executed -- with no operator anywhere in the runner there is no "
+        "invariant subspace and no block decomposition available to exhibit. The single "
+        "decomposition that does appear is the additive scalar budget "
+        "Omega_nu h^2 = Omega_m,0 h^2 - Omega_DM h^2 - Omega_b h^2 used by route F3-gamma, which is a "
+        "three-term sum of numbers rather than a block structure, and it is reported as such."
+    )
+    print(
+        "lattice_wide: checked and not executed -- nothing in this runner scales with a system size, "
+        "because nothing in it lives on a lattice; the objects are density parameters and eV-scale "
+        "masses. The blocking reason is the note's own conclusion: no orthogonal F3 route supplies an "
+        "independent closed Sigma m_nu cross-bound on the current framework surface, so there is no "
+        "closed global quantity available for a lattice-wide statement to be made about."
+    )
+    print(
+        "Scope, reported plainly: this is predominantly an inventory runner. Fifteen of its twenty "
+        "checks are invoked with a hardcoded True and assert prose about route status rather than "
+        "evaluating anything, and only five evaluate a numeric comparison. Of those five, the "
+        "N_eff check compares the module constant N_EFF_RETAINED against the same 3.046 literal it "
+        "was defined with and therefore cannot fail. Resolution is claimed above only for the "
+        "per_mode assembly."
+    )
+    print(
+        f"Live figures at print time: normal-ordering floor {sigma_mnu_lower_no:.4f} eV and "
+        f"inverted-ordering floor {sigma_mnu_lower_io:.4f} eV, formed from the squared splittings "
+        f"7.42e-5 and 2.515e-3 eV^2; the F3-gamma alternative-admission value "
+        f"{sigma_mnu_h2_route:.4f} eV, formed as (0.143 - 0.120 - 0.0224) * 93.14. All inputs are "
+        "fixed decimal literals in the source and all three outputs are straight-line arithmetic "
+        "with no solver, recomputed here rather than copied from any earlier run."
+    )
+    print(
+        "Determinism: no RNG, optimizer, root-finding, grid scan, or Monte Carlo appears anywhere in "
+        "this runner. Execution is straight-line arithmetic over fixed decimal constants, and the "
+        "route table is emitted from an insertion-ordered dictionary of five named routes, so the "
+        "printed ordering is stable across runs."
+    )
+
+
 def main() -> int:
     print("=" * 78)
     print("LANE 4F (Sigma m_nu) — F3 STUCK FAN-OUT SYNTHESIS RUNNER")
@@ -301,6 +371,10 @@ def main() -> int:
         " Omega_DM via alt admission, OR (iii) Lane 5 h retention",
         True,
         "all three are research-level pivots beyond a single audit cycle",
+    )
+
+    n5_execution_certificate(
+        sigma_mnu_lower_NO, sigma_mnu_lower_IO, sigma_mnu_h2_route
     )
 
     print()

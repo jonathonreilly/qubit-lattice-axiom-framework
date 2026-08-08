@@ -132,6 +132,60 @@ rho_scaled = (lam * bE) / (lam * aE)
 check("GAUGE_carrier_rescale_leaves_rho_E_invariant", abs(rho0 - rho_scaled) < 1e-12,
       "carrier rescale leaves rho_E invariant (delta_A1=1/6 fixed)")
 
+def n5_execution_certificate():
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.
+    """
+    print()
+    print("N5 execution certificate (print-only; adds no check and no counter)")
+    print(
+        "per_element: resolved down to a single free matrix entry -- the readout "
+        "P_R = [[aE,0,bE,0],[0,aT,0,bT]] keeps its four structural zeros pinned and its T-row "
+        "granted, so the entire no-go concerns the one remaining entry bE through rho_E = bE/aE. "
+        "The carrier columns are written out component by component as well, with the exact "
+        "support-side observable delta_A1 = 1/6 sitting in the third component of E_center and the "
+        "fourth component of T_center, and the GAUGE check moves both aE and bE by a common factor "
+        "to show that ratio of two entries is what survives rescaling."
+    )
+    print(
+        "per_site: checked and not executed -- 'shell' and 'center' label two lumped carrier "
+        "coordinates per channel, not resolved lattice positions. The seven-site star those names "
+        "come from is never unpacked in this file, no site amplitude or neighbour relation is "
+        "constructed, and the Z^3 qubit grid enters none of the eight checks."
+    )
+    print(
+        "per_mode: resolved as an explicit two-channel split -- the E channel is row 0 of P_R and "
+        "the T channel is row 1, the T-side is granted at aT/aE = -2 with qT = 5/6 while the E-side "
+        "carries all the freedom, and the input that would actually close the gate is strictly "
+        "cross-mode: c_TE = -R_conn = -8/9 ties the two channels together and forces qE = 15/8, "
+        "hence rho_E = 21/4. Those are exact rationals and are quoted as such."
+    )
+    print(
+        "per_block: resolved as two decoupled row blocks -- the E block lives on carrier coordinates "
+        "0 and 2, the T block on coordinates 1 and 3, and because the two supports are disjoint the "
+        "Gram matrix P_R P_R^T comes out diagonal, so the E-norm and T-norm conditions never "
+        "constrain one another. That decoupling is precisely why granting the T-side still leaves "
+        "the E block with one unconstrained direction rather than none."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the whole argument sits inside one fixed "
+        "four-dimensional carrier with no volume, no box, and no site count that could be grown. "
+        "The missing global step is the note's own residual: selecting rho_E needs a shell-vs-center "
+        "distinguishing input, the gravity-metric response lane or the color bridge, and neither is "
+        "a lattice-extensive statement nor is either derived in this file."
+    )
+    print(
+        "Determinism: the scans are fixed grids, not sampling -- 6001 evenly spaced rho_E values "
+        "spanning [-12, 12] for the partial-isometry and positivity checks, 15 angles spanning "
+        "[-1.47, 1.47] radians for the O(2) direction sweep, and five named rho_E values "
+        "(-5, 0, 5.257, 5.25, 1) for idempotency, judged at tolerances 1e-9 and 1e-12. No random "
+        "numbers are drawn; this certificate names grid sizes, ranges and tolerances only and "
+        "interpolates no scan-derived quantity."
+    )
+
+
+n5_execution_certificate()
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("VERDICT: no supplied registration-style / positivity / idempotency condition fixes the "

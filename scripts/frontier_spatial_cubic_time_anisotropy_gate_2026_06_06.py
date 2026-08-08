@@ -171,6 +171,61 @@ def main() -> int:
           True,
           "add c_t=c_s / 4D hypercubic premise, or narrow to spatial cubic artifact power counting")
 
+    section("N5 execution certificate (print-only; adds no check and no counter)")
+    print(
+        "per_element: resolved as exact entry placements in the group representation -- each signed "
+        "permutation is built by writing one nonzero entry, plus or minus one, into a named row and "
+        "column, and the induced action on diagonal quadratic coefficients is derived by scanning "
+        "every (new_axis, old_axis) position and recording a 1 exactly where the underlying entry is "
+        "nonzero. The invariant dimension is then taken by stacking the rows of (R - I) for every "
+        "group element into a single exact rational matrix and computing its rank, so each entry of "
+        "each representation matrix enters that count on its own."
+    )
+    print(
+        "per_site: checked and not executed -- the Z^3 x Z_tau surface is named in the statement but "
+        "never instantiated. This runner works entirely with 4x4 matrices and four-component momentum "
+        "vectors; it builds no lattice, no coordinate, no neighbour relation, and no site amplitude, "
+        "so there is no site-resolved quantity available for it to report."
+    )
+    print(
+        "per_mode: resolved direction by direction on the four coordinate axes -- the carrier is the "
+        "four-dimensional space of diagonal quadratic coefficients with basis t^2, x^2, y^2, z^2, and "
+        "each axis is tracked separately through the induced representation, which is exactly what "
+        "lets the run see spatial operations moving the three space axes among themselves while "
+        "leaving the time axis fixed. The kinetic form is then evaluated at explicit integer momenta, "
+        "(1, 2, 3, 4) and (3, 1, 2, -2), with each component squared individually."
+    )
+    print(
+        "per_block: resolved as a two-block versus one-block invariant count, and this is the entire "
+        "no-go -- under the 48-element spatial group the invariant subspace of quadratic coefficients "
+        "has exact dimension 2, spanned separately by the time block t^2 and the spatial block "
+        "x^2+y^2+z^2, whereas under the 384-element four-dimensional hypercubic group it collapses to "
+        "dimension 1, spanned by the single block t^2+x^2+y^2+z^2. That surviving second block is "
+        "precisely the free ratio c_t/c_s in which the marginal anisotropy lives."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, volume, extent, or site sum is formed "
+        "anywhere in this runner, and no correlator or n-point function is computed. The blocking "
+        "reason is the one this gate exists to record: full SO(4) continuum covariance is exactly "
+        "what is not established here, and closing it requires an extra premise, either the Euclidean "
+        "kinetic normalization c_t = c_s or four-dimensional hypercubic symmetry, neither of which is "
+        "derived in this file."
+    )
+    print(
+        "Scope: seventeen of the eighteen checks evaluate an exact symbolic condition. One of them, "
+        "R3, is invoked with a hardcoded True and names the two salvage options in prose without "
+        "computing anything; resolution is claimed above only for the seventeen."
+    )
+    print(
+        "Determinism: sympy exact rational and radical arithmetic throughout, with no floating-point "
+        "tolerance anywhere -- ranks are exact, group invariance is tested by all-quantified equality "
+        "over every element of the enumerated group, and the single irrational used, sqrt(2)/2 in the "
+        "45-degree rotation, is carried symbolically rather than numerically. Both groups are "
+        "enumerated in the fixed deterministic order produced by permutations and product, and "
+        "because every test quantifies over the whole group that ordering cannot affect a verdict. "
+        "No RNG, optimizer, root-finding, grid scan, or Monte Carlo appears."
+    )
+
     section("Scorecard")
     print(f"PASS={PASS} FAIL={FAIL}")
     print(

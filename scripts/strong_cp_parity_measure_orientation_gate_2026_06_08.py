@@ -187,6 +187,68 @@ def main() -> int:
           omega_is_native_pseudoscalar and omega_det_odd,
           f"omega=i*I: {omega_is_native_pseudoscalar}; omega->det(R)omega for all 48 O_h: {omega_det_odd}")
 
+    # --- N5 execution certificate (print-only; adds no check and no counter) ---
+    print("\nN5 execution certificate (print-only; adds no check and no counter)")
+    print(
+        "per_element: resolved as explicit index-level construction and contraction -- each of the 48 "
+        "group elements is built by writing one signed entry per row, the Levi-Civita tensor is "
+        "filled position by position across all 27 index triples from the sign of "
+        "(j-i)(k-i)(k-j), and the charge slot is contracted as an explicit triple loop pairing the "
+        "entry F[0, i+1] against F[j+1, k+1]. The transform routine likewise writes blocks entry by "
+        "entry and re-imposes antisymmetry by setting the lower time-space column to the negation of "
+        "the upper row rather than assuming it."
+    )
+    print(
+        "per_site: exercised as a four-site field sum, and reported with its limits -- the run holds "
+        "one independent antisymmetric F per site for L = 4 sites, transforms each site's F "
+        "separately, and forms the global theta slot as the sum of the per-site charges. But these "
+        "sites carry no geometry whatsoever: there is no coordinate, no adjacency, and no neighbour "
+        "relation, the list is unordered in any physical sense, and no individual site is ever "
+        "distinguished or read out. Site resolution here is a bare independent-sum structure and "
+        "nothing stronger."
+    )
+    print(
+        "per_mode: resolved as the two chirality sectors -- the grading Gamma5 = Z tensor I_3 splits "
+        "the six-dimensional chirality-color carrier into its +1 and -1 eigenspaces, the projector "
+        "(I - Gamma5)/2 selects one of them explicitly, and the two candidate couplings are then "
+        "separated by whether they preserve that splitting: the color generator commutes with "
+        "Gamma5, so it acts within each chirality sector, while the chiral weak proxy does not and "
+        "therefore mixes them. No other operator in the file is resolved spectrally."
+    )
+    print(
+        "per_block: resolved as the time-space versus spatial-spatial blocking of the field strength, "
+        "and that blocking is the mechanism -- the transform rotates the spatial-spatial block by R "
+        "on both indices while the time-space block picks up a single factor of R as a vector, so "
+        "the epsilon contraction of one vector index against two tensor indices produces exactly one "
+        "net factor of det(R). The carrier is separately blocked as chirality tensor color, two by "
+        "three, which is what makes the vectorlike-color contrast expressible at all."
+    )
+    print(
+        "lattice_wide: exercised as a global sum with a det-even measure, at fixed finite size, and "
+        "with one half of the argument left unexecuted -- the theta slot summed over all four sites "
+        "flips sign under an improper element while the parity-even control sum of Tr(F F^T) stays "
+        "invariant, and the measure factor is confirmed det-even by |det R| = 1, so no cancelling "
+        "sign is available. Two honest limits: the site-relabeling half of the measure argument is "
+        "stated in a source comment but never executed, since the code transforms the fields without "
+        "ever permuting the site list, and only L = 4 is run with no size scan and no thermodynamic "
+        "limit."
+    )
+    print(
+        f"Live figure at print time: the Hermitian C_3 circulant built from the fixed literals 1.7, "
+        f"0.9 and 0.7 has determinant {detM.real:.6f} with imaginary part {abs(detM.imag):.3e} "
+        "against the 1e-9 reality tolerance. This value involves no random draw, so it is safe to "
+        "recompute; all sampled quantities are deliberately omitted from this certificate."
+    )
+    print(
+        "Determinism: the run draws from a single numpy default_rng seeded with 0, in a fixed order "
+        "-- 6 antisymmetric 4x4 draws for the P-oddness sweep, then 4 more for the field sum, then "
+        "20 SU(3) draws for the Wilson-action leg, then 1 further antisymmetric draw for the "
+        "proper-versus-improper split. Following the sampling rule this certificate names those draw "
+        "counts, the seed, the group size 48 with its 24/24 proper-improper split, and the "
+        "tolerances 1e-9 and 1e-12, and it interpolates no drawn value and consumes no random "
+        "numbers from that stream."
+    )
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     print(
         "VERDICT: the measure-cancellation objection is refuted: the lattice sum carries no Jacobian and\n"

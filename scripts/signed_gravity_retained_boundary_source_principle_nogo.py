@@ -163,6 +163,66 @@ def orientation_symmetry_readout() -> tuple[bool, bool]:
     return bool(positive_even), bool(signed_odd)
 
 
+def n5_execution_certificate() -> None:
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.  No scan-derived value is quoted;
+    grid size, range, tolerances and thresholds are named instead.
+    """
+    print()
+    print("=" * 104)
+    print("N5 execution certificate (print-only; adds no check and no counter)")
+    print("=" * 104)
+    print(
+        "per_element: resolved as single-entry moves on a diagonal boundary operator -- the "
+        "sector-crossing path is driven by rewriting exactly one entry, the [0,0] slot carrying the "
+        "unpaired level, while all ten remaining diagonal entries stay pinned at their model values. "
+        "The source side is decided component by component in the same spirit: each principle term "
+        "contributes its own two-component column, and every verdict is the residual between the "
+        "assembled column combination and the target components +1 and -1."
+    )
+    print(
+        "per_site: checked and not executed -- the boundary operator is a toy spectral model, an "
+        "eleven-by-eleven diagonal matrix of energy levels with no spatial index standing behind it, "
+        "and the source objects are two-component sector amplitudes. No coordinate, neighbour "
+        "relation, or site amplitude is built anywhere in the file, so there is no site-resolved "
+        "quantity available to resolve and none is claimed."
+    )
+    print(
+        "per_mode: resolved level by level -- the model carries eleven modes, one unpaired boundary "
+        "level sitting at plus or minus the gap 0.4 and five symmetric pairs at 0.4 + 0.35*(j+1) for "
+        "j from 0 through 4, whose positive and negative partners cancel out of eta by construction. "
+        "eta_delta sorts each level individually into positive, negative, or zero against "
+        "delta = 1e-9, so the invariant is assembled one mode at a time, and the gap recorded at "
+        "every scan point is the minimum absolute level, again a per-mode reading."
+    )
+    print(
+        "per_block: resolved as a paired-versus-unpaired spectral split, and separately as a "
+        "retained-versus-added partition of the source basis -- the ten paired levels form a block "
+        "contributing exactly nothing to eta while the single unpaired level is the entire eta "
+        "carrier, which is precisely why moving that one level suffices to cross sectors. On the "
+        "source side the six principle terms are partitioned three ways, into the retained block, "
+        "that block extended by the two gap terms, and the retained block adjoined to the "
+        "orientation-odd cross term, with least squares run separately on each partition."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, volume, box, or extent appears "
+        "anywhere in this runner, the largest object being that eleven-by-eleven diagonal matrix. "
+        "The blocking reason is the note's own finding: no retained boundary source principle is in "
+        "hand, so there is no global theorem here whose lattice-scale content could be exercised, "
+        "and this file asserts nothing about one."
+    )
+    print(
+        "Determinism: no RNG, optimizer, root-finding, or Monte Carlo is used. The single sweep is a "
+        "fixed grid of 9 evenly spaced values of t running from +1.0 down to -1.0, rescaling only the "
+        "carrier level. Following the scan rule, this certificate names that grid size and range "
+        "together with the tolerances delta = 1e-9 and TOL = 1e-10, the barrier regulator "
+        "epsilon = 1e-3, and the hard-gap threshold g_min = 0.1, and it interpolates none of the "
+        "scan-derived gap or barrier magnitudes. The sector labels along the path are exact integer "
+        "classifications: four +1 readings, a single 0 exactly at the crossing, then four -1 readings."
+    )
+
+
 def main() -> int:
     print("=" * 104)
     print("RETAINED BOUNDARY SOURCE PRINCIPLE NO-GO AUDIT")
@@ -236,6 +296,8 @@ def main() -> int:
         f"allowed_path={allowed}",
     )
     print()
+
+    n5_execution_certificate()
 
     print("INTERPRETATION")
     print("  Retained positive source + APS spectator + positive Wald carrier cannot")

@@ -292,6 +292,59 @@ def part6_hypothesis_comparisons() -> None:
         f"distinct = {transformed_values}",
     )
 
+def part7_n5_execution_certificate() -> None:
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.
+    """
+    print("\n" + "=" * 72)
+    print("PART 7: N5 execution certificate (print-only; adds no check and no counter)")
+    print("=" * 72)
+    print(
+        "per_element: resolved by construction over all nine matrix units -- the invariant projector "
+        "is assembled by pushing each elementary unit E_ij, for i and j in {0,1,2}, through all six "
+        "permutation operators and averaging, so every entry of End(C^3) is carried individually "
+        "rather than as an aggregate. The companion orbit count then classifies those same nine "
+        "entry labels under the S_3 action and returns exactly two classes, diagonal and "
+        "off-diagonal, which is the entry-level reason the invariant algebra comes out "
+        "two-dimensional."
+    )
+    print(
+        "per_site: checked and not executed -- the three basis labels are slots of a supplied "
+        "abstract permutation representation, and the source note states plainly that no physical "
+        "generation carrier is identified here. Absent a carrier there is no map from these labels "
+        "to positions on the qubit lattice, so no site amplitude exists for this file to resolve."
+    )
+    print(
+        "per_mode: resolved irrep by irrep and then eigenvalue by eigenvalue -- the character route "
+        "evaluates chi_V = (3, 1, 0) against all three S_3 irreps and returns multiplicities A_1 = 1, "
+        "A_2 = 0, E = 1, and the spectrum is separately read out as the exact two-value pattern "
+        "{alpha, alpha, alpha + beta} on four named (alpha, beta) pairs. Distinct-eigenvalue "
+        "cardinality is counted after rounding to ten decimals, twelve in the perturbation case."
+    )
+    print(
+        "per_block: resolved as the two-block split V = A_1 direct-sum E -- P_(A_1) = J_3/3 is "
+        "certified idempotent of rank one, its complement carries the two-dimensional E block, and "
+        "the commutant dimension is obtained twice by independent routes, the rank of the 9x9 "
+        "averaging projector and a direct generator-commutator linear solve, both returning two, "
+        "one free parameter per block. Part 4 repeats the construction after dropping to the Z_2 "
+        "subgroup {e, (12)} and returns dimension five, exhibiting the jump as a block-count effect."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no volume, extent, or scaling parameter appears "
+        "anywhere in this file; the carrier is a fixed C^3 throughout. The blocking reason is the "
+        "note's own open gate: the physical generation carrier, the physical S_3 action, and "
+        "pointwise invariance of the physical mass operator are all unestablished, so none of the "
+        "algebra proved here can be lifted to any lattice-scale statement."
+    )
+    print(
+        "Determinism: Part 3 draws alpha and beta from a single numpy default_rng seeded with 42 "
+        "over 100 iterations; every matrix rank is taken at tol=1e-10, and the Part 6 perturbation "
+        "scale is epsilon=1e-6. This certificate names those counts, seeds, and tolerances only, "
+        "consumes no random numbers, and quotes no drawn or solver-derived value."
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA")
@@ -302,6 +355,7 @@ def main() -> int:
     part4_residual_z2_dimension()
     part5_scoped_escape_routes()
     part6_hypothesis_comparisons()
+    part7_n5_execution_certificate()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)

@@ -91,6 +91,60 @@ def main():
         np.allclose(M_realsym.conj(), M_realsym) and not np.allclose(Mc.conj(), Mc),
         "current non-real-b Hermitian class needs the reflection-composed P relation"))
 
+    # --- N5 execution certificate (print-only; adds no check and no counter) ---
+    print("\nN5 execution certificate (print-only; adds no check and no counter)")
+    print(
+        "per_element: resolved as entrywise identities on explicit 3x3 matrices -- the cyclic "
+        "generator and the orientation-reversing transposition are written out slot by slot, the "
+        "tested density i(C - C^2) is compared against its own negation and against its P-conjugate "
+        "position by position, and the parity relation is certified at the level of which entries "
+        "move: conjugating the Hermitian circulant by P is verified to return the same matrix with "
+        "the coupling b replaced by its complex conjugate in the corresponding off-diagonal slots."
+    )
+    print(
+        "per_site: checked and not executed -- there is no lattice anywhere in this file. The "
+        "three-dimensional index is a generation label and the two-dimensional factor is an "
+        "acknowledged stand-in for a gauge sector, not a spatial direction; no coordinate, neighbour "
+        "relation, or site amplitude is constructed, so nothing site-resolved can be reported."
+    )
+    print(
+        "per_mode: checked and not executed -- no operator is diagonalized in this runner. The only "
+        "spectral quantity formed is arg det M, an aggregate over all three generations at once, a "
+        "single phase built from the product of eigenvalues rather than from any one of them, and "
+        "the anomaly bookkeeping consumes only the generation count n = 3 rather than a resolved "
+        "spectrum. The C_3 modes underlying the cyclic generator are never separated here."
+    )
+    print(
+        "per_block: resolved as a two-factor sector split -- the gauge-side reflection is lifted as "
+        "gauge tensor I_3 and the generation-side parity as I_2 tensor P, and the decisive check is "
+        "that the two commute while neither equals the identity, so the two antiunitary ingredients "
+        "act on disjoint tensor factors. That disjointness is precisely the content of the negative "
+        "result: the two reality conditions can be spliced side by side yet neither forces the "
+        "other, so the joint bridge leaves theta_bar unpinned."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no volume, extent, or extensive quantity appears "
+        "in this runner, and the gauge sector it does carry is an explicitly labelled "
+        "two-dimensional stand-in rather than a gauge field living on any lattice. The blocking "
+        "reason is the one the runner states about itself: the holomorphic and chiral generation "
+        "structure a global statement would need remains an open residual lead here, and is "
+        "explicitly not a theorem established by this file."
+    )
+    print(
+        "Live figures at print time, since determinant phases carry environment-dependent roundoff "
+        f"while the verdicts do not: the axial rotation at alpha = {alpha} shifts arg det M by "
+        f"{d_argdet:.9f} against the predicted n*alpha = {n * alpha:.9f}, and theta_bar moves from "
+        f"{theta_bar_before:.9f} to {theta_bar_after:.9f} under the paired shifts. Both comparisons "
+        "are taken modulo 2*pi at tolerance 1e-9; the generation count n = 3 is exact."
+    )
+    print(
+        "Determinism: no RNG, optimizer, root-finding, grid scan, Monte Carlo, or flow integration "
+        "appears. Every input is a fixed literal -- the diagonal weight 1.3, the real coupling 0.5, "
+        "the non-real coupling 0.5 + 0.4j, the axial angle 0.37, and theta_QCD = 1.1 -- and "
+        "execution is straight-line complex arithmetic over 3x3 and 6x6 matrices, judged by "
+        "elementwise closeness plus the one explicit 1e-9 phase tolerance."
+    )
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("FINDING: the tested joint-basis bridge does not force theta_bar to zero.")
     print("Gauge reflection and generation parity are sector-disjoint in this model;")

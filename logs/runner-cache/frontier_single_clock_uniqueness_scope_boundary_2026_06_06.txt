@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py
-runner_sha256: 4e4a9445893733ac790ef2bf0b1647892174ac0241cb43340d92988607706600
+runner_sha256: 903aedc03d8f4d822cef14e7b2faa746e0bd7763315e28aeb76b89f0be0f6d65
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 
@@ -46,6 +46,17 @@ No-second-clock wording needs extra premises
 [PASS] B3 finite Stone theorem permits multiple supplied commuting transfers
 [PASS] B4 excluding a second clock requires a separate axis/transfer uniqueness premise
        e.g. unique reflection-positive axis or no independent positive transfer
+
+========================================================================
+N5 execution certificate (print-only; adds no check and no counter)
+========================================================================
+per_element: resolved as exact symbolic entries with no tolerance anywhere -- every matrix is built by naming its diagonal entries as exact rationals, 1/2 and 1/3 for the first transfer and 1/5 and 1/7 for the second, the simplify helper is applied position by position through an (i,j) lambda, and the zero test walks every (i,j) slot and demands symbolic equality to 0 rather than smallness. Matrix equality here is therefore decided element by element in exact arithmetic, never by a norm or a threshold.
+per_site: checked and not executed -- there is no lattice in this runner at all. The carriers are one two-dimensional factor and its four-dimensional tensor square, whose indices are abstract basis labels rather than positions, and no coordinate, neighbour relation, or site amplitude is constructed anywhere, so nothing site-resolved exists here.
+per_mode: resolved one diagonal mode at a time -- the generator is assembled as diag(-log(T_ii)/tau) with the logarithm taken separately in each mode, the reconstruction diag(exp(-tau*H_ii)) inverts it mode by mode, and the evolution family diag(exp(-i*t*H_ii)) is written the same way. The rescaling result is a per-mode identity too: the tau=2 generator equals the tau=1 generator halved in every mode exactly, which is precisely what shows the transfer pins only the product tau*H and not the clock unit.
+per_block: resolved as two commuting tensor-factor blocks -- the middle section lifts one transfer as H_A tensor I and the other as I tensor H_B onto a four-dimensional carrier and then certifies that block structure directly: the lifted generators commute, the lifted transfers commute, the two groups are distinct, the product transfer carries exactly the summed generator, and each factor generator still commutes with that sum. The last of these is the decisive block fact, since it is what stops the product's Stone generator from absorbing the factor groups.
+lattice_wide: checked and not executed -- nothing in this runner carries an extent, a volume, or a size that could be varied, the largest object being a 4x4 diagonal matrix. The blocking reason is the scope boundary this note exists to record: excluding a second clock requires a separate axis or transfer uniqueness premise, and no such premise is supplied or derived here, so there is no framework-wide one-clock result for any lattice-scale statement to rest on.
+Scope: seventeen of the nineteen checks evaluate a symbolic condition. Two of them, N4 and B4, are invoked with a hardcoded True and state a scope conclusion in prose without computing anything; resolution is claimed above only for the seventeen.
+Determinism: this runner uses sympy exact rational and symbolic arithmetic end to end. There is no RNG, optimizer, root-finding, grid scan, Monte Carlo, or flow integration, and there is no floating-point tolerance anywhere in the file -- every comparison is exact symbolic equality, so no quantity in this certificate is interpolated from a sampled or converged value and none could differ between environments.
 
 ========================================================================
 Scorecard

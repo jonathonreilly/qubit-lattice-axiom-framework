@@ -55,6 +55,78 @@ def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
         print(f"    {detail}")
 
 
+def n5_execution_certificate(
+    base_oh, vec_oh, ten_oh, mix_oh, base_fr, vec_fr, ten_fr, mix_fr
+) -> None:
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.  Floating figures are interpolated
+    from this run's own probe results at print time.
+    """
+    print("\n" + "=" * 72)
+    print("N5 execution certificate (print-only; adds no check and no counter)")
+    print("=" * 72)
+    print(
+        "per_element: resolved as named components of the 4x4 Einstein tensor -- at each probe point "
+        "the reader takes |G_00| by itself, maximizes |G_0i| over the three mixed time-space entries, "
+        "then subtracts one third of the spatial trace before maximizing over the nine entries of the "
+        "traceless spatial part. The verdict therefore rests on which particular entries move rather "
+        "than on any single lumped scalar, and G itself is assembled entry by entry from central "
+        "differences of the ADM metric taken at the fixed step h = 0.04."
+    )
+    print(
+        "per_site: checked and not executed -- neither phi grid is ever read out site by site. The "
+        "15-cubed field reaches the checks through two collapsing routes only: one whole-boundary "
+        "quadratic form yielding a single scalar action, and trilinear interpolation evaluated at "
+        "three fixed spacetime points. No per-site amplitude, residual, or comparison is computed, "
+        "printed, or asserted anywhere in this runner."
+    )
+    print(
+        "per_mode: resolved as an explicit scalar/vector/tensor mode split -- the probes are driven "
+        "by two independent named modes, a vector shift entering the shift vector as "
+        "eps_vec*sin(omega t)*env*vector_mode(xyz) and a traceless shear entering the spatial metric "
+        "as eps_ten*cos(omega t)*env*tensor_mode(xyz), each switched on alone at amplitude 0.02 with "
+        "omega = 1.0 and then together in the mixed probe. The response is read back in the matching "
+        "channel: the vector mode lights G_0i, the shear mode lights the traceless spatial block, and "
+        "the mixed probe is required to light both at once on both grid classes."
+    )
+    print(
+        "per_block: resolved as a 3+1 block decomposition of the Einstein tensor -- the time-time "
+        "entry, the time-space row, and the spatial 3x3 block are separated, and that spatial block "
+        "is further split into its pure-trace and traceless parts. That split is precisely what the "
+        "no-go turns on: the branch currently fixes trace-type boundary data only, while the "
+        "traceless and mixed blocks are shown to move under probes that leave that data untouched."
+    )
+    print(
+        "lattice_wide: executed as a finite-N whole-grid quantity, with one caveat stated plainly -- "
+        "the scalar boundary functional is the Schur-complement action 0.5*f.(Lambda f) - j.f built "
+        "on the 15-cubed grid at cutoff radius 4.0, a genuinely lattice-wide object, and it is "
+        "evaluated on two distinct grids. Its constancy across the four probes is however true by "
+        "construction rather than measured: probe_family forms the scalar action from phi_grid alone "
+        "and never forwards eps_vec, eps_ten, or omega into it, so the four probes on a given grid "
+        "call one identical function on one identical argument. No grid-size scan is run and no "
+        "thermodynamic limit is taken."
+    )
+    print(
+        "Live figures at print time, since finite-difference and Schur values shift between "
+        f"environments while the verdicts do not: O_h scalar action {base_oh.scalar_action:.6e} and "
+        f"finite-rank scalar action {base_fr.scalar_action:.6e}; vector channel |G_0i| = "
+        f"{vec_oh.e_ti:.3e} on O_h and {vec_fr.e_ti:.3e} on finite-rank; traceless shear channel "
+        f"|G_ij^TF| = {ten_oh.e_spatial_tf:.3e} and {ten_fr.e_spatial_tf:.3e}; mixed probe "
+        f"(|G_0i|, |G_ij^TF|) = ({mix_oh.e_ti:.3e}, {mix_oh.e_spatial_tf:.3e}) and "
+        f"({mix_fr.e_ti:.3e}, {mix_fr.e_spatial_tf:.3e}). The activation thresholds these are judged "
+        "against (1e-5, 1e-4, 1e-3, 1e-6) and the scalar-agreement tolerance 1e-14 are fixed literals "
+        "in the source and are quoted as written."
+    )
+    print(
+        "Determinism: no RNG, optimizer, root-finding, or Monte Carlo appears in this runner or its "
+        "probe helper. The sweep is a fixed list of three spacetime points crossed with eight "
+        "labelled probes at the single amplitude 0.02, and all derivatives use the fixed "
+        "central-difference step h = 0.04. Every floating quantity above is interpolated from this "
+        "run's own probe results; none is copied from a previous run."
+    )
+
+
 def main() -> None:
     print("Scalar-trace-only tensor completion no-go")
     print("=" * 72)
@@ -143,6 +215,10 @@ def main() -> None:
         and vec_fr.e_ti > 1e-5
         and ten_fr.e_spatial_tf > 1e-3,
         "same scalar data, different tensorial Einstein channels -> genuinely tensor-valued matching law required",
+    )
+
+    n5_execution_certificate(
+        base_oh, vec_oh, ten_oh, mix_oh, base_fr, vec_fr, ten_fr, mix_fr
     )
 
     print("\n" + "=" * 72)

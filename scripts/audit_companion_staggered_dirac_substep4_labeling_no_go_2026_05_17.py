@@ -462,6 +462,70 @@ def main() -> int:
     )
 
     # -----------------------------------------------------------------------
+    # N5 execution certificate (print-only; adds no check and no counter)
+    # -----------------------------------------------------------------------
+    print("\n[N5] execution certificate (print-only; adds no check and no counter)\n")
+    print(
+        "per_element: resolved as exact symbolic equality at every matrix position -- operator "
+        "identities are settled by comparing a 3x3 sympy matrix against the zero matrix rather than "
+        "against any tolerance, matrix units are built by writing a single 1 into one named slot, "
+        "and the commutant calculation is the most explicit of all: it walks all nine elementary "
+        "units E_ab, forms each commutator with C, and stores that commutator's entries into an "
+        "81-position layout at L[3i+j, 3a+b] before an exact nullspace is taken. Each of those 81 "
+        "entries enters the block result individually."
+    )
+    print(
+        "per_site: checked and not executed -- there is no lattice in this runner. The three lattice "
+        "translations enter only as diagonal operators carrying joint eigenvalue triples on a "
+        "three-dimensional carrier of corner labels; no position, neighbour relation, or site "
+        "amplitude is ever constructed, so no site-resolved quantity exists here to report."
+    )
+    print(
+        "per_mode: resolved corner by corner, which is the whole subject of the note -- the three "
+        "species modes are separated by their joint eigenvalue triples under (T_1, T_2, T_3), namely "
+        "(-1,+1,+1), (+1,-1,+1) and (+1,+1,-1), and each translation is certified unitary and "
+        "mutually commuting across all nine ordered pairs. The decisive negative is read per mode "
+        "too: conjugating any T_mu by the cyclic generator permutes the corners while leaving the "
+        "sorted eigenvalue multiset identical, so the modes are individually resolved and yet remain "
+        "pairwise indistinguishable by their spectra alone."
+    )
+    print(
+        "per_block: resolved as the commutant algebra of the cyclic generator -- an exact nullspace "
+        "returns dimension 3, so the operators commuting with C are exactly the circulants, one "
+        "dimension per C_3 character, and every element of that commutant is verified to carry a "
+        "constant diagonal. That constant diagonal is the mechanical core of the no-go: no "
+        "C_3-equivariant operator can weight one corner block differently from another, so any "
+        "corner-distinguishing element must break C_3 and be supplied from outside. The equivariant "
+        "family a*I + b*C + bbar*C^2 is exhibited as an explicit equal-diagonal witness."
+    )
+    print(
+        "lattice_wide: checked and not executed, and there is a second gap at the same place that "
+        "this certificate states rather than glosses -- nothing here carries an extent, a volume, or "
+        "a size, the largest objects being a 3x3 carrier and a 9x9 auxiliary layout. Beyond that, "
+        "the exhaustiveness taxonomy that would close the argument globally is by the runner's own "
+        "comment the note's SS2.3 case analysis and is not runner-provable; what executes "
+        "mechanically is only its interior half, the commutant result above, together with text "
+        "checks confirming the declared argument and its citations are present. No global closure is "
+        "computed in this file."
+    )
+    print(
+        "Scope: forty-six of the fifty-one checks evaluate an exact symbolic condition. The other "
+        "five are text or file-existence tests -- that the five A3 obstruction notes sit on disk, "
+        "and that the note records the A3-campaign rejection of P2, the retained-grade-rule "
+        "foreclosure of P3, the declared SS2.3 case analysis, and the exclusion of the HK+DHR "
+        "appeal. Those five resolve nothing quantitative and are citation-grade only."
+    )
+    print(
+        "Determinism: sympy exact integer, rational, and symbolic arithmetic throughout, with no "
+        "floating-point tolerance anywhere in the file. There is no RNG, optimizer, root-finding, "
+        "grid scan, Monte Carlo, or flow integration. Eigenvalue triples are compared as explicitly "
+        "sorted lists and the symbolic diagonal entries are sorted by string form before comparison, "
+        "so no ordering internal to sympy can reach a verdict. The P3 sort keys 1/2, 3/2 and 7/2 are "
+        "deliberate stand-in rationals; the runner's own comment records that importing real PDG "
+        "values at that step is precisely what the grade rule forbids."
+    )
+
+    # -----------------------------------------------------------------------
     # SCORECARD
     # -----------------------------------------------------------------------
     return sc.summary()

@@ -431,6 +431,86 @@ def block_D():
 # ---------------------------------------------------------------------
 
 
+def n5_execution_certificate(M, W, sec, sites, Ls, N, mass) -> None:
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.  Floating residuals are recomputed
+    from this run's own operators at print time.
+    """
+    inv = opnorm(W @ M @ W.T - M)
+    E = np.diag([(-1.0) ** sum(x) for x in sites])
+    et = opnorm(W @ E @ W.T - E)
+    n_slice = sum(1 for s in sites if s[0] == 0)
+
+    print()
+    print("-" * 72)
+    print("N5 execution certificate (print-only; adds no check and no counter)")
+    print("-" * 72)
+    print(
+        f"per_element: resolved as explicit entry writes on a {N}x{N} surface -- the staggered hop "
+        "matrix is filled one oriented link at a time, each site pair receiving bc*eta(mu,x) in one "
+        "slot and the negated value in its transposed slot, and the exchange operator is assembled "
+        "the same way, as a permutation matrix times a diagonal sign field whose x-th entry is "
+        "(-1)^(x_tau*x_1). The reflection leg is entrywise as well: the conjugated temporal "
+        "reflection is compared against the bare x_1 site reflection after taking absolute values, "
+        "so its support is pinned position by position and not merely in norm."
+    )
+    print(
+        f"per_site: resolved site by site across all {N} lattice points -- the block {Ls} is "
+        "enumerated explicitly and every site carries its own data: its staggered phase "
+        "eta(mu,x) = (-1)^(x_0+...+x_(mu-1)), its own entry in the sign field (-1)^(x_tau*x_1), and "
+        "its own chirality sign eps(x) = (-1)^(sum of coordinates). Sites are then selected "
+        "individually into the two Osterwalder-Schrader half-spaces by a test on a single "
+        f"coordinate, and into the tau=0 and x_1=0 evolution slices of {n_slice} sites each."
+    )
+    print(
+        "per_mode: resolved through full spectra and exact kernel dimensions -- the two "
+        "Osterwalder-Schrader kernels are diagonalized separately and their sorted Hermitian spectra "
+        "matched eigenvalue against eigenvalue, minimum eigenvalues included; the two slice hop "
+        "operators are compared by sorted absolute spectra; and the sharpest discriminator in the "
+        "file is a mode count, the kernel dimension of a single hop sector, which comes out 0 for "
+        "the antiperiodic temporal sector against 32 for the periodic x_1 sector at zero mass. Those "
+        "are exact integer counts read at the 1e-9 window."
+    )
+    print(
+        "per_block: resolved as four per-axis hop sectors plus explicitly extracted sub-blocks -- the "
+        "surface is assembled as a sum of four separate sector matrices, one per lattice direction, "
+        "and individual sectors are pulled back out and examined alone, which is exactly what makes "
+        "the kernel-dimension discriminator possible. Three further sub-blocks are cut by index "
+        "selection: the two half-spaces, the two codimension-one evolution slices, and on the record "
+        "side a nested family of projector sums of rank 0 through 4 on an eight-dimensional register."
+    )
+    print(
+        "lattice_wide: resolved as a finite-N whole-lattice invariance on two named blocks -- the "
+        f"exchange certificate is a statement about the entire {N}-site surface at once, established "
+        "there exactly, then broken exactly by a single per-axis boundary-condition flip and restored "
+        "exactly once that flip is applied to both axes; the broken residual is the exact closed form "
+        "2*sqrt(2) on this block. A second block of shape (6, 4, 2, 2) is run to show that asymmetric "
+        "extents discriminate too. Both are fixed finite blocks: no extent is grown, no thermodynamic "
+        "or continuum limit is taken, and the runner itself files the extent route as regulator-level "
+        "data rather than an axiom."
+    )
+    print(
+        "Live residuals at print time, since LAPACK and inverse-solve figures move between "
+        f"environments while the verdicts do not: whole-surface exchange invariance {inv:.2e} and "
+        f"chirality-grading invariance {et:.2e}, both judged against the source tolerances 1e-13 and "
+        f"1e-14. The surface is block {Ls} at mass {mass} with periodic boundary conditions; site "
+        "counts, slice dimensions, and kernel dimensions are exact integers and are quoted literally."
+    )
+    print(
+        "Scope: nine of the twenty-three checks are substring tests against ten notes on disk and "
+        "resolve no matrix element, site, mode, or block; they inventory authority text only. The "
+        "fourteen remaining checks carry every quantitative claim certified above."
+    )
+    print(
+        "Determinism: no RNG appears anywhere. The one pseudo-random-looking object, the 8x8 "
+        "Hermitian used to build the durability transport unitary, is filled deterministically from "
+        "sin(1 + 0.37*a*b) and then symmetrized. No optimizer, root-finding, Monte Carlo, or flow "
+        "integration is used, and every spectral comparison sorts both spectra before differencing, "
+        "so no eigen-solver ordering can leak into a verdict."
+    )
+
+
 def main() -> None:
     print("=" * 72)
     print("SINGLE-CLOCK AXIS SELECTION: W-TRANSPORT AUDIT (2026-06-11)")
@@ -456,6 +536,7 @@ def main() -> None:
     block_RT_ANOM(M, sec, W, sites, mass, N)
     block_PIN(Ls, mass, W)
     block_D()
+    n5_execution_certificate(M, W, sec, sites, Ls, N, mass)
 
     print()
     print("=" * 72)

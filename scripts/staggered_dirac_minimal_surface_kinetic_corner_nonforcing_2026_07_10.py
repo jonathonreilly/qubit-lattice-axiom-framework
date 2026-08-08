@@ -535,6 +535,77 @@ c2 = check(
     all((k6, k7, k8, k9, k10)),
 )
 
+# ---------------------------------------------------------------------------
+print("\n--- N5 execution certificate (print-only; adds no check and no counter)")
+print(
+    "per_element: resolved by an exhaustive entrywise support audit -- every operator here is "
+    "written entry by entry, each shift placing a single 1.0 at the [idx(x+e_mu), idx(x)] slot and "
+    "the staggered comparator placing plus or minus 0.5*eta times its wrap factor at each link, and "
+    f"check K01 then walks all {NS}x{NS} ordered site pairs and requires every off-diagonal entry "
+    "above TOL to sit at a separation whose sorted coordinate distance is exactly [0, 0, 1]. "
+    "Locality is therefore certified position by position, not inferred from a bandwidth."
+)
+print(
+    f"per_site: resolved site by site on the full {L}^3 lattice and again on the 2^3 cube -- sites "
+    "are enumerated explicitly and each is given its own index, its own row and column, its own "
+    "staggered phase eta(x, mu), and its own component (-1)^(sum_mu b_mu x_mu) within each of the "
+    "eight corner vectors. The record leg is per-site in the strongest sense available here: "
+    "projectors are locked at three named sites, the origin together with (1,0,0) and (2,0,0), and "
+    "one-record-per-site, permanence under history extension, and additivity of the readout across "
+    "disjoint site sets are each verified against those individual sites."
+)
+print(
+    "per_mode: resolved eigenvalue by eigenvalue and singular value by singular value -- the "
+    f"periodic Laplacian kernel is counted exactly at dimension {lap_kernel}, all eight "
+    "Brillouin-zone corner vectors are verified to be exact eigenvectors carrying the closed-form "
+    "eigenvalues 4*(b_1+b_2+b_3), which sorted form the multiset {0, 4, 4, 4, 8, 8, 8, 12}, and the "
+    "two comparator operators are separated by exact kernel counts read off their singular spectra: "
+    f"{pbc_kernel} null modes under periodic wrap against {mmm_kernel} under the (-,-,-) holonomy. "
+    "The symbol 2*sum(1-cos k_mu) is evaluated on a momentum grid and its corner values are matched "
+    "against those same eigenvalues."
+)
+print(
+    "per_block: resolved as a particle-number block restriction -- the exchange Hamiltonian is built "
+    f"on the full {2 ** len(cube_sites)}-dimensional many-qubit space of the 2^3 cube, certified to "
+    "commute with the number operator so that it is block-diagonal in particle number, and then "
+    "explicitly restricted to the one-excitation block by conjugating with the eight columns raised "
+    f"from the vacuum. That {len(cube_sites)}x{len(cube_sites)} block is shown to equal the cubic "
+    f"graph Laplacian 3I - A exactly on all {len(cube_edges)} edges, which is the step that makes a "
+    "many-body law comparable with a one-particle kinetic symbol at all."
+)
+print(
+    f"lattice_wide: resolved as a finite-volume statement at L={L}, and deliberately not offered as "
+    "the infinite-lattice proof -- whole-lattice properties are exactly what these checks concern: "
+    "exact commutation with all three translations, invariance under the C3[111] and C4z "
+    "proper-cubic generators, plaquette flux evaluated over every site and every coordinate plane "
+    "and coming out uniformly +1 for the plus system against uniformly -1 for the Kawamoto-Smit "
+    "system, and the wrap holonomy, which is a property of the whole box and is precisely what "
+    f"moves the comparator null count from {pbc_kernel} to {mmm_kernel}. The runner's own docstring "
+    f"is respected here: L stays fixed at {L}, no extent is grown and no thermodynamic limit is "
+    "taken, so these are finite certificates for formulas used in the analytic infinite-Z^3 "
+    "argument rather than a replacement for it."
+)
+print(
+    "Live figures at print time: the (-,-,-) wrap comparator's smallest singular value is "
+    f"{float(np.min(sv_mmm)):.10f}, an order-one quantity rather than a near-epsilon residual, "
+    "matching the closed form sqrt(6)/2. The three kernel dimensions quoted above are exact integer "
+    f"counts taken at TOL = {TOL:.0e}, and the corner eigenvalues are exact integers."
+)
+print(
+    "Scope: the six [S] checks are substring tests against the axiom note on disk and resolve "
+    "nothing quantitative -- they record only that the Qubit axiom supplies the one-site M_2(C), "
+    "that the Lattice axiom supplies Z^3, and that Admissibility chooses no Hamiltonian or transfer "
+    "operator. The remaining twenty-one checks carry every result certified above."
+)
+print(
+    "Determinism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in this "
+    "runner. The single scan is a fixed momentum grid of 17 points per axis at spacing 2*pi/17 swept "
+    "over all three axes; following the scan rule this certificate names that grid size and spacing "
+    "and interpolates no scan-derived momentum or symbol value. Site and cube enumerations run in "
+    "fixed nested-loop order, edge sets are stored as sorted index pairs, and the corner eigenvalues "
+    "are reported above in sorted form, so no traversal or solver ordering can affect a verdict."
+)
+
 print("\n" + "=" * 78)
 print(f"TOTAL: PASS={_passed} FAIL={_failed}")
 if _failed == 0 and c1 and c2:

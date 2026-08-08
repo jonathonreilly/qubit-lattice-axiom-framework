@@ -24,16 +24,22 @@ This checker is built to make the primary fail, along four axes.
   3  CLAIM REPLICATION.  Every pinned number the primary published is
      recomputed from the independently measured corpus.
 
-  4  A STRICTLY LARGER SEARCH.  The primary's transformation family is
-     re-searched with every declared cap loosened: the constant offset is
-     searched over a provably COMPLETE candidate set instead of eight head and
-     tail anchors; the lag map allows PARTIAL overlap in both directions
-     instead of full containment; the index map drops the exhaustion
-     requirement; the affine map is solved from every anchor rather than the
-     endpoints; and the period law scans every transient up to a far larger cap
-     and admits the least common period of the two clocks.  Any relation this
-     wider search finds where the primary reported NO_RELATION_IN_F REFUTES the
-     primary's negative.
+  4  A COMPLEMENTARY BOUNDED SEARCH.  The primary's transformation family is
+     re-searched with loosened scalar caps: the constant offset is searched
+     over a provably COMPLETE candidate set instead of eight head and tail
+     anchors; the lag map allows PARTIAL overlap in both directions instead of
+     full containment; the index map drops the exhaustion requirement; the
+     affine map is solved from every anchor rather than the endpoints; and the
+     period law scans every transient up to a bounded cap and admits the least
+     common period of the two clocks.  This is COMPLEMENTARY BOUNDED coverage,
+     not a proven superset of the primary's search: in particular the period
+     member's transient scan is capped while the primary's tail-ladder
+     transient pushback is uncapped, so the two period detectors have
+     different reach and period disagreements are adjudicated by DIRECT
+     MEMBERSHIP instead (axis 3).  Any substantive non-identity relation this
+     search finds on a pair the primary did not publish REFUTES the primary's
+     negative; the found relation set is gated on EXACT KEYED WITNESS-SET
+     EQUALITY with the primary's published set, not on count equality.
 """
 from __future__ import annotations
 
@@ -62,11 +68,11 @@ DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 AUDIT_TIMEOUT_SEC = 1400
 
 EXPECTED_SHA256 = {
-    PRIMARY_869: "1406bf829b19bb8ff9765b4f3e23a499467db98a6753e0b7d07cd983fab2f493",
+    PRIMARY_869: "16cad1757aa9dfc96a632fa80e51775dca02d8459fa5ccdd4e53d6960ee32df8",
     CORE_719: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
 }
 EXPECTED_GIT_BLOB = {
-    PRIMARY_869: "6e4a2cdd94cac128fa481ed3c38222d3905d5039",
+    PRIMARY_869: "0c4fc044925934948e0472c2e987c75ff4061967",
     CORE_719: "c123b8d681c3d76fce08ef13d7673622deac64ad",
 }
 
@@ -107,6 +113,20 @@ PINNED = {
     "within_key_substantive_nonidentity_full_dictionaries": 1,
     "within_key_substantive_partial_matches": 38,
     "within_key_substantive_nonidentity_partial_matches": 31,
+    # The primary's published keyed witness set ("<lane>:<from>|<to>") for
+    # every substantive non-identity relation, full and partial.  The
+    # refutation search is gated on EXACT equality with this set, so a wider
+    # witness replacing a missed primary witness cannot hide behind an
+    # unchanged total.
+    "within_key_substantive_nonidentity_relation_keys": [
+        "108:02|12", "117:02|12", "125:02|12", "132:02|12", "138:02|12",
+        "143:02|12", "147:02|12", "150:02|12", "162:01|12", "166:02|12",
+        "169:02|12", "17:02|12", "185:02|12", "200:02|12", "214:02|12",
+        "227:02|12", "239:02|12", "250:02|12", "260:02|12", "269:02|12",
+        "277:02|12", "284:02|12", "290:02|12", "295:02|12", "299:02|12",
+        "302:02|12", "33:02|12", "48:02|12", "62:02|12", "75:02|12",
+        "87:02|12", "98:02|12",
+    ],
     "within_key_bank_clock_histogram": {
         "F1": 1,
         "NO_RELATION_IN_F": 910,
@@ -134,8 +154,11 @@ MIN_LAG_OVERLAP = 8
 RUNTIME_LIMIT_SECONDS = 1400
 STDOUT_LIMIT_BYTES = 150 * 1024
 
-# Loosened search box.  Every entry is strictly wider than the primary's.
-WIDE_PERIOD_TRANSIENTS = 256          # primary scans 6 transient offsets
+# Loosened search box.  The scalar caps are at least as wide as the
+# primary's, but the coverage is COMPLEMENTARY BOUNDED, not a proven
+# superset: the transient scan below is capped while the primary's
+# tail-ladder transient pushback is uncapped.
+WIDE_PERIOD_TRANSIENTS = 256          # bounded transient scan (see note above)
 WIDE_PERIOD_BLOCK_GAPS = 2_048        # primary caps blocks at 512
 WIDE_PERIOD_MAX_TICKS = 65_536        # ceiling on an admitted common period
 WIDE_LAG_CANDIDATE_CAP = 40_000       # lags examined per ordered comparison
@@ -269,13 +292,17 @@ def source_controls():
         and declared["MIN_LAG_OVERLAP"] == MIN_LAG_OVERLAP
         and declared["AUDIT_INPUT_PATHS"] == (CORE_719,)
     )
-    # The primary's caps must be strictly inside this checker's loosened box,
-    # otherwise the refutation search would not actually be wider.
-    search_is_wider = (
+    # The primary's declared scalar caps must not exceed this checker's
+    # loosened scalar caps.  That makes the family re-search COMPLEMENTARY
+    # BOUNDED coverage -- deliberately different detectors with
+    # at-least-as-wide scalar caps -- NOT a proven superset of the primary's
+    # search: the period member's transient scan here is capped while the
+    # primary's tail-ladder transient pushback is uncapped, so period
+    # disagreements are adjudicated by direct membership (D block) rather
+    # than by any containment argument.
+    search_complementary_bounded = (
         declared["PERIOD_TAIL_FLOOR"] is not None
         and declared["PERIOD_TAIL_WINDOW"] is not None
-        # The primary reads its block off a tail ladder; this checker instead
-        # scans every transient up to a far larger cap, so it can only see more.
         and declared["PERIOD_TAIL_FLOOR"] > 1
         and declared["PERIOD_MAX_BLOCK_GAPS"] < WIDE_PERIOD_BLOCK_GAPS
         and declared["WINDOWED_OFFSET_ANCHORS"] < WIDE_AFFINE_ANCHOR_CAP
@@ -297,7 +324,7 @@ def source_controls():
         and all(row["sha256_exact"] and row["git_blob_exact"] for row in rows)
         and markers_exact
         and box_agrees
-        and search_is_wider
+        and search_complementary_bounded
         and not any(name in sys.modules for name in BLOCKLISTED_MODULES)
         and not FIREWALL.hits
     )
@@ -307,7 +334,15 @@ def source_controls():
         "AUDIT_INPUT_PATHS_literal": literal_paths == AUDIT_INPUT_PATHS,
         "primary_declared_box": declared,
         "declared_box_agrees": box_agrees,
-        "refutation_search_is_strictly_wider": search_is_wider,
+        "refutation_search_complementary_bounded": search_complementary_bounded,
+        "refutation_search_coverage_note": (
+            "the scalar caps are at least as wide as the primary's, but the "
+            "coverage is complementary bounded, NOT a proven superset: the "
+            "period transient scan is capped at "
+            f"{WIDE_PERIOD_TRANSIENTS} while the primary's tail-ladder "
+            "transient pushback is uncapped; period disagreements are "
+            "adjudicated by direct membership in the D block"
+        ),
         "source_AST_markers_exact": markers_exact,
         "blocklisted_modules": list(BLOCKLISTED_MODULES),
         "blocklisted_modules_loaded": [
@@ -518,7 +553,7 @@ def reference_replay(program, key, state, per_bank, source_pointer):
     )
 
 
-# ------------------------------------------------- the strictly larger search
+# ------------------------- the complementary bounded loosened-cap search
 def gaps_of(cadence):
     return tuple(cadence[i + 1] - cadence[i] for i in range(len(cadence) - 1))
 
@@ -594,7 +629,8 @@ def exact_saturation(cadence, horizon=HORIZON_CHUNKS):
 
 
 def wide_period(cadence):
-    """Least eventual period over EVERY transient up to the loosened cap."""
+    """Smallest eventual period FOUND by scanning every transient up to the
+    loosened cap.  This is a bounded detector, not a least-period oracle."""
     gaps = gaps_of(cadence)
     best = None
     limit = min(len(gaps), WIDE_PERIOD_TRANSIENTS)
@@ -965,6 +1001,7 @@ def main():
         refutations = []
         weak_examples = []
         nonidentity = weak = 0
+        nonidentity_keys = []
         for lane in range(len(keys)):
             for left, right in combinations(range(len(labels)), 2):
                 x_profile = profiles[lane][left]
@@ -1013,6 +1050,9 @@ def main():
                         weak_examples.append(row)
                     continue
                 nonidentity += 1
+                nonidentity_keys.append(
+                    f"{lane}:{labels[left]}|{labels[right]}"
+                )
                 if len(refutations) < WITNESS_PRINT_CAP:
                     refutations.append(row)
         return {
@@ -1023,6 +1063,7 @@ def main():
             "wide_family_hits": dict(sorted(wide_relations.items())),
             "substantive_nonidentity_relations_above_coverage_floor": nonidentity,
             "substantive_nonidentity_relations_below_coverage_floor": weak,
+            "substantive_nonidentity_relation_keys": sorted(nonidentity_keys),
             "refuting_examples": refutations,
             "below_floor_examples": weak_examples,
         }
@@ -1032,16 +1073,30 @@ def main():
     pair_refute = refute(pair_profiles, pair_labels)
     bank_refute = refute(bank_profiles, bank_labels)
 
-    # A refutation is a NON-IDENTITY relation the wider search finds where the
-    # primary published only one.  The counts are compared, not the labels.
+    # A refutation is a substantive NON-IDENTITY relation this search finds on
+    # a keyed pair the primary did NOT publish.  The gate is EXACT KEYED
+    # WITNESS-SET EQUALITY against the primary's published set -- not count
+    # equality -- so a wider-only witness replacing a missed primary witness
+    # cannot hide behind an unchanged total.  Extra keys refute the primary's
+    # negative; missing keys mean this search failed to replicate a published
+    # witness, which is an honest failure of this check, not a pass.
     primary_nonidentity = (
         PINNED["within_key_substantive_nonidentity_full_dictionaries"]
         + PINNED["within_key_substantive_nonidentity_partial_matches"]
     )
-    refuted = (
-        pair_refute["substantive_nonidentity_relations_above_coverage_floor"]
-        > primary_nonidentity
+    pinned_relation_keys = set(
+        PINNED["within_key_substantive_nonidentity_relation_keys"]
     )
+    wider_relation_keys = set(
+        pair_refute["substantive_nonidentity_relation_keys"]
+    )
+    extra_relation_keys = sorted(wider_relation_keys - pinned_relation_keys)
+    missing_relation_keys = sorted(pinned_relation_keys - wider_relation_keys)
+    keyed_witness_sets_equal = (
+        not extra_relation_keys and not missing_relation_keys
+        and len(pinned_relation_keys) == primary_nonidentity
+    )
+    refuted = bool(extra_relation_keys)
     bookkeeping_agrees = (
         pair_refute["one_side_silent"]
         == PINNED["within_key_member_histogram"]["ONE_SIDE_SILENT"]
@@ -1053,7 +1108,7 @@ def main():
         + PINNED["within_key_evidence_split"]["SUBSTANTIVE_RELATION"]
         + PINNED["within_key_evidence_split"]["PARTIAL"]
     )
-    e_pass = bookkeeping_agrees and not refuted
+    e_pass = bookkeeping_agrees and keyed_witness_sets_equal
 
     # ------------------------------------------- across-key constant offsets
     across = {}
@@ -1094,8 +1149,10 @@ def main():
     dumps = {"sort_keys": True, "separators": (",", ":")}
     lines = [
         "PURPOSE: an attempt to refute Cycle 869 by independent measurement and "
-        "a strictly wider search.  A PASS here means the refutation attempt "
-        "FAILED and the primary survived it.",
+        "a complementary bounded loosened-cap search, gated on exact keyed "
+        "witness-set equality.  A PASS here means the refutation attempt "
+        "FAILED and the primary survived it within this checker's declared "
+        "reach; it is not a superset guarantee.",
         ("PASS" if controls["pass"] else "FAIL") + " A_SOURCE_CONTROLS :: "
         + json.dumps(controls, **dumps),
         ("PASS" if b_pass else "FAIL") + " B_INDEPENDENT_MEASUREMENT :: "
@@ -1136,6 +1193,14 @@ def main():
                 "lag_overlap": "partial overlap allowed in both directions",
                 "index_map": "exhaustion requirement dropped",
                 "affine_anchors": WIDE_AFFINE_ANCHOR_CAP,
+                "coverage_note": (
+                    "complementary bounded coverage, not a proven superset of "
+                    "the primary's search: the period transient scan is capped "
+                    f"at {WIDE_PERIOD_TRANSIENTS} while the primary's "
+                    "tail-ladder transient pushback is uncapped; period "
+                    "disagreements are adjudicated by direct membership in "
+                    "the D block"
+                ),
             },
             "pair_clocks": pair_refute,
             "bank_clocks": bank_refute,
@@ -1144,16 +1209,22 @@ def main():
             ),
             "refutation_criterion": (
                 "a relation refutes only if it is substantive, moves the tick "
-                "values, and covers at least "
+                "values, covers at least "
                 f"{REFUTATION_COVERAGE.numerator}/"
-                f"{REFUTATION_COVERAGE.denominator} of the shorter clock"
+                f"{REFUTATION_COVERAGE.denominator} of the shorter clock, and "
+                "falls on a keyed pair OUTSIDE the primary's published "
+                "witness set; the gate below is exact keyed set equality, not "
+                "count equality"
             ),
-            "wider_search_refuting_relations": (
+            "wider_search_relations_above_floor": (
                 pair_refute["substantive_nonidentity_relations_above_coverage_floor"]
             ),
             "wider_search_below_floor_partial_matches": (
                 pair_refute["substantive_nonidentity_relations_below_coverage_floor"]
             ),
+            "keyed_witness_sets_equal": keyed_witness_sets_equal,
+            "wider_keys_not_published_by_primary": extra_relation_keys,
+            "primary_keys_missed_by_wider_search": missing_relation_keys,
             "bookkeeping_agrees_with_primary": bookkeeping_agrees,
             "primary_negative_refuted": refuted,
         }, **dumps),

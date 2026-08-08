@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/no_per_site_chirality_check.py
-runner_sha256: ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d
+runner_sha256: 569368dbab5a4b50c34739271ca738bf0ff41ac4aa4803dc15c55e6dd6ff3736
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================
@@ -22,7 +22,7 @@ SOURCE FIREWALL: one-site M_2(C) no-go, no imported odd-D theorem
   STATUS: PASS
 
   ω = σ_1 σ_2 σ_3 =
-  [[1j, 0j], [0j, 1j]]
+  [[1j, (-0+0j)], [0j, 1j]]
 
 ------------------------------------------------------------------------
 TEST 1: ω = i·I_2 (scalar in Pauli rep)
@@ -80,6 +80,15 @@ TEST 6: Cl(3) has 4-dim even subalgebra (span{I, σ_1σ_2, σ_2σ_3, σ_3σ_1})
   Test 5 (no γ_5 candidate exists):                  PASS
   Test 6 (even/odd subalgebras coincide on Pauli):   PASS
   OVERALL: PASS
+
+==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+  per_element: the decisive object is assembled from flattened matrix entries - Test 4 stacks the twelve anticommutators {basis_k, sigma_i} into a 12x4 complex array, one flattened 2x2 per four-row slot, and takes its singular values with a 1e-10 floor to read off a null-space dimension of zero; alongside that, omega = sigma_1 sigma_2 sigma_3 is printed entry by entry and each of the five deviation norms in Tests 1 through 3 comes out a hard zero rather than an epsilon-scale residual, because the arithmetic involves only the exact entries 0, +-1 and +-i.
+  per_site: one site is the entire subject, and the runner resolves it completely - the carrier is a single copy of the one-site Qubit algebra M_2(C), the three generators are the explicit Pauli matrices on it, and the conclusion is exactly a single-site statement: within that one carrier the volume element collapses to a central scalar, only the zero matrix anticommutes with all three generators, and therefore no gamma_5 can live at a site.
+  per_mode: checked and not executed - no mode of any kind is constructed. The three sigma_i are Clifford generators, not momentum labels, there is no transform, no dispersion and no wave vector in the file, and the only sweep it performs is over a four-element operator basis, which indexes algebra directions rather than modes.
+  per_block: the Z_2 even/odd grading is examined and found to be absent, though the test that shows this is close to automatic - the even span is entered as I, i*sigma_3, i*sigma_1, i*sigma_2 and the odd span as sigma_1, sigma_2, sigma_3, i*I, and each is column-stacked and given a matrix_rank at tol 1e-10, returning 4 out of 4 both times. Since both lists are the Pauli basis up to phases, full rank was guaranteed before the call; the honest content is the structural conclusion that follows, namely that no chirality projector (1 +- gamma_5)/2 can split this carrier into blocks.
+  lattice_wide: checked and not executed - the runner is deliberately confined to a single carrier and says so, declining to identify the larger spacetime or gauge chirality mechanism, and the firewall block even enforces that boundary by requiring the note to keep larger chirality mechanisms separate. Nothing outside the one site is ever built: no second site, no coupling, no volume, no limit.
 
 ----- stderr -----
 

@@ -1,0 +1,335 @@
+{
+ "checks": [
+  {
+   "name": "split.decomposition_identity_on_all_probes",
+   "ok": true
+  },
+  {
+   "name": "split.trace_free_channel_has_zero_trace",
+   "ok": true
+  },
+  {
+   "name": "split.conformal_channel_is_constant_vector",
+   "ok": true
+  },
+  {
+   "name": "split.projectors_idempotent_complementary",
+   "ok": true
+  },
+  {
+   "name": "split.uniqueness_of_the_constant_part",
+   "ok": true
+  },
+  {
+   "name": "split.recoil_ledger_minus2w_w_w_is_trace_free",
+   "ok": true
+  },
+  {
+   "name": "split.graded_operator_fixes_exactly_the_trace_free_vectors",
+   "ok": true
+  },
+  {
+   "name": "grading.residual_equals_A_plus_tB_on_all_configurations",
+   "ok": true
+  },
+  {
+   "name": "grading.raw_ledger_sector_trace_is_identically_A",
+   "ok": true
+  },
+  {
+   "name": "grading.B_depends_only_on_the_second_and_third_sector",
+   "ok": true
+  },
+  {
+   "name": "grading.configuration_census_is_complete",
+   "ok": true
+  },
+  {
+   "name": "module.fixed_subspace_is_the_line_of_1_1_1",
+   "ok": true
+  },
+  {
+   "name": "module.complement_is_C_invariant_of_dimension_2",
+   "ok": true
+  },
+  {
+   "name": "module.complement_char_poly_is_x2_plus_x_plus_1",
+   "ok": true
+  },
+  {
+   "name": "module.complement_irreducible_over_Q_and_over_R",
+   "ok": true
+  },
+  {
+   "name": "module.full_char_poly_factors_as_x3_minus_1",
+   "ok": true
+  },
+  {
+   "name": "module.dimension_pattern_1_2_over_Q_R_and_1_1_1_over_C",
+   "ok": true
+  },
+  {
+   "name": "forms.five_forms_collapse_to_(n-1)/n^2_on_the_locus",
+   "ok": true
+  },
+  {
+   "name": "forms.families_coincide_pairwise_exactly_at_N_3",
+   "ok": true
+  },
+  {
+   "name": "forms.families_separate_at_N_4",
+   "ok": true
+  },
+  {
+   "name": "forms.fixed_locus_sum_equals_(N^2-1)/12_for_N_2_to_12",
+   "ok": true
+  },
+  {
+   "name": "forms.evaluation_census_is_complete",
+   "ok": true
+  },
+  {
+   "name": "origin.step_equals_(1_minus_m_G0)_over_6_on_the_grid",
+   "ok": true
+  },
+  {
+   "name": "origin.step_is_one_sixth_iff_m_times_G0_is_zero",
+   "ok": true
+  },
+  {
+   "name": "origin.on_G0_positive_the_massless_slice_is_m_equals_0",
+   "ok": true
+  },
+  {
+   "name": "witness.diag_Qp_over_totalsum_J_is_(n-1)/n^3_for_n_2_to_50",
+   "ok": true
+  },
+  {
+   "name": "witness.value_at_n_3_is_2/27",
+   "ok": true
+  },
+  {
+   "name": "witness.rival_expression_diag_Qp_over_n_is_(n-1)/n^2",
+   "ok": true
+  },
+  {
+   "name": "cycle.identity_holds_on_all_32768_graphs_on_6_vertices",
+   "ok": true
+  },
+  {
+   "name": "cycle.census_counts_are_real",
+   "ok": true
+  },
+  {
+   "name": "gate.check_count_matches_the_declared_census",
+   "ok": true
+  }
+ ],
+ "date": "2026-08-08",
+ "expected_check_count": 31,
+ "fail": 0,
+ "inputs": [],
+ "pass": 31,
+ "payload_sha256": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+ "role": "salvage primary: seven narrow exact algebraic results on in-file stipulated definitions; bounded support only; no derivation, closure, or selection claims",
+ "script": "scripts/salvaged_exact_algebra_2026_08_08.py",
+ "units": {
+  "affine_grading_normal_form": {
+   "configurations": 1296,
+   "probe_points_per_configuration": 6,
+   "residual_identities_checked": 7776
+  },
+  "cyclic_permutation_module": {
+   "complement_char_poly": "x^2 + x + 1",
+   "dimension_pair_over_Q_and_R": [
+    1,
+    2
+   ],
+   "dimension_pattern_over_C": [
+    1,
+    1,
+    1
+   ],
+   "discriminant": "-3/1"
+  },
+  "five_forms_and_families": {
+   "family_values_at_N_3": {
+    "(N-1)(N-2)/(3N)": "2/9",
+    "(N-1)/N^2": "2/9",
+    "(N^2-1)/(12N)": "2/9"
+   },
+   "family_values_at_N_4": {
+    "(N-1)(N-2)/(3N)": "1/2",
+    "(N-1)/N^2": "3/16",
+    "(N^2-1)/(12N)": "5/16"
+   },
+   "five_form_evaluations": 245,
+   "fixed_locus_rows": [
+    {
+     "N": 2,
+     "matches_(N^2-1)/12": true,
+     "normalised": "1/8",
+     "normalised_matches_family": true,
+     "sum": "1/4"
+    },
+    {
+     "N": 3,
+     "matches_(N^2-1)/12": true,
+     "normalised": "2/9",
+     "normalised_matches_family": true,
+     "sum": "2/3"
+    },
+    {
+     "N": 4,
+     "matches_(N^2-1)/12": true,
+     "normalised": "5/16",
+     "normalised_matches_family": true,
+     "sum": "5/4"
+    },
+    {
+     "N": 5,
+     "matches_(N^2-1)/12": true,
+     "normalised": "2/5",
+     "normalised_matches_family": true,
+     "sum": "2/1"
+    },
+    {
+     "N": 6,
+     "matches_(N^2-1)/12": true,
+     "normalised": "35/72",
+     "normalised_matches_family": true,
+     "sum": "35/12"
+    },
+    {
+     "N": 7,
+     "matches_(N^2-1)/12": true,
+     "normalised": "4/7",
+     "normalised_matches_family": true,
+     "sum": "4/1"
+    },
+    {
+     "N": 8,
+     "matches_(N^2-1)/12": true,
+     "normalised": "21/32",
+     "normalised_matches_family": true,
+     "sum": "21/4"
+    },
+    {
+     "N": 9,
+     "matches_(N^2-1)/12": true,
+     "normalised": "20/27",
+     "normalised_matches_family": true,
+     "sum": "20/3"
+    },
+    {
+     "N": 10,
+     "matches_(N^2-1)/12": true,
+     "normalised": "33/40",
+     "normalised_matches_family": true,
+     "sum": "33/4"
+    },
+    {
+     "N": 11,
+     "matches_(N^2-1)/12": true,
+     "normalised": "10/11",
+     "normalised_matches_family": true,
+     "sum": "10/1"
+    },
+    {
+     "N": 12,
+     "matches_(N^2-1)/12": true,
+     "normalised": "143/144",
+     "normalised_matches_family": true,
+     "sum": "143/12"
+    }
+   ]
+  },
+  "pointer_cycle_identity": {
+   "graphs_checked": 32768,
+   "graphs_with_a_cycle_through_the_pointer": 24838,
+   "graphs_without": 7930
+  },
+  "projector_ratio_witness": {
+   "n_range": [
+    2,
+    50
+   ],
+   "rival_value_at_3": "2/9",
+   "value_at_3": "2/27"
+  },
+  "screened_origin_step": {
+   "grid_rows": 25
+  },
+  "trace_free_conformal_split": {
+   "ledger_rows": [
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -6
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -5
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -4
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -3
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -2
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -1
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 0
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 1
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 2
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 3
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 4
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 5
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 6
+    }
+   ],
+   "probe_count": 343
+  }
+ },
+ "verdict": "PASS"
+}

@@ -1,0 +1,217 @@
+{
+ "checks": [
+  {
+   "name": "reynolds.group_average_equals_the_conformal_projector",
+   "ok": true
+  },
+  {
+   "name": "reynolds.recoil_ledger_is_annihilated_by_the_group_average",
+   "ok": true
+  },
+  {
+   "name": "reynolds.graded_operator_fixes_exactly_the_averaged_out_vectors",
+   "ok": true
+  },
+  {
+   "name": "interp.interpolated_A_B_match_the_definitional_A_B",
+   "ok": true
+  },
+  {
+   "name": "interp.affine_law_holds_at_two_fresh_probe_points",
+   "ok": true
+  },
+  {
+   "name": "interp.ledger_trace_recomputed_componentwise_equals_A",
+   "ok": true
+  },
+  {
+   "name": "character.omega_is_a_primitive_cube_root_of_unity",
+   "ok": true
+  },
+  {
+   "name": "character.multiplicities_over_C_are_1_1_1",
+   "ok": true
+  },
+  {
+   "name": "character.conjugate_characters_fuse_to_the_pair_1_2_over_Q",
+   "ok": true
+  },
+  {
+   "name": "polyid.five_forms_equal_(n-1)/n^2_as_rational_functions",
+   "ok": true
+  },
+  {
+   "name": "polyid.pairwise_family_difference_has_root_set_{3}_on_2_to_200",
+   "ok": true
+  },
+  {
+   "name": "laplacian.pseudoinverse_trace_gives_(N^2-1)/12_for_N_2_to_12",
+   "ok": true
+  },
+  {
+   "name": "laplacian.pseudoinverse_witness_L_Lplus_is_I_minus_J_over_N",
+   "ok": true
+  },
+  {
+   "name": "bivar.step_equals_(1_minus_m_G0)/6_as_a_polynomial_identity",
+   "ok": true
+  },
+  {
+   "name": "bivar.six_step_minus_one_is_minus_m_G0_identically",
+   "ok": true
+  },
+  {
+   "name": "bivar.on_G0_positive_step_one_sixth_iff_m_zero",
+   "ok": true
+  },
+  {
+   "name": "circulant.equal_diagonal_and_trace_route_gives_(n-1)/n_over_n^2",
+   "ok": true
+  },
+  {
+   "name": "circulant.ratio_at_n_3_is_2/27",
+   "ok": true
+  },
+  {
+   "name": "edge_removal.matches_the_neighbour_pair_formula_on_all_1024",
+   "ok": true
+  },
+  {
+   "name": "edge_removal.matches_on_200_seeded_8_vertex_graphs",
+   "ok": true
+  },
+  {
+   "name": "receipt.primary_receipt_file_exists",
+   "ok": true
+  },
+  {
+   "name": "receipt.primary_digest_recomputes",
+   "ok": true
+  },
+  {
+   "name": "receipt.primary_verdict_is_a_full_real_pass",
+   "ok": true
+  },
+  {
+   "name": "receipt.primary_values_match_this_checkers_recomputation",
+   "ok": true
+  },
+  {
+   "name": "gate.check_count_matches_the_declared_census",
+   "ok": true
+  }
+ ],
+ "date": "2026-08-08",
+ "expected_check_count": 25,
+ "fail": 0,
+ "inputs": [
+  "outputs/salvaged_exact_algebra_receipt_2026_08_08.json"
+ ],
+ "pass": 25,
+ "payload_sha256": "e367abdfd4072a4b6a78666cd020b1ebf3429a6ac716b8d6e09927c042f61e10",
+ "role": "salvage independent check: every unit recomputed by a different exact route; primary receipt verified fail-closed",
+ "script": "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+ "units": {
+  "forms_by_polynomials": {
+   "fixed_locus_rows": [
+    {
+     "N": 2,
+     "matches": true,
+     "sum": "1/4"
+    },
+    {
+     "N": 3,
+     "matches": true,
+     "sum": "2/3"
+    },
+    {
+     "N": 4,
+     "matches": true,
+     "sum": "5/4"
+    },
+    {
+     "N": 5,
+     "matches": true,
+     "sum": "2/1"
+    },
+    {
+     "N": 6,
+     "matches": true,
+     "sum": "35/12"
+    },
+    {
+     "N": 7,
+     "matches": true,
+     "sum": "4/1"
+    },
+    {
+     "N": 8,
+     "matches": true,
+     "sum": "21/4"
+    },
+    {
+     "N": 9,
+     "matches": true,
+     "sum": "20/3"
+    },
+    {
+     "N": 10,
+     "matches": true,
+     "sum": "33/4"
+    },
+    {
+     "N": 11,
+     "matches": true,
+     "sum": "10/1"
+    },
+    {
+     "N": 12,
+     "matches": true,
+     "sum": "143/12"
+    }
+   ]
+  },
+  "grading_by_interpolation": {
+   "configurations": 1296,
+   "fresh_probes": [
+    "5/7",
+    "-13/9"
+   ]
+  },
+  "module_by_characters": {
+   "dimension_pair_over_Q": [
+    1,
+    2
+   ],
+   "multiplicities_over_C": [
+    1,
+    1,
+    1
+   ]
+  },
+  "origin_by_elimination": {
+   "identity": "G0 - G1 = (1 - m*G0)/6"
+  },
+  "pointer_by_edge_removal": {
+   "eight_vertex_seeded": 200,
+   "eight_vertex_with_cycle_through_pointer": 138,
+   "five_vertex_graphs": 1024,
+   "five_vertex_with_cycle_through_pointer": 591
+  },
+  "primary_receipt": {
+   "primary_digest": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+   "primary_fail": 0,
+   "primary_pass": 31
+  },
+  "split_by_reynolds": {
+   "probe_count": 125
+  },
+  "witness_by_trace": {
+   "n_range": [
+    2,
+    50
+   ]
+  }
+ },
+ "verdict": "PASS"
+}

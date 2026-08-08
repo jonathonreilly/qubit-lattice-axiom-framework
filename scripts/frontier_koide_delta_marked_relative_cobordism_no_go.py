@@ -315,6 +315,46 @@ def main() -> int:
         "Need a retained non-scalar rank-one boundary mark and a retained zero endpoint section.",
     )
 
+    section("N5 execution certificate")
+    print(
+        "  per_element: two-by-two entries are what the scalar test actually reads "
+        "- each restricted operator is compared against its own averaged diagonal "
+        "times the identity through a Frobenius norm against TOL = 1e-8, and on "
+        "the symbolic side the retained mark is matched against Matrix([[lambda, "
+        "0], [0, lambda]]) position by position while the selector commutator is "
+        "printed as the explicit zero matrix rather than as a scalar norm"
+    )
+    print(
+        "  per_site: exercised upstream and never resolved here - the imported "
+        "Wilson construction lays out a periodic three-by-three-by-three "
+        "arrangement and writes a one into each translation matrix at the pair of "
+        "indices joining a site to its neighbour, but this runner consumes only "
+        "the finished operators, so no occupation, amplitude or projector value "
+        "at any single site is read back or reported"
+    )
+    print(
+        "  per_mode: the kernel is isolated mode by mode - the full Dirac operator "
+        "is diagonalized with eigh, the eigenvalues whose modulus falls under TOL "
+        "= 1e-8 select the zero block, the corresponding eigenvectors are "
+        "assembled into the spectral projector, and the two zeta-character lines "
+        "are then extracted from that kernel to span the multiplicity space"
+    )
+    print(
+        "  per_block: the rank-two character multiplicity space is the block and "
+        "the entire no-go is that it will not split - all four retained objects, "
+        "the Dirac operator, the character unitary, its adjoint and the "
+        "zero-spectral projector, are restricted to that block and each "
+        "restriction comes back proportional to the identity, so no rank-one line "
+        "inside it is distinguished by retained data"
+    )
+    print(
+        "  lattice_wide: a finite-N statement over one periodic lattice of "
+        "twenty-seven sites, repeated at the two Wilson parameters 1.0 and 1.425 "
+        "and at nothing else - there is no volume sweep, no boundary variation "
+        "and no limit in linear size, so the scalar-restriction conclusion is "
+        "established on that fixed finite system and is not extended to any "
+        "infinite-volume claim"
+    )
     print()
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
     n_total = len(PASSES)

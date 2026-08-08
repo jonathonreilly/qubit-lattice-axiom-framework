@@ -11,14 +11,19 @@ derivation, own slot allocation (a DIFFERENT tag ordering, so agreement
 cannot come from sharing an allocation), own composed scan, own content
 model and own perturbation probe.
 
-Grade and semantic scope (demoted on physics review, iteration 1,
+Grade and semantic scope (demoted on physics review, iterations 1-2,
 2026-08-08): the reproduced cells are bounded support certificates, not
 a redundancy no-go.  Every perturbation here changes the SOURCE state
-before any copy is formed (common-mode), so for identical replicas the
-majority R-invariance is forced by construction; no stored copy slot is
-faulted after writing.  Sides are FIXED perturbation banks (bank0/bank1
-payload wires), not a near/far record-locality contrast: no
-record-location selector is defined and no bank-swap control was run.
+before any copy is formed (common-mode), so for identical REPLICATED
+copies the majority R-invariance is forced by construction; the
+staggered and deep-staggered zero R-deltas are SAMPLED finite results
+on different-time digests -- they hold on the constructed objects under
+the declared probes, and no forcing claim is made for them (this
+checker's deep-staggered refutation gate permits an R-gain in
+principle).  No stored copy slot is faulted after writing.  Sides are
+FIXED perturbation banks (bank0/bank1 payload wires), not a near/far
+record-locality contrast: no record-location selector is defined and no
+bank-swap control was run.
 The content word is a stipulated model fingerprint (truncated SHA-256 of
 the packed lane state with register slots zeroed); no framework
 record-content identification is claimed.
@@ -87,11 +92,11 @@ EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[1]:
-        "e81e8724eaefc421a05e4d35f30b96adb4e97e9cebab9c8ff96c1a6b676861bc",
+        "3aee550eb2d0c2e9451ce47ab0c5faa318e3832f31969055d54840820ee96841",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "aa8d6f44ccd8ac985ea5f4ac5f53a4be381cdf21",
+    AUDIT_INPUT_PATHS[1]: "dcaed7a7d1a5ab0caab4c4ff76fb4a58ad0c9ad5",
 }
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -137,8 +142,10 @@ DEAD_ZERO_SAMPLE = 64
 
 # ---- the primary's declared numbers, reproduced or refuted here --------
 # (probes, fired, majority_equal) per class and fixed bank side,
-# identical at every R in the primary's emitted tally -- that constancy
-# is the primary's emitted (constructionally forced) identity.
+# identical at every R in the primary's emitted tally.  For replicated
+# cells that constancy is constructionally forced (identical copies);
+# for staggered cells it is a sampled finite result reproduced here,
+# with no forcing claim.
 _REP_CELLS = {
     "one_flip": {"bank0": (32, 32, 0), "bank1": (32, 32, 0)},
     "late_acting": {"bank0": (13, 13, 0), "bank1": (25, 25, 0)},
@@ -981,9 +988,12 @@ def attack_probe(ctx):
         "probe_semantics": (
             "every perturbation changes the SOURCE state before any copy"
             " is formed (common-mode); no stored copy slot is faulted"
-            " after writing, so identical-replica majority R-invariance"
-            " is forced by construction (an exact identity, not"
-            " fault-tolerance evidence)"
+            " after writing; identical REPLICATED copies give a forced"
+            " majority R-invariance (an exact identity, not"
+            " fault-tolerance evidence), while the staggered and"
+            " deep-staggered zero R-deltas are sampled finite results on"
+            " different-time digests, holding on the constructed objects"
+            " with forcing left open"
         ),
         "observed": observed,
         "per_r_full_cells": tally,

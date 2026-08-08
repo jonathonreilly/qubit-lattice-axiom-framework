@@ -32,7 +32,12 @@ copies of a perturbed walk digest the same changed state (a common-mode
 probe).  For identical replicas majority([w]*r, r) = w for every r, so
 the emitted R-invariance of replicated-mode majority readback is forced
 by construction; it is reported as an exact identity, not as evidence
-about fault tolerance.  No stored copy slot is ever mutated, erased, or
+about fault tolerance.  That identity covers the REPLICATED mode only:
+staggered copies are different-time digests of one trajectory, not
+identical words, so the emitted staggered zero R-delta is a SAMPLED
+finite result that holds on the constructed objects under the declared
+probes -- whether it is forced is an open obligation, and no forcing
+claim is made for it.  No stored copy slot is ever mutated, erased, or
 read under a fault after writing.  Untested routes, named: post-write
 faults on a proper subset of copy groups, erasure of selected copies,
 channel-local noise, error-detecting/erasure codes, and any decoder
@@ -1067,9 +1072,12 @@ def main() -> int:
         "probe_semantics": (
             "every perturbation changes the SOURCE state before any copy"
             " is formed (common-mode); no stored copy slot is faulted"
-            " after writing, so for identical replicas the majority"
-            " R-invariance is forced by construction and is reported as an"
-            " exact identity, not as fault-tolerance evidence"
+            " after writing; for identical REPLICATED copies the majority"
+            " R-invariance is forced by construction (an exact identity,"
+            " not fault-tolerance evidence), while the STAGGERED zero"
+            " R-delta is a sampled finite result on different-time digests"
+            " -- it holds on the constructed objects but is not claimed"
+            " forced"
         ),
         "payload_derivation": {
             "pool_size": len(payload_pool),
@@ -1174,7 +1182,8 @@ def main() -> int:
     lines = ["CYCLE874_COPY_REDUNDANCY_CONTENT",
              "BOUNDED_SUPPORT_CERTIFICATES_ONLY_NO_AXIOM_SURFACE_TOUCHED",
              "COMMON_MODE_PROBES_NO_STORED_COPY_FAULT_TESTED",
-             "SIDES_ARE_FIXED_BANKS_NOT_RECORD_LOCALITY"]
+             "SIDES_ARE_FIXED_BANKS_NOT_RECORD_LOCALITY",
+             "REPLICATED_IDENTITY_FORCED_STAGGERED_ZERO_DELTA_SAMPLED"]
     for name, payload in (("A_REDUNDANT_CONTENT_REGISTER", cert_a),
                           ("B_CONTENT_READBACK", cert_b),
                           ("C_REDUNDANCY_UNDER_PERTURBATION", cert_c),
@@ -1185,9 +1194,11 @@ def main() -> int:
         "checks": checks, "cycle": 874,
         "r_values": R_VALUES, "modes": REDUNDANCY_MODES,
         "semantic_scope": (
-            "common-mode probes on fixed bank sides; identical-replica"
-            " majority R-invariance is forced by construction; no"
-            " stored-copy fault, locality, or framework-record claim"
+            "common-mode probes on fixed bank sides; replicated-mode"
+            " majority R-invariance is forced by construction (identical"
+            " copies), staggered zero R-delta is a sampled finite result"
+            " (forcing open); no stored-copy fault, locality, or"
+            " framework-record claim"
         ),
         "redundancy_changes_majority_readback": {
             mode: r_dependence[mode]["any_change"] for mode in REDUNDANCY_MODES

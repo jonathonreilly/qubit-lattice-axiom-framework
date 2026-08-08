@@ -24,6 +24,15 @@ Runners:
 - [`frontier_cycle874_copy_redundancy_content_2026_07_28.py`](../scripts/frontier_cycle874_copy_redundancy_content_2026_07_28.py)
 - [`frontier_cycle874_redundancy_independent_check_2026_07_28.py`](../scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py)
 
+The independent checker is CLAIM-SCOPED and CO-LOAD-BEARING for this
+note: Result 3 (the projection-shard partial observation) and the
+refutation gates exist only on the checker's surface, and the checker
+is deliberately not imported by the primary, so automatic import
+discovery cannot attach it to the audit packet. It is declared as this
+note's packet helper runner in the Status fields below, and its
+claim-scoped registration at landing is a hard landing condition
+recorded in the Review record.
+
 Receipt:
 
 - [`copy_redundancy_content_cycle874_receipt_2026_07_28.json`](../outputs/copy_redundancy_content_cycle874_receipt_2026_07_28.json)
@@ -56,7 +65,7 @@ over the landed, sha-pinned Cycle-719 kernel — their only computed
 input; census, seeds, schedules, dirty partition, and dead-wire pool
 are all derived in-file.
 
-## Result 1 — an exact common-mode identity, not a redundancy no-go
+## Result 1 — a replicated-mode identity plus sampled staggered results, not a redundancy no-go
 
 Across R = 1 → 3, in the two declared modes (replicated; staggered at
 consecutive clean edges) and the checker's 4x-wider deep-staggered
@@ -64,15 +73,26 @@ scheme, zero of eight majority-readback cells change and the
 flip-and-restore bank gap is flat in R (0.09375 replicated, 0.107143
 staggered, at every R).
 
-Read this exactly: every perturbation in this package changes the
-SOURCE state BEFORE any copy is formed, so all copies of a perturbed
-walk digest the same changed state. For identical replicas,
-majority([w]*R, R) = w for every tested R — the replicated-mode
-R-invariance is forced by the construction. The staggered copies are
-different-time digests of one trajectory (register agreement only
-115/157 lanes at R=3), not independent transmissions of one fixed
-word. No stored copy slot is ever mutated, erased, or read under a
-fault after writing.
+Read this exactly, and split it by mode. Every perturbation in this
+package changes the SOURCE state BEFORE any copy is formed, so all
+copies of a perturbed walk digest the same changed state. The two
+statuses differ:
+
+- REPLICATED — exact constructional identity. The R copies are
+  identical words, and majority([w]*R, R) = w for every tested R, so
+  the replicated-mode R-invariance is forced by the construction.
+- STAGGERED and DEEP-STAGGERED — sampled finite results only. These
+  copies are different-time digests of one trajectory (register
+  agreement only 115/157 lanes at R=3), not identical words and not
+  independent transmissions of one fixed word, so the identity above
+  does NOT apply to them. Their zero R-delta is an enumerated
+  certificate that HOLDS on the constructed objects under the declared
+  finite probes; whether it is forced is an OPEN obligation. The
+  checker's deep-staggered refutation gate permits an R-gain in
+  principle, which is consistent only with this sampled status.
+
+No stored copy slot is ever mutated, erased, or read under a fault
+after writing, in any mode.
 
 This is therefore NOT a copy-redundancy no-go. Untested routes, named:
 post-write faults on a proper subset of the allocated copy groups,
@@ -158,6 +178,33 @@ bounded-theorem wrapper to a bounded support note:
   scan's own first-clean moments. All emitted numbers reproduced
   exactly under the rewrite; logs and receipt were regenerated.
 
+Confirmation pass iteration 2 (Sol, 2026-08-08, CONFIRMATION FAIL on
+two items; fixed in this revision):
+
+- The R-invariance wording was split by mode on every live surface:
+  the constructional identity majority([w]*R, R) = w covers IDENTICAL
+  replicated copies only; the staggered and deep-staggered zero
+  R-deltas are sampled finite certificates that hold on the
+  constructed objects, with any forcing left as an open obligation.
+  Earlier wording that presented all common-mode R-invariance as
+  forced "by construction" is retired.
+- The independent checker was absent from the machine audit packet
+  (it is not imported by the primary, so import discovery cannot see
+  it, while Result 3 exists only on its surface). It is now declared
+  claim-scoped and co-load-bearing, with a machine-readable
+  `packet_helper_runner` line in the Status fields. HARD LANDING
+  CONDITION: at landing, the orchestrator must add exactly this
+  claim-scoped entry to `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+  `docs/audit/scripts/build_citation_graph.py` (this stale branch must
+  not edit audit tooling), and the current-main changed-evidence gate
+  must be run on the landing topology:
+
+  ```python
+  "copy_redundancy_content_cycle874_bounded_theorem_note_2026-07-28": [
+      "scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py",
+  ],
+  ```
+
 ## Trace gate
 
 ```yaml
@@ -178,7 +225,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "exact finite certificates only: write/readback construction, the forced common-mode R-invariance identity, fixed-bank restore tallies, and the shard partial observation; the checker replicated with a different allocator and wider schemes, zero refutations; no negative, locality, framework-record, or protection claim is carried"
+packet_helper_runner: scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py
+claim_type_reason: "exact finite certificates only: write/readback construction, the forced replicated-mode identity majority([w]*R,R)=w, the SAMPLED staggered/deep-staggered zero R-deltas (invariance holding on the constructed objects; forcing open), fixed-bank restore tallies, and the shard partial observation; the checker replicated with a different allocator and wider schemes, zero refutations; no negative, locality, framework-record, or protection claim is carried"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -213,18 +261,23 @@ their landing status.
 
 - the disjoint inert-slot write/readback construction (0 mismatches,
   977 words, 321 slots);
-- the common-mode R-invariance identity of majority readback (both
-  modes, plus the checker's deep-staggered scheme);
+- the replicated-mode common-mode R-invariance identity (forced:
+  majority([w]*R, R) = w for identical copies);
+- the sampled zero R-delta of staggered and deep-staggered majority
+  readback under the declared finite probes (an invariance holding on
+  the constructed objects; not constructionally forced);
 - the fixed-bank flip-and-restore decomposition: firing gaps 3/32 and
   3/28 with zero fired-conditioned content gap in this sample;
 - the shard partial observation (at least one unchanged shard digest
-  under every sampled direct flip).
+  under every sampled direct flip; checker surface only).
 
 ### Open
 
 - the framework record-content bridge for the stipulated fingerprint;
 - a declared fault/channel model on stored copies, and with it any
   actual redundancy verdict;
+- whether the staggered/deep-staggered zero R-delta is forced by the
+  construction or contingent on the declared finite sample;
 - a non-tautological record-location selector plus bank-swap control,
   and with it any locality reading of the bank gap;
 - reconstruction from surviving shards;
@@ -233,10 +286,12 @@ their landing status.
 
 ## Verdict
 
-This package certifies four exact finite results on a stipulated model
-over the landed Cycle-719 kernel: the register construction, a
-constructionally forced common-mode R-invariance, a fixed-bank
-restore-firing decomposition, and a shard-survival partial observation.
-It decides nothing about whether copy redundancy protects record
-content — that question needs a stored-copy fault model this package
-does not have. Independent audit still required.
+This package certifies five exact finite results on a stipulated model
+over the landed Cycle-719 kernel: the register construction, the
+constructionally forced replicated-mode R-invariance identity, the
+sampled staggered/deep-staggered zero R-deltas, a fixed-bank
+restore-firing decomposition, and a shard-survival partial observation
+(carried on the claim-scoped checker). It decides nothing about
+whether copy redundancy protects record content — that question needs
+a stored-copy fault model this package does not have. Independent
+audit still required.

@@ -2,8 +2,6 @@
  "audit": "unset",
  "authority": "none",
  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (codex quota exhausted 2026-08-03; substitution disclosed); supervisor line-by-line review",
- "block": "toe-time-blockN1-20260802",
- "campaign": "toe-time-expansion-20260802",
  "certificates": {
   "logs/runner-cache/frontier_cycle870_census_independent_check_2026_07_28.txt": {
    "fail": 0,
@@ -21,38 +19,45 @@
   "primary_claims_survived": 16
  },
  "claim_type": "bounded_theorem",
+ "conditional_on": "the supplied free Cartesian Z_4 phase premise (one global four-valued label independent of the site subset; supplied, not derived) -- every factor-four phased value, the 4*spf(n) floor, and the k=1 extension of the Cycle-857 row are conditional on it",
  "cycles": [
   870
  ],
  "files": {
   "docs/GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "ec31a00b57707c25ef944366f751ea3a10409acd",
-   "sha256": "c8a80f35d48056396a10477d501da898275c950c2a6001e9dbccad207b26931f"
+   "git_blob": "bb4960400fa25fc82cf4045c68bf2163d71380ff",
+   "sha256": "c0bd1fa5913aee7d0577962c2fe83a135507360e623df51f0e25da4eda4d836e"
   },
   "logs/runner-cache/frontier_cycle870_census_independent_check_2026_07_28.txt": {
-   "git_blob": "8549fd12c5e4c483a5bdc96c8c426234cb56c535",
-   "sha256": "775c7c587cf67ebc923270e1a298c298cd858ab7245e292886861a969aa3a485"
+   "git_blob": "5bc39507d925215e62a1e174a02d0ab3d94378ff",
+   "sha256": "a5b8a611783ddb1e4edde7fce293e73ac47df8947c1b5354a5fe311fd2cacd71"
   },
   "logs/runner-cache/frontier_cycle870_general_n_census_2026_07_28.txt": {
-   "git_blob": "b8aeff672ef96c044f343bda0a247692e101bafa",
-   "sha256": "4cdcaf3fce2fe91ed8c59df824052842c9dd984aba3c9e0a8a31ac1b3041fc92"
+   "git_blob": "3232bf367c76e9a87d54ec1f05914c7aea92a59d",
+   "sha256": "74e2b80c57a52548e44b359e6824bc95e59c1fa30bb9634c32f1d97fcdf9f99d"
   },
   "scripts/frontier_cycle870_census_independent_check_2026_07_28.py": {
-   "git_blob": "9c31d715c490a339d6322425827818d0359a11cb",
-   "sha256": "2a981687560f2d4098ca25b74bff79a08fd9bfd573cf04fafd0a06dfc60f0d6a"
+   "git_blob": "1d2eb92e63021aaa1ff218dba797af63c14dcfad",
+   "sha256": "71c02ec6990e14307c6d7192e75e1381f2437929a3f415e7e494ce43b63844aa"
   },
   "scripts/frontier_cycle870_general_n_census_2026_07_28.py": {
-   "git_blob": "4477d08aef6ea2646738946797fa1adfbceb9c27",
-   "sha256": "3470cc2ef70ec0e88ad8ce17a9e1ac17416c67b5319c5731e67cf5b07a0fa7dd"
+   "git_blob": "4d8eb188db6372a7e61bad846118cee612b9aeab",
+   "sha256": "3b497c65a6a29dd7ec1b07294366d687559f1b57a45a93ee7e1b662b152f5e2a"
   }
  },
- "headline": "N(n,k) = 4*(n/k)*C(n-k-1,k-1); external n=12 spectrum correct only rescoped k>=2; min covariant selection = spf(n)",
+ "headline": "unphased census law I(n,k) = (n/k)*C(n-k-1,k-1) derived; phased x4 forms conditional on the supplied Z_4 premise; min nonempty C_n-invariant placement subset = spf(n); supplied comparator tuple matches k>=2, not its declared k=2 label (local comparison against a stipulated in-file literal, no source artifact)",
  "incident": "checker no-hardcoded-answer probe caught EXTENDED_N_MAX=36 colliding with I(12,5)=36; bound moved to 40, cache re-pinned",
  "independence": "cross-context (shared authoring model family; disjoint machinery, import firewall, integer-only checker)",
  "note": "docs/GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md",
- "prior_art_search_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+ "review_loop": {
+  "date": "2026-08-08",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix_summary": "branch-gated PASS removed from both runners (branch/HEAD now provenance-only); phased x4 census and 4*spf(n) floor demoted to conditional on the supplied Z_4 premise; external-source attribution of the n=12 comparator removed (stipulated in-file literal, local comparison only); landed Cycle-857 comparison rescoped to k=2..5 with k=1 marked as new scope; selection defined as nonempty C_n-invariant subset; checker M5 mutant corrected to 4^k with placement multiplicity plus k=1/k>=2 teeth checks; primary/helper runner headings adopted; workflow branch/block metadata fields dropped from this receipt",
+  "iteration": 1,
+  "reviewer": "Sol"
+ },
  "runtime_seconds": {
-  "checker": 0.15,
-  "primary": 1.23
+  "checker": 0.19,
+  "primary": 1.75
  }
 }

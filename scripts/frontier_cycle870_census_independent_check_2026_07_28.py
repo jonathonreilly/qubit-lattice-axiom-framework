@@ -10,11 +10,21 @@ is recomputed by a deliberately different route:
   * orbit structure by minimal-period canonical forms and, independently, by
     Burnside/Moebius inversion over the divisor lattice with fixed-point
     counts read off the C_gcd sub-ring -- not by rotating sets;
-  * the selection floor from that Moebius spectrum alone.
+  * the invariant-subset floor from that Moebius spectrum alone.
 
 The harness is spec'd to REFUTE.  Each primary claim gets a refutation
 attempt; the checker also runs its refuter against deliberately wrong
 mutants and fails if the refuter cannot kill them.
+
+Demoted surfaces (review iteration 1, 2026-08-08, FIX_THEN_PROCEED): the
+factor-four phased values re-checked here are CONDITIONAL on the
+primary's SUPPLIED free Cartesian Z_4 phase premise, which neither
+script derives; the n=12 comparator tuple is a stipulated in-file
+literal with no source artifact, so its comparison is local and
+attributes nothing to any external document; "selection" means exactly
+a nonempty C_n-invariant subset of the finite placement set; and the
+running branch and HEAD are recorded as provenance only, with no PASS
+authority.
 """
 from __future__ import annotations
 
@@ -32,7 +42,6 @@ from time import monotonic
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150_000
-EXPECTED_BRANCH = "physics-loop/toe-time-blockN1-20260802"
 
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle870_general_n_census_2026_07_28.py",
@@ -42,13 +51,13 @@ PRIMARY_PATH, PRIMARY_CACHE_PATH = AUDIT_INPUT_PATHS
 PRIMARY_MODULE = Path(PRIMARY_PATH).stem
 EXPECTED_SHA256 = {
     PRIMARY_PATH:
-        "3470cc2ef70ec0e88ad8ce17a9e1ac17416c67b5319c5731e67cf5b07a0fa7dd",
+        "3b497c65a6a29dd7ec1b07294366d687559f1b57a45a93ee7e1b662b152f5e2a",
     PRIMARY_CACHE_PATH:
-        "4cdcaf3fce2fe91ed8c59df824052842c9dd984aba3c9e0a8a31ac1b3041fc92",
+        "74e2b80c57a52548e44b359e6824bc95e59c1fa30bb9634c32f1d97fcdf9f99d",
 }
 EXPECTED_GIT_BLOBS = {
-    PRIMARY_PATH: "4477d08aef6ea2646738946797fa1adfbceb9c27",
-    PRIMARY_CACHE_PATH: "b8aeff672ef96c044f343bda0a247692e101bafa",
+    PRIMARY_PATH: "4d8eb188db6372a7e61bad846118cee612b9aeab",
+    PRIMARY_CACHE_PATH: "3232bf367c76e9a87d54ec1f05914c7aea92a59d",
 }
 
 PHASE_COUNT = 4
@@ -309,7 +318,8 @@ def spectrum_by_scope(
     return dict(sorted(counts.items()))
 
 
-def min_covariant_selection(n: int) -> int:
+def min_invariant_subset(n: int) -> int:
+    """Minimum size of a nonempty C_n-invariant subset of placements."""
     return min(
         orbit_size for (orbit_size, k) in moebius_spectrum(n) if k >= 1
     )
@@ -501,10 +511,13 @@ def certificate_c_refutation(cache: dict[str, object]) -> dict[str, object]:
         for (orbit_size, k), total in moebius.items() if k == 2
     }
     k_ge_2 = spectrum_by_scope(moebius, 2)
-    external = {int(k): v for k, v in n12["external_unphased_spectrum"].items()}
-    external_row = tuple(n12["external_phased_row"])
+    comparator = {
+        int(k): v
+        for k, v in n12["supplied_comparator_spectrum"].items()
+    }
+    comparator_row = tuple(n12["supplied_comparator_phased_row"])
     phased_multiplicities = tuple(
-        PHASE_COUNT * k_ge_2[size] for size in sorted(external)
+        PHASE_COUNT * k_ge_2[size] for size in sorted(comparator)
     )
 
     # The law as the primary states it, re-evaluated from independent counts.
@@ -523,11 +536,11 @@ def certificate_c_refutation(cache: dict[str, object]) -> dict[str, object]:
             )
 
     spf_rows_ok = all(
-        min_covariant_selection(n) == smallest_prime_factor(n)
+        min_invariant_subset(n) == smallest_prime_factor(n)
         for n in range(3, MOEBIUS_N_MAX + 1)
     )
-    no_singleton_selection = all(
-        min_covariant_selection(n) > 1 for n in range(3, MOEBIUS_N_MAX + 1)
+    no_singleton_subset = all(
+        min_invariant_subset(n) > 1 for n in range(3, MOEBIUS_N_MAX + 1)
     )
 
     claims = {
@@ -544,62 +557,79 @@ def certificate_c_refutation(cache: dict[str, object]) -> dict[str, object]:
         "R6_n12_k_ge_2_spectrum": {
             str(size): count for size, count in sorted(k_ge_2.items())
         } == n12["native_spectra"]["K_GE_2"],
-        "R7_external_scope_label_is_wrong": (
-            k_eq_2 != external and n12["external_scope_refuted"] is True
+        "R7_comparator_declared_scope_mismatch": (
+            k_eq_2 != comparator
+            and n12["comparator_scope_label_mismatch"] is True
         ),
-        "R8_external_numbers_are_k_ge_2": (
-            k_ge_2 == external
-            and tuple(n12["external_spectrum_matching_scopes"]) == ("K_GE_2",)
+        "R8_comparator_numbers_are_k_ge_2": (
+            k_ge_2 == comparator
+            and tuple(n12["comparator_spectrum_matching_scopes"])
+            == ("K_GE_2",)
         ),
         "R9_phased_row_is_multiplicities": (
-            phased_multiplicities == external_row
-            and n12["external_phased_row_is_multiplicities"] is True
+            phased_multiplicities == comparator_row
+            and n12["comparator_phased_row_is_multiplicities"] is True
         ),
         "R10_phased_row_is_not_orbit_sizes": (
-            tuple(PHASE_COUNT * size for size in sorted(external))
-            != external_row
+            tuple(PHASE_COUNT * size for size in sorted(comparator))
+            != comparator_row
         ),
-        "R11_min_covariant_selection_n12": (
+        "R11_min_invariant_subset_n12": (
             scope["min_nonempty_orbit_size_n12"]
-            == min_covariant_selection(COMPOSITE_N) == 2
+            == min_invariant_subset(COMPOSITE_N) == 2
         ),
-        "R12_selection_floor_is_spf": spf_rows_ok,
-        "R13_no_single_placement_selection": no_singleton_selection,
+        "R12_invariant_subset_floor_is_spf": spf_rows_ok,
+        "R13_no_singleton_invariant_subset": no_singleton_subset,
         "R14_prime_n11_orbits_all_free": (
-            min_covariant_selection(PRIME_N) == PRIME_N
+            min_invariant_subset(PRIME_N) == PRIME_N
             and tuple(scope["prime_n11_orbit_sizes"]) == (PRIME_N,)
         ),
         "R15_primary_theorem_string_matches_law": (
-            "4 * (n/k) * C(n-k-1, k-1)" in str(law["theorem"])
-            and "4 * n/(n-k) * C(n-k, k)" in str(law["theorem"])
+            "(n/k) * C(n-k-1, k-1)" in str(law["theorem"])
+            and "n/(n-k) * C(n-k, k)" in str(law["theorem"])
+            and "Conditional on the supplied phase premise"
+            in str(law["theorem"])
+            and "supplied, not derived" in str(law["theorem"])
         ),
         "R16_final_block_consistent": (
             final is not None
-            and final["min_covariant_selection_n12"] == 2
-            and final["min_covariant_selection_n12_with_phase"]
+            and final["min_invariant_subset_n12"] == 2
+            and final["min_invariant_subset_n12_with_phase_conditional"]
             == PHASE_COUNT * 2
+            and final["phase_values_conditional_on_supplied_premise"] is True
             and final["pass"] is True
         ),
     }
     verdicts = run_refuter(claims)
 
     # Harness teeth: the same refuter applied to deliberately wrong claims.
+    # M5 is the per-source-phase census model N(n,k) = 4^k * I(n,k): the
+    # mutant keeps the placement multiplicity I(n,k) on its own side, so it
+    # AGREES with the correct model at k = 1 and must fail at some k >= 2.
+    n11_unphased = ring_profile_dp(PRIME_N)
+    m5_mutant_agrees_at_k1 = (
+        PHASE_COUNT * n11_unphased[1] == PHASE_COUNT**1 * n11_unphased[1]
+    )
+    m5_mutant_fails_beyond_k1 = any(
+        PHASE_COUNT * v != PHASE_COUNT**k * v
+        for k, v in n11_unphased.items() if k >= 2
+    )
     mutant_claims = {
         "M1_n11_row_off_by_one": independent_n11 == dict(
             independent_n11, **{"5": independent_n11["5"] + 1}
         ),
-        "M2_external_is_k_eq_2": k_eq_2 == external,
-        "M3_min_selection_is_one": min_covariant_selection(COMPOSITE_N) == 1,
+        "M2_comparator_is_k_eq_2": k_eq_2 == comparator,
+        "M3_min_invariant_subset_is_one": min_invariant_subset(COMPOSITE_N) == 1,
         "M4_floor_is_largest_prime_factor": all(
-            min_covariant_selection(n) == max(
+            min_invariant_subset(n) == max(
                 p for p in range(2, n + 1)
                 if n % p == 0 and smallest_prime_factor(p) == p
             )
             for n in range(3, 25)
         ),
         "M5_phase_factor_is_4_to_the_k": all(
-            PHASE_COUNT * v == PHASE_COUNT**k
-            for k, v in ring_profile_dp(PRIME_N).items() if k
+            PHASE_COUNT * v == PHASE_COUNT**k * v
+            for k, v in n11_unphased.items() if k
         ),
         "M6_counts_are_plain_binomials": all(
             ring_profile_dp(12).get(k, 0) == _binomial(12, k)
@@ -635,12 +665,17 @@ def certificate_c_refutation(cache: dict[str, object]) -> dict[str, object]:
         "independent_k_eq_2_spectrum": key_str(k_eq_2),
         "independent_k_ge_2_spectrum": key_str(k_ge_2),
         "independent_phased_multiplicities": phased_multiplicities,
-        "selection_floor_range": (3, MOEBIUS_N_MAX),
+        "phase_values_conditional_on_supplied_premise": True,
+        "m5_mutant_agrees_at_k1": m5_mutant_agrees_at_k1,
+        "m5_mutant_fails_beyond_k1": m5_mutant_fails_beyond_k1,
+        "invariant_subset_floor_range": (3, MOEBIUS_N_MAX),
     }
     result["pass"] = (
         not result["primary_claims_refuted"]
         and not result["mutants_surviving"]
         and result["mutants_refuted"] == len(mutant_claims)
+        and result["m5_mutant_agrees_at_k1"]
+        and result["m5_mutant_fails_beyond_k1"]
     )
     return result
 
@@ -812,9 +847,11 @@ def certificate_e_controls(
         "write_calls_found": write_calls,
         "blocker_hits": tuple(PRIMARY_BLOCKER.hits),
         "primary_module_never_loaded": PRIMARY_MODULE not in sys.modules,
-        "running_branch": git_text("rev-parse", "--abbrev-ref", "HEAD"),
-        "expected_branch": EXPECTED_BRANCH,
-        "execution_head_sha": git_text("rev-parse", "HEAD"),
+        # Branch and HEAD are provenance only: they never gate PASS, so
+        # the checker is portable to main, detached, and audit worktrees.
+        "running_branch_provenance_only":
+            git_text("rev-parse", "--abbrev-ref", "HEAD"),
+        "execution_head_sha_provenance_only": git_text("rev-parse", "HEAD"),
         "primary_is_tracked_at_head": PRIMARY_PATH in git_text(
             "ls-tree", "--name-only", "HEAD", "scripts/"
         ),
@@ -835,7 +872,6 @@ def certificate_e_controls(
         and result["no_write_calls_in_source"]
         and not result["blocker_hits"]
         and result["primary_module_never_loaded"]
-        and result["running_branch"] == EXPECTED_BRANCH
         and result["primary_is_tracked_at_head"]
         and result["determinism_replay"]
         and runtime_seconds < AUDIT_TIMEOUT_SEC
@@ -899,9 +935,14 @@ def render(
             refutation["independent_k_eq_2_spectrum"],
         "independent_k_ge_2_spectrum":
             refutation["independent_k_ge_2_spectrum"],
-        "external_scope_label_verdict":
-            "REFUTED_AS_K_EQ_2_CORRECT_AS_K_GE_2",
-        "selection_floor_law": "min covariant selection size = spf(n)",
+        "comparator_scope_verdict":
+            "MISMATCH_UNDER_DECLARED_K_EQ_2_EXACT_AS_K_GE_2",
+        "phase_values_conditional_on_supplied_premise": True,
+        "invariant_subset_floor_law": (
+            "min nonempty C_n-invariant subset of placements has size "
+            "spf(n); the x4 phase lift is conditional on the supplied "
+            "Z_4 premise"
+        ),
         "runtime_seconds": controls["runtime_seconds"],
         "pass": all(value["pass"] for value in tables.values())
             and controls["pass"],

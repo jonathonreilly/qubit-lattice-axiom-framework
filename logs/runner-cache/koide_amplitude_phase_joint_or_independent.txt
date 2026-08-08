@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_amplitude_phase_joint_or_independent.py
-runner_sha256: bdd8cbd892464fbe69bccf04ad309f1645fa5f13c15cf75b68c680b23aef1474
+runner_sha256: 08420ea30ee6d92162d5e9b8b3b3ef004a52dc785606955192f238c387c15767
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -33,8 +33,8 @@ SECTION A: Brannen operator A = a I + b R + c R^2 -- what carries delta?
 SECTION B: Each (N-1)/N^2 mechanism at N=3 -- is 2/9 a PHASE or a MODULUS?
   For each, compute BOTH |.| and arg(.). Joint <=> arg=2/9 AND |.|^2=1/2.
 ------------------------------------------------------------------------------
-  [PASS] APS eta(1,2;3) is REAL (imag ~ 0)  -- eta=2.222222e-01+7.401487e-17j
-  [PASS] APS eta(1,2;3) = 2/9 as a REAL number (modulus=2/9, arg=0)  -- |eta|=0.222222, arg=3.33e-16
+  [PASS] APS eta(1,2;3) is REAL (imag ~ 0)  -- eta=2.222222e-01+1.110223e-16j
+  [PASS] APS eta(1,2;3) = 2/9 as a REAL number (modulus=2/9, arg=0)  -- |eta|=0.222222, arg=5.00e-16
   [PASS] APS eta modulus is 2/9, NOT 1/sqrt(2) -- not the amplitude  -- |eta|=0.222222 vs 1/sqrt2=0.707107
   per-block APS terms: 0.333333+0.000000j, 0.333333+0.000000j
   [PASS] per-block APS terms are REAL = 1/3 each (no phase)  -- blocks=['0.3333+0.0000j', '0.3333+0.0000j']
@@ -110,6 +110,15 @@ VERDICT
   both targets is a POSIT (independent polar coords), not a derivation. In these
   tested classes, sourcing delta=2/9 therefore does NOT source beta/a=1/sqrt2
   for free.
+
+------------------------------------------------------------------------------
+SECTION F: N5 EXECUTION CERTIFICATE -- resolution classes exercised here
+------------------------------------------------------------------------------
+  per_element: resolved one candidate object at a time — each named (N-1)/N^2 mechanism is carried separately through the same modulus/argument readout, APS eta(1,2;3), the anomaly Tr[Y^3] = 2/d^2, the Bernoulli variance (1/3)(2/3), the Hurwitz/B_2(1/3) reading, the Z_3 orbifold character e^{i*2/9} and the Burnside/K-theory class, and the joint test arg = 2/9 with modulus^2 = 1/2 is applied object by object, giving a joint-candidate count of exactly 0 rather than an aggregate verdict.
+  per_site: checked and not executed — no Z^3 position index exists anywhere in this runner; the only three-fold index is the generation label g = 0,1,2 of the C_3 orbit and of the sqrt(m) Fisher-Rao point, so there is no site, no neighbour and no site sum to resolve.
+  per_mode: resolved mode by mode on the Z_3 Fourier side — the eigenvalue vector v_g is transformed into its DFT coefficients c_0 = a, c_1 = beta e^{i phi} and c_2 = beta e^{-i phi} and each is read separately, which is what exhibits the decoupling: |c_1| = beta stays fixed while phi is varied over 0, 2/9, 1.0 and 2.0; the full orbit sum over the three modes cancels to 0 and the two-mode partial sum has modulus exactly 1 from the 120-degree geometry, neither reaching sqrt(2).
+  per_block: resolved block by block inside the APS eta, and this is where the phase actually dies — the two summand blocks 1/((w^k - 1)(w^{2k} - 1)) for k = 1, 2 are printed and tested individually and each is real and equal to 1/3, so the argument is already 0 at block level and the (1/p) sum only turns 1/3 + 1/3 into the real value 2/9; nothing acquires a phase in the aggregation step.
+  lattice_wide: checked and not executed — there is no lattice, no volume, no site sum and no limit taken here, and the negative statement is deliberately not global either: the eta search is a finite scan over p = 2..12 with every weight pair (a1, a2) in 1..p-1, and the verdict is stated as TESTED-CLASS INDEPENDENT, matching the note's N5 rhetoric audit which refuses to exclude untested future objects.
 
 SCORECARD: PASS=27 FAIL=0
 

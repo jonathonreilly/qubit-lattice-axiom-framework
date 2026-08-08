@@ -756,6 +756,55 @@ check(
 
 
 # ----------------------------------------------------------------------
+# Section 12 — N5 execution certificate (reporting only; adds no check)
+# ----------------------------------------------------------------------
+
+print()
+print("=" * 72)
+print("Section 12 — N5 execution certificate: resolution classes exercised here")
+print("=" * 72)
+print(
+    "  per_element: resolved one avenue and one functional at a time — the "
+    "seven avenues AV1 through AV7 are each scored separately for whether "
+    "they select F1, F3 or neither, and the three candidate functionals are "
+    "evaluated side by side at the same explicit points (a = 1.0, |b| = 0.5) "
+    "and (a = 0.7, |b| = 0.8) so that F2's difference from F1 and F3 is read "
+    "off pointwise rather than asserted."
+)
+print(
+    "  per_site: checked and not executed — this probe has no site index "
+    "anywhere; every object lives either in A^{C_3} inside M_3(C) or on the "
+    "two-slot (E_+, E_perp) plane, and no site sum, neighbour relation or "
+    "position-dependent quantity is formed in any of the twelve sections."
+)
+print(
+    "  per_mode: resolved character by character on \\hat{C_3} — the "
+    "Plancherel measure is confirmed uniform at (1/3, 1/3, 1/3) across the "
+    "three characters, the eigenvalues of H are matched one at a time against "
+    "the circulant character formula, and it is exactly this per-character "
+    "counting (1, 1, 1) that pushes AV1 and AV2 to the (1, 2) weighting and "
+    "hence to F3 rather than F1."
+)
+print(
+    "  per_block: resolved block by block, and the surviving ambiguity is "
+    "entirely a block-weight ambiguity — E_+ = 3 a^2 and E_perp = 6 |b|^2 are "
+    "computed separately and shown equal at the BAE point, F1 weights those "
+    "two blocks (1, 1) and extremizes at kappa = 2 which is BAE, F3 weights "
+    "the same two blocks (1, 2) and extremizes at kappa = 1, and AV6 states "
+    "plainly that nothing in the cited content picks the R-isotype (1, 1) "
+    "over the character-derived (1, 2)."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice, no volume, no "
+    "site sum and no limit is taken here, and the extremum claims are not "
+    "global either: they are argmax over finite grids on the constraint "
+    "segment, 21 points for the F1 and F3 comparison and 41 points for the F2 "
+    "robustness scan, so they are certified at that resolution against the "
+    "stated targets."
+)
+
+
+# ----------------------------------------------------------------------
 # Final summary
 # ----------------------------------------------------------------------
 

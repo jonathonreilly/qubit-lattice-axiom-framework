@@ -860,6 +860,66 @@ def section8_falsifiability_anchor():
 
 
 # --------------------------------------------------------------------
+# Section 9: N5 execution certificate (reporting only; adds no check)
+# --------------------------------------------------------------------
+
+def section9_n5_execution_certificate():
+    """State, per canonical resolution class, what this probe resolves.
+
+    Reporting only: returns nothing and appends no PASS/FAIL item.
+    """
+    print()
+    print("=" * 70)
+    print("Section 9: N5 execution certificate — resolution classes exercised here")
+    print("=" * 70)
+    print(
+        "  per_element: resolved term by term and case by case — the two beta "
+        "functions are compared coefficient by coefficient, beta_{y_t} "
+        "carrying 9/2 y^2, -8 g_3^2, -9/4 g_2^2 and -17/20 g_1^2 against a "
+        "beta_{y_tau} whose g_3^2 coefficient is exactly 0, the Jacobian at "
+        "A1 is probed one direction at a time in delta-a and delta-b, and the "
+        "five named counter-example circulants b = 0.3, 0.7, 1.0, 0.7071 and "
+        "1.5 are each separately checked Hermitian and C_3-commuting."
+    )
+    print(
+        "  per_site: checked and not executed — nothing here has a position; "
+        "the flow variables are the two coefficients (a, b) of a single "
+        "circulant on hw=1 and the flow parameter is an energy decade, not a "
+        "lattice coordinate, so no site index, site sum or neighbour term "
+        "appears in any of the five barriers."
+    )
+    print(
+        "  per_mode: resolved into the C_3 character modes — at the A1 point "
+        "the spectrum is separated into the alpha = 0 singlet and the "
+        "degenerate alpha = +/-1 doublet for real b, which is what makes the "
+        "equipartition statement a spectral one rather than a bare "
+        "parametrization; the flow itself, however, is run on (a, b) and not "
+        "mode by mode, so no eigenvalue is evolved separately."
+    )
+    print(
+        "  per_block: resolved block by block, and Barrier RG5 turns on it — "
+        "the Frobenius weight is split into the trivial a I block and the "
+        "nontrivial b U + b-bar U^{-1} block and the two shares are compared "
+        "directly at A1, while the rescaling test Y -> 2Y is shown to "
+        "multiply the quadratic and quartic block invariants by 4 and 16 so "
+        "the block ratio is preserved and no 2-form rigidity can select 1/2; "
+        "separately the gauge block and the matter block are kept apart, "
+        "since the retained running acts on the former only."
+    )
+    print(
+        "  lattice_wide: checked and honestly not achieved — there is no "
+        "lattice, no volume and no site sum in this probe, and no asymptotic "
+        "limit is taken either: every flow statement is integrated over a "
+        "finite window of about 17 decades from M_Pl down to v in a fixed "
+        "number of steps, and the six-point UV scan runs the named ratios "
+        "0.10, 0.30, 0.50, 0.70, 1.00 and 1.50 across that same finite "
+        "window, so the non-attraction verdict is certified on that window "
+        "against the stated thresholds, not in a true UV or IR limit."
+    )
+    print()
+
+
+# --------------------------------------------------------------------
 # Main entry
 # --------------------------------------------------------------------
 
@@ -879,6 +939,7 @@ def main():
     all_results += section6_no_hs_analog_for_matter()
     all_results += section7_combined_verdict()
     all_results += section8_falsifiability_anchor()
+    section9_n5_execution_certificate()
 
     n_total = len(all_results)
     n_pass = sum(all_results)

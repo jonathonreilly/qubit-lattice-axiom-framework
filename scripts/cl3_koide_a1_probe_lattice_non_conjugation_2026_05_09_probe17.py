@@ -1000,6 +1000,67 @@ def section9_closure_status() -> None:
 
 
 # ----------------------------------------------------------------------
+# Section 10: N5 execution certificate (reporting only; adds no check)
+# ----------------------------------------------------------------------
+
+
+def section10_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this probe resolves.
+
+    Reporting only: this section calls no check() and changes no count.
+    """
+    print()
+    print("=" * 70)
+    print("Section 10: N5 execution certificate — resolution classes exercised here")
+    print("=" * 70)
+    print(
+        "  per_element: resolved coefficient by coefficient on every "
+        "candidate action — for each of V1 through V5 the transformed "
+        "operator is decomposed back onto the basis {I, C, C^2} and the a and "
+        "b coefficients are read off and compared separately, which is "
+        "exactly how conjugation by the C_3-commuting U_b is caught leaving "
+        "both a and b untouched while the left-module action L_{U_b} is "
+        "caught moving a as well as b, i.e. mixing rather than rotating."
+    )
+    print(
+        "  per_site: genuinely exercised, and it is the subject of the probe "
+        "— the retained continuous phase is the per-site Qubit U(1) "
+        "exp(i theta sigma_3 / 2) in U(2) on the one-site Cl(3) factor, V1 "
+        "grades that per-site phase by C_3 character and V5 makes it depend "
+        "on site position through the direction generators T_x, T_y, T_z "
+        "whose product is the sublattice parity -I on hw=1; in every case the "
+        "site-level phase either C_3-symmetrizes to a scalar or breaks "
+        "A^{C_3}."
+    )
+    print(
+        "  per_mode: resolved mode by mode on both gradings that matter here "
+        "— the C_3 characters {1, omega, omega_bar} are separated when the "
+        "graded per-site phase of V1 is built, and the spectrum of H itself "
+        "is resolved eigenvalue by eigenvalue before and after a U(1)_b "
+        "rotation, which is precisely the check that the rotation moves "
+        "individual eigenvalues and therefore cannot be any unitary "
+        "similarity."
+    )
+    print(
+        "  per_block: resolved block by block on A^{C_3} = span{I, C, C^2} — "
+        "the trivial block carrying a is separated from the b-doublet block "
+        "carrying C and C^2, every candidate action is scored by what it does "
+        "to those two blocks separately, and the K-conjugation fixed set of "
+        "the doublet block is identified as the real-b line, i.e. a Z_2 fixed "
+        "set rather than an SO(2) one."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice of any extent "
+        "is instantiated here, and no volume, site sum or limit is taken; the "
+        "spatial content enters only through the three direction generators "
+        "and their parity product on the fixed 3-dimensional hw=1 sector, and "
+        "the closing argument is Skolem-Noether rigidity of M_3(C), a "
+        "statement about one finite matrix algebra that has no extent to "
+        "resolve at all."
+    )
+
+
+# ----------------------------------------------------------------------
 # Main runner
 # ----------------------------------------------------------------------
 
@@ -1018,6 +1079,7 @@ def main() -> int:
     section7_structural_obstruction()
     section8_convention_robustness()
     section9_closure_status()
+    section10_n5_execution_certificate()
 
     print()
     print("=" * 70)

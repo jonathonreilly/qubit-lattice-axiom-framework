@@ -655,6 +655,62 @@ def section9_obstruction_theorem():
 
 
 # --------------------------------------------------------------------
+# Section 10 — N5 execution certificate (reporting only; adds no check)
+# --------------------------------------------------------------------
+
+def section10_n5_execution_certificate():
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: returns nothing and records no PASS/FAIL item.
+    """
+    print("Section 10 — N5 execution certificate: resolution classes exercised here")
+    print(
+        "  per_element: resolved one symmetric-polynomial coordinate at a "
+        "time — for every eigenvalue triple the runner forms p_1, p_2, p_3 "
+        "and e_1, e_2, e_3 as separate quantities and then tests the single "
+        "relation p_2 = e_1^2 - 2 e_2 between them, holding on 50 of 50 "
+        "Gaussian triples from the seed-42 stream, and the seed-137 "
+        "non-circulant sweep builds each generic complex 3x3 matrix entry by "
+        "entry before Hermitizing it."
+    )
+    print(
+        "  per_site: checked and not executed — this runner works entirely in "
+        "the eigenvalue and symmetric-polynomial coordinates of one 3x3 "
+        "operator, and those coordinates are basis-independent by "
+        "construction, so they erase even the hw=1 corner labels; there is no "
+        "Z^3 position index, no site sum and nothing site-resolved anywhere "
+        "in Sections 1-9."
+    )
+    print(
+        "  per_mode: resolved mode by mode on the Brannen spectrum — the "
+        "three eigenvalues lambda_k = a + 2 r cos(delta + 2 pi k/3) are "
+        "carried individually into every ratio, which is exactly what "
+        "produces the closed free-ratio family p_2/e_1^2 = 1/3 + (2/3)(r/a)^2 "
+        "and its three named points, 1/3 at the degenerate b = 0, 2/3 at A1 "
+        "with r = a/sqrt(2), and 3 at r = 2a."
+    )
+    print(
+        "  per_block: resolved block weighting by block weighting, which is "
+        "Barrier D2 itself — the (1,1) multiplicity-weighted block-total law "
+        "gives V_(1,1) = e_1^2 - 6 e_2 which vanishes at A1, while the (1,2) "
+        "dimension-weighted law gives V_(1,2) = e_1^2 - 3 e_2 which does not, "
+        "landing at 9 a^2/2 at A1 and 9 a^2 at kappa = 1, so the two block "
+        "weightings are kept apart rather than silently identified."
+    )
+    print(
+        "  lattice_wide: checked and not executed — nothing in this runner "
+        "has spatial extent, so no lattice is built, no volume or site sum is "
+        "formed and no continuum limit is taken; and the runner is explicit "
+        "that even its functional scan is a finite named candidate family "
+        "(discriminant, Tschirnhaus depressed-cubic p, Vandermonde squared, "
+        "rational e_k^a/e_l^b ratios), claiming no exhaustive statement over "
+        "all symmetric-polynomial functionals, so no whole-space closure is "
+        "offered at any scale."
+    )
+    print()
+
+
+# --------------------------------------------------------------------
 # Main runner
 # --------------------------------------------------------------------
 
@@ -675,6 +731,7 @@ def main():
     all_results += section7_comparison_routes_e_f()
     all_results += section8_falsifiability_anchor()
     all_results += section9_obstruction_theorem()
+    section10_n5_execution_certificate()
 
     n_total = len(all_results)
     n_pass = sum(all_results)

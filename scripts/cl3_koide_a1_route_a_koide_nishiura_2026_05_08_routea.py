@@ -652,6 +652,51 @@ def main() -> int:
     )
 
     # ======================================================================
+    # N5 execution certificate (reporting only; records no PASS/FAIL item)
+    # ======================================================================
+    section("N5 EXECUTION CERTIFICATE — resolution classes exercised here")
+
+    print(
+        "  per_element: resolved one object at a time rather than in bulk — "
+        "the commutator [Φ, C] is evaluated entrywise on the explicit "
+        "circulant and comes out 0.00e+00, and each of the five U(3)-quartic "
+        "invariants I₁ = (tr Φ)⁴, I₂ = (tr Φ)² tr(Φ²), I₃ = tr(Φ²)², "
+        "I₄ = tr(Φ) tr(Φ³) and I₅ = tr(Φ⁴) is separately expanded as an exact "
+        "sympy polynomial in (a, b) before any of them is combined."
+    )
+    print(
+        "  per_site: checked and not executed — Φ is a single operator on the "
+        "fixed 3-dimensional hw=1 flavor factor and never acquires a Z³ "
+        "position index; no site sum, neighbour term or site-resolved "
+        "quantity appears in Parts A through J of this runner."
+    )
+    print(
+        "  per_mode: checked and not executed — Route A is written entirely "
+        "in the traces tr Φ, tr(Φ²), tr(Φ³) and tr(Φ⁴), which are symmetric "
+        "sums over the three circulant modes, so the individual eigenvalues "
+        "are aggregated away by construction and the runner never resolves "
+        "the spectrum mode by mode; the mode content enters only through the "
+        "cube roots of unity 1, ω, ω² fixing the circulant form itself."
+    )
+    print(
+        "  per_block: resolved block by block on the quartic invariant space, "
+        "which is exactly Barrier 3 — the space splits into the trace-pure "
+        "block spanned by I₁, I₂, I₃ and the remaining block carrying I₄ and "
+        "I₅, the Koide quartic is shown to sit wholly in the first block with "
+        "coefficients (4, −12, 9, 0, 0), and switching on the second block is "
+        "what moves the minimum off the Koide cone while the tr(Φ²)² "
+        "direction stays degenerate under the constraint."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice, no volume, no "
+        "site sum and no continuum limit exists anywhere in this runner, and "
+        "the minimum statements are not global either: they are argmin over a "
+        "10001-point grid in the angle t on the tr(Φ²) = 1 constraint circle, "
+        "swept across the named perturbations and their λ ladders, so the "
+        "displacement claims are certified on that finite grid only."
+    )
+
+    # ======================================================================
     # Summary
     # ======================================================================
     section("SUMMARY")

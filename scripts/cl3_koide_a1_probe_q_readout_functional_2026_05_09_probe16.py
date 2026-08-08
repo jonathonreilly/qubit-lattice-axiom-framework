@@ -751,6 +751,58 @@ print()
 
 
 # ======================================================================
+# Section 11: N5 execution certificate (reporting only; adds no check)
+# ======================================================================
+
+print()
+print("=" * 72)
+print("Section 11: N5 execution certificate — resolution classes exercised here")
+print("=" * 72)
+print()
+print(
+    "  per_element: resolved one item at a time rather than in aggregate — "
+    "U(1)_b invariance of Q is tested at six separate phase points "
+    "phi = 0.00, 0.30, 0.70, 1.50, 2.50 and 3.14 with a check apiece, "
+    "det(H) is expanded into its individual monomials in the real and "
+    "imaginary parts of b, and each of the three supplied functionals F1, F2 "
+    "and F3 is extremized on its own before they are compared."
+)
+print(
+    "  per_site: checked and not executed — nothing here carries a site "
+    "index; the readout is a functional of the spectrum of one operator on "
+    "the fixed hw=1 factor, and even the mass assignment is the supplied P1 "
+    "hypothesis lambda_k = sqrt(m_k) rather than anything read off a lattice, "
+    "so there is no site sum and no site-resolved quantity."
+)
+print(
+    "  per_mode: resolved mode by mode, and the whole pivot runs through it — "
+    "the three eigenvalues lambda_k = a + 2|b| cos(arg b + 2 pi k/3) are "
+    "written out for k = 0, 1, 2, the supplied P1 identification is applied "
+    "to each of them separately, the aggregates Tr(H) = 3a and "
+    "||H||_F^2 = 3a^2 + 6|b|^2 are then assembled from those modes, and the "
+    "retained cone identity is evaluated on the full triple, giving "
+    "F_orbit = 9(a^2 - 2|b|^2)."
+)
+print(
+    "  per_block: resolved block by block on the Frobenius energies, and the "
+    "ambiguity is exactly a block-weight ambiguity — E_+ = 3a^2 on the "
+    "trivial block and E_perp = 6|b|^2 on the doublet block are computed "
+    "separately, F1 weights them (1,1) and its Lagrange condition at fixed "
+    "E_+ + E_perp is the block balance E_+ = E_perp which is A1 at kappa = 2, "
+    "while F3 weights the same two blocks (1,2) and lands at kappa = 1 "
+    "instead."
+)
+print(
+    "  lattice_wide: checked and not executed — there is no lattice, no "
+    "volume, no site sum and no limit taken anywhere in this probe; and the "
+    "negative result is deliberately not a whole-family closure either, since "
+    "only three named functionals are extremized while the runner states "
+    "that the weighted block-log laws form a continuous mu/nu family that no "
+    "cited principle pins down."
+)
+
+
+# ======================================================================
 # Final tally
 # ======================================================================
 

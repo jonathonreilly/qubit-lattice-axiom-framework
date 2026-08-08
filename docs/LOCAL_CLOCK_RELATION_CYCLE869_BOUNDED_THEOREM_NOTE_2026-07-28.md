@@ -160,7 +160,14 @@ admitted_observation_status: null
 claim_type_reason: "exact witness-verified searches over a declared closed family at declared caps on one finite corpus; the within-class constant-offset edges gated by keyed witness-set equality against an independent rebuild; the negative priced to the family; all of it conditional on the unaudited Cycle-719 substrate"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+packet_helper_runner: scripts/frontier_cycle869_relation_independent_check_2026_07_28.py
 ```
+
+The `packet_helper_runner` line is the machine-readable declaration that
+the independent checker is a claim-scoped, co-load-bearing packet source:
+no audit packet generated for this note is complete without that runner,
+and at landing the citation-graph builder's explicit packet-helper table
+must carry the matching entry (see Review record).
 
 ## Imports, declared scope, provenance, derived, open
 
@@ -231,13 +238,32 @@ seven family members carry positive controls; the period contract is
 detector-selection, not least-period; the terminal marker is relabeled
 measurement-only; the Cycle-719 authority edge is linked and the Cycle-866
 lineage is provenance-only; the physical "same clock" reading is split
-into the non-load-bearing interpretation section above. Outstanding at
-landing (outside this PR's frozen file set): register the independent
-checker as a claim-scoped helper for this note's audit packet (the
-citation-graph builder's explicit packet-helper table) and co-land the
-citation-graph manifest acknowledgment for this note's node; do not spend
-an audit seat on this row before both are done and the Cycle-719 chain is
-independently retained.
+into the non-load-bearing interpretation section above.
+
+Iteration 2 (confirmation round, Sol, 2026-08-08): two residuals repaired.
+The witness verifier now refuses a unit-slope or non-positive-slope
+tick-affine witness (the member declares a positive rational slope with
+a != 1), and the index-affine and lag-member positive controls are
+member-decisive (they require the exact intended member and witness
+parameters, not any verifying member). The runner additionally executes
+verifier regression probes that feed the review's two concrete break
+cases (the window-shrunk windowed-offset witness and the unit-slope
+tick-affine witness) plus five further malformed witnesses, and gates
+their refusal inside the family-controls certificate. For the audit
+packet, the machine-readable `packet_helper_runner` line above declares
+the independent checker claim-scoped and co-load-bearing.
+
+Outstanding at landing (outside this PR's frozen file set), as hard
+landing conditions: (a) add to `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+`docs/audit/scripts/build_citation_graph.py` the claim-scoped entry
+mapping this note's claim id
+`local_clock_relation_cycle869_bounded_theorem_note_2026-07-28` to
+`["scripts/frontier_cycle869_relation_independent_check_2026_07_28.py"]`,
+so the generated packet's helper closure carries the checker; (b) co-land
+the citation-graph manifest acknowledgment for this note's node,
+regenerated on the actual landing tree. Do not spend an audit seat on
+this row before both are done and the Cycle-719 chain is independently
+retained.
 
 ## Verdict
 

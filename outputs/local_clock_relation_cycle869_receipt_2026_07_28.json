@@ -38,40 +38,50 @@
  ],
  "files": {
   "docs/LOCAL_CLOCK_RELATION_CYCLE869_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "a46bbffa930eab6afb564be3973707d3f6596df1",
-   "sha256": "850c0b6f3766bb9af4fd60ea9b83e7b1ae218b37e7658f6cac24b04ef0b70377"
+   "git_blob": "cc1c7608b7ae68cd28fc14ea52d917e50e6ddfdc",
+   "sha256": "91c24cabfb57ece91af717c738635578d3024ceb6bd27511df4dff3d5dda366e"
   },
   "logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt": {
-   "git_blob": "33aac37fbafe417c200d77e4a806bc65db35d437",
-   "sha256": "7dd6e7a5acb6b274ba52b549e2f3e0822722f624bc610be2a28996015e4f8b42"
+   "git_blob": "dbc876ba8433616b5ddb56f06a91202b8c934201",
+   "sha256": "586fd6a628142250c7fa859448e004fd445d9f479c71813afd50d0674a67b0fe"
   },
   "logs/runner-cache/frontier_cycle869_relation_independent_check_2026_07_28.txt": {
-   "git_blob": "cc55eccfaa00076e9e42ea4aba7e4aa43cf52e4e",
-   "sha256": "91befd183dbd424255cd79ee2746697d7c102f09e128381364f98e9e019eef85"
+   "git_blob": "0c71deffe031dc5eb7546647b6e648e91b6d3fd3",
+   "sha256": "95cf1a32ec2ae12064d5980a179ee341d114516f05e71331211eac734826cbc3"
   },
   "scripts/frontier_cycle869_clock_relation_2026_07_28.py": {
-   "git_blob": "0c4fc044925934948e0472c2e987c75ff4061967",
-   "sha256": "16cad1757aa9dfc96a632fa80e51775dca02d8459fa5ccdd4e53d6960ee32df8"
+   "git_blob": "6f179e395498dce027225099b3a9293ab1389c03",
+   "sha256": "3ff406e5ddb9e4972c52a8e6e7681af04dfbaecf3c2dbc595dcf94ca0f09c4bd"
   },
   "scripts/frontier_cycle869_relation_independent_check_2026_07_28.py": {
-   "git_blob": "94a314de0d4d8b66a6fce504967ccf7e01bf043d",
-   "sha256": "3f4c2dfb516265b2e82a0bced311239763c5d1d179abb1d774a809d6989d3bec"
+   "git_blob": "5696420ec1d5dc1f67be4cec4e514a779551a8c4",
+   "sha256": "81faf240b8bff96be57d64bedf7ce60a9000e40c403414eb31949ac2de49879a"
   }
  },
  "headline": "bounded finite-corpus measurement at B=3: within-key dictionaries sparse in the declared family (1 tick-moving of 480 substantive, 12 identity-like containments, 31 non-identity partial witnesses; priced to the family and its caps); within observed equal-gap-word classes, 685/777 sounding pair clocks have exact constant-offset translations to class representatives (632 edges, all nonzero) and 92 sounding clocks are singletons; every detector-selected period is a whole number of 19-station orbits (no least-period claim)",
  "independence": "cross-context (own substrate rebuild + kernel replay; import blocklist; shared authoring model family); the re-search is complementary bounded, not a superset",
  "note": "docs/LOCAL_CLOCK_RELATION_CYCLE869_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "packet_helper_runner": "scripts/frontier_cycle869_relation_independent_check_2026_07_28.py",
  "provenance_non_load_bearing": "the Cycle-866 fragmentation exploration is unlanded on origin/main and is motivation only; campaign/queue identifiers are work provenance, not scientific names",
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix_summary": "demoted headline to bounded finite-corpus measurement; checker gates keyed witness-set equality (not counts) and is labeled complementary bounded (not strictly wider); witness verifiers enforce complete member definitions; positive controls for all seven family members; period contract narrowed to detector selection; terminal marker relabeled measurement-only; Cycle-719 authority edge linked (unaudited, conditional); Cycle-866 moved to non-load-bearing provenance; physical interpretation split into a meta section",
-  "iteration": 1,
-  "reviewer": "Sol"
- },
+ "review_loop": [
+  {
+   "date": "2026-08-08",
+   "disposition": "FIX_THEN_PROCEED",
+   "fix_summary": "demoted headline to bounded finite-corpus measurement; checker gates keyed witness-set equality (not counts) and is labeled complementary bounded (not strictly wider); witness verifiers enforce complete member definitions; positive controls for all seven family members; period contract narrowed to detector selection; terminal marker relabeled measurement-only; Cycle-719 authority edge linked (unaudited, conditional); Cycle-866 moved to non-load-bearing provenance; physical interpretation split into a meta section",
+   "iteration": 1,
+   "reviewer": "Sol"
+  },
+  {
+   "date": "2026-08-08",
+   "disposition": "FIX_THEN_PROCEED",
+   "fix_summary": "verifier refuses unit-slope/non-positive-slope tick-affine witnesses; index-affine and lag positive controls made member-decisive (exact member and witness parameters required); in-runner verifier regression probes gate refusal of the review's window-shrunk and unit-slope break cases plus five further malformed witnesses; machine-readable packet_helper_runner line added to the note declaring the independent checker a claim-scoped co-load-bearing packet source, with the exact citation-graph builder entry named as a hard landing condition",
+   "iteration": 2,
+   "reviewer": "Sol (confirmation round)"
+  }
+ ],
  "runtime_seconds": {
-  "checker": 45,
-  "primary": 10
+  "checker": 51,
+  "primary": 9
  },
  "surface_status": "bounded-support",
  "terminal_markers": {

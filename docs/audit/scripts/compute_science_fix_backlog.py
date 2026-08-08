@@ -14,9 +14,10 @@ Surfaces summarized:
    ``previous_audits[]`` carries a non-clean scientific verdict while the live
    row is ``unaudited``.  These are ADVISORY: the archived verdict is void and
    authorizes nothing; the count exists so recorded defect-finding stays
-   visible across resets.  ``archived_advisory_unmapped`` counts archived
-   non-clean records whose repair target predates the category-prefix
-   convention and therefore cannot be routed automatically.
+   visible across resets.  ``unmapped_category_records`` counts complete
+   archived non-clean records whose repair instruction cannot be routed
+   automatically; ``incomplete_records`` counts records without the minimum
+   rationale/path metadata needed to create an advisory candidate.
 3. ``evidence_repair`` — rows the audit queue marks ``evidence_repair_required``,
    grouped by gate family (e.g. the forensic N5 execution certificate).
 
@@ -61,6 +62,15 @@ def _mapped_category(verdict: str, repair_target: str) -> bool:
     return False
 
 
+def _archived_repair_target(archived: dict) -> str:
+    """Mirror science_fix_loop.archived_repair_target without importing it."""
+    return str(
+        archived.get("notes_for_re_audit_if_any")
+        or archived.get("repair_target")
+        or ""
+    ).strip()
+
+
 def _gate_family(issue: str) -> str:
     """Collapse a readiness-issue string to its stable gate-family prefix."""
     return issue.split(":", 1)[0].strip() or "unknown"
@@ -72,6 +82,7 @@ def main() -> int:
     advisory = Counter()
     advisory_rows: list[str] = []
     advisory_unmapped = 0
+    advisory_incomplete = 0
 
     for shard in sorted(LEDGER_DIR.glob("*/*.json")):
         try:
@@ -80,7 +91,8 @@ def main() -> int:
             continue
         if not isinstance(row, dict):
             continue
-        claim_id = str(row.get("claim_id") or shard.stem)
+        raw_claim_id = row.get("claim_id")
+        claim_id = str(raw_claim_id or shard.stem)
         status = row.get("audit_status")
         if status in APPLIED_NON_CLEAN:
             applied[status] += 1
@@ -97,7 +109,15 @@ def main() -> int:
         verdict = last.get("audit_status")
         if verdict not in APPLIED_NON_CLEAN:
             continue
-        if _mapped_category(str(verdict), str(last.get("repair_target") or "")):
+        rationale = str(last.get("verdict_rationale") or "").strip()
+        if not rationale:
+            advisory_incomplete += 1
+            continue
+        repair_target = _archived_repair_target(last)
+        if _mapped_category(str(verdict), repair_target):
+            if not raw_claim_id or not row.get("note_path"):
+                advisory_incomplete += 1
+                continue
             advisory[str(verdict)] += 1
             advisory_rows.append(claim_id)
         else:
@@ -141,6 +161,7 @@ def main() -> int:
             "total": sum(advisory.values()),
             "by_verdict": dict(sorted(advisory.items())),
             "unmapped_category_records": advisory_unmapped,
+            "incomplete_records": advisory_incomplete,
         },
         "evidence_repair": {
             "queue_available": queue_available,
@@ -169,7 +190,8 @@ def main() -> int:
     print(
         f"science_fix_backlog: applied={payload['applied_non_clean']['total']} "
         f"archived_advisory={payload['archived_advisory']['total']} "
-        f"(+{advisory_unmapped} unmapped) "
+        f"(+{advisory_unmapped} unmapped, "
+        f"+{advisory_incomplete} incomplete) "
         f"evidence_repair={evidence_total if queue_available else 'unavailable'} "
         f"-> {OUT_PATH.relative_to(REPO_ROOT)}"
     )

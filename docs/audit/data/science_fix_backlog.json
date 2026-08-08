@@ -6,13 +6,15 @@
   "by_verdict": {}
  },
  "archived_advisory": {
-  "total": 233,
+  "total": 954,
   "by_verdict": {
+   "audited_conditional": 721,
    "audited_failed": 121,
    "audited_numerical_match": 34,
    "audited_renaming": 78
   },
-  "unmapped_category_records": 1024
+  "unmapped_category_records": 302,
+  "incomplete_records": 1
  },
  "evidence_repair": {
   "queue_available": true,

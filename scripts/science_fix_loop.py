@@ -352,6 +352,21 @@ def audit_repair_category(audit_verdict: str, repair_target: str) -> str | None:
     return category
 
 
+def archived_repair_target(archived: dict) -> str:
+    """Return the canonical repair instruction from one archived audit.
+
+    Applied ledger rows expose the instruction as
+    ``notes_for_re_audit_if_any`` and that is the field preserved by
+    ``previous_audits[]``.  ``repair_target`` is accepted only as a legacy or
+    handoff-shaped fallback; it is not the archived-ledger field.
+    """
+    return str(
+        archived.get("notes_for_re_audit_if_any")
+        or archived.get("repair_target")
+        or ""
+    ).strip()
+
+
 def audit_handoff_prompt(row: dict) -> str:
     """Reconstruct the worker prompt from ledger-verified audit fields."""
     return f"""Use the physics-loop skill to repair the validated non-clean audit on {row['note_path']}.
@@ -665,7 +680,7 @@ def parse_archived_advisories() -> list[dict]:
             verdict = last.get("audit_status")
             if verdict not in ARCHIVED_NON_CLEAN_VERDICTS:
                 continue
-            repair_target = str(last.get("repair_target") or "").strip()
+            repair_target = archived_repair_target(last)
             rationale = str(last.get("verdict_rationale") or "").strip()
             if not rationale:
                 skipped_incomplete += 1

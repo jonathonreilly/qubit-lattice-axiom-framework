@@ -82,8 +82,9 @@ Only complete, applied `audited_conditional`, `audited_renaming`,
 
 After a ledger-wide invalidation (premise-epoch reset, packet-requirement
 change), zero applied verdicts exist and lane 1 is empty — but the archived
-non-clean rationales in `previous_audits[]` still name source defects the
-invalidating event did not repair. Recover them as ADVISORY candidates:
+non-clean rationales and canonical repair instructions
+(`notes_for_re_audit_if_any`) in `previous_audits[]` still name source defects
+the invalidating event did not repair. Recover them as ADVISORY candidates:
 
 ```bash
 python3 scripts/science_fix_loop.py --from-archived --dry-run

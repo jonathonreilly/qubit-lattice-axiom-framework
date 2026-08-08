@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_erratum
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Four scripts were corrected from 110.75 to 106.75; the ~3.6% s
 Scope: Applies to all thermal quantities (rho, s, H, x_F, Omega_DM); the taste enhancement is a gauge-topology effect, not a thermal one.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 GSTAR erratum: 110.75 wrongly included Planck-mass states — real physics error corrected in four scripts, prior baryogenesis numbers invalidated.
 
@@ -32,7 +34,8 @@ GSTAR erratum: 110.75 wrongly included Planck-mass states — real physics error
 - Source commit: `9e168f764261d87f27b16b1b979090af07b7ef84`
 - git blob: `ef5ad5c85c45f682d3b0fb6587ca3e8b079bde60`
 - sha256: `3324dccaf7e729740736973ea37df5b658fc335e5d08ad27d42ec5c099da7ace`
-- Lines: 89; runners named: scripts/frontier_gstar_reconciliation.py, scripts/frontier_dm_native_eta.py, scripts/frontier_dm_taste_enhanced_eta.py, scripts/frontier_dm_coupled_transport.py, scripts/frontier_dm_eta_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/656_GSTAR_RECONCILIATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/656_GSTAR_RECONCILIATION_NOTE.md)
+- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gstar_reconciliation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_native_eta(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_taste_enhanced_eta(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coupled_transport(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents a real physics error that propagated into three baryogenesis scripts p
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_erratum
 intake_directive: owner_2026-08-05
 ```
 

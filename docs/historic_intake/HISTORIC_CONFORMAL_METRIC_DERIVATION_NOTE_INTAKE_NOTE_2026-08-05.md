@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_derived
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Upgrades the Tier-2 gravity signatures from CONDITIONAL to DER
 Scope: Requires only long paths relative to wavelength; parallels the DM lane's correction of a 'continuum limit' that was really a thermodynamic limit (N -> infinity at fixed a).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Terminal of the eikonal arc: Tier-2 gravity signatures upgraded CONDITIONAL -> DERIVED by removing the mislabelled continuum dependence (k L >> 1 suffices; a = l_Pl fixed). Part-2's 129 pull downgrades to attachment of this terminal at intake.
 
@@ -32,7 +34,8 @@ Terminal of the eikonal arc: Tier-2 gravity signatures upgraded CONDITIONAL -> D
 - Source commit: `4ce962e88776b23abe9557208be46257ada5f963`
 - git blob: `f11413ba2682f43f98020db0e304b10f98c57b88`
 - sha256: `957b2396ee24d67eaf205348e47b9deb07607eef74cc293d3ce72820b0346da2`
-- Lines: 256; runners named: scripts/frontier_geodesic_equation.py, scripts/frontier_independent_spatial_metric.py, scripts/frontier_spatial_metric_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/259_CONFORMAL_METRIC_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/259_CONFORMAL_METRIC_DERIVATION_NOTE.md)
+- Lines: 256; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_independent_spatial_metric(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_spatial_metric_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_derived
 intake_directive: owner_2026-08-05
 ```
 

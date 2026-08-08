@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_canonical_reviewer_facing_compression_of_the_direct_planck_packet
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Submission claim: on the physical package plus P1 plus the sta
 Scope: Explicitly NOT submitted as a theorem of the older minimal ledger in isolation; the minimal-ledger-only objection is to be conceded as a scope objection.
 Escape conditions (negative claims): Denial points named: refusing P1 leaves the state law unforced and the claim must be rescoped; refusing gravity matching leaves the dimensionless coefficient only.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The reviewer-facing terminal of the whole April Planck lane: six assumptions, denial points named — the submission-grade compression (rival 1442 attached).
 
@@ -32,7 +34,8 @@ The reviewer-facing terminal of the whole April Planck lane: six assumptions, de
 - Source commit: `e1fb0e91d186fd497bea41f1b8bd7a0210b0c6cc`
 - git blob: `f0b61c46a49cfd94348870b1b61de15439cc3dd5`
 - sha256: `a4ca7ca8fe43b5d33bab61a7e3ec923fdc6120799e32577a7aa92cf0fbe77505`
-- Lines: 216; runners named: scripts/frontier_planck_claim_scope_hostile_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1464_PLANCK_SCALE_REVIEWER_CANONICAL_SUBMISSION_PACKET_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1464_PLANCK_SCALE_REVIEWER_CANONICAL_SUBMISSION_PACKET_2026-04-23.md)
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_claim_scope_hostile_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -153,6 +156,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_canonical_reviewer_facing_compression_of_the_direct_planck_packet
 intake_directive: owner_2026-08-05
 ```
 

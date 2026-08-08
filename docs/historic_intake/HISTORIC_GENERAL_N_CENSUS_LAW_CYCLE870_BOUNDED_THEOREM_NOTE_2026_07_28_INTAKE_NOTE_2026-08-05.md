@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The census law is not an n = 11 accident, and the free-selecti
 Scope: Brute-verified n = 3..18, symbolic n = 3..14, Moebius extension to n <= 40; the selection statement is scoped to C_n-covariant selections, where the floor argument is a complete classification rather than a search.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The census law N(n,k) proved by two independent routes AND refuting an external math-report prediction at its declared k.
 
@@ -32,7 +34,8 @@ The census law N(n,k) proved by two independent routes AND refuting an external 
 - Source commit: `81aa497ba886619ae3569f4cea432c7b7124eef2`
 - git blob: `ec31a00b57707c25ef944366f751ea3a10409acd`
 - sha256: `c8a80f35d48056396a10477d501da898275c950c2a6001e9dbccad207b26931f`
-- Lines: 164; runners named: scripts/frontier_cycle870_general_n_census_2026_07_28.py, scripts/frontier_cycle870_census_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/604_GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch02/604_GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 164; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle870_general_n_census_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle870_census_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Checker independence is cross-context but not cross-model (both scripts share an
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

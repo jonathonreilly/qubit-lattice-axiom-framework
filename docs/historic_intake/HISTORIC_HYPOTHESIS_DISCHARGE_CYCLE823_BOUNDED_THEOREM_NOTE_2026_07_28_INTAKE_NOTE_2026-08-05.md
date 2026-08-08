@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The wall Cycle 817 narrowed to one hypothesis is down at b = 3
 Scope: Per-b facts on the actual constructor objects only; no general-b claim; the v1 surrogate computations are retained as labeled diagnostics.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Discharges the single hypothesis Cycle 817's sector theorem left open, at every b = 3..10, by derivation — with its own v1 surrogate retraction recorded.
 
@@ -32,7 +34,8 @@ Discharges the single hypothesis Cycle 817's sector theorem left open, at every 
 - Source commit: `71ef0ed3b15b2ad57530d793eef47866f5d83823`
 - git blob: `1043f92854520bc3c793c87a7f9cfa41b34ce56b`
 - sha256: `1e60b42d087cab94fa2cd24cdaa1e9a25eb01d01e20310ee3ca8e33b7a6a21b3`
-- Lines: 83; runners named: scripts/frontier_cycle823_hypothesis_discharge_2026_07_28.py, scripts/frontier_cycle823_discharge_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/723_HYPOTHESIS_DISCHARGE_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch03/723_HYPOTHESIS_DISCHARGE_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 83; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle823_hypothesis_discharge_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle823_discharge_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records its own retraction: v1 ran on an embedded-table surrogate with a hard-co
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

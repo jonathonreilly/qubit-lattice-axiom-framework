@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conjecture
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Numerical prediction 4.2% off, with self-listed limitations: t
 Scope: What Z_3 Clebsch-Gordan coefficients determine: Yukawa texture (off-diagonal forbidden), tree-level universality, and the degenerate-Yukawa-plus-breaking-plus-IRFP mechanism — not the absolute scale g_0.
 Escape conditions (negative claims): A full 2-loop RGE with threshold matching, plus higher-order Z_3 breaking for the light-generation hierarchy.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Z3-Clebsch generation route: y_t = 1.035 vs observed (4.2% off) WITH the 12/12-PASS-framing flag — the independent April route in its honest form.
 
@@ -32,7 +34,8 @@ The Z3-Clebsch generation route: y_t = 1.035 vs observed (4.2% off) WITH the 12/
 - Source commit: `a43d30ac0bf3a1f5efe3e7b1b7ea062adeeb7bf0`
 - git blob: `a3ce2e69a2375be96f343cae56617dbaffdd69e8`
 - sha256: `778da74c1b9bc8f5b29df1df6eb0909356632413396542c196cbfd8caa25bc97`
-- Lines: 78; runners named: scripts/frontier_yt_z3_clebsch.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2501_YT_Z3_CLEBSCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2501_YT_Z3_CLEBSCH_NOTE.md)
+- Lines: 78; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_z3_clebsch(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Presents a 4.2%-off y_t/m_t prediction with 12/12 PASS framing; the 'cross-check
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conjecture
 intake_directive: owner_2026-08-05
 ```
 

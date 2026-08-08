@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Theorem-grade completion of the N+1 to N+4 arc: cycle integral
 Scope: Graph with SU(N) link variables; SU(2) fundamental used for the numerics.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The SU(N) force-vs-gauge separation terminal: Wilson loops nontrivial exactly on the b_1 cycles — theorem-grade completion of the arc.
 
@@ -32,7 +34,8 @@ The SU(N) force-vs-gauge separation terminal: Wilson loops nontrivial exactly on
 - Source commit: `f952078a5dcc03d829d0021bacc19f87a596dd63`
 - git blob: `25c5c64ac231c9c0f26967a4ffde23415d80df0f`
 - sha256: `9f3afbdfd88398d00eba2f9c495d09d94e328873b79b06581d4c3026f86e04b1`
-- Lines: 221; runners named: scripts/frontier_staggered_force_gauge_non_abelian_lift_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1973_STAGGERED_FORCE_GAUGE_NON_ABELIAN_LIFT_THEOREM_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch06/1973_STAGGERED_FORCE_GAUGE_NON_ABELIAN_LIFT_THEOREM_NOTE_2026-04-24.md)
+- Lines: 221; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_staggered_force_gauge_non_abelian_lift_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

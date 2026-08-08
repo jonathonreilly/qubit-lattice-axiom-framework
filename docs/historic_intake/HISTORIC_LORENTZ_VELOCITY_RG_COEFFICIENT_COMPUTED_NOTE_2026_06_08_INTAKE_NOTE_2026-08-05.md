@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Upgrades #3121/#3123 from order-of-magnitude to computed, clos
 Scope: One-loop rainbow-level computation at beta=6 (g^2=1); named residuals are the record-tick bridge, form-equality, the exact O(1) coefficient and the sign. Runner 32 PASS / 0 FAIL.
 Escape conditions (negative claims): The escape horn is xi = 1, which is B_4-protected with delta v = 0 (residual LV only the Planck-suppressed dim-6 operator). The framework exhibits a one-tick-one-edge causal structure that WOULD sit at xi = 1 if the record tick is the physical time coordinate — but the live ledger classifies that audited_renaming (a naming bridge, not a derivation) against a retained clock-rate no-go, so xi = 1 is a conditional candidate horn, not a custodial mechanism.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The computed anisotropy: delta v ~ 1.7e-2 gauge-invariant on-shell, with the xi = 1 B_4-protected horn — upgrades the Lorentz obstruction from order-of-magnitude to computed.
 
@@ -32,7 +34,8 @@ The computed anisotropy: delta v ~ 1.7e-2 gauge-invariant on-shell, with the xi 
 - Source commit: `13ccbb37662d660b754ce2aaedaac6f5c75801ed`
 - git blob: `645a022582fc416a6716875bb61ce4a4d0e7bc0e`
 - sha256: `36c825ebc800157d8d7f0e582d3dadef2a76727b2f94072652be6d261046ccaa`
-- Lines: 302; runners named: scripts/frontier_lorentz_velocity_rg_coefficient_computed_2026_06_08.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1121_LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch04/1121_LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md)
+- Lines: 302; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lorentz_velocity_rg_coefficient_computed_2026_06_08(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ The v < 1 sign is explicitly NOT triangulated (an independent real-time cross-ch
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

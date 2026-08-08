@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: 259 transitive descendants should treat alpha_s(M_Z) as bounde
 Scope: Status correction only; the parent remains a legitimate bounded support route.
 Escape conditions (negative claims): Full retention would require retiring r_0 = 0.5 fm via a framework-derived scale anchor (hard), retiring 4-loop running via a framework-native running theorem (hard), and lifting minimal_axioms_2026-04-11 to retained via G_BARE_* family closure (very hard).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Demotion packet against a headline landed row: docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30 dropped from proposed_retained/audited grade; its 259 transitive descendants must treat alpha_s(M_Z) as bounded-support input; the stated retention escape is retiring the r_0=0.5 fm import. Alpha_s-lane demotion companions attached.
 
@@ -32,7 +34,8 @@ Demotion packet against a headline landed row: docs/ALPHA_S_DIRECT_WILSON_LOOP_D
 - Source commit: `c47c7c3f41683c865a19083b1412901fb0f1181a`
 - git blob: `1df9805a237a6d2d6ed124ad88d9d252d0412d9a`
 - sha256: `6516045b2bfe9e10ba271332ca56cc033fca86cb275ae32306628f24bb2c18df`
-- Lines: 95; runners named: scripts/frontier_alpha_s_direct_wilson_loop_honest_status_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10152_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10152_CLAIM_STATUS_CERTIFICATE.md)
+- Lines: 95; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_direct_wilson_loop_honest_status_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -42,7 +45,7 @@ Demotion packet against a headline landed row: docs/ALPHA_S_DIRECT_WILSON_LOOP_D
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from packsci01 idx 10134 (`.claude/science/physics-loops/alpha-s-narrow-counterfactual-drift-20260611/CLAIM_STATUS_CERTIFICATE.md`, decision PULL) — Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
+- Cross-stratum reference from packsci01 [idx 10134](HISTORIC_CLAIM_STATUS_CERTIFICATE_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/alpha-s-narrow-counterfactual-drift-20260611/CLAIM_STATUS_CERTIFICATE.md`, decision PULL) — Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
 
 ## Flags carried
 
@@ -54,6 +57,7 @@ A headline alpha_s derivation carrying 259 transitive descendants was shipped as
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

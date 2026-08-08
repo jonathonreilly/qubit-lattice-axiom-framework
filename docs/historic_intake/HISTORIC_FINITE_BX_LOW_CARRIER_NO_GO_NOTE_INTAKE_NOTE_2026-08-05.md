@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The exact law is closed but does not compress to a small finit
 Scope: Applies to any exact compression to finitely many face carriers plus finitely many singular-link carrier types; small low-carrier packages survive as finite-order/finite-window corollaries.
 Escape conditions (negative claims): The negative targets only EXACT global compression: low-carrier sector theorems (p, p_8, B, X, first non-disk split, disk sector) remain valid as explicit low-order / finite-window corollaries, and the full character/intertwiner foam law is untouched.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact no-go: infinitely many positive character coefficients, so no finite low-carrier compression of the foam law — scoped escapes; beta6 lane.
 
@@ -32,7 +34,8 @@ Exact no-go: infinitely many positive character coefficients, so no finite low-c
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `51f02e649c446b6b35af223658a0d7539a4010c2`
 - sha256: `9d712a79317b4578f002a9cceac7164c16edc1956419a6313a1753d4c1428468`
-- Lines: 171; runners named: scripts/frontier_finite_bx_low_carrier_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/459_FINITE_BX_LOW_CARRIER_NO_GO_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/459_FINITE_BX_LOW_CARRIER_NO_GO_NOTE.md)
+- Lines: 171; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_finite_bx_low_carrier_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

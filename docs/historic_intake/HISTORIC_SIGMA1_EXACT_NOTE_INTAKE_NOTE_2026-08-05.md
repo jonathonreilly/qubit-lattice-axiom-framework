@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Complete: pinning v = 246.22 GeV requires alpha_s(q*) = 0.4897
 Scope: Periodic L^d lattices L = 8..128 with Richardson extrapolation, cross-checked by scipy nquad; d=3 is IR-divergent and has no infinite-volume limit.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Sigma_1 computed to 10 digits replacing the estimate — WITH the flag that closure then requires alpha_s(q*) = 0.4897 chosen to fit; the hierarchy lane's honest arithmetic.
 
@@ -32,7 +34,8 @@ Sigma_1 computed to 10 digits replacing the estimate — WITH the flag that clos
 - Source commit: `e24b94c6e4efc20c051247c7a257e79f7cbaac17`
 - git blob: `9b262c274b7d708fe7b23c2c3c2585415d7909c7`
 - sha256: `793a2bc1395ba9f8ddd4e4454e4423c5a95ee127d83f72a6715b03b1cdbc57b7`
-- Lines: 141; runners named: scripts/frontier_sigma1_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1925_SIGMA1_EXACT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1925_SIGMA1_EXACT_NOTE.md)
+- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The hierarchy is closed by choosing alpha_s(q*) = 0.49 to hit the measured VEV, 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

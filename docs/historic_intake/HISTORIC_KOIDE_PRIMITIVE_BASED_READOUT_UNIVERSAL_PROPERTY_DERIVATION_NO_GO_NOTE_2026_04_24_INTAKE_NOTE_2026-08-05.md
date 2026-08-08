@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Rejected for retained-only derivation — assuming fibre const
 Scope: Tests whether category-theoretic universal property alone forces the new law; no target import.
 Escape conditions (negative claims): CONDITIONAL_CLOSURE_IF_FACTORING_BASED_PRIMITIVE_FUNCTOR=TRUE; the note prescribes testing any future route by whether it excludes the explicit (1/3, 2/3) functor.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The circularity named exactly: the quotient's universal property applies only to functors already constant on fibres — assuming fibre constancy IS assuming the Q half; blocks retained-only promotion of the whole closure family.
 
@@ -32,7 +34,8 @@ The circularity named exactly: the quotient's universal property applies only to
 - Source commit: `7b2531e0084b600dbf3d410d117c568a230c5f88`
 - git blob: `f840c7716407f1abddfad98663d7b5fd6bd60f03`
 - sha256: `a0b922d83739e7bd5210a7a57d51ed07d6b2e60bfda9bb05030afb8def28f080`
-- Lines: 161; runners named: scripts/frontier_koide_primitive_based_readout_universal_property_derivation_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/895_KOIDE_PRIMITIVE_BASED_READOUT_UNIVERSAL_PROPERTY_DERIVATION_NO_GO_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch03/895_KOIDE_PRIMITIVE_BASED_READOUT_UNIVERSAL_PROPERTY_DERIVATION_NO_GO_NOTE_2026-04-24.md)
+- Lines: 161; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_primitive_based_readout_universal_property_derivation_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ Names the circularity explicitly ('circular assumption: exact').
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

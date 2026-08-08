@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; blocked on owner adoption of
 Scope: The K3 C3-grade physical electron species bridge for the charged-lepton Koide readout lane.
 Escape conditions (negative claims): Owner adoption of PR #4929, then ratification and audit acceptance.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 K3 terminal: the species bridge blocked on OWNER ADOPTION of PR #4929 plus ratification — a live owner-decision surface.
 
@@ -32,7 +34,8 @@ K3 terminal: the species bridge blocked on OWNER ADOPTION of PR #4929 plus ratif
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `e166e31f7527b54b445ea4ea27ef3a4404ddaf47`
 - sha256: `365142373109e59afee246489c4ac230df2e49666b1be5f8921f73d92a0c93cb`
-- Lines: 271; runners named: scripts/frontier_zero_import_hydrogen_physical_electron_species_bridge_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2696_ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2696_ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 271; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_physical_electron_species_bridge_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

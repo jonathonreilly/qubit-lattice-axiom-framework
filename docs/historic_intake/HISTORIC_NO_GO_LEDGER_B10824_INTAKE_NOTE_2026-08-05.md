@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_decision_to_abandon_a_full_theorem_route
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The full OS/transfer-matrix theorem is DROPPED from this row; 
 Scope: The A11 reflection-positivity row.
 Escape conditions (negative claims): Proving the two missing physical-action bridges would restore the full theorem.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 MAJOR DEMOTION of a load-bearing authority: the full staggered-only reflection-positivity theorem is WITHDRAWN from A11 - the attempted rescue via gauge Cauchy-Schwarz + determinant positivity fails, the auditor was right, and the two missing physical-action bridges are named as the only reopen path. A11 is cited elsewhere in this stratum as the basis of the plaquette-bootstrap lemmas - every A11 consumer inherits this. Narrowing companions attached.
 
@@ -32,6 +34,7 @@ MAJOR DEMOTION of a load-bearing authority: the full staggered-only reflection-p
 - Source commit: `d3df1c83191cb2b37f6ceafd3bae95fb32a323bf`
 - git blob: `1ed60b4e918a7e0e9860c0087a5add58937d5702`
 - sha256: `82d920e3c513d0e67e93102b9dfbd3466d65dec1f1f1a58d4f2a728e6044c39a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10824_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10824_NO_GO_LEDGER.md)
 - Lines: 15; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -41,7 +44,7 @@ MAJOR DEMOTION of a load-bearing authority: the full staggered-only reflection-p
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10275 (`.claude/science/physics-loops/beta6-plaquette-closure/NO_GO_LEDGER.md`, stratum packsci01) — MAJOR DEMOTION of a load-bearing authority: the full staggered-only reflection-positivity theorem is WITHDRAWN from A11 - the attempted rescue via gauge Cauchy-Schwarz + determinant positivity fails, the auditor was right, and the two missing physical-action bridges are named as the only reopen path. A11 is cited elsewhere in this stratum as the basis of the plaquette-bootstrap lemmas - every A11 consumer inherits this. Narrowing companions attached.
+- Attaches across strata to [idx 10275](HISTORIC_NO_GO_LEDGER_B10275_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/beta6-plaquette-closure/NO_GO_LEDGER.md`, stratum packsci01) — MAJOR DEMOTION of a load-bearing authority: the full staggered-only reflection-positivity theorem is WITHDRAWN from A11 - the attempted rescue via gauge Cauchy-Schwarz + determinant positivity fails, the auditor was right, and the two missing physical-action bridges are named as the only reopen path. A11 is cited elsewhere in this stratum as the basis of the plaquette-bootstrap lemmas - every A11 consumer inherits this. Narrowing companions attached.
 
 ## Flags carried
 
@@ -53,6 +56,7 @@ A11, cited elsewhere in this stratum as the basis of the plaquette bootstrap lem
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_decision_to_abandon_a_full_theorem_route
 intake_directive: owner_2026-08-05
 ```
 

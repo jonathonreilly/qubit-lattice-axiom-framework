@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_beyond_retained_stack_source_principle_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Yes - there is a smallest exact extension principle that force
 Scope: Beyond-retained-stack extension principle - explicitly not derived from the pure-retained bank.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The smallest exact extension principle: forward projected-cycle transport forces the unique nonfree kernel K_fwd = C — the PMNS positive terminal, honestly beyond-retained.
 
@@ -32,7 +34,8 @@ The smallest exact extension principle: forward projected-cycle transport forces
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `1c2bf33b9cc764b50837cc19aa79286b92572113`
 - sha256: `3effaeac4a03282ae5ac98a8317fdc609ec5e52c856ffadc0bdb8e01ba0df1ca`
-- Lines: 231; runners named: scripts/frontier_pmns_projected_cycle_response_source_principle.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1572_PMNS_PROJECTED_CYCLE_RESPONSE_SOURCE_PRINCIPLE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1572_PMNS_PROJECTED_CYCLE_RESPONSE_SOURCE_PRINCIPLE_NOTE.md)
+- Lines: 231; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_projected_cycle_response_source_principle(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_beyond_retained_stack_source_principle_theorem
 intake_directive: owner_2026-08-05
 ```
 

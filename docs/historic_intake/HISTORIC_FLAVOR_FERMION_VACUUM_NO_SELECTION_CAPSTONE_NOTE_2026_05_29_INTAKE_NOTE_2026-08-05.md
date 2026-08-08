@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A robust negative for 'Q = 2/3 emerges from fermion-vacuum dyn
 Scope: Mean-field with a density-wave NJL interaction that is a MODEL, not the framework's derived action.
 Escape conditions (negative claims): Two untested routes are explicitly left open: the derived g_bare = 1 action's own channel structure could carry the staggered order, and the vacuum gauge configuration (instanton/condensate analog) could carry the cubic/staggered breaking the fermion determinant will not.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Fermion-vacuum no-selection capstone: three independent computations give Q = 1/3 — relocates the origin off vacuum dynamics; two untested routes named.
 
@@ -32,7 +34,8 @@ Fermion-vacuum no-selection capstone: three independent computations give Q = 1/
 - Source commit: `342555b44cdc7ba35608252485fbe79c3b7fac8d`
 - git blob: `5fe818d77f3af4969b06c9b4952bf62cef4fd6df`
 - sha256: `94f8ab79a41e7b2f15e36951f9a0d7de9aeb89c04df22d390f25216b0b2b3ab8`
-- Lines: 74; runners named: scripts/flavor_effpot_no_selection_2026_05_29.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/480_FLAVOR_FERMION_VACUUM_NO_SELECTION_CAPSTONE_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/480_FLAVOR_FERMION_VACUUM_NO_SELECTION_CAPSTONE_NOTE_2026-05-29.md)
+- Lines: 74; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_effpot_no_selection_2026_05_29(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

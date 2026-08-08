@@ -1,9 +1,11 @@
 # Historic intake: Observable Principle T1-d Record-Independence No-Go
 
+Explicit subject: The current Lattice, Quantum and Record axioms do not derive T1-d (W a continuous function of Z = det(D+J) alone with disjoint source blocks registering as disjoint records), because Record finite scalar additivity is compatible with additive scalar readouts carrying an extra ... (The bare code `T1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +24,9 @@ Original verdict: The determinant-only readout identification is an additional b
 Scope: Narrow and negative; does not refute the conditional observable-principle theorem, does not say log det(D+J) is mathematically wrong under T1-d, and does not challenge the parent runner's determinant/positivity/Cauchy/Matsubara algebra.
 Escape conditions (negative claims): Four named routes: prove a retained determinant-only readout bridge from existing non-axiom retained inputs; register T1-d as an approved primitive; narrow all consumers to the conditional surface; or replace the parent route with a different observable carrier.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 T1-d NOT derivable: the determinant-only readout is an additional premise, forcing the citation firewall — the observable-principle boundary.
 
@@ -32,7 +36,8 @@ T1-d NOT derivable: the determinant-only readout is an additional premise, forci
 - Source commit: `1394e18571581506ce6ad830264b565718225b38`
 - git blob: `80ec00c7c988ea7f9b2e52d2933585b222b8b62a`
 - sha256: `c6cec050c0eda9d12175a3f616c402a249d5220fb688419c69b74f046cfc6d77`
-- Lines: 132; runners named: scripts/observable_principle_t1d_record_independence_no_go_2026_06_15.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1225_OBSERVABLE_PRINCIPLE_T1D_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-15.md](../../archive_unlanded/historic_intake_originals/branch04/1225_OBSERVABLE_PRINCIPLE_T1D_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-15.md)
+- Lines: 132; runners named: historic runner (unpinned, not in this packet): `scripts/observable_principle_t1d_record_independence_no_go_2026_06_15(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

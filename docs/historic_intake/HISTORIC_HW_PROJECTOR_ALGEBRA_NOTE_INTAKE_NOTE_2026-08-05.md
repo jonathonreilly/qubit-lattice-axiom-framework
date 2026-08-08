@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Airtight (Grind Program Batch 7, 54/54 PASS) — P and A_S^{S_
 Scope: Taste cube C^8 = (C^2)^{tensor 3} with S_3 axis-permutation action.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Airtight hw-projector algebra structure (54/54) — two distinct 4-dim abelian S_3-invariant algebras.
 
@@ -32,7 +34,8 @@ Airtight hw-projector algebra structure (54/54) — two distinct 4-dim abelian S
 - Source commit: `634389a344d82e15790d9a284ae4b69b90187669`
 - git blob: `0509bffd9016037ef3da7041a14785f9d28c55dc`
 - sha256: `06d2dd9c37b096db1323601308b8d82fe3cce1eaa2db639a395949dbabf43ab8`
-- Lines: 92; runners named: scripts/frontier_hw_projector_algebra.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/719_HW_PROJECTOR_ALGEBRA_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/719_HW_PROJECTOR_ALGEBRA_NOTE.md)
+- Lines: 92; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hw_projector_algebra(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

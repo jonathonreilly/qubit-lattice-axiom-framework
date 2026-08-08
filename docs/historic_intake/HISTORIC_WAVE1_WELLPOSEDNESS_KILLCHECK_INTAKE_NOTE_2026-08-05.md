@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_kill_check_governance_defect_finding
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The campaign is well-posed but not as the brief states it and 
 Scope: Well-posedness of conjunct 1 of AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md:21; status authority: none.
 Escape conditions (negative claims): Reading (iii) — derive up to a menu then show it is a singleton — is the live reading; the menu is 2 points and the separating datum is unregistered.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 MAJOR governance finding, pulled for the owner surface: the owner-registered obligation is INTERNALLY INCONSISTENT - its '## Exact target' section and the machine registry derivation_obligations.json record DIFFERENT targets - and the campaign brief is factually false on both halves; the workable reading (iii - derive up to a menu, then show the menu is forced) is named. Charter and success-condition audit attached.
 
@@ -32,6 +34,7 @@ MAJOR governance finding, pulled for the owner surface: the owner-registered obl
 - Source commit: `da21cedd78003472da3a2ebee2fbf87eff4610d2`
 - git blob: `a46f193f1a90cbc5e523a75203406da447194d85`
 - sha256: `6f033766d22cd917f4e2faaab73ccb9eedf973b870613eb647e54f3149f9dd6e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10658_wave1_wellposedness_killcheck.md](../../archive_unlanded/historic_intake_originals/packsci03/10658_wave1_wellposedness_killcheck.md)
 - Lines: 742; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -41,7 +44,7 @@ MAJOR governance finding, pulled for the owner surface: the owner-registered obl
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from packsci03 idx 10660 (`.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave2_kill_attempt.md`, decision PULL) — ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-beta H), beta > 0, and a lattice bond-plane reflection, the reflected Gram form of Phi = I - SWAP has a strictly negative value, so the two-point menu collapses to a point; the kill consumes two supplied inputs, named exactly. MAJOR: contradicts the witness used by the repo's landed surface and corrects Wave 1 on its separator. Wave companions attached.
+- Cross-stratum reference from packsci03 [idx 10660](HISTORIC_WAVE2_KILL_ATTEMPT_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave2_kill_attempt.md`, decision PULL) — ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-beta H), beta > 0, and a lattice bond-plane reflection, the reflected Gram form of Phi = I - SWAP has a strictly negative value, so the two-point menu collapses to a point; the kill consumes two supplied inputs, named exactly. MAJOR: contradicts the witness used by the repo's landed surface and corrects Wave 1 on its separator. Wave companions attached.
 
 ## Flags carried
 
@@ -53,6 +56,7 @@ MAJOR governance finding — an owner-registered obligation's prose over-reaches
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_kill_check_governance_defect_finding
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A sharp cross-sector algebraic identity with a falsification r
 Scope: Atlas-LO Wolfenstein order; the cross-sector equality is an observed coincidence of two independently retained derivations rather than a derived identification.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Cross-sector identity A^2 = Q_l = 2/3 binding quark and lepton sectors with a falsification roadmap — the same-value-coincidence flag carried.
 
@@ -32,7 +34,8 @@ Cross-sector identity A^2 = Q_l = 2/3 binding quark and lepton sectors with a fa
 - Source commit: `a09ca133088ba0f48ebfe3474524989983903d15`
 - git blob: `fdb4601d5bb2e4f62036dc2168485522d494bec2`
 - sha256: `fc3635a23bd46d16edab5823434d1e7a282aa76817d6f090e59d9afe3a282380`
-- Lines: 313; runners named: scripts/canonical_plaquette_surface.py, scripts/frontier_cross_sector_a_squared_koide_vcb_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/270_CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/270_CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+- Lines: 313; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cross_sector_a_squared_koide_vcb_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The bridge rests on two different derivations happening to evaluate to 2/3; the 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

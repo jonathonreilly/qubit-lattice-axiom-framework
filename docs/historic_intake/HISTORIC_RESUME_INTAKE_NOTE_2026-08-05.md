@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_note
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Deliverables are committed TSVs under logs/runner-cache/recon_
 Scope: Files whose load-bearing quotes or citations reference deleted or changed axiom content.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Work order already surfaced to the owner: the axiom-reconciliation rescan index at TOTAL HARD=141 / SOFT_ONLY=740 / RETAINED_STATUS_HARD=8 (base 7b9260b85) - eight files with retained audit status hard-reference deleted or changed axiom text. The invalidation-pipeline gap; deliverable TSVs pinned under logs/runner-cache/recon_triage/.
 
@@ -32,7 +34,8 @@ Work order already surfaced to the owner: the axiom-reconciliation rescan index 
 - Source commit: `2be2924f52bc045174d08df2841d100e300ecd0e`
 - git blob: `1a605e1e1a9ff7c64bc4c98941120fbe6e3936b9`
 - sha256: `485256eec2662d49ad5dce05840f0d2b2b9b827867355833edf21e086a57ec44`
-- Lines: 40; runners named: scripts/axiom_reconciliation_rescan_2026_07_12.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10253_RESUME.md](../../archive_unlanded/historic_intake_originals/packsci01/10253_RESUME.md)
+- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/axiom_reconciliation_rescan_2026_07_12(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ Work order already surfaced to the owner: the axiom-reconciliation rescan index 
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from packsci03 idx 10833 (`.claude/science/physics-loops/repo-state-scrub-20260725/phase1_registry_integrity.md`, decision PULL) — SYSTEMIC INTEGRITY MEASUREMENT: ALL THREE registered derivation obligations have machine records that MISMATCH their source notes (6 distinct mismatches); of 4 registered axiom/primitive surfaces ...; documents the mass invalidation event that destroyed 202 clean no-go audits; the no_go count's cause is STRUCTURAL (the route exists in code and was never wired). Recommended repair set R1+R3+R4+R5 costed in-pack. Companion to the recon-rescan gap pulled from packsci01.
+- Cross-stratum reference from packsci03 [idx 10833](HISTORIC_PHASE1_REGISTRY_INTEGRITY_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/repo-state-scrub-20260725/phase1_registry_integrity.md`, decision PULL) — SYSTEMIC INTEGRITY MEASUREMENT: ALL THREE registered derivation obligations have machine records that MISMATCH their source notes (6 distinct mismatches); of 4 registered axiom/primitive surfaces ...; documents the mass invalidation event that destroyed 202 clean no-go audits; the no_go count's cause is STRUCTURAL (the route exists in code and was never wired). Recommended repair set R1+R3+R4+R5 costed in-pack. Companion to the recon-rescan gap pulled from packsci01.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Work order already surfaced to the owner: the axiom-reconciliation rescan index 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_note
 intake_directive: owner_2026-08-05
 ```
 

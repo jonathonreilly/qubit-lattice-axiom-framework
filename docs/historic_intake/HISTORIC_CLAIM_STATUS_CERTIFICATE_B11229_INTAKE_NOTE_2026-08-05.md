@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: bounded_theorem, explicitly NOT positive_theorem/retained beca
 Scope: Thermal regime T > EW crossover with RH-neutrino thermal exclusion as honest sector imports; the value matches Kolb-Turner Table 3.1 but the assembly is built from framework structure, not fitted to the value.
 Escape conditions (negative claims): Seven open imports queued for retirement: R-U1Y hypercharge existence, R-POL massless-vector 2-polarization, R-HIGGS single-doublet minimality, R-MATTER one-generation completion, R-FSB fermionic Stefan-Boltzmann, R-SPIN per-site spin-1/2, I12 RH-neutrino thermal exclusion.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Bounded positive worth registering: g_* = 106.75 assembled from framework gauge+generation structure given SEVEN NAMED residuals - explicitly bounded_theorem, NOT positive_theorem. FLAG carried: the headline number invites misreading as derived; the seven residuals are the actual state. Dead-route companion attached.
 
@@ -32,6 +34,7 @@ Bounded positive worth registering: g_* = 106.75 assembled from framework gauge+
 - Source commit: `f5fdba729c552a6c3ef3af318b861c711ce19321`
 - git blob: `029c37b485526a5e914075f0e0dc29de601d2657`
 - sha256: `05f79965d1266fefb5067dcbccfac3d109d533534b84a27ce8d3d4cbd2597929`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11229_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11229_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 83; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ the headline number 106.75 coincides with the textbook Standard Model value; the
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem_certificate
 intake_directive: owner_2026-08-05
 ```
 

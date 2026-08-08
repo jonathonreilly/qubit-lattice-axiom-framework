@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: DERIVED-MODULO-GAUGE-CONTENT on the block-content axis; the co
 Scope: Judges the logic of the proposed discriminator against origin/main; sets no audit status, changes no row, introduces no axiom or import. Every load-bearing fact is a finite check plus Q = 1/3 + (2/3)r.
 Escape conditions (negative claims): The only legitimate route named: a genuine which-lane dynamics acting on the generation leg (where color is absent); a color-coupled selection would first require building the unbuilt color->generation bridge (the open z3_character_isomorphism gate). Promoting SM naming + alpha=1/3 would shrink input #1 to zero.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Hostile audit: block content IS derived (su(3) dim formula) but the color->hierarchy mechanism is CIRCULAR — the legitimate route named; the pair's honest half.
 
@@ -32,7 +34,8 @@ Hostile audit: block content IS derived (su(3) dim formula) but the color->hiera
 - Source commit: `1160c3e1b735a698599545556bc8e2774ace7ae1`
 - git blob: `e170e70b5951f58ebf510b2147e310b4ef35e126`
 - sha256: `3e1c4ec12a24c6c034f2e3d16a5dc806f3d6304899a48001cebd767bc740bae6`
-- Lines: 168; runners named: scripts/lane_assignment_derivable_or_input_2026_06_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1096_LANE_ASSIGNMENT_DERIVABLE_OR_INPUT_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch04/1096_LANE_ASSIGNMENT_DERIVABLE_OR_INPUT_NOTE_2026-06-04.md)
+- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/lane_assignment_derivable_or_input_2026_06_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Explicitly finds a sibling note's central mechanism circular and structurally un
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

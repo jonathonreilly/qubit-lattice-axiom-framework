@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: runner bug finding plus semantic repair
 Scope: historical invalidation plus route-selection observations; no global no-go
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Historical code invalidation on the record: the old 5.024e-3 residual is INVALID as an endpoint-response diagnostic - a central-finite-difference runner bug plus semantic repair; downstream consumers of the old number must re-derive.
 
@@ -32,6 +34,7 @@ Historical code invalidation on the record: the old 5.024e-3 residual is INVALID
 - Source commit: `901176782dc16fe598fd8a1ff31f60cb5cdd01e3`
 - git blob: `b623fd1f92059082fa850c36ad65b4d6d8cd6e0a`
 - sha256: `5bc6d4993e1c618ec485d449ed6b2795b6486460e892ae483aa9c7f7c1445ab5`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11471_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci05/11471_NO_GO_LEDGER.md)
 - Lines: 39; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — cites MINIMAL_AXIOMS_2026-06-29, nearest-neighbour adjacency and proper cubic rotations only
 
@@ -22,7 +22,9 @@ Original verdict: The switches cannot be thrown independently, and what the popu
 Scope: Scoped to the single cell of one lattice step and one tick with this adjacency cost and least volume; the group sizes, the dimension-two ceiling, and the two sides 7704/8096 are properties of this population of 15800 cuttings; time enters only as the fourth column and no result depends on an arrow.
 Escape conditions (negative claims): Nothing identifies the charge with a physical quantity and nothing says it is conserved by any process; what a charge of this kind would mean for a lattice of many cells is not measured and not claimed. The charge depends on the demand that it be a sum over pieces — dropping that leaves 2^157 labellings. The pool of 192 pieces, the 120 regions and their 5 families are measured by search, not derived from symmetry.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The switches are NOT independent; a two-valued charge with dimension-bounded free behaviour is the obstruction — with the two overclaims self-flagged in place.
 
@@ -32,6 +34,7 @@ The switches are NOT independent; a two-valued charge with dimension-bounded fre
 - Source commit: `2d1e2c0f8a612ee984d04c31b80c570fe8577e47`
 - git blob: `71a0eb0fac7ff62e7e40acf551f9831aafa089fb`
 - sha256: `be17fcbb6ef21172213d4429a3245158e0235074f86cfa119d49d8cfd1ec17d0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3101_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026-08-05.md](../../archive_unlanded/historic_intake_originals/recovery/3101_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026-08-05.md)
 - Lines: 230; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Self-flagged: two headline statements (that the charge reverses under all 46128 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

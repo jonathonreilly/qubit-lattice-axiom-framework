@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_narrow_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: 'Run a bigger or interacting carrier to break the isospectrali
 Scope: Covers spectral/state functionals only; retires no Tier-A admission and edits no audit data. Runner 10/10.
 Escape conditions (negative claims): The third horn escapes explicitly: a gauge-invariant sigma-odd NON-spectral observable — a 2+1 topological action-offset — survives the no-go; a sigma-odd O (= e_1) genuinely splits the branches at +/-0.227.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Isospectrality theorem: every conjugation-based selector is spectrum-blind, so 'bigger carrier' falsifiers are PROVABLY DEAD — third-horn escape named.
 
@@ -32,7 +34,8 @@ Isospectrality theorem: every conjugation-based selector is spectrum-blind, so '
 - Source commit: `a9f1572962eae3aed0010e4708d24ad6a19b8fca`
 - git blob: `73524328aad091764df150cba9e642d89421094a`
 - sha256: `04e56b3c981238d8d2563a82aee70bfca77cb54232db909fb9a8fee9a6368e6e`
-- Lines: 140; runners named: scripts/frontier_orientation_sign_conjugation_selector_class_empty_2026_06_18.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1243_ORIENTATION_SIGN_CONJUGATION_SELECTOR_CLASS_IS_EMPTY_ABSOLUTE_SIGN_IS_CONVENTION_NARROW_NO_GO_NOTE_2026-06-18.md](../../archive_unlanded/historic_intake_originals/branch04/1243_ORIENTATION_SIGN_CONJUGATION_SELECTOR_CLASS_IS_EMPTY_ABSOLUTE_SIGN_IS_CONVENTION_NARROW_NO_GO_NOTE_2026-06-18.md)
+- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_orientation_sign_conjugation_selector_class_empty_2026_06_18(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_narrow_no_go
 intake_directive: owner_2026-08-05
 ```
 

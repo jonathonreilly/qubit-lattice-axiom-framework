@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The admitted pointer principle is grounded in the emergent-tim
 Scope: Grounds which basis records form in, not the spectra; uses a generic energy-monitoring decoherence model, so it is a conditional grounding; does not close the flavor sector (r=1/2 count-selector and staggered-Dirac admission untouched).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Pointer-principle re-grounding replacing a REFUTED position-detection grounding — correction of record.
 
@@ -32,7 +34,8 @@ Pointer-principle re-grounding replacing a REFUTED position-detection grounding 
 - Source commit: `cf5722386159ce4bd24c062ec0e3baef25aa63bf`
 - git blob: `4d287e1f4ae664be6cd8dae4b21a68fc08beb0e7`
 - sha256: `e80d198e2cf93e4434e1a5b123d6de2e1e5ba8b4bdc089d8535461b6a43a90cb`
-- Lines: 104; runners named: scripts/pointer_principle_grounded_in_emergent_time_decoherence_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1602_POINTER_PRINCIPLE_GROUNDED_IN_EMERGENT_TIME_DECOHERENCE_FLAVOR_SIEVE_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch05/1602_POINTER_PRINCIPLE_GROUNDED_IN_EMERGENT_TIME_DECOHERENCE_FLAVOR_SIEVE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 104; runners named: historic runner (unpinned, not in this packet): `scripts/pointer_principle_grounded_in_emergent_time_decoherence_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that a previously used grounding for the same principle was refuted.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

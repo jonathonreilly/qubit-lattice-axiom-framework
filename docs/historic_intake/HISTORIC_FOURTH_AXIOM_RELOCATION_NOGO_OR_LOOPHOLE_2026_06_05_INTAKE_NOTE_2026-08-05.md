@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: RELOCATION-NO-GO-HOLDS - the kinematic floor is the honest end
 Scope: Observed moduli are used as observational comparison only, never as derivation input; the note imports no axiom and derives no modulus.
 Escape conditions (negative claims): The escape the dichotomy would need is a dynamics that is simultaneously parameter-free AND reaches generic values. Route 1 would need a distinguished, PRE-REGISTERED parameter-free quantity that is structurally a modulus (a property of the 3x3 flavor spectrum, not a 2-point substrate function); Route 2 would need a cross-sector relation that is both tight and stable under mid-mass uncertainty (the two closest, r_up/r_down ~ 13/10 and r_down/r_lep ~ 6/5, miss at 0.36-0.51% and drift).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The dial no-go: charged lepton EXACTLY at the interior distinguished point, quarks/neutrino generic — RELOCATION-NO-GO-HOLDS with the double-horn escape named and its own coincidences diagnosed.
 
@@ -32,7 +34,8 @@ The dial no-go: charged lepton EXACTLY at the interior distinguished point, quar
 - Source commit: `e6045d2c1652e8ddd53dc2aee0fafe27194a9532`
 - git blob: `710aece275545d6a259c8cd842c6951417ee34f6`
 - sha256: `427c57b351246751ec70068cb0cf7065697840e8633dce420d0078f074c41c52`
-- Lines: 215; runners named: scripts/fourth_axiom_relocation_nogo_2026_06_05.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/501_FOURTH_AXIOM_RELOCATION_NOGO_OR_LOOPHOLE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch02/501_FOURTH_AXIOM_RELOCATION_NOGO_OR_LOOPHOLE_2026-06-05.md)
+- Lines: 215; runners named: historic runner (unpinned, not in this packet): `scripts/fourth_axiom_relocation_nogo_2026_06_05(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Explicitly diagnoses its own most striking numerical coincidences (Green-functio
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

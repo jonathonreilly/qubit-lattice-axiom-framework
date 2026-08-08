@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: sin^2(theta_W) = 3/8 is NOT derived from Cl(3) — in a produc
 Scope: Cl(3)-on-Z^3 commutant algebra plus SM-only beta functions; the normalization obstruction is the central finding.
 Escape conditions (negative claims): Three named future attacks: a lattice-theoretic normalization from staggered vertex-function ratios, anomaly matching (noted to constrain charges not couplings), or lattice perturbation theory generating a nontrivial k radiatively — none demonstrated and all bounded at best.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Weinberg-angle terminal: sin^2 = 3/8 NOT derived from Cl(3) (relative normalization free in a product group) — retracts framework-level claim language; three future attacks named.
 
@@ -32,7 +34,8 @@ The Weinberg-angle terminal: sin^2 = 3/8 NOT derived from Cl(3) (relative normal
 - Source commit: `fb55ab178b77043b8eaf8e7d5725dfe1b8fff281`
 - git blob: `2a9eba22a83a0b5ec9f4a1728b1545e34afd19e6`
 - sha256: `99aa9122ffcdb91b2d6f537b9491951843fdac67a773da7d3980560d35a5e85a`
-- Lines: 185; runners named: scripts/frontier_weinberg_angle_derived.py, scripts/frontier_gauge_unification.py, scripts/frontier_weinberg_angle_correction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2113_WEINBERG_ANGLE_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2113_WEINBERG_ANGLE_DERIVED_NOTE.md)
+- Lines: 185; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_weinberg_angle_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_gauge_unification(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_weinberg_angle_correction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Retracts framework-level claim language used elsewhere in the repo ('sin^2 theta
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_note
+Claim type: meta
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Test plan leaves three open items: per-block certificate audit
 Scope: Synthesis index; proposal_allowed false.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL index of the 2026-04-29 axiom-to-main-lane cascade: ten blocks across PRs #183-187, #190, #194-195 and #197, plus 14 publication-matrix rows queued for later weaving that were never woven - an open work order the repo has forgotten. Three open items named (per-block certificate audits, adjudication, weaving).
 
@@ -32,6 +34,7 @@ TERMINAL index of the 2026-04-29 axiom-to-main-lane cascade: ten blocks across P
 - Source commit: `01a58a893e599cfb2fa876f2f9cdae3ae952c51a`
 - git blob: `52b934e7822ae4d100182fea4c2944aec1a4c84e`
 - sha256: `8040cead3dcdfe4b7cac55fbdc91c2d3dc4619200ca55d8e98b58d47b701c48a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10265_PR_BODY_BLOCK10.md](../../archive_unlanded/historic_intake_originals/packsci01/10265_PR_BODY_BLOCK10.md)
 - Lines: 63; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Fourteen publication-matrix promotions were queued off a chain whose root block 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_note
 intake_directive: owner_2026-08-05
 ```
 

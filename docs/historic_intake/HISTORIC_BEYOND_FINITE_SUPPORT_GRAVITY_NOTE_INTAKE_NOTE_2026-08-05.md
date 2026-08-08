@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Sharp obstruction: the bridge cannot be widened to arbitrary n
 Scope: Four tail classes tested on the same box (exponential, p = 5.5, p = 5.0, p = 4.5 and 2.5); also covers time-dependent sources.
 Escape conditions (negative claims): The negative is a moment-convergence threshold at p = 5, not an impossibility — a new nonlocal or tensorially broader bridge principle escapes it, and all sufficiently fast-decaying (p > 5 or exponential) sources are already covered.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Sharp scoped obstruction: the gravity bridge extends to exponential and p>5 algebraic tails and fails below — a moment-convergence threshold with the nonlocal-subtraction escape named.
 
@@ -32,7 +34,8 @@ Sharp scoped obstruction: the gravity bridge extends to exponential and p>5 alge
 - Source commit: `e58a029c63c2b5cccb4b1389b9556d0eee28d974`
 - git blob: `0199d4bd6f6be28297672b66a80321a86d816b26`
 - sha256: `a448dc1fcbfb652448a900bbf47618cc0af10cd8794f74ff78d770c67504a752`
-- Lines: 104; runners named: scripts/frontier_beyond_finite_support_gravity.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/108_BEYOND_FINITE_SUPPORT_GRAVITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/108_BEYOND_FINITE_SUPPORT_GRAVITY_NOTE.md)
+- Lines: 104; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_beyond_finite_support_gravity(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Both horns of delta_v(xi) remain live: the lever is not closed
 Scope: Boundary note on the derived-time chain; the single-clock assembly and microcausality are unaudited and base RP is audited_conditional.
 Escape conditions (negative claims): Every retained item in the lane (anisotropy-gate no-go, scope-boundary no-go, clock-rate no-go, a -> 0-only SO(4) isotropy) cuts against an unconditional positive horn.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 RETRACTION of 'the axioms contain no time': time IS derived (single-clock theorem) but as continuous Stone time — two prior claims retracted; both horns live.
 
@@ -32,6 +34,7 @@ RETRACTION of 'the axioms contain no time': time IS derived (single-clock theore
 - Source commit: `13ccbb37662d660b754ce2aaedaac6f5c75801ed`
 - git blob: `e88da68985255d7f4d29ba997feb2bbbaf51e18f`
 - sha256: `1445e341f83910ee16ac8dd1b2c30db62687ce6b80fdb7879c0f3507af4c7928`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2026_TEMPORAL_STRUCTURE_DERIVATION_BOUNDARY_BOUNDED_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch06/2026_TEMPORAL_STRUCTURE_DERIVATION_BOUNDARY_BOUNDED_NOTE_2026-06-08.md)
 - Lines: 173; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records two retracted prior claims about the framework's temporal content and no
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

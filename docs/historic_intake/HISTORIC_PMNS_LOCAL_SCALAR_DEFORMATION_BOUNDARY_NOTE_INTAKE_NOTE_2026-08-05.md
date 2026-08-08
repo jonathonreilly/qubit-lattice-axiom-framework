@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_negative_extension_theorem
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No - the entire local scalar-field route produces only diagona
 Scope: Retained lowest-order local scalar-field route on the retained PMNS lepton surface.
 Escape conditions (negative claims): Does not rule out a non-scalar deformation law, a route leaving the retained one-sided minimal class, or a different extension of the microscopic lepton dynamics.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact negative: the entire local scalar-field route produces only diagonal splitting (commutative algebra projects diagonally) — with non-scalar escapes named.
 
@@ -32,7 +34,8 @@ Exact negative: the entire local scalar-field route produces only diagonal split
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `47d87d0dde112872623e034c3ff5aae48bb80fd2`
 - sha256: `de2a914290729ade96c76492682954afc231668bc7df57fd83db93969d6afdee`
-- Lines: 107; runners named: scripts/frontier_pmns_local_scalar_deformation_boundary.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1549_PMNS_LOCAL_SCALAR_DEFORMATION_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1549_PMNS_LOCAL_SCALAR_DEFORMATION_BOUNDARY_NOTE.md)
+- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_local_scalar_deformation_boundary(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_negative_extension_theorem
 intake_directive: owner_2026-08-05
 ```
 

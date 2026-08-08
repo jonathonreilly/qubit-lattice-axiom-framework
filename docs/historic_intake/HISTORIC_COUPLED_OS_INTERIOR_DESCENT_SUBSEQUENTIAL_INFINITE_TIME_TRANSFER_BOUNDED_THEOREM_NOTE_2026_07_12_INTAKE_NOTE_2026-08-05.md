@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Infinite-time transfer exists subsequentially; the highest-lev
 Scope: Existence, not canonicity — no uniqueness of the L_t -> infinity functional, no convergence without subsequences, no boundary-condition independence, no unique vacuum, gap, clustering, spatial thermodynamic limit, or continuum limit; the Wilson-staggered dynamics and probability law are supplied, not derived from the axioms.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact finite-circle null descent + subsequential infinite-time transfer for the SU(3) Wilson-staggered model — the transfer-gap lineage's next theorem named.
 
@@ -32,7 +34,8 @@ Exact finite-circle null descent + subsequential infinite-time transfer for the 
 - Source commit: `ae251aaa352cafe6e850bd68c7d1091e6d6ed70f`
 - git blob: `78b5f5c870ea592abb5d739de492537b17611027`
 - sha256: `b1e6ef5367ac9cbb1fee3d3970dae6b4c62e0730008da6ef26348e5e2642e4b1`
-- Lines: 450; runners named: ../scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12.py, scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/266_COUPLED_OS_INTERIOR_DESCENT_SUBSEQUENTIAL_INFINITE_TIME_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch01/266_COUPLED_OS_INTERIOR_DESCENT_SUBSEQUENTIAL_INFINITE_TIME_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md)
+- Lines: 450; runners named: historic runner (unpinned, not in this packet): `../scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12(.py)`; historic runner (unpinned, not in this packet): `scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

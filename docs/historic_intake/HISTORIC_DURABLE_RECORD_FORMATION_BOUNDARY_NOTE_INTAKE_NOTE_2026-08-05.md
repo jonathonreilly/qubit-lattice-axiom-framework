@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Supplies a precise finite sufficient condition for the chronol
 Scope: Durability means redundancy and persistence of physical witnesses, not fundamental irreversibility; the model stays globally reversible.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Precise finite sufficient condition for durable records ((k-1)/2 flip tolerance) with an explicit safe-language section.
 
@@ -32,7 +34,8 @@ Precise finite sufficient condition for durable records ((k-1)/2 flip tolerance)
 - Source commit: `c480c335785546971b08eaeae3e9adf5168429a8`
 - git blob: `a0f5a55661ec1b66eba977b3d22d56248be72711`
 - sha256: `5afdf95296ed12db87070ff4fad2e0b54dde91c3ab6af3516f3d16205ec754ab`
-- Lines: 94; runners named: scripts/durable_record_formation_boundary_probe.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/415_DURABLE_RECORD_FORMATION_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/415_DURABLE_RECORD_FORMATION_BOUNDARY_NOTE.md)
+- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/durable_record_formation_boundary_probe(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Includes an explicit Safe Language section forbidding 'measurement problem solve
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

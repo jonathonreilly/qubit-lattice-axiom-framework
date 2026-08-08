@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The capstone negative closeout for the retained Majorana lane.
 Scope: The pure-retained sole-axiom Majorana lane.
 Escape conditions (negative claims): Any positive Majorana reopening requires either a genuinely new charge-2 primitive or a genuinely new source law activating the canonical J2 slot — either way beyond pure retention.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Majorana capstone negative: the pure-retained lane stays charge-zero — mu = 0; any reopening needs a new charge-2 primitive; terminal of the chain.
 
@@ -32,7 +34,8 @@ The Majorana capstone negative: the pure-retained lane stays charge-zero — mu 
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `fdc33f99b302b2a9a7b5e85a96e150a884dab6e8`
 - sha256: `375efb52e1d4624e59cbd1c3489977663438404655b6272d4fab4af6654afa4b`
-- Lines: 40; runners named: scripts/frontier_neutrino_majorana_pure_retained_mu_impossibility.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1197_NEUTRINO_MAJORANA_PURE_RETAINED_MU_IMPOSSIBILITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1197_NEUTRINO_MAJORANA_PURE_RETAINED_MU_IMPOSSIBILITY_NOTE.md)
+- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_pure_retained_mu_impossibility(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

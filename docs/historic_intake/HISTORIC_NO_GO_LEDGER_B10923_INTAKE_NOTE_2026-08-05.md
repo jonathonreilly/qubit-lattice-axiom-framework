@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_route_table
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The inverse-square law is 'selected only by target or new theo
 Scope: Selector routes for kappa = 0 and the inverse-square law.
 Escape conditions (negative claims): A new theorem supplying the dual-compliance law or a channel-nonblind selector.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 MAJOR self-diagnosis of target-driven selection: seven routes fail to supply the dual-compliance law, so the inverse-square law 'remains selected only by target or new theorem' - i.e. by the answer, not the framework. The epsilon = 0 companion proves the same shape (the endpoint target, not the framework, forces the counterterm away). The named escape is a derived no-scale/counterterm-exclusion theorem. Companions attached.
 
@@ -32,6 +34,7 @@ MAJOR self-diagnosis of target-driven selection: seven routes fail to supply the
 - Source commit: `e38b1266b0b3a671c7a793346fb1b8865c1d66ca`
 - git blob: `57ff998ee337b56d43454a0d58f5802503c61db3`
 - sha256: `4e00fa29b6d43b72605baad5f92dcd5246f85a15061050911250ad8d6b2e6469`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10923_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10923_NO_GO_LEDGER.md)
 - Lines: 11; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -63,6 +66,7 @@ MAJOR self-diagnosis: the inverse-square law 'remains selected only by target or
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_route_table
 intake_directive: owner_2026-08-05
 ```
 

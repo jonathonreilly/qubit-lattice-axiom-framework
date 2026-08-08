@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Neither a scalar p-only surface gas nor a face-label-only char
 Scope: First genuine non-disk order at p^14, where the sector splits into four exact geometric classes with multiplicities 8, 12, 48, 4.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 First-nondisk foam theorem: the exact closure object must be sheet-enriched (scalar gas and face-label foam both fail) — beta6 lane exact result; 473 attached.
 
@@ -32,7 +34,8 @@ First-nondisk foam theorem: the exact closure object must be sheet-enriched (sca
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `0c59ade2c7b73e9258ec8b2504282fa1ff6074b3`
 - sha256: `a72841934300a4110bfa03002b68fc22799f16678a5022336f188284e4946a56`
-- Lines: 204; runners named: scripts/frontier_first_nondisk_character_foam_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/472_FIRST_NONDISK_CHARACTER_FOAM_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/472_FIRST_NONDISK_CHARACTER_FOAM_THEOREM_NOTE.md)
+- Lines: 204; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_first_nondisk_character_foam_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

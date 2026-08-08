@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: FALSIFIED - the f = 1 surface is a phase-inversion boundary th
 Scope: 41^3 lattice, four mass strengths giving horizons at r_h = 2.9-6.8 and surface gravity 0.22-0.61.
 Escape conditions (negative claims): Three requirements named for a genuine analog: a mechanism to absorb or trap ingoing amplitude (f = 1 freezes phase but does not attenuate), quantum fluctuations converting frozen-phase modes to outgoing radiation, and an action enforcing a one-way membrane - none present in the classical path-sum.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 HAWKING ANALOG FALSIFIED: f = 1 is a phase-inversion boundary that AMPLIFIES outgoing modes (factor 164) — the strong-field lane's central negative with three requirements named.
 
@@ -32,7 +34,8 @@ HAWKING ANALOG FALSIFIED: f = 1 is a phase-inversion boundary that AMPLIFIES out
 - Source commit: `ef9409dce218a93968f1b70c767a13512ea54d47`
 - git blob: `88b4716c4b50e122f27133ca4a9f8c675c7f2029`
 - sha256: `f7908ee91eff155eec4297b4917d606898f8f5d764e164d7332d3f2c2e4c8c50`
-- Lines: 91; runners named: scripts/frontier_hawking_analog.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/672_HAWKING_ANALOG_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/672_HAWKING_ANALOG_NOTE.md)
+- Lines: 91; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hawking_analog(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Reports amplitude amplification by a factor of 164 - the wavepacket gains energy
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

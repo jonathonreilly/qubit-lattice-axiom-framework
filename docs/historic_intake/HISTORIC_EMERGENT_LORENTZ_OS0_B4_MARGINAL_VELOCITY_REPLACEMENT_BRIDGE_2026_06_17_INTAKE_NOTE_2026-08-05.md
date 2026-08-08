@@ -1,9 +1,11 @@
 # Historic intake: Emergent Lorentz OS0 B4 Marginal-Velocity Replacement Bridge
 
+Explicit subject: On the OS0 branch, signed-permutation B4 fixes the diagonal marginal kinetic vector (c_0,c_1,c_2,c_3) to the one-dimensional subspace c_0 = c_1 = c_2 = c_3 (versus dimension two under spatial O_h alone), so c_t p_t^2 + c_s(p_x^2+p_y^2+p_z^2) with c_t != c_s is not an invariant ... (The bare code `B4` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_support_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: Exact support giving downstream OS0 rows a clean marginal-velo
 Scope: Consumes the kinetic-isotropy primitive and the supplied all-orders B4 regulated action/measure package; covers marginal OS0 protection only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact import-retirement: signed-permutation B4 forces the isotropic marginal kinetic vector — Lorentz-protection route without the RG imports.
 
@@ -32,7 +36,8 @@ Exact import-retirement: signed-permutation B4 forces the isotropic marginal kin
 - Source commit: `caf2cf10e636a6072caf4ca4cf4e0d31905472d6`
 - git blob: `84bba0bc7d493ae325db5964aa283671ee682a63`
 - sha256: `bb85800b67d5b0cb04202a876f61bfc24da12c860b2a4040363257ae6d474342`
-- Lines: 134; runners named: scripts/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/429_EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md](../../archive_unlanded/historic_intake_originals/branch02/429_EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md)
+- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Explicitly leaves open the continuous-time/non-isotropic horn, non-perturbative 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_support_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The ratio is a structural consistency result, not a pure first
 Scope: The framework derives the inputs to the thermal history, not the history itself.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Gate-5 honest verdict: the DM ratio is structural consistency, not first-principles — the thermal-cosmology imports named.
 
@@ -32,7 +34,8 @@ Gate-5 honest verdict: the DM ratio is structural consistency, not first-princip
 - Source commit: `87eb5109dc2bc0ce8350c02f02d63cea5c3dd327`
 - git blob: `8f4c8b7786ab6cf7c6ee839189f23c3d4fd78ea3`
 - sha256: `b67a620449446c9598191591c0c89de0b71d79b3055bd11e219890b4c3d7034b`
-- Lines: 94; runners named: scripts/frontier_dm_ratio_sommerfeld.py, scripts/frontier_freezeout_from_lattice.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/557_GATE_5_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/557_GATE_5_CLOSURE_NOTE.md)
+- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_ratio_sommerfeld(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_freezeout_from_lattice(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Defends imported machinery by analogy to other DM models rather than deriving it
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

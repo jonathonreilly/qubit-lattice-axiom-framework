@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: The time axis IS the thermodynamic arrow; the past hypothesis 
 Scope: A correlation/identification, not a new dynamics; decoherence onset is sharply monotone while long-time monotonicity is only the statistical coarse-grained second law for a finite closed system.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The time axis IS the thermodynamic arrow: unconditional identification with the orientation residual isolated as exactly the inherited past hypothesis.
 
@@ -32,7 +34,8 @@ The time axis IS the thermodynamic arrow: unconditional identification with the 
 - Source commit: `978bef2a5be09988a7c245842fb1f67f014b1671`
 - git blob: `047dc395c420bfff5393d4d2cd8d87169cc33863`
 - sha256: `92b3ebebf129ec20c61678f3466de03749cf135d4e10a2c8d073bfc07f78a9e4`
-- Lines: 99; runners named: ../scripts/derived_time_axis_is_thermodynamic_arrow_runner.py, scripts/derived_time_axis_is_thermodynamic_arrow_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/305_DERIVED_TIME_AXIS_IS_THE_THERMODYNAMIC_ARROW_ORIENTATION_IS_THE_PAST_HYPOTHESIS_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch01/305_DERIVED_TIME_AXIS_IS_THE_THERMODYNAMIC_ARROW_ORIENTATION_IS_THE_PAST_HYPOTHESIS_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `../scripts/derived_time_axis_is_thermodynamic_arrow_runner(.py)`; historic runner (unpinned, not in this packet): `scripts/derived_time_axis_is_thermodynamic_arrow_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

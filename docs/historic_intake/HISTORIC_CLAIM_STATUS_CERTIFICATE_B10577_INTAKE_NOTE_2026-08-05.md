@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Positive theorem at algebraic scope; independent audit remains
 Scope: Per-element and per-mode scopes tested; site/block/lattice scopes explicitly not claimed.
 Escape conditions (negative claims): N7 identifies zero-mode and arbitrary-r counterarguments as the strongest steelman, both of which narrow the claim and are checked exactly.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean unlanded positive: candidate-retained-grade self-contained exact algebra with a complete current-cycle runner certificate and no load-bearing dependencies.
 
@@ -32,6 +34,7 @@ Clean unlanded positive: candidate-retained-grade self-contained exact algebra w
 - Source commit: `9b54e4137059f0793c526fc566283829915b7cd4`
 - git blob: `11386c42923e7bfd5c8acfd9f9b88244882930ed`
 - sha256: `96abc89105aedf6dc71b1e9d0fea97eced100228364c0b7d212f5ef6543c533b`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10577_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10577_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 38; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

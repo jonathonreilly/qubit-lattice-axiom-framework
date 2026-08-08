@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_science_only_narrowing_classification_note_on_the_surviving_holonomy_route
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A real narrowing, not a closure - exact Planck could only hide
 Scope: Finite same-surface Spin(3) holonomy constructions with combinatorial normalization, and positive normalized internal/barycentric aggregates of local gauge-invariant deficits.
 Escape conditions (negative claims): Escaped only by a non-extensive, non-internal or otherwise non-canonical reparameterization, or by an infinite/renormalized nonlocal holonomy object rather than any clean finite same-surface construction.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Holonomy terminal narrowing: datum-free subclasses fall (rational q ratios; positive aggregates) — exact Planck only in non-extensive/non-internal objects.
 
@@ -32,7 +34,8 @@ Holonomy terminal narrowing: datum-free subclasses fall (rational q ratios; posi
 - Source commit: `badaf1a4d383357e72fe570bd3fa0eb053db7dd3`
 - git blob: `749338400e6c801ccd449594bcd9301422a1255d`
 - sha256: `936bfc64a533e9b74e99afdffbb46584238d3bcf395bc14cb27a50dfc49ceb39`
-- Lines: 267; runners named: scripts/frontier_planck_exotic_nonlocal_holonomy_lane.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1423_PLANCK_SCALE_EXOTIC_NONLOCAL_HOLONOMY_LANE_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1423_PLANCK_SCALE_EXOTIC_NONLOCAL_HOLONOMY_LANE_2026-04-23.md)
+- Lines: 267; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_exotic_nonlocal_holonomy_lane(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_science_only_narrowing_classification_note_on_the_surviving_holonomy_route
 intake_directive: owner_2026-08-05
 ```
 

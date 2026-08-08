@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Exact negative boundary — absolute m_t remains an open match
 Scope: Whether an HQET/static route avoiding am_top >> 1 can still deliver an absolute top mass.
 Escape conditions (negative claims): A real matching condition: delta_m(a) from the retained gauge action plus conversion from static energy to SM top mass, with no observed m_t or H_unit/Ward y_t authority as selector.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact rephasing no-go: the subtracted static correlator is independent of the bare mass — absolute m_t remains an open matching input; closes the HQET escape.
 
@@ -32,7 +34,8 @@ Exact rephasing no-go: the subtracted static correlator is independent of the ba
 - Source commit: `02970ac126536a55f40874cd4d60e7ab9cd8b6cf`
 - git blob: `4144bc538bbe4b0de421bec33a20f8680b647259`
 - sha256: `29ea2a9d3bb5183daf6a4d596de49fefb75056da060d810d78655abaa3235040`
-- Lines: 84; runners named: scripts/frontier_yt_static_mass_matching_obstruction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2454_YT_STATIC_MASS_MATCHING_OBSTRUCTION_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch08/2454_YT_STATIC_MASS_MATCHING_OBSTRUCTION_NOTE_2026-05-01.md)
+- Lines: 84; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_static_mass_matching_obstruction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

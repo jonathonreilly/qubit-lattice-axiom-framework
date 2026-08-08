@@ -1,9 +1,11 @@
 # Historic intake: A3 P4 Direct Noninteger Divisor Current-Surface No-Go
 
+Explicit subject: Narrowed claim: current surfaces do not supply P4_DIRECT_NONINTEGER_DIVISOR_RETAINED. (The bare codes `A3`, `P4` in the title are era-local historic shorthand preserved verbatim from the original; the pinned original defines them.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: Support-only non-supply boundary; the numbers define the targe
 Scope: Placement P4: abandoning the exact 1/256 scaffold for a directly derived noninteger divisor.
 Escape conditions (negative claims): Derive the physical noninteger divisor directly, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE DISCLOSURE: the campaign's 'exact' 1/256 is a 0.032% approximation to the direct physical divisor (256.0824...) — the A3 sub-ladder exists to place that unexplained correction; mandatory audit context.
 
@@ -32,7 +36,8 @@ THE DISCLOSURE: the campaign's 'exact' 1/256 is a 0.032% approximation to the di
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `1e6437acdc3993e5d23ea29ab726aae1c468a334`
 - sha256: `add8904b2350b5e0fd174176fab55343805707a3c04f974a82537b8be92d64b7`
-- Lines: 256; runners named: scripts/frontier_zero_import_hydrogen_lepton_256_a3_p4_direct_noninteger_divisor_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2634_ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2634_ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P4_DIRECT_NONINTEGER_DIVISOR_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 256; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_a3_p4_direct_noninteger_divisor_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Records that the campaign's exact 1/256 is a 0.032% approximation to m_W/a_lepto
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

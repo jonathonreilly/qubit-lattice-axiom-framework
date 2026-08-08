@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The Koide value problem IS a spontaneous translation-symmetry-
 Scope: With b = 0 one has three independent diagonal masses, so Q = 2/3 would be a tuned coincidence of three free numbers rather than the Koide relation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The unifying reframe: the Koide value problem IS a spontaneous translation-symmetry-breaking problem, unsupplied by native fermion-vacuum dynamics.
 
@@ -32,7 +34,8 @@ The unifying reframe: the Koide value problem IS a spontaneous translation-symme
 - Source commit: `6025834294ca90242bbbb1d8a7c14b38c667aa43`
 - git blob: `e466239bdccb797dc5ae4067cfe4fcdd8d2a4e1b`
 - sha256: `e2e849c4949c2387d535d98c6d71f7fb7acc80ef780008fb78ca41b550f90473`
-- Lines: 66; runners named: scripts/flavor_translation_breaking_reframing_2026_05_29.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/495_FLAVOR_TRANSLATION_BREAKING_REFRAMING_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/495_FLAVOR_TRANSLATION_BREAKING_REFRAMING_NOTE_2026-05-29.md)
+- Lines: 66; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_translation_breaking_reframing_2026_05_29(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

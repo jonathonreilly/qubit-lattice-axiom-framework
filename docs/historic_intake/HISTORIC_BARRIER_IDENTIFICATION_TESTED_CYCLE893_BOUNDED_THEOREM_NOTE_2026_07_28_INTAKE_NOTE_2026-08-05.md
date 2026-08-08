@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The identification was never load-bearing — the gauge break 
 Scope: Owner-directed gravity-lane closure, window 2; fate map computed on every candidate with two independent engines agreeing on all rows; no axiom surface touched.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Cycle 892's load-bearing conditionality DISSOLVES: the gauge break survives every admissible barrier (infinite space) — resolves a shipped block's open scope question.
 
@@ -32,7 +34,8 @@ Cycle 892's load-bearing conditionality DISSOLVES: the gauge break survives ever
 - Source commit: `6398966c50511cac0f80ae79f46678301fbae9f8`
 - git blob: `110ea239c6d63230c5bf2a00f6afc189ca42f799`
 - sha256: `6d949b8b825fbe513724ea47c1bd092195635510ab3408cbf9981863b7b360b1`
-- Lines: 195; runners named: ../scripts/frontier_cycle893_barrier_identification_2026_07_28.py, ../scripts/frontier_cycle893_barrier_independent_check_2026_07_28.py, frontier_cycle893_barrier_identification_2026_07_28.py, frontier_cycle893_barrier_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/80_BARRIER_IDENTIFICATION_TESTED_CYCLE893_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/80_BARRIER_IDENTIFICATION_TESTED_CYCLE893_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 195; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle893_barrier_identification_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle893_barrier_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle893_barrier_identification_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle893_barrier_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

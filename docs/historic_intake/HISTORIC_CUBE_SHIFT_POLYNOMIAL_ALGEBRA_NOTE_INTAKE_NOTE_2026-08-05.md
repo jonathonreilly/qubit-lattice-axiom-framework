@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Airtight structural foundation for any framework claim that an
 Scope: Pure linear algebra on C^8; Grind Program batch 4.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The cube-shift algebra structure theorem (abelian, dim 8, Hadamard-diagonal) — airtight reusable infrastructure cited across lanes; 274/276 attached.
 
@@ -32,7 +34,8 @@ The cube-shift algebra structure theorem (abelian, dim 8, Hadamard-diagonal) —
 - Source commit: `a68eedae8b49a3da2f2c93c8b63ba73e6b7f0951`
 - git blob: `b69172d6781e69cafc11c17c1d87438ead7f9728`
 - sha256: `719600b60707947768ba0a7a2d2ed6eba4ff67e2d68ea8e600b04504bc28313b`
-- Lines: 61; runners named: scripts/frontier_cube_shift_polynomial_algebra.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/275_CUBE_SHIFT_POLYNOMIAL_ALGEBRA_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/275_CUBE_SHIFT_POLYNOMIAL_ALGEBRA_NOTE.md)
+- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cube_shift_polynomial_algebra(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

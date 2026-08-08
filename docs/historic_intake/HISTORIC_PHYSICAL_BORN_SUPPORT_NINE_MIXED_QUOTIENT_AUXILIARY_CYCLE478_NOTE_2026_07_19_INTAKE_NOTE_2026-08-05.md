@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Gate disposition FAIL — partial-attempt-with-named-untested-
 Scope: One finite effect-functionality compiler test on the retained Cycle-471 surface; the compiled wall is independent of the grade, state-selection, occurrence, frequency and continuum-extension walls, which are simply absent.
 Escape conditions (negative claims): Allowed wording is only 'the frozen final fixed-G55 quotient row is functionally compiled'; 'Born rule derived' and 'probability selected' are explicitly disallowed.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the G55 quotient ladder (Cycles 448-478): compiles the final frozen support-nine representative; gate disposition FAIL - partial-attempt-with-named-untested-routes; allowed wording is pinned ('the frozen final representative...'). Ladder members attached; the ladder is the sweep's largest exact-rational compilation chain.
 
@@ -32,6 +34,7 @@ TERMINAL of the G55 quotient ladder (Cycles 448-478): compiles the final frozen 
 - Source commit: `d149d97918b50b89b76b0cf368d0d1ca11ba1da5`
 - git blob: `116527dbf66c76f4f135d5fc53ebd58cf6004e14`
 - sha256: `87ed2bfbcff03b155496123d664050e80e01c67e668b06d751c3ecef2415652f`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2796_PHYSICAL_BORN_SUPPORT_NINE_MIXED_QUOTIENT_AUXILIARY_CYCLE478_NOTE_2026-07-19.md](../../archive_unlanded/historic_intake_originals/branch09/2796_PHYSICAL_BORN_SUPPORT_NINE_MIXED_QUOTIENT_AUXILIARY_CYCLE478_NOTE_2026-07-19.md)
 - Lines: 196; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

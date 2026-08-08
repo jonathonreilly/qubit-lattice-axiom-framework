@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: V_cb is predicted at 4.6% without V_cb input, with the best no
 Scope: Bounded; includes an explicit circularity analysis of which determinations remain non-circular.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 V_cb predicted at 4.6% without V_cb input via five attacks with the best non-circular determination identified — the April magnitude program's flagship.
 
@@ -32,7 +34,8 @@ V_cb predicted at 4.6% without V_cb input via five attacks with the best non-cir
 - Source commit: `ebfd8c112cf96c45904a9d4ed88c7cd4c402e366`
 - git blob: `1db4f05cf9394ba62319602b1ad34021211eb61d`
 - sha256: `0195de7b2de67988b0fb838a34c28db68bb575b5c55e88db1a0fb9fad59d23ae`
-- Lines: 135; runners named: scripts/frontier_ckm_absolute_s23.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/160_CKM_ABSOLUTE_S23_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/160_CKM_ABSOLUTE_S23_NOTE.md)
+- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_absolute_s23(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -57,6 +60,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_science_only_theorem_grade_no_go_on_the_current_admitted_gravity_action_family
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No - the current admitted gravity/action family cannot fix the
 Scope: Absolute unit map only - explicitly not a regulator/continuum-limit claim; the physical-lattice reading is accepted and unaffected.
 Escape conditions (negative claims): Escaped only by introducing a genuinely new non-homogeneous, unit-bearing same-surface observable beyond the current admitted gravity/action family.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE scale-ray no-go: every retained relation is homogeneous under a -> lambda a — the lane's load-bearing negative; escape = a genuinely unit-bearing observable.
 
@@ -32,7 +34,8 @@ THE scale-ray no-go: every retained relation is homogeneous under a -> lambda a 
 - Source commit: `badaf1a4d383357e72fe570bd3fa0eb053db7dd3`
 - git blob: `de3adfae703cd3701da5462ef55412a67774a8d5`
 - sha256: `db9bd4fce3292d32ff6432eb9b5c2df89fe8c8cdf48a082c84bf89a4116d091c`
-- Lines: 264; runners named: scripts/frontier_planck_gravity_action_scale_ray_nogo.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1429_PLANCK_SCALE_GRAVITY_ACTION_SCALE_RAY_NO_GO_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1429_PLANCK_SCALE_GRAVITY_ACTION_SCALE_RAY_NO_GO_THEOREM_2026-04-23.md)
+- Lines: 264; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_gravity_action_scale_ray_nogo(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_science_only_theorem_grade_no_go_on_the_current_admitted_gravity_action_family
 intake_directive: owner_2026-08-05
 ```
 

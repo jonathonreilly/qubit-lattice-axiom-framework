@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: A decisive negative that COMPLETES the enumeration of framewor
 Scope: A finite-group/algebraic symmetry enumeration over the three axioms plus the framework's gauge SU(3)xU(1), staggered chiral eps, internal-external su(2) merger and Cl(3,0)->Cl(3,1) boost structure.
 Escape conditions (negative claims): Escapes (ii) an admitted custodial c_t = c_s axiom and (iii) an interacting strong-coupling fixed point (the latter argued precluded by asymptotic freedom and priced separately at idx_pos 1119).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The carrier-symmetry enumeration completed EMPTY: no native symmetry forbids the marginal c-operator — decisive negative with the two admission escapes priced.
 
@@ -32,7 +34,8 @@ The carrier-symmetry enumeration completed EMPTY: no native symmetry forbids the
 - Source commit: `0fd7e7eb5a60f87e5396619e999c133b9e04ce84`
 - git blob: `3aa1c1e88dc13fcce5e4ad0406c5670beec40108`
 - sha256: `97a61d9ed51431ad583f05af6b1fd34949f46371b5ba098f15edde0489db1684`
-- Lines: 158; runners named: scripts/frontier_no_hidden_carrier_symmetry_forbids_lorentz_marginal_2026_06_06.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1220_NO_HIDDEN_CARRIER_SYMMETRY_FORBIDS_LORENTZ_MARGINAL_NO_GO_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1220_NO_HIDDEN_CARRIER_SYMMETRY_FORBIDS_LORENTZ_MARGINAL_NO_GO_NOTE_2026-06-06.md)
+- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_no_hidden_carrier_symmetry_forbids_lorentz_marginal_2026_06_06(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

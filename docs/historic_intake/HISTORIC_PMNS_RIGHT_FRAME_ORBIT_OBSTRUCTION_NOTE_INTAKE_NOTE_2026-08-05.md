@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_current_bank_theorem_on_right_sensitive_completion_data
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No - the admitted right-Gram route is basis-conditional, not a
 Scope: Retained PMNS boundary packet plus the admitted right-Gram selector and sheet-fixing routes; structurally parallel to the Universal GR invariant-frame obstruction.
 Escape conditions (negative claims): Escaped only by a genuinely new right-frame-fixing theorem or a right-sensitive observable principle that makes the datum intrinsic.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Right-Gram exposure: both admitted routes are basis-conditional, not axiom-side derivations — shows two previously landed realization routes in their true status.
 
@@ -32,7 +34,8 @@ Right-Gram exposure: both admitted routes are basis-conditional, not axiom-side 
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `5cd78672d35c8d92bf6364b363ca51207b80c47e`
 - sha256: `6c60a55b203c78d64a1c7c64aae45eaa31e58027b9802f94210a6bba7268fb1b`
-- Lines: 156; runners named: scripts/frontier_pmns_right_frame_orbit_obstruction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1575_PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1575_PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md)
+- Lines: 156; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_right_frame_orbit_obstruction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Shows two previously landed 'realization' routes in the same family rest on a no
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_current_bank_theorem_on_right_sensitive_completion_data
 intake_directive: owner_2026-08-05
 ```
 

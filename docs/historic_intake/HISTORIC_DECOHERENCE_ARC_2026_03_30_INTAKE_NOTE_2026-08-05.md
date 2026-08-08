@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — cites Axiom 9 ('measurement is durable record formation that separates alternatives'); linear path-sum on a causal DAG
 
@@ -22,7 +22,9 @@ Original verdict: Interference = topology, gravity = field: for a record mechani
 Scope: Two-slit setup on a fixed causal DAG; the structural principle is argued from the phase sweep covering all relative phases and visibility being invariant to field-induced amplitude rescaling.
 Escape conditions (negative claims): The 'field perturbations cannot decohere' negative rests on three stated conditions — the phase sweep already explores all relative phases, visibility (max-min)/(max+min) is invariant to path-independent amplitude rescaling, and the DAG is held fixed; the escape is any change to path EXISTENCE. The note also asks openly whether the principle is a consequence of the linear path-sum and would survive a nonlinear generalization.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The structural principle: in a linear path-sum on a fixed DAG, records must change topology to decohere (phase-sweep + rescaling-invariance argument); wrapper must carry the 3137 correction caveat on its shortcut row and the open linearity question.
 
@@ -32,6 +34,7 @@ The structural principle: in a linear path-sum on a fixed DAG, records must chan
 - Source commit: `a9da85f9ec5a788d80011748f85edea5a3763f69`
 - git blob: `3a1e901a0a5a586fbe6ac5cc690b8071c7471f41`
 - sha256: `be5f569723b0392391b435fa149c02e8df9e89c4ce12d0b9f1e4fa85317aee07`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3164_decoherence-arc-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3164_decoherence-arc-2026-03-30.md)
 - Lines: 45; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ Lists as open whether the model can produce GENUINE decoherence (V monotonically
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

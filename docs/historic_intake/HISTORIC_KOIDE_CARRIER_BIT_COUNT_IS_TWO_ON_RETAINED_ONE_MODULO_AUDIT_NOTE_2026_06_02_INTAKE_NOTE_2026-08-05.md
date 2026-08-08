@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Two-on-retained, one-modulo-audit — a capstone reporting 'on
 Scope: A bit-count audit only: does not re-derive the faithful=>CAR collapse, does not audit or promote any row, does not touch the separate value bit (r = 1/2), does not derive Q = 2/3, and sets no audit verdict; runner SCORECARD PASS=16 including a live origin/main ledger read.
 Escape conditions (negative claims): The count contracts to one exactly if axiom_first_spin_statistics_theorem, free_field_os_wightman_reconstruction and free_sector_spin_statistics_level1 are audited (the reduction runs FAITH => STAT, never the reverse, and never to zero because the scalar survives every microcausality/RP constraint); FAITH itself must be pursued through M's own spin content / the so(3,1) carrier assignment.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Carrier-bit accounting: TWO admissions on strict-retained (STAT + FAITH), one-modulo-audit — corrects a headline one-bridge claim with contraction conditions named.
 
@@ -32,7 +34,8 @@ Carrier-bit accounting: TWO admissions on strict-retained (STAT + FAITH), one-mo
 - Source commit: `24a8f3278fb69a4e5d07b7684d5eca8d5724bf3c`
 - git blob: `9ae8be5fc72536919d64c1cbb1b66ec21d8f75eb`
 - sha256: `c55e17c715ed79c4a093bb37361d8a257daf3631b005ac2e7a50d89599bf0c49`
-- Lines: 154; runners named: scripts/frontier_koide_carrier_bit_count_is_two_on_retained_one_modulo_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/768_KOIDE_CARRIER_BIT_COUNT_IS_TWO_ON_RETAINED_ONE_MODULO_AUDIT_NOTE_2026-06-02.md](../../archive_unlanded/historic_intake_originals/branch03/768_KOIDE_CARRIER_BIT_COUNT_IS_TWO_ON_RETAINED_ONE_MODULO_AUDIT_NOTE_2026-06-02.md)
+- Lines: 154; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_carrier_bit_count_is_two_on_retained_one_modulo_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Identifies that a headline 'one bridge' claim elsewhere in the lane is optimisti
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

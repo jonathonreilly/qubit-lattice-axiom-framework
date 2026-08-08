@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The measurement was right and the floor was a grid line.
 Scope: Owner-directed mass-lane closure, window 2b; one premise of the Cycle-916 dictionary is corrected, not retracted.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact re-implementation (22/22 reproduced) showing the 0.20 theta floor — load-bearing across the lineage — is a GRID ARTIFACT: the measurement was right and the floor was a grid line; correction against landed readings.
 
@@ -32,7 +34,8 @@ Exact re-implementation (22/22 reproduced) showing the 0.20 theta floor — load
 - Source commit: `cca3e398f01ff4cc05ffb226a1ce766d6e5c637a`
 - git blob: `690197848d7625d109b735f5844969551ef86842`
 - sha256: `7d635142e8c4beaf66ca360fbae05f8db69910d94e68ea21b575055e7c7c7dce`
-- Lines: 177; runners named: ../scripts/frontier_cycle920_deposition_independent_check_2026_07_28.py, ../scripts/frontier_cycle920_deposition_reaudit_2026_07_28.py, frontier_cycle920_deposition_independent_check_2026_07_28.py, frontier_cycle920_deposition_reaudit_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/299_DEPOSITION_REPRODUCED_FLOOR_GRID_ARTIFACT_CYCLE920_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/299_DEPOSITION_REPRODUCED_FLOOR_GRID_ARTIFACT_CYCLE920_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 177; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle920_deposition_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle920_deposition_reaudit_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle920_deposition_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle920_deposition_reaudit_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ A load-bearing floor used across the lineage turns out to be an artifact of the 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

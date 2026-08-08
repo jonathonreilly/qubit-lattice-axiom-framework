@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — cites MINIMAL_AXIOMS_2026-06-29 admissibility content as the structural analogue
 
@@ -22,7 +22,9 @@ Original verdict: The cost of a dissection is a count — a fixed baseline plus 
 Scope: Measures the single cell only; sample points certify bounds and covers and are not a proof device for regularity, face-to-face structure, or any block statement; the locality reading is offered as a structural echo of the admissibility form in MINIMAL_AXIOMS_2026-06-29, explicitly not a derivation of it.
 Escape conditions (negative claims): The 'no ceiling indicator' claim rests on the positive integer identity, not on the exhibited ceiling certificate's slack spectrum (which is recorded as a measurement of one certificate and nothing more, since negative properties of a single certificate do not survive perturbation). The identity-perturbation sweep reaches only the 31 orbits occurring in the four exhibited dissections. The five-orbit relation is not unique and is not claimed to be. The floor denominator 216 is a carrier with no minimality claim (unlike the ceiling's 3, shown least by divisibility).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Zero-slack floor certificate turns the bound into an exact formula: adjacency cost = baseline + count of pieces failing one fixed local test — cost as a count.
 
@@ -32,7 +34,8 @@ Zero-slack floor certificate turns the bound into an exact formula: adjacency co
 - Source commit: `7d067735492c0775eebb02e2e9b0db29e059a0c6`
 - git blob: `f279b9c2aa096619252882ecb295350623eb73bb`
 - sha256: `6ff14a265fb97744da85889f47921d40fb1fa7579908bc6e4815280fb248a752`
-- Lines: 223; runners named: scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3097_PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3097_PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md)
+- Lines: 223; runners named: historic runner (unpinned, not in this packet): `scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-stated: validity of the floor rows taken alone is weak (lowering a live ent
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

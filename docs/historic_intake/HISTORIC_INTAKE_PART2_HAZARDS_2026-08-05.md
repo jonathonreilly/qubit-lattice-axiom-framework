@@ -1,5 +1,15 @@
 # Pack-family hazards for the audit lane (packsci01-05 triage, 2026-08-06)
 
+Date: 2026-08-05 (part-2 ship 2026-08-06; header added by review-loop regeneration 2026-08-08)
+Authority: none
+Audit: unset
+Claim type: meta
+Status: routing guidance, non-evidentiary. This memo carries supervisor triage
+hazard notes for the audit lane about rows NOT pulled into intake. It asserts
+no claim, confers no verdict, demotion, or effective status, and must not be
+consumed as evidence; each entry is provenance pointing at the named surface,
+and substantive corrections require their own auditable claim rows.
+
 Items NOT pulled into historic intake (they concern LANDED rows or live lanes),
 recorded here so the audit lane sees them when it touches the named surfaces.
 idx numbers refer to triage_2026-08-05/manifests/packsci0N.json.

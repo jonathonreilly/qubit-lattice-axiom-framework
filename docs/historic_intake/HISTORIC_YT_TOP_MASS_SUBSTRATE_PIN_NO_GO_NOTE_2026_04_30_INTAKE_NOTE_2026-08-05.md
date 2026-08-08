@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No-go / exact-negative-boundary; the exact wall is Yukawa Coup
 Scope: Non-MC substrate pin for the top-sector mass parameter, under a forbiddance set excluding H_unit, yt_ward_identity, alpha_LM/plaquette/tadpole, PDG m_t, target y_t and fitted selectors.
 Escape conditions (negative claims): Permit yt_ward_identity (then y_t_bare = g_bare/sqrt(2 N_c) = 1/sqrt(6) exactly and PR #230 upgrades from calibration to derivation), or add a dynamical mechanism (SUSY, compositeness, new axiom).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Pass-1 terminal: five-frame exhaustive no-go — no substrate-native top-mass pin; the exact wall is Yukawa Coupling Freedom; the one surviving route (Ward) named and then killed in pass 2.
 
@@ -32,7 +34,8 @@ Pass-1 terminal: five-frame exhaustive no-go — no substrate-native top-mass pi
 - Source commit: `01df184d6f28a759420e097cfd41ff73145353b3`
 - git blob: `63f808d84e47b1afdc0a3b455dbdf2004b4bf72f`
 - sha256: `bb123ee6273c217b4c5ea6cd95b34ca70ae59090b9932821b75887048a25622b`
-- Lines: 539; runners named: scripts/frontier_yt_top_mass_substrate_pin_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2464_YT_TOP_MASS_SUBSTRATE_PIN_NO_GO_NOTE_2026-04-30.md](../../archive_unlanded/historic_intake_originals/branch08/2464_YT_TOP_MASS_SUBSTRATE_PIN_NO_GO_NOTE_2026-04-30.md)
+- Lines: 539; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_top_mass_substrate_pin_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement_numerically_verified_proposal
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Numerically verified; the Jarlskog |J| ~ 6.5e-3 is about 5x be
 Scope: Both tensions resolved, but the mass-sum fix is marginal — 122 meV is 1.3% above the bound, argued to be within its ~10% systematic uncertainty.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Complex-eps resolution of both standing tensions with |J| ~ 6.5e-3 predicted — the Z_3 neutrino repair, marginality flagged.
 
@@ -32,7 +34,8 @@ Complex-eps resolution of both standing tensions with |J| ~ 6.5e-3 predicted —
 - Source commit: `bf17ed280b6e8c05bcdb4f4b32c86b068b5d93ab`
 - git blob: `821d75c4b9796d819a61ff8c50a2076ff779acce`
 - sha256: `19d7b5bb060a5055dede55263e75f9795a5578844c65813a640cca215b71f0a1`
-- Lines: 229; runners named: scripts/frontier_neutrino_complex_z3.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1183_NEUTRINO_COMPLEX_Z3_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1183_NEUTRINO_COMPLEX_Z3_NOTE.md)
+- Lines: 229; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_complex_z3(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ The mass-sum resolution is marginal (still above the cosmological bound, rescued
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement_numerically_verified_proposal
 intake_directive: owner_2026-08-05
 ```
 

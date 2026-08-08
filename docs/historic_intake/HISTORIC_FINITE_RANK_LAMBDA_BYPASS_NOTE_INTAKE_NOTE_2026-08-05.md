@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No finite-rank bypass of lambda exists - the observable surfac
 Scope: Current atlas widening stack; the source-to-metric theorem is scalar and therefore theta-blind (it sees only Q_eff and the stationary scalar boundary action).
 Escape conditions (negative claims): Fixing lambda would need a new selector primitive absent from the current widening stack, most plausibly a time-sensitive or curvature-local connection choice.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 No finite-rank bypass of lambda: the observable surface is orbit-valued — the widening lane's no-go with the selector-primitive escape named.
 
@@ -32,7 +34,8 @@ No finite-rank bypass of lambda: the observable surface is orbit-valued — the 
 - Source commit: `741c1f25e57877796e3a62290fa86af2eddf3d81`
 - git blob: `44153631fc1abac2d6399cec7541b14dffad05d9`
 - sha256: `1963344853c09a63ce59deac69ab2bf608f2180f7190109e433144ddcb137e47`
-- Lines: 92; runners named: scripts/frontier_finite_rank_lambda_bypass.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/464_FINITE_RANK_LAMBDA_BYPASS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/464_FINITE_RANK_LAMBDA_BYPASS_NOTE.md)
+- Lines: 92; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_finite_rank_lambda_bypass(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

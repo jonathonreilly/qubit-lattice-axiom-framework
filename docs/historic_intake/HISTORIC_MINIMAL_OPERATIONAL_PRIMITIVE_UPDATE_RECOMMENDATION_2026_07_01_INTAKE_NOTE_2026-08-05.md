@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_foundation_update_recommendation
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Bridge-first work should continue; the more-ontology route (ad
 Scope: A fallback governance map, not primitive registrations; sets no audit verdict, edits no registries, changes no axioms, claims no terminal closure. TOTAL PASS=106 FAIL=0.
 Escape conditions (negative claims): Five routes stay explicitly OPEN with their current state: readout-selection (normal form exists, physical selection remains), occurrence (local extension-kernel normal form exists, physical kernel/rate remains), source (RN/action factorization exists, physical source selector remains), theta (pointwise selector exists only after premises), and metric/observable (conformal class and weak-field responses conditional).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The bridge-first recommendation: keep the four ontology axioms; the gates show typed operational bridges missing, not ontology — owner-surface strategy conclusion with five open routes.
 
@@ -32,7 +34,8 @@ The bridge-first recommendation: keep the four ontology axioms; the gates show t
 - Source commit: `013a096126e7f29d0cf83deef6f30a1458fd6bdb`
 - git blob: `a8d62df1a7ef94d35dbca5f38530b8514904dd1c`
 - sha256: `761c9616a9de9ed6e36b25a334fa885c52986e0dbeae9a86d55eb65449265085`
-- Lines: 338; runners named: scripts/minimal_operational_primitive_update_recommendation_2026_07_01.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1154_MINIMAL_OPERATIONAL_PRIMITIVE_UPDATE_RECOMMENDATION_2026-07-01.md](../../archive_unlanded/historic_intake_originals/branch04/1154_MINIMAL_OPERATIONAL_PRIMITIVE_UPDATE_RECOMMENDATION_2026-07-01.md)
+- Lines: 338; runners named: historic runner (unpinned, not in this packet): `scripts/minimal_operational_primitive_update_recommendation_2026_07_01(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ N7 preserves the strong objection that a single future local action principle mi
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_foundation_update_recommendation
 intake_directive: owner_2026-08-05
 ```
 

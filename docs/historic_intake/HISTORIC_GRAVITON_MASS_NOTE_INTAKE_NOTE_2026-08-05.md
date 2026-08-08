@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_prediction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A sharp, falsifiable prediction undetectable with current tech
 Scope: Requires the framework's S^3 spatial topology with R = c/H_0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsifiable graviton mass from S^3 topology (m_g = sqrt(6) hbar H_0/c^2) — lattice gives zero gap, topology gives the scale; vDVZ argument on record.
 
@@ -32,7 +34,8 @@ Falsifiable graviton mass from S^3 topology (m_g = sqrt(6) hbar H_0/c^2) — lat
 - Source commit: `76c519dd79ac293c785ca2cf1b3c34c47abfecba`
 - git blob: `3d106eb5afcb34e09fd8feeee22b40bed6bf8b28`
 - sha256: `7fc098565b58a615de393f140e1009c4f7d7c9044ece02cc3582b2bbb8db39c5`
-- Lines: 90; runners named: scripts/frontier_graviton_mass.py, scripts/frontier_wave_equation_gravity.py, scripts/frontier_cc_factor15.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/643_GRAVITON_MASS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/643_GRAVITON_MASS_NOTE.md)
+- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_graviton_mass(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_wave_equation_gravity(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Argues the vDVZ discontinuity does not apply because the mass is topological rat
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_prediction
 intake_directive: owner_2026-08-05
 ```
 

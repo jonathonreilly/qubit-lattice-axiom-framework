@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Null result — the two sectors are strictly independent and t
 Scope: 16^3 cubic lattice, k = 4.0, Dirichlet BC; four tests (G sweep via self-consistent Poisson, q sweep via ray deflection, natural-scale ratio, combined grid).
 Escape conditions (negative claims): The negative rests on the sectors' structural independence (gravity enters as a self-consistently sourced scalar in S = L(1-f), EM as a phase q*V with no back-reaction) and on G having units [length^2] while q is dimensionless; the escape named is a mechanism relating the mass spectrum to lattice structure, which is absent from the current formulation.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean null: gravity/EM sectors strictly independent (mixed residual < 1e-14 across 20 pairs) — the hierarchy problem is a mass-spectrum problem, not a coupling problem.
 
@@ -32,7 +34,8 @@ Clean null: gravity/EM sectors strictly independent (mixed residual < 1e-14 acro
 - Source commit: `fafde285641ea02cec7b7c6e10011378f8712675`
 - git blob: `af3cc8abf89ca1d032cbec43e3470d3c8070f97e`
 - sha256: `c9e2347502d2ee7a49fad098687dbf546aace7c3fe16e8f940989ac4a258e6d7`
-- Lines: 62; runners named: scripts/frontier_hierarchy_ratio.py, scripts/frontier_self_consistent_field_equation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/703_HIERARCHY_RATIO_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/703_HIERARCHY_RATIO_NOTE.md)
+- Lines: 62; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_ratio(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

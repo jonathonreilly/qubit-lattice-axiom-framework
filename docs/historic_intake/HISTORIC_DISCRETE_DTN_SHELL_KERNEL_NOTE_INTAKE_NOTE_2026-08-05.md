@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem_plus_bounded_consequence
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Removes the fitting-artifact ambiguity, without closing the co
 Scope: Exact at operator level on the physical lattice box; the closure consequence is bounded.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact DtN shell-kernel support theorem (sewing band 3 < r <= 5, all seven columns inducing the same normalized kernel) — removes a fitting-artifact ambiguity in the gravity lane.
 
@@ -32,7 +34,8 @@ Exact DtN shell-kernel support theorem (sewing band 3 < r <= 5, all seven column
 - Source commit: `3f5bfc459ba281090c59263d87cab6af83f530cb`
 - git blob: `0167ccf173e8b3cbde28d3fd8c520de49f692796`
 - sha256: `df23063f9919bdd2d65eb6a9bee19615449d5cfe72e865f079feb950cc8a0602`
-- Lines: 133; runners named: scripts/frontier_discrete_dtn_shell_kernel.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/326_DISCRETE_DTN_SHELL_KERNEL_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/326_DISCRETE_DTN_SHELL_KERNEL_NOTE.md)
+- Lines: 133; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_discrete_dtn_shell_kernel(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem_plus_bounded_consequence
 intake_directive: owner_2026-08-05
 ```
 

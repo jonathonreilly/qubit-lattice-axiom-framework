@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Right-handed fermions do not arise from a new graph-canonical 
 Scope: Staggered lattice taste space in d=3 versus d=3+1; depends on frontier_su3_formal_theorem.py and frontier_chiral_completion.py (32/32 PASS).
 Escape conditions (negative claims): The C^8 no-go is escaped by the temporal direction: adding it gives a proper involution gamma_5 and doubles the taste space.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The right-handed terminal: C^8 has zero SU(2) singlets and no chirality operator — RH matter needs the 4D step; 61/61 with the charge-fixing concession.
 
@@ -32,7 +34,8 @@ The right-handed terminal: C^8 has zero SU(2) singlets and no chirality operator
 - Source commit: `6071b71655f19fcb3ea35e2cbb1e79fae219d0fc`
 - git blob: `52380defce0ebfd042bf219623f8c641c1331e49`
 - sha256: `56617d9194b6cd9a6e65bdbdcaa0023515b317d708424525069ebe93fae4d947`
-- Lines: 153; runners named: scripts/frontier_right_handed_sector.py, scripts/frontier_su3_formal_theorem.py, scripts/frontier_chiral_completion.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1833_RIGHT_HANDED_SECTOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1833_RIGHT_HANDED_SECTOR_NOTE.md)
+- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_right_handed_sector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_su3_formal_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_chiral_completion(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Concedes the right-handed charges are fixed by the same mechanism as in the SM (
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

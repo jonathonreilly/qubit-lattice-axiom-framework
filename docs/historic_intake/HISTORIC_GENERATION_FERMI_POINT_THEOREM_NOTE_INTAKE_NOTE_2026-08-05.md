@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: REPLACES the Z_3 superselection approach as the primary genera
 Scope: Requires only that the lattice has a physical minimum spacing - explicitly much weaker than the Z_3 Hamiltonian symmetry, Berry protection, or continuum-obstruction assumptions the earlier arguments needed.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Fermi-point theorem: ten-line proof replacing superselection as the lane's primary argument — with the Hamming-to-continuum mapping honestly open.
 
@@ -32,7 +34,8 @@ The Fermi-point theorem: ten-line proof replacing superselection as the lane's p
 - Source commit: `ca26c2003ca26e1284c10f42976edd32dd9e92ea`
 - git blob: `1ee94564567fe1191dae3ded39f45fa5133d2cf3`
 - sha256: `7abfc168a825b6f025a37edec8fbb52da8999c9b0e9219ebfb165bb3c7cf1c09`
-- Lines: 166; runners named: scripts/frontier_generation_fermi_point.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/618_GENERATION_FERMI_POINT_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/618_GENERATION_FERMI_POINT_THEOREM_NOTE.md)
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_fermi_point(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ Leaves open the precise mapping between its 1+3+3+1 Hamming decomposition and th
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

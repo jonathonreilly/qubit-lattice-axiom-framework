@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: LAW_PARTIAL: the construction works but no reversible-primitiv
 Scope: REGRESS_CONFIRMED is scoped to the guards constructed and tested (primary's, majority-3, refresh) under arbitrary M2 words, with defeaters exhibited mechanically; the universal statement over all guards is not claimed.
 Escape conditions (negative claims): The regress is demonstrated only for the three tested guard families; a guard outside those families, or a new primitive, is the stated escape.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 LAW_PARTIAL permanence result: syndrome-complete checkpoint guard built, and no reversible-primitive guard can close the job (regress demonstrated for three families) — the W4/W5 lane's honest wall.
 
@@ -32,7 +34,8 @@ LAW_PARTIAL permanence result: syndrome-complete checkpoint guard built, and no 
 - Source commit: `72efa390fc444a220719ebd261d367145f1e895a`
 - git blob: `de992a4345d4a80cc9d22c4adbecc72e940e99a5`
 - sha256: `a4da1b9e418534306caeb62be0884a3462692a91c5b0fed202252c913c2c5066`
-- Lines: 114; runners named: ../scripts/frontier_cycle781_checkpoint_independent_check_2026_07_28.py, ../scripts/frontier_cycle781_checkpoint_refusal_law_2026_07_28.py, frontier_cycle781_checkpoint_independent_check_2026_07_28.py, frontier_cycle781_checkpoint_refusal_law_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/145_CHECKPOINT_REFUSAL_LAW_CYCLE781_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/145_CHECKPOINT_REFUSAL_LAW_CYCLE781_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 114; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle781_checkpoint_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle781_checkpoint_refusal_law_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle781_checkpoint_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle781_checkpoint_refusal_law_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

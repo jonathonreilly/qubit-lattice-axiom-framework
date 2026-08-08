@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No same-surface row, certificate or theorem has appeared as a 
 Scope: The only remaining non-chunk action after cycle 15 closed independent-route admission.
 Escape conditions (negative claims): Appearance of a parseable claim-status artifact at one of the named paths is the sole reopen condition.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the exhaustion cascade: strict reopen test — no same-surface artifact exists; the honest stop of the whole PR #230 campaign.
 
@@ -32,7 +34,8 @@ TERMINAL of the exhaustion cascade: strict reopen test — no same-surface artif
 - Source commit: `5bf355456a2e00396a88e6fb79ffd69b702d0e3b`
 - git blob: `ad28302829700ffe26cd99f2fb269aea26bc2094`
 - sha256: `3aaa9daabb08b1c0ede707e94d84e18597e4994bdfbe14f35b4f5567fb505e27`
-- Lines: 63; runners named: scripts/frontier_yt_pr230_nonchunk_cycle16_reopen_source_guard.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2370_YT_PR230_NONCHUNK_CYCLE16_REOPEN_SOURCE_GUARD_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch07/2370_YT_PR230_NONCHUNK_CYCLE16_REOPEN_SOURCE_GUARD_NOTE_2026-05-05.md)
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_nonchunk_cycle16_reopen_source_guard(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -115,6 +118,7 @@ The final three cycles of the loop produce no new physics content, only successi
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

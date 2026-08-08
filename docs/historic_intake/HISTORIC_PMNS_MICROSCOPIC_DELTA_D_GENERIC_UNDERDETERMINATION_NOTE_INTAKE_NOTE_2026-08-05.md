@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_current_bank_underdetermination_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No - the retained bank fixes the carrier of Delta D but not it
 Scope: Fixed one-sided minimal PMNS branch with passive monomial lane held fixed.
 Escape conditions (negative claims): Escaped only by adding a new derived value law from Cl(3) on Z^3 for the 7-real generic off-seed values.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Delta-D load-bearing negative: the bank fixes the carrier but not the generic off-seed values (rank-7 family vs codimension-5 seed patch).
 
@@ -32,7 +34,8 @@ The Delta-D load-bearing negative: the bank fixes the carrier but not the generi
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `0c2d603bd3ab7574aa2c853159fb9013ddd3f675`
 - sha256: `32d9c7a2dd557ef1061a06655d280f0927b64d8eca100ff4cb0f046126cec667`
-- Lines: 96; runners named: scripts/frontier_pmns_microscopic_delta_d_generic_underdetermination.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1555_PMNS_MICROSCOPIC_DELTA_D_GENERIC_UNDERDETERMINATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1555_PMNS_MICROSCOPIC_DELTA_D_GENERIC_UNDERDETERMINATION_NOTE.md)
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_microscopic_delta_d_generic_underdetermination(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_current_bank_underdetermination_theorem
 intake_directive: owner_2026-08-05
 ```
 

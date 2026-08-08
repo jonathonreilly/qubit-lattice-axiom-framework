@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Theorem-grade negative — the iteration-4 mechanism must be g
 Scope: Rules out single-bivector-rotation mechanisms only; 10 angle candidates and 9 axis candidates tested.
 Escape conditions (negative claims): The negative is confined to single rotations with retained axes and (Q, delta) angles; composite (two or more rotation) mechanisms remain open and are the named next target.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Theorem-grade negative: no single Cl(3) bivector rotation with clean (Q, delta) angle and retained axis maps V_TBM to V_conj — the I5 mechanism is genuinely composite.
 
@@ -32,7 +34,8 @@ Theorem-grade negative: no single Cl(3) bivector rotation with clean (Q, delta) 
 - Source commit: `4055b01ead49ef4f16d856cea0b1a7cd2c4c208d`
 - git blob: `a331618ce3a0145a58c2c6626845713548344475`
 - sha256: `5cb6071964d601ce3f3483578e1e3b124ed730caae369bd52b8529727675be04`
-- Lines: 113; runners named: scripts/frontier_koide_pmns_single_rotation_nogo.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/887_KOIDE_PMNS_SINGLE_ROTATION_NOGO_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/887_KOIDE_PMNS_SINGLE_ROTATION_NOGO_NOTE_2026-04-21.md)
+- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_single_rotation_nogo(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

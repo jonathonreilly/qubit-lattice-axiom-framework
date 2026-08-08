@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: SUSPICIOUS; honest scorecard 6/1/3
 Scope: sanity review of the 2D-lattice unification card
 Escape conditions (negative claims): gravity sign fix or relabeling, F~M on-lattice test, multi-parameter robustness, purity scaling
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Era-correction set for the earliest write-ups, pulled as one record: the '10/10 properties' claim is OVERCOUNTED (honest scorecard 6 confirmed / 1 FAILED / 3 [unvalidated] - the failed leg is the gravity sign, which points AWAY from mass in that configuration), and the sibling 'converging 3D gravity' claim is an axiom fork with a missing h^2 measure factor in the committed script. The era's chain-closure and program write-ups attached with their flags (5x hand-scaled 4D field strength; 'closes the axiom chain' abstract overstated).
 
@@ -32,6 +34,7 @@ Era-correction set for the earliest write-ups, pulled as one record: the '10/10 
 - Source commit: `d9b017aedffaba94672f68a862a9f8522c9008d0`
 - git blob: `6d12f6c728dd0b47d0a44bdd2afdafd6aa21809f`
 - sha256: `0f992f1e49c5aa3c17e776445b8ac9302f20e53fc54c816b9b06016a7a995ba9`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11545_lattice-10-of-10-2026-04-03.md](../../archive_unlanded/historic_intake_originals/packsci05/11545_lattice-10-of-10-2026-04-03.md)
 - Lines: 116; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -51,6 +54,7 @@ the headline unification number survived into the claim record despite a wrong-s
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

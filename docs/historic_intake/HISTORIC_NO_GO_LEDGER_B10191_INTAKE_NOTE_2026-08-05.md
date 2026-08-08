@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Three rules.
 Scope: One block's evidence quality.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Methodological no-go for the audit lane: an 'ok' runner cache with EMPTY STDOUT is not a usable audit-unblock artifact (reviewers cannot inspect the runner's checks) - and empty-stdout caches HAD been accepted. Duplicate statement and the wider stale/corrupt-cache disclosure attached.
 
@@ -32,6 +34,7 @@ Methodological no-go for the audit lane: an 'ok' runner cache with EMPTY STDOUT 
 - Source commit: `1ffd5a4984d83d65cde484143b504cbde9bcdd7a`
 - git blob: `7938091d5f29d93dea993e3c2a77bda27c65035b`
 - sha256: `054587150dd3640231dfd003a80e6fea59879e5c29c018ce240e18bf2825c1ec`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10191_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10191_NO_GO_LEDGER.md)
 - Lines: 19; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ Discloses that empty-stdout caches were being accepted as runner evidence - a ve
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_ledger
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A prior landed note is identified as having frozen a mislabele
 Scope: Source-retarded Green live packet.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Data-labeling defect in a prior note, on the record: the archived source_resolved_retarded_green_pocket_note failed because its printed ret/same column was ACTUALLY ret/inst and the note froze that mislabeled numeric column. The corrected packet family is attached; audit should verify the relabel end to end.
 
@@ -32,6 +34,7 @@ Data-labeling defect in a prior note, on the record: the archived source_resolve
 - Source commit: `354f99a7a293990e276937d8c7cbe7cdfb2c106b`
 - git blob: `8d19de347dd090c016443ff1a407a5012842db18`
 - sha256: `6cb7db79fba538ab02d0ef48109c7e1115c30f9662d2eaf2cf6681d6bc2293d6`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11238_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci04/11238_NO_GO_LEDGER.md)
 - Lines: 8; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -55,6 +58,7 @@ documents a real data-labeling defect in a prior note (a column labeled ret/same
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_ledger
 intake_directive: owner_2026-08-05
 ```
 

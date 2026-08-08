@@ -1,9 +1,11 @@
 # Historic intake: Flavor - both paths fail; A1's trace votes Q=1 (correcting the native 2/3 lean)
 
+Explicit subject: With complex b (the physical case, since arg(b) != 0 is what splits e, mu, tau) the doublet isotype has TWO real dof, so the canonical trace-induced Gaussian gives doublet:singlet = 2:1 by Schur - dimension, Q = 1 (isotype ratio 2.00, median Q = 1.34); block-count (Q = 2/3) is ... (The bare code `A1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: Q = 2/3 is NOT natively favored - A1's canonical measure gives
 Scope: Track 2's concentrating entropy saddle at b/a = sqrt2/2 exists but rides on the same block weighting (general saddle r* = nu/(2 mu)); the only unconstrained native saddle is b = 0.
 Escape conditions (negative claims): One sharp open question is named: is the Q-relevant magnitude |b| set by the real native cube-shift coupling alone (giving the (1,1) block-count reading) while the phase theta is a Q-orthogonal import? That would reconcile block-count with theta != 0.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Two-paths terminal: canonical measure gives Q=1, dynamics 1/3, observation 2/3 â€” nothing native favors 2/3; the third same-campaign retraction, inverted verdict honest.
 
@@ -32,7 +36,8 @@ Two-paths terminal: canonical measure gives Q=1, dynamics 1/3, observation 2/3 â
 - Source commit: `a70b83894efee6412bb42d430a0f91c616e11b42`
 - git blob: `3b24fead55825c300be26758a98952b8160ad81f`
 - sha256: `c3fbcd7c75bd60cb9403e164189b00e1f1c5c32a7ab5dec61c020d3fee48ccda`
-- Lines: 71; runners named: scripts/flavor_two_paths_verdict_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/496_FLAVOR_TWO_PATHS_VERDICT_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/496_FLAVOR_TWO_PATHS_VERDICT_NOTE_2026-05-30.md)
+- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_two_paths_verdict_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +54,7 @@ A third same-campaign retraction; the corrected measure verdict inverts the camp
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

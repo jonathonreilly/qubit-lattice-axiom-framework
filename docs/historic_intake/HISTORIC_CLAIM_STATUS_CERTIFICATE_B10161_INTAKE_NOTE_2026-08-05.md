@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Identifies a repeated structural obstruction across three inde
 Scope: One campaign cycle; single-line certificate.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Bundles cycles 5, 9 and 11 into ONE structural obstruction - the lattice-to-physical matching wall - the same wall later campaign work met as the source-action bridge; the attached audit rows isolate the single conditional bottleneck and identify the Brannen-phase bridge as a FOURTH instance. The repeated-obstruction identification is the most strategy-relevant negative in this stratum.
 
@@ -32,6 +34,7 @@ Bundles cycles 5, 9 and 11 into ONE structural obstruction - the lattice-to-phys
 - Source commit: `321aab43251e366a0f96f7579ebe5cc98993e3d2`
 - git blob: `5cec485c03a5b5d1888bed88ca5b0edfe3ed1513`
 - sha256: `ccf5b5eb9a91a0ebd4fcb913a5797e66e71a32651c1be4b091dc5434388e23f3`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10161_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10161_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 1; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -43,7 +46,7 @@ Bundles cycles 5, 9 and 11 into ONE structural obstruction - the lattice-to-phys
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from branch09 idx 2748 (`docs/publication/brannen_lane2_closure/README.md`, decision PULL) — TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
+- Cross-stratum reference from branch09 [idx 2748](HISTORIC_README_B2748_INTAKE_NOTE_2026-08-05.md) (`docs/publication/brannen_lane2_closure/README.md`, decision PULL) — TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
 
 ## Flags carried
 
@@ -55,6 +58,7 @@ Certificate is a single line - the full dependency and criteria assessment that 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

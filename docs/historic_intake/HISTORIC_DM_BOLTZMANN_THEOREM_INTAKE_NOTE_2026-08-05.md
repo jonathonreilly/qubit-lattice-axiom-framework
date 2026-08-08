@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The Boltzmann equation is a lattice theorem rather than an imp
 Scope: Thermodynamic limit L -> infinity at fixed lattice spacing; closes the objection that freeze-out was imported cosmology.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Boltzmann equation as a lattice THEOREM (exact transition rates, Stosszahlansatz discharged) closing a standing import objection — with the alpha_s/g_bare caveat carried.
 
@@ -32,7 +34,8 @@ The Boltzmann equation as a lattice THEOREM (exact transition rates, Stosszahlan
 - Source commit: `8e20182cc534935063b9a384e11da7b0f6772d37`
 - git blob: `c80a5dd85671602d64c66da5042127c08084fffd`
 - sha256: `70330dbc1b9ba39db6af5f359c4dd4c601c4107dc5bab4bfaa83ed5bc33846cd`
-- Lines: 275; runners named: frontier_dm_direct_boltzmann.py, frontier_dm_friedmann_from_newton.py, frontier_dm_stosszahlansatz_theorem.py, scripts/frontier_dm_boltzmann_theorem.py, scripts/frontier_dm_friedmann_from_newton.py, scripts/frontier_dm_stosszahlansatz_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/338_DM_BOLTZMANN_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch01/338_DM_BOLTZMANN_THEOREM.md)
+- Lines: 275; runners named: historic runner (unpinned, not in this packet): `frontier_dm_direct_boltzmann(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_friedmann_from_newton(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_stosszahlansatz_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_boltzmann_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The corollary still routes through alpha_s at g_bare = 1, which other notes flag
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — rectangular-grid causal DAG, source at (1,0), barrier at x=w/2 with slits at y=+/-s
 
@@ -22,7 +22,9 @@ Original verdict: Status COMPLETE — promoted to canonical main; the interferen
 Scope: Standard path-sum over the causal DAG with phase_per_action=4.0, attenuation_power=1.0, no persistent nodes; six sweeps totaling ~1,152 + 20,160 + ~44,000 + 10 + ~5,040 + ~31,752 evaluations.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Era-consolidated interference claim (>25k evaluations; topological threshold, discontinuous onset, y-dependent R_c) carrying its own adverse validation rows — the era's canonical positive result, honest caveats included.
 
@@ -32,7 +34,8 @@ Era-consolidated interference claim (>25k evaluations; topological threshold, di
 - Source commit: `c5c1745479599c85567e6500d57fd395702396c5`
 - git blob: `1e8ae1b530626808ff4ebf52be3127532ae94232`
 - sha256: `83e2615942d6bb15103bdfa128f2c61b440e4591f46d37cd749272be72da1055`
-- Lines: 96; runners named: interference_geometry_sweep.py, interference_offcenter_fringe_sweep.py, interference_critical_ratio_sweep.py, interference_slit_reachability_audit.py, interference_asymmetric_sweep.py, interference_partial_record_sweep.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3165_interference-regime-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3165_interference-regime-2026-03-30.md)
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `interference_geometry_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_offcenter_fringe_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_critical_ratio_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_slit_reachability_audit(.py)`; historic runner (unpinned, not in this packet): `interference_asymmetric_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_partial_record_sweep(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -56,6 +59,7 @@ Its own validation table carries the geometry sweep as SUSPICIOUS (center V=1 a 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: five walls with reopen conditions
 Scope: the named finite source packet only
 Escape conditions (negative claims): add an independent design dimension; redesigned design controlling non-speed factors; supply and independently validate a physical bridge
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Verification-integrity finding: NG-LEGACY-TABLE - the completed stdout DISAGREES with BOTH old source tables (slopes, zero, ...), so the legacy tables were wrong or stale while standing as source data; five walls with reopen conditions recorded. Companion negative attached.
 
@@ -32,6 +34,7 @@ Verification-integrity finding: NG-LEGACY-TABLE - the completed stdout DISAGREES
 - Source commit: `68a27d8a79d93dda7ed02b1e6ebb67043b570b68`
 - git blob: `cf300891c3fa89824220c4de20106f554c33a227`
 - sha256: `d0882814e426f8ae3434bed198b4dbd60890d5758ddf36caffce59e415371544`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11451_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci05/11451_NO_GO_LEDGER.md)
 - Lines: 12; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ legacy tables refuted by live replay — earlier packet content was wrong until 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

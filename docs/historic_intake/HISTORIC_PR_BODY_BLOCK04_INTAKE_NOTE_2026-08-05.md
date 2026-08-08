@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Forces a science-level decision: either adopt Axiom* (End(P_A 
 Scope: Gate (G1) only; (G2) and (C1) have their own cycles and are not extended to.
 Escape conditions (negative claims): Axiom* is named as the unique minimal honest extension; a counterexample would have to exhibit an A_min-derivable Cl_4(C) action outside all nine audited attack frames, which the note argues is hard given S_4 is the full permutation group on four elements.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The stratum's decision-forcing composition: nine retained no-go/audit cycles compose into one impossibility - no A_min-derivable sub-*-algebra of Op(A_min) restricted to P_A H_cell contains the required structure - forcing either adoption of Axiom* (End(P_A H_cell) generated; named in-note as the unique minimal honest extension) or acceptance of the wall. Already surfaced as an owner decision item; the composed theorem itself must be on the ledger for that decision to be audited.
 
@@ -32,7 +34,8 @@ The stratum's decision-forcing composition: nine retained no-go/audit cycles com
 - Source commit: `5334c826c044b36e3fc80250ea39b3ca91588200`
 - git blob: `d518fbe55c8bc90ede90c446480f0a50c8b0a6ac`
 - sha256: `ad39599c3d02f57ab5a4a74906b6fa9302bdac4805127032a0e5418de64be1c8`
-- Lines: 168; runners named: scripts/frontier_axiom_stack_minimality_cl4c_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10259_PR_BODY_BLOCK04.md](../../archive_unlanded/historic_intake_originals/packsci01/10259_PR_BODY_BLOCK04.md)
+- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_axiom_stack_minimality_cl4c_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -42,12 +45,20 @@ The stratum's decision-forcing composition: nine retained no-go/audit cycles com
 
 This is arguably the most decision-relevant note in the stratum: four separate lanes (Hubble, Planck, BH coefficient, neutrino mass sum) are blocked behind a single unresolved axiom-adoption question that was surfaced on 2026-04-29 and left to the owner.
 
+## Review flags (review-loop 2026-08-08)
+
+- F9 (BUG, pinned-runner integrity, quoted from review): the pinned runner's headline PASS hard-codes its load-bearing lemma and tests group elements instead of the claimed generated algebra. It enumerates the 24 permutation matrices and checks that no two matrices in that finite set anticommute, while the claim concerns every Hermitian element of the generated sub-*-algebra including linear combinations; the weight-preserving-A_min-operators-inside-the-S4-permutation-algebra inclusion is set to literal True citing prose; the "4-dim" algebra PASSes are hard-coded although the span of the 24 natural 4-by-4 permutation matrices has dimension 10; the headline verification flag follows from the finite-set check plus rank(P_A)=4 alone. The historic PASS count must not be presented as theorem verification.
+- F11 (NO_GO_OVERCLAIM, quoted from review): the universal-impossibility reading fails the structured no-go gate (N1-N8) at the wrapper/original handoff. The composition covers nine historical attack frames and the pinned original itself admits a counterexample could lie outside them ("hard" is not an exhaustiveness lemma). This intake row registers a PROPOSED universal no-go with an unclosed exhaustiveness obligation; any eventual audit must set the no-go gate and include the nine premises plus the full generated-algebra obligation.
+
+These flags quote review-loop iteration 1 findings (Sol, 2026-08-08) for the future auditor. History is immutable: the pinned original and its runner are unchanged; this wrapper remains registration-only.
+
 ## Audit fields
 
 ```yaml
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

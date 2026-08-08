@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; essentially the entire QED l
 Scope: The substrate-level QED loop kernel consumed by the Lane 2 alpha0 transport package.
 Escape conditions (negative claims): Supply a framework QED propagator surface, vacuum-polarization integrand, charge-insertion rule, renormalization subtraction and a Ward identity, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 QED loop-kernel terminal: the widest gap — seven inputs, essentially the entire QED apparatus unbuilt; honest scoping of the alpha(0) dream.
 
@@ -32,7 +34,8 @@ QED loop-kernel terminal: the widest gap — seven inputs, essentially the entir
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `be88d595368667f1cc0352695442385e432048cf`
 - sha256: `e222cf069c43b6ab0168889ffae0cd3b6140b54e28bb1cb35f9c4963199c7d8c`
-- Lines: 283; runners named: scripts/frontier_zero_import_hydrogen_qed_loop_kernel_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2698_ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2698_ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 283; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_qed_loop_kernel_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

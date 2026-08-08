@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_support_closes_by_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Correction landed at source level; the exact-H locality bridge
 Scope: One symmetric-canonical surface with fixed d, r_W, beta, N_c; not a parent microcausality promotion.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of a previously published bound, on the record: the action-density bound is corrected to J_action <= |m| + 78 on the d=4, r_W=1, beta=6, N_c=3 symmetric-canonical surface; closes_by_correction.
 
@@ -32,6 +34,7 @@ Correction of a previously published bound, on the record: the action-density bo
 - Source commit: `761241a541ce5f3d9586bf8310b58b3c2911180e`
 - git blob: `2dc4caec4b452fe103cfc10d59c22d08ae96937e`
 - sha256: `da471ac268eff4f9a3079b87159f0f29496cafa6f013299fb1ab76d7fcbe4eb7`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10671_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10671_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 16; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ corrects a previously published coefficient; the prior value is not stated here
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_support_closes_by_correction
 intake_directive: owner_2026-08-05
 ```
 

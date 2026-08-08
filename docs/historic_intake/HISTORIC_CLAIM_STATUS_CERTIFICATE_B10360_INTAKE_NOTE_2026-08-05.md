@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Both stay bounded-support; the repair fixes an overstatement r
 Scope: Two named claim rows.
 Escape conditions (negative claims): The uniform N_taste = 16 selection and the framework-level status of the counter-rescaled action surface both remain open.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of two landed docs/ notes: the g_bare rescaling-freedom note's counter-rescaled-coupling surface overstated, and a Higgs count numerically overstated; both repaired to bounded-support. Work order against landed content.
 
@@ -32,6 +34,7 @@ Correction of two landed docs/ notes: the g_bare rescaling-freedom note's counte
 - Source commit: `e6eb041f8a38176c57af95a3af5213d11eb82f63`
 - git blob: `37a2eca7922ae15c3fb8213a569667350bafc37f`
 - sha256: `aa5bedde036460868dfbd6f9e1aba4023fbe6aaf9e5ae92e98fda9aa6bee8723`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10360_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10360_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 40; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records a numeric overstatement in landed content (count of distinct single-clas
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

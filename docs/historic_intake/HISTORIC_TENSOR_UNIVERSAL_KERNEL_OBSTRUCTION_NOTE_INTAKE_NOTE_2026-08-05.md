@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Family-local rank-two completion yes, family-universal positiv
 Scope: Two audited restricted source families with the rank-two tensor boundary action ansatz.
 Escape conditions (negative claims): Three open escapes: a selector principle making the kernel universal, its microscopic derivation, and full nonlinear GR generally.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 No family-universal positive K_tensor on the audited class (kernels differ 26%) — family-local yes, universal no; three escapes named.
 
@@ -32,7 +34,8 @@ No family-universal positive K_tensor on the audited class (kernels differ 26%) 
 - Source commit: `8eb6a97dba9700063594a61daacf406460890b0a`
 - git blob: `358e2db00eb3a1b9e23f4a2dc77549d02919fc00`
 - sha256: `2b4b0c9820ba15b1d86b9659cb374a1cc65f9c603d3c1df02afe323e5ee18f45`
-- Lines: 123; runners named: scripts/frontier_tensor_universal_kernel.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2048_TENSOR_UNIVERSAL_KERNEL_OBSTRUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2048_TENSOR_UNIVERSAL_KERNEL_OBSTRUCTION_NOTE.md)
+- Lines: 123; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_tensor_universal_kernel(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

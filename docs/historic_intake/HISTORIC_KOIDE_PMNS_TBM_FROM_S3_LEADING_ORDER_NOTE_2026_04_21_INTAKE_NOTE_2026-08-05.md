@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: INTERMEDIATE — V_TBM is forced as the leading-order PMNS mat
 Scope: Leading order only, under the named ansatz that Majorana respects S_3 while Dirac does not, which is itself undreived; 35/35 symbolic checks.
 Escape conditions (negative claims): Consistency with the existing retained PMNS no-gos is checked and attributed to bank difference: those no-gos concern the Dirac single-Higgs probe bank while this uses a Majorana S_3-invariant mass bank, and at rho = I/3 the retained J_chi = 0 result is recovered.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 S_3-symmetric Majorana + diagonal charged-lepton breaking forces V_TBM exactly — INTERMEDIATE with the ansatz admitted; the I5 lane's leading-order base.
 
@@ -32,7 +34,8 @@ S_3-symmetric Majorana + diagonal charged-lepton breaking forces V_TBM exactly �
 - Source commit: `6cd86a9477bc76aea156478c9e7bdc31eafb9b0e`
 - git blob: `727da6c536882ed116be09c18076ff89de763bf1`
 - sha256: `9de7caf4af49bf397effe2b63c37a930b7a38b6e2526ed171ff52eb07e3c5401`
-- Lines: 172; runners named: scripts/frontier_koide_pmns_tbm_from_s3.py, scripts/frontier_koide_c3_spatial_rotation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/889_KOIDE_PMNS_TBM_FROM_S3_LEADING_ORDER_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/889_KOIDE_PMNS_TBM_FROM_S3_LEADING_ORDER_NOTE_2026-04-21.md)
+- Lines: 172; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_tbm_from_s3(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_c3_spatial_rotation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The load-bearing symmetry ansatz is admitted to be an ansatz, and the note escap
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_note
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: completeness question remains open; no verdict issued
 Scope: wall-by-wall evidence organization; branch-local; receipts declare authority none, audit unset
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The axioms-completeness self-assessment, stated honestly: 'are the four axioms complete?' is NOT an unqualified yes - W3 is DERIVED only bounded+conditional at fixture scope and the W-wall census (attached) names what remains, incl. the FROZEN no_census_weight_receiver finding (all 20 live signatures match the frozen inventory; zero receivers for census weight). Cites the landed PRs. Direct input to next-phase planning.
 
@@ -32,6 +34,7 @@ The axioms-completeness self-assessment, stated honestly: 'are the four axioms c
 - Source commit: `2016ffaffc251975ff61ac8de0406b7e56dc29fd`
 - git blob: `f51c23939f65c6792a7922e613995474482d7aa4`
 - sha256: `95e0357738e3428f0e67dcefb1404a0a51c8c11fd0b82cd1bb783fcbd5986653`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11414_AXIOM_CONVERSATION_DOSSIER.md](../../archive_unlanded/historic_intake_originals/packsci05/11414_AXIOM_CONVERSATION_DOSSIER.md)
 - Lines: 184; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -53,6 +56,7 @@ EXTRACT_W3_GROUNDING.md and GOAL.md were ABSENT from the working tree/HEAD durin
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_note
 intake_directive: owner_2026-08-05
 ```
 

@@ -1,9 +1,11 @@
 # Historic intake: Hierarchy H1 Route 2 — beta = 6 From Cl(3) + Wilson Canonical Normalization
 
+Explicit subject: The Wilson lattice gauge evaluation point beta = 6 is a forced algebraic consequence of the chain d = 3 (Cl(3) axiom) -> N_c = 3 (graph-first SU(3)) -> g_bare^2 = 1 (Wilson canonical normalization) -> beta = 2 N_c/g_bare^2 = 6, i.e. (The bare code `H1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: beta = 6 is forced once the Wilson canonical normalization con
 Scope: Explicitly does NOT claim g_bare^2 = 1 is uniquely forced by Cl(3) axioms, nor that N_c = 3 is forced by d = 3 independently of the graph-first SU(3) integration.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 beta = 6 forced from d=3 -> N_c=3 -> g_bare^2=1 modulo the Wilson normalization convention — the H1 Route-2 closure, feeding the beta6 lane.
 
@@ -32,7 +36,8 @@ beta = 6 forced from d=3 -> N_c=3 -> g_bare^2=1 modulo the Wilson normalization 
 - Source commit: `1ff9aa9e5cd5212f1916624f48e9bc89d969308c`
 - git blob: `fafe69cab101dd9ed404135bd41b6aba1f9ceb56`
 - sha256: `641d5c5db30281dfa3f14a17551093533d98755b7d43a5e0739aacecf58a7677`
-- Lines: 244; runners named: scripts/frontier_hierarchy_closure_program.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/689_HIERARCHY_H1_BETA_SIX_FROM_CL3_AXIOM_NOTE_2026-05-03.md](../../archive_unlanded/historic_intake_originals/branch03/689_HIERARCHY_H1_BETA_SIX_FROM_CL3_AXIOM_NOTE_2026-05-03.md)
+- Lines: 244; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_closure_program(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

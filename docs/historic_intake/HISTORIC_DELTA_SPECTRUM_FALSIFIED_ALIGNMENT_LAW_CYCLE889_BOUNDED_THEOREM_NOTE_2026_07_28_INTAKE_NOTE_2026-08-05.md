@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The conjecture dies and a law arrives — a self-falsification
 Scope: Exhaustive census, no sampling; also runs the alignment contingency census that 881 named but did not run and reprices 881's tails.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Self-falsification executed exactly as the parent specified: Cycle 881's SHIPPED DELTA-spectrum conjecture dies at every tier and is replaced by a law — must reach the ledger beside the landed conjecture.
 
@@ -32,7 +34,8 @@ Self-falsification executed exactly as the parent specified: Cycle 881's SHIPPED
 - Source commit: `2d3f825736e57b0dda2e9ee619064cbbc94d739b`
 - git blob: `5f27e2456d8191a9d46f7859e0e9026441c195e9`
 - sha256: `f96edeb5c63e30163d899f5b26d789616d2e47ebb9ca9d3f6a310165cd412509`
-- Lines: 216; runners named: ../scripts/frontier_cycle889_delta_spectrum_2026_07_28.py, ../scripts/frontier_cycle889_delta_spectrum_independent_check_2026_07_28.py, frontier_cycle889_delta_spectrum_2026_07_28.py, frontier_cycle889_delta_spectrum_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/296_DELTA_SPECTRUM_FALSIFIED_ALIGNMENT_LAW_CYCLE889_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/296_DELTA_SPECTRUM_FALSIFIED_ALIGNMENT_LAW_CYCLE889_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle889_delta_spectrum_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle889_delta_spectrum_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle889_delta_spectrum_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle889_delta_spectrum_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ A previously published conjecture is falsified at every tier.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

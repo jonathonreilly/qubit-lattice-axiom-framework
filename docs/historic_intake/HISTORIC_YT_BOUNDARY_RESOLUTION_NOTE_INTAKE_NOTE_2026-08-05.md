@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The y_t gate is declared CLOSED at matching precision, with th
 Scope: Matching-precision level with 2-loop SM RGE and threshold corrections included; alpha_plaq = 0.092 remains an input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 'Gate CLOSED at matching precision' claim WITH its own cross-validation flag — the audit pair against 2312.
 
@@ -32,7 +34,8 @@ The 'Gate CLOSED at matching precision' claim WITH its own cross-validation flag
 - Source commit: `e4da5c4f283aee94865ed984677b359ae3906ed3`
 - git blob: `56c1887693965df5dd9aef9d9dad1db770ffe9a2`
 - sha256: `496a12a983c49e6bdf0de8d99ec946c69c049981e4d92933c6896d0afc09bc08`
-- Lines: 93; runners named: scripts/frontier_yt_boundary_resolution.py, scripts/frontier_yt_formal_theorem.py, scripts/frontier_yt_matching.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2142_YT_BOUNDARY_RESOLUTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2142_YT_BOUNDARY_RESOLUTION_NOTE.md)
+- Lines: 93; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_boundary_resolution(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_formal_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_matching(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-declared 'Gate CLOSED' while its own cross-validation notes the alpha_s nee
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

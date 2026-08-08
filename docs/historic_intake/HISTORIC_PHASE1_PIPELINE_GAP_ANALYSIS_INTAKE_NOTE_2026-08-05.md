@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_tooling_audit_lint_rule_designs
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: VERDICT (c) PIPELINE GAPS is the root cause, (a) MISSING REGIS
 Scope: origin/main at f865c14cd4, measured in a detached read-only worktree; nothing committed or edited.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 SYSTEMIC INTEGRITY MEASUREMENT (repo-state-scrub): audit_lint.py on origin/main reports 0 errors while ALL SEVEN defect classes the campaign was opened over pass clean (7/7 uncaught); 401 of 450 review_feedback/ runner-gated notes have ZERO ledger rows; 1569 orphan runners; seven lint rules L1-L7 designed with a seven-batch priority order. Root cause verdict: (c) pipeline gaps with (a) missing registration dominant. Charter and lane diagnosis attached.
 
@@ -32,7 +34,8 @@ SYSTEMIC INTEGRITY MEASUREMENT (repo-state-scrub): audit_lint.py on origin/main 
 - Source commit: `7d1b60b2f9648ee299fa050079afba04638cdcd3`
 - git blob: `5849e5e76d5682fe28dff0dde8b5f7163946b542`
 - sha256: `a9d1748ec240deb1388bcdab7c2467e9cc8be05f853d719851b0ac06b602d631`
-- Lines: 994; runners named: scripts/audit_lint.py, scripts/audit_model_family_normalization_guard.py, scripts/build_citation_graph.py, scripts/check_staged_claim_typing.py, scripts/check_staged_runner_ownership.py, scripts/compute_audit_queue.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10831_phase1_pipeline_gap_analysis.md](../../archive_unlanded/historic_intake_originals/packsci03/10831_phase1_pipeline_gap_analysis.md)
+- Lines: 994; runners named: historic runner (unpinned, not in this packet): `scripts/audit_lint(.py)`; historic runner (unpinned, not in this packet): `scripts/audit_model_family_normalization_guard(.py)`; historic runner (unpinned, not in this packet): `scripts/build_citation_graph(.py)`; historic runner (unpinned, not in this packet): `scripts/check_staged_claim_typing(.py)`; historic runner (unpinned, not in this packet): `scripts/check_staged_runner_ownership(.py)`; historic runner (unpinned, not in this packet): `scripts/compute_audit_queue(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ MAJOR: 401 of 450 review_feedback/ notes are runner-gated science with zero ledg
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_tooling_audit_lint_rule_designs
 intake_directive: owner_2026-08-05
 ```
 

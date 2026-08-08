@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The temporal boundary is frozen exactly at w10_18 (t ~ 0.80..1
 Scope: Same narrow surface, varying only trace length and analysis window; early-time fits on |a_mutual| over attractive rows only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The two-body attraction TERMINAL: the near-inverse-square law is a transient-window phenomenon frozen exactly at w10_18 — the scope truth of the whole family.
 
@@ -32,7 +34,8 @@ The two-body attraction TERMINAL: the near-inverse-square law is a transient-win
 - Source commit: `2636abd8f737971f487693030f8d611230380048`
 - git blob: `764f84eb45c9d9983b96ddafbee670a397b7ffe6`
 - sha256: `f0a21805bf46fce846fb4640c16b5238a849567a30c5f5098e4a74375400976d`
-- Lines: 112; runners named: scripts/frontier_two_body_attraction_temporal_robustness.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2085_TWO_BODY_ATTRACTION_TEMPORAL_ROBUSTNESS_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch07/2085_TWO_BODY_ATTRACTION_TEMPORAL_ROBUSTNESS_NOTE_2026-04-11.md)
+- Lines: 112; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_two_body_attraction_temporal_robustness(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Durable negative science kept, one over-reaching exclusion wit
 Scope: Bounded finite-algebra locator; physical generation reference-state selection is outside the row.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Retraction narrowing an over-reaching exclusion: theorem-grade status is WITHDRAWN from the CPT corner-reflection exclusion; the durable negative (tested finite structures do not make det_C/equal-block counting automatic) is kept at its true grade.
 
@@ -32,6 +34,7 @@ Retraction narrowing an over-reaching exclusion: theorem-grade status is WITHDRA
 - Source commit: `e0b0eefa85a78b80035045c87fc5e0ca7fcf8dd5`
 - git blob: `8eecc2e0398724f35f992261130098267ef9ecd0`
 - sha256: `a38ba8e2b3fefd94123c81ad5ecfdbd685239114296e1046ebc983b1d6a627d8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10450_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10450_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 27; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ An exclusion previously carried at theorem grade (CPT corner-reflection sign) is
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

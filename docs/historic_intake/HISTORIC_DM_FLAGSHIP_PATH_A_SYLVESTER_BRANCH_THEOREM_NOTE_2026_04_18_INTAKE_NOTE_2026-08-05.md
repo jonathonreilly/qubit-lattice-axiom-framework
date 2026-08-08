@@ -1,9 +1,11 @@
 # Historic intake: Sylvester-Linear-Path Theorem for the P3 Branch-Choice Admissibility Rule - Candidate Retention Note
 
+Explicit subject: Along H(t) = H_base + t J_* for t in [0,1] the determinant stays positive (min det H(t) ~ +0.876 at t ~ 0.78, det H_base = 32 sqrt(2)/9 ~ +5.0283, det H_pin ~ +0.9592), so by Sylvester's law of inertia signature(H_base + J_*) = signature(H_base) = (2,0,1) and the imposed ... (The bare code `P3` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: The DM flagship gate's selector-admissibility conditional at t
 Scope: Holds at the single P3 observational pin (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042) on the retained 3-generation irreducible H_{hw=1}; no PDG charged-lepton masses invoked.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Sylvester-inertia branch theorem discharging the selector-admissibility conditional — exact, with the observational-pin dependence flagged.
 
@@ -32,7 +36,8 @@ Sylvester-inertia branch theorem discharging the selector-admissibility conditio
 - Source commit: `5fc73b2d7ef56526d541e74533f721d7a46d6ee5`
 - git blob: `4c9deb0babc9c0670ed2cb18f8927bd64c15bc51`
 - sha256: `305937f04ed5180db7dc37e77f743db488b09928850616e335313177a437d249`
-- Lines: 239; runners named: scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py, scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem.py, scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/359_DM_FLAGSHIP_PATH_A_SYLVESTER_BRANCH_THEOREM_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/359_DM_FLAGSHIP_PATH_A_SYLVESTER_BRANCH_THEOREM_NOTE_2026-04-18.md)
+- Lines: 239; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ The pin itself is fixed by observational promotion (matching 9/9 NuFit 5.3 NO 3-
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

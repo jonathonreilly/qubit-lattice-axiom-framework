@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Berry dead; mechanism identified; selection principle open
 Scope: mechanism identification plus route pruning; conjecture explicitly open
 Escape conditions (negative claims): prove the C_N-uniform-as-unique-attractor theorem on retained native dynamics
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Definitive negative: Berry-holonomy routes to the Brannen delta are DEAD at all three levels - in the truly C3-invariant gauge ([H,P_C3]=4e-15) per-character gamma_k vanishes; mechanism identified; the one escape (prove C_N-uniform-as-unique-attractor [primitivity]) is named. Level companions attached.
 
@@ -32,6 +34,7 @@ Definitive negative: Berry-holonomy routes to the Brannen delta are DEAD at all 
 - Source commit: `a2f162ea94086cbcda5b53c1d3230a7e0433839c`
 - git blob: `fe2719b6aff9c64e0f96f4076a0ada5c4aca0135`
 - sha256: `8d2b0e82a17412111bddfe5c7a503fc5b96ea2d97e3f3a638ce794885c319466`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11537_MAJOR_RESULT_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11537_MAJOR_RESULT_2026-05-26.md)
 - Lines: 120; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

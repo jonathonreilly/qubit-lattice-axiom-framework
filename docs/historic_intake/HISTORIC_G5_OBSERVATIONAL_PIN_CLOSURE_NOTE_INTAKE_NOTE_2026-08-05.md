@@ -1,9 +1,11 @@
 # Historic intake: G5 Observational-Pin Closure - the G1-analogous route
 
+Explicit subject: Pinning the shape theorem's weights to PDG charged-lepton masses gives (w_O0, w_a, w_b) = (2.713707e-04, 5.611085e-02, 9.436178e-01) normalized, at which Koide Q = 0.6666605115 is recovered AUTOMATICALLY (|Q - 2/3| = 6.155e-06) rather than imposed - because Q is scale-invariant ... (The bare codes `G5`, `G1` in the title are era-local historic shorthand preserved verbatim from the original; the pinned original defines them.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_closure
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: G5 attains publication-grade status matching G1 - closure via 
 Scope: Closure consumes the 3-real PDG input (m_e, m_mu, m_tau); constraint R5 (the S_2-broken requirement w_a != w_b) is exactly what retained schemes alone cannot impose.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 G5 observational-pin closure WITH the flag that automatic-Koide is scale invariance of the pin, not new content.
 
@@ -32,7 +36,8 @@ G5 observational-pin closure WITH the flag that automatic-Koide is scale invaria
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `b80a0968e5b611851fa9a95d62991218c712fdc3`
 - sha256: `a094221ea6ca925bbc5cc1629cf8b19ea0619100ef6eea62bc7ccb436156b63f`
-- Lines: 208; runners named: scripts/frontier_g5_observational_pin_closure.py, scripts/frontier_g5_gamma_1_second_order_return.py, scripts/frontier_dm_neutrino_dirac_bridge_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/548_G5_OBSERVATIONAL_PIN_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/548_G5_OBSERVATIONAL_PIN_CLOSURE_NOTE.md)
+- Lines: 208; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g5_observational_pin_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g5_gamma_1_second_order_return(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_dirac_bridge_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ The 'Koide recovered automatically' result is a consequence of scale invariance 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_closure
 intake_directive: owner_2026-08-05
 ```
 

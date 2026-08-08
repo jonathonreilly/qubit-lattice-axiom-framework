@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The lattice spectrum confirms T^3 as it must; this is orthogon
 Scope: Graph Laplacian on periodic cubic lattices L = 4..30 and open-BC balls; exact analytic eigenvalue formula used for the degeneracy test.
 Escape conditions (negative claims): The negative is scoped to periodic/open cubic lattices; testing S^3 spectrally would require directly discretizing S^3 (icosahedral or hypercube-based), named as a separate project.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The lattice-spectrum fact: periodic cubic spectrum matches T^3 not S^3 at every size — WITH its own 'ALL TESTS PASS' framing flag; scopes the numerics honestly.
 
@@ -32,7 +34,8 @@ The lattice-spectrum fact: periodic cubic spectrum matches T^3 not S^3 at every 
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `e1a488f9bf352c5459406074f6c0a9490ca96524`
 - sha256: `adc98a5230047538ebfecdee7eb3787e14346b958b1be7d7789114c560cf0969`
-- Lines: 136; runners named: scripts/frontier_s3_spectral_fingerprint.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1875_S3_SPECTRAL_FINGERPRINT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1875_S3_SPECTRAL_FINGERPRINT_NOTE.md)
+- Lines: 136; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_spectral_fingerprint(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Status line reads 'ALL TESTS PASS' for a test whose finding is that the lattice 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Consolidates the piecewise retained magnitudes into a single t
 Scope: Corollary on the promoted CKM atlas plus NLO protected-gamma-bar surfaces; |V_td| carries one circumradius factor.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Cabibbo Power Tower: every retained CKM magnitude as a structural-integer multiple of a power of |V_us|^2 — the family's consolidation carrier, with the numerology-flagged siblings attached.
 
@@ -32,7 +34,8 @@ The Cabibbo Power Tower: every retained CKM magnitude as a structural-integer mu
 - Source commit: `8a391c733500776d5e8ed5d60d249c3c23e29bfd`
 - git blob: `31b8e941d0a8218f2fd2678052c23a559aa10c49`
 - sha256: `d96c8b476c0270f0725e1cefb532f979a3234632f1193424bf31f9c381579c22`
-- Lines: 392; runners named: scripts/frontier_ckm_magnitudes_vus_power_tower_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/210_CKM_MAGNITUDES_VUS_POWER_TOWER_BRIDGE_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/210_CKM_MAGNITUDES_VUS_POWER_TOWER_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+- Lines: 392; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_magnitudes_vus_power_tower_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -64,6 +67,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

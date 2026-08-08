@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_brainstorm
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No route is established; the alpha_s^{N_taste} coincidence is 
 Scope: Brainstorm of alternative derivations avoiding exponential sensitivity; feasibility scored per route (Route 1: 7/10).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest V_* meta-note: six routes tabulated with failure modes, numerology self-flagged — the cluster's true state.
 
@@ -32,6 +34,7 @@ The honest V_* meta-note: six routes tabulated with failure modes, numerology se
 - Source commit: `0fee4ad10c7880d18534b7bb2e9425790332dede`
 - git blob: `01cbef19adbe208c224eea888dc1a1d63dabbc7d`
 - sha256: `deec5f17f059179c4806fbb75c079c3889ca28a76d0ec13d0e57e7581d63d3c9`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2106_V_SIMPLER_ROUTES_BRAINSTORM.md](../../archive_unlanded/historic_intake_originals/branch07/2106_V_SIMPLER_ROUTES_BRAINSTORM.md)
 - Lines: 640; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Self-flags numerology risk: the headline route rests on a numerical coincidence 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_brainstorm
 intake_directive: owner_2026-08-05
 ```
 

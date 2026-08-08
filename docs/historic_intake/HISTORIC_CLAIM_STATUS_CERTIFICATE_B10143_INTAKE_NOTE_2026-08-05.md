@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Post-repair queue result is audit_status unaudited, ready true
 Scope: One bounded_theorem row and its dependency edge to rconn_derived_note.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Scope repair on a CRITICAL row with 880 transitive descendants and direct in-degree 8: the source is rebound to only the directly cited R_conn authority slice; post-repair the row queues unaudited/ready. The largest-fan-out correction in this stratum.
 
@@ -32,6 +34,7 @@ Scope repair on a CRITICAL row with 880 transitive descendants and direct in-deg
 - Source commit: `a43aa171952d4efc5f20e3b3147c161f6540e149`
 - git blob: `d8e51c0e95c8f2a2689d7760ad1ed0c5eba4dc79`
 - sha256: `9b828ee75623eb11346c7eb163d47f4f27ea01ffdfe2a05d8df7c31f569aef47`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10143_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10143_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 39; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Scope repair on a CRITICAL row with 880 transitive descendants and direct in-deg
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The finite pole witnesses are route information, not scalar LS
 Scope: Finite Wilson-exchange ladder with color-singlet q=0 removal at mu_IR^2 = 0.
 Escape conditions (negative claims): The narrower positive route is named: derive the continuum/taste/projector limit of the interacting color-singlet scalar denominator and its inverse-propagator derivative, or measure the same-source pole derivative in production FH/LSZ data.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Color-singlet denominator terminal: finite pole witnesses are route information (volume stability fails) — the narrow positive route named.
 
@@ -32,7 +34,8 @@ Color-singlet denominator terminal: finite pole witnesses are route information 
 - Source commit: `08afdf263d4b43a0a187c390e9313615cb2f842d`
 - git blob: `65b8f4682df981eb12ea4e847b33d00f005aaf41`
 - sha256: `eff6242c3ed19a09fda9cebb8992c8ee32307dd2ca8a5c91ca49754687b1eed4`
-- Lines: 51; runners named: scripts/frontier_yt_color_singlet_zero_mode_removed_ladder_pole_search.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2162_YT_COLOR_SINGLET_ZERO_MODE_REMOVED_LADDER_POLE_SEARCH_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2162_YT_COLOR_SINGLET_ZERO_MODE_REMOVED_LADDER_POLE_SEARCH_NOTE_2026-05-01.md)
+- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_color_singlet_zero_mode_removed_ladder_pole_search(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

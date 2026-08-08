@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED with all inputs traced and a single ~10% computable ma
 Scope: Conditional on A5, the bare UV theorem and Cl(3) preservation; no new assumptions.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The boundary-decomposition claim (all inputs traced, ~10% matching uncertainty) WITH the wide-band flag [172,194] — the era's y_t boundary statement.
 
@@ -32,7 +34,8 @@ The boundary-decomposition claim (all inputs traced, ~10% matching uncertainty) 
 - Source commit: `7deacd8da1657be8a694c53dd310b38863010e78`
 - git blob: `44fde23e582601db3b6ba907bb62bff8171de939`
 - sha256: `0145b15989c727de7df7f1667de2aad311953d62867db322744071247fcde6a0`
-- Lines: 154; runners named: scripts/frontier_yt_cl3_preservation.py, scripts/frontier_yt_full_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2310_YT_FULL_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2310_YT_FULL_CLOSURE_NOTE.md)
+- Lines: 154; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_cl3_preservation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_full_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The claimed uncertainty band [172, 194] GeV is wide enough to contain the observ
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

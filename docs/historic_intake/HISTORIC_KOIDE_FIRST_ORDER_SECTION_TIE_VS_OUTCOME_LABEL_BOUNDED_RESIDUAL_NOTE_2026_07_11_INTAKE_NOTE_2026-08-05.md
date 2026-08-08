@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The r = 1 vs r = 1/2 binary is exactly the question of whether
 Scope: Claims exact residual-localization only: not a derivation of r = 1/2 or r = 1, no adoption of any occupancy/weighting rule, no audit status; runner SCORECARD PASS=16.
 Escape conditions (negative claims): Shows the two landed walls do not decide it: the |det M|^2 r = 1 wall and the reflection-positivity wall both act on the Hermitian SECOND-order transfer family, while on the corner sector every spatial reflection is the identity so RP's positivity content coincides with the very antiunitary in question.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact Berezin result: the one-component staggered measure is count-once (r=1) to first power — locating the r=1 vs r=1/2 binary exactly in whether K-reality acts on statistical weights; the two landed walls shown not to decide it.
 
@@ -32,7 +34,8 @@ Exact Berezin result: the one-component staggered measure is count-once (r=1) to
 - Source commit: `93fc486b043b4566a46f295ca135a2714ac0d439`
 - git blob: `35844b1bf814dc3fadbdc1f88342ec230e846723`
 - sha256: `794ad87aab3dd73e197837e12386152caf9324709840f857a87958c42eb1048a`
-- Lines: 262; runners named: scripts/frontier_koide_first_order_section_question_2026_07_11.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/845_KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_bounded_residual_NOTE_2026-07-11.md](../../archive_unlanded/historic_intake_originals/branch03/845_KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_bounded_residual_NOTE_2026-07-11.md)
+- Lines: 262; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_first_order_section_question_2026_07_11(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_synthesis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Characterization, not derivation — the note states explicitl
 Scope: Publication narrative over already-stated results from the three axioms Lattice (Z^3), Quantum (per-site M_2(C) = Cl(3,0)), Record (durable additive scalar readout); asserts no audit verdict, proposal_allowed: false.
 Escape conditions (negative claims): The named escape route is deriving the CP-odd/coupling coefficients of the Record-forced action, or finding an axiom-native CP source beyond the single sign-only orientation Z_2 (the arrow is only a boundary condition, CPT is CP-protecting).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Pre-reset synthesis characterizing the four dimensionless Tier-A admissions (r = 1/2 with Q = 2/3, delta ~ 2/9, theta_gauge = 0, xi = 1) as facets of one structure rather than independent inputs - explicitly a characterization, NOT a derivation, with the escape route named (derive the C~). The unification thesis behind the current Tier-A residual program; direct input to next-phase planning.
 
@@ -32,6 +34,7 @@ Pre-reset synthesis characterizing the four dimensionless Tier-A admissions (r =
 - Source commit: `8f4906c028f3d09900ea927d064919d5bea5fe6d`
 - git blob: `6e4f5869a6cebe0175d839433114de47b5d5c87a`
 - sha256: `63e167c4c928d777d89dc799c4cefb507f94497883c50820d6cb6ab348fedbb0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2751_ADMISSION_FLOOR_UNIFICATION_SYNTHESIS_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch09/2751_ADMISSION_FLOOR_UNIFICATION_SYNTHESIS_2026-06-08.md)
 - Lines: 106; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Self-labeled honest, but the headline slogan 'structure from three axioms; the r
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_synthesis
 intake_directive: owner_2026-08-05
 ```
 

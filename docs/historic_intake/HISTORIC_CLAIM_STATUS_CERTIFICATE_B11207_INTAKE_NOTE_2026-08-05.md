@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Bounded theorem after an exact-to-bounded demotion; No-Go Disc
 Scope: One fixed box, one fixed scalar segment, 11 backgrounds, three probes, all 27 trace-free entries, two tangent channels; A_min restored to Lattice+Qubit+Admissibility+Record; zero fitted/observed/literature inputs.
 Escape conditions (negative claims): N6 live routes: a validated numerical enclosure for exact nonaffinity, a physical principle selecting the interpolator/readout, a local/smooth observable removing the spline tail, and a physical tensor/GR bridge; N2 names walls W_I (interpolation/readout contract) and W_P (physical tensor observable) and explicitly declines to assert their independence.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Self-documented exact-to-bounded demotion: a former exact/global affinity claim is demoted to a bounded numerical witness at stated tolerances for one fixed operator. The demotion itself is the record; N6 names the live routes back (validated numerical enclosure et al.).
 
@@ -32,6 +34,7 @@ Self-documented exact-to-bounded demotion: a former exact/global affinity claim 
 - Source commit: `60c90e0a6258b3394cf7235ab0b98106925e51c5`
 - git blob: `fa3a19c5c652735b32452bd0664ce63d63c6be3d`
 - sha256: `cc2d95b7bf806d7bdddb48d9a77c12449eb3ec96eac01beded3563b48e5c0d45`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11207_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11207_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 115; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ self-documented CORRECTION: the claim was demoted from exact/global to bounded n
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem_certificate
 intake_directive: owner_2026-08-05
 ```
 

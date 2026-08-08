@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The branch should no longer be read as 'positive neutrino stil
 Scope: Exact only on the current OBSERVATIONAL closure surface eta/eta_obs = 1.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The N_e lane closed end-to-end — WITH the flag that closure is anchored on an observational ratio; the positive-neutrino program's terminal state.
 
@@ -32,7 +34,8 @@ The N_e lane closed end-to-end — WITH the flag that closure is anchored on an 
 - Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
 - git blob: `593cab2af1986165b9935dae6e42f691a05b4e70`
 - sha256: `4d4134c21cb93b2decc8cb290ff2f97521e4efbaeac360773c810d490f1a246a`
-- Lines: 137; runners named: scripts/frontier_neutrino_post_retained_full_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1208_NEUTRINO_POST_RETAINED_FULL_CLOSURE_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch04/1208_NEUTRINO_POST_RETAINED_FULL_CLOSURE_NOTE_2026-04-16.md)
+- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_post_retained_full_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ The closure is anchored on an observational ratio being exactly 1, which the not
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

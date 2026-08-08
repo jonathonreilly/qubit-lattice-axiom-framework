@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Stronger than the three separate reductions: everything now ha
 Scope: Exact coupled-history reduction on the current surface; the pushforwards T_L and T_+ are not given in explicit first-principles form.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The composite one-lane reduction: K_NP = F_NP[chi(tau)] on a single scalar history — supersedes the three stage reductions; the program's structural terminal.
 
@@ -32,7 +34,8 @@ The composite one-lane reduction: K_NP = F_NP[chi(tau)] on a single scalar histo
 - Source commit: `42e037a94706993508b94535f7af8b23354144aa`
 - git blob: `9257f04da946e71cfe7dc5b3ddf3e98f211884f9`
 - sha256: `9e2164a952c519a26fed1681f4be6f57f7ce651206e5c0b9faa32e8eba1a927e`
-- Lines: 197; runners named: ./../scripts/frontier_baryogenesis_single_history_composition.py, frontier_baryogenesis_single_history_composition.py, scripts/frontier_baryogenesis_single_history_composition.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/97_BARYOGENESIS_SINGLE_HISTORY_COMPOSITION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/97_BARYOGENESIS_SINGLE_HISTORY_COMPOSITION_NOTE.md)
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_single_history_composition(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_single_history_composition(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_single_history_composition(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

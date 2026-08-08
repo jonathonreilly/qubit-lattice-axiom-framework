@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: r=1/2 is a NORM-BALANCE, not symmetry-protected (shipped as PR
 Scope: The OPERATOR/MEASURE/SYMMETRY class for the Koide r=1/2 selection question; the dynamical class is explicitly untouched.
 Escape conditions (negative claims): Three open, un-attacked dynamical routes: the staggered corner-coupling mass term — does det(D+M) on the hw=1 corners re-weight the isotype blocks to F1 (kappa=2); taste-breaking scalar action normalization effect on block-total Frobenius weighting when integrated out; and multi-factor Connes-Lott with Yukawa D on R^3 and chirality on separate H_L (+) H_R.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Consolidated dead-route ledger of the 30-probe BAE campaign: every representation-theoretic measure closes; r=1/2 is a NORM-BALANCE, not symmetry-protected (shipped no-go PR #2591); eight independent families closed with three open dynamical routes named. High-value cross-campaign route memory for the r=1/2 adjudication.
 
@@ -32,6 +34,7 @@ Consolidated dead-route ledger of the 30-probe BAE campaign: every representatio
 - Source commit: `11f52abc1112b8d5d831e4058cb90c91451a9cf2`
 - git blob: `f41bdb6e58b8680136e7676f6dd17abf636162fb`
 - sha256: `8fba4a9b24e0c149219fb4482835e5e48239f0e43afd520b71b5c81cfaa9156e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10386_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10386_NO_GO_LEDGER.md)
 - Lines: 31; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Consolidated dead-route ledger of the 30-probe BAE campaign: every representatio
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Consolidated dead-route ledger of the 30-probe BAE campaign: every representation-theoretic measure closes; r=1/2 is a NORM-BALANCE, not symmetry-protected (shipped no-go PR #2591); eight independent families closed with three open dynamical routes named. High-value cross-campaign route memory for the r=1/2 adjudication.
+- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Consolidated dead-route ledger of the 30-probe BAE campaign: every representation-theoretic measure closes; r=1/2 is a NORM-BALANCE, not symmetry-protected (shipped no-go PR #2591); eight independent families closed with three open dynamical routes named. High-value cross-campaign route memory for the r=1/2 adjudication.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ High-value cross-campaign ledger: eight independent route families all land on k
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

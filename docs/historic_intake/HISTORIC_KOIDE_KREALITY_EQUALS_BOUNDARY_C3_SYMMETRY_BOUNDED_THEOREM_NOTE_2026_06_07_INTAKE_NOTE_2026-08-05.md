@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The gate gets its sharpest known form — an arrow-versus-symm
 Scope: Relocation plus a bounded no-forcing result, not a derivation of delta = 0; does not touch the block weight r (G3); runner TOTAL PASS=14 FAIL=0 including three adversarial controls.
 Escape conditions (negative claims): Explains why the standing conjugation-even no-go does not reach this statement (it concerns spectral functionals and similarities, while this is registration-level and non-spectral), and proves by parity (T6) that no T-odd functional can select delta = 0 since Tr(A M) = 6|b| sin delta vanishes there — so the whole weight sits on the unbuilt conjugation-even boundary-symmetry datum.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 K-reality = boundary C_3 symmetry: the chirality gate's sharpest form — an arrow-versus-symmetry tension on the one realized boundary; why the standing no-go does not reach it explained.
 
@@ -32,7 +34,8 @@ K-reality = boundary C_3 symmetry: the chirality gate's sharpest form — an arr
 - Source commit: `1c08ff35afbaa50a0208fa8145ae4d792b8972dd`
 - git blob: `5ac6b270a24819244c00d13803b83d396a546c05`
 - sha256: `ef680216fa593d676b8c5d586dfb93f8067ae226227249117f882331e43bd9d2`
-- Lines: 155; runners named: scripts/frontier_kreality_equals_boundary_c3_symmetry.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/864_KOIDE_KREALITY_EQUALS_BOUNDARY_C3_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch03/864_KOIDE_KREALITY_EQUALS_BOUNDARY_C3_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- Lines: 155; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_kreality_equals_boundary_c3_symmetry(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

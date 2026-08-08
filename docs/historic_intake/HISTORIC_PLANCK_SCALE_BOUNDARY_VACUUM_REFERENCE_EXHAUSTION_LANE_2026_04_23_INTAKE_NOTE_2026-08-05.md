@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_science_only_classification_theorem_sharp_no_go_on_same_surface_boundary_vacuum_references
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Quarter is not hidden in the present vacuum-reference grammar;
 Scope: Systematic exhaustion of admissible same-surface Gaussian boundary vacuum-reference laws on the exact Schur carrier.
 Escape conditions (negative claims): Escaped only by supplying the explicit new scalar reference datum r_R(L) = p_vac(L) - lambda_min(L) - 1/4, which the current Schur/action stack does not provide.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Vacuum-reference terminal: the whole reference dependence reduces to one scalar datum — quarter is NOT hidden in the present grammar.
 
@@ -32,7 +34,8 @@ Vacuum-reference terminal: the whole reference dependence reduces to one scalar 
 - Source commit: `badaf1a4d383357e72fe570bd3fa0eb053db7dd3`
 - git blob: `785d7435d2758a3f57742befaa982491fb3cc664`
 - sha256: `fa04afde0b11ec59d46df1d0d563d45d57a4087b625f3d30bfc1d72efb8453d5`
-- Lines: 334; runners named: scripts/frontier_planck_boundary_vacuum_reference_exhaustion_lane.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1404_PLANCK_SCALE_BOUNDARY_VACUUM_REFERENCE_EXHAUSTION_LANE_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1404_PLANCK_SCALE_BOUNDARY_VACUUM_REFERENCE_EXHAUSTION_LANE_2026-04-23.md)
+- Lines: 334; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_boundary_vacuum_reference_exhaustion_lane(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_science_only_classification_theorem_sharp_no_go_on_same_surface_boundary_vacuum_references
 intake_directive: owner_2026-08-05
 ```
 

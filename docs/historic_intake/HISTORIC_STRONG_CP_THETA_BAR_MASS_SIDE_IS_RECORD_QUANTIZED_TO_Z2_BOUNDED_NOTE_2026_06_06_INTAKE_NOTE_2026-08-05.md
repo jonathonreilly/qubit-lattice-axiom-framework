@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Not a strong-CP solution but a sharp reduction of the mass sid
 Scope: Exact on the recorded/Hermitian sector, sharpest for leptons; CKM needs a non-Hermitian structure that breaks the quantization.
 Escape conditions (negative claims): Three residuals left open: the gauge theta_QCD selection (RP provably cannot force it), the {0, pi} sign choice (a registered pattern parallel to r = 1/2), and the quark/CKM sector.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Strong-CP record quantization: arg det(M_q) is a Z_2 sign, not a continuous angle — the mass-side reduction theorem.
 
@@ -32,7 +34,8 @@ Strong-CP record quantization: arg det(M_q) is a Z_2 sign, not a continuous angl
 - Source commit: `037efa47b69e77199ff40c4e28f2d28c32b47296`
 - git blob: `24c1bb76fe8adffbe125d332377ac1476e51f780`
 - sha256: `0e81c4012ffe91df89a24d0d726a83c61d597f1b77cb2ea8c702aaf90238482e`
-- Lines: 98; runners named: scripts/audit_companion_strong_cp_theta_bar_record_quantized_z2_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1995_STRONG_CP_THETA_BAR_MASS_SIDE_IS_RECORD_QUANTIZED_TO_Z2_BOUNDED_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch06/1995_STRONG_CP_THETA_BAR_MASS_SIDE_IS_RECORD_QUANTIZED_TO_Z2_BOUNDED_NOTE_2026-06-06.md)
+- Lines: 98; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_strong_cp_theta_bar_record_quantized_z2_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

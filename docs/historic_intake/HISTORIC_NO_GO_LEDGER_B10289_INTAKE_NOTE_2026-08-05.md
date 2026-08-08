@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The live attack lever is the gauge action functional itself: t
 Scope: Resolution-A levers for the bridge gap; six further retired no-gos are listed with authorities.
 Escape conditions (negative claims): Precisely the observation that Wilson is an import: changing the gauge action escapes all seven walls at once.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the Resolution-A programme: seven routes formally exhausted (V>=2 Picard-Fuchs lift, APBC Z_3 twist needing L~17, SDP plus Migdal-Makeenko needing L_s>=4, Cl(3) heat-kernel route, et al.); the live attack lever is the gauge action functional itself - the disclosure that the entire plaquette programme rests on Wilson as an import is the strategic content. Cross-linked to 10275.
 
@@ -32,6 +34,7 @@ TERMINAL of the Resolution-A programme: seven routes formally exhausted (V>=2 Pi
 - Source commit: `d500c5e53b914a7996d571496dc00513bcf0f3a6`
 - git blob: `091068a50cea1a8303e74565ae883711c8c7584d`
 - sha256: `a68873fcc4eb4e471aa5997c475ec180a193c15cfa0068210f834aea6c7518bc`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10289_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10289_NO_GO_LEDGER.md)
 - Lines: 49; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,8 +43,8 @@ TERMINAL of the Resolution-A programme: seven routes formally exhausted (V>=2 Pi
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10275 (`.claude/science/physics-loops/beta6-plaquette-closure/NO_GO_LEDGER.md`, stratum packsci01) — TERMINAL of the Resolution-A programme: seven routes formally exhausted (V>=2 Picard-Fuchs lift, APBC Z_3 twist needing L~17, SDP plus Migdal-Makeenko needing L_s>=4, Cl(3) heat-kernel route, et al.); the live attack lever is the gauge action functional itself - the disclosure that the entire plaquette programme rests on Wilson as an import is the strategic content. Cross-linked to 10275.
-- Cross-stratum reference from packsci01 idx 10275 (`.claude/science/physics-loops/beta6-plaquette-closure/NO_GO_LEDGER.md`, decision PULL) — The beta6/plaquette attack-surface no-go inventory: the single missing object is rho_{p,q}(6) (boundary character measure / Perron eigenvector of the unmodified transfer operator); adds the cycle-1 finite-geometry no-go over all 5966 connected leaf-free graphs; flags the 0.78% K-tube near-miss (0.5888 vs target) as noise with ranked escape routes. Harness companions attached; cross-linked to the exhausted-routes terminal 10289.
+- Attaches across strata to [idx 10275](HISTORIC_NO_GO_LEDGER_B10275_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/beta6-plaquette-closure/NO_GO_LEDGER.md`, stratum packsci01) — TERMINAL of the Resolution-A programme: seven routes formally exhausted (V>=2 Picard-Fuchs lift, APBC Z_3 twist needing L~17, SDP plus Migdal-Makeenko needing L_s>=4, Cl(3) heat-kernel route, et al.); the live attack lever is the gauge action functional itself - the disclosure that the entire plaquette programme rests on Wilson as an import is the strategic content. Cross-linked to 10275.
+- Cross-stratum reference from packsci01 [idx 10275](HISTORIC_NO_GO_LEDGER_B10275_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/beta6-plaquette-closure/NO_GO_LEDGER.md`, decision PULL) — The beta6/plaquette attack-surface no-go inventory: the single missing object is rho_{p,q}(6) (boundary character measure / Perron eigenvector of the unmodified transfer operator); adds the cycle-1 finite-geometry no-go over all 5966 connected leaf-free graphs; flags the 0.78% K-tube near-miss (0.5888 vs target) as noise with ranked escape routes. Harness companions attached; cross-linked to the exhausted-routes terminal 10289.
 
 ## Flags carried
 
@@ -53,6 +56,7 @@ Discloses that the entire plaquette programme rested on an ADMITTED IMPORT (Wils
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

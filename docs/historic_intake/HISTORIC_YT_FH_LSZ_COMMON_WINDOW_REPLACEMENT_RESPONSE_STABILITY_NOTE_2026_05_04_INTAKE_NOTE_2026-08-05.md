@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Authorizes no readout switch, supplies no scalar-LSZ normaliza
 Scope: Response-stability support path only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The acceptance-criterion REPLACEMENT on the record: legacy chunks cannot be backfilled, so the criterion was replaced rather than met — process-integrity fact.
 
@@ -32,7 +34,8 @@ The acceptance-criterion REPLACEMENT on the record: legacy chunks cannot be back
 - Source commit: `61a46d29b58a3a1c9b3c7761cef1a54ee96dbf66`
 - git blob: `d04ab24226a01e92f00f586654724baaaf697f3c`
 - sha256: `e0dbaf32a2edd4c83c693d70e4ddf64a6b0889e37d8ea94a9251b96ef45415a3`
-- Lines: 49; runners named: scripts/frontier_yt_fh_lsz_common_window_replacement_response_stability.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2225_YT_FH_LSZ_COMMON_WINDOW_REPLACEMENT_RESPONSE_STABILITY_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2225_YT_FH_LSZ_COMMON_WINDOW_REPLACEMENT_RESPONSE_STABILITY_NOTE_2026-05-04.md)
+- Lines: 49; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_common_window_replacement_response_stability(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ A load-bearing acceptance criterion is replaced rather than met, because the leg
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

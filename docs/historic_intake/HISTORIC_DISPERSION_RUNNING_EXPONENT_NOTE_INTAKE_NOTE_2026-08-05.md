@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The diagnostic works and cleanly separates architectures, but 
 Scope: Single lattice spacing (h = 0.5) with cos^2 kernel, k_phase = 5, p = 1; establishes no continuum-limit behaviour.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The running-exponent diagnostic replacing the flawed global R^2 fit — cleanly separates architectures; the dispersion lane's honest instrument.
 
@@ -32,7 +34,8 @@ The running-exponent diagnostic replacing the flawed global R^2 fit — cleanly 
 - Source commit: `3f333ad709d03ea43d5d45c7629e2516afef8559`
 - git blob: `c78f993596d1377a85135cef4ca5bb3ab2a0261e`
 - sha256: `9e584b04fd8b6739d37c02bd50267d8f29f086ab8abaeff2842cd998dd898549`
-- Lines: 87; runners named: ../scripts/frontier_dispersion_running_exponent.py, frontier_dispersion_relation.py, scripts/frontier_dispersion_running_exponent.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/329_DISPERSION_RUNNING_EXPONENT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/329_DISPERSION_RUNNING_EXPONENT_NOTE.md)
+- Lines: 87; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_dispersion_running_exponent(.py)`; historic runner (unpinned, not in this packet): `frontier_dispersion_relation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dispersion_running_exponent(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

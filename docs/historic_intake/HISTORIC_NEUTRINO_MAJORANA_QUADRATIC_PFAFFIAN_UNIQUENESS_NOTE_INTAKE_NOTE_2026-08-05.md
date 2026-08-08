@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Pfaffian is UNIQUE rather than merely minimal within the finit
 Scope: A quadratic-class uniqueness theorem only; not an axiom-forcing theorem.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Pfaffian UNIQUENESS (not just minimality) within the finite quadratic Grassmann class — exact Berezin theorem.
 
@@ -32,7 +34,8 @@ Pfaffian UNIQUENESS (not just minimality) within the finite quadratic Grassmann 
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `86b1ba3bc6dd2aeffa03a6e0c364ff0b7ae09134`
 - sha256: `4e4ce793bfe6337129f7ab0cd911c29e728bee3e6d0f28f6e8e262e6b7c64d9d`
-- Lines: 180; runners named: scripts/frontier_neutrino_majorana_quadratic_pfaffian_uniqueness.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1198_NEUTRINO_MAJORANA_QUADRATIC_PFAFFIAN_UNIQUENESS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1198_NEUTRINO_MAJORANA_QUADRATIC_PFAFFIAN_UNIQUENESS_NOTE.md)
+- Lines: 180; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_quadratic_pfaffian_uniqueness(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

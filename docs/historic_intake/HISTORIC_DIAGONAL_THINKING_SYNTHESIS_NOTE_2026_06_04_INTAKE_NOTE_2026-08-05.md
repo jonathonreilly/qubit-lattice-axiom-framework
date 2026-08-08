@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: None of the three gates closes; the package's value is a grade
 Scope: Governance scoping with no theorem promotion; package parent is the diagonal-lattice scoping note.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The diagonal-scoping terminal: graded L1/L2/L3-vs-gates map with a clean GATE-COLOR negative — the sweep's structural conclusion, with the level notes attached.
 
@@ -32,6 +34,7 @@ The diagonal-scoping terminal: graded L1/L2/L3-vs-gates map with a clean GATE-CO
 - Source commit: `2bc71e99eff954d9edd600c0e7d59ac4faaba789`
 - git blob: `9783912b706983bfc9048b09e96ba2f137ee037c`
 - sha256: `43db4c4740f5f6290d82c45884d99dec1a88a2fc4c55efe72f93372dba71ba4c`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/317_DIAGONAL_THINKING_SYNTHESIS_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch01/317_DIAGONAL_THINKING_SYNTHESIS_NOTE_2026-06-04.md)
 - Lines: 143; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

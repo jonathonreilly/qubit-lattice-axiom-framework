@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: DISSOLVED_ON_THE_CHOICE_CRITERION_ONLY — no row needs an exa
 Scope: Gravity-lane closure of the #5931 unit-grading decision surface plus three unpriced backlog scripts; no axiom surface touched.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Unit-grading terminal: lawfulness is affine in t, so the surface is DISSOLVED_ON_THE_CHOICE_CRITERION_ONLY — with four primary defects checker-caught.
 
@@ -32,7 +34,8 @@ Unit-grading terminal: lawfulness is affine in t, so the surface is DISSOLVED_ON
 - Source commit: `8754ce823e6ba31291480ae50f85ca1ba9bcd519`
 - git blob: `dc85290e3c16229bd2b3f55772eeec16081ec6d7`
 - sha256: `a379da33de523eb2d98a5567a295aaee1b5322221a64aaed7efced4b512bbe17`
-- Lines: 196; runners named: scripts/frontier_cycle895_t_retirement_2026_07_28.py, scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2086_T_CHOICE_RETIRED_AFFINE_LAW_CYCLE895_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2086_T_CHOICE_RETIRED_AFFINE_LAW_CYCLE895_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 196; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle895_t_retirement_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Four defects in the primary were found by running it and fixed in a recorded com
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Narrow exact no-go passes; the earlier positive 1.14x V_ub rea
 Scope: The displayed NNI coefficient normalization map on a fixed texture; not all NNI textures or all flavor dynamics.
 Escape conditions (negative claims): An independently derived physical texture deformation (plus five non-top quark masses, coefficients, and a texture-to-CKM bridge) would reopen positive closure.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Retraction on the record: the displayed coefficient map cannot change V_ub when it represents the same matrices, so the former '1.14x' V_ub reading is WITHDRAWN as an exact negative boundary; the escape (an independently derived physical texture deformation) is named. Correction of a previously asserted positive numeric.
 
@@ -32,6 +34,7 @@ Retraction on the record: the displayed coefficient map cannot change V_ub when 
 - Source commit: `9fb800689c9ae8757f9826ab54161ac2a2fb2bcc`
 - git blob: `46c268a4dc086d6443290eba9e6a8431db6c844a`
 - sha256: `96cb3896cc00d4227564d40616fcbde36d13e6f8f5f615de5d18a13d2344894a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10315_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10315_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 32; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Corrects a previously asserted positive numeric result (1.14x V_ub); supervisor 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

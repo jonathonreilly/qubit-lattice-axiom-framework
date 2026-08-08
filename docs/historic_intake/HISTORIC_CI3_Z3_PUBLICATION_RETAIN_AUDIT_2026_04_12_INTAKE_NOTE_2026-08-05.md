@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No promotions from the CI(3)/Z^3 cluster in this pass — prom
 Scope: Reviews the lane against the current main retention bar; explicit holds recorded on SU(3)-from-Cl(3), dark matter / alpha_s / annihilation ratio, Higgs/mass spectrum/hierarchy, the cosmological constant lane, and frozen-star prediction cards.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Publication audit naming runners that ADVERTISE predictions while hard-coding observed values — an integrity work order on the CI3/Z^3 cluster.
 
@@ -32,7 +34,8 @@ Publication audit naming runners that ADVERTISE predictions while hard-coding ob
 - Source commit: `5925175150574eec6d2aa04124be41dda5a55779`
 - git blob: `3fa648b75e592c5bea091c232a638d51ba5efcb6`
 - sha256: `5eedb2e9a9fd9d59411f88b446043b641474a4442652c487abc88d6502a6785c`
-- Lines: 246; runners named: scripts/frontier_accessible_prediction.py, scripts/frontier_alpha_s_determination.py, scripts/frontier_annihilation_ratio.py, scripts/frontier_cc_factor15.py, scripts/frontier_cc_value.py, scripts/frontier_dark_matter_closure.py, scripts/frontier_dm_ratio_sommerfeld.py, scripts/frontier_frozen_stars.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/159_CI3_Z3_PUBLICATION_RETAIN_AUDIT_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch01/159_CI3_Z3_PUBLICATION_RETAIN_AUDIT_2026-04-12.md)
+- Lines: 246; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_accessible_prediction(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_determination(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_annihilation_ratio(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_value(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dark_matter_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ratio_sommerfeld(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Names runners that advertise predictions while hard-coding observed values or SM
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -9,6 +9,7 @@
     "supervisor_verification": "independent re-fetch + re-hash of 8 random pins (8/8), line review of sampled wrappers, manifest count/ordering checks, vocab_lint clean",
     "wrapper_generation": "Claude Opus worker, mechanical, template byte-verified against the 8 supervisor-authored march wrappers before generation"
   },
+  "correction_2026_08_08": "review-loop iteration 1 finding F12 (Sol, 2026-08-08): the recovery pulled count was recorded as 33 while the shipped manifest and index contain 34 recovery wrappers; corrected to [67, 34] by recount from INTAKE_MANIFEST_2026-08-05.json. Per-stratum pulled counts now sum to 621 ordinary wrappers + 1 octopus registry = the receipt's 622 intake objects. Nothing else in this receipt was altered; the review-driven regeneration of the wrappers is recorded separately in historic_intake_part3_regen_receipt_2026_08_08.json.",
   "intake": {
     "attachment_lines": 1665,
     "index": "docs/historic_intake/INTAKE_INDEX_2026-08-05.md",
@@ -79,7 +80,7 @@
       ],
       "recovery": [
         67,
-        33
+        34
       ]
     }
   },

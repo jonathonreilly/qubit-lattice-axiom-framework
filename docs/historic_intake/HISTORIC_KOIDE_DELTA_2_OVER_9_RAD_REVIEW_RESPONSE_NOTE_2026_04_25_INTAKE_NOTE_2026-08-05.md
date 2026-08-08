@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The strongest defensible statement is conditional on the sourc
 Scope: The closure is pivoted to conditional form: delta = 2/9 rad holds on retained main CONDITIONAL on one named open primitive.
 Escape conditions (negative claims): The single named open primitive is the source-domain retention law; supplying it makes the closure unconditional, and the framework's own notes list this as 'derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant'.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The same-day hostile-review downgrade of the delta=2/9 'Final Closure': four blocking defects including a circular OP-locality argument — the lane's recurring-overclaim record, on the record.
 
@@ -32,7 +34,8 @@ The same-day hostile-review downgrade of the delta=2/9 'Final Closure': four blo
 - Source commit: `588e0a19c9ba35ba3a1353337e27e68e0d184cf8`
 - git blob: `3e84a62d3baee8064b383639510a1e82969f8866`
 - sha256: `ba45342f428c4cb54cdcf2d9ad1cfc1ac2de99dde5345c24f4aa8f32843eead5`
-- Lines: 291; runners named: scripts/frontier_koide_delta_2_over_9_rad_final_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/773_KOIDE_DELTA_2_OVER_9_RAD_REVIEW_RESPONSE_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch03/773_KOIDE_DELTA_2_OVER_9_RAD_REVIEW_RESPONSE_NOTE_2026-04-25.md)
+- Lines: 291; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_delta_2_over_9_rad_final_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Documents that the branch repeated an overclaim pattern already flagged in an ea
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

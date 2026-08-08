@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The final strict/native DM last mile - a sole-axiom law produc
 Scope: On the retained hw=1 response family, using the graph-first cycle-frame support theorem and the adjacent-chain path-algebra target as inputs.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Sole-axiom ordered-chain law producing nonzero J_chi — the strict/native DM branch's positive last-mile closure.
 
@@ -32,7 +34,8 @@ Sole-axiom ordered-chain law producing nonzero J_chi — the strict/native DM br
 - Source commit: `586d988e48d38898b4faacaecedf158ac193ff29`
 - git blob: `352beb72366c99eac756d02b31832414dc02cf46`
 - sha256: `c880fe38dc51ac6f8bde0ff84443929f3e6258641897210551d82ae34f9cfa59`
-- Lines: 290; runners named: scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/391_DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_CLOSURE_THEOREM_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch02/391_DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_CLOSURE_THEOREM_NOTE_2026-04-21.md)
+- Lines: 290; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

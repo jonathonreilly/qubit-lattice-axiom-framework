@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: NOT MET, NOT FALSIFIED for one objective realized central toke
 Scope: Coverage stated per element (64 sector images, 21 phase pairs), per site (seven central rails, orthogonal one-hot wake), per mode, per block (C3/C4/C6/C9) and lattice-wide (finite pure state and infinite central decomposition explicitly distinguished).
 Escape conditions (negative claims): Negative-claim gate FAIL_DO_NOT_SHIP_NEGATIVE; the single OPEN_NOT_COUNTED escape is an autonomous nonlinear extremal-sector law with intrinsic extremalization and coherent exhaust, for which no covariant law and exact exhaust theorem has been constructed.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The clearest statement of the standing Born wall in the sweep: seven normalized families against the single collapsed wall objective_selection_of_one_central_summand - NOT MET, NOT FALSIFIED for one objective realized central token; the negative-claim gate itself returns FAIL-DO-NOT-SHIP-NEG (the wall is not a theorem either). Companions: the no-route six-family sweep and the deterministic symmetry argument.
 
@@ -32,7 +34,8 @@ The clearest statement of the standing Born wall in the sweep: seven normalized 
 - Source commit: `ec68314efb285ab257b19f177b7225dc318131ba`
 - git blob: `43891c011cee9c0a4fcd193080b10d5f06eef3e8`
 - sha256: `f961424146b348aa765d655da41261fb5c12670077c9baed05c217879c1102da`
-- Lines: 144; runners named: scripts/physical_moving_carrier_phase_field_finite_restriction_cycle676_2026_07_23.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2941_PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/2941_PHYSICAL_MOVING_CARRIER_PHASE_FIELD_FINITE_RESTRICTION_CYCLE676_NOTE_2026-07-23.md)
+- Lines: 144; runners named: historic runner (unpinned, not in this packet): `scripts/physical_moving_carrier_phase_field_finite_restriction_cycle676_2026_07_23(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

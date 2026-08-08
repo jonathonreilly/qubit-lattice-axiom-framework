@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Bounded composition theorem — two unit selectors cancel, iso
 Scope: Unit-blocker removal in the strict Y_T top/W response-ratio route; audit-lane status only.
 Escape conditions (negative claims): Supply W_same_source_topW_response (top and W pole responses differentiated on the same physical source surface with FV/IR/contact-subtraction controls) and W_top_coefficient_or_direct_response (derive the top coefficient on the selected one-Higgs up-type carrier, or a direct top pole-response certificate).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Finite composition theorem: the top/W response ratio removes both unit selectors, isolating the top coefficient — the post-reset positive form of the W route.
 
@@ -32,7 +34,8 @@ Finite composition theorem: the top/W response ratio removes both unit selectors
 - Source commit: `020632d3457107a7633b887aff3d1c32d5b51937`
 - git blob: `eee3c143b3a351e77446aa5e4e78f5f5d33fa931`
 - sha256: `41de502e8263fe205bfeea0114d653ba6e41805c9b46ec1472937c7fa334060a`
-- Lines: 374; runners named: scripts/yt_top_w_response_ratio_post_axiom_unit_bypass_bridge_2026_07_01.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2474_YT_TOP_W_RESPONSE_RATIO_POST_AXIOM_UNIT_BYPASS_BRIDGE_2026-07-01.md](../../archive_unlanded/historic_intake_originals/branch08/2474_YT_TOP_W_RESPONSE_RATIO_POST_AXIOM_UNIT_BYPASS_BRIDGE_2026-07-01.md)
+- Lines: 374; runners named: historic runner (unpinned, not in this packet): `scripts/yt_top_w_response_ratio_post_axiom_unit_bypass_bridge_2026_07_01(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

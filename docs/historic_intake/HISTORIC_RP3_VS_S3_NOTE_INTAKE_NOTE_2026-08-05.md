@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED: S^3 is the best spherical topology once the RP^3 eige
 Scope: Cl(3) at each site plus the growth-from-seed axiom; relies on Perelman, Seifert-van Kampen, and Peter-Weyl.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The lambda_1(RP^3) correction: 3/R^2 -> 8/R^2, REVERSING the 'RP^3 beats S^3' headline — the topology-scan error fixed on the record.
 
@@ -32,7 +34,8 @@ The lambda_1(RP^3) correction: 3/R^2 -> 8/R^2, REVERSING the 'RP^3 beats S^3' he
 - Source commit: `06f386c0729fbb4b57166472fec4b457f6da6dfa`
 - git blob: `f0e1bed0c059b0c8f6cff03a138c5380e22dd0df`
 - sha256: `714ce6f0f0342d40adbfe36fbaf5223b8bc8029f9dbf4a4f60882c0aec0b0f63`
-- Lines: 244; runners named: scripts/frontier_rp3_vs_s3.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1840_RP3_VS_S3_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1840_RP3_VS_S3_NOTE.md)
+- Lines: 244; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_rp3_vs_s3(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents that a previously banked topology-scan result was numerically wrong an
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

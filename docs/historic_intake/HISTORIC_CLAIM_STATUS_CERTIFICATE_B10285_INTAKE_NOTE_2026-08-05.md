@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_claim_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: No proposed-retained wording allowed at this checkpoint.
 Scope: Three independently audited dependencies: the lensing adjoint kernel note (exact current-surface support), the finite-path explanation note and the centroid multipole no-go (both narrow no-gos).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Verification-integrity checkpoint record: at checkpoint 1 THE OLD POSITIVE COMPARISON STILL CONTAINS FORBIDDEN OBSERVATION TOKENS - a previously positive comparison is contaminated and no proposed-retained wording is allowed. Audit work order.
 
@@ -32,6 +34,7 @@ Verification-integrity checkpoint record: at checkpoint 1 THE OLD POSITIVE COMPA
 - Source commit: `05b0b760cdf7377f3a256815e4c70c5d4300bd68`
 - git blob: `58a172a693383052613682d51a81574aa196312f`
 - sha256: `35237728870ba614d2144ba48640a5853b9648e343d05511e660bc516ab1ed8c`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10285_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10285_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 26; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Explicitly records that a previously positive comparison contains forbidden obse
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

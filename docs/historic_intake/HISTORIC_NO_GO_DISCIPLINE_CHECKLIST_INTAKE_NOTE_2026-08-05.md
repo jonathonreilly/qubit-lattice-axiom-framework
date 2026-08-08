@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: PASS for the narrowly scoped negative; two live constructions 
 Scope: Explicitly limited: b in {3,4,5,6}, T_phys in {7.5,15}, Fam1 seed 0, H = 0.25 only; continuum/lattice-wide behaviour not tested and not claimed.
 Escape conditions (negative claims): N6 names the partial-closure paths: a symmetric Cauchy principal value assigns a finite number but does not repair W_shape; a finite source core makes the expectation integrable at the cost of new explicit model inputs; and a coherent 3D construction is a legitimate positive route explicitly outside the no-go.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exemplary full N1-N8 negative: on two declared fine-H finite harnesses the old plane-ray and unregularized 2D/3D Gaussian ray constructions FAIL, with N4 explicitly dropping a non-matching witness (the centroid one) and N6 naming the partial-closure paths (symmetric Cauchy family et al.); two live constructions (finite-core/principal-value) identified. Companion route-closure attached, incl. its beta-tuning disclosure.
 
@@ -32,6 +34,7 @@ Exemplary full N1-N8 negative: on two declared fine-H finite harnesses the old p
 - Source commit: `2b27fdd7f8a528aa99d76bff7784e46da2efd45a`
 - git blob: `fdf0bf7b0a24a8b5c57232048a88c7096b45b388`
 - sha256: `5e8b9879378d0f5dfa09c0681787e4674b5694abe16a239d0380efde17a897a7`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10286_NO_GO_DISCIPLINE_CHECKLIST.md](../../archive_unlanded/historic_intake_originals/packsci01/10286_NO_GO_DISCIPLINE_CHECKLIST.md)
 - Lines: 158; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ N3's hidden-wall scan searched the note and runner for ten specific smuggling ph
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

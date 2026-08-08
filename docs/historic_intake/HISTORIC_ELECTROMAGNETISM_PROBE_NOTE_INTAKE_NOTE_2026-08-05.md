@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The staggered lattice accommodates Coulomb and magnetic sector
 Scope: Bounded probe only: does not test Maxwell's equations, Lorentz covariance, the full Lorentz force, or E-B coupling; transverse deflection scales as B^1.6 suggesting the probe is non-perturbative at these fields.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The EM probe: Coulomb d^-2.11 (R^2=0.9995), exact neutral null, magnetic deflection — with the C-breaking flag and the coexistence-promotion block attached.
 
@@ -32,7 +34,8 @@ The EM probe: Coulomb d^-2.11 (R^2=0.9995), exact neutral null, magnetic deflect
 - Source commit: `b1a5c7f7f730fd8a6772759db226a095f5c1e27b`
 - git blob: `eccff4ca723dd5b5aa3f45229e80f5ebf635aacc`
 - sha256: `7077d334627e543f29897f0f37e57b87c955b8446bf4f070bb53a07e1287eae3`
-- Lines: 103; runners named: scripts/frontier_electromagnetism_probe.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/422_ELECTROMAGNETISM_PROBE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/422_ELECTROMAGNETISM_PROBE_NOTE.md)
+- Lines: 103; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_electromagnetism_probe(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Charge-conjugation symmetry is broken in the staggered centroid dynamics (V coup
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

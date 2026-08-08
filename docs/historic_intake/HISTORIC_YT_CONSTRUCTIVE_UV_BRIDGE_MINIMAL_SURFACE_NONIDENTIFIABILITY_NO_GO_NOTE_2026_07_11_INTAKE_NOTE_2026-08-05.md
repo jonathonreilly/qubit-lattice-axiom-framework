@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The bounded sibling's three-family profile scan is a target-co
 Scope: Free-symbol question only; forbidden proof inputs include the target 0.9176, the old fit window, best-fit centers/widths, SM beta functions, a Ward boundary, and any target-conditioned bridge note.
 Escape conditions (negative claims): The distinct definable-composite / physical-identification question is explicitly left as the positive reopen path — a future definable physical composite plus identification theorem would evade the independence proof.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Demotes its own bounded sibling's numerical scan to target-conditioned numerology — no symbol on the axiom surface is a Yukawa endpoint; honest reclassification.
 
@@ -32,7 +34,8 @@ Demotes its own bounded sibling's numerical scan to target-conditioned numerolog
 - Source commit: `b526cf5bd955d80605c1f2c9c4a6b20584cf9495`
 - git blob: `ac56ac4ea459d31dfa70b4d9bb5c5d6820f83646`
 - sha256: `f93f8ac54eb6bc364612d865e6d24dc3e221bd50693ed4e69abf5c6812a155cc`
-- Lines: 421; runners named: scripts/frontier_yt_constructive_uv_bridge_minimal_surface_nonidentifiability_2026_07_11.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2166_YT_CONSTRUCTIVE_UV_BRIDGE_MINIMAL_SURFACE_NONIDENTIFIABILITY_NO_GO_NOTE_2026-07-11.md](../../archive_unlanded/historic_intake_originals/branch07/2166_YT_CONSTRUCTIVE_UV_BRIDGE_MINIMAL_SURFACE_NONIDENTIFIABILITY_NO_GO_NOTE_2026-07-11.md)
+- Lines: 421; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_constructive_uv_bridge_minimal_surface_nonidentifiability_2026_07_11(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Retroactively reclassifies a sibling note's three-family scan (fit to y_t(v) = 0
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

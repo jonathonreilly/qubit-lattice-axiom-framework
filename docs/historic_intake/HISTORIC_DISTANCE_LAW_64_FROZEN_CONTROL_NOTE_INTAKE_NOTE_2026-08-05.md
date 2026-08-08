@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The dynamic-versus-analytic gap is a boundary-condition artifa
 Scope: Companion control to the 64^3 continuation; max spread across arms grows from 1.82% at N = 31 to 3.26% at N = 64.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Control finding: the headline distance-law measurement is contaminated by a Dirichlet boundary artifact (FROZEN = ANALYTIC exactly; DYNAMIC differs) — a real integrity result against the lane's headline.
 
@@ -32,7 +34,8 @@ Control finding: the headline distance-law measurement is contaminated by a Diri
 - Source commit: `3f333ad709d03ea43d5d45c7629e2516afef8559`
 - git blob: `21b6d6a961fa1265c707929ca5f0c08178b0830d`
 - sha256: `5c0e2d3ed31f4099853cf2ab82aa4c088be1415e8deaf67236bb46a811adac9a`
-- Lines: 118; runners named: scripts/frontier_distance_law_64_frozen_control.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/331_DISTANCE_LAW_64_FROZEN_CONTROL_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/331_DISTANCE_LAW_64_FROZEN_CONTROL_NOTE.md)
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_64_frozen_control(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Shows the headline distance-law measurement is contaminated by Dirichlet image c
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

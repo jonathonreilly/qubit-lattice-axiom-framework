@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Does NOT show physical puncture surgery is impossible — Cycl
 Scope: The statement survives arbitrary intermediate code deformation INCLUDING a genuine reversible puncture, because it uses only the declared input and terminal spaces.
 Escape conditions (negative claims): Escape conditions stated exactly: a persistent puncture, enlarged terminal gauge sink, reset bath, promised plus-sector input, or product encoder each CHANGES the terminal/domain contract and remains live. Broad negative gate FAIL / DO NOT SHIP; the narrow blank-terminal isometry lemma is eligible only after the N1-N8 audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Shipped scoped no-go: blank-terminal puncture isometry - 24 proper-frame loops installed collision-free with NN operations only; does NOT show physical puncture surgery is impossible (Cycle 550 constructs [one]); escapes stated exactly (a pers~[istent...]).
 
@@ -32,7 +34,8 @@ Shipped scoped no-go: blank-terminal puncture isometry - 24 proper-frame loops i
 - Source commit: `0d24afde2f52cac0457ede57e26db65e9d1ace55`
 - git blob: `49709e9591e8feb36045c964a65b4a7438c58021`
 - sha256: `9624d032fcfac94dbe961d5f40bbde18e508e66328d63a4c6fd117f18fb5a2d5`
-- Lines: 469; runners named: scripts/physical_reversible_puncture_branch_retirement_cycle550_2026_07_21.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3007_PHYSICAL_REVERSIBLE_PUNCTURE_BRANCH_RETIREMENT_CYCLE550_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/3007_PHYSICAL_REVERSIBLE_PUNCTURE_BRANCH_RETIREMENT_CYCLE550_NOTE_2026-07-21.md)
+- Lines: 469; runners named: historic runner (unpinned, not in this packet): `scripts/physical_reversible_puncture_branch_retirement_cycle550_2026_07_21(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

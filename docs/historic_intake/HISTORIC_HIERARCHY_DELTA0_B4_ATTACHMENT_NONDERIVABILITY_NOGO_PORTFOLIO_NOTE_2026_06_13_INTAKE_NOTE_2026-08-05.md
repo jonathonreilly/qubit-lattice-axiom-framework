@@ -1,9 +1,11 @@
 # Historic intake: Hierarchy DELTA0 B4 Attachment-NON-DERIVABILITY No-Go PORTFOLIO (Capstone)
 
+Explicit subject: No examined family derives the per-decoupling factor alpha_s = 1/(4 pi u_0^2) = 0.1033038 multiplicatively at u_0-degree -2, for two exact structural reasons: the 4 pi is born as an ADDITIVE degree-0 trace normalization while the eigenvalue product |lambda_omega| = u_0 sqrt(3 + ... (The bare code `B4` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: The conversion is necessarily an admission - the D=4 dimension
 Scope: Bounded over the examined classes {exchange, vertex-enhancement, free-energy/ln-Z, zeta-det, heat-kernel, holonomy, det-ratio} plus five readout maps; every leg object is consumed by citation, not re-derived.
 Escape conditions (negative claims): The escape is explicitly identified as an admission rather than a mechanism: deriving the readout coefficient that lands +Delta_S = ln(4 pi) + 2 ln(u_0) = 2.270081 per decoupling. Any unexamined analytic class also escapes the scope by construction.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 DELTA0 B4 CAPSTONE: no examined family derives alpha_s = 1/(4 pi u_0^2) multiplicatively at degree -2 — the conversion is necessarily an ADMISSION; feeds the live hierarchy campaign directly.
 
@@ -32,7 +36,8 @@ DELTA0 B4 CAPSTONE: no examined family derives alpha_s = 1/(4 pi u_0^2) multipli
 - Source commit: `4478e49cfda2c7ee2e2f5017dfe0a379864d2285`
 - git blob: `c2e22c7d6a6eba5efd1ae9bcef7ed6c3cb00c22f`
 - sha256: `077d1005836d7bfd6d06bb980b9735dfc6b183c8d29af85487b0c3c9293a5cb7`
-- Lines: 326; runners named: scripts/frontier_hierarchy_delta0_b4_attachment_nonderivability_portfolio_2026_06_13.py, scripts/frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11.py, scripts/frontier_hierarchy_delta0_b4_bare_class_magnitude_ceiling_theorem_2026_06_13.py, scripts/frontier_hierarchy_delta0_b4_njl_rpa_normalization_probe_2026_06_13.py, scripts/frontier_hierarchy_delta0_b4_free_energy_lnz_readout_probe_2026_06_13.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/681_HIERARCHY_DELTA0_B4_ATTACHMENT_NONDERIVABILITY_NOGO_PORTFOLIO_NOTE_2026-06-13.md](../../archive_unlanded/historic_intake_originals/branch02/681_HIERARCHY_DELTA0_B4_ATTACHMENT_NONDERIVABILITY_NOGO_PORTFOLIO_NOTE_2026-06-13.md)
+- Lines: 326; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_attachment_nonderivability_portfolio_2026_06_13(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_bare_class_magnitude_ceiling_theorem_2026_06_13(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_njl_rpa_normalization_probe_2026_06_13(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_free_energy_lnz_readout_probe_2026_06_13(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Repeatedly disclaims its own label: the bounded_theorem is a source-side claim-b
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

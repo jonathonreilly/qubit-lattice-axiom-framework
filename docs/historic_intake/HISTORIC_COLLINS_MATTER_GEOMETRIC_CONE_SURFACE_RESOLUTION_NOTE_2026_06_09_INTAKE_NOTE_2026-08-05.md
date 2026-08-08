@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem_plus_structural_no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Collins reduces to a single mild well-motivated admission, and
 Scope: Runner SCORECARD PASS=18 FAIL=0; three distinct residual freedoms are itemized.
 Escape conditions (negative claims): The structural no-go is against the anisotropic-regulator route; the residual premise is decomposed into three distinct freedoms, each a separate escape.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Collins anisotropy resolved: the framework's own canonical staggered action selects the protected isotropic class, reducing the external critique to one mild named admission — structural no-go on the anisotropic-regulator route.
 
@@ -32,7 +34,8 @@ Collins anisotropy resolved: the framework's own canonical staggered action sele
 - Source commit: `7953c1d26c812782f68cf659f636522a25e8881b`
 - git blob: `8b44041123c6ba4d24050dd6508d507f4ed3501f`
 - sha256: `1ad5b6db90edfef23d644ee6e574d038e510807f08e732c85feb1de114b1a1ad`
-- Lines: 354; runners named: ../scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09.py, scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/245_COLLINS_MATTER_GEOMETRIC_CONE_SURFACE_RESOLUTION_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch01/245_COLLINS_MATTER_GEOMETRIC_CONE_SURFACE_RESOLUTION_NOTE_2026-06-09.md)
+- Lines: 354; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem_plus_structural_no_go
 intake_directive: owner_2026-08-05
 ```
 

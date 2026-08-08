@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The exact source foothold now covers a broad finite-rank class
 Scope: Three exact checks pass at machine precision; the bounded checks use shell-averaged fits with ~5.2% relative RMS error (a = 0.3465, b = 0.6312) at sampled exterior probe points.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Woodbury finite-rank residual theorem: any PSD multi-site support reduces to one renormalized harmonic source — the strong-field source model's general form.
 
@@ -32,7 +34,8 @@ Woodbury finite-rank residual theorem: any PSD multi-site support reduces to one
 - Source commit: `248edc338c216213ba0087e60b2693a968e0f718`
 - git blob: `be69fddfcad4be334e2a7cd36427ca4df8505f9f`
 - sha256: `33edd4ec072404e465ef0c5ea4a9d4ada93cb4d66b74090770645b3e39402619`
-- Lines: 170; runners named: scripts/frontier_finite_rank_gravity_residual.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/463_FINITE_RANK_GRAVITY_RESIDUAL_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/463_FINITE_RANK_GRAVITY_RESIDUAL_NOTE.md)
+- Lines: 170; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_finite_rank_gravity_residual(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ The direct common-source candidate is NOT a vacuum Einstein solution; only its m
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

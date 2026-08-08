@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The exponent-16 objection is closed and the dimensionless stat
 Scope: Exact minimal-block chain on the accepted same-surface plaquette stack; the absolute GeV row is a bounded companion conditioned on the Planck-lattice reading.
 Escape conditions (negative claims): The absolute-scale obstruction is a units-rescaling argument (a -> lambda a leaves 16, (7/8)^(1/4), u_0, alpha_LM and a v unchanged while v_phys -> v_phys/lambda); it is escaped only by a new theorem deriving the lattice spacing anchor a^{-1} = M_Pl, which MINIMAL_AXIOMS_2026-04-11 does not supply.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The hierarchy lane's constitution: exact no-import DIMENSIONLESS theorem with the absolute-scale obstruction named as units-rescaling; instructs repo+paper to stop presenting absolute v as derived.
 
@@ -32,7 +34,8 @@ The hierarchy lane's constitution: exact no-import DIMENSIONLESS theorem with th
 - Source commit: `e887735627dbc6826ea42491f824207a0302ce16`
 - git blob: `503b9c708c7548f48a9dbc30679c59a0f8c75a58`
 - sha256: `0d97234a415210994ac9040e9aea3409683bb235dce3726853cb6790be4d0039`
-- Lines: 197; runners named: scripts/frontier_hierarchy_no_import_status.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/699_HIERARCHY_NO_IMPORT_STATUS_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch03/699_HIERARCHY_NO_IMPORT_STATUS_NOTE_2026-04-22.md)
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_no_import_status(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ Instructs that the repo and paper stop presenting the absolute v row as a retain
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

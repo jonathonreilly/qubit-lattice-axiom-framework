@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Promotion blocked.
 Scope: The NV/diamond lane.
 Escape conditions (negative claims): Only after a physical transfer-coefficient theorem or a calibrated signal-budget runner exists.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 NV/diamond lane consolidated: promotion of the card/protocol to a closed lab prediction is blocked while the source-to-NV coupling map and calibrated amplitude/noise budget remain underived, with the exact escape (a physical transfer-coefficient theorem) named. VERIFICATION-INTEGRITY FLAG: a print-only 'probe' had been serving as row evidence. Lane registrations and duplicate no-gos attached.
 
@@ -32,6 +34,7 @@ NV/diamond lane consolidated: promotion of the card/protocol to a closed lab pre
 - Source commit: `8c80e6604a05327838e2648beb792ddb34005123`
 - git blob: `0bd96077c8037b0750587f58fa21eeab6337f31f`
 - sha256: `01389d6dbef42c4053dd9f5300d824269fed34b975973c70e4311f5f338e7504`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10241_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci01/10241_NO_GO_LEDGER.md)
 - Lines: 7; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -55,6 +58,7 @@ A print-only 'probe' had been serving as row evidence before being superseded - 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

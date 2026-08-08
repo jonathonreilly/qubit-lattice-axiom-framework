@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-10; references an 'Axiom 6 (turn-cost)' for the 2+1D angular kernel
 
@@ -22,7 +22,9 @@ Original verdict: Chiral architectures pass the closure card where the non-unita
 Scope: Comprehensive comparison scorecard across the entire repo (pre-session plus session), with per-cell footnotes recording restricted windows (k-window only, converged regime, global medium rather than localized mass).
 Escape conditions (negative claims): Named failures carry their diagnosis and escape: the EP violation is because theta parameterizes both mass and gravity coupling (56% variation); the distance exponent -0.6 is explained by beam spreading d^0.6 softening 1/d rather than being Newtonian; SU(2) gauge fails because it needs additional color degrees of freedom; the 2D gravity sign is resolved as a non-unitarity artifact (TOWARD with polar U); and 3+1D sign windows exist within a converged basin but are not universal.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Repo-wide architecture x metric scorecard with a universal negative: EP violation FAILS on every architecture (theta-parametrization diagnosis + escape) — era-terminal comparative record.
 
@@ -32,6 +34,7 @@ Repo-wide architecture x metric scorecard with a universal negative: EP violatio
 - Source commit: `814809c123b30bfd3f919ef071ff3ce704122b69`
 - git blob: `21392cfe34ea741036233678b6f45b0198e88526`
 - sha256: `b533e861ea6f6fe622738e773e7f4be00d2eb427f83b58556557daedd86c9c1e`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3608_FULL_TEST_MATRIX_2026-04-10.md](../../archive_unlanded/historic_intake_originals/recovery/3608_FULL_TEST_MATRIX_2026-04-10.md)
 - Lines: 211; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records equivalence-principle violation as FAIL on every architecture and lists 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

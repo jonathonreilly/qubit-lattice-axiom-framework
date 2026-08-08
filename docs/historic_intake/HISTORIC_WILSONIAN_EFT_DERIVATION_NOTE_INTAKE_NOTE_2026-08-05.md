@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Status CLOSED — the irreducible residual is claimed resolved
 Scope: Feshbach projection as a QM identity plus operator classification under the derived gauge symmetry and emergent Lorentz invariance.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The EFT-vs-continuum-limit distinction: no a -> 0 limit under A5 but a low-energy EFT exists — pulled WITH its self-declared CLOSED flag for audit.
 
@@ -32,7 +34,8 @@ The EFT-vs-continuum-limit distinction: no a -> 0 limit under A5 but a low-energ
 - Source commit: `8b47a77b3a546b7a2041dd131d025eedbc599897`
 - git blob: `d7615ae57dd6fe69627168f949e07dffa64606a3`
 - sha256: `68ca65455f8f1bb6c739e82b7e6fb0f7de5ceeff7a6ca749fc3edbc784740be2`
-- Lines: 213; runners named: scripts/frontier_wilsonian_eft.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2118_WILSONIAN_EFT_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2118_WILSONIAN_EFT_DERIVATION_NOTE.md)
+- Lines: 213; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilsonian_eft(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-declares 'CLOSED' on a lane the rest of the corpus keeps open, and the Lore
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

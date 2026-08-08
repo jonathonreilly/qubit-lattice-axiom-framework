@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-13; assumes axioms A1-A5 (Cl(3) on Z^3 with SU(3)xSU(2)xU(1) staggered fermions; a = l_Pl the unique scale)
 
@@ -22,7 +22,9 @@ Original verdict: The DM lane is BOUNDED, not closed, and this is not a zero-par
 Scope: Step count is 4 EXACT, 7 DERIVED, 2 BOUNDED; two irreducible bounded inputs (g_bare = 1 from Cl(3) normalization, and spatial flatness k = 0) plus one observational input (eta = 6.12e-10, entering Omega_b only); the lattice spacing a = l_Pl is the unique physical scale with no continuum limit taken.
 Escape conditions (negative claims): The bounded steps name their escape conditions: g_bare = 1 is honestly bounded and the objection is conceded — the Cl(3) normalization makes g = 1 canonical but whether that is a constraint or a convention is foundational and it is NOT derived from a dynamical principle. The Stosszahlansatz objection is answered by two independent proofs on Z^3_L for the FREE massive field (spectral gap + Combes-Thomas + Wick, error < 1e-22000; direct matrix inversion, error < 1e-45000) with the caveat that the interacting-theory extension requires spectral gap persistence. k = 0 is observationally confirmed but not derived from the lattice, and is tied theoretically to S^3 compactification.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 R = 5.483 vs 5.469 (0.25%) via the 13-step chain, with the honest boundary: NOT zero-parameter (g_bare bounded import) — the DM flagship claim surface, priced by its own text.
 
@@ -32,7 +34,8 @@ R = 5.483 vs 5.469 (0.25%) via the 13-step chain, with the honest boundary: NOT 
 - Source commit: `5205806e8a36f67603cf931a82941ef37c9fd739`
 - git blob: `584c0059aa91ccc22a954e2195ff52906f308287`
 - sha256: `fc122e8199ad0d276ac2788f49c2a11f252e89528f4b6decd7f4e2963cf96b45`
-- Lines: 412; runners named: scripts/frontier_dm_clean_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3594_DM_CLEAN_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3594_DM_CLEAN_DERIVATION_NOTE.md)
+- Lines: 412; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -56,6 +59,7 @@ Explicit NOT-claimed list, including that the DM lane is not closed and g_bare =
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

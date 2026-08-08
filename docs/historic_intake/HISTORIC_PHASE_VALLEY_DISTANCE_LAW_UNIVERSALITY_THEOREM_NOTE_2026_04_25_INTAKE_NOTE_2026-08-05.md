@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Closes the reviewer-vulnerability question raised by the 2026-
 Scope: Random or aperiodic sharp-prefactor claims remain support/open unless their separate ergodic random-conductance hypotheses are proved; the longest note in the stratum at 1795 lines.
 Escape conditions (negative claims): The named falsifier is a measured anisotropy (w_max - w_min)/w_avg >~ 1e-5.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Distance-law universality theorem: exponent universality on the QI-Z^d weak-field class with sharp constants and an explicit measured-anisotropy falsifier.
 
@@ -32,7 +34,8 @@ Distance-law universality theorem: exponent universality on the QI-Z^d weak-fiel
 - Source commit: `c6aacb371a83eeaafc16a26019d9082b6a088b8f`
 - git blob: `36173d2922941715f129f58becfdf3d0b8f8a3d7`
 - sha256: `79df460cbfca8f696513b1bf7476c15748b538f92b6c9c6df11284f2c1b9aa2c`
-- Lines: 1795; runners named: scripts/frontier_phase_valley_distance_law_universality.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1330_PHASE_VALLEY_DISTANCE_LAW_UNIVERSALITY_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch04/1330_PHASE_VALLEY_DISTANCE_LAW_UNIVERSALITY_THEOREM_NOTE_2026-04-25.md)
+- Lines: 1795; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_phase_valley_distance_law_universality(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

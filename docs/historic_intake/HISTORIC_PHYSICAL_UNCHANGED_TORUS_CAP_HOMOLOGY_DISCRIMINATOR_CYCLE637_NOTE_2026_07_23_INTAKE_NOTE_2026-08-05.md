@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Sharpens Cycle 537's embedding wall to a precise trichotomy: a
 Scope: Answers one deliberately narrow question left by Cycle 537 — whether its three fill disks can be static sums of bounded plaquettes in the UNCHANGED cellulation. The answer is no FOR THAT MECHANISM.
 Escape conditions (negative claims): Broad-negative gate FAIL / DO NOT SHIP; FAIL / DO NOT CLAIM for a general local-compiler impossibility or a lower bound. This is not a general physical-M2 compiler no-go.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The cleanest genuine no-go in the sweep: EXACT HOMOLOGY EXCLUSION - for L = 3,5,6,7 the cubic chain complex over F2 gives dim H1(T3;F2) = 3, sharpening Cycle 537's embedding wall to a precise trichotomy for any physical [Wilson embedding]; broad-negative gate correctly FAILED.
 
@@ -32,6 +34,7 @@ The cleanest genuine no-go in the sweep: EXACT HOMOLOGY EXCLUSION - for L = 3,5,
 - Source commit: `d4c75523f587e35f59658de66a41cae40a3bfbaf`
 - git blob: `e33f159841947825558d1d15dc21dda67337b663`
 - sha256: `15e01b73d71631646ee3387443575a9c4921eca1e1104c83fda11d74b8b76ff0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3067_PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/3067_PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md)
 - Lines: 161; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

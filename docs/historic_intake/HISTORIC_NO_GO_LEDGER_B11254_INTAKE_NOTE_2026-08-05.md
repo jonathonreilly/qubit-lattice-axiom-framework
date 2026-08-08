@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: archived table stale; exact closure not claimed
 Scope: capture packet vs archived table
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of archived numbers: the old force/gap/gain capture table is STALE - the packet uses only live-runner output, and the live cycle/holdout gaps improve materially but do NOT vanish; exact closure is explicitly not claimed. Registration companions attached.
 
@@ -32,6 +34,7 @@ Correction of archived numbers: the old force/gap/gain capture table is STALE - 
 - Source commit: `618107dfaa596f0cca0c22084dcb1336e3deeede`
 - git blob: `549659ab1d60783099085a58ab2c095e090bcdea`
 - sha256: `786ba135f73c419f077327d47dfa5ff479bf3a5f471d146253ea9794304e7d0c`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11254_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci05/11254_NO_GO_LEDGER.md)
 - Lines: 9; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

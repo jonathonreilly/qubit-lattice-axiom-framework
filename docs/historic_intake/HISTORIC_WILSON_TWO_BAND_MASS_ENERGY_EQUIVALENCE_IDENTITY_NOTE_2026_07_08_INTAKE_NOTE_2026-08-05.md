@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The ED route to the two-band identity test is closed on both k
 Scope: d = 1 gauged Wilson comparator at ED-reachable sizes (N <= 10 Wilson, N <= 16 staggered) with these operator tags; the identity itself is untested, not refuted.
 Escape conditions (negative claims): Three named escapes: (a) tensor-network/DMRG at N ~ 40-100, called THE route; (b) fit-free identity observables (form-factor/boost matrix elements) needing only P = 0 states; (c) smeared variational tag bases to push the mixing scale down at fixed volume.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Two-kernel two-band terminal: the wall is exponential ED cost, not physics — three named escapes (DMRG etc.); own steelman rejected on the record.
 
@@ -32,7 +34,8 @@ Two-kernel two-band terminal: the wall is exponential ED cost, not physics — t
 - Source commit: `547c3c4e477173636b1469798967ed0500f13aac`
 - git blob: `881b59d547ebda83073e77e2f3e41b0e61696fbd`
 - sha256: `8b33916e9223539bfbcc4c3622fe58b63ec2b8211191da3c01c39173b6b1abbf`
-- Lines: 186; runners named: scripts/wilson_two_band_identity_own_frame_2026_07_08.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2128_WILSON_TWO_BAND_MASS_ENERGY_EQUIVALENCE_IDENTITY_NOTE_2026-07-08.md](../../archive_unlanded/historic_intake_originals/branch07/2128_WILSON_TWO_BAND_MASS_ENERGY_EQUIVALENCE_IDENTITY_NOTE_2026-07-08.md)
+- Lines: 186; runners named: historic runner (unpinned, not in this packet): `scripts/wilson_two_band_identity_own_frame_2026_07_08(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records and rejects its own steelman (gating the four valid N=8 points would 'la
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

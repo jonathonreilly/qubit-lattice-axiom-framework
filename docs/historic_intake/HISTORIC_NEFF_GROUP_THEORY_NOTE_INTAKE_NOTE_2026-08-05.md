@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: PARTIALLY TAUTOLOGICAL — the exponent equality is a rewritin
 Scope: Analysis of an existing identity, not a new derivation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 N_eff decomposition self-identifying a load-bearing tautology — deflation of a landed-adjacent claim, honest split of structural vs grown inputs.
 
@@ -32,6 +34,7 @@ N_eff decomposition self-identifying a load-bearing tautology — deflation of a
 - Source commit: `eadb4598bdc30fcb99d63c50db56efcc1f362ced`
 - git blob: `b8aeb34bcb9dff973047e8e9694624ee05a34094`
 - sha256: `2806b030530884a745d4723cff9d52d668f6a7d03e7b2a8b1dea1a71c0508dd4`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1178_NEFF_GROUP_THEORY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1178_NEFF_GROUP_THEORY_NOTE.md)
 - Lines: 300; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Self-identifies a load-bearing step as a tautology and flags one group-theory co
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

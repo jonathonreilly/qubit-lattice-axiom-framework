@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: One specific part of the quotient-surface gas is promoted from
 Scope: Simply-sheeted disk surfaces only; the character-labeled activity law for non-disk and higher-sheet sectors remains open.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact identification: the one-plaquette anchor IS the normalized fundamental character coefficient — a formal placeholder becomes an exact activity value.
 
@@ -32,7 +34,8 @@ Exact identification: the one-plaquette anchor IS the normalized fundamental cha
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `2089be6bc48a91bd5c9e917b020eb3811a39805f`
 - sha256: `676d3fcbdf1c98d7b8a86fe021187b4000a3e9dda018cbe1995e71c138d86a48`
-- Lines: 235; runners named: scripts/frontier_fundamental_disk_activity_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/523_FUNDAMENTAL_DISK_ACTIVITY_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/523_FUNDAMENTAL_DISK_ACTIVITY_THEOREM_NOTE.md)
+- Lines: 235; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_fundamental_disk_activity_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

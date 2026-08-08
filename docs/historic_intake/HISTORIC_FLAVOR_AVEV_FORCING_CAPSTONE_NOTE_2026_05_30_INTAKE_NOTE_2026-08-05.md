@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_capstone
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The charged-lepton Koide value reduces cleanly to the one chir
 Scope: Lepton-specific; the cross-sector (quark) extrapolation of move 4 was caught and retracted in move 5.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 FLAVOR capstone: Q reduces cleanly to the one chiral input, with a mid-campaign cross-sector overreach retracted on record.
 
@@ -32,7 +34,8 @@ FLAVOR capstone: Q reduces cleanly to the one chiral input, with a mid-campaign 
 - Source commit: `705d2bc0f42df5f14d8b55fcf2549ae3d623f870`
 - git blob: `855e7b1c02706f545b5ffc24e5c2eb5460ee40ac`
 - sha256: `a3fe9630cc0d0ee76bb6e3f140261ed00616b48079559dcb10fe2a8a89f2057a`
-- Lines: 59; runners named: scripts/flavor_avev_forcing_capstone_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/474_FLAVOR_AVEV_FORCING_CAPSTONE_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/474_FLAVOR_AVEV_FORCING_CAPSTONE_NOTE_2026-05-30.md)
+- Lines: 59; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_avev_forcing_capstone_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that a cross-sector overreach was made and retracted mid-campaign.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_capstone
 intake_directive: owner_2026-08-05
 ```
 

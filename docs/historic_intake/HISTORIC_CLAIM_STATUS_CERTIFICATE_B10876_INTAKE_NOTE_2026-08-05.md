@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_closing_derivation
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: TERMINAL for the cycle-10 obstruction inventory; refinement co
 Scope: 'Continuum limit' is interpreted as PL REFINEMENT (subdivision), not a smooth-manifold limit; a genuine continuum limit would need a sequence of refinements plus a convergence theorem, documented as a residual stretch target rather than a new obstruction.
 Escape conditions (negative claims): The genuine smooth-continuum limit is the named residual stretch target.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the cycle-10 GR-atlas obstruction inventory: three explicit refinements (edge-midpoint, triangle-barycenter, combined) preserve the cocycle structure on all new edges - refinement compatibility holds. FLAG carried prominently: the parent obstruction asked for a CONTINUUM LIMIT and this closure reinterprets it as PL refinement - audit must judge whether the reinterpretation discharges the obstruction. Atlas companions attached.
 
@@ -32,7 +34,8 @@ TERMINAL of the cycle-10 GR-atlas obstruction inventory: three explicit refineme
 - Source commit: `96d3a9accff6b1818ae62be4c93276890316c6d8`
 - git blob: `72491d121de313a41e876987d3b281f9cc7daaa0`
 - sha256: `2238fc712c73d367e107078d32f3529ebae5f142882a145e6c194294bccd3dad`
-- Lines: 296; runners named: scripts/frontier_pl_s3_atlas_refinement_compatibility.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10876_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10876_CLAIM_STATUS_CERTIFICATE.md)
+- Lines: 296; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pl_s3_atlas_refinement_compatibility(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ the parent obstruction asked for a CONTINUUM LIMIT and the closure reinterprets 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_closing_derivation
 intake_directive: owner_2026-08-05
 ```
 

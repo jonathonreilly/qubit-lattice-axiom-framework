@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The CH route fails the closure bar — a nontrivial CH operato
 Scope: Support-level consistency only; the 16/16 PASS runner is explicitly a numerical consistency harness, not a closure theorem; an alternate ABSS-equivariant-descent route is attempted separately and still leaves the dimensionless-to-radian identification open.
 Escape conditions (negative claims): The stated escape from the trivial-operator obstruction is a Z_3-breaking or Z_3-equivariant bulk Y-background with different per-site Y-flux; the alternate route needs either an independent axiom-native characterization of m_* (the open I3 lane) or different structure, since ANOMALY_FORCES_TIME's natural-time convention alone cannot fix 2/9 rad at m_*.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The CH-route retraction record: v1 closure refuted by hostile review, all three P0 critiques conceded — pattern documentation the lane needs.
 
@@ -32,7 +34,8 @@ The CH-route retraction record: v1 closure refuted by hostile review, all three 
 - Source commit: `0009ff9fd09141790e40f399a29ced192123deea`
 - git blob: `75e2ebf25eb1a7c4b99219f61c8ae645f88b0425`
 - sha256: `d38f55a64e9746e8aa19990fb008462fca967aeafc50726fb1189e905572e04e`
-- Lines: 459; runners named: scripts/frontier_koide_brannen_ch_three_gap_closure.py, scripts/frontier_koide_brannen_absss_equivariant_descent.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/761_KOIDE_BRANNEN_CH_THREE_GAP_CLOSURE_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch03/761_KOIDE_BRANNEN_CH_THREE_GAP_CLOSURE_NOTE_2026-04-22.md)
+- Lines: 459; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_ch_three_gap_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_absss_equivariant_descent(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents a retracted closure claim and preserves three reviewer P0 critiques ve
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

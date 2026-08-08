@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: GENUINE-PREDICTION-MODULO-NAMED-IMPORTS: not a fit of alpha_LM
 Scope: Four stress fronts plus a ledger census on the top-mass synthesis the owner asked to be broken.
 Escape conditions (negative claims): Resolves the apparent contradiction between alpha_LM being derived as algebra and open as transport, while showing m_t does not escape the magnitude gate.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The hostile m_t probe: the flagship -1.84% agreement is overstated two ways — GENUINE-PREDICTION-MODULO-NAMED-IMPORTS; the honest form of the headline.
 
@@ -32,6 +34,7 @@ The hostile m_t probe: the flagship -1.84% agreement is overstated two ways — 
 - Source commit: `dcd648e6c5e714eb5fbaa30d465e12f6129a67c0`
 - git blob: `b7ba33c416d894f68a0d921da48df973af9553f8`
 - sha256: `b9f31a8658dfbc1f48d253c1635de5df1269d8efdacdaf2a10db5bd95f1090e2`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1906_SCALE_AXIS_TOPMASS_HOSTILE_PROBE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/1906_SCALE_AXIS_TOPMASS_HOSTILE_PROBE_2026-06-05.md)
 - Lines: 189; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ Shows the flagship -1.84% agreement is scheme-naive and extremely sensitive to a
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

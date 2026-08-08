@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Generation physicality is not closed; the conditionality has m
 Scope: Paper-safe wording is fixed as 'exact 1+2 split; bounded 1+1+1 hierarchy model; generation physicality still open'.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The five-layer epistemic stratification — the paper-safe surface that superseded the competing closure claims.
 
@@ -32,7 +34,8 @@ The five-layer epistemic stratification — the paper-safe surface that supersed
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `fdea6f25e9a8d8380032f936eebd1b0fb155633e`
 - sha256: `a931e649365a03e1ff6152d27784389747647d5bb396025ee34a673c71112b65`
-- Lines: 266; runners named: scripts/frontier_generation_physicality_wildcard.py, scripts/frontier_generation_synthesis.py, scripts/frontier_generation_gap_closure.py, scripts/frontier_mass_hierarchy_synthesis.py, scripts/frontier_generation_paper.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/626_GENERATION_PHYSICALITY_PAPER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/626_GENERATION_PHYSICALITY_PAPER_NOTE.md)
+- Lines: 266; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_physicality_wildcard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_gap_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_paper(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ Points out a self-undercutting tension: the Z_3 superselection argument is exact
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

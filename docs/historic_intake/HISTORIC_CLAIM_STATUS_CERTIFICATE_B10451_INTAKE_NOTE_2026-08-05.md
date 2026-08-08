@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: PASS for the narrow route-pruning claim; the packet deliberate
 Scope: The formal finite F1-F3 tracial/product/modular selector route only; explicitly not a global statement about all selectors, all physical flavor sectors, or all possible Q = 2/3 routes.
 Escape conditions (negative claims): Non-tracial reference states, chiral selectors, finite-gap dynamics, or an explicit block-measure rule; the runner already exhibits an equal-block state, but it is non-tracial and therefore outside the pruned route.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Another independent r=1 route: the formal F1-F3 tracial/product/modular selector route lands on dimension weighting (1,2), giving r=1 and Q=1, NOT equal-block r=1/2; escapes named (non-tracial reference states, chiral selectors). Member of the r=1/2 adjudication set.
 
@@ -32,6 +34,7 @@ Another independent r=1 route: the formal F1-F3 tracial/product/modular selector
 - Source commit: `68f40ad941c8d94c089234d6775be49455fd5975`
 - git blob: `d977132fbc242867b1a544f738593645617a969f`
 - sha256: `14ef561a6d93c684b5d8ac7671d270600b3cf7ab114bed911805ac1c13d8f974`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10451_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10451_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 87; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Another independent r=1 route: the formal F1-F3 tracial/product/modular selector
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Another independent r=1 route: the formal F1-F3 tracial/product/modular selector route lands on dimension weighting (1,2), giving r=1 and Q=1, NOT equal-block r=1/2; escapes named (non-tracial reference states, chiral selectors). Member of the r=1/2 adjudication set.
+- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Another independent r=1 route: the formal F1-F3 tracial/product/modular selector route lands on dimension weighting (1,2), giving r=1 and Q=1, NOT equal-block r=1/2; escapes named (non-tracial reference states, chiral selectors). Member of the r=1/2 adjudication set.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Directly relevant to the Koide/Q = 2/3 lane: another independent family of measu
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

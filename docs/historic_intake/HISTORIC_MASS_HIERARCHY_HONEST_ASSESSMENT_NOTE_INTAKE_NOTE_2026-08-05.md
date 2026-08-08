@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The strongest honest phrasing is that the zero-parameter predi
 Scope: BOUNDED — the mechanism is structural and zero-parameter but the numerical output depends on a U(1) proxy for SU(3) and a strong-coupling model that is not first-principles.
 Escape conditions (negative claims): Upgrading to closed requires a first-principles SU(3) calculation replacing the strong-coupling model and U(1) proxy.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The mass-hierarchy honest synthesis: exponent reproduced to 16% (0.8 decades short), mechanism real, band ~2 decades — with instructions against overclaiming.
 
@@ -32,7 +34,8 @@ The mass-hierarchy honest synthesis: exponent reproduced to 16% (0.8 decades sho
 - Source commit: `123915eb68febdd5783f0d751876a0b40a8dc7eb`
 - git blob: `297c58898604c9a1f0e679d418990826e5f2f0c5`
 - sha256: `a229b1dde03329f9148de80d75caa096f4aaa5d5a3ec5c7ce5d5d14c446fabcd`
-- Lines: 288; runners named: scripts/frontier_mass_hierarchy_synthesis.py, scripts/frontier_mass_hierarchy_su3.py, scripts/frontier_mass_hierarchy_rg.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1132_MASS_HIERARCHY_HONEST_ASSESSMENT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1132_MASS_HIERARCHY_HONEST_ASSESSMENT_NOTE.md)
+- Lines: 288; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_su3(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_rg(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ Warns the band is ~2 decades wide and explicitly instructs not to claim precisio
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

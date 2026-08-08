@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_informative_partial
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No third simple-value retained identity is manifest - det(H) =
 Scope: Symbolic derivation attempt plus a scan of all natural scalars at the closure point.
 Escape conditions (negative claims): Iter 8 directions named: non-scalar operator-valued cuts, A-BCC axiomatic derivation, variational on the 1-D curve, or graceful acceptance of the 2-retained + 1-observational structure.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The informative failure: no third simple identity is manifest and Tr(H) misses 2/3 by 6.4e-3 at the iter-6 point — DIRECTLY contradicting the later iter-10 adoption.
 
@@ -32,7 +34,8 @@ The informative failure: no third simple identity is manifest and Tr(H) misses 2
 - Source commit: `aa15faa0271373e2cd0ff01343443184fd74599d`
 - git blob: `54c8e8c089f4c460a9c0cab576589dbe6506cef5`
 - sha256: `b208a688c12a8786c7efc816aaa85ffbb0080d314cf5981952c3f29818e3e1db`
-- Lines: 130; runners named: scripts/frontier_pmns_selector_iter7_symbolic_det_H_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1590_PMNS_SELECTOR_ITER7_SYMBOLIC_DET_H_DERIVATION_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1590_PMNS_SELECTOR_ITER7_SYMBOLIC_DET_H_DERIVATION_NOTE_2026-04-21.md)
+- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter7_symbolic_det_H_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records that at the iter-6 closure point Tr(H) misses 2/3 by 6.4e-3, yet iter 10
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_informative_partial
 intake_directive: owner_2026-08-05
 ```
 

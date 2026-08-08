@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The 0.31 alarm is retracted and the framework is NOT falsified
 Scope: Validation of a prototype that was never shipped as a claim; sets no audit status and does not change #3123/#3134.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE FALSE-ALARM RETRACTION: a would-be framework falsification (delta v/v ~ +0.31 vs LV bounds) diagnosed as four compounding errors — integrity exemplar.
 
@@ -32,7 +34,8 @@ THE FALSE-ALARM RETRACTION: a would-be framework falsification (delta v/v ~ +0.3
 - Source commit: `338e6d544368e62b446425a6823ee7a7f3ce002f`
 - git blob: `384b7e2c5a82533354a86e173b55c418216e9b15`
 - sha256: `0a03febce9c8b788118a14b223a9947588153b9d6042cf242dc981a06e363d14`
-- Lines: 147; runners named: scripts/frontier_velocity_anisotropy_doubler_artifact_validation_2026_06_07.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2099_VELOCITY_ANISOTROPY_DOUBLER_ARTIFACT_VALIDATION_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch07/2099_VELOCITY_ANISOTROPY_DOUBLER_ARTIFACT_VALIDATION_NOTE_2026-06-07.md)
+- Lines: 147; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_velocity_anisotropy_doubler_artifact_validation_2026_06_07(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicit false-alarm retraction of a would-be falsification; also rejects the op
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

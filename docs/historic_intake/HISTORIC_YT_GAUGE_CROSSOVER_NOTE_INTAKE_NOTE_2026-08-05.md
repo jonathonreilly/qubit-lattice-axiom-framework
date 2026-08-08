@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Gate BOUNDED, crossover NOT resolved — this is not a perturb
 Scope: The strong-to-perturbative gauge crossover named as the remaining blocker by the review.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE HONEST TERMINAL: the gauge crossover (4.4x) is NOT resolved and the quoted successful m_t prediction still uses observed alpha_s(M_Z) — directly contradicting the CLOSED declarations.
 
@@ -32,7 +34,8 @@ THE HONEST TERMINAL: the gauge crossover (4.4x) is NOT resolved and the quoted s
 - Source commit: `a404dcb95c81993a61bb0c4e1efde3769764f477`
 - git blob: `1abcc2abf8910d31a2df90fa18b247b91ed8d847`
 - sha256: `3649f1825a215674714312d6a342eccf970a856b332981b265f99e8c58157482`
-- Lines: 125; runners named: scripts/frontier_yt_gauge_crossover.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2312_YT_GAUGE_CROSSOVER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2312_YT_GAUGE_CROSSOVER_NOTE.md)
+- Lines: 125; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_gauge_crossover(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ States that the quoted successful m_t prediction still relies on the observed al
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

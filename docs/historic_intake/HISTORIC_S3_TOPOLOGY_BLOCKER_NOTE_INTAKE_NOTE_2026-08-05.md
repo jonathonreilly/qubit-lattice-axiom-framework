@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The honest claim is S^2 boundaries plus ball-like regions; S^3
 Scope: scripts/frontier_s3_topology_derivation.py and the claims built on it.
 Escape conditions (negative claims): Escape is explicit: supply a derivation of compactness and of the boundary-identification step from the graph axioms.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The BLOCKER: graph-growth axioms give S^2 boundaries + ball-like regions, NOT closed S^3 — blocks the bounded->structural upgrade published the same day; escape explicit.
 
@@ -32,7 +34,8 @@ The BLOCKER: graph-growth axioms give S^2 boundaries + ball-like regions, NOT cl
 - Source commit: `9ebe6f899aed422b18838a4b4da84810d826d558`
 - git blob: `7f6f13ac7a4d2222e691c489bf201e863c8daed8`
 - sha256: `816f0acbc80cf159ad18481eb2f81cf2926dfad5af4b929217cdbb0d84352bae`
-- Lines: 39; runners named: scripts/frontier_s3_topology_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1894_S3_TOPOLOGY_BLOCKER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1894_S3_TOPOLOGY_BLOCKER_NOTE.md)
+- Lines: 39; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_topology_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Retracts, in effect, the status upgrade published in idx 1895 and instructs down
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

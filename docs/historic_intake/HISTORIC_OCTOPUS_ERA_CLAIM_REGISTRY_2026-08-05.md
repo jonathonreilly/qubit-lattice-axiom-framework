@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_registry
+Claim type: meta
 Stratum: octopus_era_commits
 Era: octopus_era — the pre-note era (2026-03-13..2026-04-16), which exists only in commits
 
@@ -14,7 +14,9 @@ The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The pre-note era (2026-03-13..29) exists only in commits; its 90-claim ledger (each claim with first-asserted sha and in-era fate) is the era's reconstructed claim surface. Intake as ONE commit-pinned registry note (audit_required), highlighting: the exact interference-onset boundary width_crit = min(slit_sep+2|y|, 2*slit_sep+2) (claim 41, the repo's earliest exact law); the regime architecture (40); the exact-law transfer failure 6/6 on first generalization (36/37); FIVE confirmed benchmark/runner bugs invalidating published numbers (claims 23/26/37/59 + pack_name seam) with shas; the retraction set (46/53/56); the overclaim corrections (68/69/85); the m_t direct-bridge contradiction + zero-import seeding finding (76); and the day-one naming lineage (Alien-Physics -> octopus -> event-network -> Cl(3)/Z^3). Per-commit rows (octopus_era.jsonl, 3179) stay as the registry's evidence base; no per-claim wrappers.
 
@@ -24,11 +26,12 @@ The pre-note era (2026-03-13..29) exists only in commits; its 90-claim ledger (e
 - Source commit: `n/a (triage-assembled registry; content pinned by hash below)`
 - git blob: `c1d9f060ed38ea94f7113f130309ae283da45b9d`
 - sha256: `ddcbc20617185a7922e063937a11a26cd87f3166eac5ba7b582bb2d31d364b25`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/octopus/octopus_era_claims.md](../../archive_unlanded/historic_intake_originals/octopus/octopus_era_claims.md)
 - Lines: 98; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
 
-- `triage_2026-08-05/extracted/octopus_era.jsonl` — the registry's evidence base: 3179 per-commit rows, one per distinct (date, subject) group; no per-claim wrappers were made.
+- [`triage_2026-08-05/extracted/octopus_era.jsonl`](../../archive_unlanded/historic_intake_originals/octopus/octopus_era.jsonl) — the registry's evidence base: 3179 per-commit rows, one per distinct (date, subject) group; no per-claim wrappers were made. Byte-exact copy archived at the linked path (sha256 `f7db80f6c3f5d334973ff57e73243fc70dea9b1b2023c74f946e966d145bbacf`).
 
 ## Flags carried
 
@@ -40,6 +43,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_registry
 intake_directive: owner_2026-08-05
 ```
 

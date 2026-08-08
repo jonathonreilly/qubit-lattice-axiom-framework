@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_write_up_synthesis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Corrects a framing error circulating in summaries: there is NO
 Scope: Write-up only; both halves are exact finite-dimensional linear algebra already verified by their own runners.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of record: NO retained entailment that operational locality collapses to local tomography — fixes a mis-framing circulating in summaries, with the strictly-weaker theorem packaged.
 
@@ -32,7 +34,8 @@ Correction of record: NO retained entailment that operational locality collapses
 - Source commit: `a19322cbff536924912eed61ad1f329200195d1d`
 - git blob: `085e8378af23f1c2af64a0ab930441d42e5725c2`
 - sha256: `c0d7a09f193f5cf6602ac4c763557f082ae9e873520caadb07a1290cf73ee0ea`
-- Lines: 129; runners named: scripts/audit_companion_local_tomography_from_complex_structure_exact.py, scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/256_COMPOSITION_LOCAL_TOMOGRAPHY_SEPARATION_FOUNDATIONS_WRITEUP_NOTE_2026-06-16.md](../../archive_unlanded/historic_intake_originals/branch01/256_COMPOSITION_LOCAL_TOMOGRAPHY_SEPARATION_FOUNDATIONS_WRITEUP_NOTE_2026-06-16.md)
+- Lines: 129; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_local_tomography_from_complex_structure_exact(.py)`; historic runner (unpinned, not in this packet): `scripts/audit_companion_tensor_composition_requires_local_tomography_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents that summaries had been asserting an entailment (composition from the 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_write_up_synthesis
 intake_directive: owner_2026-08-05
 ```
 

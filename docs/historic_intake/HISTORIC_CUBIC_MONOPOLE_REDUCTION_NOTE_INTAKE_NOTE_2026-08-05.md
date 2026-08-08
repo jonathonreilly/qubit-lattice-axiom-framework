@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem_plus_bounded_asymptotic
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Strong-field exterior anisotropy is pushed to l = 4, buying a 
 Scope: Exact for the finite-rank O_h-invariant source class; the asymptotic monopole reduction is bounded.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact cubic-symmetry inheritance for the finite-rank source class with exterior anisotropy pushed to l = 4 — clean strong-field theorem.
 
@@ -32,7 +34,8 @@ Exact cubic-symmetry inheritance for the finite-rank source class with exterior 
 - Source commit: `5cfa8c34155eefb99218a342c8b73a04d08405c0`
 - git blob: `567b1ae0c4e604fd40534f9069c7c3dd6e7f3120`
 - sha256: `9119655541bd7c0993f90d278923b58bd569990f05d94d11d10eba0a02561741`
-- Lines: 172; runners named: scripts/frontier_cubic_monopole_reduction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/279_CUBIC_MONOPOLE_REDUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/279_CUBIC_MONOPOLE_REDUCTION_NOTE.md)
+- Lines: 172; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cubic_monopole_reduction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem_plus_bounded_asymptotic
 intake_directive: owner_2026-08-05
 ```
 

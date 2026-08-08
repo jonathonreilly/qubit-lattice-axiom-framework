@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Hardens the operational no-past-signaling claim at the finite 
 Scope: Finite-dimensional, conditional boundary surface — the retained claim stays conditional.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Finite operator-algebra theorem: no later action signals to the durable-record algebra — the no-past-signaling core, hardened.
 
@@ -32,7 +34,8 @@ Finite operator-algebra theorem: no later action signals to the durable-record a
 - Source commit: `c480c335785546971b08eaeae3e9adf5168429a8`
 - git blob: `7c758b7d7815ca80b5dcc14dc6c072bcec568e8d`
 - sha256: `0ec59d00a3aac75913b1101d6062814d41f750fef88b296d3184851596e743da`
-- Lines: 124; runners named: scripts/chronology_operator_algebra_no_past_signal_probe.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/157_CHRONOLOGY_OPERATOR_ALGEBRA_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/157_CHRONOLOGY_OPERATOR_ALGEBRA_BOUNDARY_NOTE.md)
+- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/chronology_operator_algebra_no_past_signal_probe(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

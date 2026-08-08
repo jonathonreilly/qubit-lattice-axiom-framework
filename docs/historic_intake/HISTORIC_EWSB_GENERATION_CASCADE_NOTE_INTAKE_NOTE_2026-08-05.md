@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Claims to close the generation physicality gate - generations 
 Scope: Mass ratios are order-of-magnitude only: pure loop suppression gives 1 : 0.0027 : 7.3e-6 against the observed 1 : 0.0073 : 1.3e-5, and the up/top ratio needs large logs or Froggatt-Nielsen suppression.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The generation-cascade mechanism claim (S_3 -> Z_2 -> Z_3 breaking chain) with its gate-closure conflict and the beta_JW model-input flag — the generation-physicality contest's central positive.
 
@@ -32,7 +34,8 @@ The generation-cascade mechanism claim (S_3 -> Z_2 -> Z_3 breaking chain) with i
 - Source commit: `b9c62621a26cb64763c9eba828559be77ec18b53`
 - git blob: `380a89b7d22669bc41787e21743ffa39baea3a77`
 - sha256: `1fce6b1721de11709cb1a796bb58ec76e0b7bd52e05c6c252332c6fb991183ff`
-- Lines: 88; runners named: scripts/frontier_ewsb_generation_cascade.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/448_EWSB_GENERATION_CASCADE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/448_EWSB_GENERATION_CASCADE_NOTE.md)
+- Lines: 88; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ewsb_generation_cascade(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The JW correction parameter beta_JW = 0.1 is a model input, not derived; the hie
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

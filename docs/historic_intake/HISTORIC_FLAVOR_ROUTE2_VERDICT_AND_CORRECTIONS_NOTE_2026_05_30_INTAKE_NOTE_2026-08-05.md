@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Lightness, criticality and the uniform VEV are all red herring
 Scope: Retracts two of its own campaign's moves and flags that three 'vacuum -> Q = 1/3' computations used the chiral-breaking Wilson propagator and must be re-run on the native staggered operator.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Route-2 verdict: two exact kills (a->0 blowup; exact scale invariance) plus two same-campaign retractions on record — lightness/criticality/uniform-VEV all red herrings.
 
@@ -32,7 +34,8 @@ Route-2 verdict: two exact kills (a->0 blowup; exact scale invariance) plus two 
 - Source commit: `8646a86e1c80dbf36dda7a64bec5209a86d1ac27`
 - git blob: `1a3cca75d893cb8665bfa92675d8a4ff002ae507`
 - sha256: `1cb9c23c2ddc28f134966ffb7ba972d1f6a359ccb2d83876e01c0080341c863e`
-- Lines: 76; runners named: scripts/flavor_route2_verdict_and_corrections_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/493_FLAVOR_ROUTE2_VERDICT_AND_CORRECTIONS_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/493_FLAVOR_ROUTE2_VERDICT_AND_CORRECTIONS_NOTE_2026-05-30.md)
+- Lines: 76; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_route2_verdict_and_corrections_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Two same-campaign retractions plus a methodological flag that three prior comput
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

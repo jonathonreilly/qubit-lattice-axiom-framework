@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The semigroup witness is a transport-style transfer mechanism 
 Scope: Same competitor set as the transport no-go; does not claim a retained derivation of the chamber pin, of Q = 2/3, or an exclusion of the competitors from charged-lepton data alone.
 Escape conditions (negative claims): The negative is an indiscriminacy result: any escape must come from an independent selector of the G1 chamber pin, since every competitor reproduces the witness to near-machine precision.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Basin-transfer indiscriminacy no-go: the semigroup witness works identically on all five G1 competitors — kills a route previously read as independent support.
 
@@ -32,7 +34,8 @@ Basin-transfer indiscriminacy no-go: the semigroup witness works identically on 
 - Source commit: `b1d413125106d700e50c53ae0e467fec708d1dad`
 - git blob: `719f009687c9cee382e2bfeb02751294b61ff2a0`
 - sha256: `5716af7f5a691e6de165a71690b50f557dfdb8971394410bea89a83a476901a5`
-- Lines: 104; runners named: scripts/frontier_koide_gamma_orbit_semigroup_basin_transfer_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/848_KOIDE_GAMMA_ORBIT_SEMIGROUP_BASIN_TRANSFER_NO_GO_THEOREM_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch03/848_KOIDE_GAMMA_ORBIT_SEMIGROUP_BASIN_TRANSFER_NO_GO_THEOREM_NOTE_2026-04-20.md)
+- Lines: 104; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_gamma_orbit_semigroup_basin_transfer_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Shows that a route previously read as an independent positive Koide avenue is de
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

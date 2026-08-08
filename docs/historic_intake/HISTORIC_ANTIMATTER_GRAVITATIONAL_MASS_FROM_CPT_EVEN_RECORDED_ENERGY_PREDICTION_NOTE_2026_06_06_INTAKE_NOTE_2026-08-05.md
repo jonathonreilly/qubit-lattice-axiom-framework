@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: A falsifiable prediction, not a closure — the new content is
 Scope: Conditional on the EP bounded support (itself conditional on #2988 and BROAD_GRAVITY) and on CPT mass-equality; ALPHA-g 2023 is a comparator only, never a derivation input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean falsifiable combination prediction: antimatter gravitational mass equals matter (EP support x CPT evenness) — externally testable and neither parent states it.
 
@@ -32,7 +34,8 @@ Clean falsifiable combination prediction: antimatter gravitational mass equals m
 - Source commit: `a08831c04d6b36dfd2b022d81cb3308041e38fc5`
 - git blob: `afcaa5eac1a5d7f7c4d965f3a1de3108a55f56b6`
 - sha256: `1c81635f64a5ad31b575512612ddc34e1f9a55b0ae0695e7a52a43cff4f2127a`
-- Lines: 73; runners named: ./../scripts/audit_companion_antimatter_grav_mass_cpt_even_recorded_energy_exact.py, scripts/audit_companion_antimatter_grav_mass_cpt_even_recorded_energy_exact.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/54_ANTIMATTER_GRAVITATIONAL_MASS_FROM_CPT_EVEN_RECORDED_ENERGY_PREDICTION_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch01/54_ANTIMATTER_GRAVITATIONAL_MASS_FROM_CPT_EVEN_RECORDED_ENERGY_PREDICTION_NOTE_2026-06-06.md)
+- Lines: 73; runners named: historic runner (unpinned, not in this packet): `./../scripts/audit_companion_antimatter_grav_mass_cpt_even_recorded_energy_exact(.py)`; historic runner (unpinned, not in this packet): `scripts/audit_companion_antimatter_grav_mass_cpt_even_recorded_energy_exact(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

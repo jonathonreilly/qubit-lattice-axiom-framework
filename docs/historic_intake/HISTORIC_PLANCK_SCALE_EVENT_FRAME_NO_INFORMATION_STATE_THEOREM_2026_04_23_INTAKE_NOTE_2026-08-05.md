@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_branch_local_hardening_theorem_replacing_the_older_u_2_4_default_state_argument
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Yes - the state law can be stated without U(2)^4 presentation-
 Scope: Source-free bare-cell state on the retained primitive event frame, assumed positive, normalized and diagonal; explicitly not a claim about prepared or reduced states.
 Escape conditions (negative claims): The negative half (packet stabilizer does not derive traciality) is escaped only by Axiom Extension P1; the remaining denial is 'reject P1's no-preferred-primitive-event state law', a package-governance denial.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 RETRACTION on the record: the U(2)^4 default-state argument replaced by the invariant spectral-projector formulation, at stated cost.
 
@@ -32,7 +34,8 @@ RETRACTION on the record: the U(2)^4 default-state argument replaced by the inva
 - Source commit: `0d511d023a22d7bf8037f43ab02e890ec3b71085`
 - git blob: `86211c686c51b5ee189be242940b54f5b54ecd03`
 - sha256: `c7d45c1d63276379fb694dc7ae98320711f15e91886275a3770ace744ad77019`
-- Lines: 167; runners named: scripts/frontier_planck_event_frame_no_information_state_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1422_PLANCK_SCALE_EVENT_FRAME_NO_INFORMATION_STATE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1422_PLANCK_SCALE_EVENT_FRAME_NO_INFORMATION_STATE_THEOREM_2026-04-23.md)
+- Lines: 167; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_event_frame_no_information_state_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Retracts the earlier U(2)^4-based source-free state argument used elsewhere in t
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_branch_local_hardening_theorem_replacing_the_older_u_2_4_default_state_argument
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_narrow_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: d_t = 1 reduces with NO new admission to the emergent-dynamics
 Scope: Proposes no status change and edits no other note; runner TOTAL PASS=9 FAIL=0, deterministic, no RNG.
 Escape conditions (negative claims): The honest open atom: a framework-internal reason the emergent dynamics is single-generator (a registration-direction / one-clock ingredient) excluding the realizable second commuting clock without presupposing it; no such route exists on the current surface, and the sharpest next artifact is a direct N5 no-go.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 d_t = 1 reduced with NO new admission to the emergent-dynamics gate — the time-dimension question's exact localization.
 
@@ -32,7 +34,8 @@ d_t = 1 reduced with NO new admission to the emergent-dynamics gate — the time
 - Source commit: `49097beb36c791be2a920358d47a1aecd137a455`
 - git blob: `318c0177c56e53c36a0f021104b6c0c847d73a8c`
 - sha256: `0334a1188670f0b76d0867393e163d11660f54b456a32c295517bff88a80f5d6`
-- Lines: 97; runners named: scripts/one_time_dimension_dt1_reduction_check_2026_06_17.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1235_ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_NARROW_NO_GO_NOTE_2026-06-17.md](../../archive_unlanded/historic_intake_originals/branch04/1235_ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_NARROW_NO_GO_NOTE_2026-06-17.md)
+- Lines: 97; runners named: historic runner (unpinned, not in this packet): `scripts/one_time_dimension_dt1_reduction_check_2026_06_17(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_narrow_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: 3/6 PASS — portability established at mu^2 = 0.1 across G in
 Scope: Three graph families x 5 seeds per cell; packet, observable, window and constructors identical to the original core-packet gate, only G swept.
 Escape conditions (negative claims): The low-screening refutation is tied to the centered core-packet observable; a different sigma or packet shape giving uniform pass at mu^2 = 0.001 would isolate the failure to the observable rather than the underlying sign physics, and the note suggests low screening may be a separate near-massless regime warranting a different observable.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Portability established at mu^2 = 0.1 and REFUTED at 0.001 — explicitly retracts a prior gate's 93.3% strength; the sign lane's calibrated truth.
 
@@ -32,7 +34,8 @@ Portability established at mu^2 = 0.1 and REFUTED at 0.001 — explicitly retrac
 - Source commit: `b56c08d63577150b21539d9ae1282603cf880e0a`
 - git blob: `a558cc9cc89e27402183be558315a9316b8a0bbe`
 - sha256: `906511aeefaeddf9597da347aa4b08afca18cc1a56e0acb31797100335312c37`
-- Lines: 166; runners named: scripts/frontier_irregular_sign_g_portability_sweep.py, scripts/frontier_irregular_sign_core_packet_gate.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/739_IRREGULAR_SIGN_G_PORTABILITY_SWEEP_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch03/739_IRREGULAR_SIGN_G_PORTABILITY_SWEEP_NOTE_2026-04-24.md)
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_irregular_sign_g_portability_sweep(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_irregular_sign_core_packet_gate(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Explicitly retracts the strength of a prior gate result; host library versions d
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

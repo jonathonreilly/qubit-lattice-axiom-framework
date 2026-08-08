@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Does NOT derive why D is prepared on train and A on held, and 
 Scope: Uses NO host-selected corridor length, host cadence, decoder schedule, beta-to-program lookup, squared-norm threshold or receiver lookup.
 Escape conditions (negative claims): Broad no-go gate FAIL / DO NOT SHIP; six normalized routes with four open/untested, and finite response compilation, D/A law genesis, bounded-radius scaling, Record occurrence, continuum metric and conserved stress all remain INDEPENDENT.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the Cycle-507 trio: finite size-specific reversible compiler family joining the nine-M2 register x eight-M2 controller; does NOT derive why D is prepared on train and A on held; broad no-go gate FAIL with six [named routes]. Preflight decoder-firewall and the five-surface prediction-bridge contract attached.
 
@@ -32,7 +34,8 @@ TERMINAL of the Cycle-507 trio: finite size-specific reversible compiler family 
 - Source commit: `23c7c1c2ee050a58038438117b50adb5e1218286`
 - git blob: `245b62ece3c95d056fedbd8ff51104829ddc2ab1`
 - sha256: `edb41e11bf8013fda30a1d6b2ca006cd0beb40150685038e57086c6e32fbdf77`
-- Lines: 283; runners named: scripts/physical_source_profile_dual_echo_rollover_preflight_cycle507_2026_07_20.py, scripts/physical_source_profile_dual_echo_rollover_train_cycle507_2026_07_20.py, scripts/physical_source_profile_dual_echo_rollover_held_cycle507_2026_07_20.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3038_PHYSICAL_SOURCE_PROFILE_DUAL_ECHO_ROLLOVER_CYCLE507_FINAL_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/3038_PHYSICAL_SOURCE_PROFILE_DUAL_ECHO_ROLLOVER_CYCLE507_FINAL_NOTE_2026-07-20.md)
+- Lines: 283; runners named: historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_preflight_cycle507_2026_07_20(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_train_cycle507_2026_07_20(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_held_cycle507_2026_07_20(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

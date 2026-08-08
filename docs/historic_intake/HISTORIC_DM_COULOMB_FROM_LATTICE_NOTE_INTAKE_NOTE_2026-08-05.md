@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_derived
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: DERIVED - moves V(r) from IMPORTED to NATIVE (IMPORTED count 2
 Scope: Weak coupling only (alpha_s = 0.092) where single-gluon exchange dominates the static potential; standard 6-point lattice Laplacian.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 V(r) = -C_F alpha_s/r derived as the far-field lattice Green's function — an import moved to native with the sigma_v residual honest.
 
@@ -32,7 +34,8 @@ V(r) = -C_F alpha_s/r derived as the far-field lattice Green's function — an i
 - Source commit: `f754d91dd20bff48f072ee64bd1ddb78ed031719`
 - git blob: `82aaf8c8330db98c0b5aeef885f7de3e6e19ba11`
 - sha256: `32de873c3e8bd0a8eeaf562b32274e8f442fc0862ed791a65e0971d638f5332c`
-- Lines: 124; runners named: scripts/frontier_dm_coulomb_from_lattice.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/344_DM_COULOMB_FROM_LATTICE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/344_DM_COULOMB_FROM_LATTICE_NOTE.md)
+- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_coulomb_from_lattice(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_derived
 intake_directive: owner_2026-08-05
 ```
 

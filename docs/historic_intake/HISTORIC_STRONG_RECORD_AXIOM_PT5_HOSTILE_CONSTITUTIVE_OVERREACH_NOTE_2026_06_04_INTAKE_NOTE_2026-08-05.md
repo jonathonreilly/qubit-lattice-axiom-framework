@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The genuinely constitutive non-overreaching content is exactly
 Scope: Hostile pressure-test of the candidate axiom against the two competing weightings on the singlet/doublet sectors.
 Escape conditions (negative claims): The only survival for the strong reading is sector-contingency, which concedes block-count is a per-sector measure choice rather than a constitutive record law.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Strong-record-axiom TERMINAL: the non-overreaching content is exactly the WEAK adoption — the candidate axiom is the disputed content itself; the pressure-test verdict.
 
@@ -32,7 +34,8 @@ Strong-record-axiom TERMINAL: the non-overreaching content is exactly the WEAK a
 - Source commit: `d8cfd772f86e817d79e505126f7ed9ab43150a23`
 - git blob: `84b9f788de7fe12372c7a4ab1fa770f48326cf86`
 - sha256: `0ba8bc06c1dc534ad0ed728a7c17aeeb57babeae1f2b34e919648bfd1364306c`
-- Lines: 234; runners named: scripts/strong_record_axiom_pt5_hostile_constitutive_overreach_2026_06_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2007_STRONG_RECORD_AXIOM_PT5_HOSTILE_CONSTITUTIVE_OVERREACH_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch06/2007_STRONG_RECORD_AXIOM_PT5_HOSTILE_CONSTITUTIVE_OVERREACH_NOTE_2026-06-04.md)
+- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/strong_record_axiom_pt5_hostile_constitutive_overreach_2026_06_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ Concludes that the candidate axiom is the disputed measure renamed and that it c
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

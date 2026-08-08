@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The contribution is real but modest; the framework's distingui
 Scope: Assesses three specific claims against the literature.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Novelty deflation: SU(3)-from-Clifford is well-trodden (Trayling-Baylis, Stoica) — the distinguishing feature is the specific d=3 construction; reviewer-critical honesty.
 
@@ -32,6 +34,7 @@ Novelty deflation: SU(3)-from-Clifford is well-trodden (Trayling-Baylis, Stoica)
 - Source commit: `6b3c2f7bb6ee61b8cf72819d14eb60f53e4c7006`
 - git blob: `f17fb9c7a6ba4fdf828a5d24dff5954d4a6118b8`
 - sha256: `fa74162d4ba5c115430ef886573745aebbde3114281a83d7a04aa7fc0cedb28d`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1217_NOVELTY_LITERATURE_SEARCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1217_NOVELTY_LITERATURE_SEARCH_NOTE.md)
 - Lines: 304; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Explicitly deflates the novelty of a headline framework claim by citing five pri
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

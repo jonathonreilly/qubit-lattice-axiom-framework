@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: y_t is declared CLOSED by the gauge crossover theorem chain an
 Scope: Retraction of one chain and reinstatement of another; both use framework couplings run downward with no observed alpha_s input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The one-day retraction: dividing by N_taste contradicts the Feshbach theorem — formal retraction WITH its own residual CLOSED declaration flagged; the pair goes to audit.
 
@@ -32,7 +34,8 @@ The one-day retraction: dividing by N_taste contradicts the Feshbach theorem —
 - Source commit: `889ae8c8ca0ba622d2ad02f942f6ee041759f4b6`
 - git blob: `068a414501d07ae572592ca4c462cc805c7572be`
 - sha256: `cc308ca41201742104357a033ffd551176fd6c88dca9928eb10a208afda905af`
-- Lines: 33; runners named: scripts/frontier_yt_framework_seeded.py, scripts/frontier_yt_gauge_crossover_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2306_YT_FRAMEWORK_SEEDED_RETRACTION.md](../../archive_unlanded/historic_intake_originals/branch07/2306_YT_FRAMEWORK_SEEDED_RETRACTION.md)
+- Lines: 33; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_framework_seeded(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_gauge_crossover_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Formal retraction of a same-week sibling note; declares the y_t gate CLOSED whil
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

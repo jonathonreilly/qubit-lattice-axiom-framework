@@ -1,9 +1,11 @@
 # Historic intake: Hierarchy H1 Route 1B — Wilson MC and Drouffe-Itzykson Cross-Check
 
+Explicit subject: Three independent methods agree on the SU(3) single-plaquette block at beta = 6 to ten digits — Drouffe-Itzykson Bessel determinant 0.4225317397, Haar quadrature 0.4225317396, framework Perron solve 0.4225317396 (pairwise diffs 1.476e-10) — while L=2 pure-Python Wilson MC gives ... (The bare code `H1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_numerical_diagnostic_cross_check
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: One substantive result (3-way 10-digit agreement validating th
 Scope: Loop iteration 2; single-plaquette block cross-check is exact, but the MC arm is finite-volume L=2 only (L=3 estimated ~55 hours in pure Python).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Three independent methods (Drouffe-Itzykson, Haar, framework Perron) agree to ten digits — external validation of framework machinery.
 
@@ -32,7 +36,8 @@ Three independent methods (Drouffe-Itzykson, Haar, framework Perron) agree to te
 - Source commit: `40bf858be7a8249c8cc4e85e8e293180bf772e60`
 - git blob: `fbc3876131bcc6c2ef37f45b95a117415491308e`
 - sha256: `acc88f4f0b09ba751f667ec7c0f6b41dde4d559ae4916d742ec693907165fa9b`
-- Lines: 184; runners named: scripts/frontier_hierarchy_wilson_mc_kernel.py, scripts/frontier_hierarchy_drouffe_itzykson_check.py, scripts/frontier_hierarchy_pade_resum.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/692_HIERARCHY_H1_ROUTE_1B_MC_AND_DROUFFE_ITZYKSON_NOTE_2026-05-03.md](../../archive_unlanded/historic_intake_originals/branch03/692_HIERARCHY_H1_ROUTE_1B_MC_AND_DROUFFE_ITZYKSON_NOTE_2026-05-03.md)
+- Lines: 184; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_wilson_mc_kernel(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_drouffe_itzykson_check(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_pade_resum(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Pade analyzer explicitly unstable on the finite-volume data; L=2 MC coefficients
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_numerical_diagnostic_cross_check
 intake_directive: owner_2026-08-05
 ```
 

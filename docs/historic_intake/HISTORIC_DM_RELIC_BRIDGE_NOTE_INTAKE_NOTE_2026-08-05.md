@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED - eta remains an imported cosmological input.
 Scope: Single authority note on the relic-ratio bridge; the Stosszahlansatz proof is for the free (Gaussian) theory, with extension to the interacting case needing spectral-gap persistence.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The relic-bridge single authority: three-factor decomposition with eta honestly IMPORTED — the bridge's honest constitution, overriding the CLOSED sibling.
 
@@ -32,6 +34,7 @@ The relic-bridge single authority: three-factor decomposition with eta honestly 
 - Source commit: `b058fcfce55974286fd3cee2d83b0e976cd0aad0`
 - git blob: `1dc438e348ebc464f44576728ba32d2fc1c3cc77`
 - sha256: `afad75df066e984e9f04436406dc5b8c77f416b953e42dfa027f0792be60b408`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/397_DM_RELIC_BRIDGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/397_DM_RELIC_BRIDGE_NOTE.md)
 - Lines: 226; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -51,6 +54,7 @@ Flags that the Stosszahlansatz theorem is proved only for the free theory, a cav
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The anomalous exponent was a measurement-direction artifact, n
 Scope: 5 PASS / 0 FAIL; box sizes 25/31/41 with Dirichlet walls and two declared fit windows; the locality result is exact stencil inspection. Larger boxes, other boundary conditions, massive kernels and the parent's full self-consistency loop are outside scope.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 CRITICAL-ROW REPAIR: the anomalous exponent standing against SELF_CONSISTENCY_FORCES_POISSON (778 transitive descendants) was a measurement-direction artifact — the live objection resolved.
 
@@ -32,7 +34,8 @@ CRITICAL-ROW REPAIR: the anomalous exponent standing against SELF_CONSISTENCY_FO
 - Source commit: `09345160e10893186a1280a6320587a711b48a28`
 - git blob: `c043a0ad50e144ff67588f6bbfb915acb28747fb`
 - sha256: `4737525055ea0d17abb082aa589ff661431d7dbd48feab7897e7a0ad82fee68a`
-- Lines: 110; runners named: scripts/physical_poisson_susceptibility_direction_repair_cycle694_2026_07_25.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1354_PHYSICAL_POISSON_SUSCEPTIBILITY_DIRECTION_REPAIR_CYCLE694_NOTE_2026-07-25.md](../../archive_unlanded/historic_intake_originals/branch04/1354_PHYSICAL_POISSON_SUSCEPTIBILITY_DIRECTION_REPAIR_CYCLE694_NOTE_2026-07-25.md)
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_susceptibility_direction_repair_cycle694_2026_07_25(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Repairs a numerical objection standing against a critical, heavily load-bearing 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_derived
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: DERIVED at 0.21% accuracy; unblocks the alpha_EM half of the h
 Scope: Claims derivation from Cl(3)/Z^3 axioms with zero SM imports; the 0.21% residual is attributed to 2-loop systematics.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The era's alpha_EM/electroweak closure claim at 0.21% (g_1, g_2, sin^2 theta_W) WITH its next-day audit attached — flagship-era numeric surface for the audit lane to price.
 
@@ -32,7 +34,8 @@ The era's alpha_EM/electroweak closure claim at 0.21% (g_1, g_2, sin^2 theta_W) 
 - Source commit: `a6fdce65069126907d9e2f1ab8bf55569b5487de`
 - git blob: `6d82fd00e6502eb25522b3d691964b83ad32f64d`
 - sha256: `75f9496d34f6fbb07d07fa7d1cc5f273559536b174029bffd23d408132b0556a`
-- Lines: 198; runners named: alpha_em_twoloop_rge.py, scripts/alpha_em_from_axioms.py, scripts/alpha_em_twoloop_rge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/45_ALPHA_EM_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/45_ALPHA_EM_DERIVATION_NOTE.md)
+- Lines: 198; runners named: historic runner (unpinned, not in this packet): `alpha_em_twoloop_rge(.py)`; historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/alpha_em_twoloop_rge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Audited the next day (ALPHA_EM_AUDIT_NOTE) which downgrades three of its steps t
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_derived
 intake_directive: owner_2026-08-05
 ```
 

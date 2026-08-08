@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: DEAD: no axiom-native delta-odd non-polynomial invariant exist
 Scope: Lane A of the triangulation with three mandatory robustness checks; the decisive test is the Z_3-symmetrized probe battery.
 Escape conditions (negative claims): The obstruction rests on axiom-native = Z_3-invariant; the note names the missing primitive that would evade it, and explicitly limits what it does not claim.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The strongest-form Case 3 impossibility: no axiom-native delta-odd invariant exists even dropping locality and polynomiality — the missing primitive named exactly.
 
@@ -32,7 +34,8 @@ The strongest-form Case 3 impossibility: no axiom-native delta-odd invariant exi
 - Source commit: `5329f8dbf8643636c3de4ddce4214bd5a4d26794`
 - git blob: `49db55d20945f01455346c6c7c65528ff7808e52`
 - sha256: `b852d9edb0852c991738df91fbb6ecd8b8b2420753dbc81cbb356261e17eda2e`
-- Lines: 283; runners named: frontier_dm_case3_delta_odd_diagnostic.py, frontier_dm_case3_spectral_flow_attack.py, frontier_dm_case3_z3_invariant_spectral_flow.py, scripts/frontier_dm_case3_delta_odd_diagnostic.py, scripts/frontier_dm_case3_spectral_flow_attack.py, scripts/frontier_dm_case3_z3_invariant_spectral_flow.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/340_DM_CASE3_SPECTRAL_FLOW_NONLOCAL_INDEX_OBSTRUCTION_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch01/340_DM_CASE3_SPECTRAL_FLOW_NONLOCAL_INDEX_OBSTRUCTION_NOTE_2026-04-18.md)
+- Lines: 283; runners named: historic runner (unpinned, not in this packet): `frontier_dm_case3_delta_odd_diagnostic(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_case3_spectral_flow_attack(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_case3_z3_invariant_spectral_flow(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_case3_delta_odd_diagnostic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_case3_spectral_flow_attack(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_case3_z3_invariant_spectral_flow(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

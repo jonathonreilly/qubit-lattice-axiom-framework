@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Without omega the theta-flow is an isometry rather than a Hami
 Scope: Structural localization, not a no-go on Q = 2/3; approves no axiom or import and sets no audit verdict.
 Escape conditions (negative claims): Supplying omega is equivalent to a chiral bilinear with a generation grading anticommuting with B = C + C^2, which is non-native because spec(B) = {2,-1,-1} is not symmetric under lambda -> -lambda (the Z_3-equivariant anticommuting no-go re-derived at field-reality level); the named next path is building the bridge-gap matter action from A1+A2 and testing whether emergent time gives b a first-order Schrodinger/Bargmann kinetic term.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Q-gate's differential-geometric localization: the native action supplies J and g but NOT the symplectic omega — and 'the retained surface implies Q = 1 while observation says 2/3' stated plainly; supplying omega = the named escape.
 
@@ -32,7 +34,8 @@ The Q-gate's differential-geometric localization: the native action supplies J a
 - Source commit: `5eabd7a42df2600f2424c104a9938de153e80da4`
 - git blob: `9c00e898421c3d10017f4e7f7c825303200472e6`
 - sha256: `083cb28711f7a1ca1c79681bf25723d0a1a140a469a1f31e4c8e5fc1bf085d36`
-- Lines: 106; runners named: scripts/frontier_koide_generation_hermitian_not_kahler_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/850_KOIDE_GENERATION_HERMITIAN_NOT_KAHLER_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch03/850_KOIDE_GENERATION_HERMITIAN_NOT_KAHLER_NOTE_2026-05-30.md)
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_generation_hermitian_not_kahler_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ States plainly that the retained surface implies Q = 1 while observation gives 2
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

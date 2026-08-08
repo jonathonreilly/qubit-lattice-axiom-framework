@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_new_physics_research_target_identification
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: New top of the bridge-gap science stack — derive the canonic
 Scope: Research-target framing (proposal_allowed: false); no value derived.
 Escape conditions (negative claims): Reframes the prior consolidation no-go's escape explicitly: it binds only the Wilson action, leaving every non-Wilson framework-native action open.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The reframe that redefines the beta6 wall: all seven exhausted routes assumed the IMPORTED Wilson action, so the no-go binds <P>_Wilson(6), not <P>_framework(6) — new top of the bridge-gap stack (derive the Cl(3)-native gauge metric first).
 
@@ -32,7 +34,8 @@ The reframe that redefines the beta6 wall: all seven exhausted routes assumed th
 - Source commit: `d500c5e53b914a7996d571496dc00513bcf0f3a6`
 - git blob: `c4201d2057fe063d71e4649b5c2ba6abcbd38c2e`
 - sha256: `8793a8ed07166f7446b4f7a24cf40dfde6b2fbf8b8ddeced43a0587af387c739`
-- Lines: 342; runners named: ../scripts/probe_heat_kernel_su3_plaquette.py, scripts/probe_heat_kernel_su3_plaquette.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/126_BRIDGE_GAP_NEW_PHYSICS_OPENING_NOTE_2026-05-06.md](../../archive_unlanded/historic_intake_originals/branch01/126_BRIDGE_GAP_NEW_PHYSICS_OPENING_NOTE_2026-05-06.md)
+- Lines: 342; runners named: historic runner (unpinned, not in this packet): `../scripts/probe_heat_kernel_su3_plaquette(.py)`; historic runner (unpinned, not in this packet): `scripts/probe_heat_kernel_su3_plaquette(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_new_physics_research_target_identification
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Held constructive actuality/admitted-atom result and a decisiv
 Scope: Held transfer of branch-conditional consequences of a supplied law plus a supplied actual-carrier overlay; not unitary collapse and not pointer copying.
 Escape conditions (negative claims): No shared obstruction and no axiom pressure; the note lists explicit non-transfers (a held A failure does not test an actual stochastic draw, a B failure does not test stochastic or bath routes, a finite bath failure would not test global selection).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the Cycle-508 trio: a separate held-only evaluator (no train/fit/refit path) executed once under an explicit root-authorization token; Route B strongest; a held constructive actuality/admitted-atom result and a decisive non-Born [outcome] with no shared obstruction and no axiom pressure. Preflight and train evaluator attached - the cleanest held/blind protocol in the sweep.
 
@@ -32,7 +34,8 @@ TERMINAL of the Cycle-508 trio: a separate held-only evaluator (no train/fit/ref
 - Source commit: `a9473590f35e7bf48ecdaf963860d074ea940751`
 - git blob: `acdf134dbda3da0dbb21bc2729d80fb1d1634412`
 - sha256: `8651a1bcfb39b2e2b8980bd5a25a352ffbe3e8e7a199ff421fc47f3a576c03c7`
-- Lines: 434; runners named: scripts/physical_actual_member_admitted_history_law_tournament_held_cycle508_2026_07_20.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2768_PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_HELD_CYCLE508_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/2768_PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_HELD_CYCLE508_NOTE_2026-07-20.md)
+- Lines: 434; runners named: historic runner (unpinned, not in this packet): `scripts/physical_actual_member_admitted_history_law_tournament_held_cycle508_2026_07_20(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

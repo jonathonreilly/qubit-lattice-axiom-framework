@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-14; g_bare = 1 as axiom, with an import table classifying each element
 
@@ -22,7 +22,9 @@ Original verdict: y_t(v; SM RGE) = y_t(v; lattice) + O(3%), so the Codex blocker
 Scope: Formal theorem over a family of smooth RG flows on [v, M_Pl] satisfying a gauge anchor alpha_s(v) = 0.1033, the Ward BC y_t(M_Pl) = 0.436, and a focusing structure with c_3 > c_self > 0; the note explicitly does NOT claim the SM RGE is the physical description above v, only that it is a valid interpolation.
 Escape conditions (negative claims): The insensitivity holds for trajectories ABOVE the quasi-fixed point; below the QFP sensitivity is near 1:1, and the note relies on the Ward BC being a derived quantity whose uncertainty is bounded by Ward-identity precision rather than the full scan range. The focusing structure is claimed structural (depending only on signs and relative magnitudes of beta coefficients, not their values).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The quasi-fixed-point insensitivity theorem (y_t(v) RG-flow-insensitive above the QFP, honest asymmetry flag) — theorem-grade and load-bearing for the mass lane's boundary story.
 
@@ -32,7 +34,8 @@ The quasi-fixed-point insensitivity theorem (y_t(v) RG-flow-insensitive above th
 - Source commit: `26fce6c2741b5ef4760ec26c9867b30ffa161c30`
 - git blob: `bb55da54896839ed02ce670d8d0ca8b01e9fe640`
 - sha256: `27e521ca0c5fc65ce2c100c61d714d6687abc5f4ba480fdad279c108ff57084f`
-- Lines: 293; runners named: scripts/frontier_yt_qfp_insensitivity.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3619_YT_QFP_INSENSITIVITY_THEOREM.md](../../archive_unlanded/historic_intake_originals/recovery/3619_YT_QFP_INSENSITIVITY_THEOREM.md)
+- Lines: 293; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_qfp_insensitivity(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The claimed insensitivity is asymmetric — over the full range [0.2, 0.8] the f
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

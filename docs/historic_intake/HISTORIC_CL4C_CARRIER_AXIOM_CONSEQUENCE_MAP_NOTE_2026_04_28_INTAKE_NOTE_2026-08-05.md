@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conditional_closure_consequence_map
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Makes explicit the price and the payoff of the minimal carrier
 Scope: Branch-local conditional map, Cycle 1; every consequence is conditional on adopting Axiom*, which is not adopted.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Axiom* (Cl_4(C) module) consequence map: exactly what adopting the minimal carrier axiom would discharge across five lanes — owner-surface pricing material for a live axiom candidate class.
 
@@ -32,7 +34,8 @@ The Axiom* (Cl_4(C) module) consequence map: exactly what adopting the minimal c
 - Source commit: `d5ee82aefee29d33fbfdbc693fcfe6a2559a0f7e`
 - git blob: `dcfbb4cefcb31596cfad10caf0438141332c2526`
 - sha256: `679411c003c2bc6754fcb63abe6346946d7df69b5e9255e98eb1a9934f2005b8`
-- Lines: 259; runners named: scripts/frontier_cl4c_carrier_axiom_consequence_map.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/233_CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md](../../archive_unlanded/historic_intake_originals/branch01/233_CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md)
+- Lines: 259; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cl4c_carrier_axiom_consequence_map(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conditional_closure_consequence_map
 intake_directive: owner_2026-08-05
 ```
 

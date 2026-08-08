@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Fills the missing doubled-angle closed form and exposes an exa
 Scope: Built on the retained NLO-protected-gamma-bar theorem, which supplies sin(2 beta_bar) and sin(2 gamma_bar) but no closed form for sin(2 alpha_bar).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsifiable NLO structure: sin(2 alpha_bar) closed form + the exact -3:-2:0 doubled-angle shift pattern — the geometry family's testable core, atlas attached.
 
@@ -32,7 +34,8 @@ Falsifiable NLO structure: sin(2 alpha_bar) closed form + the exact -3:-2:0 doub
 - Source commit: `cad716b29bcb8cf7af813174c3e1df4f768d7770`
 - git blob: `5631a01dab4198e7511ab733c151a8c6e6c1ac25`
 - sha256: `c03baf71cf8b0253df4b8272dc466a47f1399605cfa2203175f62cc1953eea46`
-- Lines: 319; runners named: scripts/canonical_plaquette_surface.py, scripts/frontier_ckm_doubled_angle_cp_nlo_shift_pattern.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/185_CKM_DOUBLED_ANGLE_CP_NLO_SHIFT_PATTERN_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/185_CKM_DOUBLED_ANGLE_CP_NLO_SHIFT_PATTERN_THEOREM_NOTE_2026-04-25.md)
+- Lines: 319; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_doubled_angle_cp_nlo_shift_pattern(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

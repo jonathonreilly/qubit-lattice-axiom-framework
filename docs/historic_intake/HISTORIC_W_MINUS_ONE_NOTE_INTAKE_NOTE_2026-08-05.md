@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conditional_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Conditional on S^3 compactification the framework predicts w =
 Scope: Conditional on the S^3 compactification lane, which is itself bounded/open and not derived from the axioms.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Conditional-exact w = -1 prediction from S^3 topology (lambda_1 = 3/R^2) — with the Lambda-magnitude concession honest.
 
@@ -32,7 +34,8 @@ Conditional-exact w = -1 prediction from S^3 topology (lambda_1 = 3/R^2) — wit
 - Source commit: `92dd355e65bea56ab4ae6ac7602a82e4a08079f5`
 - git blob: `2692cc0c1f62da42c3fa387482a3c8c77e387817`
 - sha256: `1346e60779721965b9f1cd7737d2ec72bd1cda7d838d8e2d72d720c9b02fbfd9`
-- Lines: 99; runners named: scripts/frontier_w_minus_one.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2136_W_MINUS_ONE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2136_W_MINUS_ONE_NOTE.md)
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_w_minus_one(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Concedes that the observed Lambda ~ 1e-122 is 'a coincidence of scale, not a pre
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conditional_theorem
 intake_directive: owner_2026-08-05
 ```
 

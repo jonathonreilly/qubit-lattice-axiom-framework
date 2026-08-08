@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: cycle-10 no-go withdrawn; APS route opened
 Scope: panel-driven reversal (10 physicist agents plus exercises)
 Escape conditions (negative claims): derive or admit (user-scoped) the delta_Brannen = eta_APS bridge theorem
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The PANEL REVERSAL that OVERRIDES the 12-cycle converged no-go: the cycle-9 keyword scan MISSED five APS-eta retained notes and the L-W [claim] does not hold as scanned - 'route space was incomplete' - so the cycle-10/12 no-go is withdrawn and the APS route opened. FLAG carried: the reversal's own 'mostly retained' claim was itself overstated (see 11534). The withdrawn artifacts attached: a no-go whose full N1-N8 gate PASSED and which was still wrong is the sharpest known limit of the discipline gates.
 
@@ -32,6 +34,7 @@ The PANEL REVERSAL that OVERRIDES the 12-cycle converged no-go: the cycle-9 keyw
 - Source commit: `42586ad1b17278bc8ea81d7735e1c2f45f0a137c`
 - git blob: `45f828b792c2ef888213a81a8d7618c4efd679e3`
 - sha256: `dac7e5eff21545ec7ab925f2d53e8eacfa46a03ef280442b4af06767bca86d4a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11538_PANEL_REVERSAL_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11538_PANEL_REVERSAL_2026-05-26.md)
 - Lines: 131; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -51,6 +54,7 @@ the reversal's 'mostly retained' claim was itself an overclaim caught by the nex
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

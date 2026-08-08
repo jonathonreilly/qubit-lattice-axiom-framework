@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The radial sewing-shell profile is universal rather than famil
 Scope: The two exact source families present on the codex/review-active branch at R = 4.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Shell-radial universality: k_shell identical to machine precision across both exact source families — with the two-family caveat flagged.
 
@@ -32,7 +34,8 @@ Shell-radial universality: k_shell identical to machine precision across both ex
 - Source commit: `83def234b7eddc1d23f284af42390ea852440421`
 - git blob: `ee81764b31fb371462aac50daf70df84318bb62e`
 - sha256: `1240b882b987c13dcaa6ffdf7d7e5842e32491411840d8172ad3a1b3e0ebbaa0`
-- Lines: 107; runners named: scripts/frontier_universal_shell_profile.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2093_UNIVERSAL_SHELL_PROFILE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2093_UNIVERSAL_SHELL_PROFILE_NOTE.md)
+- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_universal_shell_profile(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Universality is demonstrated across only two source families at a single cutoff 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

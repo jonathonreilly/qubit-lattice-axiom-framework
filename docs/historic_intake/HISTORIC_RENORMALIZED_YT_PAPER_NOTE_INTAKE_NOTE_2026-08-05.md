@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: CLOSED on the reframed surface: literal Z_Y(mu) = Z_g(mu) is F
 Scope: d=3 staggered lattice, Cl(3) with 8-dim rep; imports alpha_s(M_Pl)=0.092 (V-scheme, BOUNDED) and 1-loop SM RGEs (3-5% theory band).
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The paper-safe y_t reframe: literal Z_Y = Z_g is FALSE and physical protection is boundary-condition protection — CLOSED-by-reframing flagged for audit.
 
@@ -32,7 +34,8 @@ The paper-safe y_t reframe: literal Z_Y = Z_g is FALSE and physical protection i
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `6e94ebfe0eb4e059276eac448af34c149242c9dc`
 - sha256: `608a058664fb969e36ea2fe845311a16244db2381679bb8bef8cf3331940c03f`
-- Lines: 272; runners named: scripts/frontier_yt_paper.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1801_RENORMALIZED_YT_PAPER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1801_RENORMALIZED_YT_PAPER_NOTE.md)
+- Lines: 272; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_paper(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Declares the lane CLOSED by reframing the original open item rather than by prov
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

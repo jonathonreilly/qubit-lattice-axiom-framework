@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A constraint + robustness + explanation, NOT a precise |K| pre
 Scope: Uses observed PDG masses as an empirical comparator; the charged corner basis rests on the unaudited Z_3 trichotomy, and why the neutrino is light is a separate question.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The predictability sieve: the neutrino spread sits 9 orders below any other splitting, making the |K| window vast — constraint + explanation honestly not a prediction.
 
@@ -32,7 +34,8 @@ The predictability sieve: the neutrino spread sits 9 orders below any other spli
 - Source commit: `c8c1ebd894d16d7623037936615e0b705ba994f4`
 - git blob: `5ea9e51156bc23148a3563000b3a622af08932ba`
 - sha256: `a5b3d17c1bb6fd34f809fe1de240d2285b662801bafee52ba34522e4498cd706`
-- Lines: 106; runners named: scripts/emergent_coupling_scale_window_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/425_EMERGENT_C3_COUPLING_SCALE_PREDICTABILITY_SIEVE_WINDOW_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/425_EMERGENT_C3_COUPLING_SCALE_PREDICTABILITY_SIEVE_WINDOW_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/emergent_coupling_scale_window_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The explanatory win is robust precisely because the window is 9 orders wide, so 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

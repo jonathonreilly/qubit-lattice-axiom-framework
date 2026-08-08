@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: KEEP BOUNDED - the remaining question 'why does H have coeffic
 Scope: Assumes A1-A5 with H = sum eta_ij U_ij, U in SU(3), and the standard plaquette extraction alpha_V = -ln<P>/c_1 with c_1 = pi^2/3.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest counter: H_g family shows different g IS different physics, so g_bare = 1 stays BOUNDED as a foundational commitment — the contradiction pair's other half.
 
@@ -32,7 +34,8 @@ The honest counter: H_g family shows different g IS different physics, so g_bare
 - Source commit: `3e1d4f8ecb4a348b9cf59cf92a75a8e3ac576ea5`
 - git blob: `b76060fb3a93b148ae4f93f05753480302c9c3b2`
 - sha256: `c0c8a1a04b5e0a845f102f9bc546c17aabc2712edd4ee25146b006fb9921f095`
-- Lines: 270; runners named: scripts/frontier_dm_invariant_bridge.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/365_DM_INVARIANT_BRIDGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/365_DM_INVARIANT_BRIDGE_NOTE.md)
+- Lines: 270; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_invariant_bridge(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

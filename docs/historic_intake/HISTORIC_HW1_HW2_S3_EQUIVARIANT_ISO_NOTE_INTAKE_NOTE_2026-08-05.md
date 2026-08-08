@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Airtight (Grind Program Batch 5, 29/29 PASS) — no S_3-invari
 Scope: Hamming-weight blocks of the taste cube C^8 = (C^2)^{tensor 3} under axis-permutation S_3.
 Escape conditions (negative claims): The indistinguishability is scoped to S_3-invariant observables; the stated escapes are the hw grading itself or operators not in End(C^8)^{S_3}.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Airtight: e_3 gives an S_3-equivariant unitary bijection — no S_3-invariant observable distinguishes the hw sectors (29/29); escape scope stated.
 
@@ -32,7 +34,8 @@ Airtight: e_3 gives an S_3-equivariant unitary bijection — no S_3-invariant ob
 - Source commit: `c012e753af3090ed9e1a7e62422a14be4ab5ac02`
 - git blob: `e546354332e118c6ddc5c55e34f09a48d14e462e`
 - sha256: `1cc694d5ac981b76e1e562225c79a7ced40d8414e648be1840fda06857e46a67`
-- Lines: 81; runners named: scripts/frontier_hw1_hw2_s3_equivariant_iso.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/717_HW1_HW2_S3_EQUIVARIANT_ISO_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/717_HW1_HW2_S3_EQUIVARIANT_ISO_NOTE.md)
+- Lines: 81; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hw1_hw2_s3_equivariant_iso(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

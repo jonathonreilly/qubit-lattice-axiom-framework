@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: kappa_Y and kappa_EW remain unselected on every tested route.
 Scope: Selection of the kappa coefficients in the EW/Y_T coupling corrections.
 Escape conditions (negative claims): An additional theorem identifying the physical source as a connected color-matrix source.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Anti-overclaim boundary on the widely-used 8/9 color factor: K_Y(kappa_Y) = 8/9 + kappa_Y/9, so color-blind scaling does not select kappa_Y = 0 and 8/9 is only the kappa_Y = 0 special case; kappa_Y and kappa_EW remain unselected on every tested route. Guards every downstream reuse of R_conn = 8/9.
 
@@ -32,6 +34,7 @@ Anti-overclaim boundary on the widely-used 8/9 color factor: K_Y(kappa_Y) = 8/9 
 - Source commit: `4f6e42cef55073e6c6c98599e41fd03cac7b6cec`
 - git blob: `901fb724a3b8b12f5e0f12759d42d5848ebb482b`
 - sha256: `6428493fbfcabae128f0b62670deaee5d3cc544a316b5108fc4271c167437bd5`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10437_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10437_NO_GO_LEDGER.md)
 - Lines: 22; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ The exposed formula K_Y = 8/9 + kappa_Y/9 shows the celebrated 8/9 is only the k
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

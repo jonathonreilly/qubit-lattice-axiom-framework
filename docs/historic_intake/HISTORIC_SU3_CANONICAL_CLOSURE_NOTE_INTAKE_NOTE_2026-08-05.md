@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: CLOSURE of the codex SU(3) hold: the triplet subspace comes fr
 Scope: Z^3 hypercube taste space C^8 with Kawamoto-Smit generators; addresses Hold A of the 2026-04-12 publication retain audit.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The choice-free SU(3) chain closing the codex 'hand-picked 3-of-4' hold — graph-selected triplet subspace; the gauge lane's April terminal.
 
@@ -32,7 +34,8 @@ The choice-free SU(3) chain closing the codex 'hand-picked 3-of-4' hold — grap
 - Source commit: `6a4c225af365390328bc4441ea1e829206be5054`
 - git blob: `946045189001772497f4a04cfa8348e004d12e67`
 - sha256: `c1ae50604edefa7272e30a455d38c41f4f98cafc3f485f1e8c4dcf2a0d5b2789`
-- Lines: 259; runners named: scripts/frontier_su3_canonical_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2012_SU3_CANONICAL_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2012_SU3_CANONICAL_CLOSURE_NOTE.md)
+- Lines: 259; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_su3_canonical_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,6 +56,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

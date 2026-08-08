@@ -1,9 +1,11 @@
 # Historic intake: The Weak-Field Mass-Law Exponent Is an Integer Forced by Self-Adjointness: the Sublinear Rival to Valley-Linear Is Excluded, Admission (c) Collapses into the A2 Coupling, and the P4 Rival Formula Is Misstated
 
+Explicit subject: Four results: (1) probe P4's rival S = L sqrt(1 - phi) is misstated — since 1 - sqrt(1-f) = f/2 + f^2/8 + ..., it is weak-field LINEAR and sits in the Newtonian class, while the landed F ~ sqrt(M) = 0.50 row is the different function L(1 - f^0.5), so the stated discriminator ... (The bare codes `A2`, `P4` in the title are era-local historic shorthand preserved verbatim from the original; the pinned original defines them.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: Theorem 1 (the correction) and Theorem 2 (the p = 1/2 exclusio
 Scope: Bounded self-adjoint V on finite lattices; the additive coupling H(phi) = H + phi is assumed (the lane's own, itself labelled heuristic motivation), and no axiom, primitive, lane or obligation status is changed.
 Escape conditions (negative claims): The sublinear exclusion holds only where H is self-adjoint with bounded V on a finite lattice; infinite-volume needs unchecked Kato-Rellich hypotheses, and the step from propagator response to the path action S used by the landed harness is flagged as an open seam.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Corrects a LANDED support note under a 773-descendant critical row: the rival action is weak-field LINEAR (misstated) + the p = 1/2 exclusion — two unconditional theorems.
 
@@ -32,7 +36,8 @@ Corrects a LANDED support note under a 773-descendant critical row: the rival ac
 - Source commit: `51f76bce45f326152a0c3c3d6bcc3f9a9425ec95`
 - git blob: `08ca025d92729e7db23c3d6366aed0fc0bb1f2a4`
 - sha256: `2c4d6aaf12a2070e92730aeed973826686a7c7ff6012f8dd91fc4ec7245b8a47`
-- Lines: 181; runners named: scripts/physical_weak_field_exponent_from_self_adjointness_cycle707_2026_07_26.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2111_WEAK_FIELD_MASS_LAW_EXPONENT_IS_AN_INTEGER_FORCED_BY_SELF_ADJOINTNESS_SUBLINEAR_RIVAL_EXCLUDED_BOUNDED_THEOREM_NOTE_2026-07-26.md](../../archive_unlanded/historic_intake_originals/branch07/2111_WEAK_FIELD_MASS_LAW_EXPONENT_IS_AN_INTEGER_FORCED_BY_SELF_ADJOINTNESS_SUBLINEAR_RIVAL_EXCLUDED_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/physical_weak_field_exponent_from_self_adjointness_cycle707_2026_07_26(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ Corrects landed content (the P4 admission (c) discriminator was a comparison wit
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

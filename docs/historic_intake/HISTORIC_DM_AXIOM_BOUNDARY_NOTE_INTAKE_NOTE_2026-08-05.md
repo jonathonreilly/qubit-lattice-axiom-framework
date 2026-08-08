@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The 'bounded' label is localized precisely: it is A5, not a ch
 Scope: Runner PASS=27 FAIL=0 (8 exact, 6 derived, 13 logical); does not upgrade the lane status.
 Escape conditions (negative claims): The obstruction is a single named axiom; deriving or replacing A5 is the stated escape.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The DM lane bounded by exactly ONE axiom (A5 lattice-is-physical), nothing else — sharp conditionality localization with the escape named.
 
@@ -32,7 +34,8 @@ The DM lane bounded by exactly ONE axiom (A5 lattice-is-physical), nothing else 
 - Source commit: `0520816c283c82cebdbb46f608a2a05e6b9a73b2`
 - git blob: `6f5dd2b4b80b0653f875f040c7e29f7b3ba8f72d`
 - sha256: `fc45d0fb9aa5933c6922e8b8a664f4d2654a05e242473a5ad8b922317c14d534`
-- Lines: 234; runners named: scripts/frontier_dm_axiom_boundary.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/334_DM_AXIOM_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/334_DM_AXIOM_BOUNDARY_NOTE.md)
+- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_axiom_boundary(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

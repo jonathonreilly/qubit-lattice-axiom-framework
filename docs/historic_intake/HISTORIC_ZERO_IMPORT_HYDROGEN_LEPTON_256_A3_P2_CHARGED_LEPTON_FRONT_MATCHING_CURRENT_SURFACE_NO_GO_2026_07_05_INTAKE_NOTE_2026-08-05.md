@@ -1,9 +1,11 @@
 # Historic intake: A3 P2 Charged-Lepton Front-Matching Current-Surface No-Go
 
+Explicit subject: Narrowed claim: current surfaces do not supply CHARGED_LEPTON_FRONT_MATCHING_RETAINED. (The bare codes `A3`, `P2` in the title are era-local historic shorthand preserved verbatim from the original; the pinned original defines them.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +24,9 @@ Original verdict: Support-only non-supply boundary; the one-loop reading is targ
 Scope: Placement P2: spending the A3 correction as a charged-lepton weak-front threshold/matching effect.
 Escape conditions (negative claims): Derive the front-matching theorem turning F_0 into F_phys = C_A3 F_0 without comparator data, then ratify and audit.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The physically suggestive placement: delta_front = -3.22e-4 read as a one-loop SU(2) shift with b_2 = 19/6 — the front-matching target stated exactly.
 
@@ -32,7 +36,8 @@ The physically suggestive placement: delta_front = -3.22e-4 read as a one-loop S
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `373b785ac4a36124a393f5ef2b6200c9160e61ca`
 - sha256: `82c0ec6bec4eba7b7afdecdaf817c996f8feaf3857401e10c256e2299fe606a3`
-- Lines: 253; runners named: scripts/frontier_zero_import_hydrogen_lepton_256_a3_p2_charged_lepton_front_matching_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2630_ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2630_ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 253; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_a3_p2_charged_lepton_front_matching_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

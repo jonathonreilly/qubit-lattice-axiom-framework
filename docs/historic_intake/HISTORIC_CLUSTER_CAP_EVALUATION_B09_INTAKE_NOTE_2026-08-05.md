@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_governance_evaluation_correction_of_a_landed_pr_body
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: PROCEED; the fiber item reduces to one elementary exact lemma 
 Scope: Family after nine landed PRs.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Correction of landed PR content: block08's PR BODY carried 'matrix-fiber' scoping WITH an outside-toolkit label that the evaluator file did not have - a wrong outside-toolkit judgment in a landed PR body; the fiber item actually reduces to one elementary exact lemma verified on seven cases. Contradiction-disclosure companion attached.
 
@@ -32,6 +34,7 @@ Correction of landed PR content: block08's PR BODY carried 'matrix-fiber' scopin
 - Source commit: `4cd99ec077a533ab54b0bd833b0e0cad460742c3`
 - git blob: `e5de52f9b6936a1c5dab57c55a66ddadbc459dfa`
 - sha256: `f13e24ac2c650668b58b451773e992d7d96a870cc5e48e1d668b152ada20ffa2`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10688_CLUSTER_CAP_EVALUATION_B09.md](../../archive_unlanded/historic_intake_originals/packsci03/10688_CLUSTER_CAP_EVALUATION_B09.md)
 - Lines: 45; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ a landed PR body contained an incorrect outside-toolkit judgment and an incorrec
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_governance_evaluation_correction_of_a_landed_pr_body
 intake_directive: owner_2026-08-05
 ```
 

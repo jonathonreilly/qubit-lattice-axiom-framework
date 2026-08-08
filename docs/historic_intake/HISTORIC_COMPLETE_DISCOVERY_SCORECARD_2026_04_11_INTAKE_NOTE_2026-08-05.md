@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-11, branch frontier/spot-checks
 
@@ -22,7 +22,9 @@ Original verdict: The strong frontier additions are mostly bounded side results,
 Scope: A frontier triage surface, explicitly not a publication-ready summary; publication use is directed to two other documents.
 Escape conditions (negative claims): The negative results are each scoped to their protocol: Penrose scaling is unconfirmed though |E_self| ~ G is clean (the ratio is not constant); BH entropy is not established on this lattice sweep; confinement is dominated by staggered even/odd artifacts; the OTOC negative is about the script's single-particle spreading proxy; gravitational memory's N=61 ring pulse signal is real on its narrow protocol but fragile to size/position and Yukawa screening.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The era's retraction surface: six overclaimed lanes downgraded in one table (no retained Hawking-Page etc.) plus the bounded-retained inventory — the honest corrective record.
 
@@ -32,6 +34,7 @@ The era's retraction surface: six overclaimed lanes downgraded in one table (no 
 - Source commit: `0267ef09f8f8d12e2d72a15497b122f090247340`
 - git blob: `3522580456a184786187d1923f531b5265499316`
 - sha256: `e144a13ede024b8b44968748c8c46c979747928324b3cc49482cc1e41cee8120`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3591_COMPLETE_DISCOVERY_SCORECARD_2026-04-11.md](../../archive_unlanded/historic_intake_originals/recovery/3591_COMPLETE_DISCOVERY_SCORECARD_2026-04-11.md)
 - Lines: 60; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ The document is itself a retraction surface for six overclaimed lanes; caveats n
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Durability alone forces the Lueders form (runner SCORECARD 21/
 Scope: The central-sector decomposition {P_k} (which observable is recorded) is the supplied readout context, not derived; the Born probability pairing is a separate matter not re-derived. Adds no axiom, no fitted input, no audit verdict.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Durability alone forces the Lueders form (21/21, model-free) — Record-lane foundation theorem.
 
@@ -32,7 +34,8 @@ Durability alone forces the Lueders form (21/21, model-free) — Record-lane fou
 - Source commit: `850bbbcd5129da5c1f4a4af57f96c0b73a894fc6`
 - git blob: `ba600e76223790ef4f7f713f0a0e84f0473243f7`
 - sha256: `184ec5f52867b809ca9a69b7e108fcb0170386beac7c7ea5ec6c10fabb3ddfd3`
-- Lines: 110; runners named: scripts/frontier_luders_from_record_durability_2026_06_06.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1123_LUDERS_UPDATE_FROM_RECORD_DURABILITY_CONDITIONAL_EXPECTATION_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1123_LUDERS_UPDATE_FROM_RECORD_DURABILITY_CONDITIONAL_EXPECTATION_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_luders_from_record_durability_2026_06_06(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

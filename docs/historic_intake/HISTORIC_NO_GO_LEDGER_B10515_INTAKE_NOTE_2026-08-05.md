@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Every shortcut to a retained sqrt(sigma) is closed, one of the
 Scope: The B2 bridge; inherits three prior firewalls including the confinement-to-mass shortcut and the Banks-Casher Sigma route.
 Escape conditions (negative claims): A branch-local N_f = 2+1 dynamical ensemble with a defined full-QCD observable and uncertainty budget, targeting a pre-breaking window.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Verification-integrity catch plus route closure: the PDG backsolve factor 440/484 ~ 0.909 is EXPLICITLY CIRCULAR (it takes the target comparator as its own source), and every shortcut to a retained sqrt(sigma) is closed; the honest escape (branch-local N_f = 2+1 dynamical ensemble) is named.
 
@@ -32,6 +34,7 @@ Verification-integrity catch plus route closure: the PDG backsolve factor 440/48
 - Source commit: `b0067afbf66a4ced91b5fadd07dd54368539dc75`
 - git blob: `3aec55968310e6e20d63ac76416599775031c5dc`
 - sha256: `1cfe05e6c4524ee5a15ed582819c5358d349c99a72904f6cbbaafcf405b1797c`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10515_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10515_NO_GO_LEDGER.md)
 - Lines: 27; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Explicit circularity caught: a screening factor was being backsolved from the PD
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

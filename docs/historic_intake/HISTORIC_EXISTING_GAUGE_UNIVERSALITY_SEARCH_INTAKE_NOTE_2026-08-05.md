@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The mathematical gap (commutant universality) was smaller than
 Scope: Repo-wide search for existing proofs of gauge universality across BZ corners; the failing checks are interpreted as physically meaningful, not bugs.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Cl(3) commutant universality result (dim 8, corner-independent, 24 PASS) rests on an UNTRACKED uncommitted script — real result + integrity/recovery work order.
 
@@ -32,7 +34,8 @@ The Cl(3) commutant universality result (dim 8, corner-independent, 24 PASS) res
 - Source commit: `bf4da5cc67357acab4068eac0f5b09c2c0aad484`
 - git blob: `e0f53fc902360199c74031d6ee5270e5484fce29`
 - sha256: `91e843bd51bc52850cefac21fa81a3cb8a74c209ead471bda7229de16d58c617`
-- Lines: 233; runners named: scripts/frontier_generation_gauge_universality.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/454_EXISTING_GAUGE_UNIVERSALITY_SEARCH.md](../../archive_unlanded/historic_intake_originals/branch02/454_EXISTING_GAUGE_UNIVERSALITY_SEARCH.md)
+- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_gauge_universality(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The load-bearing script is UNTRACKED and uncommitted on the branch, and carries 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_claim_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: proposed_retained; review pass; audit required
 Scope: bounded scalar theorem only; two open imports for physical reuse
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean unlanded positive: proposed_retained uniform analytic bound on the endpoint derivative and its affine remainder; review pass, audit required. Narrow-boundary companion attached.
 
@@ -32,6 +34,7 @@ Clean unlanded positive: proposed_retained uniform analytic bound on the endpoin
 - Source commit: `901176782dc16fe598fd8a1ff31f60cb5cdd01e3`
 - git blob: `99986e43104f380f7944905ff6e90a15ee9ab21a`
 - sha256: `d1b8f1a0e2b9696dceae8fd6b9d342fe072182df09dab4bc63eab36115a16570`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11469_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci05/11469_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 30; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

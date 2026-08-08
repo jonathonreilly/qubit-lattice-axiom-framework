@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: RESOLVED negatively; the charged-lepton sector closes by obser
 Scope: Retained Cl(3)-on-Z^3 surface, hw=1 triplet, minimal 3+1 APBC block.
 Escape conditions (negative claims): Three sharply-named missing primitives are left for future retention; the note also names the nulls that would have to be ruled out (algebraic permissiveness, RG radiative accident, numerical coincidence at ~1e-4).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Best-practice pre-registered negative: a three-layer hypothesis (structural uniqueness of the ray; exact algebraic Koide Q=2/3; residual ratio fixed as an algebraic function) resolved NEGATIVELY with its falsifiers honored; the charged-lepton sector closes by observational pin at that era; three sharply-named missing primitives left for any future positive route. Negative side of the contradiction set with the April A_min-to-Q chain.
 
@@ -32,7 +34,8 @@ Best-practice pre-registered negative: a three-layer hypothesis (structural uniq
 - Source commit: `9555f3bebf08f0ad2812c482336cdcae5cf6801e`
 - git blob: `c269c2b11e86f3586056f5d87d56513722f80ab2`
 - sha256: `16f775a57fb098780c83190238225d61ecbe6d520efadd8220ef458b6c9b745b`
-- Lines: 168; runners named: scripts/frontier_charged_lepton_observable_curvature.py (proposed target)
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10100_charged-lepton-mass-hierarchy-from-hw1-observable.md](../../archive_unlanded/historic_intake_originals/packsci01/10100_charged-lepton-mass-hierarchy-from-hw1-observable.md)
+- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_observable_curvature.py (proposed target)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ Best-practice pre-registered negative: a three-layer hypothesis (structural uniq
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — Best-practice pre-registered negative: a three-layer hypothesis (structural uniqueness of the ray; exact algebraic Koide Q=2/3; residual ratio fixed as an algebraic function) resolved NEGATIVELY with its falsifiers honored; the charged-lepton sector closes by observational pin at that era; three sharply-named missing primitives left for any future positive route. Negative side of the contradiction set with the April A_min-to-Q chain.
+- Attaches across strata to [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — Best-practice pre-registered negative: a three-layer hypothesis (structural uniqueness of the ray; exact algebraic Koide Q=2/3; residual ratio fixed as an algebraic function) resolved NEGATIVELY with its falsifiers honored; the charged-lepton sector closes by observational pin at that era; three sharply-named missing primitives left for any future positive route. Negative side of the contradiction set with the April A_min-to-Q chain.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ Best-practice example in this stratum: falsifiers and nulls were written BEFORE 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

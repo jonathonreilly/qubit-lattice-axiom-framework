@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_residual_list_collapse_of_five_partial_closures_into_one_primitive
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Five exact rational faces collapse to one missing primitive; c
 Scope: The Route-2 center primitive.
 Escape conditions (negative claims): One center primitive supplies all five faces.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 MAJOR method finding from the s3-route2 chain: six recorded center residuals collapse - five exact rational faces are ONE missing primitive counted five times, so the lane's 'partial closures' overstated progress; one center primitive supplies all five faces. Atlas and convergence companions attached.
 
@@ -32,6 +34,7 @@ MAJOR method finding from the s3-route2 chain: six recorded center residuals col
 - Source commit: `1cec201c012e4bfb6e0836a60a692a4e1bb49ae1`
 - git blob: `6b439a9aa1a73ab2509f7cf64bcf9324602ca42f`
 - sha256: `4aff0267f75a4c45294704f552f07ab5f4ff9153aedfe36d3d24ccff43f392d0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10910_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10910_NO_GO_LEDGER.md)
 - Lines: 18; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -54,6 +57,7 @@ MAJOR method finding: five 'partial closures' in this lane were the same missing
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_residual_list_collapse_of_five_partial_closures_into_one_primitive
 intake_directive: owner_2026-08-05
 ```
 

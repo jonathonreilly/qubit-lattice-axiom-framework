@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retained_forced_closure_of_the_i5_gate
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The I5 PMNS angle-triple selector gate is retained-forced.
 Scope: Six retained inputs including the affine Hermitian chart, SELECTOR = sqrt6/3, Q_Koide = 2/3, sigma_hier = (2,1,0) and the A-BCC basin - the last of which the note itself says is observationally grounded via T2K CP-phase exclusion.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 'retained-forced, zero PMNS observational inputs' selector claim — pulled WITH the flag that it lists T2K-grounded inputs, against 1588/1590's failures; the contradiction set goes to audit.
 
@@ -32,7 +34,8 @@ The 'retained-forced, zero PMNS observational inputs' selector claim — pulled 
 - Source commit: `1a7f2e021e83ee881504fceee2668af8e0564aa3`
 - git blob: `4d17fe9bbc4103fd1dd108d79419a9838ef8dab2`
 - sha256: `e7514b318cc9cd4804e73ccc47c5ca3aade03a444da09afa32c70cead6aa0ce7`
-- Lines: 237; runners named: scripts/frontier_pmns_selector_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1581_PMNS_SELECTOR_CLOSURE_THEOREM_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1581_PMNS_SELECTOR_CLOSURE_THEOREM_NOTE_2026-04-21.md)
+- Lines: 237; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Title-vs-content: claims 'retained-forced' and 'zero PMNS observational inputs' 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retained_forced_closure_of_the_i5_gate
 intake_directive: owner_2026-08-05
 ```
 

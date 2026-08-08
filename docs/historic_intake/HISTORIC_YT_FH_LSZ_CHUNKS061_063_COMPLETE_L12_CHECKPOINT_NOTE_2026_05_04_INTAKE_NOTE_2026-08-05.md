@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_checkpoint
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Even the complete L12 set is bounded production support: fitte
 Scope: Complete L12 volume only; L16/L24 scaling untouched, scalar rows selected-mass-only at m_bare = 0.75.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The L12 production terminal: 63/63 chunks, 1008 configs — and even the complete set is bounded support; the campaign's largest compute honestly priced.
 
@@ -32,6 +34,7 @@ The L12 production terminal: 63/63 chunks, 1008 configs — and even the complet
 - Source commit: `aeeefff4691f7f7e64ec32863f34f5d4b954ba3c`
 - git blob: `930ba27bf0292abf0f7ddbcc00c2c677b2f889eb`
 - sha256: `0ed1e83d31ec8b19cb09ab888e6e846ec01e215347d8b59e2d4c2fc1e1a87c3d`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2220_YT_FH_LSZ_CHUNKS061_063_COMPLETE_L12_CHECKPOINT_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2220_YT_FH_LSZ_CHUNKS061_063_COMPLETE_L12_CHECKPOINT_NOTE_2026-05-04.md)
 - Lines: 121; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -98,6 +101,7 @@ The campaign's largest production effort (63 chunks, 1008 configurations) ends w
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_checkpoint
 intake_directive: owner_2026-08-05
 ```
 

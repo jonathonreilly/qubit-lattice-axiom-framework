@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conjecture
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: All 13 standard extremizations give kappa in {0, 1, 1/3, 3} or
 Scope: Offered as a candidate new primitive; alternative closure routes (Koide-Nishiura V(Phi) import, novel QFT mechanism) remain available.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Thirteen enumerated mechanism failures for A1 (all give kappa in {0,1,1/3,3}) â€” the strongest negative content; the new-law proposal flagged.
 
@@ -32,6 +34,7 @@ Thirteen enumerated mechanism failures for A1 (all give kappa in {0,1,1/3,3}) â€
 - Source commit: `fa74b00bca4035da7dd1d90564a0857c02533867`
 - git blob: `9981bc6f244d1d2afdc17cb4a4c0e47d30d5056b`
 - sha256: `53e672868f3dcb71427876f9436014ece44ff94685aed621267084e8478c1265`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1212_NEW_LAW_PROPOSAL_KOIDE_ISOTYPE_DEMOCRACY_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch04/1212_NEW_LAW_PROPOSAL_KOIDE_ISOTYPE_DEMOCRACY_2026-04-22.md)
 - Lines: 137; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Proposes adopting a new physical law as a retained primitive to close a value th
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conjecture
 intake_directive: owner_2026-08-05
 ```
 

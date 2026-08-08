@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_derived
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-12; framework axiom a = l_Planck
 
@@ -22,7 +22,9 @@ Original verdict: Testable with existing LIGO O1/O2/O3 data: confirmed if echoes
 Scope: All inputs determined (M and chi from LIGO, a = l_Planck from the framework axiom, m = m_nucleon from the SM); free parameters ZERO; the prediction is logarithmically insensitive to surface location — a factor-of-10 change in epsilon shifts t_echo by only ~5%.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 GW150914 echo prediction 68+/-3 ms — falsifiable against LIGO O1-O3, disagreeing with Abedi et al.; named notable deletion; wrapper must cross-flag its dependency on the frozen-stars runner attacked by 3080/3091.
 
@@ -32,7 +34,8 @@ GW150914 echo prediction 68+/-3 ms — falsifiable against LIGO O1-O3, disagreei
 - Source commit: `a52dc368136d4835addfcd60f04ae0ebf1324f4a`
 - git blob: `8ac1cda4576fa52e5d76eb170e66cefcaaa58ebc`
 - sha256: `02d2887eac11a4de20de60e34516fa5b9653d8d6b051d29326b8e6dd0d8027ea`
-- Lines: 199; runners named: scripts/frontier_gw_echo_derived.py, scripts/frontier_frozen_stars_rigorous.py, scripts/gw150914_echo_search.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3611_GW_ECHO_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3611_GW_ECHO_DERIVED_NOTE.md)
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gw_echo_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous(.py)`; historic runner (unpinned, not in this packet): `scripts/gw150914_echo_search(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-listed estimates: the Kerr correction uses the standard ECO tortoise factor
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_derived
 intake_directive: owner_2026-08-05
 ```
 

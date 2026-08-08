@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: actual_current_surface_status: demotion; review-loop demote
 Scope: bridge-conditional on assumed (R1)/(R2); slope, (R2) alternative, transport, physical half open
 Escape conditions (negative claims): cluster-cap evaluator had said OPEN-the-PR before review demoted it
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Honest-demotion terminal for the theta-cross-sector block03: the Record/log bridge forced-interface claim is DEMOTED - the combined review lens returned FOUR blockers refuting the central claim - and the block is archived with no PR. GOVERNANCE FLAG carried: the cluster-cap evaluator had approved opening the block before [the refutation] - the evaluator's OPEN call and the review outcome disagree, which is itself audit-relevant. Family attached, incl. the archived block05 draft whose central 'forced, not chosen' claim was refuted.
 
@@ -32,6 +34,7 @@ Honest-demotion terminal for the theta-cross-sector block03: the Record/log brid
 - Source commit: `9d6fa9051de8d0cd99c0010e157d177fc2fb41e5`
 - git blob: `b605dc9833f335ce8453d1a165d37ca65730c747`
 - sha256: `4f69a215531649b079cce4b96cf6e9006d2604f8c32ccfe1f4242f90951e8354`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11305_CLAIM_STATUS_CERTIFICATE_BLOCK03.md](../../archive_unlanded/historic_intake_originals/packsci05/11305_CLAIM_STATUS_CERTIFICATE_BLOCK03.md)
 - Lines: 74; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ cluster-cap evaluator approved opening before refutation — evaluator/review di
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

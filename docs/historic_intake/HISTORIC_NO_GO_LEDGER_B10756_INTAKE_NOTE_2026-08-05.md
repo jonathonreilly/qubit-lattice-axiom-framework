@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_chain_with_an_audit_failure_record
+Claim type: no_go
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Any route whose only distinction is 'first order is the bounda
 Scope: The Planck P_A retention lane.
 Escape conditions (negative claims): A cochain-normal primitivity rule would select P_A — but that rule is the extra boundary/orientation premise, not a derived consequence.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Landed-PR defect on the record: PR #228's carrier derivation (docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE) was audited `audited_renaming` - the headline derivation rests on renaming, and any route whose only distinction is 'first order is the boundary carrier' is CIRCULAR; the escape (a cochain-normal primitivity rule) is named. Hard-stop and repair companions attached.
 
@@ -32,7 +34,8 @@ Landed-PR defect on the record: PR #228's carrier derivation (docs/PLANCK_PRIMIT
 - Source commit: `4457be26488faf87ac5f22efb9b7142d2d78640f`
 - git blob: `468e93f2979b1c2981fbadeab551c1d44beffa83`
 - sha256: `d5c12a05322b2b9acf428eecd04e127ffe2c51ed1b3b3665a875db53e4de0b43`
-- Lines: 79; runners named: scripts/frontier_planck_boundary_orientation_incidence_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10756_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10756_NO_GO_LEDGER.md)
+- Lines: 79; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_boundary_orientation_incidence_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ a landed PR's headline derivation was found to rest on dimension-matching alone 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_chain_with_an_audit_failure_record
 intake_directive: owner_2026-08-05
 ```
 

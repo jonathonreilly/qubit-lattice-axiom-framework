@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: R remains an O(1) framework prediction but is NOT derived to 1
 Scope: Uses the framework's own central transport values (D_q T = 3.1, v_w = 0.014, L_w T = 13) with their stated bands; the dominant v_w spread comes from T_n/T_c in [0.95, 0.99].
 Escape conditions (negative claims): The negative is escapable by narrowing the transport bands: pinning T_n/T_c from the framework V_eff (collapsing v_w from 8x to ~1.5x), NLO ladder-resummed D_q T, or accepting an O(1) prediction; the note notes eta = eta_obs crosses at v/T ~ 0.52, inside the 0.56 +/- 0.05 band.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Definitive sensitivity no-go: eta exactly proportional to the transport prefactor, R NOT derived to 10% — falsifies the insensitivity hypothesis its siblings lean on; 40x tension at central values; escapes priced.
 
@@ -32,7 +34,8 @@ Definitive sensitivity no-go: eta exactly proportional to the transport prefacto
 - Source commit: `52efc7b06fa0487bda853cfc98a0f169cf698747`
 - git blob: `19cdeff1ad9e5687add65286c1f4919627f10a41`
 - sha256: `f4ebabc026909745d2ba9c072019895c6e7cade082e8ccd2006c18e8860114eb`
-- Lines: 179; runners named: scripts/frontier_dm_r_sensitivity.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/402_DM_R_SENSITIVITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/402_DM_R_SENSITIVITY_NOTE.md)
+- Lines: 179; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_r_sensitivity(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ At the framework's own central transport values eta ~ 2.4e-7, about 400x larger 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

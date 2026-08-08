@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The framework is internally consistent and the axioms have no 
 Scope: The central-sector partition delivers the channel COUNT (the 8/9 cardinality fraction) but not the weight; sin^2(theta_W) is kappa_EW-invariant and stays unconditional.
 Escape conditions (negative claims): The negative is structural rather than route-contingent: deriving kappa_EW would require the axioms to supply exactly the content they enumerate as not-supplied. The escape is therefore not a better derivation route but registry recognition of a new admitted input, or new axiom/primitive structure that supplies a weighting rule.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 kappa_EW is an axiom-boundary ADMITTED INPUT — the structural common cause behind a portfolio of route no-gos; the EW-normalization wall localized.
 
@@ -32,7 +34,8 @@ kappa_EW is an axiom-boundary ADMITTED INPUT — the structural common cause beh
 - Source commit: `5c9801ebb089aa7dce88a21d92d0a12281421089`
 - git blob: `feea60bf988dc138f4678811827f2c68c6d2e17d`
 - sha256: `bd0bc4e6e70501ee01931ef8a1c006b14a97470bf3529dec110b7d4391f7cb37`
-- Lines: 209; runners named: scripts/frontier_ew_kappa_axiom_boundary_admission.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/451_EW_KAPPA_IS_AXIOM_BOUNDARY_ADMISSION_NO_GO_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch02/451_EW_KAPPA_IS_AXIOM_BOUNDARY_ADMISSION_NO_GO_NOTE_2026-06-09.md)
+- Lines: 209; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ew_kappa_axiom_boundary_admission(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly does not claim kappa_EW = 0 (the data-preferred value) nor kappa_EW =
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

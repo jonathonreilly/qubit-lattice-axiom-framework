@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: CONSISTENT with the frozen-star prediction but not confirmed; 
 Scope: A blind autocorrelation first pass, not a detection pipeline; matched-filter analysis with injections is needed to assess false-alarm rate.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The GW echo SEARCH: top peak 121.6 ms at 3.0 sigma exactly 2.00x a subharmonic, five self-listed caveats — the observational leg of the echo trilogy (prediction 3611, zeroing 416).
 
@@ -32,7 +34,8 @@ The GW echo SEARCH: top peak 121.6 ms at 3.0 sigma exactly 2.00x a subharmonic, 
 - Source commit: `99ef2ccb002832073a889f715d7ef060ea24bb16`
 - git blob: `5a9c1acebe21b18d2ef8e560d404da2bb0f90ffa`
 - sha256: `3aa90a92c1faea24cf85d7f8bae88e06df3922f8d7eeb1e10cfb25ca9c481f90`
-- Lines: 153; runners named: scripts/gw150914_echo_search.py, scripts/gw150914_echo_definitive.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/657_GW150914_ECHO_SEARCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/657_GW150914_ECHO_SEARCH_NOTE.md)
+- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/gw150914_echo_search(.py)`; historic runner (unpinned, not in this packet): `scripts/gw150914_echo_definitive(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Lists five statistical caveats itself: the trials factor on a 3-sigma peak in 10
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

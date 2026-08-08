@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: 'Cl(3) on Z^3' is NOT one axiom — it is a tightly constraine
 Scope: Referee-facing accounting of how many independent assumptions the framework really has, with a per-result dependency appendix.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 25-assumption audit: 'Cl(3) on Z^3' is NOT one axiom — deflates the single-axiom slogan with the reduction honestly done.
 
@@ -32,6 +34,7 @@ The 25-assumption audit: 'Cl(3) on Z^3' is NOT one axiom — deflates the single
 - Source commit: `a889108a1bf9f5f54091d345612abd7ec7d7daa6`
 - git blob: `4e03fef04e026eb1ea5c8be844421d6d6133482e`
 - sha256: `5cc7332355d82eb9a4367df5e5654db5b360ee2b2fc39982e1ec49326b8b962c`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1153_MINIMAL_AXIOM_INVENTORY.md](../../archive_unlanded/historic_intake_originals/branch04/1153_MINIMAL_AXIOM_INVENTORY.md)
 - Lines: 321; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Explicitly contradicts the framework's own 'one axiom' framing and marks the cos
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

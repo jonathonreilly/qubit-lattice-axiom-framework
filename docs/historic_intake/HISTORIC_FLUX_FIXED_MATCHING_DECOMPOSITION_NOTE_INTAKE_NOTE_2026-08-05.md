@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The macroscopic exterior law is not a fitted a/r ansatz but th
 Scope: Finite enclosed source on the cubic lattice with Dirichlet box boundary conditions; shell-level matching only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact flux-fixed decomposition phi = Q G_0 + h replacing the ad hoc a/r fit — lattice-native monopole representative.
 
@@ -32,7 +34,8 @@ Exact flux-fixed decomposition phi = Q G_0 + h replacing the ad hoc a/r fit — 
 - Source commit: `f1f0c0e2688c13771f9c151f5dfa73f1aa3b9c6f`
 - git blob: `78e76f0706fda955c0e7e302d6053aa8914ecb6d`
 - sha256: `e67d9b330840be6d0e40e542eadf32e59103ee0dbe8988a765c5e7ea544228d1`
-- Lines: 147; runners named: scripts/frontier_flux_fixed_matching_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/499_FLUX_FIXED_MATCHING_DECOMPOSITION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/499_FLUX_FIXED_MATCHING_DECOMPOSITION_NOTE.md)
+- Lines: 147; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_flux_fixed_matching_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

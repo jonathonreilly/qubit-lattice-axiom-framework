@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The gate cannot be closed mathematically; the paper-safe claim
 Scope: Claims the mathematical content of the lattice structure has been COMPLETELY characterized - the gap is a missing axiom, not a missing computation.
 Escape conditions (negative claims): The escape is explicitly not a computation but an axiom: adopting A0 closes the gate, and the note argues this is the same status every physical framework's foundational ontological claim has.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The generation-physicality OBSTRUCTION INVENTORY: all eleven closure candidates classified, the gate cannot be closed mathematically, paper-safe form = conditional on A0 — the contest's honest terminal.
 
@@ -32,7 +34,8 @@ The generation-physicality OBSTRUCTION INVENTORY: all eleven closure candidates 
 - Source commit: `14ca93d6a1750322080c770c457d1152369f98d3`
 - git blob: `28e4548f050da3a80e1bf8e5e5dd0bbbb1d9ebc1`
 - sha256: `151af0dca6261aa9faf65ceb24c5de633ae391b3c599c3d48177d3c31008627b`
-- Lines: 292; runners named: scripts/frontier_generation_physicality_obstruction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/625_GENERATION_PHYSICALITY_OBSTRUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/625_GENERATION_PHYSICALITY_OBSTRUCTION_NOTE.md)
+- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_physicality_obstruction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -57,6 +60,7 @@ Asserts that no additional theorem exists - a strong exhaustiveness claim about 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -1,9 +1,11 @@
 # Historic intake: Charged-Lepton Koide A1 — Radian-Bridge Irreducibility Theorem
 
+Explicit subject: Across 47 mechanisms in 9 investigation rounds (12 obstruction classes including a Universal Lattice Closure Theorem, runner 33/33) no derivation of |b|^2/a^2 = 1/2 or delta = 2/9 rad exists in the tested probe space; the residual is exactly one quantization rule identifying a ... (The bare code `A1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +24,9 @@ Original verdict: The A1 condition and the Brannen phase are jointly structurall
 Scope: Retained Cl(3)/Z^3 + CL3_SM_EMBEDDING surface; the lattice-quantization-set language is explicitly lane-local and does not attach to the framework's axiom set unless a reviewer lifts it.
 Escape conditions (negative claims): The negative is scoped to the 47-mechanism probe space and rests on the Type-A/Type-B disjointness; postulate P (that the Yukawa phase is a Type-A observable carrying the Type-B quantum) is naturalized by the lattice-is-physical stance but not forced by the central axiom, so accepting P escapes the no-go — and the later Brannen-arg route escapes it by avoiding the R/Z -> U(1) lift entirely.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 47-mechanism irreducibility theorem: |b|^2/a^2 = 1/2 and delta = 2/9 jointly structurally irreducible on the tested surface — deflates the 'six independent derivations' claim; scoped escapes.
 
@@ -32,6 +36,7 @@ The 47-mechanism irreducibility theorem: |b|^2/a^2 = 1/2 and delta = 2/9 jointly
 - Source commit: `360efffd468baa3d713cb23bb768be7d647d7074`
 - git blob: `814b68b663444bcb200307bac9a47b5243c3695b`
 - sha256: `3c27ded20cd818faafde28dd0ecee565b00ac9b469f7862621b276683c97a05a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/754_KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch03/754_KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_THEOREM.md)
 - Lines: 306; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +54,7 @@ Explicitly deflates the framework's own 'six independent derivations of 2/9' to 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

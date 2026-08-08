@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Does not invalidate the DM relic ratio R, but the transport se
 Scope: At taste scalar mass m_s = 120 GeV with the 1-loop Daisy high-T potential and nucleation criterion S_3/T = 140 - all four flagged as possible sources of the problem.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The nucleation NEGATIVE: no force-balance solution — the wall runs away (detonation problem), conflicting with its same-day sibling; the pair goes to audit together.
 
@@ -32,7 +34,8 @@ The nucleation NEGATIVE: no force-balance solution — the wall runs away (deton
 - Source commit: `81a4efe78660d1bb27dc930c5e7cd8d8f2cc9149`
 - git blob: `32567a847a81ec90ed88b4e85e297e794cdb301d`
 - sha256: `9830bfa861dad46cb784020eea5ba96483adc39ed4764a8f58333d488c1271fc`
-- Lines: 71; runners named: scripts/frontier_dm_nucleation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/388_DM_NUCLEATION_FINDING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/388_DM_NUCLEATION_FINDING_NOTE.md)
+- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_nucleation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Negative finding: the framework does not uniquely predict m_s, and the detonatio
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

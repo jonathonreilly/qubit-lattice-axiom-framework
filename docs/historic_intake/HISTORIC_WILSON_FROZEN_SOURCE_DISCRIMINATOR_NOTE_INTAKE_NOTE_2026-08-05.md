@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_control_refutation
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: FAIL — the mutual-channel signal is predominantly a static-f
 Scope: Parameters identical to the audited robustness sweep; the frozen control is the simplest possible (phi computed once from the initial combined density).
 Escape conditions (negative claims): The refutation is specific to these Wilson parameters and to the simplest frozen control; it does not deny mutual attraction (both SHARED and FROZEN attract relative to SELF_ONLY), leaving open whether a genuinely dynamic signal exists elsewhere in parameter space.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE DECISIVE CONTROL: mutual-channel discriminator positive in only 15/45 — the signal is predominantly a static-field effect; directly contradicts the favourable sibling reading.
 
@@ -32,7 +34,8 @@ THE DECISIVE CONTROL: mutual-channel discriminator positive in only 15/45 — th
 - Source commit: `5a404d6736214caa3e59dc66bc76cfb7f8ccb69d`
 - git blob: `650ba78b4a0f1950def5d1270e68b5ab22a094e8`
 - sha256: `07f754b91e063385ded2037dbc0ff329eac07f1a11f303e5d62730062c208fd0`
-- Lines: 114; runners named: scripts/frontier_wilson_frozen_source_discriminator.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2123_WILSON_FROZEN_SOURCE_DISCRIMINATOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2123_WILSON_FROZEN_SOURCE_DISCRIMINATOR_NOTE.md)
+- Lines: 114; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_frozen_source_discriminator(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Directly contradicts the more favourable reading of the same control in TWO_BODY
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_control_refutation
 intake_directive: owner_2026-08-05
 ```
 

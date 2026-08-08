@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The 1+3+3+1 algebra is proven; the generation interpretation i
 Scope: The exact algebra is retained; the physical interpretation is bounded by taste-physicality, which is motivated but not a theorem.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Gate-2 closure with a WITHDRAWN supporting argument on record (Wilson entanglement) — the honest gate note; interpretation honestly not proven.
 
@@ -32,7 +34,8 @@ Gate-2 closure with a WITHDRAWN supporting argument on record (Wilson entangleme
 - Source commit: `87eb5109dc2bc0ce8350c02f02d63cea5c3dd327`
 - git blob: `b7a43c0492e02e73deb015a7a103528f844154aa`
 - sha256: `f4826b471c871db9262fa214c47aba0d184bc923f8d4bad1ed497c954d427463`
-- Lines: 71; runners named: scripts/frontier_generations_rigorous.py, scripts/frontier_generation_physicality.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/554_GATE_2_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/554_GATE_2_CLOSURE_NOTE.md)
+- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generations_rigorous(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_physicality(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly retracts a previously claimed supporting argument as not proving what
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

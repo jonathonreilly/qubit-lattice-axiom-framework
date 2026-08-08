@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Direct closure of the exact noncompletion blocker; review-loop
 Scope: The finite implemented-row computation and live pointwise comparison; the universal exact step-scale theorem FAILS the certificate and is excluded.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Unlanded positive closing a named blocker: the supplied mixed-precision implementation COMPLETES at h = 0.125, directly closing the exact noncompletion blocker. VERIFICATION-INTEGRITY FLAG: documents that rounded CACHED values had been standing in for the computation. Methodological companion attached.
 
@@ -32,6 +34,7 @@ Unlanded positive closing a named blocker: the supplied mixed-precision implemen
 - Source commit: `469dadb24c8e607f18c036110e1e48baa481517e`
 - git blob: `979573d1fcf5652a6a3e38678b20d9ca81ac962a`
 - sha256: `4407e3066b5d7595f539e3fcad3cf59d3a3880b9c47586c7f23f121a47642860`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10618_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10618_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 33; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Documents that rounded CACHED targets were previously used as proof inputs — t
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The freedom is not a scale — Cycle 885's closure claim is RE
 Scope: Same 12-configuration family and group as Cycle 885 with exact arithmetic; the block claims no closure of the surviving map space.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Refutation of Cycle 885's closure claim: EVERY finite rotation-invariant structuring set satisfies the window requirements — the freedom is not a scale; corrective on a sibling block.
 
@@ -32,7 +34,8 @@ Refutation of Cycle 885's closure claim: EVERY finite rotation-invariant structu
 - Source commit: `4d6bd258479797b6e6d1640c1fdfd4a79573908a`
 - git blob: `1ca833d8a47040bd53d7423385e36525b5f2c8d9`
 - sha256: `4eac401e4b90600829eae812cdd60ef723aed26fc179ec022e450e477ebe9d37`
-- Lines: 234; runners named: scripts/frontier_cycle887_window_freedom_2026_07_28.py, scripts/frontier_cycle887_window_freedom_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2132_WINDOW_FREEDOM_SIZED_CYCLE887_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2132_WINDOW_FREEDOM_SIZED_CYCLE887_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle887_window_freedom_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle887_window_freedom_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly retracts a sibling block's closure claim, and finds a quoted axiom cl
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

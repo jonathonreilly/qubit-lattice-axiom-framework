@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Derives none of the Record identities, coincidence certificate
 Scope: Conditional matcher/refinement/calibration interface model; supplied n=1 convention rescales the retained Cycle-313 response family and transfers to held n=2 and L=6 after each fixture's handshake.
 Escape conditions (negative claims): The falsified phase-free matcher is route-specific and explicitly NOT a time no-go; a separately encoded unique provenance field would be needed and this route does not supply it.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Synthesis terminal of the clock-matcher trio (Cycles 344/345/346): three bounded clock-side interface models; the phase-free equality matcher is FALSIFIED and routed to repair; derives none of the Record identities or clock laws. FLAG: the calibration route's response key is copied - carried on the record.
 
@@ -32,7 +34,8 @@ Synthesis terminal of the clock-matcher trio (Cycles 344/345/346): three bounded
 - Source commit: `fe789a7a8c1c83df459882a73cf2b8b0c2bb897e`
 - git blob: `c80df27c30acb6629a7e832e52a844a9e9d82ad0`
 - sha256: `1353904c4cdd9e56f7846c7be2060715692bfb92fe015fc7858edae7f125635a`
-- Lines: 408; runners named: scripts/named_record_clock_matcher_refinement_calibration_tournament_synthesis_cycle347_2026_07_18.py, scripts/physical_named_record_interval_direct_matcher_route_cycle344_2026_07_18.py, scripts/physical_named_record_chain_refinement_route_cycle345_2026_07_18.py, scripts/physical_clock_response_common_history_calibration_route_cycle346_2026_07_18.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2762_NAMED_RECORD_CLOCK_MATCHER_REFINEMENT_CALIBRATION_TOURNAMENT_SYNTHESIS_CYCLE347_NOTE_2026-07-18.md](../../archive_unlanded/historic_intake_originals/branch09/2762_NAMED_RECORD_CLOCK_MATCHER_REFINEMENT_CALIBRATION_TOURNAMENT_SYNTHESIS_CYCLE347_NOTE_2026-07-18.md)
+- Lines: 408; runners named: historic runner (unpinned, not in this packet): `scripts/named_record_clock_matcher_refinement_calibration_tournament_synthesis_cycle347_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_named_record_interval_direct_matcher_route_cycle344_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_named_record_chain_refinement_route_cycle345_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_clock_response_common_history_calibration_route_cycle346_2026_07_18(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The calibration route's response key is copied from the clock cylinder by the ho
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

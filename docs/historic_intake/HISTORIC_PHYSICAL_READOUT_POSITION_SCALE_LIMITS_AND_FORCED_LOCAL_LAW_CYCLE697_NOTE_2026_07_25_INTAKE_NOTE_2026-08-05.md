@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — load-bearing authority is MINIMAL_AXIOMS_2026-06-29 (Lattice + Record readout clause); runner imports nothing from the repo
 
@@ -22,7 +22,9 @@ Original verdict: The readout clause has two independent deficiencies — positi
 Scope: Displacement-kernel level with exact integer/Fraction arithmetic and a negative control per row; L1b's collapse to one ray is specific to nearest-neighbour range (at range sqrt(2) two dimensions survive); infinite record collections, non-scalar readouts, noncommutative readout products, anisotropic laws with a supplied preferred axis, and any physical interpretation of the scalar codomain are outside scope.
 Escape conditions (negative claims): L2 is escaped only by a site-anchored readout (a readout relativized to a site index rather than determined by content alone) — the note states the gravity runners' stipulation of their observable is therefore forced, not a defect. L3 is escaped only by an intensive construction, and the note proves repairing either does not repair the other. L1b depends on the stipulated range-1 restriction (false at range sqrt(2)) and on the offset-insensitivity condition, which is stated not derived. L1 does not certify the existing gravity runners at all, since they operate on generated DAGs rather than Z^3 record configurations.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Structural no-go from Record+Lattice alone: readout clause is position-blind and non-intensive (two independent deficiencies, escapes named — site-anchored readout); axiom-frontier relevant.
 
@@ -32,7 +34,8 @@ Structural no-go from Record+Lattice alone: readout clause is position-blind and
 - Source commit: `refs/pull-cache/5620`
 - git blob: `ffba61de9e7836a81ea007121129d5069b582d1a`
 - sha256: `114bb7fe0ad10c1572a726d11a40dfcf05d1edb1eebf004d6a6008e75b227c29`
-- Lines: 294; runners named: scripts/physical_readout_position_scale_limits_and_forced_local_law_cycle697_2026_07_25.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3089_PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md](../../archive_unlanded/historic_intake_originals/recovery/3089_PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md)
+- Lines: 294; runners named: historic runner (unpinned, not in this packet): `scripts/physical_readout_position_scale_limits_and_forced_local_law_cycle697_2026_07_25(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Self-stated: awards no N1-N8 verdict to its own negative content (L2 and L3), le
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

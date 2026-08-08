@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_status_note
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: structural, not coincidence; convention selection open
 Scope: panel synthesis reframing the coincidence question
 Escape conditions (negative claims): identify which of the three natural conventions is the framework's native angular convention
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Genuine structural positive from the 10-panelist review: 2/9 (d=3) and 5/36 (d=6) are ONE invariant (N-1)/N^2 appearing in six universal frames (Atiyah-Singer family, Bernoulli, Hur~...) - structural, not coincidence; what remains open is convention selection among three natural frames, stated exactly. Conditional-theorem and convention-tier companions attached with their flags.
 
@@ -32,6 +34,7 @@ Genuine structural positive from the 10-panelist review: 2/9 (d=3) and 5/36 (d=6
 - Source commit: `5a6411bac5851b52ff966c30a558084720618c09`
 - git blob: `c1bfa86d5308e7555d159fedd1aa2dd82ebd341e`
 - sha256: `baf10ff32d353381bd846a3fdcdc1c3122946b2db293012afc223200196298a2`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11539_PANEL_VERDICT_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11539_PANEL_VERDICT_2026-05-26.md)
 - Lines: 163; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -50,6 +53,7 @@ reverses HONEST_FINAL_STATE's pun diagnosis via panel convergence, not new deriv
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_status_note
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_derived
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: DERIVED with no bounded inputs, though the note itself flags t
 Scope: Ratio-only claim: absolute Omega_i still need H(T), M_Pl, g_*; Casimir-weighted Sommerfeld assumes single-gluon exchange dominance at alpha_s ~ 0.09.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The maximal DM claim: R derived with ZERO bounded inputs (self-dual g=1, spectral-action k=0) — pulled as one half of the contradiction pair with 365 so the audit lane rules.
 
@@ -32,7 +34,8 @@ The maximal DM claim: R derived with ZERO bounded inputs (self-dual g=1, spectra
 - Source commit: `9cf1ca94ac89ded36e07cc5d38dc18b201c4371a`
 - git blob: `1429ffe0c088bfe79cacf9f1309b471bf09b71df`
 - sha256: `56a3f4fc6ed8c27016bd861ac8d1861c50b06b0385a11ef91f19f31166647678`
-- Lines: 130; runners named: scripts/frontier_dm_graph_native.py, scripts/frontier_dm_clean_derivation.py, scripts/frontier_dm_stosszahlansatz_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/362_DM_GRAPH_NATIVE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/362_DM_GRAPH_NATIVE_NOTE.md)
+- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_graph_native(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Directly contradicts same-lane notes that keep g_bare = 1 and k = 0 BOUNDED; the
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_derived
 intake_directive: owner_2026-08-05
 ```
 

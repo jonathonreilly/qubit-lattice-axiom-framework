@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Airtight (Grind Program Batch 6, 25/25 PASS) — a single cita
 Scope: Even L; BZ-corner subspace of C^{L^3} only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Airtight intertwiner pullback transport (25/25) — a single citable result replacing per-result transports.
 
@@ -32,7 +34,8 @@ Airtight intertwiner pullback transport (25/25) — a single citable result repl
 - Source commit: `87375536ab5e9396c80358f285464b73f64bbbdd`
 - git blob: `41425e51e21b1ef0ca4521bf29488efebd8b5d1a`
 - sha256: `5c2b669a5a907d940738aeea9f13e54113876913b0db3604d32a2b23b88b4a74`
-- Lines: 108; runners named: scripts/frontier_intertwiner_pullback_s3_invariants.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/730_INTERTWINER_PULLBACK_S3_INVARIANTS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/730_INTERTWINER_PULLBACK_S3_INVARIANTS_NOTE.md)
+- Lines: 108; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_intertwiner_pullback_s3_invariants(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

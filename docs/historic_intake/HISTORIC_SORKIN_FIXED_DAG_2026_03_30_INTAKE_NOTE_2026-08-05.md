@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — path-sum with linear amplitude propagation on a fixed causal DAG
 
@@ -22,7 +22,9 @@ Original verdict: BORN RULE CONFIRMED — the model has standard pairwise interf
 Scope: Four slit configurations (-4,0,+4), (-2,0,+2), (-6,0,+6), (-4,+1,+6) with the DAG held fixed.
 Escape conditions (negative claims): The 'no higher-order interference' negative is stated to depend on holding the DAG fixed via amplitude-zeroing rather than node removal; the escape it identifies is topology change, where DAG reconfiguration reintroduces nonlinear coupling between slit configurations (the original I3 up to 4.6e9).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Machine-precision pairwise-only result PLUS the mechanism discovery: apparent Sorkin violations up to 1e9 x P in causal-DAG models are entirely topology reconfiguration; fixed-DAG protocol restores I3=0 exactly. Citable caution for discrete/causal-set interference tests. Sanity objection (linearity guarantees I3=0) goes in the wrapper caveat.
 
@@ -32,6 +34,7 @@ Machine-precision pairwise-only result PLUS the mechanism discovery: apparent So
 - Source commit: `ae6269eca37448cc6f7a6a01b3cb58c3ad78f612`
 - git blob: `a5dbb508c21322da7b5a611b5f6a17672e0e25f9`
 - sha256: `dec62233266ac68963c1f64e2ee75f88224d8400fb2e8de4a399a1018a8d3db6`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3132_sorkin-fixed-dag-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3132_sorkin-fixed-dag-2026-03-30.md)
 - Lines: 45; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -51,6 +54,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

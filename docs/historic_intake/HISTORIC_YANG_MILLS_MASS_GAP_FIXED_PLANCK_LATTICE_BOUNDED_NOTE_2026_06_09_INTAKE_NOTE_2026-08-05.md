@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Existence is rigorous, the mass gap is rigorous at strong coup
 Scope: Fixed-Planck-lattice setting only; the framework never takes a -> 0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Rigorous existence at fixed a (compact-group convergence + strong-coupling gap) — WITH the Yang-Mills-title flag; the reframing's honest content.
 
@@ -32,7 +34,8 @@ Rigorous existence at fixed a (compact-group convergence + strong-coupling gap) 
 - Source commit: `f467d39945738bf60861b64ae73a5afaae41b1c1`
 - git blob: `89364133bc78c59b551c25625d9c3d5d43f5d8b0`
 - sha256: `00771f7f6829e05dc946e839e5d60e90cebbccb5838b35f0c7c64e2fcc1bc1aa`
-- Lines: 134; runners named: scripts/frontier_yang_mills_gap_fixed_planck_lattice_2026_06_09.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2137_YANG_MILLS_MASS_GAP_FIXED_PLANCK_LATTICE_BOUNDED_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch07/2137_YANG_MILLS_MASS_GAP_FIXED_PLANCK_LATTICE_BOUNDED_NOTE_2026-06-09.md)
+- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yang_mills_gap_fixed_planck_lattice_2026_06_09(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Title invokes the Yang-Mills mass gap; the note itself opens with a bold disclai
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

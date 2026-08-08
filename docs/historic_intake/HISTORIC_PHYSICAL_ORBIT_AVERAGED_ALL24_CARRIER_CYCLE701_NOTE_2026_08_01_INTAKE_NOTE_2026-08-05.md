@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — cites MINIMAL_AXIOMS_2026-06-29; assumes the landed Cycle-696 pipeline's D3 covariance and lattice-axiom rotations
 
@@ -22,7 +22,9 @@ Original verdict: A real-space all-24 coframe carrier exists at the stated price
 Scope: The averaged carrier is honestly a four-complex mixture, not a single-complex construction; O means the 24 proper cubic rotations only; odd L only (L = 3, 7) because the pullback convention is site-centred; no dynamics, coupling, action, energy, or observable is attached — this is a transformation-law object only.
 Escape conditions (negative claims): Cycle 690's no-go quantifies over constructions repeating one fixed triangulation and is untouched: this average repeats four complexes, so it escapes by leaving the quantification rather than contradicting it; Cycle 696's achievable_covariance_scope = 6 remains correct for the single-complex pipeline.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 An all-24-equivariant real-space coframe carrier EXISTS (orbit-averaged, defect 2.2e-16, price = four pulled-back copies) — the carrier-side counterpart of the landed covariance ceiling, with the no-go's quantifier correctly respected.
 
@@ -32,7 +34,8 @@ An all-24-equivariant real-space coframe carrier EXISTS (orbit-averaged, defect 
 - Source commit: `refs/pull-cache/5879`
 - git blob: `70f074ff547d27f7a40f289d897b7e737dd29a25`
 - sha256: `82db1fc27862175f07d519d27af84c4c782a0d4aca10eba74e3d58b6af706ac6`
-- Lines: 208; runners named: scripts/physical_orbit_averaged_all24_carrier_cycle701_2026_08_01.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3087_PHYSICAL_ORBIT_AVERAGED_ALL24_CARRIER_CYCLE701_NOTE_2026-08-01.md](../../archive_unlanded/historic_intake_originals/recovery/3087_PHYSICAL_ORBIT_AVERAGED_ALL24_CARRIER_CYCLE701_NOTE_2026-08-01.md)
+- Lines: 208; runners named: historic runner (unpinned, not in this packet): `scripts/physical_orbit_averaged_all24_carrier_cycle701_2026_08_01(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ Self-noted: all cited dependency notes are landed and unaudited on main.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

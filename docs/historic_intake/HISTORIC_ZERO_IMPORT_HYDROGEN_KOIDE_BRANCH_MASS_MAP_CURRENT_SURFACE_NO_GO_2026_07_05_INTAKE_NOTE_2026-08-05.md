@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; the cleanest wall is the squ
 Scope: The branch-to-mass map input needed by the physical electron mass lane.
 Escape conditions (negative claims): Supply the four missing inputs (chiefly a physical square-root readout and chamber/sign rule) plus owner ratification and audit acceptance.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Branch-mass-map terminal: four of ten inputs missing; the cleanest wall is the physical square-root readout/chamber selection.
 
@@ -32,7 +34,8 @@ Branch-mass-map terminal: four of ten inputs missing; the cleanest wall is the p
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `16265bbb6498741557d32d749cced5917f625c33`
 - sha256: `7660ab6c2f9762cb4357704709648d27a6a73166e4e9f8e0c8d6c89c8d4a5b7f`
-- Lines: 269; runners named: scripts/frontier_zero_import_hydrogen_koide_branch_mass_map_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2517_ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2517_ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 269; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_koide_branch_mass_map_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

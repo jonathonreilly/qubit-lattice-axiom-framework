@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A bounded cosmological consistency check plus an exact structu
 Scope: The numerical match is BOUNDED (depends on N_obs ~ 1e78); the vanishing at d=3 is EXACT.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 n_s = 1 - 2/N_e exact to all computed orders precisely at d=3 — an exact structural selection.
 
@@ -32,7 +34,8 @@ n_s = 1 - 2/N_e exact to all computed orders precisely at d=3 — an exact struc
 - Source commit: `ec720017167b9f6d2ca09eb596f3c83b5fcff7c5`
 - git blob: `5a54d5cf390c15b160f45144b88c9c9a1c55487e`
 - sha256: `ab6b17d0326d6c76075214a1fba171546e18c3a41e8ad521b2f2858112c3cd90`
-- Lines: 108; runners named: scripts/frontier_ns_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1221_NS_SPECTRAL_TILT_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1221_NS_SPECTRAL_TILT_DERIVED_NOTE.md)
+- Lines: 108; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ns_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: converged bounded no-go; PASS=35 FAIL=0; decisions deferred to
 Scope: native-only derivability of delta and eta; three closing positions P1-P3 named
 Escape conditions (negative claims): new retained content at P1 (non-Q-algebraic radian source), P2 (re-expression substrate), or P3 (sector coupling)
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Pulled AS PART OF THE WITHDRAWAL SET (with 11538 and 11534): the converged 12-cycle bounded no-go (PASS=35/0 under the 2026-05-26 A1+A2-plus-retained-inventory charter) that was SUBSEQUENTLY WITHDRAWN when the panel found the route space incomplete. The full arc - a no-go that passed every discipline gate and was still wrong - is exactly the evidence class the audit lane needs on file. The lane's ledger-staleness checks and honesty charter attached; the charter remains a reusable template even though this conclusion fell.
 
@@ -32,7 +34,8 @@ Pulled AS PART OF THE WITHDRAWAL SET (with 11538 and 11534): the converged 12-cy
 - Source commit: `4781e68cd800370912fea36ecb32513721a95c5b`
 - git blob: `07de3f49ff1df2647ed8283875d2b15135d1ba0b`
 - sha256: `1b82198fe1db0438232e4d92f69fb8259effb4bee36e590d90f8408b05d58b6a`
-- Lines: 126; runners named: runners/cross_sector_bounded_no_go_verifier.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11516_CAMPAIGN_REPORT.md](../../archive_unlanded/historic_intake_originals/packsci05/11516_CAMPAIGN_REPORT.md)
+- Lines: 126; runners named: historic runner (unpinned, not in this packet): `runners/cross_sector_bounded_no_go_verifier(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,6 +53,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

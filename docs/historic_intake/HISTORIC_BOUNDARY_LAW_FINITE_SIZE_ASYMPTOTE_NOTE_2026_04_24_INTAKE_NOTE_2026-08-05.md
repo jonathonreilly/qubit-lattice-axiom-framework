@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A sharper finite-size characterization: the suppression is a 1
 Scope: Sides 8-16, G in {0, 5, 10, 20}; runner 3/5 PASS with B.2 and B.3 as real falsifying findings.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Boundary-law terminal: gravity suppression is a 1/side finite-size effect (RMS<2% fits), asymptote not certified — two of its own checks failing as genuine falsifications, on the record.
 
@@ -32,7 +34,8 @@ Boundary-law terminal: gravity suppression is a 1/side finite-size effect (RMS<2
 - Source commit: `e24f8f7827355bbcee85c2fd6ec5bab0793e3fac`
 - git blob: `fbac0a084a582f4c313b67a315e359a9eb82d18b`
 - sha256: `e34884459515369a1bb107ce6fa32ad28b87f7c73fd251a0d373d7db2eb00a9b`
-- Lines: 177; runners named: scripts/frontier_boundary_law_coefficient_stability.py, scripts/frontier_boundary_law_finite_size_asymptote.py, scripts/frontier_boundary_law_robustness.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/117_BOUNDARY_LAW_FINITE_SIZE_ASYMPTOTE_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch01/117_BOUNDARY_LAW_FINITE_SIZE_ASYMPTOTE_NOTE_2026-04-24.md)
+- Lines: 177; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_coefficient_stability(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_finite_size_asymptote(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_robustness(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Two of five checks fail as genuine falsifications of the note's own stronger hyp
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

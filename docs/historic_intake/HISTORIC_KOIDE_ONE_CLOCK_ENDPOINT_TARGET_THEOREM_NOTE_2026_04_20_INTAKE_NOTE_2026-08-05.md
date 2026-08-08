@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The smallest constructive charged-lepton target visible on mai
 Scope: Exact constructive reduction on current main; the note does not derive the endpoint law itself.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Synthesis collapsing the constructive Koide route to ONE ambient one-clock endpoint law — lane-defining target statement.
 
@@ -32,7 +34,8 @@ Synthesis collapsing the constructive Koide route to ONE ambient one-clock endpo
 - Source commit: `1bf1a17b8e56a52c8195806e2cccac1a63b2eb01`
 - git blob: `68366abe82fface3a171648c0edc4a018cc60018`
 - sha256: `0377a6f189f956d3ad9d4ce4b35374055e736837d2645d02f54dada95a3bd10f`
-- Lines: 187; runners named: scripts/frontier_koide_one_clock_endpoint_target_theorem_2026_04_20.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/877_KOIDE_ONE_CLOCK_ENDPOINT_TARGET_THEOREM_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch03/877_KOIDE_ONE_CLOCK_ENDPOINT_TARGET_THEOREM_NOTE_2026-04-20.md)
+- Lines: 187; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_one_clock_endpoint_target_theorem_2026_04_20(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

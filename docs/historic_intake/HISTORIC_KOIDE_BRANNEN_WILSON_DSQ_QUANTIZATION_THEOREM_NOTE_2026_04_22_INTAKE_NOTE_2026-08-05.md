@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Proposes closure of the residual radian-bridge postulate P by 
 Scope: Review package only, self-contained and not landed on main; the closure is retained-CONDITIONAL with its load-bearing step named — the one-clock natural-time identification under hbar = 1.
 Escape conditions (negative claims): The radian-bridge no-go is escaped by the rigid-triangle reading (delta as a Euclidean rotation angle rather than an R/Z holonomy) plus the natural-time pairing, which the note names explicitly as the load-bearing and still-conditional step.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The rigid-triangle rotation theorem: delta(m) as exact Euclidean rotation angle with ang(m_0) = -pi/2 — the Wilson cluster's main conditional closure, escape-route from the radian no-go stated.
 
@@ -32,7 +34,8 @@ The rigid-triangle rotation theorem: delta(m) as exact Euclidean rotation angle 
 - Source commit: `ea6d99a8a13cc38c61b3063e0beb1b7efcb12044`
 - git blob: `c1d29c1a0cee72ff55e37a4d86da5b7e761f53c8`
 - sha256: `b49ddfdde6cb1134fb76aea4a8810a3e48b3875216e4e12b3173a309ebf2a283`
-- Lines: 411; runners named: scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/767_KOIDE_BRANNEN_WILSON_DSQ_QUANTIZATION_THEOREM_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch03/767_KOIDE_BRANNEN_WILSON_DSQ_QUANTIZATION_THEOREM_NOTE_2026-04-22.md)
+- Lines: 411; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ Self-labelled retained-CONDITIONAL closure whose load-bearing natural-time ident
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

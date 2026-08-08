@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The current axioms alone cannot select the dynamics or imply f
 Scope: One-hop authority is MINIMAL_AXIOMS_2026-06-29 alone; no fitted target, observed Yukawa, plaquette, UV cut, profile family, SM beta function or literature value enters the proof.
 Escape conditions (negative claims): Derive a specific microscopic dynamics plus a source/readout law; the countermodel lives only in the freedom the axioms leave, so fixing that freedom voids it.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Foundational no-go: the four axioms supply no dynamics — an affine first-order endpoint-response kernel is NOT derivable; the axiom surface's honest boundary.
 
@@ -32,7 +34,8 @@ Foundational no-go: the four axioms supply no dynamics — an affine first-order
 - Source commit: `6506346ca7fbc5e65a990cd2284f80bd13d69552`
 - git blob: `f3add092c59c177bb923f2d3196cd7d80551c3d1`
 - sha256: `377f578ed365a4e3cd099d03402d7ec4ad84c8bb7f6845dee4274ccf4ce8bc59`
-- Lines: 277; runners named: scripts/frontier_yt_bridge_moment_closure_current_axiom_nonselection.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2144_YT_BRIDGE_MOMENT_CLOSURE_CURRENT_AXIOM_NONSELECTION_NO_GO_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch07/2144_YT_BRIDGE_MOMENT_CLOSURE_CURRENT_AXIOM_NONSELECTION_NO_GO_NOTE_2026-07-12.md)
+- Lines: 277; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_bridge_moment_closure_current_axiom_nonselection(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

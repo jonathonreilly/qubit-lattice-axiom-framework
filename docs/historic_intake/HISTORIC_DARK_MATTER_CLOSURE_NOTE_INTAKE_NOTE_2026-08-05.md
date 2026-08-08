@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The same feature that saves the candidate makes it untestable:
 Scope: Lane bounded — consistent but not predictive.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The DM taste-singlet terminal assessment WITH the unfalsifiability concession (a purely gravitational Planck-mass relic is untestable from inside) — adverse evidence the DM lane must carry.
 
@@ -32,7 +34,8 @@ The DM taste-singlet terminal assessment WITH the unfalsifiability concession (a
 - Source commit: `69c58673ff90b8ba280d115567bcbeb74bbc663c`
 - git blob: `255853644a526a4c95f6da3fea9ef1fcaf7e7bc3`
 - sha256: `0a4c217b17054f97a535127233ba8f1df378416800228997db9ef2675f3436a6`
-- Lines: 274; runners named: scripts/frontier_dark_matter_closure.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/286_DARK_MATTER_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/286_DARK_MATTER_CLOSURE_NOTE.md)
+- Lines: 274; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dark_matter_closure(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Concedes the candidate is unfalsifiable from within the framework.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — LATTICE axiom of MINIMAL_AXIOMS_2026-06-29 supplies nearest-neighbour adjacency of Z^3 and nothing else; time is not an axiom, the tick is the direction of monotone record accumulation with no adjacency of its own
 
@@ -22,7 +22,9 @@ Original verdict: The adjacency cost is extensive across a tick boundary — not
 Scope: Exact for minimal-volume corner pieces only, the same class as Cycle 725; a statement about two ticks (whether every longer run does the same is open, and the ceiling side has no subadditivity argument at all); the spatial block is still a single lattice cell.
 Escape conditions (negative claims): The adjacency charge weights spatial pairs and ignores tick separation, which the note attributes to the axiom's own asymmetry rather than a modelling choice — and identifies as the reason the answer can be extensive (the tick adds pieces without adding chargeable pairs). A framework later giving the tick its own weight would be asking a different question, and the newly introduced tick-span charge is named as where such a weight would go. Certificate denominators 2 and 288 are not claimed minimal.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Adjacency cost is exactly extensive across a tick boundary (complete enumeration, 17,280 pieces); the two-tick bracket.
 
@@ -32,7 +34,8 @@ Adjacency cost is exactly extensive across a tick boundary (complete enumeration
 - Source commit: `6b45fe0b1bf2694fe83b39ebbad5d912c46ae733`
 - git blob: `ac24d4cbb54f53de5d11f2527bd29dd4a26c7a88`
 - sha256: `92b0962e77832b19e39bc15138f46991c3d965ea2c8190de2cf80356fd9ceb84`
-- Lines: 210; runners named: scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3106_PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3106_PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md)
+- Lines: 210; runners named: historic runner (unpinned, not in this packet): `scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

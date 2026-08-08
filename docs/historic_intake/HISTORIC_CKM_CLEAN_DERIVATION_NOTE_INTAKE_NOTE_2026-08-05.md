@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A clean derived/not-derived boundary for the CKM lane, with pa
 Scope: Lane status BOUNDED; all lattice computations at finite L (<= 8 for overlaps, 12 for production) with ~98% volume spread and no continuum extrapolation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The CKM chain's derived/not-derived boundary WITH the live discrepancy on the record (framework delta_CP = 120 vs PDG 65.5) — the lane's honest claim surface.
 
@@ -32,7 +34,8 @@ The CKM chain's derived/not-derived boundary WITH the live discrepancy on the re
 - Source commit: `c8a115dc33c7565caf57e90cb3a30b9cef69e7d5`
 - git blob: `2123664a4c4451f475283df7a251a1ffde4f931e`
 - sha256: `598893504f0063e7cca4a03f3d2a09a5b88b2cc46368d3d8d5da725da30d61f9`
-- Lines: 287; runners named: frontier_ckm_closure.py, frontier_ckm_from_mass_hierarchy.py, frontier_ckm_with_ewsb.py, scripts/frontier_ckm_c23_analytic.py, scripts/frontier_ckm_closure.py, scripts/frontier_ckm_from_mass_hierarchy.py, scripts/frontier_ckm_nni_coefficients.py, scripts/frontier_ckm_with_ewsb.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/178_CKM_CLEAN_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/178_CKM_CLEAN_DERIVATION_NOTE.md)
+- Lines: 287; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_closure(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_with_ewsb(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_c23_analytic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_nni_coefficients(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_with_ewsb(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -58,6 +61,7 @@ Records a live discrepancy: the framework's delta_CP is 120 degrees while the ob
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

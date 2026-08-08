@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The residual is not an artifact of choosing the wrong local cu
 Scope: The exact local O_h family on the star support; a useful negative result.
 Escape conditions (negative claims): Two named escapes: a coarse-grained/effective physical source law in a narrower class, or a corrected nonlinear exterior metric law replacing the direct common-source ansatz.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 162 admissible exact O_h source laws scanned: the residual is NOT a wrong-source artifact — with two named escapes; the shell lane's honest negative.
 
@@ -32,7 +34,8 @@ Escape conditions (negative claims): Two named escapes: a coarse-grained/effecti
 - Source commit: `97c12832a12ec9a8192c5c5c11347bdfec62887a`
 - git blob: `758f9b2a5afb55567cd318c677ff7ae8e9a51bb4`
 - sha256: `ff4bc98a5981d7c093ea57124a1abedd3a9109dc5c8648a20338a03423f06ed5`
-- Lines: 136; runners named: scripts/frontier_oh_source_class_scan.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1231_OH_SOURCE_CLASS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1231_OH_SOURCE_CLASS_NOTE.md)
+- Lines: 136; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_oh_source_class_scan(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conjecture
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: KOIDE_CURRENT_RETAINED_Q_CLOSURE=FALSE and DELTA_CLOSURE=FALSE
 Scope: Conditional positive theorem, explicitly not retained closure; the scale v_0 stays separate.
 Escape conditions (negative claims): Four falsifiers named: a Morita-normalized but not component-anonymous source preparation, a physical reason the C_3 character-orbit distinction stays visible after quotient-center reduction, a nonzero endpoint transition preserving the closed APS value, or a nontrivial complement segment in the physical APS boundary.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The lane's distillation: TWO named residual principles (Morita-normalized component-anonymous source; selected-line orientation) with falsifiers — the sharpest statement of what is actually missing.
 
@@ -32,7 +34,8 @@ The lane's distillation: TWO named residual principles (Morita-normalized compon
 - Source commit: `7b2531e0084b600dbf3d410d117c568a230c5f88`
 - git blob: `357005833ee17ae10450b699e7d6d3024b33e287`
 - sha256: `7adf3d45837e0576cd4929709d2ad57427ad39ef28c5f542b4d60fef219a47b1`
-- Lines: 117; runners named: scripts/frontier_koide_minimal_positive_principle_packet.py, scripts/frontier_koide_hostile_review_guard.py, scripts/frontier_koide_lane_regression.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/872_KOIDE_MINIMAL_POSITIVE_PRINCIPLE_PACKET_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch03/872_KOIDE_MINIMAL_POSITIVE_PRINCIPLE_PACKET_NOTE_2026-04-24.md)
+- Lines: 117; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_minimal_positive_principle_packet(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_hostile_review_guard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_lane_regression(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conjecture
 intake_directive: owner_2026-08-05
 ```
 

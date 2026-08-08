@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_source_side_route_map_partial_narrowing
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The repo is in a better state but not finished; the named gate
 Scope: Route map only - explicitly does not set an audit verdict, edit the Tier-A registry, register a primitive, refresh generated ledgers or claim any admission retired; includes an eight-part no-go discipline gate (N1-N8).
 Escape conditions (negative claims): Each gate names its own escape; N2 records that some walls are not fully independent (W_context and W_species share record samples; W_source_action_observable interacts with measurement semantics).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The post-reset route map: 'missing dynamics' split into typed named gates, ranked — the post-axiom planning terminal (owner-surface).
 
@@ -32,6 +34,7 @@ The post-reset route map: 'missing dynamics' split into typed named gates, ranke
 - Source commit: `0c178a34d90ee4a81b0c34617d2e207e04e0d43c`
 - git blob: `d1b1557540c09a05c2357da4439c55897dfea963`
 - sha256: `6172cd68e603a2105f963af6ec52914d081d39e733053f4a20423c6776efc81b`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1626_POST_AXIOM_ADOPTION_REMAINING_HARD_GATE_ROUTE_MAP_2026-06-30.md](../../archive_unlanded/historic_intake_originals/branch05/1626_POST_AXIOM_ADOPTION_REMAINING_HARD_GATE_ROUTE_MAP_2026-06-30.md)
 - Lines: 451; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_source_side_route_map_partial_narrowing
 intake_directive: owner_2026-08-05
 ```
 

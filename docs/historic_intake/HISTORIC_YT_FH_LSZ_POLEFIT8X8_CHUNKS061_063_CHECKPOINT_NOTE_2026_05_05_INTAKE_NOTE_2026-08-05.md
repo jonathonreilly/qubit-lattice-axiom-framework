@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_checkpoint
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The finished eight-mode stream still lacks FV/IR and zero-mode
 Scope: Complete L12 finite-shell stream; L16/L24 scaling untouched.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The polefit8x8 terminal: complete designed statistics make the failure DEFINITIVE — Stieltjes violation grows 5 to 111 sigma with statistics; the stream's honest verdict.
 
@@ -32,7 +34,8 @@ The polefit8x8 terminal: complete designed statistics make the failure DEFINITIV
 - Source commit: `0665dc40792f88dbddf72bee0b30fa99215bdd8f`
 - git blob: `0377be434366a9f2f6be0ad05944751b2a2183de`
 - sha256: `94ac85b5dae8b7e60af963ddcbca6772d0d95d1044fcf88c35e11b8347dfc719`
-- Lines: 88; runners named: scripts/frontier_yt_fh_lsz_affine_contact_complete_monotonicity_no_go.py, scripts/frontier_yt_fh_lsz_contact_subtraction_identifiability.py, scripts/frontier_yt_fh_lsz_global_production_collision_guard.py, scripts/frontier_yt_fh_lsz_polefit8x8_chunk_combiner_gate.py, scripts/frontier_yt_fh_lsz_polefit8x8_postprocessor.py, scripts/frontier_yt_fh_lsz_polefit8x8_stieltjes_proxy_diagnostic.py, scripts/frontier_yt_fh_lsz_polynomial_contact_finite_shell_no_go.py, scripts/frontier_yt_pr230_campaign_status_certificate.py, scripts/frontier_yt_pr230_full_positive_closure_assembly_gate.py, scripts/frontier_yt_pr230_non_chunk_closure_worklist.py, scripts/frontier_yt_retained_closure_route_certificate.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2266_YT_FH_LSZ_POLEFIT8X8_CHUNKS061_063_CHECKPOINT_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch07/2266_YT_FH_LSZ_POLEFIT8X8_CHUNKS061_063_CHECKPOINT_NOTE_2026-05-05.md)
+- Lines: 88; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_affine_contact_complete_monotonicity_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_contact_subtraction_identifiability(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_global_production_collision_guard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_chunk_combiner_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_postprocessor(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_stieltjes_proxy_diagnostic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polynomial_contact_finite_shell_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_campaign_status_certificate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_full_positive_closure_assembly_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_non_chunk_closure_worklist(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_retained_closure_route_certificate(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -99,6 +102,7 @@ Completing the full designed statistics makes the necessary-condition failure wo
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_checkpoint
 intake_directive: owner_2026-08-05
 ```
 

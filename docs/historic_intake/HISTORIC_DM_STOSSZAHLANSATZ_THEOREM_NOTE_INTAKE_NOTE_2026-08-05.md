@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: PROVED as a self-contained lattice theorem replacing the cited
 Scope: Free (Gaussian) field only - Wick's theorem is exact there; the interacting case needs spectral-gap persistence under weak coupling, and freeze-out density is a bounded cosmological input.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Self-contained lattice Stosszahlansatz theorem (explicit decay constants, five steps) honestly scoped to the free theory — a real theorem replacing cited arguments.
 
@@ -32,7 +34,8 @@ Self-contained lattice Stosszahlansatz theorem (explicit decay constants, five s
 - Source commit: `56d8565f1199dd1eb91f4329941e416a8662d7d0`
 - git blob: `769b9fc1b97ed4d997806a0283a5425ff9386243`
 - sha256: `d2ff19121ed25442119c2b54118225067aa2d581aaf2a11250d58f10e3290c36`
-- Lines: 165; runners named: scripts/frontier_dm_stosszahlansatz_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/405_DM_STOSSZAHLANSATZ_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/405_DM_STOSSZAHLANSATZ_THEOREM_NOTE.md)
+- Lines: 165; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly proved only for the free Gaussian theory; the interacting extension i
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_route_list
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The old headline cannot stand as written; P2 remains unselecte
 Scope: The observable/log-det generator selection question.
 Escape conditions (negative claims): An independent P2 selection theorem, or an explicit admission, would unblock.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 No-go against an existing repo headline: P2 selection from the current runner is impossible (the runner verifies a supplied candidate and cannot exclude others), so the old headline CANNOT STAND AS WRITTEN; blocks retention of the existing note as headlined. Companions attached.
 
@@ -32,6 +34,7 @@ No-go against an existing repo headline: P2 selection from the current runner is
 - Source commit: `80abd5723a06c0cc62a113bb0d5395b0d1087379`
 - git blob: `e8f8b77a65b4fb0f165935ae7854c752bd27e221`
 - sha256: `6ec1e54b829de28a93ac22b5171d9c54f1a218158b8c808521b0082fa8918e7a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10719_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10719_NO_GO_LEDGER.md)
 - Lines: 7; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ an existing repo headline is found to still load-bear on an unselected P2
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_route_list
 intake_directive: owner_2026-08-05
 ```
 

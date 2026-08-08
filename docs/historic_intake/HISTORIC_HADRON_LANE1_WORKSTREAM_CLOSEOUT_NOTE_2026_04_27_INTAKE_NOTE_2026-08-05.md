@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The workstream stops honestly - Lane-1-internal claim-state mo
 Scope: Lane-1-internal single-cycle work only; (B2) screening and (P1) Banks-Casher both need off-workstream lattice compute.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The hadron workstream's HONEST STOP: four cycles, zero theorem-grade artifacts, exhausted on current content — closure discipline exemplar and the lane's terminal.
 
@@ -32,6 +34,7 @@ The hadron workstream's HONEST STOP: four cycles, zero theorem-grade artifacts, 
 - Source commit: `a87b95014f6330ff9f31786321c82025e7aba106`
 - git blob: `575771b80012043e5792df83ccdf0de6dd8a49ce`
 - sha256: `9312b9541c934c5ca54009deb2c5eb151ae39b0ce0a017c00f4e9c6531b53dab`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/666_HADRON_LANE1_WORKSTREAM_CLOSEOUT_NOTE_2026-04-27.md](../../archive_unlanded/historic_intake_originals/branch02/666_HADRON_LANE1_WORKSTREAM_CLOSEOUT_NOTE_2026-04-27.md)
 - Lines: 162; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -53,6 +56,7 @@ Records that Phase-2 3A m_pi remains blocked on a Lane 3 dependency that made ze
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

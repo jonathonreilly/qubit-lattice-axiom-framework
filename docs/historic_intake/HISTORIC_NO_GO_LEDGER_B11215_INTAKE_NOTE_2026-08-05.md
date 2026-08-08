@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go_ledger
+Claim type: meta
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Two narrow failures proved, two explicitly not claimed; a glob
 Scope: Current harness and interface only.
 Escape conditions (negative claims): Add temporal state, source history, a physical static-solution class, and history-carrying measurement data, then test whether that enlarged surface is identifiable.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Verification-integrity finding about existing runner semantics: the function named _causal_field constructs a position-only array ALGEBRAICALLY IDENTICAL to the static comparator - a 'causal' comparator that carries no temporal state - so its use as a propagation-delay witness fails; two narrow failures proved, escapes named (add temporal state, source history, a physical delay). Cites the landed Shapiro/causal-propagation docs surfaces. Discipline gate and candidate claim attached.
 
@@ -32,6 +34,7 @@ Verification-integrity finding about existing runner semantics: the function nam
 - Source commit: `57e818e5fa9f40405bd3c238484701b54ae38d1f`
 - git blob: `e94b27f3ba7ec672b00a1de9f5156461f35ad2ac`
 - sha256: `a2752674ba27693e52605b1befac721d873fb31542b8e47954c94de87f5a3261`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11215_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci04/11215_NO_GO_LEDGER.md)
 - Lines: 12; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ documents that a runner function named _causal_field never implemented propagati
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go_ledger
 intake_directive: owner_2026-08-05
 ```
 

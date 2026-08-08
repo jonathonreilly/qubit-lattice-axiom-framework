@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_retraction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: In the campaign's own det_C reading the same positive weights 
 Scope: The EX3 obstruction and its breach condition; probe TOTAL: PASS=123 FAIL=0 with every number written from runner output.
 Escape conditions (negative claims): Even in the det_R reading, F/S = -1/5 is attained exactly by a positive-semidefinite C_3-covariant weight, so the obstruction's true scope is the strictly narrower class {f(Delta) : f >= 0}, not 'any positive weight'; F/S = -1/5 names the ordinary cone point diag(1,4,4).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The EX3 positivity obstruction is arithmetically correct and STRUCTURALLY VOID: its identification silently drops the Gram factor 2 - the counting bit itself - and in the campaign's own det_C reading the same positive weights give r(t)=(S+2...)/...; even in the det_R reading F/S = -1/5 is attained. Retraction of the obstruction that framed the campaign. Companion pinpointing the operator-vs-form confusion attached.
 
@@ -32,7 +34,8 @@ The EX3 positivity obstruction is arithmetically correct and STRUCTURALLY VOID: 
 - Source commit: `e26664d20fcc050daa8feaa47a0e4c4b7259a23e`
 - git blob: `35c651dc41adaa969b759765d9dcdcc382b07c3e`
 - sha256: `54e97f8651818eea4c8a1649893706cb23e6803a4332237c1a41ef644985165f`
-- Lines: 865; runners named: wave2_breach_probe.py (scratch, 123 gates)
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10560_wave2_breach_target.md](../../archive_unlanded/historic_intake_originals/packsci02/10560_wave2_breach_target.md)
+- Lines: 865; runners named: historic runner (unpinned, not in this packet): `wave2_breach_probe.py (scratch, 123 gates)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -52,6 +55,7 @@ A quantitative obstruction that framed the campaign was invalidated by a dropped
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_retraction
 intake_directive: owner_2026-08-05
 ```
 

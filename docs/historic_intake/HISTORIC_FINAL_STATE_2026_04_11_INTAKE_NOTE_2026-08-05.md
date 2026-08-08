@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: A PRL/PRD-grade paper is supported; the Nature path requires t
 Scope: Two axioms, two free parameters (m, G), one open problem (graph selection); several surviving results are conceded to be generic free-fermion facts, not gravitational.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Era session terminal with six killed results and their mechanisms on the record — the two-axiom framework's honest close.
 
@@ -32,6 +34,7 @@ Era session terminal with six killed results and their mechanisms on the record 
 - Source commit: `84da1a307021a5645e8398a1ab3e13b588b36986`
 - git blob: `a522bf7937c0ee57325b84bc2ca7a384502da541`
 - sha256: `3fb9f0d1c0b771d284da63509cef6ce640ec423aafb10acc0e8226a7bb16313c`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/458_FINAL_STATE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch02/458_FINAL_STATE_2026-04-11.md)
 - Lines: 82; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Records six killed results with mechanisms (finite-size artifact, protocol sensi
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_measurement
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The null echo result is a ZERO-PARAMETER PREDICTION of the fra
 Scope: Gravitational-wave echo observables only; the framework's distinctive predictions are relocated to short-range gravity below ~38 microns, Lambda ~ 1/a^2, 3 generations = 3 dimensions, exact Born I_3 = 0, and d=3 selection.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 LIGO 73-event NULL as a zero-parameter prediction: the initial 3.0 sigma was a PSD artifact; four bug fixes recorded — the echo lane's observational terminal (joins 3611/657/416 at audit).
 
@@ -32,7 +34,8 @@ LIGO 73-event NULL as a zero-parameter prediction: the initial 3.0 sigma was a P
 - Source commit: `73f2c0d99de03c4ae48a8e3450a3a7edae7d1fe5`
 - git blob: `32797dc7dd0a04c513e9fd8d421f65afacee82ef`
 - sha256: `a5d50b790a89eab6fe33a6d76ce1849c4052907510c08dd141c46758055362e9`
-- Lines: 97; runners named: scripts/gw_echo_full_catalog.py, scripts/gw_echo_matched_filter.py, scripts/gw_echo_amplitude_prediction.py, scripts/frontier_echo_absorption_mechanism.py, scripts/frontier_echo_thermal_reflectivity.py, scripts/frontier_echo_frequency_shift.py, scripts/frontier_echo_lattice_tunneling.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1106_LIGO_ANALYSIS_SUMMARY_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch04/1106_LIGO_ANALYSIS_SUMMARY_2026-04-12.md)
+- Lines: 97; runners named: historic runner (unpinned, not in this packet): `scripts/gw_echo_full_catalog(.py)`; historic runner (unpinned, not in this packet): `scripts/gw_echo_matched_filter(.py)`; historic runner (unpinned, not in this packet): `scripts/gw_echo_amplitude_prediction(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_absorption_mechanism(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_thermal_reflectivity(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_frequency_shift(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_lattice_tunneling(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Records four separate bug fixes (epsilon formula, Kerr spin parameter, backgroun
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_measurement
 intake_directive: owner_2026-08-05
 ```
 

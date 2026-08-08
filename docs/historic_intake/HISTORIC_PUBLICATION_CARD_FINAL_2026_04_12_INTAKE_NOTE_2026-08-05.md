@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_log_like_status_summary
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: One SM generation closes; physical generation closure and full
 Scope: Status summary for codex/review-active; the paper-safe claim explicitly says physical generations and full-flavor hypercharge remain open.
 Escape conditions (negative claims): Physical generation closure needs a canonical matter-assignment theorem making taste triplets physical families, conditional on taste physicality.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The conservative publication card: reclassifies its sister's claims (Delta m^2 ratio and delta_CP from predictions to FITS) — correction of record.
 
@@ -32,6 +34,7 @@ The conservative publication card: reclassifies its sister's claims (Delta m^2 r
 - Source commit: `1a8abb1abd60b9e64accb80b7998580fb93e4818`
 - git blob: `f084f7add52eab213f43728c2e3ba52423cae299`
 - sha256: `be32889b687ca04c4c128ee52650c7e35627124afe9bf3b2c683047dca0fb64b`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1634_PUBLICATION_CARD_FINAL_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch05/1634_PUBLICATION_CARD_FINAL_2026-04-12.md)
 - Lines: 153; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Directly corrects the sister publication card by reclassifying Delta m^2 ratio a
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_log_like_status_summary
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_reduction_to_one_parameter
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The gravity frontier is isolated to determining the canonical 
 Scope: After the support dark phase and the universal weight decomposition are both in hand; the weight-2 shear sector is excluded by covariance.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The lambda isolation terminal: every equivariant lift is L_lambda — the gravity frontier is ONE mixing parameter.
 
@@ -32,6 +34,7 @@ The lambda isolation terminal: every equivariant lift is L_lambda — the gravit
 - Source commit: `3982f4876062fdb39a5a030b52b0fc7476b238dd`
 - git blob: `8065cba240e85bd953273c3136dd1373f612580c`
 - sha256: `96bc152d7a4e63ffa06c0ecb9e6e7ea347454917fb8cbf03da4d63555b393e57`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1624_POLARIZATION_WEIGHT1_LIFT_FAMILY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1624_POLARIZATION_WEIGHT1_LIFT_FAMILY_NOTE.md)
 - Lines: 79; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -55,6 +58,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_reduction_to_one_parameter
 intake_directive: owner_2026-08-05
 ```
 

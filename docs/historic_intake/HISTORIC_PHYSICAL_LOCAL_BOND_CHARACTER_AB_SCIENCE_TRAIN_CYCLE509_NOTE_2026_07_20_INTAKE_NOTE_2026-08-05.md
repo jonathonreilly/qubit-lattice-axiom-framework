@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Route A survives constructively but not at the required 10/10;
 Scope: Valid train packet with full integrity (receipt/hash DAG, dependency bundle, JSON surfaces, manifest, row identities, artifact schemas, all 408 nonmetadata logical-array hashes and aggregate-gate recomputations agree); Route C unimplemented (8 rows) and no held row ran.
 Escape conditions (negative claims): A route-observable/domain failure that neither falsifies Route A nor supports a no-go verdict; the A/B candidate-law result cannot establish a route-independent obstruction, no-go, minimum content or axiom pressure.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 TERMINAL of the Cycle-509 packet, mixed and honest: Route A's local bond-current field is constructive (17/17 numerical/inverse rows) but not at the required 10/10 bar; Route B [fails]; the escape (a route-observable/domain failure) is typed exactly. The fresh-contract preflight with its invalidation ledger attached.
 
@@ -32,6 +34,7 @@ TERMINAL of the Cycle-509 packet, mixed and honest: Route A's local bond-current
 - Source commit: `289d0c4c8566028443442a2fa70ef76254ca4e9e`
 - git blob: `2653b18820e9ce42a7c0e5c4c55168eb89dda337`
 - sha256: `f23711fa31138610510e5294c06d399fac1d9d4731a44430fbcc099f24777385`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2912_PHYSICAL_LOCAL_BOND_CHARACTER_AB_SCIENCE_TRAIN_CYCLE509_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/2912_PHYSICAL_LOCAL_BOND_CHARACTER_AB_SCIENCE_TRAIN_CYCLE509_NOTE_2026-07-20.md)
 - Lines: 249; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

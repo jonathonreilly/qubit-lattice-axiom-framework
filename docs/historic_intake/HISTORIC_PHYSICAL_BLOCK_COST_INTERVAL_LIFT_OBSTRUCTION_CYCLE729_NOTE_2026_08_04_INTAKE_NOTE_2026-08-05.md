@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — cites MINIMAL_AXIOMS_2026-06-29 for the lattice, adjacency and proper cubic rotations; no further structure used
 
@@ -22,7 +22,9 @@ Original verdict: The cost interval is 216 to 320 with both ends reached, and th
 Scope: Pinned for this box and this charge only; nothing is said about how the interval scales; both certificates are supplied integer data verified rather than searched for, and no claim is made that 512 and 49 are minimal denominators; the charge convention (corner pairs separated by more than one lattice step) and the minimal-piece convention are named as choices not forced by the lattice.
 Escape conditions (negative claims): Non-regularity is proved for THIS maximiser, not for maximisers as a class — whether every cost-maximising dissection of every such box is non-liftable is explicitly open. The lift obstruction is specific to face-to-face lower hulls.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Two-cell one-tick cost interval [216,320] both ends attained; maximiser provably non-regular (outside lift-based certificates); corrects predecessor upward twice — the block-level terminal of the dissection program.
 
@@ -32,7 +34,8 @@ Two-cell one-tick cost interval [216,320] both ends attained; maximiser provably
 - Source commit: `8ca899138d7a5c1370e02cfe30660073b0db6103`
 - git blob: `d0933e09b6b7015d810b9894223e21f1ef8dcc88`
 - sha256: `340aa16ee7eac96b4d67c13431e51b55ca67310bf1e033af675a29f6e0089f5d`
-- Lines: 216; runners named: scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3095_PHYSICAL_BLOCK_COST_INTERVAL_LIFT_OBSTRUCTION_CYCLE729_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3095_PHYSICAL_BLOCK_COST_INTERVAL_LIFT_OBSTRUCTION_CYCLE729_NOTE_2026-08-04.md)
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Three carve-outs named in place: certificate weights/constants/denominators are 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

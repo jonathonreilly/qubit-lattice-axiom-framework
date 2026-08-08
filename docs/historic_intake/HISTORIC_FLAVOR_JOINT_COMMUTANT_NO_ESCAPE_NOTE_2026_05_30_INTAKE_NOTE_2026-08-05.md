@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The gap is empty and the anticommuting no-go, previously state
 Scope: Native operators only; a C_3-non-equivariant operator would require explicitly breaking S_3, which is not native.
 Escape conditions (negative claims): Thread 2 remains explicitly open: whether r = 1/2 can be derived outside the operator framing entirely, via a combinatorial, geometric or information-theoretic route that does not pass through a generation operator.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Joint-commutant no-escape: the realized point group is S_3 and the anticommuting no-go is airtight on the native surface — thread 1 closed.
 
@@ -32,7 +34,8 @@ Joint-commutant no-escape: the realized point group is S_3 and the anticommuting
 - Source commit: `291ba164599cd386693c3a01b9812dec7a150335`
 - git blob: `f4b4fe61ac4f3bc4d41c5db4a38a2cd7a93e8468`
 - sha256: `1271e147f52ddadb8319caaf8da45b7e6439718aa5877ff4729cb28bfc7c6b8b`
-- Lines: 40; runners named: scripts/flavor_joint_commutant_no_escape_2026_05_30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/484_FLAVOR_JOINT_COMMUTANT_NO_ESCAPE_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/484_FLAVOR_JOINT_COMMUTANT_NO_ESCAPE_NOTE_2026-05-30.md)
+- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_joint_commutant_no_escape_2026_05_30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

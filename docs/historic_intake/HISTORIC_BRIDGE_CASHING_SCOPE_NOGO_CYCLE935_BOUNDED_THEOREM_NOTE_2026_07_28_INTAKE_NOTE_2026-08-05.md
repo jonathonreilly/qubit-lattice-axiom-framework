@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The registered ruler does not cash the bridge — units regist
 Scope: Owner-directed window 2b; 90 exact re-solves in rescaled frames all return composed dimension 1, and zero of 22 in-scope observables separate pre- from post-registration.
 Escape conditions (negative claims): The no-go is a scope statement about THIS primitive's text: a primitive (or derivation) supplying dimensionless content, or a different bridge whose scalar is not a coupling in the excluded sense, is untouched; the a/l_P = 1 self-consistency question is explicitly left open by the primitive.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Self-falsifying scope no-go: the registered Planck ruler cannot cash the dimension-1 source-action bridge (units registration is a ray bijection) — prices the retention map's central blocker.
 
@@ -32,7 +34,8 @@ Self-falsifying scope no-go: the registered Planck ruler cannot cash the dimensi
 - Source commit: `cd94092a6d6014f0370e10195d5ce09580d92117`
 - git blob: `dbb0e3557a7f24767087149fa4438986d556b83b`
 - sha256: `62ab94d74a98272a18bd345e76c29c32f23581f1c51334a604947808b92b8041`
-- Lines: 223; runners named: ../scripts/frontier_cycle935_bridge_cashed_2026_07_28.py, ../scripts/frontier_cycle935_bridge_cashed_independent_check_2026_07_28.py, frontier_cycle935_bridge_cashed_2026_07_28.py, frontier_cycle935_bridge_cashed_independent_check_2026_07_28.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/123_BRIDGE_CASHING_SCOPE_NOGO_CYCLE935_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/123_BRIDGE_CASHING_SCOPE_NOGO_CYCLE935_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- Lines: 223; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle935_bridge_cashed_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle935_bridge_cashed_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle935_bridge_cashed_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle935_bridge_cashed_independent_check_2026_07_28(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The block's stated premise is falsified mid-run; the checker found the decisive 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The sharpest scalar formulation yet - one finite moment packet
 Scope: Fixed depth; leaves the true moment packet, the identity rim datum, the plaquette PF data and the global PF selector open.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The plaquette reduction chain's terminal: fixed-depth closure = one finite cyclic-moment packet against an explicit boundary law — five exact links consolidated.
 
@@ -32,7 +34,8 @@ The plaquette reduction chain's terminal: fixed-depth closure = one finite cycli
 - Source commit: `d9e0803795ffaae653a5bb5a4cb6040737160f57`
 - git blob: `cdcb0b4611831ec7a9be08d460b621dab389dde9`
 - sha256: `ca5d36dd996af44024815722d4e836d91b99f1912794743e34e3d53eca7e3305`
-- Lines: 143; runners named: scripts/frontier_gauge_vacuum_plaquette_beta6_identity_rim_finite_moment_packet_reduction_2026_04_18.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/573_GAUGE_VACUUM_PLAQUETTE_BETA6_IDENTITY_RIM_FINITE_MOMENT_PACKET_REDUCTION_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/573_GAUGE_VACUUM_PLAQUETTE_BETA6_IDENTITY_RIM_FINITE_MOMENT_PACKET_REDUCTION_NOTE_2026-04-18.md)
+- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_beta6_identity_rim_finite_moment_packet_reduction_2026_04_18(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -56,6 +59,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

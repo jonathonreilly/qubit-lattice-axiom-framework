@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The answer is no on this precise surface: same reduct B, incom
 Scope: A non-entailment result on a precisely stated surface, not a positive one-axiom reduction nor a ban on writing definitions from Hilbert data; the negatives survive equal factor dimensions.
 Escape conditions (negative claims): Explicit dichotomy: if 'local' already includes a graph, local Hamiltonian or readout rule, those are premises inside the word and reading them back out is definitional compression, not derivation. The note names paths that prevent a broader 'no derivation is possible' claim - richer operational reconstructions, naturality premises, and an operational packet that partially addresses the Gleason-Busch Born wall - and includes a steelman defeating any global impossibility claim.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Post-reset first-principles selector no-go: P_N vs K_N countermodels satisfy all stated type conditions — physical adjacency is not uniquely distinguished on this surface; explicit dichotomy stated.
 
@@ -32,7 +34,8 @@ Post-reset first-principles selector no-go: P_N vs K_N countermodels satisfy all
 - Source commit: `dfdab30ae92f86e0e3b02263e90afc802e0bfddc`
 - git blob: `82a7284b94cb3ce6ed05c05ce676c394c3814b73`
 - sha256: `0c608da971de1f46ccb5acb5c80565f136dcf16443acb21bb6468b3897eb05b9`
-- Lines: 436; runners named: scripts/finite_factorized_hilbert_physical_selector_nonuniqueness_2026_07_12.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/460_FINITE_FACTORIZED_HILBERT_PHYSICAL_SELECTOR_NONUNIQUENESS_NO_GO_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch02/460_FINITE_FACTORIZED_HILBERT_PHYSICAL_SELECTOR_NONUNIQUENESS_NO_GO_NOTE_2026-07-12.md)
+- Lines: 436; runners named: historic runner (unpinned, not in this packet): `scripts/finite_factorized_hilbert_physical_selector_nonuniqueness_2026_07_12(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly disclaims any claim that a richer operational reconstruction is impos
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

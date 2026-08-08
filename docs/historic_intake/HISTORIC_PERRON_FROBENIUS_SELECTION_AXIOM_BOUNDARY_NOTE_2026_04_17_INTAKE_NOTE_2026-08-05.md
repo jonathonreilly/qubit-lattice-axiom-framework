@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Sector-local Perron/dominant-mode theorems are exact, but they
 Scope: Current exact stack; the longest note in the PF family (1179 lines) and the chain's central boundary object.
 Escape conditions (negative claims): Two named next steps: derive a unique plaquette framework-point Perron measure after the residual, and close the residual plaquette environment operator.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The PF boundary object: sector-local Perron theorems are exact but do NOT promote to one common section — the central selection-axiom boundary (1,179 lines).
 
@@ -32,7 +34,8 @@ The PF boundary object: sector-local Perron theorems are exact but do NOT promot
 - Source commit: `0e041394da73fb3343f9108d28ec25b1c6f3ac9c`
 - git blob: `84085e3f0a6aa274511b02ac7640b94e191fd3b3`
 - sha256: `e1c3b8438f94afec43e82fe197332c6e597a48e77d83af138a9c9ebb3d3a1413`
-- Lines: 1179; runners named: scripts/frontier_perron_frobenius_selection_axiom_boundary.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1272_PERRON_FROBENIUS_SELECTION_AXIOM_BOUNDARY_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch04/1272_PERRON_FROBENIUS_SELECTION_AXIOM_BOUNDARY_NOTE_2026-04-17.md)
+- Lines: 1179; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_perron_frobenius_selection_axiom_boundary(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

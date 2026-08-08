@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_support_partial_closing_falsification_of_four_prior_near_fits
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The structural-origin question is RESOLVED — 0.1888 has an e
 Scope: admitted_observation_status: g_weak = 0.653 (bare weak coupling at v_EW, phenomenological); only Y0^2 = (g_weak^2/64)^2 carries non-structural content.
 Escape conditions (negative claims): Closing Y0^2 (cycle 15's target) removes the only non-structural factor.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact five-factor product (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs with the ABC sub-factor closing to a PURE RATIONAL, and this FALSIFIES four numerical near-fits at 0.025-0.138% that cycle 09 had catalogued as structural origins. Closing Y0^2 removes the only remaining non-rational factor. Chart-constant companions attached; cross-linked to the 0.1888 mismatch pull from packsci02.
 
@@ -32,6 +34,7 @@ Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact fi
 - Source commit: `629bbd61f885d69c2e68372e4e4d6f6f3d60b612`
 - git blob: `5498541aa52902ed56de650416ed1c0051b9bd88`
 - sha256: `e1f828dcc109f9b21260cf1b3ce0d6c8f57a0f8a1f74bdef62b3f1e6af2d33e0`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10875_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10875_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 189; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -42,7 +45,7 @@ Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact fi
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10388 (`.claude/science/physics-loops/dm-leptogenesis-expansion-boundary-repair-20260527/NO_GO_LEDGER.md`, stratum packsci02) — Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact five-factor product (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs with the ABC sub-factor closing to a PURE RATIONAL, and this FALSIFIES four numerical near-fits at 0.025-0.138% that cycle 09 had catalogued as structural origins. Closing Y0^2 removes the only remaining non-rational factor. Chart-constant companions attached; cross-linked to the 0.1888 mismatch pull from packsci02.
+- Attaches across strata to [idx 10388](HISTORIC_NO_GO_LEDGER_B10388_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/dm-leptogenesis-expansion-boundary-repair-20260527/NO_GO_LEDGER.md`, stratum packsci02) — Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact five-factor product (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs with the ABC sub-factor closing to a PURE RATIONAL, and this FALSIFIES four numerical near-fits at 0.025-0.138% that cycle 09 had catalogued as structural origins. Closing Y0^2 removes the only remaining non-rational factor. Chart-constant companions attached; cross-linked to the 0.1888 mismatch pull from packsci02.
 
 ## Flags carried
 
@@ -54,6 +57,7 @@ four numerical coincidences at 0.025-0.138% had been catalogued as candidate str
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_support_partial_closing_falsification_of_four_prior_near_fits
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: The extrapolated claim is withdrawn; only the sampled predicat
 Scope: The explicit 1440-tuple grid; the result does not prune off-grid minimizers, other transfer families, or exact-arithmetic routes.
 Escape conditions (negative claims): Analytic bounds, interval arithmetic, a proof-producing optimizer, or a monotonicity theorem would restore a continuous claim.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Methodological retraction with reusable lesson: the empirical continuous Lipschitz extrapolation over the full four-parameter box (sampled gradients times a 2.5 safety factor) is WITHDRAWN - only the sampled predicate stands; the honest escapes (analytic bounds, interval arithmetic) are named.
 
@@ -32,6 +34,7 @@ Methodological retraction with reusable lesson: the empirical continuous Lipschi
 - Source commit: `c3ba3463822f6a1874eafab3c76636c0f916dea4`
 - git blob: `5e9c1800fb1f27237f0365cbb064bb7b364073d2`
 - sha256: `899d04197dd2819a011386e7d33e8e79e4b58101b55ce449822d370e40f5bcfc`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10474_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci02/10474_NO_GO_LEDGER.md)
 - Lines: 9; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ A continuous-box claim built on sampled gradients times an ad hoc 2.5 safety fac
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

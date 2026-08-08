@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Safe wording: the Planck pin a^-1 = M_Pl is retained on the mi
 Scope: Partially closes the [W5] weak point ('BH formula as physical input'); the Wald formula itself remains UNIVERSAL PHYSICS INPUT retained alongside Newton's equation.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 c_cell = 1/4 as Wald-Noether charge density with SAFE wording enforced — the Planck-pin identification, stronger readings forbidden.
 
@@ -32,7 +34,8 @@ c_cell = 1/4 as Wald-Noether charge density with SAFE wording enforced — the P
 - Source commit: `589eaa15bebef58afb6af26a97cd659c69ec92a0`
 - git blob: `8943e0ba8a84ee785d943ef95c4f898b031f5201`
 - sha256: `6b6a44dbf68756c735151f7a6cb38ec42b0e36c9b483d7653a8a90add6c6c9ee`
-- Lines: 288; runners named: scripts/frontier_planck_bh_from_wald_noether_derivation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1362_PLANCK_BH_FROM_WALD_NOETHER_FRAMEWORK_DERIVATION_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch04/1362_PLANCK_BH_FROM_WALD_NOETHER_FRAMEWORK_DERIVATION_THEOREM_NOTE_2026-04-26.md)
+- Lines: 288; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bh_from_wald_noether_derivation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly forbids the stronger reading; the framework supplies only the coeffic
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conjecture
+Claim type: open_gate
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Conjecture with strong empirical support, consolidated from 12
 Scope: Axiom-native branch work using only kit K1 (real Cl(3)), K2 (Z^3 with spacing a), K3 (staggered phases eta_mu(n)); no external references, observed constants, retained main-branch theorems, continuum conventions or PDG data.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Kasteleyn thread conjecture: Pfaffian-optimality iff contractibility, consolidated from 12+ iterations with the honest empirical/proved split — publishable-adjacent combinatorics.
 
@@ -32,7 +34,8 @@ The Kasteleyn thread conjecture: Pfaffian-optimality iff contractibility, consol
 - Source commit: `2fb409749d0c24061a1bebaf0095fa2ca513d8c1`
 - git blob: `fdde5fe75f88c2e62f43db4cfd1005d4cdb7b239`
 - sha256: `935161c1c1481c0be4ed02316106411211e2225ed02523f2f506153081c0fd16`
-- Lines: 437; runners named: scripts/frontier_axiom_native_hostile_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/748_KASTELEYN_THREAD_CONJECTURE.md](../../archive_unlanded/historic_intake_originals/branch03/748_KASTELEYN_THREAD_CONJECTURE.md)
+- Lines: 437; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_axiom_native_hostile_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The central claim is an empirically-supported biconditional with no proof; teste
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conjecture
 intake_directive: owner_2026-08-05
 ```
 

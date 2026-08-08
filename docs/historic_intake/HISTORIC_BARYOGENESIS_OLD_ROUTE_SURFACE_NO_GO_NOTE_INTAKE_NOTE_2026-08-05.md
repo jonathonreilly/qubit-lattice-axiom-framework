@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The old route is dead on the current surface, so the honest re
 Scope: Bounded current-surface no-go; does not prove baryogenesis impossible in the framework.
 Escape conditions (negative claims): Explicitly leaves open a genuinely new derived finite-T bosonic sector, a non-minimal or nonperturbative finite-T potential invalidating the one-loop scalar-cubic bookkeeping, and a lattice-derived transition/sphaleron/transport computation.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The old-route no-go: the 2HDM-like taste-scalar EWPT route is dead on the surface (no derived extra scalar sector), with escapes named — the program's honest negative.
 
@@ -32,7 +34,8 @@ The old-route no-go: the 2HDM-like taste-scalar EWPT route is dead on the surfac
 - Source commit: `52d85805431222e5e281df958c7889aae33db2e9`
 - git blob: `dd9eeabcf59bbc1e972215571b7998a1908c14e6`
 - sha256: `600dd18ce1530a2acad61e6bc1a31a964af654596f4bc0e39560fa86a4881c23`
-- Lines: 122; runners named: ./../scripts/frontier_baryogenesis_old_route_surface_no_go.py, frontier_baryogenesis_old_route_surface_no_go.py, scripts/frontier_baryogenesis_old_route_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/94_BARYOGENESIS_OLD_ROUTE_SURFACE_NO_GO_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/94_BARYOGENESIS_OLD_ROUTE_SURFACE_NO_GO_NOTE.md)
+- Lines: 122; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_old_route_surface_no_go(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_old_route_surface_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_old_route_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -55,6 +58,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

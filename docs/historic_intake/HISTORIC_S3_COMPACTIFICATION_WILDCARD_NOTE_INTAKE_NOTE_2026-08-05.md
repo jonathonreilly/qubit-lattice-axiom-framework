@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: BOUNDED: the algebra is airtight but the step from 'SU(2) is t
 Scope: Regular d=3 lattice with staggered structure, axioms A1 (graph) and A2 (unitarity); assumption A4 (spatial homogeneity/isotropy) is additional input.
 Escape conditions (negative claims): Three named routes to close A4: derive isotropy from an isotropic growth rule, an SU(2) anomaly-cancellation argument, or spectral matching to the lattice representation content.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The independent algebraic route: Cl(3) -> Cl+(3) = H -> Spin(3) = SU(2) = S^3 (39/39) — with the A4 isotropy step honestly open, three routes named.
 
@@ -32,7 +34,8 @@ The independent algebraic route: Cl(3) -> Cl+(3) = H -> Spin(3) = SU(2) = S^3 (3
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `b89e242ffc3fe060185c4bb5423319218a5723d1`
 - sha256: `58e72f7a91210bf60535217af81c28a8a504f3c30511fae6705d3c4e13546ea3`
-- Lines: 188; runners named: scripts/frontier_s3_compactification_wildcard.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1853_S3_COMPACTIFICATION_WILDCARD_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1853_S3_COMPACTIFICATION_WILDCARD_NOTE.md)
+- Lines: 188; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_compactification_wildcard(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
 ```
 

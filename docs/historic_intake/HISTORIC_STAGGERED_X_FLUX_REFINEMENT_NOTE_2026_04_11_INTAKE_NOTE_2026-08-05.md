@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The x-flux gate is a strong qualitative sign check but the imp
 Scope: Open cubic staggered surface, sides 14/16/18, d=3..7, three placements, mass 0.30, G=50, mu2=0.001, N_steps=10, 45 rows; sourced from historical commit 9ad140f.
 Escape conditions (negative claims): Escape requires a genuinely new conserved-current observable or a different graph geometry, not another shell-flux or impulse variant.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The honest hold: x-flux 45/45 is a sign gate only (R^2 ~ 0.007), the impulse is non-closing — with the duplicate-reporting flag on its sibling.
 
@@ -32,6 +34,7 @@ The honest hold: x-flux 45/45 is a sign gate only (R^2 ~ 0.007), the impulse is 
 - Source commit: `19d8a91324fd072c483d416c05f036571dda7805`
 - git blob: `5816007b71a5d678869ac1eac096466d3c4838c8`
 - sha256: `68faf45389d3dfae22bdfb7338e46c2fee520d1b99247a226f85493ba557216a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1983_STAGGERED_X_FLUX_REFINEMENT_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch06/1983_STAGGERED_X_FLUX_REFINEMENT_NOTE_2026-04-11.md)
 - Lines: 85; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Reports the same run as idx 1982 without new computation; sourced from a histori
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

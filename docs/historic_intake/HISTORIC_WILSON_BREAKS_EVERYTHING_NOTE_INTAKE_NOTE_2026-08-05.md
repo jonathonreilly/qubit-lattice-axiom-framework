@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_result
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Taste physicality (r = 0) is not a separate assumption for gen
 Scope: 8-dim taste space in d=3 with a diagonal Hamming-weight Wilson mass; ~5 s runner.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Taste-physicality collapses into the lattice-is-physical axiom (Wilson deformation breaks Cl(3) and SU(2) together) — with the r = 0.2 evidence caveat.
 
@@ -32,7 +34,8 @@ Taste-physicality collapses into the lattice-is-physical axiom (Wilson deformati
 - Source commit: `d433885c4820425938db6174bd7a211e947d4f83`
 - git blob: `6ad5caed84661ed09267a1e16e1ad18c05585862`
 - sha256: `7b894c8b22d69a91ca1b2c002cabace0abb18c85c5492949f4f6d743a6395531`
-- Lines: 111; runners named: scripts/frontier_wilson_breaks_everything.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2121_WILSON_BREAKS_EVERYTHING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2121_WILSON_BREAKS_EVERYTHING_NOTE.md)
+- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_breaks_everything(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The 'break at the same r' evidence is that r = 0.2 was the smallest nonzero valu
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_result
 intake_directive: owner_2026-08-05
 ```
 

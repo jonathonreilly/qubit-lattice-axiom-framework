@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_prediction_phenomenology_note
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The proton is effectively stable and the prediction is sharply
 Scope: Uses the standard GUT formula tau_p = M_X^4/(alpha_X^2 m_p^5) with the framework's Planck-scale mediator; the Z_3 generation symmetry adds a further ~1/3 suppression.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Proton effectively stable — sharply falsifiable (Hyper-K detection would refute); clean prediction card.
 
@@ -32,7 +34,8 @@ Proton effectively stable — sharply falsifiable (Hyper-K detection would refut
 - Source commit: `73533d697ab3b52e14927723e9f16d1cdb489a57`
 - git blob: `893fe34f9a9d142ee75211229f4a098fc8fec531`
 - sha256: `3c98c390ebd6b21112de75e5a10d8e05a9599542bd7af9f0223771a96044c3a7`
-- Lines: 120; runners named: scripts/frontier_proton_decay.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1632_PROTON_DECAY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1632_PROTON_DECAY_NOTE.md)
+- Lines: 120; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_proton_decay(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_prediction_phenomenology_note
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_falsification_of_a_stated_forcing_route
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: An endpoint forcing claim is falsified by an explicit degenera
 Scope: Endpoint CP forcing under TM2 plus mu-tau.
 Escape conditions (negative claims): Excluding the sin^2(theta_13) = 2/3 endpoint restores the forcing statement on the remaining domain.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Falsification by explicit endpoint: the route 'TM2 + mu-tau modulus forces CP at every allowed endpoint' is FALSE - at sin^2(theta_13) = 2/3, c12 = 0 and the forcing fails; the stated CP-forcing route is retired.
 
@@ -32,6 +34,7 @@ Falsification by explicit endpoint: the route 'TM2 + mu-tau modulus forces CP at
 - Source commit: `473983dae044fd8bf8f7ed2a1c3982b394265bf5`
 - git blob: `f871674fab5ac2b489838e084bac86b2684a9cd1`
 - sha256: `b38a212237c7597f308aebd0ebdf0e59554477a059b1db01dd9e7615b54eafd8`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10778_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10778_NO_GO_LEDGER.md)
 - Lines: 9; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -40,7 +43,7 @@ Falsification by explicit endpoint: the route 'TM2 + mu-tau modulus forces CP at
 
 ## Cross-stratum flags
 
-- Cross-stratum reference from packsci04 idx 11211 (`.claude/science/physics-loops/science-fix-loop-20260529/NO_GO_LEDGER.md`, decision PULL) — Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP conclusion CANNOT be stated on the full algebraic endpoint surface - at sin^2(theta_13) = 2/3, c12 = 0 and the phase is degenerate - plus a second narrowing with explicit degeneracy/invariance counterexamples; the compatible-Hermitian-representative escape is named. Same endpoint family as the CP-forcing falsification pulled from packsci03.
+- Cross-stratum reference from packsci04 [idx 11211](HISTORIC_NO_GO_LEDGER_B11211_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/science-fix-loop-20260529/NO_GO_LEDGER.md`, decision PULL) — Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP conclusion CANNOT be stated on the full algebraic endpoint surface - at sin^2(theta_13) = 2/3, c12 = 0 and the phase is degenerate - plus a second narrowing with explicit degeneracy/invariance counterexamples; the compatible-Hermitian-representative escape is named. Same endpoint family as the CP-forcing falsification pulled from packsci03.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_falsification_of_a_stated_forcing_route
 intake_directive: owner_2026-08-05
 ```
 

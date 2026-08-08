@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_claim_status_certificate
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: candidate-retained-grade; review pass; audit required
 Scope: bounded two-row cross-family theorem only
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean unlanded positive: candidate-retained-grade bounded two-row theorem closing by class-A inequalities over two retained-bounded rows; review pass, audit-ready. Guard companion attached (a hard-coded table matcher cannot retire the class-G verdict).
 
@@ -32,6 +34,7 @@ Clean unlanded positive: candidate-retained-grade bounded two-row theorem closin
 - Source commit: `e063d5d29b7ef35681d2c1dbd47f7b6e3258805d`
 - git blob: `c4222646a46a43a79ae1f61ecd366fc2f1a9bbf7`
 - sha256: `5e72dbc6e2c5d057f2117d4cb87e1d375f62175fb713a29655e2d55dcdaa1e30`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11448_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci05/11448_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 20; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
 ```
 

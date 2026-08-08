@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The bridge exponents get a structural origin (projector weight
 Scope: Structural theorem retained; the quantitative mass-ratio readout stays bounded and controlled by the current mass-hierarchy surface.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Structural origin for the bridge exponents (projector weight + block dimension) explicitly replacing the 5/6 Casimir coincidence — the bridge family's terminal.
 
@@ -32,7 +34,8 @@ Structural origin for the bridge exponents (projector weight + block dimension) 
 - Source commit: `de53db8400c4f66a9b88db1f9ca1367aa2ef65a3`
 - git blob: `e55172e5364a69842ba2b453dfb0ac8ca98ad32f`
 - sha256: `7474514678ab0a892370dfd5f827e61d22242fc91f2ff3ee15ff75c6a63085a3`
-- Lines: 311; runners named: scripts/frontier_ckm_dual_bridge_identity.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/186_CKM_DUAL_BRIDGE_IDENTITY_THEOREM_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch01/186_CKM_DUAL_BRIDGE_IDENTITY_THEOREM_NOTE_2026-04-17.md)
+- Lines: 311; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_dual_bridge_identity(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

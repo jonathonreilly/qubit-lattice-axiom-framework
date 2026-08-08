@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: march_2026_event_network_era
 Era: march_event_network — 8-neighbor rectangular lattice with delay field as discrete Green's function on a finite domain
 
@@ -22,7 +22,9 @@ Original verdict: Discreteness is irreducible on a fixed grid — the 8.2% aniso
 Scope: Fixed 8-neighbor rectangular lattice; distances 5-70 grid units; widths 20-80.
 Escape conditions (negative claims): The no-continuum-limit result is stated to hold only for a FIXED rectangular 8-neighbor grid probed at larger distances; the note names three escapes — finer grid spacing (more nodes per physical unit), irregular/random graphs with no preferred directions, or extended neighbor connectivity — and speculates a GROWING graph would reduce anisotropy in physical units.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Clean bounded no-go: no naive continuum limit on a fixed 8-neighbor grid — 8.23% scale-invariant anisotropy matching the exact staircase bound — with three named escapes; lineage-relevant to current Z^d anisotropy questions.
 
@@ -32,6 +34,7 @@ Clean bounded no-go: no naive continuum limit on a fixed 8-neighbor grid — 8.2
 - Source commit: `611bf217ac84c02910c6b2aeb91b1a0cefc5f582`
 - git blob: `5a76aaab6d8ad5ee0dacda46e6ec5b348e291c55`
 - sha256: `c63133dc9fe31d4a5caf020384b2247a28cf296b5016eed80355ccdaacb35c74`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3113_continuum-limit-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3113_continuum-limit-2026-03-30.md)
 - Lines: 33; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

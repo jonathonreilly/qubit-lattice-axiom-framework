@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_meta
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: All three verdicts are PARTIAL/relocation or NOT-FORCED — th
 Scope: Synthesis only; modifies no axiom, claims no closure, weakens no retained no-go.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The sqrt(2) build's terminal verdict (157 PASS): face-diagonal extension is relocation, not closure — no gate closes; the family's honest net, with the phases attached.
 
@@ -32,6 +34,7 @@ The sqrt(2) build's terminal verdict (157 PASS): face-diagonal extension is relo
 - Source commit: `1da654915237cf13a41468da2c09ccc6b724e5af`
 - git blob: `f7884b9f3b0a893df815c3f552d5c37ac9151369`
 - sha256: `b5558de95489515cb8ccf6b19e0c46f39aa1b4b5e4a521bf8ec95f4788321f9a`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/316_DIAGONAL_SQRT2_SYNTHESIS_VERDICT_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch01/316_DIAGONAL_SQRT2_SYNTHESIS_VERDICT_NOTE_2026-06-04.md)
 - Lines: 195; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -52,6 +55,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_meta
 intake_directive: owner_2026-08-05
 ```
 

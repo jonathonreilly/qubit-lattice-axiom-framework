@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_independence_countermodel_list
+Claim type: meta
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: T1-d is independent — it must be supplied.
 Scope: Derivability of T1-d from the current axiom surface.
 Escape conditions (negative claims): A readout-context bridge would close the third gap; a determinant-only selection principle would close the second.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Independence theorem: T1-d is INDEPENDENT of the current Lattice, Quantum and Record axioms plus determinant direct-sum algebra - it must be supplied, not derived. The countermodel companions carry the proof shape.
 
@@ -32,6 +34,7 @@ Independence theorem: T1-d is INDEPENDENT of the current Lattice, Quantum and Re
 - Source commit: `df37c0b670f00b697e0756bea441c94cbb082d60`
 - git blob: `6a4a49e5aea71c15d9326164abeb44833eaccc0c`
 - sha256: `5d0d7c03edcc73e8195833d5581c063bbcb7770b8f9894680cc74d6a25c5c0a1`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10721_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci03/10721_NO_GO_LEDGER.md)
 - Lines: 8; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_independence_countermodel_list
 intake_directive: owner_2026-08-05
 ```
 

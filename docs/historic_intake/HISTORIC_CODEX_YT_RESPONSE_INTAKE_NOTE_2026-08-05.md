@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: All four audit points are addressed, with the residual named h
 Scope: Runner 22/22 PASS on the formal theorem; one imported input remains.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The CG coefficient 1/sqrt(6) = 1/sqrt(2 N_c) uniquely derived (staggered mass term is Gamma_5; Higgs preserves it) — supersedes the prior precision-independence claim; y_t-lane load-bearing.
 
@@ -32,7 +34,8 @@ The CG coefficient 1/sqrt(6) = 1/sqrt(2 N_c) uniquely derived (staggered mass te
 - Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
 - git blob: `8677a8cf9889dec75674ee7d52186027927e92c7`
 - sha256: `4f0e797c6d1f0b98c4a32ed86958e01372e1a59c0bb4b9446e838df8107d4a4e`
-- Lines: 196; runners named: frontier_renormalized_yt_wildcard.py, frontier_slavnov_taylor_completion.py, frontier_yt_formal_theorem.py, frontier_yt_from_alpha_s.py, scripts/frontier_renormalized_yt.py, scripts/frontier_renormalized_yt_wildcard.py, scripts/frontier_slavnov_taylor_completion.py, scripts/frontier_yt_formal_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/241_CODEX_YT_RESPONSE.md](../../archive_unlanded/historic_intake_originals/branch01/241_CODEX_YT_RESPONSE.md)
+- Lines: 196; runners named: historic runner (unpinned, not in this packet): `frontier_renormalized_yt_wildcard(.py)`; historic runner (unpinned, not in this packet): `frontier_slavnov_taylor_completion(.py)`; historic runner (unpinned, not in this packet): `frontier_yt_formal_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_yt_from_alpha_s(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt_wildcard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_slavnov_taylor_completion(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_formal_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

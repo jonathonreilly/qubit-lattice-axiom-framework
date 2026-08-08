@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The sharpest honest claims are that the lattice prevents singu
 Scope: Audit of the frozen-star and GW-echo document/script set including the t_echo = 67.66 ms GW150914 prediction.
 Escape conditions (negative claims): Four options are named for repairing the chain, including weakening the claim to an ultra-compact object; the null-echo prediction is identified as the safest observational claim.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The no-horizon RECLASSIFICATION: the claim used the weak-field metric where it breaks down — downgraded to conjecture, downgrading landed frozen-star notes; four repair options named.
 
@@ -32,7 +34,8 @@ The no-horizon RECLASSIFICATION: the claim used the weak-field metric where it b
 - Source commit: `e92b98af788488ef45ac5cc6987721606e57df4a`
 - git blob: `5aac3217486899a523b10f80381c9792a8e1b8b1`
 - sha256: `068ed70a904a138895c177532a530bb912ebd38ab35b4054bf4ff80e8ac5ffdb`
-- Lines: 281; runners named: scripts/frontier_frozen_stars_rigorous.py, scripts/frontier_gw_echo_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1999_STRONG_FIELD_HONEST_ASSESSMENT.md](../../archive_unlanded/historic_intake_originals/branch06/1999_STRONG_FIELD_HONEST_ASSESSMENT.md)
+- Lines: 281; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_gw_echo_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,6 +54,7 @@ Explicitly reclassifies a previously stated no-horizon result as a conjecture an
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: Isotropy of second moments is a free consequence of cubic symm
 Scope: Deliberately standalone: consumes no directional path measure, Wilson action, continuum Lagrangian, beta parameter, Cl(3) content, PDG comparator, fitted selector, or unit convention.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 O_h forces delta_ij: isotropy of second moments is FREE from cubic symmetry — bears directly on the kinetic_isotropy approved primitive.
 
@@ -32,7 +34,8 @@ O_h forces delta_ij: isotropy of second moments is FREE from cubic symmetry — 
 - Source commit: `dcf4643852038be5e25c212242978492e66f86e2`
 - git blob: `377df7fa44d6d6366d465ffcb792673ab010f71f`
 - sha256: `cd31ee57e6dbb428b0b28c7edeece4d5d3263cc27932f9073caa92fd26f67bc8`
-- Lines: 271; runners named: ./../scripts/frontier_cubic_invariant_rank_two_isotropy_narrow.py, scripts/frontier_cubic_invariant_rank_two_isotropy_narrow.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/278_CUBIC_INVARIANT_RANK_TWO_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-10.md](../../archive_unlanded/historic_intake_originals/branch01/278_CUBIC_INVARIANT_RANK_TWO_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-10.md)
+- Lines: 271; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_cubic_invariant_rank_two_isotropy_narrow(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cubic_invariant_rank_two_isotropy_narrow(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

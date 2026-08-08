@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_positive_theorem
+Claim type: positive_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The trimaximal column is derived modulo only the retained C_3 
 Scope: Retained C_3 algebra plus the RECORD axiom's K/CPT-orbit clause; does not re-derive the C_3 modes, derive the K/CPT conjugation, address the delta = 0 phase pin, or touch the Koide weight.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Trimaximal column derived modulo only the retained C_3 algebra: the K/CPT orbit partition discharges the K-reality caveat.
 
@@ -32,7 +34,8 @@ Trimaximal column derived modulo only the retained C_3 algebra: the K/CPT orbit 
 - Source commit: `78923f9ed006bb2bc8285f778557e5c5461e25ed`
 - git blob: `c3dc09a8d2d8a39e46a0305a32c0d332d82c3b5f`
 - sha256: `ba9e7f6586499e6b0f37105f895f49b29422e7aab18869d341aa27583e99cd26`
-- Lines: 141; runners named: scripts/trimaximal_partition_kcpt_orbit_runner.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1597_PMNS_TRIMAXIMAL_PARTITION_IS_KCPT_ORBIT_AXIOM_DIRECT_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch05/1597_PMNS_TRIMAXIMAL_PARTITION_IS_KCPT_ORBIT_AXIOM_DIRECT_NARROW_THEOREM_NOTE_2026-06-06.md)
+- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/trimaximal_partition_kcpt_orbit_runner(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
 ```
 

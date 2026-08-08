@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Partial-narrowing support note; selects routes without retaini
 Scope: Route selection for the charged-lepton 1/256 suppression factor.
 Escape conditions (negative claims): Close one of the enumerated routes.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 782-line route-triage terminal reducing zero-import hydrogen to the Hartree scale with candidate routes enumerated — the campaign's selection surface.
 
@@ -32,7 +34,8 @@ The 782-line route-triage terminal reducing zero-import hydrogen to the Hartree 
 - Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
 - git blob: `d0e7551ab2c364cd7a8d3798904484cca47ba2c4`
 - sha256: `212669a06b1d250eae5941ca6a1ee5f154f3ad0f3dccf1bc83429005029d4226`
-- Lines: 782; runners named: scripts/frontier_zero_import_hydrogen_lepton_256_route_triage.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2667_ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch08/2667_ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md)
+- Lines: 782; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_route_triage(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

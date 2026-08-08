@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_b1_closure_theorem_for_the_bare_cell_alone_upgrade_program
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: B1 is closed on the retained observable-algebra reading; B3 re
 Scope: Holds only when 'bare cell alone' means the retained Cl(3)/Z^3 observable algebra, not the stripped M_16(C) with translation/locality structure forgotten; does not determine the numerical value of a.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 B1 closed on the retained observable-algebra reading — WITH the definitional-scope flag.
 
@@ -32,7 +34,8 @@ B1 closed on the retained observable-algebra reading — WITH the definitional-s
 - Source commit: `4599b458d80f6a3c6e3ef0bf0a7c20538905aa5b`
 - git blob: `52105b46654411089338c6adbed8d85fe65d1329`
 - sha256: `f805e6db491d9ec8efe0ac2f06a0ba8f9fa6d94f769da77b98415aee3844b9d8`
-- Lines: 100; runners named: scripts/frontier_planck_bare_physical_lattice_observable_ontology_theorem.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1382_PLANCK_SCALE_BARE_PHYSICAL_LATTICE_OBSERVABLE_ONTOLOGY_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1382_PLANCK_SCALE_BARE_PHYSICAL_LATTICE_OBSERVABLE_ONTOLOGY_THEOREM_2026-04-23.md)
+- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_physical_lattice_observable_ontology_theorem(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ The B1 'closure' is definitional-scope dependent - it holds only under the obser
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_b1_closure_theorem_for_the_bare_cell_alone_upgrade_program
 intake_directive: owner_2026-08-05
 ```
 

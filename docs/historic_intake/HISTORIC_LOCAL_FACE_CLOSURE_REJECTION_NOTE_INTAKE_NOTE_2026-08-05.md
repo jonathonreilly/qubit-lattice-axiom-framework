@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The weakest local face-closure axiom is rejected — the exact
 Scope: Rejects only the weakest explicit local closure axiom (one generic frontier-face amplitude plus the local one-cell/three-cell launch sectors) at beta=6; does not derive analytic P(6).
 Escape conditions (negative claims): Closure must retain nontrivial correlations among outgoing frontier faces beyond this minimal local factorization; the next stronger exact obstruction is recorded in ONE_SHELL_FACE_STATE_TRANSFER_NO_GO_NOTE (even the full multiset of one-shell boundary-face states does not determine the next rooted continuation count).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Exact rejection of the weakest local face-closure axiom: no positive real solution — with the correlation-retention escape named.
 
@@ -32,7 +34,8 @@ Exact rejection of the weakest local face-closure axiom: no positive real soluti
 - Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
 - git blob: `40ae51af105615d6400f2cddfd692f9bdebf266d`
 - sha256: `688b768ed19fba0b1f36951970fff6d44566a9ae6a8822bf2a69ec794b1cf21f`
-- Lines: 100; runners named: scripts/frontier_local_face_closure_rejection.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1112_LOCAL_FACE_CLOSURE_REJECTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1112_LOCAL_FACE_CLOSURE_REJECTION_NOTE.md)
+- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_local_face_closure_rejection(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

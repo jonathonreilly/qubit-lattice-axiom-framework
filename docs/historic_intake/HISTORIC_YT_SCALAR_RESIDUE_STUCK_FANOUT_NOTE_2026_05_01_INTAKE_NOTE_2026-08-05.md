@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_analysis
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Open fan-out with no retention proposal; selected next route i
 Scope: Fan-out enumeration of routes past the scalar pole-residue / common-dressing blocker.
 Escape conditions (negative claims): Supply a scalar-channel coupling/pole theorem from A_min (route F3).
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The stuck fan-out route-selection terminal — including the kill of the tempting Z_proxy ~ 1/sqrt(6) numerical coincidence.
 
@@ -32,7 +34,8 @@ The stuck fan-out route-selection terminal — including the kill of the temptin
 - Source commit: `df3f971b009b4a0f86edfc72ca99a639b6cb7245`
 - git blob: `32f655315e3671f0895d5c3c76666afd8c6871a6`
 - sha256: `18f303909dcfc1ee8b34f93ff18e2bcbc054edeeab9e260489bab5fea4372480`
-- Lines: 101; runners named: scripts/frontier_yt_scalar_residue_stuck_fanout.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2415_YT_SCALAR_RESIDUE_STUCK_FANOUT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch08/2415_YT_SCALAR_RESIDUE_STUCK_FANOUT_NOTE_2026-05-01.md)
+- Lines: 101; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_scalar_residue_stuck_fanout(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -82,6 +85,7 @@ Kills a tempting numerical coincidence (Z_proxy ~ 1/sqrt(6)) that could otherwis
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
 ```
 

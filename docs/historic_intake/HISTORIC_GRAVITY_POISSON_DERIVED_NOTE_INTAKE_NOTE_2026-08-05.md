@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Nothing in the Poisson derivation chain remains open - it is a
 Scope: Assumes the framework axiom plus nearest-neighbor propagation and rho = |psi|^2 sourcing; the operator L is derived rather than chosen.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The 'nothing open' Poisson claim — pulled as the contradiction pair's maximal half (652 grades the same step BOUNDED); audit rules.
 
@@ -32,7 +34,8 @@ The 'nothing open' Poisson claim — pulled as the contradiction pair's maximal 
 - Source commit: `42803d8044824f16f74d1af66455cb15f92b5fb9`
 - git blob: `c7bf9e681430d7df6ab863e53b8f1192c76decc1`
 - sha256: `91a6164342245c94b8ae0d69fcaf017e226bddd31ce7d693d180c9ec62786fb5`
-- Lines: 142; runners named: scripts/frontier_gravity_poisson_derived.py, scripts/frontier_newton_derived.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/649_GRAVITY_POISSON_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/649_GRAVITY_POISSON_DERIVED_NOTE.md)
+- Lines: 142; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gravity_poisson_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_newton_derived(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Claims nothing remains open, while the umbrella chain document (idx 646) grades 
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_conditional_support
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: CIRCULAR for the value but conditional only on the operational
 Scope: Runner PASS=29 FAIL=0; a normalization gap is acknowledged honestly and the additivity no-go stays intact and distinct from the frequency route.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 The Born-residual split: the FORM of Born is unconditional inside {Quantum, Record} (Busch), the VALUE is circular, the residual is exactly the operational identification — high-grade prior art for the live Born lane.
 
@@ -32,7 +34,8 @@ The Born-residual split: the FORM of Born is unconditional inside {Quantum, Reco
 - Source commit: `0188ae5549bc47b91540c16d5ee51e1d0fb7a0b6`
 - git blob: `2486a4cf8d2165e5862c410176e199a75971e3c4`
 - sha256: `6b47b5b8cb325feb5f888eea8953c060f46bea7977c7047b4cd83be242d1870f`
-- Lines: 309; runners named: ../scripts/frontier_born_quantum_record_unconditional_2026_06_05.py, scripts/frontier_born_quantum_record_unconditional_2026_06_05.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/114_BORN_QUANTUM_RECORD_UNCONDITIONAL_FORM_VS_OPERATIONAL_RESIDUAL_NOTE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch01/114_BORN_QUANTUM_RECORD_UNCONDITIONAL_FORM_VS_OPERATIONAL_RESIDUAL_NOTE_2026-06-05.md)
+- Lines: 309; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_born_quantum_record_unconditional_2026_06_05(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_born_quantum_record_unconditional_2026_06_05(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_conditional_support
 intake_directive: owner_2026-08-05
 ```
 

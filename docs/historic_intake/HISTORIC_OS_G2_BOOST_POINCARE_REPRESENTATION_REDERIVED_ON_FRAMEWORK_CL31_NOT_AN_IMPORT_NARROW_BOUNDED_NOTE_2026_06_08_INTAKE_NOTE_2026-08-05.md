@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -22,7 +22,9 @@ Original verdict: With the physics content framework-native and only the mathema
 Scope: Free U = 1 only; the interacting theory is explicitly out of scope. TOTAL PASS=9 FAIL=0.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 OS reconstruction's last residual (G2) made framework-native — boost-sector content honestly standard.
 
@@ -32,7 +34,8 @@ OS reconstruction's last residual (G2) made framework-native — boost-sector co
 - Source commit: `4aee776b77cc17b88afeb4596e7fb53f00d5cd60`
 - git blob: `befcbdc4b8b2a8b794fd0add3973bd28ddb78c85`
 - sha256: `337b9f9fa0184dd176b8b50010996143df9fc16cbcbf59ce3e82dd635c58184c`
-- Lines: 178; runners named: scripts/frontier_os_g2_boost_poincare_rederived_on_framework.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1245_OS_G2_BOOST_POINCARE_REPRESENTATION_REDERIVED_ON_FRAMEWORK_CL31_NOT_AN_IMPORT_NARROW_BOUNDED_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch04/1245_OS_G2_BOOST_POINCARE_REPRESENTATION_REDERIVED_ON_FRAMEWORK_CL31_NOT_AN_IMPORT_NARROW_BOUNDED_NOTE_2026-06-08.md)
+- Lines: 178; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_os_g2_boost_poincare_rederived_on_framework(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Concedes the boost sector's content was always standard — the advance is prove
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

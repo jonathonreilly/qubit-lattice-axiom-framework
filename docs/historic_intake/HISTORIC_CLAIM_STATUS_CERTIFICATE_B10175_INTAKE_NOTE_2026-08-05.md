@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: No artifact should be read as retained, proposed_retained or p
 Scope: Pointer repairs and safe scope narrows only; docs/audit/** deliberately untouched.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Four scope narrows against landed surfaces, incl. newtonian_distance_law_confirmed retitled to a SHA-pinned historical pointer; nothing in the set may be read as retained/proposed_retained/proposed_promoted. Work order.
 
@@ -32,6 +34,7 @@ Four scope narrows against landed surfaces, incl. newtonian_distance_law_confirm
 - Source commit: `e0b0eefa85a78b80035045c87fc5e0ca7fcf8dd5`
 - git blob: `448c548b6309f043bc321f6834645b84ad3cc3f6`
 - sha256: `df0ef90affa5d54213e0952bb8325f22b6cb214e6584c81188bcdbed212e2328`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10175_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10175_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 41; runners named: none
 
 ## Attached evidence (registered with, not as, this claim)
@@ -48,6 +51,7 @@ Four scope narrows against landed surfaces, incl. newtonian_distance_law_confirm
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

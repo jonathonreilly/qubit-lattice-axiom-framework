@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — no axiom load-bearing; operators and propagator imported bit-identically from scripts/frontier_self_consistent_field_equation.py
 
@@ -22,7 +22,9 @@ Original verdict: The two named discriminators are empty (not reversed): the bet
 Scope: Every numerical row is scoped to the tested 3D Dirichlet cubic-lattice transfer-propagator construction at the parent note's parameters and stated lattice sizes; no row is a continuum-limit claim; L4 is a seven-point grid in k, not a statement about all k.
 Escape conditions (negative claims): The negative is confined to the two named discriminators at the parent note's own working point and is explicitly NOT a claim that the lane's field equation is not Poisson, nor that any rival is better — R16 refuses that reading on two grounds: biharmonic's power-law fit is the worst of the four (R^2 = 0.8556 vs 0.9240 Poisson, 0.9855 for 1/r^2) and the abs(beta-1) gap 0.156 sits inside the parent note's own documented finite-size shift 0.280. Amplitude-artifact escape tested and closed (beta spread <= 0.0229 over an 80-fold G sweep). Test 1 (convergence) and Test 4 (screened sweep) survive; Bounded Claim 1 is proposed narrowed to the screened family rather than dropped.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 No-go: the response kernel is sign-indefinite (70-78% negative) vs single-signed inverse Laplacian — the two named discriminators on the landed Poisson row are EMPTY; first of the cluster.
 
@@ -32,7 +34,8 @@ No-go: the response kernel is sign-indefinite (70-78% negative) vs single-signed
 - Source commit: `2da0f23f932510294be7c3171b0012bf8fcf8f0c`
 - git blob: `2301fba9541eebbb4b50b194d5124575421b1eac`
 - sha256: `8395b1274ea565e37dededdfc7caeb6a1138111734750a5ae4e90841c1f2870f`
-- Lines: 340; runners named: scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py, scripts/frontier_self_consistent_field_equation.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3092_POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md](../../archive_unlanded/historic_intake_originals/recovery/3092_POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md)
+- Lines: 340; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ audit_required_before_effective_retained: true, bare_retained_allowed: false; th
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

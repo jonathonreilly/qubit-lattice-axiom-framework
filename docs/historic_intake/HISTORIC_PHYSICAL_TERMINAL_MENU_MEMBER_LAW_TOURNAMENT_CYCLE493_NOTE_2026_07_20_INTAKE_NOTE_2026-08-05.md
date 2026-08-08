@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_negative_result
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Route C derives all finite word coefficients, bins and deletio
 Scope: Same Cycle-478 terminal menu (positive mixed root at new-row index 412, effect classes 679, 724, 767, 813, 1039) and same Cycle-483 FORM interface as Cycle 488; train N=4 and held N=12 with no refit, and two incompatible input states frozen BEFORE reading their branch norms.
 Escape conditions (negative claims): The falsifier is explicitly NOT a no-go against stronger operational, symmetry or decoherence premises — it only shows this premise set is insufficient.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Reusable methodological control: the NON-BORN-SELECTOR FALSIFIER - a frozen UNIFORM selector (1/5,...) passes the SAME local gates as the Born candidate, proving the gate family cannot distinguish Born; Route C derives all finite word coefficients [without selecting]. Belongs next to the wall map (2941).
 
@@ -32,7 +34,8 @@ Reusable methodological control: the NON-BORN-SELECTOR FALSIFIER - a frozen UNIF
 - Source commit: `db98fd197b60c12282ca7d79695230429e4b2952`
 - git blob: `b82d02022a4844f0fed31ac6e8e5100c08d68ceb`
 - sha256: `81cab7f7fa54bef5789c3991911dc197f7506e4aeaa721973a548685006cbd8a`
-- Lines: 424; runners named: scripts/physical_terminal_menu_member_law_tournament_cycle493_2026_07_20.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3052_PHYSICAL_TERMINAL_MENU_MEMBER_LAW_TOURNAMENT_CYCLE493_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/3052_PHYSICAL_TERMINAL_MENU_MEMBER_LAW_TOURNAMENT_CYCLE493_NOTE_2026-07-20.md)
+- Lines: 424; runners named: historic runner (unpinned, not in this packet): `scripts/physical_terminal_menu_member_law_tournament_cycle493_2026_07_20(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
 ```
 

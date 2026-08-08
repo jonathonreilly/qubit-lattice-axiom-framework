@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: fork_pr_only
 Era: post_reset_2026_06_29 — inputs are the lattice adjacency of MINIMAL_AXIOMS_2026-06-29 and nothing else
 
@@ -22,7 +22,9 @@ Original verdict: The parity law is a property of the proper subsets of the colu
 Scope: About this single cell only, proved by exhibiting certificates for its 2672 pieces; says nothing about any other object; the ceiling of the spacetime cost is not addressed at all and the 13 exhibited values are not a spectrum claim; the surviving-piece pool is measured by complete search, not derived by any rule.
 Escape conditions (negative claims): The parity failure is not a failure to find a certificate but a hard obstruction (an explicit odd-sum double cover), scoped to this cell. The note records that an earlier cycle's attempt at a parity law ACROSS objects was refuted and is not revived. Certificates were found by elimination so none is claimed minimal, and the law is stated as robust to which certificate is used.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Ten of eleven column-subset costs obey a parity law by exact elimination; the eleventh carries a HARD obstruction (explicit witness) — a clean split theorem.
 
@@ -32,7 +34,8 @@ Ten of eleven column-subset costs obey a parity law by exact elimination; the el
 - Source commit: `1f4f4c1ea7734ba89852b09e5042b4ad5bc2592a`
 - git blob: `5ff655c72b45bee5f8e5dfa89b7a1d6d90af495e`
 - sha256: `94656ee9fb9e53f34fc7739e76b333e340185adf273c8004e565638cc6d58480`
-- Lines: 292; runners named: scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3096_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3096_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md)
+- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Notes that the two minimum principles are not the same: every spacetime minimise
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_exact_reduction_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The projected PMNS source law is no longer an extra formal obj
 Scope: Full finite Grassmann Gaussian; does not derive the effective lepton blocks or the active probe direction.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Schur-pushforward theorem closing the source-law-invention loophole: the projected law is exact quotient data.
 
@@ -32,7 +34,8 @@ Schur-pushforward theorem closing the source-law-invention loophole: the project
 - Source commit: `95df6a042fbee4f6374a68f17c4a3cf55ebd8acf`
 - git blob: `e39bc25853b6c5ea84b5ac8f61594a1545a1721a`
 - sha256: `af6f9c4512e6eba779e72c18fe4088a42c7861ff8b40cd652866d68924415226`
-- Lines: 109; runners named: scripts/frontier_pmns_schur_source_law_reduction.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1578_PMNS_SCHUR_SOURCE_LAW_REDUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1578_PMNS_SCHUR_SOURCE_LAW_REDUCTION_NOTE.md)
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_schur_source_law_reduction(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_exact_reduction_theorem
 intake_directive: owner_2026-08-05
 ```
 

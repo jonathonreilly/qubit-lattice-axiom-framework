@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The prior 'settled I_S = 3.90' is wrong by the /N_TASTE factor
 Scope: MS-bar, mu = 1/a, tadpole u0 = <P>^(1/4) convention, single-link (unimproved) regulator whose literature band is ~29-39, not the smeared-action [4,10] band.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Overturns PR #4128's settled I_S = 3.90 by reconstructing the published Lee-Sharpe constant to 0.16% — a live double-counting bug in functions consumed by landed rows; audit work order.
 
@@ -32,7 +34,8 @@ Overturns PR #4128's settled I_S = 3.90 by reconstructing the published Lee-Shar
 - Source commit: `11a9af724b5a03693706bfacdfa07757cc04b9db`
 - git blob: `3d7a50b0c7d487cf3c6b3e4a571508518e315123`
 - sha256: `f48920c2af82bd046a5b5bd3fc0a0b12e2fa79a4f93d91e251aba3dc617591df`
-- Lines: 77; runners named: scripts/i_s_ntaste_double_count_resolution_2026_06_16.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/741_I_S_NTASTE_DOUBLE_COUNT_RESOLUTION_NOTE_2026-06-16.md](../../archive_unlanded/historic_intake_originals/branch03/741_I_S_NTASTE_DOUBLE_COUNT_RESOLUTION_NOTE_2026-06-16.md)
+- Lines: 77; runners named: historic runner (unpinned, not in this packet): `scripts/i_s_ntaste_double_count_resolution_2026_06_16(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Documents a live double-counting bug in two integration functions plus a mis-att
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

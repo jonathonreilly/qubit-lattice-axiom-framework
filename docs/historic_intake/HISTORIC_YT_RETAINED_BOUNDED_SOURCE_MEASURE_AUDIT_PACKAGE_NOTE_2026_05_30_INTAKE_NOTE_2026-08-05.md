@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The normalization wall that blocked the whole May campaign clo
 Scope: Audit-readiness package assembling the shortest honest chain on the accepted Tier-A surface; proposes no unilateral status change.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 THE BOUNDARY CROSSING: the kappa_s wall 'closed' four weeks later by admitting the Tier-A source-measure premise the May firewalls explicitly barred — the audit lane must rule on this move.
 
@@ -32,7 +34,8 @@ THE BOUNDARY CROSSING: the kappa_s wall 'closed' four weeks later by admitting t
 - Source commit: `80b8632a72cf1148b6bc840b4e754b6489d16d02`
 - git blob: `3d2382a82dd42f40fbd732d760531a6a53880efc`
 - sha256: `a875f163e34931112b6e0c1f11c314b758e500244569d3296ce38ca904a61353`
-- Lines: 196; runners named: scripts/frontier_yt_retained_bounded_source_measure_audit_package.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2383_YT_RETAINED_BOUNDED_SOURCE_MEASURE_AUDIT_PACKAGE_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch07/2383_YT_RETAINED_BOUNDED_SOURCE_MEASURE_AUDIT_PACKAGE_NOTE_2026-05-30.md)
+- Lines: 196; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_retained_bounded_source_measure_audit_package(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Reaches the campaign's target result by admitting a Tier-A source-measure premis
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

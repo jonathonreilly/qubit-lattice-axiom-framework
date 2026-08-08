@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_bounded_theorem
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: The smeared / OS-sense 2-point convergence is ESTABLISHED cond
 Scope: Conditional on rung A's pointwise convergence at its cited status and on fixed m > 0; the massless limit is not treated, and no measure-level reconstruction, spin-statistics, emergent-Lorentz or interacting claim is made.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Smeared/OS-sense 2-point convergence conditional on rung A — the transfer-gap lineage's consumable form.
 
@@ -32,7 +34,8 @@ Smeared/OS-sense 2-point convergence conditional on rung A — the transfer-gap 
 - Source commit: `fc8907e42d8182c573798eecbc4cadc416f08df2`
 - git blob: `8794c963d168b51302aeded0ff564f49536827d0`
 - sha256: `432f529d0aa87bb20eec439d5bd8cef9407d0b1a1fc58b1d0a028a80587ce574`
-- Lines: 428; runners named: scripts/free_staggered_2point_smeared_convergence_2026-05-30.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/514_FREE_STAGGERED_2POINT_SMEARED_CONVERGENCE_BOUNDED_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/514_FREE_STAGGERED_2POINT_SMEARED_CONVERGENCE_BOUNDED_NOTE_2026-05-30.md)
+- Lines: 428; runners named: historic runner (unpinned, not in this packet): `scripts/free_staggered_2point_smeared_convergence_2026-05-30(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,6 +51,7 @@ Explicitly avoids leaning on a finite-a taste-flat operator identified elsewhere
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_bounded_theorem
 intake_directive: owner_2026-08-05
 ```
 

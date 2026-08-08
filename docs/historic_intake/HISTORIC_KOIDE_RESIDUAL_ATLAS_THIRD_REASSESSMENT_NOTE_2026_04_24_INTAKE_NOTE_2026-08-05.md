@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_residual_atlas
+Claim type: meta
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: KOIDE_RESIDUAL_ATLAS_THIRD_CLOSES_Q=FALSE and _CLOSES_DELTA=FA
 Scope: A guardrail against repeating local variants of already-exhausted classes; not closure.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Residual-atlas terminal: only NEW-PRINCIPLE routes remain for Q and delta — the lane's honest state.
 
@@ -32,7 +34,8 @@ Residual-atlas terminal: only NEW-PRINCIPLE routes remain for Q and delta — th
 - Source commit: `7b2531e0084b600dbf3d410d117c568a230c5f88`
 - git blob: `bc45bd1c3659ecebcd5c2a1f785905ee53d8a2fa`
 - sha256: `66691e3f44ac3f6378e1c462fb1a727e499e0abead55d7825fd8b947c277bc07`
-- Lines: 78; runners named: scripts/frontier_koide_residual_atlas_third_reassessment.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1070_KOIDE_RESIDUAL_ATLAS_THIRD_REASSESSMENT_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch04/1070_KOIDE_RESIDUAL_ATLAS_THIRD_REASSESSMENT_NOTE_2026-04-24.md)
+- Lines: 78; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_residual_atlas_third_reassessment(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,6 +52,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_residual_atlas
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_correction
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -22,7 +22,9 @@ Original verdict: Demotion recommended; the deeper question of which upstream no
 Scope: Dep-declaration correctness only.
 
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 Demotion packet: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md carried proposed_retained with deps declared EMPTY while its runner actually reads 11 upstream notes; 301 descendants inherit. CROSS-LINK: this note is the load-bearing locality authority of the A_min-to-Q chain (idx 10256) - the demotion and the chain must be audited together.
 
@@ -32,7 +34,8 @@ Demotion packet: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md carried proposed_retain
 - Source commit: `9ec0e48d22beb8f7bd1fc302af6e4c9b74ecc8f2`
 - git blob: `7dac46fd370efe0f6de245f84ed6731f1fb584d5`
 - sha256: `c07d18694ec7b76ecd1bcf311f91312b214727b4366c598b06aa71c746d5ebfb`
-- Lines: 51; runners named: scripts/frontier_physical_lattice_necessity_dep_declaration_audit.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10155_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10155_CLAIM_STATUS_CERTIFICATE.md)
+- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_physical_lattice_necessity_dep_declaration_audit(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -40,7 +43,7 @@ Demotion packet: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md carried proposed_retain
 
 ## Cross-stratum flags
 
-- Attaches across strata to idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — Demotion packet: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md carried proposed_retained with deps declared EMPTY while its runner actually reads 11 upstream notes; 301 descendants inherit. CROSS-LINK: this note is the load-bearing locality authority of the A_min-to-Q chain (idx 10256) - the demotion and the chain must be audited together.
+- Attaches across strata to [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — Demotion packet: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md carried proposed_retained with deps declared EMPTY while its runner actually reads 11 upstream notes; 301 descendants inherit. CROSS-LINK: this note is the load-bearing locality authority of the A_min-to-Q chain (idx 10256) - the demotion and the chain must be audited together.
 
 ## Flags carried
 
@@ -52,6 +55,7 @@ A proposed_retained note with 301 descendants had declared ZERO dependencies whi
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
 ```
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: historic_no_go
+Claim type: no_go
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -22,7 +22,9 @@ Original verdict: Support-only non-supply boundary; K2 exactness is not ratified
 Scope: The K2 exactness target of the Koide/electron-readout lane (would supply delta = 2/9).
 Escape conditions (negative claims): Supply the six missing inputs, chiefly a distinguished two-ninths theorem and a radian-readout license.
 
-## Why pulled (supervisor decision, on the record)
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
 
 K2 exactness terminal of the whole R-eta ladder: six of ten inputs missing — delta = 2/9 not ratifiable on current surfaces.
 
@@ -32,7 +34,8 @@ K2 exactness terminal of the whole R-eta ladder: six of ten inputs missing — d
 - Source commit: `3139c557bb18b57af4446d4fd2939ac1be4238da`
 - git blob: `e9ed03f0d4062df66036e0ef47b6ef19186aa6b6`
 - sha256: `514b5278e49a1874783164223d837a7bc3761c5e3f4d396cdbd7211bad0de6ce`
-- Lines: 254; runners named: scripts/frontier_zero_import_hydrogen_koide_r_eta_exactness_current_surface_no_go.py
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2558_ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md](../../archive_unlanded/historic_intake_originals/branch08/2558_ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md)
+- Lines: 254; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_koide_r_eta_exactness_current_surface_no_go(.py)`
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -129,6 +132,7 @@ none recorded
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 historic_intake: true
+historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
 ```
 

@@ -22,11 +22,15 @@ Claude model is driving the conversation (e.g. Fable, or the strongest available
 Claude model at the time). It is not a separately pinned or named model; it
 follows the in-chat model.
 
-Two worker profiles are first-class (owner directive 2026-08-03; the full
-2026-08 campaign window ran 20+ Claude workers across 23 shipped blocks with
-zero failed deliveries — the checker lane refuted a supervisor-authored
-primary, caught a verdict-flipping rubric defect in its own primary, and
-landed 3/3 pre-registered predictions on never-evaluated objects):
+Two worker profiles are first-class (owner directive 2026-08-03).
+Operational support — support-only evidence, NOT on `origin/main`: the
+2026-08 campaign work-log (`STATE.yaml` and `REVIEW_HISTORY.md` under
+`.claude/science/physics-loops/toe-time-expansion-20260802/` on the pack
+branch `physics-loop/toe-close-pack-20260729`) records that window's Claude
+workers block by block, including a checker refuting a supervisor-authored
+primary, a worker catching a verdict-flipping rubric defect in its own
+primary, and 3/3 pre-registered checker predictions on never-evaluated
+windows. The profiles:
 
 - **Codex text-reasoning worker** — the local `codex exec` setup, preferred
   profile `gpt-5.6-sol` at `model_reasoning_effort=max` (owner directive
@@ -38,9 +42,11 @@ landed 3/3 pre-registered predictions on never-evaluated objects):
   maximum reasoning effort (farmed work runs at max — owner directive
   2026-06-26; subagents inherit the session's effort, so the session must
   be at max). Launched as background workers, one per block, each in its
-  own durable worktree. The codex failure modes (stdin start-hang, context
-  exhaustion mid-delivery) do not apply; the bounded-read discipline still
-  does.
+  own durable worktree. The codex start-hang/stdin failure modes have not
+  been observed with Claude workers (no CLI stdin is involved at launch),
+  but context exhaustion from oversized reads or tool output remains
+  possible for any bounded-context worker: the bounded-read and
+  incremental-delivery discipline applies to this profile too.
 
   Worker-tier rationale (owner-ratified 2026-08-04): the frontier model is
   NOT the default worker even though it is the strongest available Claude
@@ -48,21 +54,31 @@ landed 3/3 pre-registered predictions on never-evaluated objects):
   capability is load-bearing — spec judgment, line-by-line review, and
   landing — and preserves the shared capacity pool across a long window
   (parallel frontier workers would burn the window's budget on the lane
-  where discipline, not raw capability, carries robustness: the 2026-08
-  window shipped 23 blocks with zero failed worker deliveries, and every
-  defect that mattered was caught by the verification structure, including
-  two supervisor spec errors caught BY workers). The supervising agent MAY
-  escalate an individual block's worker or checker to the frontier model
-  when that block's difficulty warrants it; escalation is a profile fact
-  and is disclosed in the ship note like any other.
+  where discipline, not raw capability, carries robustness). Per the
+  campaign work-log cited above: the defects that were caught in that
+  window were caught by the verification structure, including supervisor
+  spec errors caught BY workers; that record says nothing about defects
+  that went undetected, and no completeness claim is made. The supervising
+  agent MAY escalate an individual block's worker or checker to the
+  frontier model when that block's difficulty warrants it; escalation is a
+  profile fact and is disclosed in the ship note like any other.
 
 Profile selection is the supervising agent's discretion, with one preference:
 when both lanes are available, pair them — primary from one family, checker
-from the other — because cross-model checker independence is strictly stronger
-than cross-context. When only one family is available (quota, outage), the
-single-family setup is admissible ONLY under the robustness conditions below,
-and every shipped block must disclose its independence class (cross-model vs
-cross-context) in the note, receipt, and PR.
+from the other — because a checker built by a different model family is more
+independent than a checker built in a separate context of the same family.
+When only one family is available (quota, outage), the same-family setup is
+admissible ONLY under the robustness conditions below, and every shipped
+block must say plainly in the note, receipt, and PR whether its checker was
+built by a different model family or in a separate context of the same
+family (and say so if context separation cannot be established). This
+describes the checker pairing only; it is not an audit-independence grade —
+audit rows use the controlled `independence` vocabulary in
+`docs/repo/CONTROLLED_VOCABULARY.md`.
+
+Known residual: the canonical `/workhorse` command surface and its
+science-command callers still carry the earlier Codex-first launch default;
+they are updated in a separate change, not by this file.
 
 Never substitute an image, visual-generation, document-rendering, or
 low-reasoning model for either profile. Disclose any substitution in the work
@@ -117,9 +133,10 @@ The worker must not:
   worktree (never a tmp path — reboots purge tmp; the 2026-08-02 campaign
   interruption is the precedent), with the block spec inline in the prompt.
 - The spec carries the same bounds as a codex spec: named read caps, exact
-  deliverable filenames, commit-incrementally-with-prefix, no docs/ edits,
-  no pushes (the supervisor pushes after review), raw final report with a
-  line cap.
+  deliverable filenames, commit-incrementally-with-prefix, no docs/ edits
+  except deliverable paths the spec names exactly (a note draft assigned
+  under the worker contract is such a deliverable), no pushes (the
+  supervisor pushes after review), raw final report with a line cap.
 - Workers commit locally; the supervisor reviews, then commits any
   supervisor-side artifacts (note, receipt) and pushes. Worker scripts are
   committed BEFORE their first certified run wherever recovery matters.

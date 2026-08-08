@@ -1,0 +1,39 @@
+{
+  "byte_exact_match": true,
+  "declared_survey_constants": {
+    "docs_md_at_survey_tip": 4686,
+    "gated_docs_md_at_survey_tip": 714,
+    "ledger_rows_at_survey_tip": 3972
+  },
+  "derived_counts": {
+    "cross_stratum_overlap_paths": 213,
+    "items": 3621,
+    "per_stratum": {
+      "branch_only_never_mainlined": 3074,
+      "closed_unmerged_never_landed": 21,
+      "march_2026_event_network_era": 252,
+      "open_pr_origin_branch_rescued": 14,
+      "open_pr_pending_origin_branch": 228,
+      "pre_seeding_mainline_deleted": 32
+    },
+    "strata": 6,
+    "unique_paths": 3408
+  },
+  "failures": [],
+  "generator": "scripts/census_index_rebuild_2026_08_05.py",
+  "inputs_consumed": {
+    "git_head_at_run": "39c9065d8707028443664817a7b73c550158e724",
+    "git_object_store": "resolved via git cat-file --batch-check",
+    "index_path": "docs/repo/science_census_unledgered_index_2026-08-05.json",
+    "index_sha256": "40f2878275e84ca53e905cfdf214ff5e44dfb8e9b144ac9a36743193b843e31b"
+  },
+  "regenerated_index_sha256": "40f2878275e84ca53e905cfdf214ff5e44dfb8e9b144ac9a36743193b843e31b",
+  "run_utc": "2026-08-08T15:37:21Z",
+  "verification": {
+    "blob_fields_checked_and_matching": 249,
+    "null_ref_records": 0,
+    "records_resolving_to_git_blob": 3621,
+    "records_total": 3621,
+    "unresolved_ref_records": 0
+  }
+}

@@ -22,21 +22,31 @@ the results cross-checked against the ledger shards under
 
 The companion file
 [`science_census_unledgered_index_2026-08-05.json`](science_census_unledgered_index_2026-08-05.json)
-**is the authority for the item lists.** It carries all 3,621 enumerated items
-[verified] with their paths, refs, dates and pull request numbers. The prose below
-names only representative examples. If a list here and the index disagree, the
-index is right, and the index records its own coverage gaps.
+**is the authority for the item lists.** It carries all 3,621 enumerated
+location records — 3,408 unique paths [verified] — with their paths, immutable
+refs, pull request numbers and, where recoverable, dates. Every record now
+carries an immutable ref: the PR-derived records were backfilled on 2026-08-08
+with their pull-request head commits and git blobs (six closed-PR records carry
+the earliest commit adding the path instead; zero records remain unresolved).
+The prose below names only representative examples. If a list here and the index
+disagree, the index is right, and the index records its own coverage gaps.
 
 Every count in this document is tagged. **[verified]** means it was recomputed
 from the underlying data for this census. **[from-survey]** means it comes from
 the earlier survey walks and could not be checked against the data available
-here.
+here. Counts derivable from the index alone are additionally regenerated and
+byte-checked by `scripts/census_index_rebuild_2026_08_05.py` (see Known limits
+for the reproducibility boundary of the remaining [verified] figures).
+
+This census asserts existence and location only. Where the prose describes what
+a historical note says, that is the note's own claim, quoted for orientation;
+this census does not endorse, validate or promote any of it.
 
 ---
 
 ## The verdict
 
-**The ledger is complete over the science it was built to cover, and five
+**The ledger is complete over the science it was built to cover, and six
 strata of real science sit outside it.**
 
 The covered part is in good order. At the 2026-08-03 tip the repository holds
@@ -48,12 +58,14 @@ tip [verified], and no row anywhere points at a note that has been deleted
 [verified]. There are 3,972 shard files on disk, one per row [verified]. The
 ledger is hash-exact over landed claim notes, with no drift.
 
-The uncovered part is the point of this document. Five strata of science have
-never had a ledger row, for five different and mostly deliberate reasons. They
-total 3,621 enumerated items [verified]. Two of the five are working as designed
-— open pull requests mint their rows when they land, and that is correct
-behaviour, not a gap. The other three are genuine history sitting outside the
-ledger's reach.
+The uncovered part is the point of this document. Six strata of science have
+never had a ledger row, for different and mostly deliberate reasons. They cover
+**3,408 unique note paths** [verified], enumerated in 3,621 stratum-location
+records [verified] — 213 paths appear in two strata each, disclosed in the
+overlap table below. Two of the six are open-pull-request strata working as
+designed — open pull requests mint their rows when they land, and that is
+correct behaviour, not a gap. The other four are genuine history sitting
+outside the ledger's reach.
 
 The single sharpest fact: **the registrar only ever looks inside `docs/`.** The
 whole March 2026 era of the project, which predates the `docs/` note format
@@ -69,12 +81,29 @@ mechanism.
 | 1 | March 2026 event-network era | **252** [verified] — 58 claim notes + 194 run logs | `.claude/science/**` and `logs/*.txt`, on history descending from the true root `7a5f1dca05` (2026-03-13). Not reachable from `origin/main`; reachable from archive refs such as `claude/yt-direct-lattice-correlator-2026-04-30`. |
 | 2 | Pre-seeding mainline, deleted | **32** [verified] | `docs/*.md`, added to the mainline in April 2026 and deleted before the 2026-04-26 seeding run. Reachable only through archive refs, since `origin/main` has been rewritten. |
 | 3 | Branch-only, never mainlined | **3,074** [verified] (2,510 of them [verified] pass the survey's science-note naming filter) | Branch and tag tips across the 2,914 refs. Named branch families include `physics-loop/*` (963 refs), `claude/*` (110), `codex/*` (101), `science/*` (96) [all verified]; plus 356 `archive/*` tags [verified], of which 51 are the `archive/ckm-*` closed-form wave [verified]. |
-| 4 | Open pull requests, on origin branches | **228** [verified] | Head branches on origin, across 107 of the 110 open pull requests that carry science notes [verified]. **Correctly pending** — rows mint at landing. |
-| 5 | Fork pull requests only | **14** [verified] | Inside fork-hosted pull request objects only, with no origin branch carrying them. PRs #5922, #5933, #5940, #5942, #5949, #5953, #5962, #5968, #5974, #5978, #5981, #5983, #5990, #5998. **Rescued by this census** into `archive_unlanded/fork_pr_rescue_2026_08_05/`. |
+| 4 | Open pull requests, on origin branches | **228** [verified] | Head branches on origin, across 93 open pull requests [verified]. **Correctly pending** — rows mint at landing. |
+| 5 | Open pull requests, origin branches — archived copies | **14** [verified] | Head branches on origin of same-repository PRs #5922, #5933, #5940, #5942, #5949, #5953, #5962, #5968, #5974, #5978, #5981, #5983, #5990, #5998, one note each. Additionally copied byte-for-byte into `archive_unlanded/fork_pr_rescue_2026_08_05/` as **redundant preservation**. Originally misclassified as fork-PR-only; corrected 2026-08-08 (see the stratum 5 section). |
 | 6 | Closed without merging, never landed | **21** [verified] | Closed pull request objects and branch tips, PRs #5620 through #5888 [verified]. 13 are still recoverable from `origin/main`'s own history; 8 exist only on branches [verified]. |
 
 Strata 4 and 5 are two halves of the open-pull-request tier: 228 + 14 = 242
-notes on open pull requests [verified], which is the full open set.
+notes on open pull requests [verified], across 107 pull requests — 93 in
+stratum 4 and 14 in stratum 5 [verified] — which is the full open set carrying
+science notes, out of 110 open pull requests at the walk.
+
+The strata are **location strata, not disjoint path sets**: the same note path
+can sit on a never-mainlined branch and on an open pull request at once. The
+3,621 records enumerate 3,408 unique paths [verified]; the identity key of a
+record is its (stratum, path) location, and unique artifacts are counted by
+path. The cross-stratum overlaps, with byte comparison of the two copies via
+the records' refs and blobs:
+
+| Overlap | Paths | Byte-identical | Different versions |
+|---------|-------|----------------|--------------------|
+| Branch-only ∩ open-PR (strata 3 ∩ 4) | **205** [verified] | 193 [verified] | 12 [verified] |
+| Branch-only ∩ closed-unmerged (strata 3 ∩ 6) | **8** [verified] | 7 [verified] | 1 [verified] |
+
+All other strata pairs are disjoint by path [verified]. 3,408 unique paths +
+213 second locations = 3,621 records, with nothing left over.
 
 ---
 
@@ -106,16 +135,19 @@ existed, spread across `analyses` (29), `sanity` (12), `hypotheses` (6),
 `experiments`, `investigations` and `theory-reviews` [all verified]. Alongside
 them sit 194 run logs first added in March [verified].
 
-- `derivations/visibility-threshold-2026-03-30.md` — derives the visibility
-  threshold R_c(y) for the discrete event-network model.
-- `write-ups/interference-regime-2026-03-30.md` — characterises the interference
-  regime of the discrete event-network toy model.
-- `write-ups/decoherence-arc-2026-03-30.md` — surveys the decoherence mechanisms
-  available in the model.
-- `frontier/corrected-propagator-2026-03-31.md` — corrects the propagator, moving
-  the mechanism from amplitude repulsion to gravitational attraction.
-- `theory-reviews/interference-geometry-sensitivity-2026-03-30.md` — tests how
-  sensitive the interference pattern is to geometry.
+- `derivations/visibility-threshold-2026-03-30.md` — the note claims a
+  derivation of a visibility threshold R_c(y) for the discrete event-network
+  model.
+- `write-ups/interference-regime-2026-03-30.md` — the note reports a
+  characterisation of the interference regime of the discrete event-network toy
+  model.
+- `write-ups/decoherence-arc-2026-03-30.md` — the note surveys decoherence
+  mechanisms it describes as available in the model.
+- `frontier/corrected-propagator-2026-03-31.md` — the note claims a propagator
+  correction that it says moves the mechanism from amplitude repulsion to
+  gravitational attraction.
+- `theory-reviews/interference-geometry-sensitivity-2026-03-30.md` — the note
+  reports tests of how sensitive the interference pattern is to geometry.
 
 This era was pushed directly, without pull requests [owner-attested,
 2026-08-05].
@@ -128,32 +160,37 @@ than steering or index documents [from-survey]; that split is a judgement call a
 was not recomputed here. Every flagship named in the survey was confirmed present
 in the list of 32 [verified].
 
-- `GW_ECHO_DERIVED_NOTE.md` — derives a zero-parameter gravitational-wave echo
-  prediction for GW150914 from the lattice axioms: t_echo = 67.66 ms,
-  f_echo = 14.8 Hz, testable against existing LIGO data.
-- `CABIBBO_JARLSKOG_PREDICTION_2026-04-12.md` — predicts the Cabibbo angle with
-  no free parameters, sin(θ_C) = 0.2236 against an observed 0.2243.
-- `YT_ZERO_IMPORT_CLOSURE_NOTE.md` — closes the top-Yukawa gate with no imported
-  Standard Model observables, reporting v, alpha_s(M_Z) and m_t from the single
-  axiom.
-- `YT_QFP_INSENSITIVITY_THEOREM.md` — answers a reviewer's blocker by arguing the
-  Standard Model running above the electroweak scale is a valid framework-native
-  interpolation.
-- `DM_CLEAN_DERIVATION_NOTE.md` — derives the dark-matter to baryon ratio
-  R = 5.48 through a thirteen-step chain with two bounded inputs.
-- `DM_LEPTOGENESIS_NOTE.md` — routes the baryon asymmetry through thermal
-  leptogenesis with right-handed neutrino masses set by the taste staircase.
+- `GW_ECHO_DERIVED_NOTE.md` — the note claims a derivation of a
+  gravitational-wave echo prediction for GW150914 from the lattice axioms,
+  which it presents as zero-parameter — t_echo = 67.66 ms, f_echo = 14.8 Hz —
+  and describes as testable against existing LIGO data.
+- `CABIBBO_JARLSKOG_PREDICTION_2026-04-12.md` — the note reports a
+  Cabibbo-angle prediction it presents as having no free parameters,
+  sin(θ_C) = 0.2236 against an observed 0.2243.
+- `YT_ZERO_IMPORT_CLOSURE_NOTE.md` — the note claims closure of the top-Yukawa
+  gate without imported Standard Model observables, reporting v, alpha_s(M_Z)
+  and m_t from the single axiom.
+- `YT_QFP_INSENSITIVITY_THEOREM.md` — the note argues, in answer to a
+  reviewer's blocker, that the Standard Model running above the electroweak
+  scale is a framework-native interpolation.
+- `DM_CLEAN_DERIVATION_NOTE.md` — the note claims a derivation of a dark-matter
+  to baryon ratio R = 5.48 through a thirteen-step chain with two bounded
+  inputs.
+- `DM_LEPTOGENESIS_NOTE.md` — the note describes routing the baryon asymmetry
+  through thermal leptogenesis with right-handed neutrino masses set by the
+  taste staircase.
 - The three DM leptogenesis closure notes of 2026-04-16, including
   `DM_LEPTOGENESIS_FULL_THEOREM_CLOSURE_NOTE_2026-04-16.md`, which reports the
   transport side closing with no remaining non-axiom boundary.
-- `GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE.md` — closes the gauge-vacuum
-  plaquette bridge on the scalar route.
-- `BOUNDED_NATIVE_GAUGE_NOTE.md` — derives native cubic SU(2) gauge structure
-  from lattice topology alone, with SU(3) left explicitly open.
-- `HIGGS_VACUUM_PROMOTED_NOTE.md` — the standalone authority for the promoted
-  Higgs and vacuum lane as it then stood.
+- `GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE.md` — the note claims closure of
+  the gauge-vacuum plaquette bridge on the scalar route.
+- `BOUNDED_NATIVE_GAUGE_NOTE.md` — the note claims a derivation of native cubic
+  SU(2) gauge structure from lattice topology alone, with SU(3) stated as
+  explicitly open.
+- `HIGGS_VACUUM_PROMOTED_NOTE.md` — the note presents itself as the standalone
+  statement of the Higgs and vacuum lane as it then stood.
 - `PREDICTION_CARD.md` (2026-04-01) — the original falsification card, stating
-  what would break the model.
+  what its authors said would break the model.
 - `CURRENT_FLAGSHIP_ENTRYPOINT_2026-04-14.md` — the April reading entry point.
 
 ### Stratum 3 — the branch-only tier
@@ -174,22 +211,35 @@ built on the block153–155 branches runs to 111 notes [verified].
 
 ### Stratum 4 — open pull requests on origin
 
-228 notes [verified] across 107 pull requests [verified]. **This is not a gap.**
+228 notes [verified] across 93 pull requests [verified]. **This is not a gap.**
 These notes are pending by design; the pipeline mints their rows the moment the
 pull request lands. They are listed so the census total reconciles, not because
 anything is wrong.
 
-### Stratum 5 — fork pull requests only
+### Stratum 5 — open pull requests, archived copies (previously misclassified as fork-PR-only)
 
-Fourteen notes [verified] that existed nowhere except inside fork-hosted pull
-request objects. No branch on origin carried them, so no walk of the repository's
-own branches would ever find them, and nothing would have preserved them if the
-forks went away. All fourteen are gravity-lane cycle notes — cycles 724 through
-735, plus 873 and 883 [verified].
+Fourteen notes [verified], one per pull request: #5922, #5933, #5940, #5942,
+#5949, #5953, #5962, #5968, #5974, #5978, #5981, #5983, #5990, #5998. The
+census originally recorded these as existing only inside fork-hosted pull
+request objects, with no origin branch carrying them. **That classification was
+wrong.** Re-checked on 2026-08-08: all fourteen pull requests are
+same-repository (GitHub reports `isCrossRepository: false` for every one), and
+each head branch on origin carries the manifest head commit (`git ls-remote`
+confirms every `head_sha`) [verified]. They are ordinary open-PR notes on
+origin branches — the same situation as stratum 4 — kept as a separate stratum
+only because this census additionally copied them byte-for-byte into
+`archive_unlanded/fork_pr_rescue_2026_08_05/`. Those copies are **redundant
+preservation, not a sole-copy rescue**; the directory name records the
+superseded classification and is retained for path stability. All fourteen are
+gravity-lane cycle notes — cycles 724 through 735, plus 873 and 883 [verified].
+The manifest records the pull request number, head commit, origin branch,
+original path, git blob id and SHA-256 of each copy.
 
-This census rescued all fourteen byte-for-byte into
-`archive_unlanded/fork_pr_rescue_2026_08_05/`, with a manifest recording the
-pull request number, head commit, original path, git blob id and SHA-256 of each.
+The copies preserve the source-note bytes only, not each note's full science
+package: runner scripts, receipts, logs and source views named by the notes —
+for example the 33-file candidate surface declared by the Cycle-873 note and
+the three reproduction runners named by the Cycle-883 note — remain on the
+pull-request head branches and are not archived here.
 
 ### Stratum 6 — closed without merging, never landed
 
@@ -290,7 +340,28 @@ so the audit lane can price them. This document rules nothing.
   per-loop working scratch rather than era-defining science, and are not
   enumerated.
 - Open and closed pull request items carry no creation date, because the survey
-  read them from pull request objects rather than from commit history.
+  read them from pull request objects rather than from commit history. Their
+  immutable refs were backfilled on 2026-08-08: all 249 PR-derived records now
+  carry a ref and the git blob of the path at that ref [verified] — 243 at the
+  pull-request head commit (verified unchanged since the census walk), and 6
+  records on closed PRs #5656, #5693 and #5695, whose paths are absent from the
+  final head, at the earliest commit adding the path (the `ref_kind` field
+  records which). Closed-PR records also carry `pr_closed_at` from the pull
+  request object. **Zero records remain unresolved**; any future unresolvable
+  record must carry `ref: UNRESOLVED` plus an `unresolved_reason` field rather
+  than a silent null.
+- Reproducibility boundary: every count derivable from the index alone is
+  mechanically regenerated and byte-checked by
+  `scripts/census_index_rebuild_2026_08_05.py`, which re-verifies each record
+  against the git object store and writes its receipt — inputs consumed,
+  verification tallies, derived counts and the SHA-256 of the regenerated
+  index — to `logs/runner-cache/census_index_rebuild_2026_08_05.json`; the
+  rebuild must match the shipped index byte-exactly or the script fails.
+  Survey-walk figures whose inputs are not shipped — the 2,914-ref walk itself,
+  the tip-file splits (4,686 / 3,972 / 714) and the ledger-history statistics —
+  were recomputed for the census on 2026-08-05 but cannot be independently
+  reproduced from the shipped artifacts alone; they remain point-in-time census
+  observations.
 - Four ledger rows carry a claim identifier that does not match their note's
   filename — `kinetic_isotropy_primitive`, `minimal_axioms`,
   `realized_state_primitive` and `scale_reference_primitive`. All four point at

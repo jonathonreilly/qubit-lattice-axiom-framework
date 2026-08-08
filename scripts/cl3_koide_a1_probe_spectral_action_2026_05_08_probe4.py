@@ -1192,6 +1192,46 @@ def main():
     section6_synthesis()
     section7_falsifiability_anchor()
 
+    section("N5 EXECUTION CERTIFICATE")
+    print(
+        "  per_element: checked and not executed - the C_3 circulant is assembled "
+        "from three explicit ingredients, the identity, the corner permutation "
+        "written out as a 3x3 array and its conjugate transpose, but not one "
+        "reported number in this probe is an entry: every verdict is either a "
+        "sorted eigenvalue triple, a Newton power sum or a quadrature moment, so "
+        "the matrix positions are consumed and never inspected"
+    )
+    print(
+        "  per_site: checked and not executed - the probe lives entirely on the "
+        "three-dimensional hw=1 flavour sector, and the Z^3 substrate that the "
+        "surrounding framework supplies is mentioned only when the axiom "
+        "accounting is discussed; no coordinate, spacing, hop or occupation "
+        "number of any site is constructed at any point in the file"
+    )
+    print(
+        "  per_mode: eigenvalues are the working currency throughout - each "
+        "circulant is diagonalized with eigvalsh and its three real eigenvalues "
+        "sorted, and the spectral action is then formed as an explicit sum of the "
+        "cutoff function evaluated at each eigenvalue separately, so when the "
+        "action is scanned across the amplitude ratio it is three individual "
+        "modes and not an aggregate invariant that move"
+    )
+    print(
+        "  per_block: the split into one nondegenerate mode and one doubly "
+        "degenerate pair is what the equipartition question turns on, and the "
+        "probe reads it directly off the sorted spectrum before contracting it "
+        "into the first two Newton sums, sum of eigenvalues and sum of their "
+        "squares; the finite-algebra side of the same split, the three summands "
+        "of A_F, is only named and never built"
+    )
+    print(
+        "  lattice_wide: checked and not executed - the cutoff asymptotics quoted "
+        "at the top are a Lambda to infinity statement borrowed from the "
+        "literature rather than a limit the code takes, and nothing in the file "
+        "has an extent: there is no volume, no site count and no sequence of "
+        "system sizes, so the whole-system content stays the same "
+        "three-dimensional flavour sector the rest of the probe uses"
+    )
     # Final tally
     section("FINAL TALLY")
     n_total = len(PASSES)

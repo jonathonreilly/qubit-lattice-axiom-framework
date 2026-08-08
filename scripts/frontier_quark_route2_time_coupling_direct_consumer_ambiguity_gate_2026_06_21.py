@@ -311,6 +311,72 @@ def part4_one_dimensional_boundary() -> None:
     )
 
 
+def part5_n5_execution_certificate() -> None:
+    """Print-only record of the granularity this gate actually resolves."""
+    print("\n" + "=" * 72)
+    print("PART 5: N5 Execution Certificate (print-only; no check, no counter)")
+    print("=" * 72)
+
+    data = restricted_readout_data()
+    backbone = route2_slice_backbone()
+    p0 = reduced_map(RHO_ZERO)
+    p_star = reduced_map(RHO_STAR)
+    delta_p = p_star - p0
+    moved_entries = int(np.count_nonzero(np.abs(delta_p) > EXACT_TOL))
+    trace_dim = int(backbone.lambda_sym.shape[0])
+    lambda_sym_err = float(np.max(np.abs(backbone.lambda_sym - backbone.lambda_sym.T)))
+    lambda_min = float(np.min(np.linalg.eigvalsh(backbone.lambda_sym)))
+    t_side_delta = max(
+        float(np.max(np.abs(delta_p @ column)))
+        for column in (data.carrier_t_shell, data.carrier_t_center)
+    )
+    scale_residual = max(
+        float(
+            np.max(
+                np.abs(
+                    xi_p(p_star, data.carrier_e_center, v_r(backbone, f_float(t)))
+                    - f_float(q_e(RHO_STAR)) * xi_p(p0, data.carrier_e_center, v_r(backbone, f_float(t)))
+                )
+            )
+        )
+        for t in TIMES
+    )
+
+    print(
+        f"per_element: executed -- of the eight entries of P(rho_E) the difference P(21/4) - P(0) leaves exactly "
+        f"{moved_entries} entry above EXACT_TOL = {EXACT_TOL:.0e}, the [0,2] slot that holds rho_E itself, and every "
+        "readout output is then matched component against component with its exact target, which is what pins the "
+        "E-center factor from 1 to 15/8 while the T-center component sits at -5/3 and the structural zeros stay zero."
+    )
+    print(
+        f"per_site: checked and not executed -- no lattice site is indexed anywhere in this file. The {trace_dim} trace "
+        "coordinates of Lambda_R are contracted at once into the single uniform seed u_*, which reaches the checks only "
+        "through the scalar ||V_R(t)||, and the restricted carrier arrives already reduced to four shell/center "
+        "columns, so the individual sites behind 'shell' are never pulled apart. The note's obstruction is upstream of "
+        "any site resolution: it is a readout-selector gap, not a site-amplitude gap."
+    )
+    print(
+        "per_mode: executed -- E and T are carried in rows 0 and 1 of P(rho_E) and are followed separately through "
+        f"every time in {[str(t) for t in TIMES]}; the whole result of the gate is that the rho_E freedom lands in the "
+        f"E row alone, the largest T-side source delta being {t_side_delta:.3e} against EXACT_TOL = {EXACT_TOL:.0e}. "
+        "Without resolving the two bright modes apart there would be no sense in which the ambiguity is E-local."
+    )
+    print(
+        "per_block: executed -- the restricted carrier is organized as four endpoint blocks, E-shell, E-center, "
+        "T-shell and T-center, and PART 4 stacks their source deltas into one matrix whose numerical rank at "
+        f"tol = {EXACT_TOL:.0e} is 1, with the sole surviving column being E-center at exactly (7/8, 0). Three of the "
+        "four blocks are therefore certified invariant under the entire unresolved readout freedom."
+    )
+    print(
+        "lattice_wide: executed, and stated for a finite system -- the shared generator Lambda_R is built once on the "
+        "fixed finite grid inside route2_slice_backbone() and is certified as a whole object before any channel is "
+        f"touched, symmetric to {lambda_sym_err:.3e} and positive definite with smallest eigenvalue {lambda_min:.6f}. "
+        f"That lattice-scale operator then enters only as the common factor V_R(t): across the {len(TIMES)} times the "
+        f"E-center separation reduces to (7/8)||V_R(t)|| with rescaling residual at most {scale_residual:.3e}. No "
+        "large-volume or thermodynamic limit is taken, and none is needed for the boundary being claimed."
+    )
+
+
 def main() -> int:
     print("Route-2 time-coupling direct-consumer ambiguity gate")
     print("=" * 72)
@@ -319,6 +385,7 @@ def main() -> int:
     part2_exact_source_factor_algebra()
     part3_time_coupling_inheritance()
     part4_one_dimensional_boundary()
+    part5_n5_execution_certificate()
 
     print("\n" + "=" * 72)
     print("SUMMARY")

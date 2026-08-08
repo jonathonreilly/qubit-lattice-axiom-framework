@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py
-runner_sha256: 7a787a7a9092a9fdca8844b29c4620eba1d4cc166ccbf9d303fad53c06623149
+runner_sha256: 8571c10d9f3fbae143e32e1c8b174b332607f848423537b9ae42f08092420144
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.65
+elapsed_sec: 0.97
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -50,8 +50,8 @@ PASS: rho0_and_target_agree_on_E_shell -- [1. 0.] vs [1. 0.]
 PASS: rho1_and_target_agree_on_E_shell -- [1. 0.] vs [1. 0.]
 PASS: rho0_and_target_agree_on_T_shell -- [ 8.32667268e-17 -2.00000000e+00] vs [ 8.32667268e-17 -2.00000000e+00]
 PASS: rho1_and_target_agree_on_T_shell -- [ 8.32667268e-17 -2.00000000e+00] vs [ 8.32667268e-17 -2.00000000e+00]
-PASS: rho0_and_target_agree_on_T_center -- [ 0.         -1.66666667] vs [ 0.         -1.66666667]
-PASS: rho1_and_target_agree_on_T_center -- [ 0.         -1.66666667] vs [ 0.         -1.66666667]
+PASS: rho0_and_target_agree_on_T_center -- [ 5.19727886e-18 -1.66666667e+00] vs [ 9.74489786e-18 -1.66666667e+00]
+PASS: rho1_and_target_agree_on_T_center -- [ 6.06349200e-18 -1.66666667e+00] vs [ 9.74489786e-18 -1.66666667e+00]
 PASS: rho0_and_target_differ_on_E_center -- [1. 0.] vs [1.875 0.   ]
 PASS: rho1_and_target_differ_on_E_center -- [1.16666667 0.        ] vs [1.875 0.   ]
 PASS: E_center_blind_signature_is_identical
@@ -80,6 +80,14 @@ PASS: paired_note_states_narrow_no_go
 PASS: paired_note_preserves_future_bridge
 PASS: paired_note_status_not_bare_retained
 PASS: paired_note_avoids_banned_phrases
+
+G. N5 execution certificate (print-only; no check is registered here)
+------------------------------------------------------------------------
+per_element: exercised -- the witness comparison is componentwise, not aggregate: same_vector() takes the largest absolute component difference against EXACT_TOL = 1e-12, and it separates a blind residual of 3.331e-16 on the three invariant columns from a genuine component gap of 8.750e-01 on E-center, whose leading entry moves from 1 to 15/8. Each reduced map is likewise assembled entry by entry with only the [0,2] slot carrying rho_E.
+per_site: checked and not executed -- this file receives the readout columns already contracted by restricted_readout_data() and never reaches behind them, so the seven-site star it ultimately rests on is invisible here: 'center' and 'shell' arrive as labels on 4-component columns, not as site sums this runner performs. Nothing site-resolved is computed and nothing site-resolved is claimed.
+per_mode: exercised, and the no-go is stated at exactly this granularity -- the disputed quantity |gamma_T(center)/gamma_E(center)| is a magnitude ratio between the T and E bright modes, carried in rows 1 and 0 of the reduced map, while the SU(3) scalar F_adj = 8/9 offered as its source is entirely mode-blind. Holding that scalar fixed while the cross-mode magnitude runs through 5/3, 10/7, 8/9, 5/7 is what forbids a color-only bridge.
+per_block: exercised -- the restricted carrier is read as four endpoint blocks and the run partitions them: E-shell, T-shell and T-center are certified identical under rho_E=0, rho_E=1 and rho_E=21/4, so the E-center-blind signature built from those three blocks is literally the same tuple for rho_E=0 and the target, while the fourth block alone separates them. The obstruction is therefore localized to one block.
+lattice_wide: checked and not executed -- no lattice-scale object is constructed in this file; there is no volume, no site count and no whole-system operator, so neither a finite-N nor a limiting statement is available. The only global dial turned here is the color rank N_c over 2, 3 and 4 in section E, which changes the gauge group rather than the size of any system, and the typed-graph gap this runner reports is size-independent by construction.
 
 Summary
 ------------------------------------------------------------------------

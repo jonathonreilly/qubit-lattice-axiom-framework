@@ -130,6 +130,37 @@ def main() -> int:
     for label, phrase in forbidden_wording:
         check(f"forbidden wording absent: {label}", phrase not in text)
 
+    section("N5 EXECUTION CERTIFICATE (print-only; registers no check)")
+    emit(
+        "  per_element: checked and not executed -- this runner never computes a number. Its entire state is sets of "
+        f"gate names and a dictionary of {len(CLAIMS)} claims mapped to the gates each one requires, and every "
+        "operation performed on them is set membership, set union or equality of strings. There is no array and "
+        "therefore no element, so any element-level reading of this firewall would be fabricated."
+    )
+    emit(
+        "  per_site: checked and not executed -- no lattice, no site index and no spatial notion enters at any "
+        "point. What the file classifies is provenance: which gates a claim would need, and whether those gates are "
+        "on the record side or must be supplied from outside. That question sits entirely above any site-level "
+        "description and would read the same for a system of any size or shape."
+    )
+    emit(
+        "  per_mode: checked and not executed -- there is no state space, no basis and no spectrum here, so nothing "
+        "can carry a mode. The word dial in this file names an externally supplied setting, tracked as the string "
+        "gate dial_selector, and not a mode, channel or eigenvalue; no decomposition of anything is formed."
+    )
+    emit(
+        f"  per_block: checked and not executed -- no space is decomposed into blocks. The single partition present "
+        f"is the disjoint split of gate names into the {len(RECORD_GATES)} record-side gates and the "
+        f"{len(EXTERNAL_GATES)} external gates, and that is a provenance partition over labels rather than a "
+        "decomposition of any physical object, so it supports no block-resolved physical statement."
+    )
+    emit(
+        "  lattice_wide: checked and not executed -- nothing of any extent is built, so there is no whole-system "
+        "quantity, no finite-N statement and no limit. The firewall's content is that dial_selector is absent from "
+        "the record-side gate set outright, which holds independently of how large or small any underlying system "
+        "would be; that scale-independence is exactly why no lattice-wide claim can be made from this file."
+    )
+
     section("SCORECARD")
     emit(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
-runner_sha256: b9a3b1d839c86c88867481a49231e556f013321b7fcd792186be28ec6eafdb60
+runner_sha256: de8794f8b091bd21ac387820a606294b1919d4d0bb63154aa70f86c9546b12dc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 Record context/generator nonidentifiability no-go
@@ -60,6 +60,13 @@ E. exact no-go conclusion
 [PASS] note keeps physical kernel/generator underived
 [PASS] note keeps clock/rate unit underived
 [PASS] source gate cannot be cited as production-generator closure
+
+F. N5 execution certificate (print-only; no check is registered)
+per_element: executed exactly, with no tolerance involved -- completeness, idempotence and orthogonality of each context are decided by is_zero_matrix(), which requires every one of the 4 entries of the residual to be the symbolic integer 0 rather than small; row_stochastic() sums each kernel row entry by entry to exactly 1, and row_generator() inspects every off-diagonal entry for nonnegativity and every row sum for exact vanishing. These are sympy zeros, not floating-point residuals.
+per_site: checked and not executed -- the pre-record state space here is a single M_2(C) Qubit site, so there is no second site to resolve anything against. No lattice, no neighbour and no site index appears anywhere; the 3 readout contexts are alternative bases on that one site, and the classical chain in section D is a 3-state label space rather than a spatial arrangement.
+per_mode: executed, and the obstruction is exactly a mode-selection obstruction -- 3 complete binary contexts (Z, X and Y) are built on the same rho, each verified projective and complete, and each is resolved into its two branch modes separately. They return three different probability vectors, so the state together with the cited projective and Lueders algebra fixes no mode decomposition; that non-selection is the no-go.
+per_block: executed -- the identity is resolved into a two-block projector pair in every context, and the kernel argument in section D is stated blockwise: the two candidate stochastic kernels are certified to share the ready-state production row exactly while disagreeing on the atom-present block of rows. The unidentifiability therefore lives in a block that a one-step production row never touches.
+lattice_wide: checked and not executed -- no extended system is constructed, so there is no whole-system quantity and no finite-N or thermodynamic content of any kind. The largest object in the file is a 3x3 row-stochastic matrix, size is never a parameter, and the generator pair Q and 5Q that stabilizes the same stationary vector shows the missing datum is a rate normalization rather than anything volume-dependent.
 
 SCORECARD: PASS=42 FAIL=0
 VERDICT: exact negative boundary. The supplied-context finite gate is self-consistent, but the same state/algebra admits multiple readout contexts and the resulting one-step probability vector does not identify the physical kernel, generator, or clock/rate.

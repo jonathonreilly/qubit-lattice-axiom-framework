@@ -166,6 +166,41 @@ def main() -> int:
     for label, phrase in forbidden_wording:
         check(f"forbidden wording absent: {label}", phrase not in text)
 
+    section("N5 EXECUTION CERTIFICATE (print-only; registers no check)")
+    generator_gap = float(np.max(np.abs(q2 - 2.0 * q1)))
+    emit(
+        f"  per_element: exercised, but only over {p_step.shape[0]}-by-{p_step.shape[1]} objects -- the step kernel "
+        f"is validated entry by entry, every entry tested against -TOL for nonnegativity and each row summed "
+        f"separately to one at atol = {TOL:.0e}, and the two Euler generator estimates are compared entrywise with "
+        f"worst deviation {generator_gap:.3e} before a single named off-diagonal entry is read out to exhibit the "
+        "rate ambiguity. That is the whole of the element-level work in this file."
+    )
+    emit(
+        "  per_site: checked and not executed -- the record word carries no site tags at all. Symbols are drawn from "
+        "a two-letter alphabet and indexed only by their position in the word, so there is nothing to attach to a "
+        "location. This is the note's own declared boundary rather than an omission: the paired source states that "
+        "it does not construct a map from a site-tagged record atom to a formation event."
+    )
+    emit(
+        "  per_mode: checked and not executed -- the two-state kernel is never diagonalized and no spectral quantity "
+        "is taken anywhere. It is only applied to a normalized distribution and differenced against the identity to "
+        "form Euler generator estimates, so no eigenvector, relaxation mode or spectral gap is computed, and none is "
+        "needed for the rate ambiguity this firewall exhibits."
+    )
+    emit(
+        f"  per_block: checked and not executed -- no state space is decomposed. The only partition in the file is "
+        f"the typed residual ledger of section 5, which sorts output names into {len(record_outputs)} record, "
+        f"{len(kernel_outputs)} kernel, {len(time_outputs)} time and {len(causal_outputs)} causal labels and "
+        "certifies those sets pairwise disjoint. That is provenance bookkeeping over strings, not a block "
+        "decomposition of anything physical."
+    )
+    emit(
+        f"  lattice_wide: checked and not executed -- nothing with spatial extent is constructed, so there is no "
+        f"whole-system quantity and no finite-N or limiting content. The only size dial turned is word length, "
+        f"{len(word)} against {len(long_word)}, and that is history length rather than volume; the firewall's point "
+        "is that neither length fixes a duration, and it would read identically at any lattice size."
+    )
+
     section("SCORECARD")
     emit(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

@@ -116,6 +116,39 @@ def main() -> int:
     for label, phrase in forbidden_wording:
         check(f"forbidden wording absent: {label}", phrase not in text)
 
+    section("N5 EXECUTION CERTIFICATE (print-only; registers no check)")
+    emit(
+        "  per_element: checked and not executed -- nothing array-valued is constructed in this runner. No operator, "
+        "density matrix or amplitude vector appears, so there is no entry to compare against another; the objects "
+        "are integer tuples, Hamming counts and a list of binomial weights, and every conclusion is drawn from set "
+        "membership and cardinality rather than from any entrywise test."
+    )
+    emit(
+        f"  per_site: checked and not executed -- there is no spatial index anywhere here. The only position index "
+        f"carried is the slot inside a length-{n} history word, which is a time-ordered record step rather than a "
+        "site, and even that slot is consumed almost entirely through the total count of ones. Reading this "
+        "boundary as a site-resolved result would misdescribe what the file does."
+    )
+    emit(
+        "  per_mode: checked and not executed -- no state space, basis or dynamics exists, so nothing can carry a "
+        "mode. The binomial weights that appear in section 3 are a classical probability model handed in from "
+        "outside with p supplied by hand; they are not a spectral decomposition, and the point of the section is "
+        "precisely that this model is an extra input the history grammar does not produce."
+    )
+    emit(
+        f"  per_block: exercised, and the no-go is visible at exactly this granularity -- the {len(words)} histories "
+        f"are partitioned into {len(count_classes)} Hamming-count blocks k = 0..{n}, and the run shows the middle "
+        f"block k=2 contains {len(count_classes[2])} distinct histories. That many-to-one block structure is the "
+        "reason a count, and hence a frequency, cannot identify a history or fix a probability."
+    )
+    emit(
+        f"  lattice_wide: exercised, and stated only for finite n -- the enumeration is exhaustive over the whole "
+        f"space of {len(words)} histories at fixed n = {n}, and the whole-space quantities are read off directly: "
+        f"the frequency set has {len(frequencies)} attainable values and the supplied binomial weights over all "
+        f"{len(weights)} count classes sum to one. No sequence of growing n is compared and no limit is taken, which "
+        "is the substance of the boundary: the history grammar supplies no convergence and no IID structure."
+    )
+
     section("SCORECARD")
     emit(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

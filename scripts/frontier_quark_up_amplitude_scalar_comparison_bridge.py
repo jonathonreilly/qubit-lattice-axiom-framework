@@ -358,6 +358,52 @@ def part3_continuous_bridge(setup: BridgeSetup) -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """Print-only granularity record; no check is registered and no counter moves."""
+    print("\n" + "=" * 72)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    print()
+    print(
+        "per_element: exercised, in the CKM-matrix-element sense and no other -- every objective this bridge "
+        "minimizes is assembled from separate per-element deviations of |V_us|, |V_cb| and |V_ub| against their "
+        "atlas entries, together with the Jarlskog invariant, and only then summed; the anchored aggregate and its "
+        "max are both formed elementwise. No operator or lattice matrix entry is touched anywhere in this file."
+    )
+    print(
+        "per_site: checked and not executed -- there is no lattice and no site index in this runner. Its entire "
+        "state is five scalars fed to compute_projector_observables (r_uc, r_ct, the dialed up amplitude, the exact "
+        "down amplitude and the exact support angle), so a site-resolved reading of the bridge or of the disjoint "
+        "windows would be an invention rather than a report."
+    )
+    print(
+        "per_mode: checked and not executed -- nothing here is decomposed into modes: no spectrum is computed, no "
+        "eigenbasis is formed and no channel is projected out. Generation labels appear only as fixed names attached "
+        "to already-formed observables, which is bookkeeping carried through the scan rather than anything the "
+        "execution resolves."
+    )
+    print(
+        "per_block: exercised only as the coarse up/down split, and reported at that strength -- the up-sector "
+        "amplitude is the single dialed quantity across the whole kappa family while the down-sector amplitude and "
+        "the support angle are pinned at their exact values for every evaluation. That asymmetry is real and is what "
+        "makes the bridge one-parameter, but it is the only block structure this file contains."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no extended system exists here, so there is neither a finite-N "
+        "statement nor a limit. The scalar package is closed-form (sqrt(5/6), 1/sqrt(42), sqrt(5/42), 1/sqrt(7), "
+        "sqrt(6/7)) and the bridge is a one-parameter curve in kappa; volume never enters, and the no-go it reports "
+        "is that two comparison windows fail to overlap, which is a statement about that curve alone."
+    )
+    print()
+    print(
+        "  provenance: this runner is optimizer- and root-finder-driven -- differential_evolution with seed=83 then "
+        "L-BFGS-B inside solve_anchored_surface(), an L-BFGS-B refit inside each evaluate_candidate(), bounded "
+        "minimize_scalar at xatol=1e-12 over kappa in [sqrt(6/7), 1], a 201-point sign scan over that same interval, "
+        "and brentq at xtol=rtol=1e-12 with maxiter=200. No converged, optimized or scan-located value is quoted in "
+        "the certificate above; only grid size, interval, tolerances and the structure of the objective are named."
+    )
+
+
 def part4_summary() -> None:
     print("\n" + "=" * 72)
     print("PART 4: Summary")
@@ -385,6 +431,7 @@ def main() -> int:
     part1_exact_package()
     setup = part2_obstruction_and_anchor()
     part3_continuous_bridge(setup)
+    n5_execution_certificate()
     part4_summary()
 
     print("\n" + "=" * 72)

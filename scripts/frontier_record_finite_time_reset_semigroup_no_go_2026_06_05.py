@@ -163,6 +163,47 @@ def main() -> int:
     for label, phrase in forbidden_wording:
         check(f"forbidden wording absent: {label}", phrase not in text)
 
+    section("N5 EXECUTION CERTIFICATE (print-only; registers no check)")
+    endpoint_rank = int(np.linalg.matrix_rank(s_endpoint, tol=ATOL))
+    exp_det = float(abs(np.linalg.det(exp_diag)))
+    inverse_residual = float(
+        np.max(np.abs(exp_diag @ np.diag(1.0 / np.diag(exp_diag)) - np.eye(exp_diag.shape[0])))
+    )
+    emit(
+        f"  per_element: exercised -- each superoperator is assembled column by column from the individual matrix "
+        f"units E_ij, one per index pair, and trace preservation is then verified separately on every one of those "
+        f"units rather than on a single test state. Comparisons against the blank density and against the identity "
+        f"are entrywise via np.allclose at atol = {ATOL:.0e}; the explicit-inverse residual measured that way is "
+        f"{inverse_residual:.3e}."
+    )
+    emit(
+        "  per_site: checked and not executed -- the Hilbert space is treated as flat throughout. The dimensions "
+        "used, 2, 4 and 8, are consistent with one, two and three Qubit sites, but no tensor factorization is ever "
+        "formed, no partial trace is taken and no single-site reduction appears: the reset writes the entire density "
+        "matrix to one blank state without addressing any factor, so no site-resolved statement is available here."
+    )
+    emit(
+        f"  per_mode: exercised, though narrowly -- the finite-exponential marker in section 3 is genuinely "
+        f"mode-resolved: a diagonal generator with the four eigenvalues on its diagonal is exponentiated eigenvalue "
+        f"by eigenvalue and inverted the same way, giving determinant magnitude {exp_det:.6e} and an explicit "
+        "reciprocal per mode. Elsewhere the spectrum enters only as an integer rank, so no further mode-resolved "
+        "claim is made."
+    )
+    emit(
+        f"  per_block: thin, and reported as thin -- the only block structure this file exercises is the split of "
+        f"the operator space into the one-dimensional blank image and everything that maps into it, which is exactly "
+        f"what rank {endpoint_rank} for the endpoint reset records. No decomposition by coherence order, by "
+        "subsystem or by any finer invariant subspace is constructed, so nothing beyond that single split is "
+        "certified."
+    )
+    emit(
+        "  lattice_wide: exercised, and stated only at finite dimension -- rank, determinant and trace preservation "
+        "are all whole-space properties of the full d^2-by-d^2 superoperator, established independently at d = 2, 4 "
+        "and 8 rather than sampled on states. No sequence in d is extrapolated and no limit is taken; the "
+        "obstruction, that a rank-one map cannot be the exponential of a bounded generator over a finite time, is a "
+        "separate finite statement at each of those dimensions."
+    )
+
     section("SCORECARD")
     emit(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

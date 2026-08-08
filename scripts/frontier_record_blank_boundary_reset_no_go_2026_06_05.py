@@ -133,6 +133,45 @@ def main() -> int:
     for label, phrase in forbidden_wording:
         check(f"forbidden wording absent: {label}", phrase not in text)
 
+    section("N5 EXECUTION CERTIFICATE (print-only; no check is registered)")
+    gram_gap = float(np.max(np.abs(gram - np.eye(16))))
+    columns = int(r.shape[1])
+    emit(
+        f"  per_element: exercised -- the reset operator is assembled one entry at a time, exactly one unit entry "
+        f"placed per column across all {columns} columns of the {r.shape[0]}x{columns} matrix, and it is then tested "
+        f"entrywise: the Gram matrix R*R is compared against the {columns}x{columns} identity element by element and "
+        f"departs from it by {gram_gap:.3e} at its worst entry, far outside the runner's TOL = {TOL:.0e}, which is "
+        "the isometry failure being certified. The overlap witness is built the same way, by setting single "
+        "amplitudes at two named basis indices."
+    )
+    emit(
+        "  per_site: exercised, and the whole construction is site-indexed -- states are carried as 4-bit strings "
+        "with one bit per site, fanout XORs every non-pointer site against the pointer site individually, "
+        "clean_broadcast() inspects each site's bit separately rather than any aggregate, and reset_target() "
+        "rewrites the three non-pointer sites one at a time. There is no site-averaged quantity anywhere in this "
+        "file."
+    )
+    emit(
+        f"  per_mode: checked and not executed -- the argument runs entirely in the fixed computational product "
+        f"basis and never changes basis. The only spectral quantity taken anywhere is the numerical rank of the "
+        f"reset operator at tol = {TOL:.0e}, and only its integer value is used: no singular vector or eigenvector "
+        "is examined, no mode is labelled, and no mode-resolved statement is made or needed for this no-go."
+    )
+    emit(
+        "  per_block: exercised -- the 16 basis states split into two pointer blocks of 8, and the collapse is "
+        "certified separately on each: all eight pointer-zero environment states map to the single target 0000 and "
+        "all eight pointer-one states map to 1111, which is what makes the image set of size two a block statement "
+        "rather than a coincidence of sampled inputs. The sink variant re-splits the same space by old fragment "
+        "state and recovers 16 distinguishable labels."
+    )
+    emit(
+        f"  lattice_wide: exercised, as a finite-N statement -- the reset map is judged on the whole {columns}-state "
+        f"register at once, not on a subsystem: its rank over the full space is 2, its Gram fails the isometry "
+        f"condition globally, and non-injectivity is established across all {columns} inputs simultaneously. The "
+        "system is a fixed four-site Qubit register; no size is varied, no sequence of sizes is compared and no "
+        "thermodynamic limit is taken or implied."
+    )
+
     section("SCORECARD")
     emit(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

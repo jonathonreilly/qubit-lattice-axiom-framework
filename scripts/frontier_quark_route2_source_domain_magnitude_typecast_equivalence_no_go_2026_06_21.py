@@ -182,6 +182,47 @@ def main() -> int:
     )
 
     print()
+    print("E. N5 execution certificate -- what this runner resolves")
+    print("-" * 78)
+    print(
+        "per_element: checked -- the equivalence is demonstrated one value at a time and never "
+        f"in aggregate. Each of the {len(samples)} sampled lifts is pushed forward to its own "
+        "|c_TE| and pulled back through rho_E = 10/|c_TE| - 6 with exact Fraction equality "
+        f"required on the round trip, and each of the {len(candidates)} named magnitude "
+        "candidates is separately mapped to its own lift, so that F_adj at N_c = 2, 3 and 4 give "
+        "22/3, 21/4 and 14/3 as three individually computed answers rather than one family fact."
+    )
+    print(
+        "per_site: checked and not executed -- this runner works entirely with endpoint ratios "
+        "that have already been divided out, so the support never appears and no configuration "
+        "is built. There is no coordinate here that indexes a location, and consequently nothing "
+        "about site structure is either used as a premise or certified as a conclusion."
+    )
+    print(
+        "per_mode: checked, with one sharp limitation that should not be glossed -- the only "
+        "mode-level object carried is the single cross-channel ratio c_TE = s_TE q_T / q_E, and "
+        "the runner immediately strips its sign with abs(). What is therefore resolved between "
+        "the modes is the magnitude of the T-to-E center ratio alone; the relative sign, which "
+        "is exactly the typing information the note says is missing, is not carried through the "
+        "equivalence at any point."
+    )
+    print(
+        "per_block: checked, and only as a two-block statement -- no finer decomposition exists "
+        "in this file. The T-side block is held fixed throughout as granted premise values, "
+        "q_T = 5/6 and shell T/E = -2 quoted from the naturality surface, while the E-center "
+        "block is the sole thing that moves; the whole content of the magnitude map lives in "
+        "that one block."
+    )
+    print(
+        "lattice_wide: checked and not executed -- there is no lattice, no volume and no limit, "
+        f"so no global observable exists. Two scope limits belong on the record as well: "
+        f"injectivity of the magnitude map is verified on {len(samples)} named samples rather "
+        f"than proved across the whole domain rho_E > -6, and the continuum of admissible "
+        f"choices is exhibited by {len(candidates)} named magnitudes rather than parameterized. "
+        "The no-go rests on that exhibited spread, not on an exhaustive statement."
+    )
+
+    print()
     print("Summary")
     print("-" * 78)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

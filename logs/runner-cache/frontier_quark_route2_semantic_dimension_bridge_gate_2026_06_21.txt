@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.py
-runner_sha256: 77f1b360d2bed76c07a759e2b77aaf75e1d6e1c9f942f3fda75bf30931af07ea
+runner_sha256: 92bf3ea7b64e55299580839cf3ce09c4061634cb15cab9afd5ee9bc3ada5ab25
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 Route-2 semantic dimension bridge gate
@@ -57,6 +57,15 @@ PASS: typed bridge E<->N_pair and T1<->N_color is not supplied by current checke
 PASS: inverse-square readout law is not supplied by current checked surfaces
 PASS: no observed or fitted endpoint input is used in this verifier
 PASS: therefore the conditional arithmetic is support, not current-surface closure
+
+----------------------------------------------------------------------------------------
+6. N5 execution certificate
+----------------------------------------------------------------------------------------
+per_element: checked -- nothing is aggregated; each rational is produced and compared singly. The source dimensions N_pair = 2 and N_color = 3 give the reciprocal-square ratio 9/4, which then drives q_T = 5/6, q_E = 15/8, rho_E = 21/4 and c_TE = -8/9 one value per check, and the underdetermination is exhibited as four literally distinct elements of the candidate ratio set {1, 3/2, 9/4, 4/9}.
+per_site: checked and not executed -- the runner reasons about channel labels and their dimensions, and never builds a state on the support. No amplitude is placed at the center site or at any of the six shell arms, so nothing in this file is resolved at site granularity and no site-level claim is made or implied.
+per_mode: checked, and it carries the argument -- E and T1 are the two O_h readout channels here, the tested quantity lambda = q_E/q_T is exactly their cross-channel ratio, and the gate is that their labels alone do not pick an exponent: the same mode pair (dim 2, dim 3) is compatible with ratio 1, one-power 3/2, inverse-square 9/4 or square 4/9, and only the inverse-square choice reaches the endpoint triple. That is a genuinely mode-resolved statement of what is missing, not of what is proved.
+per_block: checked, but plainly at the level of block counts only -- no block operator or block amplitude is constructed anywhere here. What is resolved is the arm census of the six shell arms into an E block of 2 and a T1 block of 3, entering as per-arm weights 1/3 and 1/2, and the value 9/4 is then closed twice from two independent registrations of that census: once as reciprocal squares of the source dimensions, once as inverse squares of the O_h per-arm weights.
+lattice_wide: checked and not executed -- no lattice, no volume and no limit is taken, so no whole-system quantity exists to certify. The global statement this runner does execute is a four-surface token-absence scan showing the CKM inverse-square note carries no Route-2 or q_E/q_T syntax and the Route-2 readout note names neither N_pair nor N_color. The part-5 requirements record is a declared stance about what the bank lacks, not a search result, and the certificate reports it that way.
 
 ----------------------------------------------------------------------------------------
 Summary

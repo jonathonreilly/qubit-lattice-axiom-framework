@@ -212,6 +212,51 @@ def main() -> int:
     check("missing typed landing is not already in the current bank", MISSING_BRIDGE not in base_edges)
 
     print()
+    print("E. N5 execution certificate -- what this runner resolves")
+    print("-" * 78)
+    q_values = [q_e(ReducedReadout(r)) for r in sample_rhos]
+    c_values = [c_te_abs(ReducedReadout(r)) for r in sample_rhos]
+    print(
+        "per_element: checked -- the readout acts coordinate by coordinate on 4-component "
+        "columns in exact Fraction arithmetic, and the invariance is established by literal "
+        "tuple equality of the whole signature rather than by any tolerance. Across the "
+        f"{len(sample_rhos)} sampled lifts the derived quantities are all pairwise distinct, "
+        f"{len(set(q_values))} different q_E values ({', '.join(str(v) for v in q_values)}) and "
+        f"{len(set(c_values))} different |c_TE| values ({', '.join(str(v) for v in c_values)}), "
+        "against one single unchanging signature."
+    )
+    print(
+        "per_site: checked and not executed -- the endpoint columns arrive already reduced to "
+        "the four coordinates (x_E, x_T, d_E, d_T), with the entire site content of the "
+        "seven-site support compressed into the constant 1/6 appearing in the center columns. "
+        "Nothing is evaluated at an individual site, and no site-resolved selector is proposed "
+        "or excluded by this evidence."
+    )
+    print(
+        "per_mode: checked, and the blindness under test is precisely mode-asymmetric -- the "
+        "signature hands a selector the complete T channel, both its shell and center images "
+        f"together with q_T = {ReducedReadout(Fraction(0)).q_t} and the shell ratio "
+        f"{ReducedReadout(Fraction(0)).shell_te}, while from the E channel it hands over only "
+        "the shell image. Adjoining the color scalar F_adj = 8/9 twice, as F_adj and as R_conn, "
+        "adds no E-channel content at all, so the asymmetry survives augmentation untouched."
+    )
+    print(
+        "per_block: checked -- the shell and center blocks are what the argument separates. "
+        "Three of the four endpoint blocks sit inside the signature and are frozen across every "
+        "sample, and the fourth, E-center, is the single withheld block; it alone carries the "
+        "variation, which is why rho_E = 0 and rho_E = 21/4 are exactly indistinguishable to "
+        "any selector built from the other three."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the scope limit deserves to be stated "
+        f"rather than glossed -- the universal claim over the whole admissible family is not "
+        f"executed here. What is executed is {len(sample_rhos)} named witnesses plus one exact "
+        "algebraic inversion showing |c_TE| = 8/9 returns rho_E = 21/4. There is additionally no "
+        "lattice, no volume and no limit in this runner, so no whole-system statement of any "
+        "kind is available from it."
+    )
+
+    print()
     print("Summary")
     print("-" * 78)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

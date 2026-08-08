@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py
-runner_sha256: 726cb492a0eddef8d2599dddd2db9d95a906ede64534b9f7fa29d5512bef98dd
+runner_sha256: 26ce12322a1b038e7eaf101247fe424b3871f09b4910ab118c978665f72ae2cc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.37
+elapsed_sec: 2.48
 status: ok
 ----- stdout -----
 ROUTE-2 SINGLE-ADJOINT-LINE SELECTOR: CURRENT-BANK NO-GO
@@ -40,6 +40,13 @@ D. Note/status firewall
 [PASS] note marks actual status as no-go
 [PASS] note states non-invariant future source line remains open
 [PASS] note avoids retained/proposal overclaim phrases
+
+E. N5 execution certificate
+per_element: checked -- the algebra is assembled and inspected entry by entry in exact sympy arithmetic, never numerically. The 9 base structure constants are expanded over all 6 index permutations with their signs, giving 54 signed f-entries, each of the 8 generators is filled across all 8x8 positions, and the commutant nullspace generator is then read entry by entry: all 56 off-diagonal entries are exactly zero, the 8 diagonal entries are all one value, and that value is nonzero.
+per_site: checked and not executed -- the only index this runner carries is the adjoint label a = 1..8, which is an internal color direction and not a position. This is finite algebra on one fixed internal factor; the Route-2 support and any lattice it might sit on are never constructed, so a site-resolved statement is unavailable by construction rather than merely skipped.
+per_mode: checked, with an explicit aggregation caveat -- each of the 8 adjoint directions is realized as its own generator matrix and each contributes its own commutator block ad(T_a) X - X ad(T_a) to the 64-unknown linear system, so the modes do enter separately. The conclusions, however, are joint and not per-direction: the invariant-vector dimension 0 comes from the rank 8 of the stacked 64x8 matrix, and commutant_dim = 1 from rank 63 of the assembled system. No single generator is shown on its own to exclude an invariant line.
+per_block: checked, and this is the class that carries the result -- the computed commutant is one-dimensional and scalar, which says the adjoint is a single irreducible block, so it admits no invariant sub-block of rank 1 and no invariant complement of rank 7, exactly the pattern a line selector would need. Honesty note on how that is executed: the printed rank check compares against the hardcoded set {0, 8}, which restates the consequence of the computed scalar commutant rather than enumerating projectors independently.
+lattice_wide: checked and not executed, and this is genuine absence rather than an omission -- the object under study is a fixed 8-dimensional internal representation at N_c = 3, with no volume, no site count and no large-N or continuum limit anywhere. The no-go certified here is representation-theoretic at that fixed rank, and the certificate is scoped accordingly: nothing whole-system is asserted.
 
 TOTAL: PASS=20 FAIL=0
 VERDICT: current-bank no-go.  The SU(3)-equivariant adjoint source bank has no invariant line and no rank-7 invariant complement projector; its commutant is scalar.  Therefore the single-adjoint-line selector isolated as conditional support requires a new non-invariant typed source datum, not merely the current F_adj/Rconn/Fierz/color-singlet bank.

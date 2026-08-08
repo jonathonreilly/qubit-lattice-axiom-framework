@@ -270,12 +270,60 @@ def typed_graph_checks() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only, adds no check and moves no counter."""
+    print("\nPART 6: N5 execution certificate")
+    w_e = Fraction(1, 3)
+    w_t = Fraction(1, 2)
+    powers = [-2, -1, 0, 1, 2]
+    anchor_total = sum(len(anchors) for _label, _doc, anchors in QUOTE_ANCHORS)
+    print(
+        "per_element: checked -- each exponent in the scan is carried to its own full endpoint "
+        f"row rather than to a summary statistic, so the {len(powers)} tested powers produce "
+        f"{len(powers)} independently computed quadruples of lambda, q_E, rho_E and c_TE in "
+        f"exact Fractions, and the {anchor_total} quote needles across the authority bank are "
+        "each located individually inside their own named document. No tolerance, no fit and no "
+        "amplitude enters at any point."
+    )
+    print(
+        "per_site: checked and not executed -- the support never appears. Weights, exponents, "
+        "endpoint ratios and document text are the only things this runner touches, and none of "
+        "them carries a position, so there is no site-level statement available here either as "
+        "input or as conclusion."
+    )
+    print(
+        "per_mode: checked, and it is the whole substance of the scan -- every row is a power of "
+        f"the E-to-T mode-weight ratio w_E/w_T = {w_e / w_t}, and the modes are what is being "
+        f"varied. The exponents tested are exactly {powers}, and only p = -2 reproduces the "
+        "endpoint target while p = -1 lands q_E = 5/4, rho_E = 3/2, c_TE = -4/3. The scan is a "
+        "fixed integer list, so the statement is 'among these five powers', not 'among all "
+        "exponents'; a reader changing that list changes the claim's reach."
+    )
+    print(
+        "per_block: checked and not executed, which is the accurate report rather than a "
+        f"convenient one -- the O_h projector blocks enter only as the two constants {w_e} and "
+        f"{w_t}. No projector is ever constructed, no block is applied to any vector, and the "
+        f"remaining block-like structure in this file, {len(CURRENT_EDGES)} current typed edges "
+        f"against {len(MISSING_DENSITY_EDGES)} missing density edges, is an inventory partition "
+        "and not a decomposition of any operator."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no limit is taken, "
+        "so nothing whole-system can be certified from this run. The two global-looking results "
+        f"should be read at their true strength: the bank scan is lexical over "
+        f"{len(QUOTE_ANCHORS)} named documents, and the two negative reachability results start "
+        "from two specific roots, the O_h weights and the F_adj count, rather than from every "
+        "node in the graph."
+    )
+
+
 def main() -> int:
     print("Route-2 source/readout density-primitive inventory no-go")
     print("Scope: named current source/readout authority bank; future nonlinear primitives remain open")
     exact_density_primitive_checks()
     quote_inventory_checks()
     typed_graph_checks()
+    n5_execution_certificate()
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={PASS_COUNT + FAIL_COUNT}")
     if FAIL_COUNT:
         print("VERDICT: failed checks; do not use this packet.")

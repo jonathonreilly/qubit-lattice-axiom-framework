@@ -242,11 +242,60 @@ def part_d_gate_independence_text() -> None:
     )
 
 
+def part_e_n5_certificate() -> None:
+    """N5 execution certificate: print-only, adds no check and moves no counter."""
+    print("\nE. N5 execution certificate")
+    base_edges = CURRENT_TYPED_EDGES + DERIVED_ADDITIONAL_EDGES
+    nodes = {end for edge in base_edges for end in (edge.source, edge.target)}
+    print(
+        "per_element: checked, and it is an inventory-and-arithmetic resolution only, with no "
+        f"field amplitude evaluated anywhere in this file. The {len(base_edges)} inventory edges "
+        f"({len(CURRENT_TYPED_EDGES)} current plus {len(DERIVED_ADDITIONAL_EDGES)} derived) are "
+        "held as individually named TypedEdge records, each of the two candidate edges is tested "
+        "for membership on its own, and the arithmetic side resolves one exact rational per "
+        f"check: F_adj = {F_ADJ}, c_TE = {TARGET_C_TE}, q_E = {TARGET_Q_E}, rho_E = {TARGET_RHO_E}."
+    )
+    print(
+        "per_site: checked and not executed -- there is no lattice index in this runner at all. "
+        f"Its whole state space is the {len(nodes)} symbolic nodes of the typed-edge graph plus "
+        "three exact rationals; the Route-2 support carrier is referred to by name only and is "
+        "never instantiated, so no site of it can be, or is, separately resolved."
+    )
+    print(
+        "per_mode: checked but THIN, and only in one place -- the sole channel decomposition "
+        "executed is the two-register split inside R_phys = F_adj + kappa_EW (1 - F_adj), which "
+        "weights the color-adjoint register against the not-read electroweak register. It is "
+        f"evaluated at three separate admixtures, kappa_EW = 0, 1/2 and 1, giving R_phys = "
+        f"{r_phys(Fraction(0, 1))}, {r_phys(Fraction(1, 2))} and {r_phys(Fraction(1, 1))}, and "
+        "exactly one of them lands rho_E = 21/4 once the extra W1 typing rule is granted. The "
+        "Route-2 E and T bright channels themselves are never given amplitudes here; they occur "
+        "only inside node labels."
+    )
+    print(
+        "per_block: checked -- the gate factorization is executed as four independent edge-set "
+        "copies of the same graph, and each copy is closed on its own before any of them are "
+        "compared: the base inventory, base + W2, base + W1, and base + W1 + W2. That "
+        "block-by-block separation is exactly what makes the note's independence claim "
+        "executable, since W2-only reaches su3_R_conn_8_9 but neither the center ratio nor "
+        "rho_E, W1-only reaches both from the color scalar but has no physical-selector source "
+        "path, and only the fourth copy connects the selector all the way to route2_rho_E_21_4."
+    )
+    print(
+        "lattice_wide: checked and not executed -- executing it would require a whole-system "
+        "quantity, and none exists here: no volume, no thermodynamic limit and no extensive "
+        "observable is formed. The widest object this runner closes over is graph reachability "
+        "across a fixed finite authority inventory, which is bookkeeping about what has been "
+        "typed rather than an evaluation of the theory, and the note's own result is that this "
+        "inventory does not connect a physical selector to the endpoint chain without both gates."
+    )
+
+
 def main() -> int:
     part_a_authorities()
     part_b_gate_reachability()
     part_c_exact_arithmetic()
     part_d_gate_independence_text()
+    part_e_n5_certificate()
     print(f"\nTOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("Status: exact negative boundary for W1/W2 gate conflation.")
     return 0 if FAIL_COUNT == 0 else 1

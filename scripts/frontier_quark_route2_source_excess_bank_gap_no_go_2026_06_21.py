@@ -243,6 +243,47 @@ def main() -> int:
     for label, marker in banned_markers:
         check(f"note avoids overclaim marker: {label}", marker not in note)
 
+    print("\nPART 6: N5 execution certificate")
+    anchor_total = sum(len(v) for v in REQUIRED_ANCHORS.values())
+    print(
+        "per_element: checked -- the bank is interrogated marker by marker rather than in bulk. "
+        f"{anchor_total} required anchors are each located in their own named file and each "
+        f"of the {len(ABSENT_TARGET_MARKERS)} target markers is separately confirmed absent, "
+        "and the arithmetic side is likewise single-valued at every step: the one-power route "
+        f"returns rho_E = {rho_e_one}, the target stands at {TARGET_RHO_E}, and their quotient "
+        f"is the tilt {source_tilt} that names the whole gap."
+    )
+    print(
+        "per_site: checked and not executed -- nothing in this runner is positional. The bank "
+        "scan reads files, the arithmetic manipulates ratios of already-contracted endpoint "
+        "quantities, and the typed graph moves between symbol names, so at no point does a site "
+        "index exist that could carry a result."
+    )
+    print(
+        "per_mode: checked -- the E and T1 mode weights do real work here, since the one-power "
+        f"route is built directly from them: w_E = {W_E} and w_T = {W_T} give one inverse factor "
+        f"and hence rho_E = {rho_e_one}. What the certificate must add is that this is exactly "
+        f"where the mode route stops. The residual factor {source_tilt} separating that result "
+        "from the target is not produced by any weight, ratio or power of the two modes in this "
+        "file; it is defined as the quotient and then shown to be unsourced."
+    )
+    print(
+        "per_block: checked, and the two halves of the bank argument are deliberately not "
+        f"symmetric. The presence half is closed block by block, each of the {len(BANK_FILES)} "
+        "files carrying its own anchor set and failing on its own; the absence half is evaluated "
+        "against the concatenation of all seven, so a missing marker is certified bank-wide but "
+        "is not attributed to any individual file. That asymmetry is a real limit of the "
+        "executed evidence and is recorded here rather than smoothed over."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no asymptotic "
+        "regime is present, so the class has no referent in this runner. The one genuinely "
+        "bank-wide object is the absence sweep, and its nature should be stated precisely: it "
+        "is lexical, asserting that strings such as the tilt value and the source-map symbols do "
+        "not occur across the seven files. That establishes the bank does not currently state "
+        "the primitive; it does not establish that no such primitive could be stated."
+    )
+
     print("\nTOTAL: PASS=%d, FAIL=%d" % (PASS, FAIL))
     if FAIL:
         return 1

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_slot_dualization_gate_no_go_2026_06_21.py
-runner_sha256: c622010db758326aadb4dca9851eddd8ba71b88f92a8845f255ccddb0e7c5514
+runner_sha256: b2de016ae3925a0d065167c686ccdb72b391e3bdfa8aa0ff87a9640eacf16e96
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 Route-2 source-slot dualization gate
@@ -73,6 +73,13 @@ PASS: note avoids overclaim marker: branch-local status-promotion phrase
 PASS: note avoids overclaim marker: future-retention phrase
 PASS: note avoids overclaim marker: promotion-to-retention phrase
 PASS: note avoids overclaim marker: no-future-theorem phrase
+
+PART 5: N5 execution certificate
+per_element: checked -- nothing is compared as a summary. Every one of the 5 slot cases is compared as a full five-component tuple, total count and lambda and q_E and rho_E and center T/E together, against its own expected entry, and on the documentary side 9 required markers and 7 forbidden slot markers are each resolved one string at a time in exact Fraction and literal-substring terms.
+per_site: checked and not executed -- a slot count is a statement about how many factors a formula carries, and formulas do not have sites. No configuration, carrier column or support geometry is instantiated anywhere in this file, so nothing here can be attributed to a location and nothing is.
+per_mode: checked, and honestly it is narrow -- the E and T channels enter only through the single weight ratio w_E/w_T = 2/3, of which each dual factor is one power. No E or T amplitude is formed and no channel is ever evaluated on its own, so the mode-level evidence here amounts to the fact that this one ratio, raised to the total factor count, reproduces the endpoint arithmetic.
+per_block: checked, and this is the class the no-go is written in -- the two slots, source and readout, are the blocks, and the executed finding is that only their sum is observable. The source-only and readout-only rows are literally identical at p = 1, both giving lambda 3/2 and rho_E 3/2, and the two-sided and readout-only-inverse-square rows are likewise identical at p = 2, both giving rho_E 21/4, so the endpoint data cannot attribute a factor to a block even when the total is right.
+lattice_wide: checked and not executed, and two scope facts belong on the record here rather than being left implicit -- there is no lattice, volume or limit, so the class has no referent; and the slot-count model itself is a configured table in this file, so PART 1 certifies that the arithmetic agrees with that table rather than deriving the model from the time family, while the claim that the current family carries zero source slots rests on the lexical absence scan over the 4 authority files.
 
 TOTAL: PASS=46, FAIL=0
 VERDICT: no-go for the current conditional time-family two-slot shortcut. The existing Xi_P family has no source-preparation dual slot; p=2 still requires a new source-preparation theorem or a readout-only inverse-square coefficient theorem.

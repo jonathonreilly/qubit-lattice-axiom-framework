@@ -179,6 +179,51 @@ def main() -> int:
     check("new note states the load-bearing missing bridge", "source-domain identification" in note_text and "not a derivation" in note_text)
 
     print()
+    print("E. N5 execution certificate -- what this runner resolves")
+    print("-" * 72)
+    e_center_zero = float((p_zero @ e_center)[0])
+    e_center_target = float((p_target @ e_center)[0])
+    print(
+        "per_element: checked -- the bridge is resolved one exact rational at a time, "
+        f"F_adj = {r} then q_E = {q_e} then rho_E = {rho_e}, and the readout comparison is "
+        "entrywise: max|P(0)c - P(21/4)c| over all four components of each endpoint column "
+        f"stays under {EXACT_TOL:.0e} on three columns, while the single component that moves "
+        f"is the E readout of the E-center column, {e_center_zero:.6f} -> {e_center_target:.6f}, "
+        f"a shift of exactly {Fraction(7, 8)}."
+    )
+    print(
+        "per_site: checked and not executed -- this runner never indexes a site. It consumes "
+        "four already-contracted 4-component endpoint columns from restricted_readout_data(), "
+        "in which the six shell sites of the seven-site star enter only through the single "
+        "uniform combination s/sqrt(6); no shell site is separately resolved and no site "
+        "amplitude is evaluated anywhere in this file."
+    )
+    print(
+        "per_mode: checked -- the two bright channels are carried in separate rows of "
+        "P(rho_E), row 0 for E and row 1 for T, and the obstruction is literally a "
+        "cross-mode ratio: c_TE = gamma_T(center)/gamma_E(center) is what the note is missing, "
+        "so the E and T modes must be resolved apart for the statement to exist. The A1 channel "
+        "is not given a readout row; it enters only as the scalar delta_A1 that the columns "
+        "already absorb."
+    )
+    print(
+        "per_block: checked -- the shell and center endpoint blocks are closed one block at a "
+        "time, and that is how the boundary is located: E-shell, T-shell and T-center are each "
+        f"invariant under rho_E to better than {EXACT_TOL:.0e}, and E-center alone is not, so "
+        "the whole rho_E freedom is confined to exactly one of the four blocks on the "
+        "restricted carrier."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, volume or limit is taken here, "
+        "and executing this class is precisely what the note says is unavailable: the "
+        "whole-surface statement would be a typed source-domain identification of -F_adj with "
+        "the E/T center ratio, and the runner's executed evidence at this scope is the negative "
+        f"scan showing no such typing on any of the {5} cited authority surfaces, with the live "
+        f"comparator staying off-target at {live_center_ratio:.12f} against "
+        f"{float(center_target):.12f}. The N_c = 2, 3, 4 sweep varies color rank, not volume."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

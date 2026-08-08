@@ -223,6 +223,47 @@ def main() -> int:
     for label, marker in banned_markers:
         check(f"note avoids overclaim marker: {label}", marker not in note)
 
+    print("\nPART 5: N5 execution certificate")
+    marker_total = sum(len(v) for v in REQUIRED_MARKERS.values())
+    print(
+        "per_element: checked -- nothing is compared as a summary. Every one of the "
+        f"{len(SLOT_CASES)} slot cases is compared as a full five-component tuple, total count "
+        "and lambda and q_E and rho_E and center T/E together, against its own expected entry, "
+        f"and on the documentary side {marker_total} required markers and "
+        f"{len(ABSENT_SOURCE_SLOT_MARKERS)} forbidden slot markers are each resolved one string "
+        "at a time in exact Fraction and literal-substring terms."
+    )
+    print(
+        "per_site: checked and not executed -- a slot count is a statement about how many "
+        "factors a formula carries, and formulas do not have sites. No configuration, carrier "
+        "column or support geometry is instantiated anywhere in this file, so nothing here can "
+        "be attributed to a location and nothing is."
+    )
+    print(
+        "per_mode: checked, and honestly it is narrow -- the E and T channels enter only through "
+        f"the single weight ratio w_E/w_T = {W_E / W_T}, of which each dual factor is one power. "
+        "No E or T amplitude is formed and no channel is ever evaluated on its own, so the "
+        "mode-level evidence here amounts to the fact that this one ratio, raised to the total "
+        "factor count, reproduces the endpoint arithmetic."
+    )
+    print(
+        "per_block: checked, and this is the class the no-go is written in -- the two slots, "
+        "source and readout, are the blocks, and the executed finding is that only their sum is "
+        "observable. The source-only and readout-only rows are literally identical at p = 1, "
+        "both giving lambda 3/2 and rho_E 3/2, and the two-sided and readout-only-inverse-square "
+        "rows are likewise identical at p = 2, both giving rho_E 21/4, so the endpoint data "
+        "cannot attribute a factor to a block even when the total is right."
+    )
+    print(
+        "lattice_wide: checked and not executed, and two scope facts belong on the record here "
+        "rather than being left implicit -- there is no lattice, volume or limit, so the class "
+        "has no referent; and the slot-count model itself is a configured table in this file, so "
+        "PART 1 certifies that the arithmetic agrees with that table rather than deriving the "
+        f"model from the time family, while the claim that the current family carries zero "
+        f"source slots rests on the lexical absence scan over the {len(AUTHORITY_FILES)} "
+        "authority files."
+    )
+
     print("\nTOTAL: PASS=%d, FAIL=%d" % (PASS, FAIL))
     if FAIL:
         return 1

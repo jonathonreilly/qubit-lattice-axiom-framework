@@ -211,6 +211,47 @@ def main() -> int:
         and requirements["inverse_square_readout_law"] is False,
     )
 
+    banner("6. N5 execution certificate")
+    print(
+        "per_element: checked -- nothing is aggregated; each rational is produced and compared "
+        f"singly. The source dimensions N_pair = {n_pair} and N_color = {n_color} give the "
+        f"reciprocal-square ratio {reciprocal_ratio}, which then drives q_T = "
+        f"{endpoint['q_T']}, q_E = {endpoint['q_E']}, rho_E = {endpoint['rho_E']} and c_TE = "
+        f"{endpoint['c_TE']} one value per check, and the underdetermination is exhibited as "
+        "four literally distinct elements of the candidate ratio set {1, 3/2, 9/4, 4/9}."
+    )
+    print(
+        "per_site: checked and not executed -- the runner reasons about channel labels and "
+        "their dimensions, and never builds a state on the support. No amplitude is placed at "
+        "the center site or at any of the six shell arms, so nothing in this file is resolved "
+        "at site granularity and no site-level claim is made or implied."
+    )
+    print(
+        "per_mode: checked, and it carries the argument -- E and T1 are the two O_h readout "
+        f"channels here, the tested quantity lambda = q_E/q_T is exactly their cross-channel "
+        f"ratio, and the gate is that their labels alone do not pick an exponent: the same mode "
+        f"pair (dim {dim_e}, dim {dim_t1}) is compatible with ratio 1, one-power 3/2, "
+        f"inverse-square {oh_inverse_square} or square 4/9, and only the inverse-square choice "
+        "reaches the endpoint triple. That is a genuinely mode-resolved statement of what is "
+        "missing, not of what is proved."
+    )
+    print(
+        "per_block: checked, but plainly at the level of block counts only -- no block operator "
+        "or block amplitude is constructed anywhere here. What is resolved is the arm census of "
+        f"the six shell arms into an E block of {dim_e} and a T1 block of {dim_t1}, entering as "
+        f"per-arm weights {weight_e} and {weight_t1}, and the value 9/4 is then closed twice "
+        "from two independent registrations of that census: once as reciprocal squares of the "
+        "source dimensions, once as inverse squares of the O_h per-arm weights."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no limit is taken, "
+        "so no whole-system quantity exists to certify. The global statement this runner does "
+        "execute is a four-surface token-absence scan showing the CKM inverse-square note "
+        "carries no Route-2 or q_E/q_T syntax and the Route-2 readout note names neither N_pair "
+        "nor N_color. The part-5 requirements record is a declared stance about what the bank "
+        "lacks, not a search result, and the certificate reports it that way."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

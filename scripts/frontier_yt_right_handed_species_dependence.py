@@ -701,6 +701,59 @@ def main() -> int:
     print("  A primitive beyond the retained right-handed sector is")
     print("  required to close the up-type vs down-type mass hierarchy.")
 
+    # N5 execution certificate (print-only; adds no check and no verdict)
+    print()
+    print("==============================================================================")
+    print("N5 EXECUTION CERTIFICATE")
+    print("==============================================================================")
+    print(
+        "  per_element: the heaviest computation in the file is genuinely at entry "
+        "level - the four 16x16 Dirac matrices are assembled by a fourfold "
+        "Kronecker product of Pauli factors, gamma_5 is formed as their ordered "
+        "product and tested for involution, Hermiticity and anticommutation with "
+        "each generator at tolerance 1e-10, and the taste commutant is extracted by "
+        "stacking kron(Gamma_mu, eye(16)) - kron(eye(16), Gamma_mu.T) into a "
+        "1024-by-256 array and reading its null space off a singular value "
+        "decomposition with a 1e-8 cutoff."
+    )
+    print(
+        "  per_site: checked and not executed - the four Kronecker slots are Dirac "
+        "and taste factors of one 16-dimensional spinor-taste space, not four "
+        "locations, and the file contains no coordinate, hopping term or neighbour "
+        "list. Every species label it manipulates (u_R, d_R, e_R, nu_R, Q_L, L_L) "
+        "is a representation assignment carried as a Fraction, with no position "
+        "attached."
+    )
+    print(
+        "  per_mode: checked and not executed - nothing is expanded in momentum and "
+        "no dispersion relation appears. The Clebsch-Gordan work is representation "
+        "counting rather than mode analysis, and the only spectral operations "
+        "performed are traces of projectors and a null-space dimension, neither of "
+        "which isolates an individual mode."
+    )
+    print(
+        "  per_block: real block content exists, but it is not the block content "
+        "the headline claim needs - what is computed is that the chirality "
+        "projectors (I16 -+ gamma_5)/2 each have trace exactly 8 on C^16, and that "
+        "all 16 basis elements of the taste commutant commute with gamma_5 to "
+        "within 1e-8, so the colour and taste structure is identical on the two "
+        "chirality halves. The species-independence of the Yukawa Clebsch-Gordan "
+        "itself is not computed at this or any granularity: cg_trilinear_yukawa() "
+        "takes no arguments, so the up-type and down-type factors are two calls to "
+        "the same constant function and their equality is a property of the code "
+        "rather than a derived result."
+    )
+    print(
+        "  lattice_wide: checked and not executed - the largest object is a single "
+        "16-dimensional spinor-taste space with a 256-dimensional operator space "
+        "over it, and there is no volume, no boundary and no limit. The two anomaly "
+        "traces that come closest to a global statement, Tr[Y] and Tr[Y^3], are "
+        "exact rational sums over one generation's sixteen states and both vanish, "
+        "which is a one-generation bookkeeping identity rather than a whole-system "
+        "computation; the runner's own closing text agrees, saying a primitive "
+        "beyond the retained right-handed sector is still required."
+    )
+
     return FAIL_COUNT
 
 

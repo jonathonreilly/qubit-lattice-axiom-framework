@@ -22,13 +22,13 @@
   "failures": [],
   "generator": "scripts/census_index_rebuild_2026_08_05.py",
   "inputs_consumed": {
-    "git_head_at_run": "39c9065d8707028443664817a7b73c550158e724",
+    "git_head_at_run": "1db05761f4f09359849731ad4e56b783bfc7c24f",
     "git_object_store": "resolved via git cat-file --batch-check",
     "index_path": "docs/repo/science_census_unledgered_index_2026-08-05.json",
     "index_sha256": "40f2878275e84ca53e905cfdf214ff5e44dfb8e9b144ac9a36743193b843e31b"
   },
   "regenerated_index_sha256": "40f2878275e84ca53e905cfdf214ff5e44dfb8e9b144ac9a36743193b843e31b",
-  "run_utc": "2026-08-08T15:37:21Z",
+  "run_utc": "2026-08-08T15:49:46Z",
   "verification": {
     "blob_fields_checked_and_matching": 249,
     "null_ref_records": 0,

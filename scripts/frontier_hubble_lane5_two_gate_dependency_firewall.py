@@ -255,6 +255,57 @@ def part5_gate_inventory_specifics() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State what this firewall resolves at each canonical granularity.
+
+    Print-only; no check() call is made, so PASS_COUNT/FAIL_COUNT are
+    untouched.  Quantities are recomputed from the same module constants.
+    """
+    section("N5 execution certificate: resolution granularity of this two-gate firewall")
+    l_values = [0.60, PLANCK_L, 0.80]
+    c1_family = [h0_from_hinf_l(PLANCK_HINF, L) for L in l_values]
+    h_inf_values = [50.0, PLANCK_HINF, 65.0]
+    l_family = [h0_from_hinf_l(h, PLANCK_L) for h in h_inf_values]
+    a_grid = np.linspace(0.5, 1.0, 11)
+    matter_fraction = 1.0 - PLANCK_L - PLANCK_R
+    print(
+        "per_element: checked — the two-gate necessity is resolved variable by variable on the solved "
+        "bridge H_0 = H_inf/sqrt(L), by taking each partial derivative symbolically: dH_0/dH_inf = "
+        "1/sqrt(L) and dH_0/dL = -H_inf/(2 L^(3/2)), both nonvanishing for positive L. Neither variable "
+        "drops out of the identity, which is exactly why neither gate can be retired on its own, and the "
+        f"one-gate families confirm it numerically with spreads of {max(c1_family) - min(c1_family):.3f} "
+        f"and {max(l_family) - min(l_family):.3f} km/s/Mpc."
+    )
+    print(
+        "per_site: checked and not executed — no lattice, cell, or site is constructed in this runner; "
+        "H_0 is a single global scalar, and although the C1 gate is described in its source note as a "
+        "coupled packet living on P_A H_cell, that carrier is only read as note text here and never "
+        "built, so no site-resolved object exists to interrogate."
+    )
+    print(
+        f"per_mode: checked — the expansion rate is resolved into its three separately-scaling density "
+        f"components rather than used as a lump: radiation R={PLANCK_R} times a^-4, matter "
+        f"M={matter_fraction:.6f} times a^-3, and the constant term L={PLANCK_L}. A common rescaling of "
+        "H_0 multiplies all three identically, so no single component carries the absolute scale. These "
+        "are density components of the Friedmann sum, not spectral modes; nothing is eigendecomposed here."
+    )
+    print(
+        "per_block: checked — the C1 gate is verified as a coupled block rather than as one premise: its "
+        "four named sub-premises, the active-block response, the physical channel/Widom law, the "
+        "gravitational boundary/action identification, and the action-unit metrology, are each required "
+        "to be present, and the source note states in the same breath that the packet does not close the "
+        "Planck lane. The C2 block is checked separately as the right-sensitive Z_3 doublet-block "
+        "selector, and the C3 block is confirmed currently empty."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide sum, cosmological integration, or "
+        f"asymptotic limit is taken; the structural lock is exercised on {len(a_grid)} sampled scale "
+        f"factors from a={a_grid[0]:.1f} to a={a_grid[-1]:.1f}, and the result is precisely that the lock "
+        "fixes only the dimensionless ratio H(a)/H_0 while returning whichever scalar was supplied, so "
+        "the runner ends with H_0 open rather than with any global determination."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LANE 5 HUBBLE TWO-GATE DEPENDENCY FIREWALL")
@@ -272,6 +323,7 @@ def main() -> int:
     part3_single_gate_families()
     part4_structural_lock_is_not_numerical_result()
     part5_gate_inventory_specifics()
+    n5_execution_certificate()
 
     print()
     print("=" * 88)

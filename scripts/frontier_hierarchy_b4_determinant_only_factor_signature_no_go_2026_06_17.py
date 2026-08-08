@@ -196,10 +196,61 @@ def check_source_markers() -> None:
         check("B", f"open-gate note contains marker: {marker}", marker.lower() in gate_flat)
 
 
+def n5_execution_certificate() -> None:
+    """State what this runner resolves at each canonical granularity.
+
+    Nothing above is modified.  The signatures below are rebuilt from the same
+    FactorSignature algebra and the same canonical-surface plaquette used in
+    the two check sections.
+    """
+    section("N5 execution certificate: resolution granularity of this factor-signature no-go")
+    det = FactorSignature(0, 16)
+    alpha_bare = FactorSignature(1, 0)
+    u0 = FactorSignature(0, 1)
+    target = alpha_bare.quotient(u0).power(16)
+    products = {det.power(k) for k in range(0, 7)}
+    quotients = {det.power(k) for k in range(-6, 7)}
+    plaquette = 0.5934
+    u0_value = plaquette**0.25
+    print(
+        "per_element: checked — the obstruction is resolved slot by slot on the two-element exponent "
+        f"vector (alpha_bare_exp, u0_exp). The u_0 slot is reachable, since the determinant signature "
+        f"({det.alpha_bare_exp}, {det.u0_exp}) already carries u0_exp={det.u0_exp} and its inverse carries "
+        f"{det.power(-1).u0_exp}; the alpha_bare slot is not, because every determinant-only expression "
+        f"holds alpha_bare_exp identically 0 while the target ({target.alpha_bare_exp}, {target.u0_exp}) "
+        f"demands {target.alpha_bare_exp}. The no-go lives entirely in that one element."
+    )
+    print(
+        "per_site: checked and not executed — this runner instantiates no lattice and reads no site; the "
+        "minimal-block determinant enters as the checked support-packet result u_0^16, and the "
+        f"canonical surface is the single supplied mean-field plaquette <P>={plaquette} with "
+        f"u_0={u0_value:.6f}, so nothing here is resolved site by site."
+    )
+    print(
+        "per_mode: checked and not executed — the algebra deliberately strips constants and keeps only "
+        "integer exponents, so no eigenvalue, no spectral decomposition of the block determinant, and no "
+        "mode content survives into the bookkeeping; a mode-resolved argument would need the determinant's "
+        "spectrum, which this exact-exponent method never forms."
+    )
+    print(
+        f"per_block: checked — the minimal block is the unit of this sweep: {len(products)} whole-block "
+        f"products det^k for k=0..6 give u0_exp running 0,16,...,96, and {len(quotients)} block quotients "
+        "det^k for k=-6..6 give -96..96, yet all of them hold alpha_bare_exp at exactly 0. No number of "
+        "block copies, stacked or inverted, reaches (16, -16)."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide or continuum statement is made or "
+        "attempted; the note explicitly disclaims exhaustion of every possible future B4 mechanism, and "
+        "the open-gate note keeps beyond-mean-field link fluctuations, Green-kernel and non-link transport "
+        "routes alive, so this certificate bounds determinant-only repairs and nothing wider."
+    )
+
+
 def main() -> int:
     check_factor_signatures()
     check_canonical_numbers()
     check_source_markers()
+    n5_execution_certificate()
     print()
     print(f"CLASS_COUNTS: {CLASS_COUNTS}")
     if FAIL:

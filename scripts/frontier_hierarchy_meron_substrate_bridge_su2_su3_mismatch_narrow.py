@@ -412,6 +412,59 @@ def t10_source_note_boundary() -> bool:
     return _assert(boundary_ok, "T10: source-note boundary preserved (narrow no-go only)")
 
 
+def n5_execution_certificate() -> None:
+    """State what this runner resolves at each canonical granularity.
+
+    Print-only: no _assert / _line PASS is emitted, so the T1-T10 group tally
+    is untouched.  Values are recomputed from the same module constants.
+    """
+    print()
+    print("=" * 72)
+    print("N5 execution certificate: resolution granularity of this meron-bridge no-go")
+    print("=" * 72)
+    box_l = 4
+    sites_z3 = box_l**3
+    sites_z4 = box_l**4
+    s_meron_su2 = 4 * math.pi**2
+    s_frac_su3 = 8 * math.pi**2 / 3
+    correction = math.exp(s_meron_su2 - math.log(M_PL / V_OBS))
+    print(
+        "per_element: checked and not executed — no gauge-field configuration, transfer matrix, or algebra "
+        "element is ever constructed here; the meron colour components A_mu^a for a=1,2,3 appear only as "
+        "quoted prose from de Alfaro-Fubini-Furlan, and every obstruction is settled from closed-form "
+        f"classical actions (S_meron(SU(2))=4 pi^2={s_meron_su2:.4f} against "
+        f"S_frac(SU(3),k=1)=8 pi^2/3={s_frac_su3:.4f}) and scalar predictions."
+    )
+    print(
+        "per_site: checked — obstruction M2 is resolved by explicit site enumeration on the canonical "
+        f"L={box_l} box: the framework Z^3 spatial substrate carries L^3={sites_z3} sites while the "
+        f"Itou-Iritani meron construction needs a Z^4 torus of L^4={sites_z4} spacetime sites, a factor "
+        f"L={sites_z4 // sites_z3} more. No field amplitude is evaluated at any of those sites; the "
+        "inventory mismatch is itself the obstruction, because the framework substrate has no "
+        "Wick-rotated fourth direction to enumerate."
+    )
+    print(
+        "per_mode: checked — the doubler-mode inventory is resolved at the Brillouin-zone corners, "
+        f"2^3={2**3} corners for the Z^3 spatial substrate against 2^4={2**4} for the Wick-rotated Z^4 "
+        "lattice the meron route requires, so the two surfaces do not even carry the same number of "
+        "modes. No individual mode amplitude, eigenvalue, or propagator is computed; only the inventory "
+        "size is resolved, and it already differs."
+    )
+    print(
+        "per_block: checked and not executed — there is no blocking, decimation, coarse-graining, or "
+        f"repeated-copy structure anywhere in this runner; the L={box_l} box enters purely as a site-count "
+        "comparator and is never blocked, so the SU(2)/SU(3) mismatch is never probed at an intermediate "
+        "block scale between the single configuration and the whole lattice."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide field configuration, partition function, "
+        "dilute-gas sum, or continuum limit is computed; all five obstructions M1-M5 are settled from "
+        f"closed-form scalars, including the residual multiplicative correction {correction:.6f} that no "
+        "substrate-natural factor supplies, and the note keeps primitives P1-P4 of the honest-status note "
+        "open rather than closing any of them."
+    )
+
+
 def main() -> int:
     print()
     print("=" * 72)
@@ -441,6 +494,8 @@ def main() -> int:
             passes += 1
         else:
             fails += 1
+
+    n5_execution_certificate()
 
     print()
     print("=" * 72)

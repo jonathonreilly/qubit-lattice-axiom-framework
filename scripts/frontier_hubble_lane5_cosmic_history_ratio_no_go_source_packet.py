@@ -293,6 +293,52 @@ def part5_no_go_boundary() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State what this source packet resolves at each canonical granularity.
+
+    Print-only; no check() call is made, so PASS_COUNT/FAIL_COUNT are
+    untouched.  The taxonomy is re-enumerated from the same packets().
+    """
+    section("N5 execution certificate: resolution granularity of this source packet")
+    all_packets = packets()
+    closed = [p for p in all_packets if p.closes_h0()]
+    without_c1 = [p for p in all_packets if not p.c1_scale_route]
+    print(
+        f"per_element: checked — the packet is verified item by item rather than by summary assertion: "
+        f"each of the {len(DEPENDENCIES)} declared dependency authorities is resolved individually on two "
+        "separate conditions, that the parent links it by claim_id and that its file exists on disk, and "
+        "each of the eight N1-N8 discipline markers is matched as a literal string in the parent. A single "
+        f"missing element would fail on its own line rather than be absorbed into the {PASS_COUNT} total."
+    )
+    print(
+        "per_site: checked and not executed — no lattice is instantiated and no site is addressed; the "
+        "object under discussion, the cosmic-history ratio L = (H_inf/H_0)^2, is a single global number, "
+        "and the scale-reference primitive that would attach a physical length to any site is held to "
+        "units-only status by the parent and by the primitive's own note, which forbids reading it as a "
+        "derived theorem."
+    )
+    print(
+        "per_mode: checked and not executed — nothing here is decomposed into modes; the closest counting "
+        "statement is the open-number theorem's reduction of the late-time variable set to exactly two "
+        "structural degrees of freedom (H_0, L) at fixed R, which is a dimension count over a variable "
+        "list and not a spectral decomposition, so no mode carries part of the obstruction."
+    )
+    print(
+        "per_block: checked — the reviewed routes are grouped into two blocks and the grouping is "
+        "enumerated exhaustively: the required scale-route block C1, and the L-supplying block {C2, C3} "
+        f"where either member alone suffices. All {len(all_packets)} assignments are printed, exactly "
+        f"{len(closed)} of them close H0, every one of those contains C1 together with at least one "
+        f"L-block member, and none of the {len(without_c1)} assignments lacking C1 closes."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide, cosmological, or continuum computation "
+        "is performed anywhere in this runner; its whole content is that the current framework baseline "
+        "plus the units-only scale-reference primitive does not derive the dimensionless scale-route "
+        "content or L, and the parent is explicit that this classifies what retirement would require "
+        "while claiming none of C1, C2, C3 impossible."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LANE 5 COSMIC-HISTORY-RATIO NO-GO SOURCE PACKET")
@@ -312,6 +358,7 @@ def main() -> int:
     part3_closure_taxonomy()
     part4_no_go_discipline()
     part5_no_go_boundary()
+    n5_execution_certificate()
 
     print()
     print("=" * 88)

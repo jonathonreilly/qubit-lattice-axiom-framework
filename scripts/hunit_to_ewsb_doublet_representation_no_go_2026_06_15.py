@@ -180,6 +180,56 @@ def part5_thermal_count_boundary() -> None:
     check("a scalar singlet is not the four-component high-T doublet", scalar_singlet_real_dof != complex_doublet_real_dof)
 
 
+def n5_execution_certificate() -> None:
+    """State what this runner resolves at each canonical granularity.
+
+    Print-only; no check() call is made, so PASS/FAIL stay at the totals the
+    source note pins.  The objects below are rebuilt from the same generators.
+    """
+    print("\nN5 execution certificate: resolution granularity of this representation no-go")
+    sigma_x = sp.Matrix([[0, 1], [1, 0]])
+    sigma_y = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+    sigma_z = sp.Matrix([[1, 0], [0, -1]])
+    gens = [sigma_x / 2, sigma_y / 2, sigma_z / 2]
+    h_unit = sp.kronecker_product(sp.eye(2), sp.eye(3)) / sp.sqrt(6)
+    stacked = stack_generators(gens)
+    print(
+        "per_element: checked — equivariance is decided entry by entry in exact symbolic arithmetic, not "
+        f"by a norm: every one of the {h_unit.shape[0] * h_unit.shape[1]} entries of each commutator "
+        "[T_i, H_unit] is simplified and required to vanish for all three generators, and the rank-one "
+        "projector P_- is likewise verified entrywise as idempotent. The obstruction is exact, with no "
+        "tolerance anywhere in this runner."
+    )
+    print(
+        "per_site: checked and not executed — no lattice and no site index appears; the carrier is the "
+        f"internal Q_L = (2,3) block of a single generation, a {h_unit.shape[0]}-dimensional space whose "
+        "second factor is colour rather than position, so there is no spatial degree of freedom for the "
+        "representation obstruction to be resolved against."
+    )
+    print(
+        "per_mode: checked — the two weight components of the SU(2) fundamental are resolved separately "
+        "and both are eliminated: solving the equivariance equations for a general v = (a, b) forces "
+        f"a = 0 and b = 0, the stacked generator constraint has rank {stacked.rank()} with empty "
+        "nullspace, and the resolution P_+ + P_- = I_2 separates the charged component from the neutral "
+        "one, with Q = T_3 + Y annihilating only the latter. No individual component survives as an "
+        "invariant direction."
+    )
+    print(
+        "per_block: checked — H_unit is examined as an operator on the whole Q_L block rather than on a "
+        f"chosen sub-piece: it is exactly the identity of that block scaled to unit Hilbert-Schmidt norm, "
+        "1/sqrt(6) times I_2 tensor I_3, so it is constant across the isospin factor and the colour "
+        "factor alike and carries no block-internal direction that could single out a doublet component. "
+        "Choosing any nonzero ray inside the block, such as (1, 0), immediately breaks the equivariance."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide, thermal, or field-theoretic computation "
+        "is performed; the high-temperature census in Part 5 is an integer comparison of real degrees of "
+        "freedom, 4 for one complex doublet against 1 for a neutral radial ray or a scalar singlet, not a "
+        "partition-function or free-energy evaluation, and the note is explicit that this does not close "
+        "R-HIGGS positively and adds no axiom or approved primitive."
+    )
+
+
 def main() -> int:
     print("=" * 78)
     print("H_UNIT -> EWSB DOUBLET REPRESENTATION NO-GO")
@@ -189,6 +239,7 @@ def main() -> int:
     part3_no_singlet_to_doublet_map()
     part4_neutral_ray_is_inside_supplied_doublet()
     part5_thermal_count_boundary()
+    n5_execution_certificate()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0
 

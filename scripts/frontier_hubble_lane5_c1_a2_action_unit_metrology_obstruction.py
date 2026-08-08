@@ -190,6 +190,46 @@ def main() -> int:
         print(f"[{status}] {check.name}: {check.detail}")
         passed += int(check.passed)
     failed = len(checks) - passed
+
+    # N5 execution certificate. Print-only: no Check is recorded, so the
+    # PASS/FAIL tally above is untouched.
+    print("-" * 78)
+    print("N5 execution certificate: resolution granularity of this metrology obstruction")
+    print("-" * 78)
+    print(
+        "per_element: checked and not executed — no explicit matrix is ever built on the cell, so no "
+        "matrix element is inspected; the finite-trace obstruction is entered as the standard identity "
+        f"Tr([X,P])=0 against the canonical requirement Tr(i kappa I_4)=4 i kappa at kappa={kappa}, "
+        "recorded as a literal rather than computed from a constructed X and P."
+    )
+    print(
+        "per_site: checked and not executed — the whole computation lives on one cell of dimension "
+        f"{dim_cell} carrying a rank-{rank_pa} projector; there is no site index, no neighbour, and no "
+        f"link, and the plaquette surface enters only as scalar constants (<P>={CANONICAL_PLAQUETTE:.4f}, "
+        f"u0={CANONICAL_U0:.10f}) rather than as site-resolved configuration data."
+    )
+    print(
+        "per_mode: checked and not executed — nothing here is decomposed into modes: the Wilson weight "
+        f"uses the single scalar Re<P>={plaquette_re} with beta={beta:.1f} to give "
+        f"S_lat={lattice_action:.12f} and exp(-S_lat)={weight:.12f}, and neither the projector nor any "
+        "transfer operator is diagonalized, so no eigenmode is available to carry a unit."
+    )
+    print(
+        "per_block: checked — the rank-four block inside the cell is where the obstruction is actually "
+        f"exhibited: its trace coefficient c_cell = {rank_pa}/{dim_cell} = {c_cell:.12f} is a pure ratio, "
+        "and the projected block phase agrees to within 1e-12 across kappa in {0.5, 1.0, 2.0, 8.0} at "
+        f"{projected_phases[0].real:.12f}+{projected_phases[0].imag:.12f}i. That agreement is structural "
+        "rather than numerical luck: the dimensional action is built as kappa times the dimensionless "
+        "block action, so kappa cancels identically, which is precisely why the block cannot pin it."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide action sum, partition function, "
+        "thermodynamic limit, or continuum limit is constructed anywhere; the rescaling family "
+        f"(S, kappa) -> (lambda S, lambda kappa) is exercised only at one cell over lambda in "
+        "{0.25, 1.0, 3.0, 11.0}, and the note records the clock/source/action metrology map as an open "
+        "import registered as the Tier-A derivation target AC_phi_lambda, which this runner does not close."
+    )
+
     print("-" * 78)
     print(f"TOTAL: PASS={passed}, FAIL={failed}")
     if failed == 0:

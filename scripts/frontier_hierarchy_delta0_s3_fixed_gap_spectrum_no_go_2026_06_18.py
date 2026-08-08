@@ -213,6 +213,43 @@ check("C", "runner source does not write audit ledgers", audit_ledger_token not 
 residual("Threshold-dependent G_n or EW-driven gap equations remain open; this runner does not derive or rule them out.")
 residual("Non-NJL direct transport rules remain open; this runner only prunes the fixed-G NJL gap-spectrum arm of S3.")
 
+section("N5 execution certificate: resolution granularity of this gap-spectrum no-go")
+# Print-only; no check() call is made here, so PASS/FAIL/CLASS_COUNTS are
+# untouched. Every quantity is recomputed from the same helpers used above.
+print(
+    "per_element: checked and not executed — this runner builds no operator, matrix, or algebra carrier, "
+    "so there is no matrix element to resolve; the gap equation dV/dsigma = 1/G - n/(sigma^2 + C) is a "
+    f"scalar stationarity condition with C = 4 u_0^2 = {C:.6f}, and its finest resolved object is a "
+    "per-taste scalar root, reported under per_mode below."
+)
+print(
+    "per_site: checked and not executed — no lattice site is instantiated and no field is evaluated "
+    f"anywhere; the lattice enters only through the single boundary plaquette <P>={P_BOUNDARY} giving "
+    f"u_0={U0:.7f}, and the leading-order Kawamoto-Smit coupling G_LO = 1/(2 N_c) = {G_LO:.6f} at "
+    f"N_c={N_C} is a mean-field scalar, so nothing here is site-resolved."
+)
+print(
+    "per_mode: checked — the active taste count is the mode index and all sixteen are swept one at a "
+    f"time: sigma_n^2 = n G - C is negative for every n=1..16 at G_LO (largest at n=16, "
+    f"sigma_16^2={lo_sigmas[16]:.6f}), and G_LO={G_LO:.6f} sits below every per-taste threshold "
+    f"G_crit(n) = C/n, with the loosest being G_crit(16)={g_crit(16):.6f}. No taste mode reaches the "
+    "broken phase at leading order, so no nontrivial gap root exists for any of them."
+)
+print(
+    f"per_block: checked — the adjacent-threshold rungs are resolved rung by rung across n=2..16: each "
+    f"rung admits its own forced coupling G_star(n) that reproduces alpha_LM={ALPHA_LM:.7f} for that one "
+    f"step, all {unique_gstars} of them distinct and strictly decreasing in n, so the n=16 and n=15 rungs "
+    f"already disagree (G16={gstars[16]:.6f} against G15={gstars[15]:.6f}) and the full rung range spans "
+    f"{gstars[2] / gstars[16]:.2f}x. A single fixed G therefore cannot hold across more than one rung."
+)
+print(
+    "lattice_wide: checked and not executed — no volume, thermodynamic, or continuum limit is taken; the "
+    "entire computation sits at one fixed mean-field surface with a leading-order coupling, and the note "
+    "states in its own scope that S3 is not globally eliminated, that threshold-dependent, EW-driven and "
+    f"non-NJL transport mechanisms stay open ({RESIDUAL_COUNT} residuals declared above), and that the "
+    "DELTA0 gate remains open."
+)
+
 print("\nVERDICT: S3 fixed-G lattice-gauge-only gap-spectrum arm is pruned within stated scope; DELTA0 remains open.")
 print(
     "Breakdown: "

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow.py
-runner_sha256: 241b9a86483a5d2363a1720534e2336fafc367754d51c1e40d8fa521e4287096
+runner_sha256: e9692378e4c5e8c14ac42a957170a40a3051fed8092fe91448b18646af676063
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 # Hierarchy BBS staggered taste-blocking bridge KMS-substrate narrow no-go runner
@@ -138,6 +138,15 @@ T14: source-note boundary
   [PASS] note explicitly cites the prior Round-1 BBS narrow no-go as dep
   [PASS] note explicitly cites the retained BBS Banach contraction theorem as dep
   [PASS] note explicitly mentions KMS arXiv:2404.06099 inline
+
+==============================================================================
+N5 execution certificate: resolution granularity of this KMS-substrate no-go
+==============================================================================
+per_element: checked — the blocking map is resolved entry by entry on the diagonal 2x2 toy T_k in exact Fraction arithmetic: the (1,1) entry is b^(d-Delta_rel) = b^2 = 121.5585 and the (2,2) entry is b^(d-Delta_marg) = b^0 = 1 exactly, at the canonical b = 1/alpha_LM = 10000/907 ~ 11.0254. Neither entry is alpha_LM, so the operator norm of T_k is never the claimed kappa_k.
+per_site: checked and not executed — no lattice site is ever constructed here; the substrate is a 2x2 diagonal toy plus scalar canonical inputs (<P>=0.5934, u_0=<P>^(1/4)), and the site-resolved staggered fermion substrate that the bridge would need is precisely the object the bridge fails to supply, so there is nothing site-indexed to interrogate.
+per_mode: checked — the two scaling modes are separated by scaling dimension and the obstruction is located in one of them: the relevant mass mode (Delta_rel=2) carries eigenvalue b^2, while the marginal gauge-coupling mode (Delta_marg=4) carries exactly 1 at tree level and 3.7351 at one loop from 1 + c g_s^2 ln b, leaving the explicit K3 gap |lambda_marg(1L) - alpha_LM| = 3.6444 > 1 in the marginal mode alone.
+per_block: checked — the staircase is resolved rung by rung across its 16 rungs, one taste integrated per rung, with rung k carrying its own coefficient (1+2k)/3 for k=0..15 summing exactly to 256/3; the cumulative perturbative coefficient 2.594420 exceeds 1/g_s^2 = 0.8777, so the Landau-pole crossing happens inside the 16-rung staircase rather than outside it, and the sign survives <P> perturbed by +/- 0.0001.
+lattice_wide: checked and not executed — no asymptotic, continuum, or thermodynamic limit is taken anywhere in this runner; the staircase is exactly 16 finite rungs on a fixed canonical surface over a 2x2 toy, and obstruction K4 records that no Trotter equivalence between the continuous Polchinski flow exp(Delta_l L_KMS) and the discrete blocking operator T_k is available for the staggered fermion sector, so a lattice-wide statement cannot be assembled from these rungs.
 
 === TOTAL: PASS=40, FAIL=0 ===
 

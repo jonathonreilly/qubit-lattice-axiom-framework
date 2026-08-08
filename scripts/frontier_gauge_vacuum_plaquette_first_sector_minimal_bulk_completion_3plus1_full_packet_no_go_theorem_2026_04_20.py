@@ -40,6 +40,46 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
+def n5_execution_certificate() -> None:
+    """Print-only resolution report; no check or counter is added."""
+    print()
+    print("N5 EXECUTION CERTIFICATE")
+    print(
+        "per_element: partially executed -- the imported constructors populate "
+        "the selected 4x4 block, selected 3x3 slice, and full 3x3 target, and the "
+        "runner reads the three named odd/source channels A12, A13, and A23 plus "
+        "S12 and S13. The structural no-go itself is spectral, however; it does "
+        "not compare all matrix entries one by one."
+    )
+    print(
+        "per_site: checked and not executed -- no lattice coordinate, link, "
+        "plaquette, local field, or site amplitude is constructed here. The "
+        "selected Wilson and sparse-face objects enter as already-reduced finite "
+        "matrices, so no position-space conclusion is available from this runner."
+    )
+    print(
+        "per_mode: executed -- eigvalsh resolves every eigenvalue of the retained "
+        "4x4 block, the selected real 3x3 slice, and the full sparse-face 3x3 "
+        "target. The no-go checks the ordered target eigenvalues against the "
+        "adjacent retained eigenvalues required by Cauchy interlacing, while the "
+        "slice comparison uses the full sorted three-mode spectra."
+    )
+    print(
+        "per_block: executed -- the load-bearing comparison is exactly between "
+        "one retained 4x4 Hermitian block and a proposed 3x3 compression block. "
+        "Violation of mu_1 <= lambda_2 or mu_2 <= lambda_3 rules out every real "
+        "or complex orthonormal 3D compression of that selected ambient, and a "
+        "separate sorted-spectrum L2 gap rules out unitary dressing of the chosen slice."
+    )
+    print(
+        "lattice_wide: checked and not executed -- this is a fixed finite-matrix "
+        "statement on one selected minimally-positive Wilson branch. No lattice "
+        "extent, volume family, boundary-condition sweep, continuum limit, or "
+        "thermodynamic limit is constructed, so the conclusion does not extend "
+        "beyond the named 3d+1 ambient and full sparse-face packet."
+    )
+
+
 def main() -> int:
     print("=" * 118)
     print("GAUGE-VACUUM PLAQUETTE FIRST-SECTOR MINIMAL-BULK COMPLETION 3D+1 FULL-PACKET NO-GO")
@@ -88,28 +128,7 @@ def main() -> int:
         f"slice_target_eig_gap={np.linalg.norm(np.sort(mu) - np.sort(nu0)):.6f}",
     )
 
-    print()
-    print("N5 execution certificate -- what this runner resolves")
-    print("  per_element: checked -- the packet is read channel by channel: the "
-          "even channels S12 and S13 and the odd channels A12, A13, A23 are "
-          "each extracted separately, and the no-go turns on A13 being the one "
-          "nonvanishing odd channel while A12 and A23 are exactly zero.")
-    print("  per_site: checked and not executed -- there is no lattice site "
-          "index anywhere here; the carriers are a retained 4x4 ambient block "
-          "and 3x3 slices in an internal channel space, and no site, link or "
-          "neighbour structure is instantiated to resolve.")
-    print("  per_mode: checked -- three spectra are computed and compared mode "
-          "by mode: the four eigenvalues of the retained ambient block, the "
-          "three of the selected real slice and the three of the target, with "
-          "the interlacing test pairing target modes against ambient modes.")
-    print("  per_block: checked -- the whole argument is block-level: no 3x3 "
-          "compression block of the retained 4x4 ambient block can carry the "
-          "target block's spectrum, and unitary similarity leaves the selected "
-          "slice block's spectrum fixed under any internal U(3) dressing.")
-    print("  lattice_wide: checked and not executed -- the '3d+1' here counts "
-          "internal ambient dimensions, not lattice extent; no lattice, volume "
-          "or limit is built, so the obstruction is proved on the single fixed "
-          "ambient and says nothing lattice-wide.")
+    n5_execution_certificate()
 
     print("\n" + "=" * 118)
     print("RESULT")

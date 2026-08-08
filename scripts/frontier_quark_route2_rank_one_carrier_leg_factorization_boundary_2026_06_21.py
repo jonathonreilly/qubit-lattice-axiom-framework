@@ -205,6 +205,43 @@ def main() -> int:
         and "reciprocal degree zero" in block10,
     )
 
+    print("\n-- N5 execution certificate --")
+    print(
+        f"per_element: every cell of the 2x2 carrier is resolved twice over -- symbolically across "
+        f"{len(samples)} exact rational triples, where the matrix is matched entry for entry "
+        "against [1,delta]^T [u_E,u_T] and its determinant is exactly zero, and then live, where "
+        "the implementation is compared to the outer product by largest absolute cell difference "
+        "against the named 1.0e-12 threshold; no live cell value is restated in this certificate."
+    )
+    print(
+        "per_site: exercised at three backgrounds rather than the usual two -- the centre e0 where "
+        "delta_A1 is 1/6, the unit shell s/sqrt(6) where it is 0, and a deliberately mixed "
+        "background 0.8*e0 + 0.2*s_unit that lies at neither role, all three confirming the same "
+        "factorization; the six arms behind those backgrounds are never indexed individually."
+    )
+    print(
+        "per_mode: executed, and it returns blindness rather than a separation -- the E and T "
+        "carrier columns are formed by shifting along the two bright directions in turn, and the "
+        "source legs they produce are found equal to within 1.0e-12 at both the shell and the "
+        f"centre, so kappa={kappa} exists in the projector weights w_E={w_e}, w_T1={w_t} and yet "
+        "never reaches the carrier."
+    )
+    print(
+        "per_block: the reciprocal-degree rungs are the blocks here, and their status is unequal -- "
+        f"the carrier rung is entered as the declared constant {carrier_degree}, so the check that "
+        f"it is zero is a restatement rather than a derivation, whereas its consequences "
+        f"lambda={lambda_carrier}, q_E={q_e_carrier}, rho_E={rho_e_carrier} and centre "
+        f"T/E={c_te_carrier} are computed exactly, as is the degree-two rung giving "
+        f"lambda={F(9, 4)}, q_E={q_e_target}, rho_E={rho_e_target}, centre T/E={c_te_target}."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the six-arm projector weights enter only far "
+        "enough to form kappa and are never applied across the star, the carrier is evaluated at "
+        "three isolated backgrounds with no sum, average or extension over sites, and no volume or "
+        "limit appears; the remaining target the note names, a leg-level normalization primitive "
+        "outside the class-A carrier, is exactly what a lattice-wide claim here would have to assume."
+    )
+
     print("\n" + "=" * 84)
     print(f"PASS={PASS} FAIL={FAIL}")
     print(

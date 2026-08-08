@@ -322,6 +322,46 @@ def part5_quote_anchors() -> None:
     )
 
 
+def part6_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print("\nPART 6: N5 execution certificate")
+    print(
+        f"per_element: the finest resolution actually performed is basis-entry level -- all "
+        f"{len(T) * len(T)} Gell-Mann pairings Tr(T_a T_b) are evaluated and matched against "
+        f"delta_ab/2 within the named tolerance {TOL:g}, which is what licenses reading adjoint "
+        "coordinates entrywise; no individual matrix entry, norm or singular value is quoted in "
+        "this certificate, since those are floating-point decomposition outputs."
+    )
+    print(
+        "per_site: checked and not executed -- everything in this file lives on the fixed internal "
+        "color factor C^3 and its adjoint, where the indices are color labels and not lattice "
+        "sites; there is no star, no arm and no spatial coordinate anywhere in the runner, so no "
+        "site-resolved quantity exists for it to evaluate."
+    )
+    print(
+        "per_mode: genuinely resolved on the color channel content -- the 3 x 3bar product splits "
+        "as 1 + 8 = 9, the adjoint fraction is exactly F_adj = 8/9, and the isotropic adjoint "
+        f"block is confirmed to have rank 8 with a spectrum flat to within {TOL:g}, so no single "
+        "mode inside the adjoint is distinguished; that flatness is exactly why a channel count "
+        "cannot stand in for a ray."
+    )
+    print(
+        "per_block: the blocks here are the adjoint decomposition and the typed reachability graph "
+        "-- a supplied ray's line projector has rank 1 against a complement of rank 7 inside the "
+        "8-dimensional adjoint, giving the exact fraction 7/8, while the graph side sweeps "
+        f"{len(CURRENT_BANK_EDGES)} current-bank edges, {len(PHYSICAL_RAY_EDGES)} conditional ray "
+        "edges and one bridging primitive edge; the ranks are computed at a 1e-09 threshold and "
+        "the edge counts are inventory rather than amplitude."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the ad-invariant traceless subspace is found to "
+        "be zero-dimensional, so there is not even a global invariant direction inside the "
+        "internal factor to certify, and past that the file carries no lattice, no volume and no "
+        "limit; what it does assert is current-bank reachability, which is by construction a claim "
+        "about the present source bank and not about all possible sources."
+    )
+
+
 def main() -> int:
     print("Route-2 physical color-ray source primitive current-bank no-go")
     print("Scope: no current-source derivation; conditional ray consequence only")
@@ -330,6 +370,7 @@ def main() -> int:
     part3_fierz_count_not_line()
     part4_current_bank_reachability()
     part5_quote_anchors()
+    part6_n5_certificate()
 
     total = PASS_COUNT + FAIL_COUNT
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={total}")

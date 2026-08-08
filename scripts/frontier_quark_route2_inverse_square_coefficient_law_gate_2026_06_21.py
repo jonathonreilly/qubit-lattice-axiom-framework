@@ -178,6 +178,43 @@ def main() -> int:
         "`eta^2` inverse-square reading" in usable_text and "CKM CP-parameter bookkeeping" in usable_text,
     )
 
+    print("\nG. N5 execution certificate")
+    print("-" * 72)
+    print(
+        f"per_element: every monomial of the grammar is resolved on its own -- the term ratio "
+        f"x^p with x={x} is formed as an exact Fraction for each power in {poly_exps} and in "
+        f"{two_pole_exps}, and the two signed laws are then pinned by an exact two-point "
+        f"linear solve returning (a,b)=({a_rec},{b_rec}) and ({a_dir},{b_dir}); nothing here "
+        "is fitted numerically or sampled."
+    )
+    print(
+        "per_site: checked, and not executed here -- the weights w_A1=1/6, w_E=1/3 and w_T=1/2 "
+        "are O_h irrep projector weights, one per channel rather than one per lattice site, and "
+        "this gate consumes them as fixed rationals; the runner carries no site index at all, "
+        "so no site-resolved amplitude is ever formed or compared."
+    )
+    print(
+        "per_mode: fully exercised across the three O_h irrep channels -- A1, E and T1 each "
+        "carry their own weight, every grammar bound in this file is a statement about the E/T "
+        f"ratio between two of them, and A1 is used as an independent third mode that the "
+        f"signed fits are forced to predict, giving c(w_A1)={c_a1_rec} for the reciprocal fit "
+        f"and {c_a1_dir} for the affine fit."
+    )
+    print(
+        f"per_block: the coefficient grammars are bounded as separate blocks -- the nonnegative "
+        f"polynomial block tops out at {poly_max}, the one-pole block {one_pole_exps} tops out "
+        f"at {one_max}, the two-pole block {two_pole_exps} tops out at exactly {two_max} and "
+        "attains it only with both lower-order terms zeroed, and the signed block is solved "
+        "outright instead of bounded because its sign freedom removes the averaging argument."
+    )
+    print(
+        "lattice_wide: checked and not executed, by this runner's own construction -- both its "
+        "docstring and its verdict confine the pruning to the tested nonnegative coefficient "
+        "grammars and explicitly decline to rule out future nonlinear or denominator-bearing "
+        "observables, so asserting anything global at this granularity would overturn the "
+        "narrowness that makes the block a defensible no-go rather than reinforce it."
+    )
+
     print("\nSummary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

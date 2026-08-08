@@ -197,6 +197,42 @@ def main() -> int:
     check("current status is no-go for Record/log-det-alone derivation", True)
     check("conditional target is now precise: determinant quotient plus w-Hessian E-center bridge", True)
 
+    banner("N5 execution certificate")
+    print(
+        "per_element: two channel-level curvature coefficients are actually evaluated, and they "
+        f"are what the whole gate turns on -- the pure log barrier gives C_E={coeff_e} and "
+        f"C_T={coeff_t}, the epsilon={eps} counterterm shifts each by 2*epsilon to "
+        f"C_E={coeff_e_eps} and C_T={coeff_t_eps}, and every one of these is an exact Fraction "
+        "obtained from 1/w^2 rather than from any numerical differentiation."
+    )
+    print(
+        "per_site: checked and not executed, and the reason is specific to this file -- the note "
+        "places the channel weights on the seven-site O_h star, but the runner receives them "
+        f"already reduced to the two numbers w_E={w_e} and w_T1={w_t} and never indexes the "
+        "center or the six shell sites, so no site-resolved curvature or lift is computed here."
+    )
+    print(
+        "per_mode: real, and the only granularity at which this gate's arithmetic actually moves "
+        f"-- the E and T1 channel modes carry separate curvatures whose ratio is lambda={lambda_log} "
+        f"under the pure barrier and lambda={lambda_eps} once the additive counterterm is switched "
+        f"on, which drags the endpoint from rho_E={rho_e} to rho_E={rho_e_eps} and is exactly the "
+        "reason additivity alone cannot select the second-dual law."
+    )
+    print(
+        "per_block: executed literally, as record additivity over disjoint blocks -- the channel "
+        f"weight list is split into the supplied block ({', '.join(str(w) for w in a)}) and the "
+        f"disjoint block ({', '.join(str(w) for w in b)}), and the counterterm is confirmed additive "
+        f"across that split with both sides equal to {add_lhs}; that block-level additivity is "
+        "precisely what fails to pin the barrier, since the counterterm survives it untouched."
+    )
+    print(
+        "lattice_wide: not executed, and this certificate declines to imply otherwise -- the "
+        f"countermodel is exhibited at the two exact points epsilon={F(0)} and epsilon={eps} "
+        "rather than proved over the whole counterterm family, no sum or limit is taken over the "
+        "star or over any extended lattice, and the global rule that would settle the matter, a "
+        "determinant quotient excluding additive channel counterterms, is the note's own gap."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

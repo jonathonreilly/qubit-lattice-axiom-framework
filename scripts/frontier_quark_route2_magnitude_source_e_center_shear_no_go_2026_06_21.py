@@ -192,6 +192,48 @@ def part_f_note_hygiene() -> None:
     check("note records expected pass count", "TOTAL: PASS=51, FAIL=0" in note)
 
 
+def part_g_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print("\nG. N5 execution certificate")
+    print(
+        f"per_element: {len(WITNESSES)} shear witnesses are resolved one at a time, each "
+        f"contributing its own exact triple (q_E, rho_E, |c_TE|) -- "
+        + "; ".join(f"{w.q_e}, {w.rho_e}, {w.magnitude}" for w in WITNESSES)
+        + " -- every entry an exact Fraction compared against a literal expectation, so "
+        f"{3 * len(WITNESSES)} element-level rational equalities carry this part of the block."
+    )
+    print(
+        "per_site: executed, but only at the two star roles the algebra actually names -- q_E is "
+        f"the E-center over E-shell ratio, the shear moves the center while the shell "
+        f"normalization is held at {Fraction(1, 1)} inside the invariant signature, and that "
+        "center-moves/shell-fixed split is what makes the shear well posed; the six individual "
+        "shell sites are never indexed, and the live float read in part E is reported here by its "
+        "named tolerances 1.0e-12 and 0.01 rather than by any interpolated value."
+    )
+    print(
+        "per_mode: resolved as a genuine cross-channel quantity -- the magnitude under test is "
+        f"|c_TE| = |s_TE * q_T| / q_E with s_TE={S_TE} and q_T={Q_T}, so the fixed numerator "
+        f"{T_CENTER_OVER_E_SHELL} is a T-channel datum divided by an E-channel lift; the E and T1 "
+        "modes are never merged, and it is precisely because the T mode is granted and the E mode "
+        f"is not that the target {TARGET_MAGNITUDE} fails to be forced."
+    )
+    print(
+        "per_block: the shear orbit is what plays the role of a block here -- a base point plus "
+        "the three deltas 1/8, 7/8 and 1 gives four distinct q_E values and four distinct "
+        "magnitudes, while the invariant-data block (E-shell normalization, q_T, s_TE, F_adj) "
+        "stays a single element across every witness; the block therefore resolves an inventory "
+        "of orbit points and one collapsed signature, not any newly evaluated field amplitude."
+    )
+    print(
+        f"lattice_wide: checked and left unexecuted on purpose -- the one globally flavoured "
+        f"quantity in the file, the SU(3) color fraction F_adj={F_ADJ}, is carried as a constant "
+        "and asserted to be shear-invariant rather than recomputed from any channel count, "
+        "nothing is summed or limited over the star or over configurations, and the note itself "
+        "declines to be a no-go against every future magnitude theorem, so no global claim exists "
+        "here to certify."
+    )
+
+
 def main() -> int:
     part_a_authorities()
     part_b_shear_witnesses()
@@ -199,6 +241,7 @@ def main() -> int:
     part_d_rule_no_go()
     part_e_live_and_inputs()
     part_f_note_hygiene()
+    part_g_n5_certificate()
     print(f"\nTOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("Status: exact negative boundary for shear-invariant magnitude source rules.")
     return 0 if FAIL_COUNT == 0 else 1

@@ -242,6 +242,47 @@ def main() -> int:
     check("fan-out includes six independent non-color frames", len(fanout) == 6)
 
     print()
+    print("I. N5 execution certificate")
+    print("-" * 72)
+    print(
+        f"per_element: each exact readout witness is resolved on its own -- {len(witnesses)} "
+        "Readout records are built from their own rho_E and every one returns its own q_E, q_T "
+        f"and c_TE by exact Fraction arithmetic, the target giving q_E={target.q_e}, "
+        f"q_T={target.q_t} and c_TE={target.c_te}; no float, tolerance or fit enters any of them."
+    )
+    print(
+        "per_site: executed, and it is the pivot the whole firewall turns on -- the center and "
+        f"shell roles are held apart by the center-excess step delta_A1={target.delta_center}, and "
+        f"the blind signature on (E-shell, T-shell, T-center) is recomputed for all "
+        f"{len(witnesses)} witnesses and comes out identically "
+        f"({blind_signature[0]}, {blind_signature[1]}, {blind_signature[2]}), so only the E-center "
+        "column moves; the companion rank-3-versus-rank-4 statement is asserted from declared "
+        "constants rather than computed from the carrier matrix, and is recorded here as such."
+    )
+    print(
+        f"per_mode: resolved as a power fan-out on the two support weights -- w_E={w_e} and "
+        f"w_T1={w_t1} give the ratio {ratio}, whose powers evaluate to "
+        + ", ".join(f"p={p}: {value}" for p, value in sorted(powers.items()))
+        + "; p=-2 alone lands on the covariance target, and the E and T rows are kept as separate "
+        "quantities q_E and q_T throughout the endpoint algebra rather than averaged together."
+    )
+    print(
+        "per_block: two inventory blocks are swept and nothing beyond them -- the "
+        f"{len(atoms)}-atom non-color primitive inventory splits into {sum(atoms.values())} "
+        f"supplied support/comparator atoms and {len(atoms) - sum(atoms.values())} absent ones, "
+        f"and the {len(fanout)}-frame stuck fan-out records one failure reason per frame; both "
+        "resolve membership and counts only, with no field amplitude evaluated at block level."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the arithmetic sits on one fixed finite O_h "
+        "star carrying no size parameter, nothing is summed or extrapolated over volume, and the "
+        "single place an infinite-volume statement could enter is checked in the opposite "
+        "direction, namely that the measured-calibration surface still leaves exact "
+        "infinite-volume identification open; a lattice-wide certification here would assert "
+        "precisely the identification that surface withholds."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

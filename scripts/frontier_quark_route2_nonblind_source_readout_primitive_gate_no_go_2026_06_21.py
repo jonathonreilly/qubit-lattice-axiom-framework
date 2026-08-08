@@ -340,6 +340,54 @@ def part5_note_hygiene() -> None:
         check(f"companion note avoids overclaim: {label}", phrase not in text)
 
 
+def part6_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print()
+    print("PART 6: N5 execution certificate")
+    candidates = current_candidates()
+    gate_flags = 6 * len(candidates)
+    samples = [Fraction(-5, 1), Fraction(0, 1), Fraction(1, 1), TARGET_RHO_E, Fraction(7, 1)]
+    print(
+        "per_element: two different kinds of element live in this file and the certificate keeps "
+        f"them apart -- the endpoint algebra genuinely evaluates one exact rational per sample, "
+        f"q_E=1+rho_E/6 and c_TE=-5/(3 q_E) at rho_E in "
+        + "{" + ", ".join(str(r) for r in samples) + "}, "
+        + f"every value an exact Fraction; the candidate grid by contrast holds {gate_flags} "
+        f"hand-declared gate flags across {len(candidates)} rows, which are recorded "
+        "classifications rather than quantities this runner computes."
+    )
+    print(
+        "per_site: the center/shell split is the axis the whole gate is defined on -- q_E is "
+        f"gamma_E(center)/gamma_E(shell) and it is the center step delta_A1={DELTA_CENTER} that "
+        f"makes it differ from 1, which the arithmetic resolves exactly at every sample; the "
+        "per-candidate nonblindness column asking whether a surface distinguishes E-center from "
+        "E-shell is by contrast a declared judgement per row, and is certified only at that "
+        "strength here."
+    )
+    print(
+        f"per_mode: the E and T1 rows stay distinct at every step -- q_T={Q_T} is granted, "
+        f"s_TE=alpha_T/alpha_E={S_TE} carries the cross-channel scale, and c_TE=s_TE*q_T/q_E is a "
+        f"genuine E-against-T ratio rather than a single-channel number; separately the color "
+        f"channel count gives F_adj(N_c=3)={F_ADJ_NC3} and the runner does compute that -F_adj "
+        f"equals the target c_TE={TARGET_C_TE}, while still classifying that coincidence as an "
+        "untyped bridge and not a derivation."
+    )
+    print(
+        "per_block: what gets resolved at block granularity is inventory and nothing else -- "
+        f"{len(candidates)} candidate families are swept against six gate conditions with one "
+        "named defect string apiece and none clears, and ten named source files are swept for 29 "
+        "required markers; both sweeps resolve presence and counts, and no field amplitude is "
+        "evaluated for any block."
+    )
+    print(
+        "lattice_wide: checked and not executed, and executing it would breach this runner's own "
+        "premise list -- no lattice, volume or limit appears anywhere in the file, the one "
+        "candidate carrying volume information is the measured calibration which is admitted as "
+        "comparator only with exact infinite-volume identification left open, and A_min expressly "
+        "forbids treating that finite-box calibration as an infinite-volume theorem."
+    )
+
+
 def main() -> int:
     print("Route-2 nonblind source/readout primitive admissibility gate")
     print("Status: no-go over named current-bank candidate families; not an audit verdict.")
@@ -350,6 +398,7 @@ def main() -> int:
     part3_source_markers()
     part4_candidate_gate()
     part5_note_hygiene()
+    part6_n5_certificate()
     print()
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0:

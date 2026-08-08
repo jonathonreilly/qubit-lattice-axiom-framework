@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_measured_calibration_rescue_transform_firewall_2026_06_21.py
-runner_sha256: a274365e1a068ccee520d8e012bd91e0ce5f1df2488c7441eb06b9deb9cb4223
+runner_sha256: 7c432811b0a0ba4094fe36e2fd1eb6c2a70168505dcca11699f875460a29dead
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -70,6 +70,14 @@ PASS: fan-out route bulk_convex_average recorded -- fails: target values outside
 PASS: fan-out route bulk_covariance_ratio recorded -- fails: lambda tail stays above 9/4 or near 1 in proportional limit
 PASS: fan-out route N15_selection recorded -- forbidden: selects the anomalous finite box rather than deriving a primitive
 PASS: fan-out includes five post-scan rescue frames
+
+H. N5 execution certificate
+------------------------------------------------------------------------
+per_element: resolution here is one cached row per box -- 8 rows are parsed out of the stored box-size scan artifact, each supplying eight named columns, and the honest description is that these are read values from an upstream numerical scan rather than quantities this file computes, so the element-level facts asserted below are signs, counts and named-tolerance comparisons and never a restated float.
+per_site: checked and demonstrably not executed -- every parsed row does carry the site-resolved columns eta_e0, eta_s, gE_center, gE_shell, gT_center and gT_shell, yet nothing downstream ever reads them; sections C through E use only the two aggregated ratios q_T and q_E, so the center/shell structure is parsed and then discarded unused.
+per_mode: exercised throughout, because E and T1 are kept as separate columns at every box and are never averaged together -- the firewall is stated three times over, once on the q_E mode, once on the q_T mode and once on the cross-mode ratio lambda=q_E/q_T, and it is the joint failure of all three that closes the rescue route.
+per_block: the staircase is partitioned into named blocks -- the single anchor rung N=15, the 5-rung fixed-radius bulk block, the box-proportional stable tail formed by dropping the first of 4 entries, and the 5-route fan-out frame; each block is judged against its own named threshold, 0.002 and 0.00002 at the anchor, 0.25 for other-box proximity, and 0.90-1.06, 0.13 and 0.25 on the tails.
+lattice_wide: executed, and certified strictly as a finite-N statement -- the evidence is 8 boxes up to N=29 read from a stored upstream artifact, the convex-hull exclusions are hulls over 5 bulk rungs only, and no N-to-infinity limit, extrapolation or thermodynamic limit is performed anywhere in this file; the claim is correspondingly about the current scan surface, not about all volumes.
 
 Summary
 ------------------------------------------------------------------------

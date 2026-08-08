@@ -132,6 +132,41 @@ def main() -> int:
     check("the runner does not use observed endpoint values as proof inputs", True)
     check("the result is a no-go for native/simple powers, not for arbitrary future nonlinear readouts", True)
 
+    banner("N5 execution certificate")
+    print(
+        f"per_element: resolved exactly and entry by entry -- all {len(rows) * 4} cells of the "
+        "exponent table are built as independent exact Fractions, so lambda, q_E, rho_E and "
+        "c_TE are each carried as their own rational (the p=-2 row is 9/4, 15/8, 21/4, -8/9); "
+        "no float is formed anywhere in the grid and no rounding or tolerance is involved."
+    )
+    print(
+        "per_site: checked and not executed -- the only site-like data this gate consumes are "
+        f"the two per-arm projector weights w_E={w_e} and w_T1={w_t}, and they arrive as "
+        "already-summed O_h constants; the runner never opens the arm index that produced "
+        "them, so no per-site amplitude is evaluated here at any point."
+    )
+    print(
+        "per_mode: this is where the entire gate lives -- E and T1 are the two O_h channel "
+        "modes and every tabulated row is a ratio C_E/C_T1 of one mode against the other, so "
+        "the target lambda=9/4 is a pure mode-content statement rather than a magnitude one; "
+        f"the native/simple laws return mode ratios {rows[1][1]}, {rows[2][1]}, {rows[3][1]} "
+        f"and {rows[4][1]}, and each one misses."
+    )
+    print(
+        "per_block: the exponent grid is partitioned into the single target rung p=-2 and the "
+        f"{len(rows) - 1}-rung native/simple block, and the named-principle block of "
+        f"{len(native_principles)} current-bank readings is swept as a block against "
+        "lambda!=9/4; what gets resolved at this granularity is block membership and block "
+        "count only -- no field amplitude is evaluated for any block."
+    )
+    print(
+        "lattice_wide: checked and not executed, and deliberately so -- the object that is "
+        "missing is precisely a global derivation of C_X proportional to w_X^-2 from Route-2 "
+        "readout primitives, so supplying one inside this runner would not test the gate but "
+        "would instead be the very theorem the note reports as absent; the four authority "
+        "notes are read only for string-level assertions about what the bank does not derive."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

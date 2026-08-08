@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py
-runner_sha256: 860e24a915606bf04bcea7a8c81a27855aa687208b35003f14a8941846462443
+runner_sha256: 6d31b55ad5d5f2924d29314a49ae58e8a820ca463d8fa4be3e8f5c99751cd185
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -79,6 +79,15 @@ PART 5: Parent-surface anchors and scope guards
   [PASS] E-center blindness note requires a genuine E-center lift or equivalent primitive
   [PASS] Quadratic Schur note leaves future nonlinear observables explicitly open
   [PASS] Factor-rigidity note localizes ambiguity in the spatial readout prefactor
+
+==============================================================================
+PART 6: N5 execution certificate
+==============================================================================
+per_element: the carrier columns are resolved entry by entry, and the decisive fact is itself an entry-level one -- each blind generator carries affine rho_E coefficient 0 in both readout channels, while E-center alone carries the nonzero coefficient 1/6 in its E slot, and that single matrix entry is the only place rho_E is able to act at all.
+per_site: really executed, and by honest linear algebra rather than assertion -- the rank routine runs Gaussian elimination over exact Fractions and returns 4 for the full center-plus-shell carrier against 3 for the shell-only blind set, and the difference direction E-center minus E-shell = (0, 0, 1/6, 0) is confirmed to leave the blind span, so the center role is demonstrably the one this class cannot see.
+per_mode: the E and T readout channels stay separated at every single evaluation -- each image is a 2-vector whose first slot is the E channel and whose second is the T channel, and across every tested rho_E the T-side quantities stay frozen at q_T=5/6 and shell T/E=-2 while only the E-center slot moves, which is what makes the target c_TE=-8/9 a purely E-channel demand rather than a joint one.
+per_block: the tensor grammar is swept as graded blocks -- 6 scalar contraction pairs each yielding a dot and a determinant, 15 pure symmetric powers over degrees 1 to 5, 117 mixed tensor words over degrees 2 to 4, symmetric powers again at degrees 1 through 6, and six representative polynomial probes; every block collapses to one signature across 6 exact rho_E values, and these are computed tensor entries rather than counted inventory.
+lattice_wide: checked and not executed -- what looks spacetime-shaped here is a single outer product against one hand-chosen universal time vector (1, 2/3, 5/7, 11/13), which tests only that the readout ambiguity does not sit in the right/time factor and says nothing about extent; no volume, sum or limit appears anywhere, and part 5 records that the bank leaves arbitrary future nonlinear observables explicitly open.
 
 ==============================================================================
 TOTAL: PASS=31, FAIL=0

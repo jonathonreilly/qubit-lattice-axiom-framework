@@ -254,6 +254,45 @@ def part6_quote_anchors() -> None:
     )
 
 
+def part7_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print("\nPART 7: N5 execution certificate")
+    print(
+        "per_element: two element-level passes happen and they differ in kind -- the carrier "
+        "columns are compared entry against entry, E slots (0,2) against T slots (1,3), using the "
+        f"upstream tolerance EXACT_TOL={EXACT_TOL:g} on floating values, while part 2 evaluates a "
+        "shared monomial per degree in exact Fraction arithmetic; only the exact side is quoted "
+        "numerically here, because the carrier entries arrive as floats from an upstream module."
+    )
+    print(
+        "per_site: resolved at the shell and center endpoint columns, and the no-go leans directly "
+        "on that resolution -- the shell amplitude is 1 and the center lift is 1/6 for both "
+        "channels, so the center-versus-shell structure is fully present in the carrier yet "
+        "carries no channel information at all; no arm or coordinate below the two roles is opened."
+    )
+    print(
+        "per_mode: genuinely executed, and the answer it returns is degeneracy -- the E and T "
+        "columns come out identical up to channel relabeling, so a channel-blind grammar over this "
+        f"carrier gives lambda=1 at every shared degree, against the required {TARGET_LAMBDA}; the "
+        f"density factor {TARGET_DENSITY_FACTOR} that would break the tie is built in part 4 from "
+        f"w_E={W_E} and w_T={W_T}, which are external to the carrier."
+    )
+    print(
+        "per_block: three blocks are swept, all at inventory or count level -- shared polynomial "
+        "degrees 0 through 6 each returning lambda=1, five exact candidate rho_E values riding the "
+        f"same unchanged carrier columns, and a typed reachability graph of {len(CURRENT_EDGES)} "
+        f"current-carrier edges against {len(MISSING_DENSITY_EDGES)} missing-density edges; no "
+        "block evaluates a new field amplitude."
+    )
+    print(
+        "lattice_wide: checked and not executed, and running it would hand over the very thing "
+        "under dispute -- the channel weights encode star-wide projector content, they are "
+        "demonstrably absent from the carrier columns, and any lattice-wide statement here would "
+        "have to import that external channel-weight primitive, which is exactly the missing "
+        "premise this block exists to isolate; no volume, sum or limit appears in the file."
+    )
+
+
 def main() -> int:
     print("Route-2 polynomial-carrier density-normalization no-go")
     print("Scope: current class-A polynomial K_R carrier; source/readout primitives remain open")
@@ -263,6 +302,7 @@ def main() -> int:
     part4_density_normalization_requires_external_channel_weights()
     part5_typed_reachability()
     part6_quote_anchors()
+    part7_n5_certificate()
 
     total = PASS_COUNT + FAIL_COUNT
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={total}")

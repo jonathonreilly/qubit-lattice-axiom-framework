@@ -2,8 +2,6 @@
  "audit": "unset",
  "authority": "none",
  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review incl. hand-verified sector-contraction identity",
- "block": "toe-time-blockG3-20260802",
- "campaign": "toe-time-expansion-20260802",
  "certificates": {
   "logs/runner-cache/frontier_cycle872_admissibility_independent_check_2026_07_28.txt": {
    "fail": 0,
@@ -17,44 +15,51 @@
  "checker_teeth": {
   "adversary": {
    "detuned_ledger_features": 608,
+   "exit_path_drills_all_fire": true,
    "fabricated_claims_caught_fields": 6,
-   "planted_off_grammar_object_caught_on_landed": true
+   "planted_off_grammar_object_caught_on_stipulated_ledger": true
   },
   "claim_disagreements": 0,
-  "no_filter_wider_class_comparisons": 9069912
+  "escape_census_member_ledger_evaluations": 2736,
+  "linear_comparisons_exhaustive": 1838592,
+  "loaded_degree_witness_identified": true,
+  "quadratic_comparisons_on_declared_8_member_sample": 7230720,
+  "refuted": false
  },
  "claim_type": "bounded_theorem",
- "cluster_cap_evaluation": "OPEN \u2014 3rd gravity-family PR: new load-bearing content (generated-algebra classification, escape-dependence theorem, general-mechanism refinement) absent from #5923/#5926; independently reviewable; changes the campaign route map",
  "cycles": [
   872
  ],
  "files": {
   "docs/SIGMA_LINEAR_ADMISSIBILITY_CLASSIFICATION_CYCLE872_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "5f3e44324afbc9c67a98557f531ba65c9bd99757",
-   "sha256": "e6ab9e8451bdfcf10d7d66b4e704d69ab52906a93821d8965e3016d139d2e2aa"
+   "git_blob": "805dd615c628efd6952c7f33c4f9da76af4bc929",
+   "sha256": "e74b7fb9e5294d58938ec3cc005b8a6bcd18f72fdd59fdabde359c614e5a63d4"
   },
   "logs/runner-cache/frontier_cycle872_admissibility_independent_check_2026_07_28.txt": {
-   "git_blob": "86efcd102842fd1cc4744bd7e11228f18def555e",
-   "sha256": "4cdaa35c9a8a330f6f468ea40644d35b9277a5e93140193f00dd74ee5430a7b5"
+   "git_blob": "8dca18fe6bdf4be7a4c0e695ad7f48d9b6b6de51",
+   "sha256": "2ebdbcf848cfccd03b3eddb42d93d4f11b12d351555878efe07c78bed60cf7b1"
   },
   "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt": {
-   "git_blob": "ed9b54a9dbae1649eaacbd03525cc2eb9d529b42",
-   "sha256": "f0d8b6928c7661280627016950ae7f27228513ff8b690db555734b6eefa6896a"
+   "git_blob": "887b4833420482694fba0d7dd08dda0a94c0d1b1",
+   "sha256": "283f420df5c1260bc84d66b6ca891f6bdc174d343c42b5c1aff456ca93b9f96a"
   },
   "scripts/frontier_cycle872_admissibility_independent_check_2026_07_28.py": {
-   "git_blob": "a0cbc87e810b35d70c76fa997b604792391db6a0",
-   "sha256": "ade23ce51c66105bfcc83b8241c2e8a2f66a5252e1a99ff4f0082d536541f7b4"
+   "git_blob": "e702211c2a0820c3cdbef3dde38eb4df09016857",
+   "sha256": "2493e9fa98df1b39f84f1e18f1fe99cb8ad5307268f2edde6804586957893721"
   },
   "scripts/frontier_cycle872_sigma_linear_admissibility_2026_07_28.py": {
-   "git_blob": "a53d5e680d18b7e9bf1b9312e802454b16b3edb5",
-   "sha256": "04405075867204246e794775ac8c09a6498f0ca4367d305745fbdc7fdf338dcc"
+   "git_blob": "47f64932d5dcef3a89aba272e8a52d23aafb9820",
+   "sha256": "99627e29a949f0e9a9b999117d0ce80f7309df4fe0d630e0d4459f8363972d33"
   }
  },
- "headline": "344/384 admissible constructors, 470,592 landed pairs, 0 sigma-sensitive; the whole generated algebra is blind; escape (b) routes through escape (a) via sector_contract(G S) = sigma * trace(S); 868's six-object claims subsumed and its general mechanism refined",
- "independence": "cross-context (six integer sigma worlds + fifth finite difference vs polynomial route; no-filter wider class)",
+ "headline": "Exact support (bounded theorem): on the stipulated k<=2 / L=6 / d=1..6 surface with the traceless (-2d,+d,+d) ledger, all 470,592 (member, filtered-generator) pairs of the 344/384 covariance-filtered constructor grammar are blind to the grading sign, the blindness closes over the generated algebra, and the exhaustive loaded census finds 180 escape-shaped generators all reading sigma through the sector trace via sector_contract(G S) = sigma * trace(S); the grammar-exhaustiveness lemma and the object-lineage and physical-sign identifications are OPEN",
+ "independence": "cross-context (integer sigma-world route with measured finite-difference degrees vs rational polynomial route; no-filter wider linear class exhaustive; shared authoring model family)",
  "note": "docs/SIGMA_LINEAR_ADMISSIBILITY_CLASSIFICATION_CYCLE872_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "review_loop": {
+  "iteration_1": "FIX_THEN_PROCEED (Sol, 2026-08-08): wall/no-go demoted to exact support on the stipulated grammar with three open items (object lineage, physical-sign carrier, grammar exhaustiveness); escape census made exhaustive, correcting 162 -> 180; both runners' decisive gates made fail-closed against the submitted boundary and the checker's refutation predicate wired into the exit path with fabricated-counterevidence drills; Cycle-868 pins moved to the reviewed landed-on-main blobs and the unlanded 768/812 (plus provenance 320/322) removed from the input closures; 'admissible' split from the framework Admissibility axiom as a declared-filter working label; branch/campaign fields dropped from durable surfaces; checker degree claim now measured with an identified witness and the quadratic sweep disclosed as an 8-member sample"
+ },
  "runtime_seconds": {
-  "checker": 14.4,
-  "primary": 21.7
+  "checker": 63.6,
+  "primary": 31.0
  }
 }

@@ -1,35 +1,48 @@
 #!/usr/bin/env python3
-"""Cycle 872: admissibility classification of sigma-visible response objects.
+"""Cycle 872: exact-support classification of a stipulated response grammar.
 
-Cycle 868 censused SIX landed response objects over the complete landed source
-family and found every one of them blind to the conformal-sector sign sigma.
-It named two escape conditions, of which (b) was: a response object LINEAR in
-the endpoint exchange R -- not factoring through R*R -- and not a
-sector-orthogonal contraction.  Escape (b) was named, not classified.
+The reviewed Cycle-868 package proved, as exact algebraic support on its own
+stipulated surface, that its six stipulated response objects are blind to the
+sector-trace grading sign sigma, and named as a boundary of that support
+statement: a response object LINEAR in the endpoint exchange R -- not
+factoring through R*R and not a sector-orthogonal contraction -- escapes its
+structural sigma-evenness mechanism.  That boundary was named, not
+classified.
 
-This cycle classifies it exactly.  Over the identical declared scope of 868
-(same source family, same frozen recoil ledger, same grading), it declares a
-constructor GRAMMAR -- the landed constructors grading G_sigma, endpoint
-exchange R, linear combination, sector / endpoint / axis contraction and
-tensor square -- enumerates every object the grammar generates at source
-degree one and two, filters that class by the covariance constraints the 868
-lineage actually certifies (direction reversal, endpoint-exchange
-equivariance), and asks of every survivor whether it separates sigma=+1 from
-sigma=-1 on the landed family.
+This runner classifies it exactly INSIDE a stipulated constructor grammar.
+Over the identical stipulated scope (same source family, same stipulated
+traceless recoil ledger, same grading, all restated in-file), it declares a
+constructor GRAMMAR as data -- the grading G_sigma, the endpoint exchange R,
+rational linear combination, sector / endpoint / axis contraction and tensor
+square -- enumerates every object the grammar generates at source degree one
+and two, filters that class by two response-class covariance conditions
+DECLARED AS DATA in this file (direction-reversal parity; endpoint-exchange
+equivariance -- their well-posedness on the family is re-derived in-file, but
+the conditions themselves are stipulations, not consequences of any axiom),
+and asks of every survivor whether it separates sigma=+1 from sigma=-1 on the
+declared family.  The classification is exhaustive over all declared members
+under both declared conformally loaded probe ledgers; no sampled census
+stands in for a declared-family claim.
 
-Nothing here is asserted.  The lineage constraint set is re-derived and
-verified rather than quoted; the six landed 868 objects are re-derived and
-matched into the class so the class is demonstrably an extension and not a
-substitute; the escape-(b) shape is given an operational test and cross-tabbed
-against its syntactic description; and an off-grammar object that IS
-sigma-sensitive on the landed family is pushed through the identical pipeline
-to prove the classifier can return the opposite outcome.
+Everything is scoped: the result is exact support on the stipulated grammar
+only.  It does NOT establish that the grammar exhausts physically allowed
+response objects, does NOT identify sigma with the physical conformal-mode
+sign, and does NOT identify the stipulated objects with any unlanded response
+lineage; those are open bridges carried in the note.  The six Cycle-868
+stipulated objects are re-derived in-file and matched into the class so the
+class demonstrably contains them; the escape-shaped objects are given an
+operational test and cross-tabbed against their syntactic description; and an
+off-grammar object that IS sigma-sensitive on the declared family is pushed
+through the identical pipeline to prove the classifier can return the
+opposite outcome.  Every decisive certificate gates the exact submitted
+boundary and fails closed on any other outcome.
 
-All six cited primaries are SHA-pinned text/AST evidence behind a meta-path
-import firewall.  Arithmetic is exact: the source is pre-scaled by three so the
-conformal projector stays integral, and every object is carried as a univariate
-integer polynomial in the formal sigma.  No floating point enters any certified
-quantity.
+Both cited inputs (the reviewed Cycle-868 runner and its pinned stdout, at
+their blobs landed on origin/main) are SHA-pinned text/AST evidence behind a
+meta-path import firewall.  Arithmetic is exact: the source is pre-scaled by
+three so the conformal projector stays integral, and every object is carried
+as a univariate integer polynomial in the formal sigma.  No floating point
+enters any certified quantity.
 """
 from __future__ import annotations
 
@@ -38,10 +51,6 @@ STDOUT_LIMIT_BYTES = 150_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
     "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt",
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
-    "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
-    "scripts/frontier_cycle768_response_law_candidate_2026_07_28.py",
-    "scripts/frontier_cycle812_mixed_input_response_2026_07_28.py",
 )
 
 import ast
@@ -58,40 +67,26 @@ from time import monotonic
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON_PATHS = tuple(path for path in AUDIT_INPUT_PATHS if path.endswith(".py"))
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in PYTHON_PATHS)
+# Both pins are the blobs landed on origin/main after Cycle 868's review
+# fixes (iterations 1 and 2).  The formerly pinned Cycle-320/322/768/812
+# lineage is provenance-only, non-load-bearing context (the 768/812 stack is
+# unlanded on origin/main); it is NOT an input of this runner, and every
+# definition this classification depends on is stipulated in-file.
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
+        "dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a",
     AUDIT_INPUT_PATHS[1]:
-        "056b642e859e732d358be4632d4de8baa77b673704b1f5737bcd6ec566582d60",
-    AUDIT_INPUT_PATHS[2]:
-        "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
-    AUDIT_INPUT_PATHS[3]:
-        "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
-    AUDIT_INPUT_PATHS[4]:
-        "7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32",
-    AUDIT_INPUT_PATHS[5]:
-        "fe35718b8f5e84cfafed74026a5634e722da757782f04d536a756d7273d3ee9b",
+        "efb45439065ca7c92db20e29a1f261cfeaec71f96ae21d5774e617dfdc295c55",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
-    AUDIT_INPUT_PATHS[1]: "1cdd55ce35dd7116ab3d4f959b5e21f5299ff5ed",
-    AUDIT_INPUT_PATHS[2]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
-    AUDIT_INPUT_PATHS[3]: "de8b90b08707c000bb2489502823b02d62e38b29",
-    AUDIT_INPUT_PATHS[4]: "0070722d7a12d47658346b6c812edd05424ae592",
-    AUDIT_INPUT_PATHS[5]: "39b5f24595f2271704bf68197103b62824a14cbf",
+    AUDIT_INPUT_PATHS[0]: "c155a2dafaccde60c17047303c6de358445711c3",
+    AUDIT_INPUT_PATHS[1]: "38a0ecf77aaef1b37d1c9fcca49bbd74edd40796",
 }
 REQUIRED_AST_MARKERS = {
     AUDIT_INPUT_PATHS[0]: (
         "adjoint_pullback", "census_certificate", "grading_operator",
-        "landed_ledger", "response_objects", "verdict_certificate",
+        "response_objects", "stipulated_ledger", "verdict_certificate",
     ),
-    AUDIT_INPUT_PATHS[2]: ("ANGLE", "link_recoil_vertex"),
-    AUDIT_INPUT_PATHS[3]: ("ENDPOINTS", "LEFT", "RIGHT"),
-    AUDIT_INPUT_PATHS[4]: (
-        "derive_recoil_coefficients", "derive_response_kernel_candidate",
-        "derive_transfer_coefficients",
-    ),
-    AUDIT_INPUT_PATHS[5]: ("response_rows",),
 }
 
 
@@ -115,7 +110,27 @@ sys.meta_path.insert(0, FIREWALL)
 
 
 # --------------------------------------------------------------------------
-# the declared scope: identical to Cycle 868, restated here from the lineage
+# the exact submitted boundary: every decisive certificate gates these values,
+# so any other scientific outcome -- a sensitive pair, a non-constant
+# generator, a different census -- fails its certificate and exits nonzero.
+# --------------------------------------------------------------------------
+SUBMITTED_BOUNDARY = {
+    "family_member_count": 1368,
+    "generator_count": 384,
+    "covariance_filtered_count": 344,
+    "classified_pair_count": 1368 * 344,
+    "sensitive_pairs": 0,
+    "nonconstant_generators": 0,
+    "random_algebra_elements_sensitive": 0,
+    "escape_shaped_count": 180,
+    "escape_shaped_sensitive_pairs_on_declared_family": 0,
+    "max_sigma_degree_on_loaded_family": 4,
+    "verdict": "OUTCOME_B_CONSTRUCTOR_ALGEBRA_BLIND_ESCAPE_B_SHAPED_BUT_VOID",
+}
+
+# --------------------------------------------------------------------------
+# the declared scope: identical to the reviewed Cycle-868 stipulated surface,
+# restated in-file as stipulations (nothing below is read from another file)
 # --------------------------------------------------------------------------
 SECTORS = ("matter", "field", "auxiliary")
 SECTOR_COUNT = len(SECTORS)
@@ -135,8 +150,8 @@ INDEX_DIMENSION = {"e": ENDPOINT_COUNT, "s": SECTOR_COUNT, "a": AXES,
                    "b": AXES, "t": SECTOR_COUNT}
 
 
-def landed_ledger(weight: int) -> tuple[int, int, int]:
-    """The frozen Cycle-320 recoil ledger (-2d, +d, +d)."""
+def stipulated_ledger(weight: int) -> tuple[int, int, int]:
+    """The stipulated traceless recoil ledger (-2d, +d, +d), declared in-file."""
     return (-2 * weight, weight, weight)
 
 
@@ -244,7 +259,7 @@ def p_text(poly: Poly) -> str:
 
 
 # --------------------------------------------------------------------------
-# the landed source family (identical scope to 868, independent enumeration)
+# the declared source family (identical stipulated scope, independent enumeration)
 # --------------------------------------------------------------------------
 def enumerate_family() -> tuple[tuple, ...]:
     members: list[tuple] = []
@@ -268,7 +283,7 @@ def member_sources(member: tuple) -> tuple[tuple[int, int, int], ...]:
 
 
 def reverse_member(member: tuple) -> tuple:
-    """Reverse every carried direction through the landed reversal involution."""
+    """Reverse every carried direction through the stipulated reversal involution."""
     if member[0] == "k1":
         return ("k1", member[1], DIRECTION_REVERSE[member[2]], member[3])
     return ("k2", DIRECTION_REVERSE[member[1]], member[2],
@@ -282,7 +297,7 @@ def swap_member(member: tuple) -> tuple:
     return ("k2", member[3], member[4], member[1], member[2])
 
 
-def scaled_source(member: tuple, ledger=landed_ledger) -> tuple:
+def scaled_source(member: tuple, ledger=stipulated_ledger) -> tuple:
     """SCALE * S[endpoint][sector][axis] as exact integers."""
     grid = [[[0] * AXES for _sector in range(SECTOR_COUNT)]
             for _endpoint in range(ENDPOINT_COUNT)]
@@ -313,7 +328,7 @@ def lift(scaled: tuple) -> tuple:
 
 
 # --------------------------------------------------------------------------
-# the landed constructors
+# the stipulated constructors
 # --------------------------------------------------------------------------
 def grade(array: tuple, live: bool = True) -> tuple:
     """G_sigma = Pi_tracefree + sigma * Pi_conformal on the sector index.
@@ -507,7 +522,8 @@ PAIRINGS = (
 
 
 GRAMMAR = {
-    "state": "S[endpoint][sector][axis], the landed recoil source, pre-scaled by 3",
+    "state": "S[endpoint][sector][axis], the stipulated recoil source, "
+             "pre-scaled by 3",
     "generators": {
         "G_sigma": "grading: Pi_tracefree + sigma * Pi_conformal on the sector index",
         "R": "endpoint exchange, the LEFT/RIGHT reversal involution",
@@ -528,13 +544,23 @@ GRAMMAR = {
     "source_degree_bound": 2,
     "grade_power_bound": 2,
     "admissibility_constraints": (
-        "K1 direction-reversal covariance: reversing every carried direction "
-        "sends S to -S, so an admissible object must carry definite parity "
-        "(-1)^degree; degree-mixed combinations are inadmissible",
-        "K2 endpoint-exchange equivariance: exchanging the two endpoints of the "
-        "configuration sends S to R S, so an admissible object must satisfy "
-        "F(swap m) = eps * pi(F(m)) with eps in {+1,-1} fixed and pi the "
-        "reversal of the object's own surviving endpoint index",
+        "direction-reversal parity (working label K1): reversing every carried "
+        "direction sends S to -S, so a surviving object must carry definite "
+        "parity (-1)^degree; degree-mixed combinations are filtered out",
+        "endpoint-exchange equivariance (working label K2): exchanging the two "
+        "endpoints of the configuration sends S to R S, so a surviving object "
+        "must satisfy F(swap m) = eps * pi(F(m)) with eps in {+1,-1} fixed and "
+        "pi the reversal of the object's own surviving endpoint index",
+    ),
+    "label_convention": (
+        "every use of 'admissible'/'admissibility' in this runner's payload "
+        "keys and text abbreviates 'satisfying the two stipulated response-"
+        "class covariance filters above (direction-reversal parity; endpoint-"
+        "exchange equivariance), both DECLARED AS DATA in this file'. The term "
+        "is a working label of this package only: it does not invoke, is not "
+        "derived from, and asserts nothing about the framework Admissibility "
+        "axiom, and no theorem is claimed that these two filters characterize "
+        "physically permitted response objects"
     ),
 }
 
@@ -695,7 +721,7 @@ def grammar_certificate() -> dict[str, object]:
 
 
 # --------------------------------------------------------------------------
-# certificate B -- the constraint set, re-derived from the lineage
+# certificate B -- the stipulated covariance filters, shown well posed
 # --------------------------------------------------------------------------
 def lineage_certificate(members: tuple) -> dict[str, object]:
     reverse_involution = all(
@@ -741,31 +767,36 @@ def lineage_certificate(members: tuple) -> dict[str, object]:
     if apply_exchange(apply_exchange(probe)) != probe:
         exchange_is_involution = False
     result = {
-        "K1_direction_reversal": (
-            "the landed reversal permutation is a fixed-point-free involution "
-            "that negates every direction vector, and the source is linear in "
-            "the carried direction, so reversing a configuration sends S to -S"
+        "direction_reversal_parity_K1": (
+            "the stipulated reversal permutation is a fixed-point-free "
+            "involution that negates every direction vector, and the source is "
+            "linear in the carried direction, so reversing a configuration "
+            "sends S to -S; the parity FILTER built on this fact is a declared "
+            "response-class condition, not an axiom consequence"
         ),
         "reverse_is_involution": reverse_involution,
         "reverse_is_fixed_point_free": reverse_free,
         "reverse_negates_direction": reverse_negates,
         "reversal_negates_source_on_every_member": reversal_negates_source,
         "reversal_closes_the_family": reverse_closes_family,
-        "K2_endpoint_exchange": (
+        "endpoint_exchange_equivariance_K2": (
             "exchanging the two endpoints of a configuration acts on the source "
-            "exactly as the exchange operator R, and R is an involution"
+            "exactly as the exchange operator R, and R is an involution; the "
+            "equivariance FILTER built on this fact is a declared response-"
+            "class condition, not an axiom consequence"
         ),
         "swap_acts_as_exchange_on_every_member": swap_exchanges_source,
         "swap_closes_the_family": swap_closes_family,
         "exchange_is_involution": exchange_is_involution,
-        "landed_conformal_nonzero_members": conformal_zero_members,
+        "declared_family_conformal_nonzero_members": conformal_zero_members,
         "family_member_count": len(members),
         "symbolic_ledger_in_d": tuple(p_text(poly) for poly in symbolic),
         "symbolic_ledger_sector_sum": p_text(symbolic_sum),
         "symbolic_sector_sum_is_zero_polynomial": symbolic_sum == (),
         "finding": (
-            f"The two admissibility constraints are re-derived here rather than "
-            f"quoted. Reversing every carried direction negates the source on "
+            f"The two stipulated covariance filters are shown WELL POSED here "
+            f"(their content stays declared data). Reversing every carried "
+            f"direction negates the source on "
             + ("every one" if reversal_negates_source else "NOT every one")
             + f" of the {len(members)} family members, and the reversal keeps "
             f"the family closed, so parity under reversal is a well posed "
@@ -775,11 +806,11 @@ def lineage_certificate(members: tuple) -> dict[str, object]:
             + ", and the exchange squares to the identity, so equivariance is "
             f"well posed too. Carrying the weight as a formal indeterminate "
             f"makes the ledger's sector sum "
-            + ("the zero polynomial, so the conformal channel of a landed "
+            + ("the zero polynomial, so the conformal channel of a stipulated "
                "source vanishes at every weight and not merely the six swept"
                if symbolic_sum == () else
                f"the nonzero polynomial {p_text(symbolic_sum)}")
-            + f"; {conformal_zero_members} of {len(members)} landed members "
+            + f"; {conformal_zero_members} of {len(members)} declared members "
             f"carry a nonzero conformal channel."
         ),
     }
@@ -788,16 +819,21 @@ def lineage_certificate(members: tuple) -> dict[str, object]:
         and reversal_negates_source and swap_exchanges_source
         and reverse_closes_family and swap_closes_family
         and exchange_is_involution
-        and isinstance(symbolic_sum, tuple)
+        # decisive: the sector sum must BE the zero polynomial (the previous
+        # isinstance() gate was fail-open) and no declared member may carry a
+        # conformal channel -- both are load-bearing for the blindness claim
+        and symbolic_sum == ()
+        and conformal_zero_members == 0
+        and len(members) == SUBMITTED_BOUNDARY["family_member_count"]
     )
     return result
 
 
 # --------------------------------------------------------------------------
-# certificate C -- containment of the six landed Cycle-868 objects
+# certificate C -- containment of the six Cycle-868 stipulated objects
 # --------------------------------------------------------------------------
-def landed_868_objects(scaled: tuple) -> dict[str, tuple]:
-    """The six Cycle-868 response objects, re-derived from scratch here."""
+def cycle868_stipulated_objects(scaled: tuple) -> dict[str, tuple]:
+    """The six Cycle-868 stipulated response objects, re-derived in-file."""
     graded = grade(lift(scaled))
     pushed = apply_exchange(graded)
     pulled = grade(apply_exchange(apply_exchange(graded)))
@@ -854,11 +890,11 @@ def containment_certificate(members: tuple) -> dict[str, object]:
     for name, gid in sorted(CLAIMED_EMBEDDING.items()):
         matches = True
         for member in probe_members:
-            for ledger in (landed_ledger, detuned_ledger, pure_conformal_ledger):
+            for ledger in (stipulated_ledger, detuned_ledger, pure_conformal_ledger):
                 scaled = scaled_source(member, ledger)
-                landed = landed_868_objects(scaled)[name]
+                reference = cycle868_stipulated_objects(scaled)[name]
                 mine = class_readings(scaled)[gid][0]
-                if tuple(landed) != tuple(mine):
+                if tuple(reference) != tuple(mine):
                     matches = False
         all_match = all_match and matches
         rows.append({
@@ -870,19 +906,24 @@ def containment_certificate(members: tuple) -> dict[str, object]:
     result = {
         "embedding_rows": tuple(rows),
         "probe_member_count": len(probe_members),
-        "probe_ledgers": ("landed", "detuned_OFF_SCOPE", "pure_conformal_OFF_SCOPE"),
-        "all_six_landed_objects_are_class_members": all_match,
+        "probe_ledgers": ("stipulated", "detuned_OFF_SCOPE", "pure_conformal_OFF_SCOPE"),
+        "all_six_stipulated_868_objects_are_class_members": all_match,
         "finding": (
-            f"The six Cycle-868 response objects are re-derived from scratch "
-            f"here and matched component-for-component against named members of "
-            f"the declared class over {len(probe_members)} configurations under "
-            f"three ledgers including two off-scope conformally loaded ones. "
-            + ("All six reproduce exactly, so the class is a strict extension "
-               "of the 868 surface and any no-go proved over the class "
-               "subsumes the 868 result rather than replacing it."
+            f"The six response objects stipulated by the reviewed Cycle-868 "
+            f"package are re-derived in-file and matched component-for-"
+            f"component against named members of the declared class over "
+            f"{len(probe_members)} configurations under three ledgers "
+            f"including two off-scope conformally loaded ones. "
+            + ("All six reproduce exactly, so the stipulated class CONTAINS "
+               "the six stipulated objects and the classification proved over "
+               "the class applies to them at this stipulated scope. Nothing "
+               "more is inherited: the reviewed Cycle-868 result remains exact "
+               "support with its own open identifications, which this package "
+               "carries forward unchanged."
                if all_match else
                "At least one object FAILED to reproduce, so the class does not "
-               "contain the 868 surface and no subsumption may be claimed.")
+               "contain the six stipulated objects and no containment may be "
+               "claimed.")
         ),
     }
     result["pass"] = all_match and len(rows) == 6
@@ -890,7 +931,7 @@ def containment_certificate(members: tuple) -> dict[str, object]:
 
 
 # --------------------------------------------------------------------------
-# certificate D -- admissibility under the lineage constraints
+# certificate D -- the stipulated covariance filter (working label: admissible)
 # --------------------------------------------------------------------------
 def admissibility_certificate(members: tuple) -> tuple[tuple, dict[str, object]]:
     parity_ok = {gid: True for gid in GENERATOR_IDS}
@@ -962,8 +1003,9 @@ def admissibility_certificate(members: tuple) -> tuple[tuple, dict[str, object]]
         "admissible_digest": digest(tuple(gid_text(gid) for gid in admissible)),
         "finding": (
             f"Every one of the {len(GENERATOR_IDS)} generators was tested "
-            f"against both lineage constraints on all {len(members)} family "
-            f"members. {sum(1 for gid in GENERATOR_IDS if not parity_ok[gid])} "
+            f"against both stipulated covariance filters on all {len(members)} "
+            f"family members. "
+            f"{sum(1 for gid in GENERATOR_IDS if not parity_ok[gid])} "
             f"failed direction-reversal parity and "
             f"{sum(1 for gid in GENERATOR_IDS if not equivariance_sign[gid])} "
             f"failed endpoint-exchange equivariance, leaving "
@@ -981,14 +1023,19 @@ def admissibility_certificate(members: tuple) -> tuple[tuple, dict[str, object]]
         and all(
             equivariance_sign[gid] <= {1, -1} for gid in GENERATOR_IDS
         )
+        # decisive: the parity filter must demonstrably reject a degree-mixed
+        # object, and the filtered census must equal the submitted boundary
+        and mixed_rejected > 0
+        and len(GENERATOR_IDS) == SUBMITTED_BOUNDARY["generator_count"]
+        and len(admissible) == SUBMITTED_BOUNDARY["covariance_filtered_count"]
     )
     return admissible, result
 
 
 # --------------------------------------------------------------------------
-# certificate E -- the exhaustive classification on the landed family
+# certificate E -- the exhaustive classification on the declared family
 # --------------------------------------------------------------------------
-def classify(members: tuple, admissible: tuple, ledger=landed_ledger,
+def classify(members: tuple, admissible: tuple, ledger=stipulated_ledger,
              live: bool = True, grade_fn=None) -> dict[str, object]:
     sensitive_pairs = 0
     blind_pairs = 0
@@ -1039,7 +1086,7 @@ def classify(members: tuple, admissible: tuple, ledger=landed_ledger,
     }
 
 
-def landed_certificate(census: dict[str, object]) -> dict[str, object]:
+def declared_family_certificate(census: dict[str, object]) -> dict[str, object]:
     result = {
         **census,
         "test_definition": (
@@ -1060,16 +1107,16 @@ def landed_certificate(census: dict[str, object]) -> dict[str, object]:
             "degree and equality of two readings is invariant under it"
         ),
         "finding": (
-            f"Every admissible object in the class was evaluated on every "
-            f"member of the complete landed source family: "
+            f"Every covariance-filtered object in the class was evaluated on "
+            f"every member of the complete declared source family: "
             f"{census['pair_count']} exact (member, object) pairs. "
             f"{census['sensitive_pairs']} separate sigma=+1 from sigma=-1 and "
             f"{census['blind_pairs']} do not. The sigma-degree census over "
             f"those pairs is {compact(census['sigma_degree_census'])}, and "
             f"{census['nonconstant_generator_count']} generators carry any "
-            f"sigma dependence at all on the landed family. The two independent "
-            f"sensitivity tests -- evaluation at the two signs, and the odd "
-            f"part of the polynomial -- disagreed on "
+            f"sigma dependence at all on the declared family. The two "
+            f"independent sensitivity tests -- evaluation at the two signs, and "
+            f"the odd part of the polynomial -- disagreed on "
             f"{census['two_tests_disagreements']} pairs."
         ),
     }
@@ -1077,12 +1124,22 @@ def landed_certificate(census: dict[str, object]) -> dict[str, object]:
         result["partition_exact"]
         and result["cross_check_clean"]
         and census["pair_count"] == census["member_count"] * census["generator_count"]
+        # decisive: the submitted theorem outcome itself is gated -- any
+        # sensitive pair or non-constant reading fails this certificate
+        and census["sensitive_pairs"] == SUBMITTED_BOUNDARY["sensitive_pairs"]
+        and census["nonconstant_generator_count"]
+        == SUBMITTED_BOUNDARY["nonconstant_generators"]
+        and result["all_readings_constant_in_sigma"]
+        and census["member_count"] == SUBMITTED_BOUNDARY["family_member_count"]
+        and census["generator_count"]
+        == SUBMITTED_BOUNDARY["covariance_filtered_count"]
+        and census["pair_count"] == SUBMITTED_BOUNDARY["classified_pair_count"]
     )
     return result
 
 
 # --------------------------------------------------------------------------
-# certificate F -- closure of the wall to the generated algebra
+# certificate F -- closure of the blindness statement to the generated algebra
 # --------------------------------------------------------------------------
 def closure_certificate(members: tuple, admissible: tuple,
                         census: dict[str, object]) -> dict[str, object]:
@@ -1135,11 +1192,12 @@ def closure_certificate(members: tuple, admissible: tuple,
             element_sensitive += 1
     result = {
         "closure_claim": (
-            "on the landed family every admissible generator reads as a "
-            "sigma-CONSTANT, and constants are closed under rational linear "
-            "combination and product, so every element of the algebra the "
-            "grammar generates -- at any degree, not merely one and two -- is "
-            "sigma-constant and therefore blind"
+            "on the declared family every covariance-filtered generator reads "
+            "as a sigma-CONSTANT, and constants are closed under rational "
+            "linear combination and product, so every element of the algebra "
+            "the stipulated grammar generates -- at any degree, not merely one "
+            "and two -- is sigma-constant and therefore blind AT THIS "
+            "STIPULATED SCOPE"
         ),
         "hypothesis_all_generators_constant":
             census["nonconstant_generator_count"] == 0,
@@ -1154,16 +1212,17 @@ def closure_certificate(members: tuple, admissible: tuple,
         "component_base_width": len(component_index),
         "seed": 87_201,
         "finding": (
-            f"The wall is pushed from the generator list to the generated "
-            f"algebra. The hypothesis -- every admissible generator reads as a "
-            f"sigma-constant on the landed family -- is "
+            f"The blindness statement is pushed from the generator list to the "
+            f"generated algebra, still at the stipulated scope only. The "
+            f"hypothesis -- every covariance-filtered generator reads as a "
+            f"sigma-constant on the declared family -- is "
             + ("met" if census["nonconstant_generator_count"] == 0 else "NOT met")
             + f", and the ring operations were checked to preserve constancy on "
             f"{ring_tests} random cases. {element_count} random algebra "
             f"elements were then built from the {len(component_index)} scalar "
             f"components -- sums of up to four monomials of up to "
             f"{max_monomial_degree} factors each with random integer "
-            f"coefficients -- and evaluated on random landed members: "
+            f"coefficients -- and evaluated on random declared members: "
             f"{element_nonconstant} carried any sigma dependence and "
             f"{element_sensitive} separated the two signs."
         ),
@@ -1171,6 +1230,12 @@ def closure_certificate(members: tuple, admissible: tuple,
     result["pass"] = (
         ring_ok and graded_ring_ok and element_count == 500
         and len(component_index) > 0 and ring_tests == 400
+        # decisive: the closure hypothesis and both reported zero counts are
+        # gated -- a non-constant or sensitive algebra element fails here
+        and result["hypothesis_all_generators_constant"]
+        and element_nonconstant == 0
+        and element_sensitive
+        == SUBMITTED_BOUNDARY["random_algebra_elements_sensitive"]
     )
     return result
 
@@ -1185,17 +1250,39 @@ ESCAPE_PROBE_MEMBERS = (
 
 
 def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
+    # EXHAUSTIVE census (review fix): the escape-shaped class is decided over
+    # EVERY declared member under BOTH declared loaded probe ledgers, not over
+    # a probe sample.  The witness identity is likewise verified on every
+    # member under all three ledgers.
+    witness_gid = ("L", "id", 1, "sector")
     survives_M1 = set()
     max_loaded_degree = -1
-    for member in ESCAPE_PROBE_MEMBERS:
+    witness_matches_sigma_times_conformal = True
+    witness_fires_when_loaded = 0
+    witness_loaded_cases = 0
+    for member in members:
         for ledger in (detuned_ledger, pure_conformal_ledger):
-            readings = class_readings(scaled_source(member, ledger))
+            scaled = scaled_source(member, ledger)
+            readings = class_readings(scaled)
             for gid in admissible:
-                for poly in readings[gid][0]:
+                values = readings[gid][0]
+                for poly in values:
                     max_loaded_degree = max(max_loaded_degree, p_degree(poly))
-                if not all(p_odd_part_is_zero(poly)
-                           for poly in readings[gid][0]):
+                if not all(p_odd_part_is_zero(poly) for poly in values):
                     survives_M1.add(gid)
+            channel = conformal_channel(scaled)
+            values = readings[witness_gid][0]
+            expected = tuple(
+                p_shift(p_const(SECTOR_COUNT * channel[e][a]), 1)
+                for e in range(ENDPOINT_COUNT) for a in range(AXES)
+            )
+            if tuple(values) != expected:
+                witness_matches_sigma_times_conformal = False
+            if any(value for block in channel for value in block):
+                witness_loaded_cases += 1
+                if tuple(p_eval(poly, 1) for poly in values) != \
+                        tuple(p_eval(poly, -1) for poly in values):
+                    witness_fires_when_loaded += 1
     syntactic = {}
     for gid in admissible:
         if gid[0] == "L":
@@ -1209,8 +1296,9 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
     cross_tab = {}
     for gid in admissible:
         key = (
-            f"deg{syntactic[gid]['source_degree']}",
-            "G1" if syntactic[gid]["grade_power_one_only"] else "G2",
+            f"source_degree_{syntactic[gid]['source_degree']}",
+            ("grade_power_one_only" if syntactic[gid]["grade_power_one_only"]
+             else "touches_grade_power_two"),
             "odd" if gid in survives_M1 else "even",
         )
         cross_tab[key] = cross_tab.get(key, 0) + 1
@@ -1247,48 +1335,44 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
     mixed_grade_breaks_sector_contracting = tuple(
         label for label in sector_contracting if odd_mixed_grade[label] > 0
     )
-    # the exact obstruction: the sector contraction of the graded source
-    witness_gid = ("L", "id", 1, "sector")
-    witness_matches_sigma_times_conformal = True
-    witness_fires_when_loaded = 0
-    witness_loaded_cases = 0
-    for member in ESCAPE_PROBE_MEMBERS:
-        for ledger in (landed_ledger, detuned_ledger, pure_conformal_ledger):
-            scaled = scaled_source(member, ledger)
-            channel = conformal_channel(scaled)
-            values = class_readings(scaled)[witness_gid][0]
-            expected = tuple(
-                p_shift(p_const(SECTOR_COUNT * channel[e][a]), 1)
-                for e in range(ENDPOINT_COUNT) for a in range(AXES)
-            )
-            if tuple(values) != expected:
-                witness_matches_sigma_times_conformal = False
-            loaded = any(value for block in channel for value in block)
-            if loaded:
-                witness_loaded_cases += 1
-                if tuple(p_eval(poly, 1) for poly in values) != \
-                        tuple(p_eval(poly, -1) for poly in values):
-                    witness_fires_when_loaded += 1
-    escape_b_on_landed_sensitive = 0
+    # the decisive witness (a sufficient obstruction, NOT claimed unique):
+    # its identity was verified on every member under both loaded ledgers
+    # above; here it is verified on every member under the stipulated ledger,
+    # and the escape-shaped class is swept for sensitivity on the declared
+    # family -- both loops are exhaustive
+    escape_b_on_declared_sensitive = 0
     for member in members:
-        readings = class_readings(scaled_source(member))
+        scaled = scaled_source(member)
+        readings = class_readings(scaled)
+        channel = conformal_channel(scaled)
+        values = readings[witness_gid][0]
+        expected = tuple(
+            p_shift(p_const(SECTOR_COUNT * channel[e][a]), 1)
+            for e in range(ENDPOINT_COUNT) for a in range(AXES)
+        )
+        if tuple(values) != expected:
+            witness_matches_sigma_times_conformal = False
         for gid in survives_M1:
             values = readings[gid][0]
             if tuple(p_eval(poly, 1) for poly in values) != \
                     tuple(p_eval(poly, -1) for poly in values):
-                escape_b_on_landed_sensitive += 1
+                escape_b_on_declared_sensitive += 1
     result = {
         "escape_b_as_named_by_868": (
-            "a response object linear in the endpoint exchange R rather than "
-            "factoring through R*R, and not a sector-orthogonal contraction"
+            "the second named boundary of the reviewed Cycle-868 support "
+            "statement (its 'escape (b)'): a response object linear in the "
+            "endpoint exchange R rather than factoring through R*R, and not a "
+            "sector-orthogonal contraction"
         ),
         "operational_test": (
-            "an object has the escape-(b) shape exactly when it survives "
-            "mechanism M1, i.e. when its sigma polynomial has a nonvanishing "
-            "ODD part on an off-scope conformally loaded source; objects that "
-            "factor through R*R or contract sector-orthogonally are even in "
-            "sigma for every source and cannot have it"
+            "an object has the escape-(b) shape exactly when its sigma "
+            "polynomial has a nonvanishing ODD part on an off-scope "
+            "conformally loaded source, decided EXHAUSTIVELY over every "
+            "declared member under both declared loaded probe ledgers; "
+            "objects that factor through R*R or contract sector-orthogonally "
+            "are even in sigma for every source and cannot have it"
         ),
+        "escape_census_exhaustive": True,
         "escape_b_shaped_count": len(survives_M1),
         "escape_b_shaped_fraction_of_admissible":
             f"{len(survives_M1)}/{len(admissible)}",
@@ -1312,15 +1396,17 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
             free_sector_pairings_odd_at_equal_grade,
         "mixed_grade_power_breaks_sector_contracting":
             mixed_grade_breaks_sector_contracting,
-        "max_sigma_degree_on_loaded_probes": max_loaded_degree,
-        "escape_b_shaped_sensitive_pairs_on_landed_family":
-            escape_b_on_landed_sensitive,
+        "max_sigma_degree_on_loaded_family": max_loaded_degree,
+        "escape_b_shaped_sensitive_pairs_on_declared_family":
+            escape_b_on_declared_sensitive,
         "obstruction_witness": gid_text(witness_gid),
         "witness_identity": (
             "the sector contraction of the graded source equals the sector "
             "count times sigma times the source's sector trace -- i.e. it reads "
             "sigma multiplied into the conformal channel and nothing else, "
-            "exactly and componentwise"
+            "exactly and componentwise; it is a DECISIVE WITNESS (sufficient "
+            "for the only-if direction), with no uniqueness claimed -- other "
+            "sigma-odd elements exist and are counted above"
         ),
         "witness_identity_verified": witness_matches_sigma_times_conformal,
         "witness_loaded_cases": witness_loaded_cases,
@@ -1335,23 +1421,26 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
             "sigma-independent"
         ),
         "finding": (
-            f"Escape (b) is classified rather than left named. Of the "
-            f"{len(admissible)} admissible objects, {len(survives_M1)} have the "
-            f"escape-(b) shape: they survive mechanism M1 and carry a genuinely "
-            f"ODD sigma dependence on a conformally loaded source, so the shape "
-            f"is "
-            + ("realisable inside the landed constructor algebra"
+            f"The escape-(b) shape is classified rather than left named, "
+            f"exhaustively over every declared member under both declared "
+            f"loaded probe ledgers. Of the {len(admissible)} covariance-"
+            f"filtered objects, {len(survives_M1)} have the escape-(b) shape: "
+            f"they carry a genuinely ODD sigma dependence on a conformally "
+            f"loaded source, so the shape is "
+            + ("realisable inside the stipulated constructor algebra"
                if survives_M1 else
-               "NOT realisable inside the landed constructor algebra")
-            + f". On the landed family those same objects produced "
-            f"{escape_b_on_landed_sensitive} sign-sensitive pairs. The shape is "
-            f"not confined to objects linear in the source: the odd count by "
-            f"tensor-square pairing is {compact(odd_by_pairing)} out of "
-            f"{compact(total_by_pairing)}. Mechanism M1 as worded at 868 -- "
-            f"that any contraction quadratic in the graded source is even -- is "
-            + ("therefore too broad, and the classification separates the two "
-               "distinct ways it fails. First, pairings that leave the sector "
-               f"index free ({', '.join(free_sector_pairings_odd_at_equal_grade)}) "
+               "NOT realisable inside the stipulated constructor algebra")
+            + f". On the declared family those same objects produced "
+            f"{escape_b_on_declared_sensitive} sign-sensitive pairs. The shape "
+            f"is not confined to objects linear in the source: the odd count "
+            f"by tensor-square pairing is {compact(odd_by_pairing)} out of "
+            f"{compact(total_by_pairing)}. The reviewed Cycle-868 structural "
+            f"sigma-evenness mechanism, if read as a general claim that any "
+            f"contraction quadratic in the graded source is even, is "
+            + ("too broad for this wider stipulated grammar (its own six-"
+               "object statement is unaffected), in two separable ways. "
+               "First, pairings that leave the sector index free "
+               f"({', '.join(free_sector_pairings_odd_at_equal_grade)}) "
                "are already odd at equal grading power, so it is the "
                "sector-orthogonality of the contraction and not the quadratic "
                "degree that forces evenness. Second, the sector-contracting "
@@ -1363,22 +1452,26 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
                + (f"broken by mixing the two grading powers "
                   f"({', '.join(mixed_grade_breaks_sector_contracting)}), "
                   f"which admits sigma^3 terms -- the top sigma degree observed "
-                  f"on a loaded probe is {max_loaded_degree}, above the degree "
-                  f"bound 2 that 868 could assume for its six objects"
+                  f"on a loaded member is {max_loaded_degree}, above the degree "
+                  f"bound 2 that held for the six Cycle-868 objects"
                   if mixed_grade_breaks_sector_contracting else
                   "not broken by mixing the grading powers")
                if not m1_broad_statement_holds else
                "confirmed at full breadth here")
-            + f". The reason nothing fires is exact and is exhibited by a "
-            f"single algebra element: the sector contraction of the graded "
-            f"source reads sigma multiplied into the conformal channel "
+            + f". The reason nothing fires on the declared family is exact and "
+            f"is exhibited by a decisive witness element (sufficient, not "
+            f"unique): the sector contraction of the graded source reads sigma "
+            f"multiplied into the conformal channel "
             + ("identically" if witness_matches_sigma_times_conformal
                else "NOT identically")
             + f", and it fired on {witness_fires_when_loaded} of the "
-            f"{witness_loaded_cases} conformally loaded probes. So the two "
-            f"escapes 868 named are not independent: escape (b) supplies the "
-            f"shape but escape (a) supplies the load, and without a nonzero "
-            f"conformal channel every escape-(b)-shaped object multiplies zero."
+            f"{witness_loaded_cases} conformally loaded member evaluations. "
+            f"WITHIN THE STIPULATED GRAMMAR the two boundaries named by the "
+            f"reviewed Cycle-868 note are therefore not independent: the "
+            f"escape-(b) shape sees sigma only through a nonzero conformal "
+            f"channel, which is boundary (a). Whether physically relevant "
+            f"response objects lie inside this grammar is OPEN, so no "
+            f"statement about physical escape routes follows."
         ),
     }
     result["pass"] = (
@@ -1386,7 +1479,15 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
         and witness_loaded_cases > 0
         and witness_fires_when_loaded == witness_loaded_cases
         and sum(cross_tab.values()) == len(admissible)
-        and escape_b_on_landed_sensitive >= 0
+        # decisive: the exhaustive census must equal the submitted boundary,
+        # the shaped class must be nonempty, and declared-family sensitivity
+        # of the shaped class must be exactly the submitted zero
+        and len(survives_M1) == SUBMITTED_BOUNDARY["escape_shaped_count"]
+        and len(survives_M1) > 0
+        and escape_b_on_declared_sensitive
+        == SUBMITTED_BOUNDARY["escape_shaped_sensitive_pairs_on_declared_family"]
+        and max_loaded_degree
+        == SUBMITTED_BOUNDARY["max_sigma_degree_on_loaded_family"]
     )
     return result
 
@@ -1397,7 +1498,7 @@ def escape_certificate(members: tuple, admissible: tuple) -> dict[str, object]:
 PREREGISTERED_CONTROLS = {
     "P1_detuned_ledger": "CLASS_CONTAINS_SENSITIVE_OBJECTS",
     "P2_pure_conformal_ledger": "CLASS_CONTAINS_SENSITIVE_OBJECTS",
-    "P3_landed_ledger": "REPORTED_NOT_GATED",
+    "P3_stipulated_ledger": "REPORTED_NOT_GATED",
     "P4_adversary_disabled_grading": "CLASS_BLIND",
     "P5_planted_off_grammar_object": "CLASSIFIER_RETURNS_SENSITIVE_ON_LANDED",
 }
@@ -1407,11 +1508,11 @@ def calibration_certificate(admissible: tuple) -> dict[str, object]:
     probe = ESCAPE_PROBE_MEMBERS
     p1 = classify(probe, admissible, ledger=detuned_ledger)
     p2 = classify(probe, admissible, ledger=pure_conformal_ledger)
-    p3 = classify(probe, admissible, ledger=landed_ledger)
+    p3 = classify(probe, admissible, ledger=stipulated_ledger)
     p4 = classify(probe, admissible, ledger=detuned_ledger, live=False)
-    p5 = classify(probe, admissible, ledger=landed_ledger,
+    p5 = classify(probe, admissible, ledger=stipulated_ledger,
                   grade_fn=grade_tracefree_channel)
-    p5_full = classify(ESCAPE_PROBE_MEMBERS, admissible, ledger=landed_ledger,
+    p5_full = classify(ESCAPE_PROBE_MEMBERS, admissible, ledger=stipulated_ledger,
                        grade_fn=grade_tracefree_channel)
     p1_ok = p1["sensitive_pairs"] > 0
     p2_ok = p2["sensitive_pairs"] > 0
@@ -1424,7 +1525,7 @@ def calibration_certificate(admissible: tuple) -> dict[str, object]:
         "P1_detuned_sensitive_generators": p1["sensitive_generator_count"],
         "P2_pure_conformal_sensitive_pairs": p2["sensitive_pairs"],
         "P2_pure_conformal_sensitive_generators": p2["sensitive_generator_count"],
-        "P3_landed_sensitive_pairs": p3["sensitive_pairs"],
+        "P3_stipulated_ledger_sensitive_pairs": p3["sensitive_pairs"],
         "P4_disabled_grading_sensitive_pairs": p4["sensitive_pairs"],
         "P5_planted_object_sensitive_pairs": p5["sensitive_pairs"],
         "P5_planted_object_sensitive_generators": p5["sensitive_generator_count"],
@@ -1436,17 +1537,21 @@ def calibration_certificate(admissible: tuple) -> dict[str, object]:
         "calibration_scope_note": (
             "P1, P2, P4 and P5 are OFF-SCOPE. P1 and P2 detune the recoil "
             "ledger, P4 disables the sigma probe while changing nothing else, "
-            "and P5 replaces the lineage-fixed grading with an off-grammar one "
+            "and P5 replaces the stipulated grading with an off-grammar one "
             "that grades the TRACE-FREE channel instead. None is evidence about "
-            "the landed family; together they establish that a blind reading is "
-            "a property of the object class and not of a dead instrument."
+            "the declared family; together they establish that a blind reading "
+            "is a property of the object class and not of a dead instrument."
         ),
         "P5_description": (
-            "the planted object set is the identical admissible class run "
-            "through an off-grammar grading that carries sigma on the "
-            "trace-free channel, so it IS sigma-sensitive on the landed family; "
-            "it proves the classifier's sensitive branch is reachable through "
-            "the same code path that reports the landed result"
+            "the planted object set is the identical covariance-filtered "
+            "class run through an off-grammar grading that carries sigma on "
+            "the trace-free channel, so it IS sigma-sensitive on the declared "
+            "family under the stipulated ledger; it proves the classifier's "
+            "sensitive branch is reachable through the same code path that "
+            "reports the declared-family result. It is also a CONCRETE "
+            "outside-grammar object that sees sigma while the conformal "
+            "channel is zero, exhibiting why the classification cannot close "
+            "any physical escape route beyond the stipulated grammar"
         ),
         "finding": (
             f"Five pre-registered controls. Detuning the ledger made "
@@ -1459,11 +1564,15 @@ def calibration_certificate(admissible: tuple) -> dict[str, object]:
             f"nothing else -- returned {p4['sensitive_pairs']} sensitive pairs "
             f"even on the detuned source. The planted off-grammar object, "
             f"graded on the trace-free channel instead, returned "
-            f"{p5['sensitive_pairs']} sensitive pairs on the LANDED family, "
-            f"so the classifier demonstrably reports sensitivity through this "
-            f"exact code path when a sigma-visible object is present. The "
-            f"landed ledger itself returned {p3['sensitive_pairs']} sensitive "
-            f"pairs on the same probes; that number is reported, not gated."
+            f"{p5['sensitive_pairs']} sensitive pairs on the declared family "
+            f"under the stipulated ledger, so the classifier demonstrably "
+            f"reports sensitivity through this exact code path when a "
+            f"sigma-visible object is present -- and that planted object lies "
+            f"OUTSIDE the stipulated grammar, marking the open exhaustiveness "
+            f"boundary. The stipulated ledger itself returned "
+            f"{p3['sensitive_pairs']} sensitive pairs on the same probes; that "
+            f"number is reported here and gated in the declared-family "
+            f"certificate."
         ),
     }
     result["pass"] = p1_ok and p2_ok and p4_ok and p5_ok
@@ -1473,10 +1582,10 @@ def calibration_certificate(admissible: tuple) -> dict[str, object]:
 # --------------------------------------------------------------------------
 # certificate I -- the verdict, produced by a stated total function
 # --------------------------------------------------------------------------
-def verdict_certificate(landed: dict[str, object], closure: dict[str, object],
+def verdict_certificate(declared: dict[str, object], closure: dict[str, object],
                         escape: dict[str, object]) -> dict[str, object]:
-    sensitive = landed["sensitive_pairs"]
-    constant = landed["nonconstant_generator_count"] == 0
+    sensitive = declared["sensitive_pairs"]
+    constant = declared["nonconstant_generator_count"] == 0
     algebra_clean = closure["random_elements_sigma_sensitive"] == 0
     escape_shaped = escape["escape_b_shaped_count"]
     if sensitive > 0:
@@ -1492,7 +1601,10 @@ def verdict_certificate(landed: dict[str, object], closure: dict[str, object],
             "sensitive_pairs>0 -> OUTCOME_A; else if any generator or random "
             "algebra element is non-constant in sigma -> OUTCOME_C; else if "
             "escape-(b)-shaped objects exist -> OUTCOME_B (shaped but void); "
-            "else OUTCOME_B (shape unrealisable)"
+            "else OUTCOME_B (shape unrealisable). ONLY the submitted outcome "
+            "-- OUTCOME_B shaped-but-void with the submitted counts -- passes "
+            "this certificate; every alternative outcome is emitted as a "
+            "non-PASS diagnostic and drives a nonzero exit"
         ),
         "sensitive_pairs": sensitive,
         "all_generators_constant_in_sigma": constant,
@@ -1501,73 +1613,87 @@ def verdict_certificate(landed: dict[str, object], closure: dict[str, object],
         "escape_b_shaped_count": escape_shaped,
         "verdict": verdict,
         "classification_boundary": (
-            "CERTIFIED: the algebra generated by the landed constructors "
-            "-- grading G_sigma at powers one and two, the endpoint exchange R, "
-            "rational linear combination, contraction over any subset of the "
-            "endpoint / sector / axis indices, and the tensor square with the "
-            "five declared pairings -- acting on the landed k<=2 source family "
-            "with the frozen (-2d,+d,+d) ledger on the two-endpoint held L=6 "
-            "surface, closed under sums and products at arbitrary degree. "
+            "CERTIFIED (as exact support on stipulated data): the algebra "
+            "generated by the stipulated constructors -- grading G_sigma at "
+            "powers one and two, the endpoint exchange R, rational linear "
+            "combination, contraction over any subset of the endpoint / sector "
+            "/ axis indices, and the tensor square with the five declared "
+            "pairings -- acting on the declared k<=2 source family with the "
+            "stipulated traceless (-2d,+d,+d) ledger on the two-endpoint held "
+            "L=6 surface (weight ladder d=1..6 an explicit scope input), "
+            "filtered by the two declared covariance conditions, closed under "
+            "sums and products at arbitrary degree. "
             "NOT CERTIFIED and outside the boundary: constructions that change "
             "the ledger so a source acquires a nonzero sector trace; "
             "constructions that admit sigma itself as a scalar coefficient "
             "rather than reading it through the grading; gradings that put "
             "sigma on a channel other than the conformal one; non-polynomial "
             "objects such as ratios, norms with roots or thresholded readings; "
-            "and any object reading data outside S, R and G_sigma"
+            "any object reading data outside S, R and G_sigma; ANY claim that "
+            "this grammar exhausts physically allowed response objects; and "
+            "ANY identification of sigma with the physical conformal-mode sign "
+            "or of these objects with an unlanded response lineage"
         ),
         "relation_to_cycle868": (
-            "868 proved the SIX landed objects blind and named two escapes as "
-            "though independent. This cycle proves the whole landed constructor "
-            "algebra blind, contains those six objects inside it, and collapses "
-            "the two escapes into one: escape (b) contributes only the shape, "
-            "and no object of that shape can see the sign while the conformal "
-            "channel vanishes, which is escape (a)"
+            "the reviewed Cycle-868 package proved its six stipulated objects "
+            "blind as exact support and named two boundaries of that support "
+            "statement. This cycle re-derives those six objects in-file, shows "
+            "the stipulated constructor algebra contains them, extends the "
+            "blindness to that whole algebra at the same stipulated scope, and "
+            "shows that WITHIN THIS GRAMMAR the second named boundary sees "
+            "sigma only through the first (a nonzero conformal channel). The "
+            "reviewed Cycle-868 open identifications are inherited unchanged, "
+            "and no physical escape-route statement follows"
         ),
         "what_is_not_claimed": (
-            "no statement about the VALUE of the conformal sign, about lanes "
-            "outside this scope, or about objects outside the declared "
-            "constructor algebra"
+            "no statement about the VALUE of the conformal sign; no statement "
+            "about lanes outside this scope; no statement about objects "
+            "outside the stipulated constructor grammar (the planted control "
+            "exhibits such an object seeing sigma with the conformal channel "
+            "zero); no claim that the grammar exhausts physically allowed "
+            "response objects (a target-equivalent open lemma); no "
+            "identification of sigma with the physical conformal-mode sign; no "
+            "identification with the unlanded Cycle-749/768/812 lineage"
         ),
         "finding": (
-            f"No admissible object in the landed constructor algebra separates "
-            f"sigma=+1 from sigma=-1 on any member of the complete landed "
-            f"source family: {landed['pair_count']} exact pairs, "
-            f"{sensitive} sensitive. Every generator reads as a sigma-constant "
-            f"there, and constants are closed under the algebra's own "
-            f"operations, so the blindness extends to every sum and product at "
-            f"any degree rather than stopping at the enumerated generators. "
-            f"{escape_shaped} objects do carry the escape-(b) shape and would "
-            f"see the sign the moment a source carried a conformal channel, so "
-            f"the shape is real and the obstruction is arithmetic: the frozen "
-            f"recoil ledger annihilates the only channel sigma touches. This "
-            f"hardens the 868 wall from six objects to the constructor algebra "
-            f"and reduces the two named escapes to one -- the sign datum is "
-            f"reachable only by giving the source a nonzero sector trace."
+            f"No covariance-filtered object in the stipulated constructor "
+            f"algebra separates sigma=+1 from sigma=-1 on any member of the "
+            f"complete declared source family: {declared['pair_count']} exact "
+            f"pairs, {sensitive} sensitive. Every generator reads as a "
+            f"sigma-constant there, and constants are closed under the "
+            f"algebra's own operations, so the blindness extends to every sum "
+            f"and product at any degree rather than stopping at the enumerated "
+            f"generators. {escape_shaped} objects do carry the escape-(b) "
+            f"shape and would see the sign the moment a source carried a "
+            f"conformal channel, so the shape is real and the obstruction is "
+            f"arithmetic: the stipulated recoil ledger annihilates the only "
+            f"channel sigma touches INSIDE THIS GRAMMAR. All of this is exact "
+            f"support on the stipulated surface; the grammar-exhaustiveness "
+            f"lemma and both physical identifications remain open, so no "
+            f"physical escape route is closed."
         ) if verdict.startswith("OUTCOME_B") else (
             f"The classification found {sensitive} sign-sensitive pairs inside "
-            f"the admissible class on the landed family. A lawful sigma-visible "
-            f"response object exists at the declared scope; the sensitive "
-            f"objects are recorded in the landed classification certificate and "
-            f"open a derivation route to the sign datum."
+            f"the covariance-filtered class on the declared family. A "
+            f"sigma-visible object exists at the stipulated scope; the "
+            f"sensitive objects are recorded in the declared-family "
+            f"certificate. This is NOT the submitted outcome; the run fails."
         ) if sensitive > 0 else (
-            f"The classification is incomplete: the landed family produced no "
-            f"sensitive pair, but "
+            f"The classification is incomplete: the declared family produced "
+            f"no sensitive pair, but "
             f"{closure['random_elements_sigma_sensitive']} random algebra "
-            f"elements or non-constant generators remain, so the closure to the "
-            f"generated algebra is not established and no algebra-level no-go "
-            f"may be claimed."
+            f"elements or non-constant generators remain, so the closure to "
+            f"the generated algebra is not established. This is NOT the "
+            f"submitted outcome; the run fails."
         ),
     }
+    # decisive: only the exact submitted boundary passes -- a refutation, an
+    # incomplete classification, or a count drift all exit nonzero
     result["pass"] = (
-        verdict in {
-            "OUTCOME_A_LAWFUL_SIGMA_VISIBLE_OBJECT_EXISTS",
-            "OUTCOME_B_CONSTRUCTOR_ALGEBRA_BLIND_ESCAPE_B_SHAPED_BUT_VOID",
-            "OUTCOME_B_CONSTRUCTOR_ALGEBRA_BLIND_ESCAPE_B_UNREALISABLE",
-            "OUTCOME_C_CLASSIFICATION_INCOMPLETE",
-        }
-        and isinstance(sensitive, int) and sensitive >= 0
-        and isinstance(escape_shaped, int) and escape_shaped >= 0
+        verdict == SUBMITTED_BOUNDARY["verdict"]
+        and sensitive == SUBMITTED_BOUNDARY["sensitive_pairs"]
+        and constant
+        and algebra_clean
+        and escape_shaped == SUBMITTED_BOUNDARY["escape_shaped_count"]
     )
     return result
 
@@ -1614,7 +1740,7 @@ def source_controls() -> dict[str, object]:
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "literal_path_count": len(AUDIT_INPUT_PATHS),
-        "read_cap": 6,
+        "read_cap": 2,
         "source_rows": tuple(rows),
         "all_markers_present": markers_ok,
         "BLOCKLIST": BLOCKLISTED_MODULES,
@@ -1625,7 +1751,7 @@ def source_controls() -> dict[str, object]:
         "executable_science_inputs": (),
     }
     result["sources_pass"] = (
-        len(rows) <= 6
+        len(rows) <= 2
         and all(row["exists_worktree_relative"] and row["sha256_exact"]
                 and row["git_blob_exact"] and row["required_markers_present"]
                 for row in rows)
@@ -1644,7 +1770,7 @@ LABELS = (
     "B_LINEAGE_CONSTRAINTS",
     "C_CONTAINMENT_OF_868",
     "D_ADMISSIBILITY",
-    "E_LANDED_CLASSIFICATION",
+    "E_DECLARED_FAMILY_CLASSIFICATION",
     "F_ALGEBRA_CLOSURE",
     "G_ESCAPE_B",
     "H_CALIBRATION",
@@ -1666,9 +1792,10 @@ def render_fixed_point(certificates: dict[str, dict[str, object]]) -> str:
             "verdict": certificates["I_VERDICT"]["verdict"],
             "generators_declared": certificates["A_GRAMMAR"]["generator_count"],
             "generators_admissible": certificates["D_ADMISSIBILITY"]["admissible_count"],
-            "pairs_classified": certificates["E_LANDED_CLASSIFICATION"]["pair_count"],
+            "pairs_classified":
+                certificates["E_DECLARED_FAMILY_CLASSIFICATION"]["pair_count"],
             "sigma_sensitive_pairs":
-                certificates["E_LANDED_CLASSIFICATION"]["sensitive_pairs"],
+                certificates["E_DECLARED_FAMILY_CLASSIFICATION"]["sensitive_pairs"],
             "escape_b_shaped_objects":
                 certificates["G_ESCAPE_B"]["escape_b_shaped_count"],
             "random_algebra_elements_sensitive":
@@ -1705,11 +1832,11 @@ def run() -> int:
     containment = containment_certificate(members)
     admissible, admissibility = admissibility_certificate(members)
     census = classify(members, admissible)
-    landed = landed_certificate(census)
+    declared = declared_family_certificate(census)
     closure = closure_certificate(members, admissible, census)
     escape = escape_certificate(members, admissible)
     calibration = calibration_certificate(admissible)
-    verdict = verdict_certificate(landed, closure, escape)
+    verdict = verdict_certificate(declared, closure, escape)
 
     replay_members = enumerate_family()
     replay_census = classify(replay_members, admissible)
@@ -1752,13 +1879,16 @@ def run() -> int:
         ),
         "firewall_hits_after_science": tuple(FIREWALL.hits),
         "finding": (
-            "All six cited inputs are literal worktree-relative paths matching "
-            "their pinned SHA-256 and git blob hashes, carrying their required "
-            "AST markers where applicable, consumed as text or AST only behind "
-            "an import firewall that was never tripped. The whole "
-            "classification and the seeded algebra sweep were recomputed from "
-            "scratch and reproduced digest-for-digest, and both the runtime and "
-            "stdout caps were respected."
+            "Both cited inputs -- the reviewed Cycle-868 runner and its pinned "
+            "stdout, pinned at the blobs landed on origin/main after that "
+            "package's review fixes -- are literal worktree-relative paths "
+            "matching their pinned SHA-256 and git blob hashes, carrying their "
+            "required AST markers, consumed as text or AST only behind an "
+            "import firewall that was never tripped. The formerly cited "
+            "Cycle-320/322/768/812 lineage is provenance-only and is no longer "
+            "an input. The whole classification and the seeded algebra sweep "
+            "were recomputed from scratch and reproduced digest-for-digest, "
+            "and both the runtime and stdout caps were respected."
         ),
     }
     controls["base_pass"] = (
@@ -1774,7 +1904,7 @@ def run() -> int:
         "B_LINEAGE_CONSTRAINTS": lineage,
         "C_CONTAINMENT_OF_868": containment,
         "D_ADMISSIBILITY": admissibility,
-        "E_LANDED_CLASSIFICATION": landed,
+        "E_DECLARED_FAMILY_CLASSIFICATION": declared,
         "F_ALGEBRA_CLOSURE": closure,
         "G_ESCAPE_B": escape,
         "H_CALIBRATION": calibration,

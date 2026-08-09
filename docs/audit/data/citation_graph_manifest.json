@@ -1,6 +1,6 @@
 {
- "edge_count": 15467,
- "node_count": 4653,
+ "edge_count": 15469,
+ "node_count": 4654,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1228,6 +1228,10 @@
   },
   "baryon_charge_integrality_note_2026-05-02": {
    "deps_hash": "5bb6cdbbaa36",
+   "out_degree": 2
+  },
+  "baxis_second_leg_certificate_cycle875_support_note_2026-07-28": {
+   "deps_hash": "e1fc63705e2d",
    "out_degree": 2
   },
   "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28": {

@@ -1,6 +1,6 @@
 {
  "edge_count": 15469,
- "node_count": 5439,
+ "node_count": 5440,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18913,6 +18913,10 @@
   "weak_field_optical_metric_ansatz_diagnostic_bounded_theorem_note_2026-06-09": {
    "deps_hash": "83ad60d045c1",
    "out_degree": 4
+  },
+  "weighting_exact_algebra_cycle905_support_note_2026-08-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "wep_source_reduction_finite_spacing_boundary_scaling_window_bounded_note_2026-07-08": {
    "deps_hash": "647d31982eb9",

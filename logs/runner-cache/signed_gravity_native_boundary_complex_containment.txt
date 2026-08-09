@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_native_boundary_complex_containment.py
-runner_sha256: 5a4557494271d8701d31de38f40792b5f5670337437058102aad24712923217a
+runner_sha256: 3c03427944f7f04541980fac2bc24499e95eb4e1e13ce9ae343f92825a5c9aca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ====================================================================================================================
@@ -11,22 +11,11 @@ SIGNED GRAVITY NATIVE BOUNDARY-COMPLEX CONTAINMENT AUDIT
   raw retained cochain/Hodge complex versus added orientation-line APS source character
 ====================================================================================================================
 
-[PASS] raw retained cochain/Hodge boundary complex is eta-neutral  (cycle8:eta=+0,zero=2,chi=+0,pair=9.7e-16; cycle12:eta=+0,zero=2,chi=+0,pair=2.7e-15; ladder6:eta=+0,zero=2,chi=+0,pair=2.1e-15; grid4x4_disk:eta=+0,zero=1,chi=+0,pair=3.1e-15; annulus7:eta=+0,zero=2,chi=+0,pair=3.6e-15)
+[PASS] raw retained cochain/Hodge boundary complex is eta-neutral  (cycle8:eta=+0,zero=2,chi=+0,pair=1.8e-15; cycle12:eta=+0,zero=2,chi=+0,pair=2.0e-15; ladder6:eta=+0,zero=2,chi=+0,pair=3.1e-15; grid4x4_disk:eta=+0,zero=1,chi=+0,pair=3.1e-15; annulus7:eta=+0,zero=2,chi=+0,pair=2.2e-15)
 [PASS] orientation reversal is a relabeling/control for raw eta  (eta=[0, 0, 0], chi=[0, 0, 0], edge_reversal_spectral_err=0.0e+00, face_reversal_spectral_err=0.0e+00)
 [PASS] APS sign appears only after orientation-line extension and kernel quarantine  (raw_zero_modes=2, kernel_projected=True, added_orientation_line_dim=1, extended=[(1, 1, 0, 1), (-1, -1, 0, -1)])
 [PASS] native raw boundary source basis cannot contain the signed source character  (native_basis_residual=1.414e+00, fitted=[-0. -0.], orientation_metadata_residual=0.0e+00, source_term_added=False)
 [PASS] non-claim and added-structure classification is explicit  (native_aps_line_contained=False, orientation_line_added=True, kernel_quarantine_added=True, physical_signed_gravity_prediction=False, negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False)
-
-====================================================================================================================
-N5 execution certificate (print-only; adds no check and no counter)
-====================================================================================================================
-per_element: resolved as exact incidence entries -- d0 is written one oriented row per edge carrying -1 in the tail-vertex column and +1 in the head-vertex column, and d1 is filled face by face by walking each oriented face cycle and adding +1 where the traversed pair matches a stored edge or -1 where it matches that edge reversed. Every entry of D_Y is therefore an exact integer, 0 or plus/minus 1, placed by an explicit incidence rule, and a face edge absent from the edge list raises rather than being silently zero-filled.
-per_site: constructed vertex by vertex yet never decided there, and reported as exactly that -- each complex enumerates its 0-cells explicitly, the 4x4 grid disk indexing them as y*nx + x, and every vertex takes its own column in d0 and its own +1 entry in the parity grading. No per-vertex amplitude, residual, or verdict is formed anywhere in the file: all five gates decide on spectrum-level counts over the assembled operator (dimensions cycle8=16, cycle12=24, ladder6=36, grid4x4_disk=49, annulus7=42), so this runner resolves site structure without resolving any site quantity.
-per_mode: resolved one eigenvalue at a time -- eta_delta takes the full eigenvalue list of the symmetrized D_Y and sorts each entry into positive, negative, or zero against the fixed window delta = 1e-8; the pairing test compares the sorted spectrum against its own reversal so each eigenvalue must find a partner of opposite sign; and the extension gate discards the kernel entirely and rebuilds a diagonal operator from the surviving nonzero eigenvalues plus one added entry at +0.35 or -0.35. Nothing is aggregated below the level of a single mode.
-per_block: resolved as the three-term cochain grading -- D_Y is assembled by np.block into a 3x3 arrangement over C^0, C^1 and C^2 whose diagonal blocks are identically zero and whose off-diagonal blocks are exactly d0, d0^T, d1 and d1^T, while the parity operator is constant on each block at +1, -1, +1. The decisive step is a block fact: Gamma anticommutes with D_Y because D_Y carries each grading block only into its neighbours, and that anticommutator is measured on every family against TOL = 1e-10.
-lattice_wide: resolved as a finite-N whole-complex statement over five named complexes, and not as a statement about the Z^3 qubit lattice -- eta is a global spectral invariant of each assembled operator and it is evaluated for the whole of cycle8, cycle12, ladder6, the 4x4 grid disk, and annulus7, returning 0 on every one, each with a nonzero kernel (cycle8=2, cycle12=2, ladder6=2, grid4x4_disk=1, annulus7=2) that any APS sign would first have to quarantine. Every complex is a fixed finite size; no size is grown, no limit is taken, and nothing is asserted beyond the families listed.
-Live residuals at print time, since LAPACK eigen-solve figures move between environments while the verdicts do not: the largest parity anticommutator norm across the five families is 0.000e+00 against TOL = 1e-10, and the largest spectral pairing error is 3.553e-15 against the 1e-8 pairing window. The integer outcomes -- eta = 0 and chi = 0 on all five families, one added orientation-line dimension, and the extended reads (+1, +1, 0, +1) and (-1, -1, 0, -1) -- are exact counts and are quoted literally.
-Determinism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in this runner. The family list is a fixed five-element sequence at fixed sizes, spectra are explicitly sorted before every comparison so no eigen-solver ordering can leak into a result, and the one least-squares call in the source-character gate solves a fixed 2x2 system with constant entries. All figures above are recomputed here, not copied.
 
 INTERPRETATION
   On the raw retained finite boundary complex D_Y=d+d^*, cochain parity

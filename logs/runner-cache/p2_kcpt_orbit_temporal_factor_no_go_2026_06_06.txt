@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/p2_kcpt_orbit_temporal_factor_no_go_2026_06_06.py
-runner_sha256: 22e91505174efaa10fb02a99a083f1246b1ad6d2dfde2065d83079499f53d1a7
+runner_sha256: 4e06b32d100761c0626ecb030064440672cb3b335e295e608466d18eb7e5ecaa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 --- Section S: structural slot (spatial/count-preserving vs temporal/count-doubling) ---
@@ -38,15 +38,6 @@ PASS: complex conjugation fixes chi_0 (trivial, real)
 PASS: complex conjugation SWAPS chi_1 <-> chi_2 (faithful pair)
 PASS: the generation K/CPT count is 2 = #{K-orbits of C3 characters} = R(+)C (Frobenius-Schur)
 PASS: this '2' lives on the GENERATION (3-character) factor, NOT on a spacetime temporal corner
---- N5 execution certificate: what this runner resolves ---
-per_element: resolved on the explicitly written constants only. The spatial involution is laid down as a literal 4 x 4 real permutation matrix and the temporal exchange as the literal 2 x 2 swap, both checked entrywise against their squares and against the identity; and the three C3 characters 1, omega, omega^2 are compared one at a time under conjugation. The random operators of the Keldysh and Euclidean sections are by contrast never inspected entry by entry - they enter only through a determinant.
-per_site: checked and not executed. Despite the Z^3 framing, this runner never leaves momentum space: the 8 objects it enumerates are Brillouin-zone corners with each coordinate in {0, pi}, not lattice points, and the inversion and sublattice-parity maps act on those momenta. No real-space site, no field value at a site and no neighbour relation is constructed anywhere in the file.
-per_mode: resolved, and the entire no-go is a mode-count statement. The corners are the doubler modes: 2^3 = 8 spatial ones are enumerated explicitly, the Matsubara corner k4 in {0, pi} is adjoined as a Cartesian factor to give 2^4 = 16, and the decisive structural claim is exactly that 16 = 8 x 2 arises by adjoining a coordinate rather than by permuting the existing eight. The thermofield generator is additionally diagonalized and its zero mode located, which is the one place a spectrum is computed rather than counted.
-per_block: resolved as orbits and multiplicities, with no within-block amplitude evaluated. Two block structures are exercised: the K-orbits of the C3 characters, which split into one fixed real character and one conjugate pair, giving the Frobenius-Schur count 2 on the generation factor; and the record partition, where the realized orbit read as a single record gives multiplicity 1 against the finer two-record partition's multiplicity 2. Both are counts of blocks, not readouts inside them.
-lattice_wide: checked, and resolved only as an exponent arithmetic, with the missing global object being this note's own declared boundary. The whole-lattice claim is the exponent 8 x L_t, and the runner exercises it at L_t = 1 and 2 on a random 4 x 4 stand-in rather than on any actual lattice determinant; no volume, no sequence and no continuum limit is taken. The note is explicit that the Euclidean route is not foreclosed and that the Wick rotation P2 remains the open primitive, so the global derivation is absent by the note's own statement.
-  scope: three checks are algebraic or literal identities dressed as tests. det(D) det(D^-1) = 1 holds for every invertible D, so sampling it 200 times confirms numerical linear algebra rather than the Keldysh cancellation; the Euclidean scaling check asks whether |det|^2 / |det| equals |det|, which is automatic; and the exponent check evaluates the constant expression 8 * 2 == 16.
-  scope: one check asserts a hand-encoded Python constant. The claim that the record axiom disclaims the occupancy and weighting rule is carried by a variable set to True beside a comment quoting the axiom text; no file is read and no string is matched, so that leg is a transcription rather than a verification.
-  scope: the seeded stream (seed 20260606) supplies the antilinearity vectors and the 200-sample Keldysh and Euclidean operator batches. Two back-to-back runs are byte-identical, and no sampled quantity is quoted above. Note that the leg asserting the Euclidean magnitude differs from 1 is a property of the draw - it records that no sampled determinant landed within 1e-6 of unity - and not a theorem.
 
 TOTAL: PASS=26 FAIL=0
 

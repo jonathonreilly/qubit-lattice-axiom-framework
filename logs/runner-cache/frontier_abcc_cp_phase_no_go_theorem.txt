@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abcc_cp_phase_no_go_theorem.py
-runner_sha256: c40ce94a621f9c32def82e8c0af60c01b7f308a807ef36bb5edcb43ecc9a1070
+runner_sha256: 518d9908d6e47772fe5ee629e1696d753bcfc789f4eff48aa4adf86faa1a47b0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ================================================================================
@@ -46,7 +46,7 @@ Part 2: Basin 2 — C_neg solution under physical sigma = (2, 1, 0)
 
   Searching near (m, delta, q_+) ~ (28, 21, 5) ...
   Found: (28.0062, 20.7218, 5.0116)
-  det(H) = -70537.2  |  chi^2 = 5.36e-32
+  det(H) = -70537.2  |  chi^2 = 1.26e-30
 
   sin(delta_CP) under all 6 sigma assignments at Basin 2:
     sigma=(0, 1, 2): sin(dCP)=-0.6254  n_pass=4/9
@@ -55,7 +55,7 @@ Part 2: Basin 2 — C_neg solution under physical sigma = (2, 1, 0)
     sigma=(1, 2, 0): sin(dCP)=-0.5154  n_pass=4/9
     sigma=(2, 0, 1): sin(dCP)=-0.5544  n_pass=9/9
     sigma=(2, 1, 0): sin(dCP)=+0.5544  n_pass=9/9 <-- PHYSICAL
-  [PASS] Basin 2: chi^2 < 1e-8 (chi^2=0 solution in C_neg)  (chi2 = 5.36e-32)
+  [PASS] Basin 2: chi^2 < 1e-8 (chi^2=0 solution in C_neg)  (chi2 = 1.26e-30)
   [PASS] Basin 2: det(H) < 0 (C_neg component)  (det = -70537.2)
   [PASS] Basin 2: signature = (1, 0, 2) — flipped from C_base  (eigvals = [-48.379147  37.373635  39.0117  ])
   [PASS] Basin 2 under sigma=(2,1,0): sin(dCP) > +0.247 — excluded by T2K at >3-sigma  (sin(dCP) = +0.5544 > 0.247)
@@ -69,7 +69,7 @@ Part 3: Basin X — C_neg solution, doubly excluded
 
   Searching under native sigma=(2,0,1) ...
   Found: (21.1283, 12.6800, 2.0892)
-  det(H) = -20296.1  |  chi^2 under sigma=(2,0,1) = 2.59e-32
+  det(H) = -20296.1  |  chi^2 under sigma=(2,0,1) = 1.19e-31
 
   sin(delta_CP) under all 6 sigma assignments at Basin X:
     sigma=(0, 1, 2): sin(dCP)=-0.4976  n_pass=4/9
@@ -84,7 +84,7 @@ Part 3: Basin X — C_neg solution, doubly excluded
      sigma_hier uniqueness excluded (2,0,1) at C_base (sin=+0.987 there).
      No consistent C_base pin exists for sigma=(2,0,1).
   2. Under physical sigma=(2,1,0), Basin X gives sin(dCP)>+0.247 (T2K excl.).
-  [PASS] Basin X: chi^2 < 1e-8 under native sigma=(2,0,1)  (chi2 = 2.59e-32)
+  [PASS] Basin X: chi^2 < 1e-8 under native sigma=(2,0,1)  (chi2 = 1.19e-31)
   [PASS] Basin X: det(H) < 0 (C_neg component)  (det = -20296.1)
   [PASS] Basin X: signature = (1, 0, 2) — flipped from C_base  (eigvals = [-30.50753   24.685665  26.950129])
   [PASS] Basin X native sigma=(2,0,1): 9/9 NuFit (it is a C_neg chi^2=0 solution)  (n_pass = 9)
@@ -128,16 +128,6 @@ Part 5: Structural explanation — Jarlskog sign flip at C_neg
   propagates into a J-sign reversal under fixed sigma. Applying the
   physical sigma=(2,1,0) globally therefore FORCES sin(dCP) > 0 at
   all C_neg solutions — directly excluded by T2K at >3-sigma.
-
-================================================================================
-Part 6: N5 execution certificate — resolved granularity
-================================================================================
-
-per_element: checked - the NuFit filter is applied entry by entry to all nine PMNS magnitudes |P[a][i]|, each tested against its own PDG_LO and PDG_HI band, and the resulting n_pass out of 9 is what separates the admissible sigma assignments from the rest: 9/9 at Basin 2 and 9/9 at Basin X under the physical sigma.
-per_site: checked and not executed - no lattice and no site index exists anywhere in this runner, which works only on the 3x3 Hermitian form H(m, delta, q_+) over the retained affine chart; that absence is the note's own stated boundary, since A-BCC here is grounded observationally by T2K rather than derived as an axiom-native Cl(3)/Z^3 theorem.
-per_mode: checked - the three eigen-modes of H are resolved individually, with Basin 2 giving eigenvalues [-48.3791, 37.3736, 39.0117] and Basin X [-30.5075, 24.6857, 26.9501], both of inertia (1, 0, 2) flipped from C_base; each of the 6 sigma permutations then assigns those modes to generations and yields its own sin(delta_CP).
-per_block: checked - the retained affine chart is treated as two disjoint sign blocks and both are populated: the det(H) > 0 block C_base at the pin with sin(dCP) = -0.9874, and the det(H) < 0 block C_neg entered twice, at Basin 2 with det = -70537 and Basin X with det = -20296, each solved to chi^2 < 1e-8 independently.
-lattice_wide: checked and not executed - there is no lattice to sweep, and the chart is not swept exhaustively either: the theorem is stated over 'every KNOWN chi^2=0 solution', which is exactly the three basins located here from three fixed starting points, so no global scan of the chart certifies that no further C_neg basin exists.
 
 ================================================================================
 Theorem statement (conditional on sigma_hier uniqueness + T2K):

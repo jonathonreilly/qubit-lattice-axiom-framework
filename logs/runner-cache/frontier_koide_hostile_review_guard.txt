@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_hostile_review_guard.py
 runner_sha256: 5199040cb32385dbe058b3ac403e9e6d6133d15f7d00db2ef5d7f98a8052ee9c
-input_fingerprint_sha256: 313c2eed1bebb7f7386360d0e14a177652a594c7784d8e96b86fe9a3ef53d1a9
+input_fingerprint_sha256: 3a9752252ea6ee28327d2e74bbdc0042d14d652e900c4136d27f09ab645bddd4
 timeout_sec: 210
 exit_code: 0
-elapsed_sec: 2.36
+elapsed_sec: 1.58
 status: ok
 ----- stdout -----
 ========================================================================================

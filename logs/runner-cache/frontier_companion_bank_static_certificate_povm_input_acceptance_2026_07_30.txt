@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30.py
 runner_sha256: 50bcaddc2aa15988d0306e57cf407c900df10debb78b9a3e89171ad353a9f297
-input_fingerprint_sha256: 5a2a5e5cbadc69d84863fab881b75a61d4c038396fef04d3c2abedda32ac30ac
+input_fingerprint_sha256: 60d5a555a99336cfed23786bbfbcfc7e4fdf5fe1d2f2ae1c4b9cdd0d1758eccf
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 8.19
+elapsed_sec: 5.92
 status: ok
 ----- stdout -----
 PASS dependency bytes match the reviewed landed source and Cycle-317 surface

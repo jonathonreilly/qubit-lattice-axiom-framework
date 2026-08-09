@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_flavor_handedness_rk_even_arrow_insufficient.py
-runner_sha256: 389f05ba07605d6182baa2c475fad1be76fee544aa846314903ecc2a8258c582
+runner_sha256: 03940129435ac73c6766b8fd59bc0d0795a02d32b97edbbcd6ce6d7ab9fd89dc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.60
+elapsed_sec: 5.13
 status: ok
 ----- stdout -----
 PASS: H_handedness_is_sign_Delta_nonzero Delta(+2/9)=+4.674812e-02 -> sign=+1
@@ -20,13 +20,6 @@ PASS: A_arrow_breaks_T_not_R arrow = T-breaking boundary datum; R (spatial refle
 PASS: S_magnitude_L3_1_2_separate |Delta(2/9)|=0.0467 != 2/9=L_3(1,2) (separate)
 PASS: S_cone_Q_two_thirds_firewall max|Q-2/3|=5.55e-16
 PASS: C_comparator_delta_pdg delta_PDG=0.222230
-
-N5 EXECUTION CERTIFICATE -- what this runner resolves
-per_element: checked -- the three Born weights p0, p1, p2 enter the orientation invariant Delta = (p0-p1)(p1-p2)(p2-p0) individually, and the group actions are applied as explicit component relabelings, the odd swap [0,2,1] and the even cycle [2,0,1] of that same triple.
-per_site: checked and not executed -- no lattice site variable is ever instantiated: the three indices carried here are generation labels of the circulant (equivalently cubic axes acted on by R), and the realized spatial-reflection breaking is exactly the residual left open (S).
-per_mode: checked -- the three circulant Fourier modes are resolved one by one as lam_k(d) = 1 + sqrt(2) cos(d + 2 pi k/3), k = 0, 1, 2; their Born squares give Delta(+2/9) != 0 and their sums hold Q at 2/3 to 5.6e-16 across 41 sampled delta, so the cone is untouched.
-per_block: checked -- the S_3 action splits into two blocks and each is run separately: the proper A_3 block (det = +1, the 3-cycle C3[111]) preserves sign(Delta), while the improper coset block (det(R) = -1, R C R^T = C^2) flips it, as does the antiunitary K.
-lattice_wide: checked and not executed -- this is a 3x3 and 3-vector verifier with no extended lattice, no volume and no site sum; that R remains a bare-lattice symmetry while the arrow breaks only T is taken from the retained arrow input, not recomputed lattice-wide here.
 
 TOTAL: PASS=14 FAIL=0
 VERDICT: the flavor handedness sign(Delta) (count + phase) is T-odd AND R-odd (RK-even). The time-arrow breaks only T (H=iD T-symmetric, arrow = past-hypothesis boundary); the spatial axis-swap reflection R stays a bare-lattice symmetry. So the arrow ALONE cannot fix the handedness -- it requires spatial-reflection (parity) breaking (the open residual; staggered axis-ordering is the natural candidate), RK-correlated with the arrow. Magnitude 2/9=L_3(1,2) and the r=1/2 cone untouched.

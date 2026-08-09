@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py
 runner_sha256: 959dc13bb1de0979e641990294c53bda188a71ee50311476a7c0e2a03c052d3b
-input_fingerprint_sha256: 51fec646a0d4728323903c2a3daa7b12c3ed9f19b70e31237c1aafa63a49571a
+input_fingerprint_sha256: a70fa0c309d4399bb3307b60b7efc243c0ab1cc0a1674a7bd72999d37f6ea53a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 [PASS] DEP1 target note links Frobenius isotype no-go note

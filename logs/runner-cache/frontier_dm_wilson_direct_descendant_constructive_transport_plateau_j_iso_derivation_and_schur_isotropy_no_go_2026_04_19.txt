@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_j_iso_derivation_and_schur_isotropy_no_go_2026_04_19.py
-runner_sha256: 16cba010e0f2b2e4006212ed9386e79ce8821700234f3d400ff767f73f832542
+runner_sha256: 0a2352c116539e90a9822d7546f6e47f966f42c52408c158100fb6e2aa45360b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.28
+elapsed_sec: 1.20
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,7 +15,7 @@ PART 1: J_iso IS THE UNIQUE NORMALIZED CUBIC BOUNDARY-SENSITIVE SCHUR LAW
 ========================================================================================
   [PASS] Boundary vanishing on the rank-1 spectral ray kills the sum p_i^3 cubic coefficient  (basis(rank1)=[1. 0. 0.])
   [PASS] Boundary vanishing on a nontrivial 2-channel face then kills the mixed p_i^2 p_j coefficient  (basis(1/2,1/2,0)=[0.25 0.25 0.  ])
-  [PASS] Normalizing to 1 at perfect isotropy forces the remaining coefficient to be c = 27  (basis(1/3,1/3,1/3)=[0.111111 0.222222 0.037037])
+  [PASS] Normalizing to 1 at perfect isotropy forces the remaining coefficient to be c = 27  (basis(1/3,1/3,1/3)=[0.11111111 0.22222222 0.03703704])
   [PASS] So the unique normalized symmetric cubic law that vanishes on spectral-channel collapse is J_iso = 27 p1 p2 p3  (p_i = lambda_i / sum_j lambda_j)
   [PASS] On the descended Schur block that same law is exactly J_iso = 27 det(H_e) / Tr(H_e)^3 = 27 Delta_src / (R11+R22+R33)^3  (W0:0.002047934111, W1:0.093481561087, W2:0.015699097176, W3:0.000160310038)
 
@@ -23,21 +23,23 @@ PART 1: J_iso IS THE UNIQUE NORMALIZED CUBIC BOUNDARY-SENSITIVE SCHUR LAW
 PART 2: W1 IS NOT A FULL-PLATEAU J_ISO MAXIMIZER
 ========================================================================================
   [PASS] The canonical transport fiber through W1 is 3-real  (kernel shape=(5, 3))
-  [PASS] The J_iso gradient has a nonzero projection onto that exact transport-fiber tangent space  (||P_fiber grad J_iso||=0.353137851892)
-  [PASS] So W1 is not stationary for J_iso on the full constructive transport plateau  (delta J_iso=0.000353257812, delta col=1.890e-07)
+  [PASS] The J_iso gradient has a nonzero projection onto that exact transport-fiber tangent space  (||P_fiber grad J_iso||=0.353137850841)
+  [PASS] So W1 is not stationary for J_iso on the full constructive transport plateau  (delta J_iso=0.000353257811, delta col=1.890e-07)
 
 ========================================================================================
 PART 3: AN EXPLICIT CONSTRUCTIVE PLATEAU POINT IS MORE ISOTROPIC THAN W1
 ========================================================================================
-  [PASS] The explicit B_major certificate stays on the same constructive plateau and canonical column orbit as W1  (pack=[1.05222  0.01836  0.001    1.235773 0.021423], delta col=3.147e-08)
+  [PASS] The explicit B_major certificate stays on the same constructive plateau and canonical column orbit as W1  (pack=[1.05222031e+00 1.83602566e-02 9.99996330e-04 1.23577271e+00
+ 2.14225421e-02], delta col=3.147e-08)
   [PASS] That exact plateau certificate already has strictly larger J_iso than W1  ((W1,B_major)=(0.093481561087,0.145962610704))
-  [PASS] Its normalized Schur spectrum is majorized by W1, so it is strictly more isotropic than W1  (W1 partials=[0.84665  0.965629], B_major partials=[0.835477 0.934954])
+  [PASS] Its normalized Schur spectrum is majorized by W1, so it is strictly more isotropic than W1  (W1 partials=[0.84665011 0.96562943], B_major partials=[0.83547695 0.93495404])
   [PASS] So every strictly Schur-concave symmetric law on the normalized Schur spectrum loses W1 beyond the certified witness packet  (Shannon=(W1:0.510071681521, B_major:0.557503652750))
 
 ========================================================================================
 PART 4: J_ISO MAXIMIZATION DRIFTS TO THE CONSTRUCTIVE BOUNDARY
 ========================================================================================
-  [PASS] The explicit epsilon-packet stays on the exact constructive plateau while the sign margin shrinks  (eps=0.05: pack=[1.05222  0.05     0.05     0.78755  0.021552], eps=0.02: pack=[1.05222  0.02     0.02     0.675423 0.02179 ], eps=0.01: pack=[1.05222  0.01     0.01     0.64538  0.021809], eps=0.005: pack=[1.05222  0.005003 0.005001 0.631518 0.021809], eps=0.001: pack=[1.05222  0.001    0.001    0.620944 0.021805])
+  [PASS] The explicit epsilon-packet stays on the exact constructive plateau while the sign margin shrinks  (eps=0.05: pack=[1.05222031 0.05       0.05       0.7875504  0.02155194], eps=0.02: pack=[1.05222031 0.02000001 0.02       0.67542308 0.02178997], eps=0.01: pack=[1.05222031 0.01000002 0.01       0.64537957 0.0218093 ], eps=0.005: pack=[1.05222031 0.00500309 0.00500142 0.63151797 0.02180931], eps=0.001: pack=[1.05222031e+00 9.99999000e-04 1.00000000e-03 6.20944264e-01
+ 2.18049630e-02])
   [PASS] Along that packet the J_iso value increases monotonically as the sign floor is relaxed  (eps=0.05:0.153558517067, eps=0.02:0.161887087311, eps=0.01:0.163324943777, eps=0.005:0.163825259617, eps=0.001:0.164126836111)
   [PASS] The maximizing packet therefore evacuates toward a constructive boundary face rather than retaining the interior W1 witness  (boundary source coordinate y2=1.000000e-06, gain=0.070645275024)
 
@@ -47,22 +49,14 @@ PART 5: BOTTOM LINE
   [PASS] J_iso is the unique normalized symmetric cubic collapse-sensitive law on the exact local Schur carrier  (it is the right exact cubic law to test)
   [PASS] But proving the same W1 winner beyond W0..W3 fails: pure Schur-side isotropy maximization does not retain W1 on the full plateau  (the missing retained physics is the law that arrests the boundary drift or selects an interior fiber point before isotropy maximization)
 
-========================================================================================
-PART 6: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
-========================================================================================
-  per_element: checked — the cubic law is pinned coefficient by coefficient rather than fitted as a whole. The sum p_i^3 coefficient is killed on the rank-1 spectral ray, the mixed p_i^2 p_j coefficient is killed on the (1/2,1/2,0) two-channel face, and the surviving coefficient is forced to exactly 27 by normalizing at perfect isotropy, each at 1e-15.
-  per_site: checked and not executed — no lattice site index is built. Everything is evaluated on the exact local Schur carrier of a single H_e reached from a five-component source chart, so the plateau being searched is a parameter-space object and there is no per-site contribution to separate.
-  per_mode: checked — the three normalized Schur channels are resolved individually and compared mode by mode. majorized_by() walks the cumulative partial sums of the sorted per-channel weights against tolerance 1e-10, which is what certifies B_major strictly more isotropic than W1, and Shannon and Renyi-2 are then taken over those same per-channel weights.
-  per_block: checked — the transport fiber is produced by an explicit block split. The Jacobian of the reduced favored column is the constraint block, its null space is verified to be the 3-real fiber tangent block with kernel shape (5,3), and the J_iso gradient is projected onto that block, its surviving norm against 1e-2 being exactly why W1 fails to be stationary.
-  lattice_wide: checked and not executed — no lattice, extent or asymptotic limit occurs. The boundary-drift study is a finite explicit packet of plateau points at successively relaxed sign floors, each pinned to the same eta and canonical column orbit; it demonstrates drift toward a boundary face, not behaviour in any large-system limit.
-
-  W1 source5          = [0.905339 0.341085 0.775621 0.0043   2.248936]
-  W1 pack             = [1.05222  0.098759 0.122044 1.345447 0.018682]
-  W1 spectrum         = [0.84665  0.118979 0.034371]
-  B_major source5     = [0.939538 0.365558 0.6046   0.121238 0.100818]
-  B_major pack        = [1.05222  0.01836  0.001    1.235773 0.021423]
-  B_major spectrum    = [0.835477 0.099477 0.065046]
-  ||P_fiber grad J||  = 0.353137851892
+  W1 source5          = [0.90533908 0.34108481 0.77562148 0.00429993 2.248936  ]
+  W1 pack             = [1.05222031 0.09875887 0.12204367 1.34544744 0.01868212]
+  W1 spectrum         = [0.84665011 0.11897933 0.03437057]
+  B_major source5     = [0.93953755 0.36555755 0.60460021 0.12123763 0.10081751]
+  B_major pack        = [1.05222031e+00 1.83602566e-02 9.99996330e-04 1.23577271e+00
+ 2.14225421e-02]
+  B_major spectrum    = [0.83547695 0.09947708 0.06504596]
+  ||P_fiber grad J||  = 0.353137850841
   PASS=17 FAIL=0
 
 ----- stderr -----

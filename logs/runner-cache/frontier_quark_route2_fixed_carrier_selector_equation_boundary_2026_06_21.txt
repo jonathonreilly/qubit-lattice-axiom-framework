@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py
-runner_sha256: b622b5eaa6ea94bdf3f9c201554540b38c2604f16e075755dfa5e3fc3f612931
+runner_sha256: eb9c353d0e85864efc4cb3a9a886ef121671482b4108b44e3e3917684d707bcd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -30,7 +30,7 @@ PASS: source-domain note names the center bridge target
 PASS: minimal axioms do not supply readout weighting
 
 B. Fixed-carrier algebra
-PASS: imported E-shell carrier column is exact -- [ 1.00000000e+00  0.00000000e+00 -5.55111512e-17  0.00000000e+00]
+PASS: imported E-shell carrier column is exact -- [ 1.00000000e+00  0.00000000e+00 -4.16333634e-17  0.00000000e+00]
 PASS: imported E-center carrier column is exact -- [1.         0.         0.16666667 0.        ]
 PASS: granted q_T is exact 5/6 -- 5/6
 PASS: granted shell T/E is exact -2 -- -2
@@ -76,13 +76,6 @@ PASS: note keeps future metric route open
 PASS: note does not claim the endpoint triple is derived
 PASS: note has proposal_allowed false
 PASS: bare retained is disallowed
-
-F. N5 execution certificate
-per_element: the carrier columns are validated component by component, with the largest absolute deviation of the imported E-shell and E-center columns from (1,0,0,0) and (1,0,1/6,0) required to stay under the named tolerance 1e-12; everything downstream of that is exact Fraction work, so the granted center value -5/3 is not assumed but formed as shell_TE times q_T.
-per_site: resolved as two complete source vectors, one per star role -- the shell vector (Fraction(1, 1), Fraction(-2, 1)) and the center vector (q_E, -5/3) are built separately and every selector equation in the fan-out is a relation between those two vectors; below that the runner has nothing, since no shell arm is enumerated and no coordinate or displacement is carried anywhere in the file.
-per_mode: each source vector is read as an (E, T) pair and only one slot is ever unknown -- the T slot is pinned at both roles while the E slot is pinned only at the shell, so the five conservation-style selectors (no lift, slope, product, L1 and center absolute balance) each push the free E slot to a different exact value, namely q_E = 1, 5/6, 6/5, 4/3 and 5/3 with rho_E = 0, -1, 6/5, 2 and 4.
-per_block: the quadratic block is solved and then searched -- a diagonal metric a*q_E^2 + b*(25/9) matched to a + 4b forces the block coefficient ratio b/a = 9(q_E^2-1)/11, which at the target equals 1449/704, and that ratio is then shown absent from a ten-element bank of primitive ratios and from a scan of 2519 distinct positive rationals with numerator and denominator at most 64.
-lattice_wide: checked and not executed -- two four-component carrier columns and two two-component source vectors are the whole of what this runner holds, so nothing with an extent, a volume or a limit arises; the object that would settle question globally is a theorem delivering the signed center bridge c_TE = -8/9 or the metric ratio 1449/704, and the note records both as still owed.
 
 Summary
 ------------------------------------------------------------------------

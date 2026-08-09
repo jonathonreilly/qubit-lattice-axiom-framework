@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py
-runner_sha256: cac403dc4aa752def2cecd134d60b1fc05644d9b79c34e83eb0546b93b5149b1
+runner_sha256: 23367d02a5325f24c1341f3a4bd02cf875d82e8b7e76dca1b623afd79e7199db
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.27
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 --- Section S: e1/e2/e3 separation (r vs delta) ---
@@ -32,12 +32,6 @@ PASS: delta=2/9 still requires a genuine phase selector or covariant holonomy ro
 PASS: does NOT close delta=2/9 (the C3-covariant eta/holonomy route is untouched/open)
 PASS: does NOT claim a universal scalar-action no-go; W_X=0 and Im z^3 branches are explicit
 PASS: the G-signature defect of L(3;1) = exactly -2/9 (distinct N-family (N-1)(N-2)/3N) is the rare exact hit but is NON-native + APS-eta (avoid-list) + already on main -- NOT re-derived here
---- Section N5: execution certificate (resolved granularity; print-only) ---
-per_element: checked and not executed - the circulant Y = a I + b C + conj(b) C^2 is named in the header but never built as a matrix, so no entry is ever placed or evaluated. The runner enters at the spectrum instead, and all it retains of the off-diagonal entry b is the reduced ratio z = b/a through r = |z|^2 and delta = arg z; C itself never appears as an array.
-per_site: checked and not executed - there is no site index anywhere. The three labels carried through the whole calculation are generation positions on a single internal circulant, the symbols are the three reals (a, r, delta), and no local algebra, neighbour or spatial coordinate is constructed at any point.
-per_mode: checked - this is the runner's native grain and where the separation result lives. The three C_3 Fourier modes are written out explicitly as sqrt(m_k) = a (1 + 2 sqrt(r) cos(delta + 2 pi k / 3)) for k = 0, 1, 2, and every conclusion is a symmetric function of exactly those three: e1 = 3a, e2 = 3 a^2 (1 - r) with d e2/d delta verified to vanish identically, and e3 = a^3 (1 - 3r + 2 r^{3/2} cos 3delta) whose phase derivative is checked equal to -6 a^3 r^{3/2} sin 3delta, which is what forces stationary phases onto delta = n pi / 3 and leaves 2/9 out.
-per_block: checked and not executed - the C_3 isotype blocks are never constructed and no amplitude is evaluated on a trivial or doublet block. The block-level statement this note leans on, that the register-not-read partition map delivers the weight ratio r but never the within-block phase delta, is recorded in Section C as literal strings whose checks are substring and length tests on those labels; it is bookkeeping of the claim's scope, not a computation on a block.
-lattice_wide: checked and not executed - no lattice, no volume and no limit appear. The runner is exact symbolic algebra in three symbols over a single 3-dimensional generation space; the only domain it ever sweeps is the phase itself, via solveset for sin(3 delta) = 0 on [0, 2 pi), so there is no extensive quantity that a lattice-wide sum could produce.
 
 TOTAL: PASS=20 FAIL=0
 

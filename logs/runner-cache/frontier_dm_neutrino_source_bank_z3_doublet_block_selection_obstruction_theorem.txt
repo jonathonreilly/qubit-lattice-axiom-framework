@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py
-runner_sha256: e5d9e25e456dd9540e892e97a75c2faf1b0bebe0a5647c4200ccb553077a3819
+runner_sha256: 5cebbdabc9124b614fdf343746476b8cb2ff04d32c98118b5a3bc670a97bc913
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -39,7 +39,7 @@ PART 3: THE REMAINING TARGET STILL MOVES IN TWO INDEPENDENT REAL DIRECTIONS
 PART 4: NO DETERMINISTIC SELECTOR FACTORING THROUGH THE CURRENT BANK CAN CHOOSE THE POINT
 ========================================================================================
   [PASS] Distinct live active points can have identical exact current-bank signatures  (the current exact atlas-supported bank is constant on those samples)
-  [PASS] Those same points have different active targets (delta, q_+)  (targets=(0.19999999999999996, 2.2000000000000006), (0.9000000000000001, 2.2000000000000006), (0.19999999999999996, 2.5000000000000004))
+  [PASS] Those same points have different active targets (delta, q_+)  (targets=(0.19999999999999982, 2.2), (0.9, 2.2), (0.19999999999999982, 2.5000000000000004))
   [PASS] Therefore no deterministic selector that factors only through the current exact source bank can determine the active point  (a new right-sensitive 2-real datum is required)
 
 ========================================================================================
@@ -47,15 +47,6 @@ PART 5: THE NOTE RECORDS THE OBSTRUCTION CLEANLY
 ========================================================================================
   [PASS] The new note records the fixed upstream source tuple and the moving doublet-block target
   [PASS] The new note records that a new right-sensitive 2-real datum is required
-
-========================================================================================
-PART 6: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
-========================================================================================
-  per_element: checked -- the blindness is established component by component, not by a single distance: same_signature compares all eight entries of (gamma, E1, E2, cp1, cp2, a_*, b_*, T_slot) separately at tol 1e-12, with gamma = 0.500000000000, E1 = 1.632993161855, E2 = 0.942809041582, and the moving target is likewise read from the single entries Im kz[1,2] and Re kz[1,1]+kz[2,2].
-  per_site: checked and not executed -- every carrier here is a 3x3 Hermitian point of the source-oriented sheet in carrier normal form; the coordinates that move are the internal pair (delta, q_+), and no spatial index or lattice position is constructed anywhere, so the selection obstruction is never resolved site by site.
-  per_mode: checked -- kz_from_h separates the Z_3 characters and the runner shows exactly which modes the bank can see: all singlet-facing invariants stay pinned across the three samples while the doublet-character data move, with Im kz[1,2] going -1.539208 -> -0.326772 at fixed q_+, so the bank is blind precisely on the doublet modes.
-  per_block: checked -- the Z_3 doublet block is the object of the theorem and it is resolved as a unit across three carrier copies: its off-diagonal supplies one real direction and its centered diagonal trace the other, giving targets 0.200000, 0.900000, 0.200000 for delta and 2.200000, 2.200000, 2.500000 for q_+ -- three distinct blocks, one common bank.
-  lattice_wide: checked and not executed -- exactly three carrier points are instantiated and compared pairwise; there is no volume, no sweep over a lattice and no limit, so the statement certified is that no selector factoring through the current bank separates these three points, and nothing is claimed at lattice scale.
 
 ========================================================================================
 RESULT

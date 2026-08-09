@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py
-runner_sha256: 6d83f06726ba6daebc9ace68ff86444391ba73c343f903406ec793723dd4bd50
+runner_sha256: aee8bafb44e6fc733a9eb2c279beb3bff536be5ad7d4ee83c1824aee97d0f2ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 Section A: machinery ground
@@ -22,12 +22,6 @@ Section C: necessity
 Section D: consequence arithmetic
   [PASS] D1 on the closed subfamily Q = Q_raw/2 equals the intersection form m01 m23 - m02 m13 + m03 m12
          (Q, form) pairs: [(-2, -2), (5, 5), (0, 0)]
-N5 execution certificate
-per_element: switching on one single cochain component already breaks the sector structure — each of the six single-plaquette branch cochains carrying exactly one nonzero entry at site (0, 0, 0, 0) admits a unit-link lambda with |Delta| >= 1, and the coboundary matrices acting on them are pure integer arrays whose entries take only the values [-1, 0, 1].
-per_site: all 16 sites of the L = 2 four-torus are enumerated explicitly and the obstruction is resolved as site-local — a unit link within torus distance 1 of the defect site moves Q_raw by -1, while a unit link sitting at the maximal torus distance 4 from it leaves Q_raw exactly unchanged (0).
-per_mode: the six independent 2-cocycle flux modes m_01 through m_23 are resolved jointly — closed branch cochains assembled from the six plane representatives always give an even Q_raw whose half equals the intersection form m01 m23 - m02 m13 + m03 m12, over three integer mode vectors drawn componentwise from the range [-2, 2] (True).
-per_block: the cochain-degree blocks C^0 through C^4 are built in full with dimensions [16, 64, 96, 64, 16], and the block maps close exactly — d composed with d annihilates both C^1 -> C^3 and C^2 -> C^4 entrywise, while the Leibniz sign on the (C^1, C^2) block pairing is pinned by execution to d(a u b) = da u b - a u db, the opposite sign being observed to fail.
-lattice_wide: a finite-N statement on the single T^4 lattice at L = 2 with no thermodynamic limit taken anywhere — summed over the whole torus, exactly one of the four candidate sign patterns, (-,+), reproduces Delta(lambda) across all 36 (n, lambda) trials drawn componentwise from [-2, 2], and the global telescoping term sum(dl u dl) vanished on every one of them (True).
 TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----

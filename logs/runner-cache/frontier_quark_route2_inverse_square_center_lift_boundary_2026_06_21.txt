@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_inverse_square_center_lift_boundary_2026_06_21.py
-runner_sha256: aee35745c134995184cd17d92513b8aa2e938a823bd9b55dc05447783345b8ec
+runner_sha256: 200a78cc18695c8527250720c933b7b6df8c3616bd414ee5d7401339139a2f48
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -59,13 +59,6 @@ PASS: note says current surfaces do not derive the law
 PASS: note calls route exact support boundary not closure
 PASS: proposal_allowed false is recorded
 PASS: bare retained is disallowed
-
-F. N5 execution certificate
-per_element: the normalization constant is built from one channel and then spent on the other, entry by entry -- C = q_T * w_T^2 = 5/24 comes solely from the granted T data, q_E = C / w_E^2 = 15/8 is read back on the E side, and rho_E, c_TE and lambda are each derived from that single scalar separately; C is also compared individually against w_E, w_T and w_E*w_T and matches none of them.
-per_site: checked and not executed -- the only star-derived numbers entering this file are the two per-arm weights, and the 1/6 center-excess support step is not used arithmetically at all; it is merely confirmed present in the center-excess note, which the same runner then confirms says nothing about an inverse-square law, so the site-level support content is cited rather than computed here.
-per_mode: the two channels are tied by one invariant and that tie is tested directly -- the law asserts q_X * w_X^2 is channel-independent, and the runner confirms q_E * w_E^2 equals q_T * w_T^2 at the common value 5/24, so the E and T modes are not merely scaled against each other but are shown to share a single normalized product, which is the whole content of the conditional support.
-per_block: the weight-power ladder is resolved as a block and then swept -- the five named rungs -2, -1, 0, 1, 2 give lambda = 9/4, 3/2, 1, 2/3 and 4/9 respectively, and a wider sweep across all 13 integer powers in [-6, 6] returns the single hit -2, so the boundary is a uniqueness result within the integer power grammar rather than a check at one favoured exponent.
-lattice_wide: checked and not executed -- no lattice, box, volume, site count or limit is constructed anywhere in this runner, whose arithmetic universe is four granted scalars and one exponent; the whole-surface object it reports as absent is the inverse-square center-lift law itself, which the verdict names as an open primitive rather than anything this file derives.
 
 Summary
 ------------------------------------------------------------------------

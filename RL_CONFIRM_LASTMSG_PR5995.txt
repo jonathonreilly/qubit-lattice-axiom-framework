@@ -1,0 +1,1 @@
+CONFIRMATION: FAIL — S2 leaves the governed dependency-policy epoch mismatched, and S4 adds unlanded review-loop metadata to durable runners and receipts

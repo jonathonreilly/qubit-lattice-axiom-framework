@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_bifundamental_invariance_obstruction_theorem.py
-runner_sha256: d715a8729c5817a411ce2776fd5ac4f84cffb16801ad461ea445aeb3352f748a
+runner_sha256: 762394406d7d7abe8782aa3f8dd99924b17d834fc94e614942ae0b0979303d46
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -25,16 +25,16 @@ PART 1: K_doublet IS HERMITIAN ON THE ACTIVE SHEET
  (including K_doublet) is Hermitian.
 
  [PASS] Active-sheet H is Hermitian (max ||H - H^dag|| = 0.00e+00)
- [PASS] K_Z3 = U_Z3^dag H U_Z3 is Hermitian (max ||K_Z3 - K_Z3^dag|| = 1.35e-15)
- [PASS] K_doublet = K_Z3[1:3,1:3] is Hermitian (principal submatrix of Hermitian) (max ||K_d - K_d^dag|| = 1.29e-15)
- [PASS] K11 matches retained closed form (err = 4.60e-16)
- [PASS] K22 matches retained closed form (err = 5.00e-16)
- [PASS] K12 matches retained closed form (real = m - 4*sqrt(2)/9, imag = sqrt(3) delta - 4*sqrt(2)/3) (err = 8.33e-17)
+ [PASS] K_Z3 = U_Z3^dag H U_Z3 is Hermitian (max ||K_Z3 - K_Z3^dag|| = 1.77e-15)
+ [PASS] K_doublet = K_Z3[1:3,1:3] is Hermitian (principal submatrix of Hermitian) (max ||K_d - K_d^dag|| = 1.60e-15)
+ [PASS] K11 matches retained closed form (err = 4.58e-16)
+ [PASS] K22 matches retained closed form (err = 4.04e-16)
+ [PASS] K12 matches retained closed form (real = m - 4*sqrt(2)/9, imag = sqrt(3) delta - 4*sqrt(2)/3) (err = 2.24e-16)
 
 ========================================================================================
 PART 2: SINGLE U(2) ADJOINT vs INDEPENDENT U(2)_L x U(2)_R
 ========================================================================================
- [PASS] Single U(2) adjoint K -> U K U^dag preserves Hermiticity on K_doublet (24/24 trials; max Hermitian error 8.35e-16)
+ [PASS] Single U(2) adjoint K -> U K U^dag preserves Hermiticity on K_doublet (24/24 trials; max Hermitian error 7.96e-16)
  [PASS] Independent U_L K U_R^dag BREAKS Hermiticity on K_doublet (generically) (24/24 trials broken; min non-Herm error 6.81e-01)
  [PASS] Diagonal embedding U(2) -> U(2)_L x U(2)_R, U -> (U, U), is identically the single adjoint action (err = 0.00e+00)
 
@@ -61,8 +61,8 @@ L1: POLAR-SECTION GAUGE-FIXING — U_R is already SPENT
  fixes U_R = I. K_+(H) = Y^dag Y = H on this section.
  U_R cannot be re-introduced as a retained gauge AFTER this fix.
 
- [PASS] Positive polar section: Y_+^dag Y_+ = H on the positive representative (||K_+ - H|| = 2.20e-14)
- [PASS] U_R acts trivially on H via Y -> Y U_R (right U(3) frame is invisible to H) (||H - H_rotated|| = 2.41e-14)
+ [PASS] Positive polar section: Y_+^dag Y_+ = H on the positive representative (||K_+ - H|| = 1.48e-14)
+ [PASS] U_R acts trivially on H via Y -> Y U_R (right U(3) frame is invisible to H) (||H - H_rotated|| = 1.47e-14)
  [PASS] K_rotated = Y^dag Y is NOT H for Y = Y_+ U_R with U_R != I (so the positive-section representative is NOT U_R-invariant, confirming U_R has been USED to select the representative) (||K - H|| = 1.52e+01 (nonzero: U_R has been gauge-fixed))
  [PASS] Retained active chart has NO U_R factor to rotate (H is the retained object) (structural (not a numerical check))
 
@@ -75,7 +75,7 @@ L2: RETAINED DIRAC OPERATOR IS HERMITIAN — NO L/R SPLIT
  it has a SINGLE index space, not L and R.
 
  [PASS] Retained M(phi) = Gamma_1 model: M is Hermitian (||M - M^dag|| = 0.00e+00)
- [PASS] Retained M(phi) = Gamma_1 model: M^2 = I (involutive) (||M^2 - I|| = 4.36e-15)
+ [PASS] Retained M(phi) = Gamma_1 model: M^2 = I (involutive) (||M^2 - I|| = 5.41e-15)
  [PASS] Retained Dirac carrier is a SINGLE Hermitian object, not a (Y_L, Y_R) pair with independent indices (structural fact from the retained atlas)
 
 ========================================================================================
@@ -90,7 +90,7 @@ L3: SHIFT-QUOTIENT BUNDLE — RETAINED GAUGE ALGEBRA IS 1D
  [PASS] The 6 shift-invariant H coordinates (m, delta, r12, r23, r31, phi) are strictly preserved by H -> H + lambda I (max invariant shift = 5.55e-17)
  [PASS] Independent LEFT-only infinitesimal rotation (I + eps X) H is NOT a retained tangent direction — it BREAKS Hermiticity (||h_left - h_left^dag|| = 9.44e-02 (nonzero))
  [PASS] Independent RIGHT-only infinitesimal rotation is NOT a retained tangent direction — it BREAKS Hermiticity (||h_right - h_right^dag|| = 9.78e-02 (nonzero))
- [PASS] Adjoint infinitesimal rotation H -> (I + eps X) H (I - eps X) with X anti-Hermitian PRESERVES Hermiticity (order eps^2) (||h_adj - h_adj^dag|| = 3.73e-19 (order eps^2))
+ [PASS] Adjoint infinitesimal rotation H -> (I + eps X) H (I - eps X) with X anti-Hermitian PRESERVES Hermiticity (order eps^2) (||h_adj - h_adj^dag|| = 0.00e+00 (order eps^2))
 
  Dimension budget:
   retained sheet tangent (shift): 1
@@ -118,8 +118,8 @@ L5: SCHUR COLLAPSE — U_L (m I) U_R^dag = m U_L U_R^dag
  U_L D U_R^dag reduces to m times a SINGLE unitary U = U_L U_R^dag.
  So bifundamental action collapses to a single adjoint on J_act.
 
- [PASS] Schur collapse: U_L (m I) U_R^dag = m U_L U_R^dag for all unitaries (20/20; max err = 7.40e-16)
- [PASS] W[J; D=mI] invariant under single adjoint J -> U J U^dag (|delta W| = 0.00e+00)
+ [PASS] Schur collapse: U_L (m I) U_R^dag = m U_L U_R^dag for all unitaries (20/20; max err = 8.24e-16)
+ [PASS] W[J; D=mI] invariant under single adjoint J -> U J U^dag (|delta W| = 4.44e-16)
  [PASS] W[J; D=mI] is NOT invariant under LEFT-ONLY action J -> U J (bifundamental with U_R = I) (|delta W| = 6.93e-01)
  => The bifundamental structure of W[J] collapses onto the SINGLE
    adjoint on the Schur baseline D = m I. No independent U_R remains.
@@ -133,7 +133,7 @@ PART 9: WEAKER RETAINED INVARIANCES DO NOT PIN F1 UNIQUELY
 
  [PASS] Test PD cone members satisfy B < 0 and A > -B/4 ([(1.0, -2.0), (1.0, -1.0), (2.0, -3.0), (0.5, -1.0), (3.0, -0.5)])
  [PASS] All five PD cone members evaluate to real positive numbers on K_doublet (values = ['4.229', '2.412', '6.641', '2.115', '2.694'])
- [PASS] All five PD cone members are single-U(2)-adjoint invariant (max diff = 8.88e-16)
+ [PASS] All five PD cone members are single-U(2)-adjoint invariant (max diff = 1.78e-15)
  [PASS] Different PD cone members produce DIFFERENT chamber-boundary minimizers (at least 3 distinct delta_* values) (minimizers = ['1.146', '1.204', '1.171', '1.146', '1.292']; distinct = 4)
  [PASS] All five PD cone members are CP-invariant (K -> K*) (max CP diff = 0.00e+00)
  [PASS] Diagonal shift H -> H + lambda I and Z_3 cyclic do not discriminate within the PD cone (structural: all F_{A,B} are polynomial in Tr K and det K, both of which are individually well-behaved under these retained actions) (structural (not a numerical check))
@@ -159,15 +159,6 @@ VERDICT: BIFUNDAMENTAL INVARIANCE IS NOT SOLE-AXIOM DERIVABLE
 
  the selector gate remains OPEN. Five-candidate ledger unchanged.
  [PASS] All five attack lines report obstruction; bifundamental invariance is NOT sole-axiom derivable on the retained active doublet block (structural composite verdict)
-
-========================================================================================
-PART 11: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
-========================================================================================
- per_element: checked — line L4 is an entrywise statement and is tested that way: the retained Z_3 support is a named set of matrix positions, {(1,1),(2,2),(3,3)} at q_H = 0, {(1,2),(2,3),(3,1)} at q_H = +1 and {(1,3),(2,1),(3,2)} at q_H = -1, and is_diagonal_support measures exactly which entries become populated; line L3 likewise resolves H into its seven Hermitian coordinates (d1, d2, d3, r12, r23, r31, phi) one by one.
- per_site: checked and not executed — the Cl(3)/Z^3 axiom enters this runner only as the provenance deciding which unitary actions count as retained; every object actually built is an internal carrier (3x3 charts, the 2x2 doublet block, a 16x16 Dirac involution) with no site index, so no attack line is resolved position by position.
- per_mode: checked — the Z_3 characters are the organising modes throughout: K_Z3 = U_Z3^dag H U_Z3 separates the singlet mode from the doublet pair, and L4 resolves the mode charges individually, using the phase triple (1, exp(2 pi i/3), exp(-2 pi i/3)) and the retained locking constraint q_L + q_H + q_R = 0 mod 3 that ties the left mode charges to the right ones.
- per_block: checked — this is the sharpest class here. The active object is the 2x2 doublet block K_Z3[1:,1:]; the retained Dirac carrier is a single 16-dimensional Hermitian involution with no (L,R) block split; and L3 states the obstruction as an explicit block-dimension budget, the retained gauge algebra being 1-dimensional (the common shift) against the 8 generators of u(2)_L + u(2)_R, leaving 7 generators missing.
- lattice_wide: checked and not executed — no lattice sum, volume or asymptotic limit is taken anywhere; the widest sweeps are a 5001-point one-dimensional scan along the chamber boundary q_+ = sqrt(8/3) - delta and 20-trial Haar unitary ensembles, both on fixed finite carriers, so the falsification of the F1 antecedent at (sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18) is certified at chart scope only.
 
 ========================================================================================
 PASS = 37, FAIL = 0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_inverse_square_coefficient_law_gate_2026_06_21.py
-runner_sha256: 002b51f03f9a0c0d6e6351d376376898a564fe3fdc9fad20fd2247eec7464562
+runner_sha256: b2957b1739d688f0fcb215d747e3a333922da7c14e9df53cc654c23567d41f8b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -70,14 +70,6 @@ PASS: covariance surface identifies inverse-square as the gap
 PASS: ell_E surface keeps rho_E as readout direction
 PASS: parent theta surface keeps endpoint triple open
 PASS: repo has other inverse-square readings that are lane-specific
-
-G. N5 execution certificate
-------------------------------------------------------------------------
-per_element: every monomial of the grammar is resolved on its own -- the term ratio x^p with x=2/3 is formed as an exact Fraction for each power in [0, 1, 2, 3, 4] and in [0, -1, -2], and the two signed laws are then pinned by an exact two-point linear solve returning (a,b)=(-3/2,5/4) and (19/4,-15/2); nothing here is fitted numerically or sampled.
-per_site: checked, and not executed here -- the weights w_A1=1/6, w_E=1/3 and w_T=1/2 are O_h irrep projector weights, one per channel rather than one per lattice site, and this gate consumes them as fixed rationals; the runner carries no site index at all, so no site-resolved amplitude is ever formed or compared.
-per_mode: fully exercised across the three O_h irrep channels -- A1, E and T1 each carry their own weight, every grammar bound in this file is a statement about the E/T ratio between two of them, and A1 is used as an independent third mode that the signed fits are forced to predict, giving c(w_A1)=6 for the reciprocal fit and 7/2 for the affine fit.
-per_block: the coefficient grammars are bounded as separate blocks -- the nonnegative polynomial block tops out at 1, the one-pole block [0, -1] tops out at 3/2, the two-pole block [0, -1, -2] tops out at exactly 9/4 and attains it only with both lower-order terms zeroed, and the signed block is solved outright instead of bounded because its sign freedom removes the averaging argument.
-lattice_wide: checked and not executed, by this runner's own construction -- both its docstring and its verdict confine the pruning to the tested nonnegative coefficient grammars and explicitly decline to rule out future nonlinear or denominator-bearing observables, so asserting anything global at this granularity would overturn the narrowness that makes the block a defensible no-go rather than reinforce it.
 
 Summary
 ------------------------------------------------------------------------

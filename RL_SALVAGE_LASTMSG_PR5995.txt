@@ -1,0 +1,26 @@
+Disposition: `FIX_THEN_PROCEED`. Full findings are in [RL_SALVAGE_FINDINGS_PR5995.md](</Users/jonBridger/Toy Physics/.claude/worktrees/rl-5995/RL_SALVAGE_FINDINGS_PR5995.md:1>).
+
+All seven stipulated algebraic results verify mathematically and remain honestly bounded support. Both runners reproduce 31/31 and 25/25; caches and receipts are deterministic; no rejected claims or dangling deleted-file references survive.
+
+Four repairs remain:
+
+- A rehashed semantic receipt tamper passes 25/25 because not all unit results are cross-checked.
+- The independent checker is absent from the audit packet’s `helper_runner_paths`.
+- The citation-graph manifest update is missing.
+- Several source-note provenance statements need mechanical correction, including one unit-number typo.
+
+No package source, audit verdict, commit, or remote was changed.
+
+## Review Results (Iteration 2)
+
+### Code / Runner: FAIL
+### Physics Claim Boundary: BOUNDED
+### Proof Obligations: CLOSED
+### Imports / Support: CLEAN
+### Nature Retention: BOUNDED
+### No-Go Discipline: NOT APPLICABLE
+### Labeling Convention: PASS
+### Repo Governance: FIX
+### Audit Compatibility: FIX
+### Methodology Skill: SKIPPED
+### DISPOSITION: FIX_THEN_PROCEED

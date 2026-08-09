@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py
-runner_sha256: 50d8087944c70b7256650ac681cecaae74c8817b856867a290b18e9dc9212013
+runner_sha256: 0697c1a52aebbb81cb7c956df9bacbc6a49dc39369dff05c114c26d410dd2708
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 # Hierarchy alpha_LM exponent / species-count bridge no-go runner
@@ -70,15 +70,6 @@ T7: source-note boundary
 ==============================================================================
 PASS: source note has required keywords and no promotion leakage
          missing=[], leakage=[]
-
-==============================================================================
-N5 execution certificate: resolution granularity of this bridge no-go
-==============================================================================
-per_element: checked — the obstruction is resolved element by element inside the one-parameter bridge family f_N = C * alpha^N: the exact symbolic ratio f_{N_a}/f_{N_b} is alpha^(N_a-N_b), and on the exact rational witness alpha_LM = 907/10000 the element pair N=16 against N=1 gives alpha_LM^15 != 1, with alpha = 1 the only value that would collapse distinct elements. No operator or matrix element is built; the family is symbolic throughout.
-per_site: checked and not executed — no lattice is instantiated anywhere in this runner; Z^d enters only as the source of the corner count 2^d in a declared table, and the framework's open staggered-Dirac realization gate is precisely the missing object that would be needed to build a site-resolved substrate, so the note keeps that gate as its canonical parent rather than closing it.
-per_mode: checked — the species/taste readouts are resolved one regulator at a time on the same four-direction surface: naive=16, wilson=1, twisted_mass=2, staggered_pre_rooting=4 tastes, domain_wall=1, overlap=1, giving 4 distinct counts; every non-naive mode shifts predicted ln(v/M_Pl), and the naive-vs-Wilson mode pair alone spans 10^(-15.64).
-per_block: checked — the dimension staircase is resolved rung by rung, 2^d for d=2..6 giving {2: 4, 3: 8, 4: 16, 5: 32, 6: 64}; each rung would re-anchor the hierarchy exponent to alpha_LM^(2^d), which is the signature that the exponent reads a regulator-surface corner count rather than a regulator-independent quantity. No spatial blocking or coarse-graining is performed.
-lattice_wide: checked and not executed — the a -> 0 continuum limit is consumed as the declared B2 witness packet, not computed: T3 only verifies that the six declared continuum targets collapse to a single label, and the note itself marks B1-B2 as witness/context and not load-bearing. This runner therefore proves no lattice-wide or continuum theorem of its own.
 TOTAL: PASS=15, FAIL=0
 
 ----- stderr -----

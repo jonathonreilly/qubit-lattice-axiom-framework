@@ -1,26 +1,135 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle911_type_vacuity_independent_check_2026_07_28.py
-runner_sha256: 28c56b417959f68391d76927f003657ab0c019f51cd284943e173c1357c9a54d
-input_fingerprint_sha256: a6cf844c387ec98a3e79c3587fc80630da41daba9ee26a4461b77b5a55ce3e9b
-timeout_sec: 300
+runner_sha256: d35ef56622891737df18daebefb14f87503e417a2a332880425de3241cc24ea0
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 49.693
 status: ok
 ----- stdout -----
+CYCLE 911 INDEPENDENT CHECKER -- SPECIFIED TO REFUTE
 ==============================================================================
-CYCLE 911 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
-==============================================================================
 
-  PASS  R0_PINNED_EVIDENCE                   scripts/frontier_cycle911_type_vacuity_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt:MATCH
-  PASS  R0b_CLAIMS_PARSED                    claims_line_found=True
-  PASS  R1_CENSUS_ARITHMETIC_INDEPENDENT     748/4=187 rem 0; sum(0..747)=279378
-  PASS  R2_MAXIMIZER_INDEPENDENT             pairwise_smoothing_always_increases=True grid_maximizer_uniform=True
-  PASS  R3_MERGED_ATOM_CONTROL               (2/6)^2*(1/6)^4=1/11664 > (1/5)^6=1/15625
-  PASS  R4_OVERCLAIM_SCAN                    hits=none
-  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300
+PINS AND FIREWALL
+------------------------------------------------------------------------------
+  [PASS] pins_sha256_all_match
+  [PASS] pins_git_blobs_all_match
+  [PASS] blocked_modules_not_loaded
+  [PASS] firewall_hits_zero
 
-TOTAL: PASS=7 FAIL=0
-VERDICT: PRIMARY_SURVIVES_THIS_CHECK
+MY OWN BUILD (independent census, seeds, states, layout)
+------------------------------------------------------------------------------
+  [PASS] my_census_size_matches_878_world_count  748
+  [PASS] my_census_equals_the_primary_census_shape
+  [PASS] lane_permutation_is_a_bijection  stride 373
 
------ stderr -----
+RESTRICTION GATES, RECOMPUTED FROM MY OWN SCAN
+------------------------------------------------------------------------------
+  [PASS] event_cardinality  92260
+  [PASS] events_by_tag  {'B0': 47872, 'B1': 44224, 'F': 164}
+  [PASS] worlds_with_events
+  [PASS] per_world_range
+  [PASS] beyond_cap
+  [PASS] formation_events_equals_164  164
+  [PASS] M3_M4_zero_set_73088  73088
+  [PASS] M5_zero_set_76184  76184
+  [PASS] M6_zero_set_90841  90841
 
+X1 -- HUNTING A CROSS-LANE STATE ACCESS
+------------------------------------------------------------------------------
+  functions swept: ['frontier_cycle863_time_from_records_2026_07_28.pack_lanes', 'frontier_cycle863_time_from_records_2026_07_28.compile_masked_gate', 'frontier_cycle863_time_from_records_2026_07_28.masked_h_schedules', 'frontier_cycle863_time_from_records_2026_07_28.compile_fast', 'frontier_cycle863_time_from_records_2026_07_28.mask_over', 'frontier_cycle863_time_from_records_2026_07_28.lanes_of', 'frontier_cycle863_time_from_records_2026_07_28.lane_state', 'frontier_cycle863_time_from_records_2026_07_28.replay', 'frontier_cycle878_event_space_groundwork_2026_07_28.dead_wire_rig', 'frontier_cycle878_event_space_groundwork_2026_07_28.composed_scan']
+  column writes containing a SHIFT: []
+  [PASS] every_shifted_column_write_is_lane_local  none found
+  [PASS] random_bipartitions_reproduce_the_full_run  6 bipartitions, 24 orbits, mismatches 0
+  [PASS] single_lane_isolation_runs_reproduce_the_full_run  24 lanes, 24 orbits, mismatches 0
+
+X1(b) -- THE BRANCH MATRIX, RECOMPUTED
+------------------------------------------------------------------------------
+  [PASS] total_world_pairs  279378
+  [PASS] pair_total_matches_primary
+  [PASS] pairs_sharing_a_tick0_state_match  mine 5168, primary 5168
+  [PASS] no_pair_shares_both_a_tick0_state_and_a_schedule  0
+  [PASS] distinct_tick0_state_classes_match  323
+  [PASS] primary_reports_zero_branch_pairs
+
+X2 -- |A| AT EVERY FORMATION EVENT, THREE CHUNK OFFSETS
+------------------------------------------------------------------------------
+  |A| OP_PREPARE      {2: 164}   constructor errors 0
+  |A| OP_ORBIT        {2: 164}
+  |A| OP_SATURATION offset minus_one  corrected {0: 164}   as-pinned-slices-it {0: 163, 2: 1}
+  |A| OP_SATURATION offset landed     corrected {0: 164}   as-pinned-slices-it {0: 161, 2: 3}
+  |A| OP_SATURATION offset plus_one   corrected {0: 61, 2: 103}   as-pinned-slices-it {0: 154, 2: 10}
+  THE PINNED SLICING DEFECT: len(word) = 6212, stations = 11, divisible = False, per-step gate counts = [757, 861, 764, 861, 13, 504, 368, 605, 378, 598, 503]
+  [PASS] formation_event_count_matches_primary  164
+  [PASS] A_prepare_histogram_matches_primary  mine {2: 164} primary {'2': 164}
+  [PASS] A_orbit_histogram_matches_primary
+  [PASS] A_saturation_corrected_matches_primary  mine {0: 164} primary {'0': 164}
+  [PASS] A_saturation_as_pinned_slices_it_matches_primary  mine {0: 161, 2: 3} primary {'0': 161, '2': 3}
+  [PASS] the_pinned_863_slicing_defect_is_real_and_disclosed  the primary discloses it; this checker found it independently
+  [PASS] the_two_saturation_readings_disagree  so the pinned Cycle-863 certificate-A histogram is an artifact of its own slicing
+  [PASS] vacuity_result_is_offset_independent_for_the_menu_operators  OP_PREPARE and OP_ORBIT do not use a chunk offset at all, so the off-by-one attack cannot move them
+  the saturation diagnostic IS offset-sensitive: identical across the three offsets = False
+  [PASS] no_lock_point_has_a_singleton_menu  the |A| = 1 prediction is refuted at every lock point
+  CONTROL at non-formation boundaries: globally-clean samples with |A|=2: 71 (other 0); dirty samples with |A|=0: 1084 (other 765)
+  [PASS] control_shows_the_menu_is_constant_on_every_clean_boundary  so OP_PREPARE measures global cleanliness; the menu does NOT vary with the neighbour conditions -- a real dent in reading it as the axiom's own rule, though it does not restore vacuity
+  [PASS] slow_per_lane_replay_reproduces_the_packed_lock_states  85 lock points at boundary <= 1200, mismatches 0
+
+X3 -- ATTACKING LEMMA I-CONST
+------------------------------------------------------------------------------
+  unitary_witnesses: 6
+  all_unitary: True
+  purity_is_invariant_under_every_witness: True
+  purity_on_pure_states: ['1/1', '1/1', '1/1']
+  purity_on_mixed_states: ['5/8', '17/32', '1/2']
+  purity_constant_on_pure: True
+  purity_nonconstant_on_mixed: True
+  transitivity_on_pure_states: True
+  [PASS] unitary_witnesses_are_unitary
+  [PASS] purity_is_a_unitary_invariant
+  [PASS] purity_is_constant_on_pure_states
+  [PASS] purity_is_nonconstant_once_mixed_states_are_allowed
+  [PASS] rational_rotations_are_transitive_on_pure_states
+  THE PRIMARY'S I-CONST READING SURVIVES THIS ATTACK.  A non-privileging non-constant readout EXISTS -- purity tr(rho^2) is invariant under every unitary witness and is non-constant once non-pure locked possibilities are allowed -- and NO non-constant unitarily-invariant readout exists on the pure locked possibilities, because the rational-rotation witnesses carry every pure state to the same point.  So constancy is forced BY PURITY and by nothing weaker: the two no-privilege sentences alone do not force it.
+
+X4 -- THE DILEMMA AND THE O1 CORRECTION, RE-VERIFIED
+------------------------------------------------------------------------------
+  [PASS] 878_note_calls_all_92260_events_realized_record_writes
+  [PASS] 878_note_attributes_no_occurrence_rule_to_the_axiom_baseline
+  [PASS] pinned_axioms_do_NOT_contain_the_phrase_occurrence_rule
+  [PASS] pinned_axioms_use_occurrence_exactly_once_and_the_other_way
+  [PASS] pinned_axioms_exclusion_list_names_the_formation_rule_clause
+  [PASS] no_go_note_records_the_narrowing
+  M3: zero on 73088/92260 = 18272/23065 (79.22%)  [bookkeeping fraction, not probability]
+  M4: zero on 73088/92260 = 18272/23065 (79.22%)  [bookkeeping fraction, not probability]
+  M5: zero on 76184/92260 = 19046/23065 (82.58%)  [bookkeeping fraction, not probability]
+  M6: zero on 90841/92260 = 90841/92260 (98.46%)  [bookkeeping fraction, not probability]
+  [PASS] every_interface_survivor_zeroes_at_least_79_percent
+  [PASS] c905_excluded_exactly_M1_and_M2
+  [PASS] c907_IF1_selects_M1_and_M2_and_rejects_M6
+  [PASS] M2_is_not_uniform_so_its_census_likelihood_is_strictly_below_M1  min 8320 max 16770
+  [PASS] M1_is_uniform_so_it_is_the_unique_likelihood_argmax  prod p(e) <= (sum p / N)^N = N^-N with equality iff p is constant
+  [PASS] monitor_phase_world_orbit_count_is_68  68
+  [PASS] landed_symmetry_is_not_transitive_on_the_events  world orbits > 1 and the tag partition is invariant, so the F-block can never be carried onto a bank-tag event
+
+TEETH
+------------------------------------------------------------------------------
+  [PASS] T1_tampered_pin_is_rejected
+  [PASS] T2_dropped_world_pair_is_caught
+  [PASS] T3_hardcoded_verdict_flips_on_synthetic_branch_data
+  [PASS] T4_leaked_vacuity_flips_on_a_synthetic_all_ones_table
+  [PASS] T5_skipped_formation_event_is_caught
+  [PASS] T6_planted_branch_detected_and_nonbranch_rejected
+  [PASS] T7_planted_cross_lane_shift_is_caught_by_the_sweep
+  [PASS] T8_tampered_receipt_disagrees_with_my_recomputation
+  [PASS] runtime_within_budget  49.183s / 900s
+
+CAVEATS RECORDED (not refutations)
+------------------------------------------------------------------------------
+  - OP_PREPARE returns |A| = 2 at EVERY globally clean boundary, not only at formation boundaries, so the menu does NOT vary with the neighbour conditions on this substrate.  The primary's C2 verdict (O3 is not vacuous) is unaffected -- |A| is 2, never 1 -- but the reading of OP_PREPARE as the axiom's own nearest-neighbour rule is weaker than the axiom sentence, which requires variation.  This checker records that as a scope caveat, not a refutation.
+  - the condition embedding P-CONDITION-MAP that carries the classified covariant rule space onto this substrate is a DECLARED premise; the class counts in the primary's spectrum are exact given the embedding and carry no force without it.
+  - the saturation diagnostic's |A| histogram is offset-sensitive; the three offsets agree = False.  The two menu operators do not use an offset at all, so the C2 verdict is immune to that attack.
+  - THE PINNED CYCLE-863 CERTIFICATE A HAS A CHUNK-SLICING DEFECT that this checker found independently and the primary now discloses: per_chunk = len(word) // stations assumes step-uniform gate counts that do not hold (len(word) = 6212, stations = 11, not divisible).  Corrected, the diagnostic returns {0: 164}; as pinned, {0: 161, 2: 3}.  Neither ever returns 1, so formation-as-saturation is refuted either way, but the pinned Cycle-863 histogram itself should not be cited as data.
+
+TOTAL: PASS=63 FAIL=0
+CHECKER VERDICT: PRIMARY_SURVIVES_THIS_CHECK
+receipt: outputs/type_vacuity_independent_check_cycle911_receipt_2026_07_28.json
+science_digest: 8f9351a2f117a182cb42dc279e7bbe71ce24a5c4bc44efb69edbf7dcab8416de

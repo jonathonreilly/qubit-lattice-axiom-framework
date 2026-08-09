@@ -1,117 +1,1511 @@
 {
- "all_certificates_pass": true,
- "certificates": {
-  "Q1_EXACT_RATIOS": {
-   "detail": "84/164=21/41 2/3-21/41=19/123 16/24=2/3",
-   "pass": true
-  },
-  "Q2_CYCLIC_PATCH_NULLITY": {
-   "detail": "patches=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)] all_dim_1_spanned_by_count=True",
-   "pass": true
-  },
-  "Q3_GROUP_EQUALITY": {
-   "detail": "C3_rotations=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] Z3_translations=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] equal_as_permutation_sets=True",
-   "pass": true
-  },
-  "Q4_MENU_LINE_AND_NORMALIZATION": {
-   "detail": "all_menu_members_on_the_line=True nonzero_members_one_projective_point=True imported_normalization_forces_alpha=2/27 menu_survivors=['alpha_2_27'] ablation_keeps=5",
-   "pass": true
-  },
-  "Q5_DETERMINISM": {
-   "detail": "double_run_digest_equal=True",
-   "pass": true
-  },
-  "Q6_RUNTIME": {
-   "detail": "elapsed_s=0.0 budget_s=300",
-   "pass": true
-  }
- },
- "claim_type": "bounded_theorem",
- "cycle": 924,
- "headline": "occurrence-rate-route arithmetic: 84/164 = 21/41 misses the imported 2/3 target by exactly 19/123; the declared clause family on cyclic patches Z/2..Z/6 has free dimension 1 spanned by the record count; the three-element rotation and translation groups are equal as permutation sets; the five imported alpha-menu values lie on that one line and the imported normalization 2/9 selects 2/27.  The occurrence route itself is OPEN; no closure claim",
- "imported_values": {
-  "alpha_menu": {
-   "alpha_2_27": "2/27",
-   "alpha_ninth": "1/9",
-   "alpha_one": "1",
-   "alpha_third": "1/3",
-   "alpha_zero": "0"
-  },
-  "fixed_locus_normalization": "2/9",
-  "phi_target": "2/3",
-  "status": "imported from landed but UNAUDITED sources (the fixed-locus theorem note and the two July no-go notes); explicitly conditional; not retained, not Nature-grade"
- },
- "results": {
-  "q1": {
-   "miss": "19/123",
-   "period_ratio": "2/3",
-   "share": "21/41"
-  },
-  "q2": {
-   "patches": [
-    {
-     "free_dim": 1,
-     "patch": "Z/2",
-     "spanned_by_record_count": true
+  "A_pins_and_firewall": {
+    "digest_verification": {
+      "method": "sha256 of file bytes AND `git hash-object` blob id, both compared to the ship/primary receipt's files[] entry",
+      "mismatched": [],
+      "missing": [],
+      "verified": 40
     },
-    {
-     "free_dim": 1,
-     "patch": "Z/3",
-     "spanned_by_record_count": true
+    "firewall": {
+      "firewall_words_in_declarative_prose_only": {
+        "measured mass": 1,
+        "observed mass": 3,
+        "particle data group": 1,
+        "pdg": 6
+      },
+      "observed_mass_or_PDG_numeric_literals_found": [],
+      "rate_provenance_rule": "every rate in the Q1/Q2 pool is loaded from a pinned receipt by a declared field path via jget(); a missing path hard-fails",
+      "retained_bounded_input_declared": {
+        "L3(1,2)": "2/9",
+        "Phi_target": "2/3",
+        "S_sum": "2/3"
+      },
+      "retained_input_is_not_licensed_as_an_angle": "the runner never asserts Phi = S_sum; that identification is the open R-eta obligation and is the object being priced"
     },
-    {
-     "free_dim": 1,
-     "patch": "Z/4",
-     "spanned_by_record_count": true
+    "pins": {
+      "docs/A3_CHANNEL_HALF_FORCED_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+        "git_blob": "11bbac7d0af0deb913fc882d9d95e1cbdb34d9c1",
+        "sha256": "90e5eaecb702ddd0c65e380edaca6387c82386f54e81e00d6a7f5c5d4276ce9a"
+      },
+      "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md": {
+        "git_blob": "92553eb71833303c5d5f0fa74af6511108a8e54b",
+        "sha256": "83f4ab11435b7f5224c1013768dc56c28dfb56f0ab3fdd5811f9b06251dde665"
+      },
+      "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md": {
+        "git_blob": "e2ca96d22c95e991b76d9ec999f12726398bc3df",
+        "sha256": "08c15bdc0c2fc2ccd750ca2752260ae02ec2521a70bc0307103c42058a63ed09"
+      },
+      "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+        "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
+        "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c"
+      },
+      "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {
+        "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+        "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2"
+      },
+      "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+        "git_blob": "53a229b4143f59f5f8c12ccb9f488682bdc2714c",
+        "sha256": "40c80402e2dfd283a4309433cfa48705c45567efadf43107e074332f1cbf5ff0"
+      },
+      "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+        "git_blob": "7b60ee552d8346840ee1dfeec0800079e3981362",
+        "sha256": "43769f08abee65bc535147ad8cf52018c3a71d8afa40af19ddddb00e5cd3315a"
+      },
+      "docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+        "git_blob": "3e69fa8c800083a09f1707f40cd1c89c1e0932eb",
+        "sha256": "6dace6f813851692109901d5e5e7d9a7d2df70ba32f46d7dc13bf5d51aa9ccc3"
+      },
+      "outputs/a3_channel_block_cycle912_ship_receipt_2026_07_28.json": {
+        "git_blob": "ae9cacd80cac4aec86b54da52dcfe8ed1ff96f54",
+        "sha256": "4addde3406f159d54652ceb74e65a59e8be512576785930d0b5cb7b45774b198"
+      },
+      "outputs/a3_channel_cycle912_receipt_2026_07_28.json": {
+        "git_blob": "c30da4add97cd238c42a74869b68b69c0ef49556",
+        "sha256": "817b9b938b901a8d92a4dadbb0615243316dbd97a7325027e92a96506a365998"
+      },
+      "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json": {
+        "git_blob": "4d1366da9325d69bb5bfc9d9604e9e02cf894d9d",
+        "sha256": "9d1ac3b6b8189dcac29c7dc78e786967ead4474fc2d8f24b0853ffb27bee8137"
+      },
+      "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+        "git_blob": "f537715a927b00b817f8de2569953d78929c86db",
+        "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd"
+      },
+      "outputs/selection_block_cycle913_ship_receipt_2026_07_28.json": {
+        "git_blob": "d86558658a8f0371cfce08bd81e91ec621033735",
+        "sha256": "995a1529759dc82ecdcbfc7f3c0d058c27299a8b84aad93164417b0fb3a3ed97"
+      },
+      "outputs/selection_function_cycle913_receipt_2026_07_28.json": {
+        "git_blob": "5ac6a40c316c7a90bcf867eb6507518ba976169b",
+        "sha256": "0de8d785c2139126b813166e090493d65cb289508b46de7f928b440facb82ecd"
+      },
+      "outputs/source_action_bridge_pricing_cycle871_receipt_2026_07_28.json": {
+        "git_blob": "bf061c55bdbb0e368d480e3c75b1123402eca858",
+        "sha256": "a909447b15eda1b7fb5ba7e86a76f929dcff35d19a48bc26992aaa4bb0bed752"
+      },
+      "outputs/type_vacuity_block_cycle911_ship_receipt_2026_07_28.json": {
+        "git_blob": "9375fa9f197934735c4b202072492b709c0ac36f",
+        "sha256": "466878907d1e320d62bb84b0f55db27f55313116a2204b8e963cbbab0e3bb128"
+      },
+      "outputs/type_vacuity_cycle911_receipt_2026_07_28.json": {
+        "git_blob": "af51342a72c56db8e562e1f1a607f207508b42ed",
+        "sha256": "90d1fb2a3ac31065f75345ac1e98520622aa6302c50dcf4a8a11f44a1cde11b0"
+      },
+      "outputs/within_world_block_cycle909_ship_receipt_2026_07_28.json": {
+        "git_blob": "a6f255550d84d8840588a048f1e1ea73f0b68b6e",
+        "sha256": "24089daad738b48a5eb6c462e656b22b076a6e6a940ec1e7c1ed17092a5322a1"
+      },
+      "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": {
+        "git_blob": "4843b2ca7dd5af0ee1c67ff11aa4e47d7cb22976",
+        "sha256": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52"
+      },
+      "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py": {
+        "git_blob": "c1a4d57fe4e41258d6988678aa996b1e7ea7d5f6",
+        "sha256": "7f0f9361a168da15c7d7e7ccea9268e4fa325afcdd570e6ef09c08be8884498b"
+      },
+      "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py": {
+        "git_blob": "01b62387cd7848f2c59d7c65376a64d95fcbc4b3",
+        "sha256": "5b837de159fe783abf02e58d283ada1b17b84caca8c102e5980e10374a765f26"
+      }
     },
-    {
-     "free_dim": 1,
-     "patch": "Z/5",
-     "spanned_by_record_count": true
-    },
-    {
-     "free_dim": 1,
-     "patch": "Z/6",
-     "spanned_by_record_count": true
+    "vendor_provenance": {
+      "blockG2": {
+        "branch": "physics-loop/toe-time-blockG2-20260802",
+        "command": "git checkout $(git rev-parse physics-loop/toe-time-blockG2-20260802) -- <cycle871 paths>",
+        "cycles": [
+          871
+        ]
+      },
+      "blockQ10": {
+        "branch": "physics-loop/toe-time-blockQ10-20260802",
+        "command": "git checkout $(git rev-parse physics-loop/toe-time-blockQ10-20260802) -- <909/911/913 paths>",
+        "cycles": [
+          909,
+          911,
+          913
+        ]
+      },
+      "blockQ9": {
+        "branch": "physics-loop/toe-time-blockQ9-20260802",
+        "command": "git checkout $(git rev-parse physics-loop/toe-time-blockQ9-20260802) -- <cycle912 paths>",
+        "cycles": [
+          912
+        ],
+        "spec_deviation": "the spec placed the cycle912 A3-channel artifacts on blockQ10 ('the full Born-lane stack through Cycle 913').  They are NOT there: blockQ10 carries no path matching *912*, the cycle912 ship receipt records block toe-time-blockQ9-20260802, and `git merge-base --is-ancestor blockQ9 blockQ10` is FALSE (Q9 and Q10 are siblings).  Vendored from blockQ9 at its own ship pin."
+      },
+      "blockT5": {
+        "branch": "physics-loop/toe-time-blockT5-20260802",
+        "command": "git checkout $(git rev-parse physics-loop/toe-time-blockT5-20260802) -- <cycle891 paths>",
+        "cycles": [
+          891
+        ]
+      }
     }
-   ]
   },
-  "q3": {
-   "equal_as_permutation_sets": true
+  "B_restriction_gates": {
+    "angle_native_no_go": {
+      "exit": 0,
+      "expected_by_note": "TOTAL: PASS=128 FAIL=0",
+      "reproduced_expected_close": true,
+      "runner": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py",
+      "total_line": "TOTAL: PASS=128 FAIL=0"
+    },
+    "bridge_871": {
+      "checker_total": "TOTAL: PASS=8 FAIL=0",
+      "primary_total": "TOTAL: PASS=8 FAIL=0"
+    },
+    "menu_exhibition_reproduced": [
+      {
+        "I_on_empty_record": "0",
+        "I_on_one_full_C3_orbit": "0",
+        "alpha": "0",
+        "is_the_fixed_locus_density_member": false,
+        "name": "zero",
+        "satisfies_C3_covariance": true,
+        "satisfies_empty_record_normalization": true,
+        "satisfies_finite_additivity": true
+      },
+      {
+        "I_on_empty_record": "0",
+        "I_on_one_full_C3_orbit": "1/3",
+        "alpha": "1/9",
+        "is_the_fixed_locus_density_member": false,
+        "name": "one_ninth",
+        "satisfies_C3_covariance": true,
+        "satisfies_empty_record_normalization": true,
+        "satisfies_finite_additivity": true
+      },
+      {
+        "I_on_empty_record": "0",
+        "I_on_one_full_C3_orbit": "1",
+        "alpha": "1/3",
+        "is_the_fixed_locus_density_member": false,
+        "name": "one_third",
+        "satisfies_C3_covariance": true,
+        "satisfies_empty_record_normalization": true,
+        "satisfies_finite_additivity": true
+      },
+      {
+        "I_on_empty_record": "0",
+        "I_on_one_full_C3_orbit": "3",
+        "alpha": "1",
+        "is_the_fixed_locus_density_member": false,
+        "name": "unit",
+        "satisfies_C3_covariance": true,
+        "satisfies_empty_record_normalization": true,
+        "satisfies_finite_additivity": true
+      },
+      {
+        "I_on_empty_record": "0",
+        "I_on_one_full_C3_orbit": "2/9",
+        "alpha": "2/27",
+        "is_the_fixed_locus_density_member": true,
+        "name": "fixed_locus_density_member",
+        "satisfies_C3_covariance": true,
+        "satisfies_empty_record_normalization": true,
+        "satisfies_finite_additivity": true
+      }
+    ],
+    "stretch_no_go": {
+      "SOURCE_INCONSISTENCY_BOTH_READINGS": "READING 1 (the runner): the stretch no-go closes clean with PASS=113 FAIL=0 on this checkout -- zero failures, so the menu exhibition and every exact check in the note's list reproduce.  READING 2 (the note): its Verification section states 'TOTAL: PASS>=120 FAIL=0', which is NOT met at PASS=113.  Both readings are recorded; this block does not silently pick one.  The gate this cycle needs is the MENU EXHIBITION, which is reproduced independently below (B3) in exact rational arithmetic, so the discrepancy in the note's pass-count claim does not affect any Cycle-924 result.  The discrepancy is reported for the audit lane, not repaired here.",
+      "exit": 0,
+      "fail_is_zero": true,
+      "note_claim_met": false,
+      "note_claimed_close": "TOTAL: PASS>=120 FAIL=0",
+      "observed_pass": 113,
+      "runner": "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py",
+      "total_line": "TOTAL: PASS=113 FAIL=0 CHECKS=113"
+    }
   },
-  "q4": {
-   "forced_alpha": "2/27",
-   "menu_members_are_solutions": {
-    "alpha_2_27": true,
-    "alpha_ninth": true,
-    "alpha_one": true,
-    "alpha_third": true,
-    "alpha_zero": true
-   },
-   "survivors_under_imported_normalization": [
-    "alpha_2_27"
-   ]
+  "C_Q1_rate_ratio_enumeration": {
+    "arity_finding": {
+      "consequence_for_R_eta": "R-eta's target is a C3 (three-fold) object: Phi_target = S_sum = 3 * L3(1,2), the UNAVERAGED SUM over a three-element fixed locus. The most natural occurrence reading of 2/3 -- 'two of three outcomes occur' -- has NO realization anywhere on the occurrence surface, because no three-element menu exists on it.  A C3-shaped event-rate ratio cannot be formed on a binary arena without an embedding, and that embedding is itself unlicensed.",
+      "occurrence_arena_arity": 2,
+      "statement": "Every selection site on the pinned occurrence surface carries a TWO-element menu: 911 C2 proves |A| = 2 at all 164 lock points under both operational readings, and 913 confirms 164 sites x 2 possibilities = 328 site-possibility pairs.  The occurrence arena is uniformly BINARY."
+    },
+    "counts_by_label": {
+      "bookkeeping_fraction": 3,
+      "derived_theorem": 9,
+      "measured_census": 4
+    },
+    "objects": [
+      {
+        "counts": {
+          "(0,1)": 80,
+          "(1,0)": 84,
+          "total": 164
+        },
+        "cycle": 913,
+        "exact_values": {
+          "odds_(1,0):(0,1)": "21/20",
+          "share_(0,1)": "20/41",
+          "share_(1,0)": "21/41"
+        },
+        "honesty_label": "bookkeeping_fraction",
+        "id": "R913-A",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "cross-world selection split at the 164 formation lock points",
+        "ratio_of": "count of lock points realizing menu item (1,0) or (0,1), over the total number of lock points",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "913 proves each world locks exactly once, so this is not a within-world frequency; it is an average over SETUPS.  913: 'the cross-world 84/80 split is an average over setups -- the operation the realized-state primitive forbids verbatim.'"
+      },
+      {
+        "counts": {
+          "pairs": 328,
+          "possibilities_per_site": 2,
+          "realized": 164,
+          "sites": 164
+        },
+        "cycle": 913,
+        "exact_values": {
+          "realized:counterfactual": "1",
+          "realized_share": "1/2"
+        },
+        "honesty_label": "bookkeeping_fraction",
+        "id": "R913-B",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the A3 arena occupancy",
+        "ratio_of": "realized site-possibility pairs over all site-possibility pairs (164 sites x 2 menu items = 328)",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "1/2 by construction: |A| = 2 at every lock point (911) and exactly one item is realized per lock point (913).  Carries no information about weights."
+      },
+      {
+        "counts": {
+          "at_tick_zero": 24,
+          "no_record_event": 67,
+          "total": 164
+        },
+        "cycle": 913,
+        "exact_values": {
+          "share": "67/164",
+          "tick0_share": "6/41"
+        },
+        "honesty_label": "measured_census",
+        "id": "R913-C",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the record-free subpopulation of lock points",
+        "ratio_of": "lock points that have written NO record event, over all lock points",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "a census over the corpus, used by 913 as the decisive witness that the selection is not record-content determined."
+      },
+      {
+        "counts": {
+          "gates_targeting_endpoint_wires": 0,
+          "gates_total": 34166
+        },
+        "cycle": 913,
+        "exact_values": {
+          "write_rate_on_endpoint_wires": "0"
+        },
+        "honesty_label": "derived_theorem",
+        "id": "R913-D",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the reads-never-writes structural lemma (a rate of zero)",
+        "ratio_of": "compiled gates targeting the endpoint wires, over all compiled gates",
+        "source_receipt_own_label": null,
+        "why": "compile-level and exact over all 34,166 gates: the landed dynamics READS the selection and never WRITES it.  This is a genuine derived rate, and its value is exactly 0."
+      },
+      {
+        "counts": {
+          "lock_events_per_world": 1
+        },
+        "cycle": 913,
+        "exact_values": {
+          "only_attainable_value": "1/1 (degenerate)"
+        },
+        "honesty_label": "derived_theorem",
+        "id": "R913-E",
+        "is_typed_as_an_occurrence_weight": true,
+        "minimal_determining_context_cardinality": 1,
+        "object": "within-world frequency (the only genuinely occurrence-typed frequency the substrate could carry)",
+        "ratio_of": "occurrences of a menu item inside ONE world, over that world's lock events",
+        "source_receipt_own_label": null,
+        "why": "913: 'Each world locks exactly once -- the within-world frequency is degenerate and no weight is estimable inside a world.'  The occurrence-typed frequency EXISTS but is identically 1 and carries no information."
+      },
+      {
+        "counts": {
+          "branch_pairs": 0,
+          "world_pairs": 279378
+        },
+        "cycle": 911,
+        "exact_values": {
+          "branch_rate": "0"
+        },
+        "honesty_label": "derived_theorem",
+        "id": "R911-A",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the branch rate of the 748-world census",
+        "ratio_of": "branching world pairs over all world pairs (279,378)",
+        "source_receipt_own_label": null,
+        "why": "the complete branch matrix over ALL pairs, with planted controls in both directions.  BRANCH_PAIRS = 0 is what re-types the census as alternative INITIAL CONDITIONS, which is why the census weightings are not occurrence weights at all."
+      },
+      {
+        "counts": {
+          "lock_points": 164,
+          "menu_size": 2
+        },
+        "cycle": 911,
+        "exact_values": {
+          "uniform_weight_if_one_existed": "1/2",
+          "|A|": "2"
+        },
+        "honesty_label": "derived_theorem",
+        "id": "R911-B",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "menu cardinality at every selection site",
+        "ratio_of": "not a ratio -- the arity of the occurrence arena",
+        "source_receipt_own_label": null,
+        "why": "911 C2: |A| = 2 at ALL 164 lock points under both operational readings, triple-verified across chunk offsets and chunkings.  THE OCCURRENCE ARENA IS UNIFORMLY BINARY."
+      },
+      {
+        "counts": {
+          "affine_simplex_dimension": 52017
+        },
+        "cycle": 912,
+        "exact_values": {
+          "affine_dimension_of_the_admissible_set": "52017",
+          "witness_1": "1/52018",
+          "witness_2": "23/23065"
+        },
+        "honesty_label": "derived_theorem (an UNDETERMINACY theorem)",
+        "id": "R912-A",
+        "is_typed_as_an_occurrence_weight": true,
+        "object": "admissible probability readouts under the repo's own named closing channel",
+        "ratio_of": "probability assigned to a record configuration -- the ONLY genuinely probability-typed objects on the whole surface",
+        "source_receipt_own_label": null,
+        "why": "912 C2: the landed sentences FORCE the invisibility half (every admissible readout is a function of the record-content multiset alone) and force the frequency half NOT AT ALL, leaving an affine 52017-dimensional simplex and selecting NONE.  Two distinct admissible probabilities are exhibited with a disagreement region.  The missing premise is exactly A3."
+      },
+      {
+        "counts": {
+          "distinct_mod_613": 853,
+          "recipes": 1404
+        },
+        "cycle": 912,
+        "exact_values": {
+          "as_decimal": "0.6075",
+          "fraction": "853/1404"
+        },
+        "honesty_label": "bookkeeping_fraction",
+        "id": "R912-B",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "effective independence of the Cycle-909 recipe survey",
+        "ratio_of": "distinct residue vectors mod 613 over recipes surveyed",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "a deflation measurement of an evidence base, not a rate of anything happening."
+      },
+      {
+        "counts": {
+          "denominator": 19003,
+          "factorization": "19003 = 31 x 613"
+        },
+        "cycle": 909,
+        "exact_values": {
+          "everything_else": "15600/19003",
+          "position_1": "2910/19003",
+          "position_2": "492/19003",
+          "position_3": "1/19003"
+        },
+        "honesty_label": "derived_theorem",
+        "id": "R909-A",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the degree-0 carrier's required orbit-aggregate profile",
+        "ratio_of": "fraction of a carrier's TOTAL that must sit on each of three designated positions",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "the exact constraint the interface identification demands.  909's own label on every fraction is quoted; these are apportionment demands, not occurrence rates."
+      },
+      {
+        "counts": {
+          "denominator": 175
+        },
+        "cycle": 909,
+        "exact_values": {
+          "everything_else": "144/175",
+          "position_1": "22/175",
+          "position_2": "9/175",
+          "position_3": "0/1"
+        },
+        "honesty_label": "derived_theorem",
+        "id": "R909-B",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the degree-2 carrier's required orbit-aggregate profile",
+        "ratio_of": "same, for the degree-2 carrier",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "same typing as R909-A."
+      },
+      {
+        "counts": {
+          "atom_sites": [
+            12,
+            6,
+            6,
+            1
+          ]
+        },
+        "cycle": 909,
+        "exact_values": {
+          "c2_over_c0_per_site": [
+            "36/325",
+            "44/485",
+            "9/41",
+            "0"
+          ],
+          "identity": "c_0(A) = sites * (p^2 + q^2),  c_2(A) = sites * 2 p q",
+          "layer_pairs_(p,q)": [
+            [
+              36,
+              2
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "per_site_degree0": [
+            "1300",
+            "485",
+            "82",
+            "1"
+          ],
+          "per_site_degree2": [
+            "144",
+            "44",
+            "18",
+            "0"
+          ]
+        },
+        "honesty_label": "derived_theorem (exact identity), with the per-site READING licensed by the named premise P-SITE-UNIFORM",
+        "id": "R909-C",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "the two-layer interference spectrum (per-site amplitudes)",
+        "ratio_of": "column entry over the atom's site count; then the degree-2 to degree-0 per-site ratio",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "c0/s = p^2+q^2 and c2/s = 2pq exactly.  909 states both readings and supports only (A), a new named import taken twice.  Not an event rate: an apportionment spectrum."
+      },
+      {
+        "counts": {
+          "at_position_0": 2,
+          "escape_worlds": 11
+        },
+        "cycle": 909,
+        "exact_values": {
+          "share_at_position_0": "2/11",
+          "share_at_position_128": "9/11"
+        },
+        "honesty_label": "measured_census",
+        "id": "R909-D",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "escape-orbit inhomogeneity",
+        "ratio_of": "worlds whose F event sits at position 0, over the 11 escape worlds",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "909 reports this AGAINST the lane's tidiness: the escape orbit is not homogeneous."
+      },
+      {
+        "counts": {
+          "B0": 64,
+          "B1": 64,
+          "F": 1,
+          "events_per_world": 129
+        },
+        "cycle": 909,
+        "exact_values": {
+          "B0": "64/129",
+          "B1": "64/129",
+          "F": "1/129"
+        },
+        "honesty_label": "measured_census",
+        "id": "R909-E",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "per-world event tag composition",
+        "ratio_of": "events of each tag over the world's 129 events",
+        "source_receipt_own_label": "bookkeeping fraction, not probability",
+        "why": "a composition census of a realized orbit."
+      },
+      {
+        "counts": {
+          "B=6_count": 3,
+          "B=7_count": 6
+        },
+        "cycle": 891,
+        "exact_values": {
+          "B=6": [
+            8,
+            16,
+            24
+          ],
+          "B=7": [
+            8,
+            16,
+            24,
+            32,
+            40,
+            48
+          ]
+        },
+        "honesty_label": "derived_theorem (value-level holdout exact at B=6 and B=7; carrier-level 3/4 at B=7 -- the P=32 carrier prediction FAILED and is reported as such)",
+        "id": "R891-A",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "readable episode periods under the entry-gap rule P = 8(B-1-b), sealed-holdout verified",
+        "ratio_of": "period of one readable clock family to another; the EVENT RATE is the reciprocal of the period, so a period ratio P_i/P_j is the event-rate ratio rate_j/rate_i",
+        "source_receipt_own_label": null,
+        "why": "the campaign's only exact period/event-rate instrument.  The periods are multiples of 8 by the entry-gap law, so their ratios are ratios of small integers -- which is precisely why this family is the one that can hit a small rational by accident.  See Q2."
+      },
+      {
+        "counts": {
+          "B=4": 6,
+          "B=5": 153,
+          "B=6": 247,
+          "B=7": 306
+        },
+        "cycle": 891,
+        "exact_values": {
+          "B=4": "6",
+          "B=5": "153",
+          "B=6": "247",
+          "B=7": "306"
+        },
+        "honesty_label": "measured_census",
+        "id": "R891-B",
+        "is_typed_as_an_occurrence_weight": false,
+        "object": "co-occurrence census (clocks reading both a DELTA and a complement period)",
+        "ratio_of": "clock counts by bank count",
+        "source_receipt_own_label": null,
+        "why": "counts of clocks, recomputed and checker-reproduced row for row."
+      }
+    ]
   },
-  "science_digest": "5fad62b13cede8af12035bfe821e83193f7c6c9c7ba433b09769a94056645de8"
- },
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix": "self-contained rewrite: route-closure claims withdrawn; false-PASS checks replaced by fail-closed predicates; legacy monolith-loading gate removed; imports marked unaudited-conditional",
-  "iteration": 1,
-  "reviewer": "Sol"
- },
- "route_status": "the occurrence-to-threefold-readout route is OPEN.  Withdrawn: referent-gap, arity-mismatch and terminality closure claims (review findings; vocabulary scans and binary local menus do not exclude derivable maps or aggregates)",
- "science_digest": "5fad62b13cede8af12035bfe821e83193f7c6c9c7ba433b09769a94056645de8",
- "stipulated_scope_inputs": {
-  "recorded_period_pair": [
-   16,
-   24
+  "D_Q2_license_hunt": {
+    "any_licensed": false,
+    "bin_census": {
+      "bins": {
+        "BIN 1 misses the target": "The occurrence-typed frequencies miss.  The realized share of the landed selection is 21/41, and 2/3 - 21/41 = 19/123 exactly.  The within-world frequency is degenerate at 1.  The A3-channel admissible probabilities are not a single value at all but an affine 52,017-dimensional simplex.",
+        "BIN 2 cannot pin a nonzero member": "Unchanged and reinforced.  Section E shows the readout constraint family (empty-record + count-once additivity + covariance) is HOMOGENEOUS, so its solution set is a line closed under rescale; Cycle 871 computes that line's dimension to be exactly 1.  Bin 2 is now a computed number, not a qualitative observation.",
+        "BIN 3 restates the license": "Unchanged.  Any sentence asserting that a bookkeeping fraction IS the charged-lepton holonomy is R-eta in occurrence coordinates.",
+        "BIN 4 free-selection hit (NEW)": "The occurrence surface DOES contain ratios equal to 2/3 exactly.  They arise only by selecting one (numerator, denominator) pair out of many admissible ones -- the model degeneracy is recorded per candidate.  Selecting the pair is a license, structurally identical to bin 3's alpha = 1.",
+        "BIN 5 no referent (NEW, and the decisive one)": "The pinned occurrence corpus contains no charged-lepton, holonomy, R-eta or fixed-locus referent at all.  The identification sentence cannot be STATED in occurrence vocabulary, let alone derived.  This is mechanical, not a search failure.",
+        "BIN 6 arity mismatch (NEW, structural)": "R-eta's target is a C3 (three-fold) object: Phi_target = S_sum = 3 * L3(1,2), the UNAVERAGED SUM over a three-element fixed locus. The most natural occurrence reading of 2/3 -- 'two of three outcomes occur' -- has NO realization anywhere on the occurrence surface, because no three-element menu exists on it.  A C3-shaped event-rate ratio cannot be formed on a binary arena without an embedding, and that embedding is itself unlicensed."
+      },
+      "candidate_counts_by_bin": {
+        "BIN 5 (new)": 9
+      },
+      "candidate_counts_by_bin_if_a_referent_were_supplied": {
+        "BIN 4 (new)": 9
+      },
+      "route_3_verdict": "ROUTE 3 DOES NOT CLOSE, and it is now PRICED.  To license Phi = S_sum = 2/3 the occurrence lane must supply, jointly: (1) an occurrence weight that exists at all -- which costs either the A3 import or the named successor substrate in which endpoint content is a gate TARGET; (2) a charged-lepton referent on the occurrence surface, which currently has none; and (3) a forced (not selected) pair of objects whose ratio is the holonomy.  None of the three is available, and (1) is blocked by a theorem rather than by an absence of search.",
+      "why_the_secondary_census_matters": "G1 (the referent gate) fails first for every candidate, which would mask the remaining bins.  Granting a referent for free -- the most generous possible reading -- the candidates STILL do not license: they fall into bin 4 (the 2/3 is reached only by selecting one pair out of many admissible ones) and bin 3 (the objects are bookkeeping fractions by their own sources' labels).  Route 3 fails independently at three separate gates."
+    },
+    "gated_candidates": [
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 127,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "site count of atom 0",
+          "cycle": 909,
+          "label": "atom_sites[0]",
+          "value": 12
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B6_P8 / atom_sites[0] (cycle 891 / cycle 909) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 6",
+          "cycle": 891,
+          "label": "period_B6_P8",
+          "value": 8
+        },
+        "same_cycle": false,
+        "same_kind": false,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 89,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "lock points at tick zero",
+          "cycle": 913,
+          "label": "tick0_locks",
+          "value": 24
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B6_P16 / tick0_locks (cycle 891 / cycle 913) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 6",
+          "cycle": 891,
+          "label": "period_B6_P16",
+          "value": 16
+        },
+        "same_cycle": false,
+        "same_kind": false,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 23,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "readable episode period at bank count 6",
+          "cycle": 891,
+          "label": "period_B6_P24",
+          "value": 24
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B6_P16 / period_B6_P24 (cycle 891 / cycle 891) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 6",
+          "cycle": 891,
+          "label": "period_B6_P16",
+          "value": 16
+        },
+        "same_cycle": true,
+        "same_kind": true,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 23,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P24",
+          "value": 24
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B6_P16 / period_B7_P24 (cycle 891 / cycle 891) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 6",
+          "cycle": 891,
+          "label": "period_B6_P16",
+          "value": 16
+        },
+        "same_cycle": true,
+        "same_kind": false,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 127,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "site count of atom 0",
+          "cycle": 909,
+          "label": "atom_sites[0]",
+          "value": 12
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B7_P8 / atom_sites[0] (cycle 891 / cycle 909) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P8",
+          "value": 8
+        },
+        "same_cycle": false,
+        "same_kind": false,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 89,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "lock points at tick zero",
+          "cycle": 913,
+          "label": "tick0_locks",
+          "value": 24
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B7_P16 / tick0_locks (cycle 891 / cycle 913) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P16",
+          "value": 16
+        },
+        "same_cycle": false,
+        "same_kind": false,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 23,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "readable episode period at bank count 6",
+          "cycle": 891,
+          "label": "period_B6_P24",
+          "value": 24
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B7_P16 / period_B6_P24 (cycle 891 / cycle 891) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P16",
+          "value": 16
+        },
+        "same_cycle": true,
+        "same_kind": false,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 23,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P24",
+          "value": 24
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B7_P16 / period_B7_P24 (cycle 891 / cycle 891) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P16",
+          "value": 16
+        },
+        "same_cycle": true,
+        "same_kind": true,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      },
+      {
+        "G1_referent_exists_on_the_occurrence_surface": false,
+        "G2_distinct_values_reachable_from_the_same_cycles": 23,
+        "G2_pair_selection_is_forced": false,
+        "G3_object_is_typed_as_an_occurrence_weight": false,
+        "G4_no_import_of_2/3_or_2/9": true,
+        "LICENSED": false,
+        "classification": "BIN 5 (new) -- NO REFERENT.  The occurrence surface has no vocabulary in which the identification sentence can even be stated; connecting the objects requires importing the charged-lepton referent from outside the surface, and that import IS the license.",
+        "denominator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P48",
+          "value": 48
+        },
+        "exact_ratio": "2/3",
+        "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the ratio period_B7_P32 / period_B7_P48 (cycle 891 / cycle 891) on the occurrence surface",
+        "numerator": {
+          "counts": "readable episode period at bank count 7",
+          "cycle": 891,
+          "label": "period_B7_P32",
+          "value": 32
+        },
+        "same_cycle": true,
+        "same_kind": true,
+        "secondary_classification_if_a_referent_were_supplied": "BIN 4 (new) -- FREE-SELECTION HIT.  The ratio hits the target only because a particular (numerator, denominator) pair was selected out of many equally admissible ones; the selecting sentence is a license, structurally identical to the no-go's bin 3 alpha = 1 insertion.",
+        "weight_typed_objects_on_the_surface": [
+          "R912-A",
+          "R913-E"
+        ]
+      }
+    ],
+    "most_natural_candidate": {
+      "exact": "21/41",
+      "exact_miss": "19/123",
+      "note": "this is the ONLY frequency on the surface that even looks like an occurrence rate, and it is both numerically wrong and forbidden as a weight.",
+      "object": "realized share of the landed selection at the lock points",
+      "target": "2/3"
+    },
+    "numerical_hits_at_2_3": 9,
+    "ordered_pairs_evaluated": 1369,
+    "pool_size": 38,
+    "referent_gate": {
+      "REFERENT_GAP": true,
+      "corpus_scanned": [
+        "docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/A3_CHANNEL_HALF_FORCED_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json",
+        "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+        "outputs/a3_channel_cycle912_receipt_2026_07_28.json",
+        "outputs/selection_function_cycle913_receipt_2026_07_28.json",
+        "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json"
+      ],
+      "hits": {},
+      "statement": "Across all ten pinned occurrence artifacts (five notes, five receipts) there is not one occurrence of 'lepton', 'holonomy', 'R-eta', 'fixed-locus', 'Koide', 'AC_phi' or 'S_sum'.  The occurrence surface and the R-eta surface share NO vocabulary.  Every identification sentence connecting them must therefore import its own referent, and that import is exactly the license route 3 was asked to avoid.",
+      "tokens_searched": [
+        "lepton",
+        "holonomy",
+        "r-eta",
+        "r_eta",
+        "fixed-locus",
+        "fixed_locus",
+        "koide",
+        "ac_phi",
+        "acphilambda",
+        "cycle angle",
+        "s_sum"
+      ]
+    },
+    "terminality": {
+      "A3_verdict_912": "The repo's own named closing channel forces the invisibility half completely and the frequency half not at all, leaving an affine 52,017-dimensional simplex of admissible probability readouts and selecting NONE.  The missing premise is exactly A3: 'that a probability measure over outcomes exists and is a function of the (record/quantum) state.'",
+      "O3_verdict_913": "O3 has NO non-forbidden realization on this substrate.  Each world locks exactly once, so no weight is estimable inside a world; the cross-world split is an average over setups, which the realized-state primitive forbids verbatim; and the coordinate distinguishing the two possibilities is a SETUP coordinate never written by the dynamics, so a weight over the counterfactual menu is a weight over setups under another name.",
+      "consequence_for_route_3": "Route 3 asked for 'an occurrence theorem whose event-rate ratio licenses the same value without importing it'.  The occurrence surface now carries a THEOREM in the opposite direction: on this substrate no occurrence weight exists to be ratioed, unless A3 is imported or the successor substrate (endpoint content as a gate TARGET) is built.  Route 3 is therefore not merely unfulfilled -- it is blocked by a proved obstruction that did not exist when the route was named."
+    }
+  },
+  "E_Q3_alpha_menu_under_the_bridge": {
+    "controls": [
+      {
+        "changed": true,
+        "control": "add the INHOMOGENEOUS constraint I(1,1,1) = L3(1,2) = 2/9",
+        "reading": "the survivor set collapses from the whole line to the single point alpha = 2/27.  This is the exact content of the missing license: an INHOMOGENEOUS source pins, a homogeneous family never does.",
+        "survivor_alpha": "2/27",
+        "survivor_set": [
+          "fixed_locus_density_member"
+        ]
+      },
+      {
+        "changed": true,
+        "control": "drop covariance",
+        "free_dim": 3,
+        "reading": "covariance is load-bearing: without it the singleton values are independent and the dimension is the site count."
+      },
+      {
+        "changed": true,
+        "control": "drop count-once additivity",
+        "free_dim": 3,
+        "reading": "additivity is what triangularly eliminates every multi-cell configuration down to singletons."
+      },
+      {
+        "changed": true,
+        "control": "drop empty-record normalization",
+        "free_dim": 2,
+        "reading": "empty-record removes the constant offset."
+      }
+    ],
+    "menu_survivors": {
+      "fixed_locus_density_member": "2/27",
+      "one_ninth": "1/9",
+      "one_third": "1/3",
+      "unit": "1",
+      "zero": "0"
+    },
+    "obligation_map": {
+      "bridge_free_dim": 1,
+      "decomposition_matches_R_eta": "871's readout clause decomposes EXACTLY along R-eta's own h-class / h-unit split, and it does so by 871's solver rather than by assertion: 3 coordinates minus 1 empty-record row = 2.",
+      "readout_coordinates": [
+        "density scale (= the alpha the menu parameterizes; h-class)",
+        "angle scale (the density-to-angle conversion; h-unit)",
+        "additive offset (killed by empty-record)"
+      ],
+      "readout_free_dim": 2
+    },
+    "patch_sweep": [
+      {
+        "free_dim": 1,
+        "patch": "Z/2",
+        "sites": 2,
+        "unknowns": 4
+      },
+      {
+        "free_dim": 1,
+        "patch": "Z/3",
+        "sites": 3,
+        "unknowns": 8
+      },
+      {
+        "free_dim": 1,
+        "patch": "Z/4",
+        "sites": 4,
+        "unknowns": 16
+      },
+      {
+        "free_dim": 1,
+        "patch": "Z/5",
+        "sites": 5,
+        "unknowns": 32
+      },
+      {
+        "free_dim": 1,
+        "patch": "Z/6",
+        "sites": 6,
+        "unknowns": 64
+      }
+    ],
+    "route_1_subset_form": {
+      "clauses": [
+        "A(empty)=0",
+        "A(a|b)=A(a)+A(b) for disjoint a,b",
+        "A(g.S)=A(S) for g in C3"
+      ],
+      "free_dim": 1,
+      "patch": "Z/3 (the C3 orbit record), 3 cells",
+      "unknowns": 8
+    },
+    "route_2_linear_functional_form": {
+      "agreement_with_subset_form": true,
+      "form": "I(x0,x1,x2) = a0 x0 + a1 x1 + a2 x2",
+      "free_dim": 1,
+      "solution": "a0 = a1 = a2 = alpha, alpha free"
+    },
+    "route_3_structural_871": {
+      "singleton_orbits": 1,
+      "why": "the C3 translation action is transitive on the three cells, so exactly ONE singleton orbit survives -- 871's Result 1 verbatim, instantiated on the R-eta patch."
+    },
+    "scale_orbit_collapse": {
+      "orbits_of_the_menu_under_alpha -> t*alpha (t != 0)": {
+        "nonzero_orbit": [
+          "fixed_locus_density_member",
+          "one_ninth",
+          "one_third",
+          "unit"
+        ],
+        "zero_orbit": [
+          "zero"
+        ]
+      },
+      "pairwise_ratios": {
+        "fixed_locus_density_member/one_ninth": "2/3",
+        "fixed_locus_density_member/one_third": "2/9",
+        "fixed_locus_density_member/unit": "2/27",
+        "one_ninth/one_third": "1/3",
+        "one_ninth/unit": "1/9",
+        "one_third/unit": "1/3"
+      },
+      "verdict": "Modulo the scale group the five-member menu is TWO members: the zero member and one nonzero member.  {1/9, 1/3, 1, 2/27} are the SAME point of the projectivized solution space."
+    },
+    "sharp_verdict": {
+      "answer": "BOTH, on different coordinates -- and the split is exact.",
+      "does_the_pricing_narrow_the_menu": "NO MEMBER IS ELIMINATED, but the menu is narrowed STRUCTURALLY.  The survivor set is not the five exhibited alphas -- it is the entire line, so the stretch no-go's five-member exhibition UNDERSTATES the freedom.  What the pricing buys is that the freedom is certified to be exactly one dimension and to be HOMOGENEOUS, hence unpinnable by any further constraint of the same family.",
+      "orthogonal_component": "ORTHOGONAL.  The readout obligation is 2-dimensional (density scale AND angle scale) while the bridge is 1-dimensional and its generator is the uniform scale.  The bridge prices the density scale -- h-class -- and does not touch the angle scale -- h-unit. 871's own obligation map classifies the readout identity as STRICTLY STRONGER than the bridge for exactly this reason.",
+      "question": "is the bridge's single free scalar the SAME freedom the alpha menu parameterizes, or orthogonal to it?",
+      "same_freedom_component": "SAME.  The stretch no-go's constraint family (empty-record normalization + finite additivity + C3 covariance) IS Cycle 871's constraint family (REC0 + count-once additivity + translation covariance) instantiated on the Z/3 patch, because C3 covariance on three cells IS translation covariance on Z/3.  Both routes computed here give free dimension exactly 1, and 871's structural route gives the same 1 as the singleton orbit count.  The alpha menu is therefore FIVE POINTS ON THE BRIDGE'S OWN ONE-DIMENSIONAL LINE: the menu collapses to the bridge's gauge, and its four nonzero members are ONE member up to scale.",
+      "unification": "Three separately-named open residues are now one scalar plus one more: (i) the angle-native no-go's bin 2 ('homogeneous maps cannot pin a nonzero member'), (ii) the stretch no-go's free coefficient alpha, and (iii) Cycle 871's residual free dimension are THE SAME one-dimensional homogeneous freedom.  Bin 2 is no longer a qualitative observation: its dimension is computed and equals 1.  The readout obligation is that scalar PLUS the angle scale, total 2 -- which is precisely why discharging the bridge does not discharge R-eta."
+    }
+  },
+  "F_falsifiers": {
+    "fired": 9,
+    "teeth": [
+      {
+        "detail": "planted a synthetic 'occurrence rate' 2/3; it hits the target exactly and is still rejected by G1 (no charged-lepton referent anywhere on the occurrence surface) and by G3 (not typed as an occurrence weight)",
+        "fired": true,
+        "tooth": "T1_NUMEROLOGY_PLANT"
+      },
+      {
+        "detail": "flipped one byte of docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md; digest 896458f85ac55606 != pinned 43769f08abee65bc; section A1 compares exactly this",
+        "fired": true,
+        "tooth": "T2_TAMPERED_PIN"
+      },
+      {
+        "detail": "survivors before (homogeneous family) = whole line (5 exhibited); after adding I(1,1,1)=2/9 = ['fixed_locus_density_member']",
+        "fired": true,
+        "tooth": "T3_PERTURBED_CONSTRAINT_CHANGES_SURVIVORS"
+      },
+      {
+        "detail": "a synthetic candidate carrying a charged-lepton referent, a forced pair selection, occurrence-weight typing and no import IS accepted by the same code path -- so the gate's rejections are findings, not a constant function",
+        "fired": true,
+        "tooth": "T4_OUTCOME_NEUTRALITY"
+      },
+      {
+        "detail": "the B1 gate compares the literal string 'TOTAL: PASS=128 FAIL=0'; a perturbed count does not match",
+        "fired": true,
+        "tooth": "T5_FAKE_GATE_RESULT"
+      },
+      {
+        "detail": "911 C2 gives |A| = 2 at all 164 lock points; had any lock point carried |A| = 3 the arity-mismatch bin would not apply and a 2-of-3 occurrence reading would be available",
+        "fired": true,
+        "tooth": "T6_ARITY_FALSIFIABLE"
+      },
+      {
+        "detail": "the same token scan applied to a string that DOES contain a referent finds it, so the empty result on the occurrence corpus is a fact about the corpus, not a broken scan",
+        "fired": true,
+        "tooth": "T7_REFERENT_GATE_IS_NOT_BLIND"
+      },
+      {
+        "detail": "removing a clause changes the computed dimension (1 -> 3), so the dimension is solved, not asserted",
+        "fired": true,
+        "tooth": "T8_DIMENSION_ROUTE_IS_COMPUTED"
+      },
+      {
+        "detail": "2/3 - 84/164 = 19/123 exactly (rational arithmetic, no floats)",
+        "fired": true,
+        "tooth": "T9_MISS_IS_EXACT"
+      }
+    ],
+    "total": 9
+  },
+  "VERDICT": "PASS",
+  "adopts": "nothing",
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-time-blockAC1-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "checks": [
+    {
+      "detail": "verified=40 mismatched=[] missing=[]",
+      "id": "A1",
+      "pass": true,
+      "what": "every vendored artifact digest-verified against its ship receipt"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/A3_CHANNEL_HALF_FORCED_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/within_world_pricing_cycle909_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/type_vacuity_cycle911_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/a3_channel_cycle912_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/selection_function_cycle913_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/complement_mechanism_cycle891_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/within_world_block_cycle909_ship_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/type_vacuity_block_cycle911_ship_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/a3_channel_block_cycle912_ship_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/selection_block_cycle913_ship_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "",
+      "id": "A2",
+      "pass": true,
+      "what": "pinned input exists: outputs/source_action_bridge_pricing_cycle871_receipt_2026_07_28.json"
+    },
+    {
+      "detail": "violations=[]",
+      "id": "A3a",
+      "pass": true,
+      "what": "no observed charged-lepton mass value or PDG constant appears as a numeric literal anywhere in this runner"
+    },
+    {
+      "detail": "word occurrences (declarative only, disclosed): {'pdg': 6, 'particle data group': 1, 'measured mass': 1, 'observed mass': 3}",
+      "id": "A3a2",
+      "pass": true,
+      "what": "the firewall words appear only in declarations and prose, never as a data source"
+    },
+    {
+      "detail": "{'L3(1,2)': '2/9', 'S_sum': '2/3', 'Phi_target': '2/3'}",
+      "id": "A3b",
+      "pass": true,
+      "what": "fixed-locus arithmetic enters only as declared retained input"
+    },
+    {
+      "detail": "['TOTAL: PASS=128 FAIL=0']",
+      "id": "B1",
+      "pass": true,
+      "what": "angle-native no-go runner reproduces PASS=128 FAIL=0"
+    },
+    {
+      "detail": "TOTAL: PASS=113 FAIL=0 CHECKS=113",
+      "id": "B2a",
+      "pass": true,
+      "what": "stretch no-go runner closes with FAIL=0"
+    },
+    {
+      "detail": "observed PASS=113; note claims 'TOTAL: PASS>=120 FAIL=0'; note_claim_met=False; FAIL=0 either way",
+      "id": "B2b",
+      "pass": true,
+      "what": "the stretch-no-go pass-count discrepancy is DISCLOSED with both readings (source inconsistency, not silently resolved)"
+    },
+    {
+      "detail": "",
+      "id": "B3a",
+      "pass": true,
+      "what": "all five menu members satisfy REC0 + additivity + C3 covariance"
+    },
+    {
+      "detail": "['2/27']",
+      "id": "B3b",
+      "pass": true,
+      "what": "exactly one menu member is the fixed-locus density member (alpha = 2/27)"
+    },
+    {
+      "detail": "primary_ok=True checker_ok=True",
+      "id": "B4",
+      "pass": true,
+      "what": "Cycle 871 bridge primary and checker both reproduce PASS=8 FAIL=0"
+    },
+    {
+      "detail": "16 objects enumerated",
+      "id": "C1",
+      "pass": true,
+      "what": "the occurrence surface derives at least one rate-ratio object"
+    },
+    {
+      "detail": "",
+      "id": "C2",
+      "pass": true,
+      "what": "every enumerated object carries an honesty label"
+    },
+    {
+      "detail": "weight-typed: ['R913-E', 'R912-A']",
+      "id": "C3",
+      "pass": true,
+      "what": "at most one enumerated object is typed as an occurrence weight and is non-degenerate"
+    },
+    {
+      "detail": "artifacts scanned=10",
+      "id": "D1",
+      "pass": true,
+      "what": "the occurrence corpus is scanned for charged-lepton referents"
+    },
+    {
+      "detail": "hits={}",
+      "id": "D2",
+      "pass": true,
+      "what": "REFERENT GAP: the pinned occurrence corpus contains NO charged-lepton / holonomy / R-eta / fixed-locus referent"
+    },
+    {
+      "detail": "pool=38 ordered pairs evaluated=1369",
+      "id": "D3",
+      "pass": true,
+      "what": "the ratio sweep is exhaustive over the pinned pool"
+    },
+    {
+      "detail": "numerical hits at 2/3 = 9",
+      "id": "D4",
+      "pass": true,
+      "what": "at least one pooled ratio hits 2/3 numerically (so the identification gate has something to bite on)"
+    },
+    {
+      "detail": "9 hits gated, licensed=0",
+      "id": "D5",
+      "pass": true,
+      "what": "NO numerical hit at 2/3 survives the identification-sentence gate"
+    },
+    {
+      "detail": "84/164 = 21/41; 2/3 - 21/41 = 19/123",
+      "id": "D6",
+      "pass": true,
+      "what": "the single most natural candidate (the realized share of the landed selection) MISSES 2/3"
+    },
+    {
+      "detail": "unknowns=8 free_dim=1",
+      "id": "E1",
+      "pass": true,
+      "what": "871 constraint family on the C3 patch has free dimension 1 (subset form)"
+    },
+    {
+      "detail": "free_dim=1",
+      "id": "E2",
+      "pass": true,
+      "what": "the stretch no-go's linear-functional form has free dimension 1"
+    },
+    {
+      "detail": "",
+      "id": "E3",
+      "pass": true,
+      "what": "the two routes agree on the free dimension"
+    },
+    {
+      "detail": "singleton orbits=1",
+      "id": "E4",
+      "pass": true,
+      "what": "871's structural route (free dim = singleton orbit count) gives 1 on the C3 patch"
+    },
+    {
+      "detail": "[{'patch': 'Z/2', 'sites': 2, 'unknowns': 4, 'free_dim': 1}, {'patch': 'Z/3', 'sites': 3, 'unknowns': 8, 'free_dim': 1}, {'patch': 'Z/4', 'sites': 4, 'unknowns': 16, 'free_dim': 1}, {'patch': 'Z/5', 'sites': 5, 'unknowns': 32, 'free_dim': 1}, {'patch': 'Z/6', 'sites': 6, 'unknowns': 64, 'free_dim': 1}]",
+      "id": "E5",
+      "pass": true,
+      "what": "free dimension is 1 on every cyclic patch tested (matching 871's 'exactly 1 on all 16 patches')"
+    },
+    {
+      "detail": "{'zero': '0', 'one_ninth': '1/9', 'one_third': '1/3', 'unit': '1', 'fixed_locus_density_member': '2/27'}",
+      "id": "E6",
+      "pass": true,
+      "what": "ALL FIVE menu members survive the 871 constraint family"
+    },
+    {
+      "detail": "witnesses=['7/5', '-3', '101/13']",
+      "id": "E7",
+      "pass": true,
+      "what": "the survivor set is the WHOLE line, not just the five exhibited members (arbitrary rationals also survive)"
+    },
+    {
+      "detail": "{'fixed_locus_density_member/one_ninth': '2/3', 'fixed_locus_density_member/one_third': '2/9', 'fixed_locus_density_member/unit': '2/27', 'one_ninth/one_third': '1/3', 'one_ninth/unit': '1/9', 'one_third/unit': '1/3'}",
+      "id": "E8",
+      "pass": true,
+      "what": "the four nonzero menu members form ONE orbit of the scale group (each is a nonzero multiple of any other)"
+    },
+    {
+      "detail": "2",
+      "id": "E9",
+      "pass": true,
+      "what": "the h-class/h-unit density-to-angle readout obligation has free dimension 2"
+    },
+    {
+      "detail": "readout=2 bridge=1",
+      "id": "E10",
+      "pass": true,
+      "what": "the readout obligation is STRICTLY STRONGER than the bridge (2 > 1)"
+    },
+    {
+      "detail": "['fixed_locus_density_member']",
+      "id": "E11",
+      "pass": true,
+      "what": "control: an inhomogeneous constraint collapses the survivor set to exactly {2/27}"
+    },
+    {
+      "detail": "free_dim=3",
+      "id": "E12",
+      "pass": true,
+      "what": "control: dropping covariance changes the free dimension"
+    },
+    {
+      "detail": "free_dim=3",
+      "id": "E13",
+      "pass": true,
+      "what": "control: dropping count-once additivity changes the free dimension"
+    },
+    {
+      "detail": "free_dim=2",
+      "id": "E14",
+      "pass": true,
+      "what": "control: dropping empty-record changes the free dimension"
+    },
+    {
+      "detail": "planted a synthetic 'occurrence rate' 2/3; it hits the target exactly and is still rejected by G1 (no charged-lepton referent anywhere on the occurrence surface",
+      "id": "F-T1_NUMEROLOGY_PLANT",
+      "pass": true,
+      "what": "tooth fires: T1_NUMEROLOGY_PLANT"
+    },
+    {
+      "detail": "flipped one byte of docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md; digest 896458f85ac55606 != pinned 43769f08abee65bc; sec",
+      "id": "F-T2_TAMPERED_PIN",
+      "pass": true,
+      "what": "tooth fires: T2_TAMPERED_PIN"
+    },
+    {
+      "detail": "survivors before (homogeneous family) = whole line (5 exhibited); after adding I(1,1,1)=2/9 = ['fixed_locus_density_member']",
+      "id": "F-T3_PERTURBED_CONSTRAINT_CHANGES_SURVIVORS",
+      "pass": true,
+      "what": "tooth fires: T3_PERTURBED_CONSTRAINT_CHANGES_SURVIVORS"
+    },
+    {
+      "detail": "a synthetic candidate carrying a charged-lepton referent, a forced pair selection, occurrence-weight typing and no import IS accepted by the same code path -- s",
+      "id": "F-T4_OUTCOME_NEUTRALITY",
+      "pass": true,
+      "what": "tooth fires: T4_OUTCOME_NEUTRALITY"
+    },
+    {
+      "detail": "the B1 gate compares the literal string 'TOTAL: PASS=128 FAIL=0'; a perturbed count does not match",
+      "id": "F-T5_FAKE_GATE_RESULT",
+      "pass": true,
+      "what": "tooth fires: T5_FAKE_GATE_RESULT"
+    },
+    {
+      "detail": "911 C2 gives |A| = 2 at all 164 lock points; had any lock point carried |A| = 3 the arity-mismatch bin would not apply and a 2-of-3 occurrence reading would be ",
+      "id": "F-T6_ARITY_FALSIFIABLE",
+      "pass": true,
+      "what": "tooth fires: T6_ARITY_FALSIFIABLE"
+    },
+    {
+      "detail": "the same token scan applied to a string that DOES contain a referent finds it, so the empty result on the occurrence corpus is a fact about the corpus, not a br",
+      "id": "F-T7_REFERENT_GATE_IS_NOT_BLIND",
+      "pass": true,
+      "what": "tooth fires: T7_REFERENT_GATE_IS_NOT_BLIND"
+    },
+    {
+      "detail": "removing a clause changes the computed dimension (1 -> 3), so the dimension is solved, not asserted",
+      "id": "F-T8_DIMENSION_ROUTE_IS_COMPUTED",
+      "pass": true,
+      "what": "tooth fires: T8_DIMENSION_ROUTE_IS_COMPUTED"
+    },
+    {
+      "detail": "2/3 - 84/164 = 19/123 exactly (rational arithmetic, no floats)",
+      "id": "F-T9_MISS_IS_EXACT",
+      "pass": true,
+      "what": "tooth fires: T9_MISS_IS_EXACT"
+    },
+    {
+      "detail": "9/9",
+      "id": "F0",
+      "pass": true,
+      "what": "all falsifier teeth fire"
+    },
+    {
+      "detail": "3.1s / 900.0s",
+      "id": "Z-RUNTIME",
+      "pass": true,
+      "what": "runtime within budget"
+    }
   ],
-  "recorded_split": [
-   84,
-   164
-  ],
-  "status": "recorded history from uncertified sibling computations; arithmetic only"
- }
+  "claim_type": "bounded_theorem",
+  "cycle": 924,
+  "runtime_seconds": 3.1,
+  "science_digest": "ccd98a3916cc40d54478078de9b70bbac79424941aebe9d3d72de6e716cd92f1",
+  "target": "the R-eta obligation's live route 3: 'Supply an occurrence theorem whose event-rate ratio licenses the same value without importing it.' The value is Phi_target = S_sum = 3 * L3(1,2) = 2/3.",
+  "totals": {
+    "fail": 0,
+    "pass": 65,
+    "total": 65
+  }
 }

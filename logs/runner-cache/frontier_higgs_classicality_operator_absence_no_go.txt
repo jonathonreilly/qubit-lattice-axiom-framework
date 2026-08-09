@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_classicality_operator_absence_no_go.py
-runner_sha256: df16c0320927ec44ceb7af6f8d50cf6b0a8c0db364092bba88c314cd7434543c
+runner_sha256: 3a956944605d3463090332009a0d97b4633168dbc83f6e5126d56690e81097f5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Higgs classicality operator-absence no-go
@@ -35,15 +35,6 @@ No-go conclusion
 ========================================================================================
 [PASS (A)] no-go: lambda_bare phi^4 absence alone does not imply lambda_MSbar(M_Pl)=0 (a separate matching theorem is required)
 [PASS (A)] repair target is explicit matching, not a new axiom (prove or bound delta_lambda in the chosen continuum convention)
-
-========================================================================================
-N5 execution certificate: resolution granularity of this operator-absence no-go
-========================================================================================
-per_element: checked — the matching relation lambda_MSbar = Z_lambda * lambda_bare + delta_lambda has exactly two additive terms and the no-go is resolved term by term in exact Fraction arithmetic: the multiplicative term vanishes identically at lambda_bare=0 whatever Z_lambda=1 is, while the additive term is untouched by operator absence, so delta_lambda=1/1000 already yields lambda_MSbar=1/1000 != 0.
-per_site: checked and not executed — no lattice is instantiated and no site is visited; 'lattice-bare' here names only which action a coefficient belongs to, and the runner never constructs that action, so the absence of the quartic operator is recorded as a stipulation about the packet rather than verified site by site.
-per_mode: checked and not executed — no momentum mode, loop integral, or RG trajectory is evaluated; delta_lambda is carried as an unevaluated exact rational and is never decomposed into mode-by-mode contributions, which is precisely why this runner can show it is unconstrained rather than compute what it equals.
-per_block: checked and not executed — no blocking, decimation, or coarse-graining step connects the lattice-bare scale to the continuum MSbar convention anywhere in this runner; that missing step is the matching theorem the note names as the repair target, so its absence is the content of the result rather than a gap in the execution.
-lattice_wide: checked and not executed — no lattice-wide sum, thermodynamic limit, or continuum limit is taken; lambda_MSbar(M_Pl) is a value in a continuum convention that this runner only symbolizes through Z_lambda and delta_lambda, and the 12 executed checks are all exact finite-rational statements about that two-term relation and its dependency packet.
 
 ========================================================================================
 TOTAL: PASS=12, FAIL=0

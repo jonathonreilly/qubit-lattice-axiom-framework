@@ -1,10 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g3_outcome_factorization_unraveled_2026_07_11.py
-runner_sha256: 8e9c03f5f1ec15f7446f3f012d64226c7d42068c6d2ebd067aa23b15853fb17f
-input_fingerprint_sha256: fc7aa2970d1be34cd6a79000347f4916085e59a82ff61b9e3c4cbccc6e1f0569
+runner_sha256: 318dc59b3e9a21755e1ff4808656af80848379823073e274e73b9e5a967469ae
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 [PASS] A1. same-marginal joint family: rows/cols = (p_s,p_d), sum = 1 (symbolic in a,p)
@@ -29,13 +28,6 @@ status: ok
 [PASS] F2. N4 residual matching: this note's ρ_corr specializes to the 06-18 wall witness diag(1/2,0,0,1/2) at p=1/2 -- same single-copy marginals, differing joint
 [PASS] F3. N7 steelman: even granting the complete one-edge trajectory law, product and shared-draw couplings preserve it while differing on independence
 [PASS] F4. N8 cross-cycle echo: with unraveling single-edge inputs added to the tested set, the wall still stands (product strictly interior; correlated stack single-edge-indistinguishable yet non-factorized)
-
-N5 EXECUTION CERTIFICATE
-per_element: checked — the four joint cells are resolved one by one: the quotient cumulant C(j,k) = m(j,k) - p_j p_k vanishes on all four product cells while C(s,d) = p*(p - 1) and m_corr(s,d) = 0 on the correlated stack, and every diagonal entry of both 4x4 states is verified nonnegative on an 11-point p grid.
-per_site: checked and not executed — the registered quotient is labelled by two registration edges and two outcomes only; no lattice site index appears anywhere in the 4x4 carrier, so this runner produces no site-resolved statement about the factorization law.
-per_mode: checked — the two outcome modes s and d are resolved separately: the single-registration Born weights are (p, 1-p) on both witnesses, and under agreement-conditioning the product stack sends p_s to p_s^2/(p_s^2+p_d^2) while the correlated stack leaves each mode fixed at its input weight.
-per_block: checked — the two registration copies are the block units: Tr_2 and Tr_1 both reduce to diag(p, 1-p) on each witness, a 475-observable Hermitian battery finds a maximum copy-1 discrepancy of 0.00e+00 between the two witnesses, and the unequal-marginal witness splits copy-1 weight p1 from copy-2 weight p2.
-lattice_wide: checked and not executed — the argument is a finite two-registration quotient plus a three-atom coupling lemma; no extension to many edges, to a lattice, or to a thermodynamic limit is executed, so the no-go is certified only at that scope, with PASS=22, FAIL=0.
 
 TOTAL: PASS=22 FAIL=0
 VERDICT: narrow no-go passes. The source-note results constrain the complete one-edge marginal trajectory law but not its cross-edge coupling. Product and shared-draw couplings preserve that law while only one factorizes. Cross-edge independence (residual 4) + identical marginals (residuals 1+3) is the exact escape set; residual 4 is the factorization-critical residual and is precisely the one the lane leaves untested.

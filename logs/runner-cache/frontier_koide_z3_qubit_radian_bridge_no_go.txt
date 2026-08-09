@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_z3_qubit_radian_bridge_no_go.py
-runner_sha256: bcd8d1453f3575a1bf9214de08057f97d13ac4d5c49f4cf8962ca49d4a3768b8
+runner_sha256: 8f89153fb95ac5aba3eb20a49374ba2a63daef619128d2035184963e87347f9d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================
@@ -71,14 +71,6 @@ Koide Z_3-qubit radian-bridge closure attempt -- diagnostic runner
   [PASS] (F9b) Candidate B (closed Bargmann) does not equal 2/9 in radians  (gap = 2.9194 rad)
   [PASS] (F9c) Candidate C (Plancherel weight) matches numerically but is dimensionless -- its identification with radians IS postulate P, not a derivation  (the Plancherel identification is a tautology for P, not a proof)
   [PASS] (F9d) Candidate D (Pancharatnam midpoint) does not equal 2/9  (gap = 0.0913 rad)
-
-(F10) N5 execution certificate -- resolved granularity (print-only)
-------------------------------------------------------------------------
-per_element: checked - the finest grain resolved is the pair of complex components of the CP^1 section chi(theta) = (1, e^(-2 i theta))/sqrt(2) on the Qubit one-site algebra M_2(C); every Pancharatnam overlap is that two-component vdot, and the decisive numbers are read straight off it, |<chi|g.chi>| = 0.500000000000 and arg = 1.047197551197 = pi/3, with base-point independence checked over 17 equator points against the runner's 1e-12 gate.
-per_site: checked and not executed - there is no Z^3 site index in this runner. Its base is the one-real-parameter selected line, sampled only at the three supplied reference points m_0 = -0.265816, m_pos = -1.295795 and m_* = -1.160443, and supplied ingredient R2 states that this physical base is an interval; an interval of a single scalar parameter carries no site to resolve and no neighbour sum is formed.
-per_mode: checked - the mode content is what the CP^1 coordinate actually is. The projective doublet ray is the conjugate Fourier-mode pair (v_omega, v_omega_bar) of the Z_3 circulant, so the relative phase e^(-2 i theta) between those two modes is the only mode datum carried, and the trivial mode v_1 drops out of the projective coordinate and is never re-evaluated. The runner then sweeps the mode count itself, d in {2, 3, 5, 7, 11}, and gets gamma_PB = 0, pi/3, -2pi/5, -2pi/7, -2pi/11 - each matching its rational-multiple-of-pi closed form inside the 1e-12 gate, and none equal to 2/d^2.
-per_block: checked, but only as a dimension count - no block operator is ever built. F7a resolves the Plancherel weight purely as a ratio of real dimensions, the 2 real degrees of freedom of the b block over dim_R Herm_d = d^2, giving 2/9 at d = 3 and the analogous counts at d = 5, 7; the block Frobenius split d a_0^2 + 2 d |b|^2 appears only as a comment and no amplitude is evaluated on either block. That this is a bare count with no units is exactly the F9c obstruction.
-lattice_wide: checked and not executed - nothing extensive is summed and no limit is taken. The only closed object the runner forms is a three-step Bargmann product around the Z_3 orbit on the equator, |gamma_closed| = pi, which is a three-point cycle on CP^1 rather than a lattice-wide holonomy, and supplied ingredient R2 is precisely the statement that no closed-loop Berry holonomy is forced here by topology.
 
 ========================================================================
 PASS=23 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_lane3_bounded_companion_retention_firewall.py
-runner_sha256: d7cafb93af540a18b9d0427bfbc207a11b5cf4ac59e70e50346987e4860bd7a8
+runner_sha256: 2fa458c5e0829bcb8816be285f1561cb20596c9f330582e826fa89fd9fb0d0ec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -65,15 +65,6 @@ Part 5: safe endpoint
   [PASS] CKM closure is not a five-mass closure theorem  (mixing package needs mass-ratio bridges and selectors before retention)
   [PASS] Lane 3 honest status is open, not retained closure  (open gates: 5/6 NP proof, up scalar/partition law, generation-stratified Ward)
   [PASS] firewall does not use observed masses as derivation inputs  (PDG values are comparator/sensitivity only)
-
-----------------------------------------------------------------------------------------
-Part 6: N5 execution certificate (reporting only; adds no check)
-----------------------------------------------------------------------------------------
-  per_element: resolved one mass ratio at a time — m_d/m_s is formed as alpha_s(v)/2, m_s/m_b as v_cb raised to 6/5 with v_cb = alpha_s(v)/sqrt(6), and m_d/m_b as their product, each carrying its own comparator deviation against its own threshold, and the two support values are pinned separately at 1e-10 and 1e-7.
-  per_site: checked and not executed — the one lattice-derived quantity in play is the imported scalar CANONICAL_ALPHA_S_V, which arrives from the plaquette surface with every site already summed away, and nothing downstream of it carries a position index, a link or a spatial sum; the whole file is scalar ratio arithmetic.
-  per_mode: checked and not executed — the generation levels enter only as declared PDG comparator constants and their ratios, so no operator is assembled, no eigenvalue or eigenvector is taken, and no spectral or Fourier decomposition of anything occurs in the five parts above.
-  per_block: split across the up-type and down-type sectors, which are governed by different laws — Part 2 gives the down-type block its two closed ratio formulas, Part 3 gives the up-type block a partition law, and Part 4 treats the top/bottom Ward channel on its own; state plainly that the up-type numbers are not free predictions, since f_12 and f_23 are solved from the observed down-type ratios and then reinserted, which is why the runner labels them comparator partitions and calls m_u/m_c partition-selected.
-  lattice_wide: checked and not executed — no volume, thermodynamic limit or continuum limit appears, and the whole-spectrum statement is precisely what this row shows is missing: doubling the bottom anchor leaves every ratio fixed to within 1e-14 while the absolute scale moves by exactly a factor of two, so the ratio package fixes no absolute mass; correspondingly 9 of the 17 recorded passes are string-presence scans over six repository documents.
 
 ========================================================================================
 PASS=17 FAIL=0

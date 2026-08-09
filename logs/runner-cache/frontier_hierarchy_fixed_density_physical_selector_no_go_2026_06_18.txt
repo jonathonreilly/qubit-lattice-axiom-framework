@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py
-runner_sha256: 493f07c4a396efe695fffb16fab422a3050ca68baf1f0b53dbb36b8f7ca81076
+runner_sha256: ffe31f8af07c4acef8e963887da6fde49f04aae40fb2a56cd0c9f6542813fc5e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Hierarchy fixed-density physical selector no-go
@@ -34,15 +34,6 @@ Hierarchy fixed-density physical selector no-go
   [PASS] no-go note preserves future positive physical-selector routes
   [PASS] no-go note targets the exact hierarchy audit blocker
   [PASS] no-go discipline N1-N8 gate is visible
-
-==============================================================================
-N5 execution certificate: resolution granularity of this selector no-go
-==============================================================================
-per_element: checked and not executed — no operator, matrix, or algebra element is constructed anywhere in this runner; its objects are three scalar endpoint coefficients and the quartic-root scale readouts built from them, so there is no element-indexed carrier on which the selector obstruction could be resolved more finely than by endpoint.
-per_site: checked and not executed — the D=4 map rho_* = A(L) v(L)^4 is a coarse-grained density relation with no site index; the executed coefficients are evaluated at u_0 = 1.0 and no lattice is instantiated, so no site-resolved field or link enters the endpoint-selection question at all.
-per_mode: checked and not executed — the compression map carries no spectral or mode label, only the block size L; no eigenvalue, Fourier component, or taste index appears, so this runner makes no mode-resolved claim about where a physical selector could be hiding.
-per_block: checked — the coefficient surface is resolved at each finite block size: A(2)=1/(8 u_0^2)=0.125000000000 and A(4)=1/(7 u_0^2)=0.142857142857, with the exact endpoint ratio A2/A4=0.875000000000 = 7/8 and the induced scale ratio v4/v2=0.967168210134. Each block can be normalized as the reference endpoint without violating the fixed-density algebra, and the 3 resulting readout triples are distinct yet all internally compatible, which is exactly why no block singles itself out as physical.
-lattice_wide: checked — the L -> infinity endpoint is carried explicitly as A(inf)=1/(4 sqrt(3) u_0^2)=0.144337567297 and enters on the same footing as the finite blocks, with Ainf/A2=1.154700538379 = 2/sqrt(3) and vinf/v2=0.964678629960; the obstruction survives at that endpoint too, since rescaling the fixed density by lambda^4 with lambda=3.7 multiplies every v_i by exactly lambda and leaves all endpoint ratios unchanged. The infinite-L limit itself is consumed from the parent dimensional-compression note rather than taken here.
 
 SUMMARY: HIERARCHY FIXED-DENSITY SELECTOR NO-GO PASS=18 FAIL=0
 

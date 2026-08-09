@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_observable_principle_obstruction.py
-runner_sha256: bf726ec5e2f7c77d7c885207f11da5a0901dd4015b8dab9a3c87df41663c45d5
+runner_sha256: aff63a336bd0b9301f0959c92b3444df6033b05b84f0615130192de0efa0c076
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -50,18 +50,6 @@ PART 3: ANY CURRENT ATLAS FUNCTIONAL OF THAT JET IS CONSTANT ON THE FAMILY
 
   Therefore no current atlas theorem built only from the retained
   observable-principle jet can activate or force the Majorana slot.
-
-========================================================================================
-N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
-========================================================================================
-per_element: resolved with amplitudes on both sides of the argument. The normal kernel is written entry by entry (1.30, 1.55, 1.72 on the diagonal, 0.11 - 0.03j, 0.02 and -0.06j off it), each of the three source projectors is a diagonal unit that addresses exactly one kernel entry, and the jet is then read out entry by entry: W = 0.055143837681, the 3 gradient components [0.734685923213, 0.667358293368, 0.565843862107] as separate traces of A^-1 P_i, and the 9 Hessian entries as separate traces of A^-1 P_i A^-1 P_j with diagonal [-0.539763405767, -0.445367091728, -0.320179276284]. Part 1 adds entrywise charge identities across all 4 x 4 Fock entries.
-per_site: checked and not executed. Neither half of this runner has a geometry: the three indices of the normal kernel are retained source slots picked out by diagonal projectors, not positions, and the two factors of Part 1 are internal Fock modes. No coordinate, no neighbour relation and no volume is defined, so nothing site-indexed is available to evaluate.
-per_mode: resolved on the fermionic side, absent on the spectral side. Part 1 tests the two modes one at a time - n0 and n1 are separately certified charge-zero and the unique seed is the specific pair c_0 c_1 carrying charge -2 - and Parts 2 and 3 give each of the three source directions its own gradient component. But the kernel is never diagonalized: slogdet and inv are the only spectral operations, so no eigenvalue, eigenmode or spectral weight of K is ever produced.
-per_block: this is the granularity the claim is stated at, and the runner resolves it only as a grading, never as a decomposition of one object. Part 1 certifies the charge grading operationally - the source class sits at charge 0, the Majorana seed at charge -2 - but the normal kernel and the pairing block are two disconnected matrices of different sizes (3 x 3 for K, 2 x 2 for mu J2) that are never assembled into a common Nambu object, so no block decomposition, no off-diagonal coupling and no block-resolved amplitude of a single matrix is computed anywhere.
-lattice_wide: checked and not executed, and the missing global law is exactly this note's obstruction. No lattice exists here, and the note's own theorem is a statement about the whole current atlas toolkit which this runner cannot reach by execution: it exhibits one kernel, one source triple and one pairing family rather than quantifying over the toolkit, and the note's remaining task - a genuinely new charge-2 primitive or pairing-side observable principle - is precisely the global object that is absent.
-  scope: the central blindness comparison is not computed. In Part 2 the comprehension 'for _ in mus' discards mu, so observable_jet is called three times with identical arguments, and in Part 3 current_atlas_signature() takes no argument at all; distinct jets = 1 and distinct images = 1 follow from determinism, not from any property of the observable principle. The real content is structural - observable_jet receives no pairing data - and the only genuinely computed contrast is on the pairing side, where Pf(mu J2) = mu yields the three distinct amplitudes 0.0, 0.35 and 1.10.
-  scope: the jet is compared as a tuple rounded to 12 decimals, so what the equality tests certify is agreement at that rounding, and the mu family consists of three hand-picked values rather than a swept range.
-  scope: fully deterministic - no RNG stream and no optimizer is used, so every quantity above is fixed by literal constants in the source.
 
 ========================================================================================
 RESULT

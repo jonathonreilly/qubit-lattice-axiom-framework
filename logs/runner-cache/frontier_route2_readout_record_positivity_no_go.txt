@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_route2_readout_record_positivity_no_go.py
-runner_sha256: 74052cffa58ee8dd51727431efe3f32c5546eb8282554b26f5791f89c3559645
+runner_sha256: 2acb8c819003bf90aa96aace0d4f8882c03a2fcc04be8eec624de1b0807a3d75
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 PASS: N1_partial_isometry_admits_every_rho_E P P^T=I_2 has a solution for all rho_E on the grid -> fixes |aE|, rho_E FREE
@@ -14,14 +14,6 @@ PASS: STRUCT_norm_invariant_direction_sweeps_rho_E O(2) rotation: P P^T-norm con
 PASS: NONVAC_color_bridge_fixes_rho_E_to_21_4 c_TE=-R_conn=-8/9 (a CROSS-DOMAIN distinguishing input) -> qE=1.8750000000000002=15/8, rho_E=5.250000000000002=21/4
 PASS: NONVAC_gravity_lane_value_differs_from_21_4 the live gravity-metric lane value rho_E=5.2575 differs from the color-clean 21/4 (numerical-match)
 PASS: GAUGE_carrier_rescale_leaves_rho_E_invariant carrier rescale leaves rho_E invariant (delta_A1=1/6 fixed)
-
-N5 execution certificate (print-only; adds no check and no counter)
-per_element: resolved down to a single free matrix entry -- the readout P_R = [[aE,0,bE,0],[0,aT,0,bT]] keeps its four structural zeros pinned and its T-row granted, so the entire no-go concerns the one remaining entry bE through rho_E = bE/aE. The carrier columns are written out component by component as well, with the exact support-side observable delta_A1 = 1/6 sitting in the third component of E_center and the fourth component of T_center, and the GAUGE check moves both aE and bE by a common factor to show that ratio of two entries is what survives rescaling.
-per_site: checked and not executed -- 'shell' and 'center' label two lumped carrier coordinates per channel, not resolved lattice positions. The seven-site star those names come from is never unpacked in this file, no site amplitude or neighbour relation is constructed, and the Z^3 qubit grid enters none of the eight checks.
-per_mode: resolved as an explicit two-channel split -- the E channel is row 0 of P_R and the T channel is row 1, the T-side is granted at aT/aE = -2 with qT = 5/6 while the E-side carries all the freedom, and the input that would actually close the gate is strictly cross-mode: c_TE = -R_conn = -8/9 ties the two channels together and forces qE = 15/8, hence rho_E = 21/4. Those are exact rationals and are quoted as such.
-per_block: resolved as two decoupled row blocks -- the E block lives on carrier coordinates 0 and 2, the T block on coordinates 1 and 3, and because the two supports are disjoint the Gram matrix P_R P_R^T comes out diagonal, so the E-norm and T-norm conditions never constrain one another. That decoupling is precisely why granting the T-side still leaves the E block with one unconstrained direction rather than none.
-lattice_wide: checked and not executed -- the whole argument sits inside one fixed four-dimensional carrier with no volume, no box, and no site count that could be grown. The missing global step is the note's own residual: selecting rho_E needs a shell-vs-center distinguishing input, the gravity-metric response lane or the color bridge, and neither is a lattice-extensive statement nor is either derived in this file.
-Determinism: the scans are fixed grids, not sampling -- 6001 evenly spaced rho_E values spanning [-12, 12] for the partial-isometry and positivity checks, 15 angles spanning [-1.47, 1.47] radians for the O(2) direction sweep, and five named rho_E values (-5, 0, 5.257, 5.25, 1) for idempotency, judged at tolerances 1e-9 and 1e-12. No random numbers are drawn; this certificate names grid sizes, ranges and tolerances only and interpolates no scan-derived quantity.
 
 TOTAL: PASS=8 FAIL=0
 VERDICT: no supplied registration-style / positivity / idempotency condition fixes the Route-2 readout rho_E -- they fix the readout NORM (or a one-sided bound), while rho_E is the readout DIRECTION in the (shell, center) plane. Selecting rho_E requires a shell-vs-center DISTINGUISHING input (the gravity-metric response lane -> 5.2575, or the color bridge c_TE=-R_conn -> 21/4), not a generic registration principle. The tested carrier-rescale gauge freedom does not remove rho_E, so the handedness gauge-resolution does not transfer. The readout-selection residual is a distinguishing-input (color/gravity) theorem, not a registration principle.

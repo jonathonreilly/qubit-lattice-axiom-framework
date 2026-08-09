@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ew_m_residual_channel_check.py
-runner_sha256: eefe303a002056087811404d37c35c4b2f714137b9ca5fc51f842ed4ddc30620
+runner_sha256: 540ff06a30b3d44aaadbff8ffadd088767863ee698b6f0ee47bce91decafafe8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.87
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ========================================================================
@@ -30,7 +30,7 @@ TEST 2: dim(adj)/dim(N⊗N̄) = (N²-1)/N² (channel fraction)
 ------------------------------------------------------------------------
 TEST 3: Tr_color[G G^†] = S(G) + C(G) on random non-trivial G
 ------------------------------------------------------------------------
-  N=2: 10 trials, max ||Tr[G†G] - (S+C)|| = 1.776e-15
+  N=2: 10 trials, max ||Tr[G†G] - (S+C)|| = 3.553e-15
   N=3: 10 trials, max ||Tr[G†G] - (S+C)|| = 7.105e-15
   STATUS: PASS
 
@@ -48,7 +48,7 @@ TEST 5: G_full = u_0 · G_V factorization: S_full = u_0² · S_V, C_full = u_0²
         (CMT inherits to channel decomposition with overall u_0² scaling)
 ------------------------------------------------------------------------
   N=2: u_0² scaling on both S and C, max dev = 8.882e-16
-  N=3: u_0² scaling on both S and C, max dev = 1.776e-15
+  N=3: u_0² scaling on both S and C, max dev = 3.553e-15
   STATUS: PASS
 
 ------------------------------------------------------------------------
@@ -59,9 +59,9 @@ TEST 6: Haar SU(N) link V generates non-trivial adjoint content
   N | mean(C/(S+C)) over 5000 Haar-SU(N) trials | expected (N²-1)/N²
   ---|----------------------------------------|------------------
   2 | 0.7535                                 | 0.7500
-      max ||V†V-I||=3.50e-15, max |det(V)-1|=2.33e-15
+      max ||V†V-I||=3.34e-15, max |det(V)-1|=1.89e-15
   3 | 0.8878                                 | 0.8889
-      max ||V†V-I||=3.98e-15, max |det(V)-1|=2.44e-15
+      max ||V†V-I||=3.96e-15, max |det(V)-1|=2.78e-15
   STATUS: PASS
   ⇒ Haar SU(N) links statistically realize the (N²-1)/N² adjoint fraction.
 
@@ -73,7 +73,7 @@ TEST 7: At N=3 (framework's N_c), adjoint fraction = 8/9 ≈ 0.8889
     mean(C/(S+C)) = 0.8860 ± 0.0016
     expected (N²-1)/N² = 8/9 = 0.8889
     deviation = 0.0029
-    max ||V†V-I||=3.31e-15, max |det(V)-1|=2.45e-15
+    max ||V†V-I||=3.50e-15, max |det(V)-1|=2.66e-15
   STATUS: PASS
 
 ========================================================================
@@ -102,15 +102,6 @@ RESIDUAL (sharpened obstruction):
   Until (ii) is closed, (M) remains a structural input. This stretch
   attempt sharpens (M) to a single named question: which channel survives
   CMT improvement in the framework's specific EW current construction?
-
-==============================================================================
-N5 EXECUTION CERTIFICATE
-==============================================================================
-  per_element: matrices are written out literally and then contracted entry against entry - the eight Gell-Mann matrices and the three Pauli matrices are typed in component by component and halved to give the generator bases, every channel weight is a trace of a matrix product against one of those generators, and the Haar links are audited by norming V^dagger V - I and by taking det(V) - 1 directly, both against a 1e-12 bound.
-  per_site: checked and not executed - what the file calls a link is a single SU(N) matrix with no endpoints. No pair of sites is ever joined, no path or plaquette is assembled, and the sampled matrices are independent of one another, so nothing here distinguishes one position from another.
-  per_mode: checked and not executed - no momentum variable, transform or dispersion appears at any point. The only decomposition performed is by group representation channel, and the generator index A that labels it runs over an algebra basis rather than over modes of anything.
-  per_block: the two-channel split is exactly what this file establishes, and it establishes it cleanly - the Fierz identity Tr[M^dagger M] = |Tr M|^2/N + 2*sum_A |Tr[M t^A]|^2 is checked to machine precision for N = 2 and N = 3, the block dimensions are the exact integers 1 and N^2 - 1 giving the fraction 8/9 at N = 3, a colour-diagonal matrix is shown to place all its weight in the singlet block with the adjoint weight exactly zero, and an overall rescaling is confirmed to carry the same square factor into both blocks, which is precisely why it cannot separate them.
-  lattice_wide: checked and not executed, and two things about this file should not be mistaken for a whole-system result. First, the adjoint-fraction claim is statistical rather than exact: it is a Monte Carlo mean over seeded Haar draws compared with the closed form under a fixed tolerance, so it estimates the fraction rather than deriving it. Second, the runner's own residual section states that the framework's lattice electroweak current is still implicit and needs an explicit formula, so the object a whole-lattice statement would have to be about does not yet exist in the file.
 
 ----- stderr -----
 

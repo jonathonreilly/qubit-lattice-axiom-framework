@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_kappa_registration_color_sector_nogo.py
-runner_sha256: 678d8d74ad344dc14e443ce5e3a63cd45417c8a6ebfc9ae9eef002c22ad583fa
+runner_sha256: 8c0a4f7fb45b76c3ad76ead6549fffe3523fd387d2b2f63cfa575ef1d2b48a14
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ================================================================================
@@ -17,7 +17,7 @@ Register-not-read does NOT fix kappa_EW: color-sector no-go (zero fitted targets
   [PASS] N_c=5: S+C=T (7.1e-15), sectors orthogonal (True), counts(1,24) -> adjoint fraction 0.9600
 
 (B) Registration (dephasing in the sector basis) keeps BOTH sector populations; never drops the singlet
-  [PASS] singlet projector is SU(N_c)-equivariant (commutes with adjoint action), err 2.7e-16; the singlet is the trivial irrep = a genuine central sector
+  [PASS] singlet projector is SU(N_c)-equivariant (commutes with adjoint action), err 4.6e-16; the singlet is the trivial irrep = a genuine central sector
   [PASS] D keeps both populations (S=0.1111, C=0.8889) and removes only inter-sector coherence (|x|: 0.269->0.0e+00); registered readout contains S AND C
   [PASS] kappa=0 = discard the singlet population (diag(0,C)) is NOT the record map D (which keeps S=0.1111); ||D(rho)-drop_singlet||=0.111 != 0
   [PASS] what D annihilates is the OFF-diagonal coherence (0.269->0), not the diagonal singlet population -- the singlet is never the annihilated object
@@ -36,16 +36,7 @@ Register-not-read does NOT fix kappa_EW: color-sector no-go (zero fitted targets
     => register-not-read does NOT fix kappa_EW: it registers all central sectors (keeps S), the count is
        delivered but the inter-sector weight is free, and the drop-a-sector move is directionless. Route CLOSED.
 
-(F) N5 execution certificate: what this runner resolves
-  per_element: checked — the action of the record map is read off individual entries of the sector-resolved state, not off a norm. Both diagonal entries are separately required to survive to 1e-12, and the off-diagonal inter-sector coherence is separately required to vanish to 1e-12, so what registration keeps and what it annihilates are established entry by entry.
-  per_site: checked and not executed — no lattice or position index is built anywhere. The whole computation lives in the color operator space End(C^N_c) and a two-dimensional sector space, which is the right arena: the route under closure is a claim about which internal color sector the readout registers, and that is settled without reference to any site.
-  per_mode: checked — the operator space is resolved into irrep mode counts, one singlet mode against N_c^2 - 1 adjoint modes, and this is verified across N_c = 2, 3, 4, 5 with the resulting adjoint cardinality fraction 8/9 at N_c = 3. That mode count is exactly what the partition does deliver, while the inter-sector weight kappa_EW is what it does not.
-  per_block: checked — the two central sectors are treated as genuine blocks and verified as such: they are orthogonal under the Hilbert-Schmidt product, their weights sum to the total, and the singlet projector is confirmed equivariant under the adjoint action so the singlet really is an invariant block. The Koide parallel repeats this with the three C3-character blocks fixed by the map.
-  lattice_wide: checked and not executed — nothing is extended over a lattice and no volume or continuum limit is taken. The sweep over N_c varies an internal color rank rather than a system size, so every statement here is a fixed-rank algebraic one; the route is closed at that level and no asymptotic claim is made.
-
 ================================================================================
 RUNNER STATUS: PASS (PASS=12 FAIL=0)
 ================================================================================
-
 ----- stderr -----
-

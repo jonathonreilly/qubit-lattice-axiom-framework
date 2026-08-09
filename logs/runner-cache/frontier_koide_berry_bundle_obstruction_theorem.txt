@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_berry_bundle_obstruction_theorem.py
-runner_sha256: 51db4b8e28764b81fad06ca314f22c0b63106c546746fc6dd737fe90cbbbe364
+runner_sha256: 6d5996e1acbbc2e23f4f441ff7741483ff2387b135cab2d02080070c7ebd6794
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -60,14 +60,6 @@ Koide Berry bundle obstruction / uniqueness theorem
   [PASS] (G3) Berry-to-Brannen reduction gives delta = 2/9 at t = 2/3  (delta = 0.222222222222)
   [PASS] (G4) nearby flat connections give nearby non-equal deltas  (delta_near = 0.233333333333)
   [PASS] (G5) nearby flat connections give distinct holonomies  (|h_near - h_target| = 0.209057)
-
-(H) N5 execution certificate: what this runner resolves
-------------------------------------------------------------------------
-  per_element: resolved — positivity, which is what cuts the physical base out of the full circle, is decided coordinate by coordinate: at each of 3601 sampled angles the runner requires all three components of the normalized sqrt-mass vector to exceed 1e-10 individually, and the frame {e_+, u_1, u_2} is confirmed orthonormal by comparing basis.T @ basis with the identity entry by entry at 1e-12.
-  per_site: checked and not executed — the three coordinates here are generation labels of one sqrt-mass vector in R^3, not sites of a spatial substrate, and no position index, neighbour relation or lattice appears anywhere in the argument. The obstruction being proved is about the topology of a one-dimensional base and its C_3 quotient, which is settled without any notion of where in space it sits.
-  per_mode: resolved — the C_3 representation is split into its singlet and doublet modes and each is checked separately. The singlet axis is verified fixed, C_3 e_+ = e_+ at 1e-12, while the doublet mode is extracted as the 2x2 matrix of C in the (u_1, u_2) frame and matched to the rotation R(2 pi / 3) at 1e-12; the induced action on the angular mode is then confirmed as phi -> phi + 2 pi / 3 and phi -> phi + 4 pi / 3 at 13 sampled angles to 1e-10.
-  per_block: resolved — the blocks here are the three copies of the fundamental domain. The positivity mask is decomposed into connected runs on the periodic angle grid and the runner requires exactly three arcs, of equal length to within 5e-3, with C_3 carrying the centre of each arc into the positive region. That three-copies-plus-free-action structure is exactly what makes the physical quotient a single interval rather than a circle.
-  lattice_wide: checked and not executed — there is no Z^3 substrate, no volume and no extensive quantity in this computation, so no lattice-wide aggregate exists. The global statements that do the work are topological rather than extensive: the Betti numbers are computed as ranks of explicit CW boundary matrices on 24-vertex cycle and path complexes, giving (1, 1, 0) for the sign-relaxed conic and (1, 0, 0) for the quotient interval, and beta_2 = 0 in both cases is what forces c_1 = 0.
 
 ========================================================================
 PASS=30 FAIL=0

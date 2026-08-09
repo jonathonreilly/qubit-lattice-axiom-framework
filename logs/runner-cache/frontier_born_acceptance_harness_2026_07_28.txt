@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_born_acceptance_harness_2026_07_28.py
 runner_sha256: 1228ac30140af0fd7344dd8a955aa7c455eb9070d9b7e5d989dbc007332c7b0f
-input_fingerprint_sha256: 0e330b80220adc40d53902c12d8d3e76edfb830827bd272f3e5c565579ee9876
+input_fingerprint_sha256: 14def7842d8f304ca13c0aa719ac89cdabb18e248696c10f2c8f2e4b094608c0
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.72
+elapsed_sec: 2.60
 status: ok
 ----- stdout -----
 PASS A. landed projector pin and hermetic execution contract :: {'pin': {'path': 'scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py', 'expected': 'e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10', 'actual': 'e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10', 'match': True, 'verdict': 'ACCEPT'}, 'pythonpath_removed': True, 'declared_input_count': 52, 'all_declared_inputs_exist': True}
@@ -21,7 +21,7 @@ CENSUS wrong_arity verdict=REJECT frozen_match=True
 CENSUS non_normalized verdict=REJECT frozen_match=True
 CENSUS out_of_domain_value verdict=REJECT frozen_match=True
 CENSUS boolean_type_violation verdict=REJECT frozen_match=True
-{"checks":{"fail":0,"pass":6},"comparator_mutations":{"killed":{"feed_keyset":true,"matrix_nonfinite":true,"matrix_oversized_integer":true,"matrix_type":true,"matrix_value":true,"origin":true,"outer_extra_key":true,"outer_missing_key":true,"reject_exception_type":true,"reject_extra_key":true,"reject_message":true,"reject_missing_key":true,"status":true,"summary_extra_key":true,"summary_hermitian_residual":true,"summary_idempotence_residual":true,"summary_maximum_eigenvalue":true,"summary_minimum_eigenvalue":true,"summary_shape":true,"summary_trace_imag":true,"summary_trace_real":true,"tolerance_exceeded":true},"oversized_integer_live_drift":true,"pass":true,"within_bound_accepted":true},"driver_ast_sha256":"12750b7a9ee13a66eb4996f735d20c7ec72a56ab3e625db2c528bbde8bc6e236","probe_census":[{"frozen_match":true,"probe_id":"axis_plus_x","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_minus_x","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_plus_y","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_plus_z","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"wrong_arity","verdict":"REJECT"},{"frozen_match":true,"probe_id":"non_normalized","verdict":"REJECT"},{"frozen_match":true,"probe_id":"out_of_domain_value","verdict":"REJECT"},{"frozen_match":true,"probe_id":"boolean_type_violation","verdict":"REJECT"}],"runtime_seconds":2.65492,"scope":{"broader_ternary_surface_tested":false,"fixture":"projector_bloch_four_axes_only","physics_claim":false}}
+{"checks":{"fail":0,"pass":6},"comparator_mutations":{"killed":{"feed_keyset":true,"matrix_nonfinite":true,"matrix_oversized_integer":true,"matrix_type":true,"matrix_value":true,"origin":true,"outer_extra_key":true,"outer_missing_key":true,"reject_exception_type":true,"reject_extra_key":true,"reject_message":true,"reject_missing_key":true,"status":true,"summary_extra_key":true,"summary_hermitian_residual":true,"summary_idempotence_residual":true,"summary_maximum_eigenvalue":true,"summary_minimum_eigenvalue":true,"summary_shape":true,"summary_trace_imag":true,"summary_trace_real":true,"tolerance_exceeded":true},"oversized_integer_live_drift":true,"pass":true,"within_bound_accepted":true},"driver_ast_sha256":"12750b7a9ee13a66eb4996f735d20c7ec72a56ab3e625db2c528bbde8bc6e236","probe_census":[{"frozen_match":true,"probe_id":"axis_plus_x","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_minus_x","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_plus_y","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_plus_z","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"wrong_arity","verdict":"REJECT"},{"frozen_match":true,"probe_id":"non_normalized","verdict":"REJECT"},{"frozen_match":true,"probe_id":"out_of_domain_value","verdict":"REJECT"},{"frozen_match":true,"probe_id":"boolean_type_violation","verdict":"REJECT"}],"runtime_seconds":2.537146,"scope":{"broader_ternary_surface_tested":false,"fixture":"projector_bloch_four_axes_only","physics_claim":false}}
 SUMMARY PASS 6 FAIL 0
 RESULT BORN_PROJECTOR_FIXTURE_ACCEPTANCE_GREEN
 

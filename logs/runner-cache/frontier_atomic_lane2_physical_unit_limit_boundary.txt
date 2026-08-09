@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_lane2_physical_unit_limit_boundary.py
-runner_sha256: 9f6d3dccc141d3b6f6c5d211a5df0cd111f47e342bf47809973e43ebe5ec2b26
+runner_sha256: f6c1812b1c237b10be82449b1e026092e8a53e1566bf4dc64a14cfbd847f0ff0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -54,15 +54,6 @@ PART 4: CLAIM-STATUS FIREWALL
   [PASS] The dimensionless solver is conditional support only
   [PASS] Three physical-unit imports remain open
   [PASS] No stronger branch-local proposal wording is allowed
-
-========================================================================================
-PART 5: N5 EXECUTION CERTIFICATE
-========================================================================================
-  per_element: checked - the missing scale is factorized into its separate ingredients and each is inspected on its own: Hartree = m_e alpha(0)^2 is formed from m_e = 510998.95 eV and 1/alpha(0) = 137.035999084 to give 27.211386246019 eV, and the runner records that dropping either single factor already leaves the physical scale undetermined.
-  per_site: checked and not executed - the dimensionless solver carries no length at all, so there is no site, no spacing and no Bohr radius expressed in lattice units anywhere; the boundary reported here is about units, and the runner confirms the scaffold states no framework input is used.
-  per_mode: checked - the bound levels are the resolved index, with n = 1, 2 and 3 evaluated individually at each of the 3 Hartree scales and their ratios held at exactly 1, 1/4 and 1/9 to within 1e-12 in every case, which is precisely how the shape is shown to be fixed while E1 itself moves freely with the scale.
-  per_block: checked and not executed - the hydrogen problem is treated as a single Coulomb channel labelled only by the principal quantum number; the angular degeneracy blocks in l and m are never formed, no sub-block is compared against another, and no block multiplicity enters the argument.
-  lattice_wide: checked and not executed - no lattice, volume or thermodynamic limit exists here; the quantity that would be a whole-system observable is the eV spectrum itself, and the runner's finding is exactly that it is left undetermined, since three scale choices reproduce identical ratios while giving three different ground energies.
 
 ========================================================================================
 SUMMARY: PASS=16 FAIL=0

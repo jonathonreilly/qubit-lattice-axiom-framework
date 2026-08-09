@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_c1_a2_action_unit_no_go.py
-runner_sha256: 73ca6f46282793c119afa4c2e47d278315e0026fe2cca423ef088245b49acdcb
+runner_sha256: f9aaa8ae4c76923174080011ce8caddfaa88621f37d2729beaf953049dc2f5fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -16,9 +16,9 @@ retained Cl(3) -> SU(2) gauge structure plus the lattice unit
 the (S, kappa) rescaling degeneracy?
 
 [PASS] baseline amplitude is well-defined on P_A H_cell: |<psi1|U|psi0>| = 0.538286
-[PASS] amplitudes are invariant under (S, kappa) -> (lambda S, lambda kappa): max |amp - base| = 7.02e-16
-[PASS] amplitudes are invariant under (H, t) -> (lambda H, t / lambda): max |amp - base| = 7.02e-16
-[PASS] scalar action shift acts only as a global U(1) phase on amplitudes: |amp_shifted - exp(-i a t/kappa) base| = 9.04e-16
+[PASS] amplitudes are invariant under (S, kappa) -> (lambda S, lambda kappa): max |amp - base| = 5.12e-16
+[PASS] amplitudes are invariant under (H, t) -> (lambda H, t / lambda): max |amp - base| = 6.47e-16
+[PASS] scalar action shift acts only as a global U(1) phase on amplitudes: |amp_shifted - exp(-i a t/kappa) base| = 5.93e-16
 [PASS] trace of any finite-rank commutator vanishes: |Tr [X, P]| = 4.44e-16
 [PASS] finite Hilbert block cannot realise [X, P] = i kappa I_4 for kappa != 0: Tr (i kappa I_4) = 4 i kappa != 0 for kappa != 0
 [PASS] absolute kappa is not fixed by H alone: amplitude varies with kappa: varying kappa with (H, t) fixed produces distinct amplitudes
@@ -31,15 +31,6 @@ the (S, kappa) rescaling degeneracy?
 [PASS] axiom 4 alone does not break (S, kappa) rescaling on P_A H_cell: g_bare = 1 fixes dimensionless gauge coupling but not absolute action quantum
 [PASS] the only on-package route to break (S, kappa) is conditional on (G1): Gauss-flux source-unit theorem requires Clifford phase bridge requires (G1)
 [PASS] A2 attack frame is structurally falsified on A_min alone: (G2) cannot be closed by axiom 4 without (G1); A1 (G1) no-go from Cycle 2 propagates to A2
-
-==============================================================================
-N5 EXECUTION CERTIFICATE: RESOLUTION GRANULARITY OF THIS ACTION-UNIT NO-GO
-==============================================================================
-per_element: checked — the finite-trace obstruction is computed here rather than asserted: an explicit pair of random Hermitian 4x4 generators is built and their commutator trace evaluated to |Tr[X,P]| = 4.44e-16, against the Tr(i kappa I_4) = 4 i kappa that a canonical action commutator would demand. The projector P_A is diagonal with exactly 4 unit entries among the 16 cell basis elements, so c_cell = Tr(rho_cell P_A) = 0.250000 is an exact element count on the uniform state rho_cell = I/16.
-per_site: checked and not executed — the four binary axes indexing the 2^4 cell are internal degrees of freedom of a single cell, not lattice sites; the Hamming-weight-one sector selects one basis vector per axis but no neighbouring cell, hopping term, or site-to-site transport is ever constructed, so nothing here is resolved across a lattice.
-per_mode: checked — this is where the rescaling degeneracy is actually resolved: the flow is computed by diagonalizing the block Hamiltonian into its 4 eigenmodes (spectrum spanning -3.792322 to 1.874339) and giving each one the phase exp(-i E_n t / kappa). Every eigenphase depends on the single ratio E_n t / kappa, so the joint rescalings hold mode by mode to 7.02e-16, and no individual mode supplies a scale that would pin kappa.
-per_block: checked — the rank-4 block P_A H_cell is the carrier throughout: amplitudes |<psi1|U|psi0>| = 0.538286 are evaluated on it, a scalar action shift a=0.42 moves the block amplitude only by a global U(1) phase, and the block trace fixes the Gauss-flux identification lambda = 4 c_cell = 1.000000. The block therefore delivers a ratio, never an absolute unit.
-lattice_wide: checked and not executed — no lattice, no lattice-wide action sum, and no continuum or thermodynamic limit is constructed; the single on-package route that would fix kappa beyond this block is the Gauss-flux source-unit identification c_cell = 1/(4 G_lambda), which reads c_cell as the physical Newton coefficient and is therefore conditional on the Clifford phase bridge and hence on (G1) -- shown in Cycle 2 not to follow from axiom 3 alone, which is exactly why this runner stops at the block.
 
 ==============================================================================
 SUMMARY: PASS=16  FAIL=0

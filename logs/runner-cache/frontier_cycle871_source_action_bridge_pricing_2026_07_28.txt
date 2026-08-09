@@ -1,14 +1,5 @@
-===== runner cache v1 =====
-runner: scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py
-runner_sha256: 230cdeac9390f2e7dc67d3dd44b5c7fe3bdf90c8dcad83d9654871aa15b44b0f
-input_fingerprint_sha256: b140d3e649ddc83f7248adc43c88de394b312e26e58d7990f44cba9535e0b564
-timeout_sec: 1400
-exit_code: 0
-elapsed_sec: 0.32
-status: ok
------ stdout -----
 ==============================================================================
-CYCLE 871 -- SOURCE-ACTION BRIDGE PRICING AT A DECLARED ANSATZ (CONDITIONAL)
+CYCLE 871 -- EXACT PRICING OF THE SOURCE-ACTION BRIDGE
 ==============================================================================
 
 SCOPE NOTE: no artifact named 'retention map' exists on this branch.
@@ -92,14 +83,10 @@ primaries pinned below, and no retention-map row is quoted or invented.
     docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:22 | top-source scale lambda?
     docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:162 | - derive the primitive source/action premise;
 
--- (B) DECLARED ACTION ANSATZ: FORCED vs FREE (conditional) -------------
-  NOTE: the additivity/empty/translation clauses below are DECLARED for
-  the action functional A, modeled on the Record axiom's readout-I
-  sentences.  The readout-to-action identification is an OPEN bridge;
-  every dimension below is conditional on the declared clauses.
-  REC0: DECLARED action clause (modeled on the Record axiom's empty-record readout sentence, which speaks about the readout I, not about any action): A(empty) = 0.
-  REC1: DECLARED action clause (modeled on the Record axiom's count-once readout additivity for I; the readout-to-action identification is an OPEN bridge, not supplied by the axioms): disjointly supported sources compose additively under A.
-  LAT: DECLARED action clause (modeled on the Lattice axiom): the patch translation group leaves A invariant.
+-- (B) WHAT THE BRIDGE MUST SUPPLY: FORCED vs FREE ----------------------
+  REC0: Record axiom, empty-record clause: a source configuration with no registered record contributes no action content.
+  REC1: Record axiom, count-once clause + Admissibility composition: disjointly supported sources compose additively.
+  LAT: Lattice axiom: the patch translation group acts covariantly.
   QUBIT: Qubit axiom: the per-site source alphabet is two-valued, so the configuration domain is the subset lattice (encoded in the model domain, contributing no separate row).
   ADM: Admissibility axiom: A is single-valued and finite on admissible configurations (well-posedness of the model; contributes no linear row and is reported as such).
 
@@ -161,44 +148,42 @@ primaries pinned below, and no retention-map row is quoted or invented.
   free dimension of the shape after quotienting the scale: 0
   free dimension of the scale itself: 1
 
--- (D) OBLIGATION MAP FOR THE REST (modeled dimensions only) ------------
-  Each row is an author-declared finite model; equal or larger modeled
-  dimension is NOT an implication or logical-strength claim.
+-- (D) OBLIGATION MAP FOR THE REST -------------------------------------
   bridge free dimension used as the yardstick: 1
-   free_dim  model_dim_vs_bridge clause
-          0  smaller-model-dim   GB-S1a linear test-action shape
+   free_dim  strength    clause
+          0  weaker      GB-S1a linear test-action shape
              model : REC0+REC1+LAT on the config map, quotiented by the overall scale
              source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
-             role  : forced within this declared finite model; no import at the model level
-          1  equal-model-dim     GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)
+             role  : forced by the axioms; no import
+          1  equivalent  GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)
              model : the residual free direction of REC0+REC1+LAT
              source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
-             role  : modeled import: one real normalization constant in this declared finite model (equal modeled dimension is NOT mutual implication)
-          1  equal-model-dim     physical Newton constant / SI normalization
-             model : DECLARED as the same one-parameter uniform-scale model; identity with the bridge residual (or with GB-S1b) is a modeling choice, NOT a proven implication
+             role  : import: one real normalization constant, narrow role = fixes the source-to-action scale and nothing else
+          1  equivalent  physical Newton constant / SI normalization
+             model : same residual free direction
              source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
-             role  : modeled import: one real normalization constant in this declared finite model (equal modeled dimension is NOT mutual implication)
-          5  larger-model-dim    finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution
+             role  : import: one real normalization constant, narrow role = fixes the source-to-action scale and nothing else
+          5  stronger    finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution
              model : translation-covariant two-point kernel on Z_3^2 with the lattice reflection imposed (dim 5; translation alone would give 9)
              source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
-             role  : modeled import: 5 free parameters in this declared finite model, more than the bridge model's 1 (a model-size comparison, NOT a logical-strength claim)
-          8  larger-model-dim    GB-S2 phase-propagation kernel and detector-window readout
+             role  : import: 5 free parameters, strictly more than the bridge supplies
+          8  stronger    GB-S2 phase-propagation kernel and detector-window readout
              model : that same kernel (5) plus one detector-window weight per squared-distance class (3)
              source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
-             role  : modeled import: 8 free parameters in this declared finite model, more than the bridge model's 1 (a model-size comparison, NOT a logical-strength claim)
-          4  larger-model-dim    GB-S3 label/offset generated-connectivity family
+             role  : import: 8 free parameters, strictly more than the bridge supplies
+          4  stronger    GB-S3 label/offset generated-connectivity family
              model : translation-covariant symmetric adjacency on the patch
              source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
-             role  : modeled import: 4 free parameters in this declared finite model, more than the bridge model's 1 (a model-size comparison, NOT a logical-strength claim)
-          1  equal-model-dim     signed-gravity locked source-action term (scale plus locked orientation)
-             model : uniform scale plus the discrete orientation the lane locks (locked: zero residual sign choices; the two-point sign set has continuous dimension 0 and is reported separately)
+             role  : import: 4 free parameters, strictly more than the bridge supplies
+          2  stronger    signed-gravity locked source-action term (scale plus locked orientation)
+             model : uniform scale plus the discrete orientation the lane locks
              source: docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
-             role  : modeled import: one real normalization constant in this declared finite model (equal modeled dimension is NOT mutual implication)
-          2  larger-model-dim    h-class/h-unit density-to-angle readout identity
+             role  : import: 2 free parameters, strictly more than the bridge supplies
+          2  stronger    h-class/h-unit density-to-angle readout identity
              model : density scale, angle scale and offset under REC0
              source: docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md
-             role  : modeled import: 2 free parameters in this declared finite model, more than the bridge model's 1 (a model-size comparison, NOT a logical-strength claim)
-  tally: {'smaller-model-dim': 1, 'equal-model-dim': 3, 'larger-model-dim': 4}
+             role  : import: 2 free parameters, strictly more than the bridge supplies
+  tally: {'weaker': 1, 'equivalent': 2, 'stronger': 5}
 
 -- AST evidence on the cited landed runner ------------------------------
   scripts/gate_b_weak_field_source_action_interface_2026_06_16.py
@@ -206,11 +191,11 @@ primaries pinned below, and no retention-map row is quoted or invented.
 
 -- FINDINGS (generated from the computed values above) ------------------
   F1 the alias scope carries 9 lines that name the bridge as an open obligation, across lanes ['gravity', 'mass', 'readout'].
-  F2 on every one of the 16 patches tested (up to 27 sites, 1D/2D/3D) the DECLARED action clauses leave the source-to-action map with free dimension [1]; two independent routes agree wherever both ran (conditional on the declared ansatz; the readout-to-action bridge is open).
+  F2 on every one of the 16 patches tested (up to 27 sites, 1D/2D/3D) the four axioms leave the source-to-action map with free dimension [1]; two independent routes agree wherever both ran.
   F3 on patch (4,) the count-once clause removes 4 free parameters, translation covariance removes 3, the empty-record clause removes 1, leaving 1.
   F4 the rescaling stabilizer is exactly the product-one one-parameter family (equal=True, group=True) and 0 in-scope observables separate the two factors.
-  F5 WITHIN the declared ansatz the bridge model's import is 1 real scalar; its shape content has free dimension 0 there.  This is conditional finite algebra: it does NOT show that the axioms force the physical source-action map's additivity, locality or shape.
-  F6 obligation-map tally over 8 clauses (modeled dimension counts, not logical strength): {'smaller-model-dim': 1, 'equal-model-dim': 3, 'larger-model-dim': 4}.
+  F5 the bridge's total import at weak-field linear order is 1 real scalar; its shape content has free dimension 0 and is therefore forced, not imported.
+  F6 obligation map tally over 8 clauses: {'weaker': 1, 'equivalent': 2, 'stronger': 5}.
 
 -- CERTIFICATES --------------------------------------------------------
   PASS  CERT-PROV/pinned-inputs            paths=8 sha_exact=8 blob_exact=8 blocklist_leaks=[]
@@ -224,6 +209,3 @@ primaries pinned below, and no retention-map row is quoted or invented.
 
 TOTAL: PASS=8 FAIL=0
 VERDICT: PASS
-
------ stderr -----
-

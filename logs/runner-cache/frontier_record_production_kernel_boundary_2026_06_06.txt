@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_production_kernel_boundary_2026_06_06.py
-runner_sha256: 2df42cd44319f9922ce74b2da0244b185632a0742fb3c3622346ff091117eca5
+runner_sha256: d7aac1365c17096bc4bafa42052a985c4ec45438a1a1dd211c717264a1b32e0a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -69,15 +69,6 @@ Boundary certificate
 [PASS] B2 production kernels are extra data relative to post-record dynamics
 [PASS] B3 no finite-history observation in this runner selects a unique kernel
 [PASS] B4 stable dial language is allowed only after naming the generator/functional
-
-========================================================================
-N5 execution certificate (print-only; registers no check)
-========================================================================
-per_element: thin, and reported as thin -- the only indexed objects are two-component rational distributions. Their components are handled individually: normalize() tests each component for nonnegativity and requires the pair to sum to exactly 1, and likelihood() selects the single component dist[atom] at each of the 6 steps. No matrix, operator or array exists, so nothing element-resolved beyond those two-slot tuples is executed here.
-per_site: checked and not executed -- no site index is present anywhere. Atoms occupy positions in a word, which are production steps rather than locations, and the alphabet is two abstract letters carrying no spatial tag. Nothing in this boundary would change if the underlying system had one site or a million.
-per_mode: checked and not executed -- there is no state space, operator or basis in this file, so no mode can be formed. The 5 kernels are conditional distributions over a two-letter alphabet, including one history-dependent and one scripted producer; they are compared as functions of the prefix, never diagonalized, and no spectral or modal quantity is computed at any point.
-per_block: exercised at letter-class granularity -- count() projects a word onto its two letter blocks and the run certifies that projection additive under concatenation, so the block counts of a concatenated history are exactly the sums of the parts. The kernels are also separated blockwise into the scripted producer, which realizes the target with probability one, and the non-scripted ones, which spread likelihood across several distinct values for the very same word.
-lattice_wide: checked and not executed -- nothing spatial is constructed and no size is varied. The only global object is the whole 6-atom history, over which each kernel's likelihood is accumulated end to end, and that is extent in production order rather than in volume. No finite-N statement is available and no limit is taken or implied by anything in this file.
 
 ========================================================================
 Scorecard

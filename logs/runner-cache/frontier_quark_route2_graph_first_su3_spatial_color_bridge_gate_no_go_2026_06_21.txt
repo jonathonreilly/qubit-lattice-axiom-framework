@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_graph_first_su3_spatial_color_bridge_gate_no_go_2026_06_21.py
-runner_sha256: 77ff2087949fd0663550eb3bf9d052216bffaaea4fe766d602a633d24e2c07b1
+runner_sha256: 21173401cebc502612c1048506acf5dd96f72a2b13db3830f92d0acced0c7102
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 graph-first SU(3) spatial-color bridge gate
@@ -66,13 +66,6 @@ PASS: note avoids overclaim: parent closure
 PASS: note avoids overclaim: endpoint derivation
 PASS: note avoids overclaim: rho_E derivation
 PASS: note avoids overclaim: permanent no-go
-
-PART 5: N5 execution certificate
-per_element: checked, and what is resolved here is a count and nothing more -- no matrix element of End(R^3) is ever written down, no basis is constructed and no amplitude is evaluated; the nine elements enter only as the integer 9 against which the sector sizes 1, 3, 5, 2 and 3 are balanced, so every statement in this runner is a dimension statement rather than a statement about any entry.
-per_site: checked and not executed -- the three in R^3 arrives as the spatial axis count granted by the graph-first steelman, not as a set of lattice positions, and the runner builds no star, no neighbor relation and no coordinate; a bridge gate phrased entirely in sector dimensions has no place for a site index.
-per_mode: resolved sector by sector, which is the real content here -- the scalar A1 carries 1, the antisymmetric T1 carries 3, the symmetric-traceless spin-2 sector carries 5, and inside that sector the cubic E carries 2 against T2's 3; thirteen distinct ratios are then formed among these modes and each is compared against 8/9 individually, with exactly one match and it is not an E/T2 ratio.
-per_block: resolved as an exact two-stage partition -- 9 = 1 + 3 + 5 splits End(R^3) into singlet and traceless adjoint blocks, and 5 = 2 + 3 splits the spin-2 block into its cubic sub-blocks, so 8/9 is pinned as the adjoint block over the whole space while c_TE is an internal ratio of the spin-2 block; every block ratio formed is strictly positive, so none of them can carry the sign c_TE needs.
-lattice_wide: checked and not executed -- the argument would read identically at any system size, because it never leaves a single nine-dimensional matrix space and constructs neither a volume, a site count nor a limit of any kind; the global object still missing is the extra readout functional or orientation selector the verdict names, which no dimension count can supply.
 
 TOTAL: PASS=46, FAIL=0
 VERDICT: even granting the graph-first N_c=3-from-d=3 link, 8/9 is the total traceless-adjoint fraction, while c_TE lives inside the E/T2 spin-2 split. The typed bridge still needs an extra readout functional or orientation selector.

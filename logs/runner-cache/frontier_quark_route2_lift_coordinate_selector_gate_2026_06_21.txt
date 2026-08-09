@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_lift_coordinate_selector_gate_2026_06_21.py
-runner_sha256: 96b4aae86b411b8d6a9ed5074bb8b88a50173634083ba323d24f351b143d0393
+runner_sha256: f7eb9eae2861238e4ca616d31791e71cbd8ce6fd0cff02ba79dad634cdc687e9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 Route-2 lift-coordinate selector gate
@@ -64,15 +64,6 @@ PASS: Schur note treats q_X inverse-square as a gap rather than a supplied theor
 PASS: no observed endpoint value is used as proof input
 PASS: current result is a no-go for value-only inverse-square closure
 PASS: positive target is a typed q-coordinate selector theorem
-
-----------------------------------------------------------------------------------------
-N5 execution certificate
-----------------------------------------------------------------------------------------
-per_element: the 7 coordinate maps are resolved value by value -- each contributes its own exact (q_E, rho_E) pair, 14 rationals in total, computed by exact Fraction arithmetic from q_T=5/6 and lambda=9/4; the selected q-coordinate pair is q_E=15/8, rho_E=21/4 and the increment map gives q_E=5/8, rho_E=-9/4, with no float or tolerance anywhere.
-per_site: this class is checked and not executed -- the runner's only structured object is a name-keyed dictionary of coordinate maps, and the T-side calibration enters as the single granted scalar q_T=5/6 with rho_T=-1; there is no site index, no arm sum, and therefore no site-resolved lift to evaluate or compare.
-per_mode: genuinely exercised, on the two-channel ratio itself -- w_E=1/3 and w_T=1/2 give kappa=3/2 and the inverse-square value lambda=9/4, and the entire question this gate poses is which coordinate that E-versus-T mode ratio multiplies; the mode content is fixed and exact, and it is the coordinate, not the mode ratio, that the current bank fails to select.
-per_block: the coordinate maps form the block structure here -- 7 T-calibrated maps collapse to 5 distinct exact outcomes, because the rho-coordinate and increment-coordinate blocks coincide at q_E=5/8 and the direct-square and inverse-q blocks coincide at q_E=10/27; exactly one of the 7 blocks reaches rho_E=21/4.
-lattice_wide: checked and not executed as a resolution class -- the widest thing this file actually runs is a bank-wide absence scan over the lowercased concatenation of seven authority notes, which resolves whether a phrase occurs and nothing about any amplitude, while the genuinely global object, a theorem selecting the multiplicative lift coordinate, is precisely what the note reports as absent and what this gate exists to leave open.
 
 ----------------------------------------------------------------------------------------
 Summary

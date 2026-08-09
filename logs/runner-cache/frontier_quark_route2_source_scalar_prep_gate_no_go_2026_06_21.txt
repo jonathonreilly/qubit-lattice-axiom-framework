@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_scalar_prep_gate_no_go_2026_06_21.py
-runner_sha256: da10b91f7656b05337c75f95136e40dd42160103d97c69d2c57913d4972acd58
+runner_sha256: f873a11de1e4e34fde94b26fd04731df57052500708127bb146f9b2943595bfd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 channel-scalar source-preparation gate
@@ -98,13 +98,6 @@ PASS: note avoids overclaim marker: branch-local status-promotion phrase
 PASS: note avoids overclaim marker: future-retention phrase
 PASS: note avoids overclaim marker: promotion-to-retention phrase
 PASS: note avoids overclaim marker: no-future-theorem phrase
-
-PART 6: N5 execution certificate
-per_element: checked -- the source map is a diagonal on four carrier coordinates and the runner works with those entries one at a time, never with a norm or an aggregate. Each of the 4 channel-scalar cases is tested separately for three properties, giving 12 entry-level assertions, and the authority side resolves 16 required markers plus 6 absent source-slot markers individually. Everything is exact Fraction equality.
-per_site: checked and not executed -- the carrier coordinates (u_E, u_T, delta_A1 u_E, delta_A1 u_T) are already contracted over the support before this runner sees them, so the seven sites have been summed away and cannot be recovered. No site enters the preparation map, and the no-go is not a statement about any site.
-per_mode: checked, and the no-go is stated most sharply at this granularity -- the preparation is diagonal in the two channels with independent scalars a_E and a_T, and what a per-mode rescaling can and cannot do is fully separated by the run: it moves the cross-mode shell ratio by exactly a_T/a_E, taking the canonical inverse-Schur choice a_E = 1/w_E, a_T = 1/w_T from -2 to -4/3, while leaving both per-mode center-over-shell ratios untouched at q_E = 5/4 and q_T = 5/6. The quantity the campaign needs is one of the invariants, not the one that moves.
-per_block: checked, and it is where the obstruction actually lives -- the map diag(a_E, a_T, a_E, a_T) reuses the same scalar on the shell block and on the center block of a given channel, and that repetition is exactly why the center-over-shell ratio cancels. Breaking it is executed too: allowing separate block scalars makes q_E move by b_E/a_E, the run pins the required tilt at 7/2 from a readout-only 3/2, and holding q_T fixed forces b_T/a_T = 1, though that last point is shown by two witnesses rather than solved.
-lattice_wide: checked and not executed -- there is no lattice, no volume and no limit in this runner, so nothing whole-system is on offer. One nuance is worth recording in the other direction: the channel-scalar invariance is structural rather than sample-limited, since a_X cancels identically between the center and shell entries of the same channel, and the 4 listed cases together with the canonical inverse-Schur choice instantiate that cancellation rather than establish it.
 
 TOTAL: PASS=66, FAIL=0
 VERDICT: channel-scalar source preparation cannot supply the missing Route-2 endpoint factor. A source-side theorem must be center-excess nonuniform, or the readout map must supply the inverse-square law.

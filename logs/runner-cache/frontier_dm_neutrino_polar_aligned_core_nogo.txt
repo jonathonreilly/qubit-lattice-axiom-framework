@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_polar_aligned_core_nogo.py
-runner_sha256: 82e795d5851285a678bcf4fd8a8e21eff2cdbfaa6ac0e029fe2d55ffdd99c5b0
+runner_sha256: 657e713827aabe1526f4da49ea14e96d734f136a91ebec4169db4120c813d9da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,7 +17,7 @@ Question:
 ========================================================================================
 PART 1: THE ALIGNED CORE GIVES EQUAL REAL SINGLET-DOUBLET SLOTS
 ========================================================================================
-  [PASS] The Z_3 transform of the aligned core has the exact closed form  (error = 1.10e-15)
+  [PASS] The Z_3 transform of the aligned core has the exact closed form  (error = 1.08e-15)
   [PASS] The two singlet-doublet slot entries are equal  (K01=0.200000+0.000000j, K02=0.200000+0.000000j)
   [PASS] Those slot entries are purely real on the aligned core  (K01=0.200000+0.000000j, K02=0.200000+0.000000j)
 
@@ -29,7 +29,7 @@ PART 2: THE ALIGNED CORE IS INTRINSICALLY CP-EMPTY
 ========================================================================================
   [PASS] One physical singlet-doublet mass-basis entry vanishes exactly  (K01_mass=0.000000-0.000000j)
   [PASS] The other physical singlet-doublet mass-basis entry is exactly sqrt(2) q and real  (K02_mass=0.282843+0.000000j, sqrt(2)q=0.282843)
-  [PASS] Therefore the exact aligned-core CP tensor vanishes  (cp_pair=(-4.631302919999498e-33, 1.862479514134464e-16))
+  [PASS] Therefore the exact aligned-core CP tensor vanishes  (cp_pair=(-2.2062830904209992e-32, 1.8624795141344643e-16))
 
   The positive polar section does not rescue the aligned Hermitian core.
   On that core the DM carrier remains structurally CP-empty.
@@ -48,15 +48,6 @@ PART 4: THE BANK RECORDS THE NEW H-SIDE BLOCKER
 
   The remaining last-mile DM object is now cleaner: not right-frame law,
   but the H-side symmetry-breaking law beyond the residual-Z2 aligned core.
-
-========================================================================================
-PART 5: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
-========================================================================================
-  per_element: checked -- every relevant entry is compared on its own rather than through a single residual: the Z_3 transform is matched against an explicit closed-form matrix entrywise, the slot pair is tested for equality as K01 = 0.200000 versus K02 = 0.200000, and the two mass-basis entries are read out separately as K01_mass = 1.58e-16 and K02_mass = 0.282843.
-  per_site: checked and not executed -- the three indices of H_act are generation labels of one internal Hermitian core obtained from the positive polar section of H = Y Y^dag, and the residual Z_2 here is a 2<->3 exchange on that internal index; no position variable exists in this runner, so the aligned-core law is never resolved per site.
-  per_mode: checked -- the Z_3 characters are separated explicitly: the singlet mode carries the diagonal entry 2.100000, the two doublet modes carry the equal diagonal 1.000000, and the alignment collapses both singlet-doublet couplings onto the single repeated real scalar q = 0.200000, which is exactly why no relative phase between modes survives.
-  per_block: checked -- the real Majorana rotation R acts as the identity on the singlet block and rotates only the 2-dimensional doublet block by pi/4, and the block-resolved consequence is asymmetric: one singlet-doublet coupling is annihilated to 1.58e-16 while the other is boosted to exactly sqrt(2) q = 0.282843 and stays real, giving the CP pair (-4.63e-33, 1.86e-16).
-  lattice_wide: checked and not executed -- no lattice, volume or asymptotic limit appears anywhere; the widest sweep this runner performs is 80 positive-definite draws from the same four-parameter aligned family, which is a parameter-space ensemble showing the law is not a special point, not a statement at lattice scale.
 
 ========================================================================================
 RESULT

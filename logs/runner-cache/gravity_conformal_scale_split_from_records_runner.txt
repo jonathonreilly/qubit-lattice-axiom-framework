@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/gravity_conformal_scale_split_from_records_runner.py
-runner_sha256: da5211f4889f63bea59d462e4e406625916f38dc316b9737533c9e5d92ad8f2f
+runner_sha256: 865f4d365b9f2d62def5e94eb7f515031e2b498a7ffee5fefdf4022503b72bb4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
 A1. null-geodesic direction field is CONFORMALLY INVARIANT (pointwise over a grid)
 ==============================================================================
-   worst normalized ray-direction difference (g vs Omega^2 g): 3.19e-16
+   worst normalized ray-direction difference (g vs Omega^2 g): 3.15e-16
   [PASS] null-geodesic direction field invariant under (position-dependent) conformal rescaling  | light paths / deflection are conformal-CLASS observables => records-derived
 
 ==============================================================================
@@ -35,15 +35,6 @@ A4. the split EXPLAINS the framework's gravity-results pattern
    SHAPIRO (time-delay)  = conformal-FACTOR observable -> the clock-rate no-go
      (retained_no_go POST_RECORD_CLOCK_RATE_INTERFACE) -> MATCHES the retained_no_go shapiro_* family.
   [PASS] gravity's conformal part (lensing) is records-derived; its scale part (Shapiro) is the no-go  | the conformal/scale split explains lensing-retained vs Shapiro-no-go
-
-==============================================================================
-N5 execution certificate: what this runner resolves, and at which granularity
-==============================================================================
-per_element: checked — the conformal weight is resolved entry by entry on the diagonal metric: all three inverse entries (g^tt, g^xx, g^yy) pick up the same Omega^-2 and cancel in the normalized ray direction (worst residual 3.19e-16), while the single g_tt entry carries one power of Omega into sqrt(-g_tt) and does not cancel.
-per_site: checked and not executed — this runner carries no lattice and no site index; phi and Omega are continuum functions of (x, y) sampled at 400 random points in (-3, 3)^2 and along a 2400-step traced ray, and the record substrate that would supply sites is named by the note but not built here.
-per_mode: checked — the only mode structure present is the photon's null momentum covector p = (-1, p_x, p_y), with p_y drawn from (-0.4, 0.4) and p_x fixed by the null condition; invariance holds across every sampled null mode (3.19e-16), and A2 traces one such mode (impact parameter b=1.2, p_y=0) to alpha=-0.17247 rad. No field normal-mode decomposition is performed.
-per_block: checked and not executed — no blocking or coarse-graining step exists in this runner; the conformal factor Omega(x,y)=1+0.4*exp(-r^2/4) is applied pointwise and is never averaged over a block, so the weight-0 vs weight-1 separation (deflection -0.17247 vs -0.17246 rad; proper time 11.7319 -> 12.6861) is established observable by observable, not block by block.
-lattice_wide: checked and not executed — the metric here is a single supplied weak-field lens diag(-(1+2phi), 1-2phi, 1-2phi) with M=0.06, eps=0.6, not a lattice of records; the note's own boundary states that the source mechanism (a record/energy concentration producing this curved conformal class) is modeled, not derived, so no lattice-wide statement is available and the Shapiro excess -0.2681 remains scale-set by the retained clock-rate no-go.
 
 runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
 TOTAL: PASS=4 FAIL=0

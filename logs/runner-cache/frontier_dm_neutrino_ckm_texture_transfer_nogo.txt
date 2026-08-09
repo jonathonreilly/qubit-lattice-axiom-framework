@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_ckm_texture_transfer_nogo.py
-runner_sha256: 0bed0bee9968a7da8106dbe2cd0fd37be0945c06b4819270e958641007a14918
+runner_sha256: 71268ec9704cd19d654e91e7c686c4c17aac3672b309016cd774b9418a89c2b2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -23,20 +23,20 @@ Question:
   texture needed for leptogenesis?
 
 Representative transformed Yukawa matrix Y':
-[[ 3.84667736e-03+0.00000000e+00j -3.25677380e-20+4.71119837e-03j
+[[ 3.84667736e-03+0.00000000e+00j -3.58746839e-20+4.71119837e-03j
   -2.72001165e-03-4.84130910e-20j]
- [ 3.84667736e-03+0.00000000e+00j  2.83481818e-19-1.77234424e-18j
-   5.44002329e-03+1.55550381e-18j]
- [ 3.84667736e-03+0.00000000e+00j  1.76416092e-18-4.71119837e-03j
-  -2.72001165e-03-8.07835639e-19j]]
+ [ 3.84667736e-03+0.00000000e+00j  3.88503181e-19-8.67361738e-19j
+   5.44002329e-03+1.53491312e-18j]
+ [ 3.84667736e-03+0.00000000e+00j  1.60878563e-18-4.71119837e-03j
+  -2.72001165e-03-3.06714687e-19j]]
 
 H' = Y'^dag Y':
-[[4.43907801e-05+0.00000000e+00j 7.75134339e-21-3.95272587e-21j
-  4.52737544e-22+2.68980868e-21j]
- [7.75134339e-21+3.95272587e-21j 4.43907801e-05+8.78072397e-39j
-  4.09984332e-22+5.96429727e-21j]
- [4.52737544e-22-2.68980868e-21j 4.09984332e-22-5.96429727e-21j
-  4.43907801e-05+3.74750657e-37j]]
+[[ 4.43907801e-05+0.00000000e+00j  7.54492730e-21-3.90105484e-21j
+   4.26902029e-22+4.53825356e-21j]
+ [ 7.54492730e-21+3.90105484e-21j  4.43907801e-05+0.00000000e+00j
+  -9.47959674e-22+2.26008806e-21j]
+ [ 4.26902029e-22-4.53825356e-21j -9.47959674e-22-2.26008806e-21j
+   4.43907801e-05+0.00000000e+00j]]
 
 Singular values of Y':
 [0.00666264 0.00666264 0.00666264]
@@ -51,17 +51,10 @@ Representative NNI transfer on a degenerate seed:
   c23^geom = 0.700000  ->  c23^phys = 0.700000
   c13^geom = c12*c23 = 0.840000  ->  c13^phys = 0.840000
   [PASS (C)] Unitary left/right basis changes preserve Y^dag Y = y_0^2 I  (H' stays proportional to the identity)
-  [PASS (C)] The singular-value spectrum remains exactly triple-degenerate  (max |s_i-y0| = 2.60e-18)
+  [PASS (C)] The singular-value spectrum remains exactly triple-degenerate  (max |s_i-y0| = 8.67e-19)
   [PASS (C)] The GST / hierarchy ratios collapse to unity  (no singular-value hierarchy exists to seed CKM-like suppression)
   [PASS (C)] Mass-basis NNI normalization becomes the identity map  (all sqrt(m_i/m_j) factors are exactly 1)
-  [PASS (C)] Phase-only Z3 insertions do not rescue the CP kernel  (max offdiag(H_phase) = 1.04e-20)
-
-N5 execution certificate -- what this runner resolves per class:
-  per_element: checked -- each transfer coefficient is carried across on its own rather than as a bundle: c12 goes 1.200000 -> 1.200000, c23 goes 0.700000 -> 0.700000 and the Schur-generated c13 goes 0.840000 -> 0.840000; separately every entry of H_phase is inspected, with max |offdiag| = 1.04e-20.
-  per_site: checked and not executed -- every atlas tool this runner attempts to transplant (GST hierarchy, mass-basis NNI, Schur complement, Jarlskog phase) is a generation-space construction, and y0, the singular values and the c_ij all carry only that internal index; no lattice position enters, so no site-resolved transfer is attempted or claimed here.
-  per_mode: checked -- the three singular modes of Y' are resolved individually and are exactly degenerate, all three sitting at y_0 = 0.006662640625 with max |s_i - y_0| = 2.60e-18; that is why the three mode ratios sqrt(s1/s2), sqrt(s2/s3), sqrt(s1/s3) come out as 1.000000, 1.000000, 1.000000 and leave no hierarchy to transfer.
-  per_block: checked -- the right basis change factorizes into a diagonal Z_3 phase block diag(1, e^{2 pi i/3}, e^{-2 pi i/3}) and a real rotation fixing index 1 while rotating the (2,3) block, and the Schur-complement route is itself a block-elimination statement, c13 = c12 * c23 = 0.840000; both block structures are evaluated and neither introduces a suppression factor.
-  lattice_wide: checked and not executed -- all four transfer routes are evaluated once on a single fixed 3x3 bridge Y = y_0 I with no ensemble, no volume and no limit anywhere in the runner, so the no-transfer verdict is certified only for that one bridge and is never promoted to a lattice-scale or asymptotic statement.
+  [PASS (C)] Phase-only Z3 insertions do not rescue the CP kernel  (max offdiag(H_phase) = 8.70e-21)
 
 Result:
   The current CKM/NNI atlas toolkit does not transfer to the current

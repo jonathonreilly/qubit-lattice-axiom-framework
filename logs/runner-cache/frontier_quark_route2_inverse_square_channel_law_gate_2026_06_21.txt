@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_inverse_square_channel_law_gate_2026_06_21.py
-runner_sha256: a52323d7e770a1f082bc4776f865bd27c08f7dab8ab88e9215f68d4f60daf55f
+runner_sha256: 222745e271491a8e586cd79f879cd5cd74b22b8544daf5273f8dd85c721e08c0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Route-2 inverse-square channel-law exponent gate
@@ -53,15 +53,6 @@ PASS: current bank therefore does not select p=-2
 PASS: the missing second-dual law would be sufficient for the endpoint
 PASS: the runner does not use observed endpoint values as proof inputs
 PASS: the result is a no-go for native/simple powers, not for arbitrary future nonlinear readouts
-
-----------------------------------------------------------------------------------------
-N5 execution certificate
-----------------------------------------------------------------------------------------
-per_element: resolved exactly and entry by entry -- all 20 cells of the exponent table are built as independent exact Fractions, so lambda, q_E, rho_E and c_TE are each carried as their own rational (the p=-2 row is 9/4, 15/8, 21/4, -8/9); no float is formed anywhere in the grid and no rounding or tolerance is involved.
-per_site: checked and not executed -- the only site-like data this gate consumes are the two per-arm projector weights w_E=1/3 and w_T1=1/2, and they arrive as already-summed O_h constants; the runner never opens the arm index that produced them, so no per-site amplitude is evaluated here at any point.
-per_mode: this is where the entire gate lives -- E and T1 are the two O_h channel modes and every tabulated row is a ratio C_E/C_T1 of one mode against the other, so the target lambda=9/4 is a pure mode-content statement rather than a magnitude one; the native/simple laws return mode ratios 3/2, 1, 2/3 and 4/9, and each one misses.
-per_block: the exponent grid is partitioned into the single target rung p=-2 and the 4-rung native/simple block, and the named-principle block of 4 current-bank readings is swept as a block against lambda!=9/4; what gets resolved at this granularity is block membership and block count only -- no field amplitude is evaluated for any block.
-lattice_wide: checked and not executed, and deliberately so -- the object that is missing is precisely a global derivation of C_X proportional to w_X^-2 from Route-2 readout primitives, so supplying one inside this runner would not test the gate but would instead be the very theorem the note reports as absent; the four authority notes are read only for string-level assertions about what the bank does not derive.
 
 ----------------------------------------------------------------------------------------
 Summary

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_lattice_non_conjugation_2026_05_09_probe17.py
-runner_sha256: 335757ff2454afe6f22b9bddc6b399a2e4ca728e0edd643acbfbf98201bfe91a
+runner_sha256: 1f7133f25f2e3ba8646c4005eac57e69ff294b2294def096fd69396b1692a9a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ======================================================================
@@ -45,7 +45,7 @@ Section 3: V2 — Bimodule action distinct from conjugation
   PASS  3.4a U_b(theta) commutes with C_3
   PASS  3.4b U_b(theta) is unitary
   diag info: U_b conjugation on (a, b) = (a=1.0, b=(0.5+0.3j)) ->
-             a_after = 1.000000-0.000000j
+             a_after = 1.000000+0.000000j
              b_after = 0.500000+0.300000j
              expected a = 1.0, b = (0.5 + 0.3j) * e^{i theta_b} = 0.189156+0.551561j
   PASS  3.4c Conjugation by U_b acts TRIVIALLY on circulants (Probe 14)
@@ -107,8 +107,8 @@ Section 7: Structural obstruction theorem
   PASS  7.4 Conjugation by C_3-commuting U is TRIVIAL on circulants (A^{C_3} commutative)
   PASS  7.5 Conjugation by NON-C_3-commuting Q breaks A^{C_3} (not circulant)
   diag info: U(1)_b rotation by phi=0.7: 
-    eigs(H_orig) = [np.float64(-0.01961524227066326), np.float64(1.0196152422706628), np.float64(1.9999999999999991)]
-    eigs(H_rot)  = [np.float64(-0.14448832863068883), np.float64(1.3783115749418733), np.float64(1.7661767536888162)]
+    eigs(H_orig) = [np.float64(-0.01961524227066322), np.float64(1.0196152422706626), np.float64(1.9999999999999987)]
+    eigs(H_rot)  = [np.float64(-0.14448832863068883), np.float64(1.3783115749418735), np.float64(1.7661767536888138)]
   PASS  7.6 U(1)_b on (a, b) does NOT preserve the spectrum of H
   >> Structural obstruction: U(1)_b is a SPECTRUM-NON-PRESERVING
      transformation on M_3(C). It cannot be implemented by any
@@ -148,15 +148,6 @@ Section 9: Honest closure status of A1-condition
     Probe 17 closes the non-conjugation case via Skolem-Noether.
     Combined: no retained per-site qubit U(1) lift produces U(1)_b.
   PASS  9.8 A1 admission count unchanged after Probe 17
-
-======================================================================
-Section 10: N5 execution certificate — resolution classes exercised here
-======================================================================
-  per_element: resolved coefficient by coefficient on every candidate action — for each of V1 through V5 the transformed operator is decomposed back onto the basis {I, C, C^2} and the a and b coefficients are read off and compared separately, which is exactly how conjugation by the C_3-commuting U_b is caught leaving both a and b untouched while the left-module action L_{U_b} is caught moving a as well as b, i.e. mixing rather than rotating.
-  per_site: genuinely exercised, and it is the subject of the probe — the retained continuous phase is the per-site Qubit U(1) exp(i theta sigma_3 / 2) in U(2) on the one-site Cl(3) factor, V1 grades that per-site phase by C_3 character and V5 makes it depend on site position through the direction generators T_x, T_y, T_z whose product is the sublattice parity -I on hw=1; in every case the site-level phase either C_3-symmetrizes to a scalar or breaks A^{C_3}.
-  per_mode: resolved mode by mode on both gradings that matter here — the C_3 characters {1, omega, omega_bar} are separated when the graded per-site phase of V1 is built, and the spectrum of H itself is resolved eigenvalue by eigenvalue before and after a U(1)_b rotation, which is precisely the check that the rotation moves individual eigenvalues and therefore cannot be any unitary similarity.
-  per_block: resolved block by block on A^{C_3} = span{I, C, C^2} — the trivial block carrying a is separated from the b-doublet block carrying C and C^2, every candidate action is scored by what it does to those two blocks separately, and the K-conjugation fixed set of the doublet block is identified as the real-b line, i.e. a Z_2 fixed set rather than an SO(2) one.
-  lattice_wide: checked and not executed — no lattice of any extent is instantiated here, and no volume, site sum or limit is taken; the spatial content enters only through the three direction generators and their parity product on the fixed 3-dimensional hw=1 sector, and the closing argument is Skolem-Noether rigidity of M_3(C), a statement about one finite matrix algebra that has no extent to resolve at all.
 
 ======================================================================
 === TOTAL: PASS=56, FAIL=0 ===

@@ -1,0 +1,1031 @@
+diff --git a/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md b/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md
+index 73dcdd0058..05d594894f 100644
+--- a/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md
++++ b/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md
+@@ -1,4 +1,4 @@
+-# Seven narrow exact algebraic results on stipulated definitions — salvage of the rejected route-sweep package
++# Seven exact algebraic results on stipulated definitions
+ 
+ Date: 2026-08-08
+ 
+@@ -6,31 +6,39 @@ Authority: none
+ 
+ Audit: unset
+ 
+-Status: bounded support note (review-loop salvage pass on PR #5995,
+-which the combined adversarial science review rejected with
+-disposition FAIL). This note carries ONLY the narrow exact algebraic
+-results the review itself named salvageable, restated on definitions
+-stipulated in this file and in the runners. Nothing here is a
+-derivation from the repo axioms, a route closure, a no-go, a physical
+-identification, or a selection among rival expressions. Every claim
+-below is exact rational/integer mathematics on its own stipulated
+-objects, and each unit says what it does NOT establish.
++Status: bounded support note. This note carries seven narrow exact
++algebraic results, each restated on definitions stipulated in this
++file and in the runners. Nothing here is a derivation from the repo
++axioms, a route closure, a no-go, a physical identification, or a
++selection among rival expressions. Every claim below is exact
++rational/integer mathematics on its own stipulated objects, and each
++unit says what it does NOT establish. Historical provenance (these
++are the results a combined adversarial science review named
++salvageable from a rejected package) is recorded in the Review record
++at the end of this note.
+ 
+ Claim type: bounded_theorem (support-only; no headline claim; each
+ unit is bounded to its stipulated definitions)
+ 
+ Imports: none. All definitions are stipulated in this file and
+-restated verbatim in the runners. The runners read no repo files, pin
+-no axiom bytes, execute no git-history objects, and contain no fitted
+-or measured comparators.
++restated verbatim in the runners. The primary runner has no file
++inputs at all; the independent checker reads exactly one non-science
++input — the primary's receipt, as execution evidence, declared in its
++own receipt `inputs`. Neither runner pins axiom bytes, executes
++git-history objects, or contains fitted or measured comparators.
+ 
+ Runners:
+ 
+ - [`salvaged_exact_algebra_2026_08_08.py`](../scripts/salvaged_exact_algebra_2026_08_08.py)
+   (primary; 31 computed checks, fail-closed, exit 0 only on full PASS)
+ - [`salvaged_exact_algebra_independent_check_2026_08_08.py`](../scripts/salvaged_exact_algebra_independent_check_2026_08_08.py)
+-  (independent check; 25 computed checks; every unit recomputed by a
+-  different exact route; verifies the primary receipt fail-closed)
++  (independent check; 27 computed checks; every unit recomputed by a
++  different exact route; verifies the primary receipt fail-closed and
++  full-surface — the entire receipt payload must equal a canonical
++  expected record assembled from the checker's own seven routes, and
++  two tamper regressions run every time: a byte tamper must break the
++  digest, and the same semantic tamper with a recomputed self-digest
++  must still be rejected by the full-payload comparison)
+ 
+ Receipts:
+ 
+@@ -195,8 +203,9 @@ runs S, a, ..., b, S with the inner path avoiding S, giving the lower
+ bound; a shortest inner path closes to a simple cycle attaining it.
+ Verified exhaustively on all 32768 graphs on 6 labelled vertices
+ (brute-force cycle enumeration vs the formula) and, in the
+-independent check, on all 1024 graphs on 5 vertices plus 200 seeded
+-8-vertex graphs by the distinct edge-removal BFS route.
++independent check, by the distinct edge-removal BFS route on all 1024
++graphs on 5 vertices, 200 seeded 8-vertex graphs, and the same full
++6-vertex census recomputed independently.
+ 
+ Not established: any three-regime loop-cost law, any mechanism claim,
+ and any statement about measured loop costs on frozen fields — the
+@@ -209,9 +218,11 @@ The combined adversarial review of PR #5995 (129 delta files, 17
+ notes, 34 runners, 44 receipts, 34 logs) returned disposition FAIL
+ and named as salvageable only "narrow exact results ... separable
+ from the failed bridges/no-go rhetoric" (its salvage finding, F14).
+-This branch deletes every delta file of that package and rebuilds
+-exactly the salvageable algebra as the single package above. The
+-deleted files remain recoverable on the PR head branch.
++The salvage pass (commit `b472df1c1b`) deleted every delta file of
++that package and rebuilt exactly the salvageable algebra as the
++single package above. The deleted files remain recoverable at the
++untouched PR head: branch `physics-loop/toe-time-blockAC2-20260802`,
++immutable commit `867aff0edc16f64b5e8d5cc1022cbf9ce92b92de`.
+ 
+ Salvaged (source -> unit above): Cycle 872 exact conformal/trace-free
+ algebra -> unit 1; Cycles 876/895 exact affine normal form -> unit 2;
+@@ -284,18 +295,21 @@ the PR #5995 review record):
+   (F8); declared source runners/receipts absent from the worktree and
+   from origin/main (F15 — Cycle 872's two source runners, Cycle 895's
+   Cycle 873/880 inputs, Cycle 900's Cycle 884 inputs); their exact
+-  algebra survives as units 1, 2, 4, 5 on in-file stipulations with
+-  no pins.
++  algebra survives as units 1, 2, and 5 on in-file stipulations with
++  no pins (Cycle 899's algebra, unit 4, is covered in its own entry
++  above).
+ - All 34 committed runner logs and 44 receipts of the old package:
+   caches of runners whose executable closure cannot be reconstructed
+   (F9, F15) or whose gates were not evidence-driven (F1).
+ - The nine prose "audit rows" and all campaign/window process
+   language on science surfaces: not machine-visible to the audit
+   worker, missing dependency links (F13); branch-local process
+-  vocabulary on durable surfaces (F12). This note requests no audit
+-  rows.
++  vocabulary on durable surfaces (F12). This note requests no extra
++  dispatch or re-audit rows; its own ordinary claim row is
++  pipeline-seeded and remains `unaudited` for independent review.
+ 
+ What this salvage does NOT do: it does not repair, re-derive, or
+ re-assert any dropped claim; it does not touch the axiom surface; it
+-does not seed audit rows; it does not compare anything to fitted,
+-measured, or imported values.
++authors no audit verdict and requests no extra dispatch or re-audit
++rows (its own pipeline-seeded claim row remains `unaudited`); it does
++not compare anything to fitted, measured, or imported values.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 9a2948bff3..acfb656a77 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 15422,
+- "node_count": 4632,
++ "node_count": 4640,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -10,6 +10,10 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
++  "a3_channel_half_forced_cycle912_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc": {
+    "deps_hash": "2ef413449f13",
+    "out_degree": 6
+@@ -2474,6 +2478,10 @@
+    "deps_hash": "27100503e5e0",
+    "out_degree": 3
+   },
++  "complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "complete_prediction_chain_2026_04_15": {
+    "deps_hash": "ed7953444551",
+    "out_degree": 14
+@@ -4506,6 +4514,10 @@
+    "deps_hash": "1381121484ef",
+    "out_degree": 3
+   },
++  "exact_algebra_salvage_bounded_support_note_2026-08-08": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -10118,6 +10130,10 @@
+    "deps_hash": "95b72757a210",
+    "out_degree": 5
+   },
++  "occurrence_route_priced_alpha_freedom_unified_cycle924_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "oh_schur_boundary_action_note": {
+    "deps_hash": "5a94355f1c1f",
+    "out_degree": 1
+@@ -12718,6 +12734,10 @@
+    "deps_hash": "9e644cf962a3",
+    "out_degree": 3
+   },
++  "retyped_worlds_are_setups_selection_sites_exist_cycle911_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
+    "deps_hash": "b4b201521fbe",
+    "out_degree": 2
+@@ -13058,6 +13078,10 @@
+    "deps_hash": "7299ef75081c",
+    "out_degree": 1
+   },
++  "selection_is_transport_o3_terminal_cycle913_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "self_consistency_forces_poisson_note": {
+    "deps_hash": "0c72e54e8637",
+    "out_degree": 1
+@@ -13494,6 +13518,10 @@
+    "deps_hash": "60dbe33abca2",
+    "out_degree": 6
+   },
++  "source_action_bridge_pricing_cycle871_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "source_driven_field_recovery_h025_pocket_note": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -15918,6 +15946,10 @@
+    "deps_hash": "2dd3a68f91ed",
+    "out_degree": 3
+   },
++  "within_world_purchase_spectrum_cycle909_bounded_theorem_note_2026-07-28": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+diff --git a/docs/audit/scripts/build_citation_graph.py b/docs/audit/scripts/build_citation_graph.py
+index ce6480819c..583fd09374 100755
+--- a/docs/audit/scripts/build_citation_graph.py
++++ b/docs/audit/scripts/build_citation_graph.py
+@@ -196,6 +196,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+     "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
+         "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
+     ],
++    # The exact-algebra bounded-support checker deliberately does not import
++    # the primary: it recomputes every unit by a different exact route and
++    # verifies the primary receipt fail-closed. Expose that separately
++    # executable checker beside the primary in this claim's restricted packet.
++    "exact_algebra_salvage_bounded_support_note_2026-08-08": [
++        "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
++    ],
+     # Cycle 731's checker intentionally obtains the actual primary gate stream
+     # through runpy/subprocess boundaries rather than importing the primary.
+     # Keep that independent source in the claim packet explicitly.
+diff --git a/logs/runner-cache/salvaged_exact_algebra_independent_check_2026_08_08.txt b/logs/runner-cache/salvaged_exact_algebra_independent_check_2026_08_08.txt
+index d5fe65384c..1045c0d99d 100644
+--- a/logs/runner-cache/salvaged_exact_algebra_independent_check_2026_08_08.txt
++++ b/logs/runner-cache/salvaged_exact_algebra_independent_check_2026_08_08.txt
+@@ -18,11 +18,13 @@ PASS circulant.equal_diagonal_and_trace_route_gives_(n-1)/n_over_n^2
+ PASS circulant.ratio_at_n_3_is_2/27
+ PASS edge_removal.matches_the_neighbour_pair_formula_on_all_1024
+ PASS edge_removal.matches_on_200_seeded_8_vertex_graphs
++PASS edge_removal.six_vertex_census_recomputed_independently
+ PASS receipt.primary_receipt_file_exists
+ PASS receipt.primary_digest_recomputes
+-PASS receipt.primary_verdict_is_a_full_real_pass
+-PASS receipt.primary_values_match_this_checkers_recomputation
++PASS receipt.full_payload_matches_the_canonical_expected_record
++PASS tamper.unrehashed_tamper_breaks_the_digest
++PASS tamper.rehashed_semantic_tamper_is_rejected
+ PASS gate.check_count_matches_the_declared_census
+-TOTAL: PASS=25 FAIL=0
++TOTAL: PASS=27 FAIL=0
+ VERDICT: PASS
+ receipt: outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
+diff --git a/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json b/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
+index cd155b6f00..8854223432 100644
+--- a/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
++++ b/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
+@@ -80,6 +80,10 @@
+    "name": "edge_removal.matches_on_200_seeded_8_vertex_graphs",
+    "ok": true
+   },
++  {
++   "name": "edge_removal.six_vertex_census_recomputed_independently",
++   "ok": true
++  },
+   {
+    "name": "receipt.primary_receipt_file_exists",
+    "ok": true
+@@ -89,11 +93,15 @@
+    "ok": true
+   },
+   {
+-   "name": "receipt.primary_verdict_is_a_full_real_pass",
++   "name": "receipt.full_payload_matches_the_canonical_expected_record",
++   "ok": true
++  },
++  {
++   "name": "tamper.unrehashed_tamper_breaks_the_digest",
+    "ok": true
+   },
+   {
+-   "name": "receipt.primary_values_match_this_checkers_recomputation",
++   "name": "tamper.rehashed_semantic_tamper_is_rejected",
+    "ok": true
+   },
+   {
+@@ -102,17 +110,37 @@
+   }
+  ],
+  "date": "2026-08-08",
+- "expected_check_count": 25,
++ "expected_check_count": 27,
+  "fail": 0,
+  "inputs": [
+   "outputs/salvaged_exact_algebra_receipt_2026_08_08.json"
+  ],
+- "pass": 25,
+- "payload_sha256": "e367abdfd4072a4b6a78666cd020b1ebf3429a6ac716b8d6e09927c042f61e10",
++ "pass": 27,
++ "payload_sha256": "c7ea0fc5b331e91305f93effcffaad29334add1cc1d854f46f23859cdbef5898",
++ "review_loop": {
++  "addressed": [
++   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
++   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
++   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
++   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
++  ],
++  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
++  "iteration": 2
++ },
+  "role": "salvage independent check: every unit recomputed by a different exact route; primary receipt verified fail-closed",
+  "script": "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+  "units": {
+   "forms_by_polynomials": {
++   "family_values_at_N_3": {
++    "(N-1)(N-2)/(3N)": "2/9",
++    "(N-1)/N^2": "2/9",
++    "(N^2-1)/(12N)": "2/9"
++   },
++   "family_values_at_N_4": {
++    "(N-1)(N-2)/(3N)": "1/2",
++    "(N-1)/N^2": "3/16",
++    "(N^2-1)/(12N)": "5/16"
++   },
+    "fixed_locus_rows": [
+     {
+      "N": 2,
+@@ -169,6 +197,85 @@
+      "matches": true,
+      "sum": "143/12"
+     }
++   ],
++   "fixed_locus_rows_primary_schema": [
++    {
++     "N": 2,
++     "matches_(N^2-1)/12": true,
++     "normalised": "1/8",
++     "normalised_matches_family": true,
++     "sum": "1/4"
++    },
++    {
++     "N": 3,
++     "matches_(N^2-1)/12": true,
++     "normalised": "2/9",
++     "normalised_matches_family": true,
++     "sum": "2/3"
++    },
++    {
++     "N": 4,
++     "matches_(N^2-1)/12": true,
++     "normalised": "5/16",
++     "normalised_matches_family": true,
++     "sum": "5/4"
++    },
++    {
++     "N": 5,
++     "matches_(N^2-1)/12": true,
++     "normalised": "2/5",
++     "normalised_matches_family": true,
++     "sum": "2/1"
++    },
++    {
++     "N": 6,
++     "matches_(N^2-1)/12": true,
++     "normalised": "35/72",
++     "normalised_matches_family": true,
++     "sum": "35/12"
++    },
++    {
++     "N": 7,
++     "matches_(N^2-1)/12": true,
++     "normalised": "4/7",
++     "normalised_matches_family": true,
++     "sum": "4/1"
++    },
++    {
++     "N": 8,
++     "matches_(N^2-1)/12": true,
++     "normalised": "21/32",
++     "normalised_matches_family": true,
++     "sum": "21/4"
++    },
++    {
++     "N": 9,
++     "matches_(N^2-1)/12": true,
++     "normalised": "20/27",
++     "normalised_matches_family": true,
++     "sum": "20/3"
++    },
++    {
++     "N": 10,
++     "matches_(N^2-1)/12": true,
++     "normalised": "33/40",
++     "normalised_matches_family": true,
++     "sum": "33/4"
++    },
++    {
++     "N": 11,
++     "matches_(N^2-1)/12": true,
++     "normalised": "10/11",
++     "normalised_matches_family": true,
++     "sum": "10/1"
++    },
++    {
++     "N": 12,
++     "matches_(N^2-1)/12": true,
++     "normalised": "143/144",
++     "normalised_matches_family": true,
++     "sum": "143/12"
++    }
+    ]
+   },
+   "grading_by_interpolation": {
+@@ -179,10 +286,12 @@
+    ]
+   },
+   "module_by_characters": {
++   "complement_char_poly": "x^2 + x + 1",
+    "dimension_pair_over_Q": [
+     1,
+     2
+    ],
++   "discriminant": "-3/1",
+    "multiplicities_over_C": [
+     1,
+     1,
+@@ -196,21 +305,93 @@
+    "eight_vertex_seeded": 200,
+    "eight_vertex_with_cycle_through_pointer": 138,
+    "five_vertex_graphs": 1024,
+-   "five_vertex_with_cycle_through_pointer": 591
++   "five_vertex_with_cycle_through_pointer": 591,
++   "six_vertex_graphs": 32768,
++   "six_vertex_with_cycle_through_pointer": 24838
+   },
+   "primary_receipt": {
+-   "primary_digest": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
++   "comparison": "full payload minus self-digest, wholesale",
++   "primary_digest": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
+    "primary_fail": 0,
+    "primary_pass": 31
+   },
+   "split_by_reynolds": {
++   "ledger_rows_recomputed": [
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": -6
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": -5
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": -4
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": -3
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": -2
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": -1
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 0
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 1
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 2
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 3
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 4
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 5
++    },
++    {
++     "conformal_channel_zero": true,
++     "trace": "0/1",
++     "w": 6
++    }
++   ],
+    "probe_count": 125
+   },
+   "witness_by_trace": {
+    "n_range": [
+     2,
+     50
+-   ]
++   ],
++   "rival_value_at_3": "2/9",
++   "value_at_3": "2/27"
+   }
+  },
+  "verdict": "PASS"
+diff --git a/outputs/salvaged_exact_algebra_receipt_2026_08_08.json b/outputs/salvaged_exact_algebra_receipt_2026_08_08.json
+index c8a8ce559f..f6867d3eea 100644
+--- a/outputs/salvaged_exact_algebra_receipt_2026_08_08.json
++++ b/outputs/salvaged_exact_algebra_receipt_2026_08_08.json
+@@ -130,7 +130,17 @@
+  "fail": 0,
+  "inputs": [],
+  "pass": 31,
+- "payload_sha256": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
++ "payload_sha256": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
++ "review_loop": {
++  "addressed": [
++   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
++   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
++   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
++   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
++  ],
++  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
++  "iteration": 2
++ },
+  "role": "salvage primary: seven narrow exact algebraic results on in-file stipulated definitions; bounded support only; no derivation, closure, or selection claims",
+  "script": "scripts/salvaged_exact_algebra_2026_08_08.py",
+  "units": {
+diff --git a/scripts/salvaged_exact_algebra_2026_08_08.py b/scripts/salvaged_exact_algebra_2026_08_08.py
+index f236d6626c..f89254c587 100644
+--- a/scripts/salvaged_exact_algebra_2026_08_08.py
++++ b/scripts/salvaged_exact_algebra_2026_08_08.py
+@@ -60,6 +60,20 @@ RECEIPT_PATH = os.path.join(
+     REPO, "outputs", "salvaged_exact_algebra_receipt_2026_08_08.json")
+ DATE = "2026-08-08"
+ EXPECTED_CHECK_COUNT = 31
++REVIEW_LOOP = {
++    "iteration": 2,
++    "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
++    "addressed": [
++        "S1: receipt cross-check made full-surface in the independent "
++        "checker, with a rehashed semantic-tamper regression",
++        "S2: independent checker registered as an explicit packet helper "
++        "for this claim in build_citation_graph.py",
++        "S3: citation-graph manifest acknowledgment co-landed; audit-row "
++        "wording in the note corrected",
++        "S4: note title, source-boundary sentence, unit cross-reference, "
++        "and recovery handle corrected",
++    ],
++}
+ 
+ CHECKS: list[tuple[str, bool]] = []
+ 
+@@ -664,6 +678,7 @@ def main() -> int:
+         "fail": fails,
+         "expected_check_count": EXPECTED_CHECK_COUNT,
+         "verdict": verdict,
++        "review_loop": REVIEW_LOOP,
+     }
+     blob = json.dumps(payload, sort_keys=True, indent=1).encode()
+     payload["payload_sha256"] = hashlib.sha256(blob).hexdigest()
+diff --git a/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py b/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py
+index 09dfeb7a1c..8bc302696b 100644
+--- a/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py
++++ b/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py
+@@ -24,12 +24,19 @@ reuses the primary's computation:
+   6. projector-ratio witness     -> circulant/trace route
+      (equal diagonal + trace = n - 1)
+   7. pointer-cycle identity      -> edge-removal BFS route on all 1024
+-     graphs on 5 vertices plus 200 seeded 8-vertex graphs
+-
+-It then verifies the committed primary receipt fail-closed: the file
+-must exist, its embedded digest must recompute, its verdict must be a
+-full real PASS, and its load-bearing values must equal this checker's
+-own recomputation.  Any miss prints FAIL and exits 1.
++     graphs on 5 vertices, 200 seeded 8-vertex graphs, AND the full
++     32768-graph 6-vertex census recomputed independently
++
++It then verifies the committed primary receipt fail-closed and
++full-surface: the file must exist, its embedded digest must
++recompute, and the ENTIRE payload (every unit field, every check row,
++the counts, the verdict, and the pinned declared-design constants)
++must equal a canonical expected record assembled from this checker's
++seven independent routes.  Two tamper regressions are executed on
++every run: a byte tamper without rehash must break the digest, and
++the same semantic tamper WITH a recomputed self-digest must still be
++rejected by the full-payload comparison.  Any miss prints FAIL and
++exits 1.
+ """
+ from __future__ import annotations
+ 
+@@ -48,7 +55,7 @@ RECEIPT_PATH = os.path.join(
+     REPO, "outputs",
+     "salvaged_exact_algebra_independent_check_receipt_2026_08_08.json")
+ DATE = "2026-08-08"
+-EXPECTED_CHECK_COUNT = 25
++EXPECTED_CHECK_COUNT = 27
+ 
+ CHECKS: list[tuple[str, bool]] = []
+ 
+@@ -138,6 +145,7 @@ def check_split_by_reynolds() -> dict:
+ 
+     comp = mat_sub(mat_id(3), reynolds)
+     ledger_ok = True
++    ledger_rows = []
+     for w in range(-6, 7):
+         v = [[Fraction(-2 * w)], [Fraction(w)], [Fraction(w)]]
+         avg = mat_mul(reynolds, v)
+@@ -145,6 +153,11 @@ def check_split_by_reynolds() -> dict:
+             ledger_ok = False
+         if mat_mul(comp, v) != v:
+             ledger_ok = False
++        # Reynolds route: P(v) = (trace/3)*(1,1,1), so trace = 3*(Pv)[0]
++        trace = 3 * avg[0][0]
++        ledger_rows.append({"w": w, "trace": q(trace),
++                            "conformal_channel_zero":
++                                all(row[0] == 0 for row in avg)})
+     check("reynolds.recoil_ledger_is_annihilated_by_the_group_average",
+           ledger_ok)
+ 
+@@ -163,7 +176,8 @@ def check_split_by_reynolds() -> dict:
+                 graded_ok = False
+     check("reynolds.graded_operator_fixes_exactly_the_averaged_out_vectors",
+           graded_ok)
+-    return {"probe_count": len(values) ** 3}
++    return {"probe_count": len(values) ** 3,
++            "ledger_rows_recomputed": ledger_rows}
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -269,8 +283,19 @@ def check_module_by_characters() -> dict:
+     pair = (1, 1 + 1) if phi3_irreducible else None
+     check("character.conjugate_characters_fuse_to_the_pair_1_2_over_Q",
+           phi3_irreducible and pair == (1, 2))
++    # char poly of the complement by the root route: (x - w)(x - w^2)
++    # has constant w*w^2 = 1 and linear -(w + w^2) = 1 in Z[w]
++    const = cyc_mul(omega, cyc_pow(omega, 2))
++    linear = (-(omega[0] + cyc_pow(omega, 2)[0]),
++              -(omega[1] + cyc_pow(omega, 2)[1]))
++    char_poly = ("x^2 + x + 1"
++                 if const == (Fraction(1), Fraction(0))
++                 and linear == (Fraction(1), Fraction(0)) else "MISMATCH")
++    disc = Fraction(1) * 1 - 4 * 1        # b^2 - 4c for x^2 + bx + c
+     return {"multiplicities_over_C": [1, 1, 1],
+-            "dimension_pair_over_Q": [1, 2]}
++            "dimension_pair_over_Q": [1, 2],
++            "complement_char_poly": char_poly,
++            "discriminant": q(disc)}
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -351,7 +376,12 @@ def check_forms_by_polynomials() -> dict:
+     # fixed-locus sum via the cycle-graph Laplacian pseudoinverse:
+     # L = 2I - S - S^{N-1}; eigenvalues (1-z)(1-z^{-1}) over z^N = 1;
+     # Tr((L + J/N)^{-1}) - 1 = sum over nontrivial z of the reciprocals
++    def family_value(name, n):
++        num, den = fams[name]
++        return poly_eval(num, Fraction(n)) / poly_eval(den, Fraction(n))
++
+     locus_rows = []
++    locus_rows_primary_schema = []
+     locus_ok = True
+     for n in range(2, 13):
+         shift = [[Fraction(1) if (i + 1) % n == j else Fraction(0)
+@@ -365,6 +395,12 @@ def check_forms_by_polynomials() -> dict:
+         expected = Fraction(n * n - 1, 12)
+         locus_rows.append({"N": n, "sum": q(total),
+                            "matches": total == expected})
++        locus_rows_primary_schema.append({
++            "N": n, "sum": q(total),
++            "matches_(N^2-1)/12": total == expected,
++            "normalised": q(total / n),
++            "normalised_matches_family":
++                total / n == family_value("(N^2-1)/(12N)", n)})
+         if total != expected:
+             locus_ok = False
+     check("laplacian.pseudoinverse_trace_gives_(N^2-1)/12_for_N_2_to_12",
+@@ -380,7 +416,12 @@ def check_forms_by_polynomials() -> dict:
+     pseudo = mat_sub(mat_inv(mat_add(lap, j_over_n)), j_over_n)
+     check("laplacian.pseudoinverse_witness_L_Lplus_is_I_minus_J_over_N",
+           mat_eq(mat_mul(lap, pseudo), mat_sub(mat_id(n), j_over_n)))
+-    return {"fixed_locus_rows": locus_rows}
++    return {"fixed_locus_rows": locus_rows,
++            "fixed_locus_rows_primary_schema": locus_rows_primary_schema,
++            "family_values_at_N_3":
++                {name: q(family_value(name, 3)) for name in fams},
++            "family_values_at_N_4":
++                {name: q(family_value(name, 4)) for name in fams}}
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -441,22 +482,30 @@ def check_origin_by_elimination() -> dict:
+ # ---------------------------------------------------------------------------
+ def check_witness_by_trace() -> dict:
+     ok = True
++    value_at_3 = None
++    rival_at_3 = None
+     for n in range(2, 51):
+         ones = [[Fraction(1)] * n for _ in range(n)]
+         comp = mat_sub(mat_id(n), mat_scale(Fraction(1, n), ones))
+         diag_entries = {comp[i][i] for i in range(n)}
+         trace = sum(comp[i][i] for i in range(n))
+         row_sums = [sum(row) for row in ones]
++        totalsum = sum(row_sums)
+         if not (len(diag_entries) == 1
+                 and trace == n - 1
+                 and next(iter(diag_entries)) == trace / n
+-                and sum(row_sums) == n * n):
++                and totalsum == n * n):
+             ok = False
++        if n == 3:
++            value_at_3 = (trace / n) / totalsum
++            rival_at_3 = (trace / n) / n
+     check("circulant.equal_diagonal_and_trace_route_gives_(n-1)/n_over_n^2",
+           ok)
+     check("circulant.ratio_at_n_3_is_2/27",
+-          (Fraction(3 - 1, 3) / 9) == Fraction(2, 27))
+-    return {"n_range": [2, 50]}
++          value_at_3 == Fraction(2, 27))
++    return {"n_range": [2, 50],
++            "value_at_3": q(value_at_3),
++            "rival_value_at_3": q(rival_at_3)}
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -546,65 +595,222 @@ def check_pointer_by_edge_removal() -> dict:
+             cyclic8 += 1
+     check("edge_removal.matches_on_200_seeded_8_vertex_graphs",
+           agree8 and cyclic8 > 0)
++
++    # full 6-vertex census by this checker's OWN polynomial routes, so
++    # the primary's census numbers are recomputed independently rather
++    # than merely read back from its receipt
++    n6, s6 = 6, 0
++    pairs6 = [(i, j) for i in range(n6) for j in range(i + 1, n6)]
++    agree6 = True
++    total6 = 0
++    cyclic6 = 0
++    for mask in range(1 << len(pairs6)):
++        adj = [[0] * n6 for _ in range(n6)]
++        for k, (i, j) in enumerate(pairs6):
++            if mask >> k & 1:
++                adj[i][j] = adj[j][i] = 1
++        a = cycle_by_edge_removal(adj, n6, s6)
++        b = cycle_by_neighbour_pairs(adj, n6, s6)
++        if a != b:
++            agree6 = False
++        total6 += 1
++        if a is not None:
++            cyclic6 += 1
++    check("edge_removal.six_vertex_census_recomputed_independently",
++          agree6 and total6 == 1 << 15 and 0 < cyclic6 < total6)
+     return {"five_vertex_graphs": total,
+             "five_vertex_with_cycle_through_pointer": cyclic,
+             "eight_vertex_seeded": 200,
+-            "eight_vertex_with_cycle_through_pointer": cyclic8}
++            "eight_vertex_with_cycle_through_pointer": cyclic8,
++            "six_vertex_graphs": total6,
++            "six_vertex_with_cycle_through_pointer": cyclic6}
+ 
+ 
+ # ---------------------------------------------------------------------------
+-# primary receipt verification (fail-closed)
++# primary receipt verification (fail-closed, full surface)
+ # ---------------------------------------------------------------------------
+-def check_primary_receipt(own: dict) -> dict:
++# The primary's declared structure, pinned here so the canonical expected
++# record covers EVERY field of the primary receipt payload.  Values that are
++# mathematics are recomputed by this checker's own routes above; values that
++# are the primary's declared design (probe-grid sizes, prose fields) are
++# pinned as constants that must not drift without both files changing.
++PRIMARY_SCRIPT = "scripts/salvaged_exact_algebra_2026_08_08.py"
++PRIMARY_ROLE = ("salvage primary: seven narrow exact algebraic results "
++                "on in-file stipulated definitions; bounded support "
++                "only; no derivation, closure, or selection claims")
++PRIMARY_REVIEW_LOOP = {
++    "iteration": 2,
++    "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
++    "addressed": [
++        "S1: receipt cross-check made full-surface in the independent "
++        "checker, with a rehashed semantic-tamper regression",
++        "S2: independent checker registered as an explicit packet helper "
++        "for this claim in build_citation_graph.py",
++        "S3: citation-graph manifest acknowledgment co-landed; audit-row "
++        "wording in the note corrected",
++        "S4: note title, source-boundary sentence, unit cross-reference, "
++        "and recovery handle corrected",
++    ],
++}
++PRIMARY_CHECK_NAMES = (
++    "split.decomposition_identity_on_all_probes",
++    "split.trace_free_channel_has_zero_trace",
++    "split.conformal_channel_is_constant_vector",
++    "split.projectors_idempotent_complementary",
++    "split.uniqueness_of_the_constant_part",
++    "split.recoil_ledger_minus2w_w_w_is_trace_free",
++    "split.graded_operator_fixes_exactly_the_trace_free_vectors",
++    "grading.residual_equals_A_plus_tB_on_all_configurations",
++    "grading.raw_ledger_sector_trace_is_identically_A",
++    "grading.B_depends_only_on_the_second_and_third_sector",
++    "grading.configuration_census_is_complete",
++    "module.fixed_subspace_is_the_line_of_1_1_1",
++    "module.complement_is_C_invariant_of_dimension_2",
++    "module.complement_char_poly_is_x2_plus_x_plus_1",
++    "module.complement_irreducible_over_Q_and_over_R",
++    "module.full_char_poly_factors_as_x3_minus_1",
++    "module.dimension_pattern_1_2_over_Q_R_and_1_1_1_over_C",
++    "forms.five_forms_collapse_to_(n-1)/n^2_on_the_locus",
++    "forms.families_coincide_pairwise_exactly_at_N_3",
++    "forms.families_separate_at_N_4",
++    "forms.fixed_locus_sum_equals_(N^2-1)/12_for_N_2_to_12",
++    "forms.evaluation_census_is_complete",
++    "origin.step_equals_(1_minus_m_G0)_over_6_on_the_grid",
++    "origin.step_is_one_sixth_iff_m_times_G0_is_zero",
++    "origin.on_G0_positive_the_massless_slice_is_m_equals_0",
++    "witness.diag_Qp_over_totalsum_J_is_(n-1)/n^3_for_n_2_to_50",
++    "witness.value_at_n_3_is_2/27",
++    "witness.rival_expression_diag_Qp_over_n_is_(n-1)/n^2",
++    "cycle.identity_holds_on_all_32768_graphs_on_6_vertices",
++    "cycle.census_counts_are_real",
++    "gate.check_count_matches_the_declared_census",
++)
++
++
++def build_expected_primary_payload(units: dict) -> dict:
++    """The canonical expected primary receipt payload, assembled from this
++    checker's independent recomputations plus the primary's pinned
++    declared design.  Every load-bearing field of the primary payload is
++    covered; comparison is wholesale."""
++    reynolds = units["split_by_reynolds"]
++    characters = units["module_by_characters"]
++    forms = units["forms_by_polynomials"]
++    witness = units["witness_by_trace"]
++    pointer = units["pointer_by_edge_removal"]
++    expected_units = {
++        "trace_free_conformal_split": {
++            "probe_count": 7 ** 3,           # primary's declared probe grid
++            "ledger_rows": reynolds["ledger_rows_recomputed"],
++        },
++        "affine_grading_normal_form": {
++            "configurations": units["grading_by_interpolation"]
++            ["configurations"],
++            "probe_points_per_configuration": 6,   # primary's declared grid
++            "residual_identities_checked":
++                units["grading_by_interpolation"]["configurations"] * 6,
++        },
++        "cyclic_permutation_module": {
++            "dimension_pair_over_Q_and_R":
++                characters["dimension_pair_over_Q"],
++            "dimension_pattern_over_C":
++                characters["multiplicities_over_C"],
++            "complement_char_poly": characters["complement_char_poly"],
++            "discriminant": characters["discriminant"],
++        },
++        "five_forms_and_families": {
++            "five_form_evaluations": 49 * 5,   # primary's declared sweep
++            "family_values_at_N_3": forms["family_values_at_N_3"],
++            "family_values_at_N_4": forms["family_values_at_N_4"],
++            "fixed_locus_rows": forms["fixed_locus_rows_primary_schema"],
++        },
++        "screened_origin_step": {
++            "grid_rows": 5 * 5,               # primary's declared grid
++        },
++        "projector_ratio_witness": {
++            "n_range": [2, 50],               # primary's declared range
++            "value_at_3": witness["value_at_3"],
++            "rival_value_at_3": witness["rival_value_at_3"],
++        },
++        "pointer_cycle_identity": {
++            "graphs_checked": pointer["six_vertex_graphs"],
++            "graphs_with_a_cycle_through_the_pointer":
++                pointer["six_vertex_with_cycle_through_pointer"],
++            "graphs_without":
++                pointer["six_vertex_graphs"]
++                - pointer["six_vertex_with_cycle_through_pointer"],
++        },
++    }
++    return {
++        "date": DATE,
++        "script": PRIMARY_SCRIPT,
++        "role": PRIMARY_ROLE,
++        "inputs": [],
++        "units": expected_units,
++        "checks": [{"name": name, "ok": True}
++                   for name in PRIMARY_CHECK_NAMES],
++        "pass": len(PRIMARY_CHECK_NAMES),
++        "fail": 0,
++        "expected_check_count": len(PRIMARY_CHECK_NAMES),
++        "verdict": "PASS",
++        "review_loop": PRIMARY_REVIEW_LOOP,
++    }
++
++
++def receipt_digest_ok(receipt: dict) -> bool:
++    stored = receipt.get("payload_sha256")
++    stripped = {k: v for k, v in receipt.items() if k != "payload_sha256"}
++    blob = json.dumps(stripped, sort_keys=True, indent=1).encode()
++    return stored == hashlib.sha256(blob).hexdigest()
++
++
++def receipt_content_ok(receipt: dict, expected_payload: dict) -> bool:
++    stripped = {k: v for k, v in receipt.items() if k != "payload_sha256"}
++    return stripped == expected_payload
++
++
++def rehash(receipt: dict) -> dict:
++    """Recompute a receipt's self-digest by the documented serialization
++    (used to build the semantic-tamper regression, never to repair)."""
++    out = {k: v for k, v in receipt.items() if k != "payload_sha256"}
++    blob = json.dumps(out, sort_keys=True, indent=1).encode()
++    out["payload_sha256"] = hashlib.sha256(blob).hexdigest()
++    return out
++
++
++def check_primary_receipt(units: dict) -> dict:
+     exists = os.path.isfile(PRIMARY_RECEIPT)
+     check("receipt.primary_receipt_file_exists", exists)
+     if not exists:
+         check("receipt.primary_digest_recomputes", False)
+-        check("receipt.primary_verdict_is_a_full_real_pass", False)
+-        check("receipt.primary_values_match_this_checkers_recomputation",
++        check("receipt.full_payload_matches_the_canonical_expected_record",
+               False)
++        check("tamper.unrehashed_tamper_breaks_the_digest", False)
++        check("tamper.rehashed_semantic_tamper_is_rejected", False)
+         return {"error": "missing primary receipt"}
+     with open(PRIMARY_RECEIPT, encoding="utf-8") as fh:
+         receipt = json.load(fh)
+-    stored = receipt.get("payload_sha256")
+-    stripped = {k: v for k, v in receipt.items() if k != "payload_sha256"}
+-    blob = json.dumps(stripped, sort_keys=True, indent=1).encode()
+-    check("receipt.primary_digest_recomputes",
+-          stored == hashlib.sha256(blob).hexdigest())
+-    checks = receipt.get("checks", [])
+-    real_pass = sum(1 for c in checks if c.get("ok") is True)
+-    check("receipt.primary_verdict_is_a_full_real_pass",
+-          receipt.get("verdict") == "PASS"
+-          and receipt.get("fail") == 0
+-          and receipt.get("pass") == real_pass == len(checks)
+-          and len(checks) == receipt.get("expected_check_count"))
+-    units = receipt.get("units", {})
+-    locus_primary = {row["N"]: row["sum"] for row
+-                     in units.get("five_forms_and_families", {})
+-                     .get("fixed_locus_rows", [])}
+-    locus_own = {row["N"]: row["sum"] for row in own["fixed_locus_rows"]}
+-    cross_ok = (
+-        locus_primary == locus_own
+-        and units.get("five_forms_and_families", {})
+-        .get("family_values_at_N_3") == {"(N-1)/N^2": "2/9",
+-                                         "(N^2-1)/(12N)": "2/9",
+-                                         "(N-1)(N-2)/(3N)": "2/9"}
+-        and units.get("cyclic_permutation_module", {})
+-        .get("dimension_pair_over_Q_and_R") == [1, 2]
+-        and units.get("cyclic_permutation_module", {})
+-        .get("dimension_pattern_over_C") == [1, 1, 1]
+-        and units.get("affine_grading_normal_form", {})
+-        .get("residual_identities_checked") == 1296 * 6
+-        and units.get("pointer_cycle_identity", {})
+-        .get("graphs_checked") == 1 << 15
+-        and units.get("projector_ratio_witness", {})
+-        .get("value_at_3") == "2/27"
+-    )
+-    check("receipt.primary_values_match_this_checkers_recomputation",
+-          cross_ok)
++    expected_payload = build_expected_primary_payload(units)
++    check("receipt.primary_digest_recomputes", receipt_digest_ok(receipt))
++    check("receipt.full_payload_matches_the_canonical_expected_record",
++          receipt_content_ok(receipt, expected_payload))
++
++    # regression 1: a byte tamper WITHOUT rehashing must break the digest
++    tampered_plain = json.loads(json.dumps(receipt))
++    tampered_plain["units"]["trace_free_conformal_split"]["ledger_rows"][0][
++        "trace"] = "999/1"
++    check("tamper.unrehashed_tamper_breaks_the_digest",
++          not receipt_digest_ok(tampered_plain))
++
++    # regression 2: the SAME semantic tamper with a recomputed self-digest
++    # passes the digest gate but MUST be rejected by the full-payload gate
++    tampered_rehashed = rehash(tampered_plain)
++    check("tamper.rehashed_semantic_tamper_is_rejected",
++          receipt_digest_ok(tampered_rehashed)
++          and not receipt_content_ok(tampered_rehashed, expected_payload))
+     return {"primary_pass": receipt.get("pass"),
+             "primary_fail": receipt.get("fail"),
+-            "primary_digest": stored}
++            "primary_digest": receipt.get("payload_sha256"),
++            "comparison": "full payload minus self-digest, wholesale"}
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -620,8 +826,7 @@ def main() -> int:
+         "witness_by_trace": check_witness_by_trace(),
+         "pointer_by_edge_removal": check_pointer_by_edge_removal(),
+     }
+-    units["primary_receipt"] = check_primary_receipt(
+-        units["forms_by_polynomials"])
++    units["primary_receipt"] = check_primary_receipt(units)
+     check("gate.check_count_matches_the_declared_census",
+           len(CHECKS) + 1 == EXPECTED_CHECK_COUNT)
+     passes = sum(1 for _n, ok in CHECKS if ok)
+@@ -641,6 +846,7 @@ def main() -> int:
+         "fail": fails,
+         "expected_check_count": EXPECTED_CHECK_COUNT,
+         "verdict": verdict,
++        "review_loop": PRIMARY_REVIEW_LOOP,
+     }
+     blob = json.dumps(payload, sort_keys=True, indent=1).encode()
+     payload["payload_sha256"] = hashlib.sha256(blob).hexdigest()

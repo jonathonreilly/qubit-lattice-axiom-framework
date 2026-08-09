@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_typeb_radian_readout_generation_selector_no_go.py
-runner_sha256: ee50491cc3fa0dddc0b2df8ad261621218945ad4bc9c85f8d92126b987023801
+runner_sha256: ea8bba0f71b14fffb364754d30546c23e9b595812411d80eda680284d463d940
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -73,15 +73,6 @@ F. Verdict
 ========================================================================================
 PASS: Type-B radian readout plus source support is not a generation selector
 PASS: mass retirement remains open
-
-========================================================================================
-G. N5 execution certificate
-========================================================================================
-per_element: the granted premise is audited field by field on the frozen record — q = 2/3, delta = 2/9, source_z = 0 and the unit law 'Type-B rational read as radians' are each checked as exact values, and the record is interrogated directly for a generation_label or tau_label attribute, neither of which exists on it.
-per_site: checked and not executed — unlike the source-domain audits this cycle, no per-slot or per-site object is built here at all; the premise granted is deliberately the strongest scalar one, and being a scalar with no site or slot index is precisely the property that leaves it invariant under every relabeling.
-per_mode: checked and not executed — nothing is decomposed into C3 characters or spectral modes anywhere in this runner; the only three-fold structures present are the k-offsets inside the carrier and the 3 unit-law variants of the same scalar record, and neither is a mode decomposition, so no mode-resolved quantity bears on the selector question.
-per_block: the label torsor is resolved into its based copies and that enumeration is the sharp content — the equivariant endpoint-to-label maps come out as exactly [{0: 0, 1: 1, 2: 2}, {0: 1, 1: 2, 2: 0}, {0: 2, 1: 0, 2: 1}], one per basepoint choice, so the runner exhibits a three-fold block ambiguity that a physical basepoint law would have to break and that no scalar readout can.
-lattice_wide: checked and not executed as a lattice statement — no volume, lattice or limit occurs; at the whole-orbit level the scalar record is returned unchanged by all three shifts while the labels carry a free action, so the only nonempty invariant object over the entire orbit is [frozenset({0, 1, 2})] and natural selectors from the quotient come out as [].
 
 ========================================================================================
 Summary

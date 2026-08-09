@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py
-runner_sha256: 716fc0f90677e9e6252d2cd5fc00a704021067c4b800a7e86517814a0cbabad3
+runner_sha256: 4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.50
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 ========================================================================================================
@@ -14,21 +14,21 @@ Exact first symmetric restriction of the universal three-sample operator
 Matrix([[1, -3*sqrt(2 - sqrt(2)), 0], [1, -3*sqrt(2) + 6*sin(pi/16) + 6*cos(5*pi/16), -16*cos(pi/16) - 16*cos(3*pi/16) + 8*sqrt(sqrt(2) + 2) + 16], [1, -6*sin(3*pi/16) + 6*sin(pi/16) + 3*sqrt(2), -16*cos(pi/16) - 8*sqrt(sqrt(2) + 2) + 16*cos(3*pi/16) + 16]])
 
   rank(F)                                     = 3
-  max restriction error                       = 4.905e-15
+  max restriction error                       = 4.777e-15
 
 Two admissible normalized beta-side witnesses on the listed finite structural surface
-  S_A symmetry / swap errors                  = 9.888e-17, 6.661e-16
-  S_B symmetry / swap errors                  = 7.026e-17, 7.772e-16
-  eta_A / eta_B swap errors                   = 1.214e-16, 1.080e-16
-  rho_A / rho_B swap errors                   = 5.551e-16, 4.718e-16
+  S_A symmetry / swap errors                  = 1.249e-16, 4.996e-16
+  S_B symmetry / swap errors                  = 1.110e-16, 4.441e-16
+  eta_A / eta_B swap errors                   = 1.388e-16, 1.457e-16
+  rho_A / rho_B swap errors                   = 1.055e-15, 6.939e-16
   rho_A(0,0), rho_B(0,0)                      = 1.000000000000, 1.000000000000
   max |rho_A-rho_B|                           = 0.060847050322
 
 Induced normalized three-sample values under the same universal left operator
-  Zhat_A                                      = W_A=0.391559848075, W_B=0.978403222299, W_C=1.236249349908
-  Zhat_B                                      = W_A=0.513135271950, W_B=1.013927484719, W_C=1.246066522164
+  Zhat_A                                      = W_A=0.391559848076, W_B=0.978403222300, W_C=1.236249349907
+  Zhat_B                                      = W_A=0.513135271950, W_B=1.013927484720, W_C=1.246066522164
   max |Zhat_A-Zhat_B|                         = 0.121575423874
-  max imaginary residue                       = 1.177e-14
+  max imaginary residue                       = 2.189e-14
 
 PASS: [SUPPORT] the conditional beta=6 seam-reduction note factors the compressed route through one propagated beta-side vector built from the identity boundary state
       the right-hand beta-side datum is common across all three sample points once the premise identities are supplied
@@ -49,22 +49,15 @@ PASS: [SUPPORT] source note firewalls actual beta=6 Wilson/Haar exhaustiveness
 PASS: [SUPPORT] source note introduces no retained beta=6 surface claim or audit status
       independent audit remains the only status authority
 PASS: [THEOREM] the universal three-sample operator restricts exactly to the radical first symmetric matrix F
-      rank(F)=3, max restriction error=4.905e-15
+      rank(F)=3, max restriction error=4.777e-15
 PASS: [THEOREM] the explicit row-operator implementation reproduces direct character evaluation on a generic class-sector test vector
-      max direct-evaluation error=3.617e-13
+      max direct-evaluation error=2.399e-13
 PASS: [THEOREM] the listed finite structural surface admits distinct positive self-adjoint conjugation-symmetric beta-side witnesses
       rho-gap=6.085e-02 on the same listed finite structural surface
 PASS: [THEOREM] the same universal left operator sends those two admissible normalized beta-side vectors to different normalized three-sample triples
-      Zhat_A=(W_A=0.391559848075, W_B=0.978403222299, W_C=1.236249349908); Zhat_B=(W_A=0.513135271950, W_B=1.013927484719, W_C=1.246066522164)
+      Zhat_A=(W_A=0.391559848076, W_B=0.978403222300, W_C=1.236249349907); Zhat_B=(W_A=0.513135271950, W_B=1.013927484720, W_C=1.246066522164)
 PASS: [THEOREM] therefore the listed finite structural surface does not determine Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C): even the normalized triple is not unique on that surface
       the formal route is one common beta-side vector hit by a fixed three-row operator, and the listed finite surface does not determine that vector
-
-N5 execution certificate -- what this runner resolves
-per_element: checked -- the 36 weight-box elements (p,q) with p,q <= 5 are handled one at a time: each recurrence entry is accumulated 1/6 per admissible neighbour, and the direct-evaluation control re-sums dim*character coefficient by coefficient (error 3.6e-13).
-per_site: checked and not executed -- the plaquette lane is already compressed to class functions, so no lattice site or link variable exists in this runner; the only spatial residue is the depth-3 transfer stack, whose individual sites are never instantiated.
-per_mode: checked -- resolution is mode-by-mode on the weight box: the recurrence matrix is diagonalized by eigh before exponentiation, and the layer damping exp(-linear_decay*(p+q) - asym_decay*(p-q)^2) acts separately on every weight mode of both witnesses A and B.
-per_block: checked -- two block structures are exercised: the first symmetric basis groups the weights into the blocks (0,0), (1,0)+(0,1) and (1,1), on which the universal operator restricts exactly to the rank-3 radical F, and the conjugation swap block structure holds to 1e-12 for both witnesses.
-lattice_wide: checked and not executed -- nothing is evaluated on a lattice of any size: the surface is the truncated weight box with NMAX = 5 and depth 3, no volume or continuum limit is taken, and the beta=6 Wilson/Haar physical stack bridge is left open by construction.
 
 TOTAL: PASS=14, FAIL=0
 

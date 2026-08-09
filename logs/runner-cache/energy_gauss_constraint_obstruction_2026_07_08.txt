@@ -1,21 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/energy_gauss_constraint_obstruction_2026_07_08.py
-runner_sha256: ea90ff35c6596a74b04a74d6ec84453b4964e635e2dd6be89bb838247720967b
+runner_sha256: baedd6b5df2818fe4809cf3b6eefeca3c81891927f3c53893e3284d2099f683a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.93
+elapsed_sec: 2.39
 status: ok
 ----- stdout -----
 SURFACE t_a=0.8,t_b=1.1,m_a=0.4,m_b=0.6,U=0.9,V_a=0.5,V_b=1.2,W_ab=0.7;density=declared-cell-h;auxiliary=commuting-with-self-and-matter
-OPERATORS adjacent_coeff_l2=2.01528224e+00;adjacent_hs8=2.82696411e+02;separated_d2_zero=Y;dense_error=6.7e-16;aux_identity_error=7.1e-16;aux_rhs_norm=4.45571543e+00
+OPERATORS adjacent_coeff_l2=2.01528224e+00;adjacent_hs8=2.82696411e+02;separated_d2_zero=Y;dense_error=6.7e-16;aux_identity_error=7.2e-16;aux_rhs_norm=4.45571543e+00
 CHECKS CHECK-01-charge-control=ok;CHECK-02-adjacent-nonzero=ok;CHECK-03-separated-zero=ok;CHECK-04-dense-crosscheck=ok;CHECK-05-commuting-auxiliary-identity=ok
-TOTAL PASS elapsed=2.55s
-N5-CERTIFICATE
-per_element: the dense cross-check is a sup-norm over matrix entries - the sparse difference L R - R L - S is assembled on the eight-site chain, eliminate_zeros() is applied to it, and the largest absolute surviving entry is what gets compared with CHECK_TOL = 1e-12; on the symbolic side every normal-ordered mode-string key carries its own coefficient and is dropped the moment its modulus falls to CLEAN_TOL = 1e-14, so cancellation is decided key by key
-per_site: sites are treated as individuals rather than as a homogeneous background - the charge probe builds n_a + n_b at six separate sites and every one of the thirty-six ordered pairs of them is commuted to confirm the charge algebra closes abelian, while inside a cell the staggered mass enters with sign +1 on the even site and -1 on the odd site, so the two sites of one cell are not interchangeable
-per_mode: the fermionic modes are the finest label this algebra carries and they are kept apart end to end - species a and b at a given site are distinct modes, the cell density is assembled from mode-resolved number terms, nearest-neighbour hoppings and density products written mode pair by mode pair, and the commutator expansion then runs over individual mode-string keys rather than over any coarser bookkeeping
-per_block: the two-site cell is the block and the entire obstruction is a statement about block adjacency - h_0, h_1 and h_2 are one density translated by zero, two and four sites, adjacent blocks share the site their hoppings reach into so their commutator survives both the coefficient l2 norm and the eight-site Hilbert-Schmidt norm, whereas the pair two cells apart has disjoint support and its commutator dictionary comes back exactly empty rather than merely small
-lattice_wide: the whole-chain claim here is a finite-N one and is fenced as such - eight sites, that is sixteen fermionic modes, carry both the Hilbert-Schmidt norm and the dense commutator cross-check, no boundary condition is varied and no thermodynamic limit is attempted, and the commuting-auxiliary identity is confirmed separately on a finite tensor product of a three-dimensional auxiliary factor with a two-dimensional matter factor
+TOTAL PASS elapsed=2.02s
 
 ----- stderr -----
 

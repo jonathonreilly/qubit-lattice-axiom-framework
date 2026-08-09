@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_class_5_non_ql_yukawa.py
-runner_sha256: 469c95845c4a0dc7111046d5ac923e7717cec5eb0aaf681aa4781fcde56da277
+runner_sha256: b16179bb3eb35a37c820517c5935c4cb8f51c4652dad5eb4525f305273e3c835
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.11
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ========================================================================
@@ -134,15 +134,6 @@ SUMMARY
   The matching gap between Ward 4-fermion and physical trilinear
   derivations is flagged as a separate open structural question,
   OUT OF SCOPE of this class-5 retention analysis.
-
-==============================================================================
-N5 EXECUTION CERTIFICATE
-==============================================================================
-  per_element: a handful of small operators really are written out and normed - the iso-conjugation matrix i*sigma_2 is formed and its adjoint product checked against the identity, its operator norm evaluated against 1 at 1e-12, and the antisymmetric epsilon is compared with the Kronecker delta through their squared Frobenius norms, both of which come to exactly 2. The colour and iso singlet states are also instantiated as explicit diagonal arrays with every entry set to one over the square root of the multiplicity, and their diagonal components are then read back one index at a time.
-  per_site: checked and not executed - not a single position, link or displacement occurs in the file. Everything it manipulates is either a representation label carried as a Fraction, a closed-form Clebsch-Gordan number, or a matrix acting on internal indices; the words block and sector here always refer to representation content, never to a region of any substrate.
-  per_mode: checked and not executed - there is no transform, no momentum variable and no eigenvalue problem posed anywhere. The couplings are evaluated at a single scale from the anchor alpha_LM = 0.09067 through g_s = sqrt(4*pi*alpha_LM), with no running and therefore nothing that could be resolved mode by mode.
-  per_block: the chirality blocks are handled properly, and the runner is admirably honest that its headline block statement is arithmetic rather than structural - Tr(P_L) and Tr(P_R) both come out to exactly 8 on C^16 and the product P_L P_R vanishes identically, which does establish that the left-handed and right-handed carriers are orthogonal blocks. But the equality it then reports between the Ward factor on Q_L x Q_L* and the trilinear factor on Q_L x q_R is obtained by evaluating 1/sqrt(N_c*N_iso) against (1/sqrt(N_c))*(1/sqrt(N_iso)) with N_c = 3 and N_iso = 2, which is the identity sqrt(AB) = sqrt(A)*sqrt(B) and nothing about the two blocks; the file prints exactly that caveat.
-  lattice_wide: checked and not executed - no extended system is constructed and no limit is taken, and the one genuinely global step the analysis would need is explicitly deferred: the matching between the Ward four-fermion object on Q_L x Q_L* and the physical trilinear on Q_L x q_R after symmetry breaking is flagged as out of scope, so the closure of this candidate class rests on a gap the runner declines to compute.
 
 ----- stderr -----
 

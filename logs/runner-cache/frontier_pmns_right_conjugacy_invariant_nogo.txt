@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_right_conjugacy_invariant_nogo.py
-runner_sha256: a8685c2399595ff709d627ebf9f21884e59c3b435222342c5943e1ec535d073e
+runner_sha256: 6edbe5019ce566ab78d29ec3ffb3d44dd11f74f29d1adf779f637a8d1633e782
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -24,7 +24,7 @@ Question:
 ========================================================================================
 PART 1: RIGHT-CONJUGACY INVARIANTS ARE CONSTANT ON THE EXACT RIGHT ORBIT
 ========================================================================================
-  [PASS] The right orbit preserves spectral and trace-type invariants of K  (signature error=1.51e-14)
+  [PASS] The right orbit preserves spectral and trace-type invariants of K  (signature error=8.24e-15)
   [PASS] So every right-conjugacy-invariant observable of K is constant on the orbit
 
   This exhausts the obvious spectral / trace-style family.
@@ -53,15 +53,6 @@ PART 4: THE ATLAS NOW RECORDS THE RIGHT-CONJUGACY-INVARIANT NO-GO
   [PASS] The atlas carries the PMNS right-conjugacy-invariant no-go row
 
   So the K-side invariant family is exhausted too.
-
-========================================================================================
-PART 5: N5 EXECUTION CERTIFICATE (reporting only; adds no check)
-========================================================================================
-  per_element: resolved on the individual off-diagonal slots of K = Y^dag Y — right_score inspects K_01, K_12 and K_02 one slot at a time against the 1e-12 threshold, giving 0 nonvanishing slots for the monomial Y and 3 after the DFT3 right rotation, and the sheet datum is the single amplitude |K_01| in these 0-based labels, the note's |(Y^dag Y)12|, whose change along the rotation-12 orbit is required to exceed 1e-3.
-  per_site: checked and not executed — every object built here is a 3x3 matrix on generation space, Y, its right Gram K and the U(3) elements acting on it, so no spatial coordinate exists to resolve against; the frame this note says is missing is a right-handed generation frame, not a site label, and deriving it is explicitly left open.
-  per_mode: resolved spectrum first and then collapsed to one norm — the three eigenvalues of K are sorted and carried individually into a seven-component signature alongside Tr K, Tr K^2, Tr K^3 and det K, but the invariance test compares the two signatures by a single Euclidean norm below 1e-10 rather than eigenvalue by eigenvalue, and the follow-on sentence that every right-conjugacy-invariant observable is therefore constant is registered as check(..., True), restating the argument without computing anything.
-  per_block: exercised on the acting group only — the right unitaries are assembled as a (1,2) rotation block times a diagonal phase block, leaving the third direction untouched, while the alternative DFT3 mixes all three; on the observable side nothing is decomposed into blocks, and the only block-shaped output is the count of how many of the three upper-triangle slots survive, an inventory rather than a block-resolved amplitude.
-  lattice_wide: checked and not executed — nothing in this runner has spatial extent, and the only wide quantifier in play ranges over U(3) and over branches, which the runner probes at fixed hardcoded witnesses (one rotation angle per part, one DFT3, one monomial diagonal) instead of sweeping, so no all-orbit or all-branch closure is offered; Parts 3 and 4 are string-presence checks over four repository documents and resolve bookkeeping, not any amplitude.
 
 ========================================================================================
 RESULT

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py
-runner_sha256: 97dbaa127130c0822550d2b373f603b42e7d9bdc2e92009bbef76797374169d4
+runner_sha256: db18ef455ac5c13dcf057cb8ae4166e1077adad1c7cbcd1d52ac5836a1c2cc89
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 19.77
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,8 +34,8 @@ PASS: general N_c=4 conditional rho_E is exact -- rho_E=14/3
 
 C. Live bounded comparator
 ------------------------------------------------------------------------
-PASS: live center T/E ratio is close to -F_adj but not exact -- live=-0.890683778231, target=-0.888888888889, gap=0.201925%
-PASS: live rho_E is close to 21/4 but not exact -- live=5.257476782082, target=5.250000000000, gap=0.142415%
+PASS: live center T/E ratio is close to -F_adj but not exact -- live=-0.890683778221, target=-0.888888888889, gap=0.201925%
+PASS: live rho_E is close to 21/4 but not exact -- live=5.257481167681, target=5.250000000000, gap=0.142498%
 
 D. Import-boundary witness
 ------------------------------------------------------------------------
@@ -47,14 +47,6 @@ PASS: current Route-2 readout surfaces do not type the adjoint-fraction bridge
 PASS: R_conn/F_adj surface does not identify a Route-2 E/T endpoint ratio
 PASS: forbidden proof inputs are absent -- ['endpoint_algebra', 'exact_rational_arithmetic', 'granted_t_side_candidates', 'restricted_route2_carrier', 'retained_rconn_value']
 PASS: new note states the load-bearing missing bridge
-
-E. N5 execution certificate -- what this runner resolves
-------------------------------------------------------------------------
-per_element: checked -- the bridge is resolved one exact rational at a time, F_adj = 8/9 then q_E = 15/8 then rho_E = 21/4, and the readout comparison is entrywise: max|P(0)c - P(21/4)c| over all four components of each endpoint column stays under 1e-12 on three columns, while the single component that moves is the E readout of the E-center column, 1.000000 -> 1.875000, a shift of exactly 7/8.
-per_site: checked and not executed -- this runner never indexes a site. It consumes four already-contracted 4-component endpoint columns from restricted_readout_data(), in which the six shell sites of the seven-site star enter only through the single uniform combination s/sqrt(6); no shell site is separately resolved and no site amplitude is evaluated anywhere in this file.
-per_mode: checked -- the two bright channels are carried in separate rows of P(rho_E), row 0 for E and row 1 for T, and the obstruction is literally a cross-mode ratio: c_TE = gamma_T(center)/gamma_E(center) is what the note is missing, so the E and T modes must be resolved apart for the statement to exist. The A1 channel is not given a readout row; it enters only as the scalar delta_A1 that the columns already absorb.
-per_block: checked -- the shell and center endpoint blocks are closed one block at a time, and that is how the boundary is located: E-shell, T-shell and T-center are each invariant under rho_E to better than 1e-12, and E-center alone is not, so the whole rho_E freedom is confined to exactly one of the four blocks on the restricted carrier.
-lattice_wide: checked and not executed -- no lattice, volume or limit is taken here, and executing this class is precisely what the note says is unavailable: the whole-surface statement would be a typed source-domain identification of -F_adj with the E/T center ratio, and the runner's executed evidence at this scope is the negative scan showing no such typing on any of the 5 cited authority surfaces, with the live comparator staying off-target at -0.890683778231 against -0.888888888889. The N_c = 2, 3, 4 sweep varies color rank, not volume.
 
 Summary
 ------------------------------------------------------------------------

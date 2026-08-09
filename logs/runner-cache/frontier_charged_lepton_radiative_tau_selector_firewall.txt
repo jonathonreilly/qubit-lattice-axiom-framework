@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py
-runner_sha256: 8b604dff7d05b4460d33f84fe80a5cc5909c2098e7ef682b6ba0e0edb4526085
+runner_sha256: fe6105f9724c6122391aa3d603dd81e7b94f824fb80869d54b686b7954752362
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 Source surface
@@ -36,14 +36,6 @@ C. Selector firewall
 PASS: PDG masses and heaviest-generation labels are not proof-input keys -- proof inputs = ['ALPHA_LM', 'charged_lepton_electroweak_charges', 'generation_blind_casimir', 'one_loop_factor_4pi', 'retained_v_EW']
 PASS: no tau selector is present in the generation-blind Casimir data
 PASS: direct Ward no-go already requires a new generation/source primitive
-
-D. N5 execution certificate
-------------------------------------------------------------------------
-per_element: the three components of the generation vectors are formed one label at a time and then compared — the Casimir vector comes out ('1', '1', '1') for (e, mu, tau) and the radiative Yukawa vector comes out identical to eighteen decimal places at 0.007215117140798251 in every component, so no component carries information that distinguishes it from the other two.
-per_site: checked and not executed — no lattice, link or site variable is constructed anywhere in this firewall; the inputs are electroweak vertex charge assignments and two retained constants, so there is no spatial index against which a site-resolved claim could be stated, and none is made.
-per_mode: checked and not executed — the one-loop content enters only as the closed factor 1/(4 pi) and no propagator, loop momentum or mode sum is evaluated here; the runner instead records that the diagrammatic lane still cites its loop integral from an external quadrature surface, which is why no mode-resolved statement is available to this firewall.
-per_block: the charge data is resolved by electroweak multiplet block — the left-handed doublet block contributes 2 * T(T+1) * 1/2 = 3/4 with T = 1/2, the hypercharge pairing of the doublet with the right-handed singlet contributes Y_L Y_R / 2 = 1/4, and those two blocks sum to exactly 1, which is the whole reason the result carries no generation index.
-lattice_wide: checked and not executed — there is no volume, lattice or thermodynamic limit in this lane; the only whole-system statement made is that one universal radiative scale is applied to all three generations at once, giving 1776.959384 MeV against comparator ratios (3477.4228, 16.818, 1.0001) for (e, mu, tau), which shows a single universal number cannot be the hierarchy and is recorded as comparator evidence only.
 
 Summary
 ------------------------------------------------------------------------

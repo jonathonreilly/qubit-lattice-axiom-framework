@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_selected_line_generation_selector_no_go.py
-runner_sha256: 2b56a1b1cca3f923f9a2078a182c33a2bae50f4ed0617828f598da923458e502
+runner_sha256: a2dc9489e3352d745ed8fa4e2b91512031858c52583e282c2a1776586432ccd0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -68,15 +68,6 @@ F. Verdict
 ========================================================================================
 PASS: unbased selected-line data do not provide a retained generation selector
 PASS: remaining primitive is based endpoint/source/generation law
-
-========================================================================================
-G. N5 execution certificate
-========================================================================================
-per_element: each component of the granted carrier is built and inspected on its own, the three values (2.37943817, 0.04034991, 0.58021192) coming from 1 + sqrt(2) cos(delta + 2 pi k / 3) at k = 0, 1, 2 and each tested for positivity, and the candidate sources are likewise compared with their rotations component against component rather than through any summary invariant.
-per_site: the slot-level scan is what shows the source data cannot point anywhere — three onsite samples are rotated and matched against themselves, returning fixed = (True, False, False) so that only the uniform assignment survives, and that surviving assignment assigns the same value to every slot, which is exactly why it distinguishes no generation.
-per_mode: checked and not executed — the k = 0, 1, 2 phase offsets are used only to generate the carrier's three real components, and the data are never projected onto the C3 isotype channels, so no trivial-versus-doublet decomposition or other mode-resolved quantity is formed; the obstruction this runner reports lives at the level of labels, not modes.
-per_block: the closed readout total is split into blocks and the split is shown to be free — with eta_APS = 0.2222222222 the runner admits the pairs ((0.0, 0.222222), (0.111111, 0.111111), (0.222222, 0.0)) and every one reconstitutes the total to within 1e-15, so closing the readout pins only the sum while leaving the selected-line endpoint block undetermined.
-lattice_wide: checked and not executed as a lattice statement — there is no volume, no lattice and no limit anywhere; the widest sweep the runner performs is over the whole generation orbit, where the free C3 action leaves fixed_single_labels = [], every cyclic copy returns Q = 2/3 with the largest slot travelling through (0, 2, 1), and equivariant selectors appear only in the count of three that a basepoint choice would supply.
 
 ========================================================================================
 Summary

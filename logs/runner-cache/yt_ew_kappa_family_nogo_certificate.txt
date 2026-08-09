@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ew_kappa_family_nogo_certificate.py
-runner_sha256: e27ab6fad363d1dd076efaf165f1395b1e836570fe200d55422cdede278d491b
+runner_sha256: 644d3156dc2f654c29222284d4b961334d78f69ab4ab70f28d9265a44cdb5679
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -46,13 +46,6 @@ CHECK SUMMARY
   PASS note names kappa_EW: free readout coefficient present
   PASS note states no new axiom: no-new-axiom sentence present
   PASS note keeps selector conditional: selector disclaimer present
-
-N5 EXECUTION CERTIFICATE
-per_element: checked and not executed — nothing matrix-valued is instantiated in this certificate; F_adj = (N_c^2 - 1)/N_c^2 is evaluated straight from N_c = 3 as an exact Fraction, so there is no operator whose individual entries could be resolved.
-per_site: checked and not executed — the readout coefficient family is a global matching statement with no positional content at all: no coordinate, neighbour or extent is defined, so the question of what happens at a given site does not arise here.
-per_mode: checked and not executed — no eigenvalue problem, momentum variable or normal-mode expansion occurs; g_1 and g_2 are two fixed scalar couplings, not modes, so this runner decides nothing at mode granularity.
-per_block: the adjoint and singlet colour blocks carry everything this runner resolves, in exact rational arithmetic — with F_adj = 8/9 the selector family K_EW(kappa) = 1 / (F_adj + kappa (1 - F_adj)) takes the values {'0': '9/8', '1/2': '18/17', '1': '1', '2': '9/10'} at kappa = 0, 1/2, 1, 2, and each of those stays invariant under the common CMT rescalings ['1/2', '4/5', '13/10'], so the block weights fix the family but never the selector.
-lattice_wide: checked and not executed — the lattice appears only as the two scalar anchors g_1 = 0.43779 and g_2 = 0.6109 taken as given, with no volume, spacing or configuration built anywhere; the weak-angle result is the algebraic fact that a common rescaling cancels in sin^2 theta_W and in g_1/g_2 for every kappa in the family, verified at abs tol 1e-15 (True).
 
 RUNNER STATUS: PASS (PASS=26 FAIL=0)
 

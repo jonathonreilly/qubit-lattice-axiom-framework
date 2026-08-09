@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py
-runner_sha256: 037bd7f89f31e12bd393c5618ffc0ebc39957c4639fd4b6373d5696f36cc67be
+runner_sha256: 354851802cf187c638162a273af7cc588670f8d047adbe95191214e6abcfb83d
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.69
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -91,15 +91,6 @@ PART D: NARROWED-GAP STATEMENT
  [PASS (C)] Leading-quadratic Frobenius-isotropic argmin is the ONLY unanimous answer ((delta_*, q_+*) = (sqrt(6)/3, sqrt(6)/3))
  [PASS (C)] Full-order info-geometric closure is RULED OUT absent additional axiom (Part B cubic splitting)
  [PASS (C)] (G-Non-Var) not narrowed by this runner (discipline: honest obstruction only) (separate attack vector required)
-
-========================================================================================
-PART E: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
-========================================================================================
- per_element: checked — the splitting is established one scalar invariant at a time rather than by comparing whole functionals: the quadratic monomials come out Tr(T_d^2) = 6.0, Tr(T_q^2) = 6.0, Tr(T_d T_q) = 0.0, and the cubic monomials Tr(T_d^3) = 0.0, Tr(T_q^3) = 6.0, Tr(T_d^2 T_q) = -6.0, Tr(T_d T_q^2) = 0.0; the 2x2 Hessians are likewise read component by component as (dd, qq, cross).
- per_site: checked and not executed — the entire arena is the two-real chart (delta, q_+) with its linear chamber boundary q_+ = sqrt(8/3) - delta; no lattice, no spatial index and no site sum appears, so the unanimity theorem and the cubic splitting are both certified without any site-resolved content.
- per_mode: checked — the circulant amplitude w = q_+ + i delta decomposes into exactly two channels and the runner resolves them separately at each order: at quadratic order the channels are degenerate, Tr(T_d^2) equals Tr(T_q^2) at 6.0 with zero cross term, while at cubic order they split outright, 0.0 against 6.0 and -6.0 against 0.0 — the channel degeneracy is what fails.
- per_block: checked and not executed — the 3x3 generators enter this runner only through full traces Tr(T^a T^b T^c) and are never block-decomposed into singlet and doublet pieces; the only partition this runner performs is of the open gap itself into (G-Var) and (G-Non-Var), which is a partition of the remaining theorem target and not of the carrier, so no block-level statement about H is certified here.
- lattice_wide: checked and not executed — the expansion is taken about J = 0 and truncated at cubic order on a single Schur-forced baseline D = m I_3; no volume, no thermodynamic limit and no large-order resummation is performed, so the leading-order unanimous minimizer (sqrt(6)/3, sqrt(6)/3) = (0.8164965809, 0.8164965809) is certified only at that order and never at any global or lattice scale.
 
 ========================================================================================
 TOTAL: PASS = 26, FAIL = 0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_connes_kreimer_boolean_lattice_idempotent_rb_substrate_narrow.py
-runner_sha256: f27e03ea271e229a0113284887db82736b81718f21403cb72f97c06550092392
+runner_sha256: fe8959e5e12a958c4c847010d5ac4564b83342c97aada6760b666c63d1b5950e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 ============================================================================
@@ -57,15 +57,6 @@ CONNES-KREIMER BOOLEAN-LATTICE IDEMPOTENT-RB SUBSTRATE NARROW NO-GO
 [PASS] T14.a: runner output is deterministic at sympy + Fraction + Decimal precision
 [PASS] T14.b: runner does NOT consume PDG / observed comparators (only framework substrate inputs (P_avg, alpha_LM, BZ-corner identity))
 [PASS] T14.c: runner does NOT introduce new repo vocabulary (canonical CK / Hopf / Boolean-lattice terms only)
-
-============================================================================
-N5 EXECUTION CERTIFICATE
-============================================================================
-per_element: the Rota-Baxter machinery is exercised on individual algebra elements rather than assumed — the pole-part projector is applied to a canonical Laurent test element and shown to reproduce itself under a second application, the weight +1 identity pi(a)pi(b) = pi(pi(a)b + a pi(b) - ab) is verified on an explicit pair of elements, and the depth-1 Birkhoff pieces -pi(phi) and (id - pi)(phi) are formed elementwise and recombined.
-per_site: checked and not executed — no position-space lattice is built anywhere in this runner; the 16 objects it enumerates are Brillouin-zone corners of the taste decomposition, which carry momentum labels rather than positions, so there is no site variable for a site-resolved claim to range over.
-per_mode: every corner is resolved individually and that is where the exponent mismatch appears — all 16 corners of 2^[4] are enumerated, each carrying its own Hamming weight, the level sets come out with multiplicities (1, 4, 6, 4, 1) matching binomial(4, k) and forming 5 S_4 orbits, and summing those per-corner weights gives 32 against the framework target 16.
-per_block: the block structure at issue is the A_- (+) A_+ splitting Manchon II.5.1 requires, and the runner separates the two cases — the imported pole-part projector is confirmed idempotent so it does split the algebra into complementary blocks via pi and id - pi, while the substrate's own partial-sum Rota-Baxter map is not idempotent and supplies no such splitting, which is obstruction G2.
-lattice_wide: checked and not executed — no volume, ensemble or thermodynamic limit is taken; the widest quantity formed is a count over one hypercube, Sigma hw(n) = d 2^(d-1) giving 32 at d = 4, and the numerical consequence alpha_LM^32 sitting a further 16 powers below alpha_LM^16, which is a substrate-counting fact rather than anything about lattice extent.
 
 ============================================================================
 TOTAL: PASS=47 FAIL=0

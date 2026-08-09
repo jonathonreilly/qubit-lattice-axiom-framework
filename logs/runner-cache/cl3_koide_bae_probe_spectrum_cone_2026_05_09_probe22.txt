@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_spectrum_cone_2026_05_09_probe22.py
-runner_sha256: 1d044b617dd2ba9e9c77ebab55c06834b941c25c93e97bee3d69c441b93e1e44
+runner_sha256: 07890472761bbcfbf247d2d951541764444b9d461305bc1799df81614e783b54
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.28
+elapsed_sec: 1.21
 status: ok
 ----- stdout -----
 Abstract Circulant Cone-Slack Rewrite (historical Koide Probe 22)
@@ -92,16 +92,6 @@ Section 7 — Uncounted source and physical boundary
   [SOURCE BOUNDARY — not counted] No PDG values are consumed.
   [SOURCE BOUNDARY — not counted] No new axiom or import is introduced.
   Section 7: PASS=0, FAIL=0
-
-========================================================================
-Section 8 — N5 execution certificate
-========================================================================
-  per_element: resolved exactly rather than numerically — the shift C is written out as a 3x3 integer permutation matrix and C**3 == I3 and C * C.T == I3 are decided as exact matrix equalities, the symbolic circulant H = aI + bC + b_bar C^2 is required to satisfy H - H.conjugate().T == zeros(3, 3) entry by entry over real a, b_re, b_im, and the characteristic polynomial of C is confirmed to be -(lam^3 - 1).
-  per_site: checked and not executed — no site, position or lattice index is constructed anywhere in this runner, and that is the note's own declared boundary rather than an omission: the object under test is a supplied abstract Hermitian circulant, and the note states that P1, a matter-sector carrier, a readout, a quotient and a selector are all not supplied. With no carrier there is nothing sited to resolve, and the cone-slack rewrite is complete without one.
-  per_mode: resolved — the three C_3 modes k = 0, 1, 2 are carried individually as lambda_k = a + 2|b| cos(delta + 2 pi k / 3), and the runner separates them by phase sensitivity: d/d(delta) of p_1, p_2, e_1 and e_2 is shown to be exactly 0 while d/d(delta) of p_3 and e_3 is shown to be nonzero, with the explicit form e_3 = a^3 - 3 a |b|^2 + 2 |b|^3 cos(3 delta). That is precisely why the cone slack, built from p_1 and p_2 alone, cannot see the residual angular degree of freedom.
-  per_block: resolved at the only block structure this object has, the C_3-isotype split of the circulant into a one-dimensional trivial block and a two-dimensional doublet block. Section 2 computes the two block coefficients separately, obtaining a_0 = sqrt(3) a and |z|^2 = 3 |b|^2 with exactly zero symbolic residual, and then assembles them into the bridge identity a_0^2 - 2|z|^2 = 3 a^2 - 6 |b|^2, which is what makes the spectrum-level and parameter-level slacks the same equation.
-  lattice_wide: checked and not executed — there is no Z^3, no volume and no extensive quantity in this runner, so no lattice-wide aggregate exists to form. The reason no limit is needed is that the result is already global in parameter space: the prefactor in 3 p_2 - 2 p_1^2 = prefactor * (a^2 - 2|b|^2) is recomputed by cancellation and shown to be the constant -9 with zero derivative in both a and |b|, so the two zero loci coincide on the whole half-plane, origin included, exactly and without any asymptotics.
-  Section 8: PASS=0, FAIL=0
 
 ========================================================================
 === TOTAL: PASS=30, FAIL=0 ===

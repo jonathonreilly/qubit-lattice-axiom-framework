@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_center_inverse_square_source_law_firewall_2026_06_21.py
-runner_sha256: 853f3c2e7d55313d7eaa3d41f08535f4ffa20aeb449c3a964ab7c8c80da15cb0
+runner_sha256: 4e6fb35edd06684a7148032456ec2ab1dd030bbe6e3d2acdff9fc9866518c09d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 BLOCK70 ROUTE-2 E-CENTER INVERSE-SQUARE SOURCE-LAW FIREWALL
@@ -79,13 +79,6 @@ PASS: center-excess note supplies denominator 6 rather than the E-source law
 Fan-out synthesis checks
 PASS: stuck fan-out has five orthogonal frames -- carrier_column, same_domain_leverage, power_law, quadratic_schur, current_bank
 PASS: all frames preserve the direct positive route as an explicit missing theorem
-
-N5 execution certificate
-per_element: every law in the scan is evaluated as its own isolated pair -- the 5 falsifier rows return (q_E, rho_E) equal to (15/8, 21/4) at p=-2, (5/4, 3/2) at p=-1, (5/6, -1) at p=0, (5/9, -8/3) at p=1 and (10/27, -34/9) at p=2, and the endpoint scalars q_T, q_E, lambda and c_TE are each formed separately before any of them are compared.
-per_site: checked and not executed -- the seven-site geometry survives in this file only as the bare center denominator 6 sitting in a default argument and the two weight literals inside lambda_from_power, with the 1/6 support step corroborated by locating its formula in the center-excess note; no arm is enumerated, no star assembled, and the O_h source is itself only text-checked.
-per_mode: the channel split does all the work and is kept explicit -- the T1 mode is held at q_T=5/6 while the E mode absorbs the entire law through lambda=(w_E/w_T1)^p built from w_E=1/3 and w_T1=1/2, so the leverage 3/2 and its square 9/4 are mode ratios and every falsifier moves the E channel alone with the T channel never re-derived.
-per_block: the exponent ladder is swept as a block and closed two ways -- across all 9 integer powers from -4 to 4 the target 9/4 is hit at exactly one exponent, and separately the whole nonnegative block p=0..4 yields [Fraction(1, 1), Fraction(2, 3), Fraction(4, 9), Fraction(8, 27), Fraction(16, 81)] which is bounded above by 1 and therefore cannot reach 9/4 at all; a further 5-frame fan-out block records one orthogonal obstruction per frame.
-lattice_wide: checked and not executed -- nothing in this runner builds a box, a site count or a limit, and the two infinite-volume statements it touches are located as literal substrings in the box-size-scan and measured-calibration notes, so the bulk-limit closure is inherited as provenance rather than recomputed; the global law still owed is the inverse-square one the note names.
 
 ==============================================================================
 TOTAL: PASS=57, FAIL=0

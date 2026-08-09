@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/coupled_field_generated_family_probe.py
-runner_sha256: f5c6c4678f8e12bb7fedf9b9ba79f29cb42cc5aaf135b5365546ea42043d23a7
+runner_sha256: 35c3061893fb99d5b72e98f59a35b25ecfc30deba89d3d04837587345f3937b9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.11
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ====================================================================================
@@ -36,13 +36,6 @@ SAFE READ
   the coupled field preserves the sign of the instantaneous comparator
   on all sampled rows, but the strength dependence is not a clean linear
   mass-scaling law on this retained family.
-
-N5 EXECUTION CERTIFICATE
-  per_element: checked and not executed - this probe holds no matrix at all, since the coupling is stored as a dictionary of out-neighbour lists rather than an array, so there is no (i,j) position to resolve; each directed edge does receive the share FIELD_DECAY * field[i] / len(outs) during the topological sweep, but no individual edge weight is ever compared, thresholded or printed.
-  per_site: every node carries its own field value and the argument turns on that fact - the source is planted by writing the strength directly into at most five selected mass nodes of the middle layer, chosen by ranking on squared distance from the offset target height with an absolute cut at MASS_RADIUS = 2.5, while the instantaneous comparator is accumulated node by node as strength divided by the softened separation r + 0.1 summed over those mass nodes.
-  per_mode: checked and not executed - nothing here is transformed or diagonalized, since propagation is a purely real-space amplitude sweep taken in topological order over a directed acyclic graph, and there is no periodicity, no wavevector and no eigenbasis in which a mode could be named.
-  per_block: the sixteen layers are the block structure and three of them are given distinct roles - layer 0 is the injection block, the middle layer supplies the candidate mass nodes, and the final layer is the detector block over which the centroid observable is formed, so every reported number is a comparison between what enters one block and what leaves another.
-  lattice_wide: resolved as a finite-N statement over four independently seeded graphs of sixteen layers by twenty-four nodes each and nothing beyond them - the whole-graph reduction test returns a zero-source centroid shift that is exactly zero on every one of the four graphs, since a vanishing source leaves the amplitude field bit-for-bit equal to free propagation, and no limit in node count, layer count or seed count is attempted.
 
 ----- stderr -----
 

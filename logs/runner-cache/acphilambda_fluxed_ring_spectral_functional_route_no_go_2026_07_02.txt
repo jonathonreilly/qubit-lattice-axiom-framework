@@ -1,10 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py
-runner_sha256: ff050d6b801fff5b5990ccff045ce016c6111810f304ec7ba8ac5b5a0c6c1aa7
-input_fingerprint_sha256: 986efeb8dfb676e2207958a8f053cbf1704dcdc0c7a38d2acf4487bf15b15533
+runner_sha256: 5ef73bab85f2c814774bba207bcfa083d5d7a955bad63ed87b500c5668c7a9d4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.18
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 [PASS] PART A note exists
@@ -134,12 +133,6 @@ status: ok
 [PASS] PART F spec-leakage detector absent: this spec
 [PASS] PART F spec-leakage detector absent: PRESERVE
 [PASS] PART F note does not claim AC_phi_lambda retirement
-PART G -- N5 execution certificate: what this runner resolves
-per_element: checked — the flux dependence is traced matrix element by matrix element: every ring edge carries the Peierls factor exp(i Phi/N), raising one edge weight to w=2 moves the constant term to 2w^2 + 2w cos Phi - 4, and adding the single real chord element at (0,2) is what pushes flux out of the constant term into the lambda^1 coefficient.
-per_site: checked — the ring sites are resolved individually by the matrix-tree cofactors: at N=3 all nine (row, col) cofactors of the unfluxed Laplacian equal 3, so no site or site pair carries a distinguished spanning-tree weight that a flux term could attach to.
-per_mode: checked and not executed — no individual eigenvalue is computed anywhere in this runner; the spectrum enters only through its elementary symmetric functions (e_k flux-blind for every k < N, e_{N-1} = N^2, while e_N = det L = 2 - 2 cos Phi is exactly where the flux lives, Tr L^-1 = 9/(2 - 2*cos(Phi))), so nothing is certified mode by mode.
-per_block: checked — four ring blocks N=3, 4, 5, 6 are each run separately and all confine the flux to the constant term with e_{N-1} = N^2; a fifth block, the 4-ring carrying a chord and hence a second independent cycle, breaks exactly that and is the runner's structural rejector.
-lattice_wide: checked and not executed — flux localization is verified only on finite rings up to N=6 plus the one chorded 4-ring, with no large-N or continuum limit taken; the lattice-wide step rests on the symbolic identity d/dPhi g(cos Phi) = -sin Phi g'(cos Phi) for an unspecified outer function g, which is checked symbolically but on no lattice, with PASS=127, FAIL=0.
 TOTAL: PASS=127 FAIL=0
 
 ----- stderr -----

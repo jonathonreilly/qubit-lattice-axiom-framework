@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_connes_kreimer_bridge_16fold_blocking_no_go.py
-runner_sha256: 0dbb2a903fd377aee1e7d13983d32f1c896d377a5bbb60f3c5f8336be528645a
+runner_sha256: 30b2bb2c7e3ea850297b462a5b2441c2979332bdf12221b961100eea31080675
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 
@@ -83,15 +83,6 @@ Cross-check vs landed external narrow theorem note
 ----------------------------------------------------------------------------------------
   [PASS (A)] Ladder depths L_1 through L_16 covered (matches framework 16-fold)  (n_max = 16, exponent of alpha_LM in hierarchy)
   [PASS (A)] |Delta(L_16)| = 17 (15 inner cuts + 2 trivial terms)  (len(Delta(L_16)) = 17)
-
-----------------------------------------------------------------------------------------
-N5 execution certificate
-----------------------------------------------------------------------------------------
-  per_element: individual Hopf-algebra elements are evaluated rather than described — the counit is applied to L_1, L_2, L_3 and to the unit, the antipode is unwound recursively to S(L_2) = -L_2 + L_1^2 and S(L_3) = -L_3 + 2 L_1 L_2 - L_1^3, and the Rota-Baxter identity is tested on two explicit Laurent elements built from 1/epsilon and 1/epsilon^2.
-  per_site: checked and not executed — no lattice of sites is constructed at any point; the canonical surface enters only through the three frozen conventions a = 1, g_bare^2 = 1 and beta = 6, which are global normalizations rather than site data, and their fixedness is itself obstruction O2 since it leaves no continuous parameter to project against.
-  per_mode: the taste content is tracked value by value down the staircase — n_taste runs from 16 to 1 with each value supplying its own b_3 = (33 - 2 n_taste)/3, the ultraviolet end at n_taste = 16 sitting marginal at b_3 = 1/3 while a single taste beyond it, n_taste = 17, already gives b_3 = -1/3 and loses asymptotic freedom.
-  per_block: the rungs are resolved as ladder trees and counted — depths L_1 through L_16 are covered to match the 16-fold composition, the coproduct of L_n is verified to carry exactly n + 1 terms at n = 1, 2, 3, 4 so branching never appears, |Delta(L_16)| comes out 17 from 15 inner cuts plus two trivial terms, and the rung-by-rung beta coefficients accumulate to 256/3.
-  lattice_wide: checked and not executed — no volume, no continuum limit and no infinite-depth limit is taken; the one aggregate formed is the cumulative one-loop parameter 2.5944 set against 1/g_s^2(M_Pl) = 0.8777, and that comparison is a statement about a fixed canonical surface rather than about any extensive lattice quantity.
 
 ----------------------------------------------------------------------------------------
 Summary and outcome

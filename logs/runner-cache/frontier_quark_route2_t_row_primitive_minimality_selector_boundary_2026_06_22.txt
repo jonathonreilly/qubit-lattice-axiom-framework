@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22.py
-runner_sha256: 3490c61909d74f6d1fe61ce88893ca1b00819b892b9c6ab1b9e5bb674bd90ec8
+runner_sha256: be576f6f70b9ad55f6e7af7a375f0a4b337491ce180c1f50d1918c15f9490a0b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 Route-2 T-row primitive/minimality selector boundary
@@ -94,13 +94,6 @@ PASS: note preserves target boundary
 PASS: note leaves audit authority untouched
 PASS: note limits no-go to enumerated selectors
 PASS: note records fixed-shell beta-family miss
-
-G. N5 execution certificate -- what this runner resolves
-per_element: checked -- the T row is treated as three separate integer entries and the arithmetic is done on those entries, not on the row as an opaque object. The decisive comparison is entrywise: the full triple gcd is 1 at the target and 1 at n=1, while the Frobenius squares differ exactly, 9 against 3. Every value is an exact Fraction or integer; no tolerance appears anywhere in this file.
-per_site: checked and not executed -- a readout row is a list of coefficients, and no configuration is ever placed under it. The support, its center and its arms play no part in the primitivity or minimality questions asked here, so there is no site-level evidence to report and none is implied by the enumerated selectors.
-per_mode: checked, and the boundary is literally a disagreement between two mode-level readings of the same row -- taking the whole row, E entry included, makes every member primitive with gcd 1, whereas restricting to the T subrow gives gcd 2 at the target and 1 at n=1, so the T-only reading selects n=1 and the E-inclusive reading selects nothing. Which mode subset the selector is allowed to see decides the answer, and that is exactly the missing premise.
-per_block: checked -- two one-parameter families are carried as separate blocks of the row space and each is closed on its own before being compared. The shape block (1, -n, n) holds rho_T = -1 and q_T = 5/6 fixed while sweeping the shell quotient, sampled over n = 1..5; the shell-scale block (1, -2, beta_T) holds s_TE = -2 fixed while sweeping rho_T, sampled over beta_T = 0..4. The target row sits at n=2 in the first and beta_T=2 in the second, and no enumerated selector reaches it in either block.
-lattice_wide: checked and not executed -- no lattice, no volume and no limit exists in this runner, so the class has no referent. What can be said globally is about the families rather than about a system, and it is proved rather than sampled: the shape block's norm gap factors as 2(n-1)(n+1) and the shell block's as beta_T^2, both nonnegative on the whole family, so the minimality outcomes are closed-form facts and would not change if the sampled ranges above were widened.
 
 ==============================================================================
 TOTAL: PASS=74, FAIL=0

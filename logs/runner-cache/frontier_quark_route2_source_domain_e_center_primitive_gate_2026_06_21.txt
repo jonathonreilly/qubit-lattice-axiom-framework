@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_domain_e_center_primitive_gate_2026_06_21.py
-runner_sha256: 1492a0e5fe56e90bd3091a68ad92e21ea83bbd4d01614a9b01c3f39400b5e83e
+runner_sha256: 58577ec126b9da61972b14290ad62011600d38da1d4cb437ba6ad73db86c0956
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 source-domain E-center primitive gate
@@ -90,15 +90,6 @@ PASS: Rconn typed bridge packet still names a missing source-domain/readout edge
 PASS: no observed endpoint value is used as proof input
 PASS: current result is a boundary for the common delta_A1 source-scalar route
 PASS: positive target is an E-channel coefficient selector, not another endpoint manipulation
-
-----------------------------------------------------------------------------------------
-7. N5 execution certificate
-----------------------------------------------------------------------------------------
-per_element: checked -- resolution here is one slope at a time, and each slope is pushed through the affine law separately to its own exact center value. The anchors are sigma_T = -1 from q_T = 5/6 and sigma_E = 21/4 from q_E = 15/8, giving c_TE = -8/9; on top of them 4 named candidate slopes and 7 simple source scalings are each evaluated individually, 11 in total, and the target is compared against every one of them singly rather than as a set.
-per_site: checked and not executed -- delta_A1 enters this runner as a two-valued site-class label only, 0 on the uniform shell and 1/6 at the center, and both values are taken as given constants. No individual arm is evaluated, the six shell arms are never distinguished from one another, and nothing here would change if the support were re-indexed, so no site-resolved content is certified.
-per_mode: checked, and it is the exact location of the obstruction -- the E and T channels share one common source scalar, so a channel-independent law f(delta_A1) must return a single number at delta = 1/6, yet the two channels demand different numbers there, 5/6 on the T side and 15/8 on the E side. Calibrating the common law to either mode is executed explicitly and each calibration is shown to miss the other mode, which is what forces a channel-specific primitive.
-per_block: checked -- the shell block and the center block are separated throughout, and the separation is what localizes the freedom: every candidate law in this file, common or channel-specific, is verified to normalize to exactly 1 on the shell block where delta_A1 = 0, so the entire disagreement between the candidates lives in the center block alone.
-lattice_wide: checked and not executed -- no lattice, no volume and no limit appears, so no global quantity exists to certify. The scope limit is worth stating plainly as well: the negative result covers the 11 named slopes and scalings that were actually evaluated, together with the text scan over the seven-file bank, and it is not a proof over all conceivable source laws; the note's own open target remains an E-channel coefficient selector.
 
 ----------------------------------------------------------------------------------------
 Summary

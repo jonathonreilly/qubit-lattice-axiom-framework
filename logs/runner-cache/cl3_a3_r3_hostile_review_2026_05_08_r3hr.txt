@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py
-runner_sha256: ad64a1879c1a20fb01805447aba6bbe444152e5ab2a3293babce6ec041a598ec
+runner_sha256: a0acf18b592e28311263dd4a241302c12110b21ac530f75f1aae700360aa7e3e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -99,15 +99,6 @@ Section 4: Result summary
 
   Substep4ac path (b) [anomaly-induced C_3 breaking] is
   FULLY EXCLUDED by R3-S1 + this hostile review confirmation.
-
-==============================================================================
-Section 5: N5 execution certificate -- what this review resolves
-==============================================================================
-per_element: checked - every verdict here is read off individual matrix entries: equal_corner_expectations extracts the three diagonal entries O[alpha, alpha] one at a time and compares max minus min against 1e-10, the translation decorations are the explicit diagonals diag(-1, +1, +1), diag(+1, -1, +1), diag(+1, +1, -1), and their C_3 conjugates are matched entrywise onto the cyclic shift (sweep max diag diff 0.00e+00).
-per_site: checked and not executed - the only geometry instantiated is the three hw=1 Brillouin-zone corners [(1, 0, 0), (0, 1, 0), (0, 0, 1)] on Z^3 APBC, which are momentum labels rather than real-space sites; no site field is built, no hopping is summed over sites, and nothing in the eight attack vectors is resolved at the granularity of a single lattice point.
-per_mode: checked - H_{hw=1} is decomposed by C_3 mode content and the regular-representation character (chi_e, chi_g, chi_g2) = (3.0, 0.0, 0.0) is verified, so each of the three C_3 irreps occurs exactly once and the isotypic projectors used by the Anderson-dual argument are mode-resolved; the C_3-invariant decoration sum T_x + T_y + T_z collapses to the identity.
-per_block: checked and not executed - the whole review lives inside a single Hamming-weight block, hw = 1; the remaining Brillouin-zone weight blocks hw = 0, 2, 3 are never constructed, so no block-to-block comparison is made and no statement here is certified across distinct weight sectors.
-lattice_wide: checked and not executed - no volume sum, no extensive quantity and no thermodynamic limit is taken anywhere; that is deliberate, since R3-S1's reach comes from functoriality plus Freed-Hopkins Anderson dual cobordism rather than from any lattice computation, with APBC fixed as one C_3-symmetric twist and the deformation sweep run over 11 g-values at fixed geometry.
 
 ==============================================================================
 EXACT      : PASS = 13, FAIL = 0

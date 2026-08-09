@@ -1,44 +1,640 @@
 {
- "all_certificates_pass": true,
- "certificates": {
-  "R0_PINNED_EVIDENCE": {
-   "detail": "scripts/frontier_cycle913_selection_function_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle913_selection_function_2026_07_28.txt:MATCH",
-   "pass": true
+  "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-time-blockQ10-20260802",
+  "checks": [
+    {
+      "check": "pins_independently_verified",
+      "detail": {
+        "mismatches": [],
+        "paths": 11
+      },
+      "pass": true
+    },
+    {
+      "check": "no_blocklisted_module_imported",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "substrate_rebuilt",
+      "detail": {
+        "census": 748,
+        "init_failures": 0
+      },
+      "pass": true
+    },
+    {
+      "check": "D1_lock_set_matches_the_primary",
+      "detail": {
+        "mine": 164,
+        "primary": 164,
+        "seconds": 38.38
+      },
+      "pass": true
+    },
+    {
+      "check": "D1_lock_set_matches_cycle911",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "D1_lock_boundaries_match_the_primary",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "D1_state_readout_selection_matches_the_primary",
+      "detail": {
+        "disagreements": []
+      },
+      "pass": true
+    },
+    {
+      "check": "D1_split_matches_the_primary",
+      "detail": {
+        "mine": {
+          "[0, 1]": 80,
+          "[1, 0]": 84
+        },
+        "primary": {
+          "[0, 1]": 80,
+          "[1, 0]": 84
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "D1_endpoint_wires_are_never_gate_targets",
+      "detail": {
+        "left": 1,
+        "right": 6,
+        "source_pointer_is_a_target": true
+      },
+      "pass": true
+    },
+    {
+      "check": "D1_semantic_replay_agrees",
+      "detail": {
+        "disagreements": [],
+        "of": 164,
+        "worlds_replayed": 146
+      },
+      "pass": true
+    },
+    {
+      "check": "D1_own_rearm_trajectory_match_agrees",
+      "detail": {
+        "disagreements": [],
+        "hamming_distances_seen": [
+          0,
+          2
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "D2_ladder_covers_every_declared_radius",
+      "detail": {
+        "missing_from_checker": [],
+        "missing_from_primary": []
+      },
+      "pass": true
+    },
+    {
+      "check": "D2_FINGERPRINT_ATTACK_grouping_agrees_under_a_different_encoding",
+      "detail": {
+        "mismatches": []
+      },
+      "pass": true
+    },
+    {
+      "check": "D2_third_encoding_agrees",
+      "detail": {
+        "R1_nearest_neighbour_record_content": {
+          "groups": 54,
+          "is_a_function": false
+        },
+        "R3_shell3_whole_substrate_minus_the_site": {
+          "groups": 54,
+          "is_a_function": false
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "D2_selection_is_NOT_a_function_of_nearest_neighbour_conditions",
+      "detail": {
+        "groups": 54,
+        "witness": [
+          51,
+          [
+            0,
+            1
+          ],
+          95,
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "D2_witness_pair_reproduced",
+      "detail": {
+        "mine": [
+          51,
+          [
+            0,
+            1
+          ],
+          95,
+          [
+            1,
+            0
+          ]
+        ],
+        "primary": {
+          "left": {
+            "key": [
+              2,
+              1,
+              [
+                0,
+                9
+              ]
+            ],
+            "lock_boundary": 57,
+            "selection": [
+              0,
+              1
+            ],
+            "world": 51
+          },
+          "right": {
+            "key": [
+              2,
+              2,
+              [
+                0,
+                9
+              ]
+            ],
+            "lock_boundary": 46,
+            "selection": [
+              1,
+              0
+            ],
+            "world": 95
+          }
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "D3_single_wire_sweep_reproduced",
+      "detail": {
+        "mine": [
+          1,
+          6
+        ],
+        "primary": [
+          1,
+          6
+        ],
+        "wires_that_vary": 88
+      },
+      "pass": true
+    },
+    {
+      "check": "D3_no_smaller_context_exists",
+      "detail": {
+        "empty_context_determines": false,
+        "primary_claimed_cardinality": 1
+      },
+      "pass": true
+    },
+    {
+      "check": "D3_MINIMALITY_ATTACK_no_non_site_context_of_size_1_or_2_determines",
+      "detail": {
+        "determining_pairs_found": [],
+        "non_site_varying_wires": 86,
+        "pairs_tested": 3655
+      },
+      "pass": true
+    },
+    {
+      "check": "D3_widest_non_site_context_does_not_determine",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "D3_setup_singletons_agree_with_the_primary",
+      "detail": {
+        "event": true,
+        "event_parity": true,
+        "k": false,
+        "phase": false,
+        "tick": false,
+        "tokens": false
+      },
+      "pass": true
+    },
+    {
+      "check": "D4_group_order_rebuilt",
+      "detail": {
+        "full": 48,
+        "proper": 24
+      },
+      "pass": true
+    },
+    {
+      "check": "D4_CLASSIFIED_RULE_ATTACK_orbit_counts_agree",
+      "detail": {
+        "mismatches": [],
+        "rows": [
+          {
+            "alphabet_k": 2,
+            "chiral_pairs": 0,
+            "class_size_multiset": [
+              3,
+              67,
+              94
+            ],
+            "classes_realized": 3,
+            "full_orbits": 10,
+            "non_constant_classes": 3,
+            "proper_orbits": 10,
+            "selection_class_constant": false
+          },
+          {
+            "alphabet_k": 3,
+            "chiral_pairs": 1,
+            "class_size_multiset": [
+              1,
+              1,
+              2,
+              45,
+              48,
+              67
+            ],
+            "classes_realized": 6,
+            "full_orbits": 56,
+            "non_constant_classes": 4,
+            "proper_orbits": 57,
+            "selection_class_constant": false
+          },
+          {
+            "alphabet_k": 4,
+            "chiral_pairs": 20,
+            "class_size_multiset": [
+              1,
+              2,
+              14,
+              24,
+              25,
+              31,
+              67
+            ],
+            "classes_realized": 7,
+            "full_orbits": 220,
+            "non_constant_classes": 5,
+            "proper_orbits": 240,
+            "selection_class_constant": false
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "D4_note_byte_quotes_present_and_matched",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "D4_landed_selection_is_not_in_the_classified_space",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "D5_translation_covariance_reproduced",
+      "detail": {
+        "mine": {
+          "checks": 784,
+          "violations": 0
+        },
+        "primary": {
+          "checks": 784,
+          "violations": 0
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "D5_content_witness_reproduced",
+      "detail": {
+        "no_prior_record": 67,
+        "their_selections": {
+          "[0, 1]": 16,
+          "[1, 0]": 51
+        },
+        "tick0": 24,
+        "tick0_selections": {
+          "[0, 1]": 3,
+          "[1, 0]": 21
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "D5_selection_is_not_content_determined",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "D5_context_variation_reproduced",
+      "detail": {
+        "mine": 54,
+        "primary": 54
+      },
+      "pass": true
+    },
+    {
+      "check": "D6_primary_carries_no_large_hardcoded_table",
+      "detail": {
+        "large_constant_sequences": 0
+      },
+      "pass": true
+    },
+    {
+      "check": "D6_primary_reads_selection_from_the_state_not_a_constant",
+      "detail": null,
+      "pass": true
+    }
+  ],
+  "counts": {
+    "fail": 0,
+    "pass": 31,
+    "teeth": 8,
+    "teeth_detected": 8
   },
-  "R0b_CLAIMS_PARSED": {
-   "detail": "claims_line_found=True",
-   "pass": true
+  "cycles": [
+    913
+  ],
+  "elapsed_sec": 52.463,
+  "failed_checks": [],
+  "independent_reconstruction": {
+    "lock_points": 164,
+    "own_chunk_compiler": "closure over an explicit gate table; the pinned compile_fast generates and execs source instead",
+    "own_classified_rows": [
+      {
+        "alphabet_k": 2,
+        "chiral_pairs": 0,
+        "class_size_multiset": [
+          3,
+          67,
+          94
+        ],
+        "classes_realized": 3,
+        "full_orbits": 10,
+        "non_constant_classes": 3,
+        "proper_orbits": 10,
+        "selection_class_constant": false
+      },
+      {
+        "alphabet_k": 3,
+        "chiral_pairs": 1,
+        "class_size_multiset": [
+          1,
+          1,
+          2,
+          45,
+          48,
+          67
+        ],
+        "classes_realized": 6,
+        "full_orbits": 56,
+        "non_constant_classes": 4,
+        "proper_orbits": 57,
+        "selection_class_constant": false
+      },
+      {
+        "alphabet_k": 4,
+        "chiral_pairs": 20,
+        "class_size_multiset": [
+          1,
+          2,
+          14,
+          24,
+          25,
+          31,
+          67
+        ],
+        "classes_realized": 7,
+        "full_orbits": 220,
+        "non_constant_classes": 5,
+        "proper_orbits": 240,
+        "selection_class_constant": false
+      }
+    ],
+    "own_ladder": {
+      "EMPTY_CONTEXT": {
+        "collision_classes": 1,
+        "groups": 1,
+        "is_a_function": false,
+        "largest_collision_class_size": 164
+      },
+      "FULL_STATE_MINUS_THE_TWO_ENDPOINT_WIRES": {
+        "collision_classes": 0,
+        "groups": 164,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      },
+      "R1_nearest_neighbour_exact_ordinals": {
+        "collision_classes": 5,
+        "groups": 51,
+        "is_a_function": false,
+        "largest_collision_class_size": 67
+      },
+      "R1_nearest_neighbour_openness_only": {
+        "collision_classes": 2,
+        "groups": 4,
+        "is_a_function": false,
+        "largest_collision_class_size": 94
+      },
+      "R1_nearest_neighbour_record_content": {
+        "collision_classes": 1,
+        "groups": 54,
+        "is_a_function": false,
+        "largest_collision_class_size": 30
+      },
+      "R2_shell2_add_link_and_banks_2_3": {
+        "collision_classes": 1,
+        "groups": 54,
+        "is_a_function": false,
+        "largest_collision_class_size": 30
+      },
+      "R3_plus_phase_plus_lock_tick": {
+        "collision_classes": 2,
+        "groups": 128,
+        "is_a_function": false,
+        "largest_collision_class_size": 3
+      },
+      "R3_plus_phase_plus_tick_plus_token_positions": {
+        "collision_classes": 0,
+        "groups": 164,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      },
+      "R3_plus_phase_plus_tick_plus_tokens_plus_source_count": {
+        "collision_classes": 0,
+        "groups": 164,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      },
+      "R3_plus_schedule_phase": {
+        "collision_classes": 6,
+        "groups": 116,
+        "is_a_function": false,
+        "largest_collision_class_size": 8
+      },
+      "R3_shell3_whole_substrate_minus_the_site": {
+        "collision_classes": 1,
+        "groups": 54,
+        "is_a_function": false,
+        "largest_collision_class_size": 30
+      },
+      "SCHEDULE_lock_tick_only": {
+        "collision_classes": 6,
+        "groups": 116,
+        "is_a_function": false,
+        "largest_collision_class_size": 24
+      },
+      "SCHEDULE_phase_only": {
+        "collision_classes": 11,
+        "groups": 11,
+        "is_a_function": false,
+        "largest_collision_class_size": 34
+      },
+      "SETUP_event_index": {
+        "collision_classes": 0,
+        "groups": 4,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      },
+      "SETUP_event_parity": {
+        "collision_classes": 0,
+        "groups": 2,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      },
+      "SETUP_token_positions_only": {
+        "collision_classes": 28,
+        "groups": 97,
+        "is_a_function": false,
+        "largest_collision_class_size": 4
+      },
+      "SITE_BLOCK_MINUS_THE_ENDPOINT_WIRES": {
+        "collision_classes": 1,
+        "groups": 1,
+        "is_a_function": false,
+        "largest_collision_class_size": 164
+      },
+      "SITE_BLOCK_including_the_endpoint_wires": {
+        "collision_classes": 0,
+        "groups": 2,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      },
+      "SITE_ENDPOINT_WIRES_ONLY": {
+        "collision_classes": 0,
+        "groups": 2,
+        "is_a_function": true,
+        "largest_collision_class_size": 0
+      }
+    },
+    "own_lane_permutation_seed": 2323,
+    "own_scan_seconds": 38.38,
+    "own_single_wire_determining_set": [
+      1,
+      6
+    ],
+    "selection_split": {
+      "[0, 1]": 80,
+      "[1, 0]": 84
+    },
+    "semantic_replays": 146
   },
-  "R1_CONSISTENCY_INDEPENDENT": {
-   "detail": "164-84=80, 164*2=328, 67-51=16, 30//2=15; primary_split=[84, 80]",
-   "pass": true
-  },
-  "R2_NONFUNCTIONALITY_INDEPENDENT": {
-   "detail": "witness_refutes_functionality=True planted_functional_ok=True",
-   "pass": true
-  },
-  "R3_RECORDED_RATIO_ECHO": {
-   "detail": "primary_recorded_ratio=[0, 34166] (stipulated history only)",
-   "pass": true
-  },
-  "R4_OVERCLAIM_SCAN": {
-   "detail": "hits=none",
-   "pass": true
-  },
-  "R5_RUNTIME": {
-   "detail": "elapsed_s=0.0 budget_s=300",
-   "pass": true
-  }
- },
- "claim_type": "bounded_theorem",
- "cycle": 913,
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix": "self-contained rewrite; independent lemma route; overclaim scan added; fail-closed exit",
-  "iteration": 1,
-  "reviewer": "Sol"
- },
- "role": "independent_checker",
- "verdict": "PRIMARY_SURVIVES_THIS_CHECK"
+  "role": "independent_check",
+  "runtime_budget_sec": 900,
+  "teeth": [
+    {
+      "detail": null,
+      "detected": true,
+      "tooth": "tampered_pin_detected"
+    },
+    {
+      "detail": {
+        "dropped": 0
+      },
+      "detected": true,
+      "tooth": "dropped_lock_point_detected"
+    },
+    {
+      "detail": null,
+      "detected": true,
+      "tooth": "hardcoded_selection_detected"
+    },
+    {
+      "detail": {
+        "local_verdict": true,
+        "nonlocal_verdict": false
+      },
+      "detected": true,
+      "tooth": "determinism_verdict_is_data_driven_not_leaked"
+    },
+    {
+      "detail": {
+        "missing": [
+          "R2_shell2_add_link_and_banks_2_3"
+        ]
+      },
+      "detected": true,
+      "tooth": "skipped_fingerprint_radius_detected"
+    },
+    {
+      "detail": {
+        "witness": [
+          51,
+          [
+            0,
+            1
+          ],
+          95,
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "detected": true,
+      "tooth": "planted_nonlocal_selection_not_missed"
+    },
+    {
+      "detail": {
+        "found": 9,
+        "probe_wire": 41
+      },
+      "detected": true,
+      "tooth": "minimality_hunt_finds_a_planted_determining_wire"
+    },
+    {
+      "detail": null,
+      "detected": true,
+      "tooth": "tampered_receipt_verdict_detected"
+    }
+  ]
 }

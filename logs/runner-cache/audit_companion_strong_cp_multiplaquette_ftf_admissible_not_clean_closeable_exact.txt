@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_strong_cp_multiplaquette_ftf_admissible_not_clean_closeable_exact.py
-runner_sha256: 1f9aabfed4bde749fb02c739f639f667498d01f3ee8d232b4e264babc4f4673a
+runner_sha256: 2f747ecd72ceceeef5a7d5c4431050250637593f5e265cd956e277672818f7db
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
 PASS - (1) F~F = eps.F.F = 8(F01 F23 - F02 F13 + F03 F12) (the E.B topological density), generically NONZERO
@@ -23,15 +23,6 @@ PRESS RESULT (multi-plaquette F~F): the open boundary is NOT clean-closeable.
    theta_gauge=0 either), theta_gauge is admitted from BOTH sides: the action CAN carry F~F, and the measure cannot
    detect/forbid it. Honest endpoint: theta_gauge is a minimality admission, structurally parallel to Koide r=1/2.
 
-
-==============================================================================
-N5 EXECUTION CERTIFICATE
-==============================================================================
-  per_element: the six independent field-strength components are laid down one by one and the contraction really runs over every index quadruple - F01, F02, F03, F12, F13 and F23 are declared as real symbols, antisymmetry is installed componentwise via F[(nu,mu)] = -F[(mu,nu)] with the four diagonal entries set to zero, and the Levi-Civita sum is taken over all 4^4 = 256 quadruples, returning the exact closed form 8*(F01*F23 - F02*F13 + F03*F12) and, after the substitution Q = i*a^2*F, exactly -a^4 times it.
-  per_site: checked and not executed - the clover is described as a finite two-by-two cluster of plaquettes sitting at a point, but no such cluster is ever assembled. There is no link variable, no plaquette product and no site coordinate in the source; the entire lattice content is the single positive symbol a appearing through the substitution Q = i*a^2*F.
-  per_mode: checked and not executed - no momentum enters at any stage. The file works with position-space tensor components only, performs no transform, defines no dispersion and never separates a single mode of anything; the O(a^4) bookkeeping is a power counting in the spacing symbol, not a mode expansion.
-  per_block: checked and not executed - the gauge algebra is deliberately not represented. The header states that the abelian or structure-free level suffices for the leading topological density, so the F components are ordinary real scalars with no colour indices, no su(N) generators and no trace over any block; the tracelessness that carries check (3) is not computed from generators but entered as the constant trF_leading = 0.
-  lattice_wide: checked and not executed - no volume, boundary or limit appears, and the a^4 prefactor is symbolic power counting rather than a continuum limit. The runner's own press result places the outcome at exactly this boundary: it concludes that only a single-plaquette minimality admission removes the F~F slot, so theta_gauge stays an admission rather than a derived whole-system consequence.
 
 ----- stderr -----
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.py
-runner_sha256: 187c84b38bac70db241fad45035752f15ad63d0ef5d2f1d50993cb8f0406e7cb
+runner_sha256: cd9fdcc76d50e0d7489b4466f32054aba8a6ff44934dcb8996221fa19373e9ce
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 coefficient-selection boundary
@@ -26,15 +26,6 @@ Route-2 coefficient-selection boundary
        ratios_to_rho=[(Fraction(1, 1), Fraction(-1, 1)), (Fraction(3, 2), Fraction(3, 2)), (Fraction(9, 4), Fraction(21, 4)), (Fraction(4, 3), Fraction(2, 3))]
 [PASS] projector-weight power law selects the endpoint only after the exponent is set to n=2
        rho(n)={0: Fraction(-1, 1), 1: Fraction(3, 2), 2: Fraction(21, 4)}
-
-========================================================================================
-N5 EXECUTION CERTIFICATE
-========================================================================================
-per_element: each scalar entry of the reduced readout row is evaluated on its own as an exact Fraction -- the granted T-side entries rho_T=-1 and s_TE=-2 give q_T=5/6, and for every one of the 6 admissible slopes rho_E in {-5, -1, 0, 1, 21/4, 6} the runner forms q_E and lambda separately, obtaining six distinct pairs with no averaging anywhere.
-per_site: checked and not executed -- the only lattice-derived numbers entering this file are the imported projector weights w_E=1/3 and w_T=1/2, hence kappa=3/2; no star, arm, coordinate or neighbor list is constructed, so there is nothing in the runner that could carry a site index for the E-row slope it is trying to select.
-per_mode: the two readout channels are separated and treated differently -- the T mode is fully pinned at q_T=5/6 with s_TE=-2, while the E mode survives only as the projective direction ell_E ~ (1, rho_E) on rho_E > -6; the blind signature (q_T, s_TE) is byte-identical across all six samples whereas q_E takes six different values, which is exactly how the residual is localized to one mode.
-per_block: checked, but only inventories and exact values are resolved and no matrix sub-block amplitude is evaluated -- the runner enumerates four candidate selector banks (4 named selectors, 3 target-free quadratic anchors at q_E in {1, 5/6, 5/4}, four free coefficient ratios, and 3 power-law exponents), yet P_R itself is never instantiated in code, so its center/excess 2x2 blocks are never formed or compared.
-lattice_wide: checked and not executed -- no box, no site count and no limit of any kind is taken in this runner, and the global statement that would be needed is the note's own missing theorem: a rule fixing the exponent n=2 in lambda=kappa^n, which alone moves rho_E from 3/2 at n=1 to 21/4; the runner supplies the exponent by hand and certifies nothing beyond that.
 
 ========================================================================================
 PASS=9 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_model_selection_firewall_2026_06_06.py
-runner_sha256: 33c260ffedf0b6d9a51e42c87d18ccb1d38babf2703c99e17884351be7f15718
+runner_sha256: c66f6072a027a965d7a55c0ca0453b98a7dde75b87fac38c2039a011840bac99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -74,15 +74,6 @@ PASS Record-derived Born/instrument flag is false
 PASS Record-derived Hamiltonian/clock flag is false
 PASS generation/Koide dial selected flag is false
 PASS audit verdict applied flag is false
-
-------------------------------------------------------------------------------
-N5 execution certificate (reporting only; adds no check)
-------------------------------------------------------------------------------
-  per_element: resolved word by word in exact Fractions — iid_law assigns every word of the horizon its own mass p_A^count_A (1-p_A)^(n-count_A), and the individual likelihoods of the realized word AAAB are pinned separately at 4/625 under the low-A law and 27/256 under the high-A law, with their ratio pinned at 16875/1024; nothing here is aggregated before it is compared.
-  per_site: checked and not executed — the candidate laws live on words rather than on any geometry, so no spatial coordinate exists; the iid family in fact collapses position entirely, since count_a reduces each word to one exponent, and only the hand-written skew law is position-sensitive, giving mass 1/4 to ('A','B') against 1/2 to ('B','A').
-  per_mode: checked and not executed — a likelihood here is one number per candidate law and is never resolved into components; no operator, spectrum, eigenvector, correlation function or Fourier decomposition is constructed at any point in the five sections.
-  per_block: resolved candidate by candidate across the supplied family — each law is normalized on its own before scoring, each carries its own likelihood at the realized word, the posterior reweights each candidate by its own prior mass, and enlarging the family from {fair, skew} to {fair, skew, spike} moves the argmax off the tie and onto the spike, which is exactly the family-extension counterexample.
-  lattice_wide: checked and not executed — the runner never leaves the horizons N = 2 and N = 4, builds no volume and takes no limit of any kind, and the four obstructions it reports are explicit finite witnesses (one prior pair, one tie pair, one family extension, one threshold pair) rather than a general theorem over all priors, families and thresholds; of the recorded passes, 18 are string-presence checks over four repository documents and 9 are firewall booleans hardcoded False in this file.
 
 SUMMARY: PASS=48 FAIL=0
 POST_RECORD_SCORE_TO_CANONICAL_SELECTION=FALSE

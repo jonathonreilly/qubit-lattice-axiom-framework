@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py
-runner_sha256: 0ed06e639f81ced6327ecabe5581742ed1fb997e8bd15b0df35a2348ef492f8c
+runner_sha256: 7fb30f302d214a8620c4865d251246eb38dcfc7f03a366478c3f14af7863671a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 A. Authority surface
@@ -62,13 +62,6 @@ PASS: note does not claim selected P_R
 PASS: runner avoids applying verdicts
 PASS: unsafe endpoint shortcut is explicitly pruned
 PASS: expected PASS total is recorded
-
-E. N5 execution certificate
-per_element: checked, and it is an inventory-and-arithmetic resolution only, with no field amplitude evaluated anywhere in this file. The 10 inventory edges (8 current plus 2 derived) are held as individually named TypedEdge records, each of the two candidate edges is tested for membership on its own, and the arithmetic side resolves one exact rational per check: F_adj = 8/9, c_TE = -8/9, q_E = 15/8, rho_E = 21/4.
-per_site: checked and not executed -- there is no lattice index in this runner at all. Its whole state space is the 12 symbolic nodes of the typed-edge graph plus three exact rationals; the Route-2 support carrier is referred to by name only and is never instantiated, so no site of it can be, or is, separately resolved.
-per_mode: checked but THIN, and only in one place -- the sole channel decomposition executed is the two-register split inside R_phys = F_adj + kappa_EW (1 - F_adj), which weights the color-adjoint register against the not-read electroweak register. It is evaluated at three separate admixtures, kappa_EW = 0, 1/2 and 1, giving R_phys = 8/9, 17/18 and 1, and exactly one of them lands rho_E = 21/4 once the extra W1 typing rule is granted. The Route-2 E and T bright channels themselves are never given amplitudes here; they occur only inside node labels.
-per_block: checked -- the gate factorization is executed as four independent edge-set copies of the same graph, and each copy is closed on its own before any of them are compared: the base inventory, base + W2, base + W1, and base + W1 + W2. That block-by-block separation is exactly what makes the note's independence claim executable, since W2-only reaches su3_R_conn_8_9 but neither the center ratio nor rho_E, W1-only reaches both from the color scalar but has no physical-selector source path, and only the fourth copy connects the selector all the way to route2_rho_E_21_4.
-lattice_wide: checked and not executed -- executing it would require a whole-system quantity, and none exists here: no volume, no thermodynamic limit and no extensive observable is formed. The widest object this runner closes over is graph reachability across a fixed finite authority inventory, which is bookkeeping about what has been typed rather than an evaluation of the theory, and the note's own result is that this inventory does not connect a physical selector to the endpoint chain without both gates.
 
 TOTAL: PASS=49, FAIL=0
 Status: exact negative boundary for W1/W2 gate conflation.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lepton_single_higgs_pmns_triviality.py
-runner_sha256: 2930ce62f22bc4d27dd652156fdda5d6f27ca906dd693a4e213dbca81d92773b
+runner_sha256: c6d18aeff78a9bc96bfce0f5f504aa0b71a7418181e989ce9967c11b3da016d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -91,15 +91,6 @@ PART 4: AT LEAST ONE LEPTON SECTOR MUST EXIT THE SINGLE-HIGGS LANE
   The next honest science question is not whether that route can still
   work. It cannot. The question is which non-monomial extension is
   actually derived or selected by the framework.
-
-========================================================================================
-PART 5: N5 EXECUTION CERTIFICATE (RESOLVED GRANULARITY)
-========================================================================================
-per_element: checked - the whole theorem is decided entry by entry. The support matrix is filled by testing (q_L(i) + offset + q_R(j)) mod 3 == 0 over all nine (i, j), its row sums and column sums are each verified to be exactly 1, the Yukawa is assembled as Y = diag(coeffs) P, and monomiality is decided by counting entries with |Y_ij| > 1e-12 per row and per column, giving 3 nonzero entries out of 9 in every case.
-per_site: checked and not executed - there is no lattice site in this runner. Both indices of every matrix it builds are generation labels on a single flavour space, and the Z_3 structure enters as a charge assignment rather than as a position, so no local algebra, neighbour or site sum exists to resolve.
-per_mode: checked, and the finding is that it collapses - the only spectral decomposition performed is the SVD of Y_e, and its singular values come back exactly equal to the sorted |coefficients| at tolerance 1e-12, so every singular direction coincides with one generation basis vector and no mode mixes two generations. No Z_3 character or Fourier expansion is ever formed; the charges appear only as integers in the mod-3 selection rule.
-per_block: checked, and exhaustively - the block index here is the effective Z_3 offset, and all copies are enumerated rather than sampled. Each of the offsets 0, 1, 2 gets its own support matrix, its own factorization Y_e = D_e P verified at 0.00e+00 error, and its own singular-value list; Part 3 then walks the complete 3 x 3 grid of (neutrino offset, charged-lepton offset) pairs with maximum off-diagonal Gram norm 0.00e+00 over all nine, and the comparison target is the full set of 3! = 6 permutation matrices.
-lattice_wide: checked and not executed - nothing extensive is formed and no limit is taken. The widest object the runner evaluates is a Frobenius distance between two 3 x 3 magnitude matrices, minimized over the six permutations to 1.300, which is a single global number on the flavour space rather than a lattice-summed observable; no volume, site count or continuum limit appears anywhere.
 
 ========================================================================================
 RESULT

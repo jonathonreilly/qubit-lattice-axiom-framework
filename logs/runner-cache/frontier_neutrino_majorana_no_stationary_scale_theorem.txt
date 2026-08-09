@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_no_stationary_scale_theorem.py
-runner_sha256: 2aba37b410a655d000fc43dc1c0f3540252dc9b7d8be2eb2d84e1216f18f5e76
+runner_sha256: f139732c69a1ee0a31fd541e180b5c6a621a79b8f5bd03c7f8d5d7df45336d83
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,7 +34,7 @@ PART 1: THE ONE-GENERATION LOCAL PFAFFIAN GENERATOR HAS NO STATIONARY SCALE
 ========================================================================================
 PART 2: THE FIXED Z3 LIFT IS AFFINE IN LOG(SCALE), NOT STATIONARY
 ========================================================================================
-  [PASS] The three-generation Pfaffian scales exactly as lambda^3 on the fixed texture class  (scale-ratio error=3.40e-17)
+  [PASS] The three-generation Pfaffian scales exactly as lambda^3 on the fixed texture class  (scale-ratio error=2.69e-17)
   [PASS] The lifted generator step is exactly 3[log(lambda1)-log(lambda0)]  (|DeltaW-3DeltaLog|=4.44e-16)
   [PASS] The lifted source derivative is exactly 3/lambda  (dW/dlambda=7.317073, 3/lambda=7.317073)
   [PASS] The lifted derivative never vanishes on positive scales  (min |dW/dlambda|=2.189781)
@@ -45,23 +45,11 @@ PART 2: THE FIXED Z3 LIFT IS AFFINE IN LOG(SCALE), NOT STATIONARY
 ========================================================================================
 PART 3: THE REMAINING EXACT CLASS INVARIANTS ARE SCALE-INVARIANT
 ========================================================================================
-  [PASS] Normalized singlet/doublet spectrum is identical across overall rescaling  (max normalized spectrum difference=1.24e-16)
-  [PASS] Normalized pairing block is identical across overall rescaling  (max normalized Delta difference=1.69e-16)
+  [PASS] Normalized singlet/doublet spectrum is identical across overall rescaling  (max normalized spectrum difference=5.55e-17)
+  [PASS] Normalized pairing block is identical across overall rescaling  (max normalized Delta difference=1.93e-16)
 
   So the exact class invariants organize the source class but cannot
   pick its absolute amplitude.
-
-========================================================================================
-N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
-========================================================================================
-per_element: resolved, with amplitudes, because the whole computation is entry-driven. z3_texture writes the singlet 1.4 at [0, 0], the diagonal 0.09 + 0.04j at [1, 1] and [2, 2], the doublet coupling 0.52 at [1, 2] and [2, 1] and exact zeros everywhere else; J2 carries +1 at [0, 1] and -1 at [1, 0]; and the Pfaffian is a hand-written cofactor expansion that reads matrix[0, j] one entry at a time, discards entries under 1e-14 and recurses on the minor. At one generation the entire generator is a single matrix element: Pf(mu J2) = mu, so W_1 = log(mu) is the logarithm of one entry.
-per_site: checked and not executed. This runner places nothing anywhere - the three-valued index is a generation label organized by the Z3 singlet/doublet split and the two-valued index inside each J2 is the Majorana pair index, so neither carries a coordinate, a neighbour relation or a volume, and no lattice is instantiated at any point.
-per_mode: resolved by computation, reported only in aggregate. normalized_spectrum takes the singular value decomposition of scale * M_0 and returns all 3 singular values sorted and divided by their norm, giving the mode-resolved triple [0.272033, 0.385074, 0.881882], and that triple is recomputed at scales 0.17, 0.53 and 1.11 and compared. What is printed, however, is only the norm of the difference between spectra, so the individual mode weights never appear in the output.
-per_block: resolved as a count and an exponent, not as separate block amplitudes. The Z3 block structure is written explicitly - a singlet entry plus a 2 x 2 doublet [[eps, b], [b, eps]] - and the Kronecker product with J2 turns the 6 x 6 pairing block into exactly 3 antisymmetric 2 x 2 pairing pairs. That block count is the exponent: Pf(lambda Delta_0) = lambda^3 Pf(Delta_0) is what the scale-ratio check verifies. No per-block Pfaffian, no singlet-against-doublet comparison and no block-resolved invariant is ever evaluated.
-lattice_wide: checked and not executed, and the missing global ingredient is this note's own declared obstruction. There is no lattice; and on the scale axis, which is the axis this theorem actually lives on, no limit is taken either - the runner evaluates fixed positive scales (mu = 0.37 and 0.91, lambda = 0.41 and 0.83, plus four samples each) and never approaches mu -> 0 or mu -> infinity. The note's bottom line is that any scale-setting law must introduce a genuinely new non-homogeneous ingredient beyond this class, and no global statement here can supply it.
-  scope: the two 'never vanishes on positive scales' checks discriminate nothing. Each builds its list directly as 1/mu (resp. 3/lambda) from four positive sample scales and confirms the minimum exceeds zero, which is automatic for positive input. The generality rests on the closed forms 1/mu and 3/lambda, which are tested numerically only at the single points mu0 = 0.37 and lambda0 = 0.41 by central difference at eps = 1e-7.
-  scope: every three-generation result is established on one fixed texture representative (a = 1.4, b = 0.52, eps = 0.09 + 0.04j) while the note quantifies over any fixed nonzero Z3 texture; no texture family is swept and no degenerate or vanishing representative is exercised.
-  scope: fully deterministic - no RNG stream and no optimizer appears in this runner, so every quantity above is fixed by literal source constants.
 
 ========================================================================================
 RESULT

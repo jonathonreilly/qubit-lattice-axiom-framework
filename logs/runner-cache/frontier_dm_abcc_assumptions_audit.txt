@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_assumptions_audit.py
-runner_sha256: abd561c03aeb0153f452ef405d72160c6d7f4788865b62c3277915707eca997b
+runner_sha256: a839d303ef6fcfd9f3eb6bdfc1a5a7e8ee8c9c724d250cec3b4cdc62e54b160e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
 ============================================================
@@ -104,14 +104,6 @@ A-BCC Assumptions Audit
   Observable-continuity (DPLE W[J])        FAILS      DPLE log|det| is sign-blind (see DM_DPLE_ABCC_NO_GO)
   Observational elimination (T2K)          SUPPORTS   All known C_neg basins T2K-excluded (>3-sigma); NOT derivation
   [note] Route summary table printed above (informational): 6 routes fail or supply only support; A-BCC-from-Cl(3)/Z^3-alone remains open.
-
-=== A13: N5 execution certificate ===
-
-  per_element: every verdict here rests on explicit 3x3 matrix entries — H is assembled as H_base + m T_M + d T_D + q T_Q from three fixed integer generators and its determinant is read off those entries, with det(H_base) = 5.0283 against det(-H_base) of the opposite sign and det(T_M) = -1.0000 driving the large-m behaviour.
-  per_site: checked and not executed — no lattice site carries anything in this audit; Z^3 appears only as the label of orientation Route 3, and the runner's finding there is that the pseudoscalar constrains GL(3) transformations rather than Hermitian observables, so no site-resolved quantity is ever formed.
-  per_mode: the spectrum is resolved mode by mode and that is what kills two routes — the eigenvalues of H_base come out [-1.9846, -0.8834, 2.868] with gaps [1.1011, 3.7514], so all three modes are non-degenerate and Kramers pairing is absent, while the odd count of three modes is itself what forbids a quaternionic embedding of even dimension 2n.
-  per_block: the nearest block structure is the two-component split of source space into det > 0 and det < 0, and the runner does resolve it component by component — Basin 1 sits at det = 0.9592 in C_base while Basin 2 and Basin X sit at -7.05e+04 and -2.03e+04 in C_neg, each basin then being tested separately against the T2K bound; no matrix block decomposition is performed.
-  lattice_wide: checked and not executed — no volume, lattice or thermodynamic limit is involved; the widest sweep is a grid over the physical chamber, where a majority of the scanned points already carry det < 0, which is a parameter-space census establishing that the chamber constraint alone does not select the sheet.
 
 === A12: Final verdict ===
 

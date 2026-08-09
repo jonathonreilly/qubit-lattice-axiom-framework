@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_narrow.py
-runner_sha256: ded1f7a5b47bc06e129da7b8da13e04a875bd8d2e48a37790473885de8ea2d56
+runner_sha256: 9f4460f01d10b60644aecceadf5e68ebee82572ccb7aa90aaf172599a03f323c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 
@@ -50,15 +50,6 @@ Part 7: joint-sufficiency / disjunction check  (T7)
 Part 8: negative-cross-check  (T8)
 ----------------------------------------------------------------------------------------
   [PASS] T8: Negative-cross-check: bridge not verifiable under any of (O1)-(O4); four counter-evidence statements recorded.  (counter-evidence entries: 4, all four populated)
-
-----------------------------------------------------------------------------------------
-N5 execution certificate: resolution granularity of this narrow no-go
-----------------------------------------------------------------------------------------
-per_element: checked — the hypothesis-domain obstruction is resolved entry by entry across the 5 declared model entries: 2 sit inside the published BBS domain (4d |phi|^4 n-component, 4d weakly self-avoiding walk) and 3 sit outside it (4d Wilson-plaquette lattice gauge, 4d staggered Dirac, and the coupled gauge-plus-staggered system), so the entry the bridge actually needs is one of the out-of-domain ones.
-per_site: checked — the O4 witness is the only site-indexed computation in this runner, and it is evaluated at the integer lattice separations r in [1, 2, 4, 8, 16]: G(r) = 1/(4 pi^2 r^2) yields consecutive ratios [4.0, 4.0, 4.0, 4.0], constant at 4 under radius doubling, which is the signature of a pure r^-2 tail. No lattice is instantiated and no site carries a field value; the site index enters only as this separation.
-per_mode: checked — the taste content is resolved one taste at a time down the staircase: with n_taste^(k) = 16 - k, the exact Fraction sequence b_3^(k) = (1 + 2k)/3 runs from b_3^(0) = 1/3 at 16 tastes to b_3^(16) = 11 at zero tastes (pure gauge) and is strictly monotone increasing at every one of the 16 successive steps, so no single kappa can be uniform across the taste modes.
-per_block: checked — the 16 blocking rungs are summed rung by rung rather than estimated in aggregate: Sum_{k=0}^{15} b_3^(k) = 256/3 exactly, confirmed independently by SymPy summation, and the resulting cumulative coefficient |ln alpha_LM| * 32/(3 pi^2) = 2.5940 exceeds u_0 = 0.87768 at the framework value alpha_LM = 907/10000, placing the Landau-pole crossing inside the staircase.
-lattice_wide: checked and not executed — this runner takes no infinite-volume, continuum, or thermodynamic limit of any lattice system; the r -> infinity limits in T6 are limits of a symbolic scalar function of one variable, and obstruction O1 is exactly that the published BBS contraction theorem has no lattice gauge plus staggered Dirac instance, so no lattice-wide contraction statement is available to be executed here.
 
 ========================================================================================
   Final tally: PASS = 8, FAIL = 0

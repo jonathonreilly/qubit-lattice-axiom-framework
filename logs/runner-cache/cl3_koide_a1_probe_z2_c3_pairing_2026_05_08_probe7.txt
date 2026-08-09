@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_z2_c3_pairing_2026_05_08_probe7.py
-runner_sha256: fa108004e833ea0cb464e2acfe03081d902a6a553f6bf28009e86ea7cc852c28
+runner_sha256: 78f9239876e9d9c0b0fc0dee6feed6dca723cf7d4af46608af611386fd00c3e4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Section 0 — Baseline: retained C_3 + circulant primitives on hw=1
@@ -101,13 +101,6 @@ Section 11 — Probe 7 bounded obstruction theorem
   THEOREM (Probe 7): none of the five inventoried Z_2 candidates paired with C_3 forces |b|²/a² = 1/2
   Structural barriers per candidate: trivial action / scale-invariance / S_3 not Z_6
   PASS : Theorem statement printed
-
-Section 12 — N5 execution certificate: resolution classes exercised here
-  per_element: resolved candidate by candidate and entry by entry — all five inventoried Z_2 candidates are put through the same five-test grid separately rather than dismissed as a class, each involution is verified to square to the identity in its own right, and the conjugation P_23 H(a, b) P_23 = H(a, b-bar) is computed on the explicit 3x3 matrix so the effect on each coefficient is read off individually.
-  per_site: checked and not executed — two candidates are nominally site-level, the fermion parity F built as a tensor product of sigma_3 factors and the APBC-versus-PBC boundary convention, but both are settled here purely by their induced action on the hw=1 bilinears, where F acts as the identity and APBC has no operator action at all, so no quantity in this probe is ever resolved site by site.
-  per_mode: resolved mode by mode on the C_3 characters — the circulant spectrum is confirmed to match the Brannen-Rivero cosine form eigenvalue by eigenvalue, and the trivial character is kept distinct from the two non-trivial characters throughout, which is what lets Section 8 trace the number 1/2 back to character arithmetic rather than to any Z_2 halving.
-  per_block: resolved block by block on the Hermitian isotype decomposition — the trivial-character block has dimension 3 and the non-trivial-character block dimension 6, giving the 3 : 6 Frobenius split, and at the Brannen point a = 1, b = 1/sqrt(2) the two block energies are separately computed and both equal 3, which is the equipartition meaning of A1; the runner is explicit that this weight comes from C_3 multiplicity, not from any of the Z_2 candidates.
-  lattice_wide: checked and not executed — no lattice is instantiated at any volume, no site sum is formed and no limit is taken; the closed-lattice facts that Candidate 5 leans on, that uniform Z_3 phase twists cancel and that the cited plaquette comparison is identical between PBC and Z_3-symmetric APBC, enter as cited substrate results and are not re-executed here, so nothing is certified at lattice scale by this probe.
 
 === TOTAL: PASS=70, FAIL=0 ===
 

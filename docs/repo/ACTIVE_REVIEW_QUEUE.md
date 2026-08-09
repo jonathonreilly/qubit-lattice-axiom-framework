@@ -27,6 +27,28 @@ them.
 
 Current science/open-lane follow-ups:
 
+
+- `2026-08-08-dependency-policy-epoch-debt-helper-registry`
+  Scope: `docs/audit/scripts/build_citation_graph.py`
+  (`EXPLICIT_PACKET_HELPER_RUNNER_PATHS`),
+  `docs/audit/data/dependency_policy_epoch.json`, and claim-scoped
+  packet-helper registrations.
+  Finding: dependency-policy epoch debt: helper-registry edits (cycles
+  869/870/872/873/874 landed; the AC2-salvage registration for
+  `exact_algebra_salvage_bounded_support_note_2026-08-08` pending as a
+  hard landing condition in that note's Review record) were made without
+  an epoch refresh because a refresh mass-invalidates ~860 legacy audits
+  (independently measured at 891 hard resets under
+  `legacy_dependency_policy_epoch_changed` /
+  `science_changed:dependency_policy_epoch`). The governed exact-hash
+  gate on `DEPENDENCY_POLICY_SOURCES` therefore reports an epoch
+  mismatch against the registry's current bytes on `main`.
+  Disposition: `science-needed`; owner decision required — a dedicated
+  policy pass must reconcile the exact-hash epoch gate with helper-registry
+  evolution (do not refresh the epoch ad hoc: ~860-891 legacy audits reset)
+  claim-scoped helper registration from the governed
+  dependency-extraction source, or adding the reviewed machine-readable
+  equivalence/impact record the review-loop guard requires).
 - `2026-08-07-premise-epoch-reset-narrative-staleness`
   Scope: hand-authored narrative surfaces on `main` after the
   framework-premise-epoch invalidation refresh (887 audits reset to

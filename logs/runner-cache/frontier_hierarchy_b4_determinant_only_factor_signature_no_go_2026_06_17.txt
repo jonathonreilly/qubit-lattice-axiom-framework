@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_b4_determinant_only_factor_signature_no_go_2026_06_17.py
-runner_sha256: 283a09975ff283ae15203c8c5a05406bb1b2257d704766d2c89244d92c6ef058
+runner_sha256: b560174a762faeae2166cfbfafb7fbd82e968505951a09493eceb7ca3685657f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -61,15 +61,6 @@ Source-note boundary markers
   [PASS][B] open-gate note contains marker: Surviving routes run through beyond-mean-field link fluctuations
   [PASS][B] open-gate note contains marker: Green-kernel
   [PASS][B] open-gate note contains marker: non-link transport rule
-
-================================================================================
-N5 execution certificate: resolution granularity of this factor-signature no-go
-================================================================================
-per_element: checked — the obstruction is resolved slot by slot on the two-element exponent vector (alpha_bare_exp, u0_exp). The u_0 slot is reachable, since the determinant signature (0, 16) already carries u0_exp=16 and its inverse carries -16; the alpha_bare slot is not, because every determinant-only expression holds alpha_bare_exp identically 0 while the target (16, -16) demands 16. The no-go lives entirely in that one element.
-per_site: checked and not executed — this runner instantiates no lattice and reads no site; the minimal-block determinant enters as the checked support-packet result u_0^16, and the canonical surface is the single supplied mean-field plaquette <P>=0.5934 with u_0=0.877681, so nothing here is resolved site by site.
-per_mode: checked and not executed — the algebra deliberately strips constants and keeps only integer exponents, so no eigenvalue, no spectral decomposition of the block determinant, and no mode content survives into the bookkeeping; a mode-resolved argument would need the determinant's spectrum, which this exact-exponent method never forms.
-per_block: checked — the minimal block is the unit of this sweep: 7 whole-block products det^k for k=0..6 give u0_exp running 0,16,...,96, and 13 block quotients det^k for k=-6..6 give -96..96, yet all of them hold alpha_bare_exp at exactly 0. No number of block copies, stacked or inverted, reaches (16, -16).
-lattice_wide: checked and not executed — no lattice-wide or continuum statement is made or attempted; the note explicitly disclaims exhaustion of every possible future B4 mechanism, and the open-gate note keeps beyond-mean-field link fluctuations, Green-kernel and non-link transport routes alive, so this certificate bounds determinant-only repairs and nothing wider.
 
 CLASS_COUNTS: {'A': 11, 'B': 26, 'C': 6}
 VERDICT: hierarchy B4 determinant-only factor-signature no-go checks pass.

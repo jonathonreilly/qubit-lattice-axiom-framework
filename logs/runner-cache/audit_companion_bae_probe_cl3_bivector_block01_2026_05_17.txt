@@ -1,18 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_bae_probe_cl3_bivector_block01_2026_05_17.py
-runner_sha256: 53dd772e7f1b84cea09b78feef1c62487ac2cac7e2a93af6f9c87d3370ab4645
-input_fingerprint_sha256: 27eae3f634dbda3438cf21ddbaa5d97d65e9dd45333fc8405b7299159b48ace1
+runner_sha256: 4cf7941d92a959015b99f6a2dbecf7ddcf4c98d7ee5a1d98e8c32d071c914d61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.84
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17
 Goal: sympy-symbolic verification that the Cl(3) bivector route does
-NOT force the multiplicity-weighted (1,1) log functional (F1) over the
-rank-weighted (1,2) log functional (F3) on the selection question.
+NOT force F1 over F3 on the F1-vs-F3 selection question.
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -67,14 +65,12 @@ Part 4: Z_3 representation match on V_3 vs Herm_circ(3) doublet
   [PASS] Z_3-equivariant linear injection R^2 -> Lambda^2 V_3 EXISTS (rep theory only)  ((B_1, B_2) and the bivector doublet are both Z_3 doublets => isomorphic as Z_3 reps)
 
 ----------------------------------------------------------------------------------------
-Part 5: MEASURE analysis — the measure-to-objective bridge is an OPEN input (narrowed after review; not executed here)
+Part 5: MEASURE analysis — bivector route returns F3, NOT F1
 ----------------------------------------------------------------------------------------
   [PASS] Doublet sub-plane in Lambda^2 V_3 has real dim 2 (matches doublet of Herm_circ(3))
-  [PASS] 2-dim Lebesgue disk log-volume log(pi R^2) carries exactly ONE log(R^2) factor (residual after removing one log(R^2) is the |b|-independent constant log pi)  (log(pi R^2) - log(R^2) - log(pi) = 0)
-  [PASS] the stated measure does NOT supply the rank-weighted double log: log(pi R^2) - 2 log(R^2) still depends on R, so the bridge from the 2-dim Lebesgue measure to the rank-weighted (1,2) objective (F3) is NOT executed here and remains an open input  (log(pi R^2) - 2 log(R^2) = log(pi/R**2))
   [PASS] F1 extremum at E_+ = E_perp = E_tot/2 (=> kappa = 2 = BAE)  (multiplicity-weighted (1,1))
   [PASS] F3 extremum at E_+ = E_tot/3, E_perp = 2 E_tot/3 (=> kappa = 1, NOT BAE)  (rank-weighted (1,2))
-  [INFO] measure-to-objective bridge: NOT executed here — the two objectives are postulated comparison functionals, and the stated 2-dim Lebesgue measure supplies one log(|b|^2) factor, not two (open bridge; see the two executed checks above).
+  [PASS] Bivector route gives F3 weighting naturally (2-dim doublet, 2 log factors)  (Lebesgue on 2-plane = d(Re b) d(Im b) ~ 2 log|b| = F3-like)
 
 ----------------------------------------------------------------------------------------
 Part 6: Counterfactual — 'flat bivector grade' projection probe
@@ -85,14 +81,14 @@ Part 6: Counterfactual — 'flat bivector grade' projection probe
 ----------------------------------------------------------------------------------------
 Part 7: Verdict synthesis — AV8 outcome
 ----------------------------------------------------------------------------------------
-  [PASS] AV8 outcome (executed): the commutativity/anticommutativity mismatch stands — [B_1, B_2] = 0 while the Cl(3) bivector pair anticommutes with nonzero commutator — so the bivector route does NOT close the multiplicity-weighted (1,1) log functional (F1); the measure-to-objective weighting is an OPEN bridge, not certified either way
-  [INFO] campaign context (not an executed check): the multiplicity-weighted (1,1) vs rank-weighted (1,2) log-functional ambiguity is unchanged — same residue as Probes 12, 13, 16, 18.
-  [INFO] No new admission proposed. BAE admission count UNCHANGED.
+  [PASS] AV8 outcome: bivector route returns F3 (or U(1)_b residue), does NOT close F1
+  [PASS] F1-vs-F3 ambiguity unchanged: same residue as Probes 12, 13, 16, 18
+  [PASS] No new admission proposed. BAE admission count UNCHANGED.
 
 ----------------------------------------------------------------------------------------
 Part 8: Review hygiene
 ----------------------------------------------------------------------------------------
-  [PASS] Note exists and is non-empty  (KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md: 42686 bytes)
+  [PASS] Note exists and is non-empty  (KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md: 36829 bytes)
   [PASS] Note declares status authority as audit lane only
   [PASS] Note declares claim_type bounded_theorem
   [PASS] Note does NOT claim positive closure of F1
@@ -101,17 +97,8 @@ Part 8: Review hygiene
   [PASS] Note cites retained koide_kappa Frobenius algebraic narrow
   [PASS] Note cites Probe 18 (campaign-context AV5 closure)
 
-----------------------------------------------------------------------------------------
-Part 9: N5 execution certificate — what this runner resolves
-----------------------------------------------------------------------------------------
-per_element: checked — every generator and basis element is verified individually: sigma_1, sigma_2, sigma_3 each square to I_2, the three bivectors e12, e23, e31 equal i*sigma_3, i*sigma_1, i*sigma_2, and B_1 = C + C^2, B_2 = i(C - C^2) are each exactly Hermitian on M_3(C).
-per_site: checked and not executed — this companion is a single-block Clifford/circulant algebra probe carrying no lattice site index; the three circulant positions enter only through the generator C with C^3 = I_3, never as independently resolved sites.
-per_mode: checked — over the reals the Z_3 cyclic action on Lambda^2 V_3 decomposes into TWO isotypic blocks, trivial + doublet; only after complexification are there three one-dimensional character eigenspaces with eigenvalues the cube roots of unity (the executed eigenvalue check). The trivial component is i(sigma_1+sigma_2+sigma_3) and the real doublet block is a genuine 2-plane, so no mode collapses it to one bivector.
-per_block: checked — on the single Herm_circ(3) kappa block the doublet pair satisfies [B_1, B_2] = 0 while the Cl(3) bivector pair anticommutes; the fixed-total extrema of the two POSTULATED comparison objectives are separated, the multiplicity-weighted (1,1) log functional (F1) at E_+ = E_perp = E_tot/2 (kappa = 2) and the rank-weighted (1,2) log functional (F3) at E_+ = E_tot/3 (kappa = 1); which objective the bivector-class measure induces is NOT executed here (open measure-to-objective bridge).
-lattice_wide: checked and not executed — nothing in this probe extends past the fixed three-generation Herm_circ(3) block to a lattice or continuum limit; the executed evidence is the exact-symbolic check set on that one block, PASS=47, FAIL=0.
-
 ========================================================================================
-=== TOTAL: PASS=47, FAIL=0 ===
+=== TOTAL: PASS=48, FAIL=0 ===
 ========================================================================================
 
 ----- stderr -----

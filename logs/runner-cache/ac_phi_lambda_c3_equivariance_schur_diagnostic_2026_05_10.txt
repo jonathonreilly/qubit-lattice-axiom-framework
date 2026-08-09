@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py
-runner_sha256: 75da3e061e0b81b23cb3341b9dfbe72ea54bf062466ec6505aa90261e15da4dd
+runner_sha256: 28500915b5ede7221ee5430f84af71a699c3e7c326216484ab76663e8f828e42
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 AC_phi_lambda preserved-C_3 structural foreclosure diagnostic
@@ -77,15 +77,6 @@ PASS: escape route named: External Higgs VEV
 PASS: escape route named: PDG mass input
 PASS: escape route named: Explicit labeling axiom
 PASS: note states 'not a new derivation'
-
-================================================================
-Section C: N5 execution certificate
-================================================================
-per_element: checked - the Schur argument is carried out on symbolic matrix entries: H.H - H and the commutator H U - U H are each simplified to the 3x3 zero matrix entry by entry, the three diagonal entries H[i, i] are individually simplified and shown to equal a, and the counterfactual diag(1, 2, 3) is read back as the distinct corner values [1, 2, 3].
-per_site: checked and not executed - nothing in this runner carries a site index: Section A works entirely in the regular representation of Z/3Z on C^3, which indexes generations rather than lattice points, and Section B is text auditing of the note and its 10 cited probe files, so no Z^3 position is ever constructed.
-per_mode: checked - the mode content is resolved character by character, the spectrum of U_C3 being verified as the three distinct cube roots {1, omega, omega^2}; the operator H built on them collapses to only the two distinct eigenvalues 4/5 and 29/10 at the tested instance, because b = 7/10 is real and so the omega and omega^2 modes stay degenerate.
-per_block: checked and not executed - exactly one operator block is instantiated, the Type I_3 factor on C^3 that the note names; no second block, no direct sum and no block index appears anywhere, so no quantity is compared from one block to another.
-lattice_wide: checked and not executed - no lattice, volume or limit is built; by the runner's own docstring it is a brief illustrative diagnostic and NOT a load-bearing component of the foreclosure, whose proof is the one-page representation theory recorded in Section 3 of the source note, so no lattice-wide evaluation is offered or claimed here.
 
 ================================================================
 PASS = 61, FAIL = 0

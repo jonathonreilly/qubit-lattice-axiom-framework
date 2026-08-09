@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
-runner_sha256: d09dd098e2867ed2a1a4e57731628571b20f3230a6eccac2939fdeee4c08f41e
+runner_sha256: de8aeb5c42433c0538420b52db916d07e25941deb3d2d0ffb4d684abae7190a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.74
+elapsed_sec: 1.96
 status: ok
 ----- stdout -----
 ========================================================================
@@ -30,52 +30,40 @@ PART 1: Exact Scalar-Comparison Bridge Data
 PART 2: Theorem Obstruction and Exact Bridge Band
 ========================================================================
 
-  anchored a_u            = 0.778161627337
-  anchored kappa          = 0.956341172638
+  anchored a_u            = 0.778161628656
+  anchored kappa          = 0.956341163278
   bridge lower endpoint   = 0.772011886721
   bridge upper endpoint   = 0.782460796436
   amplitude band width    = 0.010448909715
   relative band width     = 1.343%
-  refit baseline (7/9)    = 0.052752343523
-  anchor baseline sqrt(3/5)= 0.719543630014%
+  refit baseline (7/9)    = 0.052752344050
+  anchor baseline sqrt(3/5)= 0.719543607543%
   [PASS] Atlas note still classifies 1/sqrt(7) as scalar comparison only, not the bright/tensor theorem value  (checked CKM atlas obstruction wording)
   [PASS] Bilinear carrier note still keeps unit leading bright columns with only lower-row delta_A1 dressing  (checked exact carrier-column theorem wording)
-  [PASS] Anchored reduced solve lies inside the exact scalar-comparison bridge band  (a_u = 0.778161627337 in [0.772011886721, 0.782460796436])
+  [PASS] Anchored reduced solve lies inside the exact scalar-comparison bridge band  (a_u = 0.778161628656 in [0.772011886721, 0.782460796436])
   [PASS] Exact scalar-comparison bridge band is narrower than 1.5% of the anchored amplitude  (relative width = 1.343%)
 
 ========================================================================
 PART 3: Continuous Scalar-Comparison Bridge
 ========================================================================
 
-  best refit kappa        = 0.956346849720
-  best refit a_u          = 0.778160827669
-  best refit objective    = 0.052726627183
-  best refit anchor score = 0.851807548435%
+  best refit kappa        = 0.956351495950
+  best refit a_u          = 0.778160173206
+  best refit objective    = 0.052726636368
+  best refit anchor score = 0.851778972074%
 
-  best anchor kappa       = 0.978801612877
-  best anchor a_u         = 0.774997871232
-  best anchor score       = 0.716062333555%
-  best anchor refit obj   = 0.054274774190
+  best anchor kappa       = 0.978801550649
+  best anchor a_u         = 0.774997879998
+  best anchor score       = 0.716062228229%
+  best anchor refit obj   = 0.054274764615
 
-  refit-better kappa window  = [0.953432322722, 0.959066195576]
-  anchor-better kappa window = [0.978225960306, 0.981649863144]
-  anchored kappa             = 0.956341172638
-  [PASS] Continuous scalar bridge beats the 7/9 baseline on the refit axis  (0.052726627183 < 0.052752343523)
-  [PASS] Continuous scalar bridge beats the sqrt(3/5) baseline on the anchored axis  (0.716062333555% < 0.719543630014%)
-  [PASS] Anchored reduced solve lands essentially on the refit-optimal scalar bridge  (|delta kappa| = 5.677082e-06)
-  [PASS] Refit-better and anchor-better scalar-bridge windows are disjoint  (refit window = [0.953432322722, 0.959066195576], anchor window = [0.978225960306, 0.981649863144])
-
-========================================================================
-N5 EXECUTION CERTIFICATE
-========================================================================
-
-per_element: exercised, in the CKM-matrix-element sense and no other -- every objective this bridge minimizes is assembled from separate per-element deviations of |V_us|, |V_cb| and |V_ub| against their atlas entries, together with the Jarlskog invariant, and only then summed; the anchored aggregate and its max are both formed elementwise. No operator or lattice matrix entry is touched anywhere in this file.
-per_site: checked and not executed -- there is no lattice and no site index in this runner. Its entire state is five scalars fed to compute_projector_observables (r_uc, r_ct, the dialed up amplitude, the exact down amplitude and the exact support angle), so a site-resolved reading of the bridge or of the disjoint windows would be an invention rather than a report.
-per_mode: checked and not executed -- nothing here is decomposed into modes: no spectrum is computed, no eigenbasis is formed and no channel is projected out. Generation labels appear only as fixed names attached to already-formed observables, which is bookkeeping carried through the scan rather than anything the execution resolves.
-per_block: exercised only as the coarse up/down split, and reported at that strength -- the up-sector amplitude is the single dialed quantity across the whole kappa family while the down-sector amplitude and the support angle are pinned at their exact values for every evaluation. That asymmetry is real and is what makes the bridge one-parameter, but it is the only block structure this file contains.
-lattice_wide: checked and not executed -- no extended system exists here, so there is neither a finite-N statement nor a limit. The scalar package is closed-form (sqrt(5/6), 1/sqrt(42), sqrt(5/42), 1/sqrt(7), sqrt(6/7)) and the bridge is a one-parameter curve in kappa; volume never enters, and the no-go it reports is that two comparison windows fail to overlap, which is a statement about that curve alone.
-
-  provenance: this runner is optimizer- and root-finder-driven -- differential_evolution with seed=83 then L-BFGS-B inside solve_anchored_surface(), an L-BFGS-B refit inside each evaluate_candidate(), bounded minimize_scalar at xatol=1e-12 over kappa in [sqrt(6/7), 1], a 201-point sign scan over that same interval, and brentq at xtol=rtol=1e-12 with maxiter=200. No converged, optimized or scan-located value is quoted in the certificate above; only grid size, interval, tolerances and the structure of the objective are named.
+  refit-better kappa window  = [0.953432293478, 0.959066224231]
+  anchor-better kappa window = [0.978225881627, 0.981649866377]
+  anchored kappa             = 0.956341163278
+  [PASS] Continuous scalar bridge beats the 7/9 baseline on the refit axis  (0.052726636368 < 0.052752344050)
+  [PASS] Continuous scalar bridge beats the sqrt(3/5) baseline on the anchored axis  (0.716062228229% < 0.719543607543%)
+  [PASS] Anchored reduced solve lands essentially on the refit-optimal scalar bridge  (|delta kappa| = 1.033267e-05)
+  [PASS] Refit-better and anchor-better scalar-bridge windows are disjoint  (refit window = [0.953432293478, 0.959066224231], anchor window = [0.978225881627, 0.981649866377])
 
 ========================================================================
 PART 4: Summary

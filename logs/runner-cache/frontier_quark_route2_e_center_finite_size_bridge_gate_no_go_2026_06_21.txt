@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py
-runner_sha256: 09548d10217bfbb6e6380846df4a7c5bff90a7676584c51c8d86f08949f87b8e
+runner_sha256: e6354cf6b49b6eb3dc9504a257b2317e4859433f7857150ee5d38bb9ba0cfe47
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -56,14 +56,6 @@ PASS: future_positive_route_is_named
 PASS: paired_note_states_parent_remains_open
 PASS: paired_note_names_required_future_inputs
 PASS: paired_note_avoids_status_overclaim
-
-F. N5 execution certificate
-------------------------------------------------------------------------
-per_element: each probe row stands on its own -- the 26 radius samples are exact in-source Fractions, so the N=17 window runs from q_E=-1.1575 at radius 2.00 to q_E=1.0030 at radius 7.20 with its own q_T beside it at every step, and each row is separately compared against 15/8 while adjacent rows are multiplied pairwise to rule out a sign crossing of the target gap.
-per_site: resolved only through the center-versus-shell contrast already folded into the parsed q columns -- this runner reads one (q_T, q_E) pair per box and never addresses an individual site, arm or coordinate, because the seven-site structure lives upstream in the box-size scan whose stored cache is read here rather than recomputed.
-per_mode: both bright channels are carried in parallel at every box and every radius -- the fixed-radius table supplies q_T and q_E for all 8 boxes, the proportional schedule supplies 4 entries in each channel, and the two radius windows supply 13 and 13 paired samples; the channels genuinely differ, since q_T changes sign between N=15 and N=17 under a tolerance-free comparison while q_E is separately shown to stay under 15/8.
-per_block: the finite-size evidence is partitioned into schedule blocks and each block is defeated on its own terms -- the fixed-radius block over 8 boxes, the box-proportional block with a 4-entry tail held within 1/20 of one, the two untuned radius-window blocks at N=17 and N=19 held within 1/25 of one, and finally a 7-way taxonomy of bridge classes in which exactly one entry is an open positive route rather than a miss.
-lattice_wide: executed, and certified here strictly as a finite-N statement -- the largest box reached is N=29 and the longest schedule is 4 entries, so every whole-lattice claim is made at finite volume against named tolerances (2/1000 and 1/1000 at the N=15 anchor, 4/5 and 1/10 for missing the target); no thermodynamic limit is taken or proved, and that absence is the note's own result, that no admissible infinite-volume schedule is certified.
 
 Summary
 ------------------------------------------------------------------------

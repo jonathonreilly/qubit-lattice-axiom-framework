@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_mass_matrix_no_go.py
-runner_sha256: 68fcdf3a6451765d973fc9f94241f98d1ab478d620695e27910558e8a089c5da
+runner_sha256: 9f1dcfd06d37ff045f096da2828a909943ae8e6eeaaf520e18e44a3bc73bdf61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ========================================================================
@@ -26,9 +26,9 @@ PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E
 PART 2: Forced two-value spectrum
 ========================================================================
   [PASS] spectrum matches (+1.00, +0.00)  (got [1.0, 1.0, 1.0])
-  [PASS] spectrum matches (+1.00, +1.00)  (got [1.0000000000000002, 1.0000000000000002, 2.0])
-  [PASS] spectrum matches (+0.50, +2.00)  (got [0.49999999999999994, 0.49999999999999994, 2.5])
-  [PASS] spectrum matches (-1.00, +3.00)  (got [-1.0000000000000004, -1.0, 1.9999999999999998])
+  [PASS] spectrum matches (+1.00, +1.00)  (got [1.0, 1.0000000000000002, 2.0])
+  [PASS] spectrum matches (+0.50, +2.00)  (got [0.4999999999999999, 0.49999999999999994, 2.5])
+  [PASS] spectrum matches (-1.00, +3.00)  (got [-1.0000000000000002, -1.0, 1.9999999999999998])
   [PASS] beta = 0 gives one distinct eigenvalue
   [PASS] beta != 0 gives exactly two distinct eigenvalues  (distinct = 2)
 
@@ -55,16 +55,6 @@ PART 6: Hypothesis comparisons and invariant checks
   [PASS] approximate-symmetry perturbation splits only by leaving exact invariance  (distinct = 3, commutator = 1.414e-06)
   [PASS] equivariant family permits a split background outside pointwise invariance  (distinct = 3)
   [PASS] normalization and unitary-basis changes preserve spectral cardinality  (distinct = 2)
-
-========================================================================
-PART 7: N5 execution certificate (print-only; adds no check and no counter)
-========================================================================
-per_element: resolved by construction over all nine matrix units -- the invariant projector is assembled by pushing each elementary unit E_ij, for i and j in {0,1,2}, through all six permutation operators and averaging, so every entry of End(C^3) is carried individually rather than as an aggregate. The companion orbit count then classifies those same nine entry labels under the S_3 action and returns exactly two classes, diagonal and off-diagonal, which is the entry-level reason the invariant algebra comes out two-dimensional.
-per_site: checked and not executed -- the three basis labels are slots of a supplied abstract permutation representation, and the source note states plainly that no physical generation carrier is identified here. Absent a carrier there is no map from these labels to positions on the qubit lattice, so no site amplitude exists for this file to resolve.
-per_mode: resolved irrep by irrep and then eigenvalue by eigenvalue -- the character route evaluates chi_V = (3, 1, 0) against all three S_3 irreps and returns multiplicities A_1 = 1, A_2 = 0, E = 1, and the spectrum is separately read out as the exact two-value pattern {alpha, alpha, alpha + beta} on four named (alpha, beta) pairs. Distinct-eigenvalue cardinality is counted after rounding to ten decimals, twelve in the perturbation case.
-per_block: resolved as the two-block split V = A_1 direct-sum E -- P_(A_1) = J_3/3 is certified idempotent of rank one, its complement carries the two-dimensional E block, and the commutant dimension is obtained twice by independent routes, the rank of the 9x9 averaging projector and a direct generator-commutator linear solve, both returning two, one free parameter per block. Part 4 repeats the construction after dropping to the Z_2 subgroup {e, (12)} and returns dimension five, exhibiting the jump as a block-count effect.
-lattice_wide: checked and not executed -- no volume, extent, or scaling parameter appears anywhere in this file; the carrier is a fixed C^3 throughout. The blocking reason is the note's own open gate: the physical generation carrier, the physical S_3 action, and pointwise invariance of the physical mass operator are all unestablished, so none of the algebra proved here can be lifted to any lattice-scale statement.
-Determinism: Part 3 draws alpha and beta from a single numpy default_rng seeded with 42 over 100 iterations; every matrix rank is taken at tol=1e-10, and the Part 6 perturbation scale is epsilon=1e-6. This certificate names those counts, seeds, and tolerances only, consumes no random numbers, and quotes no drawn or solver-derived value.
 
 ========================================================================
 TOTAL: PASS=22, FAIL=0

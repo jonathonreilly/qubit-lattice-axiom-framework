@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_cumulant_moment_positivity.py
-runner_sha256: 211312b8ef9f2f222abfc0f66d653b9a0a88296626ab2208c0d98a19b5ba6e0d
+runner_sha256: 48b2aa20913dbe20ef4ea4cc10cdd284f668f777d3242a065c7593cf2eea5f8e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 
@@ -49,15 +49,6 @@ Moment-problem consequence
 [PASS] Stieltjes positive-measure condition fails a fortiori
 [PASS] alternating-sign convention preserves the offending determinant
 [PASS] scope guard: beta=6 value is not asserted
-
-==============================================================================
-N5 execution certificate
-==============================================================================
-per_element: the three Hankel entries are pinned individually as exact rationals before any determinant is formed, d_5 = 1/472392 = 4/18^5, d_6 = 7/5668704 = 7/(3*18^5) and d_7 = 5/17006112 = 5/(9*18^5), and the off-diagonal entry is the single shared d_6, so the element-level content is that no floating-point rounding stands between the coefficients and the sign.
-per_site: checked and not executed — the runner never instantiates a lattice; the d_n arrive as three finished connected coefficients of the plaquette expansion Delta(beta) = sum_{n>=5} d_n beta^n, already summed over sites upstream in the beta6 coefficient lane, so no site-resolved quantity exists here to be certified.
-per_mode: checked and not executed — the mode-resolved object would be the density of a positive measure mu on the real axis whose moments are the d_n, that is the spectral modes of the real-axis continuation; the runner constructs no such decomposition because its entire result is that no mu exists, the necessary Hamburger condition already failing.
-per_block: the test is one principal 2 by 2 block of the infinite Hankel matrix, det [[d_5, d_6], [d_6, d_7]] = -29/32134205039616 < 0, and that same block is then re-examined under two sign-preserving reparametrizations, the geometric integer rescaling m_5 = 4, m_6 = 42, m_7 = 180 giving -1044, and the alternating-sign convention giving back -29/32134205039616.
-lattice_wide: checked and not executed — no volume, no thermodynamic limit, and no lattice observable is evaluated at any point, and the note forbids the corresponding global reading: the foreclosure covers only the positive-measure real-axis continuation family, asserting nothing about P(6), about beta=6 closure, or about non-Stieltjes continuations.
 
 SCORECARD: PASS=17 FAIL=0
 Verdict: the displayed coefficient window is not Hamburger/Stieltjes.

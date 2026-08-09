@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_signed_cancellation_firewall_2026_06_21.py
-runner_sha256: c2758471f332eb74634a8dce8ef65855bd29783257e13b02f16f69df824a394b
+runner_sha256: b7a6b8dcaa535e06335ab1a1642bc42c58c063d195f2b061e9f002a0b3415e2a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 signed-cancellation firewall
@@ -114,13 +114,6 @@ PASS: registered premise JSON is parseable
 PART 7: typed reachability
 PASS: coefficient-positive affine graph has no path to rho_E=21/4 -- path=[]
 PASS: adding signed affine selector creates the conditional target path -- signed_affine_selector -> negative_constant_coefficient -> lambda_9_4 -> rho_E_21_4
-
-PART 8: N5 execution certificate
-per_element: checked -- the coefficient plane is walked sample by sample, not summarized: a and b each range over the 8 exact rationals 0/7 through 7/7, the origin is skipped, and each of the remaining 63 pairs gets its own check that the exact Fraction ratio (3a+b)/(2a+b) satisfies ratio <= 3/2 < 9/4. The 3/2 ceiling is not a scan artifact and a finer grid cannot move it: at b = 0 the ratio is identically w_T/w_E = 3/2 for every a > 0, and at a = 0 it is identically 1, so the nonnegative quadrant is pinned between those two exact endpoints.
-per_site: checked and not executed -- the two finite-star weights w_E = 1/3 and w_T = 1/2 arrive already aggregated over the support, and this runner only divides by them. No individual arm or center site is reconstructed, so nothing site-resolved is computed and no site-level positivity is being claimed.
-per_mode: checked, and the note's whole obstruction is a disagreement between this class and the element class -- evaluated mode by mode the signed target fit looks clean, with strictly positive responses at both weights for all three witnesses (a = 1 gives E = 9/5 and T = 4/5; a = 2 gives 18/5 and 8/5; a = 5/3 gives 3 and 4/3), yet every one of those fits carries b = -6a/5 < 0. Positivity certified per mode and positivity certified per coefficient are simply different statements here, and only the second one blocks the fit.
-per_block: checked -- the firewall is closed as two disjoint rule blocks that are never mixed: the coefficient-positive block, where 3 typed edges plus the 63-sample quadrant yield no path to rho_E_21_4, and the signed block, where 3 further edges produce the explicit four-node path signed_affine_selector -> negative_constant_coefficient -> lambda_9_4 -> rho_E_21_4. Alongside them the 5 authority documents are each closed against their own needle set, one document at a time.
-lattice_wide: checked and not executed -- there is no lattice, no volume and no limit in this runner; the 2D coefficient quadrant it scans is a bounded rational grid, not an asymptotic regime, and taking any limit would not be meaningful for a coefficient sign. The only repository-wide sweep performed is the registered-premise scan confirming that neither audit JSON surface names a signed-cancellation selector, which is bookkeeping about what has been registered rather than a whole-system computation.
 
 PASS=92 FAIL=0 TOTAL=92
 VERDICT: scoped no-go plus conditional support. A signed affine one-pole cancellation can fit the Route-2 endpoint exactly, but every nonzero fit requires a negative coefficient; current coefficient-positive source/readout rules cannot supply it, and pointwise positivity alone is not a signed-selector theorem.

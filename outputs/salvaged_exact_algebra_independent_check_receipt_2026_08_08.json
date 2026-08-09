@@ -1,0 +1,388 @@
+{
+ "checks": [
+  {
+   "name": "reynolds.group_average_equals_the_conformal_projector",
+   "ok": true
+  },
+  {
+   "name": "reynolds.recoil_ledger_is_annihilated_by_the_group_average",
+   "ok": true
+  },
+  {
+   "name": "reynolds.graded_operator_fixes_exactly_the_averaged_out_vectors",
+   "ok": true
+  },
+  {
+   "name": "interp.interpolated_A_B_match_the_definitional_A_B",
+   "ok": true
+  },
+  {
+   "name": "interp.affine_law_holds_at_two_fresh_probe_points",
+   "ok": true
+  },
+  {
+   "name": "interp.ledger_trace_recomputed_componentwise_equals_A",
+   "ok": true
+  },
+  {
+   "name": "character.omega_is_a_primitive_cube_root_of_unity",
+   "ok": true
+  },
+  {
+   "name": "character.multiplicities_over_C_are_1_1_1",
+   "ok": true
+  },
+  {
+   "name": "character.conjugate_characters_fuse_to_the_pair_1_2_over_Q",
+   "ok": true
+  },
+  {
+   "name": "polyid.five_forms_equal_(n-1)/n^2_as_rational_functions",
+   "ok": true
+  },
+  {
+   "name": "polyid.pairwise_family_difference_has_root_set_{3}_on_2_to_200",
+   "ok": true
+  },
+  {
+   "name": "laplacian.pseudoinverse_trace_gives_(N^2-1)/12_for_N_2_to_12",
+   "ok": true
+  },
+  {
+   "name": "laplacian.pseudoinverse_witness_L_Lplus_is_I_minus_J_over_N",
+   "ok": true
+  },
+  {
+   "name": "bivar.step_equals_(1_minus_m_G0)/6_as_a_polynomial_identity",
+   "ok": true
+  },
+  {
+   "name": "bivar.six_step_minus_one_is_minus_m_G0_identically",
+   "ok": true
+  },
+  {
+   "name": "bivar.on_G0_positive_step_one_sixth_iff_m_zero",
+   "ok": true
+  },
+  {
+   "name": "circulant.equal_diagonal_and_trace_route_gives_(n-1)/n_over_n^2",
+   "ok": true
+  },
+  {
+   "name": "circulant.ratio_at_n_3_is_2/27",
+   "ok": true
+  },
+  {
+   "name": "edge_removal.matches_the_neighbour_pair_formula_on_all_1024",
+   "ok": true
+  },
+  {
+   "name": "edge_removal.matches_on_200_seeded_8_vertex_graphs",
+   "ok": true
+  },
+  {
+   "name": "edge_removal.six_vertex_census_recomputed_independently",
+   "ok": true
+  },
+  {
+   "name": "receipt.primary_receipt_file_exists",
+   "ok": true
+  },
+  {
+   "name": "receipt.primary_digest_recomputes",
+   "ok": true
+  },
+  {
+   "name": "receipt.full_payload_matches_the_canonical_expected_record",
+   "ok": true
+  },
+  {
+   "name": "tamper.unrehashed_tamper_breaks_the_digest",
+   "ok": true
+  },
+  {
+   "name": "tamper.rehashed_semantic_tamper_is_rejected",
+   "ok": true
+  },
+  {
+   "name": "gate.check_count_matches_the_declared_census",
+   "ok": true
+  }
+ ],
+ "date": "2026-08-08",
+ "expected_check_count": 27,
+ "fail": 0,
+ "inputs": [
+  "outputs/salvaged_exact_algebra_receipt_2026_08_08.json"
+ ],
+ "pass": 27,
+ "payload_sha256": "b375af70aea52ed0cb8608d4f3ba6b547e6e18acd48c44b3a48a76b6826450c0",
+ "role": "salvage independent check: every unit recomputed by a different exact route; primary receipt verified fail-closed",
+ "script": "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+ "units": {
+  "forms_by_polynomials": {
+   "family_values_at_N_3": {
+    "(N-1)(N-2)/(3N)": "2/9",
+    "(N-1)/N^2": "2/9",
+    "(N^2-1)/(12N)": "2/9"
+   },
+   "family_values_at_N_4": {
+    "(N-1)(N-2)/(3N)": "1/2",
+    "(N-1)/N^2": "3/16",
+    "(N^2-1)/(12N)": "5/16"
+   },
+   "fixed_locus_rows": [
+    {
+     "N": 2,
+     "matches": true,
+     "sum": "1/4"
+    },
+    {
+     "N": 3,
+     "matches": true,
+     "sum": "2/3"
+    },
+    {
+     "N": 4,
+     "matches": true,
+     "sum": "5/4"
+    },
+    {
+     "N": 5,
+     "matches": true,
+     "sum": "2/1"
+    },
+    {
+     "N": 6,
+     "matches": true,
+     "sum": "35/12"
+    },
+    {
+     "N": 7,
+     "matches": true,
+     "sum": "4/1"
+    },
+    {
+     "N": 8,
+     "matches": true,
+     "sum": "21/4"
+    },
+    {
+     "N": 9,
+     "matches": true,
+     "sum": "20/3"
+    },
+    {
+     "N": 10,
+     "matches": true,
+     "sum": "33/4"
+    },
+    {
+     "N": 11,
+     "matches": true,
+     "sum": "10/1"
+    },
+    {
+     "N": 12,
+     "matches": true,
+     "sum": "143/12"
+    }
+   ],
+   "fixed_locus_rows_primary_schema": [
+    {
+     "N": 2,
+     "matches_(N^2-1)/12": true,
+     "normalised": "1/8",
+     "normalised_matches_family": true,
+     "sum": "1/4"
+    },
+    {
+     "N": 3,
+     "matches_(N^2-1)/12": true,
+     "normalised": "2/9",
+     "normalised_matches_family": true,
+     "sum": "2/3"
+    },
+    {
+     "N": 4,
+     "matches_(N^2-1)/12": true,
+     "normalised": "5/16",
+     "normalised_matches_family": true,
+     "sum": "5/4"
+    },
+    {
+     "N": 5,
+     "matches_(N^2-1)/12": true,
+     "normalised": "2/5",
+     "normalised_matches_family": true,
+     "sum": "2/1"
+    },
+    {
+     "N": 6,
+     "matches_(N^2-1)/12": true,
+     "normalised": "35/72",
+     "normalised_matches_family": true,
+     "sum": "35/12"
+    },
+    {
+     "N": 7,
+     "matches_(N^2-1)/12": true,
+     "normalised": "4/7",
+     "normalised_matches_family": true,
+     "sum": "4/1"
+    },
+    {
+     "N": 8,
+     "matches_(N^2-1)/12": true,
+     "normalised": "21/32",
+     "normalised_matches_family": true,
+     "sum": "21/4"
+    },
+    {
+     "N": 9,
+     "matches_(N^2-1)/12": true,
+     "normalised": "20/27",
+     "normalised_matches_family": true,
+     "sum": "20/3"
+    },
+    {
+     "N": 10,
+     "matches_(N^2-1)/12": true,
+     "normalised": "33/40",
+     "normalised_matches_family": true,
+     "sum": "33/4"
+    },
+    {
+     "N": 11,
+     "matches_(N^2-1)/12": true,
+     "normalised": "10/11",
+     "normalised_matches_family": true,
+     "sum": "10/1"
+    },
+    {
+     "N": 12,
+     "matches_(N^2-1)/12": true,
+     "normalised": "143/144",
+     "normalised_matches_family": true,
+     "sum": "143/12"
+    }
+   ]
+  },
+  "grading_by_interpolation": {
+   "configurations": 1296,
+   "fresh_probes": [
+    "5/7",
+    "-13/9"
+   ]
+  },
+  "module_by_characters": {
+   "complement_char_poly": "x^2 + x + 1",
+   "dimension_pair_over_Q": [
+    1,
+    2
+   ],
+   "discriminant": "-3/1",
+   "multiplicities_over_C": [
+    1,
+    1,
+    1
+   ]
+  },
+  "origin_by_elimination": {
+   "identity": "G0 - G1 = (1 - m*G0)/6"
+  },
+  "pointer_by_edge_removal": {
+   "eight_vertex_seeded": 200,
+   "eight_vertex_with_cycle_through_pointer": 138,
+   "five_vertex_graphs": 1024,
+   "five_vertex_with_cycle_through_pointer": 591,
+   "six_vertex_graphs": 32768,
+   "six_vertex_with_cycle_through_pointer": 24838
+  },
+  "primary_receipt": {
+   "comparison": "full payload minus self-digest, wholesale",
+   "primary_digest": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+   "primary_fail": 0,
+   "primary_pass": 31
+  },
+  "split_by_reynolds": {
+   "ledger_rows_recomputed": [
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -6
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -5
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -4
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -3
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -2
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -1
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 0
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 1
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 2
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 3
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 4
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 5
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 6
+    }
+   ],
+   "probe_count": 125
+  },
+  "witness_by_trace": {
+   "n_range": [
+    2,
+    50
+   ],
+   "rival_value_at_3": "2/9",
+   "value_at_3": "2/27"
+  }
+ },
+ "verdict": "PASS"
+}

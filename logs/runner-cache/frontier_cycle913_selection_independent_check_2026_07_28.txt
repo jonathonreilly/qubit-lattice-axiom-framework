@@ -1,26 +1,62 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle913_selection_independent_check_2026_07_28.py
-runner_sha256: e809e64e27db95200152d39a339ee86e48e125837021388e8f4743b560935f03
-input_fingerprint_sha256: d2ee4ef3f9ed3af1618ef1e0696c62ae9bd1b1cb4a42a3e39f262f65290ca7da
-timeout_sec: 300
+runner_sha256: b076183107c50ae097db0567a435de808178a088f13fb34f92f4bf0201a6ea87
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 52.981
 status: ok
 ----- stdout -----
+CYCLE 913 INDEPENDENT CHECK -- SPECIFIED TO REFUTE
 ==============================================================================
-CYCLE 913 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+  [PASS] pins_independently_verified
+  [PASS] no_blocklisted_module_imported
+  [PASS] substrate_rebuilt
+  [PASS] D1_lock_set_matches_the_primary
+  [PASS] D1_lock_set_matches_cycle911
+  [PASS] D1_lock_boundaries_match_the_primary
+  [PASS] D1_state_readout_selection_matches_the_primary
+  [PASS] D1_split_matches_the_primary
+  [PASS] D1_endpoint_wires_are_never_gate_targets
+  [PASS] D1_semantic_replay_agrees
+  [PASS] D1_own_rearm_trajectory_match_agrees
+  [PASS] D2_ladder_covers_every_declared_radius
+  [PASS] D2_FINGERPRINT_ATTACK_grouping_agrees_under_a_different_encoding
+  [PASS] D2_third_encoding_agrees
+  [PASS] D2_selection_is_NOT_a_function_of_nearest_neighbour_conditions
+  [PASS] D2_witness_pair_reproduced
+  [PASS] D3_single_wire_sweep_reproduced
+  [PASS] D3_no_smaller_context_exists
+  [PASS] D3_MINIMALITY_ATTACK_no_non_site_context_of_size_1_or_2_determines
+  [PASS] D3_widest_non_site_context_does_not_determine
+  [PASS] D3_setup_singletons_agree_with_the_primary
+  [PASS] D4_group_order_rebuilt
+  [PASS] D4_CLASSIFIED_RULE_ATTACK_orbit_counts_agree
+  [PASS] D4_note_byte_quotes_present_and_matched
+  [PASS] D4_landed_selection_is_not_in_the_classified_space
+  [PASS] D5_translation_covariance_reproduced
+  [PASS] D5_content_witness_reproduced
+  [PASS] D5_selection_is_not_content_determined
+  [PASS] D5_context_variation_reproduced
+  [PASS] D6_primary_carries_no_large_hardcoded_table
+  [PASS] D6_primary_reads_selection_from_the_state_not_a_constant
+
+  independent reconstruction:
+    own scan (38.38s, lane permutation seed 0x913): 164 lock points
+    semantic replays from tick 0: 146/164
+    own selection split: [0, 1] -> 80, [1, 0] -> 84
+    own single-wire determining set: [1, 6]
+    own classified rows: k=2 10/10 classes 3 const=False; k=3 57/56 classes 6 const=False; k=4 240/220 classes 7 const=False
+
+  TEETH (8/8)
+    [x] tampered_pin_detected
+    [x] dropped_lock_point_detected
+    [x] hardcoded_selection_detected
+    [x] determinism_verdict_is_data_driven_not_leaked
+    [x] skipped_fingerprint_radius_detected
+    [x] planted_nonlocal_selection_not_missed
+    [x] minimality_hunt_finds_a_planted_determining_wire
+    [x] tampered_receipt_verdict_detected
+
 ==============================================================================
-
-  PASS  R0_PINNED_EVIDENCE                 scripts/frontier_cycle913_selection_function_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle913_selection_function_2026_07_28.txt:MATCH
-  PASS  R0b_CLAIMS_PARSED                  claims_line_found=True
-  PASS  R1_CONSISTENCY_INDEPENDENT         164-84=80, 164*2=328, 67-51=16, 30//2=15; primary_split=[84, 80]
-  PASS  R2_NONFUNCTIONALITY_INDEPENDENT    witness_refutes_functionality=True planted_functional_ok=True
-  PASS  R3_RECORDED_RATIO_ECHO             primary_recorded_ratio=[0, 34166] (stipulated history only)
-  PASS  R4_OVERCLAIM_SCAN                  hits=none
-  PASS  R5_RUNTIME                         elapsed_s=0.0 budget_s=300
-
-TOTAL: PASS=7 FAIL=0
+PASS=31 FAIL=0  teeth 8/8  52.463s
 VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-
------ stderr -----
-

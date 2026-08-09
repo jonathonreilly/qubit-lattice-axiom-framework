@@ -1,10 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
-runner_sha256: 3f77e6cfcf34a20ddaa7b0018e082540c07a113d762357e19458877b180729f4
-input_fingerprint_sha256: f127e37fff802dbe238d865e1e7ab0b98c38ef73417745c289f93e79cb8db02b
+runner_sha256: 4a404c4e0750948a5f0542e6ac2c8d50536b44d5f4acb024155169a7851a5b28
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 
@@ -14,7 +13,7 @@ A - sources and pins
 [PASS] paired note exists -- ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md
 [PASS] Dirac-row dependency exists -- STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md
 [PASS] true dependency pins are present
-[PASS] ledger row shard found for the dependency (sharded canonical row, not the gitignored monolithic ledger)
+[PASS] ledger row found for the dependency
 ledger row live audit fields (informational; the audit lane owns them): effective_status='unaudited', claim_scope=null
 [PASS] dependency claim-scope block located in the dependency note
 [PASS] note carries exactly three premise scope quotes
@@ -62,9 +61,9 @@ D - blindness transfer and discriminator
 [PASS] Rt^2 equals separately constructed compensated R^2 lift
 [PASS] Rt^2 R^{-2} is diagonal +-1
 [PASS] K1 heat trace blind at N=4, t=0.3 -- diff=0.000e+00
-[PASS] K1 heat trace blind at N=4, t=1.0 -- diff=0.000e+00
+[PASS] K1 heat trace blind at N=4, t=1.0 -- diff=7.105e-15
 [PASS] K0 heat trace blind at N=4, t=0.3 -- diff=1.776e-15
-[PASS] K0 heat trace blind at N=4, t=1.0 -- diff=0.000e+00
+[PASS] K0 heat trace blind at N=4, t=1.0 -- diff=5.684e-14
 [PASS] single-edge complex phase breaks the original trace blindness test -- diff=6.246e+00
 
 ========================================================================================
@@ -112,16 +111,7 @@ E - note discipline
 [PASS] source-instruction phrase absent: runner greps
 [PASS] source-instruction phrase absent: anti-fabrication
 
-========================================================================================
-F - N5 execution certificate: what this runner resolves
-========================================================================================
-per_element: checked — the compensated lift is validated matrix element by matrix element: every off-diagonal entry is required to have ratio exactly +-1, the covariance residual Rt H Rt^T - H is exactly the zero integer array, and phasing the single entry (1,5) by exp(1.6i) is what breaks the blindness (defect diff 6.246e+00).
-per_site: checked — the sign frame is an explicit +-1 value carried at every lattice site: the spanning-tree solve assigns w over all 4^3 = 64 and 6^3 = 216 sites, rejects any run leaving a site unassigned, and then re-validates every off-tree edge against the per-site values.
-per_mode: checked and not executed — the heat traces are built from a full eigendecomposition, but only the aggregate Tr(exp(-tH) U) is compared at t = 0.3 and t = 1.0; no eigenvalue and no eigenvector is compared mode by mode, so nothing here is certified at single-mode resolution.
-per_block: checked — three lattice blocks are built and closed independently: K1 at N=4 (64 sites, 192 edges) and K1 at N=6 (216 sites, 648 edges), plus K0 at N=4 where the lift is the bare rotation; each gives an exactly zero covariance residual and a compensated cube equal to +I.
-lattice_wide: checked — the quantities actually compared are whole-lattice functionals: on the full periodic 4^3 3-torus the K1 heat traces against Rt and Rt^2 agree to 0.000e+00 and the K0 traces likewise agree below 1e-09. Every heat trace in this runner is taken at N=4 only; the N=6 block is closed on the exact covariance-residual and cube identities, not on any heat trace, and no large-N or continuum limit is executed.
-
-Runtime: 0.06 s
+Runtime: 0.13 s
 TOTAL: PASS=83 FAIL=0
 
 ----- stderr -----

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py
-runner_sha256: 7b045c85e8f34ea7b37f2bed32291c743d1a05b20b1b22c05833777bbd551935
+runner_sha256: 8283107827a8b3c9e25882b994448cc81ae2ca02b951080f009084e58784aafd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 Route-2 source-excess current-bank gap
@@ -79,13 +79,6 @@ PASS: note avoids overclaim marker: branch-local status-promotion phrase
 PASS: note avoids overclaim marker: future-retention phrase
 PASS: note avoids overclaim marker: promotion-to-retention phrase
 PASS: note avoids overclaim marker: no-future-theorem phrase
-
-PART 6: N5 execution certificate
-per_element: checked -- the bank is interrogated marker by marker rather than in bulk. 19 required anchors are each located in their own named file and each of the 9 target markers is separately confirmed absent, and the arithmetic side is likewise single-valued at every step: the one-power route returns rho_E = 3/2, the target stands at 21/4, and their quotient is the tilt 7/2 that names the whole gap.
-per_site: checked and not executed -- nothing in this runner is positional. The bank scan reads files, the arithmetic manipulates ratios of already-contracted endpoint quantities, and the typed graph moves between symbol names, so at no point does a site index exist that could carry a result.
-per_mode: checked -- the E and T1 mode weights do real work here, since the one-power route is built directly from them: w_E = 1/3 and w_T = 1/2 give one inverse factor and hence rho_E = 3/2. What the certificate must add is that this is exactly where the mode route stops. The residual factor 7/2 separating that result from the target is not produced by any weight, ratio or power of the two modes in this file; it is defined as the quotient and then shown to be unsourced.
-per_block: checked, and the two halves of the bank argument are deliberately not symmetric. The presence half is closed block by block, each of the 7 files carrying its own anchor set and failing on its own; the absence half is evaluated against the concatenation of all seven, so a missing marker is certified bank-wide but is not attributed to any individual file. That asymmetry is a real limit of the executed evidence and is recorded here rather than smoothed over.
-lattice_wide: checked and not executed -- no lattice, no volume and no asymptotic regime is present, so the class has no referent in this runner. The one genuinely bank-wide object is the absence sweep, and its nature should be stated precisely: it is lexical, asserting that strings such as the tilt value and the source-map symbols do not occur across the seven files. That establishes the bank does not currently state the primitive; it does not establish that no such primitive could be stated.
 
 TOTAL: PASS=60, FAIL=0
 VERDICT: bounded current-bank no-go. The normalized source-excess target is b_E/a_E=7/2, but the named current Route-2 source/readout bank has no typed primitive deriving that target.

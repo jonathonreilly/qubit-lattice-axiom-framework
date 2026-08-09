@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py
-runner_sha256: a84f9511993d1cbe8128b2f613ff9d2a4189008281fbcbfc7d28073b1c9893d8
+runner_sha256: 53123283d40890d66f91eaa21839b8471636c343a4ea79e21a31a767722a863c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 Route-2 positive source-functional cone no-go
@@ -52,13 +52,6 @@ PASS: Record/color route says count is not weight -- RCONN_KAPPA_EW_REGISTER_NOT
 PART 7: typed reachability
 PASS: current p>=-1 cone has no path to rho_E=21/4 -- path=[]
 PASS: adding explicit p=-2 density-square primitive creates the target path -- oh_projector_weights -> two_inverse_density_square -> lambda_9_4 -> q_E_15_8 -> rho_E_21_4
-
-PART 8: N5 execution certificate
-per_element: individual exponents are the elements here -- r^p is formed exactly at r=2/3 for each p in the tested ranges, and the exhaustive scan additionally records which coefficient vector attains each bound, finding both extrema at pure single monomials rather than at any mixture; that is the convex-average mechanism made visible one coefficient at a time, not an assumed inequality.
-per_site: checked and not executed -- this file never mentions a site, an arm or a star anywhere; its whole vocabulary is exponents and nonnegative coefficients over two channel weights, so there is no site index available to resolve and nothing site-shaped is computed at any point in the run.
-per_mode: the two modes enter through exactly one number and no more -- the ratio r=w_E/w_T=2/3 carries all mode information in this file, every bound is a statement about powers of that single ratio, and the endpoint consequences q_E<=5/4, rho_E<=3/2 and c_TE=-4/3 at the upper edge follow from it with the granted q_T=5/6.
-per_block: three exponent cones are compared as blocks -- p>=0 capped at 1, p>=-1 capped at 3/2, and p>=-2 first reaching 9/4 -- each backed by an exhaustive nonnegative coefficient sweep at coefficients 0..3, while a deliberately mixed block with exponents -1, 0, 1 and unit coefficients lands at 26/21, strictly inside the one-inverse cap; the caps are computed, the memberships are inventory.
-lattice_wide: checked and not executed -- the only globally shaped object in the file is the typed reachability graph, a hand-declared set of 3 current edges and 4 missing-primitive edges whose closure is searched rather than derived, so it certifies routing between declared nodes and nothing about any extended system; no volume, sum or limit occurs anywhere in this runner.
 
 PASS=30 FAIL=0 TOTAL=30
 VERDICT: scoped no-go. Positive finite channel-local source/readout cones with at most one inverse channel-volume power cannot reach the Route-2 endpoint lambda=9/4; the remaining live escapes require an explicit p=-2 density-square primitive, signed cancellation, or a future nonlinear observable outside this class.

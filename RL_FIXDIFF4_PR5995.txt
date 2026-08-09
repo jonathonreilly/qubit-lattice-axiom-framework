@@ -1,0 +1,16 @@
+diff --git a/docs/repo/ACTIVE_REVIEW_QUEUE.md b/docs/repo/ACTIVE_REVIEW_QUEUE.md
+index 0c2cd59737..d512dcb18b 100644
+--- a/docs/repo/ACTIVE_REVIEW_QUEUE.md
++++ b/docs/repo/ACTIVE_REVIEW_QUEUE.md
+@@ -42,8 +42,9 @@ Current science/open-lane follow-ups:
+   `science_changed:dependency_policy_epoch`). The governed exact-hash
+   gate on `DEPENDENCY_POLICY_SOURCES` therefore reports an epoch
+   mismatch against the registry's current bytes on `main`.
+-  Disposition: needs a dedicated owner-approved policy pass reconciling
+-  the exact-hash gate with registry evolution (for example separating
++  Disposition: `science-needed`; owner decision required — a dedicated
++  policy pass must reconcile the exact-hash epoch gate with helper-registry
++  evolution (do not refresh the epoch ad hoc: ~860-891 legacy audits reset)
+   claim-scoped helper registration from the governed
+   dependency-extraction source, or adding the reviewed machine-readable
+   equivalence/impact record the review-loop guard requires).

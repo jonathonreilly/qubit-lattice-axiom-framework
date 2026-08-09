@@ -1,30 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_doped_flux_response_alternation_fate_2026_06_12.py
-runner_sha256: 310f20d3b8ae16b802bfee086976882157668d769e9236ea306afb926260c882
+runner_sha256: 871b1a9b28a08e5f1835b0bead5b8b6da125d55f27680b8301d98c51fdf03bd1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 SCOPE: abelian U(1) flux, free rings, finite T, mu_ch grid; the alternation-fate table is the datum; NOT claimed: b3, non-abelian, gauge self-energy (named gap), thermodynamic-limit asymptotics, d=3. (X3-import) used nowhere.
 
 X2b THE TABLE: exact Omega_second(0)
-mu_ch=0.25 m=0.0 T=0.3 | N=8: -1.8648822116080377e-02 | N=10: +5.3923179419285566e-03 | N=12: -1.0018206927143239e-03 | N=14: -2.0567262938170350e-05 | N=16: +1.8813176946275850e-04
-mu_ch=0.25 m=0.0 T=0.6 | N=8: -2.1150269140217254e-03 | N=10: +3.2205895056568873e-04 | N=12: -4.4813616947046719e-05 | N=14: +5.2815979159903659e-06 | N=16: -3.8629744646828668e-07
-mu_ch=0.25 m=0.4 T=0.3 | N=8: -1.5883597301198565e-02 | N=10: +4.5608870076232350e-03 | N=12: -1.0576209708531223e-03 | N=14: +1.5846477935756859e-04 | N=16: +3.5695508534057396e-05
-mu_ch=0.25 m=0.4 T=0.6 | N=8: -1.9169462181107544e-03 | N=10: +2.8783295974755402e-04 | N=12: -3.9976360279109224e-05 | N=14: +4.8495448157978571e-06 | N=16: -4.2409462414072507e-07
-mu_ch=0.50 m=0.0 T=0.3 | N=8: +8.1028542633380385e-03 | N=10: -7.2316736962127412e-03 | N=12: +4.0406415630701853e-03 | N=14: -1.7521168600193246e-03 | N=16: +6.0612287807321197e-04
-mu_ch=0.50 m=0.0 T=0.6 | N=8: -3.0869645131303969e-04 | N=10: -1.1609529482291964e-04 | N=12: +4.9984526651905559e-05 | N=14: -1.3162575831060508e-05 | N=16: +2.8241193271161258e-06
-mu_ch=0.50 m=0.4 T=0.3 | N=8: +3.1523778619759468e-03 | N=10: -4.1739381287059160e-03 | N=12: +2.5476086321182395e-03 | N=14: -1.1503755713464583e-03 | N=16: +4.2697761032692294e-04
-mu_ch=0.50 m=0.4 T=0.6 | N=8: -3.7966871617187148e-04 | N=10: -7.8928682966508679e-05 | N=12: +3.8334921863572569e-05 | N=14: -1.0268864295857882e-05 | N=16: +2.2124175883125874e-06
-mu_ch=1.00 m=0.0 T=0.3 | N=8: +1.8104416333257489e-02 | N=10: -8.9847732824627907e-04 | N=12: -2.0144513803522987e-03 | N=14: +1.0245546787069140e-03 | N=16: -1.8707780655311673e-04
-mu_ch=1.00 m=0.0 T=0.6 | N=8: +1.9274570610889746e-03 | N=10: -3.0446417315657670e-04 | N=12: +2.2032559661051832e-05 | N=14: +3.1576280211560726e-06 | N=16: -1.4422053103146926e-06
-mu_ch=1.00 m=0.4 T=0.3 | N=8: +1.7473475559122903e-02 | N=10: -2.3393479463506561e-03 | N=12: -1.1484042905348102e-03 | N=14: +8.2668833551431675e-04 | N=16: -2.3355049373585679e-04
-mu_ch=1.00 m=0.4 T=0.6 | N=8: +1.7405330072685077e-03 | N=10: -2.8676631985875833e-04 | N=12: +2.4579990019348019e-05 | N=14: +1.6991177801441160e-06 | N=16: -1.1136027754307665e-06
-mu_ch=1.50 m=0.0 T=0.3 | N=8: -8.5741143059570868e-03 | N=10: +2.8769012208510886e-03 | N=12: +5.1903399409034684e-04 | N=14: -3.4305382487088629e-04 | N=16: -1.1719448764456464e-05
-mu_ch=1.50 m=0.0 T=0.6 | N=8: +5.5976765980311760e-04 | N=10: +1.0545616154616910e-04 | N=12: -2.8229863975631764e-05 | N=14: +1.7502782095682456e-06 | N=16: +3.8540629248434710e-07
-mu_ch=1.50 m=0.4 T=0.3 | N=8: -6.7459858915566023e-03 | N=10: +3.1660852639120163e-03 | N=12: +2.1821504612858783e-04 | N=14: -3.3876723847550694e-04 | N=16: +2.6767839367027729e-05
-mu_ch=1.50 m=0.4 T=0.6 | N=8: +6.2121440296451780e-04 | N=10: +8.3830557289533980e-05 | N=12: -2.6448195080273212e-05 | N=14: +2.1223828342194218e-06 | N=16: +2.6863492284465162e-07
+mu_ch=0.25 m=0.0 T=0.3 | N=8: -1.8648822116080460e-02 | N=10: +5.3923179419285913e-03 | N=12: -1.0018206927142753e-03 | N=14: -2.0567262938163411e-05 | N=16: +1.8813176946267524e-04
+mu_ch=0.25 m=0.0 T=0.6 | N=8: -2.1150269140217254e-03 | N=10: +3.2205895056573730e-04 | N=12: -4.4813616947053658e-05 | N=14: +5.2815979159764881e-06 | N=16: -3.8629744652379783e-07
+mu_ch=0.25 m=0.4 T=0.3 | N=8: -1.5883597301198482e-02 | N=10: +4.5608870076232974e-03 | N=12: -1.0576209708531015e-03 | N=14: +1.5846477935755471e-04 | N=16: +3.5695508534078213e-05
+mu_ch=0.25 m=0.4 T=0.6 | N=8: -1.9169462181107544e-03 | N=10: +2.8783295974759565e-04 | N=12: -3.9976360279081469e-05 | N=14: +4.8495448157770404e-06 | N=16: -4.2409462414072507e-07
+mu_ch=0.50 m=0.0 T=0.3 | N=8: +8.1028542633379552e-03 | N=10: -7.2316736962127481e-03 | N=12: +4.0406415630702269e-03 | N=14: -1.7521168600192483e-03 | N=16: +6.0612287807310788e-04
+mu_ch=0.50 m=0.0 T=0.6 | N=8: -3.0869645131302581e-04 | N=10: -1.1609529482289882e-04 | N=12: +4.9984526651905559e-05 | N=14: -1.3162575831060508e-05 | N=16: +2.8241193270397980e-06
+mu_ch=0.50 m=0.4 T=0.3 | N=8: +3.1523778619759746e-03 | N=10: -4.1739381287058883e-03 | N=12: +2.5476086321182118e-03 | N=14: -1.1503755713464722e-03 | N=16: +4.2697761032695764e-04
+mu_ch=0.50 m=0.4 T=0.6 | N=8: -3.7966871617185066e-04 | N=10: -7.8928682966460106e-05 | N=12: +3.8334921863593385e-05 | N=14: -1.0268864295871760e-05 | N=16: +2.2124175883229957e-06
+mu_ch=1.00 m=0.0 T=0.3 | N=8: +1.8104416333257489e-02 | N=10: -8.9847732824629295e-04 | N=12: -2.0144513803523056e-03 | N=14: +1.0245546787069348e-03 | N=16: -1.8707780655324163e-04
+mu_ch=1.00 m=0.0 T=0.6 | N=8: +1.9274570610889816e-03 | N=10: -3.0446417315656282e-04 | N=12: +2.2032559661017137e-05 | N=14: +3.1576280211699503e-06 | N=16: -1.4422053103944898e-06
+mu_ch=1.00 m=0.4 T=0.3 | N=8: +1.7473475559122903e-02 | N=10: -2.3393479463504965e-03 | N=12: -1.1484042905348171e-03 | N=14: +8.2668833551427512e-04 | N=16: -2.3355049373587067e-04
+mu_ch=1.00 m=0.4 T=0.6 | N=8: +1.7405330072684869e-03 | N=10: -2.8676631985868201e-04 | N=12: +2.4579990019354958e-05 | N=14: +1.6991177801475854e-06 | N=16: -1.1136027754307665e-06
+mu_ch=1.50 m=0.0 T=0.3 | N=8: -8.5741143059570243e-03 | N=10: +2.8769012208510886e-03 | N=12: +5.1903399409027398e-04 | N=14: -3.4305382487091057e-04 | N=16: -1.1719448764543200e-05
+mu_ch=1.50 m=0.0 T=0.6 | N=8: +5.5976765980314536e-04 | N=10: +1.0545616154618298e-04 | N=12: -2.8229863975662989e-05 | N=14: +1.7502782095647762e-06 | N=16: +3.8540629241495816e-07
+mu_ch=1.50 m=0.4 T=0.3 | N=8: -6.7459858915566925e-03 | N=10: +3.1660852639121412e-03 | N=12: +2.1821504612860865e-04 | N=14: -3.3876723847548959e-04 | N=16: +2.6767839366993035e-05
+mu_ch=1.50 m=0.4 T=0.6 | N=8: +6.2121440296445535e-04 | N=10: +8.3830557289596430e-05 | N=12: -2.6448195080290560e-05 | N=14: +2.1223828342263606e-06 | N=16: +2.6863492282383494e-07
 
 X2c ALTERNATION FATE: full tested grid
 m=0.0 T=0.3 mu_ch=0.25 signs=-+--+ classification=mixed-nonalternating values=[-1.864882e-02, +5.392318e-03, -1.001821e-03, -2.056726e-05, +1.881318e-04]
@@ -45,8 +45,8 @@ m=0.4 T=0.6 mu_ch=1.00 signs=+-++- classification=mixed-nonalternating values=[+
 m=0.4 T=0.6 mu_ch=1.50 signs=++-++ classification=mixed-nonalternating values=[+6.212144e-04, +8.383056e-05, -2.644820e-05, +2.122383e-06, +2.686349e-07]
 
 X2d MAGNITUDE TREND: mu_ch=0.25: mean_abs=4.339253e-03, max_abs=1.588360e-02; mu_ch=0.50: mean_abs=2.290256e-03, max_abs=4.173938e-03; mu_ch=1.00: mean_abs=4.404293e-03, max_abs=1.747348e-02; mu_ch=1.50: mean_abs=2.099164e-03, max_abs=6.745986e-03
-[PASS] X2a analytic-vs-FD N=8 m=0.4 T=0.3 mu_ch=0.5: analytic=+3.1523778619759468e-03, fd=+3.1523761379048665e-03, rel=5.469e-07, gate rel<1e-4
-[PASS] X2a analytic-vs-FD N=10 m=0.4 T=0.3 mu_ch=1.0: analytic=-2.3393479463506561e-03, fd=-2.3393447179387294e-03, rel=1.380e-06, gate rel<1e-4
+[PASS] X2a analytic-vs-FD N=8 m=0.4 T=0.3 mu_ch=0.5: analytic=+3.1523778619759746e-03, fd=+3.1523796906185453e-03, rel=5.801e-07, gate rel<1e-4
+[PASS] X2a analytic-vs-FD N=10 m=0.4 T=0.3 mu_ch=1.0: analytic=-2.3393479463504965e-03, fd=-2.3393447179387294e-03, rel=1.380e-06, gate rel<1e-4
 [PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=0.25: observed signs=-+--+, classification=mixed-nonalternating; expected signs=-+--+, classification=mixed-nonalternating
 [PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=0.50: observed signs=+-+-+, classification=sign-alternating; expected signs=+-+-+, classification=sign-alternating
 [PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=1.00: observed signs=+--+-, classification=mixed-nonalternating; expected signs=+--+-, classification=mixed-nonalternating
@@ -64,18 +64,11 @@ X2d MAGNITUDE TREND: mu_ch=0.25: mean_abs=4.339253e-03, max_abs=1.588360e-02; mu
 [PASS] X2c alternation fate m=0.4 T=0.6 mu_ch=1.00: observed signs=+-++-, classification=mixed-nonalternating; expected signs=+-++-, classification=mixed-nonalternating
 [PASS] X2c alternation fate m=0.4 T=0.6 mu_ch=1.50: observed signs=++-++, classification=mixed-nonalternating; expected signs=++-++, classification=mixed-nonalternating
 [PASS] X2d no uniform-sign N-sequence on full tested grid: no (m,T,mu_ch) in the tested grid has a uniform N-sequence; mu_ch=0.25: mean_abs=4.339253e-03, max_abs=1.588360e-02; mu_ch=0.50: mean_abs=2.290256e-03, max_abs=4.173938e-03; mu_ch=1.00: mean_abs=4.404293e-03, max_abs=1.747348e-02; mu_ch=1.50: mean_abs=2.099164e-03, max_abs=6.745986e-03
-[PASS] X2e particle-hole relation Omega_second(mu_ch)=Omega_second(-mu_ch): max_abs_diff over table grid=1.249e-16, gate <1e-10
-[PASS] X2f gauge invariance at mu_ch=0.5: max_abs_diff uniform-vs-boundary gauge=6.106e-16, gate <1e-10
-[PASS] X2f T=50 kills the response: max_abs Omega_second over N,m,mu_ch grid at T=50 is 5.540e-16, gate <1e-12
-[PASS] X2f mu_ch=0 cross-reference zero-doping predecessor value, N=8 m=0.4 T=0.3 mu_ch=0: observed=-2.4525291422948195e-02, reference=-2.4525291422948042e-02, abs_diff=1.527e-16, gate <1e-10
-[PASS] X2f mu_ch=0 cross-reference zero-doping predecessor value, N=10 m=0.4 T=0.3 mu_ch=0: observed=+8.6569530669922679e-03, reference=+8.6569530669922956e-03, abs_diff=2.776e-17, gate <1e-10
-
-X2g N5 EXECUTION CERTIFICATE: what this runner resolves
-per_element: checked — the exact second derivative is assembled from individual matrix elements in the energy eigenbasis, never from a closed-form aggregate: the Hellmann-Feynman piece sums the diagonal entries Re(w_e)_{aa} against their own occupations, the sum-over-states piece runs over every entry |v_e,ab|^2, and the divided-difference matrix is filled entry by entry with a degenerate branch whenever |E_a - E_b| <= 1e-12.
-per_site: checked — the ring is built site by site. Each site carries its own staggered on-site term m*(-1)^site and each of the N bonds is written individually, and the two site-resolved gauge constructions are compared directly: the uniform gauge spreads phi/N over every bond while the boundary gauge loads the entire phase onto the single bond (N-1, 0), agreeing to 1e-10.
-per_mode: checked — eigh resolves all N single-particle levels individually, each level gets its own Fermi occupation at the given (T, mu_ch), and the response is then a double sum over ordered level pairs. That per-mode resolution is what makes the result analytic rather than differenced, and it is validated against finite differencing at two instances to relative tolerance 1e-4.
-per_block: checked — the staggered mass partitions the ring into two interleaved sublattice blocks on even and odd sites, and the entire grid is run at both m=0.0, where those blocks are degenerate, and m=0.4, where they are split. The alternation-fate table is classified separately for each, and the two disagree at tested points: at T=0.3, mu_ch=0.25 the m=0.0 pattern is -+--+ while the m=0.4 pattern is -+-++.
-lattice_wide: checked and executed only as a finite-N statement — the ring size is swept over N in (8, 10, 12, 14, 16) at every one of the 16 (m, T, mu_ch) combinations, and the absence of any uniform-sign N-sequence is asserted across that whole tested grid. No thermodynamic or continuum limit is taken anywhere; the note names that extrapolation as an explicit follow-on, so no asymptotic claim is certified here.
+[PASS] X2e particle-hole relation Omega_second(mu_ch)=Omega_second(-mu_ch): max_abs_diff over table grid=1.665e-16, gate <1e-10
+[PASS] X2f gauge invariance at mu_ch=0.5: max_abs_diff uniform-vs-boundary gauge=6.800e-16, gate <1e-10
+[PASS] X2f T=50 kills the response: max_abs Omega_second over N,m,mu_ch grid at T=50 is 5.519e-16, gate <1e-12
+[PASS] X2f mu_ch=0 cross-reference zero-doping predecessor value, N=8 m=0.4 T=0.3 mu_ch=0: observed=-2.4525291422948042e-02, reference=-2.4525291422948042e-02, abs_diff=0.000e+00, gate <1e-10
+[PASS] X2f mu_ch=0 cross-reference zero-doping predecessor value, N=10 m=0.4 T=0.3 mu_ch=0: observed=+8.6569530669923095e-03, reference=+8.6569530669922956e-03, abs_diff=1.388e-17, gate <1e-10
 TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----

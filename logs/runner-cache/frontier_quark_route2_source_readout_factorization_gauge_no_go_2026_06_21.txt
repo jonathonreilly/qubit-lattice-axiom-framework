@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py
-runner_sha256: 19aab08faf10545076e6432c326dc542997fcda89d304806dbaf2856057ce45b
+runner_sha256: e63c7a9d1330a2e51cae489df4f48b69c9620c1196f7e03ca809e932ab95b95d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Route-2 source/readout factorization gauge no-go
@@ -38,13 +38,6 @@ Status: no-go for certifying independent legs from product-level readout alone.
 [PASS] new note records no-go status and forbids endpoint closure
 [PASS] new note states the exact remaining target as a leg-level gauge-fixing primitive
 [PASS] forbidden proof inputs remain excluded
-
--- N5 execution certificate --
-per_element: checked -- every number in this gauge argument is written down individually and compared individually. The weight census gives w_A1 = 1/6, w_E = 1/3, w_T = 1/2 and kappa = 3/2; each of the 5 degree splits is computed to its own source ratio, readout ratio and product; and the channelwise witness is fully explicit, with S_E = 9, S_T = 4, R_E = 1/9, R_T = 1/4 and gauges g_E = 5, g_T = 7.
-per_site: checked and not executed -- the six arms of the star are referred to only through three already-reduced weight fractions that this runner takes as constants. Not one arm amplitude is formed, so nothing here distinguishes any site from any other, and the gauge freedom under study is not a site-level object in the first place.
-per_mode: checked, and it is where the degeneracy becomes visible -- the gauge acts channelwise with different factors on the two modes, 5 on E and 7 on T, and the executed result is a clean split between what survives and what does not: the per-mode products are invariant at Q_E = 1 and Q_T = 1, while the per-mode attribution moves, the source ratio going from 9/4 to 45/28 and the readout ratio from 4/9 to 28/45. Mode-resolved products cannot see the split.
-per_block: checked, but only as a census, and one of the blocks is inert -- the three O_h projector blocks are named once with their weights, after which the A1 block plays no further part in any computation in this file. Only the E and T blocks feed the degree and gauge arguments, so the block-level evidence here is two weights in use and one weight recorded but unused.
-lattice_wide: checked and not executed -- no lattice, no volume and no limit is taken. The scope of the degeneracy claim also deserves an exact reading: it is exhibited by 5 named degree splits sharing total degree two and by one explicit gauge pair, so the executed evidence is a demonstration that the endpoint product fails to separate these cases, not a classification of the full gauge orbit.
 
 ====================================================================================
 PASS=13 FAIL=0

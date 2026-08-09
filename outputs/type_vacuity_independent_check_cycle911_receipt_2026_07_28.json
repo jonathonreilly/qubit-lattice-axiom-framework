@@ -1,44 +1,274 @@
 {
- "all_certificates_pass": true,
- "certificates": {
-  "R0_PINNED_EVIDENCE": {
-   "detail": "scripts/frontier_cycle911_type_vacuity_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt:MATCH",
-   "pass": true
-  },
-  "R0b_CLAIMS_PARSED": {
-   "detail": "claims_line_found=True",
-   "pass": true
-  },
-  "R1_CENSUS_ARITHMETIC_INDEPENDENT": {
-   "detail": "748/4=187 rem 0; sum(0..747)=279378",
-   "pass": true
-  },
-  "R2_MAXIMIZER_INDEPENDENT": {
-   "detail": "pairwise_smoothing_always_increases=True grid_maximizer_uniform=True",
-   "pass": true
-  },
-  "R3_MERGED_ATOM_CONTROL": {
-   "detail": "(2/6)^2*(1/6)^4=1/11664 > (1/5)^6=1/15625",
-   "pass": true
-  },
-  "R4_OVERCLAIM_SCAN": {
-   "detail": "hits=none",
-   "pass": true
-  },
-  "R5_RUNTIME": {
-   "detail": "elapsed_s=0.0 budget_s=300",
-   "pass": true
-  }
+ "X1_no_coupling": {
+  "bipartition_mismatches": 0,
+  "bipartition_orbits": 24,
+  "bipartitions": 6,
+  "column_writes_containing_a_shift": [],
+  "every_shifted_write_is_lane_local": true,
+  "functions_swept": [
+   "frontier_cycle863_time_from_records_2026_07_28.pack_lanes",
+   "frontier_cycle863_time_from_records_2026_07_28.compile_masked_gate",
+   "frontier_cycle863_time_from_records_2026_07_28.masked_h_schedules",
+   "frontier_cycle863_time_from_records_2026_07_28.compile_fast",
+   "frontier_cycle863_time_from_records_2026_07_28.mask_over",
+   "frontier_cycle863_time_from_records_2026_07_28.lanes_of",
+   "frontier_cycle863_time_from_records_2026_07_28.lane_state",
+   "frontier_cycle863_time_from_records_2026_07_28.replay",
+   "frontier_cycle878_event_space_groundwork_2026_07_28.dead_wire_rig",
+   "frontier_cycle878_event_space_groundwork_2026_07_28.composed_scan"
+  ],
+  "isolation_lanes": 24,
+  "isolation_mismatches": 0
  },
- "claim_type": "bounded_theorem",
+ "X1b_branch_matrix": {
+  "branch_pairs": 0,
+  "pairs_sharing_a_tick0_state": 5168,
+  "pairs_sharing_a_tick0_state_and_a_schedule": 0,
+  "tick0_state_classes": 323,
+  "total_pairs": 279378
+ },
+ "X2_menu": {
+  "A_orbit": {
+   "2": 164
+  },
+  "A_prepare": {
+   "2": 164
+  },
+  "A_saturation_as_pinned_slices_it_by_offset": {
+   "landed": {
+    "0": 161,
+    "2": 3
+   },
+   "minus_one": {
+    "0": 163,
+    "2": 1
+   },
+   "plus_one": {
+    "0": 154,
+    "2": 10
+   }
+  },
+  "A_saturation_corrected_by_offset": {
+   "landed": {
+    "0": 164
+   },
+   "minus_one": {
+    "0": 164
+   },
+   "plus_one": {
+    "0": 61,
+    "2": 103
+   }
+  },
+  "constructor_errors": 0,
+  "control_clean_boundaries_with_menu_2": 71,
+  "control_clean_boundaries_with_other_menu": 0,
+  "control_dirty_boundaries_with_menu_0": 1084,
+  "control_dirty_boundaries_with_other_menu": 765,
+  "formation_events": 164,
+  "menu_is_constant_on_every_clean_boundary": true,
+  "pinned_slicing_defect": {
+   "divisible": false,
+   "flat_word_length": 6212,
+   "per_step_gate_counts": [
+    757,
+    861,
+    764,
+    861,
+    13,
+    504,
+    368,
+    605,
+    378,
+    598,
+    503
+   ],
+   "stations": 11
+  },
+  "slow_replay_lock_points_checked": 85,
+  "slow_replay_mismatches": 0
+ },
+ "X3_I_CONST": {
+  "all_unitary": true,
+  "purity_constant_on_pure": true,
+  "purity_is_invariant_under_every_witness": true,
+  "purity_nonconstant_on_mixed": true,
+  "purity_on_mixed_states": [
+   "5/8",
+   "17/32",
+   "1/2"
+  ],
+  "purity_on_pure_states": [
+   "1/1",
+   "1/1",
+   "1/1"
+  ],
+  "transitivity_on_pure_states": true,
+  "unitary_witnesses": 6,
+  "verdict": "THE PRIMARY'S I-CONST READING SURVIVES THIS ATTACK.  A non-privileging non-constant readout EXISTS -- purity tr(rho^2) is invariant under every unitary witness and is non-constant once non-pure locked possibilities are allowed -- and NO non-constant unitarily-invariant readout exists on the pure locked possibilities, because the rational-rotation witnesses carry every pure state to the same point.  So constancy is forced BY PURITY and by nothing weaker: the two no-privilege sentences alone do not force it."
+ },
+ "X4_dilemma": {
+  "O1_correction_stands": true,
+  "rows": [
+   {
+    "candidate": "M3",
+    "fraction": "18272/23065",
+    "label": "bookkeeping fraction, not probability",
+    "percent_rounded": 79.22,
+    "zero_events": 73088
+   },
+   {
+    "candidate": "M4",
+    "fraction": "18272/23065",
+    "label": "bookkeeping fraction, not probability",
+    "percent_rounded": 79.22,
+    "zero_events": 73088
+   },
+   {
+    "candidate": "M5",
+    "fraction": "19046/23065",
+    "label": "bookkeeping fraction, not probability",
+    "percent_rounded": 82.58,
+    "zero_events": 76184
+   },
+   {
+    "candidate": "M6",
+    "fraction": "90841/92260",
+    "label": "bookkeeping fraction, not probability",
+    "percent_rounded": 98.46,
+    "zero_events": 90841
+   }
+  ]
+ },
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockQ8-20260802",
+ "caveats": [
+  "OP_PREPARE returns |A| = 2 at EVERY globally clean boundary, not only at formation boundaries, so the menu does NOT vary with the neighbour conditions on this substrate.  The primary's C2 verdict (O3 is not vacuous) is unaffected -- |A| is 2, never 1 -- but the reading of OP_PREPARE as the axiom's own nearest-neighbour rule is weaker than the axiom sentence, which requires variation.  This checker records that as a scope caveat, not a refutation.",
+  "the condition embedding P-CONDITION-MAP that carries the classified covariant rule space onto this substrate is a DECLARED premise; the class counts in the primary's spectrum are exact given the embedding and carry no force without it.",
+  "the saturation diagnostic's |A| histogram is offset-sensitive; the three offsets agree = False.  The two menu operators do not use an offset at all, so the C2 verdict is immune to that attack.",
+  "THE PINNED CYCLE-863 CERTIFICATE A HAS A CHUNK-SLICING DEFECT that this checker found independently and the primary now discloses: per_chunk = len(word) // stations assumes step-uniform gate counts that do not hold (len(word) = 6212, stations = 11, not divisible).  Corrected, the diagnostic returns {0: 164}; as pinned, {0: 161, 2: 3}.  Neither ever returns 1, so formation-as-saturation is refuted either way, but the pinned Cycle-863 histogram itself should not be cited as data."
+ ],
+ "checker_verdict": "PRIMARY_SURVIVES_THIS_CHECK",
+ "claim_type": "bounded_theorem_check",
  "cycle": 911,
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix": "self-contained rewrite; smoothing-argument maximizer route; overclaim scan added; fail-closed exit",
-  "iteration": 1,
-  "reviewer": "Sol"
- },
- "role": "independent_checker",
- "verdict": "PRIMARY_SURVIVES_THIS_CHECK"
+ "elapsed_sec": 49.183,
+ "fail_count": 0,
+ "failed": [],
+ "firewall_hits": 0,
+ "independence": "own census predicate, own event-seed derivation, own initial states built per key with no packing, own dirty-wire partition, own masked-schedule construction, own compiler, own scan, and a PERMUTED lane bit-layout (stride 373, offset 91); the primary and every upstream primary are blocklisted from import, the Cycle-719 kernel is the single disclosed substrate import",
+ "pass_count": 63,
+ "role": "independent checker, specified to refute",
+ "scan_seconds": 33.816,
+ "science_digest": "8f9351a2f117a182cb42dc279e7bbe71ce24a5c4bc44efb69edbf7dcab8416de",
+ "self_sha256": "d35ef56622891737df18daebefb14f87503e417a2a332880425de3241cc24ea0",
+ "source_pins": [
+  {
+   "bytes": 26046,
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  {
+   "bytes": 23020,
+   "git_blob": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "path": "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+   "sha256": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62"
+  },
+  {
+   "bytes": 47315,
+   "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+  },
+  {
+   "bytes": 7169,
+   "git_blob": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+   "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c"
+  },
+  {
+   "bytes": 6224,
+   "git_blob": "8fd212e96748064c40be670e491474e14dae28b6",
+   "path": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
+   "sha256": "007bbaa2ae70afad7fcb761d3f3912edb1b3f1c893a439a9e4d815abe335428c"
+  },
+  {
+   "bytes": 13116,
+   "git_blob": "7094c986dc0560e8982507d8cc379f5c720b639f",
+   "path": "outputs/born_narrowing_cycle905_receipt_2026_07_28.json",
+   "sha256": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40"
+  },
+  {
+   "bytes": 22689,
+   "git_blob": "e7eef6eeeb62aeddcdb12417ccd8ec871b9d87a7",
+   "path": "outputs/m6_identification_cycle907_receipt_2026_07_28.json",
+   "sha256": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca"
+  },
+  {
+   "bytes": 387139,
+   "git_blob": "4843b2ca7dd5af0ee1c67ff11aa4e47d7cb22976",
+   "path": "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json",
+   "sha256": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52"
+  },
+  {
+   "bytes": 108680,
+   "git_blob": "3335e9dee5027b935d0eb3c814601b8f8e83b550",
+   "path": "scripts/frontier_cycle911_type_vacuity_2026_07_28.py",
+   "sha256": "6474f1e919c97fcb3336a8cea480b5e824fe48f4ea5ce4592c1b75bc0b0007d1"
+  },
+  {
+   "bytes": 159020,
+   "git_blob": "af51342a72c56db8e562e1f1a607f207508b42ed",
+   "path": "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+   "sha256": "90d1fb2a3ac31065f75345ac1e98520622aa6302c50dcf4a8a11f44a1cde11b0"
+  },
+  {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  },
+  {
+   "bytes": 9097,
+   "git_blob": "52cc5672fff2d12eaf96e976602d5557aa59b61c",
+   "path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
+   "sha256": "c0b92c68149f45701a3d6db7bbf2022d00c70e55c065f9eef6f1dd692d9e61c3"
+  }
+ ],
+ "teeth": [
+  {
+   "detected": true,
+   "tooth": "T1_tampered_pin_is_rejected"
+  },
+  {
+   "detected": true,
+   "tooth": "T2_dropped_world_pair_is_caught"
+  },
+  {
+   "detected": true,
+   "tooth": "T3_hardcoded_verdict_flips_on_synthetic_branch_data"
+  },
+  {
+   "detected": true,
+   "tooth": "T4_leaked_vacuity_flips_on_a_synthetic_all_ones_table"
+  },
+  {
+   "detected": true,
+   "tooth": "T5_skipped_formation_event_is_caught"
+  },
+  {
+   "detected": true,
+   "tooth": "T6_planted_branch_detected_and_nonbranch_rejected"
+  },
+  {
+   "detected": true,
+   "tooth": "T7_planted_cross_lane_shift_is_caught_by_the_sweep"
+  },
+  {
+   "detected": true,
+   "tooth": "T8_tampered_receipt_disagrees_with_my_recomputation"
+  }
+ ],
+ "tooth_count": 8
 }

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_route_e_kostant_weyl_2026_05_08_routee.py
-runner_sha256: 24c43c14d27043bee015379b20967dc6755764f418bdaf9e9928f50b9c83c696
+runner_sha256: 363a8fb52738a77dbb1562694184978068481b4576f845c4e41372ca5440699c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ======================================================================
@@ -153,13 +153,6 @@ Section 10 — Comparison table: Route F (Casimir-difference) vs Route E (Kostan
        identity' is in fact two convention-dependent quantities
        defined in independent sectors of the framework, equated only
        by an arithmetic coincidence.
-
-Section 11 — N5 execution certificate — resolution classes exercised here
-  per_element: resolved entry by entry on the flavor operator — the circulant H = a I + b U + b* U^{-1} is written out as an explicit 3x3 array and tested entrywise for Hermiticity against H^dagger and for C_3-equivariance via U H = H U at 1e-12, and the gauge/flavor commutator [J_3, H_circ] is resolved component by component to max|.| = 0.00e+00 rather than through a norm shortcut.
-  per_site: checked and not executed — nothing in this runner carries a Z^3 position index; the three states of hw=1 are Brillouin-zone corner labels cycled by C_3[111], so they are momentum-space labels rather than sites, and no site sum, neighbour relation or position-space quantity is formed anywhere in Sections 1-10.
-  per_mode: resolved mode by mode on the generation sector — hw=1 is decomposed into its three C_3 characters, trivial + omega + omega-bar with omega = e^{2 pi i/3}, and those exact characters are what the Section 3 comparison uses to reject the A_1 adjoint whose weights are the integers {-2, 0, +2}; the two Section 5 circulants at the same ratio |b|^2/a^2 = 1/2 also have all three eigenvalues printed individually, showing equal ratios with different spectra.
-  per_block: resolved block by block, which is Barriers 2, 3 and 5 — the gauge block is the 2-dim A_1 fundamental inside Cl^+(3) = H, the flavor block is the 3-dim hw=1 sector, the runner checks that no A_1 irrep matches dim 3 in the fundamental and that the 3-dim adjoint carries the wrong weights, that the two blocks commute exactly, and that sl(3) would need 8 generators on the flavor block of which the retained content supplies 0.
-  lattice_wide: checked and not executed — no lattice is instantiated, no volume, no site sum and no continuum limit is taken; the Z^3 structure enters only as the fixed three-corner label set of hw=1, and both sides of the candidate identity are lattice-free, the left being a Cartan-Killing length-squared fixed by a normalization convention and the right an operator-coefficient ratio, which is Barrier 4 itself.
 
 ======================================================================
 === TOTAL: PASS=21, FAIL=0 ===

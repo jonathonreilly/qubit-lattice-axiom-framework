@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/koide_records_objectivity_packet_verifier_2026_06_17.py
 runner_sha256: 97aad0bad600a3f662e5b560c992d11ba899b0f342e68ab8f4cdf74924f176ef
-input_fingerprint_sha256: 8a5e1dd77d5c1755f572cf1e580cfa0d4b82d0067b4570bc5e0f6bbc53e04398
+input_fingerprint_sha256: e5ffdf94526e16f2406788c31f156f2c49e693af0344b2ac60709a719c375e81
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Koide records/objectivity restricted packet verifier
@@ -72,7 +72,7 @@ PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt exi
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt records runner path -- runner=scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt exits zero -- exit_code=0
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt status ok -- status=ok
-PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt sha matches source -- cache=78215366bcb13b500eb85997e91f5a4b68a921e978fa83f05f21b6d5e7aae8f7, live=78215366bcb13b500eb85997e91f5a4b68a921e978fa83f05f21b6d5e7aae8f7
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt sha matches source -- cache=e9dc3b7793894491e90e638f9aa795a33d181cdca4b6538aa41689fe3c2a1a08, live=e9dc3b7793894491e90e638f9aa795a33d181cdca4b6538aa41689fe3c2a1a08
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'PASS=31 FAIL=0'
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'do not force the Frobenius normalization'
 PASS scripts/frontier_pre_record_reference_state_tracial_derivation.py exists

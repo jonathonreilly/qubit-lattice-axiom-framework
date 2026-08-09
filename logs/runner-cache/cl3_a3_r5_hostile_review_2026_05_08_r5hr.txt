@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_r5_hostile_review_2026_05_08_r5hr.py
-runner_sha256: 34321266980ad1f07b0e3fbb833fd662dbd8cbf9b6a29383592342bc664de695
+runner_sha256: 7c0e19d93e09e61c1b9d4a772fcadce7e93d098551bd87c60b02d4301b46df99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -120,15 +120,6 @@ AGGREGATE VERDICT
   VERDICT: CONFIRMS_OBSTRUCTION_with_sharpenings
 
 SUMMARY: 59 PASS, 0 FAIL
-
-==============================================================================
-N5 EXECUTION CERTIFICATE
-==============================================================================
-  per_element: resolution reaches the individual complex entry - every object in this review is an explicit 3x3 array written out over the hw=1 corner basis (T_x = diag(-1,+1,+1), T_y = diag(+1,-1,+1), T_z = diag(+1,+1,-1), U_{C_3} the cyclic permutation matrix carrying e1 -> e2 -> e3, and the six S_3 permutation matrices), and each attack vector is decided by a Frobenius commutator or difference norm compared against the single 1e-12 tolerance used throughout the file, so no matrix entry is coarse-grained away before the verdict is taken.
-  per_site: checked and not executed - the Z^3 APBC lattice this review argues about is never instantiated; there is no site index, no lattice extent and no site-resolved field anywhere in the file, because every attack vector is restricted to the 3-dimensional hw=1 sector in which the site label has already been Fourier-summed away, and the lattice-level premises (cubic isotropy, uniform antiperiodic boundaries) are carried as docstring reasoning rather than as executed site sums.
-  per_mode: the three hw=1 Brillouin-zone corners (1,0,0), (0,1,0) and (0,0,1) are the mode label that is resolved one at a time - the Kawamoto-Smit kinetic block and the anomalous-dimension matrix A_dim = a I + b U + conj(b) U^dagger are each evaluated in the corner basis separately and their three diagonal expectations compared pairwise, while the C_3-character eigenvalues of A_dim are shown to be distinct, so mode by mode the corners carry RG labels and not species labels.
-  per_block: the S_3 = Weyl(SU(3)) representation on C^3 is split into its 1+2 invariant blocks - the invariant line omega and the two-dimensional complement spanned by psi1 and psi2, both confirmed orthogonal to omega - and the block-level step that decides the section is that T_x psi1 is shown to leave the two-dimensional summand, so the translation algebra D_3 forbids that block splitting from being read as a species labelling.
-  lattice_wide: checked and not executed - no lattice of any finite extent is built, so the would-be whole-system statements of this runner (cubic isotropy of the Kawamoto-Smit action, uniformity of the antiperiodic boundary condition across the spatial directions, and preservation of C_3 under continuum reconstruction) enter only as prose justifying the 3x3 restriction, and the two verdict keys that would carry them, retained_constraint_set_is_C3_symmetric and continuum_effects_preserve_C3_symmetry, are assigned as literal constants rather than computed from anything.
 
 HOSTILE REVIEW VERDICT: CONFIRMS_OBSTRUCTION (with sharpenings)
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gravity_sign_not_forced_by_arrow_stability_spectral_runner.py
-runner_sha256: dd171a042b7d55e2bbd2537e8cecf92c5d1b4af962740812a83be79b53790710
+runner_sha256: 53f706515086da003d3e50dcec6ae96f31a392e25cff3f45dc1d3c5b026d4aa8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -36,15 +36,6 @@ CONCLUSION: the sign is a separate residual beside the records-clock-rate bounda
    or arrow routes. The sign sits beside the conformal-factor records-clock-rate boundary
    and the local chi-selector no-go; it is not the approved scale-reference primitive.
   [PASS] the gravity sign is not forced by these 3 records-native routes; it is the located residual  | sign = separate residual beside clock-rate boundary + chi-selector; law + magnitude are records-derived
-
-==============================================================================
-N5 execution certificate: what this runner resolves, and at which granularity
-==============================================================================
-per_element: checked — sign-blindness is established entry by entry on the 64x64 resolvent (Lap+mu^2)^-1: every one of its 4096 entries is strictly positive (minimum 0.0366), so no matrix element of the Green's function carries information about sign(G_coupling); flipping Gc flips E_mut from -0.0550 to +0.0550 with the magnitude 0.0550 untouched.
-per_site: checked — the 64 sites of the periodic L=4 cubic lattice are each resolved: the Laplacian is assembled site by site with the 6 nearest neighbours of idx(x,y,z), and each source blob assigns every site its own normalized Gaussian weight, so both routes A and B are evaluated on site-resolved densities rather than on an aggregate.
-per_mode: checked and not executed — Route A is named spectral but is executed as a direct matrix inverse of (Lap + 0.3*I), not as an eigenmode decomposition; no individual Laplacian eigenvector or eigenvalue is formed or tested, so this runner makes no mode-by-mode statement about where the sign could hide.
-per_block: checked — the only block structure present is the localized source region, and it is resolved twice over: route A separates two disjoint Gaussian source blocks centred at (1,1.5,1.5) and (2.5,1.5,1.5) giving rhoA^T G rhoB = 0.0550 > 0, while route B sweeps one centred block across 5 widths sigma=[0.5, 0.8, 1.2, 2.0, 4.0], where clumping lowers E_self for Gc=+1 (-0.041 at sigma=0.5 against -0.026 at sigma=4.0) and raises it for Gc=-1 (0.041 against 0.026).
-lattice_wide: checked — the entropy route is a genuinely lattice-wide comparison over all 64 sites, S(uniform)=4.159 against S(clumped)=3.463, and the resolvent positivity and both energy sweeps are computed on the full periodic lattice rather than on a patch. The runner executes L=4 only; the note's claim that the mechanism is L-independent is argued in prose and is not swept here.
 
 runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
 TOTAL: PASS=4 FAIL=0

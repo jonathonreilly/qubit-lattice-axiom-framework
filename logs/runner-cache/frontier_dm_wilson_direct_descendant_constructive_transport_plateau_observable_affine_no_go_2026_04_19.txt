@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_observable_affine_no_go_2026_04_19.py
-runner_sha256: d45d4599d0de21fdd8ec3ef80cddf50dc40c8cff47953efffdd44b4a68c94af3
+runner_sha256: f60ffde54f2ffcb05dac368fe1194d24b3f3018d8cec9ab31d3baa983cd9e6cd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.68
+elapsed_sec: 1.72
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -49,19 +49,10 @@ PART 5: BOTTOM LINE
     W3: (gamma, E1, E2, Delta_src) = (0.059339947995, 0.391399371840, 1.311532356132, 0.000040283743)
 
   affine selector coefficients c = (c_gamma, c_E1, c_E2, c_Delta):
-    W0: c = [14.758957  2.105359 -0.20781  -0.410046], unique gap = 1.000000000000
-    W1: c = [ 2.869651 -3.387236 -0.862339  0.20151 ], unique gap = 1.000000000000
-    W2: c = [-14.621227  -1.899212   1.700033   0.382624], unique gap = 1.000000000000
-    W3: c = [-3.007381  3.181089 -0.629884 -0.174088], unique gap = 1.000000000000
-
-========================================================================================
-PART 6: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
-========================================================================================
-  per_element: checked — each of the four observable channels is extremized on its own and its individual winner recorded: gamma selects W0, E1 selects W3, E2 selects W2 and Delta_src selects W1. That single-channel split across all four witnesses is established channel by channel, never by a pooled score, and pairwise separation in the 4-pack is required to exceed 1e-2.
-  per_site: checked and not executed — this runner forms no site index. Each witness is a point of a parameter chart mapped through build_active_from_seed_logits to one canonical H, so the plateau is a parameter-space object; there is no spatially resolved quantity whose per-site values could differ.
-  per_mode: checked — the Schur spectrum of each witness H is resolved into its three eigenvalues individually and stored as lambda_min, lambda_mid and lambda_max. One single mode is then promoted to a candidate selector in its own right: max lambda_min(H_e) is tested alongside max Tr(H_e), and the two disagree on the winner, which is part of the non-consensus finding.
-  per_block: checked — the block-level object here is the 5x5 finite-difference Hessian of eta_1 over the parameter chart, and it is used strictly as a block: the runner reduces it to tr(Hess) and ||Hess||_F and tests each as a candidate selector without ever resolving individual Hessian entries. Those two block invariants also disagree on the winner.
-  lattice_wide: checked and not executed — this runner never leaves a fixed finite witness set. The evidence is four explicit plateau witnesses and exact linear algebra on their images, including an affine rank of 3 at tolerance 1e-10; nothing is scaled up or taken to a limit, and the no-go is already complete on that finite witness set.
+    W0: c = [14.75895719  2.10535862 -0.20781031 -0.4100458 ], unique gap = 1.000000000000
+    W1: c = [ 2.86965086 -3.38723572 -0.86233928  0.20150952], unique gap = 1.000000000000
+    W2: c = [-14.62122691  -1.89921165   1.70003327   0.38262441], unique gap = 1.000000000000
+    W3: c = [-3.00738113  3.18108875 -0.62988368 -0.17408812], unique gap = 1.000000000000
 
 ========================================================================================
 SUMMARY: PASS=12 FAIL=0

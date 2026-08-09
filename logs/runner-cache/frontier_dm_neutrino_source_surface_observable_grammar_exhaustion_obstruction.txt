@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_observable_grammar_exhaustion_obstruction.py
-runner_sha256: 225388c4205b8063d518b326884df6195c657b1442ee5f75e196805adee1fe61
+runner_sha256: 9074f5c393d09c3e6ca9c7e3cbf67aabc92386cacaf305f486d8f662494e07e3
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -52,15 +52,6 @@ PART 5: THE NOTE RECORDS THE OBSTRUCTION HONESTLY
   [PASS] The obstruction note names the exact missing selector-side theorem as observable-grammar exhaustion / intrinsic-family descent
   [PASS] The obstruction note keeps the boundary honest: representation is compressed, but selector closure is still not proved
   [PASS] The obstruction note records the sharper current-bank nonrealization as a missing intrinsic threshold law
-
-========================================================================================
-PART 6: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
-========================================================================================
-  per_element: checked -- the grammar is verified at the finest grain it has, the atomic singleton threshold event: every entry of the 5-lift response matrix is reconstructed from those events with max recovery error 0.000000000000e+00 over 25 distinct thresholds, and the family upper envelope is likewise rebuilt entry by entry rather than compared in aggregate.
-  per_site: checked and not executed -- the carriers are 3x3 shifted Hermitian lifts and the probes are vectors of the positive-probe family; nothing in this runner carries a lattice coordinate, so the grammar-exhaustion question is posed entirely on probe and carrier labels and never on sites.
-  per_mode: checked -- spectral_projector_data resolves each shifted lift into its three eigenmodes with their own projectors and responses, and the canonical score is read off the soft mode specifically: the runner verifies the strict ordering responses[0] > responses[1] > responses[2] holds (True) with soft gap at least 1.980270195235e+00 and closed-form agreement to 7.771561172376e-15, so the mode that carries the selector is isolated.
-  per_block: checked -- four probe-family presentations are treated as separate blocks and compared map against map: relabeling and duplication of the base block leave the extensional response map identical at support size 5, while the genuinely changed-support block differs from it in 2 signatures, so the quotient is shown to collapse presentation blocks but not real support blocks.
-  lattice_wide: checked and not executed -- no lattice, spatial volume or limit is computed anywhere here; the only volume in play is the witness-volume selector family V_tau(H) of the companion nonrealization note, and this runner touches it only as note text, confirming that it flips the recovered winner between tau = 0.13 and tau = 0.14 rather than evaluating it at any global scale.
 
 ========================================================================================
 RESULT

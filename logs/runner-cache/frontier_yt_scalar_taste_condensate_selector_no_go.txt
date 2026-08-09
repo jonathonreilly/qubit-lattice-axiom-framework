@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py
-runner_sha256: f854c8d1e32cdeb8d530d839716bbeb1f02fa22bc2d8c7a2bb4a70272e3369f0
+runner_sha256: a477724d3be73b85bbe34e61386adbade775f2f4575cc26fc6944f2dcea51f23
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -67,14 +67,6 @@ Part 5: source overclaim guards
 [PASS] source contains boundary phrase '### N7 - Steelman'
 [PASS] source contains boundary phrase '### N8 - Cross-cycle echo'
 
-==============================================================================
-N5 EXECUTION CERTIFICATE
-==============================================================================
-per_element: colour insertion matrices are assembled and read entry by entry in exact rational arithmetic — the scalar identity is built explicitly for N in [2, 3, 4, 5] with traces {2: '2', 3: '3', 4: '4', 5: '5'}, and at N = 3 the two traceless diagonal insertions diag(1,-1,0) and diag(1,1,-2) are confirmed to have trace exactly 0 and 0.
-per_site: checked and not executed — a colour insertion matrix carries a colour index pair and nothing else; it is never placed on a lattice, no coordinate is introduced, and no sum over any set of points is performed anywhere in the file.
-per_mode: checked and not executed — nothing here is diagonalized or Fourier transformed and no dispersion or spectral index exists; the insertion is characterized entirely by its trace and its Hilbert-Schmidt norm, which are basis-independent scalars rather than mode-resolved data.
-per_block: the singlet and traceless colour channels are separated exactly — the projection weight rho_singlet returns {2: '1', 3: '1', 4: '1', 5: '1'} on the identity insertion across those same N, and {'diag(1,-1,0)': '0', 'diag(1,1,-2)': '0'} on the two traceless SU(3) insertions, which is precisely why a colour-singlet condensate diagnoses K_Y = 1 rather than 8/9.
-lattice_wide: checked and not executed — a colour projection weight is scale-free, and this runner introduces no extent, no boundary condition and no limit of any kind; of its 45 checks 23 read the two source documents (one existence test and 22 substring assertions), so a large part of the run is inventory rather than computation.
 ==============================================================================
 RESULT: PASS=45 FAIL=0
 ==============================================================================

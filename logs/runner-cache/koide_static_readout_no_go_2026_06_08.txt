@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_static_readout_no_go_2026_06_08.py
-runner_sha256: abc00b8051ccb324d85a5c06b784a11843fdf9f8ef0e14793cf512dde1d86d36
+runner_sha256: 8620f06231efd154706f4e3955014e8288b625dc710546c773719d44cdbd3756
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -31,13 +31,13 @@ VERDICT (wall established, not a derivation): the polarization selector is the b
 J_cs = (C - C^2)/sqrt(3) IS MEASURE-NEUTRAL -> cannot select Koide r=1/2
 ========================================================================
 [PASS] J1: J_cs is REAL ANTISYMMETRIC with spectrum {0, +i, -i} (the native complex structure on the doublet)
-       antisym=True, eig(J_cs)=[-1j, (-0+0j), 1j]
+       antisym=True, eig(J_cs)=[-1j, 0j, 1j]
 [PASS] J2: J_cs^2 = -(I - P_triv)  (J^2 = -1 on the 2-dim doublet, 0 on the trivial isotype)
        ||J_cs^2 + (I - P_triv)|| = 3.3e-16
 [PASS] J3: [J_cs, C] = 0 -> [J_cs, M] = 0 for every circulant M (J_cs is a polynomial in C)
        ||[J_cs, C]|| = 0.0e+00
 [PASS] J3b: [J_cs, M] = 0 for a random circulant M = a I + b C + c C^2
-       ||[J_cs, M]|| = 6.2e-17
+       ||[J_cs, M]|| = 2.8e-17
 [PASS] J4: exp(theta J_cs) in SO(3) (orthogonal, det +1) and FIXES the trivial axis (1,1,1) -> it is an SO(2) rotation by theta on the doublet plane
        verified at theta in {0.3,1.0,2.0,pi}
 [PASS] J5 (the wall): under the J_cs flow M -> R(theta) M R(theta)^T, the eigenvalue magnitudes, |det M|, and the M^dag M (modulus) spectrum are ALL theta-INVARIANT -> J_cs preserves every measure (det_R, |det_C|, E_d, r); it rotates only the doublet PHASE (delta), never the magnitude. A measure-neutral static structure cannot SELECT (1,1) over (1,2).
@@ -45,16 +45,6 @@ J_cs = (C - C^2)/sqrt(3) IS MEASURE-NEUTRAL -> cannot select Koide r=1/2
 
 TOTAL: PASS=6 FAIL=0
 VERDICT: the framework-native complex structure J_cs commutes with the generation matrix and generates a measure-PRESERVING SO(2) flow on the doublet. It can DEFINE a holomorphic readout but provably cannot SELECT the (1,1) holomorphic count over the (1,2) real count -- both are J_cs-invariant. Hence the native i does NOT derive Koide r=1/2; it carries the delta (phase) channel, not the r (magnitude). With the rank-2 sesquilinear modulus wall, the tested static selector class fails; the dynamical first-order/index opening remains outside this runner. Audit lane sets the verdict.
-
-------------------------------------------------------------------------------
-
-N5 execution certificate: what this aggregate runner resolves
-==============================================================================
-  per_element: resolved in the J_cs component, where the operators are small explicit real 3x3 matrices and the claims are entrywise. J_cs is required to equal minus its own transpose, J_cs^2 + (I - P_triv) is required to vanish as a matrix, and the two commutators that make J_cs C-linear on the generation matrix, [J_cs, C] and [J_cs, M] for a circulant M, are both required to be the zero matrix rather than merely small.
-  per_site: checked and not executed — neither component constructs a site index, a neighbour relation or a lattice. Both work on one C_3 generation triplet, which is where the claim lives: the question is which count a STATIC readout applies to that single triplet's doublet. The residual opening named by the components is a dynamical first-order or index realization, not a spatially resolved one.
-  per_mode: resolved, and the entire selector is a mode count. The wall component forms the Hessian of the Coleman-Weinberg modulus over the two real doublet fields Re b and Im b and finds rank 2 with two strictly positive eigenvalues, then shows a general smooth f(|b|^2) keeps a generically full-rank Hessian, so the modulus reading always counts two real modes. The J_cs component supplies the matching mode picture from the other side, spectrum {0, +i, -i}: a zero mode on the trivial isotype and a conjugate pair on the doublet.
-  per_block: resolved — the singlet and doublet blocks are carried with separate weights throughout. The wall component assigns (w_s, w_d) to the two block energies 3 a^2 and 6 |b|^2, derives the singlet fraction x = w_s/(w_s + w_d) and the stationary relation r = (1 - x)/(2 x), and evaluates it at three block weightings: (1, 2) gives r = 1, (1, 1) gives r = 1/2, and the uniform complex recount (1/2, 1) gives r = 1 again. The block split is also what J_cs^2 = -(I - P_triv) exhibits directly.
-  lattice_wide: checked and not executed — no volume, sum over sites or limit is formed, and neither half of the claim would gain from one. The wall is a rank statement about a 2x2 Hessian, which is a pointwise algebraic fact, and the measure-neutrality is an exact invariance, with the eigenvalue magnitudes, |det M| and the M^dag M spectrum all unchanged across the sampled flow parameters. A quantity that is already invariant at a point stays invariant under any aggregation.
 
 ==============================================================================
 AGGREGATE TOTAL: PASS=11 FAIL=0

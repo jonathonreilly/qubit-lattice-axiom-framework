@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_axiom_stack_minimality_cl4c_no_go.py
-runner_sha256: 282a7fcf4af589fc7f124730186457d53254f1af8d2989646010fd989f03ee54
+runner_sha256: 8a326d19d5c3e1902295ceae89b55aa67279bac9d68520cccbd365d2c0cb8e1d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
@@ -53,15 +53,6 @@ AXIOM_STACK_MINIMALITY_THEOREM_VERIFIED = True
 AXIOM_STAR_STATUS = science_level_decision_required
 G1_C1_LANE_STATUS = forced_open_unless_axiom_star_adopted
 (This flag verifies the V1 axiom-stack minimality theorem composes 9 retained no-go/audit cycles. Independent audit required before the repo treats this as effective retained.)
-
-========================================================================
-N5 EXECUTION CERTIFICATE
-========================================================================
-per_element: entries are written and compared one by one - the Hamming-weight-1 projector is assembled by looping x over the 16 computational labels of H_cell and setting P_A[x,x] = 1 exactly where bin(x) has a single one bit, each S_4 element is filled in as M[j,i] = 1 from its permutation tuple, and the Clifford question is decided by testing whole anticommutators AB + BA against the zero array with np.allclose.
-per_site: resolved at exactly one of the four Qubit tensor factors of H_cell and no further - the bulk flip is built as sigma_x tensor I tensor I tensor I, i.e. acting on Qubit 0 alone, and the part of its image leaving the weight-1 subspace has Frobenius norm exactly 2, since each of the four weight-1 basis states is carried to a weight-0 or weight-2 state; the same probe is never repeated on Qubits 1, 2 or 3.
-per_mode: checked and not executed - nothing in this file is diagonalized, no momentum label or normal coordinate is introduced, and the Clifford non-derivability is settled purely by anticommutator algebra among the 24 group elements together with the count of 10 Hermitian involutions, so there is no spectral index at which a mode could be resolved.
-per_block: the weight grading of the 16-dimensional cell space is the block structure that carries the argument, with the weight-1 block isolated by Tr P_A = 4 and the bulk operator shown to map that block outside itself rather than within it, and the block algebra is then compared as a set against M_4(C).
-lattice_wide: checked and not executed - everything numerical happens inside a single cell Hilbert space of dimension 16, with no lattice of cells, no volume, no boundary condition and no limit anywhere, so the only whole-stack statement available is the conjunction of Sections 1, 3 and 4, which are inventory audits testing for the presence of fixed substrings in the note files they read.
 
 All Block 4 chain authorities + algebraic identities verified.
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_lower_level_pairing_nogo.py
-runner_sha256: b68e4e198339c5573a8171165babd1c5104373c7e5c60a518ca68f341adf426c
+runner_sha256: cb0094804621a83d7319565b1b875f8affdbf05fdbe6ababfd47868cd7a7e61f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,18 +19,6 @@ Question:
   [PASS] Three-generation lower-level Nambu response has zero anomalous block for a generic charge-preserving normal kernel  (|pair|=0.00e+00)
   [PASS] So the modeled lower-level three-generation Majorana matrix remains zero
   [PASS] The anomalous block vanishes identically for generic charge-preserving normal kernels of any size  (|pair|=0.00e+00)
-
-========================================================================================
-N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
-========================================================================================
-per_element: resolved, but what it resolves is a construction and not a computed amplitude. induced_pairing_block slices rows 0..n-1 against columns n..2n-1 and the Frobenius norm then covers every one of the 4, 9 and 25 complex entries at sizes (2, 3, 5); those entries are however the np.zeros_like array that nambu_response_kernel itself placed in both off-diagonal slots, so the elementwise statement certified is that the doubling formula never writes an anomalous entry, not that an evaluated entry fell under 1e-12. The entries that do carry arithmetic, the inverses of (1 - N) and (1 - conj N), are never inspected entry by entry.
-per_site: checked and not executed. Nothing spatial is instantiated in this runner: the running index of N labels generation/channel slots of the Delta-L = 2 kernel, it carries no coordinate, no neighbour relation and no volume, and the shift of 2.5 on the diagonal is an invertibility device rather than an on-site energy, so there is no site at which any quantity here could be evaluated.
-per_mode: checked and not executed. This runner diagonalizes nothing - (1 - N)^-1 and (1 - conj N)^-1 are formed by direct matrix inversion, the Hermitian kernel N never has its spectrum computed or used, and no eigenvalue, normal mode, occupation or spectral weight is produced anywhere; the Delta-L = 2 Majorana channel is handled as one unresolved channel rather than mode by mode.
-per_block: resolved, and this is the granularity the whole no-go turns on. Each Nambu kernel is assembled as four n x n blocks inside a 4 x 4, 6 x 6 and 10 x 10 matrix, and the claim is exactly a statement about which of those blocks is nonzero. The resolution is partial and worth naming: only the upper-right anomalous block is ever extracted and measured, while the lower-left anomalous block and both normal diagonal blocks are never inspected, so one block of four is resolved at each size.
-lattice_wide: checked and not executed, and the missing global theorem is precisely this note's declared obstruction. The note's open perimeter is the absent bridge theorem deriving that the framework's lower-level transport / Green / source-response layer is contained in the charge-preserving block-diagonal class; this runner assumes that class and computes its consequence at the three fixed sizes (2, 3, 5), taking no large-n limit and reaching no framework-wide statement, so there is no global resolution here to report.
-  scope: the accompanying note describes the sizes as n = 1, 3, 5, but the kernels this runner actually builds are of size (2, 3, 5) under seeds (1901, 2003, 2105); the one-generation case is a 2 x 2 kernel matched to the 2 x 2 mu J_2 template, so no kernel of size 1 is defined here.
-  scope: the second and fourth checks compare the extracted block against one_gen_pairing_operator(0.0) and three_gen_pairing_operator(0.0), which at mu = 0 are simply zero matrices, so they restate the block-norm result and do not test the antisymmetric J_2 or 3 x 3 template shape.
-  scope: the three streams are seeded, back-to-back executions are byte-identical, and no sampled quantity is quoted in the lines above.
 
 ========================================================================================
 RESULT

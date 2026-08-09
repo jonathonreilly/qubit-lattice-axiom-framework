@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py
-runner_sha256: 8b16437f22918c4298f3e4c4fe12d89ae5761054bda066a4230b9ceac3c661d5
+runner_sha256: bf15a97c2c8b8448d1dbed558f9ffe0c98e9d5ef8b50260e1a4ab972d6754e17
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.83
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -48,14 +48,6 @@ Part 5  (D) Relocation: distinct => selection well-posed (physical); coincide a-
 ==============================================================================
   [PASS] a SECOND observable (plaquette variance) also separates Wilson/HK at beta=6 (selection well-posed: candidates observably distinct)  (var_W=0.03689 var_HK=0.02853)
   [PASS] CONTROL: at a->0 the candidates coincide on <P> AND variance (no-go correct in the regulator frame)  (actions agree as a->0; distinctness is purely a finite-spacing (physical) effect)
-==============================================================================
-Part 6  N5 execution certificate: what this runner resolves
-==============================================================================
-per_element: checked - the group measures are assembled from individual eigenvalue phases: the SU(3) Vandermonde weight is built as an explicit product over the three pairs (i, j) of the eigenvalue phases a, b and c = -(a + b), and the SU(2) integrands are written directly in the single angle theta with Haar factor sin^2(theta), so every weight is formed entrywise.
-per_site: checked and not executed - every number here is a single-plaquette group integral at V = 1, as the SU(3) check label itself records; no lattice of sites is instantiated, no neighbouring plaquette is coupled and no site-to-site correlation is computed, so nothing in this scoping is resolved site by site.
-per_mode: checked - the heat-kernel weight is summed representation by representation, over the 121 SU(2) irreps j = 0, 1/2, ..., 60 each carrying its own dimension (2j + 1) and Casimir C_2(j) = j(j + 1), and the series is confirmed against the closed form exp(-3t/8); the SU(3) side uses the single fundamental Casimir C_2 = 1.333333 to give exp(-2/3).
-per_block: checked - the coupling staircase is resolved rung by rung over the 6 doublings beta = [3, 6, 12, 24, 48, 96], each rung evaluating the Wilson and heat-kernel plaquette separately and the spread compared against its neighbour to establish strict monotone decrease, with the log-log slope d ln(spread)/d ln(1/beta) = 1.952 read off across the rungs.
-lattice_wide: checked and not executed - no volume, no infinite-volume limit and no continuum limit is taken; the a -> 0 behaviour is inferred from a six-point finite staircase at V = 1, and the runner's own scope paragraph states it claims NO continuum limit, so the a -> 0 coincidence is exhibited as a trend rather than certified as a limit.
 ==============================================================================
 TOTAL: PASS=17 FAIL=0
 runner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}

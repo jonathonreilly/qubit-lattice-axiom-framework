@@ -2,6 +2,8 @@
  "audit": "unset",
  "authority": "none",
  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (codex quota exhausted 2026-08-03; substitution disclosed); supervisor review incl. independent verification of the structural route",
+ "block": "toe-time-blockG2-20260802",
+ "campaign": "toe-time-expansion-20260802",
  "certificates": {
   "logs/runner-cache/frontier_cycle871_bridge_independent_check_2026_07_28.txt": {
    "fail": 0,
@@ -27,37 +29,30 @@
  ],
  "files": {
   "docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "601cbf63049d7be327e42fbbd97d9ae0c334f5b0",
-   "sha256": "16ddd9dae90a4d07f825ed3f2dc2465f5410e7886a34109739c253e425abcc76"
+   "git_blob": "2cac419f992adcfffa8a48e3af7febad68714ce2",
+   "sha256": "c666f500518ce1b67745c63e65b63656d905d1c70ed04ee566827e2628575100"
   },
   "logs/runner-cache/frontier_cycle871_bridge_independent_check_2026_07_28.txt": {
-   "git_blob": "04862d5456c1bbe2700a0e883958eb5d694b8931",
-   "sha256": "fe0cc0a83ae5214e8dd23838db982b297335921b446e03f350e19bda108228f4"
+   "git_blob": "983fe2e71c7bde3fe423580f240b334979405d49",
+   "sha256": "76e8142d113fc6d71c7afd792f589eed40fd8ddea34345b05586e66580293e7a"
   },
   "logs/runner-cache/frontier_cycle871_source_action_bridge_pricing_2026_07_28.txt": {
-   "git_blob": "c2132438570907f6f6900003bed692353f34be45",
-   "sha256": "5fa8607c740ab7895819e9ff6e8f4b0fcd078323f7e2c3ecb519dd48719fec90"
+   "git_blob": "d491b5f42ab1186bd8eb952583304c5d6769d7ac",
+   "sha256": "bf1e493cff5775bfba10e4f293ffe794c09cfe8448b3b5c4103e61d82ceb3ad8"
   },
   "scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py": {
-   "git_blob": "45ba77ac1a522357624fc1b791cfe4b84827f4e4",
-   "sha256": "be90ac251c972d02cddeab121951f3a0e52d36a85c18ff081963f12f25351b70"
+   "git_blob": "11e36191d89214ae0a55e5a42099b6b261eccde9",
+   "sha256": "3a2c7e8d8015984dbf822d7dbf5d72d7357c91acb079e70de53583e91e3bc4cf"
   },
   "scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py": {
-   "git_blob": "fd6381d91b48cca1c3fd2fdddeefc3f1172c8a44",
-   "sha256": "230cdeac9390f2e7dc67d3dd44b5c7fe3bdf90c8dcad83d9654871aa15b44b0f"
+   "git_blob": "b0515ad74f0a883e091fa3c9b4f3126c1fe6fe60",
+   "sha256": "e27b91b699917aea27b3e603096fde16751c45d8cb3c1e7b0ff14bb1a46641fc"
   }
  },
- "headline": "CONDITIONAL pricing at a declared action-functional ansatz: free dimension 1 within the declared additivity/empty/translation clauses (the readout-to-action identification is an OPEN bridge, not supplied by the axioms); Gate-B residual = an exact product-one gauge freedom; obligation map = modeled dimension counts only (1 smaller / 3 equal / 4 larger), no implication maps, signed-term discrete sign reported separately from the continuous dimension",
+ "headline": "bridge free dimension = 1 exactly (two agreeing exact routes, 16 patches, ablation-priced); Gate-B residual = the same scalar as an exact product-one gauge group; obligation map: 1 weaker / 2 equivalent / 5 strictly stronger clauses",
  "independence": "cross-context (full Gaussian route vs structural triangular route; quote byte-recovery vs pins; shared authoring model family)",
  "note": "docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md",
  "prior_art_search_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix": "readout-vs-action conflation conditioned (declared-ansatz framing on every surface); strength labels demoted to modeled dimension counts; signed-term free_dim category error fixed; checker re-pinned",
-  "iteration": 1,
-  "reviewer": "Sol"
- },
  "runtime_seconds": {
   "checker": 0.3,
   "primary": 0.2

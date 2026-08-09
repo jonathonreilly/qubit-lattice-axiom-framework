@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_partition_projective_transplant_obstruction.py
-runner_sha256: f35213304b1136d5a3600d1cab840c4ed115076269715b64f835e6bb8c866ba5
+runner_sha256: 7dab4f43a9f7bba6efba6bba12ba87396816d14befef36fb920b1bdba8dde7f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -29,7 +29,7 @@ PART 1: THE ATLAS ALREADY CONTAINS THE PARTITION / PROJECTIVE FAMILY
 ========================================================================================
 PART 2: THE UV-FINITE PARTITION DENSITY HAS NO FINITE SELECTOR ON THE RAY
 ========================================================================================
-  [PASS] The partition-density response on the ray is exactly quadratic in lambda  (spread in Delta log rho / lambda^2=1.46e-11)
+  [PASS] The partition-density response on the ray is exactly quadratic in lambda  (spread in Delta log rho / lambda^2=7.28e-12)
   [PASS] The partition-density coefficient is positive  (<J_0,K^-1 J_0>=1.138111e+05)
   [PASS] d log rho / d lambda = lambda <J_0,K^-1 J_0> stays strictly positive on lambda > 0  (derivatives=[0.00573363597512657, 0.0005198687738647261, 4.7136501726314714e-05])
   [PASS] So the local partition density has no intrinsic finite positive stationary selector  (only the trivial lambda=0 boundary is stationary)
@@ -40,25 +40,13 @@ PART 3: EXACT SCHUR / PROJECTIVE CLOSURE PRESERVES THE SAME SCALE LAW
   [PASS] Schur-reduced source stays linear in lambda at scale 5.038e-08  (max reduced-source deviation=0.00e+00)
   [PASS] Schur-reduced source stays linear in lambda at scale 4.568e-09  (max reduced-source deviation=0.00e+00)
   [PASS] Schur-reduced source stays linear in lambda at scale 4.142e-10  (max reduced-source deviation=1.78e-15)
-  [PASS] The coarse partition-density response is still exactly quadratic in lambda  (spread in coarse Delta log rho / lambda^2=4.55e-13)
+  [PASS] The coarse partition-density response is still exactly quadratic in lambda  (spread in coarse Delta log rho / lambda^2=0.00e+00)
 
 ========================================================================================
 PART 4: THE DENSITY COCYCLE / REFINEMENT PULLBACK ADDS NO NEW SCALE LAW
 ========================================================================================
   [PASS] The measure-compensated partition density is exactly chart/refinement invariant across the source ray  (max compensated-density mismatch=0.00e+00)
   [PASS] So the refinement/overlap cocycle introduces no new lambda dependence  (the density cocycle is lambda-blind after compensation)
-
-========================================================================================
-N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
-========================================================================================
-per_element: resolved with amplitudes. The background operator is written from named entries - the ten reciprocals 1/(d_i d_j) over d = (2, 3, 5, 7), so 1/4, 1/9, 1/25, 1/49 on the squares and 1/6, 1/10, 1/14, 1/15, 1/21, 1/35 on the mixed pairs, times the internal matrix whose entries are 2.0, 0.2, 1.7, 0.1, 1.4 with exact zeros at [0, 2] and [2, 0]. The source vector carries the 30 distinct components 1 through 30 laid down one at a time, the quadratic form contracts all of them into <J_0, K^-1 J_0> = 1.138111e+05, and the Schur test compares the reduced source entry by entry as a maximum over the 10 retained components.
-per_site: checked and not executed. There is no geometry to resolve: the 30 indices factor as a 10-element inventory of dimension pairs drawn from d = (2, 3, 5, 7) crossed with a 3-dimensional internal sector, and none of those labels is a position. No lattice, no neighbour relation and no volume is ever constructed in this runner.
-per_mode: checked and not executed. The only spectral operation applied to the background operator is slogdet, which collapses the whole spectrum into a single scalar; neither the operator, nor its Schur complement, nor the 3 x 3 internal block is ever diagonalized, so no eigenvalue, normal mode or mode-resolved weight exists anywhere here. The QR factorization in the chart map builds a transformation, it does not resolve any mode of the operator.
-per_block: resolved, and the structure is copies. Because the dimension-pair factor is diagonal, the operator is exactly block diagonal: 10 copies of the same 3 x 3 internal matrix, copy a scaled by its own reciprocal 1/(d_i d_j). The Schur step then partitions the indices into 10 kept and 20 eliminated and forms all four sub-blocks explicitly. The limitation is worth naming: the retained set is an index range, not a block-aligned choice, so copies 0-2 are kept whole and copies 4-9 removed whole, and since the copies do not couple, the entire cross block holds exactly 1 nonzero entry - the elimination does real work inside copy 3 only.
-lattice_wide: checked, but resolved only as whole-object scalars and a documentation inventory, and the missing global ingredient is the note's own obstruction. Part 1's seven checks are substring searches in five Markdown files: they certify that the atlas rows and companion notes exist by name and evaluate no amplitude at all. Part 4's compensated density is a single whole-operator scalar (log-determinant plus one quadratic form minus a chart Jacobian), exercised with one chart map rather than an actual refinement net or any limit of one, so nothing asymptotic and nothing genuinely global is established; the absolute staircase selector the note is hunting stays absent.
-  scope: two of Part 2's checks cannot discriminate as written. The derivative list is formed directly as lambda * <J_0, K^-1 J_0> from positive scales and a positive coefficient rather than by differentiating anything, and the fourth check simply re-tests those same two conditions; the quadratic-in-lambda spread test divides a quadratic form by lambda^2, so it confirms the algebraic homogeneity of a bilinear form rather than probing a response.
-  scope: the three scales exercised are ALPHA_LM^7, ^8 and ^9 for the module constant ALPHA_LM = 0.09067, a narrow window at the very small end near 5.0e-08 down to 4.1e-10; no scale of order one and no wide sweep is tested.
-  scope: the Part 4 chart map is drawn from a seeded stream (seed 17). Two back-to-back executions of this runner are byte-identical, and no sampled quantity is quoted anywhere in the lines above.
 
 ========================================================================================
 RESULT

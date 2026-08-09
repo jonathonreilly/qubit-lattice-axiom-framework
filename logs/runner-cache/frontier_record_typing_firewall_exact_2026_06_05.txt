@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_typing_firewall_exact_2026_06_05.py
-runner_sha256: f332669cb2a779cbe2721ae1c4e07b4572fb80a32f3a3bf713da8349b237eb5a
+runner_sha256: f950f00771744ce1459bba085bf17de0c80ca985c76af55c5443b212562f7364
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 === Record readout context ===
@@ -54,13 +54,6 @@ status: ok
 [PASS] H2.2 arbitrary finite recorded count n=2 is allowed algebraically
 [PASS] H2.5 arbitrary finite recorded count n=5 is allowed algebraically
 [PASS] H2.13 arbitrary finite recorded count n=13 is allowed algebraically
-
-=== N5 execution certificate (print-only; no check is registered) ===
-per_element: checked and not executed -- no array-valued object exists in this runner, so there is no element to resolve. Everything it manipulates is a frozenset, a dict keyed by atom name, or an exact Fraction, and every conclusion is reached by set algebra and equality of exact rationals rather than by comparing entries of anything.
-per_site: checked and not executed -- there is no site index at any point. The 3 labels chi0, chi1 and chi2 are central-sector names supplied by the readout context, not positions in a lattice, and the runner deliberately avoids measurement dynamics of any kind, so a site-resolved reading of this type firewall would be an invention.
-per_mode: exercised, at sector granularity and no finer -- the fixed K/CPT action is verified sector by sector, each of the 3 central sectors separately satisfying K(K(s)) = s, and the record alphabet is then derived from that per-sector action rather than assumed. These are central sectors, however: no spectrum is computed and no dynamical mode is separated, and the certificate claims nothing beyond the sector level.
-per_block: exercised, and the firewall is stated at exactly this granularity -- the sectors fall into 2 K/CPT orbit blocks, a singlet block and a doublet block, and those blocks are the record atoms. The additive readout is checked to split over disjoint blocks with I(empty)=0, and the whole type-level result is that a block is an event while a probability is a separate normalized state that assigns numbers to blocks.
-lattice_wide: checked and not executed -- nothing here has spatial extent, so no whole-lattice quantity exists and no finite-N or limiting statement is available. The one exhaustive global check present is Boolean closure over all 4x4 pairs of events in the powerset algebra, which is a statement about an algebra over record atoms and carries no volume, no size parameter and no limit.
 
 === Scorecard ===
 PASS=27 FAIL=0

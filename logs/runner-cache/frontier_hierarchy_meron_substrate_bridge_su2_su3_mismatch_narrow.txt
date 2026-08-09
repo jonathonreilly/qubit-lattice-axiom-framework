@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py
-runner_sha256: 2af732d5989050b1d1ddccd568b7ba56acc52dfa7f54c5bce1986b6398c19a7d
+runner_sha256: e9a7a557f0791369ab32b5a2864fef659d8dce0802a0449ee292af2383a30e74
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 
@@ -189,15 +189,6 @@ T10: source-note boundary check
     - no closure of P1-P4 from honest-status note
     - external scaffolds remain unaudited deps=[] external Layer-1
 [PASS] T10: source-note boundary preserved (narrow no-go only)
-
-========================================================================
-N5 execution certificate: resolution granularity of this meron-bridge no-go
-========================================================================
-per_element: checked and not executed — no gauge-field configuration, transfer matrix, or algebra element is ever constructed here; the meron colour components A_mu^a for a=1,2,3 appear only as quoted prose from de Alfaro-Fubini-Furlan, and every obstruction is settled from closed-form classical actions (S_meron(SU(2))=4 pi^2=39.4784 against S_frac(SU(3),k=1)=8 pi^2/3=26.3189) and scalar predictions.
-per_site: checked — obstruction M2 is resolved by explicit site enumeration on the canonical L=4 box: the framework Z^3 spatial substrate carries L^3=64 sites while the Itou-Iritani meron construction needs a Z^4 torus of L^4=256 spacetime sites, a factor L=4 more. No field amplitude is evaluated at any of those sites; the inventory mismatch is itself the obstruction, because the framework substrate has no Wick-rotated fourth direction to enumerate.
-per_mode: checked — the doubler-mode inventory is resolved at the Brillouin-zone corners, 2^3=8 corners for the Z^3 spatial substrate against 2^4=16 for the Wick-rotated Z^4 lattice the meron route requires, so the two surfaces do not even carry the same number of modes. No individual mode amplitude, eigenvalue, or propagator is computed; only the inventory size is resolved, and it already differs.
-per_block: checked and not executed — there is no blocking, decimation, coarse-graining, or repeated-copy structure anywhere in this runner; the L=4 box enters purely as a site-count comparator and is never blocked, so the SU(2)/SU(3) mismatch is never probed at an intermediate block scale between the single configuration and the whole lattice.
-lattice_wide: checked and not executed — no lattice-wide field configuration, partition function, dilute-gas sum, or continuum limit is computed; all five obstructions M1-M5 are settled from closed-form scalars, including the residual multiplicative correction 2.817748 that no substrate-natural factor supplies, and the note keeps primitives P1-P4 of the honest-status note open rather than closing any of them.
 
 ========================================================================
 TOTAL: PASS=10 FAIL=0

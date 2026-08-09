@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_physical_matching_cluster_obstruction.py
-runner_sha256: 32d1eee6e80f6ed6dfb1cd15393065b39d7023467f468752f8f7087ccc6851b5
+runner_sha256: f9cfab4b97beb2f9d8965332654a7cb6f8a9933e0e8cbbe69298e100f14e0a07
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -52,22 +52,6 @@ Part 4: A_min and forbidden imports
   [PASS (A)] forbidden: PDG observed values  ()
   [PASS (A)] forbidden: Lattice MC empirical  ()
   [PASS (A)] forbidden: Fitted matching coefficients  ()
-
-----------------------------------------------------------------------------------------
-Part 5: N5 execution certificate (print-only; adds no check)
-----------------------------------------------------------------------------------------
-  Nature of this runner: it is a synthesis verifier for the cluster note.
-  Every one of its checks is a substring-presence test against
-  docs/LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md.
-  It constructs no matrix, no field, no lattice, and evaluates no
-  amplitude at any granularity. The five lines below record that
-  honestly rather than implying resolution the runner does not perform.
-
-per_element: checked and not executed - the runner never builds an operator or a kernel, so there is no matrix element to evaluate; its checks read text. The element-level object the cluster would need is exactly route (O1), and the note's own finding is that the kernel-level identities (Fierz, K_O reduction, dimensional analysis) do not by themselves give the operator-level relation.
-per_site: checked and not executed - no site-resolved field is instantiated; the runner opens one markdown file and asserts the presence of fixed strings. A site-resolved quantity here would have to come from the lattice MC of route (O3) / Resolution C, and lattice MC empirical measurements are listed among this note's forbidden imports, allowed only as audit comparators.
-per_mode: checked and not executed - nothing in this runner forms a mode, a momentum or a harmonic. The only expansion the cluster carries is the 't Hooft 1/N_c topological expansion, which is organized by genus rather than by mode and is cited in the note as prose (bounded support at O(1/N_c^4), about 1.2% at N_c = 3) rather than evaluated anywhere here.
-per_block: checked and not executed as an operator-block resolution - no colour, flavour or isotype block is ever constructed. The only counting the runner does is documentary: 3 sister cycles (5, 9, 11), 3 sister PRs (#260, #268, #271), 3 failure routes (O1, O2, O3), 3 resolution routes (A, B, C), 5 A_min premises and 3 forbidden imports, all confirmed by string presence in the note and not by any computation on a block.
-lattice_wide: checked and not executed - despite the word Lattice in the title no lattice is instantiated and no extensive expectation is formed; <P> and beta_eff occur only as characters inside the note text. That is the point of the cluster obstruction: the exact bridge <P>_full = R_O(beta_eff) is precisely what route (O3) says requires lattice MC at the relevant beta, so this runner deliberately computes no lattice-wide quantity.
 
 ========================================================================================
   TOTAL: PASS=30, FAIL=0

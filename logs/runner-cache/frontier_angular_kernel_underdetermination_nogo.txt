@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_angular_kernel_underdetermination_nogo.py
-runner_sha256: 77b65db6f2680b3cab8089833fab092b270a886a3a2fd339ba3dbedd535566bb
+runner_sha256: 5a3d77da2b8f36f0ac46e172b2401b1ab8a4ab0edaefa21b59be5a4e2d702c68
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -86,11 +86,11 @@ DECOUPLING: this does not block Phase 4 boost covariance, which
 
   [PASS] Kernel 'uniform': leading transverse isotropy (D_yy = D_zz)  (D_yy = 4.0000, D_zz = 4.0000, D_yz = 0.00e+00)
   [PASS] Kernel 'cos(theta)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 3.1523, D_zz = 3.1523, D_yz = 0.00e+00)
-  [PASS] Kernel 'cos^2(theta)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 2.2777, D_zz = 2.2777, D_yz = 4.41e-17)
+  [PASS] Kernel 'cos^2(theta)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 2.2777, D_zz = 2.2777, D_yz = 0.00e+00)
   [PASS] Kernel 'exp(-0.4*t^2)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 3.6502, D_zz = 3.6502, D_yz = 0.00e+00)
   [PASS] Kernel 'exp(-0.8*t^2)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 3.2595, D_zz = 3.2595, D_yz = 0.00e+00)
-  [PASS] Kernel 'exp(-1.6*t^2)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 2.3854, D_zz = 2.3854, D_yz = 3.17e-17)
-  [PASS] Kernel 'linear_falloff': leading transverse isotropy (D_yy = D_zz)  (D_yy = 3.0143, D_zz = 3.0143, D_yz = 3.39e-17)
+  [PASS] Kernel 'exp(-1.6*t^2)': leading transverse isotropy (D_yy = D_zz)  (D_yy = 2.3854, D_zz = 2.3854, D_yz = 0.00e+00)
+  [PASS] Kernel 'linear_falloff': leading transverse isotropy (D_yy = D_zz)  (D_yy = 3.0143, D_zz = 3.0143, D_yz = 0.00e+00)
 
 === Part 8: Staggered/Laplacian propagator has no kernel freedom ===
 
@@ -117,14 +117,6 @@ DECOUPLING: this does not block Phase 4 boost covariance, which
   [PASS] MISSING AXIOM: principle that uniquely fixes w(theta)  (candidates: higher-order isotropy, action-Lagrangian principle, observable matching)
   [PASS] Empirical beta = 0.8 is gravity-card phenomenology, not derived  (ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE 'Next work' item 3 lists this as open)
   [PASS] POSITIVE COROLLARY: Phase 4 does not need to resolve this no-go  (boost-covariance program decouples from the directional-measure construction)
-
-=== Part 11: N5 execution certificate — resolved granularity ===
-
-per_element: checked - the Cl(3) edge amplitude is built explicitly on the Qubit one-site algebra M_2(C) from the Pauli basis, and every one of its matrix entries is w(theta) times a Kronecker delta; reading the trace back as exactly 2 w(theta) for all seven kernels is precisely how the runner shows the Cl(3) structure carries no angular information at entry level.
-per_site: checked - all moments are accumulated over the 49 explicit forward edges (0,0,0) -> (1, dy, dz), each carrying its own length L and polar angle theta = atan2(sqrt(dy^2 + dz^2), 1); the azimuthal test additionally evaluates w at the four rotated offsets (2,1), (-1,2), (-2,-1) and (1,-2) and requires agreement to under 1e-14.
-per_mode: checked and not executed - no angular harmonic is ever formed. Azimuthal invariance is established by comparing w at rotated offsets rather than by expanding in m, and the kernels are separated by raw second and fourth moments <r_perp^2> and <r_perp^4>, so the higher angular channels where the seven kernels actually differ are never given mode coefficients.
-per_block: checked and not executed - there is no block index in this runner: the only operator is the per-edge 2x2 scalar w(theta) I, edges are never assembled into a transfer matrix or a block-diagonal form, and the two constructions separated in Parts 8 and 9 are distinct claim surfaces, the staggered/Laplacian and directional-measure lanes, not operator blocks.
-lattice_wide: checked - every reported number is a ratio of two whole-layer sums, numerator and normalizer Z both running over the full edge set, which is what makes <r_perp^2> spanning 4.5 to 8.0 and <r_perp^4> spanning 40 to 88 genuine layer functionals; but the layer is a single forward step at max_d = 3, with no multi-step composition and no continuum limit taken.
 
 ==============================================================================
 SUMMARY: PASS=64  FAIL=0

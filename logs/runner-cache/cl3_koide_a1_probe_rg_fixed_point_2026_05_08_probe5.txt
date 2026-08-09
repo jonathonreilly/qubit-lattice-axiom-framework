@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_rg_fixed_point_2026_05_08_probe5.py
-runner_sha256: fed2669496f35006a8c9f61ab52b480000a4e3440768cd6840a1e07eea7691ec
+runner_sha256: 711248c1a7961afeaf83b789cdea6d3cb446fedceec18d0b53ef372a417a5099
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 
@@ -215,16 +215,6 @@ Section 8: Falsifiability anchor (PDG ANCHOR ONLY, no derivation)
   does NOT emerge from retained RG flow. The numerical match is
   consistent with SM phenomenology of charged-lepton masses, but
   no axiom-native chain produces it via RG dynamics.
-
-======================================================================
-Section 9: N5 execution certificate — resolution classes exercised here
-======================================================================
-  per_element: resolved term by term and case by case — the two beta functions are compared coefficient by coefficient, beta_{y_t} carrying 9/2 y^2, -8 g_3^2, -9/4 g_2^2 and -17/20 g_1^2 against a beta_{y_tau} whose g_3^2 coefficient is exactly 0, the Jacobian at A1 is probed one direction at a time in delta-a and delta-b, and the five named counter-example circulants b = 0.3, 0.7, 1.0, 0.7071 and 1.5 are each separately checked Hermitian and C_3-commuting.
-  per_site: checked and not executed — nothing here has a position; the flow variables are the two coefficients (a, b) of a single circulant on hw=1 and the flow parameter is an energy decade, not a lattice coordinate, so no site index, site sum or neighbour term appears in any of the five barriers.
-  per_mode: resolved into the C_3 character modes — at the A1 point the spectrum is separated into the alpha = 0 singlet and the degenerate alpha = +/-1 doublet for real b, which is what makes the equipartition statement a spectral one rather than a bare parametrization; the flow itself, however, is run on (a, b) and not mode by mode, so no eigenvalue is evolved separately.
-  per_block: resolved block by block, and Barrier RG5 turns on it — the Frobenius weight is split into the trivial a I block and the nontrivial b U + b-bar U^{-1} block and the two shares are compared directly at A1, while the rescaling test Y -> 2Y is shown to multiply the quadratic and quartic block invariants by 4 and 16 so the block ratio is preserved and no 2-form rigidity can select 1/2; separately the gauge block and the matter block are kept apart, since the retained running acts on the former only.
-  lattice_wide: checked and honestly not achieved — there is no lattice, no volume and no site sum in this probe, and no asymptotic limit is taken either: every flow statement is integrated over a finite window of about 17 decades from M_Pl down to v in a fixed number of steps, and the six-point UV scan runs the named ratios 0.10, 0.30, 0.50, 0.70, 1.00 and 1.50 across that same finite window, so the non-attraction verdict is certified on that window against the stated thresholds, not in a true UV or IR limit.
-
 
 ======================================================================
 EXACT      : PASS = 24, FAIL = 0

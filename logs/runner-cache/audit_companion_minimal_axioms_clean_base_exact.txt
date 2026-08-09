@@ -1,10 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: e6f702e7e01cf1696fbe84b674d82441ff374681218f562de3c629d9ee38f234
-input_fingerprint_sha256: 5831aab7223c7730d4c5268d85b140969accb1ec66f5fcef2e2dbf2beaeb6efe
+runner_sha256: c0d08cc6206d969ede83f555e65bfd4e3b045e98bd34008f2c98af77d2382d2e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 PASS: Source note exists
@@ -45,8 +44,6 @@ PASS: Registry note blocks observable-principle laundering
       
 PASS: Registry note records Admissibility and downstream-boundary firewall
       
-PASS: Registry note does not deny the adopted probability structure
-      distribution, normalization, and supported outcomes are axiom content
 PASS: Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording
       
 PASS: Policy records 2026-07-02 foundation wording additions
@@ -56,8 +53,6 @@ PASS: Memo Record axiom carries the 2026-07-04 formation sentence
 PASS: Registry note records the formation sentence
       
 PASS: Policy records 2026-07-04 formation-sentence entry
-      
-PASS: Policy records 2026-08-05 Admissibility likelihood revision
       
 PASS: Policy records 2026-07-03 Record permanence restoration
       
@@ -131,8 +126,8 @@ PASS: Qubit: no nonzero 2x2 complex matrix anticommutes with all three Pauli gen
       linear coefficient solve gives a=d=0, b+c=0, b-c=0, so M=0
 PASS: Lattice: Z^3 nearest-neighbor adjacency has six graph-distance-one neighbors
       finite-range locality can be read as finite graph-distance range on this adjacency
-PASS: Admissibility: nearest-neighbor conditions determine a normalized distribution and support
-      toy distribution only: local conditions set lock-outcome odds and support; no transition or dynamics is used
+PASS: Admissibility: nearest-neighbor conditions can constrain possibility availability
+      toy predicate only: neighbor conditions can make a candidate unavailable; no probability, transition, or dynamics is used
 PASS: Record: finite scalar record functional is additive over disjoint collections
       I(R1 union R2)=I(R1)+I(R2) and I(empty)=0 checked for finite weighted records
 PASS: Record: a site never carries more than one record
@@ -146,10 +141,10 @@ PASS: Qualification: a state can be read as a configuration of records
 PASS: Qualification: supplied-condition law gives one answer where its condition holds
       toy law has a supplied condition on record configurations and returns one determinate verdict when defined
 PASS: Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion
-      script checks only algebraic notation, graph adjacency, local distribution/support bookkeeping, fixed record readout, and finite additivity
+      script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity
 
-runner_check_breakdown = {A: 70, B: 0, C: 0, D: 0, total_pass: 70}
-TOTAL: PASS=70 FAIL=0
+runner_check_breakdown = {A: 68, B: 0, C: 0, D: 0, total_pass: 68}
+TOTAL: PASS=68 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

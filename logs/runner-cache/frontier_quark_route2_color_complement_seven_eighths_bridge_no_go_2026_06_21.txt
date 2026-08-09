@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py
-runner_sha256: a15918eb8bf91800f7c2ea1fbdea2f1e808d2372e26d3d2836c8f6413d06ecb0
+runner_sha256: 4ffc3dbf891f8c04fefb08b525ed57656f392808b402c194a0aa036b2d6794be
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.64
 status: ok
 ----- stdout -----
 Route-2 color-complement seven-eighths bridge no-go
@@ -71,13 +71,6 @@ PASS: N8 no-go discipline item is present
 PASS: note states no invariant one-dimensional line
 PASS: note states no invariant rank-seven projector
 PASS: note records boundary exclusions
-
-G. N5 execution certificate
-per_element: the SU(3) structure constants are resolved one index triple at a time -- nine independent nonzero triples generate every entry, and each of the 8 adjoint matrices ad(T_a) is filled cell by cell across all 64 (b,c) index pairs with the inversion parity applied to that single cell, so the verified samples f_123=1 and f_458=sqrt(3)/2 are individual numbers, not sums.
-per_site: checked and not executed -- this runner never leaves the internal color factor attached to one point, working only with the nine-dimensional q-qbar product and its eight-dimensional adjoint; there is no coordinate, no neighbor list and no star anywhere in the file, and the 'complement' under test is a subspace of a representation rather than a collection of lattice sites.
-per_mode: the color channels are separated and each is given its own exact rational -- the q-qbar product splits as 1 (+) adj with dimensions 1 and 8 out of 9, giving F_adj=8/9, while the candidate all-but-one channel fraction is 7/8; that value is then compared against the Route-2 E-center excess e_E=7/8, which carries q_E=15/8 and c_TE=-8/9.
-per_block: this is where the obstruction actually lands, and it is executed in full -- the joint kernel of the eight ad(T_a) is trivial (the stacked 64x8 column array has rank 8), the commutant has dimension 1 and is spanned exactly by I_8, so every invariant idempotent is scalar with rank 0 or 8 and an invariant rank-7 block simply does not exist.
-lattice_wide: checked and not executed -- no lattice, volume, box or limit of any kind is constructed here; the only whole-object statement made is reachability over a four-node, 6-edge Route-2 equivalence graph plus one absent typed bridge edge, which is provenance bookkeeping over notes rather than a field amplitude, and that missing edge is itself the theorem this note reports absent.
 
 ========================================================================================
 TOTAL: PASS=51 FAIL=0

@@ -1,0 +1,236 @@
+diff --git a/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md b/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md
+index 05d594894f..f7e9793a09 100644
+--- a/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md
++++ b/docs/EXACT_ALGEBRA_SALVAGE_BOUNDED_SUPPORT_NOTE_2026-08-08.md
+@@ -308,6 +308,53 @@ the PR #5995 review record):
+   dispatch or re-audit rows; its own ordinary claim row is
+   pipeline-seeded and remains `unaudited` for independent review.
+ 
++### Hard landing condition: packet-helper registration
++
++The independent checker deliberately does not import the primary, so
++the audit packet builder cannot discover it by transitive imports.
++Registering it is a one-entry edit to
++`EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
++`docs/audit/scripts/build_citation_graph.py` — but that file is an
++exact-hash member of the governed dependency-policy source set, and a
++policy-epoch refresh mass-invalidates the legacy audit baseline
++(independently measured at 891 hard resets). The registration is
++therefore NOT carried on this branch. It is a HARD LANDING CONDITION
++for this package: before or at landing, the following entry must be
++applied through whatever mechanism the dependency-policy
++reconciliation (queued in `docs/repo/ACTIVE_REVIEW_QUEUE.md`,
++`2026-08-08-dependency-policy-epoch-debt-helper-registry`) approves:
++
++```python
++    # The exact-algebra bounded-support checker deliberately does not import
++    # the primary: it recomputes every unit by a different exact route and
++    # verifies the primary receipt fail-closed. Expose that separately
++    # executable checker beside the primary in this claim's restricted packet.
++    "exact_algebra_salvage_bounded_support_note_2026-08-08": [
++        "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
++    ],
++```
++
++Until that entry is applied, the restricted audit packet for this
++claim contains the primary runner only, and the checker must be
++opened by path.
++
++### Fix history (review iterations on this package)
++
++- Iteration 2 (combined adversarial review of the salvage, four
++  findings): the checker's receipt cross-check was rebuilt
++  full-surface — canonical expected record from all seven independent
++  routes, wholesale payload comparison, and two tamper regressions
++  (a rehashed semantic tamper must be rejected); the citation-graph
++  manifest acknowledgment was co-landed; the note title,
++  source-boundary sentence, unit cross-reference, audit-row wording,
++  and recovery handle were corrected.
++- Iteration 3 (confirmation round): the packet-helper registration
++  was reverted off this branch and restated as the hard landing
++  condition above, with the dependency-policy epoch debt queued as a
++  dated owner-decision item; review-iteration metadata was removed
++  from the runner-emitted receipts — runner outputs carry only
++  runner-generated content, and review provenance lives here.
++
+ What this salvage does NOT do: it does not repair, re-derive, or
+ re-assert any dropped claim; it does not touch the axiom surface; it
+ authors no audit verdict and requests no extra dispatch or re-audit
+diff --git a/docs/audit/scripts/build_citation_graph.py b/docs/audit/scripts/build_citation_graph.py
+index 583fd09374..ce6480819c 100755
+--- a/docs/audit/scripts/build_citation_graph.py
++++ b/docs/audit/scripts/build_citation_graph.py
+@@ -196,13 +196,6 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+     "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
+         "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
+     ],
+-    # The exact-algebra bounded-support checker deliberately does not import
+-    # the primary: it recomputes every unit by a different exact route and
+-    # verifies the primary receipt fail-closed. Expose that separately
+-    # executable checker beside the primary in this claim's restricted packet.
+-    "exact_algebra_salvage_bounded_support_note_2026-08-08": [
+-        "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+-    ],
+     # Cycle 731's checker intentionally obtains the actual primary gate stream
+     # through runpy/subprocess boundaries rather than importing the primary.
+     # Keep that independent source in the claim packet explicitly.
+diff --git a/docs/repo/ACTIVE_REVIEW_QUEUE.md b/docs/repo/ACTIVE_REVIEW_QUEUE.md
+index 071709e165..0c2cd59737 100644
+--- a/docs/repo/ACTIVE_REVIEW_QUEUE.md
++++ b/docs/repo/ACTIVE_REVIEW_QUEUE.md
+@@ -27,6 +27,26 @@ them.
+ 
+ Current science/open-lane follow-ups:
+ 
++- `2026-08-08-dependency-policy-epoch-debt-helper-registry`
++  Scope: `docs/audit/scripts/build_citation_graph.py`
++  (`EXPLICIT_PACKET_HELPER_RUNNER_PATHS`),
++  `docs/audit/data/dependency_policy_epoch.json`, and claim-scoped
++  packet-helper registrations.
++  Finding: dependency-policy epoch debt: helper-registry edits (cycles
++  869/870/872/873/874 landed; the AC2-salvage registration for
++  `exact_algebra_salvage_bounded_support_note_2026-08-08` pending as a
++  hard landing condition in that note's Review record) were made without
++  an epoch refresh because a refresh mass-invalidates ~860 legacy audits
++  (independently measured at 891 hard resets under
++  `legacy_dependency_policy_epoch_changed` /
++  `science_changed:dependency_policy_epoch`). The governed exact-hash
++  gate on `DEPENDENCY_POLICY_SOURCES` therefore reports an epoch
++  mismatch against the registry's current bytes on `main`.
++  Disposition: needs a dedicated owner-approved policy pass reconciling
++  the exact-hash gate with registry evolution (for example separating
++  claim-scoped helper registration from the governed
++  dependency-extraction source, or adding the reviewed machine-readable
++  equivalence/impact record the review-loop guard requires).
+ - `2026-07-30-cycle734-supplied-position-and-guard-scope`
+   Scope: the Cycle-734 externally positioned ring-11 logical pair template
+   and its current Cycle-719/724/731 controller stack.
+diff --git a/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json b/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
+index 8854223432..e91f98b2f5 100644
+--- a/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
++++ b/outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json
+@@ -116,17 +116,7 @@
+   "outputs/salvaged_exact_algebra_receipt_2026_08_08.json"
+  ],
+  "pass": 27,
+- "payload_sha256": "c7ea0fc5b331e91305f93effcffaad29334add1cc1d854f46f23859cdbef5898",
+- "review_loop": {
+-  "addressed": [
+-   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
+-   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
+-   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
+-   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
+-  ],
+-  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
+-  "iteration": 2
+- },
++ "payload_sha256": "b375af70aea52ed0cb8608d4f3ba6b547e6e18acd48c44b3a48a76b6826450c0",
+  "role": "salvage independent check: every unit recomputed by a different exact route; primary receipt verified fail-closed",
+  "script": "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+  "units": {
+@@ -311,7 +301,7 @@
+   },
+   "primary_receipt": {
+    "comparison": "full payload minus self-digest, wholesale",
+-   "primary_digest": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
++   "primary_digest": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+    "primary_fail": 0,
+    "primary_pass": 31
+   },
+diff --git a/outputs/salvaged_exact_algebra_receipt_2026_08_08.json b/outputs/salvaged_exact_algebra_receipt_2026_08_08.json
+index f6867d3eea..c8a8ce559f 100644
+--- a/outputs/salvaged_exact_algebra_receipt_2026_08_08.json
++++ b/outputs/salvaged_exact_algebra_receipt_2026_08_08.json
+@@ -130,17 +130,7 @@
+  "fail": 0,
+  "inputs": [],
+  "pass": 31,
+- "payload_sha256": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
+- "review_loop": {
+-  "addressed": [
+-   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
+-   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
+-   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
+-   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
+-  ],
+-  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
+-  "iteration": 2
+- },
++ "payload_sha256": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+  "role": "salvage primary: seven narrow exact algebraic results on in-file stipulated definitions; bounded support only; no derivation, closure, or selection claims",
+  "script": "scripts/salvaged_exact_algebra_2026_08_08.py",
+  "units": {
+diff --git a/scripts/salvaged_exact_algebra_2026_08_08.py b/scripts/salvaged_exact_algebra_2026_08_08.py
+index f89254c587..f236d6626c 100644
+--- a/scripts/salvaged_exact_algebra_2026_08_08.py
++++ b/scripts/salvaged_exact_algebra_2026_08_08.py
+@@ -60,20 +60,6 @@ RECEIPT_PATH = os.path.join(
+     REPO, "outputs", "salvaged_exact_algebra_receipt_2026_08_08.json")
+ DATE = "2026-08-08"
+ EXPECTED_CHECK_COUNT = 31
+-REVIEW_LOOP = {
+-    "iteration": 2,
+-    "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
+-    "addressed": [
+-        "S1: receipt cross-check made full-surface in the independent "
+-        "checker, with a rehashed semantic-tamper regression",
+-        "S2: independent checker registered as an explicit packet helper "
+-        "for this claim in build_citation_graph.py",
+-        "S3: citation-graph manifest acknowledgment co-landed; audit-row "
+-        "wording in the note corrected",
+-        "S4: note title, source-boundary sentence, unit cross-reference, "
+-        "and recovery handle corrected",
+-    ],
+-}
+ 
+ CHECKS: list[tuple[str, bool]] = []
+ 
+@@ -678,7 +664,6 @@ def main() -> int:
+         "fail": fails,
+         "expected_check_count": EXPECTED_CHECK_COUNT,
+         "verdict": verdict,
+-        "review_loop": REVIEW_LOOP,
+     }
+     blob = json.dumps(payload, sort_keys=True, indent=1).encode()
+     payload["payload_sha256"] = hashlib.sha256(blob).hexdigest()
+diff --git a/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py b/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py
+index 8bc302696b..d67ef45926 100644
+--- a/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py
++++ b/scripts/salvaged_exact_algebra_independent_check_2026_08_08.py
+@@ -638,20 +638,6 @@ PRIMARY_SCRIPT = "scripts/salvaged_exact_algebra_2026_08_08.py"
+ PRIMARY_ROLE = ("salvage primary: seven narrow exact algebraic results "
+                 "on in-file stipulated definitions; bounded support "
+                 "only; no derivation, closure, or selection claims")
+-PRIMARY_REVIEW_LOOP = {
+-    "iteration": 2,
+-    "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
+-    "addressed": [
+-        "S1: receipt cross-check made full-surface in the independent "
+-        "checker, with a rehashed semantic-tamper regression",
+-        "S2: independent checker registered as an explicit packet helper "
+-        "for this claim in build_citation_graph.py",
+-        "S3: citation-graph manifest acknowledgment co-landed; audit-row "
+-        "wording in the note corrected",
+-        "S4: note title, source-boundary sentence, unit cross-reference, "
+-        "and recovery handle corrected",
+-    ],
+-}
+ PRIMARY_CHECK_NAMES = (
+     "split.decomposition_identity_on_all_probes",
+     "split.trace_free_channel_has_zero_trace",
+@@ -752,7 +738,6 @@ def build_expected_primary_payload(units: dict) -> dict:
+         "fail": 0,
+         "expected_check_count": len(PRIMARY_CHECK_NAMES),
+         "verdict": "PASS",
+-        "review_loop": PRIMARY_REVIEW_LOOP,
+     }
+ 
+ 
+@@ -846,7 +831,6 @@ def main() -> int:
+         "fail": fails,
+         "expected_check_count": EXPECTED_CHECK_COUNT,
+         "verdict": verdict,
+-        "review_loop": PRIMARY_REVIEW_LOOP,
+     }
+     blob = json.dumps(payload, sort_keys=True, indent=1).encode()
+     payload["payload_sha256"] = hashlib.sha256(blob).hexdigest()

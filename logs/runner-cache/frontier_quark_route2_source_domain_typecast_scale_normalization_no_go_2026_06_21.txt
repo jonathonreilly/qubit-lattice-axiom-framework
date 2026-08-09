@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_source_domain_typecast_scale_normalization_no_go_2026_06_21.py
-runner_sha256: d7645475f19ad553e98725a19e45829822e9da2c06dd5e68d254b6ad525e93f8
+runner_sha256: b32e77859408c4c7caab4c96deff19250df01bf9f1a21a4a182aa86c5953723f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.98
+elapsed_sec: 0.74
 status: ok
 ----- stdout -----
 Route-2 source-domain typecast-scale normalization no-go
@@ -68,14 +68,6 @@ PASS: new note lists boundary phrase: nu = 1 is the hidden selector
 PASS: new note lists boundary phrase: unit typecast normalization
 PASS: new note lists boundary phrase: normalization no-go
 PASS: new note lists boundary phrase: typed landing edge
-
-E. N5 execution certificate -- what this runner resolves
-------------------------------------------------------------------------------
-per_element: checked, and threefold per sample -- each of the 6 typecast scales is put through its own expected-value comparison, its own positive-lift domain test on both rho_E and q_E, and its own exact round trip back to |c_TE| = nu F_adj, giving 18 element-level assertions in exact Fractions with no tolerance. The spread is real and computed, not asserted: nu = 1/2 lands rho_E = 33/2 while nu = 2 lands -3/8, on opposite sides of the target.
-per_site: checked and not executed -- a typecast normalization is a statement about units between two scalars, and neither scalar has positional structure. No support, no arm and no center configuration is instantiated in this file, so there is no site at which nu could be measured and none is claimed.
-per_mode: checked, and the finding is that this class cannot help here -- the only mode-level quantity in play is the T-over-E center magnitude, and the free scale nu multiplies it uniformly. A mode-uniform rescaling is by construction invisible to any comparison between the E and T channels, which is exactly why no mode-resolved fact in the current bank can pin nu, and why the note asks for a typed landing edge instead.
-per_block: checked -- the evidence is carried in two authority blocks that this runner closes separately and never fuses. The color/Fierz block supplies the bare number F_adj = 8/9 at N_c = 3, and the Route-2 endpoint block supplies the inversion from |c_TE| back to rho_E; the typed graph confirms neither block reaches the other, with no path from su3_R_conn_8_9 to the center node or to rho_E until the missing edge is adjoined. The unresolved seam between those two blocks is precisely nu.
-lattice_wide: checked and not executed -- no lattice, no volume and no limit appears anywhere, so there is no global object to certify. The scope of the negative result should also be read exactly: the freedom in nu is exhibited by 6 named scales that each select a different lift, and the absence of a normalization theorem is established by literal phrase search across the six parent surfaces, not by a proof that no such theorem could exist.
 
 Summary
 ------------------------------------------------------------------------------

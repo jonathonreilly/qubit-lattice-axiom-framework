@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py
-runner_sha256: a29ced902fa48ee4f8d653c8ae3224713dd573e4da43d9102c3ec757018e2696
+runner_sha256: f4be464bf5a6b651037c88bbbfa5432c165cae3bd7fd2f9588c1ece03508ce8d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 K_R Gram nonseparable degree-2 no-go
@@ -35,13 +35,6 @@ Status: no-go for K_R-generated channel-blind Gram/tensor-power route.
 [PASS] new note states the free channel metric warning
 [PASS] new note states the remaining positive target outside current K_R Gram grammar
 [PASS] forbidden proof inputs remain excluded
-
--- N5 execution certificate --
-per_element: individual Gram cells are what carry this no-go -- for each of the 4 exact rational source metrics the runner forms K_R^T M K_R on both unit bright probes and evaluates every entry, finding the diagonal cell equal to A_M(delta)=m00+2*m01*delta+m11*delta^2 and each off-diagonal and complementary cell exactly zero, i.e. six cell-level rational equalities per metric and 24 in all.
-per_site: checked; not executed in this file -- the source leg is a fixed two-dimensional internal factor spanned by [1, delta_A1(q)], and delta_A1 enters purely as a free rational standing for the A1 invariant of a configuration, with the sampled values 0, 1/6, -2/7 and 5/3 picked as arbitrary rationals rather than read off any site.
-per_mode: the executed heart of the block sits here -- the two bright modes E and T1 are probed by the unit rows (1,0) and (0,1), both return the identical source scalar A_M(delta), and the induced covariance ratio is therefore lambda=1 instead of 9/4, which is exactly the channel blindness the note names; kappa=w_T1/w_E=3/2 never enters the response.
-per_block: the tensor-power rungs 1 through 4 are swept across the same four metrics and the channel-metric block is swept over the ratios [Fraction(1, 1), Fraction(9, 4), Fraction(3, 7), Fraction(5, 2)]; the rung sweep resolves closure of the grammar rather than an independent quantity, because both sides of each power comparison are built from the single source scalar A_M -- that identity is itself the collapse being certified, and no new amplitude appears at any rung.
-lattice_wide: examined and deliberately left unexecuted -- nothing in this file is summed, averaged or extended over a lattice, the whole argument being 2x2 algebra over a rank-one carrier; the note's own Minimal Premise Set confines the result to the current class-A K_R grammar with channel-blind M and expressly declines to rule out nonseparable primitives outside it, so no all-primitives quantifier is available to certify.
 
 ====================================================================================
 PASS=14 FAIL=0

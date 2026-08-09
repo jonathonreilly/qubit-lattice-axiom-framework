@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bougerol_lacroix_staggered_blocking_gouezel_karlsson_deterministic_cocycle_narrow.py
-runner_sha256: 7d0abbaa471286244360b1a2714021b558cf6b7bd4dbfe64d24c436474f70219
+runner_sha256: 86f9b65aace7ff407d843bc986c226fcbf7cd3570ad3564e7a7271b0333087b2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.52
@@ -44,14 +44,6 @@ GOUEZEL-KARLSSON DETERMINISTIC-COCYCLE NARROW NO-GO RUNNER (ROUND 3)
 [PASS] T13f: obstructions are independent (each independently sufficient)
 [PASS] T14a: identity ||Pi_N||_op = alpha^N holds for all alpha in (0,1) (identity does not select alpha_LM)
 [PASS] T14b: identity ||Pi_N||_op = alpha^N holds for any finite N (identity does not select N=16)
-============================================================================
-N5 EXECUTION CERTIFICATE — RESOLUTION GRANULARITIES
-============================================================================
-per_element: the admitted carrier's operators are 1-by-1, so each T_k has a single matrix element and the runner resolves exactly that one entry — symbolically it confirms the operator norm of [[alpha]] is |alpha| for every positive alpha, and numerically that entry is fixed to alpha_LM = 0.090667836017286 by the carrier definition T_k(x) = alpha_LM x, which is precisely why the non-tautology gate is recorded as failing.
-per_site: checked and not executed — nothing in this runner carries a spatial index; the only index set built is Omega = {0, ..., 15} of blocking-step labels with the shift T(k) = (k+1) mod 16 permuting those labels, and no lattice, link, or site observable is instantiated, so a site-resolved statement would have no domain to range over.
-per_mode: checked and not executed — the runner establishes that the admitted 1-dimensional scalar carrier supplies exactly one eigenvalue per T_k, so there is no second Lyapunov exponent and the spectral gap lambda_1 - lambda_2 is undefined; a mode-resolved quantity cannot be computed until a higher-rank substrate-canonical carrier is supplied, which obstruction G3 says is not available.
-per_block: the 16 staircase rungs are the resolved granularity — the uniform weights 1/16 over Omega sum exactly to 1, the cyclic shift orbit covers all 16 rungs, the rung-by-rung product gives ||Pi_16||_op = alpha_LM^16 ~= 2.085701e-17 with time-average A = -2.400553 equal to log(alpha_LM), and the rung count itself is shown not to be selected by re-running the identity at N = 4, 8, 32, 64.
-lattice_wide: checked and not executed — no volume, no thermodynamic limit, and no N -> infinity limit is taken anywhere, and that refusal is the content of obstruction G4: every cited MET-type theorem concludes about lim (1/N) log ||Pi_N|| while this staircase is frozen at N = 16, so the only global numbers the runner forms are the finite-surface marginal lambda_marginal ~= 3.7351 and its gap 3.6444 to alpha_LM.
 ============================================================================
 TOTAL: PASS=35 FAIL=0
 ============================================================================

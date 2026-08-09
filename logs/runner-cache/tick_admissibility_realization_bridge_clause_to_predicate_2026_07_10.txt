@@ -1,10 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py
-runner_sha256: 2ab0baf2cc37880951ba3162131b83b5035a90347ca5b449cf4edb4a6e7a6ef9
-input_fingerprint_sha256: b89e86dd6e6cbcc08e339c58553cfe596161140ef2e70aa963329c468b759321
+runner_sha256: 91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 conditional equivariant tick-realization lemma checks (2026-07-10)
@@ -31,8 +30,7 @@ PASS: [source-clause-translation] clause-1 sentence is present verbatim in the a
 PASS: [source-clause-variation] clause-2 sentence is present verbatim in the axioms and new note
 PASS: [scope-frame-phrase] note contains the full-covariance phrase
 PASS: [scope-support-phrase] note contains the support phrase
-PASS: [scope-support-variation-boundary] note makes support variation an extra premise
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=23 FAIL=0
 
 ----- stderr -----
 

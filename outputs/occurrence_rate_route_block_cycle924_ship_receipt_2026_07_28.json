@@ -1,58 +1,53 @@
 {
- "audit": "unset",
- "authority": "none",
- "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the worker falsified one supervisor spec premise (the 912 branch placement) and vendored correctly from blockQ9 \u2014 on record; supervisor line-by-line review",
- "certificates": {
-  "checker": "exit 0; PASS=8 FAIL=0; PRIMARY_SURVIVES_THIS_CHECK",
-  "primary": "exit 0; PASS=6 FAIL=0; self-contained fail-closed"
- },
- "claim_type": "bounded_theorem",
- "cluster_cap_evaluation": "re-evaluated after review-loop demotion: the block ships bounded conditional cores only; no closure, no-go, or unification claim",
- "cycles": [
-  924
- ],
- "files": {
-  "docs/OCCURRENCE_RATE_ROUTE_ARITHMETIC_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "aa95f03f5de46b9982391512fa236510870289e2",
-   "sha256": "16de35991ce120b9d07527722e1aa216707353190ad2a49f35a8f217f1ec539b"
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the worker falsified one supervisor spec premise (the 912 branch placement) and vendored correctly from blockQ9 \u2014 on record; supervisor line-by-line review",
+  "block": "toe-time-blockAC1-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 7.5s; PASS=35 FAIL=0; model-degeneracy attack confirmed (22 reachable values); referent gap re-confirmed with a positive control; hit count 9 reproduced from an independent pool",
+    "primary": "exit 0, 3.1s; PASS=65 FAIL=0; the angle-native no-go runner reproduced (PASS=128) + the menu exhibition re-derived before any new number; teeth fire (numerology gate, tampered vendor pin, perturbed constraint); double-run identical science digest"
   },
-  "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt": {
-   "git_blob": "8e72e0efc9baa30c1c4e3c480c1faabc289dc4f4",
-   "sha256": "e7f52a4c2afaa58be2b3b2b5cc88051cbe4d0a35f55222ba77fac138907f4db6"
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "n/a \u2014 1st AC-family PR this campaign (cap evaluation begins at the 3rd)",
+  "cycles": [
+    924
+  ],
+  "files": {
+    "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "dde715275e34d6d4ab92fcd22627d753be442f1d",
+      "sha256": "0afef517c334e061fbdaf9b84d49c05719bf486803d924b33da2d51ee8694801"
+    },
+    "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt": {
+      "git_blob": "1b6b9ff72b88c0d4b4839493a3cce6b36f0463a2",
+      "sha256": "5317d869d9ec1a45a332b61500e7eba2f6fee53c0bb21a79c531a281786984a2"
+    },
+    "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt": {
+      "git_blob": "318ae839fc56b7a2733bc991bc131dff933ebcac",
+      "sha256": "e062dd35d066ebd9da31a800c58fa123215cdacd16d9861bbe33e85a818b321b"
+    },
+    "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json": {
+      "git_blob": "467f5c109d9ce2b33fd635427dcb99ecaec2aa4b",
+      "sha256": "7e1725775ecc0c8fb740ce8235b2a14c93d4f624b73378e7f27de22358fb6455"
+    },
+    "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json": {
+      "git_blob": "cd9e972dade54b4ad5a1817debeae1a5b6567e85",
+      "sha256": "9794438a6307bdf5271df20ccb7aadb92081a0b10df626dee243988a8c08dda6"
+    },
+    "scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py": {
+      "git_blob": "16fc3049cf1664ef7f74c341d90db6d580cdea5f",
+      "sha256": "db8a1d103a1642c33260551e850821c3078182dc2cbe0dbdde1de8d4f72f3235"
+    },
+    "scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py": {
+      "git_blob": "24a74180dcc20b49c4dfc4807994a2a76b031a1d",
+      "sha256": "577899aef59bf8d777568a09a6c3258b7493fa40c68bd56f7c81a256e8a97d1d"
+    }
   },
-  "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt": {
-   "git_blob": "62eca374e78addc86145144077e3f24473449bde",
-   "sha256": "dd885311cd193387b2d19937b8f214b29eed7c8678b453c0fcc948bb2b4c2e8d"
-  },
-  "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json": {
-   "git_blob": "611d8faceee283c126a78e0bdbe5e2258f2d5c24",
-   "sha256": "86db082c58a0245bdd79cc3e20bee01ba3451a76a025f92d5bd28bde0613bed4"
-  },
-  "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json": {
-   "git_blob": "38d518c1dbdccbee21763fdc7badb0c0f1787412",
-   "sha256": "0df4035594f115a9dc28cf3788a6c21cbb611f8a324d77ea109d3beb650b9130"
-  },
-  "scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py": {
-   "git_blob": "f90d1915f1f16a4d9f9b44609a9d7212d834b93f",
-   "sha256": "58ec8a109d1acdecdc954c29660f4703f651afc692f707e070a8d141fbf657d7"
-  },
-  "scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py": {
-   "git_blob": "d042aac293218133f925c4c5e95634bb616e83bc",
-   "sha256": "06f460a07d247ea2449546850af2270aba9d825b95c646900fb1134b933191ed"
+  "headline": "R-ETA ROUTE 3 PRICED SHUT ON THE CURRENT SURFACE: eleven derived rate-ratio objects, nine numerological 2/3 hits, ZERO licenses \u2014 the referent gap is mechanical (no shared vocabulary between the occurrence and R-eta surfaces), the arity mismatch is a theorem (|A|=2 everywhere vs a C3 three-fold target), terminality is a theorem (one lock per world; the cross-world split is a primitive-forbidden setup average; the A3 channel leaves a 52,017-dim simplex); the natural candidate 21/41 misses 2/3 by exactly 19/123; route price itemized (A3-or-successor + referent + forcedness); AND THE UNIFICATION: the stretch no-go's constraint family IS the Cycle-871 bridge family (C3 = Z/3 translations as permutation groups) \u2014 the five-member alpha menu is five points on the bridge's own dimension-1 line ({0} and ONE projective point modulo scale; the no-go understated the freedom); the readout carries exactly one extra dimension (the h-unit ANGLE SCALE) the bridge never prices \u2014 bin 2's dimension computed = 1; adding I(1,1,1)=2/9 collapses survivors to exactly {2/27}; three opens are one computed freedom; route 1 (the licensed angle-native theorem) is the sole remaining live derivation route",
+  "independence": "checker on own rational arithmetic + dense solver, Q1 re-derived from the notes' prose, own candidate pool; PRIMARY_SURVIVES_THIS_CHECK, 35/35, zero refutations; 40/40 vendored pins digest-verified",
+  "note": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 7.5,
+    "primary": 3.1
   }
- },
- "headline": "occurrence-rate-route arithmetic: the recorded share 21/41 misses the imported 2/3 target by exactly 19/123; the declared cyclic-patch clause family has dimension 1 spanned by the record count; the imported alpha menu lies on that line and the imported (unaudited) normalization 2/9 selects 2/27.  The route-closure / sole-remaining-route / unification claims are WITHDRAWN; the occurrence route is OPEN; imports are unaudited-conditional",
- "independence": "checker recomputes every claim by a structurally different route from its own copy of the stipulations, pins the primary and its cache by sha256, and exits fail-closed on refutation",
- "note": "docs/OCCURRENCE_RATE_ROUTE_ARITHMETIC_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix": "route-closure claims withdrawn; false-PASS checks replaced; legacy monolith gate removed; imports marked unaudited",
-  "iteration": 1,
-  "reviewer": "Sol"
- },
- "runtime_seconds": {
-  "checker": 7.5,
-  "primary": 3.1
- }
 }

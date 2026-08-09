@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py
-runner_sha256: 3098d784d1f7475d5acef48054c80095d50a9ae6cbbe59275733636dded41406
+runner_sha256: fcead2f87b0e4653c5f351a57a6bc6cc1a0268a6d34bd5da4addb274d4ff2793
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -58,15 +58,6 @@ Part 5: gate-inventory specifics
   [PASS] open-number theorem exposes exactly two structural degrees of freedom
   [PASS] current C3 audit reduces C3 to a hypothetical alternative
   [PASS] honest Lane 5 status after this firewall is open, not a retained H_0 result  (C1 and C2 remain load-bearing; C3 has no active route)
-
-----------------------------------------------------------------------------------------
-N5 execution certificate: resolution granularity of this two-gate firewall
-----------------------------------------------------------------------------------------
-per_element: checked — the two-gate necessity is resolved variable by variable on the solved bridge H_0 = H_inf/sqrt(L), by taking each partial derivative symbolically: dH_0/dH_inf = 1/sqrt(L) and dH_0/dL = -H_inf/(2 L^(3/2)), both nonvanishing for positive L. Neither variable drops out of the identity, which is exactly why neither gate can be retired on its own, and the one-gate families confirm it numerically with spreads of 9.648 and 18.124 km/s/Mpc.
-per_site: checked and not executed — no lattice, cell, or site is constructed in this runner; H_0 is a single global scalar, and although the C1 gate is described in its source note as a coupled packet living on P_A H_cell, that carrier is only read as note text here and never built, so no site-resolved object exists to interrogate.
-per_mode: checked — the expansion rate is resolved into its three separately-scaling density components rather than used as a lump: radiation R=9.2e-05 times a^-4, matter M=0.314908 times a^-3, and the constant term L=0.685. A common rescaling of H_0 multiplies all three identically, so no single component carries the absolute scale. These are density components of the Friedmann sum, not spectral modes; nothing is eigendecomposed here.
-per_block: checked — the C1 gate is verified as a coupled block rather than as one premise: its four named sub-premises, the active-block response, the physical channel/Widom law, the gravitational boundary/action identification, and the action-unit metrology, are each required to be present, and the source note states in the same breath that the packet does not close the Planck lane. The C2 block is checked separately as the right-sensitive Z_3 doublet-block selector, and the C3 block is confirmed currently empty.
-lattice_wide: checked and not executed — no lattice-wide sum, cosmological integration, or asymptotic limit is taken; the structural lock is exercised on 11 sampled scale factors from a=0.5 to a=1.0, and the result is precisely that the lock fixes only the dimensionless ratio H(a)/H_0 while returning whichever scalar was supplied, so the runner ends with H_0 open rather than with any global determination.
 
 ========================================================================================
 PASS=18 FAIL=0

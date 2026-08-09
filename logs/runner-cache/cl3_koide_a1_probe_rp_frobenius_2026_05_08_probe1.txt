@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_rp_frobenius_2026_05_08_probe1.py
-runner_sha256: aae4240eb4de850497d907a5f679e86ab36ca8d63aaa2775f1009dd4d04b4916
+runner_sha256: 998ac3fc66e555d2bffefc5a602260fbcbdcb44e19d61366acdfeda1c2ebf498
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -85,16 +85,6 @@ They are NOT derivation inputs.
 
    Q anchor (PDG): 0.666661  (target: 2/3 = 0.666667)
    PDG: a_0² = 0.941523,  2|z|² = 0.941506
-
-==============================================================================
-SECTION 8: N5 execution certificate — resolution classes exercised here
-==============================================================================
-
-  per_element: resolved one object at a time — each candidate vacuum is separately validated Hermitian, unit-trace and positive before it is used, the three cyclic vectors (1,1,1)/sqrt(3), (1,0,0) and (1,0.5,0.5)/norm are each normed and checked cyclic on their own, and the two reduction maps A and B are applied and compared individually, with B shown to carry its image out of the circulant subspace.
-  per_site: checked and not executed — reflection positivity as retained lives on the Z^3 spatial path integral, but this probe never builds that path integral or any site index; it works entirely with the abstract M_3(C) acting on the momentum-space flavor sector hw=1, which is exactly what Barrier 4 records, that the spatial RP form does not induce a unique inner product on that algebra.
-  per_mode: resolved mode by mode on the C_3 characters, and Barrier 1 is precisely a per-mode freedom — e_+, e_omega and e_omega2 are each verified as eigenvectors with eigenvalues 1, omega and omega^2, C_3-invariance forces every admissible vacuum to be diagonal in that character basis, and the runner then varies the three character weights independently, tracial (1/3, 1/3, 1/3) against skewed (0.6, 0.2, 0.2), (0.2, 0.6, 0.2) and (0.1, 0.45, 0.45), showing the equipartition point moves with them.
-  per_block: resolved block by block, and Barrier 3 turns on it — the two block energies E_+ = 3a^2 and E_perp = 6|b|^2 are computed separately, their ratio is exactly 1 at the A1 point under the tracial vacuum and departs from 1 under every skewed vacuum, and even once the tracial GNS form is granted as (1/3) times Frobenius the block-total log-law and the det log-law still extremize at different kappa, the former near kappa = 2 which is A1 and the latter near kappa = 1.
-  lattice_wide: checked and not executed — no lattice volume, no site sum and no thermodynamic limit appears anywhere here; the lattice-wide retained inputs, reflection positivity and Reeh-Schlieder cyclicity, are used as structural facts rather than re-derived at any volume, and the two extremum statements are grid scans over 400 points in |b|/a on [0.1, 1.5] and over 400 points on the fixed-energy surface, so they are certified at that resolution and not as global closed-form maxima.
 
 ==============================================================================
 RESULTS

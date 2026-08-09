@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_physical_extremization_2026_05_09_probe25.py
-runner_sha256: c4ba91686195bb935729a6656d460c136a10fd86260b62469c8f9e473ba21b6e
+runner_sha256: d251deaae2de95e030cc75eece6334225547a630b39b4a663011ac6a802a3a6f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 
@@ -173,15 +173,6 @@ Section 13 — Comparison with prior probes
         Probe 18: cannot distinguish F1, F3 algebraically. Probe 25: retained Hamiltonian dynamics canonically gives F3 (real-dim weighting), NOT F1.
   PASS  13.4  Combined Probes 12, 18, 21, 25: BAE is NOT canonical from cited dynamics
         Retained Hamiltonian dynamics gives F3 -> kappa = 1, NOT BAE (kappa = 2). Multiplicity-counting F1 (which gives BAE) is structurally absent from retained-dynamics extremization principles.
-
-========================================================================
-N5 execution certificate — resolution reached by this runner
-========================================================================
-  per_element: the carrier is the 3x3 Hermitian circulant on hw=1 and its entries are manipulated directly: the trivial-isotype piece is built as the explicit matrix pi_+ = (Tr H / 3) I, the complement pi_perp = H - pi_+ is formed entrywise, and the two Frobenius energies are then required to reproduce E_+ = 3 a^2 and E_perp = 6 |b|^2 to 1e-10 (Sections 0.3 and 0.4), with C unitary and C^3 = I checked on the same entries.
-  per_site: checked and not executed — no site index survives anywhere in this runner. Section 7 makes the reason explicit: at the homogeneous saddle H_x = H the retained action alpha Tr(H^2) + kappa sum_NN Tr(H_x H_y) collapses to (alpha + kappa z_NN) Tr(H^2), so the nearest-neighbour coordination enters only as a constant prefactor and the F1-versus-F3 weighting question is entirely internal to one copy of Herm_circ(3).
-  per_mode: resolved, and it is the decisive granularity here — the trivial isotype carries one real mode a and the doublet carries two, Re b and Im b, and that count is measured rather than asserted: Section 2.5 forms (r1^2 + r2^2)/sigma^2 over 200000 seeded Gaussian samples and requires mean = k = 2 within 0.05 and variance = 2k = 4 within 0.1, while Section 3.1 recovers d log Z / d log(1/beta) = 3/2 = (1 + 2)/2 to 1e-6. F1's (1, 1) weighting is exactly the claim that the doublet has one mode.
-  per_block: resolved — the two isotype blocks are treated as separate blocks of the kinetic operator K, which is block-diagonal on them, and the free energy is assembled block by block: Section 4.3 forms log det(Gram_+) + log det(Gram_perp) and requires it to equal F3 to 1e-10, and Sections 2, 3, 4, 5, 6 and 8 each rebuild the same (1/2)[1 log E_+ + 2 log E_perp] from a different physical principle, agreeing at max difference below 1e-9 (Section 9.8).
-  lattice_wide: checked and not executed — nothing is summed, swept or limited over Z^3. The extremization is carried out on the two-dimensional constraint surface E_+ + E_perp = N with N = 6, over 41-point sweeps in x = E_perp, and the verdict kappa = 1 at E_perp = 2N/3 is a statement about one site's internal operator plane. No thermodynamic or continuum limit is taken and none is needed to separate F1 from F3, since the two differ already at fixed finite N.
 
 ========================================================================
 === TOTAL: PASS=57, FAIL=0 ===

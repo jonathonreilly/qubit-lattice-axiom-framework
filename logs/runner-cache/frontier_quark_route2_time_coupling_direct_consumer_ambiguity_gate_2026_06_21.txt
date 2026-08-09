@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_time_coupling_direct_consumer_ambiguity_gate_2026_06_21.py
-runner_sha256: 2fa3d273415a1f8040397a35a53ab64a79eb9157947f61cec822b3254992e26c
+runner_sha256: 61968629e945a2a13b2094ab5c0de49d1ef94f76ed2057942ec735da224c6d81
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.70
+elapsed_sec: 2.45
 status: ok
 ----- stdout -----
 Route-2 time-coupling direct-consumer ambiguity gate
@@ -27,10 +27,10 @@ PART 2: Exact Source-Factor Algebra
   P(0)      E-center = [1.000000000000 0.000000000000]
   P(21/4)   E-center = [1.875000000000 0.000000000000]
   Delta q_E           = 7/8
-  [PASS] varying rho_E leaves the E-shell source factor fixed  (shell residual=3.331e-16)
+  [PASS] varying rho_E leaves the E-shell source factor fixed  (shell residual=2.220e-16)
   [PASS] varying rho_E changes only the E-center source factor  (E-center factors are 1 and 15/8)
-  [PASS] varying rho_E leaves the T-shell source factor fixed  (T-shell residual=1.233e-32)
-  [PASS] varying rho_E leaves the T-center source factor fixed  (T-center residual=4.548e-18)
+  [PASS] varying rho_E leaves the T-shell source factor fixed  (T-shell residual=0.000e+00)
+  [PASS] varying rho_E leaves the T-center source factor fixed  (T-center residual=0.000e+00)
   [PASS] the live current-surface readout theorem still does not land  (this runner is a direct-consumer boundary, not an endpoint-triple derivation)
 
 ========================================================================
@@ -38,42 +38,33 @@ PART 3: Exact Time-Coupling Inheritance
 ========================================================================
   [PASS] the shared Route-2 slice generator is symmetric positive definite  (symmetry=0.000e+00, min_eig=1.148587e+00)
   [PASS] at t=0, the slice seed is nonzero  (||V_R(t)||=1.000000000000e+00)
-  [PASS] at t=0, E-shell time coupling is rho_E-invariant  (shell tensor delta=3.376e-16)
+  [PASS] at t=0, E-shell time coupling is rho_E-invariant  (shell tensor delta=2.251e-16)
   [PASS] at t=0, E-center tensor separation is exactly (7/8)||V_R(t)||  (observed=8.750000000000e-01, expected=8.750000000000e-01)
-  [PASS] at t=0, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=6.939e-18)
+  [PASS] at t=0, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=2.776e-17)
   [PASS] at t=0.25, the slice seed is nonzero  (||V_R(t)||=7.400222624801e-01)
-  [PASS] at t=0.25, E-shell time coupling is rho_E-invariant  (shell tensor delta=2.176e-16)
+  [PASS] at t=0.25, E-shell time coupling is rho_E-invariant  (shell tensor delta=1.999e-16)
   [PASS] at t=0.25, E-center tensor separation is exactly (7/8)||V_R(t)||  (observed=6.475194796701e-01, expected=6.475194796701e-01)
-  [PASS] at t=0.25, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=6.939e-18)
+  [PASS] at t=0.25, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=2.776e-17)
   [PASS] at t=0.5, the slice seed is nonzero  (||V_R(t)||=5.523475898872e-01)
-  [PASS] at t=0.5, E-shell time coupling is rho_E-invariant  (shell tensor delta=1.138e-16)
+  [PASS] at t=0.5, E-shell time coupling is rho_E-invariant  (shell tensor delta=1.112e-16)
   [PASS] at t=0.5, E-center tensor separation is exactly (7/8)||V_R(t)||  (observed=4.833041411513e-01, expected=4.833041411513e-01)
-  [PASS] at t=0.5, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=6.939e-18)
+  [PASS] at t=0.5, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=2.082e-17)
   [PASS] at t=1, the slice seed is nonzero  (||V_R(t)||=3.096832649118e-01)
-  [PASS] at t=1, E-shell time coupling is rho_E-invariant  (shell tensor delta=8.861e-17)
+  [PASS] at t=1, E-shell time coupling is rho_E-invariant  (shell tensor delta=5.562e-17)
   [PASS] at t=1, E-center tensor separation is exactly (7/8)||V_R(t)||  (observed=2.709728567978e-01, expected=2.709728567978e-01)
-  [PASS] at t=1, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=3.469e-18)
+  [PASS] at t=1, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=1.041e-17)
   [PASS] at t=2, the slice seed is nonzero  (||V_R(t)||=9.793128548901e-02)
-  [PASS] at t=2, E-shell time coupling is rho_E-invariant  (shell tensor delta=3.076e-17)
-  [PASS] at t=2, E-center tensor separation is exactly (7/8)||V_R(t)||  (observed=8.568987480289e-02, expected=8.568987480289e-02)
-  [PASS] at t=2, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=8.674e-19)
+  [PASS] at t=2, E-shell time coupling is rho_E-invariant  (shell tensor delta=2.407e-17)
+  [PASS] at t=2, E-center tensor separation is exactly (7/8)||V_R(t)||  (observed=8.568987480288e-02, expected=8.568987480288e-02)
+  [PASS] at t=2, rho_E=21/4 scales the rho_E=0 E-center tensor by 15/8  (scale residual=3.469e-18)
 
 ========================================================================
 PART 4: One-Dimensional Direct-Consumer Boundary
 ========================================================================
   [PASS] the rho_E ambiguity is rank-one on the restricted source columns  (source-delta rank=1)
   [PASS] only the E-center column carries the rho_E source delta  (E-shell, T-shell, and T-center deltas vanish)
-  [PASS] the same nonzero slice factor prevents cancellation at every checked time  (minimum E-center tensor delta over checked times=8.568987480289e-02)
+  [PASS] the same nonzero slice factor prevents cancellation at every checked time  (minimum E-center tensor delta over checked times=8.568987480288e-02)
   [PASS] the parent S3 target remains upstream readout selection rather than a new slice law  (direct-consumer packet points back to rho_E selection)
-
-========================================================================
-PART 5: N5 Execution Certificate (print-only; no check, no counter)
-========================================================================
-per_element: executed -- of the eight entries of P(rho_E) the difference P(21/4) - P(0) leaves exactly 1 entry above EXACT_TOL = 1e-12, the [0,2] slot that holds rho_E itself, and every readout output is then matched component against component with its exact target, which is what pins the E-center factor from 1 to 15/8 while the T-center component sits at -5/3 and the structural zeros stay zero.
-per_site: checked and not executed -- no lattice site is indexed anywhere in this file. The 1052 trace coordinates of Lambda_R are contracted at once into the single uniform seed u_*, which reaches the checks only through the scalar ||V_R(t)||, and the restricted carrier arrives already reduced to four shell/center columns, so the individual sites behind 'shell' are never pulled apart. The note's obstruction is upstream of any site resolution: it is a readout-selector gap, not a site-amplitude gap.
-per_mode: executed -- E and T are carried in rows 0 and 1 of P(rho_E) and are followed separately through every time in ['0', '1/4', '1/2', '1', '2']; the whole result of the gate is that the rho_E freedom lands in the E row alone, the largest T-side source delta being 4.548e-18 against EXACT_TOL = 1e-12. Without resolving the two bright modes apart there would be no sense in which the ambiguity is E-local.
-per_block: executed -- the restricted carrier is organized as four endpoint blocks, E-shell, E-center, T-shell and T-center, and PART 4 stacks their source deltas into one matrix whose numerical rank at tol = 1e-12 is 1, with the sole surviving column being E-center at exactly (7/8, 0). Three of the four blocks are therefore certified invariant under the entire unresolved readout freedom.
-lattice_wide: executed, and stated for a finite system -- the shared generator Lambda_R is built once on the fixed finite grid inside route2_slice_backbone() and is certified as a whole object before any channel is touched, symmetric to 0.000e+00 and positive definite with smallest eigenvalue 1.148587. That lattice-scale operator then enters only as the common factor V_R(t): across the 5 times the E-center separation reduces to (7/8)||V_R(t)|| with rescaling residual at most 6.939e-18. No large-volume or thermodynamic limit is taken, and none is needed for the boundary being claimed.
 
 ========================================================================
 SUMMARY

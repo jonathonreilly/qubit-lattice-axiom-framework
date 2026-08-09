@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_shared_fierz_no_go.py
-runner_sha256: e44e7cb9cd9b82b965069423f8f15c4fbb4994749d1867016d9c781b75d84228
+runner_sha256: b6eb03a501f8ccd503511f19064d75709b20ee3584de25010e5de8fc4aef42dd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================
@@ -101,14 +101,6 @@ These Fierz identities hold at TREE level only. At 1-loop, the
 diagrammatic structure of Rep-A and Rep-B diverges qualitatively
 and no Fierz rearrangement closes the gap.
 
-========================================================================
-N5 EXECUTION CERTIFICATE
-========================================================================
-per_element: checked and not executed — this runner compares two hard-coded dictionaries of label strings, whose color_structure and dirac_structure fields hold text such as '(C_F - C_A/2) T^A', never an array, so not one matrix element is computed anywhere in the file.
-per_site: checked and not executed — the objects compared are diagram pieces keyed by topology and renormalization type, and those carry no position label whatsoever; no lattice, coordinate or extent is defined at any point.
-per_mode: checked and not executed — the Brillouin-zone integrals appear only as identifier strings such as 'I_v_gauge' and 'I_v_scalar'; none is evaluated, and the runner's own verdict defers that evaluation to a separate channel-by-channel lattice-PT computation.
-per_block: inventory only — the colour channels C_F, C_A and T_F n_f are matched between the two representations by string equality and set membership, which is enough to establish that ['external_Z_psi'] is the unique exactly-shared non-trivial piece (the full shared set being ['external_Z_psi', 'tadpole'], with the tadpole absorbed into u_0 on both sides) and that the gluon self-energy and the scalar-operator anomalous dimension have no counterpart, but no block quantity is ever computed.
-lattice_wide: checked and not executed — nothing lattice-valued is constructed here; the only numbers printed are the tree-level constants -1/(2 N_c) and 1/(2 N_c) at N_c = 3, and all 4 checks are structural string comparisons rather than lattice measurements.
 ========================================================================
 SUMMARY: PASS=4  FAIL=0
 ========================================================================

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/carrier_attachment_chirality_gate_consolidation_runner.py
-runner_sha256: 7e9318498b38a2e0c664812bda797ae50c31bec161c9d8bbe400d29168e28364
+runner_sha256: f8345e43497aeedf7a6c8813c9d3bb96736e9149920c03099b66d451ede2d7c9
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.42
@@ -39,15 +39,6 @@ Source-boundary guardrail
 ==============================================================================
    source note forbids treating this as closed KS/Grassmann or generation/r=1/2 consolidation: True
   [PASS] source boundary prevents overclaiming the unresolved chirality/state-law bridge  | runner verifies the repair target introduced by the conditional audit
-
-==============================================================================
-N5 execution certificate
-==============================================================================
-  per_element: the identities are settled entry by entry on explicit matrices — the 64x64 anticommutator eps D + D eps is the exact zero matrix and D equals -D^T elementwise, while at the 2x2 level every commutator [H_scalar, sigma_i] vanishes and at least one [sigma.p, sigma_i] does not, which is what separates the spin-blind kernel from the spinful selector.
-  per_site: resolved site by site across all 64 sites of the L=4 periodic cube — each site (x, y, z) receives its own Kogut-Susskind phase triple eta = [1, (-1)^x, (-1)^(x+y)] on its three outgoing links, and its own chirality sign (-1)^(x+y+z) on the diagonal of eps, so both the operator and the grading are built from per-site data rather than assumed.
-  per_mode: checked and not executed — D is never diagonalized and no transform to momentum space is performed, so the staggered doubler content is never separated into modes; the chirality property is instead proved as an exact position-space operator identity, which is why it certifies nothing about which mode carries the physical matter state law.
-  per_block: checked and not executed — the single-component staggered field is kept unblocked, with no 2x2x2 hypercube blocking and no block-diagonal regrouping of D into taste blocks; that blocking is exactly the step the open Kawamoto-Smit / Grassmann route would need, and this runner deliberately stops short of it.
-  lattice_wide: the chirality gate is established for the whole lattice at once rather than sampled — the anticommutator is formed on the full 64x64 operator spanning every site of the periodic L=4 cube and vanishes identically, and anti-Hermiticity holds globally; no infinite-volume limit is taken, and the source boundary bars reading this global fact as the physical-state-law bridge or as the generation gate.
 
 runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
 TOTAL: PASS=5 FAIL=0

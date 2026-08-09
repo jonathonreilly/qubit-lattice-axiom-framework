@@ -1,10 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/render_controlled_vocabulary.py
-runner_sha256: bf675101701bea43b7a14796d97ea82931ebc124167a9de8e7ba06ef8c62cedf
-input_fingerprint_sha256: f2deb197d505cbd2d8a6757611c2ccb93fbb7d05fcbf6ae90e545f8b1b17a948
+runner_sha256: 59530f3bc95434f255669eba7897993bc81588e3aa42ed097b3803cf743f28a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 rendered docs/repo/CONTROLLED_VOCABULARY.md

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py
-runner_sha256: 12dec4689524302aff4f9aa7dc36e0f1c40857287d5dfd89b2a49378e20ee7bf
+runner_sha256: a2ad29538fb4be127a7f7f7413fa5c81701d8f75b62ca46928f05eeb8e1bb167
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
   ALGEBRA PASS  bare trivial-rep value r0 = 1/2 (free input)
@@ -41,13 +41,6 @@ status: ok
 [6] firewall: no r value forced; r0 free; result is the bound r_R <= r0
   ALGEBRA PASS  bound r_R <= r0 holds for a DIFFERENT free r0=0.31 (value not selected)
   ALGEBRA PASS  the bound is the same inequality for two distinct free r0 (0.5 and 0.31) => no value forced
-
-[7] N5 execution certificate -- what this runner resolves
-  per_element: checked -- the fibre-averaged generation operator is assembled entry by entry, M[i,j] = Tr(H block (i,j))/d_R, and the two entries that carry the result are read individually: a_eff = M[0,0] and b_eff = M[1,0] = b*chi_R(U)/d_R, giving r_R = |b_eff|^2/a_eff^2.
-  per_site: checked -- the generation 3-cycle C makes a closed three-site ring; the on-site term a*(I3 x I_dR) is verified link-blind (a_eff = a to 1e-12 in every rep) while only the hop C x U carries the holonomy, and by construction all three diagonal blocks are the same a*I_dR, so one is read.
-  per_mode: checked -- resolution runs over the fibre representation channels d_R = 1, 2, 3, 8 (trivial, U(2), U(3) >= SU(3)-fund, U(8) >= adjoint) separately; the d_R individual unit-modulus eigen-modes inside each channel are summed away by chi_R(U) = Tr_R(U) and never resolved.
-  per_block: checked -- each of the nine d_R x d_R generation blocks of H = a(I3 x I_dR) + b(C x U) + conj(b)(C^T x U^dag) is sliced out and traced over the fibre; the block trace is exactly where |chi_R(U)| <= d_R enters, and the bound survives 800 sampled unitaries across four d_R.
-  lattice_wide: checked and not executed -- U here is one closed based holonomy on a single loop, not a gauge configuration on an extended lattice; no volume, no loop family and no continuum limit is built, so the cap r_R <= r0 is proved pointwise in U and never lattice-wide.
 
 SCORECARD ALGEBRA_PASS=18 ALGEBRA_FAIL=0 CONDITIONAL_PASS=4 CONDITIONAL_FAIL=0
 TOTAL: PASS=22 FAIL=0

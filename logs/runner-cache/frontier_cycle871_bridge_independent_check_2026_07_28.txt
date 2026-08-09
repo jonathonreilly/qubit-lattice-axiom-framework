@@ -1,21 +1,12 @@
-===== runner cache v1 =====
-runner: scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py
-runner_sha256: be90ac251c972d02cddeab121951f3a0e52d36a85c18ff081963f12f25351b70
-input_fingerprint_sha256: 896b313147b261bde8144accdb9e7e32238fb724ddbe866ef0034b26e47dc942
-timeout_sec: 1400
-exit_code: 0
-elapsed_sec: 0.49
-status: ok
------ stdout -----
 ==============================================================================
 CYCLE 871 -- INDEPENDENT CHECKER, SPECIFIED TO REFUTE
 ==============================================================================
 
 -- pinned evidence (text/AST only, primary never imported) --------------
   scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py
-      sha256=230cdeac9390f2e7 exact=True blob_exact=True access=TEXT_AST_ONLY_BLOCKLISTED_PRIMARY
+      sha256=e27b91b699917aea exact=True blob_exact=True access=TEXT_AST_ONLY_BLOCKLISTED_PRIMARY
   logs/runner-cache/frontier_cycle871_source_action_bridge_pricing_2026_07_28.txt
-      sha256=5fa8607c740ab789 exact=True blob_exact=True access=TEXT_ONLY_PINNED_SOURCE
+      sha256=bf1e493cff5775bf exact=True blob_exact=True access=TEXT_ONLY_PINNED_SOURCE
   docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
       sha256=e246730a80817475 exact=True blob_exact=True access=TEXT_ONLY_PINNED_SOURCE
   docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
@@ -73,11 +64,8 @@ CYCLE 871 -- INDEPENDENT CHECKER, SPECIFIED TO REFUTE
   PASS  CERT-R4/orbit-recount              models=3 refutations=0
   PASS  CERT-R5/quote-reread               quotes_checked=9 refutations=0
   PASS  CERT-R6/determinism                hunt_sha_first=2a08979e80022521 hunt_sha_second=2a08979e80022521
-  PASS  CERT-RUNTIME/budget                elapsed_s=0.4 budget_s=1400
+  PASS  CERT-RUNTIME/budget                elapsed_s=0.3 budget_s=1400
 
 REFUTATIONS FOUND: 0
 TOTAL: PASS=8 FAIL=0
 VERDICT: PASS
-
------ stderr -----
-

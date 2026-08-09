@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_infogeom_foot45_native.py
-runner_sha256: a52858926929e070298688f61305b177cbd3824ed8732dc1c20ca6e04ccea241
+runner_sha256: cf370fabe7ced41813d624fd7c746eb5d63b507c5bf709d92a3f389eccc4a575
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -27,8 +27,8 @@ KOIDE info-geometry + Foot-45 native test  (native C3 circulant class)
 
 --- C. PRONG 1: quantum geometric tensor (FS metric + Berry) == 0 ---
 [PASS] eigenvectors are b-independent Fourier modes (eigenvector rigidity)
-[PASS] quantum geometric tensor (FS metric + Berry curvature) == 0 over b-plane  -- max|QGT component| = 1.28e-20
-[PASS] EXACT: fixed DFT basis F diagonalizes every circulant H (b-constant projectors)  -- max offdiag=3.11e-16, recon err=6.67e-16
+[PASS] quantum geometric tensor (FS metric + Berry curvature) == 0 over b-plane  -- max|QGT component| = 1.31e-20
+[PASS] EXACT: fixed DFT basis F diagonalizes every circulant H (b-constant projectors)  -- max offdiag=2.34e-16, recon err=6.66e-16
     => Re QGT (Fubini-Study metric) = 0  AND  Im QGT (Berry) = 0, EXACTLY:
        spectral projectors |psi_k><psi_k| are b-constant (DFT diagonalizes all circulants);
        the eigenstate bundle is FLAT in b; no quantum-metric extremum exists in b.
@@ -50,7 +50,7 @@ KOIDE info-geometry + Foot-45 native test  (native C3 circulant class)
 [PASS] equal-real-block (1,1) count: 3a^2=6b^2 -> r=1/2 -> Q=2/3 (= Foot 45deg)
 [PASS] central idempotents: rank(e0)=1, rank(e1)=2 (dimension split 1:2)
 [PASS] dimension/per-DOF (det_R) count: equal power per real mode -> r=1 -> Q=1
-[PASS] Z_3 Frobenius-Schur indicators = (1,0,0) -> R[Z_3]=R(+)C, two real blocks  -- FS = [1.0, np.float64(-0.0), np.float64(-0.0)]
+[PASS] Z_3 Frobenius-Schur indicators = (1,0,0) -> R[Z_3]=R(+)C, two real blocks  -- FS = [1.0, np.float64(-0.0), np.float64(0.0)]
 
 --- F. CRUX: (1,1) vs (1,2) both admissible-but-unforced (cited dependency) ---
 [PASS] isotype family: trace point (alpha=1,beta_F=0) is PD -> r=1 member
@@ -64,13 +64,6 @@ KOIDE info-geometry + Foot-45 native test  (native C3 circulant class)
 [PASS] no measured masses / PDG values used (algebra only)
 [PASS] Foot-45 / quantum-metric / Fisher-Rao used as geometry, not as new axioms or primitives
 [PASS] the ONLY non-derived ingredient is the (1,1) block-weight POSIT (flagged)
-
---- H. N5 execution certificate: what this runner resolves ---
-  per_element: resolved — the diagonalization claim is tested on matrix entries, not on a summary norm. At each base point the runner forms D = F^dag H F and requires the largest off-diagonal entry below 1e-12, then rebuilds H from the diagonal entries and the rank-one Fourier projectors and requires the largest entrywise reconstruction error below 1e-12. The block bookkeeping is likewise entrywise, with Tr(I^2) = 3, Tr((J-I)^2) = 6 and Tr(I(J-I)) = 0.
-  per_site: checked and not executed — the carrier is one generation space C^3 with no site index, hopping or spatial extent anywhere in the runner. Both prongs concern geometry over the coefficient b at a single carrier: the state bundle over the b-plane in prong 1, and the block-weight count on R[Z_3] in prong 2. Neither acquires a site-resolved form.
-  per_mode: resolved, and it is what closes prong 1. Eigenvector rigidity is checked mode by mode by overlapping each computed eigenvector against the fixed Fourier modes and requiring a column maximum of 1 to 1e-9 at four base points in the b-plane, and the quantum geometric tensor is then differenced band by band for all three bands, with both the Fubini-Study part and the Berry part staying below 1e-6. The character level appears again in the Frobenius-Schur indicators (1, 0, 0) computed per mode.
-  per_block: resolved, and it is what closes prong 2. The two real Wedderburn blocks are separated explicitly: the central idempotents e0 and e1 are built and their ranks confirmed as 1 and 2, the blocks are verified Hilbert-Schmidt orthogonal, and the fork is stated as a comparison of block-level energies, 3 a^2 against 6 |b|^2, giving r = 1/2 under the equal-block reading and r = 1 under the per-real-mode reading. Both corresponding members of the isotype-weight family are checked positive-definite.
-  lattice_wide: checked and not executed — no lattice, volume or thermodynamic limit occurs, and the sweeps present are over parameters rather than system size: four points in the b-plane and 201 nodes in r on [0, 1]. Nor could a lattice-wide version rescue the route, since the obstruction is the absence of any extremum at all: the eigenstate bundle is exactly flat in b because the spectral projectors are b-constant, and a flat landscape stays flat under any extension.
 
 ==============================================================================
 SCORECARD: PASS=31 FAIL=0

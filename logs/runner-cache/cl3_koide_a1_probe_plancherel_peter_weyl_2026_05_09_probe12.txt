@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_plancherel_peter_weyl_2026_05_09_probe12.py
-runner_sha256: 7b3cb7f32d4f7c7414bfd5a366995180a731e5c61978df16ee6b3ff6855d6153
+runner_sha256: 3854ed375fb0419ba23dfb25bad71b673424954dc89f1ac375e053d82760f3d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 === Section 1: Retained inputs ===
@@ -70,14 +70,6 @@ Plancherel-uniform scalar trace -> (1,2) weighting (Section 7-8)
 Net result: SHARPENED bounded obstruction.
             Residual is precisely the R-isotype vs C-character
             counting choice, not a generic normalization.
-
-=== Section 12: N5 execution certificate ===
-
-  per_element: resolved one basis element at a time — I, C and C^2 are each tested separately for C_3-fixedness rather than as a span, the conditional expectation E is verified elementwise for linearity, idempotence, equivariance and positivity on individual matrices, and the (a, b) -> H -> (a, b) round-trip confirms each coefficient is recovered on its own.
-  per_site: checked and not executed — there is no lattice and no site index anywhere in this probe; the averaging that defines E runs over the three group elements of C_3, not over sites, and M_3(C) is the fixed hw=1 matrix algebra with no spatial extent, so nothing is resolved at site granularity.
-  per_mode: resolved character by character on \hat{C_3} — each of the three complex characters 1, omega and omega_bar carries Plancherel weight exactly 1/3 with the three summing to 1, and the isotype dimensions are read off one character at a time as dim_C = 3, 3 and 3, totalling the full 9 = dim_C M_3(C); this per-character counting is what delivers the (1,2) weighting a^2 + 2|b|^2.
-  per_block: resolved block by block on the real isotype decomposition, and this is where the probe's whole obstruction sits — the Hermitian part of M_3(C) splits into a trivial real block of dim_R 3 and a real doublet block of dim_R 6, the Frobenius weights split correspondingly as ||pi_+(H)||^2 = 3 a^2 and ||pi_perp(H)||^2 = 6 |b|^2 which coincide exactly at A1, and it is this two-block counting that yields the (1,1) weighting. The residual is precisely per_block real-isotype counting versus per_mode complex-character counting; Plancherel measure picks the latter and nothing retained picks the former.
-  lattice_wide: checked and not executed — no lattice, no volume, no site sum and no limit of any kind is taken here, and the runner also shows that no global rescaling could stand in for one: both the ratio E_+/E_perp and the (1,1)-versus-(1,2) choice are scale-invariant, so there is no system-wide normalization left that could resolve the convention.
 
 ============================================================
 PASS 1.1 C is unitary (C C^* = I)

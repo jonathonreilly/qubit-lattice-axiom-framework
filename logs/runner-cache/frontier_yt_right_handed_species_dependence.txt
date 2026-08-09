@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_right_handed_species_dependence.py
-runner_sha256: bbaa57197b0648ed559a7ff7236b285a2579e38b524c48e65dddeb062f0a9d3e
+runner_sha256: 8296c20d883cd5e3e3dafbe6f7e1c78c99582ececf6ad0cbe06d6edf020c462b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 10.75
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================
@@ -124,15 +124,6 @@ SUMMARY
   falsification under Yukawa unification at M_Pl) is unchanged.
   A primitive beyond the retained right-handed sector is
   required to close the up-type vs down-type mass hierarchy.
-
-==============================================================================
-N5 EXECUTION CERTIFICATE
-==============================================================================
-  per_element: the heaviest computation in the file is genuinely at entry level - the four 16x16 Dirac matrices are assembled by a fourfold Kronecker product of Pauli factors, gamma_5 is formed as their ordered product and tested for involution, Hermiticity and anticommutation with each generator at tolerance 1e-10, and the taste commutant is extracted by stacking kron(Gamma_mu, eye(16)) - kron(eye(16), Gamma_mu.T) into a 1024-by-256 array and reading its null space off a singular value decomposition with a 1e-8 cutoff.
-  per_site: checked and not executed - the four Kronecker slots are Dirac and taste factors of one 16-dimensional spinor-taste space, not four locations, and the file contains no coordinate, hopping term or neighbour list. Every species label it manipulates (u_R, d_R, e_R, nu_R, Q_L, L_L) is a representation assignment carried as a Fraction, with no position attached.
-  per_mode: checked and not executed - nothing is expanded in momentum and no dispersion relation appears. The Clebsch-Gordan work is representation counting rather than mode analysis, and the only spectral operations performed are traces of projectors and a null-space dimension, neither of which isolates an individual mode.
-  per_block: real block content exists, but it is not the block content the headline claim needs - what is computed is that the chirality projectors (I16 -+ gamma_5)/2 each have trace exactly 8 on C^16, and that all 16 basis elements of the taste commutant commute with gamma_5 to within 1e-8, so the colour and taste structure is identical on the two chirality halves. The species-independence of the Yukawa Clebsch-Gordan itself is not computed at this or any granularity: cg_trilinear_yukawa() takes no arguments, so the up-type and down-type factors are two calls to the same constant function and their equality is a property of the code rather than a derived result.
-  lattice_wide: checked and not executed - the largest object is a single 16-dimensional spinor-taste space with a 256-dimensional operator space over it, and there is no volume, no boundary and no limit. The two anomaly traces that come closest to a global statement, Tr[Y] and Tr[Y^3], are exact rational sums over one generation's sixteen states and both vanish, which is a one-generation bookkeeping identity rather than a whole-system computation; the runner's own closing text agrees, saying a primitive beyond the retained right-handed sector is still required.
 
 ----- stderr -----
 

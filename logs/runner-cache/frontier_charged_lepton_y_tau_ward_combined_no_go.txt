@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py
-runner_sha256: 240da33743760dad845020b06db3f865e42f818ce45c5736011173b2c6c22104
+runner_sha256: 9a84068c48639f906368cfb87cdce9d02af4c5fa54f172363f39c7c9ba4d3169
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.12
+elapsed_sec: 0.90
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -47,7 +47,7 @@ PART M4: ANOMALY CANCELLATION DOES NOT FIX YUKAWA COEFFICIENTS
 ==============================================================================
   [PASS] Allowed monomial bar L_L H e_R: hypercharge sum = 0  (sum = 0)
   [PASS] Rejected monomial bar L_L tilde H e_R: hypercharge sum = -2 (forbidden)  (sum = -2 (nonzero -> rejected))
-  [PASS] Y_e matrix entries (i, j) all have identical hypercharge sum -> Y_e free  (Y_e is unconstrained 3x3 complex; sample diagonal abs = [np.float64(0.905834665413191), np.float64(2.253266749866127), np.float64(0.9590297811153047)])
+  [PASS] Y_e matrix entries (i, j) all have identical hypercharge sum -> Y_e free  (Y_e is unconstrained 3x3 complex; sample diagonal abs = [np.float64(0.9058346654131911), np.float64(2.2532667498661265), np.float64(0.9590297811153047)])
 
 ==============================================================================
 PART M5: N_gen = N_color = 3 IS INTEGER-COUNTING (NOT YUKAWA)
@@ -70,15 +70,6 @@ PART SURVEY: RESEARCH-LEVEL PREREQUISITES ABSENT FROM RETAINED
 ==============================================================================
   [PASS] M5-a prerequisite: no retained-grade D17-prime authority on the (2, 1) lepton-doublet block  (candidates: lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10:bounded_theorem:unaudited:unaudited; retained-grade: none)
   [PASS] M1 prerequisite: Koide Q V8 closure attempt is at support tier (not retained)  (V8 note exists; status line indicates support/retreat)
-
-==============================================================================
-PART N5: EXECUTION CERTIFICATE — RESOLUTION GRANULARITIES
-==============================================================================
-  per_element: the load-bearing trace identity is verified component by component rather than quoted — the diagonal entries Tr(T^a T^a) each return 1/2 for a = 1, 2, 3 and the off-diagonal entries Tr(T^1 T^2) and Tr(T^1 T^3) each return 0, which is the (a, b) delta structure that produces 1/sqrt(2 N_c) = 0.4082482905 at N_c = 3.
-  per_site: checked and not executed — no site index exists in this runner and no field is placed anywhere; the single spatial input is the dimension count d, which enters symbolically inside the closed rational (d+1)/(2d+3) and is then evaluated at d = 3, so it labels a dimension rather than enumerating sites.
-  per_mode: resolved per irrep in the one place representation theory is genuinely enumerated — the alternating group A_4 is broken into its four irreps of dimensions [1, 1, 1, 3] whose squares sum to 12 = |A_4|, and none of those per-irrep numbers is 4/9; no dynamical or momentum-mode expansion is performed anywhere, so nothing else here is mode-resolved.
-  per_block: the obstruction is stated block against block — the non-abelian trace identity Tr(T^a T^b) = delta^{ab}/2 lives on the color-triplet (2, 3) quark block and is what supplies a sqrt-rational factor, whereas on the colorless (2, 1) lepton block the same identity degenerates to Tr(I) = 1 with no a, b indices at all, leaving no construct of that shape to import.
-  lattice_wide: checked and not executed — no volume, ensemble or thermodynamic limit is formed; the widest sweep performed is over the audit ledger itself, where 1 D17-prime row(s) are found and 0 of them carry retained grade, which is how the absence of a Ward-identity authority on the current surface is established rather than assumed.
 
 ==============================================================================
 COMBINED NO-GO VERIFICATION: PASS=32 FAIL=0

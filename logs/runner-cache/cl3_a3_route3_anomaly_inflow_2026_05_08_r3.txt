@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_route3_anomaly_inflow_2026_05_08_r3.py
-runner_sha256: e99011e9eebaaf8ed27d8c0a8c140dccaa60080cfa174fc375e4f0d993634d7c
+runner_sha256: 4ede4b0e1f9a3445d4cbc25588db0520cc26319dcf918eed3b9207181a66b4a5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,7 +28,7 @@ Section 1: Universal C_3-symmetric equal-expectation lemma
   [PASS] [H, U_{C_3}] = 0
   [PASS] Corner-basis diagonal equal (substep4ac Lemma)
   diagonal: [1.5, 1.5, 1.5]
-  full eigenvalues (NOT corner basis): [0.28038475772933685, 1.3196152422706635, 2.9000000000000004]
+  full eigenvalues (NOT corner basis): [0.28038475772933735, 1.3196152422706635, 2.8999999999999995]
   Full eigenvalues are 3 distinct values, but corner-basis expectations are all equal -- this is the C_3-orbit obstruction.
 
 ==============================================================================
@@ -106,15 +106,6 @@ Section 5: Result summary
   states within a single symmetry orbit. Any anomaly-inflow
   operator constructed from C_3-symmetric primitives respects the
   substep4ac equal-expectation Lemma.
-
-==============================================================================
-Section 6: N5 execution certificate -- resolved granularity
-==============================================================================
-per_element: checked - every obstruction verdict is the comparison of individual corner-basis diagonal entries O[alpha, alpha]: the C_3-symmetric carriers give [1.5, 1.5, 1.5] with max minus min under 1e-12, while the sanity operator diag(1, 2, 3) separates the same three entries to [1.0, 2.0, 3.0] at commutator norm 2.45, showing the test has real teeth.
-per_site: checked and not executed - no real-space site is instantiated anywhere; that absence is itself three of the seven results, since E1 obstructs because Z^3 and finite L^3 APBC have no boundary to carry inflow, E2 because A1 + A2 supply no codimension-1 domain wall, and E7 because flat Z^3 supplies no torsion field, each requiring a new axiom to create.
-per_mode: checked - the eigenbasis is resolved separately from the corner basis, giving three distinct full eigenvalues [0.280385, 1.319615, 2.9] against the flat corner diagonal, and the 200-sample sweep spans eigenvalue spreads from 0.160 to 10.803 while every single sample keeps its corner expectations equal to 0.00e+00 difference.
-per_block: checked - all 8 Brillouin-zone corners are enumerated and stratified by Hamming weight into the blocks hw = [0, 1, 2, 3], and E6 computes the staggered chiral charge (-1)^hw for each hw=1 corner, obtaining [-1, -1, -1]; the index theorem thus resolves the sublattice-parity block but is constant inside it, which is the obstruction.
-lattice_wide: checked and not executed - each of the seven channels is evaluated as a 3x3 operator on H_{hw=1}, with no L^3 volume sum, no zero-mode count and no index actually computed by counting kernel dimensions; the Atiyah-Singer and Nieh-Yan invariants enter through their structural form only, so nothing here is certified by a whole-lattice evaluation.
 
 ==============================================================================
 EXACT      : PASS = 15, FAIL = 0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_transport_fiber_minimal_local_spectral_law_no_go_2026_04_19.py
-runner_sha256: 64b76bc453f55c5661fcffc12e76e5adbd461721a136438dd5ba7b8eecbe41f0
+runner_sha256: af432bed3c7c881561eb4fc6e7ea0be77fa632eeb0b1e954f9c45cad3708148d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.32
+elapsed_sec: 1.39
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,8 +19,8 @@ PART 1: NO SINGLE COMPLETED SPECTRAL SCALAR PICKS W1
 ========================================================================================
 PART 2: SCALE-FREE LOCAL SPECTRAL LAWS ARE UNDER-COMPLETE
 ========================================================================================
-  [PASS] Restricted to the 3-real transport fiber, the raw spectral completion (T, Q, Delta) remains a full local coordinate chart  (min restricted raw singular value=1.687867518265e-04)
-  [PASS] After canonical scale normalization, only the 2-scalar pair (Q/T^2, Delta/T^3) survives locally on that fiber  (min restricted normalized singular value=5.206276120550e-04)
+  [PASS] Restricted to the 3-real transport fiber, the raw spectral completion (T, Q, Delta) remains a full local coordinate chart  (min restricted raw singular value=1.687867506457e-04)
+  [PASS] After canonical scale normalization, only the 2-scalar pair (Q/T^2, Delta/T^3) survives locally on that fiber  (min restricted normalized singular value=5.206276117033e-04)
   [PASS] So every scale-free local spectral law leaves a 1-real local degeneracy and cannot exactly isolate an interior source  (rank(T,Q,Delta)|fiber = 3, rank(Q/T^2,Delta/T^3)|fiber = 2)
   [PASS] Positive normalized monomials in (Q/T^2, Delta/T^3) of total degree <= 4 do not even beat the explicit boundary competitors  (W1-winning normalized monomials=[])
 
@@ -42,8 +42,8 @@ PART 4: COEFFICIENT FREEDOM CAN EXPOSE WHICHEVER POINT ONE ASKS FOR
 ========================================================================================
 PART 5: THE MINIMAL MONOMIAL CANDIDATE IS STILL NOT AN EXACT SELECTOR
 ========================================================================================
-  [PASS] The minimal monomial Q Delta has nonzero projected gradient on the exact transport fiber through W1  (||P_fiber grad(QDelta)||=0.080118232295)
-  [PASS] A small transport-fiber ascent step increases Q Delta while preserving eta_1 and the favored column to first order and staying constructive  (delta(QDelta)=0.000080028237, delta_col=2.239e-06, delta_eta=2.715e-10)
+  [PASS] The minimal monomial Q Delta has nonzero projected gradient on the exact transport fiber through W1  (||P_fiber grad(QDelta)||=0.080118232647)
+  [PASS] A small transport-fiber ascent step increases Q Delta while preserving eta_1 and the favored column to first order and staying constructive  (delta(QDelta)=0.000080028238, delta_col=2.239e-06, delta_eta=2.715e-10)
   [PASS] So no nontrivial raw monomial law can be an exact interior selector on the completed spectral fiber  (grad(T^a Q^b Delta^c) = law * (a/T, b/Q, c/Delta), hence it never vanishes at a positive interior point unless the law is constant)
 
 ========================================================================================
@@ -51,23 +51,14 @@ PART 6: BOTTOM LINE
 ========================================================================================
   [PASS] The completed spectral data identify the live local selector coordinates but not a natural exact low-complexity selector law  (minimal packet-separator = Q Delta; exact low-complexity normalized/affine/monomial selector = no-go)
 
-========================================================================================
-PART 7: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
-========================================================================================
-  per_element: checked — each completed spectral scalar is maximized on its own over the explicit competitor packet and its individual winner is recorded, so max T, max Q and max Delta are three separate verdicts rather than one score, and the normalized determinant ratio q3 = Delta/T^3 is additionally tested alone against W1.
-  per_site: checked and not executed — no site index is ever constructed. The law under test is local by construction: it consumes only the invariants of a single H_e reached from a five-component source chart, so there is no site-resolved data for a selector to discriminate on.
-  per_mode: checked and not executed — individual Schur eigenvalues are never extracted here. This runner works exclusively at the symmetric-invariant level (T, Q, Delta) = (Tr H_e, Tr H_e^2, det H_e), which is the note's own framing of the completed spectral coordinates; the modes are aggregated into those three invariants before any law is applied.
-  per_block: checked — rank is certified after restriction to the transport-fiber tangent block, and the certificate is precisely the rank drop across two restrictions: the raw map has shape (3,3) and full rank 3 there, while the scale-normalized pair has shape (2,3) and rank 2, leaving the 1-real local degeneracy that defeats every scale-free law.
-  lattice_wide: checked and not executed — nothing is extended, scaled or taken to a limit. The searches are finite enumerations over a fixed explicit packet: raw monomials to total degree 3, normalized monomials to total degree 4, and a three-coefficient linear program for the affine class, all at one locality.
-
-  W1 invariants                 = [1.753967 2.252397 0.018682]
-  W1 normalized pair            = [0.732154 0.003462]
+  W1 invariants                 = [1.75396664 2.25239726 0.01868212]
+  W1 normalized pair            = [0.73215382 0.00346228]
   W1 minimal candidate QDelta   = 0.042079558293
   best explicit rival QDelta    = 0.038203540297
-  affine W1 weights             = [ 59.49702  -12.124073 211.559217]
-  affine B_major weights        = [  0.        3.30728 930.9973 ]
-  ||P_fiber grad(QDelta)||      = 0.080118232295
-  nearby ascent pack            = [1.05222  0.098778 0.122675 1.348161 0.018669]
+  affine W1 weights             = [ 59.49701988 -12.12407251 211.55921679]
+  affine B_major weights        = [  0.           3.30727979 930.99729963]
+  ||P_fiber grad(QDelta)||      = 0.080118232647
+  nearby ascent pack            = [1.05222031 0.09877824 0.12267472 1.34816137 0.01866948]
   PASS=17 FAIL=0
 
 ----- stderr -----

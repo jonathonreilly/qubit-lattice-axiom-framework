@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py
-runner_sha256: f46741deb04b846d998bd740c6adddce1a94c2ec2b6a218891ea759e73c3e140
+runner_sha256: c508d7dc5497f1e5ed9ca31cacc68f354467d9430c82b42e286efb99c634bdf4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 
@@ -41,15 +41,6 @@ Check 5 - det_R(alpha P_s + beta P_d) = alpha*beta^2; witness diag(3,6,6)
 [PASS] det_R(alpha=1.0, beta=0.5) = alpha*beta^2 = 0.250  (det=0.250)
 [PASS] det_R(alpha=4.0, beta=1.5) = alpha*beta^2 = 9.000  (det=9.000)
 [PASS] WITNESS diag(3,6,6) [the (1,2) weighting] is PD, C_3- and Theta-invariant
-
-========================================================================
-N5 execution certificate - what this runner resolves
-========================================================================
-  per_element: resolved, and it is how the freedom is located. The Gram is carried as six independent symbols and the C_3-invariance condition is imposed on all nine entries of R^T G R - G, then solved, which is what forces g01, g02 and g12 to zero and g22 to equal g11 while leaving the single ratio g00 : g11 free. The two antilinear-Theta residuals are likewise required to be zeros(3) entry by entry across the whole cone.
-  per_site: checked and not executed — no lattice, position index or neighbour term appears. The arena is one three-dimensional coordinate space (a, b_re, b_im) over a single generation operator span, and the question is which inner products on that one space survive the listed real-structure constraints. Nothing about that survives or fails differently at another site, because no other site exists here.
-  per_mode: resolved, and it is what disqualifies the fusion argument. The three eigenvalues of the Hermitian circulant are computed symbolically and all shown real, and the two doublet eigenvalues are then shown to be genuinely independent reals, distinct from one another and with nonzero derivative in b_im, rather than a complex-conjugate pair. The contrast case is run explicitly: a non-Hermitian real circulant does produce a conjugate pair with clearly nonzero imaginary parts.
-  per_block: resolved — the singlet and doublet projectors are built and their ranks confirmed as 1 and 2, the real determinant of a block-diagonal combination is verified to factor as alpha times beta squared at three separate (alpha, beta) pairs, exhibiting the (1, 2) weighting inside a genuine real determinant, and the block Gram diag(3, 6, 6) is checked positive-definite and invariant under both the C_3 rotation and Theta.
-  lattice_wide: checked and not executed — no volume, site sum or limit is formed, and the logical shape of the claim makes one unnecessary. This is a permitted-not-forced result, established by exhibiting one explicit object, the diag(3, 6, 6) witness, that satisfies every listed constraint while carrying the (1, 2) weighting. A single surviving witness cannot be removed by extending the system; only an additional constraint could remove it, which is the open handle the note names.
 
 ========================================================================
 Summary

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py
-runner_sha256: 12611814ddbb24410a14bf1809d9fbb820a2a66b11d2ab7d0d10f64d8d5c550d
+runner_sha256: 422d42c9c53b6af5e1a20a429ac11a85910c14c04df9359e4395295be8c09c12
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.78
+elapsed_sec: 1.68
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -64,13 +64,6 @@ PASS: note keeps future metric theorem open
 PASS: note does not claim endpoint closure
 PASS: proposal_allowed false is recorded
 PASS: bare retained is disallowed
-
-F. N5 execution certificate
-per_element: the selector equation is resolved coefficient by coefficient -- the a-coefficient is 161/64, the off-diagonal coefficient is -9/4 and the b-coefficient is -11/9, each an exact Fraction assembled from the two fixed source vectors, and the diagonal specialization collapses the three into the single required ratio b/a=1449/704.
-per_site: genuinely executed, because the two star roles are the very objects compared -- the shell source S=(1, -2) and the center source C(q_E)=(q_E, -5/3) enter as distinct 2-vectors, and the entire selector condition is the demand that their quadratic norms agree, so shifting the center entry q_E is precisely what the metric is being asked to absorb.
-per_mode: resolved on the two legs of each source vector -- the first entry of each pair is the E-channel leg and the second the T-channel leg, the T legs stay frozen at -2 on the shell and -5/3 at the center, and the off-diagonal metric entry c is exactly the E-T mode mixing whose coefficient -9/4 sits in the target equation.
-per_block: one exhaustive block sweep is run -- every integer triple with a and b in 1..64 and c in -64..64 is filtered to the SPD cone and tested against the target residual, and none of them solves it; this certificate states plainly that the emptiness is bounded rather than general, since the runner itself exhibits the SPD solution (a,b,c)=(704,1449,0) sitting just outside that search box.
-lattice_wide: checked and not executed -- no lattice, no volume, no sum and no limit appears anywhere in this file, and the only quantifier it attempts runs over that bounded integer box rather than over all admissible metrics; the genuinely unrestricted object, a typed Route-2 metric/source primitive that would derive 1449/704 instead of supplying it, is what the note leaves standing as the remaining positive target.
 
 Summary
 ------------------------------------------------------------------------

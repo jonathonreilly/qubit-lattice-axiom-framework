@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py
-runner_sha256: 0b4fe2618fad0b910f12bddb7dd0a64c960856251838ceb3ed145eef61933b09
+runner_sha256: 73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,13 +28,6 @@ Local exact one-plaquette samples
          P_1plaq(40) = 0.900700892162
   [PASS] [SUPPORT] analytic plaquette closure therefore cannot come from an exact finite-order truncation
          the remaining gap must be a genuinely nonpolynomial connected-hierarchy closure problem
-
-N5 execution certificate
-  per_element: checked and not executed - not a single array is constructed in this file; the only matrix work, the 3x3 Bessel determinants behind the one-plaquette value, happens inside the imported support routine and comes back already contracted to one scalar per coupling, so there is no entry left here to look at
-  per_site: checked and not executed - the file contains a list of six coupling values and the plaquette numbers they map to, and nothing else with an index; no site, link, spacing or boundary is defined, and the periodic Wilson surface mentioned in the third and fourth claims is never instantiated at any size
-  per_mode: checked and not executed - the representation-mode truncation is performed six separate times, once for each sampled coupling, but each call is immediately subscripted with [0] so all six mode cutoffs are thrown away unread; nothing in this runner can say how deep any of those sums had to go
-  per_block: exactly one block is ever evaluated, the local one-plaquette block, and it is evaluated at six couplings from 0.1 up to 40 - the companion claim that the same argument covers every finite periodic Wilson source surface is carried by a check whose condition is the bare literal True, so no second block of any size is formed and no block-to-block comparison takes place
-  lattice_wide: checked and not executed - the whole-surface statement and the beta to infinity limit are both asserted in prose inside detail strings rather than computed, the largest coupling actually evaluated being 40, and no lattice of any extent L is built at any point, so the hierarchy-truncation obstruction is established only on the single-plaquette measure
 
 ==============================================================================
 SUMMARY: THEOREM PASS=4 SUPPORT=3 FAIL=0

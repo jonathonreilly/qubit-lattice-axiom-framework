@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_option_c_brannen_rivero_2026_05_08_optC.py
-runner_sha256: 06f6d950999101579cc99334172345de91638408665e3e3c3d6330860b676cde
+runner_sha256: ef1c823b234336c254fb68e2c4e631d57db35fc6cf6ef4cdc3e17ac344c5fe89
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 A3 Option C bounded decomposition runner
@@ -16,7 +16,7 @@ PASS: circulant form is Hermitian in 12/12 trials | 12/12
 PASS: circulant form commutes with C3 in 12/12 trials | 12/12
 PASS: eigenvalues match closed Brannen-Rivero form | 12/12
 PASS: generic Hermitian C3-commuting family has 3 real dimensions | dim=3
-PASS: circulant operator is diagonal in Fourier basis | off_diag=8.500e-16
+PASS: circulant operator is diagonal in Fourier basis | off_diag=8.075e-16
 
 ==============================================================================
 2. Fourier basis relocates, but does not remove, identification
@@ -41,15 +41,6 @@ PASS: physical lattice baseline is not counted as an admission
 PASS: benchmark residual below 0.005 percent | max=2.884e-05
 PASS: Koide Q anchor near 2/3 | |Q-2/3|=6.154e-06
 Boundary: these observed masses are falsifiability anchors, not derivation premises.
-
-==============================================================================
-5. N5 execution certificate - what this runner resolves
-==============================================================================
-per_element: checked - the circulant is audited entry by entry, with H = a I + b C + conj(b) C^2 compared against its own conjugate transpose to max|H - H^dagger| < 1e-12 in 12/12 random trials, and each of the 9 Hermitian basis elements E_ii, E_ij + E_ji, i(E_ij - E_ji) individually commuted with U_C3 so the flattened real/imag rank count returns commutant dimension 3.
-per_site: checked and not executed - the note restores physical Cl(3) on Z^3 as baseline semantics precisely so it need not be re-derived, and this runner correspondingly instantiates no site: every object is the fixed internal hw=1 three-state factor, so no Z^3 point and no site-indexed quantity is computed.
-per_mode: checked - the three Fourier modes k = 0, 1, 2 are resolved individually, with lambda_k = [2.9, 0.280385, 1.319615] at the documented benchmark (a = 1.5, b = (0.7+0.3j)), matched mode by mode against eigvalsh to 1e-10 in 12/12 trials, generically split by 2.619615, and the anchor's three predicted sqrt-masses residual to 2.884e-05.
-per_block: checked and not executed - exactly one operator block is instantiated, the 3x3 hw=1 sector; there is no block index and no direct sum of sector copies, and the Fourier rotation splits that single block into three 1x1 pieces (off_diag = 8.500e-16) reported at per_mode resolution.
-lattice_wide: checked and not executed - no lattice is built and no volume-extensive or thermodynamic-limit quantity is taken; that absence is the note's own boundary, since the four non-retained gates A1, P1, the delta/radian unit bridge and the v_0 scale are exactly what any lattice-wide species identification would still have to supply.
 
 TOTAL: PASS=15 FAIL=0
 Bounded decomposition verified; full closure still needs the four named inputs.

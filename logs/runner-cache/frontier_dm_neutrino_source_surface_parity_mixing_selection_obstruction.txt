@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py
-runner_sha256: ff894f0fa270ad57a67240c340157334a6a1c71ceff42b9ec9b5bed5dba396e2
+runner_sha256: bc30a5f85f9e530d2c73b8a0174c0790fe17580bea8f58bc0a1877e156257831
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,7 +15,7 @@ Result: NARROWER-GAP + CLOSURE-CANDIDATE-PENDING-PHYSICS-CROSS-CHECK
 ========================================================================================
 PART 1: PARITY-MIXING SURVEY OF RETAINED ATLAS CANDIDATES
 ========================================================================================
- [PASS (C)] K_01 = a_*, K_02 = b_* are frozen constants on the active sheet (no (m, delta, q_+) dependence) (max ||K_0j - a_*/b_*|| = 3.33e-16)
+ [PASS (C)] K_01 = a_*, K_02 = b_* are frozen constants on the active sheet (no (m, delta, q_+) dependence) (max ||K_0j - a_*/b_*|| = 4.58e-16)
  [PASS (C)] K_11, K_22 are INDEPENDENT of delta (parity-definite, q_+ only)
  [PASS (C)] K_12 is INDEPENDENT of q_+ (parity-definite, delta only, plus spectator m)
  [PASS (C)] det K_doublet = K_11 K_22 - |K_12|^2 is genuinely parity-MIXING (depends on both delta and q_+) (range of det over sample grid = 3.9677)
@@ -123,15 +123,6 @@ PART 6: NARROWED-GAP STATEMENT
  [PASS (C)] the selector gate remains OPEN (five inequivalent candidates; no sole-axiom unique selector) (narrower-gap + closure-candidate-pending-physics-cross-check)
  [PASS (C)] Parity-mixing class ALSO obstructed by functional-selection ambiguity (not theorem-grade closure)
  [PASS (C)] Retained-atlas-native parity-mixing candidate (F1-min) is recorded for Physics-Validation cross-check ((sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18))
-
-========================================================================================
-PART 7: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
-========================================================================================
- per_element: checked — each Z_3 kernel entry is carried in exact closed form and its dependence is tested on its own: K01 and K02 are verified frozen constants with no (m, delta, q_+) dependence, K11 and K22 are shown independent of delta, and K12 independent of q_+, so the parity split is established entry by entry with K11 - K22 = -0.5773502692 = -1/sqrt(3) exactly.
- per_site: checked and not executed — the whole computation is carried by the three chart coordinates (m, delta, q_+) feeding closed-form kernel entries; this runner instantiates no lattice, no site index and no spatial sum, so the parity-mixing selector question is never posed at site resolution and no site-level claim is made.
- per_mode: checked — the two Z_3 parity sectors are separated and each is differentiated on its own: the even sector K11^2 + K22^2 depends only on q_+ and the odd sector 2|K12|^2 only on delta, and the runner verifies the gradient decoupling numerically, d/d(delta) of the even sector and d/d(q_+) of the odd sector both coming out exactly zero — the mixing functional is a sum of sectors, never a genuinely coupled one.
- per_block: checked — the invariants are built strictly from the 2x2 doublet block K[1:3, 1:3] while the singlet-facing entries stay frozen at a_* and b_*, and the block choice is what decides the outcome: the three block invariants disagree, F1 selecting delta = 1.146177 with q_+ = 0.486816, F2 a different boundary extremum, and F3 losing q_+ sensitivity entirely because the block's traceless part is constant.
- lattice_wide: checked and not executed — no volume, thermodynamic limit or lattice sum appears; the widest sweep is a finite ladder of seven discrete m values confirming that the F1 boundary minimizer is m-independent (with the separate m-stationary point m_* = 4 sqrt(2)/9 = 0.628539), which is a bounded scale check on one chart rather than any statement at lattice scale.
 
 ========================================================================================
 TOTAL: PASS = 27, FAIL = 0

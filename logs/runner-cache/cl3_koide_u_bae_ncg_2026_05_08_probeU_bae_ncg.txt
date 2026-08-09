@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_u_bae_ncg_2026_05_08_probeU_bae_ncg.py
-runner_sha256: ab75b0408c27cdc2578630c64a511e7510e89a29e2b3b347cbb071e936245ce4
+runner_sha256: 86df5d2893beefc7a16ffeaff1ab41c8850702c938b394dc2cc16b5613d4df87
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 ========================================================================
@@ -19,7 +19,7 @@ Section 0 — Retained sanity (C_3 cycle, H_circ, eigenvalues, Brannen sqrt)
   [PASS] 0.3: det(C) = +1 | det(C) = 1.000000 (target 1.0)
   [PASS] 0.4: H_circ Hermitian for sample (a=1, b=0.5+0.3i) | max |H - H†| = 0.00e+00
   [PASS] 0.5: H_circ commutes with C (C_3-equivariant) | max |[H, C]| = 0.00e+00
-  [PASS] 0.6: closed-form eigenvalues match numerical | diff = 4.44e-16
+  [PASS] 0.6: closed-form eigenvalues match numerical | diff = 6.66e-16
   [PASS] 0.7: Brannen square-root identification gives Koide Q = 2/3 at BAE | Q = 0.6666666667 (target 2/3 ≈ 0.66667)
   [PASS] 0.8: BAE algebraic equivalence: a^2 = 2|b|^2 at |b|/a = 1/√2 | a^2 - 2|b|^2 = 0.00e+00
 
@@ -145,13 +145,6 @@ Section 9 — Does-not disclaimers
   [ADMITTED] 9.9: does NOT propose alternative κ as physical | BAE residual unchanged; no κ remapping
   [ADMITTED] 9.10: does NOT promote sister bridge gaps | L3a, L3b, C-iso, W1.exact unchanged
   [ADMITTED] 9.11: does NOT introduce new physics axioms | NCG used to test consequences of existing source content
-
-Section 10 — N5 execution certificate: what this runner resolves
-  per_element: resolved — the Dirac operator and the cycle are handled as explicit 3x3 matrices with entrywise acceptance criteria: the cycle is checked unitary and of order three by the largest entry deviation from the identity, its determinant is pinned to +1, D is required self-adjoint by max |D - D^dag|, and the equivariance [H, C] is required to vanish entry by entry. The first-order condition is likewise evaluated as an explicit double commutator on concrete Hermitian test matrices, whose norm must exceed 1e-8 for the constraint to be genuine rather than automatic.
-  per_site: checked and not executed — the algebra of the triple is described as the local Cl(3) factor together with functions on the Z^3 substrate, but only the finite factor is ever instantiated. Every computation here lives on the hw=1 sector isomorphic to C^3, with no site index, no function algebra over the substrate and no locality structure, so nothing in this runner distinguishes one site from another.
-  per_mode: resolved, and it is the level at which the spectral action is actually built. The three modes lambda_k = a + 2|b| cos(arg b + 2 pi k / 3) are computed in closed form and cross-checked against numerical diagonalization to 1e-10, the action is assembled as the mode sum of f(lambda_k^2 / Lambda^2), and the heat-kernel content is expressed through the mode power sums, with P_1 = 3 a carrying no amplitude dependence at all.
-  per_block: resolved — the C_3 isotype blocks are what the second power sum separates, P_2 = 3 a^2 + 6 |b|^2 splitting into a singlet block total and a doublet block total, and the BAE condition under test is exactly the equal-block statement a^2 = 2 |b|^2. That block identity is confirmed algebraically and the block-total derivative in |b| is shown to vanish only at |b| = 0, never at the BAE ratio.
-  lattice_wide: checked and not executed, and its absence is part of the finding rather than a gap. No Z^3 sum, volume or continuum limit is formed, and the cutoff scale is held fixed at Lambda = 1 throughout, so the asymptotic large-Lambda regime in which a spectral action would normally be expanded is never entered. What is scanned instead is convention space at fixed finite rank: four cutoff functions, a 1000-point amplitude grid and a 2000-point phase grid, with BAE counted as critical only within 0.05 in |b|/a and Brannen-phase stationarity tested against a 1e-2 threshold. The route fails on that robustness scan, not on any asymptotic argument.
 
 === TOTAL: PASS=51, FAIL=0, ADMITTED=28 (computed=51) ===
 

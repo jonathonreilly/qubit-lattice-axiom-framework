@@ -1,44 +1,472 @@
 {
- "all_certificates_pass": true,
+ "CHECKER_VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+ "block": "toe-time-blockQ6-20260802",
+ "campaign": "campaign-5-born-lane-closure",
  "certificates": {
-  "R0_PINNED_EVIDENCE": {
-   "detail": "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt:MATCH",
-   "pass": true
+  "R1_INDEPENDENT_SHAPE": {
+   "agreement": {
+    "degree0": true,
+    "degree2": true,
+    "designated_positions": true
+   },
+   "block_sizes_force_one_event_per_world_per_atom": true,
+   "certificate": "R1_INDEPENDENT_SHAPE",
+   "checker_block_masses_degree0": [
+    171600,
+    32010,
+    5412,
+    11
+   ],
+   "checker_block_masses_degree2": [
+    19008,
+    2904,
+    1188,
+    0
+   ],
+   "checker_constraint_set": {
+    "degree0": {
+     "everything_else": "15600/19003",
+     "position_1": "2910/19003",
+     "position_2": "492/19003",
+     "position_3": "1/19003"
+    },
+    "degree2": {
+     "everything_else": "144/175",
+     "position_1": "22/175",
+     "position_2": "9/175",
+     "position_3": "0/1"
+    }
+   },
+   "checker_free_dimension_by_rank": 1406,
+   "checker_totals": [
+    209033,
+    23100
+   ],
+   "constraint_matrix_rank": 13,
+   "disagreement": false,
+   "free_coordinate_perturbation_preserves_the_shape": true,
+   "free_dimension_agrees": true,
+   "pinned_coordinate_perturbation_breaks_the_shape": true,
+   "primary_constraint_set": {
+    "degree0": {
+     "everything_else": "15600/19003",
+     "position_1": "2910/19003",
+     "position_2": "492/19003",
+     "position_3": "1/19003"
+    },
+    "degree2": {
+     "everything_else": "144/175",
+     "position_1": "22/175",
+     "position_2": "9/175",
+     "position_3": "0/1"
+    }
+   },
+   "primary_free_dimension": 1406,
+   "pushforward_reproduces_the_902_columns": true,
+   "totals_agree_with_the_907_checker_receipt": true
   },
-  "R0b_CLAIMS_PARSED": {
-   "detail": "claims_line_found=True",
-   "pass": true
+  "R2_INDEPENDENT_RECIPES": {
+   "certificate": "R2_INDEPENDENT_RECIPES",
+   "checker_found_degree0_realizers": [],
+   "checker_found_degree2_realizers": [],
+   "disagreement": false,
+   "primary_claimed_degree0_realizers": [],
+   "primary_claimed_degree2_realizers": [],
+   "rows": [
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "42/43",
+      "1/129",
+      "1/129",
+      "1/129"
+     ],
+     "recipe": "one"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "42/43",
+      "1/129",
+      "1/129",
+      "1/129"
+     ],
+     "recipe": "occ"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "2792/2795",
+      "2/8385",
+      "1/2795",
+      "4/8385"
+     ],
+     "recipe": "index1"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "<long exact fraction>",
+      "<long exact fraction>",
+      "<long exact fraction>",
+      "<long exact fraction>"
+     ],
+     "recipe": "content"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "<long exact fraction>",
+      "<long exact fraction>",
+      "<long exact fraction>",
+      "<long exact fraction>"
+     ],
+     "recipe": "moment1"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "45709/45771",
+      "20/45771",
+      "13/45771",
+      "29/45771"
+     ],
+     "recipe": "ordinal1"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "1/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     "recipe": "isF"
+    },
+    {
+     "degree0_realizes": false,
+     "degree2_realizes": false,
+     "orbit_profile": [
+      "42/43",
+      "1/129",
+      "1/129",
+      "1/129"
+     ],
+     "recipe": "formed"
+    }
+   ],
+   "uniform_orbit_profile": [
+    "42/43",
+    "1/129",
+    "1/129",
+    "1/129"
+   ],
+   "uniform_required_profile": [
+    "15600/19003",
+    "2910/19003",
+    "492/19003",
+    "1/19003"
+   ]
   },
-  "R1_FACTORIZATION": {
-   "detail": "19003=31*613 primality independently confirmed; primary_factors={'31': 1, '613': 1}",
-   "pass": true
+  "R3_CENSUS_COMPLETENESS": {
+   "certificate": "R3_CENSUS_COMPLETENESS",
+   "declared_strides": "HUNT A1 keeps one triple in seven, A3 one pair in eleven and A4 one pair in five.  A stride can only make the hunt WEAKER, never produce a false realizer, and it is disclosed here rather than hidden.  The lemma below is what makes the negative complete.",
+   "disagreement": false,
+   "hunt_B_prime_reachability": {
+    "fields_reaching_both": [],
+    "fields_whose_world_sums_reach_31": [
+     "content_hi16",
+     "moment",
+     "occ0"
+    ],
+    "fields_whose_world_sums_reach_613": [],
+    "primes_a_degree0_realizer_needs": [
+     31,
+     613
+    ]
+   },
+   "hunt_C_position_ratio_hits": [],
+   "lemma_survivor_count_degree0": 2,
+   "lemma_survivor_count_degree2": 208,
+   "lemma_survivors_degree0": [
+    "MOD(content_mod_small,17)",
+    "TRIPLE(content_pop,index,moment1)"
+   ],
+   "realizers_found": [],
+   "recipes_tested_outside_the_declared_closure": 3220,
+   "verdict": "NO_REALIZER_FOUND_OUTSIDE_THE_DECLARED_CLOSURE"
   },
-  "R2_TABLE_BY_MULTIPLICATION": {
-   "detail": "sites*per_site==column for both degrees: True",
-   "pass": true
+  "R4_DEGREE_TWO": {
+   "any_transform_works": false,
+   "brute_force_layer_amplitudes": [
+    [
+     36,
+     2
+    ],
+    [
+     22,
+     1
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "certificate": "R4_DEGREE_TWO",
+   "checker_admissible_degree2_column_count": 6,
+   "counts_agree": true,
+   "disagreement": false,
+   "identity_holds": true,
+   "layers_agree": true,
+   "primary_admissible_degree2_column_count": 6,
+   "primary_claimed_any_transform_works": false,
+   "primary_layer_amplitudes": [
+    [
+     36,
+     2
+    ],
+    [
+     22,
+     1
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "sum_of_two_squares_representations": [
+    [
+     [
+      36,
+      2
+     ],
+     [
+      34,
+      12
+     ],
+     [
+      30,
+      20
+     ]
+    ],
+    [
+     [
+      22,
+      1
+     ],
+     [
+      17,
+      14
+     ]
+    ],
+    [
+     [
+      9,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      0
+     ]
+    ]
+   ],
+   "wider_transform_family": [
+    {
+     "holds": false,
+     "transform": "SCALAR",
+     "why": "per-atom ratios are not constant"
+    },
+    {
+     "holds": false,
+     "transform": "AFFINE c_2 = a c_0 + b",
+     "why": "fitted a = 244/2115, b = -10112/141; tested on all four atoms"
+    },
+    {
+     "holds": false,
+     "transform": "SITE PROPORTIONAL c_2 = k * sites",
+     "why": "c_2 / sites takes the values ['0/1', '144/1', '18/1', '44/1']"
+    },
+    {
+     "holds": false,
+     "transform": "QUADRATIC in c_0, fitted on three atoms",
+     "why": "interpolated through atoms 0,1,2 and tested on atom 3"
+    },
+    {
+     "holds": false,
+     "transform": "SQRT-LINKED c_2 = 2 sqrt(c_0 * k)",
+     "why": "c_2 = 2 p q with p^2 + q^2 = c_0 fixes only a PRODUCT; the pair (p, q) is not a function of c_0, which is exactly the finding"
+    }
+   ]
   },
-  "R3_TWO_SQUARES_INDEPENDENT": {
-   "detail": "counts=[3, 2, 1, 1] product=6 primary=[3, 2, 1, 1]/6",
-   "pass": true
-  },
-  "R4_DENOMINATOR_LEMMA_INDEPENDENT": {
-   "detail": "trials=3000 violations=0 primary_violations=0",
-   "pass": true
-  },
-  "R5_RUNTIME": {
-   "detail": "elapsed_s=0.0 budget_s=300",
-   "pass": true
+  "R5_TEETH": {
+   "all_teeth_bite": true,
+   "certificate": "R5_TEETH",
+   "teeth": [
+    {
+     "detected": true,
+     "tooth": "TAMPERED_PIN"
+    },
+    {
+     "detected": true,
+     "rows": {
+      "degree0_plant": true,
+      "degree2_plant": true,
+      "near_miss_rejected": true
+     },
+     "tooth": "PLANTED_REALIZER_BLINDNESS"
+    },
+    {
+     "detected": true,
+     "tooth": "LEAKED_REALIZATION",
+     "what": "the denominator-lemma filter used by the completeness hunt must NOT block a genuine realizer"
+    },
+    {
+     "detected": true,
+     "tooth": "SKIPPED_WORLD"
+    },
+    {
+     "detected": true,
+     "rows": {
+      "declared": [
+       "K1_IDENTITY",
+       "K2_TAG_RESTRICTION",
+       "K3_PAIRWISE_PRODUCT",
+       "K4_INDEX_PROFILE",
+       "K5_POSITION_ATOM",
+       "K6_BOUNDED_SUM"
+      ],
+      "families_in_the_table": {
+       "K1_IDENTITY": 30,
+       "K2_TAG_RESTRICTION": 180,
+       "K3_PAIRWISE_PRODUCT": 435,
+       "K4_INDEX_PROFILE": 36,
+       "K5_POSITION_ATOM": 129,
+       "K6_BOUNDED_SUM": 594,
+       "PLANTED": 5
+      }
+     },
+     "tooth": "DROPPED_RECIPE"
+    },
+    {
+     "detected": true,
+     "rows": {
+      "distinct_verdict_literals_in_the_classifier": 4,
+      "receipt": "ii_PURCHASE",
+      "recomputed": "ii_PURCHASE"
+     },
+     "tooth": "HARDCODED_VERDICT",
+     "what": "the receipt's outcome class must be reproducible from the receipt's own realizer counts, and the classifier must branch on them rather than return a constant"
+    },
+    {
+     "detected": true,
+     "tooth": "LEMMA_STRESS"
+    },
+    {
+     "detected": true,
+     "tooth": "ANSWER_LEAKED_INTO_THE_FIELD_LIST",
+     "what": "no base field definition may name a gravity coefficient"
+    }
+   ],
+   "tooth_count": 8
   }
  },
- "claim_type": "bounded_theorem",
- "cycle": 909,
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix": "self-contained rewrite; refutes the stipulated-table cores by independent routes; fail-closed exit",
-  "iteration": 1,
-  "reviewer": "Sol"
+ "checks": {
+  "R1_INDEPENDENT_SHAPE": true,
+  "R2_INDEPENDENT_RECIPES": true,
+  "R3_CENSUS_COMPLETENESS": true,
+  "R4_DEGREE_TWO": true,
+  "R5_TEETH": true
  },
- "role": "independent_checker",
- "verdict": "PRIMARY_SURVIVES_THIS_CHECK"
+ "cross_checks": {
+  "escape_orbit_matches_906": true,
+  "event_cardinality": 92260,
+  "primary_all_certificates_pass": true,
+  "primary_verdict": "WITHIN_WORLD_DISTRIBUTION_IS_A_PURCHASE",
+  "support_events": 1419,
+  "support_matches_906": true
+ },
+ "cycle": 909,
+ "disagreements": [],
+ "elapsed_sec": 76.957,
+ "firewall_hits": 0,
+ "pins_verified": true,
+ "primary_receipt_sha256": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52",
+ "primary_sha256": "b38862284c0287dc8b1f24f5af8bf014509e22377d341b9933a05b2183af0021",
+ "refinements": [
+  "the primary's denominator lemma is re-derived here from scratch and used as the filter of the completeness hunt; the hunt's leaked-realization tooth confirms the filter does not block a genuine realizer, so the hunt is not blind by construction",
+  "HUNT B is the sharpest form of the negative: a degree-0 realizer needs the primes 31 and 613 in the escape-world sums, and the checker reports exactly which census fields reach them",
+  "R4 refits the degree-2 relation with an AFFINE and a QUADRATIC family the primary did not test; both are reported whether they hold or not"
+ ],
+ "role": "independent checker, specified to refute",
+ "self_sha256": "14169fbc8285c7439b983b02aac7577244cb983a52fe4472821e005f19b4ee8c",
+ "source_pins": [
+  {
+   "bytes": 26046,
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  {
+   "bytes": 23020,
+   "path": "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+   "sha256": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62"
+  },
+  {
+   "bytes": 47315,
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+  },
+  {
+   "bytes": 16040,
+   "path": "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json",
+   "sha256": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8"
+  },
+  {
+   "bytes": 17314,
+   "path": "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+   "sha256": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f"
+  },
+  {
+   "bytes": 116092,
+   "path": "scripts/frontier_cycle907_m6_identification_2026_07_28.py",
+   "sha256": "cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53"
+  },
+  {
+   "bytes": 22689,
+   "path": "outputs/m6_identification_cycle907_receipt_2026_07_28.json",
+   "sha256": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca"
+  },
+  {
+   "bytes": 23807,
+   "path": "outputs/m6_identification_independent_check_cycle907_receipt_2026_07_28.json",
+   "sha256": "0d18a2839f1b57c55b55f0801b05e545a1e5a01cc790972d9583da5b21c0123b"
+  },
+  {
+   "bytes": 114818,
+   "path": "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py",
+   "sha256": "b38862284c0287dc8b1f24f5af8bf014509e22377d341b9933a05b2183af0021"
+  },
+  {
+   "bytes": 387139,
+   "path": "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json",
+   "sha256": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52"
+  }
+ ],
+ "spec": "independent extraction of the required shape (a disagreement on what the constraint set IS refutes the block); independent recipe instantiation; an attack on the census-of-recipes completeness (a native recipe outside the declared closure that realizes the pair flips the verdict); an attack on the degree-2 relationship; teeth >= 6.  Exit 0 independent of claim survival."
 }

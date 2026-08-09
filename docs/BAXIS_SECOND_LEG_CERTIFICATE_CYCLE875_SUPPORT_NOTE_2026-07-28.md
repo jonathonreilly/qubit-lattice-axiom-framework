@@ -265,10 +265,12 @@ O10, which is unclosable by declaration:
 | O12–O13 | no | no | yes |
 
 Collapse: 18 pairs are independent; the three one-way dependencies all
-point FROM O10, which is permanently open by declaration, so no wall
-follows from a closable other and nothing collapses.  The claim carries
-all seven walls, with O7/O8/O9 priced to family/caps exactly because
-O10 is unclosable.
+point FROM O10 into O7/O8/O9, so per the pairwise contract those three
+walls COLLAPSE under O10.  The collapsed independent wall set is FOUR
+walls: {O10 (carrying O7, O8, O9 at family-priced scope), O11, O12,
+O13}, and the claim uses this collapsed set everywhere.  O7/O8/O9
+remain individually enumerated above only as the priced faces of O10;
+they are not counted as independent walls.
 
 **N3 — Hidden-wall scan.**  Iteration-1 review found three hidden
 conditions; all are now explicit walls: the F-relation => physical
@@ -291,7 +293,7 @@ row):
 | `logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt:17` (D_WITHIN_KEY_PAIR_OF_PAIRS) | exact F-relations between pair clocks at declared caps at B=3 | claim (b), pair part: 429/480 substantive refusals in F | yes |
 | `logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt:18` (E_WITHIN_KEY_BANK_CLOCKS) | exact F-relations between bank clocks at declared caps at B=3 | claim (b), bank part: 830/831 substantive refusals in F | yes |
 | `logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt:13` and `:20` (family-closure pricing; what-a-negative-costs) | the pricing of the 869 negative to F and its caps | the O10 wall statement (pricing, not an absence) | yes (pricing-to-pricing) |
-| `outputs/cycle875_pinned_evidence/arc_note_863_865.md:93` (declared-family discipline line) | the pricing of the 865 exhaustion to the declared 29+28 family | the claim-(a) pricing | yes (pricing-to-pricing) |
+| `outputs/cycle875_pinned_evidence/arc_note_863_865.md:106`–`107` (declared-family pricing lines) | the pricing of the 865 exhaustion to the declared 29+28 family | the claim-(a) pricing | yes (pricing-to-pricing) |
 | `outputs/cycle875_pinned_evidence/cache_866_scaled_banks.txt:12`–`13` (B3/B4_RESULTS) | top-3 dominant-gap signature distinctness at B=3/B=4 | absence of a second clock (the role a negative witness would need) | **no — dropped** as a negative witness; retained only as disclosed context for O9 |
 
 After dropping the non-matching Cycle-866 row, claim (a) retains two

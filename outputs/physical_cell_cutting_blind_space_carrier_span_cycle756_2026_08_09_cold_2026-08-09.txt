@@ -1,0 +1,29 @@
+
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS C0  every cutting uses the same number of pieces, every piece sits in the same number of cuttings, and the two counts of the incidences agree
+eight pieces no cutting uses twice: 192, each meeting every cutting between 1 and 1 times
+PASS C1  each of the 192 carriers meets every one of the 15800 cuttings exactly once, so the table sends every carrier to the same all-ones column
+carrier pairs by shared pieces: 0:15072 1:1920 2:960 4:384
+PASS C2  the shared count of two carriers is 0, 1, 2 or 4, never 3, over all 18336 pairs, and the least sharing pair count is 384
+supports of the differences by shared pieces: 0:16 1:14 2:12 4:8
+PASS C3  a carrier difference is blind because both carriers give the same all-ones column, and the 384 least exchanges are the differences of support 8
+bounded arithmetic ranks: carriers 105 and 105, table 88 and 88
+PASS C4  two different bounded arithmetics agree, and a bounded rank never exceeds the exact rank, so the carriers span at least 105 and the table at least 88
+PASS C5  the table rank being at least 88 leaves the blind space at most 104, while the carriers spanning at least 105 puts at least 104 independent differences inside it, so both are exact: rank 88, blind space 104
+each sharing class alone spans: 0:104 1:104 2:104 4:104
+PASS C6  the differences at each single sharing class already span the whole blind space, so no one class of exchange is the source and the least ones suffice
+cuttings meet a blind support this often: 0 2 ; they meet a carrier this often: 1
+PASS C7  a blind weighting cannot have a cutting meeting its support just once, since that lone piece would then carry no weight, and the two readings separate: all 384 least exchanges meet every cutting 0 or 2 times while a carrier, which is not blind, meets every cutting exactly once
+PASS C8  each of the 48 proper cube symmetries carries the table to itself by a piece relabelling paired with a cutting relabelling, and they leave 4 kinds of piece, 48 of each, so a support of any size is the same up to symmetry as one holding a piece of one of those 4 kinds
+PASS C9  the test the sweep applies says yes on the 8 pieces a least exchange touches and no on the 8 pieces of a carrier, so it is a test that separates and not one that refuses every candidate
+least other pieces covering one piece's cuttings, by piece kind: 4 4 4 4
+PASS C10  the 1975 cuttings through a piece are not covered by 2 or by 3 other pieces but are covered by 4, so a blind support holding that piece holds at least 4 more and no support of size 2, 3 or 4 can be blind
+candidate supports of size 5, 6 and 7 built and tested: 3306820, of those passing the count bound: 27824
+PASS C11  every support of size 5, 6 or 7 was built from a least cover of its anchor piece and tested by the full condition, and none of them is blind
+PASS C12  so no blind weighting of the cutting table touches fewer than 8 pieces, and 8 is reached, by the least exchanges: the smallest blind support has exactly the size of a carrier
+
+elapsed under 900 s peak memory under 2500 MB
+PASS C13  inside its time and memory allowance
+PASS C14  its output stays under 6000 characters
+
+TOTAL: PASS=15 FAIL=0

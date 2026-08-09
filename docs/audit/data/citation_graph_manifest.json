@@ -1,6 +1,6 @@
 {
  "edge_count": 15472,
- "node_count": 5441,
+ "node_count": 5442,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6159,6 +6159,10 @@
    "out_degree": 0
   },
   "graded_constraint_program_and_record_influence_criterion_2026-07-04": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "grading_affine_chart_algebra_cycle876_support_note_2026-08-09": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

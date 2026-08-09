@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "grading_affine_chart_algebra_cycle876_support_note_2026-08-09": [
+        "scripts/frontier_cycle876_grading_affine_chart_algebra_independent_check_2026_08_09.py",
+    ],
     "d3_bar_reaudit_reproduced_cycle914_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py",
     ],

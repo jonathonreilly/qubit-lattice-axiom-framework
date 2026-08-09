@@ -1,3 +1,36 @@
+# TOE lane update — fixed rubric (2026-08-09, the axiom-edit + closure-at-scope interval)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 96% ↓3 | 97% | 66% ↓4 | 99% |
+| Causal time | 96% ↑2 | 77% ↑2 | 50% ↑2 | 99% |
+| Inertia / matter | 88% ↓9 | 92% ↓6 | 80% ↓8 | 99% |
+| Gravity / source / resources | 86% ↑15 | 58% ↑11 | 36% ↑6 | 96% ↑2 |
+| Born probability / realized history | 97% ↑2 | 74% ↑8 | 45% ↑4 | 99% |
+
+Science-evidence scores, not audit-retention scores. Interval 2026-08-01 → 08-09. PR range #5838–#6059: 117 OPEN / 104 CLOSED / 1 MERGED. Retention reality check: of 685 commits landed on main since 08-01, ~88% are audit + review-loop retention work and ~12% science-forward (15 of those are historic-wrapper intake, not new results).
+
+Why the scores changed (all verified against the repo this hour, not from memory):
+
+- **THE AXIOM MOVED — owner-approved, 2026-08-05.** Admissibility's second sentence now reads "For each site, the **probability distribution over the possibilities** is determined by, and varies with, the nearest-neighbor conditions" (was: "the available possibilities are determined by..."). Availability became the distribution's *support*. Reading note 2 was tightened: the distribution concerns which possibility a forming record locks, *conditional on formation at that site*; it supplies no formation site, probability, or rate. Registry note text follows; **no new primitive node** — the registry still holds exactly four canonical ids. This is the first axiom-text change of the program and it puts probability inside the foundation.
+- **Records ↓3 / closure ↓4 — my E1/E2 package was REJECTED, and it was defective.** Review-loop closed #5847 unmerged with a blocking finding: *"E2 is false at the advertised scope. A consistent all-228 orbit-return scan gives 17 records, not 15... Under matched semantics the E1-minus-E2 difference is 41, not 43."* The allocation package #5843 was also rejected as not a strict improvement; the downstream exercise PRs (#5878/#5880/#5881/#5882) are closed unmerged. The formation-cadence decision surface is therefore withdrawn, not pending — and the numbers previously reported in this rubric for that surface were wrong under matched semantics.
+- **Gravity ↑15 — the unprobed wall became the most-worked lane.** Campaign 5 shipped a twelve-block gravity ladder (#5923–#5952 and on) declared CLOSED FROM AXIOMS UP at window scope: the sign is invisible to the response surface (scoped no-go, escapes named); the bridge free dimension is exactly 1; tracelessness = conservation defect (derived); the t-choice decision surface was first priced then **dissolved** (#5957 leaves one exclusion, not a menu), and #6009 proves GB-S2 = 5 FREE + 1 OWED with all five dimensionless, so **no registration can ever close GB-S2**. In parallel the emergent-geometry / cell-cutting line ran 39 cycles (724–762, #5933–#6059) on the tick-extended cell: 192 pieces / 15,800 cuttings, cost spectrum exactly even 108–128, charge space dimension three, carrier floor 16 attained, symmetry group of order 384 certified complete, blind space 88-dimensional and generated over Z by 4-for-4 swaps.
+- **Born ↑2 / bridge ↑8 — the substrate closed and the axiom now feeds it.** Born work closed at substrate scope (nine blocks); the event space is certified (92,260 events, singleton atoms, refinement lattice) with five admissible weightings, all pairs discriminating and none selected. With Admissibility now supplying a distribution, the lane's foundation is materially different from the one this rubric last scored.
+- **Causal time ↑2 — terminal at window scope.** Cross-key time-translation law (632/632, strengthening to 5,085/5,085 at B=4); the orbit law breaks at P=11 and the gap is derived exactly (Δ(B,e) = 8B−13−8e); the Δ-spectrum conjecture was falsified as stated and replaced by an exact alignment law.
+- **Inertia / matter ↓9 — a live contradiction at the center of the mass story.** The historic sweep surfaced fourteen landed routes giving r = 1 against the landed selection theorem's r = 1/2, with the framing obstruction dropping a factor of two; both sides are now registered as a contradiction set for adjudication. Every Koide/mass result downstream of r = 1/2 is conditional until the audit lane rules. The registration story is complete at window scope, but conditional.
+
+Breakthrough log this interval:
+1. The axiom edit: probability enters the foundation (owner-approved 2026-08-05).
+2. Gravity closed from axioms up at window scope; GB-S2's five free dimensionless components proven registration-proof.
+3. The cell-cutting geometry: charge space dimension three, carrier floor sixteen, order-384 symmetry certified complete, the 88-dimensional blind space characterized and generated.
+4. Born substrate closed; event space certified.
+5. Time terminal at window scope: translation law, exact relay-swap gap, alignment law replacing a falsified conjecture.
+6. Historic capture complete: 781 wrappers from 5,128 personally reviewed rows + a 3,179-commit era ledger (#6015, #6018), every item audit_required.
+7. Two of my own decision packages rejected on review with a real numeric defect found — the correction is now on the record.
+
+Other worker progress: the review lane is the dominant activity — 50 "address physics review findings" iterations, 401 audit-evidence commits, and live landings by the minute (main was at PR #5894 as this was written). The audit instruments themselves are measured as miscalibrated: 80.1% of 3,872 ledger rows unaudited, 401 of 450 runner-gated notes with no ledger row, 1,569 orphan runners, all three registered derivation obligations mismatching their source notes.
+
+Next retasking: the banked next-phase plan (2026-08-08) governs — Phase A adjudicate the r = 1/2 contradiction set and the high-fanout demotion packets; Phase B repair the audit instruments before more audit spend; Phase C science in order, item 1 being **the inter-site gate substrate**, which is simultaneously campaign 5's named successor door and the object both the Born-wall map and the "sites do not talk" result point at. Axiom* stays parked until its nine components survive audit.
 # TOE lane update — fixed rubric (2026-07-31, the inheritance-vs-authorship wave)
 
 | TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |

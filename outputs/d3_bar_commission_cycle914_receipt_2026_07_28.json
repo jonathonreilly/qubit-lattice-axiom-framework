@@ -1,0 +1,4870 @@
+{
+ "blindness": "NOT BLIND: the committed 2026-07-11 streams were read during scoping. This block is an independent re-execution and reproduction test, not a blind certification.",
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "checks": {
+  "CHECK-01": {
+   "ok": true,
+   "stationary_control": {
+    "event_counts": [
+     0,
+     0,
+     0
+    ],
+    "ok": true,
+    "substitute_for": "ground-doublet stationary control (NOT EXECUTED - see DEVIATIONS)"
+   },
+   "t0_anchor_max_bits": 0.0
+  },
+  "CHECK-02": {
+   "commutator_ordering": true,
+   "drift": true,
+   "ok": true,
+   "x_pointer_control": true
+  },
+  "CHECK-03-parent": {
+   "locality": true,
+   "ok": false,
+   "per_lambda": {
+    "0.05": true,
+    "0.1": true,
+    "0.2": false
+   }
+  },
+  "CHECK-03-window-subset": {
+   "W_full": [
+    0.05,
+    0.1
+   ],
+   "locality": true,
+   "ok": true,
+   "window_size_ok": true
+  },
+  "CHECK-04-parent": {
+   "factor": 1.0005962134692452,
+   "medians": {
+    "0.05": 0.5029640625444564,
+    "0.1": 0.502741152074438,
+    "0.2": 0.5030408931208487
+   },
+   "missing_event": true,
+   "ok": false
+  },
+  "CHECK-04-window-subset": {
+   "factor": 1.0021276357973248,
+   "field_factor": 1.0079465550665692,
+   "medians": {
+    "0.05": 0.5029640625444564,
+    "0.1": 0.502741152074438,
+    "0.2": 0.5018962102010909
+   },
+   "missing_event": false,
+   "ok": true
+  },
+  "CHECK-05": {
+   "boundary_bracket": [
+    0.1,
+    0.2
+   ],
+   "labels": {
+    "0.05": "above-unverified-imported-floor",
+    "0.1": "above-unverified-imported-floor",
+    "0.2": null
+   },
+   "median": 0.502741152074438,
+   "noncontiguous": false,
+   "range": [
+    0.5007515272813331,
+    0.5047307768675429
+   ],
+   "theta_star": {
+    "0.05": 0.5007515272813331,
+    "0.1": 0.5047307768675429,
+    "0.2": null
+   }
+  }
+ },
+ "cited_but_absent": {
+  "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md": "absent",
+  "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md": "absent",
+  "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md": "absent",
+  "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md": "absent",
+  "scripts/d3_bar_location_measurement_2026_07_10.py": "absent",
+  "scripts/d3_registration_onset_pilot_2026_07_09.py": "absent"
+ },
+ "cycle": 914,
+ "date": "2026-07-28",
+ "deviations": [
+  "EXECUTED-GRID: frozen main state grid Jt=0:0.1:10 NOT executed; frozen certification subgrid T_C restricted to Jt in {0.0,...,1.2} (13 of 17 T_C points).  The four late recurrence samples {1.5,2.0,5.0,10.0} are NOT executed (the frozen memo classes them as recurrence diagnostics that 'do not rescue CHECK-03').  Reason: 900 s runtime cap; the frozen schedule projects 7.1 h.",
+  "LAZY-Z-PAIRS: the frozen design evaluates the five pair classes at every T_C time; this run applies the design's own lazy rule (declared there for the X control) to Z as well, skipping pair evaluation at rows where fewer than two fragments pass the singleton gates at every delta.  Such rows cannot reach R_ind>=2, so no first-hit time can change; the skipped rows carry reason 'fewer-than-two-singleton-passes' and are never read as independence.",
+  "GROUND-DOUBLET: the two-state invariant-sector Lanczos baseline (CHECK-01 stationary control and the chi_GS diagnostic) is NOT executed under the runtime cap.  The frozen memo assigns the doublet a control-and-diagnostic-only role and forbids it as a gate baseline, so no gate depends on it.  A repeated-observable stationary control anchored at its own first row is substituted and reported.",
+  "DT-HALVING: the frozen dt-halving machinery trace presumes a time-stepping integrator.  This runner evaluates exp(-iHt) directly at each requested t by a single Chebyshev expansion of the sector Hamiltonian, so no dt exists to halve.  Substituted diagnostics: rigorous Chebyshev truncation tail bound, state-norm conservation, and the checker's independent-propagator comparison.",
+  "LAMBDA-SET: lambda in {0.05,0.10,0.20}, the PARENT memo's commissioned set.  The 2026-07-11 delta memo additionally commissions lambda=0.02 and forbids dropping any lambda after inspection; that four-lambda contract is NOT executed here.  ACCORDINGLY this runner issues NO delta-wiring completion verdict: the window summaries are three-lambda subset summaries under the delta memo's definitions, and the existing four-lambda row is NOT independently reproduced in full."
+ ],
+ "discovery": {
+  "artifacts_present": {
+   "historical_checkpoint_dir": true,
+   "historical_comparator_runner": true,
+   "historical_engine_extension": true,
+   "historical_manifest": true,
+   "historical_orbit_engine": true,
+   "historical_preflight": true,
+   "historical_runner_cache": true,
+   "historical_validate_cache": true
+  },
+  "cited_but_absent": [
+   "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+   "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+   "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "scripts/d3_bar_location_measurement_2026_07_10.py",
+   "scripts/d3_registration_onset_pilot_2026_07_09.py"
+  ],
+  "committed_stream_row_counts": {
+   "0p02": 101,
+   "0p05": 101,
+   "0p10": 101,
+   "0p20": 101
+  },
+  "comparator_previously_run": true,
+  "scan_counts": {
+   "docs_md": 3979,
+   "outputs_entries": 355,
+   "runner_cache_entries": 3926,
+   "scripts_py": 5516
+  }
+ },
+ "independent_reproduction_vs_committed_2026_07_11": {
+  "max_abs_dev": {
+   "0.05": {
+    "H_Z": 3.2795988147427124e-13,
+    "chi_closed_five": 9.777734177873754e-13,
+    "chi_wedge_four": 2.438937940496544e-12,
+    "pair": 2.8816879438231524e-13,
+    "r_ind_mismatches": 0,
+    "theta": 8.094636072542016e-13
+   },
+   "0.1": {
+    "H_Z": 6.201705815556124e-13,
+    "chi_closed_five": 6.084355241853245e-12,
+    "chi_wedge_four": 7.257638934277111e-12,
+    "pair": 4.1621957616588823e-13,
+    "r_ind_mismatches": 0,
+    "theta": 1.2286838213526607e-12
+   },
+   "0.2": {
+    "H_Z": 1.5925039065223245e-12,
+    "chi_closed_five": 6.377010031144437e-12,
+    "chi_wedge_four": 1.8855361716418884e-11,
+    "pair": 5.818748260999485e-13,
+    "r_ind_mismatches": 0,
+    "theta": 3.4590108555221377e-12
+   }
+  },
+  "ok": true,
+  "rows_compared": 39
+ },
+ "measurement": {
+  "centered_frobenius": {
+   "0.05": {
+    "center": {
+     "X": 5.750856553853949e-05,
+     "Y": 5.752054524193755e-05,
+     "Z": 1.1738886784068887e-06,
+     "degree": 6
+    },
+    "corner": {
+     "X": 4.0664696668612267e-05,
+     "Y": 4.068163676377264e-05,
+     "Z": 1.1738886784068887e-06,
+     "degree": 3
+    },
+    "edge": {
+     "X": 4.695554713627554e-05,
+     "Y": 4.697021845272052e-05,
+     "Z": 1.1738886784068887e-06,
+     "degree": 4
+    },
+    "face": {
+     "X": 5.2497897658703855e-05,
+     "Y": 5.251102049296924e-05,
+     "Z": 1.1738886784068887e-06,
+     "degree": 5
+    }
+   },
+   "0.1": {
+    "center": {
+     "X": 5.740117316557602e-05,
+     "Y": 5.7448987562176285e-05,
+     "Z": 2.343393081546658e-06,
+     "degree": 6
+    },
+    "corner": {
+     "X": 4.058875879344209e-05,
+     "Y": 4.065635044524856e-05,
+     "Z": 2.343393081546658e-06,
+     "degree": 3
+    },
+    "edge": {
+     "X": 4.6867861630933164e-05,
+     "Y": 4.692640988815294e-05,
+     "Z": 2.343393081546658e-06,
+     "degree": 4
+    },
+    "face": {
+     "X": 5.239986228341036e-05,
+     "Y": 5.2452235971929854e-05,
+     "Z": 2.343393081546658e-06,
+     "degree": 5
+    }
+   },
+   "0.2": {
+    "center": {
+     "X": 5.697754248160847e-05,
+     "Y": 5.716715213207484e-05,
+     "Z": 4.6521968625897585e-06,
+     "degree": 6
+    },
+    "corner": {
+     "X": 4.0289206664089935e-05,
+     "Y": 4.055691197897146e-05,
+     "Z": 4.6521968625897585e-06,
+     "degree": 3
+    },
+    "edge": {
+     "X": 4.652196862589758e-05,
+     "Y": 4.67539998339959e-05,
+     "Z": 4.6521968625897585e-06,
+     "degree": 4
+    },
+    "face": {
+     "X": 5.2013142147309736e-05,
+     "Y": 5.222078026690657e-05,
+     "Z": 4.6521968625897585e-06,
+     "degree": 5
+    }
+   }
+  },
+  "events": {
+   "0.05": {
+    "0.05": {
+     "Q_quiet": 0.0008100993899448072,
+     "X_face": 0.13201182862316688,
+     "by_deadline": true,
+     "drift": 0.00017440602310481168,
+     "jt": 0.7,
+     "pair_values": {
+      "minus-x-orthogonal": 0.008781001712638199,
+      "opposite-44": 0.0013217516082653724,
+      "opposite-55": 0.0047533916824816416,
+      "plus-x-orthogonal": 0.008781001712658026,
+      "transverse-orthogonal": 0.007605847558541912
+     },
+     "r_ind": 6,
+     "run": 3,
+     "subset": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+     ],
+     "theta": 0.5011973482213699
+    },
+    "0.1": {
+     "Q_quiet": 0.000770469153921649,
+     "X_face": 0.03176243905076176,
+     "by_deadline": true,
+     "drift": 0.0001735613942736025,
+     "jt": 0.6,
+     "pair_values": {
+      "minus-x-orthogonal": 0.005878555344848363,
+      "opposite-44": 0.0007840670821257904,
+      "opposite-55": 0.002956031332145385,
+      "plus-x-orthogonal": 0.005878555344841601,
+      "transverse-orthogonal": 0.005150334217251222
+     },
+     "r_ind": 2,
+     "run": 4,
+     "subset": [
+      "+x",
+      "-x"
+     ],
+     "theta": 0.5007515272813331
+    },
+    "0.2": {
+     "Q_quiet": 0.000770469153921649,
+     "X_face": 0.03176243905076176,
+     "by_deadline": true,
+     "drift": 0.0001735613942736025,
+     "jt": 0.6,
+     "pair_values": {
+      "minus-x-orthogonal": 0.005878555344848363,
+      "opposite-44": 0.0007840670821257904,
+      "opposite-55": 0.002956031332145385,
+      "plus-x-orthogonal": 0.005878555344841601,
+      "transverse-orthogonal": 0.005150334217251222
+     },
+     "r_ind": 6,
+     "run": 5,
+     "subset": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+     ],
+     "theta": 0.5007515272813331
+    }
+   },
+   "0.1": {
+    "0.05": {
+     "Q_quiet": 0.003200026526190447,
+     "X_face": 0.13260517493077645,
+     "by_deadline": true,
+     "drift": 0.0006953754664363876,
+     "jt": 0.7,
+     "pair_values": {
+      "minus-x-orthogonal": 0.029268536435889423,
+      "opposite-44": 0.0038252978286698984,
+      "opposite-55": 0.017276347800550013,
+      "plus-x-orthogonal": 0.029268536435881783,
+      "transverse-orthogonal": 0.024647066423551134
+     },
+     "r_ind": 2,
+     "run": 1,
+     "subset": [
+      "+x",
+      "-x"
+     ],
+     "theta": 0.5047307768675429
+    },
+    "0.1": {
+     "Q_quiet": 0.003200026526190447,
+     "X_face": 0.13260517493077645,
+     "by_deadline": true,
+     "drift": 0.0006953754664363876,
+     "jt": 0.7,
+     "pair_values": {
+      "minus-x-orthogonal": 0.029268536435889423,
+      "opposite-44": 0.0038252978286698984,
+      "opposite-55": 0.017276347800550013,
+      "plus-x-orthogonal": 0.029268536435881783,
+      "transverse-orthogonal": 0.024647066423551134
+     },
+     "r_ind": 2,
+     "run": 3,
+     "subset": [
+      "+x",
+      "-x"
+     ],
+     "theta": 0.5047307768675429
+    },
+    "0.2": {
+     "Q_quiet": 0.0030542094816898846,
+     "X_face": 0.031958973876546115,
+     "by_deadline": true,
+     "drift": 0.0006930400097879819,
+     "jt": 0.6,
+     "pair_values": {
+      "minus-x-orthogonal": 0.01987004868042228,
+      "opposite-44": 0.0023460513834494164,
+      "opposite-55": 0.010893073830100073,
+      "plus-x-orthogonal": 0.019870048680431684,
+      "transverse-orthogonal": 0.01697853383983084
+     },
+     "r_ind": 6,
+     "run": 5,
+     "subset": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+     ],
+     "theta": 0.5030408931208487
+    }
+   },
+   "0.2": {
+    "0.05": null,
+    "0.1": null,
+    "0.2": {
+     "Q_quiet": 0.012012885370898951,
+     "X_face": 0.03294418854463227,
+     "by_deadline": true,
+     "drift": 0.0027530227778529426,
+     "jt": 0.6,
+     "pair_values": {
+      "minus-x-orthogonal": 0.06480209852934501,
+      "opposite-44": 0.006374763731834697,
+      "opposite-55": 0.03886692303736877,
+      "plus-x-orthogonal": 0.06480209852935033,
+      "transverse-orthogonal": 0.05350574212385173
+     },
+     "r_ind": 2,
+     "run": 3,
+     "subset": [
+      "+y",
+      "-y"
+     ],
+     "theta": 0.5118739726452469
+    }
+   }
+  },
+  "rows": {
+   "0.05": [
+    {
+     "H_Z": 0.9999999999999999,
+     "Q_quiet": -2.220446049250313e-16,
+     "X_face": 1.0000000000000002,
+     "bloch": {
+      "corner": [
+       0.0,
+       -0.0,
+       1.0000000000000002
+      ],
+      "edge": [
+       0.0,
+       -0.0,
+       1.0000000000000002
+      ],
+      "face": [
+       1.0000000000000002,
+       -0.0,
+       0.0
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0,
+      "wedge-four": 0.0
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": -0.0,
+     "chi_wedge_four": -0.0,
+     "excess_closed_five": 0.0,
+     "excess_wedge_four": 0.0,
+     "jt": 0.0,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 0.0,
+      "edge": 0.0,
+      "face": 0.0
+     },
+     "one_site_excess": {
+      "corner": 0.0,
+      "edge": 0.0,
+      "face": 0.0
+     },
+     "p_z": [
+      0.5000000000000001,
+      0.5000000000000001
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 1.1102230246251565e-16,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.25000000000000006,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 0.0,
+     "symmetry_max": 0.0,
+     "theta": 0.0,
+     "x_control": {
+      "H_X": -0.0,
+      "chi": [
+       -0.0,
+       -0.0
+      ],
+      "p_x": [
+       1.0,
+       0.0
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       true
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999999903499,
+     "Q_quiet": 4.876579077506271e-05,
+     "X_face": 0.6828297678925666,
+     "bloch": {
+      "corner": [
+       0.002910977352135261,
+       0.00941056564171281,
+       0.9999514824909682
+      ],
+      "edge": [
+       0.0019378593112487881,
+       0.009608505316711653,
+       0.9999509859274818
+      ],
+      "face": [
+       0.6828297678925666,
+       -0.7030344385459124,
+       0.0037539657582321695
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 1.4558745496148773e-05,
+      "wedge-four": 3.3471874251039813e-06
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.08056971179410793,
+     "chi_wedge_four": 0.08055850023627811,
+     "excess_closed_five": 0.08056971179410793,
+     "excess_wedge_four": 0.08055850023627811,
+     "jt": 0.1,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.5985158207358177e-16,
+      "edge": 3.999661177360041e-11,
+      "face": 0.08055515304861179
+     },
+     "one_site_excess": {
+      "corner": 1.5985158207358177e-16,
+      "edge": 3.999661177360041e-11,
+      "face": 0.08055515304861179
+     },
+     "p_z": [
+      0.5000018293273426,
+      0.4999981706726446
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 1.8293273426062129e-06,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.22688403402827817,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 0.4833734245333283,
+     "symmetry_max": 2.412237076754309e-13,
+     "theta": 0.09118488287647575,
+     "x_control": {
+      "H_X": 0.31500156525825806,
+      "chi": [
+       0.03766030800199373,
+       0.037655708419342564
+      ],
+      "p_x": [
+       0.9431031022361988,
+       0.056896897763784975
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999985466325,
+     "Q_quiet": 0.00018100930551656624,
+     "X_face": -0.02676875196268083,
+     "bloch": {
+      "corner": [
+       0.010626031376700443,
+       0.0155333794186262,
+       0.9998228813356019
+      ],
+      "edge": [
+       0.007049382444963762,
+       0.017067889241422354,
+       0.9998151000533649
+      ],
+      "face": [
+       -0.02676875196268083,
+       -0.9205710147630067,
+       0.012393765058361983
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.00019351251540894454,
+      "wedge-four": 4.436506440697041e-05
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.23981044929745787,
+     "chi_wedge_four": 0.23966130184651332,
+     "excess_closed_five": 0.23981044929745787,
+     "excess_wedge_four": 0.23966130184651332,
+     "jt": 0.2,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 5.67391934948214e-17,
+      "edge": 5.031350405057468e-09,
+      "face": 0.23961693678204893
+     },
+     "one_site_excess": {
+      "corner": 5.67391934948214e-17,
+      "edge": 5.031350405057468e-09,
+      "face": 0.23961693678204893
+     },
+     "p_z": [
+      0.5000224435018411,
+      0.49997755649808073
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 2.2443501841107327e-05,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.16772486911606607,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 4.440892098500626e-16,
+     "sum_delta_chi": 1.438266105980969,
+     "symmetry_max": 5.742628594873622e-14,
+     "theta": 0.28028143566101194,
+     "x_control": {
+      "H_X": 0.7112346047870197,
+      "chi": [
+       0.05688362367705832,
+       0.056845144693764144
+      ],
+      "p_x": [
+       0.8052833987124212,
+       0.19471660128749058
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999843334724,
+     "Q_quiet": 0.0003598912358649953,
+     "X_face": -0.6082305782660911,
+     "bloch": {
+      "corner": [
+       0.020448015895557392,
+       0.016231205559588534,
+       0.9996591183550049
+      ],
+      "edge": [
+       0.013539933597808536,
+       0.021135534746763357,
+       0.9996210991732651
+      ],
+      "face": [
+       -0.6082305782660911,
+       -0.5574198641129962,
+       0.020175009320144377
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0008308024914677192,
+      "wedge-four": 0.0001912090234311159
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.4272649113313508,
+     "chi_wedge_four": 0.42662531786384134,
+     "excess_closed_five": 0.4272649113313508,
+     "excess_wedge_four": 0.42662531786384134,
+     "jt": 0.3,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.5078330114424017e-14,
+      "edge": 4.6615545819928385e-08,
+      "face": 0.4264341088398831
+     },
+     "one_site_excess": {
+      "corner": 1.5078330114424017e-14,
+      "edge": 4.6615545819928385e-08,
+      "face": 0.4264341088398831
+     },
+     "p_z": [
+      0.5000736867442426,
+      0.4999263132548997
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 7.368674424257371e-05,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.09763477148678032,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.5543122344752192e-15,
+     "sum_delta_chi": 2.561031094118067,
+     "symmetry_max": 5.271338920920243e-13,
+     "theta": 0.4266962884582661,
+     "x_control": {
+      "H_X": 0.926723445540676,
+      "chi": [
+       0.03533886954672488,
+       0.03525486841121939
+      ],
+      "p_x": [
+       0.657996055320248,
+       0.3420039446790448
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999505646331,
+     "Q_quiet": 0.0005396533688586391,
+     "X_face": -0.695023308433431,
+     "bloch": {
+      "corner": [
+       0.02894483742306516,
+       0.01126458701237522,
+       0.9995173684302403
+      ],
+      "edge": [
+       0.019344406227994347,
+       0.021964619227570252,
+       0.9994033248320425
+      ],
+      "face": [
+       -0.695023308433431,
+       0.040486156332472434,
+       0.022745325790080817
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0022110451303054557,
+      "wedge-four": 0.0005114127109113742
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.6132255271942497,
+     "chi_wedge_four": 0.6115258947746727,
+     "excess_closed_five": 0.6132255271942497,
+     "excess_wedge_four": 0.6115258947746727,
+     "jt": 0.4,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 3.262430195938114e-13,
+      "edge": 1.0884215616676273e-07,
+      "face": 0.6110144820639443
+     },
+     "one_site_excess": {
+      "corner": 3.262430195938114e-13,
+      "edge": 1.0884215616676273e-07,
+      "face": 0.6110144820639443
+     },
+     "p_z": [
+      0.5001308930916122,
+      0.49986910690832903
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0001308930916121831,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.04376404386158301,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 6.661338147750939e-16,
+     "sum_delta_chi": 3.67255463348719,
+     "symmetry_max": 1.829647544582258e-13,
+     "theta": 0.4866959049588747,
+     "x_control": {
+      "H_X": 0.9905773700011692,
+      "chi": [
+       0.010191860970199862,
+       0.010112288833098892
+      ],
+      "p_x": [
+       0.5570834381678977,
+       0.4429165618320198
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999222314655,
+     "Q_quiet": 0.0006823637392607829,
+     "X_face": -0.3528505945402578,
+     "bloch": {
+      "corner": [
+       0.033150325557516916,
+       0.0023743828503151555,
+       0.9994470641462209
+      ],
+      "edge": [
+       0.023090244587503757,
+       0.020884304980396035,
+       0.9991882083752575
+      ],
+      "face": [
+       -0.3528505945402578,
+       0.4084856960433473,
+       0.020166957617988646
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.00446394917729287,
+      "wedge-four": 0.0010363587588044787
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.7762049397580305,
+     "chi_wedge_four": 0.7727773493400476,
+     "excess_closed_five": 0.7762049397580305,
+     "excess_wedge_four": 0.7727773493400476,
+     "jt": 0.5,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 2.299625147559681e-12,
+      "edge": 7.511840317820078e-08,
+      "face": 0.7717409905807376
+     },
+     "one_site_excess": {
+      "corner": 2.299625147559681e-12,
+      "edge": 7.511840317820078e-08,
+      "face": 0.7717409905807376
+     },
+     "p_z": [
+      0.5001641723750672,
+      0.49983582762461326
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.00016417237506716198,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.01540979795508603,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 6.661338147750939e-16,
+     "sum_delta_chi": 4.643519276876251,
+     "symmetry_max": 5.054845431118338e-13,
+     "theta": 0.49936509986694755,
+     "x_control": {
+      "H_X": 0.9995609603688717,
+      "chi": [
+       0.0011318040415999597,
+       0.0010993333496499558
+      ],
+      "p_x": [
+       0.5123346708747701,
+       0.4876653291250131
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999130818482,
+     "Q_quiet": 0.000770469153921649,
+     "X_face": 0.03176243905076176,
+     "bloch": {
+      "corner": [
+       0.03160093628747112,
+       -0.007328525081295824,
+       0.9994726224057572
+      ],
+      "edge": [
+       0.024648741016476912,
+       0.01953949850860217,
+       0.9989864392863994
+      ],
+      "face": [
+       0.03176243905076176,
+       0.36063486854469184,
+       0.016011508897504356
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.007463624850110762,
+      "wedge-four": 0.0017361097582122564
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [
+       "+x",
+       "-x"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "chi_closed_five": 0.9004497740405353,
+     "chi_wedge_four": 0.8947222589497272,
+     "excess_closed_five": 0.9004497740405353,
+     "excess_wedge_four": 0.8947222589497272,
+     "jt": 0.6,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 7.611836974193652e-12,
+      "edge": 2.8033359608268735e-08,
+      "face": 0.8929861491904245
+     },
+     "one_site_excess": {
+      "corner": 7.611836974193652e-12,
+      "edge": 2.8033359608268735e-08,
+      "face": 0.8929861491904245
+     },
+     "p_z": [
+      0.5001735613942736,
+      0.49982643860558107
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.005878555344848363,
+      "opposite-44": 0.0007840670821257904,
+      "opposite-55": 0.002956031332145385,
+      "plus-x-orthogonal": 0.005878555344841601,
+      "transverse-orthogonal": 0.005150334217251222
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0001735613942736025,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 2,
+      "0.2": 6
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 2,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.006482495854043284,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [
+       "+x",
+       "-x"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 1.2212453270876722e-15,
+     "sum_delta_chi": 5.3797885838799795,
+     "symmetry_max": 1.0904610547868288e-12,
+     "theta": 0.5007515272813331,
+     "x_control": {
+      "H_X": 0.9999968772398381,
+      "chi": [
+       3.076369096599585e-05,
+       2.6228995355759288e-05
+      ],
+      "p_x": [
+       0.5010403198641649,
+       0.4989596801356079
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999122338956,
+     "Q_quiet": 0.0008100993899448072,
+     "X_face": 0.13201182862316688,
+     "bloch": {
+      "corner": [
+       0.024845896015533536,
+       -0.014451878433261895,
+       0.9995849312066877
+      ],
+      "edge": [
+       0.024898273143756772,
+       0.01891971347628115,
+       0.9987948700134227
+      ],
+      "face": [
+       0.13201182862316688,
+       0.10718607357670445,
+       0.013657448355671953
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.010820427408109956,
+      "wedge-four": 0.0025176161284778953
+     },
+     "certifying_subsets": {
+      "0.05": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "chi_closed_five": 0.9751182426947831,
+     "chi_wedge_four": 0.9668154314167796,
+     "excess_closed_five": 0.9751182426947831,
+     "excess_wedge_four": 0.9668154314167796,
+     "jt": 0.7,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.4694454173288162e-11,
+      "edge": 1.2267449611301148e-07,
+      "face": 0.9642978152866731
+     },
+     "one_site_excess": {
+      "corner": 1.4694454173288162e-11,
+      "edge": 1.2267449611301148e-07,
+      "face": 0.9642978152866731
+     },
+     "p_z": [
+      0.5001744060231048,
+      0.49982559397658427
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.008781001712638199,
+      "opposite-44": 0.0013217516082653724,
+      "opposite-55": 0.0047533916824816416,
+      "plus-x-orthogonal": 0.008781001712658026,
+      "transverse-orthogonal": 0.007605847558541912
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.00017440602310481168,
+     "r_ind": {
+      "0.05": 6,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "r_raw": {
+      "0.05": 6,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.005730956618761469,
+     "singleton_passes": {
+      "0.05": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 8.881784197001252e-16,
+     "sum_delta_chi": 5.817498211056685,
+     "symmetry_max": 1.6285861548226421e-12,
+     "theta": 0.5011973482213699,
+     "x_control": {
+      "H_X": 0.9999999907517327,
+      "chi": [
+       1.0405021780846013e-06,
+       4.5378001423124203e-07
+      ],
+      "p_x": [
+       0.49994338546811273,
+       0.500056614531477
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999123340102,
+     "Q_quiet": 0.0008248021491407131,
+     "X_face": -0.02831755360191065,
+     "bloch": {
+      "corner": [
+       0.015253302402037414,
+       -0.016507822530107262,
+       0.9997445629407317
+      ],
+      "edge": [
+       0.024868245915780095,
+       0.018938604585823235,
+       0.9986058327609869
+      ],
+      "face": [
+       -0.02831755360191065,
+       0.002993920170506703,
+       0.013341676584372242
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.013991594283420783,
+      "wedge-four": 0.0032511672203907604
+     },
+     "certifying_subsets": {
+      "0.05": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "chi_closed_five": 0.9940202037775347,
+     "chi_wedge_four": 0.9832797767170872,
+     "excess_closed_five": 0.9940202037775347,
+     "excess_wedge_four": 0.9832797767170872,
+     "jt": 0.8,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.9337930304915048e-11,
+      "edge": 1.6603594755375609e-07,
+      "face": 0.980028609494114
+     },
+     "one_site_excess": {
+      "corner": 1.9337930304915048e-11,
+      "edge": 1.6603594755375609e-07,
+      "face": 0.980028609494114
+     },
+     "p_z": [
+      0.5001743065720176,
+      0.49982569342755934
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.01190444149067293,
+      "opposite-44": 0.0019800273712171066,
+      "opposite-55": 0.00682064796661409,
+      "plus-x-orthogonal": 0.011904441490676383,
+      "transverse-orthogonal": 0.01022433301658692
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0001743065720175574,
+     "r_ind": {
+      "0.05": 6,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "r_raw": {
+      "0.05": 6,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.0062436963461158556,
+     "singleton_passes": {
+      "0.05": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 3.3306690738754696e-16,
+     "sum_delta_chi": 5.921159514423419,
+     "symmetry_max": 2.5824897775805766e-12,
+     "theta": 0.5016718511731033,
+     "x_control": {
+      "H_X": 0.9999999909942916,
+      "chi": [
+       1.4472321108183195e-06,
+       5.776987694883218e-07
+      ],
+      "p_x": [
+       0.5000558671695439,
+       0.4999441328300928
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999124844907,
+     "Q_quiet": 0.0008439240872222253,
+     "X_face": -0.13757225961758307,
+     "bloch": {
+      "corner": [
+       0.006180915816013809,
+       -0.012781482338724547,
+       0.9998955789022582
+      ],
+      "edge": [
+       0.024893581346596853,
+       0.018821371977793176,
+       0.9984165729232972
+      ],
+      "face": [
+       -0.13757225961758307,
+       0.17878118695165449,
+       0.012619104483731769
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.016461115411687377,
+      "wedge-four": 0.0038127899811396526
+     },
+     "certifying_subsets": {
+      "0.05": [
+       "+x",
+       "-x"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "chi_closed_five": 0.9556108814836038,
+     "chi_wedge_four": 0.9429625560551839,
+     "excess_closed_five": 0.9556108814836038,
+     "excess_wedge_four": 0.9429625560551839,
+     "jt": 0.9,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 2.0340120213124813e-11,
+      "edge": 8.241655008868302e-08,
+      "face": 0.9391497660719165
+     },
+     "one_site_excess": {
+      "corner": 2.0340120213124813e-11,
+      "edge": 8.241655008868302e-08,
+      "face": 0.9391497660719165
+     },
+     "p_z": [
+      0.5001741568939757,
+      0.49982584310563233
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.014947813939654699,
+      "opposite-44": 0.002668984341897265,
+      "opposite-55": 0.00891631782831263,
+      "plus-x-orthogonal": 0.014947813939637636,
+      "transverse-orthogonal": 0.012764222179192868
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.00017415689397570766,
+     "r_ind": {
+      "0.05": 2,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "r_raw": {
+      "0.05": 2,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.006442963994700294,
+     "singleton_passes": {
+      "0.05": [
+       "+x",
+       "-x"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 0.0,
+     "sum_delta_chi": 5.683071987187943,
+     "symmetry_max": 2.1277424266941125e-12,
+     "theta": 0.5021562779164239,
+     "x_control": {
+      "H_X": 0.9999996451576075,
+      "chi": [
+       2.601022669468378e-06,
+       7.575318176078483e-07
+      ],
+      "p_x": [
+       0.5003506836062361,
+       0.49964931639327315
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.999999913808657,
+     "Q_quiet": 0.0008914623552515044,
+     "X_face": 0.05970248322763755,
+     "bloch": {
+      "corner": [
+       0.0008019279510033582,
+       -0.0045793482890643744,
+       0.9999850919439648
+      ],
+      "edge": [
+       0.02436780122983251,
+       0.01796263224739683,
+       0.9982319833455322
+      ],
+      "face": [
+       0.05970248322763755,
+       0.40907867207841075,
+       0.0095680968707752
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.017890404066516208,
+      "wedge-four": 0.004120414101572822
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "chi_closed_five": 0.8630454208623767,
+     "chi_wedge_four": 0.8492754308990702,
+     "excess_closed_five": 0.8630454208623767,
+     "excess_wedge_four": 0.8492754308990702,
+     "jt": 1.0,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.968996408247773e-11,
+      "edge": 1.9012326403066576e-07,
+      "face": 0.8451550167958605
+     },
+     "one_site_excess": {
+      "corner": 1.968996408247773e-11,
+      "edge": 1.9012326403066576e-07,
+      "face": 0.8451550167958605
+     },
+     "p_z": [
+      0.5001728343182509,
+      0.49982716568136426
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.0176511488919176,
+      "opposite-44": 0.0032818832304753083,
+      "opposite-55": 0.010799520351585252,
+      "plus-x-orthogonal": 0.01765114889191554,
+      "transverse-orthogonal": 0.015020306564365742
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0001728343182508807,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 6
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.009335995786460364,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 1.5543122344752192e-15,
+     "sum_delta_chi": 5.123192565321034,
+     "symmetry_max": 1.6369128275073308e-12,
+     "theta": 0.5025429848935716,
+     "x_control": {
+      "H_X": 0.9999725142112603,
+      "chi": [
+       0.0001051642434821698,
+       7.980506819815769e-05
+      ],
+      "p_x": [
+       0.5030863875306686,
+       0.49691361246900606
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999228869254,
+     "Q_quiet": 0.0009796230808321038,
+     "X_face": 0.47387730693770547,
+     "bloch": {
+      "corner": [
+       0.000996048360951618,
+       0.0052288495649283305,
+       0.9999817474950552
+      ],
+      "edge": [
+       0.022224221762266773,
+       0.016633472032300166,
+       0.9980590063432807
+      ],
+      "face": [
+       0.47387730693770547,
+       0.3421479763342504,
+       0.005458988884950999
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.018162541195638537,
+      "wedge-four": 0.004145824758923666
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.7241924388489817,
+     "chi_wedge_four": 0.7101757224144771,
+     "excess_closed_five": 0.7241924388489817,
+     "excess_wedge_four": 0.7101757224144771,
+     "jt": 1.1,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.6865762611376414e-11,
+      "edge": 4.3713980838215247e-07,
+      "face": 0.7060298976533431
+     },
+     "one_site_excess": {
+      "corner": 1.6865762611376414e-11,
+      "edge": 4.3713980838215247e-07,
+      "face": 0.7060298976533431
+     },
+     "p_z": [
+      0.5001634790864202,
+      0.4998365209132072
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.00016347908642022624,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.023502975230538833,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.7763568394002505e-15,
+     "sum_delta_chi": 4.289087767355872,
+     "symmetry_max": 2.210343019726224e-12,
+     "theta": 0.5005586127643366
+    },
+    {
+     "H_Z": 0.9999999542838323,
+     "Q_quiet": 0.0011082776394490956,
+     "X_face": 0.7208904155512195,
+     "bloch": {
+      "corner": [
+       0.006693297336471095,
+       0.013214501185995323,
+       0.999886664422977
+      ],
+      "edge": [
+       0.017805608233915485,
+       0.016079139476155684,
+       0.9978967802981247
+      ],
+      "face": [
+       0.7208904155512195,
+       -0.12758984208811586,
+       0.0041183239393727256
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.01729306425285615,
+      "wedge-four": 0.003894472419957995
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.5516490870625261,
+     "chi_wedge_four": 0.5382504952306038,
+     "excess_closed_five": 0.5516490870625261,
+     "excess_wedge_four": 0.5382504952306038,
+     "jt": 1.2,
+     "lam": 0.05,
+     "one_site_chi": {
+      "corner": 1.0116918916248116e-11,
+      "edge": 4.0968415466113503e-07,
+      "face": 0.53435602280967
+     },
+     "one_site_excess": {
+      "corner": 1.0116918916248116e-11,
+      "edge": 4.0968415466113503e-07,
+      "face": 0.53435602280967
+     },
+     "p_z": [
+      0.5001258732761754,
+      0.4998741267233979
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.00012587327617541444,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.059899662606325836,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 4.440892098500626e-16,
+     "sum_delta_chi": 3.2563001550474673,
+     "symmetry_max": 9.7577501634305e-13,
+     "theta": 0.4797602109601903
+    }
+   ],
+   "0.1": [
+    {
+     "H_Z": 0.9999999999999999,
+     "Q_quiet": -2.220446049250313e-16,
+     "X_face": 1.0000000000000002,
+     "bloch": {
+      "corner": [
+       0.0,
+       -0.0,
+       1.0000000000000002
+      ],
+      "edge": [
+       0.0,
+       -0.0,
+       1.0000000000000002
+      ],
+      "face": [
+       1.0000000000000002,
+       -0.0,
+       0.0
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0,
+      "wedge-four": 0.0
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": -0.0,
+     "chi_wedge_four": -0.0,
+     "excess_closed_five": 0.0,
+     "excess_wedge_four": 0.0,
+     "jt": 0.0,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 0.0,
+      "edge": 0.0,
+      "face": 0.0
+     },
+     "one_site_excess": {
+      "corner": 0.0,
+      "edge": 0.0,
+      "face": 0.0
+     },
+     "p_z": [
+      0.5000000000000001,
+      0.5000000000000001
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 1.1102230246251565e-16,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.25000000000000006,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 0.0,
+     "symmetry_max": 0.0,
+     "theta": 0.0,
+     "x_control": {
+      "H_X": -0.0,
+      "chi": [
+       -0.0,
+       -0.0
+      ],
+      "p_x": [
+       1.0,
+       0.0
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       true
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999998455568,
+     "Q_quiet": 0.00019505579232559356,
+     "X_face": 0.6828621896526917,
+     "bloch": {
+      "corner": [
+       0.0058213803437980535,
+       0.018820277801344605,
+       0.9998059344725222
+      ],
+      "edge": [
+       0.0038821223392958033,
+       0.019214463202633515,
+       0.9998039539428265
+      ],
+      "face": [
+       0.6828621896526917,
+       -0.702967568905122,
+       0.007507575994376958
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 5.036580387576817e-05,
+      "wedge-four": 1.1423048258796253e-05
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.0805619021397888,
+     "chi_wedge_four": 0.08052295938416697,
+     "excess_closed_five": 0.0805619021397888,
+     "excess_wedge_four": 0.08052295938416697,
+     "jt": 0.1,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 1.6135174783691877e-16,
+      "edge": 5.787864960830164e-10,
+      "face": 0.08051153633591303
+     },
+     "one_site_excess": {
+      "corner": 1.6135174783691877e-16,
+      "edge": 5.787864960830164e-10,
+      "face": 0.08051153633591303
+     },
+     "p_z": [
+      0.5000073171203309,
+      0.4999926828795759
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 7.3171203308630695e-06,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.22766766375369038,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 0.48321564181624543,
+     "symmetry_max": 1.761779559699044e-14,
+     "theta": 0.09118163192720075,
+     "x_control": {
+      "H_X": 0.3149853068221748,
+      "chi": [
+       0.03766370955409511,
+       0.037646404397153464
+      ],
+      "p_x": [
+       0.9431071156267651,
+       0.056892884373205485
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999767488068,
+     "Q_quiet": 0.0007238249415125741,
+     "X_face": -0.02639141999325373,
+     "bloch": {
+      "corner": [
+       0.021244029258379996,
+       0.0310631254858653,
+       0.9992915755274643
+      ],
+      "edge": [
+       0.014178994411964308,
+       0.034086158555552575,
+       0.9992607745895106
+      ],
+      "face": [
+       -0.02639141999325373,
+       -0.9202793153525305,
+       0.024783603351629768
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0006543922875101027,
+      "wedge-four": 0.00014762463473205756
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.23968703817917986,
+     "chi_wedge_four": 0.23918027052643143,
+     "excess_closed_five": 0.23968703817917986,
+     "excess_wedge_four": 0.23918027052643143,
+     "jt": 0.2,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 6.5913783085054176e-15,
+      "edge": 7.101288271435177e-08,
+      "face": 0.23903264589166975
+     },
+     "one_site_excess": {
+      "corner": 6.5913783085054176e-15,
+      "edge": 7.101288271435177e-08,
+      "face": 0.23903264589166975
+     },
+     "p_z": [
+      0.5000897678386054,
+      0.49991023216129427
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 8.976783860537019e-05,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.16962074893772022,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 8.881784197001252e-16,
+     "sum_delta_chi": 1.4360951584640853,
+     "symmetry_max": 5.759449976065708e-14,
+     "theta": 0.2802618922009108,
+     "x_control": {
+      "H_X": 0.711222337552762,
+      "chi": [
+       0.056964633774316514,
+       0.05682340954274906
+      ],
+      "p_x": [
+       0.805289388139386,
+       0.19471061186060037
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999997493850195,
+     "Q_quiet": 0.00143796425899001,
+     "X_face": -0.6071304707715401,
+     "bloch": {
+      "corner": [
+       0.04086395303994694,
+       0.03246484932920882,
+       0.9986365675630392
+      ],
+      "edge": [
+       0.02734382727545867,
+       0.042008878592538205,
+       0.9984875039189808
+      ],
+      "face": [
+       -0.6071304707715401,
+       -0.5572277913045354,
+       0.04034019451461879
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.002767078146047819,
+      "wedge-four": 0.000626454325607817
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.42663040869707713,
+     "chi_wedge_four": 0.424489784877195,
+     "excess_closed_five": 0.42663040869707713,
+     "excess_wedge_four": 0.424489784877195,
+     "jt": 0.3,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 9.879378948931064e-13,
+      "edge": 6.445581920590379e-07,
+      "face": 0.4238633305510293
+     },
+     "one_site_excess": {
+      "corner": 9.879378948931064e-13,
+      "edge": 6.445581920590379e-07,
+      "face": 0.4238633305510293
+     },
+     "p_z": [
+      0.5002947144586486,
+      0.4997052855408058
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0002947144586485928,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.09945167216081338,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 2.5512199569029343,
+     "symmetry_max": 5.578870698741412e-13,
+     "theta": 0.4267717338545344,
+     "x_control": {
+      "H_X": 0.9268339024179875,
+      "chi": [
+       0.03562442279544825,
+       0.035322201594242375
+      ],
+      "p_x": [
+       0.6578790075780448,
+       0.3421209924212332
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999992094595791,
+     "Q_quiet": 0.002152494348111489,
+     "X_face": -0.6935350945238375,
+     "bloch": {
+      "corner": [
+       0.057819508132143135,
+       0.02257011043357901,
+       0.9980692098397117
+      ],
+      "edge": [
+       0.03911672586567724,
+       0.043217042319410245,
+       0.9976258014640652
+      ],
+      "face": [
+       -0.6935350945238375,
+       0.03993702017847456,
+       0.045483596743159826
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.007282171044205588,
+      "wedge-four": 0.0016577205579998422
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.6113572149513008,
+     "chi_wedge_four": 0.6057327644664324,
+     "excess_closed_five": 0.6113572149513008,
+     "excess_wedge_four": 0.6057327644664324,
+     "jt": 0.4,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 2.157411084496982e-11,
+      "edge": 1.4780712569192715e-06,
+      "face": 0.6040750439070952
+     },
+     "one_site_excess": {
+      "corner": 2.157411084496982e-11,
+      "edge": 1.4780712569192715e-06,
+      "face": 0.6040750439070952
+     },
+     "p_z": [
+      0.500523431572031,
+      0.49947656842647326
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0005234315720310523,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.04645522578634308,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.1102230246251565e-15,
+     "sum_delta_chi": 3.6456454877683315,
+     "symmetry_max": 1.3373746554634636e-12,
+     "theta": 0.48720081117759917,
+     "x_control": {
+      "H_X": 0.9906762346552773,
+      "chi": [
+       0.010511812187891767,
+       0.010227334365199403
+      ],
+      "p_x": [
+       0.5567838325327988,
+       0.4432161674658911
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999987575861491,
+     "Q_quiet": 0.002714290103055794,
+     "X_face": -0.35189466070999054,
+     "bloch": {
+      "corner": [
+       0.06620381855198133,
+       0.004881840079290122,
+       0.9977863502992365
+      ],
+      "edge": [
+       0.046545398124196155,
+       0.04051591463138593,
+       0.996785069494652
+      ],
+      "face": [
+       -0.35189466070999054,
+       0.4072352904765906,
+       0.040345867442991845
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.014564167016403284,
+      "wedge-four": 0.003329653147484124
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.7723010113661626,
+     "chi_wedge_four": 0.7610664974994331,
+     "excess_closed_five": 0.7723010113661626,
+     "excess_wedge_four": 0.7610664974994331,
+     "jt": 0.5,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 1.5297877096760292e-10,
+      "edge": 1.0066759813117353e-06,
+      "face": 0.7577368443497593
+     },
+     "one_site_excess": {
+      "corner": 1.5297877096760292e-10,
+      "edge": 1.0066759813117353e-06,
+      "face": 0.7577368443497593
+     },
+     "p_z": [
+      0.5006561919069079,
+      0.4993438080923503
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0006561919069079103,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.019256781288307042,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 7.771561172376096e-16,
+     "sum_delta_chi": 4.588868012730058,
+     "symmetry_max": 2.1896928714681962e-12,
+     "theta": 0.5006325096553441,
+     "x_control": {
+      "H_X": 0.9995829090383196,
+      "chi": [
+       0.0012640374628993811,
+       0.001144626460324094
+      ],
+      "p_x": [
+       0.5120224282569693,
+       0.4879775717424254
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999986141342628,
+     "Q_quiet": 0.0030542094816898846,
+     "X_face": 0.031958973876546115,
+     "bloch": {
+      "corner": [
+       0.06313212146972068,
+       -0.014379847053582409,
+       0.9978845481585134
+      ],
+      "edge": [
+       0.04934626579235349,
+       0.03748044701176936,
+       0.9960070328781068
+      ],
+      "face": [
+       0.031958973876546115,
+       0.359613406644381,
+       0.03205941357905939
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.02411326427399607,
+      "wedge-four": 0.005525582513716487
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "chi_closed_five": 0.8938971164495223,
+     "chi_wedge_four": 0.875309434693803,
+     "excess_closed_five": 0.8938971164495223,
+     "excess_wedge_four": 0.875309434693803,
+     "jt": 0.6,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 5.10194214160169e-10,
+      "edge": 3.858537054981029e-07,
+      "face": 0.8697838521755262
+     },
+     "one_site_excess": {
+      "corner": 5.10194214160169e-10,
+      "edge": 3.858537054981029e-07,
+      "face": 0.8697838521755262
+     },
+     "p_z": [
+      0.500693040009788,
+      0.4993069599892642
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.01987004868042228,
+      "opposite-44": 0.0023460513834494164,
+      "opposite-55": 0.010893073830100073,
+      "plus-x-orthogonal": 0.019870048680431684,
+      "transverse-orthogonal": 0.01697853383983084
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0006930400097879819,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 6
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.011303356801130659,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 1.1102230246251565e-15,
+     "sum_delta_chi": 5.289031971674256,
+     "symmetry_max": 4.5602410736478305e-12,
+     "theta": 0.5030408931208487,
+     "x_control": {
+      "H_X": 0.9999982970488442,
+      "chi": [
+       5.497548721467016e-05,
+       3.456667231038768e-05
+      ],
+      "p_x": [
+       0.5007682432317369,
+       0.4992317567672086
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999986047782878,
+     "Q_quiet": 0.003200026526190447,
+     "X_face": 0.13260517493077645,
+     "bloch": {
+      "corner": [
+       0.04974012470967952,
+       -0.02846558735416705,
+       0.9983266121084421
+      ],
+      "edge": [
+       0.04950029537017287,
+       0.03623280863072725,
+       0.9952733348391771
+      ],
+      "face": [
+       0.13260517493077645,
+       0.10679560386044268,
+       0.027364621610958206
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.03453649872409614,
+      "wedge-four": 0.007917254295861764
+     },
+     "certifying_subsets": {
+      "0.05": [
+       "+x",
+       "-x"
+      ],
+      "0.1": [
+       "+x",
+       "-x"
+      ],
+      "0.2": [
+       "+x",
+       "-x"
+      ]
+     },
+     "chi_closed_five": 0.9655389841764344,
+     "chi_wedge_four": 0.9389197397550213,
+     "excess_closed_five": 0.9655389841764344,
+     "excess_wedge_four": 0.9389197397550213,
+     "jt": 0.7,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 9.913458267718327e-10,
+      "edge": 1.6343344180764878e-06,
+      "face": 0.9310024854523382
+     },
+     "one_site_excess": {
+      "corner": 9.913458267718327e-10,
+      "edge": 1.6343344180764878e-06,
+      "face": 0.9310024854523382
+     },
+     "p_z": [
+      0.5006953754664364,
+      0.49930462453227253
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.029268536435889423,
+      "opposite-44": 0.0038252978286698984,
+      "opposite-55": 0.017276347800550013,
+      "plus-x-orthogonal": 0.029268536435881783,
+      "transverse-orthogonal": 0.024647066423551134
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0006953754664363876,
+     "r_ind": {
+      "0.05": 2,
+      "0.1": 2,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 2,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.01136733623578699,
+     "singleton_passes": {
+      "0.05": [
+       "+x",
+       "-x"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 4.440892098500626e-16,
+     "sum_delta_chi": 5.686756927372954,
+     "symmetry_max": 6.821321285599424e-12,
+     "theta": 0.5047307768675429,
+     "x_control": {
+      "H_X": 0.9999998034737922,
+      "chi": [
+       1.3486552511432492e-05,
+       6.258648111989729e-06
+      ],
+      "p_x": [
+       0.4997390195588659,
+       0.5002609804397945
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999986115563313,
+     "Q_quiet": 0.003248716426418663,
+     "X_face": -0.02629647641354551,
+     "bloch": {
+      "corner": [
+       0.03077091203478982,
+       -0.03245997994970518,
+       0.9989550730596706
+      ],
+      "edge": [
+       0.04933025804589132,
+       0.03646437811558167,
+       0.9945474940874921
+      ],
+      "face": [
+       -0.02629647641354551,
+       0.0016757605520344443,
+       0.026746001455257296
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.043930081926161435,
+      "wedge-four": 0.010053438298773365
+     },
+     "certifying_subsets": {
+      "0.05": [
+       "+x"
+      ],
+      "0.1": [
+       "+y",
+       "-y"
+      ],
+      "0.2": [
+       "+y",
+       "-y"
+      ]
+     },
+     "chi_closed_five": 0.9811887958437517,
+     "chi_wedge_four": 0.9473121522225934,
+     "excess_closed_five": 0.9811887958437517,
+     "excess_wedge_four": 0.9473121522225934,
+     "jt": 0.8,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 1.3060281448982677e-09,
+      "edge": 2.1872587416789727e-06,
+      "face": 0.9372587139175903
+     },
+     "one_site_excess": {
+      "corner": 1.3060281448982677e-09,
+      "edge": 2.1872587416789727e-06,
+      "face": 0.9372587139175903
+     },
+     "p_z": [
+      0.5006936843444492,
+      0.4993063156541304
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.03914721728963576,
+      "opposite-44": 0.005585447839061515,
+      "opposite-55": 0.024475590617510923,
+      "plus-x-orthogonal": 0.039147217289643044,
+      "transverse-orthogonal": 0.03260074054291982
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0006936843444491636,
+     "r_ind": {
+      "0.05": 1,
+      "0.1": 2,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 2,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.012505166198189891,
+     "singleton_passes": {
+      "0.05": [
+       "+x",
+       "-x"
+      ],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 5.751626200577877,
+     "symmetry_max": 6.229683435776678e-12,
+     "theta": 0.506568146413809,
+     "x_control": {
+      "H_X": 0.9999998611694277,
+      "chi": [
+       1.9667663921030254e-05,
+       8.393228756897742e-06
+      ],
+      "p_x": [
+       0.5002193513347806,
+       0.49978064866408106
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999986192268331,
+     "Q_quiet": 0.003317595747322044,
+     "X_face": -0.1357077058886345,
+     "bloch": {
+      "corner": [
+       0.012902871258812447,
+       -0.024994211420112385,
+       0.9995476789121849
+      ],
+      "edge": [
+       0.04957720698944464,
+       0.03635735946627493,
+       0.993817129593171
+      ],
+      "face": [
+       -0.1357077058886345,
+       0.17410780219762426,
+       0.025357725888494054
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.05050150346672411,
+      "wedge-four": 0.011503823370270894
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [
+       "+y",
+       "-y"
+      ],
+      "0.2": [
+       "+y",
+       "-y"
+      ]
+     },
+     "chi_closed_five": 0.9394685149932357,
+     "chi_wedge_four": 0.9004708349016208,
+     "excess_closed_five": 0.9394685149932357,
+     "excess_wedge_four": 0.9004708349016208,
+     "jt": 0.9,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 1.3654909156244743e-09,
+      "edge": 1.174196461652989e-06,
+      "face": 0.8889670115265116
+     },
+     "one_site_excess": {
+      "corner": 1.3654909156244743e-09,
+      "edge": 1.174196461652989e-06,
+      "face": 0.8889670115265116
+     },
+     "p_z": [
+      0.5006917655028831,
+      0.49930823449613615
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.048560858708975724,
+      "opposite-44": 0.007377824247448239,
+      "opposite-55": 0.031655277664365274,
+      "plus-x-orthogonal": 0.0485608587089541,
+      "transverse-orthogonal": 0.040114571816191116
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0006917655028830794,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 2,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 6,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.013062215782449066,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 6.661338147750939e-16,
+     "sum_delta_chi": 5.480820369592955,
+     "symmetry_max": 4.838351941316432e-12,
+     "theta": 0.5084237693831714,
+     "x_control": {
+      "H_X": 0.9999959674889559,
+      "chi": [
+       3.2689836446664344e-05,
+       1.2920779609126853e-05
+      ],
+      "p_x": [
+       0.5011821846416382,
+       0.498817815357194
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999986439020385,
+     "Q_quiet": 0.0034997666963740848,
+     "X_face": 0.05713151378827819,
+     "bloch": {
+      "corner": [
+       0.002407333947376862,
+       -0.008713679659005588,
+       0.9998953625707574
+      ],
+      "edge": [
+       0.048874806919519384,
+       0.03453596756484416,
+       0.9931051040364943
+      ],
+      "face": [
+       0.05713151378827819,
+       0.40120462952204794,
+       0.019385340431588127
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.05312334764787552,
+      "wedge-four": 0.011993060744374784
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+y",
+       "-y"
+      ]
+     },
+     "chi_closed_five": 0.8439016610694934,
+     "chi_wedge_four": 0.8027713741703564,
+     "excess_closed_five": 0.8439016610694934,
+     "excess_wedge_four": 0.8027713741703564,
+     "jt": 1.0,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 1.3120091787630593e-09,
+      "edge": 2.785176978672109e-06,
+      "face": 0.7907783134216179
+     },
+     "one_site_excess": {
+      "corner": 1.3120091787630593e-09,
+      "edge": 2.785176978672109e-06,
+      "face": 0.7907783134216179
+     },
+     "p_z": [
+      0.5006855564983913,
+      0.49931444350082016
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.05675150272612847,
+      "opposite-44": 0.00891820232700906,
+      "opposite-55": 0.0380337596029163,
+      "plus-x-orthogonal": 0.05675150272614363,
+      "transverse-orthogonal": 0.04662040339163369
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0006855564983913043,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.014985365945910127,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 1.4432899320127035e-15,
+     "sum_delta_chi": 4.898888818820412,
+     "symmetry_max": 4.363731598289178e-12,
+     "theta": 0.5101100827126622,
+     "x_control": {
+      "H_X": 0.9999408207870263,
+      "chi": [
+       0.00017668257680714117,
+       6.066166374174564e-05
+      ],
+      "p_x": [
+       0.5045287605219752,
+       0.4954712394770269
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999987881460207,
+     "Q_quiet": 0.0038404364879474073,
+     "X_face": 0.46367375728103744,
+     "bloch": {
+      "corner": [
+       0.0029548235373995898,
+       0.010659246056143101,
+       0.9998753633472511
+      ],
+      "edge": [
+       0.04485214757248099,
+       0.03157920389036357,
+       0.9924437636768542
+      ],
+      "face": [
+       0.46367375728103744,
+       0.3359879711872221,
+       0.011319117904735165
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.05158394965722091,
+      "wedge-four": 0.011470599388585634
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.7030256825420684,
+     "chi_wedge_four": 0.6629123322782283,
+     "excess_closed_five": 0.7030256825420684,
+     "excess_wedge_four": 0.6629123322782283,
+     "jt": 1.1,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 1.1135414403713392e-09,
+      "edge": 6.070980279561898e-06,
+      "face": 0.6514417328848475
+     },
+     "one_site_excess": {
+      "corner": 1.1135414403713392e-09,
+      "edge": 6.070980279561898e-06,
+      "face": 0.6514417328848475
+     },
+     "p_z": [
+      0.5006480714438998,
+      0.4993519285552527
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0006480714438997781,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.028635132710457603,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.4432899320127035e-15,
+     "sum_delta_chi": 4.057700694197051,
+     "symmetry_max": 4.795164265658514e-12,
+     "theta": 0.5093153464246352
+    },
+    {
+     "H_Z": 0.9999992805946685,
+     "Q_quiet": 0.004337069932748405,
+     "X_face": 0.7056317356684687,
+     "bloch": {
+      "corner": [
+       0.014336007840591004,
+       0.026338416048112125,
+       0.9994939242546298
+      ],
+      "edge": [
+       0.03603447285750965,
+       0.030152601729164674,
+       0.9918319358798734
+      ],
+      "face": [
+       0.7056317356684687,
+       -0.12483870992027568,
+       0.008682666189570032
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.046351519170917066,
+      "wedge-four": 0.010064421224573628
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.5303098978616503,
+     "chi_wedge_four": 0.4940227999186486,
+     "excess_closed_five": 0.5303098978616503,
+     "excess_wedge_four": 0.4940227999186486,
+     "jt": 1.2,
+     "lam": 0.1,
+     "one_site_chi": {
+      "corner": 6.345225546703324e-10,
+      "edge": 5.545010560860375e-06,
+      "face": 0.4839583786907332
+     },
+     "one_site_excess": {
+      "corner": 6.345225546703324e-10,
+      "edge": 5.545010560860375e-06,
+      "face": 0.4839583786907332
+     },
+     "p_z": [
+      0.5004993265765004,
+      0.4995006734223041
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0004993265765004251,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.06428816347518589,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.2212453270876722e-15,
+     "sum_delta_chi": 3.036710995397895,
+     "symmetry_max": 3.341771304121721e-12,
+     "theta": 0.48984503240776567
+    }
+   ],
+   "0.2": [
+    {
+     "H_Z": 0.9999999999999999,
+     "Q_quiet": -2.220446049250313e-16,
+     "X_face": 1.0000000000000002,
+     "bloch": {
+      "corner": [
+       0.0,
+       -0.0,
+       1.0000000000000002
+      ],
+      "edge": [
+       0.0,
+       -0.0,
+       1.0000000000000002
+      ],
+      "face": [
+       1.0000000000000002,
+       -0.0,
+       0.0
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0,
+      "wedge-four": 0.0
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": -0.0,
+     "chi_wedge_four": -0.0,
+     "excess_closed_five": 0.0,
+     "excess_wedge_four": 0.0,
+     "jt": 0.0,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 0.0,
+      "edge": 0.0,
+      "face": 0.0
+     },
+     "one_site_excess": {
+      "corner": 0.0,
+      "edge": 0.0,
+      "face": 0.0
+     },
+     "p_z": [
+      0.5000000000000001,
+      0.5000000000000001
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 1.1102230246251565e-16,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.25000000000000006,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 0.0,
+     "symmetry_max": 0.0,
+     "theta": 0.0,
+     "x_control": {
+      "H_X": -0.0,
+      "chi": [
+       -0.0,
+       -0.0
+      ],
+      "p_x": [
+       1.0,
+       0.0
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       true
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999999975288335,
+     "Q_quiet": 0.0007801270458958065,
+     "X_face": 0.6829918537643651,
+     "bloch": {
+      "corner": [
+       0.011638166783591267,
+       0.037633727979706794,
+       0.9992238100272822
+      ],
+      "edge": [
+       0.007788313598920831,
+       0.038414996770563065,
+       0.9992159358809262
+      ],
+      "face": [
+       0.6829918537643651,
+       -0.7027001156787179,
+       0.015012307998499841
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.0001699433497277386,
+      "wedge-four": 3.783310809050977e-05
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.08053117697306163,
+     "chi_wedge_four": 0.08039906673229738,
+     "excess_closed_five": 0.08053117697306163,
+     "excess_wedge_four": 0.08039906673229738,
+     "jt": 0.1,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": -6.08643729881254e-17,
+      "edge": 8.277140428272637e-09,
+      "face": 0.08036123362333389
+     },
+     "one_site_excess": {
+      "corner": -6.08643729881254e-17,
+      "edge": 8.277140428272637e-09,
+      "face": 0.08036123362333389
+     },
+     "p_z": [
+      0.5000292654573527,
+      0.4999707345424781
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 2.92654573527118e-05,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.2291028466100032,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 0.48265862087531275,
+     "symmetry_max": 8.729822420505684e-13,
+     "theta": 0.09116861751261895,
+     "x_control": {
+      "H_X": 0.3149202784430576,
+      "chi": [
+       0.03767297782064535,
+       0.03760821481513904
+      ],
+      "p_x": [
+       0.9431231667956262,
+       0.05687683320414773
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999996281849384,
+     "Q_quiet": 0.002893131780350444,
+     "X_face": -0.02488305934024293,
+     "bloch": {
+      "corner": [
+       0.042423854631309946,
+       0.062097154833711525,
+       0.9971671052937969
+      ],
+      "edge": [
+       0.02865643273252242,
+       0.06794921506222593,
+       0.9970466311455023
+      ],
+      "face": [
+       -0.02488305934024293,
+       -0.9191125255321735,
+       0.04953579593947438
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.002136809572462789,
+      "wedge-four": 0.00047134134305770736
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.23922134369985656,
+     "chi_wedge_four": 0.23755587547175813,
+     "excess_closed_five": 0.23922134369985656,
+     "excess_wedge_four": 0.23755587547175813,
+     "jt": 0.2,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 4.576057575876309e-13,
+      "edge": 9.821959856685155e-07,
+      "face": 0.23708453412739378
+     },
+     "one_site_excess": {
+      "corner": 4.576057575876309e-13,
+      "edge": 9.821959856685155e-07,
+      "face": 0.23708453412739378
+     },
+     "p_z": [
+      0.5003589726264429,
+      0.4996410273730552
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0003589726264429105,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.17307870361101466,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.1102230246251565e-16,
+     "sum_delta_chi": 1.4286661892867456,
+     "symmetry_max": 1.3066492332569624e-12,
+     "theta": 0.2801831582669976,
+     "x_control": {
+      "H_X": 0.7111731766284862,
+      "chi": [
+       0.057237393950162335,
+       0.05672488144078297
+      ],
+      "p_x": [
+       0.8053133891420884,
+       0.1946866108572964
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999959936965568,
+     "Q_quiet": 0.0057375652105976505,
+     "X_face": -0.6027339921990789,
+     "bloch": {
+      "corner": [
+       0.08147196206560925,
+       0.0649485111935595,
+       0.9945477861444822
+      ],
+      "edge": [
+       0.055645653418988715,
+       0.08290917639625275,
+       0.9939770834343225
+      ],
+      "face": [
+       -0.6027339921990789,
+       -0.5564539155610793,
+       0.08060172900226298
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.00882277131394249,
+      "wedge-four": 0.001952992596476355
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.42433259322263117,
+     "chi_wedge_four": 0.4174628145088445,
+     "excess_closed_five": 0.42433259322263117,
+     "excess_wedge_four": 0.4174628145088445,
+     "jt": 0.3,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 6.778321311764991e-11,
+      "edge": 8.650170014069033e-06,
+      "face": 0.4155098219086887
+     },
+     "one_site_excess": {
+      "corner": 6.778321311764991e-11,
+      "edge": 8.650170014069033e-06,
+      "face": 0.4155098219086887
+     },
+     "p_z": [
+      0.501178337044697,
+      0.4988216629519656
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0011783370446970531,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.10282519908505433,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 1.1102230246251565e-15,
+     "sum_delta_chi": 2.5185164444806403,
+     "symmetry_max": 3.6794456370614625e-12,
+     "theta": 0.4270670554237702,
+     "x_control": {
+      "H_X": 0.9272741234445663,
+      "chi": [
+       0.036627545269967476,
+       0.035558730992054255
+      ],
+      "p_x": [
+       0.6574115913076392,
+       0.3425884086894355
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999873784871147,
+     "Q_quiet": 0.008559438690266319,
+     "X_face": -0.687571882381239,
+     "bloch": {
+      "corner": [
+       0.1150807115639539,
+       0.04546233127865499,
+       0.9922727238065939
+      ],
+      "edge": [
+       0.07969689971213842,
+       0.08350153683744545,
+       0.9906083988128735
+      ],
+      "face": [
+       -0.687571882381239,
+       0.03776895120371321,
+       0.09091006177137606
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.022776359121626344,
+      "wedge-four": 0.005076080063969646
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.6048063119691631,
+     "chi_wedge_four": 0.5871060329133051,
+     "excess_closed_five": 0.6048063119691631,
+     "excess_wedge_four": 0.5871060329133051,
+     "jt": 0.4,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 1.4956782185113118e-09,
+      "edge": 1.926967265761118e-05,
+      "face": 0.5820299528475368
+     },
+     "one_site_excess": {
+      "corner": 1.4956782185113118e-09,
+      "edge": 1.926967265761118e-05,
+      "face": 0.5820299528475368
+     },
+     "p_z": [
+      0.5020914756716162,
+      0.49790852432702404
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.002091475671616161,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.05159764779303964,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.4424906541753444e-15,
+     "sum_delta_chi": 3.5580367555915466,
+     "symmetry_max": 1.7986723221952161e-12,
+     "theta": 0.489185157966441,
+     "x_control": {
+      "H_X": 0.9910652427925406,
+      "chi": [
+       0.011661600373162107,
+       0.010660113916452385
+      ],
+      "p_x": [
+       0.5555891461278395,
+       0.44441085387011936
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999802411772866,
+     "Q_quiet": 0.010738967432262547,
+     "X_face": -0.3479811674428892,
+     "bloch": {
+      "corner": [
+       0.131639409706434,
+       0.010805019707038677,
+       0.99111551418224
+      ],
+      "edge": [
+       0.09410579359143825,
+       0.07595115858019058,
+       0.9874065509532349
+      ],
+      "face": [
+       -0.3479811674428892,
+       0.40226760639034975,
+       0.08078518831109827
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.04475563234190649,
+      "wedge-four": 0.010031088009323064
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.7589588710821926,
+     "chi_wedge_four": 0.7242343267630906,
+     "excess_closed_five": 0.7589588710821926,
+     "excess_wedge_four": 0.7242343267630906,
+     "jt": 0.5,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 1.06987567067879e-08,
+      "edge": 1.2819835838007165e-05,
+      "face": 0.7142032387402861
+     },
+     "one_site_excess": {
+      "corner": 1.06987567067879e-08,
+      "edge": 1.2819835838007165e-05,
+      "face": 0.7142032387402861
+     },
+     "p_z": [
+      0.502616840728347,
+      0.49738315926812193
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.002616840728347003,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.0265295352817364,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.4424906541753444e-15,
+     "sum_delta_chi": 4.414855049216747,
+     "symmetry_max": 1.3481438188023276e-11,
+     "theta": 0.5055808444656495,
+     "x_control": {
+      "H_X": 0.9996640472721701,
+      "chi": [
+       0.0017889536240162096,
+       0.0013400192072203776
+      ],
+      "p_x": [
+       0.5107899631634922,
+       0.4892100368330745
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999781311318641,
+     "Q_quiet": 0.012012885370898951,
+     "X_face": 0.03294418854463227,
+     "bloch": {
+      "corner": [
+       0.12570812837789375,
+       -0.026609601929139193,
+       0.9914454509530065
+      ],
+      "edge": [
+       0.09826629357870051,
+       0.06853371297447601,
+       0.9845287783051956
+      ],
+      "face": [
+       0.03294418854463227,
+       0.35543626358254526,
+       0.06440837446137243
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.07271791943622574,
+      "wedge-four": 0.016355977782468778
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+y",
+       "-y"
+      ]
+     },
+     "chi_closed_five": 0.8720237887670846,
+     "chi_wedge_four": 0.8156618471245884,
+     "excess_closed_five": 0.8720237887670846,
+     "excess_wedge_four": 0.8156618471245884,
+     "jt": 0.6,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 3.59376597972548e-08,
+      "edge": 5.120205765915542e-06,
+      "face": 0.7993058693308589
+     },
+     "one_site_excess": {
+      "corner": 3.59376597972548e-08,
+      "edge": 5.120205765915542e-06,
+      "face": 0.7993058693308589
+     },
+     "p_z": [
+      0.5027530227778529,
+      0.49724697721838945
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.06480209852934501,
+      "opposite-44": 0.006374763731834697,
+      "opposite-55": 0.03886692303736877,
+      "plus-x-orthogonal": 0.06480209852935033,
+      "transverse-orthogonal": 0.05350574212385173
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0027530227778529426,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.020353241171549276,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 8.881784197001252e-16,
+     "sum_delta_chi": 5.006694966032523,
+     "symmetry_max": 1.1260770094168038e-11,
+     "theta": 0.5118739726452469,
+     "x_control": {
+      "H_X": 0.9999997680571113,
+      "chi": [
+       0.00023129519657594244,
+       0.00011370698267421098
+      ],
+      "p_x": [
+       0.4997164770269777,
+       0.5002835229698562
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.999978244131067,
+     "Q_quiet": 0.012520680768236092,
+     "X_face": 0.13510676355527362,
+     "bloch": {
+      "corner": [
+       0.09983446135814314,
+       -0.05357052669846583,
+       0.9931031094693281
+      ],
+      "edge": [
+       0.09707652170561648,
+       0.06602006407373137,
+       0.9818555289941996
+      ],
+      "face": [
+       0.13510676355527362,
+       0.1048931480798988,
+       0.055134023835142154
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.10181956653672719,
+      "wedge-four": 0.022934164055548045
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [
+       "+x"
+      ],
+      "0.2": [
+       "+y",
+       "-y"
+      ]
+     },
+     "chi_closed_five": 0.9343261715419726,
+     "chi_wedge_four": 0.8554407690759438,
+     "excess_closed_five": 0.9343261715419726,
+     "excess_wedge_four": 0.8554407690759438,
+     "jt": 0.7,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 6.981646047876308e-08,
+      "edge": 2.0629139988802975e-05,
+      "face": 0.8325066050052454
+     },
+     "one_site_excess": {
+      "corner": 6.981646047876308e-08,
+      "edge": 2.0629139988802975e-05,
+      "face": 0.8325066050052454
+     },
+     "p_z": [
+      0.502745900986403,
+      0.49725409901012835
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.09324489714440665,
+      "opposite-44": 0.00980932459127645,
+      "opposite-55": 0.060394807359658895,
+      "plus-x-orthogonal": 0.093244897144436,
+      "transverse-orthogonal": 0.07570981049091313
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.002745900986403038,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 1,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 2,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.022074442755860683,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [
+       "+x",
+       "-x"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 4.440892098500626e-16,
+     "sum_delta_chi": 5.29041541938772,
+     "symmetry_max": 1.515032543863981e-11,
+     "theta": 0.5181380225080957,
+     "x_control": {
+      "H_X": 0.9999967943885969,
+      "chi": [
+       0.0001765422241031267,
+       8.877801550255526e-05
+      ],
+      "p_x": [
+       0.4989459699084597,
+       0.5010540300880383
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.999978671192,
+     "Q_quiet": 0.012670336809876392,
+     "X_face": -0.018433369598322917,
+     "bloch": {
+      "corner": [
+       0.06353185125463574,
+       -0.060715482845354066,
+       0.9954635957500726
+      ],
+      "edge": [
+       0.09624356798113777,
+       0.06723728521129338,
+       0.9791957306301745
+      ],
+      "face": [
+       -0.018433369598322917,
+       -0.003963786196421293,
+       0.054015883166524614
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.1257385158812837,
+      "wedge-four": 0.028283316638174294
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [
+       "+x"
+      ],
+      "0.2": [
+       "+y",
+       "-y"
+      ]
+     },
+     "chi_closed_five": 0.9403517077914036,
+     "chi_wedge_four": 0.8428965085640825,
+     "excess_closed_five": 0.9403517077914036,
+     "excess_wedge_four": 0.8428965085640825,
+     "jt": 0.8,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 9.022675220068249e-08,
+      "edge": 2.75550973239079e-05,
+      "face": 0.8146131919101199
+     },
+     "one_site_excess": {
+      "corner": 9.022675220068249e-08,
+      "edge": 2.75550973239079e-05,
+      "face": 0.8146131919101199
+     },
+     "p_z": [
+      0.5027188169624952,
+      0.4972811830339316
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.12179800019744177,
+      "opposite-44": 0.013681908507623044,
+      "opposite-55": 0.08390857359825629,
+      "plus-x-orthogonal": 0.12179800019746598,
+      "transverse-orthogonal": 0.09760726898860449
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.0027188169624952074,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 1,
+      "0.2": 2
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 2,
+      "0.2": 6
+     },
+     "removed_pointer_coherence": 0.024583065430277454,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [
+       "+x",
+       "-x"
+      ],
+      "0.2": [
+       "+x",
+       "-x",
+       "+y",
+       "-y",
+       "+z",
+       "-z"
+      ]
+     },
+     "state_norm_err": 8.881784197001252e-16,
+     "sum_delta_chi": 5.252289449839138,
+     "symmetry_max": 1.5788259588589426e-11,
+     "theta": 0.5247789601706536,
+     "x_control": {
+      "H_X": 0.999998088313593,
+      "chi": [
+       0.00025303357515471525,
+       0.00011704542856860733
+      ],
+      "p_x": [
+       0.500813965432922,
+       0.49918603456350275
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.999979109745897,
+     "Q_quiet": 0.012923982936188239,
+     "X_face": -0.1286615711205279,
+     "bloch": {
+      "corner": [
+       0.029844782809265114,
+       -0.045756759207770545,
+       0.9976620169839994
+      ],
+      "edge": [
+       0.09755376829555851,
+       0.06749319234355655,
+       0.9764900171436243
+      ],
+      "face": [
+       -0.1286615711205279,
+       0.15561782899713716,
+       0.05169964046478276
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.13869591322221853,
+      "wedge-four": 0.031013321138311345
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x"
+      ]
+     },
+     "chi_closed_five": 0.8890426279862018,
+     "chi_wedge_four": 0.7813600359132271,
+     "excess_closed_five": 0.8890426279862018,
+     "excess_wedge_four": 0.7813600359132271,
+     "jt": 0.9,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 9.062666197741723e-08,
+      "edge": 1.7536384745213407e-05,
+      "face": 0.7503467147639833
+     },
+     "one_site_excess": {
+      "corner": 9.062666197741723e-08,
+      "edge": 1.7536384745213407e-05,
+      "face": 0.7503467147639833
+     },
+     "p_z": [
+      0.5026907203290523,
+      0.4973092796678423
+     ],
+     "pair_classes": {
+      "minus-x-orthogonal": 0.14778886614495484,
+      "opposite-44": 0.017423380999360912,
+      "opposite-55": 0.10672136141551887,
+      "plus-x-orthogonal": 0.14778886614496445,
+      "transverse-orthogonal": 0.11717642135233916
+     },
+     "pair_reason": null,
+     "pointer_tv_drift": 0.002690720329052265,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 1
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 2
+     },
+     "removed_pointer_coherence": 0.02609894274206494,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": [
+       "+x",
+       "-x"
+      ]
+     },
+     "state_norm_err": 1.3322676295501878e-15,
+     "sum_delta_chi": 4.9035253996253125,
+     "symmetry_max": 1.0932477145786379e-11,
+     "theta": 0.5312690660475101,
+     "x_control": {
+      "H_X": 0.9999466401317152,
+      "chi": [
+       0.00041672934157777064,
+       0.00019347892183918525
+      ],
+      "p_x": [
+       0.5043003363955297,
+       0.49569966360089956
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.999979702968932,
+     "Q_quiet": 0.013621424117207681,
+     "X_face": 0.047190950137787124,
+     "bloch": {
+      "corner": [
+       0.01073133439446213,
+       -0.014198013667796076,
+       0.9989001225585222
+      ],
+      "edge": [
+       0.09769251334341476,
+       0.06336382927265224,
+       0.9738570292070624
+      ],
+      "face": [
+       0.047190950137787124,
+       0.37079439219439136,
+       0.040765662407695524
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.13744340710417835,
+      "wedge-four": 0.0303245611773163
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.7847650898947073,
+     "chi_wedge_four": 0.6776462439770116,
+     "excess_closed_five": 0.7847650898947073,
+     "excess_wedge_four": 0.6776462439770116,
+     "jt": 1.0,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 8.416098231690816e-08,
+      "edge": 4.0956223529266256e-05,
+      "face": 0.6473216827905289
+     },
+     "one_site_excess": {
+      "corner": 8.416098231690816e-08,
+      "edge": 4.0956223529266256e-05,
+      "face": 0.6473216827905289
+     },
+     "p_z": [
+      0.5026522410007811,
+      0.4973477589966607
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.002652241000781097,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.024034149568708897,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.220446049250313e-16,
+     "sum_delta_chi": 4.280115155697461,
+     "symmetry_max": 9.16633435821268e-12,
+     "theta": 0.5372073453466559,
+     "x_control": {
+      "H_X": 0.999716240036072,
+      "chi": [
+       0.0009357756064238831,
+       0.0002618060972151559
+      ],
+      "p_x": [
+       0.5099165145904999,
+       0.49008348540685404
+      ],
+      "pair_evaluated": false,
+      "pair_reason": "fewer-than-two-X-singletons-pass",
+      "r_ind_ge2_possible": false,
+      "singleton_passes": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "zero_probability_outcome": [
+       false,
+       false
+      ]
+     }
+    },
+    {
+     "H_Z": 0.9999819313857035,
+     "Q_quiet": 0.014904476392675337,
+     "X_face": 0.4251769729125533,
+     "bloch": {
+      "corner": [
+       0.012872082353070878,
+       0.022680701304609134,
+       0.9987261176467269
+      ],
+      "edge": [
+       0.09100397281797054,
+       0.05610067658468825,
+       0.9714649295679225
+      ],
+      "face": [
+       0.4251769729125533,
+       0.31247642721359176,
+       0.025799639466173974
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.1227519011327931,
+      "wedge-four": 0.026424694705453722
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.6382691502471962,
+     "chi_wedge_four": 0.5419419438278689,
+     "excess_closed_five": 0.6382691502471962,
+     "excess_wedge_four": 0.5419419438278689,
+     "jt": 1.1,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 7.054728776373712e-08,
+      "edge": 8.148121667465869e-05,
+      "face": 0.5155172491144031
+     },
+     "one_site_excess": {
+      "corner": 7.054728776373712e-08,
+      "edge": 8.148121667465869e-05,
+      "face": 0.5155172491144031
+     },
+     "p_z": [
+      0.5025024145906537,
+      0.49749758540670846
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.002502414590653701,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.03564268147112301,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 0.0,
+     "sum_delta_chi": 3.444306075805868,
+     "symmetry_max": 8.012035479509905e-12,
+     "theta": 0.5402090305599864
+    },
+    {
+     "H_Z": 0.999989200980101,
+     "Q_quiet": 0.016738730646214672,
+     "X_face": 0.649059825240665,
+     "bloch": {
+      "corner": [
+       0.03536054760119231,
+       0.051859652677349474,
+       0.9971896794470432
+      ],
+      "edge": [
+       0.0739274189301007,
+       0.05160539962668713,
+       0.9693328592605275
+      ],
+      "face": [
+       0.649059825240665,
+       -0.1147681445979736,
+       0.020873679041093274
+      ]
+     },
+     "capacity_gain": {
+      "closed-five": 0.09924218689246339,
+      "wedge-four": 0.02053191634161111
+     },
+     "certifying_subsets": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "chi_closed_five": 0.4667913050025115,
+     "chi_wedge_four": 0.38808103445758513,
+     "excess_closed_five": 0.4667913050025115,
+     "excess_wedge_four": 0.38808103445758513,
+     "jt": 1.2,
+     "lam": 0.2,
+     "one_site_chi": {
+      "corner": 3.657540802431275e-08,
+      "edge": 7.201016033219279e-05,
+      "face": 0.3675491181100481
+     },
+     "one_site_excess": {
+      "corner": 3.657540802431275e-08,
+      "edge": 7.201016033219279e-05,
+      "face": 0.3675491181100481
+     },
+     "p_z": [
+      0.50193459200851,
+      0.4980654079883227
+     ],
+     "pair_classes": null,
+     "pair_reason": "fewer-than-two-singleton-passes",
+     "pointer_tv_drift": 0.0019345920085099833,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "r_raw": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "removed_pointer_coherence": 0.06870465148483205,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "state_norm_err": 2.6645352591003757e-15,
+     "sum_delta_chi": 2.4859067478353634,
+     "symmetry_max": 5.9259264162392356e-12,
+     "theta": 0.5250590996729558
+    }
+   ]
+  },
+  "shell": {
+   "0.05": {
+    "crossings": {
+     "corner": null,
+     "edge": null,
+     "face": 0.1
+    },
+    "delta_chi": [
+     0.980028609494114,
+     1.6603594755375609e-07,
+     1.9337930304915048e-11
+    ],
+    "sum_delta_chi": 5.921159514423419,
+    "t_summax": 0.8,
+    "xi_reg": 1
+   },
+   "0.1": {
+    "crossings": {
+     "corner": null,
+     "edge": null,
+     "face": 0.1
+    },
+    "delta_chi": [
+     0.9372587139175903,
+     2.1872587416789727e-06,
+     1.3060281448982677e-09
+    ],
+    "sum_delta_chi": 5.751626200577877,
+    "t_summax": 0.8,
+    "xi_reg": 1
+   },
+   "0.2": {
+    "crossings": {
+     "corner": null,
+     "edge": null,
+     "face": 0.1
+    },
+    "delta_chi": [
+     0.8325066050052454,
+     2.0629139988802975e-05,
+     6.981646047876308e-08
+    ],
+    "sum_delta_chi": 5.29041541938772,
+    "t_summax": 0.7,
+    "xi_reg": 1
+   }
+  },
+  "theta_star_headline": {
+   "0.05": 0.5007515272813331,
+   "0.1": 0.5047307768675429,
+   "0.2": null
+  }
+ },
+ "numerics": {
+  "basis_checksum": "af6551ee1921ce45e6d4f9d4d1827609d8f1e643fb3a21bbc762edd1abd586d5",
+  "basis_wall_s": 11.394011500058696,
+  "blas": "Accelerate",
+  "chebyshev": {
+   "0.05": {
+    "degree": 117,
+    "half_width": 55.35,
+    "matvecs": 117,
+    "tail_bound": 1.3205197884751777e-18,
+    "tail_bound_definition": "2*sum_{k>M}|J_k(A t)| + sum of in-range |coef| skipped by the 1e-18 cutoff; operator-norm bound on the omitted series, max over the requested times",
+    "tail_bound_dropped_in_range": 1.195208975771197e-18,
+    "tail_bound_post_degree": 1.2531081270398065e-19
+   },
+   "0.1": {
+    "degree": 119,
+    "half_width": 56.7,
+    "matvecs": 119,
+    "tail_bound": 1.3211000034825018e-18,
+    "tail_bound_definition": "2*sum_{k>M}|J_k(A t)| + sum of in-range |coef| skipped by the 1e-18 cutoff; operator-norm bound on the omitted series, max over the requested times",
+    "tail_bound_dropped_in_range": 1.2766991458177875e-18,
+    "tail_bound_post_degree": 1.275824400329383e-19
+   },
+   "0.2": {
+    "degree": 122,
+    "half_width": 59.4,
+    "matvecs": 122,
+    "tail_bound": 1.2961294374091438e-18,
+    "tail_bound_definition": "2*sum_{k>M}|J_k(A t)| + sum of in-range |coef| skipped by the 1e-18 cutoff; operator-norm bound on the omitted series, max over the requested times",
+    "tail_bound_dropped_in_range": 9.692339224301231e-19,
+    "tail_bound_post_degree": 4.115291514597949e-19
+   }
+  },
+  "layout_wall_s": 3.1997042919974774,
+  "machinery": {
+   "cheby_tail": 1.3211000034825018e-18,
+   "entropy_bound": 0.0,
+   "hermiticity": 1.9098611581114255e-13,
+   "negativity": 5.884754520279987e-21,
+   "norm": 2.6645352591003757e-15,
+   "symmetry": 1.5788259588589426e-11,
+   "t0_anchor": 0.0
+  },
+  "machinery_ok": true,
+  "numpy": "2.4.1",
+  "orbit_size_histogram": {
+   "1": 8,
+   "12": 11928,
+   "2": 4,
+   "24": 2790004,
+   "3": 24,
+   "4": 56,
+   "6": 252,
+   "8": 476
+  },
+  "peak_rss_gib": 6.405426025390625,
+  "python": "3.12.8",
+  "result_table_sha256": "4ae91edb1abb1423a6629aa1fe8e87b9d0cec5bf1917c5e12c4deb4382ce82ce",
+  "route": "exact proper-cubic invariant-sector reduction (orbit basis) + Chebyshev expansion of exp(-iHt); float64/complex128",
+  "sector_dimension": 5605504,
+  "sector_dimension_expected_by_memo": 5605504,
+  "wall_s": 610.2455647500465
+ },
+ "pins": {
+  "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
+   "bytes": 49165,
+   "git_blob": "5dff1d8b1692099cd86b53959834b6bcb5865a71",
+   "sha256": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e"
+  },
+  "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": {
+   "bytes": 6705,
+   "git_blob": "5f056aa69d1cc06dbfa2dc9ed6804df40c7b39fe",
+   "sha256": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c"
+  },
+  "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": {
+   "bytes": 9340,
+   "git_blob": "d5b36708949d06bf619b2452e8f2897468e51194",
+   "sha256": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/committed_evidence_manifest.json": {
+   "bytes": 14364,
+   "git_blob": "5fadb440ada474f86517fca327382c0ed990c999",
+   "sha256": "00da52fe2c22ed5716d00d7a68fc172684458d65cfce9f8c409bb28151f8b69c"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/cube_gather_preflight.json": {
+   "bytes": 1715,
+   "git_blob": "60fe2700e3b1f2785e264ba49d4a4886583f2b96",
+   "sha256": "a60e1f57a2b3e4e6605d08b5eb8c80e35b47d9d09eb0281f7560f58c61224016"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/lam_0p05_observables.jsonl": {
+   "bytes": 1729260,
+   "git_blob": "c260b67a08e271e8e7caa8dc5fe195e39fe38a12",
+   "sha256": "c15ff555a7057adad82e2f1350c5567db675bd26d67ff93681c445264409c890"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/lam_0p10_observables.jsonl": {
+   "bytes": 1725059,
+   "git_blob": "fa3399265ed9eab04ac6f141fbddf07edfa28689",
+   "sha256": "ceeb47ed6798482be24f39159d8a045839b2990b0e7df0b4ee4632ce5e97736a"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/lam_0p20_observables.jsonl": {
+   "bytes": 1723848,
+   "git_blob": "51417a70d11d72cb6d9be2df89fc2c3a81efe1f4",
+   "sha256": "0307237ae14fdc9016eee3dcbc82599771ca9568b47f1629df2fafbe1bb0695e"
+  },
+  "scripts/d3_bar_location_engine_ext_2026_07_10.py": {
+   "bytes": 62869,
+   "git_blob": "581c23a921a5d8186e6387b93bdbbf507f4d9f9c",
+   "sha256": "71189dad66e4427673a4a83ad216c122cbc461b0353086c105762e3d81e6cb27"
+  },
+  "scripts/d3_bar_window_measurement_2026_07_11.py": {
+   "bytes": 142108,
+   "git_blob": "d046e4f4e37365ba56199822bc9977c5fc48ed73",
+   "sha256": "b11077be706ae3d74b779319362a793ce7a73bd8ee05fb331d8fa4ab40b21d29"
+  },
+  "scripts/d3_cubic_orbit_engine_2026_07_09.py": {
+   "bytes": 99715,
+   "git_blob": "1d3f8e230aae2864881a0c0bcc923ac231a91857",
+   "sha256": "4eb603fc229bc441ef254e9edc04c1cfeec1fe221be4a1af82fcee24f30bd60b"
+  }
+ },
+ "protocol": {
+  "H": "-sum_<ij> Z_i Z_j - lambda sum_i X_i",
+  "J": 1,
+  "N": 27,
+  "T_C_frozen": [
+   0.0,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1.0,
+   1.1,
+   1.2,
+   1.5,
+   2.0,
+   5.0,
+   10.0
+  ],
+  "T_executed": [
+   0.0,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1.0,
+   1.1,
+   1.2
+  ],
+  "T_not_executed": [
+   1.5,
+   2.0,
+   5.0,
+   10.0
+  ],
+  "deadline_jt": 1.0,
+  "delta_protocol_hash": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
+  "deltas": [
+   0.05,
+   0.1,
+   0.2
+  ],
+  "fragment_descriptor_checksum": "02f954b71af4a834af11e66818989c14699a03ff4e52a4c07b3a7e5edf7588b5",
+  "fragments": {
+   "+x": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     -1,
+     0
+    ],
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     -1
+    ]
+   ],
+   "+y": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     -1,
+     1,
+     1
+    ]
+   ],
+   "+z": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     -1,
+     1
+    ],
+    [
+     1,
+     -1,
+     1
+    ],
+    [
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "-x": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     -1,
+     1,
+     0
+    ],
+    [
+     -1,
+     -1,
+     0
+    ],
+    [
+     -1,
+     0,
+     1
+    ],
+    [
+     -1,
+     0,
+     -1
+    ]
+   ],
+   "-y": [
+    [
+     0,
+     -1,
+     0
+    ],
+    [
+     0,
+     -1,
+     -1
+    ],
+    [
+     1,
+     -1,
+     -1
+    ],
+    [
+     -1,
+     -1,
+     -1
+    ]
+   ],
+   "-z": [
+    [
+     0,
+     0,
+     -1
+    ],
+    [
+     0,
+     1,
+     -1
+    ],
+    [
+     1,
+     1,
+     -1
+    ],
+    [
+     -1,
+     1,
+     -1
+    ]
+   ]
+  },
+  "geometry": "open-3x3x3",
+  "headline_delta": 0.1,
+  "lambdas": [
+   0.05,
+   0.1,
+   0.2
+  ],
+  "pair_class_equivalence": "orbit equivalence under the partition-preserving proper rotations, decisive per-member reachability; the declared partition is NOT closed under the full proper cubic group and no such claim is made",
+  "parent_protocol_hash": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
+  "partition_preserving_proper_rotations": 4,
+  "preparation": {
+   "center": [
+    1,
+    0,
+    0
+   ],
+   "corner": [
+    0,
+    0,
+    1
+   ],
+   "edge": [
+    0,
+    0,
+    1
+   ],
+   "face": [
+    1,
+    0,
+    0
+   ]
+  },
+  "theta_floor_import": {
+   "provenance": "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md (cited by the frozen memos; ABSENT from this tree)",
+   "retained_inference": "none -- the floor comparison is a disclosed convention, not a cross-dimensional result",
+   "type": "unverified_imported_comparator_convention",
+   "value": 0.2
+  }
+ },
+ "runner": "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py",
+ "schema": "d3-bar-commission-cycle914-v1",
+ "verdict": {
+  "delta_contract_discharged": false,
+  "delta_contract_omissions": [
+   "lambda=0.02 commissioned trace not executed",
+   "late recurrence samples {1.5,2.0,5.0,10.0} not executed"
+  ],
+  "exit_code_from": "parent_wiring",
+  "parent_wiring": "BAR-NOT-PINNED",
+  "parent_wiring_vocabulary": "the parent memo's protocol-internal wiring verdicts (BAR-*); not scientific grades",
+  "three_lambda_subset_summary": "THREE-LAMBDA-SUBSET-CONSISTENT"
+ }
+}

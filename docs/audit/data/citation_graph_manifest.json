@@ -1,6 +1,6 @@
 {
- "edge_count": 15469,
- "node_count": 5440,
+ "edge_count": 15472,
+ "node_count": 5441,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2865,6 +2865,10 @@
   "d3_bar_location_design_scout_2026-07-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "d3_bar_reaudit_reproduced_cycle914_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "faeabed9da83",
+   "out_degree": 3
   },
   "d3_bar_window_bounded_note_2026-07-11": {
    "deps_hash": "708d92b50338",

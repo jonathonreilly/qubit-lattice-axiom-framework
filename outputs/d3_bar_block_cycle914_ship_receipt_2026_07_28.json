@@ -1,0 +1,61 @@
+{
+  "artifact_role": "support",
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); NOT BLIND (reproduction test \u2014 the committed streams were read for budget scoping; stated); primary exits 1 BY DESIGN (the parent-memo wiring verdict BAR-NOT-PINNED, a protocol-internal wiring verdict, not a scientific grade); supervisor line-by-line review",
+  "certificates": {
+    "checker": "exit 0 (FAIL-CLOSED contract: nonzero on any refuted finding or failed tooth), 758.7s; CLAIM-SURVIVES; 11/11 findings pass; 8/8 teeth fire",
+    "primary": "exit 1 BY DESIGN (parent wiring BAR-NOT-PINNED), 610.5s; three-lambda window-subset summaries consistent; NO delta-wiring completion verdict (lambda=0.02 not executed, delta contract NOT discharged); executed grid = the disclosed certification subset (13/17 points, whole headline window)"
+  },
+  "claim_scope": "bounded three-lambda, fixed-partition, fixed-gate, sampled-grid reproduction of the landed 2026-07-11 four-lambda finite-window row \u2014 upstream support only: no new theorem closure, no delta-contract discharge, no re-audit execution, no comparator-independent boundary claim",
+  "claim_type": "bounded_theorem",
+  "cycles": [
+    914
+  ],
+  "files": {
+    "docs/D3_BAR_REAUDIT_REPRODUCED_CYCLE914_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "ddad42c31a9ea842f0008cc16b9708374b53c3a8",
+      "sha256": "5a7517541ce113eb88460a36f2d603ea617b6db500674f784918016e6c27c592"
+    },
+    "logs/runner-cache/frontier_cycle914_d3_bar_commission_2026_07_28.txt": {
+      "git_blob": "8ae650f4469f93e8b243dcb88d2dca9d5b047515",
+      "sha256": "3cbf329a1554622e304af03d60422a0e1fc7b731bc1bbd5d5cdd206b6f75d8c6"
+    },
+    "logs/runner-cache/frontier_cycle914_d3_bar_independent_check_2026_07_28.txt": {
+      "git_blob": "ec71405de73fde1e38ae495dffd17187912d871b",
+      "sha256": "5858a7228187569cb35bc083086735210ed01dac5c130fdf2a778e0c1ec72eba"
+    },
+    "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": {
+      "git_blob": "15214b5f0b6e66855b41103da508f7a7bf09029f",
+      "sha256": "2dddb1e145fb5854f1f303f8d417c4d8e62e84a64c1f8f3451bcf65ec2550e86"
+    },
+    "outputs/d3_bar_independent_check_cycle914_receipt_2026_07_28.json": {
+      "git_blob": "9e475aaa2f92515486a330477271a5b18e6ebd40",
+      "sha256": "0117ab35539568655e2f4ba01dfce3c97303a7492020b5a307e942ca23424161"
+    },
+    "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": {
+      "git_blob": "3d4c38794466d85047831efd099a9de313b5f343",
+      "sha256": "0cfab8fde089be2252f47a710d5822bc5a3458f6e15b37784855716979eb9dd4"
+    },
+    "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py": {
+      "git_blob": "cc4cdebf489b612c77d82272d9fcbe79edefafed",
+      "sha256": "1735d665b327ab8f821160daa122686576dac678da865945aaff129816136358"
+    }
+  },
+  "headline": "Bounded three-lambda reproduction of the finite d=3 transverse-field registration comparator (historical alias: route C): three of the four committed 2026-07-11 streams REPRODUCED to 1.9e-11 bits with zero certification mismatches on the fixed six-fragment partition and frozen gates; sampled first hits at Jt=0.6/0.7 (lambda 0.05/0.10), NO sampled certification at lambda=0.20 by the design's predicted seam-CMI mechanism (C=0.060395, committed figure to 6 digits); in-sample boundary bracket (0.10, 0.20); the primary expected witness (the disjoint five-qubit opposite pair) is what fires; sector reduction (5,605,504 states, memo-matching) verified exact against full space; the t=0 anchor exactly 0; SIX cited-but-absent predecessors pinned (four notes, two runners) incl. the d=1 comparator note (its theta floor 0.20 is an UNVERIFIED imported comparator convention \u2014 no retained cross-dimensional inference). SUPPORT to the landed four-lambda row (docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md); whether it serves that row's re-audit is an OPEN bridge owned by the audit lane.",
+  "independence": "three implementations with no shared code (the committed 2026-07-11 run; this primary from the memos' equations; the checker with MAX-canonical reduction + shifted Chebyshev) agreeing at 1.9e-11 / 5.1e-12; full-space sector-exactness verification; 8/8 teeth incl. sector-table tamper; the checker is claim-scoped and co-load-bearing and must be registered as an explicit packet helper runner at landing",
+  "note": "docs/D3_BAR_REAUDIT_REPRODUCED_CYCLE914_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "packet_helper_runner": "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py",
+  "review_loop": {
+    "date": "2026-08-08",
+    "disposition": "FIX_THEN_PROCEED",
+    "iteration": 2,
+    "iteration_1": "demoted to bounded reproduction/support (no delta-contract discharge, no re-audit execution, partial-narrowing negative); checker made fail-closed; Chebyshev tail bound corrected; pair-class check narrowed to partition-preserving orbit equivalence (decisive); stale axiom pin removed from both input closures; theta floor typed as unverified import; domain-explicit naming; branch/campaign fields dropped",
+    "iteration_2": "confirmation FAIL on F6 fixed -- independent checker declared claim-scoped packet helper (machine-readable packet_helper_runner line in the note's Status fields, mirrored here; hard landing condition: claim-scoped entry in EXPLICIT_PACKET_HELPER_RUNNER_PATHS in docs/audit/scripts/build_citation_graph.py, verified on a disposable current-main landing tree)",
+    "reviewer": "Sol"
+  },
+  "runtime_seconds": {
+    "checker": 758.69,
+    "primary": 610.52
+  }
+}

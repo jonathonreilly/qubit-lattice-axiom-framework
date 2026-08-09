@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle970_inter_site_gate_2026_08_09.py
-runner_sha256: c7561749016a701469342576f8969dba032f93b4198e0564b4eb9cba7e879030
+runner_sha256: cb08af69f87b45ebd1fef2748493139fa249570d3986104857a523bfe79f4d6e
 input_fingerprint_sha256: 873beb966b5f5764c825d6c10142cac4ea9c3c47322087ea075249380cfd0d17
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,7 +13,8 @@ CYCLE 970 -- INTER-SITE GATE SUBSTRATE
 PASS A_INDEPENDENCE_MEASUREMENT :: definition=D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches; state_resolved_changed=4/20 paired comparisons; changed_pair_configurations=8/40; uniform_self_input_changed=0/10
 PASS B_GATE_CONSTRUCTION :: verdict=CONSTRUCTED; word=['CNOT(1->0)']; reads_neighbor_bit=1; D(n=0)=[1, 0]; D(n=1)=[0, 1]; transition_n1=[0, 1]->[1, 1]
 PASS C_PRICE :: price=new gate/coupling/axiom/registered primitive 0/0/0/0; supplied premise=fixed target input x=0; changes=unqualified substrate-wide independence is false while uniform marginal remains 0/10; full covariant M_2(C) law remains open
-PASS D_CONTROLS :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000604<1400; stdout_upper_bound_bytes=2667<6000<150000; timeout_s=300<1400
+PASS D_CONTROLS :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000617<1400; stdout_upper_bound_bytes=2667<6000<150000; timeout_s=300<1400
+CHECKER_PAYLOAD: {"axiom_ledger_entries":4,"conditioned_configurations":40,"construction_succeeded":true,"distribution_neighbor_0":[1,0],"distribution_neighbor_1":[0,1],"gate_word":["CNOT(1->0)"],"price_delta":{"new_axioms":0,"new_couplings":0,"new_gate_classes":0,"new_registered_primitives":0,"supplied_premises":1},"price_route":"successful_landed_construction","primitive_ledger_entries":3,"resolved_changed":4,"resolved_total":20,"state_mutated_on_neighbor_1":true,"uniform_changed":0,"uniform_total":10}
 VERDICT: LANDED_SUBSTRATE_HOSTS_MINIMAL_INTER_SITE_GATE
 TOTAL: PASS=4 FAIL=0
 

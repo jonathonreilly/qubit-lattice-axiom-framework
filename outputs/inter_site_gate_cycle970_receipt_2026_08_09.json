@@ -15,7 +15,7 @@
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000604<1400; stdout_upper_bound_bytes=2667<6000<150000; timeout_s=300<1400",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000617<1400; stdout_upper_bound_bytes=2667<6000<150000; timeout_s=300<1400",
    "pass": true
   }
  },
@@ -708,8 +708,8 @@
  },
  "operational_definition": "D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches",
  "reachability_to_target": "closes",
- "runtime_sec": 0.0006038750289008021,
+ "runtime_sec": 0.000617082929238677,
  "science_digest": "7313ba0844a1e24b56c0b501d130b8ff1ee93285e08cea3dd80fc9c11a30215b",
- "stdout_bytes": 1477,
+ "stdout_bytes": 1987,
  "trace_class": "direct_blocker_closure"
 }

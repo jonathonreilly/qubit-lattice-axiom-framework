@@ -1,0 +1,86 @@
+{
+ "cycle": 749,
+ "failures": 0,
+ "gates": 37,
+ "headline": "A smallest carrier of the charge called four carries its own family label. The 132 smallest carriers fall into six families of sizes 12, 12, 12, 24, 24 and 48 under the group of 384 symmetries of the incidence table, and the sorted list of pair counts read off the table restricted to a carrier's own sixteen pieces is different for every family, so the group is not needed to tell them apart. Four coarser readings of the same sixteen pieces were measured beside it and the five nest, each separating everything the one before it does and more, in groups numbering 1, 2, 4, 5 and 6; the fifth is the family partition itself. Two further laws come out of the same computation: every one of the 132 meets 2832 of the 5664 cuttings four marks once and the other 2832 three times, the same reading for all of them; and each carrier's largest pair count is reached on exactly 8 pairs covering all 16 of its pieces, a pairing of the set, the largest value being 433 on 60 carriers and 666 on 72, which sixteen pieces spaced evenly through the table give in just 1 of 768 cases. Two of the 132 share 0, 1, 2, 4 or 8 pieces and never 3, 5, 6 or 7.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_FAMILY_SEPARATOR_CYCLE749_NOTE_2026-08-08.md",
+ "recorded_output": "outputs/physical_cell_cutting_family_separator_cycle749_2026_08_08_cold_2026-08-08.txt",
+ "results": {
+  "census_of_smallest_carriers_of_four": {
+   "carriers_through_each_piece": 11,
+   "count": 132,
+   "direct_recheck_failures": 0,
+   "family_sizes": [
+    12,
+    12,
+    12,
+    24,
+    24,
+    48
+   ],
+   "size": 16
+  },
+  "constant_reading_on_the_marked_cuttings": {
+   "cuttings_four_marks": 5664,
+   "met_once": 2832,
+   "met_three_times": 2832,
+   "met_twice_or_more_than_three_times": 0,
+   "same_for_every_carrier": true
+  },
+  "overlaps_between_two_smallest_carriers": {
+   "0": 4926,
+   "1": 960,
+   "2": 1440,
+   "4": 960,
+   "8": 360,
+   "values_never_taken": [
+    3,
+    5,
+    6,
+    7
+   ]
+  },
+  "pairing_of_a_carriers_own_pieces": {
+   "carriers_with_the_property": 132,
+   "control_evenly_spaced_sixteens": 768,
+   "control_with_the_property": 1,
+   "largest_value_433_on": 60,
+   "largest_value_666_on": 72,
+   "pairs_at_the_largest_value": 8,
+   "pieces_covered": 16
+  },
+  "readings_of_a_carriers_own_sixteen_pieces": {
+   "groups_in_order": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "last_reading_equals_the_family_partition": true,
+   "nested": true,
+   "order": [
+    "how often it meets the marked cuttings",
+    "pairs of its pieces no cutting shares",
+    "the total of its pair counts",
+    "its meetings with the eight-piece carriers",
+    "the whole list of its pair counts"
+   ]
+  },
+  "symmetry_group": {
+   "generated_by_the_forty_eight_and_two_more": true,
+   "order": 384,
+   "permutes_the_eight_piece_carriers_among_themselves": true,
+   "transitive_on_pieces": true
+  },
+  "the_object": {
+   "cuttings": 15800,
+   "cuttings_through_a_piece": 1975,
+   "pieces": 192,
+   "pieces_per_cutting": 24
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_family_separator_cycle749_2026_08_08.py",
+ "status": "PASS"
+}

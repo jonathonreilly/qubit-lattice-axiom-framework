@@ -72,7 +72,9 @@
   "fail": 0,
   "gates": {
     "a coarse dissection attains the lower bracket end": "PASS",
+    "a second pinned sample family is sound": "PASS",
     "attained costs over the minimal pieces": "PASS",
+    "box symmetries preserve volume and cost": "PASS",
     "carried families are genuine dissections": "PASS",
     "coarse-piece bound at sixths reaches its own floor": "PASS",
     "cost parity is forced over the minimal pieces": "PASS",
@@ -80,8 +82,8 @@
     "denominator law on the minimal-piece bracket": "PASS",
     "each family sits inside the pieces it should": "PASS",
     "every carried bound is valid": "PASS",
+    "every carried bound refuses unit strengthening": "PASS",
     "facet normals bound each piece": "PASS",
-    "five representative bounds refuse strengthening": "PASS",
     "five-corner subsets and volume spectrum": "PASS",
     "fixed-weight integer bound reaches the minimum": "PASS",
     "invariant bound at halves reaches the minimum": "PASS",
@@ -89,20 +91,24 @@
     "minimal-volume pieces and cost ranges": "PASS",
     "no sample point meets a piece boundary": "PASS",
     "no single carried orbit certifies the minimum": "PASS",
+    "no single second-family orbit reaches the floor": "PASS",
     "orbit counts refine the point membership": "PASS",
     "orbits of pieces under the rotations": "PASS",
     "proper rotations of the spatial lattice": "PASS",
     "rotations permute the minimal pieces": "PASS",
     "sample points and their orbits": "PASS",
     "the covering control is rejected": "PASS",
+    "the fixed-weight family shows the same parity gap": "PASS",
     "the minimum is not a property of one stencil": "PASS",
     "the parity certificate stops at minimal pieces": "PASS"
   },
   "headline": "within the supplied tick-box corner-dissection model: minimal-piece adjacency-cost bracket [108, 128], both ends attained, exactly the eleven even values attained; all-piece bracket [68, 128]",
-  "local_maximality_scope": "five representative certificates only; the thirteen other ladder rungs and the fixed-weight certificate are untested",
+  "local_maximality_scope": "all nineteen carried certificates (eighteen invariant plus the fixed-weight); unit and uniform strengthenings only; certificates outside the carried set are not addressed",
   "minimal_pieces": 2672,
   "no_go_discipline": {
     "checklist": "committed N1-N8 record in the note's 'No-Go Discipline Gate' section",
+    "n1_marker_contract": "every enumerated N1 route is ATTEMPTED by a bounded in-runner computation; no untested markers remain",
+    "n2_table": "full 15-row pairwise wall-independence table over the six named open walls in the note",
     "n5_certificate": "five resolution lines (per_element/per_site/per_mode/per_block/lattice_wide) in this runner's stdout and cached stdout",
     "no_go_shipped": false,
     "status": "PASS"
@@ -117,9 +123,13 @@
     8,
     24
   ],
+  "parity_gap_fixed_weight_family": {
+    "cost_in_span": false,
+    "rank": 465
+  },
   "parity_rank": 465,
-  "parity_scope": "minimal-piece even parity is proved; over all pieces only THIS incidence-plus-volume certificate family is shown not to extend; no odd coarse dissection exhibited or excluded",
-  "pass": 26,
+  "parity_scope": "minimal-piece even parity is proved; over all pieces only THIS incidence-plus-volume certificate family is shown not to extend, on both carried sample families; no odd coarse dissection exhibited or excluded",
+  "pass": 30,
   "rejected_control": {
     "cost": 72,
     "overlapping_pairs": 86
@@ -138,6 +148,13 @@
       "fix": "landed the mandatory No-Go Discipline artifacts for the surviving narrowed negative boundaries: the committed N1-N8 gate record in the note and the five-line N5 resolution certificate (per_element/per_site/per_mode/per_block/lattice_wide) in the primary runner's cached stdout; no no_go claim ships and every negative stays priced to its carried objects",
       "iteration": 2,
       "reviewer": "Sol (confirmation seat)"
+    },
+    {
+      "date": "2026-08-08",
+      "disposition": "CONFIRMATION_FAIL_FIXED",
+      "fix": "brought the N1-N8 record onto the marker contract: every enumerated N1 route is now ATTEMPTED by a bounded in-runner computation (second pinned sample family with best single-orbit cap 84; 96-map box-symmetry volume/cost-preservation sweep; strengthening refusals extended from five to all nineteen carried certificates, retiring the untested-certificate wall; fixed-weight-family all-piece parity elimination repeating the non-membership); N2 replaced by the full 15-row pairwise independence table over the six remaining walls; the 84-versus-108 wording made unambiguous on every surface (84 is the best single-orbit bound, 108 is reached only by the eight-orbit joint certificate)",
+      "iteration": 3,
+      "reviewer": "Sol (confirmation seat)"
     }
   ],
   "sample_points": {
@@ -150,9 +167,20 @@
       1041
     ]
   },
+  "second_sample_family": {
+    "best_single_orbit_cap": 84,
+    "boundary_incidences": 0,
+    "orbit_size": 24,
+    "orbits": 114,
+    "points": 2736
+  },
   "single_orbit_cap_carried_family": 84,
-  "single_orbit_scope": "the 114 point-orbits of the carried invariant sample family only; other sample families untested",
+  "single_orbit_scope": "the 114 point-orbits of each of the two carried invariant sample families; the joint eight-orbit halves certificate reaches 108; sample families beyond the carried ones untested",
   "supplied_model": "corner 4-simplex pieces of one lattice cell carried through one tick, all ten vertex pairs graded by spatial L1 separation; the piece/dissection structure is supplied here, not derived from the Lattice axiom",
+  "symmetry_sweep": {
+    "maps": 96,
+    "volume_and_cost_preserved": true
+  },
   "tight_points": {
     "all_pieces_floor": 296,
     "ceiling": 1136,

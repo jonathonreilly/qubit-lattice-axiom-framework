@@ -8,7 +8,7 @@ Authority: none. Audit: unset. Constitutional effect: none. No new axiom or
 primitive is proposed or adopted.
 
 Runner: `scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py`
-(26 PASS / 0 FAIL, exit 0, about 2 seconds; the runner fails closed — any failed
+(30 PASS / 0 FAIL, exit 0, about 3 seconds; the runner fails closed — any failed
 gate makes the process exit nonzero). Every number below is exact integer or exact
 rational arithmetic over carried certificates and witness lists; no optimiser and
 no floating point enters any gate.
@@ -87,14 +87,17 @@ in the runner calls an optimiser.
 
 The bounds are proved through **sample points**. A dissection covers every interior
 point of the box exactly once, so a bound proved for every family that covers a
-fixed set of sample points exactly once holds for every dissection. Two sample
+fixed set of sample points exactly once holds for every dissection. Three sample
 families are built from pinned recipes: a fixed-weight family with one point per
-minimal piece, and an invariant family of 2736 points carried by the 24 rotations
-into 114 point-orbits all of size 24. Both have zero boundary incidences against
-all 3008 pieces, which is what makes the device sound; every piece contains between
-6 and 1041 of the invariant points, and every invariant point lies in some piece.
-These two families are the ones this note's orbit-level statements quantify over;
-they are pinned recipes, not an enumeration of all possible sample families.
+minimal piece, an invariant family of 2736 points carried by the 24 rotations
+into 114 point-orbits all of size 24, and a second invariant family on different
+prime weights with the same construction, carried for the discipline gate's
+chamber probe. All have zero boundary incidences against all 3008 pieces, which
+is what makes the device sound; every piece contains between 6 and 1041 of the
+primary invariant points, and every point of every family lies in some piece.
+These carried families are the ones this note's orbit-level statements quantify
+over; they are pinned recipes, not an enumeration of all possible sample
+families.
 
 Disjointness of the attaining families is **decided**, not sampled. Two convex
 bodies have disjoint interiors exactly when a direction separates them; all
@@ -128,11 +131,13 @@ dissection.
 
 **The carried parity certificate stops at the minimal pieces.** Over all pieces the
 rank is again 465 but the cost vector is **not** in the span of the sampled
-incidence columns plus the volume column. That is a statement about this
-certificate family, not about coarse dissections: it shows this
-incidence-plus-volume device cannot certify parity past the minimal pieces. No
-odd-cost coarse dissection is exhibited, and none is excluded; whether all-piece
-dissections share a parity is open.
+incidence columns plus the volume column, and the same elimination on the
+fixed-weight sample family repeats the non-membership at rank 465, so the gap is
+not an artifact of one sample recipe. That is a statement about this certificate
+family, not about coarse dissections: it shows this incidence-plus-volume device
+cannot certify parity past the minimal pieces. No odd-cost coarse dissection is
+exhibited, and none is excluded; whether all-piece dissections share a parity is
+open.
 
 **The scope boundary: 68.** Admitting every corner piece, an invariant certificate
 at denominator 6 is tight at 296 points and totals exactly 68, and a sixteen-piece
@@ -167,17 +172,25 @@ carried device; it is not a statement about the cycle 724 argument itself.
 
 **No single carried orbit certifies the floor.** Over the 114 point-orbits of the
 carried invariant sample family, the best bound obtainable from any one orbit is
-84, below 108; eight carried orbits suffice. Whether some other invariant sample
-family admits a stronger single-orbit certificate is untested — the carried family
-is one pinned recipe, and sample chambers are not enumerated.
+84, below 108; the carried halves certificate reaches 108 only by combining eight
+orbits, and no single one of those eight yields more than 84 on its own. A second
+pinned invariant sample family on different prime weights — carried with the same
+soundness checks (2736 points, 114 orbits of size 24, zero boundary incidences,
+every point used) — gives the same answer: its best single-orbit bound is also
+84. Additionally, all 96 box symmetries (the improper half and tick reversal
+included) permute the 3008 pieces preserving volume and cost, so conjugating any
+sample family or certificate by a box symmetry preserves every bound total and
+cannot manufacture a stronger single-orbit certificate. Whether a sample family
+beyond the carried ones admits a stronger single-orbit certificate is untested —
+the carried families are pinned recipes, and sample chambers are not enumerated.
 
-**Five representative certificates are coordinatewise locally maximal.** For the
-five named certificates — the halves floor, the thirds ceiling, and the sixths
-rungs of the minimal floor, all-piece floor, and all-piece ceiling — all 114
-single-orbit unit strengthenings and the uniform strengthening break feasibility,
-so none of the five is a slack bound dressed up as a sharp one. The other thirteen
-carried ladder rungs and the fixed-weight certificate are not tested for local
-maximality.
+**Every carried certificate is coordinatewise locally maximal.** For all nineteen
+carried certificates — the eighteen invariant multiplier vectors and the
+fixed-weight one — every unit strengthening breaks feasibility: all 114
+single-orbit bumps and the uniform bump for each invariant certificate, and all
+2672 per-piece bumps and the uniform bump for the fixed-weight certificate. None
+of the carried bounds is a slack bound dressed up as a sharp one. Certificates
+outside the carried set are not addressed.
 
 **A discriminating negative control.** A cost-72 family of pieces whose volumes sum
 to 24 is rejected: it has 86 overlapping interior pairs and fails to cover the
@@ -212,16 +225,19 @@ the uncarried checks.
   (everything covering the points exactly once). Both ends are attained by
   exhibited dissections, so no gap remains here, but the device on its own gives
   one-sided information.
-- The single-orbit statement quantifies over the 114 carried point-orbits only; the
-  local-maximality statement covers five representative certificates only; the
-  coarse-parity statement covers this incidence-plus-volume certificate family
-  only. None of the three is a universal negative and no `no_go` claim ships;
-  their committed N1–N8 record is the No-Go Discipline Gate section below, and
-  the five-line N5 execution certificate is in the primary runner's cached
-  stdout.
+- The single-orbit statement quantifies over the 114 point-orbits of each of the
+  two carried invariant sample families only; the local-maximality statement
+  covers the nineteen carried certificates only; the coarse-parity statement
+  covers this incidence-plus-volume certificate family only, on both carried
+  sample families. None of the three is a universal negative and no `no_go`
+  claim ships; their committed N1–N8 record is the No-Go Discipline Gate section
+  below, and the five-line N5 execution certificate is in the primary runner's
+  cached stdout.
 - The rotation group acting is the axiom's proper spatial rotations with the tick
-  fixed. Whether the improper half or tick-reversing maps change these numbers is
-  not addressed.
+  fixed. All 96 box symmetries — the improper half and tick reversal included —
+  permute the pieces preserving volume and cost, so the census and the brackets
+  are unchanged under them; orbit-level statements under a larger acting group
+  (merged orbits, invariant chambers) remain open.
 - Volume is the normalized lattice 4-volume, a declared convention (whole box 24).
 - Nothing here derives a metric, a curvature, or a field equation. It fixes an
   exact combinatorial cost inside the supplied model; whether the geometry lane's
@@ -287,124 +303,189 @@ committed N1–N8 gate record below, and the five-line N5 resolution certificate
 primary runner into its stdout and pinned cache. No `no_go` claim ships; the
 claims stay bounded facts about carried objects.
 
+Iteration 3 (second confirmation round, 2026-08-08): the iteration-2 checklist
+used untested route markers, summarized wall independence in prose, and left the
+84-versus-108 wording ambiguous. All three are repaired. Every N1 route is now
+ATTEMPTED through a bounded in-runner computation: a second pinned sample family
+(sound, best single-orbit cap 84 again), a 96-map box-symmetry volume-and-cost
+preservation sweep, the strengthening test extended from five to all nineteen
+carried certificates — which retires the iteration-2 untested-certificate wall
+by computation — and a fixed-weight-family all-piece parity elimination
+repeating the non-membership. N2 is now the full 15-row pairwise independence
+table over the six remaining walls. Every surface states that 84 is the best
+single-orbit bound and that 108 is reached only by the eight-orbit joint
+certificate. The runner grew from 26 to 30 gates, all passing.
+
 ## No-Go Discipline Gate
 
 This section is the committed N1–N8 record for the negative content that survives
 the narrowing: three bounded, carried-object facts — (a) no single one of the 114
-carried point-orbits certifies more than 84 (eight carried orbits reach 108);
-(b) each of the five tested representative certificates refuses all 114
-single-orbit unit strengthenings and the uniform strengthening; (c) the carried
-incidence-plus-volume certificate family over the two-element field does not
-extend past the minimal pieces. No `no_go` claim ships; every negative is priced
-to its exact carried object. The N5 execution certificate (one line per
-resolution class) is in the primary runner's cached stdout,
+point-orbits of either carried invariant sample family yields a bound above 84,
+and the carried halves certificate reaches 108 only by combining eight orbits;
+(b) each of the nineteen carried certificates refuses every unit and uniform
+strengthening; (c) the carried incidence-plus-volume certificate family over the
+two-element field does not extend past the minimal pieces, on both carried sample
+families. No `no_go` claim ships; every negative is priced to its exact carried
+object. The N5 execution certificate (one line per resolution class) is in the
+primary runner's cached stdout,
 `logs/runner-cache/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.txt`.
 
-**N1 — Alternative route enumeration.**
-1. Per-orbit exact envelope cap over the carried invariant family (single-orbit
-   route): ATTEMPTED — each of the 114 carried point-orbits is optimized exactly
-   by the two-variable lower-envelope argument, best value 84; within the carried
+**N1 — Alternative route enumeration.** Marker contract: every enumerated route
+is ATTEMPTED or RULED OUT BY PRIOR. All six routes here are ATTEMPTED; none uses
+any other disposition.
+
+1. Per-orbit envelope route (claim a): ATTEMPTED — each of the 114 carried
+   point-orbits of the primary invariant family is optimized exactly by the
+   two-variable lower-envelope argument, best value 84; within the carried
    affine-in-membership certificate device this optimization is complete for a
    single orbit.
-2. A different seed chamber or different boundary-free invariant sample family,
-   or certificate shapes outside the carried affine-in-membership device
-   (chamber route): NOT ATTEMPTED BY DECLARATION — the carried family is one
-   pinned recipe, chambers are not enumerated, and claim (a) is priced to the
-   carried family (sample-family closure wall, open).
-3. Enlarged symmetry — the improper half or tick-reversing maps, which would
-   regroup the orbits (symmetry route): NOT ATTEMPTED BY DECLARATION — the
-   acting group is declared as the 24 proper rotations with the tick fixed
-   (symmetry-enlargement wall, open).
-4. Strengthening the other fourteen carried certificates (certificate-completion
-   route): NOT ATTEMPTED BY DECLARATION — claim (b) names its five certificates;
-   the rest are checked and not executed (untested-certificate wall, open,
-   closable by pure computation).
-5. An explicit odd-cost coarse dissection search, or a complete parity
-   classification of all-piece dissections (parity-construction route): NOT
-   ATTEMPTED BY DECLARATION — claim (c) concerns span membership of one
-   certificate family only (odd-coarse-dissection wall, open).
-6. Alternative parity invariants — oriented-volume congruences, triangulation
-   invariants, or other sample families over the two-element field (invariant
-   route): NOT ATTEMPTED BY DECLARATION — priced out of claim (c).
-The two-element-field elimination itself: ATTEMPTED on both carried sample
-families at rank 465, minimal and all-piece variants, with seven unit-cut
-discrimination controls.
+2. Chamber probe route (claim a): ATTEMPTED — a second pinned invariant sample
+   family on different prime weights is carried, passes the full soundness
+   checks (2736 points, 114 orbits of size 24, zero boundary incidences, every
+   point used), and its per-orbit optima are computed the same way: best value
+   84 again. The attempt is bounded — two chambers are tested, not all; full
+   chamber enumeration is the sample-family closure wall in the N2 table.
+3. Symmetry route (claim a): ATTEMPTED — all 96 box symmetries (48 signed
+   spatial permutations, tick fixed or reversed) are verified to permute the
+   3008 pieces preserving volume and cost, so conjugating any sample family or
+   certificate by a box symmetry preserves every bound total and cannot
+   manufacture a stronger single-orbit certificate. Orbit-level statements
+   under a larger acting group are the symmetry-enlargement wall in the N2
+   table.
+4. Certificate-completion route (claim b): ATTEMPTED — all nineteen carried
+   certificates refuse every strengthening: 114 orbit bumps plus the uniform
+   bump for each of the eighteen invariant certificates, 2672 per-piece bumps
+   plus the uniform bump for the fixed-weight certificate. This computation
+   retires the iteration-2 untested-certificate wall.
+5. Parity elimination route (claim c): ATTEMPTED — two-element-field
+   elimination on the primary invariant family, minimal and all-piece variants,
+   rank 465, membership for minimal pieces and non-membership for all pieces,
+   with seven unit-cut discrimination controls.
+6. Parity second-family route (claim c): ATTEMPTED — the same all-piece
+   elimination on the fixed-weight family repeats the result: rank 465,
+   non-membership, seven unit cuts refuted.
 
-**N2 — Wall-independence audit.** Open rows: the sample-family closure wall, the
-untested-certificate wall, the odd-coarse-dissection wall, the tick-realization
-bridge, the simplex-identification bridge, the symmetry-enlargement wall, and the
-scale-extension wall (one cell, one tick). Pairwise: chamber enumeration (closing
-the sample-family wall) neither constructs an odd coarse dissection nor proves a
-parity theorem; running the fourteen remaining strengthenings closes only the
-untested-certificate wall and changes no other claim's scope; the two physical
-bridges need theorems no finite computation here supplies; enlarging the symmetry
-regroups the orbits without touching parity; the scale wall changes the domain
-itself. One one-way pricing dependency is declared rather than collapsed: were the
-sample-family wall closed by full chamber enumeration, claim (a) would re-price
-from carried-family scope to a genuine one-orbit impossibility — which is exactly
-why it is carried at carried-family scope. No row is double-counted.
+No route beyond the claims' scopes is enumerated, because no negative is
+asserted at those scopes: universal one-orbit impossibility, actual-dissection
+coarse parity, and physical cost obligations are not claimed, and their attack
+surfaces are carried as the open walls of the N2 table and the N7 steelman.
+
+**N2 — Wall-independence audit.** The six open walls, with short labels declared
+for the table:
+
+- SF — sample-family closure wall: enumerate all boundary-free invariant sample
+  families (chambers) and their single-orbit caps.
+- OD — odd-coarse-dissection wall: exhibit an odd-cost coarse dissection, or
+  prove a complete parity theorem for all-piece dissections.
+- TR — tick-realization bridge: the physical tick–Admissibility realization
+  (which rule variation corresponds to which tick).
+- SI — simplex-identification bridge: identification of physical assembly cells
+  with pairwise-adjacency simplices.
+- SE — symmetry-enlargement wall: orbit-level statements under a larger acting
+  group (improper half, tick reversal; merged orbits, invariant chambers).
+- SC — scale-extension wall: longer tick runs and larger spatial blocks.
+
+All 15 unordered pairs, both closure directions each:
+
+| pair | closing the first closes the second? | closing the second closes the first? | independent? | why |
+|---|---|---|---|---|
+| SF–OD | no | no | yes | chamber enumeration produces certificates, not dissections or parity theorems; an odd dissection decides parity but names no chamber |
+| SF–TR | no | no | yes | combinatorial closure inside the model versus a physical realization theorem |
+| SF–SI | no | no | yes | chambers are model-internal; the cell-identification bridge is physical |
+| SF–SE | no | no | yes | chambers are enumerated under the acting 24-element group; a larger group regroups orbits, which the smaller-group enumeration does not decide, and vice versa |
+| SF–SC | no | no | yes | one-box chambers say nothing about longer runs or larger blocks, and conversely |
+| OD–TR | no | no | yes | model parity versus physical tick realization |
+| OD–SI | no | no | yes | model parity versus physical cell identification |
+| OD–SE | no | no | yes | the group choice does not decide parity; parity does not decide the group |
+| OD–SC | no | no | yes | one-box parity versus extended domains |
+| TR–SI | no | no | yes | distinct bridges — rule-to-tick correspondence versus cell shape; the landed cycle 724 note records them separately |
+| TR–SE | no | no | yes | physical bridge versus model symmetry choice |
+| TR–SC | no | no | yes | physical bridge versus model domain size |
+| SI–SE | no | no | yes | cell identification versus symmetry choice |
+| SI–SC | no | no | yes | cell identification versus domain size |
+| SE–SC | no | no | yes | group enlargement on one box versus domain extension |
+
+All 15 pairs are independent in both directions; no row is double-counted. One
+one-way pricing dependency is declared rather than collapsed: closing SF by full
+chamber enumeration would re-price claim (a) from carried-family scope to a
+genuine one-orbit impossibility. That is a claim-level re-pricing, not a
+wall-closure implication, and it is exactly why claim (a) ships at carried-family
+scope. The iteration-2 wall list had a seventh row, the untested-certificate
+wall; it was closed in iteration 3 by running the strengthening test on all
+nineteen carried certificates, and it no longer appears.
 
 **N3 — Hidden-wall scan.** Iteration-1 review found the hidden scopes: "any one
 point-orbit" hid "one of the 114 carried orbits"; "the parity relation does not
 extend" hid "is not certified by the carried incidence-plus-volume columns";
 "every carried bound" hid "the five tested certificates". All three are promoted
-into the claim statements, the gate names, and the receipt. Two hidden premises
-were promoted with them: the supplied corner-simplex model (now the first
-section) and the normalized 4-volume convention (now declared).
+into the claim statements, the gate names, and the receipt — and the third was
+then discharged outright in iteration 3 by testing all nineteen certificates.
+Two hidden premises were promoted with them: the supplied corner-simplex model
+(now the first section) and the normalized 4-volume convention (now declared).
+Iteration 3 also promoted two previously implicit scopes into tested statements
+plus explicit walls: "one pinned sample recipe" (now two carried families tested;
+SF carries the remainder) and "proper rotations only" (now a 96-map preservation
+sweep; SE carries the remainder).
 
 **N4 — Residual matching.** Witness dispositions: claim (a) rests on the
-per-orbit envelope computation — its residual, "best certificate from one carried
-orbit within the carried device", matches (a) exactly, and the eight-orbit halves
-certificate supplies the positive complement. Claim (b) rests on the 115
-refutations per tested certificate — the residual matches the five-certificate
-statement exactly. Claim (c) rests on the rank-465 elimination and
-non-membership — the residual "cost vector outside this span" matches (c), and
-the even cost-108 witness fixes minimal-piece parity on the positive side. The
-uncarried author-side scratch checks are dropped as negative witnesses
-(provenance only, per the cross-checks section).
+per-orbit envelope computations on both carried invariant families — the
+residual, "best certificate from one carried orbit within the carried device",
+matches (a) exactly; the eight-orbit halves certificate supplies the positive
+complement, and its 108 total is a joint eight-orbit bound, never a single-orbit
+value. Claim (b) rests on the 115 strengthening refutations per invariant
+certificate and the 2673 per fixed-weight certificate — the residual matches the
+all-nineteen statement exactly. Claim (c) rests on the rank-465 eliminations and
+non-membership on both carried sample families — the residual "cost vector
+outside this span" matches (c), and the even cost-108 witness fixes minimal-piece
+parity on the positive side. The uncarried author-side scratch checks are dropped
+as negative witnesses (provenance only, per the cross-checks section).
 
 **N5 — Rhetoric audit.** All three claims were checked across per-element /
 per-site / per-mode / per-block / lattice-wide resolutions; the tested and
 untested resolutions are stated line-by-line in the N5 resolution certificate in
 the primary's cached stdout (per_element: exact recounted slacks and refusals
-only; per_site: the two carried pinned sample recipes only; per_mode: 114 carried
-orbits and five tested certificates, fourteen checked and not executed;
-per_block: minimal versus all-corner piece classes, with no coarse
-dissection-parity negative; lattice_wide: checked and not executed — no
-lattice-wide negative exists in this package). Every phrase wider than these
-resolutions was narrowed in iterations 1–2; the note carries no universal
-negative.
+only, including all 96 symmetry images; per_site: the three carried pinned
+sample recipes only; per_mode: 114 carried orbits per invariant family and all
+nineteen carried certificates, none outside the carried set; per_block: minimal
+versus all-corner piece classes, with no coarse dissection-parity negative;
+lattice_wide: checked and not executed — no lattice-wide negative exists in this
+package). Every phrase wider than these resolutions was narrowed in iterations
+1–3; the note carries no universal negative.
 
-**N6 — Partial-closure path scan.** Every surviving negative closes without new
-physics: the untested-certificate wall by running the strengthening test on the
-remaining fourteen certificates (pure computation); the sample-family wall by
-finite chamber enumeration (unexecuted); the odd-coarse-dissection wall by
-exhibiting a dissection or proving a complete parity theorem. No registered
-primitive supplies the two physical bridges — kinetic-isotropy supplies the equal
-tick/edge graining only — and no convention or labeling reframe closes them; both
-need theorems. The legitimate import-bearing path is named: a consuming theorem
-may take the simplex identification as an explicit import, bound it, and retire
-it by audit. Nothing here forecloses that.
+**N6 — Partial-closure path scan.** The one partial-closure path found in
+iteration 2 — running the strengthening test on the remaining fourteen
+certificates — WAS executed in iteration 3 (N1 route 4), closing that wall by
+pure computation. Of the remaining walls: SF closes by finite chamber
+enumeration (unexecuted); OD closes by exhibiting an odd-cost coarse dissection
+or proving a complete parity theorem; SE closes by recomputing the orbit-level
+statements under the enlarged groups (the census and brackets are already shown
+invariant); SC closes by extending the domain. No registered primitive supplies
+the two physical bridges — kinetic-isotropy supplies the equal tick/edge
+graining only — and no convention or labeling reframe closes them; both need
+theorems. The legitimate import-bearing path is named: a consuming theorem may
+take the simplex identification as an explicit import, bound it, and retire it
+by audit. Nothing here forecloses that.
 
-**N7 — Steelman.** Strongest counter-argument: "A seed in a different
-hyperplane-arrangement chamber may furnish a single-orbit dual reaching 108,
-since chambers were not exhausted; one of the fourteen untested certificates may
-be a slack bound that a unit strengthening would expose; and coarse dissections
-may all share even parity under an invariant invisible to the sampled linear
-constraints — no odd dissection is exhibited." The steelman is concrete and
-correct, and it is why nothing here ships as a no-go: its three routes are
-exactly the sample-family, untested-certificate, and odd-coarse-dissection walls,
-all carried OPEN, and the claims as narrowed are facts about carried objects the
-steelman does not touch.
+**N7 — Steelman.** Strongest counter-argument: "A chamber beyond the two carried
+families may furnish a single-orbit dual reaching 108 — two chambers are tested,
+not all; a single merged orbit under the enlarged 96-element group is the union
+of up to two proper-rotation orbits and was never tested as a joint two-orbit
+certificate; and coarse dissections may all share even parity under an invariant
+invisible to both carried sample families — no odd dissection is exhibited." The
+steelman is concrete and correct, and it is why nothing here ships as a no-go:
+its three routes are exactly SF, SE, and OD, all carried OPEN in the N2 table,
+and the claims as narrowed are facts about carried objects the steelman does not
+touch.
 
 **N8 — Cross-cycle echo.** The landed cycle 724 review demoted this same lane to
 the supplied tick-extended simplex model and preserved the untested construction
 escapes; this note carries that boundary forward as its first section instead of
 repeating the broader physical tendency the iteration-1 review flagged here. The
 repo's earlier falsification of a comparator slogan that generalized beyond its
-comparator is echoed by pricing every negative to its exact carried family, orbit
-set, and certificate list.
+comparator is echoed by pricing every negative to its exact carried family,
+orbit set, and certificate list.
 
-**Status: PASS** — narrow by construction: all eight checks answered, no failure
-condition hit, no `no_go` claim ships, and both required artifacts land in this
-PR (this section, and the N5 certificate in the primary's cached stdout).
+**Status: PASS** — narrow by construction: all eight checks answered, every N1
+route ATTEMPTED under the marker contract, no failure condition hit, no `no_go`
+claim ships, and both required artifacts land in this PR (this section, and the
+N5 certificate in the primary's cached stdout).

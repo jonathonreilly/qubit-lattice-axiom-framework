@@ -638,20 +638,6 @@ PRIMARY_SCRIPT = "scripts/salvaged_exact_algebra_2026_08_08.py"
 PRIMARY_ROLE = ("salvage primary: seven narrow exact algebraic results "
                 "on in-file stipulated definitions; bounded support "
                 "only; no derivation, closure, or selection claims")
-PRIMARY_REVIEW_LOOP = {
-    "iteration": 2,
-    "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
-    "addressed": [
-        "S1: receipt cross-check made full-surface in the independent "
-        "checker, with a rehashed semantic-tamper regression",
-        "S2: independent checker registered as an explicit packet helper "
-        "for this claim in build_citation_graph.py",
-        "S3: citation-graph manifest acknowledgment co-landed; audit-row "
-        "wording in the note corrected",
-        "S4: note title, source-boundary sentence, unit cross-reference, "
-        "and recovery handle corrected",
-    ],
-}
 PRIMARY_CHECK_NAMES = (
     "split.decomposition_identity_on_all_probes",
     "split.trace_free_channel_has_zero_trace",
@@ -752,7 +738,6 @@ def build_expected_primary_payload(units: dict) -> dict:
         "fail": 0,
         "expected_check_count": len(PRIMARY_CHECK_NAMES),
         "verdict": "PASS",
-        "review_loop": PRIMARY_REVIEW_LOOP,
     }
 
 
@@ -846,7 +831,6 @@ def main() -> int:
         "fail": fails,
         "expected_check_count": EXPECTED_CHECK_COUNT,
         "verdict": verdict,
-        "review_loop": PRIMARY_REVIEW_LOOP,
     }
     blob = json.dumps(payload, sort_keys=True, indent=1).encode()
     payload["payload_sha256"] = hashlib.sha256(blob).hexdigest()

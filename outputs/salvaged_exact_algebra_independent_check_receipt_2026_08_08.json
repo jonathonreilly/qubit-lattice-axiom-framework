@@ -116,17 +116,7 @@
   "outputs/salvaged_exact_algebra_receipt_2026_08_08.json"
  ],
  "pass": 27,
- "payload_sha256": "c7ea0fc5b331e91305f93effcffaad29334add1cc1d854f46f23859cdbef5898",
- "review_loop": {
-  "addressed": [
-   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
-   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
-   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
-   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
-  ],
-  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
-  "iteration": 2
- },
+ "payload_sha256": "b375af70aea52ed0cb8608d4f3ba6b547e6e18acd48c44b3a48a76b6826450c0",
  "role": "salvage independent check: every unit recomputed by a different exact route; primary receipt verified fail-closed",
  "script": "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
  "units": {
@@ -311,7 +301,7 @@
   },
   "primary_receipt": {
    "comparison": "full payload minus self-digest, wholesale",
-   "primary_digest": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
+   "primary_digest": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
    "primary_fail": 0,
    "primary_pass": 31
   },

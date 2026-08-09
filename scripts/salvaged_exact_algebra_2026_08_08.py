@@ -60,20 +60,6 @@ RECEIPT_PATH = os.path.join(
     REPO, "outputs", "salvaged_exact_algebra_receipt_2026_08_08.json")
 DATE = "2026-08-08"
 EXPECTED_CHECK_COUNT = 31
-REVIEW_LOOP = {
-    "iteration": 2,
-    "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
-    "addressed": [
-        "S1: receipt cross-check made full-surface in the independent "
-        "checker, with a rehashed semantic-tamper regression",
-        "S2: independent checker registered as an explicit packet helper "
-        "for this claim in build_citation_graph.py",
-        "S3: citation-graph manifest acknowledgment co-landed; audit-row "
-        "wording in the note corrected",
-        "S4: note title, source-boundary sentence, unit cross-reference, "
-        "and recovery handle corrected",
-    ],
-}
 
 CHECKS: list[tuple[str, bool]] = []
 
@@ -678,7 +664,6 @@ def main() -> int:
         "fail": fails,
         "expected_check_count": EXPECTED_CHECK_COUNT,
         "verdict": verdict,
-        "review_loop": REVIEW_LOOP,
     }
     blob = json.dumps(payload, sort_keys=True, indent=1).encode()
     payload["payload_sha256"] = hashlib.sha256(blob).hexdigest()

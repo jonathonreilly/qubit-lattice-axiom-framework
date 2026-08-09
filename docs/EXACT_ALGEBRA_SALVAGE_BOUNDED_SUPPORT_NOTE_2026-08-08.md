@@ -308,6 +308,53 @@ the PR #5995 review record):
   dispatch or re-audit rows; its own ordinary claim row is
   pipeline-seeded and remains `unaudited` for independent review.
 
+### Hard landing condition: packet-helper registration
+
+The independent checker deliberately does not import the primary, so
+the audit packet builder cannot discover it by transitive imports.
+Registering it is a one-entry edit to
+`EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+`docs/audit/scripts/build_citation_graph.py` — but that file is an
+exact-hash member of the governed dependency-policy source set, and a
+policy-epoch refresh mass-invalidates the legacy audit baseline
+(independently measured at 891 hard resets). The registration is
+therefore NOT carried on this branch. It is a HARD LANDING CONDITION
+for this package: before or at landing, the following entry must be
+applied through whatever mechanism the dependency-policy
+reconciliation (queued in `docs/repo/ACTIVE_REVIEW_QUEUE.md`,
+`2026-08-08-dependency-policy-epoch-debt-helper-registry`) approves:
+
+```python
+    # The exact-algebra bounded-support checker deliberately does not import
+    # the primary: it recomputes every unit by a different exact route and
+    # verifies the primary receipt fail-closed. Expose that separately
+    # executable checker beside the primary in this claim's restricted packet.
+    "exact_algebra_salvage_bounded_support_note_2026-08-08": [
+        "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+    ],
+```
+
+Until that entry is applied, the restricted audit packet for this
+claim contains the primary runner only, and the checker must be
+opened by path.
+
+### Fix history (review iterations on this package)
+
+- Iteration 2 (combined adversarial review of the salvage, four
+  findings): the checker's receipt cross-check was rebuilt
+  full-surface — canonical expected record from all seven independent
+  routes, wholesale payload comparison, and two tamper regressions
+  (a rehashed semantic tamper must be rejected); the citation-graph
+  manifest acknowledgment was co-landed; the note title,
+  source-boundary sentence, unit cross-reference, audit-row wording,
+  and recovery handle were corrected.
+- Iteration 3 (confirmation round): the packet-helper registration
+  was reverted off this branch and restated as the hard landing
+  condition above, with the dependency-policy epoch debt queued as a
+  dated owner-decision item; review-iteration metadata was removed
+  from the runner-emitted receipts — runner outputs carry only
+  runner-generated content, and review provenance lives here.
+
 What this salvage does NOT do: it does not repair, re-derive, or
 re-assert any dropped claim; it does not touch the axiom surface; it
 authors no audit verdict and requests no extra dispatch or re-audit

@@ -109,9 +109,17 @@ unless the user explicitly supplied `--no-pr`.
 - If PR creation or verification fails for network/auth reasons, write a
   complete `PR_BACKLOG.md` and continue the campaign if runtime remains.
   Missing GitHub access is a delivery degradation, not a science stop.
-- PR titles must include `[physics-loop]`, the lane/block slug, and the honest
-  status (`exact theorem`, `bounded theorem`, `no-go`, `exact support`,
-  `bounded support`, `open`, or `demotion`).
+- PR titles must include `[physics-loop]`, the lane/block slug, the block's
+  claim type, AND its honest status — two separate slots, each drawn from its
+  own canonical enum. A claim type is not a status. The claim type is one of
+  `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`,
+  `meta` (the `target_claim_type` enum below); the status is one of `open`,
+  `no-go`, `exact-support`, `bounded-support`, `conditional-support`,
+  `demotion`, `candidate-retained-grade` (the `actual_current_surface_status`
+  enum below). Never let one family stand in for the other: "exact theorem"
+  and "bounded theorem" are claim-type phrasings, and a title that offers one
+  of them where the status belongs states no status at all. A hybrid phrase
+  spanning both families is the same defect (conformance spec section 3).
 - PR bodies must link the block's `HANDOFF.md`, `TRACE_GATE.md`, notes,
   runners, verification commands/results, review findings, imports
   retired/exposed, trace reachability, and remaining blockers.
@@ -156,35 +164,50 @@ merge):
 `bash docs/audit/scripts/run_pipeline.sh` may be invoked for validation
 (to confirm the source repair is ingested and the runner row queued or
 re-queued as intended), but the regenerated outputs above must be dropped
-before commit:
+before commit. Drop by restoring the branch's OWN committed state, never by
+importing another ref: `git checkout origin/main -- <paths>` writes the index
+as well as the working tree, so on a stale or stacked branch — the normal case
+under the parallel landing contract — it silently STAGES current-`main`'s
+deltas on those generated surfaces relative to your HEAD.
 
 ```bash
-git checkout origin/main -- docs/audit/data/ \
-                            docs/audit/AUDIT_QUEUE.md \
-                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
-                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
-                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git restore --source=HEAD --staged --worktree -- \
+    docs/audit/data/ \
+    docs/audit/AUDIT_QUEUE.md \
+    docs/audit/MISSING_DERIVATION_PROMPTS.md \
+    'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+    docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
 git clean -fd -- docs/audit/data/
 ```
 
 The one carve-out is `docs/audit/data/citation_graph_manifest.json`, and it is
-conditional, proactive, and commit-time. When the block's own commits change
-citation-graph dependencies — any new or edited note carrying markdown links —
-a refreshed manifest MUST co-land with the block, or the enforced stage-18
-guard blocks every subsequent pipeline run on `main` until someone else lands
-the acknowledgment. Regenerate it deterministically on the proposed tree
-*after* the drop above, stage that one path, and read the stage-18 delta
-against the tracked manifest before staging: acknowledgment is assertion that
-every added, removed, or rewired edge is intended. Never hand-merge or
-hand-edit it, and never stage it when the block changes no dependency edge
+conditional, proactive, and commit-time. The trigger is graph TOPOLOGY, not
+markdown links alone: `docs/audit/scripts/build_citation_graph.py` registers
+every non-skipped `docs/**/*.md` file as a graph node BEFORE it extracts any
+edge, so a new note carrying only backticked provenance references is still a
+new node, and `docs/audit/scripts/write_citation_graph_manifest.py` requires
+acknowledgment for every added, removed, or rewired node. When the block's own
+commits add or remove any graph node — including a note with zero markdown
+links — or rewire any dependency edge, a refreshed manifest MUST co-land with
+the block, or the enforced stage-18 guard blocks every subsequent pipeline run
+on `main` until someone else lands the acknowledgment. Regenerate it
+deterministically on the proposed tree *after* the drop above, read the
+stage-18 delta against the tracked manifest before staging, then stage that
+one path: acknowledgment is assertion that every added, removed, or rewired
+node and edge is intended. Never hand-merge or hand-edit it, and stage it only
+when the block's commits actually change graph topology — when they change
+none, the correct staged set contains no manifest at all
 (`docs/ai_methodology/skills/review-loop/SKILL.md` landing rule; conformance
 spec section 8).
 
 ```bash
-# Only when the block's commits change citation-graph dependencies:
+# Only when the block's commits add/remove a graph node or rewire an edge:
 python3 docs/audit/scripts/build_citation_graph.py
 python3 docs/audit/scripts/write_citation_graph_manifest.py
 git add docs/audit/data/citation_graph_manifest.json
+# Second line of defense: the staged set must be exactly the intended source
+# paths plus, at most, the one manifest path.
+git status --porcelain
 ```
 
 Do not weave science results through `README`, `docs/repo/LANE_REGISTRY.yaml`,
@@ -329,10 +352,15 @@ axioms, not bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
 dependencies without bounding downstream rows. No admission class exists;
 decision history has zero premise weight. The approved axiom baseline is the current
-Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
+Lattice/Qubit/Admissibility/Record surface (`docs/MINIMAL_AXIOMS_2026-06-29.md`):
+no site is privileged; sites are
 distinguished by the supplied lattice structure alone; no possibility is
 privileged; possibilities are distinguished by the supplied algebraic structure
-alone; a record, when present, locks exactly one admissible local possibility;
+alone; Admissibility is one fixed finite-neighborhood rule, the same at every
+lattice translate, and for each site the probability distribution over the
+possibilities is determined by, and varies with, the nearest-neighbor
+conditions, with availability/admissibility being that distribution's support;
+a record, when present, locks exactly one admissible local possibility;
 a site never carries more than one record; records are permanent; only records
 are readable; readout value is determined by record content alone; finite
 scalar readout is additive over
@@ -340,12 +368,14 @@ finite pairwise-disjoint record collections; a state is a configuration of
 records; and a law privileges no states, has a supplied condition as its
 domain, and gives exactly one answer where the condition holds. It does not
 supply the readout context, decomposition, `K`/CPT structure,
-sector-generation rule, weighting, normalization, probability,
+sector-generation rule, weighting, normalization, specific
+probability-distribution values, formation-site and formation-rate rules,
 measurement/decoherence dynamics, record-production dynamics, physical
 persistence dynamics, occurrence rule, update law, time metric, within-sector
 data, occupancy rule, P2/modulus, log-det, source/action, scale,
 state-selection rule, law-domain derivation, or arbitrary observable
-identification. The
+identification. The neighborhood-determined probability distribution is
+therefore axiom content; only its specific values are downstream. The
 scale-reference primitive is the approved units primitive; do not describe it
 as an admission or a bounded Planck import. The kinetic-isotropy
 primitive is the approved structural OS0 kinetic-form isotropy `c_t = c_s`;
@@ -363,7 +393,8 @@ isotropy. If the only issue is use of the registered
 `realized_state_primitive`, record it as approved pointwise specialization to
 the supplied realized state. Keep the actual status judgment focused on any additional
 dimensionless dynamical quantity, selector, readout, normalization,
-probability, dynamics, closure theorem, or empirical content.
+specific probability-distribution value, dynamics, closure theorem, or
+empirical content.
 
 Required status fields for major artifacts:
 

@@ -202,8 +202,14 @@ For every source-side PR:
 2. Pre-fix mechanical non-conformance against
    `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` before a reviewer
    seat is spent on the PR, then run a fresh `review-loop` agent at the best
-   available model and maximum reasoning. Pre-fix confers no PASS; the
-   reviewer still judges the final state.
+   available model and maximum reasoning. The pre-fixable set is the narrow
+   mechanical one defined in `review-loop`'s Author Pre-Flight section: link
+   resolution and portability, field presence and enum validity, removal of
+   forbidden audit outputs, and deterministic command/gate hygiene. Never
+   pre-fix dependency-edge intent, import classification, open-bridge
+   ownership, claim scope, proof content, or runner logic — those are the
+   reviewer's. Pre-fix confers no PASS; the reviewer still judges the final
+   state.
 3. Apply narrow findings, curing per the conformance spec where it covers the
    finding, then re-review changed files, validate, and land through
    the review-loop cherry-pick path onto current `main`.

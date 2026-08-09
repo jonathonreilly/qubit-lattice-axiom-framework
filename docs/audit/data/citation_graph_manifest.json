@@ -1,6 +1,6 @@
 {
  "edge_count": 15469,
- "node_count": 5440,
+ "node_count": 5441,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -659,6 +659,10 @@
    "out_degree": 25
   },
   "ai_methodology.repo_trajectory_and_governance_evidence_2026-04-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.review_loop_pr_conformance_spec": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

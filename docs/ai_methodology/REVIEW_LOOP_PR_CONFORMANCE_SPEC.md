@@ -10,9 +10,14 @@ check in its Science Delivery And PR Policy before a block PR is opened,
 `science-fix-loop` runs it before a repair PR exists, and `review-loop` uses it as the
 pre-review conformance bar for pre-fix and as shared cure text in its Fix Policy.
 
-**This document is a restatement, not an authority.** Every rule below cites the
-file that owns it. Where this document and a cited file disagree, the cited file
-wins, and the disagreement is a defect in this document. Items are MUST unless
+**This document is a restatement, not an authority.** Every rule below either
+cites the file that owns it, or says explicitly that the owner directive of
+2026-08-09 is its authority — those are the only two provenances a MUST here
+may have, and a MUST with neither is a defect to report rather than follow.
+Where this document and a cited file disagree, the cited file
+wins, and the disagreement is a defect in this document. An owner-directive
+rule is genuinely new operational authority: it binds because the owner said
+so, not because it restates a skill. Items are MUST unless
 marked otherwise. Exemplars: PRs #6015, #5921, #5925, #5930, #5979 (iterations),
 #5931 (salvage); landed packet exemplar
 `docs/LOCAL_CLOCK_RELATION_CYCLE869_BOUNDED_THEOREM_NOTE_2026-07-28.md`.
@@ -34,7 +39,7 @@ citation-edge rule in section 8.
   that needs it.
 - A dependency may be brought in as a self-contained derivation and reviewed in
   the same branch; that is the sanctioned repair route
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:717`). Copying in an
+  (`docs/ai_methodology/skills/review-loop/SKILL.md:737-738`). Copying in an
   unreviewed sibling's conclusion is not.
 - No hard requirement on gitignored artifacts (e.g. the symlinked
   `docs/audit/data/audit_ledger.json`). Runners must be fresh-worktree
@@ -48,22 +53,41 @@ citation-edge rule in section 8.
 - Every cached runner output goes through
   `scripts/runner_cache.py` `execute_and_write_cache(runner, timeout_sec)`.
   Raw stdout files are not caches.
-- The cache header's `timeout_sec` must be the runner's own declared
-  `AUDIT_TIMEOUT_SEC`, not an ad-hoc number chosen at call time. A runner that
-  needs more than the 120-second default declares `AUDIT_TIMEOUT_SEC = N` as a
-  top-level assignment; the precompute orchestrator and the audit runner both
-  resolve the effective timeout in the order declared value, legacy substring
-  override, default (`scripts/runner_cache.py` `declared_timeout_for` /
-  `runner_timeout_for`). A header written with a number the runner does not
-  declare will not reproduce under independent audit.
-- NO hand-added metadata in runner-emitted files (caches, receipts). Review
-  records live in the note, not in machine-emitted artifacts.
+- Timeouts, as an AUTHORING requirement on new and changed runners: every new
+  or changed runner declares `AUDIT_TIMEOUT_SEC = N` as a top-level
+  assignment, and its cache header's `timeout_sec` carries that declared
+  number — not an ad-hoc value chosen at call time. This is a rule about what
+  a new runner must declare, not a claim about resolver behaviour. The
+  resolver has three tiers: declared value, then a legacy substring override,
+  then the 120-second default (`scripts/runner_cache.py` `runner_timeout_for`,
+  reading `declared_timeout_for`); `scripts/precompute_audit_runners.py` and
+  `scripts/codex_audit_runner.py` both consume it. So an existing runner that
+  declares nothing still reproduces at its override or default value — the
+  point of the authoring rule is that new work must not rely on that fallback,
+  and that a header number matching neither the declaration nor the resolver's
+  fallback for that runner will not reproduce under independent audit. The
+  explicit-declaration requirement itself is the owner directive of
+  2026-08-09; the resolver is unchanged.
+- NO hand-added metadata in runner-emitted files (caches, receipts). The cache
+  format is fixed and machine-written — header keys, `----- stdout -----` and
+  `----- stderr -----` sections, no timestamps anywhere
+  (`scripts/runner_cache.py` module docstring). Review records live in the
+  note, not in machine-emitted artifacts. Owner directive of 2026-08-09 for
+  the prohibition as stated here.
 - Exit-code honesty: a nonzero exit that is by design is recorded as
-  `nonzero_exit` with the design reason stated in the note; never rewrap or
-  launder it into `ok`.
+  `nonzero_exit` — the status the envelope itself writes for a nonzero exit
+  (`scripts/runner_cache.py` `execute_and_write_cache`) — with the design
+  reason stated in the note; never rewrap or launder it into `ok`. Owner
+  directive of 2026-08-09 for the note-side design-reason requirement.
 - After ANY edit to a pinned file, rerun the affected runners through the
   envelope and re-pin (checker pins of primary sha/blob, receipt pins of final
-  bytes). A pin against pre-edit bytes is a defect.
+  bytes). A pin against pre-edit bytes is a defect: the cache binds the
+  runner's content SHA-256 and a fingerprint of its declared
+  `AUDIT_INPUT_PATHS`, and consumption rejects input drift
+  (`scripts/runner_cache.py` module docstring), while the review-time
+  readiness gate blocks PASS on a stale or failed SHA/input-bound compute
+  result (`docs/ai_methodology/skills/review-loop/SKILL.md` "Changed-science
+  evidence-readiness PASS gate").
 - A runner-emitted read inventory must separate two kinds of read: external or
   ancestral scientific inputs (data the result depends on) and package-local
   integrity reads (the runner's own source for a self-hash, a paired source and
@@ -71,18 +95,26 @@ citation-edge rule in section 8.
   repository reads" is a defect whenever integrity reads exist; state the honest
   form — no external scientific input is read, and name the integrity reads that
   are. This is the full-surface consistency rule of section 3 applied to the
-  runner's own self-description.
+  runner's own self-description. Owner directive of 2026-08-09 for the
+  two-kinds separation as an authoring rule.
 
 ## 3. Claim-scope honesty
 
 - State exactly what the runner computed: finite domain, declared parameters,
   bounded scope. Words that claim more than the computation —
   "certified", "closed", "complete", "global", "maximal", "the law" — are
-  demotion targets unless the computation actually establishes them.
+  demotion targets unless the computation actually establishes them
+  (`docs/ai_methodology/skills/review-loop/SKILL.md` Fix Policy step 2:
+  "Demote overclaimed status when the artifact supports only support/bounded
+  language").
 - Full-surface consistency: the claim scope must match on EVERY surface —
   note prose, title/headline, runner docstrings, emitted certificate strings,
   machine-status block, receipts, closing verdict line. Demoting the note while
-  a docstring still overclaims is a confirmation failure (seen twice).
+  a docstring still overclaims is a confirmation failure (seen twice). The
+  surface enumeration is the Native-language PASS gate's: changed headings,
+  metadata, runner banners, claim scopes, table labels, and review comments
+  (`docs/ai_methodology/skills/review-loop/SKILL.md` "Native-language PASS
+  gate").
 - Structured status fields carry only values from their own enum. A claim class
   (`positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`,
   `meta`) is not a status and must never appear in a status field, and no field
@@ -93,6 +125,10 @@ citation-edge rule in section 8.
 - Domain-explicit naming; no `near/far`-style frame-relative names where a fixed
   designation exists. No campaign/block/lane-opening language in scientific
   headlines. No unregistered labels or block/campaign fields in machine records.
+  Campaign names, PR-specific labels, and branch-local/draft framings are owned
+  by `RepoGovernanceReviewer` and the Native-language PASS gate
+  (`docs/ai_methodology/skills/review-loop/SKILL.md`); the frame-relative
+  naming rule is the owner directive of 2026-08-09.
 - No bare letter-number names for new science. `A1`, `A2`, `G1`, `R3`,
   `Route F`, `Block 2` and their kin are overloaded across axioms, assumptions,
   Lie types, lane stages, route codes, and branch blocks; they must not be used
@@ -100,7 +136,7 @@ citation-edge rule in section 8.
   review findings. Use an explicit scientific noun phrase; a shorthand may
   follow only as a parenthetical alias, and archival aliases belong only in
   clearly historical work-history or archive material
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:147-152,574-585`).
+  (`docs/ai_methodology/skills/review-loop/SKILL.md:147-152,594-605`).
 - Any noun phrase the PR introduces to categorize claims, lanes, or tiers must
   already exist in `docs/repo/CONTROLLED_VOCABULARY.md` or be plain descriptive
   prose. Coining a class word is a defect even when the concept is real; say the
@@ -110,11 +146,25 @@ citation-edge rule in section 8.
 
 ## 4. Negative claims: the N-gate
 
-A PR shipping any no-go / impossibility / "X is refuted" claim MUST answer all of
-N1-N8 in writing. Authority:
-`docs/ai_methodology/skills/no-go-discipline/SKILL.md:48-255`; the checked-in
-gate binds every N1-N8 statement to evidence in the restricted audit packet
-(`docs/audit/scripts/no_go_discipline_gate.py`).
+The trigger set is the canonical one and is NOT limited to explicit no-go
+headlines. A PR MUST answer all of N1-N8 in writing when any cycle artifact,
+PR body, source note, runner, or review verdict it ships asserts:
+
+- a `no_go` result ("structurally closed", "no route exists", "no retained
+  primitive supplies this");
+- a `stretch_attempt_negative` outcome ("the attempted route does not close");
+- a `bounded_with_named_walls` result ("conditional on N open
+  conditions/walls");
+- a derived no-go boundary inside a POSITIVE theorem ("the per-element
+  identity does not lift");
+- an audit-conditional verdict rationale that names a residual wall.
+
+Authority for the trigger set and the checklist:
+`docs/ai_methodology/skills/no-go-discipline/SKILL.md:23-46` (when to invoke)
+and `:48-260` (N1-N8 and the binding Output artifacts); the same trigger is
+wired at `docs/ai_methodology/skills/physics-loop/SKILL.md` "NO-GO DISCIPLINE
+GATE". The checked-in gate binds every N1-N8 statement to evidence in the
+restricted audit packet (`docs/audit/scripts/no_go_discipline_gate.py`).
 
 - N1: at least **five materially distinct** attack routes, each with a
   one-sentence statement of what the route would attempt, a one-sentence
@@ -188,7 +238,7 @@ including checker-emitted strings and receipts.
 
 ## 5. Proof obligations
 
-Authority: `docs/ai_methodology/skills/review-loop/SKILL.md:1106-1112`. Any PR
+Authority: `docs/ai_methodology/skills/review-loop/SKILL.md:1131-1137`. Any PR
 claiming a theorem, proof, derivation, reduction, or closure through intermediate
 lemmas MUST, in the note:
 
@@ -230,7 +280,7 @@ Stating the honest boundary requires no new science.
   check that does NOT share the changed runner's implementation path: manual
   formula derivation, symbolic or algebraic reduction, finite toy-case
   enumeration, independent recomputation, or invariant/limit tests. Record which
-  one was used (`docs/ai_methodology/skills/review-loop/SKILL.md:1094-1104`). A
+  one was used (`docs/ai_methodology/skills/review-loop/SKILL.md:1119-1129`). A
   runner that computes its own target and prints PASS proves nothing about the
   formula.
 
@@ -252,7 +302,7 @@ Stating the honest boundary requires no new science.
   mismatching fingerprint as the safe default; narrowing that blast radius takes
   a separate, reviewed machine-readable equivalence/impact record, and
   `docs/audit/data/legacy_science_epoch_baseline.json` is never refreshed to make
-  a policy change pass (`docs/ai_methodology/skills/review-loop/SKILL.md:845-858`).
+  a policy change pass (`docs/ai_methodology/skills/review-loop/SKILL.md:865-878`).
 - Open policy debt, and how to stay correct across its repair: the helper
   registry is currently recorded as unresolved dependency-policy epoch debt on
   `origin/main`, because refreshing the epoch mass-invalidates roughly 860-891
@@ -288,15 +338,22 @@ Stating the honest boundary requires no new science.
   the manifest diff — BEFORE acknowledging it. Acknowledgment is staging the
   refreshed manifest, so an unintended edge acknowledged is an unintended
   dependency landed (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:65-74`).
-- Manifest co-landing is proactive and commit-time. When the landing changes any
-  citation-graph dependency (new or edited notes with markdown links), the
-  landing set MUST INCLUDE a refreshed
-  `docs/audit/data/citation_graph_manifest.json`, generated on the proposed
-  landing tree with `docs/audit/scripts/build_citation_graph.py` then
-  `docs/audit/scripts/write_citation_graph_manifest.py` and staged before commit
-  and push. Omitting it blocks the enforced stage-18 guard on every subsequent
-  pipeline run on `main`
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:240-249`).
+- Manifest co-landing is proactive and commit-time, and the trigger is graph
+  TOPOLOGY, not markdown links alone. When the landing adds or removes ANY
+  graph node, or rewires any dependency edge, the landing set MUST INCLUDE a
+  refreshed `docs/audit/data/citation_graph_manifest.json`, generated on the
+  proposed landing tree with `docs/audit/scripts/build_citation_graph.py` then
+  `docs/audit/scripts/write_citation_graph_manifest.py` and staged before
+  commit and push. A new note is a new node whether or not it carries a single
+  markdown link: `build_citation_graph.py` registers every non-skipped
+  `docs/**/*.md` file as a node before extracting any edge, and
+  `write_citation_graph_manifest.py` requires acknowledgment for every added,
+  removed, or rewired node. A zero-edge note addition therefore changes
+  `node_count` and needs the manifest exactly like an edge rewire. Omitting it
+  blocks the enforced stage-18 guard on every subsequent pipeline run on `main`
+  (`docs/ai_methodology/skills/review-loop/SKILL.md` proactive manifest rule in
+  the landing loop; `docs/ai_methodology/skills/physics-loop/SKILL.md`
+  citation-graph carve-out).
 - Regeneration DURING landing is the single narrow exception, not the norm: a
   cherry-pick conflict touching only `citation_graph_manifest.json` is resolved
   by regenerating it from the landed tree, never by hand-merge, and needs no new
@@ -312,21 +369,28 @@ Stating the honest boundary requires no new science.
   a union of two appended blocks is one landing technique, not the update
   contract for either file.
 - Receipts live in `outputs/`, caches in `logs/runner-cache/`; nothing else
-  writes outside the delta's declared file set. Never stage with `git add -A`.
+  writes outside the delta's declared file set. `outputs/` and `logs/` are the
+  repository's run-artifact and transient-output buckets
+  (`docs/repo/REPO_ORGANIZATION.md`), and the canonical cache path
+  `logs/runner-cache/<runner-stem>.txt` is fixed by
+  `scripts/runner_cache.py` (module docstring). Never stage with `git add -A`:
+  stage explicit paths only
+  (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:99-107`); the
+  `git add -A` prohibition itself is the owner directive of 2026-08-09.
 
 ## 9. Note structure
 
 - Machine-status block: complete, and consistent with the receipts and every
   other surface. Use the real field names from
   `docs/ai_methodology/skills/physics-loop/SKILL.md`. The status contract
-  (`:368-381`) requires `actual_current_surface_status`, whose value is one of
+  (`:399-412`) requires `actual_current_surface_status`, whose value is one of
   `open`, `no-go`, `exact-support`, `bounded-support`, `conditional-support`,
   `demotion`, `candidate-retained-grade`, together with `target_claim_type`,
   `trace_class`, `reachability_to_target`, `conditional_surface_status`,
   `hypothetical_axiom_status`, `admitted_observation_status`,
   `claim_type_reason`, `audit_required_before_effective_retained`, and
   `bare_retained_allowed: false`. There is no `surface_status` field.
-- The trace contract (`:255-265`) additionally requires `trace_class`
+- The trace contract (`:278-288`) additionally requires `trace_class`
   (`direct_blocker_closure`, `upstream_support`, `negative_route_pruning`,
   `frontier_discovery`, `methodology`), `target_claim_id`,
   `target_blocker_text`, `source_of_blocker_text` (`null`, `audit_ledger`,
@@ -343,11 +407,14 @@ Stating the honest boundary requires no new science.
   normalization is not available in-repo". Do not coin a status token for this;
   imported physics, textbook machinery, observations, fitted values, and
   conventions are labelled in prose
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:705-718`). Open bridges are
+  (`docs/ai_methodology/skills/review-loop/SKILL.md:725-738`). Open bridges are
   declared open and owned by the correct lane.
 - A Review record section when the PR replaces or narrows earlier content: what
   was dropped or refuted, where the retained scope ends, and any hard landing
-  conditions (section 7).
+  conditions (section 7). Owner directive of 2026-08-09 for this requirement;
+  its shape follows the landed exemplar
+  `docs/LOCAL_CLOCK_RELATION_CYCLE869_BOUNDED_THEOREM_NOTE_2026-07-28.md`
+  ("Outstanding at landing ... as hard landing conditions").
 
 ## 10. Propose/ratify boundary
 
@@ -358,7 +425,7 @@ generated ledger, queue, prompt, or publication effective-status output. Audit
 fields are auditor-owned and `effective_status` is derived by the pipeline
 (`docs/repo/CONTROLLED_VOCABULARY.md` "Audit Lane Field Vocabulary"); the
 independent audit lane is the sole channel that refreshes the hash and
-re-ratifies (`docs/ai_methodology/skills/review-loop/SKILL.md:1154-1167`).
+re-ratifies (`docs/ai_methodology/skills/review-loop/SKILL.md:1179-1192`).
 
 - Do not run `docs/audit/scripts/apply_audit.py` from an author branch.
 - Validation runs generate audit surfaces. Restore them before committing and
@@ -415,11 +482,19 @@ first). Authority:
   `git status` shows exactly the intended files.
 - `git diff --check <merge-base>..HEAD` is clean. Plain `git diff --check`
   inspects only the working tree and reports clean on a committed PR whose delta
-  carries whitespace errors, so it does not satisfy this gate.
-- `python3 -m py_compile` on every added or modified Python file.
+  carries whitespace errors, so it does not satisfy this gate. The
+  `git diff --check` requirement is owned by
+  `docs/ai_methodology/skills/review-loop/SKILL.md` (the post-fix pipeline
+  block); the merge-base strengthening is the owner directive of 2026-08-09.
+- `python3 -m py_compile` on every added or modified Python file
+  (`docs/ai_methodology/skills/review-loop/SKILL.md` Smoketest).
 - Prep sanity for stacked PRs: the reviewed delta must equal
   `merge-base(base-branch, head)..head`, and its file count must match an
-  independently computed delta before any reviewer is launched.
+  independently computed delta before any reviewer is launched. The
+  merge-base review base is owned by
+  `docs/ai_methodology/skills/review-loop/SKILL.md` (Setup step 3) and the
+  stale/stacked overlap check by its Stale PR Integration Guard; the
+  independent file-count cross-check is the owner directive of 2026-08-09.
 - Read the complete diff once, cold, as the reviewer would. Every hunk you
   cannot justify in one sentence from a source you just read is a hunk the
   reviewer will bounce.

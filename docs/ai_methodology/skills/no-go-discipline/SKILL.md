@@ -47,11 +47,15 @@ Skills that must invoke this gate before approving negative-claim output:
 
 ## The N1-N8 checklist
 
-Each item must be answered IN WRITING in the cycle's `CLAIM_STATUS_CERTIFICATE.md`
-(or in a dedicated `NO_GO_DISCIPLINE_CHECKLIST.md`) before the negative claim
-can ship. The checklist must LAND as a committed artifact (see Output below)
-so the audit lane and reviewers can see exactly what was tested. Copying it
-into the PR body or review verdict as well is a courtesy, not the record.
+Each item must be answered IN WRITING before the negative claim can ship, and
+the answers must LAND as a committed artifact the audit lane can bind: a
+`## No-Go Discipline Gate` section in the source note itself, or a committed
+`NO_GO_DISCIPLINE_CHECKLIST.md` that the note links (see Output below). The
+cycle's branch-local `CLAIM_STATUS_CERTIFICATE.md` is loop state, not a
+landing surface — review-loop's salvage pass strips claim-status certificates
+out of a salvage slice — so keep the working copy there if it helps, but the
+source note or its linked sidecar is the record. Copying the checklist into
+the PR body or a review verdict is a courtesy, never the record.
 
 ### N1 — Alternative route enumeration
 
@@ -224,8 +228,10 @@ the no-go is premature.
 
 ## Output
 
-A `NO_GO_DISCIPLINE_CHECKLIST.md` (or a `## No-Go Discipline Gate` section
-in `CLAIM_STATUS_CERTIFICATE.md`) recording the answers to N1-N8 verbatim.
+A `## No-Go Discipline Gate` section in the source note itself, or a committed
+`NO_GO_DISCIPLINE_CHECKLIST.md` that the note links, recording the answers to
+N1-N8 verbatim. Not the branch-local `CLAIM_STATUS_CERTIFICATE.md`, and not
+the PR body or the review verdict.
 
 **The packet must LAND with the PR — a PR body is not a landing surface.**
 The single largest audit-invalidation class in this repo's history is the

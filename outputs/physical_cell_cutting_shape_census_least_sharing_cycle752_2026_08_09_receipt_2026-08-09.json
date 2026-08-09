@@ -1,0 +1,78 @@
+{
+ "cycle": 752,
+ "failures": 0,
+ "gates": 44,
+ "headline": "The four-cube shape a smallest carrier of the charge called four makes is common, and what carries the charge is a count. Join every one of the 192 pieces to every other sharing none of the 15800 cuttings, then take every sixteen pieces joined exactly like the corners of a four-cube: 4978 through every single piece, the same number at all 192, and 59736 in all, every one of them carried to a shape by all 50 generating symmetries. Of those 59736, 59676 carry none of the eight readings and 60 carry four, so the shape by itself is not the mark of the charge. A single number with no reading in it is. Add over the 120 pairs of a shape how many cuttings each pair shares, and rank the 59736 by that total: the 60 lightest are exactly the 60 four-cube carriers of four, every carrier at 19800 or below and every other shape at 20338 or above, and at all 192 pieces the 5 lightest through that piece are its 5 carriers with the sixth at least 538 heavier. Part of this is derived rather than measured. A sixteen-piece set meets the 15800 cuttings 31600 times, carrying four forces an odd meeting on each of the 5664 marked cuttings, and spreading 31600 meetings as evenly as that parity permits costs 15800 plus half of 5664, which is 18632, at the very least. The carriers sit at 19640, which is 1008 over that floor and accounted for exactly by 252 cuttings missed and 252 met four times. Across all 132 carriers the total takes 4 values, least 19640 and most 24216. That 18632 is a floor is derived; that the carriers sit at 19640 is measured, not derived.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_CYCLE752_NOTE_2026-08-09.md",
+ "recorded_output": "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09_cold_2026-08-09.txt",
+ "results": {
+  "bands_inside_a_carrier": {
+   "far_corner_every_time": 433,
+   "three_steps": [
+    240,
+    250
+   ],
+   "two_steps": [
+    170,
+    184
+   ]
+  },
+  "four_cubes_among_the_never_sharing_joins": {
+   "carrying_none_of_the_eight_readings": 59676,
+   "carrying_the_charge_called_four": 60,
+   "generating_symmetries_carrying_every_shape_to_a_shape": 50,
+   "in_all": 59736,
+   "the_same_number_at_all_pieces": 192,
+   "through_one_piece": 4978
+  },
+  "over_all_carriers": {
+   "carriers": 132,
+   "distinct_totals": 4,
+   "least": 19640,
+   "most": 24216
+  },
+  "the_derived_floor": {
+   "cuttings": 15800,
+   "floor_is_derived_not_measured": true,
+   "lightest_carrier_total": 19640,
+   "meetings_a_sixteen_piece_set_makes": 31600,
+   "odd_meetings_carrying_four_forces": 5664,
+   "over_the_floor": 1008,
+   "shared_cuttings_at_the_very_least": 18632,
+   "the_overage_accounted_by_cuttings_met_four_times": 252,
+   "the_overage_accounted_by_cuttings_missed": 252
+  },
+  "the_object": {
+   "carriers_of_four_at_sixteen": 132,
+   "carriers_through_each_piece": 11,
+   "cuttings": 15800,
+   "cuttings_four_marks": 5664,
+   "cuttings_through_a_piece": 1975,
+   "joins_at_every_piece": 33,
+   "pieces": 192,
+   "pieces_per_cutting": 24,
+   "symmetries_of_the_table": 384
+  },
+  "the_ranking_by_cuttings_shared": {
+   "every_four_cube_carrier_at_most": 19800,
+   "every_other_shape_at_least": 20338,
+   "lightest_shapes_that_are_exactly_the_carriers": 60,
+   "pairs_summed_per_shape": 120,
+   "shapes_ranked": 59736
+  },
+  "the_ranking_piece_by_piece": {
+   "least_step_from_the_fifth_to_the_sixth": 538,
+   "lightest_through_a_piece_that_are_its_carriers": 5,
+   "pieces_where_this_holds": 192,
+   "shapes_through_one_piece": 4978
+  },
+  "weaker_and_alternative_tests": {
+   "all_eight_far_corners_at_433_lets_through": 672,
+   "three_against_four_steps_lets_through": 1488,
+   "two_against_three_steps_picks": 60
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09.py",
+ "status": "PASS"
+}

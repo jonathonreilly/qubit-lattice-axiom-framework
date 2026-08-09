@@ -28,12 +28,15 @@ assumption to [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
 
 ## What this cycle adds
 
-The eight-piece sets are pinned down here for what they are. Each of the 192 is a
-set of eight pieces no two of which share a cutting, and each of them meets every
-one of the 15800 cuttings exactly once. Counting the meetings two ways gives both
-double-counts at once: 192 = 24 times 8 and 15800 = 8 times 1975. So an eight-piece
-set does not cut the cube up: what it partitions is the set of cuttings, into the
-8 families of 1975 cuttings that run through each of its pieces.
+The eight-piece sets are rebuilt and gated here as what an earlier cycle of this
+lane already showed them to be: each of the 192 is a set of eight pieces no two of
+which share a cutting, and each of them meets every one of the 15800 cuttings
+exactly once, which gives both double-counts at once, 192 = 24 times 8 and
+15800 = 8 times 1975. None of that is new here, and that cycle also derived it
+rather than measuring it. What is worth saying plainly alongside it is what the
+property does and does not mean: such a set does not cut the cube up, and what it
+partitions is the set of cuttings, into the 8 families of 1975 cuttings that run
+through each of its pieces.
 
 The numbers 105 and 87 that say how much of the piece space those sets see are
 arithmetic facts about this one finite object and not consequences of its
@@ -50,8 +53,10 @@ quadratic families and one cubic family, by a certificate that leaves nothing ou
 Earlier cycles of this lane measured all of the following, and none of it is
 claimed here. The maps got by permuting the four coordinates of the four-cube and
 flipping any of them number 384 and are the complete symmetry of the system, and
-they are transitive on the 192 pieces. The eight-set-by-piece table has rank 105
-and nullity 87. The spectrum of its Gram has 136 whole values and 56 that are not
+they are transitive on the 192 pieces. Each eight-piece set meets every one of the
+15800 cuttings exactly once, and an earlier cycle derived that rather than
+measuring it, from 15800 being 8 times 1975. The eight-set-by-piece table has
+rank 105 and nullity 87. The spectrum of its Gram has 136 whole values and 56 that are not
 whole. The counts of pieces shared between two of the sets are regular, and the
 matrices built
 from them do not have products staying inside their own span. Those results belong

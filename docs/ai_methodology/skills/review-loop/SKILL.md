@@ -114,6 +114,7 @@ and do not bound the row on that basis; audit only any averaging, typicality
 or genericity predicate, weighting, or state-contingent value actually
 claimed.
 
+<!-- BEGIN GENERATED: axiom-baseline (generate_skill_axiom_baselines.py) -->
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
 axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
 lattice with nearest-neighbor adjacency, standard translations, and proper
@@ -122,31 +123,28 @@ distinguished by the supplied lattice structure alone. Qubit is the domain of
 local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
 `Cl(3,0)` is equivalent notation, not extra primitive structure, and no
 possibility is privileged; possibilities are distinguished by the supplied
-algebraic structure alone.
-Admissibility is one fixed finite-neighborhood rule, the same at every lattice
-translate; for each site, the probability distribution over the possibilities
-is determined by, and varies with, the nearest-neighbor conditions;
-availability is its support. A
-record, when present, locks exactly one admissible local possibility. A site
-never carries more than one record; records are permanent. Only records are
-readable; a readout value is
-determined by record content alone;
-finite scalar readout is additive over finite pairwise-disjoint record
-collections. A state is a configuration of records. A law privileges no states:
-its domain is a supplied condition, and where that condition holds it gives
-exactly one answer. Additional
-structures such as readout-context selection, decomposition, `K`/CPT
+algebraic structure alone. Admissibility is one fixed finite-neighborhood rule,
+the same at every lattice translate; for each site, the probability
+distribution over the possibilities is determined by, and varies with, the
+nearest-neighbor conditions; availability is its support. A record, when
+present, locks exactly one admissible local possibility. A site never carries
+more than one record; records are permanent. Only records are readable; a
+readout value is determined by record content alone; finite scalar readout is
+additive over finite pairwise-disjoint record collections. A state is a
+configuration of records. A law privileges no states: its domain is a supplied
+condition, and where that condition holds it gives exactly one answer.
+Additional structures such as readout-context selection, decomposition, `K`/CPT
 structure, sector-generation rules, specific probability-distribution values,
 measurement/decoherence dynamics, record-production dynamics, physical
-persistence dynamics, formation-site and formation-rate rules, update laws, time metric,
-within-sector data, occupancy rules, P2/modulus, log-det readouts,
+persistence dynamics, formation-site and formation-rate rules, update laws,
+time metric, within-sector data, occupancy rules, P2/modulus, log-det readouts,
 source/action bridges, scale, local observability, law-admissibility or
 transition relations, kinetic-branch selection, or arbitrary observable
 identification remain compatible downstream targets, but require derivation,
-bridge, or approved primitive registration before use as
-load-bearing content. Do not
-land new science under bare letter-number names such as `A1`, `A2`, `G1`,
-or `R3`; those labels are overloaded with axioms, assumptions, Lie
+bridge, or approved primitive registration before use as load-bearing content.
+<!-- END GENERATED -->
+Do not land new science under bare letter-number names such as `A1`, `A2`,
+`G1`, or `R3`; those labels are overloaded with axioms, assumptions, Lie
 types, lane stages, route codes, and branch blocks. Use the explicit
 scientific name on live science surfaces; archival aliases belong
 only in clearly historical work-history/archive material. Review-loop must

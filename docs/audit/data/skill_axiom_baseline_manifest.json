@@ -1,0 +1,101 @@
+{
+ "axiom_roster": [
+  "Lattice",
+  "Qubit",
+  "Admissibility",
+  "Record"
+ ],
+ "axioms_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+ "generator": "docs/audit/scripts/generate_skill_axiom_baselines.py",
+ "primitive_roster": [
+  "scale_reference_primitive",
+  "kinetic_isotropy_primitive",
+  "realized_state_primitive"
+ ],
+ "schema_version": 1,
+ "sources": {
+  "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+   "sections": {
+    "Audit-Pipeline Treatment": "1675192b0825",
+    "Dependencies": "558201f7c8a5",
+    "What This Declares": "dd991444447f",
+    "What This Does Not Do": "e8d8fe1542d7",
+    "Why It Is A Primitive": "8a73f8e23402"
+   },
+   "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+   "sections": {
+    "Admissibility / Local Constraint": "adfd9a423aec",
+    "Audit-Pipeline Treatment": "10321a931853",
+    "Historical Context": "155ad0d819c4",
+    "Lattice / Physical Locality": "049996af50c4",
+    "Open Gates Outside The Axioms": "31d6f96cb840",
+    "Purpose": "37c8746f6b31",
+    "Qualification": "3ee115daf95e",
+    "Qubit / Site Possibility": "08c620aa728b",
+    "Record / Fixed Reality": "ef0944d3b2cf",
+    "Relation To Dynamics And Kinetic Branch Selection": "1cf2c6a2467b",
+    "Relation To The 2026-06-05 Record Wording": "59ac17e9dfd7",
+    "Relation To The Older Observable-Principle Parent": "7a47f4abd7ed",
+    "The Four Framework Axioms": "e3b0c44298fc"
+   },
+   "sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+  },
+  "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+   "sections": {
+    "Audit-Pipeline Treatment": "934aab43c9a8",
+    "Informative State-Contingency Register": "6386ed5e7192",
+    "The Primitive": "a5008574d128",
+    "What This Declares": "a1510e13bd22",
+    "What This Does Not Do": "3e33f7bf7272",
+    "Why It Is A Primitive": "79a05a9355d5"
+   },
+   "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+  },
+  "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+   "sections": {
+    "Audit-Pipeline Treatment": "f206457b6cc4",
+    "What This Declares": "235dc03c83ac",
+    "What This Does Not Do": "256a02da8e4b",
+    "Why It Is A Primitive": "b940a07b0d7c"
+   },
+   "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+  },
+  "docs/audit/data/axiom_premise_nodes.json": {
+   "sha256": "56fde9133eb35f4c5ad8c38829904737771242d7c0188b55b7c03b4d6eb9b535"
+  }
+ },
+ "targets": {
+  "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+   "block_lines": 23,
+   "block_sha256": "57adf0ad6312f5c5002e56cd2fcbf4814f3b6c9549b84e7bf67be114c0b01baf",
+   "roster_scope": [
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive"
+   ]
+  },
+  "docs/ai_methodology/skills/audit-loop/SKILL.md": {
+   "block_lines": 33,
+   "block_sha256": "52085a6afe368a6d1883474e998fbc5dbd6f022360fc8534237a184a9ae8baa9",
+   "roster_scope": [
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive"
+   ]
+  },
+  "docs/ai_methodology/skills/physics-loop/SKILL.md": {
+   "block_lines": 27,
+   "block_sha256": "ca5cfa305da948c025baf78c1790f81352fb1e8523064f48b88bd37e89619dea",
+   "roster_scope": [
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive"
+   ]
+  },
+  "docs/ai_methodology/skills/review-loop/SKILL.md": {
+   "block_lines": 27,
+   "block_sha256": "3095f26a6667a98b3f8cd0c1e6d35f3baa2ac95928572d8ce80a650c3f631971",
+   "roster_scope": []
+  }
+ }
+}

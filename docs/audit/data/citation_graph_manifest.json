@@ -1,6 +1,6 @@
 {
  "edge_count": 15422,
- "node_count": 4632,
+ "node_count": 5416,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6801,6 +6801,3142 @@
   "higher_symmetry_joint_validation_note": {
    "deps_hash": "da713f94f8ad",
    "out_degree": 1
+  },
+  "historic_intake.historic_2026_04_07_frontier_map_update_3_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_a2_two_sided_inverse_proviso_fails_on_finite_covariant_lattices_and_covariance_repairs_it_bounded_theorem_note_2026_07_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_abj_from_framework_action_u1_cubic_theorem_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_abj_scale_free_chiral_u1_trace_surface_theorem_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_abj_staggered_epsilon_not_spacetime_gamma5_boundary_note_2026_06_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_activity_information_bound_bounded_note_2026_07_09_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_admission_floor_unification_synthesis_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_adversarial_chain_audit_2026_04_13_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_adversarial_verification_chirality_chain_3316_3317_3320_note_2026_06_09_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_aft_closure_plan_2026_05_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_alpha_em_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_alpha_s_self_consistency_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_antimatter_gravitational_mass_from_cpt_even_recorded_energy_prediction_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_apbc_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_approved_primitive_axiom_absorption_current_surface_negative_note_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_asymmetric_decoherence_2026_03_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_atlas_issues_flagged_during_koide_review_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_atomic_rydberg_gate_factorization_fanout_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_autonomous_loop_nature_grade_review_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_autonomous_loop_retained_science_package_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_axiom_conversation_dossier_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_b4_clock_relation_run_cycle879_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_b7_exhaustive_anchor_cycle779_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_barrier_identification_tested_cycle893_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_baryogenesis_jarlskog_factorization_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_baryogenesis_old_route_surface_negative_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_baryogenesis_single_history_composition_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_baryogenesis_source_damping_balance_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_baryogenesis_source_pullback_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_beta6_plaquette_campaign_synthesis_capstone_frontier_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_beta6_rho_pq6_selection_new_physics_frontier_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_beyond_finite_support_gravity_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_blm_scale_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_block03_pack_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_born_quantum_record_unconditional_form_vs_operational_residual_note_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_born_rule_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_boundary_law_finite_size_asymptote_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_bounded_native_gauge_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_bridge1_gauge_algebra_forced_gauging_selection_admitted_negative_note_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_bridge_cashing_scope_negative_cycle935_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_bridge_gap_exhausted_routes_consolidation_note_2026_05_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_bridge_gap_new_physics_opening_note_2026_05_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_broad_gravity_unified_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_c3_cyclic_action_bz_corners_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cabibbo_jarlskog_prediction_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_campaign_report_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_canonical_model_pair_cycle789_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_car_bell_input_physical_m2_compiler_cycle721_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cc_factor15_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_character_intertwiner_foam_law_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_charged_lepton_curvature_lt_extension_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_charged_lepton_koide_cone_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_charged_lepton_koide_g5_status_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_charged_lepton_mass_hierarchy_from_hw1_observable_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_charged_lepton_radiative_yukawa_theorem_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_checkpoint_refusal_law_cycle781_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_chiral_completion_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_chirality_gate_import_characterization_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_chronology_import_classification_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_chronology_operator_algebra_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ci3_z3_publication_retain_audit_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_absolute_s23_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_alpha_s_independent_structural_ratios_theorem_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_clean_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_doubled_angle_cp_nlo_shift_pattern_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_dual_bridge_identity_theorem_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_final_assessment_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_flagship_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_higgs_from_vev_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_higgs_z3_universal_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_jarlskog_diagnosis_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_magnitudes_structural_counts_dimension_uniqueness_support_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_magnitudes_vus_power_tower_bridge_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_radiative_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ckm_unitarity_triangle_right_angle_theorem_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cl3_minimality_conditional_support_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cl3_n_color_equals_n_gen_shared_d3_origin_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cl4c_carrier_axiom_consequence_map_note_2026_04_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10141_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10143_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10152_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10155_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10156_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10161_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10175_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10183_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10254_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10285_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10305_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10307_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10309_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10315_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10327_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10360_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10361_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10442_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10450_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10451_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10471_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10577_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10612_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10618_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10625_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10671_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10750_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10834_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10875_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b10876_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11200_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11207_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11209_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11218_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11229_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11409_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11448_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11469_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_b11507_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_block03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_claim_status_certificate_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cluster_cap_evaluation_b09_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_codex_review_packet_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_codex_yt_response_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_collins_matter_geometric_cone_surface_resolution_note_2026_06_09_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_color_generation_bridge_negative_note_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_common_frame_pair_generator_exchange_class_bounded_theorem_note_2026_07_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_compact_dobrushin_subwedge_separated_point_ultralocal_continuum_boundary_bounded_theorem_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_complete_derivation_chain_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_complete_discovery_scorecard_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_composite_mass_energy_equivalence_static_comparator_negative_note_2026_07_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_composition_local_tomography_separation_foundations_writeup_note_2026_06_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_conformal_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_conformal_metric_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_continuous_gauge_dynamics_admission_map_note_2026_06_07_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_continuum_limit_2026_03_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_corrected_propagator_2026_03_31_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cosmological_constant_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_coupled_os_interior_descent_subsequential_infinite_time_transfer_bounded_theorem_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_critical_gaps_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cross_sector_a_squared_koide_vcb_bridge_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cube_shift_polynomial_algebra_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cubic_invariant_rank_two_isotropy_narrow_theorem_note_2026_05_10_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cubic_monopole_reduction_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cubical_quotient_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cycle713_value_negative_and_cluster_cap_gates_2026_07_27_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_cycle_1_to_10_synthesis_note_2026_04_19_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dark_matter_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_decoherence_arc_2026_03_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_definitive_audit_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_delta_spectrum_falsified_alignment_law_cycle889_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_deposition_reproduced_floor_grid_artifact_cycle920_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_derivation_chain_consolidation_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_derived_science_readme_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_derived_time_axis_is_the_thermodynamic_arrow_orientation_is_the_past_hypothesis_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_diagonal_sqrt2_synthesis_verdict_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_diagonal_thinking_synthesis_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dial_occupancy_irreducibility_note_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dimensional_scaling_law_2026_04_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_discrete_dtn_shell_kernel_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dispersion_running_exponent_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_distance_law_64_frozen_control_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_distinctive_predictions_roadmap_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_distributed_source_spacetime_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_axiom_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_blocker_3_deep_impossibility_triangulation_theorem_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_boltzmann_theorem_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_case3_spectral_flow_nonlocal_index_obstructed_route_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_clean_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_closure_assessment_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_consolidated_status_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_coulomb_from_lattice_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_eta_freezeout_bypass_adversarial_review_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_flagship_path_a_sylvester_branch_theorem_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_friedmann_from_newton_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_graph_native_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_invariant_bridge_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_k_independence_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_koide_cross_hw_shared_bottleneck_scout_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_leptogenesis_full_theorem_closure_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_leptogenesis_pmns_certified_global_selector_theorem_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_leptogenesis_pmns_full_closure_selector_theorem_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_leptogenesis_pmns_minimum_information_current_baseline_non_entailment_negative_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_leptogenesis_pmns_ne_selector_closure_authority_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_leptogenesis_pmns_observation_free_normalization_boundary_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_neutrino_source_surface_z3_doublet_phase_chart_scout_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_neutrino_source_surface_zero_import_active_quadratic_selector_theorem_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_neutrino_yukawa_blocker_note_2026_04_14_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_nucleation_finding_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_theorem_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_quantitative_mapping_normalization_closure_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_r_sensitivity_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_relic_bridge_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_stosszahlansatz_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_thermodynamic_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_dm_wild_ratio_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_durable_record_formation_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_echo_prediction_resolved_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_einselection_arrow_r_half_stability_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_einselection_hostile_continuum_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_electromagnetism_probe_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_electron_mass_blockage_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_emergent_c3_coupling_scale_predictability_sieve_window_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_emergent_lorentz_gamma_sufficiency_threshold_negative_note_2026_06_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_emergent_lorentz_os0_b4_marginal_velocity_replacement_bridge_2026_06_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_emergent_time_axis_generically_forced_reduces_to_record_formation_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_energy_field_derivation_synthesis_owner_surface_2026_07_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_erratum_weak_field_rival_action_formula_is_misstated_in_probe_p4_note_2026_07_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_eta_spectral_flow_boundary_filter_negative_note_2026_06_07_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ew_kappa_is_axiom_boundary_admission_negative_note_2026_06_09_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ewpt_gauge_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ewsb_existence_from_durability_but_not_the_scale_bounded_support_and_wall_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ewsb_generation_cascade_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ex1_assumptions_ledger_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ex4_math_sector_search_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ex5_reframing_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_exact_two_particle_product_law_frontier_note_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_existing_gauge_universality_search_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_experimental_predictions_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_final_state_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_finite_bx_low_carrier_negative_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_finite_factorized_hilbert_physical_selector_nonuniqueness_negative_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_finite_rank_gravity_residual_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_finite_rank_lambda_bypass_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_finite_zero_set_primitive_b_z2_scouting_report_2026_06_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_first_nondisk_character_foam_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_avev_forcing_capstone_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_block_count_pin_capstone_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_chiral_import_verdict_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_cross_sector_koide_check_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_fermion_vacuum_no_selection_capstone_note_2026_05_29_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_full_operator_nonperturbative_value_note_2026_05_29_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_joint_commutant_no_escape_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_p1_koide_additive_multiplicative_unification_2026_06_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_panel_heat_kernel_verdict_note_2026_05_29_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_readout_context_is_the_derivable_decoherence_pointer_basis_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_reality_reflection_20physicist_spotcheck_note_2026_05_29_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_route2_verdict_and_corrections_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_translation_breaking_reframing_note_2026_05_29_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_two_paths_verdict_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_value_final_status_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flavor_yukawa_diag_offdiag_consolidation_note_2026_05_29_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_flux_fixed_matching_decomposition_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_fourth_axiom_relocation_negative_or_loophole_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_framework_synthesis_2026_04_19_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_framework_three_sector_dimension_color_quadratic_identity_support_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_framework_vs_standard_qm_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_free_field_wightman_reconstruction_antiparticle_narrow_theorem_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_free_staggered_2point_smeared_convergence_bounded_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_frozen_stars_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_fs_boost_covariance_is_blind_to_the_fermionic_datum_link_c_sharpening_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_full_claim_ledger_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_full_generality_nonlinear_gr_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_full_test_matrix_2026_04_10_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_fundamental_disk_activity_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_omnibus_closure_review_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_path_a_information_geometric_selector_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_physicist_g_microscopic_axiom_level_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_physicist_i_bifundamental_invariance_theorem_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_physicist_j_perturbative_uniqueness_tightening_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_physicist_k_theta23_upper_octant_prediction_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g1_physics_validation_eta_at_candidates_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g2_equal_partition_bounded_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g5_gamma_1_second_order_return_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g5_joint_pmns_koide_pinning_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g5_observational_pin_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g5_s2_breaking_primitive_survey_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_g_bare_self_duality_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gate_2_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gate_5_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_plaquette_source_negative_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_universality_algebraic_derivation_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_beta6_identity_rim_finite_moment_packet_reduction_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_bridge_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_finite_sample_packet_nonclosure_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_first_propagated_retained_triple_minimality_current_bank_negative_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_parent_compression_theorem_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_residual_environment_geometry_dependence_negative_note_2026_07_10_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gauge_vacuum_plaquette_temporal_gauge_mixed_kernel_factorization_bridge_theorem_note_2026_05_10_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_general_b_discharge_cycle827_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_general_n_census_law_cycle870_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_anomaly_forces_three_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_anomaly_obstructed_route_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_axiom_boundary_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_fermi_point_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_ktheory_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_little_groups_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_physicality_obstructed_route_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generation_physicality_paper_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_generic_finite_support_schur_bridge_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_geodesic_clean_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_graph_canonical_rh_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_graviton_mass_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gravity_chain_closure_season_synthesis_2026_07_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gravity_poisson_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gravity_sub_bundle_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gstar_reconciliation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gw150914_echo_search_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_gw_echo_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hadamard_s3_composition_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hadron_lane1_chiral_condensate_banks_casher_scoping_note_2026_04_27_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hadron_lane1_workstream_closeout_note_2026_04_27_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hamming_distance_selection_rule_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_handoff_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hawking_analog_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hawking_sign_diagnosis_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hidden_two_shell_channel_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_delta0_b4_attachment_nonderivability_negative_portfolio_note_2026_06_13_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_delta0_b4_bare_class_magnitude_ceiling_theorem_note_2026_06_13_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_delta0_b4_free_energy_lnz_readout_probe_note_2026_06_13_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_delta0_b4_njl_rpa_normalization_probe_note_2026_06_13_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_exponent16_chirality_forced_doubler_negative_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_finite_lt_interpolation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_h1_beta_six_from_cl3_axiom_note_2026_05_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_h1_route_1_status_correction_note_2026_05_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_h1_route_1b_mc_and_drouffe_itzykson_note_2026_05_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_honest_review_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_no_import_status_note_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_order_parameter_attack_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_prefactor_derivation_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_ratio_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_why_226_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hierarchy_z4_spinor_selector_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_higgs_vacuum_promoted_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_honest_frontier_state_2026_05_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026_04_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hubble_lane5_c1_stuck_fanout_synthesis_note_2026_04_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hw1_hw2_s3_equivariant_iso_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hw_parity_conservation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hw_projector_algebra_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hydrogen_helium_lattice_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hypercharge_beta_coefficient_structural_closed_form_theorem_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hypercharge_traceless_central_direction_requires_multi_summand_species_bounded_theorem_note_2026_07_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_hypothesis_discharge_cycle823_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_i_s_ntaste_double_count_resolution_note_2026_06_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_identity_discharge_cycle739_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_intake_part2_hazards_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_integrated_physical_endpoint_registration_tournament_synthesis_cycle339_note_2026_07_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_interface_negative_five_weightings_cycle894_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_interference_regime_2026_03_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_intertwiner_pullback_s3_invariants_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_irregular_endogenous_sign_observable_note_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_irregular_sign_g_portability_sweep_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_kasteleyn_thread_conjecture_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_a1_brannen_euclidean_rotation_angle_closure_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_a1_casimir_difference_lemma_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_a1_radian_bridge_irreducibility_theorem_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_anomaly_forced_cross_species_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_brannen_ch_three_gap_closure_note_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_brannen_phase_conjugation_symmetry_boundary_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_brannen_wilson_dsq_quantization_theorem_note_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_carrier_bit_count_is_two_on_retained_one_modulo_audit_note_2026_06_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_color_sector_correction_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_delta_2_over_9_rad_review_response_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_delta_current_endpoint_class_exhaustion_negative_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_emergent_time_eta_conjugation_parity_narrow_theorem_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_equivariant_berry_aps_selector_theorem_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_first_order_section_tie_vs_outcome_label_bounded_residual_note_2026_07_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_gamma_orbit_semigroup_basin_transfer_negative_theorem_note_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_generation_hermitian_not_kahler_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_graph_braid_exchange_eta_holonomy_decoupling_narrow_negative_note_2026_06_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_higgs_dressed_basin_transfer_negative_theorem_note_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_higgs_dressed_transport_susceptibility_theorem_note_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_holds_iff_recorded_free_pole_mass_confinement_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_iter_21_22_honest_critique_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_kreality_equals_boundary_c3_symmetry_bounded_theorem_note_2026_06_07_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_kreality_predicate_a1_native_delta_distinct_from_chiral_grading_bounded_theorem_note_2026_06_07_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_lane_master_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_loop_stop_criterion_met_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_minimal_positive_principle_packet_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_occupancy_derived_from_possibility_individuation_bounded_note_2026_07_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_one_clock_endpoint_target_theorem_note_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_operational_quotient_descent_nature_review_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_pmns_single_rotation_negative_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_pmns_sum_rules_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_pmns_tbm_from_s3_leading_order_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_primitive_based_readout_universal_property_derivation_negative_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q1_aps_brannen_coefficient_bridge_note_2026_05_31_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q1_physical_orientation_basepoint_probe_note_2026_05_31_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q1_record_quotient_measure_fork_note_2026_05_31_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q_current_retained_source_class_exhaustion_negative_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q_residual_scalar_unification_negative_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q_source_free_closure_nature_review_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q_unconditional_closure_via_q_so2_invariance_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_q_z_sign_zero_section_second20_negative_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_r_half_fork_is_the_dyson_reality_class_charged_lepton_mass_is_symmetric_sharper_obstructed_route_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_r_half_record_native_readout_doublet_counted_once_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_r_rg_invariance_companion_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_residual_atlas_third_reassessment_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_round_2_parallel_attack_results_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_sector_orbit_partition_from_complex_unit_convention_automorphism_narrow_theorem_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_sectoral_universality_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_selected_eigenline_ambient_eta_repair_target_note_2026_06_07_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_selected_line_bare_resolvent_endpoint_boundary_note_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_signed_readout_record_forced_pin_reduces_to_operator_class_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_slot_freedom_classification_under_conjugation_reading_bounded_note_2026_07_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_koide_unconditional_closure_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lane_assignment_derivable_or_input_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lattice_10_of_10_2026_04_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lattice_no_horizon_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lepton_masses_from_pinned_shape_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lepton_shape_imports_frontier_probe_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ligo_analysis_summary_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_literature_anomaly_search_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_local_face_closure_rejection_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lorentz_velocity_rg_coefficient_computed_note_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lorentz_violation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_lorentzian_signature_from_the_record_i_gradient_ontological_route_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_luders_update_from_record_durability_conditional_expectation_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_magnetic_monopoles_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_major_result_2026_05_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_mass_hierarchy_honest_assessment_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_mass_ratio_ckm_dual_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_massive_wilson_staggered_dobrushin_spatial_uniqueness_wedge_bounded_theorem_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_bounded_theorem_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_matter_assignment_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_microscopic_dirichlet_bridge_principle_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_minimal_axiom_inventory_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_minimal_operational_primitive_update_recommendation_2026_07_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_named_record_clock_matcher_refinement_calibration_tournament_synthesis_cycle347_note_2026_07_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_native_nonlocal_selector_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_native_weak_axis_selector_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neff_group_theory_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_discipline_checklist_b10400_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_discipline_checklist_b10498_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_discipline_checklist_b10553_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_discipline_checklist_b10570_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_discipline_checklist_b10695_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_discipline_checklist_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10191_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10213_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10235_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10237_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10241_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10255_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10275_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10289_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10298_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10386_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10388_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10437_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10474_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10490_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10515_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10517_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10523_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10546_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10547_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10578_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10719_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10721_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10747_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10756_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10760_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10770_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10778_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10780_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10782_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10818_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10824_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10826_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10900_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10910_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b10923_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11211_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11215_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11224_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11238_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11248_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11254_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11259_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11451_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11471_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_b11494_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_ledger_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_vsel_wrong_mass_structure_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_negative_yt_sqrt_6_not_derived_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_complex_z3_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_dirac_global_lift_current_axiom_set_theorem_note_2026_04_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_dirac_monomial_no_mixing_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_majorana_minimal_bridge_structural_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_majorana_pure_retained_mu_impossibility_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_majorana_quadratic_pfaffian_uniqueness_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_native_axiom_observable_bounds_theorem_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_post_retained_full_closure_note_2026_04_16_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrino_solar_gap_alpha_lm_squared_candidate_note_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_neutrinoless_double_beta_mbb_prediction_note_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_new_law_proposal_koide_isotype_democracy_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_next_high_impact_directions_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_no_axiom_native_cp_source_rdelta_theta_unforced_coefficients_of_record_forced_action_negative_note_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_no_diagonal_staggered_dirac_einselects_2sector_kreal_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_no_hidden_carrier_symmetry_forbids_lorentz_marginal_negative_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_novelty_literature_search_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_ns_spectral_tilt_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_observable_principle_p1_exponent_selector_dichotomy_narrow_note_2026_06_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_observable_principle_t1d_record_independence_negative_note_2026_06_15_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_octopus_era_claim_registry_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_oh_source_class_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_omega_lambda_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_narrow_negative_note_2026_06_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_operational_premise_gap_map_2026_07_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_orientation_sign_conjugation_selector_class_is_empty_absolute_sign_is_convention_narrow_negative_note_2026_06_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_os_g2_boost_poincare_representation_rederived_on_framework_cl31_not_an_import_narrow_bounded_note_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pair_correlation_adjacency_confinement_additive_readout_connected_zero_star_comparator_bounded_note_2026_07_13_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_panel_reversal_2026_05_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_panel_verdict_2026_05_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_periodic_torus_audit_shapiro_delay_fix_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_perron_frobenius_current_bank_full_frontier_closure_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_perron_frobenius_selection_axiom_boundary_note_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_perron_frobenius_step2_wilson_local_nilpotent_charpoly_certificate_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_perron_frobenius_wilson_current_bank_complete_closure_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_phase1_pipeline_gap_analysis_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_phase1_prose_ledger_divergence_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_phase1_registry_integrity_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_phase_valley_distance_law_universality_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_actual_member_admitted_history_law_tournament_held_cycle508_note_2026_07_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_adjacent_two_star_seam_tag_preservation_cycle519_note_2026_07_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_block_cost_interval_lift_obstructed_route_cycle729_note_2026_08_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_born_support_nine_mixed_quotient_auxiliary_cycle478_note_2026_07_19_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_column_family_parity_law_forced_orbits_cycle733_note_2026_08_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_cost_identity_indicator_certificate_cycle731_note_2026_08_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_cycle515_koszul_frame_bridge_cycle516_note_2026_07_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_cycle664_branch_identity_correction_cycle673_note_2026_07_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_directional_q1_recoil_source_current_train_cycle506_note_2026_07_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_finite_range_law_tournament_cycle703_note_2026_08_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_frame_covariant_effect_identity_tournament_cycle408_note_2026_07_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_least_cost_cutting_flip_and_move_ladder_cycle734_note_2026_08_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_least_cost_cutting_piece_charge_cycle735_note_2026_08_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_local_bond_character_ab_science_train_cycle509_note_2026_07_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_moving_carrier_phase_field_finite_restriction_cycle676_note_2026_07_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_orbit_averaged_all24_carrier_cycle701_note_2026_08_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_parity_certificate_cost_spectrum_cycle732_note_2026_08_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_poisson_susceptibility_direction_repair_cycle694_note_2026_07_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_quantum_source_density_interface_tournament_cycle473_note_2026_07_19_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_readout_position_scale_limits_and_forced_local_law_cycle697_note_2026_07_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_relational_frame_compression_isometry_cycle556_note_2026_07_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_reversible_cubic_relaxation_clock_compiler_cycle463_note_2026_07_19_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_reversible_puncture_branch_retirement_cycle550_note_2026_07_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_route_c_q6_symbolic_axis_diagnostic_cycle514_note_2026_07_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_scale_free_adjacency_dissection_bracket_cycle724_note_2026_08_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_selected_record_joint_operand_corridors_cycle677_note_2026_07_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_source_profile_dual_echo_rollover_cycle507_final_note_2026_07_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_state_carried_event_chain_sequence_protocol_cycle669_note_2026_07_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_terminal_menu_member_law_tournament_cycle493_note_2026_07_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_tick_extensive_adjacency_bracket_cycle727_note_2026_08_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_physical_unchanged_torus_cap_homology_discriminator_cycle637_note_2026_07_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_bh_from_wald_noether_framework_derivation_theorem_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_gravity_boundary_car_vacuum_derivation_theorem_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_only_framework_input_framing_note_2026_05_27_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_action_phase_representation_hbar_theorem_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_airtight_review_closure_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_atomic_naturality_from_primitive_universality_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_axiom_only_gravity_unit_map_final_audit_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_bare_finite_cell_canonical_state_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_bare_gravity_sector_uniqueness_attempt_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_bare_physical_lattice_observable_ontology_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_boundary_action_source_vs_pressure_classification_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_boundary_vacuum_reference_exhaustion_lane_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_event_frame_no_information_state_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_exotic_nonlocal_holonomy_lane_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_gravity_action_scale_ray_negative_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_gravity_sector_same_surface_closure_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_nature_review_plain_language_status_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_one_axiom_extension_acceptance_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_overnight_closure_status_theorem_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_parent_source_discharge_after_realification_theorem_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_projector_valued_observable_principle_lane_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_reviewer_canonical_submission_packet_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_source_free_cell_state_retained_derivation_lane_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_universal_primitive_counting_trace_theorem_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_scale_worldtube_to_boundary_cell_counting_theorem_lane_2026_04_23_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_source_unit_normalization_clean_theorem_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_target3_cubic_bivector_schur_source_principle_theorem_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_target3_relaxed_wu_support_audit_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_planck_target3_synthesis_unconditional_closure_theorem_note_2026_04_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_plaquette_analytic_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_plaquette_first_nonlocal_connected_correction_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_plaquette_open_surface_hierarchy_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_branch_hermitian_data_law_attempt_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_ewsb_residual_z2_hermitian_core_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_graph_first_fixed_slice_scalar_production_discriminant_note_2026_04_18_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_local_scalar_deformation_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_microscopic_delta_d_generic_underdetermination_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_microscopic_delta_d_seed_law_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_projected_cycle_response_source_principle_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_right_frame_orbit_obstructed_route_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_schur_source_law_reduction_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_selector_closure_theorem_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_selector_iter4_operator_commutation_mixed_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_selector_iter5_delta_qplus_eq_q_hypothesis_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_selector_iter7_symbolic_det_h_derivation_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_single_axiom_microscopic_nonclosure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pmns_trimaximal_partition_is_kcpt_orbit_axiom_direct_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pointer_principle_grounded_in_emergent_time_decoherence_flavor_sieve_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_poisson_operator_preference_is_correct_and_its_own_diagnostic_is_inverted_repair_note_2026_07_27_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_poisson_self_bound_source_exists_and_the_family_separates_on_binding_energy_bounded_theorem_note_2026_07_27_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_poisson_self_consistency_both_operator_discriminators_are_artifacts_on_the_tested_construction_demotion_note_2026_07_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_poisson_self_consistent_beta_has_no_far_field_to_extrapolate_demotion_note_2026_07_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_poisson_uniqueness_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_poissonized_occupation_intertwiner_compression_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_polarization_dark_angle_negative_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_polarization_weight1_lift_family_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_post_axiom_adoption_remaining_hard_gate_route_map_2026_06_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pr_body_block01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pr_body_block04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_pr_body_block10_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_proton_decay_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_publication_card_final_2026_04_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_q1_holomorphy_chirality_double_unlock_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_q1_holomorphy_sector_dependence_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_quark_mass_ratios_taste_staircase_theorem_note_2026_04_25_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_quark_route2_physical_jcr_typing_negative_2026_06_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_readme_b2748_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_readme_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_recipe_r_forcing_from_retained_n3_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_record_axiom_pta_dial_stability_multilane_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_record_minimum_information_interlock_r_half_derivation_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_record_registration_filters_s3_breaking_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026_08_03_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_reduced_whole_shell_stress_law_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_renormalized_yt_paper_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_renormalized_yt_wildcard_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_resume_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_reviewer_closure_loop_evening_4_21_final_summary_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_reviewer_closure_loop_iter15_v0_narrowed_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_reviewer_closure_loop_iter5_n1_is_bottleneck_note_2026_04_21_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_reviewer_summary_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_right_handed_sector_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_rooted_3chain_coefficient_engine_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_rp3_vs_s3_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_axiom_boundary_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_compactification_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_compactification_wildcard_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_flagship_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_shellability_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_spectral_fingerprint_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_time_new_primitive_build_memo_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_s3_topology_blocker_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_scale_axis_planck_anchor_selfconsistency_scoping_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_scale_axis_topmass_hostile_probe_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_science_3plus1_line_law_review_note_2026_04_20_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_scoreboard_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_screening_fix_recheck_list_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_session_close_2026_03_31_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_sigma1_exact_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_slavnov_taylor_completion_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_sommerfeld_lattice_greens_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_sorkin_fixed_dag_2026_03_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_sphaleron_magnetic_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_staggered_dirac_berezin_signed_measure_probe_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_staggered_force_gauge_non_abelian_lift_theorem_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_staggered_two_body_next_steps_note_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_staggered_x_flux_refinement_note_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_strong_cp_theta_bar_mass_side_is_record_quantized_to_z2_bounded_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_strong_cp_theta_gauge_parity_route_measure_corrected_gate_sharpened_negative_note_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_strong_field_honest_assessment_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_strong_field_regime_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_strong_record_axiom_pt5_hostile_constitutive_overreach_note_2026_06_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_su3_bridge_derivation_candidate_2026_05_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_su3_canonical_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_subgroup_commutant_lattice_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_summary_b10058_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_summary_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_support_renormalized_active_amplitude_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_t_choice_retired_affine_law_cycle895_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_target_integrity_fork_certified_cycle897_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_temporal_structure_derivation_boundary_bounded_note_2026_06_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_tensor_completion_negative_or_extension_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_tensor_universal_kernel_obstructed_route_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_tetragonal_stabilizer_mu_tau_invariance_2026_04_17_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_theta_bar_residual_collapses_into_the_flavor_cp_phase_narrow_note_2026_06_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_theta_dictionary_decay_holds_cycle916_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_theta_g1_4d_carrier_supply_current_surface_negative_note_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_theta_g4_theta_bar_assembly_current_surface_negative_note_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_theta_mass_w2_physical_registrability_stretch_negative_note_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_theta_su3_star_pairwise_reduction_obstructed_route_negative_note_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_time_axis_derived_from_record_ontology_not_dynamics_realist_slip_correction_narrow_theorem_note_2026_06_06_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_toe_framework_campaign_handoff_2026_07_18_cycle411_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_topological_gravity_control_note_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_translation_eigenvalue_bz_corners_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_tritium_beta_effective_mass_prediction_note_2026_04_22_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_two_body_attraction_temporal_robustness_note_2026_04_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_universal_shell_profile_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_up_type_mass_ratio_nni_scoping_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_v_and_masses_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_v_simpler_routes_brainstorm_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_velocity_anisotropy_doubler_artifact_validation_note_2026_06_07_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_visibility_threshold_2026_03_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_w2_mechanism_cycle811_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_w_minus_one_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave1_killcheck_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave1_landed_forcing_state_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave1_wellposedness_killcheck_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave2_breach_target_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave2_defend_ex1_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave2_defend_ex2_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave2_kill_attempt_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wave2_primitive_check_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_weak_field_mass_law_exponent_is_an_integer_forced_by_self_adjointness_sublinear_rival_excluded_bounded_theorem_note_2026_07_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_weinberg_angle_derived_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wigner_mode_low_d_no_ssb_narrow_scope_companion_note_2026_06_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wilson_breaks_everything_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wilson_frozen_source_discriminator_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wilson_two_band_mass_energy_equivalence_identity_note_2026_07_08_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wilson_two_body_finite_size_refutation_note_2026_04_24_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_wilsonian_eft_derivation_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_window_freedom_sized_cycle887_bounded_theorem_note_2026_07_28_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_within_the_supplied_covariant_family_the_a2_bridge_theorem_is_the_onsite_coordination_identity_bounded_theorem_and_route_negative_note_2026_07_26_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yang_mills_mass_gap_fixed_planck_lattice_bounded_note_2026_06_09_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_boundary_resolution_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_bridge_moment_closure_current_axiom_nonselection_negative_note_2026_07_12_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_canonical_higgs_operator_semantic_route_barrier_note_2026_05_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_canonical_oh_premise_stretch_negative_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_color_singlet_zero_mode_removed_ladder_pole_search_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_constructive_uv_bridge_minimal_surface_nonidentifiability_negative_note_2026_07_11_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_crossover_honest_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_direct_pole_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_gauge_response_mixed_scalar_obstructed_route_note_2026_05_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_chunks061_063_complete_l12_checkpoint_note_2026_05_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_common_window_replacement_response_stability_note_2026_05_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_common_window_response_provenance_note_2026_05_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_numba_seed_independence_audit_note_2026_05_02_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_pole_fit_kinematics_gate_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_polefit8x8_chunks061_063_checkpoint_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fh_lsz_polynomial_contact_finite_shell_negative_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_fixed_point_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_framework_seeded_retraction_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_full_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_gauge_crossover_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_gauged_normalization_theorem_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_ir_insensitivity_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_neutral_scalar_primitive_cone_stretch_negative_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_observed_mass_inversion_negative_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_overshoot_diagnosis_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_pr230_global_yt_proof_audit_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_pr230_nonchunk_cycle16_reopen_source_guard_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_pr230_physics_loop_assumption_audit_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_pr230_review_backpressure_pass_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_qfp_insensitivity_theorem_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_retained_bounded_source_measure_audit_package_note_2026_05_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_same_source_w_response_decomposition_theorem_note_2026_05_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_scalar_pole_residue_current_surface_negative_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_scalar_residue_stuck_fanout_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_scheme_independence_theorem_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_schur_compressed_denominator_row_bootstrap_negative_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_source_higgs_unratified_gram_shortcut_negative_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_static_mass_matching_obstructed_route_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_step_scaling_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_theorem_application_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_top_mass_substrate_pin_negative_note_2026_04_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_top_mass_ward_decomp_negative_note_2026_04_30_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_top_w_response_ratio_post_axiom_unit_bypass_bridge_2026_07_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_top_wz_covariance_theorem_import_audit_note_2026_05_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_vacuum_stability_stationarity_negative_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_ward_physical_readout_repair_audit_note_2026_05_01_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_z3_clebsch_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_yt_zero_import_closure_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_z3_cyclic_commutant_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zchi_power_note_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_absolute_charged_lepton_scale_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_alpha0_transport_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_goal_packet_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_branch_mass_map_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_k1_chiral_holomorphic_determinant_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_k1_counting_measure_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_k1_selector_default_exclusion_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_native_zero_section_bridge_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_r_eta_exactness_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_koide_r_eta_physical_matter_state_law_bridge_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_lepton_256_a3_p2_charged_lepton_front_matching_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_lepton_256_a3_p4_direct_noninteger_divisor_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_lepton_256_a3_precision_placement_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_lepton_256_exact_source_singleton_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_lepton_256_readout_measure_discriminator_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_lepton_256_route_triage_2026_07_04_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_physical_electron_mass_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_physical_electron_species_bridge_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_qed_loop_kernel_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_r_lep_thresholds_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_static_source_nr_coulomb_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.historic_zero_import_hydrogen_weak_front_base_current_surface_negative_2026_07_05_intake_note_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.intake_index_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "historic_intake.intake_index_part2_2026-08-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",

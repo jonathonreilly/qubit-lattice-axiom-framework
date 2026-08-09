@@ -437,6 +437,22 @@ def main() -> int:
         },
         "all_certificates_pass": all(ok for _, ok, _ in certificates),
     }
+    checker_payload = {
+        "resolved_total": resolved["comparison_contexts"],
+        "resolved_changed": resolved["changed_comparisons"],
+        "conditioned_configurations": resolved["conditioned_configurations"],
+        "uniform_total": uniform["comparison_contexts"],
+        "uniform_changed": uniform["changed_comparisons"],
+        "construction_succeeded": construction["construction_succeeded"],
+        "gate_word": construction["gate_word"],
+        "distribution_neighbor_0": construction["distribution_neighbor_0"],
+        "distribution_neighbor_1": construction["distribution_neighbor_1"],
+        "state_mutated_on_neighbor_1": construction["state_mutated_on_neighbor_1"],
+        "price_route": priced["route"],
+        "price_delta": priced.get("delta", {}),
+        "axiom_ledger_entries": len(priced.get("axiom_ledger", {})),
+        "primitive_ledger_entries": len(priced.get("primitive_ledger", {})),
+    }
 
     lines = [
         "=" * 78,
@@ -447,6 +463,7 @@ def main() -> int:
         f"{'PASS' if ok else 'FAIL'} {name} :: {finding}"
         for name, ok, finding in certificates
     )
+    lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
     lines.append(
         "VERDICT: "
         + (

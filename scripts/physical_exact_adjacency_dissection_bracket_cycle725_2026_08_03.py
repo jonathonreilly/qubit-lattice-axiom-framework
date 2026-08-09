@@ -28,11 +28,13 @@ as integer multiplier vectors and checked directly, the attaining families are c
 as piece lists and checked to be genuine dissections, and the parity statement is
 derived in-runner by elimination over the two-element field.
 
-The negative-flavoured gates are scoped narrowly by design.  The single-orbit gate
-quantifies over the 114 point-orbits of the carried invariant sample family only; the
-strengthening gate tests five representative certificates only; the coarse-parity
-gate shows only that THIS incidence-plus-volume certificate family does not extend
-past the minimal pieces.  None of them is a universal negative.
+The negative-flavoured gates are scoped narrowly by design.  The single-orbit gates
+quantify over the 114 point-orbits of each of the two carried invariant sample
+families only (best single-orbit bound 84 on each; 108 is reached only by the joint
+eight-orbit halves certificate); the strengthening gate tests all nineteen carried
+certificates and no others; the coarse-parity gates show only that THIS
+incidence-plus-volume certificate family does not extend past the minimal pieces,
+on both carried sample families.  None of them is a universal negative.
 
 Soundness of the sample-point device: a dissection covers every interior point of the
 box exactly once, so every dissection is one of the families that cover the sample
@@ -350,7 +352,7 @@ gate("denominator law on the all-piece bracket",
          " ".join(str(x) for x in lad["fup"][0])))
 
 bump = []
-for k in ("min108", "min128", "mlo6", "flo6", "fup6"):
+for k in sorted(CE):
     u, Z, D, full, up = CE[k]
     step = -1 if up else 1
     hit = 0
@@ -360,9 +362,13 @@ for k in ("min108", "min128", "mlo6", "flo6", "fup6"):
         if int(slack(uu, Z, D, full, up).min()) < 0:
             hit += 1
     bump.append(hit == K and int(slack(u, Z + step, D, full, up).min()) < 0)
-gate("five representative bounds refuse strengthening", all(bump) and len(bump) == 5,
-     "all 114 orbit bumps and the uniform bump refuted for the five tested "
-     "certificates; the other fourteen carried certificates are untested here")
+fwb = (ss[:, None] - INA[MIN].astype(np.int64)).min(axis=0)
+fwall = bool((fwb < 0).all()) and int((ss - 1).min()) < 0
+gate("every carried bound refuses unit strengthening",
+     all(bump) and len(bump) == 18 and fwall,
+     "all 114 orbit bumps and the uniform bump refuted for the 18 invariant "
+     "certificates; all 2672 piece bumps and the uniform bump refuted for the "
+     "fixed-weight certificate")
 
 
 def cap(m, w):
@@ -384,8 +390,63 @@ def cap(m, w):
 one = max(cap(BO[MIN, o], WM) for o in range(K))
 gate("no single carried orbit certifies the minimum",
      one == 84 and one < 108 and named["min108"][2] == 8,
-     "best of the 114 carried orbits {0}, below 108; eight carried orbits reach it; "
-     "other sample families untested".format(one))
+     "best single-orbit bound {0}, below 108; the halves certificate reaches 108 "
+     "only by combining eight orbits".format(one))
+
+WC = np.array([107, 223, 311, 409, 521], dtype=np.int64)
+SC = int(WC.sum())
+base2 = (WC[None, :, None] * V[MIN][oreps]).sum(axis=1)
+pts2 = {tuple(x) for x in base2.tolist()}
+for R in ROT:
+    for x in base2:
+        pts2.add(tuple(((x * 2 - SC * ctr) @ R.T + SC * ctr) // 2))
+PC = np.array(sorted(pts2), dtype=np.int64)
+pos2 = {tuple(x): i for i, x in enumerate(PC.tolist())}
+img2 = np.array([[pos2[tuple(((x * 2 - SC * ctr) @ R.T + SC * ctr) // 2)]
+                  for x in PC] for R in ROT], dtype=np.int64)
+porb2 = -np.ones(len(PC), dtype=np.int64)
+lab2 = 0
+for i in range(len(PC)):
+    if porb2[i] < 0:
+        porb2[np.unique(img2[:, i])] = lab2
+        lab2 += 1
+psz2 = sorted({int((porb2 == o).sum()) for o in range(lab2)})
+INC, faceC = member(PC, SC)
+gate("a second pinned sample family is sound",
+     len(PC) == 2736 and lab2 == 114 and psz2 == [24] and faceC == 0
+     and bool(INC.any(axis=0).all()),
+     "2736 points in 114 orbits of size 24, zero boundary incidences, every "
+     "point used")
+BO2 = np.zeros((n, lab2), dtype=np.int64)
+for o in range(lab2):
+    BO2[:, o] = INC[:, porb2 == o].sum(axis=1)
+two = max(cap(BO2[MIN, o], WM) for o in range(lab2))
+gate("no single second-family orbit reaches the floor",
+     two == 84 and two < 108,
+     "best of its 114 carried orbits {0}, below 108 again".format(two))
+
+okm = True
+nm = 0
+for pm in permutations(range(3)):
+    for sg in product((-1, 1), repeat=3):
+        M3 = np.zeros((3, 3), dtype=np.int64)
+        for i in range(3):
+            M3[i, pm[i]] = sg[i]
+        for tk in (1, -1):
+            RS = np.zeros((4, 4), dtype=np.int64)
+            RS[:3, :3] = M3
+            RS[3, 3] = tk
+            nm += 1
+            im = ((V.reshape(-1, 4) * 2 - ctr) @ RS.T + ctr) // 2
+            im = im.reshape(n, 5, 4)
+            for v in range(n):
+                j = LOOK.get(tuple(sorted(CID[tuple(x)] for x in im[v].tolist())))
+                if j is None or DT[j] != DT[v] or W[j] != W[v]:
+                    okm = False
+                    break
+gate("box symmetries preserve volume and cost", okm and nm == 96,
+     "all 96 signed-permutation maps, tick fixed or reversed, permute the 3008 "
+     "pieces preserving both")
 
 FM = {k: dec(v) for k, v in FAM.items()}
 DIR = np.array([d for d in product(range(-4, 5), repeat=4) if any(d)], dtype=np.int64)
@@ -491,35 +552,43 @@ gate("the parity certificate stops at minimal pieces",
      par["c"][0] == 465 and not par["c"][1][0] and sum(par["c"][1][1:]) == 0,
      "rank 465, cost vector outside this certificate span; no odd coarse "
      "dissection exhibited or excluded")
+MA = (np.concatenate([INA.astype(np.int64), DT[:, None]], axis=1) & 1).astype(np.uint8)
+rA, memA = gf2(MA, targets(W))
+gate("the fixed-weight family shows the same parity gap",
+     rA == 465 and not memA[0] and sum(memA[1:]) == 0,
+     "rank 465 on the fixed-weight family too, cost vector outside the span, "
+     "seven unit cuts refuted")
 
 # No-Go Discipline N5 execution certificate: one line per resolution class,
 # stating honestly what this runner resolves at that granularity for the
 # narrowed negative boundaries.  Classes not exercised say so explicitly.
 for line in (
     "N5_RESOLUTION_CERTIFICATE (rhetoric-resolution sweep for the narrowed "
-    "negative boundaries: single-carried-orbit cap, five-certificate "
-    "strengthening refusals, coarse-parity certificate non-extension)",
-    "per_element: every piece's normalized volume and adjacency cost, every "
-    "certificate component's slack, every witness pair's separating direction, "
-    "and every two-element-field elimination step is computed "
-    "element-by-element in exact integer arithmetic; the only per-element "
-    "negatives asserted are these recounted slacks and refusals",
-    "per_site: the sample device resolves per point -- 2736 invariant points "
-    "plus one fixed-weight point per minimal piece, zero boundary incidences "
-    "against all 3008 pieces, cover-once checked point-by-point for every "
-    "carried family; no negative is asserted about any sample configuration "
-    "other than the two carried pinned recipes",
-    "per_mode: the single-orbit cap is resolved orbit-by-orbit -- each of the "
-    "114 carried point-orbits gets its own exact envelope optimum, best 84 -- "
-    "and the strengthening refusals certificate-by-certificate for the five "
-    "tested certificates (115 refusals each); the other fourteen carried "
-    "certificates are checked and not executed for strengthening (declared "
-    "open)",
+    "negative boundaries: single-carried-orbit cap on two carried families, "
+    "all-nineteen-certificate strengthening refusals, coarse-parity "
+    "certificate non-extension on both sample families)",
+    "per_element: every piece's normalized volume and adjacency cost (and "
+    "their images under all 96 box symmetries), every certificate component's "
+    "slack, every witness pair's separating direction, and every "
+    "two-element-field elimination step is computed element-by-element in "
+    "exact integer arithmetic; the only per-element negatives asserted are "
+    "these recounted slacks and refusals",
+    "per_site: the sample device resolves per point -- two invariant families "
+    "of 2736 points each plus one fixed-weight point per minimal piece, zero "
+    "boundary incidences against all 3008 pieces, cover-once checked "
+    "point-by-point for every carried family; no negative is asserted about "
+    "any sample configuration other than the three carried pinned recipes",
+    "per_mode: the single-orbit cap is resolved orbit-by-orbit on both carried "
+    "invariant families -- each of their 114 point-orbits gets its own exact "
+    "envelope optimum, best 84 on each -- and the strengthening refusals "
+    "certificate-by-certificate for all nineteen carried certificates (115 "
+    "refusals per invariant certificate, 2673 for the fixed-weight one); no "
+    "certificate outside the carried set is addressed",
     "per_block: the two piece classes resolve separately -- minimal-volume "
     "(2672 pieces: parity forced even, bracket 108 to 128) and all-corner "
-    "(3008 pieces: bracket 68 to 128, parity-certificate non-membership only); "
-    "the coarse block carries no dissection-parity negative: no odd-cost "
-    "coarse dissection is exhibited or excluded",
+    "(3008 pieces: bracket 68 to 128, parity-certificate non-membership on "
+    "both sample families only); the coarse block carries no dissection-parity "
+    "negative: no odd-cost coarse dissection is exhibited or excluded",
     "lattice_wide: checked and not executed -- every statement is about one "
     "lattice cell carried through one tick inside the supplied corner-simplex "
     "model; no lattice-wide, multi-cell, multi-tick, or physical-construction "
@@ -575,14 +644,28 @@ RECEIPT = {
         "points_per_piece_range": [int(cnt.min()), int(cnt.max())],
     },
     "single_orbit_cap_carried_family": int(one),
-    "single_orbit_scope": ("the 114 point-orbits of the carried invariant sample "
-                           "family only; other sample families untested"),
-    "local_maximality_scope": ("five representative certificates only; the thirteen "
-                               "other ladder rungs and the fixed-weight certificate "
-                               "are untested"),
-    "parity_scope": ("minimal-piece even parity is proved; over all pieces only THIS "
-                     "incidence-plus-volume certificate family is shown not to "
-                     "extend; no odd coarse dissection exhibited or excluded"),
+    "single_orbit_scope": ("the 114 point-orbits of each of the two carried "
+                           "invariant sample families; the joint eight-orbit "
+                           "halves certificate reaches 108; sample families "
+                           "beyond the carried ones untested"),
+    "second_sample_family": {
+        "points": int(len(PC)),
+        "orbits": int(lab2),
+        "orbit_size": int(psz2[0]),
+        "boundary_incidences": int(faceC),
+        "best_single_orbit_cap": int(two),
+    },
+    "symmetry_sweep": {"maps": int(nm), "volume_and_cost_preserved": bool(okm)},
+    "local_maximality_scope": ("all nineteen carried certificates (eighteen "
+                               "invariant plus the fixed-weight); unit and uniform "
+                               "strengthenings only; certificates outside the "
+                               "carried set are not addressed"),
+    "parity_scope": ("minimal-piece even parity is proved; over all pieces only "
+                     "THIS incidence-plus-volume certificate family is shown not "
+                     "to extend, on both carried sample families; no odd coarse "
+                     "dissection exhibited or excluded"),
+    "parity_gap_fixed_weight_family": {"rank": int(rA),
+                                       "cost_in_span": bool(memA[0])},
     "tight_points": {
         "fixed_weight_floor": int((ss == 0).sum()),
         "invariant_floor": int(named["min108"][3]),
@@ -598,6 +681,11 @@ RECEIPT = {
         "no_go_shipped": False,
         "checklist": "committed N1-N8 record in the note's 'No-Go Discipline "
                      "Gate' section",
+        "n1_marker_contract": "every enumerated N1 route is ATTEMPTED by a "
+                              "bounded in-runner computation; no untested "
+                              "markers remain",
+        "n2_table": "full 15-row pairwise wall-independence table over the six "
+                    "named open walls in the note",
         "n5_certificate": "five resolution lines (per_element/per_site/per_mode/"
                           "per_block/lattice_wide) in this runner's stdout and "
                           "cached stdout",
@@ -628,6 +716,25 @@ RECEIPT = {
                    "lattice_wide) in the primary runner's cached stdout; no"
                    " no_go claim ships and every negative stays priced to its"
                    " carried objects",
+        },
+        {
+            "iteration": 3,
+            "disposition": "CONFIRMATION_FAIL_FIXED",
+            "reviewer": "Sol (confirmation seat)",
+            "date": "2026-08-08",
+            "fix": "brought the N1-N8 record onto the marker contract: every"
+                   " enumerated N1 route is now ATTEMPTED by a bounded"
+                   " in-runner computation (second pinned sample family with"
+                   " best single-orbit cap 84; 96-map box-symmetry"
+                   " volume/cost-preservation sweep; strengthening refusals"
+                   " extended from five to all nineteen carried certificates,"
+                   " retiring the untested-certificate wall; fixed-weight-"
+                   "family all-piece parity elimination repeating the"
+                   " non-membership); N2 replaced by the full 15-row pairwise"
+                   " independence table over the six remaining walls; the"
+                   " 84-versus-108 wording made unambiguous on every surface"
+                   " (84 is the best single-orbit bound, 108 is reached only"
+                   " by the eight-orbit joint certificate)",
         },
     ],
 }

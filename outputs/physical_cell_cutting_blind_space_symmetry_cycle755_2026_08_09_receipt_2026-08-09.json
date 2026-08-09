@@ -1,0 +1,84 @@
+{
+ "cycle": 755,
+ "failures": 0,
+ "gates": 32,
+ "headline": "The piece sharing table of the 15800 least-volume cuttings of the unit four-cube has exact rational rank 88, so the space of piece-weightings no cutting can see has dimension 104. This cycle asks whether the group of 384 symmetries of the whole system singles that space out on its own, and finds it does not. Averaging the products of the trace counts over the group gives 29 for seen with seen, 21 for seen with blind and 33 for blind with blind, and these rebuild the pair-orbit count 104. The middle number is the result: 21 is not zero, so some same-type block appears in both the seen space and the blind space, the blind space is not a sum of whole same-type blocks, and the trace counts of the 384 symmetries do not fix the rank 88. The same 21 is reached a second time by a route sharing none of the first route's machinery: the linear maps commuting with every symmetry span 104 dimensions, such a map carries the blind space into itself exactly when its blind-to-seen block vanishes, and elimination over a prime field on that condition returns rank 21, so exactly 83 of the 104 dimensions preserve the blind space. A first reading of the same probe put that number near 2, since of the 104 pair-orbit matrices spanning the commuting algebra only 2 preserve the blind space on their own and both are already symmetries in the group, the other 102 missing by as much as 12738; that reading confused the failure count of a badly adapted basis with the dimension of a subspace, and the correction is set down in the note rather than dropped. The pair-orbit count 104 is reached three ways, the sharpest being that the group has one orbit on the 192 pieces and a piece stabiliser of order 2 whose other element fixes 16 pieces. One four-for-four exchange has 192 signed images under the group, every one blind against all 15800 cuttings, spanning 60 of the 104 blind dimensions and leaving 44; that span is carried into itself by every symmetry and holds no constant weighting. What reaches the remaining 44 is open. The rank 88 stays measured, not derived; this cycle narrows where a derivation of it could come from.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_BLIND_SPACE_SYMMETRY_CYCLE755_NOTE_2026-08-09.md",
+ "recorded_output": "outputs/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09_cold_2026-08-09.txt",
+ "results": {
+  "gates_weaker_than_they_look_disclosed_in_the_note": {
+   "the_measured_content_of_both": "every averaged product came out a whole number with remainder zero",
+   "the_rebuild_of_104_follows_from_its_premise": true,
+   "the_rebuild_of_33_follows_from_its_premise": true
+  },
+  "not_swept": {
+   "what_reaches_the_remaining_44_blind_dimensions": "open",
+   "whether_a_four_for_four_exchange_exists_outside_this_orbit": "open",
+   "whether_every_blind_vector_supported_on_eight_pieces_lies_in_the_one_orbit": "open"
+  },
+  "one_least_exchange_orbit": {
+   "averaged_product_across": 6,
+   "averaged_product_of_that_part_with_itself": 13,
+   "averaged_product_of_the_rest_with_itself": 8,
+   "averaged_product_with_the_seen_space": 11,
+   "blind_dimensions_left_over": 44,
+   "blind_dimensions_they_span": 60,
+   "every_one_blind_against_all_15800_cuttings": true,
+   "signed_images_under_the_group": 192,
+   "the_span_holds_a_constant_weighting": false,
+   "the_span_is_carried_into_itself_by_every_symmetry": true,
+   "they_rebuild_the_blind_with_blind_count": 33
+  },
+  "the_blind_space": {
+   "dimension_of_what_no_cutting_sees": 104,
+   "exact_rational_rank_of_the_sharing_table": 88,
+   "measured_not_derived": true,
+   "the_two_add_to": 192
+  },
+  "the_correction_this_cycle_makes_to_its_own_first_reading": {
+   "and_both_are_already_symmetries_in_the_group": true,
+   "pair_orbit_matrices_preserving_the_blind_space_on_their_own": 2,
+   "the_first_reading_confused_a_basis_failure_count_with_a_subspace_dimension": true,
+   "the_others_missing_by_as_much_as": 12738,
+   "the_rest": 102
+  },
+  "the_group_of_symmetries": {
+   "orbits_on_ordered_pairs": 104,
+   "orbits_on_the_pieces": 1,
+   "order": 384,
+   "order_of_a_piece_stabiliser": 2,
+   "pieces_its_other_element_fixes": 16,
+   "routes_to_the_pair_orbit_count": 3
+  },
+  "the_object": {
+   "cuttings": 15800,
+   "cuttings_through_a_piece": 1975,
+   "largest_share_of_two_pieces": 1266,
+   "pieces": 192,
+   "pieces_to_a_cutting": 24
+  },
+  "the_result_against_the_design_of_this_cycle": {
+   "same_type_parts_shared_with_the_seen_space": 21,
+   "the_blind_space_is_a_sum_of_whole_same_type_blocks": false,
+   "the_group_forbids_a_blind_space_of_dimension_104": false,
+   "the_group_singles_this_blind_space_out": false,
+   "the_trace_counts_of_the_group_fix_the_rank_88": false
+  },
+  "the_second_route_sharing_no_machinery": {
+   "agrees_with_the_trace_route": true,
+   "dimension_of_the_maps_commuting_with_every_symmetry": 104,
+   "of_those_carrying_the_blind_space_into_itself": 83,
+   "prime_field_rank_of_that_condition": 21
+  },
+  "the_trace_route": {
+   "averaged_product_blind_with_blind": 33,
+   "averaged_product_seen_with_blind": 21,
+   "averaged_product_seen_with_seen": 29,
+   "the_blind_space_holds_no_constant_weighting": true,
+   "they_rebuild_the_pair_orbit_count": 104
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09.py",
+ "status": "PASS"
+}

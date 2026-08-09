@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "sigma_linear_admissibility_classification_cycle872_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle872_admissibility_independent_check_2026_07_28.py",
+    ],
     "copy_redundancy_content_cycle874_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py",
     ],

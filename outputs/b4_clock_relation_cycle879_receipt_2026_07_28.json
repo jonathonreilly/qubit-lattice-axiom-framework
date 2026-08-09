@@ -1,0 +1,57 @@
+{
+ "audit": "unset",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review; review-loop fixes applied",
+ "certificates": {
+  "checker": "all gates PASS, 66s; per-comparison disposition adjudication with the primary's DECLARED box searched EXHAUSTIVELY in both orientations on all 11,492 substantive refusals (every member over its complete declared parameter range, never a first-hit search; box recorded exhausted on every one; 0 within-caps refutations, 0 in-cap witnesses a first-hit gate would have masked; 3,355 beyond-caps relations priced as surplus); all 531 published witness records re-verified with recomputed identity flags (0 mismatches; 427 identity-like dictionaries recomputed exactly); two permanent gate probes reproducing the witness-masking and whole-clock partial defects; exact 16-clock P=11 census with P=27 rejected on every member; three executed L3 mutation controls each fail exactly the intended gate",
+  "primary": "all gates PASS, 42s; complete per-comparison disposition table and witness records emitted; five-line N5 resolution certificate in cached stdout; fifteen verifier clause-regression probes and three search-side whole-cadence probes (eighteen clause probes in total) gated in the family-controls certificate, with the counts taken from the emitted rows and published as clause_probe_inventory rather than asserted in prose; the partial member's non-whole-cadence clause enforced in search and verifier, with a standing per-block count of whole-cadence partial witnesses (0 pair, 0 bank) gating the within-key blocks"
+ },
+ "claim_type": "bounded_theorem",
+ "cycles": [
+  879
+ ],
+ "deviations_disclosed": [
+  "store cap = horizon (nominal 1024 would truncate 1788 clocks / 1,956,769 events; checker-recomputed)",
+  "rep cap 600->648 (structurally cannot bite; max observed 221)",
+  "dict->binary search (gated equivalent)"
+ ],
+ "files": {
+  "docs/B4_CLOCK_RELATION_RUN_CYCLE879_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "fe0e1800a279ebe383654cf3d36dfe4097987926",
+   "sha256": "c50334eb46ae9a7d20e3a8009f67490664e6713340e28eb5ac4da4b6ecdb89ea"
+  },
+  "logs/runner-cache/frontier_cycle879_b4_clock_relation_2026_07_28.txt": {
+   "git_blob": "9dd75ebb85f7d8bdc4e7c4044aa98cddd88bdf9b",
+   "sha256": "0d4184440a95ed13e451da55631fc014061b6fcf17adced30613579ca2729f4f"
+  },
+  "logs/runner-cache/frontier_cycle879_b4_relation_independent_check_2026_07_28.txt": {
+   "git_blob": "390eaffc2958926bb48c5a95a61797a562c70b09",
+   "sha256": "20a0e654847e7e8ac699b7dd546e1dca319740c35b2ab9f6fa4750c91bfa22c2"
+  },
+  "scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+   "git_blob": "fd405f484466a2cd8226a93d2630f78df4743d89",
+   "sha256": "5ed813c21b22a8076a48a279f606f0099c9426b6375b0972d80b5cc4fec48f90"
+  },
+  "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py": {
+   "git_blob": "bcf3c0d4c02071a8babe09692e7ad9dc6c4e0a2e",
+   "sha256": "2d14d90fea56382826fbf5f8cb12d6622d9adbe2d9d12c50d25bc5c7cf4c3326"
+  }
+ },
+ "headline": "B=4 bounded finite-corpus measurement: constant-offset class coverage edges up (5,455/6,258 = 87.2% vs 86.4%; the 5,085/5,085 nonzero-offset property is UNCHANGED); the within-key family-priced residual persists (9 tick-moving of 8,171 substantive, full disposition table published); the detector-selected period census gains a non-orbit value: P=11 on exactly 16 canonical clocks of a 27-station ring, P=27 rejected on every one; comparison table 4 strengthened / 1 unchanged / 3 weakened / 1 breaks (capped-vs-uncapped caveat attached)",
+ "independence": "cross-context (own substrate rebuild with corpus sha equality; 8-key kernel replay; per-comparison adjudication of the primary's published disposition table; per-witness re-verification; exact canonical period census by brute-force membership)",
+ "note": "docs/B4_CLOCK_RELATION_RUN_CYCLE879_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "review_loop": {
+  "date": "2026-08-09",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix_summary": "iteration 1: ancestors re-pinned at landed-on-main bytes; aggregate refutation/identity/period gates replaced by per-comparison, per-witness and exact-census gates; nonexistent mutation-control claims deleted and replaced by executed controls; period surfaces detector-scoped; translation headline factored; thresholds declared; N1-N8 record, N5 certificate, authority links and packet_helper_runner binding added.  iteration 3: the decisive refutation gate no longer adjudicates only the first witness per oriented comparison -- the primary's declared box is now searched exhaustively (every member, every declared parameterisation, both orientations) on every refusal, with exhaustion recorded; and the partial member's declared non-whole-cadence clause is enforced in both verifiers and in the primary's search, with the two confirmation-round controls carried as permanent probes.  Both runners re-run: 0 within-caps refutations and 3,355 beyond-caps surplus are unchanged, while 199 of the 531 witness records moved onto their correct member or parameters (158 partial -> total, 41 re-parameterised), taking dictionaries 278 -> 436, identity-like 269 -> 427 and partial matches 218 -> 60 with no comparison changing between related and refused.  iteration 4: the family-controls probe count was overstated on the note and this receipt (18 verifier probes claimed; 15 verifier clause probes and 3 search-side probes exist).  The prose is corrected to the real inventory and the primary now COUNTS the inventory from the rows it emits and publishes it as C_FAMILY_CONTROLS.clause_probe_inventory, with the gate failing if the executed counts depart from the declared ones.  No probe was added or removed and no scientific figure moved",
+  "iteration": 4,
+  "reviewer": "Sol"
+ },
+ "runtime_seconds": {
+  "checker": 66,
+  "primary": 42
+ },
+ "successors": [
+  "P=11 characterization (mechanism, key/bank incidence)",
+  "leg-(ii) adjudication of the new exception sets"
+ ]
+}

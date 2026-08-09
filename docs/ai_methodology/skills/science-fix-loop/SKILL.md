@@ -174,7 +174,12 @@ Each worker must:
 3. Use `physics-loop`; make the narrowest honest source/runner change.
 4. Run the target harness and relevant tests.
 5. Strip all generated audit outputs.
-6. Open one PR for one coherent science block.
+6. Verify the repair against
+   `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` section by section
+   before the PR exists, and apply the cure that document states for anything
+   it covers; its sections may be cited by number in worker instructions and
+   findings, with the skill or script that section cites as the authority.
+7. Open one PR for one coherent science block.
 
 If the physics cannot close, retain a bounded theorem, explicit open gate, or
 no-go result as appropriate. Do not promote a partial attempt.
@@ -194,9 +199,13 @@ record `fresh_seat_required` and move it to the next campaign.
 For every source-side PR:
 
 1. Take it out of draft.
-2. Run a fresh `review-loop` agent at the best available model and maximum
-   reasoning.
-3. Apply narrow findings, re-review changed files, validate, and land through
+2. Pre-fix mechanical non-conformance against
+   `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` before a reviewer
+   seat is spent on the PR, then run a fresh `review-loop` agent at the best
+   available model and maximum reasoning. Pre-fix confers no PASS; the
+   reviewer still judges the final state.
+3. Apply narrow findings, curing per the conformance spec where it covers the
+   finding, then re-review changed files, validate, and land through
    the review-loop cherry-pick path onto current `main`.
 4. Close the PR/delete its branch only after containment on `main` is proven.
 5. Start a fresh audit campaign for repaired rows. Never reuse the old

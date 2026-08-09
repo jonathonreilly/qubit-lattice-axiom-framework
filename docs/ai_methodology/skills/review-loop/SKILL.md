@@ -323,6 +323,18 @@ the defect it would have caught is present. Whether such findings are fixed
 in place or the branch is rejected follows the existing Fix Policy and
 close-with-reason path; the checklist adds no new disposition.
 
+`docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` is the pre-review
+conformance bar the pre-flight serves: authors generate to it, and at review
+entry the orchestrator checks the incoming PR against its mechanical sections
+— 8 links and citation graph, 9 note structure, 10 the propose/ratify
+boundary, 12 the pre-review gates, and the enum and vocabulary items of 3 —
+and pre-fixes what fails there before a reviewer seat is spent on it. Pre-fix
+is orchestrator repair of mechanical non-conformance under Fix Policy, not a
+review: it confers no PASS, it does not shorten or replace any lens, and
+nothing lands without a reviewer PASS on the final state. Scientific
+judgment — sections 1, 2, 4, 5, 6, 7, 11, and the claim-scope reading in 3 —
+stays with the reviewer.
+
 ## Arguments
 
 Parse, in this order:
@@ -788,6 +800,16 @@ Otherwise apply the narrowest honest fix:
    salvage through the current requested landing path. If the rejected branch
    contains substantial non-source packet material, use a clean temporary
    worktree for integration, but do not create or open a follow-up PR.
+
+For any finding it covers, apply the cure stated in
+`docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`, so the same defect
+is cured the same way in every slot instead of being renegotiated per PR.
+Reviewer prompts and findings may cite its sections by number as shorthand
+for the requirement — "conformance spec section 5, target-equivalent terminal
+lemma" — but the authority is the skill, script, or vocabulary file that
+section cites, and a finding must be justifiable from that authority. Where
+the spec and its cited authority disagree, the cited authority wins and the
+spec carries a defect: fix the PR to the authority and report the drift.
 
 Skip:
 

@@ -3,11 +3,12 @@
 **Authority and use.** The requirements below were distilled from the 2026-08
 review-loop drain, over its first nineteen landed reviews. They are banked in-repo by
 owner directive (2026-08-09) so that PRs are authored to the spec rather than corrected
-against it across review cycles. The `physics-loop` skill should treat this document as
+against it across review cycles. The `physics-loop` skill treats this document as
 a **generation-time checklist**: a PR is not ready to request review until every MUST
-below is satisfied. (Wiring the checklist into
-`docs/ai_methodology/skills/physics-loop/SKILL.md` is a follow-up; it is not part of
-the PR that banks this document.)
+below is satisfied. The wiring is in place — `physics-loop` runs the section-by-section
+check in its Science Delivery And PR Policy before a block PR is opened,
+`science-fix-loop` runs it before a repair PR exists, and `review-loop` uses it as the
+pre-review conformance bar for pre-fix and as shared cure text in its Fix Policy.
 
 **This document is a restatement, not an authority.** Every rule below cites the
 file that owns it. Where this document and a cited file disagree, the cited file
@@ -33,7 +34,7 @@ citation-edge rule in section 8.
   that needs it.
 - A dependency may be brought in as a self-contained derivation and reviewed in
   the same branch; that is the sanctioned repair route
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:705`). Copying in an
+  (`docs/ai_methodology/skills/review-loop/SKILL.md:717`). Copying in an
   unreviewed sibling's conclusion is not.
 - No hard requirement on gitignored artifacts (e.g. the symlinked
   `docs/audit/data/audit_ledger.json`). Runners must be fresh-worktree
@@ -99,7 +100,7 @@ citation-edge rule in section 8.
   review findings. Use an explicit scientific noun phrase; a shorthand may
   follow only as a parenthetical alias, and archival aliases belong only in
   clearly historical work-history or archive material
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:147-152,562-573`).
+  (`docs/ai_methodology/skills/review-loop/SKILL.md:147-152,574-585`).
 - Any noun phrase the PR introduces to categorize claims, lanes, or tiers must
   already exist in `docs/repo/CONTROLLED_VOCABULARY.md` or be plain descriptive
   prose. Coining a class word is a defect even when the concept is real; say the
@@ -187,7 +188,7 @@ including checker-emitted strings and receipts.
 
 ## 5. Proof obligations
 
-Authority: `docs/ai_methodology/skills/review-loop/SKILL.md:1084-1090`. Any PR
+Authority: `docs/ai_methodology/skills/review-loop/SKILL.md:1106-1112`. Any PR
 claiming a theorem, proof, derivation, reduction, or closure through intermediate
 lemmas MUST, in the note:
 
@@ -229,7 +230,7 @@ Stating the honest boundary requires no new science.
   check that does NOT share the changed runner's implementation path: manual
   formula derivation, symbolic or algebraic reduction, finite toy-case
   enumeration, independent recomputation, or invariant/limit tests. Record which
-  one was used (`docs/ai_methodology/skills/review-loop/SKILL.md:1072-1082`). A
+  one was used (`docs/ai_methodology/skills/review-loop/SKILL.md:1094-1104`). A
   runner that computes its own target and prints PASS proves nothing about the
   formula.
 
@@ -251,7 +252,7 @@ Stating the honest boundary requires no new science.
   mismatching fingerprint as the safe default; narrowing that blast radius takes
   a separate, reviewed machine-readable equivalence/impact record, and
   `docs/audit/data/legacy_science_epoch_baseline.json` is never refreshed to make
-  a policy change pass (`docs/ai_methodology/skills/review-loop/SKILL.md:823-836`).
+  a policy change pass (`docs/ai_methodology/skills/review-loop/SKILL.md:845-858`).
 - Open policy debt, and how to stay correct across its repair: the helper
   registry is currently recorded as unresolved dependency-policy epoch debt on
   `origin/main`, because refreshing the epoch mass-invalidates roughly 860-891
@@ -318,14 +319,14 @@ Stating the honest boundary requires no new science.
 - Machine-status block: complete, and consistent with the receipts and every
   other surface. Use the real field names from
   `docs/ai_methodology/skills/physics-loop/SKILL.md`. The status contract
-  (`:330-343`) requires `actual_current_surface_status`, whose value is one of
+  (`:368-381`) requires `actual_current_surface_status`, whose value is one of
   `open`, `no-go`, `exact-support`, `bounded-support`, `conditional-support`,
   `demotion`, `candidate-retained-grade`, together with `target_claim_type`,
   `trace_class`, `reachability_to_target`, `conditional_surface_status`,
   `hypothetical_axiom_status`, `admitted_observation_status`,
   `claim_type_reason`, `audit_required_before_effective_retained`, and
   `bare_retained_allowed: false`. There is no `surface_status` field.
-- The trace contract (`:217-227`) additionally requires `trace_class`
+- The trace contract (`:255-265`) additionally requires `trace_class`
   (`direct_blocker_closure`, `upstream_support`, `negative_route_pruning`,
   `frontier_discovery`, `methodology`), `target_claim_id`,
   `target_blocker_text`, `source_of_blocker_text` (`null`, `audit_ledger`,
@@ -342,7 +343,7 @@ Stating the honest boundary requires no new science.
   normalization is not available in-repo". Do not coin a status token for this;
   imported physics, textbook machinery, observations, fitted values, and
   conventions are labelled in prose
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:693-706`). Open bridges are
+  (`docs/ai_methodology/skills/review-loop/SKILL.md:705-718`). Open bridges are
   declared open and owned by the correct lane.
 - A Review record section when the PR replaces or narrows earlier content: what
   was dropped or refuted, where the retained scope ends, and any hard landing
@@ -357,7 +358,7 @@ generated ledger, queue, prompt, or publication effective-status output. Audit
 fields are auditor-owned and `effective_status` is derived by the pipeline
 (`docs/repo/CONTROLLED_VOCABULARY.md` "Audit Lane Field Vocabulary"); the
 independent audit lane is the sole channel that refreshes the hash and
-re-ratifies (`docs/ai_methodology/skills/review-loop/SKILL.md:1132-1145`).
+re-ratifies (`docs/ai_methodology/skills/review-loop/SKILL.md:1154-1167`).
 
 - Do not run `docs/audit/scripts/apply_audit.py` from an author branch.
 - Validation runs generate audit surfaces. Restore them before committing and

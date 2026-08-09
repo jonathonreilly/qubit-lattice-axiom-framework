@@ -118,6 +118,23 @@ unless the user explicitly supplied `--no-pr`.
 - Do not merge, push science to `main`, or update repo-wide authority surfaces
   as part of the science run.
 
+**Conformance gate — verify before the PR is opened, not after review says
+so.** A block PR is not ready to request review until it has been checked,
+section by section, against
+`docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`: 1 self-containment,
+2 cache and execution discipline, 3 claim-scope honesty, 4 negative claims and
+the N-gate, 5 proof obligations, 6 runner validity, 7 packet completeness,
+8 links and citation graph, 9 note structure, 10 the propose/ratify boundary,
+11 sourced facts and counts, 12 the pre-review gates. Every MUST in that
+document is a generation-time requirement of this skill; failing one is a
+defect to fix before the PR exists, not a finding to receive. Record the pass
+in `REVIEW_HISTORY.md`, naming each section deliberately not applicable to the
+block and why — an unrun section is not a passed section. That document
+restates rules owned elsewhere and cites each owner: where it and a cited
+skill, script, or vocabulary file disagree, the cited authority wins and the
+disagreement is a defect in the spec, to be reported in `HANDOFF.md` rather
+than followed.
+
 Allowed science-branch output:
 
 - theorem/support/no-go notes;
@@ -129,7 +146,8 @@ Forbidden science-branch output (the audit lane is sole authority over
 these; a framework PR that ships them overwrites ratified audit state at
 merge):
 
-- `docs/audit/data/` (any file);
+- `docs/audit/data/` (any file, except the single citation-graph manifest
+  carve-out stated below);
 - `docs/audit/AUDIT_LEDGER.md`, `docs/audit/AUDIT_QUEUE.md`,
   `docs/audit/MISSING_DERIVATION_PROMPTS.md`;
 - `docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` and
@@ -147,6 +165,26 @@ git checkout origin/main -- docs/audit/data/ \
                             'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
                             docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
 git clean -fd -- docs/audit/data/
+```
+
+The one carve-out is `docs/audit/data/citation_graph_manifest.json`, and it is
+conditional, proactive, and commit-time. When the block's own commits change
+citation-graph dependencies — any new or edited note carrying markdown links —
+a refreshed manifest MUST co-land with the block, or the enforced stage-18
+guard blocks every subsequent pipeline run on `main` until someone else lands
+the acknowledgment. Regenerate it deterministically on the proposed tree
+*after* the drop above, stage that one path, and read the stage-18 delta
+against the tracked manifest before staging: acknowledgment is assertion that
+every added, removed, or rewired edge is intended. Never hand-merge or
+hand-edit it, and never stage it when the block changes no dependency edge
+(`docs/ai_methodology/skills/review-loop/SKILL.md` landing rule; conformance
+spec section 8).
+
+```bash
+# Only when the block's commits change citation-graph dependencies:
+python3 docs/audit/scripts/build_citation_graph.py
+python3 docs/audit/scripts/write_citation_graph_manifest.py
+git add docs/audit/data/citation_graph_manifest.json
 ```
 
 Do not weave science results through `README`, `docs/repo/LANE_REGISTRY.yaml`,
@@ -633,10 +671,22 @@ For publication-facing or quantitative work, also inspect
    overclaiming NEGATIVE results. Run the `no-go-discipline` skill BEFORE
    shipping any cycle artifact, PR body, source note, runner, or review verdict
    that asserts a `no_go`, `stretch_attempt_negative`, `bounded_with_named_walls`,
-   or derived-no-go-boundary result. Answer N1-N8 IN WRITING in the cycle's
-   `CLAIM_STATUS_CERTIFICATE.md` (or a dedicated `NO_GO_DISCIPLINE_CHECKLIST.md`)
-   and include the checklist in the PR body so the audit lane and reviewers
-   can see exactly which alternative routes were tested.
+   or derived-no-go-boundary result. Answer N1-N8 IN WRITING, and LAND the
+   answers in the PR as a committed artifact the audit lane can bind: a
+   `## No-Go Discipline Gate` section in the source note itself, or a
+   committed `NO_GO_DISCIPLINE_CHECKLIST.md` that the note links. The PR body
+   is not a landing surface, and neither is the branch-local
+   `CLAIM_STATUS_CERTIFICATE.md` — keep the cycle's copy there as loop state
+   and copy it into the PR body as a courtesy, but review-loop's salvage pass
+   strips claim-status certificates, handoffs, and campaign state out of a
+   salvage slice, so only the source note or its linked sidecar survives as
+   the record. The second required landing artifact is the
+   N5 execution certificate in the primary runner's cached stdout, one
+   substantive line each for `per_element:`, `per_site:`, `per_mode:`,
+   `per_block:`, and `lattice_wide:`. A packet that existed at review time and
+   did not land is this repo's largest audit-invalidation class
+   (`docs/ai_methodology/skills/no-go-discipline/SKILL.md` Output section;
+   conformance spec section 4).
 
    | # | Check | Failure condition |
    |---|---|---|
@@ -697,10 +747,12 @@ For publication-facing or quantitative work, also inspect
     theorem step with prose. Put
     any proposed repo-wide weaving in `HANDOFF.md` for later review and
     backpressure integration.
-15. **Open review PRs.** At each block closure, open or prepare one PR for the
-    coherent science block unless `--no-pr` was supplied. In campaign mode,
-    a missing PR must become `PR_BACKLOG.md` and the campaign must continue if
-    runtime remains.
+15. **Open review PRs.** At each block closure, run the conformance gate in
+    Science Delivery And PR Policy against
+    `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and fix what it
+    catches, then open or prepare one PR for the coherent science block unless
+    `--no-pr` was supplied. In campaign mode, a missing PR must become
+    `PR_BACKLOG.md` and the campaign must continue if runtime remains.
 16. **Continue the campaign or stop.** After PR/backlog handling, if runtime
     remains and the current lane is blocked or closed, pick the next
     `OPPORTUNITY_QUEUE.md` item and continue. Stop the whole campaign only

@@ -1,17 +1,38 @@
 """Exact adjacency-cost bracket for dissections of one tick-box into corner pieces.
 
-The box is one lattice cell carried through one tick: three spatial coordinates and a
-tick coordinate, sixteen corners.  A piece is the convex hull of five corners with
-nonzero volume; a dissection is a family of pieces with disjoint interiors whose volumes
-fill the box.  The adjacency cost of a piece counts its vertex pairs whose spatial
-separation is more than one step, so it counts exactly the slot-uses the lattice axiom
-does not supply as adjacency.  This runner brackets that cost from both sides, first
+Everything here is a theorem of a SUPPLIED structural model, not of the framework
+axioms alone.  The model: the box is one lattice cell carried through one tick --
+three spatial coordinates and a tick coordinate, sixteen corners; a piece is the
+convex hull of five corners with nonzero volume, all ten vertex pairs graded by the
+spatial part of their separation; a dissection is a family of pieces with disjoint
+interiors whose volumes fill the box.  The Lattice axiom supplies only the spatial
+Z^3 nearest-neighbour adjacency that grades the vertex pairs and the 24 proper cubic
+rotations acting here; the registered kinetic-isotropy primitive supplies only the
+equal tick/edge graining under which the tick coordinate enters.  Neither supplies a
+cell selection or a rule-to-tick correspondence: whether physical assembly cells are
+pairwise-adjacency simplices at all, and the physical tick-Admissibility realization
+bridge, are OPEN questions this runner does not touch.
+
+The adjacency cost of a piece counts its vertex pairs whose spatial separation is
+more than one step -- the pairs the supplied model grades as exceeding the axiom's
+nearest-neighbour adjacency.  This runner brackets that cost from both sides, first
 over the minimal-volume pieces alone and then over every corner piece.
+
+Volume throughout is the normalized lattice 4-volume |det(v1-v0, ..., v4-v0)|, which
+is 4! = 24 times the Euclidean volume, so the whole box has normalized volume 24.
+This normalization is a declared convention of the runner, load-bearing in the
+24-piece count and in every volume-sum check.
 
 Everything is verified in exact integers.  No solver runs here: the bounds are carried
 as integer multiplier vectors and checked directly, the attaining families are carried
 as piece lists and checked to be genuine dissections, and the parity statement is
 derived in-runner by elimination over the two-element field.
+
+The negative-flavoured gates are scoped narrowly by design.  The single-orbit gate
+quantifies over the 114 point-orbits of the carried invariant sample family only; the
+strengthening gate tests five representative certificates only; the coarse-parity
+gate shows only that THIS incidence-plus-volume certificate family does not extend
+past the minimal pieces.  None of them is a universal negative.
 
 Soundness of the sample-point device: a dissection covers every interior point of the
 box exactly once, so every dissection is one of the families that cover the sample
@@ -24,16 +45,20 @@ exactly when some direction separates them.  All vertices here are zero-one corn
 differences lie in the ternary cube, and any supporting direction may be taken
 orthogonal to three ternary vectors -- a three by three ternary determinant, hence
 entries bounded by four.  Sweeping every direction in that range decides the question.
+
+The runner fails closed: any failed gate makes the process exit nonzero.
 """
+import json
+import sys
 from fractions import Fraction as F
 from itertools import combinations, permutations, product
 import numpy as np
 
-PASS = []
+GATES = []
 
 
 def gate(name, ok, detail=""):
-    PASS.append(bool(ok))
+    GATES.append((name, bool(ok)))
     print("{0} {1:50s} {2}".format("PASS" if ok else "FAIL", name, detail), flush=True)
 
 
@@ -335,8 +360,9 @@ for k in ("min108", "min128", "mlo6", "flo6", "fup6"):
         if int(slack(uu, Z, D, full, up).min()) < 0:
             hit += 1
     bump.append(hit == K and int(slack(u, Z + step, D, full, up).min()) < 0)
-gate("no carried bound survives a unit strengthening", all(bump) and len(bump) == 5,
-     "all 114 orbit bumps and the uniform bump refuted, five bounds tested")
+gate("five representative bounds refuse strengthening", all(bump) and len(bump) == 5,
+     "all 114 orbit bumps and the uniform bump refuted for the five tested "
+     "certificates; the other fourteen carried certificates are untested here")
 
 
 def cap(m, w):
@@ -356,9 +382,10 @@ def cap(m, w):
 
 
 one = max(cap(BO[MIN, o], WM) for o in range(K))
-gate("one orbit cannot certify the minimum",
+gate("no single carried orbit certifies the minimum",
      one == 84 and one < 108 and named["min108"][2] == 8,
-     "best single orbit {0}, below 108; eight orbits reach it".format(one))
+     "best of the 114 carried orbits {0}, below 108; eight carried orbits reach it; "
+     "other sample families untested".format(one))
 
 FM = {k: dec(v) for k, v in FAM.items()}
 DIR = np.array([d for d in product(range(-4, 5), repeat=4) if any(d)], dtype=np.int64)
@@ -460,8 +487,89 @@ gate("cost parity is forced over the minimal pieces",
      par["a"][0] == 465 and par["b"][0] == 465 and par["a"][1][0] and par["b"][1][0]
      and sum(par["a"][1][1:]) == 0 and sum(par["b"][1][1:]) == 0,
      "rank 465 on both families, cost reached, seven unit cuts refuted")
-gate("the parity relation does not extend to coarse pieces",
+gate("the parity certificate stops at minimal pieces",
      par["c"][0] == 465 and not par["c"][1][0] and sum(par["c"][1][1:]) == 0,
-     "rank 465, cost not reached, seven unit cuts refuted")
+     "rank 465, cost vector outside this certificate span; no odd coarse "
+     "dissection exhibited or excluded")
 
-print("TOTAL: PASS={0} FAIL={1}".format(sum(PASS), len(PASS) - sum(PASS)), flush=True)
+npass = sum(ok for _, ok in GATES)
+nfail = len(GATES) - npass
+RECEIPT = {
+    "claim_type": "bounded_theorem",
+    "headline": ("within the supplied tick-box corner-dissection model: minimal-piece "
+                 "adjacency-cost bracket [108, 128], both ends attained, exactly the "
+                 "eleven even values attained; all-piece bracket [68, 128]"),
+    "supplied_model": ("corner 4-simplex pieces of one lattice cell carried through "
+                       "one tick, all ten vertex pairs graded by spatial L1 "
+                       "separation; the piece/dissection structure is supplied here, "
+                       "not derived from the Lattice axiom"),
+    "open_bridges": [
+        "physical tick-Admissibility realization (which rule variation corresponds "
+        "to which tick)",
+        "identification of physical assembly cells with pairwise-adjacency simplices",
+    ],
+    "volume_normalization": ("normalized lattice 4-volume |det| = 24 x Euclidean; "
+                             "whole box volume 24"),
+    "adjacency_cost_range_minimal_pieces": [int(WM.min()), int(WM.max())],
+    "adjacency_cost_range_all_pieces": [int(W.min()), int(W.max())],
+    "attained_costs_minimal_pieces": [int(x) for x in even],
+    "bracket_minimal_pieces": [int(named["min108"][1]), int(named["min128"][1])],
+    "bracket_all_pieces": [int(named["flo6"][1]), int(lad["fup"][0][3])],
+    "coarse_witness": {"cost": REP["c68"][0], "pieces": REP["c68"][2],
+                       "volume_profile": {str(k): v for k, v in sorted(cv.items())}},
+    "denominator_ladder": {
+        "denominators": [1, 2, 3, 6],
+        "minimal_pieces_floor": [int(x) for x in lad["mlo"][0]],
+        "minimal_pieces_ceiling": [int(x) for x in lad["mup"][0]],
+        "all_pieces_floor": [int(x) for x in lad["flo"][0]],
+        "all_pieces_ceiling": [int(x) for x in lad["fup"][0]],
+    },
+    "minimal_pieces": int(len(MIN)),
+    "nondegenerate_pieces": int(n),
+    "orbit_count": int(K),
+    "orbit_sizes": [int(x) for x in osz],
+    "parity_rank": int(par["a"][0]),
+    "rejected_control": {"cost": REP["cover"][0],
+                         "overlapping_pairs": REP["cover"][3]},
+    "sample_points": {
+        "boundary_incidences_fixed_weight": int(faceA),
+        "boundary_incidences_invariant": int(faceB),
+        "invariant_points": int(len(PB)),
+        "invariant_point_orbit_size": int(psz[0]),
+        "points_per_piece_range": [int(cnt.min()), int(cnt.max())],
+    },
+    "single_orbit_cap_carried_family": int(one),
+    "single_orbit_scope": ("the 114 point-orbits of the carried invariant sample "
+                           "family only; other sample families untested"),
+    "local_maximality_scope": ("five representative certificates only; the thirteen "
+                               "other ladder rungs and the fixed-weight certificate "
+                               "are untested"),
+    "parity_scope": ("minimal-piece even parity is proved; over all pieces only THIS "
+                     "incidence-plus-volume certificate family is shown not to "
+                     "extend; no odd coarse dissection exhibited or excluded"),
+    "tight_points": {
+        "fixed_weight_floor": int((ss == 0).sum()),
+        "invariant_floor": int(named["min108"][3]),
+        "ceiling": int(named["min128"][3]),
+        "all_pieces_floor": int(named["flo6"][3]),
+    },
+    "volume_spectrum": {str(k): int(v) for k, v in sorted(spec.items())},
+    "gates": {name: ("PASS" if ok else "FAIL") for name, ok in GATES},
+    "pass": npass,
+    "fail": nfail,
+    "review_loop": {
+        "iteration": 1,
+        "disposition": "FIX_THEN_PROCEED",
+        "reviewer": "Sol",
+        "date": "2026-08-08",
+        "fix": "typed the note bounded_theorem of the supplied tick-box dissection"
+               " model; narrowed the single-orbit, local-maximality, and"
+               " coarse-parity claims to their computed scopes; removed the false"
+               " monotone-stencil witness identification; declared the volume"
+               " normalization; demoted uncarried cross-checks to provenance; made"
+               " the runner fail closed and added its pinned cache",
+    },
+}
+print("RECEIPT " + json.dumps(RECEIPT, sort_keys=True), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(npass, nfail), flush=True)
+sys.exit(0 if nfail == 0 else 1)

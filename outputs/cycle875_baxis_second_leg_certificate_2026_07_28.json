@@ -355,12 +355,12 @@
    "differing_lines_explained_by_mask": [
     11
    ],
-   "elapsed_seconds": 9.319,
+   "elapsed_seconds": 9.398,
    "exit_code": 0,
    "length_delta_fully_explained": true,
    "line_counts_equal": true,
    "live_masked_sha256": "612dc7168367335d7e31d771c8c4db218aa5c99c229f65105f5f8894ae7c4fc3",
-   "live_stdout_sha256": "6c14dcab6aadc8410608a553d33dc9b98c08e58496fe270bba4605a7e1a03a1e",
+   "live_stdout_sha256": "6159035404e3df9539ef5986fa658064f543cd4e3de5715a09731067f03bb973",
    "mask_patterns": [
     "\"(runtime_seconds|elapsed_seconds|runtime|elapsed)\":\\s*-?[0-9]+(\\.[0-9]+)?",
     "\"(stdout_bytes)\":\\s*[0-9]+"
@@ -864,7 +864,7 @@
    "pinned_evidence_all_match": true,
    "provenance_policy": "LANDED_ON_MAIN rows are verified against the exact blobs landed on origin/main (fail-closed).  SIBLING_BRANCH_DISCLOSED_ONLY rows are verified as disk-byte self-consistency against the declared local blob/sha256 only; their origin commits are disclosure, not verification, and those artifacts are unaudited branch-local support",
    "runtime_budget_seconds": 1400,
-   "runtime_seconds": 9.371,
+   "runtime_seconds": 9.45,
    "runtime_under_budget": true
   }
  },
@@ -907,7 +907,7 @@
   ],
   "pass": true,
   "premise_standing": "SINGLE_CLOCK_AXIS_PREMISE_NOT_DISCHARGED__FINITE_MEASUREMENTS_AT_SCOPE_ONLY",
-  "runtime_seconds": 9.371,
+  "runtime_seconds": 9.45,
   "tally": {
    "MEASURED_AT_SCOPE": 6,
    "OPEN": 6,

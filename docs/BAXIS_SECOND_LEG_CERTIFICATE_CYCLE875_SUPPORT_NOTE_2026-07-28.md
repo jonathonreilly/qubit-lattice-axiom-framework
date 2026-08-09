@@ -11,8 +11,11 @@ Status: bounded finite-corpus measurement, demoted from its original
 "discharge certificate" headline by adversarial review (Sol,
 FIX_THEN_PROCEED, 2026-08-08).  One worker-authored primary and one
 independent checker spec'd to refute; no axiom surface touched.
-Campaign/queue identifiers appear only under Provenance context below and
-carry no naming weight.
+No-Go Discipline gate: NOT PASS — closed as
+partial-attempt-with-named-untested-routes; the negative content ships
+only as the narrowed family-priced measured absences (see the gate
+section).  Campaign/queue identifiers appear only under Provenance
+context below and carry no naming weight.
 
 Claim type: bounded_theorem (narrowed finite-corpus statements only: the
 recounts and exact divisibilities listed under Derived; every physical
@@ -171,6 +174,14 @@ the five-line N5 resolution certificate in the primary's cached stdout
 land as committed artifacts for the surviving family-priced measured
 absences.
 
+Iteration 3 (confirmation round, 2026-08-08): the gate record's formal
+structure repaired — N2 is now the full 21-pair directional table, N4 a
+per-citation match table, and N1 route 6's non-permitted marker is
+resolved by closing the gate NOT PASS
+(`partial-attempt-with-named-untested-routes`): the route is neither
+attemptable in a fix round nor ruled out by any prior, so the narrowed
+disposition, not PASS, is the honest status.  Science unchanged.
+
 ## No-Go Discipline Gate
 
 This section is the committed N1–N8 record for the negative content that
@@ -184,6 +195,8 @@ these are bounded, family-priced measurements.  The N5 execution
 certificate (one line per resolution class) is in the primary runner's
 cached stdout,
 `logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt`.
+The gate closes NOT PASS (see Status at the end of this section): the
+narrowed claims ship; nothing wider does.
 
 **N1 — Alternative route enumeration (5+ distinct routes).**
 1. Record-native predictor reconstructs the origin (predictor route):
@@ -206,23 +219,56 @@ cached stdout,
    865 records scheduler_gap_is_record_native=false and 866 records
    native_pattern_functional=false at B=3/B=4 (properties of the declared
    candidates only; O1).
-6. Rival beyond the declared caps or horizon (beyond-caps route): NOT
-   ATTEMPTED BY DECLARATION — the byte-verified 869 pricing quote ("It
-   does not exclude transformations outside F, nor relations that only
-   appear beyond tick 8192") carries this as O10, permanently open.
+6. Rival beyond the declared caps or horizon (beyond-caps route):
+   NEITHER `ATTEMPTED` NOR `RULED OUT BY PRIOR` — attempting it would be
+   new science outside this fix round, and no prior authority rules it
+   out; the byte-verified 869 pricing quote says the opposite ("It does
+   not exclude transformations outside F, nor relations that only appear
+   beyond tick 8192").  Under N1's marker contract this enumerated,
+   untested route is PASS-blocking.  It is carried as O10 (permanently
+   open) and queued on the work list; see Status below.
 
-**N2 — Wall-independence audit.**  Open rows: O7, O8, O9, O10, O11, O12,
-O13.  Pairwise: no closure of any row automatically closes another —
-O7 (across-key coverage) and O8 (within-key refusals) name disjoint
-populations; O9 (B=4 unrun) is a missing execution, not a lemma; O11
-(substrate-to-premise) and O13 (relation-to-identity) are distinct
-bridges (surface identification vs within-substrate identity); O12 is the
-other conjunct of the 864-D condition; O10 is unclosable by any finite
-family.  One one-way pricing dependency is declared rather than
-collapsed: were O10 closable (it is not), the O7/O8 refusals would
-re-price from "unresolved in F" to genuine absences — which is exactly
-why both are carried at family-priced scope.  The claim uses this
-collapsed 7-row set; no row is double-counted.
+Routes 1–5 satisfy N1's five-distinct-routes floor with permitted
+markers; route 6 is enumerated for honesty and blocks PASS.
+
+**N2 — Wall-independence audit.**  Open rows: O7 (across-key uncovered
+residue), O8 (within-key unresolved-in-F residue), O9 (B=4 run missing),
+O10 (family closure), O11 (substrate-to-premise bridge), O12 (leg (i)
+standing), O13 (relation-to-identity bridge).  All 21 unordered pairs,
+with both directional closure answers ("closing the left wall
+automatically closes the right?" and conversely) and the resulting
+independence value.  "Yes (vacuous)" marks the hypothetical closure of
+O10, which is unclosable by declaration:
+
+| Pair | left closes right? | right closes left? | Independent? |
+|---|---|---|---|
+| O7–O8 | no | no | yes |
+| O7–O9 | no | no | yes |
+| O7–O10 | no | yes (vacuous: a universal exhaustion would resolve the uncovered residue) | no — one-way; O10 is unclosable by declaration, so O7 is carried at family-priced scope (the pricing note) |
+| O7–O11 | no | no | yes |
+| O7–O12 | no | no | yes |
+| O7–O13 | no | no | yes |
+| O8–O9 | no | no | yes |
+| O8–O10 | no | yes (vacuous: a universal exhaustion would re-price the refusals to genuine absences) | no — one-way; same pricing note |
+| O8–O11 | no | no | yes |
+| O8–O12 | no | no | yes |
+| O8–O13 | no | no | yes (the identity lemma reinterprets FOUND relations only; the O8 population has none) |
+| O9–O10 | no | yes (vacuous: an all-family, all-caps, all-scope exhaustion includes B=4) | no — one-way; same pricing note |
+| O9–O11 | no | no | yes |
+| O9–O12 | no | no | yes |
+| O9–O13 | no | no | yes |
+| O10–O11 | no | no | yes |
+| O10–O12 | no | no | yes |
+| O10–O13 | no | no | yes |
+| O11–O12 | no | no | yes |
+| O11–O13 | no | no | yes |
+| O12–O13 | no | no | yes |
+
+Collapse: 18 pairs are independent; the three one-way dependencies all
+point FROM O10, which is permanently open by declaration, so no wall
+follows from a closable other and nothing collapses.  The claim carries
+all seven walls, with O7/O8/O9 priced to family/caps exactly because
+O10 is unclosable.
 
 **N3 — Hidden-wall scan.**  Iteration-1 review found three hidden
 conditions; all are now explicit walls: the F-relation => physical
@@ -232,17 +278,27 @@ identification (O11), and the heterogeneous union of candidate families
 substrate import is declared in Dependencies.  Remaining "by
 construction"/"declared" language in the runners refers to declared
 finite search parameters (non-load-bearing context, annotated as such).
-N2 was re-run after these promotions; the table above includes them.
+N2 was re-run after these promotions; the N2 pairwise table above
+includes the promoted walls O11 and O13 in all their pairs.
 
-**N4 — Residual matching.**  Witness table: the 865 hunt attacks exactly
-the residual "record-native origin reconstruction within the declared
-29+28 family at B=2" — matches claim (a); the 869 search attacks exactly
-"exact F-relations at declared caps at B=3" — matches claim (b); the 866
-signature probe attacks "top-3 dominant-gap signature distinctness" —
-does NOT match any absence claim and is therefore dropped as a negative
-witness (retained only as disclosed context for O9).  After the drop,
-each surviving claim rests on exactly the witness whose residual it
-names.
+**N4 — Residual matching.**  Per-citation table (witness residual vs the
+residual the claim needs, one row per citation, including the dropped
+row):
+
+| Citation (path:line) | Witness residual | Claimed residual | Match? |
+|---|---|---|---|
+| `outputs/cycle875_pinned_evidence/cache_863_865_arc_check.txt:14` (THE_INTRINSIC_PREDICTOR_HUNT) | record-native origin reconstruction within the declared 29+28 family on the B=2 census | claim (a): family-priced absence of an origin-reconstructing predictor at B=2 | yes |
+| `logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt:17` (D_WITHIN_KEY_PAIR_OF_PAIRS) | exact F-relations between pair clocks at declared caps at B=3 | claim (b), pair part: 429/480 substantive refusals in F | yes |
+| `logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt:18` (E_WITHIN_KEY_BANK_CLOCKS) | exact F-relations between bank clocks at declared caps at B=3 | claim (b), bank part: 830/831 substantive refusals in F | yes |
+| `logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt:13` and `:20` (family-closure pricing; what-a-negative-costs) | the pricing of the 869 negative to F and its caps | the O10 wall statement (pricing, not an absence) | yes (pricing-to-pricing) |
+| `outputs/cycle875_pinned_evidence/arc_note_863_865.md:93` (declared-family discipline line) | the pricing of the 865 exhaustion to the declared 29+28 family | the claim-(a) pricing | yes (pricing-to-pricing) |
+| `outputs/cycle875_pinned_evidence/cache_866_scaled_banks.txt:12`–`13` (B3/B4_RESULTS) | top-3 dominant-gap signature distinctness at B=3/B=4 | absence of a second clock (the role a negative witness would need) | **no — dropped** as a negative witness; retained only as disclosed context for O9 |
+
+After dropping the non-matching Cycle-866 row, claim (a) retains two
+matching citations (rows 1 and 5) and claim (b) retains three (rows 2,
+3 and 4); each surviving claim rests on exactly the witnesses whose
+residuals it names, which is sufficient support for the family-priced
+measured absences and for nothing wider.
 
 **N5 — Rhetoric audit.**  Both absence claims were checked across
 per-element / per-site / per-mode / per-block / lattice-wide resolutions;
@@ -288,10 +344,20 @@ comparator is echoed by keeping every negative priced to its exact
 family and caps; no retired-wall mechanism applicable to O10/O13 was
 found beyond the import-retirement path already named in N6.
 
-**Status: PASS** — narrow by construction: all eight checks answered, no
-failure condition hit, no `no_go` claim ships, and both required
-artifacts land in this PR (this section, and the N5 certificate in the
-primary's cached stdout).
+**Status: NOT PASS — closed as `partial-attempt-with-named-untested-routes`
+(equivalently `bounded-with-corrected-wall-count`).**  All eight checks
+are answered in writing and both required landing artifacts are in this
+PR (this section, and the N5 certificate in the primary's cached
+stdout).  The gate does not certify PASS because N1 route 6 is neither
+attempted nor ruled out by prior, and two N5 resolution classes
+(per_block at B=4; lattice_wide) are honestly `checked and not
+executed`.  Per the discipline's stop rule the negative content ships
+ONLY in its narrowed form — the two family-priced measured absences and
+the declared walls — with the failing/untested items recorded here (this
+PR carries no physics-loop workspace, so this section serves as the
+ledger entry) and queued as the O9/O10/O13 work list.  No `no_go` claim
+ships, and no surface in this package asserts a negative wider than the
+narrowed claims.
 
 ## Trace gate
 

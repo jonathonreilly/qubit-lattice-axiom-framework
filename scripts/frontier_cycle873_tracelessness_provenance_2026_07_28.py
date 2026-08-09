@@ -1,30 +1,43 @@
 #!/usr/bin/env python3
-"""Cycle 873: provenance of the recoil ledger's tracelessness.
+"""Cycle 873: provenance of the stipulated recoil ledger's tracelessness.
 
-Cycle 868 proved the landed response surface blind to the conformal sign and
-named its own escape condition (a): a landed source with NONZERO sector trace
-would make the odd response objects sign-sensitive.  Cycle 868 read that trace
-off the frozen Cycle-320 recoil ledger (-2d, +d, +d), whose sector sum is zero.
+The landed Cycle-868 package (exact algebraic support on a stipulated
+surface) proved its stipulated response-object algebra blind to the
+sector-trace grading sign, precisely because its stipulated recoil ledger
+(-2d, +d, +d) has zero sector sum, and it named the boundary of that
+support statement: a source with a nonzero sector trace already restores
+sign-sensitivity of the two objects linear in the graded source.  This
+cycle settles where that zero comes from.  It does not ask whether the sum
+is zero -- it asks which step makes it zero, and whether any variant inside
+the constructor's own declared degrees of freedom can break it.
 
-This cycle settles where that zero comes from.  It does not ask whether the sum
-is zero -- it asks which step makes it zero, and whether any variant inside the
-constructor's own declared degrees of freedom can break it.
+The answer is a split.  At FIXED unit sector grading the zero is DERIVED:
+the sector trace of the ledger is identically the conservation defect of
+Cycle-320's certified unit-weight vector balance, the exchange only ever
+connects states of equal P eigenvalue, and an exhaustive sweep of the
+constructor's full target freedom produces no trace-bearing lawful variant
+-- with a quantized gap, so no infinitesimal detuning exists either.  But
+the unit grading is itself SUPPLIED.  Cycle-318's coefficient-two route --
+enumerated by name inside Cycle-320's own route tuple, and declared in
+Cycle-318's own words to be supplied candidate-law structure -- conserves
+P_matter + 2 P_mediator instead, and its raw occupation ledger carries
+trace.  That witness is pushed through the Cycle-868 census machinery,
+re-stipulated here from the landed package's own in-file definitions (the
+868 runner is pinned and firewalled, never imported).
 
-The answer is a split.  At FIXED unit sector grading the zero is DERIVED: the
-sector trace of the ledger is identically the conservation defect of Cycle-320's
-certified unit-weight vector balance, the exchange only ever connects states of
-equal P eigenvalue, and an exhaustive sweep of the constructor's full target
-freedom produces no trace-bearing lawful variant -- with a quantized gap, so no
-infinitesimal detuning exists either.  But the unit grading is itself SUPPLIED.
-Cycle-318's coefficient-two route -- enumerated by name inside Cycle-320's own
-route tuple, and declared in Cycle-318's own words to be supplied candidate-law
-structure -- conserves P_matter + 2 P_mediator instead, and its raw occupation
-ledger carries trace.  That witness is pushed through a minimally re-derived
-Cycle-868 census here (the 868 runner is pinned and firewalled, never imported).
+Everything decisive lives on the stipulated response-object surface.
+Whether the six stipulated objects coincide with any previously proposed
+response lineage, and whether the grading sign is the physical
+conformal-mode sign of the emergent-gravity lane, are OPEN identifications
+that this runner does not address; no physical-sign statement is made.
+The sector-grading scan grid in certificate D is an explicit input
+declared below, and the continuous lawful locus is proved analytically
+rather than read off that grid.
 
-All four cited primaries are SHA-pinned text/AST evidence and are blocked from
-import by a meta-path firewall.  Every certified number is rebuilt here with
-stdlib exact arithmetic; no floating point enters any certified quantity.
+All four cited primaries are SHA-pinned text/AST evidence and are blocked
+from import by a meta-path firewall.  Every certified number is rebuilt
+here with stdlib exact arithmetic; no floating point enters any certified
+quantity.
 """
 from __future__ import annotations
 
@@ -48,9 +61,10 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-CACHE = ROOT / "outputs" / (
-    "tracelessness_provenance_cycle873_receipt_2026_07_28.json"
-)
+# This runner writes nothing to disk.  Its committed cache is its stdout
+# transcript at logs/runner-cache/frontier_cycle873_tracelessness_
+# provenance_2026_07_28.txt; the durable packet receipt in outputs/ is a
+# separate committed artifact that this runner never touches.
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in AUDIT_INPUT_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
@@ -60,13 +74,13 @@ EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[2]:
         "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
     AUDIT_INPUT_PATHS[3]:
-        "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
+        "dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
     AUDIT_INPUT_PATHS[1]: "7672380148d79f22a4ab9b2700121aac1b097004",
     AUDIT_INPUT_PATHS[2]: "0be8d83ec8ed874ff12e2092dc47121b8030a5bc",
-    AUDIT_INPUT_PATHS[3]: "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
+    AUDIT_INPUT_PATHS[3]: "c155a2dafaccde60c17047303c6de358445711c3",
 }
 REQUIRED_AST_MARKERS = {
     AUDIT_INPUT_PATHS[0]: (
@@ -76,7 +90,7 @@ REQUIRED_AST_MARKERS = {
     AUDIT_INPUT_PATHS[1]: ("REVERSE", "ANGLE", "direction_vertex", "link_vertex"),
     AUDIT_INPUT_PATHS[2]: ("DIRECTIONS", "UNIFORM"),
     AUDIT_INPUT_PATHS[3]: (
-        "landed_ledger", "conformal_channel", "grading_operator",
+        "stipulated_ledger", "conformal_channel", "grading_operator",
         "response_objects",
     ),
 }
@@ -102,7 +116,8 @@ REQUIRED_QUOTES = {
     ),
     AUDIT_INPUT_PATHS[2]: ("DIRECTIONS = np.asarray(",),
     AUDIT_INPUT_PATHS[3]: (
-        '"""The frozen Cycle-320 recoil ledger (-2d, +d, +d)."""',
+        '"""The stipulated traceless recoil ledger (-2d, +d, +d),'
+        ' defined in-file."""',
         '"""The sector trace: the conformal channel of the source."""',
         "return (-2 * weight, weight, weight)",
     ),
@@ -191,10 +206,13 @@ OBJECT_ARITY = {
 }
 OBJECT_NAMES = tuple(sorted(OBJECT_ARITY))
 
-# The declared rational grading grid swept in certificate D.  Halves are used
-# because the two landed gradings, (1,1) and the Cycle-318 (2,0), both lie on
-# it, and because halves are the coarsest grid that still resolves the interior
-# of the lawful segment w_field + w_auxiliary = 2.
+# The rational grading grid swept in certificate D -- an EXPLICIT SCAN INPUT
+# of this package, not a domain claim.  Halves are used because the two named
+# gradings, (1,1) and the Cycle-318 (2,0), both lie on it, and because halves
+# are the coarsest grid that still resolves interior points of the lawful
+# affine line w_field + w_auxiliary = 2.  Certificate D proves the continuous
+# locus analytically (exact affine reconstruction, all directions); the grid
+# only locates which of the line's points the sweep visits.
 GRADING_GRID = tuple(Fraction(numerator, 2) for numerator in range(0, 7))
 
 
@@ -528,7 +546,7 @@ def forcing_certificate() -> dict:
         for row in pair_rows
     )
     coefficients_uniform = len(set(coefficients)) == 1
-    landed_coefficients = tuple(int(value) for value in coefficients[0])
+    unit_ledger_coefficients = tuple(int(value) for value in coefficients[0])
 
     result = {
         "construction": (
@@ -564,12 +582,13 @@ def forcing_certificate() -> dict:
         "observed_sector_traces": traces,
         "trace_bearing_support_rows": len(trace_bearing),
         "ledger_coefficients_uniform_across_directions": coefficients_uniform,
-        "landed_ledger_coefficients": landed_coefficients,
-        "landed_ledger_scaled": tuple(
-            tuple(coefficient * weight for coefficient in landed_coefficients)
+        "unit_ledger_coefficients": unit_ledger_coefficients,
+        "unit_ledger_scaled": tuple(
+            tuple(coefficient * weight for coefficient in unit_ledger_coefficients)
             for weight in WEIGHTS
         ),
-        "matches_cycle868_landed_ledger": tuple(landed_coefficients) == (-2, 1, 1),
+        "matches_cycle868_stipulated_ledger":
+            tuple(unit_ledger_coefficients) == (-2, 1, 1),
         "finding": (
             "The forcing step is located exactly. The sector trace of the "
             "Cycle-320 recoil ledger is not an independent fact about the "
@@ -584,13 +603,14 @@ def forcing_certificate() -> dict:
             "as a polynomial identity in cos(angle)-1 and sin(angle): no "
             "choice of the coupling angle can move it. The ledger read off "
             "this support is (-2, +1, +1) in every direction, reproducing the "
-            "frozen Cycle-868 ledger (-2d, +d, +d) under carried weight d."
+            "ledger (-2d, +d, +d) that the Cycle-868 package stipulates "
+            "in-file, under carried weight d."
         ),
     }
     result["pass"] = (
         routes_agree
         and coefficients_uniform
-        and result["matches_cycle868_landed_ledger"]
+        and result["matches_cycle868_stipulated_ledger"]
         and len(pair_rows) == len(DIRECTIONS)
         and all(row["triple_index"] >= 6 for row in pair_rows)
     )
@@ -613,7 +633,7 @@ def exhaustive_certificate() -> dict:
     routes_agree = True
     nonzero_trace_norms: set = set()
     trace_norm_histogram: dict = {}
-    landed_present = False
+    cycle320_triple_present = False
     noncollinear_examples = []
     for direction in range(direction_count):
         unit_vector = DIRECTIONS[direction]
@@ -659,7 +679,7 @@ def exhaustive_certificate() -> dict:
                         "sector_trace": trace,
                     })
             if direction == 0 and triple == (REVERSE_320[0], 0, 0):
-                landed_present = True
+                cycle320_triple_present = True
     total = direction_count * direction_count ** sector_count
     minimum_nonzero_norm = min(nonzero_trace_norms) if nonzero_trace_norms else 0
     result = {
@@ -690,7 +710,7 @@ def exhaustive_certificate() -> dict:
         "cycle868_rank1_ansatz_is_strict_subset":
             lawful_noncollinear > 0 and lawful_collinear < lawful,
         "noncollinear_lawful_examples": tuple(noncollinear_examples),
-        "landed_triple_recovered_in_sweep": landed_present,
+        "cycle320_support_triple_recovered_in_sweep": cycle320_triple_present,
         "two_routes_agree_on_every_triple": routes_agree,
         "trace_L1_norm_histogram": dict(sorted(trace_norm_histogram.items())),
         "minimum_nonzero_trace_L1_norm": minimum_nonzero_norm,
@@ -705,7 +725,7 @@ def exhaustive_certificate() -> dict:
             f"sector coefficients, a rank-one ansatz that covers only "
             f"{lawful_collinear} of the {lawful} lawful triples, yet the "
             f"remaining {lawful_noncollinear} non-collinear lawful triples are "
-            f"traceless too. The escape is also not reachable by detuning: "
+            f"traceless too. A trace-bearing variant is also not reachable by detuning: "
             f"every sector trace lies in Z^3, so the smallest nonzero trace has "
             f"L1 norm {minimum_nonzero_norm} -- a finite lattice step away from "
             f"the lawful set, with no infinitesimal perturbation in between."
@@ -715,7 +735,7 @@ def exhaustive_certificate() -> dict:
         result["closed_form_matches"]
         and result["lawful_plus_unlawful_is_total"]
         and routes_agree
-        and landed_present
+        and cycle320_triple_present
         and lawful > 0
         and isinstance(lawful_trace_bearing, int)
     )
@@ -820,22 +840,66 @@ def grading_certificate() -> dict:
         key != unit_key for key in trace_bearing_nonzero_recoil_gradings
     )
 
-    # The lawful grading locus for the landed support (m,f,a) = (rev d, d, d):
-    # 1*(-1) + w_field*(+1) + w_auxiliary*(+1) = +1, i.e. the SEGMENT
-    # w_field + w_auxiliary = 2.  Verify it on the grid rather than assert it.
-    landed_support_lawful_gradings = tuple(
+    # The lawful grading locus for the fixed support (m,f,a) = (rev d, d, d).
+    # The conservation defect is affine in (w_field, w_auxiliary) by
+    # construction (momentum_eigenvalue is a linear combination of the sector
+    # weights), so it is determined exactly by three anchor evaluations.
+    # Reconstruct it from those anchors, verify the reconstruction against a
+    # direct evaluation on every grid point, and check the closed form
+    # defect = (w_field + w_auxiliary - 2) * D[d] on every direction.  The
+    # continuous lawful locus is therefore the affine LINE
+    # w_field + w_auxiliary = 2 over unrestricted rational weights (matter
+    # weight normalised to 1) -- proved analytically, not sampled.  No
+    # bounded-segment claim is made anywhere: a segment would need a declared
+    # bounded grading domain, which this package does not supply.
+    def fixed_support_defect(direction, field_weight, auxiliary_weight):
+        return vec_sub(
+            momentum_eigenvalue(
+                (REVERSE_320[direction], direction, direction),
+                (Fraction(1), field_weight, auxiliary_weight),
+            ),
+            tuple(Fraction(component) for component in DIRECTIONS[direction]),
+        )
+
+    affine_line_identity = True
+    for direction in range(direction_count):
+        unit_vector = tuple(
+            Fraction(component) for component in DIRECTIONS[direction]
+        )
+        anchor = fixed_support_defect(direction, ZERO, ZERO)
+        field_slope = vec_sub(
+            fixed_support_defect(direction, Fraction(1), ZERO), anchor
+        )
+        auxiliary_slope = vec_sub(
+            fixed_support_defect(direction, ZERO, Fraction(1)), anchor
+        )
+        if anchor != vec_scale(Fraction(-2), unit_vector):
+            affine_line_identity = False
+        if field_slope != unit_vector or auxiliary_slope != unit_vector:
+            affine_line_identity = False
+        for field_weight in GRADING_GRID:
+            for auxiliary_weight in GRADING_GRID:
+                direct = fixed_support_defect(
+                    direction, field_weight, auxiliary_weight
+                )
+                reconstructed = vec_add(
+                    anchor,
+                    vec_add(
+                        vec_scale(field_weight, field_slope),
+                        vec_scale(auxiliary_weight, auxiliary_slope),
+                    ),
+                )
+                closed_form = vec_scale(
+                    field_weight + auxiliary_weight - 2, unit_vector
+                )
+                if direct != reconstructed or direct != tuple(closed_form):
+                    affine_line_identity = False
+
+    fixed_support_lawful_gradings = tuple(
         f"(1,{field_weight},{auxiliary_weight})"
         for field_weight in GRADING_GRID
         for auxiliary_weight in GRADING_GRID
-        if vec_zero(
-            vec_sub(
-                momentum_eigenvalue(
-                    (REVERSE_320[0], 0, 0),
-                    (Fraction(1), field_weight, auxiliary_weight),
-                ),
-                tuple(Fraction(component) for component in DIRECTIONS[0]),
-            )
-        )
+        if vec_zero(fixed_support_defect(0, field_weight, auxiliary_weight))
     )
     result = {
         "question": (
@@ -844,19 +908,29 @@ def grading_certificate() -> dict:
         ),
         "grading_grid": tuple(str(value) for value in GRADING_GRID),
         "grading_grid_declaration": (
+            "an EXPLICIT SCAN INPUT of this package, not a domain claim: "
             "matter weight normalised to 1 by the single-quantum block; field "
             "and auxiliary weights swept over halves from 0 to 3"
         ),
+        "grading_grid_is_explicit_scan_input": True,
         "gradings_swept": len(GRADING_GRID) ** 2,
         "grading_rows": tuple(rows),
         "gradings_with_lawful_supports": len(rows),
-        "landed_support_lawful_grading_locus": landed_support_lawful_gradings,
-        "landed_support_locus_is_a_segment_not_a_point":
-            len(landed_support_lawful_gradings) > 1,
+        "fixed_support_defect_closed_form":
+            "(w_field + w_auxiliary - 2) * D[direction]",
+        "closed_form_verified_by_affine_reconstruction": affine_line_identity,
+        "continuous_lawful_locus": (
+            "the affine LINE w_field + w_auxiliary = 2 over unrestricted "
+            "rational weights (matter weight normalised to 1); no bounded "
+            "segment is claimed -- that would require a declared bounded "
+            "grading domain, which this package does not supply"
+        ),
+        "fixed_support_lawful_gradings_on_grid": fixed_support_lawful_gradings,
+        "grid_points_on_locus": len(fixed_support_lawful_gradings),
         "unit_grading_on_locus":
-            "(1,1,1)" in landed_support_lawful_gradings,
+            "(1,1,1)" in fixed_support_lawful_gradings,
         "cycle318_grading_on_locus":
-            "(1,2,0)" in landed_support_lawful_gradings,
+            "(1,2,0)" in fixed_support_lawful_gradings,
         "gradings_admitting_traceless_nonzero_recoil":
             tuple(sorted(traceless_nonzero_recoil_gradings)),
         "gradings_admitting_trace_bearing_nonzero_recoil":
@@ -886,26 +960,33 @@ def grading_certificate() -> dict:
         "cycle318_route_named_by_cycle320":
             "Cycle-318 coefficient-two recoil source" in N1_ROUTES,
         "finding": (
-            f"The unit grading is not forced. Holding the landed support "
-            f"(REVERSE[d], d, d) fixed, the gradings that conserve the vector "
-            f"ledger form the whole segment w_field + w_auxiliary = 2, meeting "
-            f"the declared grid in {len(landed_support_lawful_gradings)} points, "
-            f"not one: the unit grading (1,1,1) and the Cycle-318 "
-            f"coefficient-two grading (1,2,0) both lie on it. The sweep also "
+            f"The unit grading is not forced. Holding the fixed support "
+            f"(REVERSE[d], d, d) fixed, conservation reduces to the exact "
+            f"closed form defect = (w_field + w_auxiliary - 2) * D[d], "
+            f"verified by affine reconstruction from anchor evaluations on "
+            f"every direction rather than sampled, so the continuous lawful "
+            f"locus is the affine LINE w_field + w_auxiliary = 2 over "
+            f"unrestricted rational weights with matter weight normalised to "
+            f"1 -- a line, not a point; no bounded segment is claimed. The "
+            f"declared half-step scan grid (an explicit input of this "
+            f"package) meets the line in "
+            f"{len(fixed_support_lawful_gradings)} points, among them the "
+            f"unit grading (1,1,1) and the Cycle-318 "
+            f"coefficient-two grading (1,2,0). The sweep also "
             f"kills a conjecture this cycle put up on purpose -- that non-unit "
             f"gradings could only stay traceless by having no matter recoil. "
             f"Status: {'REFUTED' if not conjecture_nonunit_traceless_implies_zero_recoil else 'NOT REFUTED'}. "
             f"The reason is the decomposition trace = defect_w + sum_s "
             f"(1 - w_s) * occupation_s, which holds on every swept pair: the "
             f"raw occupation ledger is a function of the SUPPORT alone and does "
-            f"not move when the grading moves, so the landed traceless support "
-            f"stays lawful and traceless all along the segment. What the "
+            f"not move when the grading moves, so the fixed traceless support "
+            f"stays lawful and traceless all along the line. What the "
             f"grading changes is WHICH supports are lawful, and there the "
             f"asymmetry is sharp and computed: every grading admitting a lawful "
             f"trace-bearing support with nonzero matter recoil is non-unit "
             f"({', '.join(sorted(trace_bearing_nonzero_recoil_gradings))}), and "
             f"the unit grading admits none. Tracelessness is thus guaranteed "
-            f"only at w = (1,1,1); anywhere else on the lawful segment it "
+            f"only at w = (1,1,1); anywhere else on the lawful line it "
             f"becomes a property of the particular support rather than of the "
             f"construction. Cycle-318 declares its own coefficient two to be "
             f"supplied candidate-law structure and Cycle-320 lists that route "
@@ -916,8 +997,10 @@ def grading_certificate() -> dict:
     result["pass"] = (
         len(rows) > 0
         and decomposition_holds
-        and result["landed_support_locus_is_a_segment_not_a_point"]
+        and affine_line_identity
+        and len(fixed_support_lawful_gradings) == 5
         and result["unit_grading_on_locus"]
+        and result["cycle318_grading_on_locus"]
         and result["cycle318_route_named_by_cycle320"]
         and every_trace_bearing_grading_nonunit
         and not unit_admits_trace_bearing
@@ -985,7 +1068,10 @@ def witness_certificate() -> dict:
         "witness_provenance": (
             "not invented here: the route is enumerated by name inside "
             "Cycle-320's own N1_ROUTES tuple and Cycle-318 is imported by "
-            "Cycle-320 and run as a certified comparator"
+            "Cycle-320 and run as a certified comparator; Cycle-318's own "
+            "text calls the coefficient two supplied candidate-law "
+            "structure, and whether the repo retains the route is not "
+            "adjudicated here"
         ),
         "quoted_pair_index_line": "pair_index = 6 + 6 * REVERSE[direction] + direction",
         "quoted_momentum_line": "mediator_weight * c210.DIRECTIONS[field, axis]",
@@ -1013,18 +1099,24 @@ def witness_certificate() -> dict:
             "certificate C sweeps target triples with all three sectors "
             "occupied. This witness has the auxiliary sector ABSENT, which is "
             "only lawful because the Cycle-318 grading gives that sector weight "
-            "zero, making it a momentum spectator. The escape therefore lives "
-            "in sector occupancy, and occupancy is what the grading unlocks"
+            "zero, making it a momentum spectator. Absence alone buys nothing "
+            "at unit grading -- there trace = defect for every occupancy "
+            "pattern, by the certificate-D decomposition -- so the variant "
+            "lives in the REWEIGHTING the Cycle-318 grading supplies, with "
+            "the spectator absence merely lawful bookkeeping"
         ),
         "finding": (
-            "The trace-bearing lawful variant is exhibited and it is landed "
-            "repo structure, not new physics. Cycle-318's direction_vertex "
+            "The trace-bearing lawful variant is exhibited and it is named "
+            "repo structure, not new physics -- though by its own source's "
+            "declaration it is supplied candidate-law structure, not a "
+            "derived law. Cycle-318's direction_vertex "
             "sends |d> to (matter, mediator) = (REVERSE[d], d) and conserves "
             "P_matter + 2 P_mediator exactly on all six directions, with "
             "nonzero matter recoil everywhere -- so it clears the same "
-            "retention bar Cycle-320 applies. Read in the unweighted sector "
-            "convention Cycle 868 uses, its occupation ledger embeds at the "
-            "868 scope as (-2, +1, 0) per unit carried weight, i.e. "
+            "arithmetic bar Cycle-320 applies. Read in the unweighted sector "
+            "convention the Cycle-868 package stipulates, its occupation "
+            "ledger embeds at the Cycle-868 scope as (-2, +1, 0) per unit "
+            "carried weight, i.e. "
             "(-2d, +d, 0), whose sector sum is -d and whose trace is exactly "
             "minus the carried unit direction. The unit-grading defect and the "
             "sector trace agree entry for entry, which is the same identity as "
@@ -1278,10 +1370,10 @@ def numeric_objects(array, sign: int, live: bool = True) -> dict:
     }
 
 
-LANDED_LEDGER = lambda weight: (-2 * weight, weight, weight)
+UNIT_LEDGER = lambda weight: (-2 * weight, weight, weight)
 WITNESS_LEDGER = lambda weight: (-2 * weight, weight, 0)
 LEDGERS = (
-    ("LANDED_cycle320_unit_grading", LANDED_LEDGER, "(-2d,+d,+d)"),
+    ("STIPULATED_cycle320_unit_grading", UNIT_LEDGER, "(-2d,+d,+d)"),
     ("WITNESS_cycle318_coefficient_two", WITNESS_LEDGER, "(-2d,+d,0)"),
 )
 
@@ -1378,11 +1470,12 @@ def census_certificate(members) -> dict:
             "sensitive_with_probe_disabled": dead["sensitive"],
         })
 
-    landed = censuses["LANDED_cycle320_unit_grading"]
+    unit_census = censuses["STIPULATED_cycle320_unit_grading"]
     witness = censuses["WITNESS_cycle318_coefficient_two"]
     newly_sensitive = tuple(
         name for name in OBJECT_NAMES
-        if witness["sensitive"][name] > 0 and landed["sensitive"][name] == 0
+        if witness["sensitive"][name] > 0
+        and unit_census["sensitive"][name] == 0
     )
     still_blind = tuple(
         name for name in OBJECT_NAMES if witness["sensitive"][name] == 0
@@ -1394,11 +1487,13 @@ def census_certificate(members) -> dict:
             len(members) == 2 * 6 * 6 + (6 * 6) ** 2,
         "objects": OBJECT_NAMES,
         "machinery": (
-            "the Cycle-868 census re-derived here from its definitions -- the "
-            "sigma grading G = Pi_tracefree + sigma Pi_conformal, the endpoint "
-            "reversal R, the composite K = R R through the grading, and the "
-            "six response objects -- with the 868 runner pinned and firewalled "
-            "and never imported"
+            "the Cycle-868 census machinery re-stipulated here from the "
+            "landed package's own in-file definitions -- the sigma grading "
+            "G = Pi_tracefree + sigma Pi_conformal, the endpoint reversal R, "
+            "the composite K = R R through the grading, and the six "
+            "stipulated response objects -- with the 868 runner pinned and "
+            "firewalled and never imported; the identification of these "
+            "objects with any physical response surface is OPEN"
         ),
         "ledger_rows": tuple(rows),
         "probe_disabled_rows": tuple(dead_rows),
@@ -1416,8 +1511,9 @@ def census_certificate(members) -> dict:
         ),
         "finding": (
             f"Both ledgers are pushed through the whole {len(members)}-member "
-            f"landed family. The frozen (-2d,+d,+d) ledger leaves every one of "
-            f"the six response objects blind, reproducing Cycle 868 from an "
+            f"stipulated family. The traceless (-2d,+d,+d) ledger leaves "
+            f"every one of the six stipulated response objects blind, "
+            f"reproducing the Cycle-868 exact-support census from an "
             f"independent re-derivation. The Cycle-318 witness ledger "
             f"(-2d,+d,0) makes {len(newly_sensitive)} objects sign-sensitive: "
             f"{', '.join(newly_sensitive) if newly_sensitive else 'none'}. "
@@ -1454,9 +1550,9 @@ def census_certificate(members) -> dict:
 # certificate G -- the provenance verdict
 # --------------------------------------------------------------------------
 VERDICTS = (
-    "TRACELESSNESS_DERIVED__ESCAPE_A_CLOSED_AT_SCOPE",
-    "TRACELESSNESS_SUPPLIED_VIA_SECTOR_GRADING__ESCAPE_A_OPEN",
-    "TRACELESSNESS_SUPPLIED_BUT_WITNESS_INERT__ESCAPE_A_OPEN_UNEXPLOITED",
+    "TRACELESSNESS_DERIVED_AT_FIXED_UNIT_GRADING__NO_SUPPLIED_LAYER_FOUND",
+    "TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__WITNESS_LAWFUL",
+    "TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__WITNESS_INERT",
     "PROVENANCE_UNRESOLVED",
 )
 
@@ -1470,7 +1566,7 @@ def verdict_certificate(
         and exhaustive["lawful_trace_bearing_count"] == 0
     )
     grading_supplied = (
-        grading["landed_support_locus_is_a_segment_not_a_point"]
+        grading["closed_form_verified_by_affine_reconstruction"]
         and grading["cycle318_route_named_by_cycle320"]
     )
     witness_exists = (
@@ -1482,11 +1578,20 @@ def verdict_certificate(
     if not derived_at_unit:
         verdict = "PROVENANCE_UNRESOLVED"
     elif not (grading_supplied and witness_exists):
-        verdict = "TRACELESSNESS_DERIVED__ESCAPE_A_CLOSED_AT_SCOPE"
+        verdict = (
+            "TRACELESSNESS_DERIVED_AT_FIXED_UNIT_GRADING__"
+            "NO_SUPPLIED_LAYER_FOUND"
+        )
     elif newly_sensitive:
-        verdict = "TRACELESSNESS_SUPPLIED_VIA_SECTOR_GRADING__ESCAPE_A_OPEN"
+        verdict = (
+            "TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__"
+            "WITNESS_LAWFUL"
+        )
     else:
-        verdict = "TRACELESSNESS_SUPPLIED_BUT_WITNESS_INERT__ESCAPE_A_OPEN_UNEXPLOITED"
+        verdict = (
+            "TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__"
+            "WITNESS_INERT"
+        )
     result = {
         "verdict": verdict,
         "verdict_enum": VERDICTS,
@@ -1509,13 +1614,15 @@ def verdict_certificate(
             ),
             "layer_3_sector_grading_and_occupancy": "SUPPLIED",
             "layer_3_evidence": (
-                "the lawful grading locus for the landed support is the "
-                "segment w_field + w_auxiliary = 2, not a point; every grading "
-                "admitting a lawful trace-bearing support with nonzero matter "
-                "recoil is non-unit and the unit grading admits none, so the "
-                "guarantee rides on w = (1,1,1); a sector at weight zero is a "
-                "momentum spectator and may be absent, which is the occupancy "
-                "door the witness walks through; Cycle-318's own text calls "
+                "the lawful grading locus for the fixed support is the "
+                "affine line w_field + w_auxiliary = 2, not a point; every "
+                "grading admitting a lawful trace-bearing support with "
+                "nonzero matter recoil is non-unit and the unit grading "
+                "admits none, so the guarantee rides on w = (1,1,1); at unit "
+                "weight the trace decomposition makes tracelessness an "
+                "identity over every occupancy pattern, so absence of a "
+                "sector is harmless there -- the witness needs the "
+                "reweighting, not absence alone; Cycle-318's own text calls "
                 "its coefficient two supplied candidate-law structure and "
                 "Cycle-320 lists the route by name"
             ),
@@ -1529,15 +1636,29 @@ def verdict_certificate(
         "grading_is_supplied": grading_supplied,
         "lawful_trace_bearing_variant_exists": witness_exists,
         "sign_sensitive_objects_under_the_witness": newly_sensitive,
-        "escape_a_status": (
-            "OPEN" if verdict.endswith("ESCAPE_A_OPEN")
-            or verdict.endswith("UNEXPLOITED") else "CLOSED_AT_SCOPE"
+        "cycle868_boundary_1_witnessed": bool(
+            witness_exists and newly_sensitive
         ),
-        "what_would_close_it": (
+        "boundary_reference": (
+            "boundary (1) of the landed Cycle-868 exact-support statement: a "
+            "source with a nonzero sector trace already restores "
+            "sign-sensitivity of the two objects linear in the graded "
+            "source. This package shows that boundary is reachable at this "
+            "scope only through a non-unit supplied sector grading."
+        ),
+        "what_would_derive_the_grading": (
             "a derivation of the unit sector grading (1,1,1) from the axioms "
-            "or approved primitives. Until that exists, Cycle 868's blindness "
-            "result is conditional on a supplied grading, and the conditional "
-            "should be carried explicitly wherever the blindness is used."
+            "or approved primitives. Until that exists, the tracelessness of "
+            "the stipulated ledger is conditional on a supplied grading, and "
+            "the conditional should be carried explicitly wherever the "
+            "tracelessness is used."
+        ),
+        "open_identifications_not_addressed_here": (
+            "whether the six stipulated response objects coincide with any "
+            "previously proposed response lineage, and whether the grading "
+            "sign is the physical conformal-mode sign of the emergent-gravity "
+            "lane; both are OPEN on current main and no physical-sign or "
+            "external-response-surface statement is made by this package"
         ),
         "finding": (
             "The provenance is a split, and the split is the result. Given the "
@@ -1547,27 +1668,35 @@ def verdict_certificate(
             "triple anywhere in the constructor's three-sector freedom bears "
             "trace, and the nearest trace-bearing configuration is a finite "
             "lattice step away rather than an infinitesimal detuning. But the "
-            "unit grading is SUPPLIED. The lawful gradings for the landed "
-            "support form a segment; only the unit point on it guarantees "
-            "tracelessness for every lawful support, and only at unit weight is "
-            "every sector forced to be occupied at all, since a weight-zero "
-            "sector is a momentum spectator a lawful construction may simply "
-            "omit. Cycle-318's coefficient-two point sits on that segment with "
+            "unit grading is SUPPLIED. The lawful gradings for the fixed "
+            "support form the affine line w_field + w_auxiliary = 2; only the "
+            "unit point on it guarantees tracelessness for every lawful "
+            "support, and at unit weight that guarantee is an identity over "
+            "every occupancy pattern -- a weight-zero sector is a momentum "
+            "spectator a lawful construction may omit, and absence alone is "
+            "harmless at unit weight; it is the reweighting that buys the "
+            "trace. Cycle-318's coefficient-two point sits on that line with "
             "nonzero matter recoil, its own source calls the coefficient "
             "supplied candidate-law structure, and Cycle-320 enumerates the "
-            "route by name. Pushed through the re-derived Cycle-868 census, "
-            "that witness turns the linear response objects sign-sensitive "
-            "while the quadratic ones stay blind. So escape condition (a) does "
-            "not close: it relocates. It is no longer a question about the "
-            "ledger, it is a question about the sector grading, and that is "
-            "where the next derivation has to bite."
+            "route by name. Pushed through the re-stipulated Cycle-868 "
+            "census, that witness turns the two linear stipulated objects "
+            "sign-sensitive while the quadratic ones stay blind. All of this "
+            "lives on the stipulated response-object surface: the "
+            "object-lineage and physical-sign identifications are open, so "
+            "the question this package settles is about the sector grading "
+            "of the stipulated ledger, and that is where the next derivation "
+            "has to bite."
         ),
     }
+    # The emitted finding narrates the split (derived at unit grading,
+    # supplied beneath, lawful sign-sensitive witness), so this certificate
+    # fails closed unless the computed verdict is exactly that one.
     result["pass"] = (
-        verdict in VERDICTS
-        and verdict != "PROVENANCE_UNRESOLVED"
+        verdict
+        == "TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__"
+           "WITNESS_LAWFUL"
         and isinstance(newly_sensitive, tuple)
-        and result["escape_a_status"] in {"OPEN", "CLOSED_AT_SCOPE"}
+        and result["cycle868_boundary_1_witnessed"]
     )
     return result
 
@@ -1598,13 +1727,28 @@ def render_fixed_point(certificates: dict) -> str:
             ),
             "checks": checks,
             "verdict": certificates["G_VERDICT"]["verdict"],
-            "escape_a_status": certificates["G_VERDICT"]["escape_a_status"],
+            "cycle868_boundary_1_witnessed":
+                certificates["G_VERDICT"]["cycle868_boundary_1_witnessed"],
+            "lawful_triples_at_unit_grading":
+                certificates["C_EXHAUSTIVE_TARGET_SWEEP"]["lawful_count"],
             "lawful_trace_bearing_at_unit_grading":
                 certificates["C_EXHAUSTIVE_TARGET_SWEEP"][
                     "lawful_trace_bearing_count"],
+            "minimum_nonzero_trace_L1_norm":
+                certificates["C_EXHAUSTIVE_TARGET_SWEEP"][
+                    "minimum_nonzero_trace_L1_norm"],
+            "fixed_support_lawful_gradings_on_grid":
+                certificates["D_GRADING_PROVENANCE"][
+                    "fixed_support_lawful_gradings_on_grid"],
+            "witness_ledger_sector_sum":
+                certificates["E_TRACE_BEARING_WITNESS"][
+                    "witness_ledger_sector_sum"],
             "sign_sensitive_objects_under_the_witness":
                 certificates["G_VERDICT"][
                     "sign_sensitive_objects_under_the_witness"],
+            "objects_still_blind_under_the_witness":
+                certificates["F_CENSUS_REDERIVED"][
+                    "objects_still_blind_under_the_witness"],
             "science_payload_sha256":
                 certificates["H_CONTROLS"]["science_payload_sha256"],
             "runtime_seconds": certificates["H_CONTROLS"]["runtime_seconds"],
@@ -1656,42 +1800,6 @@ def run() -> int:
         )
     )
 
-    receipt = {
-        "cycle": 873,
-        "AUDIT_INPUT_PATHS": list(AUDIT_INPUT_PATHS),
-        "expected_sha256": EXPECTED_SHA256,
-        "expected_git_blobs": EXPECTED_GIT_BLOBS,
-        "verdict": verdict["verdict"],
-        "escape_a_status": verdict["escape_a_status"],
-        "provenance_map": verdict["provenance_map"],
-        "landed_ledger_coefficients": list(forcing["landed_ledger_coefficients"]),
-        "witness_ledger_coefficients": list(witness["witness_ledger_coefficients"]),
-        "witness_ledger_sector_sum": witness["witness_ledger_sector_sum"],
-        "lawful_triples_at_unit_grading": exhaustive["lawful_count"],
-        "lawful_trace_bearing_at_unit_grading":
-            exhaustive["lawful_trace_bearing_count"],
-        "minimum_nonzero_trace_L1_norm":
-            exhaustive["minimum_nonzero_trace_L1_norm"],
-        "landed_support_lawful_grading_locus":
-            list(grading["landed_support_lawful_grading_locus"]),
-        "census_stream_sha256": {
-            name: censuses[name]["stream_sha256"] for name in censuses
-        },
-        "objects_newly_sensitive_under_the_witness":
-            list(census["objects_newly_sensitive_under_the_witness"]),
-        "objects_still_blind_under_the_witness":
-            list(census["objects_still_blind_under_the_witness"]),
-        "sensitive_witnesses": {
-            row["ledger"]: row["witnesses"] for row in census["ledger_rows"]
-        },
-    }
-    CACHE.parent.mkdir(parents=True, exist_ok=True)
-    CACHE.write_text(
-        json.dumps(receipt, indent=2, sort_keys=True, default=str) + "\n",
-        encoding="utf-8",
-    )
-    cache_digest = sha256(CACHE.read_bytes()).hexdigest()
-
     elapsed = monotonic() - started
     controls = {
         **sources,
@@ -1707,8 +1815,11 @@ def run() -> int:
             },
             "replay_census_streams": replay_census,
         },
-        "cache_path": str(CACHE.relative_to(ROOT)),
-        "cache_sha256": cache_digest,
+        "writes_nothing_to_disk": True,
+        "committed_transcript_cache": (
+            "logs/runner-cache/"
+            "frontier_cycle873_tracelessness_provenance_2026_07_28.txt"
+        ),
         "science_payload_sha256": "",
         "science_payload_note": (
             "sha256 over every certificate with the wall-clock and byte-count "

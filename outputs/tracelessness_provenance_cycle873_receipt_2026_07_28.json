@@ -2,38 +2,56 @@
  "audit": "unset",
  "authority": "none",
  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); worker conjecture refuted by its own sweep, recorded; supervisor review",
- "block": "toe-time-blockG4-20260802",
- "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "logs/runner-cache/frontier_cycle873_provenance_independent_check_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 8
+  },
+  "logs/runner-cache/frontier_cycle873_tracelessness_provenance_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 8
+  }
+ },
  "checker_attacks": {
   "landed": 0,
   "mounted": 5,
-  "notable": "occupancy sweep STRENGTHENED the result (unit-weight tracelessness is occupancy-independent)"
+  "notable": "occupancy sweep STRENGTHENED the result (unit-weight tracelessness is occupancy-independent); refutation ledger and exit code fail closed on any landed attack (planted-refutation verified: exit 1)"
  },
  "claim_type": "bounded_theorem",
- "cluster_cap_evaluation": "OPEN \u2014 4th gravity-family PR: the conservation-defect identity, the lawful grading segment, and the landed trace-bearing witness with full census are new load-bearing content; highest marginal review value of the ladder (names the wall's single supplied premise)",
- "conditional_exposure": "the 868/872 sign-invisibility wall is conditional on the supplied unit sector grading (1,1,1); closing derivation target named",
+ "conditional_exposure": "the tracelessness of the stipulated (-2d,+d,+d) ledger is derived only relative to the supplied unit sector grading (1,1,1); the object-lineage and physical-sign identifications are OPEN bridges; no physical-sign, gravity, or wall statement is made",
  "cycles": [
   873
  ],
  "files": {
   "docs/TRACELESSNESS_PROVENANCE_CYCLE873_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-   "git_blob": "8f920a0c2b9dbbd704fb51b495b5e4d49e258d1e",
-   "sha256": "143063ef386a550c6e5c564d0c8a59b580bc31fd86689101363949024d034b43"
+   "git_blob": "492471aed5dc90fdc7713b541e8b75ffa52fcfc9",
+   "sha256": "b9eb6e5bd0a6e4372e3d9bb555bdee098f9f25c735dedd738f6c278a4151f790"
+  },
+  "logs/runner-cache/frontier_cycle873_provenance_independent_check_2026_07_28.txt": {
+   "git_blob": "04358092e43c092f1257b7b340ad1b38bcbba114",
+   "sha256": "1fecc399b3f995581c1f1f95341fea420fc808b45169b22ba5bb5019d1207eee"
+  },
+  "logs/runner-cache/frontier_cycle873_tracelessness_provenance_2026_07_28.txt": {
+   "git_blob": "1e7a26945a5fc54c5ddd4e12b7c66ae6931acdae",
+   "sha256": "494bf215d79a1e42660192381dc27fef79011aa2a1c10fb14ab576dc43304702"
   },
   "scripts/frontier_cycle873_provenance_independent_check_2026_07_28.py": {
-   "git_blob": "0601c96056a19de2e2eda5606b16cd4bdadda80e",
-   "sha256": "3ef67fcb0509a482c3098be8c3e4037b5c90f08f2fc9422a13062c05dd28e1b4"
+   "git_blob": "f79fc7a9aae73e81e4a992851cd6926d1d8de10e",
+   "sha256": "e39311111eb5a435f49730c29493a452b6988588bccc72277d80a63d811c4d8c"
   },
   "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py": {
-   "git_blob": "0c5893f9b0c277fe864ed71efb38ba2c59d52d04",
-   "sha256": "08e92fde118415f32043c4fc154f8cc5aaca66af18704c024f89cde5445662de"
+   "git_blob": "e864c431ac9d5596f06d93ac6983986e70a2571d",
+   "sha256": "e2b43e90c4b17778d3cfb02dfe1990f021304edf401daae70b3e66c9aae146fc"
   }
  },
- "headline": "trace = conservation defect (polynomial identity); 90/90 lawful unit-grading triples traceless (exhaustive); lawful gradings form the segment w_field+w_aux=2; landed coefficient-two witness (Cycle 318) embeds as (-2d,+d,0) and makes O1/O3 sign-sensitive on every member",
- "independence": "cross-context (dense integer matrix route; 1.25M superposition search; occupancy sweep on the excluded axis; polynomial-free census route)",
+ "headline": "Exact support (bounded theorem) on the stipulated Cycle-868 surface: trace = conservation defect (polynomial identity); 90/90 lawful unit-grading triples traceless (exhaustive, occupancy-independent); the lawful gradings for the fixed support form the affine LINE w_field+w_aux=2 (analytic; half-step scan grid declared an explicit input, 5 grid points); the Cycle-318 coefficient-two witness embeds as (-2d,+d,0) and makes exactly the stipulated O1/O3 sign-sensitive on every family member; the unit grading (1,1,1) is a SUPPLIED normalization and the object-lineage and physical-sign identifications are OPEN",
+ "independence": "cross-context (dense integer matrix route; 1.25M superposition search; occupancy sweep on the excluded axis; polynomial-free census route; committed-transcript consistency attack)",
  "note": "docs/TRACELESSNESS_PROVENANCE_CYCLE873_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "review_loop": {
+  "iteration_1": "FIX_THEN_PROCEED (Sol, 2026-08-08): primary no longer overwrites the committed receipt (runners write nothing; committed stdout transcripts in logs/runner-cache are the checker's pinned standalone inputs); checker refutation ledger and exit code now fail closed on any landed attack (planted-refutation verified); false occupancy sentence narrowed (absence harmless at unit weight; reweighting buys the trace); 'whole segment' claim replaced by the analytically proved affine line with the scan grid declared an explicit input; Cycle-868 pin moved to the landed origin/main blob and all census structure restated as stipulations of that package; gravity-sign / single-wall / retired-framing language removed from note, docstrings, certificates and verdict enums; branch/campaign fields dropped from this receipt; note wired with links to every load-bearing authority and the checker registered as a packet helper runner"
+ },
  "runtime_seconds": {
-  "checker": 10.6,
-  "primary": 4.5
+  "checker": 10.8,
+  "primary": 6.7
  }
 }

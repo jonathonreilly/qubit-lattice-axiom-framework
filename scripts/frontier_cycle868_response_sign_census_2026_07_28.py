@@ -1,77 +1,53 @@
 #!/usr/bin/env python3
-"""Cycle 868: the response-surface sign census for the conformal sector.
+"""Cycle 868: the sign census for a stipulated response-object algebra.
 
-The gravity lane's landed shape is a source-acceptance instrument (Cycle 749)
-and a response law candidate derived as the adjoint pullback of the landed
-source algebra (Cycle 768, extended at Cycle 812).  Its unprobed residual is
-the conformal-sector sign: the one-admission reduction says gravity's sign is
-not a new admission per object but one shared orientation datum sigma.
+Everything decisive here is STIPULATED IN-FILE: the traceless three-sector
+recoil ledger (-2d, +d, +d), the k <= 2 source family on the two-endpoint
+held L=6 surface with the sector-weight ladder d = 1..6 (an explicit scope
+input of this package; no cited supplier), the sector-trace grading
+G_sigma, and the six response objects O1_PUSHFORWARD .. O6_EDGE_TRANSFER.
+The Cycle-320/322/749/768/812 lineage is provenance-only, non-load-bearing
+context; those files are NOT runner inputs or audit dependencies.  Whether
+the six stipulated objects coincide with any previously proposed response
+lineage, and whether the grading sign is the physical conformal-mode sign
+of the emergent-gravity lane, are OPEN identifications that this runner
+does not address.
 
-This cycle expands the response surface by brute force at ONE declared scope.
-It enumerates the complete landed source family, derives every landed response
-object for every member, and censuses the sigma dependence EXACTLY -- each
-object is carried as a univariate polynomial in a formal sigma, then evaluated
-at sigma = +1 and sigma = -1 over the rationals.  The question answered is not
-"what is the sign" but "can the landed response surface see the sign at all".
+The runner enumerates the declared source family, derives every stipulated
+response object for every member, and censuses the sigma dependence
+EXACTLY -- each object is carried as a univariate polynomial in a formal
+sigma, then evaluated at sigma = +1 and sigma = -1 over the rationals.
+The question answered is: can the stipulated response-object algebra see
+the sector-trace grading sign at this declared scope.
 
-All five cited primaries are SHA-pinned text/AST evidence and are blocked from
-import by a meta-path firewall.  Every number below is rebuilt here with
-stdlib exact arithmetic; no floating point enters any certified quantity.
+The provenance-only ancestor modules are blocked from import by a
+meta-path firewall (a belt: they are not consumed, and the firewall fails
+closed if anything tries).  Every number below is built here with stdlib
+exact arithmetic; no floating point enters any certified quantity.
 """
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150_000
-AUDIT_INPUT_PATHS = (
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
-    "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
-    "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
-    "scripts/frontier_cycle768_response_law_candidate_2026_07_28.py",
-    "scripts/frontier_cycle812_mixed_input_response_2026_07_28.py",
-)
+AUDIT_INPUT_PATHS = ()
 
-import ast
 from fractions import Fraction
-from hashlib import sha1, sha256
+from hashlib import sha256
 import importlib.abc
-from itertools import product
 import json
-from pathlib import Path
 import sys
 from time import monotonic
 
-ROOT = Path(__file__).resolve().parents[1]
-BLOCKLISTED_MODULES = tuple(Path(path).stem for path in AUDIT_INPUT_PATHS)
-EXPECTED_SHA256 = {
-    AUDIT_INPUT_PATHS[0]:
-        "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
-    AUDIT_INPUT_PATHS[1]:
-        "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
-    AUDIT_INPUT_PATHS[2]:
-        "ab9b852236f73ec4aecad9287e07a4029309159d956a1cb3043f9238342d6807",
-    AUDIT_INPUT_PATHS[3]:
-        "7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32",
-    AUDIT_INPUT_PATHS[4]:
-        "fe35718b8f5e84cfafed74026a5634e722da757782f04d536a756d7273d3ee9b",
-}
-EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
-    AUDIT_INPUT_PATHS[1]: "de8b90b08707c000bb2489502823b02d62e38b29",
-    AUDIT_INPUT_PATHS[2]: "cee674584704dd7d351cb2ffa947c74bee47d06e",
-    AUDIT_INPUT_PATHS[3]: "0070722d7a12d47658346b6c812edd05424ae592",
-    AUDIT_INPUT_PATHS[4]: "39b5f24595f2271704bf68197103b62824a14cbf",
-}
-REQUIRED_AST_MARKERS = {
-    AUDIT_INPUT_PATHS[0]: ("ANGLE", "link_recoil_vertex"),
-    AUDIT_INPUT_PATHS[1]: ("ENDPOINTS", "LEFT", "RIGHT"),
-    AUDIT_INPUT_PATHS[2]: ("BUILT_IN_CANDIDATES", "evaluate_candidate"),
-    AUDIT_INPUT_PATHS[3]: (
-        "derive_recoil_coefficients",
-        "derive_response_kernel_candidate",
-        "derive_transfer_coefficients",
-    ),
-    AUDIT_INPUT_PATHS[4]: ("response_rows",),
-}
+# Provenance-only ancestor modules (non-load-bearing context).  They are not
+# read, hashed, or otherwise consumed by this runner; the blocklist is a belt
+# that fails closed if any of them is ever imported.
+BLOCKLISTED_MODULES = (
+    "unit_weight_carried_link_recoil_cycle320_2026_07_18",
+    "two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18",
+    "frontier_cycle749_response_comparison_harness_2026_07_28",
+    "frontier_cycle768_response_law_candidate_2026_07_28",
+    "frontier_cycle812_mixed_input_response_2026_07_28",
+)
 
 
 class _PrimaryFirewall(importlib.abc.MetaPathFinder):
@@ -121,8 +97,8 @@ ZERO = Fraction(0)
 THIRD = Fraction(1, 3)
 
 
-def landed_ledger(weight: int) -> tuple[int, int, int]:
-    """The frozen Cycle-320 recoil ledger (-2d, +d, +d)."""
+def stipulated_ledger(weight: int) -> tuple[int, int, int]:
+    """The stipulated traceless recoil ledger (-2d, +d, +d), defined in-file."""
     return (-2 * weight, weight, weight)
 
 
@@ -201,7 +177,7 @@ def p_text(poly: Poly) -> str:
 
 
 # --------------------------------------------------------------------------
-# the landed source family at the declared scope
+# the declared source family at the declared scope
 # --------------------------------------------------------------------------
 Member = tuple
 
@@ -257,7 +233,7 @@ def member_sources(member: Member) -> tuple[tuple[int, int, int], ...]:
 
 def source_array(
     member: Member,
-    ledger=landed_ledger,
+    ledger=stipulated_ledger,
 ) -> tuple[tuple[tuple[Fraction, ...], ...], ...]:
     """S[endpoint][sector][axis] from the recoil ledger carried on directions."""
     grid = [
@@ -349,7 +325,7 @@ def grading_operator(poly_array, live: bool = True) -> tuple:
 
 
 def graded_source(array, live: bool = True) -> tuple:
-    """S(sigma) = G_sigma applied to the landed source (identity at sigma=1)."""
+    """S(sigma) = G_sigma applied to the stipulated source (identity at sigma=1)."""
     return grading_operator(lift_to_poly(array), live)
 
 
@@ -373,7 +349,7 @@ def adjoint_pullback(array, live: bool = True) -> tuple:
 
 
 # --------------------------------------------------------------------------
-# the landed response objects
+# the stipulated response objects
 # --------------------------------------------------------------------------
 def response_objects(array, live: bool = True) -> dict[str, tuple[Poly, ...]]:
     graded = graded_source(array, live)
@@ -444,10 +420,6 @@ def digest(value: object) -> str:
     return sha256(compact(value).encode()).hexdigest()
 
 
-def git_blob(payload: bytes) -> str:
-    return sha1(f"blob {len(payload)}\0".encode() + payload).hexdigest()
-
-
 def fraction_text(value: Fraction) -> str:
     return f"{value.numerator}/{value.denominator}"
 
@@ -471,18 +443,20 @@ def scope_certificate() -> dict[str, object]:
     ledger_rows = tuple(
         {
             "weight": weight,
-            "ledger": landed_ledger(weight),
-            "sector_sum": sum(landed_ledger(weight)),
+            "ledger": stipulated_ledger(weight),
+            "sector_sum": sum(stipulated_ledger(weight)),
         }
         for weight in WEIGHTS
     )
     result = {
         "scope_declaration": (
-            "sectors=(matter,field,auxiliary); recoil ledger (-2d,+d,+d); "
-            "directions=6 signed axis directions of Z^3; carried weights "
-            "d=1..6 set by the held L=6 edge; endpoints=(LEFT,RIGHT) with "
-            "R(X)=P X P^T the reversal exchange; source multiplicity k in "
-            "{1,2}, k=2 seating one source at each endpoint"
+            "sectors=(matter,field,auxiliary); stipulated recoil ledger "
+            "(-2d,+d,+d); directions=6 signed axis directions of Z^3; carried "
+            "weights d=1..6 declared with cardinality matching the held L=6 "
+            "edge (an explicit scope input; no cited supplier); "
+            "endpoints=(LEFT,RIGHT) with R(X)=P X P^T the reversal exchange; "
+            "source multiplicity k in {1,2}, k=2 seating one source at each "
+            "endpoint"
         ),
         "sector_count": len(SECTORS),
         "direction_count": len(DIRECTIONS),
@@ -493,8 +467,8 @@ def scope_certificate() -> dict[str, object]:
         "reverse_is_involution": reverse_is_involution,
         "reverse_is_fixed_point_free": reverse_free,
         "reverse_negates_direction": reverse_negates,
-        "landed_ledger_rows": ledger_rows,
-        "landed_ledger_sector_sums": tuple(
+        "stipulated_ledger_rows": ledger_rows,
+        "stipulated_ledger_sector_sums": tuple(
             row["sector_sum"] for row in ledger_rows
         ),
         "sigma_grading": "S(sigma)=tracefree(S)+sigma*conformal(S)/3",
@@ -502,12 +476,14 @@ def scope_certificate() -> dict[str, object]:
         "object_arity": OBJECT_ARITY,
         "finding": (
             "The scope is declared as a finite closed structure: three sectors "
-            "carrying the frozen (-2d,+d,+d) recoil ledger, six signed axis "
-            "directions closed under a fixed-point-free negating reversal, six "
-            "carried weights set by the held L=6 edge, two endpoints exchanged "
-            "by a self-adjoint involution, and source multiplicity one or two. "
-            "The conformal sector is the sector trace; the formal sign sigma "
-            "scales that channel and only that channel."
+            "carrying the stipulated (-2d,+d,+d) recoil ledger, six signed "
+            "axis directions closed under a fixed-point-free negating "
+            "reversal, six carried weights declared with cardinality matching "
+            "the held L=6 edge (an explicit scope input; no cited supplier), "
+            "two endpoints exchanged by a self-adjoint involution, and source "
+            "multiplicity one or two. The conformal sector is the sector "
+            "trace; the formal sign sigma scales that channel and only that "
+            "channel."
         ),
     }
     result["pass"] = (
@@ -550,8 +526,8 @@ def family_certificate() -> tuple[tuple[Member, ...], dict[str, object]]:
             sorted(map(compact, odometer)) == sorted(map(compact, nested)),
         "family_digest": digest(sorted(map(compact, nested))),
         "finding": (
-            f"The landed source family at the declared scope is finite and "
-            f"exhausted: {counts['k1']} single-source configurations and "
+            f"The declared source family at the declared scope is finite and "
+            f"fully enumerated: {counts['k1']} single-source configurations and "
             f"{counts['k2']} two-source configurations, {len(nested)} in "
             f"total, matching the closed form 2*6*6 + (6*6)^2 exactly, all "
             f"distinct, and reproduced member-for-member by an independent "
@@ -624,13 +600,13 @@ def objects_certificate(members: tuple[Member, ...]) -> dict[str, object]:
         "worked_member": ("k2", 0, 1, 2, 3),
         "worked_member_rows": tuple(sample_rows),
         "finding": (
-            "Six landed response objects are derived for every member of the "
+            "Six stipulated response objects are derived for every member of the "
             "family, each carried as an exact rational polynomial in the "
-            "formal conformal sign. Arities are exact everywhere, no object "
+            "formal grading sign. Arities are exact everywhere, no object "
             "exceeds sigma-degree 2, and the grading reduces to the undeformed "
-            "landed source at sigma=+1 for every member, so the deformation is "
-            "a genuine one-parameter extension of the landed surface rather "
-            "than a different surface."
+            "stipulated source at sigma=+1 for every member, so the deformation "
+            "is a genuine one-parameter extension of the stipulated surface "
+            "rather than a different surface."
         ),
     }
     result["pass"] = arity_ok and degree_ok and identity_ok and max_degree <= SIGMA_DEGREE_BOUND
@@ -687,8 +663,8 @@ def run_census(members: tuple[Member, ...], live: bool = True) -> dict[str, obje
         "pair_count": len(members) * len(OBJECT_NAMES),
         "blind": blind,
         "sensitive": sensitive,
-        "attributed_M1_only": structurally_even,
-        "attributed_M2_only": conformal_zero,
+        "attributed_structural_sigma_evenness_only": structurally_even,
+        "attributed_ledger_sector_trace_zero_only": conformal_zero,
         "attributed_both": both,
         "unattributed_blind": unattributed,
         "conformal_nonzero_members": conformal_nonzero_members,
@@ -705,8 +681,8 @@ def census_certificate(members: tuple[Member, ...]) -> dict[str, object]:
         for name in OBJECT_NAMES
     )
     attribution_ok = all(
-        census["attributed_M1_only"][name]
-        + census["attributed_M2_only"][name]
+        census["attributed_structural_sigma_evenness_only"][name]
+        + census["attributed_ledger_sector_trace_zero_only"][name]
         + census["attributed_both"][name]
         + census["unattributed_blind"][name]
         == census["blind"][name]
@@ -726,7 +702,7 @@ def census_certificate(members: tuple[Member, ...]) -> dict[str, object]:
             f"Every one of the {census['pair_count']} (member, response "
             f"object) pairs was evaluated exactly at sigma=+1 and sigma=-1 "
             f"over the rationals. {sensitive_total} pairs differ; "
-            f"{blind_total} pairs are identical. The landed source family "
+            f"{blind_total} pairs are identical. The declared source family "
             f"carries a nonzero conformal channel in "
             f"{census['conformal_nonzero_members']} of {len(members)} members, "
             f"and every blind pair is accounted for by the mechanism partition "
@@ -764,7 +740,7 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
     conformal_balanced = conformal_channel(balanced)
     conformal_unbalanced = conformal_channel(unbalanced)
     ledger_sums_zero = all(
-        sum(landed_ledger(weight)) == 0 for weight in WEIGHTS
+        sum(stipulated_ledger(weight)) == 0 for weight in WEIGHTS
     )
     # The declared weight ladder d = 1..6 is a truncation.  Close it: carry d
     # itself as a formal indeterminate and show the ledger's sector sum is the
@@ -794,7 +770,7 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
             for _endpoint in ENDPOINTS
         ]
         for endpoint, direction, weight in sources:
-            for sector, coefficient in enumerate(landed_ledger(weight)):
+            for sector, coefficient in enumerate(stipulated_ledger(weight)):
                 for axis in range(AXES):
                     grid[endpoint][sector][axis] += Fraction(
                         coefficient * DIRECTIONS[direction][axis]
@@ -822,9 +798,26 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
                      for sector in range(len(SECTORS))), ZERO
                 ) != 0:
                     cross_terms_vanish = False
+
+    def poly_is_odd(poly: Poly) -> bool:
+        return all(value == 0 for value in poly[0::2])
+
+    o3_odd_generic = all(
+        poly_is_odd(poly)
+        for poly in unbalanced_objects["O3_FLUX_BALANCE"]
+    )
+    o1_neither_even_nor_odd_generic = (
+        not all(p_is_even(poly)
+                for poly in unbalanced_objects["O1_PUSHFORWARD"])
+        and not all(poly_is_odd(poly)
+                    for poly in unbalanced_objects["O1_PUSHFORWARD"])
+    )
     result = {
-        "M1_name": "adjoint evenness / channel orthogonality",
-        "M1_statement": (
+        "structural_sigma_evenness_name": (
+            "structural sigma-evenness mechanism (alias M1): adjoint "
+            "evenness / channel orthogonality"
+        ),
+        "structural_sigma_evenness_statement": (
             "any response object that factors through R*R, or through a "
             "contraction quadratic in the graded source, is an even "
             "polynomial in sigma: the exchange is a self-adjoint involution "
@@ -832,22 +825,25 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
             "sector-orthogonal to the conformal channel so every cross term "
             "vanishes identically"
         ),
-        "M1_objects": m1_objects,
-        "M1_witness_unbalanced_source_still_even": tuple(
+        "structural_sigma_evenness_objects": m1_objects,
+        "structural_sigma_evenness_witness_unbalanced_source_still_even": tuple(
             {
                 "object": name,
                 "even": all(p_is_even(poly) for poly in unbalanced_objects[name]),
             }
             for name in OBJECT_NAMES
         ),
-        "M2_name": "conformal annihilation by the landed ledger",
-        "M2_statement": (
-            "the frozen recoil ledger (-2d,+d,+d) has sector sum zero for "
-            "every carried weight, so the conformal channel of every landed "
+        "ledger_sector_trace_zero_name": (
+            "ledger sector-trace-zero mechanism (alias M2): conformal "
+            "annihilation by the stipulated traceless ledger"
+        ),
+        "ledger_sector_trace_zero_statement": (
+            "the stipulated recoil ledger (-2d,+d,+d) has sector sum zero for "
+            "every carried weight, so the conformal channel of every declared "
             "source vanishes identically and sigma multiplies zero"
         ),
-        "M2_objects": m2_objects,
-        "landed_ledger_sector_sums_all_zero": ledger_sums_zero,
+        "ledger_sector_trace_zero_objects": m2_objects,
+        "stipulated_ledger_sector_sums_all_zero": ledger_sums_zero,
         "symbolic_ledger_in_d": tuple(p_text(poly) for poly in symbolic_ledger),
         "symbolic_ledger_sector_sum": p_text(symbolic_sum),
         "symbolic_sector_sum_is_zero_polynomial": symbolic_sum == POLY_ZERO,
@@ -870,15 +866,15 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
         ),
         "tracefree_sector_sum_vanishes_sampled": cross_terms_vanish,
         "sampled_members_for_cross_terms": 120,
-        "M1_objects_even_for_balanced_source": all(
+        "structural_sigma_evenness_objects_even_for_balanced_source": all(
             all(p_is_even(poly) for poly in balanced_objects[name])
             for name in m1_objects
         ),
-        "M1_objects_even_for_unbalanced_source": all(
+        "structural_sigma_evenness_objects_even_for_unbalanced_source": all(
             all(p_is_even(poly) for poly in unbalanced_objects[name])
             for name in m1_objects
         ),
-        "M2_objects_odd_only_under_conformal_load": all(
+        "ledger_sector_trace_zero_objects_sigma_sensitive_under_conformal_load": all(
             not all(p_is_even(poly) for poly in unbalanced_objects[name])
             for name in m2_objects
         ),
@@ -896,17 +892,24 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
                     for poly in unbalanced_objects["O1_PUSHFORWARD"]
                     if poly})
         ),
+        "O3_FLUX_BALANCE_sigma_odd_for_generic_source": o3_odd_generic,
+        "O1_PUSHFORWARD_neither_even_nor_odd_for_generic_source":
+            o1_neither_even_nor_odd_generic,
         "finding": (
-            f"Two independent mechanisms make the conformal sign invisible, "
+            f"Two independent mechanisms make the grading sign invisible, "
             f"and they cover disjoint object classes. {len(m1_objects)} "
-            f"objects ({', '.join(m1_objects)}) are even in sigma no matter "
-            f"what the source is -- the exchange is a self-adjoint involution "
-            f"and the trace-free channel is sector-orthogonal to the conformal "
-            f"channel, so sigma can only enter squared. The remaining "
-            f"{len(m2_objects)} objects ({', '.join(m2_objects)}) are odd in "
-            f"sigma and become sign-sensitive the moment the source carries a "
-            f"conformal channel; they are blind here only because the frozen "
-            f"(-2d,+d,+d) ledger "
+            f"objects ({', '.join(m1_objects)}) fall to the structural "
+            f"sigma-evenness mechanism (alias M1): they are even in sigma no "
+            f"matter what the source is -- the exchange is a self-adjoint "
+            f"involution and the trace-free channel is sector-orthogonal to "
+            f"the conformal channel, so sigma can only enter squared. The "
+            f"remaining {len(m2_objects)} objects fall to the ledger "
+            f"sector-trace-zero mechanism (alias M2): O3_FLUX_BALANCE is "
+            f"sigma-odd; O1_PUSHFORWARD carries a sigma-sensitive linear "
+            f"component and is neither even nor odd for a generic source. "
+            f"Both become sign-sensitive the moment the source carries a "
+            f"conformal channel; they are blind here only because the "
+            f"stipulated (-2d,+d,+d) ledger "
             + ("sums to zero in every sector for every carried weight"
                if ledger_sums_zero else
                "does NOT sum to zero at every carried weight")
@@ -925,24 +928,30 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
             + "."
         ),
     }
-    # Bookkeeping only.  The mechanism classification must be a well formed
-    # partition of the objects, the projector must be internally consistent,
-    # and the off-scope calibration probe must actually carry the conformal
-    # load it is supposed to carry.  Whether the LANDED family is annihilated
-    # is reported as data above and is deliberately NOT gated here.
+    # This gate fails closed on every advertised closure: the mechanism
+    # classification must be a well formed partition of the objects, the
+    # calibration probe must carry the conformal load it is supposed to
+    # carry, the emitted parity claims must hold as computed, the formal-d
+    # sector sum must be the zero polynomial, and every extreme-multiplicity
+    # spot check must report a zero conformal channel.
     result["gate_scope"] = (
-        "bookkeeping only: object partition well formed, projector identity "
-        "holds, calibration probe carries conformal load, all declared "
-        "spot-checks evaluated; the landed annihilation itself is reported, "
-        "not gated"
+        "fails closed on the advertised closures: object partition well "
+        "formed, calibration probe carries conformal load, emitted parity "
+        "claims computed true, formal-d sector sum is the zero polynomial, "
+        "and every extreme-multiplicity spot check reports a zero conformal "
+        "channel"
     )
     result["pass"] = (
         set(m1_objects) | set(m2_objects) == set(OBJECT_NAMES)
         and not (set(m1_objects) & set(m2_objects))
         and cross_terms_vanish
         and result["unbalanced_conformal_is_nonzero"]
+        and o3_odd_generic
+        and o1_neither_even_nor_odd_generic
         and len(extreme_rows) == 3
         and isinstance(symbolic_sum, tuple)
+        and all(coeff == 0 for coeff in symbolic_sum)
+        and extreme_all_zero
     )
     return result
 
@@ -951,9 +960,9 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
 # certificate F -- instrument calibration (anti-vacuity)
 # --------------------------------------------------------------------------
 PREREGISTERED_CONTROLS = {
-    "P1_unbalanced_ledger": "SENSITIVE_ON_ODD_OBJECTS",
-    "P2_pure_conformal_source": "SENSITIVE_ON_ODD_OBJECTS",
-    "P3_landed_balanced_source": "BLIND_EVERYWHERE",
+    "P1_unbalanced_ledger": "FIRES_ON_EVERY_SIGMA_SENSITIVE_OBJECT",
+    "P2_pure_conformal_source": "FIRES_ON_EVERY_SIGMA_SENSITIVE_OBJECT",
+    "P3_stipulated_balanced_source": "BLIND_EVERYWHERE",
     "P4_adversary_disabled_grading": "BLIND_EVERYWHERE",
 }
 
@@ -971,27 +980,27 @@ def probe_reading(array, live: bool = True) -> dict[str, bool]:
 
 def calibration_certificate() -> dict[str, object]:
     seed = ("k2", 1, 3, 4, 2)
-    landed = source_array(seed)
+    stipulated = source_array(seed)
     unbalanced = source_array(seed, ledger=lambda w: (-2 * w, w, w + 1))
     pure_conformal = source_array(seed, ledger=lambda w: (w, w, w))
-    odd_objects = tuple(
+    sigma_sensitive_objects = tuple(
         name for name in OBJECT_NAMES
         if not all(p_is_even(poly) for poly in response_objects(unbalanced)[name])
     )
     p1 = probe_reading(unbalanced)
     p2 = probe_reading(pure_conformal)
-    p3 = probe_reading(landed)
+    p3 = probe_reading(stipulated)
     p4 = probe_reading(unbalanced, live=False)
-    p1_ok = all(p1[name] for name in odd_objects) and any(p1.values())
-    p2_ok = all(p2[name] for name in odd_objects) and any(p2.values())
+    p1_ok = all(p1[name] for name in sigma_sensitive_objects) and any(p1.values())
+    p2_ok = all(p2[name] for name in sigma_sensitive_objects) and any(p2.values())
     p3_ok = not any(p3.values())
     p4_ok = not any(p4.values())
     result = {
         "preregistered": PREREGISTERED_CONTROLS,
-        "odd_objects_under_conformal_load": odd_objects,
+        "sigma_sensitive_objects_under_conformal_load": sigma_sensitive_objects,
         "P1_unbalanced_ledger_readings": p1,
         "P2_pure_conformal_readings": p2,
-        "P3_landed_balanced_readings": p3,
+        "P3_stipulated_balanced_readings": p3,
         "P4_adversary_disabled_grading_readings": p4,
         "P1_met": p1_ok,
         "P2_met": p2_ok,
@@ -999,17 +1008,17 @@ def calibration_certificate() -> dict[str, object]:
         "P4_met": p4_ok,
         "calibration_scope_note": (
             "P1, P2 and P4 are OFF-SCOPE synthetic probes. They calibrate the "
-            "detector's discriminating power and say nothing about the landed "
-            "family; they are the anti-vacuity gate that stops a no-go from "
-            "resting on a blind instrument."
+            "detector's discriminating power and say nothing about the "
+            "declared family; they are the anti-vacuity gate that stops a "
+            "blindness claim from resting on a blind instrument."
         ),
         "finding": (
             "Instrument calibration against the four pre-registered probes: "
             + "the detuned-ledger probe "
             + ("fired" if p1_ok else "FAILED to fire")
-            + " on every sigma-odd object, the pure-conformal probe "
+            + " on every sigma-sensitive object, the pure-conformal probe "
             + ("fired" if p2_ok else "FAILED to fire")
-            + ", the landed balanced source "
+            + ", the stipulated balanced source "
             + ("read blind everywhere" if p3_ok else "did NOT read blind")
             + ", and the adversary run that carries the conformal channel at "
             + "degree zero -- disabling the sigma probe while changing nothing "
@@ -1019,13 +1028,14 @@ def calibration_certificate() -> dict[str, object]:
             + ". Taken together the instrument is "
             + ("demonstrably able" if (p1_ok and p2_ok and p4_ok)
                else "NOT shown able")
-            + " to see the conformal sign when the sign is present, so a blind "
-            + "reading on the landed family is evidence rather than a dead "
+            + " to see the grading sign when the sign is present, so a blind "
+            + "reading on the declared family is evidence rather than a dead "
             + "detector."
         ),
     }
     result["pass"] = (
-        p1_ok and p2_ok and p3_ok and p4_ok and len(odd_objects) > 0
+        p1_ok and p2_ok and p3_ok and p4_ok
+        and len(sigma_sensitive_objects) > 0
     )
     return result
 
@@ -1043,29 +1053,35 @@ def verdict_certificate(
     elif unattributed > 0:
         verdict = "SIGN_INVISIBLE_BUT_PARTLY_UNEXPLAINED"
     else:
-        verdict = "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE"
+        verdict = "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE"
     result = {
         "verdict_function": (
             "sensitive_total>0 -> CONSTRAINS; else unattributed>0 -> "
-            "INVISIBLE_BUT_PARTLY_UNEXPLAINED; else SCOPED_NO_GO"
+            "INVISIBLE_BUT_PARTLY_UNEXPLAINED; else EXACT_SUPPORT"
         ),
         "sensitive_total": sensitive_total,
         "unattributed_blind_total": unattributed,
         "verdict": verdict,
         "scope_of_the_claim": (
-            "the declared scope only: the landed k<=2 source family on the "
-            "two-endpoint held L=6 surface with the frozen (-2d,+d,+d) ledger "
-            "and the six landed response objects"
+            "the declared scope only: the k<=2 source family on the "
+            "two-endpoint held L=6 surface, with the sector-weight ladder "
+            "d=1..6 carried as an EXPLICIT SCOPE INPUT (not supplied by any "
+            "cited source), the stipulated traceless (-2d,+d,+d) ledger, and "
+            "the six response objects AS STIPULATED IN THIS PACKAGE; their "
+            "identification with any previously proposed response lineage and the "
+            "identification of the sector-trace grading with the physical "
+            "conformal-mode sign are OPEN bridges, not established here"
         ),
         "named_escape_conditions": (
-            "the no-go dies if EITHER (a) a landed source acquires a nonzero "
-            "sector trace, i.e. the recoil ledger stops summing to zero, which "
-            "immediately makes O1_PUSHFORWARD and O3_FLUX_BALANCE "
-            "sign-sensitive; OR (b) a response object is admitted that is "
-            "linear in the endpoint exchange rather than factoring through "
-            "R*R and is not a sector-orthogonal contraction. Mechanism M1 "
-            "survives (a) alone and mechanism M2 survives (b) alone, so both "
-            "must fail together for the response surface to see the sign"
+            "boundaries of the exact-support statement: (a) a source with a "
+            "nonzero sector trace ALREADY restores sign-sensitivity of "
+            "O1_PUSHFORWARD and O3_FLUX_BALANCE, so the blanket blindness "
+            "statement dies under (a) alone; the structural sigma-evenness "
+            "mechanism (M1) still covers its four objects under (a). (b) an "
+            "admitted response object linear in the endpoint exchange (not "
+            "factoring through R*R, not a sector-orthogonal contraction) "
+            "escapes M1. The two mechanisms have SEPARATE escape boundaries; "
+            "no joint-failure condition exists"
         ),
         "what_is_not_claimed": (
             "no statement is made about the value of the conformal sign, about "
@@ -1073,37 +1089,38 @@ def verdict_certificate(
             "outside the declared six"
         ),
         "finding": (
-            f"At the declared scope the conformal-sector sign is invisible to "
-            f"the response surface: no landed response object on any member of "
-            f"the complete landed source family distinguishes sigma=+1 from "
-            f"sigma=-1, and the invisibility is fully explained by two "
-            f"mechanisms with no residue. This is a scoped no-go, not a "
-            f"selection: the one-admission reduction survives untouched, and "
-            f"the response surface is now shown to be the wrong instrument to "
-            f"discharge it. The escape is named and is exactly the conformal "
-            f"channel of the recoil ledger."
-        ) if verdict.startswith("SCOPED_NO_GO") else (
+            f"At the declared scope the sector-trace grading sign is invisible "
+            f"to the stipulated response-object algebra: no stipulated object "
+            f"on any member of the declared source family distinguishes "
+            f"sigma=+1 from sigma=-1, and the invisibility is fully explained "
+            f"by two mechanisms with no residue. This is exact algebraic "
+            f"support and nothing stronger: the identifications with any "
+            f"previously proposed response lineage and with the physical "
+            f"conformal-mode sign are open bridges, and the one-admission "
+            f"reduction is untouched."
+        ) if verdict.startswith("EXACT_SUPPORT") else (
             f"The census returned {sensitive_total} sign-sensitive pairs, so "
-            f"the landed response surface DOES constrain the conformal-sector "
-            f"sign at the declared scope; the sensitive objects and their "
-            f"members are recorded in the census certificate."
+            f"the stipulated response surface DOES constrain the sector-trace "
+            f"grading sign at the declared scope; the sensitive objects and "
+            f"their members are recorded in the census certificate."
         ) if sensitive_total > 0 else (
-            f"No landed response object distinguishes the two signs, but "
+            f"No stipulated response object distinguishes the two signs, but "
             f"{unattributed} blind pairs are not explained by either declared "
             f"mechanism. The invisibility is real at this scope and its cause "
-            f"is not fully identified, so no no-go is claimed; the "
+            f"is not fully identified, so nothing beyond the raw census is claimed; the "
             f"unattributed pairs are the next object of work."
         ),
     }
     result["mechanism_object_cover_complete"] = (
-        set(mechanisms["M1_objects"]) | set(mechanisms["M2_objects"])
+        set(mechanisms["structural_sigma_evenness_objects"])
+        | set(mechanisms["ledger_sector_trace_zero_objects"])
         == set(OBJECT_NAMES)
     )
     result["pass"] = (
         verdict in {
             "RESPONSE_SURFACE_CONSTRAINS_THE_CONFORMAL_SIGN",
             "SIGN_INVISIBLE_BUT_PARTLY_UNEXPLAINED",
-            "SCOPED_NO_GO_SIGN_INVISIBLE_TO_THE_RESPONSE_SURFACE",
+            "EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE",
         }
         and isinstance(sensitive_total, int)
         and isinstance(unattributed, int)
@@ -1118,44 +1135,22 @@ def verdict_certificate(
 # certificate H -- source and process controls
 # --------------------------------------------------------------------------
 def source_controls() -> dict[str, object]:
-    payloads = {path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS}
-    rows = []
-    markers_ok = True
-    for path in AUDIT_INPUT_PATHS:
-        payload = payloads[path]
-        tree = ast.parse(payload, filename=path)
-        names: set[str] = set()
-        for node in tree.body:
-            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
-                names.add(node.name)
-            elif isinstance(node, ast.Assign):
-                for target in node.targets:
-                    if isinstance(target, ast.Name):
-                        names.add(target.id)
-            elif isinstance(node, ast.AnnAssign) and isinstance(node.target, ast.Name):
-                names.add(node.target.id)
-        present = set(REQUIRED_AST_MARKERS[path]) <= names
-        markers_ok = markers_ok and present
-        rows.append({
-            "path": path,
-            "exists_worktree_relative":
-                not Path(path).is_absolute() and (ROOT / path).is_file(),
-            "sha256": sha256(payload).hexdigest(),
-            "sha256_exact":
-                sha256(payload).hexdigest() == EXPECTED_SHA256[path],
-            "git_blob": git_blob(payload),
-            "git_blob_exact": git_blob(payload) == EXPECTED_GIT_BLOBS[path],
-            "AST_valid": True,
-            "required_markers": REQUIRED_AST_MARKERS[path],
-            "required_markers_present": present,
-            "access": "TEXT_AST_ONLY_BLOCKLISTED_PRIMARY",
-        })
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "literal_path_count": len(AUDIT_INPUT_PATHS),
-        "read_cap": 6,
-        "source_rows": tuple(rows),
-        "all_markers_present": markers_ok,
+        "read_cap": 0,
+        "source_rows": (),
+        "stipulated_in_file": (
+            "the recoil ledger (-2d,+d,+d), the declared source family, the "
+            "sector-trace grading, and the six response objects are "
+            "stipulated in this file; no repository file is consumed as "
+            "evidence and no audit input is declared"
+        ),
+        "provenance_only_context": (
+            "the Cycle-320/322/749/768/812 lineage is non-load-bearing "
+            "provenance context, not a runner input or audit dependency; its "
+            "modules stay import-blocklisted as a belt"
+        ),
         "BLOCKLIST": BLOCKLISTED_MODULES,
         "blocked_modules_loaded": tuple(
             name for name in BLOCKLISTED_MODULES if name in sys.modules
@@ -1164,15 +1159,7 @@ def source_controls() -> dict[str, object]:
         "executable_science_inputs": (),
     }
     result["sources_pass"] = (
-        len(rows) <= 6
-        and all(
-            row["exists_worktree_relative"]
-            and row["sha256_exact"]
-            and row["git_blob_exact"]
-            and row["required_markers_present"]
-            for row in rows
-        )
-        and markers_ok
+        len(AUDIT_INPUT_PATHS) == 0
         and not result["blocked_modules_loaded"]
         and not result["firewall_hits"]
     )
@@ -1254,8 +1241,8 @@ def run() -> int:
         and replay_census["sensitive"] == census["sensitive"]
         and replay_calibration["P1_unbalanced_ledger_readings"]
         == calibration["P1_unbalanced_ledger_readings"]
-        and replay_calibration["P3_landed_balanced_readings"]
-        == calibration["P3_landed_balanced_readings"]
+        and replay_calibration["P3_stipulated_balanced_readings"]
+        == calibration["P3_stipulated_balanced_readings"]
     )
     elapsed = monotonic() - started
     controls = {
@@ -1281,12 +1268,13 @@ def run() -> int:
         ),
         "firewall_hits_after_science": tuple(FIREWALL.hits),
         "finding": (
-            "All five cited primaries matched their pinned SHA-256 and git "
-            "blob hashes, carried their required AST markers, and stayed "
-            "text/AST-only behind the import firewall; no primary was loaded "
-            "at any point. The full census was recomputed from scratch and "
-            "reproduced byte-for-byte, and both the runtime and stdout caps "
-            "were respected."
+            "This runner consumes no repository audit inputs: the ledger, the "
+            "source family, the grading, and the six response objects are "
+            "stipulated in-file, and the provenance-only ancestor modules "
+            "stayed import-blocklisted with zero firewall hits. The full "
+            "census was recomputed from scratch and reproduced "
+            "byte-for-byte, and both the runtime and stdout caps were "
+            "respected."
         ),
     }
     controls["base_pass"] = (

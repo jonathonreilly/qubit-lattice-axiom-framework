@@ -1,4 +1,4 @@
-# The response surface cannot see the conformal-sector sign — Cycle 868
+# A traceless three-sector ledger is invisible to the stipulated response-object algebra — Cycle 868 (exact support; physical identifications open)
 
 Date: 2026-08-03
 
@@ -6,11 +6,14 @@ Authority: none
 
 Audit: unset
 
-Status: scoped no-go (one worker-authored primary and one independent
-checker spec'd to refute; owner-directed campaign-5 wave 1; no axiom
-surface touched)
+Status: exact algebraic support (demoted at review-loop iteration 1,
+2026-08-08, because two load-bearing identifications are open — see the
+review record below for what was demoted and why; one worker-authored
+primary and one independent checker spec'd to refute; no axiom surface
+touched). The filename's historical token is provenance only; the claim
+type below governs.
 
-Claim type: no_go
+Claim type: bounded_theorem
 
 Runners:
 
@@ -27,7 +30,7 @@ status.
 
 Worker disclosure: authored by a Claude Opus 5 worker under supervisor
 spec (codex quota exhausted 2026-08-03; substitution disclosed in the
-campaign STATE); supervisor line-by-line review including independent
+work-log state file); supervisor line-by-line review including independent
 hand-verification of the sigma-parity mechanism. Checker independence is
 cross-context, not cross-model, for this block. The worker consulted 7
 repo files against a 6-file spec cap (5 by targeted grep/head only) —
@@ -36,103 +39,93 @@ required.
 
 ## The claim, exactly
 
-At the declared scope — the complete landed source family (k <= 2
-sources on the two-endpoint held L=6 surface: 72 single-source + 1,296
-two-source = 1,368 members) carrying the frozen Cycle-320 recoil ledger
-`(-2d, +d, +d)` on the six signed axis directions, with the six landed
-response objects of the Cycle-749/768/812 lineage — **no landed response
-object distinguishes the conformal-sector sign**: all 8,208
+At the declared scope — the k <= 2 source family on the two-endpoint
+held L=6 surface (72 single-source + 1,296 two-source = 1,368 members),
+with the sector-weight ladder d = 1..6 carried as an EXPLICIT SCOPE
+INPUT of this package (no source supplies a weight ladder; the
+provenance-context Cycle-320 ledger was unit-weight), the stipulated traceless
+recoil ledger `(-2d, +d, +d)` on the six signed axis directions, and
+the six response objects AS STIPULATED IN THIS PACKAGE'S RUNNERS
+(`O1_PUSHFORWARD` .. `O6_EDGE_TRANSFER`, constructed here from the
+package's own graded source) — **no stipulated response object
+distinguishes the sign sigma of the sector-trace grading**: all 8,208
 (member, object) pairs evaluate identically at sigma = +1 and
-sigma = -1, exactly, over the rationals. The one-admission reduction
-(the landed sign-status note) survives untouched; the response surface
-is the wrong instrument to discharge it.
+sigma = -1, exactly, over the rationals.
 
-No statement is made about the value of the sign, about whether another
-lane fixes it, or about response objects outside the declared six.
+Two identifications are OPEN and are NOT established by this package:
+
+1. the identification of the six stipulated objects with the response
+   objects of the Cycle-749/768/812 lineage (that lineage is UNLANDED
+   on `origin/main` at review time — its stack was separately rejected
+   or demoted in review — and is cited here as provenance only, not as
+   a dependency);
+2. the identification of the sector-trace grading sigma with the
+   physical conformal-mode sign of the emergent-gravity lane.
+
+Because identification 2 is open, this package makes NO statement about
+the physical conformal sign, and because identification 1 is open, it
+makes NO statement about any response surface other than the one
+stipulated in this package's own runners. The one-admission reduction
+(the sign-status note) is untouched. What survives is the exact
+algebraic statement above, plus the mechanism split below.
 
 ## The mechanism (the informative part)
 
 The blindness splits disjointly, with zero unattributed pairs:
 
-- **M1 (structural sigma-evenness)**: `O2_ADJOINT_PULLBACK`,
+- **Structural sigma-evenness mechanism (M1)**: `O2_ADJOINT_PULLBACK`,
   `O4_RESPONSE_GRAM`, `O5_RESPONSE_TENSOR`, `O6_EDGE_TRANSFER` are
   sigma-even for ANY source — the exchange R is a self-adjoint
   involution so the pullback composes the grading twice (sigma enters
   squared), and the quadratic objects' sigma-linear cross terms vanish
   because the trace-free channel sums to zero over sectors
   (supervisor-verified by hand).
-- **M2 (ledger sector-trace zero)**: `O1_PUSHFORWARD` and
-  `O3_FLUX_BALANCE` are sigma-odd in general and blind ONLY because the
-  landed ledger's sector sum `-2d + d + d = 0` — verified as the zero
+- **Ledger sector-trace-zero mechanism (M2)**: `O3_FLUX_BALANCE` is
+  sigma-odd; `O1_PUSHFORWARD` has a sigma-sensitive linear component
+  (it is neither even nor odd for a generic source). Both are blind
+  here ONLY because the
+  stipulated ledger's sector sum `-2d + d + d = 0` — verified as the zero
   polynomial with d carried as a formal indeterminate (closing the
   weight-ladder truncation) and at extreme off-scope multiplicities
   (k = 8, weights ~10^12; closing the multiplicity truncation).
 
 **Algebra-generation strengthening (supervisor review):** the checker's
 linear sweep shows every base coordinate of the graded source, the
-pushforward, and the pullback is sigma-blind on the landed family;
+pushforward, and the pullback is sigma-blind on the declared family;
 since sigma enters only through the grading, the ENTIRE functional
 algebra generated by those coordinates is blind — the checker's
 quadratic sweep (4,998,672 exact integer comparisons over 3,654
 functionals per member, 0 sensitive) is a redundancy on top of that
 argument, not its boundary.
 
-## Named escape conditions
+## Boundaries of the exact-support statement
 
-The no-go dies only if BOTH fail together:
+The two mechanisms have SEPARATE boundaries; there is no joint-failure
+condition:
 
-1. a landed source acquires a nonzero sector trace (the recoil ledger
-   stops summing to zero) — this immediately makes `O1`/`O3`
-   sign-sensitive; AND
-2. a response object is admitted that is linear in the endpoint
-   exchange rather than factoring through `R*R` and is not a
-   sector-orthogonal contraction.
+1. a source with a nonzero sector trace ALREADY restores
+   sign-sensitivity of `O1_PUSHFORWARD` and `O3_FLUX_BALANCE`, so any
+   blanket blindness statement dies under (1) alone; the structural
+   sigma-evenness mechanism (M1) still covers its four objects;
+2. an admitted response object linear in the endpoint exchange (not
+   factoring through `R*R`, not a sector-orthogonal contraction)
+   escapes M1.
 
-M1 survives (1) alone; M2 survives (2) alone.
+## Review record (why this is not a no-go)
 
-## No-go discipline checklist (N1-N8)
-
-- **N1 (>= 5 routes)**: (1) member-by-member census of the six landed
-  objects, 8,208 pairs — ATTEMPTED, 0 sensitive; (2) checker's wider
-  space — all base coordinates, all 7 index-subset contractions, every
-  unordered quadratic, 3,654 functionals/member — ATTEMPTED, 0
-  sensitive; (3) indeterminate-d symbolic closure — ATTEMPTED, zero
-  polynomial; (4) multiplicity/weight extremes k=8, ~10^12 —
-  ATTEMPTED, conformal channel identically zero; (5) detuned-ledger
-  calibration (can the instrument see at all?) — ATTEMPTED, fires on
-  744 functionals off-scope; (6) adversary-disabled grading null
-  control — ATTEMPTED, blind as required. Six routes named.
-- **N2 (wall independence)**: M1 and M2 are pairwise independent — the
-  escape analysis shows each survives the other's failure; neither
-  follows from the other (M1 holds for any ledger; M2 is
-  object-independent for the odd objects).
-- **N3 (hidden-wall scan)**: the load-bearing suppliers are the frozen
-  ledger (Cycle 320, sha-pinned) and the six declared objects
-  (749/768/812, sha-pinned with AST markers); both are declared scope,
-  not hidden conditions. The scope certificate declares every cap.
-- **N4 (residual matching)**: cited witnesses are the pinned lineage
-  primaries themselves; AST markers verified in-run; no borrowed no-go
-  citations are load-bearing.
-- **N5 (rhetoric audit)**: "invisible to the response surface" is
-  claimed at per-object, per-member, and generated-functional-algebra
-  resolutions, all tested; the note's what-is-not-claimed field bounds
-  everything else out.
-- **N6 (partial-closure path)**: no labeling convention or refactor
-  closes this — the escape requires new landed physics (a
-  trace-bearing source or a new response object class), i.e. a
-  derivation path, which is named, not forbidden.
-- **N7 (steelman)**: "a functional outside the swept quadratics might
-  see sigma." Refuted structurally: every generator of the functional
-  algebra is sigma-independent on the landed family (M1/M2), so every
-  composite is; sensitivity requires leaving the landed surface, which
-  is escape (1)/(2), not a gap. A hostile reviewer must attack the
-  generator-blindness computation itself, which two disjoint arithmetic
-  routes (rational polynomials; hard-wired integer worlds) reproduce.
-- **N8 (cross-cycle echo)**: the covariance-ceiling wall (PR #5587
-  lineage) was retired by narrowing the object class (chiral channel);
-  the analogous mechanism here is escape (2) — an admitted
-  sigma-linear object — recorded as the live route rather than
-  overlooked.
+The original packet framed this result as a scoped no-go with an N1-N8
+checklist. Review-loop iteration 1 (2026-08-08, Sol reviewer) found the
+no-go discipline FAILS at the claimed physical scope: the six attack
+routes were not independent families; the two-wall escape conjunction
+was logically wrong (condition (1) alone kills the universal claim);
+the hidden-wall scan missed the stipulated weight ladder, the
+grading-to-physical-sign carrier, the object-identification map, and
+the unlanded supplier status; and the imposed grading makes the
+blindness tautological once the ledger is traceless (`G_sigma S = S`
+identically). The claim is therefore held at exact algebraic support
+with the two identifications named above as open bridges. The original
+checklist is preserved in git history; it must not be cited as a
+passed no-go gate.
 
 ## Checker design and teeth
 
@@ -143,31 +136,32 @@ comparisons, 0 sensitive); calibration: detuned ledger fires on 744
 functionals, planted-false-claim block caught on 3+ comparison fields,
 one-byte cache tamper drives exit 1; determinism digest-exact across
 recomputation; all pins matched. Verdicts produced by stated total
-functions of computed values; the mechanism gate was de-outcomed
-in-block (commit trail) so landed annihilation is reported, never
-gated.
+functions of computed values; since review-loop iteration 1 the
+primary's mechanism gate and the checker's comparison gate both fail
+closed (the two symbolic closures, the emitted parity claims, and any
+claim disagreement or verdict mismatch are gating).
 
 ## Trace gate
 
 ```yaml
-trace_class: negative_route_pruning
+trace_class: upstream_support
 target_claim_id: null
 target_blocker_text: "the conformal-sector sign reduces to one shared orientation datum (the one-admission reduction); its discharge instrument is unnamed"
 source_of_blocker_text: handoff
-reachability_to_target: prunes
-artifact_role: no_go
-next_trace_action: "stop probing the response surface for the sign; the live instruments are the escape conditions — a trace-bearing source extension or a sigma-linear admitted object — or a different lane entirely"
+reachability_to_target: supports
+artifact_role: support
+next_trace_action: "carry the exact-support identity as upstream support; the two open identifications (object lineage; physical-sign carrier) are the live work, and the named boundaries of the support statement — a trace-bearing source extension or a sigma-linear admitted object — mark where it stops"
 ```
 
 ## Status fields
 
 ```yaml
-actual_current_surface_status: no-go
-target_claim_type: no_go
+actual_current_surface_status: support
+target_claim_type: bounded_theorem
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "exact rational evaluation of all 8208 pairs at both signs; blindness partitioned into two proved mechanisms with zero residue; scope fully declared and truncations closed symbolically"
+claim_type_reason: "exact rational evaluation of all 8208 pairs at both signs; blindness partitioned into two proved mechanisms with zero residue; scope fully declared and truncations closed symbolically; the object-lineage and physical-sign identifications are open, so nothing beyond exact support on the stipulated surface is claimed"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -176,31 +170,59 @@ bare_retained_allowed: false
 
 ### Imports
 
-- the frozen Cycle-320 recoil ledger and the Cycle-322 endpoint
-  exchange (sha-pinned lineage);
-- the six response objects of the 749/768/812 lineage (sha-pinned, AST
-  markers verified);
+- none from other rows: the recoil ledger `(-2d, +d, +d)`, the endpoint
+  exchange, the source family, the sector-trace grading, and the six
+  response objects are STIPULATED IN-FILE in the two linked runners;
+- explicit scope inputs declared here: the held edge L=6; the
+  sector-weight ladder d = 1..6 (cardinality matching the held edge; no
+  cited supplier); source multiplicity k <= 2; the two-endpoint
+  convention;
 - nothing else: stdlib exact arithmetic only.
+
+### Provenance context (non-load-bearing)
+
+- the Cycle-320 unit-weight recoil ledger and the Cycle-322 endpoint
+  exchange, which inspired the stipulated definitions;
+- the Cycle-749/768/812 response-object lineage, which inspired the six
+  stipulated objects (unlanded on `origin/main` at review time);
+- the sign-status note (the one-admission reduction), which frames why
+  the sign question was asked.
+
+The Cycle-320/322/749/768/812 lineage and the sign-status note are
+provenance-only, non-load-bearing context; they are not runner inputs
+or audit dependencies, and this bounded theorem depends only on the
+stipulated definitions in the two linked runners and the explicit scope
+inputs stated here.
 
 ### Derived
 
-- the complete-family sign census with exact partition into M1/M2;
+- the complete-family sign census with exact partition into the
+  structural sigma-evenness (M1) and ledger sector-trace-zero (M2)
+  mechanisms;
 - the symbolic closures (indeterminate d; arbitrary multiplicity);
 - the generated-algebra blindness strengthening;
-- the named escape pair.
+- the named boundary pair of the support statement.
 
 ### Open
 
-- which instrument CAN discharge the sign datum (the pruning points at
-  the escape conditions, not at an answer);
-- nothing in this block constrains the sign's value.
+- the identification of the six stipulated objects with any previously
+  proposed response lineage, and of the grading sign with the physical
+  conformal-mode sign (the two open bridges);
+- which instrument CAN discharge the sign datum — this package does not
+  say; the named boundaries (a trace-bearing source extension or a
+  sigma-linear admitted object) mark where the support statement stops,
+  not where the answer lies;
+- nothing in this package constrains the sign's value.
 
 ## Verdict
 
-The response surface was the natural next place to look for the
-conformal-sector sign, and it provably cannot see it: four objects are
-blind by symmetry for any source, and the other two are blind precisely
-because the landed recoil ledger is traceless — an identity that holds
-as a polynomial, not as a numerical accident. The residual is now
-sharper: the sign datum survives, with its two escape routes named
-exactly. Independent audit still required.
+On the stipulated surface the result is exact support: the sector-trace
+grading sign is invisible to the stipulated response-object algebra.
+Four objects are blind by structural sigma-evenness for any source, and
+the other two are blind precisely because the stipulated recoil ledger
+is traceless — an identity that holds as a polynomial in the formal
+weight, not as a numerical accident. This package makes no statement
+about any response surface other than its own stipulated one and no
+statement about the physical conformal-mode sign; those identifications
+are the open bridges named above, and the one-admission reduction is
+untouched. Independent audit still required.

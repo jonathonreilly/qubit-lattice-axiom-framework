@@ -1,6 +1,6 @@
 {
  "edge_count": 15469,
- "node_count": 4654,
+ "node_count": 4655,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4521,6 +4521,10 @@
   "ewsb_pattern_from_higgs_y_note_2026-05-02": {
    "deps_hash": "1381121484ef",
    "out_degree": 3
+  },
+  "exact_algebra_salvage_bounded_support_note_2026-08-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": {
    "deps_hash": "e3b0c44298fc",

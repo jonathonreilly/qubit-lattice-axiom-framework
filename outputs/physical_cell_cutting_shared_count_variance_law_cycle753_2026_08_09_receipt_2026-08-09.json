@@ -1,0 +1,88 @@
+{
+ "cycle": 753,
+ "failures": 0,
+ "gates": 42,
+ "headline": "The number cycle 752 ranked the 59736 four-cube-shaped sixteen-piece sets by is a spread about a mean the system fixes before any set is chosen. Each of the 192 pieces lies on 1975 of the 15800 cuttings, so whichever sixteen pieces are taken they meet the cuttings 31600 times, exactly twice 15800, and the average number met per cutting is two no matter what is chosen. Writing m for the number met on a given cutting, the ranked total is the sum of m(m-1)/2 and equals 15800 plus half the sum of (m-2)^2 over the 15800 cuttings, for every sixteen-piece set whatsoever and with no condition on how large m may get. So light means flat. Carrying a reading marked on S cuttings forces an odd number of meetings on each of them, giving a floor of 15800 plus S/2, which for the charge called four is 18632, with equality exactly when the carrier meets each of the 5664 marked cuttings once or three times and each of the rest twice, split 2832 and 2832 by the mean. The lightest carrier sits at 19640, missing that profile by 252 cuttings not met at all and 252 met four times, which is the whole of its 1008 excess. The hypothesis this cycle was built to test is refuted: ranked by cuttings met an odd number of times the carriers sit 57973rd to 58032nd of 59736, with 57972 shapes above them, so the size of the reading support works against their position rather than for it. What separates them is the count of cuttings met exactly twice, on which the 60 carriers are the 60 heaviest, the least at 9616 and the next shape down at 8688. The identity and the floor are derived; the rankings are measured over these 59736 shapes, and 18632 is still not shown to be attained.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_CYCLE753_NOTE_2026-08-09.md",
+ "recorded_output": "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09_cold_2026-08-09.txt",
+ "results": {
+  "over_all_carriers": {
+   "carriers": 132,
+   "distinct_squared_spreads": 4,
+   "least_squared_spread": 7680,
+   "most_squared_spread": 16832
+  },
+  "ranked_by_cuttings_met_an_odd_number_of_times": {
+   "carriers_sit_from": 57973,
+   "carriers_sit_to": 58032,
+   "shapes_ranked": 59736,
+   "shapes_strictly_above_them": 57972,
+   "the_hypothesis_this_cycle_tested_is_refuted": true
+  },
+  "ranked_by_cuttings_met_exactly_twice": {
+   "exactly_at_it": 24,
+   "least_carrier_value": 9616,
+   "next_shape_down_the_list": 8688,
+   "shapes_tying_across_the_boundary": 0,
+   "strictly_above_the_least_carrier": 36,
+   "the_heaviest_are_exactly_the_carriers": 60
+  },
+  "the_floor_and_its_profile": {
+   "attained_by_any_shape_found_here": false,
+   "derived_not_measured": true,
+   "equality_asks_for_met_four_times": 0,
+   "equality_asks_for_met_once": 2832,
+   "equality_asks_for_met_three_times": 2832,
+   "equality_asks_for_met_twice": "each of the rest",
+   "equality_asks_for_missed": 0,
+   "odd_meetings_carrying_four_forces": 5664,
+   "shared_cuttings_at_the_very_least": 18632
+  },
+  "the_identity": {
+   "condition_on_the_largest_multiplicity": null,
+   "derived_not_measured": true,
+   "holds_for_every_sixteen_piece_set": true,
+   "ranked_total_equals": "15800 plus half the sum of (m-2)^2 over the cuttings",
+   "shapes_where_the_two_routes_to_the_total_disagree": 0,
+   "shapes_with_an_odd_squared_spread": 0,
+   "what_the_runner_measures": "the premise and the arithmetic, not the identity"
+  },
+  "the_mean_no_choice_can_move": {
+   "cuttings": 15800,
+   "mean_met_per_cutting": 2,
+   "meetings_a_sixteen_piece_set_makes": 31600,
+   "shapes_where_the_two_sum_rules_fail": 0
+  },
+  "the_object": {
+   "carriers_of_four_at_sixteen": 132,
+   "cuttings": 15800,
+   "cuttings_four_marks": 5664,
+   "cuttings_through_a_piece": 1975,
+   "four_cube_shaped_sets": 59736,
+   "pieces": 192,
+   "pieces_per_cutting": 24,
+   "through_one_piece": 4978
+  },
+  "what_the_lightest_carrier_does": {
+   "met_four_times": 252,
+   "met_more_than_four_times": 0,
+   "met_once": 2832,
+   "met_three_times": 2832,
+   "met_twice": 9632,
+   "missed": 252,
+   "over_the_floor": 1008,
+   "squared_spread": 7680,
+   "total": 19640
+  },
+  "where_the_natural_first_identity_does_not_hold": {
+   "identical_to_the_shapes_capped_at_four": true,
+   "largest_multiplicity_reached": 8,
+   "shapes_passing_four": 42192,
+   "shapes_satisfying_the_linear_form": 17544,
+   "the_cap_is_derived_not_measured": true
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09.py",
+ "status": "PASS"
+}

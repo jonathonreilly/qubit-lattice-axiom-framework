@@ -1,0 +1,63 @@
+PASS G0  the Gram matrix of the table has constant diagonal 1975
+PASS G1  all 15800 cuttings carry distinct piece supports
+PASS G2  the anchored and the two seeded colour refinements are all discrete
+PASS G3  b0 is an order-two piece permutation with a matching cutting permutation
+PASS G4  b0 fixes all eight readings
+PASS G5  b0 lies outside the 48, orbit rows (0,48,0,0) (48,0,0,0) (0,0,0,48) (0,0,48,0)
+PASS G6  b1 is an order-two piece permutation with a matching cutting permutation
+PASS G7  b1 fixes all eight readings
+PASS G8  b1 lies outside the 48, orbit rows (8,8,16,16) (8,8,16,16) (16,16,8,8) (16,16,8,8)
+PASS G9  b0 and b1 are different permutations
+PASS G10  the 48 together with b0 and b1 act on the 192 pieces with one orbit, transitive
+PASS G11  each charge and each planted reading forces even total, side, and quarter parities, and the synthetic reading forces an odd total
+PASS G12  the licensed cells of a charge count 5,14,30,55,91,140,204,285 at the even sizes two to sixteen, matching the closed sum, with consecutive odd squares as steps
+PASS G13  all six charges license the same 285 cells at sixteen, one pass covers the six
+PASS G14  the odd-total synthetic reading licenses no cell at sixteen
+PASS G15  the licensed cells at sixteen with a piece in the last quarter number 204, and the six charges and the five planted readings share exactly that list
+PASS G16  the anchored tables list exactly the subsets through the anchor piece, row for row against direct column sums, with binomial row counts
+
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS G17  every cutting uses the same number of pieces, every piece sits in the same number of cuttings, and the two counts of the incidences agree
+marks: the all-marked reading 15800, four 5664, its flip partner 10136
+least size those marks force: 8, 3, 6 pieces
+PASS G18  a carrier meets each marked cutting at least once while each piece meets 1975 cuttings, so the marks force a least size
+pieces no cutting shares with a given piece: 33
+eight-piece sets no cutting uses twice: 192, of those meeting every cutting exactly once: 192
+PASS G19  eight pieces meeting every cutting exactly once is the same as eight pieces no cutting uses twice, since eight of them meet 15800 with multiplicity
+each piece lies in 8 of them; two of them share pieces, count by value: {0:15072,1:1920,2:960,4:384}
+PASS G20  those carriers meet each piece the same number of times and meet each other in 0, 1, 2 or 4 pieces, never 3
+those eight readings close into an addition group of order 8
+PASS G21  each flip partner is its reading plus the all-marked reading, so a reading and its flip partner have least sizes differing by at most eight
+symmetries of the table that fix a basic reading: 48, and they carry any piece to any other: True
+PASS G22  the symmetries that fix a reading carry any piece to any other, so asking for carriers through one fixed piece decides the question for every piece
+
+anchored search, carriers of four then of its flip partner, by size: 2: 0 and 0, 4: 0 and 0, 6: 0 and 0, 8: 0 and 0, 10: 0 and 0, 12: 0 and 0, 14: 0 and 0, 16: 11 and 0
+at sixteen both were asked of the same 204 cells over the same 2004 splits
+carriers recorded below eighteen 19, recheck failures 0
+PASS G23  the search finds the eight-piece carriers of the all-marked reading through the anchor and none at ten, so it is not blind when it comes back empty
+PASS G24  four has no anchored carrier below sixteen and has eleven at sixteen, every sweep complete
+PASS G25  the flip partner of four has no anchored carrier at any even size up to sixteen, asked of exactly the cells and splits that deliver the eleven
+PASS G26  each recorded carrier is checked back against the incidence directly, not trusted from the bookkeeping of the search
+
+symmetries of the table 384, sixteen-piece carriers of four across the system 132, each piece on 11, recheck failures 0
+PASS G27  they close into a group of 384 that is transitive on the pieces and permutes the 192 eight-piece carriers
+PASS G28  every piece sits on eleven of them, the count the anchored sweep found, so these are all of them
+the families they fall into: 12,12,12,24,24,48
+PASS G29  the symmetries do not carry every smallest carrier of four onto every other: six families
+the total is a spread about a mean of two that no choice of sixteen can move:
+each sixteen meets the cuttings 31600 times, so departures from two are the cost
+PASS G31  shapes joined like a four-cube: 4978 through each of the 192 pieces, 59736 in all
+PASS G32  each of the 59736 shapes meets the 15800 cuttings 31600 times, two per cutting
+PASS G33  the total is 15800 plus half the squared spread about two, both routes agreeing
+PASS G34  carrying four needs 5664 odd meetings, so all 132 carriers sit at 18632 or above
+PASS G35  lightest carrier 19640, 1008 over the floor, spread [252, 2832, 9632, 2832, 252, 0], none above four
+PASS G36  ranked by cuttings met twice the top 60 are the carriers, least 9616, next 8688
+PASS G37  ranked by odd meetings they sit 57973th to 58032th, 57972 shapes above them
+PASS G38  the largest multiplicity reached is 8 and 42192 shapes pass four
+PASS G39  the linear form in odd count and twice-met holds on 17544, exactly those capped at four
+PASS G40  over all 132 carriers the squared spread runs 7680 to 16832 and takes 4 values
+elapsed under 300 s peak memory under 2500 MB
+PASS G41  inside its time and memory allowance
+PASS G42  its output stays under 6000 characters
+
+TOTAL: PASS=42 FAIL=0

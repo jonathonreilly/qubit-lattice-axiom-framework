@@ -22,13 +22,22 @@ every contested quantity by a deliberately different route:
       builds a polynomial, scanning every member and every component of all six
       objects for sensitivity the runner missed and for sensitivity the runner
       claimed but cannot reproduce.
-  R5  the committed receipt, attacked by recomputing its digest and checking
-      every number it publishes against this runner's own values.
+  R5  the COMMITTED transcript cache of the audited runner (its pinned stdout
+      at logs/runner-cache/), attacked by recomputing its digest against the
+      pin and checking every science number its terminal block publishes
+      against this runner's own independently computed values.
 
-Each attack reports REFUTED or NOT_REFUTED.  The certificates gate on whether
-the attack was actually MOUNTED -- a nonempty search space, a route that really
-differs, exact arithmetic throughout -- never on the attack failing.  A refuted
-claim is a passing outcome for this runner and a failing one for the science.
+Every input here is a committed artifact, so this checker runs standalone
+from a clean checkout; nothing it reads is generated at run time.
+
+Each attack reports REFUTED or NOT_REFUTED.  The per-attack certificates gate
+on whether the attack was actually MOUNTED -- a nonempty search space, a route
+that really differs, exact arithmetic throughout -- never on the attack
+failing.  The refutation LEDGER and the process exit status, however, fail
+closed: if any attack lands (any status is REFUTED), the ledger certificate
+fails and the process exits nonzero.  A refuted claim is a successful search
+for this adversary and a failing result for the audited science, and the
+exit code reports the science, not the search.
 """
 from __future__ import annotations
 
@@ -36,7 +45,8 @@ AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py",
-    "outputs/tracelessness_provenance_cycle873_receipt_2026_07_28.json",
+    "logs/runner-cache/"
+    "frontier_cycle873_tracelessness_provenance_2026_07_28.txt",
     "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
     "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
@@ -58,9 +68,9 @@ BLOCKLISTED_MODULES = tuple(
 )
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "08e92fde118415f32043c4fc154f8cc5aaca66af18704c024f89cde5445662de",
+        "e2b43e90c4b17778d3cfb02dfe1990f021304edf401daae70b3e66c9aae146fc",
     AUDIT_INPUT_PATHS[1]:
-        "c293bedc9770f143b4832da8d9c4ac50cf3e58eb41c4b15da62f5b7acdb6c756",
+        "494bf215d79a1e42660192381dc27fef79011aa2a1c10fb14ab576dc43304702",
     AUDIT_INPUT_PATHS[2]:
         "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
     AUDIT_INPUT_PATHS[3]:
@@ -69,8 +79,8 @@ EXPECTED_SHA256 = {
         "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "0c5893f9b0c277fe864ed71efb38ba2c59d52d04",
-    AUDIT_INPUT_PATHS[1]: "d9a721b8e0b3bf8b07bf1763769c69d560e55be9",
+    AUDIT_INPUT_PATHS[0]: "e864c431ac9d5596f06d93ac6983986e70a2571d",
+    AUDIT_INPUT_PATHS[1]: "1e7a26945a5fc54c5ddd4e12b7c66ae6931acdae",
     AUDIT_INPUT_PATHS[2]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
     AUDIT_INPUT_PATHS[3]: "7672380148d79f22a4ab9b2700121aac1b097004",
     AUDIT_INPUT_PATHS[4]: "0be8d83ec8ed874ff12e2092dc47121b8030a5bc",
@@ -151,7 +161,18 @@ DIRECTIONS = tuple(
     tuple(row) for row in ast.literal_eval(_directions_node.args[0])
 )
 REVERSE = tuple(ast.literal_eval(_assignments(AUDIT_INPUT_PATHS[2])["REVERSE"]))
-RECEIPT = json.loads((ROOT / AUDIT_INPUT_PATHS[1]).read_text(encoding="utf-8"))
+# The audited runner's committed stdout transcript.  Its terminal block is a
+# single line beginning "FINAL " whose JSON publishes the science numbers this
+# adversary re-derives; parsing fails closed if that line is absent or
+# duplicated.
+CACHE_TEXT = (ROOT / AUDIT_INPUT_PATHS[1]).read_text(encoding="utf-8")
+_FINAL_LINES = tuple(
+    line for line in CACHE_TEXT.splitlines() if line.startswith("FINAL ")
+)
+TERMINAL = (
+    json.loads(_FINAL_LINES[0][len("FINAL "):])
+    if len(_FINAL_LINES) == 1 else {}
+)
 
 DIM = 6 + 6 ** 3
 SECTOR_COUNT = 3
@@ -502,7 +523,7 @@ def r2_superpositions() -> dict:
             f"operator conservation to the much weaker expectation-level bar "
             f"buys nothing, because at unit grading the sector trace is the "
             f"conservation defect for any convex mixture just as it is for a "
-            f"single triple. The escape is not hiding in superposition."
+            f"single triple. No trace-bearing variant hides in superposition."
         ),
     }
     result["attack_mounted"] = (
@@ -575,7 +596,8 @@ def r3_occupancy() -> dict:
             "attack the axis the runner declared outside its sweep: sector "
             "OCCUPANCY. Each of the three sectors is allowed to hold zero, one "
             "or two quanta pointing anywhere, so a sector may be absent "
-            "entirely -- the exact door the Cycle-318 witness walks through"
+            "entirely -- the configuration the Cycle-318 witness uses, here "
+            "tested WITHOUT the witness's reweighting"
         ),
         "route_differs_from_runner": True,
         "sector_option_count": len(sector_options),
@@ -589,8 +611,9 @@ def r3_occupancy() -> dict:
         "trace_bearing_witnesses": tuple(witnesses),
         "status": "REFUTED" if refuted else "NOT_REFUTED",
         "finding": (
-            f"Occupancy is the right place to look and it confirms the runner's "
-            f"reading of where the escape lives. Across {searched} occupancy "
+            f"Occupancy is the right place to look and it confirms the "
+            f"runner's reading: the reweighting, not absence, is what "
+            f"matters. Across {searched} occupancy "
             f"configurations -- including {absent_sector_lawful} lawful ones "
             f"with a sector missing altogether -- {lawful_trace_bearing} bear "
             f"trace at unit grading. So at w = (1,1,1) tracelessness is not a "
@@ -724,7 +747,7 @@ def objects_at(member, ledger, sign: int) -> dict:
 
 
 LEDGERS = (
-    ("LANDED_cycle320_unit_grading", lambda w: (-2 * w, w, w)),
+    ("STIPULATED_cycle320_unit_grading", lambda w: (-2 * w, w, w)),
     ("WITNESS_cycle318_coefficient_two", lambda w: (-2 * w, w, 0)),
 )
 
@@ -769,12 +792,14 @@ def r4_census() -> dict:
                 key for key in OBJECT_NAMES if sensitive[key] > 0
             ),
         })
-    claimed = tuple(RECEIPT["objects_newly_sensitive_under_the_witness"])
-    landed = sensitivity["LANDED_cycle320_unit_grading"]
+    claimed = tuple(
+        TERMINAL.get("sign_sensitive_objects_under_the_witness", ())
+    )
+    unit_counts = sensitivity["STIPULATED_cycle320_unit_grading"]
     witness = sensitivity["WITNESS_cycle318_coefficient_two"]
     reproduced = tuple(
         key for key in OBJECT_NAMES
-        if witness[key] > 0 and landed[key] == 0
+        if witness[key] > 0 and unit_counts[key] == 0
     )
     missed_by_runner = tuple(key for key in reproduced if key not in claimed)
     overclaimed_by_runner = tuple(key for key in claimed if key not in reproduced)
@@ -799,7 +824,8 @@ def r4_census() -> dict:
         "finding": (
             f"The census verdict reproduces exactly on an independent route. "
             f"Over {len(members)} members with sigma substituted before any "
-            f"algebra, the landed ledger leaves all six objects blind and the "
+            f"algebra, the stipulated unit-grading ledger leaves all six "
+            f"objects blind and the "
             f"Cycle-318 witness ledger turns "
             f"{', '.join(reproduced) if reproduced else 'no'} object(s) "
             f"sign-sensitive -- the same set the runner published, with nothing "
@@ -822,67 +848,98 @@ def r4_census() -> dict:
 
 
 # --------------------------------------------------------------------------
-# R5 -- attack on the committed receipt
+# R5 -- attack on the committed transcript cache
 # --------------------------------------------------------------------------
-def r5_receipt(exhaustive_lawful: int, exhaustive_trace_bearing: int) -> dict:
+def _locus_on_line(entry: str) -> bool:
+    """Parse '(1,f,a)' and test membership of the affine line f + a = 2."""
+    try:
+        parts = entry.strip("()").split(",")
+        weights = tuple(Fraction(part) for part in parts)
+    except (ValueError, ZeroDivisionError):
+        return False
+    return (
+        len(weights) == 3
+        and weights[0] == 1
+        and weights[1] + weights[2] == 2
+    )
+
+
+def r5_committed_cache(
+    exhaustive_lawful: int,
+    exhaustive_trace_bearing: int,
+    exhaustive_min_l1: int,
+) -> dict:
     payload = (ROOT / AUDIT_INPUT_PATHS[1]).read_bytes()
+    locus = tuple(TERMINAL.get("fixed_support_lawful_gradings_on_grid", ()))
+    sensitive = tuple(
+        TERMINAL.get("sign_sensitive_objects_under_the_witness", ())
+    )
+    blind = tuple(TERMINAL.get("objects_still_blind_under_the_witness", ()))
     checks = {
         "digest_matches_pin":
             sha256(payload).hexdigest() == EXPECTED_SHA256[AUDIT_INPUT_PATHS[1]],
-        "verdict_is_the_open_one":
-            RECEIPT["verdict"]
-            == "TRACELESSNESS_SUPPLIED_VIA_SECTOR_GRADING__ESCAPE_A_OPEN",
-        "escape_status_consistent_with_verdict":
-            (RECEIPT["escape_a_status"] == "OPEN")
-            == RECEIPT["verdict"].endswith("ESCAPE_A_OPEN"),
-        "landed_ledger_matches_cycle868":
-            RECEIPT["landed_ledger_coefficients"] == [-2, 1, 1],
-        "witness_ledger_sector_sum_is_nonzero":
-            RECEIPT["witness_ledger_sector_sum"] != 0,
-        "witness_sum_matches_its_coefficients":
-            sum(RECEIPT["witness_ledger_coefficients"])
-            == RECEIPT["witness_ledger_sector_sum"],
+        "exactly_one_terminal_line": len(_FINAL_LINES) == 1,
+        "terminal_is_complete":
+            TERMINAL.get("terminal")
+            == "CYCLE873_TRACELESSNESS_PROVENANCE_COMPLETE",
+        "every_certificate_check_true":
+            bool(TERMINAL.get("checks"))
+            and all(TERMINAL["checks"].values()),
+        "verdict_is_the_conditional_witness_lawful_one":
+            TERMINAL.get("verdict")
+            == "TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__"
+               "WITNESS_LAWFUL",
         "lawful_count_reproduced":
-            RECEIPT["lawful_triples_at_unit_grading"] == exhaustive_lawful,
+            TERMINAL.get("lawful_triples_at_unit_grading")
+            == exhaustive_lawful,
         "trace_bearing_count_reproduced":
-            RECEIPT["lawful_trace_bearing_at_unit_grading"]
+            TERMINAL.get("lawful_trace_bearing_at_unit_grading")
             == exhaustive_trace_bearing,
-        "grading_locus_is_not_a_point":
-            len(RECEIPT["landed_support_lawful_grading_locus"]) > 1,
-        "unit_grading_on_locus":
-            "(1,1,1)" in RECEIPT["landed_support_lawful_grading_locus"],
-        "cycle318_grading_on_locus":
-            "(1,2,0)" in RECEIPT["landed_support_lawful_grading_locus"],
+        "minimum_nonzero_trace_norm_reproduced":
+            TERMINAL.get("minimum_nonzero_trace_L1_norm")
+            == exhaustive_min_l1,
+        "published_locus_lies_on_the_affine_line":
+            len(locus) > 0 and all(_locus_on_line(entry) for entry in locus),
+        "grading_locus_is_not_a_point": len(locus) > 1,
+        "unit_grading_on_locus": "(1,1,1)" in locus,
+        "cycle318_grading_on_locus": "(1,2,0)" in locus,
+        "witness_ledger_sector_sum_reproduced":
+            TERMINAL.get("witness_ledger_sector_sum")
+            == sum(LEDGERS[1][1](1)),
         "sensitive_and_blind_partition_the_objects":
-            set(RECEIPT["objects_newly_sensitive_under_the_witness"])
-            | set(RECEIPT["objects_still_blind_under_the_witness"])
-            == set(OBJECT_NAMES),
+            set(sensitive) | set(blind) == set(OBJECT_NAMES)
+            and not (set(sensitive) & set(blind)),
     }
     failures = tuple(key for key, value in checks.items() if not value)
     result = {
         "attack": (
-            "recompute the committed receipt's digest and re-derive every "
-            "number it publishes, including the two counts this adversary can "
-            "reproduce from its own independent sweep, then check its internal "
-            "consistency for a verdict that does not follow from its own fields"
+            "recompute the committed transcript cache's digest against its "
+            "pin and re-derive every science number its terminal block "
+            "publishes, including the sweep counts, the minimum nonzero "
+            "trace norm, the grading locus (checked point by point against "
+            "the affine line w_field + w_auxiliary = 2 this adversary "
+            "derives itself), and the witness sector sum"
         ),
-        "receipt_path": AUDIT_INPUT_PATHS[1],
-        "receipt_sha256": sha256(payload).hexdigest(),
+        "cache_path": AUDIT_INPUT_PATHS[1],
+        "cache_sha256": sha256(payload).hexdigest(),
         "independent_lawful_count": exhaustive_lawful,
         "independent_trace_bearing_count": exhaustive_trace_bearing,
+        "independent_minimum_nonzero_trace_L1_norm": exhaustive_min_l1,
         "checks": checks,
         "failed_checks": failures,
         "status": "REFUTED" if failures else "NOT_REFUTED",
         "finding": (
-            f"The committed receipt holds up under {len(checks)} independent "
-            f"consistency checks with {len(failures)} failures. Its digest "
-            f"matches the pin, its verdict follows from its own published "
-            f"fields rather than being asserted alongside them, its landed "
-            f"ledger is the Cycle-868 one, its witness ledger's sector sum "
-            f"really is the sum of its own coefficients and really is nonzero, "
-            f"its sensitive and blind object lists partition the six objects "
-            f"exactly, and the two sweep counts it publishes were reproduced "
-            f"here from a search this adversary ran itself."
+            f"The committed transcript cache holds up under {len(checks)} "
+            f"independent consistency checks with {len(failures)} failures. "
+            f"Its digest matches the pin, its terminal block parses uniquely "
+            f"and reports every certificate passing, its published verdict "
+            f"is the conditional-on-supplied-grading one, its sweep counts "
+            f"and minimum nonzero trace norm were reproduced here from a "
+            f"search this adversary ran itself, every published locus point "
+            f"lies on the independently derived affine line, its witness "
+            f"sector sum equals the sum of the witness coefficients, and "
+            f"its sensitive and blind object lists partition the six "
+            f"stipulated objects exactly."
         ),
     }
     result["attack_mounted"] = len(checks) >= 10
@@ -896,13 +953,11 @@ def r5_receipt(exhaustive_lawful: int, exhaustive_trace_bearing: int) -> dict:
 def independent_sweep() -> tuple:
     lawful = 0
     trace_bearing = 0
+    min_nonzero_l1 = 0
     for direction in range(6):
         unit = DIRECTIONS[direction]
         for triple in product(range(6), repeat=SECTOR_COUNT):
             after = occupation_sum(triple)
-            if after != unit:
-                continue
-            lawful += 1
             ledger = (
                 vsub(DIRECTIONS[triple[0]], unit),
                 DIRECTIONS[triple[1]],
@@ -911,9 +966,15 @@ def independent_sweep() -> tuple:
             trace = (0, 0, 0)
             for row in ledger:
                 trace = vadd(trace, row)
+            norm = sum(abs(component) for component in trace)
+            if norm and (min_nonzero_l1 == 0 or norm < min_nonzero_l1):
+                min_nonzero_l1 = norm
+            if after != unit:
+                continue
+            lawful += 1
             if not vzero(trace):
                 trace_bearing += 1
-    return lawful, trace_bearing
+    return lawful, trace_bearing, min_nonzero_l1
 
 
 # --------------------------------------------------------------------------
@@ -925,7 +986,7 @@ LABELS = (
     "R2_SUPERPOSITIONS",
     "R3_OCCUPANCY",
     "R4_CENSUS_THIRD_ROUTE",
-    "R5_RECEIPT",
+    "R5_COMMITTED_CACHE",
     "V_REFUTATION_LEDGER",
     "H_CONTROLS",
 )
@@ -976,12 +1037,13 @@ def run() -> int:
     r2 = r2_superpositions()
     r3 = r3_occupancy()
     r4 = r4_census()
-    lawful, trace_bearing = independent_sweep()
-    r5 = r5_receipt(lawful, trace_bearing)
+    lawful, trace_bearing, min_nonzero_l1 = independent_sweep()
+    r5 = r5_committed_cache(lawful, trace_bearing, min_nonzero_l1)
 
     attacks = {
         "R1_DENSE_COMMUTATOR": r1, "R2_SUPERPOSITIONS": r2,
-        "R3_OCCUPANCY": r3, "R4_CENSUS_THIRD_ROUTE": r4, "R5_RECEIPT": r5,
+        "R3_OCCUPANCY": r3, "R4_CENSUS_THIRD_ROUTE": r4,
+        "R5_COMMITTED_CACHE": r5,
     }
     refuted = tuple(
         name for name, row in attacks.items() if row["status"] == "REFUTED"
@@ -999,21 +1061,27 @@ def run() -> int:
             "AUDITED_CLAIMS_REFUTED" if refuted else "AUDITED_CLAIMS_SURVIVE"
         ),
         "gate_note": (
-            "this certificate passes when the attacks were genuinely mounted, "
-            "not when they failed; a REFUTED status here is a passing outcome "
-            "for the adversary and a failing one for the audited science"
+            "the per-attack certificates gate on the attacks being genuinely "
+            "mounted, never on their failing; this LEDGER certificate, and "
+            "with it the process exit status, fails closed whenever any "
+            "attack lands (refuted nonempty), so a science refutation can "
+            "never produce a green terminal or exit 0"
         ),
         "independently_reproduced": {
             "lawful_triples_at_unit_grading": lawful,
             "lawful_trace_bearing_at_unit_grading": trace_bearing,
+            "minimum_nonzero_trace_L1_norm": min_nonzero_l1,
         },
         "residual_exposure": (
-            "the audited verdict rests on Cycle-318's coefficient two being a "
-            "lawful sibling rather than a rejected one. This adversary confirms "
-            "the arithmetic of that route and confirms Cycle-320 names it, but "
-            "it cannot adjudicate whether the repo intends the route to remain "
-            "available. If a later ruling closes the coefficient-two route, "
-            "the escape closes with it and the verdict should be revisited"
+            "the audited verdict exhibits Cycle-318's coefficient-two route "
+            "as an arithmetically lawful trace-bearing variant. This "
+            "adversary confirms that arithmetic and confirms Cycle-320 names "
+            "the route, but it cannot adjudicate whether the repo retains "
+            "the route, whether the six stipulated response objects "
+            "identify with any physical response lineage, or whether the "
+            "grading sign identifies with the physical conformal-mode sign; "
+            "all three are open questions outside this checker's reach, and "
+            "the audited package claims none of them"
         ),
         "finding": (
             f"Five independent attacks were mounted against the provenance "
@@ -1028,13 +1096,17 @@ def run() -> int:
             f"weight is an identity over all occupancy patterns; the census "
             f"verdict reproduced object for object on a polynomial-free route "
             f"with nothing missed and nothing overclaimed; and the committed "
-            f"receipt matched its pin and its own internal arithmetic. One "
-            f"exposure is left standing and named rather than papered over: "
-            f"this runner verifies that the coefficient-two route exists and is "
-            f"arithmetically lawful, not that the repo means to keep it."
+            f"transcript cache matched its pin and its own internal "
+            f"arithmetic. The exposures left standing are named rather than "
+            f"papered over: this runner verifies that the coefficient-two "
+            f"route exists and is arithmetically lawful, not that the repo "
+            f"retains it, and it verifies nothing about the open "
+            f"object-lineage and physical-sign identifications."
         ),
     }
-    ledger["pass"] = ledger["all_attacks_mounted"]
+    # Fail closed on any landed refutation: mounting the attacks is necessary
+    # but no longer sufficient for this certificate (and hence for exit 0).
+    ledger["pass"] = ledger["all_attacks_mounted"] and not refuted
 
     elapsed = monotonic() - started
     controls = {
@@ -1045,7 +1117,7 @@ def run() -> int:
                 "recomputed from scratch and compared value for value"
             ),
             "exact": (
-                independent_sweep() == (lawful, trace_bearing)
+                independent_sweep() == (lawful, trace_bearing, min_nonzero_l1)
                 and compact(r1_commutator()["axis_rows"])
                 == compact(r1["axis_rows"])
             ),
@@ -1068,7 +1140,8 @@ def run() -> int:
         "firewall_hits_after_science": tuple(FIREWALL.hits),
         "finding": (
             "All five pinned inputs -- the audited runner, its committed "
-            "receipt and the three science primaries -- matched their SHA-256 "
+            "transcript cache and the three science primaries -- matched "
+            "their SHA-256 "
             "and git blob pins and stayed text/AST-only behind the import "
             "firewall; the audited runner was never loaded, so no line of the "
             "code under attack executed inside this process. The sweep and the "
@@ -1091,7 +1164,7 @@ def run() -> int:
         "R2_SUPERPOSITIONS": r2,
         "R3_OCCUPANCY": r3,
         "R4_CENSUS_THIRD_ROUTE": r4,
-        "R5_RECEIPT": r5,
+        "R5_COMMITTED_CACHE": r5,
         "V_REFUTATION_LEDGER": ledger,
         "H_CONTROLS": controls,
     }

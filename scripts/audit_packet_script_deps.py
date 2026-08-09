@@ -139,6 +139,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "staggered_fermion_card_2026-04-11": [
         "scripts/frontier_staggered_17card.py",
     ],
+    # The Cycle-873 tracelessness-provenance packet's independent checker is
+    # import-firewalled from its primary by design, so it is invisible to the
+    # transitive-import resolver; register it claim-scoped so the audit packet
+    # carries the adversary the note advertises.
+    "tracelessness_provenance_cycle873_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle873_provenance_independent_check_2026_07_28.py",
+    ],
 }
 
 

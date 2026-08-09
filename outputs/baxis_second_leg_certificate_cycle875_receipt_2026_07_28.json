@@ -19,16 +19,16 @@
  },
  "files": {
   "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md": {
-   "git_blob": "8a0397b004bdd8a22c66bb2203c2db7b02001078",
-   "sha256": "b8fd11734f0de5b3722e7d161989b948e6d8b3d05b3a6c77a112f87d6434b2ec"
+   "git_blob": "937e87107386a9709359a3dd3260d6c70ebb44ae",
+   "sha256": "95c61785acea86c960b3418422e659f57ad5856279cada5507eac3c4ae5d0184"
   },
   "logs/runner-cache/frontier_cycle875_baxis_independent_check_2026_07_28.txt": {
-   "git_blob": "7fab4273f6476a3bf1fffa7d2157856754912ba5",
-   "sha256": "f96567a0c18d26413a3453cd68f56f014c87f3ea211af7e957317cbb2f6eacf3"
+   "git_blob": "641433bb8557bfb6245fdf16974942ce07a9b30e",
+   "sha256": "eabf0efaff3ddc6f587568c93a4982f0e3d96cc183dc47f49d49dec0f538a7a1"
   },
   "logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt": {
-   "git_blob": "a9048184fc9b0db406fb6e7df0567a876459533a",
-   "sha256": "5b8ae8cbcd30546bb7c030bad5a90591a24a86a33f7067403865911cef2287f7"
+   "git_blob": "655337713db435f573eea2dbb6d8e737bbb9253a",
+   "sha256": "2d2baecfab7bdf786e3c17b4b76d4f10ef06fe9590a2c588c8fb652e534c76a6"
   },
   "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py": {
    "git_blob": "e336d660c672a6b8fc2d33dc70aa38dccb85d844",
@@ -47,8 +47,8 @@
   "permanently_open": 1
  },
  "no_go_discipline": {
-  "gate_record": "## No-Go Discipline Gate section in the note (N1-N8, status PASS: narrow by construction, no no_go claim ships)",
-  "n5_resolution_certificate": "five per-class lines in the primary's cached stdout; per_block B=4 and lattice_wide are 'checked and not executed' with reasons"
+  "gate_record": "## No-Go Discipline Gate section in the note (N1-N8; Status NOT PASS, closed as partial-attempt-with-named-untested-routes: the narrowed family-priced measured absences ship, nothing wider; no no_go claim ships)",
+  "n5_resolution_certificate": "five per-class lines in the primary's cached stdout; per_block B=4 and lattice_wide are 'checked and not executed' with reasons (PASS-blocking, consistent with the NOT PASS gate status)"
  },
  "note": "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md",
  "review_loop": [
@@ -65,11 +65,18 @@
    "fix_summary": "retired the bare CYCLE875_BAXIS_* runner banners and the checker's 'discharge certificate' self-description for domain-explicit single-record-clock names (B-AXIS declared alias only); landed the No-Go Discipline artifacts for the surviving family-priced measured absences: the N1-N8 gate record in the note and the five-line N5 resolution certificate (per_element/per_site/per_mode/per_block/lattice_wide) in the primary's cached stdout",
    "iteration": 2,
    "reviewer": "Sol (confirmation seat)"
+  },
+  {
+   "date": "2026-08-08",
+   "disposition": "CONFIRMATION_FAIL_FIXED",
+   "fix_summary": "no-go gate record made structurally complete: N2 rewritten as the full 21-pair directional independence table (three one-way vacuous dependencies from unclosable O10 noted in-row), N4 rewritten as a per-citation path:line/residual/match table including the dropped Cycle-866 row, and N1 route 6's non-permitted marker resolved by closing the gate NOT PASS as partial-attempt-with-named-untested-routes (route neither attemptable without new science nor ruled out by prior); science unchanged",
+   "iteration": 3,
+   "reviewer": "Sol (confirmation seat)"
   }
  ],
  "runtime_seconds": {
-  "checker": 28.6,
-  "primary": 10.0
+  "checker": 28.1,
+  "primary": 9.5
  },
  "sharpenings": [
   "869 coverage decomposition: 13/480 = 12 identity-class + 1 tick-moving witness (1121 = 59*19 exactly)",

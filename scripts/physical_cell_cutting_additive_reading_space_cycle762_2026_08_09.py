@@ -11,8 +11,8 @@ on every cover are exactly the cutting table's row space, that the two row space
 span the whole assignment space and meet in the constants alone, and that the two
 common totals are the plain sum divided by eight and by twenty four.
 
-Three controls are built to come out negative. No gate compares a quantity with
-itself and no constant is fitted.
+Three discriminating controls test nearby coarse alternatives. No gate compares a
+quantity with itself and no constant is fitted.
 
 Output: one line per gate, then the stdout character count, then the total line.
 """
@@ -23,6 +23,8 @@ import sys
 import time
 import resource
 from fractions import Fraction as FR
+
+AUDIT_TIMEOUT_SEC = 400
 
 T0 = time.time()
 OUT = [0]
@@ -648,88 +650,88 @@ RSSMB = RSS / 1048576.0 if RSS > 10000000 else RSS / 1024.0
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and GENERIC and NPTS == 625
      and DIV == 80 and NS == 15800 and SIZES == [24] and NPI == 192
      and sorted(set(PCN)) == [1975] and NCOV == 192 and BRS == [8] and BCS == [8],
-     "G0",
-     "{0} pieces of determinant one, {1} at cost floor {2}, {3} cuttings of {4} over {5} points of divisor {9}, {6} used, {7} each, {8} covers".format(
+     "OBJECT",
+     "{0} determinant-one pieces; {1} at cost {2}; {3} size-{4} cuttings on {5} divisor-{9} points; {6} used; {8} covers".format(
          NCAND, NKEPT, FLOOR, NS, SIZES[0], NPTS, NPI, PCN[0], NCOV, DIV))
 
 gate(DISJ_OK and NPAIR == NFAC + NDIM and COVEXACT and ACS == [1975],
-     "G1",
-     "each cutting is a tiling: {0} pieces of volume 1 over 24, all {1} co-occurring pairs interior-disjoint, {2} by facet".format(
+     "TILING",
+     "each cutting tiles: {0} volume-1/24 pieces; all {1} co-occurring pairs interior-disjoint; {2} by facet".format(
          SIZES[0], NPAIR, NFAC))
 
 gate(OMAX > 1 and SLOTS == 120 and NCORN == 16 and SLOTS > NCORN,
-     "G2",
-     "corner sharing: a cutting spends {0} corner slots on {1} corners, one corner taking from {2} to {3}, so a corner reading is not partitioned".format(
+     "CORNER-INCIDENCE",
+     "each cutting uses {0} corner incidences on {1} corners; multiplicities range {2} to {3}".format(
          SLOTS, NCORN, OMIN, OMAX))
 
 gate(GRAM_OK and KANN and RA400 == 88 and RA800 == 88 and RA == 88,
-     "G3",
-     "product substitution sound: two builds of the {0} square agree, its kernel kills every cutting row, and 400 and 800 rows give rank {1}".format(
+     "GRAM-RANK",
+     "two {0}-square product builds agree; its kernel annihilates all cutting rows; 400-row and 800-row ranks are {1}".format(
          NPI, RA400))
 
 gate(RA == 88 and len(KERA) == 104 and RB == 105 and len(KERB) == 87
      and RA + len(KERA) == NPI and RB + len(KERB) == NPI,
-     "G4",
-     "cutting table rank {0} kernel {1}, cover table rank {2} kernel {3}, and {0} plus {1} and {2} plus {3} are both {4}".format(
+     "TABLE-RANKS",
+     "cutting rank/kernel {0}/{1}; cover rank/kernel {2}/{3}; both satisfy rank-nullity in {4} columns".format(
          RA, len(KERA), RB, len(KERB), NPI))
 
 gate(ONE_NOT_KERA and ONE_NOT_KERB and COLA == 1975 and COLB == 8,
-     "G5",
-     "one over {0} times the constants reads 1 on every cutting and one over {1} times the constants reads 1 on every cover".format(
-         A1[0], B1[0]))
+     "CONSTANT-DIRECTION",
+     "normalized constants read 1 on every cutting and cover; column sums are {2} and {3}".format(
+         A1[0], B1[0], COLA, COLB))
 
 gate(D105 == 105 and D88 == 88 and BASA_OK and BASB_OK,
-     "G6",
-     "the equal-cutting-reading set has dimension {0} and the equal-cover-reading set has dimension {1}, the constants lying in neither kernel".format(
+     "READING-DIMENSIONS",
+     "equal-cutting-reading dimension {0}; equal-cover-reading dimension {1}; constants lie outside both kernels".format(
          D105, D88))
 
 gate(J1 == 105 and D105 == 105 and RB == 105,
-     "G7",
-     "claim one: equal-cutting-reading set and cover table row space have joint rank {0}, matching both dimensions, so they are equal".format(
+     "CUTTING-READINGS",
+     "equal-cutting-reading and cover-row spaces each have dimension {0} and joint rank {0}".format(
          J1))
 
 gate(J2 == 88 and D88 == 88 and RA == 88,
-     "G8",
-     "claim two: equal-cover-reading set and cutting table row space have joint rank {0}, matching both dimensions, so they are equal".format(
+     "COVER-READINGS",
+     "equal-cover-reading and cutting-row spaces each have dimension {0} and joint rank {0}".format(
          J2))
 
 gate(J3 == 192 and RA + RB - J3 == 1,
-     "G9",
-     "claim three: the two row spaces have joint rank {0} and so meet in dimension {1}, the constants being the column sums over {2} and {3}".format(
+     "SPAN-INTERSECTION",
+     "row spaces have joint rank {0} and intersection dimension {1}; constants occur through column sums {2} and {3}".format(
          J3, RA + RB - J3, COLA, COLB))
 
 gate(TOT_OK and NZ105 == 3 and NZ88 == 3 and NS == 8 * 1975 and NPI == 24 * 8,
-     "G10",
-     "claim four: on {0} nonzero-sum elements of each space the readings are the sum over 8 and the sum over 24, with {1} being 8 times {2}".format(
+     "COMMON-TOTALS",
+     "{0} nonzero-sum elements per space give totals sum/8 and sum/24; {1} equals 8 times {2}".format(
          NZ105, NS, 1975))
 
 gate(C11_OK,
-     "G11",
-     "control negative: a cover lies in the {0}-space yet its cover-side reading takes the values {1}, so it is not constant".format(
+     "COVER-CONTROL",
+     "a cover lies in the dimension-{0} space; its cover-side readings are {1}".format(
          D105, ", ".join(str(x) for x in C11)))
 
 gate(C12_OK,
-     "G12",
-     "control negative: with the constants replaced by the zero space the two dimensions drop to {0} and {1}, a real extra direction".format(
+     "ZERO-CONTROL",
+     "replacing the constant target by zero gives kernel dimensions {0} and {1}".format(
          C12A, C12B))
 
 gate(C13_OK,
-     "G13",
-     "control negative: a cyclic column shift keeps rank {0} and both sums 8, but its joint rank with the {1}-space is {2}, so the match fails".format(
+     "SHIFT-CONTROL",
+     "cyclic shift keeps rank {0} and marginal sums 8; joint rank with the dimension-{1} space is {2}".format(
          RB2, D105, J13))
 
 gate(D105 == NPI - D88 + 1 and D88 == NPI - D105 + 1 and D88 + D105 == NPI + 1,
-     "G14",
-     "bookkeeping: {0} is {1} minus {2} plus 1, {2} is {1} minus {0} plus 1, and {2} plus {0} is {1} plus 1".format(
+     "DIMENSION-CHECK",
+     "{0}={1}-{2}+1; {2}={1}-{0}+1; {2}+{0}={1}+1".format(
          D105, NPI, D88))
 
 gate(NO_PC and NO_EM and ASCII_OK,
-     "G15",
-     "source hygiene: no per-cent character, no long dash, every character of this file is plain ASCII")
+     "SOURCE-HYGIENE",
+     "no per-cent character or long dash; every source character is plain ASCII")
 
 gate(ELAPSED < 300.0 and RSSMB < 1500.0,
-     "G16",
-     "budget: elapsed under 300 seconds and peak resident memory under 1500 MB")
+     "RESOURCE-BOUND",
+     "elapsed under 300 seconds and peak resident memory under 1500 MB")
 
 TAIL = "TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1])
 BASE = OUT[0]
@@ -744,3 +746,5 @@ emit("stdout characters: {0}".format(n))
 emit(TAIL)
 if OUT[0] != n:
     raise ValueError("character accounting did not close")
+if STAT[1] != 0:
+    raise SystemExit(1)

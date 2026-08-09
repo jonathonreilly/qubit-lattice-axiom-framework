@@ -1,29 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_additive_reading_space_cycle762_2026_08_09.py
-runner_sha256: b769bb57140dfe0fd2b22cbfb8692e41a77bc5050c6f0ae157977bd7da3240db
+runner_sha256: c19c14ea6018c57e9c03e3e1306596ca9e77ac065099d0f558b7b84cec28353a
 timeout_sec: 400
 exit_code: 0
-elapsed_sec: 36.25
+elapsed_sec: 50.01
 status: ok
 ----- stdout -----
-PASS G0  2672 pieces of determinant one, 400 at cost floor 6, 15800 cuttings of 24 over 625 points of divisor 80, 192 used, 1975 each, 192 covers
-PASS G1  each cutting is a tiling: 24 pieces of volume 1 over 24, all 15168 co-occurring pairs interior-disjoint, 13632 by facet
-PASS G2  corner sharing: a cutting spends 120 corner slots on 16 corners, one corner taking from 4 to 24, so a corner reading is not partitioned
-PASS G3  product substitution sound: two builds of the 192 square agree, its kernel kills every cutting row, and 400 and 800 rows give rank 88
-PASS G4  cutting table rank 88 kernel 104, cover table rank 105 kernel 87, and 88 plus 104 and 105 plus 87 are both 192
-PASS G5  one over 24 times the constants reads 1 on every cutting and one over 8 times the constants reads 1 on every cover
-PASS G6  the equal-cutting-reading set has dimension 105 and the equal-cover-reading set has dimension 88, the constants lying in neither kernel
-PASS G7  claim one: equal-cutting-reading set and cover table row space have joint rank 105, matching both dimensions, so they are equal
-PASS G8  claim two: equal-cover-reading set and cutting table row space have joint rank 88, matching both dimensions, so they are equal
-PASS G9  claim three: the two row spaces have joint rank 192 and so meet in dimension 1, the constants being the column sums over 1975 and 8
-PASS G10  claim four: on 3 nonzero-sum elements of each space the readings are the sum over 8 and the sum over 24, with 15800 being 8 times 1975
-PASS G11  control negative: a cover lies in the 105-space yet its cover-side reading takes the values 0, 1, 2, 4, 8, so it is not constant
-PASS G12  control negative: with the constants replaced by the zero space the two dimensions drop to 104 and 87, a real extra direction
-PASS G13  control negative: a cyclic column shift keeps rank 105 and both sums 8, but its joint rank with the 105-space is 191, so the match fails
-PASS G14  bookkeeping: 105 is 192 minus 88 plus 1, 88 is 192 minus 105 plus 1, and 88 plus 105 is 192 plus 1
-PASS G15  source hygiene: no per-cent character, no long dash, every character of this file is plain ASCII
-PASS G16  budget: elapsed under 300 seconds and peak resident memory under 1500 MB
-stdout characters: 2278
+PASS OBJECT  2672 determinant-one pieces; 400 at cost 6; 15800 size-24 cuttings on 625 divisor-80 points; 192 used; 192 covers
+PASS TILING  each cutting tiles: 24 volume-1/24 pieces; all 15168 co-occurring pairs interior-disjoint; 13632 by facet
+PASS CORNER-INCIDENCE  each cutting uses 120 corner incidences on 16 corners; multiplicities range 4 to 24
+PASS GRAM-RANK  two 192-square product builds agree; its kernel annihilates all cutting rows; 400-row and 800-row ranks are 88
+PASS TABLE-RANKS  cutting rank/kernel 88/104; cover rank/kernel 105/87; both satisfy rank-nullity in 192 columns
+PASS CONSTANT-DIRECTION  normalized constants read 1 on every cutting and cover; column sums are 1975 and 8
+PASS READING-DIMENSIONS  equal-cutting-reading dimension 105; equal-cover-reading dimension 88; constants lie outside both kernels
+PASS CUTTING-READINGS  equal-cutting-reading and cover-row spaces each have dimension 105 and joint rank 105
+PASS COVER-READINGS  equal-cover-reading and cutting-row spaces each have dimension 88 and joint rank 88
+PASS SPAN-INTERSECTION  row spaces have joint rank 192 and intersection dimension 1; constants occur through column sums 1975 and 8
+PASS COMMON-TOTALS  3 nonzero-sum elements per space give totals sum/8 and sum/24; 15800 equals 8 times 1975
+PASS COVER-CONTROL  a cover lies in the dimension-105 space; its cover-side readings are 0, 1, 2, 4, 8
+PASS ZERO-CONTROL  replacing the constant target by zero gives kernel dimensions 104 and 87
+PASS SHIFT-CONTROL  cyclic shift keeps rank 105 and marginal sums 8; joint rank with the dimension-105 space is 191
+PASS DIMENSION-CHECK  105=192-88+1; 88=192-105+1; 88+105=192+1
+PASS SOURCE-HYGIENE  no per-cent character or long dash; every source character is plain ASCII
+PASS RESOURCE-BOUND  elapsed under 300 seconds and peak resident memory under 1500 MB
+stdout characters: 1888
 TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----

@@ -130,7 +130,17 @@
  "fail": 0,
  "inputs": [],
  "pass": 31,
- "payload_sha256": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+ "payload_sha256": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
+ "review_loop": {
+  "addressed": [
+   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
+   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
+   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
+   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
+  ],
+  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
+  "iteration": 2
+ },
  "role": "salvage primary: seven narrow exact algebraic results on in-file stipulated definitions; bounded support only; no derivation, closure, or selection claims",
  "script": "scripts/salvaged_exact_algebra_2026_08_08.py",
  "units": {

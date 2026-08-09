@@ -18,11 +18,13 @@ PASS circulant.equal_diagonal_and_trace_route_gives_(n-1)/n_over_n^2
 PASS circulant.ratio_at_n_3_is_2/27
 PASS edge_removal.matches_the_neighbour_pair_formula_on_all_1024
 PASS edge_removal.matches_on_200_seeded_8_vertex_graphs
+PASS edge_removal.six_vertex_census_recomputed_independently
 PASS receipt.primary_receipt_file_exists
 PASS receipt.primary_digest_recomputes
-PASS receipt.primary_verdict_is_a_full_real_pass
-PASS receipt.primary_values_match_this_checkers_recomputation
+PASS receipt.full_payload_matches_the_canonical_expected_record
+PASS tamper.unrehashed_tamper_breaks_the_digest
+PASS tamper.rehashed_semantic_tamper_is_rejected
 PASS gate.check_count_matches_the_declared_census
-TOTAL: PASS=25 FAIL=0
+TOTAL: PASS=27 FAIL=0
 VERDICT: PASS
 receipt: outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json

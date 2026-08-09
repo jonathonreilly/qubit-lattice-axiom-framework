@@ -1,4 +1,4 @@
-# Seven narrow exact algebraic results on stipulated definitions — salvage of the rejected route-sweep package
+# Seven exact algebraic results on stipulated definitions
 
 Date: 2026-08-08
 
@@ -6,31 +6,39 @@ Authority: none
 
 Audit: unset
 
-Status: bounded support note (review-loop salvage pass on PR #5995,
-which the combined adversarial science review rejected with
-disposition FAIL). This note carries ONLY the narrow exact algebraic
-results the review itself named salvageable, restated on definitions
-stipulated in this file and in the runners. Nothing here is a
-derivation from the repo axioms, a route closure, a no-go, a physical
-identification, or a selection among rival expressions. Every claim
-below is exact rational/integer mathematics on its own stipulated
-objects, and each unit says what it does NOT establish.
+Status: bounded support note. This note carries seven narrow exact
+algebraic results, each restated on definitions stipulated in this
+file and in the runners. Nothing here is a derivation from the repo
+axioms, a route closure, a no-go, a physical identification, or a
+selection among rival expressions. Every claim below is exact
+rational/integer mathematics on its own stipulated objects, and each
+unit says what it does NOT establish. Historical provenance (these
+are the results a combined adversarial science review named
+salvageable from a rejected package) is recorded in the Review record
+at the end of this note.
 
 Claim type: bounded_theorem (support-only; no headline claim; each
 unit is bounded to its stipulated definitions)
 
 Imports: none. All definitions are stipulated in this file and
-restated verbatim in the runners. The runners read no repo files, pin
-no axiom bytes, execute no git-history objects, and contain no fitted
-or measured comparators.
+restated verbatim in the runners. The primary runner has no file
+inputs at all; the independent checker reads exactly one non-science
+input — the primary's receipt, as execution evidence, declared in its
+own receipt `inputs`. Neither runner pins axiom bytes, executes
+git-history objects, or contains fitted or measured comparators.
 
 Runners:
 
 - [`salvaged_exact_algebra_2026_08_08.py`](../scripts/salvaged_exact_algebra_2026_08_08.py)
   (primary; 31 computed checks, fail-closed, exit 0 only on full PASS)
 - [`salvaged_exact_algebra_independent_check_2026_08_08.py`](../scripts/salvaged_exact_algebra_independent_check_2026_08_08.py)
-  (independent check; 25 computed checks; every unit recomputed by a
-  different exact route; verifies the primary receipt fail-closed)
+  (independent check; 27 computed checks; every unit recomputed by a
+  different exact route; verifies the primary receipt fail-closed and
+  full-surface — the entire receipt payload must equal a canonical
+  expected record assembled from the checker's own seven routes, and
+  two tamper regressions run every time: a byte tamper must break the
+  digest, and the same semantic tamper with a recomputed self-digest
+  must still be rejected by the full-payload comparison)
 
 Receipts:
 
@@ -195,8 +203,9 @@ runs S, a, ..., b, S with the inner path avoiding S, giving the lower
 bound; a shortest inner path closes to a simple cycle attaining it.
 Verified exhaustively on all 32768 graphs on 6 labelled vertices
 (brute-force cycle enumeration vs the formula) and, in the
-independent check, on all 1024 graphs on 5 vertices plus 200 seeded
-8-vertex graphs by the distinct edge-removal BFS route.
+independent check, by the distinct edge-removal BFS route on all 1024
+graphs on 5 vertices, 200 seeded 8-vertex graphs, and the same full
+6-vertex census recomputed independently.
 
 Not established: any three-regime loop-cost law, any mechanism claim,
 and any statement about measured loop costs on frozen fields — the
@@ -209,9 +218,11 @@ The combined adversarial review of PR #5995 (129 delta files, 17
 notes, 34 runners, 44 receipts, 34 logs) returned disposition FAIL
 and named as salvageable only "narrow exact results ... separable
 from the failed bridges/no-go rhetoric" (its salvage finding, F14).
-This branch deletes every delta file of that package and rebuilds
-exactly the salvageable algebra as the single package above. The
-deleted files remain recoverable on the PR head branch.
+The salvage pass (commit `b472df1c1b`) deleted every delta file of
+that package and rebuilt exactly the salvageable algebra as the
+single package above. The deleted files remain recoverable at the
+untouched PR head: branch `physics-loop/toe-time-blockAC2-20260802`,
+immutable commit `867aff0edc16f64b5e8d5cc1022cbf9ce92b92de`.
 
 Salvaged (source -> unit above): Cycle 872 exact conformal/trace-free
 algebra -> unit 1; Cycles 876/895 exact affine normal form -> unit 2;
@@ -284,18 +295,21 @@ the PR #5995 review record):
   (F8); declared source runners/receipts absent from the worktree and
   from origin/main (F15 — Cycle 872's two source runners, Cycle 895's
   Cycle 873/880 inputs, Cycle 900's Cycle 884 inputs); their exact
-  algebra survives as units 1, 2, 4, 5 on in-file stipulations with
-  no pins.
+  algebra survives as units 1, 2, and 5 on in-file stipulations with
+  no pins (Cycle 899's algebra, unit 4, is covered in its own entry
+  above).
 - All 34 committed runner logs and 44 receipts of the old package:
   caches of runners whose executable closure cannot be reconstructed
   (F9, F15) or whose gates were not evidence-driven (F1).
 - The nine prose "audit rows" and all campaign/window process
   language on science surfaces: not machine-visible to the audit
   worker, missing dependency links (F13); branch-local process
-  vocabulary on durable surfaces (F12). This note requests no audit
-  rows.
+  vocabulary on durable surfaces (F12). This note requests no extra
+  dispatch or re-audit rows; its own ordinary claim row is
+  pipeline-seeded and remains `unaudited` for independent review.
 
 What this salvage does NOT do: it does not repair, re-derive, or
 re-assert any dropped claim; it does not touch the axiom surface; it
-does not seed audit rows; it does not compare anything to fitted,
-measured, or imported values.
+authors no audit verdict and requests no extra dispatch or re-audit
+rows (its own pipeline-seeded claim row remains `unaudited`); it does
+not compare anything to fitted, measured, or imported values.

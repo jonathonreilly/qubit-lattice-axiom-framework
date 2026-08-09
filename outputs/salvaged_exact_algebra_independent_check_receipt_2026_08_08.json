@@ -81,6 +81,10 @@
    "ok": true
   },
   {
+   "name": "edge_removal.six_vertex_census_recomputed_independently",
+   "ok": true
+  },
+  {
    "name": "receipt.primary_receipt_file_exists",
    "ok": true
   },
@@ -89,11 +93,15 @@
    "ok": true
   },
   {
-   "name": "receipt.primary_verdict_is_a_full_real_pass",
+   "name": "receipt.full_payload_matches_the_canonical_expected_record",
    "ok": true
   },
   {
-   "name": "receipt.primary_values_match_this_checkers_recomputation",
+   "name": "tamper.unrehashed_tamper_breaks_the_digest",
+   "ok": true
+  },
+  {
+   "name": "tamper.rehashed_semantic_tamper_is_rejected",
    "ok": true
   },
   {
@@ -102,17 +110,37 @@
   }
  ],
  "date": "2026-08-08",
- "expected_check_count": 25,
+ "expected_check_count": 27,
  "fail": 0,
  "inputs": [
   "outputs/salvaged_exact_algebra_receipt_2026_08_08.json"
  ],
- "pass": 25,
- "payload_sha256": "e367abdfd4072a4b6a78666cd020b1ebf3429a6ac716b8d6e09927c042f61e10",
+ "pass": 27,
+ "payload_sha256": "c7ea0fc5b331e91305f93effcffaad29334add1cc1d854f46f23859cdbef5898",
+ "review_loop": {
+  "addressed": [
+   "S1: receipt cross-check made full-surface in the independent checker, with a rehashed semantic-tamper regression",
+   "S2: independent checker registered as an explicit packet helper for this claim in build_citation_graph.py",
+   "S3: citation-graph manifest acknowledgment co-landed; audit-row wording in the note corrected",
+   "S4: note title, source-boundary sentence, unit cross-reference, and recovery handle corrected"
+  ],
+  "findings_file": "RL_SALVAGE_FINDINGS_PR5995.md",
+  "iteration": 2
+ },
  "role": "salvage independent check: every unit recomputed by a different exact route; primary receipt verified fail-closed",
  "script": "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
  "units": {
   "forms_by_polynomials": {
+   "family_values_at_N_3": {
+    "(N-1)(N-2)/(3N)": "2/9",
+    "(N-1)/N^2": "2/9",
+    "(N^2-1)/(12N)": "2/9"
+   },
+   "family_values_at_N_4": {
+    "(N-1)(N-2)/(3N)": "1/2",
+    "(N-1)/N^2": "3/16",
+    "(N^2-1)/(12N)": "5/16"
+   },
    "fixed_locus_rows": [
     {
      "N": 2,
@@ -169,6 +197,85 @@
      "matches": true,
      "sum": "143/12"
     }
+   ],
+   "fixed_locus_rows_primary_schema": [
+    {
+     "N": 2,
+     "matches_(N^2-1)/12": true,
+     "normalised": "1/8",
+     "normalised_matches_family": true,
+     "sum": "1/4"
+    },
+    {
+     "N": 3,
+     "matches_(N^2-1)/12": true,
+     "normalised": "2/9",
+     "normalised_matches_family": true,
+     "sum": "2/3"
+    },
+    {
+     "N": 4,
+     "matches_(N^2-1)/12": true,
+     "normalised": "5/16",
+     "normalised_matches_family": true,
+     "sum": "5/4"
+    },
+    {
+     "N": 5,
+     "matches_(N^2-1)/12": true,
+     "normalised": "2/5",
+     "normalised_matches_family": true,
+     "sum": "2/1"
+    },
+    {
+     "N": 6,
+     "matches_(N^2-1)/12": true,
+     "normalised": "35/72",
+     "normalised_matches_family": true,
+     "sum": "35/12"
+    },
+    {
+     "N": 7,
+     "matches_(N^2-1)/12": true,
+     "normalised": "4/7",
+     "normalised_matches_family": true,
+     "sum": "4/1"
+    },
+    {
+     "N": 8,
+     "matches_(N^2-1)/12": true,
+     "normalised": "21/32",
+     "normalised_matches_family": true,
+     "sum": "21/4"
+    },
+    {
+     "N": 9,
+     "matches_(N^2-1)/12": true,
+     "normalised": "20/27",
+     "normalised_matches_family": true,
+     "sum": "20/3"
+    },
+    {
+     "N": 10,
+     "matches_(N^2-1)/12": true,
+     "normalised": "33/40",
+     "normalised_matches_family": true,
+     "sum": "33/4"
+    },
+    {
+     "N": 11,
+     "matches_(N^2-1)/12": true,
+     "normalised": "10/11",
+     "normalised_matches_family": true,
+     "sum": "10/1"
+    },
+    {
+     "N": 12,
+     "matches_(N^2-1)/12": true,
+     "normalised": "143/144",
+     "normalised_matches_family": true,
+     "sum": "143/12"
+    }
    ]
   },
   "grading_by_interpolation": {
@@ -179,10 +286,12 @@
    ]
   },
   "module_by_characters": {
+   "complement_char_poly": "x^2 + x + 1",
    "dimension_pair_over_Q": [
     1,
     2
    ],
+   "discriminant": "-3/1",
    "multiplicities_over_C": [
     1,
     1,
@@ -196,21 +305,93 @@
    "eight_vertex_seeded": 200,
    "eight_vertex_with_cycle_through_pointer": 138,
    "five_vertex_graphs": 1024,
-   "five_vertex_with_cycle_through_pointer": 591
+   "five_vertex_with_cycle_through_pointer": 591,
+   "six_vertex_graphs": 32768,
+   "six_vertex_with_cycle_through_pointer": 24838
   },
   "primary_receipt": {
-   "primary_digest": "db1654903eb389f0e3e066eaef40a8ea60c2265eea01e4d21c72c0d947fb610a",
+   "comparison": "full payload minus self-digest, wholesale",
+   "primary_digest": "693a61e775c5ee92d5b31fe0683c1ac4f135b80061c76ebf9c3f332b7e778743",
    "primary_fail": 0,
    "primary_pass": 31
   },
   "split_by_reynolds": {
+   "ledger_rows_recomputed": [
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -6
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -5
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -4
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -3
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -2
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": -1
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 0
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 1
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 2
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 3
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 4
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 5
+    },
+    {
+     "conformal_channel_zero": true,
+     "trace": "0/1",
+     "w": 6
+    }
+   ],
    "probe_count": 125
   },
   "witness_by_trace": {
    "n_range": [
     2,
     50
-   ]
+   ],
+   "rival_value_at_3": "2/9",
+   "value_at_3": "2/27"
   }
  },
  "verdict": "PASS"

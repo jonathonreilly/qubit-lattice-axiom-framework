@@ -196,6 +196,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
     ],
+    # The exact-algebra bounded-support checker deliberately does not import
+    # the primary: it recomputes every unit by a different exact route and
+    # verifies the primary receipt fail-closed. Expose that separately
+    # executable checker beside the primary in this claim's restricted packet.
+    "exact_algebra_salvage_bounded_support_note_2026-08-08": [
+        "scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+    ],
     # Cycle 731's checker intentionally obtains the actual primary gate stream
     # through runpy/subprocess boundaries rather than importing the primary.
     # Keep that independent source in the claim packet explicitly.

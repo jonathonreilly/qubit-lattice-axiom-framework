@@ -1,12 +1,16 @@
 {
  "edge_count": 15422,
- "node_count": 4632,
+ "node_count": 4640,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
   "a1_qubit_interpretation_note_2026-05-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "a3_channel_half_forced_cycle912_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -2474,6 +2478,10 @@
    "deps_hash": "27100503e5e0",
    "out_degree": 3
   },
+  "complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "complete_prediction_chain_2026_04_15": {
    "deps_hash": "ed7953444551",
    "out_degree": 14
@@ -4505,6 +4513,10 @@
   "ewsb_pattern_from_higgs_y_note_2026-05-02": {
    "deps_hash": "1381121484ef",
    "out_degree": 3
+  },
+  "exact_algebra_salvage_bounded_support_note_2026-08-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": {
    "deps_hash": "e3b0c44298fc",
@@ -10118,6 +10130,10 @@
    "deps_hash": "95b72757a210",
    "out_degree": 5
   },
+  "occurrence_route_priced_alpha_freedom_unified_cycle924_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "oh_schur_boundary_action_note": {
    "deps_hash": "5a94355f1c1f",
    "out_degree": 1
@@ -12718,6 +12734,10 @@
    "deps_hash": "9e644cf962a3",
    "out_degree": 3
   },
+  "retyped_worlds_are_setups_selection_sites_exist_cycle911_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
    "deps_hash": "b4b201521fbe",
    "out_degree": 2
@@ -13057,6 +13077,10 @@
   "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7299ef75081c",
    "out_degree": 1
+  },
+  "selection_is_transport_o3_terminal_cycle913_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "self_consistency_forces_poisson_note": {
    "deps_hash": "0c72e54e8637",
@@ -13493,6 +13517,10 @@
   "source_acceptance_harness_support_note_2026-07-28": {
    "deps_hash": "60dbe33abca2",
    "out_degree": 6
+  },
+  "source_action_bridge_pricing_cycle871_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "source_driven_field_recovery_h025_pocket_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15917,6 +15945,10 @@
   "within_sector_third_moment_consistent_all_seeds_bounded_theorem_note_2026-06-12": {
    "deps_hash": "2dd3a68f91ed",
    "out_degree": 3
+  },
+  "within_world_purchase_spectrum_cycle909_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",

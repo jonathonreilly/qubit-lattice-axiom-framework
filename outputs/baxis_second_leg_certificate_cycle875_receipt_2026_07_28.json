@@ -19,8 +19,8 @@
  },
  "files": {
   "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md": {
-   "git_blob": "937e87107386a9709359a3dd3260d6c70ebb44ae",
-   "sha256": "95c61785acea86c960b3418422e659f57ad5856279cada5507eac3c4ae5d0184"
+   "git_blob": "f74e7a5fc52a70225094453c0f230dfb92dbb5a8",
+   "sha256": "398da378ac833d718335296f17ae62474cb5157f4931ae75963bc4029ee7ba8a"
   },
   "logs/runner-cache/frontier_cycle875_baxis_independent_check_2026_07_28.txt": {
    "git_blob": "641433bb8557bfb6245fdf16974942ce07a9b30e",
@@ -72,6 +72,9 @@
    "fix_summary": "no-go gate record made structurally complete: N2 rewritten as the full 21-pair directional independence table (three one-way vacuous dependencies from unclosable O10 noted in-row), N4 rewritten as a per-citation path:line/residual/match table including the dropped Cycle-866 row, and N1 route 6's non-permitted marker resolved by closing the gate NOT PASS as partial-attempt-with-named-untested-routes (route neither attemptable without new science nor ruled out by prior); science unchanged",
    "iteration": 3,
    "reviewer": "Sol (confirmation seat)"
+  },
+  {
+   "iteration_4": "orchestrator micro-fix (Sol confirmation round 4): N2 collapsed to four independent walls per the pairwise contract; N4 witness re-pinned to arc_note_863_865.md:106-107"
   }
  ],
  "runtime_seconds": {

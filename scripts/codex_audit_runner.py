@@ -1226,7 +1226,49 @@ def _packet_manifest_for_fingerprint(
                 "are withheld from the auditor."
             ),
         )
+    # Reconstruct the declared contradiction/context relationship universe
+    # exactly as render_prompt() delivers it (same resolver, same roles, same
+    # rendered clipping, same source identities), so the delivery revalidation
+    # fingerprint covers relationship-bearing packets instead of rejecting
+    # them as remote_state_superseded. May raise RelationshipContextError
+    # (fail-closed) when a declared reference cannot be resolved.
+    note_path = (
+        row.get("note_path")
+        or (ledger_rows.get(cid) or {}).get("note_path")
+        or ""
+    )
+    if note_path:
+        note_body = read_note_body(str(note_path)) or ""
+        for rc_path, rc_block in relationship_context_blocks(str(note_path), note_body):
+            no_go_discipline_gate.set_packet_evidence(
+                manifest,
+                path=rc_path,
+                role="relationship_context",
+                text=rc_block,
+                invocation_bound_rendered_text=True,
+            )
     return manifest
+
+
+def relationship_context_fingerprint(manifest: dict[str, dict]) -> str:
+    """Bind the delivered relationship-context universe (paths + current
+    source identities) into its own fingerprint so relationship-context drift
+    is diagnosable separately from ordinary packet drift and never reported
+    as remote_state_superseded."""
+    state = {
+        path: _path_content_identity(REPO_ROOT / path)
+        for path, entry in sorted(manifest.items())
+        if isinstance(entry, dict)
+        and "relationship_context" in (entry.get("roles") or [])
+    }
+    return hashlib.sha256(
+        json.dumps(
+            {"schema": "relationship-context-fingerprint-v1", "state": state},
+            sort_keys=True,
+            separators=(",", ":"),
+            allow_nan=False,
+        ).encode("utf-8")
+    ).hexdigest()
 
 
 def audit_packet_source_fingerprint(
@@ -2567,6 +2609,7 @@ def audit_delivery_precondition(
     expected_role: str,
     expected_independence: str,
     auditor_family: str,
+    expected_relationship_fingerprint: str | None = None,
 ) -> tuple[bool, str, str]:
     """Refresh remote state and reject a forensic delivery selected on old inputs."""
     fetch = git("fetch", "origin", "main", check=False)
@@ -2656,9 +2699,36 @@ def audit_delivery_precondition(
             "the queue/dispatch/re-audit selection record changed while the "
             "forensic seat was running",
         )
+    try:
+        current_manifest = _packet_manifest_for_fingerprint(
+            current_row, current_rows
+        )
+    except RelationshipContextError as exc:
+        # Fail-closed with its own reason: a declared contradiction/context
+        # reference cannot be supplied atomically at delivery time. Never
+        # reported as remote_state_superseded.
+        return (
+            False,
+            "relationship_context_unready",
+            f"declared contradiction/context relation cannot be supplied "
+            f"atomically at delivery: {str(exc)[:300]}",
+        )
+    if expected_relationship_fingerprint is not None:
+        current_relationship_fingerprint = relationship_context_fingerprint(
+            current_manifest
+        )
+        if current_relationship_fingerprint != expected_relationship_fingerprint:
+            return (
+                False,
+                "relationship_context_superseded",
+                "a declared contradiction/context reference (wrapper or "
+                "archived original) changed while the forensic seat was "
+                "running",
+            )
     current_packet_fingerprint = audit_packet_source_fingerprint(
         current_row,
         current_rows,
+        current_manifest,
     )
     if current_packet_fingerprint != expected_packet_fingerprint:
         return (
@@ -4085,6 +4155,9 @@ def main() -> int:
                 ledger_rows,
                 exact_evidence_manifest,
             )
+            delivery_relationship_fingerprint = relationship_context_fingerprint(
+                exact_evidence_manifest
+            )
             delivery_selection_fingerprint = audit_selection_fingerprint(row)
 
             with run_log.open("a", encoding="utf-8") as f:
@@ -4507,6 +4580,9 @@ def main() -> int:
                         expected_role=role,
                         expected_independence=row_independence,
                         auditor_family=auditor_family,
+                        expected_relationship_fingerprint=(
+                            delivery_relationship_fingerprint
+                        ),
                     )
                 )
                 if not current:
@@ -4519,7 +4595,12 @@ def main() -> int:
                             "phase": precondition_result,
                             "reason": precondition_detail,
                         }) + "\n")
-                    if precondition_result == "remote_state_superseded":
+                    if precondition_result in (
+                        "remote_state_superseded",
+                        "relationship_context_superseded",
+                    ):
+                        # State moved mid-seat: skip and let the next cycle
+                        # re-select on current inputs.
                         skipped += 1
                     else:
                         failed += 1

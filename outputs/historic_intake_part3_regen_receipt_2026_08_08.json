@@ -6,7 +6,7 @@
     "item3_F6": "FIXED: Original verdict/Scope/Escape keep only the extraction claim fields; red flags + supersession moved to '## Triage extraction notes (2026-08-05/08, not from the original)' with an explicit non-authority disclaimer.",
     "item4_F8": "FIXED: hazards memo carries a Provenance block pinning its archived evidence base \u2014 the six extraction JSONLs (branch09, packsci01-05) archived byte-exact under archive_unlanded/historic_intake_originals/triage_extraction_evidence/ with per-file sha256 in the memo.",
     "item5_F13": "FIXED with a disclosed policy override: all 49 bare-code H1s rewritten so the explicit scientific name is the heading (0 bare-code H1s remain). The requested trailing '(legacy alias: X)' form is auto-removed by the repo's binding vocab_lint rewrite rule legacy_alias_strip ('Aliasing creates rot. Use the canonical name only.'), so no alias parenthetical is emitted; the historic token is preserved in the Explicit-subject line, the wrapper filename where applicable, and the pinned/archived original.",
-    "item6_no_go_retype": "FIXED: all 217 no_go-typed wrappers retyped bounded_theorem with the required no-live-no-go sentence; historic_claim_class keeps the historic taxonomy. Wrapper FILENAMES additionally neutralize no-go/obstruction/firewall trigger tokens (NO_GO/NOGO->NEGATIVE, OBSTRUCTION->OBSTRUCTED_ROUTE, FIREWALL->ROUTE_BARRIER; 137 files renamed) because no_go_discipline_gate.PATH_TRIGGER_RE makes filename-level no-go authority forensic regardless of claim type \u2014 a registration wrapper must not be a no-go-named artifact. Gate result: changed-audit-evidence: checked=694 failures=0 control_failures=0 (exit 0), isolated worktree, round-3 rerun after pipeline materialization",
+    "item6_no_go_retype": "FIXED: all 217 no_go-typed wrappers retyped bounded_theorem with the required no-live-no-go sentence; historic_claim_class keeps the historic taxonomy. Wrapper FILENAMES additionally neutralize no-go/obstruction/firewall trigger tokens (NO_GO/NOGO->NEGATIVE, OBSTRUCTION->OBSTRUCTED_ROUTE, FIREWALL->ROUTE_BARRIER; 137 files renamed) because no_go_discipline_gate.PATH_TRIGGER_RE makes filename-level no-go authority forensic regardless of claim type \u2014 a registration wrapper must not be a no-go-named artifact. Gate result: changed-audit-evidence: checked=694 failures=0 control_failures=0 (exit 0), round-3 isolated-worktree rerun",
     "item7_portable_links": "FIXED: the one archived original carrying 25 era-absolute markdown link targets (recovery idx 3606) is stored as .md.frozen (bytes unchanged, sha256 pin intact), noted in its wrapper; portable-link scan over generated + archived intake paths: 0 findings (1582 md files).",
     "item8_generator_hygiene": "FIXED: --triage/--census CLI flags with documented assembly-time defaults; check mode byte-compares every rendered output against the checkout and fails on drift (verified: drift 0 post-build, post-vocab_lint); unknown modes are argparse errors."
   },
@@ -3207,17 +3207,25 @@
         "fix_summary": "Atomic contradiction/context packet transport added to scripts/codex_audit_runner.py (generic contradicts:/cross_reference: consumer, role-separated, fail-closed); extraction verdict/scope/escape relocated to the Triage-extraction-notes section so the claim section carries only the pinned-headline compression; citation-graph manifest acknowledgment committed separately as a generated surface.",
         "iteration": 3,
         "reviewer": "Sol"
+      },
+      {
+        "date": "2026-08-08",
+        "disposition": "CONFIRMATION residual: F5 delivery revalidation",
+        "findings_file": "RL_CONFIRM3_FINDINGS_PR6018.md",
+        "fix_summary": "Delivery revalidation now reconstructs the relationship-context universe: _packet_manifest_for_fingerprint() rebuilds the contradicts:/cross_reference: blocks with the same resolver/roles/clipping as render_prompt(), a dedicated relationship_context_fingerprint travels with the seat, and audit_delivery_precondition diagnoses relationship drift as relationship_context_superseded and unresolvable references as relationship_context_unready \u2014 never remote_state_superseded. Regression suite added (docs/audit/scripts/tests/test_relationship_context_delivery.py): exact/rebuilt fingerprint equality for idx 10256 (10 relationship blocks), tamper-inequality on a referenced archived original, relationship-free packets byte-for-byte unchanged, fail-closed unresolvable-reference probe; end-to-end precondition probes return acceptance/superseded/unready as specified; pre-existing 22-test fingerprint suite still passes.",
+        "iteration": 4,
+        "reviewer": "Sol"
       }
     ]
   },
   "ship": "historic_intake_part3_review_regeneration",
   "verification": {
-    "audit_lint_strict": "exit 0; 4756 rows checked; 8 pre-existing claim_type_defaulted warnings on old docs/ files; zero findings attribute to docs/historic_intake (round-3 non-attribution re-check passed)",
-    "audit_pipeline_isolated_worktree": "run_pipeline.sh exit 0 END-TO-END in the isolated worktree at the round-3 state incl. the committed citation-graph manifest acknowledgment: all 18 stages pass, stage-18 authority-link guard PASS (graph_delta=acknowledged, 5416 nodes / 15422 edges)",
+    "audit_lint_strict": "exit 0; 4756 rows; zero findings attribute to docs/historic_intake (round-3 re-check)",
+    "audit_pipeline_isolated_worktree": "run_pipeline.sh exit 0 end-to-end at the round-3 state incl. the committed citation-graph manifest acknowledgment (stage-18 PASS, graph_delta=acknowledged, 5416 nodes / 15422 edges)",
     "bare_code_h1s": 0,
     "broken_md_links": 0,
     "claim_type_hints": "784/784 recognized",
-    "evidence_readiness_gate": "changed-audit-evidence: checked=694 failures=0 control_failures=0 (exit 0), isolated worktree, round-3 rerun after pipeline materialization",
+    "evidence_readiness_gate": "changed-audit-evidence: checked=694 failures=0 control_failures=0 (exit 0), round-3 isolated-worktree rerun",
     "pin_reverification": "781/781 archived originals sha256-match the shipped manifest pins (frozen-aware independent pass)",
     "portable_link_scan": "0 absolute-link findings across docs/historic_intake + archive_unlanded/historic_intake_originals (1582 md files)",
     "runner_bindings": "0/784 (live extractor)",

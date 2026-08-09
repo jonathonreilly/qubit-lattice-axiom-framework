@@ -1,6 +1,6 @@
 {
- "edge_count": 15423,
- "node_count": 4633,
+ "edge_count": 15422,
+ "node_count": 4632,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10465,10 +10465,6 @@
   "physical_endpoint_readout_qubit_stinespring_channel_cycle706_note_2026-08-01": {
    "deps_hash": "7dcb4f5476e2",
    "out_degree": 5
-  },
-  "physical_exact_adjacency_dissection_bracket_cycle725_note_2026-08-03": {
-   "deps_hash": "c8eee4235fc9",
-   "out_degree": 1
   },
   "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",

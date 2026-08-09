@@ -28,6 +28,7 @@
     108,
     128
   ],
+  "claim_type": "bounded_theorem",
   "coarse_witness": {
     "cost": 68,
     "pieces": 16,
@@ -80,14 +81,14 @@
     "each family sits inside the pieces it should": "PASS",
     "every carried bound is valid": "PASS",
     "facet normals bound each piece": "PASS",
+    "five representative bounds refuse strengthening": "PASS",
     "five-corner subsets and volume spectrum": "PASS",
     "fixed-weight integer bound reaches the minimum": "PASS",
     "invariant bound at halves reaches the minimum": "PASS",
     "invariant bound at thirds reaches the maximum": "PASS",
     "minimal-volume pieces and cost ranges": "PASS",
-    "no carried bound survives a unit strengthening": "PASS",
     "no sample point meets a piece boundary": "PASS",
-    "one orbit cannot certify the minimum": "PASS",
+    "no single carried orbit certifies the minimum": "PASS",
     "orbit counts refine the point membership": "PASS",
     "orbits of pieces under the rotations": "PASS",
     "proper rotations of the spatial lattice": "PASS",
@@ -95,20 +96,34 @@
     "sample points and their orbits": "PASS",
     "the covering control is rejected": "PASS",
     "the minimum is not a property of one stencil": "PASS",
-    "the parity relation does not extend to coarse piec": "PASS"
+    "the parity certificate stops at minimal pieces": "PASS"
   },
+  "headline": "within the supplied tick-box corner-dissection model: minimal-piece adjacency-cost bracket [108, 128], both ends attained, exactly the eleven even values attained; all-piece bracket [68, 128]",
+  "local_maximality_scope": "five representative certificates only; the thirteen other ladder rungs and the fixed-weight certificate are untested",
   "minimal_pieces": 2672,
   "nondegenerate_pieces": 3008,
+  "open_bridges": [
+    "physical tick-Admissibility realization (which rule variation corresponds to which tick)",
+    "identification of physical assembly cells with pairwise-adjacency simplices"
+  ],
   "orbit_count": 114,
   "orbit_sizes": [
     8,
     24
   ],
   "parity_rank": 465,
+  "parity_scope": "minimal-piece even parity is proved; over all pieces only THIS incidence-plus-volume certificate family is shown not to extend; no odd coarse dissection exhibited or excluded",
   "pass": 26,
   "rejected_control": {
     "cost": 72,
     "overlapping_pairs": 86
+  },
+  "review_loop": {
+    "date": "2026-08-08",
+    "disposition": "FIX_THEN_PROCEED",
+    "fix": "typed the note bounded_theorem of the supplied tick-box dissection model; narrowed the single-orbit, local-maximality, and coarse-parity claims to their computed scopes; removed the false monotone-stencil witness identification; declared the volume normalization; demoted uncarried cross-checks to provenance; made the runner fail closed and added its pinned cache",
+    "iteration": 1,
+    "reviewer": "Sol"
   },
   "sample_points": {
     "boundary_incidences_fixed_weight": 0,
@@ -120,13 +135,16 @@
       1041
     ]
   },
-  "single_orbit_cap": 84,
+  "single_orbit_cap_carried_family": 84,
+  "single_orbit_scope": "the 114 point-orbits of the carried invariant sample family only; other sample families untested",
+  "supplied_model": "corner 4-simplex pieces of one lattice cell carried through one tick, all ten vertex pairs graded by spatial L1 separation; the piece/dissection structure is supplied here, not derived from the Lattice axiom",
   "tight_points": {
     "all_pieces_floor": 296,
     "ceiling": 1136,
     "fixed_weight_floor": 2093,
     "invariant_floor": 2224
   },
+  "volume_normalization": "normalized lattice 4-volume |det| = 24 x Euclidean; whole box volume 24",
   "volume_spectrum": {
     "0": 1360,
     "1": 2672,

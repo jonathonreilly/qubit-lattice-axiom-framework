@@ -19,10 +19,10 @@ substrate exhibits neighbor-dependence of the distribution, the axiom's
 "varies with" clause has no witness in the corpus.
 
 ## Wave 1 blocks
-- Cycle 948 (blockIS1): the gate construction — exhibit the minimal
+- Cycle 970 (blockIS1): the gate construction — exhibit the minimal
   neighbor-dependent distribution inside the landed machinery, or prove the
   landed substrate cannot host one at declared scope; price the delta.
-- Cycle 949 (blockAX1): axiom-fidelity re-read — under the 08-05 distribution
+- Cycle 971 (blockAX1): axiom-fidelity re-read — under the 08-05 distribution
   semantics, which landed Born/records results change meaning, which gain a
   witness, which become vacuous. Exact per-row verdicts, no rewrites.
 
@@ -31,3 +31,15 @@ Integrity gates never encode desired outcomes; every block ships primary +
 spec'd-to-REFUTE checker + note + pinned caches + receipt + stacked PR; no
 axiom/primitive moves; push supervisor commits immediately; repo-sweeping
 runners pin snapshots; state-mutating claims must mutate real state.
+
+## Numbering note (2026-08-09)
+Cycles renumbered 948/949 -> 970/971: another live session is
+already executing cycle 948 (its scratch dirs are on this machine).
+Cycle numbers are a shared namespace across sessions; check before
+claiming one.
+
+## Machine note (2026-08-09)
+The host hit ENOSPC mid-launch. ~/.codex holds ~25 GB of worker state
+(sessions/2026/07 9.1G, state_5.sqlite 8.4G, archived_sessions 3.8G,
+a 115M May backup). Wave 1 runs ONE worker at a time until the owner
+clears it, so this campaign cannot starve the live review automation.

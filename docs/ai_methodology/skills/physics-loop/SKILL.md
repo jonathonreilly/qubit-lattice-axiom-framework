@@ -368,10 +368,10 @@ finite pairwise-disjoint record collections; a state is a configuration of
 records; and a law privileges no states, has a supplied condition as its
 domain, and gives exactly one answer where the condition holds. It does not
 supply the readout context, decomposition, `K`/CPT structure,
-sector-generation rule, weighting, normalization, specific
+sector-generation rule, specific
 probability-distribution values, formation-site and formation-rate rules,
 measurement/decoherence dynamics, record-production dynamics, physical
-persistence dynamics, occurrence rule, update law, time metric, within-sector
+persistence dynamics, update law, time metric, within-sector
 data, occupancy rule, P2/modulus, log-det, source/action, scale,
 state-selection rule, law-domain derivation, or arbitrary observable
 identification. The neighborhood-determined probability distribution is

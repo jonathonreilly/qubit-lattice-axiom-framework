@@ -495,6 +495,7 @@ first). Authority:
   `docs/ai_methodology/skills/review-loop/SKILL.md` (Setup step 3) and the
   stale/stacked overlap check by its Stale PR Integration Guard; the
   independent file-count cross-check is the owner directive of 2026-08-09.
-- Read the complete diff once, cold, as the reviewer would. Every hunk you
-  cannot justify in one sentence from a source you just read is a hunk the
-  reviewer will bounce.
+- Read the complete diff once, cold, as the reviewer would
+  (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:109-112`). Every hunk
+  you cannot justify in one sentence from a source you just read is a hunk
+  the reviewer will bounce.

@@ -9,22 +9,37 @@ calls, the original git objects where it used its committed copies).
 
 ATTACK SURFACE.  The primary makes four kinds of claim, and each is attacked:
 
-  A1 QUOTE_TAMPER        the quoted premise and leg texts are checked against
-                         the ORIGINAL git blobs, not the committed copies, so
-                         a doctored copy that still hashes to a doctored pin
-                         is caught.  Quotes are also checked for truncation
-                         that would drop a scope qualifier.
-  A2 PIN_FORGERY         every declared (commit, path, blob) triple is
-                         resolved through git and cross-checked against the
-                         bytes on disk in both directions.
-  A3 OVERCLAIM           the discharge map is audited for statuses stronger
-                         than their evidence, for a premise standing that
-                         claims discharge while obligations are open, and for
-                         claim-type drift away from SUPPORT.
+  A1 QUOTE_TAMPER        every quote is checked in the sha-verified committed
+                         bytes.  For LANDED_ON_MAIN sources the quote is ALSO
+                         checked inside the exact landed git blob, resolved
+                         blob-addressed, and resolution failure REFUTES (fail
+                         closed).  Sibling-branch copies carry no git-side
+                         claim -- their origin commits are outside the input
+                         closure, so for them this is a disk-byte check ONLY
+                         and is labeled as such.  Quotes are also checked for
+                         truncation that would drop a scope qualifier.
+  A2 PIN_FORGERY         disk bytes are cross-checked against every declared
+                         blob/sha256 in both directions, fail-closed: an
+                         unresolved or None comparison is a failure wherever
+                         a comparison is claimed.  LANDED_ON_MAIN pins are
+                         additionally resolved through git by blob id and the
+                         object's bytes compared to disk; sibling-branch pins
+                         are disclosure-only and no git resolution is claimed
+                         or attempted for them.
+  A3 OVERCLAIM           the measurement map is audited for statuses stronger
+                         than their evidence: any discharge-flavored status
+                         REFUTES; the unresolved-in-F residues (830/831 bank,
+                         429/480 pair) are recomputed from the 869 cache and
+                         must be carried as OPEN rival candidates in O8 and
+                         named in the O3/O4 evidence; the semantic bridge row
+                         O13 must exist and be OPEN; claim-type drift away
+                         from bounded_theorem REFUTES.
   A4 HEADLINE_LAUNDERING the 869 across-key headline is a pair-clock figure.
                          The primary says so; this file verifies that the
                          OPEN obligation is priced to the larger full-corpus
-                         residue and not quietly to the headline.
+                         residue, that the residue is labeled as clock-family/
+                         key INCIDENCES (not unique keys), and not quietly
+                         to the headline.
   A5 MASK_ABUSE          the primary compares a live 869 re-run to its cache
                          under two masks.  This file rebuilds that comparison
                          and feeds it a mutated stream to prove the masks
@@ -213,26 +228,33 @@ def primary_literal(ns, name):
 
 
 # ==================================================================== attacks
-def a1_quote_tamper(ns, provenance):
-    """Check every quote against the ORIGINAL git object, not the copy."""
+def a1_quote_tamper(ns, provenance, landed_blobs):
+    """Check every quote in the committed bytes, and -- for LANDED_ON_MAIN
+    sources only -- inside the exact landed git blob, fail-closed."""
     quotes = primary_literal(ns, "QUOTES")
     rows = []
     for label, path, text in quotes or ():
         local = (ROOT / path).read_bytes().decode()
-        origin = None
-        if path in provenance:
-            commit, original_path, _blob = provenance[path]
-            raw = git("cat-file", "blob", f"{commit}:{original_path}")
-            origin = raw.decode() if raw is not None else None
-        rows.append({
+        row = {
             "label": label,
             "source": path,
             "in_committed_copy": local.find(text) >= 0,
-            "origin_reachable": origin is not None,
-            "in_original_git_object": (origin.find(text) >= 0
-                                       if origin is not None else None),
             "occurrences_in_source": local.count(text),
-        })
+        }
+        if path in (landed_blobs or {}):
+            raw = git("cat-file", "blob", landed_blobs[path])
+            landed = raw.decode() if raw is not None else None
+            row["provenance_class"] = "LANDED_ON_MAIN"
+            row["landed_blob_resolved"] = landed is not None
+            row["in_landed_git_object"] = (landed.find(text) >= 0
+                                           if landed is not None else None)
+        else:
+            row["provenance_class"] = "SIBLING_BRANCH_DISCLOSED_ONLY"
+            row["git_side_check"] = (
+                "NOT_CLAIMED: the declared origin commit is outside the "
+                "input closure (an ancestor of neither this branch nor "
+                "origin/main); this row is a disk-byte check only")
+        rows.append(row)
     leg = next((r for r in rows if r["label"] == "LEG_STATEMENT_864D"), None)
     leg_text = next((t for label, _p, t in (quotes or ())
                      if label == "LEG_STATEMENT_864D"), "")
@@ -241,12 +263,18 @@ def a1_quote_tamper(ns, provenance):
         "scope_qualifier_retained": any(q in leg_text for q in SCOPE_QUALIFIERS),
         "quote_does_not_stop_before_leg_ii": "(ii)" in leg_text,
     }
-    failures = [r["label"] for r in rows if not r["in_committed_copy"]
-                or r["in_original_git_object"] is False]
+    # Fail-closed: a landed row whose blob does not resolve, or whose landed
+    # object does not carry the quote, REFUTES -- None is a failure.
+    failures = [r["label"] for r in rows if not r["in_committed_copy"]]
+    failures += [r["label"] + ":LANDED_GIT_SIDE_NOT_TRUE" for r in rows
+                 if r.get("provenance_class") == "LANDED_ON_MAIN"
+                 and r.get("in_landed_git_object") is not True]
     if not rows:
         failures.append("NO_QUOTES_EXTRACTED_FROM_PRIMARY")
     if len(rows) < 7:
         failures.append(f"ONLY_{len(rows)}_QUOTES_DECLARED")
+    if not any(r.get("provenance_class") == "LANDED_ON_MAIN" for r in rows):
+        failures.append("NO_LANDED_QUOTE_ROWS_GIT_SIDE_CHECK_VACUOUS")
     if not truncation["expected_two_leg_core_present"]:
         failures.append("LEG_STATEMENT_864D:CORE_TEXT_ABSENT")
     if not truncation["scope_qualifier_retained"]:
@@ -264,92 +292,175 @@ def a1_quote_tamper(ns, provenance):
 
 
 def a2_pin_forgery(ns):
-    """Resolve every pin through git and cross-check the bytes on disk."""
+    """Cross-check disk bytes against every declared pin, fail-closed; for
+    LANDED_ON_MAIN pins additionally compare the landed git object's bytes."""
     provenance = primary_literal(ns, "PINNED_PROVENANCE") or {}
     expected = primary_literal(ns, "EXPECTED_SHA256") or {}
+    landed_blobs = primary_literal(ns, "LANDED_MAIN_BLOBS") or {}
+    normalization = primary_literal(ns, "PROVENANCE_NORMALIZATION") or {}
     rows = []
     for path, (commit, original, blob) in provenance.items():
         raw = (ROOT / path).read_bytes()
-        resolved = git("rev-parse", f"{commit}:{original}")
-        resolved = resolved.decode().strip() if resolved is not None else None
         rows.append({
             "path": path,
-            "declared_commit": commit,
-            "declared_original_path": original,
-            "declared_blob": blob,
-            "git_resolved_blob": resolved,
-            "declared_blob_matches_git": (resolved == blob
-                                          if resolved else None),
+            "provenance_class": "SIBLING_BRANCH_DISCLOSED_ONLY",
+            "declared_origin_commit_disclosure_only": commit,
+            "declared_origin_path": original,
+            "declared_local_blob": blob,
             "disk_bytes_hash_to_declared_blob": git_blob(raw) == blob,
             "disk_sha256_matches_declared": (
                 sha256(raw).hexdigest() == expected.get(path)),
+            "normalized": path in normalization,
+            "git_side_verification": (
+                "NOT_CLAIMED_DISCLOSURE_ONLY: the origin commit is an "
+                "ancestor of neither this branch nor origin/main, so no git "
+                "resolution is claimed or attempted; this row certifies disk "
+                "self-consistency only and the artifact is unaudited "
+                "branch-local support"),
         })
-    live = []
-    for path in ("docs/ANOMALY_FORCES_TIME_THEOREM.md", PRIMARY_869, CACHE_869):
+    landed = []
+    for path, blob in landed_blobs.items():
         raw = (ROOT / path).read_bytes()
-        live.append({
+        obj = git("cat-file", "blob", blob)
+        landed.append({
             "path": path,
-            "sha256": sha256(raw).hexdigest(),
-            "matches_declared": sha256(raw).hexdigest() == expected.get(path),
+            "provenance_class": "LANDED_ON_MAIN",
+            "landed_blob": blob,
+            "disk_bytes_hash_to_landed_blob": git_blob(raw) == blob,
+            "landed_object_resolved": obj is not None,
+            "landed_object_bytes_equal_disk": (obj == raw
+                                               if obj is not None else None),
+            "disk_sha256_matches_declared": (
+                sha256(raw).hexdigest() == expected.get(path)),
         })
+    # Fail-closed everywhere: any None or False on a claimed comparison is a
+    # failure; an unresolved landed object is a failure, never a skip.
     failures = [r["path"] for r in rows
                 if not r["disk_bytes_hash_to_declared_blob"]
-                or r["declared_blob_matches_git"] is False
                 or not r["disk_sha256_matches_declared"]]
-    failures += [r["path"] for r in live if not r["matches_declared"]]
+    failures += [r["path"] for r in landed
+                 if not r["disk_bytes_hash_to_landed_blob"]
+                 or r["landed_object_resolved"] is not True
+                 or r["landed_object_bytes_equal_disk"] is not True
+                 or not r["disk_sha256_matches_declared"]]
     if not rows:
         failures.append("NO_PINNED_PROVENANCE_EXTRACTED_FROM_PRIMARY")
+    if not landed:
+        failures.append("NO_LANDED_MAIN_BLOBS_EXTRACTED_FROM_PRIMARY")
     if not expected:
         failures.append("NO_EXPECTED_SHA256_TABLE_EXTRACTED_FROM_PRIMARY")
     result = {
         "attack": "A2_PIN_FORGERY",
         "pinned_rows": tuple(rows),
-        "worktree_rows": tuple(live),
-        "note": ("A pin is only worth the object it names.  Each triple is "
-                 "resolved by git AND recomputed from the bytes, so a copy "
-                 "that was edited to match a doctored pin still fails the "
-                 "git-side resolution."),
+        "landed_rows": tuple(landed),
+        "note": ("LANDED_ON_MAIN pins are resolved through git by blob id "
+                 "and the object's bytes compared to disk, fail-closed.  "
+                 "Sibling-branch pins carry NO git-side claim: their origin "
+                 "commits are outside the input closure, so those rows are "
+                 "disk-byte self-consistency only, stated as such."),
         "failures": failures,
     }
     result["verdict"] = REFUTED if failures else CORROBORATED
-    return result, provenance
+    return result, provenance, landed_blobs
 
 
 def a3_overclaim(dmap, summary):
-    """Audit the discharge map for statuses stronger than their evidence."""
+    """Audit the measurement map for statuses stronger than their evidence.
+
+    The map's strongest permitted status is MEASURED_AT_SCOPE (verified
+    finite arithmetic).  Any discharge-flavored status is an overclaim by
+    construction, because the unresolved-in-F residues recomputed below are
+    rival candidates the evidence never resolves, and the F-relation =>
+    physical identity lemma (O13) is open.
+    """
     obligations = dmap["obligations"]
-    discharged = [o for o in obligations
-                  if o["status"] == "DISCHARGED_AT_SCOPE"]
+    measured = [o for o in obligations if o["status"] == "MEASURED_AT_SCOPE"]
     open_rows = [o for o in obligations
-                 if o["status"] != "DISCHARGED_AT_SCOPE"]
+                 if o["status"] in ("OPEN", "PERMANENTLY_OPEN")]
     problems = []
 
-    # Every discharged row must name a scope; an unscoped discharge is a
-    # promotion in disguise.
-    for row in discharged:
+    # No discharge-flavored status may exist anywhere in the table.
+    for row in obligations:
+        if "DISCHARG" in row["status"].upper():
+            problems.append(f"{row['id']}:DISCHARGE_FLAVORED_STATUS")
+        if row["status"] not in ("MEASURED_AT_SCOPE", "OPEN",
+                                 "PERMANENTLY_OPEN"):
+            problems.append(f"{row['id']}:UNKNOWN_STATUS:{row['status']}")
+
+    # Every measured row must name a scope and an artifact sha.
+    for row in measured:
         if not row.get("scope") or row["scope"].strip().lower() in ("", "all"):
-            problems.append(f"{row['id']}:DISCHARGED_WITHOUT_SCOPE")
+            problems.append(f"{row['id']}:MEASURED_WITHOUT_SCOPE")
         if not row.get("artifact_sha256"):
-            problems.append(f"{row['id']}:DISCHARGED_WITHOUT_ARTIFACT_SHA")
+            problems.append(f"{row['id']}:MEASURED_WITHOUT_ARTIFACT_SHA")
 
-    # The standing must not claim discharge while any obligation is open.
+    # Recompute the unresolved-in-F residues from the 869 cache by a
+    # different route (evidence_split), then require the map to carry them
+    # as OPEN rival candidates and to name them in the O3/O4 evidence.  This
+    # is the tooth the review demanded: the same evidence must never be
+    # counted as both a no-rival result and an open rival residue.
+    c869 = cache_stdout((ROOT / CACHE_869).read_text())
+    bank = cert_of(c869, "E_WITHIN_KEY_BANK_CLOCKS")
+    pair = cert_of(c869, "D_WITHIN_KEY_PAIR_OF_PAIRS")
+    bank_unresolved = bank["evidence_split"]["SUBSTANTIVE_NO_RELATION"]
+    bank_substantive = bank["substantive_pairs_of_clocks"]
+    pair_unresolved = pair["evidence_split"]["SUBSTANTIVE_NO_RELATION"]
+    pair_substantive = pair["substantive_pairs_of_clocks"]
+    o8 = next((o for o in obligations
+               if o["id"] == "O8_UNRELATED_SUBSTANTIVE_PAIR_RESIDUE"), None)
+    if o8 is None:
+        problems.append("O8_RIVAL_RESIDUE_OBLIGATION_MISSING")
+    else:
+        if o8["status"] != "OPEN":
+            problems.append("O8_RIVAL_RESIDUE_NOT_OPEN")
+        for figure in (f"{pair_unresolved} of {pair_substantive}",
+                       f"{bank_unresolved} of {bank_substantive}"):
+            if figure not in o8["evidence"]:
+                problems.append(f"O8_EVIDENCE_MISSING_RESIDUE:{figure}")
+    for row_id, unresolved, substantive in (
+            ("O3_WITHIN_KEY_BANK_CLOCK_SEARCH", bank_unresolved,
+             bank_substantive),
+            ("O4_WITHIN_KEY_PAIR_CLOCK_SEARCH", pair_unresolved,
+             pair_substantive)):
+        row = next((o for o in obligations if o["id"] == row_id), None)
+        if row is None:
+            problems.append(f"{row_id}:MISSING")
+            continue
+        if row["status"] not in ("MEASURED_AT_SCOPE", "OPEN"):
+            problems.append(f"{row_id}:STATUS_STRONGER_THAN_MEASURED")
+        if f"{unresolved}/{substantive}" not in row["evidence"]:
+            problems.append(f"{row_id}:EVIDENCE_HIDES_UNRESOLVED_RESIDUE")
+        if "unresolved" not in row["evidence"].lower():
+            problems.append(f"{row_id}:EVIDENCE_DROPS_RIVAL_CANDIDATE_READING")
+
+    # The semantic bridge must be carried as its own OPEN obligation.
+    o13 = next((o for o in obligations
+                if o["id"] == "O13_RELATION_TO_IDENTITY_BRIDGE"), None)
+    if o13 is None:
+        problems.append("RELATION_TO_IDENTITY_BRIDGE_OBLIGATION_MISSING")
+    elif o13["status"] != "OPEN":
+        problems.append("RELATION_TO_IDENTITY_BRIDGE_NOT_OPEN")
+
+    # The standing must never claim discharge, and there must be open rows.
     standing = dmap["premise_standing"]
-    if open_rows and "NOT_DISCHARGED" not in standing:
-        problems.append("STANDING_CLAIMS_DISCHARGE_WITH_OPEN_OBLIGATIONS")
-    if not open_rows and "NOT_DISCHARGED" in standing:
-        problems.append("STANDING_CLAIMS_OPEN_WITH_NO_OPEN_OBLIGATIONS")
+    if "NOT_DISCHARGED" not in standing:
+        problems.append("STANDING_DOES_NOT_SAY_NOT_DISCHARGED")
+    if not open_rows:
+        problems.append("NO_OPEN_OBLIGATIONS_CARRIED")
 
-    # The claim type must stay SUPPORT and the premise must not be promoted.
-    if summary.get("claim_type") != "SUPPORT":
-        problems.append("CLAIM_TYPE_DRIFTED_FROM_SUPPORT")
+    # The claim type must stay the demoted legal class.
+    if summary.get("claim_type") != "bounded_theorem":
+        problems.append("CLAIM_TYPE_DRIFTED_FROM_BOUNDED_THEOREM")
     forbidden = ("B-AXIS is derived", "premise is discharged",
-                 "B_AXIS_DISCHARGED", "no longer a premise")
+                 "B_AXIS_DISCHARGED", "no longer a premise",
+                 "DISCHARGED_AT_SCOPE", "no rival", "independent rate",
+                 "commensurate, not rival")
     text = compact(dmap)
     for phrase in forbidden:
         if phrase in text:
             problems.append(f"PROMOTION_LANGUAGE:{phrase}")
 
-    # Family closure must be carried and must never be discharged.
+    # Family closure must be carried and must stay permanently open.
     closure = next((o for o in obligations if o["id"] == "O10_FAMILY_CLOSURE"),
                    None)
     if closure is None:
@@ -361,14 +472,18 @@ def a3_overclaim(dmap, summary):
     b4 = next((o for o in obligations if "B4" in o["id"]), None)
     if b4 is None:
         problems.append("B4_OBLIGATION_MISSING")
-    elif b4["status"] == "DISCHARGED_AT_SCOPE":
-        problems.append("B4_OBLIGATION_CLAIMED_DISCHARGED")
+    elif b4["status"] != "OPEN":
+        problems.append("B4_OBLIGATION_NOT_OPEN")
 
     result = {
         "attack": "A3_OVERCLAIM",
         "obligation_count": len(obligations),
-        "discharged": [o["id"] for o in discharged],
+        "measured": [o["id"] for o in measured],
         "open": [o["id"] for o in open_rows],
+        "recomputed_unresolved_in_F": {
+            "bank_clocks": f"{bank_unresolved}/{bank_substantive}",
+            "pair_clocks": f"{pair_unresolved}/{pair_substantive}",
+        },
         "standing": standing,
         "problems": problems,
     }
@@ -402,7 +517,8 @@ def a4_headline_laundering(dmap, witnesses):
     full_edges = pair_edges + bank_edges
     full_outside = pair_outside + bank_outside
 
-    o7 = next(o for o in dmap["obligations"] if o["id"] == "O7_CROSS_KEY_UNCOVERED_KEYS")
+    o7 = next(o for o in dmap["obligations"]
+              if o["id"] == "O7_CROSS_KEY_UNCOVERED_RESIDUE")
     headline_outside = verdict["across_key_keys_outside_any_nontrivial_F1_class"]
     problems = []
     if verdict["across_key_F1_edges"] != pair_edges:
@@ -414,12 +530,22 @@ def a4_headline_laundering(dmap, witnesses):
     leading = re.match(r"\s*([0-9]+)", o7["evidence"])
     if not leading or int(leading.group(1)) != full_outside:
         problems.append("O7_LEADING_FIGURE_IS_NOT_THE_FULL_CORPUS_RESIDUE")
-    if witnesses["across_key_full_corpus"]["keys_outside_any_nontrivial_F1_class"] != full_outside:
+    # The residue is a sum of per-clock-family key counts.  The map must call
+    # it INCIDENCES and admit no unique-key residue was computed; presenting
+    # the sum as a unique-key count would be a normalization overclaim.
+    if "INCIDENCES" not in o7["evidence"]:
+        problems.append("O7_RESIDUE_NOT_LABELED_AS_INCIDENCES")
+    if "unique-key residue is NOT computed" not in o7["evidence"]:
+        problems.append("O7_UNIQUE_KEY_CAVEAT_MISSING")
+    full_block = witnesses["across_key_full_corpus"]
+    if full_block["uncovered_clock_family_key_incidences"] != full_outside:
         problems.append("PRIMARY_FULL_CORPUS_RESIDUE_DISAGREES")
-    if witnesses["across_key_full_corpus"]["F1_edges"] != full_edges:
+    if full_block.get("unique_key_residue_computed") is not False:
+        problems.append("PRIMARY_CLAIMS_A_UNIQUE_KEY_RESIDUE")
+    if full_block["F1_edges"] != full_edges:
         problems.append("PRIMARY_FULL_CORPUS_EDGES_DISAGREE")
     if full_zero != 0 or full_nonzero != full_edges:
-        problems.append("NOT_EVERY_F1_EDGE_MOVES_THE_ORIGIN")
+        problems.append("A_ZERO_OFFSET_F1_EDGE_EXISTS")
     result = {
         "attack": "A4_HEADLINE_LAUNDERING",
         "headline_F1_edges": verdict["across_key_F1_edges"],
@@ -429,16 +555,18 @@ def a4_headline_laundering(dmap, witnesses):
         "recomputed_bank_clock_edges": bank_edges,
         "recomputed_bank_clock_outside": bank_outside,
         "recomputed_full_corpus_edges": full_edges,
-        "recomputed_full_corpus_outside": full_outside,
+        "recomputed_full_corpus_outside_incidences": full_outside,
         "full_corpus_zero_offset_F1_edges": full_zero,
         "finding": (
             f"The 869 G-certificate headline reports {verdict['across_key_F1_edges']} "
-            f"across-key F1 edges and {headline_outside} uncovered keys.  Both "
-            f"are PAIR-CLOCK totals.  Over the full corpus the figures are "
-            f"{full_edges} edges and {full_outside} uncovered keys.  Every one "
-            f"of the {full_edges} edges carries a nonzero offset, so the "
-            f"single-time reading survives; the uncovered residue does not "
-            f"shrink to the headline."
+            f"across-key F1 edges and {headline_outside} uncovered pair-clock "
+            f"incidences.  Both are PAIR-CLOCK totals.  Over the full corpus "
+            f"the figures are {full_edges} edges and {full_outside} uncovered "
+            f"clock-family/key incidences (a sum over six labels; not unique "
+            f"keys).  Each of the {full_edges} edges carries a nonzero "
+            f"offset -- arithmetic only; what an F1 edge means for physical "
+            f"clock identity is the open O13 -- and the uncovered residue "
+            f"does not shrink to the headline."
         ),
         "problems": problems,
     }
@@ -459,8 +587,8 @@ def a5_mask_abuse(live_stdout):
     for target, replacement in (
         ('"across_key_F1_edges":632', '"across_key_F1_edges":633'),
         ('"substantive_pairs_of_clocks":480', '"substantive_pairs_of_clocks":481'),
-        ('"every_nondegenerate_period_is_whole_orbits":true',
-         '"every_nondegenerate_period_is_whole_orbits":false'),
+        ('"every_detected_period_is_whole_orbits":true',
+         '"every_detected_period_is_whole_orbits":false'),
     ):
         if target not in pinned:
             mutations.append({"target": target, "present": False,
@@ -511,14 +639,19 @@ def a6_family_invention(family):
         for _j in range(i + 1, len(pool)):
             pairs += 1
 
-    # 869 family member codes, by regex over the FAMILY block.
+    # 869 family member names, by regex over the FAMILY block.  The reviewed
+    # mainline family declares descriptive names with the letter-number code
+    # as a parenthesized alias: NAME (alias F<code>).
     fblock = re.search(r"FAMILY\s*=\s*\((.*?)\n\)\n", src869, re.S)
-    found = re.findall(r'"(F[0-9][A-Z]{0,2})\s+([A-Z][A-Z_]{4,})',
+    found = re.findall(r'"([A-Z][A-Z_]{4,}) \(alias (F[0-9][A-Z]{0,2})\)',
                        fblock.group(1)) if fblock else []
     members = []
-    for code, _label in found:
-        if code not in members:
-            members.append(code)
+    alias_codes = []
+    for label, code in found:
+        if label not in members:
+            members.append(label)
+        if code not in alias_codes:
+            alias_codes.append(code)
 
     # 866 bank counts, by regex.
     bc = re.search(r"BANK_COUNTS\s*=\s*\(([0-9,\s]+)\)", src866)
@@ -534,6 +667,8 @@ def a6_family_invention(family):
         problems.append("865_PAIR_POOL_SIZE_DISAGREES")
     if sorted(f869["F_members"]) != sorted(members):
         problems.append("869_FAMILY_MEMBERS_DISAGREE")
+    if len(alias_codes) != len(members):
+        problems.append("869_FAMILY_ALIAS_CODES_DO_NOT_PAIR_WITH_NAMES")
     if f866["bank_counts_from_source"] != bank_counts:
         problems.append("866_BANK_COUNTS_DISAGREE")
     if f865["singles_claimed"] != 29 or pairs != 28:
@@ -543,6 +678,7 @@ def a6_family_invention(family):
         "regex_pair_pool": pool,
         "regex_pair_count_C_n_2": pairs,
         "regex_869_family_members": members,
+        "regex_869_family_alias_codes": alias_codes,
         "regex_866_bank_counts": bank_counts,
         "primary_865_singles": f865["singles_claimed"],
         "primary_865_pairs": f865["pairs_claimed"],
@@ -746,14 +882,14 @@ def main() -> int:
         raise AssertionError(("primary produced no stdout", proc.returncode))
     summary = json.loads(
         re.search(r"^SUMMARY_JSON (.*)$", first, re.M).group(1))
-    dmap = cert_of(first, "F_DISCHARGE_MAP")
+    dmap = cert_of(first, "F_MEASUREMENT_MAP")
     witnesses = cert_of(first, "D_WITNESS_REDERIVATION")
     family = cert_of(first, "B_FAMILY_DECLARATION")
 
     ns = module_namespace(tree)
-    pins, provenance = a2_pin_forgery(ns)
+    pins, provenance, landed_blobs = a2_pin_forgery(ns)
     attacks = {
-        "A1_QUOTE_TAMPER": a1_quote_tamper(ns, provenance),
+        "A1_QUOTE_TAMPER": a1_quote_tamper(ns, provenance, landed_blobs),
         "A2_PIN_FORGERY": pins,
         "A3_OVERCLAIM": a3_overclaim(dmap, summary),
         "A4_HEADLINE_LAUNDERING": a4_headline_laundering(dmap, witnesses),

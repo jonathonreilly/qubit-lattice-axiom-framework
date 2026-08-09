@@ -45,6 +45,9 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "baxis_second_leg_certificate_cycle875_support_note_2026-07-28": [
+        "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py",
+    ],
     # Current paired certificates launch their load-bearing children with
     # subprocess rather than importing them. The Wilson note also names its
     # same-convention systematic sweep on the audited runner surface. Register

@@ -34,6 +34,14 @@ from pathlib import Path
 import numpy as np
 import sympy as sp
 
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results (Block F source-scope guards); the runner-cache
+# fingerprints them so input drift stales the cache (scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+    "docs/UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+)
+
 # ----------------------------------------------------------------------------
 # check harness
 # ----------------------------------------------------------------------------

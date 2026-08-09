@@ -24,10 +24,12 @@ Purpose:
 from __future__ import annotations
 
 import math
+import platform
 import sys
 import warnings
 
 import numpy as np
+import scipy
 from scipy.linalg import null_space
 from scipy.optimize import NonlinearConstraint, brentq, minimize
 
@@ -50,6 +52,26 @@ from frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_20
     observable_pack,
 )
 
+
+# Source-controlled helper modules imported by this runner; every PASS and
+# certificate value flows through them. The runner-cache fingerprints them
+# (transitive scripts/ import closure) so helper drift stales the cache.
+AUDIT_INPUT_PATHS = (
+    "scripts/dm_leptogenesis_exact_common.py",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py",
+    "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
+    "scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py",
+    "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_theorem_2026_04_19.py",
+    "scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -162,7 +184,11 @@ def solve_positive_fiber_extremum(start: np.ndarray, objective) -> tuple[np.ndar
             bounds=[(-8.0, 8.0), (-8.0, 8.0), (-8.0, 8.0), (-8.0, 8.0), (-math.pi, math.pi)],
             constraints=constraints,
             options={
-                "maxiter": 1000,
+                # 6000 (raised from 1000): the Renyi-2 solve needs ~1500
+                # iterations to reach its termination tolerance; the old
+                # budget returned success=False at maxiter, which the
+                # fail-closed solver-success check below must reject.
+                "maxiter": 6000,
                 "gtol": 1.0e-10,
                 "xtol": 1.0e-10,
                 "barrier_tol": 1.0e-12,
@@ -192,10 +218,37 @@ def main() -> int:
     print("=" * 88)
     print("DM WILSON DIRECT-DESCENDANT CANONICAL-FIBER SCHUR-ENTROPY CANDIDATE / NO-GO")
     print("=" * 88)
+    # Replay environment record: the two witnesses below are outputs of
+    # scipy.optimize.minimize(trust-constr) and are therefore numerical-
+    # environment-dependent. This transcript certifies the run under
+    # exactly this recorded environment; a replay under a different stack
+    # may produce different (still-valid) witness coordinates.
+    print(
+        "numerical environment: "
+        f"python {platform.python_version()}, numpy {np.__version__}, "
+        f"scipy {scipy.__version__}, machine {platform.machine()}"
+    )
 
     shannon_params, shannon_result = solve_positive_fiber_extremum(SHANNON_START, shannon_entropy)
     renyi_params, renyi_result = solve_positive_fiber_extremum(RENYI2_START, renyi2_entropy)
     w1_params = plateau.plateau_witness_params()[1]
+
+    check(
+        "Both entropy optimizations report solver success (fail-closed: a "
+        "non-converged optimizer must fail this run, not silently certify "
+        "its output)",
+        bool(shannon_result.success) and bool(renyi_result.success),
+        (
+            f"Shannon status={shannon_result.status} "
+            f"optimality={shannon_result.optimality:.3e} "
+            f"constr_violation={shannon_result.constr_violation:.3e} "
+            f"niter={shannon_result.niter}; "
+            f"Renyi2 status={renyi_result.status} "
+            f"optimality={renyi_result.optimality:.3e} "
+            f"constr_violation={renyi_result.constr_violation:.3e} "
+            f"niter={renyi_result.niter}"
+        ),
+    )
 
     shannon_source5 = source5_from_params(shannon_params)
     renyi_source5 = source5_from_params(renyi_params)
@@ -323,6 +376,50 @@ def main() -> int:
     print(f"  Renyi2 source5                  = {np.round(renyi_source5, 12)}")
     print(f"  Renyi2 spectrum                 = {np.round(renyi_spec, 12)}")
     print(f"  Shannon root pack               = {np.round(root_pack, 12)}")
+
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER ACTUALLY RESOLVES")
+    print("=" * 88)
+    shannon_etas = eta_vector_from_params(shannon_params)
+    print(
+        "per_element: checked — the projected-pack components are resolved one "
+        "by one at both witnesses, with (gamma, E1, E2, det h) = "
+        f"{np.round(shannon_pack4, 6)} for Shannon and {np.round(renyi_pack4, 6)} "
+        "for Renyi-2; the executed assertion is that every entry is strictly "
+        f"positive (POS_TOL = {POS_TOL:g} is the optimizer's own feasibility floor, "
+        "not a separately re-checked margin), while at the crossing the observable "
+        f"pack resolves entrywise to {np.round(root_pack, 6)} with "
+        f"E1 = {root_pack[2]:.6f} < 0."
+    )
+    print(
+        "per_site: checked and not executed — this is a three-generation "
+        "flavor-space construction; neither the five-component source vector "
+        "nor the canonical 3x3 h carries a spatial site label, so no "
+        "site-resolved statement is available from the executed evidence."
+    )
+    print(
+        "per_mode: checked — the three normalized Schur spectral modes are "
+        "compared partial-sum by partial-sum: Shannon gives "
+        f"{np.round(shannon_spec, 6)} and Renyi-2 gives {np.round(renyi_spec, 6)}, "
+        "and majorization fails in both directions, so no mode ordering makes "
+        "'most isotropic spectrum' well defined on the fiber."
+    )
+    print(
+        "per_block: checked — the three transport columns are the block units "
+        f"here; the Shannon endpoint resolves them to eta = {np.round(shannon_etas, 6)}, "
+        "keeping the favored column at the exact transport-maximal value "
+        f"eta_1 = {plateau.eta1_from_params(w1_params):.12f} to within 1e-10."
+    )
+    print(
+        "lattice_wide: checked and not executed — the no-go is stated on the "
+        "orbit-level canonical fiber at fixed 3x3 flavor rank and no lattice or "
+        "continuum extension is attempted; the executed evidence is the two "
+        "positive-fiber witnesses plus the single eta_1 = 1 crossing at "
+        f"lambda = {root_lambda:.12f}, with PASS={PASS_COUNT}, FAIL={FAIL_COUNT}. "
+        "The witness coordinates are optimizer outputs certified only under the "
+        "numerical environment recorded at the top of this transcript, with "
+        "solver success asserted above."
+    )
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

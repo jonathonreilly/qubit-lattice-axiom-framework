@@ -9,20 +9,33 @@ lambda_1) under the landed external MET limit form
   lim_{N -> infinity} (1/N) log ||A_{N-1} ... A_0 v|| = lambda_1
 
 cannot be carried out on the canonical surface under three core
-structural obstructions, with a fourth stronger-route obstruction:
+structural obstructions, with a fourth conditional stronger-route
+mismatch:
 
-  (O1) per-step blocking operator A_k is not exhibited in the
-       framework source notes;
+  (O1) no explicit matrix-form per-step blocking operator A_k is found
+       by this runner's literal-pattern scan of the framework source
+       notes (scan scope disclosed at T1);
   (O2) the 16-step staircase is deterministic, not i.i.d.;
   (O3) cumulative 1-loop perturbative beta running exceeds the
        starting 1/g^2 by 2.594 vs 0.878 (Landau-pole crossing);
-  (O4) staggered-taste near-degeneracy blocks any stronger spectral-gap
-       bridge route requiring a log-gap of order |log alpha_LM| ~ 2.40.
+  (O4) CONDITIONAL (narrowed after review): within an ASSUMED taste-gap
+       model C * alpha_LM^2 — where C is an un-derived nuisance
+       coefficient sampled only at the author-chosen values {1, 10, 30}
+       — the modeled gap falls short of the required |log alpha_LM|
+       ~ 2.40. This is a conditional numerical mismatch for the
+       supplied C <= 30 family (partial-narrowing, support grade), NOT
+       a derived spectral-gap no-go: the cited Lee-Sharpe scaling is
+       O(a^2 Lambda^2) and supplies neither a numerical bound C <= 30
+       nor the (a Lambda)^2 -> alpha_LM identification.
 
-Pure class-B narrow no-go theorem. Load-bearing inputs:
+Pure class-B narrow no-go theorem for O1-O3; O4 is support-grade
+conditional narrowing only. Load-bearing inputs:
   - canonical surface alpha_LM = 0.0907 (PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
   - P2 beta-breakdown arithmetic (YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS)
-  - Lee-Sharpe staggered ChPT O(a^2 Lambda^2) scaling (external)
+  - Lee-Sharpe staggered ChPT O(a^2 Lambda^2) scaling (external);
+    the alpha_LM^2 identification and the coefficient family
+    C in {1, 10, 30} are un-derived model assumptions of this runner
+    (imported values, not sourced bounds)
 
 Target: PASS = 10, FAIL = 0.
 
@@ -52,6 +65,17 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results; the runner-cache fingerprints them so input
+# drift stales the cache (see scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17.md",
+    "docs/YT_P2_V_MATCHING_THEOREM_NOTE_2026-04-17.md",
+    "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+    "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+    "docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md",
+)
 
 PASS = 0
 FAIL = 0
@@ -108,17 +132,21 @@ RETAINED_NOTES = [
 ]
 
 
-def grep_for_matrix_form_Ak(notes: list[str]) -> dict[str, bool]:
-    """Search for an explicit matrix-form A_k definition such as
-    'A_k = ...' as a numeric / symbolic matrix entry-by-entry.
-    Return a dict mapping note path to whether such a form is found.
+def grep_for_matrix_form_Ak(notes: list[str]) -> dict[str, bool | None]:
+    """Literal-pattern scan for 'A_k = <matrix constructor>'.
+
+    Matches only a small set of explicit matrix-constructor forms
+    immediately following 'A_k =' / 'A_k :' (LaTeX pmatrix/bmatrix/array
+    environments, Matrix(, sympy.Matrix, np.array, matrix(). An operator
+    defined by its action, entries, kernel, recurrence, displayed
+    equation, or a linked runner is OUTSIDE this scan's reach; the T1
+    certificate is scoped to exactly this scan.
+
+    Returns note -> True (pattern found), False (note present, no
+    pattern), or None (note MISSING — this must fail the check, never
+    silently count as an absence: fail-closed after review).
     """
-    # Look for any line that contains 'A_k' or 'A_{k}' followed by
-    # an '=' and then a matrix-bracket structure (LaTeX
-    # \begin{pmatrix} ... \end{pmatrix} or row-wise array form).
-    # Be conservative: if A_k appears at all near 'matrix' or 'array'
-    # or 'pmatrix', flag it.
-    results = {}
+    results: dict[str, bool | None] = {}
     pat_explicit_matrix = re.compile(
         r"A[_\\]?\{?k\}?\s*[:=]\s*"
         r"(\\begin\{pmatrix\}|\\begin\{bmatrix\}|\\begin\{array\}|"
@@ -128,7 +156,7 @@ def grep_for_matrix_form_Ak(notes: list[str]) -> dict[str, bool]:
     for note in notes:
         path = ROOT / note
         if not path.exists():
-            results[note] = False
+            results[note] = None
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         m = pat_explicit_matrix.search(text)
@@ -137,14 +165,23 @@ def grep_for_matrix_form_Ak(notes: list[str]) -> dict[str, bool]:
 
 
 grep_results = grep_for_matrix_form_Ak(RETAINED_NOTES)
-no_explicit_Ak_found = not any(grep_results.values())
+missing_notes = [p for p, v in grep_results.items() if v is None]
+# Fail-closed: every scanned note must EXIST on disk, and the literal
+# pattern must be absent from every one of them. A missing note is a
+# scan failure, not evidence of absence.
+no_explicit_Ak_found = not missing_notes and all(
+    v is False for v in grep_results.values()
+)
 check(
-    "T1 (O1): framework source notes do NOT exhibit an explicit matrix-form "
-    "per-step blocking operator A_k on V",
+    "T1 (O1): all five scanned source notes exist on disk AND the literal "
+    "'A_k = <matrix constructor>' pattern scan finds no explicit matrix-form "
+    "per-step blocking operator A_k in any of them (scan scope: the fixed "
+    "constructor patterns only; operators defined by action, entries, "
+    "recurrence, or linked runners are outside this scan)",
     no_explicit_Ak_found,
     detail=(
-        "checked notes: "
-        + ", ".join(p.split('/')[-1].replace('.md', '') for p in RETAINED_NOTES)
+        "missing notes: "
+        + (", ".join(missing_notes) if missing_notes else "none")
         + "; matches: "
         + ", ".join(f"{p.split('/')[-1].replace('.md','')}={v}" for p, v in grep_results.items())
     ),
@@ -236,11 +273,19 @@ check(
 
 
 # ----------------------------------------------------------------------------
-section("Part 4: O4 (staggered-taste near-degeneracy spectral mismatch) — T5")
-# Staggered taste-breaking is O(alpha_LM * (a Lambda)^2) ~ O(alpha_LM^2) at
-# the canonical surface. The log of the ratio of top two eigenvalues is
-# bounded by C * alpha_LM^2 for an O(1) constant C. Required gap is
-# |log alpha_LM| ~ 2.40. We check the ratio for C in {1, 10, 30}.
+section("Part 4: O4 (conditional taste-gap model mismatch; assumed C family) — T5")
+# MODEL ASSUMPTION (imported, not derived — narrowed after review): the
+# available log-gap is MODELED as C * alpha_LM^2 with an un-derived
+# nuisance coefficient C, sampled only at the author-chosen values
+# {1, 10, 30}. The cited Lee-Sharpe staggered ChPT residual is an
+# O(a^2 Lambda^2) scaling statement; it supplies neither a numerical
+# bound C <= 30 nor the extra identification replacing (a Lambda)^2 by
+# another factor of alpha_LM. No individual taste mode or blocking
+# spectrum is constructed or diagonalized here. At roughly
+# C = |log alpha_LM| / alpha_LM^2 the asserted mismatch disappears, so
+# the executed result is a conditional numerical mismatch for the
+# supplied C <= 30 family only (partial-narrowing), not a spectral-gap
+# no-go. Required gap is |log alpha_LM| ~ 2.40.
 # ----------------------------------------------------------------------------
 
 required_log_gap = ABS_DELTA_T  # = |log alpha_LM|
@@ -264,8 +309,11 @@ largest_ratio = max(r for _, r in ratios)
 largest_ratio_above_100 = largest_ratio > Decimal("100")
 
 check(
-    "T5 (O4): staggered-taste log-gap C * alpha_LM^2 is at least 5x below "
-    "required |log alpha_LM| across C in {1, 10, 30}; >100x at C=1",
+    "T5 (O4, conditional on the assumed C <= 30 gap model): the MODELED "
+    "log-gap C * alpha_LM^2 (C un-derived, sampled at {1, 10, 30}) is at "
+    "least 5x below required |log alpha_LM| across the sampled family; "
+    ">100x at C=1 — a conditional numerical mismatch (partial-narrowing), "
+    "not an executed mode bound",
     all_ratios_large and largest_ratio_above_100,
     detail=(
         f"required gap = {required_log_gap:.4f}; alpha_LM^2 = {alpha_LM_sq:.6f}; "
@@ -319,8 +367,10 @@ check(
 
 
 # ----------------------------------------------------------------------------
-section("Part 6: sensitivity of O4 to alpha_LM (T7)")
-# At alpha_LM in {0.05, 0.20}, verify the gap mismatch is still > 4 at C=10.
+section("Part 6: sensitivity of O4's assumed gap model to alpha_LM (T7)")
+# At alpha_LM in {0.05, 0.20}, verify the MODELED mismatch (same assumed
+# C * alpha_LM^2 family, C = 10) is still > 4. Same imported-model caveat
+# as Part 4: this samples an assumption, it does not bound a spectrum.
 # ----------------------------------------------------------------------------
 
 ratios_low = [Decimal(str(math.log(float(a)))).copy_abs() / (Decimal("10") * a * a)
@@ -328,8 +378,8 @@ ratios_low = [Decimal(str(math.log(float(a)))).copy_abs() / (Decimal("10") * a *
 all_ratios_low_ge_4 = all(r > Decimal("4") for r in ratios_low)
 
 check(
-    "T7 (O4 sensitivity): gap mismatch ratio >= 4 at alpha_LM in "
-    "{0.05, 0.20} (with C = 10)",
+    "T7 (O4 sensitivity within the assumed gap model, C = 10): modeled "
+    "mismatch ratio >= 4 at alpha_LM in {0.05, 0.20}",
     all_ratios_low_ge_4,
     detail=(
         f"ratio(alpha=0.05, C=10) = {ratios_low[0]:.2f}; "
@@ -343,8 +393,9 @@ section("Part 7: counterfactual — uniform A_k (no taste stratification) (T8)")
 # If A_k were uniform with n_taste^{(k)} = 16 for all k (no decoupling),
 # then per-step b_3 = 1/3 (constant), and the cumulative shift would be
 # 16 * (1/3) * |Delta_t| / (8 pi^2) ~ 0.162, BELOW 1/g^2 = 0.878.
-# So O3 would NOT block under uniform A_k. But (O1), (O2), and (O4) all
-# still hold. Demonstrates the obstructions are mutually independent.
+# So O3 would NOT block under uniform A_k. But (O1) and (O2) still hold,
+# and (O4)'s conditional model mismatch persists within the assumed C
+# family. Demonstrates the obstructions are mutually independent.
 # ----------------------------------------------------------------------------
 
 uniform_b3 = Decimal(1) / Decimal(3)
@@ -352,18 +403,20 @@ uniform_shift = Decimal(16) * uniform_b3 * ABS_DELTA_T * ONE_OVER_8PI2
 uniform_crosses = uniform_shift > ONE_OVER_G2
 
 # Under uniform b_3, O3 does NOT block (shift is below start).
-# But O1 still blocks (no operator), O2 still blocks (still no measure),
-# O4 still blocks the stronger spectral-gap route (still 16 tastes).
+# But O1 still blocks (no operator found by the scan), O2 still blocks
+# (still no measure), and O4's conditional model mismatch persists
+# within the assumed C family (still 16 tastes).
 o3_does_not_block_uniform = not uniform_crosses
 
 check(
     "T8 (independence): under uniform A_k counterfactual (no taste "
     "stratification), O3 does NOT block; O1 and O2 still block the "
-    "landed MET bridge, while O4 still blocks the stronger gap route",
+    "landed MET bridge, while O4's conditional model mismatch persists "
+    "within the assumed C family",
     o3_does_not_block_uniform,
     detail=(
         f"uniform shift = {uniform_shift:.4f} < start = {ONE_OVER_G2:.4f}; "
-        f"O3 lifted, but O1+O2+O4 remain"
+        f"O3 lifted, but O1+O2 remain (with O4's conditional model mismatch)"
     ),
 )
 
@@ -394,42 +447,54 @@ check(
 # ----------------------------------------------------------------------------
 section("Part 9: independence of obstruction blocks — T10")
 # O1-O3 are individually sufficient for the landed random-product MET
-# bridge. O4 is independently sufficient for the stronger spectral-gap route.
+# bridge. O4 contributes only the conditional model mismatch of Part 4
+# against the stronger spectral-gap route (assumed C family; support
+# grade), not an independent unconditional block.
 # ----------------------------------------------------------------------------
 
+# Fail-closed after review: each counterfactual reuses the COMPUTED
+# conditions established at T1-T5 for the obstructions that remain when one
+# is hypothetically lifted. Lifting an obstruction cannot change any of the
+# other executed conditions (they are computed from disjoint inputs: the
+# note scan for O1, the enumerated rung sequence for O2, the beta-running
+# arithmetic for O3, the sampled assumed-model ratios for O4), so the
+# independence statement is exactly the conjunction of the remaining
+# executed booleans — no literal-True constant enters the predicate.
+
 # Counterfactual 1: A_k is exhibited explicitly (O1 lifted).
-# But: O2 (deterministic sequence), O3 (Landau pole), O4 (near-degeneracy)
-# still hold; O4 also still blocks the stronger spectral-gap route.
+# But: O2 (deterministic sequence) and O3 (Landau pole) still hold; O4's
+# conditional assumed-model mismatch also persists for the stronger route.
 o1_lifted_others_block = (
-    True  # O2: still deterministic in the framework
-    and True  # O3: still crosses Landau pole
-    and True  # O4: still near-degenerate tastes
+    all_distinct  # O2: computed — 16 distinct deterministic rung values (T2)
+    and shift_exceeds_start  # O3: computed — cumulative shift crosses 1/g^2 (T3)
+    and crosses_before_16  # O3: computed — crossing before rung 16 (T4)
+    and all_ratios_large  # O4: computed — sampled-model mismatch persists (T5)
 )
 
 # Counterfactual 2: sequence randomized to i.i.d. (O2 lifted).
-# But: O1 (no operator), O3 (Landau pole) still block the landed bridge;
-# O4 also still blocks the stronger spectral-gap route.
+# But: O1 (no operator found by the scan), O3 (Landau pole) still block the
+# landed bridge; O4's conditional assumed-model mismatch also persists.
 o2_lifted_others_block = (
-    True  # O1: still no operator
-    and True  # O3: still Landau pole
-    and True  # O4: still near-degeneracy
+    no_explicit_Ak_found  # O1: computed — fail-closed literal-pattern scan (T1)
+    and shift_exceeds_start  # O3: computed (T3)
+    and all_ratios_large  # O4: computed (T5)
 )
 
 # Counterfactual 3: non-perturbative reconstruction bypasses O3 (O3 lifted).
-# But: O1 and O2 still block the landed bridge; O4 also still blocks the
-# stronger spectral-gap route.
+# But: O1 and O2 still block the landed bridge; O4's conditional
+# assumed-model mismatch also persists for the stronger route.
 o3_lifted_others_block = (
-    True  # O1: still no operator
-    and True  # O2: still deterministic
-    and True  # O4: still near-degeneracy
+    no_explicit_Ak_found  # O1: computed (T1)
+    and all_distinct  # O2: computed (T2)
+    and all_ratios_large  # O4: computed (T5)
 )
 
 # Counterfactual 4: non-staggered fermion realization (O4 lifted).
 # But: O1, O2, O3 still hold (canonical surface).
 o4_lifted_others_block = (
-    True  # O1: still no operator in the framework
-    and True  # O2: still deterministic
-    and True  # O3: still Landau pole on the canonical surface
+    no_explicit_Ak_found  # O1: computed (T1)
+    and all_distinct  # O2: computed (T2)
+    and shift_exceeds_start  # O3: computed (T3)
 )
 
 all_independent = (
@@ -441,12 +506,15 @@ all_independent = (
 
 check(
     "T10 (independence): (O1), (O2), and (O3) independently block the "
-    "landed MET bridge; (O4) independently blocks the stronger spectral-gap "
-    "route",
+    "landed MET bridge; (O4) supplies only the conditional assumed-model "
+    "mismatch against the stronger spectral-gap route (partial-narrowing, "
+    "support grade — not an unconditional block)",
     all_independent,
     detail=(
-        "Core bridge counterfactuals and stronger-route counterfactual "
-        "verified at structural-enumeration level"
+        "each counterfactual is the conjunction of the remaining EXECUTED "
+        f"T1-T5 conditions: O1 scan={no_explicit_Ak_found}, O2 distinct rungs="
+        f"{all_distinct}, O3 crossing={shift_exceeds_start} (k*={k_cross}), "
+        f"O4 sampled-model mismatch={all_ratios_large}"
     ),
 )
 
@@ -468,23 +536,30 @@ print(
     16-step product Pi_{k=0}^{15} A_k v ~ alpha_LM^16 * const * ||v||,
     on the framework's deterministic staggered taste-staircase.
 
-  CONCLUSION (No-Go):
+  CONCLUSION (No-Go for O1-O3; conditional narrowing for O4):
     The bridge (★) cannot be made under (♦) on the canonical
-    surface, blocked by three core obstructions and one stronger-route
-    obstruction:
-      (O1) per-step blocking operator A_k unspecified in source notes;
+    surface, blocked by three core obstructions, with one conditional
+    stronger-route mismatch:
+      (O1) no explicit matrix-form A_k found by the disclosed
+           literal-pattern scan of the source notes;
       (O2) staircase deterministic, not i.i.d.;
       (O3) cumulative 1-loop beta exceeds 1/g^2 (Landau-pole crossing);
-      (O4) any stronger spectral-gap route is blocked by taste
-           near-degeneracy: available gap ~ alpha_LM^2 ~ 0.008 vs
-           required |log alpha_LM| ~ 2.40.
+      (O4) CONDITIONAL: within the ASSUMED taste-gap model
+           C * alpha_LM^2 (C un-derived, sampled at {1, 10, 30}), the
+           modeled gap ~ C * 0.008 falls short of the required
+           |log alpha_LM| ~ 2.40. Partial-narrowing for the supplied
+           C <= 30 family only; at C ~ |log alpha_LM|/alpha_LM^2 the
+           mismatch disappears, so no spectral-gap no-go is derived.
 
   Audit-lane class:
     (B) — bounded no-go with framework dependencies on
     canonical surface and P2 beta breakdown, plus external citation of
     Lee-Sharpe staggered ChPT (1999). No positive identification
-    claimed; (O1)-(O3) block the landed MET bridge, and (O4) blocks the
-    stronger spectral-gap route.
+    claimed; (O1)-(O3) block the landed MET bridge, and (O4) supplies
+    a support-grade conditional numerical mismatch against the
+    stronger spectral-gap route within the supplied C <= 30 model
+    family only (the coefficient and the (a Lambda)^2 -> alpha_LM
+    step are un-derived imports, not sourced bounds).
 
   This narrow theorem is independent of:
     - The Bougerol-Lacroix/Oseledets external MET narrow theorem; the
@@ -504,11 +579,13 @@ section("N5 execution certificate — what this runner resolves at each granular
 # ----------------------------------------------------------------------------
 
 print(
-    "per_element: checked and not executed — the runner's first obstruction is "
-    "precisely that no explicit matrix-form per-step operator A_k is exhibited "
-    f"anywhere in the {len(RETAINED_NOTES)} scanned source notes, so there is no "
-    "operator entry to resolve; the executed evidence at this granularity is that "
-    "negative scan, not any entrywise computation."
+    "per_element: checked and not executed — the executed evidence at this "
+    f"granularity is a literal-pattern scan of the {len(RETAINED_NOTES)} source "
+    "notes (all verified to exist) for 'A_k = <matrix constructor>' in a fixed "
+    "set of constructor forms, which finds no match; an operator defined by its "
+    "action, entries, kernel, recurrence, displayed equation, or a linked runner "
+    "would be invisible to this scan, so the certificate covers exactly that "
+    "regex scan and no entrywise computation."
 )
 print(
     "per_site: checked and not executed — the 16-step staircase is indexed by "
@@ -520,9 +597,11 @@ print(
     "per_mode: checked — the taste-mode COUNT is resolved one rung at a time (no "
     "individual taste mode is ever constructed or diagonalized here): n_taste takes "
     f"the {len(set(n_taste_sequence))} distinct values 16 down to 1 with each "
-    "rung contributing b_3 = (33 - 2 n_taste)/3, and the taste near-degeneracy "
-    f"leaves an available log-gap of only alpha_LM^2 = {alpha_LM_sq:.6f} against the "
-    f"required |log alpha_LM| = {required_log_gap:.4f}."
+    "rung contributing b_3 = (33 - 2 n_taste)/3; the taste-gap comparison uses the "
+    f"ASSUMED model C * alpha_LM^2 (alpha_LM^2 = {alpha_LM_sq:.6f}) with the "
+    "un-derived coefficient C sampled only at {1, 10, 30}, against the required "
+    f"|log alpha_LM| = {required_log_gap:.4f} — a sampled model assumption "
+    "(imported value), not an executed mode bound."
 )
 print(
     "per_block: checked — the blocking rungs are accumulated block by block and the "

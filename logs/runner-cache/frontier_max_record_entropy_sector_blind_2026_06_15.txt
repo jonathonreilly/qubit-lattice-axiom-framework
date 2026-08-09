@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py
-runner_sha256: 83ba687c8b83e79d630d595543a364365671274cf2114021f4ae208aa6322b63
+runner_sha256: 14673c50c6765c1c65202a70816981a10742c95c4e8c107896799a9933988e11
+input_fingerprint_sha256: 10be8640aa56563794f29186f18d48422ee45697f37ed0fe0e922631fcff0908
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.56
+elapsed_sec: 1.90
 status: ok
 ----- stdout -----
   PASS  P_s rank 1, P_d rank 2 (C3 isotype split 1+2)

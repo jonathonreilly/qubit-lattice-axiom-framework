@@ -21,9 +21,15 @@ does NOT force F1 over F3. Specifically:
       the Z_3 action on Herm_circ(3) decomposes as (trivial + doublet),
       so a doublet sub-rep DOES exist inside Lambda^2 V_3, but it sits as
       a 2-plane;
-  (C) measure analysis: the rotation-invariant Lebesgue measure on
-      Lambda^2 V_3 = R^3, restricted to a 2-plane, is two-dimensional
-      Lebesgue d(Re b) d(Im b), giving 2 log|b| = F3 weighting, NOT F1;
+  (C) measure analysis (OPEN BRIDGE — narrowed after review): the
+      rotation-invariant Lebesgue measure on Lambda^2 V_3 = R^3,
+      restricted to the doublet 2-plane, is two-dimensional Lebesgue
+      d(Re b) d(Im b). This runner does NOT establish a bridge from that
+      measure to either log objective: the disk log-volume log(pi R^2)
+      carries exactly ONE log factor in R^2 = |b|^2, so the previously
+      asserted "2-dim Lebesgue gives the rank-weighted (1,2) weighting
+      (F3)" step is not delivered by the stated measure and remains an
+      open, unexecuted bridge;
   (D) negative counterfactual probe: even a flat bivector-grade reweighting
       (treating the entire bivector subspace as a single C-line) requires
       a non-canonical projection that does not arise from any retained
@@ -72,6 +78,13 @@ except ImportError:
     sys.exit(1)
 
 
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results; the runner-cache fingerprints them so input
+# drift stales the cache (see scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md",
+)
+
 PASS = 0
 FAIL = 0
 
@@ -100,7 +113,8 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17")
     print("Goal: sympy-symbolic verification that the Cl(3) bivector route does")
-    print("NOT force F1 over F3 on the F1-vs-F3 selection question.")
+    print("NOT force the multiplicity-weighted (1,1) log functional (F1) over the")
+    print("rank-weighted (1,2) log functional (F3) on the selection question.")
     print("=" * 88)
 
     # -----------------------------------------------------------------------
@@ -336,7 +350,8 @@ def main() -> int:
     )
 
     # -----------------------------------------------------------------------
-    section("Part 5: MEASURE analysis — bivector route returns F3, NOT F1")
+    section("Part 5: MEASURE analysis — the measure-to-objective bridge is an "
+            "OPEN input (narrowed after review; not executed here)")
     # -----------------------------------------------------------------------
 
     # The Cl(3) bivector subspace Lambda^2 V_3 carries the natural rotation-
@@ -345,14 +360,17 @@ def main() -> int:
     # 2-dim doublet sub-plane, this is the 2-dim Lebesgue d(Re b) d(Im b)
     # (rotation-invariant on R^2 ~= C-line).
     #
-    # The log-volume factor of a 2-dim Lebesgue ball |b|^2 <= R^2 is
-    # log(pi R^2) = log pi + log R^2.
-    # Treating R^2 = |b|^2 as the radial coordinate gives ONE log factor in |b|^2,
-    # which matches F1 = log E_+ + log E_perp = log(3 a^2) + log(6 |b|^2).
-    # BUT this requires PRE-COLLAPSING the 2-plane into a single radial mode.
-    # Without this pre-collapse, the natural 2-dim Lebesgue gives:
-    #   integrand ~ log(d(Re b) d(Im b)) ~ 2 log|b| (radial+angular separately)
-    # which matches F3 = log E_+ + 2 log E_perp.
+    # NARROWED AFTER REVIEW: this runner does NOT derive an implication from
+    # that measure to either of the two log objectives compared below. The
+    # two objectives — the multiplicity-weighted (1,1) log functional (F1)
+    # and the rank-weighted (1,2) log functional (F3) — enter this runner as
+    # POSTULATED comparison functionals; only their fixed-total extrema are
+    # executed. What IS executed about the measure itself is the elementary
+    # disk log-volume identity below, which shows the stated 2-dim Lebesgue
+    # measure supplies exactly ONE log factor in R^2 = |b|^2 (up to the
+    # |b|-independent constant log pi), i.e. the stated measure does not by
+    # itself deliver the rank-weighted double-log weighting. The
+    # measure-to-objective step therefore remains an OPEN bridge.
 
     # Symbolic check: dimensional counting of degrees of freedom in
     # Lambda^2 V_3 doublet sub-plane.
@@ -362,18 +380,25 @@ def main() -> int:
         dim_doublet_R == 2,
     )
 
-    # Lebesgue restricted to 2-plane gives 2-dim measure, hence 2 log|b|
-    # (this matches F3 = log E_+ + 2 log E_perp, NOT F1)
-    # In contrast, F1 = log E_+ + 1 log E_perp would require treating the
-    # 2-plane as a single radial mode.
     R = Symbol("R", positive=True)
-    log_2d_lebesgue = log(R ** 2)  # log of area of disk radius R
-    log_1d_radial = log(R ** 2)    # log of radial coordinate squared
-    # These are numerically equal (both = 2 log R) BUT in the F1 vs F3 split
-    # F3 = log E_+ + 2 log|b|^2 ~ log E_+ + 2 * 2 log|b| = log E_+ + 4 log|b|
-    # F1 = log E_+ + log|b|^2 ~ log E_+ + 2 log|b|
-    # The factor of 2 (F3 vs F1) tracks the multiplicity of REAL coordinates
-    # in the doublet.
+    disk_log_volume = log(pi * R ** 2)  # log of area of the radius-R disk
+    one_log_residual = simplify(disk_log_volume - log(R ** 2) - log(pi))
+    check(
+        "2-dim Lebesgue disk log-volume log(pi R^2) carries exactly ONE log(R^2) "
+        "factor (residual after removing one log(R^2) is the |b|-independent "
+        "constant log pi)",
+        one_log_residual == 0,
+        detail=f"log(pi R^2) - log(R^2) - log(pi) = {one_log_residual}",
+    )
+    double_log_residual = simplify(disk_log_volume - 2 * log(R ** 2))
+    check(
+        "the stated measure does NOT supply the rank-weighted double log: "
+        "log(pi R^2) - 2 log(R^2) still depends on R, so the bridge from the "
+        "2-dim Lebesgue measure to the rank-weighted (1,2) objective (F3) is "
+        "NOT executed here and remains an open input",
+        simplify(sympy.diff(double_log_residual, R)) != 0,
+        detail=f"log(pi R^2) - 2 log(R^2) = {double_log_residual}",
+    )
 
     # Verify the F1 vs F3 separation on the (a, |b|) plane:
     a_sym = Symbol("a", positive=True, real=True)
@@ -426,14 +451,18 @@ def main() -> int:
         detail="rank-weighted (1,2)",
     )
 
-    # The F3 extremum location (E_perp = 2 E_+) reflects the doublet's
-    # TWO real degrees of freedom under natural Lebesgue. The bivector
-    # route DOES NOT change this, because the 2-plane in Lambda^2 V_3
-    # is genuinely 2-dim.
-    check(
-        "Bivector route gives F3 weighting naturally (2-dim doublet, 2 log factors)",
-        True,
-        detail="Lebesgue on 2-plane = d(Re b) d(Im b) ~ 2 log|b| = F3-like",
+    # NARROWED AFTER REVIEW: the former check here accepted, with a literal
+    # True, the claim that the bivector route "gives F3 weighting naturally".
+    # That claim is not executed anywhere in this runner and is contradicted
+    # by the disk log-volume identity asserted above (one log factor, not
+    # two). The extrema computed above are extrema of two POSTULATED
+    # objectives; which objective the bivector-class measure induces is an
+    # OPEN bridge, not a result of this runner.
+    print(
+        "  [INFO] measure-to-objective bridge: NOT executed here — the two "
+        "objectives are postulated comparison functionals, and the stated "
+        "2-dim Lebesgue measure supplies one log(|b|^2) factor, not two "
+        "(open bridge; see the two executed checks above)."
     )
 
     # -----------------------------------------------------------------------
@@ -452,10 +481,13 @@ def main() -> int:
     # mode that is already in E_+.
     #
     # If one restricts to the doublet sub-plane (2-dim) and then applies a
-    # radial projection on that 2-plane, one returns to the standard
-    # |b|^2 radial reduction — which gives the F1 log|b|^2 factor.
-    # But this radial-only projection is NOT a CANONICAL retained operation;
-    # it requires an additional convention pinning the 2-plane orientation.
+    # radial projection on that 2-plane, one returns to a radial-only
+    # |b|^2 reduction; which log-functional weighting any such reduction
+    # would induce is part of the OPEN measure-to-objective bridge (see
+    # Part 5 — nothing here executes that step).
+    # The radial-only projection is in any case NOT a CANONICAL retained
+    # operation; it requires an additional convention pinning the 2-plane
+    # orientation.
     #
     # The convention is exactly the U(1)_b angular quotient that Probes 13
     # and 16 already identified as the non-canonical residue.
@@ -485,27 +517,32 @@ def main() -> int:
     section("Part 7: Verdict synthesis — AV8 outcome")
     # -----------------------------------------------------------------------
 
-    # AV8 — Cl(3) bivector grading on dim-2 spinors:
-    #   Status: STRUCTURAL MISMATCH (Part 3) + MEASURE-LEVEL F3 RETURN (Part 5).
-    #   Outcome: bivector route does NOT close F1; it returns F3 by default
-    #   under the natural 2-dim Lebesgue, or returns to the prior U(1)_b
-    #   convention residue under selective radial reduction.
-
-    # The F1-vs-F3 ambiguity is unchanged. The bivector route is closed as an
-    # additional attack vector (AV8) returning the same residue.
+    # AV8 — Cl(3) bivector grading on dim-2 spinors (narrowed after review):
+    #   Status: STRUCTURAL MISMATCH (Part 3); measure-to-objective bridge
+    #   OPEN (Part 5).
+    #   Outcome: the executed obstruction is algebraic — the commuting pair
+    #   (B_1, B_2) is not a Cl(3) 2-blade — so the bivector route does NOT
+    #   close the multiplicity-weighted (1,1) log functional (F1). Which
+    #   weighting the bivector-class measure would induce is NOT resolved by
+    #   this runner.
     check(
-        "AV8 outcome: bivector route returns F3 (or U(1)_b residue), does NOT close F1",
-        True,
+        "AV8 outcome (executed): the commutativity/anticommutativity mismatch "
+        "stands — [B_1, B_2] = 0 while the Cl(3) bivector pair anticommutes "
+        "with nonzero commutator — so the bivector route does NOT close the "
+        "multiplicity-weighted (1,1) log functional (F1); the measure-to-"
+        "objective weighting is an OPEN bridge, not certified either way",
+        commutator == zeros(3, 3)
+        and anti12_23 == zeros(2, 2)
+        and com12_23 != zeros(2, 2),
     )
 
-    check(
-        "F1-vs-F3 ambiguity unchanged: same residue as Probes 12, 13, 16, 18",
-        True,
+    print(
+        "  [INFO] campaign context (not an executed check): the "
+        "multiplicity-weighted (1,1) vs rank-weighted (1,2) log-functional "
+        "ambiguity is unchanged — same residue as Probes 12, 13, 16, 18."
     )
-
-    check(
-        "No new admission proposed. BAE admission count UNCHANGED.",
-        True,
+    print(
+        "  [INFO] No new admission proposed. BAE admission count UNCHANGED."
     )
 
     # -----------------------------------------------------------------------
@@ -554,6 +591,48 @@ def main() -> int:
             "Note cites Probe 18 (campaign-context AV5 closure)",
             "PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18" in text,
         )
+
+    # -----------------------------------------------------------------------
+    section("Part 9: N5 execution certificate — what this runner resolves")
+    # -----------------------------------------------------------------------
+
+    print(
+        "per_element: checked — every generator and basis element is verified "
+        "individually: sigma_1, sigma_2, sigma_3 each square to I_2, the three "
+        "bivectors e12, e23, e31 equal i*sigma_3, i*sigma_1, i*sigma_2, and "
+        "B_1 = C + C^2, B_2 = i(C - C^2) are each exactly Hermitian on M_3(C)."
+    )
+    print(
+        "per_site: checked and not executed — this companion is a single-block "
+        "Clifford/circulant algebra probe carrying no lattice site index; the "
+        "three circulant positions enter only through the generator C with "
+        "C^3 = I_3, never as independently resolved sites."
+    )
+    print(
+        "per_mode: checked — over the reals the Z_3 cyclic action on "
+        "Lambda^2 V_3 decomposes into TWO isotypic blocks, trivial + doublet; "
+        "only after complexification are there three one-dimensional character "
+        "eigenspaces with eigenvalues the cube roots of unity (the executed "
+        "eigenvalue check). The trivial component is i(sigma_1+sigma_2+sigma_3) "
+        "and the real doublet block is a genuine 2-plane, so no mode collapses "
+        "it to one bivector."
+    )
+    print(
+        "per_block: checked — on the single Herm_circ(3) kappa block the "
+        "doublet pair satisfies [B_1, B_2] = 0 while the Cl(3) bivector pair "
+        "anticommutes; the fixed-total extrema of the two POSTULATED comparison "
+        "objectives are separated, the multiplicity-weighted (1,1) log "
+        "functional (F1) at E_+ = E_perp = E_tot/2 (kappa = 2) and the "
+        "rank-weighted (1,2) log functional (F3) at E_+ = E_tot/3 (kappa = 1); "
+        "which objective the bivector-class measure induces is NOT executed "
+        "here (open measure-to-objective bridge)."
+    )
+    print(
+        "lattice_wide: checked and not executed — nothing in this probe extends "
+        "past the fixed three-generation Herm_circ(3) block to a lattice or "
+        "continuum limit; the executed evidence is the exact-symbolic check set "
+        f"on that one block, PASS={PASS}, FAIL={FAIL}."
+    )
 
     print()
     print("=" * 88)

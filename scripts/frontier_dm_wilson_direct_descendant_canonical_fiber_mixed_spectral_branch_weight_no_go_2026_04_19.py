@@ -28,9 +28,11 @@ Result:
 from __future__ import annotations
 
 import math
+import platform
 import sys
 
 import numpy as np
+import scipy
 from scipy.optimize import brentq
 
 import frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19 as entropy_no_go
@@ -39,6 +41,27 @@ from frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_20
     observable_pack,
 )
 
+
+# Source-controlled helper modules imported (directly or transitively) by
+# this runner; every PASS and certificate value flows through them. The
+# runner-cache fingerprints them so helper drift stales the cache.
+AUDIT_INPUT_PATHS = (
+    "scripts/dm_leptogenesis_exact_common.py",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py",
+    "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
+    "scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19.py",
+    "scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py",
+    "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_theorem_2026_04_19.py",
+    "scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -98,6 +121,15 @@ def main() -> int:
     print("=" * 88)
     print("DM WILSON DIRECT-DESCENDANT CANONICAL-FIBER MIXED SPECTRAL/BRANCH-WEIGHT NO-GO")
     print("=" * 88)
+    # Replay environment record: the two witnesses below are outputs of
+    # scipy.optimize.minimize(trust-constr) (via the Schur-entropy helper)
+    # and are therefore numerical-environment-dependent. This transcript
+    # certifies the run under exactly this recorded environment.
+    print(
+        "numerical environment: "
+        f"python {platform.python_version()}, numpy {np.__version__}, "
+        f"scipy {scipy.__version__}, machine {platform.machine()}"
+    )
 
     alpha0_params, alpha0_result = solve_alpha(0.0, entropy_no_go.SHANNON_START)
     alpha1_params, alpha1_result = solve_alpha(1.0, alpha0_params)

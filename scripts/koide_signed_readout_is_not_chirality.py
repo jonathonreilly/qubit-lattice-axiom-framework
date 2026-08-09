@@ -201,37 +201,64 @@ check("B: the anticommuting operator's EIGENVALUE readout is Q=infinity, NOT 2/3
       sum_lam_anti == 0)
 # Statement C (the equivalence test): is there ANY nonzero Hermitian H that BOTH
 #   (i) anticommutes with Gamma_chi AND (ii) is a circulant (signed spectrum class)?
-#   Retained no-go: comm(R) ∩ anticomm(Gamma_chi) = {0}. Re-verify directly:
-av, bvr, bvi = sp.symbols('av bvr bvi', real=True)
-bv = bvr + sp.I*bvi
-H_circ_herm = av*I3 + bv*R + sp.conjugate(bv)*(R**2)
-# Preserve the original real-symmetric sub-check while solving the kernel below
-# on the full Hermitian class, including i(R-R^2).
-H_circ_sym = av*I3 + bvr*(R + R**2)
+#   Retained no-go: comm(R) ∩ anticomm(Gamma_chi) = {0}. Executed here as the
+#   decisive full-class kernel argument (fail-closed after review): every
+#   circulant commutes with Gamma_chi (Gamma_chi is itself a circulant), so
+#   {H, Gamma_chi} = 2 H Gamma_chi identically; Gamma_chi^2 = I makes
+#   Gamma_chi invertible, hence {H, Gamma_chi} = 0 forces H = 0. The full
+#   COMPLEX-Hermitian circulant class Hc = a I + b R + conj(b) R^2 (b = b_r
+#   + i b_i) is used, not just the real-symmetric subfamily, and the
+#   symbolic solve is asserted, not merely computed.
+check("C1: on the full Hermitian circulant class, {H_circ, Gamma_chi} = 2 H_circ Gamma_chi "
+      "identically (since [H_circ, Gamma_chi] = 0)",
+      sp.simplify(anti - 2*Hc*Gam) == sp.zeros(3,3))
+check("C2: Gamma_chi^2 = I makes Gamma_chi invertible, so {H_circ, Gamma_chi} * Gamma_chi "
+      "= 2 H_circ identically — {H_circ, Gamma_chi} = 0 forces H_circ = 0 on the full class",
+      sp.simplify(anti*Gam - 2*Hc) == sp.zeros(3,3))
+# Full-class symbolic solve over the complex-Hermitian coefficients (a, b_r, b_i),
+# fail-closed: an empty solver return counts as FAILURE (the zero solution must
+# be found), and any free/nonzero coefficient in a returned solution fails.
+full_eqs = []
+for _i in range(3):
+    for _j in range(3):
+        _e = sp.expand(anti[_i, _j])
+        full_eqs.append(sp.Eq(sp.re(_e), 0))
+        full_eqs.append(sp.Eq(sp.im(_e), 0))
+full_forced = sp.solve(full_eqs, [a, br, bi], dict=True)
+full_only_zero = bool(full_forced) and all(
+    all(sp.simplify(s.get(v, v)) == 0 for v in (a, br, bi)) for s in full_forced
+)
+check("C3: full-class symbolic solve — {H_circ, Gamma_chi} = 0 has ONLY the zero solution "
+      "a = b_r = b_i = 0 (complex-Hermitian coefficients included; solver return asserted)",
+      full_only_zero, f"solutions = {full_forced}")
+# Real-symmetric subfamily av I + bv(R+R^2): the same forcing, asserted (the
+# earlier revision computed this solve but never used it).
+av, bv, cv = sp.symbols('av bv cv', real=True)
+H_circ_real = av*I3 + bv*R + cv*(R**2)          # real circulant (commutes with R)
+# Hermitian real circulant requires symmetric: b = c
+H_circ_sym = H_circ_real.subs(cv, bv)
 check("real Hermitian circulant requires b=c (symmetric)",
       sp.simplify(H_circ_sym - H_circ_sym.T) == sp.zeros(3,3))
-anti_circ = sp.simplify(H_circ_herm*Gam + Gam*H_circ_herm)
-# Directly solve anticommutation on the full three-real-parameter Hermitian class.
-forced = sp.solve(
-    [sp.Eq(anti_circ[i,j],0) for i in range(3) for j in range(3)],
-    [av, bvr, bvi],
-    dict=True,
+anti_circ = sp.simplify(H_circ_sym*Gam + Gam*H_circ_sym)
+forced = sp.solve([sp.Eq(anti_circ[i,j],0) for i in range(3) for j in range(3)], [av,bv], dict=True)
+only_zero = bool(forced) and all(
+    sp.simplify(s.get(av, av)) == 0 and sp.simplify(s.get(bv, bv)) == 0 for s in forced
 )
-only_zero = forced == [{av: 0, bvr: 0, bvi: 0}]
-# Robust check: the ONLY circulant anticommuting with Gamma_chi is 0
-H_test = H_circ_herm
-ac = sp.simplify(H_test*Gam + Gam*H_test)
-# Retain explicit basis probes for the per-element certificate.
-ac_at_100 = sp.simplify(ac.subs({av:1, bvr:0, bvi:0}))
-ac_at_010 = sp.simplify(ac.subs({av:0, bvr:1, bvi:0}))
-ac_at_001 = sp.simplify(ac.subs({av:0, bvr:0, bvi:1}))
-check("C: NO nonzero Hermitian circulant anticommutes with Gamma_chi "
-      "(comm(R) ∩ anticomm(Gamma_chi) = {0}, retained no-go)",
-      only_zero and all(
-          basis_image != sp.zeros(3,3)
-          for basis_image in (ac_at_100, ac_at_010, ac_at_001)
-      ),
-      "Brannen-Q circulant class and anticommuting class are DISJOINT except at 0")
+check("C4: real-symmetric subfamily solve — anticommutation forces av = bv = 0 "
+      "(fail-closed: empty solver return fails)",
+      only_zero, f"solutions = {forced}")
+# Supplementary basis-direction witnesses (NOT the class argument by
+# themselves: nonzero basis images cannot rule out a kernel combination —
+# the class statement rests on C1-C3 above). All THREE Hermitian-circulant
+# basis directions I, R+R^2, and i(R-R^2) are probed on the full class
+# (the i(R-R^2) direction is the one the pre-review basis check missed).
+ac_at_100 = sp.simplify(anti.subs({a:1, br:0, bi:0}))
+ac_at_010 = sp.simplify(anti.subs({a:0, br:1, bi:0}))
+ac_at_001 = sp.simplify(anti.subs({a:0, br:0, bi:1}))
+check("C5 (witness only): anticommutator nonzero on all three Hermitian-circulant "
+      "basis directions I, R+R^2, and i(R-R^2)",
+      all(img != sp.zeros(3,3) for img in (ac_at_100, ac_at_010, ac_at_001)),
+      "supplementary to the full-class kernel argument C1-C3")
 
 # Statement D: therefore 'signed Hermitian (circulant) spectrum' is NOT equivalent to chirality.
 print("\n  => The signed-eigenvalue Brannen readout (Q=2/3 at r=1/2) is the readout of the")
@@ -370,7 +397,10 @@ print(
     "per_block: checked — the Gamma_chi grading splits the generation factor into a "
     "1-dimensional +1 block and a 2-dimensional -1 block, and the two operator classes "
     "over those blocks are disjoint: no nonzero Hermitian circulant anticommutes with "
-    f"Gamma_chi, the anticommuting representative having spectrum {spec_num} summing to 0."
+    "Gamma_chi, executed as the full-class kernel argument (every circulant commutes "
+    "with Gamma_chi, so {H, Gamma_chi} = 2 H Gamma_chi, and Gamma_chi^2 = I forces "
+    "H = 0) plus the asserted symbolic solve over the complex-Hermitian coefficients, "
+    f"the anticommuting representative having spectrum {spec_num} summing to 0."
 )
 print(
     "lattice_wide: checked and not executed — the Lattice = Z^3 and Qubit = M_2(C) "

@@ -2,6 +2,7 @@
 from __future__ import annotations
 from collections import deque
 from pathlib import Path
+import json
 import re
 import time
 import numpy as np
@@ -10,6 +11,18 @@ PASS, FAIL, TOL, SEED = 0, 0, 1e-9, 20260702
 DOC = "ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md"
 SCRIPT = "acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py"
 DEP = "STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md"
+# Canonical sharded audit row for the dependency note. The monolithic
+# docs/audit/data/audit_ledger.json is a gitignored local compatibility
+# artifact and must not be read: a clean checkout does not carry it.
+DEP_LEDGER_SHARD = "docs/audit/data/ledger/st/staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10.json"
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results; the runner-cache fingerprints them so input
+# drift stales the cache (see scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
+    "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
+    "docs/audit/data/ledger/st/staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10.json",
+)
 class GaugeSolveError(RuntimeError): pass
 def check(label: str, ok: bool, detail: str = "") -> None:
     global PASS, FAIL
@@ -144,16 +157,13 @@ def main() -> int:
     check("paired note exists", note_path.exists(), DOC)
     check("Dirac-row dependency exists", dep_path.exists(), DEP)
     check("true dependency pins are present", "Kawamoto-Smit" in dep and "η⁰" in dep)
-    import json
-    ledger = json.loads((root / "docs" / "audit" / "data" / "audit_ledger.json").read_text(encoding="utf-8"))
-    rows = ledger if isinstance(ledger, list) else ledger.get("rows", ledger.get("claims", []))
-    items = rows if isinstance(rows, list) else list(rows.values())
-    dep_row = next(
-        (r for r in items
-         if r.get("id", r.get("claim_id", "")) == "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"),
-        None,
-    )
-    check("ledger row found for the dependency", dep_row is not None)
+    shard_path = root / DEP_LEDGER_SHARD
+    dep_row = None
+    if shard_path.exists():
+        candidate = json.loads(shard_path.read_text(encoding="utf-8"))
+        if candidate.get("claim_id") == "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10":
+            dep_row = candidate
+    check("ledger row shard found for the dependency (sharded canonical row, not the gitignored monolithic ledger)", dep_row is not None)
     live = dep_row or {}
     print(
         "ledger row live audit fields (informational; the audit lane owns them): "

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g3_outcome_factorization_unraveled_2026_07_11.py
-runner_sha256: d2f71e1e9a26236e31199627a2b82e209f89ce53ee251a12d86f284e7752baec
+runner_sha256: 8e9c03f5f1ec15f7446f3f012d64226c7d42068c6d2ebd067aa23b15853fb17f
+input_fingerprint_sha256: fc7aa2970d1be34cd6a79000347f4916085e59a82ff61b9e3c4cbccc6e1f0569
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.23
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 [PASS] A1. same-marginal joint family: rows/cols = (p_s,p_d), sum = 1 (symbolic in a,p)

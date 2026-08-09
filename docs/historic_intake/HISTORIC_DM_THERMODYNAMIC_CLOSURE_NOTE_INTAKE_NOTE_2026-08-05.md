@@ -35,15 +35,19 @@ Limit-language correction across the lane: the claimed continuum dependencies ar
 - git blob: `dfc74f163c706e1a0b8268a49a79169f3560407b`
 - sha256: `0cff0f7aa89b453633f9c281a14a85c4dc701ee57ea23c2fc35cbe459dffba7b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/408_DM_THERMODYNAMIC_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/408_DM_THERMODYNAMIC_CLOSURE_NOTE.md)
-- Lines: 250; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_thermodynamic_closure(.py)`
+- Lines: 250; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_thermodynamic_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Corrects the limit language used in DM_SIGMA_V_LATTICE_NOTE.md and DM_RELIC_GAP_CLOSURE_NOTE.md.
 
 ## Audit fields
 

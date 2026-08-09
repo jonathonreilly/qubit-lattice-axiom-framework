@@ -36,6 +36,7 @@ The axioms-completeness self-assessment, stated honestly: 'are the four axioms c
 - sha256: `95e0357738e3428f0e67dcefb1404a0a51c8c11fd0b82cd1bb783fcbd5986653`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11414_AXIOM_CONVERSATION_DOSSIER.md](../../archive_unlanded/historic_intake_originals/packsci05/11414_AXIOM_CONVERSATION_DOSSIER.md)
 - Lines: 184; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ The axioms-completeness self-assessment, stated honestly: 'are the four axioms c
 - `.claude/science/physics-loops/toe-close-20260729/EXTRACT_W6_GROUNDING.md` — FROZEN FINDING no_census_weight_receiver: zero live receivers for census weight; bounded, not universal.
 - `.claude/science/physics-loops/toe-close-20260729/ROUTE_PORTFOLIO_W5_LOCKING.md` — Four W5 locking routes ranked; R1 enforced dual-rail lock BUILDABLE-NOW; detection is not prevention.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-EXTRACT_W3_GROUNDING.md and GOAL.md were ABSENT from the working tree/HEAD during synthesis; several wall cells are supervisor-filled rather than receipt-verified
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: EXTRACT_W3_GROUNDING.md and GOAL.md were ABSENT from the working tree/HEAD during synthesis; several wall cells are supervisor-filled rather than receipt-verified
+- Supersession (as known at extraction): cites landed PRs #5700/#5706/#5709/#5710/#5713/#5738/#5718/#5721/#5715/#5744/#5742/#5722/#5726/#5729/#5727/#5732/#5734/#5708/#5714
 
 ## Audit fields
 

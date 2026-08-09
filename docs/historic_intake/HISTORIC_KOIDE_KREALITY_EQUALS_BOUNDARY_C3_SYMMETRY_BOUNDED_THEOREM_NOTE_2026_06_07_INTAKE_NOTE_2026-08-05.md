@@ -35,15 +35,19 @@ K-reality = boundary C_3 symmetry: the chirality gate's sharpest form — an arr
 - git blob: `5ac6b270a24819244c00d13803b83d396a546c05`
 - sha256: `ef680216fa593d676b8c5d586dfb93f8067ae226227249117f882331e43bd9d2`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/864_KOIDE_KREALITY_EQUALS_BOUNDARY_C3_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch03/864_KOIDE_KREALITY_EQUALS_BOUNDARY_C3_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-06-07.md)
-- Lines: 155; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_kreality_equals_boundary_c3_symmetry(.py)`
+- Lines: 155; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_kreality_equals_boundary_c3_symmetry​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Addresses GAP A ('posited, not derived') of the retained_bounded FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02 and re-derives the KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY no-go downstream of its own T1.
 
 ## Audit fields
 

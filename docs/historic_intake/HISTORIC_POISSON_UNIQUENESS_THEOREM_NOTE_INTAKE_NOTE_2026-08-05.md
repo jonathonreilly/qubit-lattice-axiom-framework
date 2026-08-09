@@ -35,15 +35,19 @@ Poisson uniqueness within the stated class — WITH the EXACT-header-vs-3/5-nume
 - git blob: `46114a36df713f04767281651acfa9f11bd2447e`
 - sha256: `987e8ea34d882f6d9320c0f9c829884b9be9290b175c0c8a825e4cc102349150`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1605_POISSON_UNIQUENESS_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1605_POISSON_UNIQUENESS_THEOREM_NOTE.md)
-- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_poisson_uniqueness_theorem(.py)`
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_poisson_uniqueness_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Header advertises EXACT while the same runner reports 3/5 numerical checks FAILING; the note argues these are finite-size artifacts, but a reader scanning runner output would see failures.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Header advertises EXACT while the same runner reports 3/5 numerical checks FAILING; the note argues these are finite-size artifacts, but a reader scanning runner output would see failures.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

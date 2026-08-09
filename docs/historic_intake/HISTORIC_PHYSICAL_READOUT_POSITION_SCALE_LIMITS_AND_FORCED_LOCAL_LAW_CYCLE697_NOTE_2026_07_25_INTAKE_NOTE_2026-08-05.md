@@ -35,15 +35,19 @@ Structural no-go from Record+Lattice alone: readout clause is position-blind and
 - git blob: `ffba61de9e7836a81ea007121129d5069b582d1a`
 - sha256: `114bb7fe0ad10c1572a726d11a40dfcf05d1edb1eebf004d6a6008e75b227c29`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3089_PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md](../../archive_unlanded/historic_intake_originals/recovery/3089_PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md)
-- Lines: 294; runners named: historic runner (unpinned, not in this packet): `scripts/physical_readout_position_scale_limits_and_forced_local_law_cycle697_2026_07_25(.py)`
+- Lines: 294; runners named: historic runner (unpinned, not in this packet): `scripts/physical_readout_position_scale_limits_and_forced_local_law_cycle697_2026_07_25​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-stated: awards no N1-N8 verdict to its own negative content (L2 and L3), leaving that reviewer-owned; does not repair the four audited_conditional gravity rows.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-stated: awards no N1-N8 verdict to its own negative content (L2 and L3), leaving that reviewer-owned; does not repair the four audited_conditional gravity rows.
+- Supersession (as known at extraction): Extends Cycle 693's singleton-weight readout form to position and scale; names four residuals (site-anchored readout, reference normalization, source action, law range) gating four gravity rows, T7 microcausality, T10, the AC eta obligation and hypercharge alpha.
 
 ## Audit fields
 

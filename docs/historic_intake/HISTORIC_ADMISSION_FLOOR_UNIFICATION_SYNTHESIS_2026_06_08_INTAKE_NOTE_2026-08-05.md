@@ -36,14 +36,18 @@ Pre-reset synthesis characterizing the four dimensionless Tier-A admissions (r =
 - sha256: `63e167c4c928d777d89dc799c4cefb507f94497883c50820d6cb6ab348fedbb0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2751_ADMISSION_FLOOR_UNIFICATION_SYNTHESIS_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch09/2751_ADMISSION_FLOOR_UNIFICATION_SYNTHESIS_2026-06-08.md)
 - Lines: 106; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-labeled honest, but the headline slogan 'structure from three axioms; the residual is one primitive' is stated on the manuscript surface while several of its supporting rows (Bridge-1 algebra, no-axiom-native-CP unification, strong-CP parity route, i-identity gate) are unreviewed proposals.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-labeled honest, but the headline slogan 'structure from three axioms; the residual is one primitive' is stated on the manuscript surface while several of its supporting rows (Bridge-1 algebra, no-axiom-native-CP unification, strong-CP parity route, i-identity gate) are unreviewed proposals.
+- Supersession (as known at extraction): Pre-reset framing: the 2026-06-29 axiom reset and the 2026-08-05 admissibility revision (PR #6011) move Born structure into axiom content, changing this note's axiom base. The r = 1/2 face was later handled by the conditional selection theorem (PR #5236) and the occupancy channel abolished 2026-07-11.
 
 ## Audit fields
 

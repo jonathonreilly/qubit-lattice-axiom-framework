@@ -35,15 +35,19 @@ Planck review-contract closure: c_cell = 1/4 exact on the accepted contract — 
 - git blob: `55c66349497b4a0df7ed47e9aca356bc0c49735a`
 - sha256: `6e5547e4bb90065cd5aa817de7182ea5a49b7ef75f83e787493ce3d655832fc0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1368_PLANCK_SCALE_AIRTIGHT_REVIEW_CLOSURE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1368_PLANCK_SCALE_AIRTIGHT_REVIEW_CLOSURE_THEOREM_2026-04-23.md)
-- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_airtight_review_closure_theorem(.py)`
+- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_airtight_review_closure_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Title says 'airtight closure' while the body concedes the bare Cl(3)/Z^3 claim is unproved - self-disclosed, but the title alone overreads.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Title says 'airtight closure' while the body concedes the bare Cl(3)/Z^3 claim is unproved - self-disclosed, but the title alone overreads.
+- Supersession (as known at extraction): Self-describes as the final reviewer-gate closure statement of the Planck review-contract lane (family-terminal candidate) and names five theory-surface denials that would retire it.
 
 ## Audit fields
 

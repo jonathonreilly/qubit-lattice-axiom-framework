@@ -36,14 +36,18 @@ Correction of a C_num interface defect: the 13-decimal matrix-entry key gave 334
 - sha256: `12c4ff427177c1169a6476145d39aa952147b429c83d8a156928750657a1903f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2875_PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026-07-18.md](../../archive_unlanded/historic_intake_originals/branch09/2875_PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026-07-18.md)
 - Lines: 272; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A frame-dependent class count (3149/3347 in 16 of 24 frames vs 3150/3348 in the rest) means the prior interface silently reported a frame-dependent quantity as invariant; the underlying separation was 5.2e-16, i.e. at binary64 noise.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A frame-dependent class count (3149/3347 in 16 of 24 frames vs 3150/3348 in the rest) means the prior interface silently reported a frame-dependent quantity as invariant; the underlying separation was 5.2e-16, i.e. at binary64 noise.
+- Supersession (as known at extraction): CORRECTS Cycle 404's (idx 2822) class and rank counts by minus one each; relative to Cycle 401 the corrected cross-program gain is 2711 classes and 966 exact ranks.
 
 ## Audit fields
 

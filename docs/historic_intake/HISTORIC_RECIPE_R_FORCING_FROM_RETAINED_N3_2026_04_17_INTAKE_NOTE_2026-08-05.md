@@ -35,7 +35,8 @@ TERMINAL of the 2026-04-17 native-gauge/Cl(3) chain: a Clifford grade-preservati
 - git blob: `38b732914c3d832fa7df5b6f98fb0c6e586b2a9c`
 - sha256: `94a12be88c6f7becc4f2793ce1db89bd3c854f46237abb8f482fb10709a79c3f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10025_recipe-r-forcing-from-retained-n3-2026-04-17.md](../../archive_unlanded/historic_intake_originals/packsci01/10025_recipe-r-forcing-from-retained-n3-2026-04-17.md)
-- Lines: 242; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_recipe_r_forcing_from_retained_n3(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge(.py)`
+- Lines: 242; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_recipe_r_forcing_from_retained_n3​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ TERMINAL of the 2026-04-17 native-gauge/Cl(3) chain: a Clifford grade-preservati
 - `.claude/science/derivations/native-gauge-family-uniqueness-2026-04-17.md` — Upgrades the native-gauge scope theorem from extension to uniqueness; the force comes from A4 grade-homogeneity.
 - `.claude/science/derivations/native-gauge-scope-theorem-2026-04-17.md` — Code-level premise: the retained runner defines S1,S2,S3 as exactly the three Clifford bivectors; supplies the missing premise of the chain.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The centre term Z(Cl(n)) is dropped from the forced answer by an extra nontriviality condition; and the whole ladder still rests on reading the retained n=3 theorem at a strength (no-selector) it did not itself claim.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The centre term Z(Cl(n)) is dropped from the forced answer by an extra nontriviality condition; and the whole ladder still rests on reading the retained n=3 theorem at a strength (no-selector) it did not itself claim.
+- Supersession (as known at extraction): TERMINAL of the 2026-04-17 native-gauge/Cl(3)-minimality chain (10011 -> 10012 -> 10022 -> 10021 -> 10023 -> 10007 -> 10025); anchors on docs/NATIVE_GAUGE_CLOSURE_NOTE.md.
 
 ## Audit fields
 

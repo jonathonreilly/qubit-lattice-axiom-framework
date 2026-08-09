@@ -35,15 +35,19 @@ The 782-line route-triage terminal reducing zero-import hydrogen to the Hartree 
 - git blob: `d0e7551ab2c364cd7a8d3798904484cca47ba2c4`
 - sha256: `212669a06b1d250eae5941ca6a1ee5f154f3ad0f3dccf1bc83429005029d4226`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2667_ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch08/2667_ZERO_IMPORT_HYDROGEN_LEPTON_256_ROUTE_TRIAGE_2026-07-04.md)
-- Lines: 782; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_route_triage(.py)`
+- Lines: 782; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_route_triage​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): CAMPAIGN ROUTE-SELECTION TERMINAL for the LEPTON_256 sub-campaign (companion to the goal packet 2514); Route A is repaired in 2659 and Route B is walled in 2671. Source sub-ladder: F-clause 2651 / L-clause 2655 / P-clause 2661 / R-clause 2668 (each a TERMINAL) -> exact source singleton TERMINAL 2639 -> K4 terminal 2505; route selection 2667.
 
 ## Audit fields
 

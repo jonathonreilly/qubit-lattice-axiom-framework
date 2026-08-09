@@ -35,15 +35,19 @@ Sigma_1 computed to 10 digits replacing the estimate — WITH the flag that clos
 - git blob: `9b262c274b7d708fe7b23c2c3c2585415d7909c7`
 - sha256: `793a2bc1395ba9f8ddd4e4454e4423c5a95ee127d83f72a6715b03b1cdbc57b7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1925_SIGMA1_EXACT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1925_SIGMA1_EXACT_NOTE.md)
-- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact(.py)`
+- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The hierarchy is closed by choosing alpha_s(q*) = 0.49 to hit the measured VEV, and the error budget attributes ~15% of the v uncertainty to that matching-scale choice; the +1.9% correction to Sigma_1 also revises a previously banked number.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The hierarchy is closed by choosing alpha_s(q*) = 0.49 to hit the measured VEV, and the error budget attributes ~15% of the v uncertainty to that matching-scale choice; the +1.9% correction to Sigma_1 also revises a previously banked number.
+- Supersession (as known at extraction): Replaces the estimated Sigma_1 = 6.0 used in the earlier hierarchy formula with the exact 6.1165.
 
 ## Audit fields
 

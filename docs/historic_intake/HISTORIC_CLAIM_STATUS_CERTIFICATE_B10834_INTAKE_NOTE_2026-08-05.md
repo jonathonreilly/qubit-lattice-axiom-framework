@@ -36,14 +36,18 @@ Fitted-input removal on the record: the self-contained primary runner REMOVES fi
 - sha256: `165a2dcfbb5e991adf97b5caf46d93dd8ac3718a79ea4cfc79ed8652797f4a17`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10834_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10834_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 19; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/restricted-strong-field-closure-20260712/NO_GO_LEDGER.md` — Four walls: naming the shell/bridge/lift/Schur action does not prove their relation; one route is circular by construction; the old note form required repair.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-the prior form of this proof contained fitted inputs and a target-defined flux
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: the prior form of this proof contained fitted inputs and a target-defined flux
+- Supersession (as known at extraction): Removes fitted inputs and a target-defined Schur flux that were previously in the proof.
 
 ## Audit fields
 

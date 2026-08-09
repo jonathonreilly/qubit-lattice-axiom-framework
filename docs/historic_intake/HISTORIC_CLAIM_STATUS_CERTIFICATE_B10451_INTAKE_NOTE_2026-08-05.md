@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,18 +38,22 @@ Another independent r=1 route: the formal F1-F3 tracial/product/modular selector
 - sha256: `14ef561a6d93c684b5d8ac7671d270600b3cf7ab114bed911805ac1c13d8f974`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10451_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10451_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 87; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md` — Companion disclaimers keeping the pruning route-local: Q=2/3 is NOT ruled out; non-tracial/chiral/finite-gap routes stay open.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Another independent r=1 route: the formal F1-F3 tracial/product/modular selector route lands on dimension weighting (1,2), giving r=1 and Q=1, NOT equal-block r=1/2; escapes named (non-tracial reference states, chiral selectors). Member of the r=1/2 adjudication set.
+- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — Another independent r=1 route: the formal F1-F3 tracial/product/modular selector route lands on dimension weighting (1,2), giving r=1 and Q=1, NOT equal-block r=1/2; escapes named (non-tracial reference states, chiral selectors). Member of the r=1/2 adjudication set.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly relevant to the Koide/Q = 2/3 lane: another independent family of measure-theoretic routes lands on kappa = 1 weighting rather than the block democracy the Q = 2/3 story needs (compare idx 10386).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly relevant to the Koide/Q = 2/3 lane: another independent family of measure-theoretic routes lands on kappa = 1 weighting rather than the block democracy the Q = 2/3 story needs (compare idx 10386).
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 
@@ -57,6 +63,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

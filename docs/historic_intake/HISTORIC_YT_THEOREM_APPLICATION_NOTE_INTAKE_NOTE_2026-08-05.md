@@ -35,15 +35,19 @@ The April applied-chain 'no free parameters' top-mass claim WITH its own BOUNDED
 - git blob: `b4dbe5664d64db975cfe2ed315746675d8451340`
 - sha256: `98ec8947c686c35bd0a208ea1d14b1891f9a6cfdc3c2b5e8b11389565420f9cd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2459_YT_THEOREM_APPLICATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2459_YT_THEOREM_APPLICATION_NOTE.md)
-- Lines: 359; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_applied_chain(.py)`
+- Lines: 359; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_applied_chain​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Claims 'no free parameters' prediction of the top mass while the load-bearing bare boundary condition is the Ward identity whose H_unit identification step later failed audit (see 2463).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Claims 'no free parameters' prediction of the top mass while the load-bearing bare boundary condition is the Ward identity whose H_unit identification step later failed audit (see 2463).
+- Supersession (as known at extraction): April predecessor of the whole PR #230 lane; its 'bare theorem closed' premise is the Ward identity later classified audited_renaming (2401) and forbidden as a proof input (2461/2462).
 
 ## Audit fields
 

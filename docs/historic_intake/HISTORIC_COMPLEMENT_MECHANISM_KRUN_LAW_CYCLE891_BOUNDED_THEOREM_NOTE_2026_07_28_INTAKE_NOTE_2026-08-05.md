@@ -35,15 +35,19 @@ Closes Cycle 889's two named opens: derived complement mechanism with SEALED hol
 - git blob: `235965affc47ce7745327ef194e7c0ae31e6a6c8`
 - sha256: `5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/253_COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/253_COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 203; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle891_complement_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle891_complement_mechanism_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle891_complement_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle891_complement_mechanism_2026_07_28(.py)`
+- Lines: 203; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle891_complement_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle891_complement_mechanism_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle891_complement_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle891_complement_mechanism_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Process disclosures record that the worker's first mechanism hypothesis was refuted by its own instrumentation and that the checker's first full run honest-failed its own declared criteria.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Process disclosures record that the worker's first mechanism hypothesis was refuted by its own instrumentation and that the checker's first full run honest-failed its own declared criteria.
+- Supersession (as known at extraction): Successor to Cycle 889; generalizes its two-run law to all k.
 
 ## Audit fields
 

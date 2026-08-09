@@ -35,7 +35,8 @@ The Jarlskog structural diagnosis: phase-loss in diagonalization is a genuine ph
 - git blob: `1dc5db99c616fc491a4a1fc316b57b21817c2970`
 - sha256: `3eba7c59f4f653689cd8582a9caca37fb296b74fea33a59f0bc3a5a0da092f77`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/202_CKM_JARLSKOG_DIAGNOSIS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/202_CKM_JARLSKOG_DIAGNOSIS_NOTE.md)
-- Lines: 129; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_full_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_jarlskog_diagnosis(.py)`
+- Lines: 129; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_full_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_jarlskog_diagnosis​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The Jarlskog structural diagnosis: phase-loss in diagonalization is a genuine ph
 - `docs/CKM_JARLSKOG_FIX_NOTE.md` — Full Z_3^3 attempt; delta_CP worsens to 69% off — flagged.
 - `docs/CKM_J_DERIVED_NOTE.md` — Four attacks: J or angles, not both; internal gap-figure inconsistency recorded.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

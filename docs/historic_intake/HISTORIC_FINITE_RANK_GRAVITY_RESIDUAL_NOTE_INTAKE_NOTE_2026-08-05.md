@@ -35,16 +35,20 @@ Woodbury finite-rank residual theorem: any PSD multi-site support reduces to one
 - git blob: `be69fddfcad4be334e2a7cd36427ca4df8505f9f`
 - sha256: `33edd4ec072404e465ef0c5ea4a9d4ada93cb4d66b74090770645b3e39402619`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/463_FINITE_RANK_GRAVITY_RESIDUAL_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/463_FINITE_RANK_GRAVITY_RESIDUAL_NOTE.md)
-- Lines: 170; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_finite_rank_gravity_residual(.py)`
+- Lines: 170; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_finite_rank_gravity_residual​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FINITE_RANK_DTN_CORRECTION_OPERATOR_NOTE.md` — Exact DtN correction operator; family evidence.
 - `docs/FINITE_RANK_SUPPORT_ACTIVE_AMPLITUDE_LAW_NOTE.md` — Rank-one amplitude law; closes the scalar ambiguity.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The direct common-source candidate is NOT a vacuum Einstein solution; only its monopole projection is close, and the reduction is not derived.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The direct common-source candidate is NOT a vacuum Einstein solution; only its monopole projection is close, and the reduction is not derived.
+- Supersession (as known at extraction): Upgrades the earlier rank-one / diagonal-support source theorems to a general positive-semidefinite finite-rank class.
 
 ## Audit fields
 

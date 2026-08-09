@@ -35,15 +35,19 @@ The one positive value law: the weak-axis seed patch closes exactly at the D lev
 - git blob: `c973b55cc2619c7279a5d087b73a8d3ba2f19cd6`
 - sha256: `d39479db02e0bb47b596b08355317cd4fa629b1f8bc6feafed6a5cba1df62a94`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1557_PMNS_MICROSCOPIC_DELTA_D_SEED_LAW_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1557_PMNS_MICROSCOPIC_DELTA_D_SEED_LAW_NOTE.md)
-- Lines: 55; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_microscopic_delta_d_seed_law(.py)`
+- Lines: 55; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_microscopic_delta_d_seed_law​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The one positive value law inside the otherwise negative Delta D chain.
 
 ## Audit fields
 

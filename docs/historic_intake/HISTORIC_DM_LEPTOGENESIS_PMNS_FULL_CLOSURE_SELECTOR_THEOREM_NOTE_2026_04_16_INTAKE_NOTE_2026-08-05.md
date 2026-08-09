@@ -35,15 +35,19 @@ Full-closure selector theorem (two branches, Delta S > 0.5) contradicting 3604's
 - git blob: `67224ef56b80748cd1633bcff01d2b95116fd435`
 - sha256: `3eef78097d2a9f033cbfdb05401817854011d5995d31d14c3c759f6eac577733`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3605_DM_LEPTOGENESIS_PMNS_FULL_CLOSURE_SELECTOR_THEOREM_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/recovery/3605_DM_LEPTOGENESIS_PMNS_FULL_CLOSURE_SELECTOR_THEOREM_NOTE_2026-04-16.md)
-- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_full_closure_selector_theorem(.py)`
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_full_closure_selector_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Reports a 'finite and large' gap Delta S > 0.5 with two branches, while the companion certified-global theorem dated the same day finds a third branch 0.001812374006 above the minimum — the gap claim here is not robust to the finer search.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Reports a 'finite and large' gap Delta S > 0.5 with two branches, while the companion certified-global theorem dated the same day finds a third branch 0.001812374006 above the minimum — the gap claim here is not robust to the finer search.
+- Supersession (as known at extraction): Removes the branch-global caveat left by the earlier relative-action stationarity theorem; itself strengthened by the certified global selector theorem (idx 3604), which finds THREE stationary branches on the reduced delta = 0 chart rather than two, with the second only 0.0018 above the minimum.
 
 ## Audit fields
 

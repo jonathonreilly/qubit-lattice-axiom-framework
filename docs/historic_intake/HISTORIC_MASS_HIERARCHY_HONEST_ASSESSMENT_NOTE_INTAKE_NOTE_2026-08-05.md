@@ -35,7 +35,8 @@ The mass-hierarchy honest synthesis: exponent reproduced to 16% (0.8 decades sho
 - git blob: `297c58898604c9a1f0e679d418990826e5f2f0c5`
 - sha256: `a229b1dde03329f9148de80d75caa096f4aaa5d5a3ec5c7ce5d5d14c446fabcd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1132_MASS_HIERARCHY_HONEST_ASSESSMENT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1132_MASS_HIERARCHY_HONEST_ASSESSMENT_NOTE.md)
-- Lines: 288; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_su3(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_rg(.py)`
+- Lines: 288; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_synthesis​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_su3​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_rg​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The mass-hierarchy honest synthesis: exponent reproduced to 16% (0.8 decades sho
 - `docs/MASS_HIERARCHY_SU3_NOTE.md` — SU(3) proxy correction (65%).
 - `docs/MASS_SPECTRUM_NOTE.md` — Three-of-four mechanisms fail.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Warns the band is ~2 decades wide and explicitly instructs not to claim precision; the band width reflects model dependence.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Warns the band is ~2 decades wide and explicitly instructs not to claim precision; the band width reflects model dependence.
+- Supersession (as known at extraction): Synthesis/assessment over MASS_HIERARCHY_RG, MASS_HIERARCHY_SU3, MASS_SPECTRUM, EWSB_GENERATION_CASCADE and GENERATION_GAP_CLOSURE; no new scripts run.
 
 ## Audit fields
 

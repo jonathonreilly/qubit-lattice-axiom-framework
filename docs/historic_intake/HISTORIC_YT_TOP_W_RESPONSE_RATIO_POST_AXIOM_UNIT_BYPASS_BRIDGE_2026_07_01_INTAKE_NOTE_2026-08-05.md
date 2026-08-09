@@ -35,15 +35,19 @@ Finite composition theorem: the top/W response ratio removes both unit selectors
 - git blob: `eee3c143b3a351e77446aa5e4e78f5f5d33fa931`
 - sha256: `41de502e8263fe205bfeea0114d653ba6e41805c9b46ec1472937c7fa334060a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2474_YT_TOP_W_RESPONSE_RATIO_POST_AXIOM_UNIT_BYPASS_BRIDGE_2026-07-01.md](../../archive_unlanded/historic_intake_originals/branch08/2474_YT_TOP_W_RESPONSE_RATIO_POST_AXIOM_UNIT_BYPASS_BRIDGE_2026-07-01.md)
-- Lines: 374; runners named: historic runner (unpinned, not in this packet): `scripts/yt_top_w_response_ratio_post_axiom_unit_bypass_bridge_2026_07_01(.py)`
+- Lines: 374; runners named: historic runner (unpinned, not in this packet): `scripts/yt_top_w_response_ratio_post_axiom_unit_bypass_bridge_2026_07_01​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/YT_SOURCE_UNIT_POST_AXIOM_RN_REDUCTION_BRIDGE_2026-07-01.md` — Post-axiom source-unit wall restatement.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Post-reset composition over SOURCE_OBSERVABLE_RESPONSE_RATIO_DOUBLE_UNIT_NORMAL_FORM_2026-07-01, the RN reduction bridge 2453, and YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25; it retires 'missing absolute source unit' and 'missing common mass unit' as independent blockers.
 
 ## Audit fields
 

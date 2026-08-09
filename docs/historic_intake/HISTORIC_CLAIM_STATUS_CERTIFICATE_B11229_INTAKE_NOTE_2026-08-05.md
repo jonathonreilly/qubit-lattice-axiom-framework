@@ -36,14 +36,18 @@ Bounded positive worth registering: g_* = 106.75 assembled from framework gauge+
 - sha256: `05f79965d1266fefb5067dcbccfac3d109d533534b84a27ce8d3d4cbd2597929`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11229_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11229_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 83; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/sm-gstar-matter-content/NO_GO_LEDGER.md` — Four dead routes recorded, incl. that claiming full derivation/retained status for g_* was REJECTED as Route A; a prior route's failure is documented.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-the headline number 106.75 coincides with the textbook Standard Model value; the certificate itself flags that if nu_R were thermalized Dirac the framework would give 112, so the match is regime-import-dependent
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: the headline number 106.75 coincides with the textbook Standard Model value; the certificate itself flags that if nu_R were thermalized Dirac the framework would give 112, so the match is regime-import-dependent
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

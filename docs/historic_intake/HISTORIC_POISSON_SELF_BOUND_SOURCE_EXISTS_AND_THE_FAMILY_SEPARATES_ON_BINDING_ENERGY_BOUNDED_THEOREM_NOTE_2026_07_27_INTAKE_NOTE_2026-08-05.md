@@ -35,15 +35,19 @@ Box-independent self-consistent source exists under per-operator sign normalizat
 - git blob: `d7123f1b5cb03e8402c22527d3c7e94a5cf890a9`
 - sha256: `8a77a0a2afe82d24aea653ae7051f717495c95cffdb23669e1c6b6f3065eb6ec`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3091_POISSON_SELF_BOUND_SOURCE_EXISTS_AND_THE_FAMILY_SEPARATES_ON_BINDING_ENERGY_BOUNDED_THEOREM_NOTE_2026-07-27.md](../../archive_unlanded/historic_intake_originals/recovery/3091_POISSON_SELF_BOUND_SOURCE_EXISTS_AND_THE_FAMILY_SEPARATES_ON_BINDING_ENERGY_BOUNDED_THEOREM_NOTE_2026-07-27.md)
-- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_self_bound_source_exists_cycle713_2026_07_27(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous(.py)`
+- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_self_bound_source_exists_cycle713_2026_07_27​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Rows F1/F2 find the landed FROZEN_STARS_RIGOROUS_NOTE's 3D width grows monotonically 2.5214 to 5.6336 over L=6..16 with no saturation and its gravitating state is 0.866-0.945 of the free box ground state, i.e. its lattice-size independence is not established by its own construction; the note states independent audit is still required before retained-grade treatment.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Rows F1/F2 find the landed FROZEN_STARS_RIGOROUS_NOTE's 3D width grows monotonically 2.5214 to 5.6336 over L=6..16 with no saturation and its gravitating state is 0.866-0.945 of the free box ground state, i.e. its lattice-size independence is not established by its own construction; the note states independent audit is still required before retained-grade treatment.
+- Supersession (as known at extraction): Takes the successor PR #5693 named; fourth cycle on parent row self_consistency_forces_poisson_note after #5656, #5662, #5693; challenges docs/FROZEN_STARS_RIGOROUS_NOTE.md.
 
 ## Audit fields
 

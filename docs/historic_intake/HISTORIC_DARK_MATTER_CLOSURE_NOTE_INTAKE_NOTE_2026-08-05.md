@@ -35,15 +35,19 @@ The DM taste-singlet terminal assessment WITH the unfalsifiability concession (a
 - git blob: `255853644a526a4c95f6da3fea9ef1fcaf7e7bc3`
 - sha256: `0a4c217b17054f97a535127233ba8f1df378416800228997db9ef2675f3436a6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/286_DARK_MATTER_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/286_DARK_MATTER_CLOSURE_NOTE.md)
-- Lines: 274; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dark_matter_closure(.py)`
+- Lines: 274; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dark_matter_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DARK_MATTER_SINGLETS_NOTE.md` — First pass; weak-charge problem identified then resolved by the terminal.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Concedes the candidate is unfalsifiable from within the framework.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Concedes the candidate is unfalsifiable from within the framework.
+- Supersession (as known at extraction): Definitive assessment superseding the first-pass singlets note.
 
 ## Audit fields
 

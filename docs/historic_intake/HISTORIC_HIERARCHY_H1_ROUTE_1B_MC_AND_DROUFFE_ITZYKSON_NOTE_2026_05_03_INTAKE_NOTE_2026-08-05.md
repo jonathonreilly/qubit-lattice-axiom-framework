@@ -1,6 +1,6 @@
-# Historic intake: Hierarchy H1 Route 1B — Wilson MC and Drouffe-Itzykson Cross-Check
+# Historic intake: Hierarchy Route 1B — Wilson MC and Drouffe-Itzykson Cross-Check
 
-Explicit subject: Three independent methods agree on the SU(3) single-plaquette block at beta = 6 to ten digits — Drouffe-Itzykson Bessel determinant 0.4225317397, Haar quadrature 0.4225317396, framework Perron solve 0.4225317396 (pairwise diffs 1.476e-10) — while L=2 pure-Python Wilson MC gives ... (The bare code `H1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: Three independent methods agree on the SU(3) single-plaquette block at beta = 6 to ten digits — Drouffe-Itzykson Bessel determinant 0.4225317397, Haar quadrature 0.4225317396, framework Perron solve 0.4225317396 (pairwise diffs 1.476e-10) — while L=2 pure-Python Wilson MC gives ... (Historic code `H1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ Three independent methods (Drouffe-Itzykson, Haar, framework Perron) agree to te
 - git blob: `fbc3876131bcc6c2ef37f45b95a117415491308e`
 - sha256: `acc88f4f0b09ba751f667ec7c0f6b41dde4d559ae4916d742ec693907165fa9b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/692_HIERARCHY_H1_ROUTE_1B_MC_AND_DROUFFE_ITZYKSON_NOTE_2026-05-03.md](../../archive_unlanded/historic_intake_originals/branch03/692_HIERARCHY_H1_ROUTE_1B_MC_AND_DROUFFE_ITZYKSON_NOTE_2026-05-03.md)
-- Lines: 184; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_wilson_mc_kernel(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_drouffe_itzykson_check(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_pade_resum(.py)`
+- Lines: 184; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_wilson_mc_kernel​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_drouffe_itzykson_check​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_pade_resum​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/HIERARCHY_H1_ROUTE_1B_HAAR_KERNEL_NOTE_2026-05-03.md` — Route-1A grading (months-grade).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Pade analyzer explicitly unstable on the finite-volume data; L=2 MC coefficients dominated by finite-volume contamination.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Pade analyzer explicitly unstable on the finite-volume data; L=2 MC coefficients dominated by finite-volume contamination.
+- Supersession (as known at extraction): Iteration 2 successor to HIERARCHY_H1_ROUTE_1B_HAAR_KERNEL_NOTE_2026-05-03 (iteration 1); quantifies the +50% onset-jet residual flagged in GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.
 
 ## Audit fields
 

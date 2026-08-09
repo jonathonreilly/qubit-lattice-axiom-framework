@@ -1,6 +1,6 @@
-# Historic intake: Hierarchy DELTA0 B4 Free-Energy / ln-Z Readout Probe (A3 - the Third Attachment Family)
+# Historic intake: Hierarchy DELTA0 Free-Energy / ln-Z Readout Probe (A3 - the Third Attachment Family)
 
-Explicit subject: The per-taste free energy avoids both prior kills - its value chain [1/(4 pi), degree 0] x [u_0^(-2), degree -2] = alpha_s is exact to < 1e-12 at degree -2 exactly, and the 1/(4 pi) is located precisely in the m^2-derivative I_t = df_t/d(m^2) (Richardson at L = 192/384, two ... (The bare code `B4` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: The per-taste free energy avoids both prior kills - its value chain [1/(4 pi), degree 0] x [u_0^(-2), degree -2] = alpha_s is exact to < 1e-12 at degree -2 exactly, and the 1/(4 pi) is located precisely in the m^2-derivative I_t = df_t/d(m^2) (Richardson at L = 192/384, two ... (Historic code `B4`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ The free-energy readout reclassification: value chain exact to 1e-12 with the 1/
 - git blob: `0c6d94e752e6069eb5710498b9126488e7ba8d47`
 - sha256: `28311fbf34890c3a7dd7f6364fbc4130fb3c467711b577ea0e65f5b7a1b8262d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/683_HIERARCHY_DELTA0_B4_FREE_ENERGY_LNZ_READOUT_PROBE_NOTE_2026-06-13.md](../../archive_unlanded/historic_intake_originals/branch02/683_HIERARCHY_DELTA0_B4_FREE_ENERGY_LNZ_READOUT_PROBE_NOTE_2026-06-13.md)
-- Lines: 476; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_free_energy_lnz_readout_probe_2026_06_13(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_njl_rpa_normalization_probe_2026_06_13(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_s1prime_taste_region_kernel_share_probe_2026_06_11(.py)`
+- Lines: 476; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_free_energy_lnz_readout_probe_2026_06_13​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_b4_njl_rpa_normalization_probe_2026_06_13​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_delta0_s1prime_taste_region_kernel_share_probe_2026_06_11​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Source-side label pending audit; the note enumerates six things it does NOT claim, including that it is not a kill and not a discovery about the per-taste 1/(4 pi).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Source-side label pending audit; the note enumerates six things it does NOT claim, including that it is not a kill and not a discovery about the per-taste 1/(4 pi).
+- Supersession (as known at extraction): The third and last of the B4 attachment families, consumed as leg 4 by the capstone portfolio (idx 681); explicitly notes the central degree-versus-magnitude tension is NOT a theorem but the conjunction of two family-specific facts.
 
 ## Audit fields
 

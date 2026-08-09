@@ -35,15 +35,19 @@ Conditional-exact w = -1 prediction from S^3 topology (lambda_1 = 3/R^2) — wit
 - git blob: `2692cc0c1f62da42c3fa387482a3c8c77e387817`
 - sha256: `1346e60779721965b9f1cd7737d2ec72bd1cda7d838d8e2d72d720c9b02fbfd9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2136_W_MINUS_ONE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2136_W_MINUS_ONE_NOTE.md)
-- Lines: 99; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_w_minus_one(.py)`
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_w_minus_one​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Concedes that the observed Lambda ~ 1e-122 is 'a coincidence of scale, not a prediction of the framework in its current form'.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Concedes that the observed Lambda ~ 1e-122 is 'a coincidence of scale, not a prediction of the framework in its current form'.
+- Supersession (as known at extraction): Downstream consequence of the S^3 topology lane assessed at idx 2090; does not upgrade that lane.
 
 ## Audit fields
 

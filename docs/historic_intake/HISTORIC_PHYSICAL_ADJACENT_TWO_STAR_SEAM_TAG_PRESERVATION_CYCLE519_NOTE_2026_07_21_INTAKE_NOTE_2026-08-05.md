@@ -36,15 +36,19 @@ TERMINAL positive repair of the Cycle-518 Gram defect: appending one M2 carrying
 - sha256: `7f12c494376271906912f15ef2d0f88308dab37ece9a01af50d06dfc9d9a5995`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2773_PHYSICAL_ADJACENT_TWO_STAR_SEAM_TAG_PRESERVATION_CYCLE519_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/2773_PHYSICAL_ADJACENT_TWO_STAR_SEAM_TAG_PRESERVATION_CYCLE519_NOTE_2026-07-21.md)
 - Lines: 420; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_COMPRESSED_GRAM_CYCLE518_NOTE_2026-07-21.md` — Resolves Cycle 517's 245,518,336-branch injectivity question without materializing the branch set; narrow negative on the native encoding.
 - `docs/work_history/repo/review_feedback/PHYSICAL_ADJACENT_TWO_STAR_ORDER_CHARACTER_PREFLIGHT_CYCLE517_NOTE_2026-07-21.md` — The exact static object: twelve physical M2 cells, six logical modes, N = 0,1,2, minimal 19,~-word inventory.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The runner reads logical occupations to update the tag and does not derive that read as a physical gate — the tag mechanism is supplied, so the 'physical' repair is partly host-side.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The runner reads logical occupations to update the tag and does not derive that read as a physical gate — the tag mechanism is supplied, so the 'physical' repair is partly host-side.
+- Supersession (as known at extraction): TERMINAL of the Cycle 517 (2772) -> 518 (2771) -> 519 (2773) chain: 517 posed the injectivity question, 518 found 24 doubletons, 519 splits all 24.
 
 ## Audit fields
 

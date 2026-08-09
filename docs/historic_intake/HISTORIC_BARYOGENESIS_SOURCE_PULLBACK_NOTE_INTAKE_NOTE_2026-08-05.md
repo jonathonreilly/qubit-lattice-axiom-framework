@@ -35,15 +35,19 @@ Source-side identification: S_src[chi] = W[J_chi] is the pullback of the already
 - git blob: `caa4031acf56fabfc6e5733f6e59dfe378a6acd2`
 - sha256: `e4b38d3ec1d4eb31fc612165e0c61b43984a93921a7f3fc8cc7c07d06dcf99f4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/99_BARYOGENESIS_SOURCE_PULLBACK_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/99_BARYOGENESIS_SOURCE_PULLBACK_NOTE.md)
-- Lines: 187; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_source_pullback(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_source_pullback(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_source_pullback(.py)`
+- Lines: 187; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_source_pullback​.py`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_source_pullback​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_source_pullback​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

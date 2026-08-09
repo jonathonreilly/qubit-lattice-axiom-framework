@@ -35,15 +35,19 @@ The pinned lepton shape reproduces mass ratios to 7e-5 — WITH the honest flag 
 - git blob: `4cd1ac1b1b61972f4f0527370cbb6451d72d96de`
 - sha256: `a6afdfbd82ea560b86bfbb1978b9093b0eaab06490f95d0318e9169d3d7efaa4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1104_LEPTON_MASSES_FROM_PINNED_SHAPE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch04/1104_LEPTON_MASSES_FROM_PINNED_SHAPE_2026-06-05.md)
-- Lines: 221; runners named: historic runner (unpinned, not in this packet): `scripts/cl3_lepton_masses_from_pinned_shape_2026_06_05(.py)`
+- Lines: 221; runners named: historic runner (unpinned, not in this packet): `scripts/cl3_lepton_masses_from_pinned_shape_2026_06_05​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Honestly reports that theta=2/9 is NOT the best-fit Brannen phase: theta_fit = 0.22222963 rad, residual +7.4e-6 rad (3.3e-5 relative), and Q_PDG - 2/3 = -6.2e-6 — both small but nonzero.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Honestly reports that theta=2/9 is NOT the best-fit Brannen phase: theta_fit = 0.22222963 rad, residual +7.4e-6 rad (3.3e-5 relative), and Q_PDG - 2/3 = -6.2e-6 — both small but nonzero.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

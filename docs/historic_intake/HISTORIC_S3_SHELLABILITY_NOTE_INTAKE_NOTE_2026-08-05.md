@@ -35,7 +35,8 @@ The constructive TERMINAL: deterministic two-phase shelling verified R=2..5 — 
 - git blob: `7b2330cb6239f9fb64f0a60cf538cf6e4e4e63a5`
 - sha256: `e501dcf834eca62171b288bc952987b4fd3ce525bf6a8d53f2f7d69ba2176901`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1874_S3_SHELLABILITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1874_S3_SHELLABILITY_NOTE.md)
-- Lines: 86; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_shellability(.py)`
+- Lines: 86; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_shellability​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -60,9 +61,12 @@ The constructive TERMINAL: deterministic two-phase shelling verified R=2..5 — 
 - `docs/S3_THEOREM_APPLICATION_NOTE.md` — S^3 contest member; the STRUCTURAL/CLOSED declarations ride the terminal WITH their flags (1848's wrong headline, 1861/1876/1895's upgrades vs 1894's block, 1872's single-run CLOSED).
 - `docs/S3_TOPOLOGY_DERIVATION_NOTE.md` — S^3 contest member; the STRUCTURAL/CLOSED declarations ride the terminal WITH their flags (1848's wrong headline, 1861/1876/1895's upgrades vs 1894's block, 1872's single-run CLOSED).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-General-R claim rests on a structural argument, not machine verification beyond R=5.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: General-R claim rests on a structural argument, not machine verification beyond R=5.
+- Supersession (as known at extraction): Supersedes the collapse-based route (idx 1872, 1871) and the R=2-only Pachner route (idx 1868); FAMILY TERMINAL for the S^3 identification chain.
 
 ## Audit fields
 

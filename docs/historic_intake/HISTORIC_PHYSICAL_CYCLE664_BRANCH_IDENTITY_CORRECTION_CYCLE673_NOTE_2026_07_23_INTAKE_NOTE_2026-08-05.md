@@ -36,14 +36,18 @@ CORRECTION that WITHDRAWS part of Cycle 664: only ONE of four selected roots agr
 - sha256: `5932990d3cd7efb840253ee93f61765c5a514388b7d8aba6dddfe979091deaee`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2832_PHYSICAL_CYCLE664_BRANCH_IDENTITY_CORRECTION_CYCLE673_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/2832_PHYSICAL_CYCLE664_BRANCH_IDENTITY_CORRECTION_CYCLE673_NOTE_2026-07-23.md)
 - Lines: 100; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_HELD_A2_SECOND_LINE_VERIFICATION_CYCLE664_NOTE_2026-07-23.md` — The positive Birman-Schwinger zero table (four theta_2 values 0.278-0.300 across fixtures) THREE of whose four rows are later withdrawn by the attached correction; the wide scatter was itself flagged in-note.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Three of four previously reported identifications were wrong — a 75% error rate in the superseded selection rule; the note is candid but this is the clearest methodological failure recorded in the sweep.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Three of four previously reported identifications were wrong — a 75% error rate in the superseded selection rule; the note is candid but this is the clearest methodological failure recorded in the sweep.
+- Supersession (as known at extraction): CORRECTS Cycle 664 and, transitively, the global-minimum identity rule inherited from Cycle 629. C_ref is marked 'corrected — branch tracking is required; global-minimum identity is withdrawn'. The immediate preparation campaign is redirected to the branch-tracked eigenvectors near +0.31368 / +0.3580.
 
 ## Audit fields
 

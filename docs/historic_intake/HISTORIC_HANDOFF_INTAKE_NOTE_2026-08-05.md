@@ -35,7 +35,8 @@ Lane 4 neutrino cycle-1 verdict: current-stack mu_current=0 verified, the diagon
 - git blob: `1cdb0950ea113258ff478d25c23cd3a3e506a366`
 - sha256: `2538a995fd89e800be2b0576afaa4f38b672916523621e9b57f1c20a82d6bd14`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10088_HANDOFF.md](../../archive_unlanded/historic_intake_originals/packsci01/10088_HANDOFF.md)
-- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_current_stack_zero_law(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_mass_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_retained_observable_bounds(.py)`; historic runner (unpinned, not in this packet): `docs/audit/scripts/run_pipeline.sh`; historic runner (unpinned, not in this packet): `docs/audit/scripts/audit_lint(.py)`
+- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_current_stack_zero_law​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_mass_derived​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_retained_observable_bounds​.py`; historic runner (unpinned, not in this packet): `docs/audit/scripts/run_pipeline.sh`; historic runner (unpinned, not in this packet): `docs/audit/scripts/audit_lint​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ Lane 4 neutrino cycle-1 verdict: current-stack mu_current=0 verified, the diagon
 - `.claude/science/frontier-workstreams/lane4-neutrino-cascade-20260427/REVIEW_HISTORY.md` — Cycle-1 seven-stance review record; review-loop was EMULATED locally, not the owner lane - provenance flag for audit.
 - `.claude/science/frontier-workstreams/lane4-neutrino-cascade-20260427/ROUTE_PORTFOLIO.md` — Six routes scored; the Dirac/seesaw fork guardrail selected.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-An authority runner was found to be checking for a literal string rather than the semantic condition - a fragile-gate defect of the kind that can produce false PASSes elsewhere.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: An authority runner was found to be checking for a literal string rather than the semantic condition - a fragile-gate defect of the kind that can produce false PASSes elsewhere.
+- Supersession (as known at extraction): Records that an authority runner was REPAIRED because upstream main changed under it - the runner had been keying on the mere presence of the word 'Pfaffian' rather than on the non-realization boundary.
 
 ## Audit fields
 

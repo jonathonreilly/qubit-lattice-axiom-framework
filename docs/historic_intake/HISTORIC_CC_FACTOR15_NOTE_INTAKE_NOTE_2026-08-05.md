@@ -35,15 +35,19 @@ The CC era terminal: the factor-15 closed by self-consistency forcing C=3 unique
 - git blob: `6b86d765ae8ecf5b80e22d602eab870d828f20ff`
 - sha256: `958a2e0707c054df22de3c40a0697915cadab18108844f31ed792146b1a73fdc`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/136_CC_FACTOR15_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/136_CC_FACTOR15_NOTE.md)
-- Lines: 155; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15(.py)`
+- Lines: 155; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CC_VALUE_NOTE.md` — The spectral-gap identification (R^2=0.999); numerical part superseded.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Two observational inputs remain; the S^3 identification is admitted to be undirected by the axioms.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Two observational inputs remain; the S^3 identification is admitted to be undirected by the axioms.
+- Supersession (as known at extraction): Supersedes the earlier direct lattice computation giving Lambda_pred/Lambda_obs = 19.0 (periodic) or 14.2 (Dirichlet).
 
 ## Audit fields
 

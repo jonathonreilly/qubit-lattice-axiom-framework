@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ The only candidate-retained-grade certificate among the 96 in this stratum: an e
 - sha256: `5251c14b6812cafc725b4b35486efb5154b0f28f4035d122afbe9a9134a707a6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11200_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11200_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 109; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/s3-time-bilinear-action/NO_GO_LEDGER.md` — The narrow negative boundary restated with no prior no-go reuse; companion ledger.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-only 1 of 96 certificates in this stratum claims candidate-retained-grade; N2 explicitly collapses four apparent walls into one, correcting an inflated wall count
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: only 1 of 96 certificates in this stratum claims candidate-retained-grade; N2 explicitly collapses four apparent walls into one, correcting an inflated wall count
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

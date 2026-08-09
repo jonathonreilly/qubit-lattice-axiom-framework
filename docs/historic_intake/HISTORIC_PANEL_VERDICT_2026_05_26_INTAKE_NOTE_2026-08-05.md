@@ -36,6 +36,7 @@ Genuine structural positive from the 10-panelist review: 2/9 (d=3) and 5/36 (d=6
 - sha256: `baf10ff32d353381bd846a3fdcdc1c3122946b2db293012afc223200196298a2`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11539_PANEL_VERDICT_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11539_PANEL_VERDICT_2026-05-26.md)
 - Lines: 163; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ Genuine structural positive from the 10-panelist review: 2/9 (d=3) and 5/36 (d=6
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/G_SYNTHESIS_2026-05-26.md` — The N=3 selection-principle claim whose own G'' admission concedes the phase stays open - undercutting the lane's closure language.
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/SELECTION_PRINCIPLE_2026-05-26.md` — Conditional theorem with rigorous Lemmas A/B/C (u_N unique C_N-invariant distribution; V(u_N)=(N-1)/N^2; Perron-Frobenius attractor), conditional on admission G; FLAG: the application line 'V(3)=2/9 => predic~' overstates.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-reverses HONEST_FINAL_STATE's pun diagnosis via panel convergence, not new derivation; the 2pi/9 vs 2/9 distinction it flags is exactly where the convention smuggling lives
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: reverses HONEST_FINAL_STATE's pun diagnosis via panel convergence, not new derivation; the 2pi/9 vs 2/9 distinction it flags is exactly where the convention smuggling lives
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

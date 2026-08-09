@@ -36,15 +36,19 @@ Campaign handoff terminal for the whole autopilot sweep: states the goal (join o
 - sha256: `9afc16a871fd72da77fd0c943e5f096d0392b2ad6d05b3164de7596693121b5a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3072_TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18_CYCLE411.md](../../archive_unlanded/historic_intake_originals/branch09/3072_TOE_FRAMEWORK_CAMPAIGN_HANDOFF_2026-07-18_CYCLE411.md)
 - Lines: 596; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_MENU_GRADE_AND_SOURCE_RESPONSE_LAW_SYNTHESIS_CYCLE389_NOTE_2026-07-18.md` — Mid-sweep synthesis (Cycles 381-388): bounded physical menu realizability established; the law-selection question left explicitly open.
 - `docs/work_history/repo/review_feedback/PHYSICAL_NUMERICAL_ACTUALIZATION_BRIDGE_SYNTHESIS_CYCLE405_NOTE_2026-07-18.md` — Mid-sweep synthesis (Cycles 401-404) with all four children COLD-EXECUTED rather than accepted by summary; the causal-depth change 4 -> 5 recorded.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The governing handoff for the entire July cycle sweep — the document that sets the 'compile, do not claim' discipline visible in all 318 cycle notes; its Cycle 330 eight-of-5040 sampling wall is removed by Cycle 515 (idx 2829).
 
 ## Audit fields
 

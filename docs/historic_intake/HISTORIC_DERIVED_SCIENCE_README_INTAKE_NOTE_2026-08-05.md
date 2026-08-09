@@ -35,15 +35,19 @@ The DERIVED_SCIENCE_BAR: the era's own declaration of its hostile-reviewer-proof
 - git blob: `797f947e1cfc4714806b3413026ad3619c615acd`
 - sha256: `d01e8da3ec715028aea8f2bbeb91ea3c1d6b202f7b869d028c712e083112815b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/304_DERIVED_SCIENCE_README.md](../../archive_unlanded/historic_intake_originals/branch01/304_DERIVED_SCIENCE_README.md)
-- Lines: 91; runners named: historic runner (unpinned, not in this packet): `frontier_KR_A1_vanishing_proof(.py)`; historic runner (unpinned, not in this packet): `frontier_graph_first_selector_derivation(.py)`; historic runner (unpinned, not in this packet): `frontier_plaquette_single_exact(.py)`; historic runner (unpinned, not in this packet): `frontier_projector_algebra(.py)`; historic runner (unpinned, not in this packet): `frontier_vertex_power(.py)`
+- Lines: 91; runners named: historic runner (unpinned, not in this packet): `frontier_KR_A1_vanishing_proof​.py`; historic runner (unpinned, not in this packet): `frontier_graph_first_selector_derivation​.py`; historic runner (unpinned, not in this packet): `frontier_plaquette_single_exact​.py`; historic runner (unpinned, not in this packet): `frontier_projector_algebra​.py`; historic runner (unpinned, not in this packet): `frontier_vertex_power​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly disqualifies the framework's most-cited numerical predictions from the airtight tier.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly disqualifies the framework's most-cited numerical predictions from the airtight tier.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

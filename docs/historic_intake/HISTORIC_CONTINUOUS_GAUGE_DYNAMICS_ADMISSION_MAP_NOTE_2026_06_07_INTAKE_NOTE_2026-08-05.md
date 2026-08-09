@@ -36,14 +36,18 @@ The continuous-gauge-dynamics wall decomposed into derived form-class + classifi
 - sha256: `565bde000fc67f6d09940f04a1c8caef8ffc5f4b7fa471f17881ffea8031d3c6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/260_CONTINUOUS_GAUGE_DYNAMICS_ADMISSION_MAP_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch01/260_CONTINUOUS_GAUGE_DYNAMICS_ADMISSION_MAP_NOTE_2026-06-07.md)
 - Lines: 70; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The map's own caveats state the supporting stack is unaudited and two load-bearing bridges are underived.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The map's own caveats state the supporting stack is unaudited and two load-bearing bridges are underived.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

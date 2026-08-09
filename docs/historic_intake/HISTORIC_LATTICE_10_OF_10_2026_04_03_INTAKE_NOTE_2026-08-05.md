@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,6 +38,7 @@ Era-correction set for the earliest write-ups, pulled as one record: the '10/10 
 - sha256: `0f992f1e49c5aa3c17e776445b8ac9302f20e53fc54c816b9b06016a7a995ba9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11545_lattice-10-of-10-2026-04-03.md](../../archive_unlanded/historic_intake_originals/packsci05/11545_lattice-10-of-10-2026-04-03.md)
 - Lines: 116; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +47,12 @@ Era-correction set for the earliest write-ups, pulled as one record: the '10/10 
 - `.claude/science/write-ups/complete-program-2026-04-03.md` — Eight-result program write-up (gravity 5.1/6.2 SE; decoherence ceiling ~ N^(-1.5/d)); FLAG: the 4D gravity champion needs 5x hand-scaled field strength.
 - `.claude/science/write-ups/moonshot-five-frontiers-2026-04-09.md` — Five-frontiers session note incl. the action uniqueness theorem S_edge = L - tau^2/(2L) (unique Lorentz-covariant [action] on the stated class); distance-law numerics incomplete.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-the headline unification number survived into the claim record despite a wrong-sign gravity row — cleanest early example of overcounting in the corpus
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: the headline unification number survived into the claim record despite a wrong-sign gravity row — cleanest early example of overcounting in the corpus
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

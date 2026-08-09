@@ -35,15 +35,19 @@ Boundary-law terminal: gravity suppression is a 1/side finite-size effect (RMS<2
 - git blob: `fbac0a084a582f4c313b67a315e359a9eb82d18b`
 - sha256: `e34884459515369a1bb107ce6fa32ad28b87f7c73fd251a0d373d7db2eb00a9b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/117_BOUNDARY_LAW_FINITE_SIZE_ASYMPTOTE_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch01/117_BOUNDARY_LAW_FINITE_SIZE_ASYMPTOTE_NOTE_2026-04-24.md)
-- Lines: 177; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_coefficient_stability(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_finite_size_asymptote(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_robustness(.py)`
+- Lines: 177; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_coefficient_stability​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_finite_size_asymptote​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_boundary_law_robustness​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/BOUNDARY_LAW_COEFFICIENT_STABILITY_NOTE_2026-04-24.md` — Seed-stability + the universality falsification; sharpened same-date.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Two of five checks fail as genuine falsifications of the note's own stronger hypotheses.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Two of five checks fail as genuine falsifications of the note's own stronger hypotheses.
+- Supersession (as known at extraction): Sharpens the coefficient-stability note of the same date.
 
 ## Audit fields
 

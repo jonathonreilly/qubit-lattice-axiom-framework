@@ -35,7 +35,8 @@ TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the 
 - git blob: `d554a4ab17bf9265619719e5d8a166e54688bd32`
 - sha256: `1618860b2602abc321f91952cdfe6de18e6b7b74288646293fca7718143c43c7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2748_README.md](../../archive_unlanded/historic_intake_originals/branch09/2748_README.md)
-- Lines: 76; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_dirac_descent_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_residual_closures(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_physical_bridge_investigation(.py)`
+- Lines: 76; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_dirac_descent_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_residual_closures​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_physical_bridge_investigation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,13 +46,16 @@ TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the 
 - `docs/publication/brannen_lane2_closure/REPRODUCTION.md` — Reproduction receipt: 49/49 PASS commands and key values; the 2/9 recurrence is a 32-o~ machine check; platform-tolerance advisory noted.
 - `docs/publication/brannen_lane2_closure/RESIDUAL_CLOSURES.md` — The gap-closure note: m_* made 'axiom-native' by the structural equation alpha(m_0)-alpha(m_*) = 2/9 - the circularity the terminal's flag names lives here.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10161](HISTORIC_CLAIM_STATUS_CERTIFICATE_B10161_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle13-cluster-obstruction/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
+- Attaches across strata to idx 10161 (`.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle13-cluster-obstruction/CLAIM_STATUS_CERTIFICATE.md`, stratum packsci01) — TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O|, |O| = 24, 49/49 PASS. PULLED WITH ITS FLAGS: the header claims ALL RESIDUALS CLOSED while m_* is defined BY the predicted 2/9 (circular - the flag is part of the record), and C10 is only Candidate closure. The full package (claims index, adversarial self-review naming the m_* selection as the weak point, discovery-order reconstruction showing numerics-first, repro receipt, gap-closure note carrying the circularity) attached. This is instance four of the lattice-to-physical matching obstruction (cross-linked).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Header 'ALL RESIDUALS CLOSED' with green checkmarks while the m_* residual is closed by defining m_* via the very quantity being predicted; 49/49 PASS counts self-authored assertions, not independent checks; the Wilson-Dirac plateau holds at only 11% of scanned regulator values.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Header 'ALL RESIDUALS CLOSED' with green checkmarks while the m_* residual is closed by defining m_* via the very quantity being predicted; 49/49 PASS counts self-authored assertions, not independent checks; the Wilson-Dirac plateau holds at only 11% of scanned regulator values.
+- Supersession (as known at extraction): TERMINAL for the BRANNEN_LANE2_CLOSURE family (2745-2750). Downstream: the r=1/2 / Koide occupancy record was WITHDRAWN 2026-07-11 and the channel abolished, so this package's consumer surface is gone.
 
 ## Audit fields
 
@@ -61,6 +65,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_positive_theorem
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_CLAIM_STATUS_CERTIFICATE_B10161_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

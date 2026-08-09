@@ -35,16 +35,20 @@ The two-body attraction TERMINAL: the near-inverse-square law is a transient-win
 - git blob: `764f84eb45c9d9983b96ddafbee670a397b7ffe6`
 - sha256: `f0a21805bf46fce846fb4640c16b5238a849567a30c5f5098e4a74375400976d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2085_TWO_BODY_ATTRACTION_TEMPORAL_ROBUSTNESS_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch07/2085_TWO_BODY_ATTRACTION_TEMPORAL_ROBUSTNESS_NOTE_2026-04-11.md)
-- Lines: 112; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_two_body_attraction_temporal_robustness(.py)`
+- Lines: 112; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_two_body_attraction_temporal_robustness​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/TWO_BODY_ATTRACTION_RETAINED_NOTE_2026-04-11.md` — The retained mutual-attraction result.
 - `docs/TWO_BODY_ATTRACTION_ROBUSTNESS_NOTE_2026-04-11.md` — 45-config robustness.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL for the TWO_BODY_ATTRACTION family's scope question: it freezes the temporal boundary of the lane established at idx 2083-2084.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The geodesic chain with audited per-step provenance — Christoffels from the pa
 - git blob: `0ba0e53e73658e6d2161a42ab84581b366155e79`
 - sha256: `e971d12abf132bf073344dd02219f5677eb5cca44bb4c1589461e950951af7b8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/636_GEODESIC_CLEAN_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/636_GEODESIC_CLEAN_DERIVATION_NOTE.md)
-- Lines: 414; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation(.py)`
+- Lines: 414; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/GEODESIC_EQUATION_NOTE.md` — The measurement predecessor.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A continuum-limit-conditional BOUNDED step sits in the middle of a chain whose sibling universality note (idx 632) argues the framework has no continuum limit at all.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A continuum-limit-conditional BOUNDED step sits in the middle of a chain whose sibling universality note (idx 632) argues the framework has no continuum limit at all.
+- Supersession (as known at extraction): The audited-provenance successor to the earlier results note (idx 637) - same runner, but every step labelled by derivation status.
 
 ## Audit fields
 

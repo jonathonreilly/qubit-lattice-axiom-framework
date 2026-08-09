@@ -36,14 +36,18 @@ Novelty deflation: SU(3)-from-Clifford is well-trodden (Trayling-Baylis, Stoica)
 - sha256: `fa74162d4ba5c115430ef886573745aebbde3114281a83d7a04aa7fc0cedb28d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1217_NOVELTY_LITERATURE_SEARCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1217_NOVELTY_LITERATURE_SEARCH_NOTE.md)
 - Lines: 304; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/NON_ABELIAN_GAUGE_NOTE.md` — U(1)+SU(2) native, SU(3) NOT obtained — tension with later closures noted.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly deflates the novelty of a headline framework claim by citing five prior derivations of the same structure.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly deflates the novelty of a headline framework claim by citing five prior derivations of the same structure.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

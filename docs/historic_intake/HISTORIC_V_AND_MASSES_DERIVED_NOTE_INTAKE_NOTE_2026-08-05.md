@@ -35,15 +35,19 @@ The April V_* head claim ('every import closed') WITH its title flag — the era
 - git blob: `ef1b425e6f3111c766d6fb6744b97f5fb5a88e4c`
 - sha256: `e0c8f2f3003fd23905106ae0307ce7c77171913ff9687ab25f66f3c11314cdd6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2101_V_AND_MASSES_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2101_V_AND_MASSES_DERIVED_NOTE.md)
-- Lines: 139; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_v_and_masses_derived(.py)`
+- Lines: 139; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_v_and_masses_derived​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Title says masses are 'Derived' while the note's own grades put v at D (five orders high) and the b/c mass ratios at 'right order' only; the alpha_s(M_Z) row appears twice with conflicting values (0.1182 Grade A vs 0.095 via derived thresholds, 20% off).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Title says masses are 'Derived' while the note's own grades put v at D (five orders high) and the b/c mass ratios at 'right order' only; the alpha_s(M_Z) row appears twice with conflicting values (0.1182 Grade A vs 0.095 via derived thresholds, 20% off).
+- Supersession (as known at extraction): Head of the April V_* cluster (2101-2106); its N_taste = 16 choice is explicitly corrected by the N_eff note at idx 2104 ('the old N_eff = 16 was wrong').
 
 ## Audit fields
 

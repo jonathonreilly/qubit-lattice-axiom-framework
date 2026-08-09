@@ -35,15 +35,19 @@ Cross-sector identity A^2 = Q_l = 2/3 binding quark and lepton sectors with a fa
 - git blob: `fdb4601d5bb2e4f62036dc2168485522d494bec2`
 - sha256: `fc3635a23bd46d16edab5823434d1e7a282aa76817d6f090e59d9afe3a282380`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/270_CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/270_CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_THEOREM_NOTE_2026-04-25.md)
-- Lines: 313; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cross_sector_a_squared_koide_vcb_bridge(.py)`
+- Lines: 313; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cross_sector_a_squared_koide_vcb_bridge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The bridge rests on two different derivations happening to evaluate to 2/3; the note names this as 'a previously-unnamed cross-sector identity' rather than deriving the identification.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The bridge rests on two different derivations happening to evaluate to 2/3; the note names this as 'a previously-unnamed cross-sector identity' rather than deriving the identification.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

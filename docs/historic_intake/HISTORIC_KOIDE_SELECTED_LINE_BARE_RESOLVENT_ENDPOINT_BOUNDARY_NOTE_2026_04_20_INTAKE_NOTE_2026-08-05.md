@@ -35,16 +35,20 @@ Selected-line kill: a bare local resolvent family can imitate the packet numeric
 - git blob: `e4a749230b028bf929e2f3b56bb1d6ebe94e0fd8`
 - sha256: `8ac398b11d963e3d19ed3a75689fbfbbc92d55b789e240b6bc0916ca411fa232`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1082_KOIDE_SELECTED_LINE_BARE_RESOLVENT_ENDPOINT_BOUNDARY_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch04/1082_KOIDE_SELECTED_LINE_BARE_RESOLVENT_ENDPOINT_BOUNDARY_NOTE_2026-04-20.md)
-- Lines: 191; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_line_bare_resolvent_endpoint_boundary_2026_04_20(.py)`
+- Lines: 191; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_line_bare_resolvent_endpoint_boundary_2026_04_20​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_SELECTED_LINE_BRANNEN_PHASE_ORBIT_BRIDGE_NOTE_2026-04-21.md` — Endpoint phase = Brannen phase up to bookkeeping.
 - `docs/KOIDE_SELECTED_LINE_CYCLIC_PHASE_TARGET_NOTE_2026-04-20.md` — Cone-locus identity.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Sharpens the one-clock endpoint-target theorem by eliminating its smallest candidate family; feeds the cyclic-phase-target reframing at idx_pos 1084.
 
 ## Audit fields
 

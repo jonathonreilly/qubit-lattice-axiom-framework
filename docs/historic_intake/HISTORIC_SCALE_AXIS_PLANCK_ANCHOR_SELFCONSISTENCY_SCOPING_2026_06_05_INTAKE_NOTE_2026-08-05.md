@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ Buckingham-Pi no-go: the dimensionless core cannot emit a second independent dim
 - sha256: `44649edfa9ad0a9e27023b6f1b39baa9e10562c00f8d2fe8d09194c2ec421811`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1905_SCALE_AXIS_PLANCK_ANCHOR_SELFCONSISTENCY_SCOPING_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/1905_SCALE_AXIS_PLANCK_ANCHOR_SELFCONSISTENCY_SCOPING_2026-06-05.md)
 - Lines: 177; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Confirms that the framework's single dimensionful anchor is imported, which conditions every absolute-scale claim downstream.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Confirms that the framework's single dimensionful anchor is imported, which conditions every absolute-scale claim downstream.
+- Supersession (as known at extraction): Verifies the posture of the scale-reference primitive note rather than changing it.
 
 ## Audit fields
 

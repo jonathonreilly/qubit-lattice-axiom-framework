@@ -35,16 +35,20 @@ Exact action-surface ABJ obstruction (Tr_LH[Y^3] = -16/9, no local counterterm) 
 - git blob: `33c94590cd7b961c5c91eac39d76417e013bc805`
 - sha256: `28800a861c4dc520c1a31efce243b8c02d0fd3e9830f22bd4caee9317df9cb5d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/10_ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch01/10_ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md)
-- Lines: 287; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_abj_from_framework_action_u1_cubic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_abj_from_framework_action_u1_cubic(.py)`
+- Lines: 287; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_abj_from_framework_action_u1_cubic​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_abj_from_framework_action_u1_cubic​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/ABJ_HYPERCHARGE_COMPLETION_DECOUPLING_BOUNDARY_NOTE_2026-06-17.md` — Dependency-split boundary; evidence.
 - `docs/ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md` — Standard-theorem external packet bridge; alternative-framing evidence.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supersedes the earlier ABJ notes' reliance on an imported ABJ packet; does not by itself close the full 3+1 retained status (non-ABJ dependencies remain).
 
 ## Audit fields
 

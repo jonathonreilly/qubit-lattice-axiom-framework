@@ -35,7 +35,8 @@ The DM lane's master accounting: 13-step chain scored 4 EXACT / 7 DERIVED / 2 BO
 - git blob: `b04293c1ed521830d69454b64ca2a9c75802199b`
 - sha256: `f2690544b8e9c10d9b8156d507ae6e3499903f2f27d2dd11e9cbbb5918c4f383`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/343_DM_CONSOLIDATED_STATUS.md](../../archive_unlanded/historic_intake_originals/branch02/343_DM_CONSOLIDATED_STATUS.md)
-- Lines: 900; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_mapping(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_gap_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_mapping_wildcard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_boltzmann_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_direct_boltzmann(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coulomb_from_lattice(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coupled_transport(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_dqt_htl(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_dqt_native(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ewpt_native(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_bbn_from_framework(.py)`
+- Lines: 900; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_mapping​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_synthesis​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_gap_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_relic_mapping_wildcard​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_boltzmann_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_direct_boltzmann​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coulomb_from_lattice​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coupled_transport​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_dqt_htl​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_dqt_native​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ewpt_native​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_bbn_from_framework​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -60,9 +61,12 @@ The DM lane's master accounting: 13-step chain scored 4 EXACT / 7 DERIVED / 2 BO
 - `docs/FREEZEOUT_FROM_LATTICE_NOTE.md` — g_*/x_F structural claims; standard-counting-relabeled flag.
 - `docs/GRAPH_NATIVE_FREEZEOUT_NOTE.md` — Graph-native freeze-out law; two missing identifications named.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Many sub-rows self-flag BOUNDED: v_w (detonation problem), C_tr calibration imported from FHS 2006, a 15% shortfall, transport imported.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Many sub-rows self-flag BOUNDED: v_w (detonation problem), C_tr calibration imported from FHS 2006, a 15% shortfall, transport imported.
+- Supersession (as known at extraction): Self-describes as superseding no individual note but serving as the map to all of them (lane-level index, not terminal).
 
 ## Audit fields
 

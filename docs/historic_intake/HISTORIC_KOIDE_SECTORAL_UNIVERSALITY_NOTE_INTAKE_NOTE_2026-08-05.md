@@ -35,15 +35,19 @@ Self-falsification of Koide universality: Q_u ~ 0.85, Q_d ~ 0.73 — the invaria
 - git blob: `b8f252677c015bb58965c2f6d3f4f2530a0eb632`
 - sha256: `0d906ebf527210f1d4126d333f04b2447f5a2fb8842f4b30530cb2ddbb1a2591`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1079_KOIDE_SECTORAL_UNIVERSALITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1079_KOIDE_SECTORAL_UNIVERSALITY_NOTE.md)
-- Lines: 211; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_sectoral_universality(.py)`
+- Lines: 211; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_sectoral_universality​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-This is a self-falsification of a stated prediction of the charged-lepton Koide-cone derivation; the note carries it as an honest negative rather than repairing it.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: This is a self-falsification of a stated prediction of the charged-lepton Koide-cone derivation; the note carries it as an honest negative rather than repairing it.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

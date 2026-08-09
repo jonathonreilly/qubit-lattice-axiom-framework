@@ -35,15 +35,19 @@ The full derivation-DAG audit: six shared intermediate nodes identified with the
 - git blob: `3b3f1e772918d3e8e65a904dc18eb08fe8255482`
 - sha256: `2a779f3d0b6d1c19a2a0d9548eaadb84b99247e41fcc1a6bdc8011752ab2bfcd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/301_DERIVATION_CHAIN_CONSOLIDATION.md](../../archive_unlanded/historic_intake_originals/branch01/301_DERIVATION_CHAIN_CONSOLIDATION.md)
-- Lines: 565; runners named: historic runner (unpinned, not in this packet): `frontier_renormalized_yt(.py)`; historic runner (unpinned, not in this packet): `frontier_slavnov_taylor_completion(.py)`
+- Lines: 565; runners named: historic runner (unpinned, not in this packet): `frontier_renormalized_yt​.py`; historic runner (unpinned, not in this packet): `frontier_slavnov_taylor_completion​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that the g_bare derivation uses no-continuum-limit as Assumption 3 without citing the five-argument proof it relies on.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that the g_bare derivation uses no-continuum-limit as Assumption 3 without citing the five-argument proof it relies on.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

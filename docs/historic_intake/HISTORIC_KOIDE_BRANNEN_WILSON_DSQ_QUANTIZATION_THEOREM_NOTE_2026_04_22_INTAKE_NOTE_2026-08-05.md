@@ -35,7 +35,8 @@ The rigid-triangle rotation theorem: delta(m) as exact Euclidean rotation angle 
 - git blob: `c1d29c1a0cee72ff55e37a4d86da5b7e761f53c8`
 - sha256: `b49ddfdde6cb1134fb76aea4a8810a3e48b3875216e4e12b3173a309ebf2a283`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/767_KOIDE_BRANNEN_WILSON_DSQ_QUANTIZATION_THEOREM_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch03/767_KOIDE_BRANNEN_WILSON_DSQ_QUANTIZATION_THEOREM_NOTE_2026-04-22.md)
-- Lines: 411; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem(.py)`
+- Lines: 411; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_wilson_dsq_quantization_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The rigid-triangle rotation theorem: delta(m) as exact Euclidean rotation angle 
 - `docs/KOIDE_BRANNEN_DIRAC_DESCENT_THEOREM_NOTE_2026-04-22.md` — Dirac descent exact only at isolated Wilson parameters — flagged.
 - `docs/KOIDE_BRANNEN_PHASE_ENDPOINT_PULLBACK_NOTE_2026-04-21.md` — Endpoint pullback composition.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-labelled retained-CONDITIONAL closure whose load-bearing natural-time identification is the same step other notes in the lane flag as assumed.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-labelled retained-CONDITIONAL closure whose load-bearing natural-time identification is the same step other notes in the lane flag as assumed.
+- Supersession (as known at extraction): Main closure theorem of the Wilson/rigid-triangle cluster, with the Dirac-descent and physical-bridge notes as companions; the 2026-04-24 radian-bridge irreducibility note subsequently reports the bridge as still open across 47 mechanisms.
 
 ## Audit fields
 

@@ -35,7 +35,8 @@ The SU(N) force-vs-gauge separation terminal: Wilson loops nontrivial exactly on
 - git blob: `25c5c64ac231c9c0f26967a4ffde23415d80df0f`
 - sha256: `9f3afbdfd88398d00eba2f9c495d09d94e328873b79b06581d4c3026f86e04b1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1973_STAGGERED_FORCE_GAUGE_NON_ABELIAN_LIFT_THEOREM_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch06/1973_STAGGERED_FORCE_GAUGE_NON_ABELIAN_LIFT_THEOREM_NOTE_2026-04-24.md)
-- Lines: 221; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_staggered_force_gauge_non_abelian_lift_theorem(.py)`
+- Lines: 221; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_staggered_force_gauge_non_abelian_lift_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The SU(N) force-vs-gauge separation terminal: Wilson loops nontrivial exactly on
 - `docs/STAGGERED_FORCE_GAUGE_SEPARATION_THEOREM_NOTE_2026-04-24.md` — Force/gauge arc member.
 - `docs/STAGGERED_GRAPH_OBSERVABLES_BACKREACTION_STRESS_NOTE_2026-04-24.md` — Backreacted source-sector closure; gauge verdict superseded.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): FAMILY TERMINAL for the force-vs-gauge separation arc, succeeding idx 1974 (N+1) and idx 1972 (N+2).
 
 ## Audit fields
 

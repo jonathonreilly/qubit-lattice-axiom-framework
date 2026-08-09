@@ -35,7 +35,8 @@ The irregular-endogenous-sign lane's FINAL HOLD terminal: strongest same-surface
 - git blob: `bc8baac0276751a24d1beb0dabdc7ff3c80c4b3e`
 - sha256: `b719cea7273e51096876dd785e4232c0aa4739a1db69c8cb9624d19b20fb96cb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/734_IRREGULAR_ENDOGENOUS_SIGN_OBSERVABLE_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch03/734_IRREGULAR_ENDOGENOUS_SIGN_OBSERVABLE_NOTE_2026-04-11.md)
-- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_irregular_endogenous_sign_observable(.py)`
+- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_irregular_endogenous_sign_observable​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ The irregular-endogenous-sign lane's FINAL HOLD terminal: strongest same-surface
 - `docs/IRREGULAR_ENDOGENOUS_SIGN_SIZE_PORTABILITY_NOTE_2026-04-11.md` — Portability failure across graph growth.
 - `docs/IRREGULAR_ENDOGENOUS_SIGN_THIRD_FAMILY_NOTE_2026-04-11.md` — Independent annulus packet; hold pressure only.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Self-describes as the lane's last attempt ('final hold') after the shell-packet family and size-portability checks failed; reads as the terminal note of the IRREGULAR_ENDOGENOUS_SIGN chain.
 
 ## Audit fields
 

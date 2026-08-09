@@ -36,14 +36,18 @@ The mu^2 = 0.22 confound work order: ~12 results need rerun at 0.001 — a param
 - sha256: `817d519c07c96c53e05ece9f0c8914218581cb96a71800f4a23071073141ead0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1910_SCREENING_FIX_RECHECK_LIST_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch06/1910_SCREENING_FIX_RECHECK_LIST_2026-04-11.md)
 - Lines: 110; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that a parameter choice invalidated or weakened at least a dozen previously banked results (gravitational memory, decoherence scaling, Hawking-Page crossover, BH entropy exponent).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that a parameter choice invalidated or weakened at least a dozen previously banked results (gravitational memory, decoherence scaling, Hawking-Page crossover, BH entropy exponent).
+- Supersession (as known at extraction): Work order for rerunning prior results; supersedes the mu^2 = 0.22 readings of the listed lanes.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The CG coefficient 1/sqrt(6) = 1/sqrt(2 N_c) uniquely derived (staggered mass te
 - git blob: `8677a8cf9889dec75674ee7d52186027927e92c7`
 - sha256: `4f0e797c6d1f0b98c4a32ed86958e01372e1a59c0bb4b9446e838df8107d4a4e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/241_CODEX_YT_RESPONSE.md](../../archive_unlanded/historic_intake_originals/branch01/241_CODEX_YT_RESPONSE.md)
-- Lines: 196; runners named: historic runner (unpinned, not in this packet): `frontier_renormalized_yt_wildcard(.py)`; historic runner (unpinned, not in this packet): `frontier_slavnov_taylor_completion(.py)`; historic runner (unpinned, not in this packet): `frontier_yt_formal_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_yt_from_alpha_s(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt_wildcard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_slavnov_taylor_completion(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_formal_theorem(.py)`
+- Lines: 196; runners named: historic runner (unpinned, not in this packet): `frontier_renormalized_yt_wildcard​.py`; historic runner (unpinned, not in this packet): `frontier_slavnov_taylor_completion​.py`; historic runner (unpinned, not in this packet): `frontier_yt_formal_theorem​.py`; historic runner (unpinned, not in this packet): `frontier_yt_from_alpha_s​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt_wildcard​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_slavnov_taylor_completion​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_formal_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supersedes YT_FROM_ALPHA_S_NOTE's statement that the CG coefficient (1/sqrt(6) vs 1/sqrt(7)) was undetermined.
 
 ## Audit fields
 

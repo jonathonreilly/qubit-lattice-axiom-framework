@@ -35,15 +35,19 @@ Airtight intertwiner pullback transport (25/25) — a single citable result repl
 - git blob: `41425e51e21b1ef0ca4521bf29488efebd8b5d1a`
 - sha256: `5c2b669a5a907d940738aeea9f13e54113876913b0db3604d32a2b23b88b4a74`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/730_INTERTWINER_PULLBACK_S3_INVARIANTS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/730_INTERTWINER_PULLBACK_S3_INVARIANTS_NOTE.md)
-- Lines: 108; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_intertwiner_pullback_s3_invariants(.py)`
+- Lines: 108; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_intertwiner_pullback_s3_invariants​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Batch 6 of the Grind Program; extends the Batch 1 intertwiner from single operators to full S_3-invariant algebraic structure and transports Batches 3, 4 and 5 wholesale.
 
 ## Audit fields
 

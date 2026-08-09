@@ -35,15 +35,19 @@ The surviving radiative CKM mechanism after the Z_3-charge route's death: democr
 - git blob: `2306c491ae75d613590c715dfe900755fd16e06c`
 - sha256: `4ce3a77c77bad5b7563c3963f707de813e89815295fae0354e5fe5edd19141cd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/217_CKM_RADIATIVE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/217_CKM_RADIATIVE_NOTE.md)
-- Lines: 172; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_vev(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_higgs_from_vev(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_radiative(.py)`
+- Lines: 172; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_vev​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_higgs_from_vev​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_radiative​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supersedes the Higgs Z_3 charge route (proved dead: the Higgs has no definite Z_3 charge) and builds on the tree-level rank-1 result.
 
 ## Audit fields
 

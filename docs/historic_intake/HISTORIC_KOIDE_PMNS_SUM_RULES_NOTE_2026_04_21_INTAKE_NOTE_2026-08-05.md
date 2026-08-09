@@ -35,7 +35,8 @@ The two PMNS sum rules: SR1 theta_13 = 2(theta_23 - pi/4) EXACT and SR2 at leadi
 - git blob: `e36f132e69f7b9ea4e31bc21461774be818a7cac`
 - sha256: `a2c147d54d0248856e42c63eae7cfe8dac68eec02ec7bb43ec77c2ff2a20f086`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/888_KOIDE_PMNS_SUM_RULES_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/888_KOIDE_PMNS_SUM_RULES_NOTE_2026-04-21.md)
-- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_sum_rules(.py)`
+- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_sum_rules​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ The two PMNS sum rules: SR1 theta_13 = 2(theta_23 - pi/4) EXACT and SR2 at leadi
 - `docs/KOIDE_PMNS_NUFIT_CROSS_VALIDATION_NOTE_2026-04-21.md` — NuFit robustness 4/6 releases; caveat stated.
 - `docs/KOIDE_PMNS_ROTATION_AXIS_SYMBOLIC_NOTE_2026-04-21.md` — Complex-multiplication identity; sqrt5/2 'pure numerics' admitted.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The sum rules inherit the conjectural status of iteration 4 — the iteration-24 critique notes their conservation reading is conditional on that conjecture being exact.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The sum rules inherit the conjectural status of iteration 4 — the iteration-24 critique notes their conservation reading is conditional on that conjecture being exact.
+- Supersession (as known at extraction): Unifies the iteration-4 formulas; the resulting SR2 becomes the iteration-19+ derivation target and the iteration-21 'conservation law'.
 
 ## Audit fields
 

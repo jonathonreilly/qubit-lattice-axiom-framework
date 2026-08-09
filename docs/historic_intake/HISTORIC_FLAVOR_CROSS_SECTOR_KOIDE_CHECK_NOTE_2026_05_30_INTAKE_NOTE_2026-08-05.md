@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Cross-sector retraction: quark Q > 2/3 is ABOVE the value VEV-dilution can reach
 - git blob: `53e3aa6d5aa889174eb8f7539c383552bdd7c4ac`
 - sha256: `d94fe3903f0b505a603a7068f601d02235534de21628b641ee720124b4a80419`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/478_FLAVOR_CROSS_SECTOR_KOIDE_CHECK_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/478_FLAVOR_CROSS_SECTOR_KOIDE_CHECK_NOTE_2026-05-30.md)
-- Lines: 49; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_cross_sector_koide_check_2026_05_30(.py)`
+- Lines: 49; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_cross_sector_koide_check_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FLAVOR_LOOP_PRESERVES_BLOCK_COUNT_NOTE_2026-05-30.md` — Contains the retracted lightness cross-sector claim.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents a same-campaign retraction with two named errors (direction and category).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents a same-campaign retraction with two named errors (direction and category).
+- Supersession (as known at extraction): Explicitly retracts a claim in FLAVOR_LOOP_PRESERVES_BLOCK_COUNT_NOTE_2026-05-30 (idx 485).
 
 ## Audit fields
 

@@ -35,7 +35,8 @@ The global PMNS no-go the whole family is organized around: the projected native
 - git blob: `aa6fa7c061ee0312948f60201f576bcac93cd037`
 - sha256: `f78c2ea59a579fc855f0204e64bc183187c922619a7cdcfca7d19e08d8ea903b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1593_PMNS_SINGLE_AXIOM_MICROSCOPIC_NONCLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1593_PMNS_SINGLE_AXIOM_MICROSCOPIC_NONCLOSURE_NOTE.md)
-- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_single_axiom_microscopic_nonclosure(.py)`
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_single_axiom_microscopic_nonclosure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -103,9 +104,12 @@ The global PMNS no-go the whole family is organized around: the projected native
 - `docs/PMNS_UNIFIED_BRIDGE_CARRIER_NOTE.md` — PMNS family member; carried by the global no-go and the family terminals.
 - `docs/PMNS_UNIFIED_BRIDGE_FULL_CLOSURE_CONSEQUENCE_NOTE.md` — PMNS family member; carried by the global no-go and the family terminals.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The global no-go the whole April PMNS family is organized around; its scope is later narrowed by PMNS_DYNAMICAL_REALIZATION_SUBFAMILY (carrier nonclosure is not dynamical nonclosure).
 
 ## Audit fields
 

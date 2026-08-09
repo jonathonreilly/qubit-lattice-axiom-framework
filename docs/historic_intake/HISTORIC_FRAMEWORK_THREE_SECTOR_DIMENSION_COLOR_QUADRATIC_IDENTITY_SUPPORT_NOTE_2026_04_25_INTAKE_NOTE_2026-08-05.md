@@ -35,15 +35,19 @@ The honest three-sector support note: the quadratic d = (N_c^2-3)/2 is a falsifi
 - git blob: `03bb0d0f3a646253b0f9a0f025b21c9352331cdd`
 - sha256: `922780d4e18a9e924fa02290c0141d75f537fe861af21c0b627fbc6e9a8cc158`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/508_FRAMEWORK_THREE_SECTOR_DIMENSION_COLOR_QUADRATIC_IDENTITY_SUPPORT_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch02/508_FRAMEWORK_THREE_SECTOR_DIMENSION_COLOR_QUADRATIC_IDENTITY_SUPPORT_NOTE_2026-04-25.md)
-- Lines: 235; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_framework_three_sector_dimension_color_quadratic_identity(.py)`
+- Lines: 235; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_framework_three_sector_dimension_color_quadratic_identity​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FRAMEWORK_THREE_SECTOR_DIMENSION_COLOR_QUADRATIC_IDENTITY_THEOREM_NOTE_2026-04-25.md` — The overclaimed twin (retained status on conditional inputs).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Both load-bearing inputs are explicitly non-retained (one conditional support, one open target), and the charged-lepton Q_l = 2/3 is the very value the FLAVOR campaign concludes is import-dependent.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Both load-bearing inputs are explicitly non-retained (one conditional support, one open target), and the charged-lepton Q_l = 2/3 is the very value the FLAVOR campaign concludes is import-dependent.
+- Supersession (as known at extraction): The honest support-grade sibling of the theorem-grade note at idx 509; both rest on the same two conditional inputs, one of which (the bare alpha ratio) is later reported to have failed retained status.
 
 ## Audit fields
 

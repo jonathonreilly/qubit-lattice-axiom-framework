@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The conjugation-parity vanishing no-go WITH a firing positive control: the Berry
 - git blob: `170a396a416f8abf3de79f832476d9b0f0f8db98`
 - sha256: `0425c209d5bf6091745dff90f4ff72d730f76e2b1c86609e99029cdb27c218bc`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/839_KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_NARROW_THEOREM_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch03/839_KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_NARROW_THEOREM_NOTE_2026-05-30.md)
-- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30(.py)`
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Includes a positive control proving the null is real signal; corrects prior mis-attributions in the same lane.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Includes a positive control proving the null is real signal; corrects prior mis-attributions in the same lane.
+- Supersession (as known at extraction): Corrects two imprecise mechanism attributions used in working drafts (the +/- i mu pairing follows from real-characteristic-polynomial conjugate closure, not CPT alone; the cancellation is a generation-index transposition similarity, not an APS Hamming-weight chirality).
 
 ## Audit fields
 

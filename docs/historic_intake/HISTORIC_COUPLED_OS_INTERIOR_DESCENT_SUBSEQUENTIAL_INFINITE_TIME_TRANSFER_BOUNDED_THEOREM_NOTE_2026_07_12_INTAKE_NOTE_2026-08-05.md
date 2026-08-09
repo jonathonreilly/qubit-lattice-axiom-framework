@@ -35,15 +35,19 @@ Exact finite-circle null descent + subsequential infinite-time transfer for the 
 - git blob: `78b5f5c870ea592abb5d739de492537b17611027`
 - sha256: `b1e6ef5367ac9cbb1fee3d3970dae6b4c62e0730008da6ef26348e5e2642e4b1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/266_COUPLED_OS_INTERIOR_DESCENT_SUBSEQUENTIAL_INFINITE_TIME_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch01/266_COUPLED_OS_INTERIOR_DESCENT_SUBSEQUENTIAL_INFINITE_TIME_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md)
-- Lines: 450; runners named: historic runner (unpinned, not in this packet): `../scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12(.py)`; historic runner (unpinned, not in this packet): `scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12(.py)`
+- Lines: 450; runners named: historic runner (unpinned, not in this packet): `../scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12​.py`; historic runner (unpinned, not in this packet): `scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Builds on the coupled two-seam reflected-Gram bounded theorem.
 
 ## Audit fields
 

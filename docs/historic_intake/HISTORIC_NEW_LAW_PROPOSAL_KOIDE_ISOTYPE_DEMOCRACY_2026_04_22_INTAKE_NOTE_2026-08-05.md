@@ -36,14 +36,18 @@ Thirteen enumerated mechanism failures for A1 (all give kappa in {0,1,1/3,3}) â€
 - sha256: `53e672868f3dcb71427876f9436014ece44ff94685aed621267084e8478c1265`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1212_NEW_LAW_PROPOSAL_KOIDE_ISOTYPE_DEMOCRACY_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch04/1212_NEW_LAW_PROPOSAL_KOIDE_ISOTYPE_DEMOCRACY_2026-04-22.md)
 - Lines: 137; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Proposes adopting a new physical law as a retained primitive to close a value the framework cannot derive; the note itself frames PDG observation and framework consistency as jointly demanding kappa = 2.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Proposes adopting a new physical law as a retained primitive to close a value the framework cannot derive; the note itself frames PDG observation and framework consistency as jointly demanding kappa = 2.
+- Supersession (as known at extraction): The negative half (13 failures) is the strongest content; the proposed law is unadopted and its adoption would make A1 axiom-native by fiat.
 
 ## Audit fields
 

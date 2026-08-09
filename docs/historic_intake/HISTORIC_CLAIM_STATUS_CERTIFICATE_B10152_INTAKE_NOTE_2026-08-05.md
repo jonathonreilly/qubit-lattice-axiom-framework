@@ -35,7 +35,8 @@ Demotion packet against a headline landed row: docs/ALPHA_S_DIRECT_WILSON_LOOP_D
 - git blob: `1df9805a237a6d2d6ed124ad88d9d252d0412d9a`
 - sha256: `6516045b2bfe9e10ba271332ca56cc033fca86cb275ae32306628f24bb2c18df`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10152_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10152_CLAIM_STATUS_CERTIFICATE.md)
-- Lines: 95; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_direct_wilson_loop_honest_status_audit(.py)`
+- Lines: 95; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_direct_wilson_loop_honest_status_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,13 +44,16 @@ Demotion packet against a headline landed row: docs/ALPHA_S_DIRECT_WILSON_LOOP_D
 - `.claude/science/physics-loops/atomic-runner-artifact-repair-20260612/CLAIM_STATUS_CERTIFICATE.md` — audited_conditional_on_main_until_reaudit bookkeeping for the repaired row; re-audit preparation, not promotion.
 - `.claude/science/physics-loops/audit-backlog-campaign-20260502/cycle10-g-bare-status-correction/CLAIM_STATUS_CERTIFICATE.md` — g_bare parent demotion to 'bounded normalization proposal': the rescaling freedom A -> A/g means g_bare is not separately physical; proposal_allowed false.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Cross-stratum reference from packsci01 [idx 10134](HISTORIC_CLAIM_STATUS_CERTIFICATE_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/alpha-s-narrow-counterfactual-drift-20260611/CLAIM_STATUS_CERTIFICATE.md`, decision PULL) — Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
+- Cross-stratum reference from packsci01 idx 10134 (`.claude/science/physics-loops/alpha-s-narrow-counterfactual-drift-20260611/CLAIM_STATUS_CERTIFICATE.md`, decision PULL) — Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branch repairs the display without promoting the row. Correction against landed content; ABJ-bridge citation-reroute companions attached.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A headline alpha_s derivation carrying 259 transitive descendants was shipped as proposed_retained while depending on two load-bearing literature imports.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A headline alpha_s derivation carrying 259 transitive descendants was shipped as proposed_retained while depending on two load-bearing literature imports.
+- Supersession (as known at extraction): DEMOTES LANDED CONTENT: docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30 from proposed_retained to bounded. Highest-impact correction in this stratum by descendant count.
 
 ## Audit fields
 
@@ -59,6 +63,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_correction
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_CLAIM_STATUS_CERTIFICATE_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

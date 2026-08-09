@@ -35,15 +35,19 @@ Schema-grade theorem: Q = 2/3 iff 3Y^2 = T(T+1) under P1+P2 with common c — re
 - git blob: `dc6ad126d513a27b52c6e1216b64ce6bcdc69c35`
 - sha256: `52c387e34cc848699b16300adbd03a6c44791fef131fe251a998eea019e99b17`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/753_KOIDE_A1_CASIMIR_DIFFERENCE_LEMMA_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/753_KOIDE_A1_CASIMIR_DIFFERENCE_LEMMA_THEOREM_NOTE.md)
-- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_a1_casimir_difference_lemma_skeleton(.py)`
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_a1_casimir_difference_lemma_skeleton​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_A1_CASIMIR_DIFFERENCE_LEMMA_DERIVATION_NOTE.md` — Derivation-track companion.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-labelled schema-grade: the closure is conditional on P1 and P2, which the note admits would need standalone retained-grade derivations to become package-grade.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-labelled schema-grade: the closure is conditional on P1 and P2, which the note admits would need standalone retained-grade derivations to become package-grade.
+- Supersession (as known at extraction): Formal statement of the companion derivation note; upgrades the lane's Q status while leaving the Brannen-phase residual P from KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20 open.
 
 ## Audit fields
 

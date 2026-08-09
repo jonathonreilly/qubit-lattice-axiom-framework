@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ W/Z covariance terminal: no importable same-surface top-W covariance theorem exi
 - git blob: `bfa6b702f6ebfef8aa4e6570d994ad456221903f`
 - sha256: `b072740a669e2212ef7300a06b04b0f45e62204c036b15cd6430af5dfb53b949`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2470_YT_TOP_WZ_COVARIANCE_THEOREM_IMPORT_AUDIT_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch08/2470_YT_TOP_WZ_COVARIANCE_THEOREM_IMPORT_AUDIT_NOTE_2026-05-05.md)
-- Lines: 68; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_top_wz_covariance_theorem_import_audit(.py)`
+- Lines: 68; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_top_wz_covariance_theorem_import_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -62,9 +65,12 @@ W/Z covariance terminal: no importable same-surface top-W covariance theorem exi
 - `docs/YT_WZ_SAME_SOURCE_EW_ACTION_SEMANTIC_FIREWALL_NOTE_2026-05-04.md` — W/Z-route member.
 - `docs/YT_WZ_SOURCE_COORDINATE_TRANSPORT_NO_GO_NOTE_2026-05-05.md` — W/Z-route member.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the W/Z covariance sub-chain (2026-05-05); closes the import shortcut left after 2469/2471/2472.
 
 ## Audit fields
 

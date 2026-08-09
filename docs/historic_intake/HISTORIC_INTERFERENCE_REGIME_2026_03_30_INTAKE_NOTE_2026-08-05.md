@@ -35,7 +35,8 @@ Era-consolidated interference claim (>25k evaluations; topological threshold, di
 - git blob: `1e8ae1b530626808ff4ebf52be3127532ae94232`
 - sha256: `83e2615942d6bb15103bdfa128f2c61b440e4591f46d37cd749272be72da1055`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3165_interference-regime-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3165_interference-regime-2026-03-30.md)
-- Lines: 96; runners named: historic runner (unpinned, not in this packet): `interference_geometry_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_offcenter_fringe_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_critical_ratio_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_slit_reachability_audit(.py)`; historic runner (unpinned, not in this packet): `interference_asymmetric_sweep(.py)`; historic runner (unpinned, not in this packet): `interference_partial_record_sweep(.py)`
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `interference_geometry_sweep​.py`; historic runner (unpinned, not in this packet): `interference_offcenter_fringe_sweep​.py`; historic runner (unpinned, not in this packet): `interference_critical_ratio_sweep​.py`; historic runner (unpinned, not in this packet): `interference_slit_reachability_audit​.py`; historic runner (unpinned, not in this packet): `interference_asymmetric_sweep​.py`; historic runner (unpinned, not in this packet): `interference_partial_record_sweep​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,9 +50,12 @@ Era-consolidated interference claim (>25k evaluations; topological threshold, di
 - `.claude/science/sanity/interference-offcenter-fringe-2026-03-30.md` — Audit evidence.
 - `.claude/science/sanity/partial-records-2026-03-30.md` — Audit evidence (tautology concession).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Its own validation table carries the geometry sweep as SUSPICIOUS (center V=1 a symmetry artifact), flags that the monotonic trends may be a rectangular-grid regularity artifact, that R_c was fit from 4 points, and that the linear decoherence law is mathematically trivial rather than model-specific.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Its own validation table carries the geometry sweep as SUSPICIOUS (center V=1 a symmetry artifact), flags that the monotonic trends may be a rectangular-grid regularity artifact, that R_c was fit from 4 points, and that the linear decoherence law is mathematically trivial rather than model-specific.
+- Supersession (as known at extraction): Consolidates six component analyses (idx 3110, 3114, 3122, 3123, 3128, 3131) and carries their sanity verdicts forward; its R_c approximation is then derived exactly at idx 3138.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Exact flavor factorization eta = J * K_NP: the electroweak channel is generation
 - git blob: `edb8bde10a0f41f68e77838704886a467a026164`
 - sha256: `5115215d77a6588e19310f66f169eaf04cd398d4e89b00fcdbdcbacd5f8fcb1d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/87_BARYOGENESIS_JARLSKOG_FACTORIZATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/87_BARYOGENESIS_JARLSKOG_FACTORIZATION_NOTE.md)
-- Lines: 176; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_jarlskog_factorization(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_jarlskog_factorization(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_jarlskog_factorization(.py)`
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_jarlskog_factorization​.py`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_jarlskog_factorization​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_jarlskog_factorization​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

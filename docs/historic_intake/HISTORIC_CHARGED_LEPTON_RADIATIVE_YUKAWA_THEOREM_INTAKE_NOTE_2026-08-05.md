@@ -35,15 +35,19 @@ The one-loop radiative y_tau = alpha_LM/(4 pi) closure claim WITH its convention
 - git blob: `f25b97662cf3975a222c185801c4a3045fe6ae4f`
 - sha256: `f462f3d308ed115c28f68353f54d6b06a0f682d1b7f65a672cb5eb27c0ecaba3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/142_CHARGED_LEPTON_RADIATIVE_YUKAWA_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch01/142_CHARGED_LEPTON_RADIATIVE_YUKAWA_THEOREM.md)
-- Lines: 139; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_radiative_yukawa_theorem(.py)`
+- Lines: 139; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_radiative_yukawa_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The load-bearing Casimir combination is convention-dependent, as the note's own caveat states.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The load-bearing Casimir combination is convention-dependent, as the note's own caveat states.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

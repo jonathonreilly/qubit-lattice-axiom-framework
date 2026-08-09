@@ -35,15 +35,19 @@ Z_chi exponent bookkeeping resolution (v = 226 GeV, 8% low) WITH the severe expo
 - git blob: `e155d5bfa86bb41712365c9dd8a0733b197f2b22`
 - sha256: `9d7f70dc8eabf7dc2a76eb58c5c4025ea11954e5349ccab33d41c6050baf9a01`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2504_ZCHI_POWER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2504_ZCHI_POWER_NOTE.md)
-- Lines: 102; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zchi_power(.py)`
+- Lines: 102; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zchi_power​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The stated sensitivity is severe: v depends exponentially on Sigma_1, and the note observes that the desired 246 GeV corresponds to Sigma_1 = 7.1 rather than the standard staggered 6 — a tuning-shaped escape presented as 'well within the range of lattice estimates'.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The stated sensitivity is severe: v depends exponentially on Sigma_1, and the note observes that the desired 246 GeV corresponds to Sigma_1 = 7.1 rather than the standard staggered 6 — a tuning-shaped escape presented as 'well within the range of lattice estimates'.
+- Supersession (as known at extraction): April hierarchy-lane note; its y_bare = g_s/sqrt(6) input is the Ward-derived value later shown not audit-clean (2468).
 
 ## Audit fields
 

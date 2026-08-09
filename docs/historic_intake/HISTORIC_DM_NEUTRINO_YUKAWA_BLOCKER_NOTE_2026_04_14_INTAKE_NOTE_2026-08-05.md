@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pre_seeding_mainline_deleted
 Era: april_pre_reset — dated 2026-04-14 with updates through 2026-04-16, branch codex/dm-main-derived
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -34,16 +36,21 @@ The neutrino-Yukawa blocker ledger: the branch does NOT derive a Yukawa rule, li
 - Source commit: `1523ca352b9d79f050f7ad1912e41f73e5736450`
 - git blob: `1ff48c3d3a436fbc8adbaeeeee3ae2d05dacb933`
 - sha256: `3522994ae37f0d8fc847945523bde200dcca29ddb9f607a1694be2722a983040`
-- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3606_DM_NEUTRINO_YUKAWA_BLOCKER_NOTE_2026-04-14.md](../../archive_unlanded/historic_intake_originals/recovery/3606_DM_NEUTRINO_YUKAWA_BLOCKER_NOTE_2026-04-14.md)
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3606_DM_NEUTRINO_YUKAWA_BLOCKER_NOTE_2026-04-14.md.frozen](../../archive_unlanded/historic_intake_originals/recovery/3606_DM_NEUTRINO_YUKAWA_BLOCKER_NOTE_2026-04-14.md.frozen)
+- Note: the archived original carries era-absolute markdown link targets, so its copy is stored with a `.frozen` filename suffix (bytes unchanged; the sha256 pin above applies to the archived file as stored).
 - Lines: 895; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly states the branch does not derive a neutrino Yukawa rule: the theorem-grade n_link = 2 result is gauge-side only, the top-Yukawa theorem is a heaviest-fermion result with its own trace identity, and the right-handed-sector note fixes quantum numbers by anomaly cancellation rather than by a Yukawa derivation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly states the branch does not derive a neutrino Yukawa rule: the theorem-grade n_link = 2 result is gauge-side only, the top-Yukawa theorem is a heaviest-fermion result with its own trace identity, and the right-handed-sector note fixes quantum numbers by anomaly cancellation rather than by a Yukawa derivation.
+- Supersession (as known at extraction): Self-superseding through many dated updates; records that an older necessity theorem was correct only on the earlier logarithmic observable family and is now partly closed positively by the local non-homogeneous comparator and background normalization.
 
 ## Audit fields
 

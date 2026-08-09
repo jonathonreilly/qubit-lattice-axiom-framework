@@ -35,15 +35,19 @@ The 'Gate CLOSED at matching precision' claim WITH its own cross-validation flag
 - git blob: `56c1887693965df5dd9aef9d9dad1db770ffe9a2`
 - sha256: `496a12a983c49e6bdf0de8d99ec946c69c049981e4d92933c6896d0afc09bc08`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2142_YT_BOUNDARY_RESOLUTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2142_YT_BOUNDARY_RESOLUTION_NOTE.md)
-- Lines: 93; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_boundary_resolution(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_formal_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_matching(.py)`
+- Lines: 93; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_boundary_resolution​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_formal_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_matching​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-declared 'Gate CLOSED' while its own cross-validation notes the alpha_s needed for exact m_t = 173 is 0.086 against the derived 0.084 (3.3% low); the closure rests on a scheme conversion whose exactness is not independently checked.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-declared 'Gate CLOSED' while its own cross-validation notes the alpha_s needed for exact m_t = 173 is 0.086 against the derived 0.084 (3.3% low); the closure rests on a scheme conversion whose exactness is not independently checked.
+- Supersession (as known at extraction): Supersedes the raw-plaquette boundary condition used by frontier_yt_formal_theorem​.py (184 GeV); sits in tension with the BLM note at idx 2141, which treats the same conversion as a mere 9% effect against an 8x gap.
 
 ## Audit fields
 

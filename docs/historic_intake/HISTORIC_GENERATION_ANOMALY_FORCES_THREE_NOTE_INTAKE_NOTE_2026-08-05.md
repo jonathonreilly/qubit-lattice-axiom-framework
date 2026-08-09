@@ -35,15 +35,19 @@ Discrete Dai-Freed generation-forcing conditional theorem PLUS the finding that 
 - git blob: `84eda38d8af55a332bb9470e40b31da6df0dd1a3`
 - sha256: `635bd04f00db88c2a657f46fc1b34731b3cf007554ab3edcebb2676c914d4227`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/609_GENERATION_ANOMALY_FORCES_THREE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/609_GENERATION_ANOMALY_FORCES_THREE_NOTE.md)
-- Lines: 210; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_anomaly_forces_three(.py)`
+- Lines: 210; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_anomaly_forces_three​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Extends the merge obstruction (idx 610) with the continuous-anomaly leg; explicitly disproves an assumed circular closure with the anomaly-forces-time theorem.
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ Self-documented exact-to-bounded demotion: a former exact/global affinity claim 
 - sha256: `cc2d95b7bf806d7bdddb48d9a77c12449eb3ec96eac01beded3563b48e5c0d45`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11207_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11207_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 115; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/s3-time-tensor-primitive/NO_GO_LEDGER.md` — Companion: only the WORDING is pruned at numerical tolerance; the sibling primitive note is recorded; three route families kept honest.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-self-documented CORRECTION: the claim was demoted from exact/global to bounded numerical after a steelman showed 60/90-digit stability is not an interval proof and both implementations share derivative algebra
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: self-documented CORRECTION: the claim was demoted from exact/global to bounded numerical after a steelman showed 60/90-digit stability is not an interval proof and both implementations share derivative algebra
+- Supersession (as known at extraction): records the demotion of a former exact/global claim to a bounded numerical witness after the N7 steelman; cites QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md as a method-only boundary later bypassed
 
 ## Audit fields
 

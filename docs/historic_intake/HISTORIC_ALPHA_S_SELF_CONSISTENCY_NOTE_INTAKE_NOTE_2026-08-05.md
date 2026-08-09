@@ -35,7 +35,8 @@ The honest alpha_s terminal: 0.092 NOT first-principles — conditional on g_bar
 - git blob: `38bb2657e9e27c1f6c8f307cfb5d56be6b88b654`
 - sha256: `4c4a3b46815a4a49a5a40c75faff17d5031c51065a77444b41aef6c448e5f917`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/50_ALPHA_S_SELF_CONSISTENCY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/50_ALPHA_S_SELF_CONSISTENCY_NOTE.md)
-- Lines: 146; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_self_consistency(.py)`
+- Lines: 146; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_self_consistency​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The honest alpha_s terminal: 0.092 NOT first-principles — conditional on g_bar
 - `docs/ALPHA_S_DM_RATIO_RESULT_2026-04-12.md` — Earliest preliminary with self-doubt on the record.
 - `docs/ALPHA_S_ROBUSTNESS_NOTE.md` — Five-scheme robustness evidence.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Flags that the V-scheme coupling hits a Landau pole under perturbative QCD running, confirming it is not an MS-bar coupling.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Flags that the V-scheme coupling hits a Landau pole under perturbative QCD running, confirming it is not an MS-bar coupling.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

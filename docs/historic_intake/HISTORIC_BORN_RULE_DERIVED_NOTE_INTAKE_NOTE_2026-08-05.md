@@ -35,15 +35,19 @@ Exact I3=0 identity from amplitude linearity WITH the era-audited title overclai
 - git blob: `d99588bce01359fb2ca6914bc8d40f5fe6dffc9b`
 - sha256: `886f47537ee820611fd93cdd0527d1aad1225d7dcf6b74bd286f4aad6d710a03`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/115_BORN_RULE_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/115_BORN_RULE_DERIVED_NOTE.md)
-- Lines: 127; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_born_rule_derived(.py)`
+- Lines: 127; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_born_rule_derived​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Title claims the Born rule is derived while the proof assumes it; flagged as OVERCLAIMED by the April adversarial audit.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Title claims the Born rule is derived while the proof assumes it; flagged as OVERCLAIMED by the April adversarial audit.
+- Supersession (as known at extraction): Independently audited in ADVERSARIAL_AUDIT_2026-04-13, which rules the note and its runner OVERCLAIMED.
 
 ## Audit fields
 

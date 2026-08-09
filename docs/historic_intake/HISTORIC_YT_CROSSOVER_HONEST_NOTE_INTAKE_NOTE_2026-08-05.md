@@ -35,15 +35,19 @@ The self-declared y_t single-authority meta: exact algebra + NOT-closed verdict 
 - git blob: `4e1f2864af35f140ee7e473c113034120e8a34ce`
 - sha256: `1846858e13a765092078cb111b119328b75c5e2c687a757aa93bd64ff0c2c2fb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2168_YT_CROSSOVER_HONEST_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2168_YT_CROSSOVER_HONEST_NOTE.md)
-- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_cl3_preservation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_wilsonian_eft(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_boundary_resolution(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_step_scaling(.py)`
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_cl3_preservation​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_wilsonian_eft​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_boundary_resolution​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_step_scaling​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Quotes alpha_V(M_Pl) ~ 0.15 where sibling notes in the same lane use 0.092-0.093, and its m_t = 181.6 GeV conflicts with the 171.0 GeV that idx 2142 uses to declare the gate closed on the same date.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Quotes alpha_V(M_Pl) ~ 0.15 where sibling notes in the same lane use 0.092-0.093, and its m_t = 181.6 GeV conflicts with the 171.0 GeV that idx 2142 uses to declare the gate closed on the same date.
+- Supersession (as known at extraction): Self-declared single authority for the y_t gate; its m_t = 181.6 GeV supersedes the 184 GeV raw-plaquette number but sits above the 171.0 GeV of the boundary-resolution note (idx 2142), which the same lane calls closed.
 
 ## Audit fields
 

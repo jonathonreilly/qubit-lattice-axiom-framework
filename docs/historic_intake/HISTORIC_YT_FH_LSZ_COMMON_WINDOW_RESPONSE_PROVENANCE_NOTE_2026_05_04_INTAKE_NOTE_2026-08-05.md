@@ -35,15 +35,19 @@ The fit-window artifact diagnosis: the ~5.9 spread ratio across ~30 checkpoints 
 - git blob: `e3cdbd8a3eab3ba6700dede8b51711194a1ffd8c`
 - sha256: `9c939db4beda289393c1cd3972cdd66874783212f0094c0c13845dab7a70f090`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2227_YT_FH_LSZ_COMMON_WINDOW_RESPONSE_PROVENANCE_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2227_YT_FH_LSZ_COMMON_WINDOW_RESPONSE_PROVENANCE_NOTE_2026-05-04.md)
-- Lines: 56; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_common_window_response_provenance(.py)`
+- Lines: 56; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_common_window_response_provenance​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Shows that the source-slope outliers reported as physics-neutral across ~30 checkpoint notes were an analysis artifact of the fitter's window selection.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Shows that the source-slope outliers reported as physics-neutral across ~30 checkpoint notes were an analysis artifact of the fitter's window selection.
+- Supersession (as known at extraction): Head of the common-window sub-chain and the single most consequential diagnostic of the chunk sweep: it explains the persistent instability reported in every checkpoint from idx 2199 onward.
 
 ## Audit fields
 

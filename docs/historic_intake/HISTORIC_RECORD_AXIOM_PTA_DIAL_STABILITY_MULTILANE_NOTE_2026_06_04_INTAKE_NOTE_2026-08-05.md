@@ -35,15 +35,19 @@ The dial-symmetry CORRECTION: the genuine symmetry is r -> 1/(4r), not r <-> 1-r
 - git blob: `c87d7303252a5496af42a2f8bb60602cd60f4237`
 - sha256: `5a9fb898302eef6e659d46e5031f8e1d9f469158e275d014d40bb2fee330ec3d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1763_RECORD_AXIOM_PTA_DIAL_STABILITY_MULTILANE_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch06/1763_RECORD_AXIOM_PTA_DIAL_STABILITY_MULTILANE_NOTE_2026-06-04.md)
-- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/record_axiom_ptA_dial_stability_multilane_2026_06_04(.py)`
+- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/record_axiom_ptA_dial_stability_multilane_2026_06_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/RECORD_AXIOM_PTD_HOSTILE_VACUITY_COHERENCE_NOTE_2026-06-04.md` — The adversarial check that USES r <-> 1-r as load-bearing — the same-day contradiction pair's other half.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that an earlier forcing version of this axiom was falsified by quark and neutrino Q values, and that a prior note's proposed symmetry was not a symmetry.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that an earlier forcing version of this axiom was falsified by quark and neutrino Q values, and that a prior note's proposed symmetry was not a symmetry.
+- Supersession (as known at extraction): Corrects the symmetry claim in FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02 and supersedes the falsified forcing version that put every sector at Q = 2/3.
 
 ## Audit fields
 

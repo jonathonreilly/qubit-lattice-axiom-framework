@@ -1,6 +1,6 @@
-# Historic intake: Cycle 514 — Route-C Q6 exact symbolic all-axis diagnostic
+# Historic intake: Cycle 514 — Route-C exact symbolic all-axis diagnostic
 
-Explicit subject: IDENTIFIES THE EXACT CAUSE of the Cycle-513 failure: Cycle 513 froze the axis-0 machine-exact matter-nonzero count for the update-3 pre-collision II factor as 35,857 while axis 1 has 35,815 and axis 2 has 35,756 — yet the underlying EXACT SYMBOLIC support is 30,207 on all three ... (The bare code `Q6` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: IDENTIFIES THE EXACT CAUSE of the Cycle-513 failure: Cycle 513 froze the axis-0 machine-exact matter-nonzero count for the update-3 pre-collision II factor as 35,857 while axis 1 has 35,815 and axis 2 has 35,756 — yet the underlying EXACT SYMBOLIC support is 30,207 on all three ... (Historic code `Q6`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -38,14 +38,18 @@ RETRACTION identifying the exact cause of the Cycle-513 failure: Cycle 513 froze
 - sha256: `e4365d2a9d7028941d882b13c1f00ba1b7dfcf52e45109e9a293f702a13eb278`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3017_PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/3017_PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md)
 - Lines: 366; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_GENERIC_FACTOR_GROWTH_CYCLE513_ATTEMPT1_FAILURE_NOTE_2026-07-20.md` — The failure receipt: dry contract 9/9 but an exception handler dis~[guised the defect]; establishes only an under-instrumented [state].
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): RETRACTS the validity of Cycle 513's (idx 3016) frozen nonzero-count fixture — a genuine methodological correction identifying a floating-point artifact masquerading as a covariance failure. Repairs the fixture without completing growth.
 
 ## Audit fields
 

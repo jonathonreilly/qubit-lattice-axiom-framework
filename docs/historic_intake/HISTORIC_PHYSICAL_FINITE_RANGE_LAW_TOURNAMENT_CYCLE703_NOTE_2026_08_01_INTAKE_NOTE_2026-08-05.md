@@ -35,15 +35,19 @@ Bounded selection: the double-relational ratio is projectively unique within the
 - git blob: `bd08db1f5b71f904a8fe0268287a9d5051285c55`
 - sha256: `d86605f99366ac8e467d5f91f546e7e017dca43e97c7676c6f835a9d2accc96d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3085_PHYSICAL_FINITE_RANGE_LAW_TOURNAMENT_CYCLE703_NOTE_2026-08-01.md](../../archive_unlanded/historic_intake_originals/recovery/3085_PHYSICAL_FINITE_RANGE_LAW_TOURNAMENT_CYCLE703_NOTE_2026-08-01.md)
-- Lines: 329; runners named: historic runner (unpinned, not in this packet): `scripts/physical_finite_range_law_tournament_cycle703_2026_08_01(.py)`
+- Lines: 329; runners named: historic runner (unpinned, not in this packet): `scripts/physical_finite_range_law_tournament_cycle703_2026_08_01​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Extends the Cycle-700 executed source-response-readout chain; reproduces the landed Cycle-700 secant -1.24213944348 to 1e-9 at eps = 0.1.
 
 ## Audit fields
 

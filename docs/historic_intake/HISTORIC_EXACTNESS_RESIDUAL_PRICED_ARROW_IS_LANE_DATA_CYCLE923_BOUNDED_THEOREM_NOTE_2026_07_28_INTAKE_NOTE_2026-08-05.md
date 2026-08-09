@@ -35,15 +35,19 @@ Post-reset dissolution of the S6 tension: sharpen/therm exactly inverse with rec
 - git blob: `2b69293741794760cadb3b66b442b615f4c4a401`
 - sha256: `14fb9631f17ddd010505757117936da0469fb6bf9082bbc5d919789b61a85391`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/452_EXACTNESS_RESIDUAL_PRICED_ARROW_IS_LANE_DATA_CYCLE923_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch02/452_EXACTNESS_RESIDUAL_PRICED_ARROW_IS_LANE_DATA_CYCLE923_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle923_exactness_residual_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28(.py)`
+- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle923_exactness_residual_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Emits one audit row for a comparator-digit convention dependence; discloses a self-caught hardcoded figure in a checker summary and that the lever reproduction uses its own seed rather than the source's draw.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Emits one audit row for a comparator-digit convention dependence; discloses a self-caught hardcoded figure in a checker summary and that the lever reproduction uses its own seed rather than the source's draw.
+- Supersession (as known at extraction): Dissolves the S6 tension of the realized-state reduction note; discloses that the inverse identity itself was already published in the durability note's erasure-honesty item (2026-06-11), with only the S6 dissolution, Lyapunov orientation, coincidence deflation and arrow-universality no-go new.
 
 ## Audit fields
 

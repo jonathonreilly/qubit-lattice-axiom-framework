@@ -35,7 +35,8 @@ The N_e lane closed end-to-end — WITH the flag that closure is anchored on an 
 - git blob: `593cab2af1986165b9935dae6e42f691a05b4e70`
 - sha256: `4d4134c21cb93b2decc8cb290ff2f97521e4efbaeac360773c810d490f1a246a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1208_NEUTRINO_POST_RETAINED_FULL_CLOSURE_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch04/1208_NEUTRINO_POST_RETAINED_FULL_CLOSURE_NOTE_2026-04-16.md)
-- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_post_retained_full_closure(.py)`
+- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_post_retained_full_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The N_e lane closed end-to-end — WITH the flag that closure is anchored on an 
 - `docs/NEUTRINO_MINIMAL_POST_RETAINED_INTEGRATION_NOTE.md` — Two-lane integration.
 - `docs/NEUTRINO_PACKAGE_NOTE_2026-04-16.md` — Three-way status package; observational-anchor flag.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The closure is anchored on an observational ratio being exactly 1, which the note itself flags as the remaining dependency.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The closure is anchored on an observational ratio being exactly 1, which the note itself flags as the remaining dependency.
+- Supersession (as known at extraction): Supersedes the older reading that the positive neutrino program was open because off-seed microscopic D data had not been fixed (now quotiented by exact Schur invariance); does not replace the separate normalization boundary.
 
 ## Audit fields
 

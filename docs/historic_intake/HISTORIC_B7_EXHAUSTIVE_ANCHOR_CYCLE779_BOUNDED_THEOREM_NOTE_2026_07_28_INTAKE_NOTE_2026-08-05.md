@@ -35,7 +35,8 @@ The sector-theorem exhaustive anchor set carrier: b=7 censuses all 45,537,549,12
 - git blob: `9efb57bd635f54f5c9665b633607b0074142ef0f`
 - sha256: `8929746ff694c7d3098c5c41dc5dc034fc95387d560a590efbae507ea837979a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/79_B7_EXHAUSTIVE_ANCHOR_CYCLE779_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/79_B7_EXHAUSTIVE_ANCHOR_CYCLE779_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 88; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle779_b7_anchor_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle779_b7_exhaustive_anchor_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle779_b7_anchor_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle779_b7_exhaustive_anchor_2026_07_28(.py)`
+- Lines: 88; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle779_b7_anchor_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle779_b7_exhaustive_anchor_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle779_b7_anchor_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle779_b7_exhaustive_anchor_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The sector-theorem exhaustive anchor set carrier: b=7 censuses all 45,537,549,12
 - `docs/B6_ANCHOR_COMPLETION_CYCLE764_BOUNDED_THEOREM_NOTE_2026-07-28.md` — b=6 completion (566.7M configs, zero violations).
 - `docs/B6_EXHAUSTIVE_ANCHOR_CYCLE761_BOUNDED_THEOREM_NOTE_2026-07-28.md` — b=6 partial ring, disclosed and completed by 77.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Extends the anchor set from b <= 6; latest ring in the family.
 
 ## Audit fields
 

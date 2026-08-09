@@ -1,6 +1,6 @@
-# Historic intake: Q1 keystone, angle C: holomorphy (det_C) does NOT supply the generation chirality grading
+# Historic intake: Koide-Q Keystone, angle C: holomorphy (det_C) does NOT supply the generation chirality grading
 
-Explicit subject: Each holomorphy-derived object fails the Gamma_chi requirements: J = (C - C^T)/sqrt3 is anti-Hermitian with J^2 = -P_d and commutes with the block projectors (on-block); K (complex conjugation) is a Hermitian involution but reflects WITHIN the doublet with P_s K P_d = 0 and its ... (The bare code `Q1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: Each holomorphy-derived object fails the Gamma_chi requirements: J = (C - C^T)/sqrt3 is anti-Hermitian with J^2 = -P_d and commutes with the block projectors (on-block); K (complex conjugation) is a Hermitian involution but reflects WITHIN the doublet with P_s K P_d = 0 and its ... (Historic code `Q1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ Q1 is TWO gates, not one: the holomorphy fork closes only the value bit — corr
 - git blob: `3682e7925f4b7a2e960d47b490a6cebbf2ae53e0`
 - sha256: `27504cac61984ad15246200911ae1364eb6240e573c6e6e74085ad4e0e2c213f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1636_Q1_HOLOMORPHY_CHIRALITY_DOUBLE_UNLOCK_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch05/1636_Q1_HOLOMORPHY_CHIRALITY_DOUBLE_UNLOCK_NOTE_2026-06-04.md)
-- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/q1_holomorphy_chirality_double_unlock_2026_06_04(.py)`
+- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/q1_holomorphy_chirality_double_unlock_2026_06_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Corrects a previously circulated coverage-audit claim (holomorphy = chirality, same binary) as false.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Corrects a previously circulated coverage-audit claim (holomorphy = chirality, same binary) as false.
+- Supersession (as known at extraction): CORRECTS a coverage audit's claim that Q1 is a single binary bundling the r = 1/2 value bit with the chirality grading.
 
 ## Audit fields
 

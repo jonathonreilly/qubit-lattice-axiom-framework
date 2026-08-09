@@ -35,15 +35,19 @@ GW150914 echo prediction 68+/-3 ms — falsifiable against LIGO O1-O3, disagreei
 - git blob: `8ac1cda4576fa52e5d76eb170e66cefcaaa58ebc`
 - sha256: `02d2887eac11a4de20de60e34516fa5b9653d8d6b051d29326b8e6dd0d8027ea`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3611_GW_ECHO_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3611_GW_ECHO_DERIVED_NOTE.md)
-- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gw_echo_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous(.py)`; historic runner (unpinned, not in this packet): `scripts/gw150914_echo_search(.py)`
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gw_echo_derived​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous​.py`; historic runner (unpinned, not in this packet): `scripts/gw150914_echo_search​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-listed estimates: the Kerr correction uses the standard ECO tortoise factor (Cardoso et al. 2016) rather than a full Kerr tortoise integral on the lattice; the surface reflection coefficient is assumed ~1 (perfect reflection) with partial absorption reducing amplitude; and the frozen-star EOS at nuclear density is not modelled, the Planck-scale hard floor being used directly.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-listed estimates: the Kerr correction uses the standard ECO tortoise factor (Cardoso et al. 2016) rather than a full Kerr tortoise integral on the lattice; the surface reflection coefficient is assumed ~1 (perfect reflection) with partial absorption reducing amplitude; and the frozen-star EOS at nuclear density is not modelled, the Planck-scale hard floor being used directly.
+- Supersession (as known at extraction): Disagrees with Abedi et al. (2017): 67.66 ms vs ~100 ms and epsilon 3.70e-21 vs 5.15e-31 — Abedi's 100 ms would require the surface ~6 billion Planck lengths above R_S.
 
 ## Audit fields
 

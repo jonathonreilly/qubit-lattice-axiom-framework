@@ -35,16 +35,20 @@ The acceptance-criterion REPLACEMENT on the record: legacy chunks cannot be back
 - git blob: `d04ab24226a01e92f00f586654724baaaf697f3c`
 - sha256: `e0dbaf32a2edd4c83c693d70e4ddf64a6b0889e37d8ea94a9251b96ef45415a3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2225_YT_FH_LSZ_COMMON_WINDOW_REPLACEMENT_RESPONSE_STABILITY_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2225_YT_FH_LSZ_COMMON_WINDOW_REPLACEMENT_RESPONSE_STABILITY_NOTE_2026-05-04.md)
-- Lines: 49; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_common_window_replacement_response_stability(.py)`
+- Lines: 49; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_common_window_replacement_response_stability​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/YT_FH_LSZ_COMMON_WINDOW_POOLED_RESPONSE_ESTIMATOR_NOTE_2026-05-04.md` — Common-window chain link.
 - `docs/YT_FH_LSZ_COMMON_WINDOW_RESPONSE_GATE_NOTE_2026-05-04.md` — Common-window chain link.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A load-bearing acceptance criterion is replaced rather than met, because the legacy chunks physically cannot supply the required schema.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A load-bearing acceptance criterion is replaced rather than met, because the legacy chunks physically cannot supply the required schema.
+- Supersession (as known at extraction): TERMINAL of the common-window sub-chain: replaces an unmeetable acceptance criterion with a contract the data can satisfy, explicitly refusing to fabricate legacy v2 rows.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The lambda_1(RP^3) correction: 3/R^2 -> 8/R^2, REVERSING the 'RP^3 beats S^3' he
 - git blob: `f0e1bed0c059b0c8f6cff03a138c5380e22dd0df`
 - sha256: `714ce6f0f0342d40adbfe36fbaf5223b8bc8029f9dbf4a4f60882c0aec0b0f63`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1840_RP3_VS_S3_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1840_RP3_VS_S3_NOTE.md)
-- Lines: 244; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_rp3_vs_s3(.py)`
+- Lines: 244; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_rp3_vs_s3​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that a previously banked topology-scan result was numerically wrong and had reversed the topology preference.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that a previously banked topology-scan result was numerically wrong and had reversed the topology preference.
+- Supersession (as known at extraction): Corrects an explicit numerical error in S3_CC_TOPOLOGY_SCAN_NOTE (idx 1848); supersedes that note's RP^3 preference.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Dobrushin-wedge phase-selection wall retired in the controlled region — with t
 - git blob: `f023c1a59efb8e21094c7e11019fd7d43c5d3b74`
 - sha256: `b959d252286830dbfef1f102378debe32e86047c4f4d2f063367dd85b3a14161`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1129_MASSIVE_WILSON_STAGGERED_DOBRUSHIN_SPATIAL_UNIQUENESS_WEDGE_BOUNDED_THEOREM_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch04/1129_MASSIVE_WILSON_STAGGERED_DOBRUSHIN_SPATIAL_UNIQUENESS_WEDGE_BOUNDED_THEOREM_NOTE_2026-07-12.md)
-- Lines: 456; runners named: historic runner (unpinned, not in this packet): `scripts/massive_wilson_staggered_dobrushin_spatial_uniqueness_wedge_2026_07_12(.py)`
+- Lines: 456; runners named: historic runner (unpinned, not in this packet): `scripts/massive_wilson_staggered_dobrushin_spatial_uniqueness_wedge_2026_07_12​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-N7 concedes a hostile reviewer's attack on the factor 3/4 is correct against the naive argument and that the mass-transport/incidence step is load-bearing — without it the claimed wedge would be unsupported.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: N7 concedes a hostile reviewer's attack on the factor 3/4 is correct against the naive argument and that the mass-transport/incidence step is load-bearing — without it the claimed wedge would be unsupported.
+- Supersession (as known at extraction): Sole direct in-repo dependency is MASSIVE_WILSON_STAGGERED_SPATIAL_DLR_ACCUMULATION_OS_TRANSFER_2026-07-12, whose accumulation states this collapses inside the wedge.
 
 ## Audit fields
 

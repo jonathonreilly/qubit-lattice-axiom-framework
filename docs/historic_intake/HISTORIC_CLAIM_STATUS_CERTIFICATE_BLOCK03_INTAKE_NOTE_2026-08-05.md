@@ -36,6 +36,7 @@ Honest-demotion terminal for the theta-cross-sector block03: the Record/log brid
 - sha256: `4f69a215531649b079cce4b96cf6e9006d2604f8c32ccfe1f4242f90951e8354`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11305_CLAIM_STATUS_CERTIFICATE_BLOCK03.md](../../archive_unlanded/historic_intake_originals/packsci05/11305_CLAIM_STATUS_CERTIFICATE_BLOCK03.md)
 - Lines: 74; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ Honest-demotion terminal for the theta-cross-sector block03: the Record/log brid
 - `.claude/science/physics-loops/theta-cross-sector-readout-20260717/PR_BODY_DRAFT.md` — Block01 PR draft (runner PASS=30/0); ships the docs landing.
 - `.claude/science/physics-loops/theta-cross-sector-readout-20260717/TRACE_GATE_BLOCK02.md` — Block02 trace gate, stacked on block01; hand-stacked PR to the owner-operated lane.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-cluster-cap evaluator approved opening before refutation — evaluator/review disagreement inside one pack
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: cluster-cap evaluator approved opening before refutation — evaluator/review disagreement inside one pack
+- Supersession (as known at extraction): terminal for block03: archived, no PR; supersedes ARCHIVED_BLOCK03_DRAFT_NOTE.md
 
 ## Audit fields
 

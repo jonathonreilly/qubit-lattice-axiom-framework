@@ -35,7 +35,8 @@ The composite one-lane reduction: K_NP = F_NP[chi(tau)] on a single scalar histo
 - git blob: `9257f04da946e71cfe7dc5b3ddf3e98f211884f9`
 - sha256: `9e2164a952c519a26fed1681f4be6f57f7ce651206e5c0b9faa32e8eba1a927e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/97_BARYOGENESIS_SINGLE_HISTORY_COMPOSITION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/97_BARYOGENESIS_SINGLE_HISTORY_COMPOSITION_NOTE.md)
-- Lines: 197; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_single_history_composition(.py)`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_single_history_composition(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_single_history_composition(.py)`
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `./../scripts/frontier_baryogenesis_single_history_composition​.py`; historic runner (unpinned, not in this packet): `frontier_baryogenesis_single_history_composition​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis_single_history_composition​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ The composite one-lane reduction: K_NP = F_NP[chi(tau)] on a single scalar histo
 - `docs/BARYOGENESIS_KSPH_SINGLE_ACTIVE_LANE_NOTE.md` — K_sph one-lane reduction; consumed.
 - `docs/BARYOGENESIS_KTR_SINGLE_LEFT_HANDED_LANE_NOTE.md` — K_tr one-lane reduction; consumed.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Composes and supersedes the three separate stage reductions (K_EWPT, K_tr, K_sph notes) as the lane's operative statement.
 
 ## Audit fields
 

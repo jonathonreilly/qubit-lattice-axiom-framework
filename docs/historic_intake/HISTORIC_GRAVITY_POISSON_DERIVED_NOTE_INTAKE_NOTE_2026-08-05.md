@@ -35,15 +35,19 @@ The 'nothing open' Poisson claim — pulled as the contradiction pair's maximal 
 - git blob: `c7bf9e681430d7df6ab863e53b8f1192c76decc1`
 - sha256: `91a6164342245c94b8ae0d69fcaf017e226bddd31ce7d693d180c9ec62786fb5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/649_GRAVITY_POISSON_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/649_GRAVITY_POISSON_DERIVED_NOTE.md)
-- Lines: 142; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gravity_poisson_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_newton_derived(.py)`
+- Lines: 142; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gravity_poisson_derived​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_newton_derived​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Claims nothing remains open, while the umbrella chain document (idx 646) grades this exact step BOUNDED and calls it the weakest link.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Claims nothing remains open, while the umbrella chain document (idx 646) grades this exact step BOUNDED and calls it the weakest link.
+- Supersession (as known at extraction): Explicitly upgrades SELF_CONSISTENCY_FORCES_POISSON_NOTE (numerical evidence over 5 operators) and sharpens POISSON_EXHAUSTIVE_UNIQUENESS_NOTE by reformulating uniqueness as M(alpha) = 0 at alpha = 1; completes the upstream step that NEWTON_LAW_DERIVED_NOTE assumed.
 
 ## Audit fields
 

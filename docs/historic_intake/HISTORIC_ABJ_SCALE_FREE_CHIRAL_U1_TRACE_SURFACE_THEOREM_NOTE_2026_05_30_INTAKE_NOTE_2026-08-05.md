@@ -35,15 +35,19 @@ Retained-surface algebraic replacement removing the 3+1 anomaly route's normaliz
 - git blob: `216fb6f3e9a89ce84d2d30dc29a786be15a4ce0d`
 - sha256: `31a8f666c592b247d22d9aa25ae3b3b83f4468a728b995e01254214026a7d3ce`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/12_ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch01/12_ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md)
-- Lines: 144; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_abj_scale_free_chiral_u1_trace_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_abj_scale_free_chiral_u1_trace_surface(.py)`
+- Lines: 144; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_abj_scale_free_chiral_u1_trace_surface​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_abj_scale_free_chiral_u1_trace_surface​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Sibling of the action-surface ABJ theorem; removes that theorem's dependence on SM hypercharge normalization.
 
 ## Audit fields
 

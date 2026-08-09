@@ -35,15 +35,19 @@ Terminology hardening separating three same-surface scalars — corrects previou
 - git blob: `e25cec87e712eacb9b5c52524f4eb740dd2c66e8`
 - sha256: `e9d25bc0d5ce57b91957afd7d9ebb8c56ce2420dc60d1a32f1a1cb88026e884f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1383_PLANCK_SCALE_BOUNDARY_ACTION_SOURCE_VS_PRESSURE_CLASSIFICATION_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1383_PLANCK_SCALE_BOUNDARY_ACTION_SOURCE_VS_PRESSURE_CLASSIFICATION_THEOREM_2026-04-23.md)
-- Lines: 157; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_boundary_action_source_vs_pressure_classification_theorem(.py)`
+- Lines: 157; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_boundary_action_source_vs_pressure_classification_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Corrects previously circulated Planck-lane wording ('the observable-principle scalar boundary pressure equals 1/4') as false.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Corrects previously circulated Planck-lane wording ('the observable-principle scalar boundary pressure equals 1/4') as false.
+- Supersession (as known at extraction): Retroactively hardens the earlier 'boundary pressure' wording used across the PLANCK_SCALE boundary-pressure lane notes and forbids the p_scalar = Tr(rho_cell P_A) reading.
 
 ## Audit fields
 

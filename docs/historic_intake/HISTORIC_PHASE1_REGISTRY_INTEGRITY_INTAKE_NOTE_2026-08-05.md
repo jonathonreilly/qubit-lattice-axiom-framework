@@ -35,19 +35,23 @@ SYSTEMIC INTEGRITY MEASUREMENT: ALL THREE registered derivation obligations have
 - git blob: `97c6e5f471387707681c84e7df36346b8a07aed0`
 - sha256: `0e386ece3a086de2d46145fb26e6ae0a724ab1cce0697500a708bb27cce0213c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10833_phase1_registry_integrity.md](../../archive_unlanded/historic_intake_originals/packsci03/10833_phase1_registry_integrity.md)
-- Lines: 885; runners named: historic runner (unpinned, not in this packet): `scripts/audit_lint(.py)`; historic runner (unpinned, not in this packet): `scripts/check_axiom_premise_clean(.py)`; historic runner (unpinned, not in this packet): `scripts/codex_audit_runner(.py)`; historic runner (unpinned, not in this packet): `scripts/compute_effective_status(.py)`; historic runner (unpinned, not in this packet): `scripts/compute_lane_certification(.py)`; historic runner (unpinned, not in this packet): `scripts/invalidate_stale_audits(.py)`
+- Lines: 885; runners named: historic runner (unpinned, not in this packet): `scripts/audit_lint​.py`; historic runner (unpinned, not in this packet): `scripts/check_axiom_premise_clean​.py`; historic runner (unpinned, not in this packet): `scripts/codex_audit_runner​.py`; historic runner (unpinned, not in this packet): `scripts/compute_effective_status​.py`; historic runner (unpinned, not in this packet): `scripts/compute_lane_certification​.py`; historic runner (unpinned, not in this packet): `scripts/invalidate_stale_audits​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10253](HISTORIC_RESUME_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-reconciliation/RESUME.md`, stratum packsci01) — SYSTEMIC INTEGRITY MEASUREMENT: ALL THREE registered derivation obligations have machine records that MISMATCH their source notes (6 distinct mismatches); of 4 registered axiom/primitive surfaces ...; documents the mass invalidation event that destroyed 202 clean no-go audits; the no_go count's cause is STRUCTURAL (the route exists in code and was never wired). Recommended repair set R1+R3+R4+R5 costed in-pack. Companion to the recon-rescan gap pulled from packsci01.
+- Attaches across strata to idx 10253 (`.claude/science/physics-loops/axiom-reconciliation/RESUME.md`, stratum packsci01) — SYSTEMIC INTEGRITY MEASUREMENT: ALL THREE registered derivation obligations have machine records that MISMATCH their source notes (6 distinct mismatches); of 4 registered axiom/primitive surfaces ...; documents the mass invalidation event that destroyed 202 clean no-go audits; the no_go count's cause is STRUCTURAL (the route exists in code and was never wired). Recommended repair set R1+R3+R4+R5 costed in-pack. Companion to the recon-rescan gap pulled from packsci01.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-MAJOR: 3/3 obligations defective; 20 lane blockers are structurally unclearable meta rows; a steady-state gate demands an artifact no row in the repo holds, so no no-go can ever reach retained_no_go
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: MAJOR: 3/3 obligations defective; 20 lane blockers are structurally unclearable meta rows; a steady-state gate demands an artifact no row in the repo holds, so no no-go can ever reach retained_no_go
+- Supersession (as known at extraction): Documents a mass invalidation event that destroyed 202 clean no-go audits on 2026-07-11/12 — a repo-wide retraction of previously audited content.
 
 ## Audit fields
 
@@ -57,6 +61,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_registry_integrity_measurement
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_RESUME_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

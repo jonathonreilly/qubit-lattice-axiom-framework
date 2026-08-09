@@ -35,15 +35,19 @@ Review verdict demoting the source-free closure to conditional support with four
 - git blob: `7116af6393f4a72422d001125d6f6b9f6f3f19ef`
 - sha256: `f76034f371e21ac3cd6eb69a1da6c3e70c1b588f32dae6eb9ff909cc88688c63`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1038_KOIDE_Q_SOURCE_FREE_CLOSURE_NATURE_REVIEW_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch04/1038_KOIDE_Q_SOURCE_FREE_CLOSURE_NATURE_REVIEW_2026-04-24.md)
-- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_source_free_closure_theorem(.py)`
+- Lines: 137; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_source_free_closure_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Reviews and demotes idx_pos 1039 (KOIDE_Q_SOURCE_FREE_CLOSURE_THEOREM_NOTE); its NEXT_Q_TARGET directly spawns the K_TL Lagrange-multiplier note (idx_pos 1051).
 
 ## Audit fields
 

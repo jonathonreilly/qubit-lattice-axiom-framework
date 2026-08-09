@@ -35,7 +35,8 @@ The five-layer epistemic stratification — the paper-safe surface that supersed
 - git blob: `fdea6f25e9a8d8380032f936eebd1b0fb155633e`
 - sha256: `a931e649365a03e1ff6152d27784389747647d5bb396025ee34a673c71112b65`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/626_GENERATION_PHYSICALITY_PAPER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/626_GENERATION_PHYSICALITY_PAPER_NOTE.md)
-- Lines: 266; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_physicality_wildcard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_gap_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_synthesis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_paper(.py)`
+- Lines: 266; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_physicality_wildcard​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_synthesis​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_gap_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_hierarchy_synthesis​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_paper​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The five-layer epistemic stratification — the paper-safe surface that supersed
 - `docs/GENERATION_PHYSICALITY_THEOREM_NOTE.md` — Level-split theorem with C1-C6 obstruction pricing.
 - `docs/GENERATION_SYNTHESIS_NOTE.md` — Reductio synthesis; one import among 36 checks flagged.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Points out a self-undercutting tension: the Z_3 superselection argument is exact only in the isotropic limit, which the lane deliberately breaks to obtain mass splitting and CKM mixing.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Points out a self-undercutting tension: the Z_3 superselection argument is exact only in the isotropic limit, which the lane deliberately breaks to obtain mass splitting and CKM mixing.
+- Supersession (as known at extraction): The layer-graded successor to the lane's competing closure claims; carries an explicit 'The paper MUST NOT claim' section.
 
 ## Audit fields
 

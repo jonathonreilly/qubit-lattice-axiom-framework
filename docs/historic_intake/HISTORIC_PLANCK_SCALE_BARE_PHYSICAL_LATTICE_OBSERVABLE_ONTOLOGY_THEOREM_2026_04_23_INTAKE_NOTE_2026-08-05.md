@@ -35,15 +35,19 @@ B1 closed on the retained observable-algebra reading — WITH the definitional-s
 - git blob: `52105b46654411089338c6adbed8d85fe65d1329`
 - sha256: `f805e6db491d9ec8efe0ac2f06a0ba8f9fa6d94f769da77b98415aee3844b9d8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1382_PLANCK_SCALE_BARE_PHYSICAL_LATTICE_OBSERVABLE_ONTOLOGY_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1382_PLANCK_SCALE_BARE_PHYSICAL_LATTICE_OBSERVABLE_ONTOLOGY_THEOREM_2026-04-23.md)
-- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_physical_lattice_observable_ontology_theorem(.py)`
+- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_physical_lattice_observable_ontology_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The B1 'closure' is definitional-scope dependent - it holds only under the observable-algebra reading the note itself picks, which is the reading a hostile reviewer would contest.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The B1 'closure' is definitional-scope dependent - it holds only under the observable-algebra reading the note itself picks, which is the reading a hostile reviewer would contest.
+- Supersession (as known at extraction): Closes slot B1 of PLANCK_SCALE_BARE_CELL_ALONE_CLOSURE_PROGRAM; with B2 and B4 closed elsewhere, only B3 remains open in that family.
 
 ## Audit fields
 

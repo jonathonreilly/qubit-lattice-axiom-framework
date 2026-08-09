@@ -1,6 +1,6 @@
-# Historic intake: Hierarchy H1 Route 1 — Status Correction and Corrected Closure Path
+# Historic intake: Hierarchy Route 1 — Status Correction and Corrected Closure Path
 
-Explicit subject: RETRACTS the same-day claim that V-invariant projection reduces the plaquette fixed-point equation: the Klein-four V acts on temporal APBC phases, not on SU(3) representation labels (p,q), so it does not fix rho_(p,q)(6); Lemma A (no positive real mean-field saddle) and Lemma B ... (The bare code `H1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: RETRACTS the same-day claim that V-invariant projection reduces the plaquette fixed-point equation: the Klein-four V acts on temporal APBC phases, not on SU(3) representation labels (p,q), so it does not fix rho_(p,q)(6); Lemma A (no positive real mean-field saddle) and Lemma B ... (Historic code `H1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,16 +37,20 @@ STATUS CORRECTION retracting the same-day V-invariance reduction claim (V acts o
 - git blob: `b8cc6d4ddcc43ce058a76b6557df01352b0f590b`
 - sha256: `082a42ef7f8662692a6d51b04e1d38e2d45c8fcf63978f95b3b2d8a88822405d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/693_HIERARCHY_H1_ROUTE_1_STATUS_CORRECTION_NOTE_2026-05-03.md](../../archive_unlanded/historic_intake_originals/branch03/693_HIERARCHY_H1_ROUTE_1_STATUS_CORRECTION_NOTE_2026-05-03.md)
-- Lines: 249; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_closure_program(.py)`
+- Lines: 249; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_closure_program​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/HIERARCHY_H1_SELF_CONSISTENT_SADDLE_NOTE_2026-05-03.md` — Saddle proposal; central claim retracted by 693.
 - `docs/HIERARCHY_H2_ORDER_PARAMETER_SELECTION_THEOREM_NOTE_2026-05-03.md` — (7/8)^(1/4) forcing rests on the V-invariance foundation 693 retracted — flagged.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-retraction: an overstated claim from a companion note published the same day is amended and Lemma C withdrawn.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-retraction: an overstated claim from a companion note published the same day is amended and Lemma C withdrawn.
+- Supersession (as known at extraction): Explicitly 'Supersedes (in part) HIERARCHY_H1_SELF_CONSISTENT_SADDLE_NOTE_2026-05-03.md'; retracts that note's Lemma C.
 
 ## Audit fields
 

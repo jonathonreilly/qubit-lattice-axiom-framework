@@ -35,15 +35,19 @@ The running-exponent diagnostic replacing the flawed global R^2 fit — cleanly 
 - git blob: `c78f993596d1377a85135cef4ca5bb3ab2a0261e`
 - sha256: `9e584b04fd8b6739d37c02bd50267d8f29f086ab8abaeff2842cd998dd898549`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/329_DISPERSION_RUNNING_EXPONENT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/329_DISPERSION_RUNNING_EXPONENT_NOTE.md)
-- Lines: 87; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_dispersion_running_exponent(.py)`; historic runner (unpinned, not in this packet): `frontier_dispersion_relation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dispersion_running_exponent(.py)`
+- Lines: 87; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_dispersion_running_exponent​.py`; historic runner (unpinned, not in this packet): `frontier_dispersion_relation​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dispersion_running_exponent​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Explicitly replaces the earlier single global R^2 fit as the lane's diagnostic.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The echo lane's post-hoc immunization ON THE RECORD: the falsifiable 24.5% echo 
 - git blob: `a6d14a4e579d9d13dfd9d402667ea4fbfe3bc706`
 - sha256: `902b9e151b446831fd2bad28f2ea866801a0dd1225feccec1aeeac6bbf5c530c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/416_ECHO_PREDICTION_RESOLVED_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch02/416_ECHO_PREDICTION_RESOLVED_2026-04-12.md)
-- Lines: 82; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_echo_lattice_tunneling(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_thermal_reflectivity(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_frequency_shift(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_absorption_mechanism(.py)`
+- Lines: 82; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_echo_lattice_tunneling​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_thermal_reflectivity​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_frequency_shift​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_echo_absorption_mechanism​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A prediction that was falsifiable (24.5% echoes) is converted post hoc into an unfalsifiable-in-practice null after 48 events found nothing.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A prediction that was falsifiable (24.5% echoes) is converted post hoc into an unfalsifiable-in-practice null after 48 events found nothing.
+- Supersession (as known at extraction): Replaces the earlier prediction of a 24.5% echo amplitude with a free reflectivity parameter.
 
 ## Audit fields
 

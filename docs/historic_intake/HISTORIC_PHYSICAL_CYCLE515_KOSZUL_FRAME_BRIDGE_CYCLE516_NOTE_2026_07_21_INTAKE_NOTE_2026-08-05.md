@@ -36,14 +36,18 @@ TERMINAL of the Cycle 515 -> 516 frame-covariance pair: closes the open proper-c
 - sha256: `5f32e766fad91a960031bf68dac4ba3b2498b02b5fc4fce9ac1c795e67c23597`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2830_PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/2830_PHYSICAL_CYCLE515_KOSZUL_FRAME_BRIDGE_CYCLE516_NOTE_2026-07-21.md)
 - Lines: 421; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE330_ALL_ORDER_ISOMETRY_BRIDGE_CYCLE515_NOTE_2026-07-20.md` — Removes Cycle 330's sampling wall (8 of 5040 orders materialized) - the bounded algebraic step the terminal completes.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the Cycle 515 (idx 2829) -> 516 pair: 515 proved all 5040 order isometries, 516 supplies the frame covariance. C_f is load-bearing; literal dense frame matrices remain OPEN / UNTESTED.
 
 ## Audit fields
 

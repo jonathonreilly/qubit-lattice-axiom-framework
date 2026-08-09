@@ -35,15 +35,19 @@ The graph-first terminal compression: the whole production question reduces to O
 - git blob: `639131bf5d5d7991e9dc1cf2a367044f35a61c31`
 - sha256: `0b0202e8a11c087c85e6c05ca362df6236abae8b566a186b4fc40ac4ed0196b4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1540_PMNS_GRAPH_FIRST_FIXED_SLICE_SCALAR_PRODUCTION_DISCRIMINANT_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch05/1540_PMNS_GRAPH_FIRST_FIXED_SLICE_SCALAR_PRODUCTION_DISCRIMINANT_NOTE_2026-04-18.md)
-- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_graph_first_fixed_slice_scalar_production_discriminant_2026_04_18(.py)`
+- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_graph_first_fixed_slice_scalar_production_discriminant_2026_04_18​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Terminal compression of the graph-first fixed-slice chain - the sharpest form of the PMNS-native production frontier.
 
 ## Audit fields
 

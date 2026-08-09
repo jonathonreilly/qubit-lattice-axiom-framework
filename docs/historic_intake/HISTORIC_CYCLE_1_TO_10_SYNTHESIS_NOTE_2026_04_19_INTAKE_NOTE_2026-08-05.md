@@ -35,15 +35,19 @@ The 10-cycle scalar-selector terminal: three independent closures all landing on
 - git blob: `224d3b3edafbedbd4926b0b5ffd4f4cb256e2c9f`
 - sha256: `04d9dbcb45b068e245e18af5e8185321066d9da810c3c96b85f871ddadf284eb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/280_CYCLE_1_TO_10_SYNTHESIS_NOTE_2026-04-19.md](../../archive_unlanded/historic_intake_originals/branch01/280_CYCLE_1_TO_10_SYNTHESIS_NOTE_2026-04-19.md)
-- Lines: 296; runners named: historic runner (unpinned, not in this packet): `frontier_dm_dple_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_berry_phase_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_kappa_two_orbit_dimension_factorization(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_moment_ratio_uniformity_theorem(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_z3_joint_projector_identity(.py)`; historic runner (unpinned, not in this packet): `frontier_quark_projector_parameter_audit(.py)`; historic runner (unpinned, not in this packet): `frontier_quark_up_amplitude_rpsr_conditional(.py)`
+- Lines: 296; runners named: historic runner (unpinned, not in this packet): `frontier_dm_dple_theorem​.py`; historic runner (unpinned, not in this packet): `frontier_koide_berry_phase_theorem​.py`; historic runner (unpinned, not in this packet): `frontier_koide_kappa_two_orbit_dimension_factorization​.py`; historic runner (unpinned, not in this packet): `frontier_koide_moment_ratio_uniformity_theorem​.py`; historic runner (unpinned, not in this packet): `frontier_koide_z3_joint_projector_identity​.py`; historic runner (unpinned, not in this packet): `frontier_quark_projector_parameter_audit​.py`; historic runner (unpinned, not in this packet): `frontier_quark_up_amplitude_rpsr_conditional​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Rewrites several superseded notes with updated status and serves as the reading entry point for cycles 1-10.
 
 ## Audit fields
 

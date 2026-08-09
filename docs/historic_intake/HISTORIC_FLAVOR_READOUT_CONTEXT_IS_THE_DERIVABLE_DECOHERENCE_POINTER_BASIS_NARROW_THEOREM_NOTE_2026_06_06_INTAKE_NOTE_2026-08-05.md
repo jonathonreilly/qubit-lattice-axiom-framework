@@ -35,15 +35,19 @@ Same-day CORRECTION: the flavor readout context IS derivable (pointer basis from
 - git blob: `64f6e20384e7617bcd28957689e282c8a5e40e8f`
 - sha256: `5c873ad47735f946dc2fde2c9ed518069fdc7c1bdc6c790b728162b7c3be3ef4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/490_FLAVOR_READOUT_CONTEXT_IS_THE_DERIVABLE_DECOHERENCE_POINTER_BASIS_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/490_FLAVOR_READOUT_CONTEXT_IS_THE_DERIVABLE_DECOHERENCE_POINTER_BASIS_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 114; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_readout_context_pointer_basis_runner(.py)`
+- Lines: 114; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_readout_context_pointer_basis_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FLAVOR_READOUT_CONTEXT_IS_THE_G4_DECOHERENCE_GATE_NARROW_NO_GO_NOTE_2026-06-06.md` — The reversed no-go; its own overclaim warnings intact.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Reverses a same-day sibling no-go; two earlier mechanism guesses (gauge-localization, Dirac-vs-Majorana) are recorded as refuted.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Reverses a same-day sibling no-go; two earlier mechanism guesses (gauge-localization, Dirac-vs-Majorana) are recorded as refuted.
+- Supersession (as known at extraction): Directly and explicitly CORRECTS the same-day no-go FLAVOR_READOUT_CONTEXT_IS_THE_G4_DECOHERENCE_GATE_NARROW_NO_GO_NOTE_2026-06-06 (idx 491): 'that framing was wrong and is corrected here'; its open |K| scale is then bounded by idx 425.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ alpha = 1 - lambda_*^2 (P_t t' + P_d d')/P_x exactly — the empirical slope bec
 - git blob: `eb00159248331be95184f54c2afbb73b39622c60`
 - sha256: `ffdc269d85d11effb8586548f3772a63cb39568abec34c1550c81c12cabccc60`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/859_KOIDE_HIGGS_DRESSED_TRANSPORT_SUSCEPTIBILITY_THEOREM_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch03/859_KOIDE_HIGGS_DRESSED_TRANSPORT_SUSCEPTIBILITY_THEOREM_NOTE_2026-04-20.md)
-- Lines: 167; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_higgs_dressed_transport_susceptibility_theorem(.py)`
+- Lines: 167; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_higgs_dressed_transport_susceptibility_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Sharpens the affine-germ theorem's empirical coefficient into an exact identity; sharpened by the omitted-channel self-energy theorem. The whole eight-note chain is then shown non-selective by the basin-transfer no-go.
 
 ## Audit fields
 

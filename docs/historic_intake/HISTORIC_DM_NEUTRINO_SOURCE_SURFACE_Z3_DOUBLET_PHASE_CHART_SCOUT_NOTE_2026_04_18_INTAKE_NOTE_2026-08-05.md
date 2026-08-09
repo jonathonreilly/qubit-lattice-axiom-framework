@@ -35,15 +35,19 @@ Genuine counterexample refining a retained theorem's scope: Im(z^3) is a chart a
 - git blob: `de0ba82010d24fca61b94a3dc3ac6d0b0f46d234`
 - sha256: `e4991d7d9c84e6c3282bbaf6ec0f758b8305560757b60249a5050c09df259924`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/384_DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_PHASE_CHART_SCOUT_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/384_DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_PHASE_CHART_SCOUT_NOTE_2026-04-18.md)
-- Lines: 342; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_z3_doublet_phase_chart_scout(.py)`
+- Lines: 342; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_z3_doublet_phase_chart_scout​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Finds a genuine counterexample to the parent theorem's delta-evenness claim under a broader operator class; also notes a cited prerequisite note does not exist on the atlas.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Finds a genuine counterexample to the parent theorem's delta-evenness claim under a broader operator class; also notes a cited prerequisite note does not exist on the atlas.
+- Supersession (as known at extraction): Proposes a candidate refinement to the SCOPE of DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md and includes a 'Revised impossibility theorem status' section.
 
 ## Audit fields
 

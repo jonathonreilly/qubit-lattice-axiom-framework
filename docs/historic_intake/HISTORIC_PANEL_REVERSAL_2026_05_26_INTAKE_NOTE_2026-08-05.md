@@ -36,17 +36,21 @@ The PANEL REVERSAL that OVERRIDES the 12-cycle converged no-go: the cycle-9 keyw
 - sha256: `dac7e5eff21545ec7ab925f2d53e8eacfa46a03ef280442b4af06767bca86d4a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11538_PANEL_REVERSAL_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11538_PANEL_REVERSAL_2026-05-26.md)
 - Lines: 131; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
-- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CYCLE_10_FORMAL_NATIVE_NO_GO_WITH_N1_N8_2026-05-26.md` — The withdrawn cycle-10 bounded native no-go itself (delta not derivable from A1+A2 plus retained inventory; N1-N8 all pass in-note) - withdrawn by the attached reversal; the lane's own later artifacts declare it dead.
-- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CYCLE_11_CROSS_SECTOR_NO_GO_EXTENSION_2026-05-26.md` — The cycle-10 extension to the quark CP phase eta via the shared Bernoulli structure (V(6)=5/36=eta^2); inherits the withdrawal; carries an ~11% quark-side empirical discrepancy flag.
-- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/HONEST_FINAL_STATE_2026-05-26.md` — The lane's own retraction of its structural-identification framing (bridge OPEN, reframe refuted) - subsequently contradicted by the panel reversal; kept as the middle state of the arc.
-- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/TRACE_GATE.md` — The withdrawal record with per-artifact trace classifications: 'route space was incomplete' verbatim.
+- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CYCLE_10_FORMAL_NATIVE_NO_GO_WITH_N1_N8_2026-05-26.md` — The withdrawn cycle-10 bounded native no-go itself (delta not derivable from A1+A2 plus retained inventory; N1-N8 all pass in-note) - withdrawn by the attached reversal; the lane's own later artifacts declare it dead. (archived byte-exact at `archive_unlanded/historic_intake_originals/packsci05/11520_CYCLE_10_FORMAL_NATIVE_NO_GO_WITH_N1_N8_2026-05-26.md`, sha256 `2aa699b81c441b23d3e276b3d4571888a43b2293cfb14ab405b12adc6b247837`)
+- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CYCLE_11_CROSS_SECTOR_NO_GO_EXTENSION_2026-05-26.md` — The cycle-10 extension to the quark CP phase eta via the shared Bernoulli structure (V(6)=5/36=eta^2); inherits the withdrawal; carries an ~11% quark-side empirical discrepancy flag. (archived byte-exact at `archive_unlanded/historic_intake_originals/packsci05/11521_CYCLE_11_CROSS_SECTOR_NO_GO_EXTENSION_2026-05-26.md`, sha256 `de76a1e05dc6338ff9ae5c4e0afdce9d26d5dc67a2da878138137716a9b0e254`)
+- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/HONEST_FINAL_STATE_2026-05-26.md` — The lane's own retraction of its structural-identification framing (bridge OPEN, reframe refuted) - subsequently contradicted by the panel reversal; kept as the middle state of the arc. (archived byte-exact at `archive_unlanded/historic_intake_originals/packsci05/11533_HONEST_FINAL_STATE_2026-05-26.md`, sha256 `2199bced13c801e10fafc954ce95f57ab5841a14fbeb2e8dbb152c84d5dd07a5`)
+- `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/TRACE_GATE.md` — The withdrawal record with per-artifact trace classifications: 'route space was incomplete' verbatim. (archived byte-exact at `archive_unlanded/historic_intake_originals/packsci05/11542_TRACE_GATE.md`, sha256 `f32904ed31cf54fb54d3d21e11c35bb2eca05999d725921157595a7c3e961325`)
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-the reversal's 'mostly retained' claim was itself an overclaim caught by the next hostile review
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: the reversal's 'mostly retained' claim was itself an overclaim caught by the next hostile review
+- Supersession (as known at extraction): withdraws CYCLE_10/CYCLE_12 candidate-PR; itself later found overstated by HONEST_FRONTIER_STATE (only 1 of 7 upstream pieces retained)
 
 ## Audit fields
 

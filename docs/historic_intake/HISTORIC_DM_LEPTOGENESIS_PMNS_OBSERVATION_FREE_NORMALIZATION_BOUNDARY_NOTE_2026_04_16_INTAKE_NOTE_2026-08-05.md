@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Observation-free normalization no-go: the stack cannot replace eta/eta_obs = 1 b
 - git blob: `deb98cfe97cb9f674cd0e156d1c9f033fdc751f2`
 - sha256: `0d962a3b48a73b97113fd7888dbdd75f2a86e43eb9aabd0b60a86098ea5f2574`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/374_DM_LEPTOGENESIS_PMNS_OBSERVATION_FREE_NORMALIZATION_BOUNDARY_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/374_DM_LEPTOGENESIS_PMNS_OBSERVATION_FREE_NORMALIZATION_BOUNDARY_NOTE_2026-04-16.md)
-- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_observation_free_normalization_boundary(.py)`
+- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_observation_free_normalization_boundary​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

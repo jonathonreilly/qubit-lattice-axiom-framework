@@ -35,15 +35,19 @@ The structural explanation of the constant-lift failure (closed 2-cycle area acc
 - git blob: `b710f58d012ea2c6255e4f52e4dc0d9890e9087f`
 - sha256: `c61b0e827be0b54cd1c8cc89649f2938bf151915b026a3724ba34bff4faa9ae0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1511_PLAQUETTE_OPEN_SURFACE_HIERARCHY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1511_PLAQUETTE_OPEN_SURFACE_HIERARCHY_NOTE.md)
-- Lines: 164; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_plaquette_open_surface_hierarchy(.py)`
+- Lines: 164; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_plaquette_open_surface_hierarchy​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Follows GAUGE_PLAQUETTE_SOURCE_NO_GO_NOTE; its successors are the first-nonlocal-connected-correction note and then the rooted 3-chain engine, which CORRECTS an earlier boundary-shellable undercount and shows directed-cell face-factorized closure already fails at n = 3.
 
 ## Audit fields
 

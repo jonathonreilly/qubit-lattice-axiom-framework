@@ -35,15 +35,19 @@ April step-scaling: alpha_V flat over a factor 3 in scale (suppressed running me
 - git blob: `e535e2977e6b66516f8083cb2f9488ed6ef55da8`
 - sha256: `c6d4fd84a7b1efd7a80f5a189973ad8b11a89f08ef930df6236d1cae5080b35e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2455_YT_STEP_SCALING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2455_YT_STEP_SCALING_NOTE.md)
-- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_step_scaling(.py)`
+- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_step_scaling​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Quantitative prediction m_t = 208 GeV is 20.5% off PDG and rests on 8 configs at L<=12; the note itself labels this BOUNDED, so no overclaim in text, but the number should not be cited as a framework prediction.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Quantitative prediction m_t = 208 GeV is 20.5% off PDG and rests on 8 configs at L<=12; the note itself labels this BOUNDED, so no overclaim in text, but the number should not be cited as a framework prediction.
+- Supersession (as known at extraction): April-era gauge-side lane, distinct from the May PR #230 scalar/LSZ lane; its self-listed bounds (finite volume, statistics, integration model dependence, scheme matching) are unresolved.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Quark mass ratios from alpha_s(v) + exact integers via two independent agreeing 
 - git blob: `177e0106f6b182ff4937e9953142092102f48999`
 - sha256: `cdbce6576ba56c7532b1db7a7e8fb7e51e18ab06bbd10be598711af09630cfd7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1642_QUARK_MASS_RATIOS_TASTE_STAIRCASE_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch05/1642_QUARK_MASS_RATIOS_TASTE_STAIRCASE_THEOREM_NOTE_2026-04-25.md)
-- Lines: 315; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_mass_ratios_taste_staircase(.py)`
+- Lines: 315; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_mass_ratios_taste_staircase​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supersedes DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE as the gate-closing route, upgrading it from bounded (bridges as inputs) to two independent derivations.
 
 ## Audit fields
 

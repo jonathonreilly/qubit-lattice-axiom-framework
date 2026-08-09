@@ -35,15 +35,19 @@ Strong-field source model extended from rank-one to the finite-support diagonal 
 - git blob: `a533450898175f4f6740b35e7e3996dfe59d6962`
 - sha256: `449db484247ad85ec79099c1ee8a968a05e0220e99fa656e78c1b43bce07a32d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/333_DISTRIBUTED_SOURCE_SPACETIME_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/333_DISTRIBUTED_SOURCE_SPACETIME_CLOSURE_NOTE.md)
-- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_distributed_source_spacetime_closure(.py)`
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_distributed_source_spacetime_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Generalizes the earlier rank-one point-source theorem.
 
 ## Audit fields
 

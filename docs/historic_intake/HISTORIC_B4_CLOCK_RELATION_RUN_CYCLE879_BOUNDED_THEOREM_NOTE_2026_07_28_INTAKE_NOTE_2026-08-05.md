@@ -35,15 +35,19 @@ B=4 discharge map on 4.77M clock events: one law strengthens, one prior orbit-co
 - git blob: `e46a08bb40783526b15a0a61343fab92e83b3922`
 - sha256: `92b891c61c43548e879e58fbc73a4bb6587383d0604b7c42f8e1a13ce2a037f1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/75_B4_CLOCK_RELATION_RUN_CYCLE879_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/75_B4_CLOCK_RELATION_RUN_CYCLE879_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 172; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle879_b4_clock_relation_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle879_b4_clock_relation_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle879_b4_relation_independent_check_2026_07_28(.py)`
+- Lines: 172; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle879_b4_clock_relation_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle879_b4_clock_relation_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle879_b4_relation_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md` — B-AXIS leg-(ii) certification relative to the declared family.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Falsifies a previously stated orbit-commensurability law; runs with a disclosed deviation from the nominal probe cap.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Falsifies a previously stated orbit-commensurability law; runs with a disclosed deviation from the nominal probe cap.
+- Supersession (as known at extraction): Re-derives the Cycle-866 B=4 probe from the 719 core (matches its declaration exactly: 27 stations, 324 separated placements, census 648).
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The 'unconditional retained closure' claim via carrier-choice derivation — pul
 - git blob: `c01106c087b71ef2bc64a04858182f55ffcc2d24`
 - sha256: `0018f1b267dc05b1a313fa79017f959174d40a00d45b918a8547e46ce17f62f3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1054_KOIDE_Q_UNCONDITIONAL_CLOSURE_VIA_Q_SO2_INVARIANCE_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch04/1054_KOIDE_Q_UNCONDITIONAL_CLOSURE_VIA_Q_SO2_INVARIANCE_THEOREM_NOTE_2026-04-25.md)
-- Lines: 399; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_unconditional_closure_via_q_so2_invariance(.py)`
+- Lines: 399; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_unconditional_closure_via_q_so2_invariance​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Strong claim ('unconditional closure', 'retained closure on origin/main') resting on a single new observation (Q's SO(2)-invariance) plus a 'QFT-standard interpretation' of the Observable Principle partition function; the ground-state-extremization step is an interpretive import rather than a derived law.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Strong claim ('unconditional closure', 'retained closure on origin/main') resting on a single new observation (Q's SO(2)-invariance) plus a 'QFT-standard interpretation' of the Observable Principle partition function; the ground-state-extremization step is an interpretive import rather than a derived law.
+- Supersession (as known at extraction): Self-declared SUPERSEDING note: explicitly supersedes the conditional framing of KOIDE_DELTA_2_OVER_9_RAD_REVIEW_RESPONSE_NOTE_2026-04-25 for the Q-side (and delta-side) specifically, and answers Finding 1 of REVIEW_HOSTILE_FINDINGS_2026-04-25 — reads as the KOIDE_Q family's closing/terminal note.
 
 ## Audit fields
 

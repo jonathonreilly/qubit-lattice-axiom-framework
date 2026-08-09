@@ -35,7 +35,8 @@ The choice-free SU(3) chain closing the codex 'hand-picked 3-of-4' hold — grap
 - git blob: `946045189001772497f4a04cfa8348e004d12e67`
 - sha256: `c1ae50604edefa7272e30a455d38c41f4f98cafc3f485f1e8c4dcf2a0d5b2789`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2012_SU3_CANONICAL_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2012_SU3_CANONICAL_CLOSURE_NOTE.md)
-- Lines: 259; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_su3_canonical_closure(.py)`
+- Lines: 259; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_su3_canonical_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ The choice-free SU(3) chain closing the codex 'hand-picked 3-of-4' hold — grap
 - `docs/SU3_FORMAL_THEOREM_NOTE.md` — SU(3) derivation family member (2010's bridge block noted).
 - `docs/SU3_TASTE_BREAKING_NOTE.md` — SU(3) derivation family member (2010's bridge block noted).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supersedes SU3_COMMUTANT_NOTE by integrating the selector, and supplies the canonical weak-axis selector demanded by the blockers at idx 1896 and idx 2010; FAMILY TERMINAL for the SU(3) canonical-derivation chain.
 
 ## Audit fields
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Shipped exact rank theorem: the full lawful Cycle-553 sink has six independent b
 - git blob: `61a9710427ca69f0f97a8faaa5d3aec7d07e6229`
 - sha256: `cd2a13f0949e7372e2ac97fb3c655ee8801c1200aa87ee15b75947692b154435`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2998_PHYSICAL_RELATIONAL_FRAME_COMPRESSION_ISOMETRY_CYCLE556_NOTE_2026-07-21.md](../../archive_unlanded/historic_intake_originals/branch09/2998_PHYSICAL_RELATIONAL_FRAME_COMPRESSION_ISOMETRY_CYCLE556_NOTE_2026-07-21.md)
-- Lines: 571; runners named: historic runner (unpinned, not in this packet): `scripts/physical_relational_frame_compression_isometry_cycle556_2026_07_21(.py)`
+- Lines: 571; runners named: historic runner (unpinned, not in this packet): `scripts/physical_relational_frame_compression_isometry_cycle556_2026_07_21​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Resolves the six-to-three compression question left by Cycle 553 (idx 2969) with a clean impossibility-plus-construction pair — one of the few genuine no-gos in the sweep, and correctly scoped.
 
 ## Audit fields
 

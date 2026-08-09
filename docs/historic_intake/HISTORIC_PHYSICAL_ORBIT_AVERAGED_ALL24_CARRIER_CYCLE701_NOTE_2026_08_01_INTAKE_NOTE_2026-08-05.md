@@ -35,16 +35,20 @@ An all-24-equivariant real-space coframe carrier EXISTS (orbit-averaged, defect 
 - git blob: `70f074ff547d27f7a40f289d897b7e737dd29a25`
 - sha256: `82db1fc27862175f07d519d27af84c4c782a0d4aca10eba74e3d58b6af706ac6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3087_PHYSICAL_ORBIT_AVERAGED_ALL24_CARRIER_CYCLE701_NOTE_2026-08-01.md](../../archive_unlanded/historic_intake_originals/recovery/3087_PHYSICAL_ORBIT_AVERAGED_ALL24_CARRIER_CYCLE701_NOTE_2026-08-01.md)
-- Lines: 208; runners named: historic runner (unpinned, not in this packet): `scripts/physical_orbit_averaged_all24_carrier_cycle701_2026_08_01(.py)`
+- Lines: 208; runners named: historic runner (unpinned, not in this packet): `scripts/physical_orbit_averaged_all24_carrier_cycle701_2026_08_01​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PHYSICAL_MULTICOSET_STABILIZER_LATTICE_CYCLE702_NOTE_2026-08-01.md` — The equivariance lattice/order-ceiling map behind the carrier result.
 - `docs/PHYSICAL_ORBIT_AVERAGED_K_ENDPOINT_TRANSPORT_D3_SELECTION_CYCLE705_NOTE_2026-08-01.md` — Locates the six-frame restriction in one declared contraction; evidence for the carrier story.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-noted: all cited dependency notes are landed and unaudited on main.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-noted: all cited dependency notes are landed and unaudited on main.
+- Supersession (as known at extraction): Addresses Cycle 700's PARTIAL 'real-space all-24 carrier' contract row (two-carrier split with the coframe carrier at exactly D3); generalized by the sister Cycle 702 multi-coset lattice.
 
 ## Audit fields
 

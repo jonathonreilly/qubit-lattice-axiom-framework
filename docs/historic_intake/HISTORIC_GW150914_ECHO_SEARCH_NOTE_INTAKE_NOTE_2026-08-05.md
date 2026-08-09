@@ -35,15 +35,19 @@ The GW echo SEARCH: top peak 121.6 ms at 3.0 sigma exactly 2.00x a subharmonic, 
 - git blob: `5a9c1acebe21b18d2ef8e560d404da2bb0f90ffa`
 - sha256: `3aa90a92c1faea24cf85d7f8bae88e06df3922f8d7eeb1e10cfb25ca9c481f90`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/657_GW150914_ECHO_SEARCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/657_GW150914_ECHO_SEARCH_NOTE.md)
-- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/gw150914_echo_search(.py)`; historic runner (unpinned, not in this packet): `scripts/gw150914_echo_definitive(.py)`
+- Lines: 153; runners named: historic runner (unpinned, not in this packet): `scripts/gw150914_echo_search​.py`; historic runner (unpinned, not in this packet): `scripts/gw150914_echo_definitive​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Lists five statistical caveats itself: the trials factor on a 3-sigma peak in 1000 trials, a global H1-L1 correlation of -0.10, no coincident peaks in the two top-5 lists, no matched filter or injections, and the 2:1 ratio possibly being coincidental. Directly at odds with the sibling gravity lane's four-mechanism 'echo amplitude = 0' conclusion.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Lists five statistical caveats itself: the trials factor on a 3-sigma peak in 1000 trials, a global H1-L1 correlation of -0.10, no coincident peaks in the two top-5 lists, no matched filter or injections, and the 2:1 ratio possibly being coincidental. Directly at odds with the sibling gravity lane's four-mechanism 'echo amplitude = 0' conclusion.
+- Supersession (as known at extraction): Compares directly against Abedi et al. (2017), whose ~100 ms peak sits between this analysis's 61 ms and 122 ms harmonics.
 
 ## Audit fields
 

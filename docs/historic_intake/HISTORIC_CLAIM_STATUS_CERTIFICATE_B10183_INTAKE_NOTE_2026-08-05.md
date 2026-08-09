@@ -35,16 +35,20 @@ Verification-integrity: eight DM runners carried stale read('docs/X.md') calls t
 - git blob: `0c85d7636fb0d38cb15c506a48361d6acd35f65a`
 - sha256: `ce827d7b64213b5dda6886c7f91b293fb56884be3f2c4120d3bbfda02b6d6d82`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10183_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10183_CLAIM_STATUS_CERTIFICATE.md)
-- Lines: 74; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_breaking_triplet_axiom_law_attempt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_projection_theorem(.py)`; historic runner (unpinned, not in this packet): `(and six more DM runners)`
+- Lines: 74; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_breaking_triplet_axiom_law_attempt​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_projection_theorem​.py`; historic runner (unpinned, not in this packet): `(and six more DM runners)`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/audit-stale-path-dm-cluster-20260501/CLAIM_STATUS_CERTIFICATE_BLOCK02.md` — Companion cleanup (PR #246's sibling): eight further runners split into deleted-note removal and archived-note redirects; sixteen runners total across the two blocks.
 - `.claude/science/physics-loops/audit-stale-path-dm-cluster-20260501/CLAIM_STATUS_CERTIFICATE_BLOCK03.md` — Two-cohort synthesis of the 2026-05-01 audit ledger: Cohort A = 16 runner stale-path bugs addressed by the paired PRs.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Eight runners were silently failing on deleted notes and their audit verdicts were noise, not physics - a systemic verification-integrity finding.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Eight runners were silently failing on deleted notes and their audit verdicts were noise, not physics - a systemic verification-integrity finding.
+- Supersession (as known at extraction): Repairs damage from the 2026-04-16 trim commit d2e754fdc.
 
 ## Audit fields
 

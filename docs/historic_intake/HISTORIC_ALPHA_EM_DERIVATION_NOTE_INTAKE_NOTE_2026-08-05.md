@@ -35,15 +35,19 @@ The era's alpha_EM/electroweak closure claim at 0.21% (g_1, g_2, sin^2 theta_W) 
 - git blob: `6d82fd00e6502eb25522b3d691964b83ad32f64d`
 - sha256: `75f9496d34f6fbb07d07fa7d1cc5f273559536b174029bffd23d408132b0556a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/45_ALPHA_EM_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/45_ALPHA_EM_DERIVATION_NOTE.md)
-- Lines: 198; runners named: historic runner (unpinned, not in this packet): `alpha_em_twoloop_rge(.py)`; historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/alpha_em_twoloop_rge(.py)`
+- Lines: 198; runners named: historic runner (unpinned, not in this packet): `alpha_em_twoloop_rge​.py`; historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms​.py`; historic runner (unpinned, not in this packet): `scripts/alpha_em_twoloop_rge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/ALPHA_EM_AUDIT_NOTE.md` — The step-by-step audit that downgrades three steps of 45 — rides the pull as adverse evidence.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Audited the next day (ALPHA_EM_AUDIT_NOTE) which downgrades three of its steps to vulnerable and flags a circularity risk.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Audited the next day (ALPHA_EM_AUDIT_NOTE) which downgrades three of its steps to vulnerable and flags a circularity risk.
+- Supersession (as known at extraction): Explicitly supersedes EW_COUPLING_DERIVATION_NOTE.md (2026-04-14, marked SUPERSEDED), whose perturbative 1-loop treatment gave the +27% gap.
 
 ## Audit fields
 

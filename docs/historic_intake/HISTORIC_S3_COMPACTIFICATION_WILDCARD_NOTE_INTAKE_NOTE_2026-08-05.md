@@ -35,15 +35,19 @@ The independent algebraic route: Cl(3) -> Cl+(3) = H -> Spin(3) = SU(2) = S^3 (3
 - git blob: `b89e242ffc3fe060185c4bb5423319218a5723d1`
 - sha256: `58e72f7a91210bf60535217af81c28a8a504f3c30511fae6705d3c4e13546ea3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1853_S3_COMPACTIFICATION_WILDCARD_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1853_S3_COMPACTIFICATION_WILDCARD_NOTE.md)
-- Lines: 188; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_compactification_wildcard(.py)`
+- Lines: 188; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_compactification_wildcard​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Logically independent second path to S^3 with a different gap from the main topological path; feeds idx 1851.
 
 ## Audit fields
 

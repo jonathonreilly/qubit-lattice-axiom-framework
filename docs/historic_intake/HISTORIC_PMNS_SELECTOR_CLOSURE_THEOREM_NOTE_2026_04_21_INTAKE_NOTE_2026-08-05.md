@@ -35,15 +35,19 @@ The 'retained-forced, zero PMNS observational inputs' selector claim — pulled 
 - git blob: `4d17fe9bbc4103fd1dd108d79419a9838ef8dab2`
 - sha256: `e7514b318cc9cd4804e73ccc47c5ca3aade03a444da09afa32c70cead6aa0ce7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1581_PMNS_SELECTOR_CLOSURE_THEOREM_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1581_PMNS_SELECTOR_CLOSURE_THEOREM_NOTE_2026-04-21.md)
-- Lines: 237; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_closure(.py)`
+- Lines: 237; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PMNS_SELECTOR_CLOSURE_PROPOSAL_README_2026-04-21.md` — Proposal form of the selector closure.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Title-vs-content: claims 'retained-forced' and 'zero PMNS observational inputs' while listing the A-BCC basin (T2K-grounded) and sigma_hier as inputs, and while the iter chain shows the identities were selected by agreement with PDG angles.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Title-vs-content: claims 'retained-forced' and 'zero PMNS observational inputs' while listing the A-BCC basin (T2K-grounded) and sigma_hier as inputs, and while the iter chain shows the identities were selected by agreement with PDG angles.
+- Supersession (as known at extraction): Theorem-form companion of the proposal README; both rest on the iter-10 identity triple.
 
 ## Audit fields
 

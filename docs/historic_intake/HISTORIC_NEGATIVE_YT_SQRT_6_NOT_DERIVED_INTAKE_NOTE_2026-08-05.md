@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ The y_t Ward demotion: four attempts fail — y_t = g_s/sqrt(6) as a 'Ward ident
 - sha256: `a2022447f845154083009f84d037e2663a8e6d56ea3aa5dc830a72c133dc392b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1181_NEGATIVE_YT_SQRT_6_NOT_DERIVED.md](../../archive_unlanded/historic_intake_originals/branch04/1181_NEGATIVE_YT_SQRT_6_NOT_DERIVED.md)
 - Lines: 163; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Demotes a headline framework result (Gate 4 in the master scorecard) from theorem to numerically-supported conjecture.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Demotes a headline framework result (Gate 4 in the master scorecard) from theorem to numerically-supported conjecture.
+- Supersession (as known at extraction): Directly contradicts the 'Ward identity' framing carried by the y_t derivation chain (e.g. YT_FORMAL_THEOREM_NOTE, cited as CLOSED in the MASTER_DERIVATION_SCORECARD at idx_pos 1139).
 
 ## Audit fields
 

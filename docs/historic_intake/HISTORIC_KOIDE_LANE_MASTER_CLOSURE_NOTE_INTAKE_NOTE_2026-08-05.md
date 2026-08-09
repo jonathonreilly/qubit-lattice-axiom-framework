@@ -35,15 +35,19 @@ The Koide lane's canonical master-closure entry: sub-0.01% mass matches WITH the
 - git blob: `eed5eee2566ae189714171bb3d43900bb3847e0d`
 - sha256: `19f87bf39d2ec5a481fdc48c7a2cb216b2930a8c0b4cad795e6f4e20f4f2dd76`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/867_KOIDE_LANE_MASTER_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/867_KOIDE_LANE_MASTER_CLOSURE_NOTE.md)
-- Lines: 517; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_lane_regression(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_positive_parent_operator_construction(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_as_pin_replaces_h_star_witness(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_name_free_set_equality(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_line_axis_fourier_bridge(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_equals_lefschetz_sum(.py)`
+- Lines: 517; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_lane_regression​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_positive_parent_operator_construction​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_as_pin_replaces_h_star_witness​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_name_free_set_equality​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_line_axis_fourier_bridge​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_equals_lefschetz_sum​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Headline 'closes axiom-only' coexists with an admitted load-bearing non-axiom step (A1) and with the Lefschetz route being explicitly non-substitutive.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Headline 'closes axiom-only' coexists with an admitted load-bearing non-axiom step (A1) and with the Lefschetz route being explicitly non-substitutive.
+- Supersession (as known at extraction): Canonical reviewer entry point consolidating the lane; supersedes the individual closure notes it indexes while conceding A1's non-axiom-native status.
 
 ## Audit fields
 

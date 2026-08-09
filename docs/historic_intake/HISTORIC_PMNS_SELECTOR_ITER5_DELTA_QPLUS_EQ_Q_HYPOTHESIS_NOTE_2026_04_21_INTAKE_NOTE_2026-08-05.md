@@ -35,7 +35,8 @@ The honest kill: delta*q_+ = 2/3 FAILS at 1e-4 (0.16% deviation at high precisio
 - git blob: `eb7a64c109f3d9bd26559e73658b78e84b4fbf6f`
 - sha256: `d5c37c28323e01d73d8d23937b59ac909661d258cd1e6058012462e3f1d4f052`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1588_PMNS_SELECTOR_ITER5_DELTA_QPLUS_EQ_Q_HYPOTHESIS_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1588_PMNS_SELECTOR_ITER5_DELTA_QPLUS_EQ_Q_HYPOTHESIS_NOTE_2026-04-21.md)
-- Lines: 185; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter5_precision_delta_qplus_product(.py)`
+- Lines: 185; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter5_precision_delta_qplus_product​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -48,9 +49,12 @@ The honest kill: delta*q_+ = 2/3 FAILS at 1e-4 (0.16% deviation at high precisio
 - `docs/PMNS_SELECTOR_ITER8_VARIATIONAL_1D_CURVE_NEGATIVE_NOTE_2026-04-21.md` — Selector-iter chain member; carried by the near-miss/failure records.
 - `docs/PMNS_SELECTOR_ITER9_ABCC_AND_SELECTOR_REFORMULATION_NOTE_2026-04-21.md` — Selector-iter chain member; carried by the near-miss/failure records.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly records the identity FAILS at 1e-4, yet the downstream iter-10 / proposal / theorem notes present it as a retained identity; also documents a corrected extraction-convention error in its own first draft.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly records the identity FAILS at 1e-4, yet the downstream iter-10 / proposal / theorem notes present it as a retained identity; also documents a corrected extraction-convention error in its own first draft.
+- Supersession (as known at extraction): Settles the iter-4 hint as a near-miss rather than an identity - a fact the later closure notes do not surface.
 
 ## Audit fields
 

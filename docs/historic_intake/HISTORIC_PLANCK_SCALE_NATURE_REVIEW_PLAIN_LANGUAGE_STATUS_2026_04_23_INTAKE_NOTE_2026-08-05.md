@@ -35,15 +35,19 @@ The reviewer-facing conditional verdict: Nature-grade as CONDITIONAL Planck deri
 - git blob: `aa197b6531f3605fb3afd20990909ed994dd24c7`
 - sha256: `64e7fd69656d55772e1a01f917318d6da3fc74e084ae9d53f8d1c675d18b2040`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1444_PLANCK_SCALE_NATURE_REVIEW_PLAIN_LANGUAGE_STATUS_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1444_PLANCK_SCALE_NATURE_REVIEW_PLAIN_LANGUAGE_STATUS_2026-04-23.md)
-- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_axiom_only_gravity_unit_map_final_audit(.py)`
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_axiom_only_gravity_unit_map_final_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Its 'conditional only' verdict sits in tension with sibling notes in the same family titled 'closure theorem' and 'airtight' - a reviewer reading only titles would get the wrong status.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Its 'conditional only' verdict sits in tension with sibling notes in the same family titled 'closure theorem' and 'airtight' - a reviewer reading only titles would get the wrong status.
+- Supersession (as known at extraction): Plain-language restatement of the axiom-only gravity unit-map final audit; shares its verifier script.
 
 ## Audit fields
 

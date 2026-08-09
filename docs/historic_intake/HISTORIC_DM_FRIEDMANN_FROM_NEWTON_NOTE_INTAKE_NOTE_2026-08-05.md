@@ -35,15 +35,19 @@ Friedmann k=0 reclassified from GR input to lattice-derived Newtonian shell argu
 - git blob: `8294df9734a0a6e36f931d86d98dbb9e3987908d`
 - sha256: `d5832fe44f0940c5ce5b34791196444c1a1d4f00caecb37946e7a69ee2fc6d15`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/360_DM_FRIEDMANN_FROM_NEWTON_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/360_DM_FRIEDMANN_FROM_NEWTON_NOTE.md)
-- Lines: 231; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton(.py)`
+- Lines: 231; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

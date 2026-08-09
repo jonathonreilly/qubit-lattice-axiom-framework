@@ -35,15 +35,19 @@ Recurrent encode-update-decode sandwich: exp(-i phi_L) S_L J_L = J_L G_L for eve
 - git blob: `bf4399b63fb61983645ff8e705546ac5ea64595e`
 - sha256: `ce4a2c0032c841f17f0e634af918cdfcb3825718997cc8e54ee567bfd11f0931`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3107_RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md](../../archive_unlanded/historic_intake_originals/recovery/3107_RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md)
-- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_package_acceptance_2026_08_03(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03(.py)`
+- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_package_acceptance_2026_08_03​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md` — The F17 seam-bank package extending the sandwich; does not close its own lane by its own statement.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The inherited one-particle mass numbers (analytic 0.4534056541748852, rest 0.4534056541748851, residual 1.11e-16) are stated to remain conditional inputs, not selected laws; audit status remains the independent audit lane's responsibility.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The inherited one-particle mass numbers (analytic 0.4534056541748852, rest 0.4534056541748851, residual 1.11e-16) are stated to remain conditional inputs, not selected laws; audit status remains the independent audit lane's responsibility.
+- Supersession (as known at extraction): Builds on the Cycle-870 physical matter compiler; retires forward-only replay.
 
 ## Audit fields
 

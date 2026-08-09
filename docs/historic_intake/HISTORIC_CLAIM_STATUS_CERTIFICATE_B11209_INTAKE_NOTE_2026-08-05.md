@@ -36,14 +36,18 @@ Correction of a prior parity-sector assignment: the repaired surface is scalar-i
 - sha256: `8ae431097f3bedcb898ab7e33f766d24c8ebee6f1f0d84ffcfea2ef142705265`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci04/11209_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci04/11209_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 16; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-retracts a prior parity-sector assignment; the supervisor should check whether the earlier K-even claim had landed in docs/
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: retracts a prior parity-sector assignment; the supervisor should check whether the earlier K-even claim had landed in docs/
+- Supersession (as known at extraction): CORRECTION of a prior claim: the labeled generation Vandermonde orientation was previously claimed as part of the K-even sector and is now withdrawn from it
 
 ## Audit fields
 

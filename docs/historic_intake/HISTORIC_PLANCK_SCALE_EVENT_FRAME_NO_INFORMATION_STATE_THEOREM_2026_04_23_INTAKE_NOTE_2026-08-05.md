@@ -35,15 +35,19 @@ RETRACTION on the record: the U(2)^4 default-state argument replaced by the inva
 - git blob: `86211c686c51b5ee189be242940b54f5b54ecd03`
 - sha256: `c7d45c1d63276379fb694dc7ae98320711f15e91886275a3770ace744ad77019`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1422_PLANCK_SCALE_EVENT_FRAME_NO_INFORMATION_STATE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1422_PLANCK_SCALE_EVENT_FRAME_NO_INFORMATION_STATE_THEOREM_2026-04-23.md)
-- Lines: 167; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_event_frame_no_information_state_theorem(.py)`
+- Lines: 167; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_event_frame_no_information_state_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts the earlier U(2)^4-based source-free state argument used elsewhere in the lane as reviewer-vulnerable.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts the earlier U(2)^4-based source-free state argument used elsewhere in the lane as reviewer-vulnerable.
+- Supersession (as known at extraction): Explicitly replaces the older U(2)^4 default-state argument and removes that vulnerability; feeds the native derivation packet's state step.
 
 ## Audit fields
 

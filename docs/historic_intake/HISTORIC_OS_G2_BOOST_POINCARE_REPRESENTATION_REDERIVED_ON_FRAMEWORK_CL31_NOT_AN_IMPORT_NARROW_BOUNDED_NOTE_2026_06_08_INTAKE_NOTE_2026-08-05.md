@@ -35,15 +35,19 @@ OS reconstruction's last residual (G2) made framework-native — boost-sector co
 - git blob: `befcbdc4b8b2a8b794fd0add3973bd28ddb78c85`
 - sha256: `337b9f9fa0184dd176b8b50010996143df9fc16cbcbf59ce3e82dd635c58184c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1245_OS_G2_BOOST_POINCARE_REPRESENTATION_REDERIVED_ON_FRAMEWORK_CL31_NOT_AN_IMPORT_NARROW_BOUNDED_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch04/1245_OS_G2_BOOST_POINCARE_REPRESENTATION_REDERIVED_ON_FRAMEWORK_CL31_NOT_AN_IMPORT_NARROW_BOUNDED_NOTE_2026-06-08.md)
-- Lines: 178; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_os_g2_boost_poincare_rederived_on_framework(.py)`
+- Lines: 178; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_os_g2_boost_poincare_rederived_on_framework​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Concedes the boost sector's content was always standard — the advance is provenance, not physics.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Concedes the boost sector's content was always standard — the advance is provenance, not physics.
+- Supersession (as known at extraction): Removes the 'cited as textbook methodology, not re-derived on the framework's surface' status the reconstruction note carried for G2.
 
 ## Audit fields
 

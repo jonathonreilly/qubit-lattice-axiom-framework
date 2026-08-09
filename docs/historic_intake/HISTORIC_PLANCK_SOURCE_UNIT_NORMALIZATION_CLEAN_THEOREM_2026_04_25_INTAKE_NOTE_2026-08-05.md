@@ -35,15 +35,19 @@ Source-unit correction: repo wording G_lat = 1/(4 pi) makes the Planck map give 
 - git blob: `402a26567feaeeae67f9b449c07da1fa107b5f17`
 - sha256: `ed3f1a4ebb72e15acf499284831bd521c2e46e6cee8cc9ed8f7de93a1be93b23`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1496_PLANCK_SOURCE_UNIT_NORMALIZATION_CLEAN_THEOREM_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch05/1496_PLANCK_SOURCE_UNIT_NORMALIZATION_CLEAN_THEOREM_2026-04-25.md)
-- Lines: 369; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_source_unit_normalization_clean_theorem(.py)`
+- Lines: 369; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_source_unit_normalization_clean_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Corrects previously circulated repo wording (G_lat = 1/(4 pi)) that, if kept, makes the Planck map give 2 sqrt(pi) rather than 1.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Corrects previously circulated repo wording (G_lat = 1/(4 pi)) that, if kept, makes the Planck map give 2 sqrt(pi) rather than 1.
+- Supersession (as known at extraction): Corrects which quantity earlier notes called the physical Newton constant; explicitly retracts the mainline wording 'lattice Newton constant = 1/(4 pi)' as a bare-source mislabel.
 
 ## Audit fields
 

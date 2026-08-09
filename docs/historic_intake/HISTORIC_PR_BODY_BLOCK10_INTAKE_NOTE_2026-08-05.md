@@ -36,14 +36,18 @@ TERMINAL index of the 2026-04-29 axiom-to-main-lane cascade: ten blocks across P
 - sha256: `8040cead3dcdfe4b7cac55fbdc91c2d3dc4619200ca55d8e98b58d47b701c48a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10265_PR_BODY_BLOCK10.md](../../archive_unlanded/historic_intake_originals/packsci01/10265_PR_BODY_BLOCK10.md)
 - Lines: 63; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Fourteen publication-matrix promotions were queued off a chain whose root block (V8) rests on an admitted interpretive inference and whose two key authorities were demoted three days later in the May audit campaign.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Fourteen publication-matrix promotions were queued off a chain whose root block (V8) rests on an admitted interpretive inference and whose two key authorities were demoted three days later in the May audit campaign.
+- Supersession (as known at extraction): TERMINAL of the 2026-04-29 axiom-to-main-lane cascade (blocks 01-10, idx 10254-10265); NAMES A DOCS LANDING: docs/AXIOM_TO_MAIN_LANE_CASCADE_SYNTHESIS_NOTE_2026-04-29.md.
 
 ## Audit fields
 

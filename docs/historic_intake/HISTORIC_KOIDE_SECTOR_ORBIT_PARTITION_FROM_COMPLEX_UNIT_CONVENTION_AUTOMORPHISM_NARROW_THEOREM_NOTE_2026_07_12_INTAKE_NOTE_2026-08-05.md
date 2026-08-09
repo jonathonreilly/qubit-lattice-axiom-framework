@@ -35,15 +35,19 @@ Native sector-orbit partition derivation (complex unit a convention; the 2-simpl
 - git blob: `3da8dd4038f59b7eb90b45f384ee953d9d7a9cc0`
 - sha256: `874658c6d6ec0f6a10cfabdbf70c89c3b587e9f4a19a4e991f394ceda69902e8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1080_KOIDE_SECTOR_ORBIT_PARTITION_FROM_COMPLEX_UNIT_CONVENTION_AUTOMORPHISM_NARROW_THEOREM_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch04/1080_KOIDE_SECTOR_ORBIT_PARTITION_FROM_COMPLEX_UNIT_CONVENTION_AUTOMORPHISM_NARROW_THEOREM_NOTE_2026-07-12.md)
-- Lines: 180; runners named: historic runner (unpinned, not in this packet): `scripts/koide_sector_orbit_partition_complex_unit_convention_2026_07_12(.py)`
+- Lines: 180; runners named: historic runner (unpinned, not in this packet): `scripts/koide_sector_orbit_partition_complex_unit_convention_2026_07_12​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Derives the partition half of the supplied context consumed by ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_...2026-07-11 (a named but unexecuted discharge target); supersedes the einselection-era treatment of K-reality as a posited predicate for the partition half only; leaves the KCPT bridge unchanged.
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ TERMINAL scoreboard of the proof-grade-close campaign: fifty-five PRs #5772-#583
 - sha256: `661dc3fe66fd6a7868e6c1e81d578e8d8c5a22bd3b1d29e7107cf29209d286ae`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10801_SCOREBOARD.md](../../archive_unlanded/historic_intake_originals/packsci03/10801_SCOREBOARD.md)
 - Lines: 73; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/proof-grade-close-20260729/TOE_LANE_PROGRESS.md` — Three-leg axiom-update criterion scored: Leg 2 NON-ENTAILMENT proven twice (Models A/B at the frozen tie, 29/29); NO AXIOM UPDATE IS TRIGGERED; recurrent worker-hygiene issues disclosed.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-one supervisor baseline error (the 801 'silent' compression) was caught by a checker's union arithmetic and corrected end-to-end (#5829); sixteen checker reversals imply a ~29 percent primary-verdict correction rate
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: one supervisor baseline error (the 801 'silent' compression) was caught by a checker's union arithmetic and corrected end-to-end (#5829); sixteen checker reversals imply a ~29 percent primary-verdict correction rate
+- Supersession (as known at extraction): TERMINAL scoreboard for the campaign; names 55 landed PRs #5772-#5833. Sixteen checker reversals/corrections materially changed shipped verdicts, including two constructive reopenings where the checker FOUND the missing object.
 
 ## Audit fields
 

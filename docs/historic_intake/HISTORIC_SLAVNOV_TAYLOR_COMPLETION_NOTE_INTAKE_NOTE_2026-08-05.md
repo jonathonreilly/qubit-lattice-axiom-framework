@@ -35,15 +35,19 @@ The Slavnov-Taylor CLOSED declaration on an L=4 lattice — pulled WITH the flag
 - git blob: `3c168aa484fb99fb112940a7784e5a3cebf2ba36`
 - sha256: `e4ad3852247d53ef34d794968da72c6549d06f5d9a2ad137b934f8328c4f1ce9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1939_SLAVNOV_TAYLOR_COMPLETION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1939_SLAVNOV_TAYLOR_COMPLETION_NOTE.md)
-- Lines: 176; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_slavnov_taylor_completion(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt_wildcard(.py)`
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_slavnov_taylor_completion​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_renormalized_yt_wildcard​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Declares a lane CLOSED on the basis of an L=4 lattice and algebraic identities; the underlying y_t chain still imports alpha_s(M_Pl) as BOUNDED.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Declares a lane CLOSED on the basis of an L=4 lattice and algebraic identities; the underlying y_t chain still imports alpha_s(M_Pl) as BOUNDED.
+- Supersession (as known at extraction): Closes the single open item left by RENORMALIZED_YT_THEOREM_NOTE (idx 1802); FAMILY TERMINAL for the Lane 4 lattice-level argument.
 
 ## Audit fields
 

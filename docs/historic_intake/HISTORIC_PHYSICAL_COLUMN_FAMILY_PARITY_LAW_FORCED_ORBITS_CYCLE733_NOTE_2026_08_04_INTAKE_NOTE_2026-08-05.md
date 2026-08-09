@@ -35,15 +35,19 @@ Ten of eleven column-subset costs obey a parity law by exact elimination; the el
 - git blob: `5ff655c72b45bee5f8e5dfa89b7a1d6d90af495e`
 - sha256: `94656ee9fb9e53f34fc7739e76b333e340185adf273c8004e565638cc6d58480`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3096_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3096_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md)
-- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04(.py)`
+- Lines: 292; runners named: historic runner (unpinned, not in this packet): `scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Notes that the two minimum principles are not the same: every spacetime minimiser also has least spatial cost, but the converse is refuted by an exhibited dissection.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Notes that the two minimum principles are not the same: every spacetime minimiser also has least spatial cost, but the converse is refuted by an exhibited dissection.
+- Supersession (as known at extraction): Generalizes the previous cycle's single-cost evenness certificate to the whole eleven-member column family; inherits (re-verified, not re-derived) the previous cycle's 1792-piece spatial floor support.
 
 ## Audit fields
 

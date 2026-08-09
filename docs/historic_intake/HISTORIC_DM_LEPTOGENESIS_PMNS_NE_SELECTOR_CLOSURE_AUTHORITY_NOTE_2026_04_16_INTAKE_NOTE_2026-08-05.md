@@ -35,7 +35,8 @@ The April PMNS/leptogenesis selector chain's TERMINAL authority: six exact piece
 - git blob: `a1a96824b471bad11cc4ed8c9284b686f8be2dbc`
 - sha256: `d11f2ad3688fa5b28fdcf207a5b24028d968038704bf560181ed1ba6ef387b39`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/372_DM_LEPTOGENESIS_PMNS_NE_SELECTOR_CLOSURE_AUTHORITY_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/372_DM_LEPTOGENESIS_PMNS_NE_SELECTOR_CLOSURE_AUTHORITY_NOTE_2026-04-16.md)
-- Lines: 165; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_action_phase_reduction_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_selector_coincidence_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_real_slice_intrinsic_class_certificate(.py)`
+- Lines: 165; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_action_phase_reduction_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_selector_coincidence_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_real_slice_intrinsic_class_certificate​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,9 +50,12 @@ The April PMNS/leptogenesis selector chain's TERMINAL authority: six exact piece
 - `docs/DM_LEPTOGENESIS_PMNS_STATIONARY_DOMINANCE_GAP_SELECTOR_NOTE_2026-04-16.md` — Dominance-gap selection; broader theorem still open.
 - `docs/DM_PMNS_Z3_DOUBLET_BLOCK_CENTER_SELECTOR_THEOREM_NOTE_2026-04-20.md` — Center selector; manifold defined by inversion at observed PMNS values (flagged).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly does not claim an observation-free normalization law removing eta/eta_obs = 1, nor a validated interval-arithmetic proof over the whole closure manifold.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly does not claim an observation-free normalization law removing eta/eta_obs = 1, nor a validated interval-arithmetic proof over the whole closure manifold.
+- Supersession (as known at extraction): Self-describes as the APRIL TERMINAL/authority note for this sub-chain, superseding older 'support' / 'not yet promoted' wording; its positive selector claim is later negated by the post-reset no-go DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION...NO_GO_NOTE_2026-07-12 (idx 370) and demoted to a conditional calculator (idx 376).
 
 ## Audit fields
 

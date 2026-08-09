@@ -35,15 +35,19 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 - git blob: `4994f03281a0f722b5b28a8525ae749895096771`
 - sha256: `3191911a56e7b7d2fe1a8648a444146ee103805575282f562066e8f9f79e9b45`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1117_LORENTZIAN_SIGNATURE_FROM_THE_RECORD_I_GRADIENT_ONTOLOGICAL_ROUTE_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1117_LORENTZIAN_SIGNATURE_FROM_THE_RECORD_I_GRADIENT_ONTOLOGICAL_ROUTE_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 99; runners named: historic runner (unpinned, not in this packet): `scripts/lorentzian_signature_from_record_i_gradient_runner(.py)`
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `scripts/lorentzian_signature_from_record_i_gradient_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/LORENTZ_BOOST_COVARIANCE_GAP_NOTE.md` — Scope split: isotropy vs full Lorentz conflation separated.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Complementary to, explicitly not a replacement for, the retained_bounded DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19; two independent routes converging on the same split is the stated content.
 
 ## Audit fields
 

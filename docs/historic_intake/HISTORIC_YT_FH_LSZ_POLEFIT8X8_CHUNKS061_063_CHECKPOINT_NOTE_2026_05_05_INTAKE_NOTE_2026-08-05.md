@@ -35,7 +35,8 @@ The polefit8x8 terminal: complete designed statistics make the failure DEFINITIV
 - git blob: `0377be434366a9f2f6be0ad05944751b2a2183de`
 - sha256: `94ac85b5dae8b7e60af963ddcbca6772d0d95d1044fcf88c35e11b8347dfc719`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2266_YT_FH_LSZ_POLEFIT8X8_CHUNKS061_063_CHECKPOINT_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch07/2266_YT_FH_LSZ_POLEFIT8X8_CHUNKS061_063_CHECKPOINT_NOTE_2026-05-05.md)
-- Lines: 88; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_affine_contact_complete_monotonicity_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_contact_subtraction_identifiability(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_global_production_collision_guard(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_chunk_combiner_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_postprocessor(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_stieltjes_proxy_diagnostic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polynomial_contact_finite_shell_no_go(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_campaign_status_certificate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_full_positive_closure_assembly_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_non_chunk_closure_worklist(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_retained_closure_route_certificate(.py)`
+- Lines: 88; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_affine_contact_complete_monotonicity_no_go​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_contact_subtraction_identifiability​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_global_production_collision_guard​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_chunk_combiner_gate​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_postprocessor​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polefit8x8_stieltjes_proxy_diagnostic​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_polynomial_contact_finite_shell_no_go​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_campaign_status_certificate​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_full_positive_closure_assembly_gate​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_non_chunk_closure_worklist​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_retained_closure_route_certificate​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -92,9 +93,12 @@ The polefit8x8 terminal: complete designed statistics make the failure DEFINITIV
 - `docs/YT_FORMAL_THEOREM_NOTE.md` — polefit8x8 / scalar-denominator machinery; carried by the definitive-failure terminal.
 - `docs/YT_FREE_SCALAR_TWO_POINT_POLE_ABSENCE_NOTE_2026-05-01.md` — polefit8x8 / scalar-denominator machinery; carried by the definitive-failure terminal.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Completing the full designed statistics makes the necessary-condition failure worse (5 sigma at first diagnostic, 111 sigma at completion), i.e. the measured object is definitively not the required positive Stieltjes function.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Completing the full designed statistics makes the necessary-condition failure worse (5 sigma at first diagnostic, 111 sigma at completion), i.e. the measured object is definitively not the required positive Stieltjes function.
+- Supersession (as known at extraction): TERMINAL of the polefit8x8 sub-sweep (idx 2249-2268): the second complete 1008-configuration production stream of the campaign, ending with the scalar two-point proxy failing positivity by 111 sigma.
 
 ## Audit fields
 

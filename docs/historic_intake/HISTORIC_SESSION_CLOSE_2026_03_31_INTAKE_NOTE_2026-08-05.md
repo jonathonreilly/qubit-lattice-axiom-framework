@@ -36,14 +36,18 @@ Era-terminal bottom line: what the model does (attraction from phase, interferen
 - sha256: `73dec3478bd990c56e1d8e2b2ca9d3ef77adcd18c1b41e14098e1c71135619ed`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3166_session-close-2026-03-31.md](../../archive_unlanded/historic_intake_originals/march/3166_session-close-2026-03-31.md)
 - Lines: 64; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-States plainly that the model fails all three quantitative scaling tests (mass, distance, graph size) and that further parameter sweeps will not advance it.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: States plainly that the model fails all three quantitative scaling tests (mass, distance, graph size) and that further parameter sweeps will not advance it.
+- Supersession (as known at extraction): Session-final summary superseding the same-day frontier maps (idx 3141, 3142); its decoherence figure (universal, mean purity 0.80) differs from the frontier map's D=40% framing.
 
 ## Audit fields
 

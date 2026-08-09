@@ -36,14 +36,18 @@ The conservative publication card: reclassifies its sister's claims (Delta m^2 r
 - sha256: `be32889b687ca04c4c128ee52650c7e35627124afe9bf3b2c683047dca0fb64b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1634_PUBLICATION_CARD_FINAL_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch05/1634_PUBLICATION_CARD_FINAL_2026-04-12.md)
 - Lines: 153; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PUBLICATION_CARD_2026-04-12.md` — The optimistic venue card; corrected by its successor.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly corrects the sister publication card by reclassifying Delta m^2 ratio and delta_CP from predictions to fits.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly corrects the sister publication card by reclassifying Delta m^2 ratio and delta_CP from predictions to fits.
+- Supersession (as known at extraction): More conservative successor to PUBLICATION_CARD_2026-04-12 - it relabels several of that card's 'exact' matches as fits and adds the codex-approved paper-safe language.
 
 ## Audit fields
 

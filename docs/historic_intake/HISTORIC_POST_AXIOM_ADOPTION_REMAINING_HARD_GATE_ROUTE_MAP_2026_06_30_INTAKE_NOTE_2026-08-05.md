@@ -36,14 +36,18 @@ The post-reset route map: 'missing dynamics' split into typed named gates, ranke
 - sha256: `6172cd68e603a2105f963af6ec52914d081d39e733053f4a20423c6776efc81b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1626_POST_AXIOM_ADOPTION_REMAINING_HARD_GATE_ROUTE_MAP_2026-06-30.md](../../archive_unlanded/historic_intake_originals/branch05/1626_POST_AXIOM_ADOPTION_REMAINING_HARD_GATE_ROUTE_MAP_2026-06-30.md)
 - Lines: 451; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/POST_STACK_HARD_GATE_STATUS_MAP_2026-06-30.md` — Companion route map.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Post-reset successor to the pre-reset blocker maps; explicitly does NOT ship a terminal no-go.
 
 ## Audit fields
 

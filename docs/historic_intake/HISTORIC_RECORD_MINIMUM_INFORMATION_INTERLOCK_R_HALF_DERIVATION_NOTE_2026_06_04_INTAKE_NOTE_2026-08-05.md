@@ -35,15 +35,19 @@ r = 1/2 FORCED-MODULO-TWO-POSITS: irreversibility + dimension-blind count — th
 - git blob: `8d5dd69028667f4dd382ab4ee974da0d8dde07df`
 - sha256: `44265690ba0022d0d5d30c6098ed43a0ef53f96ddf4d5831e078d8cb46432acf`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1779_RECORD_MINIMUM_INFORMATION_INTERLOCK_R_HALF_DERIVATION_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch06/1779_RECORD_MINIMUM_INFORMATION_INTERLOCK_R_HALF_DERIVATION_NOTE_2026-06-04.md)
-- Lines: 420; runners named: historic runner (unpinned, not in this packet): `scripts/record_minimum_information_interlock_r_half_derivation(.py)`
+- Lines: 420; runners named: historic runner (unpinned, not in this packet): `scripts/record_minimum_information_interlock_r_half_derivation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The forcing rests on two principles the note itself classifies as outside the approved Record axiom's scope, and r = 1/2 is left as a Tier-A admitted input regardless.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The forcing rests on two principles the note itself classifies as outside the approved Record axiom's scope, and r = 1/2 is left as a Tier-A admitted input regardless.
+- Supersession (as known at extraction): FAMILY TERMINAL for the 2026-06-04 r = 1/2 attack arc: it closes the type/token bit left open by idx 1777, which in turn sharpened idx 1767, after three adjacency-geometry attacks failed.
 
 ## Audit fields
 

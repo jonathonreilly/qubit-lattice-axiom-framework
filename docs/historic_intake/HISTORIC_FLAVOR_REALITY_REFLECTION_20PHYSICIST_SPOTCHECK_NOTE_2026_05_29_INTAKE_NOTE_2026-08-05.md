@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 - git blob: `033529ce76e037b8007ad13048264d3aa8c2464a`
 - sha256: `510289c8b565dd746283b407ccfdadd04a79293c775549a60b501c565782d805`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/492_FLAVOR_REALITY_REFLECTION_20PHYSICIST_SPOTCHECK_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/492_FLAVOR_REALITY_REFLECTION_20PHYSICIST_SPOTCHECK_NOTE_2026-05-29.md)
-- Lines: 91; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_reality_reflection_spotcheck_2026_05_29(.py)`
+- Lines: 91; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_reality_reflection_spotcheck_2026_05_29​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Cites Wu-Lee-Yang to argue reflection-balance is empirically false as a default, undercutting the reframe's own premise.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Cites Wu-Lee-Yang to argue reflection-balance is empirically false as a default, undercutting the reframe's own premise.
+- Supersession (as known at extraction): Reframes flavor as a symmetry-breaking order parameter, which is the premise the FLAVOR_ORDER_PARAMETER_FLAT_DIRECTION capstone (idx 487) then acts on.
 
 ## Audit fields
 

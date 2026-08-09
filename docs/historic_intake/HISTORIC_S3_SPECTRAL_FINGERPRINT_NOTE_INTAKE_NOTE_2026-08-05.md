@@ -35,15 +35,19 @@ The lattice-spectrum fact: periodic cubic spectrum matches T^3 not S^3 at every 
 - git blob: `e1a488f9bf352c5459406074f6c0a9490ca96524`
 - sha256: `adc98a5230047538ebfecdee7eb3787e14346b958b1be7d7789114c560cf0969`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1875_S3_SPECTRAL_FINGERPRINT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1875_S3_SPECTRAL_FINGERPRINT_NOTE.md)
-- Lines: 136; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_spectral_fingerprint(.py)`
+- Lines: 136; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_spectral_fingerprint​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Status line reads 'ALL TESTS PASS' for a test whose finding is that the lattice does not match S^3; the reconciliation is that the lattice test was never a test of the claim.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Status line reads 'ALL TESTS PASS' for a test whose finding is that the lattice does not match S^3; the reconciliation is that the lattice test was never a test of the claim.
+- Supersession (as known at extraction): Constrains what the lattice numerics in the S3 family can support; consistent with the V4 concerns in idx 1856.
 
 ## Audit fields
 

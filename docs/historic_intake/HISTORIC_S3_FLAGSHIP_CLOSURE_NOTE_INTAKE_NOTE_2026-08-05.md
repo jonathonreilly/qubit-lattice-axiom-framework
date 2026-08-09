@@ -35,15 +35,19 @@ The flagship BOUNDED holding note explicitly superseding the CLOSED overclaim �
 - git blob: `36ef38eb35f970692b98cc425b2de8364a352d1b`
 - sha256: `43167104b6321c2ad2a726dac18eb1fbdc92eca9caada0c34b6a13000bcb00f3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1860_S3_FLAGSHIP_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1860_S3_FLAGSHIP_CLOSURE_NOTE.md)
-- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_cap_link_formal(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_pl_manifold(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_cap_uniqueness(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_closure_case(.py)`
+- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_cap_link_formal​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_pl_manifold​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_cap_uniqueness​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_closure_case​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that a prior note in the same family overclaimed CLOSED status; also stands against three same-day sibling notes asserting closure by other routes.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that a prior note in the same family overclaimed CLOSED status; also stands against three same-day sibling notes asserting closure by other routes.
+- Supersession (as known at extraction): Explicitly supersedes and corrects S3_CLOSURE_CASE_NOTE (idx 1849) as overclaimed; itself challenged the same day by the computational-closure notes idx 1872, 1868, 1874.
 
 ## Audit fields
 

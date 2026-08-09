@@ -35,15 +35,19 @@ The process self-audit: a real fan-out campaign was performed AND process non-co
 - git blob: `1101cffab75b48825d37c7a67007b0b65ddbee45`
 - sha256: `182975c3c07638faa57815089f5b6db6bfcda2f1a03d4cb161cf21b0454b41eb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2376_YT_PR230_PHYSICS_LOOP_ASSUMPTION_AUDIT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2376_YT_PR230_PHYSICS_LOOP_ASSUMPTION_AUDIT_NOTE_2026-05-01.md)
-- Lines: 79; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_physics_loop_assumption_audit(.py)`
+- Lines: 79; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_physics_loop_assumption_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-reports process non-compliance: the loop skipped the independent review/backpressure pass and the required unattended block.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-reports process non-compliance: the loop skipped the independent review/backpressure pass and the required unattended block.
+- Supersession (as known at extraction): The self-audit that triggers the backpressure pass at idx 2378.
 
 ## Audit fields
 

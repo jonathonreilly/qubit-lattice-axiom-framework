@@ -35,15 +35,19 @@ Adjacency cost is exactly extensive across a tick boundary (complete enumeration
 - git blob: `ac24d4cbb54f53de5d11f2527bd29dd4a26c7a88`
 - sha256: `92b0962e77832b19e39bc15138f46991c3d965ea2c8190de2cf80356fd9ceb84`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3106_PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3106_PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md)
-- Lines: 210; runners named: historic runner (unpinned, not in this packet): `scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04(.py)`
+- Lines: 210; runners named: historic runner (unpinned, not in this packet): `scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PHYSICAL_FACET_CHARGE_TICK_MIXED_SPLIT_CYCLE726_NOTE_2026-08-04.md` — Facet-charge additivity/superadditivity at the ceiling; extensivity-adjacent evidence.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Answers the tick half of the open question Cycle 725 named in its own boundary; recomputes 108 and 128 in the same execution so neither half of the comparison is supplied.
 
 ## Audit fields
 

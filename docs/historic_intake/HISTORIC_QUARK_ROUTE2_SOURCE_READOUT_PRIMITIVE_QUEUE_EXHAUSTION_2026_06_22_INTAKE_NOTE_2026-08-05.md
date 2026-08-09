@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ Route-2 quark sweep TERMINAL: queue exhaustion — every member reduces to the s
 - git blob: `0623d5654b5ad04db0ac505837d2d741be5a8979`
 - sha256: `456b785fe6948ba098f03675c2ab2614ffbdba1d84abf197928d849d5a6e6d96`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1742_QUARK_ROUTE2_SOURCE_READOUT_PRIMITIVE_QUEUE_EXHAUSTION_2026-06-22.md](../../archive_unlanded/historic_intake_originals/branch06/1742_QUARK_ROUTE2_SOURCE_READOUT_PRIMITIVE_QUEUE_EXHAUSTION_2026-06-22.md)
-- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22(.py)`
+- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -87,9 +90,12 @@ Route-2 quark sweep TERMINAL: queue exhaustion — every member reduces to the s
 - `docs/QUOTIENT_SURFACE_TRANSFER_NO_GO_NOTE.md` — Route-2 quark sweep member; reduces to the c_TE primitive.
 - `docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md` — Route-2 quark sweep member; reduces to the c_TE primitive.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): FAMILY TERMINAL for the ~40-note Route-2 sweep (idx 1710-1753): every sibling no-go and support packet converges here.
 
 ## Audit fields
 

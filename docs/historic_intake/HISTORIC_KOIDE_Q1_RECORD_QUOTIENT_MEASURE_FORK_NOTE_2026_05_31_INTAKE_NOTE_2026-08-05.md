@@ -35,7 +35,8 @@ THE FORK THEOREM: full Hilbert trace gives (1/3,2/3), r=1, Q=1; the rank-erased 
 - git blob: `90a61b08e705a5310d8a56366bbc6e7bb368315d`
 - sha256: `90d8af6f2bd6311de488ca65d71ec1d666f46a4a5a3600fbe3e7540e883132d5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/905_KOIDE_Q1_RECORD_QUOTIENT_MEASURE_FORK_NOTE_2026-05-31.md](../../archive_unlanded/historic_intake_originals/branch03/905_KOIDE_Q1_RECORD_QUOTIENT_MEASURE_FORK_NOTE_2026-05-31.md)
-- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_record_quotient_measure_fork(.py)`
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_record_quotient_measure_fork​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,9 +50,12 @@ THE FORK THEOREM: full Hilbert trace gives (1/3,2/3), r=1, Q=1; the rank-erased 
 - `docs/KOIDE_Q1_SOURCE_ENDPOINT_RECORD_MEASURE_NO_GO_NOTE_2026-05-31.md` — Sharp-record measure non-selection; escape named.
 - `docs/KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE_NOTE_2026-05-31.md` — Campaign synthesis node; three orientation candidates ruled out.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-States that on the native full-trace reading the framework value is Q = 1, not the observed 2/3.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: States that on the native full-trace reading the framework value is Q = 1, not the observed 2/3.
+- Supersession (as known at extraction): Explains why the closed historical flavor campaign and the current Q1 lane converge — Q = 1 is the full-trace branch and Q = 2/3 the quotient-count branch; sets the gap the objectivity audit then fails to close.
 
 ## Audit fields
 

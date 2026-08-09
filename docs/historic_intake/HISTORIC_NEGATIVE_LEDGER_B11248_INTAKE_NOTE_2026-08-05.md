@@ -1,0 +1,63 @@
+# Historic intake: No-Go Ledger
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: meta
+Stratum: pack_science_family
+Era: may_june_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Statistics forcing remains WITHDRAWN; hard-core bosons are NOT excluded by the CCR trace obstruction (they violate the canonical CCR hypothesis); the superseded 2026-04-11 axiom surface is not restored as a load-bearing dependency.
+
+Original verdict: statistics forcing withdrawn; no audit verdict applied
+Scope: spin-statistics source packet boundaries
+Escape conditions (negative claims): hard-core bosons escape the CCR trace obstruction by violating the canonical CCR hypothesis
+
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
+
+Withdrawal narrowing the spin-statistics surface: statistics forcing remains WITHDRAWN, and hard-core bosons are NOT excluded by the CCR trace obstruction (they violate the canonical CCR hypothesis, so the obstruction never bites them) - the escape is stated in the proof body. Companions attached.
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md`
+- Source commit: `7e2db05c4b593e12a56799936f569d172b6104f0`
+- git blob: `5cf2b9a90f276c9d5941b534be8f70879720e3c3`
+- sha256: `8b9486a464379f80acc28b673f37565655b684060cb25c2e515a04ced65b48b2`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11248_NO_GO_LEDGER.md](../../archive_unlanded/historic_intake_originals/packsci05/11248_NO_GO_LEDGER.md)
+- Lines: 8; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
+
+## Attached evidence (registered with, not as, this claim)
+
+- `.claude/science/physics-loops/staggered-anticommutation-filter-20260607/CLAIM_STATUS_CERTIFICATE.md` — The certified narrow no-go: CAR cannot be derived from multi-loop exchange-cocycle consistency (PASS=18/0); primary note landed to docs/STAGGERED_*.
+- `.claude/science/physics-loops/staggered-anticommutation-filter-20260607/NO_GO_LEDGER.md` — N1: adjacent braid/Coxeter consistency forces all adjacent exchange generators to share one Z_2 sign - the sign itself stays unforced.
+
+## Triage extraction notes (2026-08-05/08, not from the original)
+
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): records withdrawal of the statistics-forcing claim and supersession of the 2026-04-11 axiom surface
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+historic_claim_class: historic_ledger
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

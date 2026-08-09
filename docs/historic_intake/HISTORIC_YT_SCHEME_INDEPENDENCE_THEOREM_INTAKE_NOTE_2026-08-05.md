@@ -35,15 +35,19 @@ The April 'all orders in any scheme' y_t/g_s = 1/sqrt(6) THEOREM claim — pulle
 - git blob: `68cd722017cb71f97feba8f7fbe32f023595f4a3`
 - sha256: `7f49e041aa493ef6a1dced050c7fc9ad9ab3ff0cf9e54a7037cd2786f2e12d67`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2424_YT_SCHEME_INDEPENDENCE_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch08/2424_YT_SCHEME_INDEPENDENCE_THEOREM.md)
-- Lines: 149; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_scheme_independence(.py)`
+- Lines: 149; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_scheme_independence​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/YT_UNBOUNDED_PROGRAM_NOTE.md` — April program note whose 'already closed' list includes the later-demoted Ward item — flag carried.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Title-overclaim risk: labelled 'THEOREM (self-contained proof)' and 'holds to all orders in any scheme', while the same-branch May notes retire the Ward-identity authority it rests on and show 1/sqrt(6) does not fix the physical readout.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Title-overclaim risk: labelled 'THEOREM (self-contained proof)' and 'holds to all orders in any scheme', while the same-branch May notes retire the Ward-identity authority it rests on and show 1/sqrt(6) does not fix the physical readout.
+- Supersession (as known at extraction): CONTRADICTED IN SPIRIT by the May PR #230 chain: 2401 finds yt_ward_identity is audited-renaming not authority, and 2413 shows the current surface (with 1/sqrt(6) held fixed) admits four different y_t/g_s values 0.408248/0.384900/0.288675/0.367423.
 
 ## Audit fields
 

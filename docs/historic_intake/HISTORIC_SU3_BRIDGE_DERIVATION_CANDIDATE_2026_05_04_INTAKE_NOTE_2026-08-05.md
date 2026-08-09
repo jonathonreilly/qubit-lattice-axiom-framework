@@ -35,15 +35,19 @@ The K-plaquette tube candidate: rho = (c_pq/c_00)^12 gives P = 0.58879 vs 0.5934
 - git blob: `d868ab4b287513e12c6d4d5808c8331639b70f2c`
 - sha256: `6fc9ef5654b1dfd47f4d1aa298163b4c0cff04a54fd1cd3fa131456d3fdcfbf1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2011_SU3_BRIDGE_DERIVATION_CANDIDATE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch06/2011_SU3_BRIDGE_DERIVATION_CANDIDATE_2026-05-04.md)
-- Lines: 253; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_su3_bridge_rho_modification_scoping_2026_05_04(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_su3_bridge_mixed_ansatz_2026_05_04(.py)`
+- Lines: 253; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_su3_bridge_rho_modification_scoping_2026_05_04​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_su3_bridge_mixed_ansatz_2026_05_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Chooses among physical pictures (independent product vs Haar pairing) partly because it matches MC better; status is unaudited.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Chooses among physical pictures (independent product vs Haar pairing) partly because it matches MC better; status is unaudited.
+- Supersession (as known at extraction): Supersedes the prior index-graph candidate (P = 0.4291, ~28% off) by discarding its d^(-16) Haar-pairing factor; follows the salvage of PR #516.
 
 ## Audit fields
 

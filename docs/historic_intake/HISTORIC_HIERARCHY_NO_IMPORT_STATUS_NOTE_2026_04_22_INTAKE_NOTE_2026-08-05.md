@@ -35,7 +35,8 @@ The hierarchy lane's constitution: exact no-import DIMENSIONLESS theorem with th
 - git blob: `503b9c708c7548f48a9dbc30679c59a0f8c75a58`
 - sha256: `0d97234a415210994ac9040e9aea3409683bb235dce3726853cb6790be4d0039`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/699_HIERARCHY_NO_IMPORT_STATUS_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch03/699_HIERARCHY_NO_IMPORT_STATUS_NOTE_2026-04-22.md)
-- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_no_import_status(.py)`
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_no_import_status​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ The hierarchy lane's constitution: exact no-import DIMENSIONLESS theorem with th
 - `docs/HIERARCHY_STORY_FOR_CODEX.md` — Story-for-codex; k_1 defended-not-derived flagged.
 - `docs/HIERARCHY_THEOREM.md` — Three-part theorem with the prefactor unresolved (its own Section 3.7).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Instructs that the repo and paper stop presenting the absolute v row as a retained flagship result.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Instructs that the repo and paper stop presenting the absolute v row as a retained flagship result.
+- Supersession (as known at extraction): Self-declares that it SUPERSEDES OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md as the full-status authority for the hierarchy lane; reads as the lane's status-terminal note for the April era.
 
 ## Audit fields
 

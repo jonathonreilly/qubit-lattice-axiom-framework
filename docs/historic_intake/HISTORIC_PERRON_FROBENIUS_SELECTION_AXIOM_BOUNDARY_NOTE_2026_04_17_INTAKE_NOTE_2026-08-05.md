@@ -35,15 +35,19 @@ The PF boundary object: sector-local Perron theorems are exact but do NOT promot
 - git blob: `84085e3f0a6aa274511b02ac7640b94e191fd3b3`
 - sha256: `e1c3b8438f94afec43e82fe197332c6e597a48e77d83af138a9c9ebb3d3a1413`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1272_PERRON_FROBENIUS_SELECTION_AXIOM_BOUNDARY_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch04/1272_PERRON_FROBENIUS_SELECTION_AXIOM_BOUNDARY_NOTE_2026-04-17.md)
-- Lines: 1179; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_perron_frobenius_selection_axiom_boundary(.py)`
+- Lines: 1179; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_perron_frobenius_selection_axiom_boundary​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The PF family's central boundary note, cited by the review status (idx_pos 1271) and the global-selector closure (idx_pos 1266).
 
 ## Audit fields
 

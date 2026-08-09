@@ -36,14 +36,18 @@ Front-door framing terminal for the calibration story: A_min = {A1 per-site qubi
 - sha256: `76cc5ff1c84cebd098d233f9c16e83cc691698edf0db483e0fac14a1237c0f83`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2754_PLANCK_ONLY_FRAMEWORK_INPUT_FRAMING_NOTE_2026-05-27.md](../../archive_unlanded/historic_intake_originals/branch09/2754_PLANCK_ONLY_FRAMEWORK_INPUT_FRAMING_NOTE_2026-05-27.md)
 - Lines: 252; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/publication/ci3_z3/HIERARCHY_PLANCK_CALIBRATED_REVIEW_PACKET_2026-04-22.md` — The separation note: retained no-import lattice-unit theorem vs the absolute companion v = 246.28... GeV which follows only from the withdrawn absolute row; quotes v to 15 significant figures - flag carried.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The 0.0255% observed vs 0.083% predicted residual is confirmed only 'at order-of-magnitude' with within-decade / within-factor-4 thresholds — a very loose test presented alongside 5-significant-figure agreement; post-audit admission counts are projections contingent on PRs #1969/#1978/#1983/#1984 ratifying.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The 0.0255% observed vs 0.083% predicted residual is confirmed only 'at order-of-magnitude' with within-decade / within-factor-4 thresholds — a very loose test presented alongside 5-significant-figure agreement; post-audit admission counts are projections contingent on PRs #1969/#1978/#1983/#1984 ratifying.
+- Supersession (as known at extraction): Supersedes 2753's framing of the M_Pl calibration; the post-2026-06-29 axiom reset changes the A_min statement this note builds on.
 
 ## Audit fields
 

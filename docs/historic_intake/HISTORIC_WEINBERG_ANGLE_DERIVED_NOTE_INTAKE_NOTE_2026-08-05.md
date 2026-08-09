@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The Weinberg-angle terminal: sin^2 = 3/8 NOT derived from Cl(3) (relative normal
 - git blob: `2a9eba22a83a0b5ec9f4a1728b1545e34afd19e6`
 - sha256: `99aa9122ffcdb91b2d6f537b9491951843fdac67a773da7d3980560d35a5e85a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2113_WEINBERG_ANGLE_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2113_WEINBERG_ANGLE_DERIVED_NOTE.md)
-- Lines: 185; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_weinberg_angle_derived(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_gauge_unification(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_weinberg_angle_correction(.py)`
+- Lines: 185; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_weinberg_angle_derived​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_gauge_unification​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_weinberg_angle_correction​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/WEINBERG_ANGLE_CORRECTION_NOTE.md` — SM-only running correction (0.176 not 0.263).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts framework-level claim language used elsewhere in the repo ('sin^2 theta_W = 3/8 is derived from Cl(3)' is listed as what the paper should NOT say).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts framework-level claim language used elsewhere in the repo ('sin^2 theta_W = 3/8 is derived from Cl(3)' is listed as what the paper should NOT say).
+- Supersession (as known at extraction): TERMINAL for the April Weinberg-angle pair: makes explicit the GUT-normalization assumption that frontier_gauge_unification​.py and the correction note (idx 2112) had used silently.
 
 ## Audit fields
 

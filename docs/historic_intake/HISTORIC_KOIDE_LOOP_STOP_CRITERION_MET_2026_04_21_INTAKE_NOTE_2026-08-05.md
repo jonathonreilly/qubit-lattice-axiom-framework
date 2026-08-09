@@ -36,6 +36,7 @@ The evening-loop STOP terminal: stop criterion met at iteration 35, C1 discharge
 - sha256: `ecbe970a55f964bbe2d5de2af397e4dbb8d219f698999946eeba5d5ad7d1145f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/870_KOIDE_LOOP_STOP_CRITERION_MET_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/870_KOIDE_LOOP_STOP_CRITERION_MET_2026-04-21.md)
 - Lines: 108; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ The evening-loop STOP terminal: stop criterion met at iteration 35, C1 discharge
 - `docs/KOIDE_I1_I2_CLOSURE_PACKAGE_README_2026-04-21.md` — Promotion handoff bundle.
 - `docs/KOIDE_LOOP_DIMINISHING_RETURNS_ASSESSMENT_2026-04-21.md` — Diminishing-returns assessment.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Notes the user re-invoked the loop 34 times after each completion and speculates about habit vs intent — an operational oddity rather than a science flag.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Notes the user re-invoked the loop 34 times after each completion and speculates about habit vs intent — an operational oddity rather than a science flag.
+- Supersession (as known at extraction): Terminal note of the evening-4-20 Koide loop; follows the iteration-30 diminishing-returns assessment.
 
 ## Audit fields
 

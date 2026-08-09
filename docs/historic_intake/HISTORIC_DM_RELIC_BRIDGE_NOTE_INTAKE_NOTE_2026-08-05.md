@@ -36,6 +36,7 @@ The relic-bridge single authority: three-factor decomposition with eta honestly 
 - sha256: `afad75df066e984e9f04436406dc5b8c77f416b953e42dfa027f0792be60b408`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/397_DM_RELIC_BRIDGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/397_DM_RELIC_BRIDGE_NOTE.md)
 - Lines: 226; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The relic-bridge single authority: three-factor decomposition with eta honestly 
 - `docs/DM_RELIC_MAPPING_WILDCARD_NOTE.md` — Wildcard spectral route giving a THIRD R value (5.32) — three-values flag carried.
 - `docs/DM_RELIC_SYNTHESIS_NOTE.md` — Synthesis with hardcoded G_BARE admission.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Flags that the Stosszahlansatz theorem is proved only for the free theory, a caveat the sibling notes claiming closure omit.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Flags that the Stosszahlansatz theorem is proved only for the free theory, a caveat the sibling notes claiming closure omit.
+- Supersession (as known at extraction): Declares itself THE single authority on the relic bridge and explicitly supersedes any claim in other DM notes that R is 'fully derived' or 'zero-parameter' - directly overriding DM_GRAPH_NATIVE (idx 362) and DM_RELIC_GAP_CLOSURE (idx 398).
 
 ## Audit fields
 

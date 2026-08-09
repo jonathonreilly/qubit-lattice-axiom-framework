@@ -35,15 +35,19 @@ The Z3-Clebsch generation route: y_t = 1.035 vs observed (4.2% off) WITH the 12/
 - git blob: `a3ce2e69a2375be96f343cae56617dbaffdd69e8`
 - sha256: `778da74c1b9bc8f5b29df1df6eb0909356632413396542c196cbfd8caa25bc97`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2501_YT_Z3_CLEBSCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2501_YT_Z3_CLEBSCH_NOTE.md)
-- Lines: 78; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_z3_clebsch(.py)`
+- Lines: 78; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_z3_clebsch​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Presents a 4.2%-off y_t/m_t prediction with 12/12 PASS framing; the 'cross-checks' (neutrino hierarchy, CKM smallness) are qualitative consistency statements, not independent verification.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Presents a 4.2%-off y_t/m_t prediction with 12/12 PASS framing; the 'cross-checks' (neutrino hierarchy, CKM smallness) are qualitative consistency statements, not independent verification.
+- Supersession (as known at extraction): Independent April route to y_t distinct from the Ward and step-scaling lanes; not referenced by the May PR #230 chain.
 
 ## Audit fields
 

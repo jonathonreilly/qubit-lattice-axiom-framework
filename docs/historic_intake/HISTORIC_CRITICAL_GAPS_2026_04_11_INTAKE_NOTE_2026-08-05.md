@@ -36,14 +36,18 @@ The Anderson-localization kill: the era's area-law headline carries no evidentia
 - sha256: `50b18353575cdc442b11b5b695146267e900260ac7ae4194bcb201306f16fb21`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/268_CRITICAL_GAPS_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch01/268_CRITICAL_GAPS_2026-04-11.md)
 - Lines: 47; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Points out that a headline area-law finding is guaranteed by standard theorems for free-fermion models and therefore not evidence for the framework.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Points out that a headline area-law finding is guaranteed by standard theorems for free-fermion models and therefore not evidence for the framework.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

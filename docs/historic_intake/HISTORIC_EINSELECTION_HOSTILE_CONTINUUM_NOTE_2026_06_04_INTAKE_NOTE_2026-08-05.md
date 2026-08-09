@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Hostile-continuum no-go: an explicit monitored family einselects EVERY r in (0,1
 - git blob: `2fc20c1209ee6e2706f1283900925d24e0d3f06c`
 - sha256: `fb7c75cb524495108fcbde147e5e06d5802f13430263822a20b278ef4642ce27`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/419_EINSELECTION_HOSTILE_CONTINUUM_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch02/419_EINSELECTION_HOSTILE_CONTINUUM_NOTE_2026-06-04.md)
-- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/einselection_hostile_continuum_2026_06_04(.py)`
+- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/einselection_hostile_continuum_2026_06_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly labels a same-day sibling claim vacuous/tautological; also flags that two cited r=1/2 measure notes are unaudited on origin/main.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly labels a same-day sibling claim vacuous/tautological; also flags that two cited r=1/2 measure notes are unaudited on origin/main.
+- Supersession (as known at extraction): Corrects an over-reading of EINSELECTION_R_HALF_STABLE_SETTING_NOTE_2026-06-04 (idx 420) and relocates the discreteness of {0,1/2,1} from the pointer basis to the measure axis.
 
 ## Audit fields
 

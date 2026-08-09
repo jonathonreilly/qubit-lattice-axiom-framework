@@ -35,15 +35,19 @@ Trimaximal column derived modulo only the retained C_3 algebra: the K/CPT orbit 
 - git blob: `c3dc09a8d2d8a39e46a0305a32c0d332d82c3b5f`
 - sha256: `ba9e7f6586499e6b0f37105f895f49b29422e7aab18869d341aa27583e99cd26`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1597_PMNS_TRIMAXIMAL_PARTITION_IS_KCPT_ORBIT_AXIOM_DIRECT_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch05/1597_PMNS_TRIMAXIMAL_PARTITION_IS_KCPT_ORBIT_AXIOM_DIRECT_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/trimaximal_partition_kcpt_orbit_runner(.py)`
+- Lines: 141; runners named: historic runner (unpinned, not in this packet): `scripts/trimaximal_partition_kcpt_orbit_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Discharges the 'modulo K-reality' caveat on the trimaximal column by separating the axiomatic partition (A) from the delta = 0 phase pin (B) that a retained_bounded note had conflated under one predicate.
 
 ## Audit fields
 

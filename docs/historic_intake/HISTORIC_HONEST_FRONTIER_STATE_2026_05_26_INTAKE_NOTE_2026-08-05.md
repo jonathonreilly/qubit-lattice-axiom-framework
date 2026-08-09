@@ -36,15 +36,19 @@ The honest terminal state of the pi-bridge after the reversal: hostile-review co
 - sha256: `c20b851d422d48efa3cef439bbdd9f31a1a4c5b0a07b3cba497a32896e4ff211`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11534_HONEST_FRONTIER_STATE_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11534_HONEST_FRONTIER_STATE_2026-05-26.md)
 - Lines: 121; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/DIRECTION_GAMMA_NATIVE_PI_BRIDGE_GAP_ISOLATION_2026-05-26.md` — The three-position decomposition of the pi-bridge gap (irrational-radian source / native re-expression / sector [coupling]), mutually exclusive, each with its closing condition.
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/LANE_SYNTHESIS_2026-05-26.md` — The converged three-vector diagnosis (dynamics blocked by sector orthogonality et al.); findings branch-local; superseded in status by the withdrawal arc but the sector-orthogonality legs stand.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

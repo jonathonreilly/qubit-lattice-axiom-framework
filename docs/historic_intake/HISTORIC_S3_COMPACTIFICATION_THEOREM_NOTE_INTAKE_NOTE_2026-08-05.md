@@ -35,15 +35,19 @@ The honest S^3 downgrade: 'structural/derived' -> BOUNDED with two formal gaps n
 - git blob: `f69491b658c87720b001ac453f7517718dd55428`
 - sha256: `ad197f0b7249a7e42d85c437173fc81fa4c6c80a927bae18d7d6480d62954f62`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1852_S3_COMPACTIFICATION_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1852_S3_COMPACTIFICATION_THEOREM_NOTE.md)
-- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_compactification(.py)`
+- Lines: 140; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_compactification​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly retracts a previously claimed structural result and calls a prior note's regularity argument incorrect; also quotes RP^3 ratio 2.40, disagreeing with both 0.920 (idx 1848) and 2.45 (idx 1840).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly retracts a previously claimed structural result and calls a prior note's regularity argument incorrect; also quotes RP^3 ratio 2.40, disagreeing with both 0.920 (idx 1848) and 2.45 (idx 1840).
+- Supersession (as known at extraction): Directly corrects the prior 'ALL TESTS PASS / structural' framing of S3_COMPACTIFICATION_NOTE (idx 1850) and its Argument A.
 
 ## Audit fields
 

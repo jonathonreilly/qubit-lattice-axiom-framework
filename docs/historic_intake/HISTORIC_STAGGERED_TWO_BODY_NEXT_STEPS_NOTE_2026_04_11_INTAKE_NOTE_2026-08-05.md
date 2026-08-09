@@ -36,6 +36,7 @@ The staggered-batch design lesson: the architecture is not the blocker, the bloc
 - sha256: `7b790313a3aadd8fdeea34dfcb0adbeb41d1d5bcdc8c68b370d640652648e05e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1979_STAGGERED_TWO_BODY_NEXT_STEPS_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch06/1979_STAGGERED_TWO_BODY_NEXT_STEPS_NOTE_2026-04-11.md)
 - Lines: 216; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -47,9 +48,12 @@ The staggered-batch design lesson: the architecture is not the blocker, the bloc
 - `docs/STAGGERED_TWO_BODY_PORTABILITY_NOTE_2026-04-11.md` — Staggered two-body probe member.
 - `docs/STAGGERED_TWO_BODY_TRANSPORT_NOTE_2026-04-11.md` — Staggered two-body probe member.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Synthesis over STAGGERED_BOTH_MASSES / SELF_CONSISTENT_TWO_BODY / NEWTON_REPRODUCTION / NEWTON_BLOCKING_SENSITIVITY notes of 2026-04-11; FAMILY TERMINAL for the blocked-centroid sub-chain.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ PMNS certified global selector (two independent certification routes) — BUT it
 - git blob: `76d3c372beb1fc40cbbd42dd362281cd7986f692`
 - sha256: `be8094a2daa3063d6fbb97e3f3bbd5af4241efdcf2d28bd6fb9aeb7892ccbe05`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3604_DM_LEPTOGENESIS_PMNS_CERTIFIED_GLOBAL_SELECTOR_THEOREM_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/recovery/3604_DM_LEPTOGENESIS_PMNS_CERTIFIED_GLOBAL_SELECTOR_THEOREM_NOTE_2026-04-16.md)
-- Lines: 144; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_certified_global_selector_theorem(.py)`
+- Lines: 144; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_pmns_certified_global_selector_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The 'exhaustive' certification is a deterministic lattice cover plus local minimization on a compact chart, not a symbolic proof; the action gap to the runner-up branch is small (0.0018) and the runner-up sits at delta ~ -1e-3 rather than exactly on the claimed reduced slice.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The 'exhaustive' certification is a deterministic lattice cover plus local minimization on a compact chart, not a symbolic proof; the action gap to the runner-up branch is small (0.0018) and the runner-up sits at delta ~ -1e-3 rather than exactly on the claimed reduced slice.
+- Supersession (as known at extraction): Upgrades the earlier selector theorem from reduced-surface support / multistart evidence / branch-local closure to a certified global minimality claim.
 
 ## Audit fields
 

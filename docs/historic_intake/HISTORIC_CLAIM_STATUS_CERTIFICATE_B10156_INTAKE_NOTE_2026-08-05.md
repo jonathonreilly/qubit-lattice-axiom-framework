@@ -35,15 +35,19 @@ Demotion packet: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md (294 transitive de
 - git blob: `3f9e306a628822ac3152a4dd2860befee5c93653`
 - sha256: `0e04ccd46daa552414bbc5f6cc73135d5d5e7c65986e4f4da21e2541157603d5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10156_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10156_CLAIM_STATUS_CERTIFICATE.md)
-- Lines: 39; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_observable_principle_audit(.py)`
+- Lines: 39; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_observable_principle_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The observable principle is a load-bearing authority for the Koide and hierarchy lanes, and it carries five admitted bridge assumptions.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The observable principle is a load-bearing authority for the Koide and hierarchy lanes, and it carries five admitted bridge assumptions.
+- Supersession (as known at extraction): DEMOTES LANDED CONTENT: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md - an authority cited by the April charged-lepton/Koide chain (idx 10010, 10100, 10101).
 
 ## Audit fields
 

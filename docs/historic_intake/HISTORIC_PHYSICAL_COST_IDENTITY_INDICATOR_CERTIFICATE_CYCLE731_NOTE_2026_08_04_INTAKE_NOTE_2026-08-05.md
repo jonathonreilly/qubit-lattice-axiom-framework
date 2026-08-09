@@ -35,15 +35,19 @@ Zero-slack floor certificate turns the bound into an exact formula: adjacency co
 - git blob: `f279b9c2aa096619252882ecb295350623eb73bb`
 - sha256: `6ff14a265fb97744da85889f47921d40fb1fa7579908bc6e4815280fb248a752`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3097_PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3097_PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md)
-- Lines: 223; runners named: historic runner (unpinned, not in this packet): `scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04(.py)`
+- Lines: 223; runners named: historic runner (unpinned, not in this packet): `scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md` — The base one-cell bracket the exact formula refines.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-stated: validity of the floor rows taken alone is weak (lowering a live entry or doubling the denominator preserves validity while destroying the value); the six-suffice/five-do-not support claim is scoped to forced completions, not to all cost-108 dissections; the receipt is transcribed from output rather than written by the runner.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-stated: validity of the floor rows taken alone is weak (lowering a live entry or doubling the denominator preserves validity while destroying the value); the six-suffice/five-do-not support claim is scoped to forced completions, not to all cost-108 dissections; the receipt is transcribed from output rather than written by the runner.
+- Supersession (as known at extraction): Builds on Cycle 725 (cell cost interval 108 to 128, both ends attained) and Cycle 730 (zero-gap certificate membership test).
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Adversarial review with a CRITICAL provenance finding: the headline 16 in m_DM =
 - git blob: `1f15568696d4ebf373aa0650d042149de283841e`
 - sha256: `49a4c4e4c2e86c9bb3ea57d390d356e729eabcf2d566553f667ba74f889e79f4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/352_DM_ETA_FREEZEOUT_BYPASS_ADVERSARIAL_REVIEW_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch02/352_DM_ETA_FREEZEOUT_BYPASS_ADVERSARIAL_REVIEW_NOTE_2026-04-25.md)
-- Lines: 243; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_g1_wilson_mass_attempt(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_null_distribution_audit(.py)`
+- Lines: 243; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_g1_wilson_mass_attempt​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_freezeout_bypass_null_distribution_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-diagnosed CRITICAL provenance ambiguity in the headline number 16 plus a corrected runner summary figure (+4.22%); flags post-hoc reverse-engineering risk.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-diagnosed CRITICAL provenance ambiguity in the headline number 16 plus a corrected runner summary figure (+4.22%); flags post-hoc reverse-engineering risk.
+- Supersession (as known at extraction): Names the corrections to be folded into DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md; it is the review arm of that theorem, not a successor.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Scale-free ceiling: adjacency-only vertex sets are affinely flat (escape-proof b
 - git blob: `fe63c75ccbb684c60e6553c7bb00f9b66006cbaf`
 - sha256: `18d228717a4ccf0bb9d3a3ac0d240b47e53d9f4de3d1794ef21354aa6e10ecab`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3104_PHYSICAL_SCALE_FREE_ADJACENCY_DISSECTION_BRACKET_CYCLE724_NOTE_2026-08-03.md](../../archive_unlanded/historic_intake_originals/recovery/3104_PHYSICAL_SCALE_FREE_ADJACENCY_DISSECTION_BRACKET_CYCLE724_NOTE_2026-08-03.md)
-- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/physical_scale_free_adjacency_dissection_bracket_cycle724_2026_08_03(.py)`
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/physical_scale_free_adjacency_dissection_bracket_cycle724_2026_08_03​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records a caught error: an earlier reading of this graph took clique candidates in increasing rather than decreasing colour order, silently under-reporting and producing a below-average clique of 14 and an inflated floor of 98. The note names the below-average maximum of 16 as the one number with no colour-free confirmation and invites attack there.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records a caught error: an earlier reading of this graph took clique candidates in increasing rather than decreasing colour order, silently under-reporting and producing a below-average clique of 14 and an inflated floor of 98. The note names the below-average maximum of 16 as the one number with no colour-free confirmation and invites attack there.
+- Supersession (as known at extraction): Supersedes the in-flight cycle 723 corner-restricted adjacency result and its floor of 48; removes the escape that cycle left open.
 
 ## Audit fields
 

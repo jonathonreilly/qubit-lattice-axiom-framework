@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Clean reduction: the conjugation-symmetric ambient Wilson class cannot fix the B
 - git blob: `e9e3909136cdd5f285243065c95850ee41fc4bbd`
 - sha256: `3f42715d945f5285b3debf64cabe100bff9fb9f0edd9ca87c749f05e4c747831`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/764_KOIDE_BRANNEN_PHASE_CONJUGATION_SYMMETRY_BOUNDARY_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/764_KOIDE_BRANNEN_PHASE_CONJUGATION_SYMMETRY_BOUNDARY_NOTE_2026-04-21.md)
-- Lines: 242; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_phase_conjugation_symmetry_boundary_2026_04_21(.py)`
+- Lines: 242; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_brannen_phase_conjugation_symmetry_boundary_2026_04_21​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Follows the endpoint-target, cyclic-phase target, selected-line/Brannen orbit bridge and endpoint pullback notes, narrowing what any successor ambient law must look like.
 
 ## Audit fields
 

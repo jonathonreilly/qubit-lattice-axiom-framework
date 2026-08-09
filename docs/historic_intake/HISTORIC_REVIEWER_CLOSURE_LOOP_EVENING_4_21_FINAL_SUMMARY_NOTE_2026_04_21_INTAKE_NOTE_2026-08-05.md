@@ -36,6 +36,7 @@ Reviewer-closure loop TERMINAL: all four Gate-2 items closed across iters 8-11 â
 - sha256: `164b4b9f8f6603c808b84ab7e0847945c183fd228b51302cedce5c37e2d02fe7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1813_REVIEWER_CLOSURE_LOOP_EVENING_4_21_FINAL_SUMMARY_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch06/1813_REVIEWER_CLOSURE_LOOP_EVENING_4_21_FINAL_SUMMARY_NOTE_2026-04-21.md)
 - Lines: 197; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -53,9 +54,12 @@ Reviewer-closure loop TERMINAL: all four Gate-2 items closed across iters 8-11 â
 - `docs/REVIEWER_CLOSURE_LOOP_ITER8_SIGMA_HIER_CHAMBER_WIDE_CLOSED_NOTE_2026-04-21.md` â€” Reviewer-loop iteration member; flags carried by the terminal and the downgrades 1818/1823.
 - `docs/REVIEWER_CLOSURE_LOOP_ITER9_ABCC_TRACE_DET_SIGNATURE_CLOSED_NOTE_2026-04-21.md` â€” Reviewer-loop iteration member; flags carried by the terminal and the downgrades 1818/1823.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Labels results 'Nature-grade' on the basis of dense-grid sampling and empirical Lipschitz bounds; N1 is retained as a primitive observational identity at 0.16% deviation, and eta_fit/eta_obs = 0.56 is only O(1) agreement.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Labels results 'Nature-grade' on the basis of dense-grid sampling and empirical Lipschitz bounds; N1 is retained as a primitive observational identity at 0.16% deviation, and eta_fit/eta_obs = 0.56 is only O(1) agreement.
+- Supersession (as known at extraction): FAMILY TERMINAL for the reviewer-closure loop (idx 1812-1827): consolidates all 11 iterations and issues the stopping rationale.
 
 ## Audit fields
 

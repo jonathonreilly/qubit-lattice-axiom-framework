@@ -35,15 +35,19 @@ Exact consolidation: Q = 1/3 + (2/3)r theta-independently — the e-mu gap was a
 - git blob: `fa3bbd927ce8603ace2037723a37b42d7ee942a8`
 - sha256: `be87e3ba083cd94851bdfedfb22eb24462041811b731dc71238a40ea2eefd718`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/498_FLAVOR_YUKAWA_DIAG_OFFDIAG_CONSOLIDATION_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/498_FLAVOR_YUKAWA_DIAG_OFFDIAG_CONSOLIDATION_NOTE_2026-05-29.md)
-- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_yukawa_diag_offdiag_consolidation_2026_05_29(.py)`
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_yukawa_diag_offdiag_consolidation_2026_05_29​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Resolves gap (ii) of FLAVOR_JAHN_TELLER_CUBIC_BREAKING (idx 483) and feeds FLAVOR_GAP_EQUATION_COMPETING_ORDERS (idx 482).
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ Owner-surface synthesis: electric-style gauging of energy provably forbidden, an
 - sha256: `eadf54cc68e7ebd020fe82c959aa690fc9ebae01e7a23faad99a528aa4b1e616`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/432_ENERGY_FIELD_DERIVATION_SYNTHESIS_OWNER_SURFACE_2026-07-08.md](../../archive_unlanded/historic_intake_originals/branch02/432_ENERGY_FIELD_DERIVATION_SYNTHESIS_OWNER_SURFACE_2026-07-08.md)
 - Lines: 142; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Includes its own steelman ('the lapse masslessness is a triviality'); plain-language owner surface with no runner of its own.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Includes its own steelman ('the lapse masslessness is a triviality'); plain-language owner surface with no runner of its own.
+- Supersession (as known at extraction): Campaign-closing synthesis over ENERGY_CHANNEL_INDUCED_KERNEL_ROUTE_A, ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B, SOURCE_FIELD_STATIC_LAW_CLASSIFICATION and NOETHER_SOURCE_CURRENT_CLASSIFICATION - a TERMINAL owner-surface note for that campaign.
 
 ## Audit fields
 

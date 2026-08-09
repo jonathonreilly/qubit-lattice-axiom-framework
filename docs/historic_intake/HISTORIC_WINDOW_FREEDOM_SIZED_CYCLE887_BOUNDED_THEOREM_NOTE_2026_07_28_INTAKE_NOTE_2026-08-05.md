@@ -35,15 +35,19 @@ Refutation of Cycle 885's closure claim: EVERY finite rotation-invariant structu
 - git blob: `1ca833d8a47040bd53d7423385e36525b5f2c8d9`
 - sha256: `4eac401e4b90600829eae812cdd60ef723aed26fc179ec022e450e477ebe9d37`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2132_WINDOW_FREEDOM_SIZED_CYCLE887_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2132_WINDOW_FREEDOM_SIZED_CYCLE887_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle887_window_freedom_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle887_window_freedom_independent_check_2026_07_28(.py)`
+- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle887_window_freedom_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle887_window_freedom_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly retracts a sibling block's closure claim, and finds a quoted axiom clause (count-once / no-phantom-registration) had been read as saying something it does not — 'the window may contain only record sites' is an addition, not a quotation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly retracts a sibling block's closure claim, and finds a quoted axiom clause (count-once / no-phantom-registration) had been read as saying something it does not — 'the window may contain only record sites' is an addition, not a quotation.
+- Supersession (as known at extraction): RE-PRICES Cycle 885's residual and records the correction as RETRACTION not DISPLACEMENT; the chain of blocks correcting each other's readings is described as functioning as designed.
 
 ## Audit fields
 

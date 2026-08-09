@@ -36,14 +36,18 @@ Clean bounded no-go: no naive continuum limit on a fixed 8-neighbor grid — 8.2
 - sha256: `c63133dc9fe31d4a5caf020384b2247a28cf296b5016eed80355ccdaacb35c74`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3113_continuum-limit-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3113_continuum-limit-2026-03-30.md)
 - Lines: 33; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/analyses/lorentz-breaking-2026-03-30.md` — The 8.2% anisotropy with exact staircase bound; same result as the continuum-limit no-go's core number; evidence attachment.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

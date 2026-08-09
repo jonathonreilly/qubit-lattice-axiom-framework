@@ -36,6 +36,7 @@ TERMINAL index of the five outside-judge lanes (hadron mass, atomic scale, quark
 - sha256: `32be04dfc7a305425fdcd4d1c999ed1e39808680ceacce66fe683cb4d9021a09`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2744_README.md](../../archive_unlanded/historic_intake_originals/branch09/2744_README.md)
 - Lines: 267; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ TERMINAL index of the five outside-judge lanes (hadron mass, atomic scale, quark
 - `docs/lanes/outside_judge/04_NEUTRINO_QUANTITATIVE_LANE_PROPOSAL_2026-04-26.md` — Neutrino lane brief: m_nu/Delta m^2/Majorana phases, 3-9 months; records two existing falsifiable DM-closed-package forecasts and a delta risk.
 - `docs/lanes/outside_judge/05_HUBBLE_CONSTANT_DERIVATION_LANE_PROPOSAL_2026-04-26.md` — H_0 lane brief: 1-4 months via Omega_m internal closure; commits to late-time LambdaCDM structure; H_0 currently external input.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL for the OUTSIDE_JUDGE_LANES family (indexes 2739-2743).
 
 ## Audit fields
 

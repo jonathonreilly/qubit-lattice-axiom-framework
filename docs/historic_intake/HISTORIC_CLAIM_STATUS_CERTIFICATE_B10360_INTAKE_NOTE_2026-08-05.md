@@ -36,14 +36,18 @@ Correction of two landed docs/ notes: the g_bare rescaling-freedom note's counte
 - sha256: `aa5bedde036460868dfbd6f9e1aba4023fbe6aaf9e5ae92e98fda9aa6bee8723`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10360_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10360_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 40; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records a numeric overstatement in landed content (count of distinct single-class values in the Higgs N_taste row) that this PR corrects.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records a numeric overstatement in landed content (count of distinct single-class values in the Higgs N_taste row) that this PR corrects.
+- Supersession (as known at extraction): Corrects two landed docs/ notes: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 and higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08.
 
 ## Audit fields
 

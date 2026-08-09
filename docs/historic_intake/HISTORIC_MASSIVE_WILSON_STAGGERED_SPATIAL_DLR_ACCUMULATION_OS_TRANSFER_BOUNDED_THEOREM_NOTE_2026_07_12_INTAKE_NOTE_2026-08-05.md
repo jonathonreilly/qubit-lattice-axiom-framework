@@ -35,16 +35,20 @@ The coupled OS object survives the infinite-volume limit (van Hove subsequence c
 - git blob: `811abe487c3f9cb3b3cccccff04859bd520448c0`
 - sha256: `16537973b420cde345ebe3e3a19508eba38e1990dc0e75052d5041b150df8ac3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1131_MASSIVE_WILSON_STAGGERED_SPATIAL_DLR_ACCUMULATION_OS_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md](../../archive_unlanded/historic_intake_originals/branch04/1131_MASSIVE_WILSON_STAGGERED_SPATIAL_DLR_ACCUMULATION_OS_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md)
-- Lines: 481; runners named: historic runner (unpinned, not in this packet): `scripts/massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_2026_07_12(.py)`
+- Lines: 481; runners named: historic runner (unpinned, not in this packet): `scripts/massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_2026_07_12​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/MASSIVE_STAGGERED_LOGDET_HOLDER_RUELLE_INFINITE_TIME_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-07-12.md` — Accumulation-functional coincidence.
 - `docs/MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md` — Exact coarse-graining step.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-N7 concedes a compactness-only proof would be defeated by the objection that finite-volume determinants are global objects; the site-anchored expansion is what rescues the DLR claim.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: N7 concedes a compactness-only proof would be defeated by the objection that finite-volume determinants are global objects; the site-anchored expansion is what rescues the DLR claim.
+- Supersession (as known at extraction): Consumes the fixed-spatial-volume uniqueness of MASSIVE_STAGGERED_LOGDET_HOLDER_RUELLE (idx_pos 1128) and is in turn collapsed inside the wedge by the Dobrushin note (idx_pos 1129).
 
 ## Audit fields
 

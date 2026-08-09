@@ -35,15 +35,19 @@ The record-native readout: the rank-2 K/CPT doublet reads as one letter, making 
 - git blob: `180d2785d2937772d371b9e92fc0262535e768a0`
 - sha256: `21663e4b0d4b9274fa8ec403f223e641bd776b01a381055325dddc837da4bc66`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1075_KOIDE_R_HALF_RECORD_NATIVE_READOUT_DOUBLET_COUNTED_ONCE_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1075_KOIDE_R_HALF_RECORD_NATIVE_READOUT_DOUBLET_COUNTED_ONCE_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_r_half_record_native_readout_2026_06_06(.py)`
+- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_r_half_record_native_readout_2026_06_06​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Three honest residuals stated (carrier supplied not re-derived; within-doublet phase delta not fixed; no Born weighting asserted). Its central det_C/count-once reading is exactly what the same-day sibling (idx_pos 1074) argues is undefined for the physical symmetric mass operator.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Three honest residuals stated (carrier supplied not re-derived; within-doublet phase delta not fixed; no Born weighting asserted). Its central det_C/count-once reading is exactly what the same-day sibling (idx_pos 1074) argues is undefined for the physical symmetric mass operator.
+- Supersession (as known at extraction): Resolves the measure gate explicitly left open by GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05; in direct tension with the same-day sibling note at idx_pos 1074, which forecloses det_C/r=1/2 for charged leptons.
 
 ## Audit fields
 

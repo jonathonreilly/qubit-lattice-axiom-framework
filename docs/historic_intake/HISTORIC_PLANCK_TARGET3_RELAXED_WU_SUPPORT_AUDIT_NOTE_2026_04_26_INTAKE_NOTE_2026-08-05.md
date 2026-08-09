@@ -35,15 +35,19 @@ The same-branch refusal note: lands four pieces as SUPPORT only and explicitly r
 - git blob: `352af4bac70cdecb117d9cf01f9f7a7d8c8b8cd5`
 - sha256: `893072e04fb933db47180698c8c9affa4ec74c8050749d173e1d181a9c533548`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1502_PLANCK_TARGET3_RELAXED_WU_SUPPORT_AUDIT_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch05/1502_PLANCK_TARGET3_RELAXED_WU_SUPPORT_AUDIT_NOTE_2026-04-26.md)
-- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_relaxed_wu_support_audit(.py)`
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_relaxed_wu_support_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly contradicts the unconditional-closure titles of three sibling Target 3 notes in the same family.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly contradicts the unconditional-closure titles of three sibling Target 3 notes in the same family.
+- Supersession (as known at extraction): Explicitly refuses to land five headline claims of the relaxed-wu branch, including 'Planck Target 3 unconditionally closed' and 'P_1 selected over P_3 by Schur spectra alone'; closeout flags record P1_OVER_P3_SELECTOR_CLOSED=FALSE and PLANCK_PIN_MINIMAL_STACK_CLOSURE=FALSE.
 
 ## Audit fields
 

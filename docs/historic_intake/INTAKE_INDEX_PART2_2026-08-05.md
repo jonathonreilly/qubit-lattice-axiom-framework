@@ -29,20 +29,38 @@ verbatim, the extraction's claim compression, and a byte-exact provenance pin.
 
 none — original bytes were fetched and hashed for every wrapper.
 
-## Review-loop regeneration (2026-08-08)
+## Review-loop regeneration (2026-08-08, iterations 1 and 2)
 
 Every wrapper in this intake was regenerated through the corrected template
-after review-loop iteration 1 (Sol, FIX_THEN_PROCEED): canonical `Claim type:`
-headers with the historic taxonomy preserved as `historic_claim_class` (F1);
-byte-exact archived originals under `archive_unlanded/historic_intake_originals/`
-linked from each wrapper and sha256-verified fail-closed (F2); the Why-pulled
-section marked provenance-not-authority with a non-evidentiary disclaimer
-(F3/F6); historic runner names rendered inert and unlinked (F4); attach/cross
-references to pulled wrappers rendered as relative links (F5); the Octopus
-registry typed meta with its evidence base archived (F7); the hazards memo
-given a meta header (F8); review flags added to the three affected packsci01
-wrappers (F9/F10/F11); explicit subject lines under bare-code titles (F13).
-Both manifests are byte-identical to the originally shipped pins; decision
-reasons are untouched (sha256-verified). Generator:
-`scripts/historic_intake_generate_2026_08_05(.py)` (extension split per the
-F4 inert-name convention; this index is a meta surface and names no runner).
+after review-loop iterations 1 and 2 (Sol, FIX_THEN_PROCEED then confirmation):
+canonical `Claim type:` headers with the historic taxonomy preserved as
+`historic_claim_class` (F1); byte-exact archived originals under
+`archive_unlanded/historic_intake_originals/` linked from each wrapper and
+sha256-verified fail-closed (F2); the Why-pulled section marked
+provenance-not-authority with a non-evidentiary disclaimer (F3); every
+rendered field display-neutralizes `.py` tokens with a zero-width split so
+no current-tree runner can bind, with the byte-exact wording pinned in the
+triage JSONLs and archived originals (F4); markdown links (deps edges) only
+for attachment relations — contradiction/cross-flag relations are inert text
+plus machine-readable `contradicts:`/`cross_reference:` yaml lists, with
+named non-pulled evidence archived byte-exact (F5); extraction-time
+commentary split into a clearly-attributed Triage-extraction-notes section
+(F6); the Octopus registry typed meta with its evidence base archived (F7);
+the hazards memo given a meta header plus a pinned archived evidence base
+(F8); review flags on the three affected packsci01 wrappers (F9/F10/F11);
+bare-code H1 titles rewritten with the explicit scientific name as the
+heading — per vocab_lint's `legacy_alias_strip` rule no alias parenthetical
+is kept, and the historic token survives in the Explicit-subject line, the
+wrapper filename, and the pinned original (F13). Historical NEGATIVE
+claims register as `bounded_theorem` (historic_claim_class keeps the
+historic taxonomy; no live no-go is asserted by any wrapper — no-go
+discipline applies at audit adjudication), and wrapper FILENAMES neutralize
+no-go/obstruction/firewall tokens (NO_GO/NOGO->NEGATIVE,
+OBSTRUCTION->OBSTRUCTED_ROUTE, FIREWALL->ROUTE_BARRIER) so no registration
+wrapper is a no-go-named artifact; archived originals containing
+era-absolute markdown links carry a `.frozen` filename suffix (bytes
+unchanged). Manifests are identical to the shipped pins except the `file`
+field, which records the neutralized filename; decision reasons are
+byte-untouched in the triage JSONLs (sha256-verified). Generator:
+`scripts/historic_intake_generate_2026_08_05` (a `.py` program; name
+rendered without extension for graph hygiene on this meta surface).

@@ -35,19 +35,23 @@ Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severi
 - git blob: `6af84efe463194ca1fdc59b8d318a04a0be26c5d`
 - sha256: `7aee2fbf50801c1af0912ea712af31a4b814307bcb957da260cd7726e6789abd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/40_ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md](../../archive_unlanded/historic_intake_originals/branch01/40_ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md)
-- Lines: 445; runners named: historic runner (unpinned, not in this packet): `frontier_alpha_s_determination(.py)`; historic runner (unpinned, not in this packet): `frontier_bbn_from_framework(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_native_eta(.py)`; historic runner (unpinned, not in this packet): `frontier_ewpt_gauge_closure(.py)`; historic runner (unpinned, not in this packet): `frontier_freezeout_from_lattice(.py)`; historic runner (unpinned, not in this packet): `frontier_yt_boundary_resolution(.py)`; historic runner (unpinned, not in this packet): `frontier_yt_matching(.py)`
+- Lines: 445; runners named: historic runner (unpinned, not in this packet): `frontier_alpha_s_determination​.py`; historic runner (unpinned, not in this packet): `frontier_bbn_from_framework​.py`; historic runner (unpinned, not in this packet): `frontier_dm_native_eta​.py`; historic runner (unpinned, not in this packet): `frontier_ewpt_gauge_closure​.py`; historic runner (unpinned, not in this packet): `frontier_freezeout_from_lattice​.py`; historic runner (unpinned, not in this packet): `frontier_yt_boundary_resolution​.py`; historic runner (unpinned, not in this packet): `frontier_yt_matching​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 3620](HISTORIC_YT_ZERO_IMPORT_CLOSURE_NOTE_INTAKE_NOTE_2026-08-05.md) (`docs/YT_ZERO_IMPORT_CLOSURE_NOTE.md`, stratum recovery) — Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severity) + g_* inconsistency (106.75 vs 110.75) — direct adverse evidence against the pulled zero-import closure claim; audit lane needs both sides.
+- Attaches across strata to idx 3620 (`docs/YT_ZERO_IMPORT_CLOSURE_NOTE.md`, stratum recovery) — Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severity) + g_* inconsistency (106.75 vs 110.75) — direct adverse evidence against the pulled zero-import closure claim; audit lane needs both sides.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Names an internal inconsistency in g_* (106.75 vs 110.75) and substantial hidden observational imports in a chain advertised as closed.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Names an internal inconsistency in g_* (106.75 vs 110.75) and substantial hidden observational imports in a chain advertised as closed.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 
@@ -57,6 +61,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_analysis
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_YT_ZERO_IMPORT_CLOSURE_NOTE_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

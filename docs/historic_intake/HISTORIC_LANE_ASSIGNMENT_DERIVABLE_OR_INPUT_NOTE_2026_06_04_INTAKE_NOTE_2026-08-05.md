@@ -35,16 +35,20 @@ Hostile audit: block content IS derived (su(3) dim formula) but the color->hiera
 - git blob: `e170e70b5951f58ebf510b2147e310b4ef35e126`
 - sha256: `3e1c4ec12a24c6c034f2e3d16a5dc806f3d6304899a48001cebd767bc740bae6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1096_LANE_ASSIGNMENT_DERIVABLE_OR_INPUT_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch04/1096_LANE_ASSIGNMENT_DERIVABLE_OR_INPUT_NOTE_2026-06-04.md)
-- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/lane_assignment_derivable_or_input_2026_06_04(.py)`
+- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/lane_assignment_derivable_or_input_2026_06_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/LANE_ASSIGNMENT_COLOR_CHARGE_DISCRIMINATOR_NOTE_2026-06-04.md` — The color/charge discriminator proposal; rebutted same-day.
 - `docs/LANE_CHIRALITY_OFFBLOCK_DOUBLE_UNLOCK_NOTE_2026-06-04.md` — Wrong-tensor-factor wall re-derivation.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly finds a sibling note's central mechanism circular and structurally unavailable; the pair should be read together.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly finds a sibling note's central mechanism circular and structurally unavailable; the pair should be read together.
+- Supersession (as known at extraction): Directly refutes the same-day sibling proposal at idx_pos 1095 ('not even structurally available, let alone forced'); states the proposed frame 'is not the state on origin/main'.
 
 ## Audit fields
 

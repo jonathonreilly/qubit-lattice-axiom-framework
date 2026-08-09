@@ -35,16 +35,20 @@ Finite operator-algebra theorem: no later action signals to the durable-record a
 - git blob: `7c758b7d7815ca80b5dcc14dc6c072bcec568e8d`
 - sha256: `0ec59d00a3aac75913b1101d6062814d41f750fef88b296d3184851596e743da`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/157_CHRONOLOGY_OPERATOR_ALGEBRA_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/157_CHRONOLOGY_OPERATOR_ALGEBRA_BOUNDARY_NOTE.md)
-- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/chronology_operator_algebra_no_past_signal_probe(.py)`
+- Lines: 124; runners named: historic runner (unpinned, not in this packet): `scripts/chronology_operator_algebra_no_past_signal_probe​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CHRONOLOGY_PROTECTION_BOUNDARY_REVIEW_PACKET.md` — Hostile-objection packet with defeat conditions.
 - `docs/CTC_FIXED_POINT_TAXONOMY_NOTE.md` — CTC fixed-point classification; chronology family evidence.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Taste-physicality collapses into the lattice-is-physical axiom (Wilson deformati
 - git blob: `6ad5caed84661ed09267a1e16e1ad18c05585862`
 - sha256: `7b894c8b22d69a91ca1b2c002cabace0abb18c85c5492949f4f6d743a6395531`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2121_WILSON_BREAKS_EVERYTHING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2121_WILSON_BREAKS_EVERYTHING_NOTE.md)
-- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_breaks_everything(.py)`
+- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_breaks_everything​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The 'break at the same r' evidence is that r = 0.2 was the smallest nonzero value tested, so simultaneity is asserted from grid resolution rather than a limit analysis.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The 'break at the same r' evidence is that r = 0.2 was the smallest nonzero value tested, so simultaneity is asserted from grid resolution rather than a limit analysis.
+- Supersession (as known at extraction): Argues for collapsing two of the April framework's named assumptions (taste physicality and gauge-group derivation) into one; complementary to the A5 reduction at idx 2089.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The realised cost spectrum is exactly the eleven even integers in [108,128], par
 - git blob: `5e8ddac6e8a66d8256cc15313480f0f6b42fff22`
 - sha256: `e56bb2cd7e9654255d1469bbb4315d92ca5dd3461d837df67386a9e492216b09`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3103_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3103_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026-08-04.md)
-- Lines: 224; runners named: historic runner (unpinned, not in this packet): `scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04(.py)`
+- Lines: 224; runners named: historic runner (unpinned, not in this packet): `scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Closes the interior of the bracket left open by earlier cycles of the lane; the previous single-cost evenness result is generalized by Cycle 733.
 
 ## Audit fields
 

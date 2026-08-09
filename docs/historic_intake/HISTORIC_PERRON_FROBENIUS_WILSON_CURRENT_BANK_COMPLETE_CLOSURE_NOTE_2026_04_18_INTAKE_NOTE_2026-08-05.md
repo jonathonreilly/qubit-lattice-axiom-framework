@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ TERMINAL: the Wilson lane negatively closed on the current bank — reopening re
 - git blob: `eae74ac327668caa93f55a0dbcc114834a93c357`
 - sha256: `f5f44d9ce4dff623741e383f3e5084a0f49afecc2305bc5472927f1c03e009a5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1320_PERRON_FROBENIUS_WILSON_CURRENT_BANK_COMPLETE_CLOSURE_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch04/1320_PERRON_FROBENIUS_WILSON_CURRENT_BANK_COMPLETE_CLOSURE_NOTE_2026-04-18.md)
-- Lines: 123; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_perron_frobenius_wilson_current_bank_complete_closure_2026-04-18(.py)`
+- Lines: 123; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_perron_frobenius_wilson_current_bank_complete_closure_2026-04-18​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -101,9 +104,12 @@ TERMINAL: the Wilson lane negatively closed on the current bank — reopening re
 - `docs/PERRON_FROBENIUS_WILSON_TO_HERMITIAN_DESCENDANT_REDUCTION_NOTE_2026-04-17.md` — PF chain member; carried by the negative-closure terminal.
 - `docs/PERRON_FROBENIUS_WILSON_TO_PMNS_DESCENDANT_BOUNDARY_NOTE_2026-04-17.md` — PF chain member; carried by the negative-closure terminal.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

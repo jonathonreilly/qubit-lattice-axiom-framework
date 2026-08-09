@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Refutes the QFP-insensitivity escape: m_t varies materially with g_3(M_Pl) — t
 - git blob: `c5da1507e114bb393c36b327c72e3e632f776a09`
 - sha256: `95f488ca805cf5070ec20e380a4158884673069332b2f821d8c41226632a2807`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2322_YT_IR_INSENSITIVITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2322_YT_IR_INSENSITIVITY_NOTE.md)
-- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_ir_insensitivity(.py)`
+- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_ir_insensitivity​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Refutes an insensitivity claim that, had it held, would have removed the lane's main blocker.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Refutes an insensitivity claim that, had it held, would have removed the lane's main blocker.
+- Supersession (as known at extraction): Refutes an escape hypothesis for the crossover blocker documented at idx 2312; complements the fixed-point mismatch at idx 2300.
 
 ## Audit fields
 

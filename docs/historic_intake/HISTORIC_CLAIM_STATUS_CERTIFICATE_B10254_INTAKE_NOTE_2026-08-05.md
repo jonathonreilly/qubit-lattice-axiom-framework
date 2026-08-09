@@ -35,21 +35,25 @@ OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 cert
 - git blob: `0b457a9fe8d1878ead2619f119b548fe3025fa84`
 - sha256: `0ea910b936cf4a4f44ab0751535d9649d484569010ec14a9ac7b0cf2c7f2c1d4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10254_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10254_CLAIM_STATUS_CERTIFICATE.md)
-- Lines: 159; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_op_locality_source_domain_closure(.py)`
+- Lines: 159; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q_op_locality_source_domain_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 certified proposed_retained on all seven criteria for the five-piece OP-composed chain, twelve days after sibling notes resolved TRUE_NO_PREDICTION on the same surface; P1's own escape condition is stated in-note. Audit must adjudicate the pair against the negative record (10010, 10100, 10298, 10235).
-- Cross-stratum reference from packsci01 [idx 10235](HISTORIC_NO_GO_LEDGER_B10235_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/audit-unblock-block149-20260621/NO_GO_LEDGER.md`, decision PULL) — Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
-- Cross-stratum reference from packsci01 [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, decision PULL) — The full A_min-to-Q chain: locality via PHYSICAL_LATTICE_NECESSITY section 9 plus OP Theorems 1+2 gives the unique additive CPT-even scalar, claiming to RETIRE the observed m_e/m_mu/m_tau and Q_obs pins; the strict-reading inference is the named escape. CONTRADICTION SET with 10254 against the negative record (10010, 10100, 10298, 10235); its load-bearing locality authority is demoted by 10155. Highest-priority audit adjudication in this stratum.
+- Attaches across strata to idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 certified proposed_retained on all seven criteria for the five-piece OP-composed chain, twelve days after sibling notes resolved TRUE_NO_PREDICTION on the same surface; P1's own escape condition is stated in-note. Audit must adjudicate the pair against the negative record (10010, 10100, 10298, 10235).
+- Cross-stratum reference from packsci01 idx 10235 (`.claude/science/physics-loops/audit-unblock-block149-20260621/NO_GO_LEDGER.md`, decision PULL) — Route memory guarding the landed mass-spectrum note: full-retention promotion blocked - the note itself denies full quark closure, charged-lepton derivation, and a sharp PMNS point prediction - with explicit revisit conditions; independently confirms the April Koide negatives. Member of the Koide contradiction set.
+- Cross-stratum reference from packsci01 idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, decision PULL) — The full A_min-to-Q chain: locality via PHYSICAL_LATTICE_NECESSITY section 9 plus OP Theorems 1+2 gives the unique additive CPT-even scalar, claiming to RETIRE the observed m_e/m_mu/m_tau and Q_obs pins; the strict-reading inference is the named escape. CONTRADICTION SET with 10254 against the negative record (10010, 10100, 10298, 10235); its load-bearing locality authority is demoted by 10155. Highest-priority audit adjudication in this stratum.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-OVERCLAIM RISK, HIGH PRIORITY: this is the strongest positive Koide claim in the stratum (proposed_retained for Q = 2/3) and it is bracketed by an earlier TRUE_NO_PREDICTION verdict and a later 'bounded pin' classification. The load-bearing new piece is admitted to be an interpretive strict reading. Review-loop was branch-local self-review only.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: OVERCLAIM RISK, HIGH PRIORITY: this is the strongest positive Koide claim in the stratum (proposed_retained for Q = 2/3) and it is bracketed by an earlier TRUE_NO_PREDICTION verdict and a later 'bounded pin' classification. The load-bearing new piece is admitted to be an interpretive strict reading. Review-loop was branch-local self-review only.
+- Supersession (as known at extraction): MAJOR TENSION WITH SIBLING CONTENT: twelve days earlier the same repo's charged-lepton Koide chain (idx 10010, 10100, 10101) resolved NEGATIVELY with strict-review verdict TRUE_NO_PREDICTION, and two months later idx 10235 records the charged-lepton sector entering as 'a bounded pin' that 'does not derive Koide from sole retained axioms'. NAMES A DOCS LANDING: docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md.
 
 ## Review flags (review-loop 2026-08-08)
 
@@ -65,6 +69,9 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_claim_status_certificate
 intake_directive: owner_2026-08-05
+contradicts:
+- "HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md"
+- "HISTORIC_NEGATIVE_LEDGER_B10235_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

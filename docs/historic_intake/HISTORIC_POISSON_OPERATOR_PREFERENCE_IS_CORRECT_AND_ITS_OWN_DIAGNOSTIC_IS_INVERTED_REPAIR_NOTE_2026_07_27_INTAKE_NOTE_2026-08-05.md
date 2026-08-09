@@ -35,15 +35,19 @@ Terminal of the three-cycle diagnostic arc: parent conclusion recovered on a far
 - git blob: `c5fe0028cb28c341d66f647a71ce0717c7e8b9fd`
 - sha256: `e35f8f95cc6b29c6a7a0eddced5ed4adac36db4a27565e6be3e2859e034a6806`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3090_POISSON_OPERATOR_PREFERENCE_IS_CORRECT_AND_ITS_OWN_DIAGNOSTIC_IS_INVERTED_REPAIR_NOTE_2026-07-27.md](../../archive_unlanded/historic_intake_originals/recovery/3090_POISSON_OPERATOR_PREFERENCE_IS_CORRECT_AND_ITS_OWN_DIAGNOSTIC_IS_INVERTED_REPAIR_NOTE_2026-07-27.md)
-- Lines: 248; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_far_field_protocol_repair_cycle712_2026_07_27(.py)`
+- Lines: 248; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_far_field_protocol_repair_cycle712_2026_07_27​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CYCLE712_VALUE_NO_GO_AND_CLUSTER_CAP_GATES_2026-07-27.md` — The inverted-diagnostic finding; carried in the arc terminal 3090.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-declared limitation that the far-field separation is periodic while the parent construction is Dirichlet; audit_required_before_effective_retained: true and bare_retained_allowed: false in its own status block.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-declared limitation that the far-field separation is periodic while the parent construction is Dirichlet; audit_required_before_effective_retained: true and bare_retained_allowed: false in its own status block.
+- Supersession (as known at extraction): Third of a three-cycle arc on parent row self_consistency_forces_poisson_note (critical root, 727 transitive descendants) after #5656 and #5662; performs the successor #5662 named; proposes a revision replacing Bounded Claim 1's evidence and withdrawing the distance-law citation; the note does not edit the parent or any audit-lane surface.
 
 ## Audit fields
 

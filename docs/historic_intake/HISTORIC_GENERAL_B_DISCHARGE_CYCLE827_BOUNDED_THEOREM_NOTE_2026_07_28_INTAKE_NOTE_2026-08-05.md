@@ -35,16 +35,20 @@ General-b discharge as 13 exact identities — after the checker refuted the fir
 - git blob: `a6bcf8eb0c40f127f296ec7b15f8a37b7d635a84`
 - sha256: `51d233ba387e5e5672c344e92a8dc73f960fca87a3c7c8159472be07002f6193`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/602_GENERAL_B_DISCHARGE_CYCLE827_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch02/602_GENERAL_B_DISCHARGE_CYCLE827_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 85; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle827_general_b_discharge_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle827_discharge_independent_check_2026_07_28(.py)`
+- Lines: 85; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle827_general_b_discharge_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle827_discharge_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/GENERAL_B_SECTOR_CYCLE817_BOUNDED_THEOREM_NOTE_2026-07-28.md` — Seven-condition sector theorem; inventory corrected by checker.
 - `docs/GENERAL_N_SECTOR_THEOREM_CYCLE738_BOUNDED_THEOREM_NOTE_2026-07-28.md` — Conditional structural proof; identities plausibly checkable.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that the first assembly hid two load-bearing premises and was caught by the checker's premise-accounting attack.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that the first assembly hid two load-bearing premises and was caught by the checker's premise-accounting attack.
+- Supersession (as known at extraction): Discharges the hypothesis left conditional by Cycle 817 (idx 603) beyond the b = 3..10 range of Cycle 823.
 
 ## Audit fields
 

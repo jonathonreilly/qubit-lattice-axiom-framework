@@ -35,15 +35,19 @@ The C16-bridge terminal separating scalar vs projector/event grammars: quarter c
 - git blob: `ecea72d323177565b73a54c82f0d6730e83975d4`
 - sha256: `acff37eea60fee0dce2414ef7a99bd1341f4ca56c7ecb12cb4f602ce724ba04b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1460_PLANCK_SCALE_PROJECTOR_VALUED_OBSERVABLE_PRINCIPLE_LANE_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1460_PLANCK_SCALE_PROJECTOR_VALUED_OBSERVABLE_PRINCIPLE_LANE_2026-04-23.md)
-- Lines: 352; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_projector_valued_observable_principle_lane(.py)`
+- Lines: 352; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_projector_valued_observable_principle_lane​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PLANCK_SCALE_C16_AXIS_MASS_PHYSICAL_PRESSURE_IDENTIFICATION_LANE_2026-04-23.md` — C16-bridge endpoint (reduction-theorem reading); superseded by the grammar-separation terminal.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Terminal note of the April boundary/C^16 bridge chain - it names the exact remaining fork after the selector, multiplicity-lift, weighted-state, residual and non-Schur occupation lanes.
 
 ## Audit fields
 

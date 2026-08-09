@@ -36,14 +36,18 @@ The honest V_* meta-note: six routes tabulated with failure modes, numerology se
 - sha256: `deec5f17f059179c4806fbb75c079c3889ca28a76d0ec13d0e57e7581d63d3c9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2106_V_SIMPLER_ROUTES_BRAINSTORM.md](../../archive_unlanded/historic_intake_originals/branch07/2106_V_SIMPLER_ROUTES_BRAINSTORM.md)
 - Lines: 640; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-flags numerology risk: the headline route rests on a numerical coincidence (exponent 16.1 vs 16 tastes) with an admittedly underived mechanism, and it records that an earlier exact-246 result used alpha_V = 0.49, not the Planck-scale coupling.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-flags numerology risk: the headline route rests on a numerical coincidence (exponent 16.1 vs 16 tastes) with an admittedly underived mechanism, and it records that an earlier exact-246 result used alpha_V = 0.49, not the Planck-scale coupling.
+- Supersession (as known at extraction): Meta-note over the whole April V_* cluster (2101-2105); records that the 246 GeV hits in that cluster rest on scheme choices.
 
 ## Audit fields
 

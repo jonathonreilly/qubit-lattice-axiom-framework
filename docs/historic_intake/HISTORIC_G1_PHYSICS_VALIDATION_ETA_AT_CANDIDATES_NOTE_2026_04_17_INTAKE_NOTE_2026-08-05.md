@@ -1,11 +1,11 @@
-# Historic intake: G1 Physics Validation - eta/eta_obs at Z_3 Doublet-Block Selector Candidates
+# Historic intake: Physics Validation - eta/eta_obs at Z_3 Doublet-Block Selector Candidates
 
-Explicit subject: The transport ratio eta/eta_obs factorises entirely through the source-package observables (gamma, E1, E2, K00, cp1, cp2), every one of which is chamber-blind, so eta/eta_obs = 0.188785929502 at ALL four candidate selector points A/B/C/D and the level set {eta/eta_obs = 1} is ... (The bare code `G1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: The transport ratio eta/eta_obs factorises entirely through the source-package observables (gamma, E1, E2, K00, cp1, cp2), every one of which is chamber-blind, so eta/eta_obs = 0.188785929502 at ALL four candidate selector points A/B/C/D and the level set {eta/eta_obs = 1} is ... (Historic code `G1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -15,6 +15,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -37,15 +39,19 @@ eta is chamber-blind (factorizes through chamber-constant observables) at 0.1888
 - git blob: `012e228ea2be91a0543decea7527c4960b6cdb2d`
 - sha256: `fabf9124b5b567991e9ad1c4e9d143d2130973689259765f2bf6ff1242534ec7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/538_G1_PHYSICS_VALIDATION_ETA_AT_CANDIDATES_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch02/538_G1_PHYSICS_VALIDATION_ETA_AT_CANDIDATES_NOTE_2026-04-17.md)
-- Lines: 271; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g1_physics_validation_eta_at_candidates(.py)`
+- Lines: 271; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g1_physics_validation_eta_at_candidates​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The retained transport chain gives eta/eta_obs = 0.1888, a factor ~5 below observation, everywhere on the chamber.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The retained transport chain gives eta/eta_obs = 0.1888, a factor ~5 below observation, everywhere on the chamber.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

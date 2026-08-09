@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
 Era: post_reset_2026_06_29 — no axiom load-bearing; assumes the parent propagator construction and check_field_physics diagnostic
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ No-go: self-consistent beta extrapolates to 1.27/1.16, never 1.0 — removes the
 - git blob: `0a6df449bc39d178db451b4bddcd6b20fbec2c47`
 - sha256: `f2ac73ea05b0a99266c2080493e43503ec9933ca9fba57be47d8f4f0b0a49241`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3093_POISSON_SELF_CONSISTENT_BETA_HAS_NO_FAR_FIELD_TO_EXTRAPOLATE_DEMOTION_NOTE_2026-07-26.md](../../archive_unlanded/historic_intake_originals/recovery/3093_POISSON_SELF_CONSISTENT_BETA_HAS_NO_FAR_FIELD_TO_EXTRAPOLATE_DEMOTION_NOTE_2026-07-26.md)
-- Lines: 230; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_beta_has_no_continuum_limit_cycle711_2026_07_26(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_definitive(.py)`
+- Lines: 230; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_beta_has_no_continuum_limit_cycle711_2026_07_26​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_definitive​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CYCLE711_VALUE_AND_NO_GO_GATES_2026-07-26.md` — Gate record for Cycle 711 — process record of 3093's no-go content.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-audit_required_before_effective_retained: true, bare_retained_allowed: false; only two extrapolation families tested.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: audit_required_before_effective_retained: true, bare_retained_allowed: false; only two extrapolation families tested.
+- Supersession (as known at extraction): Second cycle on parent row self_consistency_forces_poisson_note (critical root, 727 transitive descendants); runs the follow-up PR #5656 named as highest-value and independently confirms its R16; proposes withdrawing Caveat 1's distance-law sentence and narrowing Bounded Claim 1 to the screened family.
 
 ## Audit fields
 

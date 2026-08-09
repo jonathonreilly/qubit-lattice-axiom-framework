@@ -35,15 +35,19 @@ B2 closed by two independent proofs (unitary naturality + no-extra-structure) â€
 - git blob: `802b755904c717f406dedfa5dd9ae26d725004df`
 - sha256: `2385e82e715a6e8fd5fb5c047f46f22fbb50636bfa6b433b3a64f82ff855c0ca`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1379_PLANCK_SCALE_BARE_FINITE_CELL_CANONICAL_STATE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1379_PLANCK_SCALE_BARE_FINITE_CELL_CANONICAL_STATE_THEOREM_2026-04-23.md)
-- Lines: 182; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_finite_cell_canonical_state_theorem(.py)`
+- Lines: 182; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_bare_finite_cell_canonical_state_theoremâ€‹.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Closes slot B2 of the PLANCK_SCALE_BARE_CELL_ALONE_CLOSURE_PROGRAM and converts the source-free default-datum state input into a derived naturality result.
 
 ## Audit fields
 

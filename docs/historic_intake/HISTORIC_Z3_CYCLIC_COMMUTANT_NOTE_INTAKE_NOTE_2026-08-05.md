@@ -35,15 +35,19 @@ Airtight Z_3 taste-algebra decomposition theorem (4.1 + 2.chi + 2.chi-bar, five 
 - git blob: `ab8536d6d66d70c1dbde502ba3c3d922ead9eb72`
 - sha256: `cff8d7bda0ea7e567f0dcd77c7b038812d36faec6fc1853ae2a2c87d3ed8c6dd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2503_Z3_CYCLIC_COMMUTANT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch08/2503_Z3_CYCLIC_COMMUTANT_NOTE.md)
-- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_z3_cyclic_commutant(.py)`
+- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_z3_cyclic_commutant​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Sharpens the Batch 2 C_3 Cyclic Action theorem (orbit structure 1+3+3+1) to full representation content; flagged as reusable for CP-phase / omega-label operators preserving Z_3 but not S_3.
 
 ## Audit fields
 

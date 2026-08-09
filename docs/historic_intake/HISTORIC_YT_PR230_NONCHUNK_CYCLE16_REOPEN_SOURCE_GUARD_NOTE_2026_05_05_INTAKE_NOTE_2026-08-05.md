@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ TERMINAL of the exhaustion cascade: strict reopen test — no same-surface artif
 - git blob: `ad28302829700ffe26cd99f2fb269aea26bc2094`
 - sha256: `3aaa9daabb08b1c0ede707e94d84e18597e4994bdfbe14f35b4f5567fb505e27`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2370_YT_PR230_NONCHUNK_CYCLE16_REOPEN_SOURCE_GUARD_NOTE_2026-05-05.md](../../archive_unlanded/historic_intake_originals/branch07/2370_YT_PR230_NONCHUNK_CYCLE16_REOPEN_SOURCE_GUARD_NOTE_2026-05-05.md)
-- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_nonchunk_cycle16_reopen_source_guard(.py)`
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_pr230_nonchunk_cycle16_reopen_source_guard​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -108,9 +111,12 @@ TERMINAL of the exhaustion cascade: strict reopen test — no same-surface artif
 - `docs/YT_SAME_SOURCE_TOP_RESPONSE_IDENTITY_CERTIFICATE_BUILDER_NOTE_2026-05-04.md` — May-campaign member; carried by the exhaustion terminal and the honest y_t terminals.
 - `docs/YT_SAME_SOURCE_WZ_RESPONSE_CERTIFICATE_GATE_NOTE_2026-05-02.md` — May-campaign member; carried by the exhaustion terminal and the honest y_t terminals.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The final three cycles of the loop produce no new physics content, only successive confirmations that the previous cycle's blocked state persists.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The final three cycles of the loop produce no new physics content, only successive confirmations that the previous cycle's blocked state persists.
+- Supersession (as known at extraction): TERMINAL of the non-chunk exhaustion cascade (idx 2367-2374): the campaign's last word is a guard confirming nothing has changed.
 
 ## Audit fields
 

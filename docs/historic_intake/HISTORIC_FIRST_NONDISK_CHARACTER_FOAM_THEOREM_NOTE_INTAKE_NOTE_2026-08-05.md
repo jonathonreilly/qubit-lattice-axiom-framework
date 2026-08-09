@@ -35,15 +35,19 @@ First-nondisk foam theorem: the exact closure object must be sheet-enriched (sca
 - git blob: `0c59ade2c7b73e9258ec8b2504282fa1ff6074b3`
 - sha256: `a72841934300a4110bfa03002b68fc22799f16678a5022336f188284e4946a56`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/472_FIRST_NONDISK_CHARACTER_FOAM_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/472_FIRST_NONDISK_CHARACTER_FOAM_THEOREM_NOTE.md)
-- Lines: 204; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_first_nondisk_character_foam_theorem(.py)`
+- Lines: 204; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_first_nondisk_character_foam_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FIRST_NONDISK_Z3_LIFT_THEOREM_NOTE.md` — The 2^15 lift enumeration predecessor.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Successor to FIRST_NONDISK_Z3_LIFT_THEOREM_NOTE.md (idx 473), which ruled out the pure p-only gas; its own finite-carrier hope is then killed by FINITE_BX_LOW_CARRIER_NO_GO_NOTE.md (idx 459).
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 - sha256: `e40003f770c92fbb050165d04f916e44de90ccef1318f2225f99c4a1d1af28f0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2021_TARGET_INTEGRITY_FORK_CERTIFIED_CYCLE897_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch06/2021_TARGET_INTEGRITY_FORK_CERTIFIED_CYCLE897_BOUNDED_THEOREM_NOTE_2026-07-28.md)
 - Lines: 234; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Excludes a previously binding target at 445 sigma and finds a landed block's wall mis-stated with three reproduced defects.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Excludes a previously binding target at 445 sigma and finds a landed block's wall mis-stated with three reproduced defects.
+- Supersession (as known at extraction): Excludes a binding target used across the lane and corrects a mis-stated wall from Cycle 882 (idx 1761).
 
 ## Audit fields
 

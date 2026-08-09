@@ -35,15 +35,19 @@ Parent-source discharge after realified B3: eight conditions collapse the object
 - git blob: `67c7cbe6e4e337cacaa68282ef864da1679d6ca2`
 - sha256: `22505936942b3725a006de45baf75567450b53191f1555bb90a809d30d94a22e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1451_PLANCK_SCALE_PARENT_SOURCE_DISCHARGE_AFTER_REALIFICATION_THEOREM_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch05/1451_PLANCK_SCALE_PARENT_SOURCE_DISCHARGE_AFTER_REALIFICATION_THEOREM_2026-04-24.md)
-- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_parent_source_discharge_after_realification_theorem_2026_04_24(.py)`
+- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_parent_source_discharge_after_realification_theorem_2026_04_24​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The discharge inherits the realification scope-widening flagged in the B3 lane - it converts an object-class postulate into a consequence of an envelope choice.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The discharge inherits the realification scope-widening flagged in the B3 lane - it converts an object-class postulate into a consequence of an envelope choice.
+- Supersession (as known at extraction): Directly answers PLANCK_SCALE_PARENT_SOURCE_NATURALITY_OBSTRUCTION_THEOREM, which it concedes was correct before B3 closed; terminal note of the parent-source sub-lane.
 
 ## Audit fields
 

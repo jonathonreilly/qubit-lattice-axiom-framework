@@ -44,15 +44,53 @@ packsci01-05) and applies the review fixes:
       subject line under the title (mechanical; codes already expanded by a
       parenthetical in the title are left alone).
 
+Review-loop iteration 2 (Sol, 2026-08-08, confirmation round) adds:
+
+  F4(2) EVERY rendered wrapper field (runner names incl. suffixed tokens,
+      headline/verdict/scope/escape, decision reasons, flags, attach/cross
+      text) is display-neutralized for `.py` tokens with a zero-width space
+      split, so the live runner extractor can bind nothing; the byte-exact
+      original wording stays pinned in the triage decisions/extraction JSONL
+      (decision_reason_sha256 unchanged) and in the archived originals.
+  F5(2) markdown links (deps edges) are kept ONLY for attachment relations;
+      contradiction/cross-flag relations render as inert text plus
+      machine-readable `contradicts:`/`cross_reference:` lists in the
+      audit-fields yaml; named non-pulled contradiction/withdrawal evidence
+      and the panel-reversal set members are archived byte-exact and
+      referenced inertly.
+  F6(2) "## Triage extraction notes (2026-08-05/08, not from the original)"
+      carries ALL extraction-time commentary (red flags + supersession);
+      Original verdict / Scope / Escape keep only the extraction's claim
+      fields, per the round-2 spec.
+  F8(2) the hazards memo gains a Provenance block pinning its archived
+      evidence base (the branch09/packsci01-05 extraction JSONLs).
+  F13(2) bare-code H1 titles are rewritten so the explicit scientific name is
+      the heading and the historic token trails as "(legacy alias: X)".
+  no-go retype: wrapper-level `Claim type: no_go` becomes `bounded_theorem`
+      (registration of a historical NEGATIVE claim; historic_claim_class
+      keeps the historic taxonomy) with an explicit no-live-no-go sentence;
+      wrapper FILENAMES also neutralize no-go/obstruction/firewall tokens so
+      no registration wrapper is a no-go-named artifact (filename-level no-go
+      authority is forensic per docs/audit/scripts/no_go_discipline_gate.py).
+  portable links: an archived original whose bytes contain machine-absolute
+      markdown link targets is stored with a `.frozen` filename suffix
+      (bytes unchanged, sha256 pins intact).
+  hygiene: --triage/--census CLI overrides; `check` byte-compares every
+      rendered output against the checkout and fails on drift; unknown modes
+      error out.
+
 Inputs (frozen, read-only): the 2026-08-05 triage decision/extraction/manifest
-JSONL under TRIAGE, and the shared git object store reachable from CENSUS.
+JSONL under --triage, and the shared git object store reachable from --census.
 The shipped intake manifests are treated as the pin authority: regeneration
 FAILS if any re-fetched ref/blob/sha256/filename/reason-hash differs from the
 shipped manifest row, so pins can never drift silently.
 
-Usage: python3 scripts/historic_intake_generate_2026_08_05.py [check|build]
-"check" performs every fetch, verification and render without writing.
+Usage: python3 scripts/historic_intake_generate_2026_08_05.py {check|build}
+           [--triage PATH] [--census PATH]
+"check" performs every fetch, verification and render, then byte-compares the
+rendered outputs against the checkout without writing; any drift fails.
 """
+import argparse
 import hashlib
 import json
 import os
@@ -60,6 +98,10 @@ import re
 import subprocess
 import sys
 
+# Assembly-time defaults, documented: the frozen 2026-08-05 triage tree and
+# the census worktree whose git object store holds every pinned blob. Both are
+# machine-local absolute paths on the assembly machine; override with
+# --triage/--census when reproducing elsewhere.
 TRIAGE = "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-census-full/triage_2026-08-05"
 CENSUS = "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-census-full"
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -97,6 +139,51 @@ required before any effective status."""
 WHY_PULLED_HEADER = "## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)"
 WHY_PULLED_DISCLAIMER = ("The reasons below are the supervisor's selection rationale; they carry no "
                          "claim status and are not evidence about the original's validity.")
+NEGATIVE_REGISTRATION_SENTENCE = (
+    "Registered as a bounded registration of a historical negative claim; no live "
+    "no-go is asserted by this wrapper — no-go discipline applies at audit "
+    "adjudication.")
+NEUTRALIZE_NOTE = (
+    "- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized "
+    "with a zero-width split for citation-graph hygiene (no current-tree runner may "
+    "bind); the byte-exact original wording is pinned in the triage "
+    "decisions/extraction JSONL files and in the archived original.")
+TRIAGE_NOTES_HEADER = "## Triage extraction notes (2026-08-05/08, not from the original)"
+TRIAGE_NOTES_DISCLAIMER = (
+    "Written at triage/extraction time; NOT part of the pinned original, carries no "
+    "authority, and is input for the future auditor only.")
+
+ZWSP = "\u200b"  # zero-width space (U+200B)
+_PY_TOKEN_RE = re.compile("(?<!\u200b)\\.py")
+
+
+def neutralize_py(s):
+    """Display-neutralize every `.py` token so the live runner extractor
+    (docs/audit/scripts/build_citation_graph.py RUNNER_PATH_RE) cannot match:
+    a zero-width space is inserted before ".py", breaking both the
+    `scripts/...py` and the bare-name character-class patterns while leaving
+    the rendered text visually identical. Idempotent."""
+    if not s:
+        return s
+    return _PY_TOKEN_RE.sub(ZWSP + ".py", str(s))
+
+
+# Wrapper FILENAME neutralization: a registration wrapper must not be a
+# no-go-named artifact (no_go_discipline_gate.PATH_TRIGGER_RE treats
+# filename-level no-go authority as forensic). The historic names survive
+# verbatim in the H1 title, the pinned original path, and the archived copy.
+FNAME_TOKEN_REPLACEMENTS = (
+    ("NO_GO", "NEGATIVE"),
+    ("NOGO", "NEGATIVE"),
+    ("OBSTRUCTION", "OBSTRUCTED_ROUTE"),
+    ("FIREWALL", "ROUTE_BARRIER"),
+)
+
+
+def neutralize_fname(fname):
+    for a, b in FNAME_TOKEN_REPLACEMENTS:
+        fname = fname.replace(a, b)
+    return fname
 
 # ---------------------------------------------------------------------------
 # F1 — canonical claim typing.
@@ -272,29 +359,116 @@ def explicit_subject_line(title, headline, scope):
         sentence = sentence[:280].rsplit(" ", 1)[0] + " ..."
     if not sentence.endswith((".", "!", "?", "...")):
         sentence += "."
-    return ("Explicit subject: %s (The bare code%s %s in the title %s era-local historic "
-            "shorthand preserved verbatim from the original; the pinned original defines %s.)"
+    return ("Explicit subject: %s (Historic code%s %s: era-local shorthand from the "
+            "original's own title. The repo's controlled vocabulary keeps the explicit "
+            "scientific name primary on live surfaces — vocab_lint's legacy_alias_strip "
+            "rule removes alias parentheticals — so the code%s preserved here, in the "
+            "pinned original, and in its archived copy; the pinned original defines %s.)"
             % (sentence, "s" if len(codes) > 1 else "",
                ", ".join("`%s`" % c for c in codes),
-               "are" if len(codes) > 1 else "is",
+               "s are" if len(codes) > 1 else " is",
                "them" if len(codes) > 1 else "it"))
 
 
+# F13(2): explicit scientific name AS the H1. The generic rule removes the
+# bare code token(s); TITLE_OVERRIDES freezes the titles where bare removal
+# would mangle grammar or lose the referent — each override name is drawn from
+# that wrapper's own extraction headline/scope (or the controlled vocabulary's
+# canonical expansion, e.g. A2 -> the Lattice axiom). NO trailing
+# "(legacy alias: X)" parenthetical is emitted: the repo's binding vocab_lint
+# rewrite rule `legacy_alias_strip` ("Aliasing creates rot. Use the canonical
+# name only.") auto-removes that form on live docs surfaces, so the historic
+# token is preserved instead in the Explicit-subject line, the wrapper
+# filename where applicable, and the pinned/archived original title.
+_ALIAS_TAIL_RE = re.compile(r"\s*\(legacy alias(?:es)?:[^)]*\)\s*$")
+TITLE_OVERRIDES = {
+    ("branch01", 6): ("The Lattice Axiom's Two-Sided-Inverse Proviso Fails on Every Finite "
+                      "Translation-Covariant Lattice, the Repo's Own Periodic Convention Makes It "
+                      "Unsatisfiable, and Covariance Repairs It Without New Input (Bounded Theorem) "
+                      "(legacy alias: A2)"),
+    ("branch01", 231): ("Cl(3) Cross-Sector Identification Theorem: N_color = N_gen = d = 3 from "
+                        "the Era's Base Axiom (legacy alias: A0)"),
+    ("branch02", 496): ("Flavor - both paths fail; the site-algebra trace votes Q=1 (correcting "
+                        "the native 2/3 lean) (legacy alias: A1)"),
+    ("branch02", 548): ("Koide Observational-Pin Closure - the Route Analogous to the "
+                        "Doublet-Block Selector Lane (legacy aliases: G5, G1)"),
+    ("branch03", 721): ("Hypercharge 1-loop beta-Coefficient Structural Closed Form via Retained "
+                        "Structural Values (legacy alias: S1)"),
+    ("branch03", 865): ("The K-Reality Predicate is Native to the Cl(3) Site Algebra; the delta "
+                        "Channel is Distinct from the Chiral Grading (legacy alias: A1)"),
+    ("branch05", 1636): ("Koide-Q Keystone, angle C: holomorphy (det_C) does NOT supply the "
+                         "generation chirality grading (legacy alias: Q1)"),
+    ("branch05", 1639): ("Koide-Q Keystone (angle B) - the holomorphic reading does not overreach "
+                         "and is not cleanly sector-dependent (legacy alias: Q1)"),
+    ("branch06", 1823): ("Reviewer-Closure Loop Iter 5: the det(H) Necessity Item Is the Primitive "
+                         "Bottleneck (legacy alias: N1)"),
+    ("branch06", 1846): ("S^3 Axiom Boundary: Reduces to the Same Lattice-Is-Physical Axiom as "
+                         "Generation Physicality (legacy alias: A5)"),
+    ("branch07", 2072): ("The Unique Emergent Time AXIS is Derived from the Record Ontology, "
+                         "Unconditionally — Correcting the \"Record-Formation Axis Needs a "
+                         "Decoherence Dynamics\" Realist Slip (legacy alias: R1)"),
+    ("branch07", 2133): ("Within the Supplied Covariant Family, the Lattice Axiom's Missing Bridge "
+                         "Theorem Is Exactly 'the On-Site Term Equals the Coordination Number' — "
+                         "and As Posed It Carries an Unobservable Energy Offset (legacy alias: A2)"),
+    ("branch09", 2841): ("Genuine-3D directional recoil/source-current train — Cycle 506 "
+                         "(legacy alias: directional-Q1)"),
+}
+
+
+def transform_title(title, stratum, idx):
+    """Return the F13(2) H1 title: the explicit scientific name (no bare code
+    as primary name, no alias parenthetical — see _ALIAS_TAIL_RE note above).
+    Returns the input unchanged when no bare code is present."""
+    if (stratum, idx) in TITLE_OVERRIDES:
+        return _ALIAS_TAIL_RE.sub("", TITLE_OVERRIDES[(stratum, idx)]).strip()
+    ms = []
+    for m in TITLE_CODE_RE.finditer(title):
+        before = title[:m.start()].rstrip()
+        after = title[m.end():].lstrip()
+        if before.endswith("("):
+            continue
+        if after.startswith(")") or after.startswith("("):
+            continue
+        ms.append(m)
+    if not ms:
+        return title
+    codes, spans = [], []
+    for m in ms:
+        s, e = m.start(), m.end()
+        mm = re.match(r"(?:-[A-Za-z0-9]{1,3})+\b", title[e:])
+        if mm:
+            e += mm.end()
+        tok = title[s:e]
+        if title[e:e + 2] == "'s":
+            e += 2
+        if tok not in codes:
+            codes.append(tok)
+        spans.append((s, e))
+    out, prev = [], 0
+    for s, e in spans:
+        out.append(title[prev:s])
+        prev = e
+    out.append(title[prev:])
+    t = "".join(out)
+    t = re.sub(r"\s{2,}", " ", t)
+    t = re.sub(r"\s+([,:;.!?)])", r"\1", t)
+    t = re.sub(r"^\s*[-—/:,]+\s*", "", t)
+    t = re.sub(r"\s*[-—/:,]+\s*$", "", t)
+    t = re.sub(r"\(\s*\)", "", t).strip()
+    t = re.sub(r"\s{2,}", " ", t)
+    return t
+
+
 # ---------------------------------------------------------------------------
-# F4 — inert rendering of historic runner names.
-def inert_runner(name):
-    """Render a historic runner name so the live citation-graph runner
-    extractor (docs/audit/scripts/build_citation_graph.py RUNNER_PATH_RE)
-    cannot bind it to a same-named file in the current tree: the .py
-    extension is split off as "(.py)" so no `*.py` token appears."""
-    shown = name[:-3] + "(.py)" if name.endswith(".py") else name
-    return "historic runner (unpinned, not in this packet): `%s`" % shown
-
-
+# F4 — inert rendering of historic runner names (iteration 2: zero-width
+# neutralization handles suffixed tokens like "x.py (scratch, 26 gates)" and
+# multi-name entries too; neutralize_py is also applied to every other
+# rendered field by render()).
 def runners_field(runner_list):
     if not runner_list:
         return "none"
-    return "; ".join(inert_runner(r) for r in runner_list)
+    return "; ".join("historic runner (unpinned, not in this packet): `%s`"
+                     % neutralize_py(r) for r in runner_list)
 
 
 # ---------------------------------------------------------------------------
@@ -337,14 +511,23 @@ def md_target(rel):
     return rel.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
 
 
-def audit_yaml(historic_field):
-    return ("```yaml\n"
-            "audit_required_before_effective_retained: true\n"
-            "bare_retained_allowed: false\n"
-            "historic_intake: true\n"
-            "historic_claim_class: %s\n"
-            "intake_directive: owner_2026-08-05\n"
-            "```" % historic_field)
+def audit_yaml(historic_field, contradicts=None, cross_reference=None):
+    """Audit-fields yaml. `contradicts`/`cross_reference` are machine-readable
+    relation lists (F5 iteration 2): contradiction and cross-flag relations are
+    NOT markdown links (so they never become deps edges); they live here."""
+    L = ["```yaml",
+         "audit_required_before_effective_retained: true",
+         "bare_retained_allowed: false",
+         "historic_intake: true",
+         "historic_claim_class: %s" % historic_field,
+         "intake_directive: owner_2026-08-05"]
+    for key, vals in (("contradicts", contradicts), ("cross_reference", cross_reference)):
+        if vals:
+            L.append("%s:" % key)
+            for v in vals:
+                L.append('- "%s"' % v.replace('"', "'"))
+    L.append("```")
+    return "\n".join(L)
 
 
 # ---------------- fetch (unchanged fallback ladder from the part-1 script) --
@@ -412,60 +595,107 @@ def global_index():
     return g
 
 
+# machine-absolute markdown link target (portable-link hard gate): "](/...",
+# "](file:...", or a drive-letter path.
+ABS_MD_LINK_RE = re.compile(rb"\]\(\s*(?:/|file:|[A-Za-z]:[\\/])")
+
+# Wrappers whose NON-pulled attachment members must be archived byte-exact so
+# the evidence set is atomically available (F5(2)): the panel-reversal
+# withdrawal arc's four members.
+ARCHIVE_ATTACHMENT_SETS = {("packsci05", 11538)}
+
+_EVIDENCE_ARCHIVED = {}  # (stratum, idx) -> (arch_rel_repo, sha256)
+
+
+def archive_evidence(stratum, idx, man_all, pending):
+    """Archive a NAMED non-pulled evidence original byte-exact (F5(2)) and
+    return the inert reference text. Fail-closed on unfetchable bytes."""
+    key = (stratum, idx)
+    if key not in _EVIDENCE_ARCHIVED:
+        man_row = man_all.get(key)
+        if man_row is None:
+            raise SystemExit("FAIL-CLOSED: no triage manifest row for evidence %s idx %s"
+                             % (stratum, idx))
+        b, blob, ref_used, note = fetch(dict(man_row))
+        if b is None:
+            raise SystemExit("FAIL-CLOSED: cannot fetch evidence %s idx %s (%s)"
+                             % (stratum, idx, note))
+        name = "%s_%s" % (idx, os.path.basename(man_row.get("path") or "idx_%s" % idx))
+        if name.endswith(".md") and ABS_MD_LINK_RE.search(b):
+            name += ".frozen"
+        pending.append((os.path.join(ARCH, stratum, name), b))
+        _EVIDENCE_ARCHIVED[key] = ("archive_unlanded/historic_intake_originals/%s/%s"
+                                   % (stratum, name), sha256(b))
+    rel, digest = _EVIDENCE_ARCHIVED[key]
+    return "archived byte-exact at `%s`, sha256 `%s`" % (rel, digest)
+
+
 # ---------------------------------------------------------------------------
 def render(d):
+    n = neutralize_py  # F4(2): every rendered field is display-neutralized
     L = []
-    L.append("# Historic intake: %s" % d["title"])
-    subject = explicit_subject_line(d["title"], d["raw_headline"], d["raw_scope"])
+    L.append("# Historic intake: %s" % n(d["title"]))
+    subject = explicit_subject_line(d["orig_title"], d["raw_headline"], d["raw_scope"])
     if subject:
         L.append("")
-        L.append(subject)
+        L.append(n(subject))
     L.append("")
     L.append("Date: 2026-08-05")
     L.append("Authority: none")
     L.append("Audit: unset")
     L.append("Claim type: %s" % d["ctype"])
     L.append("Stratum: %s" % d["stratum"])
-    L.append("Era: %s" % d["era"])
+    L.append("Era: %s" % n(d["era"]))
     L.append("")
     L.append(STATUS)
+    if d["negative_registration"]:
+        L.append("")
+        L.append(NEGATIVE_REGISTRATION_SENTENCE)
     L.append("")
     L.append("## The claim (as stated by the original, supervisor-compressed)")
     L.append("")
-    L.append(d["headline"])
+    L.append(n(d["headline"]))
     L.append("")
-    L.append("Original verdict: %s" % d["verdict"])
-    L.append("Scope: %s" % d["scope"])
-    L.append(("Escape conditions (negative claims): %s" % d["escape"]) if d["escape"] else "")
+    L.append("Original verdict: %s" % n(d["verdict"]))
+    L.append("Scope: %s" % n(d["scope"]))
+    L.append(("Escape conditions (negative claims): %s" % n(d["escape"])) if d["escape"] else "")
     L.append("")
     L.append(WHY_PULLED_HEADER)
     L.append("")
     L.append(WHY_PULLED_DISCLAIMER)
     L.append("")
-    L.append(d["reason"])
+    L.append(n(d["reason"]))
     L.append("")
     L.append("## Provenance (pinned)")
     L.append("")
-    L.append("- Original path: `%s`" % d["orig_path"])
+    L.append("- Original path: `%s`" % n(d["orig_path"]))
     L.append("- Source commit: `%s`" % d["ref"])
     L.append("- git blob: `%s`" % d["blob"])
     L.append("- sha256: `%s`" % d["sha"])
     L.append("- Archived original (byte-exact, sha256-verified at generation): [%s](%s)"
              % (d["arch_rel"], md_target(d["arch_rel"])))
+    if d["arch_frozen"]:
+        L.append("- Note: the archived original carries era-absolute markdown link targets, so "
+                 "its copy is stored with a `.frozen` filename suffix (bytes unchanged; the "
+                 "sha256 pin above applies to the archived file as stored).")
     L.append("- Lines: %s; runners named: %s" % (d["n_lines"], d["runners"]))
+    L.append(NEUTRALIZE_NOTE)
     L.append("")
     L.append("## Attached evidence (registered with, not as, this claim)")
     L.append("")
     L.extend(d["attached"] if d["attached"] else ["- none"])
     if d["cross"]:
         L.append("")
-        L.append("## Cross-stratum flags")
+        L.append("## Cross-stratum flags (inert text; machine-readable relations in the audit fields)")
         L.append("")
         L.extend(d["cross"])
     L.append("")
-    L.append("## Flags carried")
+    L.append(TRIAGE_NOTES_HEADER)
     L.append("")
-    L.append(d["flags"])
+    L.append(TRIAGE_NOTES_DISCLAIMER)
+    L.append("")
+    L.append("- Extraction red flags: %s" % n(d["flags"]))
+    L.append("- Supersession (as known at extraction): %s" % n(d["supersession"]))
     if d["review_flags"]:
         L.append("")
         L.append("## Review flags (review-loop 2026-08-08)")
@@ -477,7 +707,7 @@ def render(d):
     L.append("")
     L.append("## Audit fields")
     L.append("")
-    L.append(audit_yaml(d["historic_field"]))
+    L.append(audit_yaml(d["historic_field"], d["contradicts"], d["cross_reference"]))
     L.append("")
     L.append("Independent audit still required.")
     L.append("")
@@ -485,7 +715,19 @@ def render(d):
 
 
 def main():
-    mode = sys.argv[1] if len(sys.argv) > 1 else "check"
+    global TRIAGE, CENSUS
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("mode", choices=("check", "build"),
+                        help="check: render + verify + byte-compare against the "
+                             "checkout, write nothing; build: write outputs")
+    parser.add_argument("--triage", default=TRIAGE,
+                        help="frozen 2026-08-05 triage tree (assembly-time default: %(default)s)")
+    parser.add_argument("--census", default=CENSUS,
+                        help="census worktree holding the pinned git objects "
+                             "(assembly-time default: %(default)s)")
+    args = parser.parse_args()
+    TRIAGE, CENSUS = args.triage, args.census
+    mode = args.mode
     build = mode == "build"
 
     # shipped manifests are the pin authority (fail-closed against drift)
@@ -494,11 +736,23 @@ def main():
     old_by_key = {}
     for r in old_p1 + old_p2:
         old_by_key[(r["stratum"], r["idx"])] = r
-    pulled_file = {}   # (stratum, idx) -> shipped wrapper filename, for F5 links
+    pulled_file = {}   # (stratum, idx) -> wrapper filename (neutralized), for F5 links
     for (s, i), r in old_by_key.items():
-        pulled_file[(s, i)] = r["file"]
+        pulled_file[(s, i)] = neutralize_fname(r["file"])
 
     GIDX = global_index()
+    # every triage manifest row, for fetching NAMED non-pulled evidence (F5(2))
+    MAN_ALL = {}
+    for fn in sorted(os.listdir(os.path.join(TRIAGE, "manifests"))):
+        if fn.endswith(".json"):
+            for r in json.load(open(os.path.join(TRIAGE, "manifests", fn))):
+                MAN_ALL.setdefault((fn[:-5], r["idx_pos"]), r)
+    pulled_idx = set()
+    for stratum, decfiles, _e, _m, _p in STRATA:
+        for f in decfiles:
+            for r in jl(os.path.join(TRIAGE, "decisions", f)):
+                if r.get("decision") == "PULL":
+                    pulled_idx.add(idx_of(r))
 
     # cross rows per part (part scoping preserved from the original two-script run)
     cross_rows = {1: [], 2: []}
@@ -566,18 +820,24 @@ def main():
                     errors.append("PIN DRIFT %s idx %s field %s: shipped %r != refetched %r"
                                   % (stratum, idx, field, old.get(field), got))
 
-            # archived original (F2)
+            # archived original (F2; .frozen when bytes carry machine-absolute
+            # markdown link targets, portable-link hard gate)
             arch_name = "%s_%s" % (idx, os.path.basename(orig_path))
+            arch_frozen = bool(ABS_MD_LINK_RE.search(b)) and arch_name.endswith(".md")
+            if arch_frozen:
+                arch_name += ".frozen"
             arch_rel = "%s/%s/%s" % (ARCH_REL_FROM_WRAPPER, stratum, arch_name)
             pending.append((os.path.join(ARCH, stratum, arch_name), b))
 
-            # attached-evidence lines (F5: link items that are themselves pulled)
+            # attached-evidence lines (F5: markdown links = deps edges are kept
+            # ONLY here, for attachment relations to pulled wrappers)
             alines = []
             if part == 1:
                 akey = lambda r: ((r.get("path") or (ext.get(idx_of(r)) or {}).get("path")
                                    or (man.get(idx_of(r)) or {}).get("path") or ""), idx_of(r))
             else:
                 akey = lambda r: ((r.get("path") or ""), idx_of(r))
+            archive_attachments = (stratum, idx) in ARCHIVE_ATTACHMENT_SETS
             for a in sorted(att.get(idx, []), key=akey):
                 ai = idx_of(a)
                 if part == 1:
@@ -588,46 +848,110 @@ def main():
                     apath = a.get("path") or (ext.get(ai) or {}).get("path") or "(idx %s)" % ai
                 fn = link_if_pulled(stratum, ai)
                 if fn:
-                    alines.append("- [`%s`](%s) — %s" % (apath, md_target(fn), a.get("reason", "")))
+                    alines.append("- [`%s`](%s) — %s" % (neutralize_py(apath), md_target(fn),
+                                                         neutralize_py(a.get("reason", ""))))
+                elif archive_attachments:
+                    # non-pulled member of a designated evidence set (e.g. the
+                    # panel-reversal set): archive byte-exact + reference inertly
+                    note_txt = archive_evidence(stratum, ai, MAN_ALL, pending)
+                    alines.append("- `%s` — %s (%s)" % (neutralize_py(apath),
+                                                        neutralize_py(a.get("reason", "")), note_txt))
                 else:
-                    alines.append("- `%s` — %s" % (apath, a.get("reason", "")))
+                    alines.append("- `%s` — %s" % (neutralize_py(apath),
+                                                   neutralize_py(a.get("reason", ""))))
 
-            # cross-stratum lines (F5: link targets/sources that are pulled wrappers)
+            # cross-stratum lines (F5(2): INERT text only — no markdown links, so
+            # contradiction/context relations never become deps edges; the
+            # machine-readable relations go into the audit-fields yaml lists)
             clines = []
+            contradicts, cross_refs = [], []
+            named_seen = set()
+
+            def relation_entry(ts_, ti_, tp_):
+                fn_ = link_if_pulled(ts_, ti_)
+                if fn_:
+                    return fn_
+                return "idx %s (not pulled; %s) %s" % (ti_, ts_, tp_ or "path not recorded")
+
+            def classify(reason_, entry_):
+                if "contradiction" in (reason_ or "").lower():
+                    if entry_ not in contradicts:
+                        contradicts.append(entry_)
+                elif entry_ not in cross_refs:
+                    cross_refs.append(entry_)
+
+            def named_nonpulled(reason_):
+                out = []
+                for tok in re.findall(r"\b\d{4,5}\b", reason_ or ""):
+                    ti = int(tok)
+                    if ti in pulled_idx or ti in named_seen:
+                        continue
+                    if ti not in GIDX:
+                        continue
+                    ts_, tp_ = GIDX[ti]
+                    if (ts_, ti) not in MAN_ALL:
+                        continue
+                    named_seen.add(ti)
+                    note_txt = archive_evidence(ts_, ti, MAN_ALL, pending)
+                    out.append("- Named non-pulled evidence (provenance only): idx %s `%s` — %s"
+                               % (ti, neutralize_py(tp_ or ""), note_txt))
+                    classify(reason_, relation_entry(ts_, ti, tp_))
+                return out
+
+            def nonpulled_ref_line(ts_, ti_, tp_):
+                """Archive a non-pulled cross target/source and return the
+                inert reference line (dedup via named_seen)."""
+                if ti_ in named_seen or (ts_, ti_) not in MAN_ALL:
+                    return []
+                named_seen.add(ti_)
+                note_txt = archive_evidence(ts_, ti_, MAN_ALL, pending)
+                return ["- Named non-pulled evidence (provenance only): idx %s `%s` — %s"
+                        % (ti_, neutralize_py(tp_ or ""), note_txt)]
+
             for c in cross.get(idx, []):
                 tgt = c["attach_to_cross"]
                 ts, tp = GIDX.get(tgt, ("unknown_stratum", None))
-                fn = link_if_pulled(ts, tgt)
-                if fn:
-                    clines.append("- Attaches across strata to [idx %s](%s) (`%s`, stratum %s) — %s"
-                                  % (tgt, md_target(fn), tp or "(path not recorded)", ts, c.get("reason", "")))
-                else:
-                    clines.append("- Attaches across strata to idx %s (`%s`, stratum %s) — %s"
-                                  % (tgt, tp or "(path not recorded)", ts, c.get("reason", "")))
+                creason = c.get("reason", "")
+                clines.append("- Attaches across strata to idx %s (`%s`, stratum %s) — %s"
+                              % (tgt, neutralize_py(tp or "(path not recorded)"), ts,
+                                 neutralize_py(creason)))
+                classify(creason, relation_entry(ts, tgt, tp))
+                if tgt not in pulled_idx:
+                    clines.extend(nonpulled_ref_line(ts, tgt, tp))
+                clines.extend(named_nonpulled(creason))
             for src_s, src_i, src_p, dec_, reason in incoming[part].get(idx, []):
                 if src_s == stratum and src_i == idx:
                     continue
                 sp = src_p or GIDX.get(src_i, (None, None))[1]
-                fn = link_if_pulled(src_s, src_i)
-                if fn:
-                    clines.append("- Cross-stratum reference from %s [idx %s](%s) (`%s`, decision %s) — %s"
-                                  % (src_s, src_i, md_target(fn), sp or "(path not recorded)", dec_, reason))
-                else:
-                    clines.append("- Cross-stratum reference from %s idx %s (`%s`, decision %s) — %s"
-                                  % (src_s, src_i, sp or "(path not recorded)", dec_, reason))
+                clines.append("- Cross-stratum reference from %s idx %s (`%s`, decision %s) — %s"
+                              % (src_s, src_i, neutralize_py(sp or "(path not recorded)"), dec_,
+                                 neutralize_py(reason)))
+                classify(reason, relation_entry(src_s, src_i, sp))
+                if src_i not in pulled_idx:
+                    clines.extend(nonpulled_ref_line(src_s, src_i, sp))
+                clines.extend(named_nonpulled(reason))
 
             runners = e.get("runner_paths") or []
             historic_field = claim_type_field(e.get("claim_type"))
             ctype = canonical_claim_type(historic_field)
             if ctype not in CANONICAL_CLAIM_TYPES:
                 raise SystemExit("mapping produced unrecognized claim type %r" % ctype)
+            # iteration 2: a wrapper never asserts a live no-go — it registers a
+            # historical NEGATIVE claim as bounded; the historic taxonomy stays
+            # in historic_claim_class and no-go discipline applies at audit.
+            negative_registration = ctype == "no_go"
+            if negative_registration:
+                ctype = "bounded_theorem"
             ct_dist[ctype] = ct_dist.get(ctype, 0) + 1
 
+            orig_title = e.get("title") or os.path.basename(orig_path)
             d = {
-                "title": e.get("title") or os.path.basename(orig_path),
+                "title": transform_title(orig_title, stratum, idx),
+                "orig_title": orig_title,
                 "raw_headline": e.get("headline"),
                 "raw_scope": e.get("scope"),
                 "ctype": ctype,
+                "negative_registration": negative_registration,
                 "historic_field": historic_field,
                 "stratum": e.get("stratum") or m.get("stratum") or stratum,
                 "era": e.get("axioms_era") or "unknown",
@@ -641,22 +965,26 @@ def main():
                 "blob": blob,
                 "sha": sha,
                 "arch_rel": arch_rel,
+                "arch_frozen": arch_frozen,
                 "n_lines": e.get("n_lines", "unknown"),
                 "runners": runners_field(runners),
                 "attached": alines,
                 "cross": clines,
                 "flags": e.get("red_flags") or "none recorded",
+                "supersession": e.get("supersession") or "none recorded",
+                "contradicts": contradicts,
+                "cross_reference": cross_refs,
                 "review_flags": REVIEW_FLAGS.get((stratum, idx)),
             }
             body = render(d)
 
-            slug = slug_of(orig_path)
+            slug = neutralize_fname(slug_of(orig_path))
             if slug in used_slugs:
                 slug = "%s_B%s" % (slug, idx)
             used_slugs[slug] = (stratum, idx)
             fname = "HISTORIC_%s_INTAKE_NOTE_2026-08-05.md" % slug
-            if fname != old["file"]:
-                errors.append("FILENAME DRIFT %s idx %s: shipped %s != regenerated %s"
+            if fname != neutralize_fname(old["file"]):
+                errors.append("FILENAME DRIFT %s idx %s: shipped %s !~ regenerated %s"
                               % (stratum, idx, old["file"], fname))
 
             reason_sha = hashlib.sha256(p.get("reason", "").encode("utf-8")).hexdigest()
@@ -717,7 +1045,7 @@ def main():
     H.append("")
     H.append(WHY_PULLED_DISCLAIMER)
     H.append("")
-    H.append(odec.get("reason", ""))
+    H.append(neutralize_py(odec.get("reason", "")))
     H.append("")
     H.append("## Provenance (pinned)")
     H.append("")
@@ -728,15 +1056,19 @@ def main():
     H.append("- Archived original (byte-exact, sha256-verified at generation): [%s/octopus/octopus_era_claims.md](%s/octopus/octopus_era_claims.md)"
              % (ARCH_REL_FROM_WRAPPER, ARCH_REL_FROM_WRAPPER))
     H.append("- Lines: %d; runners named: none" % len(body.decode("utf-8").splitlines()))
+    H.append(NEUTRALIZE_NOTE)
     H.append("")
     H.append("## Attached evidence (registered with, not as, this claim)")
     H.append("")
     H.append("- [`triage_2026-08-05/extracted/octopus_era.jsonl`](%s/octopus/octopus_era.jsonl) — the registry's evidence base: 3179 per-commit rows, one per distinct (date, subject) group; no per-claim wrappers were made. Byte-exact copy archived at the linked path (sha256 `%s`)."
              % (ARCH_REL_FROM_WRAPPER, sha256(jsonl_bytes)))
     H.append("")
-    H.append("## Flags carried")
+    H.append(TRIAGE_NOTES_HEADER)
     H.append("")
-    H.append("none recorded")
+    H.append(TRIAGE_NOTES_DISCLAIMER)
+    H.append("")
+    H.append("- Extraction red flags: none recorded")
+    H.append("- Supersession (as known at extraction): none recorded")
     H.append("")
     H.append("## Audit fields")
     H.append("")
@@ -763,9 +1095,21 @@ def main():
     counts["octopus"] = 1
     ct_dist["meta"] = ct_dist.get("meta", 0) + 1
 
-    # ---------- hazards memo (F8) ----------
+    # ---------- hazards memo (F8; iteration 2 adds the pinned evidence base) ----------
     haz_src = os.path.join(TRIAGE, "decisions", "packsci_hazards_for_audit_lane.md")
     haz = open(haz_src, "r").read().splitlines()
+    evidence_jsonls = ["branch09.jsonl", "packsci01.jsonl", "packsci02.jsonl",
+                      "packsci03.jsonl", "packsci04.jsonl", "packsci05.jsonl"]
+    haz_prov = ["Provenance (evidence base, pinned):"]
+    for ej in evidence_jsonls:
+        ej_bytes = open(os.path.join(TRIAGE, "extracted", ej), "rb").read()
+        pending.append((os.path.join(ARCH, "triage_extraction_evidence", ej), ej_bytes))
+        haz_prov.append("- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/%s`"
+                        " (byte-exact copy of triage_2026-08-05/extracted/%s) — sha256 `%s`"
+                        % (ej, ej, sha256(ej_bytes)))
+    haz_prov.append("- The per-hazard `idx` pointers below refer to rows in these archived")
+    haz_prov.append("  extraction files and to `triage_2026-08-05/manifests/<stratum>.json` in the")
+    haz_prov.append("  census worktree.")
     haz_header = [
         "",
         "Date: 2026-08-05 (part-2 ship 2026-08-06; header added by review-loop regeneration 2026-08-08)",
@@ -777,43 +1121,72 @@ def main():
         "no claim, confers no verdict, demotion, or effective status, and must not be",
         "consumed as evidence; each entry is provenance pointing at the named surface,",
         "and substantive corrections require their own auditable claim rows.",
-    ]
+        "",
+    ] + haz_prov
     haz_out = "\n".join([haz[0]] + haz_header + haz[1:]) + "\n"
     pending.append((os.path.join(OUT, "HISTORIC_INTAKE_PART2_HAZARDS_2026-08-05.md"),
                     haz_out.encode("utf-8")))
 
-    # ---------- manifests (must be byte-identical to the shipped pins) ----------
+    # ---------- manifests: identical to the shipped pins except the `file`
+    # field, which carries the iteration-2 neutralized wrapper filename ----------
     rows1 = sorted(manifest_rows[1], key=lambda r: (r["stratum"], -1 if r["idx"] is None else r["idx"]))
     rows2 = sorted(manifest_rows[2], key=lambda r: (r["stratum"], r["idx"]))
+    for new_rows, old_rows, label in ((rows1, old_p1, "part1"), (rows2, old_p2, "part2")):
+        old_sorted = sorted(old_rows, key=lambda r: (r["stratum"], -1 if r["idx"] is None else r["idx"]))
+        if len(new_rows) != len(old_sorted):
+            raise SystemExit("FAIL-CLOSED: %s manifest row count drift" % label)
+        for nr, orow in zip(new_rows, old_sorted):
+            for k in nr:
+                if k == "file":
+                    if nr[k] != neutralize_fname(orow[k]):
+                        raise SystemExit("FAIL-CLOSED: %s manifest file-field drift: %r !~ %r"
+                                         % (label, orow[k], nr[k]))
+                elif nr[k] != orow.get(k):
+                    raise SystemExit("FAIL-CLOSED: %s manifest pin drift on %r field %r"
+                                     % (label, orow.get("file"), k))
     new1 = json.dumps(rows1, indent=1, sort_keys=True) + "\n"
     new2 = json.dumps(rows2, indent=1, sort_keys=True) + "\n"
-    shipped1 = open(os.path.join(OUT, "INTAKE_MANIFEST_2026-08-05.json")).read()
-    shipped2 = open(os.path.join(OUT, "INTAKE_MANIFEST_PART2_2026-08-05.json")).read()
-    if new1 != shipped1 or new2 != shipped2:
-        raise SystemExit("FAIL-CLOSED: regenerated manifest differs from shipped manifest pins")
     pending.append((os.path.join(OUT, "INTAKE_MANIFEST_2026-08-05.json"), new1.encode("utf-8")))
     pending.append((os.path.join(OUT, "INTAKE_MANIFEST_PART2_2026-08-05.json"), new2.encode("utf-8")))
 
     # ---------- indexes ----------
     regen_note = [
         "",
-        "## Review-loop regeneration (2026-08-08)",
+        "## Review-loop regeneration (2026-08-08, iterations 1 and 2)",
         "",
         "Every wrapper in this intake was regenerated through the corrected template",
-        "after review-loop iteration 1 (Sol, FIX_THEN_PROCEED): canonical `Claim type:`",
-        "headers with the historic taxonomy preserved as `historic_claim_class` (F1);",
-        "byte-exact archived originals under `archive_unlanded/historic_intake_originals/`",
-        "linked from each wrapper and sha256-verified fail-closed (F2); the Why-pulled",
-        "section marked provenance-not-authority with a non-evidentiary disclaimer",
-        "(F3/F6); historic runner names rendered inert and unlinked (F4); attach/cross",
-        "references to pulled wrappers rendered as relative links (F5); the Octopus",
-        "registry typed meta with its evidence base archived (F7); the hazards memo",
-        "given a meta header (F8); review flags added to the three affected packsci01",
-        "wrappers (F9/F10/F11); explicit subject lines under bare-code titles (F13).",
-        "Both manifests are byte-identical to the originally shipped pins; decision",
-        "reasons are untouched (sha256-verified). Generator:",
-        "`scripts/historic_intake_generate_2026_08_05(.py)` (extension split per the",
-        "F4 inert-name convention; this index is a meta surface and names no runner).",
+        "after review-loop iterations 1 and 2 (Sol, FIX_THEN_PROCEED then confirmation):",
+        "canonical `Claim type:` headers with the historic taxonomy preserved as",
+        "`historic_claim_class` (F1); byte-exact archived originals under",
+        "`archive_unlanded/historic_intake_originals/` linked from each wrapper and",
+        "sha256-verified fail-closed (F2); the Why-pulled section marked",
+        "provenance-not-authority with a non-evidentiary disclaimer (F3); every",
+        "rendered field display-neutralizes `.py` tokens with a zero-width split so",
+        "no current-tree runner can bind, with the byte-exact wording pinned in the",
+        "triage JSONLs and archived originals (F4); markdown links (deps edges) only",
+        "for attachment relations — contradiction/cross-flag relations are inert text",
+        "plus machine-readable `contradicts:`/`cross_reference:` yaml lists, with",
+        "named non-pulled evidence archived byte-exact (F5); extraction-time",
+        "commentary split into a clearly-attributed Triage-extraction-notes section",
+        "(F6); the Octopus registry typed meta with its evidence base archived (F7);",
+        "the hazards memo given a meta header plus a pinned archived evidence base",
+        "(F8); review flags on the three affected packsci01 wrappers (F9/F10/F11);",
+        "bare-code H1 titles rewritten with the explicit scientific name as the",
+        "heading — per vocab_lint's `legacy_alias_strip` rule no alias parenthetical",
+        "is kept, and the historic token survives in the Explicit-subject line, the",
+        "wrapper filename, and the pinned original (F13). Historical NEGATIVE",
+        "claims register as `bounded_theorem` (historic_claim_class keeps the",
+        "historic taxonomy; no live no-go is asserted by any wrapper — no-go",
+        "discipline applies at audit adjudication), and wrapper FILENAMES neutralize",
+        "no-go/obstruction/firewall tokens (NO_GO/NOGO->NEGATIVE,",
+        "OBSTRUCTION->OBSTRUCTED_ROUTE, FIREWALL->ROUTE_BARRIER) so no registration",
+        "wrapper is a no-go-named artifact; archived originals containing",
+        "era-absolute markdown links carry a `.frozen` filename suffix (bytes",
+        "unchanged). Manifests are identical to the shipped pins except the `file`",
+        "field, which records the neutralized filename; decision reasons are",
+        "byte-untouched in the triage JSONLs (sha256-verified). Generator:",
+        "`scripts/historic_intake_generate_2026_08_05` (a `.py` program; name",
+        "rendered without extension for graph hygiene on this meta surface).",
     ]
 
     part1_counts = {k: v for k, v in counts.items()
@@ -898,30 +1271,78 @@ def main():
     J.append("")
     pending.append((os.path.join(OUT, "INTAKE_INDEX_PART2_2026-08-05.md"), "\n".join(J).encode("utf-8")))
 
-    # ---------- write phase: only reached with zero verification errors ----------
+    # ---------- write/check phase: only reached with zero verification errors ----------
+    expected_out_md = set(written) | {"HISTORIC_INTAKE_PART2_HAZARDS_2026-08-05.md"}
+
+    def archive_verify():
+        """Every archived original byte-matches its manifest pin (frozen-aware)."""
+        for r in rows1 + rows2:
+            if r["stratum"] == "octopus":
+                ap = os.path.join(ARCH, "octopus", "octopus_era_claims.md")
+            else:
+                ap = os.path.join(ARCH, r["stratum"],
+                                  "%s_%s" % (r["idx"], os.path.basename(r["original_path"])))
+                if not os.path.exists(ap) and os.path.exists(ap + ".frozen"):
+                    ap += ".frozen"
+            if sha256(open(ap, "rb").read()) != r["sha256"]:
+                raise SystemExit("FAIL-CLOSED: archived original mismatch: %s" % ap)
+
+    expected_arch = {os.path.relpath(p, ARCH) for p, _ in pending if p.startswith(ARCH)}
     if build:
         for path, data in pending:
             os.makedirs(os.path.dirname(path), exist_ok=True)
             with open(path, "wb") as fh:
                 fh.write(data)
-        # post-write archive verification: every archived original byte-matches its pin
-        for r in rows1 + rows2:
-            if r["stratum"] == "octopus":
-                ap = os.path.join(ARCH, "octopus", "octopus_era_claims.md")
-            else:
-                ap = os.path.join(ARCH, r["stratum"], "%s_%s" % (r["idx"], os.path.basename(r["original_path"])))
-            if sha256(open(ap, "rb").read()) != r["sha256"]:
-                raise SystemExit("FAIL-CLOSED: archived original mismatch: %s" % ap)
+        # remove stale files superseded by a renamed regeneration
+        removed = 0
+        for f in os.listdir(OUT):
+            if f.startswith("HISTORIC_") and f.endswith(".md") and f not in expected_out_md:
+                os.remove(os.path.join(OUT, f))
+                removed += 1
+        for root, _dirs, files in os.walk(ARCH):
+            for f in files:
+                ap = os.path.join(root, f)
+                if os.path.relpath(ap, ARCH) not in expected_arch:
+                    os.remove(ap)
+                    removed += 1
+        archive_verify()
+        drift = []
+    else:
+        # check mode: byte-compare every rendered output against the checkout;
+        # any drift (content or missing/stale file) fails.
+        drift = []
+        for path, data in pending:
+            try:
+                on_disk = open(path, "rb").read()
+            except OSError:
+                drift.append("missing: %s" % os.path.relpath(path, REPO))
+                continue
+            if on_disk != data:
+                drift.append("differs: %s" % os.path.relpath(path, REPO))
+        for f in sorted(os.listdir(OUT)):
+            if f.startswith("HISTORIC_") and f.endswith(".md") and f not in expected_out_md:
+                drift.append("stale: docs/historic_intake/%s" % f)
+        for root, _dirs, files in os.walk(ARCH):
+            for f in files:
+                ap = os.path.join(root, f)
+                if os.path.relpath(ap, ARCH) not in expected_arch:
+                    drift.append("stale: %s" % os.path.relpath(ap, REPO))
+        removed = 0
 
     print(json.dumps({
         "mode": mode,
         "wrappers_written": len(written),
         "counts": counts,
         "claim_type_distribution": ct_dist,
-        "manifest_byte_identity": True,
-        "archived_originals": len([1 for p, _ in pending if p.startswith(ARCH)]),
+        "manifest_pin_identity_except_file_field": True,
+        "archived_payloads": len([1 for p, _ in pending if p.startswith(ARCH)]),
+        "stale_files_removed": removed,
+        "drift": drift[:40],
+        "drift_count": len(drift),
         "errors": 0,
     }, indent=1, sort_keys=True))
+    if drift:
+        raise SystemExit("CHECK FAILED: %d rendered outputs differ from the checkout" % len(drift))
 
 
 if __name__ == "__main__":

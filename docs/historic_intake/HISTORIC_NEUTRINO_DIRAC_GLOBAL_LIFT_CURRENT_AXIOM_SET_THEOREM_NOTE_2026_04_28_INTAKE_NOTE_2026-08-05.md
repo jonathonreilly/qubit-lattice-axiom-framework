@@ -36,14 +36,18 @@ The Dirac global lift consolidation retiring three alphas — with the operation
 - sha256: `1f9aa49022cda99ff880a187efcc480d79c0c2d715b449ec347a90c5de5d09b8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1184_NEUTRINO_DIRAC_GLOBAL_LIFT_CURRENT_AXIOM_SET_THEOREM_NOTE_2026-04-28.md](../../archive_unlanded/historic_intake_originals/branch04/1184_NEUTRINO_DIRAC_GLOBAL_LIFT_CURRENT_AXIOM_SET_THEOREM_NOTE_2026-04-28.md)
 - Lines: 313; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-No runner authored, so the claim rests entirely on structural case analysis plus a framework posture (no fitted parameters) rather than executable verification.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: No runner authored, so the claim rests entirely on structural case analysis plus a framework posture (no fitted parameters) rather than executable verification.
+- Supersession (as known at extraction): Upgrades the Cycle-2 CONDITIONAL Dirac global lift to on-current-axiom-set UNCONDITIONAL via the case-A/B/C closures of Cycles 6 and 7; intended for the post-loop integration pipeline.
 
 ## Audit fields
 

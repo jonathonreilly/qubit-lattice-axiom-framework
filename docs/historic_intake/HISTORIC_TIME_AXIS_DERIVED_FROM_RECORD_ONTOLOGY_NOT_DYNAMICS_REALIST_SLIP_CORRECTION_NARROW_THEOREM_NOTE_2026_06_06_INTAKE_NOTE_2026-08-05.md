@@ -1,6 +1,6 @@
-# Historic intake: The Unique Emergent Time AXIS is Derived from the Record Ontology, Unconditionally — Correcting the "R1 Needs a Decoherence Dynamics" Realist Slip
+# Historic intake: The Unique Emergent Time AXIS is Derived from the Record Ontology, Unconditionally — Correcting the "Record-Formation Axis Needs a Decoherence Dynamics" Realist Slip
 
-Explicit subject: Given the framework premise that reality is the record stack with additive non-negative readout I, the I-grading is intrinsic (computed from records alone, no Hamiltonian), strictly monotone along the durable containment poset with codim-1 level sets, reconstruction-invariant ... (The bare code `R1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: Given the framework premise that reality is the record stack with additive non-negative readout I, the I-grading is intrinsic (computed from records alone, no Hamiltonian), strictly monotone along the durable containment poset with codim-1 level sets, reconstruction-invariant ... (Historic code `R1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ The record axis unconditionally forced by the record ontology — TERMINAL and c
 - git blob: `1567b21512170c7a3da6872fbb1af1bf3bd98b20`
 - sha256: `1ad90778fe87bc898fe0e960a2e1177df158fbb6f8ed62bfaf680b96257f69c4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2072_TIME_AXIS_DERIVED_FROM_RECORD_ONTOLOGY_NOT_DYNAMICS_REALIST_SLIP_CORRECTION_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch07/2072_TIME_AXIS_DERIVED_FROM_RECORD_ONTOLOGY_NOT_DYNAMICS_REALIST_SLIP_CORRECTION_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 105; runners named: historic runner (unpinned, not in this packet): `scripts/time_axis_from_record_ontology_runner(.py)`
+- Lines: 105; runners named: historic runner (unpinned, not in this packet): `scripts/time_axis_from_record_ontology_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts/corrects two prior session notes by declaring their H=0 and energy-eigenstate witnesses a 'realist slip'; the correction rests on the meta register-not-read principle rather than a runner-checked derivation, and the note itself is unaudited.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts/corrects two prior session notes by declaring their H=0 and energy-eigenstate witnesses a 'realist slip'; the correction rests on the meta register-not-read principle rather than a runner-checked derivation, and the note itself is unaudited.
+- Supersession (as known at extraction): TERMINAL and corrective: explicitly supersedes a companion no-go's conclusion that 'R1 is not unconditionally forcible' and upgrades a companion reduction from 'generically forced' to 'unconditionally forced' for the axis; leaves POST_RECORD_ARROW_ORIENTATION_FIREWALL (retained_no_go) standing for the sign.
 
 ## Audit fields
 

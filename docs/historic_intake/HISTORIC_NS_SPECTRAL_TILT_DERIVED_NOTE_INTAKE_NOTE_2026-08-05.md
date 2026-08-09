@@ -35,15 +35,19 @@ n_s = 1 - 2/N_e exact to all computed orders precisely at d=3 — an exact struc
 - git blob: `5a54d5cf390c15b160f45144b88c9c9a1c55487e`
 - sha256: `ab6b17d0326d6c76075214a1fba171546e18c3a41e8ad521b2f2858112c3cd90`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1221_NS_SPECTRAL_TILT_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1221_NS_SPECTRAL_TILT_DERIVED_NOTE.md)
-- Lines: 108; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ns_derived(.py)`
+- Lines: 108; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ns_derived​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

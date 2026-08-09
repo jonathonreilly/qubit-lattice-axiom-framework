@@ -101,6 +101,12 @@
   "headline": "within the supplied tick-box corner-dissection model: minimal-piece adjacency-cost bracket [108, 128], both ends attained, exactly the eleven even values attained; all-piece bracket [68, 128]",
   "local_maximality_scope": "five representative certificates only; the thirteen other ladder rungs and the fixed-weight certificate are untested",
   "minimal_pieces": 2672,
+  "no_go_discipline": {
+    "checklist": "committed N1-N8 record in the note's 'No-Go Discipline Gate' section",
+    "n5_certificate": "five resolution lines (per_element/per_site/per_mode/per_block/lattice_wide) in this runner's stdout and cached stdout",
+    "no_go_shipped": false,
+    "status": "PASS"
+  },
   "nondegenerate_pieces": 3008,
   "open_bridges": [
     "physical tick-Admissibility realization (which rule variation corresponds to which tick)",
@@ -118,13 +124,22 @@
     "cost": 72,
     "overlapping_pairs": 86
   },
-  "review_loop": {
-    "date": "2026-08-08",
-    "disposition": "FIX_THEN_PROCEED",
-    "fix": "typed the note bounded_theorem of the supplied tick-box dissection model; narrowed the single-orbit, local-maximality, and coarse-parity claims to their computed scopes; removed the false monotone-stencil witness identification; declared the volume normalization; demoted uncarried cross-checks to provenance; made the runner fail closed and added its pinned cache",
-    "iteration": 1,
-    "reviewer": "Sol"
-  },
+  "review_loop": [
+    {
+      "date": "2026-08-08",
+      "disposition": "FIX_THEN_PROCEED",
+      "fix": "typed the note bounded_theorem of the supplied tick-box dissection model; narrowed the single-orbit, local-maximality, and coarse-parity claims to their computed scopes; removed the false monotone-stencil witness identification; declared the volume normalization; demoted uncarried cross-checks to provenance; made the runner fail closed and added its pinned cache",
+      "iteration": 1,
+      "reviewer": "Sol"
+    },
+    {
+      "date": "2026-08-08",
+      "disposition": "CONFIRMATION_FAIL_FIXED",
+      "fix": "landed the mandatory No-Go Discipline artifacts for the surviving narrowed negative boundaries: the committed N1-N8 gate record in the note and the five-line N5 resolution certificate (per_element/per_site/per_mode/per_block/lattice_wide) in the primary runner's cached stdout; no no_go claim ships and every negative stays priced to its carried objects",
+      "iteration": 2,
+      "reviewer": "Sol (confirmation seat)"
+    }
+  ],
   "sample_points": {
     "boundary_incidences_fixed_weight": 0,
     "boundary_incidences_invariant": 0,

@@ -1,38 +1,54 @@
 #!/usr/bin/env python3
-"""Independent adversarial checker for the Cycle-872 admissibility classification.
+"""Independent adversarial checker for the Cycle-872 stipulated-grammar
+classification (exact support on stipulated data; no physical claim).
 
 This checker is specified to REFUTE.  Its job is to find one response object
-built from the landed surface that separates the conformal sign sigma on the
-landed source family, which would convert the primary's classification no-go
-into a derivation route and kill it as stated.
+built from the stipulated surface that separates the grading sign sigma on
+the declared source family, which would convert the primary's exact-support
+classification into a derivation route and kill it as stated.  Every
+refutation quantity it computes is GATED: any sensitivity hit, any claim
+disagreement, or any verdict mismatch fails its certificate and drives a
+nonzero exit through the same predicate that renders the terminal line.
 
-It attacks on four fronts.
+It attacks on five fronts.
 
 1. A WIDER class.  Where the primary declared four endpoint-space combinations
    of the identity and the exchange at grading powers one and two, this checker
-   sweeps seven combinations at grading powers one through four, every
-   index-subset contraction, and -- on a declared member sample -- every
-   unordered product of the whole resulting feature base.  If the primary's
-   grammar truncation were load-bearing, the extra objects would expose it.
+   sweeps seven combinations at grading powers one through four and every
+   index-subset contraction.  The LINEAR sweep is exhaustive over every
+   declared member; the quadratic sweep runs every unordered product of the
+   whole feature base on a DECLARED EIGHT-MEMBER SAMPLE, and the higher-degree
+   sweep uses random elements -- both are corroboration on top of the linear
+   exhaustion, not exhaustion themselves.
 
 2. The DISCARDED objects.  A classification can hide a sigma-visible object by
-   declaring it inadmissible.  This checker searches for sensitivity over the
-   entire class with no admissibility filter at all, so nothing the primary
-   rejected can escape the hunt.
+   declaring it filtered out.  This checker hunts with no covariance filter at
+   all, so nothing the primary rejected can escape the linear hunt.
 
 3. An INDEPENDENT arithmetic route.  The primary carried a formal sigma as an
    integer polynomial.  This checker never builds a polynomial: it evaluates
    the objects in six hard-wired integer sigma worlds and recovers exactness by
-   finite differences -- the fifth finite difference is checked to vanish, which
-   certifies degree at most four, after which agreement at five points is
-   polynomial identity.  A bug in the primary's polynomial ring cannot
-   reproduce itself here.
+   finite differences.  The exact sigma degree of every component is MEASURED
+   from the difference table (never assumed from a bound), the loaded-probe
+   escape-shape census is EXHAUSTIVE over every declared member under both
+   declared loaded ledgers, and the top-degree witness is identified by
+   generator, member, and component.  A bug in the primary's polynomial ring
+   cannot reproduce itself here.
 
 4. The primary's CLAIMS.  Its pinned stdout is parsed and each recomputable
-   number is compared, with the checker forming its own verdict first.
+   number is compared, with the checker forming its own verdict first;
+   disagreement is gating.
 
-Nothing from the primary lineage is executed; all six cited inputs are
-SHA-pinned text/AST evidence behind a meta-path import firewall.
+5. The EXIT PATH itself.  Fabricated counterevidence -- a sensitive member, a
+   sensitive declared-family generator pair, a claim disagreement -- is pushed
+   through the very predicate that decides the terminal line and the process
+   exit status, and the certificate gates that each one drives refutation.
+
+Nothing from the primary is executed; all four cited inputs (the primary
+source and pinned stdout, and the reviewed Cycle-868 runner and pinned stdout
+at their blobs landed on origin/main) are SHA-pinned text/AST evidence behind
+a meta-path import firewall.  The formerly cited Cycle-320/322 scripts are
+provenance-only context, not inputs.
 """
 from __future__ import annotations
 
@@ -43,8 +59,6 @@ AUDIT_INPUT_PATHS = (
     "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt",
     "scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
     "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt",
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
-    "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
 )
 
 import ast
@@ -61,27 +75,23 @@ ROOT = Path(__file__).resolve().parents[1]
 PRIMARY_PATH, PRIMARY_CACHE = AUDIT_INPUT_PATHS[0], AUDIT_INPUT_PATHS[1]
 PYTHON_PATHS = tuple(path for path in AUDIT_INPUT_PATHS if path.endswith(".py"))
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in PYTHON_PATHS)
+# The Cycle-868 pins are the blobs landed on origin/main after that
+# package's review fixes; the primary pins are this package's current bytes.
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "04405075867204246e794775ac8c09a6498f0ca4367d305745fbdc7fdf338dcc",
+        "99627e29a949f0e9a9b999117d0ce80f7309df4fe0d630e0d4459f8363972d33",
     AUDIT_INPUT_PATHS[1]:
-        "f0d8b6928c7661280627016950ae7f27228513ff8b690db555734b6eefa6896a",
+        "283f420df5c1260bc84d66b6ca891f6bdc174d343c42b5c1aff456ca93b9f96a",
     AUDIT_INPUT_PATHS[2]:
-        "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
+        "dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a",
     AUDIT_INPUT_PATHS[3]:
-        "056b642e859e732d358be4632d4de8baa77b673704b1f5737bcd6ec566582d60",
-    AUDIT_INPUT_PATHS[4]:
-        "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
-    AUDIT_INPUT_PATHS[5]:
-        "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+        "efb45439065ca7c92db20e29a1f261cfeaec71f96ae21d5774e617dfdc295c55",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "a53d5e680d18b7e9bf1b9312e802454b16b3edb5",
-    AUDIT_INPUT_PATHS[1]: "ed9b54a9dbae1649eaacbd03525cc2eb9d529b42",
-    AUDIT_INPUT_PATHS[2]: "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
-    AUDIT_INPUT_PATHS[3]: "1cdd55ce35dd7116ab3d4f959b5e21f5299ff5ed",
-    AUDIT_INPUT_PATHS[4]: "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0",
-    AUDIT_INPUT_PATHS[5]: "de8b90b08707c000bb2489502823b02d62e38b29",
+    AUDIT_INPUT_PATHS[0]: "47f64932d5dcef3a89aba272e8a52d23aafb9820",
+    AUDIT_INPUT_PATHS[1]: "887b4833420482694fba0d7dd08dda0a94c0d1b1",
+    AUDIT_INPUT_PATHS[2]: "c155a2dafaccde60c17047303c6de358445711c3",
+    AUDIT_INPUT_PATHS[3]: "38a0ecf77aaef1b37d1c9fcca49bbd74edd40796",
 }
 PRIMARY_REQUIRED_MARKERS = (
     "GRAMMAR",
@@ -112,7 +122,7 @@ sys.meta_path.insert(0, FIREWALL)
 
 
 # --------------------------------------------------------------------------
-# the scope, restated from the landed lineage rather than read from the primary
+# the stipulated scope, restated in-file rather than read from the primary
 # --------------------------------------------------------------------------
 SECTOR_COUNT = 3
 AXIS_COUNT = 3
@@ -153,6 +163,45 @@ def digest(value: object) -> str:
 
 def git_blob(payload: bytes) -> str:
     return sha1(f"blob {len(payload)}\0".encode() + payload).hexdigest()
+
+
+def exact_sigma_degree(values: list) -> int:
+    """Exact polynomial degree from values at the six consecutive sigma points.
+
+    The finite-difference table of a polynomial of degree d sampled at
+    consecutive integers has its k-th difference row identically zero exactly
+    when d < k, so the degree is MEASURED as the last row with a nonzero
+    entry (-1 for the zero polynomial).  Six points decide degree up to five;
+    a measured degree of five would falsify the degree-at-most-four
+    certificate and is gated.
+    """
+    level = list(values)
+    degree = -1
+    row = 0
+    while level:
+        if any(level):
+            degree = row
+        level = [level[i + 1] - level[i] for i in range(len(level) - 1)]
+        row += 1
+    return degree
+
+
+def refutation_predicate(hunt: dict, recheck: dict, comparison: dict) -> bool:
+    """The single fail-closed refutation predicate.
+
+    This exact function decides BOTH the emitted terminal line and the
+    process exit status, and the adversary certificate drives fabricated
+    counterevidence through it, so a refutation can never remain a
+    stdout-only field.
+    """
+    return (
+        hunt["members_with_any_sensitive_feature"] > 0
+        or hunt["quadratic_sensitive"] > 0
+        or hunt["random_monomial_sensitive"] > 0
+        or recheck["sensitive_generator_pairs_on_declared_sample"] > 0
+        or bool(comparison["disagreements"])
+        or not comparison["verdicts_agree"]
+    )
 
 
 # --------------------------------------------------------------------------
@@ -441,7 +490,7 @@ def source_controls() -> dict[str, object]:
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "literal_path_count": len(AUDIT_INPUT_PATHS),
-        "read_cap": 6,
+        "read_cap": 4,
         "source_rows": rows,
         "primary_required_AST_markers": PRIMARY_REQUIRED_MARKERS,
         "primary_required_AST_markers_present": markers_present,
@@ -452,14 +501,16 @@ def source_controls() -> dict[str, object]:
         "firewall_hits": tuple(FIREWALL.hits),
         "executable_science_inputs": (),
         "finding": (
-            "All six cited inputs are literal worktree-relative paths that "
-            "exist, match their pinned SHA-256 and git blob hashes, and are "
-            "consumed as text or AST only; the primary runner carries every "
-            "required structural marker and is blocked from import."
+            "All four cited inputs -- the primary source and pinned stdout, "
+            "and the reviewed Cycle-868 runner and pinned stdout at their "
+            "blobs landed on origin/main -- are literal worktree-relative "
+            "paths that exist, match their pinned SHA-256 and git blob hashes, "
+            "and are consumed as text or AST only; the primary runner carries "
+            "every required structural marker and is blocked from import."
         ),
     }
     result["pass"] = (
-        len(rows) <= 6
+        len(rows) <= 4
         and all(row["exists_worktree_relative"] and row["sha256_exact"]
                 and row["git_blob_exact"] for row in rows)
         and markers_present
@@ -486,7 +537,7 @@ def parse_primary_claims() -> dict[str, object]:
 
 def claims_certificate(claims: dict[str, object]) -> dict[str, object]:
     final = claims.get("FINAL") or {}
-    landed = claims.get("E_LANDED_CLASSIFICATION") or {}
+    declared = claims.get("E_DECLARED_FAMILY_CLASSIFICATION") or {}
     lineage = claims.get("B_LINEAGE_CONSTRAINTS") or {}
     escape = claims.get("G_ESCAPE_B") or {}
     admissibility = claims.get("D_ADMISSIBILITY") or {}
@@ -499,12 +550,13 @@ def claims_certificate(claims: dict[str, object]) -> dict[str, object]:
         "claimed_pairs_classified": final.get("pairs_classified"),
         "claimed_sigma_sensitive_pairs": final.get("sigma_sensitive_pairs"),
         "claimed_escape_b_shaped": final.get("escape_b_shaped_objects"),
-        "claimed_member_count": landed.get("member_count"),
-        "claimed_nonconstant_generators": landed.get("nonconstant_generator_count"),
+        "claimed_member_count": declared.get("member_count"),
+        "claimed_nonconstant_generators":
+            declared.get("nonconstant_generator_count"),
         "claimed_conformal_nonzero_members":
-            lineage.get("landed_conformal_nonzero_members"),
-        "claimed_max_sigma_degree_on_loaded_probes":
-            escape.get("max_sigma_degree_on_loaded_probes"),
+            lineage.get("declared_family_conformal_nonzero_members"),
+        "claimed_max_sigma_degree_on_loaded_family":
+            escape.get("max_sigma_degree_on_loaded_family"),
         "claimed_inadmissible_count": admissibility.get("inadmissible_count"),
         "finding": (
             "The primary's pinned stdout parses cleanly and its recomputable "
@@ -602,8 +654,13 @@ def hunt_certificate(members: tuple) -> dict[str, object]:
             "seven endpoint-space combinations of the identity and the exchange "
             "(including three the primary never declared), grading powers one "
             "through four (the primary declared one and two), and every "
-            "index-subset contraction -- searched with NO admissibility filter, "
-            "so an object the primary rejected as inadmissible cannot hide here"
+            "index-subset contraction -- searched with NO covariance filter, "
+            "so an object the primary filtered out cannot hide here. The "
+            "LINEAR sweep is exhaustive over every declared member; the "
+            "quadratic sweep covers every unordered product of the feature "
+            "base on a DECLARED EIGHT-MEMBER SAMPLE and the degree-<=5 sweep "
+            "uses random elements, so those two are corroboration, not "
+            "exhaustion"
         ),
         "wide_premaps": tuple(name for name, _a, _b in WIDE_PREMAPS),
         "wide_grade_powers": WIDE_GRADE_POWERS,
@@ -617,7 +674,7 @@ def hunt_certificate(members: tuple) -> dict[str, object]:
         "random_monomial_sensitive": monomial_sensitive,
         "seed": 872_002,
         "finding": (
-            f"The hunt swept all {len(members)} landed source configurations "
+            f"The hunt swept all {len(members)} declared source configurations "
             f"against {hunt['linear_feature_width']} linear response features "
             f"each -- {len(members) * hunt['linear_feature_width']} exact "
             f"integer comparisons between the sigma=+1 and sigma=-1 worlds over "
@@ -638,6 +695,11 @@ def hunt_certificate(members: tuple) -> dict[str, object]:
         and hunt["linear_feature_width"] == WIDE_WIDTH
         and quadratic_comparisons > 0
         and monomial_tested == 600
+        # decisive (fail closed): ANY sensitivity found by the hunt refutes
+        # the primary and must fail this certificate
+        and hunt["members_with_any_sensitive_feature"] == 0
+        and quadratic_sensitive == 0
+        and monomial_sensitive == 0
     )
     return result
 
@@ -714,7 +776,7 @@ def rederivation_certificate(members: tuple) -> dict[str, object]:
             "O5 response tensor, O6 edge transfer, rebuilt from the exchange "
             "and the two-world grading with no reference to the primary"
         ),
-        "cycle868_objects_blind_on_landed_sample": landed_868_blind,
+        "cycle868_objects_blind_on_declared_sample": landed_868_blind,
         "cycle868_objects_sensitive_on_detuned_sample":
             landed_868_probe_sensitive,
         "cycle868_sample_members": 64,
@@ -729,7 +791,7 @@ def rederivation_certificate(members: tuple) -> dict[str, object]:
             f"up to twelve sources and weights of order 1e18. The six Cycle-868 "
             f"objects were rebuilt from scratch in two integer worlds and read "
             + ("blind" if landed_868_blind else "SENSITIVE")
-            + f" on the landed sample while firing on "
+            + f" on the declared-family sample while firing on "
             f"{landed_868_probe_sensitive} detuned cases, which reproduces the "
             f"868 result independently. And {escape_shape_features} features of "
             f"the wide class separate the signs on a conformally loaded probe, "
@@ -741,8 +803,14 @@ def rederivation_certificate(members: tuple) -> dict[str, object]:
     }
     result["pass"] = (
         len(extreme_rows) == 3
-        and isinstance(covector_dot, int)
-        and isinstance(escape_shape_features, int)
+        # decisive (fail closed): the traceless identity, the extreme-case
+        # traces, the rebuilt Cycle-868 objects' blindness, the firing of the
+        # detuned control, and a realisable escape shape are all gating
+        and covector_dot == 0
+        and extreme_all_zero
+        and landed_868_blind
+        and landed_868_probe_sensitive > 0
+        and escape_shape_features > 0
     )
     return result
 
@@ -797,29 +865,79 @@ def admissibility_recheck(members: tuple) -> dict[str, object]:
                         equivariance[gid].discard(eps)
     admissible = tuple(gid for gid in PRIMARY_GENERATOR_IDS
                        if parity_ok[gid] and equivariance[gid])
-    # escape-(b) shape, counted over the checker's own admissible set
+    # escape-(b) shape census, EXHAUSTIVE (review fix): every declared member
+    # under both declared loaded ledgers, in four integer sigma worlds.  With
+    # sigma-degree at most four, the odd part is a1*s + a3*s^3, and the two
+    # symmetric differences f(1)-f(-1) = 2(a1+a3) and f(2)-f(-2) = 4a1+16a3
+    # have an invertible integer matrix, so BOTH vanishing is equivalent to a
+    # vanishing odd part; either list differing marks the escape-(b) shape.
     escape_shaped = set()
-    for member in (("k2", 0, 1, 2, 3), ("k2", 1, 3, 4, 2), ("k1", 0, 0, 1)):
-        for rule in (detuned_ledger, pure_conformal_ledger):
+    census_stream = sha256()
+    census_evaluations = 0
+    for member in members:
+        for rule_name, rule in (("detuned", detuned_ledger),
+                                ("pure_conformal", pure_conformal_ledger)):
             grid = scaled_source(member, rule)
-            plus = primary_class_readings(grid, 1)
-            minus = primary_class_readings(grid, -1)
+            world = {sigma: primary_class_readings(grid, sigma)
+                     for sigma in (-2, -1, 1, 2)}
+            census_evaluations += 1
+            hits = 0
             for gid in admissible:
-                if plus[gid][0] != minus[gid][0]:
+                if (world[1][gid][0] != world[-1][gid][0]
+                        or world[2][gid][0] != world[-2][gid][0]):
                     escape_shaped.add(gid)
-    sensitive_on_landed = 0
+                    hits += 1
+            census_stream.update(
+                compact({"m": member, "r": rule_name, "n": hits}).encode()
+            )
+    # exact loaded sigma degree, MEASURED from the finite-difference table on
+    # a declared stride-8 subsample in all six sigma worlds (never assumed
+    # from the bound being checked), with the top witness identified
+    degree_sample = tuple(members[index] for index in range(0, len(members), 8))
+    max_loaded_degree = -1
+    degree_witness = None
+    loaded_degree_bound_ok = True
+    for member in degree_sample:
+        for rule_name, rule in (("detuned", detuned_ledger),
+                                ("pure_conformal", pure_conformal_ledger)):
+            grid = scaled_source(member, rule)
+            worlds = [primary_class_readings(grid, sigma)
+                      for sigma in SIGMA_POINTS]
+            for gid in admissible:
+                arity = len(worlds[0][gid][0])
+                for slot in range(arity):
+                    values = [worlds[point][gid][0][slot]
+                              for point in range(len(SIGMA_POINTS))]
+                    if values.count(values[0]) == len(values):
+                        continue
+                    measured = exact_sigma_degree(values)
+                    if measured > 4:
+                        loaded_degree_bound_ok = False
+                    if measured > max_loaded_degree:
+                        max_loaded_degree = measured
+                        degree_witness = {
+                            "generator": gid_text(gid),
+                            "member": member,
+                            "ledger": rule_name,
+                            "component": slot,
+                            "measured_degree": measured,
+                            "values_at_sigma_points": tuple(values),
+                        }
+    sensitive_on_declared = 0
     for member in sorted(sample):
         plus = readings[member][SIGMA_POINTS.index(1)]
         minus = readings[member][SIGMA_POINTS.index(-1)]
         for gid in PRIMARY_GENERATOR_IDS:
             if plus[gid][0] != minus[gid][0]:
-                sensitive_on_landed += 1
+                sensitive_on_declared += 1
     result = {
         "route": (
-            "no polynomial ring: every generator is evaluated in six hard-wired "
-            "integer sigma worlds; the fifth finite difference is checked to "
-            "vanish, which certifies sigma-degree at most four, after which "
-            "agreement at five points is polynomial identity"
+            "no polynomial ring: every generator is evaluated in hard-wired "
+            "integer sigma worlds; on the declared-family closure the fifth "
+            "finite difference is checked to vanish, which certifies "
+            "sigma-degree at most four, after which agreement at five points "
+            "is polynomial identity; on the loaded ledgers the exact degree "
+            "is MEASURED from the finite-difference table, never assumed"
         ),
         "sigma_points": SIGMA_POINTS,
         "fifth_difference_weights": FIFTH_DIFFERENCE_WEIGHTS,
@@ -829,16 +947,25 @@ def admissibility_recheck(members: tuple) -> dict[str, object]:
         "member_sample_size": len(sample),
         "member_closure_size": len(closure),
         "sample_note": (
-            "a declared subsample closed under direction reversal and endpoint "
-            "exchange; subsampling can only WEAKEN the constraints, so a "
-            "checker count below the primary's would mean the primary admitted "
-            "an object that fails on a member the checker actually tested"
+            "the covariance recheck runs on a declared subsample closed under "
+            "direction reversal and endpoint exchange; subsampling can only "
+            "WEAKEN the constraints, so a checker count below the primary's "
+            "would mean the primary admitted an object that fails on a member "
+            "the checker actually tested. The escape-shape census below is "
+            "NOT sampled: it is exhaustive over every declared member"
         ),
         "checker_admissible_count": len(admissible),
         "checker_inadmissible_count":
             len(PRIMARY_GENERATOR_IDS) - len(admissible),
+        "escape_census_exhaustive": True,
+        "escape_census_member_ledger_evaluations": census_evaluations,
+        "escape_census_stream_sha256": census_stream.hexdigest(),
         "checker_escape_b_shaped_count": len(escape_shaped),
-        "sensitive_generator_pairs_on_landed_sample": sensitive_on_landed,
+        "loaded_degree_sample_size": len(degree_sample),
+        "loaded_degree_bound_at_most_four_on_sample": loaded_degree_bound_ok,
+        "measured_exact_max_sigma_degree_on_loaded": max_loaded_degree,
+        "max_degree_witness": degree_witness,
+        "sensitive_generator_pairs_on_declared_sample": sensitive_on_declared,
         "finding": (
             f"The primary's {len(PRIMARY_GENERATOR_IDS)} declared generators "
             f"were rebuilt here and re-tested by a route that shares no "
@@ -851,11 +978,18 @@ def admissibility_recheck(members: tuple) -> dict[str, object]:
                f"{max_nonzero_difference}, so the degree bound the checker "
                f"relies on does not hold")
             + f". Over a {len(sample)}-member subsample closed under both "
-            f"lineage symmetries, {len(admissible)} generators survived both "
-            f"constraints, {len(escape_shaped)} of them carry the escape-(b) "
-            f"shape on a conformally loaded probe, and "
-            f"{sensitive_on_landed} generator readings out of the whole "
-            f"unfiltered set separated the signs on the landed subsample."
+            f"stipulated symmetries, {len(admissible)} generators survived "
+            f"both filters, and {sensitive_on_declared} generator readings out "
+            f"of the whole unfiltered set separated the signs on the declared "
+            f"subsample. The escape-shape census was then taken EXHAUSTIVELY: "
+            f"all {len(members)} declared members under both declared loaded "
+            f"ledgers ({census_evaluations} member-ledger evaluations in four "
+            f"integer sigma worlds) give {len(escape_shaped)} escape-(b)-"
+            f"shaped generators among the {len(admissible)} filtered ones. The "
+            f"exact loaded sigma degree was measured from the difference table "
+            f"on a declared stride-8 subsample of {len(degree_sample)} members "
+            f"under both loaded ledgers: maximum {max_loaded_degree}, "
+            f"witnessed by {compact(degree_witness)}."
         ),
     }
     result["pass"] = (
@@ -863,6 +997,16 @@ def admissibility_recheck(members: tuple) -> dict[str, object]:
         and len(admissible) <= len(PRIMARY_GENERATOR_IDS)
         and len(closure) >= len(sample)
         and len(PRIMARY_GENERATOR_IDS) == 384
+        # decisive (fail closed): zero declared-family sensitivity, the
+        # submitted filtered and escape-shape counts, the measured (not
+        # assumed) loaded degree with an identified witness, and the loaded
+        # degree bound on the declared sample are all gating
+        and sensitive_on_declared == 0
+        and len(admissible) == 344
+        and len(escape_shaped) == 180
+        and loaded_degree_bound_ok
+        and max_loaded_degree == 4
+        and degree_witness is not None
     )
     return result
 
@@ -875,7 +1019,7 @@ def comparison_certificate(claims: dict[str, object], hunt: dict[str, object],
                            rederivation: dict[str, object],
                            members: tuple) -> dict[str, object]:
     final = claims.get("FINAL") or {}
-    landed = claims.get("E_LANDED_CLASSIFICATION") or {}
+    declared = claims.get("E_DECLARED_FAMILY_CLASSIFICATION") or {}
     lineage = claims.get("B_LINEAGE_CONSTRAINTS") or {}
     escape = claims.get("G_ESCAPE_B") or {}
     checker_verdict = (
@@ -883,23 +1027,23 @@ def comparison_certificate(claims: dict[str, object], hunt: dict[str, object],
         if (hunt["members_with_any_sensitive_feature"] > 0
             or hunt["quadratic_sensitive"] > 0
             or hunt["random_monomial_sensitive"] > 0
-            or recheck["sensitive_generator_pairs_on_landed_sample"] > 0)
+            or recheck["sensitive_generator_pairs_on_declared_sample"] > 0)
         else "OUTCOME_B_CONSTRUCTOR_ALGEBRA_BLIND"
     )
     rows = (
         {"field": "family_member_count",
-         "primary": landed.get("member_count"), "checker": len(members),
-         "agree": landed.get("member_count") == len(members)},
+         "primary": declared.get("member_count"), "checker": len(members),
+         "agree": declared.get("member_count") == len(members)},
         {"field": "conformal_nonzero_members",
-         "primary": lineage.get("landed_conformal_nonzero_members"),
+         "primary": lineage.get("declared_family_conformal_nonzero_members"),
          "checker": hunt["conformal_nonzero_members"],
-         "agree": lineage.get("landed_conformal_nonzero_members")
+         "agree": lineage.get("declared_family_conformal_nonzero_members")
                   == hunt["conformal_nonzero_members"]},
         {"field": "generators_declared",
          "primary": final.get("generators_declared"),
          "checker": len(PRIMARY_GENERATOR_IDS),
          "agree": final.get("generators_declared") == len(PRIMARY_GENERATOR_IDS)},
-        {"field": "any_sigma_visible_object_on_landed_family",
+        {"field": "any_sigma_visible_object_on_declared_family",
          "primary": bool(final.get("sigma_sensitive_pairs")),
          "checker": checker_verdict.startswith("OUTCOME_A"),
          "agree": bool(final.get("sigma_sensitive_pairs"))
@@ -915,17 +1059,17 @@ def comparison_certificate(claims: dict[str, object], hunt: dict[str, object],
          "agree": isinstance(final.get("generators_admissible"), int)
                   and recheck["checker_admissible_count"]
                   >= final.get("generators_admissible")},
-        {"field": "escape_b_shaped_count_not_overclaimed",
+        {"field": "escape_b_shaped_count_exact",
          "primary": final.get("escape_b_shaped_objects"),
          "checker": recheck["checker_escape_b_shaped_count"],
          "agree": isinstance(final.get("escape_b_shaped_objects"), int)
                   and recheck["checker_escape_b_shaped_count"]
-                  >= final.get("escape_b_shaped_objects")},
-        {"field": "max_sigma_degree_on_loaded_probes",
-         "primary": escape.get("max_sigma_degree_on_loaded_probes"),
-         "checker": 4 if recheck["degree_at_most_four_everywhere"] else None,
-         "agree": escape.get("max_sigma_degree_on_loaded_probes") == 4
-                  and recheck["degree_at_most_four_everywhere"]},
+                  == final.get("escape_b_shaped_objects")},
+        {"field": "max_sigma_degree_on_loaded_family",
+         "primary": escape.get("max_sigma_degree_on_loaded_family"),
+         "checker": recheck["measured_exact_max_sigma_degree_on_loaded"],
+         "agree": escape.get("max_sigma_degree_on_loaded_family")
+                  == recheck["measured_exact_max_sigma_degree_on_loaded"]},
     )
     disagreements = tuple(row["field"] for row in rows if not row["agree"])
     result = {
@@ -937,12 +1081,13 @@ def comparison_certificate(claims: dict[str, object], hunt: dict[str, object],
             final.get("verdict", "").startswith("OUTCOME_B")
         ) == checker_verdict.startswith("OUTCOME_B"),
         "overclaim_test_direction": (
-            "the admissible and escape-(b)-shaped counts are compared as "
-            "NOT-OVERCLAIMED rather than as equalities: the checker's tests run "
-            "on a subsample and are therefore weaker, so it should find at "
-            "least as many survivors; finding FEWER would mean the primary "
-            "admitted an object that fails a constraint on a member the "
-            "checker actually tested"
+            "the covariance-filtered count is compared as NOT-OVERCLAIMED "
+            "(the recheck runs on a subsample, which can only weaken the "
+            "filters, so fewer survivors than the primary's would mean the "
+            "primary admitted an object that fails on a tested member); the "
+            "escape-(b)-shaped count and the loaded degree are compared as "
+            "EQUALITIES because the checker's census is exhaustive and its "
+            "degree is measured with an identified witness"
         ),
     }
     result["finding"] = (
@@ -955,9 +1100,15 @@ def comparison_certificate(claims: dict[str, object], hunt: dict[str, object],
         f"{'matches' if result['verdicts_agree'] else 'does NOT match'} the "
         f"primary's {final.get('verdict')}."
     )
-    result["pass"] = all(
-        isinstance(row["checker"], (int, bool, type(None))) for row in rows
-    ) and len(rows) == 8
+    result["pass"] = (
+        all(isinstance(row["checker"], (int, bool, type(None)))
+            for row in rows)
+        and len(rows) == 8
+        # decisive (fail closed): ANY disagreement with the primary's pinned
+        # claims, and any verdict mismatch, fails this certificate
+        and not disagreements
+        and result["verdicts_agree"]
+    )
     return result
 
 
@@ -979,29 +1130,63 @@ def adversary_certificate(members: tuple) -> dict[str, object]:
             "sigma_sensitive_pairs": 0,
             "escape_b_shaped_objects": 999_999,
         },
-        "E_LANDED_CLASSIFICATION": {"member_count": 7,
-                                    "nonconstant_generator_count": 0},
-        "B_LINEAGE_CONSTRAINTS": {"landed_conformal_nonzero_members": 1234},
-        "G_ESCAPE_B": {"max_sigma_degree_on_loaded_probes": 99},
+        "E_DECLARED_FAMILY_CLASSIFICATION": {"member_count": 7,
+                                             "nonconstant_generator_count": 0},
+        "B_LINEAGE_CONSTRAINTS":
+            {"declared_family_conformal_nonzero_members": 1234},
+        "G_ESCAPE_B": {"max_sigma_degree_on_loaded_family": 99},
     }
     fake_hunt = {"conformal_nonzero_members": 0,
                  "members_with_any_sensitive_feature": 0,
                  "quadratic_sensitive": 0, "random_monomial_sensitive": 0}
     fake_recheck = {"checker_admissible_count": 344,
-                    "checker_escape_b_shaped_count": 162,
-                    "sensitive_generator_pairs_on_landed_sample": 0,
-                    "degree_at_most_four_everywhere": True}
+                    "checker_escape_b_shaped_count": 180,
+                    "sensitive_generator_pairs_on_declared_sample": 0,
+                    "measured_exact_max_sigma_degree_on_loaded": 4}
     fake_rederivation = {"escape_b_shape_is_realisable": True}
     fake_comparison = comparison_certificate(
         fake_claims, fake_hunt, fake_recheck, fake_rederivation, members[:3]
     )
+    # exit-path drills (review fix): fabricated counterevidence is pushed
+    # through the EXACT predicate that decides the terminal line and the
+    # process exit status, proving a refutation cannot stay stdout-only
+    clean_hunt_stub = {"members_with_any_sensitive_feature": 0,
+                      "quadratic_sensitive": 0, "random_monomial_sensitive": 0}
+    clean_recheck_stub = {"sensitive_generator_pairs_on_declared_sample": 0}
+    clean_comparison_stub = {"disagreements": (), "verdicts_agree": True}
+    exit_path_drills = {
+        "clean_stub_does_not_refute": not refutation_predicate(
+            clean_hunt_stub, clean_recheck_stub, clean_comparison_stub),
+        "fabricated_sensitive_member_refutes": refutation_predicate(
+            {**clean_hunt_stub, "members_with_any_sensitive_feature": 1},
+            clean_recheck_stub, clean_comparison_stub),
+        "fabricated_quadratic_hit_refutes": refutation_predicate(
+            {**clean_hunt_stub, "quadratic_sensitive": 1},
+            clean_recheck_stub, clean_comparison_stub),
+        "fabricated_monomial_hit_refutes": refutation_predicate(
+            {**clean_hunt_stub, "random_monomial_sensitive": 1},
+            clean_recheck_stub, clean_comparison_stub),
+        "fabricated_declared_pair_refutes": refutation_predicate(
+            clean_hunt_stub,
+            {"sensitive_generator_pairs_on_declared_sample": 3},
+            clean_comparison_stub),
+        "fabricated_disagreement_refutes": refutation_predicate(
+            clean_hunt_stub, clean_recheck_stub,
+            {"disagreements": ("planted_field",), "verdicts_agree": True}),
+        "fabricated_verdict_mismatch_refutes": refutation_predicate(
+            clean_hunt_stub, clean_recheck_stub,
+            {"disagreements": (), "verdicts_agree": False}),
+        "fabricated_claim_block_refutes": refutation_predicate(
+            clean_hunt_stub, clean_recheck_stub, fake_comparison),
+    }
     result = {
         "probe_members": probe,
         "detuned_sensitive_members": detuned["members_with_any_sensitive_feature"],
         "detuned_distinct_sensitive_features": detuned["distinct_sensitive_features"],
         "pure_conformal_sensitive_members":
             conformal["members_with_any_sensitive_feature"],
-        "landed_sensitive_members": landed["members_with_any_sensitive_feature"],
+        "stipulated_ledger_sensitive_members":
+            landed["members_with_any_sensitive_feature"],
         "planted_off_grammar_sensitive_members":
             planted["members_with_any_sensitive_feature"],
         "planted_off_grammar_distinct_features":
@@ -1013,11 +1198,14 @@ def adversary_certificate(members: tuple) -> dict[str, object]:
         "planted_false_claim_fields_caught": tuple(fake_comparison["disagreements"]),
         "planted_false_claim_detected":
             len(fake_comparison["disagreements"]) >= 4,
+        "exit_path_drills": exit_path_drills,
+        "exit_path_drills_all_fire": all(exit_path_drills.values()),
         "calibration_scope_note": (
             "the detuned and pure-conformal ledgers, the off-grammar grading "
             "that carries sigma on the trace-free channel, and the fabricated "
             "claim block are all OFF-SCOPE; they calibrate the checker's "
-            "discriminating power and none is evidence about the landed family"
+            "discriminating power and none is evidence about the declared "
+            "family"
         ),
         "finding": (
             f"The checker demonstrates it can refute, on three independent "
@@ -1025,21 +1213,29 @@ def adversary_certificate(members: tuple) -> dict[str, object]:
             f"{detuned['distinct_sensitive_features']} distinct features "
             f"sign-sensitive and a purely conformal ledger fired on "
             f"{conformal['members_with_any_sensitive_feature']} probe members, "
-            f"while the landed ledger fired on "
+            f"while the stipulated ledger fired on "
             f"{landed['members_with_any_sensitive_feature']}. An off-grammar "
             f"grading that carries sigma on the trace-free channel instead -- a "
-            f"genuinely sigma-visible object on the LANDED ledger -- was caught "
+            f"genuinely sigma-visible object on the STIPULATED ledger, and a "
+            f"concrete outside-grammar construction marking the open "
+            f"exhaustiveness boundary -- was caught "
             f"on {planted['members_with_any_sensitive_feature']} probe members "
             f"and {planted['distinct_sensitive_features']} features, so the "
             f"hunt would have found a lawful sigma-visible object had one "
             f"existed. A fabricated claim block was caught on "
-            f"{len(fake_comparison['disagreements'])} comparison fields."
+            f"{len(fake_comparison['disagreements'])} comparison fields, and "
+            f"{sum(1 for value in exit_path_drills.values() if value)} of "
+            f"{len(exit_path_drills)} exit-path drills confirmed that each "
+            f"kind of fabricated counterevidence drives the refutation "
+            f"predicate that controls the terminal line and the process exit "
+            f"status."
         ),
     }
     result["pass"] = (
         result["detector_fires_on_detuned_ledger"]
         and result["detector_fires_on_planted_off_grammar_grading"]
         and result["planted_false_claim_detected"]
+        and result["exit_path_drills_all_fire"]
     )
     return result
 
@@ -1065,17 +1261,20 @@ def render_fixed_point(certificates: dict[str, dict[str, object]]) -> str:
         hunt = certificates["CK_C_WIDE_HUNT"]
         recheck = certificates["CK_E_ADMISSIBILITY_RECHECK"]
         comparison = certificates["CK_F_COMPARISON"]
-        refuted = (
-            hunt["members_with_any_sensitive_feature"] > 0
-            or hunt["quadratic_sensitive"] > 0
-            or hunt["random_monomial_sensitive"] > 0
-            or recheck["sensitive_generator_pairs_on_landed_sample"] > 0
-            or bool(comparison["disagreements"])
-        )
+        # the SAME predicate drives this terminal line and the process exit
+        # status in run(); CK_G drills fabricated counterevidence through it
+        refuted = refutation_predicate(hunt, recheck, comparison)
         terminal = {
             "terminal": (
                 "CYCLE872_INDEPENDENT_CHECK_REFUTES_PRIMARY" if refuted
-                else "CYCLE872_INDEPENDENT_CHECK_CORROBORATES_BY_EXHAUSTION"
+                else "CYCLE872_INDEPENDENT_CHECK_CORROBORATES"
+            ),
+            "refuted": refuted,
+            "corroboration_scope": (
+                "linear sweep exhaustive over every declared member; "
+                "escape-shape census exhaustive under both loaded ledgers; "
+                "quadratic sweep on a declared eight-member sample and "
+                "degree-<=5 sweep on random elements (corroboration only)"
             ),
             "bookkeeping_complete": all(checks.values()),
             "checks": checks,
@@ -1132,6 +1331,10 @@ def run() -> int:
         == recheck["checker_admissible_count"]
         and replay_recheck["checker_escape_b_shaped_count"]
         == recheck["checker_escape_b_shaped_count"]
+        and replay_recheck["escape_census_stream_sha256"]
+        == recheck["escape_census_stream_sha256"]
+        and replay_recheck["measured_exact_max_sigma_degree_on_loaded"]
+        == recheck["measured_exact_max_sigma_degree_on_loaded"]
     )
     elapsed = monotonic() - started
     controls = {
@@ -1192,7 +1395,11 @@ def run() -> int:
         "CK_H_CONTROLS": controls,
     }
     sys.stdout.write(render_fixed_point(certificates))
-    return 0 if all(row["pass"] for row in certificates.values()) else 1
+    # fail closed: the refutation predicate participates in the exit status
+    # directly, in addition to failing its certificates above
+    refuted = refutation_predicate(hunt, recheck, comparison)
+    return 0 if (all(row["pass"] for row in certificates.values())
+                 and not refuted) else 1
 
 
 if __name__ == "__main__":

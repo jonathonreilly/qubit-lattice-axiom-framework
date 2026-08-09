@@ -281,9 +281,10 @@ multiplicity-weighted (F1) at `E_+ = E_perp = E_tot/2` (`kappa = 2`).
 
 **Conclusion (Obs3) (counterfactual probe).** Restricting to the 2-dim
 doublet sub-plane and then applying a radial-only projection (treating
-`|b|^2` as a single coordinate) would give one log factor in `|b|^2`,
-matching F1. But this radial reduction is **not** a canonical retained
-operation: it requires factoring out a U(1) angular direction on the
+`|b|^2` as a single coordinate) would give one log factor in `|b|^2`;
+whether that factor carries any F1-matching weighting is part of the
+OPEN measure-to-objective bridge and is not asserted here. The radial
+reduction is **not** a canonical retained operation: it requires factoring out a U(1) angular direction on the
 2-plane. This is exactly the U(1)_b angular convention named by Probes
 13, 16 as the non-canonical residue. No new Cl(3) authority closes
 this convention. Verified by the runner Part 6.

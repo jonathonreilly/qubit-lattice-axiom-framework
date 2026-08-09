@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py
+runner_sha256: 9038f08727f80b3425c397fb2a5e9ceaa053d43164347fb7875416d1beeac247
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 93.66
+status: ok
+----- stdout -----
+PASS G0  the Gram matrix of the table has constant diagonal 1975
+PASS G1  all 15800 cuttings carry distinct piece supports
+PASS G2  the anchored and the two seeded colour refinements are all discrete
+PASS G3  b0 is an order-two piece permutation with a matching cutting permutation
+PASS G4  b0 fixes all eight readings
+PASS G5  b0 lies outside the 48, orbit rows (0,48,0,0) (48,0,0,0) (0,0,0,48) (0,0,48,0)
+PASS G6  b1 is an order-two piece permutation with a matching cutting permutation
+PASS G7  b1 fixes all eight readings
+PASS G8  b1 lies outside the 48, orbit rows (8,8,16,16) (8,8,16,16) (16,16,8,8) (16,16,8,8)
+PASS G9  b0 and b1 are different permutations
+PASS G10  the 48 together with b0 and b1 act on the 192 pieces with one orbit, transitive
+PASS G11  each charge and each planted reading forces even total, side, and quarter parities, and the synthetic reading forces an odd total
+PASS G12  the licensed cells of a charge count 5,14,30,55,91,140,204,285 at the even sizes two to sixteen, matching the closed sum, with consecutive odd squares as steps
+PASS G13  all six charges license the same 285 cells at sixteen, one pass covers the six
+PASS G14  the odd-total synthetic reading licenses no cell at sixteen
+PASS G15  the licensed cells at sixteen with a piece in the last quarter number 204, and the six charges and the five planted readings share exactly that list
+PASS G16  the anchored tables list exactly the subsets through the anchor piece, row for row against direct column sums, with binomial row counts
+
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS G17  every cutting uses the same number of pieces, every piece sits in the same number of cuttings, and the two counts of the incidences agree
+marks: the all-marked reading 15800, four 5664, its flip partner 10136
+least size those marks force: 8, 3, 6 pieces
+PASS G18  a carrier meets each marked cutting at least once while each piece meets 1975 cuttings, so the marks force a least size
+pieces no cutting shares with a given piece: 33
+eight-piece sets no cutting uses twice: 192, of those meeting every cutting exactly once: 192
+PASS G19  eight pieces meeting every cutting exactly once is the same as eight pieces no cutting uses twice, since eight of them meet 15800 with multiplicity
+each piece lies in 8 of them; two of them share pieces, count by value: {0:15072,1:1920,2:960,4:384}
+PASS G20  those carriers meet each piece the same number of times and meet each other in 0, 1, 2 or 4 pieces, never 3
+those eight readings close into an addition group of order 8
+PASS G21  each flip partner is its reading plus the all-marked reading, so a reading and its flip partner have least sizes differing by at most eight
+symmetries of the table that fix a basic reading: 48, and they carry any piece to any other: True
+PASS G22  the symmetries that fix a reading carry any piece to any other, so asking for carriers through one fixed piece decides the question for every piece
+
+anchored search, carriers of four then of its flip partner, by size: 2: 0 and 0, 4: 0 and 0, 6: 0 and 0, 8: 0 and 0, 10: 0 and 0, 12: 0 and 0, 14: 0 and 0, 16: 11 and 0
+at sixteen both were asked of the same 204 cells over the same 2004 splits
+carriers recorded below eighteen 19, recheck failures 0
+PASS G23  the search finds the eight-piece carriers of the all-marked reading through the anchor and none at ten, so it is not blind when it comes back empty
+PASS G24  four has no anchored carrier below sixteen and has eleven at sixteen, every sweep complete
+PASS G25  the flip partner of four has no anchored carrier at any even size up to sixteen, asked of exactly the cells and splits that deliver the eleven
+PASS G26  each recorded carrier is checked back against the incidence directly, not trusted from the bookkeeping of the search
+
+symmetries of the table 384, sixteen-piece carriers of four across the system 132, each piece on 11, recheck failures 0
+PASS G27  they close into a group of 384 that is transitive on the pieces and permutes the 192 eight-piece carriers
+PASS G28  every piece sits on eleven of them, the count the anchored sweep found, so these are all of them
+the families they fall into: 12,12,12,24,24,48
+PASS G29  the symmetries do not carry every smallest carrier of four onto every other: six families
+the never-sharing joins over all the pieces at once, not one carrier at a time:
+PASS G30  33 joins at every piece, 3168 in all, and all 384 symmetries carry joins to joins
+PASS G31  no two pieces stand more than three steps apart: 3168,12576,2592
+PASS G32  walking outward and multiplying the join table agree on all 18336 pairs
+PASS G33  the object is not evenly built: common-joiner counts take 9 shapes at one step, 10 at three
+PASS G34  every smallest carrier of four takes one of two shapes: 60 four-cubes, 72 pairs of three-cubes
+PASS G35  a carrier pair one, two or three steps apart in its shape is that far in the whole object: 10752 of 10752, 2496 of them not fixed by construction
+PASS G36  the eight far corners of a four-cube fold to three steps, since nothing stands farther: 480 pairs, 0 at four
+PASS G37  the two three-cubes interleave, not apart: 4032 pairs across at two steps, 576 at three
+PASS G38  sixteen pieces taken evenly spaced instead: 730 of 768 are brought closer from outside
+PASS G39  the relabelling search takes a four-cube and refuses one with two joins moved, every corner still at 4
+PASS G40  over the whole object the count fixes the step for 44 of 47, failing at 202,212,250 on 1632 pairs
+so a carrier's shape is the object's own distance, not something made by looking at sixteen alone
+elapsed under 100 s peak memory under 2500 MB
+PASS G41  the whole runner finishes under 900 seconds inside the printed 2500 MB
+PASS G42  its output stays under 6000 characters
+
+TOTAL: PASS=43 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,58 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); revised 2026-08-08 and 2026-08-09 by a review-loop fix worker applying the physics review",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle877_sharded_content_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle877_sharding_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycles": [
+    877
+  ],
+  "files": {
+    "docs/SHARDED_CONTENT_SURVIVAL_LAW_CYCLE877_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "e7968f79b14fdc23769fd01f37527d5ce5721245",
+      "sha256": "90fce0bc17f581bcb662511775e4b3606b29ed2d63ec734e6d1aa685c4ccbad2"
+    },
+    "logs/runner-cache/frontier_cycle877_sharded_content_2026_07_28.txt": {
+      "git_blob": "25b530c3b1b1cd10ad459dbd9d9361704e5a515c",
+      "sha256": "547a023564d804a448d8ab76706354499eca65dcfc9dccb6a725db0fa47b9aaf"
+    },
+    "logs/runner-cache/frontier_cycle877_sharding_independent_check_2026_07_28.txt": {
+      "git_blob": "9c536f98c37a81013e632fb033552eea9fc58609",
+      "sha256": "784151e74458026d24083f4547cee13a56a8c0c079d3500f982d30b20145ad6b"
+    },
+    "scripts/frontier_cycle877_sharded_content_2026_07_28.py": {
+      "git_blob": "67fc62366d3fbcd4314fa05e93fce2496ba359af",
+      "sha256": "6339884932b5d1f1ff270a9c92cdc163ad80ba090ccc463d28dd554e8c57059b"
+    },
+    "scripts/frontier_cycle877_sharding_independent_check_2026_07_28.py": {
+      "git_blob": "583b2db7ee73bdcf0e8e767db7eb0aa64549c4c6",
+      "sha256": "4c31793c1ee000dbff17f4446031671d49f61efef2fe38dca06ef409fb423eb2"
+    }
+  },
+  "headline": "exact finite support certificates on the landed Cycle-719 kernel: a shard-partitioned register of stipulated 32-bit block fingerprints writes and reads back without error (2,296 words, 0 mismatches, 448/448 scan-versus-probe); on the six declared direct-flip sample cells (fixed bank0/bank1 sides) every fired probe's host-computed damage set was exactly the flipped wire and exactly one shard fingerprint changed (confined 1.0, 18 cells); side-resolved unhit-wire fractions are exact integer arithmetic 1 - |hit block|/147; slot costs 385 / 4,833 with pool bound S<=160 under the declared conventions; the checker's 768-probe sweep (720 fired) publishes damage-size histogram 719 one-wire and one 10-wire, an existence observation inside the declared caps and the reason the one-wire reading is stated for the six declared cells only; declared-tuple k-flips fired 11/36 (finite observation, no necessity claim); no reconstruction, locality, design-rule, or attack-cost claim is carried",
+  "independence": "cross-context (checker used a different slot allocator, arithmetic rank-map boundaries, and two shard rules the primary never builds; cell-for-cell reproduction, zero refutations); both runners import only the landed Cycle-719 kernel; the checker is claim-scoped and co-load-bearing and must be registered as an explicit packet helper runner at landing",
+  "note": "docs/SHARDED_CONTENT_SURVIVAL_LAW_CYCLE877_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "packet_helper_runner": "scripts/frontier_cycle877_sharding_independent_check_2026_07_28.py",
+  "review_loop": {
+    "date": "2026-08-09",
+    "iteration": 4,
+    "iteration_1": "FIX_THEN_PROCEED -- demoted to bounded support note; reconstruction/one-wire-law/locality/design-rule/necessity claims retired; unlanded Cycle-863/867 ancestors and stale pre-review Cycle-874 pins removed from both input closures (self-contained over Cycle 719); near/far sides replaced with fixed bank0/bank1; side-resolved exact coverage fractions disclosed; checker declared claim-scoped packet helper",
+    "iteration_2": "the sweep's 10-wire firing had still been turned into a universal negative about untested one-wire readings; that sentence is WITHDRAWN from note, review record, derived inventory, verdict, checker runner, both caches, and this receipt, and replaced by the published 719 + 1 damage-size histogram plus the same firing stated as an existence observation inside the declared caps; no figure, gate, certificate, or PASS condition changed",
+    "reviewer": "Sol",
+    "iteration_4": "confirmation round 3 residual cured: the checker's alternate (no-multi-wire-hit) emission branch and two docstring/comment sites rewritten from universal-negative phrasing to existence-witness/neutral framing; checker rerun through the runner-cache envelope (exit 0, 5/5 PASS, figures unchanged); primary untouched"
+  },
+  "runtime_seconds": {
+    "checker": 55.54,
+    "primary": 59.476
+  },
+  "surface_status": "bounded support note"
+}

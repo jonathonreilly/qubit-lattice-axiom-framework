@@ -1,6 +1,6 @@
 {
- "edge_count": 15462,
- "node_count": 4650,
+ "edge_count": 15465,
+ "node_count": 4652,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1623,8 +1623,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "3f50e816bb63",
-   "out_degree": 340
+   "deps_hash": "dd80610b6677",
+   "out_degree": 341
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -13222,6 +13222,10 @@
    "deps_hash": "94aa2d15c272",
    "out_degree": 1
   },
+  "sigma_linear_admissibility_classification_cycle872_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "769f8a595ec3",
+   "out_degree": 1
+  },
   "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28": {
    "deps_hash": "83e8ebd6bfef",
    "out_degree": 3
@@ -14989,6 +14993,10 @@
   "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "tracelessness_provenance_cycle873_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "769f8a595ec3",
+   "out_degree": 1
   },
   "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": {
    "deps_hash": "eda0f5e71d87",

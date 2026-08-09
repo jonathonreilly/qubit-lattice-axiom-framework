@@ -1,0 +1,122 @@
+{
+ "cycle": 746,
+ "failures": 0,
+ "gates": 24,
+ "headline": "Carrying a charge is exactly three parity conditions. For each of the 18 readings the incidence fixes the parity of the same five blocks of pieces, the size, both halves and quarters two and three, and leaves quarters zero and one free; the halves are sums of the quarters they cover, so licensing collapses to three parities. Those three sort the readings into exactly three classes, and all six charge readings sit in the class where the three are even, so every carrier of a charge has even size and meets quarters two and three evenly. Each class has its own count of licensed splits in closed form, and demanding a piece in the anchor quarter costs exactly one size step.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md",
+ "recorded_output": "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_cold_2026-08-08.txt",
+ "results": {
+  "blocks": {
+   "fixed_by_every_reading": [
+    "size",
+    "left half",
+    "right half",
+    "quarter two",
+    "quarter three"
+   ],
+   "independent_invisible_piece_sets": 104,
+   "invisible_set_sizes_built": [
+    8,
+    20
+   ],
+   "left_free_by_every_reading": [
+    "quarter zero",
+    "quarter one"
+   ]
+  },
+  "classes": {
+   "count": 3,
+   "even_size_even_quarters": {
+    "charge_readings": 6,
+    "readings": 15
+   },
+   "even_size_odd_quarters": {
+    "charge_readings": 0,
+    "readings": 2
+   },
+   "odd_size_odd_quarters": {
+    "charge_readings": 0,
+    "readings": 1
+   },
+   "split_reading_pairs_checked": 191250
+  },
+  "licensed_counts": {
+   "charge_class_anchored": [
+    1,
+    5,
+    14,
+    30,
+    55,
+    91,
+    140,
+    204,
+    285,
+    385
+   ],
+   "charge_class_missing_the_anchor_quarter": [
+    4,
+    9,
+    16,
+    25,
+    36,
+    49,
+    64,
+    81,
+    100,
+    121
+   ],
+   "charge_class_sizes_two_to_twenty": [
+    5,
+    14,
+    30,
+    55,
+    91,
+    140,
+    204,
+    285,
+    385,
+    506
+   ],
+   "odd_quarter_class": [
+    1,
+    5,
+    14,
+    30,
+    55,
+    91,
+    140,
+    204,
+    285,
+    385
+   ],
+   "odd_size_class_sizes_one_to_nineteen": [
+    0,
+    2,
+    8,
+    20,
+    40,
+    70,
+    112,
+    168,
+    240,
+    330
+   ]
+  },
+  "rebuilt_system": {
+   "charge_readings": 6,
+   "cuttings": 15800,
+   "cuttings_per_piece": 1975,
+   "pieces": 192,
+   "pieces_per_cutting": 24,
+   "pivot_rank": 88,
+   "readings": 18
+  },
+  "rejector": {
+   "pairs_reproducing_the_charge_count": 1,
+   "parity_pairs_tested": 4
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py",
+ "status": "PASS"
+}

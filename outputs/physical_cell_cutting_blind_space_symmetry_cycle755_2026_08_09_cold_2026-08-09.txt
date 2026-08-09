@@ -1,0 +1,49 @@
+PASS G0  the Gram matrix of the table has constant diagonal 1975
+PASS G1  all 15800 cuttings carry distinct piece supports
+PASS G2  the anchored and the two seeded colour refinements are all discrete
+PASS G3  b0 is an order-two piece permutation with a matching cutting permutation
+PASS G4  b0 fixes all eight readings
+PASS G5  b0 lies outside the 48, orbit rows (0,48,0,0) (48,0,0,0) (0,0,0,48) (0,0,48,0)
+PASS G6  b1 is an order-two piece permutation with a matching cutting permutation
+PASS G7  b1 fixes all eight readings
+PASS G8  b1 lies outside the 48, orbit rows (8,8,16,16) (8,8,16,16) (16,16,8,8) (16,16,8,8)
+PASS G9  b0 and b1 are different permutations
+PASS G10  the 48 together with b0 and b1 act on the 192 pieces with one orbit, transitive
+
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS G11  every cutting uses the same number of pieces, every piece sits in the same number of cuttings, and the two counts of the incidences agree
+marks: the all-marked reading 15800, four 5664, its flip partner 10136
+least size those marks force: 8, 3, 6 pieces
+PASS G12  a carrier meets each marked cutting at least once while each piece meets 1975 cuttings, so the marks force a least size
+pieces no cutting shares with a given piece: 33
+eight-piece sets no cutting uses twice: 192, of those meeting every cutting exactly once: 192
+PASS G13  eight pieces meeting every cutting exactly once is the same as eight pieces no cutting uses twice, since eight of them meet 15800 with multiplicity
+each piece lies in 8 of them; two of them share pieces, count by value: {0:15072,1:1920,2:960,4:384}
+PASS G14  those carriers meet each piece the same number of times and meet each other in 0, 1, 2 or 4 pieces, never 3
+those eight readings close into an addition group of order 8
+PASS G15  each flip partner is its reading plus the all-marked reading, so a reading and its flip partner have least sizes differing by at most eight
+
+PASS G16  they close into a group of 384 transitive on the pieces, permuting the 192 eight-piece carriers
+
+PASS G17  every piece sits on 1975 cuttings and every cutting on 24 pieces, all 192 columns differ, and the largest share of two pieces is 1266
+PASS G18  the table has exact rational rank 88, so the blind space has dimension 104 and the two add to 192
+PASS G19  each of the 384 symmetries fixes the sharing table and carries the blind space into itself, by exact integers and by a bounded second arithmetic alike
+PASS G20  the trace on the blind space is the sum of 104 basis entries read at the moved free places, agreeing with the formed trace on all 384 symmetries
+PASS G21  the symmetries have one orbit on the pieces, so a constant weighting is the one symmetric weighting, it is not blind, and the blind space holds none
+PASS G22  the symmetries have 104 orbits on ordered pairs, by the averaged square of the fixed counts, by direct orbits, and from a piece stabiliser of order 2 whose other element fixes 16 pieces
+
+averaged squares: seen with seen 29, seen with blind 21, blind with blind 33
+PASS G23  the three rebuild the pair-orbit count 104, so the split of the 192 weightings into seen and blind is accounted for
+PASS G24  the seen and the blind space share 21 parts counted with multiplicity, so the blind space is not a sum of whole same-type blocks and the symmetry trace counts alone do not pick it out
+PASS G25  the maps commuting with every symmetry span 104 dimensions and exactly 83 of them carry the blind space into itself, a prime-field rank of that condition returning the same 21 the trace count gave, by a route sharing none of its machinery
+PASS G26  yet of the 104 pair-orbit maps spanning them, 2 do so on their own and both are symmetries in the group already, the other 102 missing by as much as 12738
+PASS G27  a four-for-four exchange has 192 signed images, every one blind against all 15800 cuttings, and they span 60 of the 104 blind dimensions, leaving 44
+PASS G28  those images span a part of the blind space that every symmetry carries into itself, of dimension 60, holding no constant weighting
+a least exchange reaches 60 of the 104 blind dimensions; averaged squares for that part 13, for the rest 8, across 6, with the seen space 11
+PASS G29  the part and the rest rebuild the blind count 33, which follows from its premise, the measured content being that every average came out a whole number, as a wrong trace would not
+
+elapsed under 100 s peak memory under 2500 MB
+PASS G30  inside its time and memory allowance
+PASS G31  its output stays under 6000 characters
+
+TOTAL: PASS=32 FAIL=0

@@ -24,7 +24,7 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: frontier_discovery
 reachability_to_target: unknown_frontier
-conditional_surface_status: "the physical Record interpretation is conditional on an open piece-to-Record-content bridge"
+conditional_surface_status: "open: physical Record interpretation awaits a supplied piece-to-Record-content map"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 claim_type_reason: "the runner certifies exact equalities for one stipulated finite cell, while the physical Record bridge and any multi-cell extension remain open"

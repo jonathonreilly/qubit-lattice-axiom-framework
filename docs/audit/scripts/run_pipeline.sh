@@ -42,6 +42,11 @@
 #  16. compute_dispatch_shadow.py     -> shadow lane + tracked churn state (no dispatch effect)
 #  17. render_front_door_status.py    -> writes docs/repo/FRONT_DOOR_STATUS.md
 #  18. repo_invariants_check.py       -> authority-surface link guard (hard gate)
+# 18a. generate_skill_axiom_baselines.py --check
+#                                      -> fail-closed guard: the skill docs'
+#                                         axiom-baseline / approved-primitive
+#                                         blocks still match the axiom memo and
+#                                         the premise registry (hard gate)
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -215,6 +220,12 @@ python3 docs/audit/scripts/render_front_door_status.py
 
 echo "==> 18/18 repo_invariants_check.py (authority-link guard)"
 python3 docs/audit/scripts/repo_invariants_check.py --check --enforce-links
+
+echo "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)"
+# Check-only on purpose: the pipeline must never rewrite skill docs. On drift
+# this fails and prints the exact diff; a human reruns the generator without
+# --check and commits the regenerated blocks alongside the source change.
+python3 docs/audit/scripts/generate_skill_axiom_baselines.py --check
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
   echo "==> 18b/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)"

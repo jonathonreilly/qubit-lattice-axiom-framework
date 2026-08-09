@@ -1,0 +1,43 @@
+cuttings 15800  pieces 192  pieces per cutting 24  cuttings per piece 1975  pivot rank 88  readings 18
+PASS G1  the cut object carries 15800 cuttings, each using 24 of its 192 pieces
+PASS G2  every piece is used by the same odd number of cuttings, 1975
+PASS G3  the incidence has pivot rank 88 and carries 18 readings, six of them charges
+fixed by every reading: size, left half, right half, quarter two, quarter three
+left free by every reading: quarter zero, quarter one
+PASS G4  each block is fixed by every reading or by none, and the fixed ones are the size, both halves, and quarters two and three
+PASS G5  each half parity is the sum of the parities it covers, so licensing a reading is exactly three conditions: the size, quarter two, and quarter three
+independent piece sets no cutting can see: 104, the ones built here of sizes 8 to 20
+PASS G6  104 independent piece sets no cutting can see, built from the pivot cuttings alone, are each checked invisible directly against the incidence
+PASS G7  a block is left free exactly when one of those invisible sets meets it in an odd number of pieces, which happens for quarter zero and quarter one and no other
+PASS G8  and the size parity a reading fixes is the parity of how many cuttings the reading marks, which is what an odd number of cuttings per piece already forces
+  even size, quarter two even, quarter three even: 15 readings, 6 of them charges
+  even size, quarter two odd, quarter three odd: 2 readings, 0 of them charges
+  odd size, quarter two odd, quarter three odd: 1 readings, 0 of them charges
+PASS G9  the 18 readings fall into exactly three classes by that triple
+PASS G10  every charge reading sits in the all-even class, so every carrier of a charge has even size and meets quarters two and three evenly
+PASS G11  exactly one class demands an odd size, and it holds no charge reading
+PASS G12  the search's own licensing test agrees with those three parities on all 191250 pairs of a split and a reading up to size twenty
+charge class, splits licensed at sizes two to twenty: 5,14,30,55,91,140,204,285,385,506
+of those, splits holding a piece in the anchor quarter: 1,5,14,30,55,91,140,204,285,385
+PASS G13  a charge licenses, at size two k, the sum of the first k plus one squares
+PASS G14  and of those the ones holding a piece in the anchor quarter number the sum of the first k squares
+PASS G15  both agree with a direct enumeration that never consults the incidence
+PASS G16  so drawing every subset through the anchor costs exactly one size step of the search's split budget
+splits a charge licenses that miss the anchor quarter: 4,9,16,25,36,49,64,81,100,121
+PASS G17  the splits a charge licenses that miss the anchor quarter number k plus one, squared
+odd-quarter class, splits licensed at the same sizes: 1,5,14,30,55,91,140,204,285,385
+PASS G18  a reading whose two fixed quarters are both odd licenses the sum of the first k squares, one size step below a charge
+PASS G19  and every split it licenses already holds a piece in the anchor quarter, so there the anchor is free
+odd-size class, splits licensed at sizes one to nineteen: 0,2,8,20,40,70,112,168,240,330
+PASS G20  the reading that demands an odd size licenses, at size two k plus one, twice the sum of the first k triangular numbers
+PASS G21  that reading licenses nothing at any even size, and no charge licenses anything at any odd size
+  quarters even and even: 5,14,30,55,91,140,204,285
+  quarters even and odd: 2,8,20,40,70,112,168,240
+  quarters odd and even: 2,8,20,40,70,112,168,240
+  quarters odd and odd: 1,5,14,30,55,91,140,204
+PASS G22  of the four parity pairs only the even one reproduces the charge count, so this test rejects a wrong parity instead of holding whatever the parities are
+elapsed under 20 s peak memory under 2500 MB
+PASS G23  it finishes inside its time and memory budget
+PASS G24  its output stays under 5500 characters
+
+TOTAL: PASS=24 FAIL=0

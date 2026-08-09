@@ -215,8 +215,10 @@ the uncarried checks.
 - The single-orbit statement quantifies over the 114 carried point-orbits only; the
   local-maximality statement covers five representative certificates only; the
   coarse-parity statement covers this incidence-plus-volume certificate family
-  only. None of the three is a universal negative, and none has a no-go packet —
-  they are finite computed facts about carried objects.
+  only. None of the three is a universal negative and no `no_go` claim ships;
+  their committed N1–N8 record is the No-Go Discipline Gate section below, and
+  the five-line N5 execution certificate is in the primary runner's cached
+  stdout.
 - The rotation group acting is the axiom's proper spatial rotations with the tick
   fixed. Whether the improper half or tick-reversing maps change these numbers is
   not addressed.
@@ -276,3 +278,133 @@ full gate names, and the canonical pinned runner cache was added. The stale
 branch-generated citation-graph manifest was reverted; the manifest acknowledgement
 for this note is regenerated at landing from the integrated tree, as with the
 sibling cycle 724 landing.
+
+Iteration 2 (confirmation round, 2026-08-08): the confirmation seat verified the
+iteration-1 science repairs but found the narrowed negative boundaries still owed
+the mandatory landed no-go-discipline artifacts. Both land in this revision: the
+committed N1–N8 gate record below, and the five-line N5 resolution certificate
+(per_element / per_site / per_mode / per_block / lattice_wide) emitted by the
+primary runner into its stdout and pinned cache. No `no_go` claim ships; the
+claims stay bounded facts about carried objects.
+
+## No-Go Discipline Gate
+
+This section is the committed N1–N8 record for the negative content that survives
+the narrowing: three bounded, carried-object facts — (a) no single one of the 114
+carried point-orbits certifies more than 84 (eight carried orbits reach 108);
+(b) each of the five tested representative certificates refuses all 114
+single-orbit unit strengthenings and the uniform strengthening; (c) the carried
+incidence-plus-volume certificate family over the two-element field does not
+extend past the minimal pieces. No `no_go` claim ships; every negative is priced
+to its exact carried object. The N5 execution certificate (one line per
+resolution class) is in the primary runner's cached stdout,
+`logs/runner-cache/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.txt`.
+
+**N1 — Alternative route enumeration.**
+1. Per-orbit exact envelope cap over the carried invariant family (single-orbit
+   route): ATTEMPTED — each of the 114 carried point-orbits is optimized exactly
+   by the two-variable lower-envelope argument, best value 84; within the carried
+   affine-in-membership certificate device this optimization is complete for a
+   single orbit.
+2. A different seed chamber or different boundary-free invariant sample family,
+   or certificate shapes outside the carried affine-in-membership device
+   (chamber route): NOT ATTEMPTED BY DECLARATION — the carried family is one
+   pinned recipe, chambers are not enumerated, and claim (a) is priced to the
+   carried family (sample-family closure wall, open).
+3. Enlarged symmetry — the improper half or tick-reversing maps, which would
+   regroup the orbits (symmetry route): NOT ATTEMPTED BY DECLARATION — the
+   acting group is declared as the 24 proper rotations with the tick fixed
+   (symmetry-enlargement wall, open).
+4. Strengthening the other fourteen carried certificates (certificate-completion
+   route): NOT ATTEMPTED BY DECLARATION — claim (b) names its five certificates;
+   the rest are checked and not executed (untested-certificate wall, open,
+   closable by pure computation).
+5. An explicit odd-cost coarse dissection search, or a complete parity
+   classification of all-piece dissections (parity-construction route): NOT
+   ATTEMPTED BY DECLARATION — claim (c) concerns span membership of one
+   certificate family only (odd-coarse-dissection wall, open).
+6. Alternative parity invariants — oriented-volume congruences, triangulation
+   invariants, or other sample families over the two-element field (invariant
+   route): NOT ATTEMPTED BY DECLARATION — priced out of claim (c).
+The two-element-field elimination itself: ATTEMPTED on both carried sample
+families at rank 465, minimal and all-piece variants, with seven unit-cut
+discrimination controls.
+
+**N2 — Wall-independence audit.** Open rows: the sample-family closure wall, the
+untested-certificate wall, the odd-coarse-dissection wall, the tick-realization
+bridge, the simplex-identification bridge, the symmetry-enlargement wall, and the
+scale-extension wall (one cell, one tick). Pairwise: chamber enumeration (closing
+the sample-family wall) neither constructs an odd coarse dissection nor proves a
+parity theorem; running the fourteen remaining strengthenings closes only the
+untested-certificate wall and changes no other claim's scope; the two physical
+bridges need theorems no finite computation here supplies; enlarging the symmetry
+regroups the orbits without touching parity; the scale wall changes the domain
+itself. One one-way pricing dependency is declared rather than collapsed: were the
+sample-family wall closed by full chamber enumeration, claim (a) would re-price
+from carried-family scope to a genuine one-orbit impossibility — which is exactly
+why it is carried at carried-family scope. No row is double-counted.
+
+**N3 — Hidden-wall scan.** Iteration-1 review found the hidden scopes: "any one
+point-orbit" hid "one of the 114 carried orbits"; "the parity relation does not
+extend" hid "is not certified by the carried incidence-plus-volume columns";
+"every carried bound" hid "the five tested certificates". All three are promoted
+into the claim statements, the gate names, and the receipt. Two hidden premises
+were promoted with them: the supplied corner-simplex model (now the first
+section) and the normalized 4-volume convention (now declared).
+
+**N4 — Residual matching.** Witness dispositions: claim (a) rests on the
+per-orbit envelope computation — its residual, "best certificate from one carried
+orbit within the carried device", matches (a) exactly, and the eight-orbit halves
+certificate supplies the positive complement. Claim (b) rests on the 115
+refutations per tested certificate — the residual matches the five-certificate
+statement exactly. Claim (c) rests on the rank-465 elimination and
+non-membership — the residual "cost vector outside this span" matches (c), and
+the even cost-108 witness fixes minimal-piece parity on the positive side. The
+uncarried author-side scratch checks are dropped as negative witnesses
+(provenance only, per the cross-checks section).
+
+**N5 — Rhetoric audit.** All three claims were checked across per-element /
+per-site / per-mode / per-block / lattice-wide resolutions; the tested and
+untested resolutions are stated line-by-line in the N5 resolution certificate in
+the primary's cached stdout (per_element: exact recounted slacks and refusals
+only; per_site: the two carried pinned sample recipes only; per_mode: 114 carried
+orbits and five tested certificates, fourteen checked and not executed;
+per_block: minimal versus all-corner piece classes, with no coarse
+dissection-parity negative; lattice_wide: checked and not executed — no
+lattice-wide negative exists in this package). Every phrase wider than these
+resolutions was narrowed in iterations 1–2; the note carries no universal
+negative.
+
+**N6 — Partial-closure path scan.** Every surviving negative closes without new
+physics: the untested-certificate wall by running the strengthening test on the
+remaining fourteen certificates (pure computation); the sample-family wall by
+finite chamber enumeration (unexecuted); the odd-coarse-dissection wall by
+exhibiting a dissection or proving a complete parity theorem. No registered
+primitive supplies the two physical bridges — kinetic-isotropy supplies the equal
+tick/edge graining only — and no convention or labeling reframe closes them; both
+need theorems. The legitimate import-bearing path is named: a consuming theorem
+may take the simplex identification as an explicit import, bound it, and retire
+it by audit. Nothing here forecloses that.
+
+**N7 — Steelman.** Strongest counter-argument: "A seed in a different
+hyperplane-arrangement chamber may furnish a single-orbit dual reaching 108,
+since chambers were not exhausted; one of the fourteen untested certificates may
+be a slack bound that a unit strengthening would expose; and coarse dissections
+may all share even parity under an invariant invisible to the sampled linear
+constraints — no odd dissection is exhibited." The steelman is concrete and
+correct, and it is why nothing here ships as a no-go: its three routes are
+exactly the sample-family, untested-certificate, and odd-coarse-dissection walls,
+all carried OPEN, and the claims as narrowed are facts about carried objects the
+steelman does not touch.
+
+**N8 — Cross-cycle echo.** The landed cycle 724 review demoted this same lane to
+the supplied tick-extended simplex model and preserved the untested construction
+escapes; this note carries that boundary forward as its first section instead of
+repeating the broader physical tendency the iteration-1 review flagged here. The
+repo's earlier falsification of a comparator slogan that generalized beyond its
+comparator is echoed by pricing every negative to its exact carried family, orbit
+set, and certificate list.
+
+**Status: PASS** — narrow by construction: all eight checks answered, no failure
+condition hit, no `no_go` claim ships, and both required artifacts land in this
+PR (this section, and the N5 certificate in the primary's cached stdout).

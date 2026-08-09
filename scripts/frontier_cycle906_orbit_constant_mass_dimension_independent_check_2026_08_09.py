@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Cycle 906 independent check: specified to REFUTE the orbit-constant
-pushforward-mass dimension theorem and its receipt.
+pushforward-mass dimension theorem, its receipt, AND ITS SENTENCES.
 
 Its only declared inputs are the two files of this same landing delta -- the
 primary runner's source and the primary runner's receipt -- pinned by
@@ -26,14 +26,29 @@ that matters:
     which never touches the fibre-level matrix at all;
   * a third dimension is obtained from a reduced row echelon form over the
     rationals with an explicit free-variable basis, every vector of which is
-    re-verified against both linear conditions.
+    re-verified against both linear conditions;
+  * support containment is re-established CONSTRUCTIVELY -- an explicit
+    integer combination of the checker's own constraint rows is built and
+    required to equal the fibre-total functional -- where the primary uses a
+    rank test, and the control at base points inside a disjoint orbit is an
+    exhibited solution with nonzero mass there rather than a second rank;
+  * the extreme points are re-enumerated by brute force over all supports in
+    the checker's own layout.
+
+SENTENCES ARE CHECKED, NOT COPIED.  The checker holds its own transcription
+of the dimension laws, of the phrases they are rendered with, and of the
+sentence frames, and RE-RENDERS the whole theorem from its own recomputed
+numbers.  Any receipt theorem sentence that differs by one character is a
+disagreement, and a nonzero exit.  A withdrawn sentence reappearing anywhere
+in the receipt is a disagreement too.  What this cannot detect is a
+coordinated edit of both runners; that is why the note carries the general
+proof, and the proof is what makes the sentences true.
 
 REFUTATION DISCIPLINE.  Every advertised receipt row is a recomputed
-comparison that fails closed, and nine planted receipt corruptions are
-applied to confirm each gate can detect tampering.  The verdict is
-CORROBORATES only when every comparison agrees and every tooth bites; any
-disagreement, any failed gate, and any tooth that does not bite produces a
-NONZERO EXIT.
+comparison that fails closed, and planted receipt corruptions are applied to
+confirm each gate can detect tampering.  The verdict is CORROBORATES only
+when every comparison agrees and every tooth bites; any disagreement, any
+failed gate, and any tooth that does not bite produces a NONZERO EXIT.
 
 Every fraction emitted is a BOOKKEEPING FRACTION, NOT A PROBABILITY.
 
@@ -72,13 +87,13 @@ RECEIPT_PATH = ("outputs/orbit_constant_mass_dimension_independent_check"
 
 EXPECTED_SHA256 = {
     PRIMARY_PATH:
-        "a4b3ac215741e2f4b9d015708fbce089fd599cf92cfd821553a6cb08717b2fdf",
+        "696cc7bfee4adbe1ba4dd96a319764b3dc91ab89aaff3188e377d9cc17d3848a",
     PRIMARY_RECEIPT:
-        "9bf77b90fdb7e5b6fde99d223a913404d7580d2f254f8d2199bd18668f7292b2",
+        "0032e0feac893abe73e1dd0923c6a661e6fda1e20f0a6dcef20c9ac039543525",
 }
 EXPECTED_GIT_BLOBS = {
-    PRIMARY_PATH: "e358ad784912444e203bb06bed408501cf2cdb22",
-    PRIMARY_RECEIPT: "ad7fe2c733141101f614008c20894406c5bc8bd1",
+    PRIMARY_PATH: "20db861618bd7b41b44bfd91275079abbf63606c",
+    PRIMARY_RECEIPT: "5b7419fbb455ef20d5fcc6091418e97a1399a45a",
 }
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +106,26 @@ CHECK_MAX_BASE_POINTS = 5
 CHECK_FIBRE_ALPHABET_SMALL = (1, 2, 3)
 CHECK_FIBRE_ALPHABET_WIDE = (1, 2)
 CHECK_WIDE_ALPHABET_FROM = 5
+CHECK_VERTEX_MAX_FIBRE_POINTS = 6
+
+# The checker's OWN transcription of the dimension laws and of the prose the
+# primary renders them with.  Nothing here is read from the receipt.
+CHECK_SOLUTION_LAW = (1, 1, 0)
+CHECK_PUSHFORWARD_LAW = (1, 0)
+CHECK_NORMALIZED_LAW = (1, 1, -1)
+CHECK_DISJOINT_PHRASE = "the number of orbits disjoint from the required-zero subset"
+CHECK_OUTSIDE_PHRASE = ("the sum over base points outside that subset of"
+                        " (fibre size minus one)")
+CHECK_DISJOINT_FIBRE_PHRASE = ("the sum over base points of those orbits of"
+                               " (fibre size minus one)")
+
+# The checker's own transcription of the withdrawn sentence fragments.  Only
+# their digests are published, so the withdrawn wording reaches no receipt.
+CHECK_REFUTED_FRAGMENTS = (
+    "unique up to scale",
+    "product of simplices",
+    "the tension resolves",
+)
 
 PRIMES = (2147483647, 2147483629, 2147483587)
 
@@ -135,6 +170,99 @@ def emit(name: str, payload: dict) -> bool:
     ok = bool(payload.get("pass"))
     print(f"CERTIFICATE {name} {'PASS' if ok else 'FAIL'} {compact(payload)}")
     return ok
+
+
+# ---------------------------------------------------------------------------
+# the checker's own rendering of the laws
+# ---------------------------------------------------------------------------
+
+def render_law(coefficients: tuple[int, ...], phrases: tuple[str, ...]) -> str:
+    weights, constant = coefficients[:-1], coefficients[-1]
+    pieces: list[tuple[bool, str]] = []
+    for weight, phrase in zip(weights, phrases):
+        if weight == 0:
+            continue
+        scale = {1: "", 2: "twice ", 3: "three times "}.get(abs(weight))
+        if scale is None:
+            scale = f"{abs(weight)} times "
+        pieces.append((weight > 0, scale + phrase))
+    if constant:
+        word = {1: "one", 2: "two", 3: "three"}.get(abs(constant),
+                                                    str(abs(constant)))
+        pieces.append((constant > 0, word))
+    if not pieces:
+        return "zero"
+    text = ("" if pieces[0][0] else "minus ") + pieces[0][1]
+    for positive, piece in pieces[1:]:
+        text += (" plus " if positive else " minus ") + piece
+    return text
+
+
+def rendered_theorem(instances: int, hypothesis_instances: int,
+                     enumerated_instances: int) -> dict:
+    """The theorem the primary MUST have emitted, rebuilt here from the
+    checker's own law transcription and its own recomputed counts."""
+    return {
+        "parameterization": (
+            "for every finite cyclic action on finitely many base points,"
+            " every assignment of non-empty finite fibres and every"
+            " required-zero subset, the solutions of the two linear"
+            " conditions are exactly the span of the explicit basis this"
+            " runner constructs, so their dimension is "
+            + render_law(CHECK_SOLUTION_LAW,
+                         (CHECK_DISJOINT_PHRASE, CHECK_OUTSIDE_PHRASE))),
+        "pushforward_dimension": (
+            "the space of admissible pushforward masses has dimension exactly "
+            + render_law(CHECK_PUSHFORWARD_LAW, (CHECK_DISJOINT_PHRASE,))
+            + "; where that number is one, every admissible pushforward mass"
+              " is therefore a rational multiple of one fixed admissible"
+              " mass"),
+        "non_negative_normalized": (
+            "on instances with at least one disjoint orbit, adding"
+            " non-negativity and total mass one puts every solution to zero"
+            " at every fibre point over a base point outside the disjoint"
+            " orbits and leaves a set of dimension "
+            + render_law(CHECK_NORMALIZED_LAW,
+                         (CHECK_DISJOINT_PHRASE, CHECK_DISJOINT_FIBRE_PHRASE))
+            + ", whose extreme points are exactly the weightings that place"
+              " one disjoint orbit's whole mass on a single fibre point at"
+              " each of that orbit's base points"),
+        "signed_solution_off_the_disjoint_orbits": (
+            "whenever a base point lies outside the required-zero subset,"
+            " lies in an orbit that meets it, and carries at least two fibre"
+            " points, the difference of two of its fibre weights is a"
+            " solution supported strictly outside every disjoint orbit; that"
+            " hypothesis holds at "
+            + str(hypothesis_instances)
+            + " of the "
+            + str(instances)
+            + " swept instances and a witness is exhibited at every one of"
+              " them, so support containment is a consequence of"
+              " non-negativity and not of the two linear conditions alone"),
+        "verification_scope": (
+            "the laws above are proved in the note for all finite instances;"
+            " this runner verifies them on "
+            + str(instances)
+            + " exhaustively enumerated instances, the extreme-point"
+              " statement by brute-force enumeration on the "
+            + str(enumerated_instances)
+            + " of them with at most "
+            + str(CHECK_VERTEX_MAX_FIBRE_POINTS)
+            + " fibre points and a disjoint orbit, and evaluates the laws at"
+              " two declared larger instances where the fibre-level rank"
+              " routes are not run"),
+        "scope": (
+            "conditional on the declared finite structure only; this runner"
+            " reads no repository census, no symmetry claim, no interface"
+            " condition and no axiom surface, and asserts nothing about any"
+            " of them"),
+    }
+
+
+def evaluate_law(coefficients: tuple[int, ...],
+                 quantities: tuple[int, ...]) -> int:
+    weights, constant = coefficients[:-1], coefficients[-1]
+    return sum(w * q for w, q in zip(weights, quantities)) + constant
 
 
 # ---------------------------------------------------------------------------
@@ -205,6 +333,45 @@ def rref_free_basis(rows: list[list[int]], ncols: int
     return basis
 
 
+def unique_solution(rows: list[list[int]], ncols: int,
+                    forced_zero: list[int]) -> list[Fraction] | None:
+    """The unique x with rows.x = 0, sum(x) = 1 and x = 0 off a support."""
+    mat = [[Fraction(x) for x in row] + [Fraction(0)] for row in rows]
+    mat.append([Fraction(1)] * ncols + [Fraction(1)])
+    for point in forced_zero:
+        row = [Fraction(0)] * (ncols + 1)
+        row[point] = Fraction(1)
+        mat.append(row)
+    pivots: list[int] = []
+    r = 0
+    for col in range(ncols):
+        pivot = None
+        for i in range(r, len(mat)):
+            if mat[i][col] != 0:
+                pivot = i
+                break
+        if pivot is None:
+            continue
+        mat[r], mat[pivot] = mat[pivot], mat[r]
+        head = mat[r][col]
+        mat[r] = [x / head for x in mat[r]]
+        for i in range(len(mat)):
+            if i != r and mat[i][col] != 0:
+                factor = mat[i][col]
+                mat[i] = [a - factor * b for a, b in zip(mat[i], mat[r])]
+        pivots.append(col)
+        r += 1
+    if len(pivots) != ncols:
+        return None
+    for i in range(r, len(mat)):
+        if mat[i][ncols] != 0:
+            return None
+    solution = [Fraction(0)] * ncols
+    for i, col in enumerate(pivots):
+        solution[col] = mat[i][ncols]
+    return solution
+
+
 # ---------------------------------------------------------------------------
 # the checker's own rebuild of an instance -- reverse layout, consecutive rows
 # ---------------------------------------------------------------------------
@@ -251,6 +418,15 @@ class Rebuild:
     def disjoint_orbits(self) -> tuple[tuple[int, ...], ...]:
         return tuple(o for o in self.orbits
                      if not (set(o) & self.required_zero))
+
+    def disjoint_base_points(self) -> set[int]:
+        return {v for o in self.disjoint_orbits() for v in o}
+
+    def orbit_of(self, base: int) -> tuple[int, ...]:
+        for orbit in self.orbits:
+            if base in orbit:
+                return orbit
+        raise KeyError(base)
 
     def constraint_rows(self) -> list[list[int]]:
         """Reverse layout, and CONSECUTIVE differences around each orbit."""
@@ -320,6 +496,20 @@ class Rebuild:
         return self.n_base - max(
             modular_rank(base_rows, self.n_base, p) for p in PRIMES)
 
+    def normalized_dimension_modular(self) -> int:
+        """Dimension of the affine hull of the non-negative normalized set."""
+        rows = self.constraint_rows()
+        inside = self.disjoint_base_points()
+        for base in range(self.n_base):
+            if base in inside:
+                continue
+            for point in self.points(base):
+                row = [0] * self.n_fibre
+                row[point] = 1
+                rows.append(row)
+        rank = max(modular_rank(rows, self.n_fibre, p) for p in PRIMES)
+        return self.n_fibre - rank - 1
+
     # ---- condition checks -------------------------------------------------
 
     def satisfies_zero(self, weight: dict[int, Fraction]) -> bool:
@@ -335,6 +525,63 @@ class Rebuild:
     def satisfies_orbit_constancy(self, weight: dict[int, Fraction]) -> bool:
         mass = self.pushforward(weight)
         return all(all(mass[x] == mass[o[0]] for x in o) for o in self.orbits)
+
+    # ---- constructive support-containment certificate ---------------------
+
+    def support_certificate(self, base: int) -> list[int] | None:
+        """Build the fibre-total functional at `base` as an EXPLICIT integer
+        combination of this rebuild's own constraint rows.
+
+        For a base point in an orbit that meets the required-zero subset,
+        the functional equals the fibre-total at a required-zero base point
+        of that orbit -- itself a sum of vanishing rows -- plus the
+        telescoped consecutive-difference rows between the two.  Every row
+        used is checked for membership in this rebuild's own row list, so
+        the combination cannot quietly use a row the matrix does not have.
+        Returns the combination's value, or None when the orbit has no
+        required-zero base point or a used row is not a real row.
+        """
+        orbit = self.orbit_of(base)
+        anchors = [v for v in orbit if v in self.required_zero]
+        if not anchors:
+            return None
+        anchor = anchors[0]
+        rows = self.constraint_rows()
+        used: list[list[int]] = []
+        total = [0] * self.n_fibre
+        for point in self.points(anchor):        # the vanishing rows
+            row = [0] * self.n_fibre
+            row[point] = 1
+            used.append(row)
+            total[point] += 1
+        here = orbit.index(anchor)
+        there = orbit.index(base)
+        # telescope: row k is (mass at orbit[k]) - (mass at orbit[k+1]), so
+        # walking up subtracts those rows and walking down adds them
+        sign = -1 if there > here else 1
+        for k in range(min(here, there), max(here, there)):
+            row = [0] * self.n_fibre
+            for point in self.points(orbit[k]):
+                row[point] += 1
+            for point in self.points(orbit[k + 1]):
+                row[point] -= 1
+            used.append(row)
+            for index, value in enumerate(row):
+                total[index] += sign * value
+        if any(row not in rows for row in used):
+            return None
+        return total
+
+    def uniform_on_orbit(self, orbit: tuple[int, ...]) -> dict[int, Fraction]:
+        """The fibre-uniform non-negative normalized solution carried by one
+        disjoint orbit; used as the exhibited control for support
+        containment."""
+        out: dict[int, Fraction] = {}
+        for base in orbit:
+            share = Fraction(1, len(orbit) * self.fibre_sizes[base])
+            for point in self.points(base):
+                out[point] = share
+        return out
 
     # ---- representatives, rebuilt independently ---------------------------
 
@@ -358,10 +605,19 @@ class Rebuild:
         return {self.points(base)[0]: Fraction(1, len(orbit))
                 for base in orbit}
 
-    def cross_orbit_signed_witness(self) -> dict[int, Fraction] | None:
-        disjoint_bases = {v for o in self.disjoint_orbits() for v in o}
+    def signed_witness_hypothesis(self) -> bool:
+        disjoint = self.disjoint_base_points()
         for base in range(self.n_base):
-            if base in self.required_zero or base in disjoint_bases:
+            if base in self.required_zero or base in disjoint:
+                continue
+            if self.fibre_sizes[base] >= 2:
+                return True
+        return False
+
+    def cross_orbit_signed_witness(self) -> dict[int, Fraction] | None:
+        disjoint = self.disjoint_base_points()
+        for base in range(self.n_base):
+            if base in self.required_zero or base in disjoint:
                 continue
             if self.fibre_sizes[base] < 2:
                 continue
@@ -369,12 +625,46 @@ class Rebuild:
             return {pts[0]: Fraction(1), pts[1]: Fraction(-1)}
         return None
 
-    def polytope_dimension(self) -> int:
+    def normalized_dimension_closed(self) -> int:
         disjoint = self.disjoint_orbits()
         if not disjoint:
             return -1
-        return sum(self.fibre_sizes[v] - 1 for o in disjoint for v in o) \
-            + len(disjoint) - 1
+        return evaluate_law(
+            CHECK_NORMALIZED_LAW,
+            (len(disjoint),
+             sum(self.fibre_sizes[v] - 1 for o in disjoint for v in o)))
+
+    def claimed_extreme_points(self) -> set[tuple[Fraction, ...]]:
+        out: set[tuple[Fraction, ...]] = set()
+        for orbit in self.disjoint_orbits():
+            share = Fraction(1, len(orbit))
+            for choice in itertools.product(*[self.points(b) for b in orbit]):
+                vector = [Fraction(0)] * self.n_fibre
+                for point in choice:
+                    vector[point] = share
+                out.add(tuple(vector))
+        return out
+
+    def brute_force_extreme_points(self) -> set[tuple[Fraction, ...]]:
+        rows = self.constraint_rows()
+        found: set[tuple[Fraction, ...]] = set()
+        for mask in range(1 << self.n_fibre):
+            forced = [p for p in range(self.n_fibre) if not (mask >> p) & 1]
+            solution = unique_solution(rows, self.n_fibre, forced)
+            if solution is None or any(v < 0 for v in solution):
+                continue
+            found.add(tuple(solution))
+        return found
+
+    def product_shape_extreme_point_count(self) -> int:
+        disjoint = self.disjoint_orbits()
+        if not disjoint:
+            return 0
+        product = 1
+        for orbit in disjoint:
+            for base in orbit:
+                product *= self.fibre_sizes[base]
+        return len(disjoint) * product
 
     def zero_count(self, weight: dict[int, Fraction]) -> int:
         return self.n_fibre - sum(1 for v in weight.values() if v != 0)
@@ -426,6 +716,9 @@ def computed_table() -> dict:
     route_mismatches = 0
     first_mismatch = None
     base_mismatches = 0
+    law_mismatches = 0
+    normalized_mismatches = 0
+    normalized_checked = 0
     for inst in rebuild_family():
         modular, _ = inst.dimension_modular()
         split = inst.dimension_split()
@@ -435,8 +728,19 @@ def computed_table() -> dict:
             if first_mismatch is None:
                 first_mismatch = {"key": inst.key, "modular": modular,
                                   "split": split, "rref": rref}
-        if inst.base_dimension() != len(inst.disjoint_orbits()):
+        disjoint = len(inst.disjoint_orbits())
+        outside = sum(inst.fibre_sizes[v] - 1 for v in range(inst.n_base)
+                      if v not in inst.required_zero)
+        if evaluate_law(CHECK_SOLUTION_LAW, (disjoint, outside)) != modular:
+            law_mismatches += 1
+        base_dim = inst.base_dimension()
+        if base_dim != evaluate_law(CHECK_PUSHFORWARD_LAW, (disjoint,)):
             base_mismatches += 1
+        if disjoint:
+            normalized_checked += 1
+            if inst.normalized_dimension_modular() \
+                    != inst.normalized_dimension_closed():
+                normalized_mismatches += 1
         table.append((compact(inst.key), modular))
     table.sort()
     result = {
@@ -446,47 +750,137 @@ def computed_table() -> dict:
         "route_mismatches": route_mismatches,
         "first_mismatch": first_mismatch,
         "base_mismatches": base_mismatches,
+        "law_mismatches": law_mismatches,
+        "normalized_mismatches": normalized_mismatches,
+        "normalized_checked": normalized_checked,
     }
     _COMPUTED["table"] = result
+    return result
+
+
+def computed_support() -> dict:
+    """Constructive support-containment certificates, and the exhibited
+    control at base points inside a disjoint orbit."""
+    if "support" in _COMPUTED:
+        return _COMPUTED["support"]  # type: ignore[return-value]
+    certified = 0
+    failures = 0
+    controls = 0
+    control_defects = 0
+    for inst in rebuild_family():
+        inside = inst.disjoint_base_points()
+        control_mass: dict[int, Fraction] = {}
+        for orbit in inst.disjoint_orbits():
+            mass = inst.pushforward(inst.uniform_on_orbit(orbit))
+            for base in orbit:
+                control_mass[base] = mass[base]
+        for base in range(inst.n_base):
+            if base in inside:
+                # no certificate can exist here: an exhibited non-negative
+                # normalized solution carries nonzero mass at this base point
+                controls += 1
+                if control_mass.get(base, Fraction(0)) == 0:
+                    control_defects += 1
+                continue
+            built = inst.support_certificate(base)
+            indicator = [0] * inst.n_fibre
+            for point in inst.points(base):
+                indicator[point] = 1
+            if built is None or built != indicator or min(built) < 0:
+                failures += 1
+            else:
+                certified += 1
+    result = {
+        "certified": certified,
+        "failures": failures,
+        "controls": controls,
+        "control_defects": control_defects,
+    }
+    _COMPUTED["support"] = result
+    return result
+
+
+def computed_extreme_points() -> dict:
+    if "extreme" in _COMPUTED:
+        return _COMPUTED["extreme"]  # type: ignore[return-value]
+    enumerated = 0
+    set_mismatches = 0
+    product_differs = 0
+    for inst in rebuild_family():
+        if inst.n_fibre > CHECK_VERTEX_MAX_FIBRE_POINTS \
+                or not inst.disjoint_orbits():
+            continue
+        enumerated += 1
+        brute = inst.brute_force_extreme_points()
+        if brute != inst.claimed_extreme_points():
+            set_mismatches += 1
+        if inst.product_shape_extreme_point_count() != len(brute):
+            product_differs += 1
+    result = {
+        "instances_enumerated": enumerated,
+        "extreme_point_set_mismatches": set_mismatches,
+        "instances_where_a_product_of_simplices_would_give_another_count":
+            product_differs,
+    }
+    _COMPUTED["extreme"] = result
     return result
 
 
 def computed_witnesses() -> dict:
     if "witnesses" in _COMPUTED:
         return _COMPUTED["witnesses"]  # type: ignore[return-value]
-    with_solution = two_distinct = zero_differs = signed_outside = 0
+    with_solution = two_distinct = zero_differs = 0
+    hypothesis = with_disjoint = without_disjoint = witness_found = 0
+    biconditional_failures = 0
     defects: list[str] = []
     for inst in rebuild_family():
         uniform = inst.uniform_representative()
-        if uniform is None:
-            continue
-        with_solution += 1
-        concentrated = inst.concentrated_representative()
-        for weight in (uniform, concentrated):
-            if sum(weight.values(), Fraction(0)) != 1 \
-                    or any(v < 0 for v in weight.values()) \
-                    or not inst.satisfies_zero(weight) \
-                    or not inst.satisfies_orbit_constancy(weight):
-                defects.append("representative fails a declared property")
-        if uniform != concentrated:
-            two_distinct += 1
-            if inst.pushforward(uniform) != inst.pushforward(concentrated):
-                defects.append("distinct representatives disagree on mass")
+        if uniform is not None:
+            with_solution += 1
+            concentrated = inst.concentrated_representative()
+            for weight in (uniform, concentrated):
+                if sum(weight.values(), Fraction(0)) != 1 \
+                        or any(v < 0 for v in weight.values()) \
+                        or not inst.satisfies_zero(weight) \
+                        or not inst.satisfies_orbit_constancy(weight):
+                    defects.append("representative fails a declared property")
+            if uniform != concentrated:
+                two_distinct += 1
+                if inst.pushforward(uniform) != inst.pushforward(concentrated):
+                    defects.append("distinct representatives disagree on mass")
             if inst.zero_count(uniform) != inst.zero_count(concentrated):
                 zero_differs += 1
+        holds = inst.signed_witness_hypothesis()
         witness = inst.cross_orbit_signed_witness()
+        if holds:
+            hypothesis += 1
+            if inst.disjoint_orbits():
+                with_disjoint += 1
+            else:
+                without_disjoint += 1
+        if (witness is not None) != holds:
+            biconditional_failures += 1
         if witness is not None:
-            signed_outside += 1
+            witness_found += 1
+            inside = inst.disjoint_base_points()
             if not (inst.satisfies_zero(witness)
                     and inst.satisfies_orbit_constancy(witness)):
                 defects.append("cross-orbit signed witness is not a solution")
+            if any(inst.base_lookup[p] in inside
+                   for p, v in witness.items() if v != 0):
+                defects.append("cross-orbit witness is supported inside a "
+                               "disjoint orbit")
     result = {
         "counts": {
             "instances_with_a_disjoint_orbit": with_solution,
             "instances_with_two_distinct_representatives": two_distinct,
             "instances_where_zero_counts_differ": zero_differs,
-            "instances_with_a_cross_orbit_signed_solution": signed_outside,
+            "instances_satisfying_the_signed_witness_hypothesis": hypothesis,
+            "of_those_with_a_disjoint_orbit": with_disjoint,
+            "of_those_without_a_disjoint_orbit": without_disjoint,
+            "instances_with_a_cross_orbit_signed_solution": witness_found,
         },
+        "biconditional_failures": biconditional_failures,
         "defects": sorted(set(defects)),
     }
     _COMPUTED["witnesses"] = result
@@ -508,7 +902,7 @@ def computed_large(spec: dict) -> dict:
         "orbits_disjoint_from_required_zero": len(inst.disjoint_orbits()),
         "solution_space_dimension": inst.dimension_split(),
         "pushforward_mass_dimension": inst.base_dimension(),
-        "non_negative_normalized_polytope_dimension": inst.polytope_dimension(),
+        "non_negative_normalized_dimension": inst.normalized_dimension_closed(),
         "representative_zero_count": inst.zero_count(uniform),
     }
     representative_ok = (
@@ -555,7 +949,7 @@ def gate_pins() -> tuple[dict, dict]:
     sha_ok = sha_rows == EXPECTED_SHA256
     blob_ok = blob_rows == EXPECTED_GIT_BLOBS
     receipt = json.loads(payloads[PRIMARY_RECEIPT].decode("utf-8"))
-    # independent AST read of the primary's declared closure and family
+    # independent AST read of the primary's declared closure, family and laws
     tree = ast.parse(payloads[PRIMARY_PATH].decode("utf-8"),
                      filename=PRIMARY_PATH)
     declared: dict[str, object] = {}
@@ -576,6 +970,18 @@ def gate_pins() -> tuple[dict, dict]:
         and tuple(declared.get("FIBRE_ALPHABET_WIDE") or ())
         == CHECK_FIBRE_ALPHABET_WIDE
         and declared.get("WIDE_ALPHABET_FROM") == CHECK_WIDE_ALPHABET_FROM
+        and declared.get("VERTEX_ENUMERATION_MAX_FIBRE_POINTS")
+        == CHECK_VERTEX_MAX_FIBRE_POINTS
+    )
+    laws_match = (
+        tuple(declared.get("SOLUTION_DIMENSION_LAW") or ()) == CHECK_SOLUTION_LAW
+        and tuple(declared.get("PUSHFORWARD_DIMENSION_LAW") or ())
+        == CHECK_PUSHFORWARD_LAW
+        and tuple(declared.get("NORMALIZED_DIMENSION_LAW") or ())
+        == CHECK_NORMALIZED_LAW
+        and declared.get("DISJOINT_ORBIT_PHRASE") == CHECK_DISJOINT_PHRASE
+        and declared.get("OUTSIDE_FIBRE_PHRASE") == CHECK_OUTSIDE_PHRASE
+        and declared.get("DISJOINT_FIBRE_PHRASE") == CHECK_DISJOINT_FIBRE_PHRASE
     )
     if not sha_ok:
         disagree("pins", "declared input sha256 drift",
@@ -593,7 +999,18 @@ def gate_pins() -> tuple[dict, dict]:
                  {"MAX_BASE_POINTS": CHECK_MAX_BASE_POINTS},
                  {k: declared.get(k) for k in
                   ("MAX_BASE_POINTS", "FIBRE_ALPHABET_SMALL",
-                   "FIBRE_ALPHABET_WIDE", "WIDE_ALPHABET_FROM")})
+                   "FIBRE_ALPHABET_WIDE", "WIDE_ALPHABET_FROM",
+                   "VERTEX_ENUMERATION_MAX_FIBRE_POINTS")})
+    if not laws_match:
+        disagree("pins", "the primary's declared dimension laws or their"
+                         " rendering phrases differ from the checker's"
+                         " independent transcription",
+                 {"solution": list(CHECK_SOLUTION_LAW),
+                  "pushforward": list(CHECK_PUSHFORWARD_LAW),
+                  "normalized": list(CHECK_NORMALIZED_LAW)},
+                 {k: declared.get(k) for k in
+                  ("SOLUTION_DIMENSION_LAW", "PUSHFORWARD_DIMENSION_LAW",
+                   "NORMALIZED_DIMENSION_LAW")})
     payload = {
         "certificate": "PINS",
         "declared_inputs": list(AUDIT_INPUT_PATHS),
@@ -606,28 +1023,24 @@ def gate_pins() -> tuple[dict, dict]:
         "primary_closure_is_its_own_source_only": closure_is_self_only,
         "primary_closure_contains_no_ancestor_artifact": True,
         "primary_family_matches_independent_transcription": family_matches,
+        "primary_laws_match_independent_transcription": laws_match,
         "import_firewall_hits": list(FIREWALL.hits),
     }
     payload["pass"] = bool(sha_ok and blob_ok and closure_is_self_only
-                           and family_matches and not FIREWALL.hits)
+                           and family_matches and laws_match
+                           and not FIREWALL.hits)
     return payload, receipt
 
 
 def gate_dimension_table(receipt: dict) -> dict:
     family = rebuild_family()
     computed = computed_table()
-    route_mismatches = computed["route_mismatches"]
-    first_mismatch = computed["first_mismatch"]
-    table = computed["table"]
+    claimed = (receipt.get("certificates", {}).get("DIMENSION_LAWS", {}))
     own_digest = computed["digest"]
-    claimed_digest = (receipt.get("certificates", {})
-                      .get("THREE_ROUTES_AGREE", {})
-                      .get("dimension_table_digest"))
-    claimed_count = (receipt.get("certificates", {})
-                     .get("THREE_ROUTES_AGREE", {}).get("instances"))
-    claimed_sum = (receipt.get("certificates", {})
-                   .get("THREE_ROUTES_AGREE", {}).get("dimension_sum"))
     own_sum = computed["sum"]
+    claimed_digest = claimed.get("dimension_table_digest")
+    claimed_count = claimed.get("instances")
+    claimed_sum = claimed.get("dimension_sum")
     if own_digest != claimed_digest:
         disagree("dimension_table", "per-instance dimension table digest",
                  claimed_digest, own_digest)
@@ -636,14 +1049,30 @@ def gate_dimension_table(receipt: dict) -> dict:
                  claimed_count, len(family))
     if claimed_sum != own_sum:
         disagree("dimension_table", "dimension sum", claimed_sum, own_sum)
+    if claimed.get("normalized_instances_checked") \
+            != computed["normalized_checked"]:
+        disagree("dimension_table", "instances with a disjoint orbit",
+                 claimed.get("normalized_instances_checked"),
+                 computed["normalized_checked"])
+    if claimed.get("instances_declared") != len(family):
+        disagree("dimension_table", "declared family size",
+                 claimed.get("instances_declared"), len(family))
+    if not claimed.get("every_declared_wrong_law_was_refuted"):
+        disagree("dimension_table",
+                 "the primary did not refute every declared wrong law",
+                 True, claimed.get("every_declared_wrong_law_was_refuted"))
     payload = {
         "certificate": "DIMENSION_TABLE_REBUILT",
         "instances_rebuilt": len(family),
         "primes_used": list(PRIMES),
         "routes": ["modular rank", "rank-nullity split",
-                   "rational reduced row echelon free-variable basis"],
-        "internal_route_mismatches": route_mismatches,
-        "first_internal_mismatch": first_mismatch,
+                   "rational reduced row echelon free-variable basis",
+                   "modular rank of the support-restricted system"],
+        "internal_route_mismatches": computed["route_mismatches"],
+        "first_internal_mismatch": computed["first_mismatch"],
+        "solution_law_mismatches": computed["law_mismatches"],
+        "normalized_law_mismatches": computed["normalized_mismatches"],
+        "normalized_instances_checked": computed["normalized_checked"],
         "checker_dimension_table_digest": own_digest,
         "receipt_dimension_table_digest": claimed_digest,
         "digest_agrees": own_digest == claimed_digest,
@@ -651,10 +1080,14 @@ def gate_dimension_table(receipt: dict) -> dict:
         "receipt_dimension_sum": claimed_sum,
         "instance_count_agrees": claimed_count == len(family),
     }
-    payload["pass"] = bool(route_mismatches == 0
+    payload["pass"] = bool(computed["route_mismatches"] == 0
+                           and claimed.get("instances_declared") == len(family)
+                           and computed["law_mismatches"] == 0
+                           and computed["normalized_mismatches"] == 0
                            and own_digest == claimed_digest
                            and claimed_count == len(family)
-                           and claimed_sum == own_sum)
+                           and claimed_sum == own_sum
+                           and claimed.get("every_declared_wrong_law_was_refuted"))
     return payload
 
 
@@ -662,12 +1095,12 @@ def gate_base_level(receipt: dict) -> dict:
     family = rebuild_family()
     mismatches = computed_table()["base_mismatches"]
     claimed = (receipt.get("certificates", {})
-               .get("THREE_ROUTES_AGREE", {}).get("base_level_disagreements"))
+               .get("DIMENSION_LAWS", {}).get("pushforward_law_failures"))
     if mismatches:
         disagree("base_level", "pushforward-mass dimension does not equal the "
                                "number of disjoint orbits", 0, mismatches)
     if claimed != 0:
-        disagree("base_level", "receipt admits base-level disagreements",
+        disagree("base_level", "receipt admits pushforward-law failures",
                  0, claimed)
     payload = {
         "certificate": "PUSHFORWARD_DIMENSION_REBUILT",
@@ -677,9 +1110,92 @@ def gate_base_level(receipt: dict) -> dict:
                       " disjoint from the required-zero subset"),
         "instances_rebuilt": len(family),
         "checker_mismatches": mismatches,
-        "receipt_base_level_disagreements": claimed,
+        "receipt_pushforward_law_failures": claimed,
     }
     payload["pass"] = bool(mismatches == 0 and claimed == 0)
+    return payload
+
+
+def gate_support_containment(receipt: dict) -> dict:
+    computed = computed_support()
+    claimed = (receipt.get("certificates", {}).get("SUPPORT_CONTAINMENT", {}))
+    pairs = {
+        "base_points_certified_outside_the_disjoint_orbits":
+            computed["certified"],
+        "control_base_points_inside_the_disjoint_orbits": computed["controls"],
+        "base_points_declared": sum(inst.n_base for inst in rebuild_family()),
+    }
+    for name, value in pairs.items():
+        if claimed.get(name) != value:
+            disagree("support_containment", name, claimed.get(name), value)
+    if computed["failures"]:
+        disagree("support_containment",
+                 "a base point outside the disjoint orbits has no constructive"
+                 " certificate", 0, computed["failures"])
+    if computed["control_defects"]:
+        disagree("support_containment",
+                 "an exhibited solution has zero mass at a base point of the"
+                 " first disjoint orbit", 0, computed["control_defects"])
+    payload = {
+        "certificate": "SUPPORT_CONTAINMENT_REBUILT",
+        "statement": ("for every base point outside the disjoint orbits the"
+                      " checker BUILDS the fibre-total functional as an"
+                      " explicit integer combination of its own constraint"
+                      " rows and requires the result to equal the indicator,"
+                      " so every non-negative solution vanishes there; at"
+                      " base points of the first disjoint orbit an exhibited"
+                      " solution carries nonzero mass, which is what makes"
+                      " the test discriminating"),
+        "checker_certified": computed["certified"],
+        "checker_certificate_failures": computed["failures"],
+        "checker_controls": computed["controls"],
+        "checker_control_defects": computed["control_defects"],
+        "receipt_counts": {k: claimed.get(k) for k in pairs},
+        "counts_agree": all(claimed.get(k) == v for k, v in pairs.items()),
+    }
+    payload["pass"] = bool(not computed["failures"]
+                           and not computed["control_defects"]
+                           and all(claimed.get(k) == v
+                                   for k, v in pairs.items()))
+    return payload
+
+
+def gate_extreme_points(receipt: dict) -> dict:
+    computed = computed_extreme_points()
+    claimed = (receipt.get("certificates", {}).get("EXTREME_POINTS", {}))
+    pairs = {
+        "instances_enumerated": computed["instances_enumerated"],
+        "instances_in_the_declared_subfamily":
+            computed["instances_enumerated"],
+        "instances_where_a_product_of_simplices_would_give_another_count":
+            computed[
+                "instances_where_a_product_of_simplices_would_give_another_count"],
+    }
+    for name, value in pairs.items():
+        if claimed.get(name) != value:
+            disagree("extreme_points", name, claimed.get(name), value)
+    if computed["extreme_point_set_mismatches"]:
+        disagree("extreme_points",
+                 "the enumerated extreme points are not the claimed ones",
+                 0, computed["extreme_point_set_mismatches"])
+    if claimed.get("extreme_point_set_mismatches") != 0:
+        disagree("extreme_points", "receipt admits extreme-point mismatches",
+                 0, claimed.get("extreme_point_set_mismatches"))
+    payload = {
+        "certificate": "EXTREME_POINTS_REBUILT",
+        "statement": ("the checker re-enumerates every extreme point by brute"
+                      " force over all supports in its own reversed layout and"
+                      " compares the set with the weightings that place one"
+                      " disjoint orbit's whole mass on a single fibre point at"
+                      " each of that orbit's base points"),
+        "checker_counts": computed,
+        "receipt_counts": {k: claimed.get(k) for k in pairs},
+        "counts_agree": all(claimed.get(k) == v for k, v in pairs.items()),
+    }
+    payload["pass"] = bool(not computed["extreme_point_set_mismatches"]
+                           and claimed.get("extreme_point_set_mismatches") == 0
+                           and all(claimed.get(k) == v
+                                   for k, v in pairs.items()))
     return payload
 
 
@@ -687,32 +1203,57 @@ def gate_witnesses(receipt: dict) -> dict:
     computed = computed_witnesses()
     rows: dict = computed["counts"]
     defects: list[str] = list(computed["defects"])
-    with_solution = rows["instances_with_a_disjoint_orbit"]
-    two_distinct = rows["instances_with_two_distinct_representatives"]
-    zero_differs = rows["instances_where_zero_counts_differ"]
-    signed_outside = rows["instances_with_a_cross_orbit_signed_solution"]
     claimed = (receipt.get("certificates", {})
                .get("NON_NEGATIVE_WITNESSES", {}))
     for name, value in rows.items():
         if claimed.get(name) != value:
             disagree("witnesses", name, claimed.get(name), value)
+    if computed["biconditional_failures"]:
+        disagree("witnesses",
+                 "a witness exists exactly when the hypothesis holds",
+                 0, computed["biconditional_failures"])
+    swept_whole_family = (claimed.get("instances_visited")
+                          == claimed.get("instances_declared")
+                          == len(rebuild_family()))
+    recounts_agree = (
+        claimed.get("independent_recount_of_the_hypothesis")
+        == rows["instances_satisfying_the_signed_witness_hypothesis"]
+        and claimed.get("independent_recount_of_the_witnesses")
+        == rows["instances_with_a_cross_orbit_signed_solution"])
+    if not swept_whole_family:
+        disagree("witnesses", "the primary's witness sweep did not visit the"
+                              " whole declared family",
+                 claimed.get("instances_visited"), len(rebuild_family()))
+    if not recounts_agree:
+        disagree("witnesses", "the primary's independent recounts",
+                 {k: claimed.get(k) for k in
+                  ("independent_recount_of_the_hypothesis",
+                   "independent_recount_of_the_witnesses")},
+                 {"hypothesis":
+                  rows["instances_satisfying_the_signed_witness_hypothesis"],
+                  "witnesses":
+                  rows["instances_with_a_cross_orbit_signed_solution"]})
     payload = {
         "certificate": "WITNESSES_REBUILT",
         "statement": ("the checker rebuilds both non-negative normalized"
                       " representatives and the cross-orbit signed witness"
-                      " from its own layout and recounts every advertised"
-                      " tally; a distinct second representative with the same"
-                      " pushforward mass and a different zero count is what"
-                      " keeps the retained claim at the pushforward level"),
+                      " from its own layout, recounts every advertised tally,"
+                      " and tests the witness on EVERY instance -- its"
+                      " existence condition does not mention a disjoint orbit"),
         "checker_counts": rows,
         "receipt_counts": {k: claimed.get(k) for k in rows},
+        "checker_biconditional_failures": computed["biconditional_failures"],
+        "primary_swept_the_whole_declared_family": swept_whole_family,
+        "primary_independent_recounts_agree": recounts_agree,
         "defects": sorted(set(defects))[:8],
         "counts_agree": all(claimed.get(k) == v for k, v in rows.items()),
     }
     payload["pass"] = bool(not defects
+                           and not computed["biconditional_failures"]
+                           and swept_whole_family and recounts_agree
                            and all(claimed.get(k) == v for k, v in rows.items())
-                           and with_solution and two_distinct
-                           and zero_differs and signed_outside)
+                           and rows["instances_with_a_disjoint_orbit"]
+                           and rows["instances_with_a_cross_orbit_signed_solution"])
     return payload
 
 
@@ -742,10 +1283,75 @@ def gate_large_instances(receipt: dict) -> dict:
         "statement": ("each declared larger instance is rebuilt from the"
                       " receipt's declared parameters alone and every"
                       " advertised number is recomputed by the checker's"
-                      " rank-nullity split and its own representative"),
+                      " rank-nullity split, its own base-level modular rank"
+                      " and its own representative"),
         "rows": rows,
     }
     payload["pass"] = bool(ok)
+    return payload
+
+
+def gate_theorem_text(receipt: dict) -> dict:
+    """The sentences themselves, re-rendered from the checker's own law
+    transcription and its own recomputed counts."""
+    computed = computed_table()
+    witnesses = computed_witnesses()["counts"]
+    extreme = computed_extreme_points()
+    expected = rendered_theorem(
+        len(rebuild_family()),
+        witnesses["instances_satisfying_the_signed_witness_hypothesis"],
+        extreme["instances_enumerated"])
+    claimed = receipt.get("theorem", {})
+    differing = sorted(name for name in expected
+                       if claimed.get(name) != expected[name])
+    extra = sorted(set(claimed) - set(expected))
+    for name in differing:
+        disagree("theorem_text", f"theorem sentence {name}",
+                 claimed.get(name), expected[name])
+    if extra:
+        disagree("theorem_text", "theorem field the checker does not render",
+                 extra, [])
+    declared_laws = receipt.get("declared_laws", {})
+    laws_agree = (
+        declared_laws.get("solution_dimension") == list(CHECK_SOLUTION_LAW)
+        and declared_laws.get("pushforward_dimension")
+        == list(CHECK_PUSHFORWARD_LAW)
+        and declared_laws.get("normalized_dimension")
+        == list(CHECK_NORMALIZED_LAW))
+    if not laws_agree:
+        disagree("theorem_text", "receipt's declared laws",
+                 declared_laws,
+                 {"solution_dimension": list(CHECK_SOLUTION_LAW),
+                  "pushforward_dimension": list(CHECK_PUSHFORWARD_LAW),
+                  "normalized_dimension": list(CHECK_NORMALIZED_LAW)})
+    # a withdrawn sentence must not reappear anywhere in the receipt; the
+    # primary's own published list of them is excluded from the scan
+    scanned = copy.deepcopy(receipt)
+    scanned.get("certificates", {}).pop("CLAIM_TEXT", None)
+    text = compact(scanned)
+    found = [sha256(fragment.encode("utf-8")).hexdigest()
+             for fragment in CHECK_REFUTED_FRAGMENTS if fragment in text]
+    if found:
+        disagree("theorem_text", "withdrawn sentence found in the receipt",
+                 [], found)
+    payload = {
+        "certificate": "THEOREM_TEXT_REBUILT",
+        "statement": ("every theorem sentence in the receipt is re-rendered"
+                      " here from the checker's own transcription of the"
+                      " dimension laws and its own recomputed counts, and"
+                      " compared character by character; the receipt is also"
+                      " scanned for sentences withdrawn as false"),
+        "sentences_compared": sorted(expected),
+        "sentences_that_differ": differing,
+        "receipt_fields_the_checker_does_not_render": extra,
+        "declared_laws_agree": laws_agree,
+        "withdrawn_sentence_digests_found": found,
+        "withdrawn_sentence_digests_checked":
+            [sha256(f.encode("utf-8")).hexdigest()
+             for f in CHECK_REFUTED_FRAGMENTS],
+    }
+    payload["pass"] = bool(not differing and not extra and laws_agree
+                           and not found)
     return payload
 
 
@@ -758,7 +1364,9 @@ def gate_receipt_consistency(receipt: dict) -> dict:
     timeout = receipt.get("AUDIT_TIMEOUT_SEC")
     teeth = certificates.get("MUTATION_TEETH", {})
     teeth_all_bite = (teeth.get("teeth_total") == teeth.get("teeth_biting")
-                      and (teeth.get("teeth_total") or 0) >= 9)
+                      and (teeth.get("teeth_total") or 0) >= 18)
+    families = teeth.get("check_families_covered") or []
+    families_covered = len(families) >= 8
     self_containment = certificates.get("SELF_CONTAINMENT", {})
     no_external_reads = (
         self_containment.get("read_inventory", {})
@@ -775,6 +1383,10 @@ def gate_receipt_consistency(receipt: dict) -> dict:
     if not teeth_all_bite:
         disagree("receipt_consistency", "planted mutations do not all bite",
                  teeth.get("teeth_total"), teeth.get("teeth_biting"))
+    if not families_covered:
+        disagree("receipt_consistency",
+                 "planted mutations do not cover every check family",
+                 8, len(families))
     if not no_external_reads:
         disagree("receipt_consistency",
                  "the primary reports an external scientific read", [], "some")
@@ -785,11 +1397,13 @@ def gate_receipt_consistency(receipt: dict) -> dict:
         "evidence_closure_is_the_primary_source_only": closure_self_only,
         "declared_audit_timeout_sec": timeout,
         "planted_mutations_all_bite": teeth_all_bite,
+        "check_families_the_mutations_cover": families,
         "primary_reports_no_external_scientific_read": no_external_reads,
     }
     payload["pass"] = bool(every_certificate_passes == claimed_all
                            and claimed_all and closure_self_only
-                           and teeth_all_bite and no_external_reads
+                           and teeth_all_bite and families_covered
+                           and no_external_reads
                            and timeout == AUDIT_TIMEOUT_SEC)
     return payload
 
@@ -801,60 +1415,105 @@ def gate_receipt_consistency(receipt: dict) -> dict:
 def run_teeth(receipt: dict) -> dict:
     teeth: list[dict] = []
 
-    def bite(name: str, mutate, gate) -> None:
+    def bite(name: str, family: str, mutate, gate) -> None:
         spoiled = copy.deepcopy(receipt)
         mutate(spoiled)
         before = len(DISAGREEMENTS)
         payload = gate(spoiled)
         caught = (not payload.get("pass")) or len(DISAGREEMENTS) > before
         del DISAGREEMENTS[before:]
-        teeth.append({"tooth": name, "bites": bool(caught)})
+        teeth.append({"tooth": name, "check_family": family,
+                      "bites": bool(caught)})
 
-    bite("corrupt_dimension_table_digest",
-         lambda r: r["certificates"]["THREE_ROUTES_AGREE"].__setitem__(
+    bite("corrupt_dimension_table_digest", "dimension_table",
+         lambda r: r["certificates"]["DIMENSION_LAWS"].__setitem__(
              "dimension_table_digest", "0" * 64),
          gate_dimension_table)
-    bite("corrupt_instance_count",
-         lambda r: r["certificates"]["THREE_ROUTES_AGREE"].__setitem__(
+    bite("corrupt_instance_count", "dimension_table",
+         lambda r: r["certificates"]["DIMENSION_LAWS"].__setitem__(
              "instances", 1),
          gate_dimension_table)
-    bite("corrupt_dimension_sum",
-         lambda r: r["certificates"]["THREE_ROUTES_AGREE"].__setitem__(
+    bite("corrupt_dimension_sum", "dimension_table",
+         lambda r: r["certificates"]["DIMENSION_LAWS"].__setitem__(
              "dimension_sum", 0),
          gate_dimension_table)
-    bite("corrupt_base_level_disagreements",
-         lambda r: r["certificates"]["THREE_ROUTES_AGREE"].__setitem__(
-             "base_level_disagreements", 3),
+    bite("claim_a_wrong_law_was_not_refuted", "dimension_table",
+         lambda r: r["certificates"]["DIMENSION_LAWS"].__setitem__(
+             "every_declared_wrong_law_was_refuted", False),
+         gate_dimension_table)
+    bite("corrupt_pushforward_law_failures", "base_level",
+         lambda r: r["certificates"]["DIMENSION_LAWS"].__setitem__(
+             "pushforward_law_failures", 3),
          gate_base_level)
-    bite("corrupt_zero_count_witness_tally",
+    bite("corrupt_support_containment_tally", "support_containment",
+         lambda r: r["certificates"]["SUPPORT_CONTAINMENT"].__setitem__(
+             "base_points_certified_outside_the_disjoint_orbits", 1),
+         gate_support_containment)
+    bite("corrupt_extreme_point_enumeration_tally", "extreme_points",
+         lambda r: r["certificates"]["EXTREME_POINTS"].__setitem__(
+             "instances_enumerated", 1),
+         gate_extreme_points)
+    bite("claim_the_product_shape_never_differs", "extreme_points",
+         lambda r: r["certificates"]["EXTREME_POINTS"].__setitem__(
+             "instances_where_a_product_of_simplices_would_give_another_count",
+             0),
+         gate_extreme_points)
+    bite("corrupt_zero_count_witness_tally", "witnesses",
          lambda r: r["certificates"]["NON_NEGATIVE_WITNESSES"].__setitem__(
              "instances_where_zero_counts_differ", 0),
          gate_witnesses)
-    bite("corrupt_large_instance_solution_dimension",
+    bite("restrict_the_signed_witness_tally_to_disjoint_orbit_instances",
+         "witnesses",
+         lambda r: r["certificates"]["NON_NEGATIVE_WITNESSES"].__setitem__(
+             "instances_with_a_cross_orbit_signed_solution", 2298),
+         gate_witnesses)
+    bite("corrupt_large_instance_solution_dimension", "large_instances",
          lambda r: r["certificates"]["LARGE_DECLARED_INSTANCES"]["rows"][0]
          .__setitem__("solution_space_dimension", 1),
          gate_large_instances)
-    bite("corrupt_large_instance_polytope_dimension",
+    bite("corrupt_large_instance_normalized_dimension", "large_instances",
          lambda r: r["certificates"]["LARGE_DECLARED_INSTANCES"]["rows"][0]
-         .__setitem__("non_negative_normalized_polytope_dimension", 0),
+         .__setitem__("non_negative_normalized_dimension", 0),
          gate_large_instances)
-    bite("corrupt_evidence_closure_to_an_ancestor_pin",
+    bite("replace_a_theorem_sentence_with_a_false_one", "theorem_text",
+         lambda r: r["theorem"].__setitem__(
+             "pushforward_dimension",
+             "the event-level weighting is unique up to scale"),
+         gate_theorem_text)
+    bite("shift_a_declared_law_coefficient", "theorem_text",
+         lambda r: r["declared_laws"].__setitem__("solution_dimension",
+                                                  [1, 1, 1]),
+         gate_theorem_text)
+    own_hypothesis = str(computed_witnesses()["counts"]
+                         ["instances_satisfying_the_signed_witness_hypothesis"])
+    bite("restate_a_theorem_count_that_the_run_did_not_produce", "theorem_text",
+         lambda r: r["theorem"].__setitem__(
+             "signed_solution_off_the_disjoint_orbits",
+             r["theorem"]["signed_solution_off_the_disjoint_orbits"]
+             .replace(own_hypothesis, str(int(own_hypothesis) + 1))),
+         gate_theorem_text)
+    bite("corrupt_evidence_closure_to_an_ancestor_pin", "receipt_consistency",
          lambda r: r.__setitem__(
              "AUDIT_INPUT_PATHS",
              [PRIMARY_PATH, "outputs/some_rejected_ancestor_receipt.json"]),
          gate_receipt_consistency)
-    bite("launder_a_failed_certificate_into_all_pass",
+    bite("launder_a_failed_certificate_into_all_pass", "receipt_consistency",
          lambda r: r["certificates"]["MUTATION_TEETH"].__setitem__("pass", False),
+         gate_receipt_consistency)
+    bite("drop_the_primary_mutation_families", "receipt_consistency",
+         lambda r: r["certificates"]["MUTATION_TEETH"].__setitem__(
+             "check_families_covered", ["basis"]),
          gate_receipt_consistency)
 
     payload = {
         "certificate": "TEETH",
-        "statement": ("nine planted receipt corruptions, each applied to a"
-                      " deep copy and pushed through the gate that owns it;"
-                      " every one must be refused"),
+        "statement": ("planted receipt corruptions, at least one per gate,"
+                      " each applied to a deep copy and pushed through the"
+                      " gate that owns it; every one must be refused"),
         "teeth": teeth,
         "teeth_total": len(teeth),
         "teeth_biting": sum(1 for t in teeth if t["bites"]),
+        "check_families_covered": sorted({t["check_family"] for t in teeth}),
     }
     payload["pass"] = all(t["bites"] for t in teeth)
     return payload
@@ -882,8 +1541,11 @@ def main() -> int:
     order.append("PINS")
     ok &= record(gate_dimension_table(receipt))
     ok &= record(gate_base_level(receipt))
+    ok &= record(gate_support_containment(receipt))
+    ok &= record(gate_extreme_points(receipt))
     ok &= record(gate_witnesses(receipt))
     ok &= record(gate_large_instances(receipt))
+    ok &= record(gate_theorem_text(receipt))
     ok &= record(gate_receipt_consistency(receipt))
     ok &= record(run_teeth(receipt))
 

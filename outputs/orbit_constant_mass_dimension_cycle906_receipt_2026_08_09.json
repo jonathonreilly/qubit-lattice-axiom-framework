@@ -7,18 +7,297 @@
   "audit": "unset",
   "authority": "none",
   "certificates": {
+    "CLAIM_TEXT": {
+      "certificate": "CLAIM_TEXT",
+      "each_sentence_carries_its_rendered_formula": {
+        "non_negative_normalized": true,
+        "parameterization": true,
+        "pushforward_dimension": true
+      },
+      "gates_that_did_not_pass": [],
+      "pass": true,
+      "refuted_fragments_found_in_the_output": 0,
+      "refuted_sentence_digests": [
+        "bb63aa589555cc38a78db15e7923c95f43b7bb24d5862515bd0e7f0728b42f8e",
+        "d4167af1e0bb7d91a73728367f4f2dd70c551490a0602158a12b86cac703f84c",
+        "31eb5cf987b0717b5de991b8f87462fa5547ea60c46de2be6ab9c160c9ece9b4"
+      ],
+      "rendered_formulas": {
+        "normalized_dimension": "the number of orbits disjoint from the required-zero subset plus the sum over base points of those orbits of (fibre size minus one) minus one",
+        "pushforward_dimension": "the number of orbits disjoint from the required-zero subset",
+        "solution_dimension": "the number of orbits disjoint from the required-zero subset plus the sum over base points outside that subset of (fibre size minus one)"
+      },
+      "statement": "every formula sentence of the emitted theorem is rendered from the coefficient set that the DIMENSION_LAWS certificate verified against an independent computation, every theorem field names the passing certificate that gates it, and no sentence withdrawn as false appears anywhere in the emitted output (this certificate's own list is excluded from that scan)",
+      "theorem_field_gated_by": {
+        "non_negative_normalized": "DIMENSION_LAWS",
+        "parameterization": "DIMENSION_LAWS",
+        "pushforward_dimension": "DIMENSION_LAWS",
+        "scope": "SELF_CONTAINMENT",
+        "signed_solution_off_the_disjoint_orbits": "NON_NEGATIVE_WITNESSES",
+        "verification_scope": "EXTREME_POINTS"
+      },
+      "theorem_fields_without_a_gate": []
+    },
+    "DIMENSION_LAWS": {
+      "basis_defects": 0,
+      "certificate": "DIMENSION_LAWS",
+      "closed_form_or_basis_length_disagreements": 0,
+      "defects": [],
+      "dimension_max": 12,
+      "dimension_sum": 36799,
+      "dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
+      "distinct_dimensions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "every_declared_wrong_law_was_refuted": true,
+      "instances": 14374,
+      "instances_declared": 14374,
+      "normalized_bounds_that_did_not_close": 0,
+      "normalized_dimension_law": [
+        1,
+        1,
+        -1
+      ],
+      "normalized_instances_checked": 8419,
+      "normalized_law_failures": 0,
+      "pass": true,
+      "pushforward_dimension_law": [
+        1,
+        0
+      ],
+      "pushforward_law_failures": 0,
+      "refuted_normalized_dimension_laws": [
+        {
+          "refuted_by": {
+            "independent_computation_gives": 0,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 1
+          },
+          "refuted_law": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[2,0]]]",
+            "wrong_law_gives": 0
+          },
+          "refuted_law": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 0,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": -1
+          },
+          "refuted_law": [
+            0,
+            1,
+            -1
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 0,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": -1
+          },
+          "refuted_law": [
+            1,
+            1,
+            -2
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 0,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 1
+          },
+          "refuted_law": [
+            2,
+            1,
+            -1
+          ]
+        }
+      ],
+      "refuted_pushforward_dimension_laws": [
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 0
+          },
+          "refuted_law": [
+            0,
+            0
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 2
+          },
+          "refuted_law": [
+            1,
+            1
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 0
+          },
+          "refuted_law": [
+            1,
+            -1
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 2
+          },
+          "refuted_law": [
+            2,
+            0
+          ]
+        }
+      ],
+      "refuted_solution_dimension_laws": [
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 0
+          },
+          "refuted_law": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 2,
+            "instance": "[[1],[[2,0]]]",
+            "wrong_law_gives": 1
+          },
+          "refuted_law": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 2
+          },
+          "refuted_law": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 0
+          },
+          "refuted_law": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 1,
+            "instance": "[[1],[[1,0]]]",
+            "wrong_law_gives": 2
+          },
+          "refuted_law": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "refuted_by": {
+            "independent_computation_gives": 2,
+            "instance": "[[1],[[2,0]]]",
+            "wrong_law_gives": 3
+          },
+          "refuted_law": [
+            1,
+            2,
+            0
+          ]
+        }
+      ],
+      "solution_dimension_law": [
+        1,
+        1,
+        0
+      ],
+      "solution_law_failures": 0,
+      "statement": "on every instance of the declared exhaustive family each declared dimension law reproduces a dimension computed without it -- the solution dimension by exact fraction-free nullspace rank, the pushforward dimension by exact base-level rank, and the non-negative normalized dimension by an exact rank upper bound met by the affine rank of exhibited verified solutions -- and every declared wrong law is refuted by an exhibited instance"
+    },
+    "EXTREME_POINTS": {
+      "bounded_subfamily": "instances with at least one disjoint orbit and at most 6 fibre points",
+      "certificate": "EXTREME_POINTS",
+      "extreme_point_count_mismatches": 0,
+      "extreme_point_set_mismatches": 0,
+      "first_mismatch": null,
+      "instances_enumerated": 1757,
+      "instances_in_the_declared_subfamily": 1757,
+      "instances_where_a_product_of_simplices_would_give_another_count": 483,
+      "pass": true,
+      "separating_example": {
+        "a_cartesian_product_of_simplices_would_have": 4,
+        "extreme_points_enumerated": 3,
+        "instance": "[[1,1],[[1,0],[2,0]]]"
+      },
+      "statement": "on every instance of the declared bounded subfamily the extreme points of the non-negative normalized solution set, enumerated by brute force over all supports, are exactly the weightings that place one disjoint orbit's whole mass on a single fibre point at each of that orbit's base points, and their number is the sum over disjoint orbits of the product of that orbit's fibre sizes"
+    },
     "GROUP_STRUCTURE": {
       "certificate": "GROUP_STRUCTURE",
       "failure_count": 0,
       "failures": [],
       "instances_checked": 14374,
+      "instances_declared": 14374,
       "pass": true,
       "statement": "for every instance the declared generator generates a finite cyclic group -- closed, with identity and inverses -- whose orbits are exactly the declared orbit partition"
     },
     "LARGE_DECLARED_INSTANCES": {
       "certificate": "LARGE_DECLARED_INSTANCES",
-      "dense_event_level_rank_route": "NOT RUN on these two instances: dense fraction-free elimination over more than ten thousand columns is outside this runner's declared budget, so the dense route is exercised only on the exhaustive family, where it agrees with both other routes",
       "pass": true,
+      "routes_not_run_here_and_why": "the fibre-level rank routes -- the dense fraction-free nullspace rank, the row-space support certificate and the two-sided normalized-dimension bounds -- are NOT run on these two instances: exact elimination over more than two thousand columns is outside this runner's declared budget.  What these two rows establish is therefore the arithmetic evaluation of laws proved in the note and verified by those routes on the exhaustive family, together with the base-level rank, the basis verification and the representative verification performed here",
       "rows": [
         {
           "base_points": 132,
@@ -26,9 +305,11 @@
             "base_level_dimension_equals_disjoint_orbits": true,
             "closed_form_equals_basis_length": true,
             "every_basis_vector_satisfies_both_conditions": true,
+            "normalized_dimension_equals_the_basis_count_inside_the_disjoint_orbits": true,
             "representative_is_non_negative": true,
             "representative_is_normalized": true,
-            "representative_satisfies_both_conditions": true
+            "representative_satisfies_both_conditions": true,
+            "solution_dimension_law_reproduces_the_closed_form": true
           },
           "declared_parameters": {
             "fibre_rule": "every base point carries 129 fibre points",
@@ -50,7 +331,7 @@
           },
           "fibre_points": 17028,
           "name": "twelve_orbits_of_eleven_uniform_fibres",
-          "non_negative_normalized_polytope_dimension": 1408,
+          "non_negative_normalized_dimension": 1408,
           "orbits_disjoint_from_required_zero": 1,
           "pushforward_mass_dimension": 1,
           "representative_zero_count": 15609,
@@ -62,9 +343,11 @@
             "base_level_dimension_equals_disjoint_orbits": true,
             "closed_form_equals_basis_length": true,
             "every_basis_vector_satisfies_both_conditions": true,
+            "normalized_dimension_equals_the_basis_count_inside_the_disjoint_orbits": true,
             "representative_is_non_negative": true,
             "representative_is_normalized": true,
-            "representative_satisfies_both_conditions": true
+            "representative_satisfies_both_conditions": true,
+            "solution_dimension_law_reproduces_the_closed_form": true
           },
           "declared_parameters": {
             "fibre_rule": "the last orbit's base points carry 129 fibre points; every other base point carries 7",
@@ -86,17 +369,30 @@
           },
           "fibre_points": 2266,
           "name": "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut",
-          "non_negative_normalized_polytope_dimension": 1408,
+          "non_negative_normalized_dimension": 1408,
           "orbits_disjoint_from_required_zero": 1,
           "pushforward_mass_dimension": 1,
           "representative_zero_count": 847,
           "solution_space_dimension": 1469
         }
       ],
-      "statement": "the closed-form count, the explicit basis length, the exact base-level rank and the exhibited representative agree on two declared larger instances; their parameters are chosen numbers for scale and describe no repository census or physical configuration"
+      "statement": "on two declared larger instances the proved dimension laws are evaluated at the declared parameters and cross-checked against the explicit basis length, the count of basis vectors supported inside the disjoint orbits, the exact base-level rank and the exhibited representative; their parameters are chosen numbers for scale and describe no repository census or physical configuration"
     },
     "MUTATION_TEETH": {
       "certificate": "MUTATION_TEETH",
+      "check_families_covered": [
+        "basis",
+        "claim_text",
+        "constraint_matrix",
+        "dimension_law",
+        "extreme_points",
+        "group_structure",
+        "large_instances",
+        "representatives",
+        "route_inventory",
+        "signed_witness",
+        "support_containment"
+      ],
       "pass": true,
       "probe_instance": [
         [
@@ -130,65 +426,152 @@
           ]
         ]
       ],
+      "statement": "one load-bearing mutation for each check family; every one must be caught by the gate that owns it",
       "teeth": [
         {
           "bites": true,
+          "check_family": "constraint_matrix",
           "detail": "dimension moved 7 -> 8",
           "tooth": "drop_one_orbit_constancy_row"
         },
         {
           "bites": true,
+          "check_family": "constraint_matrix",
           "detail": "dimension moved 7 -> 8",
           "tooth": "drop_one_vanishing_row"
         },
         {
           "bites": true,
-          "detail": "wrong closed form gives 8 against 7",
-          "tooth": "count_all_orbits_not_the_disjoint_ones"
+          "check_family": "dimension_law",
+          "detail": "wrong law gives 8 against 7",
+          "tooth": "solution_dimension_law_off_by_a_constant"
         },
         {
           "bites": true,
-          "detail": "wrong closed form gives 1 against 7",
-          "tooth": "omit_within_fibre_directions"
+          "check_family": "dimension_law",
+          "detail": "wrong law gives 1 against 7",
+          "tooth": "solution_dimension_law_without_the_within_fibre_term"
         },
         {
           "bites": true,
-          "detail": "vanishing gate rejects it",
-          "tooth": "weighting_on_the_required_zero_subset"
+          "check_family": "dimension_law",
+          "detail": "wrong law gives 2 against exact rank 1",
+          "tooth": "pushforward_dimension_law_off_by_a_constant"
         },
         {
           "bites": true,
-          "detail": "orbit-constancy gate rejects it",
-          "tooth": "orbit_constancy_broken_by_a_single_base_point"
+          "check_family": "dimension_law",
+          "detail": "bounds close at 4; wrong law gives 5",
+          "tooth": "normalized_dimension_law_without_the_orbit_mass_constraint"
         },
         {
           "bites": true,
+          "check_family": "support_containment",
+          "detail": "the fibre-total functional there is not in the row space, so the certificate cannot be issued",
+          "tooth": "support_certificate_claimed_at_a_disjoint_base_point"
+        },
+        {
+          "bites": true,
+          "check_family": "extreme_points",
+          "detail": "enumeration finds 4 extreme points; the product shape would have 8",
+          "tooth": "extreme_points_as_a_cartesian_product_of_simplices"
+        },
+        {
+          "bites": true,
+          "check_family": "signed_witness",
+          "detail": "an instance satisfies the relaxed hypothesis while every eligible base point there carries a single fibre point",
+          "tooth": "signed_witness_hypothesis_without_the_two_fibre_clause"
+        },
+        {
+          "bites": true,
+          "check_family": "signed_witness",
+          "detail": "3970 instances satisfy the hypothesis with no disjoint orbit",
+          "tooth": "signed_witness_tally_restricted_to_instances_with_a_disjoint_orbit"
+        },
+        {
+          "bites": true,
+          "check_family": "representatives",
           "detail": "normalization gate rejects it",
           "tooth": "representative_rescaled_off_total_mass_one"
         },
         {
           "bites": true,
+          "check_family": "representatives",
+          "detail": "vanishing gate rejects it",
+          "tooth": "weighting_on_the_required_zero_subset"
+        },
+        {
+          "bites": true,
+          "check_family": "representatives",
+          "detail": "orbit-constancy gate rejects it",
+          "tooth": "orbit_constancy_broken_by_a_single_base_point"
+        },
+        {
+          "bites": true,
+          "check_family": "representatives",
           "detail": "two distinct normalized non-negative solutions share one pushforward mass",
           "tooth": "event_level_uniqueness_claim"
         },
         {
           "bites": true,
+          "check_family": "basis",
           "detail": "exact rank detects the repeated vector",
           "tooth": "linearly_dependent_basis"
+        },
+        {
+          "bites": true,
+          "check_family": "group_structure",
+          "detail": "the mutant permutation's orbits are not the declared partition",
+          "tooth": "generator_swapped_between_two_orbits"
+        },
+        {
+          "bites": true,
+          "check_family": "claim_text",
+          "detail": "the sentence no longer carries the rendered formula of the law the run verified, while the unmutated theorem passes the same gate",
+          "tooth": "theorem_sentence_replaced_by_a_false_one"
+        },
+        {
+          "bites": true,
+          "check_family": "claim_text",
+          "detail": "the refuted-fragment scan finds it",
+          "tooth": "withdrawn_sentence_reintroduced"
+        },
+        {
+          "bites": true,
+          "check_family": "route_inventory",
+          "detail": "the syntax tree shows the helper the shorter declaration omits",
+          "tooth": "nullspace_route_declared_without_its_rank_helper"
+        },
+        {
+          "bites": true,
+          "check_family": "large_instances",
+          "detail": "dimension moves to 1398 from 1409",
+          "tooth": "large_instance_fibre_rule_altered"
         }
       ],
-      "teeth_biting": 9,
-      "teeth_total": 9
+      "teeth_biting": 20,
+      "teeth_total": 20
     },
     "NON_NEGATIVE_WITNESSES": {
       "certificate": "NON_NEGATIVE_WITNESSES",
       "defects": [],
+      "distinctness_biconditional_failures": 0,
+      "independent_recount_of_the_hypothesis": 6268,
+      "independent_recount_of_the_witnesses": 6268,
+      "instances_declared": 14374,
+      "instances_refuting_the_hypothesis_without_the_two_fibre_clause": 2546,
+      "instances_satisfying_the_signed_witness_hypothesis": 6268,
+      "instances_visited": 14374,
       "instances_where_zero_counts_differ": 5547,
-      "instances_with_a_cross_orbit_signed_solution": 2298,
+      "instances_with_a_cross_orbit_signed_solution": 6268,
       "instances_with_a_disjoint_orbit": 8419,
       "instances_with_two_distinct_representatives": 5547,
+      "of_those_with_a_disjoint_orbit": 2298,
+      "of_those_without_a_disjoint_orbit": 3970,
       "pass": true,
-      "statement": "wherever a disjoint orbit exists, the fibre-uniform weighting and the concentrated weighting are both non-negative, normalized solutions supported inside the disjoint orbits and sharing one pushforward mass; where the fibres allow it they are distinct and have different zero counts, so the zero count belongs to the representative; and a signed solution supported strictly outside every disjoint orbit exists whenever a base point outside the required-zero subset lies in an orbit that meets it and carries two fibre points",
+      "smallest_signed_witness_without_a_disjoint_orbit": "[[2],[[1,1],[2,0]]]",
+      "statement": "wherever a disjoint orbit exists, the fibre-uniform weighting and the concentrated weighting are both non-negative, normalized solutions supported inside the disjoint orbits and sharing one pushforward mass, and they are distinct exactly when their zero counts differ; and, on every instance of the family, a signed solution supported strictly outside every disjoint orbit is constructed exactly when a base point lies outside the required-zero subset, lies in an orbit that meets it, and carries at least two fibre points; both signed-witness tallies are recounted independently of the sweep loop, so a loop that skipped part of the declared family would disagree with its own recount",
+      "witness_hypothesis_biconditional_failures": 0,
       "worked_example": {
         "concentrated_zero_count": 1,
         "fibre_uniform_zero_count": 0,
@@ -209,6 +592,81 @@
         ]
       }
     },
+    "ROUTE_INVENTORY": {
+      "certificate": "ROUTE_INVENTORY",
+      "closed_form_and_basis_length_are_independent_of_each_other": false,
+      "closed_form_and_nullspace_are_independent_of_each_other": true,
+      "declared_helpers": {
+        "BASE_RANK": [
+          "Instance.base_level_rows",
+          "exact_rank"
+        ],
+        "BASIS_LENGTH": [
+          "Instance.constructive_basis_sparse",
+          "Instance.disjoint_orbits",
+          "Instance.fibre_points"
+        ],
+        "CLOSED_FORM": [
+          "Instance.disjoint_orbits"
+        ],
+        "NULLSPACE": [
+          "Instance.constraint_rows",
+          "Instance.fibre_points",
+          "exact_rank"
+        ]
+      },
+      "declared_sharing": {
+        "BASE_RANK|BASIS_LENGTH": [],
+        "BASE_RANK|CLOSED_FORM": [],
+        "BASE_RANK|NULLSPACE": [
+          "exact_rank"
+        ],
+        "BASIS_LENGTH|CLOSED_FORM": [
+          "Instance.disjoint_orbits"
+        ],
+        "BASIS_LENGTH|NULLSPACE": [
+          "Instance.fibre_points"
+        ],
+        "CLOSED_FORM|NULLSPACE": []
+      },
+      "helper_mismatches": [],
+      "pass": true,
+      "recomputed_helpers": {
+        "BASE_RANK": [
+          "Instance.base_level_rows",
+          "exact_rank"
+        ],
+        "BASIS_LENGTH": [
+          "Instance.constructive_basis_sparse",
+          "Instance.disjoint_orbits",
+          "Instance.fibre_points"
+        ],
+        "CLOSED_FORM": [
+          "Instance.disjoint_orbits"
+        ],
+        "NULLSPACE": [
+          "Instance.constraint_rows",
+          "Instance.fibre_points",
+          "exact_rank"
+        ]
+      },
+      "recomputed_sharing": {
+        "BASE_RANK|BASIS_LENGTH": [],
+        "BASE_RANK|CLOSED_FORM": [],
+        "BASE_RANK|NULLSPACE": [
+          "exact_rank"
+        ],
+        "BASIS_LENGTH|CLOSED_FORM": [
+          "Instance.disjoint_orbits"
+        ],
+        "BASIS_LENGTH|NULLSPACE": [
+          "Instance.fibre_points"
+        ],
+        "CLOSED_FORM|NULLSPACE": []
+      },
+      "sharing_mismatches": [],
+      "statement": "each dimension route's transitive helper set is recomputed from this file's own syntax tree, counting only names defined in this module, and must equal the declared set; the pairwise shared helpers must equal the declared sharing, so no route may be advertised as sharing less than it does"
+    },
     "SELF_CONTAINMENT": {
       "AUDIT_INPUT_PATHS": [
         "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py"
@@ -227,39 +685,45 @@
         ]
       },
       "repository_modules_imported": [],
-      "self_sha256": "a4b3ac215741e2f4b9d015708fbce089fd599cf92cfd821553a6cb08717b2fdf"
+      "self_sha256": "696cc7bfee4adbe1ba4dd96a319764b3dc91ab89aaff3188e377d9cc17d3848a"
     },
-    "THREE_ROUTES_AGREE": {
-      "base_level_disagreements": 0,
-      "basis_defects": 0,
-      "certificate": "THREE_ROUTES_AGREE",
-      "dimension_max": 12,
-      "dimension_sum": 36799,
-      "dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
-      "distinct_dimensions": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
-      ],
-      "first_disagreement": null,
-      "instances": 14374,
+    "SUPPORT_CONTAINMENT": {
+      "base_points_certified_outside_the_disjoint_orbits": 46510,
+      "base_points_declared": 63854,
+      "base_points_without_a_certificate": 0,
+      "certificate": "SUPPORT_CONTAINMENT",
+      "control_base_points_inside_the_disjoint_orbits": 17344,
+      "control_defects": 0,
+      "every_declared_base_point_accounted_for": true,
       "pass": true,
-      "route_disagreements": 0,
-      "statement": "on every instance of the declared exhaustive family the explicit-basis dimension, the exact fraction-free nullspace dimension and the closed-form count are equal; every basis vector satisfies both linear conditions and the basis is exactly independent; and the pushforward-mass dimension equals the number of orbits disjoint from the required-zero subset"
+      "statement": "at every base point outside the disjoint orbits the fibre-total functional is a non-negative vector in the row space of the constraint matrix, so every non-negative solution is zero at each of that base point's fibre points; at every base point inside a disjoint orbit the same functional is NOT in the row space, so the test is not automatic",
+      "worked_example": {
+        "base_point": 0,
+        "fibre_total_functional_is_in_the_row_space": true,
+        "instance": "[[1],[[1,1]]]",
+        "so_every_non_negative_solution_vanishes_there": true
+      }
     }
   },
   "claim_type": "bounded_theorem",
+  "declared_laws": {
+    "normalized_dimension": [
+      1,
+      1,
+      -1
+    ],
+    "pushforward_dimension": [
+      1,
+      0
+    ],
+    "solution_dimension": [
+      1,
+      1,
+      0
+    ]
+  },
   "family": {
+    "extreme_point_enumeration_max_fibre_points": 6,
     "fibre_alphabet_at_five_base_points": [
       1,
       2
@@ -277,9 +741,11 @@
   "per_instance_dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
   "runner": "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py",
   "theorem": {
-    "non_negative_corollary": "adding non-negativity and total mass one confines every solution to the union of the disjoint orbits and leaves a product of simplices of dimension (number of disjoint orbits minus one) plus the sum over base points of those orbits of (fibre size minus one); the fibre-uniform weighting is one point of that set, exhibited, and a second point is exhibited alongside it",
-    "parameterization": "for every instance of the declared structure the solution space of the two linear conditions is spanned by the explicit basis this runner constructs, so its dimension is the number of orbits disjoint from the required-zero subset plus the sum over base points outside that subset of (fibre size minus one)",
-    "pushforward_dimension": "the space of admissible pushforward masses has dimension exactly the number of orbits disjoint from the required-zero subset; in particular, at one disjoint orbit the pushforward mass is determined up to a single scalar",
-    "scope": "conditional on the declared finite structure only; this runner reads no repository census, no symmetry claim, no interface condition and no axiom surface, and asserts nothing about any of them"
+    "non_negative_normalized": "on instances with at least one disjoint orbit, adding non-negativity and total mass one puts every solution to zero at every fibre point over a base point outside the disjoint orbits and leaves a set of dimension the number of orbits disjoint from the required-zero subset plus the sum over base points of those orbits of (fibre size minus one) minus one, whose extreme points are exactly the weightings that place one disjoint orbit's whole mass on a single fibre point at each of that orbit's base points",
+    "parameterization": "for every finite cyclic action on finitely many base points, every assignment of non-empty finite fibres and every required-zero subset, the solutions of the two linear conditions are exactly the span of the explicit basis this runner constructs, so their dimension is the number of orbits disjoint from the required-zero subset plus the sum over base points outside that subset of (fibre size minus one)",
+    "pushforward_dimension": "the space of admissible pushforward masses has dimension exactly the number of orbits disjoint from the required-zero subset; where that number is one, every admissible pushforward mass is therefore a rational multiple of one fixed admissible mass",
+    "scope": "conditional on the declared finite structure only; this runner reads no repository census, no symmetry claim, no interface condition and no axiom surface, and asserts nothing about any of them",
+    "signed_solution_off_the_disjoint_orbits": "whenever a base point lies outside the required-zero subset, lies in an orbit that meets it, and carries at least two fibre points, the difference of two of its fibre weights is a solution supported strictly outside every disjoint orbit; that hypothesis holds at 6268 of the 14374 swept instances and a witness is exhibited at every one of them, so support containment is a consequence of non-negativity and not of the two linear conditions alone",
+    "verification_scope": "the laws above are proved in the note for all finite instances; this runner verifies them on 14374 exhaustively enumerated instances, the extreme-point statement by brute-force enumeration on the 1757 of them with at most 6 fibre points and a disjoint orbit, and evaluates the laws at two declared larger instances where the fibre-level rank routes are not run"
   }
 }

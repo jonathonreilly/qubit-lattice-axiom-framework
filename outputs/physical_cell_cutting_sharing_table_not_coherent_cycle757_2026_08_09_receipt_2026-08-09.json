@@ -1,0 +1,64 @@
+{
+ "cycle": 757,
+ "failures": 0,
+ "gates": 15,
+ "headline": "The 15800 least-volume cuttings of the unit four-cube at the adjacency cost floor draw on 192 pieces, 24 pieces to a cutting, each piece lying on 1975 cuttings, and exactly 192 sets of eight pieces are used at most once by any cutting, each meeting every cutting exactly once. This cycle goes to the table of how many pieces two of those exact covers share, which the preceding cycle named as the family's multiplication table. The table is regular: two covers share 0, 1, 2 or 4 pieces and never 3, with per-cover counts 157, 20, 10 and 4 that are the same standing on every one of the 192 covers, and the piece side is regular too with counts 158, 18, 10, 2 and 3, where the value 3 does occur. Two counting facts are forced rather than measured, and the note derives them from gated inputs: since 15800 is 8 times 1975 exactly, a set of pieces no cutting uses twice has at most 8 members and any such set of exactly 8 covers all 15800 cuttings once each, so the exact-cover property is automatic at that size; and since each cutting uses 24 pieces while each of the 192 covers meets it exactly once, each piece lies in 8 covers, so the cover-by-piece table is 8-regular on the piece side by force. The negative result is that the five classes carry no multiplication table: the product of the least sharing class with itself takes 11 values on that class, 122 through 134, with the pairs (0,20) and (0,21) both sharing 0 pieces yet carrying 134 and 132, and the algebra is not commutative, the two orders differing at entry (0,6) by 16 against 15. A positive control on the 16 corners of the four-cube by differing coordinates has all 25 of its products constant on all 5 classes, and moving one symmetric pair of that control between two of its classes makes the same test report 3 values on one class, so the test is discriminating on both sides. The closed refinement with the fewest classes has 120 classes, by rounds 5, 76, 120, 120, of sizes 192 with multiplicity 48 and 384 with multiplicity 72, splitting the five relations into 1, 100, 10, 6 and 3 parts, so the smallest working table on this family is 24 times as fine as the sharing classes. A permutation making the cover-by-piece table symmetric would force the two sharing matrices to be permutation-similar and so to share an off-diagonal multiset; the cover side is 0 with 30144, 1 with 3840, 2 with 1920 and 4 with 768, the piece side 0 with 30336, 1 with 3456, 2 with 1920, 3 with 384 and 4 with 576, and these differ, so no relabelling symmetrizes it. All 48 proper cube symmetries send covers to covers with 5 orbits of sizes 24, 24, 48, 48 and 48; the exact rational ranks of their differences, by integer elimination, are 23, 47, 23, 35 and 29 against orbit sizes 24, 48, 24, 48 and 48, while all 192 covers together give exactly 104. So no symmetry orbit reaches across the space the cuttings cannot see, while the preceding cycle found that each sharing class alone does. Not settled: whether the 120-class refinement carries that span, what the combinatorial symmetry group of the sharing structure is, and why the covers differ inside exactly 104 dimensions.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_SHARING_TABLE_NOT_COHERENT_CYCLE757_NOTE_2026-08-09.md",
+ "recorded_output": "outputs/physical_cell_cutting_sharing_table_not_coherent_cycle757_2026_08_09_cold_2026-08-09.txt",
+ "results": {
+  "not_measured_here": {
+   "the_combinatorial_symmetry_group_of_the_sharing_structure": "open",
+   "whether_the_120_class_refinement_carries_the_span": "open",
+   "why_the_covers_differ_inside_exactly_104_dimensions": "open"
+  },
+  "the_controls_on_the_closure_test": {
+   "a_one_pair_move_makes_a_product_take_this_many_values_on_a_class": 3,
+   "classes_of_the_positive_control": 5,
+   "one_product_number_of_the_positive_control": 4,
+   "products_of_the_positive_control_all_constant_on_their_class": true,
+   "products_tested_in_the_positive_control": 25,
+   "the_perturbed_control_is_still_a_symmetric_partition": true
+  },
+  "the_object": {
+   "cuttings": 15800,
+   "cuttings_through_a_piece": 1975,
+   "eight_piece_sets_no_cutting_uses_twice": 192,
+   "each_meets_every_cutting_this_often": 1,
+   "pieces": 192,
+   "pieces_to_a_cutting": 24
+  },
+  "the_products_do_not_stay_inside_the_span": {
+   "distinct_values_of_the_least_class_squared_on_that_class": 11,
+   "entry_where_the_two_orders_differ": [0, 6],
+   "the_two_orders_carry": [16, 15],
+   "two_pairs_sharing_nothing_carry": [134, 132],
+   "values_of_the_least_class_squared_on_that_class": [122, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134]
+  },
+  "the_refinement_with_the_fewest_classes": {
+   "class_sizes_with_multiplicity": {"192": 48, "384": 72},
+   "classes_by_round": [5, 76, 120, 120],
+   "final_classes": 120,
+   "the_five_relations_split_into": [1, 100, 10, 6, 3]
+  },
+  "the_sharing_table_is_regular": {
+   "cover_side_off_diagonal_multiset": {"0": 30144, "1": 3840, "2": 1920, "4": 768},
+   "cover_side_per_cover_counts": {"0": 157, "1": 20, "2": 10, "4": 4},
+   "cover_side_shared_piece_counts_never_include": 3,
+   "no_relabelling_makes_the_table_symmetric": true,
+   "piece_side_off_diagonal_multiset": {"0": 30336, "1": 3456, "2": 1920, "3": 384, "4": 576},
+   "piece_side_per_piece_counts": {"0": 158, "1": 18, "2": 10, "3": 2, "4": 3},
+   "row_sums_and_column_sums_of_the_cover_by_piece_table": 8,
+   "valencies_of_the_five_classes": [1, 157, 20, 10, 4]
+  },
+  "what_the_symmetries_reach": {
+   "exact_rank_of_all_192_cover_differences": 104,
+   "exact_ranks_of_the_orbit_differences": [23, 47, 23, 35, 29],
+   "orbit_sizes_in_the_same_order": [24, 48, 24, 48, 48],
+   "orbits_on_the_covers": 5,
+   "proper_cube_symmetries_sending_covers_to_covers": 48
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_sharing_table_not_coherent_cycle757_2026_08_09.py",
+ "status": "PASS"
+}

@@ -1,0 +1,35 @@
+Every count below is measured here.
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS C0  the pieces per cutting and the cuttings through a piece are each the same number for every one of them
+the 192 eight piece sets no cutting uses twice meet each of the 15800 cuttings between 1 and 1 times
+PASS C1  each of the 192 sets is an exact cover: the table sends it to the all ones column over all 15800 cuttings
+the cover by piece table has row sums 8 to 8 and column sums 8 to 8
+PASS C2  the zero one table is 8 regular on both sides
+cover side sharing values 0 1 2 4 with per cover counts 157 20 10 4, the same for every one of the 192 covers
+PASS C3  two covers share one of 0 1 2 4 pieces and never 3, at a count that does not depend on which cover you stand on
+piece side sharing values 0 1 2 3 4 with per piece counts 158 18 10 2 3, the same for every one of the 192 pieces
+PASS C4  two pieces do share 3 covers, so the value 3 that is missing between covers is present between pieces
+cover side off diagonal multiset 0:30144 1:3840 2:1920 4:768
+piece side off diagonal multiset 0:30336 1:3456 2:1920 3:384 4:576
+PASS C5  a permutation T making M T symmetric would force S = T transpose N T, hence one multiset for both sides, and these two differ
+the classes AI A0 A1 A2 A4 have valencies 1 157 20 10 4
+PASS C6  the 5 zero one classes are symmetric, disjoint, add up to the all ones matrix, and the share 8 class is the identity
+A0 . A0 takes 11 values on the class A0: 122 124 125 126 127 128 129 130 131 132 134
+pair (0,20) and pair (0,21) both share 0 pieces yet carry 134 and 132
+PASS C7  the product of the least sharing class with itself is not constant on that class, so the products do not stay inside the span
+A0 . A1 and A1 . A0 differ at entry (0,6): 16 against 15
+PASS C8  multiplying these two classes in the two orders gives two different matrices, so the multiplication is not commutative
+control on the 16 corners of the four cube by differing coordinates: 25 products, one number D1 . D1 on D0 = 4
+PASS C9  the same test finds all 25 products of the control constant on all 5 of its classes, so it can return closed
+control with the symmetric pair (0,3) moved from the d 2 class to the d 1 class: product (1,1) takes 3 values on class 1
+PASS C10  the same test rejects a one pair move inside a control that is still a symmetric partition, so it is not a test that refuses everything
+closed refinement with the fewest classes, classes by round: 5 76 120 120
+final classes 120 with sizes 192:48 384:72; the five relations split as 1 100 10 6 3
+PASS C11  no closed refinement of the five classes has fewer classes, and it is strictly finer than they are on every class but the identity
+all 48 proper cube symmetries send covers to covers; orbits on the covers: 5 of sizes 24 24 48 48 48
+PASS C12  every one of the 48 symmetries permutes the 192 covers, and they leave 5 orbits of covers
+cover differences inside each orbit, orbit size then exact rank: 24:23 48:47 24:23 48:35 48:29; all 192 covers together: 104
+PASS C13  the 192 covers differ inside a space of exact dimension 104, and no single orbit of covers reaches across it
+elapsed under 30 s and peak memory under 500 MB, both measured in this run
+PASS C14  inside its time and memory allowance
+TOTAL: PASS=15 FAIL=0

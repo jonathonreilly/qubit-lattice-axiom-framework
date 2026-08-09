@@ -1,0 +1,99 @@
+{
+ "cycle": 748,
+ "failures": 0,
+ "gates": 36,
+ "headline": "The smallest carriers of the charge called four number 132 across the whole cutting system, and that census is complete: every one of the 192 pieces sits on exactly eleven of them, the same eleven the anchored sweep returned. The symmetries of the table close into a group of 384 that is transitive on the pieces and permutes the 192 eight-piece carriers of the all-marked reading among themselves, yet it does not carry every smallest carrier of four onto every other: it cuts the 132 into six families of sizes 12, 12, 12, 24, 24 and 48, while their overlap patterns with the eight-piece carriers give only five profiles of sizes 12, 12, 24, 36 and 48, so one profile covers two families. Across all 25344 pairs the overlap is 0 in 14592 cases, 1 in 4608 and 2 in 6144 and never more, so the cap of two is a property of the system and not of the anchor; the 6144 pairs at the cap give 6144 distinct twenty-piece carriers of the flip partner of four, one per pair, each of the 192 pieces on 640 of them, in twenty families of 192 and six of 384. Were an eighteen-piece carrier of the flip partner to exist it would meet any eight-piece carrier of the all-marked reading in at most 4 pieces.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_CENSUS_FAMILIES_CYCLE748_NOTE_2026-08-08.md",
+ "recorded_output": "outputs/physical_cell_cutting_census_families_cycle748_2026_08_08_cold_2026-08-08.txt",
+ "results": {
+  "all_marked_reading_carriers": {
+   "carriers_through_each_piece": 8,
+   "eight_piece_sets_no_cutting_uses_twice": 192,
+   "least_size": 8,
+   "non_sharing_partners_per_piece": 33,
+   "shared_pieces_between_two_carriers": {
+    "0": 15072,
+    "1": 1920,
+    "2": 960,
+    "4": 384
+   }
+  },
+  "census_of_smallest_carriers_of_four": {
+   "anchored_count": 11,
+   "carriers_through_each_piece": 11,
+   "complete": true,
+   "count": 132,
+   "direct_recheck_failures": 0,
+   "family_sizes": [
+    12,
+    12,
+    12,
+    24,
+    24,
+    48
+   ],
+   "size": 16
+  },
+  "overlaps_with_the_eight_piece_carriers": {
+   "by_value": {
+    "0": 14592,
+    "1": 4608,
+    "2": 6144
+   },
+   "cap": 2,
+   "meetings_per_carrier_with_multiplicity": 128,
+   "pairs": 25344,
+   "profile_sizes": [
+    12,
+    12,
+    24,
+    36,
+    48
+   ],
+   "profiles_fewer_than_families": true
+  },
+  "rebuilt_system": {
+   "cuttings": 15800,
+   "cuttings_per_piece": 1975,
+   "least_sizes_forced_by_marks": {
+    "all_marked_reading": 8,
+    "flip_partner_of_four": 6,
+    "four": 3
+   },
+   "marks": {
+    "all_marked_reading": 15800,
+    "flip_partner_of_four": 10136,
+    "four": 5664
+   },
+   "pieces": 192,
+   "pieces_per_cutting": 24
+  },
+  "shape_of_any_eighteen_piece_carrier": {
+   "conditional": true,
+   "largest_sum": 26,
+   "most_pieces_shared_with_an_eight_piece_carrier": 4,
+   "reason": "sharing five or more would give a carrier of four under sixteen, or one at sixteen breaking the cap of two"
+  },
+  "symmetry_group": {
+   "generated_by_the_forty_eight_and_two_more": true,
+   "order": 384,
+   "permutes_the_eight_piece_carriers_among_themselves": true,
+   "stabilizer_of_a_basic_reading": 48,
+   "transitive_on_pieces": true
+  },
+  "twenty_piece_carriers_of_the_flip_partner": {
+   "carriers_through_each_piece": 640,
+   "count": 6144,
+   "direct_recheck_failures": 0,
+   "families": {
+    "of_192": 20,
+    "of_384": 6
+   },
+   "one_per_overlapping_pair": true,
+   "size": 20
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_census_families_cycle748_2026_08_08.py",
+ "status": "PASS"
+}

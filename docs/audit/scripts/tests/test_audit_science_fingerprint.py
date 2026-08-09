@@ -68,6 +68,13 @@ class ScienceFingerprintFixture(unittest.TestCase):
                 relative,
                 "{}\n" if relative.endswith(".json") else "# policy-v1\n",
             )
+        # The registry-bearing builder must carry the claim-scoped helper
+        # registry: the governed hash is its normalized rendering with that
+        # assignment spliced out, and the carve-out fails closed without it.
+        self._write(
+            science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE,
+            self._registry_builder_body(),
+        )
         self._write_json("docs/audit/data/source_path_aliases.json", {})
         self._write_json(
             "docs/audit/data/axiom_premise_nodes.json",
@@ -94,7 +101,9 @@ class ScienceFingerprintFixture(unittest.TestCase):
                 "epoch": "fixture_dependency_policy_v1",
                 "sources": {
                     relative: (
-                        hashlib.sha256((self.root / relative).read_bytes()).hexdigest()
+                        science.dependency_policy_source_sha256(
+                            self.root, relative
+                        )
                         if (self.root / relative).is_file()
                         else None
                     )
@@ -137,6 +146,23 @@ class ScienceFingerprintFixture(unittest.TestCase):
         path = self.root / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(body, encoding="utf-8")
+
+    @staticmethod
+    def _registry_builder_body(
+        *,
+        prefix: str = "# policy-v1\n",
+        entries: str = '    "registered_claim": [\n'
+                       '        "scripts/registered_helper.py",\n'
+                       "    ],\n",
+        suffix: str = "GOVERNED_TAIL = 1\n",
+    ) -> str:
+        return (
+            prefix
+            + "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {\n"
+            + entries
+            + "}\n"
+            + suffix
+        )
 
     def _write_json(self, relative: str, value: object) -> None:
         self._write(relative, json.dumps(value, indent=2, sort_keys=True) + "\n")
@@ -259,6 +285,366 @@ class ScienceFingerprintFixture(unittest.TestCase):
             science.science_fingerprint_change(before, after),
             "science_changed:dependency_policy_epoch",
         )
+
+    def test_helper_registry_edit_does_not_change_dependency_policy_epoch(
+        self,
+    ) -> None:
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        epoch_before = science.dependency_policy_epoch(self.root)
+        science_before = science.build_science_fingerprint(
+            self.rows["target"], self.rows, self.root
+        )
+
+        # A claim-scoped registration edit (new key, comments, growth of an
+        # existing claim's list) stays outside the governed byte surface: the
+        # epoch value is unchanged with NO manifest refresh, and existing
+        # science fingerprints do not drift.
+        self._write(
+            registry_source,
+            self._registry_builder_body(
+                entries='    "registered_claim": [\n'
+                        '        "scripts/registered_helper.py",\n'
+                        '        "scripts/second_registered_helper.py",\n'
+                        "    ],\n"
+                        "    # additive claim-scoped registration\n"
+                        '    "newly_registered_claim": [\n'
+                        '        "scripts/new_helper.py",\n'
+                        "    ],\n",
+            ),
+        )
+        self.assertEqual(science.dependency_policy_epoch(self.root), epoch_before)
+        science_after = science.build_science_fingerprint(
+            self.rows["target"], self.rows, self.root
+        )
+        self.assertIsNone(
+            science.science_fingerprint_change(science_before, science_after)
+        )
+
+        # Any OTHER builder byte remains governed byte-exact: an unreviewed
+        # edit outside the registry span fails closed against the manifest...
+        self._write(
+            registry_source,
+            self._registry_builder_body(suffix="GOVERNED_TAIL = 2\n"),
+        )
+        with self.assertRaisesRegex(
+            science.ScienceFingerprintError,
+            "dependency-policy epoch manifest",
+        ):
+            science.dependency_policy_epoch(self.root)
+
+        # ...and after a reviewed manifest refresh it moves the epoch value.
+        science.refresh_dependency_policy_manifest(
+            self.root, epoch="fixture_dependency_policy_v2"
+        )
+        self.assertNotEqual(
+            science.dependency_policy_epoch(self.root), epoch_before
+        )
+
+    def test_helper_registry_missing_or_duplicated_fails_closed(self) -> None:
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        self._write(registry_source, "# builder without a registry\n")
+        with self.assertRaisesRegex(
+            science.ScienceFingerprintError,
+            "bound exactly once",
+        ):
+            science.dependency_policy_epoch(self.root)
+
+        self._write(
+            registry_source,
+            self._registry_builder_body(
+                suffix="EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {}\n",
+            ),
+        )
+        with self.assertRaisesRegex(
+            science.ScienceFingerprintError,
+            "bound exactly once",
+        ):
+            science.dependency_policy_epoch(self.root)
+
+        self._write(
+            registry_source,
+            "# policy-v1\n"
+            "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = dict()\n"
+            "GOVERNED_TAIL = 1\n",
+        )
+        with self.assertRaisesRegex(
+            science.ScienceFingerprintError,
+            "literal-dict assignment",
+        ):
+            science.dependency_policy_epoch(self.root)
+
+    def test_helper_registry_non_literal_dict_fails_closed(self) -> None:
+        """Only a strictly literal ``{str: [str, ...]}`` may leave the hash.
+
+        Each case is a registry expression whose source bytes stay inside the
+        excluded span while carrying executable or name-dependent semantics.
+        Accepting any of them would let real policy hide outside the governed
+        epoch, so all of them must fail closed.
+        """
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        cases = {
+            "computed_key": (
+                "def side_effect():\n"
+                "    return 'registered_claim'\n"
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = "
+                "{side_effect(): ['scripts/h.py']}\n"
+            ),
+            "dict_unpacking": (
+                "other_mapping = {'a': ['scripts/a.py']}\n"
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {**other_mapping}\n"
+            ),
+            "computed_value": (
+                "def make_paths():\n"
+                "    return ['scripts/h.py']\n"
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {'c': make_paths()}\n"
+            ),
+            "name_value": (
+                "OTHER_LIST = ['scripts/h.py']\n"
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {'c': OTHER_LIST}\n"
+            ),
+            "dict_comprehension": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = "
+                "{key: [key] for key in ('a',)}\n"
+            ),
+            "non_string_element": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = "
+                "{'c': ['scripts/h.py', 1]}\n"
+            ),
+            "starred_element": (
+                "OTHER_LIST = ['scripts/h.py']\n"
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {'c': [*OTHER_LIST]}\n"
+            ),
+            "annotated_assignment": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS: dict[str, list[str]] = "
+                "{'c': ['scripts/h.py']}\n"
+            ),
+            "tuple_target": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS, OTHER = "
+                "{'c': ['scripts/h.py']}, 1\n"
+            ),
+            "dict_call": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = "
+                "dict(c=['scripts/h.py'])\n"
+            ),
+        }
+        for label, body in cases.items():
+            with self.subTest(case=label):
+                self._write(
+                    registry_source,
+                    "# policy-v1\n" + body + "GOVERNED_TAIL = 1\n",
+                )
+                with self.assertRaisesRegex(
+                    science.ScienceFingerprintError,
+                    "literal-dict assignment",
+                ):
+                    science.dependency_policy_epoch(self.root)
+
+    def test_helper_registry_second_binding_of_any_form_fails_closed(self) -> None:
+        """A literal assignment plus ANY other binding of the name is refused.
+
+        The carve-out's promise is that the excluded span is the module's one
+        definition of the registry. A later rebinding, alias, shadow, or
+        deletion would change what the surviving governed bytes mean, so every
+        binding construct Python offers has to trip the exactly-one check.
+        """
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        literal = self._registry_builder_body(suffix="")
+        cases = {
+            "second_assignment": "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {}\n",
+            "annotated_assignment": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS: dict = {}\n"
+            ),
+            "augmented_assignment": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS |= {}\n"
+            ),
+            "tuple_unpacking": (
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS, _other = {}, 1\n"
+            ),
+            "walrus": (
+                "if (EXPLICIT_PACKET_HELPER_RUNNER_PATHS := {}):\n"
+                "    pass\n"
+            ),
+            "import_alias": (
+                "import json as EXPLICIT_PACKET_HELPER_RUNNER_PATHS\n"
+            ),
+            "import_from_alias": (
+                "from json import loads as "
+                "EXPLICIT_PACKET_HELPER_RUNNER_PATHS\n"
+            ),
+            "import_from_direct": (
+                "from json import EXPLICIT_PACKET_HELPER_RUNNER_PATHS\n"
+            ),
+            "wildcard_import": "from json import *\n",
+            "function_def": (
+                "def EXPLICIT_PACKET_HELPER_RUNNER_PATHS():\n"
+                "    return {}\n"
+            ),
+            "async_function_def": (
+                "async def EXPLICIT_PACKET_HELPER_RUNNER_PATHS():\n"
+                "    return {}\n"
+            ),
+            "class_def": (
+                "class EXPLICIT_PACKET_HELPER_RUNNER_PATHS:\n"
+                "    pass\n"
+            ),
+            "parameter": (
+                "def _helper(EXPLICIT_PACKET_HELPER_RUNNER_PATHS=None):\n"
+                "    return None\n"
+            ),
+            "for_target": (
+                "for EXPLICIT_PACKET_HELPER_RUNNER_PATHS in ():\n"
+                "    pass\n"
+            ),
+            "with_target": (
+                "with open('x') as EXPLICIT_PACKET_HELPER_RUNNER_PATHS:\n"
+                "    pass\n"
+            ),
+            "except_target": (
+                "try:\n"
+                "    pass\n"
+                "except Exception as EXPLICIT_PACKET_HELPER_RUNNER_PATHS:\n"
+                "    pass\n"
+            ),
+            "match_capture": (
+                "match 1:\n"
+                "    case EXPLICIT_PACKET_HELPER_RUNNER_PATHS:\n"
+                "        pass\n"
+            ),
+            "global_declaration": (
+                "def _mutate():\n"
+                "    global EXPLICIT_PACKET_HELPER_RUNNER_PATHS\n"
+            ),
+            "nonlocal_declaration": (
+                "def _outer():\n"
+                "    EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {}\n"
+                "    def _inner():\n"
+                "        nonlocal EXPLICIT_PACKET_HELPER_RUNNER_PATHS\n"
+                "        EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {}\n"
+            ),
+            "deletion": "del EXPLICIT_PACKET_HELPER_RUNNER_PATHS\n",
+            "comprehension_target": (
+                "_seen = [1 for EXPLICIT_PACKET_HELPER_RUNNER_PATHS in ()]\n"
+            ),
+        }
+        for label, body in cases.items():
+            with self.subTest(case=label):
+                self._write(registry_source, literal + body)
+                with self.assertRaisesRegex(
+                    science.ScienceFingerprintError,
+                    "bound exactly once",
+                ):
+                    science.dependency_policy_epoch(self.root)
+
+    @unittest.skipIf(
+        sys.version_info < (3, 12),
+        "PEP 695 type-parameter syntax requires Python 3.12+",
+    )
+    def test_pep695_type_parameter_binding_fails_closed(self) -> None:
+        """PEP 695 type parameters bind the name and must trip the gate.
+
+        On 3.12+ a type parameter list binds each parameter through
+        ``ast.TypeVar`` / ``ast.ParamSpec`` / ``ast.TypeVarTuple`` nodes whose
+        ``name`` is a plain string — no ``ast.Name`` in Store context is
+        produced. All five spellings, plus a ``type NAME = ...`` alias whose
+        own target is the registry, would otherwise shadow the registry with
+        bytes that never enter the governed hash.
+        """
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        literal = self._registry_builder_body(suffix="")
+        cases = {
+            "function_type_parameter": (
+                "def probe[EXPLICIT_PACKET_HELPER_RUNNER_PATHS]():\n"
+                "    return None\n"
+            ),
+            "class_type_parameter": (
+                "class Probe[EXPLICIT_PACKET_HELPER_RUNNER_PATHS]:\n"
+                "    pass\n"
+            ),
+            "type_alias_type_parameter": (
+                "type Probe[EXPLICIT_PACKET_HELPER_RUNNER_PATHS] = int\n"
+            ),
+            "param_spec_type_parameter": (
+                "def probe[**EXPLICIT_PACKET_HELPER_RUNNER_PATHS]():\n"
+                "    return None\n"
+            ),
+            "type_var_tuple_type_parameter": (
+                "def probe[*EXPLICIT_PACKET_HELPER_RUNNER_PATHS]():\n"
+                "    return None\n"
+            ),
+            "type_alias_statement_target": (
+                "type EXPLICIT_PACKET_HELPER_RUNNER_PATHS = int\n"
+            ),
+            "async_function_type_parameter": (
+                "async def probe[EXPLICIT_PACKET_HELPER_RUNNER_PATHS]():\n"
+                "    return None\n"
+            ),
+        }
+        for label, body in cases.items():
+            with self.subTest(case=label):
+                self._write(registry_source, literal + body)
+                with self.assertRaisesRegex(
+                    science.ScienceFingerprintError,
+                    "bound exactly once",
+                ):
+                    science.dependency_policy_epoch(self.root)
+
+    @unittest.skipIf(
+        sys.version_info < (3, 12),
+        "PEP 695 type-parameter syntax requires Python 3.12+",
+    )
+    def test_pep695_type_parameter_of_another_name_is_inert(self) -> None:
+        """Only the registry name trips the gate; unrelated generics do not."""
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        self._write(
+            registry_source,
+            self._registry_builder_body(
+                suffix=(
+                    "def probe[T](value: T) -> T:\n"
+                    "    return value\n"
+                    "type OtherAlias[*Ts] = tuple[*Ts]\n"
+                ),
+            ),
+        )
+        science.refresh_dependency_policy_manifest(
+            self.root, epoch="fixture_dependency_policy_generic"
+        )
+        self.assertTrue(science.dependency_policy_epoch(self.root))
+
+    def test_normalized_rendering_matches_an_independent_splice(self) -> None:
+        """The governed hash is the source with exactly the registry removed."""
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        self._write(registry_source, self._registry_builder_body())
+        raw = (self.root / registry_source).read_bytes()
+        assignment = (
+            b"EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {\n"
+            b'    "registered_claim": [\n'
+            b'        "scripts/registered_helper.py",\n'
+            b"    ],\n"
+            b"}"
+        )
+        self.assertIn(assignment, raw)
+        self.assertEqual(
+            science.dependency_policy_source_sha256(self.root, registry_source),
+            hashlib.sha256(raw.replace(assignment, b"", 1)).hexdigest(),
+        )
+
+    def test_refresh_tool_matches_gate_by_construction(self) -> None:
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        self._write(
+            registry_source,
+            self._registry_builder_body(prefix="# policy-v2\n"),
+        )
+        with self.assertRaises(science.ScienceFingerprintError):
+            science.dependency_policy_epoch(self.root)
+        manifest = science.refresh_dependency_policy_manifest(
+            self.root, epoch="fixture_dependency_policy_v2"
+        )
+        self.assertEqual(manifest["epoch"], "fixture_dependency_policy_v2")
+        self.assertEqual(
+            set(manifest["sources"]), set(science.DEPENDENCY_POLICY_SOURCES)
+        )
+        # The gate accepts the refreshed manifest immediately.
+        self.assertTrue(science.dependency_policy_epoch(self.root))
 
     def test_premise_removal_is_visible_to_legacy_snapshots(self) -> None:
         snapshot = {

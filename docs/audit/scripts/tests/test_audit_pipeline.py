@@ -786,10 +786,22 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
             policy_surface = tmp_root / relative
             policy_surface.parent.mkdir(parents=True, exist_ok=True)
             if not policy_surface.exists():
-                policy_surface.write_text(
-                    "{}\n" if relative.endswith(".json") else "# fixture\n",
-                    encoding="utf-8",
-                )
+                if relative == science_module.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE:
+                    # The registry-bearing builder is hashed as a normalized
+                    # rendering with the claim-scoped helper registry spliced
+                    # out; the carve-out fails closed without the assignment.
+                    policy_surface.write_text(
+                        "# fixture\n"
+                        "EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {\n"
+                        '    "fixture_claim": ["scripts/fixture_helper.py"],\n'
+                        "}\n",
+                        encoding="utf-8",
+                    )
+                else:
+                    policy_surface.write_text(
+                        "{}\n" if relative.endswith(".json") else "# fixture\n",
+                        encoding="utf-8",
+                    )
         source_aliases = tmp_root / "docs/audit/data/source_path_aliases.json"
         if not source_aliases.exists():
             source_aliases.write_text("{}\n", encoding="utf-8")
@@ -800,7 +812,9 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
                 "epoch": "fixture_dependency_policy_v1",
                 "sources": {
                     relative: (
-                        hashlib.sha256((tmp_root / relative).read_bytes()).hexdigest()
+                        science_module.dependency_policy_source_sha256(
+                            tmp_root, relative
+                        )
                         if (tmp_root / relative).is_file()
                         else None
                     )

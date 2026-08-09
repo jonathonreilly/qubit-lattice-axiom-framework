@@ -1,4 +1,4 @@
-"""Measure the fraction of each piece that the cuttings of the unit four-cube see.
+"""Measure coordinate leverage in the finite unit-four-cube cutting row space.
 
 Every count below is measured here. The runner rebuilds the cell complex, the least
 volume pieces, the cuttings at the adjacency cost floor, the cutting by piece table
@@ -6,17 +6,22 @@ and the eight piece exact covers. It then builds the maps got by permuting the f
 coordinates of the four-cube and flipping any of them, measures the blocks those maps
 cut the pieces into, and certifies an exact whole number multiple of the orthogonal
 projector onto the span of the cuttings. The diagonal of that projector is the
-fraction of each piece the cuttings see, and it is the same at every piece. The
-smallest whole multiplier that clears the projector is measured on both tables and
-set beside the largest invariant factor of the same table's Gram. Four controls fixed
-in advance show the gates fail when the hypotheses they rest on are taken away.
+coordinate leverage score called algebraic visibility here, and it is the same at
+every piece. The least positive integer that clears the full projector is certified
+on both tables and set beside the largest invariant factor of the same table's Gram.
+Six controls fixed in advance show the gates fail when the hypotheses or routines
+they exercise are changed.
 """
 import itertools
 import math
 import resource
+import sys
 import time
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_MEMORY_MB = 500
 
 T0 = time.monotonic()
 PF = [0, 0]
@@ -93,6 +98,10 @@ LO = int(C4.min())
 MINP = [i for i in range(NPIECE) if int(C4[i]) == LO]
 MM = np.stack([(V[p[1:]] - V[p[0]]).T for p in UNI])
 IV = np.rint(np.linalg.inv(MM.astype(float))).astype(np.int64)
+IV_OK = bool(np.array_equal(
+    np.einsum("nij,njk->nik", MM, IV),
+    np.broadcast_to(np.eye(4, dtype=np.int64), MM.shape),
+))
 
 ROT = []
 for perm in itertools.permutations(range(3)):
@@ -100,7 +109,12 @@ for perm in itertools.permutations(range(3)):
         R = np.zeros((3, 3), dtype=np.int64)
         for i, j in enumerate(perm):
             R[i, j] = sg[i]
-        if int(round(np.linalg.det(R.astype(float)))) == 1:
+        det_r = int(
+            R[0, 0] * (R[1, 1] * R[2, 2] - R[1, 2] * R[2, 1])
+            - R[0, 1] * (R[1, 0] * R[2, 2] - R[1, 2] * R[2, 0])
+            + R[0, 2] * (R[1, 0] * R[2, 1] - R[1, 1] * R[2, 0])
+        )
+        if det_r == 1:
             ROT.append(R)
 CEN = np.array([1, 1, 1], dtype=np.int64)
 G = []
@@ -611,13 +625,21 @@ def clears(A, D):
 
 
 def least_mult(A, cands):
-    """the smallest candidate multiplier that clears the projector, and the failures"""
+    """the first supplied multiplier that clears the projector, and prior failures"""
     bad = []
     for D in sorted(cands):
         if clears(A, D):
             return D, bad
         bad.append(D)
     return None, bad
+
+
+def projector_denominator(N, D):
+    """least positive integer clearing P when the exact integer matrix N = D P is known"""
+    entry_gcd = 0
+    for x in N.ravel():
+        entry_gcd = math.gcd(entry_gcd, abs(int(x)))
+    return int(D) // math.gcd(int(D), entry_gcd), entry_gcd
 
 
 def constant_on(N, cls, ncl):
@@ -635,9 +657,10 @@ emit("Every count below is measured here.")
 emit("the object: {0} cuttings and {1} pieces, {2} pieces to a cutting, "
      "{3} cuttings through a piece".format(NS, NPO, int(RW.min()), int(CS.min())))
 gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
-     and int(CS.min()) == int(CS.max()) == 1975 and NC == 192, "C0",
+     and int(CS.min()) == int(CS.max()) == 1975 and NC == 192 and IV_OK, "C0",
      "the pieces per cutting and the cuttings through a piece are each the same "
-     "number for every one of them, and there are {0} exact covers".format(NC))
+     "number for every one of them; exact simplex inverses; {0} covers".format(NC))
+emit("incidence frequency: each piece occurs in 1975 of 15800 cuttings, which is 1 over 8")
 
 DIST = len(set(FULL))
 ISP = all(sorted(cp) == list(range(NPO)) for cp in FULL)
@@ -663,14 +686,13 @@ gate(KEPT == 384 and not CTL2, "C2",
                                                            CTL2))
 
 B24, B48, B96, BAL = blocks(T24), blocks(T48), blocks(T96), blocks(FULL)
-emit("blocks on the {0} pieces: turns {1} give {2}, with the tick flip {3} give {4}, "
-     "tick fixed {5} give {6}, all {7} give {8}".format(
+emit("blocks on the {0} pieces: first-three turns {1} give {2}, plus fourth flip {3} "
+     "give {4}, fourth fixed {5} give {6}, all {7} give {8}".format(
          NPO, len(T24), bstr(B24), len(T48), bstr(B48), len(T96), bstr(B96),
          len(FULL), bstr(BAL)))
 gate(len(T24) == 24 and len(T48) == 48 and len(T96) == 96 and B24 == [24] * 8
      and B48 == [48] * 4 and B96 == [96] * 2 and BAL == [NPO], "C3",
-     "one block only once a relabelling may carry the tick coordinate onto a "
-     "spatial one")
+     "in this subgroup ladder, allowing the fourth coordinate to move gives one block")
 
 RKI = rank_exact((INCL.T @ INCL).tolist())
 RKM = rank_exact((W.T @ W).tolist())
@@ -703,7 +725,7 @@ for a in range(NPO):
 
 
 def side(A, D, cands, want):
-    """certify D times the projector and collect its diagonal, classes and glue"""
+    """certify D times the projector and collect its diagonal, classes and denominator"""
     N, k, B = liftN(A, D)
     NO = N.astype(object)
     BO = B.T.astype(object)
@@ -713,10 +735,12 @@ def side(A, D, cands, want):
     tr = int(np.trace(N))
     dg = mset(np.diag(N))
     gv = math.gcd(k, NPO)
-    dmin, bad = least_mult(A, cands)
+    dmin, ngcd = projector_denominator(N, D)
+    bad = [d for d in sorted(cands) if d < dmin and not clears(A, d)]
     return dict(N=N, B=B, k=k, tr=tr, dg=dg, lo=int(N.min()), hi=int(N.max()),
                 nv=len(set(N.ravel().tolist())), num=k // gv, den=NPO // gv,
                 sym=sym, idm=idm, fix=fix, dmin=dmin, bad=bad,
+                ngcd=ngcd,
                 ok=(sym and idm and fix and tr == D * k and k == want),
                 dgok=(len(dg) == 1 and int(np.diag(N).min()) * NPO == tr),
                 cst=constant_on(N, CLS, NCLS))
@@ -727,7 +751,7 @@ def report(s, D, nm):
     emit("{0} side rank {1}: N = {2} P symmetric {3}, N N = {2} N {4}, N fixes the "
          "rows {5}, trace {6} = {2} x {1}".format(nm, s["k"], D, s["sym"], s["idm"],
                                                   s["fix"], s["tr"]))
-    emit("{0} side diagonal {1}, entries {2} to {3} taking {4} values, seen fraction "
+    emit("{0} side diagonal {1}, entries {2} to {3} taking {4} values, leverage "
          "{5} over {6} which is {7} over {8}".format(nm, msets(s["dg"]), s["lo"],
                                                      s["hi"], s["nv"], s["k"], NPO,
                                                      s["num"], s["den"]))
@@ -740,8 +764,8 @@ gate(SA["ok"], "C5",
      "the cutting side certificate holds over the whole numbers at rank {0}, trace "
      "{1}".format(SA["k"], SA["tr"]))
 gate(SA["dgok"] and SA["num"] == 11 and SA["den"] == 24, "C6",
-     "every one of the {0} diagonal entries is the same, so each piece is seen in "
-     "the fraction {1} over {2}".format(NPO, SA["num"], SA["den"]))
+     "every one of the {0} diagonal entries is the same, so coordinate leverage is "
+     "{1} over {2}".format(NPO, SA["num"], SA["den"]))
 
 COM = all(bool((NN[np.ix_(PA[i], PA[i])] == NN).all()) for i in range(len(FULL)))
 gate(COM, "C7",
@@ -789,9 +813,9 @@ gate(KE == 1 and DE == {0: NPO - 1, 1: 1}, "C9",
      "not constant although the {2} give one block".format(KE, msets(DE), len(FULL)))
 
 DMA, BDA = SA["dmin"], SA["bad"]
-gate(DMA == 960 and BDA == [192, 320, 480], "C10",
-     "smallest whole multiplier on the cutting side {0} = {1}; {2} each leave a "
-     "fraction".format(DMA, fshow(pfac(DMA)), joins(BDA)))
+gate(DMA == 960 and SA["ngcd"] == 1 and BDA == [192, 320, 480], "C10",
+     "exact projector denominator {0} = {1}, numerator entry gcd {2}; {3} each leave "
+     "noninteger entries".format(DMA, fshow(pfac(DMA)), SA["ngcd"], joins(BDA)))
 
 gate(NCLS == 104 and SA["cst"] and SA["nv"] == 23, "C11",
      "the {0} carry the ordered pairs of pieces into {1} classes; N is constant on "
@@ -802,18 +826,22 @@ NM = SB2["N"]
 DMB, BDB = SB2["dmin"], SB2["bad"]
 report(SB2, 320, "cover")
 gate(SB2["ok"] and SB2["dgok"] and SB2["num"] == 35 and SB2["den"] == 64
-     and DMB == 320 and BDB == [64, 160] and SB2["cst"] and SB2["nv"] == 23
+     and DMB == 320 and SB2["ngcd"] == 1 and BDB == [64, 160]
+     and SB2["cst"] and SB2["nv"] == 23
      and NCLS == 104, "C12",
-     "cover side certificate holds, fraction {0} over {1}, smallest multiplier {2} "
-     "= {3}, {4} leave a fraction, constant on {5} classes".format(
-         SB2["num"], SB2["den"], DMB, fshow(pfac(DMB)), joins(BDB), NCLS))
+     "cover certificate: leverage {0}/{1}, projector denominator {2}, numerator gcd "
+     "{3}; {4} leave nonintegers, constant on {5} classes".format(
+         SB2["num"], SB2["den"], DMB, SB2["ngcd"], joins(BDB), NCLS))
 
 FI = invfac((SA["B"].astype(object) @ SA["B"].T.astype(object)).tolist())
 FM = invfac((SB2["B"].astype(object) @ SB2["B"].T.astype(object)).tolist())
-gate(max(FI) == DMA and max(FM) == DMB and len(FI) == RKI and len(FM) == RKM,
+GBI, GBDI = divisor_witness(SA["B"], RKI)
+GBM, GBDM = divisor_witness(SB2["B"], RKM)
+gate(max(FI) == DMA and max(FM) == DMB and len(FI) == RKI and len(FM) == RKM
+     and GBI == 1 and GBM == 1 and GBDI == [1, 1] and GBDM == [1, 1],
      "C13",
-     "Gram largest invariant factor: cutting {0} with {1} nontrivial, cover {2} with "
-     "{3}; each is that side's smallest whole multiplier".format(
+     "saturated Gram bases; largest factors cutting {0} ({1} nontrivial), cover {2} "
+     "({3}); each equals the projector denominator".format(
          max(FI), sum(c for _, c in parts(FI)), max(FM),
          sum(c for _, c in parts(FM))))
 
@@ -852,10 +880,12 @@ SEES = bool((NO1 @ ONES == DMA * ONES).all())
 DIMS = (NPO - RKI + 1) == RKM
 
 ELAP = time.monotonic() - T0
-RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
+RSS_RAW = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+RSS = RSS_RAW / (1048576.0 if sys.platform == "darwin" else 1024.0)
 EBD = 300 * (int(ELAP // 300) + 1)
 RBD = 500 * (int(RSS // 500) + 1)
-gate(ELAP < 900.0 and RSS < 2500.0 and EBD <= 900 and RBD <= 2500, "C16",
+gate(ELAP < AUDIT_TIMEOUT_SEC and RSS < AUDIT_MEMORY_MB
+     and EBD <= AUDIT_TIMEOUT_SEC and RBD <= AUDIT_MEMORY_MB, "C16",
      "elapsed under {0} s and peak memory under {1} MB, both measured in this "
      "run".format(EBD, RBD))
 

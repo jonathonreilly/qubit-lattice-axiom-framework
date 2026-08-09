@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3972 |
+| Ledger rows | 4784 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 3600 |
+| Unaudited rows | 4333 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3600 |
-| Ready rows | 838 |
+| Total pending rows | 4333 |
+| Ready rows | 1557 |
 | Cycle-break targets | 60 |
-| Critical pending | 735 |
-| High pending | 431 |
-| Medium pending | 994 |
-| Leaf pending | 1440 |
+| Critical pending | 736 |
+| High pending | 432 |
+| Medium pending | 1006 |
+| Leaf pending | 2159 |
 
 Next ready rows by queue order:
 
@@ -100,43 +100,9 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
 | Lane rows already in actual ready top-10 | 2 |
-| Lane rows added since prior pass | 32 |
+| Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 0 |
-| Non-lane rows deferred by simulated interleave | 187 |
-
-Named lane membership churn since the prior pass:
-- added: `ckm_five_sixths_bridge_support_note`
-- added: `cl3_taste_generation_theorem`
-- added: `cpt_exact_note`
-- added: `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`
-- added: `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`
-- added: `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`
-- added: `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
-- added: `g_bare_rigidity_theorem_note`
-- added: `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`
-- added: `gauge_vacuum_plaquette_framework_point_underdetermination_note`
-- added: `gauge_vacuum_plaquette_reduction_existence_theorem_note`
-- added: `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
-- added: `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`
-- added: `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`
-- added: `gravitomagnetic_note`
-- added: `hierarchy_matsubara_decomposition_note`
-- added: `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`
-- added: `higgs_mechanism_note`
-- added: `koide_aps_block_by_block_forcing_note_2026-04-21`
-- added: `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
-- added: `matter_inertial_closure_note`
-- added: `plaquette_self_consistency_note`
-- added: `q_integer_spectrum_theorem_note_2026-05-02`
-- added: `quark_cp_carrier_completion_note_2026-04-18`
-- added: `shapiro_static_discriminator_note`
-- added: `single_axiom_hilbert_note`
-- added: `teleportation_native_axioms_theory_note`
-- added: `universal_gr_casimir_block_localization_note`
-- added: `universal_gr_lorentzian_global_atlas_closure_note`
-- added: `work_history.ckm.cabibbo_bound_note`
-- added: `z2_hw1_mass_matrix_parametrization_note`
-- added: `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`
+| Non-lane rows deferred by simulated interleave | 186 |
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`
@@ -213,23 +179,23 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `pmns_oriented_cycle_channel_value_law_note`: +41
 - `pmns_uniform_scalar_deformation_boundary_note`: +41
 - `pmns_hw1_source_transfer_boundary_note`: +40
-- `gravity_full_self_consistency_note`: +39
+- `gravity_full_self_consistency_note`: +40
 - `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`: +35
-- `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`: +35
+- `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`: +34
 - `koide_q23_oh_covariance_nogo_note_2026-04-22`: +33
-- `teleportation_native_axioms_theory_note`: +33
-- `koide_transport_gap_constant_no_go_note_2026-04-20`: +33
 - `higgs_mechanism_note`: +32
 - `lorentz_violation_derived_note`: +32
 - `koide_native_zero_section_closure_route_note_2026-04-24`: +32
-- `charged_lepton_two_higgs_canonical_reduction_note`: +32
+- `teleportation_native_axioms_theory_note`: +32
+- `koide_transport_gap_constant_no_go_note_2026-04-20`: +32
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +31
 - `universal_gr_casimir_block_localization_note`: +31
 - `q_integer_spectrum_theorem_note_2026-05-02`: +31
-- `koide_q_bridge_single_primitive_note_2026-04-22`: +31
-- `no_per_site_bosonic_ccr_theorem_note_2026-05-02`: +27
-- `pmns_commutant_eigenoperator_selector_note`: +25
-- `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19`: +25
+- `charged_lepton_two_higgs_canonical_reduction_note`: +31
+- `koide_q_bridge_single_primitive_note_2026-04-22`: +30
+- `no_per_site_bosonic_ccr_theorem_note_2026-05-02`: +26
+- `pmns_commutant_eigenoperator_selector_note`: +24
+- `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19`: +24
 - `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +23
 - `gauge_vacuum_plaquette_reduction_existence_theorem_note`: +22
 - `cpt_exact_note`: +22
@@ -238,25 +204,25 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`: +20
 - `koide_pointed_origin_exhaustion_theorem_note_2026-04-24`: +20
 - `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`: +19
+- `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +19
 - `charged_lepton_koide_note_2026-04-18`: +19
-- `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +18
+- `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +18
 - `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`: +18
 - `planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30`: +17
-- `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +17
+- `sigma_hier_uniqueness_theorem_note_2026-04-19`: +17
+- `area_law_multipocket_selector_no_go_note_2026-04-25`: +17
 - `matter_inertial_closure_note`: +17
 - `koide_native_dimensionless_note_2026-04-24`: +17
-- `shapiro_static_discriminator_note`: +16
+- `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`: +16
 - `bh_entropy_rt_ratio_widom_no_go_note`: +16
-- `sigma_hier_uniqueness_theorem_note_2026-04-19`: +16
 - `koide_dimensionless_note_2026-04-24`: +16
-- `area_law_multipocket_selector_no_go_note_2026-04-25`: +16
-- `gauge_vacuum_plaquette_spectral_measure_theorem_note`: +16
+- `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25`: +16
 - `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`: +16
+- `shapiro_static_discriminator_note`: +15
 - `single_axiom_hilbert_note`: +15
-- `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25`: +15
+- `ckm_five_sixths_bridge_support_note`: +15
+- `gauge_vacuum_plaquette_spectral_measure_theorem_note`: +15
 - `signed_gravity_response_lane_status_note_2026-04-26`: +14
-- `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`: +14
-- `ckm_five_sixths_bridge_support_note`: +14
 - `s3_boundary_link_theorem_note`: +13
 - `plaquette_self_consistency_note`: +11
 - `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`: +7
@@ -277,23 +243,22 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`: -17
 - `claude_complex_action_grown_companion_note`: -17
 - `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11`: -16
-- `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`: -16
+- `lensing_k_sweep_note`: -16
 - `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`: -16
 - `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`: -15
-- `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`: -15
-- `lensing_k_sweep_note`: -15
+- `fourth_family_quadrant_note`: -15
+- `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`: -15
+- `bell_inequality_derived_note`: -15
+- `finite_rank_source_to_metric_theorem_note`: -15
 - `scalar_3plus1_temporal_ratio_note`: -15
 - `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`: -14
-- `second_grown_family_sign_note`: -14
+- `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`: -14
 - `complex_action_note`: -14
-- `bell_inequality_derived_note`: -14
-- `finite_rank_source_to_metric_theorem_note`: -14
 - `electrostatics_superposition_proxy_note`: -14
 - `gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29`: -14
 - `claude_complex_action_carryover_note`: -14
 - `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`: -14
 - `gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06`: -14
-- `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`: -14
 - `dm_pmns_asymptotic_source_no_go_note_2026-04-20`: -14
 - `persistent_object_top4_multistage_transfer_sweep_note_2026-04-16`: -14
 - `emergent_geometry_growth_note_2026-04-10`: -14
@@ -309,15 +274,16 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`: -13
 - `staggered_only_det_positivity_case_a_note_2026-05-17`: -13
 - `gauge_scalar_temporal_completion_theorem_note`: -13
-- `hierarchy_spatial_bc_and_u0_scaling_note`: -13
 - `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`: -13
+- `hierarchy_spatial_bc_and_u0_scaling_note`: -13
 - `taste_scalar_isotropy_theorem_note`: -13
 - `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`: -13
 - `dm_neutrino_cascade_geometry_note_2026-04-14`: -13
 - `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`: -13
-- `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`: -13
+- `second_grown_family_sign_note`: -13
 - `valley_linear_action_note`: -13
 - `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16`: -13
+- `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`: -13
 - `dimensional_gravity_table`: -13
 - `electrostatics_card_note`: -13
 - `lensing_finite_path_explanation_note`: -13
@@ -328,7 +294,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`: -12
 - `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`: -12
 - `causal_propagating_field_live_packet_note_2026-06-05`: -12
-- `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`: -12
+- `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -12
 - `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17`: -12
 - `generation_axiom_boundary_note`: -12
 - `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`: -12
@@ -341,49 +307,49 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `eta_holonomy_base_flux_scope_boundary_note_2026-06-06`: -11
 - `poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26`: -11
 - `poisson_self_gravity_loop_v3_note`: -11
-- `third_grown_family_boundary_note`: -11
-- `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -11
+- `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`: -11
+- `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`: -11
 - `dm_abcc_basin_finite_search_support_note_2026-04-30`: -11
 - `ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`: -11
 - `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`: -11
 - `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`: -11
+- `staggered_newton_reproduction_note_2026-04-11`: -11
 - `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`: -11
 - `bound_state_selection_note`: -11
 - `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`: -10
 - `pmns_oriented_cycle_selection_structure_note`: -10
-- `evolving_network_prototype_v6_note`: -10
+- `third_grown_family_boundary_note`: -10
 - `substrate_to_p_a_forcing_theorem_note_2026-04-30`: -10
 - `koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12`: -10
 - `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`: -9
-- `alt_connectivity_family_sign_note`: -9
-- `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`: -9
+- `evolving_network_prototype_v6_note`: -9
+- `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`: -9
 - `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`: -8
-- `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`: -8
+- `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`: -8
+- `alt_connectivity_family_sign_note`: -8
 - `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05`: -8
-- `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`: -8
 - `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`: -8
-- `koide_q_dred_normalization_freedom_no_go_note_2026-06-15`: -8
+- `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`: -8
 - `persistent_object_blended_readout_transfer_sweep_note_2026-04-16`: -8
 - `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16`: -8
 - `persistent_object_multistage_floor_sweep_note_2026-04-16`: -8
 - `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`: -7
 - `staggered_fermion_card_2026-04-11`: -7
-- `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`: -7
 - `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`: -7
 - `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`: -7
 - `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`: -7
-- `ac_reta_hclass_hunit_readout_derivation_obligation`: -7
-- `record_markov_generator_embeddability_boundary_2026-06-06`: -7
-- `koide_cyclic_projector_block_democracy_note_2026-04-18`: -7
+- `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`: -7
+- `koide_q_dred_normalization_freedom_no_go_note_2026-06-15`: -7
 - `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`: -6
-- `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30`: -6
 - `flavor_einselection_2sector_modulo_kreality_2026-06-02`: -6
+- `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30`: -6
 - `gate_b_grown_distance_law_note`: -6
 - `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`: -6
 - `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -6
+- `record_markov_generator_embeddability_boundary_2026-06-06`: -6
 - `linear_response_true_kubo_note`: -6
 - `pre_record_reference_state_tracial_derivation_note_2026-05-20`: -6
-- `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`: -6
+- `flavor_readout_gate_equals_carrier_identification_2026-05-31`: -6
 - `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`: -5
 - `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`: -5
 - `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09`: -5
@@ -393,8 +359,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `koide_cone_completing_root_narrow_theorem_note_2026-05-02`: -5
 - `lensing_deflection_note`: -5
 - `broad_gravity_derivation_note`: -5
-- `flavor_readout_gate_equals_carrier_identification_2026-05-31`: -5
-- `staggered_newton_reproduction_note_2026-04-11`: -5
+- `koide_cyclic_projector_block_democracy_note_2026-04-18`: -5
 - `wave_radiation_note`: -5
 - `wave_poisson_cinf_bridge_theorem_note_2026-05-28`: -5
 - `fermion_parity_z2_grading_theorem_note_2026-05-02`: -4
@@ -403,8 +368,8 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `wave_retardation_continuum_limit_note`: -4
 - `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`: -4
 - `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`: -4
-- `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`: -4
 - `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`: -4
+- `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`: -4
 - `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`: -4
 - `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`: -4
 - `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`: -4
@@ -450,7 +415,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `circulant_response_master_identity_narrow_theorem_note_2026-05-02`: -2
 - `cl3_complexification_split_narrow_theorem_note_2026-05-10`: -1
 - `koide_anticommuting_operator_derivation_theorem_note_2026-05-10`: -1
-- `fourth_family_quadrant_note`: -1
+- `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`: -1
 - `lattice_complementarity_note`: -1
 - `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`: -1
 - `wigner_mode_low_d_sublattice_theorem_note_2026-05-02`: -1
@@ -463,19 +428,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4632 |
-| Critical nodes | 766 |
-| High nodes | 464 |
-| Medium nodes | 1189 |
-| Leaf nodes | 2213 |
+| Citation-graph nodes | 5446 |
+| Critical nodes | 767 |
+| High nodes | 465 |
+| Medium nodes | 1205 |
+| Leaf nodes | 3009 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2218 descendants; score 280.616
-- `three_generation_observable_theorem_note` - critical; 1291 descendants; score 62.335
-- `observable_principle_from_axiom_note` - critical; 1133 descendants; score 61.647
-- `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `graph_first_su3_integration_note` - critical; 1687 descendants; score 60.221
-- `plaquette_self_consistency_note` - critical; 1266 descendants; score 49.307
-- `key_terminology` - critical; 1314 descendants; score 44.861
-- `minimal_axioms_2026-05-03` - critical; 1162 descendants; score 44.184
+- `minimal_axioms` - critical; 2235 descendants; score 284.627
+- `three_generation_observable_theorem_note` - critical; 1295 descendants; score 62.340
+- `observable_principle_from_axiom_note` - critical; 1136 descendants; score 61.651
+- `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 61.637
+- `graph_first_su3_integration_note` - critical; 1692 descendants; score 60.225
+- `plaquette_self_consistency_note` - critical; 1269 descendants; score 49.311
+- `key_terminology` - critical; 1318 descendants; score 44.865
+- `minimal_axioms_2026-05-03` - critical; 1165 descendants; score 44.187

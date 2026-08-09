@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.67,
+  "load_bearing_score": 4.748,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -638,6 +638,6 @@
   },
   "runner_path": "scripts/cl3_chiral_body_diagonal_source.py",
   "title": "Cl(3) Chiral Body-Diagonal: Singlet Axis (1,1,1) Is Baseline-Forced, the Doublet-h Is C\u2083-Orbit-Valued and Not Natively Sourced - Narrow No-Go",
-  "transitive_descendants": 17,
+  "transitive_descendants": 18,
   "verdict_rationale": null
 }

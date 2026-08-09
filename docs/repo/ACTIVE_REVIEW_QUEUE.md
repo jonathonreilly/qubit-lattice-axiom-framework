@@ -49,6 +49,85 @@ Current science/open-lane follow-ups:
   claim-scoped helper registration from the governed
   dependency-extraction source, or adding the reviewed machine-readable
   equivalence/impact record the review-loop guard requires).
+  Progress 2026-08-09 (branch `epoch-gate-refresh-20260809`): the owner
+  ruling "amend gate + restore" is split, and the GATE half lands here.
+  What landed:
+  (1) `dependency_policy_epoch()` now hashes
+  `build_citation_graph.py` as a normalized rendering with the
+  `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` assignment span spliced out. The
+  span is located through the AST, never a regex, so nested braces,
+  comments and string contents inside the dict cannot desynchronize it.
+  Every other byte of the builder, and every other governed source, stays
+  byte-exact. Future claim-scoped helper registrations therefore no longer
+  move the epoch, which is what made this queue item's debt accumulate.
+  The splice only qualifies when the registry name is bound EXACTLY ONCE
+  in the whole module, counting every binding form Python has — a second
+  or annotated or augmented assignment, tuple unpacking, walrus, `del`,
+  an import alias or wildcard import, a `def`/`async def`/`class`, a
+  parameter, a `for`/`with`/`except`/`match` binding, a PEP 695 type
+  parameter in all five spellings (`def f[NAME]`, `class C[NAME]`,
+  `type A[NAME] = ...`, `def f[**NAME]`, `def f[*NAME]`), a
+  `type NAME = ...` alias, and `global`/`nonlocal` — and only when the
+  value is a strictly literal dict of string constants mapping to
+  lists/tuples of string constants. `**` unpacking, calls,
+  comprehensions, name references and starred elements all raise
+  `ScienceFingerprintError`, so no executable bytes can hide inside the
+  excluded span. Every one of those shapes is a permanent test in
+  `test_audit_science_fingerprint.py` (30 tests, all passing), including a
+  test that reproduces the normalized rendering by an independent splice
+  and one that proves the refresh tool and the gate use the same producer.
+  (2) The controlled manifest was refreshed to `dependency_policy_v3` by
+  the module's own `--refresh-dependency-policy-manifest` path on this
+  tree. The normalized builder rendering is
+  `bce98c4c89917619661387aa9760a1eb1f4487588417a7107699adc83e2a0b7c`,
+  which is the SAME value the last reviewed manifest state produced even
+  though `main` has since added four more registry entries — direct
+  evidence that the registry span was the only drift. The refreshed
+  manifest carries no amended-equivalence record of any kind.
+  (3) Pipeline effect: on `origin/main` the epoch gate hard-fails, so
+  stage 7 cannot run for any consumer. On this branch a full
+  `run_pipeline.sh` completes all 18 stages plus checkpoint 18b, exit 0,
+  and stage 7 scans 4,784 rows and reaches its joint invalidate/restore
+  fixed point on the first pass with 0 invalidated and 0 restored.
+  RESTORE-ZERO IS THE CORRECT OUTCOME HERE, and the reason is checkable:
+  every archived judgment on this tree predates the 2026-08-07
+  framework-premise reset, so each one is already invalid for a reason no
+  dependency-policy amendment can amnesty. A post-run dry run reports zero
+  candidates in all five restore lanes and writes nothing.
+  (4) Residue: 2,698 rows stay invalidated and are fresh-audit material,
+  listed with their archived status, archive timestamp and last
+  invalidation reason in
+  `docs/audit/data/epoch_policy_pass_residue_2026-08-09.json`. The four
+  largest reason buckets are `legacy_framework_premise_epoch_changed` 860,
+  `unknown` 727, `dep_weakened` 548 and `no_go_discipline_packet_missing`
+  381; the remaining 182 rows are accounted for in ten smaller buckets.
+  The regenerated ledger changed no audit authority anywhere: across 1,013
+  modified shards only topology and source metrics moved, and all 812 new
+  rows are seeded `unaudited` with no audit history.
+  Verification: full `run_pipeline.sh` exit 0 (all 18 stages + 18b);
+  `audit_lint.py --strict` exit 0 with 4,784 rows, 8 pre-existing warnings
+  and 1,526 notices and no errors; fingerprint suite 30/30; restore
+  dry-run zero in all five lanes.
+  DEFERRED, and deliberately NOT in this branch: the amended-epoch RESTORE
+  lane (the manifest's `amended_equivalent_prior_epoch_digests` record,
+  `legacy_archive_equivalence_change`, `legacy_archive_unrestorable_reason`,
+  `restore_audit_outcome`, `select_amended_epoch_candidates`, and the
+  archive tier-classification work). That code was added in response to
+  review round 1 and then failed four consecutive confirmation rounds on
+  successively rarer archive-degradation shapes. The open hole is TOTAL
+  TIER-INDICATOR ERASURE: an archive with every tier indicator stripped is
+  byte-indistinguishable from a genuine pre-v1 archive, so it downgrades to
+  the permissive legacy path and can restore after real science drift. No
+  design that only inspects the archive can close this; it needs an
+  external anchor, and the two candidates are the ledger's own git history
+  (what the shard's committed blob contained when the archive was written)
+  or a write-time signature stamped by `apply_audit.snapshot_audit_state`.
+  The restore lane restores nothing on today's tree and is exercised by
+  nothing in production, so deferring it blocks no consumer. Working handle
+  for the follow-up: branch `epoch-policy-pass-20260809`, with the four
+  rounds' findings, every bypass shape, the writer-derived tier-indicator
+  table and the population figures recorded in `RESTORE_LANE_HANDOFF.md`.
+  Disposition stays `science-needed` until review lands.
 - `2026-08-07-premise-epoch-reset-narrative-staleness`
   Scope: hand-authored narrative surfaces on `main` after the
   framework-premise-epoch invalidation refresh (887 audits reset to

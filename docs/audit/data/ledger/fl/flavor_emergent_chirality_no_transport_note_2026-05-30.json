@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.0,
+  "load_bearing_score": 4.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -102,6 +102,6 @@
   },
   "runner_path": "scripts/flavor_emergent_chirality_no_transport_2026_05_30.py",
   "title": "Flavor \u2014 emergent chirality \u00d7 emergent time does NOT transport an orbit-splitting chiral grading onto the generation triplet",
-  "transitive_descendants": 7,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.0,
+  "load_bearing_score": 6.087,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -147,6 +147,6 @@
   },
   "runner_path": "scripts/frontier_m2_tensor_d4_dimension_256_bounded.py",
   "title": "`M_2(C)^\u22974` Dimension 256 Bounded Note",
-  "transitive_descendants": 15,
+  "transitive_descendants": 16,
   "verdict_rationale": null
 }

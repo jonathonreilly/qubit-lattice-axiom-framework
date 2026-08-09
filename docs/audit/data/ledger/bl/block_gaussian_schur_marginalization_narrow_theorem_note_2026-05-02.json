@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.109,
+  "load_bearing_score": 7.129,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -157,6 +157,6 @@
   },
   "runner_path": "scripts/frontier_block_gaussian_schur_narrow.py",
   "title": "Block-Gaussian Schur Marginalization Narrow Theorem",
-  "transitive_descendants": 68,
+  "transitive_descendants": 69,
   "verdict_rationale": null
 }

@@ -1,0 +1,107 @@
+{
+ "all_certificates_pass": true,
+ "base_rank_routes": {
+  "integer_multiply_only": 5,
+  "modular": {
+   "1000003": 5,
+   "2000003": 5,
+   "999999937": 5
+  }
+ },
+ "boundary": "conditional finite-model support only: no probability, no occurrence rule, no update law, no selection, no elimination, no interface or bridge claim, no negative universal claim",
+ "checker_verdict": "CORROBORATES",
+ "checks": {
+  "A_PINS": true,
+  "B_INDEPENDENT_CENSUS": true,
+  "C_INDEPENDENT_RANK": true,
+  "D_ZERO_SETS_AND_POSITIVITY": true,
+  "E_DIFFERENCE_SUPPORTS": true,
+  "F_MASS_LATTICES": true,
+  "G_TEETH": true,
+  "H_RUNTIME": true
+ },
+ "claim_survival": {
+  "base_rank": true,
+  "coefficient_identity_and_residual_set": true,
+  "difference_support_cardinalities": true,
+  "difference_support_sets": true,
+  "event_space_digest": true,
+  "everywhere_positive_min_mass": true,
+  "lattice_factorizations": true,
+  "mass_lattices": true,
+  "nonsingular_minor": true,
+  "per_family_differing_cells": true,
+  "total_factorizations": true,
+  "zero_carrying_supports_identical": true,
+  "zero_carrying_triple_rank": true,
+  "zero_counts": true,
+  "zero_set_identities": true
+ },
+ "claim_survival_rows": 15,
+ "cycle": 905,
+ "elapsed_sec": 80.842,
+ "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+ "firewall_hits": 0,
+ "independence": "independently transcribed census / dead-wire rig / composed scan (no AST lift, no import of the primary); plain Fraction weightings against the primary's integer-numerator arithmetic; integer multiply-only elimination and modular rank against the primary's Fraction elimination and Gram/Laplace minors; event-level brute-force difference supports against the primary's world-level route",
+ "label_on_every_fraction": "bookkeeping fraction, not probability",
+ "mass_lattices": {
+  "M1_COUNTING": 92260,
+  "M2_PER_WORLD_UNIFORM": 802813440,
+  "M3_OCCUPATION_WEIGHTED": 7012467735,
+  "M4_FORMATION_LIFETIME": 230706877245,
+  "M5_FORMATION_MOMENT": 17127729255
+ },
+ "primary_receipt_sha256": "d967501789f9ee1b0402adacb6b496c48534dec30768782002e76c26ebac360d",
+ "role": "salvage independent check, specified to refute",
+ "self_sha256": "7f03e233ef53a3a5d6df379315a3d4dc03e58f51e58ea26ef36a0429770e67a1",
+ "teeth": [
+  {
+   "detected": true,
+   "gate": "gate_pins",
+   "mutation": "one byte of the pinned Cycle-719 core is flipped",
+   "tooth": "tampered_core_pin"
+  },
+  {
+   "detected": true,
+   "gate": "gate_headline (five weightings)",
+   "mutation": "M5_FORMATION_MOMENT is removed from the candidate set",
+   "tooth": "dropped_weighting"
+  },
+  {
+   "detected": true,
+   "gate": "gate_rank (two-route agreement)",
+   "mutation": "route 2 returns the literal 4 instead of computing",
+   "tooth": "hardcoded_rank"
+  },
+  {
+   "detected": true,
+   "gate": "gate_zero_counts",
+   "mutation": "one reported zero-weight-event count is increased by one",
+   "tooth": "tampered_zero_counts"
+  },
+  {
+   "detected": true,
+   "gate": "gate_headline",
+   "mutation": "every F-tag (formation) event is dropped from the census",
+   "tooth": "skipped_event_class"
+  },
+  {
+   "detected": true,
+   "gate": "gate_headline",
+   "mutation": "every second event is silently dropped (no declaration)",
+   "tooth": "silent_subcensus"
+  },
+  {
+   "detected": true,
+   "gate": "lattices_survive",
+   "mutation": "one recomputed mass lattice is doubled",
+   "tooth": "tampered_lattice"
+  },
+  {
+   "detected": true,
+   "gate": "cardinalities_survive",
+   "mutation": "one difference-support cardinality is increased by one",
+   "tooth": "tampered_difference_support"
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "certified_statements": {
+  "base_rank_statement": "on the stipulated model the five candidate weightings have rank 5 as functions on the 92260-event census (three agreeing routes; an exhibited nonsingular 5 x 5 minor); the three zero-carrying candidates alone have rank 3",
+  "coefficient_identity_statement": "the world-coefficient identity a4 + a5 = (boundaries + 1) * [formed] holds on all 748 world rows (0 violations); the candidate combination (boundaries+1)*M2 - M4 - M5 has nonzero event-level residual on exactly the 73088 events of the never-formed block, so the identity induces no dependence among the five event-level weightings",
+  "difference_support_statement": "all ten candidate pairs differ somewhere; the three zero-carrying pairs differ on IDENTICALLY the same 19172 events (the formed-world block) and the same cells of every declared family, while the exact fraction values at those events differ -- an equal-support fact, not equality of weightings",
+  "mass_lattice_statement": "the totals and exact subset-mass lattices factor as recorded, with every factorization machine-verified; divisibility of a demanded denominator into the lattice is a NECESSARY condition only, and no subset realizability is decided",
+  "one_way_positivity_lemma": "CONDITIONAL, ONE-WAY: if a weighting's event masses are strictly positive on every event, then every NONEMPTY subset of events carries strictly positive total mass; hence such a weighting cannot satisfy any constraint that would require zero total mass on some nonempty subset.  On this model the hypothesis holds for M1 and M2 (minimum event numerators 1 and 8320).",
+  "zero_set_statement": "M1 and M2 have EMPTY zero sets (minimum event numerators 1 and 8320); the zero sets of M3 and M4 are IDENTICAL AS SETS and equal the never-formed block (73088 events, all bank-tag writes); the zero set of M5 strictly contains it (the worlds formed at moment 0 add 3096 events)"
+ },
+ "checks": {
+  "A_SOURCE_CONTROLS": true,
+  "B_MODEL_BUILD": true,
+  "C_RANK": true,
+  "D_COEFFICIENT_IDENTITY": true,
+  "E_ZERO_SETS": true,
+  "F_DIFFERENCE_SUPPORTS": true,
+  "G_MASS_LATTICES": true,
+  "H_FALSIFIERS": true,
+  "I_DOUBLE_BUILD": true,
+  "J_RUNTIME": true
+ },
+ "claim_type": "bounded_theorem",
+ "coefficient_identity_violations": 0,
+ "cycle": 905,
+ "deterministic_double_build": true,
+ "difference_support_cardinalities": {
+  "M1_COUNTING|M2_PER_WORLD_UNIFORM": 92260,
+  "M1_COUNTING|M3_OCCUPATION_WEIGHTED": 92260,
+  "M1_COUNTING|M4_FORMATION_LIFETIME": 92260,
+  "M1_COUNTING|M5_FORMATION_MOMENT": 92260,
+  "M2_PER_WORLD_UNIFORM|M3_OCCUPATION_WEIGHTED": 92260,
+  "M2_PER_WORLD_UNIFORM|M4_FORMATION_LIFETIME": 92260,
+  "M2_PER_WORLD_UNIFORM|M5_FORMATION_MOMENT": 92260,
+  "M3_OCCUPATION_WEIGHTED|M4_FORMATION_LIFETIME": 19172,
+  "M3_OCCUPATION_WEIGHTED|M5_FORMATION_MOMENT": 19172,
+  "M4_FORMATION_LIFETIME|M5_FORMATION_MOMENT": 19172
+ },
+ "difference_support_digests": {
+  "M1_COUNTING|M2_PER_WORLD_UNIFORM": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M1_COUNTING|M3_OCCUPATION_WEIGHTED": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M1_COUNTING|M4_FORMATION_LIFETIME": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M1_COUNTING|M5_FORMATION_MOMENT": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M2_PER_WORLD_UNIFORM|M3_OCCUPATION_WEIGHTED": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M2_PER_WORLD_UNIFORM|M4_FORMATION_LIFETIME": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M2_PER_WORLD_UNIFORM|M5_FORMATION_MOMENT": "e6f73dd45f5fb500c3cef9d3cca5c72d6922d259816ab655abe1c2fea0314eaf",
+  "M3_OCCUPATION_WEIGHTED|M4_FORMATION_LIFETIME": "19d4c14cfac72b47fc49033b59c3645acd218ff34055929719bb84329db961b3",
+  "M3_OCCUPATION_WEIGHTED|M5_FORMATION_MOMENT": "19d4c14cfac72b47fc49033b59c3645acd218ff34055929719bb84329db961b3",
+  "M4_FORMATION_LIFETIME|M5_FORMATION_MOMENT": "19d4c14cfac72b47fc49033b59c3645acd218ff34055929719bb84329db961b3"
+ },
+ "elapsed_sec": 166.999,
+ "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+ "firewall_hits": 0,
+ "label_on_every_fraction": "bookkeeping fraction, not probability",
+ "lattice_factorizations": {
+  "M1_COUNTING": {
+   "2": 2,
+   "5": 1,
+   "659": 1,
+   "7": 1
+  },
+  "M2_PER_WORLD_UNIFORM": {
+   "11": 1,
+   "13": 1,
+   "17": 1,
+   "2": 9,
+   "3": 1,
+   "43": 1,
+   "5": 1
+  },
+  "M3_OCCUPATION_WEIGHTED": {
+   "13": 1,
+   "3": 1,
+   "3229": 1,
+   "37": 1,
+   "43": 1,
+   "5": 1,
+   "7": 1
+  },
+  "M4_FORMATION_LIFETIME": {
+   "13": 1,
+   "163": 1,
+   "2861": 1,
+   "3": 1,
+   "43": 1,
+   "5": 1,
+   "59": 1
+  },
+  "M5_FORMATION_MOMENT": {
+   "13": 1,
+   "3": 1,
+   "41687": 1,
+   "43": 1,
+   "5": 1,
+   "7": 2
+  }
+ },
+ "machine_status": {
+  "boundary": "this package supplies no occurrence rule, no probability, no update law, no observable, no symmetry action on event atoms, and no constraint imported from any other lane; it selects no candidate weighting and eliminates none; it certifies exact finite algebra of the five candidate weightings over a stipulated in-file model, as conditional finite-model support",
+  "claim_type": "bounded_theorem",
+  "conditional_on": "the stipulated in-file composed record-write model and its declared scope inputs (banks, source counts, horizon, dead-window lengths, register cap), all stipulated computational boundary conditions, not measured and not axiom-derived; identification of this model with any landed substrate is an OPEN bridge",
+  "expressly_absent_claims": [
+   "no measure selection and no candidate elimination",
+   "no framework-Admissibility compatibility claim",
+   "no interface, pullback, or bridge claim from any other lane",
+   "no symmetry or covariance claim on event atoms",
+   "no observable, no operational bridge, no experiment",
+   "no probability, no occurrence rule, no update law",
+   "no negative claim of any universal form"
+  ],
+  "review_record": "this package is the review-loop SALVAGE of the rejected Cycle-905 submission (PR #5967, FAIL/SALVAGE_REJECT); only the finite calculations the review named durable are carried here, recomputed self-contained; see the source note's Review record for the rejection grounds",
+  "surface_label": "bounded support note",
+  "surface_reading": "conditional finite-model support"
+ },
+ "mass_lattices": {
+  "M1_COUNTING": 92260,
+  "M2_PER_WORLD_UNIFORM": 802813440,
+  "M3_OCCUPATION_WEIGHTED": 7012467735,
+  "M4_FORMATION_LIFETIME": 230706877245,
+  "M5_FORMATION_MOMENT": 17127729255
+ },
+ "min_event_numerators": {
+  "M1_COUNTING": 1,
+  "M2_PER_WORLD_UNIFORM": 8320,
+  "M3_OCCUPATION_WEIGHTED": 0,
+  "M4_FORMATION_LIFETIME": 0,
+  "M5_FORMATION_MOMENT": 0
+ },
+ "nonsingular_minor": {
+  "determinant": 138978185647720130150400000,
+  "matrix": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    8320,
+    8320,
+    16512,
+    8385,
+    8320
+   ],
+   [
+    16640,
+    24960,
+    405997056,
+    0,
+    49920
+   ],
+   [
+    1499397120,
+    1499405440,
+    2975842176,
+    0,
+    150109440
+   ],
+   [
+    74880,
+    66560,
+    33024,
+    0,
+    1349362560
+   ]
+  ],
+  "nonsingular": true,
+  "reading": "a 5 x 5 submatrix of the world-reduced numerator matrix with nonzero determinant; its columns are the exhibited worlds and its rows the five candidates -- an explicit witness that the rank is at least 5",
+  "world_coefficient_matrix_rows_are_candidates": [
+   "M1_COUNTING",
+   "M2_PER_WORLD_UNIFORM",
+   "M3_OCCUPATION_WEIGHTED",
+   "M4_FORMATION_LIFETIME",
+   "M5_FORMATION_MOMENT"
+  ],
+  "worlds": [
+   0,
+   1,
+   7,
+   8,
+   11
+  ]
+ },
+ "per_family_differing_cells_zero_carrying": {
+  "F_ATOM": 19172,
+  "F_CONTENT": 11627,
+  "F_MOMENT": 8199,
+  "F_ORBIT": 2037,
+  "F_TAG": 3,
+  "F_TAG_ORDINAL": 129,
+  "F_WORLD": 164,
+  "F_WORLD_TAG": 461
+ },
+ "question": "Cycle 905 salvage -- carry the durable exact finite calculations of the rejected Cycle-905 package as conditional finite-model support on a stipulated in-file model.",
+ "rank": 5,
+ "rank_routes": {
+  "gram_laplace": 5,
+  "rational_elimination": 5,
+  "world_reduction_crosscheck": 5
+ },
+ "residual_nonzero_events": 73088,
+ "residual_set_equals_never_formed_block": true,
+ "role": "salvage primary",
+ "science_digest": "3e19aaad97ecbae13da9226d935a5165d89fc75aed45fd840cc8c605d257640a",
+ "scope": "the full realized record-write census of the stipulated in-file model at horizon 16384 orbits (92260 events over 748 worlds), built from the pinned landed Cycle-719 core alone.  Exact rational arithmetic throughout; no probability, no occurrence rule, no update law, no selection.",
+ "self_sha256": "c2b57bb43e5584426e918120fe71061e00732b644dfe4aaabb59f729b498eaf9",
+ "source_pins": [
+  {
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  }
+ ],
+ "total_factorizations": {
+  "M1_COUNTING": {
+   "2": 2,
+   "5": 1,
+   "659": 1,
+   "7": 1
+  },
+  "M2_PER_WORLD_UNIFORM": {
+   "11": 1,
+   "13": 1,
+   "17": 1,
+   "2": 9,
+   "3": 1,
+   "43": 1,
+   "5": 1
+  },
+  "M3_OCCUPATION_WEIGHTED": {
+   "13": 1,
+   "2": 7,
+   "3": 1,
+   "3229": 1,
+   "37": 1,
+   "43": 1,
+   "5": 1,
+   "7": 1
+  },
+  "M4_FORMATION_LIFETIME": {
+   "13": 1,
+   "163": 1,
+   "2": 7,
+   "2861": 1,
+   "3": 1,
+   "43": 1,
+   "5": 1,
+   "59": 1
+  },
+  "M5_FORMATION_MOMENT": {
+   "13": 1,
+   "2": 7,
+   "3": 1,
+   "41687": 1,
+   "43": 1,
+   "5": 1,
+   "7": 2
+  }
+ },
+ "totals": {
+  "M1_COUNTING": 92260,
+  "M2_PER_WORLD_UNIFORM": 802813440,
+  "M3_OCCUPATION_WEIGHTED": 897595870080,
+  "M4_FORMATION_LIFETIME": 29530480287360,
+  "M5_FORMATION_MOMENT": 2192349344640
+ },
+ "zero_carrying_supports_identical_as_sets": true,
+ "zero_carrying_triple_rank": 3,
+ "zero_set_identities": {
+  "distinct_zero_sets_among_the_zero_carrying_triple": 2,
+  "zero_M3_equals_never_formed_block": true,
+  "zero_M3_equals_zero_M4_as_sets": true,
+  "zero_M3_strict_subset_of_zero_M5": true,
+  "zero_M5_equals_block_plus_moment_zero_worlds": true
+ },
+ "zero_weight_events": {
+  "M1_COUNTING": 0,
+  "M2_PER_WORLD_UNIFORM": 0,
+  "M3_OCCUPATION_WEIGHTED": 73088,
+  "M4_FORMATION_LIFETIME": 73088,
+  "M5_FORMATION_MOMENT": 76184
+ }
+}

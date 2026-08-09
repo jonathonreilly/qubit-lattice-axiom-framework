@@ -6,13 +6,35 @@
   "Record"
  ],
  "axioms_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+ "extracted_sections": {
+  "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": [
+   "What This Declares",
+   "What This Does Not Do"
+  ],
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": [
+   "Admissibility / Local Constraint",
+   "Lattice / Physical Locality",
+   "Open Gates Outside The Axioms",
+   "Qualification",
+   "Qubit / Site Possibility",
+   "Record / Fixed Reality"
+  ],
+  "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": [
+   "What This Declares",
+   "What This Does Not Do"
+  ],
+  "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": [
+   "What This Declares",
+   "What This Does Not Do"
+  ]
+ },
  "generator": "docs/audit/scripts/generate_skill_axiom_baselines.py",
  "primitive_roster": [
   "scale_reference_primitive",
   "kinetic_isotropy_primitive",
   "realized_state_primitive"
  ],
- "schema_version": 1,
+ "schema_version": 2,
  "sources": {
   "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
    "sections": {
@@ -68,34 +90,35 @@
  },
  "targets": {
   "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
-   "block_lines": 23,
-   "block_sha256": "57adf0ad6312f5c5002e56cd2fcbf4814f3b6c9549b84e7bf67be114c0b01baf",
-   "roster_scope": [
-    "scale_reference_primitive",
-    "kinetic_isotropy_primitive",
-    "realized_state_primitive"
+   "block_lines": 106,
+   "block_sha256": "c60ef159b23b35f27d61986d77e88ef6152f4603909db76a532281112bf3e2d2",
+   "spans": [
+    "primitives"
    ]
   },
   "docs/ai_methodology/skills/audit-loop/SKILL.md": {
-   "block_lines": 33,
-   "block_sha256": "52085a6afe368a6d1883474e998fbc5dbd6f022360fc8534237a184a9ae8baa9",
-   "roster_scope": [
-    "scale_reference_primitive",
-    "kinetic_isotropy_primitive"
+   "block_lines": 195,
+   "block_sha256": "abb17461e3988378720b369ce6201909ee22ea2df9a000c7d179ec33484598e9",
+   "spans": [
+    "axioms",
+    "primitives"
    ]
   },
   "docs/ai_methodology/skills/physics-loop/SKILL.md": {
-   "block_lines": 27,
-   "block_sha256": "ca5cfa305da948c025baf78c1790f81352fb1e8523064f48b88bd37e89619dea",
-   "roster_scope": [
-    "scale_reference_primitive",
-    "kinetic_isotropy_primitive"
+   "block_lines": 190,
+   "block_sha256": "4641934814234cddd1110e6d932b69db66ae8c2577250f602e56e6c646194b92",
+   "spans": [
+    "axioms",
+    "primitives"
    ]
   },
   "docs/ai_methodology/skills/review-loop/SKILL.md": {
-   "block_lines": 27,
-   "block_sha256": "3095f26a6667a98b3f8cd0c1e6d35f3baa2ac95928572d8ce80a650c3f631971",
-   "roster_scope": []
+   "block_lines": 190,
+   "block_sha256": "4641934814234cddd1110e6d932b69db66ae8c2577250f602e56e6c646194b92",
+   "spans": [
+    "axioms",
+    "primitives"
+   ]
   }
  }
 }

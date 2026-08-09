@@ -1,4 +1,4 @@
-"""The whole spectrum of the eight piece Gram, and what the symmetry does not pick out.
+"""Exact finite certificates for the eight-piece Gram and its row-space characters.
 
 Every count below is measured here. The runner rebuilds the cell complex, the least
 volume pieces, the cuttings at the adjacency cost floor, the cutting by piece table
@@ -8,20 +8,23 @@ the Gram
 S = M M transpose, then reads the spectrum of S exactly: ten whole values with their
 multiplicities, three quadratic families and one cubic family, each factor shown to
 be unbreakable over the whole numbers, with the fourteen nullities adding to the full
-size and the product of the fourteen factors killing the matrix. A sum of roots
-cross check reproduces the trace. It then builds the maps got by permuting the four
-coordinates of the four-cube and flipping any of them, certifies whole number
-multiples of the orthogonal projectors onto the row spaces of the two tables, and
-averages the counting functions over those maps. Two controls fixed in advance show
-the spectrum gates and the counting gates fail when the object handed to them is
-wrong.
+size and the product of the fourteen factors killing the matrix. A sum-of-roots
+checksum reproduces the trace. It then builds the maps obtained by permuting the four
+coordinates of the four-cube and flipping any of them, certifies whole-number
+multiples of the orthogonal projectors onto the row spaces of the two tables, proves
+that those projectors are invariant under every map, and averages their characters.
+Fixed corruptions exercise the rebuild, spectrum, sharing-relation, group-action, and
+projector-invariance check families.
 """
 import itertools
 import math
 import resource
+import sys
 import time
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.monotonic()
 PF = [0, 0]
@@ -186,6 +189,26 @@ NS = len(SOL)
 USED = sorted(set(i for s in SOL for i in s))
 NPO = len(USED)
 P2I = dict((p, a) for a, p in enumerate(USED))
+
+# Two zero-one 4-simplices have disjoint interiors exactly when a supporting
+# direction separates them.  An extreme separating direction is orthogonal to
+# three ternary vertex-difference vectors, so its 3-by-3 minors have magnitude
+# at most four.  The finite direction sweep therefore decides disjointness.
+DIR = np.array([d for d in itertools.product(range(-4, 5), repeat=4) if any(d)],
+               dtype=np.int64)
+PV = V[UNI[USED]]
+DPROJ = np.tensordot(DIR, PV, axes=([1], [2]))
+DHI = DPROJ.max(axis=2).T
+DLO = DPROJ.min(axis=2).T
+SEP = np.eye(NPO, dtype=bool)
+for a in range(NPO):
+    for b in range(a + 1, NPO):
+        ok = bool((DHI[a] <= DLO[b]).any()) or bool((DHI[b] <= DLO[a]).any())
+        SEP[a, b] = SEP[b, a] = ok
+del DPROJ, DHI, DLO
+
+CUT_LOCAL = [[P2I[p] for p in s] for s in SOL]
+DISJOINT = all(SEP[np.ix_(s, s)].sum() == len(s) * len(s) for s in CUT_LOCAL)
 
 INC = np.zeros((NS, NPO), dtype=np.uint8)
 for i, s in enumerate(SOL):
@@ -381,6 +404,13 @@ PA = np.array(FULL, dtype=np.int64)
 NG = len(FULL)
 IDX = np.arange(NPO)
 CPERM = np.array([int((PA[i] == IDX).sum()) for i in range(NG)], dtype=np.int64)
+PERMOK = bool((np.sort(PA, axis=1) == IDX[None, :]).all())
+FULLSET = set(FULL)
+GROUP_CLOSED = all(tuple(a[b[j]] for j in range(NPO)) in FULLSET
+                   for a in FULL for b in FULL)
+BAD_PA = PA.copy()
+BAD_PA[0, 0] = BAD_PA[0, 1]
+GROUP_MUTATION_CAUGHT = not bool((np.sort(BAD_PA, axis=1) == IDX[None, :]).all())
 
 ORB = set([0])
 FRONT = [0]
@@ -396,13 +426,14 @@ REMS = [0]
 
 
 def counting(A, D, want):
-    """the counting function of what a table sees, with its whole number certificate"""
+    """the character of an invariant row space, with its integer certificate"""
     N, k = liftN(A, D)
     NO = N.astype(object)
     AO = A.astype(np.int64)
     sym = bool((N == N.T).all())
     idm = bool((NO @ NO == D * NO).all())
     fix = bool((N @ AO.T == D * AO.T).all())
+    inv = all(bool((N[np.ix_(pm, pm)] == N).all()) for pm in PA)
     rk = rank_exact((AO.T @ AO).tolist())
     tr = int(np.trace(N))
     vals = []
@@ -410,8 +441,8 @@ def counting(A, D, want):
         q, r = divmod(int(N[PA[i], IDX].sum()), D)
         REMS[0] += r
         vals.append(q)
-    ok = sym and idm and fix and tr == D * rk and rk == want and k == want
-    return np.array(vals, dtype=np.int64), rk, ok
+    ok = sym and idm and fix and inv and tr == D * rk and rk == want and k == want
+    return np.array(vals, dtype=np.int64), rk, ok, N
 
 
 def avg(u, v):
@@ -427,14 +458,14 @@ emit("Every count below is measured here.")
 emit("the object: {0} cuttings and {1} pieces, {2} pieces to a cutting, {3} cuttings "
      "through a piece".format(NS, NPO, int(RW.min()), int(CS.min())))
 gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
-     and int(CS.min()) == int(CS.max()) == 1975, "G0",
-     "the pieces per cutting and the cuttings through a piece are each the same "
-     "number for every one of them")
+     and int(CS.min()) == int(CS.max()) == 1975 and DISJOINT, "object census",
+     "all sample covers are pairwise interior-disjoint; the two incidence degrees "
+     "are constant")
 
 MV = sorted(set(M.ravel().tolist()))
 MR = sorted(set(M.sum(axis=1).tolist()))
 MK2 = sorted(set(M.sum(axis=0).tolist()))
-gate(MV == [0, 1] and MR == [8] and MK2 == [8] and NC == 192, "G1",
+gate(MV == [0, 1] and MR == [8] and MK2 == [8] and NC == 192, "eight-set table",
      "M is {0} eight piece sets by {1} pieces, entries {2}, every row sum {3}, every "
      "column sum {4}".format(NC, NPO, joins(MV), MR[0], MK2[0]))
 
@@ -449,7 +480,7 @@ def det3(R):
 IDF = np.eye(4, dtype=np.int64)
 FRM = bool((MM @ IV == IDF[None, :, :]).all())
 RD = sorted(set(det3(R) for R in ROT))
-gate(FRM and len(ROT) == 24 and RD == [1] and len(GG) == 48, "G18",
+gate(FRM and len(ROT) == 24 and RD == [1] and len(GG) == 48, "piece frames",
      "all {0} piece frames invert exactly over the whole numbers, and the {1} "
      "rotations behind the sample points have determinant {2}".format(
          NPIECE, len(ROT), RD[0]))
@@ -458,16 +489,30 @@ HIT = INCL @ M.T
 HV = sorted(set(HIT.ravel().tolist()))
 DBL = int(HIT.sum())
 gate(HV == [1] and DBL == NS * NC and DBL == NPO * int(CS.min()) * MR[0]
-     and NPO == int(RW.min()) * MK2[0] and NS == MR[0] * int(CS.min()), "G19",
+     and NPO == int(RW.min()) * MK2[0] and NS == MR[0] * int(CS.min()),
+     "exact-cover double count",
      "every eight piece set meets every cutting exactly once, so {0} = {1} times {2} "
      "and {3} = {4} times {5}".format(
          NPO, int(RW.min()), MK2[0], NS, MR[0], int(CS.min())))
+
+MBAD = M.copy()
+MBAD[0, 0] = 1 - MBAD[0, 0]
+BAD_TABLE_OK = (sorted(set(MBAD.sum(axis=1).tolist())) == [8]
+                and sorted(set(MBAD.sum(axis=0).tolist())) == [8]
+                and bool((INCL @ MBAD.T == 1).all()))
+BAD_CUT = list(CUT_LOCAL[0])
+BAD_CUT[-1] = 0
+BAD_COVER = sum(MI[USED[p]].astype(np.int64) for p in BAD_CUT)
+BAD_DISJOINT = bool(SEP[np.ix_(BAD_CUT, BAD_CUT)].all())
+gate(not BAD_TABLE_OK and not bool((BAD_COVER == 1).all()) and not BAD_DISJOINT,
+     "rebuild mutation control",
+     "a fixed table-bit flip and a fixed piece replacement are both detected")
 
 SD = sorted(set(np.diag(S).tolist()))
 SR = sorted(set(S.sum(axis=1).tolist()))
 TR = int(np.trace(S))
 gate(bool((S == S.T).all()) and SD == [8] and SR == [64] and TR == 1536
-     and TR == NC * SD[0], "G2",
+     and TR == NC * SD[0], "Gram invariants",
      "S symmetric, diagonal {0}, row sum {1}, trace {2} = {3} times {4}".format(
          SD[0], SR[0], TR, NC, SD[0]))
 
@@ -485,7 +530,7 @@ WM = [NUL[i] for i in range(10)]
 emit("whole part of the spectrum, value:multiplicity  "
      + pairs([v for v, mu in WHOLE], dict((WHOLE[i][0], WM[i]) for i in range(10)))
      + ", adding to {0}".format(sum(WM)))
-gate(WM == [mu for v, mu in WHOLE] and sum(WM) == 136, "G3",
+gate(WM == [mu for v, mu in WHOLE] and sum(WM) == 136, "integer spectrum",
      "each whole candidate has the nullity claimed for it and the ten of them carry "
      "{0} of the {1}".format(sum(WM), NC))
 
@@ -494,15 +539,15 @@ emit("non whole factors, high coefficient first, by multiplicity: " + "; ".join(
     for i, (co, mu, dg) in enumerate(FACTS[10:])))
 
 QN = NUL[10:13]
-gate(QN == [2 * mu for co, mu in QUAD] and sum(QN) == 32, "G4",
+gate(QN == [2 * mu for co, mu in QUAD] and sum(QN) == 32, "quadratic spectrum",
      "the three quadratic factors have nullity {0}, twice the multiplicities {1}, "
      "adding to {2}".format(joins(QN), joins([mu for co, mu in QUAD]), sum(QN)))
 
-gate(NUL[13] == 3 * CUBE[1] and NUL[13] == 24, "G5",
+gate(NUL[13] == 3 * CUBE[1] and NUL[13] == 24, "cubic spectrum",
      "the cubic factor has nullity {0}, three times the multiplicity {1}".format(
          NUL[13], CUBE[1]))
 
-gate(sum(NUL) == 192 and sum(NUL) == NC, "G6",
+gate(sum(NUL) == 192 and sum(NUL) == NC, "spectrum completeness",
      "the fourteen nullities add to {0}, the full size of S; {1} whole and {2} "
      "not".format(sum(NUL), sum(WM), sum(NUL[10:])))
 
@@ -512,7 +557,7 @@ for i in range(NC):
 for co, mu, dg in FACTS:
     RUN = polymat(co).astype(object) @ RUN
 NZP = int((RUN != 0).sum())
-gate(NZP == 0, "G7",
+gate(NZP == 0, "annihilating polynomial",
      "the fourteen factors multiplied one at a time leave {0} nonzero entries, so "
      "their product kills S over the whole numbers".format(NZP))
 
@@ -530,15 +575,17 @@ emit("irreducibility: quadratic discriminants {0}, cubic {1}, none a perfect "
      "square; {2} cubic root candidates tried, {3} worked".format(
          joins(DISC), DC, len(CAND), len(HITS)))
 gate(DIFF and all(sqfree(x) for x in DISC) and DISC == [80, 336, 1424]
-     and len(CAND) == 36 and HITS == [] and DC == 8640512 and sqfree(DC), "G8",
+     and len(CAND) == 36 and HITS == [] and DC == 8640512 and sqfree(DC),
+     "irreducible factors",
      "the fourteen factors are pairwise different and none of the four non whole "
      "ones breaks up over the whole numbers")
 
 TW = sum(v * WM[i] for i, (v, mu) in enumerate(WHOLE))
 TQ = sum(-co[1] * (QN[i] // 2) for i, (co, mu) in enumerate(QUAD))
 TC = -b * (NUL[13] // 3)
-gate(TW == 592 and TQ == 592 and TC == 352 and TW + TQ + TC == TR, "G9",
-     "trace split from the sums of roots: {0} + {1} + {2} = {3}, the measured trace "
+gate(TW == 592 and TQ == 592 and TC == 352 and TW + TQ + TC == TR,
+     "trace checksum",
+     "trace checksum from the sums of roots: {0} + {1} + {2} = {3}, the measured trace "
      "of S".format(TW, TQ, TC, TW + TQ + TC))
 
 BAD = np.zeros((NC, NC), dtype=object)
@@ -549,9 +596,9 @@ for co, mu, dg in FACTS[:13]:
 BAD = polymat((a, b, c, d - 1)).astype(object) @ BAD
 NZB = int((BAD != 0).sum())
 ALT = sum(NUL) - WM[7] + 9
-gate(NZB > 0 and NZB == 33024 and WM[7] == 10 and ALT == 191 and ALT != NC, "G10",
-     "control: the wrong cubic constant leaves {0} nonzero entries, and multiplicity "
-     "{1} at {2} would put the fourteen nullities at {3}".format(
+gate(NZB > 0 and NZB == 33024 and WM[7] == 10 and ALT == 191 and ALT != NC,
+     "spectrum mutation control",
+     "changed cubic leaves {0} nonzeros; multiplicity {1} at {2} gives total {3}".format(
          NZB, 9, WHOLE[7][0], ALT))
 
 CBIT = []
@@ -571,27 +618,51 @@ RC = sorted(ROWC)[0]
 NDIST = sum(dg for (co, mu, dg), nl in zip(FACTS, NUL) if nl > 0)
 NDW = sum(dg for (co, mu, dg), nl in zip(FACTS[:10], NUL[:10]) if nl > 0)
 NDN = NDIST - NDW
-NMAT = len(OFFV) + 1
+DIAG = np.eye(NC, dtype=bool)
+REL = [IDN] + [((S == v) & ~DIAG).astype(np.int64) for v in OFFV]
+RELATION_FORM = bool((S == 8 * REL[0] + REL[2] + 2 * REL[3] + 4 * REL[4]).all())
+VAR_PRODUCTS = []
+for ia, A in enumerate(REL):
+    for ib, B in enumerate(REL):
+        C = A @ B
+        for ir, R in enumerate(REL):
+            z = np.unique(C[R.astype(bool)])
+            if len(z) > 1:
+                VAR_PRODUCTS.append((ia, ib, ir, int(z.min()), int(z.max())))
+                break
 emit("sharing: {0} distinct off diagonal values; each of the {1} rows carries "
      "value:count ".format(len(OFFV), NC) + pairs(OFFV, dict(zip(OFFV, RC)))
      + ", adding to {0}".format(sum(RC)))
-emit("the identity and one graph per value are {0} matrices, so a span kept inside "
-     "itself by products would allow at most {0} distinct eigenvalues".format(NMAT))
+emit("product variation: {0} ordered pairs of sharing-relation matrices vary within "
+     "at least one relation class".format(len(VAR_PRODUCTS)))
 gate(SHOK and len(OFFV) == 4 and OFFV == [0, 1, 2, 4] and len(ROWC) == 1
      and sorted(RC, reverse=True) == [157, 20, 10, 4] and sum(RC) == 191
-     and NDIST == 19 and NDW == 10 and NDN == 9 and NDIST > NMAT, "G11",
-     "shared piece counts match S off the diagonal, and S has {0} distinct "
-     "eigenvalues, {1} whole and {2} not, more than {3}".format(NDIST, NDW, NDN, NMAT))
+     and NDIST == 19 and NDW == 10 and NDN == 9 and RELATION_FORM
+     and len(VAR_PRODUCTS) == 16 and VAR_PRODUCTS[0][:2] == (1, 1),
+     "sharing product witnesses",
+     "S has {0} distinct eigenvalues and {1} ordered relation products vary within a "
+     "sharing class".format(NDIST, len(VAR_PRODUCTS)))
+
+BAD_SHARING = S.copy()
+BAD_SHARING[0, 1] += 1
+BAD_SHARING[1, 0] += 1
+BAD_SHARING_OK = all(bin(CBIT[i] & CBIT[j]).count("1") == int(BAD_SHARING[i, j])
+                     for i in range(NC) for j in range(NC) if i != j)
+gate(not BAD_SHARING_OK, "sharing mutation control",
+     "a fixed corrupted shared-piece count is detected")
 
 PP = avg(CPERM, CPERM)
-gate(NG == 384 and len(set(FULL)) == 384 and len(ORB) == NPO and PP == 104, "G12",
-     "{0} distinct maps permuting the {1} pieces in one orbit, and the average of "
-     "c_perm against itself is {2}".format(NG, NPO, PP))
+gate(NG == 384 and len(set(FULL)) == 384 and len(ORB) == NPO and PP == 104
+     and PERMOK and GROUP_CLOSED, "four-cube relabelling action",
+     "{0} distinct permutations form a group on {1} pieces in one orbit; character "
+     "norm {2}".format(NG, NPO, PP))
+gate(GROUP_MUTATION_CAUGHT, "group-action mutation control",
+     "a fixed duplicated image in one proposed map is detected")
 
 
 def side(A, D, want, nm, tag, wv, wb, wx):
     """measure and gate one table's counting functions"""
-    CV, rk, ok = counting(A, D, want)
+    CV, rk, ok, N = counting(A, D, want)
     CB2 = CPERM - CV
     ONES = np.ones(NG, dtype=np.int64)
     vv, vb, bb = avg(CV, CV), avg(CV, CB2), avg(CB2, CB2)
@@ -599,34 +670,43 @@ def side(A, D, want, nm, tag, wv, wb, wx):
     tot = vv + bb + 2 * vb
     gate(ok and rk == want and vv == wv and bb == wb and vb == wx and vt == 1
          and bt == 0 and tot == PP, "{0}".format(tag),
-         "{0} side rank {1}: seen {2}, unseen {3}, cross {4}, constant {5} and {6}, "
-         "adding to {7}".format(nm, rk, vv, bb, vb, vt, bt, tot))
-    return CV
+         "{0} rank {1}, invariant: row-space {2}, complement {3}, cross {4}, constants "
+         "{5} and {6}".format(nm, rk, vv, bb, vb, vt, bt))
+    return CV, N
 
 
-side(INCL, 960, 88, "cutting", "G13", 29, 33, 21)
-side(M, 320, 105, "eight set", "G14", 34, 28, 21)
+CVC, NCERT = side(INCL, 960, 88, "cutting", "cutting characters", 29, 33, 21)
+CVE, ECERT = side(M, 320, 105, "eight-set", "eight-set characters", 34, 28, 21)
 
 ONE = np.ones((1, NPO), dtype=np.int64)
-CO, RKO, OKO = counting(ONE, NPO, 1)
+CO, RKO, OKO, _ = counting(ONE, NPO, 1)
 CR = CPERM - CO
 XO, OO, RR = avg(CO, CR), avg(CO, CO), avg(CR, CR)
 gate(OKO and RKO == 1 and sorted(set(CO.tolist())) == [1] and XO == 0
-     and OO == 1 and RR == 103 and OO + RR + 2 * XO == PP, "G15",
-     "control: all ones and its perpendicular are whole pattern types: cross {0}, "
-     "one by one {1}, rest by rest {2}".format(XO, OO, RR))
+     and OO == 1 and RR == 103 and OO + RR + 2 * XO == PP,
+     "character decomposition control",
+     "the invariant all-ones line and its complement have cross inner product {0}; "
+     "self inner products {1} and {2}".format(XO, OO, RR))
 
-gate(REMS[0] == 0, "G16",
+COORD = np.zeros((1, NPO), dtype=np.int64)
+COORD[0, 0] = 1
+_, _, COORD_OK, _ = counting(COORD, 1, 1)
+gate(not COORD_OK, "character mutation control",
+     "a fixed non-invariant coordinate line is rejected by the conjugation check")
+
+gate(REMS[0] == 0, "exact character division",
      "every counting value and every average divides through with remainder {0} on "
      "both tables and on the control".format(REMS[0]))
 
 ELAP = time.monotonic() - T0
-RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
+RSS_DIVISOR = 1048576.0 if sys.platform == "darwin" else 1024.0
+RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / RSS_DIVISOR
 EBD = 300 * (int(ELAP // 300) + 1)
 RBD = 500 * (int(RSS // 500) + 1)
-gate(ELAP < 900.0 and RSS < 2500.0 and EBD <= 900 and RBD <= 2500, "G17",
+gate(ELAP < AUDIT_TIMEOUT_SEC and RSS < 2500.0 and EBD <= AUDIT_TIMEOUT_SEC
+     and RBD <= 2500, "resource bounds",
      "elapsed under {0} s and peak memory under {1} MB, measured in this run against "
-     "limits of {2} s and {3} MB".format(EBD, RBD, 900, 2500))
+     "limits of {2} s and {3} MB".format(EBD, RBD, AUDIT_TIMEOUT_SEC, 2500))
 
 TOT = "TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1])
 CNT = "stdout characters: {0}"

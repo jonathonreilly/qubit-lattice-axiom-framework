@@ -1,40 +1,44 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_cover_spectrum_cycle761_2026_08_09.py
-runner_sha256: ebf874a12a4b1bdc50e4069871e1e7004cfacc5590b7287364e1c7a103a8c81b
+runner_sha256: 3c35c0c8474edfa458d76e6d0b1c79fb8b94a8fd707b84ba2097c4b0052218ed
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 25.59
+elapsed_sec: 32.36
 status: ok
 ----- stdout -----
 Every count below is measured here.
 the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
-PASS G0  the pieces per cutting and the cuttings through a piece are each the same number for every one of them
-PASS G1  M is 192 eight piece sets by 192 pieces, entries 0 1, every row sum 8, every column sum 8
-PASS G18  all 2672 piece frames invert exactly over the whole numbers, and the 24 rotations behind the sample points have determinant 1
-PASS G19  every eight piece set meets every cutting exactly once, so 192 = 24 times 8 and 15800 = 8 times 1975
-PASS G2  S symmetric, diagonal 8, row sum 64, trace 1536 = 192 times 8
+PASS object census  all sample covers are pairwise interior-disjoint; the two incidence degrees are constant
+PASS eight-set table  M is 192 eight piece sets by 192 pieces, entries 0 1, every row sum 8, every column sum 8
+PASS piece frames  all 2672 piece frames invert exactly over the whole numbers, and the 24 rotations behind the sample points have determinant 1
+PASS exact-cover double count  every eight piece set meets every cutting exactly once, so 192 = 24 times 8 and 15800 = 8 times 1975
+PASS rebuild mutation control  a fixed table-bit flip and a fixed piece replacement are both detected
+PASS Gram invariants  S symmetric, diagonal 8, row sum 64, trace 1536 = 192 times 8
 whole part of the spectrum, value:multiplicity  0:87 2:8 4:8 8:3 10:8 12:6 16:2 20:10 24:3 64:1, adding to 136
-PASS G3  each whole candidate has the nullity claimed for it and the ten of them carry 136 of the 192
+PASS integer spectrum  each whole candidate has the nullity claimed for it and the ten of them carry 136 of the 192
 non whole factors, high coefficient first, by multiplicity: 1 -20 80 by 6; 1 -44 400 by 6; 1 -52 320 by 4; 1 -44 516 -1280 by 8
-PASS G4  the three quadratic factors have nullity 12 12 8, twice the multiplicities 6 6 4, adding to 32
-PASS G5  the cubic factor has nullity 24, three times the multiplicity 8
-PASS G6  the fourteen nullities add to 192, the full size of S; 136 whole and 56 not
-PASS G7  the fourteen factors multiplied one at a time leave 0 nonzero entries, so their product kills S over the whole numbers
+PASS quadratic spectrum  the three quadratic factors have nullity 12 12 8, twice the multiplicities 6 6 4, adding to 32
+PASS cubic spectrum  the cubic factor has nullity 24, three times the multiplicity 8
+PASS spectrum completeness  the fourteen nullities add to 192, the full size of S; 136 whole and 56 not
+PASS annihilating polynomial  the fourteen factors multiplied one at a time leave 0 nonzero entries, so their product kills S over the whole numbers
 irreducibility: quadratic discriminants 80 336 1424, cubic 8640512, none a perfect square; 36 cubic root candidates tried, 0 worked
-PASS G8  the fourteen factors are pairwise different and none of the four non whole ones breaks up over the whole numbers
-PASS G9  trace split from the sums of roots: 592 + 592 + 352 = 1536, the measured trace of S
-PASS G10  control: the wrong cubic constant leaves 33024 nonzero entries, and multiplicity 9 at 20 would put the fourteen nullities at 191
+PASS irreducible factors  the fourteen factors are pairwise different and none of the four non whole ones breaks up over the whole numbers
+PASS trace checksum  trace checksum from the sums of roots: 592 + 592 + 352 = 1536, the measured trace of S
+PASS spectrum mutation control  changed cubic leaves 33024 nonzeros; multiplicity 9 at 20 gives total 191
 sharing: 4 distinct off diagonal values; each of the 192 rows carries value:count 0:157 1:20 2:10 4:4, adding to 191
-the identity and one graph per value are 5 matrices, so a span kept inside itself by products would allow at most 5 distinct eigenvalues
-PASS G11  shared piece counts match S off the diagonal, and S has 19 distinct eigenvalues, 10 whole and 9 not, more than 5
-PASS G12  384 distinct maps permuting the 192 pieces in one orbit, and the average of c_perm against itself is 104
-PASS G13  cutting side rank 88: seen 29, unseen 33, cross 21, constant 1 and 0, adding to 104
-PASS G14  eight set side rank 105: seen 34, unseen 28, cross 21, constant 1 and 0, adding to 104
-PASS G15  control: all ones and its perpendicular are whole pattern types: cross 0, one by one 1, rest by rest 103
-PASS G16  every counting value and every average divides through with remainder 0 on both tables and on the control
-PASS G17  elapsed under 300 s and peak memory under 500 MB, measured in this run against limits of 900 s and 2500 MB
-stdout characters: 2956
-TOTAL: PASS=20 FAIL=0
+product variation: 16 ordered pairs of sharing-relation matrices vary within at least one relation class
+PASS sharing product witnesses  S has 19 distinct eigenvalues and 16 ordered relation products vary within a sharing class
+PASS sharing mutation control  a fixed corrupted shared-piece count is detected
+PASS four-cube relabelling action  384 distinct permutations form a group on 192 pieces in one orbit; character norm 104
+PASS group-action mutation control  a fixed duplicated image in one proposed map is detected
+PASS cutting characters  cutting rank 88, invariant: row-space 29, complement 33, cross 21, constants 1 and 0
+PASS eight-set characters  eight-set rank 105, invariant: row-space 34, complement 28, cross 21, constants 1 and 0
+PASS character decomposition control  the invariant all-ones line and its complement have cross inner product 0; self inner products 1 and 103
+PASS character mutation control  a fixed non-invariant coordinate line is rejected by the conjugation check
+PASS exact character division  every counting value and every average divides through with remainder 0 on both tables and on the control
+PASS resource bounds  elapsed under 300 s and peak memory under 500 MB, measured in this run against limits of 300 s and 2500 MB
+stdout characters: 3542
+TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----
 

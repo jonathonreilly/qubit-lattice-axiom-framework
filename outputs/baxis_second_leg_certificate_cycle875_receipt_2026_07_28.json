@@ -1,58 +1,65 @@
 {
  "audit": "unset",
  "authority": "none",
- "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review of the discharge map, hermetic-evidence pattern, and the scope sharpenings",
- "block": "toe-time-blockB1-20260802",
- "campaign": "toe-time-expansion-20260802",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); review-loop fix worker applied the iteration-1 findings",
  "checker": {
-  "all_corroborated": true,
+  "all_corroborated_after_fix": true,
   "attacks": 7,
-  "planted_defects_caught": [
-   "discharged B=4 row (A3)",
-   "truncated leg quote (A1)",
-   "O7 priced to 92 (A4)"
-  ]
+  "fail_closed": "landed-on-main pins and quotes are git-resolved fail-closed; sibling-branch copies carry no git-side claim and are labeled disk-byte self-consistency only",
+  "teeth": "any discharge-flavored status refutes; the 830/831 and 429/480 unresolved-in-F residues are recomputed from the cache and must be carried as open rival candidates; the 229 figure must be labeled clock-family/key incidences with the unique-key caveat"
  },
- "claim_type": "support",
+ "claim_scope": "finite-corpus numerical measurement at declared scope; nothing discharged, no no-rival or independent-rate conclusion",
+ "claim_type": "bounded_theorem",
  "cycles": [
   875
  ],
- "discharge_map": {
-  "discharged_at_scope": 6,
-  "open": 5,
-  "permanently_open": 1
+ "evidence_provenance": {
+  "landed_on_main": "premise doc + Cycle-869 runner and cache pinned at exact origin/main blobs, verified fail-closed",
+  "sibling_branch_disclosed_only": "outputs/cycle875_pinned_evidence/ -- 7 disclosed unaudited copies; disk-byte self-consistency only; the copied Cycle-866 source hashes to the runner_sha256 in the imported cache header; three caches normalized by removing one trailing blank line at EOF (original blobs disclosed in the primary)"
  },
  "files": {
   "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md": {
-   "git_blob": "ee88d4328e7963afbbb8bab5e7d34f4d39f28de5",
-   "sha256": "42469940b0d06c3ac721c27aaab34bee4dcec60fd548b9d02289b4c343da585c"
+   "git_blob": "7b4ec63502e8e56b7f0a517f02ec180f06796227",
+   "sha256": "0dba8729bb4ea1521aa56d6cb26531e5d1148800f0fa0efb3b84c1cdc8f0f73e"
   },
   "logs/runner-cache/frontier_cycle875_baxis_independent_check_2026_07_28.txt": {
-   "git_blob": "4d3996f63477352576f24fe8e895ee3d86c38dc6",
-   "sha256": "9a539e2d1c03aeb0f487d298ced4958c48de10b4766e502ddb4f669737b9e03b"
+   "git_blob": "34c7e0ad2e1c0eb436b86517485208f12bfe6f80",
+   "sha256": "23c2a06c86d2dcb0edb2fb456208dff31c1e9cd34a8d0fb8222b5921bcfe1fa7"
   },
   "logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt": {
-   "git_blob": "78d041fb8933b67c5866b1b326766562ac5dc884",
-   "sha256": "901c08e2c2b95bbfc2a17a2c2f0281874ebac5a9a9019e2bdf608e4952cccad0"
+   "git_blob": "e7c35bb13e72853860a070b486df7c02632f6b08",
+   "sha256": "34b594a06e352df499bdf14f2eaa7d84077e9546fdf0e3331bdf375ae17af254"
   },
   "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py": {
-   "git_blob": "8287ca90e3e5eb765e18ee3649ef7fb0a205b049",
-   "sha256": "15c0d8df9ff5ae5ca6bbe5632890df27682837fc2594368f20ee4e47f4118db6"
+   "git_blob": "7fe03ceeedec542da0b392a9e085134542ceecaf",
+   "sha256": "35a83d5bbcc54c9f35579cb1df6a43c1f84b928867b5950955f241b1ef17a6ac"
   },
   "scripts/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.py": {
-   "git_blob": "87b83219557f83dfbe345cd6928f74834695a326",
-   "sha256": "7d235165d0ded2dc098446e05ae44ed4deb363f4fbd9cae2ce04402041b3f9ed"
+   "git_blob": "4c97de90f018c5751d491a498044c7e9f9e082d4",
+   "sha256": "5b39d6c244c61e305150b565e0dc007361aa83ffd81aba2b494ae2ef3d39a26d"
   }
  },
- "hermetic_evidence": "outputs/cycle875_pinned_evidence/ \u2014 7 byte-exact copies double-pinned (git object at named commit + recomputed blob sha)",
+ "measurement_map": {
+  "measured_at_scope": 6,
+  "no_discharge_status_exists": true,
+  "open": 6,
+  "permanently_open": 1
+ },
  "note": "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md",
+ "review_loop": {
+  "date": "2026-08-08",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix_summary": "demoted the discharge certificate to a bounded finite-corpus measurement: no row discharges, the F-relation-to-identity bridge is the explicit open obligation O13, 229 is labeled clock-family/key incidences, claim type is bounded_theorem, Cycle-869 inputs re-pinned at landed origin/main blobs, the exact cache-producing Cycle-866 source included, checker attacks made fail-closed and evidence-sensitive",
+  "iteration": 1,
+  "reviewer": "Sol"
+ },
  "runtime_seconds": {
-  "checker": 27.3,
-  "primary": 9.1
+  "checker": 28.0,
+  "primary": 9.3
  },
  "sharpenings": [
-  "869 coverage decomposition: 13/480 = 12 identity + 1 substantive non-identity",
-  "full-corpus across-key: 1328/1328 nonzero F1 edges (strengthens); residue 229 keys (2.5x pair-clock headline); 329 F3 factor edges are relations, not translations"
+  "869 coverage decomposition: 13/480 = 12 identity-class + 1 tick-moving witness (1121 = 59*19 exactly)",
+  "full-corpus across-key: 1328/1328 nonzero-offset F1 edges; 229 clock-family/key incidences outside any nontrivial F1 class (sum of six per-label counts, NOT a unique-key residue); 329 F3 factor edges are relations between distinct gap words, not translations"
  ],
- "standing": "B_AXIS_NOT_DISCHARGED__SECOND_LEG_PARTIAL_AT_SCOPE"
+ "standing": "SINGLE_CLOCK_AXIS_PREMISE_NOT_DISCHARGED__FINITE_MEASUREMENTS_AT_SCOPE_ONLY"
 }

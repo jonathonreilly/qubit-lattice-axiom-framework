@@ -69,6 +69,14 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "staggered_fermion_card_2026-04-11": [
         "scripts/frontier_staggered_17card.py",
     ],
+    # The Cycle-875 single-record-clock second-leg measurement is co-load-
+    # bearing with its refute-spec'd independent checker (fail-closed pin and
+    # quote adjudication, unresolved-rival-residue recomputation, incidence
+    # normalization).  The checker runs the primary via subprocess and is
+    # never imported, so bind it to the packet explicitly here.
+    "baxis_second_leg_certificate_cycle875_support_note_2026-07-28": [
+        "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py",
+    ],
 }
 
 

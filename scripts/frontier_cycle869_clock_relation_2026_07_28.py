@@ -1,32 +1,39 @@
 #!/usr/bin/env python3
-"""Cycle 869: the local-clock relation theory on the B=3 substrate.
+"""Cycle 869: a bounded finite-corpus measurement of the local-clock relation
+on the B=3 substrate.
 
-Cycle 866 reported that at B=3/4 the bank-pair synchronisation cadences
-fragment: every pair carries its own signature and no global record-time
-exists.  This runner does not reuse that claim; it rebuilds the substrate
-from the tracked Cycle-719 controller core and asks the next question.
+This runner rebuilds its whole corpus from the tracked Cycle-719 controller
+core (the only declared repository input) and asks:
 
-    Given that each bank-pair carries its OWN clock, is there a LAWFUL
-    RELATION between those local clocks -- an exact dictionary carrying
-    one pair's cadence onto another's, within a key and across keys?
+    Given that each bank-pair carries its OWN clock, is there an exact
+    dictionary inside a declared transformation family carrying one pair's
+    cadence onto another's, within a key and across keys?
+
+Provenance context (non-load-bearing): an earlier exploration referred to as
+Cycle 866 reported fragmented pair cadences at B=3/4.  No landed Cycle-866
+artifact exists on origin/main; that report is motivation only, is never
+executed or imported here, and carries no authority in this measurement.
 
 Two clock levels are measured, both from single-bit ``pack_state`` probes of
 the watched registers:
 
   L1  bank clock      -- ticks at which bank b alone is clean
   L2  pair clock      -- ticks at which banks i and j are jointly clean
-                         (this is the Cycle-866 "sync cadence")
 
 The transformation family F is DECLARED UP FRONT (see FAMILY) and is the
 only thing this runner searches.  A relation found inside F is reported with
 an exactly re-verified witness; exhaustion of F is reported as a priced
-negative naming F, its parameter ranges, and its declared search caps.
+family-scoped negative naming F, its parameter ranges, and its declared
+search caps -- never as a universal untranslatability claim.
 
 Every gate in this runner tests STRUCTURE (well-formedness, definitional
 identities, re-verification of witnesses, positive and negative controls on
 the tests themselves).  No gate tests for a preferred verdict: the relation
 verdict is computed from the measured corpus and is not compared against any
-expected value.
+expected value.  Consequently the terminal marker certifies MEASUREMENT
+INTEGRITY ONLY (structure, controls, witness re-verification, bookkeeping
+closure); it is not a theorem certificate, and the emitted verdict fields
+are measurements to be read, not gated claims.
 """
 from __future__ import annotations
 
@@ -87,41 +94,42 @@ WITNESS_PRINT_CAP = 4
 SAMPLE_PRINT_CAP = 6
 
 FAMILY = (
-    "F1  CONSTANT_TIME_OFFSET      Y = X + c exactly, as sets, over the whole "
-    "horizon.  Witness c in [-H,H].",
-    "F1W WINDOWED_TIME_OFFSET      the WHOLE of Y lies inside the window "
+    "CONSTANT_TIME_OFFSET (alias F1)    Y = X + c exactly, as sets, over the "
+    "whole horizon.  Witness c in [-H,H].",
+    "WINDOWED_TIME_OFFSET (alias F1W)   the WHOLE of Y lies inside the window "
     "[max(0,c), min(H,H+c)] in which a shift by c is fully observed, and there "
     "Y = (X + c).  X may carry extra events that the shift pushes outside the "
     "horizon; Y may not.  Candidate c drawn from differences of the first/last "
     f"{WINDOWED_OFFSET_ANCHORS} events of each cadence, plus c=0.",
-    "F2A TICK_AFFINE               |X| = |Y| >= 3 and y_n = a*x_n + b for all "
-    "n with a a positive rational, b rational; a != 1 (a = 1 is F1).  Witness "
-    "(a,b) solved from the endpoints and re-verified exactly in Fraction "
-    "arithmetic on every event.",
-    "F2B INDEX_AFFINE              Y is the arithmetic-index subsequence "
+    "TICK_AFFINE (alias F2A)            |X| = |Y| >= 3 and y_n = a*x_n + b for "
+    "all n with a a positive rational, b rational; a != 1 (a = 1 is the "
+    "constant time offset, alias F1).  Witness (a,b) solved from the endpoints "
+    "and re-verified exactly in Fraction arithmetic on every event.",
+    "INDEX_AFFINE (alias F2B)           Y is the arithmetic-index subsequence "
     "y_n = x_{s*n + r} of X, s >= 1, r >= 0, run to exhaustion "
     "(r + s*|Y| >= |X|), so Y is exactly reconstructible from X and (s,r).",
-    "F3  INDEX_LAG_PLUS_OFFSET     y_n = x_{n+L} + d for every n in [0,|Y|), "
-    f"with |Y| >= {MIN_LAG_OVERLAP}.  This is periodic interleaving with lag: "
-    "Y's whole gap word is a contiguous factor of X's at lag L, replayed at "
-    "time offset d.  Witness (L,d).",
-    "F3P PARTIAL_LAG_OVERLAP       the same map as F3 but on a PARTIAL "
-    "overlap: y_n = x_{n+L} + d holds on a contiguous run of at least "
-    f"{MIN_LAG_OVERLAP} events covering at least "
+    "INDEX_LAG_PLUS_OFFSET (alias F3)   y_n = x_{n+L} + d for every n in "
+    f"[0,|Y|), with |Y| >= {MIN_LAG_OVERLAP}.  This is periodic interleaving "
+    "with lag: Y's whole gap word is a contiguous factor of X's at lag L, "
+    "replayed at time offset d.  Witness (L,d).",
+    "PARTIAL_LAG_OVERLAP (alias F3P)    the same map as the index-lag member "
+    "but on a PARTIAL overlap: y_n = x_{n+L} + d holds on a contiguous run of "
+    f"at least {MIN_LAG_OVERLAP} events covering at least "
     f"{PARTIAL_COVERAGE_FLOOR.numerator}/{PARTIAL_COVERAGE_FLOOR.denominator} "
-    "of the shorter clock, with the rest of both clocks unexplained.  F3P is "
-    "reported as a PARTIAL match, never as a dictionary: it does not carry one "
-    "whole cadence onto another.  Witness (L,d,overlap,coverage).",
-    "F4  PERIODIC_RESIDUE_LAW      Beyond their transients both cadences are "
-    "unions of residue classes modulo one common period P, and the residue "
+    "of the shorter clock, with the rest of both clocks unexplained.  The "
+    "partial-lag member is reported as a PARTIAL match, never as a dictionary: "
+    "it does not carry one whole cadence onto another.  Witness "
+    "(L,d,overlap,coverage).",
+    "PERIODIC_RESIDUE_LAW (alias F4)    Beyond their transients both cadences "
+    "are unions of residue classes modulo one common period P, and the residue "
     "sets differ by a rotation: R_Y = R_X + c (mod P).  Neither clock may be "
     "SATURATED, and both residue sets must be PROPER subsets of Z_P.  The "
     "block is read off the tail window and the transient is then pushed back "
-    "as far as the gap word allows, so the least transient is found exactly "
-    "rather than picked off a ladder.  F4 is a TAIL law by construction: it is "
-    "insensitive to any edit before the transient, because the transient is "
-    "free to move past it while enough whole periods survive.  Witness "
-    "(P,c,transients).",
+    "as far as the gap word allows, so the least transient FOR THE SELECTED "
+    "block is found exactly rather than picked off a ladder.  The periodic "
+    "member is a TAIL law by construction: it is insensitive to any edit "
+    "before the transient, because the transient is free to move past it "
+    "while enough whole periods survive.  Witness (P,c,transients).",
 )
 SATURATION_NOTE = (
     "A clock is SATURATED when it is clean at every chunk boundary from some "
@@ -138,11 +146,13 @@ EVIDENCE_NOTE = (
     "reported but kept out of the headline coverage figure."
 )
 FAMILY_CLOSURE = (
-    "F is searched in the order F1, F1W, F2A, F2B, F3, F3P, F4 and the first "
-    "member that holds is reported.  NO_RELATION_IN_F means every member was "
-    "searched over its declared parameter range and refused a witness; it is "
-    "a negative priced to F and its caps, not a claim about all conceivable "
-    "transformations."
+    "F is searched in the order constant time offset (F1), windowed time "
+    "offset (F1W), tick affine (F2A), index affine (F2B), index lag plus "
+    "offset (F3), partial lag overlap (F3P), periodic residue law (F4), and "
+    "the first member that holds is reported.  NO_RELATION_IN_F means every "
+    "member was searched over its declared parameter range and refused a "
+    "witness; it is a negative priced to F and its caps, not a claim about "
+    "all conceivable transformations."
 )
 
 
@@ -339,12 +349,15 @@ def saturation_profile(cadence, horizon=HORIZON_CHUNKS):
 
 
 def period_profile(cadence):
-    """Least eventual time period of a cadence, or ``None``.
+    """A DETECTOR-SELECTED eventual time period of a cadence, or ``None``.
 
-    The block is read off the TAIL window -- the eventual behaviour is what a
-    period claims -- and the transient is then pushed back as far as the gap
-    word allows.  This is O(len) and finds the least transient exactly, so the
-    result does not depend on any transient-offset ladder.
+    Contract: the detector reads a repeating block off the declared TAIL
+    ladder and reports the smallest period it finds there, then pushes the
+    transient back as far as the gap word allows (exactly, for the selected
+    block).  The output is a SELECTED DETECTED period under this finite
+    predicate -- NOT a least-period claim: proper divisors below the ladder's
+    reach may also be supported by the cadence, and the direct-membership
+    adjudication of any period claim is delegated to the independent checker.
     """
     gaps = gaps_of(cadence)
     if len(gaps) < MIN_PERIOD_REPEATS:
@@ -638,34 +651,79 @@ def apply_witness(x_profile, witness):
 
 
 def verify_witness(x_profile, y_profile, witness):
-    """Exact re-verification of a reported witness, independent of the search."""
+    """Exact re-verification of a reported witness against the member's
+    COMPLETE declared definition, independent of the search that produced it.
+
+    Every branch enforces the member's whole contract (window shape, overlap
+    floors, coverage floor, bounds, both periods) rather than a filtered or
+    partial restatement of it, so a malformed witness fails closed.
+    """
     member = witness["member"]
+    x = x_profile["ticks"]
+    y = y_profile["ticks"]
+    if member == "F2A":
+        # The tick-affine member DECLARES a positive rational slope with
+        # a != 1 (a = 1 is constant-offset territory) on equal-length
+        # cadences of at least three events; a witness outside that box is
+        # malformed and must fail closed, whatever it rebuilds.
+        if witness["a_den"] == 0 or witness["b_den"] == 0:
+            return False
+        slope = Fraction(witness["a_num"], witness["a_den"])
+        if slope <= 0 or slope == 1:
+            return False
+        if len(x) != len(y) or len(x) < 3:
+            return False
+    if member == "F2B" and (witness["s"] < 1 or witness["r"] < 0):
+        return False
+    if member == "F3":
+        lag, overlap = witness["L"], witness["overlap"]
+        if (overlap != len(y) or overlap < MIN_LAG_OVERLAP
+                or lag < 0 or lag + overlap > len(x)):
+            return False
     rebuilt = apply_witness(x_profile, witness)
     if rebuilt is not None:
-        if member == "F2B":
-            return rebuilt == y_profile["ticks"]
-        return rebuilt == y_profile["ticks"]
+        return rebuilt == y
     if member == "F1W":
-        low, high = witness["window"]
         offset = witness["c"]
-        left = {tick + offset for tick in x_profile["ticks"]
-                if low - offset <= tick <= high - offset}
-        right = {tick for tick in y_profile["ticks"] if low <= tick <= high}
-        return left == right and bool(right)
+        low, high = witness["window"]
+        # The window is DEFINED by the offset and the horizon; a witness may
+        # not shrink it, and the WHOLE of Y must lie inside it.
+        if [low, high] != [max(0, offset),
+                           min(HORIZON_CHUNKS, HORIZON_CHUNKS + offset)]:
+            return False
+        if not y or y[0] < low or y[-1] > high:
+            return False
+        shifted = {tick + offset for tick in x if low <= tick + offset <= high}
+        return shifted == set(y) and bool(y)
     if member == "F3P":
-        source_ticks = x_profile["ticks"]
         lag, shift, overlap = witness["L"], witness["d"], witness["overlap"]
+        shorter = min(len(x), len(y))
+        if shorter == 0 or overlap < MIN_LAG_OVERLAP:
+            return False
+        if Fraction(overlap, shorter) < PARTIAL_COVERAGE_FLOOR:
+            return False
         start = max(0, -lag)
+        if (start + lag < 0 or start + lag + overlap > len(x)
+                or start + overlap > len(y)):
+            return False
         rebuilt = tuple(
-            source_ticks[start + lag + ordinal] + shift
-            for ordinal in range(overlap)
+            x[start + lag + ordinal] + shift for ordinal in range(overlap)
         )
-        return rebuilt == y_profile["ticks"][start:start + overlap]
+        return rebuilt == y[start:start + overlap]
     if member == "F4":
         period, offset = witness["P"], witness["c"]
         left = x_profile["period"]
         right = y_profile["period"]
-        if left is None or right is None or left["period_ticks"] != period:
+        if left is None or right is None:
+            return False
+        if left["period_ticks"] != period or right["period_ticks"] != period:
+            return False
+        if x_profile["saturation"] is not None \
+                or y_profile["saturation"] is not None:
+            return False
+        if left["saturated"] or right["saturated"]:
+            return False
+        if not (left["shift_exact_on_window"] and right["shift_exact_on_window"]):
             return False
         mapped = {(value + offset) % period for value in left["residues"]}
         return mapped == set(right["residues"])
@@ -689,6 +747,7 @@ def family_controls(sample_profiles):
             continue
         checks = {}
         source_gap_values = set(source["gaps"])
+        source_tick_values = set(base)
 
         shifted = cadence_profile(tuple(tick + 7 for tick in base))
         found = relate(source, shifted)
@@ -709,14 +768,93 @@ def family_controls(sample_profiles):
         thinned = cadence_profile(base[1::3])
         found = relate(source, thinned)
         checks["F2B_positive"] = bool(
-            found and found["member"] in ("F2B", "F3")
+            found and found["member"] == "F2B"
+            and found["s"] == 3 and found["r"] == 1
             and verify_witness(source, thinned, found)
         )
 
         lagged = cadence_profile(tuple(tick + 11 for tick in base[3:]))
         found = relate(source, lagged)
         checks["F3_positive"] = bool(
-            found and verify_witness(source, lagged, found)
+            found and found["member"] == "F3"
+            and found["L"] == 3 and found["d"] == 11
+            and verify_witness(source, lagged, found)
+        )
+
+        # Windowed-offset positive: shift X far enough that its final event is
+        # pushed beyond the horizon, so only the windowed member can hold.
+        if base[-2] < HORIZON_CHUNKS:
+            window_shift = HORIZON_CHUNKS - base[-2]
+            windowed = tuple(
+                tick + window_shift for tick in base
+                if tick + window_shift <= HORIZON_CHUNKS
+            )
+            if 0 < len(windowed) < len(base):
+                windowed_profile = cadence_profile(windowed)
+                found = relate(source, windowed_profile)
+                checks["F1W_positive"] = bool(
+                    found and found["member"] == "F1W"
+                    and found["c"] == window_shift
+                    and verify_witness(source, windowed_profile, found)
+                )
+
+        # Partial-lag positive: a two-event alien head (values and leading gap
+        # absent from X) prepended to a shifted copy of X's opening run.  The
+        # whole-cadence members provably refuse it -- the head gap is not in
+        # X's gap word and the head values are not in X -- so only the partial
+        # member can explain the run.
+        run_length = max(MIN_LAG_OVERLAP, 12)
+        if len(base) >= run_length + 4:
+            run = tuple(tick + 13 for tick in base[:run_length])
+            partial_image = None
+            for head_gap in range(2, 65):
+                if head_gap in source_gap_values:
+                    continue
+                for join_gap in range(1, 65):
+                    high_head = run[0] - join_gap
+                    low_head = high_head - head_gap
+                    if low_head < 0:
+                        break
+                    if (low_head in source_tick_values
+                            or high_head in source_tick_values):
+                        continue
+                    partial_image = (low_head, high_head) + run
+                    break
+                if partial_image is not None:
+                    break
+            if partial_image is not None:
+                partial_profile = cadence_profile(partial_image)
+                found = relate(source, partial_profile)
+                checks["F3P_positive"] = bool(
+                    found and found["member"] == "F3P"
+                    and verify_witness(source, partial_profile, found)
+                )
+
+        # Periodic-residue positive: two eventually periodic cadences whose
+        # residue sets differ by a rotation that wraps, so no constant shift,
+        # affine, or index member holds.  On the stable window the rotation IS
+        # a set shift, so the permissive partial member would legitimately
+        # claim it first in family order; the control therefore exercises the
+        # periodic member's own test directly.
+        period_p = 50
+        rotation = 45
+        source_residues = (0, 7, 19)
+        target_residues = tuple(sorted(
+            (residue + rotation) % period_p for residue in source_residues
+        ))
+        periodic_x = cadence_profile((3, 27) + tuple(
+            100 + period_p * repeat + residue
+            for repeat in range(40) for residue in source_residues
+        ))
+        periodic_y = cadence_profile((9, 40) + tuple(
+            100 + period_p * repeat + residue
+            for repeat in range(40) for residue in target_residues
+        ))
+        found = f4_periodic_residue(periodic_x, periodic_y)
+        checks["F4_positive"] = bool(
+            found and found["member"] == "F4"
+            and found["P"] == period_p and found["c"] == rotation
+            and verify_witness(periodic_x, periodic_y, found)
         )
 
         # Negative 1: shift one interior tick by a delta that manufactures two
@@ -808,9 +946,12 @@ def family_controls(sample_profiles):
             break
     required = (
         "F1_positive",
+        "F1W_positive",
         "F2A_positive",
         "F2B_positive",
         "F3_positive",
+        "F3P_positive",
+        "F4_positive",
         "negative_one_tick_perturbation_refused_by_exact_members",
         "negative_perturbation_F4_only_by_moving_its_transient",
         "negative_one_tick_perturbation_partial_is_identity_only",
@@ -828,6 +969,59 @@ def family_controls(sample_profiles):
         and all(any(label in row for row in rows) for label in required)
     )
     return rows, passed
+
+
+def verifier_regression_probes():
+    """Adversarial malformed-witness probes: every witness below violates its
+    member's declared definition and ``verify_witness`` must REFUSE it.
+
+    The first two are the review's concrete break cases (a window-shrunk
+    windowed-offset witness and a unit-slope tick-affine witness); the rest
+    pin the remaining fail-closed guards (non-positive slope, zero index
+    step, overlap floor, coverage floor, period mismatch).  These gate the
+    verifier itself: a verifier that accepts any of them is broken, whatever
+    the corpus says.
+    """
+    probes = {}
+    tiny_x = cadence_profile((0, 1))
+    tiny_y = cadence_profile((1, 2, 100))
+    probes["F1W_window_shrunk_witness_refused"] = not verify_witness(
+        tiny_x, tiny_y, {"member": "F1W", "c": 1, "window": [1, 2]}
+    )
+    three_x = cadence_profile((0, 1, 2))
+    three_y = cadence_profile((1, 2, 3))
+    probes["F2A_unit_slope_witness_refused"] = not verify_witness(
+        three_x, three_y,
+        {"member": "F2A", "a_num": 1, "a_den": 1, "b_num": 1, "b_den": 1},
+    )
+    probes["F2A_nonpositive_slope_witness_refused"] = not verify_witness(
+        three_x, three_y,
+        {"member": "F2A", "a_num": -1, "a_den": 1, "b_num": 3, "b_den": 1},
+    )
+    ramp = cadence_profile(tuple(range(0, 40, 2)))
+    probes["F2B_zero_step_witness_refused"] = not verify_witness(
+        ramp, ramp, {"member": "F2B", "s": 0, "r": 0}
+    )
+    short_run = cadence_profile(tuple(tick + 5 for tick in ramp["ticks"][:4]))
+    probes["F3_below_overlap_floor_refused"] = not verify_witness(
+        ramp, short_run, {"member": "F3", "L": 0, "d": 5, "overlap": 4}
+    )
+    wide_x = cadence_profile(tuple(range(0, 200, 2)))
+    slim_y = cadence_profile(tuple(range(1, 41, 2)))
+    # The first eight events DO rebuild exactly; only the declared 1/2
+    # coverage floor may refuse this witness, so the floor is what is probed.
+    probes["F3P_below_coverage_floor_refused"] = not verify_witness(
+        wide_x, slim_y, {"member": "F3P", "L": 0, "d": 1, "overlap": 8}
+    )
+    periodic = cadence_profile((3, 27) + tuple(
+        100 + 50 * repeat + residue
+        for repeat in range(40) for residue in (0, 7, 19)
+    ))
+    unit_ramp = cadence_profile(tuple(range(40)))
+    probes["F4_period_mismatch_witness_refused"] = not verify_witness(
+        periodic, unit_ramp, {"member": "F4", "P": 50, "c": 0}
+    )
+    return probes
 
 
 # ----------------------------------------------------------------------- report
@@ -1078,7 +1272,9 @@ def main():
                 control_pool.append((f"{short_key(keys[lane])}/pair{index}", profile))
         if len(control_pool) >= 6:
             break
-    control_rows, controls_pass = family_controls(control_pool)
+    control_rows, family_controls_pass = family_controls(control_pool)
+    verifier_probes = verifier_regression_probes()
+    controls_pass = family_controls_pass and all(verifier_probes.values())
 
     # ------------------------------------------------- within-key comparisons
     def is_saturated(profile):
@@ -1091,6 +1287,7 @@ def main():
         witnesses = []
         thin_witnesses = []
         per_key_codes = []
+        nonidentity_keys = []
         witness_failures = 0
         comparable = 0
         substantive = 0
@@ -1149,8 +1346,14 @@ def main():
                     evidence["PARTIAL" if thin is False else "THIN_PARTIAL"] += 1
                     if not thin and not identity_like:
                         parameters["#SUBSTANTIVE_NONIDENTITY_PARTIAL"] += 1
+                        nonidentity_keys.append(
+                            f"{lane}:{labels[left]}|{labels[right]}"
+                        )
                 if not thin and not identity_like and found["member"] in FULL_MEMBERS:
                     parameters["#SUBSTANTIVE_NONIDENTITY"] += 1
+                    nonidentity_keys.append(
+                        f"{lane}:{labels[left]}|{labels[right]}"
+                    )
                 if found["member"] in ("F1", "F1W"):
                     parameters[f"{found['member']}:c={found['c']}"] += 1
                 elif found["member"] in ("F3", "F3P"):
@@ -1192,6 +1395,11 @@ def main():
             "substantive_nonidentity_partial_matches": (
                 parameters["#SUBSTANTIVE_NONIDENTITY_PARTIAL"]
             ),
+            # Keyed identifiers "<lane>:<from>|<to>" for every substantive
+            # non-identity relation (full and partial), published so an
+            # independent re-search can be gated on EXACT keyed witness-set
+            # equality rather than on count equality.
+            "substantive_nonidentity_relation_keys": sorted(nonidentity_keys),
             "substantive_partial_matches": evidence["PARTIAL"],
             "comparable_pairs_of_clocks": comparable,
             "substantive_pairs_of_clocks": substantive,
@@ -1344,8 +1552,10 @@ def main():
     )
 
     # -------------------------------------------------------------- the verdict
-    # The only nondegenerate periods present, expressed in ring units.  The
-    # arithmetic is computed, not asserted.
+    # The nondegenerate periods SELECTED by the declared tail-ladder detector,
+    # expressed in ring units.  The arithmetic is computed, not asserted, and
+    # the list is a detector selection, not a least-period census: membership
+    # testing may support proper divisors below the detector's reach.
     period_arithmetic = []
     for period in sorted(set(bank_period_hist) | set(pair_period_hist)):
         row = {
@@ -1371,6 +1581,12 @@ def main():
     unrelated_across = sum(
         block["sounding_keys"] - block["keys_in_nontrivial_F1_class"]
         for block in across_pair.values()
+    )
+    sounding_across = sum(
+        block["sounding_keys"] for block in across_pair.values()
+    )
+    in_class_across = sum(
+        block["keys_in_nontrivial_F1_class"] for block in across_pair.values()
     )
     substantive_nonidentity = within_pair["substantive_nonidentity_full_dictionaries"]
     substantive_partial = within_pair["substantive_partial_matches"]
@@ -1445,8 +1661,15 @@ def main():
         "within_key_substantive_nonidentity_partial_matches": (
             substantive_partial_nonidentity
         ),
-        "nondegenerate_periods_in_corpus": period_arithmetic,
-        "every_nondegenerate_period_is_whole_orbits": all(
+        "detector_selected_nondegenerate_periods": period_arithmetic,
+        "period_contract": (
+            "each listed period is the declared tail-ladder detector's "
+            "SELECTION; proper divisors below the detector's reach may also "
+            "be membership-supported; only the divisibility arithmetic (every "
+            "detected period is a whole number of 19-station orbits) is "
+            "claimed, never a least-period or only-period statement"
+        ),
+        "every_detected_period_is_whole_orbits": all(
             row["exact_multiple_of_stations"] for row in period_arithmetic
         ),
         "within_key_bank_clock_histogram": within_bank["verdicts"],
@@ -1455,6 +1678,15 @@ def main():
             f"{within_bank['substantive_pairs_of_clocks']}"
         ),
         "across_key_verdict": across_verdict,
+        "across_key_scope_note": (
+            "the across-key comparison first buckets sounding clocks by exact "
+            "gap-word equality and verifies constant-offset edges only WITHIN "
+            "those buckets (equal finite gap words already imply a constant "
+            "offset); it is a within-class verification over the observed "
+            "class occupancy, not a universal cross-key dictionary claim"
+        ),
+        "across_key_sounding_pair_clocks": sounding_across,
+        "across_key_pair_clocks_in_nontrivial_class": in_class_across,
         "across_key_keys_outside_any_nontrivial_F1_class": unrelated_across,
         "across_key_F1_edges": cross_key_edges,
         "across_key_F1_edges_with_nonzero_offset": cross_key_nonzero,
@@ -1477,8 +1709,22 @@ def main():
             f"{domination.get('ONE_BANK_GATES_THE_PAIR', 0)} are one bank clock "
             f"outright, {domination.get('BOTH_BANK_CLOCKS_IDENTICAL', 0)} are "
             f"both, and {domination.get('SILENT_PAIR', 0)} never sound.  "
-            f"Across keys, at a FIXED bank pair, {cross_key_nonzero} of "
-            f"{cross_key_edges} constant-offset edges carry a nonzero offset."
+            f"Across keys, at a FIXED bank pair, {in_class_across} of "
+            f"{sounding_across} sounding pair clocks fall in a nontrivial "
+            f"equal-gap-word class; the {cross_key_edges} constant-offset "
+            f"edges from class members to their class representative all "
+            f"carry a nonzero offset ({cross_key_nonzero} nonzero), and "
+            f"{unrelated_across} sounding clocks are singletons with no "
+            f"in-family translation partner in this corpus.  This is a "
+            f"within-class verification over the observed class occupancy, "
+            f"not a universal cross-key dictionary."
+        ),
+        "terminal_marker_semantics": (
+            "the terminal marker certifies MEASUREMENT INTEGRITY ONLY "
+            "(structure, controls, witness re-verification, bookkeeping "
+            "closure); it does not gate any preferred verdict value and is "
+            "not a theorem certificate -- the verdict fields above are "
+            "measurements to be read"
         ),
         "pricing": pricing,
     }
@@ -1489,6 +1735,9 @@ def main():
         and substantive_related <= related
         and sum(domination.values()) == lane_count * len(BANK_PAIRS)
         and domination.get("SILENT_PAIR", 0) == empty_pair
+        and in_class_across + unrelated_across == sounding_across
+        and len(within_pair["substantive_nonidentity_relation_keys"])
+        == substantive_nonidentity + substantive_partial_nonidentity
     )
 
     # ------------------------------------------------------------------ controls
@@ -1518,9 +1767,12 @@ def main():
     dumps = {"sort_keys": True, "separators": (",", ":")}
     lines = [
         "SETUP_JSON " + json.dumps(setup, **dumps),
-        "QUESTION: Cycle 866 found that at B=3/4 every bank pair carries its own "
-        "sync cadence and no global record-time exists.  This runner asks whether "
-        "those local clocks are nevertheless related by an exact dictionary.",
+        "QUESTION: do the local pair-clocks of the B=3 substrate stand in an "
+        "exact declared-family relation -- within a key and across keys?  "
+        "(Motivating context, non-authoritative and non-load-bearing: an "
+        "earlier unlanded exploration referred to as Cycle 866 reported "
+        "fragmented pair cadences; no landed Cycle-866 artifact exists on the "
+        "main line, and nothing here executes or inherits it.)",
         "FAMILY_DECLARED :: " + json.dumps(list(FAMILY), **dumps),
         "FAMILY_CLOSURE: " + FAMILY_CLOSURE,
         "PASS A_SUBSTRATE :: " + json.dumps({
@@ -1558,13 +1810,23 @@ def main():
         ("PASS" if controls_pass else "FAIL") + " C_FAMILY_CONTROLS :: "
         + json.dumps({
             "meaning": (
-                "Positive controls build synthetic images under each family "
-                "member and require acceptance with a witness that re-derives "
-                "the image exactly.  Negative controls require refusal of a "
-                "one-tick perturbation that manufactures two gap values absent "
-                "from the source, and refusal of a triangular-index thinning.  "
-                "These gate the tests themselves, not the outcome."
+                "Positive controls build a synthetic image for EVERY declared "
+                "family member -- constant, windowed, affine, index, lag, and "
+                "partial-lag images through the full family search order, and "
+                "the periodic-residue image through that member's own test "
+                "directly (the permissive partial member legitimately precedes "
+                "it in search order on rotated-residue images) -- and require "
+                "acceptance with a witness that re-verifies against the "
+                "member's complete definition.  Negative controls require "
+                "refusal of a one-tick perturbation that manufactures two gap "
+                "values absent from the source, and refusal of a "
+                "triangular-index thinning.  Verifier regression probes feed "
+                "known-malformed witnesses -- including the review's "
+                "window-shrunk windowed-offset and unit-slope tick-affine "
+                "break cases -- and require refusal by verify_witness.  These "
+                "gate the tests themselves, not the outcome."
             ),
+            "verifier_malformed_witness_probes": verifier_probes,
             "constructible_negative_controls": {
                 "one_tick_perturbation": sum(
                     1 for row in control_rows
@@ -1651,7 +1913,7 @@ def main():
             ("PASS" if h_prepass and h_core["stdout_under_150KB"] else "FAIL")
             + " H_CONTROLS :: " + json.dumps(h_core, **dumps)
         )
-        final = "CYCLE869_CLOCK_RELATION_PASS"
+        final = "CYCLE869_CLOCK_RELATION_MEASUREMENT_PASS"
         stdout_bytes = len(("\n".join(lines + [h_line, final]) + "\n").encode())
     h_core["stdout_bytes"] = stdout_bytes
     h_core["stdout_under_150KB"] = stdout_bytes < STDOUT_LIMIT_BYTES
@@ -1660,7 +1922,9 @@ def main():
         h_core, **dumps
     )
     final = (
-        "CYCLE869_CLOCK_RELATION_PASS" if all(verdicts) and h_pass
+        # MEASUREMENT_PASS certifies measurement integrity only; it is not a
+        # theorem certificate (see terminal_marker_semantics in the G block).
+        "CYCLE869_CLOCK_RELATION_MEASUREMENT_PASS" if all(verdicts) and h_pass
         else "CYCLE869_CLOCK_RELATION_HONEST_FAIL"
     )
     print("\n".join(lines + [h_line, final]))

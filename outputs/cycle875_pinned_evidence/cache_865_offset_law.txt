@@ -16,4 +16,3 @@ SUMMARY_JSON {"checks":{"A_OFFSET_CENSUS":true,"B_PREDICTOR_TOURNAMENT":true,"C_
 CYCLE865_OFFSET_LAW_PASS
 
 ----- stderr -----
-

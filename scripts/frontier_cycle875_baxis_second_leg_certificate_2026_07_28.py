@@ -1,32 +1,53 @@
-"""Cycle 875: the B-AXIS second-leg discharge certificate (SUPPORT, not a theorem).
+"""Cycle 875: the single-record-clock second leg, measured (bounded_theorem:
+a finite-corpus numerical measurement; legacy alias for the premise: B-AXIS).
 
-WHAT THIS IS.  The ANOMALY_FORCES_TIME theorem carries a declared premise
-B-AXIS.  Cycle 864's certificate D_B_AXIS_CONTACT states the condition under
-which that premise would stop being a premise, and splits it into two legs:
-(i) the landed temporal laws restate in record-time, and (ii) the axis admits
-no second record-clock.  Leg (i) is the 863-865 arc's evidence.  Leg (ii) was
-declared UNTESTED there and handed to the scaled-bank construction.
+WHAT THIS IS.  The ANOMALY_FORCES_TIME theorem carries a declared premise,
+the evolution-axis single-clock premise (legacy alias: B-AXIS).  Cycle 864's
+certificate D_B_AXIS_CONTACT states the condition under which that premise
+would stop being a premise, and splits it into two legs: (i) the temporal
+laws restate in record-time, and (ii) the axis admits no second record-clock.
+Leg (i) is the 863-865 arc's evidence.  Leg (ii) was declared UNTESTED there
+and handed to the scaled-bank construction.
 
-This runner ASSEMBLES leg (ii): it quotes the premise and the two legs from
-their pinned sources, formalizes leg (ii) as a decidable statement at a
-declared scope, and classifies each leg-(ii) obligation as DISCHARGED_AT_SCOPE
-or OPEN against re-derived witnesses.
+This runner MEASURES the finite arithmetic that the pinned artifacts carry
+toward leg (ii): it quotes the premise and the two legs from their pinned
+sources, formalizes a finite surrogate LEG_II(S,C,F) at a declared scope, and
+records each obligation as MEASURED_AT_SCOPE (its declared finite recount ran
+and its arithmetic re-verified) or OPEN.  NO obligation is discharged: no row
+status in this file asserts absence of a rival clock, and the premise
+standing is constitutively NOT_DISCHARGED.
 
-WHAT THIS IS NOT.  This is an assembly certificate.  It does not promote
-B-AXIS to derived and it does not claim leg (ii) is closed.  The premise
-standing it emits is computed from the obligation table and is expected to
-remain NOT_DISCHARGED while any obligation is OPEN.  The standing is NOT
-compared against any desired value anywhere in this file: every integrity gate
-tests reproducibility, quote fidelity, arithmetic identity or provenance, and
-never tests for a preferred verdict.
+WHAT THIS IS NOT.  This is not a discharge certificate and not a no-go.
+"Independent" inside LEG_II means "not related by any member of the declared
+relation family F" -- a family-relative surrogate.  No cited or proved lemma
+identifies an F-relation or integer commensurability with "same physical
+record-clock", so no measured row supports a "no rival"/"independent rate"
+conclusion; that missing semantic bridge is carried as the OPEN obligation
+O13.  Every integrity gate below tests reproducibility, quote fidelity,
+arithmetic identity or provenance, never a preferred verdict.
 
-EVIDENCE PROVENANCE.  The 863-866 artifacts were produced on sibling branches
-(physics-loop/proof-grade-blockP24/P25-20260729, toe-time-blockF1-20260802) and
-are NOT present in this branch's working tree.  Byte-exact copies are committed
-under outputs/cycle875_pinned_evidence/ and every copy is verified here against
-the declared git blob sha1 of the original object, which proves the copy is
-byte-identical to the artifact at the named commit.  Nothing is trusted: the
-blob sha1 is recomputed from the bytes on disk, not asked of git.
+EVIDENCE PROVENANCE.  Two classes, declared per input:
+
+  LANDED_ON_MAIN: the premise doc and the Cycle-869 runner + cache are pinned
+  at the exact blobs landed on origin/main (the post-review Cycle-869
+  surface).  The blob sha1 is recomputed from bytes on disk against the
+  landed-blob constants below; a stale fork of that surface fails here.
+
+  SIBLING_BRANCH_DISCLOSED_ONLY: the 863-866 artifacts were produced on
+  sibling branches (physics-loop/proof-grade-blockP24/P25-20260729,
+  toe-time-blockF1-20260802) whose commits are ancestors of NEITHER this
+  branch NOR origin/main.  The copies under outputs/cycle875_pinned_evidence/
+  are DISCLOSED, UNAUDITED evidence: the recorded (commit, path, blob)
+  triples are disclosure of claimed origin, not a verification -- nothing in
+  the input closure reaches those commits, and this file makes no
+  byte-identity claim against them.  What IS checked, from disk bytes alone:
+  every copy hashes to its declared sha256/blob, and the copied Cycle-866
+  source hashes to exactly the runner_sha256 recorded in the imported
+  Cycle-866 cache header (the source that produced that cache).  Three cache
+  copies were normalized by removing one trailing blank line at EOF for repo
+  diff hygiene; their original blobs are disclosed in
+  PROVENANCE_NORMALIZATION.  These measured 863-866 values may be cited only
+  as unaudited branch-local support; they load-bear on nothing retained.
 
 RE-DERIVATION POLICY.  Cheap witnesses are re-run: the Cycle-869 primary
 (~9s) is executed as a subprocess and its stdout compared against the pinned
@@ -41,12 +62,13 @@ CERTIFICATES
                           byte offsets.
   B_FAMILY_DECLARATION    the declared candidate family is re-derived from
                           source (AST + payload), not asserted.
-  C_LEG_II_FORMALIZATION  leg (ii) stated as a decidable predicate at the
-                          declared scope, with its obligation decomposition.
+  C_LEG_II_FORMALIZATION  the finite surrogate LEG_II(S,C,F) stated with its
+                          obligation decomposition and its declared limits.
   D_WITNESS_REDERIVATION  every quoted headline recomputed from its payload;
                           agreement recorded per witness.
   E_LIVE_REDERIVATION     the Cycle-869 primary re-run and diffed.
-  F_DISCHARGE_MAP         per-obligation status with supporting artifact+sha.
+  F_MEASUREMENT_MAP       per-obligation status with supporting artifact+sha;
+                          nothing here discharges anything.
   G_CONTROLS              shas, blobs, blocklist, determinism, budgets.
 """
 from __future__ import annotations
@@ -97,28 +119,40 @@ EXPECTED_SHA256 = {
     PREMISE_DOC:
         "792e9c3d009c87529bd233ade9f191d76d9b1e1590e8073562644f0181a37b00",
     PRIMARY_869:
-        "1406bf829b19bb8ff9765b4f3e23a499467db98a6753e0b7d07cd983fab2f493",
+        "3ff406e5ddb9e4972c52a8e6e7681af04dfbaecf3c2dbc595dcf94ca0f09c4bd",
     CACHE_869:
-        "ea19cd18c30c769453e2e15a9186449712ef8b99535234fde25b2073f1efa1fd",
+        "586fd6a628142250c7fa859448e004fd445d9f479c71813afd50d0674a67b0fe",
     ARC_NOTE:
         "ce7274e92893f79064f99d4d246e2a25396f96f3ac2b2f97e0c110bdcc2af273",
     ARC_CHECK_CACHE:
-        "75104f5d11749e378d447da4b930cd0456f60fe85e41b5c73c59657d9cae8a90",
+        "6c0c5502fa81d9272fc0eac82722065837ef047066e429db4bd6d7997a011ead",
     CACHE_864:
-        "23adfab12899300445f00df870a89f19bb65903c1485b530631febd32fd3860f",
+        "04f75119d495f602666f28bee7f915c300a7ab4adfb944df5141faa98fe907f7",
     CACHE_865:
-        "c778ca722a80d7e45976ba5da1ab5c80cbce583b262c1a10c0e0fead8c85ef79",
+        "16958cc4321a174fe9b4520280ef23fd3be9970cb63a106b7731808bcb65ecbf",
     CACHE_866:
         "743e01f75fd7ccc0da42c3350273851ed44f2a97a850e08fc8ae8ff7de0c3ef4",
     SRC_ARC_CHECK:
         "d0c62a4388e90800e09d357757df0f3c32f47564c607c359c275c0674f42ed37",
     SRC_866:
-        "c96160b54e746a44b7b259c4dbcfaf8fd03fe30787ec5c2ab9dd93ace3809cf1",
+        "acabf4e0df9d2290842eb94599f19e2a7ea4a99dd7729905896feddb3c6822cc",
 }
 
-# Cross-branch provenance.  local evidence path -> (commit, original path,
-# git blob sha1 of the original object).  The blob sha1 is recomputed from the
-# committed bytes; agreement proves byte-identity with the named commit's blob.
+# LANDED_ON_MAIN pins.  path -> git blob sha1 of the exact object landed on
+# origin/main (the post-review Cycle-869 surface).  Recomputed from disk
+# bytes; a stale fork of the reviewed surface fails closed here.
+LANDED_MAIN_BLOBS = {
+    PREMISE_DOC: "25e44750e9d786f2f484ac6f896734430e3aca7a",
+    PRIMARY_869: "6f179e395498dce027225099b3a9293ab1389c03",
+    CACHE_869: "dbc876ba8433616b5ddb56f06a91202b8c934201",
+}
+
+# Sibling-branch provenance DISCLOSURE.  local evidence path ->
+# (claimed origin commit, original path, git blob sha1 of the LOCAL copy).
+# The named commits are ancestors of neither this branch nor origin/main, so
+# the triples are disclosure of claimed origin, NOT a verification: the only
+# thing checked is that the bytes on disk hash to the recorded blob/sha256
+# (self-consistency).  These artifacts are unaudited branch-local support.
 PINNED_PROVENANCE = {
     ARC_NOTE: (
         "fd94927ca125764b0eb37eaf47b47763e145ef15",
@@ -128,17 +162,17 @@ PINNED_PROVENANCE = {
     ARC_CHECK_CACHE: (
         "fd94927ca125764b0eb37eaf47b47763e145ef15",
         "logs/runner-cache/frontier_cycle863_865_arc_independent_check_2026_07_28.txt",
-        "6c471a1f3c1c560a95007458a6058ef16020962e",
+        "34cf272d92138101205ae260d233746b84f7f0a0",
     ),
     CACHE_864: (
         "fd94927ca125764b0eb37eaf47b47763e145ef15",
         "logs/runner-cache/frontier_cycle864_laws_in_record_time_2026_07_28.txt",
-        "c4111a30a66888e51367412411089c9d0b0d86bf",
+        "a431154ad99b324b1fa03201e8fa6a82bd8680ab",
     ),
     CACHE_865: (
         "fd94927ca125764b0eb37eaf47b47763e145ef15",
         "logs/runner-cache/frontier_cycle865_offset_law_2026_07_28.txt",
-        "13814e58dbce06cb4614c058ec7661d85ef760cf",
+        "313d45b651bb32704d4cae3c1c2cfa823f0bd78f",
     ),
     SRC_ARC_CHECK: (
         "fd94927ca125764b0eb37eaf47b47763e145ef15",
@@ -151,10 +185,28 @@ PINNED_PROVENANCE = {
         "4506f4c7090ad24469bc5b9516802900f5eac183",
     ),
     SRC_866: (
-        "7ad5231f6160d5513ca0c502b79413bdd689ab8e",
+        "a64676cf7795377074975c5686b5e83f686f6ab3",
         "scripts/frontier_cycle866_scaled_banks_2026_07_28.py",
-        "34f2fc8c8ef22dab7e46f2f6164640301a19674c",
+        "1eed343ece2880de0933ee6d5f69c06ab1e5e05a",
     ),
+}
+
+# Three cache copies were normalized after copying: exactly one trailing
+# blank line at EOF was removed for repo diff hygiene.  Their claimed
+# original objects' blobs are disclosed here; all other bytes are identical.
+PROVENANCE_NORMALIZATION = {
+    ARC_CHECK_CACHE: {
+        "original_git_blob": "6c471a1f3c1c560a95007458a6058ef16020962e",
+        "normalization": "one trailing blank line at EOF removed",
+    },
+    CACHE_864: {
+        "original_git_blob": "c4111a30a66888e51367412411089c9d0b0d86bf",
+        "normalization": "one trailing blank line at EOF removed",
+    },
+    CACHE_865: {
+        "original_git_blob": "13814e58dbce06cb4614c058ec7661d85ef760cf",
+        "normalization": "one trailing blank line at EOF removed",
+    },
 }
 
 # Pinned sources are EVIDENCE, never code.  They are read as bytes/AST only.
@@ -245,11 +297,23 @@ LEG_II_PRICE = (
     "LEG_II is a statement ABOUT C, F and S.  It is not the leg (ii) of the "
     "864-D condition, which quantifies over all record structures at all "
     "scales.  The gap between them is the family-closure caveat and the scope "
-    "caveat, both carried as OPEN obligations below.  No accumulation of "
-    "DISCHARGED_AT_SCOPE rows closes either."
+    "caveat, both carried as OPEN obligations below.  A further, deeper gap: "
+    "conjunct (c) defines INDEPENDENT as 'not F-related', which is a "
+    "family-relative surrogate BY DECLARATION.  No cited or proved lemma "
+    "establishes 'F-related or integer-commensurate => same physical "
+    "record-clock', and no axiom or approved primitive supplies one; citing "
+    "F-relatedness as proof of physical non-independence would be circular.  "
+    "That semantic bridge is carried as the OPEN obligation O13, so even a "
+    "fully verified LEG_II recount establishes finite arithmetic about (S,C,F) "
+    "only, never absence of a rival physical clock.  No accumulation of "
+    "measured rows closes any of these gaps."
 )
 
-STATUS_VALUES = ("DISCHARGED_AT_SCOPE", "OPEN", "PERMANENTLY_OPEN")
+# MEASURED_AT_SCOPE: the declared finite search/recount ran and its
+# arithmetic re-verified here.  It asserts NOTHING beyond that arithmetic --
+# in particular no absence of rivals, no independent-rate conclusion, and no
+# discharge.  There is no discharge status in this file.
+STATUS_VALUES = ("MEASURED_AT_SCOPE", "OPEN", "PERMANENTLY_OPEN")
 
 
 def compact(value) -> str:
@@ -389,11 +453,19 @@ def b_family_declaration(payloads):
     # --- 866 sync-cadence structures: bank counts and the probe declared in
     # the primary's own literals.
     bank_counts = literal_assignment(src866, "BANK_COUNTS")
-    c866 = json.loads(payloads[CACHE_866].decode()
+    c866_text = payloads[CACHE_866].decode()
+    c866 = json.loads(c866_text
                       .split("CERTIFICATE B3_RESULTS PASS ")[1].splitlines()[0])
-    c866_b4 = json.loads(payloads[CACHE_866].decode()
+    c866_b4 = json.loads(c866_text
                          .split("CERTIFICATE B4_RESULTS PASS ")[1]
                          .splitlines()[0])
+    # The imported cache header names the exact source that produced it.  The
+    # committed copy must BE that source, byte for byte, or the src/cache pair
+    # is not a coherent import.  Fail closed on a missing header line.
+    header_match = re.search(r"^runner_sha256: ([0-9a-f]{64})$", c866_text,
+                             re.M)
+    cache_declared_runner_sha = (header_match.group(1) if header_match
+                                 else None)
     f866 = {
         "scope": f"B in {list(bank_counts)} (scaled-bank construction)",
         "bank_counts_from_source": list(bank_counts),
@@ -410,6 +482,19 @@ def b_family_declaration(payloads):
         ],
         "pair_count_B3": len(c866["second_clock"]["pair_dominant_gaps"]),
         "pair_count_B4": len(c866_b4["second_clock"]["pair_dominant_gaps"]),
+        "cache_declared_runner_sha256": cache_declared_runner_sha,
+        "copied_source_sha256": sha256(payloads[SRC_866]).hexdigest(),
+        "copied_source_is_the_cache_producer": (
+            cache_declared_runner_sha is not None
+            and cache_declared_runner_sha
+            == sha256(payloads[SRC_866]).hexdigest()),
+        "evidence_class": (
+            "SIBLING_BRANCH_DISCLOSED_ONLY -- unaudited branch-local "
+            "evidence.  The PASS tokens inside this cache certify payload "
+            "production and bookkeeping integrity only, never any physical "
+            "result: no gate in the 866 source tests the sign or kind of a "
+            "measured outcome, and none is treated as doing so here."
+        ),
         "granularity": (
             "866's pair-cadence comparison is at TOP-3 DOMINANT-GAP "
             "granularity.  It is a cadence-signature probe, not a relation-"
@@ -447,11 +532,16 @@ def b_family_declaration(payloads):
             "restated from the campaign brief."
         ),
     }
+    # Pair counts are gated STRUCTURALLY (B*(B-1)/2 bank pairs must each
+    # carry one signature row), never against a desired scientific outcome.
+    expected_pairs = {B: B * (B - 1) // 2 for B in (bank_counts or ())}
     result["pass"] = bool(
         f865["singles_agree"] and f865["pairs_agree"]
         and f865["scheduler_excluded_as_not_record_native"]
-        and bank_counts and f866["pair_count_B3"] == 3
-        and f866["pair_count_B4"] == 6
+        and bank_counts
+        and f866["pair_count_B3"] == expected_pairs.get(3)
+        and f866["pair_count_B4"] == expected_pairs.get(4)
+        and f866["copied_source_is_the_cache_producer"]
         and f869["F_size"] == 7 and f869["closure_declared"]
     )
     return result
@@ -468,16 +558,23 @@ def c_leg_ii_formalization():
             "parameter range, so LEG_II(S,C,F) is decided by exhaustion"
         ),
         "conjuncts": ["RECORD_NATIVE", "GLOBAL", "INDEPENDENT_OF_F"],
-        "claim_type": "SUPPORT",
-        "not_a_theorem": (
-            "This cycle binds landed results to a named premise.  It derives "
-            "no new physical content and promotes no premise."
+        "claim_type": "bounded_theorem",
+        "claim_scope": (
+            "a finite-corpus numerical measurement: the pinned artifacts' "
+            "finite recounts and exact divisibilities, re-verified; no "
+            "physical clock-identity or no-rival conclusion is drawn"
+        ),
+        "not_a_discharge": (
+            "This cycle recounts finite arithmetic bound to a named premise.  "
+            "It derives no new physical content, promotes no premise, and "
+            "discharges no obligation."
         ),
     }
     result["pass"] = bool(
         len(result["conjuncts"]) == 3
         and "decidable by exhaustion" in LEG_II_FORMAL
-        and result["claim_type"] == "SUPPORT"
+        and result["claim_type"] == "bounded_theorem"
+        and "O13" in LEG_II_PRICE
     )
     return result
 
@@ -555,7 +652,12 @@ def d_witness_rederivation(payloads):
     orbit_counts = {str(d): str(Fraction(abs(d), STATIONS)) for d in lags}
 
     # W4 across-key: recompute the headline totals over the FULL corpus.
-    full_edges = full_nonzero = full_outside = full_f3 = 0
+    # Each per-(clock-family,label) count is a key count WITHIN that label;
+    # summing across the six labels yields clock-family/key INCIDENCES, not
+    # unique keys -- no key identities are retained across labels, so a key
+    # outside F1 coverage in several clock families is counted once per
+    # family.  No unique-key union is computed anywhere in this file.
+    full_edges = full_nonzero = full_outside_incidences = full_f3 = 0
     per_family = {}
     for fam in ("bank_clocks", "pair_clocks"):
         for label, payload in across[fam].items():
@@ -566,16 +668,16 @@ def d_witness_rederivation(payloads):
                 "F1_edges_nonzero_offset": payload["F1_edges_with_nonzero_offset"],
                 "F1_edges_zero_offset": payload[
                     "F1_edges_with_zero_offset_identical_cadences"],
-                "keys_outside_any_nontrivial_F1_class": outside,
+                "keys_outside_within_this_label": outside,
                 "F3_factor_edges": payload["F3_factor_edges_between_distinct_words"],
             }
             full_edges += edges
             full_nonzero += payload["F1_edges_with_nonzero_offset"]
-            full_outside += outside
+            full_outside_incidences += outside
             full_f3 += payload["F3_factor_edges_between_distinct_words"]
     pair_edges = sum(v["F1_edges"] for k, v in per_family.items()
                      if k.startswith("pair_clocks"))
-    pair_outside = sum(v["keys_outside_any_nontrivial_F1_class"]
+    pair_outside = sum(v["keys_outside_within_this_label"]
                        for k, v in per_family.items()
                        if k.startswith("pair_clocks"))
     note("869_headline_across_key_F1_edges_is_pair_clocks_only",
@@ -589,12 +691,14 @@ def d_witness_rederivation(payloads):
          full_edges, full_nonzero,
          "over bank AND pair clocks, F1 edge count vs nonzero-offset count")
 
-    # W5 period commensurability, recomputed from the period census.
-    periods = verdict["nondegenerate_periods_in_corpus"]
-    note("869_every_nondegenerate_period_is_whole_orbits",
-         verdict["every_nondegenerate_period_is_whole_orbits"],
+    # W5 period divisibility, recomputed from the detector-selected census.
+    # Per the 869 period contract only the divisibility arithmetic is
+    # claimed -- never a least-period, only-period or rate statement.
+    periods = verdict["detector_selected_nondegenerate_periods"]
+    note("869_every_detected_period_is_whole_orbits",
+         verdict["every_detected_period_is_whole_orbits"],
          all(row["period_ticks"] % STATIONS == 0 for row in periods),
-         f"every corpus period divisible by stations={STATIONS}")
+         f"every detector-selected period divisible by stations={STATIONS}")
     note("869_period_orbit_counts",
          [row["orbits"] for row in periods],
          [str(row["period_ticks"] // STATIONS) for row in periods],
@@ -623,18 +727,26 @@ def d_witness_rederivation(payloads):
         f"{verdict['across_key_keys_outside_any_nontrivial_F1_class']}' are "
         f"PAIR-CLOCK figures.  Over the full across-key corpus (bank AND pair "
         f"clocks) the totals are {full_edges} F1 edges, {full_nonzero} of them "
-        f"with nonzero offset, and {full_outside} keys outside any nontrivial "
-        f"F1 class.  The kind of the conclusion is unchanged -- every single "
-        f"across-key F1 edge moves the origin -- but the uncovered residue is "
-        f"{Fraction(full_outside, verdict['across_key_keys_outside_any_nontrivial_F1_class'])}"
-        f"x the headline figure, and obligation O7 is priced to the larger one."
+        f"with nonzero offset, and {full_outside_incidences} clock-family/key "
+        f"INCIDENCES outside any nontrivial F1 class (a sum of six per-label "
+        f"key counts; key identities are not retained across labels, so this "
+        f"is NOT a unique-key residue and no unique-key figure exists in the "
+        f"corpus).  The incidence total is "
+        f"{Fraction(full_outside_incidences, verdict['across_key_keys_outside_any_nontrivial_F1_class'])}"
+        f"x the pair-clock incidence subtotal, and obligation O7 is priced to "
+        f"the larger one."
     )
     findings.append(
         f"NON-TRANSLATION RESIDUE: {full_f3} across-key F3 factor edges relate "
-        f"distinct gap words by index lag plus offset.  These are relations, "
-        f"so they unify rather than split clocks, but they are NOT pure time "
-        f"translations, so 'CROSS_KEY_TIME_TRANSLATION_DICTIONARY' describes "
-        f"the F1 layer only."
+        f"distinct gap words by index lag plus offset.  They are NOT pure "
+        f"time translations, so 'CROSS_KEY_TIME_TRANSLATION_DICTIONARY' "
+        f"describes the F1 layer only.  Whether any F relation identifies "
+        f"physical clocks is the OPEN obligation O13, so no unification "
+        f"reading is drawn from these edges."
+    )
+    findings.append(
+        "ACROSS-KEY SCOPE (quoted from the 869 verdict): "
+        + verdict["across_key_scope_note"]
     )
 
     result = {
@@ -645,7 +757,8 @@ def d_witness_rederivation(payloads):
         "across_key_per_family": per_family,
         "across_key_full_corpus": {
             "F1_edges": full_edges, "F1_edges_nonzero_offset": full_nonzero,
-            "keys_outside_any_nontrivial_F1_class": full_outside,
+            "uncovered_clock_family_key_incidences": full_outside_incidences,
+            "unique_key_residue_computed": False,
             "F3_factor_edges": full_f3,
         },
         "nonidentity_witness_orbit_counts": orbit_counts,
@@ -769,8 +882,10 @@ def e_live_rederivation(payloads):
     return result
 
 
-def f_discharge_map(family, witnesses):
-    """The obligation table.  Statuses are assigned from the witness rows."""
+def f_measurement_map(family, witnesses):
+    """The obligation table.  MEASURED_AT_SCOPE records that a declared
+    finite recount ran and its arithmetic re-verified; it never asserts the
+    obligation itself is met.  Nothing in this table discharges anything."""
     w = {c["witness"]: c for c in witnesses["checks"]}
     full = witnesses["across_key_full_corpus"]
     birth = witnesses["birth_datum_by_B_866"]
@@ -788,97 +903,125 @@ def f_discharge_map(family, witnesses):
     obligations = [
         {
             "id": "O1_RECORD_NATIVITY_FILTER",
-            "obligation": "conjunct (a): scheduler-valued and other gauge "
-                          "structures are disqualified as rival record clocks",
-            "status": ("DISCHARGED_AT_SCOPE"
+            "obligation": "conjunct (a): show that scheduler-valued and other "
+                          "gauge structures cannot serve as rival record "
+                          "clocks",
+            "status": ("MEASURED_AT_SCOPE"
                        if hunt["scheduler_gap_is_record_native"] is False
                        and no_native_birth_datum else "OPEN"),
             "scope": "B=2, B=3, B=4",
             "artifact": [ARC_CHECK_CACHE, CACHE_866],
-            "evidence": "865 scheduler_gap_is_record_native=false; 866 "
-                        "native_pattern_functional=false at B=3 and B=4",
+            "evidence": "measured: 865 scheduler_gap_is_record_native=false; "
+                        "866 native_pattern_functional=false at B=3 and B=4.  "
+                        "These are properties of the declared candidates "
+                        "only; the obligation over all record structures "
+                        "remains open (O10)",
         },
         {
-            "id": "O2_NO_RECORD_NATIVE_RIVAL_PREDICTOR",
-            "obligation": "no record-native predictor in the declared 865 "
-                          "family reconstructs the per-world time origin, so "
-                          "no such predictor defines a rival global clock",
-            "status": ("DISCHARGED_AT_SCOPE"
+            "id": "O2_DECLARED_PREDICTOR_FAMILY_SEARCHED",
+            "obligation": "search the declared 865 predictor family for a "
+                          "record-native reconstruction of the per-world "
+                          "time origin",
+            "status": ("MEASURED_AT_SCOPE"
                        if hunt["verdict"]
                        == "INTRINSIC_HUNT_EXHAUSTED_AT_DECLARED_FAMILY"
                        and hunt["selected_predictor"] is None else "OPEN"),
             "scope": f"B=2, family = {f865['singles_claimed']} singles + "
                      f"{f865['pairs_claimed']} pairs",
             "artifact": [ARC_CHECK_CACHE],
-            "evidence": f865["verdict"],
+            "evidence": f865["verdict"] + " -- a family-priced measured "
+                        "absence within 29+28 declared candidates; not a "
+                        "no-rival theorem",
         },
         {
-            "id": "O3_NO_WITHIN_KEY_RIVAL_BANK_CLOCK",
-            "obligation": "no single-bank clock is promoted to a rival global "
-                          "time by the declared relation family",
-            "status": ("DISCHARGED_AT_SCOPE"
+            "id": "O3_WITHIN_KEY_BANK_CLOCK_SEARCH",
+            "obligation": "show no single-bank clock is a rival global time "
+                          "(NOT met by this row: F's refusal is not identity, "
+                          "and F-relation => physical identity is open, O13)",
+            "status": ("MEASURED_AT_SCOPE"
                        if ok("869_bank_clocks_comparable_equals_split_total",
                              "869_bank_clocks_substantive_equals_nonthin",
                              "869_bank_clocks_verdicts_cover_the_corpus")
                        else "OPEN"),
             "scope": f869["scope"] + ", 831 substantive pairs of bank clocks",
             "artifact": [CACHE_869],
-            "evidence": "0 substantive non-identity full dictionaries; the "
-                        "single relation is F1 with c=0 (identical cadences)",
+            "evidence": "measured bookkeeping only: comparable=911 equals the "
+                        "evidence-split total, substantive=831 equals the "
+                        "non-THIN rows, verdicts cover the corpus; 830/831 "
+                        "substantive comparisons returned NO_RELATION_IN_F "
+                        "and remain unresolved rival candidates (O8); the one "
+                        "found relation is F1 with c=0",
         },
         {
-            "id": "O4_NO_WITHIN_KEY_RIVAL_PAIR_CLOCK",
-            "obligation": "no pair clock is promoted to a rival global time; "
-                          "the one tick-moving dictionary is a whole-orbit lag",
-            "status": ("DISCHARGED_AT_SCOPE"
+            "id": "O4_WITHIN_KEY_PAIR_CLOCK_SEARCH",
+            "obligation": "show no pair clock is a rival global time (NOT met "
+                          "by this row: 429/480 comparisons are unresolved in "
+                          "F, and commensurate-lag arithmetic is not a "
+                          "non-rival proof, O13)",
+            "status": ("MEASURED_AT_SCOPE"
                        if ok("869_pair_clocks_nonidentity_full_dictionaries",
                              "869_nonidentity_lags_are_whole_orbits")
                        else "OPEN"),
             "scope": f869["scope"] + ", 480 substantive pairs of pair clocks",
             "artifact": [CACHE_869],
-            "evidence": "1 of 480 substantive pairs carries a tick-moving full "
-                        "dictionary; its witness is F3 with L=0, d=-1121 = "
-                        "-59 whole 19-station orbits, i.e. commensurate",
+            "evidence": "measured: 1 of 480 substantive pairs carries a "
+                        "tick-moving full dictionary, witness F3 with L=0, "
+                        "d=-1121, and 1121 = 59*19 exactly (whole-orbit "
+                        "arithmetic only); 429/480 substantive comparisons "
+                        "returned NO_RELATION_IN_F and remain unresolved "
+                        "rival candidates (O8)",
         },
         {
-            "id": "O5_PERIOD_COMMENSURABILITY",
-            "obligation": "conjunct (c) at the rate level: no clock in the "
-                          "corpus runs at a period incommensurate with the "
-                          "station cycle, so none defines an independent rate",
-            "status": ("DISCHARGED_AT_SCOPE"
-                       if ok("869_every_nondegenerate_period_is_whole_orbits",
+            "id": "O5_PERIOD_DIVISIBILITY",
+            "obligation": "conjunct (c) at the rate level (NOT met by this "
+                          "row: integer divisibility of detected periods does "
+                          "not identify clock structures or rates, O13)",
+            "status": ("MEASURED_AT_SCOPE"
+                       if ok("869_every_detected_period_is_whole_orbits",
                              "869_period_orbit_counts")
                        else "OPEN"),
             "scope": f869["scope"],
             "artifact": [CACHE_869],
-            "evidence": "corpus periods {19, 114, 1444} ticks = {1, 6, 76} "
-                        "whole orbits of the 19-station cycle",
+            "evidence": "measured: detector-selected periods {19, 114, 1444} "
+                        "ticks = {1, 6, 76} whole orbits of the 19-station "
+                        "cycle; per the 869 period contract only this "
+                        "divisibility arithmetic is claimed, never a "
+                        "least-period or rate statement",
         },
         {
-            "id": "O6_CROSS_KEY_ONE_TIME_UP_TO_ORIGIN",
-            "obligation": "across keys, every clock the family relates is the "
-                          "same clock re-zeroed, not a second time",
-            "status": ("DISCHARGED_AT_SCOPE"
+            "id": "O6_CROSS_KEY_F1_OFFSET_CENSUS",
+            "obligation": "show across-key clocks share one time up to "
+                          "origin (NOT met by this row: the census is "
+                          "arithmetic on the F1-covered component, and "
+                          "F1-relation => same physical clock is open, O13)",
+            "status": ("MEASURED_AT_SCOPE"
                        if ok("869_full_corpus_every_F1_edge_carries_nonzero"
                              "_offset")
                        else "OPEN"),
             "scope": f869["scope"] + ", the F1-covered across-key component",
             "artifact": [CACHE_869],
-            "evidence": f"{full['F1_edges']}/{full['F1_edges']} across-key F1 "
-                        f"edges carry a nonzero offset over the full corpus "
-                        f"(bank and pair clocks); zero zero-offset edges",
+            "evidence": f"measured: {full['F1_edges']}/{full['F1_edges']} "
+                        f"across-key F1 edges carry a nonzero offset over the "
+                        f"full corpus (bank and pair clocks); zero "
+                        f"zero-offset edges; per the 869 scope note this is a "
+                        f"within-class verification over observed class "
+                        f"occupancy, not a universal cross-key dictionary",
         },
         {
-            "id": "O7_CROSS_KEY_UNCOVERED_KEYS",
+            "id": "O7_CROSS_KEY_UNCOVERED_RESIDUE",
             "obligation": "the keys that fall outside every nontrivial F1 "
                           "class are not shown to share the one time",
             "status": "OPEN",
             "scope": f869["scope"],
             "artifact": [CACHE_869],
-            "evidence": f"{full['keys_outside_any_nontrivial_F1_class']} keys "
-                        f"outside any nontrivial F1 class over the full "
-                        f"across-key corpus (the G-certificate headline "
-                        f"reports 92, which is the pair-clock figure alone)",
+            "evidence": f"{full['uncovered_clock_family_key_incidences']} "
+                        f"clock-family/key INCIDENCES outside any nontrivial "
+                        f"F1 class over the full across-key corpus (the sum "
+                        f"35+47+55+26+28+38 of six per-label key counts; key "
+                        f"identities are not retained across labels, so a "
+                        f"unique-key residue is NOT computed and a key can be "
+                        f"counted once per clock family; the G-certificate "
+                        f"headline 92 is the pair-clock incidence subtotal)",
         },
         {
             "id": "O8_UNRELATED_SUBSTANTIVE_PAIR_RESIDUE",
@@ -901,8 +1044,9 @@ def f_discharge_map(family, witnesses):
             "status": "OPEN",
             "scope": "B=4",
             "artifact": [CACHE_866, PRIMARY_869],
-            "evidence": f"869 ran at {f869['scope']} only.  866 did run at "
-                        f"B=4, but its C_SECOND_CLOCK_TEST compares TOP-3 "
+            "evidence": f"869 ran at {f869['scope']} only.  866 (disclosed, "
+                        f"unaudited sibling-branch evidence) did run at B=4, "
+                        f"but its C_SECOND_CLOCK_TEST compares TOP-3 "
                         f"DOMINANT-GAP signatures and found "
                         f"{f866['pair_count_B4']} distinct signatures over "
                         f"{f866['pair_count_B4']} bank pairs (and 3 over 3 at "
@@ -921,21 +1065,23 @@ def f_discharge_map(family, witnesses):
                         + ", ".join(f869["F_members"])
                         + f" at horizon {f869['horizon_chunks']}; 866's probe "
                           "is priced to top-3 gap granularity.  No finite "
-                          "family can discharge this obligation, so it is "
-                          "carried permanently and no count of discharged "
+                          "family can close this obligation, so it is "
+                          "carried permanently and no count of measured "
                           "rows retires it",
         },
         {
-            "id": "O11_SUBSTRATE_TO_B_AXIS_TRANSFER",
+            "id": "O11_SUBSTRATE_TO_AXIS_PREMISE_TRANSFER",
             "obligation": "establish that the record-clock corpus measured "
-                          "here IS the surface B-AXIS quantifies over",
+                          "here IS the surface the evolution-axis "
+                          "single-clock premise (legacy alias: B-AXIS) "
+                          "quantifies over",
             "status": "OPEN",
             "scope": "the bridge itself",
             "artifact": [PREMISE_DOC],
-            "evidence": "B-AXIS speaks of 'no admitted independent commuting "
-                        "transfer factor as a second clock' on the emergent "
-                        "spacetime.  Every artifact assembled here measures "
-                        "clocks on the Cycle-719 two-rail controller "
+            "evidence": "the premise speaks of 'no admitted independent "
+                        "commuting transfer factor as a second clock' on the "
+                        "emergent spacetime.  Every artifact assembled here "
+                        "measures clocks on the Cycle-719 two-rail controller "
                         "substrate.  No pinned artifact identifies the two "
                         "surfaces, so even a fully closed LEG_II would not "
                         "reach the premise without this bridge",
@@ -952,40 +1098,73 @@ def f_discharge_map(family, witnesses):
                         "This cycle quotes that standing and does not improve "
                         "it; leg (ii) alone never discharges the premise",
         },
+        {
+            "id": "O13_RELATION_TO_IDENTITY_BRIDGE",
+            "obligation": "prove the semantic lemma 'a declared cadence "
+                          "relation in F, or integer commensurability, "
+                          "implies the same physical record-time'; without "
+                          "it no measured row supports a no-rival or "
+                          "independent-rate reading",
+            "status": "OPEN",
+            "scope": "every within-substrate identity reading of O1-O6",
+            "artifact": [CACHE_869, PREMISE_DOC],
+            "evidence": "F is a hand-declared family of exact cadence "
+                        "relations; 'independent' inside LEG_II is defined as "
+                        "'not F-related', a family-relative surrogate.  No "
+                        "axiom or approved primitive supplies the identity "
+                        "lemma, and citing F-relatedness as proof of physical "
+                        "non-independence would be circular.  Distinct from "
+                        "O11, which bridges substrate to premise surface; "
+                        "O13 is the within-substrate identity bridge",
+        },
     ]
     for row in obligations:
         row["artifact_sha256"] = {p: EXPECTED_SHA256[p] for p in row["artifact"]}
         row["artifact_provenance"] = {
-            p: {"commit": PINNED_PROVENANCE[p][0],
-                "original_path": PINNED_PROVENANCE[p][1],
-                "git_blob": PINNED_PROVENANCE[p][2]}
-            for p in row["artifact"] if p in PINNED_PROVENANCE
+            p: ({"provenance_class": "LANDED_ON_MAIN",
+                 "landed_main_git_blob": LANDED_MAIN_BLOBS[p]}
+                if p in LANDED_MAIN_BLOBS else
+                {"provenance_class": "SIBLING_BRANCH_DISCLOSED_ONLY",
+                 "claimed_origin_commit": PINNED_PROVENANCE[p][0],
+                 "claimed_origin_path": PINNED_PROVENANCE[p][1],
+                 "local_git_blob": PINNED_PROVENANCE[p][2]}
+                if p in PINNED_PROVENANCE else
+                {"provenance_class": "WORKTREE"})
+            for p in row["artifact"]
         }
 
     tally = {status: sum(1 for r in obligations if r["status"] == status)
              for status in STATUS_VALUES}
-    open_rows = tuple(r["id"] for r in obligations if r["status"] != "DISCHARGED_AT_SCOPE")
-    standing = ("B_AXIS_SECOND_LEG_DISCHARGED_AT_DECLARED_SCOPE"
-                if not open_rows else
-                "B_AXIS_NOT_DISCHARGED__SECOND_LEG_PARTIAL_AT_SCOPE")
+    measured_rows = tuple(r["id"] for r in obligations
+                          if r["status"] == "MEASURED_AT_SCOPE")
+    open_rows = tuple(r["id"] for r in obligations
+                      if r["status"] != "MEASURED_AT_SCOPE")
+    standing = ("SINGLE_CLOCK_AXIS_PREMISE_NOT_DISCHARGED"
+                "__FINITE_MEASUREMENTS_AT_SCOPE_ONLY")
     result = {
-        "certificate": "F_DISCHARGE_MAP",
+        "certificate": "F_MEASUREMENT_MAP",
         "obligations": tuple(obligations),
         "tally": tally,
+        "measured_obligations": measured_rows,
         "open_obligations": open_rows,
         "premise_standing": standing,
-        "premise_standing_is_computed": (
-            "standing is derived from the obligation table above; this file "
-            "contains no comparison of the standing against a target value"
+        "no_discharge_status_exists": (
+            "there is no discharge status in this file: MEASURED_AT_SCOPE "
+            "records verified finite arithmetic only, every obligation "
+            "remains un-discharged, and the standing is constitutively "
+            "NOT_DISCHARGED"
         ),
         "reading": (
-            "The landed results close the record-nativity filter, the 865 "
-            "predictor family, the within-key bank and pair clock families, "
-            "period commensurability, and the across-key origin question on "
-            "its covered component -- all at B=2/B=3 scope.  They leave open "
-            "the uncovered across-key keys, the unrelated substantive pair "
-            "residue, the entire B=4 relation-family run, family closure, the "
-            "substrate-to-B-AXIS bridge, and leg (i)'s own standing.  B-AXIS "
+            "The pinned artifacts carry verified finite arithmetic for the "
+            "record-nativity properties of the declared candidates, the 865 "
+            "family search, the within-key bank/pair bookkeeping, the period "
+            "divisibilities, and the F1 offset census -- all at B=2/B=3 "
+            "scope, and none of it a no-rival conclusion.  Open: the "
+            "429+830 unresolved-in-F residue, the 229-incidence uncovered "
+            "residue, the entire B=4 relation-family run, family closure, "
+            "the substrate-to-premise bridge, leg (i)'s own standing, and "
+            "the relation-to-identity semantic bridge (O13).  The "
+            "evolution-axis single-clock premise (legacy alias: B-AXIS) "
             "remains a declared premise."
         ),
     }
@@ -993,7 +1172,10 @@ def f_discharge_map(family, witnesses):
         all(r["status"] in STATUS_VALUES for r in obligations)
         and all(r["artifact"] and r["evidence"] for r in obligations)
         and sum(tally.values()) == len(obligations)
-        and standing.startswith("B_AXIS_")
+        and not any("DISCHARG" in r["status"] for r in obligations)
+        and "NOT_DISCHARGED" in standing
+        and any(r["id"] == "O13_RELATION_TO_IDENTITY_BRIDGE"
+                and r["status"] == "OPEN" for r in obligations)
     )
     return result
 
@@ -1013,11 +1195,19 @@ def g_controls(payloads, started):
         }
         expected = EXPECTED_SHA256.get(path, "")
         row["sha256_exact"] = (row["sha256"] == expected) if expected else None
+        if path in LANDED_MAIN_BLOBS:
+            row["provenance_class"] = "LANDED_ON_MAIN"
+            row["landed_main_git_blob"] = LANDED_MAIN_BLOBS[path]
+            row["git_blob_matches_landed_main"] = (
+                row["git_blob"] == LANDED_MAIN_BLOBS[path])
         if path in PINNED_PROVENANCE:
             commit, original, blob = PINNED_PROVENANCE[path]
-            row["pinned_commit"] = commit
-            row["pinned_original_path"] = original
+            row["provenance_class"] = "SIBLING_BRANCH_DISCLOSED_ONLY"
+            row["claimed_origin_commit_disclosure_only"] = commit
+            row["claimed_origin_path"] = original
             row["git_blob_matches_pin"] = row["git_blob"] == blob
+            if path in PROVENANCE_NORMALIZATION:
+                row["normalization"] = PROVENANCE_NORMALIZATION[path]
         rows.append(row)
 
     # Determinism: the whole evidence-derived payload rebuilt and re-digested.
@@ -1040,11 +1230,24 @@ def g_controls(payloads, started):
         "runtime_under_budget": runtime < AUDIT_TIMEOUT_SEC,
         "pinned_evidence_all_match": all(
             row.get("git_blob_matches_pin", True) for row in rows),
+        "landed_main_pins_all_match": all(
+            row.get("git_blob_matches_landed_main", True) for row in rows),
+        "provenance_policy": (
+            "LANDED_ON_MAIN rows are verified against the exact blobs landed "
+            "on origin/main (fail-closed).  SIBLING_BRANCH_DISCLOSED_ONLY "
+            "rows are verified as disk-byte self-consistency against the "
+            "declared local blob/sha256 only; their origin commits are "
+            "disclosure, not verification, and those artifacts are unaudited "
+            "branch-local support"
+        ),
     }
     result["pass"] = bool(
         all(row["exists"] and row["worktree_relative"] for row in rows)
         and all(row["sha256_exact"] in (True, None) for row in rows)
         and result["pinned_evidence_all_match"]
+        and result["landed_main_pins_all_match"]
+        and all(path in {r["path"] for r in rows}
+                for path in LANDED_MAIN_BLOBS)
         and result["declared_input_paths_are_literal"]
         and not result["blocklist_violations"]
         and result["determinism"]["repeat_digests_equal"]
@@ -1062,22 +1265,25 @@ def main() -> int:
     formal = c_leg_ii_formalization()
     witnesses = d_witness_rederivation(payloads)
     live = e_live_rederivation(payloads)
-    dmap = f_discharge_map(family, witnesses)
+    dmap = f_measurement_map(family, witnesses)
     controls = g_controls(payloads, started)
 
     certs = {
         "A_QUOTE_FIDELITY": quotes, "B_FAMILY_DECLARATION": family,
         "C_LEG_II_FORMALIZATION": formal, "D_WITNESS_REDERIVATION": witnesses,
-        "E_LIVE_REDERIVATION": live, "F_DISCHARGE_MAP": dmap,
+        "E_LIVE_REDERIVATION": live, "F_MEASUREMENT_MAP": dmap,
         "G_CONTROLS": controls,
     }
     checks = {name: bool(cert["pass"]) for name, cert in certs.items()}
     summary = {
         "cycle": 875,
-        "claim_type": "SUPPORT",
+        "claim_type": "bounded_theorem",
+        "claim_scope": "finite-corpus numerical measurement at declared "
+                       "scope; nothing discharged, no no-rival conclusion",
         "checks": checks,
         "premise_standing": dmap["premise_standing"],
         "tally": dmap["tally"],
+        "measured_obligations": dmap["measured_obligations"],
         "open_obligations": dmap["open_obligations"],
         "findings": witnesses["findings"],
         "runtime_seconds": controls["runtime_seconds"],
@@ -1085,11 +1291,11 @@ def main() -> int:
     }
 
     lines = ["CYCLE875_BAXIS_SECOND_LEG_CERTIFICATE",
-             "CLAIM_TYPE SUPPORT_ASSEMBLY_NOT_A_THEOREM",
-             "NO_PREMISE_IS_PROMOTED_BY_THIS_CYCLE"]
+             "CLAIM_TYPE BOUNDED_THEOREM_FINITE_CORPUS_MEASUREMENT",
+             "NO_PREMISE_IS_PROMOTED_AND_NO_OBLIGATION_IS_DISCHARGED"]
     for name in ("A_QUOTE_FIDELITY", "B_FAMILY_DECLARATION",
                  "C_LEG_II_FORMALIZATION", "D_WITNESS_REDERIVATION",
-                 "E_LIVE_REDERIVATION", "F_DISCHARGE_MAP", "G_CONTROLS"):
+                 "E_LIVE_REDERIVATION", "F_MEASUREMENT_MAP", "G_CONTROLS"):
         lines.append(f"CERTIFICATE {name} "
                      + ("PASS " if checks[name] else "FAIL ")
                      + compact(certs[name]))

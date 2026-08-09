@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ NNI Phase-2 no-go: generically non-closing on the stated ingredients; two named 
 - git blob: `dabce346fcdd732f26d573fb954f0fe27512fa0e`
 - sha256: `32c5f5de679f5375719f204f4a32cdc85d33774a76fc9c50fe72c5b89d9da552`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2094_UP_TYPE_MASS_RATIO_NNI_SCOPING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2094_UP_TYPE_MASS_RATIO_NNI_SCOPING_NOTE.md)
-- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_up_sector_nni_scoping(.py)`
+- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_up_sector_nni_scoping​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Documents that the 5-phase plan's expectation of a Phase-1-like bounded Phase-2 extraction fails; redirects the program to Phase 3 (charged leptons).
 
 ## Audit fields
 

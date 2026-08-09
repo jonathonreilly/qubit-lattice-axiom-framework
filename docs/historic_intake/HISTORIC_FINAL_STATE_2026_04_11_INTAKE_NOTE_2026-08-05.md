@@ -36,14 +36,18 @@ Era session terminal with six killed results and their mechanisms on the record 
 - sha256: `3fb9f0d1c0b771d284da63509cef6ce640ec423aafb10acc0e8226a7bb16313c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/458_FINAL_STATE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch02/458_FINAL_STATE_2026-04-11.md)
 - Lines: 82; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records six killed results with mechanisms (finite-size artifact, protocol sensitivity, localization) and explicitly separates generic free-fermion content from gravitational content.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records six killed results with mechanisms (finite-size artifact, protocol sensitivity, localization) and explicitly separates generic free-fermion content from gravitational content.
+- Supersession (as known at extraction): Session-closing state note; supersedes the earlier single-literal-50-sigma phrasing of the self-consistency result.
 
 ## Audit fields
 

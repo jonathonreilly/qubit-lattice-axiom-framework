@@ -35,15 +35,19 @@ The census law N(n,k) proved by two independent routes AND refuting an external 
 - git blob: `ec31a00b57707c25ef944366f751ea3a10409acd`
 - sha256: `c8a80f35d48056396a10477d501da898275c950c2a6001e9dbccad207b26931f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/604_GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch02/604_GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 164; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle870_general_n_census_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle870_census_independent_check_2026_07_28(.py)`
+- Lines: 164; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle870_general_n_census_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle870_census_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Checker independence is cross-context but not cross-model (both scripts share an authoring model family); a no-hardcoded-answer probe fired mid-block on a sweep-bound collision with a derived value.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Checker independence is cross-context but not cross-model (both scripts share an authoring model family); a no-hardcoded-answer probe fired mid-block on a sweep-bound collision with a derived value.
+- Supersession (as known at extraction): REFUTES an external math-report n = 12 prediction at its declared k = 2 scope while confirming it as the k >= 2 spectrum - a scope correction, not a value refutation.
 
 ## Audit fields
 

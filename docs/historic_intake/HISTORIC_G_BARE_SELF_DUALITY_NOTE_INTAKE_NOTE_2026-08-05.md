@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Self-duality no-go: no exact Kramers-Wannier duality for SU(N) in 4D — the bet
 - git blob: `a6bc8f81eb9fa70ee1d3bd324743255fa8d676e5`
 - sha256: `2e5fa67be1cd806b93e61ff7ebb3cd254265f71194d027a5001636861f03ed48`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/659_G_BARE_SELF_DUALITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/659_G_BARE_SELF_DUALITY_NOTE.md)
-- Lines: 195; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g_bare_self_duality(.py)`
+- Lines: 195; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g_bare_self_duality​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts a previously advertised upgrade path and flags the beta=6 proximity to the N_t=8 deconfinement transition (6.06, 1% away) as possibly numerological.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts a previously advertised upgrade path and flags the beta=6 proximity to the N_t=8 deconfinement transition (6.06, 1% away) as possibly numerological.
+- Supersession (as known at extraction): Explicitly SUPERSEDES the self-duality claims in DM_SIGMA_V_LATTICE_NOTE; leaves G_BARE_DERIVATION_NOTE and ALPHA_S_SELF_CONSISTENCY_NOTE unchanged. Carries a 'what the paper should NOT say' list of five retracted phrasings.
 
 ## Audit fields
 

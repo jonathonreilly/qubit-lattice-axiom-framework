@@ -36,6 +36,7 @@ Terminal decision surface of the 2026-08-01 foundation review: five physicist le
 - sha256: `c37adcde49e1510143141d6e209048c648b7fcd854fccbef971506d369079a10`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10043_SUMMARY.md](../../archive_unlanded/historic_intake_originals/packsci01/10043_SUMMARY.md)
 - Lines: 75; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ Terminal decision surface of the 2026-08-01 foundation review: five physicist le
 - `.claude/science/exercises/foundation-review-e1e2/MATH_SECTOR_SEARCH.md` — Exact combinatorial grounding of the 748-state census: 4*I(11,k) with I(n,k)=(n/k)*C(n-k-1,k-1), classical results for prime 11.
 - `.claude/science/exercises/foundation-review-e1e2/REFRAMING.md` — Six reframes incl. two corrections to standing language (timing is a proven DIAL, not a selection problem).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Thermodynamicist lens says E2's recurrence-anchored timing is 'thermodynamically backwards'; 73 of E2's 114 stamps lock content later revised - a serious cost to the reading that reproduces the landed corpus. Owner decision was still pending at note time.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Thermodynamicist lens says E2's recurrence-anchored timing is 'thermodynamically backwards'; 73 of E2's 114 stamps lock content later revised - a serious cost to the reading that reproduces the landed corpus. Owner decision was still pending at note time.
+- Supersession (as known at extraction): Terminal summary of the 2026-08-01 foundation review (cycles 856-862, PRs #5878/#5880/#5881/#5882); records 'thirty reversals, every one recorded' program-wide.
 
 ## Audit fields
 

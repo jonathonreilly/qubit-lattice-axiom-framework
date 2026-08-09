@@ -36,15 +36,19 @@ OWNER-DECISION surface item: the anomaly-forces-time closure path is fully mappe
 - sha256: `39792197a8f7491b1624b9145d6f929cfff7e1e728d25c8fd6325e2ee7126b1a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11514_AFT_CLOSURE_PLAN_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11514_AFT_CLOSURE_PLAN_2026-05-26.md)
 - Lines: 105; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/ANOMALY_TIME_CONVENTION_C_SUPPORT_2026-05-26.md` — Anomaly-forces-time structurally supports the period-1-rad convention C-b: delta_Brannen = (N-1)/N^2 g~ - structural support, NOT derived; the distinction is kept explicit.
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/TRANSLATION_LEMMA_2026-05-26.md` — AFT-conditional convention forcing: if ANOMALY_FORCES_TIME is audit-ratified, convention C_b (1 framework-rad = 1 standard rad) is forced; FLAG: the load-bearing hypothesis is unaudited - this is the consumer waiting on the ABJ decision.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-recommends accepting an external import (ABJ) to unblock closure; probability figures are author estimates, not measurements; four hostile-review weak links (F-G substrate circularity, F-H nu_R=0 convention) acknowledged
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: recommends accepting an external import (ABJ) to unblock closure; probability figures are author estimates, not measurements; four hostile-review weak links (F-G substrate circularity, F-H nu_R=0 convention) acknowledged
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

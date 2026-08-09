@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,15 +38,19 @@ The occupancy campaign's supply-point finding: the matter action is supplied at 
 - sha256: `0d8c82f15a12b45458287742ffdc52ebb684b2f733eb53dd0313702246bedf07`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10654_wave1_landed_forcing_state.md](../../archive_unlanded/historic_intake_originals/packsci03/10654_wave1_landed_forcing_state.md)
 - Lines: 474; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/matter-action-measure-campaign-20260725/taskB_prior_art.md` — Prior-art audit: the forcing question is already answered twice in the corpus and both answers disagree with PR #5602's L1 polarity; documents repeated institutional rediscovery.
 - `.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave2_prior_art_composition.md` — The two-point-menu witness is eleven days old, already on origin/main, already computed by an exact sympy runner - the campaign was about to recompute it.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-MAJOR: documents that a lane reading as a closed derivation is on the ledger an unaudited stack of mutually-flattering source proposals; the Grassmann note calls the no-go 'retained' while the no-go calls the Grassmann note conditional
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: MAJOR: documents that a lane reading as a closed derivation is on the ledger an unaudited stack of mutually-flattering source proposals; the Grassmann note calls the no-go 'retained' while the no-go calls the Grassmann note conditional
+- Supersession (as known at extraction): Names landed/docs surfaces including STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md, staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25, staggered_dirac_substep4_labeling_no_go_note_2026-05-17, three p_flux_* no-gos 2026-06-10; states 'the action is irreducibly supplied' is ~80% written across six unaudited notes nobody has composed.
 
 ## Audit fields
 

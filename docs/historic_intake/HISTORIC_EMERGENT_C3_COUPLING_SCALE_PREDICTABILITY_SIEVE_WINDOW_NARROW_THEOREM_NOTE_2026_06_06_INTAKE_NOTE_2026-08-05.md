@@ -35,15 +35,19 @@ The predictability sieve: the neutrino spread sits 9 orders below any other spli
 - git blob: `5ea9e51156bc23148a3563000b3a622af08932ba`
 - sha256: `a5b3d17c1bb6fd34f809fe1de240d2285b662801bafee52ba34522e4498cd706`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/425_EMERGENT_C3_COUPLING_SCALE_PREDICTABILITY_SIEVE_WINDOW_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/425_EMERGENT_C3_COUPLING_SCALE_PREDICTABILITY_SIEVE_WINDOW_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/emergent_coupling_scale_window_runner(.py)`
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/emergent_coupling_scale_window_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/EMERGENT_C3_COUPLING_AMPLITUDE_SOURCED_BY_HW_ASYMMETRY_NARROW_THEOREM_NOTE_2026-06-06.md` — Second-order structure/cancellation localization of |K|.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The explanatory win is robust precisely because the window is 9 orders wide, so it constrains |K| almost not at all; the masses it explains from are themselves the inputs.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The explanatory win is robust precisely because the window is 9 orders wide, so it constrains |K| almost not at all; the masses it explains from are themselves the inputs.
+- Supersession (as known at extraction): Consumes FLAVOR_READOUT_CONTEXT_IS_THE_DERIVABLE_DECOHERENCE_POINTER_BASIS_NARROW_THEOREM_NOTE_2026-06-06 (idx 490) and leaves |K| open, which the sibling amplitude note (idx 424) then structures.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The generation-cascade mechanism claim (S_3 -> Z_2 -> Z_3 breaking chain) with i
 - git blob: `380a89b7d22669bc41787e21743ffa39baea3a77`
 - sha256: `1fce6b1721de11709cb1a796bb58ec76e0b7bd52e05c6c252332c6fb991183ff`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/448_EWSB_GENERATION_CASCADE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/448_EWSB_GENERATION_CASCADE_NOTE.md)
-- Lines: 88; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ewsb_generation_cascade(.py)`
+- Lines: 88; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ewsb_generation_cascade​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/EWSB_CASCADE_PRECISION_NOTE.md` — Log-enhancement sharpening with double-counting open.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The JW correction parameter beta_JW = 0.1 is a model input, not derived; the hierarchy is entirely radiative and quantitatively only order-of-magnitude.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The JW correction parameter beta_JW = 0.1 is a model input, not derived; the hierarchy is entirely radiative and quantitatively only order-of-magnitude.
+- Supersession (as known at extraction): Its 'generation physicality gate closed' claim conflicts with EWSB_CASCADE_PRECISION_NOTE.md (idx 446), which states the gate remains open per review.md.
 
 ## Audit fields
 

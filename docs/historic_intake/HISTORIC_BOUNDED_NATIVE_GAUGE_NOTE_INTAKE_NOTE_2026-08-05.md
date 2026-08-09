@@ -35,15 +35,19 @@ Exact SU(2) from the staggered Z^3 chain (topological, parameter-free) with the 
 - git blob: `5207a6d2aa642429b73e36225a3da2e2efb2f759`
 - sha256: `0fb85ed5b52ed4a2d99c58971f411a70956acb9f80edb3a1fca018fd7fe144fc`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3589_BOUNDED_NATIVE_GAUGE_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3589_BOUNDED_NATIVE_GAUGE_NOTE.md)
-- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge(.py)`
+- Lines: 100; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_non_abelian_gauge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-stated that the SU(2) taste-algebra result is not new in isolation (cites Kogut & Susskind 1975, Golterman & Smit 1984, Sharpe 2006) — the claimed contribution is only its connection to the framework's derivation chain; confinement evidence is 'partial (small lattice, weak coupling), not conclusive'; four prior-art works on Clifford-algebra SU(3) are listed as must-cite.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-stated that the SU(2) taste-algebra result is not new in isolation (cites Kogut & Susskind 1975, Golterman & Smit 1984, Sharpe 2006) — the claimed contribution is only its connection to the framework's derivation chain; confinement evidence is 'partial (small lattice, weak coupling), not conclusive'; four prior-art works on Clifford-algebra SU(3) are listed as must-cite.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

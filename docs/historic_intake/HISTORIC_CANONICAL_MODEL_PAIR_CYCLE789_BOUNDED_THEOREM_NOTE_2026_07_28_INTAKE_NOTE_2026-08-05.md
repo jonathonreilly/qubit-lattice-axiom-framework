@@ -35,15 +35,19 @@ Leg-2 non-entailment upgraded from arbitrary conventions to canonical covariant 
 - git blob: `9c9cf01dca76c73d70233c98b98a5a68912c7e45`
 - sha256: `12f54b591a05729a07166902b4d5563eec780c6638258470395d36616e595a0b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/134_CANONICAL_MODEL_PAIR_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/134_CANONICAL_MODEL_PAIR_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 80; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle789_canonical_model_pair_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle789_canonical_pair_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle789_canonical_model_pair_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle789_canonical_pair_independent_check_2026_07_28(.py)`
+- Lines: 80; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle789_canonical_model_pair_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle789_canonical_pair_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle789_canonical_model_pair_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle789_canonical_pair_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Upgrades Cycle 767's leg-2 theorem from arbitrary conventions to canonical completions.
 
 ## Audit fields
 

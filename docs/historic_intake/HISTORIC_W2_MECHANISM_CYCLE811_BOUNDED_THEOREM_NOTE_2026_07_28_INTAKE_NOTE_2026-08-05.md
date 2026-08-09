@@ -35,15 +35,19 @@ The W2 wall's complete mechanism: SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT, all r
 - git blob: `f6dc5e25e491f164e7a49f7bf4eedc2a96984bcd`
 - sha256: `675adf944289016a1e64348d264a15a25a4ad0a63113409b53b914060a481df3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2108_W2_MECHANISM_CYCLE811_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2108_W2_MECHANISM_CYCLE811_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 87; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle811_w2_mechanism_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle811_mechanism_independent_check_2026_07_28(.py)`
+- Lines: 87; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle811_w2_mechanism_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle811_mechanism_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/W2_INDISTINGUISHABILITY_CYCLE806_BOUNDED_THEOREM_NOTE_2026-07-28.md` — The 2,048-assignment enumeration closing the order-source search.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the W2 ordering sub-chain 752/783 -> 806 (idx 2107) -> 810 -> 811: converts the satisfiability ceiling into a named rule-level mechanism.
 
 ## Audit fields
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Exact no-go: source-response curvature vanishes for every pure-APBC block length
 - git blob: `056e04e09f1be7a8c0b720b9b9d7fd1e92170fbc`
 - sha256: `c8cb309863361d6a509d9be20033621e86e96706bc307093f940999b8ecbc6f3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/139_CHARGED_LEPTON_CURVATURE_LT_EXTENSION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/139_CHARGED_LEPTON_CURVATURE_LT_EXTENSION_NOTE.md)
-- Lines: 286; runners named: historic runner (unpinned, not in this packet): `frontier_anomaly_forces_time(.py)`; historic runner (unpinned, not in this packet): `frontier_charged_lepton_curvature_lt_extension(.py)`; historic runner (unpinned, not in this packet): `frontier_hierarchy_observable_principle_from_axiom(.py)`; historic runner (unpinned, not in this packet): `frontier_plaquette_self_consistency(.py)`; historic runner (unpinned, not in this packet): `frontier_three_generation_observable_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_curvature_lt_extension(.py)`
+- Lines: 286; runners named: historic runner (unpinned, not in this packet): `frontier_anomaly_forces_time​.py`; historic runner (unpinned, not in this packet): `frontier_charged_lepton_curvature_lt_extension​.py`; historic runner (unpinned, not in this packet): `frontier_hierarchy_observable_principle_from_axiom​.py`; historic runner (unpinned, not in this packet): `frontier_plaquette_self_consistency​.py`; historic runner (unpinned, not in this packet): `frontier_three_generation_observable_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_curvature_lt_extension​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Extends Agent 1's CHARGED_LEPTON_KOIDE_CONE_ATTEMPT_NOTE from the L_t = 4 anchor to all L_t.
 
 ## Audit fields
 

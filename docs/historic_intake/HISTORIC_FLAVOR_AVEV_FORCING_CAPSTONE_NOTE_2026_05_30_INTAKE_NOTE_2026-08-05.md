@@ -35,15 +35,19 @@ FLAVOR capstone: Q reduces cleanly to the one chiral input, with a mid-campaign 
 - git blob: `855e7b1c02706f545b5ffc24e5c2eb5460ee40ac`
 - sha256: `a3fe9630cc0d0ee76bb6e3f140261ed00616b48079559dcb10fe2a8a89f2057a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/474_FLAVOR_AVEV_FORCING_CAPSTONE_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/474_FLAVOR_AVEV_FORCING_CAPSTONE_NOTE_2026-05-30.md)
-- Lines: 59; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_avev_forcing_capstone_2026_05_30(.py)`
+- Lines: 59; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_avev_forcing_capstone_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that a cross-sector overreach was made and retracted mid-campaign.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that a cross-sector overreach was made and retracted mid-campaign.
+- Supersession (as known at extraction): Capstone of moves 1-6; names two distinct routes to force a_VEV = 0 (the operator-level Gamma_chi import, and untested dynamical selection of the chiral-critical point).
 
 ## Audit fields
 

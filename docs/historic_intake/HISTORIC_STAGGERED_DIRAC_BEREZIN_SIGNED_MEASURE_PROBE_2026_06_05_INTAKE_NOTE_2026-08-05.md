@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The three-mechanism separation: Berezin (forced), signed readout (not forcing), 
 - git blob: `1989544b4c5524517154003c89ac23e55496826e`
 - sha256: `91b8596d9663465c22ce8166dd53183adfa90cc8583661f253a9eb551caf2087`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1967_STAGGERED_DIRAC_BEREZIN_SIGNED_MEASURE_PROBE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/1967_STAGGERED_DIRAC_BEREZIN_SIGNED_MEASURE_PROBE_2026-06-05.md)
-- Lines: 152; runners named: historic runner (unpinned, not in this packet): `scripts/staggered_dirac_berezin_signed_measure_probe_2026_06_05(.py)`
+- Lines: 152; runners named: historic runner (unpinned, not in this packet): `scripts/staggered_dirac_berezin_signed_measure_probe_2026_06_05​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Notes the quark sector directly refutes the naive 'charged -> det_C -> 2/3' rule, since up/down are charged Dirac fermions at Q = 0.849 and 0.731.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Notes the quark sector directly refutes the naive 'charged -> det_C -> 2/3' rule, since up/down are charged Dirac fermions at Q = 0.849 and 0.731.
+- Supersession (as known at extraction): Sharpens the Dirac-vs-Majorana framing by showing a Majorana 3-generation mass operator is singular, so that fork is not operative; reproduces and refines the det_C-vs-det_R four-cell fork note.
 
 ## Audit fields
 

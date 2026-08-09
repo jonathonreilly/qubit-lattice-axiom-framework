@@ -35,15 +35,19 @@ Both shape imports CONFIRMED on their correct channels with two new exact struct
 - git blob: `2b9ae8f7b6219701501ff8856597663c7ab9499e`
 - sha256: `cac1964d8288cce235b095a0f254d21ea650a904596141eeab95dad3c64af848`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1105_LEPTON_SHAPE_IMPORTS_FRONTIER_PROBE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch04/1105_LEPTON_SHAPE_IMPORTS_FRONTIER_PROBE_2026-06-05.md)
-- Lines: 227; runners named: historic runner (unpinned, not in this packet): `scripts/lepton_shape_imports_frontier_probe_2026_06_05(.py)`
+- Lines: 227; runners named: historic runner (unpinned, not in this packet): `scripts/lepton_shape_imports_frontier_probe_2026_06_05​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Retargets the channels — states that conflating the two imports has repeatedly mis-targeted attacks; downstream of and consistent with three retained-bounded prior characterizations, editing no existing row.
 
 ## Audit fields
 

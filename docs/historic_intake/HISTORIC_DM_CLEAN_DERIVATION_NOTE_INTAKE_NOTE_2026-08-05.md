@@ -35,7 +35,8 @@ R = 5.483 vs 5.469 (0.25%) via the 13-step chain, with the honest boundary: NOT 
 - git blob: `584c0059aa91ccc22a954e2195ff52906f308287`
 - sha256: `fc122e8199ad0d276ac2788f49c2a11f252e89528f4b6decd7f4e2963cf96b45`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3594_DM_CLEAN_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3594_DM_CLEAN_DERIVATION_NOTE.md)
-- Lines: 412; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation(.py)`
+- Lines: 412; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_clean_derivation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,13 +46,17 @@ R = 5.483 vs 5.469 (0.25%) via the 13-step chain, with the honest boundary: NOT 
 - `docs/DM_DIRECT_OBSERVABLE_NOTE.md` — The strongest response (T-matrix route dissolves g_bare) — a reframing, self-stated; rides the pull.
 - `docs/DM_NUMERATOR_DIRECT_OBSERVABLE_AUTHORITY_NOTE.md` — Numerator authority consolidation pointer.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
 - Cross-stratum reference from branch01 idx 237 (`docs/CODEX_DM_RESPONSE.md`, decision LEAVE) — DM objection scorecard: g_bare assumed + sigma_v imported STAND — adverse evidence for the DM flagship wrapper.
+- Named non-pulled evidence (provenance only): idx 237 `docs/CODEX_DM_RESPONSE.md` — archived byte-exact at `archive_unlanded/historic_intake_originals/branch01/237_CODEX_DM_RESPONSE.md`, sha256 `bc84dda2f8587472dd73c463d0a17ebf32866ba28a0fae541028be571ebea643`
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicit NOT-claimed list, including that the DM lane is not closed and g_bare = 1 is not derived from a dynamical principle; the Stosszahlansatz proof covers only the free theory.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicit NOT-claimed list, including that the DM lane is not closed and g_bare = 1 is not derived from a dynamical principle; the Stosszahlansatz proof covers only the free theory.
+- Supersession (as known at extraction): Written as a response to a Codex objection map on three named objections (Boltzmann/Stosszahlansatz, radiation-era expansion bridge, g_bare normalization).
 
 ## Audit fields
 
@@ -61,6 +66,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
+cross_reference:
+- "idx 237 (not pulled; branch01) docs/CODEX_DM_RESPONSE.md"
 ```
 
 Independent audit still required.

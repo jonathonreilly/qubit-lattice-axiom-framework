@@ -36,14 +36,18 @@ Repo-wide architecture x metric scorecard with a universal negative: EP violatio
 - sha256: `b533e861ea6f6fe622738e773e7f4be00d2eb427f83b58556557daedd86c9c1e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3608_FULL_TEST_MATRIX_2026-04-10.md](../../archive_unlanded/historic_intake_originals/recovery/3608_FULL_TEST_MATRIX_2026-04-10.md)
 - Lines: 211; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records equivalence-principle violation as FAIL on every architecture and lists 12 open issues by priority, including a persistent CLT decoherence ceiling on all architectures and weaker Born closure (0.056) in 3+1D.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records equivalence-principle violation as FAIL on every architecture and lists 12 open issues by priority, including a persistent CLT decoherence ceiling on all architectures and weaker Born closure (0.056) in 3+1D.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

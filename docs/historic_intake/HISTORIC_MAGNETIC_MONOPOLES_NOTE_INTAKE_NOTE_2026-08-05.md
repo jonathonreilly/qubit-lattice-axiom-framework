@@ -35,15 +35,19 @@ Compact U(1) forces monopoles at ~2 M_Pl; the framework REQUIRES inflation (N_e 
 - git blob: `6e197c5823847496ea31c3347ecab5d9a6a4bea0`
 - sha256: `052eaa3a46245220ef2dd735977d5082b50e9e3887eca6a4ff427955d126915a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1126_MAGNETIC_MONOPOLES_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1126_MAGNETIC_MONOPOLES_NOTE.md)
-- Lines: 128; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_magnetic_monopoles(.py)`
+- Lines: 128; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_magnetic_monopoles​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/MONOPOLE_MASS_CONSOLIDATION_THEOREM_NOTE_2026-04-22.md` — 10-assertion consolidation runner.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-rates the mass estimate only MODERATE (depends on the c coefficient and alpha(M_Pl)); the abundance conclusion requires inflation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-rates the mass estimate only MODERATE (depends on the c coefficient and alpha(M_Pl)); the abundance conclusion requires inflation.
+- Supersession (as known at extraction): Corrects an earlier suggestion in the dark-matter closure note: the RG-improved mass (~1.6 M_Pl rather than ~M_Pl) plus post-inflation suppression make monopoles negligible as dark matter.
 
 ## Audit fields
 

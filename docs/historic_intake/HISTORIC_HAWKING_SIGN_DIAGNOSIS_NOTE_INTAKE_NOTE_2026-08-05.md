@@ -35,15 +35,19 @@ The sign diagnosis: the lane's headline T-vs-kappa observable measured bandwidth
 - git blob: `60a41bf7e2268e2ba1d0bb8913ca10c3f075f578`
 - sha256: `5969dc3ff44dcfdfafdc01719b4677b8835efd6f9ab1c586bc3ee43545ed34ca`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/674_HAWKING_SIGN_DIAGNOSIS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/674_HAWKING_SIGN_DIAGNOSIS_NOTE.md)
-- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hawking_sign_diagnosis(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_hawking_3d_quench(.py)`
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hawking_sign_diagnosis​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_hawking_3d_quench​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Establishes that the lane's own headline observable was measuring the wrong quantity - kappa carries no independent geometric information at fixed sigma, being just a rescaled copy of quench strength.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Establishes that the lane's own headline observable was measuring the wrong quantity - kappa carries no independent geometric information at fixed sigma, being just a rescaled copy of quench strength.
+- Supersession (as known at extraction): Diagnoses and effectively retracts the physical reading of the 3D quench (idx 671): the Fermi-Dirac T is NOT the Hawking temperature for hopping quenches, and future work should use potential-based or bandwidth-preserving quenches.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The counting-trace uniqueness theorem (U1-U5): the coefficient functional is uni
 - git blob: `3e3af414d004a26587a72b3475b1d0fdccea0f9f`
 - sha256: `de8769a13483c39c6f27d6636d80749ff9d95ddcd25d34fafcb248364e47d140`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1494_PLANCK_SCALE_UNIVERSAL_PRIMITIVE_COUNTING_TRACE_THEOREM_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1494_PLANCK_SCALE_UNIVERSAL_PRIMITIVE_COUNTING_TRACE_THEOREM_2026-04-23.md)
-- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_universal_primitive_counting_trace_theorem(.py)`
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_universal_primitive_counting_trace_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Central uniqueness theorem of the packet; its U5 clause is discharged upstream by the atomic-naturality theorem and its counting reading by the P1 decomposition.
 
 ## Audit fields
 

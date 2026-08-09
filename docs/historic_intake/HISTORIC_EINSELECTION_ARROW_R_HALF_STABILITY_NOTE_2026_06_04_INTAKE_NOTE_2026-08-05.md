@@ -35,16 +35,20 @@ Exact separatrix result: sharpen/therm are inverse branches so r=1/2 is repeller
 - git blob: `7e54c5faf007abf451cae9f1157e977fe30fbf43`
 - sha256: `ecc62c448adcbddd734a92ee56a05ae94873887ccfc3879dde93112419565f27`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/418_EINSELECTION_ARROW_R_HALF_STABILITY_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch02/418_EINSELECTION_ARROW_R_HALF_STABILITY_NOTE_2026-06-04.md)
-- Lines: 52; runners named: historic runner (unpinned, not in this packet): `scripts/einselection_arrow_r_half_stability(.py)`
+- Lines: 52; runners named: historic runner (unpinned, not in this packet): `scripts/einselection_arrow_r_half_stability​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/EINSELECTION_R_HALF_STABLE_SETTING_NOTE_2026-06-04.md` — Stable-setting positive; unaudited-dependency flag.
 - `docs/EINSELECTION_SECTOR_OCCUPANCY_NOTE_2026-06-04.md` — Per-sector occupancy discriminator with named blockers.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Notes that no single 1-D arrow makes {0, 1/2, 1} simultaneously stable, and that the knife-edge separatrix matches the ~1e-5 Koide precision - i.e. the physical value sits on an unstable point.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Notes that no single 1-D arrow makes {0, 1/2, 1} simultaneously stable, and that the knife-edge separatrix matches the ~1e-5 Koide precision - i.e. the physical value sits on an unstable point.
+- Supersession (as known at extraction): Adjudicates between two conflicting origin/main notes (FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX and FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW), showing the contradiction is an arrow choice not an algebraic error.
 
 ## Audit fields
 

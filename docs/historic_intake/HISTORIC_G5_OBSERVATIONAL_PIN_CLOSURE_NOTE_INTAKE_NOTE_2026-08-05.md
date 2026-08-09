@@ -1,6 +1,6 @@
-# Historic intake: G5 Observational-Pin Closure - the G1-analogous route
+# Historic intake: Koide Observational-Pin Closure - the Route Analogous to the Doublet-Block Selector Lane
 
-Explicit subject: Pinning the shape theorem's weights to PDG charged-lepton masses gives (w_O0, w_a, w_b) = (2.713707e-04, 5.611085e-02, 9.436178e-01) normalized, at which Koide Q = 0.6666605115 is recovered AUTOMATICALLY (|Q - 2/3| = 6.155e-06) rather than imposed - because Q is scale-invariant ... (The bare codes `G5`, `G1` in the title are era-local historic shorthand preserved verbatim from the original; the pinned original defines them.)
+Explicit subject: Pinning the shape theorem's weights to PDG charged-lepton masses gives (w_O0, w_a, w_b) = (2.713707e-04, 5.611085e-02, 9.436178e-01) normalized, at which Koide Q = 0.6666605115 is recovered AUTOMATICALLY (|Q - 2/3| = 6.155e-06) rather than imposed - because Q is scale-invariant ... (Historic codes `G5`, `G1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the codes are preserved here, in the pinned original, and in its archived copy; the pinned original defines them.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ G5 observational-pin closure WITH the flag that automatic-Koide is scale invaria
 - git blob: `b80a0968e5b611851fa9a95d62991218c712fdc3`
 - sha256: `a094221ea6ca925bbc5cc1629cf8b19ea0619100ef6eea62bc7ccb436156b63f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/548_G5_OBSERVATIONAL_PIN_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/548_G5_OBSERVATIONAL_PIN_CLOSURE_NOTE.md)
-- Lines: 208; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g5_observational_pin_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g5_gamma_1_second_order_return(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_dirac_bridge_theorem(.py)`
+- Lines: 208; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g5_observational_pin_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g5_gamma_1_second_order_return​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_dirac_bridge_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The 'Koide recovered automatically' result is a consequence of scale invariance once the weights are set proportional to the observed masses - i.e. Q is inherited from the input, not predicted; R5 (the key chamber-interior selection) is conceded to be unimposable by retained schemes.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The 'Koide recovered automatically' result is a consequence of scale invariance once the weights are set proportional to the observed masses - i.e. Q is inherited from the input, not predicted; R5 (the key chamber-interior selection) is conceded to be unimposable by retained schemes.
+- Supersession (as known at extraction): Takes the Agent 10 v2 shape theorem (idx 545) and closes G5 by the same P3 observational-promotion lane G1 used (idx 533); mirrors G1's architecture explicitly.
 
 ## Audit fields
 

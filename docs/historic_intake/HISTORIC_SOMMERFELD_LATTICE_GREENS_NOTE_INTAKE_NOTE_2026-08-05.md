@@ -35,15 +35,19 @@ Sommerfeld computed from the lattice (20/20, no analytic formula) — closing th
 - git blob: `571adbf61ee215532cd3785f3c1e9b144b675d22`
 - sha256: `f545827676b0363c30ee94ac0d4abca552fe224c2d1493c70d72a20cbe7a326b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1946_SOMMERFELD_LATTICE_GREENS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1946_SOMMERFELD_LATTICE_GREENS_NOTE.md)
-- Lines: 97; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sommerfeld_lattice_greens(.py)`
+- Lines: 97; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sommerfeld_lattice_greens​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/SOMMERFELD_ANALYTIC_PROOF_NOTE.md` — Analytic Sommerfeld complement (proof-sketch step flagged).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The headline 20/20 is 1D only; the 3D lattice result is ~30% off and the receipt path is an unfilled placeholder (logs/YYYY-MM-DD-...).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The headline 20/20 is 1D only; the 3D lattice result is ~30% off and the receipt path is an unfilled placeholder (logs/YYYY-MM-DD-...).
+- Supersession (as known at extraction): Answers the Codex 'compute it, don't assert it' objection to frontier_dm_ratio_structural​.py; numerically confirms idx 1945.
 
 ## Audit fields
 

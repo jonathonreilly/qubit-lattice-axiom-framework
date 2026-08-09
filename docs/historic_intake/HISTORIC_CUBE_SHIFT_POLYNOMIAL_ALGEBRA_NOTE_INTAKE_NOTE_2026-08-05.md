@@ -35,16 +35,20 @@ The cube-shift algebra structure theorem (abelian, dim 8, Hadamard-diagonal) —
 - git blob: `b69172d6781e69cafc11c17c1d87438ead7f9728`
 - sha256: `719600b60707947768ba0a7a2d2ed6eba4ff67e2d68ea8e600b04504bc28313b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/275_CUBE_SHIFT_POLYNOMIAL_ALGEBRA_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/275_CUBE_SHIFT_POLYNOMIAL_ALGEBRA_NOTE.md)
-- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cube_shift_polynomial_algebra(.py)`
+- Lines: 61; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cube_shift_polynomial_algebra​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CUBE_SHIFT_JOINT_EIGENSTRUCTURE_NOTE.md` — Axis-shift involution eigenstructure.
 - `docs/CUBE_SHIFT_VS_HW_PROJECTOR_INTERSECTION_NOTE.md` — Invariant-algebra intersection (scalars only).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ ERRATUM against a retained Tier-A witness: the finite Wilson eta proxy is diagno
 - git blob: `ca6e51f2089f83c529b08d4f1e90a76c18bb5707`
 - sha256: `515c3f50f8359fd8934ca5eb164451305e1c19f9ee7565213350a917f0cbfbe8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1081_KOIDE_SELECTED_EIGENLINE_AMBIENT_ETA_REPAIR_TARGET_NOTE_2026-06-07.md](../../archive_unlanded/historic_intake_originals/branch04/1081_KOIDE_SELECTED_EIGENLINE_AMBIENT_ETA_REPAIR_TARGET_NOTE_2026-06-07.md)
-- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07(.py)`
+- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that a currently retained Tier-A witness carries wording the author believes is wrong, but cannot fix it without re-audit.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that a currently retained Tier-A witness carries wording the author believes is wrong, but cannot fix it without re-audit.
+- Supersession (as known at extraction): Tracks an ERRATUM-style repair to a Tier-A audited witness (stale ambient-mismatch wording) that it is not permitted to apply; audit-bound.
 
 ## Audit fields
 

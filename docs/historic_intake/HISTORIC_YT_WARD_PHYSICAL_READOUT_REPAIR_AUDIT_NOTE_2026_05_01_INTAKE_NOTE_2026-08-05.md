@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ The audit-derived repair map: the repo contains prose and arithmetic for the War
 - git blob: `05e9fe619f906d8922234150c7973ba59a3a1ffe`
 - sha256: `38f2b3e1a2d86b9713d417552243ffd4dce3d6560a29d6bba490eb40d4fedf6b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2483_YT_WARD_PHYSICAL_READOUT_REPAIR_AUDIT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch08/2483_YT_WARD_PHYSICAL_READOUT_REPAIR_AUDIT_NOTE_2026-05-01.md)
-- Lines: 67; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_ward_physical_readout_repair_audit(.py)`
+- Lines: 67; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_ward_physical_readout_repair_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +47,12 @@ The audit-derived repair map: the repo contains prose and arithmetic for the War
 - `docs/YT_WARD_OPERATOR_MATCHING_CANDIDATE_NOTE_2026-05-01.md` — Three tree-level readings of 1/sqrt(6); five named repairs.
 - `docs/YT_WARD_PATH_UNCERTAINTY_BUDGET_NOTE.md` — Publication-style numbers (y_t = 0.9176 +/- 0.005) in a support note — flag carried.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The audit-derived work order that generates 2481 and, downstream, the entire May scalar-pole/LSZ lane.
 
 ## Audit fields
 

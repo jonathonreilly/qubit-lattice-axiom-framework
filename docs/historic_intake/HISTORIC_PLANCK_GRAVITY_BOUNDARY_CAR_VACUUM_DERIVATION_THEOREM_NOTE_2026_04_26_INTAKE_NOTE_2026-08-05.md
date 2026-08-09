@@ -35,16 +35,20 @@ The carrier DERIVED (CAR algebra construction) superseding hand-assignment — t
 - git blob: `728d17f434bd0b04bd925700bdda05e6534e92c1`
 - sha256: `7f6ec8455eff1d8f9167edcb70a4dd77efc6ef2747c37b12feb1f905820449ed`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1363_PLANCK_GRAVITY_BOUNDARY_CAR_VACUUM_DERIVATION_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch04/1363_PLANCK_GRAVITY_BOUNDARY_CAR_VACUUM_DERIVATION_THEOREM_NOTE_2026-04-26.md)
-- Lines: 374; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_gravity_boundary_car_vacuum_derivation(.py)`
+- Lines: 374; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_gravity_boundary_car_vacuum_derivation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PLANCK_GRAVITY_BOUNDARY_COFRAME_CARRIER_IDENTIFICATION_THEOREM_NOTE_2026-04-26.md` — The assignment version; superseded.
 - `docs/PLANCK_PIN_ITERATED_IRON_CLAD_CLOSURE_THEOREM_NOTE_2026-04-26.md` — Six-objection iteration; self-scored flag.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supersedes the hand-assignment in PLANCK_GRAVITY_BOUNDARY_COFRAME_CARRIER_IDENTIFICATION (idx_pos 1364), which reached the same B_grav = P_A result by assignment.
 
 ## Audit fields
 

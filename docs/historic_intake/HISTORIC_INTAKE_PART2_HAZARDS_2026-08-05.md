@@ -10,6 +10,17 @@ no claim, confers no verdict, demotion, or effective status, and must not be
 consumed as evidence; each entry is provenance pointing at the named surface,
 and substantive corrections require their own auditable claim rows.
 
+Provenance (evidence base, pinned):
+- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/branch09.jsonl` (byte-exact copy of triage_2026-08-05/extracted/branch09.jsonl) — sha256 `4cdd06f9f285fde1bf12e21f0e78de5750fb68035b072555a68520ece7156ebc`
+- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/packsci01.jsonl` (byte-exact copy of triage_2026-08-05/extracted/packsci01.jsonl) — sha256 `a452f9109ca370f409ffcbdc99fe7733754cc602a39af67c10128b3b9b460d4a`
+- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/packsci02.jsonl` (byte-exact copy of triage_2026-08-05/extracted/packsci02.jsonl) — sha256 `61c69c2faaca710454a86a5639bf5f28cf2aab6c24a9c626495ce2d6ccb986d9`
+- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/packsci03.jsonl` (byte-exact copy of triage_2026-08-05/extracted/packsci03.jsonl) — sha256 `180cb0c6d9c0d89fce7a16acb431057121328eb2707b5d9dc47ec0e87397d043`
+- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/packsci04.jsonl` (byte-exact copy of triage_2026-08-05/extracted/packsci04.jsonl) — sha256 `56226cac23f927c77469ca11f1d37ecba9cad6c48150271dee32e7ba5761aa33`
+- `archive_unlanded/historic_intake_originals/triage_extraction_evidence/packsci05.jsonl` (byte-exact copy of triage_2026-08-05/extracted/packsci05.jsonl) — sha256 `46d1b2fe48621b2e164e07c5065b36dfa6218ae9754bb612b18d16f9bafce62d`
+- The per-hazard `idx` pointers below refer to rows in these archived
+  extraction files and to `triage_2026-08-05/manifests/<stratum>.json` in the
+  census worktree.
+
 Items NOT pulled into historic intake (they concern LANDED rows or live lanes),
 recorded here so the audit lane sees them when it touches the named surfaces.
 idx numbers refer to triage_2026-08-05/manifests/packsci0N.json.

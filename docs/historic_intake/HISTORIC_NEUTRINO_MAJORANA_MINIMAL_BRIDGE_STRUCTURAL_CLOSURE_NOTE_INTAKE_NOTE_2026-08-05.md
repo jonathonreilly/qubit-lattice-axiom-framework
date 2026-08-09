@@ -35,15 +35,19 @@ The positive Majorana reopening on the minimal ADMITTED bridge (five-step chain)
 - git blob: `34422a300a0eb504690db46da8946162bdef2c63`
 - sha256: `4041113511baa912b8a9326cbd6c92abec71c3f5d89bf9be7d616ffac1cd39ee`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1195_NEUTRINO_MAJORANA_MINIMAL_BRIDGE_STRUCTURAL_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1195_NEUTRINO_MAJORANA_MINIMAL_BRIDGE_STRUCTURAL_CLOSURE_NOTE.md)
-- Lines: 238; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_minimal_bridge_structural_closure(.py)`
+- Lines: 238; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_minimal_bridge_structural_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The positive closure rests on an ADMITTED post-retained bridge, not on the retained bank.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The positive closure rests on an ADMITTED post-retained bridge, not on the retained bank.
+- Supersession (as known at extraction): Reopens positively what the pure-retained lane closed negatively; its eps/B = alpha_LM/2 is precisely the value later challenged by the alpha_LM^2 solar-gap candidate (idx_pos 1209, 1210).
 
 ## Audit fields
 

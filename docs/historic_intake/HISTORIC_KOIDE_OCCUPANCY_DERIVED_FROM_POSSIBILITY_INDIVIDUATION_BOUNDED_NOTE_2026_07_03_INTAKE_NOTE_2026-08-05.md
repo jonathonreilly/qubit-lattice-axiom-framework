@@ -35,15 +35,19 @@ Retraction on the record: the occupancy-bridge 'derived' claim withdrawn after a
 - git blob: `cf02fe5d52e3026be1bb4421942674fac64907ea`
 - sha256: `3e9cb5e9436d9bc0bb3cbe842533102fd420c73d88b0dacbe630d881fe4c79c1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/876_KOIDE_OCCUPANCY_DERIVED_FROM_POSSIBILITY_INDIVIDUATION_BOUNDED_NOTE_2026-07-03.md](../../archive_unlanded/historic_intake_originals/branch03/876_KOIDE_OCCUPANCY_DERIVED_FROM_POSSIBILITY_INDIVIDUATION_BOUNDED_NOTE_2026-07-03.md)
-- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03(.py)`
+- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_occupancy_possibility_individuation_2026_07_03​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that an earlier version of this note claimed a derivation that three independent reviewers refuted.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that an earlier version of this note claimed a derivation that three independent reviewers refuted.
+- Supersession (as known at extraction): Repaired wording after a three-seat adversarial refutation pass returned a convergent negative on the note's earlier derivation form.
 
 ## Audit fields
 

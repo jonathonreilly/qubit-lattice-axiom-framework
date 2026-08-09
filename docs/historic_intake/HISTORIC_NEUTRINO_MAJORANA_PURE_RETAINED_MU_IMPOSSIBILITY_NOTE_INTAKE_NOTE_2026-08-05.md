@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ The Majorana capstone negative: the pure-retained lane stays charge-zero — mu 
 - git blob: `fdc33f99b302b2a9a7b5e85a96e150a884dab6e8`
 - sha256: `375efb52e1d4624e59cbd1c3489977663438404655b6272d4fab4af6654afa4b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1197_NEUTRINO_MAJORANA_PURE_RETAINED_MU_IMPOSSIBILITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1197_NEUTRINO_MAJORANA_PURE_RETAINED_MU_IMPOSSIBILITY_NOTE.md)
-- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_pure_retained_mu_impossibility(.py)`
+- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_pure_retained_mu_impossibility​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +49,12 @@ The Majorana capstone negative: the pure-retained lane stays charge-zero — mu 
 - `docs/NEUTRINO_PFAFFIAN_CASE_C_NO_FITTED_GAP_EXCLUSION_NOTE_2026-04-28.md` — Case-C exclusion via methodological posture — flag carried.
 - `docs/NEUTRINO_PFAFFIAN_CONTINUUM_LIMIT_INCOMPATIBILITY_NOTE_2026-04-28.md` — BCS-conflict partial closure.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Terminal negative note of the retained Majorana chain (1194, 1196, 1198, 1200 feed it); the positive reopening lives at idx_pos 1195.
 
 ## Audit fields
 

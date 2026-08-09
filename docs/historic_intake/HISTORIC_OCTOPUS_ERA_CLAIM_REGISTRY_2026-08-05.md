@@ -28,14 +28,18 @@ The pre-note era (2026-03-13..29) exists only in commits; its 90-claim ledger (e
 - sha256: `ddcbc20617185a7922e063937a11a26cd87f3166eac5ba7b582bb2d31d364b25`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/octopus/octopus_era_claims.md](../../archive_unlanded/historic_intake_originals/octopus/octopus_era_claims.md)
 - Lines: 98; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - [`triage_2026-08-05/extracted/octopus_era.jsonl`](../../archive_unlanded/historic_intake_originals/octopus/octopus_era.jsonl) — the registry's evidence base: 3179 per-commit rows, one per distinct (date, subject) group; no per-claim wrappers were made. Byte-exact copy archived at the linked path (sha256 `f7db80f6c3f5d334973ff57e73243fc70dea9b1b2023c74f946e966d145bbacf`).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

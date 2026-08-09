@@ -35,15 +35,19 @@ GSTAR erratum: 110.75 wrongly included Planck-mass states — real physics error
 - git blob: `ef5ad5c85c45f682d3b0fb6587ca3e8b079bde60`
 - sha256: `3324dccaf7e729740736973ea37df5b658fc335e5d08ad27d42ec5c099da7ace`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/656_GSTAR_RECONCILIATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/656_GSTAR_RECONCILIATION_NOTE.md)
-- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gstar_reconciliation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_native_eta(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_taste_enhanced_eta(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coupled_transport(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_derivation(.py)`
+- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gstar_reconciliation​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_native_eta​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_taste_enhanced_eta​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_coupled_transport​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_eta_derivation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents a real physics error that propagated into three baryogenesis scripts plus one derivation before being caught by adversarial audit.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents a real physics error that propagated into three baryogenesis scripts plus one derivation before being caught by adversarial audit.
+- Supersession (as known at extraction): Closes item 5 of ADVERSARIAL_CHAIN_AUDIT_2026-04-13 and invalidates the g_* values used by four named predecessor scripts.
 
 ## Audit fields
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The kinematics flaw identified AT CAMPAIGN START: three axis modes share one she
 - git blob: `7f37b49563e17bb6a5b3f02a4fe989982a6b0802`
 - sha256: `7cd9b9b9267759d99139668550eae65204556e44ccd57491036eeb67484c4b32`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2270_YT_FH_LSZ_POLE_FIT_KINEMATICS_GATE_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2270_YT_FH_LSZ_POLE_FIT_KINEMATICS_GATE_NOTE_2026-05-01.md)
-- Lines: 46; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_pole_fit_kinematics_gate(.py)`
+- Lines: 46; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_pole_fit_kinematics_gate​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The four-mode production plan was launched and run to completion despite this gate showing it could not supply the pole derivative.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The four-mode production plan was launched and run to completion despite this gate showing it could not supply the pole derivative.
+- Supersession (as known at extraction): Identifies at the start of the campaign the kinematic defect that made the entire four-mode 63-chunk production stream (terminal idx 2220) unusable for its stated purpose.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Gauge universality resolved algebraically: corner commutants isomorphic with ide
 - git blob: `4f5de1cae8e7efd7ef19a7ded74747bcf559af9d`
 - sha256: `3beb90aa9c0962de7361a6a682312e5b956601b191e5901f0cecf127d1ce004a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/566_GAUGE_UNIVERSALITY_ALGEBRAIC_DERIVATION.md](../../archive_unlanded/historic_intake_originals/branch02/566_GAUGE_UNIVERSALITY_ALGEBRAIC_DERIVATION.md)
-- Lines: 461; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_gauge_universality(.py)`
+- Lines: 461; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_gauge_universality​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/GENERATION_3FAILS_INVESTIGATION_NOTE.md` — Opposite-readings flag on the three FAILs.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly contradicts the sibling note's interpretation that the differing projected spectra mean the three species see different effective quantum numbers.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly contradicts the sibling note's interpretation that the differing projected spectra mean the three species see different effective quantum numbers.
+- Supersession (as known at extraction): Resolves the three FAILs reported by EXISTING_GAUGE_UNIVERSALITY_SEARCH (idx 454), which had read the projected-spectrum differences as physically meaningful.
 
 ## Audit fields
 

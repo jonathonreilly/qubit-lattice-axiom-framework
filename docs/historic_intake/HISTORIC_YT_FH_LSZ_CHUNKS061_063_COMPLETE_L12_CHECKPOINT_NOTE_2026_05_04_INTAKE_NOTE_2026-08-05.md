@@ -36,6 +36,7 @@ The L12 production terminal: 63/63 chunks, 1008 configs — and even the complet
 - sha256: `0ed1e83d31ec8b19cb09ab888e6e846ec01e215347d8b59e2d4c2fc1e1a87c3d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2220_YT_FH_LSZ_CHUNKS061_063_COMPLETE_L12_CHECKPOINT_NOTE_2026-05-04.md](../../archive_unlanded/historic_intake_originals/branch07/2220_YT_FH_LSZ_CHUNKS061_063_COMPLETE_L12_CHECKPOINT_NOTE_2026-05-04.md)
 - Lines: 121; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -91,9 +92,12 @@ The L12 production terminal: 63/63 chunks, 1008 configs — and even the complet
 - `docs/YT_FH_LSZ_PAIRED_VARIANCE_CALIBRATION_GATE_NOTE_2026-05-04.md` — FH/LSZ chunk-sweep machinery; carried by the production terminal and instrument corrections.
 - `docs/YT_FH_LSZ_PAIRED_VARIANCE_CALIBRATION_ORCHESTRATOR_NOTE_2026-05-04.md` — FH/LSZ chunk-sweep machinery; carried by the production terminal and instrument corrections.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The campaign's largest production effort (63 chunks, 1008 configurations) ends with every load-bearing gate still open and the harness proxy y_t ~ 0.0225 rather than ~0.92.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The campaign's largest production effort (63 chunks, 1008 configurations) ends with every load-bearing gate still open and the harness proxy y_t ~ 0.0225 rather than ~0.92.
+- Supersession (as known at extraction): TERMINAL of the L12 FH/LSZ chunk sweep (idx 2192-2220): completes the 63-chunk plan set at idx 2202 and still fails the physics gates, which is the sweep's whole outcome.
 
 ## Audit fields
 

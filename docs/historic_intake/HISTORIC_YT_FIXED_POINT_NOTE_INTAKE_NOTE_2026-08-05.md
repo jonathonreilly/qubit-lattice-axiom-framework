@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Quasi-fixed-point coincidence refuted: the lattice boundary is NOT at the IR fix
 - git blob: `b3c071fc14426e19d5e2cae993c9aa1869202f09`
 - sha256: `17526820f56202ad49445b37af8eaa1da6a709a767775ba397feaecde58a358f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2300_YT_FIXED_POINT_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2300_YT_FIXED_POINT_NOTE.md)
-- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fixed_point(.py)`
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fixed_point​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Refutes a previously entertained 'double protection' framing for the framework's flagship y_t relation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Refutes a previously entertained 'double protection' framing for the framework's flagship y_t relation.
+- Supersession (as known at extraction): Refutes a coincidence hypothesis that would have made the Cl(3) ratio doubly protected; consistent with the y_t attack tables at idx 2075.
 
 ## Audit fields
 

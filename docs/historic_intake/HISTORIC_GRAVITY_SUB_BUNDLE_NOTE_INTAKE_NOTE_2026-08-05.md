@@ -35,7 +35,8 @@ The four-tier gravity accounting keyed to consumed assumptions — the lane's ho
 - git blob: `6c63f48a3260b56985102848e94b5503fbdf8418`
 - sha256: `a4e980dbd2bbf0b9b06489e1411ee91d82c271ca8638a3eb2d3f3905bc68d91f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/652_GRAVITY_SUB_BUNDLE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/652_GRAVITY_SUB_BUNDLE_NOTE.md)
-- Lines: 410; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gravity_sub_bundle(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_poisson_exhaustive_uniqueness(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_definitive(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dimension_selection(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_bound_state_selection(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_emergent_product_law(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_emergent_gr_signatures(.py)`
+- Lines: 410; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gravity_sub_bundle​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_poisson_exhaustive_uniqueness​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_distance_law_definitive​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dimension_selection​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_bound_state_selection​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_emergent_product_law​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_geodesic_equation​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_emergent_gr_signatures​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ The four-tier gravity accounting keyed to consumed assumptions — the lane's ho
 - `docs/GRAVITY_STRONG_FIELD_ATTACK_PLAN_2026-04-13.md` — Strong-field attack plan; label-downgrade instruction noted.
 - `docs/GR_SIGNATURES_DERIVED_NOTE.md` — Eight-signature status split; 76% WEP spread flagged.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Grades the Poisson step BOUNDED (numerical evidence, not closed proof), directly contradicting the sibling GRAVITY_POISSON_DERIVED note (idx 649) which calls the same step an exact theorem with nothing open.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Grades the Poisson step BOUNDED (numerical evidence, not closed proof), directly contradicting the sibling GRAVITY_POISSON_DERIVED note (idx 649) which calls the same step an exact theorem with nothing open.
+- Supersession (as known at extraction): States the upgrade condition for its own weakest row - a proof that the graph Laplacian is the unique local operator giving an attractive self-consistent fixed point on any connected graph.
 
 ## Audit fields
 

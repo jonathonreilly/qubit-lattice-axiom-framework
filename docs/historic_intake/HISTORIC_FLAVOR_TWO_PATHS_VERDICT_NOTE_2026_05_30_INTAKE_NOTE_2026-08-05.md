@@ -1,11 +1,11 @@
-# Historic intake: Flavor - both paths fail; A1's trace votes Q=1 (correcting the native 2/3 lean)
+# Historic intake: Flavor - both paths fail; the site-algebra trace votes Q=1 (correcting the native 2/3 lean)
 
-Explicit subject: With complex b (the physical case, since arg(b) != 0 is what splits e, mu, tau) the doublet isotype has TWO real dof, so the canonical trace-induced Gaussian gives doublet:singlet = 2:1 by Schur - dimension, Q = 1 (isotype ratio 2.00, median Q = 1.34); block-count (Q = 2/3) is ... (The bare code `A1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: With complex b (the physical case, since arg(b) != 0 is what splits e, mu, tau) the doublet isotype has TWO real dof, so the canonical trace-induced Gaussian gives doublet:singlet = 2:1 by Schur - dimension, Q = 1 (isotype ratio 2.00, median Q = 1.34); block-count (Q = 2/3) is ... (Historic code `A1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -15,6 +15,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -37,16 +39,20 @@ Two-paths terminal: canonical measure gives Q=1, dynamics 1/3, observation 2/3 �
 - git blob: `3b24fead55825c300be26758a98952b8160ad81f`
 - sha256: `c3fbcd7c75bd60cb9403e164189b00e1f1c5c32a7ab5dec61c020d3fee48ccda`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/496_FLAVOR_TWO_PATHS_VERDICT_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/496_FLAVOR_TWO_PATHS_VERDICT_NOTE_2026-05-30.md)
-- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_two_paths_verdict_2026_05_30(.py)`
+- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_two_paths_verdict_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FLAVOR_MATRIX_FIELD_MEASURE_BLOCK_COUNT_NOTE_2026-05-30.md` — Measure ranking; overturned same-day.
 - `docs/FLAVOR_STAGGERED_BASELINE_AND_MEASURE_FORCING_NOTE_2026-05-30.md` — Chiral-operator baseline; ranking overturned same-day.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A third same-campaign retraction; the corrected measure verdict inverts the campaign's flagship positive.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A third same-campaign retraction; the corrected measure verdict inverts the campaign's flagship positive.
+- Supersession (as known at extraction): Explicitly RETRACTS the 'native covariant measure ranks toward 2/3' result of moves 3/B and the exactness-closure note (idx 486, 494, 479) as an artifact of the real-b restriction.
 
 ## Audit fields
 

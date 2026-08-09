@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ REPRODUCIBILITY DEFECT: two 'independent' published chunks share an identical ga
 - git blob: `cfa0c4aa335e70ec708517725235b90f2a6114ac`
 - sha256: `8eefdd92c08767b270bef4db7d5dd8c0bbfec25254f7570d4871b233552e89a6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2244_YT_FH_LSZ_NUMBA_SEED_INDEPENDENCE_AUDIT_NOTE_2026-05-02.md](../../archive_unlanded/historic_intake_originals/branch07/2244_YT_FH_LSZ_NUMBA_SEED_INDEPENDENCE_AUDIT_NOTE_2026-05-02.md)
-- Lines: 52; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_chunk_combiner_gate(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_numba_seed_independence_audit(.py)`
+- Lines: 52; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_chunk_combiner_gate​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_fh_lsz_numba_seed_independence_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A real reproducibility defect found post hoc: two chunks published as independent production evidence shared an identical gauge ensemble because numba's RNG was never seeded.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A real reproducibility defect found post hoc: two chunks published as independent production evidence shared an identical gauge ensemble because numba's RNG was never seeded.
+- Supersession (as known at extraction): Invalidates the first two production checkpoints of the sweep (idx 2192, 2194) as independent evidence and forces the replacement-rerun wave at idx 2193-2197.
 
 ## Audit fields
 

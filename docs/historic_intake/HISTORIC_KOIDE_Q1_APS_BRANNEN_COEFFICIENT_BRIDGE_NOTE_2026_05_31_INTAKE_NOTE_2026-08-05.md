@@ -35,15 +35,19 @@ Exact C_3 group-algebra identity: the Q=1 source's every offsite coefficient is 
 - git blob: `a8aeb60c204f03e927337112f7df603f825c381e`
 - sha256: `0528f33f38f349d12181ce0b2a01d0a83430a698cfdb54b7ad0273e4bb845fcf`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/897_KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md](../../archive_unlanded/historic_intake_originals/branch03/897_KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md)
-- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_aps_brannen_coefficient_bridge(.py)`
+- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_aps_brannen_coefficient_bridge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Types the -2/9 residue found by the parent Q = 1 offsite synthesis packet; consumes the transposition-odd characterization of delta from the 2026-05-23 parity theorem.
 
 ## Audit fields
 

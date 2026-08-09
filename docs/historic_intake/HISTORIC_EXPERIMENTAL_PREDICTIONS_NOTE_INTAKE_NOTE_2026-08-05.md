@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The falsifiability boundary: all three candidate tests undetectable at a = l_Pla
 - git blob: `241acf67f1fb74af9044d23c8fd874ffec6165e4`
 - sha256: `b6e32bd3d4a4756f0213cbe572284dfa795a4f06969cb7378dad02754b2fed94`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/455_EXPERIMENTAL_PREDICTIONS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/455_EXPERIMENTAL_PREDICTIONS_NOTE.md)
-- Lines: 103; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_experimental_predictions(.py)`
+- Lines: 103; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_experimental_predictions​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

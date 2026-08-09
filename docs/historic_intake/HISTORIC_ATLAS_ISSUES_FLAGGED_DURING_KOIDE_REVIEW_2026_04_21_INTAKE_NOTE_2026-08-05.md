@@ -35,15 +35,19 @@ Five named inaccuracies in retained atlas items cited by the Koide selector pack
 - git blob: `7fc34b71a97586fb749e2f42d792287a60019346`
 - sha256: `fd8ad4a634a43a04df6091a4f0acb1d73d436dc41a5b8de6c9f80478978ba50e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/59_ATLAS_ISSUES_FLAGGED_DURING_KOIDE_REVIEW_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch01/59_ATLAS_ISSUES_FLAGGED_DURING_KOIDE_REVIEW_2026-04-21.md)
-- Lines: 183; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_higgs_dressed_propagator_v1(.py)`
+- Lines: 183; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_higgs_dressed_propagator_v1​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Identifies a retained note whose 'coordinate-closed / no free internal parameters' status actually rests on an observational pin.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Identifies a retained note whose 'coordinate-closed / no free internal parameters' status actually rests on an observational pin.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

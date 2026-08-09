@@ -1,6 +1,6 @@
-# Historic intake: The Weak-Field Mass-Law Exponent Is an Integer Forced by Self-Adjointness: the Sublinear Rival to Valley-Linear Is Excluded, Admission (c) Collapses into the A2 Coupling, and the P4 Rival Formula Is Misstated
+# Historic intake: The Weak-Field Mass-Law Exponent Is an Integer Forced by Self-Adjointness: the Sublinear Rival to Valley-Linear Is Excluded, Admission (c) Collapses into the Coupling, and the Rival Formula Is Misstated
 
-Explicit subject: Four results: (1) probe P4's rival S = L sqrt(1 - phi) is misstated — since 1 - sqrt(1-f) = f/2 + f^2/8 + ..., it is weak-field LINEAR and sits in the Newtonian class, while the landed F ~ sqrt(M) = 0.50 row is the different function L(1 - f^0.5), so the stated discriminator ... (The bare codes `A2`, `P4` in the title are era-local historic shorthand preserved verbatim from the original; the pinned original defines them.)
+Explicit subject: Four results: (1) probe P4's rival S = L sqrt(1 - phi) is misstated — since 1 - sqrt(1-f) = f/2 + f^2/8 + ..., it is weak-field LINEAR and sits in the Newtonian class, while the landed F ~ sqrt(M) = 0.50 row is the different function L(1 - f^0.5), so the stated discriminator ... (Historic codes `A2`, `P4`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the codes are preserved here, in the pinned original, and in its archived copy; the pinned original defines them.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ Corrects a LANDED support note under a 773-descendant critical row: the rival ac
 - git blob: `08ca025d92729e7db23c3d6366aed0fc0bb1f2a4`
 - sha256: `2c4d6aaf12a2070e92730aeed973826686a7c7ff6012f8dd91fc4ec7245b8a47`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2111_WEAK_FIELD_MASS_LAW_EXPONENT_IS_AN_INTEGER_FORCED_BY_SELF_ADJOINTNESS_SUBLINEAR_RIVAL_EXCLUDED_BOUNDED_THEOREM_NOTE_2026-07-26.md](../../archive_unlanded/historic_intake_originals/branch07/2111_WEAK_FIELD_MASS_LAW_EXPONENT_IS_AN_INTEGER_FORCED_BY_SELF_ADJOINTNESS_SUBLINEAR_RIVAL_EXCLUDED_BOUNDED_THEOREM_NOTE_2026-07-26.md)
-- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/physical_weak_field_exponent_from_self_adjointness_cycle707_2026_07_26(.py)`
+- Lines: 181; runners named: historic runner (unpinned, not in this packet): `scripts/physical_weak_field_exponent_from_self_adjointness_cycle707_2026_07_26​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Corrects landed content (the P4 admission (c) discriminator was a comparison within one universality class, and the empirical selection of valley-linear was matching the known Newtonian answer); three drafting errors caught by the runner are recorded rather than silently fixed.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Corrects landed content (the P4 admission (c) discriminator was a comparison within one universality class, and the empirical selection of valley-linear was matching the known Newtonian answer); three drafting errors caught by the runner are recorded rather than silently fixed.
+- Supersession (as known at extraction): Corrects a landed support note (probe P4's rival formula) whose parent row carries 773 transitive descendants; also records a previously unwritten obstruction — G_0 = H^{-1} does not exist translation-invariantly since the periodic Laplacian annihilates constants.
 
 ## Audit fields
 

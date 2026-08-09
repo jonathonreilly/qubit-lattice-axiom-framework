@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,16 +37,20 @@ HAWKING ANALOG FALSIFIED: f = 1 is a phase-inversion boundary that AMPLIFIES out
 - git blob: `88b4716c4b50e122f27133ca4a9f8c675c7f2029`
 - sha256: `f7908ee91eff155eec4297b4917d606898f8f5d764e164d7332d3f2c2e4c8c50`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/672_HAWKING_ANALOG_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/672_HAWKING_ANALOG_NOTE.md)
-- Lines: 91; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hawking_analog(.py)`
+- Lines: 91; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hawking_analog​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/HAWKING_3D_QUENCH_NOTE.md` — 3D quench stepping stone; own warnings intact.
 - `docs/HAWKING_BOGOLIUBOV_QUENCH_NOTE.md` — 1D Bogoliubov quench; thermality collapse flagged.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Reports amplitude amplification by a factor of 164 - the wavepacket gains energy crossing the high-field region, which would be a conservation problem for any downstream use of the f > 1 regime.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Reports amplitude amplification by a factor of 164 - the wavepacket gains energy crossing the high-field region, which would be a conservation problem for any downstream use of the f > 1 regime.
+- Supersession (as known at extraction): Also debunks its own control: the quasi-thermal far-field shape is identified as a geometric artifact of the cos^2 kernel and 1/L^p attenuation, not physics.
 
 ## Audit fields
 

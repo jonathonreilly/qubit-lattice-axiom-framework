@@ -36,14 +36,18 @@ Retraction on the record: the displayed coefficient map cannot change V_ub when 
 - sha256: `96cb3896cc00d4227564d40616fcbde36d13e6f8f5f615de5d18a13d2344894a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10315_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10315_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 32; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/ckm-mass-basis-nni-reparameterization-20260712/NO_GO_LEDGER.md` — Five-route companion: consistent reconstruction gives p_ij mu_j = g_ij sqrt(mu_i mu_j), closing every normalization-only route to a V_ub change.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Corrects a previously asserted positive numeric result (1.14x V_ub); supervisor should check whether the retracted version reached docs/ or a ledger row.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Corrects a previously asserted positive numeric result (1.14x V_ub); supervisor should check whether the retracted version reached docs/ or a ledger row.
+- Supersession (as known at extraction): Self-correction of an earlier branch-local 1.14x V_ub enhancement claim; the full N1-N8 stress test lives in the campaign's target note.
 
 ## Audit fields
 

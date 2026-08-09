@@ -35,7 +35,8 @@ The plaquette reduction chain's terminal: fixed-depth closure = one finite cycli
 - git blob: `cdcb0b4611831ec7a9be08d460b621dab389dde9`
 - sha256: `ca5d36dd996af44024815722d4e836d91b99f1912794743e34e3d53eca7e3305`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/573_GAUGE_VACUUM_PLAQUETTE_BETA6_IDENTITY_RIM_FINITE_MOMENT_PACKET_REDUCTION_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/573_GAUGE_VACUUM_PLAQUETTE_BETA6_IDENTITY_RIM_FINITE_MOMENT_PACKET_REDUCTION_NOTE_2026-04-18.md)
-- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_beta6_identity_rim_finite_moment_packet_reduction_2026_04_18(.py)`
+- Lines: 143; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_beta6_identity_rim_finite_moment_packet_reduction_2026_04_18​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -49,9 +50,12 @@ The plaquette reduction chain's terminal: fixed-depth closure = one finite cycli
 - `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_PROPAGATED_RETAINED_TRIPLE_TARGET_NOTE_2026-04-17.md` — Reduction-chain link; carried by the chain terminal.
 - `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_CHARACTER_TRUNCATION_ENVELOPE_NOTE_2026-04-17.md` — Reduction-chain link; carried by the chain terminal.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Fifth link in the chain, consuming the finite-Jacobi reduction (571) and feeding both fixed-depth certificates (568, 569) and the Hankel restatement (567).
 
 ## Audit fields
 

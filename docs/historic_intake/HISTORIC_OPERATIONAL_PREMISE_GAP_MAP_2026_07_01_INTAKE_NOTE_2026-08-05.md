@@ -35,7 +35,8 @@ The typed-residual map: the post-axiom blockers are named operational selectors,
 - git blob: `7750600c763759748e87e3b7e8a9c6ef427d6809`
 - sha256: `a1cf83efba439dee388c383e6000ef7c6b54c643f86e87d73006bcd1c946f3de`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1239_OPERATIONAL_PREMISE_GAP_MAP_2026-07-01.md](../../archive_unlanded/historic_intake_originals/branch04/1239_OPERATIONAL_PREMISE_GAP_MAP_2026-07-01.md)
-- Lines: 245; runners named: historic runner (unpinned, not in this packet): `scripts/operational_premise_gap_map_2026_07_01(.py)`
+- Lines: 245; runners named: historic runner (unpinned, not in this packet): `scripts/operational_premise_gap_map_2026_07_01​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The typed-residual map: the post-axiom blockers are named operational selectors,
 - `docs/PHYSICAL_READOUT_SELECTION_INDEPENDENCE_2026-07-01.md` — Readout-selector independence.
 - `docs/PHYSICAL_SOURCE_SELECTOR_INDEPENDENCE_2026-07-01.md` — Source-selector independence.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Companion to the primitive-update recommendation (idx_pos 1154) and the post-stack hard-gate status map, whose typed gates it matches.
 
 ## Audit fields
 

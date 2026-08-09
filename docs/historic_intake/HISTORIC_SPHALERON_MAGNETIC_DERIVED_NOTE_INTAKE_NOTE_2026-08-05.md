@@ -35,15 +35,19 @@ Two baryogenesis imports 'derived' — reproducing the external values they repl
 - git blob: `7800a7f1ec1f41b22632e3b22b8db024a5972ac5`
 - sha256: `78c2ad7a5958fb0f7a6a6769606c7c0c1da0931cc14b5c82c92ae698e8aba472`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1958_SPHALERON_MAGNETIC_DERIVED_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1958_SPHALERON_MAGNETIC_DERIVED_NOTE.md)
-- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sphaleron_magnetic_derived(.py)`
+- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sphaleron_magnetic_derived​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The 'derivation' reproduces the external values it replaces to within error bars and relies on the Moore-Rummukainen lattice measurement K_ASY = 10.8 +/- 0.7, so the independence from external input is arguable.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The 'derivation' reproduces the external values it replaces to within error bars and relies on the Moore-Rummukainen lattice measurement K_ASY = 10.8 +/- 0.7, so the independence from external input is arguable.
+- Supersession (as known at extraction): Replaces the d'Onofrio et al. (2014) and Kajantie et al. (1996) imports in the DM baryogenesis chain.
 
 ## Audit fields
 

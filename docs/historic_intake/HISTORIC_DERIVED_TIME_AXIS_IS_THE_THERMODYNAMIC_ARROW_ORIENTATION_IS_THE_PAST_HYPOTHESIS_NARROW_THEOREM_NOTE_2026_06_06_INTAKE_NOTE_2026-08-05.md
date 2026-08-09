@@ -35,15 +35,19 @@ The time axis IS the thermodynamic arrow: unconditional identification with the 
 - git blob: `047dc395c420bfff5393d4d2cd8d87169cc33863`
 - sha256: `92b3ebebf129ec20c61678f3466de03749cf135d4e10a2c8d073bfc07f78a9e4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/305_DERIVED_TIME_AXIS_IS_THE_THERMODYNAMIC_ARROW_ORIENTATION_IS_THE_PAST_HYPOTHESIS_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch01/305_DERIVED_TIME_AXIS_IS_THE_THERMODYNAMIC_ARROW_ORIENTATION_IS_THE_PAST_HYPOTHESIS_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 99; runners named: historic runner (unpinned, not in this packet): `../scripts/derived_time_axis_is_thermodynamic_arrow_runner(.py)`; historic runner (unpinned, not in this packet): `scripts/derived_time_axis_is_thermodynamic_arrow_runner(.py)`
+- Lines: 99; runners named: historic runner (unpinned, not in this packet): `../scripts/derived_time_axis_is_thermodynamic_arrow_runner​.py`; historic runner (unpinned, not in this packet): `scripts/derived_time_axis_is_thermodynamic_arrow_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The smallest exact extension principle: forward projected-cycle transport forces
 - git blob: `1c2bf33b9cc764b50837cc19aa79286b92572113`
 - sha256: `3effaeac4a03282ae5ac98a8317fdc609ec5e52c856ffadc0bdb8e01ba0df1ca`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1572_PMNS_PROJECTED_CYCLE_RESPONSE_SOURCE_PRINCIPLE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1572_PMNS_PROJECTED_CYCLE_RESPONSE_SOURCE_PRINCIPLE_NOTE.md)
-- Lines: 231; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_projected_cycle_response_source_principle(.py)`
+- Lines: 231; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_projected_cycle_response_source_principle​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PMNS_MINIMAL_EXTENSION_STRUCTURAL_CLOSURE_NOTE.md` — Minimal-extension structural closure; carried by the extension principle.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The positive principle cited by the closure-status and minimal-extension notes as the branch's PMNS closure route.
 
 ## Audit fields
 

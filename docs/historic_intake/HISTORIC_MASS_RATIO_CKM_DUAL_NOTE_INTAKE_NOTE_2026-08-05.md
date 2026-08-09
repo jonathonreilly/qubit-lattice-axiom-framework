@@ -35,15 +35,19 @@ Seven charged-fermion mass ratios as powers of alpha_s(v) with exponents from fo
 - git blob: `61cba502bbb219790d3c62266f55bbf05a965776`
 - sha256: `e3197ae7d485f9af92cf816cd1afbe44f3f2e8d9ffc32ca1cfa3541064f8f305`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1136_MASS_RATIO_CKM_DUAL_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1136_MASS_RATIO_CKM_DUAL_NOTE.md)
-- Lines: 190; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_ckm_dual(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_up_sector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_lepton_sector(.py)`
+- Lines: 190; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_ckm_dual​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_up_sector​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_mass_ratio_lepton_sector​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Two disclosed costs: the m_s/m_b agreement is scale-convention dependent (+0.2% at PDG mixed scales but -11% when both are run to mu = m_b, stated as an open question); and leptons are color singlets with no derived mechanism connecting alpha_s to their masses, with the predicted masses degrading the Koide match from 0.001% to 0.18%.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Two disclosed costs: the m_s/m_b agreement is scale-convention dependent (+0.2% at PDG mixed scales but -11% when both are run to mu = m_b, stated as an open question); and leptons are color singlets with no derived mechanism connecting alpha_s to their masses, with the predicted masses degrading the Koide match from 0.001% to 0.18%.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

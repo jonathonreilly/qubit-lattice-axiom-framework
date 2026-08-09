@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,16 +37,20 @@ Structural cross-lane result: the DM Case-3 and Koide bottlenecks are one shared
 - git blob: `a79c48ffeba996148c779242df0c4518917acb50`
 - sha256: `0292644bff7c563eae3a4ea3961a2d9acd8e379e62f2586c15df99da5be94458`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/366_DM_KOIDE_CROSS_HW_SHARED_BOTTLENECK_SCOUT_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/366_DM_KOIDE_CROSS_HW_SHARED_BOTTLENECK_SCOUT_NOTE_2026-04-18.md)
-- Lines: 275; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_koide_cross_hw_shared_bottleneck_attack(.py)`
+- Lines: 275; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_koide_cross_hw_shared_bottleneck_attack​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DM_NEUTRINO_SOURCE_SURFACE_BIVECTOR_PFAFFIAN_SCOUT_NOTE_2026-04-18.md` — Bivector/Pfaffian scout; SCOUT-grade self-label.
 - `docs/DM_NEUTRINO_SOURCE_SURFACE_DISCRETE_FIXED_POINT_ATTRACTOR_SCOUT_NOTE_2026-04-18.md` — 24-element fixed-point enumeration scout.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Tests and rules out dropping assumption A2.5 of the DM Case-3 Microscopic Polynomial Impossibility Theorem; leans on the promoted S3_TASTE_CUBE_DECOMPOSITION_NOTE.md.
 
 ## Audit fields
 

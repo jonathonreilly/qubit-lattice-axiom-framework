@@ -35,15 +35,19 @@ Exact Berezin result: the one-component staggered measure is count-once (r=1) to
 - git blob: `35844b1bf814dc3fadbdc1f88342ec230e846723`
 - sha256: `794ad87aab3dd73e197837e12386152caf9324709840f857a87958c42eb1048a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/845_KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_bounded_residual_NOTE_2026-07-11.md](../../archive_unlanded/historic_intake_originals/branch03/845_KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_bounded_residual_NOTE_2026-07-11.md)
-- Lines: 262; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_first_order_section_question_2026_07_11(.py)`
+- Lines: 262; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_first_order_section_question_2026_07_11​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Executes the open lead of SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04 and sharpens PR #3551's localization; answers in the honest genre that the landed surface does not decide the binary.
 
 ## Audit fields
 

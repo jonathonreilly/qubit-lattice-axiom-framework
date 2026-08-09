@@ -35,15 +35,19 @@ Bridge-premise weakening with exact controls: activity-information necessity exh
 - git blob: `d7b54a9899eb315798909b90ef962519837dd386`
 - sha256: `3073a4662da024f2794008affe336b15204c0adf5920dc694ffd57c95fb38d8a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/34_ACTIVITY_INFORMATION_BOUND_BOUNDED_NOTE_2026-07-09.md](../../archive_unlanded/historic_intake_originals/branch01/34_ACTIVITY_INFORMATION_BOUND_BOUNDED_NOTE_2026-07-09.md)
-- Lines: 79; runners named: historic runner (unpinned, not in this packet): `../scripts/activity_information_bound_2026_07_09(.py)`; historic runner (unpinned, not in this packet): `scripts/activity_information_bound_2026_07_09(.py)`
+- Lines: 79; runners named: historic runner (unpinned, not in this packet): `../scripts/activity_information_bound_2026_07_09​.py`; historic runner (unpinned, not in this packet): `scripts/activity_information_bound_2026_07_09​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Primary runner exits 1 (BOUND-PARTIAL) by design; the counterexamples are retained rather than gated away.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Primary runner exits 1 (BOUND-PARTIAL) by design; the counterexamples are retained rather than gated away.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

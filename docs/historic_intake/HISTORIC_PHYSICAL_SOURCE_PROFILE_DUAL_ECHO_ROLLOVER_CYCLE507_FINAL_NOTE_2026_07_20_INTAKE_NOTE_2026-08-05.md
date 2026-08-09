@@ -35,16 +35,20 @@ TERMINAL of the Cycle-507 trio: finite size-specific reversible compiler family 
 - git blob: `245b62ece3c95d056fedbd8ff51104829ddc2ab1`
 - sha256: `edb41e11bf8013fda30a1d6b2ca006cd0beb40150685038e57086c6e32fbdf77`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3038_PHYSICAL_SOURCE_PROFILE_DUAL_ECHO_ROLLOVER_CYCLE507_FINAL_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/3038_PHYSICAL_SOURCE_PROFILE_DUAL_ECHO_ROLLOVER_CYCLE507_FINAL_NOTE_2026-07-20.md)
-- Lines: 283; runners named: historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_preflight_cycle507_2026_07_20(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_train_cycle507_2026_07_20(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_held_cycle507_2026_07_20(.py)`
+- Lines: 283; runners named: historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_preflight_cycle507_2026_07_20​.py`; historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_train_cycle507_2026_07_20​.py`; historic runner (unpinned, not in this packet): `scripts/physical_source_profile_dual_echo_rollover_held_cycle507_2026_07_20​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_PREDICTION_BRIDGE_CONTRACT_CYCLE420_NOTE_2026-07-19.md` — Freezes and executes a five-surface prediction bridge contract with independent re-implementation; does not make the five downstream replays [claims].
 - `docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_PROFILE_DUAL_ECHO_ROLLOVER_PREFLIGHT_CYCLE507_NOTE_2026-07-20.md` — Preflight declaring the exact decoder firewall: the decoder reads ONLY retained reference/probe [words]; branch-conditional relational scope.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the trio (preflight 3039 -> train 3040 -> final 3038); composes Cycle 451's (idx 3036) co-registered dual clock with Cycle 504's (idx 2779) rollover carriers.
 
 ## Audit fields
 

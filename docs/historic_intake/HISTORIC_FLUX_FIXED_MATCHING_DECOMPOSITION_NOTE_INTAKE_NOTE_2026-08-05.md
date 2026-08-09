@@ -35,15 +35,19 @@ Exact flux-fixed decomposition phi = Q G_0 + h replacing the ad hoc a/r fit — 
 - git blob: `78e76f0706fda955c0e7e302d6053aa8914ecb6d`
 - sha256: `e67d9b330840be6d0e40e542eadf32e59103ee0dbe8988a765c5e7ea544228d1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/499_FLUX_FIXED_MATCHING_DECOMPOSITION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/499_FLUX_FIXED_MATCHING_DECOMPOSITION_NOTE.md)
-- Lines: 147; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_flux_fixed_matching_theorem(.py)`
+- Lines: 147; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_flux_fixed_matching_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Replaces the earlier ad hoc a/r fit with an exact lattice-native decomposition.
 
 ## Audit fields
 

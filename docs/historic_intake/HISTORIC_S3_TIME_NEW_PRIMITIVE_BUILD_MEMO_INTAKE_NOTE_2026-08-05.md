@@ -36,6 +36,7 @@ Route-2 tensor-primitive TERMINAL: no hidden GR closure in the existing stack â€
 - sha256: `d41957acd69e3c01c1099059c6356d2a44a5fb0708c63d0a5b5ccb39e4ba724d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1888_S3_TIME_NEW_PRIMITIVE_BUILD_MEMO.md](../../archive_unlanded/historic_intake_originals/branch06/1888_S3_TIME_NEW_PRIMITIVE_BUILD_MEMO.md)
 - Lines: 141; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -55,9 +56,12 @@ Route-2 tensor-primitive TERMINAL: no hidden GR closure in the existing stack â€
 - `docs/S3_TIME_TENSOR_SUPPORT_OBSERVABLE_NOTE.md` â€” Route-2 tensor sweep member.
 - `docs/S3_TIME_UNIQUENESS_ROUTE_NOTE.md` â€” Route-2 tensor sweep member.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): FAMILY TERMINAL for the Route-2 tensor-primitive no-go sweep (idx 1883-1893): it consolidates the blockers and issues the stop order.
 
 ## Audit fields
 

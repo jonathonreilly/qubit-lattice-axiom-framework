@@ -35,7 +35,8 @@ Exact first nonlocal correction: P_full = P_1plaq + beta^5/472392 + O(beta^6) â€
 - git blob: `1a24c47e51336ee45c4fe930aad48d31d9b5a164`
 - sha256: `835c08701cdf2e6ae49765d70c242d86e4ebdaf1a69528ca4afa6e0be84a5712`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1509_PLAQUETTE_FIRST_NONLOCAL_CONNECTED_CORRECTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1509_PLAQUETTE_FIRST_NONLOCAL_CONNECTED_CORRECTION_NOTE.md)
-- Lines: 182; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_plaquette_first_nonlocal_connected_correction(.py)`
+- Lines: 182; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_plaquette_first_nonlocal_connected_correctionâ€‹.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ Exact first nonlocal correction: P_full = P_1plaq + beta^5/472392 + O(beta^6) â€
 - `docs/PLAQUETTE_MINIMAL_BLOCK_CLOSED_FORM_NOTE_2026-05-05.md` â€” Plaquette family member (1512's normalization mismatch flag carried).
 - `docs/PLAQUETTE_SINGLE_EXACT_NOTE.md` â€” Plaquette family member (1512's normalization mismatch flag carried).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Explicitly corrects its own first-draft stage plan (the denominator does NOT start only at area 6); successor gates named as ROOTED_3CHAIN_COEFFICIENT_ENGINE_NOTE and the directed-cell/local-face closure notes.
 
 ## Audit fields
 

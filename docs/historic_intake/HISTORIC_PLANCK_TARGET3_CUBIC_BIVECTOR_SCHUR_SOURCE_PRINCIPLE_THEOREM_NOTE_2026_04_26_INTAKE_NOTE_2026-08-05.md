@@ -35,15 +35,19 @@ The [P1] retraction: four review failures accepted, unconditional Target-3 closu
 - git blob: `6e73d27ca0508a353181b2e9729a47644472866a`
 - sha256: `7ad112f97b77b5776b1f3d46c586841298ffa95e6389c3a53eab8b94e9c10e6e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1499_PLANCK_TARGET3_CUBIC_BIVECTOR_SCHUR_SOURCE_PRINCIPLE_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch05/1499_PLANCK_TARGET3_CUBIC_BIVECTOR_SCHUR_SOURCE_PRINCIPLE_THEOREM_NOTE_2026-04-26.md)
-- Lines: 291; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_cubic_bivector_schur_source_principle(.py)`
+- Lines: 291; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_cubic_bivector_schur_source_principle​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts the unconditional-closure status of two previously landed sibling notes after an external review found four [P1] failures including literal-True assertions in runners.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts the unconditional-closure status of two previously landed sibling notes after an external review found four [P1] failures including literal-True assertions in runners.
+- Supersession (as known at extraction): Explicitly RE-SCOPES PLANCK_TARGET3_FORCED_COFRAME_RESPONSE_THEOREM and PLANCK_TARGET3_GAUSS_FLUX_FIRST_ORDER_CARRIER_THEOREM from 'retained unconditional closure' to 'retained conditional / control packet'.
 
 ## Audit fields
 

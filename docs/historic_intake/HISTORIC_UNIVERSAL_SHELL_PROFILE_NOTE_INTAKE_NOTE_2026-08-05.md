@@ -35,15 +35,19 @@ Shell-radial universality: k_shell identical to machine precision across both ex
 - git blob: `ee81764b31fb371462aac50daf70df84318bb62e`
 - sha256: `1240b882b987c13dcaa6ffdf7d7e5842e32491411840d8172ad3a1b3e0ebbaa0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2093_UNIVERSAL_SHELL_PROFILE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2093_UNIVERSAL_SHELL_PROFILE_NOTE.md)
-- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_universal_shell_profile(.py)`
+- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_universal_shell_profile​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Universality is demonstrated across only two source families at a single cutoff radius R = 4, so 'universal' is scoped narrower than the title suggests.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Universality is demonstrated across only two source families at a single cutoff radius R = 4, so 'universal' is scoped narrower than the title suggests.
+- Supersession (as known at extraction): Removes the family-dependence ambiguity left by the earlier sewing-shell results; the successor target is deriving k_shell from microscopic lattice dynamics.
 
 ## Audit fields
 

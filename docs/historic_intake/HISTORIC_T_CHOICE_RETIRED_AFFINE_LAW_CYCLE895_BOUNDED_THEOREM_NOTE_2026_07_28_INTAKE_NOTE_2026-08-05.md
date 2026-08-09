@@ -35,15 +35,19 @@ Unit-grading terminal: lawfulness is affine in t, so the surface is DISSOLVED_ON
 - git blob: `dc85290e3c16229bd2b3f55772eeec16081ec6d7`
 - sha256: `a379da33de523eb2d98a5567a295aaee1b5322221a64aaed7efced4b512bbe17`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2086_T_CHOICE_RETIRED_AFFINE_LAW_CYCLE895_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2086_T_CHOICE_RETIRED_AFFINE_LAW_CYCLE895_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 196; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle895_t_retirement_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28(.py)`
+- Lines: 196; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle895_t_retirement_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Four defects in the primary were found by running it and fixed in a recorded commit (a needle gate rejecting a tuple absent from its claimed source, a mis-modelled degree row, an inverted sign in the planted-sensitivity falsifier, a 408-second census regex); the note also corrects Cycle 880's scope qualifier.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Four defects in the primary were found by running it and fixed in a recorded commit (a needle gate rejecting a tuple absent from its claimed source, a mis-modelled degree row, an inverted sign in the planted-sensitivity falsifier, a 408-second census regex); the note also corrects Cycle 880's scope qualifier.
+- Supersession (as known at extraction): TERMINAL for the unit-grading chain 2076 -> 2091 -> 2086: closes the #5931 decision surface and enlarges Cycle 880's blind-locus theorem from t=+1 to every t != 0; publishes that the tuple (1,2,0) does not occur in the Cycle-876 primary but enters via Cycle 880.
 
 ## Audit fields
 

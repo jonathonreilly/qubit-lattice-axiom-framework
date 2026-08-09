@@ -35,7 +35,8 @@ The reviewer-facing terminal of the whole April Planck lane: six assumptions, de
 - git blob: `f0b61c46a49cfd94348870b1b61de15439cc3dd5`
 - sha256: `a4ca7ca8fe43b5d33bab61a7e3ec923fdc6120799e32577a7aa92cf0fbe77505`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1464_PLANCK_SCALE_REVIEWER_CANONICAL_SUBMISSION_PACKET_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1464_PLANCK_SCALE_REVIEWER_CANONICAL_SUBMISSION_PACKET_2026-04-23.md)
-- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_claim_scope_hostile_audit(.py)`
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_claim_scope_hostile_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -146,9 +147,12 @@ The reviewer-facing terminal of the whole April Planck lane: six assumptions, de
 - `docs/PLANCK_SCALE_UNIVERSAL_CELL_COEFFICIENT_NOT_VACUUM_EXPECTATION_THEOREM_2026-04-23.md` — Planck-lane member; carried by the reviewer-facing terminal and the named sub-terminals.
 - `docs/PLANCK_SOURCE_UNIT_NORMALIZATION_HOSTILE_REVIEW_2026-04-25.md` — Planck-lane member; carried by the reviewer-facing terminal and the named sub-terminals.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The reviewer-facing terminal artifact of the whole April PLANCK_SCALE family, indexing the native derivation packet as its primary theorem packet and listing every supplier note in chain order.
 
 ## Audit fields
 

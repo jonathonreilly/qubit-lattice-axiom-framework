@@ -35,15 +35,19 @@ The whole-band reduced shell-stress lift solved exactly — with the imported st
 - git blob: `c561286fea4099eb07db4d9d4584b63ac9b0c285`
 - sha256: `56333e41d4450daf610a2998abba0e33e9a24521a02d99205ac2d5ee3e6b82f8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1792_REDUCED_WHOLE_SHELL_STRESS_LAW_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1792_REDUCED_WHOLE_SHELL_STRESS_LAW_NOTE.md)
-- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_reduced_whole_shell_stress_law(.py)`
+- Lines: 111; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_reduced_whole_shell_stress_law​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Same imported bridge caveat as idx 1791: the static isotropic conformal bridge is assumed.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Same imported bridge caveat as idx 1791: the static isotropic conformal bridge is assumed.
+- Supersession (as known at extraction): Successor to idx 1791, closing its inner-half gap; FAMILY TERMINAL for the reduced shell-stress chain.
 
 ## Audit fields
 

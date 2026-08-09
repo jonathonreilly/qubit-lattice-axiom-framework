@@ -35,15 +35,19 @@ Durability alone forces the Lueders form (21/21, model-free) — Record-lane fou
 - git blob: `ba600e76223790ef4f7f713f0a0e84f0473243f7`
 - sha256: `184ec5f52867b809ca9a69b7e108fcb0170386beac7c7ea5ec6c10fabb3ddfd3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1123_LUDERS_UPDATE_FROM_RECORD_DURABILITY_CONDITIONAL_EXPECTATION_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1123_LUDERS_UPDATE_FROM_RECORD_DURABILITY_CONDITIONAL_EXPECTATION_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_luders_from_record_durability_2026_06_06(.py)`
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_luders_from_record_durability_2026_06_06​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supplies the premise that LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_2026-06-05 (audited_conditional) explicitly assumes; distinct from both the decoherence route (RECORD_DEPHASING_BROADCAST_INTERFACE) and the measurement-axiom route (LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY), which it grounds.
 
 ## Audit fields
 

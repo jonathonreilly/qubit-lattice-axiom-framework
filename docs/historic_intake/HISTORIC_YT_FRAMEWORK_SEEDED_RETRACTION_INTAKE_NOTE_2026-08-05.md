@@ -35,15 +35,19 @@ The one-day retraction: dividing by N_taste contradicts the Feshbach theorem —
 - git blob: `068a414501d07ae572592ca4c462cc805c7572be`
 - sha256: `cc308ca41201742104357a033ffd551176fd6c88dca9928eb10a208afda905af`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2306_YT_FRAMEWORK_SEEDED_RETRACTION.md](../../archive_unlanded/historic_intake_originals/branch07/2306_YT_FRAMEWORK_SEEDED_RETRACTION.md)
-- Lines: 33; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_framework_seeded(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_gauge_crossover_theorem(.py)`
+- Lines: 33; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_framework_seeded​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_gauge_crossover_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/YT_FRAMEWORK_SEEDED_NOTE.md` — The circularity fix that introduced the taste-projection factor — retracted next day.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Formal retraction of a same-week sibling note; declares the y_t gate CLOSED while the gauge-crossover note (idx 2312) and the honest crossover assessment (idx 2168) both keep it open.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Formal retraction of a same-week sibling note; declares the y_t gate CLOSED while the gauge-crossover note (idx 2312) and the honest crossover assessment (idx 2168) both keep it open.
+- Supersession (as known at extraction): Explicit retraction of idx 2305, published one day later; its 'y_t is CLOSED' verdict conflicts with the crossover assessment at idx 2312 (same lane, same week) which calls the crossover unresolved.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Self-contained lattice Stosszahlansatz theorem (explicit decay constants, five s
 - git blob: `769b9fc1b97ed4d997806a0283a5425ff9386243`
 - sha256: `d2ff19121ed25442119c2b54118225067aa2d581aaf2a11250d58f10e3290c36`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/405_DM_STOSSZAHLANSATZ_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/405_DM_STOSSZAHLANSATZ_THEOREM_NOTE.md)
-- Lines: 165; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem(.py)`
+- Lines: 165; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly proved only for the free Gaussian theory; the interacting extension is expected but not proved.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly proved only for the free Gaussian theory; the interacting extension is expected but not proved.
+- Supersession (as known at extraction): Successor to DM_STOSSZAHLANSATZ_NOTE.md (idx 404) and to the DM_FINAL_GAPS argument: replaces cited factorization theorems with an on-lattice Combes-Thomas execution.
 
 ## Audit fields
 

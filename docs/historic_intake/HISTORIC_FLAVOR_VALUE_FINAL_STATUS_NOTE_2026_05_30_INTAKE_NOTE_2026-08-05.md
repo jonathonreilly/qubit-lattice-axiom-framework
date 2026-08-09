@@ -35,15 +35,19 @@ FLAVOR VALUE FINAL STATUS: derived-modulo-one-import, numerology called out (2/N
 - git blob: `e9466331b6e0c61eda9088832bc28271912f0b03`
 - sha256: `d0866bd8e95cddd32098b8be726a5a5dafe29fa9d9480b69205e323cf9b61c32`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/497_FLAVOR_VALUE_FINAL_STATUS_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/497_FLAVOR_VALUE_FINAL_STATUS_NOTE_2026-05-30.md)
-- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_value_final_status_2026_05_30(.py)`
+- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_value_final_status_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FLAVOR_EXACTNESS_CLOSURE_NOTE_2026-05-30.md` — Cauchy-broad centering result; rides the terminal.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly names a do-not-cite audited_failed anchor and calls out its own campaign's earlier numerological attractions.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly names a do-not-cite audited_failed anchor and calls out its own campaign's earlier numerological attractions.
+- Supersession (as known at extraction): TERMINAL note of the FLAVOR value campaign, closing Threads 1 and 2; lists retained anchors and flags koide_signed_eigenvalue_vs_singular_value_readout as audited_failed, do not cite.
 
 ## Audit fields
 

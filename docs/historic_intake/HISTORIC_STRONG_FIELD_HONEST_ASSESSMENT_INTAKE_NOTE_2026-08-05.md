@@ -35,7 +35,8 @@ The no-horizon RECLASSIFICATION: the claim used the weak-field metric where it b
 - git blob: `5aac3217486899a523b10f80381c9792a8e1b8b1`
 - sha256: `068ed70a904a138895c177532a530bb912ebd38ab35b4054bf4ff80e8ac5ffdb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1999_STRONG_FIELD_HONEST_ASSESSMENT.md](../../archive_unlanded/historic_intake_originals/branch06/1999_STRONG_FIELD_HONEST_ASSESSMENT.md)
-- Lines: 281; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_gw_echo_derived(.py)`
+- Lines: 281; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars_rigorous​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_gw_echo_derived​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The no-horizon RECLASSIFICATION: the claim used the weak-field metric where it b
 - `docs/STRONG_FIELD_METRIC_NOTE.md` — Strong-field chain member (2000's self-consistency derivation rides the honest scope note).
 - `docs/STRONG_FIELD_RESOLVENT_CLOSURE_NOTE.md` — Strong-field chain member (2000's self-consistency derivation rides the honest scope note).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly reclassifies a previously stated no-horizon result as a conjecture and includes an old-status/corrected-status table, i.e. a self-retraction of published framing.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly reclassifies a previously stated no-horizon result as a conjecture and includes an old-status/corrected-status table, i.e. a self-retraction of published framing.
+- Supersession (as known at extraction): Downgrades claims in FROZEN_STARS_RIGOROUS_NOTE, GW_ECHO_DERIVED_NOTE, and ECHO_PREDICTION_RESOLVED_2026-04-12; the gap it opens is answered by idx 2000.
 
 ## Audit fields
 

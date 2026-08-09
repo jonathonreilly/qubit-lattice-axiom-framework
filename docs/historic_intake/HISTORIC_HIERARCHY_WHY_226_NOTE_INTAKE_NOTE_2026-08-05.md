@@ -35,15 +35,19 @@ WHY-226 coincidence anatomy: two large errors nearly cancel, smuggled y_t identi
 - git blob: `f756c33c24da97d54aa2566ef96df83b9752e1e5`
 - sha256: `ce62ce56c2350ae983a4d677d2df73893d197011e4ad573dfef021f1d4b4d9e3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/708_HIERARCHY_WHY_226_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/708_HIERARCHY_WHY_226_NOTE.md)
-- Lines: 784; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact(.py)`
+- Lines: 784; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_sigma1_exact​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents a smuggled observed input (y_t = 0.9369) in a published derivation chain; the two corrective notes disagree on the correct Sigma_1 identification.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents a smuggled observed input (y_t = 0.9369) in a published derivation chain; the two corrective notes disagree on the correct Sigma_1 identification.
+- Supersession (as known at extraction): Erratum-grade investigation of HIERARCHY_SOLUTION_SUMMARY.md's v = 226 GeV claim; sits alongside HIERARCHY_HONEST_REVIEW.md and disputes that review's choice of Sigma_1 = 2.48 over 6.12.
 
 ## Audit fields
 

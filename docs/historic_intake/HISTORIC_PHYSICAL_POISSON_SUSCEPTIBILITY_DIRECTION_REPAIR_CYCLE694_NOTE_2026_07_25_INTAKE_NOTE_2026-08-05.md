@@ -35,15 +35,19 @@ CRITICAL-ROW REPAIR: the anomalous exponent standing against SELF_CONSISTENCY_FO
 - git blob: `c043a0ad50e144ff67588f6bbfb915acb28747fb`
 - sha256: `4737525055ea0d17abb082aa589ff661431d7dbd48feab7897e7a0ad82fee68a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1354_PHYSICAL_POISSON_SUSCEPTIBILITY_DIRECTION_REPAIR_CYCLE694_NOTE_2026-07-25.md](../../archive_unlanded/historic_intake_originals/branch04/1354_PHYSICAL_POISSON_SUSCEPTIBILITY_DIRECTION_REPAIR_CYCLE694_NOTE_2026-07-25.md)
-- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_susceptibility_direction_repair_cycle694_2026_07_25(.py)`
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_susceptibility_direction_repair_cycle694_2026_07_25​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Repairs a numerical objection standing against a critical, heavily load-bearing audited_conditional row with 778 transitive descendants.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Repairs a numerical objection standing against a critical, heavily load-bearing audited_conditional row with 778 transitive descendants.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

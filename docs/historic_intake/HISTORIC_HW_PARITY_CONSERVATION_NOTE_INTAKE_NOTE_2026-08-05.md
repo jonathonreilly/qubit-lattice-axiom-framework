@@ -35,15 +35,19 @@ Airtight Hamming-parity selection rule (68/68) — even-order polynomials preser
 - git blob: `15fbf97a4896bb7b8fe10c41cb68cd5a7cce47e3`
 - sha256: `953f3570309a50d9330fef184d0fe058e9e79cfebaad36063fe891b8a641a9e1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/718_HW_PARITY_CONSERVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/718_HW_PARITY_CONSERVATION_NOTE.md)
-- Lines: 87; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hw_parity_conservation(.py)`
+- Lines: 87; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hw_parity_conservation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Composition result strengthening the translation-eigenvalue theorem and the Hamming-distance selection rule.
 
 ## Audit fields
 

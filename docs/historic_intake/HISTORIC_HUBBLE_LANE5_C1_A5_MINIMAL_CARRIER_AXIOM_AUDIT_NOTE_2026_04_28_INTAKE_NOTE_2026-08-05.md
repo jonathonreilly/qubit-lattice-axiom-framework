@@ -1,6 +1,6 @@
-# Historic intake: Lane 5 (C1) Gate — A5 Minimal-Carrier-Axiom Audit
+# Historic intake: Lane 5 (C1) Gate — Minimal-Carrier-Axiom Audit
 
-Explicit subject: The four candidate carrier axioms (intrinsic Cl_4(C) module, two-orbital CAR Fock, Hermitian anticommutator pair, parity-Z_2 plus Cl_3 triple) collapse to a single structural class — the irreducible Cl_4(C) module axiom on P_A H_cell — with (c) strictly weaker (span rank 4 < 16). (The bare code `A5` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: The four candidate carrier axioms (intrinsic Cl_4(C) module, two-orbital CAR Fock, Hermitian anticommutator pair, parity-Z_2 plus Cl_3 triple) collapse to a single structural class — the irreducible Cl_4(C) module axiom on P_A H_cell — with (c) strictly weaker (span rank 4 < 16). (Historic code `A5`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ Four candidate carrier axioms collapse to ONE structural class (irreducible Cl_4
 - git blob: `2cda978e3e9e35d46e9fd38185e5ad1f5a2603ab`
 - sha256: `84d011b613656eb1f8c1e98876af10310023e950c457104d89524e237ab50de6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/714_HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md](../../archive_unlanded/historic_intake_originals/branch03/714_HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md)
-- Lines: 252; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit(.py)`
+- Lines: 252; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Cycle 5 of the hubble-c1-absolute-scale-gate-20260428 loop, successor to the Cycle 2-4 negative closures of A1/A2/A4 and predecessor to the Cycle 6 stuck fan-out.
 
 ## Audit fields
 

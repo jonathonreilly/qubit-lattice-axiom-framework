@@ -35,15 +35,19 @@ The honest premise-separation: packages what becomes available ONLY IF two open 
 - git blob: `1830296a2d709001023ff15bfc1b899c2dc5085e`
 - sha256: `6064e8b277e37415401378fbf48199180ede21412d7f3a21b500a39cb9b9b583`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/208_CKM_MAGNITUDES_STRUCTURAL_COUNTS_DIMENSION_UNIQUENESS_SUPPORT_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/208_CKM_MAGNITUDES_STRUCTURAL_COUNTS_DIMENSION_UNIQUENESS_SUPPORT_NOTE_2026-04-25.md)
-- Lines: 289; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_magnitudes_structural_counts_dimension_uniqueness(.py)`
+- Lines: 289; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_magnitudes_structural_counts_dimension_uniqueness​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Its companion theorem note asserts as retained what this note documents as resting on two open premises.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Its companion theorem note asserts as retained what this note documents as resting on two open premises.
+- Supersession (as known at extraction): Support companion to the same-date theorem note, separating its retained layer from its conditional layer.
 
 ## Audit fields
 

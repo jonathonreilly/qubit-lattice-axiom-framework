@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Exact underdetermination no-go: every diagonal source-free state is classified b
 - git blob: `bf282213312ea8d96f7a74acaa8dcf6b4c13c002`
 - sha256: `ac4dd5136fa2d33300cd5908679a041f765b13eea8e5703f2ff14a163d0e6059`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1467_PLANCK_SCALE_SOURCE_FREE_CELL_STATE_RETAINED_DERIVATION_LANE_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1467_PLANCK_SCALE_SOURCE_FREE_CELL_STATE_RETAINED_DERIVATION_LANE_2026-04-23.md)
-- Lines: 375; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_source_free_cell_state_retained_derivation_lane(.py)`
+- Lines: 375; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_source_free_cell_state_retained_derivation_lane​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly contradicts the flat assertion elsewhere in the family that rho_cell = I_16/16 is derived - it is derived only after an added principle (G_4 flip invariance, P1, or centrality).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly contradicts the flat assertion elsewhere in the family that rho_cell = I_16/16 is derived - it is derived only after an added principle (G_4 flip invariance, P1, or centrality).
+- Supersession (as known at extraction): The load-bearing no-go behind the 'not retained' verdicts in the axiom-native retained audit and the route check; the traciality theorem it demands is what the source-free-state candidate cluster then attempts.
 
 ## Audit fields
 

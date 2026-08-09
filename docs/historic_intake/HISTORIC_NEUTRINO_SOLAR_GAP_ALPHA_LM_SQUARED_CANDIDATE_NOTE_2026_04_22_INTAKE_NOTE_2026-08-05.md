@@ -35,15 +35,19 @@ The solar-gap alpha_LM^2 proposal: first quantitative match on the retained open
 - git blob: `9ad622b9432f7c33069bd94d4979d73067c1cb28`
 - sha256: `16accb73db5a2a72bfed72d005cefd54ca8d9041cad7dcf6faca5f40b3caa41d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1209_NEUTRINO_SOLAR_GAP_ALPHA_LM_SQUARED_CANDIDATE_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch04/1209_NEUTRINO_SOLAR_GAP_ALPHA_LM_SQUARED_CANDIDATE_NOTE_2026-04-22.md)
-- Lines: 142; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_solar_gap_alpha_lm_squared_candidate(.py)`
+- Lines: 142; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_solar_gap_alpha_lm_squared_candidate​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/NEUTRINO_THREE_LEVEL_STAIRCASE_PROPOSAL_NOTE_2026-04-22.md` — Three-level staircase structural companion.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A numerical match found by substituting a different coefficient into a retained theorem, with the supporting mechanism explicitly not yet derived.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A numerical match found by substituting a different coefficient into a retained theorem, with the supporting mechanism explicitly not yet derived.
+- Supersession (as known at extraction): Proposes replacing the RETAINED eps/B = alpha_LM/2 of NEUTRINO_MAJORANA_RESIDUAL_SHARING_SPLIT_THEOREM; its structural proposal is written up at idx_pos 1210.
 
 ## Audit fields
 

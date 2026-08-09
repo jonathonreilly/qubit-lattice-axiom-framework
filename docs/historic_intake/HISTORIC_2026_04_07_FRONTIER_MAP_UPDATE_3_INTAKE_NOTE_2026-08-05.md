@@ -36,6 +36,7 @@ TERMINAL of the classifier double-reversal: the second reversal closes the class
 - sha256: `96224579223fc576f6e5a2e44869585bcf533ed848884bfb42ab37981a2166e3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10098_2026-04-07-frontier-map-update-3.md](../../archive_unlanded/historic_intake_originals/packsci01/10098_2026-04-07-frontier-map-update-3.md)
 - Lines: 82; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ TERMINAL of the classifier double-reversal: the second reversal closes the class
 - `.claude/science/frontier/2026-04-07-frontier-map-update-2.md` — First reversal: the universality classifier rule (LOO 84.6%, 8/8 pre-committed) fails cross-generator held-out; exemplary negative reporting naming the missing predictor.
 - `.claude/science/frontier/2026-04-07-frontier-map-update.md` — The reversed seven-lane scorecard whose central new result (the classifier) was overturned the same day; kept as the before-state.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Discloses that classifier search consistently underperforms human pattern matching on this problem - i.e. the reported metric successes were partly the analyst's structural knowledge leaking into threshold choice.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Discloses that classifier search consistently underperforms human pattern matching on this problem - i.e. the reported metric successes were partly the analyst's structural knowledge leaking into threshold choice.
+- Supersession (as known at extraction): Second reversal in the same-day chain: idx 10099 (bump) -> idx 10097 (reversed) -> revival -> this note (reversed again).
 
 ## Audit fields
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Analytically exact obstruction: both DFT character components are theta-independ
 - git blob: `39bd952a71575fefeb1ebbc7fdf5e2f92635c159`
 - sha256: `ce6cf4a4321689f60e9effec734d6296b9ca01eebbf01531bd5258a5022bdf41`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/423_ELECTRON_MASS_BLOCKAGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/423_ELECTRON_MASS_BLOCKAGE_NOTE.md)
-- Lines: 174; runners named: historic runner (unpinned, not in this packet): `scripts/electron_mass_from_axioms(.py)`
+- Lines: 174; runners named: historic runner (unpinned, not in this packet): `scripts/electron_mass_from_axioms​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The only formula reaching m_tau exactly uses a fitted exponent 2.17 that is neither integer nor simple fraction, explicitly labelled 'by fit, not clean'.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The only formula reaching m_tau exactly uses a fitted exponent 2.17 that is neither integer nor simple fraction, explicitly labelled 'by fit, not clean'.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Registration theorem: the S_3-breaking direction is UNREGISTRABLE (D(M) register
 - git blob: `ba55f40670b238990891df241d8981f58ccb56c8`
 - sha256: `c142525aec79fc6885652054a42eb69e4b6fc93a5a9692c1eb9bffbd0f03995b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1787_RECORD_REGISTRATION_FILTERS_S3_BREAKING_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch06/1787_RECORD_REGISTRATION_FILTERS_S3_BREAKING_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 156; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_record_registration_filters_s3_breaking(.py)`
+- Lines: 156; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_record_registration_filters_s3_breaking​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Reclassifies a standing derivation gap as unregistrable rather than closing it, which changes the bookkeeping without producing r or Q.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Reclassifies a standing derivation gap as unregistrable rather than closing it, which changes the bookkeeping without producing r or Q.
+- Supersession (as known at extraction): Narrowly corrects the 'chirality import' framing in the companion operator-route no-gos G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A and KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO, replacing 'import' with 'unregistrable within-K/CPT-orbit coherence'.
 
 ## Audit fields
 

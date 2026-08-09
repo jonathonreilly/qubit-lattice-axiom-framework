@@ -35,15 +35,19 @@ The quasi-fixed-point insensitivity theorem (y_t(v) RG-flow-insensitive above th
 - git blob: `bb55da54896839ed02ce670d8d0ca8b01e9fe640`
 - sha256: `27e521ca0c5fc65ce2c100c61d714d6687abc5f4ba480fdad279c108ff57084f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3619_YT_QFP_INSENSITIVITY_THEOREM.md](../../archive_unlanded/historic_intake_originals/recovery/3619_YT_QFP_INSENSITIVITY_THEOREM.md)
-- Lines: 293; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_qfp_insensitivity(.py)`
+- Lines: 293; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_qfp_insensitivity​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The claimed insensitivity is asymmetric — over the full range [0.2, 0.8] the focusing ratio is only R = 1.09 and y_t(v) spans 0.609 to 1.157 (m_t 106.0 to 201.5 GeV), so the bound depends on the Ward BC's own precision holding.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The claimed insensitivity is asymmetric — over the full range [0.2, 0.8] the focusing ratio is only R = 1.09 and y_t(v) spans 0.609 to 1.157 (m_t 106.0 to 201.5 GeV), so the bound depends on the Ward BC's own precision holding.
+- Supersession (as known at extraction): Resolves a specific Codex blocker on the Boundary Selection Theorem's claim that the lattice theory (16 tastes) applies above v while the SM EFT applies below.
 
 ## Audit fields
 

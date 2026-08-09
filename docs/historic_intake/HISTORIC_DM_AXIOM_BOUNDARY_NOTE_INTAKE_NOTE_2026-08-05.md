@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The DM lane bounded by exactly ONE axiom (A5 lattice-is-physical), nothing else 
 - git blob: `6f5dd2b4b80b0653f875f040c7e29f7b3ba8f72d`
 - sha256: `fc45d0fb9aa5933c6922e8b8a664f4d2654a05e242473a5ad8b922317c14d534`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/334_DM_AXIOM_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/334_DM_AXIOM_BOUNDARY_NOTE.md)
-- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_axiom_boundary(.py)`
+- Lines: 234; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_axiom_boundary​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

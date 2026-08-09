@@ -35,15 +35,19 @@ The Boltzmann equation as a lattice THEOREM (exact transition rates, Stosszahlan
 - git blob: `c80a5dd85671602d64c66da5042127c08084fffd`
 - sha256: `70330dbc1b9ba39db6af5f359c4dd4c601c4107dc5bab4bfaa83ed5bc33846cd`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/338_DM_BOLTZMANN_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch01/338_DM_BOLTZMANN_THEOREM.md)
-- Lines: 275; runners named: historic runner (unpinned, not in this packet): `frontier_dm_direct_boltzmann(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_friedmann_from_newton(.py)`; historic runner (unpinned, not in this packet): `frontier_dm_stosszahlansatz_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_boltzmann_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem(.py)`
+- Lines: 275; runners named: historic runner (unpinned, not in this packet): `frontier_dm_direct_boltzmann​.py`; historic runner (unpinned, not in this packet): `frontier_dm_friedmann_from_newton​.py`; historic runner (unpinned, not in this packet): `frontier_dm_stosszahlansatz_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_boltzmann_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_stosszahlansatz_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The corollary still routes through alpha_s at g_bare = 1, which other notes flag as an assumed input (Axiom A5).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The corollary still routes through alpha_s at g_bare = 1, which other notes flag as an assumed input (Axiom A5).
+- Supersession (as known at extraction): Closes a standing Codex objection that Boltzmann/Friedmann freeze-out was imported standard cosmology.
 
 ## Audit fields
 

@@ -35,7 +35,8 @@ ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-b
 - git blob: `8ba38d7b68855e59f398b6e56f92c4d7540d0063`
 - sha256: `07213a0a95aae0559534d732b1e96d6c791a501cf12d45fe6f52297b11d6db45`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10660_wave2_kill_attempt.md](../../archive_unlanded/historic_intake_originals/packsci03/10660_wave2_kill_attempt.md)
-- Lines: 616; runners named: historic runner (unpinned, not in this packet): `scripts/qubit_symmetry_exchange_law_reduction_probe_2026_07_14(.py)`
+- Lines: 616; runners named: historic runner (unpinned, not in this packet): `scripts/qubit_symmetry_exchange_law_reduction_probe_2026_07_14​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,13 +46,16 @@ ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-b
 - `.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave1_selection_principles.md` — The intersection of every framework-native constraint on the matter action is NOT a singleton; residual is exactly one gauge-invariant frame-invariant freedom.
 - `.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave2_draft_note_and_runner.md` — Draft-note catch: the Wave-1 'decisive witness' (commutant span{I,SWAP}; menu exactly two points) was about to be composed into a claim-carrying runner without the prior art; caught in-pack.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10658](HISTORIC_WAVE1_WELLPOSEDNESS_KILLCHECK_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave1_wellposedness_killcheck.md`, stratum packsci03) — ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-beta H), beta > 0, and a lattice bond-plane reflection, the reflected Gram form of Phi = I - SWAP has a strictly negative value, so the two-point menu collapses to a point; the kill consumes two supplied inputs, named exactly. MAJOR: contradicts the witness used by the repo's landed surface and corrects Wave 1 on its separator. Wave companions attached.
+- Attaches across strata to idx 10658 (`.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave1_wellposedness_killcheck.md`, stratum packsci03) — ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-beta H), beta > 0, and a lattice bond-plane reflection, the reflected Gram form of Phi = I - SWAP has a strictly negative value, so the two-point menu collapses to a point; the kill consumes two supplied inputs, named exactly. MAJOR: contradicts the witness used by the repo's landed surface and corrects Wave 1 on its separator. Wave companions attached.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-MAJOR: contradicts the witness used by the repo's landed 2026-07-10 no-go; and the forcing depends on a reflection outside the axiom-named motion group, so the 'kill' is not framework-native
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: MAJOR: contradicts the witness used by the repo's landed 2026-07-10 no-go; and the forcing depends on a reflection outside the axiom-named motion group, so the 'kill' is not framework-native
+- Supersession (as known at extraction): Corrects Wave 1 (10657/10651) on its separator; second prior-art failure of the same campaign — the two-point-menu theorem is eleven-day-old prior art on origin/main in three 2026-07-14 notes that Wave 1's sweep missed.
 
 ## Audit fields
 
@@ -61,6 +65,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_conditional_forcing_result
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_WAVE1_WELLPOSEDNESS_KILLCHECK_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

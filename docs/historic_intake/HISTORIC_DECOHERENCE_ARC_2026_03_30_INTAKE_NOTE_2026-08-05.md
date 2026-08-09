@@ -36,6 +36,7 @@ The structural principle: in a linear path-sum on a fixed DAG, records must chan
 - sha256: `be5f569723b0392391b435fa149c02e8df9e89c4ce12d0b9f1e4fa85317aee07`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3164_decoherence-arc-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3164_decoherence-arc-2026-03-30.md)
 - Lines: 45; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The structural principle: in a linear path-sum on a fixed DAG, records must chan
 - `.claude/science/analyses/topological-decoherence-corrected-2026-03-30.md` — Corrected non-trivial decoherence curve; quantitative evidence for the decoherence-arc principle, not a standalone row.
 - `.claude/science/sanity/topological-decoherence-2026-03-30.md` — Audit evidence (edge-pruning explanation of the V increase).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Lists as open whether the model can produce GENUINE decoherence (V monotonically decreasing) at all; its topological-shortcut result is the one whose implementation was later corrected (idx 3137).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Lists as open whether the model can produce GENUINE decoherence (V monotonically decreasing) at all; its topological-shortcut result is the one whose implementation was later corrected (idx 3137).
+- Supersession (as known at extraction): Synthesizes the asymmetric-decoherence (idx 3109), partial-records (idx 3128) and topological-decoherence (idx 3136) results; its topological-shortcut row predates the correction at idx 3137.
 
 ## Audit fields
 

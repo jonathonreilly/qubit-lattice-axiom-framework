@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -14,12 +14,14 @@ The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
 
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
+
 ## The claim (as stated by the original, supervisor-compressed)
 
 States the lane does NOT derive closed S^3 topology from the graph-growth axioms alone: local shell growth gives chi = 2 boundaries and ball-like regions, but compactness, closure to a 3-manifold, and the boundary-identification step are all still missing, so Perelman cannot be invoked.
 
 Original verdict: The honest claim is S^2 boundaries plus ball-like regions; S^3 remains conditional on an extra global compactification input, and any CC or dark-energy note using lambda_1(S^3) = 3/R^2 must treat that topology as conditional.
-Scope: scripts/frontier_s3_topology_derivation.py and the claims built on it.
+Scope: scripts/frontier_s3_topology_derivation​.py and the claims built on it.
 Escape conditions (negative claims): Escape is explicit: supply a derivation of compactness and of the boundary-identification step from the graph axioms.
 
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
@@ -35,15 +37,19 @@ The BLOCKER: graph-growth axioms give S^2 boundaries + ball-like regions, NOT cl
 - git blob: `7f6f13ac7a4d2222e691c489bf201e863c8daed8`
 - sha256: `816f0acbc80cf159ad18481eb2f81cf2926dfad5af4b929217cdbb0d84352bae`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1894_S3_TOPOLOGY_BLOCKER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1894_S3_TOPOLOGY_BLOCKER_NOTE.md)
-- Lines: 39; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_topology_derivation(.py)`
+- Lines: 39; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_topology_derivation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts, in effect, the status upgrade published in idx 1895 and instructs downstream CC notes to re-qualify a number already in use.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts, in effect, the status upgrade published in idx 1895 and instructs downstream CC notes to re-qualify a number already in use.
+- Supersession (as known at extraction): Directly blocks the 'bounded -> structural' upgrade asserted by S3_TOPOLOGY_DERIVATION_NOTE (idx 1895) on the same day.
 
 ## Audit fields
 

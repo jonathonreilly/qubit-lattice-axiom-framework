@@ -35,19 +35,23 @@ The zero-import closure claim (v +0.03%, alpha_s +0.3%, m_t -4.2%) WITH the red 
 - git blob: `91a586b6e624775262143c5635fb1a3f5f38a75e`
 - sha256: `e08670791b88921a901b4f5da192ff625da7d481ca32eb74d817c0326e235fca`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3620_YT_ZERO_IMPORT_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3620_YT_ZERO_IMPORT_CLOSURE_NOTE.md)
-- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_chain(.py)`
+- Lines: 107; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_chain​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/YT_FLAGSHIP_CLOSURE_NOTE.md` — Gate decomposition naming the single upgrade computation (2-loop V-scheme matching); rides the closure claim.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Cross-stratum reference from branch01 [idx 40](HISTORIC_ADVERSARIAL_CHAIN_AUDIT_2026_04_13_INTAKE_NOTE_2026-08-05.md) (`docs/ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md`, decision PULL) — Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severity) + g_* inconsistency (106.75 vs 110.75) — direct adverse evidence against the pulled zero-import closure claim; audit lane needs both sides.
+- Cross-stratum reference from branch01 idx 40 (`docs/ADVERSARIAL_CHAIN_AUDIT_2026-04-13.md`, decision PULL) — Hostile chain audit: the y_t chain imports the observed v = 246 GeV (HIGH severity) + g_* inconsistency (106.75 vs 110.75) — direct adverse evidence against the pulled zero-import closure claim; audit lane needs both sides.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Presents three different m_t readings (165.4, 173, 173.3 GeV) as all honest and well-supported without selecting one; the zero-import value is the worst match to observation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Presents three different m_t readings (165.4, 173, 173.3 GeV) as all honest and well-supported without selecting one; the zero-import value is the worst match to observation.
+- Supersession (as known at extraction): Compared against three prior y_t approaches: crossover theorem (171 GeV, 1-import), IR fixed point (173.2 GeV, 1-input), and a CW minimum route (135 GeV) recorded as the wrong tool and FAILS.
 
 ## Audit fields
 
@@ -57,6 +61,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_bounded
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_ADVERSARIAL_CHAIN_AUDIT_2026_04_13_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

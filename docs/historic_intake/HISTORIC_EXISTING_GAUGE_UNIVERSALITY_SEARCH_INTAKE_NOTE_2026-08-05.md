@@ -35,15 +35,19 @@ The Cl(3) commutant universality result (dim 8, corner-independent, 24 PASS) res
 - git blob: `e0f53fc902360199c74031d6ee5270e5484fce29`
 - sha256: `91e843bd51bc52850cefac21fa81a3cb8a74c209ead471bda7229de16d58c617`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/454_EXISTING_GAUGE_UNIVERSALITY_SEARCH.md](../../archive_unlanded/historic_intake_originals/branch02/454_EXISTING_GAUGE_UNIVERSALITY_SEARCH.md)
-- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_gauge_universality(.py)`
+- Lines: 233; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_gauge_universality​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The load-bearing script is UNTRACKED and uncommitted on the branch, and carries 3 FAILs alongside its 24 passes.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The load-bearing script is UNTRACKED and uncommitted on the branch, and carries 3 FAILs alongside its 24 passes.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

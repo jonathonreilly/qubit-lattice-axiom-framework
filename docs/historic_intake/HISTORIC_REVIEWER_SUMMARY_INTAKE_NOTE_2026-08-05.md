@@ -36,14 +36,18 @@ The era's honest self-assessment: does NOT derive gravity or QM from first princ
 - sha256: `6da1d21f8f80a6d5826569eea6706d703bbb80a51ffd8efb732612a25d2c67b5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3615_REVIEWER_SUMMARY.md](../../archive_unlanded/historic_intake_originals/recovery/3615_REVIEWER_SUMMARY.md)
 - Lines: 71; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PREDICTION_CARD.md` — Prediction card confirmed at stated resolutions; rides the era summary.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Three documented retractions plus three confounds caught and retracted by the fixed-mass-position control; a skip-layer bypass was discovered and fixed in the Born-rule test setup.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Three documented retractions plus three confounds caught and retracted by the fixed-mass-position control; a skip-layer bypass was discovered and fixed in the Born-rule test setup.
+- Supersession (as known at extraction): Records three claims retracted during the investigation (causal field 1/b, alpha = (d-1)/2, pruning alpha boost), each with root-cause analysis, and makes fixed-mass and k=0 controls permanent requirements.
 
 ## Audit fields
 

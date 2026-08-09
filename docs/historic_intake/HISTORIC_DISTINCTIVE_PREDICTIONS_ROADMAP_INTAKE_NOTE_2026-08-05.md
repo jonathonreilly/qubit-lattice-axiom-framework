@@ -36,14 +36,18 @@ The era's falsification roadmap: which predictions actually differ from standard
 - sha256: `bf4336ab760144f20ff94b973df448f8a51d65a7d515115e8e3de966833631b8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/332_DISTINCTIVE_PREDICTIONS_ROADMAP.md](../../archive_unlanded/historic_intake_originals/branch01/332_DISTINCTIVE_PREDICTIONS_ROADMAP.md)
 - Lines: 116; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DIAMOND_NV_EXPERIMENT_CARD.md` — NV-centre gravitational Born-rule test card; rides the roadmap.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

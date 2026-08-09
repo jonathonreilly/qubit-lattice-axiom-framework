@@ -35,16 +35,20 @@ Terminal route inventory: the CKM gap diagnosed as computational (S_23 bottlenec
 - git blob: `05dc3fc73684f63141a9b0d0231ec69ce6494c00`
 - sha256: `8ad980ae8894dc902dc1be8d1639c1e44e6389cd9f3271b827e3d5f26c888fa9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/190_CKM_FINAL_ASSESSMENT.md](../../archive_unlanded/historic_intake_originals/branch01/190_CKM_FINAL_ASSESSMENT.md)
-- Lines: 285; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_c23_analytic(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_derived(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_dynamical_selection(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_from_texture(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_anomaly(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_gauge(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_vev(.py)`
+- Lines: 285; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_c23_analytic​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_derived​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_dynamical_selection​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_from_mass_hierarchy​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_from_texture​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_anomaly​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_gauge​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_higgs_from_vev​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CKM_INVARIANTS_NOTE.md` — Route-4 status: sole remaining gap is the S_23 absolute scale.
 - `docs/CKM_S23_SHARPENING_NOTE.md` — Codex-deliverable assessment; priorities named.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Terminal assessment note of the April CKM route search.
 
 ## Audit fields
 

@@ -35,7 +35,8 @@ The Equivariant Berry-APS Selector retention proposal — the lane's central obj
 - git blob: `3412eb7016c44c5592dace6274698b44367f56e7`
 - sha256: `eb63ae4458dc3d861c253461bd8e71ea754d4cac6302aeb3d39d4fa791d5f1a1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/841_KOIDE_EQUIVARIANT_BERRY_APS_SELECTOR_THEOREM_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/841_KOIDE_EQUIVARIANT_BERRY_APS_SELECTOR_THEOREM_NOTE_2026-04-21.md)
-- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_reviewer_closure_iter28_end_to_end_rigorous_verification(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_reviewer_closure_iter19_multi_route_convergence_to_2_9(.py)`
+- Lines: 197; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_reviewer_closure_iter28_end_to_end_rigorous_verification​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_reviewer_closure_iter19_multi_route_convergence_to_2_9​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The Equivariant Berry-APS Selector retention proposal — the lane's central obj
 - `docs/KOIDE_EQUIVARIANT_BERRY_APS_SELECTOR_THEOREM.md` — Undated companion with the sign-pinning computation.
 - `docs/KOIDE_LANE_SCIENCE_PACKAGE_2026-04-21.md` — Owner-facing package for the selector retention.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-declared assumption at the load-bearing step; the multi-route independence claim is later deflated by the A1 audit.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-declared assumption at the load-bearing step; the multi-route independence claim is later deflated by the A1 audit.
+- Supersession (as known at extraction): The retention proposal behind KOIDE_ATLAS_RETENTION_EDITS_2026-04-21; contested three days later by the 2026-04-24 radian-bridge irreducibility note (which finds the four 'independent' routes to 2/9 are restatements of one dimension count).
 
 ## Audit fields
 

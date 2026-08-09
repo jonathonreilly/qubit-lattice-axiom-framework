@@ -35,15 +35,19 @@ Publication audit naming runners that ADVERTISE predictions while hard-coding ob
 - git blob: `3fa648b75e592c5bea091c232a638d51ba5efcb6`
 - sha256: `5eedb2e9a9fd9d59411f88b446043b641474a4442652c487abc88d6502a6785c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/159_CI3_Z3_PUBLICATION_RETAIN_AUDIT_2026-04-12.md](../../archive_unlanded/historic_intake_originals/branch01/159_CI3_Z3_PUBLICATION_RETAIN_AUDIT_2026-04-12.md)
-- Lines: 246; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_accessible_prediction(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_determination(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_annihilation_ratio(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_value(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dark_matter_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ratio_sommerfeld(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars(.py)`
+- Lines: 246; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_accessible_prediction​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_alpha_s_determination​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_annihilation_ratio​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_factor15​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cc_value​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dark_matter_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_ratio_sommerfeld​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_frozen_stars​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Names runners that advertise predictions while hard-coding observed values or SM couplings.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Names runners that advertise predictions while hard-coding observed values or SM couplings.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

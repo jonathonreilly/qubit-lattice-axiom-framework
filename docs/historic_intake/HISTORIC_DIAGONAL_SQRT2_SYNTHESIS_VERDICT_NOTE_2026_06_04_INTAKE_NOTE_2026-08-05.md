@@ -36,6 +36,7 @@ The sqrt(2) build's terminal verdict (157 PASS): face-diagonal extension is relo
 - sha256: `b5558de95489515cb8ccf6b19e0c46f39aa1b4b5e4a521bf8ec95f4788321f9a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/316_DIAGONAL_SQRT2_SYNTHESIS_VERDICT_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch01/316_DIAGONAL_SQRT2_SYNTHESIS_VERDICT_NOTE_2026-06-04.md)
 - Lines: 195; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ The sqrt(2) build's terminal verdict (157 PASS): face-diagonal extension is relo
 - `docs/DIAGONAL_SQRT2_FORCING_R_HALF_DEEP_DIVE_NOTE_2026-06-04.md` — The centrepiece six-mechanism test: NATURAL-BUT-NOT-FORCED; parameter-free candidate gives 0.641 not 1/sqrt(2).
 - `docs/DIAGONAL_SQRT2_FOUNDATION_SCOPING_NOTE_2026-06-04.md` — Build head; forcing question.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Terminal verdict note of the sqrt(2)-centred build, superseding the individual phase framings.
 
 ## Audit fields
 

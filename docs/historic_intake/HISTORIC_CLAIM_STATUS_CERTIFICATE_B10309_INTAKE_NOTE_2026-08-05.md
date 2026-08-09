@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ Closes four rescue routes for the five-sixths exponent with exact algebra (the p
 - sha256: `c846e84135b8590a5da819e00570c893e19ee804406f071f1dc05ff020b0d3a0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10309_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10309_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 135; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that the target can be made to fit by TUNING the scale (equation 5.4) - i.e. the five-sixths agreement is reachable by a fitted selector, which is why the fitted route is forbidden. Anyone citing 5/6 as a prediction should read this.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that the target can be made to fit by TUNING the scale (equation 5.4) - i.e. the five-sixths agreement is reachable by a fitted selector, which is why the fitted route is forbidden. Anyone citing 5/6 as a prediction should read this.
+- Supersession (as known at extraction): Directly answers the open item at lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md:19 which left RG-covariant transport open; tests the shared-transport version and finds exact deviation invariance.
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ The no-anomaly literature survey: consistent with the entire experimental record
 - sha256: `0975e235627ed8eebb0496a701e498dc7e8d7c5b75e92128bb5a5d871ab7ae83`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1107_LITERATURE_ANOMALY_SEARCH_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1107_LITERATURE_ANOMALY_SEARCH_NOTE.md)
 - Lines: 397; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-assessed as finding nothing the framework can claim; explicitly states the qBounce anomaly 'this framework cannot claim'.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-assessed as finding nothing the framework can claim; explicitly states the qBounce anomaly 'this framework cannot claim'.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

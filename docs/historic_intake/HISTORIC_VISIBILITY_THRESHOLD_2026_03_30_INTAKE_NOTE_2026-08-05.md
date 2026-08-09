@@ -36,6 +36,7 @@ The era's one exact theorem: R_c(y) = 1 + |y|/s derived from DAG connectivity, 4
 - sha256: `33245739623d554ff53090364dd79db402a7a6fbbef012d8720f3cb5ce77a4c0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3138_visibility-threshold-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3138_visibility-threshold-2026-03-30.md)
 - Lines: 100; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The era's one exact theorem: R_c(y) = 1 + |y|/s derived from DAG connectivity, 4
 - `.claude/science/sanity/critical-ratio-2026-03-30.md` — Audit evidence (4-point fit concession the theorem then discharges).
 - `.claude/science/sanity/slit-reachability-2026-03-30.md` — Audit evidence incl. the cannot-cancel-at-all-phases argument.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Names its own weakest link: Step 1's assumption of max deflection 1 per step depends on how build_causal_dag constructs the DAG — longer-range links (e.g. knight's-move) would lower the threshold.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Names its own weakest link: Step 1's assumption of max deflection 1 per step depends on how build_causal_dag constructs the DAG — longer-range links (e.g. knight's-move) would lower the threshold.
+- Supersession (as known at extraction): Derives and sharpens the empirical approximate fit R_c ~ 0.25|y| + 1.0 from the critical-ratio sweep (idx 3114), stating the approximation sign was unnecessary.
 
 ## Audit fields
 

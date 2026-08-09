@@ -35,15 +35,19 @@ Corrects a FALSE prior enumeration rule (boundary-shellable growth) with exact r
 - git blob: `822742f636c68ede0e2faad1684164af75633c4a`
 - sha256: `d3bff1b3872c37736871229ecbd15175a329b2244c807fea5ab3249c81b35875`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1834_ROOTED_3CHAIN_COEFFICIENT_ENGINE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1834_ROOTED_3CHAIN_COEFFICIENT_ENGINE_NOTE.md)
-- Lines: 243; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_rooted_3chain_coefficient_engine(.py)`
+- Lines: 243; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_rooted_3chain_coefficient_engine​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that a prior enumeration rule in the same lane was false, so any counts produced under it were wrong.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that a prior enumeration rule in the same lane was false, so any counts produced under it were wrong.
+- Supersession (as known at extraction): Explicitly corrects an earlier exploratory version of this lane that grew chains only across boundary faces; the quotient version is idx 1755.
 
 ## Audit fields
 

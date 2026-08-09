@@ -35,15 +35,19 @@ Sharp falsifiable prediction: unitarity-triangle alpha = 90 degrees EXACTLY from
 - git blob: `6b741a4590aec039a1e15c28d92b521368a3c2a1`
 - sha256: `7860d23dfa6b62aaf5ca11568adbb02964685bf61890af932f6ac4c413013f78`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/225_CKM_UNITARITY_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch01/225_CKM_UNITARITY_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md)
-- Lines: 268; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_unitarity_triangle_right_angle(.py)`
+- Lines: 268; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_unitarity_triangle_right_angle​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

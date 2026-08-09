@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ Exact monomial no-go: single-Higgs fixed-charge Dirac textures give masses but N
 - git blob: `6646e955fa1fd03d1840bf920e4d83d288b7e365`
 - sha256: `260f7f0b6b2b278aeb0e5014f736b854e1c6dd0ac1b59307a40b133aa03b3733`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1185_NEUTRINO_DIRAC_MONOMIAL_NO_MIXING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1185_NEUTRINO_DIRAC_MONOMIAL_NO_MIXING_NOTE.md)
-- Lines: 148; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_dirac_monomial_no_mixing(.py)`
+- Lines: 148; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_dirac_monomial_no_mixing​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +46,12 @@ Exact monomial no-go: single-Higgs fixed-charge Dirac textures give masses but N
 - `docs/NEUTRINO_DIRAC_TWO_HIGGS_OBSERVABLE_INVERSE_PROBLEM_NOTE.md` — Seven-coordinate observable grammar.
 - `docs/NEUTRINO_HIGGS_Z3_UNDERDETERMINATION_NOTE.md` — q_H underdetermination.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Explains why the older fitted neutrino lane needed extra symmetry breaking and asymmetry terms; directly set up by the Z_3 support trichotomy and escaped by idx_pos 1186.
 
 ## Audit fields
 

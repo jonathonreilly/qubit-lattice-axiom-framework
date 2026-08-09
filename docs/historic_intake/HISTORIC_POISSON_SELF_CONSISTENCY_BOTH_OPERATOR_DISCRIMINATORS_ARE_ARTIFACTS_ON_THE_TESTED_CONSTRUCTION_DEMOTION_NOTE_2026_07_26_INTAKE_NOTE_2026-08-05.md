@@ -3,9 +3,9 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: closed_unmerged_never_landed
-Era: post_reset_2026_06_29 — no axiom load-bearing; operators and propagator imported bit-identically from scripts/frontier_self_consistent_field_equation.py
+Era: post_reset_2026_06_29 — no axiom load-bearing; operators and propagator imported bit-identically from scripts/frontier_self_consistent_field_equation​.py
 
 Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
 science iff relevant and/or valuable; pulled items enter the ledger and are
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ No-go: the response kernel is sign-indefinite (70-78% negative) vs single-signed
 - git blob: `2301fba9541eebbb4b50b194d5124575421b1eac`
 - sha256: `8395b1274ea565e37dededdfc7caeb6a1138111734750a5ae4e90841c1f2870f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3092_POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md](../../archive_unlanded/historic_intake_originals/recovery/3092_POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md)
-- Lines: 340; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation(.py)`
+- Lines: 340; runners named: historic runner (unpinned, not in this packet): `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_self_consistent_field_equation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CYCLE710_VALUE_AND_NO_GO_GATES_2026-07-26.md` — Gate record for Cycle 710 — process record of 3092's no-go content.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-audit_required_before_effective_retained: true, bare_retained_allowed: false; the note records that its own author's preferred repair (removing per-layer renormalization) was falsified by test.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: audit_required_before_effective_retained: true, bare_retained_allowed: false; the note records that its own author's preferred repair (removing per-layer renormalization) was falsified by test.
+- Supersession (as known at extraction): First of the cluster on parent row self_consistency_forces_poisson_note (critical root, direct_in_degree 17, 727 transitive descendants); proposes withdrawing Bounded Claim 3 and narrowing Claims 1 and 2; identifies step 4 of the parent argument as conflating the amplitude propagator's resolvent with the density response kernel.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Falsifiable m_bb window (~7 meV) with the observable-corrected input flagged.
 - git blob: `e78ba1e0e0cc4ea766d6ec35139659e8f347a02a`
 - sha256: `f82154ab01e44956f4a2641e727ae635b59fcbc05c40ec04d35bc1cca6bb438d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1182_NEUTRINOLESS_DOUBLE_BETA_MBB_PREDICTION_NOTE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch04/1182_NEUTRINOLESS_DOUBLE_BETA_MBB_PREDICTION_NOTE_2026-04-22.md)
-- Lines: 101; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrinoless_double_beta_mbb_prediction(.py)`
+- Lines: 101; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrinoless_double_beta_mbb_prediction​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-m_2 is observable-corrected via the observed Delta m^2_21 rather than derived, and the solar-gap lane remains open.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: m_2 is observable-corrected via the observed Delta m^2_21 rather than derived, and the solar-gap lane remains open.
+- Supersession (as known at extraction): Depends on the observable-corrected m_2 from NEUTRINO_MASS_SUM_PREDICTION_2026-04-22; note the retained 'M_R currently zero' surface would make m_bb vanish trivially, so this note deliberately works on a different surface.
 
 ## Audit fields
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The stratum's decision-forcing composition: nine retained no-go/audit cycles com
 - git blob: `d518fbe55c8bc90ede90c446480f0a50c8b0a6ac`
 - sha256: `ad39599c3d02f57ab5a4a74906b6fa9302bdac4805127032a0e5418de64be1c8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10259_PR_BODY_BLOCK04.md](../../archive_unlanded/historic_intake_originals/packsci01/10259_PR_BODY_BLOCK04.md)
-- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_axiom_stack_minimality_cl4c_no_go(.py)`
+- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_axiom_stack_minimality_cl4c_no_go​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-This is arguably the most decision-relevant note in the stratum: four separate lanes (Hubble, Planck, BH coefficient, neutrino mass sum) are blocked behind a single unresolved axiom-adoption question that was surfaced on 2026-04-29 and left to the owner.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: This is arguably the most decision-relevant note in the stratum: four separate lanes (Hubble, Planck, BH coefficient, neutrino mass sum) are blocked behind a single unresolved axiom-adoption question that was surfaced on 2026-04-29 and left to the owner.
+- Supersession (as known at extraction): Composes nine prior no-gos including HUBBLE_LANE5_C1_A1_GRASSMANN, A2_ACTION_UNIT, A4_PARITY_GATE, A5_MINIMAL_CARRIER_AXIOM_AUDIT and the STUCK_FANOUT_SYNTHESIS; NAMES A DOCS LANDING: docs/AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md.
 
 ## Review flags (review-loop 2026-08-08)
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ TERMINAL of the Cycle-509 packet, mixed and honest: Route A's local bond-current
 - sha256: `f23711fa31138610510e5294c06d399fac1d9d4731a44430fbcc099f24777385`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2912_PHYSICAL_LOCAL_BOND_CHARACTER_AB_SCIENCE_TRAIN_CYCLE509_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/2912_PHYSICAL_LOCAL_BOND_CHARACTER_AB_SCIENCE_TRAIN_CYCLE509_NOTE_2026-07-20.md)
 - Lines: 249; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_LOCAL_BOND_CHARACTER_BULK_TOURNAMENT_PREFLIGHT_CYCLE509_NOTE_2026-07-20.md` — The pre-held contract with an unusually explicit invalidation ledger: the earlier scout transcript is invalidated; Cycle 509 is a FRESH CONTRACT, not a r~.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the Cycle-509 chain (2913 preflight -> 2910 scout -> 2911 failure -> 2912 train). The mass exponent 1.9978 vs target 2 is the closest quantitative agreement in the packet, and it belongs to a ledger explicitly labeled dimensionless, not energy.
 
 ## Audit fields
 

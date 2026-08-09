@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ CW no-go: exp(-C/alpha) vs alpha^16 structurally different — C=1 not derivable
 - sha256: `6e2155840f03875b7bce09eacce847aa131152ba47610db121b02103d0541a3a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/701_HIERARCHY_PREFACTOR_DERIVATION.md](../../archive_unlanded/historic_intake_originals/branch03/701_HIERARCHY_PREFACTOR_DERIVATION.md)
 - Lines: 381; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/HIERARCHY_QUBIT_DETERMINANT.md` — Route survey companion; multiple routes graded REJECTED/CIRCULAR.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Notes the near-agreement of the taste exponent -38.41 with -4 pi^2 = -39.48 (2.7%) is coincidental, i.e. the headline match may be numerological.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Notes the near-agreement of the taste exponent -38.41 with -4 pi^2 = -39.48 (2.7%) is coincidental, i.e. the headline match may be numerological.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

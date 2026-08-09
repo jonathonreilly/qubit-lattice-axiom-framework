@@ -35,15 +35,19 @@ The Born-residual split: the FORM of Born is unconditional inside {Quantum, Reco
 - git blob: `2486a4cf8d2165e5862c410176e199a75971e3c4`
 - sha256: `6b47b5b8cb325feb5f888eea8953c060f46bea7977c7047b4cd83be242d1870f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/114_BORN_QUANTUM_RECORD_UNCONDITIONAL_FORM_VS_OPERATIONAL_RESIDUAL_NOTE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch01/114_BORN_QUANTUM_RECORD_UNCONDITIONAL_FORM_VS_OPERATIONAL_RESIDUAL_NOTE_2026-06-05.md)
-- Lines: 309; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_born_quantum_record_unconditional_2026_06_05(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_born_quantum_record_unconditional_2026_06_05(.py)`
+- Lines: 309; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_born_quantum_record_unconditional_2026_06_05​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_born_quantum_record_unconditional_2026_06_05​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md` — Predecessor; sharpened same-day.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Sharpens and supersedes BORN_FROM_ENVARIANCE... (#2702) by splitting its single residual admission A3 into an internal part and a genuine residual.
 
 ## Audit fields
 

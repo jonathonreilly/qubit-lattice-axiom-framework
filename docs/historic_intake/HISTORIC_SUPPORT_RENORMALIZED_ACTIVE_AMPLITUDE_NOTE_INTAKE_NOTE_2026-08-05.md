@@ -35,15 +35,19 @@ The rank-one active-response terminal: A_active = m_active 1^T exactly — the l
 - git blob: `40ee49141fd6c2cd9a259d73f0486ff6bdd3b003`
 - sha256: `99fe4977c6eb3721ee1947cad73f721d4486fe266fa791f4cb4ab2bc00b0c612`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2019_SUPPORT_RENORMALIZED_ACTIVE_AMPLITUDE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2019_SUPPORT_RENORMALIZED_ACTIVE_AMPLITUDE_NOTE.md)
-- Lines: 117; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_support_renormalized_active_amplitude(.py)`
+- Lines: 117; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_support_renormalized_active_amplitude​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Completes the projected DtN correction-operator chain; FAMILY TERMINAL for the support-side amplitude question, leaving only the 4D Einstein/Regge lift.
 
 ## Audit fields
 

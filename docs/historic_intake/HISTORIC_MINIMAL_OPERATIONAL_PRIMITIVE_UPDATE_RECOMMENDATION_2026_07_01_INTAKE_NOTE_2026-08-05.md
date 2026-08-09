@@ -35,15 +35,19 @@ The bridge-first recommendation: keep the four ontology axioms; the gates show t
 - git blob: `a8d62df1a7ef94d35dbca5f38530b8514904dd1c`
 - sha256: `761c9616a9de9ed6e36b25a334fa885c52986e0dbeae9a86d55eb65449265085`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1154_MINIMAL_OPERATIONAL_PRIMITIVE_UPDATE_RECOMMENDATION_2026-07-01.md](../../archive_unlanded/historic_intake_originals/branch04/1154_MINIMAL_OPERATIONAL_PRIMITIVE_UPDATE_RECOMMENDATION_2026-07-01.md)
-- Lines: 338; runners named: historic runner (unpinned, not in this packet): `scripts/minimal_operational_primitive_update_recommendation_2026_07_01(.py)`
+- Lines: 338; runners named: historic runner (unpinned, not in this packet): `scripts/minimal_operational_primitive_update_recommendation_2026_07_01​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-N7 preserves the strong objection that a single future local action principle might derive occurrence, source/action, probability, metric clock rate and readout selection together.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: N7 preserves the strong objection that a single future local action principle might derive occurrence, source/action, probability, metric clock rate and readout selection together.
+- Supersession (as known at extraction): Consolidates the post-axiom bridge stack; N8 records that earlier cycles overclaimed by folding readout selection, occurrence, source normalization and metric semantics into Record or generic dynamics language.
 
 ## Audit fields
 

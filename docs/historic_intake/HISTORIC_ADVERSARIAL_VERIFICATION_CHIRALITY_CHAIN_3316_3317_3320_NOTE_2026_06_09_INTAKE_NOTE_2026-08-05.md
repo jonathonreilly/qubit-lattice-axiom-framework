@@ -35,15 +35,19 @@ Independent re-derivation of the chirality chain confirming the algebra while fl
 - git blob: `ecbc9a92a48b373aaf71f7bcf130647871a247ca`
 - sha256: `cd1c6cffe79a986ff0b93679529fc6991bab6744f57445c1a13177a2db5e2328`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/41_ADVERSARIAL_VERIFICATION_CHIRALITY_CHAIN_3316_3317_3320_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch01/41_ADVERSARIAL_VERIFICATION_CHIRALITY_CHAIN_3316_3317_3320_NOTE_2026-06-09.md)
-- Lines: 33; runners named: historic runner (unpinned, not in this packet): `scripts/adversarial_verify_chirality_chain_2026_06_09(.py)`
+- Lines: 33; runners named: historic runner (unpinned, not in this packet): `scripts/adversarial_verify_chirality_chain_2026_06_09​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Three PR runner checks overstated; #3317's decoupling rests on a hardcoded premise; #3316's claim that Koide Q=2/3 collapses into Dirac chirality is false since gamma_5 = I_3 x sigma_3 is generation-blind.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Three PR runner checks overstated; #3317's decoupling rests on a hardcoded premise; #3316's claim that Koide Q=2/3 collapses into Dirac chirality is false since gamma_5 = I_3 x sigma_3 is generation-blind.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

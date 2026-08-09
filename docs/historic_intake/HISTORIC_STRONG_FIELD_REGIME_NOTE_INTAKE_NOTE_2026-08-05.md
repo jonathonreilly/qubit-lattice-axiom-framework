@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ The non-unitarity diagnosis: transfer spectral radius > 1 at ALL field strengths
 - git blob: `ddf50a3e8cf828efc8c14bd0accf022d30d226fb`
 - sha256: `5f64e26c507b513ee403c79376bc59dffda76a92bd0de2a2132c0fe9541cea8b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2001_STRONG_FIELD_REGIME_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2001_STRONG_FIELD_REGIME_NOTE.md)
-- Lines: 162; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_strong_field_regime(.py)`
+- Lines: 162; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_strong_field_regime​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Reclassifies a previously reported 'Hawking analog' amplification as a propagator normalization artifact, and restricts the validity of the framework's headline gravity results to f < 0.1.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Reclassifies a previously reported 'Hawking analog' amplification as a propagator normalization artifact, and restricts the validity of the framework's headline gravity results to f < 0.1.
+- Supersession (as known at extraction): Reinterprets the earlier Hawking analog result (norm growth 1.0 to 164) as the same non-unitarity, and narrows the validity range of all weak-field gravity rows to f < 0.1.
 
 ## Audit fields
 

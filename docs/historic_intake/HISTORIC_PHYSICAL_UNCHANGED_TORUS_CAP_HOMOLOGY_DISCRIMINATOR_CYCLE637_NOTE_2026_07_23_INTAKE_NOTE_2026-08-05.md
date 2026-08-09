@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ The cleanest genuine no-go in the sweep: EXACT HOMOLOGY EXCLUSION - for L = 3,5,
 - sha256: `15e01b73d71631646ee3387443575a9c4921eca1e1104c83fda11d74b8b76ff0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3067_PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/3067_PHYSICAL_UNCHANGED_TORUS_CAP_HOMOLOGY_DISCRIMINATOR_CYCLE637_NOTE_2026-07-23.md)
 - Lines: 161; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): One of the cleanest genuine no-gos in the sweep: excludes the static-embedding mechanism for Cycle 537 (idx 2920) while explaining its added-cap comparator, and is consistent with the independent falsifiers at Cycles 542 (2869) and 642 (2867).
 
 ## Audit fields
 

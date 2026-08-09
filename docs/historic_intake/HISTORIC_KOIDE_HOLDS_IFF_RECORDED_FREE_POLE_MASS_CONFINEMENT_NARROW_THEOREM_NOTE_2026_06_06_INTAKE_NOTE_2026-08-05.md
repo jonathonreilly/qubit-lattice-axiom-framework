@@ -35,15 +35,19 @@ Koide holds iff recorded (pole) masses exist: confinement denies quarks pole mas
 - git blob: `53059d6e8fb981bbbf5197ba1feac80f913efd44`
 - sha256: `e33f22afe615dc377589b4f11699c45f870b89934d90344739154f11305d303e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/860_KOIDE_HOLDS_IFF_RECORDED_FREE_POLE_MASS_CONFINEMENT_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch03/860_KOIDE_HOLDS_IFF_RECORDED_FREE_POLE_MASS_CONFINEMENT_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_holds_iff_recorded_free_2026_06_06(.py)`
+- Lines: 110; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_holds_iff_recorded_free_2026_06_06​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Extends the 2026-06-06 recordable-lens cluster (r = 1/2 count, delta-split arrow, 2/9 local readout) from the charged leptons to the quark contrast.
 
 ## Audit fields
 

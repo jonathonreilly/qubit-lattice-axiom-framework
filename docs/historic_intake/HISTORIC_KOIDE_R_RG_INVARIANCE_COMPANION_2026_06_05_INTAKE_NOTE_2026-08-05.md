@@ -35,15 +35,19 @@ Exact ratio RG-invariance (flavor-uniform terms cancel) + a prior published esti
 - git blob: `f1d840aca89c44ec87b99d7a561de7fc64b3f689`
 - sha256: `50ba0bc0de32ef4b499f6badf1bd11e02414d4dff36c47191120621166fc0088`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1076_KOIDE_R_RG_INVARIANCE_COMPANION_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch04/1076_KOIDE_R_RG_INVARIANCE_COMPANION_2026-06-05.md)
-- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/koide_r_rg_invariance_2026_06_05(.py)`
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/koide_r_rg_invariance_2026_06_05​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-corrects an earlier published estimate off by three orders of magnitude; r_up flagged as scheme-soft at ~2% (m_t pole vs MSbar over [150,173] GeV gives r_up in [0.760, 0.773]).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-corrects an earlier published estimate off by three orders of magnitude; r_up flagged as scheme-soft at ~2% (m_t pole vs MSbar over [150,173] GeV gives r_up in [0.760, 0.773]).
+- Supersession (as known at extraction): Corrects a prior optimistic estimate (~0.001% for r_down) that omitted the -(3/2)Y_u^dag Y_u cross term; the honest figure is 3.3%.
 
 ## Audit fields
 

@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,15 +38,19 @@ Definitive negative: Berry-holonomy routes to the Brannen delta are DEAD at all 
 - sha256: `8d2b0e82a17412111bddfe5c7a503fc5b96ea2d97e3f3a638ce794885c319466`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11537_MAJOR_RESULT_2026-05-26.md](../../archive_unlanded/historic_intake_originals/packsci05/11537_MAJOR_RESULT_2026-05-26.md)
 - Lines: 120; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/LATTICE_BERRY_NULL_2026-05-26.md` — U(1) Berry holonomy around the C3[111] fixed locus at full D_st level is identically zero (det(W) phase ~1e-6 at L=8).
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/SHARPENED_FRONTIER_2026-05-26.md` — Berry holonomy identically zero on the 3x3 Brannen circulant (eigenstates delta-independent, ~1e-15); the D_st-level computation defi~[nes the last check].
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

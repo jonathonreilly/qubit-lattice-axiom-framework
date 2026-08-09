@@ -36,19 +36,23 @@ MAJOR governance finding, pulled for the owner surface: the owner-registered obl
 - sha256: `6f033766d22cd917f4e2faaab73ccb9eedf973b870613eb647e54f3149f9dd6e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10658_wave1_wellposedness_killcheck.md](../../archive_unlanded/historic_intake_originals/packsci03/10658_wave1_wellposedness_killcheck.md)
 - Lines: 742; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/matter-action-measure-campaign-20260725/CAMPAIGN.md` — Campaign charter on the FIRST conjunct of the closure criterion; Wave 0 recon dispatched; the brief's factual premise is flagged in-pack.
 - `.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave1_obligation_reading.md` — The first conjunct is not a registered target and has no registered success condition - a subordinate instrumental clause; the obligation does not say what would discharge it.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Cross-stratum reference from packsci03 [idx 10660](HISTORIC_WAVE2_KILL_ATTEMPT_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave2_kill_attempt.md`, decision PULL) — ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-beta H), beta > 0, and a lattice bond-plane reflection, the reflected Gram form of Phi = I - SWAP has a strictly negative value, so the two-point menu collapses to a point; the kill consumes two supplied inputs, named exactly. MAJOR: contradicts the witness used by the repo's landed surface and corrects Wave 1 on its separator. Wave companions attached.
+- Cross-stratum reference from packsci03 idx 10660 (`.claude/science/physics-loops/matter-action-measure-campaign-20260725/wave2_kill_attempt.md`, decision PULL) — ONE DIES - the campaign's decisive conditional forcing: with Gibbs weight exp(-beta H), beta > 0, and a lattice bond-plane reflection, the reflected Gram form of Phi = I - SWAP has a strictly negative value, so the two-point menu collapses to a point; the kill consumes two supplied inputs, named exactly. MAJOR: contradicts the witness used by the repo's landed surface and corrects Wave 1 on its separator. Wave companions attached.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-MAJOR governance finding — an owner-registered obligation's prose over-reaches its own machine-registered target, i.e. the campaign's anchor document exhibits the exact failure mode the campaign's rule 6 warns about; and the campaign brief that spawned this work is factually wrong on both halves of its premise
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: MAJOR governance finding — an owner-registered obligation's prose over-reaches its own machine-registered target, i.e. the campaign's anchor document exhibits the exact failure mode the campaign's rule 6 warns about; and the campaign brief that spawned this work is factually wrong on both halves of its premise
+- Supersession (as known at extraction): Names the obligation's historical source docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md and the machine registry docs/audit/data/derivation_obligations.json as the authoritative non-prose surface.
 
 ## Audit fields
 
@@ -58,6 +62,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_kill_check_governance_defect_finding
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_WAVE2_KILL_ATTEMPT_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

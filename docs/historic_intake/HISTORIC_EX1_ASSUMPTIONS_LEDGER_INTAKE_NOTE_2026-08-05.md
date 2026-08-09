@@ -36,18 +36,22 @@ Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primit
 - sha256: `5670506265aa220cade717ffe645adf141fc13a4ecb79e2e39037581b2e9b41e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10044_ex1_assumptions_ledger.md](../../archive_unlanded/historic_intake_originals/packsci01/10044_ex1_assumptions_ledger.md)
 - Lines: 297; runners named: historic runner (unpinned, not in this packet): `scratch sympy runners (not repo files), 26 checks`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10048](HISTORIC_EX5_REFRAMING_INTAKE_NOTE_2026-08-05.md) (`.claude/science/exercises/koide-counting-bit-20260724/ex5_reframing.md`, stratum packsci01) — Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primitives, 5 landed theorems, 7 conventions or unexamined; the one-bit shape of the blocker is manufactured by conventions C1/C2; FOUR corrections to landed docs cited by file:line. Work order against landed content; counting-bit set member.
+- Attaches across strata to idx 10048 (`.claude/science/exercises/koide-counting-bit-20260724/ex5_reframing.md`, stratum packsci01) — Audit of the axioms-to-r chain: 19 assumptions of which only 4 are axioms/primitives, 5 landed theorems, 7 conventions or unexamined; the one-bit shape of the blocker is manufactured by conventions C1/C2; FOUR corrections to landed docs cited by file:line. Work order against landed content; counting-bit set member.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Four separate corrections to landed docs, including that the single wall the whole reduction rests on has never been audited; the species bridge B3 (three corners = three charged leptons of one charge sector) is 'nowhere derived' by the corpus's own statement yet every 2/3 comparison uses it.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Four separate corrections to landed docs, including that the single wall the whole reduction rests on has never been audited; the species bridge B3 (three corners = three charged leptons of one charge sector) is 'nowhere derived' by the corpus's own statement yet every 2/3 comparison uses it.
+- Supersession (as known at extraction): AUDITS LANDED CONTENT with file:line: GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md:36-38 is called FALSE AS WRITTEN (contradicted by CL3_TASTE_GENERATION_THEOREM.md:58-63); KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED..._2026-06-04.md:42-46 is called an empirical selector in structural clothes; the runner scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30​.py:57-59 is called a MIS-NAMED GROUP; and the E1 wall row is flagged STALE (cited four times as retained_no_go but unaudited in docs/audit/data/audit_ledger.json).
 
 ## Audit fields
 
@@ -57,6 +61,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_audit_finding
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_EX5_REFRAMING_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

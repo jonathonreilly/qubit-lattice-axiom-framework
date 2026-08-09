@@ -35,15 +35,19 @@ Exact identification: the one-plaquette anchor IS the normalized fundamental cha
 - git blob: `2089be6bc48a91bd5c9e917b020eb3811a39805f`
 - sha256: `676d3fcbdf1c98d7b8a86fe021187b4000a3e9dda018cbe1995e71c138d86a48`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/523_FUNDAMENTAL_DISK_ACTIVITY_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/523_FUNDAMENTAL_DISK_ACTIVITY_THEOREM_NOTE.md)
-- Lines: 235; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_fundamental_disk_activity_theorem(.py)`
+- Lines: 235; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_fundamental_disk_activity_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Supplies the 72 p^14 first-non-disk window consumed by FIRST_NONDISK_Z3_LIFT_THEOREM (idx 473).
 
 ## Audit fields
 

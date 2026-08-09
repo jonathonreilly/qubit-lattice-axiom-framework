@@ -35,15 +35,19 @@ The nucleation NEGATIVE: no force-balance solution — the wall runs away (deton
 - git blob: `32567a847a81ec90ed88b4e85e297e794cdb301d`
 - sha256: `9830bfa861dad46cb784020eea5ba96483adc39ed4764a8f58333d488c1271fc`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/388_DM_NUCLEATION_FINDING_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/388_DM_NUCLEATION_FINDING_NOTE.md)
-- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_nucleation(.py)`
+- Lines: 71; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_nucleation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DM_NUCLEATION_TEMPERATURE_NOTE.md` — The conflicting positive measurement (T_n = 180.6, v/T = 0.80) with MC-calibrated R_NP flagged.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Negative finding: the framework does not uniquely predict m_s, and the detonation outcome depends on that undetermined mass; also directly inconsistent with the sibling nucleation-temperature note's T_n/T_c.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Negative finding: the framework does not uniquely predict m_s, and the detonation outcome depends on that undetermined mass; also directly inconsistent with the sibling nucleation-temperature note's T_n/T_c.
+- Supersession (as known at extraction): Conflicts with DM_NUCLEATION_TEMPERATURE_NOTE.md (idx 389), which reports T_n/T_c = 0.983 and a subsonic v_w = 0.019 on the same lane.
 
 ## Audit fields
 

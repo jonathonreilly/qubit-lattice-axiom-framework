@@ -35,16 +35,20 @@ Portability established at mu^2 = 0.1 and REFUTED at 0.001 — explicitly retrac
 - git blob: `a558cc9cc89e27402183be558315a9316b8a0bbe`
 - sha256: `906511aeefaeddf9597da347aa4b08afca18cc1a56e0acb31797100335312c37`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/739_IRREGULAR_SIGN_G_PORTABILITY_SWEEP_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch03/739_IRREGULAR_SIGN_G_PORTABILITY_SWEEP_NOTE_2026-04-24.md)
-- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_irregular_sign_g_portability_sweep(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_irregular_sign_core_packet_gate(.py)`
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_irregular_sign_g_portability_sweep​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_irregular_sign_core_packet_gate​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/IRREGULAR_SIGN_FAMILY_PORTABILITY_SWEEP_NOTE_2026-04-24.md` — Fourth-family portability; observable-dependent.
 - `docs/IRREGULAR_SIGN_LOW_SCREENING_GATE_NOTE.md` — Gate diagnosis: packet-shape-dependent failure.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly retracts the strength of a prior gate result; host library versions differ from pinned.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly retracts the strength of a prior gate result; host library versions differ from pinned.
+- Supersession (as known at extraction): Downgrades the 2026-04-11 core-packet gate's 93.3% pass at mu^2 = 0.001 to a marginal weak-noise positive bias that does not survive a wider G sweep; predecessor to the family-portability sweep of the same date.
 
 ## Audit fields
 

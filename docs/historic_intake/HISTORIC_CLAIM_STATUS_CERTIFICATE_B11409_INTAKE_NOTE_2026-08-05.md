@@ -36,6 +36,7 @@ TERMINAL owner-governance registry action, a program milestone: the live Tier-A 
 - sha256: `175f9db332cc146da290477d80ea9207850c6899de8637830a351ed7cd6281b8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11409_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci05/11409_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 51; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,9 +52,12 @@ TERMINAL owner-governance registry action, a program milestone: the live Tier-A 
 - `.claude/science/physics-loops/tier-a-elimination-block49-owner-decision-packet/NO_GO_LEDGER.md` — Four shortcuts no-go: Block49 is not adoption; Class D carries no weight.
 - `.claude/science/physics-loops/tier-a-elimination-block50-owner-adoption-retirement/NO_GO_LEDGER.md` — Six shortcuts no-go: residuals are NOT axioms; axiom_premise_nodes.json unchanged; adoption note rejected as weight-bearing.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-adoption converts underivable content to owner-governed premises, not proofs — later readers must not cite as theorem closure
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: adoption converts underivable content to owner-governed premises, not proofs — later readers must not cite as theorem closure
+- Supersession (as known at extraction): registry action recorded as docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md (cited as landed by later packs)
 
 ## Audit fields
 

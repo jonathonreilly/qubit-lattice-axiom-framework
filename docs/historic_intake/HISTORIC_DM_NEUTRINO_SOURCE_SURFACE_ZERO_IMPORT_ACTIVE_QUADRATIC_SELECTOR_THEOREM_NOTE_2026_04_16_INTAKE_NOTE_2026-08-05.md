@@ -35,16 +35,20 @@ The zero-import active-quadratic selector law: the point-selection law derived f
 - git blob: `55ef16a70d39fa20cfbc1dafc166f58d4296d67d`
 - sha256: `0fc3614f055bb8439b42ee5e22ed20846a20cfdd24a42b918c1ff1622767c145`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/385_DM_NEUTRINO_SOURCE_SURFACE_ZERO_IMPORT_ACTIVE_QUADRATIC_SELECTOR_THEOREM_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/385_DM_NEUTRINO_SOURCE_SURFACE_ZERO_IMPORT_ACTIVE_QUADRATIC_SELECTOR_THEOREM_NOTE_2026-04-16.md)
-- Lines: 224; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_zero_import_active_quadratic_selector_theorem(.py)`
+- Lines: 224; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_zero_import_active_quadratic_selector_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DM_NEUTRINO_SOURCE_SURFACE_MINIMAL_ACTIVE_DISPLACEMENT_SELECTOR_THEOREM_NOTE_2026-04-16.md` — Variational-input selector; superseded by the zero-import form.
 - `docs/DM_NEUTRINO_SOURCE_SURFACE_PARITY_SOURCE_FIXED_POINT_SELECTOR_THEOREM_NOTE_2026-04-17.md` — Parity/source quotient forcing on its route.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Successor to DM_NEUTRINO_SOURCE_SURFACE_MINIMAL_ACTIVE_DISPLACEMENT_SELECTOR_THEOREM_NOTE_2026-04-16.md (idx 382): derives natively the quadratic law that note had to add as a new input.
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ The 25-assumption audit: 'Cl(3) on Z^3' is NOT one axiom — deflates the single
 - sha256: `5cc7332355d82eb9a4367df5e5654db5b360ee2b2fc39982e1ec49326b8b962c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1153_MINIMAL_AXIOM_INVENTORY.md](../../archive_unlanded/historic_intake_originals/branch04/1153_MINIMAL_AXIOM_INVENTORY.md)
 - Lines: 321; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly contradicts the framework's own 'one axiom' framing and marks the cosmological and hierarchy results as depending on extra inputs (growth I4, g_bare=1 I5).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly contradicts the framework's own 'one axiom' framing and marks the cosmological and hierarchy results as depending on extra inputs (growth I4, g_bare=1 I5).
+- Supersession (as known at extraction): Audits and partially deflates the single-axiom claims of SINGLE_AXIOM_HILBERT_NOTE, AXIOM_REDUCTION_NOTE and ULTIMATE_SIMPLIFICATION_NOTE.
 
 ## Audit fields
 

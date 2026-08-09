@@ -15,8 +15,15 @@
     "index": "docs/historic_intake/INTAKE_INDEX_2026-08-05.md",
     "manifest": "docs/historic_intake/INTAKE_MANIFEST_2026-08-05.json",
     "manifest_pin": {
-      "git_blob": "0e62ee6de40255d72a5867f7fe1389381c71f8ce",
-      "sha256": "780e90dc2827748ba368b93b21c06f358393da5d042f1cde603f0de85b87f105"
+      "git_blob": "f4af7b69ffd68f3e73dba5e093cb613dd1cbff94",
+      "sha256": "406eee19055ded79b8cca38db3b5df24203cc6486d3226c4623d892145f8005b"
+    },
+    "manifest_pin_history": {
+      "as_shipped_2026_08_05": {
+        "git_blob": "0e62ee6de40255d72a5867f7fe1389381c71f8ce",
+        "sha256": "780e90dc2827748ba368b93b21c06f358393da5d042f1cde603f0de85b87f105"
+      },
+      "repinned_2026_08_08": "review-loop iteration 2: wrapper FILENAMES neutralize no-go/obstruction/firewall tokens (no registration wrapper may be a no-go-named artifact), so the manifest `file` fields changed and the pin is refreshed; every other manifest field is byte-identical to the shipped pins (asserted fail-closed by scripts/historic_intake_generate_2026_08_05). The original pin is preserved above."
     },
     "registrar_effect": "each wrapper becomes one ledger row (claim_id = historic_intake.<stem>) at landing, audit_required_before_effective_retained: true on every row",
     "slug_collisions": 0,

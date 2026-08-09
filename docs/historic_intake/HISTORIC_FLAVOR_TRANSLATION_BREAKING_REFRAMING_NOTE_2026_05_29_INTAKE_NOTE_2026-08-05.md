@@ -35,15 +35,19 @@ The unifying reframe: the Koide value problem IS a spontaneous translation-symme
 - git blob: `e466239bdccb797dc5ae4067cfe4fcdd8d2a4e1b`
 - sha256: `e2e849c4949c2387d535d98c6d71f7fb7acc80ef780008fb78ca41b550f90473`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/495_FLAVOR_TRANSLATION_BREAKING_REFRAMING_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/495_FLAVOR_TRANSLATION_BREAKING_REFRAMING_NOTE_2026-05-29.md)
-- Lines: 66; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_translation_breaking_reframing_2026_05_29(.py)`
+- Lines: 66; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_translation_breaking_reframing_2026_05_29​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Unifies the whole 2026-05-29 arc (retracted flat direction, nonperturbative relocation, Jahn-Teller, multicritical coexistence, heat-kernel frame) into one statement.
 
 ## Audit fields
 

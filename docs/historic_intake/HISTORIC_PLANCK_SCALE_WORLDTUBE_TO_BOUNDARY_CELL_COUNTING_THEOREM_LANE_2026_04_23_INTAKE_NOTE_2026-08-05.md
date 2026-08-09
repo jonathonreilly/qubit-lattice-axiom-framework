@@ -35,15 +35,19 @@ The cell-counting classification terminus: every admissible elementary count obs
 - git blob: `ab4bd39cad632df5e07eaa9cfa7f87e227003630`
 - sha256: `f25041a9ea9b7efed79671a05c9d3d5008b8a5ee4ab97a5eb9a6558f3f2a7a55`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1495_PLANCK_SCALE_WORLDTUBE_TO_BOUNDARY_CELL_COUNTING_THEOREM_LANE_2026-04-23.md](../../archive_unlanded/historic_intake_originals/branch05/1495_PLANCK_SCALE_WORLDTUBE_TO_BOUNDARY_CELL_COUNTING_THEOREM_LANE_2026-04-23.md)
-- Lines: 386; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_worldtube_to_boundary_cell_counting_theorem_lane(.py)`
+- Lines: 386; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_worldtube_to_boundary_cell_counting_theorem_lane​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The counting-side terminus of the direct chain, cited as load-bearing step 2/3 by the native derivation packet and the reviewer submission packet.
 
 ## Audit fields
 

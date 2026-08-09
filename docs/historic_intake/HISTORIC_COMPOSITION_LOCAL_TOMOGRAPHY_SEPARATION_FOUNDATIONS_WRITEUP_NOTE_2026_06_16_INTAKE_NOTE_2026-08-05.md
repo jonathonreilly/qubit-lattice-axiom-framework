@@ -35,15 +35,19 @@ Correction of record: NO retained entailment that operational locality collapses
 - git blob: `085e8378af23f1c2af64a0ab930441d42e5725c2`
 - sha256: `c0d7a09f193f5cf6602ac4c763557f082ae9e873520caadb07a1290cf73ee0ea`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/256_COMPOSITION_LOCAL_TOMOGRAPHY_SEPARATION_FOUNDATIONS_WRITEUP_NOTE_2026-06-16.md](../../archive_unlanded/historic_intake_originals/branch01/256_COMPOSITION_LOCAL_TOMOGRAPHY_SEPARATION_FOUNDATIONS_WRITEUP_NOTE_2026-06-16.md)
-- Lines: 129; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_local_tomography_from_complex_structure_exact(.py)`; historic runner (unpinned, not in this packet): `scripts/audit_companion_tensor_composition_requires_local_tomography_exact(.py)`
+- Lines: 129; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_local_tomography_from_complex_structure_exact​.py`; historic runner (unpinned, not in this packet): `scripts/audit_companion_tensor_composition_requires_local_tomography_exact​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that summaries had been asserting an entailment (composition from the Quantum axiom) that is not retained.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that summaries had been asserting an entailment (composition from the Quantum axiom) that is not retained.
+- Supersession (as known at extraction): Explicitly fixes a mis-framing that had circulated in prior summaries.
 
 ## Audit fields
 

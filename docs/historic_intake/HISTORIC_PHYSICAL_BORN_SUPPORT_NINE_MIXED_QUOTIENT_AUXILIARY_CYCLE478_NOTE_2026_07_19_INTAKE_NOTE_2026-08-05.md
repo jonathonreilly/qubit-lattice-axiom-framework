@@ -36,6 +36,7 @@ TERMINAL of the G55 quotient ladder (Cycles 448-478): compiles the final frozen 
 - sha256: `87ed2bfbcff03b155496123d664050e80e01c67e668b06d751c3ecef2415652f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2796_PHYSICAL_BORN_SUPPORT_NINE_MIXED_QUOTIENT_AUXILIARY_CYCLE478_NOTE_2026-07-19.md](../../archive_unlanded/historic_intake_originals/branch09/2796_PHYSICAL_BORN_SUPPORT_NINE_MIXED_QUOTIENT_AUXILIARY_CYCLE478_NOTE_2026-07-19.md)
 - Lines: 196; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ TERMINAL of the G55 quotient ladder (Cycles 448-478): compiles the final frozen 
 - `docs/work_history/repo/review_feedback/PHYSICAL_BORN_SPARSE_MIXED_QUOTIENT_AUXILIARY_CYCLE466_NOTE_2026-07-19.md` — The exact relation 1000*E11 + 1464*E37 = ... compiled; FAIL disposition.
 - `docs/work_history/repo/review_feedback/PHYSICAL_BORN_SUPPORT_EIGHT_MIXED_QUOTIENT_AUXILIARY_CYCLE471_NOTE_2026-07-19.md` — 3000*E11 + 8784*E39 = ... compiled; FAIL disposition.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the G55 quotient ladder (448 -> 454/2792 -> 457/2793 -> 462/2791 -> 466/2794 -> 471/2795 -> 478/2796). Quotienting the new block against the independently certified 15-vector Cycle-471 kernel leaves rank one, exactly spanned by the frozen representative, so the 1027 rank does not silently count eight retained service-anchor relations as new.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Collins anisotropy resolved: the framework's own canonical staggered action sele
 - git blob: `8b44041123c6ba4d24050dd6508d507f4ed3501f`
 - sha256: `1ad5b6db90edfef23d644ee6e574d038e510807f08e732c85feb1de114b1a1ad`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/245_COLLINS_MATTER_GEOMETRIC_CONE_SURFACE_RESOLUTION_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch01/245_COLLINS_MATTER_GEOMETRIC_CONE_SURFACE_RESOLUTION_NOTE_2026-06-09.md)
-- Lines: 354; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09(.py)`
+- Lines: 354; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

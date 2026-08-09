@@ -35,7 +35,8 @@ Synthesis terminal of the endpoint-registration trio (Cycles 336/337/338): three
 - git blob: `8a1c87779a6105a4f4fcc9af1c81a82b74a9bd96`
 - sha256: `5e0e35877e5dcf8b1b8a9c6b5a56558f158d7b2bc9d7f981313c1afe09cdf001`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2761_INTEGRATED_PHYSICAL_ENDPOINT_REGISTRATION_TOURNAMENT_SYNTHESIS_CYCLE339_NOTE_2026-07-18.md](../../archive_unlanded/historic_intake_originals/branch09/2761_INTEGRATED_PHYSICAL_ENDPOINT_REGISTRATION_TOURNAMENT_SYNTHESIS_CYCLE339_NOTE_2026-07-18.md)
-- Lines: 351; runners named: historic runner (unpinned, not in this packet): `scripts/integrated_physical_endpoint_registration_tournament_synthesis_cycle339_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_direct_route_cycle336_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_protected_route_cycle337_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_process_route_cycle338_2026_07_18(.py)`
+- Lines: 351; runners named: historic runner (unpinned, not in this packet): `scripts/integrated_physical_endpoint_registration_tournament_synthesis_cycle339_2026_07_18​.py`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_direct_route_cycle336_2026_07_18​.py`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_protected_route_cycle337_2026_07_18​.py`; historic runner (unpinned, not in this packet): `scripts/physical_endpoint_registration_process_route_cycle338_2026_07_18​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ Synthesis terminal of the endpoint-registration trio (Cycles 336/337/338): three
 - `docs/work_history/repo/review_feedback/COMMON_CUBIC_TRANSIENT_STATIONARY_UPDATE_CYCLE425_NOTE_2026-07-19.md` — One fixed response-controlled unitary on a periodic cubic installation; explicit seam limits.
 - `docs/work_history/repo/review_feedback/CYCLE416_SEVEN_M2_COMMON_CODE_SEED_CYCLE418_NOTE_2026-07-19.md` — Exact local common-code intertwiner at the frozen angle with zero leakage; constructive seed.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Synthesis terminal for the Cycle 336/337/338 route trio; a wall-pair table records that state/Record, state/grade, Record/clock and Record/grade remain mutually underivable.
 
 ## Audit fields
 

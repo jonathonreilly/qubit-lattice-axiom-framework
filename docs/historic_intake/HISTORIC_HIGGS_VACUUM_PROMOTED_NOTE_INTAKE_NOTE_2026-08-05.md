@@ -35,15 +35,19 @@ The era's promoted Higgs authority: 119.8/129.7 GeV bracketing 125.25 with a 140
 - git blob: `c55b8f90f4a5ea41ac5714b20f0e8bf712112fab`
 - sha256: `d1cef022163b752a514eecdc109df22d87df2090e636476bbcdf6fd232231e7e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3612_HIGGS_VACUUM_PROMOTED_NOTE.md](../../archive_unlanded/historic_intake_originals/recovery/3612_HIGGS_VACUUM_PROMOTED_NOTE.md)
-- Lines: 62; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_higgs_buttazzo_calibration(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_color_projection_correction(.py)`
+- Lines: 62; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_higgs_buttazzo_calibration​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_yt_color_projection_correction​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The two promoted values bracket rather than match the observed 125.25 GeV (119.8 and 129.7), and the auxiliary route gives 140.3 GeV — the note offers no reconciliation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The two promoted values bracket rather than match the observed 125.25 GeV (119.8 and 129.7), and the auxiliary route gives 140.3 GeV — the note offers no reconciliation.
+- Supersession (as known at extraction): Demotes the direct taste-sector formula in HIGGS_MASS_FROM_AXIOM_NOTE (140.3 GeV) from lane summary to supporting auxiliary derivation.
 
 ## Audit fields
 

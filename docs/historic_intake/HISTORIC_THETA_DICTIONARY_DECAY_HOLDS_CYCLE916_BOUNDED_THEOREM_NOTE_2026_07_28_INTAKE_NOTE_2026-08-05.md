@@ -35,15 +35,19 @@ The theta convention dictionary terminal: A-to-C exact and insensitive, A-to-B r
 - git blob: `2939c2b04d55b0efc9c5c77544319443c8d0a35b`
 - sha256: `e9921c10d626c608e55bba16751c0b65e5035648f813f7fb50650f38dda79ef4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2052_THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch07/2052_THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 201; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle916_theta_reconciliation_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle916_theta_independent_check_2026_07_28(.py)`
+- Lines: 201; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle916_theta_reconciliation_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle916_theta_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-disclosed: one primary shortfall amended by the checker (a fourth void-comparison site), one post-specified analysis band disclosed as a deviation, one committed-only cell not freshly propagated; comparator B runs only from history because its in-tree API no longer exposes the imported functions.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-disclosed: one primary shortfall amended by the checker (a fourth void-comparison site), one post-specified analysis band disclosed as a deviation, one committed-only cell not freshly propagated; comparator B runs only from history because its in-tree API no longer exposes the imported functions.
+- Supersession (as known at extraction): Terminal note of the cycle-916 theta dictionary arc; declares the certification window closed and part-refutes one sibling-block prediction; corrects a d=1 misattribution already flagged by Cycle 915.
 
 ## Audit fields
 

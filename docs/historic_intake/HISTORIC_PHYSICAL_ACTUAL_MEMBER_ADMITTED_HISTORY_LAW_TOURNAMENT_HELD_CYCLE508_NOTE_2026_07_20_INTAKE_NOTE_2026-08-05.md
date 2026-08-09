@@ -35,16 +35,20 @@ TERMINAL of the Cycle-508 trio: a separate held-only evaluator (no train/fit/ref
 - git blob: `acdf134dbda3da0dbb21bc2729d80fb1d1634412`
 - sha256: `8651a1bcfb39b2e2b8980bd5a25a352ffbe3e8e7a199ff421fc47f3a576c03c7`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2768_PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_HELD_CYCLE508_NOTE_2026-07-20.md](../../archive_unlanded/historic_intake_originals/branch09/2768_PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_HELD_CYCLE508_NOTE_2026-07-20.md)
-- Lines: 434; runners named: historic runner (unpinned, not in this packet): `scripts/physical_actual_member_admitted_history_law_tournament_held_cycle508_2026_07_20(.py)`
+- Lines: 434; runners named: historic runner (unpinned, not in this packet): `scripts/physical_actual_member_admitted_history_law_tournament_held_cycle508_2026_07_20​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_CYCLE508_NOTE_2026-07-20.md` — The train-only evaluator (separate SHA-pinned) for the three-route tournament; Route B strongest on train.
 - `docs/work_history/repo/review_feedback/PHYSICAL_ACTUAL_MEMBER_ADMITTED_HISTORY_LAW_TOURNAMENT_PREFLIGHT_CYCLE508_NOTE_2026-07-20.md` — The freeze packet defining the falsifiable three-route tournament and recording that even a pass would not [close the wall].
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the Cycle-508 trio (preflight 2769, train 2767, held 2768). Carries an addendum that supersedes only ambiguous type language in the frozen prose, not any result.
 
 ## Audit fields
 

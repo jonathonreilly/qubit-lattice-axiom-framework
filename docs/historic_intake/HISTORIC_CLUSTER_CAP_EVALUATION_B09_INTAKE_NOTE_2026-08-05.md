@@ -36,14 +36,18 @@ Correction of landed PR content: block08's PR BODY carried 'matrix-fiber' scopin
 - sha256: `f13e24ac2c650668b58b451773e992d7d96a870cc5e48e1d668b152ada20ffa2`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10688_CLUSTER_CAP_EVALUATION_B09.md](../../archive_unlanded/historic_intake_originals/packsci03/10688_CLUSTER_CAP_EVALUATION_B09.md)
 - Lines: 45; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/microcausality-many-body-lightcone-20260718/BLOCK09_PLAN.md` — The block10 plan that discloses the PR-body/evaluator contradiction and supplies the exact trace-norm identity || sum k_ab c+_xa c_yb + h.c. || = ||k||_S1 resolving the fiber item.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-a landed PR body contained an incorrect outside-toolkit judgment and an incorrect source-scoping; both corrected retroactively here
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: a landed PR body contained an incorrect outside-toolkit judgment and an incorrect source-scoping; both corrected retroactively here
+- Supersession (as known at extraction): CORRECTS LANDED CONTENT: a wrong scoping sentence in block08's PR body and the sibling's scalar-fiber source-scoping, both flagged on the original PR.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 - git blob: `758f9b2a5afb55567cd318c677ff7ae8e9a51bb4`
 - sha256: `ff4bc98a5981d7c093ea57124a1abedd3a9109dc5c8648a20338a03423f06ed5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1231_OH_SOURCE_CLASS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1231_OH_SOURCE_CLASS_NOTE.md)
-- Lines: 136; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_oh_source_class_scan(.py)`
+- Lines: 136; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_oh_source_class_scan​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

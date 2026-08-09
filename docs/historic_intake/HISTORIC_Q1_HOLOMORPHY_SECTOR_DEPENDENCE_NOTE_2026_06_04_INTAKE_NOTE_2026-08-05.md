@@ -1,6 +1,6 @@
-# Historic intake: Q1 keystone (angle B) - the holomorphic reading does not overreach and is not cleanly sector-dependent
+# Historic intake: Koide-Q Keystone (angle B) - the holomorphic reading does not overreach and is not cleanly sector-dependent
 
-Explicit subject: The signed readout gives the exact identity Q(r) = (1 + 2r)/3 so det_C is the single point r = 1/2 and det_R the single point r = 1, while observed quark moduli sit strictly between (r_up ~ 0.77, r_down ~ 0.60); J_cs exists in every sector but is measure-neutral, and all three ... (The bare code `Q1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: The signed readout gives the exact identity Q(r) = (1 + 2r)/3 so det_C is the single point r = 1/2 and det_R the single point r = 1, while observed quark moduli sit strictly between (r_up ~ 0.77, r_down ~ 0.60); J_cs exists in every sector but is measure-neutral, and all three ... (Historic code `Q1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,16 +37,20 @@ The exact continuum result Q(r) = (1+2r)/3 with observed quark moduli strictly i
 - git blob: `50ac207281a239cd8e9fd110070e0827af3d2e02`
 - sha256: `64bf8bdb8c343fb7aae968f96ccecb9471d13ff2a6fff7b5ec085fc5b3810ec9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1639_Q1_HOLOMORPHY_SECTOR_DEPENDENCE_NOTE_2026-06-04.md](../../archive_unlanded/historic_intake_originals/branch05/1639_Q1_HOLOMORPHY_SECTOR_DEPENDENCE_NOTE_2026-06-04.md)
-- Lines: 93; runners named: historic runner (unpinned, not in this packet): `scripts/q1_holomorphy_sector_dependence_2026_06_04(.py)`
+- Lines: 93; runners named: historic runner (unpinned, not in this packet): `scripts/q1_holomorphy_sector_dependence_2026_06_04​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/Q1_HOLOMORPHY_DIVISION_ALGEBRA_FORCING_NOTE_2026-06-04.md` — NATURAL-NOT-FORCED verdict.
 - `docs/Q1_HOLOMORPHY_HOSTILE_RESTATEMENT_NOTE_2026-06-04.md` — Hostile four-front restatement analysis; runner mis-code disclosed.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Refutes two previously circulated framings within the same Koide/flavor cluster.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Refutes two previously circulated framings within the same Koide/flavor cluster.
+- Supersession (as known at extraction): CORRECTS two prior framings: the coverage-audit 'Q1 holomorphy = chirality, same binary' claim is refuted (G_U1 commutes with Gamma_chi), and the 'quarks read det_R' framing is imprecise since quarks sit at intermediate r.
 
 ## Audit fields
 

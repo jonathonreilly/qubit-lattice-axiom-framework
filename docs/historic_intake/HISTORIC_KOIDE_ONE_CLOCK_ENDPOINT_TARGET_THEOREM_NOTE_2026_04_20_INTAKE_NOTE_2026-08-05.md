@@ -35,15 +35,19 @@ Synthesis collapsing the constructive Koide route to ONE ambient one-clock endpo
 - git blob: `68366abe82fface3a171648c0edc4a018cc60018`
 - sha256: `0377a6f189f956d3ad9d4ce4b35374055e736837d2645d02f54dada95a3bd10f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/877_KOIDE_ONE_CLOCK_ENDPOINT_TARGET_THEOREM_NOTE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch03/877_KOIDE_ONE_CLOCK_ENDPOINT_TARGET_THEOREM_NOTE_2026-04-20.md)
-- Lines: 187; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_one_clock_endpoint_target_theorem_2026_04_20(.py)`
+- Lines: 187; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_one_clock_endpoint_target_theorem_2026_04_20​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Synthesis of five 2026-04-18 retained notes plus the anomaly-forces-time theorem; consumed by the 2026-04-21 endpoint pullback note.
 
 ## Audit fields
 

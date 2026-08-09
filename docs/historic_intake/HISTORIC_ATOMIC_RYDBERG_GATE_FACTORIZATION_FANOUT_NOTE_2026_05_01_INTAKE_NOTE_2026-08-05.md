@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ TERMINAL of the alpha(0)/Rydberg lane: retained Rydberg closure requires THREE i
 - git blob: `821f1d7d7b7f189db07046a4db5e9cd89fcb0615`
 - sha256: `4bc9ba982aaadf224f6ac7b957b0e162d7e70fd48882605a72b3d0144d2f7489`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10593_ATOMIC_RYDBERG_GATE_FACTORIZATION_FANOUT_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/packsci02/10593_ATOMIC_RYDBERG_GATE_FACTORIZATION_FANOUT_NOTE_2026-05-01.md)
-- Lines: 146; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_atomic_rydberg_gate_factorization_fanout(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_rydberg_dependency_firewall(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_qed_threshold_bridge_firewall(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_nr_coulomb_scale_bridge(.py)`
+- Lines: 146; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_atomic_rydberg_gate_factorization_fanout​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_rydberg_dependency_firewall​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_qed_threshold_bridge_firewall​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_atomic_nr_coulomb_scale_bridge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +49,12 @@ TERMINAL of the alpha(0)/Rydberg lane: retained Rydberg closure requires THREE i
 - `.claude/science/physics-loops/lane2-atomic-scale-20260428/notes/ATOMIC_PLANCK_UNIT_MAP_FIREWALL_NOTE_2026-05-01.md` — The Planck/source-unit package supplies a lattice length anchor but not the atomic coupling; names the extra cross-sector selector needed.
 - `.claude/science/physics-loops/lane2-atomic-scale-20260428/notes/ATOMIC_QED_THRESHOLD_BRIDGE_FIREWALL_NOTE_2026-05-01.md` — Three models with identical high-scale inputs but different active-interval structure give different alpha(0): retires 'retained alpha_EM(M_Z) + retained b_QED implies alpha(0)'; consumes the publication USABLE_DERIVED_VALUES surface.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Quantifies two hidden-fit routes: direct alpha_EM(M_Z) substitution shifts E_1 by +15.21%, and using it would require a hidden m_e shift of -13.20%. Both are labelled falsifier checks, not derivation inputs.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Quantifies two hidden-fit routes: direct alpha_EM(M_Z) substitution shifts E_1 by +15.21%, and using it would require a hidden m_e shift of -13.20%. Both are labelled falsifier checks, not derivation inputs.
+- Supersession (as known at extraction): Consolidates idx 10588-10592 into one factorization statement.
 
 ## Audit fields
 

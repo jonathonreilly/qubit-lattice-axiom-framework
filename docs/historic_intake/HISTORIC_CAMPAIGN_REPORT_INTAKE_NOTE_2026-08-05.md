@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: may_june_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ Pulled AS PART OF THE WITHDRAWAL SET (with 11538 and 11534): the converged 12-cy
 - git blob: `07de3f49ff1df2647ed8283875d2b15135d1ba0b`
 - sha256: `1b82198fe1db0438232e4d92f69fb8259effb4bee36e590d90f8408b05d58b6a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11516_CAMPAIGN_REPORT.md](../../archive_unlanded/historic_intake_originals/packsci05/11516_CAMPAIGN_REPORT.md)
-- Lines: 126; runners named: historic runner (unpinned, not in this packet): `runners/cross_sector_bounded_no_go_verifier(.py)`
+- Lines: 126; runners named: historic runner (unpinned, not in this packet): `runners/cross_sector_bounded_no_go_verifier​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +46,12 @@ Pulled AS PART OF THE WITHDRAWAL SET (with 11538 and 11534): the converged 12-cy
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CHAIN5_VERIFICATION_EXPANDED_2026-05-26.md` — Expanded ledger query finds 14 more retained pieces incl. one full retained positive theorem; sector-orthogonality confirmed.
 - `.claude/science/research-lanes/dynamics-lane-native-axioms-only-20260526/CHARTER.md` — The lane charter under the 2026-05-26 mandate with the honesty contract stated.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

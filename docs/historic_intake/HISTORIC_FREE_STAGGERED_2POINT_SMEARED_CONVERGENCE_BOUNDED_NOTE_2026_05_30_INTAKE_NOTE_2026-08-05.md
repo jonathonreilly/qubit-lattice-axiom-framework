@@ -35,15 +35,19 @@ Smeared/OS-sense 2-point convergence conditional on rung A — the transfer-gap 
 - git blob: `8794c963d168b51302aeded0ff564f49536827d0`
 - sha256: `432f529d0aa87bb20eec439d5bd8cef9407d0b1a1fc58b1d0a028a80587ce574`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/514_FREE_STAGGERED_2POINT_SMEARED_CONVERGENCE_BOUNDED_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/514_FREE_STAGGERED_2POINT_SMEARED_CONVERGENCE_BOUNDED_NOTE_2026-05-30.md)
-- Lines: 428; runners named: historic runner (unpinned, not in this packet): `scripts/free_staggered_2point_smeared_convergence_2026-05-30(.py)`
+- Lines: 428; runners named: historic runner (unpinned, not in this packet): `scripts/free_staggered_2point_smeared_convergence_2026-05-30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly avoids leaning on a finite-a taste-flat operator identified elsewhere as an over-claim; the massless limit is untreated.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly avoids leaning on a finite-a taste-flat operator identified elsewhere as an over-claim; the massless limit is untreated.
+- Supersession (as known at extraction): Converts a note whose verdict was DISSOLVED-conditional into its own standalone statement, rather than silently asserting the upgrade on rung A's behalf.
 
 ## Audit fields
 

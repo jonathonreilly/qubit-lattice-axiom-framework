@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ CHIRAL IMPORT VERDICT: seven native routes fail and ONE shared pin spans Koide/q
 - git blob: `2cf622b0d5b60c1e3d165030e1c794e4833ec18d`
 - sha256: `9133cc4d867636433c028bd7c310c620bf27db2a09769eb01118dd3dcbc9b981`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/477_FLAVOR_CHIRAL_IMPORT_VERDICT_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/477_FLAVOR_CHIRAL_IMPORT_VERDICT_NOTE_2026-05-30.md)
-- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_chiral_import_verdict_2026_05_30(.py)`
+- Lines: 75; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_chiral_import_verdict_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The same single pin is shared across Koide, quark, generation-ID, strong-CP and signed-gravity lanes - i.e. it is the observed chirality content of the SM, reproduced not derived.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The same single pin is shared across Koide, quark, generation-ID, strong-CP and signed-gravity lanes - i.e. it is the observed chirality content of the SM, reproduced not derived.
+- Supersession (as known at extraction): Thread 1 is closed by FLAVOR_JOINT_COMMUTANT_NO_ESCAPE_NOTE_2026-05-30 (idx 484); corrects the note's own earlier phase-dof/move-1 framing.
 
 ## Audit fields
 

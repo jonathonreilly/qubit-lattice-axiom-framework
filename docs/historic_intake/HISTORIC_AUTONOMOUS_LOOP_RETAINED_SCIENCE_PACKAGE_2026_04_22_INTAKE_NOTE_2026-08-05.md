@@ -35,16 +35,20 @@ Terminal curation of the April-22 session: 10 robust branches retained, P0/infla
 - git blob: `13cfc6b41224d2f01af872313185ae86136c208c`
 - sha256: `72bbf5f793ed1d713c25f90c98e30a6cd355b9eae8b524d84f2f1e8434c9fae5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/65_AUTONOMOUS_LOOP_RETAINED_SCIENCE_PACKAGE_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch01/65_AUTONOMOUS_LOOP_RETAINED_SCIENCE_PACKAGE_2026-04-22.md)
-- Lines: 176; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_down_type_scale_convention_support(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_brannen_absss_equivariant_descent(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_brannen_ch_three_gap_closure(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_q23_oh_covariance_nogo(.py)`; historic runner (unpinned, not in this packet): `frontier_koide_q_eq_3delta_doublet_magnitude(.py)`; historic runner (unpinned, not in this packet): `frontier_lambda_qcd_derivation_support(.py)`; historic runner (unpinned, not in this packet): `frontier_monopole_mass_consolidation(.py)`; historic runner (unpinned, not in this packet): `frontier_neutrino_mass_sum_prediction(.py)`
+- Lines: 176; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_down_type_scale_convention_support​.py`; historic runner (unpinned, not in this packet): `frontier_koide_brannen_absss_equivariant_descent​.py`; historic runner (unpinned, not in this packet): `frontier_koide_brannen_ch_three_gap_closure​.py`; historic runner (unpinned, not in this packet): `frontier_koide_q23_oh_covariance_nogo​.py`; historic runner (unpinned, not in this packet): `frontier_koide_q_eq_3delta_doublet_magnitude​.py`; historic runner (unpinned, not in this packet): `frontier_lambda_qcd_derivation_support​.py`; historic runner (unpinned, not in this packet): `frontier_monopole_mass_consolidation​.py`; historic runner (unpinned, not in this packet): `frontier_neutrino_mass_sum_prediction​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/AUTONOMOUS_LOOP_INDEX_2026-04-22.md` — Superseded index (branches 1-11).
 - `docs/AUTONOMOUS_LOOP_INDEX_UPDATE_2026-04-22.md` — Superseded index; its headline pair is P0/inflated per the adjudication.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Terminal note of the April 22 autonomous-loop family — selects from the two indexes per the hostile review.
 
 ## Audit fields
 

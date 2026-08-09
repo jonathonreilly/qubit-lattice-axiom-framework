@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ Mixed-role bounded row on the quark mass problem: an exact positive identity plu
 - sha256: `c419506d3f84c21ec5619da8138ea049e398fcbc8bb6e250afc1505542aabf42`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10307_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10307_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 149; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The steelman is conceded in full: the mass problem is relational, so a down-only no-go does not block the physics. The note keeps its claim narrow accordingly - a model of how to bound a negative.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The steelman is conceded in full: the mass problem is relational, so a down-only no-go does not block the physics. The note keeps its claim narrow accordingly - a model of how to bound a negative.
+- Supersession (as known at extraction): N4 DROPS all four candidate witnesses as non-matching (including one whose information direction is the converse), leaving the theorem standing on its own fixed-H_d varying-H_u countermodel - unusually strict residual matching.
 
 ## Audit fields
 

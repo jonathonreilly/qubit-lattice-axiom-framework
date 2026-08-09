@@ -35,7 +35,8 @@ The CKM chain's derived/not-derived boundary WITH the live discrepancy on the re
 - git blob: `2123664a4c4451f475283df7a251a1ffde4f931e`
 - sha256: `598893504f0063e7cca4a03f3d2a09a5b88b2cc46368d3d8d5da725da30d61f9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/178_CKM_CLEAN_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/178_CKM_CLEAN_DERIVATION_NOTE.md)
-- Lines: 287; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_closure(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `frontier_ckm_with_ewsb(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_c23_analytic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_nni_coefficients(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_with_ewsb(.py)`
+- Lines: 287; runners named: historic runner (unpinned, not in this packet): `frontier_ckm_closure​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_from_mass_hierarchy​.py`; historic runner (unpinned, not in this packet): `frontier_ckm_with_ewsb​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_c23_analytic​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_from_mass_hierarchy​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_nni_coefficients​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_with_ewsb​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -51,9 +52,12 @@ The CKM chain's derived/not-derived boundary WITH the live discrepancy on the re
 - `docs/CKM_WITH_EWSB_NOTE.md` — EWSB C3->Z2 breaking; exact structural component.
 - `docs/CKM_WOLFENSTEIN_CASCADE_THEOREM.md` — Wolfenstein-as-cascade with by-construction flag.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records a live discrepancy: the framework's delta_CP is 120 degrees while the observed value is ~68.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records a live discrepancy: the framework's delta_CP is 120 degrees while the observed value is ~68.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

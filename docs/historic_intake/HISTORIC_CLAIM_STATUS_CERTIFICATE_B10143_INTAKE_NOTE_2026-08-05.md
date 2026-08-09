@@ -36,14 +36,18 @@ Scope repair on a CRITICAL row with 880 transitive descendants and direct in-deg
 - sha256: `9b828ee75623eb11346c7eb163d47f4f27ea01ffdfe2a05d8df7c31f569aef47`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10143_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10143_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 39; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/assumption-derivation-ledger-scope-repair-20260527/NO_GO_LEDGER.md` — Finds the broad package-wide status table unretainable under the one-hop dependency packet rule; names the split-into-authority-slices repair path.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-880 transitive descendants were downstream of a row whose binding scope included a table 'most entries [of which] named statuses without direct authority edges'.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: 880 transitive descendants were downstream of a row whose binding scope included a table 'most entries [of which] named statuses without direct authority edges'.
+- Supersession (as known at extraction): NARROWS LANDED CONTENT: a critical row with 880 transitive descendants had been binding a package-wide status table it had no authority edges for.
 
 ## Audit fields
 

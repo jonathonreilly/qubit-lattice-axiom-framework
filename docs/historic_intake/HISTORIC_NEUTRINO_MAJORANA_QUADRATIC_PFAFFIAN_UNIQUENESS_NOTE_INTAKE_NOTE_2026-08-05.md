@@ -35,15 +35,19 @@ Pfaffian UNIQUENESS (not just minimality) within the finite quadratic Grassmann 
 - git blob: `86b1ba3bc6dd2aeffa03a6e0c364ff0b7ae09134`
 - sha256: `4e4ce793bfe6337129f7ab0cd911c29e728bee3e6d0f28f6e8e262e6b7c64d9d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1198_NEUTRINO_MAJORANA_QUADRATIC_PFAFFIAN_UNIQUENESS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1198_NEUTRINO_MAJORANA_QUADRATIC_PFAFFIAN_UNIQUENESS_NOTE.md)
-- Lines: 180; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_quadratic_pfaffian_uniqueness(.py)`
+- Lines: 180; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_majorana_quadratic_pfaffian_uniqueness​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Strengthens the grammar-boundary note (idx_pos 1196) from 'naturally Pfaffian' to 'uniquely Pfaffian at quadratic order'.
 
 ## Audit fields
 

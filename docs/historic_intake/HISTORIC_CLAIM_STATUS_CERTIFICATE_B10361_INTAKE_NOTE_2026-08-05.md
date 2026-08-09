@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ Demotion with full N1-N8 PASS: the record-history row becomes a narrow no-go (ab
 - sha256: `48c7ab72422b7cd2de27ec2f508e387d321848ca37485c7721810f7225ddb672`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10361_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10361_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 82; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/conformal-causal-source-repair-block01-20260716/NO_GO_LEDGER.md` — The active narrow no-go companion: supplied word/order plus optional kernel with no clock datum cannot fix duration; positive bridge routes stay open.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents a real prior misuse of landed content: a no-go row was previously used as a POSITIVE causal input — the supervisor may want to check whether the laundered version is still cited anywhere.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents a real prior misuse of landed content: a no-go row was previously used as a POSITIVE causal input — the supervisor may want to check whether the laundered version is still cited anywhere.
+- Supersession (as known at extraction): Demotes a row that a 2026-07-09 review found had been laundered into a positive causal input; preserves the 2026-07-07 record-comparability requirement that an acyclic formation-event dependency relation must be supplied.
 
 ## Audit fields
 

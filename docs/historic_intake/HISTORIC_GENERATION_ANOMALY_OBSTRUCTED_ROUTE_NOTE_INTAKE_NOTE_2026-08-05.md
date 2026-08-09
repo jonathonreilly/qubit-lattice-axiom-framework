@@ -1,0 +1,62 @@
+# Historic intake: Generation Anomaly Obstruction: Z_3 Orbit Sectors Cannot Be Merged
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: bounded_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Each triplet orbit carries Z_3 charge content (1,1,1) hence Dai-Freed invariant nu = 2, so the full theory has nu_total = 1 mod 3 while merging T_1 and T_2 gives 2 mod 3 - an exact topological obstruction to identification, confirmed by the lens-space partition function phase shifting from 1/3 to 2/3 and by the Z_3-invariant Hamming weight operator distinguishing the orbits; singlet merges are anomaly-allowed, as they should be.
+
+Original verdict: An exact topological obstruction to generation identification that does NOT close the physicality gate.
+Scope: Conditional on the Z_3 taste symmetry being physical and on 't Hooft matching applying in the full interacting theory with softly broken Z_3.
+
+
+## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
+
+The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
+
+Exact topological obstruction: merging triplets changes nu mod 3 — generation identification blocked topologically; gate honestly not closed.
+
+## Provenance (pinned)
+
+- Original path: `docs/GENERATION_ANOMALY_OBSTRUCTION_NOTE.md`
+- Source commit: `9ec1dd93e41044b2cec078673fea56cdc55bfc33`
+- git blob: `384cb95ed6a4861b734c88dd3ca6619b82b20747`
+- sha256: `6e68b16b390b904cd72a85b656f59668c24a71f83984de3595abf1cbbe76a971`
+- Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/610_GENERATION_ANOMALY_OBSTRUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/610_GENERATION_ANOMALY_OBSTRUCTION_NOTE.md)
+- Lines: 194; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_anomaly_obstruction​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Triage extraction notes (2026-08-05/08, not from the original)
+
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Complements the superselection argument (which forbids mixing) with a topological argument forbidding identification.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+historic_claim_class: historic_theorem
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

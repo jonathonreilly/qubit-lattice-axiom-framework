@@ -36,6 +36,7 @@ The hadron workstream's HONEST STOP: four cycles, zero theorem-grade artifacts, 
 - sha256: `9312b9541c934c5ca54009deb2c5eb151ae39b0ce0a017c00f4e9c6531b53dab`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/666_HADRON_LANE1_WORKSTREAM_CLOSEOUT_NOTE_2026-04-27.md](../../archive_unlanded/historic_intake_originals/branch02/666_HADRON_LANE1_WORKSTREAM_CLOSEOUT_NOTE_2026-04-27.md)
 - Lines: 162; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ The hadron workstream's HONEST STOP: four cycles, zero theorem-grade artifacts, 
 - `docs/HADRON_LANE1_WORKSTREAM_STATUS_NOTE_2026-04-27.md` — Hadron lane chain step; carried by the closeout.
 - `docs/HADRON_MASS_LANE1_THEOREM_PLAN_NOTE_2026-04-27.md` — Hadron lane chain step; carried by the closeout.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that Phase-2 3A m_pi remains blocked on a Lane 3 dependency that made zero progress in 41 upstream commits.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that Phase-2 3A m_pi remains blocked on a Lane 3 dependency that made zero progress in 41 upstream commits.
+- Supersession (as known at extraction): TERMINAL note of the hadron-mass-program-20260427 workstream (idx 661-668); lists four named resume conditions and four recommended manuscript weaves deliberately NOT applied.
 
 ## Audit fields
 

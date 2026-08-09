@@ -35,16 +35,20 @@ The paper-safe y_t reframe: literal Z_Y = Z_g is FALSE and physical protection i
 - git blob: `6e94ebfe0eb4e059276eac448af34c149242c9dc`
 - sha256: `608a058664fb969e36ea2fe845311a16244db2381679bb8bef8cf3331940c03f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1801_RENORMALIZED_YT_PAPER_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1801_RENORMALIZED_YT_PAPER_NOTE.md)
-- Lines: 272; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_paper(.py)`
+- Lines: 272; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_paper​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/RENORMALIZED_YT_CLEAN_THEOREM_NOTE.md` — y_t protection chain member; CLOSED-language flags carried.
 - `docs/RENORMALIZED_YT_THEOREM_NOTE.md` — y_t protection chain member; CLOSED-language flags carried.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Declares the lane CLOSED by reframing the original open item rather than by proving it; the imported alpha_s remains BOUNDED.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Declares the lane CLOSED by reframing the original open item rather than by proving it; the imported alpha_s remains BOUNDED.
+- Supersession (as known at extraction): Paper-safe restatement of the y_t chain (idx 1800, 1802, 1803); FAMILY TERMINAL for the renormalized-y_t family.
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ The EM probe: Coulomb d^-2.11 (R^2=0.9995), exact neutral null, magnetic deflect
 - git blob: `eccff4ca723dd5b5aa3f45229e80f5ebf635aacc`
 - sha256: `7077d334627e543f29897f0f37e57b87c955b8446bf4f070bb53a07e1287eae3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/422_ELECTROMAGNETISM_PROBE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/422_ELECTROMAGNETISM_PROBE_NOTE.md)
-- Lines: 103; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_electromagnetism_probe(.py)`
+- Lines: 103; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_electromagnetism_probe​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/EM_GRAVITY_COEXISTENCE_CONTROL_NOTE_2026-04-12.md` — Coexistence-promotion block; procedural and liftable.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Charge-conjugation symmetry is broken in the staggered centroid dynamics (V coupled to the mass channel), described as a known lattice artifact rather than a physics failure.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Charge-conjugation symmetry is broken in the staggered centroid dynamics (V coupled to the mass channel), described as a known lattice artifact rather than a physics failure.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

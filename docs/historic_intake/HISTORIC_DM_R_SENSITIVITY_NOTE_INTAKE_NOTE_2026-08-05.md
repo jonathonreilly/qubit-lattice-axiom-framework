@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ Definitive sensitivity no-go: eta exactly proportional to the transport prefacto
 - git blob: `19cdeff1ad9e5687add65286c1f4919627f10a41`
 - sha256: `f4ebabc026909745d2ba9c072019895c6e7cade082e8ccd2006c18e8860114eb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/402_DM_R_SENSITIVITY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/402_DM_R_SENSITIVITY_NOTE.md)
-- Lines: 179; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_r_sensitivity(.py)`
+- Lines: 179; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_r_sensitivity​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +46,12 @@ Definitive sensitivity no-go: eta exactly proportional to the transport prefacto
 - `docs/DM_VW_DERIVATION_NOTE.md` — v_w derivation claiming NOT IMPORTED while using imported R_NP — flag carried.
 - `docs/ETA_FROM_FRAMEWORK_NOTE.md` — Six-input eta scorecard; its insensitivity framing is what 402 falsifies.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-At the framework's own central transport values eta ~ 2.4e-7, about 400x larger than eta_obs = 6.1e-10, giving R ~ 0.01 rather than ~5.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: At the framework's own central transport values eta ~ 2.4e-7, about 400x larger than eta_obs = 6.1e-10, giving R ~ 0.01 rather than ~5.
+- Supersession (as known at extraction): Declares itself the definitive sensitivity analysis and supersedes any claim that R is insensitive to transport uncertainties.
 
 ## Audit fields
 

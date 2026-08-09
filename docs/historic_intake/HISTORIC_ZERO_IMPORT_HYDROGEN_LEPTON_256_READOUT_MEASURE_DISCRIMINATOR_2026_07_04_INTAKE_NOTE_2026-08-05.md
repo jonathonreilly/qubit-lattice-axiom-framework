@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,16 +37,20 @@ The 1/16-vs-1/256 fork root: projection/Born trace gives 1/16; algebra-basis coe
 - git blob: `21086e81d45e9990c52e667bfbf2eb88c1185a79`
 - sha256: `d5d5d8d0d7b09b3986dc72fe9df421f888cc4615921c91263a21d91676c66822`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2664_ZERO_IMPORT_HYDROGEN_LEPTON_256_READOUT_MEASURE_DISCRIMINATOR_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch08/2664_ZERO_IMPORT_HYDROGEN_LEPTON_256_READOUT_MEASURE_DISCRIMINATOR_2026-07-04.md)
-- Lines: 273; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_readout_measure_discriminator(.py)`
+- Lines: 273; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_lepton_256_readout_measure_discriminator​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/ZERO_IMPORT_HYDROGEN_LEPTON_256_L1_SOURCE_NORM_DISCRIMINATOR_2026-07-04.md` — First independent 1/16-not-1/256 finding (RN/Fisher/HS normalization).
 - `docs/ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_ACTION_SIMPLEX_TRANSFER_DISCRIMINATOR_2026-07-04.md` — Third independent 1/16 finding (top/RN/Fisher transfer).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Root of the '1/16 versus 1/256' fork; refined by 2654, 2658, 2672. Source sub-ladder: F-clause 2651 / L-clause 2655 / P-clause 2661 / R-clause 2668 (each a TERMINAL) -> exact source singleton TERMINAL 2639 -> K4 terminal 2505; route selection 2667.
 
 ## Audit fields
 

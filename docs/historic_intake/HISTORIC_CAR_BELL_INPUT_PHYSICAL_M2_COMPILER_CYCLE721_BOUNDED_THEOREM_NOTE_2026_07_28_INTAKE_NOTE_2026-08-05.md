@@ -35,15 +35,19 @@ Real bounded theorem: the doubled even-CAR Bell family compiles to literal H;con
 - git blob: `a4dace76b2a2c978b8595a5e312af8fe1a23f156`
 - sha256: `5f4f389c3f16c0ca7adfbae43d2aabd04880e638c8de5284e07f4b80170e67be`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3075_CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/recovery/3075_CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 379; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_tournament_independent_adversary_2026_07_28(.py)`
+- Lines: 379; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_cycle721_tournament_independent_adversary_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Notes a design-history record that a bare global-Jordan-Wigner input register was rejected before certification, explicitly labeled an untested design decision rather than a route falsification.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Notes a design-history record that a bare global-Jordan-Wigner input register was rejected before certification, explicitly labeled an untested design decision rather than a route falsification.
+- Supersession (as known at extraction): Supersedes the Cycle-720 receipt flag input_Bell_measurement_physical_M2_compiled (false to true) and satisfies the Cycle-720 downstream gate at this package's resolution.
 
 ## Audit fields
 

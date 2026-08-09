@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Little-groups REFUTATION: all 48 Oh elements are realized, so the eta-phase D2h 
 - git blob: `40993feeb8bda0509420c473081c8b045517b67c`
 - sha256: `53328f2758f04f5c6d87175b620375e42605042f6613fc68414b511f5b077444`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/621_GENERATION_LITTLE_GROUPS_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/621_GENERATION_LITTLE_GROUPS_NOTE.md)
-- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_little_groups(.py)`
+- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_little_groups​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly retracts a prior lane claim as an artifact of restricting to diagonal gauge transformations.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly retracts a prior lane claim as an artifact of restricting to diagonal gauge transformations.
+- Supersession (as known at extraction): SUPERSEDES any earlier claim that eta phases break Oh to D2h in a way that distinguishes the X points - the earlier result was correct only for diagonal-gauge transformations and missed the off-diagonal taste unitaries.
 
 ## Audit fields
 

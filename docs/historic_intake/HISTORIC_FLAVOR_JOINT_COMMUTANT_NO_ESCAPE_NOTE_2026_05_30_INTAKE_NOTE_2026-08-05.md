@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Joint-commutant no-escape: the realized point group is S_3 and the anticommuting
 - git blob: `f4b4fe61ac4f3bc4d41c5db4a38a2cd7a93e8468`
 - sha256: `1271e147f52ddadb8319caaf8da45b7e6439718aa5877ff4729cb28bfc7c6b8b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/484_FLAVOR_JOINT_COMMUTANT_NO_ESCAPE_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch02/484_FLAVOR_JOINT_COMMUTANT_NO_ESCAPE_NOTE_2026-05-30.md)
-- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_joint_commutant_no_escape_2026_05_30(.py)`
+- Lines: 40; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_joint_commutant_no_escape_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Closes the open gap flagged by FLAVOR_CHIRAL_IMPORT_VERDICT_NOTE_2026-05-30 (idx 477) and strengthens the retained koide_z3_equivariant_anticommuting_no_go from C_3-equivariant to all native operators.
 
 ## Audit fields
 

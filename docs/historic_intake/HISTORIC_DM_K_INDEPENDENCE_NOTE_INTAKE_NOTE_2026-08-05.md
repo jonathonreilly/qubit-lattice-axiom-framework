@@ -35,15 +35,19 @@ k-independence theorem: curvature term 1.2e-29 of radiation at T_F — removes t
 - git blob: `5209addd8f606d540e357fdaef20e244d18e215b`
 - sha256: `4dff5f30cc7f16286de5545628fc5c97d5aba605a7b404bc847a93937db945be`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/367_DM_K_INDEPENDENCE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/367_DM_K_INDEPENDENCE_NOTE.md)
-- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_k_independence(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton(.py)`
+- Lines: 63; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_k_independence​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_friedmann_from_newton​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Retires check 11 (k=0 flatness) of frontier_dm_friedmann_from_newton​.py.
 
 ## Audit fields
 

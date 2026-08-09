@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,19 +37,23 @@ Best-practice pre-registered negative: a three-layer hypothesis (structural uniq
 - git blob: `c269c2b11e86f3586056f5d87d56513722f80ab2`
 - sha256: `16f775a57fb098780c83190238225d61ecbe6d520efadd8220ef458b6c9b745b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10100_charged-lepton-mass-hierarchy-from-hw1-observable.md](../../archive_unlanded/historic_intake_originals/packsci01/10100_charged-lepton-mass-hierarchy-from-hw1-observable.md)
-- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_observable_curvature.py (proposed target)`
+- Lines: 168; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_charged_lepton_observable_curvature​.py (proposed target)`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/hypotheses/charged-lepton-mass-vector-from-hw1-observable.md` — 242-line near-duplicate variant of the same pre-registered hypothesis with nine proposed experiments; the systematic-budget escape named.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10256](HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — Best-practice pre-registered negative: a three-layer hypothesis (structural uniqueness of the ray; exact algebraic Koide Q=2/3; residual ratio fixed as an algebraic function) resolved NEGATIVELY with its falsifiers honored; the charged-lepton sector closes by observational pin at that era; three sharply-named missing primitives left for any future positive route. Negative side of the contradiction set with the April A_min-to-Q chain.
+- Attaches across strata to idx 10256 (`.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/PR_BODY_BLOCK01.md`, stratum packsci01) — Best-practice pre-registered negative: a three-layer hypothesis (structural uniqueness of the ray; exact algebraic Koide Q=2/3; residual ratio fixed as an algebraic function) resolved NEGATIVELY with its falsifiers honored; the charged-lepton sector closes by observational pin at that era; three sharply-named missing primitives left for any future positive route. Negative side of the contradiction set with the April A_min-to-Q chain.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Best-practice example in this stratum: falsifiers and nulls were written BEFORE the result and the hypothesis was then reported as failing. Note the tension with idx 10010's opening paragraph, which reads as a positive Koide derivation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Best-practice example in this stratum: falsifiers and nulls were written BEFORE the result and the hypothesis was then reported as failing. Note the tension with idx 10010's opening paragraph, which reads as a positive Koide derivation.
+- Supersession (as known at extraction): Pairs with .claude/science/derivations/charged-lepton-koide-cone-2026-04-17.md (idx 10010) as the derivation chain and CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md as the consolidated review package.
 
 ## Audit fields
 
@@ -57,6 +63,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_negative_result
 intake_directive: owner_2026-08-05
+contradicts:
+- "HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

@@ -35,16 +35,20 @@ Exact re-implementation (22/22 reproduced) showing the 0.20 theta floor — load
 - git blob: `690197848d7625d109b735f5844969551ef86842`
 - sha256: `7d635142e8c4beaf66ca360fbae05f8db69910d94e68ea21b575055e7c7c7dce`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/299_DEPOSITION_REPRODUCED_FLOOR_GRID_ARTIFACT_CYCLE920_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/299_DEPOSITION_REPRODUCED_FLOOR_GRID_ARTIFACT_CYCLE920_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 177; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle920_deposition_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle920_deposition_reaudit_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle920_deposition_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle920_deposition_reaudit_2026_07_28(.py)`
+- Lines: 177; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle920_deposition_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle920_deposition_reaudit_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle920_deposition_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle920_deposition_reaudit_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md` — Deposition-constant bracketing synthesis.
 - `docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md` — kappa(theta) yield measurement with the floor finding.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A load-bearing floor used across the lineage turns out to be an artifact of the swept grid; the criterion's namesake quantity cancels out of its own definition.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A load-bearing floor used across the lineage turns out to be an artifact of the swept grid; the criterion's namesake quantity cancels out of its own definition.
+- Supersession (as known at extraction): Re-audits the 2026-07-08 deposition comparator and corrects the lineage's 0.20 floor reading.
 
 ## Audit fields
 

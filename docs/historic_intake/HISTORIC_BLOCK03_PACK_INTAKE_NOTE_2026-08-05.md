@@ -36,18 +36,22 @@ The positive-side conditional for the same adjudication: a conditional theorem c
 - sha256: `10fa8f514db22697da70a39900b8f1e2a3b9d865abfbcf30673865fa21b741b3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10579_BLOCK03_PACK.md](../../archive_unlanded/historic_intake_originals/packsci02/10579_BLOCK03_PACK.md)
 - Lines: 92; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — The positive-side conditional for the same adjudication: a conditional theorem chain making r=1/2 the unique durably registrable value, conditional on the named R-D bridge (which remains unadopted per the owner record); cluster-cap verdict OPEN, genuinely new content. Pulled so the audit sees the strongest surviving r=1/2 route next to the r=1 catalogue.
+- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — The positive-side conditional for the same adjudication: a conditional theorem chain making r=1/2 the unique durably registrable value, conditional on the named R-D bridge (which remains unadopted per the owner record); cluster-cap verdict OPEN, genuinely new content. Pulled so the audit sees the strongest surviving r=1/2 route next to the r=1 catalogue.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly relevant to the memory note that the R-D bridge is UNADOPTED — this pack is where the R-D-versus-orbit-occupancy equivalence question was first posed to the owner. Also records that its own interface checks initially failed on hard-wrapped source lines and that an equipartition check initially solved for a composite expression.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly relevant to the memory note that the R-D bridge is UNADOPTED — this pack is where the R-D-versus-orbit-occupancy equivalence question was first posed to the owner. Also records that its own interface checks initially failed on hard-wrapped source lines and that an equipartition check initially solved for a composite expression.
+- Supersession (as known at extraction): Targets the admitted prong (ii) of charged_lepton_koide_value_full_chain_of_custody_2026-06-02 and the stabilizer-fails verdict; distinct from PRs #3551 and #3553 (blocks 01/02).
 
 ## Audit fields
 
@@ -57,6 +61,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_conditional_theorem
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

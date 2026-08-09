@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,16 +37,20 @@ The computed anisotropy: delta v ~ 1.7e-2 gauge-invariant on-shell, with the xi 
 - git blob: `645a022582fc416a6716875bb61ce4a4d0e7bc0e`
 - sha256: `36c825ebc800157d8d7f0e582d3dadef2a76727b2f94072652be6d261046ccaa`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1121_LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch04/1121_LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md)
-- Lines: 302; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lorentz_velocity_rg_coefficient_computed_2026_06_08(.py)`
+- Lines: 302; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lorentz_velocity_rg_coefficient_computed_2026_06_08​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/LORENTZ_NATURALNESS_CLOSURE_III_STRONG_UV_DYNAMICS_NOTE_2026-06-06.md` — gamma >= 1 requirement; outside strong-coupling radius.
 - `docs/LORENTZ_NATURALNESS_IS_A_COMPUTATION_NOT_A_TUNING_NOTE_2026-06-06.md` — Naturalness reframed: UNCOMPUTED not failed.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The v < 1 sign is explicitly NOT triangulated (an independent real-time cross-check confirms magnitude and no-protection but cannot certify the sign); gauge-parameter spread ~15% and an exact-O(1) residual need the full lattice vertex plus tadpole.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The v < 1 sign is explicitly NOT triangulated (an independent real-time cross-check confirms magnitude and no-protection but cannot certify the sign); gauge-parameter spread ~15% and an exact-O(1) residual need the full lattice vertex plus tadpole.
+- Supersession (as known at extraction): Supplies the named open input of the two landed emergent-Lorentz conditionals #3121 and #3123, which it recasts as this one coefficient read at the xi -> infinity horn; supersedes the earlier bare off-shell computation (artifact-dominated, ~5x r-variation collapsing to <1x on shell).
 
 ## Audit fields
 

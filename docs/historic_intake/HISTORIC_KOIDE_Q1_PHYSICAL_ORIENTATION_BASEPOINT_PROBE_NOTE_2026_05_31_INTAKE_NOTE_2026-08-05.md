@@ -35,15 +35,19 @@ P_ORIENT advanced: the bridge generator g IS the proper spatial C_3[111] rotatio
 - git blob: `97080c196b19b932ba56fa878164eea9194e060c`
 - sha256: `cb2387501d643bbe749df2befe540e391284f494afc21f0db5c2a24a90a8239f`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/903_KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md](../../archive_unlanded/historic_intake_originals/branch03/903_KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md)
-- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_physical_orientation_basepoint_probe(.py)`
+- Lines: 158; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_q1_physical_orientation_basepoint_probe​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Advances the P_ORIENT half of the last-mile cascade from 'convention' to 'bounded support' while leaving its closure open.
 
 ## Audit fields
 

@@ -35,16 +35,20 @@ The review that reduces operational-quotient descent to one physical question (a
 - git blob: `ddc6983992c415181012100e9d2cb40b13a962eb`
 - sha256: `0103f8eff5a4e64bc151a0a7a5a3bbe454fe00b28c270da64efb1bc194f851f9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/879_KOIDE_OPERATIONAL_QUOTIENT_DESCENT_NATURE_REVIEW_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch03/879_KOIDE_OPERATIONAL_QUOTIENT_DESCENT_NATURE_REVIEW_NOTE_2026-04-24.md)
-- Lines: 80; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_operational_quotient_descent_nature_review(.py)`
+- Lines: 80; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_operational_quotient_descent_nature_review​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_OPERATIONAL_QUOTIENT_DESCENT_CLOSURE_THEOREM_NOTE_2026-04-24.md` — The descent theorem under the new law.
 - `docs/KOIDE_OPERATIONAL_QUOTIENT_LAWS_CANDIDATE_NOTE_2026-04-24.md` — The candidate stage; 'missing primitive renamed' conceded.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Reviews the same-date descent closure theorem and preserves its retained-only-open boundary.
 
 ## Audit fields
 

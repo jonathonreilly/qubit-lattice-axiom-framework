@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,6 +38,7 @@ Seven-angle exhaustion of Resolution A on the lattice-to-continuum plaquette obs
 - sha256: `03739a48465951931c233e08c71e4f208a219c8350bef6dc0bcba3f630af9bb8`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/124_BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md](../../archive_unlanded/historic_intake_originals/branch01/124_BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md)
 - Lines: 263; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +46,12 @@ Seven-angle exhaustion of Resolution A on the lattice-to-continuum plaquette obs
 - `docs/DIRECTED_CELL_BOUNDARY_CLUSTER_THEOREM_NOTE.md` — Exact local directed-cell theorem; plaquette-route component.
 - `docs/DIRECTED_CELL_BOUNDARY_STATE_TRANSFER_NOTE.md` — Boundary-shellable undercount no-go; one of the exhausted angles.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Consolidates seven sister negative-evidence notes under the parent cluster-obstruction note.
 
 ## Audit fields
 

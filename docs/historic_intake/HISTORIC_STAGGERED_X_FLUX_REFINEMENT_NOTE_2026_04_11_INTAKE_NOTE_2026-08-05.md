@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ The honest hold: x-flux 45/45 is a sign gate only (R^2 ~ 0.007), the impulse is 
 - sha256: `68faf45389d3dfae22bdfb7338e46c2fee520d1b99247a226f85493ba557216a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1983_STAGGERED_X_FLUX_REFINEMENT_NOTE_2026-04-11.md](../../archive_unlanded/historic_intake_originals/branch06/1983_STAGGERED_X_FLUX_REFINEMENT_NOTE_2026-04-11.md)
 - Lines: 85; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/STAGGERED_TWO_BODY_XFLUX_REFINED_NOTE.md` — The same run framed as an upgrade — flag carried.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Reports the same run as idx 1982 without new computation; sourced from a historical commit rather than a rerun.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Reports the same run as idx 1982 without new computation; sourced from a historical commit rather than a rerun.
+- Supersession (as known at extraction): Duplicate-content successor to idx 1982 (same numbers, conservative re-reading); FAMILY TERMINAL for the staggered two-body observable chain.
 
 ## Audit fields
 

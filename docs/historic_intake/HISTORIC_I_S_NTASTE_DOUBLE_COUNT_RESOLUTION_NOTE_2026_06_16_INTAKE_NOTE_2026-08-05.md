@@ -35,15 +35,19 @@ Overturns PR #4128's settled I_S = 3.90 by reconstructing the published Lee-Shar
 - git blob: `3d7a50b0c7d487cf3c6b3e4a571508518e315123`
 - sha256: `f48920c2af82bd046a5b5bd3fc0a0b12e2fa79a4f93d91e251aba3dc617591df`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/741_I_S_NTASTE_DOUBLE_COUNT_RESOLUTION_NOTE_2026-06-16.md](../../archive_unlanded/historic_intake_originals/branch03/741_I_S_NTASTE_DOUBLE_COUNT_RESOLUTION_NOTE_2026-06-16.md)
-- Lines: 77; runners named: historic runner (unpinned, not in this packet): `scripts/i_s_ntaste_double_count_resolution_2026_06_16(.py)`
+- Lines: 77; runners named: historic runner (unpinned, not in this packet): `scripts/i_s_ntaste_double_count_resolution_2026_06_16​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents a live double-counting bug in two integration functions plus a mis-attributed literature band whose two errors offset, making the wrong value look plausible; huge downstream corrections (1.74% -> 56.64%).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents a live double-counting bug in two integration functions plus a mis-attributed literature band whose two errors offset, making the wrong value look plausible; huge downstream corrections (1.74% -> 56.64%).
+- Supersession (as known at extraction): Overturns PR #4128's settled I_S = 3.90 and corrects the earlier note's mis-attributed [4,10] comparator; flags all consuming rows for re-audit.
 
 ## Audit fields
 

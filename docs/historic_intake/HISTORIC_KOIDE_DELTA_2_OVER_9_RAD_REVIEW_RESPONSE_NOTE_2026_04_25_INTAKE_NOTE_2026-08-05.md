@@ -35,16 +35,20 @@ The same-day hostile-review downgrade of the delta=2/9 'Final Closure': four blo
 - git blob: `3e84a62d3baee8064b383639510a1e82969f8866`
 - sha256: `ba45342f428c4cb54cdcf2d9ad1cfc1ac2de99dde5345c24f4aa8f32843eead5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/773_KOIDE_DELTA_2_OVER_9_RAD_REVIEW_RESPONSE_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch03/773_KOIDE_DELTA_2_OVER_9_RAD_REVIEW_RESPONSE_NOTE_2026-04-25.md)
-- Lines: 291; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_delta_2_over_9_rad_final_closure(.py)`
+- Lines: 291; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_delta_2_over_9_rad_final_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_DELTA_2_OVER_9_CHAIN_AUDIT_NOTE_2026-04-25.md` — Five-step chain map.
 - `docs/KOIDE_DELTA_2_OVER_9_RAD_FINAL_CLOSURE_NOTE_2026-04-25.md` — The 'Final Closure' claim retracted same-day — rides its downgrade.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that the branch repeated an overclaim pattern already flagged in an earlier review of a V1 attempt; runners remain passing but their scope labels were wrong.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that the branch repeated an overclaim pattern already flagged in an earlier review of a V1 attempt; runners remain passing but their scope labels were wrong.
+- Supersession (as known at extraction): Status correction that downgrades KOIDE_DELTA_2_OVER_9_RAD_FINAL_CLOSURE_NOTE_2026-04-25 and the Q-closure-via-OP-locality note from full to conditional closure; reads as the terminal note of this delta = 2/9 sub-chain.
 
 ## Audit fields
 

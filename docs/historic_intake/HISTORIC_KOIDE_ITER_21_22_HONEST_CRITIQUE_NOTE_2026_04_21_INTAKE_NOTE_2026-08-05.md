@@ -36,14 +36,18 @@ The honest downgrade: 'I5 angles RETAINED-DERIVED' reduced to 'FIT retained (Q, 
 - sha256: `e1a60ee77059c95926143eec015c238fd4f0f43d423c4b32713e7b944bb4ecfa`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/863_KOIDE_ITER_21_22_HONEST_CRITIQUE_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/863_KOIDE_ITER_21_22_HONEST_CRITIQUE_NOTE_2026-04-21.md)
 - Lines: 180; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_ITER11_HONEST_REVISION_NOTE_2026-04-21.md` — Iteration-11 withdrawal (basis confusion).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A second self-correction in the same branch, this time of overclaiming language in a status note that was already being proposed for promotion.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A second self-correction in the same branch, this time of overclaiming language in a status note that was already being proposed for promotion.
+- Supersession (as known at extraction): Downgrades the language of the iteration-22/23 master status notes (V3); contrasts itself with the iteration-11/12 revision as a language overreach rather than a factual error.
 
 ## Audit fields
 

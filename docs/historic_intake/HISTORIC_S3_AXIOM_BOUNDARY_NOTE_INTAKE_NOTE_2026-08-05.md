@@ -1,6 +1,6 @@
-# Historic intake: S^3 Axiom Boundary: Reduces to the Same A5 as Generation Physicality
+# Historic intake: S^3 Axiom Boundary: Reduces to the Same Lattice-Is-Physical Axiom as Generation Physicality
 
-Explicit subject: PASS=29 FAIL=0: the S^3 compactification lane is bounded by exactly one irreducible axiom A5 (lattice-is-physical), the same axiom bounding generation physicality; with A5 the 14-step chain (ball growth -> cone-cap -> all links S^2 -> pi_1=0 -> Perelman+Moise) forces S^3 with no ... (The bare code `A5` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: PASS=29 FAIL=0: the S^3 compactification lane is bounded by exactly one irreducible axiom A5 (lattice-is-physical), the same axiom bounding generation physicality; with A5 the 14-step chain (ball growth -> cone-cap -> all links S^2 -> pi_1=0 -> Perelman+Moise) forces S^3 with no ... (Historic code `A5`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ The S^3 axiom-boundary theorem: the lane bounded by exactly A5 (29/29), same axi
 - git blob: `09ce77842927b8990072864f651b90c13824749d`
 - sha256: `6607c26d804f9a52c92dbc1bd00f4088cd3459304e7e8a3434bf28e369b10ec9`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1846_S3_AXIOM_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/1846_S3_AXIOM_BOUNDARY_NOTE.md)
-- Lines: 159; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_axiom_boundary(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_axiom_boundary(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_cap_link_formal(.py)`
+- Lines: 159; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_s3_axiom_boundary​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_generation_axiom_boundary​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_s3_cap_link_formal​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Unifies the bounded status of the S^3 and generation lanes; FAMILY TERMINAL for the 'what bounds S^3' question.
 
 ## Audit fields
 

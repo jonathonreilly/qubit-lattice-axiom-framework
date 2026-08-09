@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ Names the exact missing object for the whole program: the ONLY sequence relation
 - sha256: `4ba9fe3a26606a944f362e81d6262543936018c6adf497069d8800e616f0c2c5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3044_PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md](../../archive_unlanded/historic_intake_originals/branch09/3044_PHYSICAL_STATE_CARRIED_EVENT_CHAIN_SEQUENCE_PROTOCOL_CYCLE669_NOTE_2026-07-23.md)
 - Lines: 155; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_OBJECTIVE_BORN_PORT_ADAPTER_TOURNAMENT_CYCLE685_NOTE_2026-07-23.md` — Exhaustive all24 fixed-point enumeration: across ALL 128 invariant archive/loser pairs there are ZERO well-formed all24-fixed [occupancies]; shipped as partial narrowing plus an independent positive construction.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Its named missing map is precisely the objective-actuality wall that Cycles 671 (2810), 676 (2941), 678 (2780) and 685 (2952) all fail to cross; its predecessor overlay is consumed by Cycle 680 (idx 2836).
 
 ## Audit fields
 

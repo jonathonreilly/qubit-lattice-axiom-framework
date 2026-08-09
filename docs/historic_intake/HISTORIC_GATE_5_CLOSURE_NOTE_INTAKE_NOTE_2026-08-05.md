@@ -35,15 +35,19 @@ Gate-5 honest verdict: the DM ratio is structural consistency, not first-princip
 - git blob: `8f4c8b7786ab6cf7c6ee839189f23c3d4fd78ea3`
 - sha256: `b67a620449446c9598191591c0c89de0b71d79b3055bd11e219890b4c3d7034b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/557_GATE_5_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/557_GATE_5_CLOSURE_NOTE.md)
-- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_ratio_sommerfeld(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_freezeout_from_lattice(.py)`
+- Lines: 94; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_ratio_sommerfeld​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_freezeout_from_lattice​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Defends imported machinery by analogy to other DM models rather than deriving it; the honest boundary is drawn to place Boltzmann and Friedmann outside the claim.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Defends imported machinery by analogy to other DM models rather than deriving it; the honest boundary is drawn to place Boltzmann and Friedmann outside the claim.
+- Supersession (as known at extraction): Its 'universal cosmology' framing is what the later DM notes (DM_DIRECT_BOLTZMANN idx 347, DM_STOSSZAHLANSATZ_THEOREM idx 405) try to replace with lattice derivations.
 
 ## Audit fields
 

@@ -1,6 +1,6 @@
-# Historic intake: Sylvester-Linear-Path Theorem for the P3 Branch-Choice Admissibility Rule - Candidate Retention Note
+# Historic intake: Sylvester-Linear-Path Theorem for the Branch-Choice Admissibility Rule - Candidate Retention Note
 
-Explicit subject: Along H(t) = H_base + t J_* for t in [0,1] the determinant stays positive (min det H(t) ~ +0.876 at t ~ 0.78, det H_base = 32 sqrt(2)/9 ~ +5.0283, det H_pin ~ +0.9592), so by Sylvester's law of inertia signature(H_base + J_*) = signature(H_base) = (2,0,1) and the imposed ... (The bare code `P3` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: Along H(t) = H_base + t J_* for t in [0,1] the determinant stays positive (min det H(t) ~ +0.876 at t ~ 0.78, det H_base = 32 sqrt(2)/9 ~ +5.0283, det H_pin ~ +0.9592), so by Sylvester's law of inertia signature(H_base + J_*) = signature(H_base) = (2,0,1) and the imposed ... (Historic code `P3`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ Sylvester-inertia branch theorem discharging the selector-admissibility conditio
 - git blob: `4c9deb0babc9c0670ed2cb18f8927bd64c15bc51`
 - sha256: `305937f04ed5180db7dc37e77f743db488b09928850616e335313177a437d249`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/359_DM_FLAGSHIP_PATH_A_SYLVESTER_BRANCH_THEOREM_NOTE_2026-04-18.md](../../archive_unlanded/historic_intake_originals/branch02/359_DM_FLAGSHIP_PATH_A_SYLVESTER_BRANCH_THEOREM_NOTE_2026-04-18.md)
-- Lines: 239; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem(.py)`
+- Lines: 239; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The pin itself is fixed by observational promotion (matching 9/9 NuFit 5.3 NO 3-sigma bands), so the theorem is local to an observationally-selected point.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The pin itself is fixed by observational promotion (matching 9/9 NuFit 5.3 NO 3-sigma bands), so the theorem is local to an observationally-selected point.
+- Supersession (as known at extraction): Promotes and retires the imposed branch-choice admissibility rule of PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md.
 
 ## Audit fields
 

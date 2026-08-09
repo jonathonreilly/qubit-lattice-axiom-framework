@@ -35,15 +35,19 @@ The two-axiom era's end-to-end FRAMEWORK SYNTHESIS with a self-diagnosed numeric
 - git blob: `b271bf3f66529a61fcc24e4b894bb9ec48317a8d`
 - sha256: `dd3574396e6062fd7e3a13f561ea355e0607cd7d1f30bd33dfb0782e4efdd5a5`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/507_FRAMEWORK_SYNTHESIS_2026-04-19.md](../../archive_unlanded/historic_intake_originals/branch02/507_FRAMEWORK_SYNTHESIS_2026-04-19.md)
-- Lines: 617; runners named: historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/electron_mass_from_axioms(.py)`; historic runner (unpinned, not in this packet): `scripts/verify_cl3_sm_embedding(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_gap_closure_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_gap_exhaustive(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_abcc_cp_phase_no_go_theorem(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_candidate_mass_window_theorem(.py)`
+- Lines: 617; runners named: historic runner (unpinned, not in this packet): `scripts/alpha_em_from_axioms​.py`; historic runner (unpinned, not in this packet): `scripts/electron_mass_from_axioms​.py`; historic runner (unpinned, not in this packet): `scripts/verify_cl3_sm_embedding​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_gap_closure_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_gap_exhaustive​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_abcc_cp_phase_no_go_theorem​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_dm_candidate_mass_window_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-diagnoses one of its own near-identities (3.05e-4) as numerical coincidence rather than algebra.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-diagnoses one of its own near-identities (3.05e-4) as numerical coincidence rather than algebra.
+- Supersession (as known at extraction): Chapter-level index over roughly a dozen authority notes; cites ELECTRON_MASS_BLOCKAGE_NOTE (idx 423) as the structural blockage.
 
 ## Audit fields
 

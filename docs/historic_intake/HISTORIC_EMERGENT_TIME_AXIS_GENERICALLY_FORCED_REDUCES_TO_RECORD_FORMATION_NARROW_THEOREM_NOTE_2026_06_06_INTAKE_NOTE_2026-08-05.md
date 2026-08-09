@@ -35,15 +35,19 @@ The time axis generically forced given R1 (records form): additive record count 
 - git blob: `77b630ea82cdff08dc727485a554e8629a49829d`
 - sha256: `f3592806d35400bb1eaf8944f47ce60efdc0407561d383fb1336dc0a27e9316c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/430_EMERGENT_TIME_AXIS_GENERICALLY_FORCED_REDUCES_TO_RECORD_FORMATION_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch02/430_EMERGENT_TIME_AXIS_GENERICALLY_FORCED_REDUCES_TO_RECORD_FORMATION_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/emergent_time_axis_generically_forced_runner(.py)`
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/emergent_time_axis_generically_forced_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Two named irreducible residuals: A_min has no dynamics axiom (the problem-of-time core), and the future orientation is not records-sourced since counts are word-reversal invariant.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Two named irreducible residuals: A_min has no dynamics axiom (the problem-of-time core), and the future orientation is not records-sourced since counts are word-reversal invariant.
+- Supersession (as known at extraction): Resolves the structure of the open object left by the single-clock relocation result; leans on ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL (retained_bounded) and defers orientation to POST_RECORD_ARROW_ORIENTATION_FIREWALL (retained_no_go).
 
 ## Audit fields
 

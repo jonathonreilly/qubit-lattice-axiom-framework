@@ -35,15 +35,19 @@ The Q-gate's differential-geometric localization: the native action supplies J a
 - git blob: `9c00e898421c3d10017f4e7f7c825303200472e6`
 - sha256: `083cb28711f7a1ca1c79681bf25723d0a1a140a469a1f31e4c8e5fc1bf085d36`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/850_KOIDE_GENERATION_HERMITIAN_NOT_KAHLER_NOTE_2026-05-30.md](../../archive_unlanded/historic_intake_originals/branch03/850_KOIDE_GENERATION_HERMITIAN_NOT_KAHLER_NOTE_2026-05-30.md)
-- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_generation_hermitian_not_kahler_2026_05_30(.py)`
+- Lines: 106; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_generation_hermitian_not_kahler_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-States plainly that the retained surface implies Q = 1 while observation gives 2/3, i.e. the retained action is known to be incomplete.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: States plainly that the retained surface implies Q = 1 while observation gives 2/3, i.e. the retained action is known to be incomplete.
+- Supersession (as known at extraction): Replaces the diffuse 'which measure / which counting rule' framing of the charged-lepton value with one exact statement about whether the generation sector is Kahler; the same missing omega is the grading the generation-identification chirality gate needs.
 
 ## Audit fields
 

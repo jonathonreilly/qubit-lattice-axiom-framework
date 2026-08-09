@@ -35,15 +35,19 @@ Generic finite-support Schur bridge: any PSD support yields one renormalized har
 - git blob: `903b7b2c42e911b85dbd61af9fc263f1e6d8b47f`
 - sha256: `4494714462037047b77172d6612f4653ea1f7d6239f4acfe06af1f20a7fb178c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/634_GENERIC_FINITE_SUPPORT_SCHUR_BRIDGE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/634_GENERIC_FINITE_SUPPORT_SCHUR_BRIDGE_NOTE.md)
-- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generic_finite_support_schur_bridge(.py)`
+- Lines: 113; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generic_finite_support_schur_bridge​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/GENERIC_LOCAL_BRIDGE_UNIQUENESS_NOTE.md` — Local-bridge uniqueness; sampled-deformation caveat.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Lists three things it explicitly does not close: beyond the static conformal bridge, noncompact/long-range supports, and fully general nonlinear GR.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Lists three things it explicitly does not close: beyond the static conformal bridge, noncompact/long-range supports, and fully general nonlinear GR.
+- Supersession (as known at extraction): Widens the earlier star-supported finite-rank bridge result; immediate predecessor to the local-bridge uniqueness note (idx 635), which closes the companion nonlinear escape hatch on the same class.
 
 ## Audit fields
 

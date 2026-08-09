@@ -36,6 +36,7 @@ The hostile m_t probe: the flagship -1.84% agreement is overstated two ways — 
 - sha256: `b9f31a8658dfbc1f48d253c1635de5df1269d8efdacdaf2a10db5bd95f1090e2`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/1906_SCALE_AXIS_TOPMASS_HOSTILE_PROBE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/1906_SCALE_AXIS_TOPMASS_HOSTILE_PROBE_2026-06-05.md)
 - Lines: 189; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The hostile m_t probe: the flagship -1.84% agreement is overstated two ways — 
 - `docs/SCALE_AXIS_LIT_PROBE_2026-06-05.md` — Scale-axis audit companion.
 - `docs/SCALE_AXIS_PER_SECTOR_SCALES_SCOPING_2026-06-05.md` — Scale-axis audit companion.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Shows the flagship -1.84% agreement is scheme-naive and extremely sensitive to alpha_bare (a 2% shift spans 121-235 GeV).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Shows the flagship -1.84% agreement is scheme-naive and extremely sensitive to alpha_bare (a 2% shift spans 121-235 GeV).
+- Supersession (as known at extraction): Breaks the top-mass synthesis at the owner's request, downgrading its headline precision claim.
 
 ## Audit fields
 

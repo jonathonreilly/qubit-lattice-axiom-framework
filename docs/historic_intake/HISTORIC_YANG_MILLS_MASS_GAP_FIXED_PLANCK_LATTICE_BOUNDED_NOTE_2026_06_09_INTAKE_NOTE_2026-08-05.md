@@ -35,15 +35,19 @@ Rigorous existence at fixed a (compact-group convergence + strong-coupling gap) 
 - git blob: `89364133bc78c59b551c25625d9c3d5d43f5d8b0`
 - sha256: `00771f7f6829e05dc946e839e5d60e90cebbccb5838b35f0c7c64e2fcc1bc1aa`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2137_YANG_MILLS_MASS_GAP_FIXED_PLANCK_LATTICE_BOUNDED_NOTE_2026-06-09.md](../../archive_unlanded/historic_intake_originals/branch07/2137_YANG_MILLS_MASS_GAP_FIXED_PLANCK_LATTICE_BOUNDED_NOTE_2026-06-09.md)
-- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yang_mills_gap_fixed_planck_lattice_2026_06_09(.py)`
+- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yang_mills_gap_fixed_planck_lattice_2026_06_09​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Title invokes the Yang-Mills mass gap; the note itself opens with a bold disclaimer that it does NOT solve the Clay problem and names the beta = 6 gap as unproven — the disclaimer is prominent, so the risk is downstream citation of the title alone.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Title invokes the Yang-Mills mass gap; the note itself opens with a bold disclaimer that it does NOT solve the Clay problem and names the beta = 6 gap as unproven — the disclaimer is prominent, so the risk is downstream citation of the title alone.
+- Supersession (as known at extraction): Reframing note over the existing scale-reference and kinetic-isotropy primitives; sets no audit status and promotes no dependency.
 
 ## Audit fields
 

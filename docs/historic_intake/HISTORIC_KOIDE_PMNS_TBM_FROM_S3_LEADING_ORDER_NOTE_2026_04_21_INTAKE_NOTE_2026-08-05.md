@@ -35,15 +35,19 @@ S_3-symmetric Majorana + diagonal charged-lepton breaking forces V_TBM exactly �
 - git blob: `727da6c536882ed116be09c18076ff89de763bf1`
 - sha256: `9de7caf4af49bf397effe2b63c37a930b7a38b6e2526ed171ff52eb07e3c5401`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/889_KOIDE_PMNS_TBM_FROM_S3_LEADING_ORDER_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch03/889_KOIDE_PMNS_TBM_FROM_S3_LEADING_ORDER_NOTE_2026-04-21.md)
-- Lines: 172; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_tbm_from_s3(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_c3_spatial_rotation(.py)`
+- Lines: 172; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_pmns_tbm_from_s3​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_c3_spatial_rotation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The load-bearing symmetry ansatz is admitted to be an ansatz, and the note escapes prior no-gos by changing the observable bank.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The load-bearing symmetry ansatz is admitted to be an ansatz, and the note escapes prior no-gos by changing the observable bank.
+- Supersession (as known at extraction): Leading-order base for the iteration-4 deformation conjecture; the S_3-vs-Dirac asymmetry ansatz is flagged as an iteration-5+ target that the loop never closes.
 
 ## Audit fields
 

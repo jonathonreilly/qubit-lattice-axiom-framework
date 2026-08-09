@@ -36,14 +36,18 @@ Clean unlanded positive: candidate-retained-grade bounded two-row theorem closin
 - sha256: `5e72dbc6e2c5d057f2117d4cb87e1d375f62175fb713a29655e2d55dcdaa1e30`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci05/11448_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci05/11448_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 20; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md` — The guard: a hard-coded table matcher would make chosen numerical values the r~[eference] - scope boundary kept.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

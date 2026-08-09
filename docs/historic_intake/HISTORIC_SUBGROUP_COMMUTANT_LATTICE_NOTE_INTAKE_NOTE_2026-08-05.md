@@ -35,7 +35,8 @@ The commutant-dimension reference table for every S_3 subgroup — airtight reus
 - git blob: `5f888b4ce6d9a39d9a60c267af33236e5977f0c6`
 - sha256: `34fa3caf961a00665bf7fae1ab4b89261a14e1e5a780bb9a807fda8d5997b618`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2017_SUBGROUP_COMMUTANT_LATTICE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch06/2017_SUBGROUP_COMMUTANT_LATTICE_NOTE.md)
-- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_subgroup_commutant_lattice(.py)`
+- Lines: 89; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_subgroup_commutant_lattice​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ The commutant-dimension reference table for every S_3 subgroup — airtight reus
 - `docs/S3_INVARIANT_OPERATOR_DIMENSION_NOTE.md` — Commutant/invariant-dimension grind theorem; carried by the table.
 - `docs/S3_INVARIANT_POLYNOMIAL_SUBALGEBRA_NOTE.md` — Commutant/invariant-dimension grind theorem; carried by the table.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): FAMILY TERMINAL for the commutant-dimension sub-chain: compiles Batches 3, 5 and 6 (idx 1866, 1806) into one table.
 
 ## Audit fields
 

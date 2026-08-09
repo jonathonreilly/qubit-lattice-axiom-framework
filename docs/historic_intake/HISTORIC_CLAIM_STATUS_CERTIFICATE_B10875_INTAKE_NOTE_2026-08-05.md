@@ -36,6 +36,7 @@ Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact fi
 - sha256: `e1f828dcc109f9b21260cf1b3ce0d6c8f57a0f8a1f74bdef62b3f1e6af2d33e0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10875_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10875_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 189; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,13 +44,16 @@ Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact fi
 - `.claude/science/physics-loops/retained-promotion-2026-05-02/cycle15-g-weak-from-framework/CLAIM_STATUS_CERTIFICATE.md` — Closes cycle 12's O2 at LATTICE SCALE: y_0_lattice^2 = 1/65536 anchored to g_2_bare; the v-scale residual IS the SU(2) sta~[ndard gap]; honest stop.
 - `.claude/science/physics-loops/retained-promotion-2026-05-02/cycle16-pmns-chart-constants/CLAIM_STATUS_CERTIFICATE.md` — Sub-A gamma = 1/2 is a partial closing derivation; Sub-B/Sub-C are not closures - both rest on supplied constants.
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10388](HISTORIC_NO_GO_LEDGER_B10388_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/dm-leptogenesis-expansion-boundary-repair-20260527/NO_GO_LEDGER.md`, stratum packsci02) — Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact five-factor product (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs with the ABC sub-factor closing to a PURE RATIONAL, and this FALSIFIES four numerical near-fits at 0.025-0.138% that cycle 09 had catalogued as structural origins. Closing Y0^2 removes the only remaining non-rational factor. Chart-constant companions attached; cross-linked to the 0.1888 mismatch pull from packsci02.
+- Attaches across strata to idx 10388 (`.claude/science/physics-loops/dm-leptogenesis-expansion-boundary-repair-20260527/NO_GO_LEDGER.md`, stratum packsci02) — Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact five-factor product (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs with the ABC sub-factor closing to a PURE RATIONAL, and this FALSIFIES four numerical near-fits at 0.025-0.138% that cycle 09 had catalogued as structural origins. Closing Y0^2 removes the only remaining non-rational factor. Chart-constant companions attached; cross-linked to the 0.1888 mismatch pull from packsci02.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-four numerical coincidences at 0.025-0.138% had been catalogued as candidate structural identifications; this is the kind of near-fit that survives casual review
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: four numerical coincidences at 0.025-0.138% had been catalogued as candidate structural identifications; this is the kind of near-fit that survives casual review
+- Supersession (as known at extraction): FALSIFIES four numerical near-fits that cycle 09 had catalogued as candidate structural origins — a correction of prior campaign content.
 
 ## Audit fields
 
@@ -59,6 +63,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_bounded_support_partial_closing_falsification_of_four_prior_near_fits
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_NEGATIVE_LEDGER_B10388_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

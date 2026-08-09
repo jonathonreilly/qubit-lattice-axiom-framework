@@ -36,6 +36,7 @@ Machine-precision pairwise-only result PLUS the mechanism discovery: apparent So
 - sha256: `dec62233266ac68963c1f64e2ee75f88224d8400fb2e8de4a399a1018a8d3db6`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/march/3132_sorkin-fixed-dag-2026-03-30.md](../../archive_unlanded/historic_intake_originals/march/3132_sorkin-fixed-dag-2026-03-30.md)
 - Lines: 45; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ Machine-precision pairwise-only result PLUS the mechanism discovery: apparent So
 - `.claude/science/sanity/sorkin-fixed-dag-2026-03-30.md` — Audit evidence; linearity-guarantees-I3=0 objection goes in the wrapper caveat.
 - `.claude/science/sanity/sorkin-test-2026-03-30.md` — Audit evidence (precision flags on the original).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Explicitly resolves the earlier AMBIGUOUS Sorkin test (idx 3133) by refining it to a fixed-DAG protocol.
 
 ## Audit fields
 

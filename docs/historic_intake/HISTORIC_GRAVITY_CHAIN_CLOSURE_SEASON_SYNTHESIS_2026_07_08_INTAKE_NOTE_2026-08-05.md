@@ -36,14 +36,18 @@ The gravity-chain season terminal: six-link chain closed up to TWO named premise
 - sha256: `891d097ba955b52d82c8e4cbcc778ea032d349f5ff87e12e99dbb16a73da9c77`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/645_GRAVITY_CHAIN_CLOSURE_SEASON_SYNTHESIS_2026-07-08.md](../../archive_unlanded/historic_intake_originals/branch02/645_GRAVITY_CHAIN_CLOSURE_SEASON_SYNTHESIS_2026-07-08.md)
 - Lines: 97; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Lists its own falsifiers, including audit failure of the June conformal-class inputs on which link 6 depends.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Lists its own falsifiers, including audit failure of the June conformal-class inputs on which link 6 depends.
+- Supersession (as known at extraction): Terminal season synthesis over six one-day campaigns (#5061-#5081); names four follow-up campaigns including deriving P-QD-BRIDGE and the June conformal-class input audits.
 
 ## Audit fields
 

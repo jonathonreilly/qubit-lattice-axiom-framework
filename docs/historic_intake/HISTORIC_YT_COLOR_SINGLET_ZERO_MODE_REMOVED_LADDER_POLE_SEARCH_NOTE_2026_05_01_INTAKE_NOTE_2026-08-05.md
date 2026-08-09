@@ -35,16 +35,20 @@ Color-singlet denominator terminal: finite pole witnesses are route information 
 - git blob: `65b8f4682df981eb12ea4e847b33d00f005aaf41`
 - sha256: `eff6242c3ed19a09fda9cebb8992c8ee32307dd2ca8a5c91ca49754687b1eed4`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2162_YT_COLOR_SINGLET_ZERO_MODE_REMOVED_LADDER_POLE_SEARCH_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2162_YT_COLOR_SINGLET_ZERO_MODE_REMOVED_LADDER_POLE_SEARCH_NOTE_2026-05-01.md)
-- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_color_singlet_zero_mode_removed_ladder_pole_search(.py)`
+- Lines: 51; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_yt_color_singlet_zero_mode_removed_ladder_pole_search​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/YT_COLOR_SINGLET_FINITE_Q_IR_REGULAR_NOTE_2026-05-01.md` — Color-singlet chain link.
 - `docs/YT_COLOR_SINGLET_ZERO_MODE_CANCELLATION_NOTE_2026-05-01.md` — Color-singlet chain link.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): TERMINAL of the color-singlet denominator sub-chain: the cleaned kernel still yields no stable pole.
 
 ## Audit fields
 

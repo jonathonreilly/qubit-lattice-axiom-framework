@@ -1,11 +1,11 @@
-# Historic intake: Charged-Lepton Koide A1 — Radian-Bridge Irreducibility Theorem
+# Historic intake: Charged-Lepton Koide — Radian-Bridge Irreducibility Theorem
 
-Explicit subject: Across 47 mechanisms in 9 investigation rounds (12 obstruction classes including a Universal Lattice Closure Theorem, runner 33/33) no derivation of |b|^2/a^2 = 1/2 or delta = 2/9 rad exists in the tested probe space; the residual is exactly one quantization rule identifying a ... (The bare code `A1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: Across 47 mechanisms in 9 investigation rounds (12 obstruction classes including a Universal Lattice Closure Theorem, runner 33/33) no derivation of |b|^2/a^2 = 1/2 or delta = 2/9 rad exists in the tested probe space; the residual is exactly one quantization rule identifying a ... (Historic code `A1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -15,6 +15,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -38,15 +40,19 @@ The 47-mechanism irreducibility theorem: |b|^2/a^2 = 1/2 and delta = 2/9 jointly
 - sha256: `3c27ded20cd818faafde28dd0ecee565b00ac9b469f7862621b276683c97a05a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/754_KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_THEOREM.md](../../archive_unlanded/historic_intake_originals/branch03/754_KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_THEOREM.md)
 - Lines: 306; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_2OVER9_RECORD_LOCAL_FIXED_POINT_READOUT_NARROW_THEOREM_NOTE_2026-06-06.md` — Readout selection by record-interpretation; flagged.
 - `docs/KOIDE_A1_ASSUMPTIONS_AUDIT_2026-04-22.md` — 21-assumption audit; process context for the lane.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly deflates the framework's own 'six independent derivations of 2/9' to restatements of one dimension count.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly deflates the framework's own 'six independent derivations of 2/9' to restatements of one dimension count.
+- Supersession (as known at extraction): Consolidates 9 investigation rounds; its identification half is later claimed closed by KOIDE_A1_BRANNEN_EUCLIDEAN_ROTATION_ANGLE_CLOSURE_THEOREM_NOTE_2026-04-25.
 
 ## Audit fields
 

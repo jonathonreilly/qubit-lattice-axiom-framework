@@ -36,14 +36,18 @@ Clean unlanded positive: quantified projective-ratio implication proved from exp
 - sha256: `bc54c16520fb3830f66d1ee333ebb109fac72f08c749bc593b504590d303fa6b`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10625_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10625_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 24; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-claims 'no dependency or import' for a theorem in a stdout-repair cycle — verify against the ledger row it points at
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: claims 'no dependency or import' for a theorem in a stdout-repair cycle — verify against the ledger row it points at
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Complete search: floor 144 reached by 15,800 cuttings on 192 pieces; locally rig
 - git blob: `1eef4287ac8ec6c2dd2d8386d8ce8247fe8b4271`
 - sha256: `b3b73b7ba07df7770ab6d2227f51a9e1da2c84d712ac013d90c7355063f67400`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3100_PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md](../../archive_unlanded/historic_intake_originals/recovery/3100_PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md)
-- Lines: 193; runners named: historic runner (unpinned, not in this packet): `scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py (named in artifacts section)`
+- Lines: 193; runners named: historic runner (unpinned, not in this packet): `scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04​.py (named in artifacts section)`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/PHYSICAL_LOCAL_EXTREMALITY_RULE_CELL_CYCLE730_NOTE_2026-08-04.md` — Per-piece extremal localization; refines the bracket into local membership tests.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that testing the scope of the integrality argument moved the claim: all 336 volume-2/3 sets read some corner in fractions so the whole-number proof route is special to least volume, but 0 of them reach past their own corners so the containment conclusion is not — the note claims only the narrower fact.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that testing the scope of the integrality argument moved the claim: all 336 volume-2/3 sets read some corner in fractions so the whole-number proof route is special to least volume, but 0 of them reach past their own corners so the containment conclusion is not — the note claims only the narrower fact.
+- Supersession (as known at extraction): Extends earlier cycles that measured the cost floor on this cell to the question of what freedom a cutting has at the floor.
 
 ## Audit fields
 

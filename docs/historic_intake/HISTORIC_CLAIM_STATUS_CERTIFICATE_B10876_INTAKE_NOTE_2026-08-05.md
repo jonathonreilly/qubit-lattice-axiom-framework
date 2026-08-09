@@ -35,16 +35,20 @@ TERMINAL of the cycle-10 GR-atlas obstruction inventory: three explicit refineme
 - git blob: `72491d121de313a41e876987d3b281f9cc7daaa0`
 - sha256: `2238fc712c73d367e107078d32f3529ebae5f142882a145e6c194294bccd3dad`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci03/10876_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci03/10876_CLAIM_STATUS_CERTIFICATE.md)
-- Lines: 296; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pl_s3_atlas_refinement_compatibility(.py)`
+- Lines: 296; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pl_s3_atlas_refinement_compatibility​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/retained-promotion-2026-05-02/cycle13-full-pl-s3-atlas-closure/CLAIM_STATUS_CERTIFICATE.md` — The full 5-chart PL S^3 atlas construction (5 vertices, 10 edges, 10 triangles, 5 tetrahedra) closing Obstruction 1; honest spokes-f~ self-flag carried.
 - `.claude/science/physics-loops/retained-promotion-2026-05-02/cycle14-patched-stationary-system-pl-s3/CLAIM_STATUS_CERTIFICATE.md` — Solves the patched stationary system on the full atlas for 6 source profiles, closing Obstruction 2; same self-flag family.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-the parent obstruction asked for a CONTINUUM LIMIT and the closure reinterprets it as PL refinement — the reinterpretation is disclosed but it is a weakening of the original ask
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: the parent obstruction asked for a CONTINUUM LIMIT and the closure reinterprets it as PL refinement — the reinterpretation is disclosed but it is a weakening of the original ask
+- Supersession (as known at extraction): Names docs/PL_S3_ATLAS_REFINEMENT_COMPATIBILITY_THEOREM_NOTE_2026-05-03.md; TERMINAL of the cycle-13/14/19 chain closing cycle 10's Obstructions 1/2/3.
 
 ## Audit fields
 

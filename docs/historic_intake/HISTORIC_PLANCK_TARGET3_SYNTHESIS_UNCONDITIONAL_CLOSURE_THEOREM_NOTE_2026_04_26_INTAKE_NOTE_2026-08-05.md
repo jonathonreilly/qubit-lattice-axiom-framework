@@ -35,7 +35,8 @@ The terminal 'unconditionally closed' Target-3 claim — pulled WITH the flag th
 - git blob: `e3a2efd56e293f939439c49d3183413a79135617`
 - sha256: `a90ae3b76193063ffd205dce322397212530e6aba5260be8e5a4dfca67ffd644`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1504_PLANCK_TARGET3_SYNTHESIS_UNCONDITIONAL_CLOSURE_THEOREM_NOTE_2026-04-26.md](../../archive_unlanded/historic_intake_originals/branch05/1504_PLANCK_TARGET3_SYNTHESIS_UNCONDITIONAL_CLOSURE_THEOREM_NOTE_2026-04-26.md)
-- Lines: 473; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_synthesis_unconditional_closure(.py)`
+- Lines: 473; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_planck_target3_synthesis_unconditional_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The terminal 'unconditionally closed' Target-3 claim — pulled WITH the flag th
 - `docs/PLANCK_TARGET3_GAUSS_FLUX_FIRST_ORDER_CARRIER_THEOREM_NOTE_2026-04-25.md` — Target-3 chain member; unconditional-closure contest — flags carried by the 1504/1499/1502 set.
 - `docs/PLANCK_TARGET3_SCHUR_SOURCE_COUPLING_IDENTITY_THEOREM_NOTE_2026-04-26.md` — Target-3 chain member; unconditional-closure contest — flags carried by the 1504/1499/1502 set.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Third note in this family to declare 'unconditional closure' after two predecessors were withdrawn; the same-branch relaxed-Wu support audit dated the same day refuses to land exactly this claim.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Third note in this family to declare 'unconditional closure' after two predecessors were withdrawn; the same-branch relaxed-Wu support audit dated the same day refuses to land exactly this claim.
+- Supersession (as known at extraction): Terminal note of the PLANCK_TARGET3 chain (2026-04-26), closing the residuals of the Schur source-coupling theorem and re-promoting the earlier re-scoped notes.
 
 ## Audit fields
 

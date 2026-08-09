@@ -1,6 +1,6 @@
-# Historic intake: Emergent Lorentz OS0 B4 Marginal-Velocity Replacement Bridge
+# Historic intake: Emergent Lorentz OS0 Marginal-Velocity Replacement Bridge
 
-Explicit subject: On the OS0 branch, signed-permutation B4 fixes the diagonal marginal kinetic vector (c_0,c_1,c_2,c_3) to the one-dimensional subspace c_0 = c_1 = c_2 = c_3 (versus dimension two under spatial O_h alone), so c_t p_t^2 + c_s(p_x^2+p_y^2+p_z^2) with c_t != c_s is not an invariant ... (The bare code `B4` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: On the OS0 branch, signed-permutation B4 fixes the diagonal marginal kinetic vector (c_0,c_1,c_2,c_3) to the one-dimensional subspace c_0 = c_1 = c_2 = c_3 (versus dimension two under spatial O_h alone), so c_t p_t^2 + c_s(p_x^2+p_y^2+p_z^2) with c_t != c_s is not an invariant ... (Historic code `B4`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,15 +37,19 @@ Exact import-retirement: signed-permutation B4 forces the isotropic marginal kin
 - git blob: `84bba0bc7d493ae325db5964aa283671ee682a63`
 - sha256: `bb85800b67d5b0cb04202a876f61bfc24da12c860b2a4040363257ae6d474342`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/429_EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md](../../archive_unlanded/historic_intake_originals/branch02/429_EMERGENT_LORENTZ_OS0_B4_MARGINAL_VELOCITY_REPLACEMENT_BRIDGE_2026-06-17.md)
-- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17(.py)`
+- Lines: 134; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_emergent_lorentz_os0_b4_replacement_bridge_2026_06_17​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly leaves open the continuous-time/non-isotropic horn, non-perturbative effects, taste-breaking surfaces, SME bound comparison, and any absolute Lorentz closure.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly leaves open the continuous-time/non-isotropic horn, non-perturbative effects, taste-breaking surfaces, SME bound comparison, and any absolute Lorentz closure.
+- Supersession (as known at extraction): Import-retirement note: retires the one-loop velocity RG, physical fixed-point anomalous dimension, hierarchy damping estimate and Collins-gate reduction for the OS0 branch, with a downstream citation rule to cite this bridge instead of the older packet (which is bypassed, not promoted).
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ Unlanded positive closing a named blocker: the supplied mixed-precision implemen
 - sha256: `4407e3066b5d7595f539e3fcad3cf59d3a3880b9c47586c7f23f121a47642860`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10618_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci02/10618_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 33; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/physics-loops/lattice-nn-high-precision-live-comparator-20260727/NO_GO_LEDGER.md` — Three pieces of apparent negative evidence downgraded to execution history (the 2026-04-03 timeout is not evidence the target is false); useful methodological correction.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that rounded CACHED targets were previously used as proof inputs — this repair removes them.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that rounded CACHED targets were previously used as proof inputs — this repair removes them.
+- Supersession (as known at extraction): Closes the h = 0.125 noncompletion that idx 10614/10615 had to exclude; replaces rounded cached targets with live computation.
 
 ## Audit fields
 

@@ -35,16 +35,20 @@ Complex-eps resolution of both standing tensions with |J| ~ 6.5e-3 predicted —
 - git blob: `821d75c4b9796d819a61ff8c50a2076ff779acce`
 - sha256: `19d7b5bb060a5055dede55263e75f9795a5578844c65813a640cca215b71f0a1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1183_NEUTRINO_COMPLEX_Z3_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1183_NEUTRINO_COMPLEX_Z3_NOTE.md)
-- Lines: 229; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_complex_z3(.py)`
+- Lines: 229; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_neutrino_complex_z3​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/NEUTRINO_HIERARCHY_DERIVED_NOTE.md` — Normal-hierarchy structural constraint with forbidden phrasings listed.
 - `docs/NEUTRINO_MASSES_NOTE.md` — Two-parameter texture with named tensions and fitted inputs.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The mass-sum resolution is marginal (still above the cosmological bound, rescued by claimed systematics) and the note leaves ~2 meV excess to be absorbed by RG running, higher-order seesaw corrections or thresholds.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The mass-sum resolution is marginal (still above the cosmological bound, rescued by claimed systematics) and the note leaves ~2 meV excess to be absorbed by RG running, higher-order seesaw corrections or thresholds.
+- Supersession (as known at extraction): Repairs two tensions carried by the earlier real-eps analysis in NEUTRINO_MASSES_NOTE.
 
 ## Audit fields
 

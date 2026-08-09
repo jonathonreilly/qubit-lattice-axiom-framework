@@ -36,14 +36,18 @@ Review disposition: the top-mass parameter is TUNABLE — demoted on the record;
 - sha256: `8cbc9c2e99299dc6ee7e89e57f691cf821eeab0ce10456f8cb71b38ee0c38a62`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2378_YT_PR230_REVIEW_BACKPRESSURE_PASS_NOTE_2026-05-01.md](../../archive_unlanded/historic_intake_originals/branch07/2378_YT_PR230_REVIEW_BACKPRESSURE_PASS_NOTE_2026-05-01.md)
 - Lines: 61; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that the lane's top-mass parameter is tunable, so the readout is calibrated rather than predicted unless an independent mass pin appears.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that the lane's top-mass parameter is tunable, so the readout is calibrated rather than predicted unless an independent mass pin appears.
+- Supersession (as known at extraction): Supplies the review pass whose absence idx 2376 flagged; its 'top mass parameter is tunable' finding is the campaign's sharpest self-criticism.
 
 ## Audit fields
 

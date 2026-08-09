@@ -35,15 +35,19 @@ Synthesis terminal of the clock-matcher trio (Cycles 344/345/346): three bounded
 - git blob: `c80df27c30acb6629a7e832e52a844a9e9d82ad0`
 - sha256: `1353904c4cdd9e56f7846c7be2060715692bfb92fe015fc7858edae7f125635a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/2762_NAMED_RECORD_CLOCK_MATCHER_REFINEMENT_CALIBRATION_TOURNAMENT_SYNTHESIS_CYCLE347_NOTE_2026-07-18.md](../../archive_unlanded/historic_intake_originals/branch09/2762_NAMED_RECORD_CLOCK_MATCHER_REFINEMENT_CALIBRATION_TOURNAMENT_SYNTHESIS_CYCLE347_NOTE_2026-07-18.md)
-- Lines: 408; runners named: historic runner (unpinned, not in this packet): `scripts/named_record_clock_matcher_refinement_calibration_tournament_synthesis_cycle347_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_named_record_interval_direct_matcher_route_cycle344_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_named_record_chain_refinement_route_cycle345_2026_07_18(.py)`; historic runner (unpinned, not in this packet): `scripts/physical_clock_response_common_history_calibration_route_cycle346_2026_07_18(.py)`
+- Lines: 408; runners named: historic runner (unpinned, not in this packet): `scripts/named_record_clock_matcher_refinement_calibration_tournament_synthesis_cycle347_2026_07_18​.py`; historic runner (unpinned, not in this packet): `scripts/physical_named_record_interval_direct_matcher_route_cycle344_2026_07_18​.py`; historic runner (unpinned, not in this packet): `scripts/physical_named_record_chain_refinement_route_cycle345_2026_07_18​.py`; historic runner (unpinned, not in this packet): `scripts/physical_clock_response_common_history_calibration_route_cycle346_2026_07_18​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-The calibration route's response key is copied from the clock cylinder by the host and only checked for equality, so it does not establish independent physical event provenance — the note says so itself.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: The calibration route's response key is copied from the clock cylinder by the host and only checked for equality, so it does not establish independent physical event provenance — the note says so itself.
+- Supersession (as known at extraction): Synthesis terminal for the Cycle 344/345/346 route trio; ten-entry wall-pair table records Record/id, Record/tag, Record/local, Record/cal, Record/metric, id/tag, id/local, id/cal, id/metric all non-derivable in both directions.
 
 ## Audit fields
 

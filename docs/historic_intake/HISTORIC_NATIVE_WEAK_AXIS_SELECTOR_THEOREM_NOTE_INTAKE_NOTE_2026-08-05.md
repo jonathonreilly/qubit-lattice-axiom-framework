@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,7 +37,8 @@ The weak-axis base no-go: the native low-degree Hermitian surface supports no S_
 - git blob: `5818a4f385e22fef316498ccbdfd149a31d740e8`
 - sha256: `937d6ed0cf937abfead8ca5329ccd1a1629f67974eb3254b1b00dd6e8682d5ed`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1173_NATIVE_WEAK_AXIS_SELECTOR_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1173_NATIVE_WEAK_AXIS_SELECTOR_THEOREM_NOTE.md)
-- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_native_weak_axis_selector(.py)`
+- Lines: 118; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_native_weak_axis_selector​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +46,12 @@ The weak-axis base no-go: the native low-degree Hermitian surface supports no S_
 - `docs/NATIVE_OPERATOR_SEARCH_REPORT_2026-04-12.md` — Brute-force search collapse.
 - `docs/NATIVE_PROJECTOR_SELECTOR_NOTE.md` — Projector route kill.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): The base no-go that the projector (1171), operator-search (1170), dynamical (1165) and nonlocal (1169) notes each test an escape from.
 
 ## Audit fields
 

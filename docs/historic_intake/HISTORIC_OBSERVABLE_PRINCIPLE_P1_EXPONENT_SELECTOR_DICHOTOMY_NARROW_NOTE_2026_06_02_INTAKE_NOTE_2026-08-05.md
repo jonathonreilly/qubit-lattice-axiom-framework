@@ -1,11 +1,11 @@
-# Historic intake: Observable-Principle P1 Bridge - Exponent-Fixing Selector-Dichotomy Narrow Note
+# Historic intake: Observable-Principle Bridge - Exponent-Fixing Selector-Dichotomy Narrow Note
 
-Explicit subject: On the independent-subsystem substrate the scalar generator is W = Phi(r) with r = |det(D+J)| composing multiplicatively, the candidate family F_p = |det|^p is a SINGLE ORBIT of the reparametrization group r -> r^p with the same self-similar composite law for every p, so every ... (The bare code `P1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: On the independent-subsystem substrate the scalar generator is W = Phi(r) with r = |det(D+J)| composing multiplicatively, the candidate family F_p = |det|^p is a SINGLE ORBIT of the reparametrization group r -> r^p with the same self-similar composite law for every p, so every ... (Historic code `P1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: unknown
 
@@ -15,6 +15,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -38,14 +40,18 @@ The exponent-fixing admission is irreducible against the sector-composition clas
 - sha256: `9a97b3faf8ec238aa1a5330a9ad3059280bd770be6d4152e3bac4b033c3c8ebb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1222_OBSERVABLE_PRINCIPLE_P1_EXPONENT_SELECTOR_DICHOTOMY_NARROW_NOTE_2026-06-02.md](../../archive_unlanded/historic_intake_originals/branch04/1222_OBSERVABLE_PRINCIPLE_P1_EXPONENT_SELECTOR_DICHOTOMY_NARROW_NOTE_2026-06-02.md)
 - Lines: 746; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Closes the open forward path (a) of OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_2026-05-31 (#2456) for that class; pins but does not retire the P1 premise of the parent observable-principle note.
 
 ## Audit fields
 

@@ -35,7 +35,8 @@ The leptogenesis closure claim: transport-complete from Cl(3) on Z^3 with a fact
 - git blob: `bafc7ac6cbe2c640bbb08e5f08156967e0341e4b`
 - sha256: `72620a7d0c2e572bf567aaeb0cf4a8cdbb43c7cec4e4923f2804bfb1a82c86df`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/recovery/3602_DM_LEPTOGENESIS_FULL_THEOREM_CLOSURE_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/recovery/3602_DM_LEPTOGENESIS_FULL_THEOREM_CLOSURE_NOTE_2026-04-16.md)
-- Lines: 50; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_full_axiom_closure(.py)`
+- Lines: 50; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_leptogenesis_full_axiom_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ The leptogenesis closure claim: transport-complete from Cl(3) on Z^3 with a fact
 - `docs/DM_LEPTOGENESIS_FLAVORED_N2_TRANSPORT_DIAGNOSTIC_NOTE_2026-04-16.md` — Flavored/N2-aware transport against the exact 5.30x miss; the arc's best next-derivation statement.
 - `docs/DM_LEPTOGENESIS_NOTE.md` — Taste-staircase eta (3 fitted inputs, k ambiguity); superseded by the exact-source arc.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A note titled FULL THEOREM CLOSURE whose own bottom line is a factor-5.297 undershoot against observation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A note titled FULL THEOREM CLOSURE whose own bottom line is a factor-5.297 undershoot against observation.
+- Supersession (as known at extraction): Removes the transport-side non-axiom boundary that earlier notes in this lane carried.
 
 ## Audit fields
 

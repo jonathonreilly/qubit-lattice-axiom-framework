@@ -36,14 +36,18 @@ RETRACTION of 'the axioms contain no time': time IS derived (single-clock theore
 - sha256: `1445e341f83910ee16ac8dd1b2c30db62687ce6b80fdb7879c0f3507af4c7928`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2026_TEMPORAL_STRUCTURE_DERIVATION_BOUNDARY_BOUNDED_NOTE_2026-06-08.md](../../archive_unlanded/historic_intake_originals/branch06/2026_TEMPORAL_STRUCTURE_DERIVATION_BOUNDARY_BOUNDED_NOTE_2026-06-08.md)
 - Lines: 173; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records two retracted prior claims about the framework's temporal content and notes the derived-time chain is unaudited with an audited_conditional base.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records two retracted prior claims about the framework's temporal content and notes the derived-time chain is unaudited with an audited_conditional base.
+- Supersession (as known at extraction): Explicitly RETRACTS the earlier claims that the axioms contain no time and that temporal structure is not derivable, while correcting the premise framing (not the math) of the landed B_4 hypercubic boundary note.
 
 ## Audit fields
 

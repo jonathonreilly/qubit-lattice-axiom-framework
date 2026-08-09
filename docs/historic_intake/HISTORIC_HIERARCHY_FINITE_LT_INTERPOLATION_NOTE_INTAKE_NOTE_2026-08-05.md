@@ -35,15 +35,19 @@ Exact closed form for the APBC temporal normalization at ALL finite L_t — the 
 - git blob: `c2ffa4659635128c827ea81ba6d3e5a15ce3800b`
 - sha256: `91ae1ca8ba727256d18516ef30b211b7927d8bc4f3733bea8d308f2727648aca`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/686_HIERARCHY_FINITE_LT_INTERPOLATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/686_HIERARCHY_FINITE_LT_INTERPOLATION_NOTE.md)
-- Lines: 95; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_finite_lt_interpolation(.py)`
+- Lines: 95; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_finite_lt_interpolation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Note itself flags that it does not prove the hierarchy theorem and that the load-bearing L_t selection step remains open.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Note itself flags that it does not prove the hierarchy theorem and that the load-bearing L_t selection step remains open.
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

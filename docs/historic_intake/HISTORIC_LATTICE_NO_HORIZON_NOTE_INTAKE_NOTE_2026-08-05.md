@@ -35,15 +35,19 @@ No-horizon theorem: G_L(0) finite bounds phi so g_tt > 0 generically — the fro
 - git blob: `7ad915e72b74f027900cd7114af419c6f568ef8e`
 - sha256: `a56acd31b747c0da05d04d5793d0845c64b6359d11db2c57fed72535c4e28b71`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1099_LATTICE_NO_HORIZON_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1099_LATTICE_NO_HORIZON_NOTE.md)
-- Lines: 223; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lattice_no_horizon(.py)`
+- Lines: 223; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_lattice_no_horizon​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Explicitly supersedes/complements the previous conjecture in STRONG_FIELD_HONEST_ASSESSMENT.md, replacing a Schwarzschild-dependent argument with a lattice-only one (comparison table included).
 
 ## Audit fields
 

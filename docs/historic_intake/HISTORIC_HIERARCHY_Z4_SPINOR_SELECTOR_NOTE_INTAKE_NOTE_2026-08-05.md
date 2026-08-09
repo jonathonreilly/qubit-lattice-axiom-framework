@@ -35,15 +35,19 @@ The Z4 spinor selector: L_t=4 unique via the full Z_4 double-cover orbit — the
 - git blob: `1037f2bcbdf791bf685b8573113fc82bd92fb094`
 - sha256: `83a7866384c77a930135b10fd6fc5c77cc6555ba4ac66dd1f27fc6bc354adb1d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/709_HIERARCHY_Z4_SPINOR_SELECTOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch03/709_HIERARCHY_Z4_SPINOR_SELECTOR_NOTE.md)
-- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_z4_spinor_selector(.py)`
+- Lines: 90; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_hierarchy_z4_spinor_selector​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/HIERARCHY_UNIFORM_TEMPORAL_SELECTOR_NOTE.md` — Uniform temporal selector; superseded by the Z4 spinor selector; L_t tension with 698 noted.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Explicit successor to the 'minimal resolved uniform orbit' selector of HIERARCHY_UNIFORM_TEMPORAL_SELECTOR_NOTE; reads as the terminal April-era selector note for this family (later restated as the H2 V-orbit theorem in May).
 
 ## Audit fields
 

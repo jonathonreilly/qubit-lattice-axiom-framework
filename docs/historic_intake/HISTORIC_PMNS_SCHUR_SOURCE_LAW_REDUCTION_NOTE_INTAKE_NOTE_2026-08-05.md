@@ -35,15 +35,19 @@ Schur-pushforward theorem closing the source-law-invention loophole: the project
 - git blob: `e39bc25853b6c5ea84b5ac8f61594a1545a1721a`
 - sha256: `af6f9c4512e6eba779e72c18fe4088a42c7861ff8b40cd652866d68924415226`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1578_PMNS_SCHUR_SOURCE_LAW_REDUCTION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1578_PMNS_SCHUR_SOURCE_LAW_REDUCTION_NOTE.md)
-- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_schur_source_law_reduction(.py)`
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_schur_source_law_reduction​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Closes the source-law-invention loophole left by the projected source-law reduction.
 
 ## Audit fields
 

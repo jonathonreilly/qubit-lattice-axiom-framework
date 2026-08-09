@@ -1,6 +1,6 @@
-# Historic intake: G1 Omnibus Closure Review - Z_3 Doublet-Block Selector Law, DM Flagship Gate
+# Historic intake: Omnibus Closure Review - Z_3 Doublet-Block Selector Law, DM Flagship Gate
 
-Explicit subject: Eleven runners (PASS = 305, FAIL = 0) in four movements: Schur forces the scalar baseline D = m I_3; a ten-run obstruction tour proves no sole-axiom functional can pin (delta, q_+); closure comes instead from diagonalizing H(m,delta,q_+) into PMNS observables and letting ... (The bare code `G1` in the title is era-local historic shorthand preserved verbatim from the original; the pinned original defines it.)
+Explicit subject: Eleven runners (PASS = 305, FAIL = 0) in four movements: Schur forces the scalar baseline D = m I_3; a ten-run obstruction tour proves no sole-axiom functional can pin (delta, q_+); closure comes instead from diagonalizing H(m,delta,q_+) into PMNS observables and letting ... (Historic code `G1`: era-local shorthand from the original's own title. The repo's controlled vocabulary keeps the explicit scientific name primary on live surfaces — vocab_lint's legacy_alias_strip rule removes alias parentheticals — so the code is preserved here, in the pinned original, and in its archived copy; the pinned original defines it.)
 
 Date: 2026-08-05
 Authority: none
@@ -37,7 +37,8 @@ G1 OMNIBUS terminal: 305 PASS across four movements — closure-via-observation 
 - git blob: `67de8f0aac03fa0ef01ddddd6057193d8dc2c26c`
 - sha256: `e8e8beef8444eb5b744427382dad516bfbfefa35da80ec3a83b0e79ee41611c3`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/525_G1_OMNIBUS_CLOSURE_REVIEW_NOTE_2026-04-17.md](../../archive_unlanded/historic_intake_originals/branch02/525_G1_OMNIBUS_CLOSURE_REVIEW_NOTE_2026-04-17.md)
-- Lines: 321; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g1_z3_doublet_block_selector_law(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_path_a_information_geometric_selector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_path_b_z3_cubic_selector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_path_c_holonomy_selector(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physics_validation_eta_at_candidates(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_parity_mixing_selector_law(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_e_observable_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_f_uniqueness_and_full_w(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_g_microscopic_axiom_level(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_i_bifundamental_invariance(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_h_pmns_as_f_h(.py)`
+- Lines: 321; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_g1_z3_doublet_block_selector_law​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_path_a_information_geometric_selector​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_path_b_z3_cubic_selector​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_path_c_holonomy_selector​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physics_validation_eta_at_candidates​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_parity_mixing_selector_law​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_e_observable_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_f_uniqueness_and_full_w​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_g_microscopic_axiom_level​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_i_bifundamental_invariance​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_g1_physicist_h_pmns_as_f_h​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -45,9 +46,12 @@ G1 OMNIBUS terminal: 305 PASS across four movements — closure-via-observation 
 - `docs/G1_PHYSICIST_E_OBSERVABLE_CLOSURE_THEOREM_NOTE_2026-04-17.md` — Observable-bank exhaustion; P1-P3 stratification.
 - `docs/G1_Z3_DOUBLET_BLOCK_SELECTOR_SCHUR_BASELINE_PARTIAL_CLOSURE_NOTE_2026-04-17.md` — Schur baseline forcing; selector not forced.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Ten of eleven runners are obstructions; the single closure is an observational pin, so the headline 'CLOSED' rests on inserting measured PMNS values.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Ten of eleven runners are obstructions; the single closure is an observational pin, so the headline 'CLOSED' rests on inserting measured PMNS values.
+- Supersession (as known at extraction): TERMINAL/index note for the G1 family: the single reviewer entry point pulling together all eleven runners and their theorem notes; promotes PMNS from atlas-open to retained as f(H) on the chamber.
 
 ## Audit fields
 

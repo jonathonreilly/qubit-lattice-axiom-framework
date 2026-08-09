@@ -35,16 +35,20 @@ The 'CLOSED UNCONDITIONALLY' final claim (24 agents, 4 rounds) — pulled WITH t
 - git blob: `ab079cf5c9ad9925962551d7b46f5195c3cab83e`
 - sha256: `143c09027bca7834a5bec6d77207548b503ee64de296c312687a7b14fc3fddb0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1090_KOIDE_UNCONDITIONAL_CLOSURE_2026-04-20.md](../../archive_unlanded/historic_intake_originals/branch04/1090_KOIDE_UNCONDITIONAL_CLOSURE_2026-04-20.md)
-- Lines: 265; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_qubit_lattice_dim_closure(.py)`
+- Lines: 265; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_qubit_lattice_dim_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/KOIDE_ROUND_1_PARALLEL_ATTACK_RESULTS_2026-04-20.md` — Round 1; V1 self-flag noted.
 - `docs/KOIDE_ROUND_3_INTEGRATED_CLOSURE_2026-04-20.md` — Round 3 integrating note.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Very strong claim ('CLOSED UNCONDITIONALLY', 'We broke new ground in physics tonight') from a one-night multi-agent sprint; four days later the same branch lane runs 40+ no-go notes on the premise that Q is still open, and a Nature-grade review (idx_pos 1038) fails the closest closure candidate.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Very strong claim ('CLOSED UNCONDITIONALLY', 'We broke new ground in physics tonight') from a one-night multi-agent sprint; four days later the same branch lane runs 40+ no-go notes on the premise that Q is still open, and a Nature-grade review (idx_pos 1038) fails the closest closure candidate.
+- Supersession (as known at extraction): Self-declared FINAL note of the four-round parallel-attack chain (1071 -> 1072 -> 1073 -> this); dissolves the orbifold-lift residue that Round 3 left open. Directly contradicted by the April-24/25 Koide-Q no-go stack in this same stratum, which treats Q as open.
 
 ## Audit fields
 

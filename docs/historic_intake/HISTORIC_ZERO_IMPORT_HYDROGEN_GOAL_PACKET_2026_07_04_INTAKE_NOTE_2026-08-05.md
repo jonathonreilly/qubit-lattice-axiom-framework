@@ -35,7 +35,8 @@ THE campaign umbrella: the 1,245-line zero-import hydrogen goal packet defining 
 - git blob: `d496aca2c156e2ffe858f3fca2e45f3b5134899c`
 - sha256: `d1b25c1700222e91dae7193505f6e8ca9aa2b86ec6a15630562ba2de8cc82bcc`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch08/2514_ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md](../../archive_unlanded/historic_intake_originals/branch08/2514_ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md)
-- Lines: 1245; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_goal_packet(.py)`
+- Lines: 1245; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_zero_import_hydrogen_goal_packet​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -44,9 +45,12 @@ THE campaign umbrella: the 1,245-line zero-import hydrogen goal packet defining 
 - `docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md` — ZIH sweep member; carried by the umbrella and lane terminals.
 - `docs/ZERO_IMPORT_HYDROGEN_TIER_A_OWNER_RETIREMENT_PR4991_IMPACT_DISCRIMINATOR_2026-07-04.md` — ZIH sweep member; carried by the umbrella and lane terminals.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): CAMPAIGN UMBRELLA (TERMINAL by scope) for the entire ZERO_IMPORT_HYDROGEN family (idx 2505-2716); companion route-selection note is 2667.
 
 ## Audit fields
 

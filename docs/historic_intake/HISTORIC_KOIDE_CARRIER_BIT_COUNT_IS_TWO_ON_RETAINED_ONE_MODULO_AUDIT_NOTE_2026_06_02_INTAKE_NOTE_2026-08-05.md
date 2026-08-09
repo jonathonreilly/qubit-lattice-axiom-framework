@@ -35,15 +35,19 @@ Carrier-bit accounting: TWO admissions on strict-retained (STAT + FAITH), one-mo
 - git blob: `9ae8be5fc72536919d64c1cbb1b66ec21d8f75eb`
 - sha256: `c55e17c715ed79c4a093bb37361d8a257daf3631b005ac2e7a50d89599bf0c49`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch03/768_KOIDE_CARRIER_BIT_COUNT_IS_TWO_ON_RETAINED_ONE_MODULO_AUDIT_NOTE_2026-06-02.md](../../archive_unlanded/historic_intake_originals/branch03/768_KOIDE_CARRIER_BIT_COUNT_IS_TWO_ON_RETAINED_ONE_MODULO_AUDIT_NOTE_2026-06-02.md)
-- Lines: 154; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_carrier_bit_count_is_two_on_retained_one_modulo_audit(.py)`
+- Lines: 154; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_koide_carrier_bit_count_is_two_on_retained_one_modulo_audit​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Identifies that a headline 'one bridge' claim elsewhere in the lane is optimistic-tier and depends on three rows whose effective_status is unaudited (one of them marked critical).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Identifies that a headline 'one bridge' claim elsewhere in the lane is optimistic-tier and depends on three rows whose effective_status is unaudited (one of them marked critical).
+- Supersession (as known at extraction): Narrows the accounting the capstone KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01 left implicit; consumes the carrier-locus decomposition and on-site Weyl boost notes.
 
 ## Audit fields
 

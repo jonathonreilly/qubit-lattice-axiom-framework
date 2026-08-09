@@ -35,15 +35,19 @@ Bridge theorem that RETRACTS a landed negative and leaves a repo-wide inconsiste
 - git blob: `c14e7b91c7d06bb240588709dc4968ef7cc222c5`
 - sha256: `47a26f97425b3b3186bad35682809fc044e2da4512a6abb8d61cfdef040d44ee`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1505_PLAQUETTE_ANALYTIC_DERIVATION_NOTE.md](../../archive_unlanded/historic_intake_originals/branch05/1505_PLAQUETTE_ANALYTIC_DERIVATION_NOTE.md)
-- Lines: 92; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_scalar_3plus1_temporal_ratio(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_bridge_theorem(.py)`
+- Lines: 92; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_scalar_3plus1_temporal_ratio​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_gauge_vacuum_plaquette_bridge_theorem​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Retracts a previously landed negative result and leaves a known repo-wide inconsistency: downstream consumers still quote 0.5934 while the bridge gives 0.59353.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Retracts a previously landed negative result and leaves a known repo-wide inconsistency: downstream consumers still quote 0.5934 while the bridge gives 0.59353.
+- Supersession (as known at extraction): Explicitly RETRACTS the earlier main-derived negative note N1 ('<P> not analytically derivable'); defers to GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE as authority.
 
 ## Audit fields
 

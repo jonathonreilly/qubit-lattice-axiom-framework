@@ -35,15 +35,19 @@ Retraction on the record: with unified matched parameters alpha runs 0.13/0.35/0
 - git blob: `056d8dbfb1a42c49b720af23e6f8b40fb172acba`
 - sha256: `3b0f5f26e82f69b6f1eafa9d14060801e2f07ce9df153eb6a214316a5fcd398c`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10001_dimensional-scaling-law-2026-04-01.md](../../archive_unlanded/historic_intake_originals/packsci01/10001_dimensional-scaling-law-2026-04-01.md)
-- Lines: 82; runners named: historic runner (unpinned, not in this packet): `scripts/dimensional_scaling_law(.py)`
+- Lines: 82; runners named: historic runner (unpinned, not in this packet): `scripts/dimensional_scaling_law​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `.claude/science/analyses/dimensional-progression-2026-04-01.md` — The retracted headline claim (alpha=(d-1)/2 dimensional progression, self-marked CONFIRMED, parameter-tuned); evidence on the retraction wrapper.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-None beyond the retraction it carries; note is honest about parameter dependence.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: None beyond the retraction it carries; note is honest about parameter dependence.
+- Supersession (as known at extraction): Corrects the headline claim of idx 10000 (dimensional-progression, same date).
 
 ## Audit fields
 

@@ -35,15 +35,19 @@ Corrects the flat-direction framing and names the ISOLATION error running throug
 - git blob: `c06e1512eab397ae886e74e92309c5df1194a1b9`
 - sha256: `bf6fb3162e580c252b534f11d4eae261c34a5f35a2914c6b9bb1883c85fa220a`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/481_FLAVOR_FULL_OPERATOR_NONPERTURBATIVE_VALUE_NOTE_2026-05-29.md](../../archive_unlanded/historic_intake_originals/branch02/481_FLAVOR_FULL_OPERATOR_NONPERTURBATIVE_VALUE_NOTE_2026-05-29.md)
-- Lines: 73; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_full_operator_generation_masses_2026_05_29(.py)`
+- Lines: 73; runners named: historic runner (unpinned, not in this packet): `scripts/flavor_full_operator_generation_masses_2026_05_29​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/FLAVOR_ORDER_PARAMETER_FLAT_DIRECTION_CAPSTONE_NOTE_2026-05-29.md` — Flat-direction capstone; corrected by 481.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Names an ISOLATION error running through the whole prior campaign (treating an isolated-sector flat direction as framework indeterminacy).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Names an ISOLATION error running through the whole prior campaign (treating an isolated-sector flat direction as framework indeterminacy).
+- Supersession (as known at extraction): Explicitly corrects the over-scoped 'flat direction / exhausted' framing of FLAVOR_ORDER_PARAMETER_FLAT_DIRECTION_CAPSTONE_NOTE_2026-05-29 (idx 487).
 
 ## Audit fields
 

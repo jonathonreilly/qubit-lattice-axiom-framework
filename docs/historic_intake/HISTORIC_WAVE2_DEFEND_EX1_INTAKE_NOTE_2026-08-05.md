@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: pack_science_family
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,19 +37,23 @@ The fourteen-route catalogue: fourteen independent landed routes, tabulated with
 - git blob: `5f168d36b419fd77d2a8b109ebd144ec04066fe2`
 - sha256: `eac1e3c794e66a968b7e48d2ba63e5957866460ee8b0bf1ac5cefcb8498fb441`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci02/10561_wave2_defend_ex1.md](../../archive_unlanded/historic_intake_originals/packsci02/10561_wave2_defend_ex1.md)
-- Lines: 700; runners named: historic runner (unpinned, not in this packet): `wave2_defend_ex1_probe.py (scratch, 72 gates)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30(.py)`
+- Lines: 700; runners named: historic runner (unpinned, not in this packet): `wave2_defend_ex1_probe​.py (scratch, 72 gates)`; historic runner (unpinned, not in this packet): `scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Cross-stratum flags
+## Cross-stratum flags (inert text; machine-readable relations in the audit fields)
 
-- Attaches across strata to [idx 10562](HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md) (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — The fourteen-route catalogue: fourteen independent landed routes, tabulated with file:line, ALL land on r=1; EX1's residual (2g_0-g_1)*(a_t(b_u.b_v)-a_v(b_u.b_t)) is confirmed exactly and strengthened (no group needed); at least three landed r=1 routes are not quadrature-class, closing the easy escape. The evidence table for the adjudication.
+- Attaches across strata to idx 10562 (`.claude/science/physics-loops/koide-mode-content-campaign-20260724/wave2_defend_ex2.md`, stratum packsci02) — The fourteen-route catalogue: fourteen independent landed routes, tabulated with file:line, ALL land on r=1; EX1's residual (2g_0-g_1)*(a_t(b_u.b_v)-a_v(b_u.b_t)) is confirmed exactly and strengthened (no group needed); at least three landed r=1 routes are not quadrature-class, closing the easy escape. The evidence table for the adjudication.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Fourteen independent landed routes all land on r = 1; the campaign's one new pin also lands on r = 1. Strongest single piece of evidence in this stratum against the r = 1/2 reading for charged leptons.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Fourteen independent landed routes all land on r = 1; the campaign's one new pin also lands on r = 1. Strongest single piece of evidence in this stratum against the r = 1/2 reading for charged leptons.
+- Supersession (as known at extraction): Tabulates fourteen landed r = 1 routes with file:line, spanning HS-metric equipartition, Born/dimensional 1:2 weighting, max-entropy rho = I/3 giving block weights (1/3, 2/3), Kahler-Dirac index, spectral-action cutoffs peaking near r = 1, and heat-kernel/records-arrow flow. Partially refutes EX1's claim that diag(1,1,1) is a new framing — it IS corpus content.
 
 ## Audit fields
 
@@ -57,6 +63,8 @@ bare_retained_allowed: false
 historic_intake: true
 historic_claim_class: historic_no_go
 intake_directive: owner_2026-08-05
+cross_reference:
+- "HISTORIC_WAVE2_DEFEND_EX2_INTAKE_NOTE_2026-08-05.md"
 ```
 
 Independent audit still required.

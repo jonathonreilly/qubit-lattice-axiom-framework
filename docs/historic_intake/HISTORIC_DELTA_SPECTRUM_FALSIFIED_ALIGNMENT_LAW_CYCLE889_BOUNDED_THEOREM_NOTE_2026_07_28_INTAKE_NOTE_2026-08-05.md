@@ -35,15 +35,19 @@ Self-falsification executed exactly as the parent specified: Cycle 881's SHIPPED
 - git blob: `5f27e2456d8191a9d46f7859e0e9026441c195e9`
 - sha256: `f96edeb5c63e30163d899f5b26d789616d2e47ebb9ca9d3f6a310165cd412509`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/296_DELTA_SPECTRUM_FALSIFIED_ALIGNMENT_LAW_CYCLE889_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/296_DELTA_SPECTRUM_FALSIFIED_ALIGNMENT_LAW_CYCLE889_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 216; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle889_delta_spectrum_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle889_delta_spectrum_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle889_delta_spectrum_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle889_delta_spectrum_independent_check_2026_07_28(.py)`
+- Lines: 216; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle889_delta_spectrum_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle889_delta_spectrum_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle889_delta_spectrum_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle889_delta_spectrum_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-A previously published conjecture is falsified at every tier.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: A previously published conjecture is falsified at every tier.
+- Supersession (as known at extraction): Falsifies and replaces Cycle 881's spectrum conjecture while preserving its theorem.
 
 ## Audit fields
 

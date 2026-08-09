@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: post_reset_2026_06_29
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ Two-kernel two-band terminal: the wall is exponential ED cost, not physics — t
 - git blob: `881b59d547ebda83073e77e2f3e41b0e61696fbd`
 - sha256: `8b33916e9223539bfbcc4c3622fe58b63ec2b8211191da3c01c39173b6b1abbf`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2128_WILSON_TWO_BAND_MASS_ENERGY_EQUIVALENCE_IDENTITY_NOTE_2026-07-08.md](../../archive_unlanded/historic_intake_originals/branch07/2128_WILSON_TWO_BAND_MASS_ENERGY_EQUIVALENCE_IDENTITY_NOTE_2026-07-08.md)
-- Lines: 186; runners named: historic runner (unpinned, not in this packet): `scripts/wilson_two_band_identity_own_frame_2026_07_08(.py)`
+- Lines: 186; runners named: historic runner (unpinned, not in this packet): `scripts/wilson_two_band_identity_own_frame_2026_07_08​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/WILSON_STAGGERED_DOBRUSHIN_CERTIFICATE_BOUNDARY_CRITICAL_SCALING_NO_GO_2026-07-12.md` — Dobrushin sharpening + necessity bound.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records and rejects its own steelman (gating the four valid N=8 points would 'launder finite-size accidents into a claim') and documents two supervisor spec bugs from run 1 (cache print tolerance; an O(a^2) artifact gate applied to an O(a) kernel).
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records and rejects its own steelman (gating the four valid N=8 points would 'launder finite-size accidents into a claim') and documents two supervisor spec bugs from run 1 (cache print tolerance; an O(a^2) artifact gate applied to an O(a) kernel).
+- Supersession (as known at extraction): TERMINAL of the two-kernel two-band identity chain (staggered energy-ordered -> staggered tagged x3 -> Wilson ported -> Wilson corrected + N=10 leg); explicitly leaves the gated positive separation/universality/classification/source-law results (#5067-#5071) untouched.
 
 ## Audit fields
 

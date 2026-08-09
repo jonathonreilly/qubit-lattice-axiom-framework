@@ -35,15 +35,19 @@ The quantitative mapping/normalization closure composition at percent level — 
 - git blob: `58fc47acac2684ae9d933712a0360189a1b01568`
 - sha256: `0172a772a01be44076613288fa4b0c98301ffbd21cb6bad2e049d00e7d6b5b72`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/394_DM_QUANTITATIVE_MAPPING_NORMALIZATION_CLOSURE_NOTE_2026-04-16.md](../../archive_unlanded/historic_intake_originals/branch02/394_DM_QUANTITATIVE_MAPPING_NORMALIZATION_CLOSURE_NOTE_2026-04-16.md)
-- Lines: 133; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_quantitative_mapping_normalization_closure(.py)`
+- Lines: 133; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_dm_quantitative_mapping_normalization_closure​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/DM_FULL_CLOSURE_STATUS_NOTE_2026-04-16.md` — Closure status declaration with no proof body — rides the quantitative-closure pull.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Quotes 15+ significant digits for a chain whose upstream inputs (C -> pi only in a limit, x_F = 25 retained) carry percent-level uncertainty.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Quotes 15+ significant digits for a chain whose upstream inputs (C -> pi only in a limit, x_F = 25 retained) carry percent-level uncertainty.
+- Supersession (as known at extraction): Together with the PMNS selector closure this is the pair of closures summarized as final in DM_FULL_CLOSURE_STATUS_NOTE_2026-04-16.md (idx 361).
 
 ## Audit fields
 

@@ -35,7 +35,8 @@ The Fermi-point theorem: ten-line proof replacing superselection as the lane's p
 - git blob: `1ee94564567fe1191dae3ded39f45fa5133d2cf3`
 - sha256: `7abfc168a825b6f025a37edec8fbb52da8999c9b0e9219ebfb165bb3c7cf1c09`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/618_GENERATION_FERMI_POINT_THEOREM_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/618_GENERATION_FERMI_POINT_THEOREM_NOTE.md)
-- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_fermi_point(.py)`
+- Lines: 166; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_generation_fermi_point​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -43,9 +44,12 @@ The Fermi-point theorem: ten-line proof replacing superselection as the lane's p
 - `docs/GENERATIONS_WEAKNESS_ANALYSIS_NOTE.md` — Weakness analysis forcing Z_3-not-S_3 language.
 - `docs/GENERATION_NIELSEN_NINOMIYA_NOTE.md` — Poincare-Hopf upgrade of the orbit structure.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Leaves open the precise mapping between its 1+3+3+1 Hamming decomposition and the orbit algebra 1+1+3+3 used elsewhere in the same lane.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Leaves open the precise mapping between its 1+3+3+1 Hamming decomposition and the orbit algebra 1+1+3+3 used elsewhere in the same lane.
+- Supersession (as known at extraction): Explicitly demotes the superselection, Berry-phase, K-theory and anomaly arguments to supporting evidence; reframes CKM as inter-valley scattering between the three hw=1 Fermi points.
 
 ## Audit fields
 

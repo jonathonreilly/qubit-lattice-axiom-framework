@@ -35,15 +35,19 @@ The CKM flagship boundary: derived vs not-derived drawn exactly, three overclaim
 - git blob: `315decfe4c019a33b4f52699b86432f5c8438bea`
 - sha256: `c108913b4b330547cd93850b64354dc13cbadf489c37072aa15af60b9bfdba0e`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/193_CKM_FLAGSHIP_BOUNDARY_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/193_CKM_FLAGSHIP_BOUNDARY_NOTE.md)
-- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_c23_analytic(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_from_mass_hierarchy(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_nni_coefficients(.py)`
+- Lines: 199; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_c23_analytic​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_from_mass_hierarchy​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_nni_coefficients​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/CKM_CHARGE_SELECTION_HONEST_NOTE.md` — Demotion of the directional-charge lane (V_us 0.111 vs 0.224 documented).
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Explicitly warns against three overclaiming practices that earlier notes in the lane had used.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Explicitly warns against three overclaiming practices that earlier notes in the lane had used.
+- Supersession (as known at extraction): States that it supersedes earlier CKM boundary framings in the lane.
 
 ## Audit fields
 

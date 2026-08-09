@@ -35,15 +35,19 @@ Pointer-principle re-grounding replacing a REFUTED position-detection grounding 
 - git blob: `4d287e1f4ae664be6cd8dae4b21a68fc08beb0e7`
 - sha256: `e80d198e2cf93e4434e1a5b123d6de2e1e5ba8b4bdc089d8535461b6a43a90cb`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1602_POINTER_PRINCIPLE_GROUNDED_IN_EMERGENT_TIME_DECOHERENCE_FLAVOR_SIEVE_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch05/1602_POINTER_PRINCIPLE_GROUNDED_IN_EMERGENT_TIME_DECOHERENCE_FLAVOR_SIEVE_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 104; runners named: historic runner (unpinned, not in this packet): `scripts/pointer_principle_grounded_in_emergent_time_decoherence_runner(.py)`
+- Lines: 104; runners named: historic runner (unpinned, not in this packet): `scripts/pointer_principle_grounded_in_emergent_time_decoherence_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that a previously used grounding for the same principle was refuted.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that a previously used grounding for the same principle was refuted.
+- Supersession (as known at extraction): Replaces the REFUTED position-detection grounding (the corner basis is the momentum basis and generation-blind) with a generation-dependent energy sieve; converts the predictability sieve's open slot into a conditional grounding.
 
 ## Audit fields
 

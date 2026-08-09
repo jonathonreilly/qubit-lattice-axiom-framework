@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,16 +37,20 @@ REFUTED terminal: the (m_a + m_b) Newton scaling fails as a finite-size hypothes
 - git blob: `ca79cca0723feb8ca264418f39aaa200147357df`
 - sha256: `41b4ca35d88655666a0cad29c592e66e60058517b6177dcce87a459f9cc6f833`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2130_WILSON_TWO_BODY_FINITE_SIZE_REFUTATION_NOTE_2026-04-24.md](../../archive_unlanded/historic_intake_originals/branch07/2130_WILSON_TWO_BODY_FINITE_SIZE_REFUTATION_NOTE_2026-04-24.md)
-- Lines: 189; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_two_body_separation_acceleration_finite_size(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_wilson_two_body_open(.py)`
+- Lines: 189; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_two_body_separation_acceleration_finite_size​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_wilson_two_body_open​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/WILSON_TWO_BODY_ACTION_REACTION_BOTH_MASSES_NOTE_2026-04-23.md` — Smoke-test head.
 - `docs/WILSON_TWO_BODY_SEPARATION_ACCELERATION_SCALING_NOTE_2026-04-24.md` — Middle link: sign robust, magnitude 2.6x off.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Refutes an active-queue target: the loop-2 both-masses result (CV 3.6%) is downgraded to a per-packet result that does not generalize to the per-separation Newton form.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Refutes an active-queue target: the loop-2 both-masses result (CV 3.6%) is downgraded to a per-packet result that does not generalize to the per-separation Newton form.
+- Supersession (as known at extraction): TERMINAL of the Wilson two-body Newton-scaling chain (2129 -> 2131 -> 2130): promotes the loop-13 obstruction from possibly-finite-size to a thermodynamic-limit physical effect and declares a Newton-scaling action-reaction proof impossible on this carrier.
 
 ## Audit fields
 

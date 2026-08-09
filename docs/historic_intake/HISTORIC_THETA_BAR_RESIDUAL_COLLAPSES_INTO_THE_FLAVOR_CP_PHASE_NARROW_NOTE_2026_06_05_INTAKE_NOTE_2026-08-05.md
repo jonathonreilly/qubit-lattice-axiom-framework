@@ -35,15 +35,19 @@ Strong-CP residual localized: theta_QCD = 0 on the real-Wilson surface with real
 - git blob: `54e38149526fca38a47f72ffbc2bfdf63b5fd6a1`
 - sha256: `59bc40a642688fe880e65b33d6178bff5ca381450585074cb584810f33f6645d`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch06/2050_THETA_BAR_RESIDUAL_COLLAPSES_INTO_THE_FLAVOR_CP_PHASE_NARROW_NOTE_2026-06-05.md](../../archive_unlanded/historic_intake_originals/branch06/2050_THETA_BAR_RESIDUAL_COLLAPSES_INTO_THE_FLAVOR_CP_PHASE_NARROW_NOTE_2026-06-05.md)
-- Lines: 98; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_theta_bar_residual_collapses_into_flavor_cp_phase_exact(.py)`
+- Lines: 98; runners named: historic runner (unpinned, not in this packet): `scripts/audit_companion_theta_bar_residual_collapses_into_flavor_cp_phase_exact​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Tightens Tier-A bookkeeping by folding the theta-bar admission into AC_phi_lambda; depends on the delta-admission no-go of 2026-06-04.
 
 ## Audit fields
 

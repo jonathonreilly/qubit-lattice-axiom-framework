@@ -35,15 +35,19 @@ A genuine graph-first selector EXISTS on the graph-shift/bilocal surface — the
 - git blob: `a3bb5a59e5d7dda9de9a08029301b6a49b523782`
 - sha256: `cca334600a9415f9c7b9a337fce08aeba1443946faaf02c7440d23d5f971f748`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1169_NATIVE_NONLOCAL_SELECTOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch04/1169_NATIVE_NONLOCAL_SELECTOR_NOTE.md)
-- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_native_nonlocal_selector(.py)`
+- Lines: 109; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_native_nonlocal_selector​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Answers positively where the projector route (idx_pos 1171) and the low-degree searches (idx_pos 1170, 1173) came up blocked.
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ Four scope narrows against landed surfaces, incl. newtonian_distance_law_confirm
 - sha256: `df0ef90affa5d54213e0952bb8325f22b6cb214e6584c81188bcdbed212e2328`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/packsci01/10175_CLAIM_STATUS_CERTIFICATE.md](../../archive_unlanded/historic_intake_originals/packsci01/10175_CLAIM_STATUS_CERTIFICATE.md)
 - Lines: 41; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-'newtonian_distance_law_confirmed' is retitled a historical pointer and the universal Newtonian theorem is explicitly not asserted - a significant walk-back of a flagship-sounding claim.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: 'newtonian_distance_law_confirmed' is retitled a historical pointer and the universal Newtonian theorem is explicitly not asserted - a significant walk-back of a flagship-sounding claim.
+- Supersession (as known at extraction): DEMOTES/NARROWS FOUR LANDED SURFACES, including newtonian_distance_law_confirmed - the claim the April frontier maps (idx 10096) reported at alpha -0.97 to -1.12.
 
 ## Audit fields
 

@@ -36,14 +36,18 @@ Hostile adjudication documenting that a landed note wrote 'Normal ordering prese
 - sha256: `34cfc5414e76e00a7481c3586a24183b47c45daa56b26103339da9f1e8b31911`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/64_AUTONOMOUS_LOOP_NATURE_GRADE_REVIEW_2026-04-22.md](../../archive_unlanded/historic_intake_originals/branch01/64_AUTONOMOUS_LOOP_NATURE_GRADE_REVIEW_2026-04-22.md)
 - Lines: 366; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that a landed note wrote 'Normal ordering preserved' on the basis of relabeled magnitudes; NO-preference in current data disfavors the prediction.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that a landed note wrote 'Normal ordering preserved' on the basis of relabeled magnitudes; NO-preference in current data disfavors the prediction.
+- Supersession (as known at extraction): Adjudicates the two index notes of the same date and feeds the curated retained-science package.
 
 ## Audit fields
 

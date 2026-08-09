@@ -35,15 +35,19 @@ Cycle 892's load-bearing conditionality DISSOLVES: the gauge break survives ever
 - git blob: `110ea239c6d63230c5bf2a00f6afc189ca42f799`
 - sha256: `6d949b8b825fbe513724ea47c1bd092195635510ab3408cbf9981863b7b360b1`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/80_BARRIER_IDENTIFICATION_TESTED_CYCLE893_BOUNDED_THEOREM_NOTE_2026-07-28.md](../../archive_unlanded/historic_intake_originals/branch01/80_BARRIER_IDENTIFICATION_TESTED_CYCLE893_BOUNDED_THEOREM_NOTE_2026-07-28.md)
-- Lines: 195; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle893_barrier_identification_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle893_barrier_independent_check_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle893_barrier_identification_2026_07_28(.py)`; historic runner (unpinned, not in this packet): `frontier_cycle893_barrier_independent_check_2026_07_28(.py)`
+- Lines: 195; runners named: historic runner (unpinned, not in this packet): `../scripts/frontier_cycle893_barrier_identification_2026_07_28​.py`; historic runner (unpinned, not in this packet): `../scripts/frontier_cycle893_barrier_independent_check_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle893_barrier_identification_2026_07_28​.py`; historic runner (unpinned, not in this packet): `frontier_cycle893_barrier_independent_check_2026_07_28​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Resolves the conditionality that Cycle 892's verdict rested on; restriction gate reproduces 892's twelve expulsion rows value-for-value (9/9).
 
 ## Audit fields
 

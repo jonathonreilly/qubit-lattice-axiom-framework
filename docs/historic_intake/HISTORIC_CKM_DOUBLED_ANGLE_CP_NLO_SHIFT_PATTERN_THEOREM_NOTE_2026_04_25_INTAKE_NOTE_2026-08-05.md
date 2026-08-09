@@ -35,7 +35,8 @@ Falsifiable NLO structure: sin(2 alpha_bar) closed form + the exact -3:-2:0 doub
 - git blob: `5631a01dab4198e7511ab733c151a8c6e6c1ac25`
 - sha256: `c03baf71cf8b0253df4b8272dc466a47f1399605cfa2203175f62cc1953eea46`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/185_CKM_DOUBLED_ANGLE_CP_NLO_SHIFT_PATTERN_THEOREM_NOTE_2026-04-25.md](../../archive_unlanded/historic_intake_originals/branch01/185_CKM_DOUBLED_ANGLE_CP_NLO_SHIFT_PATTERN_THEOREM_NOTE_2026-04-25.md)
-- Lines: 319; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_doubled_angle_cp_nlo_shift_pattern(.py)`
+- Lines: 319; runners named: historic runner (unpinned, not in this packet): `scripts/canonical_plaquette_surface​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ckm_doubled_angle_cp_nlo_shift_pattern​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -46,9 +47,12 @@ Falsifiable NLO structure: sin(2 alpha_bar) closed form + the exact -3:-2:0 doub
 - `docs/CKM_BARRED_STEINER_INELLIPSE_MARDEN_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md` — Steiner inellipse/Marden foci; atlas.
 - `docs/CKM_BARRED_SYMMEDIAN_BROCARD_CIRCLE_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md` — Symmedian point/Brocard circle; atlas.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): Extends the retained protected-gamma-bar theorem (N7, N8).
 
 ## Audit fields
 

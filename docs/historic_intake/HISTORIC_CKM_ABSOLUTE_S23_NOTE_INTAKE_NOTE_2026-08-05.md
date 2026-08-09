@@ -35,7 +35,8 @@ V_cb predicted at 4.6% without V_cb input via five attacks with the best non-cir
 - git blob: `1db4f05cf9394ba62319602b1ad34021211eb61d`
 - sha256: `0195de7b2de67988b0fb838a34c28db68bb575b5c55e88db1a0fb9fad59d23ae`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch01/160_CKM_ABSOLUTE_S23_NOTE.md](../../archive_unlanded/historic_intake_originals/branch01/160_CKM_ABSOLUTE_S23_NOTE.md)
-- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_absolute_s23(.py)`
+- Lines: 135; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ckm_absolute_s23​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
@@ -50,9 +51,12 @@ V_cb predicted at 4.6% without V_cb input via five attacks with the best non-cir
 - `docs/CKM_V_CB_EXACT_NOTE.md` — Exact 2x2 block solve replacing the linear estimate.
 - `docs/CKM_V_UB_EXACT_NOTE.md` — V_ub structural suppression; factor-2 miss honest.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-none recorded
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: none recorded
+- Supersession (as known at extraction): none recorded
 
 ## Audit fields
 

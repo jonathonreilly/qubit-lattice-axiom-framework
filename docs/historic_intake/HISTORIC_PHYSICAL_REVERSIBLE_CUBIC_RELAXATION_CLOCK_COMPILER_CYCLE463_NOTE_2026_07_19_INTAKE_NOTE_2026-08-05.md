@@ -36,15 +36,19 @@ Constructive retirement WITH a live numerical-integrity flag: replaces the hard-
 - sha256: `833faec147b30d6de61de7b3a3b47afc7b7f01d97f18240f0a29e435b0c78e89`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch09/3006_PHYSICAL_REVERSIBLE_CUBIC_RELAXATION_CLOCK_COMPILER_CYCLE463_NOTE_2026-07-19.md](../../archive_unlanded/historic_intake_originals/branch09/3006_PHYSICAL_REVERSIBLE_CUBIC_RELAXATION_CLOCK_COMPILER_CYCLE463_NOTE_2026-07-19.md)
 - Lines: 348; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_M64_SOURCE_RELAXATION_BRIDGE_CYCLE465_NOTE_2026-07-19.md` — Downstream consumer: bounded source-controls result whose held residuals at 7.46e-8 sit just under the [tolerance] - inherits the unexplained cliff.
 - `docs/work_history/repo/review_feedback/PHYSICAL_COHERENT_SOURCE_FIELD_TEST_COMPOSITION_CYCLE468_NOTE_2026-07-19.md` — Downstream consumer: the source-position/neighbor-direction/reciprocal-update composition; the dense route does not replay the available [check] - inherits the cliff.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Held residuals degrade by eight orders of magnitude relative to train (5.59e-8 vs 4.44e-16), a gap carried forward through the whole downstream chain without explanation.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Held residuals degrade by eight orders of magnitude relative to train (5.59e-8 vs 4.44e-16), a gap carried forward through the whole downstream chain without explanation.
+- Supersession (as known at extraction): RETIRES Cycle 461's (idx 2824) supplied profile — the clearest supersession chain in the field lane: 461 supplied -> 463 derives locally -> 465 (2808) replaces host source placement -> 468 (2812) composes. Its held residual 5.593e-8 propagates unchanged into 465 and 468.
 
 ## Audit fields
 

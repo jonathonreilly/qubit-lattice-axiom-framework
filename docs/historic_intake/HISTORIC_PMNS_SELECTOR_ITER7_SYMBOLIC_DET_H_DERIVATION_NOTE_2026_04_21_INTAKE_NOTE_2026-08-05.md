@@ -35,15 +35,19 @@ The informative failure: no third simple identity is manifest and Tr(H) misses 2
 - git blob: `54c8e8c089f4c460a9c0cab576589dbe6506cef5`
 - sha256: `b208a688c12a8786c7efc816aaa85ffbb0080d314cf5981952c3f29818e3e1db`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch05/1590_PMNS_SELECTOR_ITER7_SYMBOLIC_DET_H_DERIVATION_NOTE_2026-04-21.md](../../archive_unlanded/historic_intake_originals/branch05/1590_PMNS_SELECTOR_ITER7_SYMBOLIC_DET_H_DERIVATION_NOTE_2026-04-21.md)
-- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter7_symbolic_det_H_derivation(.py)`
+- Lines: 130; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_pmns_selector_iter7_symbolic_det_H_derivation​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that at the iter-6 closure point Tr(H) misses 2/3 by 6.4e-3, yet iter 10 adopts Tr(H) = 2/3 as the third exact retained identity by moving the point.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that at the iter-6 closure point Tr(H) misses 2/3 by 6.4e-3, yet iter 10 adopts Tr(H) = 2/3 as the third exact retained identity by moving the point.
+- Supersession (as known at extraction): Directly contradicts the later iter-10 claim, since it records Tr(H_c) = 6.4e-3 away from 2/3 at the two-cut closure point - i.e. the third identity is not satisfied there.
 
 ## Audit fields
 

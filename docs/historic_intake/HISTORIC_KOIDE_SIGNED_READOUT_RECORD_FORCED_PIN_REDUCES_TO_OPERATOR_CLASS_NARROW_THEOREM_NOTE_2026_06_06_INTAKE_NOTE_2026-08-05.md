@@ -35,15 +35,19 @@ Signed-readout theorem: eigen-phases are Z_2 K-fixed signs the RECORD registers 
 - git blob: `fd8a8a3bc829cac5468aa7e62629e27dd3bc068f`
 - sha256: `84ca1a380b8c3c561d4da9b2bff39e8c44a15d1c8d7ea0fad0f332ea18305085`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch04/1085_KOIDE_SIGNED_READOUT_RECORD_FORCED_PIN_REDUCES_TO_OPERATOR_CLASS_NARROW_THEOREM_NOTE_2026-06-06.md](../../archive_unlanded/historic_intake_originals/branch04/1085_KOIDE_SIGNED_READOUT_RECORD_FORCED_PIN_REDUCES_TO_OPERATOR_CLASS_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Lines: 122; runners named: historic runner (unpinned, not in this packet): `scripts/signed_readout_record_forced_runner(.py)`
+- Lines: 122; runners named: historic runner (unpinned, not in this packet): `scripts/signed_readout_record_forced_runner​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Self-labelled unaudited candidate with an explicit undischarged gap; its own 'honest auditor read' section states effective status remains unaudited and that records-mechanism Hermiticity is retained only on the site factor.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Self-labelled unaudited candidate with an explicit undischarged gap; its own 'honest auditor read' section states effective status remains unaudited and that records-mechanism Hermiticity is retained only on the site factor.
+- Supersession (as known at extraction): Builds on PMNS_TRIMAXIMAL_PARTITION_IS_KCPT_ORBIT (2026-06-06) and the retained signed-vs-singular readout theorem (2026-05-29); reduces but does not discharge the chirality gate.
 
 ## Audit fields
 

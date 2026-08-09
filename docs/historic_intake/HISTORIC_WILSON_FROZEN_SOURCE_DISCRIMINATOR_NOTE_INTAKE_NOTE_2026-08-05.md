@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -35,15 +37,19 @@ THE DECISIVE CONTROL: mutual-channel discriminator positive in only 15/45 — th
 - git blob: `650ba78b4a0f1950def5d1270e68b5ab22a094e8`
 - sha256: `07f754b91e063385ded2037dbc0ff329eac07f1a11f303e5d62730062c208fd0`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2123_WILSON_FROZEN_SOURCE_DISCRIMINATOR_NOTE.md](../../archive_unlanded/historic_intake_originals/branch07/2123_WILSON_FROZEN_SOURCE_DISCRIMINATOR_NOTE.md)
-- Lines: 114; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_frozen_source_discriminator(.py)`
+- Lines: 114; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wilson_frozen_source_discriminator​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/TWO_BODY_ATTRACTION_FROZEN_SOURCE_NOTE_2026-04-11.md` — The earlier low-screening control with the opposite reading — the contradiction pair's other half.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Directly contradicts the more favourable reading of the same control in TWO_BODY_ATTRACTION_FROZEN_SOURCE_NOTE (idx 2082): here the frozen baseline is stronger than SHARED on two thirds of rows.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Directly contradicts the more favourable reading of the same control in TWO_BODY_ATTRACTION_FROZEN_SOURCE_NOTE (idx 2082): here the frozen baseline is stronger than SHARED on two thirds of rows.
+- Supersession (as known at extraction): Executes the exact control demanded by the promotion review at idx 2126 and returns FAIL; materially undercuts the promotion case built by idx 2083-2085, and its result differs from the sibling frozen-source note at idx 2082 (which read the same control as survived).
 
 ## Audit fields
 

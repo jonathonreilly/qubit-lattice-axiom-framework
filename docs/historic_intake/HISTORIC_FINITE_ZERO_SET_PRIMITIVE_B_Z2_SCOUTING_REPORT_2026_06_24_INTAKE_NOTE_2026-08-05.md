@@ -3,7 +3,7 @@
 Date: 2026-08-05
 Authority: none
 Audit: unset
-Claim type: no_go
+Claim type: bounded_theorem
 Stratum: branch_only_never_mainlined
 Era: april_pre_reset
 
@@ -13,6 +13,8 @@ audited). This wrapper registers a claim from the repo's unledgered history.
 The wrapper asserts nothing beyond what the pinned original states; the
 original's own scope, caveats and era conventions govern. Independent audit
 required before any effective status.
+
+Registered as a bounded registration of a historical negative claim; no live no-go is asserted by this wrapper — no-go discipline applies at audit adjudication.
 
 ## The claim (as stated by the original, supervisor-compressed)
 
@@ -36,14 +38,18 @@ B-Z2 scouting: the finite-zero-set primitive is SILENTLY ASSUMED nearly everywhe
 - sha256: `0db64d4c62ee8d8612644cd2d5c2848358262de7d3c2b50adde5260e05363206`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/469_FINITE_ZERO_SET_PRIMITIVE_B_Z2_SCOUTING_REPORT_2026-06-24.md](../../archive_unlanded/historic_intake_originals/branch02/469_FINITE_ZERO_SET_PRIMITIVE_B_Z2_SCOUTING_REPORT_2026-06-24.md)
 - Lines: 540; runners named: none
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Records that B-Z2 is silently assumed nearly everywhere while being independently justified nowhere; several cited rows self-disclaim regulator-independence of their own 2^d counts.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Records that B-Z2 is silently assumed nearly everywhere while being independently justified nowhere; several cited rows self-disclaim regulator-independence of their own 2^d counts.
+- Supersession (as known at extraction): Upholds the Route-2 verdict of PHI_MINUS_ONE_SELECTOR_ATTACK_PROPOSAL_2026-06-23 and feeds D3_NATIVE_UNBLOCK_PROPOSAL_2026-06-23 Clause A.
 
 ## Audit fields
 

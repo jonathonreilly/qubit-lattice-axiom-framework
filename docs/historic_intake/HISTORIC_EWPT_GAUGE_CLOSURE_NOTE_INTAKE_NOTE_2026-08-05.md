@@ -35,16 +35,20 @@ The EWPT gauge-closure claim (v/T = 0.56 +/- 0.05 above threshold) WITH its own 
 - git blob: `9fd3650ba627ff6ee81e997dc45a43b15dca741c`
 - sha256: `bdc90425d3dabd70062fc1228a2b5d81834419f825cce3bbb33cc9dfc8c7a152`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch02/443_EWPT_GAUGE_CLOSURE_NOTE.md](../../archive_unlanded/historic_intake_originals/branch02/443_EWPT_GAUGE_CLOSURE_NOTE.md)
-- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_gauge_closure(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_lattice_mc(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_strength(.py)`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis(.py)`
+- Lines: 96; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_gauge_closure​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_lattice_mc​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_ewpt_strength​.py`; historic runner (unpinned, not in this packet): `scripts/frontier_baryogenesis​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - `docs/EWPT_LATTICE_MC_NOTE.md` — MC measurement; headline depends on imported R = 1.5.
 - `docs/EWPT_STRENGTH_NOTE.md` — 2HDM strength argument; two methods below threshold.
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Two of the three attacks (0.49 floor and 0.507) fall short of the 0.52 threshold; only the MC clears it, and c = 0.3 is still literature-supplied.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Two of the three attacks (0.49 floor and 0.507) fall short of the 0.52 threshold; only the MC clears it, and c = 0.3 is still literature-supplied.
+- Supersession (as known at extraction): Replaces the imported Kajantie R = 1.5 used by EWPT_LATTICE_MC_NOTE.md (idx 444) and the earlier baryogenesis chain; a later note (DM_EWPT_NATIVE, idx 354) derives a different enhancement R_E = 2.49.
 
 ## Audit fields
 

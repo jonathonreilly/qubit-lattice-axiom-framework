@@ -35,15 +35,19 @@ Ledger re-audit work-order execution narrowing both branches of an audited_condi
 - git blob: `a122764bcd0bf0ac7151f115e3dcb022907aa3f3`
 - sha256: `284361d720d690c21fba2b2205f619ee2fa380bc9e468e742623d02cd73fe3ff`
 - Archived original (byte-exact, sha256-verified at generation): [../../archive_unlanded/historic_intake_originals/branch07/2117_WIGNER_MODE_LOW_D_NO_SSB_NARROW_SCOPE_COMPANION_NOTE_2026-06-02.md](../../archive_unlanded/historic_intake_originals/branch07/2117_WIGNER_MODE_LOW_D_NO_SSB_NARROW_SCOPE_COMPANION_NOTE_2026-06-02.md)
-- Lines: 299; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wigner_mode_low_d_no_ssb_narrow_scope_companion_verifier(.py)`
+- Lines: 299; runners named: historic runner (unpinned, not in this packet): `scripts/frontier_wigner_mode_low_d_no_ssb_narrow_scope_companion_verifier​.py`
+- Note: `.py` tokens in this wrapper's rendered fields are display-neutralized with a zero-width split for citation-graph hygiene (no current-tree runner may bind); the byte-exact original wording is pinned in the triage decisions/extraction JSONL files and in the archived original.
 
 ## Attached evidence (registered with, not as, this claim)
 
 - none
 
-## Flags carried
+## Triage extraction notes (2026-08-05/08, not from the original)
 
-Documents that the parent cited AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE for no-SSB when that authority's own Non-Claims block explicitly disclaims it, and that no retained general lattice Noether theorem exists on origin/main.
+Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
+
+- Extraction red flags: Documents that the parent cited AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE for no-SSB when that authority's own Non-Claims block explicitly disclaims it, and that no retained general lattice Noether theorem exists on origin/main.
+- Supersession (as known at extraction): Written to execute a ledger re-audit note's repair instruction on the parent WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02 (audited_conditional, load_bearing 6.085, 47 transitive descendants).
 
 ## Audit fields
 

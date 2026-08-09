@@ -1,0 +1,119 @@
+{
+ "achieved_exceptional_values": [
+  "-1",
+  "0",
+  "1"
+ ],
+ "achieved_trace_bearing_values": [
+  "-1",
+  "1"
+ ],
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "balance_plane_normals": {
+  "carried_link": [
+   -2,
+   1,
+   1
+  ],
+  "two_sector": [
+   -2,
+   1,
+   0
+  ]
+ },
+ "census_class_counts": {
+  "always_lawful": 6,
+  "lawful_at_exactly_one_value": 144,
+  "never_lawful_A_not_parallel_B": 936,
+  "never_lawful_B_zero_A_nonzero": 210
+ },
+ "certified_statements": {
+  "balance_plane_statement": "lawfulness of the modeled carried-link support family is exactly -2*w_matter + w_field + w_auxiliary = 0 (rank 1); the overall-scale direction (1,1,1) lies inside the plane, and the scale quotient leaves exactly one scalar degree of freedom, with no coefficient-field restriction imposed",
+  "chart_infinity_control_statement": "NEGATIVE CONTROL at the scale class [0:1:-1] excluded by the chart: 216 lawful supports (210 trace-bearing, 174 with nonzero matter recoil), REFUTING the rejected package's scale-quotiented global-maximum claim (216 > 90); every maximality-flavoured statement here is affine-chart scoped only and the projective classification is OPEN",
+  "chart_normal_form_statement": "on the DISCLOSED affine chart w(t) = (1, 1+t, 1-t) (covering exactly the w_matter != 0 part of the scale-quotiented plane) the balance residual is identically A + t*B with A the grading-independent sector trace and B = D[field] - D[auxiliary], for every t in every characteristic-zero coefficient field",
+  "equivariance_collapse_statement": "CONDITIONAL on the supplied sector-indexed vector-readout ansatz f_s : {6 directions} -> K^3: proper-cubic equivariance is a rank-17 condition on 18 coefficients per sector, leaving exactly 1 scalar per sector (f(d) = w * D[d]); the ansatz itself is an import and its bridge to the framework's scalar record readout is OPEN",
+  "exceptional_census_statement": "the census of all 1296 supports is complete on the chart: the lawful count is 90 at t = 0, 36 at t = +1, 36 at t = -1, and 6 at every other t (off the onset set AND off the unit point) in any characteristic-zero field; lawful trace-bearing supports exist exactly at t in {-1, +1} (30 at each, 30 with nonzero matter recoil), and the always-lawful class is exactly the 6 modeled supports, all traceless",
+  "joint_intersection_statement": "CONDITIONAL: if the modeled carried-link constraint and the modeled two-sector constraint are imposed JOINTLY (the constructions they restate are alternative candidate laws, so nothing licenses the conjunction), the rank-2 system meets the chart at exactly (1, 2, 0), chart parameter t = +1; no selection among candidate laws is stated or implied",
+  "response_identity_statement": "on the STIPULATED two-endpoint graded-source algebra the sector-summed object equals sigma times the conformal channel, so sigma-sensitivity is exactly equivalent to a nonzero sector trace, on all 1296 supports under both endpoint embeddings; whether this stipulated algebra is the physical conformal-mode response of any lane is expressly OPEN"
+ },
+ "chart_infinity": {
+  "exceeds_the_affine_unit_point_count": true,
+  "lawful_supports": 216,
+  "trace_bearing": 210,
+  "trace_bearing_with_matter_recoil": 174
+ },
+ "checks": {
+  "A_SCOPE_CONTROLS": true,
+  "B_MODEL_BUILD": true,
+  "C_EQUIVARIANCE_COLLAPSE": true,
+  "D_BALANCE_PLANES": true,
+  "E_CHART_NORMAL_FORM": true,
+  "F_EXCEPTIONAL_CENSUS": true,
+  "G_CHART_INFINITY_CONTROL": true,
+  "H_RESPONSE_IDENTITY": true,
+  "I_JOINT_INTERSECTION": true,
+  "J_FALSIFIERS": true,
+  "K_DOUBLE_BUILD": true,
+  "L_RUNTIME": true
+ },
+ "claim_type": "bounded_theorem",
+ "counts_at_exceptional_values": {
+  "-1": [
+   36,
+   30,
+   30
+  ],
+  "0": [
+   90,
+   0,
+   0
+  ],
+  "1": [
+   36,
+   30,
+   30
+  ]
+ },
+ "cycle": 876,
+ "elapsed_sec": 1.347,
+ "equivariance": {
+  "constraint_rank": 17,
+  "solution_dimension_per_sector": 1
+ },
+ "expressly_absent_claims": [
+  "no derivation of the unit grading and no derivation claim for the supplied vector-readout ansatz",
+  "no negative claim that any route family exhausts the forcing arguments (no such packet is shipped)",
+  "no global or projective maximizer claim (refuted at chart infinity; the refutation is a gate)",
+  "no provenance census of the repository",
+  "no gravity-sign visibility, escape, or wall claim",
+  "no statement about any landed certificate beyond this stipulated in-file model",
+  "no convention, primitive, owner decision surface, or selection among candidate laws"
+ ],
+ "firewall_hits": 0,
+ "free_dimension_after_scale_quotient": 1,
+ "joint_intersection": {
+  "chart_parameter": "1",
+  "rank": 2,
+  "unique_gauge_fixed_solution": [
+   "1",
+   "2",
+   "0"
+  ]
+ },
+ "lawful_count_at_generic_parameter": 6,
+ "model_digest": "c9352bd9774534b88224bf430fb25bafb117199d4e8c80001ce17f71c2a78916",
+ "question": "Cycle 876 (salvage) -- exact affine-chart algebra of the sector grading on the stipulated one-block ledger model: the conditional equivariance collapse, the modeled balance planes, the chart normal form, the complete exceptional-value census, the chart-infinity negative control, the stipulated response identity, and the conditional joint intersection.",
+ "response_identity": {
+  "embedding_independent": true,
+  "sector_sum_equals_sigma_times_conformal": true,
+  "sensitivity_iff_nonzero_sector_trace": true
+ },
+ "role": "primary",
+ "salvage": true,
+ "science_digest": "292ce628b5f93ffe569ca8a93491526c43aeafeb170093d7b218999e6534fc4e",
+ "scope": "exact finite algebra on the stipulated in-file one-block ledger model (6 directions, 3 sectors, 1296 supports); affine-chart scope with the chart infinity kept as a negative control; stdlib exact arithmetic throughout",
+ "self_sha256": "757c23214dff4343b89ba93c30efe9a220e6f7d0484fc4d6e8b4893e22186433",
+ "source_pins": []
+}

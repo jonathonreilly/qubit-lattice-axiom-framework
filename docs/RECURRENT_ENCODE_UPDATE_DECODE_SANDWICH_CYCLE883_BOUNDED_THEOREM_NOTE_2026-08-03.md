@@ -16,7 +16,7 @@
 
 **Scope:** fixed open cubic `L=2` and held `L=3`, on the one supplied clean Cycle-870 embedding. No autonomous genesis or all-volume scheduler is claimed.
 
-The direct premise surfaces are the four [Minimal Framework Axioms](MINIMAL_AXIOMS_2026-06-29.md) and the [Cycle-870 physical matter compiler](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md). The axioms supply only the physical `Z^3`/M2 setting. Cycle 870 supplies the compiled matter law, boundary/coframe, clean domain, serial word, `beta=-0.3`, and `g_contact=0.37`.
+The direct premise surfaces are the four [Minimal Framework Axioms](MINIMAL_AXIOMS_2026-06-29.md) and the [Cycle-870 physical matter compiler](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md). The axioms supply only the physical `Z^3`/M2 setting. Cycle 870 supplies the compiled matter law, boundary/coframe, clean domain, serial word, `beta=-0.3`, and `g_contact=0.37`. The Cycle-870 note is itself unaudited, and its own scientific dependency chain is unaudited; it enters here as a declared non-retained direct premise, not as ratified authority.
 
 ## Bounded theorem
 
@@ -105,7 +105,7 @@ Cycle 883 is positive and bounded. The gate is **FAIL** for any impossibility, m
 
 **N1 alternatives.** Forward-only replay fails only its spent sector. The sandwich succeeds. Local spent refusal, alternating buffers, moving garbage/entropy rails, local stabilizer pumps, and direct endpoint-incidence preparation remain open. Fewer than five normalized families are closed, and one construction succeeds.
 
-**N2 collapsed walls.** `C_D` (supplied clean fixed-box domain), `C_S` (supplied serial invocation), and `C_L` (supplied numerical law) are pairwise operationally distinct. Dirty recovery, topology, and downstream bridges are scope exclusions, not added theorem premises.
+**N2 collapsed walls.** The supplied clean fixed-box domain (`C_D`), the supplied serial invocation (`C_S`), and the supplied numerical law (`C_L`) are pairwise operationally distinct. Dirty recovery, topology, and downstream bridges are scope exclusions, not added theorem premises.
 
 **N3 hidden-wall scan.** Boundary, coframe, clean banks, factor order, invocation, and parameters are explicit. Operator induction follows only from the all-vector equality and returned `J` domain. No standard-QFT, naturality, or registered-primitive shortcut is used.
 
@@ -127,4 +127,4 @@ python3 -B scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_202
 python3 -B scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03.py
 ```
 
-Audit status remains the independent audit lane's responsibility. Effective status is pipeline-derived after audit ratification and dependency closure.
+Audit status remains the independent audit lane's responsibility. Because the direct Cycle-870 premise and its dependency chain are currently unaudited, this note is not dependency-ready for independent audit: the Cycle-870 chain must be audited and ratified first, and until then this claim stays bounded and unaudited, not retained. Effective status is pipeline-derived after audit ratification and dependency closure.

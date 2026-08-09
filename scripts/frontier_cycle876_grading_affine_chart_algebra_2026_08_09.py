@@ -2,14 +2,18 @@
 """Cycle 876 (salvage): exact affine-chart algebra of the sector grading on a
 stipulated one-block ledger model.
 
-SELF-CONTAINED.  Every definition below -- the six lattice directions, the
-three-sector supports, the balance residual, the modeled single-exchange
-supports, and the two-endpoint graded-source response algebra -- is stipulated
-IN-FILE.  No repository file is read, pinned, or imported; the runner reads
-only its own source bytes (for the self-identity hash) and writes only its own
-receipt.  The landed constructions whose shapes these stipulations restate are
-named as plain provenance text in the accompanying support note; they are not
-inputs of this runner and no conclusion below is a statement about them.
+SELF-CONTAINED IN THE SCIENTIFIC SENSE.  Every definition below -- the six
+lattice directions, the three-sector supports, the balance residual, the
+modeled single-exchange supports, and the two-endpoint graded-source response
+algebra -- is stipulated IN-FILE.  The scientific input set is EMPTY: no
+external or ancestral file is read, pinned, or imported, no AUDIT_INPUT_PATHS
+are declared, and no landed construction supplies any value below.  The one
+DECLARED package-local read is an integrity read of this file's own source
+bytes, hashed into the receipt's self-identity field; the only write is this
+runner's own receipt.  The landed constructions whose shapes these
+stipulations restate are named as plain provenance text in the accompanying
+support note; they are not inputs of this runner and no conclusion below is a
+statement about them.
 
 Scope, exactly.  On the stipulated model, with a support = (an incoming
 direction d and a sector triple (matter, field, auxiliary) of directions):
@@ -82,6 +86,8 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
+SELF_PATH = Path(__file__).resolve()
+SELF_REL = SELF_PATH.relative_to(ROOT).as_posix()
 RECEIPT_PATH = ROOT / "outputs" / (
     "grading_affine_chart_algebra_cycle876_receipt_2026_08_09.json"
 )
@@ -311,9 +317,13 @@ def scope_controls() -> dict:
     result = {
         "certificate": "A_SCOPE_CONTROLS",
         "input_closure_statement": (
-            "self-contained: no AUDIT_INPUT_PATHS are declared, no repository "
-            "file is read or pinned, and the stipulated model is defined "
-            "entirely in this file; the legacy construction modules and the "
+            "self-contained in the scientific sense: the external/ancestral "
+            "scientific input set is EMPTY -- no AUDIT_INPUT_PATHS are "
+            "declared, no landed construction or other repository artifact "
+            "supplies any certified value, and the stipulated model is "
+            "defined entirely in this file; the ONE declared package-local "
+            "read is an integrity read of this runner's own source bytes for "
+            "the self-identity hash; the legacy construction modules and the "
             "rejected Cycle-876 package runners are import-blocklisted"
         ),
         "audit_input_paths_declared": False,
@@ -322,7 +332,11 @@ def scope_controls() -> dict:
             name for name in BLOCKLISTED_MODULES if name in sys.modules
         ),
         "firewall_hits": tuple(FIREWALL.hits),
-        "repository_files_read": (),
+        "external_or_ancestral_scientific_files_read": (),
+        "package_local_integrity_files_read": (
+            (SELF_REL, "own source bytes, hashed for self_sha256"),
+        ),
+        "repository_files_read": (SELF_REL,),
         "repository_files_written": (
             "outputs/grading_affine_chart_algebra_cycle876_receipt_"
             "2026_08_09.json",
@@ -1318,8 +1332,14 @@ def main() -> int:
             "scope with the chart infinity kept as a negative control; "
             "stdlib exact arithmetic throughout"
         ),
-        "self_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
+        "self_sha256": sha256(SELF_PATH.read_bytes()).hexdigest(),
         "source_pins": [],
+        "repository_reads": {
+            "external_or_ancestral_scientific_files_read": [],
+            "package_local_integrity_files_read": [
+                [SELF_REL, "own source bytes, hashed for self_sha256"],
+            ],
+        },
     }
     receipt["science_digest"] = digest({
         "counts": cert_f["counts_at_exceptional_values"],

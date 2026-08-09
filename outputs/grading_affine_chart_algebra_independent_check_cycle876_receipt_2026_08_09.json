@@ -27,9 +27,9 @@
   "response_identity": true
  },
  "cycle": 876,
- "elapsed_sec": 1.501,
+ "elapsed_sec": 1.504,
  "pass": true,
- "primary_sha256": "757c23214dff4343b89ba93c30efe9a220e6f7d0484fc4d6e8b4893e22186433",
+ "primary_sha256": "d0aa380beadada1ed0ca958a164b679114b4f9b9f45e2f8d1614e6bd368f50b2",
  "recomputed": {
   "census_classes": {
    "always": 6,
@@ -73,9 +73,26 @@
   }
  },
  "refuted_rows": [],
+ "repository_reads": {
+  "external_or_ancestral_scientific_files_read": [],
+  "package_local_integrity_files_read": [
+   [
+    "scripts/frontier_cycle876_grading_affine_chart_algebra_2026_08_09.py",
+    "primary source, text only, hashed for the identity comparison"
+   ],
+   [
+    "outputs/grading_affine_chart_algebra_cycle876_receipt_2026_08_09.json",
+    "primary receipt, the object under refutation"
+   ],
+   [
+    "scripts/frontier_cycle876_grading_affine_chart_algebra_independent_check_2026_08_09.py",
+    "own source bytes, hashed for self_sha256"
+   ]
+  ]
+ },
  "role": "independent_check",
  "salvage": true,
- "self_sha256": "58f264d467aae5733eaf2f8e74c9835181a1d704a40ce6dfaafa750cddc61748",
+ "self_sha256": "3ba7e250ea584c2af4e9a2cee6ab962973f4c96b0b731a36a174e165c15d7fd8",
  "teeth": [
   {
    "detected": true,

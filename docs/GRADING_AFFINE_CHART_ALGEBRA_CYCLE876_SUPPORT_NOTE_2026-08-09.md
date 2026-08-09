@@ -36,10 +36,17 @@ Review record below). Independent audit still required.
 ## What the claim is, exactly
 
 An exact finite-algebra result on a stipulated in-file model, and
-nothing more. Both runners are SELF-CONTAINED: neither reads, pins, or
-imports any repository file (the primary declares no input paths at
-all; the checker's only declared inputs are the primary's source and
-receipt, read as text). The model — six signed unit lattice
+nothing more. Both runners are SELF-CONTAINED in the scientific sense:
+the external and ancestral scientific input set is EMPTY — neither
+runner reads, pins, or imports any landed construction, any ancestor
+artifact, or any file outside this package, and no certified value
+below comes from anywhere but the in-file stipulations. What each
+runner does read is declared package-local integrity reading, emitted
+in its own certificates and receipt: the primary declares no audit
+input paths and reads only its own source bytes for the self-identity
+hash; the checker reads the primary's source and the primary's receipt
+(its comparison targets, as text, never imported) plus its own source
+bytes for its self-identity hash. The model — six signed unit lattice
 directions, three sectors (matter, field, auxiliary), supports =
 (incoming direction, sector triple), the per-sector recoil ledger, the
 balance residual, the modeled single-exchange support families, and
@@ -180,7 +187,7 @@ Both runners exited 0 with all certificates PASS.
 trace_class: upstream_support
 target_claim_id: null
 target_blocker_text: "carry the durable exact finite calculations of the rejected Cycle-876 package as affine-scope bounded support: the conditional equivariance collapse, the modeled balance planes, the chart normal form, the complete exceptional-value census, the chart-infinity negative control, the stipulated response identity, the conditional joint intersection"
-source_of_blocker_text: review_salvage
+source_of_blocker_text: review_loop
 reachability_to_target: supports
 artifact_role: runner_certificate
 next_trace_action: "any future work on the sector grading starts from this affine-scope inventory plus the chart-infinity control; everything the rejected package claimed beyond it (a provenance census, a five-route negative boundary, a global maximizer, gravity-sign visibility, an owner decision surface) remains NOT ESTABLISHED and would need to be built from scratch against current-main inputs, starting with the OPEN projective classification"
@@ -189,7 +196,7 @@ next_trace_action: "any future work on the sector grading starts from this affin
 ## Status fields
 
 ```yaml
-actual_current_surface_status: bounded_theorem (exact affine-chart finite algebra on stipulated in-file definitions; unaudited)
+actual_current_surface_status: conditional-support (exact affine-chart finite algebra, conditional on the stipulated in-file definitions and the supplied vector-readout ansatz; unaudited)
 target_claim_type: bounded_theorem
 conditional_surface_status: conditional on the stipulated in-file model, the supplied vector-readout ansatz, the disclosed affine chart, and (for the joint intersection) the expressly unlicensed conjunction of the two modeled constraints
 hypothetical_axiom_status: null
@@ -356,6 +363,28 @@ start, per the paired-salvage precedent:
   `docs/audit/data/citation_graph_manifest.json` acknowledgment must
   co-land at landing time; it is deliberately absent from this
   branch-local package.
+
+Three mechanical findings from the confirmation round were fixed in a
+second pass, with no change to any computed value:
+
+- the blocker source now carries the canonical value `review_loop`;
+  the branch-local wording it replaced was not a permitted value;
+- the current surface status is now `conditional-support`. The claim
+  mix is the deciding factor: the census is exact on its computed
+  domain, but the equivariance collapse rests on the supplied
+  vector-readout ansatz and the response identity on the stipulated
+  in-file algebra, so the package as a whole stands only if those
+  supplied objects are granted. That is what landed notes call
+  conditional support — an exact finite result held up by a supplied
+  input, as with a supplied color ray or a supplied operator skeleton
+  — rather than bounded support, which scopes an unconditional result
+  to a restricted domain. `bounded_theorem` remains the claim type;
+  it is not a status value;
+- the earlier absolute claim that neither runner reads any repository
+  file was wrong and is replaced everywhere by the two-part inventory
+  above: an empty external and ancestral scientific input set (the
+  firewall claim, which holds) and explicitly listed package-local
+  integrity reads, now emitted by the runners themselves.
 
 ## Verdict
 

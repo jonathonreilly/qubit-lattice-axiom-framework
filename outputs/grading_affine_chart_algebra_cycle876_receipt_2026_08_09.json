@@ -77,7 +77,7 @@
   ]
  },
  "cycle": 876,
- "elapsed_sec": 1.347,
+ "elapsed_sec": 1.343,
  "equivariance": {
   "constraint_rank": 17,
   "solution_dimension_per_sector": 1
@@ -105,6 +105,15 @@
  "lawful_count_at_generic_parameter": 6,
  "model_digest": "c9352bd9774534b88224bf430fb25bafb117199d4e8c80001ce17f71c2a78916",
  "question": "Cycle 876 (salvage) -- exact affine-chart algebra of the sector grading on the stipulated one-block ledger model: the conditional equivariance collapse, the modeled balance planes, the chart normal form, the complete exceptional-value census, the chart-infinity negative control, the stipulated response identity, and the conditional joint intersection.",
+ "repository_reads": {
+  "external_or_ancestral_scientific_files_read": [],
+  "package_local_integrity_files_read": [
+   [
+    "scripts/frontier_cycle876_grading_affine_chart_algebra_2026_08_09.py",
+    "own source bytes, hashed for self_sha256"
+   ]
+  ]
+ },
  "response_identity": {
   "embedding_independent": true,
   "sector_sum_equals_sigma_times_conformal": true,
@@ -114,6 +123,6 @@
  "salvage": true,
  "science_digest": "292ce628b5f93ffe569ca8a93491526c43aeafeb170093d7b218999e6534fc4e",
  "scope": "exact finite algebra on the stipulated in-file one-block ledger model (6 directions, 3 sectors, 1296 supports); affine-chart scope with the chart infinity kept as a negative control; stdlib exact arithmetic throughout",
- "self_sha256": "757c23214dff4343b89ba93c30efe9a220e6f7d0484fc4d6e8b4893e22186433",
+ "self_sha256": "d0aa380beadada1ed0ca958a164b679114b4f9b9f45e2f8d1614e6bd368f50b2",
  "source_pins": []
 }

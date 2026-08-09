@@ -11,6 +11,14 @@ algebra transcription, and its own joint-constraint elimination.  The primary
 runner is read as TEXT ONLY (for its identity hash); it is never imported,
 and no computational code is shared with it.
 
+Read inventory, stated exactly.  The external/ancestral scientific input set
+is EMPTY: no landed construction, no ancestor artifact, and no file outside
+this package supplies any value below.  Three package-local reads ARE made
+and are declared in certificate A: the primary's source (text only, for the
+identity hash), the primary's receipt (the object this checker tries to
+refute), and this file's own source bytes (integrity read for its own
+self-identity hash).
+
 Every advertised claim-survival row is a real recomputed comparison that
 fails closed: the checker rebuilds each value from its own model and compares
 it against the primary receipt, and the certified-statement texts are
@@ -44,6 +52,8 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
+SELF_PATH = Path(__file__).resolve()
+SELF_REL = SELF_PATH.relative_to(ROOT).as_posix()
 RECEIPT_PATH = ROOT / "outputs" / (
     "grading_affine_chart_algebra_independent_check_cycle876_receipt_"
     "2026_08_09.json"
@@ -722,6 +732,25 @@ def main() -> int:
         "primary_declares_no_source_pins":
             receipt.get("source_pins") == [],
         "checker_shares_no_computational_code_with_the_primary": True,
+        "read_inventory_statement": (
+            "the external/ancestral scientific input set is EMPTY: no landed "
+            "construction, ancestor artifact, or file outside this package "
+            "supplies any recomputed value; the declared package-local reads "
+            "are the primary source and the primary receipt (the comparison "
+            "targets, read as text, never imported) plus this checker's own "
+            "source bytes for its self-identity hash"
+        ),
+        "external_or_ancestral_scientific_files_read": (),
+        "package_local_integrity_files_read": (
+            (AUDIT_INPUT_PATHS[0],
+             "primary source, text only, hashed for the identity comparison"),
+            (AUDIT_INPUT_PATHS[1],
+             "primary receipt, the object under refutation"),
+            (SELF_REL, "own source bytes, hashed for self_sha256"),
+        ),
+        "repository_files_read": (
+            AUDIT_INPUT_PATHS[0], AUDIT_INPUT_PATHS[1], SELF_REL,
+        ),
         "blocked_modules_loaded": tuple(
             name for name in BLOCKLISTED_MODULES if name in sys.modules
         ),
@@ -961,7 +990,18 @@ def main() -> int:
             "joint_solution": computed["joint_solution"],
         },
         "primary_sha256": primary_sha,
-        "self_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
+        "self_sha256": sha256(SELF_PATH.read_bytes()).hexdigest(),
+        "repository_reads": {
+            "external_or_ancestral_scientific_files_read": [],
+            "package_local_integrity_files_read": [
+                [AUDIT_INPUT_PATHS[0],
+                 "primary source, text only, hashed for the identity "
+                 "comparison"],
+                [AUDIT_INPUT_PATHS[1],
+                 "primary receipt, the object under refutation"],
+                [SELF_REL, "own source bytes, hashed for self_sha256"],
+            ],
+        },
         "elapsed_sec": round(elapsed, 3),
         "pass": overall,
     }

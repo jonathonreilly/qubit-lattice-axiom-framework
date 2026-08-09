@@ -1,0 +1,112 @@
+{
+ "cycle": 747,
+ "failures": 0,
+ "gates": 34,
+ "headline": "The least number of pieces that can carry the flip partner of the four charge is at least eighteen and at most twenty. The all-marked reading needs exactly eight pieces, and its eight-piece carriers are exactly the 192 sets of eight pieces that no cutting uses twice, one for each piece. Each of the eleven anchored sixteen-piece carriers of four meets one of those in at most two pieces, so their sums have twenty pieces at the smallest, and all 512 of them check back as carriers of the flip partner. Below that the anchored search finds no carrier of the flip partner at any even size from two up to sixteen, asked at sixteen of exactly the 204 cells and 2004 splits that deliver the eleven anchored carriers of four. All 48 cube symmetries fix each basic reading and carry any piece to any other, so an empty anchored sweep at a size is empty for the whole system at that size. At eighteen the search meets all 285 anchored licensed cells and records none, with 26 of its 4796 splits refused by the table guard, so eighteen is measured with a stated gap.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_CYCLE747_NOTE_2026-08-08.md",
+ "recorded_output": "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08_cold_2026-08-08.txt",
+ "results": {
+  "all_marked_reading_carriers": {
+   "basic_readings_addition_group_order": 8,
+   "carriers_through_each_piece": 8,
+   "eight_piece_sets_no_cutting_uses_twice": 192,
+   "least_size": 8,
+   "non_sharing_partners_per_piece": 33,
+   "of_those_meeting_every_cutting_exactly_once": 192,
+   "shared_pieces_between_two_carriers": {
+    "0": 15072,
+    "1": 1920,
+    "2": 960,
+    "4": 384
+   }
+  },
+  "anchored_search_below_eighteen": {
+   "carriers_recorded": 19,
+   "direct_recheck_failures": 0,
+   "every_sweep_complete": true,
+   "flip_partner_carriers_by_size": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "four_carriers_by_size": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11
+   ],
+   "matched_cells_at_sixteen": 204,
+   "matched_splits_at_sixteen": 2004,
+   "sizes": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+   ]
+  },
+  "anchoring_licence": {
+   "basic_readings_checked": 8,
+   "cube_symmetries_fixing_each_basic_reading": 48,
+   "they_carry_any_piece_to_any_other": true
+  },
+  "bracket": {
+   "at_most": 20,
+   "least_size_flip_partner_at_least": 18
+  },
+  "ceiling_at_twenty": {
+   "direct_recheck_failures": 0,
+   "each_carrier_met_with_multiplicity": 128,
+   "largest_overlap": 2,
+   "overlap_profiles": 5,
+   "shared_pieces_eleven_against_the_192": {
+    "0": 1216,
+    "1": 384,
+    "2": 512
+   },
+   "twenty_piece_carriers_of_the_flip_partner": 512
+  },
+  "eighteen": {
+   "anchored_licensed_cells": 285,
+   "anchored_licensed_cells_met": 285,
+   "carriers_found": 0,
+   "cells_carrying_a_refusal": 11,
+   "complete": false,
+   "refused_join_rows_million_high": 21766,
+   "refused_join_rows_million_low": 31,
+   "splits": 4796,
+   "splits_refused": 26,
+   "splits_searched": 4770,
+   "table_guard_rows_million": 30
+  },
+  "marks_and_forced_least_sizes": {
+   "all_marked_reading_marks": 15800,
+   "flip_partner_marks": 10136,
+   "four_marks": 5664,
+   "least_size_forced_all_marked": 8,
+   "least_size_forced_flip_partner": 6,
+   "least_size_forced_four": 3
+  },
+  "rebuilt_system": {
+   "cuttings": 15800,
+   "cuttings_per_piece": 1975,
+   "pieces": 192,
+   "pieces_per_cutting": 24
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py",
+ "status": "PASS"
+}

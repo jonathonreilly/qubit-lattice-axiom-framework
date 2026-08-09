@@ -1,12 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/audit_companion_bae_probe_cl3_bivector_block01_2026_05_17.py
-runner_sha256: 53dd772e7f1b84cea09b78feef1c62487ac2cac7e2a93af6f9c87d3370ab4645
-input_fingerprint_sha256: daff061f64aa5cf2045c2a73cc5e2ded1107ebd8dff0f4f81de172ae710b4110
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.32
-status: ok
------ stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17
@@ -92,7 +83,7 @@ Part 7: Verdict synthesis — AV8 outcome
 ----------------------------------------------------------------------------------------
 Part 8: Review hygiene
 ----------------------------------------------------------------------------------------
-  [PASS] Note exists and is non-empty  (KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md: 42576 bytes)
+  [PASS] Note exists and is non-empty  (KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md: 42686 bytes)
   [PASS] Note declares status authority as audit lane only
   [PASS] Note declares claim_type bounded_theorem
   [PASS] Note does NOT claim positive closure of F1
@@ -113,6 +104,3 @@ lattice_wide: checked and not executed — nothing in this probe extends past th
 ========================================================================================
 === TOTAL: PASS=47, FAIL=0 ===
 ========================================================================================
-
------ stderr -----
-

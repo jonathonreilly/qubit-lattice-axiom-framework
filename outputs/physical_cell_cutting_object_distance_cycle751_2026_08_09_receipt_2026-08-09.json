@@ -1,0 +1,83 @@
+{
+ "cycle": 751,
+ "failures": 0,
+ "gates": 43,
+ "headline": "The shape a smallest carrier of the charge called four makes is the distance the whole object already has. Join every one of the 192 pieces to every other that shares none of the 15800 cuttings with it. The result is one object, 33 joins at every piece, 3168 joins in all, carried to itself by all 384 symmetries of the table, with no two pieces more than three steps apart: 3168 pairs at one step, 12576 at two, 2592 at three, confirmed on all 18336 pairs by walking outward and by multiplying the join table. Put a carrier back into it and every pair its own shape places one, two or three steps apart stands exactly that far in the whole object, 10752 of 10752. Rows one and two of that are forced by restricting a relation; the measurement is the 2496 pairs at three steps, which the object was free to shorten through a piece outside the carrier and did not shorten in any. The single place a carrier bends is the eight far corners of a four-cube, 480 pairs, which fold to three steps because nothing in the object stands farther, 0 at four. The two three-cubes of a split carrier interleave rather than separate: 4032 pairs across them at two steps and 576 at three. Sixteen pieces taken evenly spaced instead fail this in 730 of 768 control sets. The surround is not homogeneous and the runner measures it: common-joiner counts take 9 shapes at one step and 10 at three, so the four-cube is produced by carrying the charge rather than inherited from an even object. The same unevenness bounds the preceding cycle's count-to-distance law to a carrier: over the whole object the shared count fixes the step for 44 of the 47 counts that occur, failing at 202, 212 and 250 on 1632 pairs.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_OBJECT_DISTANCE_CYCLE751_NOTE_2026-08-09.md",
+ "recorded_output": "outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_cold_2026-08-09.txt",
+ "results": {
+  "across_the_two_three_cubes": {
+   "pairs_at_three_steps": 576,
+   "pairs_at_two_steps": 4032
+  },
+  "carrier_shapes": {
+   "four_cubes": 60,
+   "neither_shape": 0,
+   "two_three_cubes": 72
+  },
+  "control_evenly_spaced_sixteens": {
+   "carrier_pairs_shortened_from_outside": 0,
+   "carrier_pairs_tested": 10752,
+   "control_sets": 768,
+   "shortened_from_outside": 730,
+   "spacings": 4
+  },
+  "count_to_distance_over_the_whole_object": {
+   "counts_fixing_the_step": 44,
+   "counts_not_fixing_the_step": [
+    202,
+    212,
+    250
+   ],
+   "counts_occurring": 47,
+   "pairs_on_those_counts": 1632
+  },
+  "far_corners_of_a_four_cube": {
+   "fold_to_three_because_nothing_stands_farther": true,
+   "pairs": 480,
+   "still_at_four_steps": 0
+  },
+  "the_never_sharing_object": {
+   "greatest_steps": 3,
+   "joins": 3168,
+   "joins_at_every_piece": 33,
+   "pairs_agreeing_two_independent_ways": 18336,
+   "pairs_at_one_step": 3168,
+   "pairs_at_three_steps": 2592,
+   "pairs_at_two_steps": 12576,
+   "symmetries_carrying_joins_to_joins": 384
+  },
+  "the_object": {
+   "carriers_of_four_at_sixteen": 132,
+   "carriers_through_each_piece": 11,
+   "cuttings": 15800,
+   "cuttings_four_marks": 5664,
+   "cuttings_through_a_piece": 1975,
+   "pieces": 192,
+   "pieces_per_cutting": 24,
+   "symmetries_of_the_table": 384
+  },
+  "the_object_is_not_evenly_built": {
+   "common_joiner_shapes_at_one_step": 9,
+   "common_joiner_shapes_at_three_steps": 10
+  },
+  "the_shape_is_the_objects_own_distance": {
+   "at_three_steps_and_not_forced_by_construction": 2496,
+   "of_those_standing_that_far_in_the_object": 10752,
+   "pairs_within_three_steps_in_the_shape": 10752,
+   "rows_forced_by_restricting_the_relation": [
+    "one step",
+    "two steps"
+   ]
+  },
+  "wrong_value_rejectors": {
+   "four_cube_accepted_against_itself": true,
+   "four_cube_with_two_joins_moved_refused": true,
+   "joins_at_every_corner_of_the_rejected_table": 4,
+   "search_reads_the_joins_alone_never_a_shared_count": true
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py",
+ "status": "PASS"
+}

@@ -1,3 +1,0 @@
-Findings written to [RL_CONFIRM2_FINDINGS_PR5995.md](</Users/jonBridger/Toy Physics/.claude/worktrees/rl-5995/RL_CONFIRM2_FINDINGS_PR5995.md>). S4 passes; S2 fails only because the queue item’s `Disposition` is not a permitted canonical value. No package files were edited.
-
-CONFIRMATION: FAIL — S2's active-queue item does not use a permitted Disposition value

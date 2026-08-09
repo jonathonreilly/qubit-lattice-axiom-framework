@@ -1,3 +1,0 @@
-Findings written to [RL_CONFIRM3_FINDINGS_PR5995.md](/Users/jonBridger/Toy%20Physics/.claude/worktrees/rl-5995/RL_CONFIRM3_FINDINGS_PR5995.md).
-
-CONFIRMATION: PASS

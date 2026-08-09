@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
-runner_sha256: 88a88d95641cc73f8377e389cd805bf951e52b39f99059424022dc41158c1809
+runner_sha256: 31176240c94d613c187649ff548550f5af8da951ec3f4987b87db8dd2d01c02a
+input_fingerprint_sha256: c538b1628a0a76f9451b12bb9694caf18eac6a88713b4aa78cc7d09380f9adf9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.97
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
@@ -13,12 +14,12 @@ A. source and registry boundaries
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/audit/data/premise_decision_history.json
-[PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
 [PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
 [PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: all four dependency ledger row shards under docs/audit/data/ledger
 [PASS] decision history has no live premise inputs
 [PASS] AC minimum decomposition still includes R-eta
 [PASS] note routes current residual to open gate
@@ -167,7 +168,7 @@ G. note/source cross-checks
 ========================================================================================
 H. N5 execution certificate: what this runner resolves
 ========================================================================================
-per_element: checked — the target decomposes into individual defect summands and each is resolved exactly: L = 2/9 per summand, three of them give S_sum = 2/3, and the runner confirms Phi = 3 * delta exactly while the fixed-locus source is verified to exclude any physical single-summand readout, so no per-element readout is being borrowed.
+per_element: checked — the target decomposes into individual defect summands whose per-summand value L = 2/9 is a DEPENDENCY INPUT taken from the linked fixed-locus theorem note, not derived or reconstructed in this runner (the runner's only source-side check is a text pin that the note carries L_C_3(N) and 2/9); what is executed here is the exact arithmetic S_sum = 3L = 2/3 and Phi = 3 * delta, plus the verification that the fixed-locus source excludes any physical single-summand readout, so no per-element readout is being borrowed.
 per_site: checked and not executed — no lattice appears in this runner at all; the C3 fixed locus is an orbit-level object with no site index, so there is nothing here that could be resolved site by site and no site-resolved claim is made.
 per_mode: checked — the available character-mode angles are enumerated and four inequalities against the targets are executed, one mode angle at a time: the C3 root angle 2*pi/3 != Phi = 2/3; the canonical U(1) packaging 2*pi*L = 4*pi/9 != delta = 2/9 and != Phi; and 2*pi*S_sum = 4*pi/3 != Phi. The two remaining mode-angle-versus-delta pairings are not executed here.
 per_block: checked and not executed — this runner carries no block decomposition; the C3 fixed locus is handled as one indivisible orbit-level object and no sub-block of it is ever separately resolved, so no block-resolved statement is available from the executed evidence.

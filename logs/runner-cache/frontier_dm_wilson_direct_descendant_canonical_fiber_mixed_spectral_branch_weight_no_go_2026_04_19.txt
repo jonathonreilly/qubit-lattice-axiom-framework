@@ -1,38 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_mixed_spectral_branch_weight_no_go_2026_04_19.py
-runner_sha256: 4420cc28439e9b55ad098b3ca78b05e82c04c6ce80a3e763e435810ea4ade7b6
+runner_sha256: 731bc32667bca81bf3151f3b2d5bf63ed0ec499e706c3caafdc42adae2e01aaf
+input_fingerprint_sha256: 8575c369766771f6facccd94fd8fc88236551f8aa5cb2c1cd5e2ca53bea9f50f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 23.16
+elapsed_sec: 11.39
 status: ok
 ----- stdout -----
 ========================================================================================
 DM WILSON DIRECT-DESCENDANT CANONICAL-FIBER MIXED SPECTRAL/BRANCH-WEIGHT NO-GO
 ========================================================================================
+numerical environment: python 3.12.8, numpy 2.4.1, scipy 1.17.0, machine arm64
 
 ========================================================================================
 PART 1: THE MIXED FAMILY LIVES ON THE SAME EXACT POSITIVE CANONICAL FIBER
 ========================================================================================
-  [PASS] Both sampled mixed-law points are exact positive sources on the canonical favored-column fiber  (alpha=0 pack=[0.394212 0.000325 0.000476 0.026684], alpha=1 pack=[0.394999 0.000024 0.000231 0.026754])
+  [PASS] Both sampled mixed-law points are exact positive sources on the canonical favored-column fiber  (alpha=0 pack=[0.394192 0.000366 0.000359 0.02668 ], alpha=1 pack=[0.394995 0.000011 0.001995 0.026734])
   [PASS] So the mixed family F_alpha = Shannon(normalized spectrum) + alpha log Delta_src is a same-carrier law family on L_e / H_e  (the branch-discriminant and normalized-spectrum factors coexist on the exact local source fiber)
 
 ========================================================================================
 PART 2: THE WEIGHT ALPHA IS LOAD-BEARING
 ========================================================================================
-  [PASS] Alpha = 0 and alpha = 1 select distinct exact positive-fiber sources  ((source sep, pack sep)=(0.017945765793, 0.000880212039))
-  [PASS] Each sampled law prefers its own selected point over the point chosen by the other law  (F0(S0,S1)=(0.798000492593,0.797726103625), F1(S0,S1)=(-2.825685975928,-2.823332369599))
+  [PASS] Alpha = 0 and alpha = 1 select distinct exact positive-fiber sources  ((source sep, pack sep)=(0.017729003162, 0.001857216373))
+  [PASS] Each sampled law prefers its own selected point over the point chosen by the other law  (F0(S0,S1)=(0.798006059761,0.797589128331), F1(S0,S1)=(-2.825853027757,-2.824215159135))
 
 ========================================================================================
 PART 3: THE FAMILY TRADES NORMALIZED SPECTRAL ISOTROPY AGAINST RAW BRANCH MARGIN
 ========================================================================================
-  [PASS] Turning on alpha raises the raw branch-discriminant margin Delta_src  (Delta(S0,S1)=(0.026684124764,0.026754342745))
-  [PASS] The same turn simultaneously lowers the normalized spectral-isotropy score  (H(S0,S1)=(0.798000492593,0.797726103625))
-  [PASS] The right-sensitive even-response channels move materially under the alpha reweighting  ((E1,E2)_alpha=0=[0.000325 0.000476], (E1,E2)_alpha=1=[0.000024 0.000231])
+  [PASS] Turning on alpha raises the raw branch-discriminant margin Delta_src  (Delta(S0,S1)=(0.026679518975,0.026734396414))
+  [PASS] The same turn simultaneously lowers the normalized spectral-isotropy score  (H(S0,S1)=(0.798006059761,0.797589128331))
+  [PASS] The right-sensitive even-response channels move materially under the alpha reweighting  ((E1,E2)_alpha=0=[0.000366 0.000359], (E1,E2)_alpha=1=[0.000011 0.001995])
 
 ========================================================================================
 PART 4: THIS NATURAL MIXED FAMILY STILL DOES NOT RECOVER THE CONSTRUCTIVE ROOT
 ========================================================================================
-  [PASS] For both sampled alphas, the aligned-seed exact eta_1 = 1 crossing remains unique but leaves the constructive chamber because E1 < 0  (alpha=0: lambda=0.857168273739, root pack=[ 1.        0.340871 -0.017737  0.029036  0.029777] | alpha=1: lambda=0.856442175541, root pack=[ 1.        0.341341 -0.018158  0.030313  0.029854])
+  [PASS] For both sampled alphas, the aligned-seed exact eta_1 = 1 crossing remains unique but leaves the constructive chamber because E1 < 0  (alpha=0: lambda=0.857207025945, root pack=[ 1.        0.340874 -0.017698  0.028874  0.029772] | alpha=1: lambda=0.856350513944, root pack=[ 1.        0.341185 -0.018148  0.031731  0.029844])
 
 ========================================================================================
 PART 5: BOTTOM LINE
@@ -40,12 +42,12 @@ PART 5: BOTTOM LINE
   [PASS] The current branch therefore does not yet fix the weighting between normalized spectral isotropy and raw branch margin on the canonical source fiber  (alpha remains a real free selector coefficient in a natural same-carrier law family)
   [PASS] So the sharp remaining DM source-fiber object is no longer a vague microscopic law, but the unique mixed spectral/right-sensitive weighting theorem, or a deeper bridge that replaces it  (pure Shannon and the alpha-weighted branch-margin family are now both explicit and runner-tested)
 
-  alpha=0 source5 = [0.687782 0.633265 0.111723 0.229893 1.436355]
-  alpha=0 pack4   = [0.394212 0.000325 0.000476 0.026684]
-  alpha=0 spec    = [0.632539 0.320514 0.046947]
-  alpha=1 source5 = [0.682629 0.638076 0.120318 0.215819 1.436997]
-  alpha=1 pack4   = [0.394999 0.000024 0.000231 0.026754]
-  alpha=1 spec    = [0.632999 0.320034 0.046967]
+  alpha=0 source5 = [0.687984 0.633083 0.111299 0.230527 1.436475]
+  alpha=0 pack4   = [0.394192 0.000366 0.000359 0.02668 ]
+  alpha=0 spec    = [0.632499 0.320566 0.046936]
+  alpha=1 source5 = [0.683475 0.637637 0.12014  0.216601 1.435399]
+  alpha=1 pack4   = [0.394995 0.000011 0.001995 0.026734]
+  alpha=1 spec    = [0.63316  0.319886 0.046954]
 
 ========================================================================================
 PART 6: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES

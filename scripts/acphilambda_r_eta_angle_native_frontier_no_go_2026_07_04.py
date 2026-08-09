@@ -14,12 +14,39 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md"
 DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
-LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
+# Canonical audit rows are SHARDED under docs/audit/data/ledger/<2-char>/.
+# The monolithic docs/audit/data/audit_ledger.json is a gitignored local
+# compatibility artifact and must not be read: a clean checkout lacks it.
+LEDGER_DIR = DOCS / "audit" / "data" / "ledger"
 RADIAN = DOCS / "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md"
 FIXED = DOCS / "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
 BRANNEN = DOCS / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 RECORD = DOCS / "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 REGISTRY_NOTE = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+
+SOURCE_ROW_NOTE_PATHS = (
+    "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+    "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+)
+
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results; the runner-cache fingerprints them so input
+# drift stales the cache (see scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "docs/audit/data/premise_decision_history.json",
+    "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+    "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+    "docs/audit/data/ledger/ko/koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24.json",
+    "docs/audit/data/ledger/ko/koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05.json",
+    "docs/audit/data/ledger/br/brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15.json",
+    "docs/audit/data/ledger/re/record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -50,12 +77,18 @@ def flat(text: str) -> str:
     return re.sub(r"\s+", " ", text)
 
 
+def ledger_shard_for(note_path: str) -> Path:
+    rid = Path(note_path).name[:-3].lower()
+    return LEDGER_DIR / rid[:2] / f"{rid}.json"
+
+
 def ledger_row_by_path(path: str) -> dict:
-    rows = json.loads(read(LEDGER))["rows"]
-    matches = [row for row in rows.values() if row.get("note_path") == path]
-    if len(matches) != 1:
-        raise AssertionError(f"ledger matches for {path}: {len(matches)}")
-    return matches[0]
+    row = json.loads(read(ledger_shard_for(path)))
+    if row.get("note_path") != path:
+        raise AssertionError(
+            f"ledger shard note_path mismatch for {path}: {row.get('note_path')}"
+        )
+    return row
 
 
 def exact_nonzero(expr: sp.Expr) -> bool:
@@ -74,8 +107,14 @@ def main() -> int:
     registry_note = read(REGISTRY_NOTE)
 
     section("A. source and registry boundaries")
-    for path in [NOTE, DECISION_HISTORY, LEDGER, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
+    for path in [NOTE, DECISION_HISTORY, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
+    shard_paths = [ledger_shard_for(p) for p in SOURCE_ROW_NOTE_PATHS]
+    check(
+        "exists: all four dependency ledger row shards under docs/audit/data/ledger",
+        all(p.exists() for p in shard_paths),
+        [str(p.relative_to(ROOT)) for p in shard_paths if not p.exists()],
+    )
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
@@ -95,12 +134,7 @@ def main() -> int:
         "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry_note,
     )
 
-    for source_path in [
-        "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
-        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
-        "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
-    ]:
+    for source_path in SOURCE_ROW_NOTE_PATHS:
         row = ledger_row_by_path(source_path)
         check(f"{Path(source_path).name} context row is present", bool(row), row.get("effective_status"))
 
@@ -227,10 +261,13 @@ def main() -> int:
     section("H. N5 execution certificate: what this runner resolves")
     print(
         "per_element: checked — the target decomposes into individual defect "
-        f"summands and each is resolved exactly: L = {L} per summand, three of them "
-        f"give S_sum = {S_sum}, and the runner confirms Phi = 3 * delta exactly while "
-        "the fixed-locus source is verified to exclude any physical single-summand "
-        "readout, so no per-element readout is being borrowed."
+        f"summands whose per-summand value L = {L} is a DEPENDENCY INPUT taken from "
+        "the linked fixed-locus theorem note, not derived or reconstructed in this "
+        "runner (the runner's only source-side check is a text pin that the note "
+        "carries L_C_3(N) and 2/9); what is executed here is the exact arithmetic "
+        f"S_sum = 3L = {S_sum} and Phi = 3 * delta, plus the verification that the "
+        "fixed-locus source excludes any physical single-summand readout, so no "
+        "per-element readout is being borrowed."
     )
     print(
         "per_site: checked and not executed — no lattice appears in this runner at "

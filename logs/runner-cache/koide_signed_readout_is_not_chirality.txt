@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_signed_readout_is_not_chirality.py
-runner_sha256: c8799abd25a6306044e6ca00d0148751a0c5a49d99771a1cdc64a022c27e983b
+runner_sha256: e1c6337c7968985510e71f2ab1b308c4a20e1c1a48e8a19077c2bd58d166bb85
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -60,8 +60,12 @@ PART 4 -- THE CORE DISCRIMINATOR: signed-eigenvalue readout (giving 2/3) lives o
 ==============================================================================
 [PASS] A: the Q(signed-eigenvalue)=2/3 operator (circulant) COMMUTES with Gamma_chi
 [PASS] B: the anticommuting operator's EIGENVALUE readout is Q=infinity, NOT 2/3
+[PASS] C1: on the full Hermitian circulant class, {H_circ, Gamma_chi} = 2 H_circ Gamma_chi identically (since [H_circ, Gamma_chi] = 0)
+[PASS] C2: Gamma_chi^2 = I makes Gamma_chi invertible, so {H_circ, Gamma_chi} * Gamma_chi = 2 H_circ identically — {H_circ, Gamma_chi} = 0 forces H_circ = 0 on the full class
+[PASS] C3: full-class symbolic solve — {H_circ, Gamma_chi} = 0 has ONLY the zero solution a = b_r = b_i = 0 (complex-Hermitian coefficients included; solver return asserted)  -- solutions = [{a: 0, b_i: 0, b_r: 0}]
 [PASS] real Hermitian circulant requires b=c (symmetric)
-[PASS] C: NO nonzero Hermitian circulant anticommutes with Gamma_chi (comm(R) ∩ anticomm(Gamma_chi) = {0}, retained no-go)  -- Brannen-Q circulant class and anticommuting class are DISJOINT except at 0
+[PASS] C4: real-symmetric subfamily solve — anticommutation forces av = bv = 0 (fail-closed: empty solver return fails)  -- solutions = [{av: 0, bv: 0}]
+[PASS] C5 (witness only): anticommutator nonzero on all three Hermitian-circulant basis directions I, R+R^2, and i(R-R^2)  -- supplementary to the full-class kernel argument C1-C3
 
   => The signed-eigenvalue Brannen readout (Q=2/3 at r=1/2) is the readout of the
      operator that COMMUTES with Gamma_chi. Chirality (anticommutation) is a DIFFERENT,
@@ -104,11 +108,11 @@ PART 8 -- N5 execution certificate: what this runner resolves, per class
 per_element: checked — the operator identities are resolved entry by entry on 3x3 matrices: Gamma_chi = (2/3)J - I matches the circulant (-1/3, 2/3, 2/3) in all nine entries, [Gamma_chi, R] and [H_circ, Gamma_chi] vanish in all nine, and the circulant/Gamma_chi anticommutator is nonzero on all three Hermitian-circulant basis directions I, R+R^2, and i(R-R^2).
 per_site: checked and not executed — every operator here lives on the internal three-generation R^3 factor; the Z^3 lattice baseline named in the header is never instantiated, so no spatial site carries any of these operators and no site-resolved statement about the readout is produced.
 per_mode: checked — the three Z3 character modes are resolved individually with Gamma_chi grades (+1, -1, -1): at theta=pi the grade/sign pairs are [(1, -1), (-1, 1), (-1, 1)] so the +1 singlet mode is the negative one, while at theta=0.9 they are [(1, 1), (-1, -1), (-1, 1)] so a -1 doublet mode is negative — the sign roams across grades.
-per_block: checked — the Gamma_chi grading splits the generation factor into a 1-dimensional +1 block and a 2-dimensional -1 block, and the two operator classes over those blocks are disjoint: no nonzero Hermitian circulant anticommutes with Gamma_chi, the anticommuting representative having spectrum [-sqrt(6)/3, 0, sqrt(6)/3] summing to 0.
-lattice_wide: checked and not executed — the Lattice = Z^3 and Qubit = M_2(C) baselines are cited as provenance only and nothing is evaluated beyond the single three-generation factor, so the readout contrast Q(signed) = 0.666667 vs Q(singular) = 0.415985 is certified at that scope alone, with PASS=33, FAIL=0.
+per_block: checked — the Gamma_chi grading splits the generation factor into a 1-dimensional +1 block and a 2-dimensional -1 block, and the two operator classes over those blocks are disjoint: no nonzero Hermitian circulant anticommutes with Gamma_chi, executed as the full-class kernel argument (every circulant commutes with Gamma_chi, so {H, Gamma_chi} = 2 H Gamma_chi, and Gamma_chi^2 = I forces H = 0) plus the asserted symbolic solve over the complex-Hermitian coefficients, the anticommuting representative having spectrum [-sqrt(6)/3, 0, sqrt(6)/3] summing to 0.
+lattice_wide: checked and not executed — the Lattice = Z^3 and Qubit = M_2(C) baselines are cited as provenance only and nothing is evaluated beyond the single three-generation factor, so the readout contrast Q(signed) = 0.666667 vs Q(singular) = 0.415985 is certified at that scope alone, with PASS=37, FAIL=0.
 
 ==============================================================================
-SCORECARD: PASS=33 FAIL=0
+SCORECARD: PASS=37 FAIL=0
 ==============================================================================
 
 ----- stderr -----

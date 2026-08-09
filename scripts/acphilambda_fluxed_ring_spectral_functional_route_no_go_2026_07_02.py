@@ -7,6 +7,16 @@ from pathlib import Path
 import sympy as sp
 
 
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results; the runner-cache fingerprints them so input
+# drift stales the cache (see scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md",
+    "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
+
 PASS = 0
 FAIL = 0
 
@@ -293,7 +303,8 @@ def main() -> int:
     print(
         "per_mode: checked and not executed — no individual eigenvalue is computed "
         "anywhere in this runner; the spectrum enters only through its elementary "
-        "symmetric functions (all e_k flux-blind, e_{N-1} = N^2, det L = 2 - 2 cos Phi, "
+        "symmetric functions (e_k flux-blind for every k < N, e_{N-1} = N^2, while "
+        "e_N = det L = 2 - 2 cos Phi is exactly where the flux lives, "
         f"Tr L^-1 = {trace_inverse_closed}), so nothing is certified mode by mode."
     )
     print(

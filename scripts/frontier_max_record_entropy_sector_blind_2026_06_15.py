@@ -27,6 +27,13 @@ NOTE_PATH = (
     / "FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md"
 )
 
+# Source-controlled repository inputs whose bytes this runner reads to
+# establish PASS results; the runner-cache fingerprints them so input
+# drift stales the cache (see scripts/runner_cache.py).
+AUDIT_INPUT_PATHS = (
+    "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md",
+)
+
 PASS = 0
 FAIL = 0
 

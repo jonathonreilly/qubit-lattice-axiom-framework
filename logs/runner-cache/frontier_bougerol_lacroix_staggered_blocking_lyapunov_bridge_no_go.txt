@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bougerol_lacroix_staggered_blocking_lyapunov_bridge_no_go.py
-runner_sha256: 8af91f42a615d4f1150911d8d40cece9f63159ab5c70e6ebf3fc02f7d5ac555a
+runner_sha256: 5e7c79f0b4987156ffc0525590f8809d23eb6573256615c7a4490e86c27df79f
+input_fingerprint_sha256: c08181bb46ec68398a7636f7293ec665d13d5f278e707e3d94d6b8f75d18addd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -14,7 +15,7 @@ Bougerol-Lacroix staggered-blocking Lyapunov-bridge — no-go narrow theorem
 ----------------------------------------------------------------------------------------
 Part 1: O1 (per-step blocking operator A_k unspecified) — T1
 ----------------------------------------------------------------------------------------
-  [PASS (B)] T1 (O1): framework source notes do NOT exhibit an explicit matrix-form per-step blocking operator A_k on V  (checked notes: YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17, YT_P2_V_MATCHING_THEOREM_NOTE_2026-04-17, OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE, PLAQUETTE_SELF_CONSISTENCY_NOTE, YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17; matches: YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17=False, YT_P2_V_MATCHING_THEOREM_NOTE_2026-04-17=False, OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE=False, PLAQUETTE_SELF_CONSISTENCY_NOTE=False, YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17=False)
+  [PASS (B)] T1 (O1): all five scanned source notes exist on disk AND the literal 'A_k = <matrix constructor>' pattern scan finds no explicit matrix-form per-step blocking operator A_k in any of them (scan scope: the fixed constructor patterns only; operators defined by action, entries, recurrence, or linked runners are outside this scan)  (missing notes: none; matches: YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17=False, YT_P2_V_MATCHING_THEOREM_NOTE_2026-04-17=False, OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE=False, PLAQUETTE_SELF_CONSISTENCY_NOTE=False, YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17=False)
 
 ----------------------------------------------------------------------------------------
 Part 2: O2 (16-step staircase is deterministic, not i.i.d.) — T2
@@ -28,9 +29,9 @@ Part 3: O3 (cumulative 1-loop beta exceeds 1/g^2) — T3, T4
   [PASS (B)] T4 (O3 sub-result): 1-loop trajectory 1/g^{(k+1)2} = 1/g^{(k)2} - b_3^{(k)} * |Delta_t| / (8 pi^2) crosses zero before completing 16 rungs  (crossing at k* = 9 (partial shift = 1.0133 >= start = 0.8777))
 
 ----------------------------------------------------------------------------------------
-Part 4: O4 (staggered-taste near-degeneracy spectral mismatch) — T5
+Part 4: O4 (conditional taste-gap model mismatch; assumed C family) — T5
 ----------------------------------------------------------------------------------------
-  [PASS (B)] T5 (O4): staggered-taste log-gap C * alpha_LM^2 is at least 5x below required |log alpha_LM| across C in {1, 10, 30}; >100x at C=1  (required gap = 2.4002; alpha_LM^2 = 0.008226; ratios = C=1: 291.76; C=10: 29.18; C=30: 9.73)
+  [PASS (B)] T5 (O4, conditional on the assumed C <= 30 gap model): the MODELED log-gap C * alpha_LM^2 (C un-derived, sampled at {1, 10, 30}) is at least 5x below required |log alpha_LM| across the sampled family; >100x at C=1 — a conditional numerical mismatch (partial-narrowing), not an executed mode bound  (required gap = 2.4002; alpha_LM^2 = 0.008226; ratios = C=1: 291.76; C=10: 29.18; C=30: 9.73)
 
 ----------------------------------------------------------------------------------------
 Part 5: sensitivity of O3 to alpha_LM (T6)
@@ -38,14 +39,14 @@ Part 5: sensitivity of O3 to alpha_LM (T6)
   [PASS (B)] T6 (O3 sensitivity): Landau-pole crossing persists at alpha_LM in {0.05, 0.20} (lattice-accessible range)  (alpha=0.05: shift=3.238, start=1.592; alpha=0.20: shift=1.739, start=0.398)
 
 ----------------------------------------------------------------------------------------
-Part 6: sensitivity of O4 to alpha_LM (T7)
+Part 6: sensitivity of O4's assumed gap model to alpha_LM (T7)
 ----------------------------------------------------------------------------------------
-  [PASS (B)] T7 (O4 sensitivity): gap mismatch ratio >= 4 at alpha_LM in {0.05, 0.20} (with C = 10)  (ratio(alpha=0.05, C=10) = 119.83; ratio(alpha=0.20, C=10) = 4.02)
+  [PASS (B)] T7 (O4 sensitivity within the assumed gap model, C = 10): modeled mismatch ratio >= 4 at alpha_LM in {0.05, 0.20}  (ratio(alpha=0.05, C=10) = 119.83; ratio(alpha=0.20, C=10) = 4.02)
 
 ----------------------------------------------------------------------------------------
 Part 7: counterfactual — uniform A_k (no taste stratification) (T8)
 ----------------------------------------------------------------------------------------
-  [PASS (B)] T8 (independence): under uniform A_k counterfactual (no taste stratification), O3 does NOT block; O1 and O2 still block the landed MET bridge, while O4 still blocks the stronger gap route  (uniform shift = 0.1621 < start = 0.8777; O3 lifted, but O1+O2+O4 remain)
+  [PASS (B)] T8 (independence): under uniform A_k counterfactual (no taste stratification), O3 does NOT block; O1 and O2 still block the landed MET bridge, while O4's conditional model mismatch persists within the assumed C family  (uniform shift = 0.1621 < start = 0.8777; O3 lifted, but O1+O2 remain (with O4's conditional model mismatch))
 
 ----------------------------------------------------------------------------------------
 Part 8: MET assertion (recall) — asymptotic limit is not finite N (T9)
@@ -55,7 +56,7 @@ Part 8: MET assertion (recall) — asymptotic limit is not finite N (T9)
 ----------------------------------------------------------------------------------------
 Part 9: independence of obstruction blocks — T10
 ----------------------------------------------------------------------------------------
-  [PASS (B)] T10 (independence): (O1), (O2), and (O3) independently block the landed MET bridge; (O4) independently blocks the stronger spectral-gap route  (Core bridge counterfactuals and stronger-route counterfactual verified at structural-enumeration level)
+  [PASS (B)] T10 (independence): (O1), (O2), and (O3) independently block the landed MET bridge; (O4) supplies only the conditional assumed-model mismatch against the stronger spectral-gap route (partial-narrowing, support grade — not an unconditional block)  (each counterfactual is the conjunction of the remaining EXECUTED T1-T5 conditions: O1 scan=True, O2 distinct rungs=True, O3 crossing=True (k*=9), O4 sampled-model mismatch=True)
 
 ----------------------------------------------------------------------------------------
 No-go theorem summary
@@ -73,23 +74,30 @@ No-go theorem summary
     16-step product Pi_{k=0}^{15} A_k v ~ alpha_LM^16 * const * ||v||,
     on the framework's deterministic staggered taste-staircase.
 
-  CONCLUSION (No-Go):
+  CONCLUSION (No-Go for O1-O3; conditional narrowing for O4):
     The bridge (★) cannot be made under (♦) on the canonical
-    surface, blocked by three core obstructions and one stronger-route
-    obstruction:
-      (O1) per-step blocking operator A_k unspecified in source notes;
+    surface, blocked by three core obstructions, with one conditional
+    stronger-route mismatch:
+      (O1) no explicit matrix-form A_k found by the disclosed
+           literal-pattern scan of the source notes;
       (O2) staircase deterministic, not i.i.d.;
       (O3) cumulative 1-loop beta exceeds 1/g^2 (Landau-pole crossing);
-      (O4) any stronger spectral-gap route is blocked by taste
-           near-degeneracy: available gap ~ alpha_LM^2 ~ 0.008 vs
-           required |log alpha_LM| ~ 2.40.
+      (O4) CONDITIONAL: within the ASSUMED taste-gap model
+           C * alpha_LM^2 (C un-derived, sampled at {1, 10, 30}), the
+           modeled gap ~ C * 0.008 falls short of the required
+           |log alpha_LM| ~ 2.40. Partial-narrowing for the supplied
+           C <= 30 family only; at C ~ |log alpha_LM|/alpha_LM^2 the
+           mismatch disappears, so no spectral-gap no-go is derived.
 
   Audit-lane class:
     (B) — bounded no-go with framework dependencies on
     canonical surface and P2 beta breakdown, plus external citation of
     Lee-Sharpe staggered ChPT (1999). No positive identification
-    claimed; (O1)-(O3) block the landed MET bridge, and (O4) blocks the
-    stronger spectral-gap route.
+    claimed; (O1)-(O3) block the landed MET bridge, and (O4) supplies
+    a support-grade conditional numerical mismatch against the
+    stronger spectral-gap route within the supplied C <= 30 model
+    family only (the coefficient and the (a Lambda)^2 -> alpha_LM
+    step are un-derived imports, not sourced bounds).
 
   This narrow theorem is independent of:
     - The Bougerol-Lacroix/Oseledets external MET narrow theorem; the
@@ -105,9 +113,9 @@ No-go theorem summary
 ----------------------------------------------------------------------------------------
 N5 execution certificate — what this runner resolves at each granularity
 ----------------------------------------------------------------------------------------
-per_element: checked and not executed — the runner's first obstruction is precisely that no explicit matrix-form per-step operator A_k is exhibited anywhere in the 5 scanned source notes, so there is no operator entry to resolve; the executed evidence at this granularity is that negative scan, not any entrywise computation.
+per_element: checked and not executed — the executed evidence at this granularity is a literal-pattern scan of the 5 source notes (all verified to exist) for 'A_k = <matrix constructor>' in a fixed set of constructor forms, which finds no match; an operator defined by its action, entries, kernel, recurrence, displayed equation, or a linked runner would be invisible to this scan, so the certificate covers exactly that regex scan and no entrywise computation.
 per_site: checked and not executed — the 16-step staircase is indexed by blocking scale, not by lattice site; no lattice is instantiated anywhere in this runner and no site-resolved quantity is computed, so nothing here certifies the bridge site by site.
-per_mode: checked — the taste-mode COUNT is resolved one rung at a time (no individual taste mode is ever constructed or diagonalized here): n_taste takes the 16 distinct values 16 down to 1 with each rung contributing b_3 = (33 - 2 n_taste)/3, and the taste near-degeneracy leaves an available log-gap of only alpha_LM^2 = 0.008226 against the required |log alpha_LM| = 2.4002.
+per_mode: checked — the taste-mode COUNT is resolved one rung at a time (no individual taste mode is ever constructed or diagonalized here): n_taste takes the 16 distinct values 16 down to 1 with each rung contributing b_3 = (33 - 2 n_taste)/3; the taste-gap comparison uses the ASSUMED model C * alpha_LM^2 (alpha_LM^2 = 0.008226) with the un-derived coefficient C sampled only at {1, 10, 30}, against the required |log alpha_LM| = 2.4002 — a sampled model assumption (imported value), not an executed mode bound.
 per_block: checked — the blocking rungs are accumulated block by block and the runner locates the exact rung at which the coupling budget is exhausted: crossing at k* = 9 with partial shift 1.0133 against the start 1/g^2 = 0.8777, the full 16-rung shift being 2.5940.
 lattice_wide: checked and not executed — the hypothesis that would need certification is the N -> infinity random-product limit, while this runner executes only the finite 16-step deterministic staircase plus two alpha_LM sensitivity points at 0.05 and 0.20; taking no asymptotic or volume limit is itself obstruction T9, with PASS=10, FAIL=0.
 

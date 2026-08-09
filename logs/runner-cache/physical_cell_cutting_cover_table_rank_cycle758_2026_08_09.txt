@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_cover_table_rank_cycle758_2026_08_09.py
+runner_sha256: 9d17a04144370f208757856179f28df3a1d30d054157d11d639f6b1099d454e5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 45.76
+status: ok
+----- stdout -----
+Every count below is measured here.
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS C0  the pieces per cutting and the cuttings through a piece are each the same number for every one of them
+the 192 eight piece sets no cutting uses twice meet each of the 15800 cuttings between 1 and 1 times
+PASS C1  each of the 192 sets is an exact cover: the table sends it to the all ones column over all 15800 cuttings
+the cover by piece table has row sums 8 to 8 and column sums 8 to 8
+PASS C2  the zero one table is 8 regular on both sides
+adding up all 192 rows of the cover by piece table gives 8 at every one of the 192 pieces
+PASS C3  the all ones piece vector is the sum of all the cover rows, so it sits in the row space of the cover by piece table
+the cutting table sends the all ones piece vector to the single value 24 at every one of the 15800 cuttings
+PASS C4  the image is one value and that value is not zero, so the all ones piece vector is not blind to the cuttings
+exact rank of the cover by piece table 105, exact rank of its 191 cover differences 104, difference 1
+PASS C5  the cover differences drop exactly one dimension against the covers themselves, and that dimension is the all ones direction
+stacking the 192 rows of the transposed table with one all ones cover row gives rank 105, against rank 105 without it
+PASS C6  the all ones cover row raises nothing, so it sits in the row space and every kernel vector of that table sums to zero over the covers
+exact nullity of the transposed table 87, and 191 minus that nullity is 104
+PASS C7  the kernel takes 87 of the 192 cover directions away and the 191 cover differences fill the 104 that is left
+exact rank of the cover side sharing table 105 and of the piece side sharing table 105
+PASS C8  a table and the two products of it with its transpose all carry the one rank
+the cover side table is an integer table times its transpose so no eigenvalue is below 0, and its largest row sum 64 puts none above 64
+a rational eigenvalue of an integer symmetric table is an algebraic integer, hence a whole number, so only the whole numbers 0 to 64 can occur
+rank over the prime field 1000003 is never above rank over the rationals, so zero nullity there proves zero nullity over the rationals
+cover side whole number spectrum 0:87 2:8 4:8 8:3 10:8 12:6 16:2 20:10 24:3 64:1
+counted with multiplicity 136 of the 192 eigenvalues are whole numbers and 56 are not rational
+PASS C9  the rational part of the cover side sharing spectrum is exactly these ten whole numbers with these exact multiplicities
+piece side whole number spectrum 0:87 2:8 4:8 8:3 10:8 12:6 16:2 20:10 24:3 64:1
+PASS C10  the two products of one table with its transpose carry the one nonzero spectrum, and the table is square so the count at 0 agrees
+trace 1536 splits as 592 from the whole numbers plus 944, trace of the square 36096 splits as 12352 plus 23744
+PASS C11  the whole numbers make neither total on their own, and both leftovers are positive, as eigenvalues that are not rational require
+control on the 16 corners of the four cube, adjacent when they differ in one coordinate: 4:1 2:4 0:6 -2:4 -4:1
+PASS C12  the scan recovers the 16 eigenvalues that were fixed for this control before any measurement, so it reads the right answer
+the same control with 1 added at the symmetric pair (0,3): 2:2 0:4 -2:2, whole number eigenvalues with multiplicity 8
+PASS C13  one added symmetric pair changes the whole number spectrum and drops the count, so the scan is not returning a canned answer
+elapsed under 300 s and peak memory under 500 MB, both measured in this run
+PASS C14  inside its time and memory allowance
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

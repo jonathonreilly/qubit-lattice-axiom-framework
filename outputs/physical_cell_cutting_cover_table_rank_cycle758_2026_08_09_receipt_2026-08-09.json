@@ -1,0 +1,118 @@
+{
+ "cycle": 758,
+ "failures": 0,
+ "gates": 15,
+ "headline": "The 15800 least-volume cuttings of the unit four-cube at the adjacency cost floor draw on 192 pieces, 24 pieces to a cutting, each piece lying on 1975 cuttings, and 192 sets of eight pieces each meet every cutting exactly once. Two cycles back the space of piece vectors that every cutting sums to zero was measured at 104 dimensions and identified with the span of the differences of those 192 covers, and three attempts to account for 104 through the symmetries of the cube have each fallen short. This cycle reduces the number instead of accounting for it. The cover-by-piece table is 8-regular on both sides; its exact rational rank is 105 and the exact rank of its 191 cover differences is 104, one less. The note derives both steps from gated inputs. First, the blind space is the image under the transposed table of the coefficient vectors that sum to zero, and row-regularity forces every kernel vector of that transposed table to sum to zero over the covers, since adding the 192 piece entries of an annihilated combination gives 8 times the sum of its coefficients; so the blind dimension is 191 less the nullity, measured here as 87, which gives 104, the rank less one. The runner gates the same fact in dual form: stacking one all-ones cover row onto the transposed table leaves the rank at 105. Second, the one extra dimension is named: all 192 rows of the table add to 8 at every piece, so the all-ones piece vector lies in the row space, and the cutting table sends it to the single value 24 at every cutting, so it is not blind; hence 105 equals 104 plus 1. The two steps use opposite regularities, rows for the first and columns for the second. The cover-side and piece-side sharing tables both carry rank 105 as well, so the question can be put to a symmetric table. The whole-number part of the cover-side spectrum is settled in full: the table is an integer table times its transpose so no eigenvalue is below 0, its largest row sum 64 puts none above 64, and a rational eigenvalue of an integer symmetric table is an algebraic integer hence a whole number, so a scan of the whole numbers 0 to 64 is a complete test. Rank over the prime field 1000003 never exceeds rank over the rationals, so that field rules candidates out cheaply and every survivor is confirmed by fraction-free integer elimination. The result is eigenvalue 0 with multiplicity 87, 2 with 8, 4 with 8, 8 with 3, 10 with 8, 12 with 6, 16 with 2, 20 with 10, 24 with 3 and 64 with 1, which is 136 of the 192 eigenvalues counted with multiplicity, leaving 56 that are not rational. Two totals confirm the list: the trace 1536, which is 8 standing on each of the 192 covers, splits as 592 from the whole numbers plus 944, and the trace of the square 36096 splits as 12352 plus 23744, both leftovers strictly positive as eigenvalues that are not rational require. A positive control on the sixteen corners of the four-cube joined when they differ in one coordinate recovers its pre-fixed spectrum, 4 once, 2 four times, 0 six times, -2 four times and -4 once, and adding 1 at one symmetric pair of that control changes the whole-number spectrum and drops the count of whole-number eigenvalues to 8 of 16, the gate requiring only the change and the drop. The piece-side table returns the same whole-number spectrum, which is forced, since a table times its transpose and the transpose times the table carry the one nonzero spectrum and both are square of the same size here; the content is the contrast with the preceding cycle, which proved the two tables are not related by any relabelling, so they carry one spectrum without being permutation-similar and the spectrum is blind to exactly the asymmetry the sharing counts detect. Left open: why 0 is an eigenvalue exactly 87 times, which now carries the whole of the 104; the identity of the 56 eigenvalues that are not rational; and whether the products of the preceding cycle's fewest-part closed refinement carry the 104-dimensional span.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_COVER_TABLE_RANK_CYCLE758_NOTE_2026-08-09.md",
+ "recorded_output": "outputs/physical_cell_cutting_cover_table_rank_cycle758_2026_08_09_cold_2026-08-09.txt",
+ "results": {
+  "the_object": {
+   "cuttings": 15800,
+   "pieces": 192,
+   "pieces_to_a_cutting": 24,
+   "cuttings_through_a_piece": 1975,
+   "eight_piece_exact_covers": 192,
+   "times_each_cover_meets_each_cutting": 1,
+   "row_and_column_sums_of_the_cover_by_piece_table": 8
+  },
+  "the_reduction_of_the_blind_dimension": {
+   "exact_rank_of_the_cover_by_piece_table": 105,
+   "exact_rank_of_the_191_cover_differences": 104,
+   "difference": 1,
+   "exact_nullity_of_the_transposed_table": 87,
+   "cover_directions": 192,
+   "rank_of_the_transposed_table_with_an_all_ones_cover_row_stacked": 105,
+   "rank_of_the_transposed_table_without_it": 105,
+   "the_all_ones_cover_row_raises_the_rank": false,
+   "blind_dimension_is_the_rank_less_one": true
+  },
+  "the_one_extra_dimension": {
+   "sum_of_all_192_rows_at_every_piece": 8,
+   "the_all_ones_piece_vector_lies_in_the_row_space": true,
+   "single_value_the_cutting_table_sends_it_to": 24,
+   "the_all_ones_piece_vector_is_blind": false
+  },
+  "the_three_ranks_agree": {
+   "cover_by_piece_table": 105,
+   "cover_side_sharing_table": 105,
+   "piece_side_sharing_table": 105
+  },
+  "the_whole_number_spectrum": {
+   "lower_bound_and_its_reason": "0, since the table is an integer table times its transpose",
+   "upper_bound_and_its_reason": "64, the largest row sum of the table",
+   "why_only_whole_numbers_can_be_rational": "a rational eigenvalue of an integer symmetric table is an algebraic integer",
+   "prime_field_used_to_rule_candidates_out": 1000003,
+   "every_survivor_confirmed_by": "fraction-free exact integer elimination",
+   "cover_side": {
+    "0": 87,
+    "2": 8,
+    "4": 8,
+    "8": 3,
+    "10": 8,
+    "12": 6,
+    "16": 2,
+    "20": 10,
+    "24": 3,
+    "64": 1
+   },
+   "piece_side": {
+    "0": 87,
+    "2": 8,
+    "4": 8,
+    "8": 3,
+    "10": 8,
+    "12": 6,
+    "16": 2,
+    "20": 10,
+    "24": 3,
+    "64": 1
+   },
+   "whole_numbers_counted_with_multiplicity": 136,
+   "eigenvalues_that_are_not_rational": 56,
+   "distinct_whole_number_eigenvalues": 10
+  },
+  "the_two_totals": {
+   "trace": 1536,
+   "trace_from_the_whole_numbers": 592,
+   "trace_leftover": 944,
+   "trace_of_the_square": 36096,
+   "trace_of_the_square_from_the_whole_numbers": 12352,
+   "trace_of_the_square_leftover": 23744,
+   "both_leftovers_strictly_positive": true
+  },
+  "the_controls_on_the_scan": {
+   "positive_control": "the 16 corners of the four-cube, joined when they differ in one coordinate",
+   "positive_control_spectrum": {
+    "4": 1,
+    "2": 4,
+    "0": 6,
+    "-2": 4,
+    "-4": 1
+   },
+   "positive_control_spectrum_fixed_before_any_measurement": true,
+   "negative_control": "the same control with 1 added at the symmetric pair (0,3)",
+   "negative_control_spectrum": {
+    "2": 2,
+    "0": 4,
+    "-2": 2
+   },
+   "negative_control_whole_number_eigenvalues": 8,
+   "negative_control_gate_hard_codes_a_spectrum": false
+  },
+  "derived_in_the_note_from_gated_inputs": {
+   "the_blind_space_is_the_transposed_table_applied_to_the_zero_sum_covers": "row 8-regularity forces every kernel vector of the transposed table to sum to zero over the covers, so the blind dimension is 191 less the nullity 87, that is 104",
+   "the_extra_dimension_is_the_all_ones_piece_direction": "column 8-regularity puts the all-ones piece vector in the row space and the cutting table sends it to the constant 24, so it is not blind, and 105 is 104 plus 1",
+   "the_two_steps_use_opposite_regularities": "rows bound the blind space from above, columns pin it from below"
+  },
+  "not_measured_here": {
+   "why_0_is_an_eigenvalue_of_the_sharing_table_exactly_87_times": "open",
+   "the_identity_of_the_56_eigenvalues_that_are_not_rational": "open",
+   "a_decomposition_of_the_cover_space_accounting_for_the_other_multiplicities": "open",
+   "whether_the_fewest_part_closed_refinement_carries_the_104_dimensional_span": "open",
+   "the_combinatorial_symmetry_group_of_the_sharing_structure": "open"
+  }
+ },
+ "runner": "scripts/physical_cell_cutting_cover_table_rank_cycle758_2026_08_09.py",
+ "status": "PASS"
+}

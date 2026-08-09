@@ -1,5 +1,6 @@
-"""Cycle 875 independent check: an attempt to REFUTE the B-AXIS second-leg
-discharge certificate.
+"""Cycle 875 independent check: an attempt to REFUTE the single-record-clock
+second-leg measurement (legacy alias: B-AXIS second leg; a bounded_theorem
+finite-corpus measurement -- nothing it certifies discharges anything).
 
 The Cycle-875 primary is BLOCKLISTED.  It is read as text and AST only; none
 of its code runs in this process and none of its helpers is imported.  Every
@@ -930,7 +931,9 @@ def main() -> int:
         "pass": all(checks.values()),
     }
 
-    lines = ["CYCLE875_BAXIS_INDEPENDENT_CHECK",
+    lines = ["CYCLE875_SINGLE_RECORD_CLOCK_INDEPENDENT_CHECK",
+             "LEGACY_ALIAS_ONLY B-AXIS second leg (declared alias, not the "
+             "primary name)",
              "PRIMARY_IS_BLOCKLISTED_TEXT_AND_AST_ONLY"]
     for name in ("A1_QUOTE_TAMPER", "A2_PIN_FORGERY", "A3_OVERCLAIM",
                  "A4_HEADLINE_LAUNDERING", "A5_MASK_ABUSE",
@@ -942,7 +945,7 @@ def main() -> int:
     lines.append("CHECK CONTROLS " + ("PASS " if ctl["pass"] else "FAIL ")
                  + compact(ctl))
     lines.append("SUMMARY_JSON " + compact(out_summary))
-    lines.append("CYCLE875_BAXIS_INDEPENDENT_CHECK_"
+    lines.append("CYCLE875_SINGLE_RECORD_CLOCK_INDEPENDENT_CHECK_"
                  + ("PASS" if out_summary["pass"] else "HONEST_FAIL"))
     out = "\n".join(lines) + "\n"
     if len(out.encode()) >= STDOUT_LIMIT_BYTES:

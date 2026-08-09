@@ -222,7 +222,7 @@ STATIONS = 19
 # Each entry: (label, source path, the literal text that must appear verbatim).
 QUOTES = (
     (
-        "B_AXIS_PREMISE_ROW",
+        "SINGLE_CLOCK_AXIS_PREMISE_ROW",
         PREMISE_DOC,
         "**Declared premise:** one supplied blocked time step, one declared "
         "evolution axis/transfer construction, and no admitted independent "
@@ -230,7 +230,7 @@ QUOTES = (
         "conditional cap `d_t <= 1` used here.",
     ),
     (
-        "B_AXIS_NONCIRCULARITY",
+        "SINGLE_CLOCK_AXIS_PREMISE_NONCIRCULARITY",
         PREMISE_DOC,
         "No\n   anomaly trace, no chirality argument, and no content of this "
         "note\n   enters that supplied axis premise.",
@@ -1290,9 +1290,41 @@ def main() -> int:
         "pass": all(checks.values()),
     }
 
-    lines = ["CYCLE875_BAXIS_SECOND_LEG_CERTIFICATE",
-             "CLAIM_TYPE BOUNDED_THEOREM_FINITE_CORPUS_MEASUREMENT",
-             "NO_PREMISE_IS_PROMOTED_AND_NO_OBLIGATION_IS_DISCHARGED"]
+    lines = [
+        "CYCLE875_SINGLE_RECORD_CLOCK_SECOND_LEG_MEASUREMENT",
+        "LEGACY_ALIAS_ONLY B-AXIS second leg (declared alias, not the "
+        "primary name; the premise is the evolution-axis single-clock "
+        "premise)",
+        "CLAIM_TYPE BOUNDED_THEOREM_FINITE_CORPUS_MEASUREMENT",
+        "NO_PREMISE_IS_PROMOTED_AND_NO_OBLIGATION_IS_DISCHARGED",
+        # No-Go Discipline N5 execution certificate: one line per resolution
+        # class, stating honestly what this runner resolves at that
+        # granularity for the family-priced measured absences.  Classes not
+        # exercised say so explicitly.
+        "N5_RESOLUTION_CERTIFICATE (rhetoric-resolution sweep for the "
+        "family-priced measured absences)",
+        "per_element: every individual witness lag and detector-selected "
+        "period (1121; 19, 114, 1444 ticks) is divisibility-checked "
+        "element-by-element in exact integer arithmetic; no negative is "
+        "asserted about any element beyond these recounted divisibilities",
+        "per_site: the 865 origin-reconstruction hunt and the 869 relation "
+        "search resolve per key -- B=2 census for the hunt; at B=3 the "
+        "verdict coverage identity 912 = 304 keys x 3 clock-pair slots is "
+        "recomputed for both bank and pair families -- so the family-priced "
+        "absences are resolved at per-key granularity at B=2/B=3 only",
+        "per_mode: every bank-clock and pair-clock cadence is compared "
+        "pairwise through the declared family F; the 830/831 and 429/480 "
+        "substantive refusals are carried per mode as UNRESOLVED rival "
+        "candidates, never as a per-mode absence of a rival clock",
+        "per_block: the across-key census is recomputed per clock-family "
+        "label (three bank labels, three pair labels) before any summation; "
+        "at B=4 blocks this class is checked and not executed -- no "
+        "relation-family search exists at B=4 (obligation O9 OPEN)",
+        "lattice_wide: checked and not executed -- no corpus-wide or "
+        "all-scale negative is claimed anywhere in this package; family "
+        "closure is PERMANENTLY_OPEN (O10) and the full-corpus figures are "
+        "incidence sums, not lattice-wide absences",
+    ]
     for name in ("A_QUOTE_FIDELITY", "B_FAMILY_DECLARATION",
                  "C_LEG_II_FORMALIZATION", "D_WITNESS_REDERIVATION",
                  "E_LIVE_REDERIVATION", "F_MEASUREMENT_MAP", "G_CONTROLS"):
@@ -1300,7 +1332,7 @@ def main() -> int:
                      + ("PASS " if checks[name] else "FAIL ")
                      + compact(certs[name]))
     lines.append("SUMMARY_JSON " + compact(summary))
-    lines.append("CYCLE875_BAXIS_SECOND_LEG_CERTIFICATE_"
+    lines.append("CYCLE875_SINGLE_RECORD_CLOCK_SECOND_LEG_MEASUREMENT_"
                  + ("PASS" if summary["pass"] else "HONEST_FAIL"))
     out = "\n".join(lines) + "\n"
     if len(out.encode()) >= STDOUT_LIMIT_BYTES:

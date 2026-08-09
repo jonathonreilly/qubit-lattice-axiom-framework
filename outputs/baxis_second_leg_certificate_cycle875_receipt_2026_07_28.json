@@ -19,43 +19,57 @@
  },
  "files": {
   "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md": {
-   "git_blob": "7b4ec63502e8e56b7f0a517f02ec180f06796227",
-   "sha256": "0dba8729bb4ea1521aa56d6cb26531e5d1148800f0fa0efb3b84c1cdc8f0f73e"
+   "git_blob": "8a0397b004bdd8a22c66bb2203c2db7b02001078",
+   "sha256": "b8fd11734f0de5b3722e7d161989b948e6d8b3d05b3a6c77a112f87d6434b2ec"
   },
   "logs/runner-cache/frontier_cycle875_baxis_independent_check_2026_07_28.txt": {
-   "git_blob": "34c7e0ad2e1c0eb436b86517485208f12bfe6f80",
-   "sha256": "23c2a06c86d2dcb0edb2fb456208dff31c1e9cd34a8d0fb8222b5921bcfe1fa7"
+   "git_blob": "7fab4273f6476a3bf1fffa7d2157856754912ba5",
+   "sha256": "f96567a0c18d26413a3453cd68f56f014c87f3ea211af7e957317cbb2f6eacf3"
   },
   "logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt": {
-   "git_blob": "e7c35bb13e72853860a070b486df7c02632f6b08",
-   "sha256": "34b594a06e352df499bdf14f2eaa7d84077e9546fdf0e3331bdf375ae17af254"
+   "git_blob": "a9048184fc9b0db406fb6e7df0567a876459533a",
+   "sha256": "5b8ae8cbcd30546bb7c030bad5a90591a24a86a33f7067403865911cef2287f7"
   },
   "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py": {
-   "git_blob": "7fe03ceeedec542da0b392a9e085134542ceecaf",
-   "sha256": "35a83d5bbcc54c9f35579cb1df6a43c1f84b928867b5950955f241b1ef17a6ac"
+   "git_blob": "e336d660c672a6b8fc2d33dc70aa38dccb85d844",
+   "sha256": "459dfbd4c7f8be346ee4ab81cb09286e31d51a1fd90c907b2ac0948c117f4478"
   },
   "scripts/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.py": {
-   "git_blob": "4c97de90f018c5751d491a498044c7e9f9e082d4",
-   "sha256": "5b39d6c244c61e305150b565e0dc007361aa83ffd81aba2b494ae2ef3d39a26d"
+   "git_blob": "5946cf230a23f3742a731408c6df8adc942dc4af",
+   "sha256": "ea85b2e5117bc6006c6c858307cb6d207a0716cda3c3d2e457c65a8ec905d101"
   }
  },
+ "headline": "CYCLE875_SINGLE_RECORD_CLOCK_SECOND_LEG_MEASUREMENT (legacy alias only: B-AXIS second leg)",
  "measurement_map": {
   "measured_at_scope": 6,
   "no_discharge_status_exists": true,
   "open": 6,
   "permanently_open": 1
  },
- "note": "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md",
- "review_loop": {
-  "date": "2026-08-08",
-  "disposition": "FIX_THEN_PROCEED",
-  "fix_summary": "demoted the discharge certificate to a bounded finite-corpus measurement: no row discharges, the F-relation-to-identity bridge is the explicit open obligation O13, 229 is labeled clock-family/key incidences, claim type is bounded_theorem, Cycle-869 inputs re-pinned at landed origin/main blobs, the exact cache-producing Cycle-866 source included, checker attacks made fail-closed and evidence-sensitive",
-  "iteration": 1,
-  "reviewer": "Sol"
+ "no_go_discipline": {
+  "gate_record": "## No-Go Discipline Gate section in the note (N1-N8, status PASS: narrow by construction, no no_go claim ships)",
+  "n5_resolution_certificate": "five per-class lines in the primary's cached stdout; per_block B=4 and lattice_wide are 'checked and not executed' with reasons"
  },
+ "note": "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md",
+ "review_loop": [
+  {
+   "date": "2026-08-08",
+   "disposition": "FIX_THEN_PROCEED",
+   "fix_summary": "demoted the discharge certificate to a bounded finite-corpus measurement: no row discharges, the F-relation-to-identity bridge is the explicit open obligation O13, 229 is labeled clock-family/key incidences, claim type is bounded_theorem, Cycle-869 inputs re-pinned at landed origin/main blobs, the exact cache-producing Cycle-866 source included, checker attacks made fail-closed and evidence-sensitive",
+   "iteration": 1,
+   "reviewer": "Sol"
+  },
+  {
+   "date": "2026-08-08",
+   "disposition": "CONFIRMATION_FAIL_FIXED",
+   "fix_summary": "retired the bare CYCLE875_BAXIS_* runner banners and the checker's 'discharge certificate' self-description for domain-explicit single-record-clock names (B-AXIS declared alias only); landed the No-Go Discipline artifacts for the surviving family-priced measured absences: the N1-N8 gate record in the note and the five-line N5 resolution certificate (per_element/per_site/per_mode/per_block/lattice_wide) in the primary's cached stdout",
+   "iteration": 2,
+   "reviewer": "Sol (confirmation seat)"
+  }
+ ],
  "runtime_seconds": {
-  "checker": 28.0,
-  "primary": 9.3
+  "checker": 28.6,
+  "primary": 10.0
  },
  "sharpenings": [
   "869 coverage decomposition: 13/480 = 12 identity-class + 1 tick-moving witness (1121 = 59*19 exactly)",

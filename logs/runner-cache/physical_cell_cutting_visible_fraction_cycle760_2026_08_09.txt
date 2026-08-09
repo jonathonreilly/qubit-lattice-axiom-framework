@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_visible_fraction_cycle760_2026_08_09.py
+runner_sha256: 44e4e1fdb1540776c764d1ca6ba4a35c224d738e63808c24f67e367272d84341
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 11.23
+status: ok
+----- stdout -----
+Every count below is measured here.
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS C0  the pieces per cutting and the cuttings through a piece are each the same number for every one of them, and there are 192 exact covers
+PASS C1  permuting the four coordinates and flipping any of them gives 384 maps of the 16 corners and 384 distinct piece relabellings
+PASS C2  384 of the 384 carry the 15800 cuttings and the 192 covers onto themselves; one of them after a swap of two pieces gives False
+blocks on the 192 pieces: turns 24 give 8 of 24, with the tick flip 48 give 4 of 48, tick fixed 96 give 2 of 96, all 384 give 1 of 192
+PASS C3  one block only once a relabelling may carry the tick coordinate onto a spatial one
+PASS C4  exact ranks 88 and 105; minors 1 1 and 1 1, so each row lattice is saturated
+cutting side rank 88: N = 960 P symmetric True, N N = 960 N True, N fixes the rows True, trace 84480 = 960 x 88
+cutting side diagonal 440:192, entries -121 to 440 taking 23 values, seen fraction 88 over 192 which is 11 over 24
+PASS C5  the cutting side certificate holds over the whole numbers at rank 88, trace 84480
+PASS C6  every one of the 192 diagonal entries is the same, so each piece is seen in the fraction 11 over 24
+PASS C7  N is unchanged by relabelling the pieces by any of the 384, so its diagonal is constant on each block
+PASS C8  control, two of the 4 blocks of the 48: rank 2, kept by the 48 True, by the 384 False, diagonal 0:96 2:96
+PASS C9  control, the indicator of one piece with multiplier 1: rank 1, diagonal 0:191 1:1, not constant although the 384 give one block
+PASS C10  smallest whole multiplier on the cutting side 960 = 2^6 x 3 x 5; 192 320 480 each leave a fraction
+PASS C11  the 384 carry the ordered pairs of pieces into 104 classes; N is constant on every one and takes 23 values
+cover side rank 105: N = 320 P symmetric True, N N = 320 N True, N fixes the rows True, trace 33600 = 320 x 105
+cover side diagonal 175:192, entries -42 to 175 taking 23 values, seen fraction 105 over 192 which is 35 over 64
+PASS C12  cover side certificate holds, fraction 35 over 64, smallest multiplier 320 = 2^6 x 5, 64 160 leave a fraction, constant on 104 classes
+PASS C13  Gram largest invariant factor: cutting 960 with 42 nontrivial, cover 320 with 41; each is that side's smallest whole multiplier
+PASS C14  control, the line 1 2 is saturated and gives 5 against 5; the line 2 0 is not and gives 4 against 1
+PASS C15  control, the invariant factor routine returns 1 6 from the diagonal 2 3 and 2 12 from the diagonal 4 6, not the entries handed to it
+PASS C16  elapsed under 300 s and peak memory under 500 MB, both measured in this run
+the tie: 3 N2 = 960 I - N + 5 J over the whole numbers True, differing entries 0, largest difference 0; with 4 J it is False
+PASS C17  N times the all ones vector is 960 times it True, and 192 - 88 + 1 = 105 True
+stdout characters: 2982
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

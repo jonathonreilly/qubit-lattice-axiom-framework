@@ -1,227 +1,296 @@
-# The spectrum of the eight-piece Gram is fixed by the arithmetic of the tables, not by the symmetry — Cycle 761
+# Exact spectrum, relation-product witnesses, and row-space character overlaps for the finite eight-piece Gram
 
 Date: 2026-08-09
 
 Authority: none
 
-Audit: unset.
+Audit: unset
 
-Status: computational identities of the finite cutting system
+Status: proposed_retained
 
-Claim type: computational identities
+Claim type: bounded_theorem
 
-Runner:
+Constitutional effect: none. This note changes no axiom, primitive, registry,
+policy, audit verdict, or effective status.
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_cover_spectrum_cycle761_2026_08_09.py)
+Runner and cache:
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the least-volume pieces, the cuttings at the adjacency cost floor,
-the cutting-by-piece table and the eight-piece sets, forms the eight-set-by-piece
-table and its Gram matrix, reads the whole spectrum of that Gram exactly by
-fraction-free integer elimination, builds the relabellings got by permuting the
-four coordinates of the four-cube and flipping any of them, certifies exact
-whole-number multiples of the orthogonal projectors onto the row spaces of both
-tables, and averages the counting functions over those relabellings. The note
-reports what the runner measured and nothing else, and it adds no import and no
-assumption to [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
+- [finite rebuild-and-certificate runner](../scripts/physical_cell_cutting_cover_spectrum_cycle761_2026_08_09.py)
+- [content-pinned runner cache](../logs/runner-cache/physical_cell_cutting_cover_spectrum_cycle761_2026_08_09.txt)
 
-## What this cycle adds
+## Trace gate
 
-The eight-piece sets are rebuilt and gated here as what an earlier cycle of this
-lane already showed them to be: each of the 192 is a set of eight pieces no two of
-which share a cutting, and each of them meets every one of the 15800 cuttings
-exactly once, which gives both double-counts at once, 192 = 24 times 8 and
-15800 = 8 times 1975. None of that is new here, and that cycle also derived it
-rather than measuring it. What is worth saying plainly alongside it is what the
-property does and does not mean: such a set does not cut the cube up, and what it
-partitions is the set of cuttings, into the 8 families of 1975 cuttings that run
-through each of its pieces.
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "submit the exact bounded row to independent audit; downstream consumers, if identified later, must carry this finite protocol unchanged"
+```
 
-The numbers 105 and 87 that say how much of the piece space those sets see are
-arithmetic facts about this one finite object and not consequences of its
-symmetry. Averaging the counting functions over the relabellings gives a cross
-term of 21 on both tables, so the seen space and the unseen space carry copies of
-the same patterns and neither is a union of whole pattern types; the averaging
-route measured here therefore cannot by itself produce 88, 105 or 87.
-Independently, the eight-piece Gram carries no whole-number spectrum: 56 of its 192
-eigenvalues are not whole numbers, and they are identified here exactly, as three
-quadratic families and one cubic family, by a certificate that leaves nothing out.
+## Status fields
 
-## What is already known and is not claimed here
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact integer certificates for one explicitly stipulated finite combinatorial protocol, with exhaustive construction, factor-kernel multiplicities, and fixed mutation controls"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-Earlier cycles of this lane measured all of the following, and none of it is
-claimed here. The maps got by permuting the four coordinates of the four-cube and
-flipping any of them number 384 and are the complete symmetry of the system, and
-they are transitive on the 192 pieces. Each eight-piece set meets every one of the
-15800 cuttings exactly once, and an earlier cycle derived that rather than
-measuring it, from 15800 being 8 times 1975. The eight-set-by-piece table has
-rank 105 and nullity 87. The spectrum of its Gram has 136 whole values and 56 that are not
-whole. The counts of pieces shared between two of the sets are regular, and the
-matrices built
-from them do not have products staying inside their own span. Those results belong
-to the earlier cycles that measured them.
+## Exact target
 
-What the runner establishes here, over and above rerunning those measurements:
-(1) the 56 non-whole eigenvalues are identified exactly, as three quadratic
-families and one cubic family with the multiplicities stated below, certified by a
-squarefree polynomial of degree 19 that annihilates the matrix over the whole
-numbers together with fourteen nullities adding to 192; (2) the trace split, as an
-independent cross-check on those multiplicities; (3) that the split of the piece
-space into what a table sees and what it does not is not a split into whole
-pattern types, on both tables, alongside a control that shows what a genuine such
-split looks like.
+For the finite object reconstructed from the stipulated protocol below, prove
+the complete spectrum and degree-19 minimal polynomial of the 192 by 192
+eight-set Gram matrix, exhibit the measured sharing-relation product
+variations, and compute the invariant row-space character inner products for
+the cutting and eight-set incidence tables under the 384 signed-coordinate
+relabellings.
 
-## The spectrum
+## Imports and stipulated conditions
 
-The whole part of the spectrum is ten values with multiplicities: 0 with
-multiplicity 87, 2 with 8, 4 with 8, 8 with 3, 10 with 8, 12 with 6, 16 with 2, 20
-with 10, 24 with 3, and 64 with 1. Those account for 136 of the 192 eigenvalues.
+### Load-bearing scientific imports
 
-The remaining 56 are the roots of four factors, written with the high coefficient
-first, each repeated at the multiplicity given: `1 -20 80` at multiplicity 6, with
-discriminant 80; `1 -44 400` at multiplicity 6, with discriminant 336; `1 -52 320`
-at multiplicity 4, with discriminant 1424; and the cubic `1 -44 516 -1280` at
-multiplicity 8, with discriminant 8640512. None of those four discriminants is a
-perfect square, so none of the four factors breaks up over the whole numbers: for
-the three quadratics that is immediate, and for the cubic the runner tries all 36
-divisors of the constant term taken with both signs and 0 of them is a root.
-Counting each factor once for each of its roots gives 19 distinct eigenvalues, 10
-whole and 9 not.
+None. The runner reads no repository data file, observation, fitted value,
+literature table, or earlier-cycle artifact. Python, NumPy, and the standard
+library are software dependencies only.
 
-The certificate works like this. The fourteen factors are pairwise different and
-none of them can be broken up over the whole numbers, so no two of them share a
-root and their product is squarefree. The runner measures the nullity of each
-factor evaluated at the Gram matrix, exactly, by fraction-free integer
-elimination, and those fourteen nullities add to 192, the full size of the matrix.
-The runner then multiplies the fourteen factors one at a time into a running
-matrix, in exact integer arithmetic, and the result has 0 nonzero entries. A
-squarefree polynomial that annihilates the matrix admits no eigenvalue outside its
-own roots, and the nullities adding to the full 192 leave no multiplicity
-unaccounted for, so the list above is the entire spectrum with nothing left out
-and nothing double-counted.
+### Finite protocol conditions
 
-Control G10 is what makes that argument bite rather than restate itself. Moving
-the cubic's constant term by one and rebuilding the same product leaves 33024
-nonzero entries instead of 0, so the product gate does discriminate against a
-factor list that is nearly right. And the nullity of the Gram matrix shifted by 20
-is measured to be 10; had it been 9 instead, the fourteen nullities would have
-added to 191 and not 192, and the completeness half of the certificate would have
-failed.
+These conditions define the theorem's domain. They are supplied by the runner,
+rather than derived from the framework axioms.
 
-## The trace cross-check
+| supplied condition | role | provenance | open bridge status |
+|---|---|---|---|
+| the sixteen vertices `{0,1}^4` | finite corner set | in-file definition | any physical cell interpretation is outside this target |
+| five-corner simplices of normalized determinant magnitude one | piece class | exhaustive in-file enumeration | any identification with physical assembly pieces is outside this target |
+| the all-four-coordinate L1 pair cost and its minimum over those pieces | piece filter | in-file definition and exhaustive minimum | any physical cost interpretation is outside this target |
+| the integer-weight sample family generated from `OFF = [0,1,7,49,343]` | exact-cover search device | in-file construction | no external provenance is claimed |
+| all signed permutations of four coordinates | computational relabelling group | exhaustive in-file construction | any identification with a complete physical symmetry is outside this target |
 
-The sum of the roots of each factor, weighted by its measured multiplicity, splits
-the trace as 592 + 592 + 352 = 1536, and 1536 is 192 times 8, the measured trace of
-the Gram matrix. This is an independent check because it uses only the second
-coefficient of each factor and the number of ones in each row of the eight-set table,
-and it touches neither the nullity measurements nor the product. Almost any wrong
-multiplicity would move one of the three parts and break the total.
+The current framework memo `docs/MINIMAL_AXIOMS_2026-06-29.md` is contextual
+only. Its Lattice axiom supplies neither this four-dimensional finite protocol
+nor the stipulated piece, cost, sample, or relabelling choices, so it is not a
+claim dependency.
 
-The whole part and the quadratic part both come out 592. Nothing here is built on
-that, and it is not claimed to mean anything.
+## Proof-obligation graph
 
-## No whole-number structure organizes the eight-piece sets
+1. **Finite object and cutting census — proved here.** The runner enumerates
+   all determinant-one five-corner pieces, selects the exact cost floor, and
+   exhausts the sample-cover search. A finite separating-direction sweep over
+   `{-4,...,4}^4` proves pairwise interior disjointness for every enumerated
+   24-piece cover. Since every piece has normalized volume one and the box has
+   normalized volume 24, the 15,800 covers are genuine cuttings.
+2. **Incidence identities — proved here.** The cutting-by-piece table has
+   15,800 rows and 192 used pieces, with row degree 24 and column degree 1,975.
+   The 192 eight-piece rows form a zero-one table with row and column degree 8,
+   and each meets each cutting once.
+3. **Spectral factor list — proved here.** Exact factor-kernel nullities,
+   irreducibility, pairwise coprimality, and an exact annihilator account for
+   all 192 eigenvalues.
+4. **Per-root multiplicities — proved here.** The integral symmetric Gram has
+   characteristic polynomial in `Z[x]`. Roots conjugate over `Q` therefore
+   have equal algebraic multiplicity, while real symmetry makes the matrix
+   diagonalizable. Hence an irreducible factor's kernel has dimension equal to
+   its degree times the common multiplicity of each of its roots.
+5. **Trace and minimal-polynomial checks — proved here.** The root sums give a
+   trace checksum, and the 19 distinct roots make the squarefree annihilator
+   the degree-19 minimal polynomial.
+6. **Sharing-relation witnesses — proved here.** Direct products of the five
+   relation matrices are evaluated entrywise, and variation inside each
+   sharing class is measured without an interpretive extension.
+7. **Character overlaps — proved here.** Exact scaled orthogonal projectors are
+   checked for symmetry, idempotence, row-space fixation, rank, trace, and
+   invariance under every relabelling. Their traces against the permutations
+   are therefore characters, so ordinary finite-group character inner
+   products apply.
 
-For each ordered pair of different eight-piece sets, count how many pieces they
-share. That count is exactly the matching off-diagonal entry of the Gram matrix,
-and it takes 4 distinct values: 0, 1, 2 and 4. For every one of the 192 rows the
-counts of the other 191 sets at each value are the same: 157 at 0, 20 at 1, 10 at 2
-and 4 at 4, and 157 + 20 + 10 + 4 = 191. So the sharing counts are regular in the
-strong sense
-that the row profile does not depend on the row.
+Every lemma used by the exact target is proved in the paired runner or by the
+elementary algebra stated above. The strongest missing lemma for any broader
+use would be a bridge from this stipulated finite protocol to a claimed
+physical carrier or to a general explanation of the ranks; that bridge is not
+part of this target.
 
-Now take the identity together with one zero-one graph per distinct value: 5
-matrices in all. If products of those 5 matrices stayed inside their own span, the
-Gram matrix would satisfy a polynomial of degree at most 5 and could have at most 5
-distinct eigenvalues. It has 19. No set of matrices that small can have products
-staying inside its own span here.
+## The rebuilt finite object
 
-An earlier cycle of this lane measured that non-closure directly, by checking the
-products themselves. This is a stronger and independent route to the same
-conclusion, not a new fact: it rules out closure from the eigenvalue count alone,
-without inspecting any product.
+The runner finds 15,800 cuttings using 192 pieces. Every cutting contains 24
+pieces and every used piece lies in 1,975 cuttings. The separating-direction
+certificate verifies pairwise interior disjointness for every sample cover.
 
-## Symmetry does not pick out what is seen
+It then exhausts sets of eight pieces in which no pair shares a cutting. There
+are 192 such sets. Their incidence matrix `M` is 192 by 192, every row and
+column has eight ones, and the cutting incidence matrix times `M^T` is the
+all-ones matrix. Thus each eight-piece set meets each cutting exactly once, and
+the double counts read `192 = 24 * 8` and `15,800 = 8 * 1,975`.
 
-For each relabelling, count the pieces it fixes; call that c_perm. For each table,
-certify an exact whole-number multiple of the orthogonal projector onto its row
-space and read the same count restricted to what the table sees; call that c_vis,
-and call the difference c_blind. Averaging products of those counts over the 384
-relabellings gives, on the cutting side at rank 88: 29 for seen against seen, 33
-for unseen against unseen, and 21 for the cross term, with 1 for seen against the
-constant and 0 for unseen against it. On the eight-set side at rank 105 the same
-averages are 34, 28 and 21, again with 1 and 0. Both sides satisfy the sum check
-29 + 33 + 2 times 21 = 104 and 34 + 28 + 2 times 21 = 104, which is the average of
-c_perm against itself. Every one of those divisions leaves remainder 0, so every
-average is a whole number.
+The Gram matrix is
 
-Control G15 fixes what the cross term would look like if the split were the good
-kind. Take the all-ones direction and everything perpendicular to it. That is a
-split into whole pattern types, and its cross average comes out 0, against 1 for
-the all-ones part against itself and 103 for the perpendicular part against
-itself. So 0 is what a genuine split gives, and 21 is not 0.
+```text
+S = M M^T.
+```
 
-Because 21 is not 0, the seen space and the unseen space contain copies of the same
-patterns, on both tables. Neither is a union of whole pattern types, so the
-averaging route measured here cannot by itself produce 88, 105 or 87: these
-averages are blind to the very distinction those numbers make. What this leaves
-open is where the numbers do come from. They are fixed by the arithmetic of the
-tables themselves, and that is where to look next.
+It is an integral symmetric 192 by 192 matrix with diagonal 8, row sum 64,
+and trace 1,536.
 
-## Runner
+## Exact spectrum and minimal polynomial
 
-The runner rebuilds the cell complex, the least-volume pieces, the cuttings at the
-adjacency cost floor, the cutting-by-piece table and the eight-piece sets, forms
-the eight-set-by-piece table and its Gram matrix, and then runs twenty gates. They
-are listed here in the order the runner emits them.
+The ten integer eigenvalues and their multiplicities are:
 
-- G0 the object: cuttings, pieces, pieces to a cutting, cuttings through a piece.
-- G1 the eight-set-by-piece table is zero-one with every row sum 8 and every column sum 8.
-- G18 all 2672 piece frames invert exactly over the whole numbers, and the 24
-  rotations behind the sample points have determinant 1.
-- G19 every eight-piece set meets every cutting exactly once, so 192 = 24 times 8
-  and 15800 = 8 times 1975.
-- G2 the Gram matrix is symmetric with diagonal 8, row sum 64 and trace 1536.
-- G3 the ten whole eigenvalues carry the multiplicities stated, adding to 136.
-- G4 the three quadratic factors have nullity twice their multiplicities, adding to 32.
-- G5 the cubic factor has nullity 24, three times its multiplicity 8.
-- G6 the fourteen nullities add to 192, the full size of the Gram matrix.
-- G7 the fourteen factors multiplied one at a time give the zero matrix.
-- G8 the fourteen factors are pairwise different and none of the four non-whole ones
-  breaks up over the whole numbers.
-- G9 the trace split from the sums of the roots reproduces the measured trace.
-- G10 CONTROL: the wrong cubic constant leaves 33024 nonzero entries, and the wrong
-  multiplicity at 20 would give 191 rather than 192.
-- G11 the shared-piece counts match the Gram matrix off the diagonal, are regular,
-  and give 5 matrices against 19 distinct eigenvalues, 10 whole and 9 not.
-- G12 the 384 relabellings are distinct, transitive on the 192 pieces, and average
-  c_perm against itself to 104.
-- G13 cutting side at rank 88: 29, 33, 21, 1, 0 and the sum check 104.
-- G14 eight-set side at rank 105: 34, 28, 21, 1, 0 and the sum check 104.
-- G15 CONTROL: the all-ones split is a whole split and its cross average is 0.
-- G16 every counting value and every average divides through with remainder 0.
-- G17 elapsed and peak memory are measured in the run and inside their limits.
+```text
+0:87, 2:8, 4:8, 8:3, 10:8, 12:6, 16:2, 20:10, 24:3, 64:1.
+```
 
-Not every gate is mathematically discriminating, and the note does not lean on the
-ones that are not. G2 follows from G1 once the row and column sums are fixed, the
-first half of G11 restates how the Gram matrix is built, and G17 measures the run
-rather than the object. The certificate rests on G3 to G10 and on the two controls.
+They account for 136 eigenvalues. The remaining 56 are roots of these monic
+irreducible factors, each root repeated at the stated common multiplicity:
 
-Measured totals: 20 gates, `TOTAL: PASS=20 FAIL=0`, elapsed under 300 s and peak
-resident memory under 500 MB as gated in the run, stdout 2956 characters.
+```text
+x^2 - 20x + 80                 multiplicity 6
+x^2 - 44x + 400                multiplicity 6
+x^2 - 52x + 320                multiplicity 4
+x^3 - 44x^2 + 516x - 1280      multiplicity 8
+```
+
+The quadratic discriminants are 80, 336, and 1,424, all nonsquares. The monic
+cubic has no root among the signed divisors of 1,280, so the rational-root
+test makes it irreducible over `Q`; its nonzero discriminant 8,640,512 also
+certifies distinct roots. Together with the ten distinct linear factors, these
+are fourteen pairwise coprime irreducible factors and 19 distinct roots.
+
+The runner measures each factor-kernel nullity by exact fraction-free integer
+elimination. The linear-factor nullities are the ten multiplicities above; the
+quadratic nullities are 12, 12, and 8; and the cubic nullity is 24. By the
+conjugacy lemma in the proof-obligation graph, division by factor degree gives
+the per-root multiplicities. All fourteen nullities add to 192.
+
+The product of the fourteen factors, evaluated at `S` in exact integer
+arithmetic, is the zero matrix. It is squarefree and has 19 roots, while the
+real symmetric matrix has all 19 as eigenvalues. Its degree-19 product is
+therefore the minimal polynomial of `S`.
+
+The sum-of-roots checksum, using those nullity-derived multiplicities, splits
+the trace into
+
+```text
+592 + 592 + 352 = 1536.
+```
+
+This is a consistency checksum on the multiplicity certificate, rather than a
+separate measurement of the multiplicities.
+
+## Sharing-relation product witnesses
+
+For two distinct eight-piece sets, the number of shared pieces takes the four
+values 0, 1, 2, and 4. Every row has the same profile:
+
+```text
+0:157, 1:20, 2:10, 4:4.
+```
+
+Let `R_share=v` be the zero-one matrix of the off-diagonal relation “shares
+exactly `v` pieces.” Then the runner checks the exact identity
+
+```text
+S = 8 I + R_share=1 + 2 R_share=2 + 4 R_share=4.
+```
+
+It directly evaluates all 25 ordered products formed from `I` and the four
+sharing-relation matrices. Sixteen ordered products take more than one value
+inside at least one fixed sharing class; the first in enumeration order is the
+square of the zero-sharing relation. These are explicit finite product-
+variation witnesses, with no conclusion attached to untested larger matrix
+families.
+
+## Row-space character overlaps
+
+The 384 signed-coordinate maps are checked to be distinct permutations, closed
+under composition, and transitive on the 192 pieces. The piece permutation
+character has self-inner-product 104.
+
+For each incidence table, the runner constructs an exact integer multiple of
+the orthogonal projector onto its row space. It verifies the projector
+identities and checks exact conjugation invariance under all 384 maps. Thus the
+projector trace against each permutation is the character of the invariant row
+space, and subtracting it from the piece character gives the character of the
+orthogonal complement.
+
+The character inner products are:
+
+| table row space | rank | row space with itself | complement with itself | cross | row space with constants | complement with constants |
+|---|---:|---:|---:|---:|---:|---:|
+| cutting incidence | 88 | 29 | 33 | 21 | 1 | 0 |
+| eight-set incidence | 105 | 34 | 28 | 21 | 1 | 0 |
+
+The sum checks are `29 + 33 + 2*21 = 104` and
+`34 + 28 + 2*21 = 104`. Character orthogonality expresses the cross value as
+the sum of products of irreducible multiplicities. The positive value 21
+therefore certifies that at least one irreducible type occurs in both the row
+space and its complement for each table.
+
+## Runner gates and mutations
+
+The runner emits 24 descriptive gates:
+
+- object census; eight-set table; piece frames; exact-cover double count;
+- rebuild mutation control; Gram invariants;
+- integer, quadratic, and cubic spectrum; spectrum completeness;
+- annihilating polynomial; irreducible factors; trace checksum;
+- spectrum mutation control; sharing product witnesses; sharing mutation control;
+- four-cube relabelling action; group-action mutation control;
+- cutting characters; eight-set characters; character decomposition control;
+- character mutation control; exact character division; resource bounds.
+
+The fixed mutations exercise every load-bearing family:
+
+- a table-bit flip and a piece replacement break the incidence and cutting
+  certificates;
+- changing the cubic constant makes the annihilator nonzero, while changing
+  the multiplicity at eigenvalue 20 makes the kernel dimensions total 191;
+- changing one shared-piece entry breaks the sharing identity;
+- duplicating one image in a proposed relabelling breaks the permutation gate;
+- a coordinate line supplies a valid rank-one projector but fails exact
+  invariance, so the character gate rejects it.
+
+Measured result: `TOTAL: PASS=24 FAIL=0`; stdout length and the elapsed-time and
+peak-memory bounds are emitted by the cache-bound run.
+
+## Review record
+
+Iteration 1 used the configured independent Sol reviewer. It returned
+`FIX_THEN_PROCEED`: the exact finite spectrum and character numbers survived
+independent reconstruction, while the original general claims about structural
+and symmetry routes exceeded the evidence and failed the N1-N8 gate. This
+revision removes those route conclusions from every landing surface, preserves
+the bounded finite theorem, adds the missing conjugacy and invariance lemmas,
+declares the finite conditions and canonical metadata, replaces bare numbered
+gate labels, adds family-specific mutations, fixes platform-aware peak-memory
+normalization, and declares the cache timeout.
+
+Review-time corroboration, not a load-bearing landing artifact, used direct
+SymPy characteristic-polynomial factorization, NumPy diagonalization, direct
+relation-product multiplication, and floating orthogonal projectors. It
+reproduced the 19 spectral targets within `5.684e-14`, trace 1,536, all stated
+character inner products, and exact projector invariance under all 384 maps.
 
 ## Boundary
 
-These are computational identities of one finite rebuilt system: they are
-measured, not derived from the axioms. Nothing here changes any axiom, primitive
-or policy, and
-nothing here is offered as physics. No coordinate assignment for any piece appears
-in this note or in the runner's output; the pieces are handled by index throughout.
+The theorem domain is exactly the one finite object defined by the five
+protocol conditions above. The spectrum includes its zero eigenspace and all
+repeated algebraic conjugates; the action checks every one of the 384 specified
+maps. Other piece classes, cost functions, sample constructions, dimensions,
+cells, relabelling groups, physical interpretations, and general explanations
+of ranks lie outside the claim. The source note proposes bounded status only;
+independent audit owns any effective retained classification.
 
-The result in the section on symmetry is a negative result about one route only:
-it says that averaging over the relabellings cannot by itself produce 88, 105 or
-87, because the seen and unseen spaces are not unions of whole pattern types. It
-does not bound what any other route may reach, and it is not evidence that those
-numbers lack a structural account. It says where such an account will not be
-found, and points at the arithmetic of the tables as the place that stays open.
+## No-Go Discipline applicability
+
+The landed scope consists exclusively of positive finite identities, exact
+character overlaps, and explicit product-variation witnesses. Route analysis
+is reserved for a separate artifact. N1-N8 and the five-resolution execution
+certificate are therefore not applicable to this narrowed artifact.

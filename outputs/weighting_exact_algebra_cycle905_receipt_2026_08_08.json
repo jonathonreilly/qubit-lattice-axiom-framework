@@ -50,7 +50,7 @@
   "M3_OCCUPATION_WEIGHTED|M5_FORMATION_MOMENT": "19d4c14cfac72b47fc49033b59c3645acd218ff34055929719bb84329db961b3",
   "M4_FORMATION_LIFETIME|M5_FORMATION_MOMENT": "19d4c14cfac72b47fc49033b59c3645acd218ff34055929719bb84329db961b3"
  },
- "elapsed_sec": 166.999,
+ "elapsed_sec": 166.023,
  "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
  "firewall_hits": 0,
  "label_on_every_fraction": "bookkeeping fraction, not probability",
@@ -110,7 +110,6 @@
    "no probability, no occurrence rule, no update law",
    "no negative claim of any universal form"
   ],
-  "review_record": "this package is the review-loop SALVAGE of the rejected Cycle-905 submission (PR #5967, FAIL/SALVAGE_REJECT); only the finite calculations the review named durable are carried here, recomputed self-contained; see the source note's Review record for the rejection grounds",
   "surface_label": "bounded support note",
   "surface_reading": "conditional finite-model support"
  },
@@ -184,6 +183,16 @@
    11
   ]
  },
+ "per_family_differing_cell_digests_zero_carrying": {
+  "F_ATOM": "ff19e16eeb6c5b01d207194d0f852d3addc561585942139564675c82ff72aa31",
+  "F_CONTENT": "13db2cde124384880a7ee0f619013c69da5c4d2b710cc280e582b39afc6fbcd5",
+  "F_MOMENT": "e4eb2709795c312a0ef4716f0114437c895faf35ba6ceed696bb01c68d2dac3a",
+  "F_ORBIT": "742cfadb999608bb301423271e6ad127109d3e9fa7de82c07f4e8db71052bf52",
+  "F_TAG": "2161b612900d120ef3ad8db9d9720151999358214c406ce23ec4d90b6e26bf34",
+  "F_TAG_ORDINAL": "fc128ca2a36d061784146c8bc52551492bac78cf9d5ed45394d05a7266f0db61",
+  "F_WORLD": "dd7da5bcaba24e162f042b15d77ce7ec744864f8275439d8791af13a2ad0641f",
+  "F_WORLD_TAG": "353d6edbe5eae75fb14b57ab4228e15a99bc26630d97c103fdd2a7a75908ba6d"
+ },
  "per_family_differing_cells_zero_carrying": {
   "F_ATOM": 19172,
   "F_CONTENT": 11627,
@@ -194,7 +203,7 @@
   "F_WORLD": 164,
   "F_WORLD_TAG": 461
  },
- "question": "Cycle 905 salvage -- carry the durable exact finite calculations of the rejected Cycle-905 package as conditional finite-model support on a stipulated in-file model.",
+ "question": "Cycle 905 -- exact algebra of the five candidate weightings on the stipulated composed-record model (rank, coefficient identity and residual, zero sets, difference supports, mass lattices), as conditional finite-model support.",
  "rank": 5,
  "rank_routes": {
   "gram_laplace": 5,
@@ -203,10 +212,10 @@
  },
  "residual_nonzero_events": 73088,
  "residual_set_equals_never_formed_block": true,
- "role": "salvage primary",
+ "role": "primary",
  "science_digest": "3e19aaad97ecbae13da9226d935a5165d89fc75aed45fd840cc8c605d257640a",
  "scope": "the full realized record-write census of the stipulated in-file model at horizon 16384 orbits (92260 events over 748 worlds), built from the pinned landed Cycle-719 core alone.  Exact rational arithmetic throughout; no probability, no occurrence rule, no update law, no selection.",
- "self_sha256": "c2b57bb43e5584426e918120fe71061e00732b644dfe4aaabb59f729b498eaf9",
+ "self_sha256": "18eae5f73228e69671d4561dc1459bb61a41f3a4e3e9b2aed016b5608448ad52",
  "source_pins": [
   {
    "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",

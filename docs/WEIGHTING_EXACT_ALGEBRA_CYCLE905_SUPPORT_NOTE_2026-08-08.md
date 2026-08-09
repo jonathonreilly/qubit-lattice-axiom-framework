@@ -29,8 +29,9 @@ Qualification, primitive, registry, policy, queue, audit result, or audit
 status.
 
 Worker disclosure: rebuilt by the review-loop salvage pass 2026-08-08
-after the original Cycle-905 package was REJECTED in review (see the
-Review record below). Independent audit still required.
+after the original Cycle-905 package was REJECTED in review; revised
+under review-loop direction (iteration 2, 2026-08-08; see the Review
+record below). Independent audit still required.
 
 ## What the claim is, exactly
 
@@ -44,10 +45,10 @@ partition, schedules, dead-wire register, slot allocation — is
 stipulated IN-FILE in the primary and rebuilt from an independent
 in-file transcription in the checker. It is the same in-file
 stipulation, function for function, as the current-main Cycle-878
-support note's primary
-([`EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md`](EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md));
-that note is a cross-reference for the reader, not an input of either
-runner. Everything below is conditional on the stipulated model and
+support note's primary (`EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md`,
+named here as plain provenance text, deliberately NOT linked: it is a
+cross-reference for the reader, not an input of either runner and not
+a dependency edge). Everything below is conditional on the stipulated model and
 its declared scope inputs; nothing below is a statement about the
 axiom surface, about probability, about physical occurrence, about
 any interface, or about the selection of any weighting.
@@ -128,16 +129,30 @@ never-formed worlds carry 73,088 events, all bank-tag writes):
 Independent in-file rebuild of the whole model (own transcription;
 chunk-granularity dead-wire accumulation across the whole window —
 strictly more sampling points, so census equality is a real check),
-plain Fraction weightings normalized to total mass 1 against the
-primary's integer-numerator arithmetic, integer multiply-only
-elimination plus modular rank over three large primes against the
-primary's Fraction elimination and Gram/Laplace minors, event-level
-brute-force difference supports against the primary's world-level
-route, an exhaustive positivity sweep over every cell of every family
-for M1/M2, and independently recomputed lattices and factorizations.
-The verdict covers EVERY certified statement of the primary receipt —
-15 claim-survival rows, none omitted. Verdict **CORROBORATES**, 8/8
-teeth bite, exit code fail-closed (nonzero on any refutation or gate
+plain Fraction weightings normalized to total mass 1 PLUS an
+independently reconstructed integer-numerator convention (cross-checked
+against the Fraction masses event by event) against the primary's
+arithmetic, integer multiply-only elimination plus modular rank over
+three large primes against the primary's Fraction elimination and
+Gram/Laplace minors, and event-level brute-force difference supports
+against the primary's world-level route. Every advertised
+claim-survival row is a real recomputed comparison that fails closed:
+exact totals and their factorizations rebuilt from the model (never
+from the claimed values), exact minimum numerators for all five
+weightings, the exhibited minor matrix rebuilt at the receipt's
+advertised worlds and its determinant recomputed, all four zero-set
+identities including the M5 block-plus-moment-zero identity,
+per-family differing-CELL-SET digests (set equality, not counts
+alone), an exhaustive positivity sweep over every cell of every
+family for M1/M2, independently recomputed lattices and
+factorizations, and the certified-statement texts rebuilt verbatim
+from the checker's own recomputed values and compared byte for byte.
+The verdict covers EVERY certified statement and value family of the
+primary receipt — 19 claim-survival rows, none omitted. Verdict
+**CORROBORATES**, 14/14 teeth bite (including planted corruptions of
+totals-with-consistent-factorization, minimum numerators, minor
+worlds, the M5 identity, per-family cell-set digests, and statement
+text), exit code fail-closed (nonzero on any refutation or gate
 failure). Both runners exited 0 with all certificates PASS.
 
 ## Trace gate
@@ -160,6 +175,7 @@ target_claim_type: bounded_theorem
 conditional_surface_status: conditional on the stipulated in-file model and its declared scope inputs
 hypothetical_axiom_status: null
 admitted_observation_status: null
+packet_helper_runner: scripts/frontier_cycle905_weighting_exact_algebra_independent_check_2026_08_08.py
 claim_type_reason: "exact finite certificates of the rank, the coefficient identity and its residual set, the zero-set lattice, the pairwise difference supports, and the verified mass-lattice factorizations; nothing selected, nothing eliminated, nothing postulated, no interface or framework-compatibility claim"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -254,6 +270,60 @@ candidate elimination or survival, twin-ness or observational
 equivalence, separation pricing, interface tension, ledger rows) was
 DROPPED, is NOT ESTABLISHED, and must not be cited from this note or
 from the rejected package.
+
+Review iteration 2 (Sol, 2026-08-08, FIX_THEN_PROCEED on the salvage
+rebuild; fixed in this revision):
+
+- The independent checker was fail-open for several advertised
+  claim-survival rows (it accepted a receipt with corrupted totals,
+  minimum numerators, minor worlds, the M5 zero-set identity, and
+  statement text). Every advertised row is now a real recomputed
+  comparison that fails closed — totals and their factorizations are
+  rebuilt from the model, never taken from the claim; the minimum
+  numerators are reconstructed under an independent integer-numerator
+  convention and compared for all five weightings; the exhibited minor
+  is rebuilt at the receipt's advertised worlds; the M5
+  block-plus-moment-zero identity is recomputed and bound; per-family
+  differing-cell SETS are compared by digest, not count; and the
+  certified-statement texts are rebuilt verbatim from recomputed
+  values and compared byte for byte. A planted negative mutation was
+  added for each repaired gate (14 teeth, all bite); a combined
+  receipt corruption replicating the review's five-way counterexample
+  (plus a per-family digest tamper) was confirmed to exit nonzero with
+  all seven corrupted row classes refuted, and a single flipped M5
+  identity alone was confirmed to exit nonzero.
+- The Markdown link to the Cycle-878 support note wrongly seeded a
+  machine dependency edge for a cross-reference the note itself calls
+  non-load-bearing; it is now plain provenance text, not a link. The
+  package's only Markdown authority surface is this note; its only
+  pinned upstream input remains the Cycle-719 core.
+- The independent checker was absent from the machine audit packet
+  (it is deliberately not imported by the primary, so import discovery
+  cannot see it, while the corroboration verdict exists only on its
+  surface). It is now declared claim-scoped and co-load-bearing, with
+  a machine-readable `packet_helper_runner` line in the Status fields.
+  HARD LANDING CONDITION: at landing, the orchestrator must add
+  exactly this claim-scoped entry to
+  `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+  `docs/audit/scripts/build_citation_graph.py` (this branch must not
+  edit audit tooling; the epoch-debt queue item covers the registry
+  mechanism), and the current-main changed-evidence gate must be run
+  on the landing topology:
+
+  ```python
+  "weighting_exact_algebra_cycle905_support_note_2026-08-08": [
+      "scripts/frontier_cycle905_weighting_exact_algebra_independent_check_2026_08_08.py",
+  ],
+  ```
+
+  HARD LANDING CONDITION (manifest): the note changes citation-graph
+  topology, so the regenerated
+  `docs/audit/data/citation_graph_manifest.json` acknowledgment must
+  co-land at landing time; it is deliberately absent from this
+  branch-local package.
+- Per the paired-salvage precedent, runner-emitted receipts carry no
+  hand-added review-loop metadata; all review provenance lives in this
+  Review record.
 
 ## Verdict
 

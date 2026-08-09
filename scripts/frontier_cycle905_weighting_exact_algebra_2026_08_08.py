@@ -1602,23 +1602,16 @@ def main() -> int:
             "no probability, no occurrence rule, no update law",
             "no negative claim of any universal form",
         ],
-        "review_record": (
-            "this package is the review-loop SALVAGE of the rejected"
-            " Cycle-905 submission (PR #5967, FAIL/SALVAGE_REJECT); only"
-            " the finite calculations the review named durable are carried"
-            " here, recomputed self-contained; see the source note's"
-            " Review record for the rejection grounds"
-        ),
     }
 
     receipt = {
         "cycle": 905,
-        "role": "salvage primary",
+        "role": "primary",
         "question": (
-            "Cycle 905 salvage -- carry the durable exact finite"
-            " calculations of the rejected Cycle-905 package as"
-            " conditional finite-model support on a stipulated in-file"
-            " model."
+            "Cycle 905 -- exact algebra of the five candidate weightings"
+            " on the stipulated composed-record model (rank, coefficient"
+            " identity and residual, zero sets, difference supports, mass"
+            " lattices), as conditional finite-model support."
         ),
         "claim_type": "bounded_theorem",
         "authority": "none",
@@ -1650,6 +1643,11 @@ def main() -> int:
         "zero_carrying_supports_identical_as_sets": triple_supports_identical,
         "per_family_differing_cells_zero_carrying": {
             fam: per_family[fam][triple_pair_names[0]]["differing_cells"]
+            for fam in FAMILY_ORDER
+        },
+        "per_family_differing_cell_digests_zero_carrying": {
+            fam: per_family[fam][triple_pair_names[0]][
+                "differing_cell_digest"]
             for fam in FAMILY_ORDER
         },
         "totals": totals,

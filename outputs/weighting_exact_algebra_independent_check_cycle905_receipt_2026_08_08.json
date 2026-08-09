@@ -17,11 +17,13 @@
   "D_ZERO_SETS_AND_POSITIVITY": true,
   "E_DIFFERENCE_SUPPORTS": true,
   "F_MASS_LATTICES": true,
-  "G_TEETH": true,
-  "H_RUNTIME": true
+  "G_CERTIFIED_STATEMENTS": true,
+  "H_TEETH": true,
+  "I_RUNTIME": true
  },
  "claim_survival": {
   "base_rank": true,
+  "certified_statements_text": true,
   "coefficient_identity_and_residual_set": true,
   "difference_support_cardinalities": true,
   "difference_support_sets": true,
@@ -29,20 +31,23 @@
   "everywhere_positive_min_mass": true,
   "lattice_factorizations": true,
   "mass_lattices": true,
-  "nonsingular_minor": true,
+  "min_event_numerators_rebuilt": true,
+  "nonsingular_minor_rebuilt_at_worlds": true,
+  "per_family_differing_cell_sets": true,
   "per_family_differing_cells": true,
-  "total_factorizations": true,
+  "total_factorizations_rebuilt": true,
+  "totals_rebuilt": true,
   "zero_carrying_supports_identical": true,
   "zero_carrying_triple_rank": true,
   "zero_counts": true,
-  "zero_set_identities": true
+  "zero_set_identities_incl_M5": true
  },
- "claim_survival_rows": 15,
+ "claim_survival_rows": 19,
  "cycle": 905,
- "elapsed_sec": 80.842,
+ "elapsed_sec": 78.758,
  "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
  "firewall_hits": 0,
- "independence": "independently transcribed census / dead-wire rig / composed scan (no AST lift, no import of the primary); plain Fraction weightings against the primary's integer-numerator arithmetic; integer multiply-only elimination and modular rank against the primary's Fraction elimination and Gram/Laplace minors; event-level brute-force difference supports against the primary's world-level route",
+ "independence": "independently transcribed census / dead-wire rig / composed scan (no AST lift, no import of the primary); plain Fraction weightings plus an independently reconstructed integer-numerator convention against the primary's arithmetic; integer multiply-only elimination and modular rank against the primary's Fraction elimination and Gram/Laplace minors; event-level brute-force difference supports against the primary's world-level route; totals, factorizations, minimum numerators, the minor matrix, and the certified-statement texts REBUILT from the model, never read from the claim",
  "label_on_every_fraction": "bookkeeping fraction, not probability",
  "mass_lattices": {
   "M1_COUNTING": 92260,
@@ -51,9 +56,16 @@
   "M4_FORMATION_LIFETIME": 230706877245,
   "M5_FORMATION_MOMENT": 17127729255
  },
- "primary_receipt_sha256": "d967501789f9ee1b0402adacb6b496c48534dec30768782002e76c26ebac360d",
- "role": "salvage independent check, specified to refute",
- "self_sha256": "7f03e233ef53a3a5d6df379315a3d4dc03e58f51e58ea26ef36a0429770e67a1",
+ "min_event_numerators_rebuilt": {
+  "M1_COUNTING": 1,
+  "M2_PER_WORLD_UNIFORM": 8320,
+  "M3_OCCUPATION_WEIGHTED": 0,
+  "M4_FORMATION_LIFETIME": 0,
+  "M5_FORMATION_MOMENT": 0
+ },
+ "primary_receipt_sha256": "44617437a36e05a754489f0c41cbbc048890894db92cf298586d541c9448040a",
+ "role": "independent check, specified to refute",
+ "self_sha256": "18212e732d3ecfcf67c14af8bc94460f27045ed28623f03075fef102bb2548d5",
  "teeth": [
   {
    "detected": true,
@@ -102,6 +114,49 @@
    "gate": "cardinalities_survive",
    "mutation": "one difference-support cardinality is increased by one",
    "tooth": "tampered_difference_support"
+  },
+  {
+   "detected": true,
+   "gate": "gate_totals + gate_total_factorizations (rebuilt values)",
+   "mutation": "the claimed M1 total is doubled AND its stated factorization is updated consistently; both rebuilt-value gates must bite",
+   "tooth": "tampered_totals_with_consistent_factorization"
+  },
+  {
+   "detected": true,
+   "gate": "gate_min_numerators (rebuilt values)",
+   "mutation": "the claimed M2 minimum numerator 8320 becomes 8319",
+   "tooth": "tampered_min_numerator"
+  },
+  {
+   "detected": true,
+   "gate": "gate_minor (matrix rebuilt at advertised worlds)",
+   "mutation": "the exhibited minor's last advertised world is shifted by one while the old matrix is retained",
+   "tooth": "tampered_minor_worlds"
+  },
+  {
+   "detected": true,
+   "gate": "gate_identities",
+   "mutation": "the claimed M5 block-plus-moment-zero identity is flipped to false",
+   "tooth": "flipped_m5_identity"
+  },
+  {
+   "detected": true,
+   "gate": "gate_per_family_digests",
+   "mutation": "one per-family differing-cell-set digest is altered",
+   "tooth": "tampered_per_family_digest"
+  },
+  {
+   "detected": true,
+   "gate": "gate_statements (verbatim rebuild)",
+   "mutation": "one certified-statement text is replaced by false prose",
+   "tooth": "tampered_statement_text"
   }
- ]
+ ],
+ "totals_rebuilt_from_model": {
+  "M1_COUNTING": 92260,
+  "M2_PER_WORLD_UNIFORM": 802813440,
+  "M3_OCCUPATION_WEIGHTED": 897595870080,
+  "M4_FORMATION_LIFETIME": 29530480287360,
+  "M5_FORMATION_MOMENT": 2192349344640
+ }
 }

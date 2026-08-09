@@ -162,6 +162,137 @@ Cycle-866 source is included.  The original discharge tally and headline
 must not be cited from any prior revision of this note, and no prior gate
 PASS may be cited as evidence that a discharge survived review.
 
+Iteration 2 (confirmation round, 2026-08-08): two residuals repaired in
+place.  The runners' emitted banners and the checker's self-description
+now lead with the domain-explicit single-record-clock name (the bare
+`CYCLE875_BAXIS_*` headlines are retired; `B-AXIS` appears only as a
+declared legacy alias), and the No-Go Discipline gate record below plus
+the five-line N5 resolution certificate in the primary's cached stdout
+land as committed artifacts for the surviving family-priced measured
+absences.
+
+## No-Go Discipline Gate
+
+This section is the committed N1–N8 record for the negative content that
+survives the demotion: two family-priced measured absences — (a) no member
+of the declared 865 predictor family (29 singles + 28 pairs) reconstructs
+the per-world time origin at B=2, and (b) the declared relation family F
+(7 members, declared caps) refused a witness in 830/831 substantive
+bank-clock and 429/480 substantive pair-clock comparisons at B=3 — plus
+the permanently-open family-closure wall (O10).  No `no_go` claim ships;
+these are bounded, family-priced measurements.  The N5 execution
+certificate (one line per resolution class) is in the primary runner's
+cached stdout,
+`logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt`.
+
+**N1 — Alternative route enumeration (5+ distinct routes).**
+1. Record-native predictor reconstructs the origin (predictor route):
+   ATTEMPTED — the 865 hunt exhausted the declared 29+28 family and
+   selected nothing (pinned arc cache, recounted here); anything outside
+   that family is priced out, not excluded (O10).
+2. Exact cadence dictionary inside F carries one clock onto another
+   (relation-family route): ATTEMPTED — the 869 search exhausted F at its
+   declared caps; 13/480 relations found; every refusal is carried as an
+   unresolved rival candidate (O8), never as absence.
+3. Second clock visible only at coarser cadence-signature granularity
+   (signature route): ATTEMPTED at B=3/B=4 by the 866 top-3 dominant-gap
+   probe (disclosed, unaudited): measures signature distinctness only and
+   cannot close the question — priced out of every negative (O9 OPEN).
+4. Incommensurate-rate clock (period route): ATTEMPTED at detector
+   granularity — the detector-selected periods are whole 19-station
+   orbits; per the 869 period contract only divisibility is claimed, so
+   rates are NOT excluded (O5 wording, O13).
+5. Gauge/scheduler-valued structure as clock (gauge route): ATTEMPTED —
+   865 records scheduler_gap_is_record_native=false and 866 records
+   native_pattern_functional=false at B=3/B=4 (properties of the declared
+   candidates only; O1).
+6. Rival beyond the declared caps or horizon (beyond-caps route): NOT
+   ATTEMPTED BY DECLARATION — the byte-verified 869 pricing quote ("It
+   does not exclude transformations outside F, nor relations that only
+   appear beyond tick 8192") carries this as O10, permanently open.
+
+**N2 — Wall-independence audit.**  Open rows: O7, O8, O9, O10, O11, O12,
+O13.  Pairwise: no closure of any row automatically closes another —
+O7 (across-key coverage) and O8 (within-key refusals) name disjoint
+populations; O9 (B=4 unrun) is a missing execution, not a lemma; O11
+(substrate-to-premise) and O13 (relation-to-identity) are distinct
+bridges (surface identification vs within-substrate identity); O12 is the
+other conjunct of the 864-D condition; O10 is unclosable by any finite
+family.  One one-way pricing dependency is declared rather than
+collapsed: were O10 closable (it is not), the O7/O8 refusals would
+re-price from "unresolved in F" to genuine absences — which is exactly
+why both are carried at family-priced scope.  The claim uses this
+collapsed 7-row set; no row is double-counted.
+
+**N3 — Hidden-wall scan.**  Iteration-1 review found three hidden
+conditions; all are now explicit walls: the F-relation => physical
+identity lemma (promoted to O13), the controller record-formation/tick
+identification (O11), and the heterogeneous union of candidate families
+(declared in the LEG_II scope; priced by O10).  The unaudited Cycle-719
+substrate import is declared in Dependencies.  Remaining "by
+construction"/"declared" language in the runners refers to declared
+finite search parameters (non-load-bearing context, annotated as such).
+N2 was re-run after these promotions; the table above includes them.
+
+**N4 — Residual matching.**  Witness table: the 865 hunt attacks exactly
+the residual "record-native origin reconstruction within the declared
+29+28 family at B=2" — matches claim (a); the 869 search attacks exactly
+"exact F-relations at declared caps at B=3" — matches claim (b); the 866
+signature probe attacks "top-3 dominant-gap signature distinctness" —
+does NOT match any absence claim and is therefore dropped as a negative
+witness (retained only as disclosed context for O9).  After the drop,
+each surviving claim rests on exactly the witness whose residual it
+names.
+
+**N5 — Rhetoric audit.**  Both absence claims were checked across
+per-element / per-site / per-mode / per-block / lattice-wide resolutions;
+the tested and untested resolutions are stated line-by-line in the N5
+resolution certificate in the primary's cached stdout (per_element:
+divisibility arithmetic only; per_site: per-key at B=2/B=3 only;
+per_mode: refusals carried as unresolved rival candidates; per_block:
+B=4 checked and not executed; lattice_wide: checked and not executed —
+no corpus-wide negative exists).  Every phrase wider than these
+resolutions was narrowed in iterations 1–2; the note carries no
+lattice-wide negative.
+
+**N6 — Partial-closure path scan.**  No registered primitive supplies the
+relation-to-identity lemma (axiom surface: four axioms, none about clock
+identity; no approved primitive in the registry names it), and no
+convention/labeling reframe closes O11 or O13 — both need theorems.  The
+legitimate import-bearing path is named: a consuming theorem may take
+"F-relation => same record-time" as an explicit import, bound it, and
+retire it by audit; nothing here forecloses that.  One partial-closure
+path WAS found and applied in iteration 1: adopting the reviewed
+mainline Cycle-869 surface (landed blobs) in place of the pre-review
+fork.
+
+**N7 — Steelman.**  Strongest counter-argument: "The 830/831 and 429/480
+refusals are evidence that F is too weak, not that no rival exists; a
+rival record-native clock could live exactly in the refused residue (a
+non-affine, non-periodic cadence map), or appear only at B=4 — which was
+never searched — or beyond tick 8192; and the single tick-moving F3
+dictionary could itself be a second clock read through a lag, since no
+identity lemma exists."  This steelman is concrete and correct, and it is
+why nothing here ships as a no-go: its routes are exactly O8, O9, O10 and
+O13, all carried OPEN, and the claims are demoted to family-priced
+measured absences that the steelman does not touch.
+
+**N8 — Cross-cycle echo.**  The Cycle-869 family-priced negative was
+itself narrowed on review to a bounded finite-corpus measurement with a
+hardened period/witness contract (the landed mainline note) — the same
+mechanism applied here.  The 863–865 arc note's own discipline line
+("the intrinsic-predictor exhaustion is at the declared 29+28 family",
+byte-verified quote) prices claim (a) identically.  The repo's prior
+falsification of a d=1 comparator slogan generalizing beyond its
+comparator is echoed by keeping every negative priced to its exact
+family and caps; no retired-wall mechanism applicable to O10/O13 was
+found beyond the import-retirement path already named in N6.
+
+**Status: PASS** — narrow by construction: all eight checks answered, no
+failure condition hit, no `no_go` claim ships, and both required
+artifacts land in this PR (this section, and the N5 certificate in the
+primary's cached stdout).
+
 ## Trace gate
 
 ```yaml

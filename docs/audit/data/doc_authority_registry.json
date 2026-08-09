@@ -130,6 +130,12 @@
       "class": "F",
       "status": "landed",
       "note": "Plain-language orientation memo: ratified backbone vs landed-but-unaudited frontier vs open walls, with an edge-free orientation map (no derivation semantics). No premise or interpretive weight; citable for orientation and scope discipline only; excluded from the citation graph per class-F policy; status words dated to the ledger state they quote; the ledger is authoritative."
+    },
+    {
+      "path": "docs/repo/AXIOM_FOUNDATION_CRITICAL_REVIEW_2026-08-09.md",
+      "class": "F",
+      "status": "landed",
+      "note": "Critical review of the four-axiom foundation read as a theory-of-everything base: ranked structural defects, each paired with the repo no-go or approved-primitive record that already meets it, plus named alternative foundations and two coherent repair paths. No premise or interpretive weight; citable for orientation and scope discipline only; excluded from the citation graph per class-F policy. Sets, predicts, and requests no audit status, and is not an axiom-edit proposal - axiom edits run through the owner-approval channel in AXIOM_MINIMALITY_POLICY.md."
     }
   ]
 }

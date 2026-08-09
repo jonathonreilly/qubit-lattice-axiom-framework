@@ -109,14 +109,39 @@ unless the user explicitly supplied `--no-pr`.
 - If PR creation or verification fails for network/auth reasons, write a
   complete `PR_BACKLOG.md` and continue the campaign if runtime remains.
   Missing GitHub access is a delivery degradation, not a science stop.
-- PR titles must include `[physics-loop]`, the lane/block slug, and the honest
-  status (`exact theorem`, `bounded theorem`, `no-go`, `exact support`,
-  `bounded support`, `open`, or `demotion`).
+- PR titles must include `[physics-loop]`, the lane/block slug, the block's
+  claim type, AND its honest status — two separate slots, each drawn from its
+  own canonical enum. A claim type is not a status. The claim type is one of
+  `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`,
+  `meta` (the `target_claim_type` enum below); the status is one of `open`,
+  `no-go`, `exact-support`, `bounded-support`, `conditional-support`,
+  `demotion`, `candidate-retained-grade` (the `actual_current_surface_status`
+  enum below). Never let one family stand in for the other: "exact theorem"
+  and "bounded theorem" are claim-type phrasings, and a title that offers one
+  of them where the status belongs states no status at all. A hybrid phrase
+  spanning both families is the same defect (conformance spec section 3).
 - PR bodies must link the block's `HANDOFF.md`, `TRACE_GATE.md`, notes,
   runners, verification commands/results, review findings, imports
   retired/exposed, trace reachability, and remaining blockers.
 - Do not merge, push science to `main`, or update repo-wide authority surfaces
   as part of the science run.
+
+**Conformance gate — verify before the PR is opened, not after review says
+so.** A block PR is not ready to request review until it has been checked,
+section by section, against
+`docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`: 1 self-containment,
+2 cache and execution discipline, 3 claim-scope honesty, 4 negative claims and
+the N-gate, 5 proof obligations, 6 runner validity, 7 packet completeness,
+8 links and citation graph, 9 note structure, 10 the propose/ratify boundary,
+11 sourced facts and counts, 12 the pre-review gates. Every MUST in that
+document is a generation-time requirement of this skill; failing one is a
+defect to fix before the PR exists, not a finding to receive. Record the pass
+in `REVIEW_HISTORY.md`, naming each section deliberately not applicable to the
+block and why — an unrun section is not a passed section. That document
+restates rules owned elsewhere and cites each owner: where it and a cited
+skill, script, or vocabulary file disagree, the cited authority wins and the
+disagreement is a defect in the spec, to be reported in `HANDOFF.md` rather
+than followed.
 
 Allowed science-branch output:
 
@@ -129,7 +154,8 @@ Forbidden science-branch output (the audit lane is sole authority over
 these; a framework PR that ships them overwrites ratified audit state at
 merge):
 
-- `docs/audit/data/` (any file);
+- `docs/audit/data/` (any file, except the single citation-graph manifest
+  carve-out stated below);
 - `docs/audit/AUDIT_LEDGER.md`, `docs/audit/AUDIT_QUEUE.md`,
   `docs/audit/MISSING_DERIVATION_PROMPTS.md`;
 - `docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` and
@@ -138,15 +164,50 @@ merge):
 `bash docs/audit/scripts/run_pipeline.sh` may be invoked for validation
 (to confirm the source repair is ingested and the runner row queued or
 re-queued as intended), but the regenerated outputs above must be dropped
-before commit:
+before commit. Drop by restoring the branch's OWN committed state, never by
+importing another ref: `git checkout origin/main -- <paths>` writes the index
+as well as the working tree, so on a stale or stacked branch — the normal case
+under the parallel landing contract — it silently STAGES current-`main`'s
+deltas on those generated surfaces relative to your HEAD.
 
 ```bash
-git checkout origin/main -- docs/audit/data/ \
-                            docs/audit/AUDIT_QUEUE.md \
-                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
-                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
-                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git restore --source=HEAD --staged --worktree -- \
+    docs/audit/data/ \
+    docs/audit/AUDIT_QUEUE.md \
+    docs/audit/MISSING_DERIVATION_PROMPTS.md \
+    'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+    docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
 git clean -fd -- docs/audit/data/
+```
+
+The one carve-out is `docs/audit/data/citation_graph_manifest.json`, and it is
+conditional, proactive, and commit-time. The trigger is graph TOPOLOGY, not
+markdown links alone: `docs/audit/scripts/build_citation_graph.py` registers
+every non-skipped `docs/**/*.md` file as a graph node BEFORE it extracts any
+edge, so a new note carrying only backticked provenance references is still a
+new node, and `docs/audit/scripts/write_citation_graph_manifest.py` requires
+acknowledgment for every added, removed, or rewired node. When the block's own
+commits add or remove any graph node — including a note with zero markdown
+links — or rewire any dependency edge, a refreshed manifest MUST co-land with
+the block, or the enforced stage-18 guard blocks every subsequent pipeline run
+on `main` until someone else lands the acknowledgment. Regenerate it
+deterministically on the proposed tree *after* the drop above, read the
+stage-18 delta against the tracked manifest before staging, then stage that
+one path: acknowledgment is assertion that every added, removed, or rewired
+node and edge is intended. Never hand-merge or hand-edit it, and stage it only
+when the block's commits actually change graph topology — when they change
+none, the correct staged set contains no manifest at all
+(`docs/ai_methodology/skills/review-loop/SKILL.md` landing rule; conformance
+spec section 8).
+
+```bash
+# Only when the block's commits add/remove a graph node or rewire an edge:
+python3 docs/audit/scripts/build_citation_graph.py
+python3 docs/audit/scripts/write_citation_graph_manifest.py
+git add docs/audit/data/citation_graph_manifest.json
+# Second line of defense: the staged set must be exactly the intended source
+# paths plus, at most, the one manifest path.
+git status --porcelain
 ```
 
 Do not weave science results through `README`, `docs/repo/LANE_REGISTRY.yaml`,
@@ -291,10 +352,15 @@ axioms, not bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
 dependencies without bounding downstream rows. No admission class exists;
 decision history has zero premise weight. The approved axiom baseline is the current
-Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
+Lattice/Qubit/Admissibility/Record surface (`docs/MINIMAL_AXIOMS_2026-06-29.md`):
+no site is privileged; sites are
 distinguished by the supplied lattice structure alone; no possibility is
 privileged; possibilities are distinguished by the supplied algebraic structure
-alone; a record, when present, locks exactly one admissible local possibility;
+alone; Admissibility is one fixed finite-neighborhood rule, the same at every
+lattice translate, and for each site the probability distribution over the
+possibilities is determined by, and varies with, the nearest-neighbor
+conditions, with availability/admissibility being that distribution's support;
+a record, when present, locks exactly one admissible local possibility;
 a site never carries more than one record; records are permanent; only records
 are readable; readout value is determined by record content alone; finite
 scalar readout is additive over
@@ -302,12 +368,14 @@ finite pairwise-disjoint record collections; a state is a configuration of
 records; and a law privileges no states, has a supplied condition as its
 domain, and gives exactly one answer where the condition holds. It does not
 supply the readout context, decomposition, `K`/CPT structure,
-sector-generation rule, weighting, normalization, probability,
+sector-generation rule, specific
+probability-distribution values, formation-site and formation-rate rules,
 measurement/decoherence dynamics, record-production dynamics, physical
-persistence dynamics, occurrence rule, update law, time metric, within-sector
+persistence dynamics, update law, time metric, within-sector
 data, occupancy rule, P2/modulus, log-det, source/action, scale,
 state-selection rule, law-domain derivation, or arbitrary observable
-identification. The
+identification. The neighborhood-determined probability distribution is
+therefore axiom content; only its specific values are downstream. The
 scale-reference primitive is the approved units primitive; do not describe it
 as an admission or a bounded Planck import. The kinetic-isotropy
 primitive is the approved structural OS0 kinetic-form isotropy `c_t = c_s`;
@@ -325,7 +393,8 @@ isotropy. If the only issue is use of the registered
 `realized_state_primitive`, record it as approved pointwise specialization to
 the supplied realized state. Keep the actual status judgment focused on any additional
 dimensionless dynamical quantity, selector, readout, normalization,
-probability, dynamics, closure theorem, or empirical content.
+specific probability-distribution value, dynamics, closure theorem, or
+empirical content.
 
 Required status fields for major artifacts:
 
@@ -633,10 +702,22 @@ For publication-facing or quantitative work, also inspect
    overclaiming NEGATIVE results. Run the `no-go-discipline` skill BEFORE
    shipping any cycle artifact, PR body, source note, runner, or review verdict
    that asserts a `no_go`, `stretch_attempt_negative`, `bounded_with_named_walls`,
-   or derived-no-go-boundary result. Answer N1-N8 IN WRITING in the cycle's
-   `CLAIM_STATUS_CERTIFICATE.md` (or a dedicated `NO_GO_DISCIPLINE_CHECKLIST.md`)
-   and include the checklist in the PR body so the audit lane and reviewers
-   can see exactly which alternative routes were tested.
+   or derived-no-go-boundary result. Answer N1-N8 IN WRITING, and LAND the
+   answers in the PR as a committed artifact the audit lane can bind: a
+   `## No-Go Discipline Gate` section in the source note itself, or a
+   committed `NO_GO_DISCIPLINE_CHECKLIST.md` that the note links. The PR body
+   is not a landing surface, and neither is the branch-local
+   `CLAIM_STATUS_CERTIFICATE.md` — keep the cycle's copy there as loop state
+   and copy it into the PR body as a courtesy, but review-loop's salvage pass
+   strips claim-status certificates, handoffs, and campaign state out of a
+   salvage slice, so only the source note or its linked sidecar survives as
+   the record. The second required landing artifact is the
+   N5 execution certificate in the primary runner's cached stdout, one
+   substantive line each for `per_element:`, `per_site:`, `per_mode:`,
+   `per_block:`, and `lattice_wide:`. A packet that existed at review time and
+   did not land is this repo's largest audit-invalidation class
+   (`docs/ai_methodology/skills/no-go-discipline/SKILL.md` Output section;
+   conformance spec section 4).
 
    | # | Check | Failure condition |
    |---|---|---|
@@ -697,10 +778,12 @@ For publication-facing or quantitative work, also inspect
     theorem step with prose. Put
     any proposed repo-wide weaving in `HANDOFF.md` for later review and
     backpressure integration.
-15. **Open review PRs.** At each block closure, open or prepare one PR for the
-    coherent science block unless `--no-pr` was supplied. In campaign mode,
-    a missing PR must become `PR_BACKLOG.md` and the campaign must continue if
-    runtime remains.
+15. **Open review PRs.** At each block closure, run the conformance gate in
+    Science Delivery And PR Policy against
+    `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and fix what it
+    catches, then open or prepare one PR for the coherent science block unless
+    `--no-pr` was supplied. In campaign mode, a missing PR must become
+    `PR_BACKLOG.md` and the campaign must continue if runtime remains.
 16. **Continue the campaign or stop.** After PR/backlog handling, if runtime
     remains and the current lane is blocked or closed, pick the next
     `OPPORTUNITY_QUEUE.md` item and continue. Stop the whole campaign only

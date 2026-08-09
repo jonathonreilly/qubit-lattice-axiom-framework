@@ -932,6 +932,28 @@ For the selected claim, read only:
 - current runner output, if the runner can be executed safely;
 - `docs/audit/README.md`, `FRESH_LOOK_REQUIREMENTS.md`, `AUDIT_AGENT_PROMPT_TEMPLATE.md`, and `ALGEBRAIC_DECORATION_POLICY.md`.
 
+**Relationship context inside a restricted packet.** A note may declare
+machine-readable `contradicts:` / `cross_reference:` lists (historic-intake
+wrappers do). When it does, `scripts/codex_audit_runner.py`
+`relationship_context_blocks` resolves each declared reference — the wrapper
+file and its archived original — and `render_prompt` appends them under a
+`RELATIONSHIP CONTEXT (contradiction/context evidence — not dependencies)`
+heading, each block role-labelled `contradiction evidence — not dependencies`
+or `context evidence — not dependencies` and stamped
+`authority: none`. Delivery is atomic and fail-closed: an unreadable
+reference raises `RelationshipContextError` and types the seat
+`relationship_context_unready`, and a wrapper or archived original that
+changes while the seat runs is caught by `relationship_context_fingerprint`
+and typed `relationship_context_superseded` — never
+`remote_state_superseded` (regression:
+`docs/audit/scripts/tests/test_relationship_context_delivery.py`).
+Treat these sections as EVIDENCE to adjudicate — the contradiction set and the
+historical context around the source note — never as dependencies to satisfy,
+never as cited authorities, and never as prior-verdict context. They carry no
+effective status and no claim authority, and the fresh-context rules below
+apply to them unchanged: a relationship block that quotes or implies an
+earlier verdict does not license inheriting it.
+
 When writing the verdict, also load `references/nature-grade-rubric.md` from this skill.
 For theorem, proof, or nontrivial reduction claims, also load
 [`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md)

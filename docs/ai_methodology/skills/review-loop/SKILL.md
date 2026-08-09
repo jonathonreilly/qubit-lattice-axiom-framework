@@ -238,13 +238,18 @@ review-only flags contradict the drain's land-end-to-end contract).
    acknowledgment surface, so it needs no new reviewer round — any OTHER
    conflict fails the landing closed and returns the PR to its worker for
    re-review on a rebased head. PROACTIVE rule, not just on conflict: when
-   the commits being landed change any citation-graph dependency (new or
-   edited notes with markdown links), the landing set must INCLUDE a
+   the commits being landed change citation-graph TOPOLOGY — adding or
+   removing any graph node, or rewiring any dependency edge — the landing
+   set must INCLUDE a
    refreshed `docs/audit/data/citation_graph_manifest.json`
    (`build_citation_graph.py` then `write_citation_graph_manifest.py`,
    staged into the landing) — otherwise the enforced stage-18 guard blocks
    every subsequent pipeline run on main until someone lands the
-   acknowledgment for you. Generated-output restoration is a
+   acknowledgment for you. `build_citation_graph.py` registers every
+   non-skipped `docs/**/*.md` file as a node before extracting any edge, so
+   a newly added note with zero markdown links is a node addition and
+   triggers this rule exactly like an edge rewire.
+   Generated-output restoration is a
    COMMIT-time rule (see the audit-compatibility gate), not a landing-time
    step: the commits being landed are already clean. The fail-closed
    landing loop is, exactly:
@@ -322,6 +327,33 @@ itself — but a reviewer may cite a skipped pre-flight item as a finding when
 the defect it would have caught is present. Whether such findings are fixed
 in place or the branch is rejected follows the existing Fix Policy and
 close-with-reason path; the checklist adds no new disposition.
+
+`docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` is the pre-review
+conformance bar the pre-flight serves: authors generate to it, and at review
+entry the orchestrator pre-fixes a NARROW set of mechanical subchecks before
+a reviewer seat is spent on the PR. The pre-fixable set is exactly:
+
+- link resolution and repository portability (section 8's tracked-regular-file
+  / web-URL requirement, and absolute or outside-repository link targets);
+- field presence and enum validity in the machine-status and trace blocks
+  (section 9), including a value drawn from the wrong enum family;
+- removal of forbidden author-written audit outputs and regenerated audit
+  surfaces (section 10);
+- deterministic command and gate hygiene (section 12): running the linter,
+  the pipeline, `py_compile`, the merge-base `git diff --check`, and
+  restoring generated outputs so the staged set is exactly the intended one.
+
+Everything else is scientific or dependency judgment and is NEVER pre-fixed
+as mechanical: whether an added, removed, or rewired dependency edge is
+INTENDED (section 8); which inputs are underivable, their provenance and role,
+and which lane owns an open bridge (section 9); claim scope and the honest
+boundary reading of section 3; proof content (section 5); runner logic and
+validity (section 6); and sections 1, 2, 4, 7, and 11 entire. Those stay with
+the reviewer, who is the only seat that may decide them.
+
+Pre-fix is orchestrator repair of mechanical non-conformance under Fix Policy,
+not a review: it confers no PASS, it does not shorten or replace any lens, and
+nothing lands without a reviewer PASS on the final state.
 
 ## Arguments
 
@@ -789,6 +821,16 @@ Otherwise apply the narrowest honest fix:
    contains substantial non-source packet material, use a clean temporary
    worktree for integration, but do not create or open a follow-up PR.
 
+For any finding it covers, apply the cure stated in
+`docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`, so the same defect
+is cured the same way in every slot instead of being renegotiated per PR.
+Reviewer prompts and findings may cite its sections by number as shorthand
+for the requirement — "conformance spec section 5, target-equivalent terminal
+lemma" — but the authority is the skill, script, or vocabulary file that
+section cites, and a finding must be justifiable from that authority. Where
+the spec and its cited authority disagree, the cited authority wins and the
+spec carries a defect: fix the PR to the authority and report the drift.
+
 Skip:
 
 - nits;
@@ -987,23 +1029,28 @@ git status --porcelain docs/audit/AUDIT_LEDGER.md \
 
 If this command prints any line OTHER than the single allowed staged
 `docs/audit/data/citation_graph_manifest.json` entry (allowed only when the
-landed commits change graph dependencies), BLOCK PASS and instruct the
+landed commits change graph topology), BLOCK PASS and instruct the
 operator to DROP the regenerated files before recommitting. The drop
 sequence deliberately erases everything — including the manifest — and then
 deterministically regenerates and re-stages the manifest when (and only
-when) the landing changes graph dependencies:
+when) the landing changes graph topology. Drop by restoring the branch's own
+committed state: `git checkout origin/main -- <paths>` writes the index too,
+so on a stale or stacked branch it stages current-`main`'s generated deltas
+relative to the branch head.
 
 ```bash
-git checkout origin/main -- docs/audit/data/ \
-                            docs/audit/AUDIT_QUEUE.md \
-                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
-                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
-                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git restore --source=HEAD --staged --worktree -- \
+    docs/audit/data/ \
+    docs/audit/AUDIT_QUEUE.md \
+    docs/audit/MISSING_DERIVATION_PROMPTS.md \
+    'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+    docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
 git clean -fd -- docs/audit/data/
-# Only when the landed commits change citation-graph dependencies:
+# Only when the landed commits add/remove a graph node or rewire an edge:
 python3 docs/audit/scripts/build_citation_graph.py
 python3 docs/audit/scripts/write_citation_graph_manifest.py
 git add docs/audit/data/citation_graph_manifest.json
+git status --porcelain   # second line of defense: exactly the intended paths
 ```
 
 The pipeline is run for VALIDATION only — to confirm the source repair is

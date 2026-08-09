@@ -70,6 +70,12 @@ A PR shipping any no-go / impossibility / "X is refuted" claim MUST carry:
 - N5: the five mandatory resolution lines present in the cached stdout.
 Withdrawing the negative claim to a bounded positive observation removes the
 N-gate obligation — but then NO residual sentence may still function as a no-go.
+- Counterexamples are existence witnesses, not refutation theorems: publish the
+  witness (the observed firing, the constructed configuration) and scope the
+  positive claim to its declared domain. Any sentence quantifying over "any
+  generalization/extension/broader reading" is itself a derived no-go boundary
+  and owes the full N-gate. This must hold on EVERY surface (see claim-scope
+  section), including checker-emitted strings and receipts.
 
 ## 5. Packet completeness (audit reachability)
 

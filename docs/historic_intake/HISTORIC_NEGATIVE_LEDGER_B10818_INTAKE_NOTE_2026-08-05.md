@@ -18,10 +18,6 @@ required before any effective status.
 
 Six negatives: the four axioms do NOT uniquely select staggered/Dirac kinetics (a symmetric SWAP-Laplacian completion exists); 'locality + cubic symmetry + nonzero Hermitian dynamics select the carrier' is FALSIFIED (the graph Laplacian satisfies all three); strict local unitary ticks alone do not select the 3D matter cone (scalar ticks trivial; internal ticks leave multiple quantized drifts and no curved cone at current carrier density); direct Hamiltonian preservation of every rank-one permanent record is a REJECTED CATEGORY ERROR (commuting with every rank-one projector makes the same-site action scalar and freezes staggered hopping); unitary evolution alone does not form permanent records in a finite blank/record split; 'availability variation equals kinetic-coefficient variation' is FALSIFIED on the current text (the top-eigenspace availability rule varies while remaining independent of the kinetic law).
 
-Original verdict: These negatives prune routes, not the full record-instrument program.
-Scope: Current surface and analyzed classes.
-Escape conditions (negative claims): The live escape is a separate classical record register coupled through a local instrument to a coherent carrier.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Falsifies two previously stated selector claims: the four axioms do NOT uniquely
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): These negatives prune routes, not the full record-instrument program.
+- Extraction scope (triage compression; may reflect later context): Current surface and analyzed classes.
+- Extraction escape conditions (negative claims; triage compression): The live escape is a separate classical record register coupled through a local instrument to a coherent carrier.
 - Extraction red flags: three separate previously-held selection claims are falsified or rejected here, including one described as a category error
 - Supersession (as known at extraction): FALSIFIES two previously stated selection claims and rejects one as a category error.
 

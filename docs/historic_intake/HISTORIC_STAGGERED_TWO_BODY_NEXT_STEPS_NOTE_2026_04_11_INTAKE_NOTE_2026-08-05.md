@@ -18,10 +18,6 @@ required before any effective status.
 
 Freezes the design lesson from the 2026-04-11 staggered batch: the external-source d^-2 trajectory law and the exact partner-force two-body channel are real positives, but blocked-centroid both-masses (100% force-balance failure, ~26% drift) and blocked self-consistent trajectory (inward only 10/15, shifts ~1e-4) do not close. Diagnosis: the blocked centroid is an envelope readout, not a packet-force readout.
 
-Original verdict: The architecture is not the blocker; the blocked-centroid split is, so the next iteration must change the observable class rather than resweep.
-Scope: Non-retainable staggered two-body pieces from the late 2026-04-11 batch on the primary open-cubic architecture.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,8 @@ The staggered-batch design lesson: the architecture is not the blocker, the bloc
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The architecture is not the blocker; the blocked-centroid split is, so the next iteration must change the observable class rather than resweep.
+- Extraction scope (triage compression; may reflect later context): Non-retainable staggered two-body pieces from the late 2026-04-11 batch on the primary open-cubic architecture.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Synthesis over STAGGERED_BOTH_MASSES / SELF_CONSISTENT_TWO_BODY / NEWTON_REPRODUCTION / NEWTON_BLOCKING_SENSITIVITY notes of 2026-04-11; FAMILY TERMINAL for the blocked-centroid sub-chain.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Of 3872 tracked ledger rows, 3100 (80.1%) are unaudited and 772 (19.9%) are audit capital. Measured 478 status-attribution defect lines (a note labels a NAMED OTHER note with a status stronger than that note's live status) across 176 distinct citing notes and 203 distinct mislabelled targets, plus 26 self-over-claim notes. Mutually circular pairs: ZERO. Rows requeued if EVERY defect is fixed: 4. Retained-grade verdicts put at risk: 0.
 
-Original verdict: Divergence is real, large and load-bearing (89% of the 478 lines sit on true dependency edges) but it is a SYMPTOM whose proximate cause is the pipeline gap: audit_lint​.py reads note bodies and never checks them for status claims, vocab_lint​.py has no status vocabulary at all, and the prose_status field is inert (2876/3872 not_evaluated_pre_vocab_lint, 996 clean, and ZERO rows carry a single prose_corrections entry — the auto-correct-and-log mechanism in VOCABULARY_HYGIENE_DESIGN.md principle 4 has NEVER FIRED).
-Scope: Status truth read only from tracked shards docs/audit/data/ledger/<id[:2]>/<id>.json; no prose status label trusted anywhere.
-Escape conditions (negative claims): The churn guard does NOT bind this defect class — total cost is 4 requeued rows (0.5% of audited capital) and 0 retained verdicts — so the reason to prefer tooling is recurrence, not cost.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ SYSTEMIC INTEGRITY MEASUREMENT: of 3872 tracked ledger rows, 3100 (80.1%) are un
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Divergence is real, large and load-bearing (89% of the 478 lines sit on true dependency edges) but it is a SYMPTOM whose proximate cause is the pipeline gap: audit_lint​.py reads note bodies and never checks them for status claims, vocab_lint​.py has no status vocabulary at all, and the prose_status field is inert (2876/3872 not_evaluated_pre_vocab_lint, 996 clean, and ZERO rows carry a single prose_corrections entry — the auto-correct-and-log mechanism in VOCABULARY_HYGIENE_DESIGN.md principle 4 has NEVER FIRED).
+- Extraction scope (triage compression; may reflect later context): Status truth read only from tracked shards docs/audit/data/ledger/<id[:2]>/<id>.json; no prose status label trusted anywhere.
+- Extraction escape conditions (negative claims; triage compression): The churn guard does NOT bind this defect class — total cost is 4 requeued rows (0.5% of audited capital) and 0 retained verdicts — so the reason to prefer tooling is recurrence, not cost.
 - Extraction red flags: a specified auto-correct-and-log mechanism has never fired once in the repo's history; and there is NO FIELD anywhere meaning 'this note's prose asserts a status contradicting the ledger'
 - Supersession (as known at extraction): Corrects the campaign brief's own framing: the campaign cited '44 mutually circular contradictions' but measured circular pairs are ZERO. Notes that prose_status is scoped to vocabulary drift by docs/audit/README.md:108-124 and explicitly does not propagate into effective_status.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Iterations 21-22 elegantly REWRITE the iteration-4 PMNS conjecture in p = 3 terms (Q = p delta is retained-forced from the two closures; theta_13 = delta*Q = p delta^2 = 4/p^3) but do not derive it: theta_13 = delta*Q is a NuFit fit, and the data cannot distinguish it from theta_13 = delta*Q + epsilon below 1 sigma resolution.
 
-Original verdict: Downgrades 'I5 angles RETAINED-DERIVED at numerical level' to 'I5 angles FIT retained (Q, delta) at 1 sigma' — retained-rewritten given the conjecture, with the mechanism still open.
-Scope: Reviewer-quality self-examination of the branch's own language; separates what is retained-forced (I1, I2/P, Q = 3 delta, V_TBM) from what is conditional on the iteration-4 conjecture (SR2 conservation, theta_13 = 4/p^3, the numerical I5 values).
-Escape conditions (negative claims): Names the honest targets: derive theta_13 = delta*Q exactly from a retained Cl(3) mechanism, or exhibit a different (Q, delta) fit also matching NuFit at 1 sigma, which would show the conjecture is not unique.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The honest downgrade: 'I5 angles RETAINED-DERIVED' reduced to 'FIT retained (Q, 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Downgrades 'I5 angles RETAINED-DERIVED at numerical level' to 'I5 angles FIT retained (Q, delta) at 1 sigma' — retained-rewritten given the conjecture, with the mechanism still open.
+- Extraction scope (triage compression; may reflect later context): Reviewer-quality self-examination of the branch's own language; separates what is retained-forced (I1, I2/P, Q = 3 delta, V_TBM) from what is conditional on the iteration-4 conjecture (SR2 conservation, theta_13 = 4/p^3, the numerical I5 values).
+- Extraction escape conditions (negative claims; triage compression): Names the honest targets: derive theta_13 = delta*Q exactly from a retained Cl(3) mechanism, or exhibit a different (Q, delta) fit also matching NuFit at 1 sigma, which would show the conjecture is not unique.
 - Extraction red flags: A second self-correction in the same branch, this time of overclaiming language in a status note that was already being proposed for promotion.
 - Supersession (as known at extraction): Downgrades the language of the iteration-22/23 master status notes (V3); contrasts itself with the iteration-11/12 revision as a language overreach rather than a factual error.
 

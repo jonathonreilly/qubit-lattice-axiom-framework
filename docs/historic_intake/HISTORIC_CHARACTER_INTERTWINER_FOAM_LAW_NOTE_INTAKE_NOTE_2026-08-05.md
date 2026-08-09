@@ -18,10 +18,6 @@ required before any effective status.
 
 On the same finite periodic 3+1 lattice evaluation surface, the plaquette expectation is exactly a ratio of absolutely convergent SU(3) character/intertwiner foam sums: w_beta(U) = exp[(beta/6)(Tr U + Tr U^dag)] is a positive class function expanded by Peter-Weyl, and the finite product over plaquettes inherits absolute convergence, with the earlier carrier theorems recovered as its low-order truncations.
 
-Original verdict: The finite-beta law is closed; what remains open is only compression — a faster exact resummed evaluator.
-Scope: Exact at finite beta on the finite periodic evaluation surface; anchored-boundary variant given as Theorem 3.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact finite-beta plaquette law as absolutely convergent character/intertwiner f
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The finite-beta law is closed; what remains open is only compression — a faster exact resummed evaluator.
+- Extraction scope (triage compression; may reflect later context): Exact at finite beta on the finite periodic evaluation surface; anchored-boundary variant given as Theorem 3.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Subsumes the earlier carrier theorems as first low-order truncations; supplies the exact law the anchored-surface-gas route was missing.
 

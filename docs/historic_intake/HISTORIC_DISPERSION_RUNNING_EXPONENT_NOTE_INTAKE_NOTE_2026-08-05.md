@@ -18,10 +18,6 @@ required before any effective status.
 
 Running-exponent fingerprint at h = 0.5 classifies architectures the earlier global R^2 fit could not separate: cubic and Wilson give alpha ~ 2.09-2.19 in both momentum windows (Schrodinger-type), while staggered is elevated to 2.39/2.54 and fits no clean particle category; no architecture shows a Klein-Gordon crossover.
 
-Original verdict: The diagnostic works and cleanly separates architectures, but staggered remains non-standard and no crossover exists.
-Scope: Single lattice spacing (h = 0.5) with cos^2 kernel, k_phase = 5, p = 1; establishes no continuum-limit behaviour.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The running-exponent diagnostic replacing the flawed global R^2 fit — cleanly 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The diagnostic works and cleanly separates architectures, but staggered remains non-standard and no crossover exists.
+- Extraction scope (triage compression; may reflect later context): Single lattice spacing (h = 0.5) with cos^2 kernel, k_phase = 5, p = 1; establishes no continuum-limit behaviour.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly replaces the earlier single global R^2 fit as the lane's diagnostic.
 

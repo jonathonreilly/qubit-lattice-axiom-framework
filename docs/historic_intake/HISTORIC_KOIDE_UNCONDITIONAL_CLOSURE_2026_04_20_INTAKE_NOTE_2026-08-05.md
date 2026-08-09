@@ -18,10 +18,6 @@ required before any effective status.
 
 Claims both I1 (Q=2/3) and I2/P (delta=2/9 rad) are unconditional retained derivations from Cl(3)/Z^3 + A-select, with the Round-3 orbifold-lift residue discharged by R4-6: Rodrigues rotation by 2pi/3 about n=(1,1,1)/sqrt(3) equals the cyclic permutation matrix [[0,0,1],[1,0,0],[0,1,0]] EXACTLY, so C_3[111] IS the spatial rotation and the fixed-locus transverse geometry is R^4/Z_3 with forced weights (1,2). Lists eight independent exact derivations of 2/9 and three of Q=2/3.
 
-Original verdict: CLOSED UNCONDITIONALLY per the note — 24 parallel agents across 4 rounds, eight exact routes to 2/9, and the charged-lepton spectrum recast as a structural invariant of the Z^3 cubic symmetry with zero free parameters.
-Scope: Claims closure for the two Koide items only; residual open items are the overall scale v_0 ~ 17.72 sqrt(MeV), the quark-sector analog, and the neutrino Brannen phase.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The 'CLOSED UNCONDITIONALLY' final claim (24 agents, 4 rounds) — pulled WITH t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CLOSED UNCONDITIONALLY per the note — 24 parallel agents across 4 rounds, eight exact routes to 2/9, and the charged-lepton spectrum recast as a structural invariant of the Z^3 cubic symmetry with zero free parameters.
+- Extraction scope (triage compression; may reflect later context): Claims closure for the two Koide items only; residual open items are the overall scale v_0 ~ 17.72 sqrt(MeV), the quark-sector analog, and the neutrino Brannen phase.
 - Extraction red flags: Very strong claim ('CLOSED UNCONDITIONALLY', 'We broke new ground in physics tonight') from a one-night multi-agent sprint; four days later the same branch lane runs 40+ no-go notes on the premise that Q is still open, and a Nature-grade review (idx_pos 1038) fails the closest closure candidate.
 - Supersession (as known at extraction): Self-declared FINAL note of the four-round parallel-attack chain (1071 -> 1072 -> 1073 -> this); dissolves the orbifold-lift residue that Round 3 left open. Directly contradicted by the April-24/25 Koide-Q no-go stack in this same stratum, which treats Q as open.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The orbit decomposition 8 = 1+3+3+1 under Z_3 cyclic permutation is exact (Burnside: (8+2+2)/3 = 4 orbits) and dimension-locked via C(3,k), with d = 2 giving 1+2+1 and d = 4 giving no clean triplet; but interpreting the triplet orbits as generations requires the taste-physicality assumption that a = l_Planck is a physical minimum with no continuum limit.
 
-Original verdict: The 1+3+3+1 algebra is proven; the generation interpretation is a well-motivated structural argument, not yet a theorem.
-Scope: The exact algebra is retained; the physical interpretation is bounded by taste-physicality, which is motivated but not a theorem.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Gate-2 closure with a WITHDRAWN supporting argument on record (Wilson entangleme
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The 1+3+3+1 algebra is proven; the generation interpretation is a well-motivated structural argument, not yet a theorem.
+- Extraction scope (triage compression; may reflect later context): The exact algebra is retained; the physical interpretation is bounded by taste-physicality, which is motivated but not a theorem.
 - Extraction red flags: Explicitly retracts a previously claimed supporting argument as not proving what earlier notes claimed.
 - Supersession (as known at extraction): WITHDRAWS the Wilson entanglement argument (argument 6 of the 20/20 script) from the closure claim: fragility under deformation is not physicality.
 

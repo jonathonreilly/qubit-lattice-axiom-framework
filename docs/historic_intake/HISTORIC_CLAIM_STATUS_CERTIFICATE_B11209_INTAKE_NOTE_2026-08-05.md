@@ -18,10 +18,6 @@ required before any effective status.
 
 Records a finite labeled-object correction: the repaired surface is scalar-i K-odd versus real J_cs K-even, and the labeled generation Vandermonde orientation is K-odd under delta -> -delta and is no longer claimed as part of the K-even sector.
 
-Original verdict: bounded-support, closes_by_correction; audit required before effective retained status.
-Scope: Finite labeled-object parity correction; not a new axiom or convention.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Correction of a prior parity-sector assignment: the repaired surface is scalar-i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): bounded-support, closes_by_correction; audit required before effective retained status.
+- Extraction scope (triage compression; may reflect later context): Finite labeled-object parity correction; not a new axiom or convention.
 - Extraction red flags: retracts a prior parity-sector assignment; the supervisor should check whether the earlier K-even claim had landed in docs/
 - Supersession (as known at extraction): CORRECTION of a prior claim: the labeled generation Vandermonde orientation was previously claimed as part of the K-even sector and is now withdrawn from it
 

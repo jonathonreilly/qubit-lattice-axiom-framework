@@ -18,10 +18,6 @@ required before any effective status.
 
 Shows arg det(M_q) is record-quantized to a Z_2 sign {0, pi} rather than a continuous angle, because a recorded mass is self-adjoint with real spectrum, dissolving the continuous-mass-phase half of strong-CP naturalness; 7/7.
 
-Original verdict: Not a strong-CP solution but a sharp reduction of the mass side from continuous to Z_2, the first new movement on the theta Tier-A item via the sharpened Record principle.
-Scope: Exact on the recorded/Hermitian sector, sharpest for leptons; CKM needs a non-Hermitian structure that breaks the quantization.
-Escape conditions (negative claims): Three residuals left open: the gauge theta_QCD selection (RP provably cannot force it), the {0, pi} sign choice (a registered pattern parallel to r = 1/2), and the quark/CKM sector.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Strong-CP record quantization: arg det(M_q) is a Z_2 sign, not a continuous angl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not a strong-CP solution but a sharp reduction of the mass side from continuous to Z_2, the first new movement on the theta Tier-A item via the sharpened Record principle.
+- Extraction scope (triage compression; may reflect later context): Exact on the recorded/Hermitian sector, sharpest for leptons; CKM needs a non-Hermitian structure that breaks the quantization.
+- Extraction escape conditions (negative claims; triage compression): Three residuals left open: the gauge theta_QCD selection (RP provably cannot force it), the {0, pi} sign choice (a registered pattern parallel to r = 1/2), and the quark/CKM sector.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Feeds idx 1994 (mass-orientation discharge) and has the gauge-side analog idx 1993; sharpens the theta-bar collapse of idx 2050.
 

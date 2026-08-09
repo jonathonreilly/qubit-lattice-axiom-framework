@@ -18,10 +18,6 @@ required before any effective status.
 
 Upgrades the free staggered-Dirac 2-point convergence from pointwise-in-p to the smeared/tempered sense in which OS Schwinger functions are consumed: <f, S_a g> -> <f, S g> for all Schwartz test spinors, proved by a single dominated-convergence step with the exact envelope ||S_a(p)||_F = 2/sqrt(Delta_a) and Jordan's inequality. PASS=6 FAIL=0.
 
-Original verdict: The smeared / OS-sense 2-point convergence is ESTABLISHED conditional on rung A and m > 0 - the standalone statement that the free-field lattice-to-continuum Gaussian reduction flagged as its only residual.
-Scope: Conditional on rung A's pointwise convergence at its cited status and on fixed m > 0; the massless limit is not treated, and no measure-level reconstruction, spin-statistics, emergent-Lorentz or interacting claim is made.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Smeared/OS-sense 2-point convergence conditional on rung A — the transfer-gap 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The smeared / OS-sense 2-point convergence is ESTABLISHED conditional on rung A and m > 0 - the standalone statement that the free-field lattice-to-continuum Gaussian reduction flagged as its only residual.
+- Extraction scope (triage compression; may reflect later context): Conditional on rung A's pointwise convergence at its cited status and on fixed m > 0; the massless limit is not treated, and no measure-level reconstruction, spin-statistics, emergent-Lorentz or interacting claim is made.
 - Extraction red flags: Explicitly avoids leaning on a finite-a taste-flat operator identified elsewhere as an over-claim; the massless limit is untreated.
 - Supersession (as known at extraction): Converts a note whose verdict was DISSOLVED-conditional into its own standalone statement, rather than silently asserting the upgrade on rung A's behalf.
 

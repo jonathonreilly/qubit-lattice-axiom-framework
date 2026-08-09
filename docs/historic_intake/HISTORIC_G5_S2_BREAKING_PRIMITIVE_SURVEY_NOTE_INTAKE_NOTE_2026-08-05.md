@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Eight candidate channels surveyed for S_2-breaking on the T_2 diagonals: seven (anomaly substructure, 6th-order Higgs invariants, lattice-geometric operators, chirality operators, Cl(3) bilinears, the anomaly-forced time direction, and the CKM Schur cascade) are exactly S_2-symmetric or have zero T_2 diagonal, and only candidate 6 (G1's H lifted) has any breaking shape - signed delta_ab = -1.868 but restored to w_a = w_b under |H|, with cosine similarity 0.7432 to the observed direction.
 
-Original verdict: No retained object on main breaks S_2 with weights matching observed charged-lepton ratios; candidate 6 is ambiguous and depends on a non-retained lift.
-Scope: Eight concrete channels enumerated by the task brief, not claimed exhaustive; framework-native objects only, no PDG fit parameters.
-Escape conditions (negative claims): Three named routes to G5 closure: a genuinely new retained primitive distinguishing (1,1,0) from (1,0,1) in both sign and magnitude; a retained LIFTING theorem promoting G1's H from T_1 species to T_2 propagator weights (turning candidate 6 from AMBIGUOUS to TRUE); or an observational pin analogous to G1's PMNS pin.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Eight-channel S_2-breaking survey: seven channels fail, one ambiguous — with t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No retained object on main breaks S_2 with weights matching observed charged-lepton ratios; candidate 6 is ambiguous and depends on a non-retained lift.
+- Extraction scope (triage compression; may reflect later context): Eight concrete channels enumerated by the task brief, not claimed exhaustive; framework-native objects only, no PDG fit parameters.
+- Extraction escape conditions (negative claims; triage compression): Three named routes to G5 closure: a genuinely new retained primitive distinguishing (1,1,0) from (1,0,1) in both sign and magnitude; a retained LIFTING theorem promoting G1's H from T_1 species to T_2 propagator weights (turning candidate 6 from AMBIGUOUS to TRUE); or an observational pin analogous to G1's PMNS pin.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Rigorously confirms Agent 10 v2's structural-shape conclusion; the third named escape route is the one taken by G5_OBSERVATIONAL_PIN_CLOSURE (idx 548).
 

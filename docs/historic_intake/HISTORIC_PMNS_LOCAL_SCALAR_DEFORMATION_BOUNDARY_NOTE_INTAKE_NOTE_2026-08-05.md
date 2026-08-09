@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The commutative site algebra C(V) on the 8-site cell projects onto the hw=1 triplet as exactly the 3-dimensional DIAGONAL algebra, so any local scalar field gives only diag(u_1,u_2,u_3) triplet blocks, diagonal response columns and zero cycle-channel data - and the retained closure stack rejects the route since there is no I + C active support and no one-sided minimal PMNS class.
 
-Original verdict: No - the entire local scalar-field route produces only diagonal generation splitting.
-Scope: Retained lowest-order local scalar-field route on the retained PMNS lepton surface.
-Escape conditions (negative claims): Does not rule out a non-scalar deformation law, a route leaving the retained one-sided minimal class, or a different extension of the microscopic lepton dynamics.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact negative: the entire local scalar-field route produces only diagonal split
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - the entire local scalar-field route produces only diagonal generation splitting.
+- Extraction scope (triage compression; may reflect later context): Retained lowest-order local scalar-field route on the retained PMNS lepton surface.
+- Extraction escape conditions (negative claims; triage compression): Does not rule out a non-scalar deformation law, a route leaving the retained one-sided minimal class, or a different extension of the microscopic lepton dynamics.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Strictly stronger than the earlier uniform-scalar / Coleman-Weinberg boundary, which only said the translation-invariant route rescales the free point.
 

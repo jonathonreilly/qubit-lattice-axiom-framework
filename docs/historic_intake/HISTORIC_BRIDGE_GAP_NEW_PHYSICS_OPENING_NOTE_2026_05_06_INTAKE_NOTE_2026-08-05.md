@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies the assumption shared by all seven exhausted routes: the Wilson action is IMPORTED, not derived — so the exhaustion is a no-go on <P>_Wilson(6), not on <P>_framework(6) under a Cl(3)-native action, with the heat-kernel action the leading candidate whose time convention is itself not yet derived.
 
-Original verdict: New top of the bridge-gap science stack — derive the canonical Cl(3) gauge metric first, then compute <P>_HK(6) — and the SDP plan drops to fallback because SDP would close the wrong action.
-Scope: Research-target framing (proposal_allowed: false); no value derived.
-Escape conditions (negative claims): Reframes the prior consolidation no-go's escape explicitly: it binds only the Wilson action, leaving every non-Wilson framework-native action open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The reframe that redefines the beta6 wall: all seven exhausted routes assumed th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): New top of the bridge-gap science stack — derive the canonical Cl(3) gauge metric first, then compute <P>_HK(6) — and the SDP plan drops to fallback because SDP would close the wrong action.
+- Extraction scope (triage compression; may reflect later context): Research-target framing (proposal_allowed: false); no value derived.
+- Extraction escape conditions (negative claims; triage compression): Reframes the prior consolidation no-go's escape explicitly: it binds only the Wilson action, leaving every non-Wilson framework-native action open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes the industrial-SDP framing and demotes that plan; keeps the seven-route consolidation correct but re-scoped.
 

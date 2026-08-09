@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves the algebraic identity |A+B+C|^2 - |A+B|^2 - |A+C|^2 - |B+C|^2 + |A|^2 + |B|^2 + |C|^2 = 0, i.e. the Sorkin third-order interference parameter I_3 vanishes identically given amplitude linearity and P = |A|^2, following from finite tensor-product Hilbert space alone with no lattice-specific input.
 
-Original verdict: Exact theorem for I_3 = 0 — but the title's 'Born rule derived' overstates it, since the Born rule is an assumption of the proof.
-Scope: Assumes the Born rule P_S = |A_S|^2 and linearity of amplitudes; no lattice detail enters.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact I3=0 identity from amplitude linearity WITH the era-audited title overclai
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact theorem for I_3 = 0 — but the title's 'Born rule derived' overstates it, since the Born rule is an assumption of the proof.
+- Extraction scope (triage compression; may reflect later context): Assumes the Born rule P_S = |A_S|^2 and linearity of amplitudes; no lattice detail enters.
 - Extraction red flags: Title claims the Born rule is derived while the proof assumes it; flagged as OVERCLAIMED by the April adversarial audit.
 - Supersession (as known at extraction): Independently audited in ADVERSARIAL_AUDIT_2026-04-13, which rules the note and its runner OVERCLAIMED.
 

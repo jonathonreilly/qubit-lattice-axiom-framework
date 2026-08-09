@@ -18,10 +18,6 @@ required before any effective status.
 
 Packages the algebraic content that becomes available IF two open premises are accepted — (alpha_3/alpha_em)(bare) = 2d + 3 (carried only by a support note) and Koide Q_l = 2/3 (an open target) — namely the unified structural-counts form for atlas-LO CKM magnitudes and a conditional dimension-uniqueness template.
 
-Original verdict: The dimension-uniqueness reading becomes a sharp falsification surface only if the bare-alpha and Koide premises independently close.
-Scope: Explicitly conditional: does not promote either load-bearing premise, both of which remain open on main.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The honest premise-separation: packages what becomes available ONLY IF two open 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The dimension-uniqueness reading becomes a sharp falsification surface only if the bare-alpha and Koide premises independently close.
+- Extraction scope (triage compression; may reflect later context): Explicitly conditional: does not promote either load-bearing premise, both of which remain open on main.
 - Extraction red flags: Its companion theorem note asserts as retained what this note documents as resting on two open premises.
 - Supersession (as known at extraction): Support companion to the same-date theorem note, separating its retained layer from its conditional layer.
 

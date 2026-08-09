@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Six distinct attacks executed (granted cyclic invariant scalarity, granted conjugation, granted spectrum-scalar grammar, Record finite additivity, the unreduced determinant forcing route, and real-Schur quadratic uniqueness): the first three retain a cubic phase channel, Record has no carrier bridge and still admits two laws after one is granted, the unreduced determinant gives kappa = 1, and the last gives a positive theorem only through degree two. The collapsed wall set has exactly ONE member — eliminate the surviving cubic phase invariant from the physical scalar readout.
 
-Original verdict: PASS for the narrow claim that the minimal-axiom plus retained cyclic-compression packet does not force the physical SO(2) radius quotient.
-Scope: Per supplied cyclic matrix; lattice-wide dynamics, record formation, physical species construction, and all possible future readouts are explicitly outside scope.
-Escape conditions (negative claims): Three positive paths, none requiring a new axiom: derive full SO(2) readout invariance, derive naturality under the full orthogonal automorphism group of the real C3 module, or derive exact quadratic physical grammar plus all-higher-order decoupling. The steelman (the actual observable may be exactly first-live and second order, whereupon real Schur theory forces radial dependence) is preserved as the next positive target.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Six distinct attacks fail to force the kappa selection from the minimal-axiom + 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PASS for the narrow claim that the minimal-axiom plus retained cyclic-compression packet does not force the physical SO(2) radius quotient.
+- Extraction scope (triage compression; may reflect later context): Per supplied cyclic matrix; lattice-wide dynamics, record formation, physical species construction, and all possible future readouts are explicitly outside scope.
+- Extraction escape conditions (negative claims; triage compression): Three positive paths, none requiring a new axiom: derive full SO(2) readout invariance, derive naturality under the full orthogonal automorphism group of the real C3 module, or derive exact quadratic physical grammar plus all-higher-order decoupling. The steelman (the actual observable may be exactly first-live and second order, whereupon real Schur theory forces radial dependence) is preserved as the next positive target.
 - Extraction red flags: The unreduced determinant route gives kappa = 1, not the kappa = 2 the r = 1/2 story needs — consistent with the other kappa findings in this pack.
 - Supersession (as known at extraction): N8 inventories the MRU demotion note, the real-representation block-count no-go, probes 13 and 16, the BAE U(1)_b phase note, and the retained registered-mass DFT theorem — which retires only Q phase dependence for a SUPPLIED mass triple, not the source-domain physical quotient.
 

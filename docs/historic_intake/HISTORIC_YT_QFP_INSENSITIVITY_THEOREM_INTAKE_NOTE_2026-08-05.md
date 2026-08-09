@@ -18,10 +18,6 @@ required before any effective status.
 
 Answers the objection that the SM EFT is the wrong theory above v by proving the backward Ward prediction y_t(v) = 0.973 is insensitive to which RG flow is used: Pendleton-Ross focusing gives a focusing ratio R = 1.09 over y_t(M_Pl) in [0.2, 0.8] and R = 1.98 over the upper half, with local sensitivity dy_t(v)/dy_t(M_Pl) = 0.90, so a 10% shift near the Ward value 0.436 produces only a 4.0% shift in y_t(v). Sensitivity budget: +/-3% beta coefficients gives <3%, +/-10% gives <8%, +/-20% b_3 alone <8%, 2-loop truncation ~2.4%; g_1, g_2 and lambda variation contribute <3.7%, <7.4% and <0.03%. Prediction m_t = 169.4 GeV with ~3% systematic from the RG-flow choice.
 
-Original verdict: y_t(v; SM RGE) = y_t(v; lattice) + O(3%), so the Codex blocker is correct about the physics above v but not relevant to the backward Ward prediction.
-Scope: Formal theorem over a family of smooth RG flows on [v, M_Pl] satisfying a gauge anchor alpha_s(v) = 0.1033, the Ward BC y_t(M_Pl) = 0.436, and a focusing structure with c_3 > c_self > 0; the note explicitly does NOT claim the SM RGE is the physical description above v, only that it is a valid interpolation.
-Escape conditions (negative claims): The insensitivity holds for trajectories ABOVE the quasi-fixed point; below the QFP sensitivity is near 1:1, and the note relies on the Ward BC being a derived quantity whose uncertainty is bounded by Ward-identity precision rather than the full scan range. The focusing structure is claimed structural (depending only on signs and relative magnitudes of beta coefficients, not their values).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The quasi-fixed-point insensitivity theorem (y_t(v) RG-flow-insensitive above th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): y_t(v; SM RGE) = y_t(v; lattice) + O(3%), so the Codex blocker is correct about the physics above v but not relevant to the backward Ward prediction.
+- Extraction scope (triage compression; may reflect later context): Formal theorem over a family of smooth RG flows on [v, M_Pl] satisfying a gauge anchor alpha_s(v) = 0.1033, the Ward BC y_t(M_Pl) = 0.436, and a focusing structure with c_3 > c_self > 0; the note explicitly does NOT claim the SM RGE is the physical description above v, only that it is a valid interpolation.
+- Extraction escape conditions (negative claims; triage compression): The insensitivity holds for trajectories ABOVE the quasi-fixed point; below the QFP sensitivity is near 1:1, and the note relies on the Ward BC being a derived quantity whose uncertainty is bounded by Ward-identity precision rather than the full scan range. The focusing structure is claimed structural (depending only on signs and relative magnitudes of beta coefficients, not their values).
 - Extraction red flags: The claimed insensitivity is asymmetric — over the full range [0.2, 0.8] the focusing ratio is only R = 1.09 and y_t(v) spans 0.609 to 1.157 (m_t 106.0 to 201.5 GeV), so the bound depends on the Ward BC's own precision holding.
 - Supersession (as known at extraction): Resolves a specific Codex blocker on the Boundary Selection Theorem's claim that the lattice theory (16 tastes) applies above v while the SM EFT applies below.
 

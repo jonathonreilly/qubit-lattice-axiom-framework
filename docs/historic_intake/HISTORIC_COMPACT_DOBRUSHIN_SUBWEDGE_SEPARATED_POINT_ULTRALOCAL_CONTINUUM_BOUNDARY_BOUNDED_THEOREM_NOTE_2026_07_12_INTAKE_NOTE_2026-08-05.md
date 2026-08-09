@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For the supplied massive Wilson-staggered model with isotropic a_j -> 0, if (beta_j, m_j) stays in a compact subset of the strict Dobrushin spatial-uniqueness wedge (kappa(m) = 14/(m^2+2), alpha = 18 beta + (3/2) kappa^2 (2-kappa)/(1-kappa)^2 < 1), then gauge-invariant continuum correlations at fixed physical separation are only contact-supported, with a divergent physical OS gap and fermion decoupling.
 
-Original verdict: A negative continuum boundary for the compact-interior Dobrushin regime that deliberately does not close the continuum campaign.
-Scope: Compact interior of the strict wedge only; explicitly does not support any broader claim that lattice scaling itself must be ultralocal.
-Escape conditions (negative claims): Section 4 and the N1 route table name what stays live outside the claim, including weak-bare-coupling gauge scaling (attempted but out of reach of the small-beta wedge, with standard asymptotic scaling outside scope) and untested exponential field renormalizations.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Negative continuum boundary for the compact-interior Dobrushin regime with live 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A negative continuum boundary for the compact-interior Dobrushin regime that deliberately does not close the continuum campaign.
+- Extraction scope (triage compression; may reflect later context): Compact interior of the strict wedge only; explicitly does not support any broader claim that lattice scaling itself must be ultralocal.
+- Extraction escape conditions (negative claims; triage compression): Section 4 and the N1 route table name what stays live outside the claim, including weak-bare-coupling gauge scaling (attempted but out of reach of the small-beta wedge, with standard asymptotic scaling outside scope) and untested exponential field renormalizations.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Builds on the massive Wilson-staggered Dobrushin wedge bounded theorem.
 

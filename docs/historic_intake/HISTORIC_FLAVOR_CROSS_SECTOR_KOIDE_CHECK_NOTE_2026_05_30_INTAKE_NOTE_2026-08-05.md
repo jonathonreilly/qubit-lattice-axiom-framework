@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Observed Koide Q is 0.66666 for charged leptons but 0.85-0.89 for up quarks and ~0.73 for down quarks - ABOVE 2/3 - whereas VEV-dilution can only push a sector BELOW 2/3, and the 'heavy = VEV-dominated' step was a category error (VEV-dominated means degenerate, but quarks are extremely hierarchical).
 
-Original verdict: The cross-sector claim is retracted; the honest scope is a native, dynamically-stable lean explaining the charged-lepton Q = 2/3 specifically.
-Scope: Cross-sector extrapolation only; the lepton moves 1-4 result is untouched.
-Escape conditions (negative claims): Quark Q > 2/3 requires b/a > 1/sqrt2 - more off-diagonal structure than block-count - which is unreachable by positive VEV-dilution and consistent with the retained no-go quark_c3_circulant_source_law_boundary (A1's grading does not propagate to quarks).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Cross-sector retraction: quark Q > 2/3 is ABOVE the value VEV-dilution can reach
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The cross-sector claim is retracted; the honest scope is a native, dynamically-stable lean explaining the charged-lepton Q = 2/3 specifically.
+- Extraction scope (triage compression; may reflect later context): Cross-sector extrapolation only; the lepton moves 1-4 result is untouched.
+- Extraction escape conditions (negative claims; triage compression): Quark Q > 2/3 requires b/a > 1/sqrt2 - more off-diagonal structure than block-count - which is unreachable by positive VEV-dilution and consistent with the retained no-go quark_c3_circulant_source_law_boundary (A1's grading does not propagate to quarks).
 - Extraction red flags: Documents a same-campaign retraction with two named errors (direction and category).
 - Supersession (as known at extraction): Explicitly retracts a claim in FLAVOR_LOOP_PRESERVES_BLOCK_COUNT_NOTE_2026-05-30 (idx 485).
 

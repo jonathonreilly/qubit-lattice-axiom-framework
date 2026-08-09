@@ -18,10 +18,6 @@ required before any effective status.
 
 The Hadamard basis |psi_s> = (1/sqrt8) sum_alpha (prod_mu s_mu^{alpha_mu})|alpha> simultaneously diagonalizes the cube shifts (S_mu|psi_s> = s_mu|psi_s>) and, via the intertwiner, the lattice translations on BZ corners; Q = S_1S_2S_3 has eigenvalue s_1s_2s_3 with rank-4 projectors Pi_pm, S_3 acts by label permutation U(pi)|psi_s> = |psi_{pi.s}>, and hw-parity is S_3-invariant because s_1s_2s_3 is symmetric.
 
-Original verdict: Gives a unified block-diagonalization in which each hw-parity block is a 4-dimensional S_3-invariant subspace.
-Scope: Pure algebra on C^8 and the BZ-corner subspace of C^{L^3}; a composition result, not new physics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Hadamard/S3 composition theorem: simultaneous diagonalization of shifts and tran
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Gives a unified block-diagonalization in which each hw-parity block is a 4-dimensional S_3-invariant subspace.
+- Extraction scope (triage compression; may reflect later context): Pure algebra on C^8 and the BZ-corner subspace of C^{L^3}; a composition result, not new physics.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly composes four prior grind-program theorems: cube-shift joint eigenstructure and the site-phase/cube-shift intertwiner (Batch 1, idx 654), plus the S_3 taste-cube decomposition and hamming-weight parity conservation (Batch 2).
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Chunks061-063 complete the homogeneous polefit8x8 L12 stream at 63/63 ready chunks and 1008 saved configurations, and on the complete surface the C_ss(q_hat^2) proxy still fails necessary Stieltjes monotonicity with adjacent violations of at least 110.989 sigma while contact-subtraction restoration shifts the max-q residual by 3909.247 row standard errors.
 
-Original verdict: The finished eight-mode stream still lacks FV/IR and zero-mode control, pole-saturation/model-class authority, a contact-subtraction or denominator theorem, and the canonical-Higgs bridge — affine and polynomial contact repair both remain blocked.
-Scope: Complete L12 finite-shell stream; L16/L24 scaling untouched.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -97,6 +93,8 @@ The polefit8x8 terminal: complete designed statistics make the failure DEFINITIV
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The finished eight-mode stream still lacks FV/IR and zero-mode control, pole-saturation/model-class authority, a contact-subtraction or denominator theorem, and the canonical-Higgs bridge — affine and polynomial contact repair both remain blocked.
+- Extraction scope (triage compression; may reflect later context): Complete L12 finite-shell stream; L16/L24 scaling untouched.
 - Extraction red flags: Completing the full designed statistics makes the necessary-condition failure worse (5 sigma at first diagnostic, 111 sigma at completion), i.e. the measured object is definitively not the required positive Stieltjes function.
 - Supersession (as known at extraction): TERMINAL of the polefit8x8 sub-sweep (idx 2249-2268): the second complete 1008-configuration production stream of the campaign, ending with the scalar two-point proxy failing positivity by 111 sigma.
 

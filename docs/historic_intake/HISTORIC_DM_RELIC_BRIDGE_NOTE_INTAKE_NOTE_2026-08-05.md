@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposes R = (n_DM/n_b)(m_DM/m_p) into three factors: the mass ratio is EXACT combinatorics, n_DM is DERIVED with bounded sub-inputs (g_bare = 1, k = 0), and n_b is IMPORTED from Planck via eta = 6.12e-10 through Omega_b h^2 = 3.65e7 eta.
 
-Original verdict: BOUNDED - eta remains an imported cosmological input.
-Scope: Single authority note on the relic-ratio bridge; the Stosszahlansatz proof is for the free (Gaussian) theory, with extension to the interacting case needing spectral-gap persistence.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ The relic-bridge single authority: three-factor decomposition with eta honestly 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED - eta remains an imported cosmological input.
+- Extraction scope (triage compression; may reflect later context): Single authority note on the relic-ratio bridge; the Stosszahlansatz proof is for the free (Gaussian) theory, with extension to the interacting case needing spectral-gap persistence.
 - Extraction red flags: Flags that the Stosszahlansatz theorem is proved only for the free theory, a caveat the sibling notes claiming closure omit.
 - Supersession (as known at extraction): Declares itself THE single authority on the relic bridge and explicitly supersedes any claim in other DM notes that R is 'fully derived' or 'zero-parameter' - directly overriding DM_GRAPH_NATIVE (idx 362) and DM_RELIC_GAP_CLOSURE (idx 398).
 

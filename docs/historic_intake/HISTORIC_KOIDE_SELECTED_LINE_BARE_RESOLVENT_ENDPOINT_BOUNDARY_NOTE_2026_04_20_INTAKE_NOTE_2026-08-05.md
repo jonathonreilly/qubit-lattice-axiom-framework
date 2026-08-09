@@ -18,10 +18,6 @@ required before any effective status.
 
 The bare missing-axis resolvent family Sigma = P_T1 Gamma_1 (lambda I_4 - W_4)^{-1} Gamma_1 P_T1 on the exact selected line can imitate the charged-lepton packet numerically (best cosine fit cos ~ 0.99995 at m ~ 0.0000, lambda ~ 0.0400; best Koide fit Q ~ 0.666659 at m ~ -0.2102, lambda ~ 0.0300) but always far from the physical first-branch point m_* ~ -1.160469470087. The trace-mean lift h_O0 = Tr(H_sel)/3 and a widened window both miss identically.
 
-Original verdict: The missing endpoint theorem is not a bare local selected-line resolvent section — the family fakes the packet, but in the wrong place.
-Scope: The smallest local selected-line bare-resolvent family only; does not rule out more structured resolvent families, ambient transport, or Wilson endpoint laws.
-Escape conditions (negative claims): The endpoint law must involve more than a local resolvent: nonlocal continuation/transport, extra ambient Wilson data, or a stronger branch law invisible inside this bare local family.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Selected-line kill: a bare local resolvent family can imitate the packet numeric
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The missing endpoint theorem is not a bare local selected-line resolvent section — the family fakes the packet, but in the wrong place.
+- Extraction scope (triage compression; may reflect later context): The smallest local selected-line bare-resolvent family only; does not rule out more structured resolvent families, ambient transport, or Wilson endpoint laws.
+- Extraction escape conditions (negative claims; triage compression): The endpoint law must involve more than a local resolvent: nonlocal continuation/transport, extra ambient Wilson data, or a stronger branch law invisible inside this bare local family.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sharpens the one-clock endpoint-target theorem by eliminating its smallest candidate family; feeds the cyclic-phase-target reframing at idx_pos 1084.
 

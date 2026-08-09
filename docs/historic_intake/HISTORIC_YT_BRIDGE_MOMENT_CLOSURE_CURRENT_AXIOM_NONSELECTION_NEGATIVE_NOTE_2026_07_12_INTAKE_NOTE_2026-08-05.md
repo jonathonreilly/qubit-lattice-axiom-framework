@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 On the Lattice + Qubit + Admissibility + Record surface an affine first-order endpoint-response kernel is not derivable: the axioms supply no dynamics, boundary conditions, source/action identification or observable bridge, and an explicit axiom-compatible one-site qubit dynamics (with an Admissibility rule A_x = D union {2I} when all six neighbours match, D otherwise) has the non-affine kernel K(s) = sin(pi s) on [0,1], for which two nonnegative bridge profiles share (I_2, c_2) but give different first-order endpoint responses.
 
-Original verdict: The current axioms alone cannot select the dynamics or imply first-order two-moment closure — it is not claimed that an affine kernel is impossible once a microscopic dynamics and source/readout law are derived.
-Scope: One-hop authority is MINIMAL_AXIOMS_2026-06-29 alone; no fitted target, observed Yukawa, plaquette, UV cut, profile family, SM beta function or literature value enters the proof.
-Escape conditions (negative claims): Derive a specific microscopic dynamics plus a source/readout law; the countermodel lives only in the freedom the axioms leave, so fixing that freedom voids it.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Foundational no-go: the four axioms supply no dynamics — an affine first-order
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The current axioms alone cannot select the dynamics or imply first-order two-moment closure — it is not claimed that an affine kernel is impossible once a microscopic dynamics and source/readout law are derived.
+- Extraction scope (triage compression; may reflect later context): One-hop authority is MINIMAL_AXIOMS_2026-06-29 alone; no fitted target, observed Yukawa, plaquette, UV cut, profile family, SM beta function or literature value enters the proof.
+- Extraction escape conditions (negative claims; triage compression): Derive a specific microscopic dynamics plus a source/readout law; the countermodel lives only in the freedom the axioms leave, so fixing that freedom voids it.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Axiom-surface companion to the generic-selector no-go at idx 2143; together they close both the generic and the axiom-derivability readings of the y_t bridge moment route.
 

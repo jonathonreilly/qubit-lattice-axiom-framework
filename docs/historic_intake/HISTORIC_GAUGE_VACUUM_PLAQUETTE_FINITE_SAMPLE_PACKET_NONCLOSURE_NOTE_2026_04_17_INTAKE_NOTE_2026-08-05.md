@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Any finite packet of n marked-holonomy samples gives a linear map from an infinite-dimensional coefficient bank to R^(n+1), so restricting to any n+2 higher orbits leaves a nontrivial kernel; and because the identity functional assigns strictly positive orbit weights, every kernel vector is sign-changing, so a positive baseline plus and minus a small multiple gives two distinct nonnegative stacks with identical samples.
 
-Original verdict: No finite marked-holonomy sampling program can by itself close v_6 - the only honest closure route is the operator route.
-Scope: Applies to the beta-side coefficient bank; finite packets can still reconstruct retained truncations, test candidate solves, and prove partial bounds.
-Escape conditions (negative claims): The negative is about SAMPLING, not about closure: the operator route (explicit beta-side environment operator/vector data) remains open, and finite packets remain useful as a truncation/constraint program.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ No finite marked-holonomy sampling program can close v_6 — the sampling no-go 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No finite marked-holonomy sampling program can by itself close v_6 - the only honest closure route is the operator route.
+- Extraction scope (triage compression; may reflect later context): Applies to the beta-side coefficient bank; finite packets can still reconstruct retained truncations, test candidate solves, and prove partial bounds.
+- Extraction escape conditions (negative claims; triage compression): The negative is about SAMPLING, not about closure: the operator route (explicit beta-side environment operator/vector data) remains open, and finite packets remain useful as a truncation/constraint program.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Abstracts the concrete four-sample underdetermination result into a general theorem; consumed by the minimality no-go (idx 578).
 

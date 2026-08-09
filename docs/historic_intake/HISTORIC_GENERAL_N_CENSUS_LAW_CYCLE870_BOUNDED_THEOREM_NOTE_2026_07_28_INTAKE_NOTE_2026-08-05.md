@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves N(n,k) = 4(n/k)C(n-k-1,k-1) = 4n/(n-k) C(n-k,k) by two routes (transfer matrix / Lucas polynomial and an origin-marking double count) that agree symbolically, reproduces the landed n = 11 row 44/176/308/220/44 exactly, and derives a stabilizer lemma giving the smallest C_n-covariant selection size as spf(n) (4 spf(n) under C_n x Z_4), with singleton covariant selection impossible for every n >= 3.
 
-Original verdict: The census law is not an n = 11 accident, and the free-selection no-go's dependence on primality is now priced exactly - the floor a composite ring buys is its smallest prime factor, never one.
-Scope: Brute-verified n = 3..18, symbolic n = 3..14, Moebius extension to n <= 40; the selection statement is scoped to C_n-covariant selections, where the floor argument is a complete classification rather than a search.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The census law N(n,k) proved by two independent routes AND refuting an external 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The census law is not an n = 11 accident, and the free-selection no-go's dependence on primality is now priced exactly - the floor a composite ring buys is its smallest prime factor, never one.
+- Extraction scope (triage compression; may reflect later context): Brute-verified n = 3..18, symbolic n = 3..14, Moebius extension to n <= 40; the selection statement is scoped to C_n-covariant selections, where the floor argument is a complete classification rather than a search.
 - Extraction red flags: Checker independence is cross-context but not cross-model (both scripts share an authoring model family); a no-hardcoded-answer probe fired mid-block on a sweep-bound collision with a derived value.
 - Supersession (as known at extraction): REFUTES an external math-report n = 12 prediction at its declared k = 2 scope while confirming it as the k >= 2 spectrum - a scope correction, not a value refutation.
 

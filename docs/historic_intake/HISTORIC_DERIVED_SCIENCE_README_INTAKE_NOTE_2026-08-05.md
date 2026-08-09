@@ -18,10 +18,6 @@ required before any effective status.
 
 Defines a branch containing only results that pass a hostile-reviewer bar — pure-math theorems, partition-function identities, and rigorous negative results — and explicitly excludes the CKM atlas numerical predictions, the fermion mass-hierarchy predictions, the Higgs and top mass predictions, and the Cabibbo-angle structural-identification notes, all of which inherit the y_t = g_s/sqrt(6) conjecture or imported relations.
 
-Original verdict: The airtight domain is the gauge/algebraic structure (SU(2), SU(3), anomaly-forced 3+1) and the EWSB mechanism with zero free parameters — the numerical phenomenology does not clear the bar.
-Scope: Curation, not new science; states where the framework sits honestly.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The DERIVED_SCIENCE_BAR: the era's own declaration of its hostile-reviewer-proof
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The airtight domain is the gauge/algebraic structure (SU(2), SU(3), anomaly-forced 3+1) and the EWSB mechanism with zero free parameters — the numerical phenomenology does not clear the bar.
+- Extraction scope (triage compression; may reflect later context): Curation, not new science; states where the framework sits honestly.
 - Extraction red flags: Explicitly disqualifies the framework's most-cited numerical predictions from the airtight tier.
 - Supersession (as known at extraction): none recorded
 

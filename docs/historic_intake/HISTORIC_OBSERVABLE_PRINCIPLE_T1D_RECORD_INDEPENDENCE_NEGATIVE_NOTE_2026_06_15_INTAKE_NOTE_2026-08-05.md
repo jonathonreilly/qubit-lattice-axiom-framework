@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The current Lattice, Quantum and Record axioms do not derive T1-d (W a continuous function of Z = det(D+J) alone with disjoint source blocks registering as disjoint records), because Record finite scalar additivity is compatible with additive scalar readouts carrying an extra supplied central-sector coordinate independent of Z.
 
-Original verdict: The determinant-only readout identification is an additional bridge theorem, approved premise, or supplied readout context — not a consequence of Record alone.
-Scope: Narrow and negative; does not refute the conditional observable-principle theorem, does not say log det(D+J) is mathematically wrong under T1-d, and does not challenge the parent runner's determinant/positivity/Cauchy/Matsubara algebra.
-Escape conditions (negative claims): Four named routes: prove a retained determinant-only readout bridge from existing non-axiom retained inputs; register T1-d as an approved primitive; narrow all consumers to the conditional surface; or replace the parent route with a different observable carrier.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ T1-d NOT derivable: the determinant-only readout is an additional premise, forci
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The determinant-only readout identification is an additional bridge theorem, approved premise, or supplied readout context — not a consequence of Record alone.
+- Extraction scope (triage compression; may reflect later context): Narrow and negative; does not refute the conditional observable-principle theorem, does not say log det(D+J) is mathematically wrong under T1-d, and does not challenge the parent runner's determinant/positivity/Cauchy/Matsubara algebra.
+- Extraction escape conditions (negative claims; triage compression): Four named routes: prove a retained determinant-only readout bridge from existing non-axiom retained inputs; register T1-d as an approved primitive; narrow all consumers to the conditional surface; or replace the parent route with a different observable carrier.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Forces the downstream citation firewall at idx_pos 1224.
 

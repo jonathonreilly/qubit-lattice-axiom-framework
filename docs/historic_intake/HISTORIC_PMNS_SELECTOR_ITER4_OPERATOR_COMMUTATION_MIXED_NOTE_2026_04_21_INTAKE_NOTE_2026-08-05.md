@@ -18,10 +18,6 @@ required before any effective status.
 
 No retained operator among twelve gives a vanishing or chamber-cutting commutator at the pinned point (smallest ratio 0.32), ruling out the operator-commutation class; but a 33-scalar scan finds delta_* q_+* = 0.66770 within 0.0010 of 2/3 and Sigma lambda / Sigma |lambda| = 0.1678 within 0.0011 of 1/6. Runner 0 PASS, 9 FAIL.
 
-Original verdict: Operator commutation is ruled out; delta q_+ = 2/3 becomes the prime candidate for a cross-sector I1 -> I5 linkage.
-Scope: Operator-commutation class plus a scalar-invariant scan against ~25 retained simple values; nothing reaches the 1e-4 threshold at the pinned point's 6-digit precision.
-Escape conditions (negative claims): The scalar scan is explicitly a near-hit search, not an identity proof - iter 5 is set up to settle whether 0.15% is rounding or a real miss.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The look-elsewhere disclosure: the candidate identity was found scanning ~33 sca
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Operator commutation is ruled out; delta q_+ = 2/3 becomes the prime candidate for a cross-sector I1 -> I5 linkage.
+- Extraction scope (triage compression; may reflect later context): Operator-commutation class plus a scalar-invariant scan against ~25 retained simple values; nothing reaches the 1e-4 threshold at the pinned point's 6-digit precision.
+- Extraction escape conditions (negative claims; triage compression): The scalar scan is explicitly a near-hit search, not an identity proof - iter 5 is set up to settle whether 0.15% is rounding or a real miss.
 - Extraction red flags: The candidate identity is discovered by scanning 33 scalars against ~25 simple constants for near-hits - a look-elsewhere-prone search whose results the later closure notes treat as retained identities.
 - Supersession (as known at extraction): Rules out attack class A6 and generates the iter-5 hypothesis.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Curated subset of the April 22 session: of 20 branches, 1 carried a P0 issue (solar gap was IO not NO), 7 were inflated, 10 robust and 2 navigational; the package retains only the robust branches plus the hostile review, claiming one clean identity Omega_Lambda = (H_inf/H_0)^2, one rigorous negative (48-element enumeration showing the H_base chart's O_h joint-covariance group is only {+I, -I}), and three scope-honest neutrino predictions (Sigma m_nu in [0.059, 0.102] eV, m_bb in [0, 7] meV, m_beta = 9.86 meV).
 
-Original verdict: Terminal curation of the session: all INFLATED and P0-flawed content is excluded and referenced by name only.
-Scope: Predictions explicitly conditional on the retained neutrino chain, whose Delta m^2_21 issue is flagged inside the package.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Terminal curation of the April-22 session: 10 robust branches retained, P0/infla
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Terminal curation of the session: all INFLATED and P0-flawed content is excluded and referenced by name only.
+- Extraction scope (triage compression; may reflect later context): Predictions explicitly conditional on the retained neutrino chain, whose Delta m^2_21 issue is flagged inside the package.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal note of the April 22 autonomous-loop family — selects from the two indexes per the hostile review.
 

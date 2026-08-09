@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The 2026-06-29 four-axiom memo, including the 2026-07-04 Record formation sentence, absorbs none of the three approved primitives: scale_reference has no axiom overlap at all, kinetic_isotropy is left outside because the memo withholds dynamics and transition weights, and realized_state overlaps only in TYPE (a state is a configuration of records) while supplying no realized state, selection rule, measure or typicality.
 
-Original verdict: No approved primitive is retired by the current axiom text; the absorption shortcut is blocked primitive by primitive.
-Scope: Current-surface triage of primitive absorption by the axiom text alone; retires and amends nothing.
-Escape conditions (negative claims): Scoped to the current axiom text — a future axiom edit could absorb them; the note separates axiom-level state typing from actual-history pointwise evaluation as the place a realized-state absorption would have to act.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Post-reset governance no-go: the 06-29 memo absorbs none of the three approved p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No approved primitive is retired by the current axiom text; the absorption shortcut is blocked primitive by primitive.
+- Extraction scope (triage compression; may reflect later context): Current-surface triage of primitive absorption by the axiom text alone; retires and amends nothing.
+- Extraction escape conditions (negative claims; triage compression): Scoped to the current axiom text — a future axiom edit could absorb them; the note separates axiom-level state typing from actual-history pointwise evaluation as the place a realized-state absorption would have to act.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

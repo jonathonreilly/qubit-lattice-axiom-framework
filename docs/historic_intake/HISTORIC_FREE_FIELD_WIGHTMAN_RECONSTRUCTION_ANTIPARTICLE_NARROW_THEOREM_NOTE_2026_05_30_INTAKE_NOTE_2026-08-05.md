@@ -18,10 +18,6 @@ required before any effective status.
 
 Applying classical free-field OS reconstruction to the framework's statistics-blind covariance S(p) = (m - i gamma.p)/(p^2 + m^2) produces a Minkowski free Dirac field with single-particle spectrum {+E,+E,-E,-E} split into particle (u) and antiparticle (v) sectors, a positive-spectrum Poincare representation, microcausality via the Pauli-Jordan function, and the full Wightman hierarchy by Wick recursion. PASS=9 FAIL=0.
 
-Original verdict: Delivers the relativistic-Wightman-field premise for the free sector - the load-bearing object adversaries found nowhere on the retained surface - conditional on those rungs; does not claim 'FS unconditional' or 'FS derived'.
-Scope: Conditional on four cited rungs whose live ledger statuses are recorded as audited_conditional (boost 2-point, RP two-step) and unaudited (spectrum condition, finite-dim Wick bridge); deliberately does not lean on the boost note's finite-a taste-flat operator, described as a known over-claim being repaired in parallel.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Free-field Wightman reconstruction with antiparticle spectrum — the load-beari
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Delivers the relativistic-Wightman-field premise for the free sector - the load-bearing object adversaries found nowhere on the retained surface - conditional on those rungs; does not claim 'FS unconditional' or 'FS derived'.
+- Extraction scope (triage compression; may reflect later context): Conditional on four cited rungs whose live ledger statuses are recorded as audited_conditional (boost 2-point, RP two-step) and unaudited (spectrum condition, finite-dim Wick bridge); deliberately does not lean on the boost note's finite-a taste-flat operator, described as a known over-claim being repaired in parallel.
 - Extraction red flags: Explicitly records that a cited rung contains a known over-claim under repair, and that half its inputs are unaudited.
 - Supersession (as known at extraction): Assembles the free-field reconstruction that OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27 explicitly left open.
 

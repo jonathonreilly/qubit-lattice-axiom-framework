@@ -18,10 +18,6 @@ required before any effective status.
 
 On the framework's real-Wilson surface theta_QCD = 0, and the Hermitian C_3 circulant M = aI + bC + b-bar C^2 has real determinant so arg det M = 0, making CP conservation the default at which theta-bar = 0 and delta = 0 coincide; a non-Hermitian deformation switches both on, so theta-bar and delta are one reality-breaking; 5/5 exact checks.
 
-Original verdict: The strong-CP residual is not an independent input from the flavor-CP phase, but the controlled smallness (theta-bar ~ 0 with an O(1) CKM phase) remains the unsolved Nelson-Barr problem and the Tier-A count is not reduced to one.
-Scope: Bookkeeping collapse of the theta admission into the flavor sector; explicitly not a strong-CP solution.
-Escape conditions (negative claims): The gauge-side real-Wilson selection theta_QCD = 0 remains a selection, and reflection positivity provably cannot force it per the 2026-05-16 no-go.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Strong-CP residual localized: theta_QCD = 0 on the real-Wilson surface with real
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The strong-CP residual is not an independent input from the flavor-CP phase, but the controlled smallness (theta-bar ~ 0 with an O(1) CKM phase) remains the unsolved Nelson-Barr problem and the Tier-A count is not reduced to one.
+- Extraction scope (triage compression; may reflect later context): Bookkeeping collapse of the theta admission into the flavor sector; explicitly not a strong-CP solution.
+- Extraction escape conditions (negative claims; triage compression): The gauge-side real-Wilson selection theta_QCD = 0 remains a selection, and reflection positivity provably cannot force it per the 2026-05-16 no-go.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Tightens Tier-A bookkeeping by folding the theta-bar admission into AC_phi_lambda; depends on the delta-admission no-go of 2026-06-04.
 

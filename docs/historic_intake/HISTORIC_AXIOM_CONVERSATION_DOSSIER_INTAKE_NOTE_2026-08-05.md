@@ -18,10 +18,6 @@ required before any effective status.
 
 Are the four axioms complete? NOT an unqualified yes: W3 DERIVED bounded+conditional at fixture scope on 23 named supplies (6+4+9+4; cycles 743 LAW -> 747 ADMISS -> 750 ACTUAL -> 751 BINDER -> 754 composed acceptance over 90,424 fixtures, 11,168,020-byte traces frozen and independently rebuilt; axiom_pressure=false); W1 counted residual (27-gate genesis minimality DERIVED, one Pruefer rank residual); W2 split with adjacency refined wall ('the four axioms provide no location-adaptive source of order at contested boundaries'); W5 mechanism derived with ONE-SENTENCE axiom-level gap ('the axiom-level permanence semantics beyond the declared alphabet'); W6 gap = occurrence-to-outcome-class mapping; W7 = response law + no-refit attachment, neither begun.
 
-Original verdict: completeness question remains open; no verdict issued
-Scope: wall-by-wall evidence organization; branch-local; receipts declare authority none, audit unset
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ The axioms-completeness self-assessment, stated honestly: 'are the four axioms c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): completeness question remains open; no verdict issued
+- Extraction scope (triage compression; may reflect later context): wall-by-wall evidence organization; branch-local; receipts declare authority none, audit unset
 - Extraction red flags: EXTRACT_W3_GROUNDING.md and GOAL.md were ABSENT from the working tree/HEAD during synthesis; several wall cells are supervisor-filled rather than receipt-verified
 - Supersession (as known at extraction): cites landed PRs #5700/#5706/#5709/#5710/#5713/#5738/#5718/#5721/#5715/#5744/#5742/#5722/#5726/#5729/#5727/#5732/#5734/#5708/#5714
 

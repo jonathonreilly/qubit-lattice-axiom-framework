@@ -18,10 +18,6 @@ required before any effective status.
 
 The off-center visibility threshold is derived exactly as R_c(y) = 1 + |y|/s (equivalently w >= 2(s + y_d)) from the grid causal DAG's maximum deflection of one vertical unit per horizontal step, matching the observed R_c = 1.25, 1.50, 1.75, 2.25 at y_d = 1, 2, 3, 5 for slit_half=4 at all four data points exactly.
 
-Original verdict: Status CONFIRMED — the law R_c(y) = 1 + |y|/s is derived from the grid's causal DAG connectivity constraint, not fit from data.
-Scope: Rectangular grid with nearest-neighbour plus diagonal links, source at (1,0), barrier at x=w/2 with slits at y=+/-s, detector at x=w; the derivation assumes max deflection per step is exactly 1.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ The era's one exact theorem: R_c(y) = 1 + |y|/s derived from DAG connectivity, 4
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Status CONFIRMED — the law R_c(y) = 1 + |y|/s is derived from the grid's causal DAG connectivity constraint, not fit from data.
+- Extraction scope (triage compression; may reflect later context): Rectangular grid with nearest-neighbour plus diagonal links, source at (1,0), barrier at x=w/2 with slits at y=+/-s, detector at x=w; the derivation assumes max deflection per step is exactly 1.
 - Extraction red flags: Names its own weakest link: Step 1's assumption of max deflection 1 per step depends on how build_causal_dag constructs the DAG — longer-range links (e.g. knight's-move) would lower the threshold.
 - Supersession (as known at extraction): Derives and sharpens the empirical approximate fit R_c ~ 0.25|y| + 1.0 from the critical-ratio sweep (idx 3114), stating the approximation sign was unnecessary.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Rebuilds the leg-2 non-entailment theorem on the framework's own structure: models GCMIN and GCMAX realize the gate-count minimum and maximum at every tie and are the only total covariant selector family on the complete 7-tie catalog, with realization-invariant values — replacing Cycle 767's single tie and two arbitrary conventions.
 
-Original verdict: Leg-2 non-entailment now rests on canonical, physically defined completions that disagree at every tie.
-Scope: Non-entailment at the named scope, witnessed constructively; no actuality claimed for either model.
-Escape conditions (negative claims): No impossibility is claimed beyond the retained surface.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Leg-2 non-entailment upgraded from arbitrary conventions to canonical covariant 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Leg-2 non-entailment now rests on canonical, physically defined completions that disagree at every tie.
+- Extraction scope (triage compression; may reflect later context): Non-entailment at the named scope, witnessed constructively; no actuality claimed for either model.
+- Extraction escape conditions (negative claims; triage compression): No impossibility is claimed beyond the retained surface.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Upgrades Cycle 767's leg-2 theorem from arbitrary conventions to canonical completions.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Exact theorem: the observable-principle source-response curvature K_ij(L_t) on the retained hw=1 triplet vanishes for every i != j and every pure-APBC temporal block length L_t >= 2, so b = K_12 = 0 independently of L_t and the Koide cone a_0^2 = 2|z|^2 is unreachable by pure-APBC L_t extension alone.
 
-Original verdict: The pure-APBC route is dead; the attack surface must move to one of four enumerated mixing mechanisms.
-Scope: Restricted to pure-APBC temporal blocks with species-diagonal sources and the framework-native staggered Dirac operator; does not claim b = 0 in the full framework.
-Escape conditions (negative claims): Four mixing mechanisms are enumerated in Part B as the ways to get b != 0 (any of which escapes the theorem), and the restriction to species-diagonal sources plus pure APBC is the load-bearing hypothesis.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact no-go: source-response curvature vanishes for every pure-APBC block length
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The pure-APBC route is dead; the attack surface must move to one of four enumerated mixing mechanisms.
+- Extraction scope (triage compression; may reflect later context): Restricted to pure-APBC temporal blocks with species-diagonal sources and the framework-native staggered Dirac operator; does not claim b = 0 in the full framework.
+- Extraction escape conditions (negative claims; triage compression): Four mixing mechanisms are enumerated in Part B as the ways to get b != 0 (any of which escapes the theorem), and the restriction to species-diagonal sources plus pure APBC is the load-bearing hypothesis.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Extends Agent 1's CHARGED_LEPTON_KOIDE_CONE_ATTEMPT_NOTE from the L_t = 4 anchor to all L_t.
 

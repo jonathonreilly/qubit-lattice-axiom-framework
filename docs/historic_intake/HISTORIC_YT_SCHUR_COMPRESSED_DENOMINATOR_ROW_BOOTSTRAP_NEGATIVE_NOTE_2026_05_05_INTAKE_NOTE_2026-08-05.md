@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Two explicit one-orthogonal-mode Schur partitions share the same pole, the same compressed denominator D_eff(x)=A(x)-B(x)^2/C(x) over the test grid, and the same pole derivative while their A/B/C rows and row derivatives differ — so the compressed denominator cannot bootstrap the missing kernel rows.
 
-Original verdict: Exact negative boundary; closes the shortcut only, leaving the Schur route viable through genuine same-surface kernel rows.
-Scope: The remaining Schur shortcut of reconstructing A/B/C from an already-compressed D_eff or D_eff'(x_pole).
-Escape conditions (negative claims): Real Schur kernel rows from a neutral scalar kernel theorem or measurement; or certified O_H/C_sH/C_HH pole rows, same-source W/Z response rows with identities and covariance, scalar-LSZ moment/threshold/FV authority, or a neutral-sector irreducibility certificate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Schur-shortcut no-go: two partitions share pole, compressed denominator and resi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact negative boundary; closes the shortcut only, leaving the Schur route viable through genuine same-surface kernel rows.
+- Extraction scope (triage compression; may reflect later context): The remaining Schur shortcut of reconstructing A/B/C from an already-compressed D_eff or D_eff'(x_pole).
+- Extraction escape conditions (negative claims; triage compression): Real Schur kernel rows from a neutral scalar kernel theorem or measurement; or certified O_H/C_sH/C_HH pole rows, same-source W/Z response rows with identities and covariance, scalar-LSZ moment/threshold/FV authority, or a neutral-sector irreducibility certificate.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the Schur sub-chain (cycle 7), after 2425/2427/2428/2429/2430; latest note in the family (2026-05-05).
 

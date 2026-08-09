@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply A3_PRECISION_PLACEMENT_RETAINED. The four admissible placements P1-P4 are numerically equivalent once the same correction is supplied but are dependency-distinct, and none is retained. Campaign numerics (comparator bookkeeping, not proof inputs): a_lepton^2 = 313.8411267023086 MeV, N_A3 = m_W/a_lepton^2 = 256.08243522600384, C_A3 = 256/N_A3 = 0.9996780910571587, S_0 = 1/256 = 0.00390625.
 
-Original verdict: Support-only non-supply boundary for the placement decision as a whole.
-Scope: The A3 precision-placement input consumed by the absolute charged-lepton scale assembly.
-Escape conditions (negative claims): Retain exactly one placement with its own derivation plus the no-double-count rule, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ A3 placement terminal: four numerically equivalent placements, none retained —
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary for the placement decision as a whole.
+- Extraction scope (triage compression; may reflect later context): The A3 precision-placement input consumed by the absolute charged-lepton scale assembly.
+- Extraction escape conditions (negative claims; triage compression): Retain exactly one placement with its own derivation plus the no-double-count rule, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the A3 sub-ladder; packets 2636/2628 and the four placement no-gos feed it; consumed by the K4 terminal 2505. A3 sub-ladder: placement discriminator 2627 -> four placement no-gos P1 2629 / P2 2630 / P3 2633 / P4 2634 -> A3 precision-placement TERMINAL 2635 (packet 2636, no-double-count packet 2628) -> K4 terminal 2505.
 

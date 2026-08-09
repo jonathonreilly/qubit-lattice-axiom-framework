@@ -18,10 +18,6 @@ required before any effective status.
 
 For N supplied summand-fixed C^3 tensor C^2 factorwise carrier blocks the center has dimension exactly N and the traceless central subspace dimension N-1 (verified exactly at N = 1,2,3), so a hypercharge-like traceless central direction requires at least two summands; on the minimal 3 + 3bar pair the trace-zero, mixed u(1)-su(3)^2 and cubic u(1)^3 conditions all degenerate to the same line q_3bar = -q_3, leaving a one-dimensional family.
 
-Original verdict: Sharpens the R-hypercharge residual into R-multi-summand and R-relative-weight-selection: the algebra supplies only the trace-zero family and any genuinely selecting rule must come from elsewhere.
-Scope: Relative to the load-bearing SUMMAND-FIXED premise (no cross-summand intertwiners); no physical hypercharge is identified, multi-summand structure is not derived, and gravitational-u(1) and further mixed anomalies are untreated.
-Escape conditions (negative claims): The center-dimension result is explicitly FALSE without the SUMMAND-FIXED premise (identical summands would admit cross-summand intertwiners), and the weight-selection negative is escaped only by a selection rule from outside the algebra — ANOMALY-CANCEL constrains representation content, not weights.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Center-dimension theorem sharpening the landed R-hypercharge residual — explic
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Sharpens the R-hypercharge residual into R-multi-summand and R-relative-weight-selection: the algebra supplies only the trace-zero family and any genuinely selecting rule must come from elsewhere.
+- Extraction scope (triage compression; may reflect later context): Relative to the load-bearing SUMMAND-FIXED premise (no cross-summand intertwiners); no physical hypercharge is identified, multi-summand structure is not derived, and gravitational-u(1) and further mixed anomalies are untreated.
+- Extraction escape conditions (negative claims; triage compression): The center-dimension result is explicitly FALSE without the SUMMAND-FIXED premise (identical summands would admit cross-summand intertwiners), and the weight-selection negative is escaped only by a selection rule from outside the algebra — ANOMALY-CANCEL constrains representation content, not weights.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sharpens the landed factor-preservation block's R-hypercharge residual and consumes the landed orientation block's exact A(3) = +1, A(3bar) = -1 arithmetic; Class C source material with no premise weight until audit ratification.
 

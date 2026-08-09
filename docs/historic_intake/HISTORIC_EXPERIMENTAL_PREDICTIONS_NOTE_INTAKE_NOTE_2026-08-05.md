@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 All three candidate tests give lattice corrections scaling as (a/L)^2 that are undetectable at a = l_Planck: gravitational decoherence 4.3e-58 (needs a > 78 nm), COW phase 3.4e-76 (needs a > 0.5 m), BMV entanglement 2.7e-63 (needs a > 31 um); the universal bound is 4.3e-52 for any L > 1 nm.
 
-Original verdict: The framework is empirically indistinguishable from smooth weak-field GR at all accessible scales; a unique lattice prediction needs a >> l_Planck (already constrained) or Planck-scale experiments (not foreseeable).
-Scope: Assumes a ~ l_Planck; the one qualitative prediction (gravity mediates entanglement) is shared by all quantum gravity theories.
-Escape conditions (negative claims): The negative is conditioned entirely on a ~ l_Planck; the note tabulates exactly how large a would have to be for each experiment to detect the lattice (78 nm, 0.5 m, 31 um). A negative BMV result would falsify the framework, but positively distinguishing lattice from continuum gravity needs a larger spacing than existing bounds allow.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The falsifiability boundary: all three candidate tests undetectable at a = l_Pla
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The framework is empirically indistinguishable from smooth weak-field GR at all accessible scales; a unique lattice prediction needs a >> l_Planck (already constrained) or Planck-scale experiments (not foreseeable).
+- Extraction scope (triage compression; may reflect later context): Assumes a ~ l_Planck; the one qualitative prediction (gravity mediates entanglement) is shared by all quantum gravity theories.
+- Extraction escape conditions (negative claims; triage compression): The negative is conditioned entirely on a ~ l_Planck; the note tabulates exactly how large a would have to be for each experiment to detect the lattice (78 nm, 0.5 m, 31 um). A negative BMV result would falsify the framework, but positively distinguishing lattice from continuum gravity needs a larger spacing than existing bounds allow.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

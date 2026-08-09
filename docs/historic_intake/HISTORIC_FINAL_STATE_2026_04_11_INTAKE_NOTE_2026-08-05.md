@@ -18,10 +18,6 @@ required before any effective status.
 
 Session ledger for a two-axiom gapped-free-fermion-plus-self-consistent-density framework: sign selectivity survives 300/300 (random controls only 6/10), the boundary coefficient holds 100/100 with R^2 > 0.95 at 2.7 sigma from disorder, CDT spectral flow is PROMOTED; killed are the entanglement Hawking-Page transition (34% finite-size drift), memory, two-body mutual attraction, 3-body GHZ (corrected to W-type) and multifractal universality.
 
-Original verdict: A PRL/PRD-grade paper is supported; the Nature path requires two-body mutual attraction or another result that cannot follow from a positive smoothed self-consistent potential, and that lane is open with a contaminated observable.
-Scope: Two axioms, two free parameters (m, G), one open problem (graph selection); several surviving results are conceded to be generic free-fermion facts, not gravitational.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Era session terminal with six killed results and their mechanisms on the record 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A PRL/PRD-grade paper is supported; the Nature path requires two-body mutual attraction or another result that cannot follow from a positive smoothed self-consistent potential, and that lane is open with a contaminated observable.
+- Extraction scope (triage compression; may reflect later context): Two axioms, two free parameters (m, G), one open problem (graph selection); several surviving results are conceded to be generic free-fermion facts, not gravitational.
 - Extraction red flags: Records six killed results with mechanisms (finite-size artifact, protocol sensitivity, localization) and explicitly separates generic free-fermion content from gravitational content.
 - Supersession (as known at extraction): Session-closing state note; supersedes the earlier single-literal-50-sigma phrasing of the self-consistency result.
 

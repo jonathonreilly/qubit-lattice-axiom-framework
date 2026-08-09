@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Retires seven independent framework-internal attack angles on the lattice-to-continuum matching obstruction (V>=2 Picard-Fuchs lift, APBC Z_3 twist with L_s>=3 escalation, SDP bootstrap plus Migdal-Makeenko on the V-invariant minimal block, Cl(3) Hilbert-Schmidt Klein-four orbit positivity, RP-A11 cluster inequality, V-singlet temporal projection on rho_{p,q}(6), and composite levers), none of which reaches <P>(beta=6) within epsilon_witness ~ 3e-4.
 
-Original verdict: Resolution A (a novel nonperturbative theorem from the framework's algebra) has been comprehensively searched and yields no closure path; the bridge gap itself stays open.
-Scope: Negative-evidence packet only; future cycles should cite it rather than re-run these routes.
-Escape conditions (negative claims): Explicitly reopens if a NEW primitive distinguishes a future cycle from this analysis; Resolution C (industrial SDP) and Resolution B (governance/scheme reclassification) remain available.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Seven-angle exhaustion of Resolution A on the lattice-to-continuum plaquette obs
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Resolution A (a novel nonperturbative theorem from the framework's algebra) has been comprehensively searched and yields no closure path; the bridge gap itself stays open.
+- Extraction scope (triage compression; may reflect later context): Negative-evidence packet only; future cycles should cite it rather than re-run these routes.
+- Extraction escape conditions (negative claims; triage compression): Explicitly reopens if a NEW primitive distinguishes a future cycle from this analysis; Resolution C (industrial SDP) and Resolution B (governance/scheme reclassification) remain available.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Consolidates seven sister negative-evidence notes under the parent cluster-obstruction note.
 

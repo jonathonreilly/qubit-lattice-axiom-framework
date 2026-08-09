@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The four-mode manifest measures (0,0,0), (1,0,0), (0,1,0), (0,0,1), but on a cubic volume the three one-step axis modes share the same p_hat^2 shell — so each volume has only two shells, enough for a finite positive-momentum secant but not to locate an isolated pole, determine dGamma_ss/dp^2 there, or control a continuum remainder without importing a model.
 
-Original verdict: Retained closure needs richer pole-fit kinematics or a theorem, plus FV/IR/zero-mode control and the retained-proposal gate.
-Scope: Blocks treating a completed four-mode chunk set as the pole derivative; does not reject the chunks as measurement support.
-Escape conditions (negative claims): Richer kinematics is the escape, and is exactly the eight-mode stream launched at idx 2268.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The kinematics flaw identified AT CAMPAIGN START: three axis modes share one she
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Retained closure needs richer pole-fit kinematics or a theorem, plus FV/IR/zero-mode control and the retained-proposal gate.
+- Extraction scope (triage compression; may reflect later context): Blocks treating a completed four-mode chunk set as the pole derivative; does not reject the chunks as measurement support.
+- Extraction escape conditions (negative claims; triage compression): Richer kinematics is the escape, and is exactly the eight-mode stream launched at idx 2268.
 - Extraction red flags: The four-mode production plan was launched and run to completion despite this gate showing it could not supply the pole derivative.
 - Supersession (as known at extraction): Identifies at the start of the campaign the kinematic defect that made the entire four-mode 63-chunk production stream (terminal idx 2220) unusable for its stated purpose.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 On Z^3_L with M = -Delta_L + m^2 the two-particle density satisfies |rho_2 - rho_1 rho_1| <= 2 C^2 exp(-2 mu |x-y|) with mu = 0.9 ln(1 + m^2/6) and C = 1/(m^2 - 6(e^mu - 1)), proved in five self-contained steps (spectral gap -> lattice Combes-Thomas decay -> Wick cluster property -> thermodynamic limit -> freeze-out), giving error < 10^-45000 at x_F = 25.
 
-Original verdict: PROVED as a self-contained lattice theorem replacing the cited linked-cluster/propagation-of-chaos arguments, but it closes only the Stosszahlansatz sub-gate, not the relic mapping lane.
-Scope: Free (Gaussian) field only - Wick's theorem is exact there; the interacting case needs spectral-gap persistence under weak coupling, and freeze-out density is a bounded cosmological input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Self-contained lattice Stosszahlansatz theorem (explicit decay constants, five s
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PROVED as a self-contained lattice theorem replacing the cited linked-cluster/propagation-of-chaos arguments, but it closes only the Stosszahlansatz sub-gate, not the relic mapping lane.
+- Extraction scope (triage compression; may reflect later context): Free (Gaussian) field only - Wick's theorem is exact there; the interacting case needs spectral-gap persistence under weak coupling, and freeze-out density is a bounded cosmological input.
 - Extraction red flags: Explicitly proved only for the free Gaussian theory; the interacting extension is expected but not proved.
 - Supersession (as known at extraction): Successor to DM_STOSSZAHLANSATZ_NOTE.md (idx 404) and to the DM_FINAL_GAPS argument: replaces cited factorization theorems with an on-lattice Combes-Thomas execution.
 

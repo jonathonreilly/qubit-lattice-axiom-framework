@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 A DEMOTION with full N1-N8 PASS: the record-history row becomes a narrow no_go (abstract word/count/kernel data under monotone retiming do not determine durations, rates, generator normalization, or a clock metric — five explicit retiming witnesses: two monotone grids give the same word with different durations, irregular grids preserve order and change every interval, generator normalization rescales with unspecified dt, the same one-step q admits different (lambda,dt) pairs, and the same word length admits arbitrarily rescaled total duration); the reconstructed-log row is a bounded_theorem giving fixed-mass one-particle one-coordinate contour support with E_d/a_tau; the conformal consumer is an open_gate.
 
-Original verdict: Record no-go and one-particle contour support survive, but no common causal event set or exact causal relation is derived.
-Scope: The abstract word/index/per-step-kernel resolution only; says nothing negative about per-site formation events, per-mode propagation, per-block Lieb-Robinson bounds, or lattice-wide causal reconstruction.
-Escape conditions (negative claims): A supplied clock map, formation law, or dependency relation closes a positive route without changing the axioms; the note explicitly declines to call those new-axiom requirements.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Demotion with full N1-N8 PASS: the record-history row becomes a narrow no-go (ab
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Record no-go and one-particle contour support survive, but no common causal event set or exact causal relation is derived.
+- Extraction scope (triage compression; may reflect later context): The abstract word/index/per-step-kernel resolution only; says nothing negative about per-site formation events, per-mode propagation, per-block Lieb-Robinson bounds, or lattice-wide causal reconstruction.
+- Extraction escape conditions (negative claims; triage compression): A supplied clock map, formation law, or dependency relation closes a positive route without changing the axioms; the note explicitly declines to call those new-axiom requirements.
 - Extraction red flags: Documents a real prior misuse of landed content: a no-go row was previously used as a POSITIVE causal input — the supervisor may want to check whether the laundered version is still cited anywhere.
 - Supersession (as known at extraction): Demotes a row that a 2026-07-09 review found had been laundered into a positive causal input; preserves the 2026-07-07 record-comparability requirement that an acyclic formation-event dependency relation must be supplied.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 States the three identities as a theorem with unique A-BCC-basin solution (m_*, delta_*, q_+*) = (2/3, 0.9330511, 0.7145018) in the chamber interior q_+ + delta > sqrt(8/3), giving all three PMNS angles within NuFit 5.3 NO 1 sigma with zero PMNS observational inputs; the exact scalar relations SELECTOR^2 = 2/3 and 2 SELECTOR/sqrt3 = 2 sqrt2/3 = E2 are verified.
 
-Original verdict: The I5 PMNS angle-triple selector gate is retained-forced.
-Scope: Six retained inputs including the affine Hermitian chart, SELECTOR = sqrt6/3, Q_Koide = 2/3, sigma_hier = (2,1,0) and the A-BCC basin - the last of which the note itself says is observationally grounded via T2K CP-phase exclusion.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The 'retained-forced, zero PMNS observational inputs' selector claim — pulled 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The I5 PMNS angle-triple selector gate is retained-forced.
+- Extraction scope (triage compression; may reflect later context): Six retained inputs including the affine Hermitian chart, SELECTOR = sqrt6/3, Q_Koide = 2/3, sigma_hier = (2,1,0) and the A-BCC basin - the last of which the note itself says is observationally grounded via T2K CP-phase exclusion.
 - Extraction red flags: Title-vs-content: claims 'retained-forced' and 'zero PMNS observational inputs' while listing the A-BCC basin (T2K-grounded) and sigma_hier as inputs, and while the iter chain shows the identities were selected by agreement with PDG angles.
 - Supersession (as known at extraction): Theorem-form companion of the proposal README; both rest on the iter-10 identity triple.
 

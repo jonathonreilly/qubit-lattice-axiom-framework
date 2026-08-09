@@ -18,10 +18,6 @@ required before any effective status.
 
 Under the repo's own retained parameterization and the measured lepton masses, the binding target 2/9 is excluded at 445 sigma while the tau row where Q = 2/3 lives is compatible at 0.43 sigma; separately a landed block's wall (Cycle 882's T7) is found MIS-STATED with three reproduced defects and a corrected scope.
 
-Original verdict: SL1b's status is transformed: the masses pick a number and it is not 2/9.
-Scope: Four certified components; C1 consumes three declared admitted observations, quarantined and disclosed, while C2/C3/C4 are empirically clean.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): SL1b's status is transformed: the masses pick a number and it is not 2/9.
+- Extraction scope (triage compression; may reflect later context): Four certified components; C1 consumes three declared admitted observations, quarantined and disclosed, while C2/C3/C4 are empirically clean.
 - Extraction red flags: Excludes a previously binding target at 445 sigma and finds a landed block's wall mis-stated with three reproduced defects.
 - Supersession (as known at extraction): Excludes a binding target used across the lane and corrects a mis-stated wall from Cycle 882 (idx 1761).
 

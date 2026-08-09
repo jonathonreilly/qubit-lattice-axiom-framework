@@ -18,10 +18,6 @@ required before any effective status.
 
 Attempted route: keep the note as a full staggered-only reflection-positivity theorem by citing the existing gauge Cauchy-Schwarz and determinant-positivity notes. STOP: the audit blocker is correct at the original claim surface — the existing local authorities do not by themselves prove both missing physical-action bridges for arbitrary positive-half polynomial observables. Decision: do not preserve the full OS/transfer-matrix theorem in this row; narrow to bounded-input assembly and queue for re-audit.
 
-Original verdict: The full OS/transfer-matrix theorem is DROPPED from this row; the auditor was right.
-Scope: The A11 reflection-positivity row.
-Escape conditions (negative claims): Proving the two missing physical-action bridges would restore the full theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ MAJOR DEMOTION of a load-bearing authority: the full staggered-only reflection-p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The full OS/transfer-matrix theorem is DROPPED from this row; the auditor was right.
+- Extraction scope (triage compression; may reflect later context): The A11 reflection-positivity row.
+- Extraction escape conditions (negative claims; triage compression): Proving the two missing physical-action bridges would restore the full theorem.
 - Extraction red flags: A11, cited elsewhere in this stratum as the basis of the plaquette bootstrap lemmas BB1/BB1'/BB3, is narrowed here from a full theorem to bounded-input assembly
 - Supersession (as known at extraction): MAJOR DEMOTION: the full staggered-only reflection-positivity theorem is withdrawn from this row and replaced by bounded-input assembly. A11 is a dependency of the plaquette bootstrap blocks (10765/10766).
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The Cl(3) commutant fixes the hypercharge generator uniquely (traceless, eigenvalues +1/3 on six quark states and -1 on two lepton states) but not its coupling normalization: the C^8 trace-norm ratio Tr[S^2]/Tr[(Y/2)^2] = 3, not the GUT value 5/3, and the three candidate conventions give sin^2_UV = 1/2 (k=1), 3/8 (k=5/3) and 1/4 (k=3), running to 0.262, 0.176 and 0.106 at M_Z against a measured 0.231. Runner 13 PASS / 0 FAIL.
 
-Original verdict: sin^2(theta_W) = 3/8 is NOT derived from Cl(3) — in a product group the relative U(1) normalization is not fixed by the algebra, and the note lists explicitly forbidden paper wordings including 'the Weinberg angle is a prediction of the framework'.
-Scope: Cl(3)-on-Z^3 commutant algebra plus SM-only beta functions; the normalization obstruction is the central finding.
-Escape conditions (negative claims): Three named future attacks: a lattice-theoretic normalization from staggered vertex-function ratios, anomaly matching (noted to constrain charges not couplings), or lattice perturbation theory generating a nontrivial k radiatively — none demonstrated and all bounded at best.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The Weinberg-angle terminal: sin^2 = 3/8 NOT derived from Cl(3) (relative normal
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): sin^2(theta_W) = 3/8 is NOT derived from Cl(3) — in a product group the relative U(1) normalization is not fixed by the algebra, and the note lists explicitly forbidden paper wordings including 'the Weinberg angle is a prediction of the framework'.
+- Extraction scope (triage compression; may reflect later context): Cl(3)-on-Z^3 commutant algebra plus SM-only beta functions; the normalization obstruction is the central finding.
+- Extraction escape conditions (negative claims; triage compression): Three named future attacks: a lattice-theoretic normalization from staggered vertex-function ratios, anomaly matching (noted to constrain charges not couplings), or lattice perturbation theory generating a nontrivial k radiatively — none demonstrated and all bounded at best.
 - Extraction red flags: Retracts framework-level claim language used elsewhere in the repo ('sin^2 theta_W = 3/8 is derived from Cl(3)' is listed as what the paper should NOT say).
 - Supersession (as known at extraction): TERMINAL for the April Weinberg-angle pair: makes explicit the GUT-normalization assumption that frontier_gauge_unification​.py and the correction note (idx 2112) had used silently.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposing the generation Yukawa as Y = a I + b C + b-bar C^2 gives Q = 1/3 + (2/3) r with r = |b|^2/a^2 exactly and theta-independently (verified for r in {0, 1/4, 1/2, 1} and all theta), so the e-mu splitting is set entirely by the Q-orthogonal phase theta and contributes nothing to the value, which consolidates to the single ratio r = 1/2.
 
-Original verdict: The e-mu gap was a phantom; the irreducible target is the single vacuum condensate ratio |b|^2/a^2 = 1/2, now anchored in the full operator rather than an isolated toy.
-Scope: Reconnects the Jahn-Teller (diagonal, C_3-breaking) and Brannen (off-diagonal, C_3-symmetric) pictures as the two parts of one Yukawa; both a and b are vacuum/condensate quantities.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact consolidation: Q = 1/3 + (2/3)r theta-independently — the e-mu gap was a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The e-mu gap was a phantom; the irreducible target is the single vacuum condensate ratio |b|^2/a^2 = 1/2, now anchored in the full operator rather than an isolated toy.
+- Extraction scope (triage compression; may reflect later context): Reconnects the Jahn-Teller (diagonal, C_3-breaking) and Brannen (off-diagonal, C_3-symmetric) pictures as the two parts of one Yukawa; both a and b are vacuum/condensate quantities.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Resolves gap (ii) of FLAVOR_JAHN_TELLER_CUBIC_BREAKING (idx 483) and feeds FLAVOR_GAP_EQUATION_COMPETING_ORDERS (idx 482).
 

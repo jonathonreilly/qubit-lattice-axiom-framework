@@ -18,10 +18,6 @@ required before any effective status.
 
 Runs the census that Cycle 881's DELTA-spectrum CONJECTURE named as its own falsifier and the falsifier fires at every tier: the claim that the full non-orbit period spectrum equals the DELTA set is dead, replaced by a derived exact alignment law with a strictly larger spectrum, while Cycle 881's relay-gap THEOREM DELTA(B,e) = 8B - 13 - 8e and its mechanism are untouched.
 
-Original verdict: The conjecture dies and a law arrives — a self-falsification executed exactly as the parent specified.
-Scope: Exhaustive census, no sampling; also runs the alignment contingency census that 881 named but did not run and reprices 881's tails.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Self-falsification executed exactly as the parent specified: Cycle 881's SHIPPED
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The conjecture dies and a law arrives — a self-falsification executed exactly as the parent specified.
+- Extraction scope (triage compression; may reflect later context): Exhaustive census, no sampling; also runs the alignment contingency census that 881 named but did not run and reprices 881's tails.
 - Extraction red flags: A previously published conjecture is falsified at every tier.
 - Supersession (as known at extraction): Falsifies and replaces Cycle 881's spectrum conjecture while preserving its theorem.
 

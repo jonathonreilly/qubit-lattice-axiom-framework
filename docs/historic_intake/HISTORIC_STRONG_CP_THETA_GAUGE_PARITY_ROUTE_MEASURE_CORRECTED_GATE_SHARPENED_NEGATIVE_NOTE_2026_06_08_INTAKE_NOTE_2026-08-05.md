@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Corrects an earlier measure-cancellation claim (O_h invariance genuinely forbids F-tilde-F), reframes minimality as parity, and sharpens the gate to whether the color gauge action couples to the framework-native lattice-orientation Z_2, an un-derived action coefficient of the beta = 6 class.
 
-Original verdict: theta_gauge = 0 is NOT forced: requiring the coupling to vanish is an EFT assumption that the native lattice orientation, a genuine P-source, blocks from being a derivation.
-Scope: O_h/parity route on the cubic Z^3 lattice with the qubit Cl(3,0) volume element.
-Escape conditions (negative claims): Explicitly leaves open that a derived O_h-invariant minimal gauge action could later force color parity and retire the gate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ theta_gauge = 0 NOT forced (parity requirement is a choice) — with its own ear
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): theta_gauge = 0 is NOT forced: requiring the coupling to vanish is an EFT assumption that the native lattice orientation, a genuine P-source, blocks from being a derivation.
+- Extraction scope (triage compression; may reflect later context): O_h/parity route on the cubic Z^3 lattice with the qubit Cl(3,0) volume element.
+- Extraction escape conditions (negative claims; triage compression): Explicitly leaves open that a derived O_h-invariant minimal gauge action could later force color parity and retire the gate.
 - Extraction red flags: Records that an earlier version of this route rested on a measure-cancellation claim that is now corrected.
 - Supersession (as known at extraction): Corrects a prior measure-cancellation argument in the same route and unifies theta_gauge with the i-gate orientation structure.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The Planck lane does NOT prove that the ordinary scalar Schur boundary pressure equals 1/4: three distinct same-surface quantities are separated - p_scalar = (1/(2n)) log det(L_Sigma), which on the rational witness L_Sigma = [[4/3,1/3],[1/3,4/3]] gives (1/4) log(5/3), not 1/4; p_action = nu - lambda_min(L_Sigma); and p_event = Tr(rho_cell P_A) = 1/4. Only p_action = p_event is claimed, via the parent source B_parent = (H_A, P_A).
 
-Original verdict: The safe object is the normal-ordered primitive boundary action-source density, never 'scalar boundary pressure'.
-Scope: Terminology/object-class scoping for the retained primitive gravitational boundary-action object class; explicitly concedes the lane does not close if a reviewer defines physical pressure exclusively as the scalar Schur free-energy observable.
-Escape conditions (negative claims): The negative (exact Planck closure fails on the scalar-Schur reading) is escaped only by the reviewer accepting the retained primitive gravitational boundary-action object class.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Terminology hardening separating three same-surface scalars — corrects previou
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The safe object is the normal-ordered primitive boundary action-source density, never 'scalar boundary pressure'.
+- Extraction scope (triage compression; may reflect later context): Terminology/object-class scoping for the retained primitive gravitational boundary-action object class; explicitly concedes the lane does not close if a reviewer defines physical pressure exclusively as the scalar Schur free-energy observable.
+- Extraction escape conditions (negative claims; triage compression): The negative (exact Planck closure fails on the scalar-Schur reading) is escaped only by the reviewer accepting the retained primitive gravitational boundary-action object class.
 - Extraction red flags: Corrects previously circulated Planck-lane wording ('the observable-principle scalar boundary pressure equals 1/4') as false.
 - Supersession (as known at extraction): Retroactively hardens the earlier 'boundary pressure' wording used across the PLANCK_SCALE boundary-pressure lane notes and forbids the p_scalar = Tr(rho_cell P_A) reading.
 

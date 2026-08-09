@@ -18,10 +18,6 @@ required before any effective status.
 
 Assembles the (1,3) signature from three structural facts: the LATTICE translations T_x,T_y,T_z form a reversible unitary group (max||eig|-1| ~ 1e-16); the RECORD count I is a monotone monoid with no inverse and is the unique axis with dI != 0, its level sets being the codim-1 spatial slices; and the reconstructed dispersion E(p) = arcsinh sqrt(m^2 + sum sin^2 p_mu) is real-analytic so v_LR = 1/sqrt(2) at m=0.3 is finite with correlation decay rate arcsinh(m) > 0.
 
-Original verdict: 1 monotone timelike axis + 3 reversible spacelike axes + a finite causal cone = a (1,3) Lorentzian signature, agreeing with the retained Sylvester/DM topological route up to sign convention — a second, ontological derivation of the staggered-Dirac signature carrier (runner 4 class-A checks PASS).
-Scope: Delivers the 1-vs-3 split and the causal cone, NOT the full metric tensor or the overall sign (which is convention, matching Sylvester's two components). Unaudited candidate, graph-visible only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): 1 monotone timelike axis + 3 reversible spacelike axes + a finite causal cone = a (1,3) Lorentzian signature, agreeing with the retained Sylvester/DM topological route up to sign convention — a second, ontological derivation of the staggered-Dirac signature carrier (runner 4 class-A checks PASS).
+- Extraction scope (triage compression; may reflect later context): Delivers the 1-vs-3 split and the causal cone, NOT the full metric tensor or the overall sign (which is convention, matching Sylvester's two components). Unaudited candidate, graph-visible only.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Complementary to, explicitly not a replacement for, the retained_bounded DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19; two independent routes converging on the same split is the stated content.
 

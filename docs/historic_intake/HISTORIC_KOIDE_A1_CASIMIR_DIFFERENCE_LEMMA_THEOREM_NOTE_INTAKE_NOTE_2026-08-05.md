@@ -18,10 +18,6 @@ required before any effective status.
 
 Under primitives P1 and P2 (a_0^2 = c(T(T+1)+Y^2)v_EW^2 and |z|^2 = c(T(T+1)-Y^2)v_EW^2 with the same c), Koide's Q = 2/3 holds iff 3Y^2 = T(T+1); the retained Cl(3) inputs T = 1/2 and |Y| = 1/2 satisfy it exactly (3/4 = 3/4), so the cone closes unconditionally on the retained surface, with c cancelling out of Q.
 
-Original verdict: Q = 2/3 moves from OPEN to CLOSED on schema (P1 + P2 with common c) plus retained Cl(3) inputs; 152 PASS / 0 FAIL across 17 runners; the delta = 2/9 radian residual P remains open.
-Scope: Schema-grade closure under the two named primitives; does not close the Brannen radian bridge, does not fix the overall lepton mass scale v_0, and does not universalise beyond Yukawa-doublet participants (L, H).
-Escape conditions (negative claims): Claims evasion of all nine retained A1 no-gos (audited by runner X5) because it imports SU(2)_L x U(1)_Y data rather than working from C_3 invariance on the hw=1 block alone.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Schema-grade theorem: Q = 2/3 iff 3Y^2 = T(T+1) under P1+P2 with common c — re
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q = 2/3 moves from OPEN to CLOSED on schema (P1 + P2 with common c) plus retained Cl(3) inputs; 152 PASS / 0 FAIL across 17 runners; the delta = 2/9 radian residual P remains open.
+- Extraction scope (triage compression; may reflect later context): Schema-grade closure under the two named primitives; does not close the Brannen radian bridge, does not fix the overall lepton mass scale v_0, and does not universalise beyond Yukawa-doublet participants (L, H).
+- Extraction escape conditions (negative claims; triage compression): Claims evasion of all nine retained A1 no-gos (audited by runner X5) because it imports SU(2)_L x U(1)_Y data rather than working from C_3 invariance on the hw=1 block alone.
 - Extraction red flags: Self-labelled schema-grade: the closure is conditional on P1 and P2, which the note admits would need standalone retained-grade derivations to become package-grade.
 - Supersession (as known at extraction): Formal statement of the companion derivation note; upgrades the lane's Q status while leaving the Brannen-phase residual P from KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20 open.
 

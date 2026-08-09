@@ -18,10 +18,6 @@ required before any effective status.
 
 The Z^3 substrate is physical on the retained observable-algebra surface: retained event projectors and translation characters separate local sectors, and any regulator reinterpretation needs extra objects (continuum-limit family, embedding map, RG/universality layer, survival prescription) that are not automorphisms of the retained Cl(3)/Z^3 algebra. This closes B1 and removes the 'a is a disposable regulator mesh' objection.
 
-Original verdict: B1 is closed on the retained observable-algebra reading; B3 remains the hard target.
-Scope: Holds only when 'bare cell alone' means the retained Cl(3)/Z^3 observable algebra, not the stripped M_16(C) with translation/locality structure forgotten; does not determine the numerical value of a.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ B1 closed on the retained observable-algebra reading — WITH the definitional-s
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): B1 is closed on the retained observable-algebra reading; B3 remains the hard target.
+- Extraction scope (triage compression; may reflect later context): Holds only when 'bare cell alone' means the retained Cl(3)/Z^3 observable algebra, not the stripped M_16(C) with translation/locality structure forgotten; does not determine the numerical value of a.
 - Extraction red flags: The B1 'closure' is definitional-scope dependent - it holds only under the observable-algebra reading the note itself picks, which is the reading a hostile reviewer would contest.
 - Supersession (as known at extraction): Closes slot B1 of PLANCK_SCALE_BARE_CELL_ALONE_CLOSURE_PROGRAM; with B2 and B4 closed elsewhere, only B3 remains open in that family.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 With the damping form F_NP[chi] = F_EWPT[chi] exp(-I_damp[chi]), the open baryogenesis object is governed by one exact logarithmic balance eta = J exp(S_src[chi] - I_damp[chi]), fixing the target as a difference of two logarithms.
 
-Original verdict: The remaining source and damping pieces are related exactly by a logarithmic balance law with a fixed observed target.
-Scope: Exact on the positive branch without evaluating nonperturbative dynamics; derives neither S_src nor I_damp nor chi(tau).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The exact logarithmic balance law eta = J exp(S_src - I_damp) with the observed 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The remaining source and damping pieces are related exactly by a logarithmic balance law with a fixed observed target.
+- Extraction scope (triage compression; may reflect later context): Exact on the positive branch without evaluating nonperturbative dynamics; derives neither S_src nor I_damp nor chi(tau).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

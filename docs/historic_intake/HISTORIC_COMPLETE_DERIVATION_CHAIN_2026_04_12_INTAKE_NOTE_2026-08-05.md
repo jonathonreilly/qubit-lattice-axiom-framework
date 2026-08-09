@@ -18,10 +18,6 @@ required before any effective status.
 
 Fifteen-step inventory of the whole April derivation chain from the single axiom — graph/unitarity/Born I_3 = 0 free from Hilbert space, d = 3 selection, Poisson field equation, the valley-linear action S = L(1-f), Newton's law in three parts, weak-field GR signatures (time dilation exact, WEP deflection spread 0.0000% across k = 2..16, light bending 1.985 +/- 0.012, Christoffel match to 2.3e-7), gauge groups, three generations, the cosmological constant and experimental predictions — with an explicit honest-negatives section.
 
-Original verdict: Full map of what is derived from what and with what evidence, including that single-particle Hawking is falsified (f = 1 amplifies, no horizon mechanism).
-Scope: Inventory with per-step scripts and notes; several steps are consistency checks rather than derivations.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The April era's fifteen-step full-chain inventory including its own falsified su
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Full map of what is derived from what and with what evidence, including that single-particle Hawking is falsified (f = 1 amplifies, no horizon mechanism).
+- Extraction scope (triage compression; may reflect later context): Inventory with per-step scripts and notes; several steps are consistency checks rather than derivations.
 - Extraction red flags: Records a falsified sub-claim (single-particle Hawking) inside an otherwise positive inventory.
 - Supersession (as known at extraction): none recorded
 

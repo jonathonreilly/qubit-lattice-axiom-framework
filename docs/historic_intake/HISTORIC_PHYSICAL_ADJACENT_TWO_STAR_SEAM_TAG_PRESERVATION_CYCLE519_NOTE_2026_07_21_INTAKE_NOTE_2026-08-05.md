@@ -18,10 +18,6 @@ required before any effective status.
 
 Repairs the Cycle-518 Gram defect by appending one M2 carrying tau = N_L mod 2 (left-center parity), which changes no face representative, role toggle, amplitude or factor order. At both L=5 and L=6 all 238,681 seeds land in 238,681 singleton fibers with maximum fiber 1 and ZERO tagged collisions, splitting all 24 native doubletons (16 with endpoint parities {(1,0),(0,1)}, 8 with {(1,1),(0,0)}); the 39,660 tau = 1 seeds decompose structurally as 60 + 11*60*60 = 39,660. All 245,518,336 expanded branch rows are therefore unique at each tested size without materializing them.
 
-Original verdict: TERMINAL positive repair of the 518 defect; does not synthesize the required controlled tag-X as a primitive physical gate and does not establish order independence.
-Scope: Static isometry on the oriented twelve-cell patch preserving the native Cycle-311/315 branch grammar; per-column branch weights unchanged (4096, 20480, 4096, 102400 branches per column, each normalized).
-Escape conditions (negative claims): Broad no-go gate FAIL / DO NOT SHIP — two materially different constructive routes remain, forbidding a no-go inference.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ TERMINAL positive repair of the Cycle-518 Gram defect: appending one M2 carrying
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): TERMINAL positive repair of the 518 defect; does not synthesize the required controlled tag-X as a primitive physical gate and does not establish order independence.
+- Extraction scope (triage compression; may reflect later context): Static isometry on the oriented twelve-cell patch preserving the native Cycle-311/315 branch grammar; per-column branch weights unchanged (4096, 20480, 4096, 102400 branches per column, each normalized).
+- Extraction escape conditions (negative claims; triage compression): Broad no-go gate FAIL / DO NOT SHIP — two materially different constructive routes remain, forbidding a no-go inference.
 - Extraction red flags: The runner reads logical occupations to update the tag and does not derive that read as a physical gate — the tag mechanism is supplied, so the 'physical' repair is partly host-side.
 - Supersession (as known at extraction): TERMINAL of the Cycle 517 (2772) -> 518 (2771) -> 519 (2773) chain: 517 posed the injectivity question, 518 found 24 doubletons, 519 splits all 24.
 

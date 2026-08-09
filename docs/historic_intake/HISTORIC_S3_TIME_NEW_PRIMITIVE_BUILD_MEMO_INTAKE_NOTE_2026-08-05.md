@@ -18,10 +18,6 @@ required before any effective status.
 
 Synthesis chair ranking three construction attempts: the exact scalar endpoint theorem on delta_A1 is the best reusable exact tool, Theta_R^(0) is bounded but useful as a comparison surface, and the direct tensor primitive from the current support algebra is DEAD; instructs the committee to stop trying to squeeze the primitive out of the scalar/rank-one stack.
 
-Original verdict: Route 2 is no longer a search for a hidden GR closure inside the existing stack; the next theorem must build a genuinely new microscopic tensor primitive.
-Scope: Route-2 primitive chain and atlas support as of 2026-04-14.
-Escape conditions (negative claims): Gives the operational escape in three steps: build a new tensor-valued support observable, use delta_A1 as the background variable it must refine, then upgrade Theta_R^(0).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -60,6 +56,9 @@ Route-2 tensor-primitive TERMINAL: no hidden GR closure in the existing stack â€
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Route 2 is no longer a search for a hidden GR closure inside the existing stack; the next theorem must build a genuinely new microscopic tensor primitive.
+- Extraction scope (triage compression; may reflect later context): Route-2 primitive chain and atlas support as of 2026-04-14.
+- Extraction escape conditions (negative claims; triage compression): Gives the operational escape in three steps: build a new tensor-valued support observable, use delta_A1 as the background variable it must refine, then upgrade Theta_R^(0).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): FAMILY TERMINAL for the Route-2 tensor-primitive no-go sweep (idx 1883-1893): it consolidates the blockers and issues the stop order.
 

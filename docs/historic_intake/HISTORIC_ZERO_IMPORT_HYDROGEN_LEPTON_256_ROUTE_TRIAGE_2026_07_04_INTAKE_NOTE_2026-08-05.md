@@ -18,10 +18,6 @@ required before any effective status.
 
 The 782-line route-triage note reducing the zero-import hydrogen goal to the Hartree scale and enumerating the candidate routes (Route A: M_2(C)^{tensor 4} geometry; Route B: the existing g^2/64 Schur/leptogenesis-looking surface; and the source-probe interface route) that the rest of the LEPTON_256 sweep instantiates.
 
-Original verdict: Partial-narrowing support note; selects routes without retaining any.
-Scope: Route selection for the charged-lepton 1/256 suppression factor.
-Escape conditions (negative claims): Close one of the enumerated routes.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The 782-line route-triage terminal reducing zero-import hydrogen to the Hartree 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Partial-narrowing support note; selects routes without retaining any.
+- Extraction scope (triage compression; may reflect later context): Route selection for the charged-lepton 1/256 suppression factor.
+- Extraction escape conditions (negative claims; triage compression): Close one of the enumerated routes.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): CAMPAIGN ROUTE-SELECTION TERMINAL for the LEPTON_256 sub-campaign (companion to the goal packet 2514); Route A is repaired in 2659 and Route B is walled in 2671. Source sub-ladder: F-clause 2651 / L-clause 2655 / P-clause 2661 / R-clause 2668 (each a TERMINAL) -> exact source singleton TERMINAL 2639 -> K4 terminal 2505; route selection 2667.
 

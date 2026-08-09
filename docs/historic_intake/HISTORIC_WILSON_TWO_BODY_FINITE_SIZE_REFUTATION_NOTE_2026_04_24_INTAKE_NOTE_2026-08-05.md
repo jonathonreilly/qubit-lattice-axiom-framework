@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Across sides 11, 13, 15, 17 with seven mass configs (56 simulations, 41 s) the CV of sa_cross/(m_a + m_b) barely moves (28.7 -> 28.6 -> 28.5 -> 28.5%) and the (2,3)/(3,2) asymmetry likewise (41.9 -> 40.7 -> 40.4 -> 40.3%), while per-config ratios are side-independent to 1-2%. At the observed rates (CV ~0.031%/side) reaching CV < 15% would need ~431 more sides, i.e. ~9e7 sites.
 
-Original verdict: The finite-size hypothesis is REFUTED: the (m_a + m_b) Newton scaling fails as a thermodynamic-limit law, per-config ratios are intrinsic Wilson-Hartree numbers with a 3.5x spread, and the Wilson two-body open-boundary Hartree system is not strictly Newtonian.
-Scope: Single seed per side, one separation, one parameter set on the open-boundary Wilson Hartree carrier.
-Escape conditions (negative claims): Named falsifiers/escapes: a side > 17 sweep with significantly faster CV decrease would reopen finite size; a closed/periodic/staggered protocol reaching CV < 15% would isolate the failure to the open-boundary Hartree carrier; a static-source approximation would calibrate how much comes from dynamical wave-packet feedback.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ REFUTED terminal: the (m_a + m_b) Newton scaling fails as a finite-size hypothes
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The finite-size hypothesis is REFUTED: the (m_a + m_b) Newton scaling fails as a thermodynamic-limit law, per-config ratios are intrinsic Wilson-Hartree numbers with a 3.5x spread, and the Wilson two-body open-boundary Hartree system is not strictly Newtonian.
+- Extraction scope (triage compression; may reflect later context): Single seed per side, one separation, one parameter set on the open-boundary Wilson Hartree carrier.
+- Extraction escape conditions (negative claims; triage compression): Named falsifiers/escapes: a side > 17 sweep with significantly faster CV decrease would reopen finite size; a closed/periodic/staggered protocol reaching CV < 15% would isolate the failure to the open-boundary Hartree carrier; a static-source approximation would calibrate how much comes from dynamical wave-packet feedback.
 - Extraction red flags: Refutes an active-queue target: the loop-2 both-masses result (CV 3.6%) is downgraded to a per-packet result that does not generalize to the per-separation Newton form.
 - Supersession (as known at extraction): TERMINAL of the Wilson two-body Newton-scaling chain (2129 -> 2131 -> 2130): promotes the loop-13 obstruction from possibly-finite-size to a thermodynamic-limit physical effect and declares a Newton-scaling action-reaction proof impossible on this carrier.
 

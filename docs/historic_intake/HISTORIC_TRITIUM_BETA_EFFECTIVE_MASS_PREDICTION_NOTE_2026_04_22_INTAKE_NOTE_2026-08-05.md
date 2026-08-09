@@ -18,10 +18,6 @@ required before any effective status.
 
 On the retained neutrino chain (m_1 = 4.37, m_2 = 9.71, m_3 = 50.4 meV) plus PDG 2024 NO PMNS, the incoherent sum m_beta^2 = sum |U_ei|^2 m_i^2 = 12.89 + 28.30 + 56.96 = 98.14 meV^2 gives m_beta = 9.86 meV — 1.23% of the KATRIN 2022 bound, 4.9% of KATRIN's final target, 24.7% of Project 8's ~40 meV reach, and only 1.0 meV above the NO minimum of 8.90 meV, with m_3 supplying 58% of m_beta^2 despite |U_e3|^2 = 0.0224.
 
-Original verdict: A single-valued Majorana-phase-independent prediction m_beta = 9.86 meV, falsifiable by any beta-decay detection above ~15 meV.
-Scope: Retained light-neutrino surface plus PDG PMNS NO; does not close the solar-gap lane, derive PMNS angles, or address the M_R = 0 Dirac surface.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Falsifiable single-valued m_beta = 9.86 meV prediction (Majorana-phase-independe
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A single-valued Majorana-phase-independent prediction m_beta = 9.86 meV, falsifiable by any beta-decay detection above ~15 meV.
+- Extraction scope (triage compression; may reflect later context): Retained light-neutrino surface plus PDG PMNS NO; does not close the solar-gap lane, derive PMNS angles, or address the M_R = 0 Dirac surface.
 - Extraction red flags: m_2 is observable-corrected via the measured Delta m^2_21 rather than derived, and the PMNS angles are PDG imports, so the 'derived prediction' status is partly data-fed.
 - Supersession (as known at extraction): Third leg of the three-observable neutrino fingerprint (with the Sigma m_nu and m_bb companion notes of the same date); depends on the retained chain rather than superseding it.
 

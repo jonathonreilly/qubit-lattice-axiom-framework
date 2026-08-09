@@ -18,10 +18,6 @@ required before any effective status.
 
 The self-contained primary runner REMOVES fitted inputs and target-defined Schur flux from the proof; the exact finite-box theorem is ready for independent audit as a bounded_theorem, but the supplied GR starting equations and graph discretization rule are explicit non-chain-satisfying bounded-sector inputs, so proposed_retained wording is not allowed.
 
-Original verdict: No proposal is made for a framework-derived physical GR claim; audit alone may make it retained_bounded.
-Scope: Finite box with supplied GR equations and a supplied graph discretization rule.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Fitted-input removal on the record: the self-contained primary runner REMOVES fi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No proposal is made for a framework-derived physical GR claim; audit alone may make it retained_bounded.
+- Extraction scope (triage compression; may reflect later context): Finite box with supplied GR equations and a supplied graph discretization rule.
 - Extraction red flags: the prior form of this proof contained fitted inputs and a target-defined flux
 - Supersession (as known at extraction): Removes fitted inputs and a target-defined Schur flux that were previously in the proof.
 

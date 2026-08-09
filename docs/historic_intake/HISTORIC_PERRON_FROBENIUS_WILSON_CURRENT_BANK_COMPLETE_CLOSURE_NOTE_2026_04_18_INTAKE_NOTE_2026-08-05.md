@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The Wilson lane is no longer an open route-search problem: the positive reopening route has been reduced all the way to its sharpest current form and is negatively closed on the current bank.
 
-Original verdict: Wilson remains the only positive reopening lever globally, but on the current bank it is completely reduced and negatively closed.
-Scope: Current bank.
-Escape conditions (negative claims): Reopening requires stronger science supplying the sharpest local certificate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -108,6 +104,9 @@ TERMINAL: the Wilson lane negatively closed on the current bank — reopening re
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Wilson remains the only positive reopening lever globally, but on the current bank it is completely reduced and negatively closed.
+- Extraction scope (triage compression; may reflect later context): Current bank.
+- Extraction escape conditions (negative claims; triage compression): Reopening requires stronger science supplying the sharpest local certificate.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

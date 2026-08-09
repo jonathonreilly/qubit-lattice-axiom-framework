@@ -18,10 +18,6 @@ required before any effective status.
 
 Eight DM runners had stale read('docs/X.md') calls referencing notes deliberately deleted by the 2026-04-16 trim commit d2e754fdc, producing FileNotFoundError-driven audited_conditional / audited_failed verdicts. Removing the dead reads and their dependent checks restores all eight to FAIL=0, 69 PASS / 0 FAIL total, without reverting the trim or removing load-bearing physics.
 
-Original verdict: Audit-hygiene cleanup; allowed and forbidden PR wordings are enumerated explicitly.
-Scope: Eight leaf-criticality claim rows with author-declared support or bounded status.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Verification-integrity: eight DM runners carried stale read('docs/X.md') calls t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Audit-hygiene cleanup; allowed and forbidden PR wordings are enumerated explicitly.
+- Extraction scope (triage compression; may reflect later context): Eight leaf-criticality claim rows with author-declared support or bounded status.
 - Extraction red flags: Eight runners were silently failing on deleted notes and their audit verdicts were noise, not physics - a systemic verification-integrity finding.
 - Supersession (as known at extraction): Repairs damage from the 2026-04-16 trim commit d2e754fdc.
 

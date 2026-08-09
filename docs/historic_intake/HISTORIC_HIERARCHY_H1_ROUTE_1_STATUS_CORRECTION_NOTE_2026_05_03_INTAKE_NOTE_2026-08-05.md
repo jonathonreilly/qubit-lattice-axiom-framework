@@ -20,10 +20,6 @@ required before any effective status.
 
 RETRACTS the same-day claim that V-invariant projection reduces the plaquette fixed-point equation: the Klein-four V acts on temporal APBC phases, not on SU(3) representation labels (p,q), so it does not fix rho_(p,q)(6); Lemma A (no positive real mean-field saddle) and Lemma B (bridge factorization) survive, Lemma C is withdrawn. Corrected path: extend the onset jet to N_target = 22 so the witness-law gap at beta = 6 falls below 10^-3 (~8-9 months at 1-2 weeks per order).
 
-Original verdict: The V-invariance reduction claim is withdrawn; the remaining spatial-environment character measure rho_(p,q)(6) is still open and consistent with the existing Perron-solve Theorem-3 no-go.
-Scope: Applies to Route 1 of the H1 closure program; the corrected closure paths (1A onset-jet extension, 1B spectral-moment) are cost estimates, not closures.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ STATUS CORRECTION retracting the same-day V-invariance reduction claim (V acts o
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The V-invariance reduction claim is withdrawn; the remaining spatial-environment character measure rho_(p,q)(6) is still open and consistent with the existing Perron-solve Theorem-3 no-go.
+- Extraction scope (triage compression; may reflect later context): Applies to Route 1 of the H1 closure program; the corrected closure paths (1A onset-jet extension, 1B spectral-moment) are cost estimates, not closures.
 - Extraction red flags: Self-retraction: an overstated claim from a companion note published the same day is amended and Lemma C withdrawn.
 - Supersession (as known at extraction): Explicitly 'Supersedes (in part) HIERARCHY_H1_SELF_CONSISTENT_SADDLE_NOTE_2026-05-03.md'; retracts that note's Lemma C.
 

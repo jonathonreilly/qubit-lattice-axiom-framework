@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The SU(2) pairwise-reduction theorem does not transfer to SU(3): the triples T_closed=(E(1,0),E(0,1),E(2,2)) and T_open=(E(1,0),E(0,1),E(1,1)) have identical separate and pairwise composite class data (all probes traceless noncentral) but different dagger-even triple invariant E_3(A,B,C)=Re(tr ABC + tr ACB) — 3/2 for T_closed versus 0 for T_open.
 
-Original verdict: A sector/readout theorem for the SU(3) star cannot be replaced by pairwise composite bookkeeping alone.
-Scope: Answers the (i-b''-a) SU(3) star reduction question left open by the July-2 link-star theorem; claims nothing about future sector-level, phase-source, or governance routes.
-Escape conditions (negative claims): Handle the triple joint-star datum directly at sector level — the central-sector projection route of idx 2066 is the named escape, which controls (rather than reduces) the triple data.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ SU(2) pairwise reduction does NOT transfer to SU(3): identical pairwise data, di
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sector/readout theorem for the SU(3) star cannot be replaced by pairwise composite bookkeeping alone.
+- Extraction scope (triage compression; may reflect later context): Answers the (i-b''-a) SU(3) star reduction question left open by the July-2 link-star theorem; claims nothing about future sector-level, phase-source, or governance routes.
+- Extraction escape conditions (negative claims; triage compression): Handle the triple joint-star datum directly at sector level — the central-sector projection route of idx 2066 is the named escape, which controls (rather than reduces) the triple data.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Block31, head of the July-4 SU(3) sub-chain (2067 -> 2066 -> 2059 -> G2 no-go 2058).
 

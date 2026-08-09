@@ -20,10 +20,6 @@ required before any effective status.
 
 The staggered hopping structure gives per-direction kinetic weight 1/2 and total Euclidean weight (d+1)/2, so the ratio is 1/(d+1) IF the directions are equally partitioned - but the equal-partition principle itself (why the gauge coupling is the per-direction fraction, distributed democratically) is not derived.
 
-Original verdict: No unconditional derivation of g_2^2 = 1/(d+1) from the staggered action alone; the lane stays explicitly bounded at the conditional normalization.
-Scope: Supports a derived lattice-side weight decomposition and a conditional g_2^2 = 1/(d+1) statement only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The equal-partition premise behind g_2^2 = 1/(d+1) recorded as NOT unconditional
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No unconditional derivation of g_2^2 = 1/(d+1) from the staggered action alone; the lane stays explicitly bounded at the conditional normalization.
+- Extraction scope (triage compression; may reflect later context): Supports a derived lattice-side weight decomposition and a conditional g_2^2 = 1/(d+1) statement only.
 - Extraction red flags: A load-bearing input to several downstream 'theorem' notes is here recorded as an undischarged conditional.
 - Supersession (as known at extraction): Bounds the g_2^2 = 1/(d+1) input that FRAMEWORK_BARE_ALPHA_3_ALPHA_EM (idx 504/505) and the three-sector identity notes (508/509) consume as if given.
 

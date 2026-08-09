@@ -18,10 +18,6 @@ required before any effective status.
 
 Review finding the Wilson/DM line-law branch has real new science (first-sector packet, dW_e^H even split (S12,S13), sparse-face exact preimage) but not flagship closure: the least-positive-bulk rule is a new principle not a derivation, the complement-line doublet is certified by hardcoded witnesses, and the rho1 selector only picks A over B rather than minimizing over the full solution set.
 
-Original verdict: Not yet safe to promote as a full flagship DM-gate closure; the endpoint note overstates the branch as having removed the final line-law seam.
-Scope: The 2026-04-19/20 gauge-vacuum plaquette first-sector notes and matching runners.
-Escape conditions (negative claims): Names what would suffice: derive the least-positive-bulk rule or label it a new principle, and supply a certified solve theorem reducing the set to two isolated real roots.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Promotion block on the Wilson/DM line-law branch: real new science, but the clos
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not yet safe to promote as a full flagship DM-gate closure; the endpoint note overstates the branch as having removed the final line-law seam.
+- Extraction scope (triage compression; may reflect later context): The 2026-04-19/20 gauge-vacuum plaquette first-sector notes and matching runners.
+- Extraction escape conditions (negative claims; triage compression): Names what would suffice: derive the least-positive-bulk rule or label it a new principle, and supply a certified solve theorem reducing the set to two isolated real roots.
 - Extraction red flags: States that a companion closure-endpoint note overclaims, and that a doublet theorem rests on hardcoded witnesses rather than an exhaustive solve.
 - Supersession (as known at extraction): Blocks promotion of the 2026-04-20 closure-endpoint note, which it says overstates its own result.
 

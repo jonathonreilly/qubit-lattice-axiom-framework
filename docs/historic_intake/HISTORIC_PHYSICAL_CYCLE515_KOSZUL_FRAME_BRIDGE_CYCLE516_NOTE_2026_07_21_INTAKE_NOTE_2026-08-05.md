@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes Cycle 515's open proper-cubic covariance residual algebraically: with the block-exchange character C_f(label) = (-1)^{sum_{i<j, rho_f(i)>rho_f(j)} n_i n_j}, the exact order characters D_pi CANCEL under role transport (shown by a 2,661,120-row transport), so the needed correction is C_f rather than an extra D_rho factor, giving B_f*E7 = E7*Rbar_f, Y_f*E7 = E7*C_f, K_f = B_f*Y_f and K_f*E7 = E7*R_f with K_f*G_physical*E7 = G_physical*K_f*E7 for all 24 proper frames and all 576 products. Passed 12/12 predicates at train L=5 and held L=6 with 3964 ordered local-term products per ordered cell pair.
 
-Original verdict: CONDITIONAL PASS retiring Cycle 515's all-order frame wall on one bounded star through total number two — not a primitive physical compiler and not a recurrent-volume covariance theorem.
-Scope: Declared seven-cell, global-total-N<=2 code; every frame fixes cell 0, the star center. Does NOT synthesize the dense physical correction or its constraints from primitive M2 updates.
-Escape conditions (negative claims): A broad no-go has insufficient route coverage and fails N1; no such no-go is proposed. Cycle 515's former W_cov is not retained as a fifth wall.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ TERMINAL of the Cycle 515 -> 516 frame-covariance pair: closes the open proper-c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CONDITIONAL PASS retiring Cycle 515's all-order frame wall on one bounded star through total number two — not a primitive physical compiler and not a recurrent-volume covariance theorem.
+- Extraction scope (triage compression; may reflect later context): Declared seven-cell, global-total-N<=2 code; every frame fixes cell 0, the star center. Does NOT synthesize the dense physical correction or its constraints from primitive M2 updates.
+- Extraction escape conditions (negative claims; triage compression): A broad no-go has insufficient route coverage and fails N1; no such no-go is proposed. Cycle 515's former W_cov is not retained as a fifth wall.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the Cycle 515 (idx 2829) -> 516 pair: 515 proved all 5040 order isometries, 516 supplies the frame covariance. C_f is load-bearing; literal dense frame matrices remain OPEN / UNTESTED.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The gravity suppression ratio fits r = 1 - C(G)/side to RMS residual < 2% at every G (C(5) = 2.63, C(10) = 4.21, C(20) = 6.09) and the G=0 baseline slope is nearly size-independent (0.2007 to 0.2110 across seven sides), but the unconstrained two-parameter fit does NOT asymptote to exactly 1.0.
 
-Original verdict: A sharper finite-size characterization: the suppression is a 1/side effect whose asymptote is not certified at 1.0, and the lane stays bounded.
-Scope: Sides 8-16, G in {0, 5, 10, 20}; runner 3/5 PASS with B.2 and B.3 as real falsifying findings.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Boundary-law terminal: gravity suppression is a 1/side finite-size effect (RMS<2
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharper finite-size characterization: the suppression is a 1/side effect whose asymptote is not certified at 1.0, and the lane stays bounded.
+- Extraction scope (triage compression; may reflect later context): Sides 8-16, G in {0, 5, 10, 20}; runner 3/5 PASS with B.2 and B.3 as real falsifying findings.
 - Extraction red flags: Two of five checks fail as genuine falsifications of the note's own stronger hypotheses.
 - Supersession (as known at extraction): Sharpens the coefficient-stability note of the same date.
 

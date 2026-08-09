@@ -18,10 +18,6 @@ required before any effective status.
 
 Thread 2's six non-operator routes all fail as either operator-in-disguise or numerology (2/N = 2/3 is cherry-picked over the framework's own universal (N-1)/N^2 = 2/9, and 1/sqrt2 = cos(pi/4) is a Z_4/Z_8 value while genuine Z_3 objects give 1/2, sqrt3/2, sqrt3); combined with Thread 1's operator no-go, Q = 2/3 reduces in every framing to one chiral pin, and the balance is codim-1 (only ~0.4% of flat-prior vectors land within 1% of 2/3).
 
-Original verdict: Q = 2/3 is derived-modulo-one-import: the count n_gen = 3 is derived, 3-distinctness is plausibly native, and the value r = 1/2 is the single irreducible pin, reproduced not derived.
-Scope: Operator, measure, dynamics, combinatorial, geometric, information-theoretic, number-theoretic and holographic framings all examined; symmetry-natural objects return Q = 1 and democratic ones Q = 1/3.
-Escape conditions (negative claims): Two live paths: an audited reason the emergent-time/record dynamics coarse-grains the C_3 isotypes into 2 sectors rather than 3 modes (which would derive the block-count MaxEnt), and a first-principles block-count-vs-Plancherel selection on R[Z_3] from the Cl(3) qubit structure (not found, not foreclosed).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ FLAVOR VALUE FINAL STATUS: derived-modulo-one-import, numerology called out (2/N
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q = 2/3 is derived-modulo-one-import: the count n_gen = 3 is derived, 3-distinctness is plausibly native, and the value r = 1/2 is the single irreducible pin, reproduced not derived.
+- Extraction scope (triage compression; may reflect later context): Operator, measure, dynamics, combinatorial, geometric, information-theoretic, number-theoretic and holographic framings all examined; symmetry-natural objects return Q = 1 and democratic ones Q = 1/3.
+- Extraction escape conditions (negative claims; triage compression): Two live paths: an audited reason the emergent-time/record dynamics coarse-grains the C_3 isotypes into 2 sectors rather than 3 modes (which would derive the block-count MaxEnt), and a first-principles block-count-vs-Plancherel selection on R[Z_3] from the Cl(3) qubit structure (not found, not foreclosed).
 - Extraction red flags: Explicitly names a do-not-cite audited_failed anchor and calls out its own campaign's earlier numerological attractions.
 - Supersession (as known at extraction): TERMINAL note of the FLAVOR value campaign, closing Threads 1 and 2; lists retained anchors and flags koide_signed_eigenvalue_vs_singular_value_readout as audited_failed, do not cite.
 

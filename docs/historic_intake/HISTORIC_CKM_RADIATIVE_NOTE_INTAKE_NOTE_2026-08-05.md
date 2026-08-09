@@ -18,10 +18,6 @@ required before any effective status.
 
 Radiative CKM mechanism: the democratic Higgs VEV gives a rank-1 tree mass matrix M_0 = (y v/sqrt(3)) J_3 with spectrum (m_top, 0, 0), and 1-loop gauge-boson exchange generates taste-dependent diagonal self-energies plus off-diagonal corrections that produce a near-diagonal CKM with Wolfenstein hierarchy and CP violation.
 
-Original verdict: Structural framework derived, quantitative predictions estimated — the lane stays bounded.
-Scope: Quantitative predictions depend on three estimated/fitted inputs: the Planck-scale gauge coupling, taste splitting ratios, and the CP phase.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The surviving radiative CKM mechanism after the Z_3-charge route's death: democr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Structural framework derived, quantitative predictions estimated — the lane stays bounded.
+- Extraction scope (triage compression; may reflect later context): Quantitative predictions depend on three estimated/fitted inputs: the Planck-scale gauge coupling, taste splitting ratios, and the CP phase.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes the Higgs Z_3 charge route (proved dead: the Higgs has no definite Z_3 charge) and builds on the tree-level rank-1 result.
 

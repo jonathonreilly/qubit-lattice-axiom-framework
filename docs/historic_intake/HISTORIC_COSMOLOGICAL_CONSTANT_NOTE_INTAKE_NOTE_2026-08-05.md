@@ -18,10 +18,6 @@ required before any effective status.
 
 Five approaches to constrain Lambda from graph vacuum energy all fail — naive lattice-cutoff vacuum energy matches standard QFT unsuppressed, self-consistency does not suppress it, topology does not, d = 3 criticality does not, and Casimir-like subtraction does not — leaving only one interesting result: dimensional analysis gives a = R_Hubble if Lambda takes its observed value.
 
-Original verdict: The framework does NOT solve the cosmological constant problem; four named mechanisms would be needed and none is demonstrated.
-Scope: Five tested approaches; the UV-IR observation is flagged as interesting but not a solution.
-Escape conditions (negative claims): Names four escape mechanisms explicitly: rho_vac scaling as N^-p with p >> 1, an emergent cancellation symmetry, dynamical topology adjustment, or a growing-graph vacuum unlike the sum-over-modes picture.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The adversarial CC negative: five approaches to constrain Lambda from graph vacu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The framework does NOT solve the cosmological constant problem; four named mechanisms would be needed and none is demonstrated.
+- Extraction scope (triage compression; may reflect later context): Five tested approaches; the UV-IR observation is flagged as interesting but not a solution.
+- Extraction escape conditions (negative claims; triage compression): Names four escape mechanisms explicitly: rho_vac scaling as N^-p with p >> 1, an emergent cancellation symmetry, dynamical topology adjustment, or a growing-graph vacuum unlike the sum-over-modes picture.
 - Extraction red flags: Directly contradicts the more positive framing of the other April cosmological-constant notes; the UV-IR reading would make the graph spacing cosmological rather than Planckian.
 - Supersession (as known at extraction): Sits in tension with the later CC_FACTOR15/CC_VALUE notes, which claim the spectral-gap identification solves the CC problem.
 

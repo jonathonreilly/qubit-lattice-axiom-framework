@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The retained anomaly-forced 3+1 temporal surface is flavor-trivial on the hw=1 triplet: gamma_5 acts on spinor indices only, the RH singlet completion carries the same hypercharge in all three generations, all five anomaly traces vanish on the SM branch, and on every tested APBC block L_t in {6,8,12,16} the perturbed resolvent still commutes with all lattice translations, forcing K_ij = 0 for i != j.
 
-Original verdict: ANOMALY_FORCED_MIXING_GENERATES_B=FALSE — the necessary step fails, so the Koide cone a_0^2 = 2|z|^2 remains unreachable on this attack surface and Agent 4's pure-APBC b = 0 no-go extends unchanged.
-Scope: Rules out only the stand-alone anomaly-forced 3+1 cross-species propagator on a non-minimal temporal block (candidate 6 of the G5 successor list); symbolic in m_i, u_0, L_t, r, m_chi.
-Escape conditions (negative claims): The obstruction is translation-character orthogonality on pure APBC: species pairs disagree on at least one translation axis, so any species-blind insertion leaves the kernel diagonal; the anomaly does carry a sector-SCALE signal (Q_L : L_L = -1/27 : 1 for Tr[Y^3]) but within a sector all three generations share Y, so escaping requires a mechanism that is not species-blind — e.g. Higgs VEV / Yukawa input, explicitly out of scope as G1 territory.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Flavor-triviality no-go: the anomaly-forced 3+1 surface cannot generate b != 0 (
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): ANOMALY_FORCED_MIXING_GENERATES_B=FALSE — the necessary step fails, so the Koide cone a_0^2 = 2|z|^2 remains unreachable on this attack surface and Agent 4's pure-APBC b = 0 no-go extends unchanged.
+- Extraction scope (triage compression; may reflect later context): Rules out only the stand-alone anomaly-forced 3+1 cross-species propagator on a non-minimal temporal block (candidate 6 of the G5 successor list); symbolic in m_i, u_0, L_t, r, m_chi.
+- Extraction escape conditions (negative claims; triage compression): The obstruction is translation-character orthogonality on pure APBC: species pairs disagree on at least one translation axis, so any species-blind insertion leaves the kernel diagonal; the anomaly does carry a sector-SCALE signal (Q_L : L_L = -1/27 : 1 for Tr[Y^3]) but within a sector all three generations share Y, so escaping requires a mechanism that is not species-blind — e.g. Higgs VEV / Yukawa input, explicitly out of scope as G1 territory.
 - Extraction red flags: Internal date (2026-04-17) disagrees with the manifest creation date (2026-04-19).
 - Supersession (as known at extraction): Successor-candidate closure note for gap G5, eliminating candidate (6) from CHARGED_LEPTON_KOIDE_G5_STATUS_NOTE_2026-04-17's list; inherits authorities including ANOMALY_FORCES_TIME_THEOREM without re-executing them.
 

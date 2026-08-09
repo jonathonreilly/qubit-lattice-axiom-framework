@@ -18,10 +18,6 @@ required before any effective status.
 
 Attributes the 6.5% top-mass overshoot (184 vs 173.0 GeV) to scheme inconsistency rather than matching: the 1-loop V-to-MSbar conversion with r_1 = a_1/4 + (5/12) beta_0 = 3.83 reduces alpha_V = 0.093 to alpha_MSbar(M_Pl) = 0.084 (2-loop: 0.082), and using MSbar g3 for gauge evolution gives m_t = 171.8 GeV (-0.7%) and 171.0 GeV (-1.1%), closing 82-89% of the 11 GeV overshoot. The mechanism is the -8 g_3^2 term in the y_t beta function, which inflates y_t by ~6% when g3 ~ 1.07 but not when g3 ~ 0.49.
 
-Original verdict: The y_t gate is declared CLOSED at matching precision, with the residual -1.1% (2 GeV) inside perturbative matching uncertainty and requiring no new physics.
-Scope: Matching-precision level with 2-loop SM RGE and threshold corrections included; alpha_plaq = 0.092 remains an input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The 'Gate CLOSED at matching precision' claim WITH its own cross-validation flag
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The y_t gate is declared CLOSED at matching precision, with the residual -1.1% (2 GeV) inside perturbative matching uncertainty and requiring no new physics.
+- Extraction scope (triage compression; may reflect later context): Matching-precision level with 2-loop SM RGE and threshold corrections included; alpha_plaq = 0.092 remains an input.
 - Extraction red flags: Self-declared 'Gate CLOSED' while its own cross-validation notes the alpha_s needed for exact m_t = 173 is 0.086 against the derived 0.084 (3.3% low); the closure rests on a scheme conversion whose exactness is not independently checked.
 - Supersession (as known at extraction): Supersedes the raw-plaquette boundary condition used by frontier_yt_formal_theorem​.py (184 GeV); sits in tension with the BLM note at idx 2141, which treats the same conversion as a mere 9% effect against an 8x gap.
 

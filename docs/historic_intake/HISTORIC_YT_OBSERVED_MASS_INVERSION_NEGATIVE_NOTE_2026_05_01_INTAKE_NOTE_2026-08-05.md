@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Using the observed top mass or accepted y_t(v) as the missing input and reporting y_t = sqrt(2) m_t/v as the derivation is an external-observable calibration, not a substrate derivation — it imports the target value rather than deriving it from Cl(3)/Z^3.
 
-Original verdict: No — the inversion move is disallowed as proof input.
-Scope: Blocks observed-comparator inversion as a way to avoid production MC; observed masses remain valid comparators after a substrate calculation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The inversion firewall: reporting y_t = sqrt(2) m_t/v from observed m_t is calib
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No — the inversion move is disallowed as proof input.
+- Extraction scope (triage compression; may reflect later context): Blocks observed-comparator inversion as a way to avoid production MC; observed masses remain valid comparators after a substrate calculation.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The firewall that every later PR #230 note restates as 'observed targets not used as proof authority'.
 

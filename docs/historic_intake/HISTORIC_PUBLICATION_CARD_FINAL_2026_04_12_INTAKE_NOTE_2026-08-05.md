@@ -18,10 +18,6 @@ required before any effective status.
 
 Tabulates the retained structural backbone (d = 3, Poisson uniqueness over 21 operators, F = GM1M2/r^2 sub-1% on 128^3, Born I_3 = 0, U(1) Coulomb R^2 = 0.9995, SU(2) 106/106, SU(3) via graph-shift commutant, d_t = 1 at 86/86, orbit algebra 8 = 1+3+3+1) against bounded phenomenological windows, and honestly labels Delta m^2 ratio 32.6 as a FIT with two free parameters and delta_CP = -103 degrees as a FIT.
 
-Original verdict: One SM generation closes; physical generation closure and full-flavor hypercharge are OPEN gates.
-Scope: Status summary for codex/review-active; the paper-safe claim explicitly says physical generations and full-flavor hypercharge remain open.
-Escape conditions (negative claims): Physical generation closure needs a canonical matter-assignment theorem making taste triplets physical families, conditional on taste physicality.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The conservative publication card: reclassifies its sister's claims (Delta m^2 r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): One SM generation closes; physical generation closure and full-flavor hypercharge are OPEN gates.
+- Extraction scope (triage compression; may reflect later context): Status summary for codex/review-active; the paper-safe claim explicitly says physical generations and full-flavor hypercharge remain open.
+- Extraction escape conditions (negative claims; triage compression): Physical generation closure needs a canonical matter-assignment theorem making taste triplets physical families, conditional on taste physicality.
 - Extraction red flags: Directly corrects the sister publication card by reclassifying Delta m^2 ratio and delta_CP from predictions to fits.
 - Supersession (as known at extraction): More conservative successor to PUBLICATION_CARD_2026-04-12 - it relabels several of that card's 'exact' matches as fits and adds the codex-approved paper-safe language.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Promoted Higgs/vacuum rows on the corrected Yukawa/color-projection route: m_H(2-loop) = 119.8 GeV (119.77), m_H(full 3-loop boundary) = 129.7 GeV against the observed comparator 125.25 GeV, with the framework predicting absolute vacuum stability rather than SM metastability. The direct taste-sector formula m_H = v/(2 u_0) = 140.3 GeV is retained only as an auxiliary support route.
 
-Original verdict: These are the current Higgs/vacuum rows promoted on main.
-Scope: Standalone authority for the promoted Higgs/vacuum lane only, separate from the hierarchy/v lane, the alpha_s lane, the EW normalization lane and the Yukawa/top lane.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The era's promoted Higgs authority: 119.8/129.7 GeV bracketing 125.25 with a 140
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): These are the current Higgs/vacuum rows promoted on main.
+- Extraction scope (triage compression; may reflect later context): Standalone authority for the promoted Higgs/vacuum lane only, separate from the hierarchy/v lane, the alpha_s lane, the EW normalization lane and the Yukawa/top lane.
 - Extraction red flags: The two promoted values bracket rather than match the observed 125.25 GeV (119.8 and 129.7), and the auxiliary route gives 140.3 GeV — the note offers no reconciliation.
 - Supersession (as known at extraction): Demotes the direct taste-sector formula in HIGGS_MASS_FROM_AXIOM_NOTE (140.3 GeV) from lane summary to supporting auxiliary derivation.
 

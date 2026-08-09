@@ -59,9 +59,13 @@ no current-tree runner can bind, with the byte-exact wording pinned in the
 triage JSONLs and archived originals (F4); markdown links (deps edges) only
 for attachment relations — contradiction/cross-flag relations are inert text
 plus machine-readable `contradicts:`/`cross_reference:` yaml lists, with
-named non-pulled evidence archived byte-exact (F5); extraction-time
-commentary split into a clearly-attributed Triage-extraction-notes section
-(F6); the Octopus registry typed meta with its evidence base archived (F7);
+named non-pulled evidence archived byte-exact (F5); ALL extraction-time
+commentary — verdict, scope, escape conditions, red flags, supersession —
+lives in the clearly-attributed Triage-extraction-notes section as triage
+compressions (uniform in-doubt rule: nothing outside the pinned headline is
+attributed to the original), so the claim section carries only the
+supervisor-compressed headline (F6); the Octopus registry typed meta with
+its evidence base archived (F7);
 the hazards memo given a meta header plus a pinned archived evidence base
 (F8); review flags on the three affected packsci01 wrappers (F9/F10/F11);
 bare-code H1 titles rewritten with the explicit scientific name as the

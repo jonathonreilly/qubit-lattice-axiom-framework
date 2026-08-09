@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The framework's alpha_s^MSbar(M_Pl) = 0.084 is 4.4x the SM perturbative value 0.019 obtained by running the observed alpha_s(M_Z) upward, and running the framework coupling downward with 2-loop QCD breaks perturbation theory (alpha_s > 0.3) at mu ~ 1e15.8 GeV and hits a Landau pole at mu ~ 1e14.6 GeV, with a framework Lambda_QCD^(6) = 5.7e16 GeV against a physical ~0.089 GeV. The V-to-MSbar conversion gives an 11% reduction where 77% is needed.
 
-Original verdict: Gate BOUNDED, crossover NOT resolved — this is not a perturbative correction, and the successful m_t prediction still uses the SM gauge trajectory generated from the observed alpha_s(M_Z).
-Scope: The strong-to-perturbative gauge crossover named as the remaining blocker by the review.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ THE HONEST TERMINAL: the gauge crossover (4.4x) is NOT resolved and the quoted s
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Gate BOUNDED, crossover NOT resolved — this is not a perturbative correction, and the successful m_t prediction still uses the SM gauge trajectory generated from the observed alpha_s(M_Z).
+- Extraction scope (triage compression; may reflect later context): The strong-to-perturbative gauge crossover named as the remaining blocker by the review.
 - Extraction red flags: States that the quoted successful m_t prediction still relies on the observed alpha_s(M_Z) through the SM gauge trajectory — i.e. the lane's headline number is not framework-only.
 - Supersession (as known at extraction): Directly contradicts the retraction note's claim (idx 2306) that the gauge crossover theorem chain CLOSES y_t; the two are three days apart in the same lane.
 

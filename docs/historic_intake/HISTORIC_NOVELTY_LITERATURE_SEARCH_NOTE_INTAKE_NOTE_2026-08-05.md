@@ -18,10 +18,6 @@ required before any effective status.
 
 Finds that deriving SU(3) from Clifford algebras is well-trodden ground — Trayling & Baylis (2001) derive the full SM gauge group from Cl(7), Stoica (2018) gets leptons, quarks and electroweak+color from complex Cl(6), and Furey (2014-2024) derives SU(3)_C x U(1)_em from complex octonions generating Cl(6) — so the framework's contribution is modest in scope.
 
-Original verdict: The contribution is real but modest; the framework's distinguishing feature is the specific d=3 physical-lattice reading rather than the Clifford-to-gauge-group derivation itself.
-Scope: Assesses three specific claims against the literature.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Novelty deflation: SU(3)-from-Clifford is well-trodden (Trayling-Baylis, Stoica)
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The contribution is real but modest; the framework's distinguishing feature is the specific d=3 physical-lattice reading rather than the Clifford-to-gauge-group derivation itself.
+- Extraction scope (triage compression; may reflect later context): Assesses three specific claims against the literature.
 - Extraction red flags: Explicitly deflates the novelty of a headline framework claim by citing five prior derivations of the same structure.
 - Supersession (as known at extraction): none recorded
 

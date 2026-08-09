@@ -18,10 +18,6 @@ required before any effective status.
 
 Over 150 rows the sign separator is fully G-portable at mu^2 = 0.1 (15/15 on all three observables at every G in {1,3,5,10,20}, medians +3.2e-2 to +6.4e-3) but REFUTED at mu^2 = 0.001, where pass rates go non-monotonic [1.00, 0.67, 1.00, 0.87, 0.33] and the median ball1 margin flips sign at G = 20 (-1.11e-7).
 
-Original verdict: 3/6 PASS — portability established at mu^2 = 0.1 across G in [1,20] and refuted at mu^2 = 0.001, where margins sit 4-7 orders of magnitude below the mu^2 = 0.1 peak and are sign-of-noise.
-Scope: Three graph families x 5 seeds per cell; packet, observable, window and constructors identical to the original core-packet gate, only G swept.
-Escape conditions (negative claims): The low-screening refutation is tied to the centered core-packet observable; a different sigma or packet shape giving uniform pass at mu^2 = 0.001 would isolate the failure to the observable rather than the underlying sign physics, and the note suggests low screening may be a separate near-massless regime warranting a different observable.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Portability established at mu^2 = 0.1 and REFUTED at 0.001 — explicitly retrac
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): 3/6 PASS — portability established at mu^2 = 0.1 across G in [1,20] and refuted at mu^2 = 0.001, where margins sit 4-7 orders of magnitude below the mu^2 = 0.1 peak and are sign-of-noise.
+- Extraction scope (triage compression; may reflect later context): Three graph families x 5 seeds per cell; packet, observable, window and constructors identical to the original core-packet gate, only G swept.
+- Extraction escape conditions (negative claims; triage compression): The low-screening refutation is tied to the centered core-packet observable; a different sigma or packet shape giving uniform pass at mu^2 = 0.001 would isolate the failure to the observable rather than the underlying sign physics, and the note suggests low screening may be a separate near-massless regime warranting a different observable.
 - Extraction red flags: Explicitly retracts the strength of a prior gate result; host library versions differ from pinned.
 - Supersession (as known at extraction): Downgrades the 2026-04-11 core-packet gate's 93.3% pass at mu^2 = 0.001 to a marginal weak-noise positive bias that does not survive a wider G sweep; predecessor to the family-portability sweep of the same date.
 

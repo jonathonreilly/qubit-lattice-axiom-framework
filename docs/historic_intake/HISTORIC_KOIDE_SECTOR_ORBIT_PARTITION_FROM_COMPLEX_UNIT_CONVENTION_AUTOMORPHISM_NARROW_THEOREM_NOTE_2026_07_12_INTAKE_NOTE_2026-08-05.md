@@ -18,10 +18,6 @@ required before any effective status.
 
 Derives the sector partition natively: the complex unit is a convention (the grade involution alpha sends the central pseudoscalar omega_ps = e1e2e3 to -omega_ps, and entrywise conjugation realizes the same swap), so no A_min-derivable law may depend on it. Conjugation fixes C and P_1 while swapping P_w <-> P_conj(w), and an exhaustive sweep finds exactly 9 of 27 sector selectors invariant, all constant on the doublet — so the finest derivable partition is {singlet, doublet-orbit} with a conjugation-fixed rank-2 doublet projector.
 
-Original verdict: The registrable sector-weight simplex is the 2-simplex (p_s, p_d) with p_d the one orbit weight; TOTAL PASS=36 FAIL=0 with no check passing by literal stipulation.
-Scope: Finite sector-algebra theorem at the corner-triplet carrier surface only; derives the partition, not the physical carrier identification, not any value law, measure, grain, r-eta, delta, or record-formation rule. K-reality's value face stays open.
-Escape conditions (negative claims): K-odd Hermitian observables do exist — i(C-C^2) has eigenvalues {-sqrt(3), 0, +sqrt(3)} and would resolve the doublet — but it is conjugation-ODD, so any law privileging it depends on the complex-unit convention and is available only as an ADMITTED premise under the Qualification clause's 'unless that choice is admitted'.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Native sector-orbit partition derivation (complex unit a convention; the 2-simpl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The registrable sector-weight simplex is the 2-simplex (p_s, p_d) with p_d the one orbit weight; TOTAL PASS=36 FAIL=0 with no check passing by literal stipulation.
+- Extraction scope (triage compression; may reflect later context): Finite sector-algebra theorem at the corner-triplet carrier surface only; derives the partition, not the physical carrier identification, not any value law, measure, grain, r-eta, delta, or record-formation rule. K-reality's value face stays open.
+- Extraction escape conditions (negative claims; triage compression): K-odd Hermitian observables do exist — i(C-C^2) has eigenvalues {-sqrt(3), 0, +sqrt(3)} and would resolve the doublet — but it is conjugation-ODD, so any law privileging it depends on the complex-unit convention and is available only as an ADMITTED premise under the Qualification clause's 'unless that choice is admitted'.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Derives the partition half of the supplied context consumed by ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_...2026-07-11 (a named but unexecuted discharge target); supersedes the einselection-era treatment of K-reality as a posited predicate for the partition half only; leaves the KCPT bridge unchanged.
 

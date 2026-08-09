@@ -18,10 +18,6 @@ required before any effective status.
 
 Three methodological no-gos: an 'ok' cache with EMPTY STDOUT is not a useful audit-unblock artifact because reviewers cannot inspect the runner's checks, status boundaries or pass/fail summary (the block replaces it with a full transcript); runner success alone does not make a row ready while its dependencies are blocked; and applying or implying an audit verdict here would violate the claim-status firewall.
 
-Original verdict: Three rules.
-Scope: One block's evidence quality.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Methodological no-go for the audit lane: an 'ok' runner cache with EMPTY STDOUT 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three rules.
+- Extraction scope (triage compression; may reflect later context): One block's evidence quality.
 - Extraction red flags: Discloses that empty-stdout caches were being accepted as runner evidence - a verification-integrity defect class.
 - Supersession (as known at extraction): none recorded
 

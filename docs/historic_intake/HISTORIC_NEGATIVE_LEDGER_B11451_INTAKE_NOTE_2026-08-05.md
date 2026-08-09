@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Five walls: NG-LEGACY-TABLE — completed stdout disagreed with both old source tables (slopes, zero, sign flip, minimum) on pre-edit live replay; NG-TIMING — fixed endpoints plus varied speed force duration variation by exact two-equation identity; NG-LAB — no calibration or observable map in packet. Does not say continuum scaling impossible.
 
-Original verdict: five walls with reopen conditions
-Scope: the named finite source packet only
-Escape conditions (negative claims): add an independent design dimension; redesigned design controlling non-speed factors; supply and independently validate a physical bridge
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Verification-integrity finding: NG-LEGACY-TABLE - the completed stdout DISAGREES
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): five walls with reopen conditions
+- Extraction scope (triage compression; may reflect later context): the named finite source packet only
+- Extraction escape conditions (negative claims; triage compression): add an independent design dimension; redesigned design controlling non-speed factors; supply and independently validate a physical bridge
 - Extraction red flags: legacy tables refuted by live replay — earlier packet content was wrong until this repair
 - Supersession (as known at extraction): none recorded
 

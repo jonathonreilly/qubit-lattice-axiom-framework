@@ -18,10 +18,6 @@ required before any effective status.
 
 P_full(beta) = P_1plaq(beta) + beta^5/472392 + O_nonlocal(beta^6): the local block and full lattice agree through O(beta^4), and the first distinct correction is the area-5 cube complement with coefficient 4 * 2 * (1/6^6) * (1/81) = 1/472392, using the oriented cube-boundary moment 3^(8-12) = 1/81. Runner 10 pass / 0 fail.
 
-Original verdict: The first nonlocal connected departure from the one-plaquette block is known exactly; this does not close analytic P(beta = 6).
-Scope: First nonlocal CONNECTED correction only; lower-order distinct-plaquette terms exist as plaquette-antiplaquette bubbles but factor out as exact unit bubbles.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ Exact first nonlocal correction: P_full = P_1plaq + beta^5/472392 + O(beta^6) â€
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The first nonlocal connected departure from the one-plaquette block is known exactly; this does not close analytic P(beta = 6).
+- Extraction scope (triage compression; may reflect later context): First nonlocal CONNECTED correction only; lower-order distinct-plaquette terms exist as plaquette-antiplaquette bubbles but factor out as exact unit bubbles.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly corrects its own first-draft stage plan (the denominator does NOT start only at area 6); successor gates named as ROOTED_3CHAIN_COEFFICIENT_ENGINE_NOTE and the directed-cell/local-face closure notes.
 

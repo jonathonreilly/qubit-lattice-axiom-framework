@@ -18,10 +18,6 @@ required before any effective status.
 
 Resolves the RP^3/S^3 tension two ways: the Cl(3) center Z_2 = {I, G_5} with G_5 = -I acts on the fiber not the spatial base and cannot produce an antipodal identification; and the CC scan note's lambda_1(RP^3) = 3/R^2 is WRONG (only even l survive the antipodal map, so lambda_1 = 8/R^2), which moves RP^3 from a favorable ratio to Lambda_pred/Lambda_obs = 2.45 (145% deviation) versus S^3's 1.46 (46%). PASS=25 FAIL=0.
 
-Original verdict: BOUNDED: S^3 is the best spherical topology once the RP^3 eigenvalue is corrected, and the growth axiom excludes RP^3 by pi_1 = 0.
-Scope: Cl(3) at each site plus the growth-from-seed axiom; relies on Perelman, Seifert-van Kampen, and Peter-Weyl.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The lambda_1(RP^3) correction: 3/R^2 -> 8/R^2, REVERSING the 'RP^3 beats S^3' he
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED: S^3 is the best spherical topology once the RP^3 eigenvalue is corrected, and the growth axiom excludes RP^3 by pi_1 = 0.
+- Extraction scope (triage compression; may reflect later context): Cl(3) at each site plus the growth-from-seed axiom; relies on Perelman, Seifert-van Kampen, and Peter-Weyl.
 - Extraction red flags: Documents that a previously banked topology-scan result was numerically wrong and had reversed the topology preference.
 - Supersession (as known at extraction): Corrects an explicit numerical error in S3_CC_TOPOLOGY_SCAN_NOTE (idx 1848); supersedes that note's RP^3 preference.
 

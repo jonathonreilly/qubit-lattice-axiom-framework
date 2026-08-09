@@ -20,10 +20,6 @@ required before any effective status.
 
 Pinning the shape theorem's weights to PDG charged-lepton masses gives (w_O0, w_a, w_b) = (2.713707e-04, 5.611085e-02, 9.436178e-01) normalized, at which Koide Q = 0.6666605115 is recovered AUTOMATICALLY (|Q - 2/3| = 6.155e-06) rather than imposed - because Q is scale-invariant and the Gamma_1 hopping fixes the species-to-slot bijection.
 
-Original verdict: G5 attains publication-grade status matching G1 - closure via observational promotion on the chamber, explicitly not sole-axiom; the G1 and G5 pins impose no constraint on each other (best cosine similarity 0.9496 against a 0.999 threshold).
-Scope: Closure consumes the 3-real PDG input (m_e, m_mu, m_tau); constraint R5 (the S_2-broken requirement w_a != w_b) is exactly what retained schemes alone cannot impose.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ G5 observational-pin closure WITH the flag that automatic-Koide is scale invaria
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): G5 attains publication-grade status matching G1 - closure via observational promotion on the chamber, explicitly not sole-axiom; the G1 and G5 pins impose no constraint on each other (best cosine similarity 0.9496 against a 0.999 threshold).
+- Extraction scope (triage compression; may reflect later context): Closure consumes the 3-real PDG input (m_e, m_mu, m_tau); constraint R5 (the S_2-broken requirement w_a != w_b) is exactly what retained schemes alone cannot impose.
 - Extraction red flags: The 'Koide recovered automatically' result is a consequence of scale invariance once the weights are set proportional to the observed masses - i.e. Q is inherited from the input, not predicted; R5 (the key chamber-interior selection) is conceded to be unimposable by retained schemes.
 - Supersession (as known at extraction): Takes the Agent 10 v2 shape theorem (idx 545) and closes G5 by the same P3 observational-promotion lane G1 used (idx 533); mirrors G1's architecture explicitly.
 

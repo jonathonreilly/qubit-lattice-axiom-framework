@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Systematically searches Quantum/Lattice for a carrier symmetry forbidding the marginal c-operator (signed-permutation groups, invariants, Clifford rescaling, Lorentz-scalar structure, SUSY) and finds none: closure (i) FAILS (runner 16 PASS / 0 FAIL).
 
-Original verdict: A decisive negative that COMPLETES the enumeration of framework-native escapes and leaves it empty — only (ii) a new axiom or (iii) new strong UV dynamics remain.
-Scope: A finite-group/algebraic symmetry enumeration over the three axioms plus the framework's gauge SU(3)xU(1), staggered chiral eps, internal-external su(2) merger and Cl(3,0)->Cl(3,1) boost structure.
-Escape conditions (negative claims): Escapes (ii) an admitted custodial c_t = c_s axiom and (iii) an interacting strong-coupling fixed point (the latter argued precluded by asymptotic freedom and priced separately at idx_pos 1119).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The carrier-symmetry enumeration completed EMPTY: no native symmetry forbids the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A decisive negative that COMPLETES the enumeration of framework-native escapes and leaves it empty — only (ii) a new axiom or (iii) new strong UV dynamics remain.
+- Extraction scope (triage compression; may reflect later context): A finite-group/algebraic symmetry enumeration over the three axioms plus the framework's gauge SU(3)xU(1), staggered chiral eps, internal-external su(2) merger and Cl(3,0)->Cl(3,1) boost structure.
+- Extraction escape conditions (negative claims; triage compression): Escapes (ii) an admitted custodial c_t = c_s axiom and (iii) an interacting strong-coupling fixed point (the latter argued precluded by asymptotic freedom and priced separately at idx_pos 1119).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes escape (i) of the quantified obstruction #3123 after the companion #3126 showed a custodial symmetry must come from Quantum/Lattice rather than Record.
 

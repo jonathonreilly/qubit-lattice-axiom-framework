@@ -18,10 +18,6 @@ required before any effective status.
 
 The neutrino spread ~0.05 eV sits ~9 orders below the smallest splitting of any other sector (m_s - m_d ~ 92 MeV, ratio 2e9), so the predictability-sieve window 0.05 eV << |K| << ~92 MeV is vast and any |K| in it assigns neutrino -> C3 (large PMNS) and all heavier sectors -> corner (small CKM, U_e = I), explaining the small-CKM/large-PMNS anti-correlation without fine-tuning.
 
-Original verdict: A constraint + robustness + explanation, NOT a precise |K| prediction; effective status remains unaudited.
-Scope: Uses observed PDG masses as an empirical comparator; the charged corner basis rests on the unaudited Z_3 trichotomy, and why the neutrino is light is a separate question.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The predictability sieve: the neutrino spread sits 9 orders below any other spli
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A constraint + robustness + explanation, NOT a precise |K| prediction; effective status remains unaudited.
+- Extraction scope (triage compression; may reflect later context): Uses observed PDG masses as an empirical comparator; the charged corner basis rests on the unaudited Z_3 trichotomy, and why the neutrino is light is a separate question.
 - Extraction red flags: The explanatory win is robust precisely because the window is 9 orders wide, so it constrains |K| almost not at all; the masses it explains from are themselves the inputs.
 - Supersession (as known at extraction): Consumes FLAVOR_READOUT_CONTEXT_IS_THE_DERIVABLE_DECOHERENCE_POINTER_BASIS_NARROW_THEOREM_NOTE_2026-06-06 (idx 490) and leaves |K| open, which the sibling amplitude note (idx 424) then structures.
 

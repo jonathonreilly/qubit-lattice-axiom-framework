@@ -18,10 +18,6 @@ required before any effective status.
 
 Independent re-derivation of the chirality chain (#3316/#3317/#3320) confirms the algebra — full Cl(3,1) Clifford relations, gamma_5 = i g0g1g2g3 with gamma_5^2 = I, tr gamma_5 = 0, anticommuting with every gamma^mu, and CAR positive energy — but finds three runner-checks overstated, with microcausality, boost covariance and the decoupling only partially supported.
 
-Original verdict: Algebra sound, 'CLOSES' language slightly outruns what the finite-dim runners verify; microcausality and boost covariance close only with the admitted field delivery.
-Scope: Finite-dimensional verification only (PASS=7 FAIL=0, 5 flags); does not alter the chain's verdict beyond scoping and does not touch the firewalled r=1/2.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Independent re-derivation of the chirality chain confirming the algebra while fl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Algebra sound, 'CLOSES' language slightly outruns what the finite-dim runners verify; microcausality and boost covariance close only with the admitted field delivery.
+- Extraction scope (triage compression; may reflect later context): Finite-dimensional verification only (PASS=7 FAIL=0, 5 flags); does not alter the chain's verdict beyond scoping and does not touch the firewalled r=1/2.
 - Extraction red flags: Three PR runner checks overstated; #3317's decoupling rests on a hardcoded premise; #3316's claim that Koide Q=2/3 collapses into Dirac chirality is false since gamma_5 = I_3 x sigma_3 is generation-blind.
 - Supersession (as known at extraction): none recorded
 

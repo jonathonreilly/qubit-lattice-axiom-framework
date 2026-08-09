@@ -18,10 +18,6 @@ required before any effective status.
 
 From four retained inputs (m_3 = 5.058e-2 eV and Delta m^2_31 = 2.539e-3 eV^2 from the atmospheric-scale theorem on the k_A=7, k_B=8 bridge; normal ordering; PMNS unitarity with m_i >= 0) it derives inequality closures on the three observables, headlined by the strict floor Sum m_nu > m_3 = 50.58 meV.
 
-Original verdict: A genuine native-axiom closure in the absolute-mass lane; the DESI 2024 bound < 72 meV survives but a projected CMB-S4 bound < 40 meV would FALSIFY the retained chain, as would confirmed inverted ordering.
-Scope: No observed neutrino mass, splitting or mixing angle is used as a derivation input; Delta m^2_21, m_1, the PMNS angles and Majorana phases all remain open, and these are the sharpest statements the retained chain forces without them.
-Escape conditions (negative claims): The upper-bound theorems (2 and 3) are weaker test points, harder to falsify; the solar-gap point closure remains honestly open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Native absolute-mass closure: bounds derived from four retained inputs; DESI-lev
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A genuine native-axiom closure in the absolute-mass lane; the DESI 2024 bound < 72 meV survives but a projected CMB-S4 bound < 40 meV would FALSIFY the retained chain, as would confirmed inverted ordering.
+- Extraction scope (triage compression; may reflect later context): No observed neutrino mass, splitting or mixing angle is used as a derivation input; Delta m^2_21, m_1, the PMNS angles and Majorana phases all remain open, and these are the sharpest statements the retained chain forces without them.
+- Extraction escape conditions (negative claims; triage compression): The upper-bound theorems (2 and 3) are weaker test points, harder to falsify; the solar-gap point closure remains honestly open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Fills a gap left by an earlier branch by deriving bounds rather than point values; depends on the atmospheric-scale theorem and the adjacent-singlet placement theorem.
 

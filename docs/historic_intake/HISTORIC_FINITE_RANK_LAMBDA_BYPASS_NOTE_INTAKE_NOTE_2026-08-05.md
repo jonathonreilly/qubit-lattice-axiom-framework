@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The finite-rank widening route fixes the support-irrep frame A1(center) + A1(shell) + E + T1, the scalar active-quotient law through Q_eff, the bilinear Route-2 carrier and the scalar source-to-metric reduction, but it still leaves the normalized weight-1 multiplicity freedom L_lambda(D) = (cos lambda D, sin lambda D) because the tensorized Route-2 action is Euclidean and blind to O(1) x O(2) reparameterizations of the bright block.
 
-Original verdict: No finite-rank bypass of lambda exists - the observable surface is orbit-valued, not section-valued, the same failure mode as the phase-lift route.
-Scope: Current atlas widening stack; the source-to-metric theorem is scalar and therefore theta-blind (it sees only Q_eff and the stationary scalar boundary action).
-Escape conditions (negative claims): Fixing lambda would need a new selector primitive absent from the current widening stack, most plausibly a time-sensitive or curvature-local connection choice.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ No finite-rank bypass of lambda: the observable surface is orbit-valued — the 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No finite-rank bypass of lambda exists - the observable surface is orbit-valued, not section-valued, the same failure mode as the phase-lift route.
+- Extraction scope (triage compression; may reflect later context): Current atlas widening stack; the source-to-metric theorem is scalar and therefore theta-blind (it sees only Q_eff and the stationary scalar boundary action).
+- Extraction escape conditions (negative claims; triage compression): Fixing lambda would need a new selector primitive absent from the current widening stack, most plausibly a time-sensitive or curvature-local connection choice.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

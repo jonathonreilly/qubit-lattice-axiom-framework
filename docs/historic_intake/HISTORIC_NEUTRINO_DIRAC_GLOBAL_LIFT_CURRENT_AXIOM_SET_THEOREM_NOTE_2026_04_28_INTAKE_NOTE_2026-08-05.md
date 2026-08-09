@@ -18,10 +18,6 @@ required before any effective status.
 
 On A_min (Cl(3), Z^3, finite local Grassmann/staggered-Dirac partition, g_bare = 1 with the plaquette/u_0 surface and minimal APBC hierarchy) plus the no-fitted-parameter posture, the framework's neutrino sector is globally DIRAC: the unique anomaly-fixed same-chirality Majorana operator nu_R^T C P_R nu_R has zero expectation and zero coefficient on every admissible extension, the Majorana phases alpha_21 and alpha_31 are vacuous, and neutrino mass closure reduces to the Dirac Yukawa Y_nu.
 
-Original verdict: Consolidates Cycles 2, 6 and 7 into one publication-surface statement and RETIRES alpha_21, alpha_31 from the open input ledger as vacuous on the retained surface.
-Scope: 'Current axiom set' means A_min plus the stated posture; future axiom-side primitives would be a separate theorem on a different scope and could in principle re-open Majorana mass. No runner is authored — the proof is structural case analysis.
-Escape conditions (negative claims): Operational falsifier: any positive 0nu-beta-beta signal at any experimental precision falsifies the theorem (via Schechter-Valle: positive rate implies Majorana mass).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The Dirac global lift consolidation retiring three alphas — with the operation
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Consolidates Cycles 2, 6 and 7 into one publication-surface statement and RETIRES alpha_21, alpha_31 from the open input ledger as vacuous on the retained surface.
+- Extraction scope (triage compression; may reflect later context): 'Current axiom set' means A_min plus the stated posture; future axiom-side primitives would be a separate theorem on a different scope and could in principle re-open Majorana mass. No runner is authored — the proof is structural case analysis.
+- Extraction escape conditions (negative claims; triage compression): Operational falsifier: any positive 0nu-beta-beta signal at any experimental precision falsifies the theorem (via Schechter-Valle: positive rate implies Majorana mass).
 - Extraction red flags: No runner authored, so the claim rests entirely on structural case analysis plus a framework posture (no fitted parameters) rather than executable verification.
 - Supersession (as known at extraction): Upgrades the Cycle-2 CONDITIONAL Dirac global lift to on-current-axiom-set UNCONDITIONAL via the case-A/B/C closures of Cycles 6 and 7; intended for the post-loop integration pipeline.
 

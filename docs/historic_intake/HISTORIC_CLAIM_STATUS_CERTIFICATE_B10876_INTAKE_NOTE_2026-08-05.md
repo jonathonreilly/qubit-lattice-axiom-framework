@@ -18,10 +18,6 @@ required before any effective status.
 
 For three explicit refinements (A edge-midpoints, B triangle-barycenters, C combined) the refinement preserves cycle 13's cocycle structure on all NEW edges and triangles AND preserves cycle 14's global stationary section (the refined atlas's chart-c solution equals the source-paired transport of the chart-0 solution on every new chart). Together with cycles 13 and 14 this closes ALL THREE named obstructions of cycle 10 for universal_gr_lorentzian_global_atlas_closure_note (audited_conditional, td=42).
 
-Original verdict: TERMINAL for the cycle-10 obstruction inventory; refinement compatibility holds BY CONSTRUCTION under the spoke-from-zero scheme, so the value is systematic verification across three schemes plus refinement-invariance of the global section, not the discovery that algebra works.
-Scope: 'Continuum limit' is interpreted as PL REFINEMENT (subdivision), not a smooth-manifold limit; a genuine continuum limit would need a sequence of refinements plus a convergence theorem, documented as a residual stretch target rather than a new obstruction.
-Escape conditions (negative claims): The genuine smooth-continuum limit is the named residual stretch target.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ TERMINAL of the cycle-10 GR-atlas obstruction inventory: three explicit refineme
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): TERMINAL for the cycle-10 obstruction inventory; refinement compatibility holds BY CONSTRUCTION under the spoke-from-zero scheme, so the value is systematic verification across three schemes plus refinement-invariance of the global section, not the discovery that algebra works.
+- Extraction scope (triage compression; may reflect later context): 'Continuum limit' is interpreted as PL REFINEMENT (subdivision), not a smooth-manifold limit; a genuine continuum limit would need a sequence of refinements plus a convergence theorem, documented as a residual stretch target rather than a new obstruction.
+- Extraction escape conditions (negative claims; triage compression): The genuine smooth-continuum limit is the named residual stretch target.
 - Extraction red flags: the parent obstruction asked for a CONTINUUM LIMIT and the closure reinterprets it as PL refinement — the reinterpretation is disclosed but it is a weakening of the original ask
 - Supersession (as known at extraction): Names docs/PL_S3_ATLAS_REFINEMENT_COMPATIBILITY_THEOREM_NOTE_2026-05-03.md; TERMINAL of the cycle-13/14/19 chain closing cycle 10's Obstructions 1/2/3.
 

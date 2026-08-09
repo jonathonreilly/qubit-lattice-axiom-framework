@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply R_LEP_THRESHOLDS_RETAINED, the charged-lepton input of the Lane 2 alpha0 transport package.
 
-Original verdict: Support-only non-supply boundary.
-Scope: The charged-lepton threshold input of alpha0 transport.
-Escape conditions (negative claims): Supply the charged-lepton mass spectrum (itself blocked at 2512/2694) and the threshold-moment map, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ R-lep thresholds terminal: circular on Lane 6 (needs the charged-lepton spectrum
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary.
+- Extraction scope (triage compression; may reflect later context): The charged-lepton threshold input of alpha0 transport.
+- Extraction escape conditions (negative claims; triage compression): Supply the charged-lepton mass spectrum (itself blocked at 2512/2694) and the threshold-moment map, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for R-Lep thresholds; packets 2700/2701 feed it; consumed by the Lane 2 terminal 2509. Circularly dependent on Lane 6, since the thresholds need m_e, m_mu, m_tau.
 

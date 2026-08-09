@@ -18,10 +18,6 @@ required before any effective status.
 
 The cubic Z^3 lattice breaks SO(3,1) to O_h with leading correction delta(E^2) = -(a^2/12) sum p_i^4; at a = l_Planck this is a^2/12 = 5.60e-40 GeV^-2, generating only dimension-6 CPT-even SME coefficients c^(6)_(I)00 ~ 3.4e-40 and c^(6)_(I)40, c^(6)_(I)44 ~ 4.5e-40 GeV^-2, with all j=1,2,3 components and all CPT-odd coefficients (a_mu, b_mu, e_mu, f_mu, g_lmn) identically zero. Direction dependence gives a factor-of-3 anisotropy between [100] (f_4 = 1.000) and [111] (f_4 = 0.333).
 
-Original verdict: Lorentz violation YES (dim-6, a^2 p^4), CPT violation NO — all CPT-odd SME coefficients identically zero, which is the strong falsifiable prediction: any detection of CPT-odd Lorentz violation would falsify the cubic lattice framework.
-Scope: Predictions at Planck lattice spacing; suppression (E/E_Pl)^2 ~ 1e-38 at 1 GeV, below all current bounds by at least 6 orders, closest approach ~2 orders in photon birefringence at TeV.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean classification: dim-6 Lorentz violation YES, CPT violation NO (all SME-odd
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Lorentz violation YES (dim-6, a^2 p^4), CPT violation NO — all CPT-odd SME coefficients identically zero, which is the strong falsifiable prediction: any detection of CPT-odd Lorentz violation would falsify the cubic lattice framework.
+- Extraction scope (triage compression; may reflect later context): Predictions at Planck lattice spacing; suppression (E/E_Pl)^2 ~ 1e-38 at 1 GeV, below all current bounds by at least 6 orders, closest approach ~2 orders in photon birefringence at TeV.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Argues the Greenberg (2002) theorem's converse fails here because the framework is not a continuum local QFT, so LV without CPT violation is consistent.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 By exact contraposition: the pure-retained microscopic lane stays charge-zero and scalar on nu_R, the missing object if Majorana reopens is exactly mu J2, retained observable and Z_3 closures do not activate that slot, and the retained toolkit contains no already-realized charge-2 primitive on the doubled nu_R line — so mu > 0 leaves the pure-retained lane and mu = 0 on the pure-retained sole-axiom bank.
 
-Original verdict: The capstone negative closeout for the retained Majorana lane.
-Scope: The pure-retained sole-axiom Majorana lane.
-Escape conditions (negative claims): Any positive Majorana reopening requires either a genuinely new charge-2 primitive or a genuinely new source law activating the canonical J2 slot — either way beyond pure retention.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ The Majorana capstone negative: the pure-retained lane stays charge-zero — mu 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The capstone negative closeout for the retained Majorana lane.
+- Extraction scope (triage compression; may reflect later context): The pure-retained sole-axiom Majorana lane.
+- Extraction escape conditions (negative claims; triage compression): Any positive Majorana reopening requires either a genuinely new charge-2 primitive or a genuinely new source law activating the canonical J2 slot — either way beyond pure retention.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal negative note of the retained Majorana chain (1194, 1196, 1198, 1200 feed it); the positive reopening lives at idx_pos 1195.
 

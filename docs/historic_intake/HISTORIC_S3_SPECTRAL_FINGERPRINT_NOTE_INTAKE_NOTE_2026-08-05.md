@@ -18,10 +18,6 @@ required before any effective status.
 
 The periodic cubic lattice spectrum matches T^3, not S^3: T^3 wins the ratio RMSE at every size L = 4..20 (S^3 RMSE 0.561 to 0.762), zero out of 12 degeneracy levels match S^3 across L = 8..30, and the spectrum converges to continuum T^3 as O(1/L^2) (max relative error 3.7e-3 at L=30).
 
-Original verdict: The lattice spectrum confirms T^3 as it must; this is orthogonal to the S^3 axiom-chain derivation and neither confirms nor refutes it.
-Scope: Graph Laplacian on periodic cubic lattices L = 4..30 and open-BC balls; exact analytic eigenvalue formula used for the degeneracy test.
-Escape conditions (negative claims): The negative is scoped to periodic/open cubic lattices; testing S^3 spectrally would require directly discretizing S^3 (icosahedral or hypercube-based), named as a separate project.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The lattice-spectrum fact: periodic cubic spectrum matches T^3 not S^3 at every 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The lattice spectrum confirms T^3 as it must; this is orthogonal to the S^3 axiom-chain derivation and neither confirms nor refutes it.
+- Extraction scope (triage compression; may reflect later context): Graph Laplacian on periodic cubic lattices L = 4..30 and open-BC balls; exact analytic eigenvalue formula used for the degeneracy test.
+- Extraction escape conditions (negative claims; triage compression): The negative is scoped to periodic/open cubic lattices; testing S^3 spectrally would require directly discretizing S^3 (icosahedral or hypercube-based), named as a separate project.
 - Extraction red flags: Status line reads 'ALL TESTS PASS' for a test whose finding is that the lattice does not match S^3; the reconciliation is that the lattice test was never a test of the claim.
 - Supersession (as known at extraction): Constrains what the lattice numerics in the S3 family can support; consistent with the V4 concerns in idx 1856.
 

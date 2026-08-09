@@ -18,10 +18,6 @@ required before any effective status.
 
 Because the B+L-violating electroweak operators are taste operators acting as I_gen x O_EW on the three-generation quark space, the electroweak channel is exactly generation-blind, so the remaining weak-flavor object in baryogenesis is exactly the promoted Jarlskog invariant J — not an arbitrary CP-source tensor or new flavor structure.
 
-Original verdict: Flavor factorization eta = J * K_NP is established exactly; only the nonperturbative functional remains.
-Scope: Exact on the current retained taste surface plus the promoted three-generation CKM package.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact flavor factorization eta = J * K_NP: the electroweak channel is generation
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Flavor factorization eta = J * K_NP is established exactly; only the nonperturbative functional remains.
+- Extraction scope (triage compression; may reflect later context): Exact on the current retained taste surface plus the promoted three-generation CKM package.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

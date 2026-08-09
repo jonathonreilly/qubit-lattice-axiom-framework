@@ -20,10 +20,6 @@ required before any effective status.
 
 Given the framework premise that reality is the record stack with additive non-negative readout I, the I-grading is intrinsic (computed from records alone, no Hamiltonian), strictly monotone along the durable containment poset with codim-1 level sets, reconstruction-invariant (every pre-record H underlying the same stack gives the same axis), and the spatial Z^3 within a constant-I slice is reversible under x_i -> -x_i, so the unique emergent time AXIS is the I-gradient, forced unconditionally; only the orientation (one bit, the past hypothesis) remains residual.
 
-Original verdict: The axis is unconditionally forced by the record ontology; effective status remains unaudited.
-Scope: The time axis given a non-empty record stack; the empty-stack case is 'no reality' and outside scope, and orientation is explicitly excluded.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The record axis unconditionally forced by the record ontology — TERMINAL and c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The axis is unconditionally forced by the record ontology; effective status remains unaudited.
+- Extraction scope (triage compression; may reflect later context): The time axis given a non-empty record stack; the empty-stack case is 'no reality' and outside scope, and orientation is explicitly excluded.
 - Extraction red flags: Retracts/corrects two prior session notes by declaring their H=0 and energy-eigenstate witnesses a 'realist slip'; the correction rests on the meta register-not-read principle rather than a runner-checked derivation, and the note itself is unaudited.
 - Supersession (as known at extraction): TERMINAL and corrective: explicitly supersedes a companion no-go's conclusion that 'R1 is not unconditionally forcible' and upgrades a companion reduction from 'generically forced' to 'unconditionally forced' for the axis; leaves POST_RECORD_ARROW_ORIENTATION_FIREWALL (retained_no_go) standing for the sign.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Assembles a six-link chain energy -> records -> slow time -> universal fall across PRs #5061-#5081 and states that only two named premises separate it from a theorem chain: P-QD-BRIDGE (local activity is record-formation opportunity) and P-DEPOSITION-SPARSE (the realized formation rule deposits records sparsely, with wake dwell scaling measured at alpha ~ 0.6-1.1).
 
-Original verdict: The chain stands closed up to the two named premises, with the realized rule's deposition rate the sharpest named open computation.
-Scope: Meta synthesis; nothing landed or promoted, independent audit of every cited note required.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The gravity-chain season terminal: six-link chain closed up to TWO named premise
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The chain stands closed up to the two named premises, with the realized rule's deposition rate the sharpest named open computation.
+- Extraction scope (triage compression; may reflect later context): Meta synthesis; nothing landed or promoted, independent audit of every cited note required.
 - Extraction red flags: Lists its own falsifiers, including audit failure of the June conformal-class inputs on which link 6 depends.
 - Supersession (as known at extraction): Terminal season synthesis over six one-day campaigns (#5061-#5081); names four follow-up campaigns including deriving P-QD-BRIDGE and the June conformal-class input audits.
 

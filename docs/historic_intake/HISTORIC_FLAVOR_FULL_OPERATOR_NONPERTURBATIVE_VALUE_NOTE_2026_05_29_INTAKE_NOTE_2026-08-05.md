@@ -18,10 +18,6 @@ required before any effective status.
 
 Two unexamined assumptions are corrected: the operator/equivariance wall is about eigenvectors while Q depends only on eigenvalues (so the wall is orthogonal to the value), and every prior lens worked on the ISOLATED 3-dim generation space; the full free+Wilson operator gives corner mass m + 2r*hw depending only on Hamming weight, so the three generations are degenerate at Q = 1/3 - a definite prediction, not a flat direction.
 
-Original verdict: The flavor derivation is not exhausted and the value is not a flat direction - it is a nonperturbative output of the parameter-free g_bare = 1 theory, in the same status as deriving hadron masses from QCD.
-Scope: Perturbative/symmetric level of the full operator; at BZ corners sin(k) = 0 so the Cl(3) hopping contributes nothing and no native isotropic term splits same-weight corners.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Corrects the flat-direction framing and names the ISOLATION error running throug
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The flavor derivation is not exhausted and the value is not a flat direction - it is a nonperturbative output of the parameter-free g_bare = 1 theory, in the same status as deriving hadron masses from QCD.
+- Extraction scope (triage compression; may reflect later context): Perturbative/symmetric level of the full operator; at BZ corners sin(k) = 0 so the Cl(3) hopping contributes nothing and no native isotropic term splits same-weight corners.
 - Extraction red flags: Names an ISOLATION error running through the whole prior campaign (treating an isolated-sector flat direction as framework indeterminacy).
 - Supersession (as known at extraction): Explicitly corrects the over-scoped 'flat direction / exhausted' framing of FLAVOR_ORDER_PARAMETER_FLAT_DIRECTION_CAPSTONE_NOTE_2026-05-29 (idx 487).
 

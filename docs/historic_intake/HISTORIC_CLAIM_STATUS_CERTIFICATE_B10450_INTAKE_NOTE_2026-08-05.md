@@ -18,10 +18,6 @@ required before any effective status.
 
 Narrows an unsupported holomorphic-carrier exclusion. Supported: the tested finite structures do not make det_C/equal-block counting automatic, and the checked real (Z_2)^3 characters do not supply a native complex-line carrier. UNSUPPORTED here: the CPT corner-reflection sign as a theorem-grade holomorphic-carrier exclusion.
 
-Original verdict: Durable negative science kept, one over-reaching exclusion withdrawn.
-Scope: Bounded finite-algebra locator; physical generation reference-state selection is outside the row.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Retraction narrowing an over-reaching exclusion: theorem-grade status is WITHDRA
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Durable negative science kept, one over-reaching exclusion withdrawn.
+- Extraction scope (triage compression; may reflect later context): Bounded finite-algebra locator; physical generation reference-state selection is outside the row.
 - Extraction red flags: An exclusion previously carried at theorem grade (CPT corner-reflection sign) is demoted to unsupported.
 - Supersession (as known at extraction): Withdraws theorem-grade status from the CPT corner-reflection sign exclusion.
 

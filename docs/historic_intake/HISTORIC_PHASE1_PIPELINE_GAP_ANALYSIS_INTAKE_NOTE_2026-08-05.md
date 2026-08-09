@@ -18,10 +18,6 @@ required before any effective status.
 
 audit_lint​.py on origin/main reports 0 errors, 23 warnings, 441 notices — every defect the campaign was opened over passes clean. Seven defect classes, 7 of 7 NOT CAUGHT: runner-bearing note with no claim_id/row (350 graph nodes; 401 in review_feedback/ alone); runner referenced by no claim-bearing note (1569, of which 1161 have no graph node at all); prose status contradicting the live ledger (199 lines / 90 rows / 110 targets, not-caught BY DESIGN); mutual retained-assertion between unaudited notes; obligation registry omitting a binding conjunct (1 of 3); named gate with no node/row/criterion (8 memo bullets vs 7 registry nodes, :170 unregistered); note-linked runner with missing cache (16 primary + 80 helper, 56 `ready` rows affected). Ledger universe: 3872 rows, 4506 graph nodes, 5243 scripts, 3740 cache files.
 
-Original verdict: VERDICT (c) PIPELINE GAPS is the root cause, (a) MISSING REGISTRATION is the dominant symptom at ~62% of affected surfaces, (b) is ~16% by volume and ZERO verdicts at risk, (d) is ~2% by volume but 3 verdicts at risk — matching the supervisor's pre-recorded prediction. Three independently sufficient structural facts: check_staged_claim_typing​.py:51-54 makes 'no ledger row' the PASSING condition; docs/work_history/** is line 19 of the exclusion file and should_gate_node runs before claim-typing so 401 of 450 review_feedback/ notes reference an existing runner and 0 have a row; and CI never runs on a PR or push (audit.yml:22-25) — the whole pipeline is a nightly cron.
-Scope: origin/main at f865c14cd4, measured in a detached read-only worktree; nothing committed or edited.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ SYSTEMIC INTEGRITY MEASUREMENT (repo-state-scrub): audit_lint​.py on origin/ma
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): VERDICT (c) PIPELINE GAPS is the root cause, (a) MISSING REGISTRATION is the dominant symptom at ~62% of affected surfaces, (b) is ~16% by volume and ZERO verdicts at risk, (d) is ~2% by volume but 3 verdicts at risk — matching the supervisor's pre-recorded prediction. Three independently sufficient structural facts: check_staged_claim_typing​.py:51-54 makes 'no ledger row' the PASSING condition; docs/work_history/** is line 19 of the exclusion file and should_gate_node runs before claim-typing so 401 of 450 review_feedback/ notes reference an existing runner and 0 have a row; and CI never runs on a PR or push (audit.yml:22-25) — the whole pipeline is a nightly cron.
+- Extraction scope (triage compression; may reflect later context): origin/main at f865c14cd4, measured in a detached read-only worktree; nothing committed or edited.
 - Extraction red flags: MAJOR: 401 of 450 review_feedback/ notes are runner-gated science with zero ledger rows; 1569 orphan runners; the only per-change ratchet treats 'no ledger row' as passing; CI is nightly cron only
 - Supersession (as known at extraction): Designs seven lint rules L1-L7 and a seven-batch prioritized repair plan with an explicit 'Explicitly NOT recommended' section.
 

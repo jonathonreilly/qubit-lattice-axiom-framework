@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 An explicit monitored-coupling family H_int(r_int) = I + sqrt(r_int)(C + C^2) einselects a record whose dial value equals r_int exactly and sweeps all of (0,1) monotonically, so the einselectable set is an interval not three points; r=1/2 is spectrally generic with no density excess, the 2-block pointer map is a literal no-op (max||P_0 H P_1|| ~ 1e-16), and the records-flow 'coincidence' is the same 2-sector simplex computed twice. SCORECARD 23/23.
 
-Original verdict: Both key findings go against the claim - DISCRETE-or-CONTINUUM resolves to CONTINUUM and NEW-MECHANISM-or-RELABELING to RELABELING - removing einselection pointer-basis stability from the ledger of candidate mechanisms for the value r = 1/2.
-Scope: Hostile skeptic-frame adjudication of the einselection pointer-basis-stability claim only; adds no derivation.
-Escape conditions (negative claims): A C_3-invariant gauge-respecting environment does genuinely discretize the PARTITION (3-mode vs 2-sector, modulo K-reality); what it cannot discretize is the VALUE r. Escaping requires a separate principle privileging the equal-power/block-counting measure over the Born/dimension measure (which gives r=1), plus a real T-odd structure selecting delta = 0.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Hostile-continuum no-go: an explicit monitored family einselects EVERY r in (0,1
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Both key findings go against the claim - DISCRETE-or-CONTINUUM resolves to CONTINUUM and NEW-MECHANISM-or-RELABELING to RELABELING - removing einselection pointer-basis stability from the ledger of candidate mechanisms for the value r = 1/2.
+- Extraction scope (triage compression; may reflect later context): Hostile skeptic-frame adjudication of the einselection pointer-basis-stability claim only; adds no derivation.
+- Extraction escape conditions (negative claims; triage compression): A C_3-invariant gauge-respecting environment does genuinely discretize the PARTITION (3-mode vs 2-sector, modulo K-reality); what it cannot discretize is the VALUE r. Escaping requires a separate principle privileging the equal-power/block-counting measure over the Born/dimension measure (which gives r=1), plus a real T-odd structure selecting delta = 0.
 - Extraction red flags: Explicitly labels a same-day sibling claim vacuous/tautological; also flags that two cited r=1/2 measure notes are unaudited on origin/main.
 - Supersession (as known at extraction): Corrects an over-reading of EINSELECTION_R_HALF_STABLE_SETTING_NOTE_2026-06-04 (idx 420) and relocates the discreteness of {0,1/2,1} from the pointer basis to the measure axis.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 On the retained graph-first selected-axis cube surface, with tau the residual swap of the two complementary axes and Y0 = P_+ - 3P_- (rank(P_+) = 6), the cubic trace Tr[(lambda Y0)^3] != 0 for every lambda != 0 and every selected axis — a scale-free chiral U(1) trace fact.
 
-Original verdict: Replaces the bounded normalization/readout dependency in the 3+1 anomaly route with a retained-surface algebraic trace fact, so the physical hypercharge chain is no longer load-bearing there.
-Scope: Closes only the scale-free cubic trace needed by ABJ; explicitly not physical hypercharge identification, the alpha=1/3 normalization bridge, charge quantization, or quark/lepton naming.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Retained-surface algebraic replacement removing the 3+1 anomaly route's normaliz
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Replaces the bounded normalization/readout dependency in the 3+1 anomaly route with a retained-surface algebraic trace fact, so the physical hypercharge chain is no longer load-bearing there.
+- Extraction scope (triage compression; may reflect later context): Closes only the scale-free cubic trace needed by ABJ; explicitly not physical hypercharge identification, the alpha=1/3 normalization bridge, charge quantization, or quark/lepton naming.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sibling of the action-surface ABJ theorem; removes that theorem's dependence on SM hypercharge normalization.
 

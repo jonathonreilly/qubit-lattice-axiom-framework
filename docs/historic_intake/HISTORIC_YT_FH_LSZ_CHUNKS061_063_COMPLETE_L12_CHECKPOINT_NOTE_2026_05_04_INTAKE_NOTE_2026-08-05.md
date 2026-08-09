@@ -18,10 +18,6 @@ required before any effective status.
 
 The final three chunks bring the combiner to 63/63 ready L12 chunks and 1008/1000 saved configurations, so the combined L12 support summary is written; target-observable ESS passes at 895.23, the fixed common-window central slope is 1.42541 with relative stdev 0.00562, and the closing chunk slopes are 1.2450 +/- 0.099, 1.4347 and 1.4410 with proxy m_t 3.9104-4.1282 GeV.
 
-Original verdict: Even the complete L12 set is bounded production support: fitted response stability, response-window acceptance, FV/IR control and canonical-Higgs normalization all remain unpassed.
-Scope: Complete L12 volume only; L16/L24 scaling untouched, scalar rows selected-mass-only at m_bare = 0.75.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -96,6 +92,8 @@ The L12 production terminal: 63/63 chunks, 1008 configs — and even the complet
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Even the complete L12 set is bounded production support: fitted response stability, response-window acceptance, FV/IR control and canonical-Higgs normalization all remain unpassed.
+- Extraction scope (triage compression; may reflect later context): Complete L12 volume only; L16/L24 scaling untouched, scalar rows selected-mass-only at m_bare = 0.75.
 - Extraction red flags: The campaign's largest production effort (63 chunks, 1008 configurations) ends with every load-bearing gate still open and the harness proxy y_t ~ 0.0225 rather than ~0.92.
 - Supersession (as known at extraction): TERMINAL of the L12 FH/LSZ chunk sweep (idx 2192-2220): completes the 63-chunk plan set at idx 2202 and still fails the physics gates, which is the sweep's whole outcome.
 

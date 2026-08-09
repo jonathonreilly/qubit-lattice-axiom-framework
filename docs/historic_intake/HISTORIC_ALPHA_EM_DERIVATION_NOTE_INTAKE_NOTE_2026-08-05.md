@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes the earlier 27% gap in g_1(v) by adding the taste threshold staircase and the color projection: g_1(v) = 0.46438 vs 0.46400 (+0.08%), g_2(v) = 0.64803 vs 0.64630 (+0.27%), sin^2 theta_W(M_Z) = 0.23064 vs 0.23122 (-0.25%), 1/alpha_EM(M_Z) = 127.682 vs 127.951 (-0.21%), claimed with zero SM imports.
 
-Original verdict: DERIVED at 0.21% accuracy; unblocks the alpha_EM half of the hydrogen/helium blocker while the electron mass stays open.
-Scope: Claims derivation from Cl(3)/Z^3 axioms with zero SM imports; the 0.21% residual is attributed to 2-loop systematics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The era's alpha_EM/electroweak closure claim at 0.21% (g_1, g_2, sin^2 theta_W) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): DERIVED at 0.21% accuracy; unblocks the alpha_EM half of the hydrogen/helium blocker while the electron mass stays open.
+- Extraction scope (triage compression; may reflect later context): Claims derivation from Cl(3)/Z^3 axioms with zero SM imports; the 0.21% residual is attributed to 2-loop systematics.
 - Extraction red flags: Audited the next day (ALPHA_EM_AUDIT_NOTE) which downgrades three of its steps to vulnerable and flags a circularity risk.
 - Supersession (as known at extraction): Explicitly supersedes EW_COUPLING_DERIVATION_NOTE.md (2026-04-14, marked SUPERSEDED), whose perturbative 1-loop treatment gave the +27% gap.
 

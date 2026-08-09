@@ -18,10 +18,6 @@ required before any effective status.
 
 Three bounded clock-side interface models over the conditional Cycle-342 Record chain: a five-work-bit reversible matcher in which phase-free equality is explicitly FALSIFIED as a matcher (the Cycle-342 key repeats after two steps while the complete Record and finite future signature stay distinct inside the full period-six recurrence); one L=6 two-page history carrying twelve distinct Record identities giving exact refinement ratios 2 and 3 and composed ratio 3/2; and an 82-bit control-word equality/coincidence model joining a clock endpoint to a Cycle-313 response event.
 
-Original verdict: Derives none of the Record identities, coincidence certificates, clock membership tags or occurrence predicate — a route-specific falsified matcher, not a time no-go; the strict time floor does not move.
-Scope: Conditional matcher/refinement/calibration interface model; supplied n=1 convention rescales the retained Cycle-313 response family and transfers to held n=2 and L=6 after each fixture's handshake.
-Escape conditions (negative claims): The falsified phase-free matcher is route-specific and explicitly NOT a time no-go; a separately encoded unique provenance field would be needed and this route does not supply it.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Synthesis terminal of the clock-matcher trio (Cycles 344/345/346): three bounded
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Derives none of the Record identities, coincidence certificates, clock membership tags or occurrence predicate — a route-specific falsified matcher, not a time no-go; the strict time floor does not move.
+- Extraction scope (triage compression; may reflect later context): Conditional matcher/refinement/calibration interface model; supplied n=1 convention rescales the retained Cycle-313 response family and transfers to held n=2 and L=6 after each fixture's handshake.
+- Extraction escape conditions (negative claims; triage compression): The falsified phase-free matcher is route-specific and explicitly NOT a time no-go; a separately encoded unique provenance field would be needed and this route does not supply it.
 - Extraction red flags: The calibration route's response key is copied from the clock cylinder by the host and only checked for equality, so it does not establish independent physical event provenance — the note says so itself.
 - Supersession (as known at extraction): Synthesis terminal for the Cycle 344/345/346 route trio; ten-entry wall-pair table records Record/id, Record/tag, Record/local, Record/cal, Record/metric, id/tag, id/local, id/cal, id/metric all non-derivable in both directions.
 

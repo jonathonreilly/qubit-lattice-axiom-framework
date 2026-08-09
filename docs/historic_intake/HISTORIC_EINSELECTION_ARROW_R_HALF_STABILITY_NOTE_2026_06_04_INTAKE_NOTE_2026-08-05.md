@@ -18,10 +18,6 @@ required before any effective status.
 
 sharpen(r) = 2r^2 and therm(r) = sqrt(r/2) are exact inverse branches (multiplier product 2 x 1/2 = 1), so r = 1/2 is a repeller under the literal 'records can't unform' purity-up arrow and an attractor under the entropy-up thermalizing arrow; the literal Zurek dephasing map is a no-op on the already block-diagonal circulant, and the Born/second-law equilibrium weights blocks by dimension giving r = 1, not 1/2. On the full doublet space the records-flow Hessian at r=1/2 is rank-1 with spectrum {-3/4, 0, 0}, a symmetric saddle. SCORECARD 27/27.
 
-Original verdict: SEPARATRIX-SADDLE-ONLY - r = 1/2 is the distinguished symmetric setting and a true attractor of the thermalizing arrow, but only an unstable separatrix / symmetric saddle under the literal record-formation arrow.
-Scope: A bounded map/dynamics theorem on the C_3-generation dial r = |b|^2/a^2; independent audit lane owns effective status.
-Escape conditions (negative claims): Upgrading r=1/2 from saddle to attractor requires a framework-native reason that charged-lepton coarse-graining is the equilibration (entropy-up) arrow on the 2-sector partition rather than the sharpening arrow, or a stabilizer pinning the 2-sector block-counting record basis as the physical coarse-graining.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Exact separatrix result: sharpen/therm are inverse branches so r=1/2 is repeller
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): SEPARATRIX-SADDLE-ONLY - r = 1/2 is the distinguished symmetric setting and a true attractor of the thermalizing arrow, but only an unstable separatrix / symmetric saddle under the literal record-formation arrow.
+- Extraction scope (triage compression; may reflect later context): A bounded map/dynamics theorem on the C_3-generation dial r = |b|^2/a^2; independent audit lane owns effective status.
+- Extraction escape conditions (negative claims; triage compression): Upgrading r=1/2 from saddle to attractor requires a framework-native reason that charged-lepton coarse-graining is the equilibration (entropy-up) arrow on the 2-sector partition rather than the sharpening arrow, or a stabilizer pinning the 2-sector block-counting record basis as the physical coarse-graining.
 - Extraction red flags: Notes that no single 1-D arrow makes {0, 1/2, 1} simultaneously stable, and that the knife-edge separatrix matches the ~1e-5 Koide precision - i.e. the physical value sits on an unstable point.
 - Supersession (as known at extraction): Adjudicates between two conflicting origin/main notes (FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX and FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW), showing the contradiction is an arrow choice not an algebraic error.
 

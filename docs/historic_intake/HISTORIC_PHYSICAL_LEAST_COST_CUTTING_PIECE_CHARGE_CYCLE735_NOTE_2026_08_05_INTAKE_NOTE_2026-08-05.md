@@ -18,10 +18,6 @@ required before any effective status.
 
 The region switches of the cell's 15800 least-cost cuttings are NOT independent: free-switch (cube) behaviour occurs 276 times covering 480 cuttings but only ever at dimension 0, 1 or 2, and the obstruction is exhibited — of 273936 co-offered switch pairs, 54912 share a piece. In their place every floor cutting carries a two-sided charge realized as a GF(2) weight on the 192 pieces in play: the 120 region demands have rank 86, are consistent, and adding the demand that six-piece moves keep the charge raises the rank to 87 and cuts the labels to a single partition of sizes 7704 and 8096. All 46128 smallest moves reverse the charge, none of the 31968 six-piece moves does (and reversal at six pieces is provably impossible over GF(2)), while seven- and eight-piece moves are mixed (26880 of 60096 and 28608 of 151704).
 
-Original verdict: The switches cannot be thrown independently, and what the population carries in place of independence is a two-sided piece-borne charge that the smallest move always reverses and the next smallest always keeps.
-Scope: Scoped to the single cell of one lattice step and one tick with this adjacency cost and least volume; the group sizes, the dimension-two ceiling, and the two sides 7704/8096 are properties of this population of 15800 cuttings; time enters only as the fourth column and no result depends on an arrow.
-Escape conditions (negative claims): Nothing identifies the charge with a physical quantity and nothing says it is conserved by any process; what a charge of this kind would mean for a lattice of many cells is not measured and not claimed. The charge depends on the demand that it be a sum over pieces — dropping that leaves 2^157 labellings. The pool of 192 pieces, the 120 regions and their 5 families are measured by search, not derived from symmetry.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The switches are NOT independent; a two-valued charge with dimension-bounded fre
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The switches cannot be thrown independently, and what the population carries in place of independence is a two-sided piece-borne charge that the smallest move always reverses and the next smallest always keeps.
+- Extraction scope (triage compression; may reflect later context): Scoped to the single cell of one lattice step and one tick with this adjacency cost and least volume; the group sizes, the dimension-two ceiling, and the two sides 7704/8096 are properties of this population of 15800 cuttings; time enters only as the fourth column and no result depends on an arrow.
+- Extraction escape conditions (negative claims; triage compression): Nothing identifies the charge with a physical quantity and nothing says it is conserved by any process; what a charge of this kind would mean for a lattice of many cells is not measured and not claimed. The charge depends on the demand that it be a sum over pieces — dropping that leaves 2^157 labellings. The pool of 192 pieces, the 120 regions and their 5 families are measured by search, not derived from symmetry.
 - Extraction red flags: Self-flagged: two headline statements (that the charge reverses under all 46128 smallest moves and splits all 120 regions) are checks that the linear solve realized what was demanded, not discoveries — the note explicitly relocates the content elsewhere.
 - Supersession (as known at extraction): Answers the question left open by Cycle 734 (whether the per-region switches are independent) — they are not.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Chentsov is a DECISIVE NEGATIVE with the reason: both horns are realized by exactly Markov-invariant positive-definite metrics (r=1 at B=0, the Fisher/Shahshahani cone metric; r=1/2 at B=-A/6), so the strongest invariance hypothesis in classical information geometry leaves precisely r free and nothing else. A framing correction (gates F1-F6): diag(3,6,6) and diag(1,1,1) are the SAME quadratic form in two Fourier-dual bases exchanged by the DFT with r=1 self-dual, so the counting bit is really 'why should the two isotypic components of the realized spectrum carry equal norm' (d^2/s^2=1 gives Q=2/3; per-real-dimension equipartition gives 2 and Q=1).
 
-Original verdict: Nothing in the report solves the wall: two entries are negatives, one is a negative pointing at the wrong horn, one is unproven, and only the Markov-trace/Bratteli direction on the Admissibility tower is a live construction.
-Scope: Broad math sweep, 26 exact sympy gates in scratch; nothing proposed for landing.
-Escape conditions (negative claims): Ranked live handle: Markov trace / Bratteli Perron-Frobenius on the Admissibility tower - the only non-foreclosed direction with a forcing theorem of the right shape (relative block normalization, not a metric), decisive in all three outcomes including falsifying the binary framing.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Chentsov decisive negative: both horns are realized by exactly Markov-invariant 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Nothing in the report solves the wall: two entries are negatives, one is a negative pointing at the wrong horn, one is unproven, and only the Markov-trace/Bratteli direction on the Admissibility tower is a live construction.
+- Extraction scope (triage compression; may reflect later context): Broad math sweep, 26 exact sympy gates in scratch; nothing proposed for landing.
+- Extraction escape conditions (negative claims; triage compression): Ranked live handle: Markov trace / Bratteli Perron-Frobenius on the Admissibility tower - the only non-foreclosed direction with a forcing theorem of the right shape (relative block normalization, not a metric), decisive in all three outcomes including falsifying the binary framing.
 - Extraction red flags: Directly disputes a landed bounded_theorem/audited_clean node's framing; also notes twisted equivariant K-theory is already foreclosed (H^2(C_3,U(1))=0) so re-proposing it would be a re-walk.
 - Supersession (as known at extraction): CHALLENGES A LANDED FRAMING (E4): FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02 calls diag(3,6,6) the HS metric without recording that it is the flat spectrum form pushed through the DFT, so 'two points on a cone of invariant forms' is at least misleading and the four-way equivalence at the head of the campaign may not be four equivalent statements.
 

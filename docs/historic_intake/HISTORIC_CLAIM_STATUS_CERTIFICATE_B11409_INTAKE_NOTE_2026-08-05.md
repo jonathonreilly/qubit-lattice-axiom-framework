@@ -18,10 +18,6 @@ required before any effective status.
 
 TERMINAL owner-governance registry action: live Tier-A admitted derivation target count is now ZERO; canonical_ids and derivation_targets in tier_a_admissions.json emptied; former live ids preserved in retired_derivation_targets and registered in owner_governed_premise_nodes.json (staggered_dirac_realization_gate_note_2026-05-03, strong_cp_theta_zero_note); explicitly NOT theorems — AC_phi_lambda, theta/theta_bar=0, QCD continuum theta remain unproved.
 
-Original verdict: genuine_admitted_input_count: 0; meta
-Scope: Class B/E owner-governance registry action; exact adopted text and boundaries only
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -56,6 +52,8 @@ TERMINAL owner-governance registry action, a program milestone: the live Tier-A 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): genuine_admitted_input_count: 0; meta
+- Extraction scope (triage compression; may reflect later context): Class B/E owner-governance registry action; exact adopted text and boundaries only
 - Extraction red flags: adoption converts underivable content to owner-governed premises, not proofs — later readers must not cite as theorem closure
 - Supersession (as known at extraction): registry action recorded as docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md (cited as landed by later packs)
 

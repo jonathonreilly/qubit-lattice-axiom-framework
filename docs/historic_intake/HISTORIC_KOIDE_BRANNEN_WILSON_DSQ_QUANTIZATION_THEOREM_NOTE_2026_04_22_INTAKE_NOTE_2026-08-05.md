@@ -18,10 +18,6 @@ required before any effective status.
 
 Main result (Rigid-Triangle Rotation): delta(m) is exactly the Euclidean rotation angle of the real Koide amplitude in the plane orthogonal to the singlet axis, with ang(m_0) = -pi/2 exactly, ang(m_*) - ang(m_0) = -2/9 rad (1e-13) and ang(m_pos) - ang(m_0) = -pi/12 (1e-15); the Wilson line W = exp(i n_eff/d^2) then satisfies W^{d^2} = exp(2i) I, a pure-rational radian exponent, with 2/9 triply derived (ABSS eta, quark Y^3 anomaly, Brannen conjugate-pair reduction).
 
-Original verdict: Proposes closure of the residual radian-bridge postulate P by identifying Route 3 with the retained one-clock Hamiltonian evolution; the standard Berry convention delta = 2pi eta is ruled out because it gives an unphysical negative eigenvalue.
-Scope: Review package only, self-contained and not landed on main; the closure is retained-CONDITIONAL with its load-bearing step named — the one-clock natural-time identification under hbar = 1.
-Escape conditions (negative claims): The radian-bridge no-go is escaped by the rigid-triangle reading (delta as a Euclidean rotation angle rather than an R/Z holonomy) plus the natural-time pairing, which the note names explicitly as the load-bearing and still-conditional step.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The rigid-triangle rotation theorem: delta(m) as exact Euclidean rotation angle 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Proposes closure of the residual radian-bridge postulate P by identifying Route 3 with the retained one-clock Hamiltonian evolution; the standard Berry convention delta = 2pi eta is ruled out because it gives an unphysical negative eigenvalue.
+- Extraction scope (triage compression; may reflect later context): Review package only, self-contained and not landed on main; the closure is retained-CONDITIONAL with its load-bearing step named — the one-clock natural-time identification under hbar = 1.
+- Extraction escape conditions (negative claims; triage compression): The radian-bridge no-go is escaped by the rigid-triangle reading (delta as a Euclidean rotation angle rather than an R/Z holonomy) plus the natural-time pairing, which the note names explicitly as the load-bearing and still-conditional step.
 - Extraction red flags: Self-labelled retained-CONDITIONAL closure whose load-bearing natural-time identification is the same step other notes in the lane flag as assumed.
 - Supersession (as known at extraction): Main closure theorem of the Wilson/rigid-triangle cluster, with the Dirac-descent and physical-bridge notes as companions; the 2026-04-24 radian-bridge irreducibility note subsequently reports the bridge as still open across 47 mechanisms.
 

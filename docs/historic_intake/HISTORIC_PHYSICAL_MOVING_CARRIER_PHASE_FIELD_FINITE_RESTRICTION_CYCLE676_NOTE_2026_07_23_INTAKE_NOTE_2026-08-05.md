@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Seven normalized families against the single collapsed wall objective_selection_of_one_central_summand. The moving-carrier increasing phase field CLOSES finite restriction and conditional disjointness but not objective selection; four families are RULED OUT BY PRIOR (deterministic latch leaves a direct sum, triple-repetition finite stability does not promote actuality, relational domain-wall alternatives stay coherent, the ontic selector is an added actuality input). The limiting algebraic state is a NON-EXTREMAL mixture / central decomposition across disjoint sectors: superselection removes local interference but supplies no selected member.
 
-Original verdict: NOT MET, NOT FALSIFIED for one objective realized central token — neither a finite pure cat, a locally diagonal center, outward escape, a conditional disjoint-sector theorem, nor a central decomposition provides one.
-Scope: Coverage stated per element (64 sector images, 21 phase pairs), per site (seven central rails, orthogonal one-hot wake), per mode, per block (C3/C4/C6/C9) and lattice-wide (finite pure state and infinite central decomposition explicitly distinguished).
-Escape conditions (negative claims): Negative-claim gate FAIL_DO_NOT_SHIP_NEGATIVE; the single OPEN_NOT_COUNTED escape is an autonomous nonlinear extremal-sector law with intrinsic extremalization and coherent exhaust, for which no covariant law and exact exhaust theorem has been constructed.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The clearest statement of the standing Born wall in the sweep: seven normalized 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): NOT MET, NOT FALSIFIED for one objective realized central token — neither a finite pure cat, a locally diagonal center, outward escape, a conditional disjoint-sector theorem, nor a central decomposition provides one.
+- Extraction scope (triage compression; may reflect later context): Coverage stated per element (64 sector images, 21 phase pairs), per site (seven central rails, orthogonal one-hot wake), per mode, per block (C3/C4/C6/C9) and lattice-wide (finite pure state and infinite central decomposition explicitly distinguished).
+- Extraction escape conditions (negative claims; triage compression): Negative-claim gate FAIL_DO_NOT_SHIP_NEGATIVE; the single OPEN_NOT_COUNTED escape is an autonomous nonlinear extremal-sector law with intrinsic extremalization and coherent exhaust, for which no covariant law and exact exhaust theorem has been constructed.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The clearest statement of the standing Born wall: it is cited as authority by Cycles 671 (idx 2810) and 678 (idx 2780) for 'central decomposition does not select one member'.
 

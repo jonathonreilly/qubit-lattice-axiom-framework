@@ -18,10 +18,6 @@ required before any effective status.
 
 V(r) = -C_F alpha_s / r is the far-field limit of the Z^3 lattice Laplacian Green's function G(r) = 1/(4 pi |r|) + O(1/|r|^3), so it is a native lattice observable, not a one-gluon-exchange import; 26/26 on-axis points at r in [5,30] agree to <3%, 5/5 off-axis to <0.5%, PASS=61 FAIL=0.
 
-Original verdict: DERIVED - moves V(r) from IMPORTED to NATIVE (IMPORTED count 2 -> 1); sigma_v = pi alpha^2/m^2 stays imported and sigma_v is not closed.
-Scope: Weak coupling only (alpha_s = 0.092) where single-gluon exchange dominates the static potential; standard 6-point lattice Laplacian.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ V(r) = -C_F alpha_s/r derived as the far-field lattice Green's function — an i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): DERIVED - moves V(r) from IMPORTED to NATIVE (IMPORTED count 2 -> 1); sigma_v = pi alpha^2/m^2 stays imported and sigma_v is not closed.
+- Extraction scope (triage compression; may reflect later context): Weak coupling only (alpha_s = 0.092) where single-gluon exchange dominates the static potential; standard 6-point lattice Laplacian.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

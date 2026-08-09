@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 An analytically exact obstruction: on the Koide family sqrt(m_k) = A(1 + sqrt2 cos(theta + 2 pi k/3)) both DFT character components are theta-independent (a_0 = sqrt3, |z| = sqrt6/2 exactly), so every magnitude-based observable is flat and only a phase-sensitive observable can select theta_l; separately no integer-power combination of {v, alpha_s, alpha_LM, g_2} gives m_tau (best clean form v alpha_LM^2 = 2.025 GeV is 14% high).
 
-Original verdict: m_e is NOT DERIVED - closing it needs genuinely new machinery beyond current framework primitives, and any mechanism must reproduce the measured asymmetry ratio w_1/w_2 = 0.6988 against the C_3 symmetric prediction of 1.000 (30% discrepancy).
-Scope: On the current Cl(3)/Z^3 surface; the framework does supply three generations, Q = 2/3 automatically, and the 2 pi/3 phase spacing.
-Escape conditions (negative claims): The flatness obstruction breaks only via one of three named routes: an observable sensitive to the complex phase arg(z) (CP-odd or species-ordering-sensitive), a non-C_3-symmetric perturbation (different staircase thresholds per generation), or a charged-lepton Ward identity y_tau(M_Pl) = g_latt^tau/sqrt(N_tau) analogous to the top-quark one - with N_tau and g_latt^tau open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Analytically exact obstruction: both DFT character components are theta-independ
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): m_e is NOT DERIVED - closing it needs genuinely new machinery beyond current framework primitives, and any mechanism must reproduce the measured asymmetry ratio w_1/w_2 = 0.6988 against the C_3 symmetric prediction of 1.000 (30% discrepancy).
+- Extraction scope (triage compression; may reflect later context): On the current Cl(3)/Z^3 surface; the framework does supply three generations, Q = 2/3 automatically, and the 2 pi/3 phase spacing.
+- Extraction escape conditions (negative claims; triage compression): The flatness obstruction breaks only via one of three named routes: an observable sensitive to the complex phase arg(z) (CP-odd or species-ordering-sensitive), a non-C_3-symmetric perturbation (different staircase thresholds per generation), or a charged-lepton Ward identity y_tau(M_Pl) = g_latt^tau/sqrt(N_tau) analogous to the top-quark one - with N_tau and g_latt^tau open.
 - Extraction red flags: The only formula reaching m_tau exactly uses a fitted exponent 2.17 that is neither integer nor simple fraction, explicitly labelled 'by fit, not clean'.
 - Supersession (as known at extraction): none recorded
 

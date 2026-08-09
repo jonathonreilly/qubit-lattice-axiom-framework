@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Polynomial attack shows det(H) - sqrt(2)*delta*q_+ is not identically zero on the chart nor under Tr(H) = 2/3, but under both identities det(H) = E2 becomes a root-selection in delta, so N2 and N3 are corollaries of N1 while N1 itself is not derivable from the retained Atlas; 4/7 PASS with the 3 FAILs being the disproven hypothesis.
 
-Original verdict: Honest verdict: N1 is the primitive bottleneck and the afternoon-4-21-proposal should be RE-LABELED a SUPPORT package, not a closure; the loop terminates.
-Scope: Full (m, delta, q_+) chart with retained active-affine, Z_3 doublet-block and carrier normal-form theorems.
-Escape conditions (negative claims): Reopening requires a retained SELECTOR-quadrature derivation or a structural reframing of the proposal.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The downgrade: N1 is the primitive bottleneck and the afternoon proposal is NOT 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Honest verdict: N1 is the primitive bottleneck and the afternoon-4-21-proposal should be RE-LABELED a SUPPORT package, not a closure; the loop terminates.
+- Extraction scope (triage compression; may reflect later context): Full (m, delta, q_+) chart with retained active-affine, Z_3 doublet-block and carrier normal-form theorems.
+- Extraction escape conditions (negative claims; triage compression): Reopening requires a retained SELECTOR-quadrature derivation or a structural reframing of the proposal.
 - Extraction red flags: Explicitly instructs that a package previously presented as a closure be re-labeled as support.
 - Supersession (as known at extraction): Downgrades the afternoon-4-21-proposal from closure to support; member of the loop chain terminating at idx 1813, whose later iterations resume after this termination.
 

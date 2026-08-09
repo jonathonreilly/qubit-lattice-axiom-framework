@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Adjudicates whether the registered realized_state_primitive's State-Contingency Register item 4 ('dial settings r = 0, 1/2, 1 are sector data, never forced') already closes the campaign negatively from owner-approved content. The quote is CONFIRMED verbatim and the identification of r is correct — rebuilt exactly (14/14 PASS) via Q(r) = 1/3 + (2/3)*r with the unique Koide solution r = 1/2, and the HS block energies E_+ = 3*a^2, E_perp = 6*|b|^2 giving equal energy exactly at r = 1/2.
 
-Original verdict: Item 4 is an entry in a register the note itself calls INFORMATIVE and whose scope clause disclaims its own entries as status carriers ('paths below are source notes, not status claims'), and the 'never forced' language traces to a note that is itself meta/unaudited — so reading item 4 as a foreclosure is exactly what check_axiom_premise_clean​.py exists to tripwire.
-Scope: The register entry's binding force, not its content.
-Escape conditions (negative claims): The campaign is NOT closed by approved foundation content; however a separate derivation-obligation row carries a TERMINAL audit verdict (audited_renaming, effective_status_reason terminal_audit, audited 2026-07-11 at xhigh), so an independent audit lane has terminally affirmed a live obligation in this area.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Repo-wide integrity finding from the campaign: systematic prose-versus-ledger st
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Item 4 is an entry in a register the note itself calls INFORMATIVE and whose scope clause disclaims its own entries as status carriers ('paths below are source notes, not status claims'), and the 'never forced' language traces to a note that is itself meta/unaudited — so reading item 4 as a foreclosure is exactly what check_axiom_premise_clean​.py exists to tripwire.
+- Extraction scope (triage compression; may reflect later context): The register entry's binding force, not its content.
+- Extraction escape conditions (negative claims; triage compression): The campaign is NOT closed by approved foundation content; however a separate derivation-obligation row carries a TERMINAL audit verdict (audited_renaming, effective_status_reason terminal_audit, audited 2026-07-11 at xhigh), so an independent audit lane has terminally affirmed a live obligation in this area.
 - Extraction red flags: Systematic prose-status drift across the Koide lane: many landed notes assert retained_no_go status that the live ledger does not carry. This is a repo-hygiene finding with wide reach, not just a Koide issue.
 - Supersession (as known at extraction): Systematic prose-versus-ledger status audit: at least eight prose lines across landed notes label lane rows retained_no_go (or 'already retained') where the live shard disagrees, including docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md:72, docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md:98 and :315, docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md:34 and :109, docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md:143, and docs/FLAVOR_MAX_RECORD_ENTROPY..._2026-06-15.md:186. Also records docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md was SUPERSEDED 2026-07-11.
 

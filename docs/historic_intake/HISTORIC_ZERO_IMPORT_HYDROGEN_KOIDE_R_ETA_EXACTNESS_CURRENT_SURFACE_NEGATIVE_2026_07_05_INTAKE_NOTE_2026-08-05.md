@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current retained, primitive and open-PR surfaces do not supply K2_R_ETA_EXACTNESS_RETAINED; six of ten inputs are missing (REGISTERED_PHI_VALUE_FACE_ACCEPTED, DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED, RADIAN_READOUT_LICENSE_RETAINED, FOLD_AND_BRANCH_DOMAIN_LOCK, owner ratification, audit acceptance).
 
-Original verdict: Support-only non-supply boundary; K2 exactness is not ratified and delta = 2/9 is not derived.
-Scope: The K2 exactness target of the Koide/electron-readout lane (would supply delta = 2/9).
-Escape conditions (negative claims): Supply the six missing inputs, chiefly a distinguished two-ninths theorem and a radian-readout license.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -129,6 +125,9 @@ K2 exactness terminal of the whole R-eta ladder: six of ten inputs missing — d
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; K2 exactness is not ratified and delta = 2/9 is not derived.
+- Extraction scope (triage compression; may reflect later context): The K2 exactness target of the Koide/electron-readout lane (would supply delta = 2/9).
+- Extraction escape conditions (negative claims; triage compression): Supply the six missing inputs, chiefly a distinguished two-ninths theorem and a radian-readout license.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the whole R-eta ladder for K2 exactness; packets 2559/2560 feed it; PR context 2622 (#5020 exactness residual ~7.4e-6 vs PDG). R-eta lane ladder: matter-state law bridge (2599/2600/2601, fork 2602) -> HW1 locus (2569-2571) -> carrier realization (2549-2551) -> carrier context (2596-2598) -> h-class (2572-2574) + single fixed-point readout (2610-2612) -> readout retirement (2607-2609) -> h-unit radian (2575-2577) -> two-ninths readout (2623-2625) -> K2 exactness (2558, TERMINAL); ladder review 2606.
 

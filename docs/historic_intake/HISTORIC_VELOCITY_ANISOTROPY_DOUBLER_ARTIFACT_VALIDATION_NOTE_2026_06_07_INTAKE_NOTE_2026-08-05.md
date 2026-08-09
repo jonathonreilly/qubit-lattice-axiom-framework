@@ -18,10 +18,6 @@ required before any effective status.
 
 A prototype one-loop delta v/v = B - A ~ +0.31 per g^2 C_2 — which would have falsified the framework against LV bounds ~1e-20 — is diagnosed as four compounding errors dominated by fermion doublers: naive A is log-divergent (-0.295, -0.322, -0.332 at N = 16, 24, 32), B == 0 is a parity artifact not a Ward identity, and A, B are gauge-dependent off-shell renorms rather than the pole velocity. Wilson (r=1, doubler-free) collapses the anisotropy ~5x to a convergent 0.058 with B = -0.025, and an isotropic 4d-symmetric control gives -0.004 ~ 0.
 
-Original verdict: The 0.31 alarm is retracted and the framework is NOT falsified at O(g^2); status reverts to LORENTZ_NATURALNESS_GAP with delta v ~ O(alpha_s/pi), generically nonzero and uncomputed at the gauge-invariant pole level.
-Scope: Validation of a prototype that was never shipped as a claim; sets no audit status and does not change #3123/#3134.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ THE FALSE-ALARM RETRACTION: a would-be framework falsification (delta v/v ~ +0.3
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The 0.31 alarm is retracted and the framework is NOT falsified at O(g^2); status reverts to LORENTZ_NATURALNESS_GAP with delta v ~ O(alpha_s/pi), generically nonzero and uncomputed at the gauge-invariant pole level.
+- Extraction scope (triage compression; may reflect later context): Validation of a prototype that was never shipped as a claim; sets no audit status and does not change #3123/#3134.
 - Extraction red flags: Explicit false-alarm retraction of a would-be falsification; also rejects the opposite 'shared-kernel kills it' claim, leaving delta v neither 0.3 nor 0.
 - Supersession (as known at extraction): Retracts its own prototype alarm; itself sharpened by idx 2098, which shows the surviving 0.058 is also discretization-dependent.
 

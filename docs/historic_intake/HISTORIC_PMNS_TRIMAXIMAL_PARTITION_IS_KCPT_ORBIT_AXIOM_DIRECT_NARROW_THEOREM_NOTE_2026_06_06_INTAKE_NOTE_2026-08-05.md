@@ -18,10 +18,6 @@ required before any effective status.
 
 K (complex conjugation in the character basis) exchanges P_omega and P_omega^2 and fixes P_0, so the K/CPT orbits give exactly the two-block partition P_0 = J/3 and P_1 = P_omega + P_omega^2 - the real Wedderburn decomposition R[Z_3] = R (+) C - which is axiom-direct rather than a posited K-real observable; the 3-mode split would need the K-odd T-violating i(C - C^2). The trimaximal column |<corner_a|W>|^2 = 1/3 then follows from the partition alone, independent of the within-doublet phase delta.
 
-Original verdict: The trimaximal column is derived modulo only the retained C_3 algebra; the genuine K-reality residual is the within-doublet delta = 0 phase, which does not enter the column.
-Scope: Retained C_3 algebra plus the RECORD axiom's K/CPT-orbit clause; does not re-derive the C_3 modes, derive the K/CPT conjugation, address the delta = 0 phase pin, or touch the Koide weight.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Trimaximal column derived modulo only the retained C_3 algebra: the K/CPT orbit 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The trimaximal column is derived modulo only the retained C_3 algebra; the genuine K-reality residual is the within-doublet delta = 0 phase, which does not enter the column.
+- Extraction scope (triage compression; may reflect later context): Retained C_3 algebra plus the RECORD axiom's K/CPT-orbit clause; does not re-derive the C_3 modes, derive the K/CPT conjugation, address the delta = 0 phase pin, or touch the Koide weight.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Discharges the 'modulo K-reality' caveat on the trimaximal column by separating the axiomatic partition (A) from the delta = 0 phase pin (B) that a retained_bounded note had conflated under one predicate.
 

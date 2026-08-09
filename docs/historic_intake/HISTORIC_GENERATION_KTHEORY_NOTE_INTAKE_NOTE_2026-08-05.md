@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Equivariant K-theory K_{Z_3}(T^3) does not apply because its prerequisite fails: the taste permutation P does not relate to the KS Bloch Hamiltonian equivariantly (||P H P^-1 - H(sigma k)|| ~ 4-6 at generic k, the nested gamma construction breaking the symmetry); and even if it did apply, all Chern numbers vanish for the free staggered fermion, so the only content would be (rank, irrep label) - exactly what group theory already gives.
 
-Original verdict: A clean negative: the framework does not apply due to an equivariance obstruction, and would add no new invariants if it did.
-Scope: Free staggered Hamiltonian in the Kawamoto-Smit basis.
-Escape conditions (negative claims): Two named openings: a basis-changed or dressed Z_3 action U P U^-1 that DOES commute with H(k) is not attempted here, and interactions might change the picture even if such an action existed.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ K-theory inapplicability: the equivariance prerequisite fails (measured) — cle
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A clean negative: the framework does not apply due to an equivariance obstruction, and would add no new invariants if it did.
+- Extraction scope (triage compression; may reflect later context): Free staggered Hamiltonian in the Kawamoto-Smit basis.
+- Extraction escape conditions (negative claims; triage compression): Two named openings: a basis-changed or dressed Z_3 action U P U^-1 that DOES commute with H(k) is not attempted here, and interactions might change the picture even if such an action existed.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Confirms the Z_3 orbit structure is a labeling fact rather than a dynamical symmetry, consistent with GENERATION_AXIOM_FIRST (idx 612).
 

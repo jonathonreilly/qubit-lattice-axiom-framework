@@ -18,10 +18,6 @@ required before any effective status.
 
 The unique normalized Hermitian grading N = diag(1,2,3) (fixed by [N,E12] = -E12, [N,E23] = -E23, min spec N = 1) combined with the forward cycle C = E12 + E23 + E31 gives the canonical ordered-chain active law A_ord = N + C, which produces the missing native current J_chi(A_ord) = 1, surviving exactly on the retained hw=1 response family.
 
-Original verdict: The final strict/native DM last mile - a sole-axiom law producing nonzero J_chi - is closed positively on the branch map.
-Scope: On the retained hw=1 response family, using the graph-first cycle-frame support theorem and the adjacent-chain path-algebra target as inputs.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Sole-axiom ordered-chain law producing nonzero J_chi — the strict/native DM br
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The final strict/native DM last mile - a sole-axiom law producing nonzero J_chi - is closed positively on the branch map.
+- Extraction scope (triage compression; may reflect later context): On the retained hw=1 response family, using the graph-first cycle-frame support theorem and the adjacent-chain path-algebra target as inputs.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Self-describes as closing the last open task on the strict/native DM branch map - a candidate TERMINAL note for the strict/native DM closure chain.
 

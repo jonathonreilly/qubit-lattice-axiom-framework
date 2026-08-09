@@ -18,10 +18,6 @@ required before any effective status.
 
 Corrects the earlier 'no time' under-claim (time IS derived by the single-clock theorem) while showing the derivation's output is continuous Stone time on Z^3, which is the xi -> infinity obstruction surface; the positive delta_v = 0 horn needs a finite physical a_tau plus a symmetric central-difference tick that no retained item supplies and the single-clock chain partly contradicts.
 
-Original verdict: Both horns of delta_v(xi) remain live: the lever is not closed, and it is not a bare foundational admission but the audit status of the derived-time chain plus a named non-retained realization premise.
-Scope: Boundary note on the derived-time chain; the single-clock assembly and microcausality are unaudited and base RP is audited_conditional.
-Escape conditions (negative claims): Every retained item in the lane (anisotropy-gate no-go, scope-boundary no-go, clock-rate no-go, a -> 0-only SO(4) isotropy) cuts against an unconditional positive horn.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ RETRACTION of 'the axioms contain no time': time IS derived (single-clock theore
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Both horns of delta_v(xi) remain live: the lever is not closed, and it is not a bare foundational admission but the audit status of the derived-time chain plus a named non-retained realization premise.
+- Extraction scope (triage compression; may reflect later context): Boundary note on the derived-time chain; the single-clock assembly and microcausality are unaudited and base RP is audited_conditional.
+- Extraction escape conditions (negative claims; triage compression): Every retained item in the lane (anisotropy-gate no-go, scope-boundary no-go, clock-rate no-go, a -> 0-only SO(4) isotropy) cuts against an unconditional positive horn.
 - Extraction red flags: Records two retracted prior claims about the framework's temporal content and notes the derived-time chain is unaudited with an audited_conditional base.
 - Supersession (as known at extraction): Explicitly RETRACTS the earlier claims that the axioms contain no time and that temporal structure is not derivable, while correcting the premise framing (not the math) of the landed B_4 hypercubic boundary note.
 

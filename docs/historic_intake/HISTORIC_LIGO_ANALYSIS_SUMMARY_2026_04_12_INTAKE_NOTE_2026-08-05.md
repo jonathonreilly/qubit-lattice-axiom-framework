@@ -18,10 +18,6 @@ required before any effective status.
 
 Across 73 BBH events with zero free parameters (t_echo = (2R_S/c) ln(R_S/l_Planck), Kerr-corrected), all searches are null: the initial 3.0 sigma at 122 ms was a PSD artifact removed by proper 16 kHz whitening, and the 48-event stack gives 0.41 sigma frozen-star / 1.29 sigma Abedi. Four independent amplitude lanes explain why — absorption R ~ exp(-0.71e38), thermal R ~ 1e-6, no frequency shift, tunneling T ~ 1e-(1e41).
 
-Original verdict: The null echo result is a ZERO-PARAMETER PREDICTION of the framework, not a failure — the evanescent barrier makes the f ~ 1 surface an effectively perfect absorber, so ringdown frequency, damping time and post-merger all match GR.
-Scope: Gravitational-wave echo observables only; the framework's distinctive predictions are relocated to short-range gravity below ~38 microns, Lambda ~ 1/a^2, 3 generations = 3 dimensions, exact Born I_3 = 0, and d=3 selection.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ LIGO 73-event NULL as a zero-parameter prediction: the initial 3.0 sigma was a P
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The null echo result is a ZERO-PARAMETER PREDICTION of the framework, not a failure — the evanescent barrier makes the f ~ 1 surface an effectively perfect absorber, so ringdown frequency, damping time and post-merger all match GR.
+- Extraction scope (triage compression; may reflect later context): Gravitational-wave echo observables only; the framework's distinctive predictions are relocated to short-range gravity below ~38 microns, Lambda ~ 1/a^2, 3 generations = 3 dimensions, exact Born I_3 = 0, and d=3 selection.
 - Extraction red flags: Records four separate bug fixes (epsilon formula, Kerr spin parameter, background estimation) each of which changed the picture, and an initial 3 sigma claim that turned out to be an artifact. Does not reproduce Abedi et al.'s 2.9 sigma.
 - Supersession (as known at extraction): Closes the echo lane; supersedes the earlier suggestive 122 ms ~ 2 x 61 ms harmonic reading, which did not survive proper analysis. 89 O4 events are pre-registered with per-event timing and zero amplitude.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Consolidated dead-route ledger from the 30-probe BAE campaign: every representation-theoretic measure (Plancherel-uniform on C3-hat, Peter-Weyl, real structure J, isotype multiplicity, max-entropy Born, NCG real structure) yields the (1,2) real-dimension weighting F3 = kappa 1, NOT the (1,1) block-democracy F1 = kappa 2; spectral-action/Connes-Lott single-factor is barred because Z3-equivariance plus Gamma_chi forces D=0 on a single R^3; the RG-flow fixed point drives AWAY from BAE; all retained symmetries are discrete (Z2,Z3,D3) so no SO(2) U(1)_b quotient exists; and the static Z3 scalar potential V = (1/2)Tr K^2 + (1/6)Tr K^3 minimizes at kappa approximately -0.76, not r=1/2.
 
-Original verdict: r=1/2 is a NORM-BALANCE, not symmetry-protected (shipped as PR #2591: S3 forces degeneracy, C3 leaves r free, 1- vs 2-dim irreps cannot be swapped); the retained reframe makes r=1/2 the max-sector-entropy STATIONARY point (dS/dr=0, S=log 2), so the honest question is WHICH-VACUUM, not forced selection.
-Scope: The OPERATOR/MEASURE/SYMMETRY class for the Koide r=1/2 selection question; the dynamical class is explicitly untouched.
-Escape conditions (negative claims): Three open, un-attacked dynamical routes: the staggered corner-coupling mass term — does det(D+M) on the hw=1 corners re-weight the isotype blocks to F1 (kappa=2); taste-breaking scalar action normalization effect on block-total Frobenius weighting when integrated out; and multi-factor Connes-Lott with Yukawa D on R^3 and chirality on separate H_L (+) H_R.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ Consolidated dead-route ledger of the 30-probe BAE campaign: every representatio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): r=1/2 is a NORM-BALANCE, not symmetry-protected (shipped as PR #2591: S3 forces degeneracy, C3 leaves r free, 1- vs 2-dim irreps cannot be swapped); the retained reframe makes r=1/2 the max-sector-entropy STATIONARY point (dS/dr=0, S=log 2), so the honest question is WHICH-VACUUM, not forced selection.
+- Extraction scope (triage compression; may reflect later context): The OPERATOR/MEASURE/SYMMETRY class for the Koide r=1/2 selection question; the dynamical class is explicitly untouched.
+- Extraction escape conditions (negative claims; triage compression): Three open, un-attacked dynamical routes: the staggered corner-coupling mass term — does det(D+M) on the hw=1 corners re-weight the isotype blocks to F1 (kappa=2); taste-breaking scalar action normalization effect on block-total Frobenius weighting when integrated out; and multi-factor Connes-Lott with Yukawa D on R^3 and chirality on separate H_L (+) H_R.
 - Extraction red flags: High-value cross-campaign ledger: eight independent route families all land on kappa=1 rather than the kappa=2 the r=1/2 story needs. Relevant to the r=1/2 program and the Koide occupancy decision — the supervisor should check this against the later w=1/2 conditional selection theorem.
 - Supersession (as known at extraction): Cites the shipped no-go PR #2591 and the retained reframe FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED; grounded 2026-06-04. Records the Koide chain's carried imports: BAE (|b|^2/a^2 = 1/2, bounded_admission), P (radian bridge phi = 2/9 rad, bounded), AC_phi-lambda (species labeling, partially dissolved with the C3-breaking phase delta = arg(b) genuinely open); Tier-A: AC_phi-lambda.
 

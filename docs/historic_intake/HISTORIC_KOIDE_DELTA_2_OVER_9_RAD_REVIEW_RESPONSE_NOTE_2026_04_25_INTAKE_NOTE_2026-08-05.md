@@ -18,10 +18,6 @@ required before any effective status.
 
 Hostile review found four blocking defects in the same-day 'Final Closure' — the OP-locality argument is circular (OP justifies the source domain that justifies using OP), RED and CRIT are self-declared support-grade not retained, the April-20 IDENTIFICATION was cited out of a no-go note whose Section 5 says the value selection is still open, and the Yukawa Casimir bridge was silently swapped for a different physics derivation.
 
-Original verdict: The strongest defensible statement is conditional on the source-domain retention law selecting the reduced two-slot block algebra (multiplicity weighting, kappa = 2, Q = 2/3) over the unreduced vector-slot carrier (rank weighting, kappa = 1, Q != 2/3).
-Scope: The closure is pivoted to conditional form: delta = 2/9 rad holds on retained main CONDITIONAL on one named open primitive.
-Escape conditions (negative claims): The single named open primitive is the source-domain retention law; supplying it makes the closure unconditional, and the framework's own notes list this as 'derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant'.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ The same-day hostile-review downgrade of the delta=2/9 'Final Closure': four blo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The strongest defensible statement is conditional on the source-domain retention law selecting the reduced two-slot block algebra (multiplicity weighting, kappa = 2, Q = 2/3) over the unreduced vector-slot carrier (rank weighting, kappa = 1, Q != 2/3).
+- Extraction scope (triage compression; may reflect later context): The closure is pivoted to conditional form: delta = 2/9 rad holds on retained main CONDITIONAL on one named open primitive.
+- Extraction escape conditions (negative claims; triage compression): The single named open primitive is the source-domain retention law; supplying it makes the closure unconditional, and the framework's own notes list this as 'derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant'.
 - Extraction red flags: Documents that the branch repeated an overclaim pattern already flagged in an earlier review of a V1 attempt; runners remain passing but their scope labels were wrong.
 - Supersession (as known at extraction): Status correction that downgrades KOIDE_DELTA_2_OVER_9_RAD_FINAL_CLOSURE_NOTE_2026-04-25 and the Q-closure-via-OP-locality note from full to conditional closure; reads as the terminal note of this delta = 2/9 sub-chain.
 

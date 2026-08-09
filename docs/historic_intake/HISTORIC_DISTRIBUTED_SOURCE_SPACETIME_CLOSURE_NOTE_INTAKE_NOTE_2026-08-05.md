@@ -18,10 +18,6 @@ required before any effective status.
 
 Extends the exact strong-field source model from a rank-one point source to a finite-support diagonal attractive class H_V = H_0 - P V P^T with explicit support renormalization, proving exterior harmonicity as an exact consequence and offering a bounded common-4D-metric candidate.
 
-Original verdict: Closes the sub-gap that the exact source-model foothold was limited to rank-one — the strongest strong-field source result on that side so far.
-Scope: Exact for the finite-support diagonal source class; the metric candidate is bounded and this is not full nonlinear GR.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Strong-field source model extended from rank-one to the finite-support diagonal 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes the sub-gap that the exact source-model foothold was limited to rank-one — the strongest strong-field source result on that side so far.
+- Extraction scope (triage compression; may reflect later context): Exact for the finite-support diagonal source class; the metric candidate is bounded and this is not full nonlinear GR.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Generalizes the earlier rank-one point-source theorem.
 

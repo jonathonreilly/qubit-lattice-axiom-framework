@@ -18,10 +18,6 @@ required before any effective status.
 
 Characterizes the chirality gate's single import against the committed origin/main ledger: the anticommuting-operator sufficiency theorem is retained ({H,Gamma_chi} = 0 implies Q = 2/3), the circulant trap is retained_bounded, and of six flagged escape hatches four are CLOSED (Connes-Lott grading inert, emergent-time transport factorizes, Hamming chirality scalar on hw=1, factor-split bridge not a consequence) while the C_3 -> S_2 transposition-broken operator is OPEN but IS the import itself, and the staggered-Dirac realization gate remains unclosed.
 
-Original verdict: The gate has exactly one import — selecting the transposition tau that breaks C_3 — and every other hatch is either closed or parked at an unclosed parent gate.
-Scope: Grounding characterization only: sets no audit verdict, proposes no axiom or admission, derives no Koide value; runner PART_A=PASS PART_B=PASS.
-Escape conditions (negative claims): Two hatches are recorded OPEN: the transposition-broken operator (which is the import) and a native chiral mass operator from the staggered-Dirac realization gate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The chirality gate's terminal characterization: exactly ONE import (the C_3-brea
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gate has exactly one import — selecting the transposition tau that breaks C_3 — and every other hatch is either closed or parked at an unclosed parent gate.
+- Extraction scope (triage compression; may reflect later context): Grounding characterization only: sets no audit verdict, proposes no axiom or admission, derives no Koide value; runner PART_A=PASS PART_B=PASS.
+- Extraction escape conditions (negative claims; triage compression): Two hatches are recorded OPEN: the transposition-broken operator (which is the import) and a native chiral mass operator from the staggered-Dirac realization gate.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

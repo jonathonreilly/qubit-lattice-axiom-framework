@@ -18,10 +18,6 @@ required before any effective status.
 
 Lifts the separation theorem from scalar phi to SU(N) connections: Wilson loops are gauge-invariant (verified to machine precision on a random SU(2) 4-cycle), reparameterization-invariant so the scalar edge-selection ambiguity DISSOLVES, reversal gives the complex conjugate, and trivial or pure-gauge connections give W = N; 13/13 PASS.
 
-Original verdict: Theorem-grade completion of the N+1 to N+4 arc: cycle integrals become nontrivial gauge-invariant Wilson loops and the per-edge detector ambiguity disappears.
-Scope: Graph with SU(N) link variables; SU(2) fundamental used for the numerics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ The SU(N) force-vs-gauge separation terminal: Wilson loops nontrivial exactly on
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Theorem-grade completion of the N+1 to N+4 arc: cycle integrals become nontrivial gauge-invariant Wilson loops and the per-edge detector ambiguity disappears.
+- Extraction scope (triage compression; may reflect later context): Graph with SU(N) link variables; SU(2) fundamental used for the numerics.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): FAMILY TERMINAL for the force-vs-gauge separation arc, succeeding idx 1974 (N+1) and idx 1972 (N+2).
 

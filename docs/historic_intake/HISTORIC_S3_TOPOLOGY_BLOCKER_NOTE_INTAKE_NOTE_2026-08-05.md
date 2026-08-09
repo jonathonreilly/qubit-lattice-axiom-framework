@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 States the lane does NOT derive closed S^3 topology from the graph-growth axioms alone: local shell growth gives chi = 2 boundaries and ball-like regions, but compactness, closure to a 3-manifold, and the boundary-identification step are all still missing, so Perelman cannot be invoked.
 
-Original verdict: The honest claim is S^2 boundaries plus ball-like regions; S^3 remains conditional on an extra global compactification input, and any CC or dark-energy note using lambda_1(S^3) = 3/R^2 must treat that topology as conditional.
-Scope: scripts/frontier_s3_topology_derivation​.py and the claims built on it.
-Escape conditions (negative claims): Escape is explicit: supply a derivation of compactness and of the boundary-identification step from the graph axioms.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The BLOCKER: graph-growth axioms give S^2 boundaries + ball-like regions, NOT cl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The honest claim is S^2 boundaries plus ball-like regions; S^3 remains conditional on an extra global compactification input, and any CC or dark-energy note using lambda_1(S^3) = 3/R^2 must treat that topology as conditional.
+- Extraction scope (triage compression; may reflect later context): scripts/frontier_s3_topology_derivation​.py and the claims built on it.
+- Extraction escape conditions (negative claims; triage compression): Escape is explicit: supply a derivation of compactness and of the boundary-identification step from the graph axioms.
 - Extraction red flags: Retracts, in effect, the status upgrade published in idx 1895 and instructs downstream CC notes to re-qualify a number already in use.
 - Supersession (as known at extraction): Directly blocks the 'bounded -> structural' upgrade asserted by S3_TOPOLOGY_DERIVATION_NOTE (idx 1895) on the same day.
 

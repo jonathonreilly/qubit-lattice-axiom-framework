@@ -18,10 +18,6 @@ required before any effective status.
 
 P2 selection from the current runner is a no-go — the runner verifies a supplied candidate and cannot exclude other scalar-generator choices; retaining the old axiom-to-observable headline unchanged is a no-go because it still load-bears on P2; the new axiom/admission route is not taken.
 
-Original verdict: The old headline cannot stand as written; P2 remains unselected.
-Scope: The observable/log-det generator selection question.
-Escape conditions (negative claims): An independent P2 selection theorem, or an explicit admission, would unblock.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ No-go against an existing repo headline: P2 selection from the current runner is
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The old headline cannot stand as written; P2 remains unselected.
+- Extraction scope (triage compression; may reflect later context): The observable/log-det generator selection question.
+- Extraction escape conditions (negative claims; triage compression): An independent P2 selection theorem, or an explicit admission, would unblock.
 - Extraction red flags: an existing repo headline is found to still load-bear on an unselected P2
 - Supersession (as known at extraction): Blocks retention of an existing axiom-to-observable headline — a correction of previously published wording.
 

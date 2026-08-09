@@ -18,10 +18,6 @@ required before any effective status.
 
 The model has no naive continuum limit on a fixed grid: signal-speed anisotropy is scale-invariant at 8.23% for all measurement distances 5-70 grid units (off-axis action excess 7.06-7.25% at all path lengths), while interference converges (V(y=1) stabilizes at 0.978-0.985 for widths >= 12) and gravity dilutes (action-diff per unit path length falls from -0.345 at width=20 to -0.160 at width=80).
 
-Original verdict: Discreteness is irreducible on a fixed grid — the 8.2% anisotropy is a permanent lattice feature defining a model 'Planck scale', and a continuum limit requires changing the graph itself (finer spacing, irregular/random graphs, or extended neighbor connectivity).
-Scope: Fixed 8-neighbor rectangular lattice; distances 5-70 grid units; widths 20-80.
-Escape conditions (negative claims): The no-continuum-limit result is stated to hold only for a FIXED rectangular 8-neighbor grid probed at larger distances; the note names three escapes — finer grid spacing (more nodes per physical unit), irregular/random graphs with no preferred directions, or extended neighbor connectivity — and speculates a GROWING graph would reduce anisotropy in physical units.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Clean bounded no-go: no naive continuum limit on a fixed 8-neighbor grid — 8.2
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Discreteness is irreducible on a fixed grid — the 8.2% anisotropy is a permanent lattice feature defining a model 'Planck scale', and a continuum limit requires changing the graph itself (finer spacing, irregular/random graphs, or extended neighbor connectivity).
+- Extraction scope (triage compression; may reflect later context): Fixed 8-neighbor rectangular lattice; distances 5-70 grid units; widths 20-80.
+- Extraction escape conditions (negative claims; triage compression): The no-continuum-limit result is stated to hold only for a FIXED rectangular 8-neighbor grid probed at larger distances; the note names three escapes — finer grid spacing (more nodes per physical unit), irregular/random graphs with no preferred directions, or extended neighbor connectivity — and speculates a GROWING graph would reduce anisotropy in physical units.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

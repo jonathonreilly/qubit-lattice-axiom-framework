@@ -18,10 +18,6 @@ required before any effective status.
 
 For a source supported on the retained lepton block, det(D+J) = det(F) det(A + X - B F^(-1) C), so the projected lepton source law is exact Schur pushforward with D_eff = A - B F^(-1) C - it is derived rather than admitted once the effective blocks are known.
 
-Original verdict: The projected PMNS source law is no longer an extra formal object - the clean remaining target is the effective blocks plus one probe direction.
-Scope: Full finite Grassmann Gaussian; does not derive the effective lepton blocks or the active probe direction.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Schur-pushforward theorem closing the source-law-invention loophole: the project
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The projected PMNS source law is no longer an extra formal object - the clean remaining target is the effective blocks plus one probe direction.
+- Extraction scope (triage compression; may reflect later context): Full finite Grassmann Gaussian; does not derive the effective lepton blocks or the active probe direction.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the source-law-invention loophole left by the projected source-law reduction.
 

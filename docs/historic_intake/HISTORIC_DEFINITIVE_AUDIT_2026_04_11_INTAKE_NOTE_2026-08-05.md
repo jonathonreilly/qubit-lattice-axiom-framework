@@ -18,10 +18,6 @@ required before any effective status.
 
 Post-testing audit of the April gravity claims: the Ollivier potential-weighted curvature proxy survives its random control (self-consistent R^2 = 0.999 vs random 0.001) but only as a potential-weighted structured-curvature proxy that a smooth shell-averaged control nearly reproduces; the topological transition at G ~ 0.3 is PROBABLY NOT GRAVITATIONAL; and the BMV prediction of 0.35 rad is MEANINGLESS IN PHYSICAL UNITS.
 
-Original verdict: What survives is narrower than the early reads: the parity coupling correction, sign selectivity with a weakened anti-disorder interpretation, and non-reducibility of self-consistency to disorder.
-Scope: Screening status re-checked per result (sign selectivity 150/150 at mu^2 = 0.001, random 82%).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The April gravity lane's post-testing retraction record: one published predictio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): What survives is narrower than the early reads: the parity coupling correction, sign selectivity with a weakened anti-disorder interpretation, and non-reducibility of self-consistency to disorder.
+- Extraction scope (triage compression; may reflect later context): Screening status re-checked per result (sign selectivity 150/150 at mu^2 = 0.001, random 82%).
 - Extraction red flags: Declares one published prediction meaningless in physical units and another probably non-gravitational.
 - Supersession (as known at extraction): Retracts or narrows several earlier readings, including the 6/10 random-control anti-disorder claim.
 

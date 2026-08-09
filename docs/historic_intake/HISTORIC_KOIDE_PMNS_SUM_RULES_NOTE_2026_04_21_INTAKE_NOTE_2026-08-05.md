@@ -18,10 +18,6 @@ required before any effective status.
 
 The three iteration-4 formulas collapse into two sum rules — SR1 theta_13 = 2(theta_23 - pi/4) exactly, and SR2 Q sin^2 theta_12 + sin^2 theta_13 = delta at leading order (Q/3 = 2/9 = delta with O((delta Q)^4) ~ 5e-4 correction) — and SR2 holds within 1 sigma across all six NuFit releases (0.29-0.75 sigma), unlike TM1 (0.684 vs 0.667) and TM2 (0.294 vs 0.333).
 
-Original verdict: Three apparent coincidences are one underlying relation plus an angle complementarity, making the derivation target a single equation instead of three coefficients.
-Scope: Sum rules derived FROM the iteration-4 conjecture, not from first principles; SR2 is a leading-order relation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ The two PMNS sum rules: SR1 theta_13 = 2(theta_23 - pi/4) EXACT and SR2 at leadi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three apparent coincidences are one underlying relation plus an angle complementarity, making the derivation target a single equation instead of three coefficients.
+- Extraction scope (triage compression; may reflect later context): Sum rules derived FROM the iteration-4 conjecture, not from first principles; SR2 is a leading-order relation.
 - Extraction red flags: The sum rules inherit the conjectural status of iteration 4 — the iteration-24 critique notes their conservation reading is conditional on that conjecture being exact.
 - Supersession (as known at extraction): Unifies the iteration-4 formulas; the resulting SR2 becomes the iteration-19+ derivation target and the iteration-21 'conservation law'.
 

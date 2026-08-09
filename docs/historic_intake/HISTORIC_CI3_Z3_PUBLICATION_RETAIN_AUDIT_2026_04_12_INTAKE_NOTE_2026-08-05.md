@@ -18,10 +18,6 @@ required before any effective status.
 
 Publication audit of the CI(3)/Z^3 lane finds it blocked by claim hygiene rather than inactivity: the algebraic core and phenomenology are mixed, the strongest SU(3)/generations notes overstate what the scripts establish, and several phenomenology runners claim prediction while hard-coding observed values, SM couplings, or matching conventions.
 
-Original verdict: No promotions from the CI(3)/Z^3 cluster in this pass — promoting the current notes would make main less trustworthy, not more.
-Scope: Reviews the lane against the current main retention bar; explicit holds recorded on SU(3)-from-Cl(3), dark matter / alpha_s / annihilation ratio, Higgs/mass spectrum/hierarchy, the cosmological constant lane, and frozen-star prediction cards.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Publication audit naming runners that ADVERTISE predictions while hard-coding ob
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No promotions from the CI(3)/Z^3 cluster in this pass — promoting the current notes would make main less trustworthy, not more.
+- Extraction scope (triage compression; may reflect later context): Reviews the lane against the current main retention bar; explicit holds recorded on SU(3)-from-Cl(3), dark matter / alpha_s / annihilation ratio, Higgs/mass spectrum/hierarchy, the cosmological constant lane, and frozen-star prediction cards.
 - Extraction red flags: Names runners that advertise predictions while hard-coding observed values or SM couplings.
 - Supersession (as known at extraction): none recorded
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The Cabibbo Power Tower: every retained CKM magnitude is a structural-integer multiple of a power of |V_us|^2 — |V_cb|^2 = (2/3)|V_us|^4, |V_ub|^2 = |V_us|^6/9, |V_td|^2 = (20/9)|V_us|^6 R_bar^2 — with |V_td/V_ub|^2 = (N_quark - 1) + alpha_s^2/N_pair^4 = 5 to better than 0.02% at canonical alpha_s.
 
-Original verdict: Consolidates the piecewise retained magnitudes into a single tower keyed to the squared Cabibbo angle.
-Scope: Corollary on the promoted CKM atlas plus NLO protected-gamma-bar surfaces; |V_td| carries one circumradius factor.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -62,6 +58,8 @@ The Cabibbo Power Tower: every retained CKM magnitude as a structural-integer mu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Consolidates the piecewise retained magnitudes into a single tower keyed to the squared Cabibbo angle.
+- Extraction scope (triage compression; may reflect later context): Corollary on the promoted CKM atlas plus NLO protected-gamma-bar surfaces; |V_td| carries one circumradius factor.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Unifies the previously piecewise first/second/third-row magnitude notes and the circumradius bridge.
 

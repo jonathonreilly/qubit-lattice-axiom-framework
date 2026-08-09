@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The attempted claim that eta phases break Oh to D2h and separate the three X points is REFUTED: D2h is only the diagonal-gauge subgroup, while all 48 Oh elements are realized as combined coordinate permutations times off-diagonal taste unitaries (verified by Tr(H^k) matching for all even k up to 20, with an explicit C3 construction accurate to 5e-14), so the three hw=1 corners lie in the SAME orbit.
 
-Original verdict: A sharp obstruction: the free Hamiltonian has too much symmetry to distinguish the three species crystallographically.
-Scope: Free staggered Cl(3) Hamiltonian on Z^3 with PBC, verified at L = 4 and 6.
-Escape conditions (negative claims): Four routes remain open and are named: EWSB breaking of the taste symmetry (the CW selector S_3 -> Z_2), Wilson-like terms explicitly breaking taste symmetry, anomaly-based dynamical distinction, and interaction effects breaking the free-field taste symmetry.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Little-groups REFUTATION: all 48 Oh elements are realized, so the eta-phase D2h 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharp obstruction: the free Hamiltonian has too much symmetry to distinguish the three species crystallographically.
+- Extraction scope (triage compression; may reflect later context): Free staggered Cl(3) Hamiltonian on Z^3 with PBC, verified at L = 4 and 6.
+- Extraction escape conditions (negative claims; triage compression): Four routes remain open and are named: EWSB breaking of the taste symmetry (the CW selector S_3 -> Z_2), Wilson-like terms explicitly breaking taste symmetry, anomaly-based dynamical distinction, and interaction effects breaking the free-field taste symmetry.
 - Extraction red flags: Explicitly retracts a prior lane claim as an artifact of restricting to diagonal gauge transformations.
 - Supersession (as known at extraction): SUPERSEDES any earlier claim that eta phases break Oh to D2h in a way that distinguishes the X points - the earlier result was correct only for diagonal-gauge transformations and missed the off-diagonal taste unitaries.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Extending the observable carrier from H_hw=1 to the full taste cube C^8 (or C^16 with chirality) does NOT escape delta-evenness: the S_3 irrep content of C^8 is 4 A_1 + 2 E with no A_2, and A_2 is the only irrep that could carry delta-odd content, so all eight tested cross-hw observable families are exactly delta-even.
 
-Original verdict: DEAD (structural) - the DM Case-3 and Koide bottlenecks are genuinely a shared common absence, both living in the delta-odd cohomology class the axiom has no A_2 content to fill.
-Scope: S_3-invariant retained scalar observables on the taste cube C^8 / C^16 built from the retained axis-hopping operators; dimensionless taste-cube basis, no mass units.
-Escape conditions (negative claims): The negative rests on (i) S_3-invariance of the observable, (ii) the absence of the A_2 sign irrep in the C^8 decomposition, and (iii) the retained-scalar/axiom-native restriction on which observables count; a delta-odd observable would need to break S_3 axis-permutation symmetry or introduce non-axiom-native content.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Structural cross-lane result: the DM Case-3 and Koide bottlenecks are one shared
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): DEAD (structural) - the DM Case-3 and Koide bottlenecks are genuinely a shared common absence, both living in the delta-odd cohomology class the axiom has no A_2 content to fill.
+- Extraction scope (triage compression; may reflect later context): S_3-invariant retained scalar observables on the taste cube C^8 / C^16 built from the retained axis-hopping operators; dimensionless taste-cube basis, no mass units.
+- Extraction escape conditions (negative claims; triage compression): The negative rests on (i) S_3-invariance of the observable, (ii) the absence of the A_2 sign irrep in the C^8 decomposition, and (iii) the retained-scalar/axiom-native restriction on which observables count; a delta-odd observable would need to break S_3 axis-permutation symmetry or introduce non-axiom-native content.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Tests and rules out dropping assumption A2.5 of the DM Case-3 Microscopic Polynomial Impossibility Theorem; leans on the promoted S3_TASTE_CUBE_DECOMPOSITION_NOTE.md.
 

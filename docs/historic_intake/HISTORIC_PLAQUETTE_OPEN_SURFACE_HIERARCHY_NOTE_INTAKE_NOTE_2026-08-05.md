@@ -18,10 +18,6 @@ required before any effective status.
 
 Same-boundary surfaces differ by a closed 2-cycle, the minimal nontrivial closed 2-cycle is the 6-face cube boundary, so the first nonlocal completion has area 1 + 6 - 2 = 5, and on the 3+1 lattice there are exactly 2*(4-2) = 4 such minimal completions. Hence P is an open-surface problem, not a one-cell problem. Runner 6 pass / 0 fail.
 
-Original verdict: The constant-lift failure was structural - any real derivation of P must close an open-surface hierarchy rather than dress a one-plaquette block.
-Scope: Exact combinatorics of same-boundary surfaces; does not derive P(beta = 6).
-Escape conditions (negative claims): The route forward is named: gauge source identity P = (1/N_plaq) d log Z/d beta, rewrite on the open-surface side, then close the same-boundary hierarchy.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The structural explanation of the constant-lift failure (closed 2-cycle area acc
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The constant-lift failure was structural - any real derivation of P must close an open-surface hierarchy rather than dress a one-plaquette block.
+- Extraction scope (triage compression; may reflect later context): Exact combinatorics of same-boundary surfaces; does not derive P(beta = 6).
+- Extraction escape conditions (negative claims; triage compression): The route forward is named: gauge source identity P = (1/N_plaq) d log Z/d beta, rewrite on the open-surface side, then close the same-boundary hierarchy.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Follows GAUGE_PLAQUETTE_SOURCE_NO_GO_NOTE; its successors are the first-nonlocal-connected-correction note and then the rooted 3-chain engine, which CORRECTS an earlier boundary-shellable undercount and shows directed-cell face-factorized closure already fails at n = 3.
 

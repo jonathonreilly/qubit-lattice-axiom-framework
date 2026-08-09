@@ -18,10 +18,6 @@ required before any effective status.
 
 Explains the lepton/quark Koide contrast by the recordable lens: only colorless unconfined fermions have pole masses (realized records), so Q_lepton(pole) = 0.666661 is fixed to 6e-6 with perturbation spread ~2e-4, while the running quark values Q_up = 0.849 and Q_down = 0.731 drift with scheme (rescaling light quarks by 0.8-1.3 moves Q_down over 0.71-0.75).
 
-Original verdict: Koide is a statement about recorded (pole) masses, which confinement denies quarks — grounding the known pole-vs-running obstacle in the recordable lens plus the framework's SU(3) confinement.
-Scope: Qualitative explanation of the contrast, not a quantitative derivation of quark masses; PDG values are comparators only; neutrinos are a separate unaddressed case.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Koide holds iff recorded (pole) masses exist: confinement denies quarks pole mas
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Koide is a statement about recorded (pole) masses, which confinement denies quarks — grounding the known pole-vs-running obstacle in the recordable lens plus the framework's SU(3) confinement.
+- Extraction scope (triage compression; may reflect later context): Qualitative explanation of the contrast, not a quantitative derivation of quark masses; PDG values are comparators only; neutrinos are a separate unaddressed case.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Extends the 2026-06-06 recordable-lens cluster (r = 1/2 count, delta-split arrow, 2/9 local readout) from the charged leptons to the quark contrast.
 

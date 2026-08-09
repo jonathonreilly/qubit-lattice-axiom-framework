@@ -18,10 +18,6 @@ required before any effective status.
 
 Three observables from the single axiom Cl(3) on Z^3 with zero SM inputs: v = 246.3 GeV vs 246.22 observed (+0.03%), alpha_s(M_Z) = 0.1182 vs 0.1179 (+0.3%), and m_t = 165.4 GeV vs 172.69 (-4.2%). The structural insight is that hierarchy and gauge coupling are the same physics from one number <P> = 0.5934: v/M_Pl = alpha_LM^16 uses one u_0 per link (det route) while alpha_s(v) = 4*pi*alpha_LM^2 = 0.1033 uses two u_0 per vertex (Lepage-Mackenzie), so the 17 decades between M_Pl and v are bridged by the hierarchy theorem, not by running.
 
-Original verdict: The y_t gate is BOUNDED with three honest readings: zero-import m_t = 165 GeV (-4.2%), one-import m_t = 173 GeV (+0.1%) using observed alpha_s(M_Z), and structural m_t ~ v/sqrt(2) = 173.3 GeV (+0.4%).
-Scope: BOUNDED, 12/12 PASS, zero external inputs; bounded uncertainties itemized as <P> lattice artifacts ~0.1%, 2-loop QCD running ~1%, 1-loop y_t RGE over 17 decades ~5% (the m_t bottleneck), threshold matching ~1%, scheme matching ~3%.
-Escape conditions (negative claims): The -4.2% m_t residual is attributed to the 1-loop y_t RGE systematic over 17 decades (~5%), with the named fix being a 2-loop y_t RGE; the zero-import chain explicitly trades 4.2% accuracy for zero imports where the 1-import chain trades one observed input for 0.1% accuracy.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The zero-import closure claim (v +0.03%, alpha_s +0.3%, m_t -4.2%) WITH the red 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The y_t gate is BOUNDED with three honest readings: zero-import m_t = 165 GeV (-4.2%), one-import m_t = 173 GeV (+0.1%) using observed alpha_s(M_Z), and structural m_t ~ v/sqrt(2) = 173.3 GeV (+0.4%).
+- Extraction scope (triage compression; may reflect later context): BOUNDED, 12/12 PASS, zero external inputs; bounded uncertainties itemized as <P> lattice artifacts ~0.1%, 2-loop QCD running ~1%, 1-loop y_t RGE over 17 decades ~5% (the m_t bottleneck), threshold matching ~1%, scheme matching ~3%.
+- Extraction escape conditions (negative claims; triage compression): The -4.2% m_t residual is attributed to the 1-loop y_t RGE systematic over 17 decades (~5%), with the named fix being a 2-loop y_t RGE; the zero-import chain explicitly trades 4.2% accuracy for zero imports where the 1-import chain trades one observed input for 0.1% accuracy.
 - Extraction red flags: Presents three different m_t readings (165.4, 173, 173.3 GeV) as all honest and well-supported without selecting one; the zero-import value is the worst match to observation.
 - Supersession (as known at extraction): Compared against three prior y_t approaches: crossover theorem (171 GeV, 1-import), IR fixed point (173.2 GeV, 1-input), and a CW minimum route (135 GeV) recorded as the wrong tool and FAILS.
 

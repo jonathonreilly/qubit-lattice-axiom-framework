@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The native C3 generation Berry/holonomy route is pruned because the central projectors are parameter-constant, so Berry curvature and holonomy are FLAT and nontrivial projector motion requires extra structure. Three earlier prunings are carried: oriented spectral flow needs a supplied path orientation, a free Z2 torsor has no equivariant canonical section, and Coxeter/braid consistency leaves a global exchange sign without selecting CAR or a chirality grading.
 
-Original verdict: Four selector routes closed, all for structural reasons.
-Scope: Geometric-phase selector routes for the generation sector.
-Escape conditions (negative claims): Extra structure producing nontrivial projector motion; any supplied orientation.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Another independent Koide/generation selector family closed for structural reaso
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Four selector routes closed, all for structural reasons.
+- Extraction scope (triage compression; may reflect later context): Geometric-phase selector routes for the generation sector.
+- Extraction escape conditions (negative claims; triage compression): Extra structure producing nontrivial projector motion; any supplied orientation.
 - Extraction red flags: Another independent family of Koide/generation selector routes closes negatively — relevant to the r=1/2 and Q=2/3 lanes (compare idx 10386, 10451).
 - Supersession (as known at extraction): Companion to idx 10489; shares three entries with idx 10431 (eta spectral-flow boundary filter).
 

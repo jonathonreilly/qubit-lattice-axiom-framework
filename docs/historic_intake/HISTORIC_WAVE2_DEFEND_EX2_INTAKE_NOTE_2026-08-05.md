@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Four verdicts: EX2's one-parameter redundancy is FICTITIOUS as a symmetry (the automorphism group of the framework's structure on the carrier is the finite group S_3 acting TRIVIALLY on g_0/g_1); its Gamma = diag(lambda, mu, mu) group facts are true but the consequence clause is refuted because the positive-spectrum cone also breaks Gamma and bounds the product to r < 1 strictly; EX2 is RIGHT that w_1/w_0 is genuinely free (an exact one-parameter dimension count) but its own escape hatch is CIRCULAR since both horns are cardinalities of landed framework-supplied finite sets; and EX1's associativity pin fixes one factor which was never the free one, delivering r = 1.
 
-Original verdict: EX1 and EX2 have NO arithmetic conflict — EX1's residual is the counting exponent s, EX2's is nu = w_1/w_0, and nu = 2^s exactly; the tension is between two framings of one agreed residual and both framings are partly wrong.
-Scope: Herm(circ_3) as the real commutative algebra R x R x R in eigen-slot coordinates; scratch runner SCORECARD PASS=83 FAIL=0 with 12 construction-mutation probes.
-Escape conditions (negative claims): The trace's own weighting of the two blocks is Tr P_0 : Tr P_1 = 1 : 2, which is the r = 1 horn.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -68,6 +64,9 @@ TERMINAL adjudication of the charged-lepton binary campaign and the most consequ
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): EX1 and EX2 have NO arithmetic conflict — EX1's residual is the counting exponent s, EX2's is nu = w_1/w_0, and nu = 2^s exactly; the tension is between two framings of one agreed residual and both framings are partly wrong.
+- Extraction scope (triage compression; may reflect later context): Herm(circ_3) as the real commutative algebra R x R x R in eigen-slot coordinates; scratch runner SCORECARD PASS=83 FAIL=0 with 12 construction-mutation probes.
+- Extraction escape conditions (negative claims; triage compression): The trace's own weighting of the two blocks is Tr P_0 : Tr P_1 = 1 : 2, which is the r = 1 horn.
 - Extraction red flags: The single most consequential finding in this pack: the r = 1/2 route's K/CPT orbit reading traces to a SUPERSEDED axiom memo, and two live surfaces still cite it for a load-bearing clause.
 - Supersession (as known at extraction): Flags a live surface-consistency issue: the route to the K/CPT orbit reading — hence to w = (1,1) and r = 1/2 — runs through a SUPERSEDED axiom memo, since docs/MINIMAL_AXIOMS_2026-06-29.md:137-155 records that the superseded 2026-06-05 wording gave the K/CPT orbit reading and rules it out, yet two surfaces still cite the superseded memo for a load-bearing clause.
 

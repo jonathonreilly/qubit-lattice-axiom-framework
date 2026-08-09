@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes both of Cycle 889's named open questions: the even complement family gets a derived (not fitted) mechanism with a SEALED holdout verification, and the non-two-run dirt gets an exact k-run law of which 889's law is the two-run sub-case.
 
-Original verdict: Complements belong to banks and the law generalizes to counting runs, with the residual misses disclosed rather than absorbed.
-Scope: Owner-directed campaign-5; one carrier-level holdout miss and two 2-episode residuals are reported as partial results.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Closes Cycle 889's two named opens: derived complement mechanism with SEALED hol
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Complements belong to banks and the law generalizes to counting runs, with the residual misses disclosed rather than absorbed.
+- Extraction scope (triage compression; may reflect later context): Owner-directed campaign-5; one carrier-level holdout miss and two 2-episode residuals are reported as partial results.
 - Extraction red flags: Process disclosures record that the worker's first mechanism hypothesis was refuted by its own instrumentation and that the checker's first full run honest-failed its own declared criteria.
 - Supersession (as known at extraction): Successor to Cycle 889; generalizes its two-run law to all k.
 

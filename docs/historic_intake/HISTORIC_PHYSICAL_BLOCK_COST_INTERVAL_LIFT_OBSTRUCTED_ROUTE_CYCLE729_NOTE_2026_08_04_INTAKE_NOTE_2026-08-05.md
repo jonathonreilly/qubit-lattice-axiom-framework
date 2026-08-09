@@ -18,10 +18,6 @@ required before any effective status.
 
 For the two-cell one-tick box {0,1,2}x{0,1}x{0,1}x{0,1} (24 corners, 17280 minimal pieces in 1080 orbits of size 16, 48-piece dissections), the spatial adjacency cost of a dissection lies in [216, 320] with both ends attained: the floor by an integer certificate of value 110144 at denominator 512 (least slack zero on all 1080 orbits and all 17280 pieces, tight on 30) attained by the stacked monotone stencil, and the ceiling by a certificate of value 15728 at denominator 49 (tight on 53) attained by an exhibited 48-piece dissection. The cost-320 maximiser has sixteen facets carried by a single piece away from the box boundary, so it is not face-to-face and no lift produces it — which explains why the previous cycle's lift-based hill climb stopped at 318.
 
-Original verdict: The cost interval is 216 to 320 with both ends reached, and the maximiser lies outside the reach of lift-based construction by a structural obstruction rather than by search failure.
-Scope: Pinned for this box and this charge only; nothing is said about how the interval scales; both certificates are supplied integer data verified rather than searched for, and no claim is made that 512 and 49 are minimal denominators; the charge convention (corner pairs separated by more than one lattice step) and the minimal-piece convention are named as choices not forced by the lattice.
-Escape conditions (negative claims): Non-regularity is proved for THIS maximiser, not for maximisers as a class — whether every cost-maximising dissection of every such box is non-liftable is explicitly open. The lift obstruction is specific to face-to-face lower hulls.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Two-cell one-tick cost interval [216,320] both ends attained; maximiser provably
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The cost interval is 216 to 320 with both ends reached, and the maximiser lies outside the reach of lift-based construction by a structural obstruction rather than by search failure.
+- Extraction scope (triage compression; may reflect later context): Pinned for this box and this charge only; nothing is said about how the interval scales; both certificates are supplied integer data verified rather than searched for, and no claim is made that 512 and 49 are minimal denominators; the charge convention (corner pairs separated by more than one lattice step) and the minimal-piece convention are named as choices not forced by the lattice.
+- Extraction escape conditions (negative claims; triage compression): Non-regularity is proved for THIS maximiser, not for maximisers as a class — whether every cost-maximising dissection of every such box is non-liftable is explicitly open. The lift obstruction is specific to face-to-face lower hulls.
 - Extraction red flags: Three carve-outs named in place: certificate weights/constants/denominators are supplied to the runner rather than derived by it; cross-check counts come from probes not part of the landed artifact; and the values 324 and 256 are quoted from the previous cycle's record, not measured here.
 - Supersession (as known at extraction): Corrects the previous cycle upward twice: its best witness of cost 318 is superseded by the verified cost-320 dissection, and its claim that sharpening the ceiling needs a different certificate SHAPE is wrong — the shape is the same and only the denominator changes (49 rather than <=16), landing the bound on 320 not 324.
 

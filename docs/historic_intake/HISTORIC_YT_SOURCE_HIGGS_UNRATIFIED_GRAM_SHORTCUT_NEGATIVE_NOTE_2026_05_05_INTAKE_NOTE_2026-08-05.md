@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 A synthetic perfect-Gram witness with Res(C_ss)=4, Res(C_sH)=6, Res(C_HH)=9 has zero Gram determinant yet is still rejected by the postprocessor contract for absent canonical-Higgs identity, identity certificate, normalization certificate and retained-route gate; a counterfamily shows the same unratified rows coexist with different canonical-Higgs overlaps. Runner SUMMARY: PASS=10 FAIL=0.
 
-Original verdict: It does not — the rows certify at most purity relative to the supplied unratified operator; exact negative boundary.
-Scope: Whether perfect Gram purity against an unratified supplied operator constitutes an O_H certificate.
-Escape conditions (negative claims): Supply a same-surface canonical-Higgs operator identity and normalization certificate, then produce production C_ss/C_sH/C_HH pole residues and rerun builder, postprocessor, retained-route certificate and the PR230 assembly gate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -62,6 +58,9 @@ Gram-purity terminal: even a perfect synthetic Gram witness certifies only purit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): It does not — the rows certify at most purity relative to the supplied unratified operator; exact negative boundary.
+- Extraction scope (triage compression; may reflect later context): Whether perfect Gram purity against an unratified supplied operator constitutes an O_H certificate.
+- Extraction escape conditions (negative claims; triage compression): Supply a same-surface canonical-Higgs operator identity and normalization certificate, then produce production C_ss/C_sH/C_HH pole residues and rerun builder, postprocessor, retained-route certificate and the PR230 assembly gate.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL shortcut-closure of the Gram-purity sub-chain (latest, 2026-05-05); closes the loophole opened by the witness 2438 and the smoke run 2447.
 

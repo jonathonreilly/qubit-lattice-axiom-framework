@@ -18,10 +18,6 @@ required before any effective status.
 
 The zero-parameter prediction m_t/m_u ~ 3 x exp(0.173 x 39) x 39 ~ 12,000 against observed ~75,000: log_10 predicted 4.1 vs observed 4.87, a 0.8-decade (factor ~6, ~16% on the log) discrepancy with the U(1) proxy. The SU(3) Casimir raises Delta(gamma)_13 to 0.286 (log 5.5) and with non-perturbative confinement to 0.333 (log 6.2), so the observed 4.87 lies inside the [4.1, 5.5] band.
 
-Original verdict: The strongest honest phrasing is that the zero-parameter prediction reproduces the exponent to within 16% (the ratio to within a factor of 6); the recommended paper claim is the ~2-decade band log_10(m_t/m_u) in [3.5, 5.5] bracketing 4.87, explicitly not a precision test.
-Scope: BOUNDED — the mechanism is structural and zero-parameter but the numerical output depends on a U(1) proxy for SU(3) and a strong-coupling model that is not first-principles.
-Escape conditions (negative claims): Upgrading to closed requires a first-principles SU(3) calculation replacing the strong-coupling model and U(1) proxy.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The mass-hierarchy honest synthesis: exponent reproduced to 16% (0.8 decades sho
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The strongest honest phrasing is that the zero-parameter prediction reproduces the exponent to within 16% (the ratio to within a factor of 6); the recommended paper claim is the ~2-decade band log_10(m_t/m_u) in [3.5, 5.5] bracketing 4.87, explicitly not a precision test.
+- Extraction scope (triage compression; may reflect later context): BOUNDED — the mechanism is structural and zero-parameter but the numerical output depends on a U(1) proxy for SU(3) and a strong-coupling model that is not first-principles.
+- Extraction escape conditions (negative claims; triage compression): Upgrading to closed requires a first-principles SU(3) calculation replacing the strong-coupling model and U(1) proxy.
 - Extraction red flags: Warns the band is ~2 decades wide and explicitly instructs not to claim precision; the band width reflects model dependence.
 - Supersession (as known at extraction): Synthesis/assessment over MASS_HIERARCHY_RG, MASS_HIERARCHY_SU3, MASS_SPECTRUM, EWSB_GENERATION_CASCADE and GENERATION_GAP_CLOSURE; no new scripts run.
 

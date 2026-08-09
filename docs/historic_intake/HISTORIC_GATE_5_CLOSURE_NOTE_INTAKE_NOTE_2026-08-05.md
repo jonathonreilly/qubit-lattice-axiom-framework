@@ -18,10 +18,6 @@ required before any effective status.
 
 Splits the R = 5.48 chain into three input classes: particle content (derived from the same orbit algebra as generations, with the hw=0 light singlet as the DM candidate), cross-section and coupling (derived from alpha_s and SU(3) group theory plus the lattice Sommerfeld factor, 20/20 PASS), and the thermal freeze-out mechanism (Boltzmann, Friedmann, g_* = 106.75, x_F ~ 25) which is argued to be universal cosmology common to every DM model.
 
-Original verdict: The ratio is a structural consistency result, not a pure first-principles derivation, because the thermal cosmological mechanism is imported as universal physics.
-Scope: The framework derives the inputs to the thermal history, not the history itself.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Gate-5 honest verdict: the DM ratio is structural consistency, not first-princip
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The ratio is a structural consistency result, not a pure first-principles derivation, because the thermal cosmological mechanism is imported as universal physics.
+- Extraction scope (triage compression; may reflect later context): The framework derives the inputs to the thermal history, not the history itself.
 - Extraction red flags: Defends imported machinery by analogy to other DM models rather than deriving it; the honest boundary is drawn to place Boltzmann and Friedmann outside the claim.
 - Supersession (as known at extraction): Its 'universal cosmology' framing is what the later DM notes (DM_DIRECT_BOLTZMANN idx 347, DM_STOSSZAHLANSATZ_THEOREM idx 405) try to replace with lattice derivations.
 

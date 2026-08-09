@@ -18,10 +18,6 @@ required before any effective status.
 
 On an 18^3 open-boundary lattice, opposite charges attract and like charges repel at all 5 distances with |F| ~ d^-2.11 (R^2 = 0.9995), neutrals feel exactly zero force, U(1) link phases deflect charged wavepackets monotonically in B, and the Wilson plaquette holonomy equals the applied B exactly (7/7 electrostatic tests pass).
 
-Original verdict: The staggered lattice accommodates Coulomb and magnetic sectors consistently and independently of gravity, with correct signs and an approximate inverse-square law.
-Scope: Bounded probe only: does not test Maxwell's equations, Lorentz covariance, the full Lorentz force, or E-B coupling; transverse deflection scales as B^1.6 suggesting the probe is non-perturbative at these fields.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The EM probe: Coulomb d^-2.11 (R^2=0.9995), exact neutral null, magnetic deflect
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The staggered lattice accommodates Coulomb and magnetic sectors consistently and independently of gravity, with correct signs and an approximate inverse-square law.
+- Extraction scope (triage compression; may reflect later context): Bounded probe only: does not test Maxwell's equations, Lorentz covariance, the full Lorentz force, or E-B coupling; transverse deflection scales as B^1.6 suggesting the probe is non-perturbative at these fields.
 - Extraction red flags: Charge-conjugation symmetry is broken in the staggered centroid dynamics (V coupled to the mass channel), described as a known lattice artifact rather than a physics failure.
 - Supersession (as known at extraction): none recorded
 

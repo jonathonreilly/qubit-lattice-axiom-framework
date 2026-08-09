@@ -18,10 +18,6 @@ required before any effective status.
 
 Boundary Condition Protection: y_t = g_s/sqrt(2 N_c) = g_s/sqrt(6) receives zero radiative corrections to all orders in lattice perturbation theory via Gamma_5 centrality in Cl(3); chain alpha_s(M_Pl)=0.092 -> g_s=1.075 -> y_t(M_Pl)=0.439 -> y_t(M_Z)=1.001-1.005 -> m_t = 174-175 GeV (+0.7-1.1% from 173.0 observed). Trace identity 22/22 PASS, centrality 31/31 PASS.
 
-Original verdict: CLOSED on the reframed surface: literal Z_Y(mu) = Z_g(mu) is FALSE and physically wrong; the correct equivalent is boundary-condition protection.
-Scope: d=3 staggered lattice, Cl(3) with 8-dim rep; imports alpha_s(M_Pl)=0.092 (V-scheme, BOUNDED) and 1-loop SM RGEs (3-5% theory band).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The paper-safe y_t reframe: literal Z_Y = Z_g is FALSE and physical protection i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CLOSED on the reframed surface: literal Z_Y(mu) = Z_g(mu) is FALSE and physically wrong; the correct equivalent is boundary-condition protection.
+- Extraction scope (triage compression; may reflect later context): d=3 staggered lattice, Cl(3) with 8-dim rep; imports alpha_s(M_Pl)=0.092 (V-scheme, BOUNDED) and 1-loop SM RGEs (3-5% theory band).
 - Extraction red flags: Declares the lane CLOSED by reframing the original open item rather than by proving it; the imported alpha_s remains BOUNDED.
 - Supersession (as known at extraction): Paper-safe restatement of the y_t chain (idx 1800, 1802, 1803); FAMILY TERMINAL for the renormalized-y_t family.
 

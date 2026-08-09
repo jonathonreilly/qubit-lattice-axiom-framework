@@ -18,10 +18,6 @@ required before any effective status.
 
 Independent Clifford-centrality route: 31/31 PASS establishing G_5 central in Cl(3) with center span{I,G5}, 1-loop Yukawa vertex factorization to relative error 5e-17, and explicitly Z_Y = Z_scalar != Z_g (ratio -2.03). V-scheme boundary condition gives m_t = 174.2 GeV (+0.7%); 1-loop-extrapolated g_3 gives 109.0 GeV (-37%).
 
-Original verdict: Z_Y = Z_g is the WRONG question and does not hold even on the lattice; the gap is CLOSED by reframing to UV boundary-condition protection.
-Scope: d=3 staggered lattice, L=8, m=0.1, Cl(3) 8x8 representation; non-renormalization is a d=3 lattice result only, does not extend to continuum d=4.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The honest wildcard route: Z_Y = Z_g is the WRONG QUESTION — 31/31 centrality 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Z_Y = Z_g is the WRONG question and does not hold even on the lattice; the gap is CLOSED by reframing to UV boundary-condition protection.
+- Extraction scope (triage compression; may reflect later context): d=3 staggered lattice, L=8, m=0.1, Cl(3) 8x8 representation; non-renormalization is a d=3 lattice result only, does not extend to continuum d=4.
 - Extraction red flags: Title says 'Non-Renormalization Theorem' while the body's headline finding is that the sought identity Z_Y = Z_g is false; the 1-loop-extrapolated boundary condition is off by -37%.
 - Supersession (as known at extraction): Wildcard route independent of the Ward-identity approach in idx 1800/1802; feeds the consolidated note idx 1802.
 

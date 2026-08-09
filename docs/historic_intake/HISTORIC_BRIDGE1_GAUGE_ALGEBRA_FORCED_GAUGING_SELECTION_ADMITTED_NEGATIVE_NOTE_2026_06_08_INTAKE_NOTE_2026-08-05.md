@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The Standard Model gauge ALGEBRA su(N_c) + su(2) + u(1) is forced as the carrier symmetry — the automorphisms of M_2(C) give su(2), the central u(1) completes u(2), and N_c = d is a genuine covariation from the taste cube {0,1}^d with one axis selected as the weak fiber — but the GAUGING SELECTION (which symmetry is dynamically gauged, the physical-color identification MR_color, and the chiral su(2)_L) is the irreducible admission.
 
-Original verdict: Algebra forced, gauging admitted — the honest Bridge-1 verdict, with one campaign no-go recorded as REFUTED in the process record.
-Scope: Bridge-1 gauge-group residual; adds no axiom and no fitted or imported value; runner PASS=4 on the forced-algebra side.
-Escape conditions (negative claims): The negative is confined to gauging selection: a discriminator that distinguishes gauged from ungauged symmetry, or a derivation of MR_color / su(2)_L, would discharge it; the note records that a related campaign no-go was itself refuted.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The honest Bridge-1 verdict: the SM gauge ALGEBRA su(N_c)+su(2)+u(1) forced as c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Algebra forced, gauging admitted — the honest Bridge-1 verdict, with one campaign no-go recorded as REFUTED in the process record.
+- Extraction scope (triage compression; may reflect later context): Bridge-1 gauge-group residual; adds no axiom and no fitted or imported value; runner PASS=4 on the forced-algebra side.
+- Extraction escape conditions (negative claims; triage compression): The negative is confined to gauging selection: a discriminator that distinguishes gauged from ungauged symmetry, or a derivation of MR_color / su(2)_L, would discharge it; the note records that a related campaign no-go was itself refuted.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Builds on the retained QUBIT_LINK_U2_CONNECTION_ALGEBRA bounded theorem; records the refutation of an earlier campaign no-go.
 

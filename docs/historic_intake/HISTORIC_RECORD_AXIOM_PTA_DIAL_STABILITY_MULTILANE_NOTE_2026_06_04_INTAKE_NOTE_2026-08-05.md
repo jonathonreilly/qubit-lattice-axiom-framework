@@ -18,10 +18,6 @@ required before any effective status.
 
 Supplies the genuine dial symmetry as the block swap r -> 1/(4r) (correcting the prior bogus r <-> 1-r), whose unique fixed point is r = 1/2 where the 2-sector entropy is maximal; the multi-lane occupancy table puts charged leptons at r = 0.49999 while up quarks (0.772), down quarks (0.597) and neutrinos ([0, 0.378]) sit off-symmetric; 31/31 PASS.
 
-Original verdict: r = 1/2 is SYMMETRIC-STATIONARY (unstable under sharpening r -> 2r^2, stable under thermalizing sqrt(r/2)), and the multi-lane reading is consistent without overreach; the candidate axiom is not adopted.
-Scope: C_3-equivariant Hermitian circulant on hw=1; observed Koide Q values enter only as labelled observational inputs.
-Escape conditions (negative claims): The open gate is what dynamically selects the 2-sector block-count coarse-graining; the 'colored -> hierarchy, Majorana -> degenerate' story is explicitly a consistency narrative, not a derivation.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The dial-symmetry CORRECTION: the genuine symmetry is r -> 1/(4r), not r <-> 1-r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): r = 1/2 is SYMMETRIC-STATIONARY (unstable under sharpening r -> 2r^2, stable under thermalizing sqrt(r/2)), and the multi-lane reading is consistent without overreach; the candidate axiom is not adopted.
+- Extraction scope (triage compression; may reflect later context): C_3-equivariant Hermitian circulant on hw=1; observed Koide Q values enter only as labelled observational inputs.
+- Extraction escape conditions (negative claims; triage compression): The open gate is what dynamically selects the 2-sector block-count coarse-graining; the 'colored -> hierarchy, Majorana -> degenerate' story is explicitly a consistency narrative, not a derivation.
 - Extraction red flags: Records that an earlier forcing version of this axiom was falsified by quark and neutrino Q values, and that a prior note's proposed symmetry was not a symmetry.
 - Supersession (as known at extraction): Corrects the symmetry claim in FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02 and supersedes the falsified forcing version that put every sector at Q = 2/3.
 

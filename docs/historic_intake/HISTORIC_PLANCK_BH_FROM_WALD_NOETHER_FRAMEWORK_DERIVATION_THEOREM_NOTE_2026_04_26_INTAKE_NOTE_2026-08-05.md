@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies the framework's c_cell = 1/4 as the natural Wald-Noether charge density per primitive horizon face, matching the Bekenstein-Hawking coefficient via the universal Wald formula (PASS=25 FAIL=0).
 
-Original verdict: Safe wording: the Planck pin a^-1 = M_Pl is retained on the minimal stack plus minimal universal physics inputs. UNSAFE: that the framework derives S = A/(4 G hbar) from first principles without physical input — that stronger statement is NOT proved.
-Scope: Partially closes the [W5] weak point ('BH formula as physical input'); the Wald formula itself remains UNIVERSAL PHYSICS INPUT retained alongside Newton's equation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ c_cell = 1/4 as Wald-Noether charge density with SAFE wording enforced — the P
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Safe wording: the Planck pin a^-1 = M_Pl is retained on the minimal stack plus minimal universal physics inputs. UNSAFE: that the framework derives S = A/(4 G hbar) from first principles without physical input — that stronger statement is NOT proved.
+- Extraction scope (triage compression; may reflect later context): Partially closes the [W5] weak point ('BH formula as physical input'); the Wald formula itself remains UNIVERSAL PHYSICS INPUT retained alongside Newton's equation.
 - Extraction red flags: Explicitly forbids the stronger reading; the framework supplies only the coefficient, not the formula.
 - Supersession (as known at extraction): none recorded
 

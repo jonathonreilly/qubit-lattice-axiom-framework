@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The native low-degree Hermitian surface is exactly span_R{I, Gamma_5, Gamma_1..3, A_1..3} with A_1 = -i Gamma_2 Gamma_3 etc., so the natural axis-labelled families are the vector triplet Gamma_i and the pseudovector triplet A_i = 2 B_i — and their trace/spectral invariants are too symmetric to select an axis.
 
-Original verdict: The missing S_3 -> Z_2 selector does not come from the lowest-degree native Clifford triplets alone and must be a genuinely new dynamical or higher-operator theorem.
-Scope: A no-go only for the simplest same-surface closure route; explicitly sharpens rather than softens the critical-path gap.
-Escape conditions (negative claims): Four named larger objects: a higher-degree native operator, a bilocal/nonlocal taste operator, a projector-valued order parameter, or a derived dynamical potential on a larger native surface.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The weak-axis base no-go: the native low-degree Hermitian surface supports no S_
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The missing S_3 -> Z_2 selector does not come from the lowest-degree native Clifford triplets alone and must be a genuinely new dynamical or higher-operator theorem.
+- Extraction scope (triage compression; may reflect later context): A no-go only for the simplest same-surface closure route; explicitly sharpens rather than softens the critical-path gap.
+- Extraction escape conditions (negative claims; triage compression): Four named larger objects: a higher-degree native operator, a bilocal/nonlocal taste operator, a projector-valued order parameter, or a derived dynamical potential on a larger native surface.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The base no-go that the projector (1171), operator-search (1170), dynamical (1165) and nonlocal (1169) notes each test an escape from.
 

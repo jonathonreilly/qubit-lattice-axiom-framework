@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Consolidates the whole branch-local Q packet — roughly forty audited source classes including polynomial/Reynolds grammars, block exchange, dihedral normalizer, categorical naturality, Haar isotropy, conditional expectation, copy/delete, refinement naturality, Morita-normalized determinants, entropy/information-geometry/minimax/KMS/Markov, RG/Ward/Wess-Zumino/anomaly/gauge/Casimir, Stiefel-Whitney, Noether, spectral action, fusion, equivariant index, plus three separate twenty-attack batteries on the Z sign/zero section.
 
-Original verdict: The packet proves narrowing, not the charged-lepton Koide value — every audited class leaves the same one-scalar residual.
-Scope: Bounded theorem over the retained source classes audited on this branch; explicitly not a claim that no future physics can close Koide.
-Escape conditions (negative claims): Each audited class carries its own named escape; the consolidated statement is that none is supplied by retained structure.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -173,6 +169,9 @@ TERMINAL of the 103-note Q source-law sweep: ~forty audited source classes exhau
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The packet proves narrowing, not the charged-lepton Koide value — every audited class leaves the same one-scalar residual.
+- Extraction scope (triage compression; may reflect later context): Bounded theorem over the retained source classes audited on this branch; explicitly not a claim that no future physics can close Koide.
+- Extraction escape conditions (negative claims; triage compression): Each audited class carries its own named escape; the consolidated statement is that none is supplied by retained structure.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The Q-side counterpart of the delta endpoint-class exhaustion note — the sweep's consolidating index and de facto terminal document.
 

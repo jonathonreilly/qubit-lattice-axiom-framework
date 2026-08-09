@@ -18,10 +18,6 @@ required before any effective status.
 
 CORRECTION that WITHDRAWS part of Cycle 664: only ONE of four Cycle-664 selected roots agrees with the independently branch-tracked Cycle 662 surface within the frozen 5e-5 phase tolerance. The three reidentified rows are L9 beta=-0.30 (+0.299980793 vs tracked +0.313849985, delta 1.3869e-2), L13 beta=-0.30 (+0.291998548 vs +0.313690461, delta 2.1692e-2) and L13 beta=-0.35 (+0.278007146 vs +0.358161440, delta 8.0154e-2); only L9 beta=-0.35 matches post hoc at 1.7e-12. The corrected recurring branch approaches about +0.31368 (beta=-0.30) and +0.3580 (beta=-0.35), corroborated by the lawful two-line word peak at +0.313417.
 
-Original verdict: WITHDRAWN: the identification of the L9/L13 beta=-0.30 and L13 beta=-0.35 selected roots as the recurring physical second line, and the suggestion that all four selected eigenvectors are the right two-level population-transfer targets. RETAINED: that all four roots are exact finite-volume eigenzeros with their reported overlaps and residuals.
-Scope: Four rows of Cycle 664 only; the correction is explicitly restricted to those rows and does not erase the finite-box discoveries.
-Escape conditions (negative claims): The methodological escape is explicit: replace 'smallest residual in a wide window' (Cycle 629's inherited global-minimum rule) with a branch-identity requirement, because many razor-thin finite-L zeros coexist inside the continuum window.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ CORRECTION that WITHDRAWS part of Cycle 664: only ONE of four selected roots agr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): WITHDRAWN: the identification of the L9/L13 beta=-0.30 and L13 beta=-0.35 selected roots as the recurring physical second line, and the suggestion that all four selected eigenvectors are the right two-level population-transfer targets. RETAINED: that all four roots are exact finite-volume eigenzeros with their reported overlaps and residuals.
+- Extraction scope (triage compression; may reflect later context): Four rows of Cycle 664 only; the correction is explicitly restricted to those rows and does not erase the finite-box discoveries.
+- Extraction escape conditions (negative claims; triage compression): The methodological escape is explicit: replace 'smallest residual in a wide window' (Cycle 629's inherited global-minimum rule) with a branch-identity requirement, because many razor-thin finite-L zeros coexist inside the continuum window.
 - Extraction red flags: Three of four previously reported identifications were wrong — a 75% error rate in the superseded selection rule; the note is candid but this is the clearest methodological failure recorded in the sweep.
 - Supersession (as known at extraction): CORRECTS Cycle 664 and, transitively, the global-minimum identity rule inherited from Cycle 629. C_ref is marked 'corrected — branch tracking is required; global-minimum identity is withdrawn'. The immediate preparation campaign is redirected to the branch-tracked eigenvectors near +0.31368 / +0.3580.
 

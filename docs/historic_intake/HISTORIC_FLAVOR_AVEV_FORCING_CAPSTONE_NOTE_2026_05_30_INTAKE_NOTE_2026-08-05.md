@@ -18,10 +18,6 @@ required before any effective status.
 
 Native symmetries ALLOW the uniform generation mass a*I (S_3-invariant, and native CPT reflections are generation-blind), and generic dynamics makes the uniform condensate win (a_VEV != 0 -> Q = 1/3); only the chiral grading Gamma_chi = (2/3)J - I with Tr = -1 forces a = 0 via {M, Gamma_chi} = 0, and Gamma_chi is non-circulant hence non-native.
 
-Original verdict: The charged-lepton Koide value reduces cleanly to the one chiral input, whose role is reduced from 'explains 2/3' to 'promotes the import-free expected 2/3 to exact'.
-Scope: Lepton-specific; the cross-sector (quark) extrapolation of move 4 was caught and retracted in move 5.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ FLAVOR capstone: Q reduces cleanly to the one chiral input, with a mid-campaign 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The charged-lepton Koide value reduces cleanly to the one chiral input, whose role is reduced from 'explains 2/3' to 'promotes the import-free expected 2/3 to exact'.
+- Extraction scope (triage compression; may reflect later context): Lepton-specific; the cross-sector (quark) extrapolation of move 4 was caught and retracted in move 5.
 - Extraction red flags: Records that a cross-sector overreach was made and retracted mid-campaign.
 - Supersession (as known at extraction): Capstone of moves 1-6; names two distinct routes to force a_VEV = 0 (the operator-level Gamma_chi import, and untested dynamical selection of the chiral-critical point).
 

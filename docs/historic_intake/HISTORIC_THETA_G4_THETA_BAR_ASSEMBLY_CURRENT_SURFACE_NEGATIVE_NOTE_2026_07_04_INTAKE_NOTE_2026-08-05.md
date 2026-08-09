@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The inference 'paired-shift bookkeeping is derived + theta_bar is rephasing-invariant, therefore theta_bar = 0' is invalid: the exact paired-shift law (theta_gauge -> theta_gauge - n alpha, arg det M -> arg det M + n alpha, theta_bar = theta_gauge + arg det M) proves only invariance, not a value, and current gauge-side (G1-G3 all blocked) and mass-side (W2, determinant-bridge readiness both blocked) support supply no physical values, nontrivial transfer, or registration.
 
-Original verdict: The current assembly material does not retire theta; G4 stays gated behind G1-G3 and the mass-side determinant channel.
-Scope: Current-surface assembly test for the two Tier-A theta residual atoms (gauge_side_winding_account, mass_side_orientation_determinant_readout_bridge); retires nothing and edits no registry.
-Escape conditions (negative claims): Supply the physical values or a nontrivial transfer direction on either side — the note keeps a synthetic nonzero-transfer witness as an escape-hatch witness for the supplier class, explicitly not as a premise.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -60,6 +56,9 @@ The theta G4 terminal gate: paired-shift bookkeeping + rephasing invariance do N
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The current assembly material does not retire theta; G4 stays gated behind G1-G3 and the mass-side determinant channel.
+- Extraction scope (triage compression; may reflect later context): Current-surface assembly test for the two Tier-A theta residual atoms (gauge_side_winding_account, mass_side_orientation_determinant_readout_bridge); retires nothing and edits no registry.
+- Extraction escape conditions (negative claims; triage compression): Supply the physical values or a nontrivial transfer direction on either side — the note keeps a synthetic nonzero-transfer witness as an escape-hatch witness for the supplier class, explicitly not as a premise.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal gate of the July-4 theta gauge-side G1-G4 stack (idx 2053-2059, 2062, 2063); nothing downstream can assemble until it opens.
 

@@ -20,10 +20,6 @@ required before any effective status.
 
 Adversarial review found the Physicist-H closure was NOT unique: over the wide box [-5,10]^3 there are exactly three in-chamber chi^2 = 0 basins - Basin 1 (0.657, 0.934, 0.715) with sin delta_CP = -0.987, Basin 2 (28.0, 20.7, 5.0) with +0.554, and Basin X at permutation (2,0,1) with -0.419 - and only the retained perturbative-scale criterion ||J|| <= ||H_base|| (Frobenius 0.941 and operator 0.858 for Basin 1 versus 20.88/17.62 and 13.92/11.35) selects Basin 1.
 
-Original verdict: Closes four adversarial issues (basin non-uniqueness, permutation non-uniqueness, the U_e = I citation chain, delta_CP framing) and states the theta_23 upper-octant conditionality as a falsifiable retained structural prediction.
-Scope: Uniqueness is SCALE uniqueness from the axiom-native log-det expansion's convergence discipline, not variational uniqueness; the closure is additionally CONDITIONAL on theta_23 being in the upper octant, with the threshold measured to 4 digits.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ Adversarial tightening: THREE chi^2 = 0 basins (not one), permutation ambiguity,
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes four adversarial issues (basin non-uniqueness, permutation non-uniqueness, the U_e = I citation chain, delta_CP framing) and states the theta_23 upper-octant conditionality as a falsifiable retained structural prediction.
+- Extraction scope (triage compression; may reflect later context): Uniqueness is SCALE uniqueness from the axiom-native log-det expansion's convergence discipline, not variational uniqueness; the closure is additionally CONDITIONAL on theta_23 being in the upper octant, with the threshold measured to 4 digits.
 - Extraction red flags: Two CRITICAL adversarial findings against the sibling closure, including a second basin with OPPOSITE-sign delta_CP that reproduces all three observed angles to machine precision; the closure also became conditional on the theta_23 octant.
 - Supersession (as known at extraction): Corrects and tightens G1_PHYSICIST_H_PMNS_AS_F_H_CLOSURE_THEOREM (idx 533): 'unique chamber solution' becomes 'unique perturbative-scale basin' among three.
 

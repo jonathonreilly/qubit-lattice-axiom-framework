@@ -18,10 +18,6 @@ required before any effective status.
 
 Scanning N = 3..6 and masses 0.20-1.00 with the q=0 mode removed finds four rows with lambda_max >= 1 (finite pole witnesses) but volume stability fails (local m=0.30 gives 0.266, 1.463, 0.127, 0.366 at N=3,4,5,6), projector stability fails (N6 m=0.20: local 1.487 vs point-split 0.510), all crossing rows sit on even grids with 16 sin(p)=0 corners, and the residue-proxy spread is 5.15x. PASS=9 FAIL=0.
 
-Original verdict: The finite pole witnesses are route information, not scalar LSZ closure — they are sensitive to finite-volume parity, taste-corner aliasing, source projector, and the total-momentum derivative.
-Scope: Finite Wilson-exchange ladder with color-singlet q=0 removal at mu_IR^2 = 0.
-Escape conditions (negative claims): The narrower positive route is named: derive the continuum/taste/projector limit of the interacting color-singlet scalar denominator and its inverse-propagator derivative, or measure the same-source pole derivative in production FH/LSZ data.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Color-singlet denominator terminal: finite pole witnesses are route information 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The finite pole witnesses are route information, not scalar LSZ closure — they are sensitive to finite-volume parity, taste-corner aliasing, source projector, and the total-momentum derivative.
+- Extraction scope (triage compression; may reflect later context): Finite Wilson-exchange ladder with color-singlet q=0 removal at mu_IR^2 = 0.
+- Extraction escape conditions (negative claims; triage compression): The narrower positive route is named: derive the continuum/taste/projector limit of the interacting color-singlet scalar denominator and its inverse-propagator derivative, or measure the same-source pole derivative in production FH/LSZ data.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the color-singlet denominator sub-chain: the cleaned kernel still yields no stable pole.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Derives a Z_3 generation structure (cyclic permutation of the three spatial axes giving charges {0,1,2}, Higgs a Z_3 singlet via xi_5) and predicts y_t = 1.035 vs observed 0.994 and m_t = 180 GeV vs 173 GeV, both 4.2% off; script reports 12/12 tests PASS.
 
-Original verdict: Numerical prediction 4.2% off, with self-listed limitations: the 2-loop correction factor 0.82 is approximate, the charm/up hierarchy is not captured, and the down-type/lepton base coupling g_0^d is a separate unfixed parameter.
-Scope: What Z_3 Clebsch-Gordan coefficients determine: Yukawa texture (off-diagonal forbidden), tree-level universality, and the degenerate-Yukawa-plus-breaking-plus-IRFP mechanism — not the absolute scale g_0.
-Escape conditions (negative claims): A full 2-loop RGE with threshold matching, plus higher-order Z_3 breaking for the light-generation hierarchy.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The Z3-Clebsch generation route: y_t = 1.035 vs observed (4.2% off) WITH the 12/
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Numerical prediction 4.2% off, with self-listed limitations: the 2-loop correction factor 0.82 is approximate, the charm/up hierarchy is not captured, and the down-type/lepton base coupling g_0^d is a separate unfixed parameter.
+- Extraction scope (triage compression; may reflect later context): What Z_3 Clebsch-Gordan coefficients determine: Yukawa texture (off-diagonal forbidden), tree-level universality, and the degenerate-Yukawa-plus-breaking-plus-IRFP mechanism — not the absolute scale g_0.
+- Extraction escape conditions (negative claims; triage compression): A full 2-loop RGE with threshold matching, plus higher-order Z_3 breaking for the light-generation hierarchy.
 - Extraction red flags: Presents a 4.2%-off y_t/m_t prediction with 12/12 PASS framing; the 'cross-checks' (neutrino hierarchy, CKM smallness) are qualitative consistency statements, not independent verification.
 - Supersession (as known at extraction): Independent April route to y_t distinct from the Ward and step-scaling lanes; not referenced by the May PR #230 chain.
 

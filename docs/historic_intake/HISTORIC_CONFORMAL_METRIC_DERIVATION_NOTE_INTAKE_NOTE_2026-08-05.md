@@ -18,10 +18,6 @@ required before any effective status.
 
 Shows the conformal metric emerges in the eikonal (WKB) limit k L >> 1 — many wavelengths along the path — which does NOT require k >> 1/a or a -> 0, so the metric, geodesics and factor-of-2 light bending become unconditional rather than continuum-limit dependent.
 
-Original verdict: Upgrades the Tier-2 gravity signatures from CONDITIONAL to DERIVED by removing a mislabelled continuum dependency.
-Scope: Requires only long paths relative to wavelength; parallels the DM lane's correction of a 'continuum limit' that was really a thermodynamic limit (N -> infinity at fixed a).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Terminal of the eikonal arc: Tier-2 gravity signatures upgraded CONDITIONAL -> D
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Upgrades the Tier-2 gravity signatures from CONDITIONAL to DERIVED by removing a mislabelled continuum dependency.
+- Extraction scope (triage compression; may reflect later context): Requires only long paths relative to wavelength; parallels the DM lane's correction of a 'continuum limit' that was really a thermodynamic limit (N -> infinity at fixed a).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Revises the BROAD_GRAVITY_AUDIT assessment that the bundle closes only conditionally on a continuum limit.
 

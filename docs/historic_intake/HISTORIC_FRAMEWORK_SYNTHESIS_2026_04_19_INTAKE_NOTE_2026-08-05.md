@@ -18,10 +18,6 @@ required before any effective status.
 
 End-to-end synthesis from two axioms (Cl(3) local algebra, Z^3 substrate): hydrogen level ratios to 0.2-3.6% with Bohr radius r_0 = 2/g emergent, alpha_EM = 1/136.4 vs PDG 1/137.036 (0.21%) via the exact taste weight (7/8)(1/2)(8/9) = 7/18, and the full SM gauge structure from Cl+(3) = H, the pseudoscalar omega and dim Z^3 = 3 (94/94 algebraic checks pass).
 
-Original verdict: A complete documented derivation chain with one cross-sector bridge open; a 3.05e-4 near-identity is diagnosed as numerical rather than algebraic.
-Scope: Hydrogen errors are finite-box artifacts at N = 60; the electron mass requires a separate mechanism whose blockage is structural.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The two-axiom era's end-to-end FRAMEWORK SYNTHESIS with a self-diagnosed numeric
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A complete documented derivation chain with one cross-sector bridge open; a 3.05e-4 near-identity is diagnosed as numerical rather than algebraic.
+- Extraction scope (triage compression; may reflect later context): Hydrogen errors are finite-box artifacts at N = 60; the electron mass requires a separate mechanism whose blockage is structural.
 - Extraction red flags: Self-diagnoses one of its own near-identities (3.05e-4) as numerical coincidence rather than algebra.
 - Supersession (as known at extraction): Chapter-level index over roughly a dozen authority notes; cites ELECTRON_MASS_BLOCKAGE_NOTE (idx 423) as the structural blockage.
 

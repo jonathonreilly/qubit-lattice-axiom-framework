@@ -18,10 +18,6 @@ required before any effective status.
 
 On the weak-axis seed patch with A <= 4B the active realization is D_seed = x I + y C (or its exchange sheet), so Delta D_seed = (x-1) I + y C with exact coefficients x_+/- = (sqrt(A) +/- sqrt((4B-A)/3))/2 and y_+/- = (sqrt(A) -/+ sqrt((4B-A)/3))/2.
 
-Original verdict: The seed patch is positively closed at the D level - the only remaining freedom is off-seed.
-Scope: Aligned weak-axis seed patch only; does not derive the generic off-seed channel coefficients.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The one positive value law: the weak-axis seed patch closes exactly at the D lev
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The seed patch is positively closed at the D level - the only remaining freedom is off-seed.
+- Extraction scope (triage compression; may reflect later context): Aligned weak-axis seed patch only; does not derive the generic off-seed channel coefficients.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The one positive value law inside the otherwise negative Delta D chain.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Three entries, the substantive one being RETAINED NOTE-HASH DRIFT: strict lint reports retained-grade note-hash drift and its own message says edited retained notes must be independently re-audited, but this campaign runs no audits, so the drift is left out of scope. Also forbids the sidecar-as-evidence shortcut (dispatcher manifests are target-selection surfaces only) and records that the existing-PR refresh loop was rejected by user instruction.
 
-Original verdict: Three dispositions.
-Scope: One block.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Verification-integrity: strict lint detects RETAINED-GRADE NOTE-HASH DRIFT - ret
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three dispositions.
+- Extraction scope (triage compression; may reflect later context): One block.
 - Extraction red flags: RETAINED-GRADE NOTE-HASH DRIFT is detected by strict lint and explicitly left unresolved - retained notes were edited without re-audit.
 - Supersession (as known at extraction): none recorded
 

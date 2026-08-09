@@ -18,10 +18,6 @@ required before any effective status.
 
 The pointer basis is the eigenbasis of whichever dominates, the mass operator M or the native C_3 coupling K = C + C^dag = J - I: coupling-dominated (K >> M) gives the C_3 singlet+doublet with a trimaximal column (the neutrino regime, large PMNS), mass-dominated (M >> K) gives the corner basis (charged regime, U_e = I), and the basis tunes continuously with M/K - so the readout context is derivable from {LATTICE, QUANTUM}, not a 4th principle.
 
-Original verdict: The RECORD axiom disclaims the decoherence dynamics only as a PRIMITIVE, so the flavor readout context is derivable; the genuine residue is quantitative - the emergent C_3 coupling scale |K| must satisfy Delta m_nu << |K| << Delta m_charged.
-Scope: The charged mass eigenbasis being corner rests on the unaudited Z_3 trichotomy; why the neutrino is light is separate; the predictability sieve itself is standard decoherence.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Same-day CORRECTION: the flavor readout context IS derivable (pointer basis from
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The RECORD axiom disclaims the decoherence dynamics only as a PRIMITIVE, so the flavor readout context is derivable; the genuine residue is quantitative - the emergent C_3 coupling scale |K| must satisfy Delta m_nu << |K| << Delta m_charged.
+- Extraction scope (triage compression; may reflect later context): The charged mass eigenbasis being corner rests on the unaudited Z_3 trichotomy; why the neutrino is light is separate; the predictability sieve itself is standard decoherence.
 - Extraction red flags: Reverses a same-day sibling no-go; two earlier mechanism guesses (gauge-localization, Dirac-vs-Majorana) are recorded as refuted.
 - Supersession (as known at extraction): Directly and explicitly CORRECTS the same-day no-go FLAVOR_READOUT_CONTEXT_IS_THE_G4_DECOHERENCE_GATE_NARROW_NO_GO_NOTE_2026-06-06 (idx 491): 'that framing was wrong and is corrected here'; its open |K| scale is then bounded by idx 425.
 

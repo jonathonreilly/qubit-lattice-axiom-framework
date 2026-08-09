@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Asks whether the current PR230 premise set can itself write the same-surface O_H identity and normalization certificate: all six certificate obligations remain missing, and an algebraic counterfamily holds the source-pole norm and a unit candidate O_H norm fixed while varying their overlap from one to zero — the allowed premises cannot distinguish those cases. Runner PASS=17 FAIL=0.
 
-Original verdict: The certificate does not close on current premises; the missing row/theorem is load-bearing precisely because future source-Higgs or non-source rows would distinguish the counterfamily.
-Scope: Minimal premise set (Cl(3)/Z3 source surface, Legendre source-pole normalization, default-off row shell, EW context after canonical H, current gates as boundaries).
-Escape conditions (negative claims): Stuck fan-out names the pivot: same-source W/Z response is the best next positive route and can bypass the source-Higgs operator identity if a same-source action/row authority or closed covariance theorem lands; Schur rows and the neutral primitive theorem stay blocked on their own prerequisites.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The canonical-O_H terminal: all six certificate obligations open on current prem
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The certificate does not close on current premises; the missing row/theorem is load-bearing precisely because future source-Higgs or non-source rows would distinguish the counterfamily.
+- Extraction scope (triage compression; may reflect later context): Minimal premise set (Cl(3)/Z3 source surface, Legendre source-pole normalization, default-off row shell, EW context after canonical H, current gates as boundaries).
+- Extraction escape conditions (negative claims; triage compression): Stuck fan-out names the pivot: same-source W/Z response is the best next positive route and can bypass the source-Higgs operator identity if a same-source action/row authority or closed covariance theorem lands; Schur rows and the neutral primitive theorem stay blocked on their own prerequisites.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the canonical-O_H line: after the gates (2147-2151) closed the shortcuts, this asks the premise question directly and redirects the campaign to the W/Z response route.
 

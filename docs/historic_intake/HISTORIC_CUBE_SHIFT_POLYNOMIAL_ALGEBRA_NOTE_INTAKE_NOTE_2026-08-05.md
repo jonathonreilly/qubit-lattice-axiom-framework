@@ -18,10 +18,6 @@ required before any effective status.
 
 The cube-shift algebra A_S is abelian with basis the eight squarefree monomials M_T = prod_{i in T} S_i (higher powers reducing via S_i^2 = I), so dim_C A_S = 8, and in the Hadamard basis each M_T is diagonal with character eigenvalues; runner 8/8 PASS.
 
-Original verdict: Airtight structural foundation for any framework claim that an observable lies in the cube-shift algebra.
-Scope: Pure linear algebra on C^8; Grind Program batch 4.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The cube-shift algebra structure theorem (abelian, dim 8, Hadamard-diagonal) —
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Airtight structural foundation for any framework claim that an observable lies in the cube-shift algebra.
+- Extraction scope (triage compression; may reflect later context): Pure linear algebra on C^8; Grind Program batch 4.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Berry routes declared definitively dead at all three levels — in the truly C3-invariant gauge ([H,P_C3]=4e-15) per-character gamma_k = 0 +/- 1.5e-13, and the KS-gauge SU(8) curvature ~0.01 is confirmed a gauge artifact; positive: Bernoulli (d-1)/d^2 identified as the unique d-parameterized mechanism (2/9 at d=3, 5/36 at d=6); math audit 9/9 PASS at 100 dps; open selection-principle conjecture named as the next attack.
 
-Original verdict: Berry dead; mechanism identified; selection principle open
-Scope: mechanism identification plus route pruning; conjecture explicitly open
-Escape conditions (negative claims): prove the C_N-uniform-as-unique-attractor theorem on retained native dynamics
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Definitive negative: Berry-holonomy routes to the Brannen delta are DEAD at all 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Berry dead; mechanism identified; selection principle open
+- Extraction scope (triage compression; may reflect later context): mechanism identification plus route pruning; conjecture explicitly open
+- Extraction escape conditions (negative claims; triage compression): prove the C_N-uniform-as-unique-attractor theorem on retained native dynamics
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

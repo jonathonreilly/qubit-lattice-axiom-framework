@@ -18,10 +18,6 @@ required before any effective status.
 
 New NLO closed form sin(2 alpha_bar) = -(sqrt(5)/10) alpha_s(v) + O(alpha_s^2), an exact NLO shift-pattern ratio Delta sin(2 alpha_bar) : Delta sin(2 beta_bar) : Delta sin(2 gamma_bar) = -3 : -2 : 0, and the sum rule sin(2 alpha_bar) + sin(2 beta_bar) + sin(2 gamma_bar) = 2 sqrt(5)/3 - (sqrt(5)/6) alpha_s + O(alpha_s^2).
 
-Original verdict: Fills the missing doubled-angle closed form and exposes an exact -3 : -2 : 0 NLO shift pattern usable for falsification.
-Scope: Built on the retained NLO-protected-gamma-bar theorem, which supplies sin(2 beta_bar) and sin(2 gamma_bar) but no closed form for sin(2 alpha_bar).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ Falsifiable NLO structure: sin(2 alpha_bar) closed form + the exact -3:-2:0 doub
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Fills the missing doubled-angle closed form and exposes an exact -3 : -2 : 0 NLO shift pattern usable for falsification.
+- Extraction scope (triage compression; may reflect later context): Built on the retained NLO-protected-gamma-bar theorem, which supplies sin(2 beta_bar) and sin(2 gamma_bar) but no closed form for sin(2 alpha_bar).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Extends the retained protected-gamma-bar theorem (N7, N8).
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Proposes a single retention closing all three open Koide items: the physical point m_* on the selected line is where delta(m) = |eta_APS(Z_3 (1,2))| = 2/9, giving Q = delta*d = 2/3 exactly and v_0 = sqrt(m_tau)/(1 + sqrt(2)cos(2/9)) = 17.7159 sqrt(MeV); four independent routes to 2/9 are cited (APS cotangent, Brannen n_eff/d^2, Hopf invariant/|Z_3|^2, equivariant Chern number).
 
-Original verdict: Under acceptance of that assumption the three Koide items close at Nature-grade with observational matches at 0.002-0.03% and Q reproduced exactly; recommends Atlas retention edits.
-Scope: Explicitly ASSUMES the identification of the physical Koide point with the APS eta zero-point, described as mathematically grounded and multi-route convergent but assumed.
-Escape conditions (negative claims): The honest-scope section concedes the identification is an assumption, which is precisely the residual the later radian-bridge and endpoint no-go notes attack.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The Equivariant Berry-APS Selector retention proposal — the lane's central obj
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Under acceptance of that assumption the three Koide items close at Nature-grade with observational matches at 0.002-0.03% and Q reproduced exactly; recommends Atlas retention edits.
+- Extraction scope (triage compression; may reflect later context): Explicitly ASSUMES the identification of the physical Koide point with the APS eta zero-point, described as mathematically grounded and multi-route convergent but assumed.
+- Extraction escape conditions (negative claims; triage compression): The honest-scope section concedes the identification is an assumption, which is precisely the residual the later radian-bridge and endpoint no-go notes attack.
 - Extraction red flags: Self-declared assumption at the load-bearing step; the multi-route independence claim is later deflated by the A1 audit.
 - Supersession (as known at extraction): The retention proposal behind KOIDE_ATLAS_RETENTION_EDITS_2026-04-21; contested three days later by the 2026-04-24 radian-bridge irreducibility note (which finds the four 'independent' routes to 2/9 are restatements of one dimension count).
 

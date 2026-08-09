@@ -18,10 +18,6 @@ required before any effective status.
 
 The current stack does not prove that physical Cl(3)/Z^3 alone forces the conventional Planck length; it proves only c_cell = Tr(rho_cell P_A) = 1/4 from dim(H_cell) = 16, rank(P_A) = 4, rho_cell = I_16/16. Writing the general same-surface identification S_micro/k_B = mu c_cell A/a^2 gives a^2 = mu l_P^2, so the entire remaining bare-axiom target is to derive the boundary unit-map multiplier mu = 1.
 
-Original verdict: Bare claim not proved - the residual gap is exactly mu = 1, and weak-field gravity fixes a bulk lattice law rather than the boundary multiplier.
-Scope: Bare-axiom Planck-length target only; separates the native coefficient, the gravitational-boundary identification, and the absolute unit map to meters/GeV.
-Escape conditions (negative claims): Escaped by deriving mu = 1 (the dimensionless boundary unit-map multiplier); if mu != 1 the native c_cell = 1/4 survives but conventional Planck spacing does not follow.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The final unit-map audit: bare Cl(3)/Z^3 Planck is NOT proved — the residual i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Bare claim not proved - the residual gap is exactly mu = 1, and weak-field gravity fixes a bulk lattice law rather than the boundary multiplier.
+- Extraction scope (triage compression; may reflect later context): Bare-axiom Planck-length target only; separates the native coefficient, the gravitational-boundary identification, and the absolute unit map to meters/GeV.
+- Extraction escape conditions (negative claims; triage compression): Escaped by deriving mu = 1 (the dimensionless boundary unit-map multiplier); if mu != 1 the native c_cell = 1/4 survives but conventional Planck spacing does not follow.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Self-describes as the final branch-local audit of the bare-axiom Planck target (family-terminal candidate for the unit-map lane).
 

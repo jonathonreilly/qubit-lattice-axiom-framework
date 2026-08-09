@@ -18,10 +18,6 @@ required before any effective status.
 
 Discharges an audit-named missing_bridge_theorem by deriving two facts from the retained one-clock Wilson kernel: (B1) after temporal-gauge fixing V = I the one-step kernel factorizes into per-slice plaquette exponentials times a product of one-link Wilson factors w_beta(U_l U'_l^-1) over spatial links, and (B2) each such factor acts on the marked class-function sector by Peter-Weyl convolution with the SU(3) character expansion of w_beta.
 
-Original verdict: Supplies exactly the bridge step the audit verdict recorded as missing, without promoting any downstream effective status.
-Scope: Uses only A1/A2, the retained transfer-kernel authority and standard Peter-Weyl; consumes no closed form for kappa_(p,q)(6) or D_6, no residual environment operator, no P(6), no PDG comparators.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Discharges an audit-named missing bridge theorem (temporal-gauge factorization +
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Supplies exactly the bridge step the audit verdict recorded as missing, without promoting any downstream effective status.
+- Extraction scope (triage compression; may reflect later context): Uses only A1/A2, the retained transfer-kernel authority and standard Peter-Weyl; consumes no closed form for kappa_(p,q)(6) or D_6, no residual environment operator, no P(6), no PDG comparators.
 - Extraction red flags: One supporting element is described as a witness for the bridge claim rather than a non-perturbative input.
 - Supersession (as known at extraction): Repairs the audited_conditional verdict on GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE; its own effective status is left to the audit pipeline.
 

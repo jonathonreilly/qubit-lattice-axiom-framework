@@ -20,10 +20,6 @@ required before any effective status.
 
 Grading the landed NJL/RPA condensate susceptibility chi = G_eff/(1-r) as the channel-projected normalization for the taste-transfer vertex gives r = 2/(3 u_0^2) = 0.8654360 and RPA enhancement 1/(1-r) = 7.4314, which BRACKETS closure under the block01 phase dial (incoherent W=3/2 gives factor/alpha_s = 0.6967, 1.436x short; one-free-phase W=9/4 gives 1.045x, over; 1.00 crossing at W = 2.153 or r = 0.90625). But the as-computed normalized vertex has exact local u_0-degree -14.86, not -2, firing the mechanism's own kill criterion.
 
-Original verdict: CONDITIONAL-KILL: killed as computed (degree -2 criterion provably fires at -14.86), partial in magnitude only if an unsupplied threshold-freezing of the enhancement is granted.
-Scope: bounded_theorem label covers ONLY the exact Z1-Z4 arithmetic (susceptibility chain, graded product and phase endpoints, exact local u_0-degree, G_eff band sweep); chi is a DECLARED-MODEL object (Hubbard-Stratonovich auxiliary scalar, scalar-channel dominance after Fierz, Kawamoto-Smit G_eff = 1/(2 N_c)), the grading of chi as Z is a PROBE graded PARTIAL and never established, and the note does not close the DELTA0 gate.
-Escape conditions (negative claims): The kill is escaped only by an UNSUPPLIED threshold-freezing of the RPA enhancement (which exactly restores u_0-degree -2), and closure in magnitude would additionally require the UNLANDED exact r = 0.90625 (canonical Kawamoto-Smit G_eff = 1/6 is the closest of six band forms and still 1.436x short) or a phase dial at W = 2.153.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Conditional-kill of the NJL/RPA channel normalization (degree -2 criterion fires
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CONDITIONAL-KILL: killed as computed (degree -2 criterion provably fires at -14.86), partial in magnitude only if an unsupplied threshold-freezing of the enhancement is granted.
+- Extraction scope (triage compression; may reflect later context): bounded_theorem label covers ONLY the exact Z1-Z4 arithmetic (susceptibility chain, graded product and phase endpoints, exact local u_0-degree, G_eff band sweep); chi is a DECLARED-MODEL object (Hubbard-Stratonovich auxiliary scalar, scalar-channel dominance after Fierz, Kawamoto-Smit G_eff = 1/(2 N_c)), the grading of chi as Z is a PROBE graded PARTIAL and never established, and the note does not close the DELTA0 gate.
+- Extraction escape conditions (negative claims; triage compression): The kill is escaped only by an UNSUPPLIED threshold-freezing of the RPA enhancement (which exactly restores u_0-degree -2), and closure in magnitude would additionally require the UNLANDED exact r = 0.90625 (canonical Kawamoto-Smit G_eff = 1/6 is the closest of six band forms and still 1.436x short) or a phase dial at W = 2.153.
 - Extraction red flags: Self-declared source-note proposal with no audit verdict; chi admitted as a declared-model rather than derived object.
 - Supersession (as known at extraction): Successor probe to HIERARCHY_DELTA0_B4_TASTE_TRANSFER_LADDER_THEORY_PROBE_NOTE_2026-06-11 (answers the open content of that probe's Section 6); consumes V_EFF_TOTAL_NJL_STYLE_BOUNDED_THEOREM_NOTE_2026-05-10 by citation.
 

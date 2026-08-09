@@ -18,10 +18,6 @@ required before any effective status.
 
 Accepts four [P1] review failures in the prior unconditional Target 3 claim (rank matching does not force the coframe response, the runner hard-coded the anomaly-to-fourth-generator step, Gauss flux to P_A is still a chosen convention, residual closure was asserted) and replaces rank-matching with an object-level so(4) structure on K plus a closed-form bulk spectral gap sqrt(2) - 1. Runner PASS=42, FAIL=0.
 
-Original verdict: Replaces the rank-matching assertion with canonical retained content and protects the APS-like gap, but does not restore unconditional closure.
-Scope: Structural support only; explicitly does NOT close the Hodge-dual selection, since the same Schur construction on P_3 gives an identical spectrum.
-Escape conditions (negative claims): The open residual is selecting P_1 over P_3 by a source principle rather than convention, since Hodge symmetry makes their Schur spectra identical.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The [P1] retraction: four review failures accepted, unconditional Target-3 closu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Replaces the rank-matching assertion with canonical retained content and protects the APS-like gap, but does not restore unconditional closure.
+- Extraction scope (triage compression; may reflect later context): Structural support only; explicitly does NOT close the Hodge-dual selection, since the same Schur construction on P_3 gives an identical spectrum.
+- Extraction escape conditions (negative claims; triage compression): The open residual is selecting P_1 over P_3 by a source principle rather than convention, since Hodge symmetry makes their Schur spectra identical.
 - Extraction red flags: Retracts the unconditional-closure status of two previously landed sibling notes after an external review found four [P1] failures including literal-True assertions in runners.
 - Supersession (as known at extraction): Explicitly RE-SCOPES PLANCK_TARGET3_FORCED_COFRAME_RESPONSE_THEOREM and PLANCK_TARGET3_GAUSS_FLUX_FIRST_ORDER_CARRIER_THEOREM from 'retained unconditional closure' to 'retained conditional / control packet'.
 

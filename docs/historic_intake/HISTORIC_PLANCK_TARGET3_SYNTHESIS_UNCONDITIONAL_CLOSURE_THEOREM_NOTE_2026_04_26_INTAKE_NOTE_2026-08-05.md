@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes the two remaining [P1] residuals: S_4 character analysis on the 16-dim Cl_4 gives a 2-dim invariant subspace {I, H_first/4} with grade-1 invariants exactly 1-dimensional and grades 2 and 3 empty (so no cubic-symmetric alternative and none for P_3), and the source coupling is derived in five steps from the boundary-density extension, G(u) = prod_a (1+u_a), Schur-Feshbach and source-unit theorems, giving 4 c_cell G_Newton,lat = Tr(|L_K|^-1) = 1 hence G_Newton,lat = 1. Runner PASS=35, FAIL=0.
 
-Original verdict: Planck Target 3 is unconditionally closed on the retained surface.
-Scope: Retained surface in natural phase/action units; no parameter imports, no SI decimal hbar claim; adjacent runners listed as still passing.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ The terminal 'unconditionally closed' Target-3 claim — pulled WITH the flag th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Planck Target 3 is unconditionally closed on the retained surface.
+- Extraction scope (triage compression; may reflect later context): Retained surface in natural phase/action units; no parameter imports, no SI decimal hbar claim; adjacent runners listed as still passing.
 - Extraction red flags: Third note in this family to declare 'unconditional closure' after two predecessors were withdrawn; the same-branch relaxed-Wu support audit dated the same day refuses to land exactly this claim.
 - Supersession (as known at extraction): Terminal note of the PLANCK_TARGET3 chain (2026-04-26), closing the residuals of the Schur source-coupling theorem and re-promoting the earlier re-scoped notes.
 

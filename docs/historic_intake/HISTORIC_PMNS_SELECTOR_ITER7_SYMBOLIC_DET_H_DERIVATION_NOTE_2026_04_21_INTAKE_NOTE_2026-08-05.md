@@ -18,10 +18,6 @@ required before any effective status.
 
 det(H) = E2 does not reduce: under delta q_+ = 2/3 the closure equation is an irreducible cubic in m over Q(sqrt2, sqrt3, sqrt6) with no clean factorization, and at the closure point only the two IMPOSED cuts hit below 1e-4 (delta_c q_+c within 4.5e-7 of 2/3, det within 1.6e-6 of sqrt8/3) while m_c and Tr(H_c) are 6.4e-3 from 2/3. Runner 1 PASS, 0 FAIL.
 
-Original verdict: No third simple-value retained identity is manifest - det(H) = E2 is itself the identity at the polynomial level, not derived from simpler ones.
-Scope: Symbolic derivation attempt plus a scan of all natural scalars at the closure point.
-Escape conditions (negative claims): Iter 8 directions named: non-scalar operator-valued cuts, A-BCC axiomatic derivation, variational on the 1-D curve, or graceful acceptance of the 2-retained + 1-observational structure.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The informative failure: no third simple identity is manifest and Tr(H) misses 2
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No third simple-value retained identity is manifest - det(H) = E2 is itself the identity at the polynomial level, not derived from simpler ones.
+- Extraction scope (triage compression; may reflect later context): Symbolic derivation attempt plus a scan of all natural scalars at the closure point.
+- Extraction escape conditions (negative claims; triage compression): Iter 8 directions named: non-scalar operator-valued cuts, A-BCC axiomatic derivation, variational on the 1-D curve, or graceful acceptance of the 2-retained + 1-observational structure.
 - Extraction red flags: Records that at the iter-6 closure point Tr(H) misses 2/3 by 6.4e-3, yet iter 10 adopts Tr(H) = 2/3 as the third exact retained identity by moving the point.
 - Supersession (as known at extraction): Directly contradicts the later iter-10 claim, since it records Tr(H_c) = 6.4e-3 away from 2/3 at the two-cut closure point - i.e. the third identity is not satisfied there.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 On the hw=1 triplet sign flips act trivially so the realized point group is S_3; the Wilson mass and native double-shift are S_3-invariant and the Dirac sigma-term vanishes at corners, so every native generation mass operator lies in the S_3-commutant, which by Schur is exactly 2-dimensional = span{I, J - I} (nullspace dim 2 verified) - and BOTH basis operators commute with Gamma_chi, none anticommute.
 
-Original verdict: The gap is empty and the anticommuting no-go, previously stated for C_3-equivariant operators, is airtight for ALL native operators - the operator route to the chiral grading is closed.
-Scope: Native operators only; a C_3-non-equivariant operator would require explicitly breaking S_3, which is not native.
-Escape conditions (negative claims): Thread 2 remains explicitly open: whether r = 1/2 can be derived outside the operator framing entirely, via a combinatorial, geometric or information-theoretic route that does not pass through a generation operator.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Joint-commutant no-escape: the realized point group is S_3 and the anticommuting
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gap is empty and the anticommuting no-go, previously stated for C_3-equivariant operators, is airtight for ALL native operators - the operator route to the chiral grading is closed.
+- Extraction scope (triage compression; may reflect later context): Native operators only; a C_3-non-equivariant operator would require explicitly breaking S_3, which is not native.
+- Extraction escape conditions (negative claims; triage compression): Thread 2 remains explicitly open: whether r = 1/2 can be derived outside the operator framing entirely, via a combinatorial, geometric or information-theoretic route that does not pass through a generation operator.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the open gap flagged by FLAVOR_CHIRAL_IMPORT_VERDICT_NOTE_2026-05-30 (idx 477) and strengthens the retained koide_z3_equivariant_anticommuting_no_go from C_3-equivariant to all native operators.
 

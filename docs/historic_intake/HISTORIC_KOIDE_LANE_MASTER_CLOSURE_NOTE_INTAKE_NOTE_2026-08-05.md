@@ -18,10 +18,6 @@ required before any effective status.
 
 Claims the charged-lepton Koide structure closes axiom-only with delta = 2/9, Q = 2/3, v_0 = 17.7159 sqrt(MeV), m_tau = 1776.96 MeV (0.006%), m_mu 0.0005%, m_e 0.002% and v_EW = 246.28 GeV (0.025%), with 123/123 PASS across 16 runners; five previously flagged items are closed (AS-derived delta, Casimir C_tau = 1, positive-parent M = Y^2 for P1, AS pin replacing the H_* observational pin, and set-equality framing removing naming smuggle).
 
-Original verdict: Closure on retained atlas plus textbook math, with exactly one load-bearing non-axiom step remaining: A1 (Frobenius equipartition), retained via the Brannen form and not axiom-native.
-Scope: The only observational input is the UNORDERED set of three measured masses, used for set-equality comparison; names are treated as post-hoc nomenclature.
-Escape conditions (negative claims): Records that all attempted axiom-native derivations of A1 are negative on the retained framework (no C_3-invariant variational principle selects the cone, max-entropy at fixed trace gives b = 0, fixed-point/SSB arguments do not select |b|/a), so A1 needs either a new retained primitive such as real-irrep-block democracy or a different route.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The Koide lane's canonical master-closure entry: sub-0.01% mass matches WITH the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closure on retained atlas plus textbook math, with exactly one load-bearing non-axiom step remaining: A1 (Frobenius equipartition), retained via the Brannen form and not axiom-native.
+- Extraction scope (triage compression; may reflect later context): The only observational input is the UNORDERED set of three measured masses, used for set-equality comparison; names are treated as post-hoc nomenclature.
+- Extraction escape conditions (negative claims; triage compression): Records that all attempted axiom-native derivations of A1 are negative on the retained framework (no C_3-invariant variational principle selects the cone, max-entropy at fixed trace gives b = 0, fixed-point/SSB arguments do not select |b|/a), so A1 needs either a new retained primitive such as real-irrep-block democracy or a different route.
 - Extraction red flags: Headline 'closes axiom-only' coexists with an admitted load-bearing non-axiom step (A1) and with the Lefschetz route being explicitly non-substitutive.
 - Supersession (as known at extraction): Canonical reviewer entry point consolidating the lane; supersedes the individual closure notes it indexes while conceding A1's non-axiom-native status.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Corrects an earlier boundary-shellable growth rule (which was false: a chain can need a cell across a temporarily internal face) and gives exact rooted counts through |V| = 5, e.g. N(5,22) = 421432, with root-launch grading showing only k = 1 and k = 3 sectors ({1: 562352, 3: 4292} at n = 5).
 
-Original verdict: The rooted 3-chain engine is the right next gauge-side object, with exact counts and root-launch sectors through five cells.
-Scope: Connected rooted 3-chains on the exact 3+1 lattice with q in dV, |V| <= 5; exact integer counts, not Monte Carlo.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Corrects a FALSE prior enumeration rule (boundary-shellable growth) with exact r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The rooted 3-chain engine is the right next gauge-side object, with exact counts and root-launch sectors through five cells.
+- Extraction scope (triage compression; may reflect later context): Connected rooted 3-chains on the exact 3+1 lattice with q in dV, |V| <= 5; exact integer counts, not Monte Carlo.
 - Extraction red flags: Records that a prior enumeration rule in the same lane was false, so any counts produced under it were wrong.
 - Supersession (as known at extraction): Explicitly corrects an earlier exploratory version of this lane that grew chains only across boundary faces; the quotient version is idx 1755.
 

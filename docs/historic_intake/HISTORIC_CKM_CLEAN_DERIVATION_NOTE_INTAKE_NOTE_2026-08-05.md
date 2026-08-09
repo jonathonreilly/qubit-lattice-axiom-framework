@@ -18,10 +18,6 @@ required before any effective status.
 
 Assembles what is genuinely derived in the April CKM chain — NNI texture from a sequential EWSB cascade, Froggatt-Nielsen epsilon = 1/3 from the Z_3 group order, the Cabibbo angle via Gatto-Sartori-Tonin, delta_CP scale = 2 pi/3 from Z_3 eigenvalue spacing, the hierarchy ordering, and EWSB breaking C3 in inter-valley amplitudes — against a sharp boundary of six items that are not (V_cb and V_ub values, NNI O(1) coefficients, precise delta_CP, continuum/thermodynamic limits, dynamical fermions).
 
-Original verdict: A clean derived/not-derived boundary for the CKM lane, with paper-safe wording that avoids claiming delta_CP = 68 degrees when the framework gives 120.
-Scope: Lane status BOUNDED; all lattice computations at finite L (<= 8 for overlaps, 12 for production) with ~98% volume spread and no continuum extrapolation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -56,6 +52,8 @@ The CKM chain's derived/not-derived boundary WITH the live discrepancy on the re
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A clean derived/not-derived boundary for the CKM lane, with paper-safe wording that avoids claiming delta_CP = 68 degrees when the framework gives 120.
+- Extraction scope (triage compression; may reflect later context): Lane status BOUNDED; all lattice computations at finite L (<= 8 for overlaps, 12 for production) with ~98% volume spread and no continuum extrapolation.
 - Extraction red flags: Records a live discrepancy: the framework's delta_CP is 120 degrees while the observed value is ~68.
 - Supersession (as known at extraction): none recorded
 

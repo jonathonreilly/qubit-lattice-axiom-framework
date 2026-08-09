@@ -18,10 +18,6 @@ required before any effective status.
 
 Binds three sectors by the identity A^2 (Wolfenstein quark) = Q_l (Koide lepton) = 2/3, giving |V_cb|^2 = Q_l lambda^4 and Q_l alpha_s(v)^2 = 4|V_cb|^2 exactly at atlas-LO Wolfenstein, where the quark 2/3 = N_pair/N_color and the lepton 2/3 = (sum m)/(sum sqrt m)^2 arise from completely different group-theoretic origins.
 
-Original verdict: A sharp cross-sector algebraic identity with a falsification roadmap and two extraction routes (Q_l and alpha_s from CKM data).
-Scope: Atlas-LO Wolfenstein order; the cross-sector equality is an observed coincidence of two independently retained derivations rather than a derived identification.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Cross-sector identity A^2 = Q_l = 2/3 binding quark and lepton sectors with a fa
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharp cross-sector algebraic identity with a falsification roadmap and two extraction routes (Q_l and alpha_s from CKM data).
+- Extraction scope (triage compression; may reflect later context): Atlas-LO Wolfenstein order; the cross-sector equality is an observed coincidence of two independently retained derivations rather than a derived identification.
 - Extraction red flags: The bridge rests on two different derivations happening to evaluate to 2/3; the note names this as 'a previously-unnamed cross-sector identity' rather than deriving the identification.
 - Supersession (as known at extraction): none recorded
 

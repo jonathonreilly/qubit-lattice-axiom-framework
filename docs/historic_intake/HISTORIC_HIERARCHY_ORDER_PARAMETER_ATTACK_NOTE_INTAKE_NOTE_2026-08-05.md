@@ -18,10 +18,6 @@ required before any effective status.
 
 First negative result on the determinant-to-VEV gap: raw factorization det(D_2n) = det(D_2)^n C_n is exact in coupling scaling, but the mass-inserted ratio det(D_2n+m)/det(D_2n) does not factorize through the L_t=2 block, so the closure theorem cannot be 'det factorizes therefore the observable is one block'.
 
-Original verdict: The determinant-to-VEV map remains the real open theorem; the result is useful because it rules out the easiest fake proof and forces the next step onto the condensate/effective-action surface.
-Scope: Structural note on the remaining Part-3 gap; names three candidate intensive objects (condensate, effective-action difference, curvature at the minimum) as the correct attack surface.
-Escape conditions (negative claims): The negative applies to the mass-deformed extensive determinant ratio; the stated escape is to work with an intensive/local observable whose non-block terms are either coupling- and field-independent or UV-decoupled, plus a separate resolution of the even-L spatial APBC ambiguity.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ First negative on the determinant-to-VEV gap: raw factorization exact, mass-inse
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The determinant-to-VEV map remains the real open theorem; the result is useful because it rules out the easiest fake proof and forces the next step onto the condensate/effective-action surface.
+- Extraction scope (triage compression; may reflect later context): Structural note on the remaining Part-3 gap; names three candidate intensive objects (condensate, effective-action difference, curvature at the minimum) as the correct attack surface.
+- Extraction escape conditions (negative claims; triage compression): The negative applies to the mass-deformed extensive determinant ratio; the stated escape is to work with an intensive/local observable whose non-block terms are either coupling- and field-independent or UV-decoupled, plus a separate resolution of the even-L spatial APBC ambiguity.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sets the target that HIERARCHY_INTENSIVE_ORDER_PARAMETER_NOTE then tests numerically.
 

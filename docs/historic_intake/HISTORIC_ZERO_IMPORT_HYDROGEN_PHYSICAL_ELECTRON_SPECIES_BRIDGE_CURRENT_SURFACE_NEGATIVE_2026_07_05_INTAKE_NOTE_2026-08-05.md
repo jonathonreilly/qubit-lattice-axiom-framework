@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED; three inputs are missing (PR4929_OWNER_ADOPTION, owner ratification, audit acceptance).
 
-Original verdict: Support-only non-supply boundary; blocked on owner adoption of PR #4929 plus ratification and audit.
-Scope: The K3 C3-grade physical electron species bridge for the charged-lepton Koide readout lane.
-Escape conditions (negative claims): Owner adoption of PR #4929, then ratification and audit acceptance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ K3 terminal: the species bridge blocked on OWNER ADOPTION of PR #4929 plus ratif
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; blocked on owner adoption of PR #4929 plus ratification and audit.
+- Extraction scope (triage compression; may reflect later context): The K3 C3-grade physical electron species bridge for the charged-lepton Koide readout lane.
+- Extraction escape conditions (negative claims; triage compression): Owner adoption of PR #4929, then ratification and audit acceptance.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for K3; packet 2697 feeds it; chirality/domain-wall PR context 2513 and 2595. Consumed by the Lane 6 terminal 2694.
 

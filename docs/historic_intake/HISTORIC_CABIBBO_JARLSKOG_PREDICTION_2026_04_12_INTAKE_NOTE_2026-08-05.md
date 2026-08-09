@@ -18,10 +18,6 @@ required before any effective status.
 
 From the Z3 symmetry of the 3-colorable lattice (CP phase delta = 2*pi/3) plus a Froggatt-Nielsen texture from the staggered taste structure: sin(theta_C) = sqrt(epsilon) predicted 0.2236 against PDG 2024 observed 0.2243 (ratio 0.997, 0.3%), and Jarlskog J = 3.145e-5 against observed 3.08e-5 (ratio 1.021, 2.1%). Both are presented as zero-parameter predictions where the Standard Model has four free CKM parameters.
 
-Original verdict: Precision matches from lattice geometry, ready for review.
-Scope: Two CKM quantities only; the other CKM angles theta_23 and theta_13 are not independently predicted.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Cabibbo sin(theta_C) 0.2236 vs 0.2243 and Jarlskog match from lattice Z3 geometr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Precision matches from lattice geometry, ready for review.
+- Extraction scope (triage compression; may reflect later context): Two CKM quantities only; the other CKM angles theta_23 and theta_13 are not independently predicted.
 - Extraction red flags: Three self-stated caveats: the Froggatt-Nielsen epsilon identification needs further justification (why epsilon = 1/3 specifically?); theta_23 and theta_13 are unpredicted; and the prediction chain runs through the baryogenesis script and needs extraction as a standalone clean derivation.
 - Supersession (as known at extraction): none recorded
 

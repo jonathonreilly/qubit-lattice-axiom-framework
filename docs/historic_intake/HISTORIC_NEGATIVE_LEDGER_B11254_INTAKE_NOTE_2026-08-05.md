@@ -18,10 +18,6 @@ required before any effective status.
 
 The old force/gap/gain capture table is STALE; packet uses only live-runner output; live cycle and holdout gaps improve materially but do not vanish — exact closure not claimed.
 
-Original verdict: archived table stale; exact closure not claimed
-Scope: capture packet vs archived table
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Correction of archived numbers: the old force/gap/gain capture table is STALE - 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): archived table stale; exact closure not claimed
+- Extraction scope (triage compression; may reflect later context): capture packet vs archived table
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): supersedes the archived force/gap/gain capture table
 

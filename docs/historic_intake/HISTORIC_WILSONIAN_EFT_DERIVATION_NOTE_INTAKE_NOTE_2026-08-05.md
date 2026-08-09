@@ -18,10 +18,6 @@ required before any effective status.
 
 Argues the continuum-bridge assessment conflated two statements: the a -> 0 limit does not exist under A5, but a low-energy EFT for E << 1/a does, obtained by the exact Feshbach-Loewdin projection H_eff(E) = P_< H P_< + P_< H P_> (E - P_> H P_>)^{-1} P_> H P_<, verified numerically on toy lattices L = 16 to 128 to ~1e-15. Symmetry is preserved ([H,G] = 0 and [P_<,G] = 0 imply [H_eff, G_eff] = 0), and at E = M_Z lattice artifacts are suppressed by (E a)^2 = 5.6e-35.
 
-Original verdict: Status CLOSED — the irreducible residual is claimed resolved by Feshbach projection, which is a mathematical identity rather than an imported physical assumption.
-Scope: Feshbach projection as a QM identity plus operator classification under the derived gauge symmetry and emergent Lorentz invariance.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The EFT-vs-continuum-limit distinction: no a -> 0 limit under A5 but a low-energ
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Status CLOSED — the irreducible residual is claimed resolved by Feshbach projection, which is a mathematical identity rather than an imported physical assumption.
+- Extraction scope (triage compression; may reflect later context): Feshbach projection as a QM identity plus operator classification under the derived gauge symmetry and emergent Lorentz invariance.
 - Extraction red flags: Self-declares 'CLOSED' on a lane the rest of the corpus keeps open, and the Lorentz-emergence step is asserted from the free dispersion expansion rather than computed at loop level.
 - Supersession (as known at extraction): Directly overturns YT_CONTINUUM_BRIDGE_ASSESSMENT's conclusion that the y_t blocker 'cannot be closed by further algebra' (idx 2167).
 

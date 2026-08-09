@@ -18,10 +18,6 @@ required before any effective status.
 
 The bounce computation gives T_c = 222.6 GeV, T_n = 200.5 GeV, T_n/T_c = 0.90, at which the driving pressure is too large for Boltzmann friction to balance: the force-balance equation has no solution below the Jouguet velocity, pushing the wall into the detonation regime v_w > c_s where diffusion-transport baryogenesis fails.
 
-Original verdict: Does not invalidate the DM relic ratio R, but the transport sector has a genuine dynamical issue the earlier v_w range [0.006, 0.048] did not capture; the lane stays BOUNDED on transport.
-Scope: At taste scalar mass m_s = 120 GeV with the 1-loop Daisy high-T potential and nucleation criterion S_3/T = 140 - all four flagged as possible sources of the problem.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The nucleation NEGATIVE: no force-balance solution — the wall runs away (deton
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Does not invalidate the DM relic ratio R, but the transport sector has a genuine dynamical issue the earlier v_w range [0.006, 0.048] did not capture; the lane stays BOUNDED on transport.
+- Extraction scope (triage compression; may reflect later context): At taste scalar mass m_s = 120 GeV with the 1-loop Daisy high-T potential and nucleation criterion S_3/T = 140 - all four flagged as possible sources of the problem.
 - Extraction red flags: Negative finding: the framework does not uniquely predict m_s, and the detonation outcome depends on that undetermined mass; also directly inconsistent with the sibling nucleation-temperature note's T_n/T_c.
 - Supersession (as known at extraction): Conflicts with DM_NUCLEATION_TEMPERATURE_NOTE.md (idx 389), which reports T_n/T_c = 0.983 and a subsonic v_w = 0.019 on the same lane.
 

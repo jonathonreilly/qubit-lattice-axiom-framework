@@ -18,10 +18,6 @@ required before any effective status.
 
 Reports four gates addressed in one session: generation physicality CLOSED to order of magnitude (five independent proofs that Cl(3) on Z^3 has no well-defined continuum limit, plus a superselection theorem via Schur verified to 1e-15), S^3 compactification upgraded to STRUCTURAL, DM relic mapping still BOUNDED (1 assumed + 2 imported, R = 5.48), and renormalized y_t CLOSED via a derived Slavnov-Taylor identity.
 
-Original verdict: Three gates upgraded to CLOSED and one to STRUCTURAL, with the mass-hierarchy margin thin for up quarks (4%).
-Scope: Taste-physicality is explicitly conditional on the Cl(3) framework — a referee who puts in the SM gauge group and N_g = 3 by hand can root without contradiction.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Four gates in one: five independent no-continuum-limit proofs + the superselecti
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three gates upgraded to CLOSED and one to STRUCTURAL, with the mass-hierarchy margin thin for up quarks (4%).
+- Extraction scope (triage compression; may reflect later context): Taste-physicality is explicitly conditional on the Cl(3) framework — a referee who puts in the SM gauge group and N_g = 3 by hand can root without contradiction.
 - Extraction red flags: A 4% margin carries the up-quark mass-hierarchy closure.
 - Supersession (as known at extraction): none recorded
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposes 'derive continuous gauge dynamics' into a derived form-class plus a precisely classified residual so the lane is not re-attacked as one undifferentiated wall, with each row pointing to its own source authority and status, and one open derivation lever identified.
 
-Original verdict: Two load-bearing caveats travel with the map: 'form derived' is modulo two bridges that their own notes say are not derived from {Lattice, Quantum, Record}, and the entire supporting stack is unaudited.
-Scope: Backward-looking map; sets no audit verdict and introduces no new axiom, admitted input, or value.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The continuous-gauge-dynamics wall decomposed into derived form-class + classifi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two load-bearing caveats travel with the map: 'form derived' is modulo two bridges that their own notes say are not derived from {Lattice, Quantum, Record}, and the entire supporting stack is unaudited.
+- Extraction scope (triage compression; may reflect later context): Backward-looking map; sets no audit verdict and introduces no new axiom, admitted input, or value.
 - Extraction red flags: The map's own caveats state the supporting stack is unaudited and two load-bearing bridges are underived.
 - Supersession (as known at extraction): none recorded
 

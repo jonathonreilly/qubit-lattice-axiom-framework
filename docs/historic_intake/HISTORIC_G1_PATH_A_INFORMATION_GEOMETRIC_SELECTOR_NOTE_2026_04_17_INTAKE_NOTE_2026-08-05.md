@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Quadratic Unanimity: all four natural info-geometric functionals (-W, KL, Fisher, Frobenius) are isotropic at leading order with coefficients c = 3, 9, 6, 6, so they share the chamber-boundary argmin (sqrt6/3, sqrt6/3) independent of i and m; but at cubic order they split by O(1) with no axiom-native tiebreaker, and the observable principle is response-generation, not source-selection.
 
-Original verdict: An obstruction plus a precise narrowed gap splitting the open object into variational (G-Var) and non-variational (G-Non-Var) sub-gaps; the DM flagship gate remains open.
-Scope: Sole-axiom plus already-retained stack; explicitly does not override the atlas flag on the 'minimum-information selector' as an invented post-axiom dynamical law.
-Escape conditions (negative claims): The gap is split rather than closed: (G-Var) asks for an axiom-native tiebreaker among cubic-order functionals, and (G-Non-Var) covers selector principles outside the variational framing entirely.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ Quadratic Unanimity obstruction: all four info-geometric functionals isotropic a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An obstruction plus a precise narrowed gap splitting the open object into variational (G-Var) and non-variational (G-Non-Var) sub-gaps; the DM flagship gate remains open.
+- Extraction scope (triage compression; may reflect later context): Sole-axiom plus already-retained stack; explicitly does not override the atlas flag on the 'minimum-information selector' as an invented post-axiom dynamical law.
+- Extraction escape conditions (negative claims; triage compression): The gap is split rather than closed: (G-Var) asks for an axiom-native tiebreaker among cubic-order functionals, and (G-Non-Var) covers selector principles outside the variational framing entirely.
 - Extraction red flags: Explicitly not publication-grade on its own.
 - Supersession (as known at extraction): none recorded
 

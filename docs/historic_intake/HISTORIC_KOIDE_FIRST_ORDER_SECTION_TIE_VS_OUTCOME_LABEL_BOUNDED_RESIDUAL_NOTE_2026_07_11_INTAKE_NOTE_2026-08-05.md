@@ -18,10 +18,6 @@ required before any effective status.
 
 By explicit Berezin expansion (no determinant identity assumed) the one-component staggered measure gives Z = det3(a,b,c) = a^3+b^3+c^3-3abc to the FIRST power, holomorphic and count-once (r = 1/2, Q = 2/3) on the untied section, and non-holomorphic (Wirtinger d^2/db dbbar = -3a) hence count-twice (r = 1, Q = 1) exactly and only under the K-real tie c = conj(b).
 
-Original verdict: The r = 1 vs r = 1/2 binary is exactly the question of whether K-reality acts on the statistical weight or as a label on registered outcomes; both cells are lawful, so it is an exact residual equal to the custody note's already-admitted K-reality selector.
-Scope: Claims exact residual-localization only: not a derivation of r = 1/2 or r = 1, no adoption of any occupancy/weighting rule, no audit status; runner SCORECARD PASS=16.
-Escape conditions (negative claims): Shows the two landed walls do not decide it: the |det M|^2 r = 1 wall and the reflection-positivity wall both act on the Hermitian SECOND-order transfer family, while on the corner sector every spatial reflection is the identity so RP's positivity content coincides with the very antiunitary in question.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Exact Berezin result: the one-component staggered measure is count-once (r=1) to
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The r = 1 vs r = 1/2 binary is exactly the question of whether K-reality acts on the statistical weight or as a label on registered outcomes; both cells are lawful, so it is an exact residual equal to the custody note's already-admitted K-reality selector.
+- Extraction scope (triage compression; may reflect later context): Claims exact residual-localization only: not a derivation of r = 1/2 or r = 1, no adoption of any occupancy/weighting rule, no audit status; runner SCORECARD PASS=16.
+- Extraction escape conditions (negative claims; triage compression): Shows the two landed walls do not decide it: the |det M|^2 r = 1 wall and the reflection-positivity wall both act on the Hermitian SECOND-order transfer family, while on the corner sector every spatial reflection is the identity so RP's positivity content coincides with the very antiunitary in question.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Executes the open lead of SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04 and sharpens PR #3551's localization; answers in the honest genre that the landed surface does not decide the binary.
 

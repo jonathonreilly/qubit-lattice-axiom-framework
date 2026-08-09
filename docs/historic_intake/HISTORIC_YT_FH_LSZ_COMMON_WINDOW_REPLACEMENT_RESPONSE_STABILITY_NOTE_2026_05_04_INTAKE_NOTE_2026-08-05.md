@@ -18,10 +18,6 @@ required before any effective status.
 
 Because legacy chunks001-016 cannot be honestly backfilled to the v2 per-configuration covariance schema, this replaces the acceptance requirement with a fixed tau=10..12 common-window contract over all 46 ready chunks; it passes on six conditions (full coverage, target and autocorrelation ESS, honestly blocked backfill, fixed-window central stability, production-grade pooled uncertainty, bounded finite-source-linearity support). PASS=14 FAIL=0.
 
-Original verdict: Authorizes no readout switch, supplies no scalar-LSZ normalization, does not identify O_sp = O_H and derives no physical y_t; remaining blockers are pole control, FV/IR/model-class control and canonical-Higgs/source-overlap closure.
-Scope: Response-stability support path only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The acceptance-criterion REPLACEMENT on the record: legacy chunks cannot be back
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Authorizes no readout switch, supplies no scalar-LSZ normalization, does not identify O_sp = O_H and derives no physical y_t; remaining blockers are pole control, FV/IR/model-class control and canonical-Higgs/source-overlap closure.
+- Extraction scope (triage compression; may reflect later context): Response-stability support path only.
 - Extraction red flags: A load-bearing acceptance criterion is replaced rather than met, because the legacy chunks physically cannot supply the required schema.
 - Supersession (as known at extraction): TERMINAL of the common-window sub-chain: replaces an unmeetable acceptance criterion with a contract the data can satisfy, explicitly refusing to fabricate legacy v2 rows.
 

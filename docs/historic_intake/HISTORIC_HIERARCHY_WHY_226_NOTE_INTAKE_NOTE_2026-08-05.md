@@ -18,10 +18,6 @@ required before any effective status.
 
 The 226 GeV result is a coincidence from two large errors that nearly cancel: y_t = 0.9369 (the SM pole-scale value) was quietly substituted for the framework's derived y_t = 0.439, and Sigma_1 was inflated to 6.0; with the derived y_t and N_eff = 10.64 the chain gives v = 45 GeV (or 3.6 TeV at N_eff = 12). Exact integrals give I_stag(4) = 0.619734 = 4 I_Wilson(4), so Sigma_1 is 2.479 under d*I_stag or 6.117 under pi^2*I_stag.
 
-Original verdict: The number is a coincidence but the mechanism is real — CW dimensional transmutation with the framework's structural y_t genuinely produces v in the O(0.1-10 TeV) range; the precise value cannot be extracted without resolving the matching scheme.
-Scope: Full re-derivation of the original 226 GeV chain plus identification of which lattice-integral combination 'Sigma_1' denotes.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ WHY-226 coincidence anatomy: two large errors nearly cancel, smuggled y_t identi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The number is a coincidence but the mechanism is real — CW dimensional transmutation with the framework's structural y_t genuinely produces v in the O(0.1-10 TeV) range; the precise value cannot be extracted without resolving the matching scheme.
+- Extraction scope (triage compression; may reflect later context): Full re-derivation of the original 226 GeV chain plus identification of which lattice-integral combination 'Sigma_1' denotes.
 - Extraction red flags: Documents a smuggled observed input (y_t = 0.9369) in a published derivation chain; the two corrective notes disagree on the correct Sigma_1 identification.
 - Supersession (as known at extraction): Erratum-grade investigation of HIERARCHY_SOLUTION_SUMMARY.md's v = 226 GeV claim; sits alongside HIERARCHY_HONEST_REVIEW.md and disputes that review's choice of Sigma_1 = 2.48 over 6.12.
 

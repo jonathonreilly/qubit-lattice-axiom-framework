@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply EXACT_SOURCE_SINGLETON_RETAINED or a retained exact source-side S_l = 1/256; the only remaining missing inputs are owner ratification and audit acceptance.
 
-Original verdict: Support-only non-supply boundary — notable as the sweep's closest-to-complete contract, blocked only on owner ratification and audit acceptance.
-Scope: The exact source-side input consumed by the K4 charged-lepton scale assembly.
-Escape conditions (negative claims): Owner ratification and audit acceptance (all technical clause inputs are recorded as available).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -104,6 +100,9 @@ Source-singleton terminal: the sweep's CLOSEST-TO-COMPLETE contract — every te
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary — notable as the sweep's closest-to-complete contract, blocked only on owner ratification and audit acceptance.
+- Extraction scope (triage compression; may reflect later context): The exact source-side input consumed by the K4 charged-lepton scale assembly.
+- Extraction escape conditions (negative claims; triage compression): Owner ratification and audit acceptance (all technical clause inputs are recorded as available).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the source sub-ladder; packets 2640/2638 feed it; consumed by the K4 terminal 2505. Source sub-ladder: F-clause children F1 2641 / F2 2643 / F3 2645 / F4 2647 -> F-clause TERMINAL 2651 (packet 2652, ladder review 2650); L/P/R clauses 2655/2661/2668 -> exact source singleton TERMINAL 2639 (packet 2640, ladder review 2638) -> K4 terminal 2505.
 

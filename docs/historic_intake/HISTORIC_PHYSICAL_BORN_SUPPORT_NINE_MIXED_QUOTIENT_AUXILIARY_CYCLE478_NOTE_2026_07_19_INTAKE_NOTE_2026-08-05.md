@@ -18,10 +18,6 @@ required before any effective status.
 
 TERMINAL of the G55 ladder: compiles the final frozen support-nine representative -271694*E0 - 89182*E1 - 717604*E2 + 559980*E3 - 1003816*E4 + 765000*E11 - 942633*E16 + 174216*E20 + 512400*E31 = 0 with FINAL 10 pass / 0 fail, using 208 addition gadgets (416 new rows) and raising the surface to 1138 x 1041 at rank/nullity 1027/14, projected-old nullity 14, leaving 11 directions beyond the three Pauli tangents. 20,304 all-frame packet cases with 0 failures; E/G and inverse residual exactly 0.0.
 
-Original verdict: Gate disposition FAIL — partial-attempt-with-named-untested-routes; the FAIL blocks a negative or closure conclusion and does not mark the constructive compiler as failed.
-Scope: One finite effect-functionality compiler test on the retained Cycle-471 surface; the compiled wall is independent of the grade, state-selection, occurrence, frequency and continuum-extension walls, which are simply absent.
-Escape conditions (negative claims): Allowed wording is only 'the frozen final fixed-G55 quotient row is functionally compiled'; 'Born rule derived' and 'probability selected' are explicitly disallowed.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ TERMINAL of the G55 quotient ladder (Cycles 448-478): compiles the final frozen 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Gate disposition FAIL — partial-attempt-with-named-untested-routes; the FAIL blocks a negative or closure conclusion and does not mark the constructive compiler as failed.
+- Extraction scope (triage compression; may reflect later context): One finite effect-functionality compiler test on the retained Cycle-471 surface; the compiled wall is independent of the grade, state-selection, occurrence, frequency and continuum-extension walls, which are simply absent.
+- Extraction escape conditions (negative claims; triage compression): Allowed wording is only 'the frozen final fixed-G55 quotient row is functionally compiled'; 'Born rule derived' and 'probability selected' are explicitly disallowed.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the G55 quotient ladder (448 -> 454/2792 -> 457/2793 -> 462/2791 -> 466/2794 -> 471/2795 -> 478/2796). Quotienting the new block against the independently certified 15-vector Cycle-471 kernel leaves rank one, exactly spanned by the frozen representative, so the 1027 rank does not silently count eight retained service-anchor relations as new.
 

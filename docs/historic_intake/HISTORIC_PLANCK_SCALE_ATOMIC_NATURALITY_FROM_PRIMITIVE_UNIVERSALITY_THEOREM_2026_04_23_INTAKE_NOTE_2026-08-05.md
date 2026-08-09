@@ -18,10 +18,6 @@ required before any effective status.
 
 Atomic naturality (clause U5 of the universal primitive counting-trace theorem) is a theorem if the Planck coefficient is a bare primitive event-frame rule C_E(P) on E = {P_eta : eta in {0,1}^4}: primitive universality plus object-class locality make every relabeling of the sixteen atoms a presentation isomorphism, forcing C_E(U_pi P U_pi^dagger) = C_E(P). If the coefficient object is enriched to (E, N_evt, P_A) or (E, P_A), only orbit-wise naturality follows and C(P_A) = 1/4 is not fixed.
 
-Original verdict: A sharp fork: bare coefficient rule accepted makes atomic naturality a theorem; readout-enriched object leaves it a source-free no-preferred-event principle.
-Scope: Attacks only the U5 clause; assumes no density matrix and does not assume rho = I_16/16, and does not edit the existing Planck packet.
-Escape conditions (negative claims): The negative half bites only under a readout-enriched coefficient object ((E, N_evt, P_A) or (E, P_A)); it is escaped by accepting the bare primitive event-frame coefficient object class.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The atomic-naturality fork stated sharply: bare coefficient rule => theorem; rea
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharp fork: bare coefficient rule accepted makes atomic naturality a theorem; readout-enriched object leaves it a source-free no-preferred-event principle.
+- Extraction scope (triage compression; may reflect later context): Attacks only the U5 clause; assumes no density matrix and does not assume rho = I_16/16, and does not edit the existing Planck packet.
+- Extraction escape conditions (negative claims; triage compression): The negative half bites only under a readout-enriched coefficient object ((E, N_evt, P_A) or (E, P_A)); it is escaped by accepting the bare primitive event-frame coefficient object class.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Feeds PLANCK_SCALE_UNIVERSAL_PRIMITIVE_COUNTING_TRACE_THEOREM as an upstream discharge of its U5 clause; not itself terminal.
 

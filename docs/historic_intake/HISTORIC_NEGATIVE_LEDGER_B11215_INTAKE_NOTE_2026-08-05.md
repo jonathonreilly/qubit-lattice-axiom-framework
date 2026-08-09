@@ -18,10 +18,6 @@ required before any effective status.
 
 Four routes: the existing _causal_field as a propagation delay fails because it constructs a position-only array algebraically identical to _static_cone_field; the final detector phase as a history-label identifier fails whenever the same field array enters the same fixed deterministic kernel; the four fixed activation delays are not tested as a universal scheduling family (only delays 0-3 at cone parameter 1 are computed); and static-versus-causal in every model is not closed since the harness has no temporal model.
 
-Original verdict: Two narrow failures proved, two explicitly not claimed; a global causal-vs-static claim is forbidden.
-Scope: Current harness and interface only.
-Escape conditions (negative claims): Add temporal state, source history, a physical static-solution class, and history-carrying measurement data, then test whether that enlarged surface is identifiable.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Verification-integrity finding about existing runner semantics: the function nam
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two narrow failures proved, two explicitly not claimed; a global causal-vs-static claim is forbidden.
+- Extraction scope (triage compression; may reflect later context): Current harness and interface only.
+- Extraction escape conditions (negative claims; triage compression): Add temporal state, source history, a physical static-solution class, and history-carrying measurement data, then test whether that enlarged surface is identifiable.
 - Extraction red flags: documents that a runner function named _causal_field never implemented propagation delay - a defect in previously used causal machinery
 - Supersession (as known at extraction): records that _causal_field is algebraically identical to _static_cone_field, correcting any prior reading of it as a propagation delay
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The active deformation is an exact 7-real family with local real rank 7 at generic points; the weak-axis seed patch is only the codimension-5 slice x_1 = x_2 = x_3, y_1 = y_2 = y_3, delta = 0. Two distinct generic off-seed points embed into full charge-preserving operators D^(A), D^(B) with identical supports, block form, passive lane and active support class but different Delta D. Runner PASS=18, FAIL=0.
 
-Original verdict: No - the retained bank fixes the carrier of Delta D but not its generic off-seed values, so full positive neutrino closure needs a new derived value law.
-Scope: Fixed one-sided minimal PMNS branch with passive monomial lane held fixed.
-Escape conditions (negative claims): Escaped only by adding a new derived value law from Cl(3) on Z^3 for the 7-real generic off-seed values.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The Delta-D load-bearing negative: the bank fixes the carrier but not the generi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - the retained bank fixes the carrier of Delta D but not its generic off-seed values, so full positive neutrino closure needs a new derived value law.
+- Extraction scope (triage compression; may reflect later context): Fixed one-sided minimal PMNS branch with passive monomial lane held fixed.
+- Extraction escape conditions (negative claims; triage compression): Escaped only by adding a new derived value law from Cl(3) on Z^3 for the 7-real generic off-seed values.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The load-bearing negative of the Delta D chain, with an explicit two-witness construction.
 

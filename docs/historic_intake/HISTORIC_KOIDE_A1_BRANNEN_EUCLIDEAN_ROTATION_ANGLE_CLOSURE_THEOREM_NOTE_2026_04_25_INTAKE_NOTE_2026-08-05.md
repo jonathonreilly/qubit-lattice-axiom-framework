@@ -20,10 +20,6 @@ required before any effective status.
 
 Plancherel algebra on the retained Brannen mass formula gives a_0 = sqrt(3) V_0 and b = (sqrt(3)/2) V_0 c exp(i delta), so delta_Brannen = arg(b) mod 2pi — a Euclidean rotation angle in radians with no R/Z -> U(1) exponential lift, meaning the audit's period-1-vs-2pi convention question never arises on this observable.
 
-Original verdict: P_A1 blocks only the identification half by assuming a U(1) lift, and since the Brannen chain goes through arg rather than exp(2pi i c), the audit's blocking does not apply to this route.
-Scope: Closes only the IDENTIFICATION half of the radian-bridge residual; the SELECTION half (arg(b)(m_*) - arg(b)(m_0) = 2/9 exactly) is carried by the retained selected-line geometry, verified numerically to 1e-12.
-Escape conditions (negative claims): The prior no-go depended on identifying delta with a Type-B R/Z invariant via the canonical chi(c) = exp(2pi i c) (which gives 4pi/9 rad and would need the non-canonical period-1 lift to reach 2/9); the escape used here is that the Brannen observable never passes through that lift at all.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Closes the identification half of the radian-bridge residual: delta_Brannen is a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): P_A1 blocks only the identification half by assuming a U(1) lift, and since the Brannen chain goes through arg rather than exp(2pi i c), the audit's blocking does not apply to this route.
+- Extraction scope (triage compression; may reflect later context): Closes only the IDENTIFICATION half of the radian-bridge residual; the SELECTION half (arg(b)(m_*) - arg(b)(m_0) = 2/9 exactly) is carried by the retained selected-line geometry, verified numerically to 1e-12.
+- Extraction escape conditions (negative claims; triage compression): The prior no-go depended on identifying delta with a Type-B R/Z invariant via the canonical chi(c) = exp(2pi i c) (which gives 4pi/9 rad and would need the non-canonical period-1 lift to reach 2/9); the escape used here is that the Brannen observable never passes through that lift at all.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the identification half of the residual left by KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24 and KOIDE_A1_FRACTIONAL_TOPOLOGY_NO_GO_SYNTHESIS_NOTE_2026-04-24.
 

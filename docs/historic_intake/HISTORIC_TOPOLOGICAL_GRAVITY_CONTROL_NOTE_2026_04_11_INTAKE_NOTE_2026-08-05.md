@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 On the low-screening parity-coupled SSH surface (mu2 = 0.001) self-consistent gravity keeps 2 edge modes through G = 0.30 and loses them at G = 0.50, well before the matched random-disorder threshold near sigma ~ 0.36 — but a static structured template built from the free half-filled density and rescaled to the same on-site field scale reproduces the self-consistent lane exactly (2/2/2 modes at G = 0.10/0.20/0.30, 0/0 at G = 0.50 and above), with bulk gaps matching at the 1e-4 to 1e-3 level.
 
-Original verdict: Edge-mode loss is triggered by a smooth parity-coupled structured field at the same scale as the self-consistent field; dynamic self-consistency is not isolated as the cause, so the gravity-specific topological claim does not survive.
-Scope: One audited open SSH surface; exploratory only.
-Escape conditions (negative claims): The refutation is control-matched only on field scale — the note names the open routes: a structured non-gravitational control family beyond the free-density template, the same observable on a Wilson or open 2D surface, and matching low-frequency spatial profile as well as scale.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Control refutation on the record: edge modes lost to a smooth structured field a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Edge-mode loss is triggered by a smooth parity-coupled structured field at the same scale as the self-consistent field; dynamic self-consistency is not isolated as the cause, so the gravity-specific topological claim does not survive.
+- Extraction scope (triage compression; may reflect later context): One audited open SSH surface; exploratory only.
+- Extraction escape conditions (negative claims; triage compression): The refutation is control-matched only on field scale — the note names the open routes: a structured non-gravitational control family beyond the free-density template, the same observable on a Wilson or open 2D surface, and matching low-frequency spatial profile as well as scale.
 - Extraction red flags: Self-refutation: the note retracts the gravity-specific/Einstein-like topological claim and the 'dynamic backreaction is load-bearing' statement made by the lane it audits.
 - Supersession (as known at extraction): Self-refuting control pass on the topological-gravity lane; keeps the lane exploratory rather than retained.
 

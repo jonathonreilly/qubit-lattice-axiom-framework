@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 C = 1 cannot be derived from the Coleman-Weinberg mechanism: CW gives v = M_Pl exp(-pi/alpha_LM) whereas the taste formula gives M_Pl alpha^16, structurally different functions (1/alpha vs 16 ln alpha); the two CW routes bracket the taste result (bare Yukawa route A gives 87 GeV, improved route B gives 10834 GeV) and neither reproduces 254 GeV, with exp(-pi/alpha)/alpha^16 = 3.3 at alpha_LM = 0.0906.
 
-Original verdict: NEGATIVE RESULT — v = M_Pl alpha_LM^16 is a numerically accurate approximation to a deeper structure, not an exact CW identity, and no analytic cancellation of O(1) factors produces C = 1.
-Scope: 1-loop CW effective potential with rooted staggered tastes (N_eff = 12) versus the L_t = 2 taste-determinant power law.
-Escape conditions (negative claims): The negative rests on the taste formula arising from the multiplicative taste-determinant structure rather than the logarithmic effective potential; internal route verdicts name the escapes — the eigenvalue-prefactor route fails because the prefactor is an O(1) number, and one route is graded PROMISING STRUCTURE blocked only because the O(1) coefficients c_k are not computed.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ CW no-go: exp(-C/alpha) vs alpha^16 structurally different — C=1 not derivable
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): NEGATIVE RESULT — v = M_Pl alpha_LM^16 is a numerically accurate approximation to a deeper structure, not an exact CW identity, and no analytic cancellation of O(1) factors produces C = 1.
+- Extraction scope (triage compression; may reflect later context): 1-loop CW effective potential with rooted staggered tastes (N_eff = 12) versus the L_t = 2 taste-determinant power law.
+- Extraction escape conditions (negative claims; triage compression): The negative rests on the taste formula arising from the multiplicative taste-determinant structure rather than the logarithmic effective potential; internal route verdicts name the escapes — the eigenvalue-prefactor route fails because the prefactor is an O(1) number, and one route is graded PROMISING STRUCTURE blocked only because the O(1) coefficients c_k are not computed.
 - Extraction red flags: Notes the near-agreement of the taste exponent -38.41 with -4 pi^2 = -39.48 (2.7%) is coincidental, i.e. the headline match may be numerological.
 - Supersession (as known at extraction): none recorded
 

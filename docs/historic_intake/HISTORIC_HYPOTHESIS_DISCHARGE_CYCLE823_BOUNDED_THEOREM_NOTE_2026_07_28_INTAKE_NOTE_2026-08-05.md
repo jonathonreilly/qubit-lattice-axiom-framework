@@ -18,10 +18,6 @@ required before any effective status.
 
 H_TEMPLATE_PREIMAGE_ZONE_CLASS, the single hypothesis left open by Cycle 817's general-b sector theorem, is finitely decidable at fixed b and PASSES at every b = 3..10 when evaluated directly on 817's actual constructor objects, making the sector theorem unconditional there; the b = 11 pattern also passes and no general-b claim is made.
 
-Original verdict: The wall Cycle 817 narrowed to one hypothesis is down at b = 3 through 10 by derivation rather than exhaustion; the general-b hypothesis and b >= 12 remain open.
-Scope: Per-b facts on the actual constructor objects only; no general-b claim; the v1 surrogate computations are retained as labeled diagnostics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Discharges the single hypothesis Cycle 817's sector theorem left open, at every 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The wall Cycle 817 narrowed to one hypothesis is down at b = 3 through 10 by derivation rather than exhaustion; the general-b hypothesis and b >= 12 remain open.
+- Extraction scope (triage compression; may reflect later context): Per-b facts on the actual constructor objects only; no general-b claim; the v1 surrogate computations are retained as labeled diagnostics.
 - Extraction red flags: Records its own retraction: v1 ran on an embedded-table surrogate with a hard-coded offset never equated to the real constructor objects and was REFUTED by the checker; Authority: none, Audit: unset.
 - Supersession (as known at extraction): Discharges the hypothesis left conditional by Cycle 817; builds on packages 737/738/740/817.
 

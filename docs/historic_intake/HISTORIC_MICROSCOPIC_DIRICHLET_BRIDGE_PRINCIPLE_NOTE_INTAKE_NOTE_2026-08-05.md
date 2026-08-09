@@ -18,10 +18,6 @@ required before any effective status.
 
 With Lambda_R = H_tt - H_tb H_bb^-1 H_bt the exact Schur-complement Dirichlet-to-Neumann matrix at R=4, the sourced boundary action I_R(f;j) = (1/2) f^T Lambda_R f - j^T f satisfies I_R(f;j) = I_R(f_*;j) + (1/2)(f-f_*)^T Lambda_R (f-f_*); since Lambda_R is symmetric positive definite the remainder vanishes only at f = f_*, so the exact shell trace is the unique global minimizer and the native same-charge bridge is the unique minimum-energy discrete Dirichlet extension.
 
-Original verdict: Closes the 'ansatz vs principle' ambiguity — the bridge is a genuine microscopic variational principle, stronger than the static conformal ansatz — but does not close a pointwise Einstein/Regge theorem, broader support classes, or general nonlinear GR.
-Scope: The current star-supported finite-rank class; holds for both the exact local O_h family and the broader finite-rank family.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,8 @@ The bridge upgraded from ansatz to PRINCIPLE: exact Schur-complement DtN boundar
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes the 'ansatz vs principle' ambiguity — the bridge is a genuine microscopic variational principle, stronger than the static conformal ansatz — but does not close a pointwise Einstein/Regge theorem, broader support classes, or general nonlinear GR.
+- Extraction scope (triage compression; may reflect later context): The current star-supported finite-rank class; holds for both the exact local O_h family and the broader finite-rank family.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Upgrades the bridge from ansatz to principle on the class where LOCAL_BRIDGE_UNIQUENESS (idx_pos 1109) had shown it unique; the live blocker moves to extension beyond the current bridge surface.
 

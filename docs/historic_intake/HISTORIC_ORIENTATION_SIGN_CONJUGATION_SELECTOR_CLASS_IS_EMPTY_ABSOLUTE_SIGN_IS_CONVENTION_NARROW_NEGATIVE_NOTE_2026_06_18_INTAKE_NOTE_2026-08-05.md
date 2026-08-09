@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For any Hermitian H and any conjugation C (unitary or anti-unitary), spec(C H C^-1) = spec(H), so every selector in {K/CPT, modular J, parity P = sigma, chirality Gamma_5} leaves every spectral/energetic functional invariant — verified machine-zero over 6 seeds and n = 4,6,8,10,12. The two orientation branches are a conjugate pair via the exact weld e_4 (e_1 e_2 e_3) e_4^-1 = -(e_1 e_2 e_3).
 
-Original verdict: 'Run a bigger or interacting carrier to break the isospectrality' is a PROVABLY DEAD falsifier, and the absolute orientation sign is convention; the shared K-real piece of both Tier-A admissions is reclassified as a sign/convention with genuine_admitted_input_count unchanged at 2.
-Scope: Covers spectral/state functionals only; retires no Tier-A admission and edits no audit data. Runner 10/10.
-Escape conditions (negative claims): The third horn escapes explicitly: a gauge-invariant sigma-odd NON-spectral observable — a 2+1 topological action-offset — survives the no-go; a sigma-odd O (= e_1) genuinely splits the branches at +/-0.227.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Isospectrality theorem: every conjugation-based selector is spectrum-blind, so '
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): 'Run a bigger or interacting carrier to break the isospectrality' is a PROVABLY DEAD falsifier, and the absolute orientation sign is convention; the shared K-real piece of both Tier-A admissions is reclassified as a sign/convention with genuine_admitted_input_count unchanged at 2.
+- Extraction scope (triage compression; may reflect later context): Covers spectral/state functionals only; retires no Tier-A admission and edits no audit data. Runner 10/10.
+- Extraction escape conditions (negative claims; triage compression): The third horn escapes explicitly: a gauge-invariant sigma-odd NON-spectral observable — a 2+1 topological action-offset — survives the no-go; a sigma-odd O (= e_1) genuinely splits the branches at +/-0.227.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Builds on the cited GRAVITY_SIGN_IS_NOT_A_NEW_ADMISSION weld result; closes the Bisognano-Wichmann modular/KMS escape as circular.
 

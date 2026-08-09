@@ -18,10 +18,6 @@ required before any effective status.
 
 Recommends keeping the four ontology axioms (Lattice, Qubit/Local Possibility, Admissibility/Local Constraint, Record) unchanged, because the open gates show not an ontology defect but five named operational jobs; if bridge derivations fail, the minimal update is a small set of approved operational primitives: P_readout_selection, P_record_extension, P_physical_source, P_gauge_sector_measure, P_metric_observable.
 
-Original verdict: Bridge-first work should continue; the more-ontology route (adding a broad dynamics/process axiom) is REJECTED FOR NOW because the residuals split into named operational jobs rather than one ontology defect.
-Scope: A fallback governance map, not primitive registrations; sets no audit verdict, edits no registries, changes no axioms, claims no terminal closure. TOTAL PASS=106 FAIL=0.
-Escape conditions (negative claims): Five routes stay explicitly OPEN with their current state: readout-selection (normal form exists, physical selection remains), occurrence (local extension-kernel normal form exists, physical kernel/rate remains), source (RN/action factorization exists, physical source selector remains), theta (pointwise selector exists only after premises), and metric/observable (conformal class and weak-field responses conditional).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The bridge-first recommendation: keep the four ontology axioms; the gates show t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Bridge-first work should continue; the more-ontology route (adding a broad dynamics/process axiom) is REJECTED FOR NOW because the residuals split into named operational jobs rather than one ontology defect.
+- Extraction scope (triage compression; may reflect later context): A fallback governance map, not primitive registrations; sets no audit verdict, edits no registries, changes no axioms, claims no terminal closure. TOTAL PASS=106 FAIL=0.
+- Extraction escape conditions (negative claims; triage compression): Five routes stay explicitly OPEN with their current state: readout-selection (normal form exists, physical selection remains), occurrence (local extension-kernel normal form exists, physical kernel/rate remains), source (RN/action factorization exists, physical source selector remains), theta (pointwise selector exists only after premises), and metric/observable (conformal class and weak-field responses conditional).
 - Extraction red flags: N7 preserves the strong objection that a single future local action principle might derive occurrence, source/action, probability, metric clock rate and readout selection together.
 - Supersession (as known at extraction): Consolidates the post-axiom bridge stack; N8 records that earlier cycles overclaimed by folding readout selection, occurrence, source normalization and metric semantics into Record or generic dynamics language.
 

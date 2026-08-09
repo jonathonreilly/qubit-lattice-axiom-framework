@@ -18,10 +18,6 @@ required before any effective status.
 
 Synthesizes all five phases of the sqrt(2)-centred diagonal build (157 PASS / 0 FAIL total): extending Z^3 adjacency to face-diagonals is a beautiful unifying picture that closes NO gate — it relocates color (from no su(3) on the triplet to su(3) on generation space with color identification still open), chirality (grading available on the wider class, selection still open), and r = 1/2 (from admitted modulus to a sqrt(2)-weighted convention whose weighting rule is itself unforced).
 
-Original verdict: All three verdicts are PARTIAL/relocation or NOT-FORCED — the build's honest net is relocation, not closure.
-Scope: Synthesis only; modifies no axiom, claims no closure, weakens no retained no-go.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ The sqrt(2) build's terminal verdict (157 PASS): face-diagonal extension is relo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): All three verdicts are PARTIAL/relocation or NOT-FORCED — the build's honest net is relocation, not closure.
+- Extraction scope (triage compression; may reflect later context): Synthesis only; modifies no axiom, claims no closure, weakens no retained no-go.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal verdict note of the sqrt(2)-centred build, superseding the individual phase framings.
 

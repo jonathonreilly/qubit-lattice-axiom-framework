@@ -18,10 +18,6 @@ required before any effective status.
 
 Fixes the single confirmed TRUE BUG: frontier_shapiro_delayâ€‹.py's 1D periodic ring driver used raw math.hypot for Hamiltonian hopping weights, giving the wraparound edge weight 1/(n-1) instead of 1/1; a _min_image_hypot helper is added and _build_L/_build_H updated.
 
-Original verdict: The periodic-torus audit NEEDS_REVIEW count is now 0 (5/5 PASS), norm = 1.000000 across all three drivers, and the active-queue item is eligible for closure pending reviewer acceptance.
-Scope: One inline fix using only math and indexing.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Real bug fixed in a published science runner (Shapiro-delay wraparound weight) â
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The periodic-torus audit NEEDS_REVIEW count is now 0 (5/5 PASS), norm = 1.000000 across all three drivers, and the active-queue item is eligible for closure pending reviewer acceptance.
+- Extraction scope (triage compression; may reflect later context): One inline fix using only math and indexing.
 - Extraction red flags: Documents that a published Shapiro-delay runner carried a wraparound-weight bug.
 - Supersession (as known at extraction): Closes the true bug identified in the batch-1 manual review (idx_pos 1258).
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The formal F1-F3 tracial/product/modular selector route lands on dimension weighting (1,2), giving r = 1 and Q = 1, and therefore does NOT select equal-block Q = 2/3. Specifically the runner computes Tr(rho e0):Tr(rho e1) = 1:2 for rho = I_3/3, the trace has modular Delta = 1 so no block reweighting occurs, product traces preserve the same (1,2) ratio at every tested region size, and positivity checks admit BOTH candidate weights.
 
-Original verdict: PASS for the narrow route-pruning claim; the packet deliberately does not claim Q = 2/3 is impossible.
-Scope: The formal finite F1-F3 tracial/product/modular selector route only; explicitly not a global statement about all selectors, all physical flavor sectors, or all possible Q = 2/3 routes.
-Escape conditions (negative claims): Non-tracial reference states, chiral selectors, finite-gap dynamics, or an explicit block-measure rule; the runner already exhibits an equal-block state, but it is non-tracial and therefore outside the pruned route.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Another independent r=1 route: the formal F1-F3 tracial/product/modular selector
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PASS for the narrow route-pruning claim; the packet deliberately does not claim Q = 2/3 is impossible.
+- Extraction scope (triage compression; may reflect later context): The formal finite F1-F3 tracial/product/modular selector route only; explicitly not a global statement about all selectors, all physical flavor sectors, or all possible Q = 2/3 routes.
+- Extraction escape conditions (negative claims; triage compression): Non-tracial reference states, chiral selectors, finite-gap dynamics, or an explicit block-measure rule; the runner already exhibits an equal-block state, but it is non-tracial and therefore outside the pruned route.
 - Extraction red flags: Directly relevant to the Koide/Q = 2/3 lane: another independent family of measure-theoretic routes lands on kappa = 1 weighting rather than the block democracy the Q = 2/3 story needs (compare idx 10386).
 - Supersession (as known at extraction): none recorded
 

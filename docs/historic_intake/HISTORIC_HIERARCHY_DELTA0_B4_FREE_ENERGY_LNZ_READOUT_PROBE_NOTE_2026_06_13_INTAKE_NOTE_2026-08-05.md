@@ -20,10 +20,6 @@ required before any effective status.
 
 The per-taste free energy avoids both prior kills - its value chain [1/(4 pi), degree 0] x [u_0^(-2), degree -2] = alpha_s is exact to < 1e-12 at degree -2 exactly, and the 1/(4 pi) is located precisely in the m^2-derivative I_t = df_t/d(m^2) (Richardson at L = 192/384, two estimators, < 0.1%) rather than in f_t or df_t/dm which are UV-linearly divergent - but the additive-to-multiplicative conversion needs a readout coefficient, and the dim-4 admission taken literally gives (15/16)^(-1/4) = 1.0163, displaced ~9.8x from alpha_s = 0.1033.
 
-Original verdict: RECLASSIFY - B4 closure is sharpened to a specific named admission (derive the readout coefficient landing +Delta_S per decoupling), since no derived readout lands the factor in [0.99, 1.01] x alpha_s but a degree-(-2) magnitude-exact value chain does exist.
-Scope: A probe, clearly labelled not established; the readout coefficient converting the additive per-taste share to a multiplicative +Delta_S is a declared OPEN leg, never a claim.
-Escape conditions (negative claims): Records the escape routes the two sibling families lacked: family (i) was magnitude-capped at 9/16 and family (ii) NJL-RPA reached magnitude (1/(1-r) = 7.4314) but broke degree at -14.86 with its threshold-freeze rescue unsupplied - A3 escapes both, leaving only the readout coefficient.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The free-energy readout reclassification: value chain exact to 1e-12 with the 1/
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): RECLASSIFY - B4 closure is sharpened to a specific named admission (derive the readout coefficient landing +Delta_S per decoupling), since no derived readout lands the factor in [0.99, 1.01] x alpha_s but a degree-(-2) magnitude-exact value chain does exist.
+- Extraction scope (triage compression; may reflect later context): A probe, clearly labelled not established; the readout coefficient converting the additive per-taste share to a multiplicative +Delta_S is a declared OPEN leg, never a claim.
+- Extraction escape conditions (negative claims; triage compression): Records the escape routes the two sibling families lacked: family (i) was magnitude-capped at 9/16 and family (ii) NJL-RPA reached magnitude (1/(1-r) = 7.4314) but broke degree at -14.86 with its threshold-freeze rescue unsupplied - A3 escapes both, leaving only the readout coefficient.
 - Extraction red flags: Source-side label pending audit; the note enumerates six things it does NOT claim, including that it is not a kill and not a discovery about the per-taste 1/(4 pi).
 - Supersession (as known at extraction): The third and last of the B4 attachment families, consumed as leg 4 by the capstone portfolio (idx 681); explicitly notes the central degree-versus-magnitude tension is NOT a theorem but the conjunction of two family-specific facts.
 

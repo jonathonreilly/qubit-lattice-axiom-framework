@@ -18,10 +18,6 @@ required before any effective status.
 
 Support: for V = lambda(phi^2 - v^2)^2 the symmetric point has V''(0) = -4 lambda v^2 < 0 so it is not a durable record, forcing the realized vacuum to the broken minimum with m_H^2 = V''(v) = 8 lambda v^2. Wall: m_H^2 = 8 lambda v^2 holds for any lambda, v > 0, so v = sqrt(m_H^2/(8 lambda)) depends on the free lambda and durability cannot fix the scale. Runner 6/6.
 
-Original verdict: Yes for existence (conditional), no for the scale - the v-scale/hierarchy stays the separate obstructed lane.
-Scope: The existence support is conditional on the Mexican-hat shape - the mu^2 < 0 input is a separate EWSB-pattern input not supplied by mass=recordedness; no PDG values, v = 246 GeV not used.
-Escape conditions (negative claims): The wall is route-specific: it prunes only the 'fix v from durability' route because durability is scale-free. Alternative routes to fix v (RG running / exponent-16, the M_Pl import, dynamical relaxation) live in the separate hierarchy lane with its own standing obstructions.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ EWSB existence from record durability (V''<0 not durable) but NOT the scale — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Yes for existence (conditional), no for the scale - the v-scale/hierarchy stays the separate obstructed lane.
+- Extraction scope (triage compression; may reflect later context): The existence support is conditional on the Mexican-hat shape - the mu^2 < 0 input is a separate EWSB-pattern input not supplied by mass=recordedness; no PDG values, v = 246 GeV not used.
+- Extraction escape conditions (negative claims; triage compression): The wall is route-specific: it prunes only the 'fix v from durability' route because durability is scale-free. Alternative routes to fix v (RG running / exponent-16, the M_Pl import, dynamical relaxation) live in the separate hierarchy lane with its own standing obstructions.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Applies RECORD_DURABILITY_EQUALS_POSITIVE_MASS_CURVATURE (#2988) to the EWSB question, resolving two sides of its deepest residual.
 

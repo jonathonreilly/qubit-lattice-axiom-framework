@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 TERMINAL of the Cycle-509 packet, with mixed and bounded results. Route A's local bond-current field is constructive (all 17 rows pass numerical, inverse, covariance, mask, leakage and resource controls; all seven deletions valid and primary-sensitive) but only 6 of 10 primary-plus-mirror response gates pass, since every row with probe beta = -4pi/9 plus its mirror is transient-unresolved. The update-1 active-mediator ledger is probe independent with source-mass exponent 1.9978283424419019 against target 2 +/- 0.15, yet the composed response MISSES the frozen scaling gates: R/F population CV 0.2618097060407261 > 0.25 and maximum swap-log residual 0.6427776809657473 > 0.25. Route B's global translation-character observable is UNDEFINED on every train row under its own frozen law domain — 8/12 update-axis character pairs below the 0.05 magnitude floor on every row (136/204 overall).
 
-Original verdict: Route A survives constructively but not at the required 10/10; Route B is outside its frozen observable domain, so its reported response-covariance 1.0 and response floor 10.0 are explicit INVALID-DOMAIN SENTINELS, not measured residuals or thresholds.
-Scope: Valid train packet with full integrity (receipt/hash DAG, dependency bundle, JSON surfaces, manifest, row identities, artifact schemas, all 408 nonmetadata logical-array hashes and aggregate-gate recomputations agree); Route C unimplemented (8 rows) and no held row ran.
-Escape conditions (negative claims): A route-observable/domain failure that neither falsifies Route A nor supports a no-go verdict; the A/B candidate-law result cannot establish a route-independent obstruction, no-go, minimum content or axiom pressure.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ TERMINAL of the Cycle-509 packet, mixed and honest: Route A's local bond-current
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Route A survives constructively but not at the required 10/10; Route B is outside its frozen observable domain, so its reported response-covariance 1.0 and response floor 10.0 are explicit INVALID-DOMAIN SENTINELS, not measured residuals or thresholds.
+- Extraction scope (triage compression; may reflect later context): Valid train packet with full integrity (receipt/hash DAG, dependency bundle, JSON surfaces, manifest, row identities, artifact schemas, all 408 nonmetadata logical-array hashes and aggregate-gate recomputations agree); Route C unimplemented (8 rows) and no held row ran.
+- Extraction escape conditions (negative claims; triage compression): A route-observable/domain failure that neither falsifies Route A nor supports a no-go verdict; the A/B candidate-law result cannot establish a route-independent obstruction, no-go, minimum content or axiom pressure.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the Cycle-509 chain (2913 preflight -> 2910 scout -> 2911 failure -> 2912 train). The mass exponent 1.9978 vs target 2 is the closest quantitative agreement in the packet, and it belongs to a ledger explicitly labeled dimensionless, not energy.
 

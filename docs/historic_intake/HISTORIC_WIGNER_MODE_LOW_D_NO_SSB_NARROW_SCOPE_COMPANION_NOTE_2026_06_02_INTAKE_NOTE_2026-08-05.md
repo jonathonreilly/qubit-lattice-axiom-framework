@@ -18,10 +18,6 @@ required before any effective status.
 
 Repairs two overreaches in its audited_conditional parent by narrowing both branches: NS-W1 replaces W1 with the conditional 'IF the order-operator Ward/commutator normalization lemma H_Ward_norm holds with L-independent constants THEN no continuous-symmetry SSB at d <= 2, T > 0' (the lemma is NOT supplied), and NS-W2 restricts the Noether branch from an arbitrary Hamiltonian/generator to the admitted free Grassmann/Kawamoto-Smit staggered carrier with either the global U(1) phase generator or the central two-step (2Z)^3 translation generator.
 
-Original verdict: Both narrowing moves are taken with inline class-A lemmas verifying each narrowed statement matches the upstream claim_scope; the residual Ward-normalization step remains a named conditional hypothesis rather than a load-bearing conclusion.
-Scope: Narrow companion that does not modify the parent text, does not lift its audited_conditional ledger row, supplies no H_Ward_norm, and adds no admissions.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Ledger re-audit work-order execution narrowing both branches of an audited_condi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Both narrowing moves are taken with inline class-A lemmas verifying each narrowed statement matches the upstream claim_scope; the residual Ward-normalization step remains a named conditional hypothesis rather than a load-bearing conclusion.
+- Extraction scope (triage compression; may reflect later context): Narrow companion that does not modify the parent text, does not lift its audited_conditional ledger row, supplies no H_Ward_norm, and adds no admissions.
 - Extraction red flags: Documents that the parent cited AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE for no-SSB when that authority's own Non-Claims block explicitly disclaims it, and that no retained general lattice Noether theorem exists on origin/main.
 - Supersession (as known at extraction): Written to execute a ledger re-audit note's repair instruction on the parent WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02 (audited_conditional, load_bearing 6.085, 47 transitive descendants).
 

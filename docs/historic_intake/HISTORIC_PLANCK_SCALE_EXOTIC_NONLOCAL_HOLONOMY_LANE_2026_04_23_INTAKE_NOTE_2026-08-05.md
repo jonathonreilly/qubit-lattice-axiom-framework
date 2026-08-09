@@ -18,10 +18,6 @@ required before any effective status.
 
 Two datum-free subclasses fall: finite combinatorial nonlocal eigenphase functionals keep q_*/eps_* rational and so cannot equal 1/(8 pi), and positive normalized aggregates of the canonical local scalar deficits stay above the floor q_loc,min = 1 - sqrt(2)/2 at eps = pi/2. The exact target on the minimal cubical defect is q_* = eps_min/(8 pi) = 1/16.
 
-Original verdict: A real narrowing, not a closure - exact Planck could only hide in a non-extensive, non-internal or infinite/renormalized nonlocal object.
-Scope: Finite same-surface Spin(3) holonomy constructions with combinatorial normalization, and positive normalized internal/barycentric aggregates of local gauge-invariant deficits.
-Escape conditions (negative claims): Escaped only by a non-extensive, non-internal or otherwise non-canonical reparameterization, or by an infinite/renormalized nonlocal holonomy object rather than any clean finite same-surface construction.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Holonomy terminal narrowing: datum-free subclasses fall (rational q ratios; posi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A real narrowing, not a closure - exact Planck could only hide in a non-extensive, non-internal or infinite/renormalized nonlocal object.
+- Extraction scope (triage compression; may reflect later context): Finite same-surface Spin(3) holonomy constructions with combinatorial normalization, and positive normalized internal/barycentric aggregates of local gauge-invariant deficits.
+- Extraction escape conditions (negative claims; triage compression): Escaped only by a non-extensive, non-internal or otherwise non-canonical reparameterization, or by an infinite/renormalized nonlocal holonomy object rather than any clean finite same-surface construction.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal narrowing note of the holonomy sub-lane, built on the elementary action-phase reduction plus the Spin(3) weight and character-deficit no-gos.
 

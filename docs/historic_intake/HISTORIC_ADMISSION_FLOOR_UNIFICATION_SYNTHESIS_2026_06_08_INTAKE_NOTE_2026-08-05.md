@@ -18,10 +18,6 @@ required before any effective status.
 
 Manuscript synthesis arguing the four dimensionless Tier-A admissions (r = 1/2 with Q = 2/3, delta ~ 2/9, theta_gauge = 0, xi = 1) are not independent but four faces of one missing primitive: the un-derived CP-odd/coupling sector of the Record-forced action, tied to a single orientation Z_2 and the clock-rate/arrow. Rests on the companion no-go that Record forces the action form-class (gauge-invariant-local) but not its coefficients, and that there is no axiom-native CP source.
 
-Original verdict: Characterization, not derivation — the note states explicitly that it does not claim the floor is derivable and that four items remain admitted.
-Scope: Publication narrative over already-stated results from the three axioms Lattice (Z^3), Quantum (per-site M_2(C) = Cl(3,0)), Record (durable additive scalar readout); asserts no audit verdict, proposal_allowed: false.
-Escape conditions (negative claims): The named escape route is deriving the CP-odd/coupling coefficients of the Record-forced action, or finding an axiom-native CP source beyond the single sign-only orientation Z_2 (the arrow is only a boundary condition, CPT is CP-protecting).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Pre-reset synthesis characterizing the four dimensionless Tier-A admissions (r =
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Characterization, not derivation — the note states explicitly that it does not claim the floor is derivable and that four items remain admitted.
+- Extraction scope (triage compression; may reflect later context): Publication narrative over already-stated results from the three axioms Lattice (Z^3), Quantum (per-site M_2(C) = Cl(3,0)), Record (durable additive scalar readout); asserts no audit verdict, proposal_allowed: false.
+- Extraction escape conditions (negative claims; triage compression): The named escape route is deriving the CP-odd/coupling coefficients of the Record-forced action, or finding an axiom-native CP source beyond the single sign-only orientation Z_2 (the arrow is only a boundary condition, CPT is CP-protecting).
 - Extraction red flags: Self-labeled honest, but the headline slogan 'structure from three axioms; the residual is one primitive' is stated on the manuscript surface while several of its supporting rows (Bridge-1 algebra, no-axiom-native-CP unification, strong-CP parity route, i-identity gate) are unreviewed proposals.
 - Supersession (as known at extraction): Pre-reset framing: the 2026-06-29 axiom reset and the 2026-08-05 admissibility revision (PR #6011) move Born structure into axiom content, changing this note's axiom base. The r = 1/2 face was later handled by the conditional selection theorem (PR #5236) and the occupancy channel abolished 2026-07-11.
 

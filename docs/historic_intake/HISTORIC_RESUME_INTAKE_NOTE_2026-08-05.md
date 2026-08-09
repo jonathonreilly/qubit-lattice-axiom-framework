@@ -18,10 +18,6 @@ required before any effective status.
 
 Campaign state for the axiom-reconciliation rescan: a regenerable index at TOTAL HARD=141 SOFT_ONLY=740 RETAINED_STATUS_HARD=8 at base commit 7b9260b85, with 30 codex batches classifying the 141 hard files into a frozen five-class rubric (REKEY / CONTENT-FLIP / REOPENED-WALL / HISTORICAL-OK / DELIBERATE-OLD-TEXT, severity tie-break flip/wall > rekey > historical).
 
-Original verdict: Deliverables are committed TSVs under logs/runner-cache/recon_triage/; supervisor line-reviews every worker row before any edit lands.
-Scope: Files whose load-bearing quotes or citations reference deleted or changed axiom content.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ Work order already surfaced to the owner: the axiom-reconciliation rescan index 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Deliverables are committed TSVs under logs/runner-cache/recon_triage/; supervisor line-reviews every worker row before any edit lands.
+- Extraction scope (triage compression; may reflect later context): Files whose load-bearing quotes or citations reference deleted or changed axiom content.
 - Extraction red flags: 141 files carry hard references to deleted or changed axiom content, and 8 of them hold retained audit status - i.e. retained claims resting on axiom text that no longer exists, and the invalidation pipeline did not catch it.
 - Supersession (as known at extraction): Records that the 8 hard files WITH RETAINED AUDIT STATUS are an INVALIDATION-PIPELINE GAP to be flagged to the audit lane.
 

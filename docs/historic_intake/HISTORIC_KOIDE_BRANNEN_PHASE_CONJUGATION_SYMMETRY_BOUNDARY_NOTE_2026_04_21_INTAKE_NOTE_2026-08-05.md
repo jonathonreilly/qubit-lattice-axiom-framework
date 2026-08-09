@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Entrywise complex conjugation fixes the cyclic channels B0 = I and B1 = C + C^2 but flips B2 = i(C - C^2), so any source law descending through the current conjugation-symmetric ambient Wilson class has zero B2 response (r2 = 0) — yet the physical charged-lepton target has theta = atan2(r2, r1) = -2.316624963970 with delta = 2/9 and r2 != 0.
 
-Original verdict: No — the current class cannot fix the physical Brannen phase by itself, which is a real reduction rather than another failure note.
-Scope: The exact Koide cyclic carrier and the current positive, self-adjoint, conjugation-symmetric ambient one-clock Wilson class on main.
-Escape conditions (negative claims): The missing law must refine the conjugation-even positive one-clock Wilson class by an orientation-sensitive / conjugation-ODD datum; that is exactly the escape the theorem leaves open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Clean reduction: the conjugation-symmetric ambient Wilson class cannot fix the B
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No — the current class cannot fix the physical Brannen phase by itself, which is a real reduction rather than another failure note.
+- Extraction scope (triage compression; may reflect later context): The exact Koide cyclic carrier and the current positive, self-adjoint, conjugation-symmetric ambient one-clock Wilson class on main.
+- Extraction escape conditions (negative claims; triage compression): The missing law must refine the conjugation-even positive one-clock Wilson class by an orientation-sensitive / conjugation-ODD datum; that is exactly the escape the theorem leaves open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Follows the endpoint-target, cyclic-phase target, selected-line/Brannen orbit bridge and endpoint pullback notes, narrowing what any successor ambient law must look like.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Front-door framing that A_min = {A1 per-site qubit, A2 Z^3 lattice} carries no numerical content and M_Pl is the single dimensionful translation: 1/a = M_Pl ~ 1.22e19 GeV reconstructs v = 246.28 GeV vs PDG 246.22 GeV, a 0.0255% residual claimed to sit at the predicted 2-loop scale (alpha_LM/pi)^2 ~ 0.083%. Tier-A admissions registry stood at genuine_admitted_input_count: 4 (P1 observable principle, AC_phi_lambda generation pattern, S scale anchor, theta = 0) before the session's projected reductions.
 
-Original verdict: Framing only — explicitly not a derivation of 1.22e19 GeV, which the note calls logically impossible from pure mathematics without a comparator unit.
-Scope: Publication-surface framing after the 2026-05-25/27 hierarchy attack; asserts retained-grade on no single row and adds no new external input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Front-door framing terminal for the calibration story: A_min = {A1 per-site qubi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Framing only — explicitly not a derivation of 1.22e19 GeV, which the note calls logically impossible from pure mathematics without a comparator unit.
+- Extraction scope (triage compression; may reflect later context): Publication-surface framing after the 2026-05-25/27 hierarchy attack; asserts retained-grade on no single row and adds no new external input.
 - Extraction red flags: The 0.0255% observed vs 0.083% predicted residual is confirmed only 'at order-of-magnitude' with within-decade / within-factor-4 thresholds — a very loose test presented alongside 5-significant-figure agreement; post-audit admission counts are projections contingent on PRs #1969/#1978/#1983/#1984 ratifying.
 - Supersession (as known at extraction): Supersedes 2753's framing of the M_Pl calibration; the post-2026-06-29 axiom reset changes the A_min statement this note builds on.
 

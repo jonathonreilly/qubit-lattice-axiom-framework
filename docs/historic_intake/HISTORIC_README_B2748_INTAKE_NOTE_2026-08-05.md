@@ -18,10 +18,6 @@ required before any effective status.
 
 TERMINAL package README: delta = 2/9 identified with the Koide-amplitude rotation angle, first-branch span pi/12 = 2*pi/|O| with |O| = 24, and the ABSS G-signature on Cl(3) = M_2(C) with Z_3 tangent weights (1,2) mod 3 evaluating symbolically to (1/3)*(2*(1+w)(1+w^2)/((1-w)(1-w^2))) = 2/9 via (w-1)(w^2-1) = 3. Three runners report 30/30 + 11/11 + 8/8 = 49/49 PASS; the L=3 Wilson-Dirac plateau is explicitly NOT claimed continuum-robust (plateau at only 11% of scanned r values).
 
-Original verdict: Candidate closure proposed for landing on main, with all four named reviewer residuals self-marked closed.
-Scope: Charged-lepton Brannen phase on Cl(3)/Z^3; declares no new axioms beyond A0 plus retained cubic kinematics, three-generation and anomaly-forces-time.
-Escape conditions (negative claims): Residual 3's escape is definitional: m_* is declared axiom-native by the structural equation alpha(m_0) - alpha(m_*) = eta_ABSS = 2/9 with uniqueness by monotonicity + IVT, making the PDG match (0.0005%-0.003%) a forward prediction rather than an input.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,9 @@ TERMINAL of the Brannen lane-2 closure package: delta = 2/9 identified with the 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Candidate closure proposed for landing on main, with all four named reviewer residuals self-marked closed.
+- Extraction scope (triage compression; may reflect later context): Charged-lepton Brannen phase on Cl(3)/Z^3; declares no new axioms beyond A0 plus retained cubic kinematics, three-generation and anomaly-forces-time.
+- Extraction escape conditions (negative claims; triage compression): Residual 3's escape is definitional: m_* is declared axiom-native by the structural equation alpha(m_0) - alpha(m_*) = eta_ABSS = 2/9 with uniqueness by monotonicity + IVT, making the PDG match (0.0005%-0.003%) a forward prediction rather than an input.
 - Extraction red flags: Header 'ALL RESIDUALS CLOSED' with green checkmarks while the m_* residual is closed by defining m_* via the very quantity being predicted; 49/49 PASS counts self-authored assertions, not independent checks; the Wilson-Dirac plateau holds at only 11% of scanned regulator values.
 - Supersession (as known at extraction): TERMINAL for the BRANNEN_LANE2_CLOSURE family (2745-2750). Downstream: the r=1/2 / Koide occupancy record was WITHDRAWN 2026-07-11 and the channel abolished, so this package's consumer surface is gone.
 

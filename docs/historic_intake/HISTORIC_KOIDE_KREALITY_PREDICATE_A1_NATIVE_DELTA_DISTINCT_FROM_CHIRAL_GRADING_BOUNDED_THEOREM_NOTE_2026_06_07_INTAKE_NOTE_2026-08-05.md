@@ -20,10 +20,6 @@ required before any effective status.
 
 Three exact advances: complex conjugation in the A1 site basis transports to conj(P_0)=P_0, conj(P_1)=P_2, conj(P_2)=P_1, algebraically identical to the posited K (predicate is A1-native); the three hw=1 corners are self-conjugate so any K-even operator gives a real corner block and delta = 0; and A = i(C-C^2) = (C-C^2) tensor omega is circulant with [A, Gamma_chi] = 0, so the delta channel does NOT anticommute with the chiral grading and the delta and r/Q residuals are independent.
 
-Original verdict: The residual for delta = 0 is a distinct, narrower question — whether the realized generation mass is K-even or recruits the native omega — independent of the chirality import.
-Scope: Bounded: derives the predicate and the K-even case only; does not claim import-free delta = 0, does not touch r (G3/GAP B), does not assert A3 selects a partition; runner TOTAL PASS=17 FAIL=0.
-Escape conditions (negative claims): delta != 0 requires a K-odd translation-breaking coupling; the native omega channel is admissible and an imported U(1) Peierls connection is excluded as native by the retained_no_go on plaquette center flux, so the escape is exactly omega-recruitment.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The corrected K-reality reading: predicate A1-native, corner self-conjugacy forc
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The residual for delta = 0 is a distinct, narrower question — whether the realized generation mass is K-even or recruits the native omega — independent of the chirality import.
+- Extraction scope (triage compression; may reflect later context): Bounded: derives the predicate and the K-even case only; does not claim import-free delta = 0, does not touch r (G3/GAP B), does not assert A3 selects a partition; runner TOTAL PASS=17 FAIL=0.
+- Extraction escape conditions (negative claims; triage compression): delta != 0 requires a K-odd translation-breaking coupling; the native omega channel is admissible and an imported U(1) Peierls connection is excluded as native by the retained_no_go on plaquette center flux, so the escape is exactly omega-recruitment.
 - Extraction red flags: Two same-date notes share one runner and reach OPPOSITE structural conclusions (distinct vs unified); this one reports 17 checks where the sibling reports 13.
 - Supersession (as known at extraction): Explicitly corrects 'an earlier framing of this result that wrongly identified the delta channel with the chirality import' — i.e. it supersedes the same-day, same-runner sibling KOIDE_KREALITY_PREDICATE_A1_NATIVE_UNIFIES_WITH_CHIRALITY_IMPORT note.
 

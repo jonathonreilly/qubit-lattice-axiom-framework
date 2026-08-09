@@ -18,10 +18,6 @@ required before any effective status.
 
 If the source moves the canonical radial coordinate by kappa_h ds and an orthogonal neutral scalar by kappa_x ds, then at tree level R_t = dm_t/ds = (y_h kappa_h + y_x kappa_x)/sqrt(2) and R_W = dM_W/ds = g_2 kappa_h/2, so g_2 R_t/(sqrt(2) R_W) = y_h + y_x kappa_x/kappa_h — the unknown source normalization cancels exactly and the entire residue is the orthogonal neutral top-coupling term.
 
-Original verdict: The W-response route closes the source-normalization half of the FH/LSZ blocker, but W response alone is not physical y_t without an orthogonal-top null theorem, a tomography row subtracting y_x kappa_x/kappa_h, or Gram-purity rows proving the source pole is the canonical pole.
-Scope: Exact support at tree level on the existing one-Higgs gauge-mass and Yukawa-selection surfaces; the required rows are absent.
-Escape conditions (negative claims): Three named sufficient supplements, each of which is separately gated (idx 2352, 2171, 2379).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The W/Z response route's positive form (per the chain map: the surviving conditi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The W-response route closes the source-normalization half of the FH/LSZ blocker, but W response alone is not physical y_t without an orthogonal-top null theorem, a tomography row subtracting y_x kappa_x/kappa_h, or Gram-purity rows proving the source pole is the canonical pole.
+- Extraction scope (triage compression; may reflect later context): Exact support at tree level on the existing one-Higgs gauge-mass and Yukawa-selection surfaces; the required rows are absent.
+- Extraction escape conditions (negative claims; triage compression): Three named sufficient supplements, each of which is separately gated (idx 2352, 2171, 2379).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL positive statement of the W/Z route: it isolates exactly one residual term, which the rest of the campaign then fails to measure or eliminate.
 

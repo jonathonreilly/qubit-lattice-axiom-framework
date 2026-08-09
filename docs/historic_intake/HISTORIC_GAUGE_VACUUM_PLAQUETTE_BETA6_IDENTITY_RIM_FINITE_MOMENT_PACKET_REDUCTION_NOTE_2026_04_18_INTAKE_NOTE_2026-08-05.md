@@ -18,10 +18,6 @@ required before any effective status.
 
 The fixed-depth bulk datum reduces one scalar step further to the finite cyclic moments m_n = <eta, S^n eta> = e_1^T J_d^n e_1, with alpha_0 = m_1 and beta_1^2 = m_2 - m_1^2 making the first Jacobi layer exactly the first moment pair; the same witness pair has m_1^P != m_1^Q and m_2^P != m_2^Q despite identical propagated retained triples.
 
-Original verdict: The sharpest scalar formulation yet - one finite moment packet against an explicit boundary law - and the bank fails at the first nontrivial moment pair.
-Scope: Fixed depth; leaves the true moment packet, the identity rim datum, the plaquette PF data and the global PF selector open.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,8 @@ The plaquette reduction chain's terminal: fixed-depth closure = one finite cycli
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The sharpest scalar formulation yet - one finite moment packet against an explicit boundary law - and the bank fails at the first nontrivial moment pair.
+- Extraction scope (triage compression; may reflect later context): Fixed depth; leaves the true moment packet, the identity rim datum, the plaquette PF data and the global PF selector open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Fifth link in the chain, consuming the finite-Jacobi reduction (571) and feeding both fixed-depth certificates (568, 569) and the Hankel restatement (567).
 

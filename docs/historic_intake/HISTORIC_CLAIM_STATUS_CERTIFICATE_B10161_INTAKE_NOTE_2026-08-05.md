@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Bundles cycles 5, 9 and 11 into a single Nature-grade target - the lattice-to-physical matching obstruction - PASS=30/0.
 
-Original verdict: Identifies a repeated structural obstruction across three independent lanes.
-Scope: One campaign cycle; single-line certificate.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,8 @@ Bundles cycles 5, 9 and 11 into ONE structural obstruction - the lattice-to-phys
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Identifies a repeated structural obstruction across three independent lanes.
+- Extraction scope (triage compression; may reflect later context): One campaign cycle; single-line certificate.
 - Extraction red flags: Certificate is a single line - the full dependency and criteria assessment that cycles 1-9 carried is absent, so the claim cannot be re-audited from this file alone.
 - Supersession (as known at extraction): Synthesises idx 10153, 10157 and 10159 into one named target.
 

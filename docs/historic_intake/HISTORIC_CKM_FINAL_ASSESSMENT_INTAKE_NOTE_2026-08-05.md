@@ -18,10 +18,6 @@ required before any effective status.
 
 Full inventory of CKM routes tried: solidly derived are the NNI texture, eps = 1/3, |V_us| = sqrt(m_d/m_s) = 0.2234 (0.4% from PDG via Gatto-Sartori-Tonin), the hierarchy ordering, delta ~ 2 pi/3 and J ~ 1e-5 in order of magnitude; not derived are V_cb (factor 2-4), V_ub (factor 3-4), O(1) NNI coefficients (worst 38%) and the precise CP phase (120 vs 68.5 degrees, 75% off).
 
-Original verdict: No new route bypasses the compute bottleneck; the gap is diagnosed as computational rather than conceptual, and the lane stays BOUNDED.
-Scope: Includes a table of mass-ratio attempts for V_cb (sqrt(m_s/m_b) 3.2x, sqrt(m_c/m_t) 2.0x, m_s/m_b 0.44x, m_c/m_t 0.18x) and three untried routes.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Terminal route inventory: the CKM gap diagnosed as computational (S_23 bottlenec
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No new route bypasses the compute bottleneck; the gap is diagnosed as computational rather than conceptual, and the lane stays BOUNDED.
+- Extraction scope (triage compression; may reflect later context): Includes a table of mass-ratio attempts for V_cb (sqrt(m_s/m_b) 3.2x, sqrt(m_c/m_t) 2.0x, m_s/m_b 0.44x, m_c/m_t 0.18x) and three untried routes.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal assessment note of the April CKM route search.
 

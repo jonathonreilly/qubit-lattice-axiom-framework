@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 EXACT RANK THEOREM: the full lawful Cycle-553 sink has six independent branch qubits (three Wilson s, three frame b), so per unchanged target/gauge ray the input branch space has dimension 64 while the strict terminal has dimension 8 — a map that leaves the same ray and blanks all frame M2 with NO RECIPIENT has rank at most 8 and cannot be an isometry on 64 inputs, a deficit of 56 dimensions or exactly a factor eight. An eight-dimensional recipient (three qubits) is NECESSARY AND SUFFICIENT. The positive recipient map V_rec = SWAP*C satisfies V_rec*L(O) = O*V_rec on every one of 200,000 L5 and 345,600 held-L6 displayed branch identities including all 300/432 chi-dependent generators.
 
-Original verdict: The Clifford/symplectic route is SHARPLY FALSIFIED for the requested bare terminal Pauli algebra because every nonzero chi_a gives a Boolean phase with mixed support.
-Scope: Three contracts kept strictly separate: true dimension-reducing blank retirement (EXCLUDED by the rank theorem), information transfer to an explicit three-qubit recipient (constructed, but not physical-content compression since the recipient is nonblank), and quotient/reclassification (frame degrees remain physically present as three gauge qubits, so not physical blanking).
-Escape conditions (negative claims): The theorem explicitly does NOT say frame retirement is broadly impossible — it is strictly narrower than a no-go for non-Clifford or subsystem maps, and enlarging the target/gauge factor only changes the inequality to 64D > 8D without helping. Broad negative gate FAIL / DO NOT SHIP.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Shipped exact rank theorem: the full lawful Cycle-553 sink has six independent b
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Clifford/symplectic route is SHARPLY FALSIFIED for the requested bare terminal Pauli algebra because every nonzero chi_a gives a Boolean phase with mixed support.
+- Extraction scope (triage compression; may reflect later context): Three contracts kept strictly separate: true dimension-reducing blank retirement (EXCLUDED by the rank theorem), information transfer to an explicit three-qubit recipient (constructed, but not physical-content compression since the recipient is nonblank), and quotient/reclassification (frame degrees remain physically present as three gauge qubits, so not physical blanking).
+- Extraction escape conditions (negative claims; triage compression): The theorem explicitly does NOT say frame retirement is broadly impossible — it is strictly narrower than a no-go for non-Clifford or subsystem maps, and enlarging the target/gauge factor only changes the inequality to 64D > 8D without helping. Broad negative gate FAIL / DO NOT SHIP.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Resolves the six-to-three compression question left by Cycle 553 (idx 2969) with a clean impossibility-plus-construction pair — one of the few genuine no-gos in the sweep, and correctly scoped.
 

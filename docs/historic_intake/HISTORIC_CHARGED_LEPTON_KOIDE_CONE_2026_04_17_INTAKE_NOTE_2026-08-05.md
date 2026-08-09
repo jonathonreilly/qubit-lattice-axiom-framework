@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Attempts to force the charged-lepton sqrt-mass vector onto the Koide cone (Q=2/3, observed 0.6668, direction (0.0165,0.2369,0.9713)) from the retained Cl(3)/Z^3 surface, and fails structurally: the hw=1 species sit in orthogonal translation-character eigenspaces so the off-diagonal b=K_12=0 collapses the circulant kernel to a*I_3. A 19-agent campaign found no retained mechanism forcing the cone; closure proceeds only at the observational-pin class with strict-review verdict TRUE_NO_PREDICTION.
 
-Original verdict: RESOLVED (negative on retained surface) - TRUE_NO_PREDICTION.
-Scope: Retained Cl(3)-on-Z^3 surface, minimal 3+1 APBC block, L_t=4, hw=1 triplet; no quark/PMNS/CKM/fitted-flavor input.
-Escape conditions (negative claims): Step 7 residual-ratio extraction remains open: a further framework invariant fixing the position on the 2D Koide cone would lift the observational pin, but none exists on the current surface.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Decisive early negative on the retained Cl(3) surface: forcing the charged-lepto
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): RESOLVED (negative on retained surface) - TRUE_NO_PREDICTION.
+- Extraction scope (triage compression; may reflect later context): Retained Cl(3)-on-Z^3 surface, minimal 3+1 APBC block, L_t=4, hw=1 triplet; no quark/PMNS/CKM/fitted-flavor input.
+- Extraction escape conditions (negative claims; triage compression): Step 7 residual-ratio extraction remains open: a further framework invariant fixing the position on the 2D Koide cone would lift the observational pin, but none exists on the current surface.
 - Extraction red flags: Title and 'Target Behavior' section read as a positive Koide derivation ('exact algebraic output') while the body concludes TRUE_NO_PREDICTION - a reader stopping at the top gets the opposite of the verdict.
 - Supersession (as known at extraction): Cites docs authorities THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md, OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md, DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md, ANOMALY_FORCES_TIME_THEOREM.md, PLAQUETTE_SELF_CONSISTENCY_NOTE.md; consolidated into a separate review-note package (Theorem 7).
 

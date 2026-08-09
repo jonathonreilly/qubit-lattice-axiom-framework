@@ -18,10 +18,6 @@ required before any effective status.
 
 Classifies the branch as a hardened CONDITIONAL Planck theorem on the retained physical-gravity parent-source boundary-action object class, not a bare Cl(3)/Z^3 derivation of Planck length or hbar. Seven items are closed (physical lattice observability, source-free finite-cell state, rank(P_A)/16 = 1/4, flat edge-Clifford soldering, the finite event Ward derivative, source-functorial Schur/event equality, conditional a^2/l_P^2 = 1) and three remain open (B3 dynamical gravity, boundary object-class derivation, hbar/gamma).
 
-Original verdict: Conditional retained physical-gravity Planck theorem; not bare-axiom Planck and not a derivation of the quantum of action.
-Scope: Status classification for the 2026-04-24 pass; bare-axiom closure is reduced to named open theorems.
-Escape conditions (negative claims): Three next exact targets: derive a local metric/coframe gauge response from primitive translation defects, derive the parent-source boundary-action object class from that response, and derive a primitive real action-unit theorem (index-one Dirac/Fredholm pair or noncompact central action generator).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ FINAL hostile-review classification: hardened CONDITIONAL Planck theorem, NOT ba
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Conditional retained physical-gravity Planck theorem; not bare-axiom Planck and not a derivation of the quantum of action.
+- Extraction scope (triage compression; may reflect later context): Status classification for the 2026-04-24 pass; bare-axiom closure is reduced to named open theorems.
+- Extraction escape conditions (negative claims; triage compression): Three next exact targets: derive a local metric/coframe gauge response from primitive translation defects, derive the parent-source boundary-action object class from that response, and derive a primitive real action-unit theorem (index-one Dirac/Fredholm pair or noncompact central action generator).
 - Extraction red flags: Explicitly forbids 'Nature-grade bare-axiom Planck and hbar closure has been achieved', a sentence sibling notes in the family come close to asserting.
 - Supersession (as known at extraction): Self-describes as the final hostile-review classification for the pass; together with the finish-line/cosmic-pin theorem it is the terminal status pair of the April Planck family.
 

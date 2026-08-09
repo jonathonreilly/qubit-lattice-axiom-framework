@@ -18,10 +18,6 @@ required before any effective status.
 
 A five-step chain from lattice discreteness (lambda_min = 2 l_Planck, so f(R_S + a) = a/(R_S+a) > 0 and no horizon forms; Fermi floor R_min = N^(1/3) a) places the GW150914 remnant's surface at epsilon = R_min/R_S = 3.70e-21 with ln(1/epsilon) = 47.05, giving a zero-parameter echo prediction t_echo = 67.66 ms and f_echo = 14.8 Hz for M = 62 M_sun, chi = 0.67 (58.09 ms / 17.2 Hz non-spinning; N_baryons = 7.37e58, R_min = 6.78e-16 m, R_S = 1.83e5 m, f_min = 8.8e-41, Kerr spin enhancement 1.1735).
 
-Original verdict: Testable with existing LIGO O1/O2/O3 data: confirmed if echoes are detected at 68 +/- 3 ms, refuted if at t >> 68 ms (e.g. Abedi's ~100 ms) or absent.
-Scope: All inputs determined (M and chi from LIGO, a = l_Planck from the framework axiom, m = m_nucleon from the SM); free parameters ZERO; the prediction is logarithmically insensitive to surface location — a factor-of-10 change in epsilon shifts t_echo by only ~5%.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ GW150914 echo prediction 68+/-3 ms — falsifiable against LIGO O1-O3, disagreei
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Testable with existing LIGO O1/O2/O3 data: confirmed if echoes are detected at 68 +/- 3 ms, refuted if at t >> 68 ms (e.g. Abedi's ~100 ms) or absent.
+- Extraction scope (triage compression; may reflect later context): All inputs determined (M and chi from LIGO, a = l_Planck from the framework axiom, m = m_nucleon from the SM); free parameters ZERO; the prediction is logarithmically insensitive to surface location — a factor-of-10 change in epsilon shifts t_echo by only ~5%.
 - Extraction red flags: Self-listed estimates: the Kerr correction uses the standard ECO tortoise factor (Cardoso et al. 2016) rather than a full Kerr tortoise integral on the lattice; the surface reflection coefficient is assumed ~1 (perfect reflection) with partial absorption reducing amplitude; and the frozen-star EOS at nuclear density is not modelled, the Planck-scale hard floor being used directly.
 - Supersession (as known at extraction): Disagrees with Abedi et al. (2017): 67.66 ms vs ~100 ms and epsilon 3.70e-21 vs 5.15e-31 — Abedi's 100 ms would require the surface ~6 billion Planck lengths above R_S.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply WEAK_FRONT_BASE_RETAINED. Finite witnesses: F_0 = g_2 (1/sqrt(2)); the D17 two-component block coefficients (1/sqrt(2), 1/sqrt(2)) have squared norm 1; F_0 (1/256) is 256 times smaller than F_0; and C_A3 F_0 differs from F_0 when C_A3 = 0.9996780910571587.
 
-Original verdict: Support-only non-supply boundary; the three factors (front, source singleton, A3 correction) are held separate by construction.
-Scope: The weak-front input consumed by the absolute charged-lepton scale assembly.
-Escape conditions (negative claims): Supply the D17 block normalization and the SU(2) coupling context, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Weak-front base terminal: the three-factor decomposition priced with finite witn
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the three factors (front, source singleton, A3 correction) are held separate by construction.
+- Extraction scope (triage compression; may reflect later context): The weak-front input consumed by the absolute charged-lepton scale assembly.
+- Extraction escape conditions (negative claims; triage compression): Supply the D17 block normalization and the SU(2) coupling context, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the weak-front base; packets 2714/2715/2716 feed it; consumed by the K4 terminal 2505.
 

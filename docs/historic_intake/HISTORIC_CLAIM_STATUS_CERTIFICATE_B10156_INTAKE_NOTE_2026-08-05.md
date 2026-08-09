@@ -18,10 +18,6 @@ required before any effective status.
 
 A DEMOTION packet for OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md (td=294, load-bearing score 26.70), identifying 4+1 admitted bridge assumptions in its load-bearing chain - scalar additivity, CPT-even phase blindness, continuity, normalization and a hierarchy baseline import - and recommending demotion from unknown to bounded support theorem. Runner PASS=27 FAIL=0.
 
-Original verdict: 294 transitive descendants inherit the corrected status; a retention path via five bridge-assumption retirements is documented.
-Scope: Status classification only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Demotion packet: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md (294 transitive de
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): 294 transitive descendants inherit the corrected status; a retention path via five bridge-assumption retirements is documented.
+- Extraction scope (triage compression; may reflect later context): Status classification only.
 - Extraction red flags: The observable principle is a load-bearing authority for the Koide and hierarchy lanes, and it carries five admitted bridge assumptions.
 - Supersession (as known at extraction): DEMOTES LANDED CONTENT: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md - an authority cited by the April charged-lepton/Koide chain (idx 10010, 10100, 10101).
 

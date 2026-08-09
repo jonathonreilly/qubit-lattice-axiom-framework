@@ -18,10 +18,6 @@ required before any effective status.
 
 Reverses the classifier revival a second time: the free_coh metric had recovered to 17/21 = 81.0% scaffolded (vs 12/21 = 57.1% for the old rule, +24 points), but on nine continuous-position off-scaffold generators the frozen rule free_coh >= 7.96e-04 gets 5/9 = 55.6%, exactly matching the old node-level rule, so the entire +24-point advantage is scaffold-specific. Across four distinct metric families the simple-classifier lane is now closed, while human structural pre-committed predictions hit 8/9 = 88.9% on the same generators.
 
-Original verdict: The classifier program is closed; the physics program is not - the wave-equation lanes 4-8b remain retained and unaffected because their physics is substrate-natural.
-Scope: Off-scaffold generators: uniform, Gaussian, clustered, rotated, Halton, radial, stretched.
-Escape conditions (negative claims): Two named next moves that are not another metric search: matter/inertial closure, or a direct analytic derivation from path-sum plus S=L(1-f) targeting the density-and-symmetry structure that explains the 88.9% baseline.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ TERMINAL of the classifier double-reversal: the second reversal closes the class
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The classifier program is closed; the physics program is not - the wave-equation lanes 4-8b remain retained and unaffected because their physics is substrate-natural.
+- Extraction scope (triage compression; may reflect later context): Off-scaffold generators: uniform, Gaussian, clustered, rotated, Halton, radial, stretched.
+- Extraction escape conditions (negative claims; triage compression): Two named next moves that are not another metric search: matter/inertial closure, or a direct analytic derivation from path-sum plus S=L(1-f) targeting the density-and-symmetry structure that explains the 88.9% baseline.
 - Extraction red flags: Discloses that classifier search consistently underperforms human pattern matching on this problem - i.e. the reported metric successes were partly the analyst's structural knowledge leaking into threshold choice.
 - Supersession (as known at extraction): Second reversal in the same-day chain: idx 10099 (bump) -> idx 10097 (reversed) -> revival -> this note (reversed again).
 

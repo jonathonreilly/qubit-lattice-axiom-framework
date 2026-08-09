@@ -18,10 +18,6 @@ required before any effective status.
 
 A step-by-step chain from the single axiom Cl(3) on Z^3 to the geodesic equation with Christoffel symbols, labelling each step DERIVED, THEOREM or BOUNDED: H = -Delta from the Kogut-Susskind construction, G_0 = H^-1 by definition, the closure condition L^-1 = G_0 forcing the Poisson equation, the discrete Green's function going to M/(4 pi r), then eikonal/stationary-phase steps into Riemannian geometry.
 
-Original verdict: The geodesic equation including Christoffel symbols follows from the lattice path-sum without importing general relativity.
-Scope: One step is explicitly BOUNDED (conditional on the continuum limit); the rest are DERIVED or standard-mathematics THEOREM.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The geodesic chain with audited per-step provenance — Christoffels from the pa
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The geodesic equation including Christoffel symbols follows from the lattice path-sum without importing general relativity.
+- Extraction scope (triage compression; may reflect later context): One step is explicitly BOUNDED (conditional on the continuum limit); the rest are DERIVED or standard-mathematics THEOREM.
 - Extraction red flags: A continuum-limit-conditional BOUNDED step sits in the middle of a chain whose sibling universality note (idx 632) argues the framework has no continuum limit at all.
 - Supersession (as known at extraction): The audited-provenance successor to the earlier results note (idx 637) - same runner, but every step labelled by derivation status.
 

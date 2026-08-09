@@ -20,10 +20,6 @@ required before any effective status.
 
 Each holomorphy-derived object fails the Gamma_chi requirements: J = (C - C^T)/sqrt3 is anti-Hermitian with J^2 = -P_d and commutes with the block projectors (on-block); K (complex conjugation) is a Hermitian involution but reflects WITHIN the doublet with P_s K P_d = 0 and its anticommutant is traceless (Q = infinity); and sgn det_C is a scalar Z_2, not an operator grading. An off-block Hermitian involution G_off does exist in Sym(R^3) but [J, G_off] != 0. Runner 38/38 PASS.
 
-Original verdict: Q1 is TWO gates, not one - the holomorphy fork closes only the r = 1/2 value bit, and the off-block chirality grading is a separate open handle.
-Scope: Finite linear-algebra reconciliation on the generation factor R^3; sets no audit status, adopts no axiom, primitive or import.
-Escape conditions (negative claims): Five off-block-grading routes remain open and untouched (equivariant APS/Z_N spectral asymmetry, multi-factor Connes-Lott on a separate factor, C_3-breaking involutions such as G_off, twisted/modular spectral triples, larger Hilbert extensions); the note rules out only the holomorphy-derived objects.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Q1 is TWO gates, not one: the holomorphy fork closes only the value bit — corr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q1 is TWO gates, not one - the holomorphy fork closes only the r = 1/2 value bit, and the off-block chirality grading is a separate open handle.
+- Extraction scope (triage compression; may reflect later context): Finite linear-algebra reconciliation on the generation factor R^3; sets no audit status, adopts no axiom, primitive or import.
+- Extraction escape conditions (negative claims; triage compression): Five off-block-grading routes remain open and untouched (equivariant APS/Z_N spectral asymmetry, multi-factor Connes-Lott on a separate factor, C_3-breaking involutions such as G_off, twisted/modular spectral triples, larger Hilbert extensions); the note rules out only the holomorphy-derived objects.
 - Extraction red flags: Corrects a previously circulated coverage-audit claim (holomorphy = chirality, same binary) as false.
 - Supersession (as known at extraction): CORRECTS a coverage audit's claim that Q1 is a single binary bundling the r = 1/2 value bit with the chirality grading.
 

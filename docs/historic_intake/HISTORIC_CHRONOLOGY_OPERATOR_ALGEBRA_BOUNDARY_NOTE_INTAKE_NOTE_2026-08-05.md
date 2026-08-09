@@ -18,10 +18,6 @@ required before any effective status.
 
 On a finite closed state H = H_R x H_L x H_E with A_R the durable-record algebra and the agent acting only on the later subsystem L, the operator-algebra argument shows no later action can signal to the earlier durable record.
 
-Original verdict: Hardens the operational no-past-signaling claim at the finite operator-algebra level without extending it to a universal no-time-travel theorem.
-Scope: Finite-dimensional, conditional boundary surface — the retained claim stays conditional.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Finite operator-algebra theorem: no later action signals to the durable-record a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Hardens the operational no-past-signaling claim at the finite operator-algebra level without extending it to a universal no-time-travel theorem.
+- Extraction scope (triage compression; may reflect later context): Finite-dimensional, conditional boundary surface — the retained claim stays conditional.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

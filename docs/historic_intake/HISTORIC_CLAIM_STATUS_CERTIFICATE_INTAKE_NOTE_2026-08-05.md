@@ -18,10 +18,6 @@ required before any effective status.
 
 Status positive-retained-candidate with trace_class formula_inventory_repair: the branch repairs a DISPLAYED FORMULA DRIFT between the source note's Validation counterfactual and the runner's exact symbolic reduction, and reruns the existing algebraic companion.
 
-Original verdict: Does not promote the row and does not perform the independent audit.
-Scope: One row's displayed formula.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ Formula-inventory repair: a landed note's DISPLAYED FORMULA was wrong; the branc
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Does not promote the row and does not perform the independent audit.
+- Extraction scope (triage compression; may reflect later context): One row's displayed formula.
 - Extraction red flags: A landed note's displayed formula had drifted from its own runner's reduction - a documentation/verification mismatch in shipped content.
 - Supersession (as known at extraction): Corrects a drift between a landed source note and its runner.
 

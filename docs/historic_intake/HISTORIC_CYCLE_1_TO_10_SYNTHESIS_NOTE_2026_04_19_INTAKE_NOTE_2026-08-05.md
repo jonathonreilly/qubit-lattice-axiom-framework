@@ -18,10 +18,6 @@ required before any effective status.
 
 Final state of the 10-cycle scalar-selector investigation across four Tier-1 gates: Koide kappa closed by the Moment-Ratio Uniformity theorem, Koide theta by a Berry-phase theorem on the projectivized Koide cone, the DM A-BCC basin by the Dim-Parametric log|det| Extremum theorem, and quark a_u by a conditional Reduced Projector-Ray Sum Rule — axiom cost 4 -> 0 pending one named leading-order algebraic identity.
 
-Original verdict: Three independent closures all land on d = 3, which the note flags as the campaign's meta-finding; a bounded cycle-11 retention target and a ruled-out list are recorded.
-Scope: Three full closures plus one conditional closure; the conditional rests on a single narrow LO algebraic identity.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The 10-cycle scalar-selector terminal: three independent closures all landing on
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three independent closures all land on d = 3, which the note flags as the campaign's meta-finding; a bounded cycle-11 retention target and a ruled-out list are recorded.
+- Extraction scope (triage compression; may reflect later context): Three full closures plus one conditional closure; the conditional rests on a single narrow LO algebraic identity.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Rewrites several superseded notes with updated status and serves as the reading entry point for cycles 1-10.
 

@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply CHARGED_LEPTON_FRONT_MATCHING_RETAINED. Wall arithmetic: delta_front = C_A3 - 1 = -0.0003219089428413424, which read as a one-loop SU(2) inverse-coupling shift is Delta(1/alpha_2) ~ 0.01899279085 with b_2 = 19/6, ell_A3 ~ 0.03768480771 and exp(ell_A3) ~ 1.038403884.
 
-Original verdict: Support-only non-supply boundary; the one-loop reading is target arithmetic, not a derivation.
-Scope: Placement P2: spending the A3 correction as a charged-lepton weak-front threshold/matching effect.
-Escape conditions (negative claims): Derive the front-matching theorem turning F_0 into F_phys = C_A3 F_0 without comparator data, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The physically suggestive placement: delta_front = -3.22e-4 read as a one-loop S
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the one-loop reading is target arithmetic, not a derivation.
+- Extraction scope (triage compression; may reflect later context): Placement P2: spending the A3 correction as a charged-lepton weak-front threshold/matching effect.
+- Extraction escape conditions (negative claims; triage compression): Derive the front-matching theorem turning F_0 into F_phys = C_A3 F_0 without comparator data, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The most physically suggestive of the four placements (a one-loop SU(2) threshold reading); packet 2631, discriminator 2632. A3 sub-ladder: placement discriminator 2627 -> four placement no-gos P1 2629 / P2 2630 / P3 2633 / P4 2634 -> A3 precision-placement TERMINAL 2635 (packet 2636, no-double-count packet 2628) -> K4 terminal 2505.
 

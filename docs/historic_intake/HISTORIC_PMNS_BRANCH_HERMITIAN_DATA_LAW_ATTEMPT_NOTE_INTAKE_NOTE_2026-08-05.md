@@ -18,10 +18,6 @@ required before any effective status.
 
 The global active Hermitian law is exactly a 2+2+3 package H = H_core + B(delta,rho,gamma) with H_core = [[a,b,b],[b,c,d],[b,d,c]]; the aligned surface is delta = rho = gamma = 0 and the compatible weak-axis seed patch collapses to one exchange sheet which at A = B becomes the two one-Higgs monomial edges sqrt(A) I and sqrt(A) C. The bank does not derive any of these values as axiom-side outputs.
 
-Original verdict: No positive axiom-side derivation - the minimal missing bridge is the selected-branch Hermitian-data law itself (plus the seed-edge selector for full coefficient closure).
-Scope: Current retained atlas/axiom bank; aligned and generic full-rank points coexist on the same canonical support class with different breaking triplets.
-Escape conditions (negative claims): Escaped by a single axiom-side bridge producing H_core and B(delta,rho,gamma) as an exact package, plus the residual seed-edge selector on the canonical (0,1) pair.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The Hermitian-branch consolidation: the global law is an exact 2+2+3 package wit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No positive axiom-side derivation - the minimal missing bridge is the selected-branch Hermitian-data law itself (plus the seed-edge selector for full coefficient closure).
+- Extraction scope (triage compression; may reflect later context): Current retained atlas/axiom bank; aligned and generic full-rank points coexist on the same canonical support class with different breaking triplets.
+- Extraction escape conditions (negative claims; triage compression): Escaped by a single axiom-side bridge producing H_core and B(delta,rho,gamma) as an exact package, plus the residual seed-edge selector on the canonical (0,1) pair.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Consolidates the EWSB alignment nonforcing, breaking-slot nonrealization, weak-axis coefficient closure and edge-selector reduction theorems into one obstruction statement.
 

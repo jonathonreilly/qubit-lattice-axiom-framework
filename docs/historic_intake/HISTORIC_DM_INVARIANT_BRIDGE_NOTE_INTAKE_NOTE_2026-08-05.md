@@ -18,10 +18,6 @@ required before any effective status.
 
 Shows that for the lattice family H_g = g sum eta_ij U_ij^(1/g) different g means different physics (<P>_g and hence alpha_bare(g) = g^2/(4 pi) depend on g, unlike the vacuous continuum redefinition A -> A/g), so alpha_s is an invariant observable of each fixed H and alpha_plaq = 0.0923 is a prediction, not a convention.
 
-Original verdict: KEEP BOUNDED - the remaining question 'why does H have coefficient 1' reduces to a foundational commitment about which framework is chosen, not a derivable theorem.
-Scope: Assumes A1-A5 with H = sum eta_ij U_ij, U in SU(3), and the standard plaquette extraction alpha_V = -ln<P>/c_1 with c_1 = pi^2/3.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The honest counter: H_g family shows different g IS different physics, so g_bare
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): KEEP BOUNDED - the remaining question 'why does H have coefficient 1' reduces to a foundational commitment about which framework is chosen, not a derivable theorem.
+- Extraction scope (triage compression; may reflect later context): Assumes A1-A5 with H = sum eta_ij U_ij, U in SU(3), and the standard plaquette extraction alpha_V = -ln<P>/c_1 with c_1 = pi^2/3.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly corrects DM_G_BARE_FROM_HAMILTONIAN_NOTE.md's EXACT claim, restoring BOUNDED status for g_bare = 1.
 

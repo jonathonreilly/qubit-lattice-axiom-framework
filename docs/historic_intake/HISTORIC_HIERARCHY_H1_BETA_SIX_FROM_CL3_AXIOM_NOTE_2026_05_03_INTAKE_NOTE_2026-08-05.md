@@ -20,10 +20,6 @@ required before any effective status.
 
 The Wilson lattice gauge evaluation point beta = 6 is a forced algebraic consequence of the chain d = 3 (Cl(3) axiom) -> N_c = 3 (graph-first SU(3)) -> g_bare^2 = 1 (Wilson canonical normalization) -> beta = 2 N_c/g_bare^2 = 6, i.e. class-A exact rational substitution, not an MC-derived input.
 
-Original verdict: beta = 6 is forced once the Wilson canonical normalization convention is selected; the remaining open question is the convention selection, and the actual hard input is <P>(beta) evaluated at beta = 6.
-Scope: Explicitly does NOT claim g_bare^2 = 1 is uniquely forced by Cl(3) axioms, nor that N_c = 3 is forced by d = 3 independently of the graph-first SU(3) integration.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ beta = 6 forced from d=3 -> N_c=3 -> g_bare^2=1 modulo the Wilson normalization 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): beta = 6 is forced once the Wilson canonical normalization convention is selected; the remaining open question is the convention selection, and the actual hard input is <P>(beta) evaluated at beta = 6.
+- Extraction scope (triage compression; may reflect later context): Explicitly does NOT claim g_bare^2 = 1 is uniquely forced by Cl(3) axioms, nor that N_c = 3 is forced by d = 3 independently of the graph-first SU(3) integration.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Route 2 of the H1 closure program (HIERARCHY_CLOSURE_PROGRAM family); depends on G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02 for the open convention question.
 

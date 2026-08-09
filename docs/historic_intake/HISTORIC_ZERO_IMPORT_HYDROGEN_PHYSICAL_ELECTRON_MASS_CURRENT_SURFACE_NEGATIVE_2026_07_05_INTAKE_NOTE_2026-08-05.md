@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply PHYSICAL_ELECTRON_READOUT_RETAINED or RETAINED_ELECTRON_MASS_PHYSICAL_UNIT; all four upstream inputs are missing (NATIVE_ZERO_SECTION_BRIDGE_RETAINED, PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED, ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED, KOIDE_BRANCH_MASS_MAP_RETAINED). Target composition: rho_e(delta) = min_k r_k(delta)^2, m_e = a_l^2 rho_e(delta), with rho_e(2/9) = 0.001628115093...
 
-Original verdict: Support-only non-supply boundary; delta, a_l^2, the species bridge, the branch-to-mass map and the physical-unit mass are all underived.
-Scope: The Lane 6 physical-unit input consumed by the static-source Rydberg lane.
-Escape conditions (negative claims): Supply the four named upstream retained inputs, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ Lane 6 terminal: the physical electron mass — all four upstream inputs missing
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; delta, a_l^2, the species bridge, the branch-to-mass map and the physical-unit mass are all underived.
+- Extraction scope (triage compression; may reflect later context): The Lane 6 physical-unit input consumed by the static-source Rydberg lane.
+- Extraction escape conditions (negative claims; triage compression): Supply the four named upstream retained inputs, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for Lane 6 physical electron mass; packet 2695 and ladder review 2693 feed it; it consumes the terminals 2545, 2696, 2505, 2517.
 

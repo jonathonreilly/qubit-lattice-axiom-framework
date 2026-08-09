@@ -18,10 +18,6 @@ required before any effective status.
 
 The EX3 positivity obstruction is arithmetically correct and STRUCTURALLY VOID: its identification of that algebra with the campaign's r silently drops the Gram factors (3, 6) of the generation coefficient surface — a factor of exactly 2, which IS the counting bit. What EX3 computed is the per-real-dimension isotypic weight ratio w_triv/w_nontriv, which equals r only in the det_R (count-twice) reading, so 'no positive weight reaches r = 1/2' is a statement made AFTER the counting bit has already been set to count-twice.
 
-Original verdict: In the campaign's own det_C reading the same positive weights give r(t) = (S + 2F)/(2(S - F)), the breach is F/S = 0, and it is attained exactly by a nonnegative spectral function of the landed lattice Laplacian — no grading is needed and none is missing.
-Scope: The EX3 obstruction and its breach condition; probe TOTAL: PASS=123 FAIL=0 with every number written from runner output.
-Escape conditions (negative claims): Even in the det_R reading, F/S = -1/5 is attained exactly by a positive-semidefinite C_3-covariant weight, so the obstruction's true scope is the strictly narrower class {f(Delta) : f >= 0}, not 'any positive weight'; F/S = -1/5 names the ordinary cone point diag(1,4,4).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ The EX3 positivity obstruction is arithmetically correct and STRUCTURALLY VOID: 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): In the campaign's own det_C reading the same positive weights give r(t) = (S + 2F)/(2(S - F)), the breach is F/S = 0, and it is attained exactly by a nonnegative spectral function of the landed lattice Laplacian — no grading is needed and none is missing.
+- Extraction scope (triage compression; may reflect later context): The EX3 obstruction and its breach condition; probe TOTAL: PASS=123 FAIL=0 with every number written from runner output.
+- Extraction escape conditions (negative claims; triage compression): Even in the det_R reading, F/S = -1/5 is attained exactly by a positive-semidefinite C_3-covariant weight, so the obstruction's true scope is the strictly narrower class {f(Delta) : f >= 0}, not 'any positive weight'; F/S = -1/5 names the ordinary cone point diag(1,4,4).
 - Extraction red flags: A quantitative obstruction that framed the campaign was invalidated by a dropped Gram factor of exactly 2 — the very quantity under dispute. Also carries forward the Wave-1 stale-status flag.
 - Supersession (as known at extraction): Only one leaned-on surface is retained-grade (docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md, retained_bounded/audited_clean); the heat-trace identity is RE-DERIVED not cited. Corrects EX3's weights 'w_triv = 3S/5, w_nontriv = 6S/5' as off by 3x (correct values S/5, 2S/5) and corrects its limit reading.
 

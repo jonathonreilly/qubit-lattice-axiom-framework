@@ -18,10 +18,6 @@ required before any effective status.
 
 Every finite nonempty rotation-invariant structuring set S makes the Minkowski inflation W_S(R) = supp(R) (+) S satisfy all declared window requirements (proved structurally, verified on all 15 sets at box radius 1 through a 1,440-check harness and all 1,023 at radius 2), and an injectivity lemma makes the count of admissible Minkowski windows equal the count of rotation-invariant sets: 15 / 1,023 / 2,097,151 at radius 1/2/3. Necessity fails — erosions, bounding boxes, content-keyed inflations, rank/threshold filters and unions all escape the fixed-S form — and the annular chart is strictly coarser (1,023 behaviours collapse to 113 annular readings on the primary family, 220 on the checker's).
 
-Original verdict: The freedom is not a scale — Cycle 885's closure claim is REFUTED and its 'dilation scale' pricing was an undercount; readout additivity does derive support containment (the origin-free inflation violates additivity on 16/23 decompositions), but count-once is NOT grounded and k = 0 is not derived.
-Scope: Same 12-configuration family and group as Cycle 885 with exact arithmetic; the block claims no closure of the surviving map space.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Refutation of Cycle 885's closure claim: EVERY finite rotation-invariant structu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The freedom is not a scale — Cycle 885's closure claim is REFUTED and its 'dilation scale' pricing was an undercount; readout additivity does derive support containment (the origin-free inflation violates additivity on 16/23 decompositions), but count-once is NOT grounded and k = 0 is not derived.
+- Extraction scope (triage compression; may reflect later context): Same 12-configuration family and group as Cycle 885 with exact arithmetic; the block claims no closure of the surviving map space.
 - Extraction red flags: Explicitly retracts a sibling block's closure claim, and finds a quoted axiom clause (count-once / no-phantom-registration) had been read as saying something it does not — 'the window may contain only record sites' is an addition, not a quotation.
 - Supersession (as known at extraction): RE-PRICES Cycle 885's residual and records the correction as RETRACTION not DISPLACEMENT; the chain of blocks correcting each other's readings is described as functioning as designed.
 

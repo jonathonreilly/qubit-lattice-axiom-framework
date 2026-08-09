@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Full N1-N8 gate returning PASS for a narrowly scoped negative: on two declared fine-H finite harnesses the old plane-ray and unregularized 2D/3D Gaussian ray formulas do not derive the literal first-order detector-centroid response. Seven routes are enumerated with numbers (the plane finite-path gradient changes target-constant-free slopes by 0.282053262 against the rebuilt adjoint's 0.002093528 at the historically tuned beta = 0.8; the Gaussian mixtures have a zero-impact pole giving divergent one-sided integrals). Two independent walls survive collapse: W_shape (wrong cross-path four-point shape) and W_integrability (the expressions are not ordinary angular expectations).
 
-Original verdict: PASS for the narrowly scoped negative; two live constructions (finite-core/principal-value ray model, coherent 3D amplitude/adjoint limit) are EXCLUDED rather than foreclosed.
-Scope: Explicitly limited: b in {3,4,5,6}, T_phys in {7.5,15}, Fam1 seed 0, H = 0.25 only; continuum/lattice-wide behaviour not tested and not claimed.
-Escape conditions (negative claims): N6 names the partial-closure paths: a symmetric Cauchy principal value assigns a finite number but does not repair W_shape; a finite source core makes the expectation integrable at the cost of new explicit model inputs; and a coherent 3D construction is a legitimate positive route explicitly outside the no-go.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exemplary full N1-N8 negative: on two declared fine-H finite harnesses the old p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PASS for the narrowly scoped negative; two live constructions (finite-core/principal-value ray model, coherent 3D amplitude/adjoint limit) are EXCLUDED rather than foreclosed.
+- Extraction scope (triage compression; may reflect later context): Explicitly limited: b in {3,4,5,6}, T_phys in {7.5,15}, Fam1 seed 0, H = 0.25 only; continuum/lattice-wide behaviour not tested and not claimed.
+- Extraction escape conditions (negative claims; triage compression): N6 names the partial-closure paths: a symmetric Cauchy principal value assigns a finite number but does not repair W_shape; a finite source core makes the expectation integrable at the cost of new explicit model inputs; and a coherent 3D construction is a legitimate positive route explicitly outside the no-go.
 - Extraction red flags: N3's hidden-wall scan searched the note and runner for ten specific smuggling phrases ('we assume', 'as is standard', 'the framework provides', ...) - a reusable technique. The steelman concedes the no-go would fail against a coherent stationary-phase construction.
 - Supersession (as known at extraction): N4 explicitly DROPS a non-matching witness (the centroid multipole no-go) from the load-bearing proof after residual matching fails for the b/r^3 gradient primitive - a discipline most notes skip.
 

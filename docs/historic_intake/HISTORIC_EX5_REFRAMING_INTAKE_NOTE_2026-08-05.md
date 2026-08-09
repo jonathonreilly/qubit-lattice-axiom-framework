@@ -18,10 +18,6 @@ required before any effective status.
 
 Two landed presentations pin different halves of the same product r=(g_0/g_1)*(mu_d/mu_s) and each calls its own half 'the residual', so 'reduces to one counting bit' is a presentation artifact - it is a bit only after the Gram is fixed by fiat to a point of the very cone the sibling note says is free (gate C6 exhibits the exact degeneracy: (HS Gram, per-block) and (flat Gram, per-mode) are different horn labels with the same r). Worse, on the framework's own landed 4^3 staggered corner-wave kernel the ambient-invariant symmetric-form space is exactly ONE-dimensional and spanned by the identity (order-96 group, gates K1-K5 exact integer), so the ambient-covariant reading points at r=1, Q=1 - REFUTING the charged-lepton target - and r=1/2 survives only by restricting covariance to a subgroup that is not a lattice symmetry of the generation block.
 
-Original verdict: Not adopting a horn: the observation is that the framework's own covariance clause applied to its own landed carrier leaves no cone freedom, and the two-horn picture is downstream of an unfixed reduction of the covariance group.
-Scope: Landed origin/main surfaces @ 1652deb63b; scratch runners ex5_check​.py PASS=46 FAIL=0 and ex5_kernel_cone​.py K1-K5 exact integer.
-Escape conditions (negative claims): Six named probes P1-P6 with P1 (the ambient-covariance bridge) the only one that can close the wall; the note lists exactly what P1 must discharge - the undeirved bridge 'the physical readout weight form is an ambient-invariant symmetric form on that carrier', plus robustness at other L.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,9 @@ Highest-stakes counting-bit finding: two landed presentations pin different halv
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not adopting a horn: the observation is that the framework's own covariance clause applied to its own landed carrier leaves no cone freedom, and the two-horn picture is downstream of an unfixed reduction of the covariance group.
+- Extraction scope (triage compression; may reflect later context): Landed origin/main surfaces @ 1652deb63b; scratch runners ex5_check​.py PASS=46 FAIL=0 and ex5_kernel_cone​.py K1-K5 exact integer.
+- Extraction escape conditions (negative claims; triage compression): Six named probes P1-P6 with P1 (the ambient-covariance bridge) the only one that can close the wall; the note lists exactly what P1 must discharge - the undeirved bridge 'the physical readout weight form is an ambient-invariant symmetric form on that carrier', plus robustness at other L.
 - Extraction red flags: Highest-stakes finding in this stratum: a computation on the landed carrier points at r=1/Q=1, refuting the charged-lepton Koide target that a large campaign was built to reach; the note is careful that K4/K5 is a strong structural indication, not a closure, because the bridge is underived. K3's negative may be staggering-convention-relative (self-flagged).
 - Supersession (as known at extraction): CALLS FOR WITHDRAWAL OF A LANDED CLAIM: probe P2 is 'a repair note reconciling GENERATION_WEIGHT_DIAL_STRUCTURE with KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED; withdraw "reduces to one counting bit" unless the Gram pin is independently derived'. Also flags the readout law as underdetermined, making every r-dependent number including Q=2/3 status-affected.
 

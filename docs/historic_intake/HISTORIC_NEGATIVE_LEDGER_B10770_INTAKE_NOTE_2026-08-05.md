@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The old real-symmetric core is NOT a consequence of residual P_23 invariance alone; recovering that old four-parameter matrix would require an extra premise such as CP, real structure, or gauge fixing — and this branch intentionally does not add one.
 
-Original verdict: The previously used real-symmetric core is demoted from forced to premise-dependent; no full PMNS closure, sector choice, or numerical value selection is claimed.
-Scope: The PMNS axis-alignment normal form.
-Escape conditions (negative claims): CP, a real structure, or gauge fixing would each restore the old four-parameter form — as a supplied premise.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Correction of a previously used normal form: the old real-symmetric PMNS core is
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The previously used real-symmetric core is demoted from forced to premise-dependent; no full PMNS closure, sector choice, or numerical value selection is claimed.
+- Extraction scope (triage compression; may reflect later context): The PMNS axis-alignment normal form.
+- Extraction escape conditions (negative claims; triage compression): CP, a real structure, or gauge fixing would each restore the old four-parameter form — as a supplied premise.
 - Extraction red flags: a real-symmetric normal form had been treated as a consequence of residual invariance alone
 - Supersession (as known at extraction): CORRECTION: the old real-symmetric core had been used as if forced by P_23 invariance.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Reviews the source-free closure candidate and rejects it as a retained Q closure: the algebra K=0 -> Y=I_2 -> E_+=E_perp -> kappa=2 -> Q=2/3 is correct, but the proof retains the missing law K=0 as an assumption, so it reads 'if the physical law is K=0 then Q=2/3'. Recommends reducing the primitive from two source coordinates to the single traceless scalar K_TL=(K_+-K_perp)/2.
 
-Original verdict: SOURCE_FREE_CLOSEOUT_AS_RETAINED_Q_CLOSURE=FAIL; SOURCE_FREE_CLOSEOUT_AS_CONDITIONAL_SUPPORT=PASS; NEXT_Q_TARGET=DERIVE_K_TL_EQUALS_ZERO.
-Scope: Reviews docs/KOIDE_Q_SOURCE_FREE_CLOSURE_THEOREM_NOTE_2026-04-24.md and its runner only; does not alter package status.
-Escape conditions (negative claims): Four named escapes to pass review: derive K=0 from retained source grammar; show all allowed sources are pure trace; derive a block-exchange/real-irrep-democracy/anomaly/gauge principle forcing the traceless source to vanish; or prove a source-bank exhaustion theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Review verdict demoting the source-free closure to conditional support with four
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): SOURCE_FREE_CLOSEOUT_AS_RETAINED_Q_CLOSURE=FAIL; SOURCE_FREE_CLOSEOUT_AS_CONDITIONAL_SUPPORT=PASS; NEXT_Q_TARGET=DERIVE_K_TL_EQUALS_ZERO.
+- Extraction scope (triage compression; may reflect later context): Reviews docs/KOIDE_Q_SOURCE_FREE_CLOSURE_THEOREM_NOTE_2026-04-24.md and its runner only; does not alter package status.
+- Extraction escape conditions (negative claims; triage compression): Four named escapes to pass review: derive K=0 from retained source grammar; show all allowed sources are pure trace; derive a block-exchange/real-irrep-democracy/anomaly/gauge principle forcing the traceless source to vanish; or prove a source-bank exhaustion theorem.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Reviews and demotes idx_pos 1039 (KOIDE_Q_SOURCE_FREE_CLOSURE_THEOREM_NOTE); its NEXT_Q_TARGET directly spawns the K_TL Lagrange-multiplier note (idx_pos 1051).
 

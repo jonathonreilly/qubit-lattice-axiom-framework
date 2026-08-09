@@ -18,10 +18,6 @@ required before any effective status.
 
 On S^3 of radius R the scalar Laplacian eigenvalues are lambda_l = l(l+2)/R^2 so the first nonzero one is 3/R^2, with the coefficient 3 fixed by topology (the SO(4) Casimir on S^3 = SO(4)/SO(3)); hence Lambda = 3/R^2 is constant and T_{mu nu} = -(Lambda/8 pi G) g_{mu nu} gives w = p/rho = -1 exactly, with lattice corrections O((a/R)^2) ~ 1e-122 and themselves constant.
 
-Original verdict: Conditional on S^3 compactification the framework predicts w = -1 exactly with no corrections at any order; it does not predict the numerical value of Lambda, and any measurement of w != -1 would rule out the S^3 spectral-gap identification.
-Scope: Conditional on the S^3 compactification lane, which is itself bounded/open and not derived from the axioms.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Conditional-exact w = -1 prediction from S^3 topology (lambda_1 = 3/R^2) — wit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Conditional on S^3 compactification the framework predicts w = -1 exactly with no corrections at any order; it does not predict the numerical value of Lambda, and any measurement of w != -1 would rule out the S^3 spectral-gap identification.
+- Extraction scope (triage compression; may reflect later context): Conditional on the S^3 compactification lane, which is itself bounded/open and not derived from the axioms.
 - Extraction red flags: Concedes that the observed Lambda ~ 1e-122 is 'a coincidence of scale, not a prediction of the framework in its current form'.
 - Supersession (as known at extraction): Downstream consequence of the S^3 topology lane assessed at idx 2090; does not upgrade that lane.
 

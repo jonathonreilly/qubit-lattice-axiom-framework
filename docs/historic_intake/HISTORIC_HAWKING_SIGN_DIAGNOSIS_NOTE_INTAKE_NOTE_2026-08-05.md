@@ -18,10 +18,6 @@ required before any effective status.
 
 Five hypotheses tested to explain why T versus kappa has slope -0.43 (R^2 = 0.98) while T versus 1/R_h is positive: kappa is computed exactly (R^2 = 1.000000), the spectrum is approximately thermal, the sign is negative at L = 8, 10, 12 and in the weak-quench regime - and H5 finds the cause, since replacing the hopping reduction with an onsite potential quench flips the slope to +0.48 (R^2 = 0.92), the correct Hawking sign.
 
-Original verdict: Hopping reduction compresses the bandwidth so the fitted T tracks energy per particle rather than radiation intensity; the onsite potential quench, which shifts eigenvalues like gravitational redshift, is the better analog.
-Scope: Applies to the 3D spherical quench with tanh profiles at fixed sigma = 2.0.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The sign diagnosis: the lane's headline T-vs-kappa observable measured bandwidth
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Hopping reduction compresses the bandwidth so the fitted T tracks energy per particle rather than radiation intensity; the onsite potential quench, which shifts eigenvalues like gravitational redshift, is the better analog.
+- Extraction scope (triage compression; may reflect later context): Applies to the 3D spherical quench with tanh profiles at fixed sigma = 2.0.
 - Extraction red flags: Establishes that the lane's own headline observable was measuring the wrong quantity - kappa carries no independent geometric information at fixed sigma, being just a rescaled copy of quench strength.
 - Supersession (as known at extraction): Diagnoses and effectively retracts the physical reading of the 3D quench (idx 671): the Fermi-Dirac T is NOT the Hawking temperature for hopping quenches, and future work should use potential-based or bandwidth-preserving quenches.
 

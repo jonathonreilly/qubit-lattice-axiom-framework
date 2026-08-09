@@ -18,10 +18,6 @@ required before any effective status.
 
 Grades three commitment levels (L1 free composites, L2 independent u(2) connections, L3 distance-weighted paths) against three open gates and returns a clean negative on GATE-COLOR — the 4-qubit face joint connection algebra is su(2)^{+4} + u(1) of dimension 13 in the gauge embedding — with per-gate verdicts, a net assessment, and a recommendation.
 
-Original verdict: None of the three gates closes; the package's value is a graded map plus one top open question.
-Scope: Governance scoping with no theorem promotion; package parent is the diagonal-lattice scoping note.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ The diagonal-scoping terminal: graded L1/L2/L3-vs-gates map with a clean GATE-CO
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): None of the three gates closes; the package's value is a graded map plus one top open question.
+- Extraction scope (triage compression; may reflect later context): Governance scoping with no theorem promotion; package parent is the diagonal-lattice scoping note.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal synthesis of the broad diagonal-thinking sweep (sister to the sqrt(2) build's verdict note).
 

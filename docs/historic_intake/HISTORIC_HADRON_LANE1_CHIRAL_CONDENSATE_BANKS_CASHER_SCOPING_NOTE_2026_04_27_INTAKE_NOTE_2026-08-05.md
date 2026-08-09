@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Retaining Sigma = pi rho_Dirac(0) fails on two counts: the framework's only lattice data scans L = 4, 6 where rho(0) migrates from 0.0260 at L=4 to 0.0000 at L=6 (a finite-volume lattice-free regime, while chiral-SB extraction needs L >= 12-16), and no structural identity pins the non-universal scale Sigma from Cl(3) content - chiral RMT gives only the universal shape.
 
-Original verdict: No clean structural retention route exists on current framework content; R7 answers 'not currently'.
-Scope: Lane 1 route 3A / R7; the Banks-Casher relation and chRMT universality enter as admitted conventions.
-Escape conditions (negative claims): Two paths named: (P1) a large-volume dynamical lattice run at L >= 12-16 (off this workstream's compute budget) or (P2) a new structural identity connecting framework content to rho_Dirac(0), by analogy with the YT lane's y_t/g_s = 1/sqrt(6) Ward identity.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Banks-Casher retention no-go: the only lattice data is in the lattice-free finit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No clean structural retention route exists on current framework content; R7 answers 'not currently'.
+- Extraction scope (triage compression; may reflect later context): Lane 1 route 3A / R7; the Banks-Casher relation and chRMT universality enter as admitted conventions.
+- Extraction escape conditions (negative claims; triage compression): Two paths named: (P1) a large-volume dynamical lattice run at L >= 12-16 (off this workstream's compute budget) or (P2) a new structural identity connecting framework content to rho_Dirac(0), by analogy with the YT lane's y_t/g_s = 1/sqrt(6) Ward identity.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Consumes the L = 4, 6 beta-scan from G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18 and mirrors the (C3)-class audit-no-go pattern from the hubble-h0 workstream.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Shows the microscopic support-to-active response operator has exact rank 1 and factors as A_active = m_active * 1^T, so the active non-O_h shell correction amplitude on the four channels (3,2,2), (3,3,0), (4,1,0), (4,1,1) equals the total renormalized support charge Q_eff = 1^T q_eff with no extra free scalar; the same factorization carries to the pair quotient.
 
-Original verdict: Closes the last scalar ambiguity on the star-supported class: the active shell amplitude is derived from microscopic support renormalization, not inferred from family data.
-Scope: Seven-point star support with q_eff = (I - W G_S)^-1 m; both exact source families verified.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The rank-one active-response terminal: A_active = m_active 1^T exactly — the l
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes the last scalar ambiguity on the star-supported class: the active shell amplitude is derived from microscopic support renormalization, not inferred from family data.
+- Extraction scope (triage compression; may reflect later context): Seven-point star support with q_eff = (I - W G_S)^-1 m; both exact source families verified.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Completes the projected DtN correction-operator chain; FAMILY TERMINAL for the support-side amplitude question, leaving only the 4D Einstein/Regge lift.
 

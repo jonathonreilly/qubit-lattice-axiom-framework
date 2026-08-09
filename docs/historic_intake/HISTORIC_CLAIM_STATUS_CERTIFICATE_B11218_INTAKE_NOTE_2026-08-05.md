@@ -18,10 +18,6 @@ required before any effective status.
 
 Marks the signed-gravity APS source-action row as a permanent open gate rather than a retained theorem proposal; hypothetical_axiom_status is 'axiomatic-extension candidate only'. Runner signed_gravity_aps_source_action_boundary_repair​.py gives TOTAL: PASS=12 FAIL=0.
 
-Original verdict: open_gate; audit required before effective retained status.
-Scope: Signed-gravity APS source-action boundary.
-Escape conditions (negative claims): The gate is marked an axiomatic-extension candidate, i.e. closable only by an axiom extension.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Open-gate declaration on the source-action bridge lane, on the record: the signe
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): open_gate; audit required before effective retained status.
+- Extraction scope (triage compression; may reflect later context): Signed-gravity APS source-action boundary.
+- Extraction escape conditions (negative claims; triage compression): The gate is marked an axiomatic-extension candidate, i.e. closable only by an axiom extension.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

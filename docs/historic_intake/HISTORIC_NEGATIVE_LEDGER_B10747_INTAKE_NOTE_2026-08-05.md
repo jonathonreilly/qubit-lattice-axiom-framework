@@ -18,10 +18,6 @@ required before any effective status.
 
 The scanned Koutschan-style system excludes order <= 2 only through coefficient degree 30, which does not imply lower-order exclusion at arbitrary degree — and THE PREVIOUS NOTE WORDING INCORRECTLY TREATED THE FINITE-GRID RESULT AS IF IT SUPPLIED THE ALL-DEGREE BRIDGE. Bostan-Salvy-Schost threshold arithmetic is useful only after an R=3, D=2 bound is supplied; the depth-196 residual check greatly exceeds that threshold but the runner does not certify the premise. Even a fully closed V=1 single-plaquette Picard-Fuchs theorem would not solve the thermodynamic-limit plaquette lane.
 
-Original verdict: The all-degree bridge is not supplied; the previous wording was wrong and is corrected here.
-Scope: The V=1 single-plaquette Picard-Fuchs row and its downstream reading.
-Escape conditions (negative claims): Supplying an independent R=3, D=2 bound makes the threshold arithmetic usable.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ MAJOR correction of previously published note wording: the scanned Koutschan-sty
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The all-degree bridge is not supplied; the previous wording was wrong and is corrected here.
+- Extraction scope (triage compression; may reflect later context): The V=1 single-plaquette Picard-Fuchs row and its downstream reading.
+- Extraction escape conditions (negative claims; triage compression): Supplying an independent R=3, D=2 bound makes the threshold arithmetic usable.
 - Extraction red flags: MAJOR: a landed note's wording treated a degree-30 finite grid as an all-degree theorem
 - Supersession (as known at extraction): EXPLICIT CORRECTION of previously published note wording that over-read a finite-grid scan as an all-degree bridge.
 

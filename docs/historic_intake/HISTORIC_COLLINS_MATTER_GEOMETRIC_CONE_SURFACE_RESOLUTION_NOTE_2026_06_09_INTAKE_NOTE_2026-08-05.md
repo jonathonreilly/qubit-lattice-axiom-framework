@@ -18,10 +18,6 @@ required before any effective status.
 
 Resolves the Collins matter-cone versus geometric-cone tension: on the framework's canonical free staggered action (which discretizes all four directions including Euclidean time on the same nearest-neighbour footing) the interacting answer is delta_v = 0 exactly and representation-blind, verified at one gauged loop where the B_4-symmetric measure maps the temporal coefficient integral onto the spatial one to machine precision; the apparent anisotropy is an anisotropic-regulator artifact.
 
-Original verdict: Collins reduces to a single mild well-motivated admission, and the framework's own structure selects the protected surface.
-Scope: Runner SCORECARD PASS=18 FAIL=0; three distinct residual freedoms are itemized.
-Escape conditions (negative claims): The structural no-go is against the anisotropic-regulator route; the residual premise is decomposed into three distinct freedoms, each a separate escape.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Collins anisotropy resolved: the framework's own canonical staggered action sele
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Collins reduces to a single mild well-motivated admission, and the framework's own structure selects the protected surface.
+- Extraction scope (triage compression; may reflect later context): Runner SCORECARD PASS=18 FAIL=0; three distinct residual freedoms are itemized.
+- Extraction escape conditions (negative claims; triage compression): The structural no-go is against the anisotropic-regulator route; the residual premise is decomposed into three distinct freedoms, each a separate escape.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

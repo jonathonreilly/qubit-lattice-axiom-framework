@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The minimal local closure system G = 1 + 3 p^4 G^5 + p^14 G^15 has no positive real solution: with the strict lower bound p_low = 0.42253173964998 < P_1plaq(6), the residual g(G) has g(0) > 0, g'' > 0 for G > 0, a unique positive minimum near G_* = 1.202246940360351 with g(G_*) = 0.0380192306425637 > 0, so g(G) > 0 for all G > 0.
 
-Original verdict: The weakest local face-closure axiom is rejected — the exact local theorems are real but do not by themselves produce a physically admissible analytic plaquette closure.
-Scope: Rejects only the weakest explicit local closure axiom (one generic frontier-face amplitude plus the local one-cell/three-cell launch sectors) at beta=6; does not derive analytic P(6).
-Escape conditions (negative claims): Closure must retain nontrivial correlations among outgoing frontier faces beyond this minimal local factorization; the next stronger exact obstruction is recorded in ONE_SHELL_FACE_STATE_TRANSFER_NO_GO_NOTE (even the full multiset of one-shell boundary-face states does not determine the next rooted continuation count).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact rejection of the weakest local face-closure axiom: no positive real soluti
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The weakest local face-closure axiom is rejected — the exact local theorems are real but do not by themselves produce a physically admissible analytic plaquette closure.
+- Extraction scope (triage compression; may reflect later context): Rejects only the weakest explicit local closure axiom (one generic frontier-face amplitude plus the local one-cell/three-cell launch sectors) at beta=6; does not derive analytic P(6).
+- Extraction escape conditions (negative claims; triage compression): Closure must retain nontrivial correlations among outgoing frontier faces beyond this minimal local factorization; the next stronger exact obstruction is recorded in ONE_SHELL_FACE_STATE_TRANSFER_NO_GO_NOTE (even the full multiset of one-shell boundary-face states does not determine the next rooted continuation count).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly points forward to ONE_SHELL_FACE_STATE_TRANSFER_NO_GO_NOTE (idx_pos 1134 in this manifest) as the next stronger obstruction in the same chain.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Synthesizes five retained results to collapse the constructive Koide route to a single target: the ambient grammar is one-clock 3+1, any positive repeated-step law is exp(beta G), the observable selector fixes delta = q_+ = sqrt(6)/3 leaving the one-real family G_m = H(m, sqrt(6)/3, sqrt(6)/3), and on the physical branch m <-> kappa(m) <-> r(m) is one-to-one — so everything reduces to deriving one ambient endpoint law for m = Re K12 + 4 sqrt(2)/9 = Tr K_Z3.
 
-Original verdict: The smallest constructive charged-lepton target visible on main is one ambient one-clock endpoint law for one microscopic scalar, which would fix kappa, r = w/v, the selected point and the whole internal route.
-Scope: Exact constructive reduction on current main; the note does not derive the endpoint law itself.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Synthesis collapsing the constructive Koide route to ONE ambient one-clock endpo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The smallest constructive charged-lepton target visible on main is one ambient one-clock endpoint law for one microscopic scalar, which would fix kappa, r = w/v, the selected point and the whole internal route.
+- Extraction scope (triage compression; may reflect later context): Exact constructive reduction on current main; the note does not derive the endpoint law itself.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Synthesis of five 2026-04-18 retained notes plus the anomaly-forces-time theorem; consumed by the 2026-04-21 endpoint pullback note.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The quotient's universal property applies only to functors already constant on fibres, and the retained embedded source category still admits the label-visible functor p = (1/3, 2/3) (giving Q = 1, K_TL = 3/8), so the implication 'fibre-constant based primitive functor -> Q = 2/3 and delta = 2/9' is correct but its premise is exactly the law being derived.
 
-Original verdict: Rejected for retained-only derivation — assuming fibre constancy is assuming the Q part of the law; the residual is a retained factorization theorem for the physical readout.
-Scope: Tests whether category-theoretic universal property alone forces the new law; no target import.
-Escape conditions (negative claims): CONDITIONAL_CLOSURE_IF_FACTORING_BASED_PRIMITIVE_FUNCTOR=TRUE; the note prescribes testing any future route by whether it excludes the explicit (1/3, 2/3) functor.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The circularity named exactly: the quotient's universal property applies only to
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Rejected for retained-only derivation — assuming fibre constancy is assuming the Q part of the law; the residual is a retained factorization theorem for the physical readout.
+- Extraction scope (triage compression; may reflect later context): Tests whether category-theoretic universal property alone forces the new law; no target import.
+- Extraction escape conditions (negative claims; triage compression): CONDITIONAL_CLOSURE_IF_FACTORING_BASED_PRIMITIVE_FUNCTOR=TRUE; the note prescribes testing any future route by whether it excludes the explicit (1/3, 2/3) functor.
 - Extraction red flags: Names the circularity explicitly ('circular assumption: exact').
 - Supersession (as known at extraction): Second retained-only audit of the primitive-based readout law, closing the categorical route to deriving it.
 

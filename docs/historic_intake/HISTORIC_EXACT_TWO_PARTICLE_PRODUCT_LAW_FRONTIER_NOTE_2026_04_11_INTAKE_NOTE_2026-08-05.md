@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The reported M1*M2 product law is not independent of the model: the interaction is hard-coded as V(x1,x2) = -G s1 s2/|x1-x2|^p, so the fitted gamma ~ 1 is a response to an encoded bilinear kernel rather than a derivation; the genuine content is only the exact-vs-Hartree divergence at strong coupling on a 1D open-boundary toy lattice.
 
-Original verdict: Hold off main - a useful frontier control, not a mainline emergent Newton product law.
-Scope: Audit of one commit and script; the model is a 1D toy, not the repo's primary staggered/open-cubic architecture, and there is no frozen/static-source control.
-Escape conditions (negative claims): Three named requirements for promotion: use a source-only kernel or self-consistent field update where the mass product is not pre-encoded; add a frozen/static-source control; and replay the observable on the primary staggered/open-cubic surface (or justify the 1D lane).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Circularity identification: the M1*M2 product law responds to a hard-coded bilin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Hold off main - a useful frontier control, not a mainline emergent Newton product law.
+- Extraction scope (triage compression; may reflect later context): Audit of one commit and script; the model is a 1D toy, not the repo's primary staggered/open-cubic architecture, and there is no frozen/static-source control.
+- Extraction escape conditions (negative claims; triage compression): Three named requirements for promotion: use a source-only kernel or self-consistent field update where the mass product is not pre-encoded; add a frozen/static-source control; and replay the observable on the primary staggered/open-cubic surface (or justify the 1D lane).
 - Extraction red flags: Identifies a circularity in a sibling lane's headline claim (the product law is built into the ansatz).
 - Supersession (as known at extraction): none recorded
 

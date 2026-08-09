@@ -18,10 +18,6 @@ required before any effective status.
 
 Resolves two of three dark-matter problems by mass suppression (the SU(2) j = 3/2 assignment and the U(1) charge) and partially resolves the mass ratio (0.33 versus the observed 5.47) via self-consistent gravitational self-energy and selective annihilation, concluding the framework REQUIRES two taste-singlet states whose stability is kinematically guaranteed and gravitational coupling automatic.
 
-Original verdict: The same feature that saves the candidate makes it untestable: a purely gravitational M ~ M_Planck relic is indistinguishable from any other superheavy relic, and the taste-singlet origin adds no observable signature.
-Scope: Lane bounded — consistent but not predictive.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The DM taste-singlet terminal assessment WITH the unfalsifiability concession (a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The same feature that saves the candidate makes it untestable: a purely gravitational M ~ M_Planck relic is indistinguishable from any other superheavy relic, and the taste-singlet origin adds no observable signature.
+- Extraction scope (triage compression; may reflect later context): Lane bounded — consistent but not predictive.
 - Extraction red flags: Concedes the candidate is unfalsifiable from within the framework.
 - Supersession (as known at extraction): Definitive assessment superseding the first-pass singlets note.
 

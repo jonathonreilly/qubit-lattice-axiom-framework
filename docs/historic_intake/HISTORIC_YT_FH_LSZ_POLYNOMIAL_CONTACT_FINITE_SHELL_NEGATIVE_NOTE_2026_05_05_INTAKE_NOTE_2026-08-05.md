@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For n distinct shell points any chosen residual values S_i can be written as C_i - P(x_i) = S_i for a unique polynomial P of degree at most n-1, so unconstrained polynomial contact subtraction identifies nothing; the runner exhibits two strict positive one-pole Stieltjes residuals S(x) = residue/(x + mass_sq) with different mass_sq, each reproduced from the measured eight shells by an interpolated degree-7 contact term.
 
-Original verdict: Finite-shell Stieltjes checks after an unconstrained polynomial subtraction do not identify the physical two-point object, the pole residue, or kappa_s.
-Scope: Blocks promoting finite polefit8x8 rows via arbitrary higher-degree local contact subtraction.
-Escape conditions (negative claims): A constrained or derived contact term (a same-surface certificate or microscopic denominator theorem) is untouched by this argument.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Polynomial-contact no-go: unconstrained subtraction can manufacture any residual
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Finite-shell Stieltjes checks after an unconstrained polynomial subtraction do not identify the physical two-point object, the pole residue, or kappa_s.
+- Extraction scope (triage compression; may reflect later context): Blocks promoting finite polefit8x8 rows via arbitrary higher-degree local contact subtraction.
+- Extraction escape conditions (negative claims; triage compression): A constrained or derived contact term (a same-surface certificate or microscopic denominator theorem) is untouched by this argument.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Generalizes the affine-contact results (idx 2228, 2190) to arbitrary polynomial degree, closing the whole contact-repair family.
 

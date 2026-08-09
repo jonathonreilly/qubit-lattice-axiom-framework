@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Chunks001 and 002 have different metadata seeds but identical gauge-evolution signatures — identical plaquette mean, identical selected mass fit, identical dE/ds slope — with no numba_gauge_seed_v1 marker proving the gauge evolution was seeded inside run_volume_numba; the scalar stochastic rows differ only because they use a separate NumPy RNG. The harness now seeds per volume and the combiner rejects unmarked chunks and duplicate gauge signatures across distinct seeds. PASS=8 FAIL=0.
 
-Original verdict: Historical chunk001/chunk002 are production-format diagnostics only and must be rerun under the patched harness or excluded before contributing to L12 combination.
-Scope: Evidence-quality gate; closes no physics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ REPRODUCIBILITY DEFECT: two 'independent' published chunks share an identical ga
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Historical chunk001/chunk002 are production-format diagnostics only and must be rerun under the patched harness or excluded before contributing to L12 combination.
+- Extraction scope (triage compression; may reflect later context): Evidence-quality gate; closes no physics.
 - Extraction red flags: A real reproducibility defect found post hoc: two chunks published as independent production evidence shared an identical gauge ensemble because numba's RNG was never seeded.
 - Supersession (as known at extraction): Invalidates the first two production checkpoints of the sweep (idx 2192, 2194) as independent evidence and forces the replacement-rerun wave at idx 2193-2197.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Seventh anchor at b = 7 (n = 51, C = 7): all L(51) = 45,537,549,124 pairwise-separated configurations of C_51 censused with every occupancy stratum matching the Lucas recurrence (primary and checker counted independently and agree exactly), 2.3 trillion station-steps, zero violations.
 
-Original verdict: Seven rings anchored; the ring too big for one runner was completed by two, with the refutation-built checker finishing five times faster than any prior evaluator.
-Scope: Full ring completed only by the union of the primary's honest partial boundary and the checker's verified overlap plus remainder.
-Escape conditions (negative claims): No negative claim ships.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The sector-theorem exhaustive anchor set carrier: b=7 censuses all 45,537,549,12
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Seven rings anchored; the ring too big for one runner was completed by two, with the refutation-built checker finishing five times faster than any prior evaluator.
+- Extraction scope (triage compression; may reflect later context): Full ring completed only by the union of the primary's honest partial boundary and the checker's verified overlap plus remainder.
+- Extraction escape conditions (negative claims; triage compression): No negative claim ships.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Extends the anchor set from b <= 6; latest ring in the family.
 

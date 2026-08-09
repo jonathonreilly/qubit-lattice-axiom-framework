@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Every exact common object is invariant under the residual dark-plane SO(2): delta_A1, the bright pair u_E, u_T, the carrier K_R = (u_E, u_T, delta_A1 u_E, delta_A1 u_T), the tensorized action I_TB and the spacetime carrier Xi_TB all factor through invariant data, while the dark complement itself moves - so no canonical dark-angle section or distinguished connection can be derived from the current data.
 
-Original verdict: The atlas has reduced the gravity obstruction to one angle but supplies no angle-sensitive observable or transport law.
-Scope: Current exact common bundle data after the residual gauge has collapsed to SO(2).
-Escape conditions (negative claims): Escaped by an exact angle-sensitive primitive on the dark complement plane: a canonical axial phase convention, an angle-sensitive support or curvature-localization observable, or a connection law whose holonomy detects the angle.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -56,6 +52,9 @@ The polarization terminal no-go: every exact common object is SO(2)-invariant on
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The atlas has reduced the gravity obstruction to one angle but supplies no angle-sensitive observable or transport law.
+- Extraction scope (triage compression; may reflect later context): Current exact common bundle data after the residual gauge has collapsed to SO(2).
+- Extraction escape conditions (negative claims; triage compression): Escaped by an exact angle-sensitive primitive on the dark complement plane: a canonical axial phase convention, an angle-sensitive support or curvature-localization observable, or a connection law whose holonomy detects the angle.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal note of the POLARIZATION common-bundle chain - it converts the SO(2) reduction into an explicit blindness no-go.
 

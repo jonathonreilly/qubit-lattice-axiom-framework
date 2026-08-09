@@ -18,10 +18,6 @@ required before any effective status.
 
 Retracts the framework-seeded chain because dividing alpha_plaq by N_taste = 4 (giving m_t = 151 GeV, -13%) directly contradicts the Feshbach theorem's proof that Z_gauge = 1 exactly to machine precision — the gauge coupling is not reduced by taste projection. The replacement chain without the /4 runs alpha_plaq = 0.092 to alpha_MSbar(M_Pl) = 0.082 to y_t(M_Pl) = g_s/sqrt(6) and 2-loop RGE to m_t = 171.0 GeV (-1.1%), predicting alpha_s(M_Z) ~ 0.12 against an observed 0.118.
 
-Original verdict: y_t is declared CLOSED by the gauge crossover theorem chain and the framework-seeded /4 chain is retired.
-Scope: Retraction of one chain and reinstatement of another; both use framework couplings run downward with no observed alpha_s input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The one-day retraction: dividing by N_taste contradicts the Feshbach theorem —
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): y_t is declared CLOSED by the gauge crossover theorem chain and the framework-seeded /4 chain is retired.
+- Extraction scope (triage compression; may reflect later context): Retraction of one chain and reinstatement of another; both use framework couplings run downward with no observed alpha_s input.
 - Extraction red flags: Formal retraction of a same-week sibling note; declares the y_t gate CLOSED while the gauge-crossover note (idx 2312) and the honest crossover assessment (idx 2168) both keep it open.
 - Supersession (as known at extraction): Explicit retraction of idx 2305, published one day later; its 'y_t is CLOSED' verdict conflicts with the crossover assessment at idx 2312 (same lane, same week) which calls the crossover unresolved.
 

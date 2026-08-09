@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves the lattice master equation for taste occupation numbers reduces to the Boltzmann equation dn/dt + 3Hn = -<sigma v>(n^2 - n_eq^2) in the thermodynamic limit, via exact transition rates, a Stosszahlansatz derived from the spectral gap, Riemann-sum and Weyl's-law convergence with UV finiteness from the compact Brillouin zone, and an expansion term from graph growth.
 
-Original verdict: The Boltzmann equation is a lattice theorem rather than an import, making R a corollary given the Casimir ratio, alpha_s at g_bare = 1, and the Sommerfeld factor.
-Scope: Thermodynamic limit L -> infinity at fixed lattice spacing; closes the objection that freeze-out was imported cosmology.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Boltzmann equation as a lattice THEOREM (exact transition rates, Stosszahlan
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Boltzmann equation is a lattice theorem rather than an import, making R a corollary given the Casimir ratio, alpha_s at g_bare = 1, and the Sommerfeld factor.
+- Extraction scope (triage compression; may reflect later context): Thermodynamic limit L -> infinity at fixed lattice spacing; closes the objection that freeze-out was imported cosmology.
 - Extraction red flags: The corollary still routes through alpha_s at g_bare = 1, which other notes flag as an assumed input (Axiom A5).
 - Supersession (as known at extraction): Closes a standing Codex objection that Boltzmann/Friedmann freeze-out was imported standard cosmology.
 

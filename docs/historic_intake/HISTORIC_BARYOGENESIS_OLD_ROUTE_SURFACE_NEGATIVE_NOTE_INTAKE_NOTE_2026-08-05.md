@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The old 2HDM-like taste-scalar electroweak-phase-transition route is not alive on current main: the package does not derive the needed extra scalar sector, and the derived one-doublet scalar package is far too weak even before screening.
 
-Original verdict: The old route is dead on the current surface, so the honest remaining baryogenesis question is reframed.
-Scope: Bounded current-surface no-go; does not prove baryogenesis impossible in the framework.
-Escape conditions (negative claims): Explicitly leaves open a genuinely new derived finite-T bosonic sector, a non-minimal or nonperturbative finite-T potential invalidating the one-loop scalar-cubic bookkeeping, and a lattice-derived transition/sphaleron/transport computation.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,9 @@ The old-route no-go: the 2HDM-like taste-scalar EWPT route is dead on the surfac
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The old route is dead on the current surface, so the honest remaining baryogenesis question is reframed.
+- Extraction scope (triage compression; may reflect later context): Bounded current-surface no-go; does not prove baryogenesis impossible in the framework.
+- Extraction escape conditions (negative claims; triage compression): Explicitly leaves open a genuinely new derived finite-T bosonic sector, a non-minimal or nonperturbative finite-T potential invalidating the one-loop scalar-cubic bookkeeping, and a lattice-derived transition/sphaleron/transport computation.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

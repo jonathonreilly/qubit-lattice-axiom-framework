@@ -18,10 +18,6 @@ required before any effective status.
 
 The obligation is INTERNALLY INCONSISTENT: its '## Exact target' (:11-13) and the machine registry derivation_obligations.json both record the target as the grain question ALONE, while its prose '## Closure criterion' (:21) additionally demands deriving an object its own historical source (TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md:40-44) presupposed rather than supplied; both sibling obligations attach 'derive' to the target identity and 'provide'/'construct' to the substrate carrier, only this one attaches 'derive' to the substrate. Second: the campaign brief's factual premise is FALSE — the three most recent grain notes say verbatim they engage NEITHER conjunct, and the axiom-surface attack was already run 2026-07-04 and 2026-07-10. Runner SUMMARY: PASS=37 FAIL=0.
 
-Original verdict: The campaign is well-posed but not as the brief states it and not on the reading the brief fears; reading (i) 'from the four axioms alone' is a category error, the menu is a 2-point set of physically distinct laws.
-Scope: Well-posedness of conjunct 1 of AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md:21; status authority: none.
-Escape conditions (negative claims): Reading (iii) — derive up to a menu then show it is a singleton — is the live reading; the menu is 2 points and the separating datum is unregistered.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ MAJOR governance finding, pulled for the owner surface: the owner-registered obl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The campaign is well-posed but not as the brief states it and not on the reading the brief fears; reading (i) 'from the four axioms alone' is a category error, the menu is a 2-point set of physically distinct laws.
+- Extraction scope (triage compression; may reflect later context): Well-posedness of conjunct 1 of AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md:21; status authority: none.
+- Extraction escape conditions (negative claims; triage compression): Reading (iii) — derive up to a menu then show it is a singleton — is the live reading; the menu is 2 points and the separating datum is unregistered.
 - Extraction red flags: MAJOR governance finding — an owner-registered obligation's prose over-reaches its own machine-registered target, i.e. the campaign's anchor document exhibits the exact failure mode the campaign's rule 6 warns about; and the campaign brief that spawned this work is factually wrong on both halves of its premise
 - Supersession (as known at extraction): Names the obligation's historical source docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md and the machine registry docs/audit/data/derivation_obligations.json as the authoritative non-prose surface.
 

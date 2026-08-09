@@ -18,10 +18,6 @@ required before any effective status.
 
 Six experiments over >25,000 path-sum evaluations establish that off-center visibility is governed by a topological threshold — exactly zero when the causal DAG admits paths through only one slit (6/6 zero-V cases single-slit, 4/4 nonzero both), jumping discontinuously to 0.004-0.875 at R_c(y) ~ 0.25|y| + 1.0 (1.25, 1.50, 1.75, 2.25 at y = 1, 2, 3, 5) — while record mode gives V=0.0000000000 everywhere and partial records give exactly V_0(1-p).
 
-Original verdict: Status COMPLETE — promoted to canonical main; the interference regime shows three distinctly discrete-network features (topological threshold, discontinuous onset, y-dependent R_c) with no continuum analogue.
-Scope: Standard path-sum over the causal DAG with phase_per_action=4.0, attenuation_power=1.0, no persistent nodes; six sweeps totaling ~1,152 + 20,160 + ~44,000 + 10 + ~5,040 + ~31,752 evaluations.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,8 @@ Era-consolidated interference claim (>25k evaluations; topological threshold, di
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Status COMPLETE — promoted to canonical main; the interference regime shows three distinctly discrete-network features (topological threshold, discontinuous onset, y-dependent R_c) with no continuum analogue.
+- Extraction scope (triage compression; may reflect later context): Standard path-sum over the causal DAG with phase_per_action=4.0, attenuation_power=1.0, no persistent nodes; six sweeps totaling ~1,152 + 20,160 + ~44,000 + 10 + ~5,040 + ~31,752 evaluations.
 - Extraction red flags: Its own validation table carries the geometry sweep as SUSPICIOUS (center V=1 a symmetry artifact), flags that the monotonic trends may be a rectangular-grid regularity artifact, that R_c was fit from 4 points, and that the linear decoherence law is mathematically trivial rather than model-specific.
 - Supersession (as known at extraction): Consolidates six component analyses (idx 3110, 3114, 3122, 3123, 3128, 3131) and carries their sanity verdicts forward; its R_c approximation is then derived exactly at idx 3138.
 

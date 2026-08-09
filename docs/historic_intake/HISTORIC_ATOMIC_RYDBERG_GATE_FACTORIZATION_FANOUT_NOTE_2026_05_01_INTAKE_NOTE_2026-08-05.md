@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Retained Rydberg closure requires THREE independent gates rather than one implicit substitution — a retained electron/reduced mass, a retained alpha(0) or threshold-resolved transport, and a retained framework-native physical-unit NR Coulomb/Schrodinger map — proved by factorization: E_n = -mu*(Z*alpha)^2/(2n^2) only after the unit map is admitted, while without it lambda_n = -g^2/(4n^2) and E_n = lambda_n/(2*mu*a^2). A single Rydberg number constrains only the product mu*alpha^2.
 
-Original verdict: No frame supports retained Rydberg closure; the strongest honest movement is exact support for the dependency factorization.
-Scope: Five non-overlapping attack frames, all failing; runner PASS=43 FAIL=0.
-Escape conditions (negative claims): Next actions named: prove a narrow framework-native kinetic/unit-map theorem, or prove a sharper no-go that threshold-resolved alpha(0) transport cannot be retained without upstream charged-mass and hadronic inputs.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ TERMINAL of the alpha(0)/Rydberg lane: retained Rydberg closure requires THREE i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No frame supports retained Rydberg closure; the strongest honest movement is exact support for the dependency factorization.
+- Extraction scope (triage compression; may reflect later context): Five non-overlapping attack frames, all failing; runner PASS=43 FAIL=0.
+- Extraction escape conditions (negative claims; triage compression): Next actions named: prove a narrow framework-native kinetic/unit-map theorem, or prove a sharper no-go that threshold-resolved alpha(0) transport cannot be retained without upstream charged-mass and hadronic inputs.
 - Extraction red flags: Quantifies two hidden-fit routes: direct alpha_EM(M_Z) substitution shifts E_1 by +15.21%, and using it would require a hidden m_e shift of -13.20%. Both are labelled falsifier checks, not derivation inputs.
 - Supersession (as known at extraction): Consolidates idx 10588-10592 into one factorization statement.
 

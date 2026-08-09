@@ -18,10 +18,6 @@ required before any effective status.
 
 Determines the absolute S_23 normalization without using PDG V_cb as input, via five attacks (wavefunction renormalization, Symanzik continuum extrapolation S_23(L) = 0.271 L^{-1.62} giving K_continuum = 2.49, V_us as a calibration-free test, physical NNI coefficient from mass splitting, and direct L = 4..16 computation), predicting V_cb to 4.6% of PDG (1.8 sigma).
 
-Original verdict: V_cb is predicted at 4.6% without V_cb input, with the best non-circular determination identified among the five attacks.
-Scope: Bounded; includes an explicit circularity analysis of which determinations remain non-circular.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,8 @@ V_cb predicted at 4.6% without V_cb input via five attacks with the best non-cir
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): V_cb is predicted at 4.6% without V_cb input, with the best non-circular determination identified among the five attacks.
+- Extraction scope (triage compression; may reflect later context): Bounded; includes an explicit circularity analysis of which determinations remain non-circular.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

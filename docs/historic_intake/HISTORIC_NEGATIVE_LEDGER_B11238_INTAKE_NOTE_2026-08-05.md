@@ -18,10 +18,6 @@ required before any effective status.
 
 The archived source_resolved_retarded_green_pocket_note failed because its printed ret/same column was actually ret/inst and the note froze that mislabeled value; this block does not alter or relabel the archived failed row; and the corrected packet avoids support-fraction broadening and full retarded field-equation claims.
 
-Original verdict: A prior landed note is identified as having frozen a mislabeled numeric column.
-Scope: Source-retarded Green live packet.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,8 @@ Data-labeling defect in a prior note, on the record: the archived source_resolve
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A prior landed note is identified as having frozen a mislabeled numeric column.
+- Extraction scope (triage compression; may reflect later context): Source-retarded Green live packet.
 - Extraction red flags: documents a real data-labeling defect in a prior note (a column labeled ret/same was actually ret/inst), with the mislabeled value frozen into the note
 - Supersession (as known at extraction): CORRECTION context: identifies source_resolved_retarded_green_pocket_note as failed due to a mislabeled ret/same versus ret/inst column whose value was frozen into the note
 

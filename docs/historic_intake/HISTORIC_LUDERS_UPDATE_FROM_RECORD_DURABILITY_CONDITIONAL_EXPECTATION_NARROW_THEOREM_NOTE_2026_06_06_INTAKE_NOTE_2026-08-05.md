@@ -18,10 +18,6 @@ required before any effective status.
 
 Defining the record algebra A_rec as the {P_k}-block-diagonal operators, durability forces the record map to (1) land in A_rec, (2) fix A_rec, and (3) preserve Tr(P_k rho); the unique trace-preserving map satisfying all three is the conditional expectation onto A_rec, i.e. the pinching L(rho) = sum_k P_k rho P_k — the non-selective Lueders update. Uniqueness has teeth: the identity fails durability, a reweighted pinch fails the record statistics, and a basis-rotated pinch records a different decomposition.
 
-Original verdict: Durability alone forces the Lueders form (runner SCORECARD 21/21 PASS), model-free — grounding the U4 'recording twice = recording once' axiom that the composition-consistency route assumes.
-Scope: The central-sector decomposition {P_k} (which observable is recorded) is the supplied readout context, not derived; the Born probability pairing is a separate matter not re-derived. Adds no axiom, no fitted input, no audit verdict.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Durability alone forces the Lueders form (21/21, model-free) — Record-lane fou
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Durability alone forces the Lueders form (runner SCORECARD 21/21 PASS), model-free — grounding the U4 'recording twice = recording once' axiom that the composition-consistency route assumes.
+- Extraction scope (triage compression; may reflect later context): The central-sector decomposition {P_k} (which observable is recorded) is the supplied readout context, not derived; the Born probability pairing is a separate matter not re-derived. Adds no axiom, no fitted input, no audit verdict.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supplies the premise that LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_2026-06-05 (audited_conditional) explicitly assumes; distinct from both the decoherence route (RECORD_DEPHASING_BROADCAST_INTERFACE) and the measurement-axiom route (LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY), which it grounds.
 

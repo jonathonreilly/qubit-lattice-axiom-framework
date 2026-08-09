@@ -18,10 +18,6 @@ required before any effective status.
 
 The staggered lattice on Z^3 yields exact SU(2) gauge structure through a purely topological chain (bipartite Z^3 -> Z2 parity -> staggered eta phases -> 2^3 = 8 taste species -> Cl(3) -> su(2)), verified at machine precision: Clifford anticommutator exact, SU(2) generators and Casimir S^2 = 3/4 (j = 1/2) to <1e-15, chiral anticommutation exact, plus U(1) from edge phases (Coulomb R^2 = 0.9995). Native cubic SU(3) is explicitly NOT closed.
 
-Original verdict: SU(2) is retained with no free parameters or choices; SU(3) emergence from the native cubic Cl(3) algebra is open.
-Scope: Publication-facing claim boundary for the Cl(3)/Z^3 native gauge lane: safe retained reading is the exact native cubic Cl(3)/SU(2) algebra only; broader derivation memos or phenomenology notes are not retention authority unless separately promoted.
-Escape conditions (negative claims): The SU(3) gap is stated with its escape conditions: the cubic taste algebra CONTAINS a compatible SU(3) embedding and three independent arguments (commutant of SU(2)+SWAP23 giving su(3)+u(1) uniquely, taste breaking 1+3+3+1, anomaly cancellation with 3+3*) constrain the color group to SU(3) rather than SU(4) or larger, but each requires either choosing a subspace by hand, adding an identification layer, or importing modeled O(a^2) breaking coefficients. Closure would need a derivation from Cl(3) plus only already-retained structures (bipartite Z2, self-consistent Poisson, unitarity); three candidate paths are named, including proving the commutant chain follows from cubic symmetry alone since SWAP23 IS a cubic symmetry.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Exact SU(2) from the staggered Z^3 chain (topological, parameter-free) with the 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): SU(2) is retained with no free parameters or choices; SU(3) emergence from the native cubic Cl(3) algebra is open.
+- Extraction scope (triage compression; may reflect later context): Publication-facing claim boundary for the Cl(3)/Z^3 native gauge lane: safe retained reading is the exact native cubic Cl(3)/SU(2) algebra only; broader derivation memos or phenomenology notes are not retention authority unless separately promoted.
+- Extraction escape conditions (negative claims; triage compression): The SU(3) gap is stated with its escape conditions: the cubic taste algebra CONTAINS a compatible SU(3) embedding and three independent arguments (commutant of SU(2)+SWAP23 giving su(3)+u(1) uniquely, taste breaking 1+3+3+1, anomaly cancellation with 3+3*) constrain the color group to SU(3) rather than SU(4) or larger, but each requires either choosing a subspace by hand, adding an identification layer, or importing modeled O(a^2) breaking coefficients. Closure would need a derivation from Cl(3) plus only already-retained structures (bipartite Z2, self-consistent Poisson, unitarity); three candidate paths are named, including proving the commutant chain follows from cubic symmetry alone since SWAP23 IS a cubic symmetry.
 - Extraction red flags: Self-stated that the SU(2) taste-algebra result is not new in isolation (cites Kogut & Susskind 1975, Golterman & Smit 1984, Sharpe 2006) — the claimed contribution is only its connection to the framework's derivation chain; confinement evidence is 'partial (small lattice, weak coupling), not conclusive'; four prior-art works on Clifford-algebra SU(3) are listed as must-cite.
 - Supersession (as known at extraction): none recorded
 

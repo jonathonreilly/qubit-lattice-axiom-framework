@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Five-frame exhaustive search (spectral/Dirac eigenvalue, topological/Z^3 boundary condition, taste/staggered representation, Cl(3) representation-theoretic, 't Hooft anomaly matching) finds no substrate-native non-MC pin for the top bare mass on the Cl(3)/Z^3, g_bare=1, staggered-Dirac surface; all five frames agree the gauge symmetry does not constrain Yukawa coefficients. Runner PASS=19 FAIL=0.
 
-Original verdict: No-go / exact-negative-boundary; the exact wall is Yukawa Coupling Freedom, so PR #230 cannot reach derivational status within the forbiddance set.
-Scope: Non-MC substrate pin for the top-sector mass parameter, under a forbiddance set excluding H_unit, yt_ward_identity, alpha_LM/plaquette/tadpole, PDG m_t, target y_t and fitted selectors.
-Escape conditions (negative claims): Permit yt_ward_identity (then y_t_bare = g_bare/sqrt(2 N_c) = 1/sqrt(6) exactly and PR #230 upgrades from calibration to derivation), or add a dynamical mechanism (SUSY, compositeness, new axiom).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Pass-1 terminal: five-frame exhaustive no-go — no substrate-native top-mass pi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No-go / exact-negative-boundary; the exact wall is Yukawa Coupling Freedom, so PR #230 cannot reach derivational status within the forbiddance set.
+- Extraction scope (triage compression; may reflect later context): Non-MC substrate pin for the top-sector mass parameter, under a forbiddance set excluding H_unit, yt_ward_identity, alpha_LM/plaquette/tadpole, PDG m_t, target y_t and fitted selectors.
+- Extraction escape conditions (negative claims; triage compression): Permit yt_ward_identity (then y_t_bare = g_bare/sqrt(2 N_c) = 1/sqrt(6) exactly and PR #230 upgrades from calibration to derivation), or add a dynamical mechanism (SUSY, compositeness, new axiom).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of pass 1; the one surviving route it names (Ward-decomposition) is closed by the pass-2 terminal 2468. Packet members: 2461, 2462, 2463.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Relocates the chirality gate: a C_3-equivariant realized history has arrow carrier A_ham(T) = ((b-c)/2) A in the partition-blind line so K-reality holds on the whole cone, and conversely a C_3-breaking history makes A_ham partition-selective — giving delta = 0 iff the realized boundary is C_3-symmetric; but the only C_3-symmetric reachable boundary I/3 is the no-arrow fixed point while arrow-bearing single-axis boundaries are C_3-broken, and registration collapses them (D(|e_k><e_k|) = I/3 exactly).
 
-Original verdict: The gate gets its sharpest known form — an arrow-versus-symmetry tension on the one realized boundary, a cosmological past-hypothesis question rather than an operator-algebra one — and the relocated sub-target is still not forced from A1+A2+retained.
-Scope: Relocation plus a bounded no-forcing result, not a derivation of delta = 0; does not touch the block weight r (G3); runner TOTAL PASS=14 FAIL=0 including three adversarial controls.
-Escape conditions (negative claims): Explains why the standing conjugation-even no-go does not reach this statement (it concerns spectral functionals and similarities, while this is registration-level and non-spectral), and proves by parity (T6) that no T-odd functional can select delta = 0 since Tr(A M) = 6|b| sin delta vanishes there — so the whole weight sits on the unbuilt conjugation-even boundary-symmetry datum.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ K-reality = boundary C_3 symmetry: the chirality gate's sharpest form — an arr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gate gets its sharpest known form — an arrow-versus-symmetry tension on the one realized boundary, a cosmological past-hypothesis question rather than an operator-algebra one — and the relocated sub-target is still not forced from A1+A2+retained.
+- Extraction scope (triage compression; may reflect later context): Relocation plus a bounded no-forcing result, not a derivation of delta = 0; does not touch the block weight r (G3); runner TOTAL PASS=14 FAIL=0 including three adversarial controls.
+- Extraction escape conditions (negative claims; triage compression): Explains why the standing conjugation-even no-go does not reach this statement (it concerns spectral functionals and similarities, while this is registration-level and non-spectral), and proves by parity (T6) that no T-odd functional can select delta = 0 since Tr(A M) = 6|b| sin delta vanishes there — so the whole weight sits on the unbuilt conjugation-even boundary-symmetry datum.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Addresses GAP A ('posited, not derived') of the retained_bounded FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02 and re-derives the KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY no-go downstream of its own T1.
 

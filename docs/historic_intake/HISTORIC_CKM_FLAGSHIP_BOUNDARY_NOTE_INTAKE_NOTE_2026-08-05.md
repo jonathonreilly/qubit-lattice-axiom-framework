@@ -18,10 +18,6 @@ required before any effective status.
 
 Draws the CKM lane's flagship boundary: derived are NNI texture, eps = 1/3, sin theta_C = 0.225 (0.3% from PDG), delta_CP = 2 pi/3 as an exact mechanism, the hierarchy ordering, three of four NNI coefficients within 23%, and V_cb in the ballpark; not derived are quantitative V_cb and V_ub, the O(1) Yukawas, the precise delta_CP, the continuum/thermodynamic limits and dynamical fermions.
 
-Original verdict: BOUNDED, with an explicit list of what would NOT help — refitting coefficients (circular), quoting 65.8 degrees as derived when the framework gives 120, or promoting bounded bands as derived values.
-Scope: All lattice work at finite L <= 8 with ~98% volume spread on the inter-valley overlap and no continuum extrapolation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The CKM flagship boundary: derived vs not-derived drawn exactly, three overclaim
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED, with an explicit list of what would NOT help — refitting coefficients (circular), quoting 65.8 degrees as derived when the framework gives 120, or promoting bounded bands as derived values.
+- Extraction scope (triage compression; may reflect later context): All lattice work at finite L <= 8 with ~98% volume spread on the inter-valley overlap and no continuum extrapolation.
 - Extraction red flags: Explicitly warns against three overclaiming practices that earlier notes in the lane had used.
 - Supersession (as known at extraction): States that it supersedes earlier CKM boundary framings in the lane.
 

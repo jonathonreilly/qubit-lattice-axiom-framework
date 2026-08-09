@@ -20,10 +20,6 @@ required before any effective status.
 
 The signed readout gives the exact identity Q(r) = (1 + 2r)/3 so det_C is the single point r = 1/2 and det_R the single point r = 1, while observed quark moduli sit strictly between (r_up ~ 0.77, r_down ~ 0.60); J_cs exists in every sector but is measure-neutral, and all three candidate discriminators (Dirac/Majorana, chirality, colour) act off the generation index and are generation-blind. Runner 23/23 PASS.
 
-Original verdict: NOT-CLEANLY-SECTOR-DEPENDENT and NOT-OVERREACHING - Q1 is the per-sector value of a continuous Fourier modulus, not a holomorphic-vs-real binary decided by a clean discriminator.
-Scope: Clarifies the STRUCTURE of the keystone; derives r = 1/2 for no sector and uses PDG masses only in an explicitly non-load-bearing sidecar.
-Escape conditions (negative claims): The named live thread is a finite-beta KMS / modular-equilibrium condition on the doublet block that could pin |b| = a/sqrt2 for charged leptons; a different sector property might still carry sector-dependence.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The exact continuum result Q(r) = (1+2r)/3 with observed quark moduli strictly i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): NOT-CLEANLY-SECTOR-DEPENDENT and NOT-OVERREACHING - Q1 is the per-sector value of a continuous Fourier modulus, not a holomorphic-vs-real binary decided by a clean discriminator.
+- Extraction scope (triage compression; may reflect later context): Clarifies the STRUCTURE of the keystone; derives r = 1/2 for no sector and uses PDG masses only in an explicitly non-load-bearing sidecar.
+- Extraction escape conditions (negative claims; triage compression): The named live thread is a finite-beta KMS / modular-equilibrium condition on the doublet block that could pin |b| = a/sqrt2 for charged leptons; a different sector property might still carry sector-dependence.
 - Extraction red flags: Refutes two previously circulated framings within the same Koide/flavor cluster.
 - Supersession (as known at extraction): CORRECTS two prior framings: the coverage-audit 'Q1 holomorphy = chirality, same binary' claim is refuted (G_U1 commutes with Gamma_chi), and the 'quarks read det_R' framing is imprecise since quarks sit at intermediate r.
 

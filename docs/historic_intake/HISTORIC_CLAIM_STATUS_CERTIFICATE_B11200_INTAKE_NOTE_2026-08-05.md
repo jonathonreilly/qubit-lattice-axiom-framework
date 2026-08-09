@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Certifies an exact current-form obstruction: the displayed action I_TB does not generate the displayed Xi_TB semigroup. The N1 table enumerates seven attempted counter-routes (direct Euler-Lagrange giving only grad I_R=0 and a=k; Euclidean gradient flow static at a=k; carrier-coordinate variation vanishing at a=K_R(q); Schur elimination with exactly zero mixed Hessian; invertible relabeling blocked since n+4 differs from 4n for n>=2; a natural external lift that only appends the semigroup as an independent law; and a generator-bearing completion that succeeds and is included as a control).
 
-Original verdict: candidate-retained-grade with no-go discipline status PASS subject to review-loop rechecking; audit required before effective retained, bare retained not allowed.
-Scope: The displayed finite-dimensional action and formulas only; no per-site, per-mode, continuum, lattice-wide, or general Einstein/Regge impossibility claim; load-bearing repo dependencies none; observations/fits/units/literature none.
-Escape conditions (negative claims): N6 names two partial-closure paths: admit the semigroup as an independent non-variational law (an import, not a derivation), or derive a full tensor-field action with generator I_4 tensor Lambda_R (illustrated by the completion control).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The only candidate-retained-grade certificate among the 96 in this stratum: an e
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): candidate-retained-grade with no-go discipline status PASS subject to review-loop rechecking; audit required before effective retained, bare retained not allowed.
+- Extraction scope (triage compression; may reflect later context): The displayed finite-dimensional action and formulas only; no per-site, per-mode, continuum, lattice-wide, or general Einstein/Regge impossibility claim; load-bearing repo dependencies none; observations/fits/units/literature none.
+- Extraction escape conditions (negative claims; triage compression): N6 names two partial-closure paths: admit the semigroup as an independent non-variational law (an import, not a derivation), or derive a full tensor-field action with generator I_4 tensor Lambda_R (illustrated by the completion control).
 - Extraction red flags: only 1 of 96 certificates in this stratum claims candidate-retained-grade; N2 explicitly collapses four apparent walls into one, correcting an inflated wall count
 - Supersession (as known at extraction): none recorded
 

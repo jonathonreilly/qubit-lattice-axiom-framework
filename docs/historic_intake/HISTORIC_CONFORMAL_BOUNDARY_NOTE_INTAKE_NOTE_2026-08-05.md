@@ -18,10 +18,6 @@ required before any effective status.
 
 The d = 3 bulk propagator induces a boundary theory with 2D CFT structure absent in higher dimensions: central charge c = 1.47 per mode with alpha L + log entropy scaling, exact modular S and T only at d = 3, versus pure area laws at d = 4, 5.
 
-Original verdict: STRONG EVIDENCE for a d = 3 conformal boundary, connecting to holography since 2D is where the conformal group becomes infinite-dimensional.
-Scope: Five gates across d = 2, 3, 4, 5; correlator R^2 = 0.25 (oscillatory) is the weakest.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ d=3 conformal boundary evidence: 2D CFT structure (c = 1.47/mode, exact modular 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): STRONG EVIDENCE for a d = 3 conformal boundary, connecting to holography since 2D is where the conformal group becomes infinite-dimensional.
+- Extraction scope (triage compression; may reflect later context): Five gates across d = 2, 3, 4, 5; correlator R^2 = 0.25 (oscillatory) is the weakest.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

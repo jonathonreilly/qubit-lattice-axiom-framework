@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The obstruction is algebraic and non-data: a reducible neutral completion preserves all source-only C_ss rows while leaving a finite orthogonal neutral direction outside the primitive cone, and the branch has no same-surface certificate proving a nonnegative strongly connected transfer matrix with a positive primitive power, isolated pole, positive overlaps and orthogonal-null control. PASS=12 FAIL=0.
 
-Original verdict: The current source/neutral surface cannot force the primitive-cone irreducibility the conditional Perron rank-one support needs.
-Scope: Cycle 5 of the non-chunk loop with a minimal premise set excluding external targets, unit-operator/Ward readout, gauge-normalization and unit-overlap shortcuts, and source-only rows recast as Schur/W-Z/O_H rows.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,8 @@ Neutral-scalar rank-one TERMINAL: the obstruction is algebraic and non-data — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The current source/neutral surface cannot force the primitive-cone irreducibility the conditional Perron rank-one support needs.
+- Extraction scope (triage compression; may reflect later context): Cycle 5 of the non-chunk loop with a minimal premise set excluding external targets, unit-operator/Ward readout, gauge-normalization and unit-overlap shortcuts, and source-only rows recast as Schur/W-Z/O_H rows.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the neutral-scalar rank-one chain (2339 -> 2340 -> 2342 -> 2341 -> 2343 -> 2344): the route is closed on the current surface by an algebraic obstruction rather than by missing data.
 

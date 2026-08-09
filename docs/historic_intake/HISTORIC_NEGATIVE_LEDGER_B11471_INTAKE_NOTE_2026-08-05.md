@@ -18,10 +18,6 @@ required before any effective status.
 
 Historical code invalidation: the old 5.024e-3 residual is invalidated as an endpoint-response diagnostic — central finite-difference gives relative error 3.8e-7 for the positive adjoint exponent versus 3.25e-1 for the old negative exponent (reproducible runner bug); calling the affine residual 'nonlocal' is an unsupported semantic bridge, repaired to 'affine-projection remainder'.
 
-Original verdict: runner bug finding plus semantic repair
-Scope: historical invalidation plus route-selection observations; no global no-go
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Historical code invalidation on the record: the old 5.024e-3 residual is INVALID
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): runner bug finding plus semantic repair
+- Extraction scope (triage compression; may reflect later context): historical invalidation plus route-selection observations; no global no-go
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 An unbounded beta=6 perturbative plaquette prediction is blocked (still depends on supplied coefficient, normalization, scale and comparator inputs). A stronger tadpole-improved Pade precision claim is FALSIFIED by the runner: [1/2]_TI = 0.910668 and [2/1]_TI = 0.910645 are NOT uniformly within 1e-5 of 0.910550; the note now states the weaker supported fact that higher-order tadpole-improved diagonal/near-diagonal values approach the best value closely while the broad obstruction remains above the 5 percent scale.
 
-Original verdict: Both the unbounded prediction and the tight precision claim fail; only a weaker statement is supported.
-Scope: The beta=6 perturbative plaquette prediction and its Pade precision sub-claim.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Falsification of a published precision claim: a previously stated tadpole-improv
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Both the unbounded prediction and the tight precision claim fail; only a weaker statement is supported.
+- Extraction scope (triage compression; may reflect later context): The beta=6 perturbative plaquette prediction and its Pade precision sub-claim.
 - Extraction red flags: a 1e-5 precision claim was published and is falsified here by 1.2e-4 and 9.5e-5 deviations
 - Supersession (as known at extraction): CORRECTION: a previously stated tadpole-improved Pade precision claim is retracted and replaced with a weaker one, with the exact numbers shown.
 

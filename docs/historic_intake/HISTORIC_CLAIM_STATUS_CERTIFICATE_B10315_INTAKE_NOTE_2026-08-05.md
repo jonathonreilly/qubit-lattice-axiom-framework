@@ -18,10 +18,6 @@ required before any effective status.
 
 Records an exact negative boundary: the displayed coefficient map cannot change V_ub when it represents the same matrices, and the former '1.14 x' V_ub calculation is demoted to an imports-dependent texture-deformation diagnostic. No observed target, fitted selector, literature value, framework-number substitution, or new axiom is load-bearing; review-loop disposition is pass after N3/N4/N5/N8 repairs.
 
-Original verdict: Narrow exact no-go passes; the earlier positive 1.14x V_ub reading is withdrawn, and the physical deformation route stays open.
-Scope: The displayed NNI coefficient normalization map on a fixed texture; not all NNI textures or all flavor dynamics.
-Escape conditions (negative claims): An independently derived physical texture deformation (plus five non-top quark masses, coefficients, and a texture-to-CKM bridge) would reopen positive closure.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Retraction on the record: the displayed coefficient map cannot change V_ub when 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Narrow exact no-go passes; the earlier positive 1.14x V_ub reading is withdrawn, and the physical deformation route stays open.
+- Extraction scope (triage compression; may reflect later context): The displayed NNI coefficient normalization map on a fixed texture; not all NNI textures or all flavor dynamics.
+- Extraction escape conditions (negative claims; triage compression): An independently derived physical texture deformation (plus five non-top quark masses, coefficients, and a texture-to-CKM bridge) would reopen positive closure.
 - Extraction red flags: Corrects a previously asserted positive numeric result (1.14x V_ub); supervisor should check whether the retracted version reached docs/ or a ledger row.
 - Supersession (as known at extraction): Self-correction of an earlier branch-local 1.14x V_ub enhancement claim; the full N1-N8 stress test lives in the campaign's target note.
 

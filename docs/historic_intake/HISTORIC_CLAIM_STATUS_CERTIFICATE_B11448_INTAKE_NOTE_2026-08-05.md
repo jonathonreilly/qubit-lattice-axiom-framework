@@ -18,10 +18,6 @@ required before any effective status.
 
 Candidate-retained-grade bounded two-row theorem: closes by class-A inequalities over two retained-bounded computed inputs (fam1/fam2 seed0 control notes); no observed value, fit, selector theorem, or open import used; review-loop pass.
 
-Original verdict: candidate-retained-grade; review pass; audit required
-Scope: bounded two-row cross-family theorem only
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean unlanded positive: candidate-retained-grade bounded two-row theorem closin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): candidate-retained-grade; review pass; audit required
+- Extraction scope (triage compression; may reflect later context): bounded two-row cross-family theorem only
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

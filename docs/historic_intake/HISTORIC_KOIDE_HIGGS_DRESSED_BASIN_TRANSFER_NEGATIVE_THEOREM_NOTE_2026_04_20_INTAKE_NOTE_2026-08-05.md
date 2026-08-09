@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Every G1 chamber competitor (Basin 1, Basin 2, Basin X, the CP-conjugate point and the C_neg q<0 point) shows the same missing-axis signature — eight roots of Q = 2/3, exactly one small positive root, and direction cosine > 0.97 against the PDG sqrt(m) direction — and the EXCLUDED CP-conjugate point actually scores better (0.99746) than Basin 1 (0.99627).
 
-Original verdict: The Higgs-dressed transport route cannot bypass the open G1 chamber/basin selection program because excluded competitors inherit the same small-root mechanism.
-Scope: Current known G1 competitor set surviving somewhere in the PMNS search stack.
-Escape conditions (negative claims): The negative is an indiscriminacy across competitors, so the escape is an independent G1 selector — the chamber/A-BCC route, PMNS basin selection, or a deeper retained derivation of the G1 pin.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ The Higgs-dressed transport chain's non-selectivity no-go: every G1 competitor s
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Higgs-dressed transport route cannot bypass the open G1 chamber/basin selection program because excluded competitors inherit the same small-root mechanism.
+- Extraction scope (triage compression; may reflect later context): Current known G1 competitor set surviving somewhere in the PMNS search stack.
+- Extraction escape conditions (negative claims; triage compression): The negative is an indiscriminacy across competitors, so the escape is an independent G1 selector — the chamber/A-BCC route, PMNS basin selection, or a deeper retained derivation of the G1 pin.
 - Extraction red flags: An excluded, chamber-violating competitor fits the observed masses better than the physical basin on this route.
 - Supersession (as known at extraction): Follows the chamber-pair inversion theorem in the 2026-04-20 Higgs-dressed transport chain and closes the loophole that transport might itself select the physical basin.
 

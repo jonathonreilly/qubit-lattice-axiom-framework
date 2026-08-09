@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Five findings: the propagated retained three-sample triple is already the MINIMAL honest positive finite target; the only positive sharpening below it is the equivalent coefficient triple via the fixed radical inverse; even its normalized value is undetermined; the cone, truncation-envelope and Tau-wedge theorems add constraint geometry without evaluating it; and no finite sample-packet extension can close the beta-side vector.
 
-Original verdict: The next positive plaquette theorem target is still exactly the propagated retained triple, with no smaller exact evaluative target and no closed value theorem below it.
-Scope: Current exact bank.
-Escape conditions (negative claims): The no-go is a statement about the CURRENT bank's evaluative reach; the named route forward is an operator-side evaluation supplying the triple itself, after which the exact radical inverse map recovers the coefficients.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ The minimality consolidation: the propagated retained triple is the MINIMAL hone
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The next positive plaquette theorem target is still exactly the propagated retained triple, with no smaller exact evaluative target and no closed value theorem below it.
+- Extraction scope (triage compression; may reflect later context): Current exact bank.
+- Extraction escape conditions (negative claims; triage compression): The no-go is a statement about the CURRENT bank's evaluative reach; the named route forward is an operator-side evaluation supplying the triple itself, after which the exact radical inverse map recovers the coefficients.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Consolidates six prior plaquette three-sample notes (reconstruction, radical map, constraint boundary, positive cone, truncation envelope, Tau wedge) plus the finite-sample nonclosure into one minimality statement.
 

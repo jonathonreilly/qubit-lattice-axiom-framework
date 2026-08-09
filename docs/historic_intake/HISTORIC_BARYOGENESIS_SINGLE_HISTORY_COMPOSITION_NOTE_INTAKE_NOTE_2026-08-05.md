@@ -18,10 +18,6 @@ required before any effective status.
 
 Composing the three stage-specific one-lane reductions (chi(tau), l_L(tau), q_+(tau)) shows the remaining electroweak baryogenesis object is a single composite one-lane functional K_NP = F_NP[chi(tau)], hence eta = J * F_NP[chi(tau)].
 
-Original verdict: Stronger than the three separate reductions: everything now hangs on one scalar history and one composite functional.
-Scope: Exact coupled-history reduction on the current surface; the pushforwards T_L and T_+ are not given in explicit first-principles form.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ The composite one-lane reduction: K_NP = F_NP[chi(tau)] on a single scalar histo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Stronger than the three separate reductions: everything now hangs on one scalar history and one composite functional.
+- Extraction scope (triage compression; may reflect later context): Exact coupled-history reduction on the current surface; the pushforwards T_L and T_+ are not given in explicit first-principles form.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Composes and supersedes the three separate stage reductions (K_EWPT, K_tr, K_sph notes) as the lane's operative statement.
 

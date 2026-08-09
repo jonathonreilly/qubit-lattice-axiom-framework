@@ -18,10 +18,6 @@ required before any effective status.
 
 Two different g_* values were in use; the 110.75 variant wrongly added 4 taste scalars to the thermal plasma even though those states have Planck-scale masses and are Boltzmann-suppressed by exp(-1.22e19/160) = 0 at T_EW, so g_*(thermal) = 28 + (7/8)(90) = 106.75 is correct while N_taste = 8 belongs only in the UV sphaleron CP source via the 8/3 enhancement.
 
-Original verdict: Four scripts were corrected from 110.75 to 106.75; the ~3.6% shift is within theoretical uncertainties, so the fix is about consistency rather than accuracy.
-Scope: Applies to all thermal quantities (rho, s, H, x_F, Omega_DM); the taste enhancement is a gauge-topology effect, not a thermal one.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ GSTAR erratum: 110.75 wrongly included Planck-mass states — real physics error
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Four scripts were corrected from 110.75 to 106.75; the ~3.6% shift is within theoretical uncertainties, so the fix is about consistency rather than accuracy.
+- Extraction scope (triage compression; may reflect later context): Applies to all thermal quantities (rho, s, H, x_F, Omega_DM); the taste enhancement is a gauge-topology effect, not a thermal one.
 - Extraction red flags: Documents a real physics error that propagated into three baryogenesis scripts plus one derivation before being caught by adversarial audit.
 - Supersession (as known at extraction): Closes item 5 of ADVERSARIAL_CHAIN_AUDIT_2026-04-13 and invalidates the g_* values used by four named predecessor scripts.
 

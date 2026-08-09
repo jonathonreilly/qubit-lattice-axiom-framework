@@ -20,10 +20,6 @@ required before any effective status.
 
 Along H(t) = H_base + t J_* for t in [0,1] the determinant stays positive (min det H(t) ~ +0.876 at t ~ 0.78, det H_base = 32 sqrt(2)/9 ~ +5.0283, det H_pin ~ +0.9592), so by Sylvester's law of inertia signature(H_base + J_*) = signature(H_base) = (2,0,1) and the imposed branch-choice admissibility rule becomes a theorem.
 
-Original verdict: The DM flagship gate's selector-admissibility conditional at the P3 pin is discharged; the sigma_hier = (2,1,0) hierarchy pairing remains an independent open conditional.
-Scope: Holds at the single P3 observational pin (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042) on the retained 3-generation irreducible H_{hw=1}; no PDG charged-lepton masses invoked.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Sylvester-inertia branch theorem discharging the selector-admissibility conditio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The DM flagship gate's selector-admissibility conditional at the P3 pin is discharged; the sigma_hier = (2,1,0) hierarchy pairing remains an independent open conditional.
+- Extraction scope (triage compression; may reflect later context): Holds at the single P3 observational pin (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042) on the retained 3-generation irreducible H_{hw=1}; no PDG charged-lepton masses invoked.
 - Extraction red flags: The pin itself is fixed by observational promotion (matching 9/9 NuFit 5.3 NO 3-sigma bands), so the theorem is local to an observationally-selected point.
 - Supersession (as known at extraction): Promotes and retires the imposed branch-choice admissibility rule of PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md.
 

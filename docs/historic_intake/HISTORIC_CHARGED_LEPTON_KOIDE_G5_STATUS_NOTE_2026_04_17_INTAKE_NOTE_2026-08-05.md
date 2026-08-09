@@ -20,10 +20,6 @@ required before any effective status.
 
 Consolidated G5 status after nineteen agents: Koide Q_l = 2/3 stays algebraically equivalent to the equal-character-weight condition on the retained hw=1 triplet, four distinct attack nulls are rigorously closed, and the framework does NOT derive Koide as a sole-axiom theorem — G5 closes only at the same closure class as G1 (retained map plus observational promotion), with the pin (w_O0, w_a, w_b) = (2.71e-4, 5.61e-2, 9.44e-1) from PDG masses, chamber-interior and unique as a set up to a residual S_2 slot ambiguity.
 
-Original verdict: The sharpest honest statement: cone forcing needs a genuinely new retained primitive beyond the observable-principle chain; the sole-axiom route is closed.
-Scope: Current retained Cl(3)/Z^3 surface; the observational-pin closure is a 'generous reading' with honest caveats attached.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ Nineteen-agent terminal consolidation of the charged-lepton Koide cone: four att
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The sharpest honest statement: cone forcing needs a genuinely new retained primitive beyond the observable-principle chain; the sole-axiom route is closed.
+- Extraction scope (triage compression; may reflect later context): Current retained Cl(3)/Z^3 surface; the observational-pin closure is a 'generous reading' with honest caveats attached.
 - Extraction red flags: Records that a lane advertised as a Koide derivation in fact closes only via observational pinning; residual S_2 species-to-slot ambiguity noted.
 - Supersession (as known at extraction): Terminal consolidation of the 2026-04-17 five-agent then nineteen-agent G5 attack; supersedes per-agent notes as the reviewer-facing synthesis while each remains canonical for its tactic.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Answers the codex 'hand-picked 3-of-4' objection with a choice-free chain: canonical hypercube tensor decomposition, three graph-shift operators S_i, and a derived quartic selector V_sel = Tr H^4 - (Tr H^2)^2/8 = 32 sum_{i<j} phi_i^2 phi_j^2 whose three minima sit at the axis vertices (spontaneous S_3 -> Z_2), forcing a unique su(2) and hence the su(3)+u(1) commutant; 158/158 PASS.
 
-Original verdict: CLOSURE of the codex SU(3) hold: the triplet subspace comes from a graph-selected criterion with no hand-picked choice.
-Scope: Z^3 hypercube taste space C^8 with Kawamoto-Smit generators; addresses Hold A of the 2026-04-12 publication retain audit.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ The choice-free SU(3) chain closing the codex 'hand-picked 3-of-4' hold — grap
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CLOSURE of the codex SU(3) hold: the triplet subspace comes from a graph-selected criterion with no hand-picked choice.
+- Extraction scope (triage compression; may reflect later context): Z^3 hypercube taste space C^8 with Kawamoto-Smit generators; addresses Hold A of the 2026-04-12 publication retain audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes SU3_COMMUTANT_NOTE by integrating the selector, and supplies the canonical weak-axis selector demanded by the blockers at idx 1896 and idx 2010; FAMILY TERMINAL for the SU(3) canonical-derivation chain.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Maps the residual after the strict-NN, Record/Born, source-measure, theta and AC_phi_lambda bridge stack: the remaining blockers are not one broad 'dynamics' word but typed operational targets (readout coupling, record extension, physical source, gauge sector measure, metric/observable), and the metric/observable route via the scale primitive is RULED OUT BY PRIMITIVE SCOPE since scale is units only.
 
-Original verdict: The post-axiom stack does not point to another minimal ontology axiom — it points to operational bridge laws.
-Scope: Bounded gap localization, not a terminal no-go; sets no audit verdict, registers no primitive, changes no axioms. TOTAL PASS=90 FAIL=0.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The typed-residual map: the post-axiom blockers are named operational selectors,
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The post-axiom stack does not point to another minimal ontology axiom — it points to operational bridge laws.
+- Extraction scope (triage compression; may reflect later context): Bounded gap localization, not a terminal no-go; sets no audit verdict, registers no primitive, changes no axioms. TOTAL PASS=90 FAIL=0.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Companion to the primitive-update recommendation (idx_pos 1154) and the post-stack hard-gate status map, whose typed gates it matches.
 

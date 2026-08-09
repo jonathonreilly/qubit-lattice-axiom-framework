@@ -18,10 +18,6 @@ required before any effective status.
 
 Hostile probe reproducing m_t = 169.516 GeV (-1.838%) and finding the headline overstated on two counts: it compares a running mass to the pole mass, and 'derived' was attached to the whole numerical chain when only the algebraic subchain is retained_bounded; a +/-2% move in alpha_bare swings m_t across [121, 235] GeV.
 
-Original verdict: GENUINE-PREDICTION-MODULO-NAMED-IMPORTS: not a fit of alpha_LM or sqrt(6) and not circular in the narrow sense, but the agreement is softer than -1.84% suggests and inherits about five open or conditional links.
-Scope: Four stress fronts plus a ledger census on the top-mass synthesis the owner asked to be broken.
-Escape conditions (negative claims): Resolves the apparent contradiction between alpha_LM being derived as algebra and open as transport, while showing m_t does not escape the magnitude gate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The hostile m_t probe: the flagship -1.84% agreement is overstated two ways — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): GENUINE-PREDICTION-MODULO-NAMED-IMPORTS: not a fit of alpha_LM or sqrt(6) and not circular in the narrow sense, but the agreement is softer than -1.84% suggests and inherits about five open or conditional links.
+- Extraction scope (triage compression; may reflect later context): Four stress fronts plus a ledger census on the top-mass synthesis the owner asked to be broken.
+- Extraction escape conditions (negative claims; triage compression): Resolves the apparent contradiction between alpha_LM being derived as algebra and open as transport, while showing m_t does not escape the magnitude gate.
 - Extraction red flags: Shows the flagship -1.84% agreement is scheme-naive and extremely sensitive to alpha_bare (a 2% shift spans 121-235 GeV).
 - Supersession (as known at extraction): Breaks the top-mass synthesis at the owner's request, downgrading its headline precision claim.
 

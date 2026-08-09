@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Both the full 3+1 plaquette and the one-plaquette block have strong-coupling slope exactly 1/18 at beta = 0, so any exact identity P_full(beta) = P_1plaq(c beta) on an interval forces c = 1 - ruling out the proposed lift constant c = (3/2)(2/sqrt3)^(1/4) = 1.554921974442116.
 
-Original verdict: The proposed constant-lift closure is exactly ruled out; what survives is the source identity, the exact Toeplitz/Bessel one-plaquette block, and the strong-coupling slope.
-Scope: Exact on a finite 3+1 Wilson lattice; the one-plaquette block is cross-checked against an independent Weyl-angle integral to machine precision (P_1plaq(6) = 0.422531739649983).
-Escape conditions (negative claims): The negative kills only CONSTANT lifts: it forces c = 1 for any identity valid on an interval, leaving non-constant (beta-dependent) lifts and other closure forms untouched.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact no-go: strong-coupling slope 1/18 on both objects forces c = 1 — every c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The proposed constant-lift closure is exactly ruled out; what survives is the source identity, the exact Toeplitz/Bessel one-plaquette block, and the strong-coupling slope.
+- Extraction scope (triage compression; may reflect later context): Exact on a finite 3+1 Wilson lattice; the one-plaquette block is cross-checked against an independent Weyl-angle integral to machine precision (P_1plaq(6) = 0.422531739649983).
+- Extraction escape conditions (negative claims; triage compression): The negative kills only CONSTANT lifts: it forces c = 1 for any identity valid on an interval, leaving non-constant (beta-dependent) lifts and other closure forms untouched.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 A 13-step chain from Cl(3) on Z^3 gives the dark-matter-to-baryon ratio R = (3/5)*(155/27)*S_vis = 3.444 * 1.592 = 5.483 against R_obs = 0.268/0.049 = 5.469, a 0.25% deviation. The exact backbone is the taste decomposition 1+3+3+1 (Burnside on the Z_2^3 action), visible sector T_1+T_2 = 6 gauge-charged states versus dark sector S_0+S_3 = 2 gauge singlets, mass-squared ratio 9/15 = 3/5 from Hamming weights, and Casimir channel weighting 155/27; alpha_s = 0.0923, S_vis = 1.592, and x_F = 25 are derived.
 
-Original verdict: The DM lane is BOUNDED, not closed, and this is not a zero-parameter prediction because g_bare is a bounded input.
-Scope: Step count is 4 EXACT, 7 DERIVED, 2 BOUNDED; two irreducible bounded inputs (g_bare = 1 from Cl(3) normalization, and spatial flatness k = 0) plus one observational input (eta = 6.12e-10, entering Omega_b only); the lattice spacing a = l_Pl is the unique physical scale with no continuum limit taken.
-Escape conditions (negative claims): The bounded steps name their escape conditions: g_bare = 1 is honestly bounded and the objection is conceded — the Cl(3) normalization makes g = 1 canonical but whether that is a constraint or a convention is foundational and it is NOT derived from a dynamical principle. The Stosszahlansatz objection is answered by two independent proofs on Z^3_L for the FREE massive field (spectral gap + Combes-Thomas + Wick, error < 1e-22000; direct matrix inversion, error < 1e-45000) with the caveat that the interacting-theory extension requires spectral gap persistence. k = 0 is observationally confirmed but not derived from the lattice, and is tied theoretically to S^3 compactification.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,9 @@ R = 5.483 vs 5.469 (0.25%) via the 13-step chain, with the honest boundary: NOT 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The DM lane is BOUNDED, not closed, and this is not a zero-parameter prediction because g_bare is a bounded input.
+- Extraction scope (triage compression; may reflect later context): Step count is 4 EXACT, 7 DERIVED, 2 BOUNDED; two irreducible bounded inputs (g_bare = 1 from Cl(3) normalization, and spatial flatness k = 0) plus one observational input (eta = 6.12e-10, entering Omega_b only); the lattice spacing a = l_Pl is the unique physical scale with no continuum limit taken.
+- Extraction escape conditions (negative claims; triage compression): The bounded steps name their escape conditions: g_bare = 1 is honestly bounded and the objection is conceded — the Cl(3) normalization makes g = 1 canonical but whether that is a constraint or a convention is foundational and it is NOT derived from a dynamical principle. The Stosszahlansatz objection is answered by two independent proofs on Z^3_L for the FREE massive field (spectral gap + Combes-Thomas + Wick, error < 1e-22000; direct matrix inversion, error < 1e-45000) with the caveat that the interacting-theory extension requires spectral gap persistence. k = 0 is observationally confirmed but not derived from the lattice, and is tied theoretically to S^3 compactification.
 - Extraction red flags: Explicit NOT-claimed list, including that the DM lane is not closed and g_bare = 1 is not derived from a dynamical principle; the Stosszahlansatz proof covers only the free theory.
 - Supersession (as known at extraction): Written as a response to a Codex objection map on three named objections (Boltzmann/Stosszahlansatz, radiation-era expansion bridge, g_bare normalization).
 

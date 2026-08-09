@@ -18,10 +18,6 @@ required before any effective status.
 
 The branch is claimed transport-complete from Cl(3) on Z^3 alone: exact source package (gamma = 1/2, E1 = sqrt(8/3), E2 = sqrt(8)/3), exact transfer coefficients, exact projection law with physical denominator K00 = 2, exact equilibrium conversion factors d_N = 0.003901498367656259 and s/n_gamma = 7.039433661546651, exact radiation expansion H_rad(T) = sqrt(4*pi^3*g_*/45)*T^2/M_Pl, and exact transport solve — giving epsilon_1/epsilon_DI = 0.9276209209197268, kappa_axiom = 0.004829545290766509, and eta/eta_obs = 0.188785929502.
 
-Original verdict: The theorem-native leptogenesis result undershoots observation by a factor ~5.297, which is the honest end state of the exact DM denominator lane on the refreshed branch.
-Scope: Transport side only; 'axiom' means only Cl(3) on Z^3.
-Escape conditions (negative claims): The remaining issue is explicitly stated as numerical disagreement rather than missing derivation — the old exact boundary on H_rad(T) is gone.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The leptogenesis closure claim: transport-complete from Cl(3) on Z^3 with a fact
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The theorem-native leptogenesis result undershoots observation by a factor ~5.297, which is the honest end state of the exact DM denominator lane on the refreshed branch.
+- Extraction scope (triage compression; may reflect later context): Transport side only; 'axiom' means only Cl(3) on Z^3.
+- Extraction escape conditions (negative claims; triage compression): The remaining issue is explicitly stated as numerical disagreement rather than missing derivation — the old exact boundary on H_rad(T) is gone.
 - Extraction red flags: A note titled FULL THEOREM CLOSURE whose own bottom line is a factor-5.297 undershoot against observation.
 - Supersession (as known at extraction): Removes the transport-side non-axiom boundary that earlier notes in this lane carried.
 

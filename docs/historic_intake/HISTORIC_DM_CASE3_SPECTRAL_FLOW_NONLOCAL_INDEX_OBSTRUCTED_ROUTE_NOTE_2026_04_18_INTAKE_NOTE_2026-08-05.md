@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Drops the locality assumption A2.3 and tests whether any functional (polynomial or not) built from the retained axiom on the active chart can be delta-odd: Z_3-invariance of the functional forces delta-evenness even for non-polynomial spectral content, and all five candidate invariants (including caustic-crossing count) come back dead under Z_3 symmetrization.
 
-Original verdict: DEAD: no axiom-native delta-odd non-polynomial invariant exists on the retained hw=1 bundle, and the missing primitive is named.
-Scope: Lane A of the triangulation with three mandatory robustness checks; the decisive test is the Z_3-symmetrized probe battery.
-Escape conditions (negative claims): The obstruction rests on axiom-native = Z_3-invariant; the note names the missing primitive that would evade it, and explicitly limits what it does not claim.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The strongest-form Case 3 impossibility: no axiom-native delta-odd invariant exi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): DEAD: no axiom-native delta-odd non-polynomial invariant exists on the retained hw=1 bundle, and the missing primitive is named.
+- Extraction scope (triage compression; may reflect later context): Lane A of the triangulation with three mandatory robustness checks; the decisive test is the Z_3-symmetrized probe battery.
+- Extraction escape conditions (negative claims; triage compression): The obstruction rests on axiom-native = Z_3-invariant; the note names the missing primitive that would evade it, and explicitly limits what it does not claim.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Extends the Case 3 impossibility beyond polynomial invariants by removing the locality assumption.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Removes Cycle 461's hard-coded 3D orbit profile and its 150 site/tree-specific preparation angles in favour of ONE reversible local six-neighbour rule from a central source and blank registers, with the same convention, denominator, precision, iteration count, clock coupling and threshold on train [-1,1]^3 and held [-2,2]^3. Final cold RESULT pass=11 fail=0 with 26 and 124 nonsource rows checked, maximum exact-rational row residuals 4.441e-16 (train) and 5.593e-8 (held), central defects 0.9999999999999991 and 0.9999999254226626, and 2592 and 12,000 local rule applications; run took 25.970 s at 207.89 MiB under frozen 30 s / 768 MiB caps.
 
-Original verdict: Broad gravity or no-go claim FAIL; no minimum-content theorem or axiom pressure survives N1-N8, and the admissible result is the finite local reversible construction with its remaining imports.
-Scope: Both E/G comparisons and both coarse/physical inverses exact, with work and boundary leakage, divisibility remainders, decoder mismatches, clock inverse failures and all-24 covariance failures all zero; the executable does NOT enumerate the elementary gates and is blank at word-block level.
-Escape conditions (negative claims): Explicitly avoids a prior recorded mistake: the lattice-greens ledger warns that finite fixed-parameter checks do not prove the required uniform infinite-distance asymptotic, and Cycle 463 does not repeat it; Cycle 459's local-relaxation reopening is exactly what this cycle executes, showing why the earlier boundary could not support a no-go.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Constructive retirement WITH a live numerical-integrity flag: replaces the hard-
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Broad gravity or no-go claim FAIL; no minimum-content theorem or axiom pressure survives N1-N8, and the admissible result is the finite local reversible construction with its remaining imports.
+- Extraction scope (triage compression; may reflect later context): Both E/G comparisons and both coarse/physical inverses exact, with work and boundary leakage, divisibility remainders, decoder mismatches, clock inverse failures and all-24 covariance failures all zero; the executable does NOT enumerate the elementary gates and is blank at word-block level.
+- Extraction escape conditions (negative claims; triage compression): Explicitly avoids a prior recorded mistake: the lattice-greens ledger warns that finite fixed-parameter checks do not prove the required uniform infinite-distance asymptotic, and Cycle 463 does not repeat it; Cycle 459's local-relaxation reopening is exactly what this cycle executes, showing why the earlier boundary could not support a no-go.
 - Extraction red flags: Held residuals degrade by eight orders of magnitude relative to train (5.59e-8 vs 4.44e-16), a gap carried forward through the whole downstream chain without explanation.
 - Supersession (as known at extraction): RETIRES Cycle 461's (idx 2824) supplied profile — the clearest supersession chain in the field lane: 461 supplied -> 463 derives locally -> 465 (2808) replaces host source placement -> 468 (2812) composes. Its held residual 5.593e-8 propagates unchanged into 465 and 468.
 

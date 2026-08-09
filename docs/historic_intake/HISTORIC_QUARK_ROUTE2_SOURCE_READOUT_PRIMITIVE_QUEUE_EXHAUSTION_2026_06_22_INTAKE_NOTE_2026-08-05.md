@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 FAMILY TERMINAL: tabulates eight route families (formal selector algebra, weakened bridge, candidate instantiation, finite-row shortcuts, formal J_CR/binary jets, source-measure bias, covariance-score shortcut, generic Fisher support) as all pruned, leaving exactly one open primitive; 82/82 PASS.
 
-Original verdict: The campaign queue is exhausted for non-duplicative source/readout routes; the remaining open primitive is the physical same-source selector realization theorem.
-Scope: The whole 2026-06-22 Route-2 source/readout campaign (Blocks ~84-149).
-Escape conditions (negative claims): Instructs that the listed routes not be reopened without a new primitive or a new repo surface, and names the next useful proof target exactly.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -94,6 +90,9 @@ Route-2 quark sweep TERMINAL: queue exhaustion — every member reduces to the s
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The campaign queue is exhausted for non-duplicative source/readout routes; the remaining open primitive is the physical same-source selector realization theorem.
+- Extraction scope (triage compression; may reflect later context): The whole 2026-06-22 Route-2 source/readout campaign (Blocks ~84-149).
+- Extraction escape conditions (negative claims; triage compression): Instructs that the listed routes not be reopened without a new primitive or a new repo surface, and names the next useful proof target exactly.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): FAMILY TERMINAL for the ~40-note Route-2 sweep (idx 1710-1753): every sibling no-go and support packet converges here.
 

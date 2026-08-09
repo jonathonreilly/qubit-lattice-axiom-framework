@@ -18,10 +18,6 @@ required before any effective status.
 
 If the Majorana mass matrix respects the full S_3 cubic symmetry while charged leptons break it diagonally, then M_nu = alpha I + beta(J - I) is diagonalized exactly by V_TBM as the simultaneous real eigenbasis of the C_3 symmetrizer and P_23, giving sin^2 theta_12 = 1/3, sin^2 theta_13 = 0 and sin^2 theta_23 = 1/2 — leaving the reactor angle 8.57 deg as the dominant gap.
 
-Original verdict: INTERMEDIATE — V_TBM is forced as the leading-order PMNS matrix but I5 is not closed, since theta_13 != 0 requires a Z_2-breaking mechanism.
-Scope: Leading order only, under the named ansatz that Majorana respects S_3 while Dirac does not, which is itself undreived; 35/35 symbolic checks.
-Escape conditions (negative claims): Consistency with the existing retained PMNS no-gos is checked and attributed to bank difference: those no-gos concern the Dirac single-Higgs probe bank while this uses a Majorana S_3-invariant mass bank, and at rho = I/3 the retained J_chi = 0 result is recovered.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ S_3-symmetric Majorana + diagonal charged-lepton breaking forces V_TBM exactly �
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): INTERMEDIATE — V_TBM is forced as the leading-order PMNS matrix but I5 is not closed, since theta_13 != 0 requires a Z_2-breaking mechanism.
+- Extraction scope (triage compression; may reflect later context): Leading order only, under the named ansatz that Majorana respects S_3 while Dirac does not, which is itself undreived; 35/35 symbolic checks.
+- Extraction escape conditions (negative claims; triage compression): Consistency with the existing retained PMNS no-gos is checked and attributed to bank difference: those no-gos concern the Dirac single-Higgs probe bank while this uses a Majorana S_3-invariant mass bank, and at rho = I/3 the retained J_chi = 0 result is recovered.
 - Extraction red flags: The load-bearing symmetry ansatz is admitted to be an ansatz, and the note escapes prior no-gos by changing the observable bank.
 - Supersession (as known at extraction): Leading-order base for the iteration-4 deformation conjecture; the S_3-vs-Dirac asymmetry ansatz is flagged as an iteration-5+ target that the loop never closes.
 

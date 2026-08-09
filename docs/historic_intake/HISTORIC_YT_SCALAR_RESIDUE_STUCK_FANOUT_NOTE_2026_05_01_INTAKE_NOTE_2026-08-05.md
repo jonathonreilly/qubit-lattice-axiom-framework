@@ -18,10 +18,6 @@ required before any effective status.
 
 Physics-loop stuck fan-out over five orthogonal frames after repeated no-gos: F1 source curvature is a fermion bubble (exact support); F2 the near-match Z_proxy=0.406810214752 vs 1/sqrt(6)=0.408248290464 at L=8,T=16,m=0.10 is unstable (L=24,T=48 gives 0.299432554066); F3 HS/RPA pole equation is conditional-support only; F4 common dressing open; F5 direct measurement open. Runner SUMMARY: PASS=6 FAIL=0.
 
-Original verdict: Open fan-out with no retention proposal; selected next route is F3 (derive or rule out a retained scalar-channel HS/RPA pole condition from A_min).
-Scope: Fan-out enumeration of routes past the scalar pole-residue / common-dressing blocker.
-Escape conditions (negative claims): Supply a scalar-channel coupling/pole theorem from A_min (route F3).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -80,6 +76,9 @@ The stuck fan-out route-selection terminal — including the kill of the temptin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Open fan-out with no retention proposal; selected next route is F3 (derive or rule out a retained scalar-channel HS/RPA pole condition from A_min).
+- Extraction scope (triage compression; may reflect later context): Fan-out enumeration of routes past the scalar pole-residue / common-dressing blocker.
+- Extraction escape conditions (negative claims; triage compression): Supply a scalar-channel coupling/pole theorem from A_min (route F3).
 - Extraction red flags: Kills a tempting numerical coincidence (Z_proxy ~ 1/sqrt(6)) that could otherwise be read as a derivation — useful negative record.
 - Supersession (as known at extraction): TERMINAL route-selection node for the scalar residue lane; consumes 2397-2414, 2416-2422 and names F3 as the successor.
 

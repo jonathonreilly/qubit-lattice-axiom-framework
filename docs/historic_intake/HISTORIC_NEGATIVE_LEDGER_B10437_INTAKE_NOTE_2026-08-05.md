@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Four prior boundaries plus one new: K_Y(kappa_Y) = 8/9 + kappa_Y/9 so color-blind scaling does not select kappa_Y = 0; direct one-Higgs scalar/taste insertion is color-singlet with singlet weight 1, not 0; the current EW Fierz/CMT/OZI packet underdetermines kappa_EW; and a traceless EW generator removes ordinary one-current loops but not the color Fierz singlet channel inside the connected contraction. New: the connected-source augmentation-ideal selector cannot be lifted to the current scalar signed-record / one-Higgs source packet.
 
-Original verdict: kappa_Y and kappa_EW remain unselected on every tested route.
-Scope: Selection of the kappa coefficients in the EW/Y_T coupling corrections.
-Escape conditions (negative claims): An additional theorem identifying the physical source as a connected color-matrix source.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Anti-overclaim boundary on the widely-used 8/9 color factor: K_Y(kappa_Y) = 8/9 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): kappa_Y and kappa_EW remain unselected on every tested route.
+- Extraction scope (triage compression; may reflect later context): Selection of the kappa coefficients in the EW/Y_T coupling corrections.
+- Extraction escape conditions (negative claims; triage compression): An additional theorem identifying the physical source as a connected color-matrix source.
 - Extraction red flags: The exposed formula K_Y = 8/9 + kappa_Y/9 shows the celebrated 8/9 is only the kappa_Y = 0 special case, and nothing yet selects kappa_Y = 0.
 - Supersession (as known at extraction): Cites landed docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md, docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md, docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md, docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md; new boundary shipped as docs/YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md.
 

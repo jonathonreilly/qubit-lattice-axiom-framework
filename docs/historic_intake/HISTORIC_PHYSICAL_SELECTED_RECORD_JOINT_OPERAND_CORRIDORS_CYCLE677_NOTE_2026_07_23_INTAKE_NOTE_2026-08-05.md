@@ -18,10 +18,6 @@ required before any effective status.
 
 CLOSES the exact Cycle-670 residual: enumerates two simple coordinate paths for each of 8821 active route-gate microphases (518 Fredkin words of length 17 plus one CCX of length 15), yielding 17,642 operand paths all on fine-NN bonds that avoid the head anchor and all 17 active-cell phase roles. The decisive repair is ARBITRARY-CARRIER CATALYTIC ROUTING: a path need not be blank, since with S the opening SWAP permutation and U the token-gated action the call word S^-1 U S is an OPERATOR IDENTITY for arbitrary entangled carrier states, not merely a computational-basis trace. Gives E*G_selected = G_physical*E with exact residual ZERO on the declared selected-record code.
 
-Original verdict: Not a general RLE decoder, all-face compiler, autonomous blank/genesis law or full physical E; microphase and access-subphase are controller state, not physical time, rate, energy or source, and a selected-record theorem is not a physical-site compiler for the coarse CAR cell.
-Scope: Completion explicitly excludes a host-selected path, blank-only scout, local kernel without operand access, general decoder, all-face result or full E; corridor vacuum is NOT supplied or required.
-Escape conditions (negative claims): Five normalized routes recorded; blank-only misses are route-specific implementation evidence ONLY and not a no-go, minimum-content result, shared obstruction or axiom-pressure argument. Axiom pressure none.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ TERMINAL closing the Cycle-670 residual: enumerates two simple coordinate paths 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not a general RLE decoder, all-face compiler, autonomous blank/genesis law or full physical E; microphase and access-subphase are controller state, not physical time, rate, energy or source, and a selected-record theorem is not a physical-site compiler for the coarse CAR cell.
+- Extraction scope (triage compression; may reflect later context): Completion explicitly excludes a host-selected path, blank-only scout, local kernel without operand access, general decoder, all-face result or full E; corridor vacuum is NOT supplied or required.
+- Extraction escape conditions (negative claims; triage compression): Five normalized routes recorded; blank-only misses are route-specific implementation evidence ONLY and not a no-go, minimum-content result, shared obstruction or axiom-pressure argument. Axiom pressure none.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Retires Cycle 670's (idx 3022) named locality residual by a new constructive mechanism, matching it at the cited source line. Its closing instruction — 'Do not generalize the RLE grammar or all-face scope by implication' — is the tightest scope discipline in the sweep.
 

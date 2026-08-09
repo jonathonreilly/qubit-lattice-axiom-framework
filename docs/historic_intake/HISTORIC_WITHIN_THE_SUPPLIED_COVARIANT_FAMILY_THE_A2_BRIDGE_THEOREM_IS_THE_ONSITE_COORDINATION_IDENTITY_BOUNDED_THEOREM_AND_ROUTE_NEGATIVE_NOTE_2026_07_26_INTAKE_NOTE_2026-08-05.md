@@ -20,10 +20,6 @@ required before any effective status.
 
 Inside the supplied range-1 proper-cubic covariant family L = A I + B Delta, writing H(mu) = mu I - A_adj = (mu - 6) I - Delta exactly gives B = -1 and A = mu - 6 - E, so A2 as written (G_0 = H^{-1}, E = 0, graph-Laplacian form mu = 6) is exactly A = 0 — i.e. the missing bridge theorem is 'derive mu = 6', that the on-site term equals the coordination number, equivalently that H annihilates the uniform state. But A is observable (min spec(L) = A, band [A, A+12], Green's function 1/(A + k^2), so A > 0 screens the force at range 1/sqrt(A)) while mu is not (H -> H + cI shifts every eigenvalue by c, leaves all 63 gaps identical and the eigenbasis unchanged).
 
-Original verdict: The route as posed cannot close: A2 would have to derive observable content (the force range) from a quantity the framework treats as redundant everywhere else, which is why five previously-checked mechanisms found nothing — none fixes an energy origin.
-Scope: Exact rational operator algebra and exact torus spectra inside the supplied covariant family; does not supply A2's bridge or change gravity_full_self_consistency_note's status.
-Escape conditions (negative claims): Escape conditions are named and not adopted (row R6 isolates what would force mu = 6); the note also flags that writing H = -Delta_lat assumes the very identity the bridge theorem must prove, since the bare hopping Hamiltonian is -A_adj with mu = 0, A = -6.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The missing-bridge restatement on the critical row as one arithmetic identity �
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The route as posed cannot close: A2 would have to derive observable content (the force range) from a quantity the framework treats as redundant everywhere else, which is why five previously-checked mechanisms found nothing — none fixes an energy origin.
+- Extraction scope (triage compression; may reflect later context): Exact rational operator algebra and exact torus spectra inside the supplied covariant family; does not supply A2's bridge or change gravity_full_self_consistency_note's status.
+- Extraction escape conditions (negative claims; triage compression): Escape conditions are named and not adopted (row R6 isolates what would force mu = 6); the note also flags that writing H = -Delta_lat assumes the very identity the bridge theorem must prove, since the bare hopping Hamiltonian is -A_adj with mu = 0, A = -6.
 - Extraction red flags: Identifies that a widely used convention (H = -Delta_lat) silently assumes the unproven bridge, so downstream gravity rows inherit an assumption they present as a form choice.
 - Supersession (as known at extraction): Restates the missing_bridge_theorem on the critical root row gravity_full_self_consistency_note (deps [], 773 transitive descendants) from an operator identity to one arithmetic identity on one diagonal entry.
 

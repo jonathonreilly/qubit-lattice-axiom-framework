@@ -18,10 +18,6 @@ required before any effective status.
 
 Freezes the live claim as the conjunction of six exact pieces (reduced-domain exhaustion, analytic stationary classification, action phase reduction, anchor-free branch recovery with gap Delta S = 0.001812373907, selector coincidence, real-slice intrinsic-class certificate): the physical branch is the unique low-action / maximum-dominance-gap / minimum-spill branch on the exact reduced stationary set; all six runners pass.
 
-Original verdict: Materially stronger than the earlier 'support-only' wording, with the residual issue being certification style rather than unresolved PMNS branch physics.
-Scope: Branch-local on the exact reduced N_e domain; does not touch the atlas.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,8 @@ The April PMNS/leptogenesis selector chain's TERMINAL authority: six exact piece
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Materially stronger than the earlier 'support-only' wording, with the residual issue being certification style rather than unresolved PMNS branch physics.
+- Extraction scope (triage compression; may reflect later context): Branch-local on the exact reduced N_e domain; does not touch the atlas.
 - Extraction red flags: Explicitly does not claim an observation-free normalization law removing eta/eta_obs = 1, nor a validated interval-arithmetic proof over the whole closure manifold.
 - Supersession (as known at extraction): Self-describes as the APRIL TERMINAL/authority note for this sub-chain, superseding older 'support' / 'not yet promoted' wording; its positive selector claim is later negated by the post-reset no-go DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION...NO_GO_NOTE_2026-07-12 (idx 370) and demoted to a conditional calculator (idx 376).
 

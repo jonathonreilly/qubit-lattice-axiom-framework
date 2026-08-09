@@ -18,10 +18,6 @@ required before any effective status.
 
 Declares itself the single authority for the y_t gate: y_t = g_s/sqrt(6) and Z_Y = Z_g at every blocking level are exact, Cl(3) survives blocking, Feshbach projection is verified on the actual staggered Hamiltonian, and V-to-MSbar is computed at 1-loop — but the framework's alpha_V(M_Pl) ~ 0.15 differs from the SM-run alpha_s(M_Pl) ~ 0.019 by 8x, and integrating the continuous 2-loop beta downward gives m_t = 181.6 GeV, 5.0% above 173.0, with lattice step-scaling showing the beta function suppressed ~30x relative to perturbative QCD at L = 4..12.
 
-Original verdict: The lane is NOT closed — the 8x mismatch is real and unresolved and the non-perturbative crossover is bounded, not derived — but it is stronger than before; minimum acceptable status is BOUNDED with one imported input.
-Scope: Gate assessment with derived, bounded and not-derived inputs itemized.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The self-declared y_t single-authority meta: exact algebra + NOT-closed verdict 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The lane is NOT closed — the 8x mismatch is real and unresolved and the non-perturbative crossover is bounded, not derived — but it is stronger than before; minimum acceptable status is BOUNDED with one imported input.
+- Extraction scope (triage compression; may reflect later context): Gate assessment with derived, bounded and not-derived inputs itemized.
 - Extraction red flags: Quotes alpha_V(M_Pl) ~ 0.15 where sibling notes in the same lane use 0.092-0.093, and its m_t = 181.6 GeV conflicts with the 171.0 GeV that idx 2142 uses to declare the gate closed on the same date.
 - Supersession (as known at extraction): Self-declared single authority for the y_t gate; its m_t = 181.6 GeV supersedes the 184 GeV raw-plaquette number but sits above the 171.0 GeV of the boundary-resolution note (idx 2142), which the same lane calls closed.
 

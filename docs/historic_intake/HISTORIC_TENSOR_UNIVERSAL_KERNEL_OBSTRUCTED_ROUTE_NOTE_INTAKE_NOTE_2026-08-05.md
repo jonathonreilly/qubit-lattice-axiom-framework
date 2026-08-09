@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 No family-universal positive K_tensor exists on the audited class: fitted kernels differ by 2.621449e-01, drive coefficients by 7.180115e-02, and required completion amplitudes by 8.969562e-01, with the symmetric-average kernel still leaving a 9.242957e-01 completion mismatch, despite excellent local additivity (errors 3.059e-08 and 8.023e-18 on O_h).
 
-Original verdict: Family-local rank-two completion yes, family-universal positive K_tensor no, scalar-only completion still ruled out; universality requires an additional selector, coarse-graining, or microscopic source law.
-Scope: Two audited restricted source families with the rank-two tensor boundary action ansatz.
-Escape conditions (negative claims): Three open escapes: a selector principle making the kernel universal, its microscopic derivation, and full nonlinear GR generally.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ No family-universal positive K_tensor on the audited class (kernels differ 26%) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Family-local rank-two completion yes, family-universal positive K_tensor no, scalar-only completion still ruled out; universality requires an additional selector, coarse-graining, or microscopic source law.
+- Extraction scope (triage compression; may reflect later context): Two audited restricted source families with the rank-two tensor boundary action ansatz.
+- Extraction escape conditions (negative claims; triage compression): Three open escapes: a selector principle making the kernel universal, its microscopic derivation, and full nonlinear GR generally.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The failure this note records is what motivates the selector-normalized route (idx 2040) and the transfer law (idx 2041); FAMILY TERMINAL for the universal-kernel question.
 

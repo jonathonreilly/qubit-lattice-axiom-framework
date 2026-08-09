@@ -18,10 +18,6 @@ required before any effective status.
 
 Allowing the Z_3-breaking parameter eps in M_R = [[A,0,0],[0,eps,B],[0,B,eps]] to be COMPLEX — as the Cl(3) algebra structure in the Z_3 eigenbasis requires — resolves both standing tensions: a phase phi ~ 50 degrees gives delta_CP ~ -103 degrees (vs the experimental hint -90) and Sum m_i ~ 122 meV (vs the previous 131 meV against a 120 meV DESI+CMB bound). The CP phase is traced to the imaginary Pauli matrix sigma_2 in Cl(3).
 
-Original verdict: Numerically verified; the Jarlskog |J| ~ 6.5e-3 is about 5x below the maximum allowed ~0.033, which the note flags as either a prediction or a limitation of the minimal model.
-Scope: Both tensions resolved, but the mass-sum fix is marginal — 122 meV is 1.3% above the bound, argued to be within its ~10% systematic uncertainty.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Complex-eps resolution of both standing tensions with |J| ~ 6.5e-3 predicted —
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Numerically verified; the Jarlskog |J| ~ 6.5e-3 is about 5x below the maximum allowed ~0.033, which the note flags as either a prediction or a limitation of the minimal model.
+- Extraction scope (triage compression; may reflect later context): Both tensions resolved, but the mass-sum fix is marginal — 122 meV is 1.3% above the bound, argued to be within its ~10% systematic uncertainty.
 - Extraction red flags: The mass-sum resolution is marginal (still above the cosmological bound, rescued by claimed systematics) and the note leaves ~2 meV excess to be absorbed by RG running, higher-order seesaw corrections or thresholds.
 - Supersession (as known at extraction): Repairs two tensions carried by the earlier real-eps analysis in NEUTRINO_MASSES_NOTE.
 

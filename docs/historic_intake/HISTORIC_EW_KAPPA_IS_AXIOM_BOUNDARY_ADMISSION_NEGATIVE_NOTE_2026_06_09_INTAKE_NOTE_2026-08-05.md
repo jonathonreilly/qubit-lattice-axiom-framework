@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 kappa_EW - the inter-sector weight in the color readout Pi_phys = C + kappa_EW S carrying the EW absolute normalization (sqrt(9/8) on g_1,g_2 and sqrt(8/9) on y_t) - is a weighting, and MINIMAL_AXIOMS_2026-06-05 states verbatim that a record supplies no 'weighting' and the Quantum axiom no 'physical observable bridge', so it is doubly axiom-disclaimed and not derivable from {Lattice, Quantum, Record}. PASS=10 FAIL=0, zero PDG inputs.
 
-Original verdict: The framework is internally consistent and the axioms have no defect, but kappa_EW = 0 is an admitted input - a candidate third Tier-A admission alongside AC_phi_lambda and theta, currently absent from the registry.
-Scope: The central-sector partition delivers the channel COUNT (the 8/9 cardinality fraction) but not the weight; sin^2(theta_W) is kappa_EW-invariant and stays unconditional.
-Escape conditions (negative claims): The negative is structural rather than route-contingent: deriving kappa_EW would require the axioms to supply exactly the content they enumerate as not-supplied. The escape is therefore not a better derivation route but registry recognition of a new admitted input, or new axiom/primitive structure that supplies a weighting rule.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ kappa_EW is an axiom-boundary ADMITTED INPUT — the structural common cause beh
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The framework is internally consistent and the axioms have no defect, but kappa_EW = 0 is an admitted input - a candidate third Tier-A admission alongside AC_phi_lambda and theta, currently absent from the registry.
+- Extraction scope (triage compression; may reflect later context): The central-sector partition delivers the channel COUNT (the 8/9 cardinality fraction) but not the weight; sin^2(theta_W) is kappa_EW-invariant and stays unconditional.
+- Extraction escape conditions (negative claims; triage compression): The negative is structural rather than route-contingent: deriving kappa_EW would require the axioms to supply exactly the content they enumerate as not-supplied. The escape is therefore not a better derivation route but registry recognition of a new admitted input, or new axiom/primitive structure that supplies a weighting rule.
 - Extraction red flags: Explicitly does not claim kappa_EW = 0 (the data-preferred value) nor kappa_EW = 1; the framework's EW absolute-normalization precision is conditional on an unregistered admission.
 - Supersession (as known at extraction): Explains the common cause behind a whole portfolio of route-specific no-gos (CMT, OZI, tracelessness, Monte Carlo, color-blindness, the Route-2 c_TE = -R_conn bridge, and the Record register-not-read route).
 

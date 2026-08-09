@@ -20,10 +20,6 @@ required before any effective status.
 
 The shape theorem: the second-order return is the affine species-diagonal map diag(Sigma) = (w_O0, w_a, w_b) with the third T_2 state unreachable and irrelevant; of four correction candidates, Higgs fluctuations give a purely global scalar shift |eps|^2 I_3 (std(diag) = 0 to machine precision), iterated returns are exactly I_3 at every order, and only unconstrained per-T_2 weights can match anything - i.e. they match any target.
 
-Original verdict: The retained Gamma_1 algebra determines the SHAPE of the charged-lepton operator but not its values - the weights are free.
-Scope: Exact symbolic construction on the retained C^16 carrier; Correction-C is underdetermined by construction rather than predictive.
-Escape conditions (negative claims): Explicitly does not claim Correction-C is the only route to G5 closure outside the retained surface; the underdetermination is a statement that the retained framework fixes the map's form, leaving the weights to be supplied by something else (which the sibling observational-pin note then does).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The G5 shape theorem: the retained Gamma_1 algebra determines the operator's SHA
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The retained Gamma_1 algebra determines the SHAPE of the charged-lepton operator but not its values - the weights are free.
+- Extraction scope (triage compression; may reflect later context): Exact symbolic construction on the retained C^16 carrier; Correction-C is underdetermined by construction rather than predictive.
+- Extraction escape conditions (negative claims; triage compression): Explicitly does not claim Correction-C is the only route to G5 closure outside the retained surface; the underdetermination is a statement that the retained framework fixes the map's form, leaving the weights to be supplied by something else (which the sibling observational-pin note then does).
 - Extraction red flags: The one surviving candidate is underdetermined - unconstrained weights match any observed triple, so it carries no predictive content.
 - Supersession (as known at extraction): Operationalizes post-G1-closure open question 1 from the G5 status note; its shape theorem is the input consumed by G5_OBSERVATIONAL_PIN_CLOSURE (idx 548).
 

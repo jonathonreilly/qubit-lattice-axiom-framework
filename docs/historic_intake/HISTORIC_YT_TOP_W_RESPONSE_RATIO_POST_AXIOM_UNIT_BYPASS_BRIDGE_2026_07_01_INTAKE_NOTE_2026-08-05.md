@@ -18,10 +18,6 @@ required before any effective status.
 
 Finite theorem: on a supplied same-source neutral EW radial surface with M_t(h) = y_33 v(h)/sqrt(2), M_W(h) = g_2 v(h)/2 and v'(0) != 0, the response ratio removes both the absolute source unit and the common mass/output unit, with explicit witness R_topW = sqrt(2)/(g_2 sqrt(6)) at y_33 = 1/sqrt(6).
 
-Original verdict: Bounded composition theorem — two unit selectors cancel, isolating the top coefficient freedom as the live numerator blocker; no retained Y_T closure.
-Scope: Unit-blocker removal in the strict Y_T top/W response-ratio route; audit-lane status only.
-Escape conditions (negative claims): Supply W_same_source_topW_response (top and W pole responses differentiated on the same physical source surface with FV/IR/contact-subtraction controls) and W_top_coefficient_or_direct_response (derive the top coefficient on the selected one-Higgs up-type carrier, or a direct top pole-response certificate).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Finite composition theorem: the top/W response ratio removes both unit selectors
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Bounded composition theorem — two unit selectors cancel, isolating the top coefficient freedom as the live numerator blocker; no retained Y_T closure.
+- Extraction scope (triage compression; may reflect later context): Unit-blocker removal in the strict Y_T top/W response-ratio route; audit-lane status only.
+- Extraction escape conditions (negative claims; triage compression): Supply W_same_source_topW_response (top and W pole responses differentiated on the same physical source surface with FV/IR/contact-subtraction controls) and W_top_coefficient_or_direct_response (derive the top coefficient on the selected one-Higgs up-type carrier, or a direct top pole-response certificate).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Post-reset composition over SOURCE_OBSERVABLE_RESPONSE_RATIO_DOUBLE_UNIT_NORMAL_FORM_2026-07-01, the RN reduction bridge 2453, and YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25; it retires 'missing absolute source unit' and 'missing common mass unit' as independent blockers.
 

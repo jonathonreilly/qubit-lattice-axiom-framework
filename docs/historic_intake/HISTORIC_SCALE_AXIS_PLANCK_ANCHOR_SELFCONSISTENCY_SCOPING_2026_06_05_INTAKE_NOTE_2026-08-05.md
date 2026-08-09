@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 By Buckingham-Pi the dimensionless Cl(3)-on-Z^3 core cannot emit a second independent dimensionful number, so both candidate routes (G from lattice dynamics matched to G_observed, and the Bekenstein-Hawking horizon-density match) reduce to importing exactly one dimensionful fact; 16 PASS / 0 FAIL.
 
-Original verdict: OPEN-SELF-CONSISTENCY: a = l_P is assumed and anchored, not derived, verifying rather than changing the existing posture.
-Scope: Two candidate closure routes for a = l_P; the entire forward gravity chain is unaudited on origin/main.
-Escape conditions (negative claims): Stated as an open self-consistency rather than an impossibility claim; the closure a/l_P = 1 remains available as a conditional theorem on the open gravity lane.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Buckingham-Pi no-go: the dimensionless core cannot emit a second independent dim
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): OPEN-SELF-CONSISTENCY: a = l_P is assumed and anchored, not derived, verifying rather than changing the existing posture.
+- Extraction scope (triage compression; may reflect later context): Two candidate closure routes for a = l_P; the entire forward gravity chain is unaudited on origin/main.
+- Extraction escape conditions (negative claims; triage compression): Stated as an open self-consistency rather than an impossibility claim; the closure a/l_P = 1 remains available as a conditional theorem on the open gravity lane.
 - Extraction red flags: Confirms that the framework's single dimensionful anchor is imported, which conditions every absolute-scale claim downstream.
 - Supersession (as known at extraction): Verifies the posture of the scale-reference primitive note rather than changing it.
 

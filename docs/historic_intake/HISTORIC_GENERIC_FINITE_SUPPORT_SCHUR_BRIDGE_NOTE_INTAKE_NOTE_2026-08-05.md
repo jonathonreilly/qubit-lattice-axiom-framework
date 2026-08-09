@@ -18,10 +18,6 @@ required before any effective status.
 
 Via the exact Woodbury/Dyson identity G_W P = G_0 P (I - W G_S)^-1, any finite support set with any PSD support operator yields an exterior field that is a single source-renormalized harmonic object, so the static conformal constraint pair H_0 psi = 2 pi psi^5 rho and its chi counterpart, plus stationarity of the Schur boundary action at the shell trace, hold for generic non-star supports, not just the O_h star benchmark.
 
-Original verdict: The exact bridge package is no longer star-specific; the live gap is extension beyond the static conformal bridge and then to broader noncompact support classes.
-Scope: Finite support inside the current Dirichlet box on the current static conformal bridge surface.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Generic finite-support Schur bridge: any PSD support yields one renormalized har
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The exact bridge package is no longer star-specific; the live gap is extension beyond the static conformal bridge and then to broader noncompact support classes.
+- Extraction scope (triage compression; may reflect later context): Finite support inside the current Dirichlet box on the current static conformal bridge surface.
 - Extraction red flags: Lists three things it explicitly does not close: beyond the static conformal bridge, noncompact/long-range supports, and fully general nonlinear GR.
 - Supersession (as known at extraction): Widens the earlier star-supported finite-rank bridge result; immediate predecessor to the local-bridge uniqueness note (idx 635), which closes the companion nonlinear escape hatch on the same class.
 

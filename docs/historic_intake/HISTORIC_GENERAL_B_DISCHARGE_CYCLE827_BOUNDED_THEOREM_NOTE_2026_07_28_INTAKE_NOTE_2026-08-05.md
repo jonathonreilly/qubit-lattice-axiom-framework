@@ -18,10 +18,6 @@ required before any effective status.
 
 The discharge property is derived as 13 exact identities over Z[b, C, i, u, s, p] for all b, after the checker REFUTED the first assembly's premise accounting (it load-bearingly assumed the Cycle-823 b = 3 base and a live-p bound, neither declared, with countermodel X(131) exhibiting the load); v2 proves the live-p bound as a lemma from b-free mapper dynamics and declares the base as a ninth premise, with 9/9 references machine-audited.
 
-Original verdict: The anchors lane closes at general b - the six exhaustive rings through 2.32T steps become independent confirmations of a theorem that no longer needs them.
-Scope: Scoped to the nine-entry premise ledger; b values violating the eight Cycle-817 premises are outside the theorem by construction.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ General-b discharge as 13 exact identities — after the checker refuted the fir
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The anchors lane closes at general b - the six exhaustive rings through 2.32T steps become independent confirmations of a theorem that no longer needs them.
+- Extraction scope (triage compression; may reflect later context): Scoped to the nine-entry premise ledger; b values violating the eight Cycle-817 premises are outside the theorem by construction.
 - Extraction red flags: Records that the first assembly hid two load-bearing premises and was caught by the checker's premise-accounting attack.
 - Supersession (as known at extraction): Discharges the hypothesis left conditional by Cycle 817 (idx 603) beyond the b = 3..10 range of Cycle 823.
 

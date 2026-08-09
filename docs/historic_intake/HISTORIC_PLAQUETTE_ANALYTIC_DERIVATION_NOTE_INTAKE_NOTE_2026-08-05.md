@@ -18,10 +18,6 @@ required before any effective status.
 
 On the 3+1 scalar-bridge surface <P>(beta) = <P>_1plaq(beta_eff) with beta_eff = beta (3/2)(2/sqrt3)^(1/4), built from local Wilson source-response, the scalar 3+1 temporal ratio A_inf/A_2 = 2/sqrt3, the four-link map P(u_0 V) = u_0^4 P(V) and the incidence factor Gamma_coord = 6/4 = 3/2. At beta = 6 this gives <P> = 0.5935307..., differing from the historical same-surface 0.5934 in the fifth decimal.
 
-Original verdict: The theorem gap is closed on the chosen route with qualifiers; not promoted as a fully universal analytic derivation.
-Scope: Closed on the chosen 3+1 scalar-bridge route only; no uniqueness claim for that route, and repo-wide numeric migration from 0.5934 is pending.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Bridge theorem that RETRACTS a landed negative and leaves a repo-wide inconsiste
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The theorem gap is closed on the chosen route with qualifiers; not promoted as a fully universal analytic derivation.
+- Extraction scope (triage compression; may reflect later context): Closed on the chosen 3+1 scalar-bridge route only; no uniqueness claim for that route, and repo-wide numeric migration from 0.5934 is pending.
 - Extraction red flags: Retracts a previously landed negative result and leaves a known repo-wide inconsistency: downstream consumers still quote 0.5934 while the bridge gives 0.59353.
 - Supersession (as known at extraction): Explicitly RETRACTS the earlier main-derived negative note N1 ('<P> not analytically derivable'); defers to GAUGE_VACUUM_PLAQUETTE_BRIDGE_THEOREM_NOTE as authority.
 

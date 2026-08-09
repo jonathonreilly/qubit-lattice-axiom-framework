@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 No single Cl(3) bivector rotation with a clean (Q, delta) angle and a retained axis maps V_TBM to V_conj: the exact rotation has angle 0.1682 rad (best candidate sqrt(Q) delta = 0.1814, 7.88% off) and axis (-0.424, 0.753, -0.503) (best retained direction (0,1,-1)/sqrt2 at overlap 0.888), and a 90-candidate grid scan gets no closer than distance 0.109 against the 0.238 baseline.
 
-Original verdict: Theorem-grade negative — the iteration-4 mechanism must be genuinely composite, with the mu-tau anti-diagonal as the dominant component.
-Scope: Rules out single-bivector-rotation mechanisms only; 10 angle candidates and 9 axis candidates tested.
-Escape conditions (negative claims): The negative is confined to single rotations with retained axes and (Q, delta) angles; composite (two or more rotation) mechanisms remain open and are the named next target.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Theorem-grade negative: no single Cl(3) bivector rotation with clean (Q, delta) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Theorem-grade negative — the iteration-4 mechanism must be genuinely composite, with the mu-tau anti-diagonal as the dominant component.
+- Extraction scope (triage compression; may reflect later context): Rules out single-bivector-rotation mechanisms only; 10 angle candidates and 9 axis candidates tested.
+- Extraction escape conditions (negative claims; triage compression): The negative is confined to single rotations with retained axes and (Q, delta) angles; composite (two or more rotation) mechanisms remain open and are the named next target.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Its conclusion is briefly overturned by iteration 11 and then restored by the iteration-12 revision.
 

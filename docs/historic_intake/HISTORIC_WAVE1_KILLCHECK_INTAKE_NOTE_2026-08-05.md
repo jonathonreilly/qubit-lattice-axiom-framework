@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Verdict DEAD ON ARRIVAL — not because the 2026-07-04 no-go forecloses it (that door is real, verbatim, and unique in the repo, and the campaign read it correctly) but because the route was already executed end-to-end on this exact carrier seven days earlier producing BOTH horns without selecting either, because the quantity it proposes to compute is proved r-neutral by exact computed algebra, and because the campaign's four-way 'equivalently' chain contradicts landed content at two of its three joints.
 
-Original verdict: The door is SYMMETRIC between the horns — the no-go's N6 table preserves an action-native CAR/Berezin route to the complex first-power grain AND a real/Majorana action route to the real determinant or Pfaffian grain, even-handedly — so reading it as a door to count-once is a selection the source does not make.
-Scope: Exhaustive search of origin/main docs/ and scripts/ at 02f9359281; fourteen landed documents and five runners bear directly.
-Escape conditions (negative claims): A short correction note (not a construction wave) is recommended to fix CAMPAIGN.md's equivalence chain before any further wave.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Campaign kill-check verdict DEAD ON ARRIVAL - not because the 2026-07-04 no-go f
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The door is SYMMETRIC between the horns — the no-go's N6 table preserves an action-native CAR/Berezin route to the complex first-power grain AND a real/Majorana action route to the real determinant or Pfaffian grain, even-handedly — so reading it as a door to count-once is a selection the source does not make.
+- Extraction scope (triage compression; may reflect later context): Exhaustive search of origin/main docs/ and scripts/ at 02f9359281; fourteen landed documents and five runners bear directly.
+- Extraction escape conditions (negative claims; triage compression): A short correction note (not a construction wave) is recommended to fix CAMPAIGN.md's equivalence chain before any further wave.
 - Extraction red flags: Self-flags three limitations: no runner was executed so all PASS totals are quoted not reproduced; section 4.3's 'stronger form' is the worker's own claim, not landed; and docs/work_history plus ~11.5k non-docs tracked files were not exhaustively searched. Also flags an earlier no-go note that reached r = 1 'the wrong way'.
 - Supersession (as known at extraction): Tabulates ledger status for 14 notes; only ONE is retained-grade (docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md, retained/audited_clean) and the rest are unaudited — the kill-check flags this up front rather than smoothing it.
 

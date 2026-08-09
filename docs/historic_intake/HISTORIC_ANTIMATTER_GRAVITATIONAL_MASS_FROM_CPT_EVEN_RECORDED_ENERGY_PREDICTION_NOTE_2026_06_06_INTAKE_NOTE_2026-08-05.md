@@ -18,10 +18,6 @@ required before any effective status.
 
 Combining the EP bounded support (gravitational mass = the recorded energy) with the CPT particle-antiparticle mass equality (the recorded energy is CPT-even) predicts m_grav(antimatter) = m_grav(matter), hence g_anti = g — antimatter falls down, no antigravity.
 
-Original verdict: A falsifiable prediction, not a closure — the new content is the combination, which neither parent states.
-Scope: Conditional on the EP bounded support (itself conditional on #2988 and BROAD_GRAVITY) and on CPT mass-equality; ALPHA-g 2023 is a comparator only, never a derivation input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean falsifiable combination prediction: antimatter gravitational mass equals m
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A falsifiable prediction, not a closure — the new content is the combination, which neither parent states.
+- Extraction scope (triage compression; may reflect later context): Conditional on the EP bounded support (itself conditional on #2988 and BROAD_GRAVITY) and on CPT mass-equality; ALPHA-g 2023 is a comparator only, never a derivation input.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The determinant phase-erasure algebra is sharp inside its supplied interface (additivity over multiplicative determinant union forces a homomorphism, K/CPT orbit constancy makes its phase even, additivity makes it odd, so the phase is zero), but the sentence 'the mass determinant datum is the physical Record scalar readout' is in neither the axioms nor the realized-state primitive: Record determines a scalar readout from record content once a record exists and does not pick the determinant datum, central-sector decomposition, K/CPT predicate, or physical-observable bridge.
 
-Original verdict: W2 is not forced by the current axiom/primitive surface, so the determinant algebra cannot yet act as a theta-retirement authority.
-Scope: Hard stretch against deriving W2 physical registrability from updated axioms, approved primitives, and the determinant/reality stack; no future W2 theorem or owner ratification is ruled out.
-Escape conditions (negative claims): A future W2 theorem, an action-level determinant-entry theorem covering the physical surface, an audit closure, or an owner-ratified primitive supplying readout-context selection — all explicitly left open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ W2 not forced: the determinant phase-erasure algebra is sharp inside its interfa
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): W2 is not forced by the current axiom/primitive surface, so the determinant algebra cannot yet act as a theta-retirement authority.
+- Extraction scope (triage compression; may reflect later context): Hard stretch against deriving W2 physical registrability from updated axioms, approved primitives, and the determinant/reality stack; no future W2 theorem or owner ratification is ruled out.
+- Extraction escape conditions (negative claims; triage compression): A future W2 theorem, an action-level determinant-entry theorem covering the physical surface, an audit closure, or an owner-ratified primitive supplying readout-context selection — all explicitly left open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Block25-tier result; the first of the two premises quarantined by the June determinant-readout exhaustion bridge, complementary to the action-entry split at idx 2061.
 

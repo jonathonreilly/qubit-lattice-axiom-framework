@@ -18,10 +18,6 @@ required before any effective status.
 
 Records that K/CPT orbit invariance implying phase erasure is FALSE (cos(arg z) is K-invariant yet phase-dependent — evenness is necessary not sufficient); that RP half-Cauchy-Schwarz CANNOT forbid CP-odd imaginary additions of topological-charge type (theta-anti-invariance cancels the phase in every reflection-Hermitian observable); that the standard det-sign pi packaging delta = pi*L = 2pi/9 is DEAD because it predicts m_tau off by ORDERS OF MAGNITUDE; that PR #3428's staggered-gate closure assembly was REJECTED/STRIPPED BY OWNER because a live status inventory plus shallow scheme-core checks do not retire a Tier-A admission; and that a broad 'det_C not forced' negative was DEMOTED for failing N1 (4 routes < 5).
 
-Original verdict: R2 is a topology question, not a Record-registrability question, and cannot be closed by the shared-layer theorem; its honest status is import-required external-math LIVE.
-Scope: Strong-CP, AC_phi_lambda/|delta|, and R2 lanes.
-Escape conditions (negative claims): Explicit scoping note: the RP no-go concerns premise 1 ('no bare theta slot'), blocker (a) concerns premise 2 (arg det(M_u M_d) = 0) — DISTINCT premises, so closing (a) does not require re-attacking RP and does not close premise 1.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Prior-deadend record refuting an inference used in the Koide lane: K/CPT orbit i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): R2 is a topology question, not a Record-registrability question, and cannot be closed by the shared-layer theorem; its honest status is import-required external-math LIVE.
+- Extraction scope (triage compression; may reflect later context): Strong-CP, AC_phi_lambda/|delta|, and R2 lanes.
+- Extraction escape conditions (negative claims; triage compression): Explicit scoping note: the RP no-go concerns premise 1 ('no bare theta slot'), blocker (a) concerns premise 2 (arg det(M_u M_d) = 0) — DISTINCT premises, so closing (a) does not require re-attacking RP and does not close premise 1.
 - Extraction red flags: a delta = 2pi/9 packaging that predicts m_tau off by orders of magnitude had been in circulation; PR #3428 attempted a Tier-A retirement by status inventory and was stripped by the owner
 - Supersession (as known at extraction): Cites six docs/ no-go notes by name plus PR #3428's owner rejection; records that the Record axiom's own reclassification from Tier-A to approved axiom node was an OWNER GOVERNANCE decision plus minimality policy, not a new axiom.
 

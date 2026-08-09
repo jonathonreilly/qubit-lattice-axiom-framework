@@ -18,10 +18,6 @@ required before any effective status.
 
 Six obstructions: a two-state stochastic contraction preserves total amount so scalar conservation does not give unitarity; a norm-dependent reversible rotation preserves squared norm while transferring components so norm conservation does not give linearity; H_N = J_N - I_N is Hermitian with complete support so unitarity does not give locality; site-basis path support becomes empty in the eigenbasis so an abstract generator does not give a graph; the old model-demonstration route chose a sparse Hermitian H before checking consequences; and same-identity negative retyping is barred as a repo dependency-polarity boundary.
 
-Original verdict: The record restricts the result to necessity from the quoted axiom and does not prohibit stronger formal axioms or graph-unitary models.
-Scope: Necessity from the quoted verbal axiom; every finite N Hilbert model for the locality row.
-Escape conditions (negative claims): Reopen conditions per row: a stronger information geometry, a separate derivation of linear superposition, a finite-range/bounded-degree selector, a justified physical carrier basis, or a derivation of the chosen sparse structure.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Correction of the old model-demonstration route for unitarity: six obstructions 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The record restricts the result to necessity from the quoted axiom and does not prohibit stronger formal axioms or graph-unitary models.
+- Extraction scope (triage compression; may reflect later context): Necessity from the quoted verbal axiom; every finite N Hilbert model for the locality row.
+- Extraction escape conditions (negative claims; triage compression): Reopen conditions per row: a stronger information geometry, a separate derivation of linear superposition, a finite-range/bounded-degree selector, a justified physical carrier basis, or a derivation of the chosen sparse structure.
 - Extraction red flags: records a methodological defect in a prior source-note scope (structure chosen before consequences were checked)
 - Supersession (as known at extraction): CORRECTS the old model-demonstration route, recording that the sparse Hermitian H was chosen before consequences were checked, reopenable only with a derivation of that structure
 

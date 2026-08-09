@@ -18,10 +18,6 @@ required before any effective status.
 
 All 3 registered derivation obligations have machine records that MISMATCH their source notes — 6 distinct registry-note mismatches. Of 4 registered axiom/primitive nodes, 2 have registry `note` fields diverging from the source note, and the registry `note` field is read by ZERO tools. MINIMAL_AXIOMS_2026-06-29.md 'Open Gates' has 8 gate bullets, only 2 partially registered, 5 fully unregistered including :170. The no_go population: 439 rows, 438 unaudited, ZERO at retained_no_go — but 196 rows HELD audited_clean historically and 202 clean no-go audits were KILLED in a two-day mass invalidation on 2026-07-11/12, with 0 no_go rows audited in the last 13 days of 370 audits. Lanes certified: 0 of 4, with 20 lane blockers that are `meta` rows and therefore structurally unclearable.
 
-Original verdict: The no_go count's cause is STRUCTURAL not backlog: the route exists in code and auditors have cleared no-gos 196 times, so it is neither a missing route nor auditor reluctance — it is a 2026-07-11/12 mass invalidation plus a steady-state gate demanding an artifact that ZERO rows in the repo hold.
-Scope: origin/main at f865c14cd4 (worktree HEAD 290 commits behind), 3872 ledger rows, no prose status trusted.
-Escape conditions (negative claims): Recommended set R1+R3+R4+R5 costs 3 rows requeued and 0 retained verdicts, and adds three permanent lint rules; the axiom-memo edit (46 rows requeued, 11 retained at risk) is explicitly marked DO NOT.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ SYSTEMIC INTEGRITY MEASUREMENT: ALL THREE registered derivation obligations have
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The no_go count's cause is STRUCTURAL not backlog: the route exists in code and auditors have cleared no-gos 196 times, so it is neither a missing route nor auditor reluctance — it is a 2026-07-11/12 mass invalidation plus a steady-state gate demanding an artifact that ZERO rows in the repo hold.
+- Extraction scope (triage compression; may reflect later context): origin/main at f865c14cd4 (worktree HEAD 290 commits behind), 3872 ledger rows, no prose status trusted.
+- Extraction escape conditions (negative claims; triage compression): Recommended set R1+R3+R4+R5 costs 3 rows requeued and 0 retained verdicts, and adds three permanent lint rules; the axiom-memo edit (46 rows requeued, 11 retained at risk) is explicitly marked DO NOT.
 - Extraction red flags: MAJOR: 3/3 obligations defective; 20 lane blockers are structurally unclearable meta rows; a steady-state gate demands an artifact no row in the repo holds, so no no-go can ever reach retained_no_go
 - Supersession (as known at extraction): Documents a mass invalidation event that destroyed 202 clean no-go audits on 2026-07-11/12 — a repo-wide retraction of previously audited content.
 

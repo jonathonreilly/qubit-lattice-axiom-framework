@@ -18,10 +18,6 @@ required before any effective status.
 
 Scope repair on a CRITICAL row with 880 transitive descendants and direct in-degree 8: the source is rebound to only the directly cited R_conn authority slice F_adj = dim(su(3))/dim(M_3(C)) = 8/9, with physical R_conn, physical K_EW = 9/8 and the selector kappa_EW = 0 all declared conditional on a separate selector theorem or an exact disconnected-current coefficient computation. The former package-wide table is removed from the row's binding scope.
 
-Original verdict: Post-repair queue result is audit_status unaudited, ready true - the intended outcome, ready for independent re-audit rather than author retagging.
-Scope: One bounded_theorem row and its dependency edge to rconn_derived_note.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Scope repair on a CRITICAL row with 880 transitive descendants and direct in-deg
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Post-repair queue result is audit_status unaudited, ready true - the intended outcome, ready for independent re-audit rather than author retagging.
+- Extraction scope (triage compression; may reflect later context): One bounded_theorem row and its dependency edge to rconn_derived_note.
 - Extraction red flags: 880 transitive descendants were downstream of a row whose binding scope included a table 'most entries [of which] named statuses without direct authority edges'.
 - Supersession (as known at extraction): NARROWS LANDED CONTENT: a critical row with 880 transitive descendants had been binding a package-wide status table it had no authority edges for.
 

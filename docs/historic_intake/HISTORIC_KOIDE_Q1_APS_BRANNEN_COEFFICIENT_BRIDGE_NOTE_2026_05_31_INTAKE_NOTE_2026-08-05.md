@@ -18,10 +18,6 @@ required before any effective status.
 
 Exact C_3 group-algebra identity: the Q = 1 source S_Q1 = (10/9)e - (2/9)(g + g^2) has every nonidentity coefficient equal to -2/9, exactly minus the APS eta value eta_APS(1,2;3) = (1/3)(1/3 + 1/3) = 2/9, which also equals the Brannen conjugate-pair magnitude n_eff/d^2.
 
-Original verdict: The bridge is exact but does not close the physical Brannen phase, because S_Q1 is transposition-EVEN and supplies no parity-odd sign or selected-line readout law.
-Scope: Exact at the coefficient/magnitude layer only; uses the offsite coefficient of the projected Q = 1 source, not the physical Q readout (Q/d would give 1/3).
-Escape conditions (negative claims): The named next target is either a signed selected-line readout/orientation law sending delta to -coeff_nonid(S_Q1), or a proof that the Q = 1 coefficient bridge is only an excluded source-domain shadow.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Exact C_3 group-algebra identity: the Q=1 source's every offsite coefficient is 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The bridge is exact but does not close the physical Brannen phase, because S_Q1 is transposition-EVEN and supplies no parity-odd sign or selected-line readout law.
+- Extraction scope (triage compression; may reflect later context): Exact at the coefficient/magnitude layer only; uses the offsite coefficient of the projected Q = 1 source, not the physical Q readout (Q/d would give 1/3).
+- Extraction escape conditions (negative claims; triage compression): The named next target is either a signed selected-line readout/orientation law sending delta to -coeff_nonid(S_Q1), or a proof that the Q = 1 coefficient bridge is only an excluded source-domain shadow.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Types the -2/9 residue found by the parent Q = 1 offsite synthesis packet; consumes the transposition-odd characterization of delta from the 2026-05-23 parity theorem.
 

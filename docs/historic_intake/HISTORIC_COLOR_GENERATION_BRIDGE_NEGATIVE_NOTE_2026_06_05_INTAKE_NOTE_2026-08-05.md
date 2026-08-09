@@ -18,10 +18,6 @@ required before any effective status.
 
 The SU(3)_c center Z_3 character on the color triplet, (3, 3 omega, 3 omega^2), and the generation regular C_3 character on the hw=1 BZ-corner orbit, (3, 0, 0), are inequivalent Z_3 representations — scalar versus regular — and no framework-native construction reconciles them.
 
-Original verdict: GENUINE-NO-GO modulo one named non-native stipulation, 'scalar-generation-action'.
-Scope: Source-note diagnostic; all native bridge routes tested are closed in the runner sections.
-Escape conditions (negative claims): The single named import (a scalar-generation-action stipulation) would change the verdict; the note explicitly declines to claim the search over conceivable bridges is finite or exhausted.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Genuine no-go: the SU(3)_c center Z_3 character and the generation C_3 regular c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): GENUINE-NO-GO modulo one named non-native stipulation, 'scalar-generation-action'.
+- Extraction scope (triage compression; may reflect later context): Source-note diagnostic; all native bridge routes tested are closed in the runner sections.
+- Extraction escape conditions (negative claims; triage compression): The single named import (a scalar-generation-action stipulation) would change the verdict; the note explicitly declines to claim the search over conceivable bridges is finite or exhausted.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Re-derivation of an earlier color/generation bridge no-go.
 

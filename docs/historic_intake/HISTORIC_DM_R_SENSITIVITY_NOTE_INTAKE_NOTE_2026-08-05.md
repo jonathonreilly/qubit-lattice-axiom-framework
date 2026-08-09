@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The hypothesis that R depends on eta only logarithmically is falsified: eta is exactly proportional to the transport prefactor P = D_q T/(v_w L_w T) and R exactly inversely proportional to eta, so dR/R = |dP/P| with no logarithmic suppression - giving dR/R = 66% (D_q T), 300% (v_w), 62% (L_w T) and 653% combined, versus <10% from all other sources.
 
-Original verdict: R remains an O(1) framework prediction but is NOT derived to 10% precision; the transport lane does not close from insensitivity.
-Scope: Uses the framework's own central transport values (D_q T = 3.1, v_w = 0.014, L_w T = 13) with their stated bands; the dominant v_w spread comes from T_n/T_c in [0.95, 0.99].
-Escape conditions (negative claims): The negative is escapable by narrowing the transport bands: pinning T_n/T_c from the framework V_eff (collapsing v_w from 8x to ~1.5x), NLO ladder-resummed D_q T, or accepting an O(1) prediction; the note notes eta = eta_obs crosses at v/T ~ 0.52, inside the 0.56 +/- 0.05 band.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Definitive sensitivity no-go: eta exactly proportional to the transport prefacto
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): R remains an O(1) framework prediction but is NOT derived to 10% precision; the transport lane does not close from insensitivity.
+- Extraction scope (triage compression; may reflect later context): Uses the framework's own central transport values (D_q T = 3.1, v_w = 0.014, L_w T = 13) with their stated bands; the dominant v_w spread comes from T_n/T_c in [0.95, 0.99].
+- Extraction escape conditions (negative claims; triage compression): The negative is escapable by narrowing the transport bands: pinning T_n/T_c from the framework V_eff (collapsing v_w from 8x to ~1.5x), NLO ladder-resummed D_q T, or accepting an O(1) prediction; the note notes eta = eta_obs crosses at v/T ~ 0.52, inside the 0.56 +/- 0.05 band.
 - Extraction red flags: At the framework's own central transport values eta ~ 2.4e-7, about 400x larger than eta_obs = 6.1e-10, giving R ~ 0.01 rather than ~5.
 - Supersession (as known at extraction): Declares itself the definitive sensitivity analysis and supersedes any claim that R is insensitive to transport uncertainties.
 

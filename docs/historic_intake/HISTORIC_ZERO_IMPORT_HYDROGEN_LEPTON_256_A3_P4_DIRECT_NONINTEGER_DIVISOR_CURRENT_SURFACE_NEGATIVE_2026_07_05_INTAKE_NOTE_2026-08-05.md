@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply P4_DIRECT_NONINTEGER_DIVISOR_RETAINED. P4 would replace the exact 1/256 source scaffold by the direct physical divisor S_P4 = 1/N_A3 = 0.003904992543192026, with Delta N = N_A3 - 256 = 0.08243522600384; the underlying numbers are a_lepton^2 = 313.8411267023086 MeV and N_A3 = m_W/a_lepton^2 = 256.08243522600384.
 
-Original verdict: Support-only non-supply boundary; the numbers define the target and are not proof inputs.
-Scope: Placement P4: abandoning the exact 1/256 scaffold for a directly derived noninteger divisor.
-Escape conditions (negative claims): Derive the physical noninteger divisor directly, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ THE DISCLOSURE: the campaign's 'exact' 1/256 is a 0.032% approximation to the di
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the numbers define the target and are not proof inputs.
+- Extraction scope (triage compression; may reflect later context): Placement P4: abandoning the exact 1/256 scaffold for a directly derived noninteger divisor.
+- Extraction escape conditions (negative claims; triage compression): Derive the physical noninteger divisor directly, then ratify and audit.
 - Extraction red flags: Records that the campaign's exact 1/256 is a 0.032% approximation to m_W/a_lepton^2 = 256.08243522600384 with a_lepton^2 = 313.8411267023086 MeV — i.e. the 'exact source singleton' matches a comparator quantity only after an unexplained correction C_A3.
 - Supersession (as known at extraction): Fourth placement no-go; this note carries the explicit m_W/a_lepton^2 provenance of the whole 1/256 program. A3 sub-ladder: placement discriminator 2627 -> four placement no-gos P1 2629 / P2 2630 / P3 2633 / P4 2634 -> A3 precision-placement TERMINAL 2635 (packet 2636, no-double-count packet 2628) -> K4 terminal 2505.
 

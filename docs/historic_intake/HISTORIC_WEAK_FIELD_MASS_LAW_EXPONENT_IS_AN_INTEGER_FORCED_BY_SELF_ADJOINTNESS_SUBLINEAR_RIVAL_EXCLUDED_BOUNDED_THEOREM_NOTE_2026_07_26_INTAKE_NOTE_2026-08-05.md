@@ -20,10 +20,6 @@ required before any effective status.
 
 Four results: (1) probe P4's rival S = L sqrt(1 - phi) is misstated — since 1 - sqrt(1-f) = f/2 + f^2/8 + ..., it is weak-field LINEAR and sits in the Newtonian class, while the landed F ~ sqrt(M) = 0.50 row is the different function L(1 - f^0.5), so the stated discriminator does not discriminate; (2) by Rellich/Kato, a self-adjoint analytic family has analytic eigenvalues so leading response powers are positive integers and p = 1/2 is unreachable (a branch-point witness H(lambda) = [[0,1],[lambda,0]] is exhibited and confirmed non-self-adjoint, twelve self-adjoint samples give 1 or 2); (3) the resolvent identity gives G(lambda V) - G_0 = -lambda G_0 V G_0 + O(lambda^2), verified in exact rational arithmetic on a 27x27 open-box Laplacian; (4) admission (c) reduces to phase valley (g'(0) < 0) plus a nonvanishing first-order matrix element.
 
-Original verdict: Theorem 1 (the correction) and Theorem 2 (the p = 1/2 exclusion) are unconditional; the reduction of admission (c) collapses it into the same unforced additive-coupling premise A2 already uses — fewer independent gaps, no gap closed.
-Scope: Bounded self-adjoint V on finite lattices; the additive coupling H(phi) = H + phi is assumed (the lane's own, itself labelled heuristic motivation), and no axiom, primitive, lane or obligation status is changed.
-Escape conditions (negative claims): The sublinear exclusion holds only where H is self-adjoint with bounded V on a finite lattice; infinite-volume needs unchecked Kato-Rellich hypotheses, and the step from propagator response to the path action S used by the landed harness is flagged as an open seam.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Corrects a LANDED support note under a 773-descendant critical row: the rival ac
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Theorem 1 (the correction) and Theorem 2 (the p = 1/2 exclusion) are unconditional; the reduction of admission (c) collapses it into the same unforced additive-coupling premise A2 already uses — fewer independent gaps, no gap closed.
+- Extraction scope (triage compression; may reflect later context): Bounded self-adjoint V on finite lattices; the additive coupling H(phi) = H + phi is assumed (the lane's own, itself labelled heuristic motivation), and no axiom, primitive, lane or obligation status is changed.
+- Extraction escape conditions (negative claims; triage compression): The sublinear exclusion holds only where H is self-adjoint with bounded V on a finite lattice; infinite-volume needs unchecked Kato-Rellich hypotheses, and the step from propagator response to the path action S used by the landed harness is flagged as an open seam.
 - Extraction red flags: Corrects landed content (the P4 admission (c) discriminator was a comparison within one universality class, and the empirical selection of valley-linear was matching the known Newtonian answer); three drafting errors caught by the runner are recorded rather than silently fixed.
 - Supersession (as known at extraction): Corrects a landed support note (probe P4's rival formula) whose parent row carries 773 transitive descendants; also records a previously unwritten obstruction — G_0 = H^{-1} does not exist translation-invariantly since the periodic Laplacian annihilates constants.
 

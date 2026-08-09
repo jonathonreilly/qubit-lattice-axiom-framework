@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The path-sum framework does not constrain the gravity/EM hierarchy: the mixed residual R_GE = 0 to machine precision (< 1e-14) for all 20 tested (G,q) pairs, gravity convergence is independent of q, and all tested ratios from 0.004 to 1000 work equally well.
 
-Original verdict: Null result — the two sectors are strictly independent and the hierarchy problem is really a mass-spectrum problem (why m_proton << m_Planck), not a coupling-ratio problem.
-Scope: 16^3 cubic lattice, k = 4.0, Dirichlet BC; four tests (G sweep via self-consistent Poisson, q sweep via ray deflection, natural-scale ratio, combined grid).
-Escape conditions (negative claims): The negative rests on the sectors' structural independence (gravity enters as a self-consistently sourced scalar in S = L(1-f), EM as a phase q*V with no back-reaction) and on G having units [length^2] while q is dimensionless; the escape named is a mechanism relating the mass spectrum to lattice structure, which is absent from the current formulation.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Clean null: gravity/EM sectors strictly independent (mixed residual < 1e-14 acro
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Null result — the two sectors are strictly independent and the hierarchy problem is really a mass-spectrum problem (why m_proton << m_Planck), not a coupling-ratio problem.
+- Extraction scope (triage compression; may reflect later context): 16^3 cubic lattice, k = 4.0, Dirichlet BC; four tests (G sweep via self-consistent Poisson, q sweep via ray deflection, natural-scale ratio, combined grid).
+- Extraction escape conditions (negative claims; triage compression): The negative rests on the sectors' structural independence (gravity enters as a self-consistently sourced scalar in S = L(1-f), EM as a phase q*V with no back-reaction) and on G having units [length^2] while q is dimensionless; the escape named is a mechanism relating the mass spectrum to lattice structure, which is absent from the current formulation.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

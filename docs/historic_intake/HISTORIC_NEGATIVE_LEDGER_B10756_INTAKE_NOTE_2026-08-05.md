@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Records that PR #228's carrier derivation (docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md) was audited `audited_renaming` with the load-bearing failure that rank(P_A H_cell) = 4 was matched to the irreducible complex Cl_4(C) module without the substrate proving P_A H_cell is the uniquely active invariant block. Two clean negative witnesses follow: the Hamming-weight-three projector P_3 is rank four, tensor-local, complex-linear and equivariant under the same spin/time/CPT actions (with 17 local rank-four equivariant projector classes enumerated); and the Hodge-complement map satisfies * P_1 *^{-1} = P_3 exactly while preserving spatial spin-lift equivariance, CPT grading, tensor-local number algebra and time parity up to an irrelevant central sign.
 
-Original verdict: Any route whose only distinction is 'first order is the boundary carrier' is CIRCULAR; remaining routes must derive a directionality/asymmetry not already present in the symmetry package.
-Scope: The Planck P_A retention lane.
-Escape conditions (negative claims): A cochain-normal primitivity rule would select P_A — but that rule is the extra boundary/orientation premise, not a derived consequence.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Landed-PR defect on the record: PR #228's carrier derivation (docs/PLANCK_PRIMIT
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Any route whose only distinction is 'first order is the boundary carrier' is CIRCULAR; remaining routes must derive a directionality/asymmetry not already present in the symmetry package.
+- Extraction scope (triage compression; may reflect later context): The Planck P_A retention lane.
+- Extraction escape conditions (negative claims; triage compression): A cochain-normal primitivity rule would select P_A — but that rule is the extra boundary/orientation premise, not a derived consequence.
 - Extraction red flags: a landed PR's headline derivation was found to rest on dimension-matching alone and was demoted to audited_renaming
 - Supersession (as known at extraction): Records a LANDED PR (#228) whose derivation failed audit as audited_renaming; names docs/SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md, docs/FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md, docs/PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md.
 

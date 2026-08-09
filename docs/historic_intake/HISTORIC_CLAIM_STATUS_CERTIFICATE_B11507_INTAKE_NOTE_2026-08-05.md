@@ -18,10 +18,6 @@ required before any effective status.
 
 Candidate-retained-grade positive theorem: self-contained exact finite-dimensional normalization and component-overlap proof (Hilbert-Schmidt inner product, Kronecker-delta contraction, displayed in full); external dependencies none; no observed, fitted, literature, or physical-readout inputs; review-loop pass.
 
-Original verdict: candidate-retained-grade; review pass; audit required
-Scope: finite-dimensional normalization arithmetic only; no physical matching claim
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean unlanded positive: candidate-retained-grade self-contained exact finite-di
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): candidate-retained-grade; review pass; audit required
+- Extraction scope (triage compression; may reflect later context): finite-dimensional normalization arithmetic only; no physical matching claim
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

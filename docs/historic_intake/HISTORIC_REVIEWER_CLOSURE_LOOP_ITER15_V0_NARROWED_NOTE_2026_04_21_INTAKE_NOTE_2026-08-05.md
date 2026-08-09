@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 v_0 has a 0.11% fit (17.6964 vs observed 17.71556 sqrt(MeV)) via a formula reusing (7/8) from the hierarchy theorem, a documented double-counting concern; five alternatives avoiding the reuse miss by 6.74% to 94.53%; 10/10 PASS.
 
-Original verdict: NARROWED, not closed: the tight observational fit rests on a possibly double-counted (7/8) factor.
-Scope: Overall lepton scale v_0 = (sqrt(m_e)+sqrt(m_mu)+sqrt(m_tau))/3 with retained constants v_EW = 246.22 GeV, alpha_LM = 0.0906, envelope 1 + sqrt(2)cos(2/9) = 2.379.
-Escape conditions (negative claims): Three closure routes named: prove (7/8)^{5/4} is a legitimate framework-native composition, find an equivalent formula without the reuse, or close v_0 downstream of Bridge B via the m_*/w/v witness.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The v_0 double-counting concern: the 0.11% fit reuses (7/8) from the hierarchy t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): NARROWED, not closed: the tight observational fit rests on a possibly double-counted (7/8) factor.
+- Extraction scope (triage compression; may reflect later context): Overall lepton scale v_0 = (sqrt(m_e)+sqrt(m_mu)+sqrt(m_tau))/3 with retained constants v_EW = 246.22 GeV, alpha_LM = 0.0906, envelope 1 + sqrt(2)cos(2/9) = 2.379.
+- Extraction escape conditions (negative claims; triage compression): Three closure routes named: prove (7/8)^{5/4} is a legitimate framework-native composition, find an equivalent formula without the reuse, or close v_0 downstream of Bridge B via the m_*/w/v witness.
 - Extraction red flags: Flags that a 0.11% headline fit may be an artifact of reusing a factor already spent in the v_EW derivation.
 - Supersession (as known at extraction): Reopens v_0, which the earlier summary (idx 1813) had put outside scope per reviewer directive; member of the loop chain.
 

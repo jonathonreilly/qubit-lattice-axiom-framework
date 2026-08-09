@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 With complex b (the physical case, since arg(b) != 0 is what splits e, mu, tau) the doublet isotype has TWO real dof, so the canonical trace-induced Gaussian gives doublet:singlet = 2:1 by Schur - dimension, Q = 1 (isotype ratio 2.00, median Q = 1.34); block-count (Q = 2/3) is recovered only by imposing Im b = 0, a real-structure import in tension with the 3-distinct spectrum.
 
-Original verdict: Q = 2/3 is NOT natively favored - A1's canonical measure gives Q = 1, the dynamics give Q = 1/3, and the observed 2/3 needs an import.
-Scope: Track 2's concentrating entropy saddle at b/a = sqrt2/2 exists but rides on the same block weighting (general saddle r* = nu/(2 mu)); the only unconstrained native saddle is b = 0.
-Escape conditions (negative claims): One sharp open question is named: is the Q-relevant magnitude |b| set by the real native cube-shift coupling alone (giving the (1,1) block-count reading) while the phase theta is a Q-orthogonal import? That would reconcile block-count with theta != 0.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ Two-paths terminal: canonical measure gives Q=1, dynamics 1/3, observation 2/3 â
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q = 2/3 is NOT natively favored - A1's canonical measure gives Q = 1, the dynamics give Q = 1/3, and the observed 2/3 needs an import.
+- Extraction scope (triage compression; may reflect later context): Track 2's concentrating entropy saddle at b/a = sqrt2/2 exists but rides on the same block weighting (general saddle r* = nu/(2 mu)); the only unconstrained native saddle is b = 0.
+- Extraction escape conditions (negative claims; triage compression): One sharp open question is named: is the Q-relevant magnitude |b| set by the real native cube-shift coupling alone (giving the (1,1) block-count reading) while the phase theta is a Q-orthogonal import? That would reconcile block-count with theta != 0.
 - Extraction red flags: A third same-campaign retraction; the corrected measure verdict inverts the campaign's flagship positive.
 - Supersession (as known at extraction): Explicitly RETRACTS the 'native covariant measure ranks toward 2/3' result of moves 3/B and the exactness-closure note (idx 486, 494, 479) as an artifact of the real-b restriction.
 

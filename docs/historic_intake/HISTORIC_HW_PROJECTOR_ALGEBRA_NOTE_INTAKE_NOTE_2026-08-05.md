@@ -18,10 +18,6 @@ required before any effective status.
 
 The four Hamming-weight spectral projectors of H = sum_mu (I - S_mu)/2 on C^8 satisfy Pi_j Pi_k = delta_jk Pi_j with ranks 1/3/3/1, span a 4-dim abelian unital *-algebra P isomorphic to C^4 inside the 20-dim S_3-invariant commutant, and P intersects the Batch-4 cube-shift subalgebra A_S^{S_3} only in the identity line.
 
-Original verdict: Airtight (Grind Program Batch 7, 54/54 PASS) — P and A_S^{S_3} are two distinct 4-dim abelian S_3-invariant subalgebras sharing only the identity.
-Scope: Taste cube C^8 = (C^2)^{tensor 3} with S_3 axis-permutation action.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Airtight hw-projector algebra structure (54/54) — two distinct 4-dim abelian S
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Airtight (Grind Program Batch 7, 54/54 PASS) — P and A_S^{S_3} are two distinct 4-dim abelian S_3-invariant subalgebras sharing only the identity.
+- Extraction scope (triage compression; may reflect later context): Taste cube C^8 = (C^2)^{tensor 3} with S_3 axis-permutation action.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Batch 7 of the Grind Program; direct input to the Batch 7 Intersection Theorem and companion to the Batch 4 cube-shift polynomial algebra.
 

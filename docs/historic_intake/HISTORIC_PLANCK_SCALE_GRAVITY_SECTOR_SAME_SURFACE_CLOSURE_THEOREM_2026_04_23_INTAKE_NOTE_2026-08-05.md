@@ -18,10 +18,6 @@ required before any effective status.
 
 Upgrades GSI from a premise to a same-surface compatibility consequence: the accepted gravity stack supplies one boundary/action sector on PL S^3 x R, the Planck packet supplies the unique source-free primitive codimension-1 carrier P_A, and single-sector semantics forces N_grav = P_A, hence c_cell = 4/16 = 1/4 and a = l_P. The note states none of its five inputs contains 1/4, nu = 5/4, a = l_P or a fitted multiplier.
 
-Original verdict: GSI is not a coefficient choice - the remaining rejection is of the same-surface single-gravity-sector review contract, not of an algebraic gap.
-Scope: Accepted physical-gravity review contract with five named inputs (physical lattice, canonical gravity sector, same physical boundary surface, single-sector semantics, primitive source-free locality).
-Escape conditions (negative claims): A reviewer may still reject any of the five review-contract inputs; rejecting one changes the physical theory under review rather than exposing a coefficient fit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ GSI hardened from premise to same-surface compatibility consequence — the five
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): GSI is not a coefficient choice - the remaining rejection is of the same-surface single-gravity-sector review contract, not of an algebraic gap.
+- Extraction scope (triage compression; may reflect later context): Accepted physical-gravity review contract with five named inputs (physical lattice, canonical gravity sector, same physical boundary surface, single-sector semantics, primitive source-free locality).
+- Extraction escape conditions (negative claims; triage compression): A reviewer may still reject any of the five review-contract inputs; rejecting one changes the physical theory under review rather than exposing a coefficient fit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Final hardening of the GSI step and the direct input to PLANCK_SCALE_AIRTIGHT_REVIEW_CLOSURE_THEOREM; terminal note of the gravity-carrier sub-lane.
 

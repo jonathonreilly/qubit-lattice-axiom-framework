@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Six sectors scouted for a downstream consumer that needs B-Z2 ('the kinetic kernel has a finite point-like massless zero set') for a reason logically prior to phi = -1: every candidate is either CIRCULAR (assumes staggered-Dirac then counts its 2^d zeros), CARRIER-FINITE (gets its integer count from the algebraic C^8 carrier, never reading a propagator zero locus), or AMBIGUOUS - no independent consumer exists.
 
-Original verdict: The prize is not in this repo as of 2026-06-24 - B-Z2 fails on AUTHORITY exactly as the phi = -1 attack's Route-2 verdict said, and no row's retained status would transfer to it.
-Scope: Six sectors and their best-looking rows, not exhaustive over every retained row; density-based arguments are excluded up front because per-volume entropy and IR log-det densities vanish on both the K0 and K1 branches.
-Escape conditions (negative claims): The negative is about current downstream load-bearing, not about B-Z2's truth: it explicitly does not claim B-Z2 is false, unphysical or unnatural (it is the physically expected Dirac ray), does not claim K0 is physical, and does not claim exhaustiveness. Admitting B-Z2 explicitly would discharge phi = -1 and let A1 weaken from the Z^3 lattice primitive to a derived Z^d cap - but that admission must come from the owner/axiom lane, not from downstream reliance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ B-Z2 scouting: the finite-zero-set primitive is SILENTLY ASSUMED nearly everywhe
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The prize is not in this repo as of 2026-06-24 - B-Z2 fails on AUTHORITY exactly as the phi = -1 attack's Route-2 verdict said, and no row's retained status would transfer to it.
+- Extraction scope (triage compression; may reflect later context): Six sectors and their best-looking rows, not exhaustive over every retained row; density-based arguments are excluded up front because per-volume entropy and IR log-det densities vanish on both the K0 and K1 branches.
+- Extraction escape conditions (negative claims; triage compression): The negative is about current downstream load-bearing, not about B-Z2's truth: it explicitly does not claim B-Z2 is false, unphysical or unnatural (it is the physically expected Dirac ray), does not claim K0 is physical, and does not claim exhaustiveness. Admitting B-Z2 explicitly would discharge phi = -1 and let A1 weaken from the Z^3 lattice primitive to a derived Z^d cap - but that admission must come from the owner/axiom lane, not from downstream reliance.
 - Extraction red flags: Records that B-Z2 is silently assumed nearly everywhere while being independently justified nowhere; several cited rows self-disclaim regulator-independence of their own 2^d counts.
 - Supersession (as known at extraction): Upholds the Route-2 verdict of PHI_MINUS_ONE_SELECTOR_ATTACK_PROPOSAL_2026-06-23 and feeds D3_NATIVE_UNBLOCK_PROPOSAL_2026-06-23 Clause A.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 With the retained (rho_bar, eta_bar) = (1/6, sqrt(5)/6), the unitarity triangle has alpha = 90 degrees EXACTLY, beta = arctan(1/sqrt(5)) ~ 24.095 degrees, gamma = arctan(sqrt(5)) ~ 65.905 degrees = delta_CKM, and rescaled area sqrt(5)/12 — the apex lying on the Thales circle of diameter [0,1] makes the right angle geometric rather than coincidental.
 
-Original verdict: A sharp falsifiable prediction: PDG 2024 gives alpha = 84.1 +/- 4.0 degrees, consistent with 90 at ~1.5 sigma, and future precision will be decisive.
-Scope: Direct geometric corollary of the retained CP-phase structural identity; falsifiability discussed explicitly.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Sharp falsifiable prediction: unitarity-triangle alpha = 90 degrees EXACTLY from
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharp falsifiable prediction: PDG 2024 gives alpha = 84.1 +/- 4.0 degrees, consistent with 90 at ~1.5 sigma, and future precision will be decisive.
+- Extraction scope (triage compression; may reflect later context): Direct geometric corollary of the retained CP-phase structural identity; falsifiability discussed explicitly.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

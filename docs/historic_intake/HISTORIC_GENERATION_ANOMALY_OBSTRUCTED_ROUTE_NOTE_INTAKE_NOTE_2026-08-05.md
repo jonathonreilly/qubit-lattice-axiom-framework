@@ -18,10 +18,6 @@ required before any effective status.
 
 Each triplet orbit carries Z_3 charge content (1,1,1) hence Dai-Freed invariant nu = 2, so the full theory has nu_total = 1 mod 3 while merging T_1 and T_2 gives 2 mod 3 - an exact topological obstruction to identification, confirmed by the lens-space partition function phase shifting from 1/3 to 2/3 and by the Z_3-invariant Hamming weight operator distinguishing the orbits; singlet merges are anomaly-allowed, as they should be.
 
-Original verdict: An exact topological obstruction to generation identification that does NOT close the physicality gate.
-Scope: Conditional on the Z_3 taste symmetry being physical and on 't Hooft matching applying in the full interacting theory with softly broken Z_3.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact topological obstruction: merging triplets changes nu mod 3 — generation 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An exact topological obstruction to generation identification that does NOT close the physicality gate.
+- Extraction scope (triage compression; may reflect later context): Conditional on the Z_3 taste symmetry being physical and on 't Hooft matching applying in the full interacting theory with softly broken Z_3.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Complements the superselection argument (which forbids mixing) with a topological argument forbidding identification.
 

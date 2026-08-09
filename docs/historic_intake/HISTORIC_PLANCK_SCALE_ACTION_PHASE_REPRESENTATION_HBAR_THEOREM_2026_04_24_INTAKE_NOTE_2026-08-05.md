@@ -18,10 +18,6 @@ required before any effective status.
 
 Extends the reduced action-count result Phi(I_16) = 1 into a structural derivation: the primitive integral action count is the universal-cover phase generator of coherent histories, so S/hbar = Phi and one complete primitive cell has action hbar in physical units.
 
-Original verdict: Safe: hbar is the conversion factor between action and phase, with one primitive cell carrying action hbar. UNSAFE: that the branch predicts the SI decimal value of hbar, or has derived all canonical-commutator / uncertainty-relation appearances of hbar.
-Scope: Structural sense only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ hbar as the action-phase conversion: structural derivation with the safe/unsafe 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Safe: hbar is the conversion factor between action and phase, with one primitive cell carrying action hbar. UNSAFE: that the branch predicts the SI decimal value of hbar, or has derived all canonical-commutator / uncertainty-relation appearances of hbar.
+- Extraction scope (triage compression; may reflect later context): Structural sense only.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Completes the target set by idx_pos 1366.
 

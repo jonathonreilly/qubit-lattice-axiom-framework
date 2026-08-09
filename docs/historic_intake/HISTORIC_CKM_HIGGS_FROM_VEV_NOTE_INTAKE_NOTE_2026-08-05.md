@@ -18,10 +18,6 @@ required before any effective status.
 
 The quartic selector V_sel = 32 sum_{i<j} phi_i^2 phi_j^2 has exactly three global minima on the unit sphere (the axis directions), Z_3 permutes the three degenerate vacua, and the physical Higgs decomposes democratically into Z_3 charges 0, 1, 2 with equal weight 1/3 — so charge 1 is not singled out.
 
-Original verdict: An L-independent Higgs-Z_3 framework is established but it does not deliver the needed charge, so the lane stays bounded.
-Scope: L-independent algebraic framework; supersedes the staggered mass operator route.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The surviving Higgs-Z_3 framework: quartic selector with exactly three Z_3-permu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An L-independent Higgs-Z_3 framework is established but it does not deliver the needed charge, so the lane stays bounded.
+- Extraction scope (triage compression; may reflect later context): L-independent algebraic framework; supersedes the staggered mass operator route.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly supersedes the staggered mass operator route proved dead in CKM_HIGGS_Z3_UNIVERSAL_NOTE.md.
 

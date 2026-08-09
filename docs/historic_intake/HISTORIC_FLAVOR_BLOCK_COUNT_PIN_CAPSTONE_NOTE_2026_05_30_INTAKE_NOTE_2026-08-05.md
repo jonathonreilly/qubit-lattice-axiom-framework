@@ -18,10 +18,6 @@ required before any effective status.
 
 Neither emergent-time/records nor the Cl(3) qubit structure converts the block-count weight into a theorem (7 angles, 0 survived), but a new positive lands: a real circulant H = aI + b(C+C^2) energy-degenerates the two C_3 doublet phases so einselection cannot resolve them, natively deriving the 2-sector PARTITION; the WEIGHT remains the pin - center trace gives (1,1) -> r = 1/2 -> Q = 2/3 while every canonical native object (Plancherel, Haar, identity metric, einselected Born on rho = I/3) votes dimension (1,2) -> Q = 1.
 
-Original verdict: Q = 2/3 is derived-modulo-the-block-count pin, and the pin is now one sharply-posed question: why does the mass functional read the center trace of R[Z_3] rather than the full-algebra trace.
-Scope: Charged-lepton value question; the redundancy-objectivity lead derives the partition but cannot reweight Q (counting the doublet once gives Q = 0.807, contradicting the 3-distinct spectrum).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Block-count pin capstone: 7 angles, 0 survived; plus the new energy-dominance po
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q = 2/3 is derived-modulo-the-block-count pin, and the pin is now one sharply-posed question: why does the mass functional read the center trace of R[Z_3] rather than the full-algebra trace.
+- Extraction scope (triage compression; may reflect later context): Charged-lepton value question; the redundancy-objectivity lead derives the partition but cannot reweight Q (counting the doublet once gives Q = 0.807, contradicting the 3-distinct spectrum).
 - Extraction red flags: The observed operator sits at a specific non-generic fixed point that NO native measure, dynamics, records or qubit-structure route reaches.
 - Supersession (as known at extraction): Campaign capstone across every mapped framing (operator, measure, dynamics, combinatorial, geometric, information, number-theoretic, holographic, records, qubit-structure), all landing on full-trace/dimension or democratic.
 

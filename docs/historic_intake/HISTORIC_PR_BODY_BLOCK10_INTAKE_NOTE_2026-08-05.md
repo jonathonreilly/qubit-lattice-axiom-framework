@@ -18,10 +18,6 @@ required before any effective status.
 
 Indexes the campaign's ten blocks across PRs #183-187, #190, #194-195 and #197, and proposes 14 publication-matrix rows for later weaving (73, 125, 157-162, 166-168, 177, 179, 192). Adds no new computational claim.
 
-Original verdict: Test plan leaves three open items: per-block certificate audits, adjudication of the 14-row cascade, and the owner's Axiom* decision.
-Scope: Synthesis index; proposal_allowed false.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ TERMINAL index of the 2026-04-29 axiom-to-main-lane cascade: ten blocks across P
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Test plan leaves three open items: per-block certificate audits, adjudication of the 14-row cascade, and the owner's Axiom* decision.
+- Extraction scope (triage compression; may reflect later context): Synthesis index; proposal_allowed false.
 - Extraction red flags: Fourteen publication-matrix promotions were queued off a chain whose root block (V8) rests on an admitted interpretive inference and whose two key authorities were demoted three days later in the May audit campaign.
 - Supersession (as known at extraction): TERMINAL of the 2026-04-29 axiom-to-main-lane cascade (blocks 01-10, idx 10254-10265); NAMES A DOCS LANDING: docs/AXIOM_TO_MAIN_LANE_CASCADE_SYNTHESIS_NOTE_2026-04-29.md.
 

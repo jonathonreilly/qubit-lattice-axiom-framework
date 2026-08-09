@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Eighteen closed charged-lepton and Koide routes catalogued by note id across two clusters (the 2026-04-26/27 selector/firewall cluster and the older 2026-04-20/25 Koide A1 cluster), covering type-B radian readout, selected-line generation selectors, Koide ratio source selectors, radiative tau selectors, A1 fractional topology, Cheeger-Simons/RZ, Wilson selected-eigenline delta, marked relative cobordism, readout-retention split, residual cohomology, onsite source domain, Q23 O_h covariance, the local radian bridge, selected-slice spectral completion, the transport gap constant and the Z_3 qubit radian bridge.
 
-Original verdict: Two live routes survive: the Koide flagship (Q=2/3, delta=2/9) in flight via the OP-locality / C3-fixed source route landed as CONDITIONAL SUPPORT, and the y_tau Ward identity, unattempted on the retained surface and distinct from the closed direct Ward-free no-go because it leverages the gauge structure.
-Scope: Charged-lepton mass closure route pruning as of 2026-04-28.
-Escape conditions (negative claims): Loop rule: a cycle attacking any closed-route class must name the new premise that breaks the prior obstruction, or be rejected at the dramatic-step gate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ Consolidated Koide/charged-lepton route catalogue: eighteen closed routes by not
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two live routes survive: the Koide flagship (Q=2/3, delta=2/9) in flight via the OP-locality / C3-fixed source route landed as CONDITIONAL SUPPORT, and the y_tau Ward identity, unattempted on the retained surface and distinct from the closed direct Ward-free no-go because it leverages the gauge structure.
+- Extraction scope (triage compression; may reflect later context): Charged-lepton mass closure route pruning as of 2026-04-28.
+- Extraction escape conditions (negative claims; triage compression): Loop rule: a cycle attacking any closed-route class must name the new premise that breaks the prior obstruction, or be rejected at the dramatic-step gate.
 - Extraction red flags: Directly dates the Koide OP-locality route as conditional support on 2026-04-28, which makes the 2026-04-29 jump to proposed_retained a one-day status leap resting on the interpretive strict-reading argument.
 - Supersession (as known at extraction): Records that as of 2026-04-28 the OP-locality Koide route stood at CONDITIONAL SUPPORT (KOIDE_Q_OP_LOCALITY_C3_FIXED_SOURCE_SUPPORT_NOTE_2026-04-27) - one day before the same route was proposed as proposed_retained in idx 10254/10256.
 

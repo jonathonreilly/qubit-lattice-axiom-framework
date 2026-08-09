@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves C^8 = (C^2)^{tensor 3} decomposes under Z_3 = <sigma> (cyclic permutation of the three taste-cube axes) as 4.1 + 2.chi_omega + 2.chi_omega^2 with Hamming-weight blocks 1/regular/regular/1, giving dim End(C^8)^{Z_3} = 4^2+2^2+2^2 = 24 by Schur's lemma. Runner 20/20 PASS, including a direct solve of the 64-dimensional commutator system [sigma, M] = 0 recovering kernel dimension 24.
 
-Original verdict: Airtight (self-described) pure-algebra theorem verified five independent ways by the runner.
-Scope: Representation-theoretic decomposition and commutant dimension of the Z_3 cyclic action on the taste cube; classical inputs are Schur's lemma and cyclic-group representation theory.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Airtight Z_3 taste-algebra decomposition theorem (4.1 + 2.chi + 2.chi-bar, five 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Airtight (self-described) pure-algebra theorem verified five independent ways by the runner.
+- Extraction scope (triage compression; may reflect later context): Representation-theoretic decomposition and commutant dimension of the Z_3 cyclic action on the taste cube; classical inputs are Schur's lemma and cyclic-group representation theory.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sharpens the Batch 2 C_3 Cyclic Action theorem (orbit structure 1+3+3+1) to full representation content; flagged as reusable for CP-phase / omega-label operators preserving Z_3 but not S_3.
 

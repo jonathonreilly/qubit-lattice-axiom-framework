@@ -18,10 +18,6 @@ required before any effective status.
 
 Resolves the Z_chi power in v = M_Pl exp(-lambda_0/|beta_lambda|): N_eff = 12 Z_chi^2 in terms of y_bare (equivalently 12 with no explicit Z_chi in terms of y_phys), because beta_lambda is a box diagram (y^4, Z_chi^4) while lambda_0 is a self-energy (y^2, Z_chi^2) and the ratio cancels two powers. With alpha_V(M_Pl)=0.092, g_s=1.075, y_bare=0.439 and Z_chi=0.942 (Sigma_1=6), N_eff = 10.64 gives v ~ 226 GeV = 0.92 v_PDG.
 
-Original verdict: DERIVED as an exponent-bookkeeping result, but the numerical output is 8% low (226 vs 246 GeV) and v depends exponentially on Sigma_1 (Sigma_1 = 7.1 would give exactly 246 GeV).
-Scope: The correct power of the wavefunction renormalization in the Coleman-Weinberg hierarchy formula.
-Escape conditions (negative claims): 2-loop RGE corrections, gauge-boson contributions to V_CW, running of y_t between M_Pl and v, and O(alpha_s) corrections to the lambda_0 matching — all called calculable O(10%) effects.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Z_chi exponent bookkeeping resolution (v = 226 GeV, 8% low) WITH the severe expo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): DERIVED as an exponent-bookkeeping result, but the numerical output is 8% low (226 vs 246 GeV) and v depends exponentially on Sigma_1 (Sigma_1 = 7.1 would give exactly 246 GeV).
+- Extraction scope (triage compression; may reflect later context): The correct power of the wavefunction renormalization in the Coleman-Weinberg hierarchy formula.
+- Extraction escape conditions (negative claims; triage compression): 2-loop RGE corrections, gauge-boson contributions to V_CW, running of y_t between M_Pl and v, and O(alpha_s) corrections to the lambda_0 matching — all called calculable O(10%) effects.
 - Extraction red flags: The stated sensitivity is severe: v depends exponentially on Sigma_1, and the note observes that the desired 246 GeV corresponds to Sigma_1 = 7.1 rather than the standard staggered 6 — a tuning-shaped escape presented as 'well within the range of lattice estimates'.
 - Supersession (as known at extraction): April hierarchy-lane note; its y_bare = g_s/sqrt(6) input is the Ward-derived value later shown not audit-clean (2468).
 

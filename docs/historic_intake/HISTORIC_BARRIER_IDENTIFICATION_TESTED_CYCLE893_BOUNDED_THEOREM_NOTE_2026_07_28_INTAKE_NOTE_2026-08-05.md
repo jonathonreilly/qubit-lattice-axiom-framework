@@ -18,10 +18,6 @@ required before any effective status.
 
 Tests Cycle 892's most valuable open question — whether the barrier identification B(R) = supp(R) is load-bearing — and finds the conditionality DISSOLVES: the admissible barrier space is infinite, the axioms force nothing about the barrier, and the quadratic gauge break is BARRIER-INDEPENDENT; the identification only buys expulsion via the strictly weaker premise of containment, already booked as supplied in the Gate-B ledger.
 
-Original verdict: The identification was never load-bearing — the gauge break survives every barrier.
-Scope: Owner-directed gravity-lane closure, window 2; fate map computed on every candidate with two independent engines agreeing on all rows; no axiom surface touched.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Cycle 892's load-bearing conditionality DISSOLVES: the gauge break survives ever
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The identification was never load-bearing — the gauge break survives every barrier.
+- Extraction scope (triage compression; may reflect later context): Owner-directed gravity-lane closure, window 2; fate map computed on every candidate with two independent engines agreeing on all rows; no axiom surface touched.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Resolves the conditionality that Cycle 892's verdict rested on; restriction gate reproduces 892's twelve expulsion rows value-for-value (9/9).
 

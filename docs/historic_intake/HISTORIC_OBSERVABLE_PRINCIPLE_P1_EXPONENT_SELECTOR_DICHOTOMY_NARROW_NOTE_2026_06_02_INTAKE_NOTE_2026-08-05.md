@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 On the independent-subsystem substrate the scalar generator is W = Phi(r) with r = |det(D+J)| composing multiplicatively, the candidate family F_p = |det|^p is a SINGLE ORBIT of the reparametrization group r -> r^p with the same self-similar composite law for every p, so every sector-composition selector is exactly one of two mutually exclusive faces (BLIND or ADD) — neither of which fixes the exponent.
 
-Original verdict: The exponent-fixing admission is irreducible against the sector-composition selector class — verdict 'irreducible_against_precise_class', not the unscoped all-selector reading, which the note says would be worse than nothing.
-Scope: Upgrades the earlier four-selector enumeration to a precisely-defined class strictly larger than it and containing the two steelman escapes; explicitly does NOT assert irreducibility against every conceivable predicate (not a well-posed object).
-Escape conditions (negative claims): The two steelman escapes are reproven to reduce to face (ADD) (extensivity at a gauge = Cauchy); the class is closed under monotone reparametrization of the generator.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The exponent-fixing admission is irreducible against the sector-composition clas
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The exponent-fixing admission is irreducible against the sector-composition selector class — verdict 'irreducible_against_precise_class', not the unscoped all-selector reading, which the note says would be worse than nothing.
+- Extraction scope (triage compression; may reflect later context): Upgrades the earlier four-selector enumeration to a precisely-defined class strictly larger than it and containing the two steelman escapes; explicitly does NOT assert irreducibility against every conceivable predicate (not a well-posed object).
+- Extraction escape conditions (negative claims; triage compression): The two steelman escapes are reproven to reduce to face (ADD) (extensivity at a gauge = Cauchy); the class is closed under monotone reparametrization of the generator.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the open forward path (a) of OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_2026-05-31 (#2456) for that class; pins but does not retire the P1 premise of the parent observable-principle note.
 

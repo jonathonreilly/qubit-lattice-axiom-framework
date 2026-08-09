@@ -18,10 +18,6 @@ required before any effective status.
 
 The repaired computation FALSIFIES the prior seed-singleton wording; the supported surface is the drift-0.20 sampled complex companion pair (0.20, 0) and (0.20, 1), reached by correction rather than by new derivation (reachability_to_target: closes_by_correction).
 
-Original verdict: Prior wording falsified and replaced by a two-element companion pair.
-Scope: One sampled row; not a new axiom and not a family-wide promotion.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Falsification of prior row wording on the record: the repaired computation shows
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Prior wording falsified and replaced by a two-element companion pair.
+- Extraction scope (triage compression; may reflect later context): One sampled row; not a new axiom and not a family-wide promotion.
 - Extraction red flags: A previously asserted singleton is actually a pair — a concrete correction of landed content.
 - Supersession (as known at extraction): Falsifies earlier seed-singleton wording on this row.
 

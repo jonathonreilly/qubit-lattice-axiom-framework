@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Going below the reduced chart to the Cl(3)/Z^3 lattice axiom itself: T_q is exactly Z_3-invariant (= J - I_3), T_delta is purely doublet, T_m has both, and the affine chart is NOT preserved under conjugation by any retained microscopic symmetry - so the retained microscopic stack reduces the ambient 3-real surface to the 2-real residual (delta, q_+) but no retained microscopic-polynomial functional separates it further.
 
-Original verdict: The microscopic Cl(3)/Z^3 axiom is GENUINELY SILENT on (delta, q_+), legitimizing their interpretation as a gauge direction inside the microscopic-invariant sheet; G1 remains OPEN.
-Scope: Retained/theorem-grade atlas input only, with no post-axiom inventions in the theorem hypotheses.
-Escape conditions (negative claims): The missing ingredient is identified precisely as a NONLOCAL selector principle - variational, information-geometric, transport-consistency, or effective-action matching - beyond the retained Cl(3)/Z^3 axiom; the silence is about local microscopic polynomials, not about all possible selectors.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The microscopic verdict: the Cl(3)/Z^3 axiom is GENUINELY SILENT on (delta, q_+)
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The microscopic Cl(3)/Z^3 axiom is GENUINELY SILENT on (delta, q_+), legitimizing their interpretation as a gauge direction inside the microscopic-invariant sheet; G1 remains OPEN.
+- Extraction scope (triage compression; may reflect later context): Retained/theorem-grade atlas input only, with no post-axiom inventions in the theorem hypotheses.
+- Extraction escape conditions (negative claims; triage compression): The missing ingredient is identified precisely as a NONLOCAL selector principle - variational, information-geometric, transport-consistency, or effective-action matching - beyond the retained Cl(3)/Z^3 axiom; the silence is about local microscopic polynomials, not about all possible selectors.
 - Extraction red flags: Carries an explicit do-NOT-use instruction for publication-grade positive quantitative claims.
 - Supersession (as known at extraction): none recorded
 

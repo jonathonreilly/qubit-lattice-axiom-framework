@@ -18,10 +18,6 @@ required before any effective status.
 
 The exact APBC temporal normalization on the minimal hierarchy block has a closed form for ALL finite L_t: A(L_t,u_0) = [1/(4 sqrt(3) u_0^2)] (1 - q^Lt)/(1 + q^Lt) with q = 2 - sqrt(3), recovering A_2 = 1/(8 u_0^2) and A_inf = 1/(4 sqrt(3) u_0^2); the observed prefactor C_obs = 246.22/253.4 = 0.971665351 lies on the same exact curve at L_t,eff = 3.177.
 
-Original verdict: The temporal normalization family is exact and the observed prefactor is not ad hoc, but the hierarchy theorem is still not proved — the remaining gap is an exact finite-L_t order-parameter selection theorem.
-Scope: Spatial-APBC minimal hierarchy block, small-m effective-potential coefficient Delta f = A(L_t,m) m^2 + O(m^4).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact closed form for the APBC temporal normalization at ALL finite L_t — the 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The temporal normalization family is exact and the observed prefactor is not ad hoc, but the hierarchy theorem is still not proved — the remaining gap is an exact finite-L_t order-parameter selection theorem.
+- Extraction scope (triage compression; may reflect later context): Spatial-APBC minimal hierarchy block, small-m effective-potential coefficient Delta f = A(L_t,m) m^2 + O(m^4).
 - Extraction red flags: Note itself flags that it does not prove the hierarchy theorem and that the load-bearing L_t selection step remains open.
 - Supersession (as known at extraction): none recorded
 

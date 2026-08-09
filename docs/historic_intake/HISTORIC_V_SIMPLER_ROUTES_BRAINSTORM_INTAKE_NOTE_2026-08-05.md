@@ -18,10 +18,6 @@ required before any effective status.
 
 Tabulates six prior v routes and their failure modes (naive CW 3.6 TeV; Z_chi with Sigma_1=6.0 giving 226 GeV but Sigma_1 has no clean lattice origin; exact Sigma_1=2.48 giving 652 GeV; Sigma_1=6.12 with alpha_V=0.49 hitting 246 exactly but at a non-Planck coupling; RG crossover 13 decades high; taste threshold 1.66 TeV), diagnosing that every attempt pins N_eff y_t^2 = 2.05 through a scheme choice amplified by the exponential. Route 1 proposes a power law instead: v = M_Pl alpha_s^16.1, and M_Pl (0.092)^16 = 277 GeV, 13% above 246, possibly from a 16x16 staggered taste determinant.
 
-Original verdict: No route is established; the alpha_s^{N_taste} coincidence is called striking but highly speculative, with the named test being whether the product of 16 taste-split staggered eigenvalues scales as alpha_s^16.
-Scope: Brainstorm of alternative derivations avoiding exponential sensitivity; feasibility scored per route (Route 1: 7/10).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The honest V_* meta-note: six routes tabulated with failure modes, numerology se
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No route is established; the alpha_s^{N_taste} coincidence is called striking but highly speculative, with the named test being whether the product of 16 taste-split staggered eigenvalues scales as alpha_s^16.
+- Extraction scope (triage compression; may reflect later context): Brainstorm of alternative derivations avoiding exponential sensitivity; feasibility scored per route (Route 1: 7/10).
 - Extraction red flags: Self-flags numerology risk: the headline route rests on a numerical coincidence (exponent 16.1 vs 16 tastes) with an admittedly underived mechanism, and it records that an earlier exact-246 result used alpha_V = 0.49, not the Planck-scale coupling.
 - Supersession (as known at extraction): Meta-note over the whole April V_* cluster (2101-2105); records that the 246 GeV hits in that cluster rest on scheme choices.
 

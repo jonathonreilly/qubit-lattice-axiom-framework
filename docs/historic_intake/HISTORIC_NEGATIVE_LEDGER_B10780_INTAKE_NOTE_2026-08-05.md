@@ -18,10 +18,6 @@ required before any effective status.
 
 The old G_crit ~= 0.011 threshold is NOT supported: in the live harness escape remains above one at G = 0.011, G = 0.012 and G = 0.020. A smooth collapse law is not claimed because some rows do not converge within the fixed iteration cap, so the packet is only a finite grid assertion.
 
-Original verdict: An archived critical-coupling value is retracted with three explicit counter-measurements.
-Scope: The live backreaction harness on a finite grid.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ RETRACTION of an archived numerical threshold: G_crit ~= 0.011 is NOT supported 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An archived critical-coupling value is retracted with three explicit counter-measurements.
+- Extraction scope (triage compression; may reflect later context): The live backreaction harness on a finite grid.
 - Extraction red flags: an archived numerical threshold G_crit ~= 0.011 was wrong and is retracted here
 - Supersession (as known at extraction): RETRACTION of the archived G_crit ~= 0.011 claim.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Status open at checkpoint 1: the derivation attempt and milestone review are incomplete and THE OLD POSITIVE COMPARISON STILL CONTAINS FORBIDDEN OBSERVATIONAL/FITTED INPUTS. Minimal axioms are a permitted baseline but explicitly insufficient to define the tested dynamics and observable.
 
-Original verdict: No proposed-retained wording allowed at this checkpoint.
-Scope: Three independently audited dependencies: the lensing adjoint kernel note (exact current-surface support), the finite-path explanation note and the centroid multipole no-go (both narrow no-gos).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Verification-integrity checkpoint record: at checkpoint 1 THE OLD POSITIVE COMPA
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No proposed-retained wording allowed at this checkpoint.
+- Extraction scope (triage compression; may reflect later context): Three independently audited dependencies: the lensing adjoint kernel note (exact current-surface support), the finite-path explanation note and the centroid multipole no-go (both narrow no-gos).
 - Extraction red flags: Explicitly records that a previously positive comparison contains forbidden observational/fitted inputs - a live contamination finding on landed content.
 - Supersession (as known at extraction): none recorded
 

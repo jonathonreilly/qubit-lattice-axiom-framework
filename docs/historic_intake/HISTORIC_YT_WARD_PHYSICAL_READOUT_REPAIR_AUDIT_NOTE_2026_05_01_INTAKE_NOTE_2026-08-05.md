@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Converts the audit objection into an executable repair checklist: the ledger rationale for yt_ward_identity_derivation_theorem is that the load-bearing move defines the top-Yukawa readout as the H_unit matrix element and then uses that definition as the derivation, so the repaired route must independently derive source/HS normalization, SSB VEV division and vertex extraction, chirality projection from the Q_L scalar bilinear to Qbar_L H q_R, and the remaining readout maps. Runner SUMMARY: PASS=12 FAIL=0.
 
-Original verdict: Exact negative boundary / open repair map — the repo contains prose and arithmetic for the pieces but the audit-clean dependency state is still open.
-Scope: The repair requirements for the demoted Ward derivation theorem.
-Escape conditions (negative claims): A tree-level operator-matching theorem and runner computing functional derivatives before and after SSB, tracking chirality and scalar-leg factors, and proving no extra normalization enters.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ The audit-derived repair map: the repo contains prose and arithmetic for the War
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact negative boundary / open repair map — the repo contains prose and arithmetic for the pieces but the audit-clean dependency state is still open.
+- Extraction scope (triage compression; may reflect later context): The repair requirements for the demoted Ward derivation theorem.
+- Extraction escape conditions (negative claims; triage compression): A tree-level operator-matching theorem and runner computing functional derivatives before and after SSB, tracking chirality and scalar-leg factors, and proving no extra normalization enters.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The audit-derived work order that generates 2481 and, downstream, the entire May scalar-pole/LSZ lane.
 

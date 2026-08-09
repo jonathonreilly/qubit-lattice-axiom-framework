@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The one-plaquette Wilson weight has infinitely many strictly positive SU(3) character coefficients - c_(m,0)(beta) >= t^m/m!, so at beta = 6 c_(m,0) >= 1/m! (verified numerically for 0 <= m <= 12) - so no finite face alphabet can reproduce the exact law, and the obstruction appears in the singularity-free sector before any B or X defect exists.
 
-Original verdict: The exact law is closed but does not compress to a small finite B/X low-carrier package - a stronger and cleaner endpoint than 'the law is still missing'.
-Scope: Applies to any exact compression to finitely many face carriers plus finitely many singular-link carrier types; small low-carrier packages survive as finite-order/finite-window corollaries.
-Escape conditions (negative claims): The negative targets only EXACT global compression: low-carrier sector theorems (p, p_8, B, X, first non-disk split, disk sector) remain valid as explicit low-order / finite-window corollaries, and the full character/intertwiner foam law is untouched.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact no-go: infinitely many positive character coefficients, so no finite low-c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The exact law is closed but does not compress to a small finite B/X low-carrier package - a stronger and cleaner endpoint than 'the law is still missing'.
+- Extraction scope (triage compression; may reflect later context): Applies to any exact compression to finitely many face carriers plus finitely many singular-link carrier types; small low-carrier packages survive as finite-order/finite-window corollaries.
+- Extraction escape conditions (negative claims; triage compression): The negative targets only EXACT global compression: low-carrier sector theorems (p, p_8, B, X, first non-disk split, disk sector) remain valid as explicit low-order / finite-window corollaries, and the full character/intertwiner foam law is untouched.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the last simplification hope for CHARACTER_INTERTWINER_FOAM_LAW_NOTE.md, which remains the canonical exact law.
 

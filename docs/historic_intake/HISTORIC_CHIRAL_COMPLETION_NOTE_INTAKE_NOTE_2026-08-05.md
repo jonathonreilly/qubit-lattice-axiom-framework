@@ -18,10 +18,6 @@ required before any effective status.
 
 Derives the right-handed singlet sector's hypercharges from the lattice origin and verifies full anomaly cancellation for the 16-state generation, together with the SU(5) GUT embedding and a uniqueness argument.
 
-Original verdict: The chiral completion closes: right-handed hypercharges are derived rather than assigned, and all anomalies cancel.
-Scope: Depends on the SU(3) formal theorem and hypercharge identification runners.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Era structural closure: right-handed hypercharges derived, full 16-state anomaly
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The chiral completion closes: right-handed hypercharges are derived rather than assigned, and all anomalies cancel.
+- Extraction scope (triage compression; may reflect later context): Depends on the SU(3) formal theorem and hypercharge identification runners.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Assembles g_* = 106.75 from framework gauge+generation structure given seven named residuals; the retained core is SU(3), SU(2), n_gen=3, N_c=3, spin-statistics cardinality, the 7/8 ratio, hypercharge-value enumeration, and one-generation anomaly singlet completion. The advance is retiring the monolithic external 'declared SM census' import and replacing it with a framework-internal assembly whose residuals are framework-derivation targets.
 
-Original verdict: bounded_theorem, explicitly NOT positive_theorem/retained because the residuals are not retained; item 2 of the retained-grade checklist ('no open imports remain') is intentionally not satisfied; V1-V5 promotion value gate all PASS.
-Scope: Thermal regime T > EW crossover with RH-neutrino thermal exclusion as honest sector imports; the value matches Kolb-Turner Table 3.1 but the assembly is built from framework structure, not fitted to the value.
-Escape conditions (negative claims): Seven open imports queued for retirement: R-U1Y hypercharge existence, R-POL massless-vector 2-polarization, R-HIGGS single-doublet minimality, R-MATTER one-generation completion, R-FSB fermionic Stefan-Boltzmann, R-SPIN per-site spin-1/2, I12 RH-neutrino thermal exclusion.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Bounded positive worth registering: g_* = 106.75 assembled from framework gauge+
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): bounded_theorem, explicitly NOT positive_theorem/retained because the residuals are not retained; item 2 of the retained-grade checklist ('no open imports remain') is intentionally not satisfied; V1-V5 promotion value gate all PASS.
+- Extraction scope (triage compression; may reflect later context): Thermal regime T > EW crossover with RH-neutrino thermal exclusion as honest sector imports; the value matches Kolb-Turner Table 3.1 but the assembly is built from framework structure, not fitted to the value.
+- Extraction escape conditions (negative claims; triage compression): Seven open imports queued for retirement: R-U1Y hypercharge existence, R-POL massless-vector 2-polarization, R-HIGGS single-doublet minimality, R-MATTER one-generation completion, R-FSB fermionic Stefan-Boltzmann, R-SPIN per-site spin-1/2, I12 RH-neutrino thermal exclusion.
 - Extraction red flags: the headline number 106.75 coincides with the textbook Standard Model value; the certificate itself flags that if nu_R were thermalized Dirac the framework would give 112, so the match is regime-import-dependent
 - Supersession (as known at extraction): none recorded
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Proves the Higgs Z_3 charge delta = 1 is not L-independent: the 1D transition element <z+delta|eps|z> factorizes as a geometric sum with phase phi_delta = pi(3 - 2 delta)/3, and phi_1 and phi_2 have equal magnitude pi/3, so |T(delta=1)| = |T(delta=2)| exactly for every even L.
 
-Original verdict: Sharp obstruction: the charge-1 selection cannot be made universal on this route, and the CKM lane stays bounded.
-Scope: Staggered mass operator eps(x) on a d-dimensional cubic lattice with Z_3 taste projectors; threefold analytic obstruction.
-Escape conditions (negative claims): The equality is a consequence of complex-conjugate phase symmetry for this operator — a Higgs candidate whose transition phases are not conjugate-symmetric escapes it.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Sharp obstruction: the Higgs Z_3 charge-1 selection cannot be universal (phase e
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Sharp obstruction: the charge-1 selection cannot be made universal on this route, and the CKM lane stays bounded.
+- Extraction scope (triage compression; may reflect later context): Staggered mass operator eps(x) on a d-dimensional cubic lattice with Z_3 taste projectors; threefold analytic obstruction.
+- Extraction escape conditions (negative claims; triage compression): The equality is a consequence of complex-conjugate phase symmetry for this operator — a Higgs candidate whose transition phases are not conjugate-symmetric escapes it.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Kills the staggered mass operator route, which the quartic-selector VEV note then supersedes.
 

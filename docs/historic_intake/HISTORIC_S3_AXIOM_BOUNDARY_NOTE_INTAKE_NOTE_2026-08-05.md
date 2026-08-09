@@ -20,10 +20,6 @@ required before any effective status.
 
 PASS=29 FAIL=0: the S^3 compactification lane is bounded by exactly one irreducible axiom A5 (lattice-is-physical), the same axiom bounding generation physicality; with A5 the 14-step chain (ball growth -> cone-cap -> all links S^2 -> pi_1=0 -> Perelman+Moise) forces S^3 with no free parameters, and the cap-map is unique since MCG(S^2)=Z_2 and both elements give S^3.
 
-Original verdict: BOUNDED modulo A5, explicitly NOT CLOSED; irreducibility witness is standard LQCD, which uses A1-A4 without A5 consistently.
-Scope: Axioms A1-A5; standard PL topology (link condition, van Kampen, Moise 1952, Perelman 2003, Smale/Alexander).
-Escape conditions (negative claims): Without A5 three escape routes are named: the continuum limit does not fix topology, spatial topology becomes a free GR parameter, and the growth axiom is a lattice-level statement lost in the continuum.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The S^3 axiom-boundary theorem: the lane bounded by exactly A5 (29/29), same axi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED modulo A5, explicitly NOT CLOSED; irreducibility witness is standard LQCD, which uses A1-A4 without A5 consistently.
+- Extraction scope (triage compression; may reflect later context): Axioms A1-A5; standard PL topology (link condition, van Kampen, Moise 1952, Perelman 2003, Smale/Alexander).
+- Extraction escape conditions (negative claims; triage compression): Without A5 three escape routes are named: the continuum limit does not fix topology, spatial topology becomes a free GR parameter, and the growth axiom is a lattice-level statement lost in the continuum.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Unifies the bounded status of the S^3 and generation lanes; FAMILY TERMINAL for the 'what bounds S^3' question.
 

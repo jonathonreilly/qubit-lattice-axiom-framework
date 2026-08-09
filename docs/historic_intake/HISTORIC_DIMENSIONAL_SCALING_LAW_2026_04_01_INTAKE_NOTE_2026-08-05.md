@@ -18,10 +18,6 @@ required before any effective status.
 
 Retracts the alpha=(d-1)/2 law: with unified matched parameters alpha is 0.13/0.35/0.64/0.44 for d=1..4 against the predicted 0.0/0.5/1.0/1.5, so the exponent is graph-density dependent, not a pure function of d. What survives is that alpha increases monotonically with spatial dimension and can reach F~M at 3 spatial dimensions under tuned parameters (connect_radius=4.5, gap=5).
 
-Original verdict: PARTIALLY CONFIRMED - monotonic trend HIGH confidence, exact formula LOW and disowned.
-Scope: Unified d=1-4 comparison at matched graph parameters; 5D unreliable due to sparsity.
-Escape conditions (negative claims): The (d-1)/2 pattern could still emerge in a continuum limit if connect_radius/gap/nodes_per_layer are scaled together; not testable on finite discrete graphs here.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Retraction on the record: with unified matched parameters alpha runs 0.13/0.35/0
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PARTIALLY CONFIRMED - monotonic trend HIGH confidence, exact formula LOW and disowned.
+- Extraction scope (triage compression; may reflect later context): Unified d=1-4 comparison at matched graph parameters; 5D unreliable due to sparsity.
+- Extraction escape conditions (negative claims; triage compression): The (d-1)/2 pattern could still emerge in a continuum limit if connect_radius/gap/nodes_per_layer are scaled together; not testable on finite discrete graphs here.
 - Extraction red flags: None beyond the retraction it carries; note is honest about parameter dependence.
 - Supersession (as known at extraction): Corrects the headline claim of idx 10000 (dimensional-progression, same date).
 

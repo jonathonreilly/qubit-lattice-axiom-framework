@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 No examined family derives the per-decoupling factor alpha_s = 1/(4 pi u_0^2) = 0.1033038 multiplicatively at u_0-degree -2, for two exact structural reasons: the 4 pi is born as an ADDITIVE degree-0 trace normalization while the eigenvalue product |lambda_omega| = u_0 sqrt(3 + sin^2 omega) is rational in u_0^2 at degree +1 with no 4 pi, and the additive-to-multiplicative shortfall is exactly ln(pi), which by Lindemann-Weierstrass no algebraic exponent on the rational determinant share can produce.
 
-Original verdict: The conversion is necessarily an admission - the D=4 dimensional readout R coupled to the observable identification B5; the note does not close the DELTA0 gate and does not derive alpha_s.
-Scope: Bounded over the examined classes {exchange, vertex-enhancement, free-energy/ln-Z, zeta-det, heat-kernel, holonomy, det-ratio} plus five readout maps; every leg object is consumed by citation, not re-derived.
-Escape conditions (negative claims): The escape is explicitly identified as an admission rather than a mechanism: deriving the readout coefficient that lands +Delta_S = ln(4 pi) + 2 ln(u_0) = 2.270081 per decoupling. Any unexamined analytic class also escapes the scope by construction.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ DELTA0 B4 CAPSTONE: no examined family derives alpha_s = 1/(4 pi u_0^2) multipli
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The conversion is necessarily an admission - the D=4 dimensional readout R coupled to the observable identification B5; the note does not close the DELTA0 gate and does not derive alpha_s.
+- Extraction scope (triage compression; may reflect later context): Bounded over the examined classes {exchange, vertex-enhancement, free-energy/ln-Z, zeta-det, heat-kernel, holonomy, det-ratio} plus five readout maps; every leg object is consumed by citation, not re-derived.
+- Extraction escape conditions (negative claims; triage compression): The escape is explicitly identified as an admission rather than a mechanism: deriving the readout coefficient that lands +Delta_S = ln(4 pi) + 2 ln(u_0) = 2.270081 per decoupling. Any unexamined analytic class also escapes the scope by construction.
 - Extraction red flags: Repeatedly disclaims its own label: the bounded_theorem is a source-side claim-boundary declaration, not an audit verdict; it sets no status and changes no v-row.
 - Supersession (as known at extraction): CAPSTONE of the six-leg B4 portfolio, assembling the observable enumeration (06-11), the bare-class ceiling (idx 682), the NJL-RPA probe, the free-energy readout probe (idx 683) and the Matsubara determinant-ratio theorem into a reclassification proposal.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 April applied chain claiming the top mass is predicted with no free parameters: STEP 1 derives y_t = g_s/sqrt(6) exactly from the d=3 Kogut-Susskind Cl(3) trace identity (G_5 central, sum_mu G_mu G_5 G_mu = 3 G_5 I_8), with Cl(3) preservation under 2x2x2 block-spin RG as the second exact sub-step and lattice-to-continuum matching bounded at ~O(alpha_s/pi) ~ 3%.
 
-Original verdict: BOUNDED, not CLOSED — per the cited review, bare theorem closed but renormalized matching still open; the 1-loop matching has not been performed and V-to-MSbar conversion is only 1-loop.
-Scope: The full bare-to-renormalized y_t chain applied numerically on Cl(3)/Z^3 under axiom A5.
-Escape conditions (negative claims): Perform the 2-loop lattice-to-continuum matching and the full V-scheme to MSbar conversion for this action.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The April applied-chain 'no free parameters' top-mass claim WITH its own BOUNDED
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED, not CLOSED — per the cited review, bare theorem closed but renormalized matching still open; the 1-loop matching has not been performed and V-to-MSbar conversion is only 1-loop.
+- Extraction scope (triage compression; may reflect later context): The full bare-to-renormalized y_t chain applied numerically on Cl(3)/Z^3 under axiom A5.
+- Extraction escape conditions (negative claims; triage compression): Perform the 2-loop lattice-to-continuum matching and the full V-scheme to MSbar conversion for this action.
 - Extraction red flags: Claims 'no free parameters' prediction of the top mass while the load-bearing bare boundary condition is the Ward identity whose H_unit identification step later failed audit (see 2463).
 - Supersession (as known at extraction): April predecessor of the whole PR #230 lane; its 'bare theorem closed' premise is the Ward identity later classified audited_renaming (2401) and forbidden as a proof input (2461/2462).
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The minimal face alphabet {3, 3bar, 8} (with p_3(6) = 0.422531739649983, p_8(6) = 0.162259799479938) carries only the 8 genus-1 ribbon and 12 quadrivalent crossing surfaces, failing on the 48 mixed and 4 trivalent singular surfaces; the first honest object is therefore a quotient foam with explicit singular-link defect slots X (two-channel, coefficients +1/8 and -1/24) and B (one-channel baryon junction, coefficient 1/6).
 
-Original verdict: Neither a scalar p-only surface gas nor a face-label-only character foam suffices; explicit local singular-link defect carriers are forced.
-Scope: First genuine non-disk order at p^14, where the sector splits into four exact geometric classes with multiplicities 8, 12, 48, 4.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ First-nondisk foam theorem: the exact closure object must be sheet-enriched (sca
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Neither a scalar p-only surface gas nor a face-label-only character foam suffices; explicit local singular-link defect carriers are forced.
+- Extraction scope (triage compression; may reflect later context): First genuine non-disk order at p^14, where the sector splits into four exact geometric classes with multiplicities 8, 12, 48, 4.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Successor to FIRST_NONDISK_Z3_LIFT_THEOREM_NOTE.md (idx 473), which ruled out the pure p-only gas; its own finite-carrier hope is then killed by FINITE_BX_LOW_CARRIER_NO_GO_NOTE.md (idx 459).
 

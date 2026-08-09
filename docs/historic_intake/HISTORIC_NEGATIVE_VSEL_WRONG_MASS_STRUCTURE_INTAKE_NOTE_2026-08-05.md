@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 At the EWSB vacuum phi_* = (0,0,v) the projected tree-level hw=1 mass matrix is exactly zero (S_3 flips the third bit, moving hw=1 states out of the sector), and the one-loop effective mass from delta-phi exchange uses the V_sel Hessian spectrum m^2(delta phi_1) = m^2(delta phi_2) = 64 v^2 with m^2(delta phi_3) = 0 — producing no hierarchical three-generation spectrum.
 
-Original verdict: Any framework claim relying on this specific mechanism as the source of mass hierarchy is FALSIFIED.
-Scope: The natural minimal coupling L_int = y sum_i phi_i (psi-bar S_i psi) only.
-Escape conditions (negative claims): Explicitly does not rule out: V_sel plus an additional mechanism (e.g. explicit Yukawa couplings to a separate Higgs with flavor structure); more complex fermion-V_sel couplings (derivative, or explicit S_i S_j tensors); or V_sel playing a different role such as weak-axis selection rather than mass generation.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ SELF-FALSIFICATION: the V_sel mass mechanism gives exactly zero tree-level proje
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Any framework claim relying on this specific mechanism as the source of mass hierarchy is FALSIFIED.
+- Extraction scope (triage compression; may reflect later context): The natural minimal coupling L_int = y sum_i phi_i (psi-bar S_i psi) only.
+- Extraction escape conditions (negative claims; triage compression): Explicitly does not rule out: V_sel plus an additional mechanism (e.g. explicit Yukawa couplings to a separate Higgs with flavor structure); more complex fermion-V_sel couplings (derivative, or explicit S_i S_j tensors); or V_sel playing a different role such as weak-axis selection rather than mass generation.
 - Extraction red flags: A self-falsification of a framework mechanism.
 - Supersession (as known at extraction): none recorded
 

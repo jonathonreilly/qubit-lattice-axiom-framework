@@ -18,10 +18,6 @@ required before any effective status.
 
 A DEMOTION: removes a false theorem-shaped surface by retyping docs/ASSUMPTION_DERIVATION_LEDGER.md as meta, with a runner firewall verifying the metadata boundary and the pipeline reporting claim_type meta, effective_status meta, and no remaining audit-queue entry. Regenerated audit surface after the change: audited_conditional 20, audit queue ready 52.
 
-Original verdict: A demotion/cleanup, not a theorem proof and not an audit verdict.
-Scope: One document's claim type.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Demotion of landed content: docs/ASSUMPTION_DERIVATION_LEDGER.md retyped as meta
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A demotion/cleanup, not a theorem proof and not an audit verdict.
+- Extraction scope (triage compression; may reflect later context): One document's claim type.
 - Extraction red flags: A broad roadmap ledger had been carrying theorem-shaped authority for ingredient statuses - the corrected form is metadata.
 - Supersession (as known at extraction): DEMOTES LANDED CONTENT: ASSUMPTION_DERIVATION_LEDGER.md loses theorem-shaped status.
 

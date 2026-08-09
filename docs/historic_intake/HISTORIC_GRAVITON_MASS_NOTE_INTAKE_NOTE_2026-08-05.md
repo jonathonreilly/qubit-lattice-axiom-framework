@@ -18,10 +18,6 @@ required before any effective status.
 
 Lattice dispersion gives no mass gap (omega(k=0) = 0 exactly, with only a -(a^2/12)k^4 correction) but S^3 topology does: the Lichnerowicz TT eigenvalues [l(l+2)-2]/R^2 give m_g = sqrt(6) hbar H_0/c^2 = 3.52e-33 eV at l=2, which is 10^10 below the strongest model-independent bound (LIGO O3 at 1.76e-23 eV).
 
-Original verdict: A sharp, falsifiable prediction undetectable with current technology, with Lambda (l=1) and m_g (l=2) from the same S^3 spectrum giving m_g^2 = (8/3) hbar^2 Lambda/c^2.
-Scope: Requires the framework's S^3 spatial topology with R = c/H_0.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Falsifiable graviton mass from S^3 topology (m_g = sqrt(6) hbar H_0/c^2) — lat
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharp, falsifiable prediction undetectable with current technology, with Lambda (l=1) and m_g (l=2) from the same S^3 spectrum giving m_g^2 = (8/3) hbar^2 Lambda/c^2.
+- Extraction scope (triage compression; may reflect later context): Requires the framework's S^3 spatial topology with R = c/H_0.
 - Extraction red flags: Argues the vDVZ discontinuity does not apply because the mass is topological rather than Fierz-Pauli - a load-bearing claim asserted rather than proved.
 - Supersession (as known at extraction): Predecessor to the record-forced scale note (idx 644), which takes m_g^2 = 2Lambda as input and adds the reason the SCALE is cosmological rather than Planck or zero.
 

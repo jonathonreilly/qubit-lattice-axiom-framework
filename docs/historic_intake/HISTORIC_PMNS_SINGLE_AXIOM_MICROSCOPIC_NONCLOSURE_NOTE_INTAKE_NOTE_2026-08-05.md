@@ -18,10 +18,6 @@ required before any effective status.
 
 The projected native Cl(3) operator span on each hw=1 triplet is the FULL matrix algebra M(3,C), containing the passive monomial basis, the active seed basis and the active corner-breaking basis, and exact sector exchange flips the active-sector choice - so the sole axiom fixes the carrier but not the sector-orientation bit, the passive monomial law, the active seed pair or the 5-real corner-breaking source.
 
-Original verdict: Full positive PMNS/neutrino closure is not derivable from the sole axiom alone - the honest negative endpoint for the closeout plan.
-Scope: Sole axiom Cl(3) on Z^3 with no additional PMNS-side axiom; a global statement about the whole microscopic carrier, not a local no-go on one formula family.
-Escape conditions (negative claims): Escaped only by a further DERIVED dynamical law inside the same framework, not by more repackaging of the sole axiom.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -108,6 +104,9 @@ The global PMNS no-go the whole family is organized around: the projected native
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Full positive PMNS/neutrino closure is not derivable from the sole axiom alone - the honest negative endpoint for the closeout plan.
+- Extraction scope (triage compression; may reflect later context): Sole axiom Cl(3) on Z^3 with no additional PMNS-side axiom; a global statement about the whole microscopic carrier, not a local no-go on one formula family.
+- Extraction escape conditions (negative claims; triage compression): Escaped only by a further DERIVED dynamical law inside the same framework, not by more repackaging of the sole axiom.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The global no-go the whole April PMNS family is organized around; its scope is later narrowed by PMNS_DYNAMICAL_REALIZATION_SUBFAMILY (carrier nonclosure is not dynamical nonclosure).
 

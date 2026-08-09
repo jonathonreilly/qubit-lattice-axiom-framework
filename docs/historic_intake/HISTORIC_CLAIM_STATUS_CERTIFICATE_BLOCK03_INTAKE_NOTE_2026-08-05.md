@@ -18,10 +18,6 @@ required before any effective status.
 
 DEMOTION record: block03 (Record/log bridge forced-interface claim) demoted — combined lens returned 4 blockers refuting the central claim (semantic-lift countermodel; codomain switch; missing boundedness; non-exhaustive forcing); block ARCHIVED without repair per the value gate (repaired remainder would be near-churn); NO PR opened.
 
-Original verdict: actual_current_surface_status: demotion; review-loop demote
-Scope: bridge-conditional on assumed (R1)/(R2); slope, (R2) alternative, transport, physical half open
-Escape conditions (negative claims): cluster-cap evaluator had said OPEN-the-PR before review demoted it
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Honest-demotion terminal for the theta-cross-sector block03: the Record/log brid
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): actual_current_surface_status: demotion; review-loop demote
+- Extraction scope (triage compression; may reflect later context): bridge-conditional on assumed (R1)/(R2); slope, (R2) alternative, transport, physical half open
+- Extraction escape conditions (negative claims; triage compression): cluster-cap evaluator had said OPEN-the-PR before review demoted it
 - Extraction red flags: cluster-cap evaluator approved opening before refutation — evaluator/review disagreement inside one pack
 - Supersession (as known at extraction): terminal for block03: archived, no PR; supersedes ARCHIVED_BLOCK03_DRAFT_NOTE.md
 

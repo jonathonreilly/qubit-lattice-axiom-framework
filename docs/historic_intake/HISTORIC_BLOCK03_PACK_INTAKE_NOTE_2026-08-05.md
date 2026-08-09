@@ -18,10 +18,6 @@ required before any effective status.
 
 Conditional theorem chain making r = 1/2 the unique durably registrable value, conditional on the named R-D bridge (NOT adopted) plus the two-sector partition prong of the custody decomposition. New content includes the complete closed-simplex stationary set with the previously undiscussed r = infinity point and its Brannen-endpoint identification, an explicit stationarity-versus-attraction scope separation, the knife-edge exactness quantification, and replacement of the equal-power weight admission by a corollary.
 
-Original verdict: Cluster-cap verdict OPEN (genuinely new content, third Koide PR of the campaign under a 5-PR/24h cap); local self-review pass, independent audit required.
-Scope: Partial because conditional: custody prong (ii) is replaced by a corollary only under R-D plus prong (i); nothing is retired on the actual current surface.
-Escape conditions (negative claims): Open checkable question named for the owner: are the R-D and orbit-occupancy framings equivalent on the current surface? They are the same selection in two premise shapes.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The positive-side conditional for the same adjudication: a conditional theorem c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Cluster-cap verdict OPEN (genuinely new content, third Koide PR of the campaign under a 5-PR/24h cap); local self-review pass, independent audit required.
+- Extraction scope (triage compression; may reflect later context): Partial because conditional: custody prong (ii) is replaced by a corollary only under R-D plus prong (i); nothing is retired on the actual current surface.
+- Extraction escape conditions (negative claims; triage compression): Open checkable question named for the owner: are the R-D and orbit-occupancy framings equivalent on the current surface? They are the same selection in two premise shapes.
 - Extraction red flags: Directly relevant to the memory note that the R-D bridge is UNADOPTED — this pack is where the R-D-versus-orbit-occupancy equivalence question was first posed to the owner. Also records that its own interface checks initially failed on hard-wrapped source lines and that an equipartition check initially solved for a composite expression.
 - Supersession (as known at extraction): Targets the admitted prong (ii) of charged_lepton_koide_value_full_chain_of_custody_2026-06-02 and the stabilizer-fails verdict; distinct from PRs #3551 and #3553 (blocks 01/02).
 

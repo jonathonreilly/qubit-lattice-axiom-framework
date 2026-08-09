@@ -18,10 +18,6 @@ required before any effective status.
 
 Separate held-only evaluator (SHA-256 f2a1c2a7...) with no train, fit, or refit path, executed once under an explicit root-authorization token. Route B held: all five phases give zero E/L and inverse residual, counts (5,5,5,5,5) over 25 blocks with exact period five, and preregistered discriminators B D1 L1 = 0.7587 / 0.5534 and B D2 N=4 TV = 0.9985 / 0.9958 on the x-plus-held and held-skew rays. Route A held: every exact N=4 cylinder contains all 625 words with N=4 to N=3 projective residual zero (x-plus-held) and 8.67e-19 (held-skew); no seed was drawn and the full framework Record remained None.
 
-Original verdict: Held constructive actuality/admitted-atom result and a decisive non-Born comparator — TV distances near 1.0 confirm the supplied law's history statistics are not Born; it does not establish the framework Record or empirical truth of the ontology.
-Scope: Held transfer of branch-conditional consequences of a supplied law plus a supplied actual-carrier overlay; not unitary collapse and not pointer copying.
-Escape conditions (negative claims): No shared obstruction and no axiom pressure; the note lists explicit non-transfers (a held A failure does not test an actual stochastic draw, a B failure does not test stochastic or bath routes, a finite bath failure would not test global selection).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ TERMINAL of the Cycle-508 trio: a separate held-only evaluator (no train/fit/ref
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Held constructive actuality/admitted-atom result and a decisive non-Born comparator — TV distances near 1.0 confirm the supplied law's history statistics are not Born; it does not establish the framework Record or empirical truth of the ontology.
+- Extraction scope (triage compression; may reflect later context): Held transfer of branch-conditional consequences of a supplied law plus a supplied actual-carrier overlay; not unitary collapse and not pointer copying.
+- Extraction escape conditions (negative claims; triage compression): No shared obstruction and no axiom pressure; the note lists explicit non-transfers (a held A failure does not test an actual stochastic draw, a B failure does not test stochastic or bath routes, a finite bath failure would not test global selection).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the Cycle-508 trio (preflight 2769, train 2767, held 2768). Carries an addendum that supersedes only ambiguous type language in the frozen prose, not any result.
 

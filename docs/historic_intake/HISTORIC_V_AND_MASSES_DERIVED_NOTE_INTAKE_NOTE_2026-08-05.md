@@ -18,10 +18,6 @@ required before any effective status.
 
 Claims to close five imports (v, M_W, M_Z, m_b, m_c, alpha_s(M_Z)) from Cl(3)-on-Z^3: with a taste threshold at M_taste ~ 1.4e15 GeV the derived sin^2(theta_W)(M_Z) = 0.2308, alpha_s(M_Z) = 0.1182, alpha_em(M_Z) = 0.0078 and g_2(M_Z) = 0.652 all land within 0.2% of PDG (Grade A), while mass ratios are only order-of-magnitude (m_b/m_t 0.010 vs 0.024, m_c/m_t 9.5e-5 vs 7.4e-3) and the absolute VEV from v = M_Pl exp(-8 pi^2/(N_taste y_t^2)) with N_taste=16, y_t(M_Pl)=0.439 gives exponent 25.6 and v ~ 5e7 GeV, five orders too high (Grade D; the needed exponent is ~38).
 
-Original verdict: The STRUCTURAL derivation chain is complete — every import closed by a framework calculation — but the numerical value of v is off by five orders and the remaining work is named as calculations, not new physics.
-Scope: 1-loop CW with SM RGE running plus a taste threshold; 10 structural checks pass.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The April V_* head claim ('every import closed') WITH its title flag — the era
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The STRUCTURAL derivation chain is complete — every import closed by a framework calculation — but the numerical value of v is off by five orders and the remaining work is named as calculations, not new physics.
+- Extraction scope (triage compression; may reflect later context): 1-loop CW with SM RGE running plus a taste threshold; 10 structural checks pass.
 - Extraction red flags: Title says masses are 'Derived' while the note's own grades put v at D (five orders high) and the b/c mass ratios at 'right order' only; the alpha_s(M_Z) row appears twice with conflicting values (0.1182 Grade A vs 0.095 via derived thresholds, 20% off).
 - Supersession (as known at extraction): Head of the April V_* cluster (2101-2106); its N_taste = 16 choice is explicitly corrected by the N_eff note at idx 2104 ('the old N_eff = 16 was wrong').
 

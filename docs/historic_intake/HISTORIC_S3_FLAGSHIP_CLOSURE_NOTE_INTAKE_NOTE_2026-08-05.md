@@ -18,10 +18,6 @@ required before any effective status.
 
 Flagship status note holding the S^3 lane at BOUNDED and explicitly superseding S3_CLOSURE_CASE_NOTE, which claimed CLOSED and is labelled overclaimed. Separates 11 framework-internal computed results (19/19 links at R=2, 35/35 cap-uniqueness checks, chi=2 boundaries at R=2..5) from five cited external theorems (Perelman, Moise, Alexander trick, MCG(S^2)=Z/2, PL closure classification).
 
-Original verdict: BOUNDED and strengthened, not closed: the claim depends on cited external mathematics rather than framework-internal derivation.
-Scope: Framework axioms A1, A2, A3 (Kawamoto-Smit homogeneity) and A5; aligns with the Codex publication-state authority.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The flagship BOUNDED holding note explicitly superseding the CLOSED overclaim â€
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED and strengthened, not closed: the claim depends on cited external mathematics rather than framework-internal derivation.
+- Extraction scope (triage compression; may reflect later context): Framework axioms A1, A2, A3 (Kawamoto-Smit homogeneity) and A5; aligns with the Codex publication-state authority.
 - Extraction red flags: Records that a prior note in the same family overclaimed CLOSED status; also stands against three same-day sibling notes asserting closure by other routes.
 - Supersession (as known at extraction): Explicitly supersedes and corrects S3_CLOSURE_CASE_NOTE (idx 1849) as overclaimed; itself challenged the same day by the computational-closure notes idx 1872, 1868, 1874.
 

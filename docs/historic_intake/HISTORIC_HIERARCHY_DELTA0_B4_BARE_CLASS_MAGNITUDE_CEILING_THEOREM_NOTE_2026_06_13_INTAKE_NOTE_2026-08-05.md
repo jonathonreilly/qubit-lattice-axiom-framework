@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The anchored single-bond transfer row has exactly 6 nonzero cross-taste channels at amplitude +-i/8 with native sum exactly 0, so by Cauchy-Schwarz the coherent ceiling over ALL unit-modulus phases is (6/8)^2 = 9/16 and, with sigma_U^2 < 1 strictly for every threshold-compliant bath, sup factor/alpha_s = 9/16 = 0.5625 < 1 unattained - a per-staircase contrast of (9/16)^16 = 1.00e-4 of the required alpha_s^16.
 
-Original verdict: bounded_theorem ESTABLISHED - the bare degree-(-2) taste-transfer exchange mechanism cannot supply alpha_s.
-Scope: Kills the bare-EXCHANGE family decisively but explicitly does NOT touch the free-energy/ln-Z family (A3), whose 1/(4 pi) is an uncapped degree-0 kernel normalization rather than a bounded exchange amplitude.
-Escape conditions (negative claims): The degree-0 escape audit closes the obvious loophole: no landed degree-0 constant in {4pi, 16, N_c, N_c^2, pi^2, 2pi, 8/9, 7/8, 1/alpha_s} equals the required closer 16/9 or 32/3, and the only exact closers are definitional reciprocals with zero mechanism content; the surviving escape is the separately graded A3 family.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The bare-class magnitude ceiling: six cross-taste channels with native sum exact
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): bounded_theorem ESTABLISHED - the bare degree-(-2) taste-transfer exchange mechanism cannot supply alpha_s.
+- Extraction scope (triage compression; may reflect later context): Kills the bare-EXCHANGE family decisively but explicitly does NOT touch the free-energy/ln-Z family (A3), whose 1/(4 pi) is an uncapped degree-0 kernel normalization rather than a bounded exchange amplitude.
+- Extraction escape conditions (negative claims; triage compression): The degree-0 escape audit closes the obvious loophole: no landed degree-0 constant in {4pi, 16, N_c, N_c^2, pi^2, 2pi, 8/9, 7/8, 1/alpha_s} equals the required closer 16/9 or 32/3, and the only exact closers are definitional reciprocals with zero mechanism content; the surviving escape is the separately graded A3 family.
 - Extraction red flags: Source-side label only, pending independent audit; consumes <P> = 0.5934 under a reuse license.
 - Supersession (as known at extraction): PROMOTES the taste-transfer ladder probe's section-4 observation - explicitly labelled displacement bookkeeping, not a claim - into an exact theorem valid for all admissible channel phases rather than only the incoherent form.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 On the same centered side-20 surface the near-inverse-square law holds only through early/mid-early windows: w2_10, w3_11, w6_14 and w10_18 give 5/5 attractive, 5/5 clean with exponents -1.965 to -1.997 (R^2 >= 0.9996) across 15/25/35-step traces, while w14_22 and w18_26 fall to 1/5 attractive and 0/5 clean and w26_34 flattens to d^-1.199 with R^2=0.7017.
 
-Original verdict: The temporal boundary is frozen exactly at w10_18 (t ~ 0.80..1.44): the law is an early-to-mid-early trace result, not a full-trace result, though both packets still end inward on every audited row.
-Scope: Same narrow surface, varying only trace length and analysis window; early-time fits on |a_mutual| over attractive rows only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The two-body attraction TERMINAL: the near-inverse-square law is a transient-win
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The temporal boundary is frozen exactly at w10_18 (t ~ 0.80..1.44): the law is an early-to-mid-early trace result, not a full-trace result, though both packets still end inward on every audited row.
+- Extraction scope (triage compression; may reflect later context): Same narrow surface, varying only trace length and analysis window; early-time fits on |a_mutual| over attractive rows only.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the TWO_BODY_ATTRACTION family's scope question: it freezes the temporal boundary of the lane established at idx 2083-2084.
 

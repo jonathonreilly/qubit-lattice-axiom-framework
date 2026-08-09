@@ -20,10 +20,6 @@ required before any effective status.
 
 Exact rational linear algebra shows ker(-Delta_lat) on the periodic L^3 torus is exactly the constants (dim 1 at L=2,3; rank 26 of 27 at L=3), so A2's two-sided-inverse proviso G_0 = H^{-1} cannot be satisfied on ANY finite translation-covariant lattice; covariance forces A=0, B=-1 uniquely on nonzero modes, repairing it with no new input.
 
-Original verdict: The proviso is unsatisfiable as written under the repo's own periodic convention, but the covariant family repairs it without new input; A2 is not derived and no ledger row status changes.
-Scope: Finite periodic (translation-covariant) lattices only; infinite Z^3 is explicitly not covered since the constant is not normalizable there.
-Escape conditions (negative claims): W2's negative holds only for finite periodic lattices; escapes are infinite Z^3 (Maradudin 1/(4 pi |x-y|) kernel exists), the zero-mean sector (H invertible there, W4), a mass term m^2 != 0 (changes the operator, W6), and Dirichlet/open boundaries (breaks translation invariance, W7).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact rational linear algebra: ker(-Delta) on the periodic torus is the constant
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The proviso is unsatisfiable as written under the repo's own periodic convention, but the covariant family repairs it without new input; A2 is not derived and no ledger row status changes.
+- Extraction scope (triage compression; may reflect later context): Finite periodic (translation-covariant) lattices only; infinite Z^3 is explicitly not covered since the constant is not normalizable there.
+- Extraction escape conditions (negative claims; triage compression): W2's negative holds only for finite periodic lattices; escapes are infinite Z^3 (Maradudin 1/(4 pi |x-y|) kernel exists), the zero-mean sector (H invertible there, W4), a mass term m^2 != 0 (changes the operator, W6), and Dirichlet/open boundaries (breaks translation invariance, W7).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

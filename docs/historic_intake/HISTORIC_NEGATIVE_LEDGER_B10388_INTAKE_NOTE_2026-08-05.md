@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Three blocked routes, one with an exact number: claiming eta_obs is derived is blocked because the radiation-branch readout gives eta[H_rad]/eta_obs = 0.188785929502, not a match. Also blocked: treating the H_rad theorem as audited here, and closing the DM flagship lane from this boundary.
 
-Original verdict: The radiation-branch prediction misses the observed baryon asymmetry by a factor of roughly 5.3.
-Scope: The expansion-boundary row.
-Escape conditions (negative claims): A separate right-sensitive microscopic selector closure lies outside this row.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Hard quantitative negative with the number on the record: the radiation-branch r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The radiation-branch prediction misses the observed baryon asymmetry by a factor of roughly 5.3.
+- Extraction scope (triage compression; may reflect later context): The expansion-boundary row.
+- Extraction escape conditions (negative claims; triage compression): A separate right-sensitive microscopic selector closure lies outside this row.
 - Extraction red flags: Contains a hard quantitative mismatch (eta[H_rad]/eta_obs = 0.1888) that constrains the DM/leptogenesis lane; worth surfacing rather than leaving buried in a pack ledger.
 - Supersession (as known at extraction): Companion to idx 10387.
 

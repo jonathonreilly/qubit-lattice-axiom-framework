@@ -18,10 +18,6 @@ required before any effective status.
 
 At cutoff radius R = 4 the charge-normalized shell-radial average k_shell(r) = sigma_rad(r)/Q is identical to machine precision across the exact local O_h source family and the exact finite-rank source family, agreeing on all twelve shared shell radii (sqrt(10) through 5), so sigma_rad = Q k_shell with one universal kernel.
 
-Original verdict: The radial sewing-shell profile is universal rather than family-dependent, narrowing the strong-field problem to interpreting one kernel; it does not close the continuum/effective-stress interpretation, the nonlinear 4D theorem, or theorem-grade control of the anisotropic correction.
-Scope: The two exact source families present on the codex/review-active branch at R = 4.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Shell-radial universality: k_shell identical to machine precision across both ex
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The radial sewing-shell profile is universal rather than family-dependent, narrowing the strong-field problem to interpreting one kernel; it does not close the continuum/effective-stress interpretation, the nonlinear 4D theorem, or theorem-grade control of the anisotropic correction.
+- Extraction scope (triage compression; may reflect later context): The two exact source families present on the codex/review-active branch at R = 4.
 - Extraction red flags: Universality is demonstrated across only two source families at a single cutoff radius R = 4, so 'universal' is scoped narrower than the title suggests.
 - Supersession (as known at extraction): Removes the family-dependence ambiguity left by the earlier sewing-shell results; the successor target is deriving k_shell from microscopic lattice dynamics.
 

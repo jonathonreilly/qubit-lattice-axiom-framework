@@ -20,10 +20,6 @@ required before any effective status.
 
 Composes two already-retained algebraic support theorems with the A0 axiom to promote the cross-sector identification N_color = N_gen = d = 3 from support to a retained structural-counts identity, so the Bernoulli form (N-1)/N^2 = 2/9 retains on both the CKM side and the lepton side with a shared d = 3 origin.
 
-Original verdict: Supplies exactly the 'separate theorem' that the Bernoulli-2/9 support note had named as the blocker to promoting N_color = N_gen.
-Scope: Uses no new framework input; explicitly does not close the charged-lepton Brannen delta = 2/9 in literal radians.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Cross-sector promotion theorem: N_color = N_gen = d = 3 lifted from support to r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Supplies exactly the 'separate theorem' that the Bernoulli-2/9 support note had named as the blocker to promoting N_color = N_gen.
+- Extraction scope (triage compression; may reflect later context): Uses no new framework input; explicitly does not close the charged-lepton Brannen delta = 2/9 in literal radians.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the named gap in CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Reads a pattern across 15 probes: spectral/information-content results work (area law at R^2 = 0.9998 with gravity reducing the coefficient 12.5%, spectral dimension flowing from ~2 UV to ~3-4 IR matching CDT qualitatively, entanglement, mutual information), while trajectory-matching results fail (Penrose timescale, Diosi-Penrose rate, BH coefficient universality, confinement E(r)).
 
-Original verdict: The staggered model is strongest as a SPECTRAL/INFORMATION theory, not a trajectory/force theory, and the paper should be framed around what the Hamiltonian spectrum says about spacetime rather than 'particles feel forces'.
-Scope: A directions document; ranks ten candidates in three tiers with a recommended priority order.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The strategic diagnosis: the model is strongest as a SPECTRAL/INFORMATION theory
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The staggered model is strongest as a SPECTRAL/INFORMATION theory, not a trajectory/force theory, and the paper should be framed around what the Hamiltonian spectrum says about spacetime rather than 'particles feel forces'.
+- Extraction scope (triage compression; may reflect later context): A directions document; ranks ten candidates in three tiers with a recommended priority order.
 - Extraction red flags: Diagnoses that the discrete lattice produces the right qualitative phenomena through different microscopic mechanisms than GR assumes — a reframing of several negative results.
 - Supersession (as known at extraction): none recorded
 

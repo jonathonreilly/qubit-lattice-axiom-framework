@@ -18,10 +18,6 @@ required before any effective status.
 
 Answers 'partially, but not globally': on the finite Wilson plaquette source surface every explicit positive result holds sector-locally, but distinct admissible positive residual environment operators remain, the live residual environment data sit inside one explicit family, and the clean residual last-mile target is the native nontrivial current. Also closes a sharper current-bank no-go that the bank lacks even formula-level theorem-grade content on the bulk side.
 
-Original verdict: Sector-local Perron/dominant-mode theorems are exact, but they do not promote into one common sole-axiom physical-state selection principle.
-Scope: Current exact stack; the longest note in the PF family (1179 lines) and the chain's central boundary object.
-Escape conditions (negative claims): Two named next steps: derive a unique plaquette framework-point Perron measure after the residual, and close the residual plaquette environment operator.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The PF boundary object: sector-local Perron theorems are exact but do NOT promot
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Sector-local Perron/dominant-mode theorems are exact, but they do not promote into one common sole-axiom physical-state selection principle.
+- Extraction scope (triage compression; may reflect later context): Current exact stack; the longest note in the PF family (1179 lines) and the chain's central boundary object.
+- Extraction escape conditions (negative claims; triage compression): Two named next steps: derive a unique plaquette framework-point Perron measure after the residual, and close the residual plaquette environment operator.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The PF family's central boundary note, cited by the review status (idx_pos 1271) and the global-selector closure (idx_pos 1266).
 

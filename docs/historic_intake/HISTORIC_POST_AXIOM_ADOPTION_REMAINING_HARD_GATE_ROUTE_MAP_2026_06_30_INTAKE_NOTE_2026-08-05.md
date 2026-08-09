@@ -18,10 +18,6 @@ required before any effective status.
 
 After the 2026-06-29 axiom reset and the strict nearest-neighbour/Dirac bridge, 'missing dynamics' splits into named targets: new axioms give local possibility, admissible availability and fixed records; strict NN composition gives the flux(-1)/first-order Dirac kinetic branch; durable two-outcome record idempotence gives conditional charged-lepton r = 1/2. Eight remaining bridge gates are ranked, with the charged-lepton/generation context selector highest-leverage. Runner TOTAL PASS=102, FAIL=0.
 
-Original verdict: The repo is in a better state but not finished; the named gates are narrowed and ranked, not closed.
-Scope: Route map only - explicitly does not set an audit verdict, edit the Tier-A registry, register a primitive, refresh generated ledgers or claim any admission retired; includes an eight-part no-go discipline gate (N1-N8).
-Escape conditions (negative claims): Each gate names its own escape; N2 records that some walls are not fully independent (W_context and W_species share record samples; W_source_action_observable interacts with measurement semantics).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The post-reset route map: 'missing dynamics' split into typed named gates, ranke
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The repo is in a better state but not finished; the named gates are narrowed and ranked, not closed.
+- Extraction scope (triage compression; may reflect later context): Route map only - explicitly does not set an audit verdict, edit the Tier-A registry, register a primitive, refresh generated ledgers or claim any admission retired; includes an eight-part no-go discipline gate (N1-N8).
+- Extraction escape conditions (negative claims; triage compression): Each gate names its own escape; N2 records that some walls are not fully independent (W_context and W_species share record samples; W_source_action_observable interacts with measurement semantics).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Post-reset successor to the pre-reset blocker maps; explicitly does NOT ship a terminal no-go.
 

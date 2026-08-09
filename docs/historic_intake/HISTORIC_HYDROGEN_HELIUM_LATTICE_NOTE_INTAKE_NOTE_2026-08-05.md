@@ -18,10 +18,6 @@ required before any effective status.
 
 The lattice operator -Delta_{Z^3} - g/|r| reproduces the 1/n^2 Rydberg ratios to within 4.3% (E_2/E_1 = 0.25857, E_3/E_1 = 0.11132, E_5/E_1 = 0.03857) with an emergent Bohr radius r_0 = 2/g exactly and 13 bound states in d=3; helium Hartree gives |E(He)|/|E(He+)| = 1.342 vs 1.424 (-5.7%), improved to 1.4357 by a Jastrow VMC capturing 70% of the correlation energy; alpha_EM comes out at 0.21% via the 4-segment taste staircase.
 
-Original verdict: Hydrogen structural predictions confirmed and helium variational bound computed; the Hartree equations are derived as stationarity conditions rather than imported, and d=3 selection is confirmed by the finite Rydberg series.
-Scope: N = 20-60 lattices, g_EM = 0.5, g_nuc = 1.0; Z >= 3 unreliable because the Bohr radius 2/(Z g_EM) falls below 2 sites; absolute energies in eV blocked by the undreived electron mass.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Lattice hydrogen: Rydberg ratios to 4.3% with emergent Bohr radius, plus the cor
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Hydrogen structural predictions confirmed and helium variational bound computed; the Hartree equations are derived as stationarity conditions rather than imported, and d=3 selection is confirmed by the finite Rydberg series.
+- Extraction scope (triage compression; may reflect later context): N = 20-60 lattices, g_EM = 0.5, g_nuc = 1.0; Z >= 3 unreliable because the Bohr radius 2/(Z g_EM) falls below 2 sites; absolute energies in eV blocked by the undreived electron mass.
 - Extraction red flags: n >= 3 degeneracy counts are WARN (finite box lifts the n^2 degeneracy); H- is unbound under the product ansatz; the isoelectronic series past Z = 2 is discretization-dominated.
 - Supersession (as known at extraction): Reports that EW_COUPLING_DERIVATION_NOTE's '27% gap' was a perturbative-only artifact now closed by the taste staircase, and that the 2-loop RGE route (alpha_em_twoloop_rge​.py) was a dead end (27% to 25%).
 

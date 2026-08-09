@@ -18,10 +18,6 @@ required before any effective status.
 
 The unitary U on C^8 = (C^2)^{x3} implementing the axis cycle (a1,a2,a3) -> (a3,a1,a2) satisfies U^3 = I with eigenvalues {1, omega, omega^2}, and permutes the eight computational basis vectors with orbit structure 1+3+3+1, fixing |000> (hw=0) and |111> (hw=3).
 
-Original verdict: AIRTIGHT — extends the hw=1 observable theorem on main to the full taste cube and grounds later axis-cycle / Z_3 arguments.
-Scope: Pure combinatorial permutation algebra on the full 8-dim taste cube; runner 32/32 PASS.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Airtight exact theorem: the C3 axis-cycle unitary on the taste cube (U^3=I, orbi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): AIRTIGHT — extends the hw=1 observable theorem on main to the full taste cube and grounds later axis-cycle / Z_3 arguments.
+- Extraction scope (triage compression; may reflect later context): Pure combinatorial permutation algebra on the full 8-dim taste cube; runner 32/32 PASS.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

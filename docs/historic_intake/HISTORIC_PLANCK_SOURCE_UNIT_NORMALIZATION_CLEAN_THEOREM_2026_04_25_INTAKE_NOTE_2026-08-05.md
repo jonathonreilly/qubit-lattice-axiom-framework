@@ -18,10 +18,6 @@ required before any effective status.
 
 Separates the bare Green-kernel coefficient G_kernel = 1/(4 pi) from the physical Gauss/Newton source unit: requiring unit physical mass to be the unit asymptotic 1/r monopole forces q_bare = 4 pi M_phys, hence G_Newton,lat = 4 pi G_kernel = 1, and with c_cell = 1/4 = 1/(4 G_Newton,lat) gives G_phys = a^2, a/l_P = 1. Labeling G_kernel as the physical Newton constant instead gives the failure mode a/l_P = 2 sqrt(pi).
 
-Original verdict: The 4 pi gap closes if physical Newton mass is the Gauss/asymptotic monopole unit; otherwise the standing result reverts to a/l_P = 2 sqrt(pi).
-Scope: Only external input is the conventional target definition l_P^2 = G_phys; no measured G, l_P, M_Pl or hbar is used, and no SI decimal is claimed.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Source-unit correction: repo wording G_lat = 1/(4 pi) makes the Planck map give 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The 4 pi gap closes if physical Newton mass is the Gauss/asymptotic monopole unit; otherwise the standing result reverts to a/l_P = 2 sqrt(pi).
+- Extraction scope (triage compression; may reflect later context): Only external input is the conventional target definition l_P^2 = G_phys; no measured G, l_P, M_Pl or hbar is used, and no SI decimal is claimed.
 - Extraction red flags: Corrects previously circulated repo wording (G_lat = 1/(4 pi)) that, if kept, makes the Planck map give 2 sqrt(pi) rather than 1.
 - Supersession (as known at extraction): Corrects which quantity earlier notes called the physical Newton constant; explicitly retracts the mainline wording 'lattice Newton constant = 1/(4 pi)' as a bare-source mislabel.
 

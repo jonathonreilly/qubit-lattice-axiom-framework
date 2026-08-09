@@ -18,10 +18,6 @@ required before any effective status.
 
 Two independent proofs that the canonical state of the bare no-extra-structure primitive cell is the normalized trace rho_cell = I_16/16: unitary-naturality on M_16(C) forces rho into the scalar commutant with lambda = 1/16, and transitivity of the sixteen-atom event-frame relabeling group forces p_eta = 1/16. Corollary Tr((I_16/16) P_A) = 4/16 = 1/4.
 
-Original verdict: B2 is theorem-grade, provided 'bare cell alone' is read in the standard no-extra-structure naturality sense; B1, B3, B4 remain open.
-Scope: Only the canonical state of the bare no-extra-structure cell (no preparation, Hamiltonian, boundary condition or embedding datum); explicitly not a claim that every prepared or reduced physical state is tracial.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ B2 closed by two independent proofs (unitary naturality + no-extra-structure) â€
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): B2 is theorem-grade, provided 'bare cell alone' is read in the standard no-extra-structure naturality sense; B1, B3, B4 remain open.
+- Extraction scope (triage compression; may reflect later context): Only the canonical state of the bare no-extra-structure cell (no preparation, Hamiltonian, boundary condition or embedding datum); explicitly not a claim that every prepared or reduced physical state is tracial.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes slot B2 of the PLANCK_SCALE_BARE_CELL_ALONE_CLOSURE_PROGRAM and converts the source-free default-datum state input into a derived naturality result.
 

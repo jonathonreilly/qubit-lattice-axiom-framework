@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The dark-matter relic lane is bounded by exactly one irreducible axiom — A5, lattice-is-physical (Z^3 with a = l_Planck is the physical spacetime) — and needs nothing beyond {A1-A5}; the same A5 controls the generation and S^3 lanes, and the thermodynamic limit (N -> infinity at fixed a) is distinguished from a continuum limit.
 
-Original verdict: The 'bounded' label is localized precisely: it is A5, not a chain of assumptions.
-Scope: Runner PASS=27 FAIL=0 (8 exact, 6 derived, 13 logical); does not upgrade the lane status.
-Escape conditions (negative claims): The obstruction is a single named axiom; deriving or replacing A5 is the stated escape.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The DM lane bounded by exactly ONE axiom (A5 lattice-is-physical), nothing else 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The 'bounded' label is localized precisely: it is A5, not a chain of assumptions.
+- Extraction scope (triage compression; may reflect later context): Runner PASS=27 FAIL=0 (8 exact, 6 derived, 13 logical); does not upgrade the lane status.
+- Extraction escape conditions (negative claims; triage compression): The obstruction is a single named axiom; deriving or replacing A5 is the stated escape.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

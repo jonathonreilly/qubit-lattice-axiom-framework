@@ -18,10 +18,6 @@ required before any effective status.
 
 Independent re-implementation reproduces the never-checked deposition comparator exactly (22/22 quantities across three implementations) but shows the 0.20 theta floor it was read to support is a GRID ARTIFACT: the true crossing is theta = 0.140516818611 (bisected to 1e-14, joint fill monotone), 0.20 is merely the smallest of six hand-chosen thresholds above it with nothing swept in (0.1, 0.2), the criterion's namesake quantity cancels algebraically out of its own definition, and the sparse window rests on one event plus eleven structurally-zero cells.
 
-Original verdict: The measurement was right and the floor was a grid line.
-Scope: Owner-directed mass-lane closure, window 2b; one premise of the Cycle-916 dictionary is corrected, not retracted.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Exact re-implementation (22/22 reproduced) showing the 0.20 theta floor — load
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The measurement was right and the floor was a grid line.
+- Extraction scope (triage compression; may reflect later context): Owner-directed mass-lane closure, window 2b; one premise of the Cycle-916 dictionary is corrected, not retracted.
 - Extraction red flags: A load-bearing floor used across the lineage turns out to be an artifact of the swept grid; the criterion's namesake quantity cancels out of its own definition.
 - Supersession (as known at extraction): Re-audits the 2026-07-08 deposition comparator and corrects the lineage's 0.20 floor reading.
 

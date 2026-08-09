@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 FORMAL PREREGISTRATION INVALID: the declared fixed word says contact g = 0.04 while the hashed executable and every science-log row use inherited Cycle-230 contact g = 0.37. The 35-row train manifest executed exactly once (27 primary A/B/C 3x3 mass-grid rows, 7 deletions, 1 direction reversal); ALL 35 rows classify null with 0 <= R <= 3.331e-16 < 1e-10, so the declared plane-current observable detects no interaction-minus-free response on the executed g = 0.37 word. Largest retained secondary phase response is row 18 route B at beta = -2pi/3 with delta_q components up to -3.568e-6.
 
-Original verdict: Because of the coefficient mismatch this is NOT a falsification of the declared g = 0.04 candidate — that candidate is untested, not falsified; nor is it a statement about local velocity current, translation-character response, bulk density, multi-mediator response, held sizes, physical force or gravity.
-Scope: Bounded strictly to the immutable Cycle-506 log, its observable, and the actual g = 0.37 executable; blind held unrun (0 authorized).
-Escape conditions (negative claims): FAIL for any broad no-go, minimum-content, shared-obstruction or axiom-pressure claim; the primary source-current target does not advance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ PROTOCOL-INTEGRITY record: FORMAL PREREGISTRATION INVALID - the declared fixed w
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Because of the coefficient mismatch this is NOT a falsification of the declared g = 0.04 candidate — that candidate is untested, not falsified; nor is it a statement about local velocity current, translation-character response, bulk density, multi-mediator response, held sizes, physical force or gravity.
+- Extraction scope (triage compression; may reflect later context): Bounded strictly to the immutable Cycle-506 log, its observable, and the actual g = 0.37 executable; blind held unrun (0 authorized).
+- Extraction escape conditions (negative claims; triage compression): FAIL for any broad no-go, minimum-content, shared-obstruction or axiom-pressure claim; the primary source-current target does not advance.
 - Extraction red flags: Second consecutive protocol failure in the same Cycle-506 packet: the preflight withdrew a non-invariant construction and the train run then executed a different contact coupling (0.37) than its own preregistration declared (0.04), invalidating the preregistration.
 - Supersession (as known at extraction): Follows the preflight at idx 2840 (which had already withdrawn an earlier axial-slice draft); the declared g = 0.04 preregistration remains open and unexecuted.
 

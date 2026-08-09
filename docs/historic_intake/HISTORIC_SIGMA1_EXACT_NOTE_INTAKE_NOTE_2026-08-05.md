@@ -18,10 +18,6 @@ required before any effective status.
 
 Computes the 1-loop staggered tadpole to 10 digits: I_stag(4) = 0.619733560924 = 4 * I_Wilson(4), c_latt = 0.6134137604, and identifies Sigma_1 = pi^2 I_stag(4) = 6.1165, which is +1.9% above the previously used estimate 6.0 and shifts v by about 15% through the exponential. Lattice and quadrature methods agree to < 1.4e-7.
 
-Original verdict: Complete: pinning v = 246.22 GeV requires alpha_s(q*) = 0.4897, Z_chi = 0.6822, N_eff = 5.585, which is the standard coupling at the Lepage-Mackenzie scale.
-Scope: Periodic L^d lattices L = 8..128 with Richardson extrapolation, cross-checked by scipy nquad; d=3 is IR-divergent and has no infinite-volume limit.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Sigma_1 computed to 10 digits replacing the estimate — WITH the flag that clos
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Complete: pinning v = 246.22 GeV requires alpha_s(q*) = 0.4897, Z_chi = 0.6822, N_eff = 5.585, which is the standard coupling at the Lepage-Mackenzie scale.
+- Extraction scope (triage compression; may reflect later context): Periodic L^d lattices L = 8..128 with Richardson extrapolation, cross-checked by scipy nquad; d=3 is IR-divergent and has no infinite-volume limit.
 - Extraction red flags: The hierarchy is closed by choosing alpha_s(q*) = 0.49 to hit the measured VEV, and the error budget attributes ~15% of the v uncertainty to that matching-scale choice; the +1.9% correction to Sigma_1 also revises a previously banked number.
 - Supersession (as known at extraction): Replaces the estimated Sigma_1 = 6.0 used in the earlier hierarchy formula with the exact 6.1165.
 

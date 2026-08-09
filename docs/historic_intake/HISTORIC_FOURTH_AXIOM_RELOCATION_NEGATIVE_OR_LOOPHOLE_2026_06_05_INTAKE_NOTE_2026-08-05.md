@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The charged lepton sits exactly on the dial's one interior distinguished point (r = 0.5000 to ~1e-4) but the quarks and neutrino are generic (r_up = 0.7732, r_down = 0.5969, r_nu = 0.2381), so extremum-type dynamics is falsified by the quark values; and the apparent parameter-free lattice Green-ratio matches are a look-elsewhere artifact because 42 such ratios densely fill (0.40, 0.90) with mean gap 0.012.
 
-Original verdict: RELOCATION-NO-GO-HOLDS - the kinematic floor is the honest endpoint; no tested 4th axiom escapes both horns of the dichotomy.
-Scope: Observed moduli are used as observational comparison only, never as derivation input; the note imports no axiom and derives no modulus.
-Escape conditions (negative claims): The escape the dichotomy would need is a dynamics that is simultaneously parameter-free AND reaches generic values. Route 1 would need a distinguished, PRE-REGISTERED parameter-free quantity that is structurally a modulus (a property of the 3x3 flavor spectrum, not a 2-point substrate function); Route 2 would need a cross-sector relation that is both tight and stable under mid-mass uncertainty (the two closest, r_up/r_down ~ 13/10 and r_down/r_lep ~ 6/5, miss at 0.36-0.51% and drift).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The dial no-go: charged lepton EXACTLY at the interior distinguished point, quar
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): RELOCATION-NO-GO-HOLDS - the kinematic floor is the honest endpoint; no tested 4th axiom escapes both horns of the dichotomy.
+- Extraction scope (triage compression; may reflect later context): Observed moduli are used as observational comparison only, never as derivation input; the note imports no axiom and derives no modulus.
+- Extraction escape conditions (negative claims; triage compression): The escape the dichotomy would need is a dynamics that is simultaneously parameter-free AND reaches generic values. Route 1 would need a distinguished, PRE-REGISTERED parameter-free quantity that is structurally a modulus (a property of the 3x3 flavor spectrum, not a 2-point substrate function); Route 2 would need a cross-sector relation that is both tight and stable under mid-mass uncertainty (the two closest, r_up/r_down ~ 13/10 and r_down/r_lep ~ 6/5, miss at 0.36-0.51% and drift).
 - Extraction red flags: Explicitly diagnoses its own most striking numerical coincidences (Green-function ratios matching moduli to 3e-4) as forced numerology from a densely filled window.
 - Supersession (as known at extraction): Notes that FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30 is superseded for r = 1/2 status by the thermalizing-arrow note while its enhanced-endpoint structure stands.
 

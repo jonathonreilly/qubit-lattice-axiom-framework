@@ -18,10 +18,6 @@ required before any effective status.
 
 OVERRIDES the 12-cycle converged no-go: the panel found (a) five APS-eta retained notes the cycle-9 keyword scan missed, and (b) L-W does not apply to the APS route — eta(1,2;3) = (1/3)(1/3+1/3) = 2/9 is rational mod Z, verified to |err|<3e-17; the cycle-10 no-go and cycle-12 runner are withdrawn from candidate-PR status; remaining gap is the single bridge theorem delta_Brannen = eta_APS.
 
-Original verdict: cycle-10 no-go withdrawn; APS route opened
-Scope: panel-driven reversal (10 physicist agents plus exercises)
-Escape conditions (negative claims): derive or admit (user-scoped) the delta_Brannen = eta_APS bridge theorem
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The PANEL REVERSAL that OVERRIDES the 12-cycle converged no-go: the cycle-9 keyw
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): cycle-10 no-go withdrawn; APS route opened
+- Extraction scope (triage compression; may reflect later context): panel-driven reversal (10 physicist agents plus exercises)
+- Extraction escape conditions (negative claims; triage compression): derive or admit (user-scoped) the delta_Brannen = eta_APS bridge theorem
 - Extraction red flags: the reversal's 'mostly retained' claim was itself an overclaim caught by the next hostile review
 - Supersession (as known at extraction): withdraws CYCLE_10/CYCLE_12 candidate-PR; itself later found overstated by HONEST_FRONTIER_STATE (only 1 of 7 upstream pieces retained)
 

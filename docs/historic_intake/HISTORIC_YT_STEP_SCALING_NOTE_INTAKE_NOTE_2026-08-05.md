@@ -18,10 +18,6 @@ required before any effective status.
 
 Lattice step-scaling at g_bare = 1 (beta = 6) on L = 4, 6, 8, 12 gives <P> = 0.542/0.538/0.537/0.539 and alpha_V = 0.147/0.148/0.148/0.148 — nearly flat over a factor 3 in scale, a lattice beta function about 30x weaker than perturbative QCD, with the framework coupling crossing the SM trajectory near 10^3.5 GeV and a resulting m_t = 208 GeV (20.5% off).
 
-Original verdict: BOUNDED, not closed — the route and mechanism (suppressed running, no Landau pole) are demonstrated but the number is not paper-grade.
-Scope: Non-perturbative gauge-side handoff from the framework strong boundary (alpha_s(M_Pl)=0.073, ~3.9x the SM 0.019) to the perturbative SM trajectory.
-Escape conditions (negative claims): Larger lattices (L = 16, 24, 32) for controlled continuum extrapolation and 100+ configurations per ensemble; a non-perturbative V-to-MSbar scheme conversion.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ April step-scaling: alpha_V flat over a factor 3 in scale (suppressed running me
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED, not closed — the route and mechanism (suppressed running, no Landau pole) are demonstrated but the number is not paper-grade.
+- Extraction scope (triage compression; may reflect later context): Non-perturbative gauge-side handoff from the framework strong boundary (alpha_s(M_Pl)=0.073, ~3.9x the SM 0.019) to the perturbative SM trajectory.
+- Extraction escape conditions (negative claims; triage compression): Larger lattices (L = 16, 24, 32) for controlled continuum extrapolation and 100+ configurations per ensemble; a non-perturbative V-to-MSbar scheme conversion.
 - Extraction red flags: Quantitative prediction m_t = 208 GeV is 20.5% off PDG and rests on 8 configs at L<=12; the note itself labels this BOUNDED, so no overclaim in text, but the number should not be cited as a framework prediction.
 - Supersession (as known at extraction): April-era gauge-side lane, distinct from the May PR #230 scalar/LSZ lane; its self-listed bounds (finite volume, statistics, integration model dependence, scheme matching) are unresolved.
 

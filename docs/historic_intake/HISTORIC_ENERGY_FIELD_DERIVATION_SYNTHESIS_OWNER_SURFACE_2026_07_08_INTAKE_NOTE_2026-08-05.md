@@ -18,10 +18,6 @@ required before any effective status.
 
 Two routes ran to completion: the electric-style gauging of energy is provably forbidden (neighboring energy amounts interfere, and forcing it drags in the energy flow, yielding GR-shaped bookkeeping), while the local lapse field has an exactly massless uniform mode, positive computable stiffness, and by-construction energy coupling - landing in the Poisson/Newton class. The single missing step is whether the local time rate is a variable at all.
 
-Original verdict: Whether the local evolution rate is a degree of freedom is not derivable from the current four axioms - that is the precise, now very small, gap, and the campaign halted at the pre-registered axiom-content stop condition.
-Scope: Meta surface only, carried entirely by four cited runner-backed notes; no axiom, primitive or Tier-A content is adopted; independent audit of the underlying notes still required.
-Escape conditions (negative claims): The gap is closable only by axiom-level action, framed three ways: extending the existing global-time-convention registration to a local one, hosting it in the already-banked Dynamics/Evolution axiom candidate, or stating a new fifth axiom ('evolution rate is a local degree of freedom'). Declining leaves the field side permanently supplied from outside, with no smaller repair available (the electric-style route is closed by theorem).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Owner-surface synthesis: electric-style gauging of energy provably forbidden, an
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Whether the local evolution rate is a degree of freedom is not derivable from the current four axioms - that is the precise, now very small, gap, and the campaign halted at the pre-registered axiom-content stop condition.
+- Extraction scope (triage compression; may reflect later context): Meta surface only, carried entirely by four cited runner-backed notes; no axiom, primitive or Tier-A content is adopted; independent audit of the underlying notes still required.
+- Extraction escape conditions (negative claims; triage compression): The gap is closable only by axiom-level action, framed three ways: extending the existing global-time-convention registration to a local one, hosting it in the already-banked Dynamics/Evolution axiom candidate, or stating a new fifth axiom ('evolution rate is a local degree of freedom'). Declining leaves the field side permanently supplied from outside, with no smaller repair available (the electric-style route is closed by theorem).
 - Extraction red flags: Includes its own steelman ('the lapse masslessness is a triviality'); plain-language owner surface with no runner of its own.
 - Supersession (as known at extraction): Campaign-closing synthesis over ENERGY_CHANNEL_INDUCED_KERNEL_ROUTE_A, ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B, SOURCE_FIELD_STATIC_LAW_CLASSIFICATION and NOETHER_SOURCE_CURRENT_CLASSIFICATION - a TERMINAL owner-surface note for that campaign.
 

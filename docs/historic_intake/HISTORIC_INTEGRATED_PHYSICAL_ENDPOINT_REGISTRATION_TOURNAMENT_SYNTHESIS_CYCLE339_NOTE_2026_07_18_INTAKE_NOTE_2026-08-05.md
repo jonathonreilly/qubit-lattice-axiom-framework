@@ -18,10 +18,6 @@ required before any effective status.
 
 Three positive bounded implementations of the Cycle-334-export / Cycle-333-registration comparison: a fixed 42-M2 reversible permutation handshake with no runtime candidate-label or phase query; a protected diagonal pointer using threefold repetition over a 23-bit content word with 69 pointer M2 plus 7 syndrome M2 correcting every tested single X fault and located erasure; and a causal decoder turning a 34-M2 process packet into one 28-M2 future cylinder where all 5040 causal schedules agree and every dependency is load bearing.
 
-Original verdict: Closes the comparison connector but derives no contingent realized content, selects no branch, creates no occurrence, types no Record, and produces no Born frequencies.
-Scope: The physical endpoint/content comparison connector open in Cycles 333-335; the approved realized-state primitive supplies the pointwise reference.
-Escape conditions (negative claims): Gate disposition: broad binding/permanence/Record no-go FAIL / DO NOT SHIP — no route-independent obstruction and no axiom pressure are supported.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Synthesis terminal of the endpoint-registration trio (Cycles 336/337/338): three
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes the comparison connector but derives no contingent realized content, selects no branch, creates no occurrence, types no Record, and produces no Born frequencies.
+- Extraction scope (triage compression; may reflect later context): The physical endpoint/content comparison connector open in Cycles 333-335; the approved realized-state primitive supplies the pointwise reference.
+- Extraction escape conditions (negative claims; triage compression): Gate disposition: broad binding/permanence/Record no-go FAIL / DO NOT SHIP — no route-independent obstruction and no axiom pressure are supported.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Synthesis terminal for the Cycle 336/337/338 route trio; a wall-pair table records that state/Record, state/grade, Record/clock and Record/grade remain mutually underivable.
 

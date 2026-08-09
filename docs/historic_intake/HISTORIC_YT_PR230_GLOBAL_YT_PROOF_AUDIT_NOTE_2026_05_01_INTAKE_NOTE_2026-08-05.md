@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Scans all docs/YT*.md notes and the top-Yukawa ledger rows and finds every proof-looking family failing its audit boundary: the Ward/zero-import stack is audited_renaming at the load-bearing node, the color-projection/scalar-LSZ stack is audited_conditional, the direct correlator is audited_conditional with cutoff and production open, the Planck selector is audited_conditional with beta_lambda(M_Pl) = 0 underived, and the P1/P2/P3 matching stack is blocked by non-clean parents.
 
-Original verdict: No existing audited-retained y_t proof exists — the audit did not miss one.
-Scope: Repo-wide inventory using the audit ledger as the authority surface.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The repo-wide census: NO audited-retained y_t proof exists — the original Ward
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No existing audited-retained y_t proof exists — the audit did not miss one.
+- Extraction scope (triage compression; may reflect later context): Repo-wide inventory using the audit ledger as the authority surface.
 - Extraction red flags: Records that the load-bearing Ward node — the origin of the framework's headline y_t = g_s/sqrt(6) claim chain — stands at audited_renaming.
 - Supersession (as known at extraction): The repo-wide census that motivates the whole May campaign; its table is the cleanest single statement of the y_t lane's status across all routes.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 T1-d is independent of the current Lattice, Quantum and Record axioms plus determinant direct-sum algebra; W_epsilon = log det + epsilon Tr is continuous and direct-sum additive but not determinant-only; a source-disjoint assignment need not produce disjoint records without an additional readout-context bridge.
 
-Original verdict: T1-d is independent — it must be supplied.
-Scope: Derivability of T1-d from the current axiom surface.
-Escape conditions (negative claims): A readout-context bridge would close the third gap; a determinant-only selection principle would close the second.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Independence theorem: T1-d is INDEPENDENT of the current Lattice, Quantum and Re
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): T1-d is independent — it must be supplied.
+- Extraction scope (triage compression; may reflect later context): Derivability of T1-d from the current axiom surface.
+- Extraction escape conditions (negative claims; triage compression): A readout-context bridge would close the third gap; a determinant-only selection principle would close the second.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 For every U_R in U(3), Y -> Y U_R^dag preserves H = Y Y^dag and the singular values while conjugating K = Y^dag Y, and explicit orbit evidence shows both admitted right-Gram data (the support score m_R(Y) and |(Y^dag Y)12|) vary along that orbit with H fixed - so the bank fixes a right-orbit BUNDLE, not a canonical right frame.
 
-Original verdict: No - the admitted right-Gram route is basis-conditional, not an internal axiom-side derivation.
-Scope: Retained PMNS boundary packet plus the admitted right-Gram selector and sheet-fixing routes; structurally parallel to the Universal GR invariant-frame obstruction.
-Escape conditions (negative claims): Escaped only by a genuinely new right-frame-fixing theorem or a right-sensitive observable principle that makes the datum intrinsic.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Right-Gram exposure: both admitted routes are basis-conditional, not axiom-side 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - the admitted right-Gram route is basis-conditional, not an internal axiom-side derivation.
+- Extraction scope (triage compression; may reflect later context): Retained PMNS boundary packet plus the admitted right-Gram selector and sheet-fixing routes; structurally parallel to the Universal GR invariant-frame obstruction.
+- Extraction escape conditions (negative claims; triage compression): Escaped only by a genuinely new right-frame-fixing theorem or a right-sensitive observable principle that makes the datum intrinsic.
 - Extraction red flags: Shows two previously landed 'realization' routes in the same family rest on a non-canonical basis choice.
 - Supersession (as known at extraction): Explains why the right-Gram selector-realization and sheet-fixing notes were scoped as admitted extensions rather than derivations.
 

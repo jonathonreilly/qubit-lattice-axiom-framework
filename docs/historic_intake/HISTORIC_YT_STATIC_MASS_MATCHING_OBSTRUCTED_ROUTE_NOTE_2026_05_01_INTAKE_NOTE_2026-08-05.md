@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For a static heavy correlator C(t; am0, E) = A exp[-(am0+E)t], the standard rephasing C_sub(t;E) = A exp[-Et] removes all dependence on am0, so the same subtracted correlator is consistent with three different absolute masses and three different sqrt(2)m/v readouts. Runner SUMMARY: PASS=6 FAIL=0.
 
-Original verdict: Exact negative boundary — absolute m_t remains an open matching input, so the static route is an engineering option, not a direct retained-closure route.
-Scope: Whether an HQET/static route avoiding am_top >> 1 can still deliver an absolute top mass.
-Escape conditions (negative claims): A real matching condition: delta_m(a) from the retained gauge action plus conversion from static energy to SM top mass, with no observed m_t or H_unit/Ward y_t authority as selector.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact rephasing no-go: the subtracted static correlator is independent of the ba
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact negative boundary — absolute m_t remains an open matching input, so the static route is an engineering option, not a direct retained-closure route.
+- Extraction scope (triage compression; may reflect later context): Whether an HQET/static route avoiding am_top >> 1 can still deliver an absolute top mass.
+- Extraction escape conditions (negative claims; triage compression): A real matching condition: delta_m(a) from the retained gauge action plus conversion from static energy to SM top mass, with no observed m_t or H_unit/Ward y_t authority as selector.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the HQET escape offered by the cutoff obstruction 2460.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Salvages science from rejected PR #3066: the companion runner recomputes the finite Wilson eta diagnostic from the retained witness's own helpers and finds |eta|/fixed_site = 2/9 at the frozen r=1.0 convention, so the ambient-eta mismatch wording in the Tier-A witness is stale. The load-bearing residuals remain rank_two_zero_mode_character_sector_not_canonically_split and wilson_eigenline_endpoint_lift_not_fixed.
 
-Original verdict: The ambient finite Wilson eta proxy is diagnostic-only and should not be treated as a load-bearing residual; the narrow repair target is recorded and left to the audit lane.
-Scope: Companion/diagnostic only; does not modify the audit-ratified Tier-A witness KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24 and changes no audit or effective status.
-Escape conditions (negative claims): Closure of the selected endpoint still requires a selected rank-one line plus an endpoint-lift theorem (runner: alpha=0 and endpoint offset c=0).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ ERRATUM against a retained Tier-A witness: the finite Wilson eta proxy is diagno
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The ambient finite Wilson eta proxy is diagnostic-only and should not be treated as a load-bearing residual; the narrow repair target is recorded and left to the audit lane.
+- Extraction scope (triage compression; may reflect later context): Companion/diagnostic only; does not modify the audit-ratified Tier-A witness KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24 and changes no audit or effective status.
+- Extraction escape conditions (negative claims; triage compression): Closure of the selected endpoint still requires a selected rank-one line plus an endpoint-lift theorem (runner: alpha=0 and endpoint offset c=0).
 - Extraction red flags: Records that a currently retained Tier-A witness carries wording the author believes is wrong, but cannot fix it without re-audit.
 - Supersession (as known at extraction): Tracks an ERRATUM-style repair to a Tier-A audited witness (stale ambient-mismatch wording) that it is not permitted to apply; audit-bound.
 

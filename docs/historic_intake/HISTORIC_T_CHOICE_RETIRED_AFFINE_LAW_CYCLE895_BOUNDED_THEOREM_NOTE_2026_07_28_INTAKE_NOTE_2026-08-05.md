@@ -18,10 +18,6 @@ required before any effective status.
 
 The lawfulness condition is exactly affine in t (constraint = A + tB with A the sector trace), so the 1,296 configurations partition exactly into 6 lawful at every t (= the Cycle-320 landed family), 84 lawful only at t=0, 60 at a single onset root, and 1,146 never. A 14,190-file census with 67 AST-derived needles found 108 consumers and classified 23 rows: 15 T_UNIFORM (retired) and 8 T_SENSITIVE with exact witness sets; of 29 priced rows, 19 retired / 10 sensitive / 1 broken, and rows_requiring_an_exact_choice_of_t is EMPTY.
 
-Original verdict: DISSOLVED_ON_THE_CHOICE_CRITERION_ONLY — no row needs an exact t, the surface reduces to a single exclusion t != 0 carried by two load-bearing rows; on the block's own stricter criterion (residue empty) it does not dissolve, and the block does not force it.
-Scope: Gravity-lane closure of the #5931 unit-grading decision surface plus three unpriced backlog scripts; no axiom surface touched.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Unit-grading terminal: lawfulness is affine in t, so the surface is DISSOLVED_ON
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): DISSOLVED_ON_THE_CHOICE_CRITERION_ONLY — no row needs an exact t, the surface reduces to a single exclusion t != 0 carried by two load-bearing rows; on the block's own stricter criterion (residue empty) it does not dissolve, and the block does not force it.
+- Extraction scope (triage compression; may reflect later context): Gravity-lane closure of the #5931 unit-grading decision surface plus three unpriced backlog scripts; no axiom surface touched.
 - Extraction red flags: Four defects in the primary were found by running it and fixed in a recorded commit (a needle gate rejecting a tuple absent from its claimed source, a mis-modelled degree row, an inverted sign in the planted-sensitivity falsifier, a 408-second census regex); the note also corrects Cycle 880's scope qualifier.
 - Supersession (as known at extraction): TERMINAL for the unit-grading chain 2076 -> 2091 -> 2086: closes the #5931 decision surface and enlarges Cycle 880's blind-locus theorem from t=+1 to every t != 0; publishes that the tuple (1,2,0) does not occur in the Cycle-876 primary but enters via Cycle 880.
 

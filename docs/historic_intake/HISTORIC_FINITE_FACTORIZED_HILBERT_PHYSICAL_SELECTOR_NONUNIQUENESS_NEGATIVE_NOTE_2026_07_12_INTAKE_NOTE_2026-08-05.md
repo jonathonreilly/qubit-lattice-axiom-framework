@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For every base object B = (I, {H_i}, J) with 2 <= |I| < infinity, the stated expansion type conditions fail to uniquely distinguish a physical adjacency graph (path P_N vs complete K_N countermodels), a physical CPTP semigroup (in particular not the unitary member), or the Born member of the contextual readout family - while B does determine the factor algebras A_i and their commutativity for i != j.
 
-Original verdict: The answer is no on this precise surface: same reduct B, incompatible expansions satisfying all type conditions.
-Scope: A non-entailment result on a precisely stated surface, not a positive one-axiom reduction nor a ban on writing definitions from Hilbert data; the negatives survive equal factor dimensions.
-Escape conditions (negative claims): Explicit dichotomy: if 'local' already includes a graph, local Hamiltonian or readout rule, those are premises inside the word and reading them back out is definitional compression, not derivation. The note names paths that prevent a broader 'no derivation is possible' claim - richer operational reconstructions, naturality premises, and an operational packet that partially addresses the Gleason-Busch Born wall - and includes a steelman defeating any global impossibility claim.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Post-reset first-principles selector no-go: P_N vs K_N countermodels satisfy all
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The answer is no on this precise surface: same reduct B, incompatible expansions satisfying all type conditions.
+- Extraction scope (triage compression; may reflect later context): A non-entailment result on a precisely stated surface, not a positive one-axiom reduction nor a ban on writing definitions from Hilbert data; the negatives survive equal factor dimensions.
+- Extraction escape conditions (negative claims; triage compression): Explicit dichotomy: if 'local' already includes a graph, local Hamiltonian or readout rule, those are premises inside the word and reading them back out is definitional compression, not derivation. The note names paths that prevent a broader 'no derivation is possible' claim - richer operational reconstructions, naturality premises, and an operational packet that partially addresses the Gleason-Busch Born wall - and includes a steelman defeating any global impossibility claim.
 - Extraction red flags: Explicitly disclaims any claim that a richer operational reconstruction is impossible; audit states are a grounding snapshot, not author verdicts.
 - Supersession (as known at extraction): A 2026-07-12 first-principles replacement for the 2026-04-12 operational experiment; includes a table of prior walls with grounded statuses and whether later mechanisms could retire them.
 

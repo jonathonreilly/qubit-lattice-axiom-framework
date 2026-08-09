@@ -18,10 +18,6 @@ required before any effective status.
 
 Repairs the live numerical objection carried by SELF_CONSISTENCY_FORCES_POISSON (audited_conditional, criticality critical, load-bearing 18.1, 778 transitive descendants) that 'the measured susceptibility decays as r^(-2.805) despite the claimed Poisson-kernel interpretation': the discriminator was measuring the WRONG DIRECTION.
 
-Original verdict: The anomalous exponent was a measurement-direction artifact, not evidence against the Poisson interpretation; the N1-N8 verdict remains reviewer-owned.
-Scope: 5 PASS / 0 FAIL; box sizes 25/31/41 with Dirichlet walls and two declared fit windows; the locality result is exact stencil inspection. Larger boxes, other boundary conditions, massive kernels and the parent's full self-consistency loop are outside scope.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ CRITICAL-ROW REPAIR: the anomalous exponent standing against SELF_CONSISTENCY_FO
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The anomalous exponent was a measurement-direction artifact, not evidence against the Poisson interpretation; the N1-N8 verdict remains reviewer-owned.
+- Extraction scope (triage compression; may reflect later context): 5 PASS / 0 FAIL; box sizes 25/31/41 with Dirichlet walls and two declared fit windows; the locality result is exact stencil inspection. Larger boxes, other boundary conditions, massive kernels and the parent's full self-consistency loop are outside scope.
 - Extraction red flags: Repairs a numerical objection standing against a critical, heavily load-bearing audited_conditional row with 778 transitive descendants.
 - Supersession (as known at extraction): none recorded
 

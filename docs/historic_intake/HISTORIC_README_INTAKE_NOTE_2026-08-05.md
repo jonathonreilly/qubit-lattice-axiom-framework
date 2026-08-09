@@ -18,10 +18,6 @@ required before any effective status.
 
 TERMINAL index for the five outside-judge lanes (hadron mass, atomic scale, quark masses, neutrino, H_0), each with lethality and approachability ratings and a status-today column. Its stated purpose is that the project's internal 'Open Flagship Lane' list (Koide/CKM V_cb bridge, Q = 2/3, delta = 2/9) is project-internal scoping and understates the un-derived surface an external referee would see.
 
-Original verdict: Accepted planning package; its substantive content is the honest admission that bounded-companion and scaffold-lane categories absorb material an outside judge would call un-derived.
-Scope: Lane scoping and priority only; opens no theorem, promotes no claim, changes no manuscript surface.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ TERMINAL index of the five outside-judge lanes (hadron mass, atomic scale, quark
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Accepted planning package; its substantive content is the honest admission that bounded-companion and scaffold-lane categories absorb material an outside judge would call un-derived.
+- Extraction scope (triage compression; may reflect later context): Lane scoping and priority only; opens no theorem, promotes no claim, changes no manuscript surface.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the OUTSIDE_JUDGE_LANES family (indexes 2739-2743).
 

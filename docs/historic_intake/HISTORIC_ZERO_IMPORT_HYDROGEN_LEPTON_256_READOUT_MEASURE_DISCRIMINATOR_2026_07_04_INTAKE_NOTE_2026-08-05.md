@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Sharp negative: projection-trace / Born-frame readout alone gives the M_16(C) rank-one scale 1/16, while algebra-basis coefficient density gives 1/256 but still needs a physical charged-lepton source-measure theorem.
 
-Original verdict: Partial narrowing; separates projection/Born trace readout from algebra-basis coefficient density.
-Scope: Which readout measure yields 1/256 versus 1/16.
-Escape conditions (negative claims): Supply a physical charged-lepton source-measure theorem selecting the coefficient-density reading.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The 1/16-vs-1/256 fork root: projection/Born trace gives 1/16; algebra-basis coe
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Partial narrowing; separates projection/Born trace readout from algebra-basis coefficient density.
+- Extraction scope (triage compression; may reflect later context): Which readout measure yields 1/256 versus 1/16.
+- Extraction escape conditions (negative claims; triage compression): Supply a physical charged-lepton source-measure theorem selecting the coefficient-density reading.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Root of the '1/16 versus 1/256' fork; refined by 2654, 2658, 2672. Source sub-ladder: F-clause 2651 / L-clause 2655 / P-clause 2661 / R-clause 2668 (each a TERMINAL) -> exact source singleton TERMINAL 2639 -> K4 terminal 2505; route selection 2667.
 

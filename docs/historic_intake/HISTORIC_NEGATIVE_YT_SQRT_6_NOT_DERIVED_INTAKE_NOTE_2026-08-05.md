@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Four attempts fail: the SU(3) gauge Ward identity does not contain the Yukawa term at all (the Higgs is a color singlet commuting with T^a); the chiral Ward identity constrains mass generation but gives no coupling-constant relation; Clebsch-Gordan coefficients do not cleanly yield sqrt(6); and a universality argument gives y_t = 2 g_s, wrong by a factor of 2 sqrt(6).
 
-Original verdict: The framework's claim of y_t = g_s/sqrt(6) as a 'Ward identity' requires non-standard machinery that is not currently spelled out; despite striking PDG agreement (m_t +0.24%, m_H -0.1%) these should be labeled conjectures supported by strong numerical evidence.
-Scope: Establishes ONLY that standard Ward-identity and group-theoretic routes fail; the empirical match may still have a derivation via mechanisms not examined.
-Escape conditions (negative claims): Not ruled out: a future derivation via dynamical compositeness; a careful higher-order spin-taste-decomposed lattice perturbation theory; or a framework-specific reinterpretation making the identity true by normalization choice.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The y_t Ward demotion: four attempts fail — y_t = g_s/sqrt(6) as a 'Ward ident
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The framework's claim of y_t = g_s/sqrt(6) as a 'Ward identity' requires non-standard machinery that is not currently spelled out; despite striking PDG agreement (m_t +0.24%, m_H -0.1%) these should be labeled conjectures supported by strong numerical evidence.
+- Extraction scope (triage compression; may reflect later context): Establishes ONLY that standard Ward-identity and group-theoretic routes fail; the empirical match may still have a derivation via mechanisms not examined.
+- Extraction escape conditions (negative claims; triage compression): Not ruled out: a future derivation via dynamical compositeness; a careful higher-order spin-taste-decomposed lattice perturbation theory; or a framework-specific reinterpretation making the identity true by normalization choice.
 - Extraction red flags: Demotes a headline framework result (Gate 4 in the master scorecard) from theorem to numerically-supported conjecture.
 - Supersession (as known at extraction): Directly contradicts the 'Ward identity' framing carried by the y_t derivation chain (e.g. YT_FORMAL_THEOREM_NOTE, cited as CLOSED in the MASTER_DERIVATION_SCORECARD at idx_pos 1139).
 

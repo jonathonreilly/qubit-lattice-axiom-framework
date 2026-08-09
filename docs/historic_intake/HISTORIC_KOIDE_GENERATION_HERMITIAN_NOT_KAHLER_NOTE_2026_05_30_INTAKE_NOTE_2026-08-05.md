@@ -18,10 +18,6 @@ required before any effective status.
 
 The whole Q = 2/3 pin reduces to one differential-geometric fact: the native action supplies the complex structure J = (C - C^2)/sqrt(3) and the flat Kahler metric g = 6(dx^2+dy^2) but NOT the symplectic form omega, because the retained real anti-Hermitian condensate action is conjugation-even (det M = a^3 - 3a(x^2+y^2) + 2x^3 - 6xy^2, invariant under b -> conj b), so there is no first-order Berry term.
 
-Original verdict: Without omega the theta-flow is an isometry rather than a Hamiltonian flow, so theta is an independent coordinate, field-count 2 and the RETAINED surface gives Q = 1 — while the observed Q = 2/3 (to <0.05%) means the true, underived matter action must be Kahler.
-Scope: Structural localization, not a no-go on Q = 2/3; approves no axiom or import and sets no audit verdict.
-Escape conditions (negative claims): Supplying omega is equivalent to a chiral bilinear with a generation grading anticommuting with B = C + C^2, which is non-native because spec(B) = {2,-1,-1} is not symmetric under lambda -> -lambda (the Z_3-equivariant anticommuting no-go re-derived at field-reality level); the named next path is building the bridge-gap matter action from A1+A2 and testing whether emergent time gives b a first-order Schrodinger/Bargmann kinetic term.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The Q-gate's differential-geometric localization: the native action supplies J a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Without omega the theta-flow is an isometry rather than a Hamiltonian flow, so theta is an independent coordinate, field-count 2 and the RETAINED surface gives Q = 1 — while the observed Q = 2/3 (to <0.05%) means the true, underived matter action must be Kahler.
+- Extraction scope (triage compression; may reflect later context): Structural localization, not a no-go on Q = 2/3; approves no axiom or import and sets no audit verdict.
+- Extraction escape conditions (negative claims; triage compression): Supplying omega is equivalent to a chiral bilinear with a generation grading anticommuting with B = C + C^2, which is non-native because spec(B) = {2,-1,-1} is not symmetric under lambda -> -lambda (the Z_3-equivariant anticommuting no-go re-derived at field-reality level); the named next path is building the bridge-gap matter action from A1+A2 and testing whether emergent time gives b a first-order Schrodinger/Bargmann kinetic term.
 - Extraction red flags: States plainly that the retained surface implies Q = 1 while observation gives 2/3, i.e. the retained action is known to be incomplete.
 - Supersession (as known at extraction): Replaces the diffuse 'which measure / which counting rule' framing of the charged-lepton value with one exact statement about whether the generation sector is Kahler; the same missing omega is the grading the generation-identification chirality gate needs.
 

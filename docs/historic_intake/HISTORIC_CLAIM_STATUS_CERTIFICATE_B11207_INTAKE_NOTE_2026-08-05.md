@@ -18,10 +18,6 @@ required before any effective status.
 
 Certifies a bounded numerical witness against affinity at stated tolerances for one fixed operator, from a fixed finite-operator computation with source-step-free endpoints and an eleven-point residual bound. N1 records five attempted attacks on the witness (finite-difference truncation, misidentified max-absolute branch, normalization drift, floating cancellation, wrong scalar coordinate), with the active gap staying above 1.2e-5 and 60/90-digit and sparse-double implementations agreeing.
 
-Original verdict: Bounded theorem after an exact-to-bounded demotion; No-Go Discipline status PASS at iteration 2; independent audit required and no author/review artifact assigns an effective status.
-Scope: One fixed box, one fixed scalar segment, 11 backgrounds, three probes, all 27 trace-free entries, two tangent channels; A_min restored to Lattice+Qubit+Admissibility+Record; zero fitted/observed/literature inputs.
-Escape conditions (negative claims): N6 live routes: a validated numerical enclosure for exact nonaffinity, a physical principle selecting the interpolator/readout, a local/smooth observable removing the spline tail, and a physical tensor/GR bridge; N2 names walls W_I (interpolation/readout contract) and W_P (physical tensor observable) and explicitly declines to assert their independence.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Self-documented exact-to-bounded demotion: a former exact/global affinity claim 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Bounded theorem after an exact-to-bounded demotion; No-Go Discipline status PASS at iteration 2; independent audit required and no author/review artifact assigns an effective status.
+- Extraction scope (triage compression; may reflect later context): One fixed box, one fixed scalar segment, 11 backgrounds, three probes, all 27 trace-free entries, two tangent channels; A_min restored to Lattice+Qubit+Admissibility+Record; zero fitted/observed/literature inputs.
+- Extraction escape conditions (negative claims; triage compression): N6 live routes: a validated numerical enclosure for exact nonaffinity, a physical principle selecting the interpolator/readout, a local/smooth observable removing the spline tail, and a physical tensor/GR bridge; N2 names walls W_I (interpolation/readout contract) and W_P (physical tensor observable) and explicitly declines to assert their independence.
 - Extraction red flags: self-documented CORRECTION: the claim was demoted from exact/global to bounded numerical after a steelman showed 60/90-digit stability is not an interval proof and both implementations share derivative algebra
 - Supersession (as known at extraction): records the demotion of a former exact/global claim to a bounded numerical witness after the N7 steelman; cites QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md as a method-only boundary later bypassed
 

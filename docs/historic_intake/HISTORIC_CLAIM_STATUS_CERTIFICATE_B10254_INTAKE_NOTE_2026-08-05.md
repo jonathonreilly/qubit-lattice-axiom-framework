@@ -18,10 +18,6 @@ required before any effective status.
 
 Certifies V8 as proposed_retained with all seven retained-proposal criteria satisfied (item 6 pending PR-side review-loop): a five-piece chain composing OP T1+T2, PHYSICAL_LATTICE_NECESSITY section 9, the ONSITE no-go, Canonical-descent T1 and CRIT, whose novel content is the structural argument that OP T2's source-domain restriction to span{P_x} is FORCED rather than chosen on the one-axiom Hilbert/locality/information substrate. No new axiom; no observed lepton mass in the proof.
 
-Original verdict: Self-review PASS at audit-grade, with two hostile-review pressure points acknowledged: P1, the strict-versus-loose reading is still interpretive at the inference layer; P2, whether the physical lepton-sector background lies in span{P_x}.
-Scope: Charged-lepton Koide Q = 2/3 only; delta = 2/9, the Brannen phase, v_0 and the quark sector are explicitly not closed.
-Escape conditions (negative claims): P1's own escape is stated: if independent audit judges the strict-reading inference to remain interpretive, V8 should be downgraded to support (the V4 framing) or the chain revised.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ OVERCLAIM-RISK certificate pulled AS A CONTRADICTION SET with idx 10256: V8 cert
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Self-review PASS at audit-grade, with two hostile-review pressure points acknowledged: P1, the strict-versus-loose reading is still interpretive at the inference layer; P2, whether the physical lepton-sector background lies in span{P_x}.
+- Extraction scope (triage compression; may reflect later context): Charged-lepton Koide Q = 2/3 only; delta = 2/9, the Brannen phase, v_0 and the quark sector are explicitly not closed.
+- Extraction escape conditions (negative claims; triage compression): P1's own escape is stated: if independent audit judges the strict-reading inference to remain interpretive, V8 should be downgraded to support (the V4 framing) or the chain revised.
 - Extraction red flags: OVERCLAIM RISK, HIGH PRIORITY: this is the strongest positive Koide claim in the stratum (proposed_retained for Q = 2/3) and it is bracketed by an earlier TRUE_NO_PREDICTION verdict and a later 'bounded pin' classification. The load-bearing new piece is admitted to be an interpretive strict reading. Review-loop was branch-local self-review only.
 - Supersession (as known at extraction): MAJOR TENSION WITH SIBLING CONTENT: twelve days earlier the same repo's charged-lepton Koide chain (idx 10010, 10100, 10101) resolved NEGATIVELY with strict-review verdict TRUE_NO_PREDICTION, and two months later idx 10235 records the charged-lepton sector entering as 'a bounded pin' that 'does not derive Koide from sole retained axioms'. NAMES A DOCS LANDING: docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md.
 

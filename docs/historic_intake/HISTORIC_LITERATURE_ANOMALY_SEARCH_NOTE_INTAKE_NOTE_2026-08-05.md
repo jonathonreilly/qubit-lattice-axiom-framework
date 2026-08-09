@@ -18,10 +18,6 @@ required before any effective status.
 
 Systematic search for anomalies the framework could claim: Big G's ~500 ppm scatter is No match (predicted geometry dependence ~1e-58 at Planck spacing); short-range gravity down to 59 microns is fully consistent with no predicted deviation; the qBounce 3.9 sigma neutron-spectroscopy discrepancy is the most interesting anomaly found but the framework predicts corrections 56 orders of magnitude smaller.
 
-Original verdict: No anomaly match was found — the framework is consistent with the entire experimental record but explains no existing anomaly; the one genuinely testable prediction (BMV gravity-mediated entanglement) is shared by essentially all quantum gravity theories.
-Scope: Bounded literature survey; lattice corrections are uniformly suppressed by (a/L)^2 ~ 1e-60 at a = l_Planck.
-Escape conditions (negative claims): If the lattice spacing sits above Planck but below the gamma-ray dispersion bound of ~1e-19 m, the framework predicts (a/L)^2 corrections to gravitational decoherence, BMV entanglement and the neutron bouncer that could in principle be detected.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The no-anomaly literature survey: consistent with the entire experimental record
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No anomaly match was found — the framework is consistent with the entire experimental record but explains no existing anomaly; the one genuinely testable prediction (BMV gravity-mediated entanglement) is shared by essentially all quantum gravity theories.
+- Extraction scope (triage compression; may reflect later context): Bounded literature survey; lattice corrections are uniformly suppressed by (a/L)^2 ~ 1e-60 at a = l_Planck.
+- Extraction escape conditions (negative claims; triage compression): If the lattice spacing sits above Planck but below the gamma-ray dispersion bound of ~1e-19 m, the framework predicts (a/L)^2 corrections to gravitational decoherence, BMV entanglement and the neutron bouncer that could in principle be detected.
 - Extraction red flags: Self-assessed as finding nothing the framework can claim; explicitly states the qBounce anomaly 'this framework cannot claim'.
 - Supersession (as known at extraction): none recorded
 

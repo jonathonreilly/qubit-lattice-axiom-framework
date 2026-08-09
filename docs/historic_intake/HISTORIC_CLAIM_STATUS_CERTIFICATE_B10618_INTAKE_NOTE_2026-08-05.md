@@ -18,10 +18,6 @@ required before any effective status.
 
 Candidate-retained-grade executable finite numerical claim: the supplied mixed-precision raw implementation COMPLETES at h = 0.125 and its live six-observable assertions pass, with no open imports, no observed or fitted target values, and no rounded cached targets used as proof inputs after this repair. The runner distinguishes raw generation from the support-only rescaled comparator and never uses the comparator to construct the raw row.
 
-Original verdict: Direct closure of the exact noncompletion blocker; review-loop pending, independent audit required.
-Scope: The finite implemented-row computation and live pointwise comparison; the universal exact step-scale theorem FAILS the certificate and is excluded.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Unlanded positive closing a named blocker: the supplied mixed-precision implemen
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Direct closure of the exact noncompletion blocker; review-loop pending, independent audit required.
+- Extraction scope (triage compression; may reflect later context): The finite implemented-row computation and live pointwise comparison; the universal exact step-scale theorem FAILS the certificate and is excluded.
 - Extraction red flags: Documents that rounded CACHED targets were previously used as proof inputs — this repair removes them.
 - Supersession (as known at extraction): Closes the h = 0.125 noncompletion that idx 10614/10615 had to exclude; replaces rounded cached targets with live computation.
 

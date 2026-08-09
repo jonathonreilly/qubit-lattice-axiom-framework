@@ -18,10 +18,6 @@ required before any effective status.
 
 Repo-wide scorecard of eight session architectures (transfer matrix Euclidean/Lorentzian, beam-splitter, quantum walk, polar unitary, chiral 1+1D/2+1D/3+1D) plus eight pre-session lanes against a 10-property closure card, 20 moonshot frontiers, structural, gravity and physics-emergence tables. Chiral 1+1D scores highest at 45/58 (10/10 closure, 6/6 structural, exact light cone v=1, Born |I3|/P = 3.3e-16, Klein-Gordon R^2 > 0.99999, Aharonov-Bohm 88.5%, causal set r = 0.956) against TM Euclidean 35/58, while beam-splitter, quantum walk and polar unitary score 2/10, 0/10 and 3/10 on closure.
 
-Original verdict: Chiral architectures pass the closure card where the non-unitary and unitary-but-nonlocal rivals fail, but the equivalence principle is violated on every architecture tested.
-Scope: Comprehensive comparison scorecard across the entire repo (pre-session plus session), with per-cell footnotes recording restricted windows (k-window only, converged regime, global medium rather than localized mass).
-Escape conditions (negative claims): Named failures carry their diagnosis and escape: the EP violation is because theta parameterizes both mass and gravity coupling (56% variation); the distance exponent -0.6 is explained by beam spreading d^0.6 softening 1/d rather than being Newtonian; SU(2) gauge fails because it needs additional color degrees of freedom; the 2D gravity sign is resolved as a non-unitarity artifact (TOWARD with polar U); and 3+1D sign windows exist within a converged basin but are not universal.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Repo-wide architecture x metric scorecard with a universal negative: EP violatio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Chiral architectures pass the closure card where the non-unitary and unitary-but-nonlocal rivals fail, but the equivalence principle is violated on every architecture tested.
+- Extraction scope (triage compression; may reflect later context): Comprehensive comparison scorecard across the entire repo (pre-session plus session), with per-cell footnotes recording restricted windows (k-window only, converged regime, global medium rather than localized mass).
+- Extraction escape conditions (negative claims; triage compression): Named failures carry their diagnosis and escape: the EP violation is because theta parameterizes both mass and gravity coupling (56% variation); the distance exponent -0.6 is explained by beam spreading d^0.6 softening 1/d rather than being Newtonian; SU(2) gauge fails because it needs additional color degrees of freedom; the 2D gravity sign is resolved as a non-unitarity artifact (TOWARD with polar U); and 3+1D sign windows exist within a converged basin but are not universal.
 - Extraction red flags: Records equivalence-principle violation as FAIL on every architecture and lists 12 open issues by priority, including a persistent CLT decoherence ceiling on all architectures and weaker Born closure (0.056) in 3+1D.
 - Supersession (as known at extraction): none recorded
 

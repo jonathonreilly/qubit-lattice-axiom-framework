@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Records seven formally exhausted Resolution-A routes (V>=2 Picard-Fuchs lift, APBC Z_3 twist needing L~17, SDP plus Migdal-Makeenko needing L_s>=4, Cl(3) HS positivity refinement empty for a grade-0 scalar, RP-A11 cluster inequality with a gap ~1900x the witness, V-singlet temporal projection acting on the wrong indices, and composite framework-unique levers) - and then makes the CRITICAL OBSERVATION that all seven assumed standard SU(3) Wilson Haar as the gauge action, which is admitted-as-import rather than derived, so they do not exhaust the plaquette value under a different Cl(3)-native action.
 
-Original verdict: The live attack lever is the gauge action functional itself: the heat kernel S_HK = -log P_t(U) is the Casimir-natural alternative with Brownian time forced by canonical Cl(3) connection normalization.
-Scope: Resolution-A levers for the bridge gap; six further retired no-gos are listed with authorities.
-Escape conditions (negative claims): Precisely the observation that Wilson is an import: changing the gauge action escapes all seven walls at once.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ TERMINAL of the Resolution-A programme: seven routes formally exhausted (V>=2 Pi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The live attack lever is the gauge action functional itself: the heat kernel S_HK = -log P_t(U) is the Casimir-natural alternative with Brownian time forced by canonical Cl(3) connection normalization.
+- Extraction scope (triage compression; may reflect later context): Resolution-A levers for the bridge gap; six further retired no-gos are listed with authorities.
+- Extraction escape conditions (negative claims; triage compression): Precisely the observation that Wilson is an import: changing the gauge action escapes all seven walls at once.
 - Extraction red flags: Discloses that the entire plaquette programme rested on an ADMITTED IMPORT (Wilson Haar) that was never derived - the single most consequential hidden-assumption finding in the physics-loops stratum.
 - Supersession (as known at extraction): Cites BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md and BRIDGE_GAP_NEW_PHYSICS_OPENING_NOTE_2026-05-06.md.
 

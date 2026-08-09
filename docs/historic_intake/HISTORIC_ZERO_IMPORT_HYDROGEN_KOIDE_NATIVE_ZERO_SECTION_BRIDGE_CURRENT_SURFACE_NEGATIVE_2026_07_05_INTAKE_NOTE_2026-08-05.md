@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply NATIVE_ZERO_SECTION_BRIDGE_RETAINED. Route algebra gives finite support only: z = 0 -> w_plus = 1/2, K_TL = 0, Q = 2/3; z = -1/3 -> w_plus = 1/3, Q = 1; a whole real nontrivial Z_3 primitive admits no spectator idempotent; based endpoint F(0) = 0 -> c = 0; eta_Z3 -> delta_open = 2/9.
 
-Original verdict: Support-only non-supply boundary; the physical Z1/Z2/Z3 licenses, species bridge and absolute scale are all still separate.
-Scope: The Koide native bridge input consumed by the physical electron mass lane; eight-input contract (bridge text lock, zero-source readout, real primitive Brannen endpoint, based determinant-line readout, no comparator, no new primitive/axiom, owner ratification, audit acceptance).
-Escape conditions (negative claims): Supply the zero-source readout, real primitive Brannen endpoint and based determinant-line readout, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Native zero-section bridge terminal: route algebra exact (z = 0 -> Q = 2/3) but 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the physical Z1/Z2/Z3 licenses, species bridge and absolute scale are all still separate.
+- Extraction scope (triage compression; may reflect later context): The Koide native bridge input consumed by the physical electron mass lane; eight-input contract (bridge text lock, zero-source readout, real primitive Brannen endpoint, based determinant-line readout, no comparator, no new primitive/axiom, owner ratification, audit acceptance).
+- Extraction escape conditions (negative claims; triage compression): Supply the zero-source readout, real primitive Brannen endpoint and based determinant-line readout, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the native zero-section bridge; packets 2546/2547 and PR-discriminator 2548 feed it. Nonzero source label z = -1/3 is recorded as an explicit falsifier.
 

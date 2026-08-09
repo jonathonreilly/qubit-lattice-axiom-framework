@@ -18,10 +18,6 @@ required before any effective status.
 
 Four scope narrows recorded as a bounded-support/demotion mix: newtonian_distance_law_confirmed becomes a clean historical pointer to a SHA-pinned bounded replay; gate_b_dynamics_note becomes a bounded generated-geometry source index rather than a physical-gravity or primitive-to-readout bridge; mesoscopic_surrogate_alternate_family_scout_note becomes a meta/support planning index instead of a bounded theorem; and the ordered-lattice lane README becomes a non-authority index.
 
-Original verdict: No artifact should be read as retained, proposed_retained or proposed_promoted.
-Scope: Pointer repairs and safe scope narrows only; docs/audit/** deliberately untouched.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Four scope narrows against landed surfaces, incl. newtonian_distance_law_confirm
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No artifact should be read as retained, proposed_retained or proposed_promoted.
+- Extraction scope (triage compression; may reflect later context): Pointer repairs and safe scope narrows only; docs/audit/** deliberately untouched.
 - Extraction red flags: 'newtonian_distance_law_confirmed' is retitled a historical pointer and the universal Newtonian theorem is explicitly not asserted - a significant walk-back of a flagship-sounding claim.
 - Supersession (as known at extraction): DEMOTES/NARROWS FOUR LANDED SURFACES, including newtonian_distance_law_confirmed - the claim the April frontier maps (idx 10096) reported at alpha -0.97 to -1.12.
 

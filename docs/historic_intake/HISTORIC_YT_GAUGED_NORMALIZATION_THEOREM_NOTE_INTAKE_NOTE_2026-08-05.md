@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves the bare cutoff normalization directly from two exact gauge-field-independent staggered identities — {Eps, D_gauged} = 2m I (a genuine gauged Ward identity, since the parity flip is geometric not dynamical, holding for arbitrary SU(3) links) and Tr(P_+)/dim(taste) = 1/2 — giving N_c y_0^2 = g_0^2/2 and hence y_0 = g_0/sqrt(2 N_c) = g_0/sqrt(6).
 
-Original verdict: BARE normalization closed and described as the cleanest theorem available on this surface; renormalized matching remains open.
-Scope: Bare cutoff normalization; the renormalized matching step Z_Y(mu) = Z_g(mu) is not fixed by these identities.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The bare-normalization theorem from two exact gauge-field-independent staggered 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BARE normalization closed and described as the cleanest theorem available on this surface; renormalized matching remains open.
+- Extraction scope (triage compression; may reflect later context): Bare cutoff normalization; the renormalized matching step Z_Y(mu) = Z_g(mu) is not fixed by these identities.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Attacks the Z_Y = Z_g step directly rather than restating the conditional relation; the renormalized half is what idx 2179 and 2142 then argue about.
 

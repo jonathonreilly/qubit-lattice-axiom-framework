@@ -18,10 +18,6 @@ required before any effective status.
 
 Every same-surface Gaussian vacuum-reference law has the form nu_R(L) = (1/(2n)) log det(L) - (1/(2n)) log det(R(L)), so the whole reference dependence reduces to one scalar datum r_R(L); the branch supplies only two no-datum choices (self reference giving 0, unit reference giving p_vac). Quarter would require det(R(L)) = det(L) exp(-2n(lambda_min(L) + 1/4)), i.e. det(R(L_Sigma)) = (5/3) e^(-5), equivalently delta_quarter = 5/4 - (1/4) log(5/3) ~= 1.122294.
 
-Original verdict: Quarter is not hidden in the present vacuum-reference grammar; it can only arrive with one explicit new scalar reference datum.
-Scope: Systematic exhaustion of admissible same-surface Gaussian boundary vacuum-reference laws on the exact Schur carrier.
-Escape conditions (negative claims): Escaped only by supplying the explicit new scalar reference datum r_R(L) = p_vac(L) - lambda_min(L) - 1/4, which the current Schur/action stack does not provide.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Vacuum-reference terminal: the whole reference dependence reduces to one scalar 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Quarter is not hidden in the present vacuum-reference grammar; it can only arrive with one explicit new scalar reference datum.
+- Extraction scope (triage compression; may reflect later context): Systematic exhaustion of admissible same-surface Gaussian boundary vacuum-reference laws on the exact Schur carrier.
+- Extraction escape conditions (negative claims; triage compression): Escaped only by supplying the explicit new scalar reference datum r_R(L) = p_vac(L) - lambda_min(L) - 1/4, which the current Schur/action stack does not provide.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal note of the boundary vacuum-reference sub-lane - it exhausts the family left open by the vacuum-density theorem lane.
 

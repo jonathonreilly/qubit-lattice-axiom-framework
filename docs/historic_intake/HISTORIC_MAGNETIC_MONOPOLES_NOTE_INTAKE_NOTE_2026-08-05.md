@@ -18,10 +18,6 @@ required before any effective status.
 
 Compact U(1) on the lattice forces topologically stable monopoles (strong-coupling density ~0.48 per cube, exponentially suppressed at weak coupling, exact integer charge verified). Using the DeGrand-Toussaint self-energy c = 0.51 and alpha(M_Pl) ~ 1/40 gives M_mono = 0.51 x 3.18 x 1.22e19 = 2.0e19 GeV (~1.6 M_Pl), ~25x heavier than GUT monopoles, with Dirac quantization eg = 2 pi n automatic from compactness.
 
-Original verdict: Monopoles exist at ~2 M_Planck, are unobservably rare post-inflation (without inflation Omega_mono ~ 7e27 is catastrophic overclosure), are consistent with Parker/MACRO/MoEDAL/IceCube bounds, and provide an independent argument for cosmic inflation.
-Scope: Physical QED sits at beta ~ 10.9 and the Planck scale at beta ~ 2.0, both deep in the Coulomb phase above beta_c ~ 1.01 (Monte Carlo verified on L=6).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Compact U(1) forces monopoles at ~2 M_Pl; the framework REQUIRES inflation (N_e 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Monopoles exist at ~2 M_Planck, are unobservably rare post-inflation (without inflation Omega_mono ~ 7e27 is catastrophic overclosure), are consistent with Parker/MACRO/MoEDAL/IceCube bounds, and provide an independent argument for cosmic inflation.
+- Extraction scope (triage compression; may reflect later context): Physical QED sits at beta ~ 10.9 and the Planck scale at beta ~ 2.0, both deep in the Coulomb phase above beta_c ~ 1.01 (Monte Carlo verified on L=6).
 - Extraction red flags: Self-rates the mass estimate only MODERATE (depends on the c coefficient and alpha(M_Pl)); the abundance conclusion requires inflation.
 - Supersession (as known at extraction): Corrects an earlier suggestion in the dark-matter closure note: the RG-improved mass (~1.6 M_Pl rather than ~M_Pl) plus post-inflation suppression make monopoles negligible as dark matter.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Four theorems showing the registration map D(M) = sum_k P_k M P_k registers only circulant content, sends every T-odd Hermitian operator to the S_3-symmetric A-line, annihilates the inter-sector coherence P_1 M P_2 + P_2 M P_1 exactly, and that K/CPT places {chi_1, chi_2} in one orbit; verified on 5000 random Hermitian and 5000 random T-odd trials.
 
-Original verdict: The S_3-breaking direction is unregistrable, so it is neither a pre-record operator awaiting derivation nor an import; what is realized is a registered pattern.
-Scope: C^3 generation orbit with the retained C_3-character bridge; scoped to the registration map, per N5 discipline.
-Escape conditions (negative claims): Explicitly does not assert the S_3 breaking cannot be sourced by some future structure outside the registration map.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Registration theorem: the S_3-breaking direction is UNREGISTRABLE (D(M) register
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The S_3-breaking direction is unregistrable, so it is neither a pre-record operator awaiting derivation nor an import; what is realized is a registered pattern.
+- Extraction scope (triage compression; may reflect later context): C^3 generation orbit with the retained C_3-character bridge; scoped to the registration map, per N5 discipline.
+- Extraction escape conditions (negative claims; triage compression): Explicitly does not assert the S_3 breaking cannot be sourced by some future structure outside the registration map.
 - Extraction red flags: Reclassifies a standing derivation gap as unregistrable rather than closing it, which changes the bookkeeping without producing r or Q.
 - Supersession (as known at extraction): Narrowly corrects the 'chirality import' framing in the companion operator-route no-gos G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A and KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO, replacing 'import' with 'unregistrable within-K/CPT-orbit coherence'.
 

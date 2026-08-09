@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The largest inherited no-go inventory in this stratum: roughly 45 closed routes across seven lanes - charged-lepton (direct gauge-anchor YT-analog, the M3 EW A4 false premise where EW A4 = A^4 = 4/9 Wolfenstein rather than the alternating group, five selector firewalls), the Koide A1 cluster (ten no-gos), Hubble C1 (A1 Grassmann, A2 g_bare-action-unit, A4 parity-gate, A5 minimal-carrier identifying Cl_4(C) as the required extension, A6 bilinear support), the DM lane (eight), the plaquette analytic chain, Hadron Lane 1, and Sigma m_nu where both F1 and F3 fail to retain on current A_min without observational admissions.
 
-Original verdict: No new no-go routes proven in this workstream.
-Scope: Inherited routes not to be re-explored without a new premise.
-Escape conditions (negative claims): Explicit three-part re-exploration rule: a route may be re-attempted only if the attempt names a new premise not already audited in the existing no-go note, starts from A_min plus that premise with no other smuggled imports, and records the new premise explicitly in the new note's status block.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Largest inherited no-go inventory in this stratum: roughly 45 closed routes acro
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No new no-go routes proven in this workstream.
+- Extraction scope (triage compression; may reflect later context): Inherited routes not to be re-explored without a new premise.
+- Extraction escape conditions (negative claims; triage compression): Explicit three-part re-exploration rule: a route may be re-attempted only if the attempt names a new premise not already audited in the existing no-go note, starts from A_min plus that premise with no other smuggled imports, and records the new premise explicitly in the new note's status block.
 - Extraction red flags: Records that the M3 EW A4 flavor-symmetry anchor rested on a FALSE PREMISE (confusing A^4 = 4/9 Wolfenstein with the alternating group A4) - a substantive error caught in a prior cycle.
 - Supersession (as known at extraction): Consolidates no-gos from the charged-lepton-pickup, hubble-c1-absolute-scale-gate, DM, plaquette and hadron lanes.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 High-precision re-pin gives delta_hp q_hp = 0.667711063424943 vs 2/3 = 0.666666666666667, a +1.044e-3 (0.16%) deviation that FAILS at both 1e-8 and 1e-4 and passes only at 1e-2; imposing the constraint exactly with PDG s12^2 and s13^2 as inputs predicts sin^2 theta_23 = 0.544693 (0.06% from PDG central). Runner 6 PASS, 3 FAIL.
 
-Original verdict: delta q_+ = 2/3 is NOT an exact identity at the pinned point but is observationally admissible at 1 sigma when imposed.
-Scope: Also records a correction: the iter-5 initial draft used the wrong PMNS extraction convention (descending, no row permutation) giving angles 0.454, 0.185, 0.168 before correcting to ascending plus row permutation (2,1,0).
-Escape conditions (negative claims): Either the identity is exact and the 0.0003 shift in sin^2 theta_23 is a genuine prediction, or it is 2/3 plus a framework-native correction.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ The honest kill: delta*q_+ = 2/3 FAILS at 1e-4 (0.16% deviation at high precisio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): delta q_+ = 2/3 is NOT an exact identity at the pinned point but is observationally admissible at 1 sigma when imposed.
+- Extraction scope (triage compression; may reflect later context): Also records a correction: the iter-5 initial draft used the wrong PMNS extraction convention (descending, no row permutation) giving angles 0.454, 0.185, 0.168 before correcting to ascending plus row permutation (2,1,0).
+- Extraction escape conditions (negative claims; triage compression): Either the identity is exact and the 0.0003 shift in sin^2 theta_23 is a genuine prediction, or it is 2/3 plus a framework-native correction.
 - Extraction red flags: Explicitly records the identity FAILS at 1e-4, yet the downstream iter-10 / proposal / theorem notes present it as a retained identity; also documents a corrected extraction-convention error in its own first draft.
 - Supersession (as known at extraction): Settles the iter-4 hint as a near-miss rather than an identity - a fact the later closure notes do not surface.
 

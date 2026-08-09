@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Multi-lane demotion ledger. Sharpest items: (R-X1) anomaly-cancellation exhaustion is FALSIFIED because a gauge-singlet right-handed Majorana mass passes the current anomaly checks; Lane 2 alpha(0) cannot be closed from alpha_EM(M_Z) alone because direct substitution misses the Rydberg scale by more than ten percent; Lane 5 (C2) fails because current PMNS even data and CKM CP data admit two same-data witnesses with OPPOSITE PMNS A13 sign; and Lane 2 physical-unit Rydberg closure is invariant under arbitrary Hartree-scale rescaling with the physical eV scale carried entirely by the m_e*alpha(0)^2 factor.
 
-Original verdict: Multiple lanes closed for the current surface; the strict reading of A_min axiom 3 is REJECTED by the 2026-04-28 stuck fan-out as inconsistent with framework intent.
-Scope: Campaign-wide inherited boundaries across Lanes 1-6 plus five block boundaries.
-Escape conditions (negative claims): Reopen rule stated explicitly: a blocked route may be reopened only with a new premise that breaks the exact obstruction; otherwise the block must record exact-support/no-go/open honestly and pivot. Lane 1 B2 needs a sea-fermion determinant ensemble, a sea-mass specification or budgeted comparator, and large-volume Creutz-ratio extraction; Lane 5 C2 needs a typed CKM-to-PMNS right-sensitive coupling theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Consolidated multi-lane demotion ledger with three concrete falsifications of pr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Multiple lanes closed for the current surface; the strict reading of A_min axiom 3 is REJECTED by the 2026-04-28 stuck fan-out as inconsistent with framework intent.
+- Extraction scope (triage compression; may reflect later context): Campaign-wide inherited boundaries across Lanes 1-6 plus five block boundaries.
+- Extraction escape conditions (negative claims; triage compression): Reopen rule stated explicitly: a blocked route may be reopened only with a new premise that breaks the exact obstruction; otherwise the block must record exact-support/no-go/open honestly and pivot. Lane 1 B2 needs a sea-fermion determinant ensemble, a sea-mass specification or budgeted comparator, and large-volume Creutz-ratio extraction; Lane 5 C2 needs a typed CKM-to-PMNS right-sensitive coupling theorem.
 - Extraction red flags: Three concrete falsifications of prior claims: anomaly-cancellation exhaustion, the strict A_min axiom-3 reading, and the PMNS A13 sign determination (two opposite-sign witnesses on identical data).
 - Supersession (as known at extraction): Consolidates demotions from prior loop packs across Lanes 3, 4F, 5, 6; supersedes their optimistic readings.
 

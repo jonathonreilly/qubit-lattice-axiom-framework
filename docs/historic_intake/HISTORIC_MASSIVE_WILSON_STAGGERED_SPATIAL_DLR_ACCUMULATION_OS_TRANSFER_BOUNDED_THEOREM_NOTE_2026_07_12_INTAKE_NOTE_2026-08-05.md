@@ -18,10 +18,6 @@ required before any effective status.
 
 Every van Hove spatial sequence (after the unique infinite-time limit at each finite volume) has a subsequence on which every fixed local gauge-invariant polynomial converges, and every accumulation functional is a positive full-4D DLR probability, gauge/translation invariant, time-reflection and adjacent-form positive, with an OS quotient carrying T_2, H = -(2 a_tau)^-1 log T_2, the Euclidean semigroup and the real-time unitary group. The load-bearing estimate is the site-anchored bound ||phi_(x,n)|| <= 3 r^n/(2n) with support in B_(2n+1)(x) and r = 16/(m^2+16) < 1.
 
-Original verdict: A real regulator wall is removed — the coupled infinite-time Euclidean/OS object survives infinite spatial volume for the actual massive determinant — but compactness and locality prove existence, not phase uniqueness.
-Scope: Closes spatial EXISTENCE, not spatial uniqueness. At beta=6 it proves at least one accumulation state exists but NOT that the plaquette has one boundary-independent value, that the sequence converges without subsequences, or that there is only one phase. Derives no dynamics, Euclidean weight, spin structure or probability rule; no clustering, uniform gap, unique vacuum, continuum limit, SM or GR.
-Escape conditions (negative claims): Explicitly open/untested: unique beta=6 plaquette value or gap; m=0 (constants deteriorate as m->0, no massless thermodynamic theorem); arbitrary nonlocal or volume-growing observables; boundary independence. Dobrushin, polymer, chessboard and RG routes remain live.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ The coupled OS object survives the infinite-volume limit (van Hove subsequence c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A real regulator wall is removed — the coupled infinite-time Euclidean/OS object survives infinite spatial volume for the actual massive determinant — but compactness and locality prove existence, not phase uniqueness.
+- Extraction scope (triage compression; may reflect later context): Closes spatial EXISTENCE, not spatial uniqueness. At beta=6 it proves at least one accumulation state exists but NOT that the plaquette has one boundary-independent value, that the sequence converges without subsequences, or that there is only one phase. Derives no dynamics, Euclidean weight, spin structure or probability rule; no clustering, uniform gap, unique vacuum, continuum limit, SM or GR.
+- Extraction escape conditions (negative claims; triage compression): Explicitly open/untested: unique beta=6 plaquette value or gap; m=0 (constants deteriorate as m->0, no massless thermodynamic theorem); arbitrary nonlocal or volume-growing observables; boundary independence. Dobrushin, polymer, chessboard and RG routes remain live.
 - Extraction red flags: N7 concedes a compactness-only proof would be defeated by the objection that finite-volume determinants are global objects; the site-anchored expansion is what rescues the DLR claim.
 - Supersession (as known at extraction): Consumes the fixed-spatial-volume uniqueness of MASSIVE_STAGGERED_LOGDET_HOLDER_RUELLE (idx_pos 1128) and is in turn collapsed inside the wedge by the Dobrushin note (idx_pos 1129).
 

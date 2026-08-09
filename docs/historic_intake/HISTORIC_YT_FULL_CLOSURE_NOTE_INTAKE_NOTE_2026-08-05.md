@@ -18,10 +18,6 @@ required before any effective status.
 
 Resolves the three review sub-gaps: SM running is a consequence of derived particle content (b_3 = 11 N_c/3 - 2 n_f/3 = 7, b_2 = 19/6, b_1 = -41/10 all from derived representations), alpha_s(M_Pl) = 0.093 follows algebraically from g_bare = 1 through alpha_lat = 0.0796 and tadpole resummation with the single computed coefficient c_V^(1) = 2.136, and lattice-to-continuum matching is bounded at ~3-10% with 2-loop matching at ~0.1%.
 
-Original verdict: BOUNDED with all inputs traced and a single ~10% computable matching uncertainty: m_t = 184 GeV, 6.5% above observed, inside a [172, 194] GeV band that encompasses 173.0.
-Scope: Conditional on A5, the bare UV theorem and Cl(3) preservation; no new assumptions.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The boundary-decomposition claim (all inputs traced, ~10% matching uncertainty) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED with all inputs traced and a single ~10% computable matching uncertainty: m_t = 184 GeV, 6.5% above observed, inside a [172, 194] GeV band that encompasses 173.0.
+- Extraction scope (triage compression; may reflect later context): Conditional on A5, the bare UV theorem and Cl(3) preservation; no new assumptions.
 - Extraction red flags: The claimed uncertainty band [172, 194] GeV is wide enough to contain the observed value by construction, and its central value disagrees with two sibling notes from the same lane and week.
 - Supersession (as known at extraction): Its 184 GeV central value is superseded within days by the re-schemed 171.0 GeV (idx 2142, 2306) and the 181.6 GeV step-scaling value (idx 2168) — three different numbers for the same lane in one week.
 

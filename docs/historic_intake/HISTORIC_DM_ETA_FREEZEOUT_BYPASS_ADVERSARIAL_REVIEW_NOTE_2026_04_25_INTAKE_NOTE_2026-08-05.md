@@ -18,10 +18,6 @@ required before any effective status.
 
 F1 (CRITICAL): the number 16 in m_DM = 16 v has two incompatible structural origins - N_sites = 2^d on the Z^4 APBC block versus 6 * 8/3 = (2 hw_dark)(dim adj_3 / N_c) spanning three different spaces - so the identity looks reverse-engineered; F2 (MODERATE): the 19-candidate audit whose single sub-5% hit had a 19.82% nearest competitor is a multiple-comparisons risk needing a null-distribution test; F3 (MODERATE): applying the EW hierarchy compression to the dark sector is unjustified.
 
-Original verdict: Every finding carries a recommended fix and an explicit fix-status, with an updated honest-status board; the candidate stays candidate-grade.
-Scope: Same-day internal self-review of DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md and its G1 Wilson-mass attempt runner.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Adversarial review with a CRITICAL provenance finding: the headline 16 in m_DM =
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Every finding carries a recommended fix and an explicit fix-status, with an updated honest-status board; the candidate stays candidate-grade.
+- Extraction scope (triage compression; may reflect later context): Same-day internal self-review of DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md and its G1 Wilson-mass attempt runner.
 - Extraction red flags: Self-diagnosed CRITICAL provenance ambiguity in the headline number 16 plus a corrected runner summary figure (+4.22%); flags post-hoc reverse-engineering risk.
 - Supersession (as known at extraction): Names the corrections to be folded into DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md; it is the review arm of that theorem, not a successor.
 

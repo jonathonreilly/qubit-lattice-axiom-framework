@@ -18,10 +18,6 @@ required before any effective status.
 
 R2-6 is the strong result: the APS eta-invariant on the Z_3 lens space L(3,1)/R^4/Z_3 gives delta = 2/9 rad exactly via four independent routes (Hirzebruch-Zagier (p-1)(p-2)/(3p)=2/9 at p=3; APS spin-Dirac (1/12)(csc^2(pi/3)+csc^2(2pi/3))=2/9; Dedekind 4 s(1,3)=4(1/18)=2/9; equivariant fixed point at weights (1,2)). R2-4 shows the Brannen cosine form sqrt(m_k)=(1/sqrt(6))(1+sqrt(2)cos(delta+2pi k/3)) is exact-retained (verified at 5e-16), with delta(m_PDG)=0.222229636585416 = 2/9 + 7.4e-6 rad.
 
-Original verdict: The eta-invariant route is the first structurally credible closure candidate for the delta radian bridge; R2-2/R2-3 confirm Wilson-loop mechanisms do not produce 2/9 natively.
-Scope: Round 2 of the parallel-agent campaign; the eta route requires verifying that the retained Cl(3)/Z^3 base genuinely is an R^4/Z_3 orbifold.
-Escape conditions (negative claims): The radian-bridge no-go is circumvented because eta-invariants are natively phase-valued in radians (spectral asymmetry = phase shift exp(i pi eta)), which is exactly what the no-go named as missing.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The APS eta-invariant convergence: delta = 2/9 exactly via four independent rout
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The eta-invariant route is the first structurally credible closure candidate for the delta radian bridge; R2-2/R2-3 confirm Wilson-loop mechanisms do not produce 2/9 natively.
+- Extraction scope (triage compression; may reflect later context): Round 2 of the parallel-agent campaign; the eta route requires verifying that the retained Cl(3)/Z^3 base genuinely is an R^4/Z_3 orbifold.
+- Extraction escape conditions (negative claims; triage compression): The radian-bridge no-go is circumvented because eta-invariants are natively phase-valued in radians (spectral asymmetry = phase shift exp(i pi eta)), which is exactly what the no-go named as missing.
 - Extraction red flags: The 7.4 microrad PDG offset is interpreted as measurement precision or a radiative correction rather than a deviation; R2-1 concedes the F weighting is a rep-theoretic prescription 'natural but not uniquely forced'.
 - Supersession (as known at extraction): Round 2 of 3; successor to Round 1 (idx_pos 1071), superseded/integrated by Round 3 (idx_pos 1073).
 

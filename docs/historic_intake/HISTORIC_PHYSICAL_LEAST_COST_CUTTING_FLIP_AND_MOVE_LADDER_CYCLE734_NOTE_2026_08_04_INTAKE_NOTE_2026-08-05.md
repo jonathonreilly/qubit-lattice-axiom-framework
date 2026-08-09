@@ -18,10 +18,6 @@ required before any effective status.
 
 By complete search over the one-cell four-cube, the adjacency-cost floor 144 is reached by 15800 24-piece cuttings drawing on 192 of the 400 least-cost pieces, and that floor is locally rigid: no cost-keeping move exists on two pieces (all 288 refillable pairs are flat-square re-cuts costing 1 or 2 more) or on three (of 649600 triples, 40512 admit a second refill and 0 at least cost — the cheapest alternatives cost 19/20/21 against the floor 18). The smallest cost-keeping change replaces exactly four pieces (46128 times), and every such move is the swap of the two floor cuts of one of five regions up to symmetry (families of sizes 12, 12, 24, 24, 48), an involution; connectivity by moves on up to k pieces gives groups [349, 349, 157, 61, 61, 13, 1] for k = 4..10.
 
-Original verdict: The floor is locally rigid and globally connected — nearly a quarter of all pairs of floor cuttings share no piece while no pair differs in fewer than four.
-Scope: Scoped to the single cell of one lattice step and one tick, with this adjacency cost and least volume; no statement about cells of other extent, other adjacency, other costs, or the lattice as a whole; time enters only as the fourth column and no result depends on an arrow (the tick flip is kept in the symmetry group).
-Escape conditions (negative claims): The absences at two and three pieces are proved by exhaustive pair/triple examination; the absence at five is only measured by a complete census, and the note keeps the two standings apart. It does not say what the largest local re-cut away from the floor is, nor whether the four-piece flip is smallest for costs above the floor — both explicitly open. Whether the per-region binary switches can be thrown independently is not measured. The 192-piece pool and the 5 region shapes are measured by search, not derived from symmetry.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Complete search: floor 144 reached by 15,800 cuttings on 192 pieces; locally rig
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The floor is locally rigid and globally connected — nearly a quarter of all pairs of floor cuttings share no piece while no pair differs in fewer than four.
+- Extraction scope (triage compression; may reflect later context): Scoped to the single cell of one lattice step and one tick, with this adjacency cost and least volume; no statement about cells of other extent, other adjacency, other costs, or the lattice as a whole; time enters only as the fourth column and no result depends on an arrow (the tick flip is kept in the symmetry group).
+- Extraction escape conditions (negative claims; triage compression): The absences at two and three pieces are proved by exhaustive pair/triple examination; the absence at five is only measured by a complete census, and the note keeps the two standings apart. It does not say what the largest local re-cut away from the floor is, nor whether the four-piece flip is smallest for costs above the floor — both explicitly open. Whether the per-region binary switches can be thrown independently is not measured. The 192-piece pool and the 5 region shapes are measured by search, not derived from symmetry.
 - Extraction red flags: Records that testing the scope of the integrality argument moved the claim: all 336 volume-2/3 sets read some corner in fractions so the whole-number proof route is special to least volume, but 0 of them reach past their own corners so the containment conclusion is not — the note claims only the narrower fact.
 - Supersession (as known at extraction): Extends earlier cycles that measured the cost floor on this cell to the question of what freedom a cutting has at the floor.
 

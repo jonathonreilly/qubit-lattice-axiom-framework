@@ -18,10 +18,6 @@ required before any effective status.
 
 The 1245-line campaign goal packet defining the zero-import hydrogen target and its lane decomposition (K1-K4 Koide inputs, Lane 2 alpha(0) transport, Lane 6 electron mass, weak front, source probe, static-source Coulomb/Rydberg) that the whole 2026-07-04/05 sweep of ~212 notes instantiates.
 
-Original verdict: Support-only goal packet: promotes no retained claim, adds no axiom, and derives no hydrogen.
-Scope: Campaign-level goal and support packet for the zero-import hydrogen target.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ THE campaign umbrella: the 1,245-line zero-import hydrogen goal packet defining 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only goal packet: promotes no retained claim, adds no axiom, and derives no hydrogen.
+- Extraction scope (triage compression; may reflect later context): Campaign-level goal and support packet for the zero-import hydrogen target.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): CAMPAIGN UMBRELLA (TERMINAL by scope) for the entire ZERO_IMPORT_HYDROGEN family (idx 2505-2716); companion route-selection note is 2667.
 

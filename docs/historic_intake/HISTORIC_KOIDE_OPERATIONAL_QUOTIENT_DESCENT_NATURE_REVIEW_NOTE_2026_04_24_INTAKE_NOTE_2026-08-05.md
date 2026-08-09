@@ -18,10 +18,6 @@ required before any effective status.
 
 Review verdict: the packet PASSES as closure under the single new law operational_quotient_descent_no_hidden_kernel_charge and FAILS as retained-only closure, since without the law the countermodels w = 1/3 (Q = 1, K_TL = 3/8) and tau = 1/9 (delta_open = 1/9) survive; the runner also tests other orbit sizes and arbitrary eta values so the proof is not numerological.
 
-Original verdict: The reviewer decision reduces to one physical question — should charged-lepton source states and endpoint phases be required to descend through the operational quotient groupoid?
-Scope: Dimensionless lane; the companion retention no-go remains part of the packet.
-Escape conditions (negative claims): Both countermodels are stated as the exact escape routes if the descent law is rejected.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ The review that reduces operational-quotient descent to one physical question (a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The reviewer decision reduces to one physical question — should charged-lepton source states and endpoint phases be required to descend through the operational quotient groupoid?
+- Extraction scope (triage compression; may reflect later context): Dimensionless lane; the companion retention no-go remains part of the packet.
+- Extraction escape conditions (negative claims; triage compression): Both countermodels are stated as the exact escape routes if the descent law is rejected.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Reviews the same-date descent closure theorem and preserves its retained-only-open boundary.
 

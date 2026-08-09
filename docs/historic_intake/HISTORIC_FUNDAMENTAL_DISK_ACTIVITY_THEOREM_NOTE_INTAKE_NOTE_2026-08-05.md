@@ -18,10 +18,6 @@ required before any effective status.
 
 The one-plaquette anchor p is exactly the normalized fundamental SU(3) character coefficient: at beta = 6, c_0(6) = 3.441440354987778 and c_f(6) = 4.362353340283927 give c_f/(3 c_0) = 0.422531739649983, exactly the one-plaquette expectation, and for simply-sheeted disks the isolated fundamental-sheet activity is exactly p^A by ribbon-graph Euler counting (net color factor 1).
 
-Original verdict: One specific part of the quotient-surface gas is promoted from a formal placeholder to an exact finite-beta activity law; the full plaquette is not closed.
-Scope: Simply-sheeted disk surfaces only; the character-labeled activity law for non-disk and higher-sheet sectors remains open.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact identification: the one-plaquette anchor IS the normalized fundamental cha
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): One specific part of the quotient-surface gas is promoted from a formal placeholder to an exact finite-beta activity law; the full plaquette is not closed.
+- Extraction scope (triage compression; may reflect later context): Simply-sheeted disk surfaces only; the character-labeled activity law for non-disk and higher-sheet sectors remains open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supplies the 72 p^14 first-non-disk window consumed by FIRST_NONDISK_Z3_LIFT_THEOREM (idx 473).
 

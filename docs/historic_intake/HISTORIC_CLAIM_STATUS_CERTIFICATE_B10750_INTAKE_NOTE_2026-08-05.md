@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The requested positive implication is FALSE on the supplied event-cell representation; the proof is independent of the currently unaudited time and selector dependencies because it GRANTS the time line and P_A before deriving the representation contradiction. Final pipeline parse: claim_type no_go, deps [], with the new obstruction runner primary and the old abstract-carrier construction runner attached only as a conditional helper.
 
-Original verdict: Exact negative boundary awaiting independent audit; no proposed-retained wording allowed.
-Scope: The supplied event-cell exterior action, reconstructed symbolically by the runner; enlarged-premise routes (spinor-packet bridge, temporal Clifford operator, multiplicity selector, physical boundary-response identification) stay open.
-Escape conditions (negative claims): Four open enlarged-premise routes are named explicitly; the no-go forecloses only derivation on the supplied representation surface.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Exact negative correcting an old claim: the requested positive implication is FA
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact negative boundary awaiting independent audit; no proposed-retained wording allowed.
+- Extraction scope (triage compression; may reflect later context): The supplied event-cell exterior action, reconstructed symbolically by the runner; enlarged-premise routes (spinor-packet bridge, temporal Clifford operator, multiplicity selector, physical boundary-response identification) stay open.
+- Extraction escape conditions (negative claims; triage compression): Four open enlarged-premise routes are named explicitly; the no-go forecloses only derivation on the supplied representation surface.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Demotes the old abstract-carrier construction runner to conditional-helper status.
 

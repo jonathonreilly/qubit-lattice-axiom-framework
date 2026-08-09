@@ -18,10 +18,6 @@ required before any effective status.
 
 A reversible fanout model S -> R -> E_0..E_{k-1} with majority decoding shows records survive up to (k-1)/2 flipped copies (k=5 survives all 0,1,2-flip patterns and fails for some 3-flip patterns), and erasing any proper subset of carriers leaves a witness - enough for the chronology boundary that a later operation must audit the carriers.
 
-Original verdict: Supplies a precise finite sufficient condition for the chronology lane only - it does not derive the Born rule, measurement collapse, or why macroscopic records form.
-Scope: Durability means redundancy and persistence of physical witnesses, not fundamental irreversibility; the model stays globally reversible.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Precise finite sufficient condition for durable records ((k-1)/2 flip tolerance)
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Supplies a precise finite sufficient condition for the chronology lane only - it does not derive the Born rule, measurement collapse, or why macroscopic records form.
+- Extraction scope (triage compression; may reflect later context): Durability means redundancy and persistence of physical witnesses, not fundamental irreversibility; the model stays globally reversible.
 - Extraction red flags: Includes an explicit Safe Language section forbidding 'measurement problem solved' or 'records are fundamentally irreversible'.
 - Supersession (as known at extraction): none recorded
 

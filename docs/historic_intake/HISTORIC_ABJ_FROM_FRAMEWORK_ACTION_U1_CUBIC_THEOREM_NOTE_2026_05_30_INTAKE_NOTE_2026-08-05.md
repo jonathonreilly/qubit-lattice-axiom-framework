@@ -18,10 +18,6 @@ required before any effective status.
 
 From the framework action surface with left-handed hypercharges Y=+1/3 on six states and Y=-1 on two, the fermion-measure Jacobian yields Tr_LH[Y^3] = -16/9 exactly, and no local 3+1 abelian counterterm cancels the resulting c F^F Ward obstruction.
 
-Original verdict: Framework-action U(1)^3 ABJ obstruction derived; the ABJ import is retired for the anomaly_forces_time_theorem target.
-Scope: U(1)^3 abelian anomaly on the framework action surface in 3+1; closes the ABJ implication needed by the parent theorem without an admitted ABJ packet or standard-theorem import.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Exact action-surface ABJ obstruction (Tr_LH[Y^3] = -16/9, no local counterterm) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Framework-action U(1)^3 ABJ obstruction derived; the ABJ import is retired for the anomaly_forces_time_theorem target.
+- Extraction scope (triage compression; may reflect later context): U(1)^3 abelian anomaly on the framework action surface in 3+1; closes the ABJ implication needed by the parent theorem without an admitted ABJ packet or standard-theorem import.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes the earlier ABJ notes' reliance on an imported ABJ packet; does not by itself close the full 3+1 retained status (non-ABJ dependencies remain).
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 After the all-order Q source-functional and all-order delta boundary-functional audits, separates exhausted retained classes from new physical-principle routes. Live primitives: physical_equal_C3_center_source_law (aliases K_TL=0, u=1/2, F_plus=F_perp, zero FI level) and physical_open_Berry_APS_endpoint_law (aliases theta_end-theta0=eta_APS, endpoint trivialization, full selected open segment); eight falsifiable route classes remain.
 
-Original verdict: KOIDE_RESIDUAL_ATLAS_THIRD_CLOSES_Q=FALSE and _CLOSES_DELTA=FALSE; NEXT_RULE=only_new_principle_or_stronger_exhaustive_theorem.
-Scope: A guardrail against repeating local variants of already-exhausted classes; not closure.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Residual-atlas terminal: only NEW-PRINCIPLE routes remain for Q and delta — th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): KOIDE_RESIDUAL_ATLAS_THIRD_CLOSES_Q=FALSE and _CLOSES_DELTA=FALSE; NEXT_RULE=only_new_principle_or_stronger_exhaustive_theorem.
+- Extraction scope (triage compression; may reflect later context): A guardrail against repeating local variants of already-exhausted classes; not closure.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal note of the three-step residual-atlas reassessment chain (1068 -> 1069 -> 1070).
 

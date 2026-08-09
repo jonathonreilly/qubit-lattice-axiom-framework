@@ -18,10 +18,6 @@ required before any effective status.
 
 The propagated sector's 81280 duplicate quotient classes and 49840 raw ordered two-shell states collapse under cube symmetry to 226 ordered orbits and 121 unordered pair-orbits, with next quotient counts ranging 54 to 67 and 184 distinct exact one-step transfer histograms - finite, but far richer than the 12-state first shell.
 
-Original verdict: The rooted hidden sector is a genuine finite local shell hierarchy whose state space is growing quickly, not a tiny closed kernel.
-Scope: The one-step image of the n = 5 hidden quotient sector; a one 4-cube boundary plus two shared exterior 3-cells defect class.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Hidden-shell terminal: the second shell does NOT compress (226 orbits and growin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The rooted hidden sector is a genuine finite local shell hierarchy whose state space is growing quickly, not a tiny closed kernel.
+- Extraction scope (triage compression; may reflect later context): The one-step image of the n = 5 hidden quotient sector; a one 4-cube boundary plus two shared exterior 3-cells defect class.
 - Extraction red flags: Records that the second shell does NOT compress to a small kernel, which weakens the practical value of the rooted route even as the finiteness result strengthens.
 - Supersession (as known at extraction): Terminal note of the hidden-shell chain (idx 675 -> 677 -> 676); poses the successor question sharply - does the shell hierarchy keep closing at higher depth, or does a later layer force a qualitatively new nonlocal state variable?
 

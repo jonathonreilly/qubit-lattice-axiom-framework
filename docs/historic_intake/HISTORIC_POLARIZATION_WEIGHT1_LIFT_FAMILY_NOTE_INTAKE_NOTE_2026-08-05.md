@@ -18,10 +18,6 @@ required before any effective status.
 
 Since the support dark phase is one weight-1 SO(2) doublet and the universal complement contains two, every normalized equivariant lift is L_lambda(D) = (cos lambda D, sin lambda D) with ||L_lambda(D)|| = ||D||, so the remaining curvature-side ambiguity is a single mixing parameter lambda between the two universal weight-1 sectors.
 
-Original verdict: The gravity frontier is isolated to determining the canonical value of one mixing parameter lambda, or proving the atlas cannot fix it.
-Scope: After the support dark phase and the universal weight decomposition are both in hand; the weight-2 shear sector is excluded by covariance.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,8 @@ The lambda isolation terminal: every equivariant lift is L_lambda — the gravit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gravity frontier is isolated to determining the canonical value of one mixing parameter lambda, or proving the atlas cannot fix it.
+- Extraction scope (triage compression; may reflect later context): After the support dark phase and the universal weight decomposition are both in hand; the weight-2 shear sector is excluded by covariance.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal narrowing of the POLARIZATION chain - matches the holonomy audit's free normalization parameter.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The DM relic gate is partially closed: R = Omega_DM/Omega_b = 5.48 is derived from exact group theory (taste decomposition 1+3+3bar+1', S_3 gauge-singlet candidate, mass ratio 3/5 from the Wilson mass on Z^3, channel ratio 155/27 from SU(3)xSU(2) Casimirs) agreeing with Planck's 5.47 to 0.2% with zero adjustable parameters — but it takes the observed eta = 6.12e-10 as input.
 
-Original verdict: R numerator derived, eta denominator bounded — baryogenesis is structurally supported but quantitatively blocked by the detonation problem in the electroweak phase transition.
-Scope: Runner 7/7 PASS; aligned with the review.md minimum-acceptable-success criterion.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The DM gate's terminal status note superseding all prior DM closure notes: R num
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): R numerator derived, eta denominator bounded — baryogenesis is structurally supported but quantitatively blocked by the detonation problem in the electroweak phase transition.
+- Extraction scope (triage compression; may reflect later context): Runner 7/7 PASS; aligned with the review.md minimum-acceptable-success criterion.
 - Extraction red flags: The headline 0.2% agreement is conditional on an observational input (eta) that the framework does not derive.
 - Supersession (as known at extraction): Explicitly supersedes all previous DM closure notes for gate-status purposes.
 

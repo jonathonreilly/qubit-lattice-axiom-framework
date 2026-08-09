@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Two routes: the empirical continuous Lipschitz extrapolation over the full continuous four-parameter box (finite sampled gradients times a 2.5 safety factor) is RETIRED as non-binding because no global Lipschitz proof exists, while the finite sampled runner predicate over exactly 1440 tuples with float64 gap_at > 10^-6 is candidate-complete after five executable checks and a source-note N1-N8 PASS.
 
-Original verdict: The extrapolated claim is withdrawn; only the sampled predicate stands.
-Scope: The explicit 1440-tuple grid; the result does not prune off-grid minimizers, other transfer families, or exact-arithmetic routes.
-Escape conditions (negative claims): Analytic bounds, interval arithmetic, a proof-producing optimizer, or a monotonicity theorem would restore a continuous claim.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Methodological retraction with reusable lesson: the empirical continuous Lipschi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The extrapolated claim is withdrawn; only the sampled predicate stands.
+- Extraction scope (triage compression; may reflect later context): The explicit 1440-tuple grid; the result does not prune off-grid minimizers, other transfer families, or exact-arithmetic routes.
+- Extraction escape conditions (negative claims; triage compression): Analytic bounds, interval arithmetic, a proof-producing optimizer, or a monotonicity theorem would restore a continuous claim.
 - Extraction red flags: A continuous-box claim built on sampled gradients times an ad hoc 2.5 safety factor was carried until retired here.
 - Supersession (as known at extraction): Retires an empirical Lipschitz-extrapolation claim that relied on a 2.5 safety factor over sampled gradients.
 

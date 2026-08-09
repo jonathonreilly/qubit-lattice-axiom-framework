@@ -18,10 +18,6 @@ required before any effective status.
 
 Two rows repaired to bounded-support: for g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 the counter-rescaled-coupling action surface is declared a scoped convention rather than a framework-selected law, and the beta statement is exact only after naming that convention (at fixed g_bare^2, WM leaves beta unchanged); for higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08 the staircase identity still does not by itself select uniform N_taste = 16, and the repair corrects only an overstated count of distinct single-class values.
 
-Original verdict: Both stay bounded-support; the repair fixes an overstatement rather than adding content.
-Scope: Two named claim rows.
-Escape conditions (negative claims): The uniform N_taste = 16 selection and the framework-level status of the counter-rescaled action surface both remain open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Correction of two landed docs/ notes: the g_bare rescaling-freedom note's counte
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Both stay bounded-support; the repair fixes an overstatement rather than adding content.
+- Extraction scope (triage compression; may reflect later context): Two named claim rows.
+- Extraction escape conditions (negative claims; triage compression): The uniform N_taste = 16 selection and the framework-level status of the counter-rescaled action surface both remain open.
 - Extraction red flags: Records a numeric overstatement in landed content (count of distinct single-class values in the Higgs N_taste row) that this PR corrects.
 - Supersession (as known at extraction): Corrects two landed docs/ notes: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 and higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08.
 

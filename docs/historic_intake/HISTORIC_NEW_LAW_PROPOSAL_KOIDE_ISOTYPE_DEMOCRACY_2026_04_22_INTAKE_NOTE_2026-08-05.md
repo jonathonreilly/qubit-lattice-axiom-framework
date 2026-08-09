@@ -18,10 +18,6 @@ required before any effective status.
 
 After 13 enumerated mechanism failures to derive A1 (|b|^2/a^2 = 1/2) — W[J] log-det extremum giving |b|/a ~ 3.3, Coleman-Weinberg at Q=1/3, Gaussian max-entropy giving equal averages, SU(2)_L Clebsch-Gordan, dimension-weighted free energy giving kappa=1, quantum Fisher information with no peak, positivity-edge at 0.96 of A1, Diophantine closure, Killing form degeneracy — the note proposes an ISOTYPE DEMOCRACY LAW: in a Z_d-cyclic Hermitian algebra the equilibrium state assigns equal weight per isotype (multiplicity-based, not dimension-based).
 
-Original verdict: All 13 standard extremizations give kappa in {0, 1, 1/3, 3} or a positivity boundary, never kappa = 2, so A1 is an interior point with no natural extremal structure — the loop has established that A1 genuinely requires NEW PHYSICS.
-Scope: Offered as a candidate new primitive; alternative closure routes (Koide-Nishiura V(Phi) import, novel QFT mechanism) remain available.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Thirteen enumerated mechanism failures for A1 (all give kappa in {0,1,1/3,3}) �
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): All 13 standard extremizations give kappa in {0, 1, 1/3, 3} or a positivity boundary, never kappa = 2, so A1 is an interior point with no natural extremal structure — the loop has established that A1 genuinely requires NEW PHYSICS.
+- Extraction scope (triage compression; may reflect later context): Offered as a candidate new primitive; alternative closure routes (Koide-Nishiura V(Phi) import, novel QFT mechanism) remain available.
 - Extraction red flags: Proposes adopting a new physical law as a retained primitive to close a value the framework cannot derive; the note itself frames PDG observation and framework consistency as jointly demanding kappa = 2.
 - Supersession (as known at extraction): The negative half (13 failures) is the strongest content; the proposed law is unadopted and its adoption would make A1 axiom-native by fiat.
 

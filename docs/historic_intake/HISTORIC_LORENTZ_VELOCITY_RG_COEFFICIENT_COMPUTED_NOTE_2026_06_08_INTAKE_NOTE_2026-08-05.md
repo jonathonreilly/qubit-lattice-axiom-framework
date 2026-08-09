@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Computes the gauge-invariant on-shell anisotropy delta v ~ (g^2 C_2/16pi^2) c_v with c_v ~ 2, giving delta v|_UV(fund) ~ 1.7e-2 ~ 0.2 alpha_s — finite, nonzero for Wilson and staggered alike, and NOT internally protected (taste, remnant U(1) chiral, per-site Cl(3,0) are internal symmetries that cannot relate temporal to spatial coefficients). As a function of the anisotropy xi = a_s/a_tau, delta v = 0 at xi = 1 by exact all-orders B_4 hypercubic symmetry and grows monotonically to the obstruction value as xi -> infinity.
 
-Original verdict: Upgrades #3121/#3123 from order-of-magnitude to computed, closes the internal (taste) escape, hardens the v < 1 sign and O(1) c_v (the spatial tadpole delta v_tad ~ -0.014 per g^2 C_2 reinforces the rainbow, total ~ -0.027), and sharpens the open problem to a single named bridge — but does NOT close it. At xi -> infinity, gamma = (4/3 + N_f/2) alpha_s ~ 0.15-0.34 is far too small against a 12-21 order gap.
-Scope: One-loop rainbow-level computation at beta=6 (g^2=1); named residuals are the record-tick bridge, form-equality, the exact O(1) coefficient and the sign. Runner 32 PASS / 0 FAIL.
-Escape conditions (negative claims): The escape horn is xi = 1, which is B_4-protected with delta v = 0 (residual LV only the Planck-suppressed dim-6 operator). The framework exhibits a one-tick-one-edge causal structure that WOULD sit at xi = 1 if the record tick is the physical time coordinate — but the live ledger classifies that audited_renaming (a naming bridge, not a derivation) against a retained clock-rate no-go, so xi = 1 is a conditional candidate horn, not a custodial mechanism.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The computed anisotropy: delta v ~ 1.7e-2 gauge-invariant on-shell, with the xi 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Upgrades #3121/#3123 from order-of-magnitude to computed, closes the internal (taste) escape, hardens the v < 1 sign and O(1) c_v (the spatial tadpole delta v_tad ~ -0.014 per g^2 C_2 reinforces the rainbow, total ~ -0.027), and sharpens the open problem to a single named bridge — but does NOT close it. At xi -> infinity, gamma = (4/3 + N_f/2) alpha_s ~ 0.15-0.34 is far too small against a 12-21 order gap.
+- Extraction scope (triage compression; may reflect later context): One-loop rainbow-level computation at beta=6 (g^2=1); named residuals are the record-tick bridge, form-equality, the exact O(1) coefficient and the sign. Runner 32 PASS / 0 FAIL.
+- Extraction escape conditions (negative claims; triage compression): The escape horn is xi = 1, which is B_4-protected with delta v = 0 (residual LV only the Planck-suppressed dim-6 operator). The framework exhibits a one-tick-one-edge causal structure that WOULD sit at xi = 1 if the record tick is the physical time coordinate — but the live ledger classifies that audited_renaming (a naming bridge, not a derivation) against a retained clock-rate no-go, so xi = 1 is a conditional candidate horn, not a custodial mechanism.
 - Extraction red flags: The v < 1 sign is explicitly NOT triangulated (an independent real-time cross-check confirms magnitude and no-protection but cannot certify the sign); gauge-parameter spread ~15% and an exact-O(1) residual need the full lattice vertex plus tadpole.
 - Supersession (as known at extraction): Supplies the named open input of the two landed emergent-Lorentz conditionals #3121 and #3123, which it recasts as this one coefficient read at the xi -> infinity horn; supersedes the earlier bare off-shell computation (artifact-dominated, ~5x r-variation collapsing to <1x on shell).
 

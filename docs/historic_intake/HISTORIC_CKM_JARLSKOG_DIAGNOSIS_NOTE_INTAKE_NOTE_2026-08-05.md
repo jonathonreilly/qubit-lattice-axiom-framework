@@ -18,10 +18,6 @@ required before any effective status.
 
 Diagnoses why J collapses in the NNI framework: if the Z_3 phase survived diagonalization intact J would be 3.05e-5 (0.99x PDG) since sin(2 pi/3) = 0.866 is within 1% of the needed 0.875 — the loss is entirely phase washout from M M^dag phase dilution, perturbative eigenvector rotation, and near-degenerate EW ratios.
 
-Original verdict: Not a code bug but a genuine physics constraint: the simplest NNI plus single-Z_3-phase framework cannot reproduce V_ub and J simultaneously.
-Scope: Diagnostic of the single-phase NNI texture with phase confined to M_13, 1.4% up/down EW weight mismatch and extreme mass hierarchy m_u/m_t ~ 1e-5.
-Escape conditions (negative claims): Three named resolutions: phases in both sectors, phase in M_23 rather than only M_13, or independent c_13^u/c_13^d.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The Jarlskog structural diagnosis: phase-loss in diagonalization is a genuine ph
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not a code bug but a genuine physics constraint: the simplest NNI plus single-Z_3-phase framework cannot reproduce V_ub and J simultaneously.
+- Extraction scope (triage compression; may reflect later context): Diagnostic of the single-phase NNI texture with phase confined to M_13, 1.4% up/down EW weight mismatch and extreme mass hierarchy m_u/m_t ~ 1e-5.
+- Extraction escape conditions (negative claims; triage compression): Three named resolutions: phases in both sectors, phase in M_23 rather than only M_13, or independent c_13^u/c_13^d.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The adopted law 'choose the positive off-seed source minimizing I_seed subject to eta_{i_*}/eta_obs = 1' is not entailed by A_min (four axioms plus three approved primitives): two conservative downstream completions agree on every statement in the supplied-premise language yet disagree on whether the physical source minimizes I_seed, on x/y block weights, on the observational closure anchor, and on the transport-favored column. All eight checks pass.
 
-Original verdict: An exact negative boundary: the previously missing positive derivation does not exist on the stated premise surface.
-Scope: Exact non-entailment from the current supplied premises only (Lattice, Qubit, Admissibility, Record plus scale-reference, kinetic-isotropy and realized-state primitives); explicitly not a no-go against a future downstream selector theorem.
-Escape conditions (negative claims): The negative is escapable by introducing content A_min explicitly leaves out - weighting, normalization, source/action structure, physical-observable identification, or state-selection rules - via a separate theorem or supplied condition; any such downstream object (PMNS source chart, seed distribution, KL functional, transport map, eta_obs, variational principle) lies outside the language and is not claimed meaningless.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Post-reset exact negative: the adopted minimum-information-current law is NOT en
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An exact negative boundary: the previously missing positive derivation does not exist on the stated premise surface.
+- Extraction scope (triage compression; may reflect later context): Exact non-entailment from the current supplied premises only (Lattice, Qubit, Admissibility, Record plus scale-reference, kinetic-isotropy and realized-state primitives); explicitly not a no-go against a future downstream selector theorem.
+- Extraction escape conditions (negative claims; triage compression): The negative is escapable by introducing content A_min explicitly leaves out - weighting, normalization, source/action structure, physical-observable identification, or state-selection rules - via a separate theorem or supplied condition; any such downstream object (PMNS source chart, seed distribution, KL functional, transport map, eta_obs, variational principle) lies outside the language and is not claimed meaningless.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Carries an explicit scope firewall and a path table of what each future route can close; states the independent audit lane, not this note, sets audit outcome.
 

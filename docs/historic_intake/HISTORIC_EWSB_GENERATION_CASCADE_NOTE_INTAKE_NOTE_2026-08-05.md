@@ -18,10 +18,6 @@ required before any effective status.
 
 The graph-shift selector V_sel = 32 sum_{i<j} phi_i^2 phi_j^2 breaks S_3 -> Z_2 by picking a weak axis, the VEV then breaks the Z_3 generation symmetry (Hessian gives a flat direction plus two 64 v^2 modes), and the Kawamoto-Smit Jordan-Wigner structure splits the residual Z_2, so three distinct masses - hence three generations - follow from EWSB rather than being an input.
 
-Original verdict: Claims to close the generation physicality gate - generations emerge from the same Coleman-Weinberg mechanism that generates the VEV and selects the weak axis.
-Scope: Mass ratios are order-of-magnitude only: pure loop suppression gives 1 : 0.0027 : 7.3e-6 against the observed 1 : 0.0073 : 1.3e-5, and the up/top ratio needs large logs or Froggatt-Nielsen suppression.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The generation-cascade mechanism claim (S_3 -> Z_2 -> Z_3 breaking chain) with i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Claims to close the generation physicality gate - generations emerge from the same Coleman-Weinberg mechanism that generates the VEV and selects the weak axis.
+- Extraction scope (triage compression; may reflect later context): Mass ratios are order-of-magnitude only: pure loop suppression gives 1 : 0.0027 : 7.3e-6 against the observed 1 : 0.0073 : 1.3e-5, and the up/top ratio needs large logs or Froggatt-Nielsen suppression.
 - Extraction red flags: The JW correction parameter beta_JW = 0.1 is a model input, not derived; the hierarchy is entirely radiative and quantitatively only order-of-magnitude.
 - Supersession (as known at extraction): Its 'generation physicality gate closed' claim conflicts with EWSB_CASCADE_PRECISION_NOTE.md (idx 446), which states the gate remains open per review.md.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Exact underdetermination theorem: on the retained surface every diagonal source-free candidate state is classified by the eight orbit weights a_(t,w) plus normalization, leaving a 7-PARAMETER FAMILY on the full C^16 cell. The scalar observable principle is a generator theorem not a state selector, and the Hilbert/Born rule mu_rho(P) = Tr(rho P) is conditional on a chosen rho, so neither reduces the family - rho_cell = I_16/16 is NOT derivable from the accepted retained stack.
 
-Original verdict: No - closure is not achieved; the sharpest exact no-go available on this lane.
-Scope: Direct worldtube route with already-accepted retained structure only, no new symmetry principle added; two explicit witnesses given (democratic/tracial and packet-light residual).
-Escape conditions (negative claims): Escaped by a retained source-free local traciality theorem on the full time-locked cell algebra; full four-bit flip invariance is a sufficient witness but the real missing content is a state-selection theorem explaining why source-free occupancy is the no-preferred-projector state.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact underdetermination no-go: every diagonal source-free state is classified b
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - closure is not achieved; the sharpest exact no-go available on this lane.
+- Extraction scope (triage compression; may reflect later context): Direct worldtube route with already-accepted retained structure only, no new symmetry principle added; two explicit witnesses given (democratic/tracial and packet-light residual).
+- Extraction escape conditions (negative claims; triage compression): Escaped by a retained source-free local traciality theorem on the full time-locked cell algebra; full four-bit flip invariance is a sufficient witness but the real missing content is a state-selection theorem explaining why source-free occupancy is the no-preferred-projector state.
 - Extraction red flags: Directly contradicts the flat assertion elsewhere in the family that rho_cell = I_16/16 is derived - it is derived only after an added principle (G_4 flip invariance, P1, or centrality).
 - Supersession (as known at extraction): The load-bearing no-go behind the 'not retained' verdicts in the axiom-native retained audit and the route check; the traciality theorem it demands is what the source-free-state candidate cluster then attempts.
 

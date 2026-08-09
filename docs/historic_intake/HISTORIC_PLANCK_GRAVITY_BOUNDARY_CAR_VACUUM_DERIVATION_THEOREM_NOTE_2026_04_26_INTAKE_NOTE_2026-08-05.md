@@ -18,10 +18,6 @@ required before any effective status.
 
 Replaces the disputed carrier ASSIGNMENT of prior theorems with a constructive derivation: B_grav is built from the CAR algebra {c_a, c_b^dag} = delta_ab, the source-free vacuum and single-tick application, with the HW=1 projector P_A emerging as the RESULT (B_grav = P_A verified to machine precision) rather than an input; P_3 is ruled out structurally, giving c_cell = 1/4, G_Newton,lat = 1 and a/l_P = 1 (PASS=41 FAIL=0).
 
-Original verdict: The Planck pin is unconditional on the minimal stack, with the carrier derived rather than assigned.
-Scope: Closes all five [P1] residuals from the second-iteration Codex review, including 'boundary theorem defines the carrier it needs to derive' and 'runner constructs the disputed carrier by assignment'.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The carrier DERIVED (CAR algebra construction) superseding hand-assignment — t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Planck pin is unconditional on the minimal stack, with the carrier derived rather than assigned.
+- Extraction scope (triage compression; may reflect later context): Closes all five [P1] residuals from the second-iteration Codex review, including 'boundary theorem defines the carrier it needs to derive' and 'runner constructs the disputed carrier by assignment'.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes the hand-assignment in PLANCK_GRAVITY_BOUNDARY_COFRAME_CARRIER_IDENTIFICATION (idx_pos 1364), which reached the same B_grav = P_A result by assignment.
 

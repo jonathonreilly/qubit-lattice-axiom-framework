@@ -18,10 +18,6 @@ required before any effective status.
 
 From the retained masses m_1 = 4.37, m_2 = 9.71, m_3 = 50.4 meV and PDG 2024 PMNS angles (|U_e1|^2 = 0.6752, |U_e2|^2 = 0.3001, |U_e3|^2 = 0.02241), the effective Majorana mass window is m_bb in [0.00, 6.96] meV — below the KamLAND-Zen bound (28-122 meV), below Legend-1000's ~17 meV reach, and at the edge of nEXO's ~7-15 meV. Structurally, |U_e1|^2 m_1 = 2.95 meV and |U_e2|^2 m_2 = 2.92 meV are nearly equal, placing m_1 in the NO cancellation funnel.
 
-Original verdict: A falsifiable window: non-detection at Legend-1000 is consistent, and a detection near 7 meV would indicate constructively aligned Majorana phases.
-Scope: Operates on the bounded Majorana-seesaw surface with the admitted Higgs/CW EW lane; the specific value within the window depends on undetermined Majorana phases alpha_i.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Falsifiable m_bb window (~7 meV) with the observable-corrected input flagged.
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A falsifiable window: non-detection at Legend-1000 is consistent, and a detection near 7 meV would indicate constructively aligned Majorana phases.
+- Extraction scope (triage compression; may reflect later context): Operates on the bounded Majorana-seesaw surface with the admitted Higgs/CW EW lane; the specific value within the window depends on undetermined Majorana phases alpha_i.
 - Extraction red flags: m_2 is observable-corrected via the observed Delta m^2_21 rather than derived, and the solar-gap lane remains open.
 - Supersession (as known at extraction): Depends on the observable-corrected m_2 from NEUTRINO_MASS_SUM_PREDICTION_2026-04-22; note the retained 'M_R currently zero' surface would make m_bb vanish trivially, so this note deliberately works on a different surface.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 A DEMOTION PACKET against landed content: recommends dropping ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30 from proposed_retained/audited_conditional to bounded, because the Sommer scale r_0 = 0.5 fm (Sommer 1993, FLAG) and the 4-loop PDG-standard QCD running bridge are LOAD-BEARING literature values, failing Criterion 3. Audit runner PASS=35 FAIL=0 and the parent strict runner re-verified PASS=18 FAIL=0 - the algebra is not challenged, only the status label.
 
-Original verdict: 259 transitive descendants should treat alpha_s(M_Z) as bounded support input with admitted standard corrections, not a retained-grade zero-input derivation.
-Scope: Status correction only; the parent remains a legitimate bounded support route.
-Escape conditions (negative claims): Full retention would require retiring r_0 = 0.5 fm via a framework-derived scale anchor (hard), retiring 4-loop running via a framework-native running theorem (hard), and lifting minimal_axioms_2026-04-11 to retained via G_BARE_* family closure (very hard).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Demotion packet against a headline landed row: docs/ALPHA_S_DIRECT_WILSON_LOOP_D
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): 259 transitive descendants should treat alpha_s(M_Z) as bounded support input with admitted standard corrections, not a retained-grade zero-input derivation.
+- Extraction scope (triage compression; may reflect later context): Status correction only; the parent remains a legitimate bounded support route.
+- Extraction escape conditions (negative claims; triage compression): Full retention would require retiring r_0 = 0.5 fm via a framework-derived scale anchor (hard), retiring 4-loop running via a framework-native running theorem (hard), and lifting minimal_axioms_2026-04-11 to retained via G_BARE_* family closure (very hard).
 - Extraction red flags: A headline alpha_s derivation carrying 259 transitive descendants was shipped as proposed_retained while depending on two load-bearing literature imports.
 - Supersession (as known at extraction): DEMOTES LANDED CONTENT: docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30 from proposed_retained to bounded. Highest-impact correction in this stratum by descendant count.
 

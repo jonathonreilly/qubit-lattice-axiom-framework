@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For a single Higgs doublet with fixed Z_3 charge q_H, the exact support theorem gives Y_nu = D P_q with D diagonal and P_q a permutation matrix, so Y_nu Y_nu^dag = D D^dag is exactly diagonal and the left singular vectors are only coordinate phases and permutations — no structurally forced nontrivial left mixing.
 
-Original verdict: Fixed-q_H single-Higgs neutrino Dirac textures are monomial: they generate masses but not nontrivial left mixing, so observed PMNS mixing requires extra structure. Cannot claim PMNS mixing is impossible in the framework or that the full mixing problem is solved.
-Scope: The retained single-Higgs Dirac neutrino lane with fixed q_H; an exact obstruction theorem only.
-Escape conditions (negative claims): Escaping requires structure beyond this exact lane — the minimal escape is worked out in the two-Higgs note (idx_pos 1186).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Exact monomial no-go: single-Higgs fixed-charge Dirac textures give masses but N
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Fixed-q_H single-Higgs neutrino Dirac textures are monomial: they generate masses but not nontrivial left mixing, so observed PMNS mixing requires extra structure. Cannot claim PMNS mixing is impossible in the framework or that the full mixing problem is solved.
+- Extraction scope (triage compression; may reflect later context): The retained single-Higgs Dirac neutrino lane with fixed q_H; an exact obstruction theorem only.
+- Extraction escape conditions (negative claims; triage compression): Escaping requires structure beyond this exact lane — the minimal escape is worked out in the two-Higgs note (idx_pos 1186).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explains why the older fitted neutrino lane needed extra symmetry breaking and asymmetry terms; directly set up by the Z_3 support trichotomy and escaped by idx_pos 1186.
 

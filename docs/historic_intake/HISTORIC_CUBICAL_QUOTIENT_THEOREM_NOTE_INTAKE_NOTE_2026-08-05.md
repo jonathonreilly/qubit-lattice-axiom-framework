@@ -18,10 +18,6 @@ required before any effective status.
 
 For finite rooted 3-chains V, W on the 3+1 cubic lattice, dV = dW iff V + W is a finite closed 3-chain that bounds — proved constructively by building the exact C_4 -> C_3 boundary matrix on a support box and solving dX = V + W over F_2 by lexicographic elimination — with the hypercube-complement witness being exactly one 4-cube boundary and the first rooted duplicate pair at n = 4 also on it.
 
-Original verdict: The rooted filling is not physical data — only its boundary is.
-Scope: Exhaustive finite-box checks; the canonical quotient key is identified as dV.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact constructive theorem: dV = dW iff V+W bounds — only the boundary is phys
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The rooted filling is not physical data — only its boundary is.
+- Extraction scope (triage compression; may reflect later context): Exhaustive finite-box checks; the canonical quotient key is identified as dV.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Extends the local same-boundary hidden-completion theorem to a global constructive statement.
 

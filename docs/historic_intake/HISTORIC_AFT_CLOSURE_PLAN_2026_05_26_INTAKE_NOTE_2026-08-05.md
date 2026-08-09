@@ -18,10 +18,6 @@ required before any effective status.
 
 AFT closure path mapped; the critical dependency is one governance decision — accept ABJ (1969 textbook chiral anomaly) as bare_external_standard_qft_axiom, same tier as retained Lieb-Robinson/cluster/Stone-vN; hostile-review probability estimates: <5% retains as 'forces (3,1)' positive theorem, ~45% audited_conditional; PR 402 content fully recoverable via gh pr diff 402.
 
-Original verdict: path well-mapped; one governance decision pending
-Scope: synthesis plus six-step closure plan for the anomaly-forces-time chain
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ OWNER-DECISION surface item: the anomaly-forces-time closure path is fully mappe
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): path well-mapped; one governance decision pending
+- Extraction scope (triage compression; may reflect later context): synthesis plus six-step closure plan for the anomaly-forces-time chain
 - Extraction red flags: recommends accepting an external import (ABJ) to unblock closure; probability figures are author estimates, not measurements; four hostile-review weak links (F-G substrate circularity, F-H nu_R=0 convention) acknowledged
 - Supersession (as known at extraction): none recorded
 

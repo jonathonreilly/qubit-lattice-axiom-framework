@@ -18,10 +18,6 @@ required before any effective status.
 
 Of four candidate decoherence mechanisms only two produce any visibility change: sector labels give exactly V_0(1-p), symmetric and asymmetric delay-field distortion give V unchanged, and topological DAG shortcuts give non-trivial V(p) that can INCREASE visibility (far-slit amplitude share rising from 16.5% to 50.2% at y=3 as pruning removes 81 edges and adds 39, net -42).
 
-Original verdict: Interference = topology, gravity = field: for a record mechanism to decohere in this model it MUST change the causal DAG topology, so Axiom 9's 'separation' has to be topological rather than a path label.
-Scope: Two-slit setup on a fixed causal DAG; the structural principle is argued from the phase sweep covering all relative phases and visibility being invariant to field-induced amplitude rescaling.
-Escape conditions (negative claims): The 'field perturbations cannot decohere' negative rests on three stated conditions — the phase sweep already explores all relative phases, visibility (max-min)/(max+min) is invariant to path-independent amplitude rescaling, and the DAG is held fixed; the escape is any change to path EXISTENCE. The note also asks openly whether the principle is a consequence of the linear path-sum and would survive a nonlinear generalization.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The structural principle: in a linear path-sum on a fixed DAG, records must chan
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Interference = topology, gravity = field: for a record mechanism to decohere in this model it MUST change the causal DAG topology, so Axiom 9's 'separation' has to be topological rather than a path label.
+- Extraction scope (triage compression; may reflect later context): Two-slit setup on a fixed causal DAG; the structural principle is argued from the phase sweep covering all relative phases and visibility being invariant to field-induced amplitude rescaling.
+- Extraction escape conditions (negative claims; triage compression): The 'field perturbations cannot decohere' negative rests on three stated conditions — the phase sweep already explores all relative phases, visibility (max-min)/(max+min) is invariant to path-independent amplitude rescaling, and the DAG is held fixed; the escape is any change to path EXISTENCE. The note also asks openly whether the principle is a consequence of the linear path-sum and would survive a nonlinear generalization.
 - Extraction red flags: Lists as open whether the model can produce GENUINE decoherence (V monotonically decreasing) at all; its topological-shortcut result is the one whose implementation was later corrected (idx 3137).
 - Supersession (as known at extraction): Synthesizes the asymmetric-decoherence (idx 3109), partial-records (idx 3128) and topological-decoherence (idx 3136) results; its topological-shortcut row predates the correction at idx 3137.
 

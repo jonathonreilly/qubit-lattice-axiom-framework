@@ -18,10 +18,6 @@ required before any effective status.
 
 For site-phase operators P_mu on C^{L^3} (L even), a monomial of order n has nonzero matrix elements only when H(alpha XOR beta) = n mod 2, so even-order polynomials preserve the hw-parity split C^8_even + C^8_odd (each dimension 4) and odd-order ones swap them; explicit projectors are Pi_± = (1 ± T_1 T_2 T_3)/2.
 
-Original verdict: AIRTIGHT — combinatorial argument plus the Hamming-distance selection rule, runner 68/68 PASS.
-Scope: BZ-corner operators built from site-phase products on an even-L cubic lattice.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Airtight Hamming-parity selection rule (68/68) — even-order polynomials preser
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): AIRTIGHT — combinatorial argument plus the Hamming-distance selection rule, runner 68/68 PASS.
+- Extraction scope (triage compression; may reflect later context): BZ-corner operators built from site-phase products on an even-L cubic lattice.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Composition result strengthening the translation-eigenvalue theorem and the Hamming-distance selection rule.
 

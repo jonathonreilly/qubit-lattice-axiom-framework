@@ -18,10 +18,6 @@ required before any effective status.
 
 With the causal DAG held fixed (all barrier nodes present, amplitude zeroed at closed slits instead of removing nodes), the Sorkin parameter is zero to machine precision: max |I3|/|P_ABC| = 4.73e-16 (symmetric), 6.44e-16 (close), 2.56e-16 (wide), 4.22e-16 (asymmetric) — drops of 1e17 to 1e25 versus the original topology-changing test.
 
-Original verdict: BORN RULE CONFIRMED — the model has standard pairwise interference only, and the original I3 != 0 was entirely DAG reconfiguration with zero genuine higher-order interference.
-Scope: Four slit configurations (-4,0,+4), (-2,0,+2), (-6,0,+6), (-4,+1,+6) with the DAG held fixed.
-Escape conditions (negative claims): The 'no higher-order interference' negative is stated to depend on holding the DAG fixed via amplitude-zeroing rather than node removal; the escape it identifies is topology change, where DAG reconfiguration reintroduces nonlinear coupling between slit configurations (the original I3 up to 4.6e9).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Machine-precision pairwise-only result PLUS the mechanism discovery: apparent So
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BORN RULE CONFIRMED — the model has standard pairwise interference only, and the original I3 != 0 was entirely DAG reconfiguration with zero genuine higher-order interference.
+- Extraction scope (triage compression; may reflect later context): Four slit configurations (-4,0,+4), (-2,0,+2), (-6,0,+6), (-4,+1,+6) with the DAG held fixed.
+- Extraction escape conditions (negative claims; triage compression): The 'no higher-order interference' negative is stated to depend on holding the DAG fixed via amplitude-zeroing rather than node removal; the escape it identifies is topology change, where DAG reconfiguration reintroduces nonlinear coupling between slit configurations (the original I3 up to 4.6e9).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly resolves the earlier AMBIGUOUS Sorkin test (idx 3133) by refining it to a fixed-DAG protocol.
 

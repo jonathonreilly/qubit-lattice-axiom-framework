@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves the local cubic-symmetric source class on the star support is five-plus-two dimensional, then scans all 162 admissible exact O_h source laws and finds a nonzero best sampled direct-metric 4D Einstein residual — source-class freedom helps but does NOT remove the residual.
 
-Original verdict: The residual is not an artifact of choosing the wrong local cubic-symmetric source law; the strongest next move is either a coarse-grained effective source law landing in a narrower exterior-equivalent class, or a corrected nonlinear exterior metric law derived from the same harmonic field.
-Scope: The exact local O_h family on the star support; a useful negative result.
-Escape conditions (negative claims): Two named escapes: a coarse-grained/effective physical source law in a narrower class, or a corrected nonlinear exterior metric law replacing the direct common-source ansatz.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The residual is not an artifact of choosing the wrong local cubic-symmetric source law; the strongest next move is either a coarse-grained effective source law landing in a narrower exterior-equivalent class, or a corrected nonlinear exterior metric law derived from the same harmonic field.
+- Extraction scope (triage compression; may reflect later context): The exact local O_h family on the star support; a useful negative result.
+- Extraction escape conditions (negative claims; triage compression): Two named escapes: a coarse-grained/effective physical source law in a narrower class, or a corrected nonlinear exterior metric law replacing the direct common-source ansatz.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

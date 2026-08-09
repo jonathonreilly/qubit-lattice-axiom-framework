@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 On Herm(3) the family B_{alpha,beta}(A,B) = alpha*Tr(AB) + beta*tr(A)*tr(B) is positive-definite exactly on the open cone alpha > 0, alpha + 3*beta > 0, every member is Ad-invariant, and the mixed scalar/traceless blocks vanish for ALL alpha,beta — so orthogonality fixes block shape but not relative weight. The scale-invariant ratio is (alpha + 3*beta)/alpha spanning the continuum 1 + 3*lambda for lambda > -1/3, and the circulant AM-GM extremum gives kappa(lambda) = 2/(1 + 3*lambda), which is unique only AFTER lambda is supplied and does not select lambda = 0.
 
-Original verdict: PASS on all eight checks; there is exactly one recovery condition (a premise fixing the relative isotype-weight ratio), and beta = 0, equal block weights, and the Frobenius point are three names for it, not three walls.
-Scope: Bilinear forms on Herm(3) plus the Herm_circ(3) restriction for AM-GM; no per-site, per-mode, or lattice-wide claim.
-Escape conditions (negative claims): Strengthening 'Ad-invariant positive inner product' to 'the Hilbert-Schmidt form inherited from the ambient matrix algebra with its trace normalization' fixes beta = 0 immediately and restores kappa = 2 — that inheritance with fixed relative normalization is precisely the missing premise.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Structural negative on the kappa parameter: on Herm(3) the family alpha*Tr(AB) +
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PASS on all eight checks; there is exactly one recovery condition (a premise fixing the relative isotype-weight ratio), and beta = 0, equal block weights, and the Frobenius point are three names for it, not three walls.
+- Extraction scope (triage compression; may reflect later context): Bilinear forms on Herm(3) plus the Herm_circ(3) restriction for AM-GM; no per-site, per-mode, or lattice-wide claim.
+- Extraction escape conditions (negative claims; triage compression): Strengthening 'Ad-invariant positive inner product' to 'the Hilbert-Schmidt form inherited from the ambient matrix algebra with its trace normalization' fixes beta = 0 immediately and restores kappa = 2 — that inheritance with fixed relative normalization is precisely the missing premise.
 - Extraction red flags: kappa = 2 (the value the r = 1/2 story needs) turns out to require a normalization premise that is not implied by positivity, Ad-invariance, and block orthogonality — a load-bearing hidden input in the Koide chain.
 - Supersession (as known at extraction): N8 finds later Koide notes reusing the same free isotype-weight ratio — docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md and docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md — which expose selector inputs but do not invalidate the counterexample.
 

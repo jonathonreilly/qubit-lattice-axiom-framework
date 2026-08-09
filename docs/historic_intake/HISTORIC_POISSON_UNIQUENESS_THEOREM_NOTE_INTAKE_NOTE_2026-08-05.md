@@ -18,10 +18,6 @@ required before any effective status.
 
 On Z^3 with nearest-neighbour coupling the graph Laplacian is the unique translation-invariant self-adjoint operator whose Green's function decays as 1/r and is attractive: the zero-mode condition forces c_0 = -6 c_1, Taylor expansion gives L_hat(k) = -c_1|k|^2 + O(|k|^4), the bracket 3 - cos k_1 - cos k_2 - cos k_3 vanishes only at k = 0, and attraction forces c_1 > 0. Corollary: adding a mass term makes the Green's function Yukawa, ruling out massive gravitons in this class.
 
-Original verdict: Exact - the 5/5 algebraic steps are the proof; three of five numerical checks FAIL from finite-size artifacts and are explicitly not load-bearing.
-Scope: Explicit assumptions: translation invariance, nearest-neighbour connectivity, self-adjointness and exact 1/r decay; the proof is on infinite Z^3, with finite-lattice numerics as consistency checks only.
-Escape conditions (negative claims): The uniqueness bites only within the stated operator class - beyond nearest-neighbour or beyond exact 1/r decay it says nothing.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Poisson uniqueness within the stated class — WITH the EXACT-header-vs-3/5-nume
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact - the 5/5 algebraic steps are the proof; three of five numerical checks FAIL from finite-size artifacts and are explicitly not load-bearing.
+- Extraction scope (triage compression; may reflect later context): Explicit assumptions: translation invariance, nearest-neighbour connectivity, self-adjointness and exact 1/r decay; the proof is on infinite Z^3, with finite-lattice numerics as consistency checks only.
+- Extraction escape conditions (negative claims; triage compression): The uniqueness bites only within the stated operator class - beyond nearest-neighbour or beyond exact 1/r decay it says nothing.
 - Extraction red flags: Header advertises EXACT while the same runner reports 3/5 numerical checks FAILING; the note argues these are finite-size artifacts, but a reader scanning runner output would see failures.
 - Supersession (as known at extraction): none recorded
 

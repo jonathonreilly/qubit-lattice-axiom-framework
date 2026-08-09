@@ -18,10 +18,6 @@ required before any effective status.
 
 On the retained Cl(3)/Z^3 lattice with the staggered Dirac D and alpha_LM = 1/(4 pi u_0), the tau Yukawa is generated at one loop with Casimir coefficient one: y_tau^fw = alpha_LM/(4 pi), closing the R2 identification as a derivation from the retained Atlas plus textbook math rather than a new axiom.
 
-Original verdict: Combined with the Koide Dirac zero-mode phase theorem (R1), the Koide lane closes axiom-only with Brannen phase delta = 2/9 and Q = 2/3.
-Scope: C_tau = SU(2)_L Casimir + GUT-normalized U(1)_Y = 3/4 + 1/4 = 1 uses the standard GUT normalization; alternative (Weinberg-scheme) normalizations would give different coefficients.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The one-loop radiative y_tau = alpha_LM/(4 pi) closure claim WITH its convention
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Combined with the Koide Dirac zero-mode phase theorem (R1), the Koide lane closes axiom-only with Brannen phase delta = 2/9 and Q = 2/3.
+- Extraction scope (triage compression; may reflect later context): C_tau = SU(2)_L Casimir + GUT-normalized U(1)_Y = 3/4 + 1/4 = 1 uses the standard GUT normalization; alternative (Weinberg-scheme) normalizations would give different coefficients.
 - Extraction red flags: The load-bearing Casimir combination is convention-dependent, as the note's own caveat states.
 - Supersession (as known at extraction): none recorded
 

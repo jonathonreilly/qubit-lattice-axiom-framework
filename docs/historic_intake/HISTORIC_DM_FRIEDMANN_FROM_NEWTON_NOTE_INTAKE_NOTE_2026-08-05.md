@@ -18,10 +18,6 @@ required before any effective status.
 
 H^2 = (8 pi G/3) rho follows from the Newtonian shell argument (lattice Poisson law + Gauss shell theorem + energy conservation at E = 0) and is identical to the GR first Friedmann equation for k = 0; the rho + 3p pressure term enters only the second Friedmann equation, which freeze-out never uses.
 
-Original verdict: Reclassifies the Friedmann step from GR input to lattice-derived Newtonian cosmology, but the lane stays BOUNDED because k = 0 is still an input.
-Scope: Valid for zero total shell energy E = 0, i.e. spatial flatness k = 0; lattice-to-continuum corrections O((aT)^2) ~ 10^-35 at freeze-out temperatures.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Friedmann k=0 reclassified from GR input to lattice-derived Newtonian shell argu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Reclassifies the Friedmann step from GR input to lattice-derived Newtonian cosmology, but the lane stays BOUNDED because k = 0 is still an input.
+- Extraction scope (triage compression; may reflect later context): Valid for zero total shell energy E = 0, i.e. spatial flatness k = 0; lattice-to-continuum corrections O((aT)^2) ~ 10^-35 at freeze-out temperatures.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

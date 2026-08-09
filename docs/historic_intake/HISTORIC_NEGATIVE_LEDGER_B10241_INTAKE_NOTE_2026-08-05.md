@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Three routes blocked, headed by promoting the card/protocol to a closed lab prediction while the source-to-NV coupling map and calibrated amplitude/noise budget remain open; also records that a print-only probe script was superseded by a bounded probe that actually asserts note metadata and the detector theorem.
 
-Original verdict: Promotion blocked.
-Scope: The NV/diamond lane.
-Escape conditions (negative claims): Only after a physical transfer-coefficient theorem or a calibrated signal-budget runner exists.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,9 @@ NV/diamond lane consolidated: promotion of the card/protocol to a closed lab pre
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Promotion blocked.
+- Extraction scope (triage compression; may reflect later context): The NV/diamond lane.
+- Extraction escape conditions (negative claims; triage compression): Only after a physical transfer-coefficient theorem or a calibrated signal-budget runner exists.
 - Extraction red flags: A print-only 'probe' had been serving as row evidence before being superseded - the same class of defect as the empty-stdout caches.
 - Supersession (as known at extraction): none recorded
 

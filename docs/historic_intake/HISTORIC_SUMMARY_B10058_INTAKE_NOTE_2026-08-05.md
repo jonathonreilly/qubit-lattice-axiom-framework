@@ -18,10 +18,6 @@ required before any effective status.
 
 Corrected status is UNCOMPUTED: tree level PASSES with only the dim-6 Planck-suppressed operator giving |dE^2/E^2| ~ (1/12)(E/M_Pl)^2, i.e. ~1e-34 at LHC and ~1e-40 at nucleon scale (safe by 12-13 orders) but ~5.6e-18 at UHECR E~1e11 GeV, only 0.3 orders below the bound. The radiative marginal is uncomputed: the shared kernel does NOT cancel the species difference, which is O(1)*alpha_s/4pi via Casimir differences (quark-lepton 4/3, gluon-quark 5/3), so the best current estimate of the surviving difference is ~1e-3.
 
-Original verdict: The prior 'obstruction needing new physics' framing imported an EFT category; for a fixed theory this is tree-passes plus an uncomputed high-stakes prediction - if the ~1e-3 estimate holds it is a FALSIFICATION, not an unnatural tuning.
-Scope: Five subagents, literature enabled; the framework at beta=6 with a^-1=M_Pl and g^2=2N/beta=1 derived.
-Escape conditions (negative claims): Custodial symmetry / new strong UV is the fallback only if the computation lands above bound; the primary artifact is the species-differential marginal delta-v on the native continuous-time surface at beta=6.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ TERMINAL of the 2026-06-06 Lorentz exercise: corrected status UNCOMPUTED - tree 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The prior 'obstruction needing new physics' framing imported an EFT category; for a fixed theory this is tree-passes plus an uncomputed high-stakes prediction - if the ~1e-3 estimate holds it is a FALSIFICATION, not an unnatural tuning.
+- Extraction scope (triage compression; may reflect later context): Five subagents, literature enabled; the framework at beta=6 with a^-1=M_Pl and g^2=2N/beta=1 derived.
+- Extraction escape conditions (negative claims; triage compression): Custodial symmetry / new strong UV is the fallback only if the computation lands above bound; the primary artifact is the species-differential marginal delta-v on the native continuous-time surface at beta=6.
 - Extraction red flags: Two live falsification exposures recorded: UHECR tree prediction 0.3 orders below bound, and a radiative estimate ~1e-3 against bounds as tight as 1e-20. Neither has been computed on the framework's own surface.
 - Supersession (as known at extraction): TERMINAL summary of the 2026-06-06 exercise; corrects the framing of blocks #3123/#3126/#3129/#3131 without overturning their substance.
 

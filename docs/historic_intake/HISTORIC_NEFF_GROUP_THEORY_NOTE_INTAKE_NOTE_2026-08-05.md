@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposes N_eff = 12 pi/(N_taste alpha_s |ln alpha_s|) = 10.73 into layers: 12 = dim(Dirac spinor) x N_c = 4 x 3 is structural (real degrees of freedom of one Dirac fermion in the SU(3) fundamental), 16 comes from Cl(4), 1/6 from SU(3) Clebsch-Gordan, and pi from 4D geometry — while the exponent-matching step itself is a rewriting.
 
-Original verdict: PARTIALLY TAUTOLOGICAL — the exponent equality is a rewriting, but the inputs are genuinely group-theoretic and the identity does not follow from Cl(4) alone; the nontrivial content is the AGREEMENT between the 1-loop CW formula and the taste hierarchy formula.
-Scope: Analysis of an existing identity, not a new derivation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ N_eff decomposition self-identifying a load-bearing tautology — deflation of a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PARTIALLY TAUTOLOGICAL — the exponent equality is a rewriting, but the inputs are genuinely group-theoretic and the identity does not follow from Cl(4) alone; the nontrivial content is the AGREEMENT between the 1-loop CW formula and the taste hierarchy formula.
+- Extraction scope (triage compression; may reflect later context): Analysis of an existing identity, not a new derivation.
 - Extraction red flags: Self-identifies a load-bearing step as a tautology and flags one group-theory coincidence (12 = N_c(N_c+1)) as not the physical origin.
 - Supersession (as known at extraction): Deflates part of the claim in TASTE_DETERMINANT_HIERARCHY_NOTE / V_NEFF_DERIVATION_NOTE by separating the tautological rewriting from the physical content.
 

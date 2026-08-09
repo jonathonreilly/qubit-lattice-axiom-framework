@@ -18,10 +18,6 @@ required before any effective status.
 
 An honest three-level comparison: the framework reproduces hydrogen level ratios to within ~5% at N = 60 (E_2/E_1 = 0.25857 vs 0.25, E_3/E_1 = 0.11132 vs 0.11111, E_6/E_1 = 0.02896 vs 0.02778) with the Bohr radius emerging as r_0 = 2/g = 2.00 sites, while conceding a standard finite-difference SE solver would do as well or better on the same grid.
 
-Original verdict: The framework's added content is that the kinetic operator and Coulomb potential emerge together from one algebraic structure, whereas standard QM takes them as separate inputs; what it loses is the connection to SI units.
-Scope: Level ratios only; the framework cannot predict E_1 in eV without alpha_EM and m_e, which is called a genuine deficit.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Honest comparison: numerically no better than a textbook solver; the framework's
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The framework's added content is that the kinetic operator and Coulomb potential emerge together from one algebraic structure, whereas standard QM takes them as separate inputs; what it loses is the connection to SI units.
+- Extraction scope (triage compression; may reflect later context): Level ratios only; the framework cannot predict E_1 in eV without alpha_EM and m_e, which is called a genuine deficit.
 - Extraction red flags: Explicitly concedes the numbers are no better than a textbook SE solver and names the absolute-energy failure as a genuine deficit.
 - Supersession (as known at extraction): none recorded
 

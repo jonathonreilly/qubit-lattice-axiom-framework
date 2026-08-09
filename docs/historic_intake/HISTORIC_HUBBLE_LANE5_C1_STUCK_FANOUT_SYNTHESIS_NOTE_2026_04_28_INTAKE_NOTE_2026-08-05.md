@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Five orthogonal premises all fail to force the Cl_4(C) carrier on P_A H_cell: S_4 axis permutation gives trivial + standard reps whose generators neither commute nor anticommute; staggered-Dirac/ABS descent reduces to the Cycle-2 A1 Hamming-weight obstruction (bulk Majoranas shift weight by +/-1); Holevo/entropy is a state quantity identical across CAR, two-qubit and ququart semantics; Stinespring dilation of a projection yields only the tautological isometry; Reeh-Schlieder cyclicity does not force CAR.
 
-Original verdict: None of the five orthogonal routes forces the Cl_4(C) carrier structure, so the (C1) gate stands where Cycle 5 left it.
-Scope: Cycle 6 stuck fan-out, 3-5 orthogonal premises beyond the audit's A1-A6 direct-derivation frames; branch-local audit-grade.
-Escape conditions (negative claims): Each premise fails for a stated structural reason — S_4 unitaries do not imply Hermitian anticommutation, ABS applies to spin bundles not projections within Boolean event registers, entropy/Holevo are dimension-only, dilation of a projection has Kraus operator P_A itself, and cyclic-and-separating is not a CAR property — so any escape must supply Hermitian-anticommutator content on the rank-four block itself.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Five orthogonal premises all fail to force the Cl_4(C) carrier, each for a state
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): None of the five orthogonal routes forces the Cl_4(C) carrier structure, so the (C1) gate stands where Cycle 5 left it.
+- Extraction scope (triage compression; may reflect later context): Cycle 6 stuck fan-out, 3-5 orthogonal premises beyond the audit's A1-A6 direct-derivation frames; branch-local audit-grade.
+- Extraction escape conditions (negative claims; triage compression): Each premise fails for a stated structural reason — S_4 unitaries do not imply Hermitian anticommutation, ABS applies to spin bundles not projections within Boolean event registers, entropy/Holevo are dimension-only, dilation of a projection has Kraus operator P_A itself, and cyclic-and-separating is not a CAR property — so any escape must supply Hermitian-anticommutator content on the rank-four block itself.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Cycle 6 and the loop's mandated pre-stop fan-out, following the Cycle 5 A5 minimal-carrier audit; reads as the terminal note of the (C1) gate loop.
 

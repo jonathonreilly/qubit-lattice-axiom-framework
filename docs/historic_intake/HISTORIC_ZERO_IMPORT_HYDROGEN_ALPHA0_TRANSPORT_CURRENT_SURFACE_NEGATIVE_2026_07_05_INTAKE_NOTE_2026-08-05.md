@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply ALPHA0_TRANSPORT_RETAINED, ALPHA0_RETAINED, or RETAINED_ALPHA0_LOW_ENERGY_COULOMB. One-loop target surface alpha(0)^-1 = alpha_EM(M_Z)^-1 + (2/(3 pi)) T_EM + Delta_match with T_EM = sum_f N_c(f) Q_f^2 log(M_Z/m_f^eff); the retained charge/count surface fixes only sum_f N_c(f) Q_f^2 = 8 and b_QED = (4/3)*8 = 32/3. Comparators (not proof inputs): alpha_EM(M_Z)^-1 = 127.67, alpha(0)^-1 = 137.035999084.
 
-Original verdict: Support-only non-supply boundary; five of eleven contract inputs are explicitly missing (QED loop kernel, R-Lep, R-Q-heavy, R-Had-NP, scheme/decoupling matching).
-Scope: The Lane 2 low-energy coupling input consumed by the static-source Rydberg lane.
-Escape conditions (negative claims): Supply the five missing inputs plus owner ratification and audit acceptance; note that admitted literature R(s) is retained-with-import and does not satisfy the zero-import branch.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Lane 2 terminal: alpha(0) transport not supplied — five of eleven inputs missi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; five of eleven contract inputs are explicitly missing (QED loop kernel, R-Lep, R-Q-heavy, R-Had-NP, scheme/decoupling matching).
+- Extraction scope (triage compression; may reflect later context): The Lane 2 low-energy coupling input consumed by the static-source Rydberg lane.
+- Extraction escape conditions (negative claims; triage compression): Supply the five missing inputs plus owner ratification and audit acceptance; note that admitted literature R(s) is retained-with-import and does not satisfy the zero-import branch.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for Lane 2 alpha(0); packets 2510/2508/2511 feed it. TERMINAL non-supply boundary for its subtarget in the 2026-07-04/05 zero-import-hydrogen sweep (campaign umbrella: goal packet idx 2514, route triage idx 2667).
 

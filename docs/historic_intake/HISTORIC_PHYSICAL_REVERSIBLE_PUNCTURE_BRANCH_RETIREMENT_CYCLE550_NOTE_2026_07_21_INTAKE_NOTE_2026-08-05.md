@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Constructs a literal branch carrier — 24 proper-frame loops simultaneously installed in blank Cycle-527 microgrid sites, collision-free with only NN one-/two-M2 primitives, constant overhead, rotating into themselves under all 24 frames and 576 products with no runtime path selector — then SHARPLY FALSIFIES the exact-blank reversible puncture ansatz: any circuit accepting all eight lawful Wilson sectors, preserving arbitrary target/gauge data, returning to the same plus-sector terminal and satisfying terminal blankness must map eight orthogonal input rays to ONE output ray, giving rank one instead of eight and Gram residual one. The circuit-level witness is equally direct: after correction W_final = +1, reversing Wilson extraction XORs zero into the syndrome token, leaving the old syndrome behind.
 
-Original verdict: Does NOT show physical puncture surgery is impossible — Cycle 550 constructs carrier loops but not a topology-changing stabilizer-check surgery, and the non-CSS/subsystem probe is constructive with six branch bits transferring into six sink M2 nonblank on 63 of 64 branches.
-Scope: The statement survives arbitrary intermediate code deformation INCLUDING a genuine reversible puncture, because it uses only the declared input and terminal spaces.
-Escape conditions (negative claims): Escape conditions stated exactly: a persistent puncture, enlarged terminal gauge sink, reset bath, promised plus-sector input, or product encoder each CHANGES the terminal/domain contract and remains live. Broad negative gate FAIL / DO NOT SHIP; the narrow blank-terminal isometry lemma is eligible only after the N1-N8 audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Shipped scoped no-go: blank-terminal puncture isometry - 24 proper-frame loops i
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Does NOT show physical puncture surgery is impossible — Cycle 550 constructs carrier loops but not a topology-changing stabilizer-check surgery, and the non-CSS/subsystem probe is constructive with six branch bits transferring into six sink M2 nonblank on 63 of 64 branches.
+- Extraction scope (triage compression; may reflect later context): The statement survives arbitrary intermediate code deformation INCLUDING a genuine reversible puncture, because it uses only the declared input and terminal spaces.
+- Extraction escape conditions (negative claims; triage compression): Escape conditions stated exactly: a persistent puncture, enlarged terminal gauge sink, reset bath, promised plus-sector input, or product encoder each CHANGES the terminal/domain contract and remains live. Broad negative gate FAIL / DO NOT SHIP; the narrow blank-terminal isometry lemma is eligible only after the N1-N8 audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Its minimum Wilson information (three bits) is realized by Cycle 553 (idx 2969), and the rank pattern generalizes to Cycle 556's (idx 2998) 64-to-8 theorem. One of the few genuine scoped no-gos in the sweep.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes an exact audit blocker by deriving the CORRECT Landau identity for the CHSH square and adding a runner; proposal_allowed true. The pipeline reset the row to unaudited / awaiting_audit with one ready queue entry and no open dependency paths.
 
-Original verdict: No audit verdict applied by the branch.
-Scope: One CHSH row.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Correction of landed content pulled as a set: derives the CORRECT Landau identit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No audit verdict applied by the branch.
+- Extraction scope (triage compression; may reflect later context): One CHSH row.
 - Extraction red flags: A landed CHSH note carried an incorrect displayed identity until this repair - a mathematical error in shipped content.
 - Supersession (as known at extraction): CORRECTS LANDED CONTENT: the previously displayed Landau identity for the CHSH square had the wrong sign.
 

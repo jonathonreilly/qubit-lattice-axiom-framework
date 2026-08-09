@@ -18,10 +18,6 @@ required before any effective status.
 
 Replaces any blanket 'gravity derived' claim with a four-tier accounting keyed to the extra assumptions each result consumes: Tier 1 is Poisson self-consistency (graded BOUNDED - only alpha = 1 of 21 fractional-Laplacian operators on [0.25, 3.0] gives an attractive fixed point) plus Newton, exponent 2 = d-1, and the product law (EXACT given Poisson); Tiers 2-3 are exact corollaries and conditional derivations; Tier 4 is open.
 
-Original verdict: An honest accounting of what is exact, what is a corollary, what requires a continuum limit, and what remains open.
-Scope: Assumptions are named A1-A4 (framework axiom, self-consistency, locality, attraction) and inherited explicitly down the tiers.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ The four-tier gravity accounting keyed to consumed assumptions — the lane's ho
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An honest accounting of what is exact, what is a corollary, what requires a continuum limit, and what remains open.
+- Extraction scope (triage compression; may reflect later context): Assumptions are named A1-A4 (framework axiom, self-consistency, locality, attraction) and inherited explicitly down the tiers.
 - Extraction red flags: Grades the Poisson step BOUNDED (numerical evidence, not closed proof), directly contradicting the sibling GRAVITY_POISSON_DERIVED note (idx 649) which calls the same step an exact theorem with nothing open.
 - Supersession (as known at extraction): States the upgrade condition for its own weakest row - a proof that the graph Laplacian is the unique local operator giving an attractive self-consistent fixed point on any connected graph.
 

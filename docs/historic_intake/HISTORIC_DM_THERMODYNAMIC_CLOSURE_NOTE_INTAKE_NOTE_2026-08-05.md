@@ -18,10 +18,6 @@ required before any effective status.
 
 Shows the three claimed 'continuum limit' dependencies (C(L) -> pi, rho ~ T^4, x_F convergence) are thermodynamic limits (N -> infinity at fixed a = l_Planck), not the forbidden continuum limit a -> 0; eigenvalue counting converges to the Weyl/BZ prediction at ratio 0.980 for L = 16 with rate O(L^-1.84), and finite-size corrections at N ~ 10^185 are O(10^-120).
 
-Original verdict: Resolves an internal documentation inconsistency across DM_SIGMA_V_LATTICE and DM_RELIC_GAP_CLOSURE, but the lane stays BOUNDED because of the g_bare = 1 self-dual-point assumption.
-Scope: Relies on the cubical lattice being a PL 3-manifold plus Moise 1952 to apply Weyl's law, and on the taste-physicality theorem forbidding a -> 0.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Limit-language correction across the lane: the claimed continuum dependencies ar
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Resolves an internal documentation inconsistency across DM_SIGMA_V_LATTICE and DM_RELIC_GAP_CLOSURE, but the lane stays BOUNDED because of the g_bare = 1 self-dual-point assumption.
+- Extraction scope (triage compression; may reflect later context): Relies on the cubical lattice being a PL 3-manifold plus Moise 1952 to apply Weyl's law, and on the taste-physicality theorem forbidding a -> 0.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Corrects the limit language used in DM_SIGMA_V_LATTICE_NOTE.md and DM_RELIC_GAP_CLOSURE_NOTE.md.
 

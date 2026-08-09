@@ -18,10 +18,6 @@ required before any effective status.
 
 For finite quadratic Grassmann completions: only the antisymmetric part of the kernel contributes, the finite Berezin integral of exp((1/2) theta^T A theta) is exactly Pf(A), independent sectors multiply at partition level and add at log|Pf| level, and the canonical one-generation block remains A_M(mu) = mu J_2 — so within the quadratic class there is no second observable grammar competing with Pfaffian.
 
-Original verdict: Pfaffian is UNIQUE rather than merely minimal within the finite quadratic class; any future non-Pfaffian route would have to be genuinely beyond quadratic Gaussian form.
-Scope: A quadratic-class uniqueness theorem only; not an axiom-forcing theorem.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Pfaffian UNIQUENESS (not just minimality) within the finite quadratic Grassmann 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Pfaffian is UNIQUE rather than merely minimal within the finite quadratic class; any future non-Pfaffian route would have to be genuinely beyond quadratic Gaussian form.
+- Extraction scope (triage compression; may reflect later context): A quadratic-class uniqueness theorem only; not an axiom-forcing theorem.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Strengthens the grammar-boundary note (idx_pos 1196) from 'naturally Pfaffian' to 'uniquely Pfaffian at quadratic order'.
 

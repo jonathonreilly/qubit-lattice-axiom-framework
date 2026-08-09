@@ -18,10 +18,6 @@ required before any effective status.
 
 Records that scripts/frontier_koide_lane_regression​.py could not be registered as-is because a direct run EXITS NONZERO at TOTAL 395/381, with one subrunner reporting 3/6 and one expected-count entry stale.
 
-Original verdict: Registration rejected pending a substantive Koide regression repair.
-Scope: Runner registration.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Verification-integrity: the Koide lane regression suite was FAILING (direct run 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Registration rejected pending a substantive Koide regression repair.
+- Extraction scope (triage compression; may reflect later context): Runner registration.
 - Extraction red flags: The Koide lane regression suite was FAILING (395/381 with a 3/6 subrunner) at 2026-06-21 - a live verification defect in a flagship lane.
 - Supersession (as known at extraction): none recorded
 

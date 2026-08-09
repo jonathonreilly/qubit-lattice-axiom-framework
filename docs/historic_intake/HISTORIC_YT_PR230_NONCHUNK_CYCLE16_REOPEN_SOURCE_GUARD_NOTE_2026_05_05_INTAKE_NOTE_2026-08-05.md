@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The strict reopen test reloads eleven parent surfaces and verifies that all parents pass with no failures, none authorizes proposal language, the latest checkpoint head remains on local branch history, all six worklist units remain blocked, and every listed future artifact key remains absent across the worklist, intake, terminal, reopen and cycle-15 surfaces.
 
-Original verdict: No same-surface row, certificate or theorem has appeared as a parseable claim-status artifact, so the loop stays closed and authorizes nothing.
-Scope: The only remaining non-chunk action after cycle 15 closed independent-route admission.
-Escape conditions (negative claims): Appearance of a parseable claim-status artifact at one of the named paths is the sole reopen condition.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -115,6 +111,9 @@ TERMINAL of the exhaustion cascade: strict reopen test — no same-surface artif
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No same-surface row, certificate or theorem has appeared as a parseable claim-status artifact, so the loop stays closed and authorizes nothing.
+- Extraction scope (triage compression; may reflect later context): The only remaining non-chunk action after cycle 15 closed independent-route admission.
+- Extraction escape conditions (negative claims; triage compression): Appearance of a parseable claim-status artifact at one of the named paths is the sole reopen condition.
 - Extraction red flags: The final three cycles of the loop produce no new physics content, only successive confirmations that the previous cycle's blocked state persists.
 - Supersession (as known at extraction): TERMINAL of the non-chunk exhaustion cascade (idx 2367-2374): the campaign's last word is a guard confirming nothing has changed.
 

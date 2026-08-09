@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Seven investigations: the de Sitter attractor is KNOWN, the coincidence window is ~1% of log(a) history (MODEST), graph growth by volume gives w = -1/3 (ruled out), graph growth by Hubble gives Omega_L = 1 (too strong), and the taste route to Omega_m needs baryon asymmetry (incomplete). Matter-Lambda equality sits at a = 0.772 (z = 0.30, 10.3 Gyr) against today's 0.685 at 13.8 Gyr.
 
-Original verdict: Omega_Lambda cannot be derived from the framework alone, but the reframing Lambda = 3/R_H^2 guarantees Lambda ~ rho_crit, reducing the cosmological-constant problem from 1e122 fine-tuning to an O(1) question about matter content, with observer selection explaining why we see ~0.7.
-Scope: Omega_Lambda = 0.685 depends on matter content (Omega_m = 0.315), which requires baryon asymmetry and DM abundance from particle physics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Omega_Lambda honest negative: seven investigations, no derivation — the guaran
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Omega_Lambda cannot be derived from the framework alone, but the reframing Lambda = 3/R_H^2 guarantees Lambda ~ rho_crit, reducing the cosmological-constant problem from 1e122 fine-tuning to an O(1) question about matter content, with observer selection explaining why we see ~0.7.
+- Extraction scope (triage compression; may reflect later context): Omega_Lambda = 0.685 depends on matter content (Omega_m = 0.315), which requires baryon asymmetry and DM abundance from particle physics.
 - Extraction red flags: Self-labelled honest negative; the surviving explanation of the coincidence is qualitative and rests on observer selection.
 - Supersession (as known at extraction): none recorded
 

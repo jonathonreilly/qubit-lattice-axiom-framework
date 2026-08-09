@@ -18,10 +18,6 @@ required before any effective status.
 
 Replaces the generic uniform-orbit selector with a spinorial one: APBC mode phases z_n = exp(i(2n+1)pi/L_t) form a full Z_4 double-cover orbit z_0{1,i,-1,-i} at exactly one even L_t, namely L_t = 4, which is closed under z -> iz, complex conjugation and z -> -z; this again gives C_phys = (7/8)^(1/4), v = 245.08 GeV vs measured 246.22 GeV (0.46%).
 
-Original verdict: Strongest closure route so far and the selector is no longer ad hoc, but one interpretive bridge remains: proving (not merely exhibiting) that the physical order parameter must use the Z_4 orbit.
-Scope: Conditional on accepting that the EWSB order parameter must be built on the minimal resolved spinor temporal orbit rather than the unresolved L_t = 2 sign-flip endpoint.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Z4 spinor selector: L_t=4 unique via the full Z_4 double-cover orbit — the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Strongest closure route so far and the selector is no longer ad hoc, but one interpretive bridge remains: proving (not merely exhibiting) that the physical order parameter must use the Z_4 orbit.
+- Extraction scope (triage compression; may reflect later context): Conditional on accepting that the EWSB order parameter must be built on the minimal resolved spinor temporal orbit rather than the unresolved L_t = 2 sign-flip endpoint.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicit successor to the 'minimal resolved uniform orbit' selector of HIERARCHY_UNIFORM_TEMPORAL_SELECTOR_NOTE; reads as the terminal April-era selector note for this family (later restated as the H2 V-orbit theorem in May).
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Consolidates the whole branch-local delta packet: seventeen audited route classes (selected-line CP^1 Berry geometry, winding vs primitive degree, projector retention, historical Berry review, fractional-period and octahedral arithmetic, APS boundary, Callan-Harvey descent, Cl(3) source grammar, determinant line, degree-one generators, Dai-Freed, spectral flow, Maslov, minimal action, Z_3 character holonomy and quadratic refinement, CS level, spin-c/lens eta, joint finite C_3 inflow, source-response covariance) all reduce to the single residual theta_end - theta_0 - eta_APS.
 
-Original verdict: The packet proves narrowing, not the bridge — the open problem is not the number 2/9 but the physical theorem reading the closed invariant as the selected open Berry endpoint without fitting eta as a root target.
-Scope: Bounded theorem over the audited endpoint/APS bridge classes only, explicitly NOT a claim that no future boundary theory can close the Brannen phase.
-Escape conditions (negative claims): Falsifiers named: a retained open determinant-line trivialization mapping closed APS eta to the selected line, a boundary/variational theorem selecting the endpoint before APS matching, or a physical functor from spin-c/lens eta data to the selected-line open Berry phase.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -105,6 +101,9 @@ TERMINAL of the 56-note delta endpoint sweep: seventeen audited route classes ex
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The packet proves narrowing, not the bridge — the open problem is not the number 2/9 but the physical theorem reading the closed invariant as the selected open Berry endpoint without fitting eta as a root target.
+- Extraction scope (triage compression; may reflect later context): Bounded theorem over the audited endpoint/APS bridge classes only, explicitly NOT a claim that no future boundary theory can close the Brannen phase.
+- Extraction escape conditions (negative claims; triage compression): Falsifiers named: a retained open determinant-line trivialization mapping closed APS eta to the selected line, a boundary/variational theorem selecting the endpoint before APS matching, or a physical functor from spin-c/lens eta data to the selected-line open Berry phase.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Self-describes as the consolidating exhaustion artifact for the 2026-04-24 Koide delta endpoint sweep — reads as the sweep's terminal/summary note.
 

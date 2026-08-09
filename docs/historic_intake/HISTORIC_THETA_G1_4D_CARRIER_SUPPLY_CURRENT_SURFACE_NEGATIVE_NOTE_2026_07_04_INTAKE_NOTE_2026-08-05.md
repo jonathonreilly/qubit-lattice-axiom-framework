@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The 4D closed-nonexact theta carrier required by G1 is not supplied by the updated spatial Z^3 lattice axiom, Record/Admissibility, the kinetic-isotropy primitive, the conditional anomaly-forces-time theorem, or the Block36 interface support theorem. Spatial T^3 has H^2(T^3,Z)=Z^3 but C^4(T^3)=0 and H^4(T^3,Z)=0, so there is no 4-cell slot for F cup F; embedding spatial-only fluxes into the 4D intersection form gives Q(m)=m01 m23 - m02 m13 + m03 m12 = 0.
 
-Original verdict: The carrier is not already present in the foundation: the obstruction is the missing 4D intersection slot, not missing spatial 2-fluxes.
-Scope: Current-surface supply question only; does not retire theta, set theta_bar=0, or claim future 4D gauge-carrier, bundle, or dynamical-suppression routes impossible.
-Escape conditions (negative claims): Supply a genuine time-involving 4D carrier — compact/periodic 4D topology with gauge links and branch cochains — which the anomaly-forces-time bridge does not deliver (it is conditional on B-AXIS, P-HY, P-ABJ, P-COMP, P-REC and supplies no compact Euclidean 4D gauge carrier).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The missing 4D closed-nonexact theta carrier no-go: the foundation does not supp
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The carrier is not already present in the foundation: the obstruction is the missing 4D intersection slot, not missing spatial 2-fluxes.
+- Extraction scope (triage compression; may reflect later context): Current-surface supply question only; does not retire theta, set theta_bar=0, or claim future 4D gauge-carrier, bundle, or dynamical-suppression routes impossible.
+- Extraction escape conditions (negative claims; triage compression): Supply a genuine time-involving 4D carrier — compact/periodic 4D topology with gauge links and branch cochains — which the anomaly-forces-time bridge does not deliver (it is conditional on B-AXIS, P-HY, P-ABJ, P-COMP, P-REC and supplies no compact Euclidean 4D gauge carrier).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Block37 of the July-4 theta G1 stack; refined by Block39 (idx 2057), which splits out the local 4D scaffold as supplied while leaving this no-go standing.
 

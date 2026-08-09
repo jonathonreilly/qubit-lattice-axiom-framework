@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Holding the entire current Ward-repair surface fixed (N_c=3, N_iso=2, source coefficient 1/sqrt(6), R_conn=8/9, SSB identity sqrt(2)m/v), countermodels with identical visible signature give different physical y_t/g_s: 0.408248290463863 (unit residue, common dressing), 0.384900179459751 (R_conn residue), 0.288675134594813 (half residue), 0.367423461417477 (unit residue, non-common dressing); runner SUMMARY: PASS=7 FAIL=0.
 
-Original verdict: It is not — PR #230 cannot reach retained top-Yukawa closure by repairing the old Ward wording alone.
-Scope: Whether the remaining scalar normalization is derivable from the current retained algebraic surface alone.
-Escape conditions (negative claims): One of: a retained scalar two-point pole-residue theorem deriving Z_phi for the source-selected scalar; a retained common-dressing theorem; or direct physical measurement from the strict lattice-correlator route.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ TERMINAL current-surface no-go: the same visible Ward-repair surface admits FOUR
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): It is not — PR #230 cannot reach retained top-Yukawa closure by repairing the old Ward wording alone.
+- Extraction scope (triage compression; may reflect later context): Whether the remaining scalar normalization is derivable from the current retained algebraic surface alone.
+- Extraction escape conditions (negative claims; triage compression): One of: a retained scalar two-point pole-residue theorem deriving Z_phi for the source-selected scalar; a retained common-dressing theorem; or direct physical measurement from the strict lattice-correlator route.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL current-surface no-go for the PR #230 Ward-repair route; downstream of 2411, feeds the stuck fan-out 2415.
 

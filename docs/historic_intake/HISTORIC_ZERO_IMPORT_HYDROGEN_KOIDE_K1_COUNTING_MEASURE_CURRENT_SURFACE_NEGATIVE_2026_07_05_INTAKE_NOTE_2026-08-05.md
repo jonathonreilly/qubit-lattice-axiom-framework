@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current retained, primitive, merged-PR and open-PR surfaces do not supply K1_COUNTING_MEASURE_RETAINED; four of ten inputs are missing (ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED, DIMENSION_BORN_DEFAULT_EXCLUSION, owner ratification, audit acceptance).
 
-Original verdict: Support-only non-supply boundary; K1 is not ratified and r = 1/2 / Q = 2/3 are not derived.
-Scope: The K1 counting-measure gate of the charged-lepton readout (the gate that would give r = 1/2 and Q = 2/3).
-Escape conditions (negative claims): Supply an orbit-or-holomorphic count selector and a dimension/Born default exclusion, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -66,6 +62,9 @@ K1 counting-measure terminal: the orbit-or-holomorphic count selector missing â€
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; K1 is not ratified and r = 1/2 / Q = 2/3 are not derived.
+- Extraction scope (triage compression; may reflect later context): The K1 counting-measure gate of the charged-lepton readout (the gate that would give r = 1/2 and Q = 2/3).
+- Extraction escape conditions (negative claims; triage compression): Supply an orbit-or-holomorphic count selector and a dimension/Born default exclusion, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for K1 counting measure; packets 2530/2531 feed it, and its missing selector input is exactly what the determinant sub-ladder tries to build. K1 determinant sub-ladder (domain 2539/2540/2541 -> positive object 2536/2537/2538 -> determinant object 2533/2534/2535 -> factoring+count 2526/2527/2528 -> determinant theorem 2523/2524/2525 -> selector 2542/2543/2544 -> counting measure 2529/2530/2531), compressed by ladder review 2532; every level's terminal is its CURRENT_SURFACE_NO_GO.
 

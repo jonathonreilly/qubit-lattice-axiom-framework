@@ -18,10 +18,6 @@ required before any effective status.
 
 The live charged-lepton-active N_e lane closes end to end: the PMNS-assisted N_e source is fixed by the sole-axiom effective-action selector on the exact reduced domain at x = (0.47167533, 0.55381069, 0.66451397), y = (0.20806279, 0.46438280, 0.24755440), delta ~ 0; the selected H_e gives eta/eta_obs = 1; the microscopic completion is spectator-inert because charged source-response factors only through the Schur value L_e = H_e; and the Majorana bridge is fixed at k_B = 8, k_A = 7, eps/B = alpha_LM/2.
 
-Original verdict: The branch should no longer be read as 'positive neutrino still structurally open' — but the observation-free normalization/value law that would recover the same lane without that closure surface remains open.
-Scope: Exact only on the current OBSERVATIONAL closure surface eta/eta_obs = 1.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The N_e lane closed end-to-end — WITH the flag that closure is anchored on an 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The branch should no longer be read as 'positive neutrino still structurally open' — but the observation-free normalization/value law that would recover the same lane without that closure surface remains open.
+- Extraction scope (triage compression; may reflect later context): Exact only on the current OBSERVATIONAL closure surface eta/eta_obs = 1.
 - Extraction red flags: The closure is anchored on an observational ratio being exactly 1, which the note itself flags as the remaining dependency.
 - Supersession (as known at extraction): Supersedes the older reading that the positive neutrino program was open because off-seed microscopic D data had not been fixed (now quotiented by exact Schur invariance); does not replace the separate normalization boundary.
 

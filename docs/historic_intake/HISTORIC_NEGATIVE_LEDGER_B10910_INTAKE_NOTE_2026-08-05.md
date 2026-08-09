@@ -18,10 +18,6 @@ required before any effective status.
 
 Six prior Route-2 center residuals recorded (minimal naturality leaves rho_E free; current Rconn/color surfaces do not type R_conn -> c_TE; same-domain O_h leverage gives kappa = 3/2 and kappa^2 = 9/4 but not the covariance bridge; quadratic O_h-invariant functionals leave the E:T ratio free; the measured N=15 calibration is not a bulk-limit derivation; current metric-selector surfaces do not derive the target metric tensor). Block96 then shows the remaining faces rho_E = 21/4, q_E = 15/8, c_TE = -8/9, lambda = 9/4 and b/a = 1449/704 are EXACT EQUIVALENTS once supplied — treating them as separate independent partial closures is PRUNED.
 
-Original verdict: Five exact rational faces collapse to one missing primitive; counting them as separate progress is explicitly pruned.
-Scope: The Route-2 center primitive.
-Escape conditions (negative claims): One center primitive supplies all five faces.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ MAJOR method finding from the s3-route2 chain: six recorded center residuals col
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Five exact rational faces collapse to one missing primitive; counting them as separate progress is explicitly pruned.
+- Extraction scope (triage compression; may reflect later context): The Route-2 center primitive.
+- Extraction escape conditions (negative claims; triage compression): One center primitive supplies all five faces.
 - Extraction red flags: MAJOR method finding: five 'partial closures' in this lane were the same missing primitive seen from different angles; a measured N=15 calibration was also flagged as not a bulk-limit derivation
 - Supersession (as known at extraction): Corrects a mode of accounting in which five faces of one gap were being counted as five partial closures.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The block set out to cash Cycle 871's dimension-1 source-action bridge into dimensionful predictions using the registered Planck scale-reference primitive, and instead falsified its own premise from the primitive's own bytes: the primitive supplies exactly one dimensionful reference a^{-1} = M_Pl with 'zero dimensionless content: no mass ratio, COUPLING, mixing angle, phase, selector, readout bridge, or empirical fit' — and 'coupling' is the exact word 871 uses for its scalar.
 
-Original verdict: The registered ruler does not cash the bridge — units registration is a bijection of the solution ray, and the block exports a general cashing rule instead.
-Scope: Owner-directed window 2b; 90 exact re-solves in rescaled frames all return composed dimension 1, and zero of 22 in-scope observables separate pre- from post-registration.
-Escape conditions (negative claims): The no-go is a scope statement about THIS primitive's text: a primitive (or derivation) supplying dimensionless content, or a different bridge whose scalar is not a coupling in the excluded sense, is untouched; the a/l_P = 1 self-consistency question is explicitly left open by the primitive.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Self-falsifying scope no-go: the registered Planck ruler cannot cash the dimensi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The registered ruler does not cash the bridge — units registration is a bijection of the solution ray, and the block exports a general cashing rule instead.
+- Extraction scope (triage compression; may reflect later context): Owner-directed window 2b; 90 exact re-solves in rescaled frames all return composed dimension 1, and zero of 22 in-scope observables separate pre- from post-registration.
+- Extraction escape conditions (negative claims; triage compression): The no-go is a scope statement about THIS primitive's text: a primitive (or derivation) supplying dimensionless content, or a different bridge whose scalar is not a coupling in the excluded sense, is untouched; the a/l_P = 1 self-consistency question is explicitly left open by the primitive.
 - Extraction red flags: The block's stated premise is falsified mid-run; the checker found the decisive sentence.
 - Supersession (as known at extraction): Falsifies its own launch premise and names each remaining blocker; seals the result in a receipt.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes the prior factor of 15-19 in Lambda: self-consistency of Lambda = C/L^2 with L = c/H and H^2 = Lambda c^2/3 forces C = 3 uniquely (matching the first Laplacian eigenvalue on S^3, lambda_1 = 3/R^2), giving Lambda = 3 H_0^2 Omega_Lambda / c^2, which matches observation to 1.3%.
 
-Original verdict: The factor is closed by self-consistency, not by holography — the CKN bound undershoots and simple 3/R^2 gets closest.
-Scope: Inputs are H_0 and Omega_Lambda from observation; explicitly does not predict Omega_Lambda = 0.685 or H_0 = 67.4, and the S^3 identification is an identification rather than a derivation from graph axioms.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The CC era terminal: the factor-15 closed by self-consistency forcing C=3 unique
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The factor is closed by self-consistency, not by holography — the CKN bound undershoots and simple 3/R^2 gets closest.
+- Extraction scope (triage compression; may reflect later context): Inputs are H_0 and Omega_Lambda from observation; explicitly does not predict Omega_Lambda = 0.685 or H_0 = 67.4, and the S^3 identification is an identification rather than a derivation from graph axioms.
 - Extraction red flags: Two observational inputs remain; the S^3 identification is admitted to be undirected by the axioms.
 - Supersession (as known at extraction): Supersedes the earlier direct lattice computation giving Lambda_pred/Lambda_obs = 19.0 (periodic) or 14.2 (Dirichlet).
 

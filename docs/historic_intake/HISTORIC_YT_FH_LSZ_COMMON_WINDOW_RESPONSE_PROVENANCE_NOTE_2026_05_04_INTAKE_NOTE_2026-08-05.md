@@ -18,10 +18,6 @@ required before any effective status.
 
 Diagnoses the fitted dE/ds instability as an artifact of the production fitter's per-source-shift fit-window selection: at 46 ready chunks the original slopes have relative stdev 0.9040 with signatures splitting into multiple tau-min classes and every high slope (dE/ds > 3) occurring only in mixed-window chunks, while recomputing all shifts on the common late window tau=10..12 gives mean 1.4256769178257236 with relative stdev 0.005504 and spread ratio 1.024. PASS=11 FAIL=0.
 
-Original verdict: The whole ~5.9 spread ratio that dogged the chunk sweep is a fit-window selection artifact, but the common-window fit uncertainty is still not production grade and the canonical-Higgs/source-overlap gates remain open.
-Scope: Provenance/support result; not a physical readout switch.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The fit-window artifact diagnosis: the ~5.9 spread ratio across ~30 checkpoints 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The whole ~5.9 spread ratio that dogged the chunk sweep is a fit-window selection artifact, but the common-window fit uncertainty is still not production grade and the canonical-Higgs/source-overlap gates remain open.
+- Extraction scope (triage compression; may reflect later context): Provenance/support result; not a physical readout switch.
 - Extraction red flags: Shows that the source-slope outliers reported as physics-neutral across ~30 checkpoint notes were an analysis artifact of the fitter's window selection.
 - Supersession (as known at extraction): Head of the common-window sub-chain and the single most consequential diagnostic of the chunk sweep: it explains the persistent instability reported in every checkpoint from idx 2199 onward.
 

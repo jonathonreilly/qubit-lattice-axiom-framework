@@ -18,10 +18,6 @@ required before any effective status.
 
 Resolves three Codex holds on the top Yukawa: the Clebsch-Gordan coefficient is uniquely 1/sqrt(6) = 1/sqrt(2 N_c), derived from the staggered mass term being Gamma_5, the Higgs preserving that operator, the chiral projector P_+ of rank 4 in dimension 8, and the trace identity N_c y_t^2 = g_s^2 Tr(P_+)/dim = g_s^2/2; the competing-normalizations objection dissolves since there is one formula; and the m_t discrepancy resolves to 174-175 GeV (+0.7-1.1%).
 
-Original verdict: All four audit points are addressed, with the residual named honestly rather than claimed closed.
-Scope: Runner 22/22 PASS on the formal theorem; one imported input remains.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The CG coefficient 1/sqrt(6) = 1/sqrt(2 N_c) uniquely derived (staggered mass te
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): All four audit points are addressed, with the residual named honestly rather than claimed closed.
+- Extraction scope (triage compression; may reflect later context): Runner 22/22 PASS on the formal theorem; one imported input remains.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes YT_FROM_ALPHA_S_NOTE's statement that the CG coefficient (1/sqrt(6) vs 1/sqrt(7)) was undetermined.
 

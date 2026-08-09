@@ -18,10 +18,6 @@ required before any effective status.
 
 States the smallest positive closure packet: a Q principle (the source is Morita-normalized and component-anonymous, giving w = 1/2, K_TL = 0, Q = 2/3) and a delta principle (the selected line is the whole APS boundary segment so tau = 0 and delta = 2/9); counter-states are verified too (w = 1/3 gives Q = 1 with K_TL = 3/8; tau = 1/9 gives delta = 1/9).
 
-Original verdict: KOIDE_CURRENT_RETAINED_Q_CLOSURE=FALSE and DELTA_CLOSURE=FALSE — the lane reduces to deriving two exact principles, component anonymity and identity endpoint gluing.
-Scope: Conditional positive theorem, explicitly not retained closure; the scale v_0 stays separate.
-Escape conditions (negative claims): Four falsifiers named: a Morita-normalized but not component-anonymous source preparation, a physical reason the C_3 character-orbit distinction stays visible after quotient-center reduction, a nonzero endpoint transition preserving the closed APS value, or a nontrivial complement segment in the physical APS boundary.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The lane's distillation: TWO named residual principles (Morita-normalized compon
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): KOIDE_CURRENT_RETAINED_Q_CLOSURE=FALSE and DELTA_CLOSURE=FALSE — the lane reduces to deriving two exact principles, component anonymity and identity endpoint gluing.
+- Extraction scope (triage compression; may reflect later context): Conditional positive theorem, explicitly not retained closure; the scale v_0 stays separate.
+- Extraction escape conditions (negative claims; triage compression): Four falsifiers named: a Morita-normalized but not component-anonymous source preparation, a physical reason the C_3 character-orbit distinction stays visible after quotient-center reduction, a nonzero endpoint transition preserving the closed APS value, or a nontrivial complement segment in the physical APS boundary.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Distils the 2026-04-24 sweep's positive side into two named residual principles; concedes both imports explicitly ('correct unless independently derived').
 

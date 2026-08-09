@@ -18,10 +18,6 @@ required before any effective status.
 
 Statistics forcing remains WITHDRAWN; hard-core bosons are NOT excluded by the CCR trace obstruction (they violate the canonical CCR hypothesis); the superseded 2026-04-11 axiom surface is not restored as a load-bearing dependency.
 
-Original verdict: statistics forcing withdrawn; no audit verdict applied
-Scope: spin-statistics source packet boundaries
-Escape conditions (negative claims): hard-core bosons escape the CCR trace obstruction by violating the canonical CCR hypothesis
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Withdrawal narrowing the spin-statistics surface: statistics forcing remains WIT
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): statistics forcing withdrawn; no audit verdict applied
+- Extraction scope (triage compression; may reflect later context): spin-statistics source packet boundaries
+- Extraction escape conditions (negative claims; triage compression): hard-core bosons escape the CCR trace obstruction by violating the canonical CCR hypothesis
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): records withdrawal of the statistics-forcing claim and supersession of the 2026-04-11 axiom surface
 

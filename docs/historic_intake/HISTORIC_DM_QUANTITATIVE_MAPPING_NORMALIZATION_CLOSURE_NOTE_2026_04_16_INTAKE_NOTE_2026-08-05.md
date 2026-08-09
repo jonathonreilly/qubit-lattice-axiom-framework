@@ -18,10 +18,6 @@ required before any effective status.
 
 Composes the fixed authority chain into R = R_base S_vis = (31/9)(1.591795769509086) = 5.48285209497574 with alpha_plaq = 0.0922649926183602 at x_F = 25, then via the PMNS-selected eta/eta_obs = 1 gives Omega_b = 0.04919295758525652 and Omega_DM = 0.26971771055437643, matching observation to 0.4%, 0.2% and 0.6%.
 
-Original verdict: Closes the second live DM gate - the final quantitative mapping/normalization - at the percent level with no observed Omega_b on the authority path.
-Scope: Downstream of four existing surfaces (theorem-grade PMNS selector closure, gauge-normalization rigidity g_bare = 1, sigma v = C alpha^2/m^2 with C -> pi, lattice Coulomb bridge); not a new free fit.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The quantitative mapping/normalization closure composition at percent level — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes the second live DM gate - the final quantitative mapping/normalization - at the percent level with no observed Omega_b on the authority path.
+- Extraction scope (triage compression; may reflect later context): Downstream of four existing surfaces (theorem-grade PMNS selector closure, gauge-normalization rigidity g_bare = 1, sigma v = C alpha^2/m^2 with C -> pi, lattice Coulomb bridge); not a new free fit.
 - Extraction red flags: Quotes 15+ significant digits for a chain whose upstream inputs (C -> pi only in a limit, x_F = 25 retained) carry percent-level uncertainty.
 - Supersession (as known at extraction): Together with the PMNS selector closure this is the pair of closures summarized as final in DM_FULL_CLOSURE_STATUS_NOTE_2026-04-16.md (idx 361).
 

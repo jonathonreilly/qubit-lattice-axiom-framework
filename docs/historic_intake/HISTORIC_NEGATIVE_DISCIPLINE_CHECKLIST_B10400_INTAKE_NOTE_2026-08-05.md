@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Six distinct attack routes fail to derive the minimum-information PMNS source law from the four axioms; the decisive numeric witnesses are that positive three-bin KL weights (1,1) versus (2,1/2) select OPPOSITE sources over the same base, that changing only the external eta comparator changes the exact-closure locus, and that transport completions favoring column 0 and column 1 coexist over an identical A_min base. Three independent walls are named: W_selector (physical source-selection principle with objective and modality normalization), W_anchor (eta_obs normalization bridge), W_transport (seed surface, transport map, favored-column authority).
 
-Original verdict: PASS on all eight gates; the phrases 'no selector exists', 'no nonlocal law can work', and 'no future theorem can derive it' are explicitly banned by the scope firewall.
-Scope: Theory-level non-entailment: two completions agree on the entire base model including every lattice/record fact and disagree only on downstream selector interpretation.
-Escape conditions (negative claims): A downstream information theorem with named extra premises, a retained source/action variational bridge (docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md is bounded_theorem but unratified), a target-free physical-observable normalization theorem (no current authority; recorded in OPPORTUNITY_QUEUE.md), or an owner-approved selector primitive.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ Six attack routes fail to derive the minimum-information PMNS source law from th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PASS on all eight gates; the phrases 'no selector exists', 'no nonlocal law can work', and 'no future theorem can derive it' are explicitly banned by the scope firewall.
+- Extraction scope (triage compression; may reflect later context): Theory-level non-entailment: two completions agree on the entire base model including every lattice/record fact and disagree only on downstream selector interpretation.
+- Extraction escape conditions (negative claims; triage compression): A downstream information theorem with named extra premises, a retained source/action variational bridge (docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md is bounded_theorem but unratified), a target-free physical-observable normalization theorem (no current authority; recorded in OPPORTUNITY_QUEUE.md), or an owner-approved selector primitive.
 - Extraction red flags: Explicitly current-surface only: N8 records that the kinetic-isotropy primitive retired a comparable wall by registry change, so this no-go fails closed on future registry changes.
 - Supersession (as known at extraction): Load-bearing authority is docs/MINIMAL_AXIOMS_2026-06-29.md plus the three approved primitive notes; three prior DM/PMNS notes were DROPPED as proof witnesses after N4 residual matching. N8 cites the pack ledger .claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md multipocket selector wall as not retired.
 

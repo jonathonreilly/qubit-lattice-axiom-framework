@@ -18,10 +18,6 @@ required before any effective status.
 
 Declares the loop's stated stop criterion met at iteration 35: I1 RETAINED-FORCED (91 PASS) and I2/P RETAINED-FORCED (129 PASS), with C1 discharged because AM-GM on the Frobenius metric needs no Peter-Weyl weighting and C2 discharged by ABSS metric-independence; final census 25 runners, 25+ notes, 475+ PASS checks over 35 commits.
 
-Original verdict: The loop stops; the honest recommendation is to consolidate I1/I2 to main and pursue I5 separately, given the diminishing returns of iterations 23-34.
-Scope: Loop-termination note for branch evening-4-20; I5 mechanism, the delta_CP sign and the quark sector are listed open.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ The evening-loop STOP terminal: stop criterion met at iteration 35, C1 discharge
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The loop stops; the honest recommendation is to consolidate I1/I2 to main and pursue I5 separately, given the diminishing returns of iterations 23-34.
+- Extraction scope (triage compression; may reflect later context): Loop-termination note for branch evening-4-20; I5 mechanism, the delta_CP sign and the quark sector are listed open.
 - Extraction red flags: Notes the user re-invoked the loop 34 times after each completion and speculates about habit vs intent — an operational oddity rather than a science flag.
 - Supersession (as known at extraction): Terminal note of the evening-4-20 Koide loop; follows the iteration-30 diminishing-returns assessment.
 

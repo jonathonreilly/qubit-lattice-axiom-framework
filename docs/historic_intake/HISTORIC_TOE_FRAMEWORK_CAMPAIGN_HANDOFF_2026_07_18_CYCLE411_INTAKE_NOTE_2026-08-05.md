@@ -18,10 +18,6 @@ required before any effective status.
 
 Campaign handoff stating the goal (join operational quantum physics, causal time, matter/inertia, gravity/resource accounting and realized history in one dependency-tracked substrate) and the executive result: the Cycle-230 coarse CAR mechanism CAN be compiled into bounded physical-M2 neighborhoods on declared fixed code spaces with no global Jordan-Wigner ordering, nonlocal parity service, preferred axis order or host branch query. Cycle 311 gives rank-64 into rank-127 seam closure with 255 flagged and 510 role-gauge microsectors over n = 0..6 at 56 M2 and 23 M2/cell overhead; Cycle 315 extends to 4096 logical columns and 63,488 rays on an 83-M2 patch through n = 0..12; Cycle 330 reaches a 904-dimensional maximal-star code with a 5040-state S7 role but materializes ONLY EIGHT of the 5040 order matrices.
 
-Original verdict: THE DECISIVE QUESTION IS NO LONGER WHETHER ANY BOUNDED PHYSICAL-M2 COMPILER EXISTS — it does on declared fixed seams; the live question is homogeneity and recurrence across overlapping maximal stars at full number, with all order matrices or an exact substitute, primitive synthesis, autonomous preparation, collision arbitration and indefinite renewal.
-Scope: Carries a per-cycle results table with exact pass counts and residuals for Cycles 396 through 409.
-Escape conditions (negative claims): No route-independent obstruction or axiom pressure survives; a failed exchange realization is not a fermion-to-qubit no-go, and the current axioms remain FALSIFIABLE SUBSTRATE HYPOTHESES that are neither the objective nor protected from revision — a possible axiom change can be considered ONLY after constructive work isolates content that cannot remain a candidate law, boundary condition or primitive reference.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Campaign handoff terminal for the whole autopilot sweep: states the goal (join o
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): THE DECISIVE QUESTION IS NO LONGER WHETHER ANY BOUNDED PHYSICAL-M2 COMPILER EXISTS — it does on declared fixed seams; the live question is homogeneity and recurrence across overlapping maximal stars at full number, with all order matrices or an exact substitute, primitive synthesis, autonomous preparation, collision arbitration and indefinite renewal.
+- Extraction scope (triage compression; may reflect later context): Carries a per-cycle results table with exact pass counts and residuals for Cycles 396 through 409.
+- Extraction escape conditions (negative claims; triage compression): No route-independent obstruction or axiom pressure survives; a failed exchange realization is not a fermion-to-qubit no-go, and the current axioms remain FALSIFIABLE SUBSTRATE HYPOTHESES that are neither the objective nor protected from revision — a possible axiom change can be considered ONLY after constructive work isolates content that cannot remain a candidate law, boundary condition or primitive reference.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The governing handoff for the entire July cycle sweep — the document that sets the 'compile, do not claim' discipline visible in all 318 cycle notes; its Cycle 330 eight-of-5040 sampling wall is removed by Cycle 515 (idx 2829).
 

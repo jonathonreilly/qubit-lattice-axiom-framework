@@ -18,10 +18,6 @@ required before any effective status.
 
 At fixed a the framework's SU(3) x U(1) Wilson + staggered theory is rigorously defined: the partition function converges on the compact group manifold (runner verifies Z finite and positive at beta = 6), reflection positivity gives a positive transfer matrix with H = -(1/a) log T >= 0, and Perron-Frobenius gives a unique vacuum with a finite-volume gap. The strong-coupling expansion gives an area law with string tension sigma > 0 hence a mass gap, and the gap is gauge-resolved: U(1) sits in the rigorous 4D Coulomb phase (massless photon) while SU(3) confines (gapped glueballs). SCORECARD PASS=13 FAIL=0.
 
-Original verdict: Existence is rigorous, the mass gap is rigorous at strong coupling, and the gauge-resolved gap matches the observed spectrum — but the Clay continuum problem is dissolved by the fundamental length rather than solved, and the SU(3) gap at the framework's actual beta = 6 (the scaling region, where the strong-coupling expansion no longer converges) is the genuine open residual.
-Scope: Fixed-Planck-lattice setting only; the framework never takes a -> 0.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Rigorous existence at fixed a (compact-group convergence + strong-coupling gap) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Existence is rigorous, the mass gap is rigorous at strong coupling, and the gauge-resolved gap matches the observed spectrum — but the Clay continuum problem is dissolved by the fundamental length rather than solved, and the SU(3) gap at the framework's actual beta = 6 (the scaling region, where the strong-coupling expansion no longer converges) is the genuine open residual.
+- Extraction scope (triage compression; may reflect later context): Fixed-Planck-lattice setting only; the framework never takes a -> 0.
 - Extraction red flags: Title invokes the Yang-Mills mass gap; the note itself opens with a bold disclaimer that it does NOT solve the Clay problem and names the beta = 6 gap as unproven — the disclaimer is prominent, so the risk is downstream citation of the title alone.
 - Supersession (as known at extraction): Reframing note over the existing scale-reference and kinetic-isotropy primitives; sets no audit status and promotes no dependency.
 

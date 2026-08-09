@@ -18,10 +18,6 @@ required before any effective status.
 
 Re-derives the OS reconstruction's last residual G2 — the generators, their so(1,3) algebra from the Cl(3,1) bivectors, the Lorentz-vector covariance of the gammas, the finite boost, the unitary/non-unitary Hermiticity structure and the +/-E spectrum — on the framework's own surface, leaving only Lie-algebra-to-group integration (Nelson's theorem) as a cited mathematical METHOD.
 
-Original verdict: With the physics content framework-native and only the mathematical method cited, G2 is a DERIVATION not an import — the keystone's last OS residual carries no physics import.
-Scope: Free U = 1 only; the interacting theory is explicitly out of scope. TOTAL PASS=9 FAIL=0.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ OS reconstruction's last residual (G2) made framework-native — boost-sector co
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): With the physics content framework-native and only the mathematical method cited, G2 is a DERIVATION not an import — the keystone's last OS residual carries no physics import.
+- Extraction scope (triage compression; may reflect later context): Free U = 1 only; the interacting theory is explicitly out of scope. TOTAL PASS=9 FAIL=0.
 - Extraction red flags: Concedes the boost sector's content was always standard — the advance is provenance, not physics.
 - Supersession (as known at extraction): Removes the 'cited as textbook methodology, not re-derived on the framework's surface' status the reconstruction note carried for G2.
 

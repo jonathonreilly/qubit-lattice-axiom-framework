@@ -18,10 +18,6 @@ required before any effective status.
 
 Compiles commutant dimensions for every subgroup of S_3 acting on the taste cube: 20 (S_3), 24 (Z_3), 40 (each of three conjugate Z_2), 64 (trivial), each computed twice (Schur's lemma and direct commutator kernel) and verified inclusion-reversing along both maximal chains; 13/13 PASS.
 
-Original verdict: Airtight single reference table quantifying the invariant-operator relief from each SSB pattern (V_sel gives S_3 -> Z_2, so freedom jumps 20 -> 40).
-Scope: Taste cube C^8 = (C^2)^{tensor 3} with the full S_3 axis-permutation action; Grind Program Batch 7.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ The commutant-dimension reference table for every S_3 subgroup — airtight reus
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Airtight single reference table quantifying the invariant-operator relief from each SSB pattern (V_sel gives S_3 -> Z_2, so freedom jumps 20 -> 40).
+- Extraction scope (triage compression; may reflect later context): Taste cube C^8 = (C^2)^{tensor 3} with the full S_3 axis-permutation action; Grind Program Batch 7.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): FAMILY TERMINAL for the commutant-dimension sub-chain: compiles Batches 3, 5 and 6 (idx 1866, 1806) into one table.
 

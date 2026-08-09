@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Verdict SUSPICIOUS: the 10/10-properties claim is overcounted — honest count 6 confirmed, 1 FAILED (gravity sign is AWAY from mass: beam depletion, not attraction; opposite sign to the 2D mirror DAGs), 3 not tested (F~M, gravity-grows-with-N, purity scaling); everything from a single deterministic seed with no error bars; three different measurement setups counted as one graph.
 
-Original verdict: SUSPICIOUS; honest scorecard 6/1/3
-Scope: sanity review of the 2D-lattice unification card
-Escape conditions (negative claims): gravity sign fix or relabeling, F~M on-lattice test, multi-parameter robustness, purity scaling
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ Era-correction set for the earliest write-ups, pulled as one record: the '10/10 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): SUSPICIOUS; honest scorecard 6/1/3
+- Extraction scope (triage compression; may reflect later context): sanity review of the 2D-lattice unification card
+- Extraction escape conditions (negative claims; triage compression): gravity sign fix or relabeling, F~M on-lattice test, multi-parameter robustness, purity scaling
 - Extraction red flags: the headline unification number survived into the claim record despite a wrong-sign gravity row — cleanest early example of overcounting in the corpus
 - Supersession (as known at extraction): none recorded
 

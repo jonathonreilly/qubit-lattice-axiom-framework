@@ -18,10 +18,6 @@ required before any effective status.
 
 Lands four pieces as SUPPORT only: the CAR one-tick operator B_1 equals P_1 = P_A giving Tr((I_16/16) B_1) = 1/4; the signed S_4 action on Cl_4 has dim(grade-1 invariants) = 1 (H_first = sum gamma_a) with grades 2 and 3 empty; the cubic-bivector Schur spectrum is +/-4(2 +/- sqrt(2)) with Tr(|L_K|^-1) = 1; and the Hodge-dual P_3 has the IDENTICAL spectrum, so Schur data do not select P_1.
 
-Original verdict: A useful control surface, explicitly not the Planck kill shot - the branch's retained-closure framing is too strong.
-Scope: Control surface for the relaxed-wu branch; the Wald/BH match to G_Newton,lat = 1 and a/l_P = 1 is conditional on accepting the carrier and universal Wald/BH input.
-Escape conditions (negative claims): The exact remaining blocker is deriving the physical gravitational boundary/action source principle that identifies the primitive carrier and its Schur/Wald coupling with Newton's physical source unit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The same-branch refusal note: lands four pieces as SUPPORT only and explicitly r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A useful control surface, explicitly not the Planck kill shot - the branch's retained-closure framing is too strong.
+- Extraction scope (triage compression; may reflect later context): Control surface for the relaxed-wu branch; the Wald/BH match to G_Newton,lat = 1 and a/l_P = 1 is conditional on accepting the carrier and universal Wald/BH input.
+- Extraction escape conditions (negative claims; triage compression): The exact remaining blocker is deriving the physical gravitational boundary/action source principle that identifies the primitive carrier and its Schur/Wald coupling with Newton's physical source unit.
 - Extraction red flags: Directly contradicts the unconditional-closure titles of three sibling Target 3 notes in the same family.
 - Supersession (as known at extraction): Explicitly refuses to land five headline claims of the relaxed-wu branch, including 'Planck Target 3 unconditionally closed' and 'P_1 selected over P_3 by Schur spectra alone'; closeout flags record P1_OVER_P3_SELECTOR_CLOSED=FALSE and PLANCK_PIN_MINIMAL_STACK_CLOSURE=FALSE.
 

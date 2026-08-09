@@ -18,10 +18,6 @@ required before any effective status.
 
 Extends the shell-stress lift to the full sewing band 3 < r <= 5 with one reduced source/potential pair: u(r) = 0 exactly on the inner half 3 < r <= 4 and the previous DtN profile on the outer half, giving a single charge-parameterized whole-shell stress family matched by both exact source families to machine precision.
 
-Original verdict: The reduced whole-shell stress lift is solved on the bridge surface; the local/angular lift and the derivation of the bridge from the lattice remain the blockers.
-Scope: Full sewing band on the static isotropic conformal bridge; seven star-support point-Green columns.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The whole-band reduced shell-stress lift solved exactly — with the imported st
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The reduced whole-shell stress lift is solved on the bridge surface; the local/angular lift and the derivation of the bridge from the lattice remain the blockers.
+- Extraction scope (triage compression; may reflect later context): Full sewing band on the static isotropic conformal bridge; seven star-support point-Green columns.
 - Extraction red flags: Same imported bridge caveat as idx 1791: the static isotropic conformal bridge is assumed.
 - Supersession (as known at extraction): Successor to idx 1791, closing its inner-half gap; FAMILY TERMINAL for the reduced shell-stress chain.
 

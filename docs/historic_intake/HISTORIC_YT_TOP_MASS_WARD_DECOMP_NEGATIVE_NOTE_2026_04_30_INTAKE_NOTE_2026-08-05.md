@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Four-route no-go with the exact obstruction chain: D9 gives no bare Yukawa term; D12+S2+D16 give Gamma^(4)_S = -G_eff O_S/q^2 with G_eff = g_bare^2/(2 N_c) = 1/6; defining y_t_bare := sqrt(G_eff) needs factorization Gamma^(4) = -y^2/q^2 O_S, which requires identifying the scalar field — and that identification is H_unit by D17. Runner PASS=24 FAIL=0 (W-I x6, W-II x5, W-III x5 checks).
 
-Original verdict: It cannot without H_unit or an equivalent definition — exact audit-clean no-go.
-Scope: Whether the prior Ward route (YT_WARD_IDENTITY_DERIVATION_THEOREM, classified audited_renaming) can be made audit-clean through WTI, HS, source-functional, or Fierz-alone routes.
-Escape conditions (negative claims): Permit D17 as a definition source rather than a consistency check (not permitted under the current forbiddance set).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -53,6 +49,9 @@ Pass-2 terminal: four Ward routes ruled out — D17/H_unit is the SINGLE load-be
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): It cannot without H_unit or an equivalent definition — exact audit-clean no-go.
+- Extraction scope (triage compression; may reflect later context): Whether the prior Ward route (YT_WARD_IDENTITY_DERIVATION_THEOREM, classified audited_renaming) can be made audit-clean through WTI, HS, source-functional, or Fierz-alone routes.
+- Extraction escape conditions (negative claims; triage compression): Permit D17 as a definition source rather than a consistency check (not permitted under the current forbiddance set).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of pass 2 and of the whole 2026-04-30 two-pass search; this is the note that pins why 2424 and 2459 rest on a forbidden identification.
 

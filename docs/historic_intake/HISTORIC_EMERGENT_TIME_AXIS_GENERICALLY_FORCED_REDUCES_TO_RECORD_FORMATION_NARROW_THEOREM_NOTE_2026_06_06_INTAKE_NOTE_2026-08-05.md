@@ -18,10 +18,6 @@ required before any effective status.
 
 The open 'unique emergent time axis from Z^3 + Record' reduces exactly to R1 (do records form): given R1 the additive record count I foliates into codim-1 slices made spacelike by the Lieb-Robinson cone while reversible Z^3 carries no monotone, so the axis is the I-gradient; and R1 is generic since random local couplings suppress pointer coherence (<coh> = 0.31, 0.13, 0.07 for n_env = 2, 5, 8).
 
-Original verdict: The time axis is generically - not axiomatically - forced; effective status remains unaudited.
-Scope: A_min (Lattice + Quantum + Record) has no dynamics axiom, so the result is genericity, not unconditional forcing; it forces the time AXIS, not a linear clock or its orientation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The time axis generically forced given R1 (records form): additive record count 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The time axis is generically - not axiomatically - forced; effective status remains unaudited.
+- Extraction scope (triage compression; may reflect later context): A_min (Lattice + Quantum + Record) has no dynamics axiom, so the result is genericity, not unconditional forcing; it forces the time AXIS, not a linear clock or its orientation.
 - Extraction red flags: Two named irreducible residuals: A_min has no dynamics axiom (the problem-of-time core), and the future orientation is not records-sourced since counts are word-reversal invariant.
 - Supersession (as known at extraction): Resolves the structure of the open object left by the single-clock relocation result; leans on ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL (retained_bounded) and defers orientation to POST_RECORD_ARROW_ORIENTATION_FIREWALL (retained_no_go).
 

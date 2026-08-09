@@ -18,10 +18,6 @@ required before any effective status.
 
 The frozen/static-source control reveals a real field-shape discrepancy: FROZEN and ANALYTIC arms are exactly identical while the DYNAMIC (Poisson-solved) arm differs, with the ratio f_fro/f_dyn running from ~0.53 at r = 2 to ~0.70 at r = 8 on the 64^3 grid — the Poisson solver on a finite Dirichlet box carries image-charge boundary corrections that reshape the near-to-mid field and steepen the exponent.
 
-Original verdict: The dynamic-versus-analytic gap is a boundary-condition artifact, which the control identifies rather than the continuation's headline exponent being wrong.
-Scope: Companion control to the 64^3 continuation; max spread across arms grows from 1.82% at N = 31 to 3.26% at N = 64.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Control finding: the headline distance-law measurement is contaminated by a Diri
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The dynamic-versus-analytic gap is a boundary-condition artifact, which the control identifies rather than the continuation's headline exponent being wrong.
+- Extraction scope (triage compression; may reflect later context): Companion control to the 64^3 continuation; max spread across arms grows from 1.82% at N = 31 to 3.26% at N = 64.
 - Extraction red flags: Shows the headline distance-law measurement is contaminated by Dirichlet image charges in the near-to-mid region.
 - Supersession (as known at extraction): none recorded
 

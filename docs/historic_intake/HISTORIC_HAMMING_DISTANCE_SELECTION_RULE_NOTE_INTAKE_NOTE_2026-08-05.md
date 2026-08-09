@@ -18,10 +18,6 @@ required before any effective status.
 
 Site-phase operators satisfy <X_beta|P_{mu_1}...P_{mu_k}|X_alpha> = delta_{alpha XOR beta, XOR_i e_{mu_i}} by character orthogonality on even L, so the minimum number of insertions connecting two BZ corners equals the Hamming distance - and since the three hw=1 corners are pairwise at distance 2, single site-phase operators cannot mediate hw=1 to hw=1 transitions.
 
-Original verdict: A universal selection rule for polynomial site-phase operator products on Z_L^3 acting on BZ corners, with at least two insertions required for generation mixing.
-Scope: Explicitly limited to products and linear combinations of the site-phase operators P_mu; non-constant phase profiles need separate analysis.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Universal Hamming-distance selection rule by character orthogonality — grind-p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A universal selection rule for polynomial site-phase operator products on Z_L^3 acting on BZ corners, with at least two insertions required for generation mixing.
+- Extraction scope (triage compression; may reflect later context): Explicitly limited to products and linear combinations of the site-phase operators P_mu; non-constant phase profiles need separate analysis.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Batch 1 member of the grind program (idx 654) and an input to the Hadamard/S_3 composition (idx 660).
 

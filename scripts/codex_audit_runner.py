@@ -107,6 +107,9 @@ RUNNER_SOURCE_CHAR_LIMIT = 40_000
 HELPER_SOURCE_CHAR_LIMIT = 40_000
 RUNNER_STDOUT_CHAR_LIMIT = 20_000
 NOTE_BODY_CHAR_LIMIT = 30_000
+# Per-file cap for declared contradiction/context relationship evidence
+# (`contradicts:` / `cross_reference:` yaml lists in the audited note).
+RELATIONSHIP_CONTEXT_CHAR_LIMIT = 8_000
 AUTHORITY_TOTAL_CHAR_LIMIT = 60_000
 AUTHORITY_PER_NOTE_MAX = 10_000
 AUTHORITY_PER_NOTE_MIN = 2_000
@@ -1690,6 +1693,140 @@ def get_independent_runner_stdout(
         return f"[runner error: {error}]", False
 
 
+class RelationshipContextError(ValueError):
+    """A note's declared `contradicts:`/`cross_reference:` reference cannot be
+    supplied atomically to the restricted auditor (fail-closed readiness)."""
+
+
+_RELATIONSHIP_LIST_KEYS = ("contradicts", "cross_reference")
+_RELATIONSHIP_NONPULLED_RE = re.compile(
+    r"^idx\s+(\d+)\s+\(not pulled;\s*([A-Za-z0-9_]+)\)\s*(\S.*)?$"
+)
+_ARCHIVED_ORIGINAL_LINK_RE = re.compile(
+    r"^- Archived original[^:\n]*:\s*\[[^\]]+\]\(([^)]+)\)", re.MULTILINE
+)
+
+
+def parse_relationship_lists(note_body: str) -> dict[str, list[str]]:
+    """Parse the machine-readable `contradicts:` / `cross_reference:` yaml
+    lists a note may declare in its audit-fields block (historic-intake
+    wrappers do). Line-based and generic: a bare key line followed by
+    `- "entry"` items; no per-note code."""
+    out: dict[str, list[str]] = {}
+    lines = note_body.splitlines()
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped.rstrip(":") not in _RELATIONSHIP_LIST_KEYS or not stripped.endswith(":"):
+            continue
+        key = stripped.rstrip(":")
+        entries: list[str] = []
+        for nxt in lines[i + 1:]:
+            s = nxt.strip()
+            if s.startswith("- "):
+                entries.append(s[2:].strip().strip('"'))
+            else:
+                break
+        if entries:
+            out.setdefault(key, []).extend(entries)
+    return out
+
+
+def _read_relationship_file(path, ref: str, what: str) -> str:
+    if not path.exists():
+        raise RelationshipContextError(
+            f"relationship_context_missing: {what} for declared relation "
+            f"{ref!r} not found at {path}"
+        )
+    try:
+        return path.read_text(encoding="utf-8", errors="replace")
+    except OSError as exc:
+        raise RelationshipContextError(
+            f"relationship_context_unreadable: {what} for {ref!r}: {exc}"
+        ) from exc
+
+
+def relationship_context_blocks(
+    note_path: str, note_body: str
+) -> list[tuple[str, str]]:
+    """Resolve every declared contradiction/context relation of a note to
+    (manifest_path, labeled_block) pairs supplying the referenced wrapper
+    files AND their archived originals atomically. Role-separated: these are
+    context evidence, never dependencies or cited authorities. Fail-closed:
+    RelationshipContextError when any referenced file cannot be read."""
+    relations = parse_relationship_lists(note_body)
+    if not relations:
+        return []
+    base_dir = (REPO_ROOT / note_path).parent
+    blocks: list[tuple[str, str]] = []
+    seen: set[str] = set()
+
+    def add_block(rel_path, role_key: str, ref: str, kind: str) -> None:
+        rel_repo = os.path.relpath(str(rel_path), str(REPO_ROOT))
+        if rel_repo in seen:
+            return
+        seen.add(rel_repo)
+        role_label = (
+            "contradiction evidence — not dependencies"
+            if role_key == "contradicts"
+            else "context evidence — not dependencies"
+        )
+        text = clip_packet_text(
+            _read_relationship_file(rel_path, ref, kind),
+            RELATIONSHIP_CONTEXT_CHAR_LIMIT,
+            rel_repo,
+        )
+        blocks.append((rel_repo, (
+            f"=== BEGIN RELATIONSHIP CONTEXT ({role_label}): {rel_repo} ===\n"
+            f"=== Relationship context declared_as: {role_key} ===\n"
+            f"=== Relationship context kind: {kind} ===\n"
+            f"=== Relationship context authority: none — NOT a cited authority, "
+            f"NOT a dependency; supplied only for contradiction-set/context "
+            f"adjudication ===\n"
+            f"{text}\n"
+            f"=== END RELATIONSHIP CONTEXT: {rel_repo} ==="
+        )))
+
+    for role_key in _RELATIONSHIP_LIST_KEYS:
+        for ref in relations.get(role_key, []):
+            m = _RELATIONSHIP_NONPULLED_RE.match(ref)
+            if ref.endswith(".md") and m is None:
+                wrapper_path = base_dir / ref
+                wrapper_text = _read_relationship_file(
+                    wrapper_path, ref, "referenced wrapper"
+                )
+                add_block(wrapper_path, role_key, ref, "referenced wrapper")
+                lm = _ARCHIVED_ORIGINAL_LINK_RE.search(wrapper_text)
+                if lm is None:
+                    raise RelationshipContextError(
+                        "relationship_context_missing: referenced wrapper "
+                        f"{ref!r} declares no archived-original link"
+                    )
+                target = (
+                    lm.group(1).replace("%20", " ")
+                    .replace("%28", "(").replace("%29", ")")
+                )
+                add_block(
+                    (wrapper_path.parent / target).resolve(),
+                    role_key, ref, "archived original of referenced wrapper",
+                )
+            elif m is not None:
+                idx, stratum, tail = m.group(1), m.group(2), m.group(3) or ""
+                base = os.path.basename(tail.strip()) or f"idx_{idx}"
+                arch = (
+                    REPO_ROOT / "archive_unlanded" / "historic_intake_originals"
+                    / stratum / f"{idx}_{base}"
+                )
+                if not arch.exists() and arch.with_name(arch.name + ".frozen").exists():
+                    arch = arch.with_name(arch.name + ".frozen")
+                add_block(arch, role_key, ref, "archived original (not pulled)")
+            else:
+                raise RelationshipContextError(
+                    f"relationship_context_unresolvable: declared relation "
+                    f"{ref!r} matches no supported reference form"
+                )
+    return blocks
+
+
 def render_prompt(row: dict, ledger_rows: dict[str, dict],
                   template: str, runner_timeout_sec: int,
                   use_cache: bool = False,
@@ -1761,6 +1898,19 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         evidence_manifest, path=note_path, role="source", text=note_body,
         invocation_bound_rendered_text=True,
     )
+    # Declared contradiction/context relations (`contradicts:` /
+    # `cross_reference:` yaml lists) travel with the packet ATOMICALLY as
+    # role-separated context evidence — never as deps/authorities. Missing
+    # referenced files raise RelationshipContextError (fail-closed readiness).
+    relationship_blocks = relationship_context_blocks(note_path, full_note_body)
+    for rc_path, rc_block in relationship_blocks:
+        no_go_discipline_gate.set_packet_evidence(
+            evidence_manifest,
+            path=rc_path,
+            role="relationship_context",
+            text=rc_block,
+            invocation_bound_rendered_text=True,
+        )
     premise_context = no_go_discipline_gate.render_framework_premise_context(
         evidence_manifest
     )
@@ -2066,6 +2216,19 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         return replacements.get(token, cited_str)
 
     prompt = render_re.sub(render_token, template)
+
+    if relationship_blocks:
+        prompt += (
+            "\n\n---\n"
+            "RELATIONSHIP CONTEXT (contradiction/context evidence — not dependencies):\n"
+            "The audited note declares machine-readable `contradicts:`/`cross_reference:`\n"
+            "relations. The referenced wrapper files and their archived originals are\n"
+            "supplied below atomically as role-separated context. They are NOT cited\n"
+            "authorities, NOT dependencies, and carry no effective status or claim\n"
+            "authority; use them only to adjudicate contradiction sets and historical\n"
+            "context alongside the source note.\n\n"
+            + "\n\n".join(block for _path, block in relationship_blocks)
+        )
 
     # Append a tightening footer so we get clean JSON back. We DELIBERATELY
     # do not suppress the COMPUTE_REQUIRED escape — the audit-lane policy
@@ -3816,19 +3979,33 @@ def main() -> int:
             use_cache = False
             exact_evidence_manifest: dict[str, dict] = {}
             audit_invocation_id = uuid.uuid4().hex
-            if args.no_runner:
-                # Skip the runner subprocess + cache, but keep Section 3a
-                # (runner source code) so the auditor can still inspect what
-                # the runner does. Pass timeout=0 since it is unused.
-                prompt = render_prompt(row, ledger_rows, template, 0,
-                                       use_cache=False, skip_runner_stdout=True,
-                                       evidence_manifest_out=exact_evidence_manifest,
-                                       audit_invocation_id=audit_invocation_id)
-            else:
-                prompt = render_prompt(row, ledger_rows, template, args.runner_timeout_sec,
-                                       use_cache=use_cache,
-                                       evidence_manifest_out=exact_evidence_manifest,
-                                       audit_invocation_id=audit_invocation_id)
+            try:
+                if args.no_runner:
+                    # Skip the runner subprocess + cache, but keep Section 3a
+                    # (runner source code) so the auditor can still inspect what
+                    # the runner does. Pass timeout=0 since it is unused.
+                    prompt = render_prompt(row, ledger_rows, template, 0,
+                                           use_cache=False, skip_runner_stdout=True,
+                                           evidence_manifest_out=exact_evidence_manifest,
+                                           audit_invocation_id=audit_invocation_id)
+                else:
+                    prompt = render_prompt(row, ledger_rows, template, args.runner_timeout_sec,
+                                           use_cache=use_cache,
+                                           evidence_manifest_out=exact_evidence_manifest,
+                                           audit_invocation_id=audit_invocation_id)
+            except RelationshipContextError as exc:
+                # Fail-closed: a declared contradiction/context relation could
+                # not be supplied atomically — skip the row, never audit a
+                # partial contradiction packet.
+                print(f"  SKIP relationship context unready: {exc}")
+                skipped += 1
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "skip_relationship_context_unready",
+                        "reason": str(exc),
+                    }) + "\n")
+                continue
 
             transport_note_path = (
                 row.get("note_path") or full_led_row.get("note_path") or ""

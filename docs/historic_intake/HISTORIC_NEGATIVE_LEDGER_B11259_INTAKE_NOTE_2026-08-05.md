@@ -18,10 +18,6 @@ required before any effective status.
 
 The old near-order-of-magnitude green cycle closure and clean calibrated holdout transfer are NOT supported by the live runner; the cycle-bearing self-gap remains open at ~1.339e-01; self-refresh not closed.
 
-Original verdict: archived closure unsupported; self-gap 1.339e-01 open
-Scope: green packet vs archived closure claims
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Correction of archived claims with a family-wide pattern flag: the old near-orde
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): archived closure unsupported; self-gap 1.339e-01 open
+- Extraction scope (triage compression; may reflect later context): green packet vs archived closure claims
 - Extraction red flags: sibling packs in this family repeatedly walked back archived quantitative closure claims
 - Supersession (as known at extraction): supersedes the archived green-closure/holdout-transfer claims
 

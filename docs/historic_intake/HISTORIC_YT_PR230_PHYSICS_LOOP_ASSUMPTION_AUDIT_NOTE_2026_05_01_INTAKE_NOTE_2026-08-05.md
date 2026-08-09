@@ -18,10 +18,6 @@ required before any effective status.
 
 Answers the process question of whether the campaign really did route fan-out and assumption testing: yes a real fan-out and sensitivity campaign was performed, but no it did not satisfy every ideal process item — there was no independent review-loop/backpressure pass and no literal 12-hour unattended block.
 
-Original verdict: Open with no full retained closure; the campaign leaves open imports (production correlator data, an independent top-mass pin, or a new stationarity theorem).
-Scope: Process audit, not new physics.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The process self-audit: a real fan-out campaign was performed AND process non-co
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Open with no full retained closure; the campaign leaves open imports (production correlator data, an independent top-mass pin, or a new stationarity theorem).
+- Extraction scope (triage compression; may reflect later context): Process audit, not new physics.
 - Extraction red flags: Self-reports process non-compliance: the loop skipped the independent review/backpressure pass and the required unattended block.
 - Supersession (as known at extraction): The self-audit that triggers the backpressure pass at idx 2378.
 

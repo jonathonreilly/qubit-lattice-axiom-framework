@@ -18,10 +18,6 @@ required before any effective status.
 
 Deforming the taste Gammas by the Wilson mass M_W (m(s) = 2r|s|) breaks Cl(3) and SU(2) together and monotonically (relative errors 0.590/0.622 at r=0.2 rising to 0.954/0.984 at r=2.0) while the SU(3) Casimir quality falls from 1.000 to 0.177 at r=0.2 and below 0.01 by r=1.0; the 1+3+3+1 generation counting survives at all r because the Wilson mass depends only on Z_3-invariant Hamming weight, and Sorkin I_3 stays below 1e-16 throughout.
 
-Original verdict: Taste physicality (r = 0) is not a separate assumption for generations — it is the same structural requirement that gives the gauge groups, since mass counting without gauge structure is physically empty; the Born rule is untouched because it depends on path-sum linearity, not taste symmetry.
-Scope: 8-dim taste space in d=3 with a diagonal Hamming-weight Wilson mass; ~5 s runner.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Taste-physicality collapses into the lattice-is-physical axiom (Wilson deformati
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Taste physicality (r = 0) is not a separate assumption for generations — it is the same structural requirement that gives the gauge groups, since mass counting without gauge structure is physically empty; the Born rule is untouched because it depends on path-sum linearity, not taste symmetry.
+- Extraction scope (triage compression; may reflect later context): 8-dim taste space in d=3 with a diagonal Hamming-weight Wilson mass; ~5 s runner.
 - Extraction red flags: The 'break at the same r' evidence is that r = 0.2 was the smallest nonzero value tested, so simultaneity is asserted from grid resolution rather than a limit analysis.
 - Supersession (as known at extraction): Argues for collapsing two of the April framework's named assumptions (taste physicality and gauge-group derivation) into one; complementary to the A5 reduction at idx 2089.
 

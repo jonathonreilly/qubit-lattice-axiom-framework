@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For delta_IR(gamma) = delta_UV r^gamma with 0 < r < 1, the tolerance delta_IR <= epsilon is equivalent to gamma >= gamma_* = log(epsilon/delta_UV)/log(r) > 0, so the premise gamma > 0 alone is insufficient: with gamma = (C_F + C_B N_f) alpha and only positivity supplied, a small positive alpha keeps the RG fixed point attractive while failing any fixed tolerance. PASS=13 FAIL=0.
 
-Original verdict: Retires the route 'one-loop velocity attraction + gamma > 0 => Lorentz-naturalness sufficiency', turning a vague residual into a sharp gate.
-Scope: Addresses only the physical anomalous-dimension/sufficiency clause of the parent audited conditional repair target; imports no experimental LV bound and changes no audit status.
-Escape conditions (negative claims): Three named escapes: (1) a retained lower bound on the physical fixed-point anomalous dimension; (2) a retained bound on the UV regenerated residual together with a retained tolerance; (3) a different custodial or symmetry theorem that removes the residual rather than merely damping it.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact threshold no-go retiring the vague gamma>0 Lorentz-naturalness route — w
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Retires the route 'one-loop velocity attraction + gamma > 0 => Lorentz-naturalness sufficiency', turning a vague residual into a sharp gate.
+- Extraction scope (triage compression; may reflect later context): Addresses only the physical anomalous-dimension/sufficiency clause of the parent audited conditional repair target; imports no experimental LV bound and changes no audit status.
+- Extraction escape conditions (negative claims; triage compression): Three named escapes: (1) a retained lower bound on the physical fixed-point anomalous dimension; (2) a retained bound on the UV regenerated residual together with a retained tolerance; (3) a different custodial or symmetry theorem that removes the residual rather than merely damping it.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Isolates and closes one live blocker in EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06 without changing that row's audit status.
 

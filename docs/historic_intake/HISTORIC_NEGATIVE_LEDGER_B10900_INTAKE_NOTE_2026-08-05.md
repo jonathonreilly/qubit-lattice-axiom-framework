@@ -18,10 +18,6 @@ required before any effective status.
 
 Seven routes pruned BY USER INSTRUCTION (generated typed-edge inventory, local-current singlet-annihilation, full-trace exclusion, positive E-center domain, direct readout-family algebra, same-rational/finite-box comparator, endpoint-value reversal); Block141's fan-out frames for O_CR source-coordinate construction all hit the missing physical theorem; Block142 showed finite P_R row labels admit many scalar observables and do not construct O_CR; this block avoids treating raw P_R rows as a source jet.
 
-Original verdict: Prior routes closed, some by owner instruction rather than by proof.
-Scope: Route memory for the binary source-jet block.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Provenance record the audit lane must see: SEVEN routes are marked pruned BY USE
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Prior routes closed, some by owner instruction rather than by proof.
+- Extraction scope (triage compression; may reflect later context): Route memory for the binary source-jet block.
 - Extraction red flags: seven routes are marked pruned 'by user instruction' rather than by proof — closure provenance differs from the rest of the ledger
 - Supersession (as known at extraction): Records that a set of routes was closed by USER INSTRUCTION, not by demonstration — a provenance distinction worth preserving.
 

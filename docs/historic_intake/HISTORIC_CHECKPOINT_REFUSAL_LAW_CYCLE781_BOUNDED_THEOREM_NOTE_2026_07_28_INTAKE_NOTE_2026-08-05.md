@@ -18,10 +18,6 @@ required before any effective status.
 
 Builds the best permanence-law candidate the framework's reversible primitives allow — a checkpoint guard compiled purely from X/CNOT/TOF over the landed layout, achieving syndrome completeness where the landed law was blind — and then confirms mechanically that every such guard hits a regress, stating the new-primitive requirement exactly.
 
-Original verdict: LAW_PARTIAL: the construction works but no reversible-primitive guard can finish the job — a new primitive is required.
-Scope: REGRESS_CONFIRMED is scoped to the guards constructed and tested (primary's, majority-3, refresh) under arbitrary M2 words, with defeaters exhibited mechanically; the universal statement over all guards is not claimed.
-Escape conditions (negative claims): The regress is demonstrated only for the three tested guard families; a guard outside those families, or a new primitive, is the stated escape.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ LAW_PARTIAL permanence result: syndrome-complete checkpoint guard built, and no 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): LAW_PARTIAL: the construction works but no reversible-primitive guard can finish the job — a new primitive is required.
+- Extraction scope (triage compression; may reflect later context): REGRESS_CONFIRMED is scoped to the guards constructed and tested (primary's, majority-3, refresh) under arbitrary M2 words, with defeaters exhibited mechanically; the universal statement over all guards is not claimed.
+- Extraction escape conditions (negative claims; triage compression): The regress is demonstrated only for the three tested guard families; a guard outside those families, or a new primitive, is the stated escape.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Answers Cycle 777's specification of the missing permanence law.
 

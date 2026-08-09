@@ -18,10 +18,6 @@ required before any effective status.
 
 Locates the per-sector dial occupancy s in the derivation tree and finds it IRREDUCIBLE: the framework derives the dial structure (the family Q = 1/3 + (2/3)r, generation count 3, the carrier operator, and the distinguished settings r in {0, 1/2, 1}) but the per-sector position is the genuine Yukawa-texture datum, not derivable via the color-to-generation bridge (a no-go) nor via any non-color native selector tested, each being either flat in s or selecting the wrong thing.
 
-Original verdict: The dial occupancy is an irreducible per-sector input — the framework derives the dial, not the setting.
-Scope: Uses only facts already on origin/main with verified statuses cited inline plus a paired runner (PASS=32 FAIL=0); forces no r value and claims no closure.
-Escape conditions (negative claims): Section 5 opens paths without closing: occupancy texture might be a relation among the four s values rather than four independent numbers.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The dial-occupancy IRREDUCIBILITY finding: the framework derives the dial (Q = 1
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The dial occupancy is an irreducible per-sector input — the framework derives the dial, not the setting.
+- Extraction scope (triage compression; may reflect later context): Uses only facts already on origin/main with verified statuses cited inline plus a paired runner (PASS=32 FAIL=0); forces no r value and claims no closure.
+- Extraction escape conditions (negative claims; triage compression): Section 5 opens paths without closing: occupancy texture might be a relation among the four s values rather than four independent numbers.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

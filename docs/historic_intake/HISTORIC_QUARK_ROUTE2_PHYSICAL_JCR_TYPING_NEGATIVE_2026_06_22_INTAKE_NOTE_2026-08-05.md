@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The formal binary family Z_p[J] = p e^J + (1-p) e^-J has D^2 log Z_p|0 = 4p(1-p), so p = 1/2, 2/3, 1/3, 3/4, 5/6 give kappa = 1, 0, 0, -5/4, -3 - the support theorem selects kappa = 0 only after the physical typing has already selected the reference probability and orientation. Runner PASS=95.
 
-Original verdict: No - the current finite P_R surface, generic Fisher/Riesz support and the formal family do not supply the physical source coordinate.
-Scope: Prunes only the shortcut from the formal binary exponential family to physical J_CR typing.
-Escape conditions (negative claims): Escaped by a physical J_CR source typing theorem constructing Omega_CR, P0, J_CR and X_CR, proving the readout is the same-source connected Hessian at p = 2/3 with the selected orientation, and that it is the same source consumed by the Riesz/isometry and orientation steps.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -113,6 +109,9 @@ The QUARK_ROUTE2 terminal: the support theorem cannot type the source (p = 2/3 r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - the current finite P_R surface, generic Fisher/Riesz support and the formal family do not supply the physical source coordinate.
+- Extraction scope (triage compression; may reflect later context): Prunes only the shortcut from the formal binary exponential family to physical J_CR typing.
+- Extraction escape conditions (negative claims; triage compression): Escaped by a physical J_CR source typing theorem constructing Omega_CR, P0, J_CR and X_CR, proving the readout is the same-source connected Hessian at p = 2/3 with the selected orientation, and that it is the same source consumed by the Riesz/isometry and orientation steps.
 - Extraction red flags: The parameter p = 2/3 that reproduces kappa = 0 is identified by scanning the family against the desired selector, which the note itself flags as requiring independent physical typing.
 - Supersession (as known at extraction): Terminal note of the branch05 manifest and of the Route-2 source-jet sub-chain; prunes the Block143 formal support from typing the physical source.
 

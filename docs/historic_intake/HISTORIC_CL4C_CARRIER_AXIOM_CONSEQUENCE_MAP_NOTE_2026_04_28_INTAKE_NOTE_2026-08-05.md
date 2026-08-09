@@ -18,10 +18,6 @@ required before any effective status.
 
 Traces what adopting Axiom* (the irreducible Cl_4(C) module axiom on P_A H_cell) would discharge across five lanes: it supplies the metric-compatible Clifford coframe response and cascades retention to the Lane-5 (C1) absolute-scale gate (hence a/l_P = 1, a^{-1} = M_Pl and a numerically retainable R_Lambda), plus the Sigma m_nu, gravity/area-law, Planck and Dirac-lift lanes.
 
-Original verdict: Makes explicit the price and the payoff of the minimal carrier axiom identified by the Cycle-5 A5 audit, as input to an honest decision.
-Scope: Branch-local conditional map, Cycle 1; every consequence is conditional on adopting Axiom*, which is not adopted.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Axiom* (Cl_4(C) module) consequence map: exactly what adopting the minimal c
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Makes explicit the price and the payoff of the minimal carrier axiom identified by the Cycle-5 A5 audit, as input to an honest decision.
+- Extraction scope (triage compression; may reflect later context): Branch-local conditional map, Cycle 1; every consequence is conditional on adopting Axiom*, which is not adopted.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

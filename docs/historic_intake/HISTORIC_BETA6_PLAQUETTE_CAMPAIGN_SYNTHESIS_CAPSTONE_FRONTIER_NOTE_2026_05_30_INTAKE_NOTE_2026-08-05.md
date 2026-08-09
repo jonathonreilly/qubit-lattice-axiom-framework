@@ -18,10 +18,6 @@ required before any effective status.
 
 Campaign-level synthesis of the beta=6 SU(3) Wilson single-plaquette lane — the most-cited open quantitative gate (it feeds u_0 = <P>^{1/4}, then alpha_s, then v/y_t/m_t/m_H, with <P>(6, L->inf) ~= 0.594 available only from Monte-Carlo finite-size scaling) — reconciling it into one PROVEN (exact series through beta^7; falsified single-singularity continuations) / CONDITIONAL (analytic class, thermodynamic limit) / OPEN boundary with two named walls.
 
-Original verdict: The campaign's retained no-gos show the missing object is a single thing seen from three sides, with one decisive next step named and the closure-reachability stated honestly.
-Scope: Backward-looking synthesis of landed narrow content plus the live no-go ledger; not a closure, introduces no value or authority, sets no audit status.
-Escape conditions (negative claims): The three-fold wall is characterized rather than declared absolute; the note names the single decisive next step that would move it, and one wall (the no-real-bulk-transition certificate) is labeled UNDISCHARGED rather than proven.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The beta=6 plaquette campaign capstone: the most-cited open quantitative gate (f
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The campaign's retained no-gos show the missing object is a single thing seen from three sides, with one decisive next step named and the closure-reachability stated honestly.
+- Extraction scope (triage compression; may reflect later context): Backward-looking synthesis of landed narrow content plus the live no-go ledger; not a closure, introduces no value or authority, sets no audit status.
+- Extraction escape conditions (negative claims; triage compression): The three-fold wall is characterized rather than declared absolute; the note names the single decisive next step that would move it, and one wall (the no-real-bulk-transition certificate) is labeled UNDISCHARGED rather than proven.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Capstone/terminal synthesis of the beta=6 plaquette campaign, superseding the earlier attack-surface map's status table (which it corrects for staleness).
 

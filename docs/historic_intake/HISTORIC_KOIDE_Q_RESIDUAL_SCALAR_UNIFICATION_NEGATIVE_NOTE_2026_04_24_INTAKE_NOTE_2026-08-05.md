@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Catalogues ~40 residual scalars exposed across the whole Koide-Q lane (K_TL, c-2/3, c_orbit-2, t-5, alpha_block-1, t_heat-log(2)/3, u_center-1/2, sector_rate=a-b, zeta, F_odd, R_Z=(2w-1)^2, ...) and proves they are all the same single missing source law in different coordinates. Runner PASSED: 81/81; counter-configurations show Q-side and delta-side residuals are independent, so residual bookkeeping alone closes neither bridge.
 
-Original verdict: Q_RESIDUAL_SCALAR_UNIFICATION_CLOSES_Q=FALSE — the atlas reduces to 'find one retained charged-lepton law that sets one Q residual to zero'.
-Scope: Retained-only Q closure by re-expressing already-exposed residual scalars; no new axioms, no PDG masses, no H_* pin, no promoted K_TL=0/Q=2/3/delta=2/9.
-Escape conditions (negative claims): Falsified/escaped by one retained charged-lepton equation setting any single Q residual to zero (RESIDUAL_PRIMITIVE=one_retained_equation_setting_any_Q_residual_to_zero); boundary/descent conditions named as the next live supplier since algebraic-democracy routes collapsed to measure choice.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -88,6 +84,9 @@ The Koide-Q residual-scalar atlas: ~40 residuals unified to one target — the l
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q_RESIDUAL_SCALAR_UNIFICATION_CLOSES_Q=FALSE — the atlas reduces to 'find one retained charged-lepton law that sets one Q residual to zero'.
+- Extraction scope (triage compression; may reflect later context): Retained-only Q closure by re-expressing already-exposed residual scalars; no new axioms, no PDG masses, no H_* pin, no promoted K_TL=0/Q=2/3/delta=2/9.
+- Extraction escape conditions (negative claims; triage compression): Falsified/escaped by one retained charged-lepton equation setting any single Q residual to zero (RESIDUAL_PRIMITIVE=one_retained_equation_setting_any_Q_residual_to_zero); boundary/descent conditions named as the next live supplier since algebraic-democracy routes collapsed to measure choice.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Acts as the family's residual-atlas hub note that all sibling Koide-Q no-gos feed into; not itself declared terminal.
 

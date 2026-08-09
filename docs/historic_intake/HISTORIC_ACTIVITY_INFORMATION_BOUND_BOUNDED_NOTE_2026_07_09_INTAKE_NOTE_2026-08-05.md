@@ -18,10 +18,6 @@ required before any effective status.
 
 The necessity direction of the activity-information bridge is exhibited with exact controls (information reaches no register without activity), but rate-proportionality is not: no linear activity gate on pointer FLOW exists, since the pointer moves with bond coherence (a current) while activity is state change (a rate) — 27 measured pointer-continuity violations across the sweep at fitted c1 = 0.27.
 
-Original verdict: The bridge premise weakens the way the sparsity premise did: only the rate NORMALIZATION remains supplied, and that is the measured kappa of the deposition-rate campaign, not an assumption.
-Scope: Runner returns BOUND-PARTIAL (exit 1); proportionality question deferred to d >= 2 alongside the redundancy bar.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Bridge-premise weakening with exact controls: activity-information necessity exh
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The bridge premise weakens the way the sparsity premise did: only the rate NORMALIZATION remains supplied, and that is the measured kappa of the deposition-rate campaign, not an assumption.
+- Extraction scope (triage compression; may reflect later context): Runner returns BOUND-PARTIAL (exit 1); proportionality question deferred to d >= 2 alongside the redundancy bar.
 - Extraction red flags: Primary runner exits 1 (BOUND-PARTIAL) by design; the counterexamples are retained rather than gated away.
 - Supersession (as known at extraction): none recorded
 

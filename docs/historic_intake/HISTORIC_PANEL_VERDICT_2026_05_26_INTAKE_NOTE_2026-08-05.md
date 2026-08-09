@@ -18,10 +18,6 @@ required before any effective status.
 
 10-panelist verdict: 2/9 (d=3) and 5/36 (d=6) are one invariant (N-1)/N^2 in six universal frames (Atiyah-Singer family, Bernoulli, Hurwitz zeta, Fisher, Z_N CFT twist, Burnside), while four lenses fail at d=6; retained native-unit theorem: none of the framework's six q*pi angular units gives 2/9 rad (the Plancherel-step unit is 2pi/9, not 2/9) — so the bridge is a convention-selection problem with three natural candidates.
 
-Original verdict: structural, not coincidence; convention selection open
-Scope: panel synthesis reframing the coincidence question
-Escape conditions (negative claims): identify which of the three natural conventions is the framework's native angular convention
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Genuine structural positive from the 10-panelist review: 2/9 (d=3) and 5/36 (d=6
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): structural, not coincidence; convention selection open
+- Extraction scope (triage compression; may reflect later context): panel synthesis reframing the coincidence question
+- Extraction escape conditions (negative claims; triage compression): identify which of the three natural conventions is the framework's native angular convention
 - Extraction red flags: reverses HONEST_FINAL_STATE's pun diagnosis via panel convergence, not new derivation; the 2pi/9 vs 2/9 distinction it flags is exactly where the convention smuggling lives
 - Supersession (as known at extraction): none recorded
 

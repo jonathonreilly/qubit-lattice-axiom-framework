@@ -18,10 +18,6 @@ required before any effective status.
 
 Seven routes fail: the current primitive-bank p=2 shortcut does not supply the dual-compliance law; minimal direct dualization leaves the total exponent free because covariance factorizes; a broader nonlinear grammar misses natural controls so the inverse-square remains selected only by target or a new theorem; non-Route-2 7/8 constants do not supply q_E - 1; invariant restricted-family data cannot select rho_E = 21/4; R_conn = 8/9 must be supplemented by selector/magnitude support; and Fierz, normalization, CMT scaling, positivity and OZI-size bounds together do not derive kappa = 0.
 
-Original verdict: The inverse-square law is 'selected only by target or new theorem' — i.e. by the answer one wants.
-Scope: Selector routes for kappa = 0 and the inverse-square law.
-Escape conditions (negative claims): A new theorem supplying the dual-compliance law or a channel-nonblind selector.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -70,6 +66,9 @@ MAJOR self-diagnosis of target-driven selection: seven routes fail to supply the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The inverse-square law is 'selected only by target or new theorem' — i.e. by the answer one wants.
+- Extraction scope (triage compression; may reflect later context): Selector routes for kappa = 0 and the inverse-square law.
+- Extraction escape conditions (negative claims; triage compression): A new theorem supplying the dual-compliance law or a channel-nonblind selector.
 - Extraction red flags: MAJOR self-diagnosis: the inverse-square law 'remains selected only by target or new theorem' — target-driven selection is named as the current state
 - Supersession (as known at extraction): none recorded
 

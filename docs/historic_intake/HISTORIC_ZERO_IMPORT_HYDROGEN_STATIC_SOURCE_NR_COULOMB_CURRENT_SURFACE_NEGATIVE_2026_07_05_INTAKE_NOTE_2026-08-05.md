@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED; five inputs are missing (STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED, ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED, HARTREE_SCALE_MAPPING_RATIFIED, owner ratification, audit acceptance). Structural target: epsilon_n = -1/(2 n^2), E_n = E_H epsilon_n, E_H = m_e alpha(0)^2, Rydberg = E_H/2; kernel support G(r) -> 1/(4 pi |r|), V_lat(r) = -4 pi g G(r) -> -g/|r|, and V(r) = -C g_bare^2 G(r) -> -C alpha/|r| with alpha := g_bare^2/(4 pi).
 
-Original verdict: Support-only non-supply boundary; the displayed equations are support and not proof inputs.
-Scope: The final structural input of the static-source Rydberg lane.
-Escape conditions (negative claims): Ratify the static-source linear-response readout, the one-body NR physical-unit limit and the Hartree-scale mapping, then obtain owner ratification and audit acceptance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -56,6 +52,9 @@ Static-source NR Coulomb terminal: five inputs missing; the displayed equations 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the displayed equations are support and not proof inputs.
+- Extraction scope (triage compression; may reflect later context): The final structural input of the static-source Rydberg lane.
+- Extraction escape conditions (negative claims; triage compression): Ratify the static-source linear-response readout, the one-body NR physical-unit limit and the Hartree-scale mapping, then obtain owner ratification and audit acceptance.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the static-source NR Coulomb limit; packets 2704/2702/2705 feed it; it consumes m_e (Lane 6 terminal 2694) and alpha(0) (Lane 2 terminal 2509).
 

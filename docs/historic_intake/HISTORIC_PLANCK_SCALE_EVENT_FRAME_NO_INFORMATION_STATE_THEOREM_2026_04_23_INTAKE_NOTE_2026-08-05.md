@@ -18,10 +18,6 @@ required before any effective status.
 
 Defines P_A invariantly as the spectral projector 1_{N_evt = 1} of the retained event-count readout N_evt = sum_eta |eta| P_eta, and concedes that packet-preserving symmetry alone only forces a block state rho = alpha P_A + beta(I - P_A) with 4 alpha + 12 beta = 1, NOT traciality. Traciality comes from Axiom Extension P1's no-preferred-primitive-event law, giving p_eta = 1/16 and Tr((I_16/16) P_A) = 4/16 = 1/4.
 
-Original verdict: Yes - the state law can be stated without U(2)^4 presentation-change reasoning, at the cost of an explicit P1 denial surface.
-Scope: Source-free bare-cell state on the retained primitive event frame, assumed positive, normalized and diagonal; explicitly not a claim about prepared or reduced states.
-Escape conditions (negative claims): The negative half (packet stabilizer does not derive traciality) is escaped only by Axiom Extension P1; the remaining denial is 'reject P1's no-preferred-primitive-event state law', a package-governance denial.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ RETRACTION on the record: the U(2)^4 default-state argument replaced by the inva
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Yes - the state law can be stated without U(2)^4 presentation-change reasoning, at the cost of an explicit P1 denial surface.
+- Extraction scope (triage compression; may reflect later context): Source-free bare-cell state on the retained primitive event frame, assumed positive, normalized and diagonal; explicitly not a claim about prepared or reduced states.
+- Extraction escape conditions (negative claims; triage compression): The negative half (packet stabilizer does not derive traciality) is escaped only by Axiom Extension P1; the remaining denial is 'reject P1's no-preferred-primitive-event state law', a package-governance denial.
 - Extraction red flags: Retracts the earlier U(2)^4-based source-free state argument used elsewhere in the lane as reviewer-vulnerable.
 - Supersession (as known at extraction): Explicitly replaces the older U(2)^4 default-state argument and removes that vulnerability; feeds the native derivation packet's state step.
 

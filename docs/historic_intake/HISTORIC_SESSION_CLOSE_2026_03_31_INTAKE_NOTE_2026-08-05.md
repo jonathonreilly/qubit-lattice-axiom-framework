@@ -18,10 +18,6 @@ required before any effective status.
 
 Closing ledger of 66 experiments: the model confirmedly does gravitational attraction from phase structure (90% with the 1/L^p propagator), interference (100%, V=0.995), Born rule (I3 = 4.28e-15), emergence of both during growth at 6-8 layers, gravity as pure phase (k=0 gives exactly zero shift), the analytically derived phase valley (Delta-S ~ -L*sqrt(2f), shift proportional to k^2), and endogenous two-register decoherence (mean purity 0.80) — but does NOT produce 1/r distance scaling, F proportional to M, decoherence that scales with graph size, or any decoherence on regular lattices.
 
-Original verdict: The model's physics is qualitatively correct (right phenomena, signs and emergence pattern) but quantitatively threshold-like; the model is at a theoretical junction, not an experimental one, and more experiments will confirm the same patterns.
-Scope: Confirmed across 2D and 3D and across 5 tested architectures; decoherence requires irregular graphs with degree >= 3.
-Escape conditions (negative claims): The four negatives state their mechanism and escapes: deflection is b-independent and mass-independent because the phase valley depth SATURATES (a propagator where the phase effect grows with distance through the field is named as the fix); decoherence scales the wrong way (purity rising 0.57 to 0.89 as graphs grow) because the node-label environment grows linearly while path multiplicity grows exponentially (a tensor-product environment doubling dimension per mass interaction is named as the fix); decoherence is exactly absent on regular lattices (purity=1.0) because symmetry blocks slit selectivity; and the shared root cause is path-sum averaging over exponentially many paths, which helps signs but washes out b-dependent action asymmetry and slit-selective environment labels.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Era-terminal bottom line: what the model does (attraction from phase, interferen
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The model's physics is qualitatively correct (right phenomena, signs and emergence pattern) but quantitatively threshold-like; the model is at a theoretical junction, not an experimental one, and more experiments will confirm the same patterns.
+- Extraction scope (triage compression; may reflect later context): Confirmed across 2D and 3D and across 5 tested architectures; decoherence requires irregular graphs with degree >= 3.
+- Extraction escape conditions (negative claims; triage compression): The four negatives state their mechanism and escapes: deflection is b-independent and mass-independent because the phase valley depth SATURATES (a propagator where the phase effect grows with distance through the field is named as the fix); decoherence scales the wrong way (purity rising 0.57 to 0.89 as graphs grow) because the node-label environment grows linearly while path multiplicity grows exponentially (a tensor-product environment doubling dimension per mass interaction is named as the fix); decoherence is exactly absent on regular lattices (purity=1.0) because symmetry blocks slit selectivity; and the shared root cause is path-sum averaging over exponentially many paths, which helps signs but washes out b-dependent action asymmetry and slit-selective environment labels.
 - Extraction red flags: States plainly that the model fails all three quantitative scaling tests (mass, distance, graph size) and that further parameter sweeps will not advance it.
 - Supersession (as known at extraction): Session-final summary superseding the same-day frontier maps (idx 3141, 3142); its decoherence figure (universal, mean purity 0.80) differs from the frontier map's D=40% framing.
 

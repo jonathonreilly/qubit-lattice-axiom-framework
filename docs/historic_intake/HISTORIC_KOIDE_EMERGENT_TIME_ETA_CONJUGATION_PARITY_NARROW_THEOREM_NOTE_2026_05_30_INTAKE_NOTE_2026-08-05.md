@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The conjugation-odd (Berry/eta) term that would force nu = 1 and hence r = 1/2 vanishes identically: b -> conj(b) is realized by the transposition P on the generation triplet, and (I x P) H(b) (I x P) = H(conj(b)) is a real-orthogonal similarity fixing the whole spectrum, so EVERY spectral functional is conjugation-invariant for any kernel; the surviving first-order term is conjugation-even, giving nu = 2 and the no-import default Q = 1.
 
-Original verdict: Sharp isolation rather than a global no-go: Q = 2/3 requires breaking the transposition similarity P, and the only deformation found that does so is the chiral holomorphic/Weyl polarization, which is the unapproved chirality import.
-Scope: Forced by the retained generation circulant and unchanged by the retained time/Dirac structure — not derived from the retained Dirac operator, since the retained real anti-Hermitian class alpha(C - C^2) cannot host a two-parameter complex b.
-Escape conditions (negative claims): The escape is explicitly named — break the transposition similarity via a chiral deformation M_chi = aI + bC + cC^2 with c independent of conj(b) (the positive control gives odd = 4.0 where the retained coupling gives 0.0), i.e. the chirality import shared with the generation-identification gate.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The conjugation-parity vanishing no-go WITH a firing positive control: the Berry
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Sharp isolation rather than a global no-go: Q = 2/3 requires breaking the transposition similarity P, and the only deformation found that does so is the chiral holomorphic/Weyl polarization, which is the unapproved chirality import.
+- Extraction scope (triage compression; may reflect later context): Forced by the retained generation circulant and unchanged by the retained time/Dirac structure — not derived from the retained Dirac operator, since the retained real anti-Hermitian class alpha(C - C^2) cannot host a two-parameter complex b.
+- Extraction escape conditions (negative claims; triage compression): The escape is explicitly named — break the transposition similarity via a chiral deformation M_chi = aI + bC + cC^2 with c independent of conj(b) (the positive control gives odd = 4.0 where the retained coupling gives 0.0), i.e. the chirality import shared with the generation-identification gate.
 - Extraction red flags: Includes a positive control proving the null is real signal; corrects prior mis-attributions in the same lane.
 - Supersession (as known at extraction): Corrects two imprecise mechanism attributions used in working drafts (the +/- i mu pairing follows from real-characteristic-polynomial conjugate closure, not CPT alone; the cancellation is a generation-index transposition similarity, not an APS Hamming-weight chirality).
 

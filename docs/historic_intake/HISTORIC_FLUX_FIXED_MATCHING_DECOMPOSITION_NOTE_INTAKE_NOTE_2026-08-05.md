@@ -18,10 +18,6 @@ required before any effective status.
 
 With enclosed discrete charge Q = sum(-Delta phi) the field splits exactly as phi = Q G_0 + h with h harmonic outside the source and carrying zero enclosed monopole charge; verified for both exact source families with radius-independent Q (R = 2..5), giving max relative shell error ~1e-15 for the local O_h family (Q = 2.52683051) and 1.19% at R = 3 falling to 0.65% at R = 4.5 for the finite-rank family (Q = 9.53220124).
 
-Original verdict: The macroscopic exterior law is not a fitted a/r ansatz but the lattice monopole Green representative fixed exactly by conserved discrete charge, narrowing the matching problem to why the zero-monopole remainder is negligible after coarse-graining.
-Scope: Finite enclosed source on the cubic lattice with Dirichlet box boundary conditions; shell-level matching only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact flux-fixed decomposition phi = Q G_0 + h replacing the ad hoc a/r fit — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The macroscopic exterior law is not a fitted a/r ansatz but the lattice monopole Green representative fixed exactly by conserved discrete charge, narrowing the matching problem to why the zero-monopole remainder is negligible after coarse-graining.
+- Extraction scope (triage compression; may reflect later context): Finite enclosed source on the cubic lattice with Dirichlet box boundary conditions; shell-level matching only.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Replaces the earlier ad hoc a/r fit with an exact lattice-native decomposition.
 

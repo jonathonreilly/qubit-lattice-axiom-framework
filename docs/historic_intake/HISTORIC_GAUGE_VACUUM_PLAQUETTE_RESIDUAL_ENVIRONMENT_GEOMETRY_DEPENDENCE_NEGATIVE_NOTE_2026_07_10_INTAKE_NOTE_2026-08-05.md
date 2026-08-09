@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The fundamental environment coefficient has different first allowed strong-coupling orders on the two tested periodic sizes - rho_(1,0)^env = C_2 beta^3 + O(beta^4) at L_s = 2 with C_2 > 0, but O(beta^5) at L_s = 3 - so no single geometry-free analytic function is the actual unmarked Wilson environment for both accepted finite transfer surfaces; the residual must carry L_s (and, since a finite measure needs one, the boundary condition).
 
-Original verdict: An exact negative boundary for a geometry-free residual coefficient sequence, sharpening the target without computing the geometry-indexed beta = 6 environment.
-Scope: Prunes only the route treating the single-link packet or one finite cube packet as a universal environment across the two tested PBC sizes; does NOT establish fixed-L_s boundary-condition dependence and does not say a geometry-indexed coefficient cannot be computed.
-Escape conditions (negative claims): Explicitly leaves open the computation of a properly geometry-indexed coefficient rho^(env,L_s,BC); the obstruction is only to geometry-freeness, and the temporal mixed-kernel stripping question is separately open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Geometry-dependence no-go: the environment coefficient has different strong-coup
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An exact negative boundary for a geometry-free residual coefficient sequence, sharpening the target without computing the geometry-indexed beta = 6 environment.
+- Extraction scope (triage compression; may reflect later context): Prunes only the route treating the single-link packet or one finite cube packet as a universal environment across the two tested PBC sizes; does NOT establish fixed-L_s boundary-condition dependence and does not say a geometry-indexed coefficient cannot be computed.
+- Extraction escape conditions (negative claims; triage compression): Explicitly leaves open the computation of a properly geometry-indexed coefficient rho^(env,L_s,BC); the obstruction is only to geometry-freeness, and the temporal mixed-kernel stripping question is separately open.
 - Extraction red flags: Records that earlier notes in this lane overclaimed a universal environment packet.
 - Supersession (as known at extraction): Handles earlier cube-encoder overclaims by geometry naming; its L_s = 2 case is measured by the MC note (idx 587).
 

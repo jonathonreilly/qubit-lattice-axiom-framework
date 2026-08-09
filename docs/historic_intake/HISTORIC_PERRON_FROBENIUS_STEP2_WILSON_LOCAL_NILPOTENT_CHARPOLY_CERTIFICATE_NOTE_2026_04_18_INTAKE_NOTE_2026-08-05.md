@@ -18,10 +18,6 @@ required before any effective status.
 
 Compresses the post-support spectral layer from three identities Tr(B_e^k) = Tr(H_e^k) for k = 1,2,3 to ONE cubic characteristic-polynomial identity, giving a local nilpotent-chain 1 + 1 certificate.
 
-Original verdict: The Wilson reopening lever is one local constructive generator plus one cubic spectral identity — the form the full-frontier closure then finds unrealized.
-Scope: The sharpest compact Wilson package.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Wilson lever compressed to ONE local nilpotent generator + one cubic charpol
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Wilson reopening lever is one local constructive generator plus one cubic spectral identity — the form the full-frontier closure then finds unrealized.
+- Extraction scope (triage compression; may reflect later context): The sharpest compact Wilson package.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal sharpening of the Wilson certificate chain; its 1+1 form is what idx_pos 1264 closes negatively.
 

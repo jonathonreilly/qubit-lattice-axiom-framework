@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies that the no-horizon claim uses the weak-field metric where it breaks down: at r = R_S + l_Planck the potential satisfies phi ~ 1/2 to 40 digits, so 'f(R_S + a) > 0 therefore no horizon' is circular. Grades the five steps: minimum wavelength DERIVED, Fermi stabilization BOUNDED (Hartree, 1D to N=1000 and 3D to L=14), echo formula DERIVED given a surface, evanescent-barrier null echo DERIVED, no-horizon NOT DERIVED.
 
-Original verdict: The sharpest honest claims are that the lattice prevents singularity formation and predicts null echoes; the no-horizon claim is a CONJECTURE, not a theorem.
-Scope: Audit of the frozen-star and GW-echo document/script set including the t_echo = 67.66 ms GW150914 prediction.
-Escape conditions (negative claims): Four options are named for repairing the chain, including weakening the claim to an ultra-compact object; the null-echo prediction is identified as the safest observational claim.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ The no-horizon RECLASSIFICATION: the claim used the weak-field metric where it b
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The sharpest honest claims are that the lattice prevents singularity formation and predicts null echoes; the no-horizon claim is a CONJECTURE, not a theorem.
+- Extraction scope (triage compression; may reflect later context): Audit of the frozen-star and GW-echo document/script set including the t_echo = 67.66 ms GW150914 prediction.
+- Extraction escape conditions (negative claims; triage compression): Four options are named for repairing the chain, including weakening the claim to an ultra-compact object; the null-echo prediction is identified as the safest observational claim.
 - Extraction red flags: Explicitly reclassifies a previously stated no-horizon result as a conjecture and includes an old-status/corrected-status table, i.e. a self-retraction of published framing.
 - Supersession (as known at extraction): Downgrades claims in FROZEN_STARS_RIGOROUS_NOTE, GW_ECHO_DERIVED_NOTE, and ECHO_PREDICTION_RESOLVED_2026-04-12; the gap it opens is answered by idx 2000.
 

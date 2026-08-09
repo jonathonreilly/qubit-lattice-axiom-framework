@@ -18,10 +18,6 @@ required before any effective status.
 
 Replaces the naked 5/6 = C_F - T_F Casimir coincidence as the origin of the bridge exponents: on the identification m_d/m_s = alpha_s(v)/2 and m_s/m_b = [alpha_s(v)/sqrt(6)]^{6/5}, the sqrt(6) in both |V_cb|_atlas and the 5/6 bridge is the same constant sqrt(dim Q_L) = sqrt(N_c N_iso), and 5/6 is the orthogonal-complement projector weight 1 - 1/dim(Q_L) on the six-state quark block.
 
-Original verdict: The bridge exponents get a structural origin (projector weight and block dimension) rather than a numerical Casimir coincidence.
-Scope: Structural theorem retained; the quantitative mass-ratio readout stays bounded and controlled by the current mass-hierarchy surface.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Structural origin for the bridge exponents (projector weight + block dimension) 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The bridge exponents get a structural origin (projector weight and block dimension) rather than a numerical Casimir coincidence.
+- Extraction scope (triage compression; may reflect later context): Structural theorem retained; the quantitative mass-ratio readout stays bounded and controlled by the current mass-hierarchy surface.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly replaces the earlier 5/6 = C_F - T_F coincidence as the retained origin.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 PASS by withdrawal and narrowing: the block ships no zero-gravity, family-wall, or route-foreclosure claim. Five routes remain explicitly live (higher precision below the current norm floor; rescaled/lower detector-norm threshold; different seed schedule; different connectivity radius/density/layer-2 edges; broader N-window or genuine mirror-family analysis), and because the former zero-gravity claim is WITHDRAWN they are counterexamples to any global no-go reading rather than silently foreclosed obligations. Steelman: nonzero field-free amplitudes between 5.09e-39 and 1.43e-34 may support evaluable centroid shifts under higher precision — decisive against a zero-gravity claim, which is why those claims were removed.
 
-Original verdict: Only the narrowed estimator-validity statement survives; the per-seed norm reconstruction gives 0/11 valid evaluations.
-Scope: Gravity-estimator validity at N=120 under the companion's 1e-30 detector-norm gate; one wall only, not presented as independent of the implementation threshold.
-Escape conditions (negative claims): All five listed routes remain open; the retirement mechanism is 'expose the threshold, reject the sentinel as physics, preserve the unresolved route'.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ Retraction on the record: a prior zero-gravity / universal-wall claim is WITHDRA
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Only the narrowed estimator-validity statement survives; the per-seed norm reconstruction gives 0/11 valid evaluations.
+- Extraction scope (triage compression; may reflect later context): Gravity-estimator validity at N=120 under the companion's 1e-30 detector-norm gate; one wall only, not presented as independent of the implementation threshold.
+- Extraction escape conditions (negative claims; triage compression): All five listed routes remain open; the retirement mechanism is 'expose the threshold, reject the sentinel as physics, preserve the unresolved route'.
 - Extraction red flags: cross-cycle echo notes REPEATED cases repo-wide where implementation thresholds or conventions were mistaken for physical walls
 - Supersession (as known at extraction): RETRACTION: a prior zero-gravity / universal-wall claim in this lane is withdrawn here.
 

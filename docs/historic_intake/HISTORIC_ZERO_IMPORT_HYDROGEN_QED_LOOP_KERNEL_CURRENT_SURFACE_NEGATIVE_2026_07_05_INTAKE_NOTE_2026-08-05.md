@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply QED_LOOP_KERNEL_RETAINED; seven inputs are missing (FRAMEWORK_QED_PROPAGATOR_SURFACE_RETAINED, VACUUM_POLARIZATION_INTEGRAND_RETAINED, CHARGE_INSERTION_RULE_RETAINED, RENORMALIZATION_SUBTRACTION_RETAINED, WARD_IDENTITY_OR_CHARGE_CONSERVATION_RETAINED, owner ratification, audit acceptance).
 
-Original verdict: Support-only non-supply boundary; essentially the entire QED loop apparatus is unbuilt on the zero-import surface.
-Scope: The substrate-level QED loop kernel consumed by the Lane 2 alpha0 transport package.
-Escape conditions (negative claims): Supply a framework QED propagator surface, vacuum-polarization integrand, charge-insertion rule, renormalization subtraction and a Ward identity, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ QED loop-kernel terminal: the widest gap — seven inputs, essentially the entir
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; essentially the entire QED loop apparatus is unbuilt on the zero-import surface.
+- Extraction scope (triage compression; may reflect later context): The substrate-level QED loop kernel consumed by the Lane 2 alpha0 transport package.
+- Extraction escape conditions (negative claims; triage compression): Supply a framework QED propagator surface, vacuum-polarization integrand, charge-insertion rule, renormalization subtraction and a Ward identity, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the QED loop kernel; target discriminator 2511; consumed by the Lane 2 terminal 2509. The widest gap in the sweep (5 substantive missing inputs, none partially built).
 

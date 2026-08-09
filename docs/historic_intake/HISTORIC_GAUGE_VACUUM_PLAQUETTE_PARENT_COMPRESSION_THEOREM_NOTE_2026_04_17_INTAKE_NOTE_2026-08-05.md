@@ -18,10 +18,6 @@ required before any effective status.
 
 The one-clock Wilson object Z = Tr[T^L_t] is a parent partition object with two canonical descendants already on main: compression to the marked-plaquette source-cyclic sector giving T_src(6) = exp(3J) D_6 exp(3J) whose large-time state is the plaquette Perron state, and the topological Fourier descendant Z(theta) = sum_Q Z_Q e^{i theta Q} whose theta = 0 minimum is the strong-CP result.
 
-Original verdict: The plaquette Perron reduction and strong-CP positivity are not parallel slogans but descendant constructions from one parent object - the first Wilson-side step of the PF consistency program.
-Scope: Wilson surface only; does not support the stronger global claim that every live PF sector, especially PMNS, is a canonical projection of the same parent.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ Parent compression theorem: plaquette Perron and strong-CP positivity are descen
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The plaquette Perron reduction and strong-CP positivity are not parallel slogans but descendant constructions from one parent object - the first Wilson-side step of the PF consistency program.
+- Extraction scope (triage compression; may reflect later context): Wilson surface only; does not support the stronger global claim that every live PF sector, especially PMNS, is a canonical projection of the same parent.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Advances the PF program by ordering it: parent/compression first, then a possible PMNS descendant - explicitly not yet a common PF parent/projection theorem.
 

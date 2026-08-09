@@ -18,10 +18,6 @@ required before any effective status.
 
 PMNS TM2: the maximal-CP conclusion cannot be stated on the full algebraic TM2 endpoint surface, because at sin^2(theta_13)=2/3 one has c12=0, the phase coefficient 2 c12 s12 s13 vanishes, and the residual equation holds for every delta_CP. Planck daggered CAR: the fixed-background-dagger CAR equations are not invariant under arbitrary nonunitary similarity transformations preserving the Clifford relations, so P1 alone does not force daggered CAR unless a compatible Hermitian representative is chosen.
 
-Original verdict: Two prior conclusions are narrowed with explicit degeneracy/invariance counterarguments.
-Scope: The two repaired rows only.
-Escape conditions (negative claims): Choosing a compatible Hermitian representative restores the daggered-CAR conclusion.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Substantive correction of previously landed conclusions: the PMNS TM2 maximal-CP
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two prior conclusions are narrowed with explicit degeneracy/invariance counterarguments.
+- Extraction scope (triage compression; may reflect later context): The two repaired rows only.
+- Extraction escape conditions (negative claims; triage compression): Choosing a compatible Hermitian representative restores the daggered-CAR conclusion.
 - Extraction red flags: substantive correction of previously landed content: a maximal-CP conclusion is shown vacuous at a specific parameter point
 - Supersession (as known at extraction): CORRECTS two previously stated conclusions (maximal-CP on the TM2 endpoint surface; P1 forcing daggered CAR) that the sibling certificate identifies as landed notes now reset to unaudited
 

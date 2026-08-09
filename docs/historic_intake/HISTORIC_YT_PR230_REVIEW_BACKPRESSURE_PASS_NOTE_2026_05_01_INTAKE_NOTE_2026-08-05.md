@@ -18,10 +18,6 @@ required before any effective status.
 
 Dispositions five reviewer findings: the direct MC route has no production data (keep the strict runner blocked), the top mass parameter is tunable (demote to support-only with a calibrated-readout boundary unless an independent pin appears), the Ward/H-unit route is the audited-renaming trap (reject as proof input), Planck double-criticality is numerically promising (keep as a consequence map), and beta_lambda(M_Pl) = 0 is not derived (keep the stationarity no-gos as blockers).
 
-Original verdict: Open — the central retained claim stays blocked by open imports; PR #230 holds useful measurement and conditional-selector artifacts but no retained y_t closure.
-Scope: Backpressure disposition after the process challenge.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Review disposition: the top-mass parameter is TUNABLE — demoted on the record;
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Open — the central retained claim stays blocked by open imports; PR #230 holds useful measurement and conditional-selector artifacts but no retained y_t closure.
+- Extraction scope (triage compression; may reflect later context): Backpressure disposition after the process challenge.
 - Extraction red flags: Records that the lane's top-mass parameter is tunable, so the readout is calibrated rather than predicted unless an independent mass pin appears.
 - Supersession (as known at extraction): Supplies the review pass whose absence idx 2376 flagged; its 'top mass parameter is tunable' finding is the campaign's sharpest self-criticism.
 

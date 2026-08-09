@@ -18,10 +18,6 @@ required before any effective status.
 
 Five issues found while 3x-checking retained atlas items cited by the Koide Equivariant Berry-APS Selector package, notably that the retained gamma-orbit note's 'coordinate-closed' claim is fixed by an observational H_* witness rather than internally, and an M_* problem in the Higgs dressed-propagator script.
 
-Original verdict: None of the flags invalidate the proposed Koide closure, but several retained notes carry inaccuracies or missing caveats that should be fixed.
-Scope: Flags for reviewer attention on retained notes; explicitly not closure-blocking for the proposed Koide package.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Five named inaccuracies in retained atlas items cited by the Koide selector pack
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): None of the flags invalidate the proposed Koide closure, but several retained notes carry inaccuracies or missing caveats that should be fixed.
+- Extraction scope (triage compression; may reflect later context): Flags for reviewer attention on retained notes; explicitly not closure-blocking for the proposed Koide package.
 - Extraction red flags: Identifies a retained note whose 'coordinate-closed / no free internal parameters' status actually rests on an observational pin.
 - Supersession (as known at extraction): none recorded
 

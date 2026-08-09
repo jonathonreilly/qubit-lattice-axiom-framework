@@ -18,10 +18,6 @@ required before any effective status.
 
 Five attacks establish the assignment: T_1 (hw=1) and T_2 (hw=2) have reversed T_3 multiplicity and distinct charge sets (T_1: Q in {-1/3,+1/3,+1/3}; T_2: {-2/3,-2/3,+2/3}); Z_3-invariant circulant masses differ (r=0.5 gives T_1 eigenvalues {0.50,1.25,1.25} vs T_2 {1.75,1.75,2.50}, with 0/1000 random parameter scans matching); radiative corrections Delta_g = hw/pi^2 give exactly 0.1013 vs 0.2026 (ratio exactly 2); C = sigma_x^{tensor 3} maps T_1 <-> T_2 flipping T_3 and preserving Y; and anomaly cancellation is satisfied ONLY for opposite chirality (both-LH gives Tr[Y^3] = -32/9 and Tr[SU(3)^2 Y] = 2/3).
 
-Original verdict: Anomaly cancellation FORCES one orbit to carry matter and the other antimatter, and each orbit's three members are the three fermion generations — the assignment is canonical (37/37 checks pass).
-Scope: Follows from the algebraic structure of Cl(3) with Z_3 symmetry, not from convention or additional input; depends on the SU(3) commutant theorem, the Z_3 orbit decomposition and chiral completion.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Matter assignment forced by anomaly cancellation (T_1/T_2 reversed multiplicitie
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Anomaly cancellation FORCES one orbit to carry matter and the other antimatter, and each orbit's three members are the three fermion generations — the assignment is canonical (37/37 checks pass).
+- Extraction scope (triage compression; may reflect later context): Follows from the algebraic structure of Cl(3) with Z_3 symmetry, not from convention or additional input; depends on the SU(3) commutant theorem, the Z_3 orbit decomposition and chiral completion.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

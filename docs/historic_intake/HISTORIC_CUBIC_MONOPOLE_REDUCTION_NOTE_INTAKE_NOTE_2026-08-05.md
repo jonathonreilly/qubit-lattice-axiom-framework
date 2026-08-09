@@ -18,10 +18,6 @@ required before any effective status.
 
 For the finite-rank source class H_W = H_0 - P W P^T with O_h-invariant support operator and bare source, cubic symmetry is inherited exactly by the renormalized source and field, and in the exterior the dipole, quadrupole and octupole harmonics are all forbidden so the first anisotropic term is the unique cubic l = 4 mode.
 
-Original verdict: Strong-field exterior anisotropy is pushed to l = 4, buying a cleaner monopole reading without closing the near-source metric.
-Scope: Exact for the finite-rank O_h-invariant source class; the asymptotic monopole reduction is bounded.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact cubic-symmetry inheritance for the finite-rank source class with exterior 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Strong-field exterior anisotropy is pushed to l = 4, buying a cleaner monopole reading without closing the near-source metric.
+- Extraction scope (triage compression; may reflect later context): Exact for the finite-rank O_h-invariant source class; the asymptotic monopole reduction is bounded.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

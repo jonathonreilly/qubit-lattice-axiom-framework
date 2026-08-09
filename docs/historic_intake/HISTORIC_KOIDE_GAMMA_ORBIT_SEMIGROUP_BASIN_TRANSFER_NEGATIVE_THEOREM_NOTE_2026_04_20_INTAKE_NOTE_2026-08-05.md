@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The one-clock semigroup witness works identically on all five G1 competitors (Basin 1, Basin 2, Basin X, the CP-conjugate point and the C_neg q<0 point): each has a sharp threshold beta_c in (0,1), an exact Koide point Q = 2/3, and after one scale fit matches the PDG sqrt(m) direction with cosines agreeing to within ~4.3e-13 and max relative errors 1.9e-4 to 2.4e-4.
 
-Original verdict: The semigroup witness is a transport-style transfer mechanism on top of the G1 chamber data, not a selector of it, so the route inherits the open chamber/basin problem rather than solving it.
-Scope: Same competitor set as the transport no-go; does not claim a retained derivation of the chamber pin, of Q = 2/3, or an exclusion of the competitors from charged-lepton data alone.
-Escape conditions (negative claims): The negative is an indiscriminacy result: any escape must come from an independent selector of the G1 chamber pin, since every competitor reproduces the witness to near-machine precision.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Basin-transfer indiscriminacy no-go: the semigroup witness works identically on 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The semigroup witness is a transport-style transfer mechanism on top of the G1 chamber data, not a selector of it, so the route inherits the open chamber/basin problem rather than solving it.
+- Extraction scope (triage compression; may reflect later context): Same competitor set as the transport no-go; does not claim a retained derivation of the chamber pin, of Q = 2/3, or an exclusion of the competitors from charged-lepton data alone.
+- Extraction escape conditions (negative claims; triage compression): The negative is an indiscriminacy result: any escape must come from an independent selector of the G1 chamber pin, since every competitor reproduces the witness to near-machine precision.
 - Extraction red flags: Shows that a route previously read as an independent positive Koide avenue is degenerate across excluded competitors.
 - Supersession (as known at extraction): Closes the one-clock semigroup loophole left open after the positive semigroup reduction theorem; parallels the earlier transport basin-transfer no-go.
 

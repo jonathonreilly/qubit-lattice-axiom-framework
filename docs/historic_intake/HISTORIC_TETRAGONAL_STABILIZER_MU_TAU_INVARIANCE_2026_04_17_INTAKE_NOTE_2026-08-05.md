@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Proves Stab_{O_h}(e_1) = D_4h with |O_h|=48 and |D_4h|=16, and that D_4h contains sigma_v(2<->3), so any retained operator respecting cubic symmetry plus EWSB axis-1 selection assigns identical matrix elements to the (mu,tau) pair - the retained second-order return is structurally (m_e,m,m)-degenerate. This gives a one-identity explanation for the empirically observed failure of every sole-axiom-native operator to split mu-tau.
 
-Original verdict: PROPOSED symmetry theorem + runner; converts an empirical exhaustion into a structural corollary.
-Scope: Retained hw=1 triplet on the cubic Z^3 taste orbit, generation-axis basis; a symmetry-group statement, not a mass calculation.
-Escape conditions (negative claims): Explicit iff-condition: M splits mu-tau if and only if M fails to commute with sigma_v(2<->3), so any candidate primitive must break D_4h.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Proved symmetry no-go with runner: Stab_Oh(e_1)=D_4h (|48|/|16|) contains sigma_
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PROPOSED symmetry theorem + runner; converts an empirical exhaustion into a structural corollary.
+- Extraction scope (triage compression; may reflect later context): Retained hw=1 triplet on the cubic Z^3 taste orbit, generation-axis basis; a symmetry-group statement, not a mass calculation.
+- Extraction escape conditions (negative claims; triage compression): Explicit iff-condition: M splits mu-tau if and only if M fails to commute with sigma_v(2<->3), so any candidate primitive must break D_4h.
 - Extraction red flags: Duplicate-of-sibling risk: idx 10016 states the same theorem on the same day; a keep decision should probably retain one.
 - Supersession (as known at extraction): Near-duplicate in content of .claude/science/derivations/g5-s2-residual-symmetry-theorem-2026-04-17.md (idx 10016) - same D_4h/sigma_v identity, same date, different framing (S2 on axes {2,3} vs mu-tau species). Cites docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md, docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md, docs/CHARGED_LEPTON_KOIDE_G5_STATUS_NOTE_2026-04-17.md, docs/G1_PHYSICIST_G_MICROSCOPIC_AXIOM_LEVEL_NOTE_2026-04-17.md.
 

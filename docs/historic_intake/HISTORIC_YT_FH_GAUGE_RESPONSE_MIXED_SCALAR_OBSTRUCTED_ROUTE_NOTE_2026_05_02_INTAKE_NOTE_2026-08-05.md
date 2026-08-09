@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 With a mixed source pole phi = cos(theta) h + sin(theta) chi where chi couples to the top but not the W mass, the gauge-normalized ratio evaluates to y_h + y_chi tan(theta), not y_h; the executable countermodel holds the measured top slope, W slope, source overlap and Higgs overlap fixed while y_h takes 0.875, 1.25 and 1.625. PASS=7 FAIL=0.
 
-Original verdict: The gauge-normalized ratio equals the canonical Yukawa only after an extra purity premise; PR #230 closure needs a source-pole-equals-canonical-Higgs theorem, a theorem that orthogonal admixtures have zero top coupling, or an independent measurement of the orthogonal coupling.
-Scope: A boundary on the shortcut, not a no-go against the future response route.
-Escape conditions (negative claims): Three named premises, the third of which (measure the orthogonal top coupling) is what the tomography builder at idx 2171 instruments.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ W/Z gauge-normalized terminal: the ratio equals the canonical Yukawa only after 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gauge-normalized ratio equals the canonical Yukawa only after an extra purity premise; PR #230 closure needs a source-pole-equals-canonical-Higgs theorem, a theorem that orthogonal admixtures have zero top coupling, or an independent measurement of the orthogonal coupling.
+- Extraction scope (triage compression; may reflect later context): A boundary on the shortcut, not a no-go against the future response route.
+- Extraction escape conditions (negative claims; triage compression): Three named premises, the third of which (measure the orthogonal top coupling) is what the tomography builder at idx 2171 instruments.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the W/Z gauge-normalized cluster (2185-2188): the kappa_s cancellation survives but the identification does not.
 

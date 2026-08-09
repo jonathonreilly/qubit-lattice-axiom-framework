@@ -18,10 +18,6 @@ required before any effective status.
 
 Gives m_d/m_s = alpha_s(v)/n_pair = alpha_s(v)/2, m_s/m_b = [alpha_s(v)/sqrt6]^(6/5) and m_d/m_b = alpha_s(v)^(11/5)/(2 * 6^(3/5)) from alpha_s(v), n_pair = 2, n_quark = 2N_c = 6 and C_F - T_F = 5/6, with the CKM atlas giving |V_us| = sqrt(alpha_s(v)/2) and |V_cb| = alpha_s(v)/sqrt6 so that the GST identity |V_us|^2 = m_d/m_s and the 5/6 bridge |V_cb| = (m_s/m_b)^(5/6) become algebraic consequences. Runner PASS=55.
 
-Original verdict: Closes the CKM gate's imported-masses gap with two independent agreeing paths (cascade and atlas+identities), readable in either direction.
-Scope: No PDG quark masses enter either derivation path; PDG values are post-derivation comparators only. The 5/6 strong-coupling exponentiation mechanism remains bounded support with its non-perturbative derivation at g = 1 open.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Quark mass ratios from alpha_s(v) + exact integers via two independent agreeing 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Closes the CKM gate's imported-masses gap with two independent agreeing paths (cascade and atlas+identities), readable in either direction.
+- Extraction scope (triage compression; may reflect later context): No PDG quark masses enter either derivation path; PDG values are post-derivation comparators only. The 5/6 strong-coupling exponentiation mechanism remains bounded support with its non-perturbative derivation at g = 1 open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Supersedes DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE as the gate-closing route, upgrading it from bounded (bridges as inputs) to two independent derivations.
 

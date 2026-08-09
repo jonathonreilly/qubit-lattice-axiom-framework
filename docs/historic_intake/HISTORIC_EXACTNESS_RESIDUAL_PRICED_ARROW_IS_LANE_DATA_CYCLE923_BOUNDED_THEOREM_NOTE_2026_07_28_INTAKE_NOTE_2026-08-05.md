@@ -18,10 +18,6 @@ required before any effective status.
 
 The separatrix-vs-attractor tension dissolves: g(r) = sqrt(r/2) is exactly f^{-1} for f(r) = 2r^2 (symbolic; 1e-12 numerically), Fix(f) = Fix(g) = {0, 1/2}, and the multipliers 2 and 1/2 are reciprocal by the inverse-function rule for ANY invertible map; the 2-sector entropy is not a third dynamics but the Lyapunov function orienting the pair; and p^2/(p^2+(1-p)^2) = p iff p in {0,1/2,1}, so the four 'coincidences' are one fact.
 
-Original verdict: The exactness is UNEXPLAINED on the current surface, and the residual splits: its supported half is measure-free while its 'surprise' half is UNSTATABLE without a measure over realized states that the primitive forbids.
-Scope: Both maps are SUPPLIED, not derived, so no derived dynamics concentrates anywhere and every dynamical statement is arrow-conditional; an absolute firewall check (15 steps, zero violations) confirms nothing here derives or prefers r = 1/2.
-Escape conditions (negative claims): The new arrow-universality no-go (no surface arrow both concentrates onto 1/2 and leaves other registered settings persistent) has a named constructive escape: extra fixed points inside (0,1/2) or (1/2,1), verified real with planted fixed points at 1/4 and elsewhere. Stating the surprise half would require a measure over realized states that the realized-state primitive as written forbids.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Post-reset dissolution of the S6 tension: sharpen/therm exactly inverse with rec
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The exactness is UNEXPLAINED on the current surface, and the residual splits: its supported half is measure-free while its 'surprise' half is UNSTATABLE without a measure over realized states that the primitive forbids.
+- Extraction scope (triage compression; may reflect later context): Both maps are SUPPLIED, not derived, so no derived dynamics concentrates anywhere and every dynamical statement is arrow-conditional; an absolute firewall check (15 steps, zero violations) confirms nothing here derives or prefers r = 1/2.
+- Extraction escape conditions (negative claims; triage compression): The new arrow-universality no-go (no surface arrow both concentrates onto 1/2 and leaves other registered settings persistent) has a named constructive escape: extra fixed points inside (0,1/2) or (1/2,1), verified real with planted fixed points at 1/4 and elsewhere. Stating the surprise half would require a measure over realized states that the realized-state primitive as written forbids.
 - Extraction red flags: Emits one audit row for a comparator-digit convention dependence; discloses a self-caught hardcoded figure in a checker summary and that the lever reproduction uses its own seed rather than the source's draw.
 - Supersession (as known at extraction): Dissolves the S6 tension of the realized-state reduction note; discloses that the inverse identity itself was already published in the durability note's erasure-honesty item (2026-06-11), with only the S6 dissolution, Lyapunov orientation, coincidence deflation and arrow-universality no-go new.
 

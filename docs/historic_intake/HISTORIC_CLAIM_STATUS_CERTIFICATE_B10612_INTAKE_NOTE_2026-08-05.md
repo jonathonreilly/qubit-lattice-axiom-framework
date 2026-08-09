@@ -18,10 +18,6 @@ required before any effective status.
 
 A DEMOTION to bounded support because the missing uniform asymptotic theorem remains open.
 
-Original verdict: Demoted; closes the blocker at source level only.
-Scope: The lattice Green asymptotic row.
-Escape conditions (negative claims): The uniform asymptotic theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Explicit demotion on the record: an asymptotic-reading row is demoted to bounded
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Demoted; closes the blocker at source level only.
+- Extraction scope (triage compression; may reflect later context): The lattice Green asymptotic row.
+- Extraction escape conditions (negative claims; triage compression): The uniform asymptotic theorem.
 - Extraction red flags: Explicit demotion of an asymptotic claim to bounded support.
 - Supersession (as known at extraction): Demotes a row that previously read as an asymptotic result.
 

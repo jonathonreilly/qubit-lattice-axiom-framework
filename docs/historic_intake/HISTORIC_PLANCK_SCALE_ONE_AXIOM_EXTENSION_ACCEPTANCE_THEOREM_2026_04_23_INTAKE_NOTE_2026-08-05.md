@@ -18,10 +18,6 @@ required before any effective status.
 
 Formally promotes the information/Hilbert/locality surface to Axiom Extension P1 with five clauses (finite local Hilbert/event semantics, events are physical projectors, no hidden preparation in a source-free cell, no preferred primitive event absent a source, readout is not preparation), introducing no new constant, parameter or observed spacing. With P1 accepted the state-law step becomes a declared package extension giving rho_cell = I_16/16 and Tr(rho_cell P_A) = 1/4.
 
-Original verdict: The Planck branch accepts the one-axiom surface as a load-bearing axiom extension; the reviewer-safe wording is 'physical package plus Axiom Extension P1'.
-Scope: Governance note; P1 explicitly does not alter the carrier, cell dimension or packet projector, does not set a = l_P by assumption, and does not claim every interacting reduced state is tracial.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The honest package-boundary move: the one-axiom surface formally promoted to Axi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Planck branch accepts the one-axiom surface as a load-bearing axiom extension; the reviewer-safe wording is 'physical package plus Axiom Extension P1'.
+- Extraction scope (triage compression; may reflect later context): Governance note; P1 explicitly does not alter the carrier, cell dimension or packet projector, does not set a = l_P by assumption, and does not claim every interacting reduced state is tracial.
 - Extraction red flags: Records that the final Planck claim must NOT be worded as 'the older minimal ledger alone already derived the local state semantics' - an overclaim the branch had been at risk of.
 - Supersession (as known at extraction): Executes the package-boundary move demanded by the one-axiom acceptance hostile-review memo; P1 is then decomposed by PLANCK_SCALE_P1_DECOMPOSITION_AND_COUNTING_TRACE_REDUCTION.
 

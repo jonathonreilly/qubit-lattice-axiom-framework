@@ -18,10 +18,6 @@ required before any effective status.
 
 Characterizes what it would take to select rho_{p,q}(6), the beta=6 lane-killer: four retained no-gos cut the same freedom at four layers leaving one invariant residual freedom, and all five candidate selection mechanisms fail for file-grounded reasons, so closure requires a genuinely new input whose legitimacy is classified.
 
-Original verdict: A brutally honest PROVEN/CONDITIONAL/OPEN status with a single decisive next step: the lane cannot be closed by re-casting, only by new input.
-Scope: Frontier map only; closes nothing, asserts no value of <P>(6), proposes no mechanism as retained; the exact-coefficient runway (d_5..d_8) is exhausted.
-Escape conditions (negative claims): The structural fact that a re-cast cannot escape is argued explicitly; the escape named is the minimal required new input, with its legitimacy classification, plus possibly enumerating the weight-10+ supports.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The rho_{p,q}(6) selection-freedom characterization: four retained no-gos cut th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A brutally honest PROVEN/CONDITIONAL/OPEN status with a single decisive next step: the lane cannot be closed by re-casting, only by new input.
+- Extraction scope (triage compression; may reflect later context): Frontier map only; closes nothing, asserts no value of <P>(6), proposes no mechanism as retained; the exact-coefficient runway (d_5..d_8) is exhausted.
+- Extraction escape conditions (negative claims; triage compression): The structural fact that a re-cast cannot escape is argued explicitly; the escape named is the minimal required new input, with its legitimacy classification, plus possibly enumerating the weight-10+ supports.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Companion to the campaign capstone; consolidates the four retained underdetermination/hierarchy no-gos rather than adding a new wall.
 

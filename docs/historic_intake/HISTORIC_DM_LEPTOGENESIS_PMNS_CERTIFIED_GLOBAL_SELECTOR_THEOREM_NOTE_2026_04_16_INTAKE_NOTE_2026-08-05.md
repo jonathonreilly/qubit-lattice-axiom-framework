@@ -18,10 +18,6 @@ required before any effective status.
 
 On the reduced admissible PMNS-assisted N_e closure domain (the fixed native seed surface, reduced by an evenness argument to the real delta = 0 slice, hence the compact chart [0,1]^4), two independent exhaustive searches agree on three stationary closure branches with a unique lowest-action branch x = (0.471675, 0.553811, 0.664514), y = (0.208063, 0.464383, 0.247554), S_rel = 0.2409067..., eta/eta_obs = (1.0, 0.75917896, 0.48458840), positive projected tangent Hessian, and minimum action gap Delta S_min = 0.001812374006 to the next branch (S_rel = 0.242719075805; the third branch sits at 1.110657539338).
 
-Original verdict: The selector is the unique global minimum of the exact seed-relative effective action on the exact admissible PMNS-assisted N_e closure domain — the theorem-grade selector closure the DM gate needed.
-Scope: Certified on the reduced surface only; explicitly does not claim a closed-form analytic classification of every symbolic stationary component, and no separate larger-domain uniqueness theorem is asserted because the exact admissible domain is argued to already be the reduced surface.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ PMNS certified global selector (two independent certification routes) — BUT it
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The selector is the unique global minimum of the exact seed-relative effective action on the exact admissible PMNS-assisted N_e closure domain — the theorem-grade selector closure the DM gate needed.
+- Extraction scope (triage compression; may reflect later context): Certified on the reduced surface only; explicitly does not claim a closed-form analytic classification of every symbolic stationary component, and no separate larger-domain uniqueness theorem is asserted because the exact admissible domain is argued to already be the reduced surface.
 - Extraction red flags: The 'exhaustive' certification is a deterministic lattice cover plus local minimization on a compact chart, not a symbolic proof; the action gap to the runner-up branch is small (0.0018) and the runner-up sits at delta ~ -1e-3 rather than exactly on the claimed reduced slice.
 - Supersession (as known at extraction): Upgrades the earlier selector theorem from reduced-surface support / multistart evidence / branch-local closure to a certified global minimality claim.
 

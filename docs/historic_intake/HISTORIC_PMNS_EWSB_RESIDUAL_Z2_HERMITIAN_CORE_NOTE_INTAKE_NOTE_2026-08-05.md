@@ -18,10 +18,6 @@ required before any effective status.
 
 If the active branch inherits the EWSB residual Z_2 = {1, P_23}, then P_23 H_act P_23 = H_act is exactly equivalent to d_2 = d_3, r_12 = r_31, phi = 0, reducing the generic seven-coordinate grammar to the four-real core [[a,b,b],[b,c,d],[b,d,c]] with b >= 0, while the passive sector stays diagonal H_pass = diag(m_1^2, m_2^2, m_3^2).
 
-Original verdict: Yes conditionally - the seven-coordinate grammar splits into a four-coordinate aligned core plus three explicit breaking slots.
-Scope: Conditional refinement - the alignment itself is an explicit extra bridge condition, not derived; gives a piecewise H_nu/H_e law for the two one-sided branches.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The conditional alignment reduction: residual Z_2 <=> exact three-equation locus
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Yes conditionally - the seven-coordinate grammar splits into a four-coordinate aligned core plus three explicit breaking slots.
+- Extraction scope (triage compression; may reflect later context): Conditional refinement - the alignment itself is an explicit extra bridge condition, not derived; gives a piecewise H_nu/H_e law for the two one-sided branches.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The core theorem that the alignment-nonforcing and breaking-slot-nonrealization notes then scope as conditional.
 

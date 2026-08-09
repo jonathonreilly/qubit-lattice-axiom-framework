@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 No angle forces t = 1.2242 / r = 1/2; decisively, the cube heat kernel is exactly diagonal in the character/momentum basis (off-diagonal ~1e-16), and since the retained carrier identifies hw=1 generations as momentum/BZ-corner indices, in the PHYSICAL basis b = 0 and Q = 1/3 - the off-diagonal b lives only in the dual position-cube basis.
 
-Original verdict: The tanh^4(t) structure is a new, native, chirality-independent frame for the Koide ratio - genuinely outside the anticommuting no-go's scope since [Y, Gamma_chi] = 0 - but it is not a forcing of Q = 2/3.
-Scope: Five of seven panel angles returned structured output; lit comparators flagged as imports.
-Escape conditions (negative claims): The panel leaves one thread unforeclosed: whether a native cube normalization (not Koide input, not the dual position basis) can equalize the C_3 isotype weights at a derivable t.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Panel verdict: the cube heat kernel is exactly diagonal so nothing forces t — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The tanh^4(t) structure is a new, native, chirality-independent frame for the Koide ratio - genuinely outside the anticommuting no-go's scope since [Y, Gamma_chi] = 0 - but it is not a forcing of Q = 2/3.
+- Extraction scope (triage compression; may reflect later context): Five of seven panel angles returned structured output; lit comparators flagged as imports.
+- Extraction escape conditions (negative claims; triage compression): The panel leaves one thread unforeclosed: whether a native cube normalization (not Koide input, not the dual position basis) can equalize the C_3 isotype weights at a derivable t.
 - Extraction red flags: Catches a self-authored numerical label error and a wrong-escape-via-citation risk (Brannen's sqrt2 is imposed to match observed Koide, so adopting it would import the answer).
 - Supersession (as known at extraction): Verdict on FLAVOR_CASIMIR_HEAT_KERNEL_CORNER_COUPLING_NOTE (idx 476), correcting its label b/a = 2^-1/4 to b/a = 1/sqrt2 (2^-1/4 is tanh(t), one square root off).
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Because the Record axiom supplies no within-sector data, the rank-2 K/CPT doublet is read as one letter, so the record-native determinant is the block-count det_C(alpha P_s + beta P_d) = alpha*beta (each collection once), giving equal block power, r = 1/2 and Q = 2/3 — the fixed point of the label swap r -> 1/(4r). The alternative r=1 uses the rank-weighted det_R = alpha*beta^2, which consumes the within-sector rank the axiom disclaims and is privileged only by the unaudited full-U(3)/PRR import.
 
-Original verdict: r=1/2 is the import-free Record-native readout, so observing Q=2/3 is not a fine-tuned selection (runner SCORECARD 16/16 PASS).
-Scope: Closes the measure gate left open by GENERATION_RECORD_PARTITION_SELECTOR; claims an asymmetry (r=1/2 import-free vs r=1 import-dependent), not that r=1 is impossible. Adds no axiom, no fitted input, no audit verdict.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The record-native readout: the rank-2 K/CPT doublet reads as one letter, making 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): r=1/2 is the import-free Record-native readout, so observing Q=2/3 is not a fine-tuned selection (runner SCORECARD 16/16 PASS).
+- Extraction scope (triage compression; may reflect later context): Closes the measure gate left open by GENERATION_RECORD_PARTITION_SELECTOR; claims an asymmetry (r=1/2 import-free vs r=1 import-dependent), not that r=1 is impossible. Adds no axiom, no fitted input, no audit verdict.
 - Extraction red flags: Three honest residuals stated (carrier supplied not re-derived; within-doublet phase delta not fixed; no Born weighting asserted). Its central det_C/count-once reading is exactly what the same-day sibling (idx_pos 1074) argues is undefined for the physical symmetric mass operator.
 - Supersession (as known at extraction): Resolves the measure gate explicitly left open by GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05; in direct tension with the same-day sibling note at idx_pos 1074, which forecloses det_C/r=1/2 for charged leptons.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Two proposed negatives are REJECTED and withdrawn — the ambient eta mismatch (a floating-point proxy in the former runner, proxy withdrawn) and the endpoint-lift obstruction — and a third is declared outright FALSE: 'full Wilson/Clifford has no selector' fails because Gamma already splits M_zeta. Only the narrow claim survives: C*(D,U) contains no rank-one restriction on the frozen L = 3, r = 1, common-zeta zero-mode sector.
 
-Original verdict: Three of four proposed negatives withdrawn or falsified; one exact negative boundary retained.
-Scope: One frozen finite sector.
-Escape conditions (negative claims): Exhibit a nonscalar element of C*(D,U) or a rank-one M_zeta; derive a genuine stable eta mismatch in a separate claim; supply a separate endpoint theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Honest mass-withdrawal: three of four proposed negatives withdrawn or falsified,
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three of four proposed negatives withdrawn or falsified; one exact negative boundary retained.
+- Extraction scope (triage compression; may reflect later context): One frozen finite sector.
+- Extraction escape conditions (negative claims; triage compression): Exhibit a nonscalar element of C*(D,U) or a rank-one M_zeta; derive a genuine stable eta mismatch in a separate claim; supply a separate endpoint theorem.
 - Extraction red flags: A prior runner used a floating-point eta proxy to support a negative claim; that proxy is now withdrawn, and one companion negative is labelled false outright.
 - Supersession (as known at extraction): Withdraws a floating-point eta proxy from a former runner and marks one previously proposed no-go as FALSE.
 

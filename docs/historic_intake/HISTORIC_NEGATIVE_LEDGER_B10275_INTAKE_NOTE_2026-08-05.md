@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The most thorough no-go inventory in the stratum: the single missing object is rho_{p,q}(6), the boundary character measure / Perron eigenvector of the unmarked 3D spatial Wilson environment, and it is DOUBLY WALLED with no route escaping both - W-ALG, local character plus intertwiner data plus any one-parameter rho-family leave a combined Perron spread >= 0.1937 straddling 0.5934; and W-COMP, exact L_s>=3 contraction has treewidth >= 29 giving 8^30 intermediates (~1e19 GB, about 20 orders over budget) while naive Haar Monte Carlo is sign-problem-bound with integrand ~1e-100 needing ~1e200 samples. Twenty routes are catalogued with their exact numbers (M1 0.4225, M2 0.3333, M4 0.8740, M5 0.9259, L_s=2 variants 0.4291, K-tube 0.5888 at a 0.78% near-miss), and all five analytic routes are dead.
 
-Original verdict: Adds one new finite-geometry no-go from cycle 1: of all 5966 connected leaf-free distinct supports of total size 6, ZERO are SU(3) color-closable, so d_6 receives contributions only from the four order-5 cube shells via order-6 multiplicity.
-Scope: beta = 6 SU(3) Wilson plaquette closure; statuses are 2026-05-29 read-offs from docs/audit/data/audit_ledger.json and are flagged for re-verification before citing.
-Escape conditions (negative claims): Route 1 (d-log-Pade / conformal resummation of the connected-shell series) is the one long-shot the loop attacks; and the observable-bridge no-go's escape needs a NEW independently-audited primitive. Target-fit exponent closures for the 0.78% gap are explicitly rejected as importing an unproved correction.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,9 @@ The beta6/plaquette attack-surface no-go inventory: the single missing object is
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Adds one new finite-geometry no-go from cycle 1: of all 5966 connected leaf-free distinct supports of total size 6, ZERO are SU(3) color-closable, so d_6 receives contributions only from the four order-5 cube shells via order-6 multiplicity.
+- Extraction scope (triage compression; may reflect later context): beta = 6 SU(3) Wilson plaquette closure; statuses are 2026-05-29 read-offs from docs/audit/data/audit_ledger.json and are flagged for re-verification before citing.
+- Extraction escape conditions (negative claims; triage compression): Route 1 (d-log-Pade / conformal resummation of the connected-shell series) is the one long-shot the loop attacks; and the observable-bridge no-go's escape needs a NEW independently-audited primitive. Target-fit exponent closures for the 0.78% gap are explicitly rejected as importing an unproved correction.
 - Extraction red flags: Records that a 0.78% near-miss (K-tube 0.5888 vs 0.5934) was at risk of being closed by fitting exponents to the gap - explicitly rejected. Also records that importance-sampled Wilson MC at L_s=3 is FORBIDDEN because it would import the target value 0.5934.
 - Supersession (as known at extraction): Seeded from docs/BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md (PR #2245); cites roughly a dozen retained_bounded / retained_no_go / audited_conditional ledger rows by id.
 

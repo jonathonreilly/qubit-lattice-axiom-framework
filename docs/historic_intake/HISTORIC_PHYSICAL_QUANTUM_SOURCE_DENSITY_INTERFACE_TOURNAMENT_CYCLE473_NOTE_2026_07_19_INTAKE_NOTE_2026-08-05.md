@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 RARE SHIPPED (SCOPED) NO-GO: on actual Cycle-465/468 physical source fields, erasing the source and outputting only a deterministic pure mean field FAILS Gram preservation, and retaining the source unchanged while appending that field as a pure product ALSO fails Gram preservation for nonorthogonal states with different densities. Four alternatives survive with named costs: branch-controlled sourcing preserves the complete source Gram; a dephased Stinespring route exports a MIXED branch ledger; a finite multi-copy estimator is unbiased with nonzero finite-copy variance; and a Record-conditioned route needs a supplied actualized Record.
 
-Original verdict: Broad P1, Born, probability, gravity or framework no-go: FAIL. rho = |psi|^2 is a supplied candidate source functional; norm weight is not probability, and no occurrence, frequency law, Record formation, mass normalization, universal coupling or empirical gravity is derived.
-Scope: The licensed negative is exactly 'Scoped single-copy product-interface no-go: PASS' on the declared physical train/held state families and linear-isometry output contract — it is not the definition of every possible density interface.
-Escape conditions (negative claims): The no-go's own escape conditions are explicit: the theorem does not assume every density-source law must be a pure single-copy product, so branch-controlled sourcing, a mixed Stinespring ledger, multi-copy estimation and Record-conditioned preparation all remain lawful. 'That does not show density is impossible. It shows the theory must state' which route it takes.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Rare shipped scoped no-go: on actual physical source fields, erasing the source 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Broad P1, Born, probability, gravity or framework no-go: FAIL. rho = |psi|^2 is a supplied candidate source functional; norm weight is not probability, and no occurrence, frequency law, Record formation, mass normalization, universal coupling or empirical gravity is derived.
+- Extraction scope (triage compression; may reflect later context): The licensed negative is exactly 'Scoped single-copy product-interface no-go: PASS' on the declared physical train/held state families and linear-isometry output contract — it is not the definition of every possible density interface.
+- Extraction escape conditions (negative claims; triage compression): The no-go's own escape conditions are explicit: the theorem does not assume every density-source law must be a pure single-copy product, so branch-controlled sourcing, a mixed Stinespring ledger, multi-copy estimation and Record-conditioned preparation all remain lawful. 'That does not show density is impossible. It shows the theory must state' which route it takes.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Tests the weak-field gravity science's candidate rho_x = |alpha_x|^2 against the physical source fields of Cycles 465 (2808) and 468 (2812); one of the very few notes in this sweep that ships a PASS no-go at all, and it is tightly scoped.
 

@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 A pre-registered three-layer hypothesis (structural uniqueness of the ray, exact algebraic Koide Q=2/3, and a residual ratio fixed as an algebraic function of alpha_LM = 0.0907 matching m_mu/m_tau = 0.0594 and m_e/m_mu = 0.00484) with four falsification criteria and three composite nulls, which RESOLVES NEGATIVELY: the structural equivalence Q=2/3 <=> a_0^2 = 2|z|^2 is rigorously established as an algebraic identity (Theorem 1), but cone-forcing fails - six structural no-gos eliminate every retained non-Higgs-Yukawa mechanism and three framework-derived routes close negatively, leaving three sharply-named missing primitives.
 
-Original verdict: RESOLVED negatively; the charged-lepton sector closes by observational pin at the retained-map-plus-observational-promotion class with strict-review verdict TRUE_NO_PREDICTION.
-Scope: Retained Cl(3)-on-Z^3 surface, hw=1 triplet, minimal 3+1 APBC block.
-Escape conditions (negative claims): Three sharply-named missing primitives are left for future retention; the note also names the nulls that would have to be ruled out (algebraic permissiveness, RG radiative accident, numerical coincidence at ~1e-4).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Best-practice pre-registered negative: a three-layer hypothesis (structural uniq
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): RESOLVED negatively; the charged-lepton sector closes by observational pin at the retained-map-plus-observational-promotion class with strict-review verdict TRUE_NO_PREDICTION.
+- Extraction scope (triage compression; may reflect later context): Retained Cl(3)-on-Z^3 surface, hw=1 triplet, minimal 3+1 APBC block.
+- Extraction escape conditions (negative claims; triage compression): Three sharply-named missing primitives are left for future retention; the note also names the nulls that would have to be ruled out (algebraic permissiveness, RG radiative accident, numerical coincidence at ~1e-4).
 - Extraction red flags: Best-practice example in this stratum: falsifiers and nulls were written BEFORE the result and the hypothesis was then reported as failing. Note the tension with idx 10010's opening paragraph, which reads as a positive Koide derivation.
 - Supersession (as known at extraction): Pairs with .claude/science/derivations/charged-lepton-koide-cone-2026-04-17.md (idx 10010) as the derivation chain and CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md as the consolidated review package.
 

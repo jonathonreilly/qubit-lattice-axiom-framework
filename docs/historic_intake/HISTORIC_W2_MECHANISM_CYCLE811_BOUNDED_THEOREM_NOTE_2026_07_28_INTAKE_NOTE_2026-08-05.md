@@ -18,10 +18,6 @@ required before any effective status.
 
 Names the W2 boundary-0 mechanism SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT: for starts 1-9 the rule chain forces source_compute_word to execute at boundary (11 - start), after the last finalizer, leaving emission registers uncleared so the cleanliness phase cannot close; for start 10 source_finalizer_word at boundary 10 leaves every continuation non-clean. Verified 20/20 across all ten dead starts and both boundary-0 orders, with start 0 passing at 512 successes; the source row is necessary and existentially sufficient but not pathwise sufficient (1,536 of start 0's 2,048 assignments still fail, all localized to boundaries 0 and 10).
 
-Original verdict: The wall's full story is ceiling -> discriminator -> mechanism, all rule-derived: the source must speak before the finalizer closes the phase, and at ten of eleven starts it cannot.
-Scope: Cycle-752 battery under its landed rules; the counterfactual register-clearing surgery is a checker diagnostic, not a physics claim.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The W2 wall's complete mechanism: SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT, all r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The wall's full story is ceiling -> discriminator -> mechanism, all rule-derived: the source must speak before the finalizer closes the phase, and at ten of eleven starts it cannot.
+- Extraction scope (triage compression; may reflect later context): Cycle-752 battery under its landed rules; the counterfactual register-clearing surgery is a checker diagnostic, not a physics claim.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the W2 ordering sub-chain 752/783 -> 806 (idx 2107) -> 810 -> 811: converts the satisfiability ceiling into a named rule-level mechanism.
 

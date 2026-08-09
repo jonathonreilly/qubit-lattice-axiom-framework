@@ -18,10 +18,6 @@ required before any effective status.
 
 Of the twenty-one integers in the known bracket [108, 128] exactly eleven — the even ones — are realised, and evenness is forced by an exhibited hand-checkable object: a set of 228 sample points meeting every least-volume piece in a number of points congruent mod 2 to that piece's adjacency charge, with 228 even. The parity argument carries no constant term, so it never appeals to piece count or volume. A complete sweep of all 98 subgroups of the cell's 48 symmetries shows exactly one of the 12 subgroups of order at least 12 admits an invariant certificate (order 12), so the symmetry given up is index 4 exactly; and 2 is the sharp modulus by two independent routes — the eleven costs have gcd of differences 2, and mod 3 no certificate exists due to an exhibited local obstruction common to the cell.
 
-Original verdict: The cost spectrum is exactly the eleven even integers from 108 to 128, with the parity forced rather than observed.
-Scope: About this single cell only, proved by exhibiting a certificate for its 2672 pieces; says nothing about any other object; inputs are the lattice adjacency of MINIMAL_AXIOMS_2026-06-29 and nothing else.
-Escape conditions (negative claims): An earlier cycle's attempt at a parity law ACROSS objects was refuted and is not revived. The certificate was found by elimination and is not claimed unique or smallest. The mod-3 non-existence rests on an exhibited local obstruction rather than a failed search. The floor 108 and ceiling 128 are inherited from earlier cycles and re-verified, not re-derived. The eleven dissections are exhibited, not classified — the note does not say how many realise each cost.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The realised cost spectrum is exactly the eleven even integers in [108,128], par
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The cost spectrum is exactly the eleven even integers from 108 to 128, with the parity forced rather than observed.
+- Extraction scope (triage compression; may reflect later context): About this single cell only, proved by exhibiting a certificate for its 2672 pieces; says nothing about any other object; inputs are the lattice adjacency of MINIMAL_AXIOMS_2026-06-29 and nothing else.
+- Extraction escape conditions (negative claims; triage compression): An earlier cycle's attempt at a parity law ACROSS objects was refuted and is not revived. The certificate was found by elimination and is not claimed unique or smallest. The mod-3 non-existence rests on an exhibited local obstruction rather than a failed search. The floor 108 and ceiling 128 are inherited from earlier cycles and re-verified, not re-derived. The eleven dissections are exhibited, not classified — the note does not say how many realise each cost.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes the interior of the bracket left open by earlier cycles of the lane; the previous single-cost evenness result is generalized by Cycle 733.
 

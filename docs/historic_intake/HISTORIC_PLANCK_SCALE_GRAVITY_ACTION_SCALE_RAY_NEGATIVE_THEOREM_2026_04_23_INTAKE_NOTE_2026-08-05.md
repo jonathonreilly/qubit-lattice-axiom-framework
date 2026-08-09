@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 All retained closed relations are homogeneous under one global rescaling a -> lambda a: r_phys = a r_lat, m_phys = m_lat/a, G_phys = a^2 G_lat, Lambda_phys = Lambda_lat/a^2, V_4 = a^4 V_4,lat, R_phys = R_lat/a^2, so the admitted family fixes a SCALE RAY, not an absolute anchor. Newton's dimensionless observable, the EH-style action, the hierarchy product a v and the cosmology/graviton identity are all scale-invariant.
 
-Original verdict: No - the current admitted gravity/action family cannot fix the absolute lattice spacing.
-Scope: Absolute unit map only - explicitly not a regulator/continuum-limit claim; the physical-lattice reading is accepted and unaffected.
-Escape conditions (negative claims): Escaped only by introducing a genuinely new non-homogeneous, unit-bearing same-surface observable beyond the current admitted gravity/action family.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ THE scale-ray no-go: every retained relation is homogeneous under a -> lambda a 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - the current admitted gravity/action family cannot fix the absolute lattice spacing.
+- Extraction scope (triage compression; may reflect later context): Absolute unit map only - explicitly not a regulator/continuum-limit claim; the physical-lattice reading is accepted and unaffected.
+- Extraction escape conditions (negative claims; triage compression): Escaped only by introducing a genuinely new non-homogeneous, unit-bearing same-surface observable beyond the current admitted gravity/action family.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The load-bearing no-go cited by the gravity/action unit-map lane, the derivation program, the route check and the clean-closure criterion; it is what demotes lane 1 to a pinned-observable lane.
 

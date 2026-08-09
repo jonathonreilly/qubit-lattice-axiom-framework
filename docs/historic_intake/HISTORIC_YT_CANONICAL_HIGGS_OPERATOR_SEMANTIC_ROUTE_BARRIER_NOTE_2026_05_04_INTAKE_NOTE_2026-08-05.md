@@ -18,10 +18,6 @@ required before any effective status.
 
 Hardens the future O_H certificate gate beyond syntactic fields: candidates must supply non-shortcut identity and normalization references with accepted kinds, normalization_passed true, an accepted source_overlap_closure_mode, and forbidden_shortcut_audit_passed true, with the Ward theorem, H_unit candidate gate, static EW algebra, SM one-Higgs monomial selection, and the gates themselves all blocked as references. Gates PASS=11 and PASS=10.
 
-Original verdict: The firewall prevents the next bridge from accepting the same definition-as-derivation pattern that caused the Ward chain demotion.
-Scope: Gate hardening only, bounded-support; supplies no O_H, no C_sH/C_HH rows, and no physical y_t.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The anti-definition-as-derivation firewall: future O_H certificates must carry n
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The firewall prevents the next bridge from accepting the same definition-as-derivation pattern that caused the Ward chain demotion.
+- Extraction scope (triage compression; may reflect later context): Gate hardening only, bounded-support; supplies no O_H, no C_sH/C_HH rows, and no physical y_t.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL hardening step of the canonical-Higgs operator gate sub-chain; motivated explicitly by the earlier Ward chain demotion.
 

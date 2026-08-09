@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes the last reviewer blocker that Recipe-R was 'chosen, not forced', by proving a Clifford grade-preservation lemma - the set of X with [X,Gamma_mu] in the Gamma-span for all mu is exactly Z(Cl(n)) + Lambda^2(R^n) - so the intrinsic rotation characterization (C_rot) of the retained n=3 generators forces V_n = Lambda^2(R^n) = Recipe-R at every n. Runner certifies every step for n in {2,3,4,5,6} with THEOREM_PASS=52, SUPPORT_PASS=12, FAIL=0.
 
-Original verdict: RETAINED - Recipe-R is a derived family-scope rule, no longer an input axiom.
-Scope: Family-scope extension of the retained n=3 native-gauge identification under framework-native graph/eta-phase/taste rules on Z^n.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ TERMINAL of the 2026-04-17 native-gauge/Cl(3) chain: a Clifford grade-preservati
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): RETAINED - Recipe-R is a derived family-scope rule, no longer an input axiom.
+- Extraction scope (triage compression; may reflect later context): Family-scope extension of the retained n=3 native-gauge identification under framework-native graph/eta-phase/taste rules on Z^n.
 - Extraction red flags: The centre term Z(Cl(n)) is dropped from the forced answer by an extra nontriviality condition; and the whole ladder still rests on reading the retained n=3 theorem at a strength (no-selector) it did not itself claim.
 - Supersession (as known at extraction): TERMINAL of the 2026-04-17 native-gauge/Cl(3)-minimality chain (10011 -> 10012 -> 10022 -> 10021 -> 10023 -> 10007 -> 10025); anchors on docs/NATIVE_GAUGE_CLOSURE_NOTE.md.
 

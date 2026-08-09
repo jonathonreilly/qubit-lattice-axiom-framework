@@ -18,10 +18,6 @@ required before any effective status.
 
 The oriented generator is better than a convention: the matrix g used in the Q1 bridge IS the proper spatial C_3[111] rotation by +2pi/3 about the Z^3 body diagonal, and the taste-cube descent carries it to the charged triplet (U8|T1 = g, P1 Qf P1 = g, P1 Qb P1 = g^2), so delta_oriented = +2/9 comes from the spatial/taste carrier rather than hidden Q1 data.
 
-Original verdict: P_ORIENT is not fully closed — the honest boundary narrows from 'derive the oriented frame' to 'derive the microscopic full-cube source law that selects the forward oriented channel and the selected-line endpoint'.
-Scope: Bounded support: the orientation carrier is identified but the selected-line endpoint/source/readout law is not derived.
-Escape conditions (negative claims): Five current firewalls are listed (taste-cube microscopic source law open, physical-carrier reading gated by the staggered-Dirac target, based endpoint is additional physical data, APS+parity leaves the identification open, PMNS forward-cycle convention disclaims unique forward/backward selection).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ P_ORIENT advanced: the bridge generator g IS the proper spatial C_3[111] rotatio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): P_ORIENT is not fully closed — the honest boundary narrows from 'derive the oriented frame' to 'derive the microscopic full-cube source law that selects the forward oriented channel and the selected-line endpoint'.
+- Extraction scope (triage compression; may reflect later context): Bounded support: the orientation carrier is identified but the selected-line endpoint/source/readout law is not derived.
+- Extraction escape conditions (negative claims; triage compression): Five current firewalls are listed (taste-cube microscopic source law open, physical-carrier reading gated by the staggered-Dirac target, based endpoint is additional physical data, APS+parity leaves the identification open, PMNS forward-cycle convention disclaims unique forward/backward selection).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Advances the P_ORIENT half of the last-mile cascade from 'convention' to 'bounded support' while leaving its closure open.
 

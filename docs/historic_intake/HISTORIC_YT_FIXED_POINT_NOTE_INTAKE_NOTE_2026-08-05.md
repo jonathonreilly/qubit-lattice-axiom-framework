@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 With R = y_t^2/g_3^2 the 1-loop system gives dR/dt = (2 g_3^2/16 pi^2) R [(9/2) R - 1], so the Pendleton-Ross quasi-IR fixed point is R* = 2/9 (y_t/g_3 = 0.4714), while the Cl(3) trace identity gives R_lattice = 1/(2 N_c) = 1/6 — a ratio R*/R_lattice = 4/3 exactly and a 15.5% discrepancy in y_t/g_3.
 
-Original verdict: The lattice boundary condition is NOT at the IR fixed point, so the 'double protection' hypothesis is false.
-Scope: 1-loop SM beta functions in the QCD-only limit.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Quasi-fixed-point coincidence refuted: the lattice boundary is NOT at the IR fix
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The lattice boundary condition is NOT at the IR fixed point, so the 'double protection' hypothesis is false.
+- Extraction scope (triage compression; may reflect later context): 1-loop SM beta functions in the QCD-only limit.
 - Extraction red flags: Refutes a previously entertained 'double protection' framing for the framework's flagship y_t relation.
 - Supersession (as known at extraction): Refutes a coincidence hypothesis that would have made the Cl(3) ratio doubly protected; consistent with the y_t attack tables at idx 2075.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Under axioms U1-U5 (object-class locality, positivity, normalization C(I) = 1, finite additivity, atomic naturality) the coefficient functional is uniquely the normalized counting trace C(P) = rank(P)/16, so C(P_A) = 4/16 = 1/4. Explicitly distinguishes U5 from the old U(2)^4 basis-gauge claim.
 
-Original verdict: The counting trace is forced if the Planck coefficient is a primitive universal additive/natural count; the remaining denial is an object-class denial.
-Scope: Uniqueness within the primitive universal coefficient object class; does not claim every physical density matrix is tracial.
-Escape conditions (negative claims): The remaining denial is 'why should the Planck coefficient be a universal primitive count rather than a dynamical expectation value?', answered by the primitive-coefficient object-class theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The counting-trace uniqueness theorem (U1-U5): the coefficient functional is uni
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The counting trace is forced if the Planck coefficient is a primitive universal additive/natural count; the remaining denial is an object-class denial.
+- Extraction scope (triage compression; may reflect later context): Uniqueness within the primitive universal coefficient object class; does not claim every physical density matrix is tracial.
+- Extraction escape conditions (negative claims; triage compression): The remaining denial is 'why should the Planck coefficient be a universal primitive count rather than a dynamical expectation value?', answered by the primitive-coefficient object-class theorem.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Central uniqueness theorem of the packet; its U5 clause is discharged upstream by the atomic-naturality theorem and its counting reading by the P1 decomposition.
 

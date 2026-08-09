@@ -18,10 +18,6 @@ required before any effective status.
 
 The pullback M -> Phi M Phi^dag along the S_3-equivariant isometry Phi: C^8 -> C^{L^3} (|alpha> -> BZ-corner state) is a unital *-algebra homomorphism restricting to a bijection End(C^8)^{S_3} = End(Phi(C^8))^{S_3}, so every S_3-invariant theorem on the taste cube transports verbatim to the BZ-corner subspace — including dim 20, the 20 = 10+10 and 20 = 6+14 decompositions, the mass-matrix no-go spectrum (alpha, alpha, alpha+beta), and the hw=1/hw=2 iso.
 
-Original verdict: Airtight (Grind Program Batch 6, 25/25 PASS) — a single citable transport result replacing per-result re-derivation in site-phase language.
-Scope: Even L; BZ-corner subspace of C^{L^3} only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Airtight intertwiner pullback transport (25/25) — a single citable result repl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Airtight (Grind Program Batch 6, 25/25 PASS) — a single citable transport result replacing per-result re-derivation in site-phase language.
+- Extraction scope (triage compression; may reflect later context): Even L; BZ-corner subspace of C^{L^3} only.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Batch 6 of the Grind Program; extends the Batch 1 intertwiner from single operators to full S_3-invariant algebraic structure and transports Batches 3, 4 and 5 wholesale.
 

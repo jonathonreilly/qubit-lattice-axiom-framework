@@ -18,10 +18,6 @@ required before any effective status.
 
 Stratifies the lane into five epistemic layers: A (orbit algebra 1+1+3+3) EXACT and unconditional, B (EWSB 1+2 split) EXACT given EWSB, C (taste-physicality) BOUNDED with five in-framework arguments (36/0 PASS) whose conditionality is relocated rather than removed, D (Z_3 superselection) BOUNDED and exact only in the isotropic limit - which the lane wants broken for mass splitting and CKM - and E (mass hierarchy) BOUNDED at order-of-magnitude.
 
-Original verdict: Generation physicality is not closed; the conditionality has moved from a separate taste-physicality axiom to the Cl(3) framework as starting axiom, but has not vanished.
-Scope: Paper-safe wording is fixed as 'exact 1+2 split; bounded 1+1+1 hierarchy model; generation physicality still open'.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,8 @@ The five-layer epistemic stratification — the paper-safe surface that supersed
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Generation physicality is not closed; the conditionality has moved from a separate taste-physicality axiom to the Cl(3) framework as starting axiom, but has not vanished.
+- Extraction scope (triage compression; may reflect later context): Paper-safe wording is fixed as 'exact 1+2 split; bounded 1+1+1 hierarchy model; generation physicality still open'.
 - Extraction red flags: Points out a self-undercutting tension: the Z_3 superselection argument is exact only in the isotropic limit, which the lane deliberately breaks to obtain mass splitting and CKM mixing.
 - Supersession (as known at extraction): The layer-graded successor to the lane's competing closure claims; carries an explicit 'The paper MUST NOT claim' section.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Claims the two posited principles together force r = 1/2: irreversibility restricts recordable content to the 2 frozen sector labels and six independent minimum-information readings (Shannon, MDL, Landauer, Jeffreys, Kolmogorov, sufficient-statistic) all converge on the type/block-count weight (1,1), while the token reading (1,2) is excluded both as non-frozen and as having strictly less Shannon entropy than uniform; 50/50 PASS.
 
-Original verdict: FORCED-MODULO-TWO-POSITS: a clean closure modulo two named physical principles, explicitly not bare-axiom-native since the Record axiom's scope excludes arrow, persistence and any store-the-least optimization.
-Scope: The 2-sector recordable content; the irreversibility half is used from the sister branch, not re-derived.
-Escape conditions (negative claims): Both principles are labelled posits; the note states neither alone forces r = 1/2 and does not claim derivation from the bare Lattice/Quantum/Record axioms.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ r = 1/2 FORCED-MODULO-TWO-POSITS: irreversibility + dimension-blind count — th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): FORCED-MODULO-TWO-POSITS: a clean closure modulo two named physical principles, explicitly not bare-axiom-native since the Record axiom's scope excludes arrow, persistence and any store-the-least optimization.
+- Extraction scope (triage compression; may reflect later context): The 2-sector recordable content; the irreversibility half is used from the sister branch, not re-derived.
+- Extraction escape conditions (negative claims; triage compression): Both principles are labelled posits; the note states neither alone forces r = 1/2 and does not claim derivation from the bare Lattice/Quantum/Record axioms.
 - Extraction red flags: The forcing rests on two principles the note itself classifies as outside the approved Record axiom's scope, and r = 1/2 is left as a Tier-A admitted input regardless.
 - Supersession (as known at extraction): FAMILY TERMINAL for the 2026-06-04 r = 1/2 attack arc: it closes the type/token bit left open by idx 1777, which in turn sharpened idx 1767, after three adjacency-geometry attacks failed.
 

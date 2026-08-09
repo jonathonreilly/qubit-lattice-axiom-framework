@@ -18,10 +18,6 @@ required before any effective status.
 
 TERMINAL of the Cycle-507 trio: a finite size-specific reversible compiler family joining the coherent Cycle-441/451 nine-M2 register x eight-M2 controller, a separately supplied two-M2 D/A program, a five-M2 common profile identity, two independently prepared equal ell=2 echo/rollover corridors and retained endpoint bindings, giving E*G_coarse = G_physical*E with EXACT represented-state and inverse residual ZERO in every executed train and blind-held primary row. The receiver-zero and local-mode-7 sectors are never replaced by a selected classical receiver bit and remain together in the same coherent joint state.
 
-Original verdict: Does NOT derive why D is prepared on train and A on held, and does not derive lapse, proper time, occurrence, a Record or actuality; receiver squared norms are diagnostics only.
-Scope: Uses NO host-selected corridor length, host cadence, decoder schedule, beta-to-program lookup, squared-norm threshold or receiver lookup.
-Escape conditions (negative claims): Broad no-go gate FAIL / DO NOT SHIP; six normalized routes with four open/untested, and finite response compilation, D/A law genesis, bounded-radius scaling, Record occurrence, continuum metric and conserved stress all remain INDEPENDENT.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ TERMINAL of the Cycle-507 trio: finite size-specific reversible compiler family 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Does NOT derive why D is prepared on train and A on held, and does not derive lapse, proper time, occurrence, a Record or actuality; receiver squared norms are diagnostics only.
+- Extraction scope (triage compression; may reflect later context): Uses NO host-selected corridor length, host cadence, decoder schedule, beta-to-program lookup, squared-norm threshold or receiver lookup.
+- Extraction escape conditions (negative claims; triage compression): Broad no-go gate FAIL / DO NOT SHIP; six normalized routes with four open/untested, and finite response compilation, D/A law genesis, bounded-radius scaling, Record occurrence, continuum metric and conserved stress all remain INDEPENDENT.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the trio (preflight 3039 -> train 3040 -> final 3038); composes Cycle 451's (idx 3036) co-registered dual clock with Cycle 504's (idx 2779) rollover carriers.
 

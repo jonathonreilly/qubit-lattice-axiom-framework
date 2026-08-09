@@ -18,10 +18,6 @@ required before any effective status.
 
 Of the eleven non-trivial column-subset costs on the single cell (2672 pieces), ten obey a parity law with certificates found by exact elimination, and the eleventh — the full spacetime cost reading all four columns — provably does not: four pieces are exhibited covering 228 sample points exactly twice with costs summing to the odd number 25. The odd part is carried entirely by tick-coupled pairs (the full cost equals spatial cost plus corner pairs stepping in the tick and exactly one lattice direction on all 2672 pieces; dropping that term leaves the identity on only 64). The spacetime floor is 144, attained by the 24 monotone paths, with 15800 minimising dissections drawing from exactly 192 of the 400 least-cost pieces (four whole symmetry orbits, each necessary), and every one of the 379200 single-piece holes over those minimisers has a unique filler.
 
-Original verdict: The parity law is a property of the proper subsets of the columns, and the full spacetime cost is the single member of the family that escapes it — while being the one that behaves best under minimisation.
-Scope: About this single cell only, proved by exhibiting certificates for its 2672 pieces; says nothing about any other object; the ceiling of the spacetime cost is not addressed at all and the 13 exhibited values are not a spectrum claim; the surviving-piece pool is measured by complete search, not derived by any rule.
-Escape conditions (negative claims): The parity failure is not a failure to find a certificate but a hard obstruction (an explicit odd-sum double cover), scoped to this cell. The note records that an earlier cycle's attempt at a parity law ACROSS objects was refuted and is not revived. Certificates were found by elimination so none is claimed minimal, and the law is stated as robust to which certificate is used.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Ten of eleven column-subset costs obey a parity law by exact elimination; the el
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The parity law is a property of the proper subsets of the columns, and the full spacetime cost is the single member of the family that escapes it — while being the one that behaves best under minimisation.
+- Extraction scope (triage compression; may reflect later context): About this single cell only, proved by exhibiting certificates for its 2672 pieces; says nothing about any other object; the ceiling of the spacetime cost is not addressed at all and the 13 exhibited values are not a spectrum claim; the surviving-piece pool is measured by complete search, not derived by any rule.
+- Extraction escape conditions (negative claims; triage compression): The parity failure is not a failure to find a certificate but a hard obstruction (an explicit odd-sum double cover), scoped to this cell. The note records that an earlier cycle's attempt at a parity law ACROSS objects was refuted and is not revived. Certificates were found by elimination so none is claimed minimal, and the law is stated as robust to which certificate is used.
 - Extraction red flags: Notes that the two minimum principles are not the same: every spacetime minimiser also has least spatial cost, but the converse is refuted by an exhibited dissection.
 - Supersession (as known at extraction): Generalizes the previous cycle's single-cost evenness certificate to the whole eleven-member column family; inherits (re-verified, not re-derived) the previous cycle's 1792-piece spatial floor support.
 

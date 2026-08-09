@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposes the 184 vs 173 GeV overshoot into competing effects: a 1-loop baseline at +1.1%, the 1-loop to 2-loop RGE step at +9.2 GeV (+5.3%), and threshold corrections from n_f decoupling at -7.0 GeV (-4.1%), leaving a net +4.2 GeV (+2.4%). The full 6.5% appears only when 2-loop running is used without thresholds — an inconsistent approximation.
 
-Original verdict: The overshoot is not a single source, and the best consistent estimate is a residual 2.4% rather than 6.5%.
-Scope: Diagnostic, 9 PASS 0 FAIL; the boundary condition itself contributes 0% error.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The overshoot decomposition: the widely quoted 6.5% figure came from inconsisten
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The overshoot is not a single source, and the best consistent estimate is a residual 2.4% rather than 6.5%.
+- Extraction scope (triage compression; may reflect later context): Diagnostic, 9 PASS 0 FAIL; the boundary condition itself contributes 0% error.
 - Extraction red flags: Shows that the widely quoted 6.5% figure came from an inconsistent approximation (2-loop running without thresholds).
 - Supersession (as known at extraction): Reduces the headline gap that idx 2334, 2335, 2337 all try to close by matching, and that idx 2142 instead closes by re-scheming.
 

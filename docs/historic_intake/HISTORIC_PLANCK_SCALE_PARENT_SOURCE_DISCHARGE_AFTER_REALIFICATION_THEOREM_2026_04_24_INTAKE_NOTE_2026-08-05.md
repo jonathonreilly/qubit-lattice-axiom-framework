@@ -18,10 +18,6 @@ required before any effective status.
 
 Once canonical realified B3 is accepted the gravity sector lives on the same primitive one-cell boundary surface via Hom_R(Z^3 tensor_Z R, Cl_1(3)), and eight conditions (locality, one-step support, additivity, time-completeness, spatial isotropy, unit valuation, multiplicity retention, no source-free scalar characters) force B_parent = (H_A, P_A) uniquely; the hidden affine character delta I has no slot in the derived response, so delta = 0 and nu - lambda_min(L_Sigma) = 1/4.
 
-Original verdict: No - after realified B3 the parent-source object class is no longer an independent physical assumption.
-Scope: Conditional on accepting B3 realification; the only way to reopen the objection is to reject realification itself.
-Escape conditions (negative claims): Escaped (i.e. the objection reopens) only by rejecting B3 Clifford realification as canonical.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Parent-source discharge after realified B3: eight conditions collapse the object
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No - after realified B3 the parent-source object class is no longer an independent physical assumption.
+- Extraction scope (triage compression; may reflect later context): Conditional on accepting B3 realification; the only way to reopen the objection is to reject realification itself.
+- Extraction escape conditions (negative claims; triage compression): Escaped (i.e. the objection reopens) only by rejecting B3 Clifford realification as canonical.
 - Extraction red flags: The discharge inherits the realification scope-widening flagged in the B3 lane - it converts an object-class postulate into a consequence of an envelope choice.
 - Supersession (as known at extraction): Directly answers PLANCK_SCALE_PARENT_SOURCE_NATURALITY_OBSTRUCTION_THEOREM, which it concedes was correct before B3 closed; terminal note of the parent-source sub-lane.
 

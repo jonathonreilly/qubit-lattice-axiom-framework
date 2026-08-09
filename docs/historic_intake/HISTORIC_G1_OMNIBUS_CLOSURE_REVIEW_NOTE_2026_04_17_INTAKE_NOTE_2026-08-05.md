@@ -20,10 +20,6 @@ required before any effective status.
 
 Eleven runners (PASS = 305, FAIL = 0) in four movements: Schur forces the scalar baseline D = m I_3; a ten-run obstruction tour proves no sole-axiom functional can pin (delta, q_+); closure comes instead from diagonalizing H(m,delta,q_+) into PMNS observables and letting observational PMNS pin the unique chamber point (0.657061, 0.933806, 0.715042); the side-effect is a falsifiable prediction sin(delta_CP) = -0.9874, delta_CP ~ -81 degrees, |J| = 0.0328.
 
-Original verdict: G1 closes at publication-grade closure-via-observation, explicitly NOT claiming the DM flagship cascade is fully sole-axiom.
-Scope: Closure is via observational promotion, not sole-axiom; the DM flagship gate retains one open ingredient (the selector principle).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ G1 OMNIBUS terminal: 305 PASS across four movements — closure-via-observation 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): G1 closes at publication-grade closure-via-observation, explicitly NOT claiming the DM flagship cascade is fully sole-axiom.
+- Extraction scope (triage compression; may reflect later context): Closure is via observational promotion, not sole-axiom; the DM flagship gate retains one open ingredient (the selector principle).
 - Extraction red flags: Ten of eleven runners are obstructions; the single closure is an observational pin, so the headline 'CLOSED' rests on inserting measured PMNS values.
 - Supersession (as known at extraction): TERMINAL/index note for the G1 family: the single reviewer entry point pulling together all eleven runners and their theorem notes; promotes PMNS from atlas-open to retained as f(H) on the chamber.
 

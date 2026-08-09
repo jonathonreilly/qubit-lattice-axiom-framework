@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Three routes blocked: claiming full mass-spectrum retention (the note itself denies full quark closure, charged-lepton derivation, sharp PMNS point predictions and derived eta); treating Phase 5 cosmology as zero-import (eta imported, alpha_GUT bounded); and treating charged-lepton Koide compatibility as a derivation (Phase 3 enters the charged-lepton sector as a bounded pin and does not derive Koide from sole retained axioms).
 
-Original verdict: Three routes closed with revisit conditions.
-Scope: The mass-spectrum aggregate.
-Escape conditions (negative claims): Revisit only with theorem-grade closures for the named blockers, promotion of the imported inputs, or one of the named primitive closures for Koide.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Route memory guarding the landed mass-spectrum note: full-retention promotion bl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Three routes closed with revisit conditions.
+- Extraction scope (triage compression; may reflect later context): The mass-spectrum aggregate.
+- Extraction escape conditions (negative claims; triage compression): Revisit only with theorem-grade closures for the named blockers, promotion of the imported inputs, or one of the named primitive closures for Koide.
 - Extraction red flags: Confirms independently of the April Koide notes that charged-lepton Koide is a bounded pin, not a derivation.
 - Supersession (as known at extraction): none recorded
 

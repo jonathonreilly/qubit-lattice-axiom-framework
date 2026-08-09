@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Separates three mechanisms conflated under 'det_C/signed' and shows only the third fixes r: the Berezin determinant (forced) and the signed readout (native) give Q = (1+2r)/3 for every r, while the doublet complex-vs-real counting is the actual selector and is an unforced import; a continuous U(1)_b is shown incompatible with C^3 = I; 31/31 PASS.
 
-Original verdict: RELOCATES-TO-DIRAC-NATURE-IMPORT: the signed-measure chain does not derive r = 1/2; the selection lives entirely on the doublet complex-counting axis.
-Scope: Charged-lepton r = 1/2 selector on the open staggered-Dirac realization gate; comparators only, no PDG proof inputs.
-Escape conditions (negative claims): Names one sharp search: a derived continuous horizontal/flavor U(1) rephasing b relative to a while reconcilable with C^3 = I, which must also reproduce the whole sector ordering (leptons 2/3 < down 0.73 < up 0.85).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The three-mechanism separation: Berezin (forced), signed readout (not forcing), 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): RELOCATES-TO-DIRAC-NATURE-IMPORT: the signed-measure chain does not derive r = 1/2; the selection lives entirely on the doublet complex-counting axis.
+- Extraction scope (triage compression; may reflect later context): Charged-lepton r = 1/2 selector on the open staggered-Dirac realization gate; comparators only, no PDG proof inputs.
+- Extraction escape conditions (negative claims; triage compression): Names one sharp search: a derived continuous horizontal/flavor U(1) rephasing b relative to a while reconcilable with C^3 = I, which must also reproduce the whole sector ordering (leptons 2/3 < down 0.73 < up 0.85).
 - Extraction red flags: Notes the quark sector directly refutes the naive 'charged -> det_C -> 2/3' rule, since up/down are charged Dirac fermions at Q = 0.849 and 0.731.
 - Supersession (as known at extraction): Sharpens the Dirac-vs-Majorana framing by showing a Majorana 3-generation mass operator is singular, so that fork is not operative; reproduces and refines the det_C-vs-det_R four-cell fork note.
 

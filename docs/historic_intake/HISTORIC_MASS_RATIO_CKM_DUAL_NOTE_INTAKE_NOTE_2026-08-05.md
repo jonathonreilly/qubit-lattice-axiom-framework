@@ -18,10 +18,6 @@ required before any effective status.
 
 Seven charged-fermion mass ratios expressed as powers of alpha_s(v) = 0.1033 with exponents from four exact framework integers (C_F = 4/3, T_F = 1/2, N_c = 3, n_pair = 2). Down-type (retained): m_d/m_s = alpha_s/2 = 0.05165 (+3.3%), m_s/m_b = [alpha_s/sqrt(6)]^(6/5) = 0.02239 (+0.2%), m_d/m_b = 0.001156 (+3.5%). Up-type (bounded): m_c/m_t = 0.007463 (+1.5%), m_u/m_c = 0.001735 (+2.0%). Leptons (bounded): m_mu/m_tau = alpha_s^(5/4) = 0.05857 (-1.5%), m_e/m_mu = alpha_s^(7/3) = 0.005007 (+3.5%).
 
-Original verdict: All match at the few-percent level (23/23, 15/15, 14/14 PASS); down-type is retained at the promoted CKM atlas bar, up-type and leptons are bounded.
-Scope: No observed masses used as derivation inputs; the up-type inter-sector relations (m_c m_b = m_s m_t/N_c, 2 m_u m_b^2 = m_d m_s m_t) and the lepton exponents 5/4 and 7/3 are empirically discovered patterns with exact framework-constant labels, not first-principles derivations.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Seven charged-fermion mass ratios as powers of alpha_s(v) with exponents from fo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): All match at the few-percent level (23/23, 15/15, 14/14 PASS); down-type is retained at the promoted CKM atlas bar, up-type and leptons are bounded.
+- Extraction scope (triage compression; may reflect later context): No observed masses used as derivation inputs; the up-type inter-sector relations (m_c m_b = m_s m_t/N_c, 2 m_u m_b^2 = m_d m_s m_t) and the lepton exponents 5/4 and 7/3 are empirically discovered patterns with exact framework-constant labels, not first-principles derivations.
 - Extraction red flags: Two disclosed costs: the m_s/m_b agreement is scale-convention dependent (+0.2% at PDG mixed scales but -11% when both are run to mu = m_b, stated as an open question); and leptons are color singlets with no derived mechanism connecting alpha_s to their masses, with the predicted masses degrading the Koide match from 0.001% to 0.18%.
 - Supersession (as known at extraction): none recorded
 

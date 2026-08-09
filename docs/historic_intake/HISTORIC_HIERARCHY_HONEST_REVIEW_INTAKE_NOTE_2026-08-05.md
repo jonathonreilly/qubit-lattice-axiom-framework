@@ -18,10 +18,6 @@ required before any effective status.
 
 Three errors invalidate the v = 226 GeV match: (1) Sigma_1 ~ 6.0 has no lattice-integral basis (exact I_stag(4) = 0.619734, d*I_stag = 2.479; the needed 3.81 corresponds to nothing known); (2) with framework GUT-normalized couplings at M_Pl (g_2 = 0.65, sin^2 theta_W = 3/8) the CW coefficient flips to B > 0 so EWSB does not trigger (|B_gauge/B_top| = 1.37); (3) the chain derives y_t = 0.439 but step 6 silently uses the SM y_t = 0.9369, without which v = 45 GeV not 226 GeV.
 
-Original verdict: v is NOT derived — the framework gets the right order of magnitude via a legitimate mechanism, but the exact match was an artifact of mutually compensating errors.
-Scope: Top-to-bottom review of the hierarchy derivation chain at M_Pl; corrects three specific inputs and recomputes v under each.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Erratum-grade: v = 226 GeV is NOT derived — three errors identified including 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): v is NOT derived — the framework gets the right order of magnitude via a legitimate mechanism, but the exact match was an artifact of mutually compensating errors.
+- Extraction scope (triage compression; may reflect later context): Top-to-bottom review of the hierarchy derivation chain at M_Pl; corrects three specific inputs and recomputes v under each.
 - Extraction red flags: Erratum-grade: explicitly identifies a smuggled observed input (y_t = 0.9369) and a fabricated constant (Sigma_1 ~ 6.0 attributed to a Luscher-Weisz value it does not have).
 - Supersession (as known at extraction): Retrospective correction of the earlier hierarchy derivation chain (v = 226 GeV claim); includes a claim/status/corrected table.
 

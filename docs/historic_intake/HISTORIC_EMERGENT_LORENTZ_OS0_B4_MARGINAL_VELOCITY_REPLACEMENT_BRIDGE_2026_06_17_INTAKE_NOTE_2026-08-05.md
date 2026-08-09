@@ -20,10 +20,6 @@ required before any effective status.
 
 On the OS0 branch, signed-permutation B4 fixes the diagonal marginal kinetic vector (c_0,c_1,c_2,c_3) to the one-dimensional subspace c_0 = c_1 = c_2 = c_3 (versus dimension two under spatial O_h alone), so c_t p_t^2 + c_s(p_x^2+p_y^2+p_z^2) with c_t != c_s is not an invariant marginal operator and its coefficient is zero to all perturbative orders.
 
-Original verdict: Exact support giving downstream OS0 rows a clean marginal-velocity-protection route that does not consume the older conditional one-loop RG packet.
-Scope: Consumes the kinetic-isotropy primitive and the supplied all-orders B4 regulated action/measure package; covers marginal OS0 protection only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Exact import-retirement: signed-permutation B4 forces the isotropic marginal kin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact support giving downstream OS0 rows a clean marginal-velocity-protection route that does not consume the older conditional one-loop RG packet.
+- Extraction scope (triage compression; may reflect later context): Consumes the kinetic-isotropy primitive and the supplied all-orders B4 regulated action/measure package; covers marginal OS0 protection only.
 - Extraction red flags: Explicitly leaves open the continuous-time/non-isotropic horn, non-perturbative effects, taste-breaking surfaces, SME bound comparison, and any absolute Lorentz closure.
 - Supersession (as known at extraction): Import-retirement note: retires the one-loop velocity RG, physical fixed-point anomalous dimension, hierarchy damping estimate and Collins-gate reduction for the OS0 branch, with a downstream citation rule to cite this bridge instead of the older packet (which is bypassed, not promoted).
 

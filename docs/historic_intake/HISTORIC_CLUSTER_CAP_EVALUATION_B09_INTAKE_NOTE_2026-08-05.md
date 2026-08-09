@@ -18,10 +18,6 @@ required before any effective status.
 
 Discloses and corrects a discrepancy: B08's evaluator FILE named matrix fibers open WITHOUT the outside-toolkit label, but B08's PR BODY included 'matrix-fiber envelopes' in its outside-toolkit sentence — that PR-body judgment was wrong and is corrected here, with the sibling's scalar-fiber source-scoping also corrected and flagged on its PR. Marginal value RAISED by a lens round: the CT note's kernel is block-valued (declares U(1) AND SU(2) backgrounds), so the sibling's scalar feed covers only the abelian case and this block is required for SU(2) (n_f = 2); the direct exact-pair envelope 293 n_f K is sharper than the inherited 585 n_f K.
 
-Original verdict: PROCEED; the fiber item reduces to one elementary exact lemma verified on seven instances.
-Scope: Family after nine landed PRs.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Correction of landed PR content: block08's PR BODY carried 'matrix-fiber' scopin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PROCEED; the fiber item reduces to one elementary exact lemma verified on seven instances.
+- Extraction scope (triage compression; may reflect later context): Family after nine landed PRs.
 - Extraction red flags: a landed PR body contained an incorrect outside-toolkit judgment and an incorrect source-scoping; both corrected retroactively here
 - Supersession (as known at extraction): CORRECTS LANDED CONTENT: a wrong scoping sentence in block08's PR body and the sibling's scalar-fiber source-scoping, both flagged on the original PR.
 

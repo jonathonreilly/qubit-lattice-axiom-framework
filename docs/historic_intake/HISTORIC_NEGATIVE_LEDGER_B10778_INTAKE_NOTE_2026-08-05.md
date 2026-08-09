@@ -18,10 +18,6 @@ required before any effective status.
 
 The route 'TM2 + mu-tau modulus forces CP at every allowed endpoint' is FALSE: at sin^2(theta_13) = 2/3, c12 = 0 so the phase multiplier vanishes and the equation becomes independent of delta_CP. The branch does not attempt to derive trimaximal or mu-tau residuals from framework physics; the note remains a conditional algebra lemma.
 
-Original verdict: An endpoint forcing claim is falsified by an explicit degenerate point.
-Scope: Endpoint CP forcing under TM2 plus mu-tau.
-Escape conditions (negative claims): Excluding the sin^2(theta_13) = 2/3 endpoint restores the forcing statement on the remaining domain.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Falsification by explicit endpoint: the route 'TM2 + mu-tau modulus forces CP at
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An endpoint forcing claim is falsified by an explicit degenerate point.
+- Extraction scope (triage compression; may reflect later context): Endpoint CP forcing under TM2 plus mu-tau.
+- Extraction escape conditions (negative claims; triage compression): Excluding the sin^2(theta_13) = 2/3 endpoint restores the forcing statement on the remaining domain.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): FALSIFIES a stated CP-forcing route.
 

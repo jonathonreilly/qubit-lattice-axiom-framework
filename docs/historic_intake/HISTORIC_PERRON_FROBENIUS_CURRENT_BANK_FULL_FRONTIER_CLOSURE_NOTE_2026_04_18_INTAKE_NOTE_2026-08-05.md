@@ -18,10 +18,6 @@ required before any effective status.
 
 All three current-bank PF frontier certificates are now negatively closed: the sharpest Wilson reopening route reduces to one local nilpotent-chain 1+1 certificate that the current bank does not realize, and the PMNS-native and plaquette certificates are likewise unrealized.
 
-Original verdict: Current-bank status is fully closed NEGATIVELY; future-theory status keeps Wilson as the main plausible reopening lever under stronger science.
-Scope: Current-bank status only.
-Escape conditions (negative claims): Wilson remains the main plausible reopening lever under stronger science.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ All three PF frontier certificates NEGATIVELY closed on the current bank — the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Current-bank status is fully closed NEGATIVELY; future-theory status keeps Wilson as the main plausible reopening lever under stronger science.
+- Extraction scope (triage compression; may reflect later context): Current-bank status only.
+- Extraction escape conditions (negative claims; triage compression): Wilson remains the main plausible reopening lever under stronger science.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal current-bank closure of the PF frontier chain, sharpening idx_pos 1263 after the Wilson lane closed at the local 1+1 level.
 

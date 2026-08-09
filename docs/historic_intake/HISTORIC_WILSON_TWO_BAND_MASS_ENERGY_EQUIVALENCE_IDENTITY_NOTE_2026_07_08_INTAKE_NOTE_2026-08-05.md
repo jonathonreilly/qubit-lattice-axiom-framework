@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Executing the staggered no-go's named Wilson escape removes the zone obstruction (band origins (k*_1, k*_2) = (0,0) at every gated point, volume-stable) and gets four of eight gated points fully valid at N=8 with identity ratios 1.042-1.254, but the purpose-built N=10 volume spot at the best point refutes convergence: ratio_I moves 1.042 -> 2.211 (drift 1.17 against tolerance 0.10) and c21 0.863 -> 0.652, with N=10 band-2 failing the own-frame rise condition. The Wilson O(a) speed artifact is measured separately (c_1^2 = 1.12-1.19 at m=0.2, 1.25-1.39 at m=0.4, relaxing to 0.92/0.94 at strong coupling).
 
-Original verdict: The ED route to the two-band identity test is closed on both kernels: the wall is spectral density versus volume, and near-1 identity values at a single volume are finite-size accidents.
-Scope: d = 1 gauged Wilson comparator at ED-reachable sizes (N <= 10 Wilson, N <= 16 staggered) with these operator tags; the identity itself is untested, not refuted.
-Escape conditions (negative claims): Three named escapes: (a) tensor-network/DMRG at N ~ 40-100, called THE route; (b) fit-free identity observables (form-factor/boost matrix elements) needing only P = 0 states; (c) smeared variational tag bases to push the mixing scale down at fixed volume.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Two-kernel two-band terminal: the wall is exponential ED cost, not physics — t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The ED route to the two-band identity test is closed on both kernels: the wall is spectral density versus volume, and near-1 identity values at a single volume are finite-size accidents.
+- Extraction scope (triage compression; may reflect later context): d = 1 gauged Wilson comparator at ED-reachable sizes (N <= 10 Wilson, N <= 16 staggered) with these operator tags; the identity itself is untested, not refuted.
+- Extraction escape conditions (negative claims; triage compression): Three named escapes: (a) tensor-network/DMRG at N ~ 40-100, called THE route; (b) fit-free identity observables (form-factor/boost matrix elements) needing only P = 0 states; (c) smeared variational tag bases to push the mixing scale down at fixed volume.
 - Extraction red flags: Records and rejects its own steelman (gating the four valid N=8 points would 'launder finite-size accidents into a claim') and documents two supervisor spec bugs from run 1 (cache print tolerance; an O(a^2) artifact gate applied to an O(a) kernel).
 - Supersession (as known at extraction): TERMINAL of the two-kernel two-band identity chain (staggered energy-ordered -> staggered tagged x3 -> Wilson ported -> Wilson corrected + N=10 leg); explicitly leaves the gated positive separation/universality/classification/source-law results (#5067-#5071) untouched.
 

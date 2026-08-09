@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Converged diagnosis after 12+ cycles: under A1+A2 plus retained inventory of origin/main (2026-05-26) plus standard math, the lepton generation phase delta and quark CP phase eta are NOT derivable — three independent walls (Lindemann-Weierstrass, sector orthogonality of 23+ retained items, boundary-condition exhaustion); one structural gap with two-sector applicability; candidate PR package with runner PASS=35 FAIL=0; zero PRs opened per lane policy.
 
-Original verdict: converged bounded no-go; PASS=35 FAIL=0; decisions deferred to user
-Scope: native-only derivability of delta and eta; three closing positions P1-P3 named
-Escape conditions (negative claims): new retained content at P1 (non-Q-algebraic radian source), P2 (re-expression substrate), or P3 (sector coupling)
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Pulled AS PART OF THE WITHDRAWAL SET (with 11538 and 11534): the converged 12-cy
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): converged bounded no-go; PASS=35 FAIL=0; decisions deferred to user
+- Extraction scope (triage compression; may reflect later context): native-only derivability of delta and eta; three closing positions P1-P3 named
+- Extraction escape conditions (negative claims; triage compression): new retained content at P1 (non-Q-algebraic radian source), P2 (re-expression substrate), or P3 (sector coupling)
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

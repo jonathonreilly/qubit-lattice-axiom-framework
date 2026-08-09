@@ -18,10 +18,6 @@ required before any effective status.
 
 The prompt's z = q_+ + i delta is a chart artifice (q_+ is a Z_3 singlet, delta a real slice of the doublet), so Im(z^3) is not a retained invariant; the correct doublet-phase coordinate A(H) = Tr(H T_{d,w}) = 3 delta + i sqrt(3) m gives the real Z_3-invariant delta-ODD polynomial 2 Re(A^3) = 54 delta(delta^2 - m^2).
 
-Original verdict: PARTIAL - the Case 3 impossibility theorem's delta-evenness claim holds only for Hermitian-operator insertions, so its scope needs refinement rather than retraction.
-Scope: Drops assumption A1.2 (that the affine (m,delta,q_+) chart is the right parametrization); the delta-odd invariant is built from non-Hermitian operator insertions.
-Escape conditions (negative claims): The parent impossibility theorem survives only if the retained observable class is restricted to Hermitian-operator insertions; admitting the broader operator class (non-Hermitian C_3-eigenvector insertions T_{d,w}) produces an explicit real Z_3-invariant delta-odd polynomial and breaks delta-evenness.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Genuine counterexample refining a retained theorem's scope: Im(z^3) is a chart a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PARTIAL - the Case 3 impossibility theorem's delta-evenness claim holds only for Hermitian-operator insertions, so its scope needs refinement rather than retraction.
+- Extraction scope (triage compression; may reflect later context): Drops assumption A1.2 (that the affine (m,delta,q_+) chart is the right parametrization); the delta-odd invariant is built from non-Hermitian operator insertions.
+- Extraction escape conditions (negative claims; triage compression): The parent impossibility theorem survives only if the retained observable class is restricted to Hermitian-operator insertions; admitting the broader operator class (non-Hermitian C_3-eigenvector insertions T_{d,w}) produces an explicit real Z_3-invariant delta-odd polynomial and breaks delta-evenness.
 - Extraction red flags: Finds a genuine counterexample to the parent theorem's delta-evenness claim under a broader operator class; also notes a cited prerequisite note does not exist on the atlas.
 - Supersession (as known at extraction): Proposes a candidate refinement to the SCOPE of DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md and includes a 'Revised impossibility theorem status' section.
 

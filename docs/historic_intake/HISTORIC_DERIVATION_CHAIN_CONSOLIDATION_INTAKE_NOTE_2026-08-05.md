@@ -18,10 +18,6 @@ required before any effective status.
 
 Audits the full logical DAG from the single axiom to all derived results, identifying six shared intermediate nodes (the no-continuum-limit theorem used by five lanes, Cl(3) Gamma_5 centrality, KS tensor structure, anomaly cancellation, the gauge algebra with hypercharge, and the bipartite/Ward structure) and five places where the same result is derived twice without cross-reference.
 
-Original verdict: Two high-priority consolidations are needed — a single no-continuum-limit theorem and a single Cl(3) center lemma — since key lanes (notably g_bare = 1) depend on the former as an assumption while citing it only in passing.
-Scope: Structural audit of April lanes; proposes consolidation targets ranked by priority and a minimal axiom count by tier.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The full derivation-DAG audit: six shared intermediate nodes identified with the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two high-priority consolidations are needed — a single no-continuum-limit theorem and a single Cl(3) center lemma — since key lanes (notably g_bare = 1) depend on the former as an assumption while citing it only in passing.
+- Extraction scope (triage compression; may reflect later context): Structural audit of April lanes; proposes consolidation targets ranked by priority and a minimal axiom count by tier.
 - Extraction red flags: Documents that the g_bare derivation uses no-continuum-limit as Assumption 3 without citing the five-argument proof it relies on.
 - Supersession (as known at extraction): none recorded
 

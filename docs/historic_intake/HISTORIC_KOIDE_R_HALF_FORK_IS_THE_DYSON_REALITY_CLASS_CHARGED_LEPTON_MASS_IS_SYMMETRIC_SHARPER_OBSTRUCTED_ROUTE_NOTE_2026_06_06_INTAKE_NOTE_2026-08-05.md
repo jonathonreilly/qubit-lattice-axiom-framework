@@ -18,10 +18,6 @@ required before any effective status.
 
 Reframes the det_C-vs-det_R fork as the Dyson reality class: det_C (count once, r=1/2, Q=2/3) IS the Pfaffian and requires an antisymmetric structure with K^2=-1, but the K/CPT-real generation mass M = aI + bC + conj(b)C^2 is Hermitian with distinct real doublet eigenvalues a - b_r -/+ sqrt(3) b_i, and any J commuting with diag(l1,l2), l1 != l2, is diagonal so J^2 >= 0. Electric charge independently forbids a Delta Q = -2 Majorana bilinear for a charge -1 lepton, forcing det_R and r=1 (Q=1).
 
-Original verdict: The det_C lever that would have derived r=1/2 is foreclosed for charged leptons; the framework's native readout forces r=1 (Q=1) and the empirical Q=2/3 becomes a derived partial-falsification (runner sympy 12/12 exact).
-Scope: Charged leptons only; explicitly does not apply to neutrinos (neutral, so Delta Q = 0 Majorana mass is allowed), making the Dyson-class reframe a prediction surface there. Sharper obstruction, not a metaphysical impossibility theorem.
-Escape conditions (negative claims): The honest residual named is the formal AC_phi-lambda staggered realization exhibiting the realized charged-lepton corner mass as a Dirac bilinear at lattice level — but that residual cannot evade charge conservation, so the escape is narrow and charge-foreclosed.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Dyson-class foreclosure: det_C IS the Pfaffian and needs K^2 = -1 the charged-le
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The det_C lever that would have derived r=1/2 is foreclosed for charged leptons; the framework's native readout forces r=1 (Q=1) and the empirical Q=2/3 becomes a derived partial-falsification (runner sympy 12/12 exact).
+- Extraction scope (triage compression; may reflect later context): Charged leptons only; explicitly does not apply to neutrinos (neutral, so Delta Q = 0 Majorana mass is allowed), making the Dyson-class reframe a prediction surface there. Sharper obstruction, not a metaphysical impossibility theorem.
+- Extraction escape conditions (negative claims; triage compression): The honest residual named is the formal AC_phi-lambda staggered realization exhibiting the realized charged-lepton corner mass as a Dirac bilinear at lattice level — but that residual cannot evade charge conservation, so the escape is narrow and charge-foreclosed.
 - Extraction red flags: Self-describes the campaign goal as falsified ('the empirical Q=2/3 is the framework's partial-falsification'); stands in direct tension with the same-day sibling note (idx_pos 1075) that argues r=1/2 IS the record-native readout.
 - Supersession (as known at extraction): Explicitly corrects an over-optimistic earlier salvage (the 'det_C natively available via chirality grading, gated only on AC_phi-lambda' reading in KOIDE_R_HALF_INDEX_READOUT_...2026-06-05) as too strong; forecloses that note's one open lever. Directly contradicts the sibling record-native note at idx_pos 1075.
 

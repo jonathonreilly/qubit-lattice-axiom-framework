@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The gravity bridge extends beyond compact support to exponentially localized tails and steep algebraic tails with p > 5, but fails for generic long-range tails: for p <= 3 even the monopole is ill-defined, and for 3 < p <= 5 the monopole is finite while the second-moment/shell-stress closure is not, leaving the bridge action tail-sensitive.
 
-Original verdict: Sharp obstruction: the bridge cannot be widened to arbitrary noncompact long-range support without a new nonlocal or tensorially broader bridge principle.
-Scope: Four tail classes tested on the same box (exponential, p = 5.5, p = 5.0, p = 4.5 and 2.5); also covers time-dependent sources.
-Escape conditions (negative claims): The negative is a moment-convergence threshold at p = 5, not an impossibility — a new nonlocal or tensorially broader bridge principle escapes it, and all sufficiently fast-decaying (p > 5 or exponential) sources are already covered.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Sharp scoped obstruction: the gravity bridge extends to exponential and p>5 alge
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Sharp obstruction: the bridge cannot be widened to arbitrary noncompact long-range support without a new nonlocal or tensorially broader bridge principle.
+- Extraction scope (triage compression; may reflect later context): Four tail classes tested on the same box (exponential, p = 5.5, p = 5.0, p = 4.5 and 2.5); also covers time-dependent sources.
+- Extraction escape conditions (negative claims; triage compression): The negative is a moment-convergence threshold at p = 5, not an impossibility — a new nonlocal or tensorially broader bridge principle escapes it, and all sufficiently fast-decaying (p > 5 or exponential) sources are already covered.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

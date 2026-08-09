@@ -18,10 +18,6 @@ required before any effective status.
 
 Classifies six classes of apparent time-travel construction (directed causal cycle/fixed point, CTC global consistency, postselection/final boundary, advanced-field future boundary, multi-time nonlocal support constraints, full Loschmidt reversal) and shows each obtains its late-to-early dependence only by importing structure outside the retained single-clock local-data surface.
 
-Original verdict: The chronology lane should remain a boundary-protection lane: it classifies imports and preserves the strict no-operational-past-signaling claim.
-Scope: Intentionally conditional: does not rule out every CTC spacetime and does not disprove postselected models — it classifies them as conditional-subensemble or final-boundary theories absent a retained local mechanism.
-Escape conditions (negative claims): Each class is escapable by supplying a retained local mechanism rather than the imported structure; the note explicitly declines to claim CPT, T or U(-t) are false.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Six-class classification of apparent time-travel constructions with per-class im
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The chronology lane should remain a boundary-protection lane: it classifies imports and preserves the strict no-operational-past-signaling claim.
+- Extraction scope (triage compression; may reflect later context): Intentionally conditional: does not rule out every CTC spacetime and does not disprove postselected models — it classifies them as conditional-subensemble or final-boundary theories absent a retained local mechanism.
+- Extraction escape conditions (negative claims; triage compression): Each class is escapable by supplying a retained local mechanism rather than the imported structure; the note explicitly declines to claim CPT, T or U(-t) are false.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

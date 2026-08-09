@@ -18,10 +18,6 @@ required before any effective status.
 
 Single-source consolidation of the whole DM lane: the 13-step chain to R = Omega_DM/Omega_b = 5.48 (observed 5.47) counts 4 EXACT, 7 DERIVED, 2 BOUNDED (g_bare = 1, k = 0), with eta = 6.12e-10 the only observational input. Alternative approaches give R = 5.66 / 5.32 / 5.48 / 5.56.
 
-Original verdict: The DM relic mapping gate remains BOUNDED.
-Scope: Cl(3) on Z^3 staggered Hamiltonian; statuses graded at the paper bar per review.md and the Codex canonical claim ledger.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -65,6 +61,8 @@ The DM lane's master accounting: 13-step chain scored 4 EXACT / 7 DERIVED / 2 BO
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The DM relic mapping gate remains BOUNDED.
+- Extraction scope (triage compression; may reflect later context): Cl(3) on Z^3 staggered Hamiltonian; statuses graded at the paper bar per review.md and the Codex canonical claim ledger.
 - Extraction red flags: Many sub-rows self-flag BOUNDED: v_w (detonation problem), C_tr calibration imported from FHS 2006, a 15% shortfall, transport imported.
 - Supersession (as known at extraction): Self-describes as superseding no individual note but serving as the map to all of them (lane-level index, not terminal).
 

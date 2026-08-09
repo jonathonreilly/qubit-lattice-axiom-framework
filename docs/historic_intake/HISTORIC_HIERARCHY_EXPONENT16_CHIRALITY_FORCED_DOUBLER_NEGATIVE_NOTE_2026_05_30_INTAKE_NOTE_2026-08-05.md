@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The hierarchy exponent 16 = 2^4 (the 4D staggered taste-doubler count, primitive P2) is NOT forced by anomaly-exact chirality on the derived Euclidean-time axis: the framework's realized vector-like staggered chirality epsilon(x) = (-1)^{x1+x2+x3} (acting as k4 -> k4 + pi) does not anticommute with the Wilson b-term, since 1 - cos(k4+pi) = 1 + cos(k4) leaves residual 2 != 0, so b is not forced to zero and the pi-doubler is not forced.
 
-Original verdict: The chirality route to 16 is pruned; realized staggered epsilon-chirality is Wilson-compatible (Kahler-Dirac), so reaching 16 still requires importing a substrate-external regulator choice.
-Scope: One discrete Euclidean-time axis with the most general hermitian translation-invariant nearest-neighbour kernel D(k4) = a gamma4 sin(k4) + b (1 - cos(k4)); prunes only the 'anomaly forces time -> forces doubler -> forces 2^4 = 16' route and does not claim 16 is wrong.
-Escape conditions (negative claims): The no-go depends on chirality being realized as the vector-like 3D sublattice parity epsilon rather than an anticommuting per-site gamma5; an idealized anticommuting gamma5 WOULD force b = 0 ({1,gamma5} = 2 gamma5 != 0), but is barred by NO_PER_SITE_CHIRALITY (Cl(3) pseudoscalar omega = i I_2 is central) — so the escape is a chirality operator outside the per-site Cl(3) construction, or importing an external regulator choice.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ No-go: the hierarchy exponent 16 is NOT forced by anomaly-exact chirality (reali
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The chirality route to 16 is pruned; realized staggered epsilon-chirality is Wilson-compatible (Kahler-Dirac), so reaching 16 still requires importing a substrate-external regulator choice.
+- Extraction scope (triage compression; may reflect later context): One discrete Euclidean-time axis with the most general hermitian translation-invariant nearest-neighbour kernel D(k4) = a gamma4 sin(k4) + b (1 - cos(k4)); prunes only the 'anomaly forces time -> forces doubler -> forces 2^4 = 16' route and does not claim 16 is wrong.
+- Extraction escape conditions (negative claims; triage compression): The no-go depends on chirality being realized as the vector-like 3D sublattice parity epsilon rather than an anticommuting per-site gamma5; an idealized anticommuting gamma5 WOULD force b = 0 ({1,gamma5} = 2 gamma5 != 0), but is barred by NO_PER_SITE_CHIRALITY (Cl(3) pseudoscalar omega = i I_2 is central) — so the escape is a chirality operator outside the per-site Cl(3) construction, or importing an external regulator choice.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Tightens primitive P2 of HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10 without changing its status; defers the import question to HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.
 

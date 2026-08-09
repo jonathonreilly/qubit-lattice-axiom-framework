@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Diagnoses a fundamental non-unitarity: the transfer-matrix spectral radius exceeds 1 at ALL field strengths (1.27 at f=0.5, maximal 1.98 at f=1, symmetric about f=1), transmission after 20 layers rises to 6.9e+5 at f=1, and wavepackets inside r_h are amplified 30-130x rather than trapped, so the f=1 surface AMPLIFIES instead of absorbing.
 
-Original verdict: Honest negative: the framework does not contain strong-field GR or any black-hole analog, and its gravitational predictions are reliable only for f < 0.1.
-Scope: Discrete path-sum propagator with cos^2 kernel and 1/L^p attenuation; horizon radius fit r_h = 0.048*ms + 0.76 (R^2 = 0.986) versus expected 0.080*ms.
-Escape conditions (negative claims): Two named escapes: a normalized kernel that enforces unitarity, or a field equation that self-consistently limits f < 1; a true horizon would require an amplitude-attenuation mechanism absent from S = L(1-f).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The non-unitarity diagnosis: transfer spectral radius > 1 at ALL field strengths
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Honest negative: the framework does not contain strong-field GR or any black-hole analog, and its gravitational predictions are reliable only for f < 0.1.
+- Extraction scope (triage compression; may reflect later context): Discrete path-sum propagator with cos^2 kernel and 1/L^p attenuation; horizon radius fit r_h = 0.048*ms + 0.76 (R^2 = 0.986) versus expected 0.080*ms.
+- Extraction escape conditions (negative claims; triage compression): Two named escapes: a normalized kernel that enforces unitarity, or a field equation that self-consistently limits f < 1; a true horizon would require an amplitude-attenuation mechanism absent from S = L(1-f).
 - Extraction red flags: Reclassifies a previously reported 'Hawking analog' amplification as a propagator normalization artifact, and restricts the validity of the framework's headline gravity results to f < 0.1.
 - Supersession (as known at extraction): Reinterprets the earlier Hawking analog result (norm growth 1.0 to 164) as the same non-unitarity, and narrows the validity range of all weak-field gravity rows to f < 0.1.
 

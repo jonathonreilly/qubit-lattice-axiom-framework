@@ -18,10 +18,6 @@ required before any effective status.
 
 A ten-line algebraic proof: staggered Dirac zeros at the 2^d BZ corners, Wilson mass m(p) = 2 hw(p), grouping 1+3+3+1 in d = 3, so the lightest nonzero level has degeneracy C(3,1) = 3 with the three species at distinct lattice momenta hence exactly distinguishable by translation invariance - and C(d,1) = d makes d = 3 the unique dimension giving three.
 
-Original verdict: REPLACES the Z_3 superselection approach as the primary generation argument, moving the lane from 'open with overclaiming attempts' to 'bounded with a clean honest theorem'.
-Scope: Requires only that the lattice has a physical minimum spacing - explicitly much weaker than the Z_3 Hamiltonian symmetry, Berry protection, or continuum-obstruction assumptions the earlier arguments needed.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The Fermi-point theorem: ten-line proof replacing superselection as the lane's p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): REPLACES the Z_3 superselection approach as the primary generation argument, moving the lane from 'open with overclaiming attempts' to 'bounded with a clean honest theorem'.
+- Extraction scope (triage compression; may reflect later context): Requires only that the lattice has a physical minimum spacing - explicitly much weaker than the Z_3 Hamiltonian symmetry, Berry protection, or continuum-obstruction assumptions the earlier arguments needed.
 - Extraction red flags: Leaves open the precise mapping between its 1+3+3+1 Hamming decomposition and the orbit algebra 1+1+3+3 used elsewhere in the same lane.
 - Supersession (as known at extraction): Explicitly demotes the superselection, Berry-phase, K-theory and anomaly arguments to supporting evidence; reframes CKM as inter-valley scattering between the three hw=1 Fermi points.
 

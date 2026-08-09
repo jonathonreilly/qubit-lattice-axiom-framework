@@ -18,10 +18,6 @@ required before any effective status.
 
 Reconstructing the published unimproved single-link staggered scalar constant c_S = -29.3551 (Lee-Sharpe Table I) with the framework's own BZ machinery gives -29.3070 (0.16%) WITHOUT the /N_TASTE division and -14.8405 with it, proving the division is a double-count (the 16 tastes are the 16 BZ corners already inside the full-BZ integration); the corrected I_S = 32.4367, not 3.9023.
 
-Original verdict: The prior 'settled I_S = 3.90' is wrong by the /N_TASTE factor and every row consuming integrate_I_v_scalar_full or integrate_I_SE_fermion must be re-audited; the P1 direct C_F channel moves 3.75% -> 31.20% and the Delta_1 channel 1.74% -> 56.64%.
-Scope: MS-bar, mu = 1/a, tadpole u0 = <P>^(1/4) convention, single-link (unimproved) regulator whose literature band is ~29-39, not the smeared-action [4,10] band.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Overturns PR #4128's settled I_S = 3.90 by reconstructing the published Lee-Shar
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The prior 'settled I_S = 3.90' is wrong by the /N_TASTE factor and every row consuming integrate_I_v_scalar_full or integrate_I_SE_fermion must be re-audited; the P1 direct C_F channel moves 3.75% -> 31.20% and the Delta_1 channel 1.74% -> 56.64%.
+- Extraction scope (triage compression; may reflect later context): MS-bar, mu = 1/a, tadpole u0 = <P>^(1/4) convention, single-link (unimproved) regulator whose literature band is ~29-39, not the smeared-action [4,10] band.
 - Extraction red flags: Documents a live double-counting bug in two integration functions plus a mis-attributed literature band whose two errors offset, making the wrong value look plausible; huge downstream corrections (1.74% -> 56.64%).
 - Supersession (as known at extraction): Overturns PR #4128's settled I_S = 3.90 and corrects the earlier note's mis-attributed [4,10] comparator; flags all consuming rows for re-audit.
 

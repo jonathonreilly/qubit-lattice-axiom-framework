@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The five Hamming-weight assignments are NOT five pairwise-distinct values — the equalities at k = 0,4 and k = 1,3 are structural binomial symmetries rather than numerical accidents. The branch does not select or derive the uniform-16 assignment.
 
-Original verdict: Corrects a distinctness count from five to three by identifying binomial symmetry.
-Scope: Counting distinct single-class values in the N_taste boundary.
-Escape conditions (negative claims): Deriving the uniform-16 assignment separately.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Correction of landed content: the five Hamming-weight assignments are NOT five p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Corrects a distinctness count from five to three by identifying binomial symmetry.
+- Extraction scope (triage compression; may reflect later context): Counting distinct single-class values in the N_taste boundary.
+- Extraction escape conditions (negative claims; triage compression): Deriving the uniform-16 assignment separately.
 - Extraction red flags: A landed row claimed five distinct values where structural symmetry gives three — a concrete numeric error in landed content, now corrected.
 - Supersession (as known at extraction): Companion to idx 10516; makes explicit the overstated count flagged at idx 10360.
 

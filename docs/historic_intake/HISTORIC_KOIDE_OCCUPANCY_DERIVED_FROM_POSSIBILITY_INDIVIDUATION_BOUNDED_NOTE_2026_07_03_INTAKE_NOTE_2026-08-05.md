@@ -18,10 +18,6 @@ required before any effective status.
 
 Retracts the claim that the occupancy bridge sentence is derived and instead factorizes it into three named premises: the six enumerated scalar quantities are exactly K-even (depending on b only through |b|^2, restating the June-8 measure-neutrality wall), but the supplied coordinate functional Im(b) = (b - conj b)/2i is K-covariant and DOES separate the conjugates (giving +3 and -3 at b = 2+3i), so a further premise P-phase is required.
 
-Original verdict: The individuation route does not escape the June walls — it relocates them — and P-phase (that record content fixes |b|^2 but not the conjugate-sector relative phase) is not answered by the current axioms.
-Scope: Bounded factorization plus a sharpened wall; the six-item scalar class is a sample, not a completeness theorem over all supplied b-functionals.
-Escape conditions (negative claims): The explicit separator Im(b) is excluded only by supplying P-phase, i.e. a U(1) rephasing on the doublet coordinate under which the six enumerated scalars are invariant and Im(b) is not.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Retraction on the record: the occupancy-bridge 'derived' claim withdrawn after a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The individuation route does not escape the June walls — it relocates them — and P-phase (that record content fixes |b|^2 but not the conjugate-sector relative phase) is not answered by the current axioms.
+- Extraction scope (triage compression; may reflect later context): Bounded factorization plus a sharpened wall; the six-item scalar class is a sample, not a completeness theorem over all supplied b-functionals.
+- Extraction escape conditions (negative claims; triage compression): The explicit separator Im(b) is excluded only by supplying P-phase, i.e. a U(1) rephasing on the doublet coordinate under which the six enumerated scalars are invariant and Im(b) is not.
 - Extraction red flags: Records that an earlier version of this note claimed a derivation that three independent reviewers refuted.
 - Supersession (as known at extraction): Repaired wording after a three-seat adversarial refutation pass returned a convergent negative on the note's earlier derivation form.
 

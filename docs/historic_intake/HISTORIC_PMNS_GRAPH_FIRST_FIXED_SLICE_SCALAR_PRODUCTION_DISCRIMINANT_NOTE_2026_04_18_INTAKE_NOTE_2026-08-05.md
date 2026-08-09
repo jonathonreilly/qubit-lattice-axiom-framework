@@ -18,10 +18,6 @@ required before any effective status.
 
 With centered holonomy vector c = (h_phi1 - w0, h_phi2 - w0) and Delta = ||c||^2, invertibility of the fixed-slice map gives Delta = 0 <=> chi = 0, so the whole production frontier is the single scalar certificate Delta > 0, with canonical C3 witness Delta_C3 = (h_0 - w0)^2 + (h_(2pi/3) - w0)^2. The current bank still forces Delta = 0.
 
-Original verdict: The PMNS-native frontier compresses from a pair certificate to one scalar nonvanishing certificate, still unrealized by the bank.
-Scope: Fixed slice w = w0 with any independent angle pair satisfying sin(phi_2 - phi_1) != 0.
-Escape conditions (negative claims): Escaped by a sole-axiom theorem producing positive discriminant; a Wilson descendant theorem or global PF selector would also do it but neither exists.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The graph-first terminal compression: the whole production question reduces to O
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The PMNS-native frontier compresses from a pair certificate to one scalar nonvanishing certificate, still unrealized by the bank.
+- Extraction scope (triage compression; may reflect later context): Fixed slice w = w0 with any independent angle pair satisfying sin(phi_2 - phi_1) != 0.
+- Extraction escape conditions (negative claims; triage compression): Escaped by a sole-axiom theorem producing positive discriminant; a Wilson descendant theorem or global PF selector would also do it but neither exists.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Terminal compression of the graph-first fixed-slice chain - the sharpest form of the PMNS-native production frontier.
 

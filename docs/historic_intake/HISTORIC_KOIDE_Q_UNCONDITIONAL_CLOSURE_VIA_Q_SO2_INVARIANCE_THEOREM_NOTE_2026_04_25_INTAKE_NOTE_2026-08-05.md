@@ -18,10 +18,6 @@ required before any effective status.
 
 Claims the load-bearing carrier-choice primitive is now DERIVED, not admitted: direct algebra on the Brannen formula gives Q=(c^2+2)/6 exactly, independent of delta and V_0, with c^2=4|b|^2/a^2 — so Q depends only on |b| and IS SO(2)-invariant on the doublet sector (unlike delta_Brannen = arg b, which the April-20 MRU demotion correctly excluded). The reduced two-slot carrier (E_+,E_perp)=(3a^2,6|b|^2) is therefore forced, and ground-state extremization of W_red at fixed Tr Y_red gives E_+=E_perp <=> a^2=2|b|^2 <=> c=sqrt(2) <=> Q=2/3.
 
-Original verdict: Q_l = 2/3 retained closure on origin/main — unconditional on the carrier choice, which is now derived from Q's SO(2)-invariance.
-Scope: Q-side only, on the retained Brannen mass formula plus the Observable Principle source generator and standard QFT ground-state interpretation; the delta side is handled separately.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The 'unconditional retained closure' claim via carrier-choice derivation — pul
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Q_l = 2/3 retained closure on origin/main — unconditional on the carrier choice, which is now derived from Q's SO(2)-invariance.
+- Extraction scope (triage compression; may reflect later context): Q-side only, on the retained Brannen mass formula plus the Observable Principle source generator and standard QFT ground-state interpretation; the delta side is handled separately.
 - Extraction red flags: Strong claim ('unconditional closure', 'retained closure on origin/main') resting on a single new observation (Q's SO(2)-invariance) plus a 'QFT-standard interpretation' of the Observable Principle partition function; the ground-state-extremization step is an interpretive import rather than a derived law.
 - Supersession (as known at extraction): Self-declared SUPERSEDING note: explicitly supersedes the conditional framing of KOIDE_DELTA_2_OVER_9_RAD_REVIEW_RESPONSE_NOTE_2026-04-25 for the Q-side (and delta-side) specifically, and answers Finding 1 of REVIEW_HOSTILE_FINDINGS_2026-04-25 — reads as the KOIDE_Q family's closing/terminal note.
 

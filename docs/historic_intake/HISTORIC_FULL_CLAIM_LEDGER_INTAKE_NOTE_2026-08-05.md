@@ -18,10 +18,6 @@ required before any effective status.
 
 Sorts every paper-facing claim into five buckets: 10 promoted flagship claims (Cl(3) on Z^3, weak-field Poisson gravity, native SU(2), graph-first SU(3), anomaly-forced 3+1, one- and three-generation matter, exact I_3 = 0, exact CPT), 4 live bounded gates (S^3 topology, DM relic mapping, renormalized y_t, CKM flavor), 12 candidate-missed claims, off-scope historical programs, and stale/unsafe authority files.
 
-Original verdict: Four live gates remain bounded/open; several summary and full-closure documents are explicitly listed as stale and not-for-paper.
-Scope: Publication ledger, stricter than a backlog and broader than the retained paper surface; a claim must appear here before entering the manuscript.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ FULL CLAIM LEDGER: the era's five-bucket claim sort naming stale-authority file 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Four live gates remain bounded/open; several summary and full-closure documents are explicitly listed as stale and not-for-paper.
+- Extraction scope (triage compression; may reflect later context): Publication ledger, stricter than a backlog and broader than the retained paper surface; a claim must appear here before entering the manuscript.
 - Extraction red flags: Section 5 names whole file families as stale or unsafe authority - notably summary/scorecard docs that 'repeatedly outran the audited state' and full-closure notes that 'converted bounded sub-results into full-closure prose'.
 - Supersession (as known at extraction): Repo-wide index/authority note; explicitly demotes 'misnamed Born rule derived notes', older full-closure notes for DM/y_t/S^3/CKM, and overnight summary docs marking gates closed.
 

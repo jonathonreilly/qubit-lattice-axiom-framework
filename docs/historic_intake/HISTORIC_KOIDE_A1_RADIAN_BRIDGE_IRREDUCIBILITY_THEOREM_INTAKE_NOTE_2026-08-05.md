@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Across 47 mechanisms in 9 investigation rounds (12 obstruction classes including a Universal Lattice Closure Theorem, runner 33/33) no derivation of |b|^2/a^2 = 1/2 or delta = 2/9 rad exists in the tested probe space; the residual is exactly one quantization rule identifying a Type-B combinatorial rational (2/N^2 = 2/9) with a Type-A periodicity quantum (radians), and the two sets are disjoint by Lindemann-Weierstrass (Q*pi intersect Q = {0}).
 
-Original verdict: The A1 condition and the Brannen phase are jointly structurally irreducible on the tested surface; the six 'independent' retained routes to 2/9 all trace back to the same structural fact 2/N^2 at N = 3 and are derivative restatements, not independent evidence.
-Scope: Retained Cl(3)/Z^3 + CL3_SM_EMBEDDING surface; the lattice-quantization-set language is explicitly lane-local and does not attach to the framework's axiom set unless a reviewer lifts it.
-Escape conditions (negative claims): The negative is scoped to the 47-mechanism probe space and rests on the Type-A/Type-B disjointness; postulate P (that the Yukawa phase is a Type-A observable carrying the Type-B quantum) is naturalized by the lattice-is-physical stance but not forced by the central axiom, so accepting P escapes the no-go — and the later Brannen-arg route escapes it by avoiding the R/Z -> U(1) lift entirely.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ The 47-mechanism irreducibility theorem: |b|^2/a^2 = 1/2 and delta = 2/9 jointly
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The A1 condition and the Brannen phase are jointly structurally irreducible on the tested surface; the six 'independent' retained routes to 2/9 all trace back to the same structural fact 2/N^2 at N = 3 and are derivative restatements, not independent evidence.
+- Extraction scope (triage compression; may reflect later context): Retained Cl(3)/Z^3 + CL3_SM_EMBEDDING surface; the lattice-quantization-set language is explicitly lane-local and does not attach to the framework's axiom set unless a reviewer lifts it.
+- Extraction escape conditions (negative claims; triage compression): The negative is scoped to the 47-mechanism probe space and rests on the Type-A/Type-B disjointness; postulate P (that the Yukawa phase is a Type-A observable carrying the Type-B quantum) is naturalized by the lattice-is-physical stance but not forced by the central axiom, so accepting P escapes the no-go — and the later Brannen-arg route escapes it by avoiding the R/Z -> U(1) lift entirely.
 - Extraction red flags: Explicitly deflates the framework's own 'six independent derivations of 2/9' to restatements of one dimension count.
 - Supersession (as known at extraction): Consolidates 9 investigation rounds; its identification half is later claimed closed by KOIDE_A1_BRANNEN_EUCLIDEAN_ROTATION_ANGLE_CLOSURE_THEOREM_NOTE_2026-04-25.
 

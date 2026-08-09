@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Closes four rescue routes for the five-sixths exponent with exact algebra: the pure-running route dies because the common-ratio derivative is zero and the individual-mass power is 12/25 rather than 5/6; the threshold-matching route dies because the bounded kernel assumes a threshold scale and the approved scale primitive supplies units only; the RGI/scale-rescue route dies because the shared-transport theorem reduces the comparison to the common ratio and PRESERVES its mismatch; and the fitted-scale route is forbidden because equation (5.4) shows the target can tune the scale. The NNI/GST spectra-only route dies to a fixed-spectrum orientation countermodel.
 
-Original verdict: bounded-support with review_loop_disposition pass at iteration 3; the two interfaces are collapsed into ONE composite typed mass-to-CKM determinant bridge, so there is one remaining parent wall rather than two.
-Scope: The scalar shared-transport ratio and the restricted current packet only; per-site, per-mode, full quark-action and lattice-wide dynamics were not tested and are not ruled out, and the source does NOT say 5/6 is globally not a framework fact.
-Escape conditions (negative claims): Five partial-closure paths listed with status: an explicit mixed-scale convention, an RGI/common-scale reframe (no source note constructs it yet), the approved units primitive (units only), the heavy-threshold kernel (needs a supplied threshold), and no new axiom requested.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Closes four rescue routes for the five-sixths exponent with exact algebra (the p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): bounded-support with review_loop_disposition pass at iteration 3; the two interfaces are collapsed into ONE composite typed mass-to-CKM determinant bridge, so there is one remaining parent wall rather than two.
+- Extraction scope (triage compression; may reflect later context): The scalar shared-transport ratio and the restricted current packet only; per-site, per-mode, full quark-action and lattice-wide dynamics were not tested and are not ruled out, and the source does NOT say 5/6 is globally not a framework fact.
+- Extraction escape conditions (negative claims; triage compression): Five partial-closure paths listed with status: an explicit mixed-scale convention, an RGI/common-scale reframe (no source note constructs it yet), the approved units primitive (units only), the heavy-threshold kernel (needs a supplied threshold), and no new axiom requested.
 - Extraction red flags: Records that the target can be made to fit by TUNING the scale (equation 5.4) - i.e. the five-sixths agreement is reachable by a fitted selector, which is why the fitted route is forbidden. Anyone citing 5/6 as a prediction should read this.
 - Supersession (as known at extraction): Directly answers the open item at lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md:19 which left RG-covariant transport open; tests the shared-transport version and finds exact deviation invariance.
 

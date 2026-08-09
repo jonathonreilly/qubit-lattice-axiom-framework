@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Tests whether the IR quasi-fixed point y_t/g_3 -> sqrt(2/9) makes m_t insensitive to g_3(M_Pl), which would render the gauge crossover irrelevant; REFUTED — varying g_3(M_Pl) over [0.5, 2.0] gives a 55% spread in m_t against a <5% insensitivity criterion, with only a factor-0.71 focusing.
 
-Original verdict: The gauge crossover remains a genuine blocker.
-Scope: SM 2-loop RGEs with the framework boundary y_t(M_Pl) = g_3/sqrt(6) and g_3 varied freely; the gauge trajectory still comes from the observed alpha_s(M_Z).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Refutes the QFP-insensitivity escape: m_t varies materially with g_3(M_Pl) — t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gauge crossover remains a genuine blocker.
+- Extraction scope (triage compression; may reflect later context): SM 2-loop RGEs with the framework boundary y_t(M_Pl) = g_3/sqrt(6) and g_3 varied freely; the gauge trajectory still comes from the observed alpha_s(M_Z).
 - Extraction red flags: Refutes an insensitivity claim that, had it held, would have removed the lane's main blocker.
 - Supersession (as known at extraction): Refutes an escape hypothesis for the crossover blocker documented at idx 2312; complements the fixed-point mismatch at idx 2300.
 

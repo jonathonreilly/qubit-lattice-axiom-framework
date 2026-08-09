@@ -18,10 +18,6 @@ required before any effective status.
 
 On the strict-retained tier the charged-lepton carrier costs TWO independent admissions (STAT, the fermionic/CAR hopping sign, and FAITH, the faithful Weyl rep over the trivial scalar); it is ONE only modulo auditing three unaudited rows, because no retained statistics row excludes the hard-core boson (on one site c and b are literally the same matrix sigma_+) and no microcausality/RP constraint excludes the RP scalar.
 
-Original verdict: Two-on-retained, one-modulo-audit — a capstone reporting 'one carrier bit' is reporting the optimistic tier and silently inheriting three unaudited rows.
-Scope: A bit-count audit only: does not re-derive the faithful=>CAR collapse, does not audit or promote any row, does not touch the separate value bit (r = 1/2), does not derive Q = 2/3, and sets no audit verdict; runner SCORECARD PASS=16 including a live origin/main ledger read.
-Escape conditions (negative claims): The count contracts to one exactly if axiom_first_spin_statistics_theorem, free_field_os_wightman_reconstruction and free_sector_spin_statistics_level1 are audited (the reduction runs FAITH => STAT, never the reverse, and never to zero because the scalar survives every microcausality/RP constraint); FAITH itself must be pursued through M's own spin content / the so(3,1) carrier assignment.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Carrier-bit accounting: TWO admissions on strict-retained (STAT + FAITH), one-mo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two-on-retained, one-modulo-audit — a capstone reporting 'one carrier bit' is reporting the optimistic tier and silently inheriting three unaudited rows.
+- Extraction scope (triage compression; may reflect later context): A bit-count audit only: does not re-derive the faithful=>CAR collapse, does not audit or promote any row, does not touch the separate value bit (r = 1/2), does not derive Q = 2/3, and sets no audit verdict; runner SCORECARD PASS=16 including a live origin/main ledger read.
+- Extraction escape conditions (negative claims; triage compression): The count contracts to one exactly if axiom_first_spin_statistics_theorem, free_field_os_wightman_reconstruction and free_sector_spin_statistics_level1 are audited (the reduction runs FAITH => STAT, never the reverse, and never to zero because the scalar survives every microcausality/RP constraint); FAITH itself must be pursued through M's own spin content / the so(3,1) carrier assignment.
 - Extraction red flags: Identifies that a headline 'one bridge' claim elsewhere in the lane is optimistic-tier and depends on three rows whose effective_status is unaudited (one of them marked critical).
 - Supersession (as known at extraction): Narrows the accounting the capstone KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01 left implicit; consumes the carrier-locus decomposition and on-site Weyl boost notes.
 

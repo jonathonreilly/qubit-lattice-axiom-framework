@@ -18,10 +18,6 @@ required before any effective status.
 
 Seven structurally independent axiom-only attack routes on the DM flagship gate's direct-microscopic-selector blocker all terminate at one unified structural wall, and the note RETRACTS the retained Case 3 Impossibility Theorem's strongest claim (that every retained microscopic polynomial invariant depends on (delta, q_+) only through (delta^2, q_+)) as accurate only on the source-only slice.
 
-Original verdict: Inversion works, selection does not — the sharper framing is that the wall is about selection, not invertibility.
-Scope: Baseline-conditional structural statement replacing an unconditional one; each lane independently verified by its own runner.
-Escape conditions (negative claims): The replacement statement is explicitly baseline-conditional, so a different baseline is the named escape.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ RETRACTION against a RETAINED row: the Case 3 Microscopic Polynomial Impossibili
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Inversion works, selection does not — the sharper framing is that the wall is about selection, not invertibility.
+- Extraction scope (triage compression; may reflect later context): Baseline-conditional structural statement replacing an unconditional one; each lane independently verified by its own runner.
+- Extraction escape conditions (negative claims; triage compression): The replacement statement is explicitly baseline-conditional, so a different baseline is the named escape.
 - Extraction red flags: Retracts the strongest claim of a previously retained theorem.
 - Supersession (as known at extraction): Replaces the retained Case 3 Microscopic Polynomial Impossibility Theorem with a corrected, conditional statement.
 

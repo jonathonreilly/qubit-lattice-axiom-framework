@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Four results proven in-loop, most sharply: the PDG backsolve factor cannot be used because solving 440/484 approximately 0.909 takes the target comparator as the SOURCE of the screening factor; the rough x0.96 B2 promotion fails for lack of a branch-local N_f = 2+1 dynamical ensemble, a full-QCD observable definition, and an uncertainty budget; a pure quenched volume-scaling route can help B5 but cannot close B2, which is specifically about dynamical sea-quark effects; and the literal asymptotic full-QCD string tension is the wrong B2 object because full-QCD strings break, so B2 must target a pre-breaking effective tension, force scale, or static-energy fit window.
 
-Original verdict: Every shortcut to a retained sqrt(sigma) is closed, one of them for explicit circularity.
-Scope: The B2 bridge; inherits three prior firewalls including the confinement-to-mass shortcut and the Banks-Casher Sigma route.
-Escape conditions (negative claims): A branch-local N_f = 2+1 dynamical ensemble with a defined full-QCD observable and uncertainty budget, targeting a pre-breaking window.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Verification-integrity catch plus route closure: the PDG backsolve factor 440/48
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Every shortcut to a retained sqrt(sigma) is closed, one of them for explicit circularity.
+- Extraction scope (triage compression; may reflect later context): The B2 bridge; inherits three prior firewalls including the confinement-to-mass shortcut and the Banks-Casher Sigma route.
+- Extraction escape conditions (negative claims; triage compression): A branch-local N_f = 2+1 dynamical ensemble with a defined full-QCD observable and uncertainty budget, targeting a pre-breaking window.
 - Extraction red flags: Explicit circularity caught: a screening factor was being backsolved from the PDG target it was meant to predict (440/484 = 0.909).
 - Supersession (as known at extraction): Cites docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md and docs/HADRON_LANE1_CHIRAL_CONDENSATE_BANKS_CASHER_SCOPING_SUPPORT_NOTE_2026-04-27.md; notes the audit ledger marks docs/CONFINEMENT_STRING_TENSION_NOTE.md conditional because its numerical row imports lattice/EFT constants and a screening factor.
 

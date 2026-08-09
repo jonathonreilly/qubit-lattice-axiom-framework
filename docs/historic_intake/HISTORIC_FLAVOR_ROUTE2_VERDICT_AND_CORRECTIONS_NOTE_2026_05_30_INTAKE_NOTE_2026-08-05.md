@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Two kills refute the dynamical-criticality route: in the signed-eigenvalue readout a -> 0 sends Q -> infinity (a = 1e-4, b = 1/sqrt2 gives Q ~ 3e7), and Q is exactly scale-invariant across 1e-20 to 1e10 so lepton lightness cannot move it; the genuine positive is that the native operator is staggered with exact sublattice grading epsilon = (-1)^(x+y+z), but epsilon is generation-blind.
 
-Original verdict: Lightness, criticality and the uniform VEV are all red herrings; the only thing setting the value is whether mass generation weights the C_3 isotypes by trace (Q = 1) or sector-count (Q = 2/3).
-Scope: Retracts two of its own campaign's moves and flags that three 'vacuum -> Q = 1/3' computations used the chiral-breaking Wilson propagator and must be re-run on the native staggered operator.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Route-2 verdict: two exact kills (a->0 blowup; exact scale invariance) plus two 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Lightness, criticality and the uniform VEV are all red herrings; the only thing setting the value is whether mass generation weights the C_3 isotypes by trace (Q = 1) or sector-count (Q = 2/3).
+- Extraction scope (triage compression; may reflect later context): Retracts two of its own campaign's moves and flags that three 'vacuum -> Q = 1/3' computations used the chiral-breaking Wilson propagator and must be re-run on the native staggered operator.
 - Extraction red flags: Two same-campaign retractions plus a methodological flag that three prior computations used the wrong operator class.
 - Supersession (as known at extraction): Explicitly RETRACTS move 4 (FLAVOR_LOOP_PRESERVES_BLOCK_COUNT's lightness mechanism, idx 485) and move 6 (FLAVOR_AVEV_FORCING_CAPSTONE's a_VEV = 0 => exact Q = 2/3, idx 474), diagnosing the latter as a conflation of two decompositions of a.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Derives two previously imported baryogenesis coefficients from the framework's own SU(2): kappa_sph = 21.3 +/- 3.8 versus imported 20 (0.3 sigma) via Chern-Simons diffusion, and c_mag = 0.369 +/- 0.029 versus imported 0.37 (0.0 sigma) from a 3D SU(2) plaquette-correlator screening mass at L=16, beta=8.
 
-Original verdict: Two imports eliminated: the baryogenesis chain now has zero remaining physics imports beyond the declared boundary condition T_CMB = 2.7255 K.
-Scope: 3D SU(2) Monte Carlo at L=12 and L=16, beta=8, with g = 0.653 fixed from the lattice action at g_bare = 1.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Two baryogenesis imports 'derived' — reproducing the external values they repl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two imports eliminated: the baryogenesis chain now has zero remaining physics imports beyond the declared boundary condition T_CMB = 2.7255 K.
+- Extraction scope (triage compression; may reflect later context): 3D SU(2) Monte Carlo at L=12 and L=16, beta=8, with g = 0.653 fixed from the lattice action at g_bare = 1.
 - Extraction red flags: The 'derivation' reproduces the external values it replaces to within error bars and relies on the Moore-Rummukainen lattice measurement K_ASY = 10.8 +/- 0.7, so the independence from external input is arguable.
 - Supersession (as known at extraction): Replaces the d'Onofrio et al. (2014) and Kajantie et al. (1996) imports in the DM baryogenesis chain.
 

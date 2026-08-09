@@ -18,10 +18,6 @@ required before any effective status.
 
 Plain-language status: the strong native result is c_cell = Tr(rho_cell P_A) = 4/16 = 1/4 from H_cell ~= C^16, rank(P_A) = 4, rho_cell = I_16/16; converting to a length needs S_grav/k_B = A/(4 l_P^2) and gives a^2 = 4 c_cell l_P^2, but with a boundary multiplier a^2 = mu l_P^2 and the stack does not derive mu = 1. Present-age data cannot help because A_U cancels.
 
-Original verdict: Nature-grade as a conditional Planck derivation with a native dimensionless coefficient; not Nature-grade as an unconditional bare-axiom derivation.
-Scope: Reviewer-facing summary; EWSB calibration is allowed for a separate hierarchy lane but is not a bare Planck derivation.
-Escape conditions (negative claims): The bare-axiom gap is escaped only by deriving mu = 1 (that the primitive count is exactly the gravitational boundary/action unit).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The reviewer-facing conditional verdict: Nature-grade as CONDITIONAL Planck deri
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Nature-grade as a conditional Planck derivation with a native dimensionless coefficient; not Nature-grade as an unconditional bare-axiom derivation.
+- Extraction scope (triage compression; may reflect later context): Reviewer-facing summary; EWSB calibration is allowed for a separate hierarchy lane but is not a bare Planck derivation.
+- Extraction escape conditions (negative claims; triage compression): The bare-axiom gap is escaped only by deriving mu = 1 (that the primitive count is exactly the gravitational boundary/action unit).
 - Extraction red flags: Its 'conditional only' verdict sits in tension with sibling notes in the same family titled 'closure theorem' and 'airtight' - a reviewer reading only titles would get the wrong status.
 - Supersession (as known at extraction): Plain-language restatement of the axiom-only gravity unit-map final audit; shares its verifier script.
 

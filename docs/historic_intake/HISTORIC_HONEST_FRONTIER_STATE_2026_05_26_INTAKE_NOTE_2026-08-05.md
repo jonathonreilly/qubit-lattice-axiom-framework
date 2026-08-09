@@ -18,10 +18,6 @@ required before any effective status.
 
 Hostile-review consolidation: the 12-cycle no-go was wrong AND the panel reversal overstates closure — only 1 of 7 upstream bridge pieces is retained (bridge at best audited_conditional); the Fisher-Rao 'independent route' is a category error (variance is not arc-length; arc-length gives 0.4724, not 2/9); the unit reconciliation still smuggles a convention; frontier reduced to one bridge lemma (delta_Brannen = eta_APS at the D_st fixed locus) plus descent normalization.
 
-Original verdict: single open bridge lemma; most upstream pieces audit-pending
-Scope: post-panel and post-hostile-review honest state
-Escape conditions (negative claims): lift substep-3 to retained; promote Brannen-Plancherel; derive the unit convention as forced; prove the descent lemma
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ The honest terminal state of the pi-bridge after the reversal: hostile-review co
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): single open bridge lemma; most upstream pieces audit-pending
+- Extraction scope (triage compression; may reflect later context): post-panel and post-hostile-review honest state
+- Extraction escape conditions (negative claims; triage compression): lift substep-3 to retained; promote Brannen-Plancherel; derive the unit convention as forced; prove the descent lemma
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

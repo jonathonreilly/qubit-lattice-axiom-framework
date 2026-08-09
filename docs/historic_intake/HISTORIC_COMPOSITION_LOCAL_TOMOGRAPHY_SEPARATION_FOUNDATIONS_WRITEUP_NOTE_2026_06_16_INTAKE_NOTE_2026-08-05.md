@@ -18,10 +18,6 @@ required before any effective status.
 
 Packages two retained theorems into one statement: operational locality (faithful, commuting, separated local algebras with no-signalling) is strictly weaker than local tomography, and the complex unit i supplies local tomography exactly once the two-site carrier M_2(C) x M_2(C) = M_4(C) is granted, while the real-rebit analogue fails.
 
-Original verdict: Corrects a framing error circulating in summaries: there is NO retained entailment that tensor composition collapses into or is derived from the Quantum axiom.
-Scope: Write-up only; both halves are exact finite-dimensional linear algebra already verified by their own runners.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Correction of record: NO retained entailment that operational locality collapses
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Corrects a framing error circulating in summaries: there is NO retained entailment that tensor composition collapses into or is derived from the Quantum axiom.
+- Extraction scope (triage compression; may reflect later context): Write-up only; both halves are exact finite-dimensional linear algebra already verified by their own runners.
 - Extraction red flags: Documents that summaries had been asserting an entailment (composition from the Quantum axiom) that is not retained.
 - Supersession (as known at extraction): Explicitly fixes a mis-framing that had circulated in prior summaries.
 

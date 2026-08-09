@@ -18,10 +18,6 @@ required before any effective status.
 
 Under four supplied hypotheses (one M_2(C) site domain on the Z^3 nearest-neighbour graph, an autonomous time-independent self-adjoint pair generator, a sum of identical two-site terms, and a common frame), the commutant of the diagonal U x U action on C^2 x C^2 has complex dimension exactly 2 and equals span{I, SWAP}, so every admissible pair generator is h = a I + b SWAP.
 
-Original verdict: The exchange class is classified exactly, with its three limitations owned as part of the result.
-Scope: Two qubits on one edge; all four hypotheses are SUPPLIED, none derived — the axioms supply no dynamics; three limitations are stated as part of the claim rather than caveats.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact classification of the exchange class under four supplied hypotheses on the
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The exchange class is classified exactly, with its three limitations owned as part of the result.
+- Extraction scope (triage compression; may reflect later context): Two qubits on one edge; all four hypotheses are SUPPLIED, none derived — the axioms supply no dynamics; three limitations are stated as part of the claim rather than caveats.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

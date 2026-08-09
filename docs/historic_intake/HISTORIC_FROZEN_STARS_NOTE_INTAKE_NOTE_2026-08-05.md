@@ -18,10 +18,6 @@ required before any effective status.
 
 Five probes of self-consistent Hartree frozen stars: 3D scaling gives M_Ch ~ 1.9 M_sun matching the observed NS limit, R_frozen/R_s can be as low as ~0.05 (20x more compact than a black hole) with no horizon, QNMs are discrete rather than a continuous overtone series, post-merger echoes are predicted, and the surface temperature is ~70x T_Hawking (4e-7 K for 10 M_sun).
 
-Original verdict: The lattice framework predicts a fundamentally different collapse endpoint than GR - no horizons, a Planck-scale surface, and several observable differences (GW echoes, thermal emission, EHT shadow).
-Scope: 1D lattice model missing 3D geometry (angular momentum, centrifugal barrier, radiation pressure); N_crit scaling rests on only two collapse data points; temperature estimates depend on identifying lattice units with Planck units.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ FROZEN STARS founding claim (M_Ch ~ 1.9 M_sun, no-horizon endpoint) — cross-fl
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The lattice framework predicts a fundamentally different collapse endpoint than GR - no horizons, a Planck-scale surface, and several observable differences (GW echoes, thermal emission, EHT shadow).
+- Extraction scope (triage compression; may reflect later context): 1D lattice model missing 3D geometry (angular momentum, centrifugal barrier, radiation pressure); N_crit scaling rests on only two collapse data points; temperature estimates depend on identifying lattice units with Planck units.
 - Extraction red flags: Self-listed caveats include a poorly constrained N_crit scaling (2 points) and a 1D model; the echo prediction it advertises as detectable is nullified by a sibling note.
 - Supersession (as known at extraction): Its headline post-merger echo prediction is later given amplitude ZERO by ECHO_PREDICTION_RESOLVED_2026-04-12 (idx 416) via the evanescent barrier.
 

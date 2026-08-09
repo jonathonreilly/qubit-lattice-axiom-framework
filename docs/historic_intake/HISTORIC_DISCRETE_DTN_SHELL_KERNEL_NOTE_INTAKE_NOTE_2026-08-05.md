@@ -18,10 +18,6 @@ required before any effective status.
 
 Proves the discrete Dirichlet-to-Neumann shell source is supported exactly in the finite sewing band 3 < r <= 5 and that all seven star-support point-Green columns induce the same normalized kernel k_DTN(r) = sigma_rad(r)/Q, so the universal shell kernel is an exact discrete DtN object rather than an empirical fitting artifact.
 
-Original verdict: Removes the fitting-artifact ambiguity, without closing the continuum/effective-stress interpretation or the anisotropic zero-monopole shell remainder.
-Scope: Exact at operator level on the physical lattice box; the closure consequence is bounded.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact DtN shell-kernel support theorem (sewing band 3 < r <= 5, all seven column
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Removes the fitting-artifact ambiguity, without closing the continuum/effective-stress interpretation or the anisotropic zero-monopole shell remainder.
+- Extraction scope (triage compression; may reflect later context): Exact at operator level on the physical lattice box; the closure consequence is bounded.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

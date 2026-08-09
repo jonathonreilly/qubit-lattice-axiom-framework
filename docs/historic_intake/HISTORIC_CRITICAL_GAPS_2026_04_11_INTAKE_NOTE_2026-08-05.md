@@ -18,10 +18,6 @@ required before any effective status.
 
 Flags the Anderson localization elephant and four existential controls that must run before any publication claim (Anderson control highest priority, free-fermion baseline, classical mixture control, eigenvalue statistics), noting that since the model IS free-fermion the area law is mathematically guaranteed by Eisert-Cramer-Plenio (2010) and Hastings (2007).
 
-Original verdict: URGENT: known no-go theorems mean the area-law result carries no evidential weight, and a condensed-matter reframe is suggested.
-Scope: Pre-publication checklist; no computation performed.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Anderson-localization kill: the era's area-law headline carries no evidentia
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): URGENT: known no-go theorems mean the area-law result carries no evidential weight, and a condensed-matter reframe is suggested.
+- Extraction scope (triage compression; may reflect later context): Pre-publication checklist; no computation performed.
 - Extraction red flags: Points out that a headline area-law finding is guaranteed by standard theorems for free-fermion models and therefore not evidence for the framework.
 - Supersession (as known at extraction): none recorded
 

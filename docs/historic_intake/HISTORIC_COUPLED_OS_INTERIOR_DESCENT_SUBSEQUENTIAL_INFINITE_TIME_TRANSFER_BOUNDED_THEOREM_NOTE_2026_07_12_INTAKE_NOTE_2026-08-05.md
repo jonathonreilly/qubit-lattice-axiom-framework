@@ -18,10 +18,6 @@ required before any effective status.
 
 For the supplied finite-spatial-volume SU(3) Wilson-fundamental-staggered model, proves exact finite-circle interior null descent B_2(F,G) = B_0(F, tau_2 G) on support-controlled cores, an exact finite-circle contraction boundary, uniform local-correlator bounds, and a diagonal-subsequence construction giving an infinite-time OS quotient and transfer.
 
-Original verdict: Infinite-time transfer exists subsequentially; the highest-leverage next theorem is a coupled two-step kernel or quantitative bound.
-Scope: Existence, not canonicity — no uniqueness of the L_t -> infinity functional, no convergence without subsequences, no boundary-condition independence, no unique vacuum, gap, clustering, spatial thermodynamic limit, or continuum limit; the Wilson-staggered dynamics and probability law are supplied, not derived from the axioms.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact finite-circle null descent + subsequential infinite-time transfer for the 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Infinite-time transfer exists subsequentially; the highest-leverage next theorem is a coupled two-step kernel or quantitative bound.
+- Extraction scope (triage compression; may reflect later context): Existence, not canonicity — no uniqueness of the L_t -> infinity functional, no convergence without subsequences, no boundary-condition independence, no unique vacuum, gap, clustering, spatial thermodynamic limit, or continuum limit; the Wilson-staggered dynamics and probability law are supplied, not derived from the axioms.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Builds on the coupled two-seam reflected-Gram bounded theorem.
 

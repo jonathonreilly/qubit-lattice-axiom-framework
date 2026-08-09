@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Establishes that {Lattice, Quantum, Record} supply NO source of a CP-odd term: DYNAMICS_FORM_FROM_RECORD_PRESERVATION forces the gauge-invariant-local Wilson action FORM-CLASS but fixes only the basis of admissible terms, not their coefficients — so the three remaining Tier-A admissions r = |b|^2/a^2, delta, and theta_gauge are exactly three unforced coefficients of one action class, collapsing to ONE irreducible residual.
 
-Original verdict: No falsification either — Record does not forbid CP; the residual is the un-derived-couplings research target (the beta=6 wall). One partial conditional result on the single-plaquette class rests on an un-derived minimality admission.
-Scope: Adds no axiom and no fitted/imported value; theta = 0, delta ~ 2/9 and r = 1/2 are named as comparator/target only. Runner PASS=4 exact.
-Escape conditions (negative claims): The escape is a derivation of the couplings themselves (the beta=6 wall), not a new symmetry.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ CP-source no-go: {Lattice, Quantum, Record} supply no CP-odd term — the strong
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No falsification either — Record does not forbid CP; the residual is the un-derived-couplings research target (the beta=6 wall). One partial conditional result on the single-plaquette class rests on an un-derived minimality admission.
+- Extraction scope (triage compression; may reflect later context): Adds no axiom and no fitted/imported value; theta = 0, delta ~ 2/9 and r = 1/2 are named as comparator/target only. Runner PASS=4 exact.
+- Extraction escape conditions (negative claims; triage compression): The escape is a derivation of the couplings themselves (the beta=6 wall), not a new symmetry.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Backward synthesis unifying seven already-landed per-item results (arrow, CPT, strong-CP theta, Koide r-half and delta no-gos, Tier-A registry).
 

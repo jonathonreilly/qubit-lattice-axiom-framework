@@ -18,10 +18,6 @@ required before any effective status.
 
 Candidate-retained-grade self-contained finite-dimensional algebra theorem with zero dependencies and zero open imports: an irreducible complexified module is nonfaithful, and bare complex-linear equivalence need not be unitary without the Hermitian hypothesis. All eight no-go-discipline gates pass; the strongest steelman (faithful rho_+ direct-sum rho_- carrier) is resolved by an independent helper computing rank eight and a commuting proper rank-two projector, i.e. reducible rather than an irreducible counterexample.
 
-Original verdict: Two exact derived boundaries stand at narrow scope; independent audit still required.
-Scope: Abstract finite-algebra scope of the source note; the lattice-wide resolution is explicitly NOT TESTED and out of scope.
-Escape conditions (negative claims): The Hermitian hypothesis closes the same-sign unitary refinement; faithfulness is recoverable only by going reducible; lattice-wide behaviour is untested.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Clean unlanded positive: candidate-retained-grade self-contained finite-dimensio
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two exact derived boundaries stand at narrow scope; independent audit still required.
+- Extraction scope (triage compression; may reflect later context): Abstract finite-algebra scope of the source note; the lattice-wide resolution is explicitly NOT TESTED and out of scope.
+- Extraction escape conditions (negative claims; triage compression): The Hermitian hypothesis closes the same-sign unitary refinement; faithfulness is recoverable only by going reducible; lattice-wide behaviour is untested.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

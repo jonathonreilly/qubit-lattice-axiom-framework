@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposes the residual Born admission A3 into (a) a consistent additive [0,1] state functional exists with pure value |a_k|^2 — YES, already inside {Quantum (C*-state), Record (additivity)} via Busch at dim 2 giving Tr(rho .) — and (b) the operational identification of omega with empirical relative frequency — NO, the genuine irreducible residual, since the C*-algebra never says Tr(rho P) is a frequency.
 
-Original verdict: CIRCULAR for the value but conditional only on the operational identification: the form of Born is unconditional from {Quantum + Record}, the frequency reading is not.
-Scope: Runner PASS=29 FAIL=0; a normalization gap is acknowledged honestly and the additivity no-go stays intact and distinct from the frequency route.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Born-residual split: the FORM of Born is unconditional inside {Quantum, Reco
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CIRCULAR for the value but conditional only on the operational identification: the form of Born is unconditional from {Quantum + Record}, the frequency reading is not.
+- Extraction scope (triage compression; may reflect later context): Runner PASS=29 FAIL=0; a normalization gap is acknowledged honestly and the additivity no-go stays intact and distinct from the frequency route.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sharpens and supersedes BORN_FROM_ENVARIANCE... (#2702) by splitting its single residual admission A3 into an internal part and a genuine residual.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Over every minimal-volume corner dissection of one lattice cell carried through TWO ticks (24 corners, 17280 minimal pieces of volume 1 out of 42504, 48 pieces per dissection) the adjacency cost is exactly [216, 256] — exactly twice the one-tick bracket [108, 128] at both ends — with both ends carrying an exact integer certificate (denominators 2 and 288) and both attained by piece-by-piece certified witnesses. Extensivity was not a safe guess: stacking makes cost subadditive so the floor could have come in strictly below 216, nothing bounded the ceiling by 256, and 11936 of the 17280 minimal pieces straddle the tick seam.
 
-Original verdict: The adjacency cost is extensive across a tick boundary — nothing here derives a metric, a curvature, or a field equation, only an exact combinatorial cost the geometry lane's constructions must pay.
-Scope: Exact for minimal-volume corner pieces only, the same class as Cycle 725; a statement about two ticks (whether every longer run does the same is open, and the ceiling side has no subadditivity argument at all); the spatial block is still a single lattice cell.
-Escape conditions (negative claims): The adjacency charge weights spatial pairs and ignores tick separation, which the note attributes to the axiom's own asymmetry rather than a modelling choice — and identifies as the reason the answer can be extensive (the tick adds pieces without adding chargeable pairs). A framework later giving the tick its own weight would be asking a different question, and the newly introduced tick-span charge is named as where such a weight would go. Certificate denominators 2 and 288 are not claimed minimal.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Adjacency cost is exactly extensive across a tick boundary (complete enumeration
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The adjacency cost is extensive across a tick boundary — nothing here derives a metric, a curvature, or a field equation, only an exact combinatorial cost the geometry lane's constructions must pay.
+- Extraction scope (triage compression; may reflect later context): Exact for minimal-volume corner pieces only, the same class as Cycle 725; a statement about two ticks (whether every longer run does the same is open, and the ceiling side has no subadditivity argument at all); the spatial block is still a single lattice cell.
+- Extraction escape conditions (negative claims; triage compression): The adjacency charge weights spatial pairs and ignores tick separation, which the note attributes to the axiom's own asymmetry rather than a modelling choice — and identifies as the reason the answer can be extensive (the tick adds pieces without adding chargeable pairs). A framework later giving the tick its own weight would be asking a different question, and the newly introduced tick-span charge is named as where such a weight would go. Certificate denominators 2 and 288 are not claimed minimal.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Answers the tick half of the open question Cycle 725 named in its own boundary; recomputes 108 and 128 in the same execution so neither half of the comparison is supplied.
 

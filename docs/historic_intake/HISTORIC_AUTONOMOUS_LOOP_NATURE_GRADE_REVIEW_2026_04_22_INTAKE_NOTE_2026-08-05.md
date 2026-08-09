@@ -18,10 +18,6 @@ required before any effective status.
 
 Hostile Nature-grade review of the 19-branch session: the loop-17/18 solar-gap 2% match is an INVERTED-ORDERING prediction mislabeled as normal ordering (the framework's pattern is a near-degenerate pair m1 = 47.54, m2 = 48.33 meV plus outlier m3 = 4.35 meV), and the 'Q=2/3 has 8 support routes' claim is INFLATED — only S4 (Frobenius/AM-GM variational) and S5 (ABSS topological) are independent.
 
-Original verdict: One P0 critical issue and several inflated claims; the O_h covariance no-go and Omega_Lambda = (H_inf/H_0)^2 survive.
-Scope: Reviews all 19 branches as a hostile referee, verdicts SURVIVES / CRITICAL ISSUE / INFLATED.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Hostile adjudication documenting that a landed note wrote 'Normal ordering prese
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): One P0 critical issue and several inflated claims; the O_h covariance no-go and Omega_Lambda = (H_inf/H_0)^2 survive.
+- Extraction scope (triage compression; may reflect later context): Reviews all 19 branches as a hostile referee, verdicts SURVIVES / CRITICAL ISSUE / INFLATED.
 - Extraction red flags: Documents that a landed note wrote 'Normal ordering preserved' on the basis of relabeled magnitudes; NO-preference in current data disfavors the prediction.
 - Supersession (as known at extraction): Adjudicates the two index notes of the same date and feeds the curated retained-science package.
 

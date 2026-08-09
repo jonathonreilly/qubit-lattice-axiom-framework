@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies the K-plaquette tube formula at k=12, rho_(p,q)(6) = (c_(p,q)(6)/c_(0,0)(6))^12, giving P = 0.5887944343 against the MC target 0.5934, a 0.78% gap (15x epsilon_witness) versus 543x for the prior d^(-16) ansatz; the residual matches the 1-loop scale 1/(2N^2 beta) = 0.93%.
 
-Original verdict: bounded_theorem, strong derivation candidate but UNAUDITED; explicitly does not claim 0.5888 is the MC value.
-Scope: L_s = 2 APBC cube with 12 plaquettes at beta = 6, Wilson character coefficients via Bessel determinant with mode_max = 200.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The K-plaquette tube candidate: rho = (c_pq/c_00)^12 gives P = 0.58879 vs 0.5934
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): bounded_theorem, strong derivation candidate but UNAUDITED; explicitly does not claim 0.5888 is the MC value.
+- Extraction scope (triage compression; may reflect later context): L_s = 2 APBC cube with 12 plaquettes at beta = 6, Wilson character coefficients via Bessel determinant with mode_max = 200.
 - Extraction red flags: Chooses among physical pictures (independent product vs Haar pairing) partly because it matches MC better; status is unaudited.
 - Supersession (as known at extraction): Supersedes the prior index-graph candidate (P = 0.4291, ~28% off) by discarding its d^(-16) Haar-pairing factor; follows the salvage of PR #516.
 

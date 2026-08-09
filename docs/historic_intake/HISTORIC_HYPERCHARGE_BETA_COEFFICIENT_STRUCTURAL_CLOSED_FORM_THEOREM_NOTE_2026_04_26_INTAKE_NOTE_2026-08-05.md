@@ -20,10 +20,6 @@ required before any effective status.
 
 b_Y = (N_color^2+2)/3 + 4 N_color/N_pair^2 + N_H/(3 N_pair) = 41/6 at (N_color, N_pair, N_H) = (3,2,1), with the GUT-normalized b_1 = (N_color/(N_color+N_pair)) b_Y = (3/5)(41/6) = 41/10 and the SU(5) factor 3/5 = N_color/(2 N_color - 1) itself exposed as structural; together with landed b_3 = 7, b_2 = 19/6, b_QED = 32/3 this completes the SM 1-loop quartet in S1-structural form.
 
-Original verdict: Retained structural corollary on the gauge-running surface completing the full SM 1-loop gauge beta-coefficient quartet.
-Scope: A retained structural reading at retained S1 values; explicitly NOT a low-energy MS-bar/PDG threshold extraction of alpha_1(M_Z) or alpha_Y(mu).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ b_Y = 41/6 structural corollary completing the landed 1-loop gauge beta quartet 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Retained structural corollary on the gauge-running surface completing the full SM 1-loop gauge beta-coefficient quartet.
+- Extraction scope (triage compression; may reflect later context): A retained structural reading at retained S1 values; explicitly NOT a low-energy MS-bar/PDG threshold extraction of alpha_1(M_Z) or alpha_Y(mu).
 - Extraction red flags: Structural rewriting of known SM coefficients in terms of retained counts; the note itself flags this is a reading, not an extraction.
 - Supersession (as known at extraction): Completes the quartet begun by the landed b_3, b_2 and b_QED structural notes; consumes the retained fractional-charge denominator theorem and the N_gen = N_color cross-sector identity.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Six dimensionless CKM magnitude ratios whose alpha_s(v) powers cancel exactly on the retained surface are forced to the structural values {2/3, 3/2, 1/9, 9, 6, 4}, plus the NLO ratio identity |V_td/V_ub|^2 = (N_quark - 1) + alpha_s(v)^2/N_pair^4.
 
-Original verdict: Any high-precision determination moving one ratio off its structural value beyond the NLO/finite-lambda scope falsifies the protected-gamma-bar surface or the structural counts.
-Scope: Structural ratio corollary only — not a new CKM fit and not an all-orders magnitude theorem; scope limited to NLO and finite lambda.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Six dimensionless CKM ratios with exact alpha_s cancellation forced to structura
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Any high-precision determination moving one ratio off its structural value beyond the NLO/finite-lambda scope falsifies the protected-gamma-bar surface or the structural counts.
+- Extraction scope (triage compression; may reflect later context): Structural ratio corollary only — not a new CKM fit and not an all-orders magnitude theorem; scope limited to NLO and finite lambda.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Sibling/compressed form of the same-day structural-integer prophecy note.
 

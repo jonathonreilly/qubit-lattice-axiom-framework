@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Executes the B3 uniqueness attack and returns B3 status: OPEN. Bare locality gives a finite menu of long-distance symbols K(p) = K_0 + K_1^i p_i + K_2^{ij} p_i p_j + O(p^3) spanning scalar-conformal, vector/plaquette, symmetric-tensor, antisymmetric/torsion and topological channels; only after ADDING a soldered-metricity / equivalence Ward identity is the geometric action sector unique up to normalization, a cosmological volume term and 4d topological boundary ambiguity.
 
-Original verdict: Not yet - the conditional metric-sector uniqueness holds, but the retained algebra does not derive the soldering/Ward identity it is conditioned on.
-Scope: Retained local event/translation algebra plus finite locality, 3+1 time-lock, tensorial covariance, additivity, second-order continuum consistency, no extra background fields and nondegenerate propagation.
-Escape conditions (negative claims): Escaped by deriving that primitive translation defects are represented by one soldered metric/coframe variable whose local frame redundancy yields the conserved symmetric spin-2 response Ward identity (delta S_matter = (1/2) int sqrt(|g|) T^{mu nu} delta g_{mu nu}).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ B3 status OPEN with the finite long-distance symbol menu and the exact missing r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not yet - the conditional metric-sector uniqueness holds, but the retained algebra does not derive the soldering/Ward identity it is conditioned on.
+- Extraction scope (triage compression; may reflect later context): Retained local event/translation algebra plus finite locality, 3+1 time-lock, tensorial covariance, additivity, second-order continuum consistency, no extra background fields and nondegenerate propagation.
+- Extraction escape conditions (negative claims; triage compression): Escaped by deriving that primitive translation defects are represented by one soldered metric/coframe variable whose local frame redundancy yields the conserved symmetric spin-2 response Ward identity (delta S_matter = (1/2) int sqrt(|g|) T^{mu nu} delta g_{mu nu}).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Executes the target named by PLANCK_SCALE_BARE_GRAVITY_SECTOR_DERIVATION_STATUS_THEOREM; contains an explicit overclaim test forbidding the reading that B3 is closed.
 

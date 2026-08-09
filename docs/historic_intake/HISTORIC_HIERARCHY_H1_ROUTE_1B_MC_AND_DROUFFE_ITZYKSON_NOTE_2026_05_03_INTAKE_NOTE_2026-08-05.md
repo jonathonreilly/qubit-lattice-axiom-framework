@@ -20,10 +20,6 @@ required before any effective status.
 
 Three independent methods agree on the SU(3) single-plaquette block at beta = 6 to ten digits — Drouffe-Itzykson Bessel determinant 0.4225317397, Haar quadrature 0.4225317396, framework Perron solve 0.4225317396 (pairwise diffs 1.476e-10) — while L=2 pure-Python Wilson MC gives <P>(6) = 0.624, 5% above the canonical bulk 0.5934, making the Pade extraction of higher onset coefficients unstable.
 
-Original verdict: One substantive result (3-way 10-digit agreement validating the framework Perron solve by an entirely different analytic route) and one quantified obstruction: closing Route 1A via MC needs a compiled-language implementation, ~1-2 months plus MC runtime; loop stopped.
-Scope: Loop iteration 2; single-plaquette block cross-check is exact, but the MC arm is finite-volume L=2 only (L=3 estimated ~55 hours in pure Python).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ Three independent methods (Drouffe-Itzykson, Haar, framework Perron) agree to te
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): One substantive result (3-way 10-digit agreement validating the framework Perron solve by an entirely different analytic route) and one quantified obstruction: closing Route 1A via MC needs a compiled-language implementation, ~1-2 months plus MC runtime; loop stopped.
+- Extraction scope (triage compression; may reflect later context): Loop iteration 2; single-plaquette block cross-check is exact, but the MC arm is finite-volume L=2 only (L=3 estimated ~55 hours in pure Python).
 - Extraction red flags: Pade analyzer explicitly unstable on the finite-volume data; L=2 MC coefficients dominated by finite-volume contamination.
 - Supersession (as known at extraction): Iteration 2 successor to HIERARCHY_H1_ROUTE_1B_HAAR_KERNEL_NOTE_2026-05-03 (iteration 1); quantifies the +50% onset-jet residual flagged in GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.
 

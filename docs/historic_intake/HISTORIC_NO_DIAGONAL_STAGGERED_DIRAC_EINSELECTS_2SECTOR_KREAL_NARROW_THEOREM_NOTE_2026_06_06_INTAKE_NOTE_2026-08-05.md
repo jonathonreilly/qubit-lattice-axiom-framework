@@ -18,10 +18,6 @@ required before any effective status.
 
 The no-diagonal axiom forces returns to hw=1 to be even-order (odd orders vanish), and even-order products of the purely-imaginary staggered-Dirac hop are real, so the emergent generation coupling is K-real to ALL orders with zero overlap with i(C-C^2), robustly across sign patterns; only a non-native mixed hop would introduce a K-odd part.
 
-Original verdict: The 2-sector partition is dynamically EINSELECTED rather than posited, discharging the retained sieve's GAP A, and the r=0 (3-mode) setting is structurally excluded — narrowing the dial to {r=1/2, r=1}.
-Scope: Derives K-reality, hence the 2-sector partition, but leaves the value r=1/2 vs r=1 open. Unaudited candidate.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ K-reality einselection derived (even-order returns are real) — discharges a re
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The 2-sector partition is dynamically EINSELECTED rather than posited, discharging the retained sieve's GAP A, and the r=0 (3-mode) setting is structurally excluded — narrowing the dial to {r=1/2, r=1}.
+- Extraction scope (triage compression; may reflect later context): Derives K-reality, hence the 2-sector partition, but leaves the value r=1/2 vs r=1 open. Unaudited candidate.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Derives what FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02 explicitly POSITED (its GAP A: 'K-reality is posited, not derived').
 

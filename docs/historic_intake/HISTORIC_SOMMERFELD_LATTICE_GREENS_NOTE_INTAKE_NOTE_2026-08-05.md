@@ -18,10 +18,6 @@ required before any effective status.
 
 Computes the Sommerfeld factor directly from the lattice Hamiltonian with no use of the analytic formula: 1D Numerov at N=20,000 gives 20/20 parameter points within 5% (errors 0.08% to 0.54%), converging as O(h^2) from 5.6% at N=500 to 0.07% at N=50,000; the Green's function resolvent cross-check reaches 2.4% error and 3D at L=16 shows ~30% error.
 
-Original verdict: COMPUTED: the Sommerfeld factor is a lattice observable, closing the 'modelled' objection to its use in the DM ratio R = Omega_DM/Omega_b.
-Scope: 1D chains up to N=50,000, Green's-function resolvent cross-check, and a 3D cubic lattice at L<=16 where the Bohr radius ~16 exceeds the box.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Sommerfeld computed from the lattice (20/20, no analytic formula) — closing th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): COMPUTED: the Sommerfeld factor is a lattice observable, closing the 'modelled' objection to its use in the DM ratio R = Omega_DM/Omega_b.
+- Extraction scope (triage compression; may reflect later context): 1D chains up to N=50,000, Green's-function resolvent cross-check, and a 3D cubic lattice at L<=16 where the Bohr radius ~16 exceeds the box.
 - Extraction red flags: The headline 20/20 is 1D only; the 3D lattice result is ~30% off and the receipt path is an unfilled placeholder (logs/YYYY-MM-DD-...).
 - Supersession (as known at extraction): Answers the Codex 'compute it, don't assert it' objection to frontier_dm_ratio_structural​.py; numerically confirms idx 1945.
 

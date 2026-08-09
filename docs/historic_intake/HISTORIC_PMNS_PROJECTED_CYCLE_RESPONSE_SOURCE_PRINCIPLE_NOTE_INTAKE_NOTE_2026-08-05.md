@@ -18,10 +18,6 @@ required before any effective status.
 
 Requiring the microscopic active response on the graph-fixed hw=1 triplet to realize the exact forward projected-cycle transport gives the unique nonfree kernel K_fwd = C^2 (unitary, cubic, K^3 = I); the response law A = I + (I - K^{-1})/lambda_act then forces A_fwd = (1 + 1/lambda_act) I - (1/lambda_act) C, giving sigma = J_chi = -1/lambda_act exactly.
 
-Original verdict: Yes - there is a smallest exact extension principle that forces a nontrivial active response pack.
-Scope: Beyond-retained-stack extension principle - explicitly not derived from the pure-retained bank.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The smallest exact extension principle: forward projected-cycle transport forces
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Yes - there is a smallest exact extension principle that forces a nontrivial active response pack.
+- Extraction scope (triage compression; may reflect later context): Beyond-retained-stack extension principle - explicitly not derived from the pure-retained bank.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The positive principle cited by the closure-status and minimal-extension notes as the branch's PMNS closure route.
 

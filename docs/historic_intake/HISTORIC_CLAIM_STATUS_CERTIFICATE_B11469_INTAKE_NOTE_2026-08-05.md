@@ -18,10 +18,6 @@ required before any effective status.
 
 proposed_retained bounded theorem: uniform analytic bound on the endpoint derivative and its affine-projection remainder over explicit scalar-transport hypotheses; no observed, fitted, admitted-unit, literature, or physical-boundary proof input; review-loop pass; physical YT/action/locality reuse stays conditional and outside the proposal.
 
-Original verdict: proposed_retained; review pass; audit required
-Scope: bounded scalar theorem only; two open imports for physical reuse
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean unlanded positive: proposed_retained uniform analytic bound on the endpoin
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): proposed_retained; review pass; audit required
+- Extraction scope (triage compression; may reflect later context): bounded scalar theorem only; two open imports for physical reuse
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

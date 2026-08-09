@@ -18,10 +18,6 @@ required before any effective status.
 
 Exhibits the exact fork: the full Hilbert trace pushes forward to atom weights (1/3, 2/3) giving r = 1 and Q = 1, while the rank-erased quotient counting trace gives (1/2, 1/2), r = 1/2 and Q = 2/3 — and because rank(P0) = 1, rank(P1) = 2, no trace-preserving map keeping the same embedded projectors can convert one into the other.
 
-Original verdict: The cleanest form of the missing physical statement is that the charged-lepton readout is a rank-erased sharp-record quotient readout rather than the full Hilbert trace/Born-rank readout; if that is derived Q = 2/3, otherwise the native reading stays Q = 1.
-Scope: Exact support / conditional bridge localization; the source-measure theorem legitimizes a quotient probability law but does not choose the reference law.
-Escape conditions (negative claims): Equal atom count is a genuine rank-erasing quotient/source principle, not a consequence of the existing full-trace state; Fisher geometry is shown not to hide the choice (the primitive signed score is valid only in the uniform reference).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -54,6 +50,9 @@ THE FORK THEOREM: full Hilbert trace gives (1/3,2/3), r=1, Q=1; the rank-erased 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The cleanest form of the missing physical statement is that the charged-lepton readout is a rank-erased sharp-record quotient readout rather than the full Hilbert trace/Born-rank readout; if that is derived Q = 2/3, otherwise the native reading stays Q = 1.
+- Extraction scope (triage compression; may reflect later context): Exact support / conditional bridge localization; the source-measure theorem legitimizes a quotient probability law but does not choose the reference law.
+- Extraction escape conditions (negative claims; triage compression): Equal atom count is a genuine rank-erasing quotient/source principle, not a consequence of the existing full-trace state; Fisher geometry is shown not to hide the choice (the primitive signed score is valid only in the uniform reference).
 - Extraction red flags: States that on the native full-trace reading the framework value is Q = 1, not the observed 2/3.
 - Supersession (as known at extraction): Explains why the closed historical flavor campaign and the current Q1 lane converge — Q = 1 is the full-trace branch and Q = 2/3 the quotient-count branch; sets the gap the objectivity audit then fails to close.
 

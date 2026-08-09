@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Exact negative boundary: staggered site parity epsilon(x)=(-1)^(x1+x2+x3) anticommutes with any nearest-neighbor odd hopping, but together with the one-site carrier M_2(C) = Cl(3,0) it does NOT supply a spacetime Clifford gamma_5 with gamma_5^2 = I anticommuting with every spacetime gamma_mu.
 
-Original verdict: The epsilon shortcut is dead; the remaining P-REC blocker is exact — supply a staggered-to-spacetime-Clifford reconstruction bridge or keep P-REC as a declared premise.
-Scope: Prunes the epsilon-shortcut route for the ABJ P-REC repair only.
-Escape conditions (negative claims): Explicitly does not rule out a taste-reconstruction theorem mapping the staggered carrier to an irreducible Dirac factor, a framework-native temporal gamma / Cl(3,1) realization plus reconstruction map, Adams/overlap/Ginsparg-Wilson routes, or a continuum Dirac-factor bridge; the retained Cl(3)->Cl(3,1) theorem can still be part of a positive route if joined to a reconstruction theorem.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Exact negative: the staggered-parity epsilon shortcut cannot supply the spacetim
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The epsilon shortcut is dead; the remaining P-REC blocker is exact — supply a staggered-to-spacetime-Clifford reconstruction bridge or keep P-REC as a declared premise.
+- Extraction scope (triage compression; may reflect later context): Prunes the epsilon-shortcut route for the ABJ P-REC repair only.
+- Extraction escape conditions (negative claims; triage compression): Explicitly does not rule out a taste-reconstruction theorem mapping the staggered carrier to an irreducible Dirac factor, a framework-native temporal gamma / Cl(3,1) realization plus reconstruction map, Adams/overlap/Ginsparg-Wilson routes, or a continuum Dirac-factor bridge; the retained Cl(3)->Cl(3,1) theorem can still be part of a positive route if joined to a reconstruction theorem.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

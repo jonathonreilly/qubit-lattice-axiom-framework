@@ -18,10 +18,6 @@ required before any effective status.
 
 61/61 checks: C^8 has zero SU(2) singlets and no chirality operator (G5_3D squares to -I, eigenvalues +/-i), wedge^2(C^8) supplies e_R and d_R but not u_R (Y=+4/3 absent, needs degree 4); the 4D taste space C^16 splits by gamma_5 into C^8_L + C^8_R, and anomaly cancellation uniquely fixes u_R(+4/3), d_R(-2/3), e_R(-2), nu_R(0) with all six anomaly conditions PASS.
 
-Original verdict: Right-handed fermions do not arise from a new graph-canonical derivation; they come from the 4D chirality structure with quantum numbers fixed by anomaly cancellation as in the SM itself.
-Scope: Staggered lattice taste space in d=3 versus d=3+1; depends on frontier_su3_formal_theorem​.py and frontier_chiral_completion​.py (32/32 PASS).
-Escape conditions (negative claims): The C^8 no-go is escaped by the temporal direction: adding it gives a proper involution gamma_5 and doubles the taste space.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The right-handed terminal: C^8 has zero SU(2) singlets and no chirality operator
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Right-handed fermions do not arise from a new graph-canonical derivation; they come from the 4D chirality structure with quantum numbers fixed by anomaly cancellation as in the SM itself.
+- Extraction scope (triage compression; may reflect later context): Staggered lattice taste space in d=3 versus d=3+1; depends on frontier_su3_formal_theorem​.py and frontier_chiral_completion​.py (32/32 PASS).
+- Extraction escape conditions (negative claims; triage compression): The C^8 no-go is escaped by the temporal direction: adding it gives a proper involution gamma_5 and doubles the taste space.
 - Extraction red flags: Concedes the right-handed charges are fixed by the same mechanism as in the SM (anomaly cancellation), i.e. not a first-principles lattice derivation.
 - Supersession (as known at extraction): Resolves the codex gate-1 search negative; FAMILY TERMINAL for the right-handed-sector question, superseding the composite route.
 

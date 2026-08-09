@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Two hostile verdicts: RESTATEMENT, because three of the four clauses are (1,1)-vs-(1,2) neutral and only 'count, dimension-blind' produces (1,1) with no independent measurement-theory justification; and OVERREACH on two fronts, since a sector-universal block-count law is falsified by Q_up = 0.849, Q_down = 0.731 and Q_nu ~ 1/3, and it collides with the Born weight (1/3, 2/3) that objective records must carry; 32/32 PASS.
 
-Original verdict: The genuinely constitutive non-overreaching content is exactly the WEAK adopted axiom (additive scalar readout), which does NOT force r = 1/2.
-Scope: Hostile pressure-test of the candidate axiom against the two competing weightings on the singlet/doublet sectors.
-Escape conditions (negative claims): The only survival for the strong reading is sector-contingency, which concedes block-count is a per-sector measure choice rather than a constitutive record law.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ Strong-record-axiom TERMINAL: the non-overreaching content is exactly the WEAK a
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The genuinely constitutive non-overreaching content is exactly the WEAK adopted axiom (additive scalar readout), which does NOT force r = 1/2.
+- Extraction scope (triage compression; may reflect later context): Hostile pressure-test of the candidate axiom against the two competing weightings on the singlet/doublet sectors.
+- Extraction escape conditions (negative claims; triage compression): The only survival for the strong reading is sector-contingency, which concedes block-count is a per-sector measure choice rather than a constitutive record law.
 - Extraction red flags: Concludes that the candidate axiom is the disputed measure renamed and that it contradicts the Born weight the same objective records carry.
 - Supersession (as known at extraction): FAMILY TERMINAL for the strong-record-axiom pressure-test series (idx 2003-2007): it reduces PT1's DERIVES-WITH-RESIDUAL to a restatement of AC_phi_lambda and matches the standing permitted-not-forced result.
 

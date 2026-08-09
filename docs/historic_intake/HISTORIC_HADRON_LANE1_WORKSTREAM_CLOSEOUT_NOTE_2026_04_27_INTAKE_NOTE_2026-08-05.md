@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes the hadron-mass workstream after 4 substantive cycles with 0 theorem-grade artifacts and 0 runners: the hygiene grep resolves cleanly, the Lane 3 checkpoint over 41 new origin/main commits finds zero quark-mass progress (Lane 6 and Lane 5 advanced instead), and no remaining candidate passes the dramatic-step gate as a single honest cycle.
 
-Original verdict: The workstream stops honestly - Lane-1-internal claim-state movement is exhausted on current framework content.
-Scope: Lane-1-internal single-cycle work only; (B2) screening and (P1) Banks-Casher both need off-workstream lattice compute.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,8 @@ The hadron workstream's HONEST STOP: four cycles, zero theorem-grade artifacts, 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The workstream stops honestly - Lane-1-internal claim-state movement is exhausted on current framework content.
+- Extraction scope (triage compression; may reflect later context): Lane-1-internal single-cycle work only; (B2) screening and (P1) Banks-Casher both need off-workstream lattice compute.
 - Extraction red flags: Records that Phase-2 3A m_pi remains blocked on a Lane 3 dependency that made zero progress in 41 upstream commits.
 - Supersession (as known at extraction): TERMINAL note of the hadron-mass-program-20260427 workstream (idx 661-668); lists four named resume conditions and four recommended manuscript weaves deliberately NOT applied.
 

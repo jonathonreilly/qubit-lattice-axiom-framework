@@ -18,10 +18,6 @@ required before any effective status.
 
 The Z^3 lattice Green's function is finite at the origin, G_L(0) = 0.2527 (Watson integral, BZ-converged 0.24995 -> 0.25245 over 50-500 points), so phi(0) = 0.2527 M is bounded for any finite M where the continuum diverges. Since g_tt = -(1-2phi)^2 is a perfect square it vanishes only at phi = 1/2 exactly, which for generic M is met at no lattice site (critical M_crit = 1/(2 G_L(0)) = 1.981 touches it only at the source site).
 
-Original verdict: g_tt > 0 at all lattice sites generically, so no event horizon forms — an upgrade of the claim from CONJECTURE (which used Schwarzschild at r ~ R_S) to CONDITIONAL (on the conformal metric form).
-Scope: Depends only on the lattice Poisson equation, Watson finiteness, and the conformal metric form g_tt = (1-2phi)^2 — notably NOT on Schwarzschild holding anywhere; but it does depend on the conformal metric being correct in strong field.
-Escape conditions (negative claims): The result is a lattice artifact that survives only if the physical lattice spacing is nonzero (a = l_Planck); as a -> 0 the regularization disappears. Whether the conformal metric is the correct strong-field metric remains open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ No-horizon theorem: G_L(0) finite bounds phi so g_tt > 0 generically — the fro
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): g_tt > 0 at all lattice sites generically, so no event horizon forms — an upgrade of the claim from CONJECTURE (which used Schwarzschild at r ~ R_S) to CONDITIONAL (on the conformal metric form).
+- Extraction scope (triage compression; may reflect later context): Depends only on the lattice Poisson equation, Watson finiteness, and the conformal metric form g_tt = (1-2phi)^2 — notably NOT on Schwarzschild holding anywhere; but it does depend on the conformal metric being correct in strong field.
+- Extraction escape conditions (negative claims; triage compression): The result is a lattice artifact that survives only if the physical lattice spacing is nonzero (a = l_Planck); as a -> 0 the regularization disappears. Whether the conformal metric is the correct strong-field metric remains open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Explicitly supersedes/complements the previous conjecture in STRONG_FIELD_HONEST_ASSESSMENT.md, replacing a Schwarzschild-dependent argument with a lattice-only one (comparison table included).
 

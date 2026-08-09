@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies mu^2 = 0.22 (screening length 2.13 sites) as a major confound distorting long-range reads and lists 12 results needing rerun at mu^2 = 0.001 (screening length 31.6 sites), with seven already rechecked: sign selectivity 150/150 CONFIRMED, boundary law strengthened from 2.7 sigma to 10.4 sigma, cycle battery identical, and the Newton mass law still NOT retained.
 
-Original verdict: Strong screening materially distorted some long-range reads but is not the universal root cause of every Poisson-coupled discrepancy; full Newton closure still fails because the both-masses law is unresolved.
-Scope: Repo-wide audit of Poisson-coupled results affected by the screening parameter, 2026-04-11.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The mu^2 = 0.22 confound work order: ~12 results need rerun at 0.001 — a param
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Strong screening materially distorted some long-range reads but is not the universal root cause of every Poisson-coupled discrepancy; full Newton closure still fails because the both-masses law is unresolved.
+- Extraction scope (triage compression; may reflect later context): Repo-wide audit of Poisson-coupled results affected by the screening parameter, 2026-04-11.
 - Extraction red flags: Documents that a parameter choice invalidated or weakened at least a dozen previously banked results (gravitational memory, decoherence scaling, Hawking-Page crossover, BH entropy exponent).
 - Supersession (as known at extraction): Work order for rerunning prior results; supersedes the mu^2 = 0.22 readings of the listed lanes.
 

@@ -20,10 +20,6 @@ required before any effective status.
 
 One bit decides both open residuals - does the observable ADD or MULTIPLY over independent direct-sum pieces: additive per-sector HS power gives 3a^2 = 6|b|^2 (r = 1/2, Q = 2/3) while per-unit-dimension gives r = 1 (Q = 1), and log|det| adds over direct sums while |det|^p multiplies for every p; the fork is literally the doublet multiplicity bit, since S_vN - H_Shannon = p_doublet ln2 = (2/3) ln2 exactly. Runner 6/6.
 
-Original verdict: One posit ('the observable is the additive record, not the pre-record multiplicative amplitude') closes both forks, but it is not forced - the baseline Born/Gleason/Lueders structure delivers the multiplicative/dimension ledger and r = 1.
-Scope: No contradiction with the retained multiplicative det result - det-multiplicativity rides the composition axis while additivity lives on the orthogonal direct-sum axis, and log|det| is the unique additive image of the det character.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The one-bit reduction: ADDITIVE vs MULTIPLICATIVE observable decides both open r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): One posit ('the observable is the additive record, not the pre-record multiplicative amplitude') closes both forks, but it is not forced - the baseline Born/Gleason/Lueders structure delivers the multiplicative/dimension ledger and r = 1.
+- Extraction scope (triage compression; may reflect later context): No contradiction with the retained multiplicative det result - det-multiplicativity rides the composition axis while additivity lives on the orthogonal direct-sum axis, and log|det| is the unique additive image of the det character.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Collapses two previously separate open problems (the nine-axis Koide value gap and the P1 log-vs-power residual) into one posit; names three forward paths including the thermalizing-arrow stabilizer.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The BLM optimal scale for the staggered fermion self-energy is q*a = 2.68 (matching the known Lepage-Mackenzie Wilson value 2.63), giving alpha_V(q*) = 0.102 and hence v = 6.0 GeV — a factor ~40 short of 246 GeV, with the inverse calculation requiring an unphysical negative alpha_V.
 
-Original verdict: The BLM prescription does NOT naturally produce the alpha_V ~ 0.14 needed for v = 246 GeV.
-Scope: 1-loop BLM scale setting fed into the hierarchy formula, with sensitivity tables in alpha_V and y_t.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ BLM negative: the optimal-scale prescription gives v = 6 GeV, a factor ~40 short
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The BLM prescription does NOT naturally produce the alpha_V ~ 0.14 needed for v = 246 GeV.
+- Extraction scope (triage compression; may reflect later context): 1-loop BLM scale setting fed into the hierarchy formula, with sensitivity tables in alpha_V and y_t.
 - Extraction red flags: A negative result against the hierarchy route: reproducing v would require unphysical negative alpha_V.
 - Supersession (as known at extraction): none recorded
 

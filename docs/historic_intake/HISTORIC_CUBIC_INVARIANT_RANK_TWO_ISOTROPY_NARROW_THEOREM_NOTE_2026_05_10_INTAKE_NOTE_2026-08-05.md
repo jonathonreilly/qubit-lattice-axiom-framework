@@ -18,10 +18,6 @@ required before any effective status.
 
 Cubic-group representation theory forces the only O_h-invariant rank-2 tensor on R^3 to be proportional to delta_ij (rank-1 and rank-3 invariants vanish), so any cubic-symmetric probability measure on a finite O_h-orbit-stable subset of Z^3 automatically has second-moment matrix M_ij = (1/3)<r^2> delta_ij with no extra rotational-isotropy axiom.
 
-Original verdict: Isotropy of second moments is a free consequence of cubic symmetry, not an assumption.
-Scope: Deliberately standalone: consumes no directional path measure, Wilson action, continuum Lagrangian, beta parameter, Cl(3) content, PDG comparator, fitted selector, or unit convention.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ O_h forces delta_ij: isotropy of second moments is FREE from cubic symmetry — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Isotropy of second moments is a free consequence of cubic symmetry, not an assumption.
+- Extraction scope (triage compression; may reflect later context): Deliberately standalone: consumes no directional path measure, Wilson action, continuum Lagrangian, beta parameter, Cl(3) content, PDG comparator, fitted selector, or unit convention.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Narrow standalone extraction from the parent architecture-directional-measure note.
 

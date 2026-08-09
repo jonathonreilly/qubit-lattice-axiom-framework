@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The near-horizon spectrum is NOT thermal (Gaussian R^2 = 0.007-0.71, mean 0.40, never above 0.9) while the far-field control IS quasi-thermal (R^2 0.82-0.94), and the Hawking scaling T versus kappa fits at R^2 = 0.13 with slope -9.28 - the wrong sign against a predicted +0.16; the diagnosis is that f > 1 makes S = L(1-f) negative, so the norm grows from 1.0 to 164 and the surface amplifies rather than traps.
 
-Original verdict: FALSIFIED - the f = 1 surface is a phase-inversion boundary that amplifies outgoing modes, not an absorbing horizon.
-Scope: 41^3 lattice, four mass strengths giving horizons at r_h = 2.9-6.8 and surface gravity 0.22-0.61.
-Escape conditions (negative claims): Three requirements named for a genuine analog: a mechanism to absorb or trap ingoing amplitude (f = 1 freezes phase but does not attenuate), quantum fluctuations converting frozen-phase modes to outgoing radiation, and an action enforcing a one-way membrane - none present in the classical path-sum.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -49,6 +45,9 @@ HAWKING ANALOG FALSIFIED: f = 1 is a phase-inversion boundary that AMPLIFIES out
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): FALSIFIED - the f = 1 surface is a phase-inversion boundary that amplifies outgoing modes, not an absorbing horizon.
+- Extraction scope (triage compression; may reflect later context): 41^3 lattice, four mass strengths giving horizons at r_h = 2.9-6.8 and surface gravity 0.22-0.61.
+- Extraction escape conditions (negative claims; triage compression): Three requirements named for a genuine analog: a mechanism to absorb or trap ingoing amplitude (f = 1 freezes phase but does not attenuate), quantum fluctuations converting frozen-phase modes to outgoing radiation, and an action enforcing a one-way membrane - none present in the classical path-sum.
 - Extraction red flags: Reports amplitude amplification by a factor of 164 - the wavepacket gains energy crossing the high-field region, which would be a conservation problem for any downstream use of the f > 1 regime.
 - Supersession (as known at extraction): Also debunks its own control: the quasi-thermal far-field shape is identified as a geometric artifact of the cos^2 kernel and 1/L^p attenuation, not physics.
 

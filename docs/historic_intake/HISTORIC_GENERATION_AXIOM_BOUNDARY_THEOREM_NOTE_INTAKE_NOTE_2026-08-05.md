@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The generation physicality gate is bounded by exactly one irreducible axiom, A5 (the lattice is physical, not a regulator): with A5 the chain closes to three irremovable species with identical gauge representations and EWSB-split masses; without A5 the fourth-root trick on a path-integral formulation of the same Hamiltonian reduces them to one species times three taste copies; and A5 cannot be derived from A1-A4 because standard lattice QCD is a consistent framework using exactly A1-A4 without it.
 
-Original verdict: A sharp obstruction with sufficiency, necessity, irreducibility and completeness all proved - A5 is the ONLY non-derived assumption in the chain.
-Scope: Uses exactly A1-A5 with no imported physics, no fitting, no finite-size extrapolation; the bounded 1+1+1 hierarchy is noted but not needed.
-Escape conditions (negative claims): The escape route is explicit and named: without A5 the fourth-root trick reduces the three species to taste copies. Conversely, adopting A5 closes the gate - so the obstruction is exactly one axiom wide, with the same logical status as the gauge-group and spacetime derivations.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The A5 boundary theorem: generation physicality bounded by exactly ONE axiom wit
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A sharp obstruction with sufficiency, necessity, irreducibility and completeness all proved - A5 is the ONLY non-derived assumption in the chain.
+- Extraction scope (triage compression; may reflect later context): Uses exactly A1-A5 with no imported physics, no fitting, no finite-size extrapolation; the bounded 1+1+1 hierarchy is noted but not needed.
+- Extraction escape conditions (negative claims; triage compression): The escape route is explicit and named: without A5 the fourth-root trick reduces the three species to taste copies. Conversely, adopting A5 closes the gate - so the obstruction is exactly one axiom wide, with the same logical status as the gauge-group and spacetime derivations.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Answers review.md's demand to either close generation physicality or prove a sharp obstruction; instructs that the paper must not claim the gate closed without qualification.
 

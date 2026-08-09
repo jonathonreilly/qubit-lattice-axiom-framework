@@ -18,10 +18,6 @@ required before any effective status.
 
 The source logarithm is not a separate undefined object: it is the exact pullback of the already-derived scalar generator, S_src[chi] = W[J_chi] with W[J] = log|det(D+J)| - log|det D| on the APBC/Higgs surface.
 
-Original verdict: After the balance law, the source side is identified with an existing generator, leaving the lift, the damping functional and the history open.
-Scope: Exact source-law reduction on the retained APBC/Higgs lane; the explicit same-surface source lift chi -> J_chi is not derived.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Source-side identification: S_src[chi] = W[J_chi] is the pullback of the already
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): After the balance law, the source side is identified with an existing generator, leaving the lift, the damping functional and the history open.
+- Extraction scope (triage compression; may reflect later context): Exact source-law reduction on the retained APBC/Higgs lane; the explicit same-surface source lift chi -> J_chi is not derived.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

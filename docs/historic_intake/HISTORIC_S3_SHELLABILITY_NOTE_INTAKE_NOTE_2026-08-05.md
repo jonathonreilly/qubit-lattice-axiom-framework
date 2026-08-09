@@ -18,10 +18,6 @@ required before any effective status.
 
 Constructs an explicit deterministic two-phase shelling (BFS over the boundary dual graph, then boundary-to-core cube peeling) verified for R = 2..5 (32/32 checks, 96 to 2448 tetrahedra), with a general-R structural argument resting on connectedness of dB_R and Bjorner shellability of the Freudenthal cube.
 
-Original verdict: EXACT: a constructive Perelman-free proof that the compactification is S^3 for all R, deterministic where the earlier collapse route could stall.
-Scope: M_R = B_R cup cone(dB_R) for all R >= 2; computational verification at R = 2..5, general R by structural induction.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -65,6 +61,8 @@ The constructive TERMINAL: deterministic two-phase shelling verified R=2..5 — 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): EXACT: a constructive Perelman-free proof that the compactification is S^3 for all R, deterministic where the earlier collapse route could stall.
+- Extraction scope (triage compression; may reflect later context): M_R = B_R cup cone(dB_R) for all R >= 2; computational verification at R = 2..5, general R by structural induction.
 - Extraction red flags: General-R claim rests on a structural argument, not machine verification beyond R=5.
 - Supersession (as known at extraction): Supersedes the collapse-based route (idx 1872, 1871) and the R=2-only Pachner route (idx 1868); FAMILY TERMINAL for the S^3 identification chain.
 

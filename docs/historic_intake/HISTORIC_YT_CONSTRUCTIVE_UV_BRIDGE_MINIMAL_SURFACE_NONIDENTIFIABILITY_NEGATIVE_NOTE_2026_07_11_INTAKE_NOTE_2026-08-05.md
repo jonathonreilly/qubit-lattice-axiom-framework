@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 On the Lattice+Qubit+Admissibility+Record surface no symbol is physically identified as a numerical Yukawa endpoint or an interacting bridge; freely adjoining endpoint and bridge-switch symbols leaves them unconstrained, and an explicit axiom-reduct model admits conservative expansions with different endpoint values and with endpoint-preserving IR-localized, diffuse and UV-localized switches. Five attacks (smallest algebraic surface, symmetry/naturality, Admissibility/Record, variational reuse, exact obstruction) meet the same wall.
 
-Original verdict: The bounded sibling's three-family profile scan is a target-conditioned numerical match, not a derivation; the free-symbol theory selects neither the endpoint value nor UV-class membership.
-Scope: Free-symbol question only; forbidden proof inputs include the target 0.9176, the old fit window, best-fit centers/widths, SM beta functions, a Ward boundary, and any target-conditioned bridge note.
-Escape conditions (negative claims): The distinct definable-composite / physical-identification question is explicitly left as the positive reopen path — a future definable physical composite plus identification theorem would evade the independence proof.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Demotes its own bounded sibling's numerical scan to target-conditioned numerolog
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The bounded sibling's three-family profile scan is a target-conditioned numerical match, not a derivation; the free-symbol theory selects neither the endpoint value nor UV-class membership.
+- Extraction scope (triage compression; may reflect later context): Free-symbol question only; forbidden proof inputs include the target 0.9176, the old fit window, best-fit centers/widths, SM beta functions, a Ward boundary, and any target-conditioned bridge note.
+- Extraction escape conditions (negative claims; triage compression): The distinct definable-composite / physical-identification question is explicitly left as the positive reopen path — a future definable physical composite plus identification theorem would evade the independence proof.
 - Extraction red flags: Retroactively reclassifies a sibling note's three-family scan (fit to y_t(v) = 0.9176) as target-conditioned rather than derived.
 - Supersession (as known at extraction): Demotes its own bounded sibling's numerical scan to a target-conditioned match; the July post-reset counterpart of the May campaign's source-identity no-gos.
 

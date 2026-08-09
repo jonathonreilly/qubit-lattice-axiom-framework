@@ -18,10 +18,6 @@ required before any effective status.
 
 Cycle 1 verified: current-stack mu_current = 0, the diagonal seesaw atmospheric benchmark requires a nonzero invertible M_R, and direct one-Higgs Dirac use of y_nu^eff gives GeV-scale rather than meV-scale mass, so no hidden global retained closure follows from combining them. Verification: new runner PASS=10 FAIL=0, majorana zero-law PASS=13, mass-derived PASS=19, observable-bounds PASS=35, audit pipeline complete and audit_lint --strict OK with only the known graph-cycle warning.
 
-Original verdict: This no-go is verified but is NOT a Lane 4 closure; Lane 4 remains open.
-Scope: Lane 4 checkpoint; a narrow compatibility fix was applied to the majorana zero-law runner after an origin/main fast-forward introduced Pfaffian/Nambu atlas rows.
-Escape conditions (negative claims): Derive a nonzero Majorana primitive or a tiny Dirac Y_nu activation law.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Lane 4 neutrino cycle-1 verdict: current-stack mu_current=0 verified, the diagon
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): This no-go is verified but is NOT a Lane 4 closure; Lane 4 remains open.
+- Extraction scope (triage compression; may reflect later context): Lane 4 checkpoint; a narrow compatibility fix was applied to the majorana zero-law runner after an origin/main fast-forward introduced Pfaffian/Nambu atlas rows.
+- Extraction escape conditions (negative claims; triage compression): Derive a nonzero Majorana primitive or a tiny Dirac Y_nu activation law.
 - Extraction red flags: An authority runner was found to be checking for a literal string rather than the semantic condition - a fragile-gate defect of the kind that can produce false PASSes elsewhere.
 - Supersession (as known at extraction): Records that an authority runner was REPAIRED because upstream main changed under it - the runner had been keying on the mere presence of the word 'Pfaffian' rather than on the non-realization boundary.
 

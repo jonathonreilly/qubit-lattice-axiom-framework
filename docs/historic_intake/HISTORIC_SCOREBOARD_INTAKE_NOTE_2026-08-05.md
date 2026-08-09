@@ -18,10 +18,6 @@ required before any effective status.
 
 Fifty-five PRs #5772-#5833 in one 24-hour window, every block shipping primary + independent adversarial checker + note + pinned caches + receipt at bounded_theorem, authority none, audit unset. Arcs: the sole clean_postimage veto (638/638) became horizon-relative and produced fifteen verified unique selections across two strata (six early transients; nine at the shared late moment t=14744, trajectory-merged via S* at 14739); the exact-time law was then DERIVED as the Record axiom's own conditional-lock clause (#5817) with the convention census closing the freedom at exactly two axes (#5819); W5 permanence is axiom NECESSITY not gap; W7's named decoder is impossible (rank 11/15 -> mixed rank 16; pure subfamily 0/3744) and every lift is a choice priced at exactly 1/256; W2 was a satisfiability ceiling (512, 0x10 of 2048); W3/W6 give twenty-five exact uniformity laws and 7,084 orbit classes of six.
 
-Original verdict: What the owner receives: 'the axioms contain the lock law; supply the schedule' — exactly two witnessed freedom axes (evaluation cadence and formation-site schedule); the Born dichotomy exact (a symmetry-breaking rate input OR orbit-class physics with 7,084 classes); W7's choice between purification and a 1/256-priced lift.
-Scope: Campaign-owned PRs only; bounded_theorem, authority none, independent audit still required throughout; no axiom, Tier-A or retained status touched.
-Escape conditions (negative claims): The forecast hypothesis class 'died honestly, in domain, 46 -> 0' — a self-reported falsification of the campaign's own hypothesis class.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ TERMINAL scoreboard of the proof-grade-close campaign: fifty-five PRs #5772-#583
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): What the owner receives: 'the axioms contain the lock law; supply the schedule' — exactly two witnessed freedom axes (evaluation cadence and formation-site schedule); the Born dichotomy exact (a symmetry-breaking rate input OR orbit-class physics with 7,084 classes); W7's choice between purification and a 1/256-priced lift.
+- Extraction scope (triage compression; may reflect later context): Campaign-owned PRs only; bounded_theorem, authority none, independent audit still required throughout; no axiom, Tier-A or retained status touched.
+- Extraction escape conditions (negative claims; triage compression): The forecast hypothesis class 'died honestly, in domain, 46 -> 0' — a self-reported falsification of the campaign's own hypothesis class.
 - Extraction red flags: one supervisor baseline error (the 801 'silent' compression) was caught by a checker's union arithmetic and corrected end-to-end (#5829); sixteen checker reversals imply a ~29 percent primary-verdict correction rate
 - Supersession (as known at extraction): TERMINAL scoreboard for the campaign; names 55 landed PRs #5772-#5833. Sixteen checker reversals/corrections materially changed shipped verdicts, including two constructive reopenings where the checker FOUND the missing object.
 

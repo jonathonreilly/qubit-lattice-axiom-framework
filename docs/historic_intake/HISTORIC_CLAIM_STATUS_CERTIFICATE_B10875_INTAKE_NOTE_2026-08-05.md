@@ -18,10 +18,6 @@ required before any effective status.
 
 Decomposes eta/eta_obs into an exact five-factor product (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs, with the ABC sub-factor closing to the PURE RATIONAL 516/53009 (derived from g_* = 427/4, g_S = 43/11, C_sph = 28/79, with pi^4 and zeta3 cancelling between s/n_gamma and d_N). FALSIFIES all four of cycle 09's candidate near-fits as structural identifications: 17/90 off by 0.055%, (31/32)sqrt(6)/(4pi) off by 0.025%, (7/8)^(1/4) sqrt(6)/(4pi) off by 0.138%, sqrt(6)/(4pi) off by 3.25% — none contains the factors that actually compute the value.
 
-Original verdict: The structural-origin question is RESOLVED — 0.1888 has an explicit five-factor form with ABC closing — while the residual is the Y0^2 phenomenological import already named in cycle 09 Obstruction 1 / cycle 12 R2.
-Scope: admitted_observation_status: g_weak = 0.653 (bare weak coupling at v_EW, phenomenological); only Y0^2 = (g_weak^2/64)^2 carries non-structural content.
-Escape conditions (negative claims): Closing Y0^2 (cycle 15's target) removes the only non-structural factor.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ Resolves and falsifies at once: eta/eta_obs = 0.1888 decomposes into an exact fi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The structural-origin question is RESOLVED — 0.1888 has an explicit five-factor form with ABC closing — while the residual is the Y0^2 phenomenological import already named in cycle 09 Obstruction 1 / cycle 12 R2.
+- Extraction scope (triage compression; may reflect later context): admitted_observation_status: g_weak = 0.653 (bare weak coupling at v_EW, phenomenological); only Y0^2 = (g_weak^2/64)^2 carries non-structural content.
+- Extraction escape conditions (negative claims; triage compression): Closing Y0^2 (cycle 15's target) removes the only non-structural factor.
 - Extraction red flags: four numerical coincidences at 0.025-0.138% had been catalogued as candidate structural identifications; this is the kind of near-fit that survives casual review
 - Supersession (as known at extraction): FALSIFIES four numerical near-fits that cycle 09 had catalogued as candidate structural origins — a correction of prior campaign content.
 

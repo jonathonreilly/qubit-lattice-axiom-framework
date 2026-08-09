@@ -18,10 +18,6 @@ required before any effective status.
 
 IF the two open inputs (alpha_3/alpha_em)(bare) = 2d+3 and Q_l = N_pair/N_color = 2/3 are accepted, then (alpha_3/alpha_em) x Q_l = N_quark = 6 forces 2d+3 = N_color^2, i.e. d = (N_color^2 - 3)/2, with d = 3 the smallest integer solution at N_color = 3 (N_color = 5 gives d = 11; even N_color is excluded as non-integer).
 
-Original verdict: A falsification and cross-extraction target, not a retained closure.
-Scope: Conditional on two load-bearing inputs flagged as conditional support (P1) and open support target (P2); no PDG observable is a derivation input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The honest three-sector support note: the quadratic d = (N_c^2-3)/2 is a falsifi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A falsification and cross-extraction target, not a retained closure.
+- Extraction scope (triage compression; may reflect later context): Conditional on two load-bearing inputs flagged as conditional support (P1) and open support target (P2); no PDG observable is a derivation input.
 - Extraction red flags: Both load-bearing inputs are explicitly non-retained (one conditional support, one open target), and the charged-lepton Q_l = 2/3 is the very value the FLAVOR campaign concludes is import-dependent.
 - Supersession (as known at extraction): The honest support-grade sibling of the theorem-grade note at idx 509; both rest on the same two conditional inputs, one of which (the bare alpha ratio) is later reported to have failed retained status.
 

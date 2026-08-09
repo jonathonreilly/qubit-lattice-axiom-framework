@@ -18,10 +18,6 @@ required before any effective status.
 
 Delay-field distortion does NOT cause decoherence, even asymmetrically: V remains ~1.000 at y=0 and unchanged at all off-center positions for ALL p from 0.0 to 0.9, for both symmetric and asymmetric field distortion, at cluster radii 1 and 2. Only p=1.0 (which changes sector-labeling, not just the field) produces any visibility change.
 
-Original verdict: Hypothesis REFUTED — decoherence in this model requires topological DAG changes, not field perturbations.
-Scope: Fixed causal DAG; delay-field/amplitude perturbations on existing edges only; cluster radii 1 and 2; distortion parameter p in [0,1].
-Escape conditions (negative claims): The negative is stated to depend on the distortion being a FIELD acting equally on all paths through a region on a FIXED DAG, and on visibility being defined as (max-min)/(max+min) over a full phase sweep (invariant to path-independent amplitude rescaling); the escape named is topology change (add/remove nodes, change the DAG), which the note says gives massive effect (I3 up to 1e9). p=1.0 escapes by changing sector-labeling rather than the field.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Exact no-go: field perturbations cannot decohere on a fixed DAG (V unchanged for
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Hypothesis REFUTED — decoherence in this model requires topological DAG changes, not field perturbations.
+- Extraction scope (triage compression; may reflect later context): Fixed causal DAG; delay-field/amplitude perturbations on existing edges only; cluster radii 1 and 2; distortion parameter p in [0,1].
+- Extraction escape conditions (negative claims; triage compression): The negative is stated to depend on the distortion being a FIELD acting equally on all paths through a region on a FIXED DAG, and on visibility being defined as (max-min)/(max+min) over a full phase sweep (invariant to path-independent amplitude rescaling); the escape named is topology change (add/remove nodes, change the DAG), which the note says gives massive effect (I3 up to 1e9). p=1.0 escapes by changing sector-labeling rather than the field.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

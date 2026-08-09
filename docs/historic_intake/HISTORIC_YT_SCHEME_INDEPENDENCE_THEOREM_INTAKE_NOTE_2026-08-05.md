@@ -18,10 +18,6 @@ required before any effective status.
 
 April-era claimed THEOREM: on the staggered Cl(3) lattice with a = l_Planck, y_t/g_s = 1/sqrt(6) holds to all orders in perturbation theory in any scheme, with corollary m_t/m_W = (g_s/g_2) sqrt(2)/sqrt(6). Proof is a three-step argument (lattice is the theory, Ward identity fixes the ratio non-perturbatively, Gamma_5-central vertex factorization protects it), checked numerically by Z_y/Z_g = 1 to machine precision on small random SU(3) configurations.
 
-Original verdict: Stated as a self-contained theorem, but its load-bearing Ward-identity input is later classified in this same branch (idx 2401) as audited-renaming and not authority.
-Scope: Scheme-independence of the RATIO y_t/g_s only, not of y_t or g_s individually; depends on A1-A5.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The April 'all orders in any scheme' y_t/g_s = 1/sqrt(6) THEOREM claim — pulle
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Stated as a self-contained theorem, but its load-bearing Ward-identity input is later classified in this same branch (idx 2401) as audited-renaming and not authority.
+- Extraction scope (triage compression; may reflect later context): Scheme-independence of the RATIO y_t/g_s only, not of y_t or g_s individually; depends on A1-A5.
 - Extraction red flags: Title-overclaim risk: labelled 'THEOREM (self-contained proof)' and 'holds to all orders in any scheme', while the same-branch May notes retire the Ward-identity authority it rests on and show 1/sqrt(6) does not fix the physical readout.
 - Supersession (as known at extraction): CONTRADICTED IN SPIRIT by the May PR #230 chain: 2401 finds yt_ward_identity is audited-renaming not authority, and 2413 shows the current surface (with 1/sqrt(6) held fixed) admits four different y_t/g_s values 0.408248/0.384900/0.288675/0.367423.
 

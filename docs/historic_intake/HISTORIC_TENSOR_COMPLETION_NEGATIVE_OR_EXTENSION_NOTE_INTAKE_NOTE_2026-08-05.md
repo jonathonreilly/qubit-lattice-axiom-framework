@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Records the sharpened split: scalar-trace-only completion is exactly and permanently dead, while the surviving positive route needs exactly two extra non-scalar boundary coordinates (a_vec, a_tf) plus a symmetric positive-definite kernel K_tensor and source drive eta satisfying K_tensor [a_vec, a_tf]^T = eta.
 
-Original verdict: Fewer than two extra non-scalar shell coordinates cannot work; two are locally sufficient for the tested mixed vector/shear directions, so the missing theorem is one rank-two tensor boundary block.
-Scope: Current audited restricted family with the exact scalar shell trace f fixed.
-Escape conditions (negative claims): The escape is fully specified as a four-step attack: find microscopic observables reducing to a_vec and a_tf, derive their Schur/Dirichlet kernel, test closure on the restricted class, then widen.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -67,6 +63,9 @@ The scalar-completion split: trace-only completion PERMANENTLY dead; the survivi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Fewer than two extra non-scalar shell coordinates cannot work; two are locally sufficient for the tested mixed vector/shear directions, so the missing theorem is one rank-two tensor boundary block.
+- Extraction scope (triage compression; may reflect later context): Current audited restricted family with the exact scalar shell trace f fixed.
+- Extraction escape conditions (negative claims; triage compression): The escape is fully specified as a four-step attack: find microscopic observables reducing to a_vec and a_tf, derive their Schur/Dirichlet kernel, test closure on the restricted class, then widen.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): FAMILY TERMINAL for the scalar-completion no-go: it fixes the exact dimension of the missing tensor block and supersedes diffuse statements of the gap.
 

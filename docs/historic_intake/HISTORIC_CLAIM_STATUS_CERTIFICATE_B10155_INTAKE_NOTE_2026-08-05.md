@@ -18,10 +18,6 @@ required before any effective status.
 
 A DEMOTION packet: PHYSICAL_LATTICE_NECESSITY_NOTE.md was carrying proposed_retained with deps declared as EMPTY while its runner actually reads 11 upstream notes plus a sibling runner. Recommends explicit dep declaration and demotion to bounded support theorem. Runner PASS=34 FAIL=0; 301 transitive descendants inherit the corrected dep chain.
 
-Original verdict: Demotion recommended; the deeper question of which upstream notes are load-bearing versus context is left open.
-Scope: Dep-declaration correctness only.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,8 @@ Demotion packet: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md carried proposed_retain
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Demotion recommended; the deeper question of which upstream notes are load-bearing versus context is left open.
+- Extraction scope (triage compression; may reflect later context): Dep-declaration correctness only.
 - Extraction red flags: A proposed_retained note with 301 descendants had declared ZERO dependencies while reading eleven upstream notes - a systemic dep-declaration failure mode.
 - Supersession (as known at extraction): DEMOTES LANDED CONTENT: docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md from proposed_retained to bounded support theorem.
 

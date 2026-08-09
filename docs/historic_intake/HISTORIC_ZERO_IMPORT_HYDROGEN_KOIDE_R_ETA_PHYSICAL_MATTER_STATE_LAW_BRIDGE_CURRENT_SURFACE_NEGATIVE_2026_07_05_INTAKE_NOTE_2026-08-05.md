@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED; four inputs are missing (KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED, ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED, owner ratification, audit acceptance).
 
-Original verdict: Support-only non-supply boundary; the bridge is unsupplied because both route theorems are unsupplied.
-Scope: The parent physical matter-state law bridge that both the KS and elementary routes feed.
-Escape conditions (negative claims): Supply either the KS route theorem (2592) or the elementary route theorem (2552) as required by the contract, then ratify and audit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The matter-state law bridge root terminal: both route theorems (KS and elementar
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the bridge is unsupplied because both route theorems are unsupplied.
+- Extraction scope (triage compression; may reflect later context): The parent physical matter-state law bridge that both the KS and elementary routes feed.
+- Extraction escape conditions (negative claims; triage compression): Supply either the KS route theorem (2592) or the elementary route theorem (2552) as required by the contract, then ratify and audit.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the matter-state law bridge and the root blocker of the whole R-eta carrier chain; packets 2600/2601 and route fork 2602 feed it. R-eta lane ladder: matter-state law bridge (2599, TERMINAL for the bridge; fork 2602) -> HW1 locus (2569) -> carrier realization (2549) -> carrier context (2596) -> h-class (2572) + single fixed-point readout (2610) -> readout retirement (2607) -> h-unit radian (2575) -> two-ninths readout (2623) -> K2 exactness (2558, LANE TERMINAL); ladder review 2606.
 

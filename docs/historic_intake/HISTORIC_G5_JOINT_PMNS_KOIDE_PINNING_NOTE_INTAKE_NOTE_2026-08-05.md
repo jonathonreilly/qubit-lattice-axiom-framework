@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Within the 9-dimensional real Hermitian algebra on H_hw=1, the H-chart tangent span and the species-diagonal subspace each have rank 3 while their sum has rank 6, so their intersection is ZERO-dimensional: H's parameter dependence is carried entirely by off-diagonal and axis-permutation pieces, and all seven secondary maps evaluated at the G1 pin give Koide Q between 0.335 and 0.460 with cosine similarity at most 0.884.
 
-Original verdict: Four flagship gates do NOT close from one observational pin - the G1 PMNS pin carries no direct information about the Sigma-diagonal weights.
-Scope: Rank computation verified to machine precision on the flattened real-Hermitian basis.
-Escape conditions (negative claims): Does NOT claim Koide Q = 2/3 is incompatible with the retained surface, does NOT claim G1 and G5 are unrelated (they share H_hw=1 and the axis basis), and does NOT foreclose the Higgs-VEV deployment lane; any map from the chart coordinates to the weights must be CONSTRUCTED rather than structurally inherited.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Joint-pinning no-go: chamber tangent and species-diagonal subspaces intersect in
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Four flagship gates do NOT close from one observational pin - the G1 PMNS pin carries no direct information about the Sigma-diagonal weights.
+- Extraction scope (triage compression; may reflect later context): Rank computation verified to machine precision on the flattened real-Hermitian basis.
+- Extraction escape conditions (negative claims; triage compression): Does NOT claim Koide Q = 2/3 is incompatible with the retained surface, does NOT claim G1 and G5 are unrelated (they share H_hw=1 and the axis basis), and does NOT foreclose the Higgs-VEV deployment lane; any map from the chart coordinates to the weights must be CONSTRUCTED rather than structurally inherited.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Closes candidate 3 (shared-source joint pinning) of the post-G1-closure successor list.
 

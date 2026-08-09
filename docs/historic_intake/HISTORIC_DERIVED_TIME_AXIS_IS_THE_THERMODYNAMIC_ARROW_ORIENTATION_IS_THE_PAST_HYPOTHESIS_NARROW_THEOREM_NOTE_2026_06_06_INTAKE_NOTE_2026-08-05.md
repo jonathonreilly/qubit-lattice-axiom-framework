@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies the unconditionally derived emergent time axis with the entropy-increase axis, so the framework derives the time AXIS while its one residual — the arrow's orientation — is exactly the past hypothesis that all of physics carries, reducing the problem of time to a universal boundary condition.
 
-Original verdict: The time axis IS the thermodynamic arrow; the past hypothesis is inherited, not derived, by the orientation firewall.
-Scope: A correlation/identification, not a new dynamics; decoherence onset is sharply monotone while long-time monotonicity is only the statistical coarse-grained second law for a finite closed system.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The time axis IS the thermodynamic arrow: unconditional identification with the 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The time axis IS the thermodynamic arrow; the past hypothesis is inherited, not derived, by the orientation firewall.
+- Extraction scope (triage compression; may reflect later context): A correlation/identification, not a new dynamics; decoherence onset is sharply monotone while long-time monotonicity is only the statistical coarse-grained second law for a finite closed system.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

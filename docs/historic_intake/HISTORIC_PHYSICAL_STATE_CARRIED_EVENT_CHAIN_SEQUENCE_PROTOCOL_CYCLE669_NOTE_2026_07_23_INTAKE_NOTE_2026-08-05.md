@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The ONLY sequence relation is the predecessor path from the one-hot cursor back to the root; the append word reads current, next-address and head tokens from local state with signature ('state','event') and ACCEPTS NO ORDINAL. Cycle661's 64 basis pointer words all traverse the identical protocol (six admitted directions append, 58 rejected leave the chain unchanged, exact inverse) and all 81 Cycle666 branch rows traverse the same adapter (63 positive-weight labels append, 3 none and 15 zero-weight preserve the no-event state). Names the EXACT MISSING MAP: A_661_coherent_sector_to_objective_event from a retained coherent direct sum of 64 pointer sectors to one ObjectiveEventToken with retained exhaust.
 
-Original verdict: The type gate returns NOT COMPARABLE for the native routes: Cycle666 gives an objective joint law within its supplied hybrid law while Cycle661 gives only a coherent-sector tensor-weight polynomial unless the missing map is imported — and on the deliberately imported formal common domain both discriminators are EXACT NULLS, which is explicitly NOT equality of physical laws.
-Scope: Three preregistered fixtures with Cycle661 unique weights 0.004395 / 0.001999 / 0.178810 versus Cycle666 finite-event weights 0.003845 / 0.001874 / 0.176016, all off-diagonal and conditional residuals EXACTLY 0.000e+00.
-Escape conditions (negative claims): Only four independent attempted families qualify and the dependent overlay does not inflate the count, so all gates fail. The named next step is a local covariant superselection or beable update supplying the missing map — which 'the protocol cannot manufacture from predecessor bookkeeping'.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Names the exact missing object for the whole program: the ONLY sequence relation
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The type gate returns NOT COMPARABLE for the native routes: Cycle666 gives an objective joint law within its supplied hybrid law while Cycle661 gives only a coherent-sector tensor-weight polynomial unless the missing map is imported — and on the deliberately imported formal common domain both discriminators are EXACT NULLS, which is explicitly NOT equality of physical laws.
+- Extraction scope (triage compression; may reflect later context): Three preregistered fixtures with Cycle661 unique weights 0.004395 / 0.001999 / 0.178810 versus Cycle666 finite-event weights 0.003845 / 0.001874 / 0.176016, all off-diagonal and conditional residuals EXACTLY 0.000e+00.
+- Extraction escape conditions (negative claims; triage compression): Only four independent attempted families qualify and the dependent overlay does not inflate the count, so all gates fail. The named next step is a local covariant superselection or beable update supplying the missing map — which 'the protocol cannot manufacture from predecessor bookkeeping'.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Its named missing map is precisely the objective-actuality wall that Cycles 671 (2810), 676 (2941), 678 (2780) and 685 (2952) all fail to cross; its predecessor overlay is consumed by Cycle 680 (idx 2836).
 

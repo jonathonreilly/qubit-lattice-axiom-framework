@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current retained, primitive and open-PR surfaces do not supply ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED. Target arithmetic is y_scale = g_2 (1/sqrt(2)) S_l with S_0 = 1/256, N_A3 = 256.08243522600384, C_A3 = 256/N_A3 = 0.9996780910571587 and S_l = C_A3 S_0 = 1/N_A3; the ten-input K4 contract is unmet.
 
-Original verdict: Support-only non-supply boundary; explicitly not the broad claim that the scale cannot be retained.
-Scope: The K4 absolute charged-lepton scale input consumed by the physical electron mass lane.
-Escape conditions (negative claims): Supply the ten K4 contract inputs, chiefly WEAK_FRONT_BASE_RETAINED, EXACT_SOURCE_SINGLETON_RETAINED, A3_PRECISION_PLACEMENT_RETAINED and NO_SOURCE_A3_DOUBLE_COUNT, plus owner ratification and audit acceptance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ K4 terminal: the absolute charged-lepton scale is NOT supplied — ten contract 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; explicitly not the broad claim that the scale cannot be retained.
+- Extraction scope (triage compression; may reflect later context): The K4 absolute charged-lepton scale input consumed by the physical electron mass lane.
+- Extraction escape conditions (negative claims; triage compression): Supply the ten K4 contract inputs, chiefly WEAK_FRONT_BASE_RETAINED, EXACT_SOURCE_SINGLETON_RETAINED, A3_PRECISION_PLACEMENT_RETAINED and NO_SOURCE_A3_DOUBLE_COUNT, plus owner ratification and audit acceptance.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for K4; upstream packets 2506 (decision), 2515 (ladder review); the three named upstream handoffs (2713/2714 weak front, 2639 exact source singleton, 2635 A3 placement) are pairwise independent per its N1 table.
 

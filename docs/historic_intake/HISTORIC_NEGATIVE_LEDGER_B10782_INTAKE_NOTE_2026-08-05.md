@@ -18,10 +18,6 @@ required before any effective status.
 
 Mines four prior negatives for their escapes rather than their headlines: PR #5693 (cycle 712) inverted the beta diagnostic under the parent's own window (biharmonic 1.005, Poisson 1.796 at N=24) but on a boundary-free torus with a PRESCRIBED source unscreened Poisson uniquely gives 4*pi*r*G -> 0.892 at N=256, and its U9 negative was measured FOR THE PROPAGATOR DENSITY ONLY (per-layer normalized RMS/N ~ 0.30, or unnormalized mass diverging 4.19e6 -> 1.38e20) leaving the verbatim live route 'any future self-consistency claim in this lane needs a source term that is not the normalized propagator density'. PR #5662 (cycle 711): self-consistent beta does not extrapolate to 1.0 (1.2747 +/- 0.0177, 1.1578 +/- 0.0012) because the fit window lies INSIDE the source and the enclosed fraction rises 0.5067 -> 0.8449. PR #5656 (cycle 710): the matched point-to-point kernel gives corr = -0.06 where the parent note reports 0.93.
 
-Original verdict: U9 is a no-go against ONE SOURCE, not against self-consistency; R16's retreat to 'the beta comparison establishes no operator as best' left operator selection OPEN, which is what makes a positive result admissible this cycle.
-Scope: The Poisson self-bound-source lane's prior negative results.
-Escape conditions (negative claims): Explicitly mined: use a source term that is not the normalized propagator density; fix the measurement window in absolute units instead of box units (the mechanism that retired cycle 712's wall).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ MAJOR landed-content contradiction, mined from proofs not headlines: docs/BOUND_
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): U9 is a no-go against ONE SOURCE, not against self-consistency; R16's retreat to 'the beta comparison establishes no operator as best' left operator selection OPEN, which is what makes a positive result admissible this cycle.
+- Extraction scope (triage compression; may reflect later context): The Poisson self-bound-source lane's prior negative results.
+- Extraction escape conditions (negative claims; triage compression): Explicitly mined: use a source term that is not the normalized propagator density; fix the measurement window in absolute units instead of box units (the mechanism that retired cycle 712's wall).
 - Extraction red flags: MAJOR: names a landed note (BOUND_STATE_SELECTION_NOTE) whose prose claims a phenomenon its own runner never flagged; and a corr = 0.93 in a parent note that re-measures as -0.06
 - Supersession (as known at extraction): Documents that docs/MATTER_SELF_FOCUSING_NOTE.md (123% -> 44.05% deviation, R^2 0.09-0.18) is leaf/verdict null/in-degree 0 prior-art evidence not authority; and that docs/BOUND_STATE_SELECTION_NOTE.md's own note records THE RUNNER NEVER FLAGGED FALL-TO-CENTER DESPITE THE PROSE CLAIMING IT.
 

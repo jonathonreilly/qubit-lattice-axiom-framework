@@ -18,10 +18,6 @@ required before any effective status.
 
 The top elementary symmetric polynomial e_3 = S_1 S_2 S_3 in the cube-shifts is S_3-invariant, unitary, Hermitian and an involution, and restricts to an S_3-equivariant unitary bijection Phi: V_1 -> V_2 with Phi(X_i) = X_{jk}; hence the hw=1 and hw=2 blocks of the taste cube are isomorphic S_3 representations, both A_1 + E.
 
-Original verdict: Airtight (Grind Program Batch 5, 29/29 PASS) — no S_3-invariant observable on C^8 can distinguish V_1 from V_2, so any such distinction must come from the hw grading itself or from operators outside End(C^8)^{S_3}.
-Scope: Hamming-weight blocks of the taste cube C^8 = (C^2)^{tensor 3} under axis-permutation S_3.
-Escape conditions (negative claims): The indistinguishability is scoped to S_3-invariant observables; the stated escapes are the hw grading itself or operators not in End(C^8)^{S_3}.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Airtight: e_3 gives an S_3-equivariant unitary bijection — no S_3-invariant ob
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Airtight (Grind Program Batch 5, 29/29 PASS) — no S_3-invariant observable on C^8 can distinguish V_1 from V_2, so any such distinction must come from the hw grading itself or from operators outside End(C^8)^{S_3}.
+- Extraction scope (triage compression; may reflect later context): Hamming-weight blocks of the taste cube C^8 = (C^2)^{tensor 3} under axis-permutation S_3.
+- Extraction escape conditions (negative claims; triage compression): The indistinguishability is scoped to S_3-invariant observables; the stated escapes are the hw grading itself or operators not in End(C^8)^{S_3}.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Batch 5 of the Grind Program, building on the Batch 4 cube-shift elementary symmetric polynomials; supplies one of the two complex dimensions of the (1,2) block in the hw-graded decomposition of End(C^8)^{S_3}.
 

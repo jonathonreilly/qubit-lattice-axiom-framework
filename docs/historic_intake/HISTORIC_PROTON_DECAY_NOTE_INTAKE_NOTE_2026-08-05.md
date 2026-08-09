@@ -18,10 +18,6 @@ required before any effective status.
 
 The 8 taste states split as 1 + 3 + 3* + 1 with quarks in the triplets and leptons in the singlets; 48 of the 64 operators connect them but lie outside the gauge algebra, so B-violation is suppressed to M_X = 1.2e19 GeV and tau_p ~ 10^47.6 years - about 10^14 times longer than SU(5) because the mediating scale is M_Planck rather than M_GUT. [B, SU(3)] = 0 exactly while [B, SU(2)] != 0 reproduces sphalerons.
 
-Original verdict: The proton is effectively stable and the prediction is sharply falsifiable - Hyper-K detecting decay at ~10^35 years would rule the framework out.
-Scope: Uses the standard GUT formula tau_p = M_X^4/(alpha_X^2 m_p^5) with the framework's Planck-scale mediator; the Z_3 generation symmetry adds a further ~1/3 suppression.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Proton effectively stable — sharply falsifiable (Hyper-K detection would refut
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The proton is effectively stable and the prediction is sharply falsifiable - Hyper-K detecting decay at ~10^35 years would rule the framework out.
+- Extraction scope (triage compression; may reflect later context): Uses the standard GUT formula tau_p = M_X^4/(alpha_X^2 m_p^5) with the framework's Planck-scale mediator; the Z_3 generation symmetry adds a further ~1/3 suppression.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

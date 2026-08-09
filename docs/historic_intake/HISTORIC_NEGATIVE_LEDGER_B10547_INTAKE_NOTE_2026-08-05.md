@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 For CHARGED leptons the det_C / r = 1/2 reading is undefined and charge-forbidden, so r = 1 is forced, with five converging routes: Coleman-Weinberg fluctuation modulus rank-2 Hessian gives r = 1; KO-mod-2 Dyson/Pfaffian parity with orthogonal K^2 = +1 gives r = 1; Berezin homogeneity degree 2 gives r = 1; no antisymmetric structure exists on the distinct-eigenvalue doublet (J commuting with diag(lambda_1, lambda_2) with lambda_1 != lambda_2 is diagonal, so J^2 >= 0); and electric charge forbids Majorana Delta_Q = 2 for a charge -1 lepton.
 
-Original verdict: r = 1 forced for charged leptons; the Wedderburn reduced-norm and Berezin Pfaffian sub-routes are refuted as undefined on the non-degenerate physical operator (they require b_i = 0 and m_mu = m_tau).
-Scope: The charged-lepton sector; the neutrino-sector Dyson class is explicitly carried open.
-Escape conditions (negative claims): The neutrino sector is charge-neutral so det_C/Majorana is Delta_Q = 0-allowed — named as a PREDICTION SURFACE and the new live lever.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -52,6 +48,9 @@ The sharpest anti-r=1/2 result in the stratum: for CHARGED leptons the det_C / r
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): r = 1 forced for charged leptons; the Wedderburn reduced-norm and Berezin Pfaffian sub-routes are refuted as undefined on the non-degenerate physical operator (they require b_i = 0 and m_mu = m_tau).
+- Extraction scope (triage compression; may reflect later context): The charged-lepton sector; the neutrino-sector Dyson class is explicitly carried open.
+- Extraction escape conditions (negative claims; triage compression): The neutrino sector is charge-neutral so det_C/Majorana is Delta_Q = 0-allowed — named as a PREDICTION SURFACE and the new live lever.
 - Extraction red flags: Directly contradicts the r = 1/2 program's charged-lepton reading: five independent routes force r = 1 for charged leptons, and the electric-charge argument (Delta_Q = 2 forbidden) is not obviously escapable. High priority for the supervisor to reconcile against the later w = 1/2 conditional selection theorem.
 - Supersession (as known at extraction): Explicit do-not-re-walk list: min-info/orbit-count weighting, max-entropy/BAE, 'chiral implies r = 1/2 magnitude' (PR #2624), eta-to-delta as a magnitude selector, and holomorphy-via-SUSY-superpotential (the framework lacks it).
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Identifies which framework predictions actually differ from standard physics and have public data: tier 1 is the cosmological constant, the triple-slit Born rule I_3 = 0, generations = spatial dimension, mass ratios and alpha_s; tier 2 covers lattice-singlet dark matter, d = 3 convergences and the frozen star.
 
-Original verdict: The cosmological constant is the best candidate because Lambda is a free parameter in GR but predicted here; convincing would require a zero-parameter prediction matching data to better than 10% that cannot be obtained by fitting.
-Scope: Roadmap prompted by the LIGO echo investigation showing the framework predicts GR-consistent waveforms (evanescent barrier), i.e. no distinguishing signal there.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The era's falsification roadmap: which predictions actually differ from standard
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The cosmological constant is the best candidate because Lambda is a free parameter in GR but predicted here; convincing would require a zero-parameter prediction matching data to better than 10% that cannot be obtained by fitting.
+- Extraction scope (triage compression; may reflect later context): Roadmap prompted by the LIGO echo investigation showing the framework predicts GR-consistent waveforms (evanescent barrier), i.e. no distinguishing signal there.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

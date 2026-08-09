@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Same x-directed run as idx 1982 restated as a hold: partner force 45/45 attractive, x-flux both-inward 45/45 with R^2 ~ 0.007, impulse both-inward 30/45 and 0/15 at side=18 with R^2 ~ 0.016.
 
-Original verdict: The x-flux gate is a strong qualitative sign check but the impulse is non-convergent and the lane still lacks trajectory closure; remains a hold.
-Scope: Open cubic staggered surface, sides 14/16/18, d=3..7, three placements, mass 0.30, G=50, mu2=0.001, N_steps=10, 45 rows; sourced from historical commit 9ad140f.
-Escape conditions (negative claims): Escape requires a genuinely new conserved-current observable or a different graph geometry, not another shell-flux or impulse variant.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The honest hold: x-flux 45/45 is a sign gate only (R^2 ~ 0.007), the impulse is 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The x-flux gate is a strong qualitative sign check but the impulse is non-convergent and the lane still lacks trajectory closure; remains a hold.
+- Extraction scope (triage compression; may reflect later context): Open cubic staggered surface, sides 14/16/18, d=3..7, three placements, mass 0.30, G=50, mu2=0.001, N_steps=10, 45 rows; sourced from historical commit 9ad140f.
+- Extraction escape conditions (negative claims; triage compression): Escape requires a genuinely new conserved-current observable or a different graph geometry, not another shell-flux or impulse variant.
 - Extraction red flags: Reports the same run as idx 1982 without new computation; sourced from a historical commit rather than a rerun.
 - Supersession (as known at extraction): Duplicate-content successor to idx 1982 (same numbers, conservative re-reading); FAMILY TERMINAL for the staggered two-body observable chain.
 

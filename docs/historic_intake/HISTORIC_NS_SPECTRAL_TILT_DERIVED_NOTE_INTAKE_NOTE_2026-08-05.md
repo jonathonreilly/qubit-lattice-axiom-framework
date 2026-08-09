@@ -18,10 +18,6 @@ required before any effective status.
 
 For d-dimensional lattice growth, n_s = 1 - 2/N_e - (d-3)/(d N_e^2) + O(1/N_e^3), so the sub-leading correction vanishes exactly at d=3, making n_s = 1 - 2/N_e exact to all orders in the graph-growth slow-roll expansion; with N_e = (1/3) ln(N_obs) and N_obs ~ 1e78 this gives n_s = 0.9667, within 0.43 sigma of Planck 2018.
 
-Original verdict: A bounded cosmological consistency check plus an exact structural selection for d=3; explicitly not paper-safe to say the framework derives the Planck spectrum from first principles or that r is predicted small.
-Scope: The numerical match is BOUNDED (depends on N_obs ~ 1e78); the vanishing at d=3 is EXACT.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ n_s = 1 - 2/N_e exact to all computed orders precisely at d=3 — an exact struc
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A bounded cosmological consistency check plus an exact structural selection for d=3; explicitly not paper-safe to say the framework derives the Planck spectrum from first principles or that r is predicted small.
+- Extraction scope (triage compression; may reflect later context): The numerical match is BOUNDED (depends on N_obs ~ 1e78); the vanishing at d=3 is EXACT.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

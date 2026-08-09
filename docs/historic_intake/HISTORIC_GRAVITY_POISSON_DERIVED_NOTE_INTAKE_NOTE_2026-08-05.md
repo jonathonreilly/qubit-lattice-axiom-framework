@@ -18,10 +18,6 @@ required before any effective status.
 
 The Green's-function mismatch M(L) = ||L^-1 delta - G_0 delta||/||G_0 delta|| vanishes exactly for L = -Delta_lat and is positive for all 10 tested alternatives (all M > 0.28); across the continuous family L_alpha = (-Delta)^alpha on [0.3, 2.5] the mismatch is strictly minimized at alpha = 1 with M(1) < 6e-16 versus M(0.9) = 0.125 and M(1.1) = 0.131.
 
-Original verdict: Nothing in the Poisson derivation chain remains open - it is an algebraic chain with no model-dependent steps.
-Scope: Assumes the framework axiom plus nearest-neighbor propagation and rho = |psi|^2 sourcing; the operator L is derived rather than chosen.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The 'nothing open' Poisson claim — pulled as the contradiction pair's maximal 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Nothing in the Poisson derivation chain remains open - it is an algebraic chain with no model-dependent steps.
+- Extraction scope (triage compression; may reflect later context): Assumes the framework axiom plus nearest-neighbor propagation and rho = |psi|^2 sourcing; the operator L is derived rather than chosen.
 - Extraction red flags: Claims nothing remains open, while the umbrella chain document (idx 646) grades this exact step BOUNDED and calls it the weakest link.
 - Supersession (as known at extraction): Explicitly upgrades SELF_CONSISTENCY_FORCES_POISSON_NOTE (numerical evidence over 5 operators) and sharpens POISSON_EXHAUSTIVE_UNIQUENESS_NOTE by reformulating uniqueness as M(alpha) = 0 at alpha = 1; completes the upstream step that NEWTON_LAW_DERIVED_NOTE assumed.
 

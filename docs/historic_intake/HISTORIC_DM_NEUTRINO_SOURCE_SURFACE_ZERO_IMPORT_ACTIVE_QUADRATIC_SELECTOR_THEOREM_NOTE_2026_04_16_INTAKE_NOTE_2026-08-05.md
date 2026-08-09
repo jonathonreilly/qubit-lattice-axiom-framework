@@ -18,10 +18,6 @@ required before any effective status.
 
 The same quadratic selector law is native, not added: with det(m I_3 + J_act) = (m + 2 q_+)((m - q_+)^2 - 3 delta^2), the zero-source curvature of W[J] = log|det(D+J)| - log|det D| gives K_act(T_delta,T_delta) = K_act(T_q,T_q) = 6/m^2 with zero cross term, so Q_act = 6(delta^2 + q_+^2) and minimizing on q_+ >= sqrt(8/3) - delta selects delta_* = q_+* = sqrt(6)/3, r31,* = 1/2, phi_+,* = pi/2.
 
-Original verdict: The point-selection law is now zero-import on the current branch.
-Scope: Uses only atlas-native rows on the single-axiom surface (observable principle, active affine point-selection boundary, active half-plane theorem); no new selector axiom or variational input.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The zero-import active-quadratic selector law: the point-selection law derived f
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The point-selection law is now zero-import on the current branch.
+- Extraction scope (triage compression; may reflect later context): Uses only atlas-native rows on the single-axiom surface (observable principle, active affine point-selection boundary, active half-plane theorem); no new selector axiom or variational input.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Successor to DM_NEUTRINO_SOURCE_SURFACE_MINIMAL_ACTIVE_DISPLACEMENT_SELECTOR_THEOREM_NOTE_2026-04-16.md (idx 382): derives natively the quadratic law that note had to add as a new input.
 

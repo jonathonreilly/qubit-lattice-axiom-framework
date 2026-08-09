@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 With t = log(mu), lambda(t_Pl - eps) = lambda(t_Pl) - eps beta_lambda(t_Pl) + O(eps^2), so lambda(M_Pl)=0 plus one-sided nonnegativity just below the boundary gives only the inequality beta_lambda <= 0, not the tangency equality; at the 3-loop Planck gauge point the stationarity value is y_star(M_Pl) = 0.388965102495. Runner SUMMARY: PASS=13 FAIL=0.
 
-Original verdict: No — no-go / exact-negative-boundary; 'critical stability' cannot silently upgrade the double-criticality selector to a retained derivation.
-Scope: Whether a weaker vacuum-stability premise derives beta_lambda(M_Pl)=0.
-Escape conditions (negative claims): A multiple-point or double-zero theorem derived from the substrate saying the Planck boundary is a double zero (observed near-criticality is forbidden as a derivation input).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Planck-stationarity sign no-go: one-sided nonnegativity forces beta_lambda(t_Pl)
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No — no-go / exact-negative-boundary; 'critical stability' cannot silently upgrade the double-criticality selector to a retained derivation.
+- Extraction scope (triage compression; may reflect later context): Whether a weaker vacuum-stability premise derives beta_lambda(M_Pl)=0.
+- Extraction escape conditions (negative claims; triage compression): A multiple-point or double-zero theorem derived from the substrate saying the Planck boundary is a double zero (observed near-criticality is forbidden as a derivation input).
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Third and last closure of the Planck-stationarity fan-out (after 2423 and 2475); it preserves the consequence map: if beta_lambda(M_Pl)=0 is later derived, y_t(v)=0.9208739295.
 

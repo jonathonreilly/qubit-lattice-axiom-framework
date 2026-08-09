@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Across 45 configurations (sides 18/20/22 x 3 placements x d=4..12) the discriminator a_mutual(SHARED) - a_mutual(FROZEN_SOURCE) is positive in only 15/45 cases (mean -0.0068 against mean a_mutual_shared -0.199 and frozen -0.192), and at short separations the FROZEN field attracts MORE strongly (0/9 positive at d=4, 6, 8; the sign flips only at d=10 and 12 with 6/9 and 9/9).
 
-Original verdict: FAIL — the mutual-channel signal is predominantly a static-field effect sourced by the initial combined density, not by a dynamically evolving gravitational feedback loop, so the lane cannot claim a dynamic gravitational channel and remains HELD.
-Scope: Parameters identical to the audited robustness sweep; the frozen control is the simplest possible (phi computed once from the initial combined density).
-Escape conditions (negative claims): The refutation is specific to these Wilson parameters and to the simplest frozen control; it does not deny mutual attraction (both SHARED and FROZEN attract relative to SELF_ONLY), leaving open whether a genuinely dynamic signal exists elsewhere in parameter space.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ THE DECISIVE CONTROL: mutual-channel discriminator positive in only 15/45 — th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): FAIL — the mutual-channel signal is predominantly a static-field effect sourced by the initial combined density, not by a dynamically evolving gravitational feedback loop, so the lane cannot claim a dynamic gravitational channel and remains HELD.
+- Extraction scope (triage compression; may reflect later context): Parameters identical to the audited robustness sweep; the frozen control is the simplest possible (phi computed once from the initial combined density).
+- Extraction escape conditions (negative claims; triage compression): The refutation is specific to these Wilson parameters and to the simplest frozen control; it does not deny mutual attraction (both SHARED and FROZEN attract relative to SELF_ONLY), leaving open whether a genuinely dynamic signal exists elsewhere in parameter space.
 - Extraction red flags: Directly contradicts the more favourable reading of the same control in TWO_BODY_ATTRACTION_FROZEN_SOURCE_NOTE (idx 2082): here the frozen baseline is stronger than SHARED on two thirds of rows.
 - Supersession (as known at extraction): Executes the exact control demanded by the promotion review at idx 2126 and returns FAIL; materially undercuts the promotion case built by idx 2083-2085, and its result differs from the sibling frozen-source note at idx 2082 (which read the same control as survived).
 

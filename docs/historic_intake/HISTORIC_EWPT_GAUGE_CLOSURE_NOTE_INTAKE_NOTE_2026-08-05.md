@@ -18,10 +18,6 @@ required before any effective status.
 
 Three attacks replace the imported R = 1.5: a gauge-effective scalar MC on L = 12-32 gives v/T = 0.56 +/- 0.05 (above the 0.52 threshold), a monotonicity theorem floors v/T at the scalar-only 0.49, and a first-principles R_NP = 1.035 gives 0.507.
 
-Original verdict: CLOSED - v/T >= 0.52 is established by Attack 1 with two independent analytic supports, leaving no conditional steps in the chain.
-Scope: The remaining external input is the magnetic mass coefficient c = 0.3 from generic pure-SU(2) lattice studies (Hart et al. 2000), not 2HDM-specific.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ The EWPT gauge-closure claim (v/T = 0.56 +/- 0.05 above threshold) WITH its own 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CLOSED - v/T >= 0.52 is established by Attack 1 with two independent analytic supports, leaving no conditional steps in the chain.
+- Extraction scope (triage compression; may reflect later context): The remaining external input is the magnetic mass coefficient c = 0.3 from generic pure-SU(2) lattice studies (Hart et al. 2000), not 2HDM-specific.
 - Extraction red flags: Two of the three attacks (0.49 floor and 0.507) fall short of the 0.52 threshold; only the MC clears it, and c = 0.3 is still literature-supplied.
 - Supersession (as known at extraction): Replaces the imported Kajantie R = 1.5 used by EWPT_LATTICE_MC_NOTE.md (idx 444) and the earlier baryogenesis chain; a later note (DM_EWPT_NATIVE, idx 354) derives a different enhancement R_E = 2.49.
 

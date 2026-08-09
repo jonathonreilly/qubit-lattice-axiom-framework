@@ -18,10 +18,6 @@ required before any effective status.
 
 Candidate-retained-grade self-contained exact algebra with a complete current-cycle runner certificate and no load-bearing imports; the source note explicitly does NOT derive r = 1/2, does not select a physical charged-lepton operator/readout, and uses no observed mass as proof input. Full N1-N8 PASS with five ATTEMPTED families each carrying a live runner locator.
 
-Original verdict: Positive theorem at algebraic scope; independent audit remains the sole authority for audited_clean.
-Scope: Per-element and per-mode scopes tested; site/block/lattice scopes explicitly not claimed.
-Escape conditions (negative claims): N7 identifies zero-mode and arbitrary-r counterarguments as the strongest steelman, both of which narrow the claim and are checked exactly.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Clean unlanded positive: candidate-retained-grade self-contained exact algebra w
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Positive theorem at algebraic scope; independent audit remains the sole authority for audited_clean.
+- Extraction scope (triage compression; may reflect later context): Per-element and per-mode scopes tested; site/block/lattice scopes explicitly not claimed.
+- Extraction escape conditions (negative claims; triage compression): N7 identifies zero-mode and arbitrary-r counterarguments as the strongest steelman, both of which narrow the claim and are checked exactly.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): N8 records that the same two repair mechanisms have already retired the closest prior overclaims.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 The narrowed v4 replacement for the axiom-depth note: given three retained requirements (native SU(2) bivectors, the cubic 8=1+1+3+3 orbit algebra, anomaly-forced parity with d_t=1) the unique compatible Clifford dimension is n=3, with R2 alone forcing n=3 exactly. The four-generation exclusion is upgraded to a family-wide no-go on the odd-n cubic Cl(n)/Z^n family by constructing the hw=1 observable algebra explicitly for n=3,5,7,9,11,13 and proving it equals M_n(C) acting irreducibly (runner 50 THEOREM + 32 SUPPORT, 0 FAIL).
 
-Original verdict: PROPOSED - conditional minimality SUPPORT only; an internal-consistency diagnostic, not axiom-depth closure.
-Scope: Explicitly NOT a first-principles derivation of d_s=3, does NOT absorb it into the axiom, does NOT derive the Z^n cubic geometry, and excludes four generations only on the cubic family under the hw-orbit-is-physical-species semantics.
-Escape conditions (negative claims): The four-generation no-go is escaped by non-cubic lattices, or by higher-dim Cl(n) with non-hw-orbit species assignments - it is explicitly not semantics-free.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,9 @@ The era's disciplined d_s=3 conditional-minimality support note (v4): three reta
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PROPOSED - conditional minimality SUPPORT only; an internal-consistency diagnostic, not axiom-depth closure.
+- Extraction scope (triage compression; may reflect later context): Explicitly NOT a first-principles derivation of d_s=3, does NOT absorb it into the axiom, does NOT derive the Z^n cubic geometry, and excludes four generations only on the cubic family under the hw-orbit-is-physical-species semantics.
+- Extraction escape conditions (negative claims; triage compression): The four-generation no-go is escaped by non-cubic lattices, or by higher-dim Cl(n) with non-hw-orbit species assignments - it is explicitly not semantics-free.
 - Extraction red flags: None material - the note is unusually disciplined about what it does not claim; the residual issue is that R2's 2^n=8 requirement still conditions on a Z^3-proven orbit structure (circularity acknowledged).
 - Supersession (as known at extraction): SUPERSEDES idx 10011 (same-day v1) and records the reviewer-forced narrowing across v1->v4. Cites docs/NATIVE_GAUGE_CLOSURE_NOTE.md, docs/ANOMALY_FORCES_TIME_THEOREM.md, docs/THREE_GENERATION_STRUCTURE_NOTE.md, docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md.
 

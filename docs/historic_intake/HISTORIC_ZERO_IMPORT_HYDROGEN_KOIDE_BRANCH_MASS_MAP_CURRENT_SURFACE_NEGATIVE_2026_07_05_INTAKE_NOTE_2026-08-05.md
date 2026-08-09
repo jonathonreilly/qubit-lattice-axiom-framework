@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current surfaces do not supply KOIDE_BRANCH_MASS_MAP_RETAINED. Four of ten inputs are missing (Brannen circulant branch form, square-root mass readout, positive chamber/sign rule, scale parameter composition); comparator arithmetic at delta = 2/9 gives r_e(delta)^2 = 0.001628115093... with m_e = a_l^2 r_e(delta)^2.
 
-Original verdict: Support-only non-supply boundary; the cleanest wall is the square-root readout/chamber side, where the algebraic theorem permits formal m_k := x_k^2 while refusing to identify the symbols with physical charged-lepton square-root masses.
-Scope: The branch-to-mass map input needed by the physical electron mass lane.
-Escape conditions (negative claims): Supply the four missing inputs (chiefly a physical square-root readout and chamber/sign rule) plus owner ratification and audit acceptance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Branch-mass-map terminal: four of ten inputs missing; the cleanest wall is the p
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; the cleanest wall is the square-root readout/chamber side, where the algebraic theorem permits formal m_k := x_k^2 while refusing to identify the symbols with physical charged-lepton square-root masses.
+- Extraction scope (triage compression; may reflect later context): The branch-to-mass map input needed by the physical electron mass lane.
+- Extraction escape conditions (negative claims; triage compression): Supply the four missing inputs (chiefly a physical square-root readout and chamber/sign rule) plus owner ratification and audit acceptance.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the branch mass map; packet 2518 feeds it. TERMINAL non-supply boundary for its subtarget in the 2026-07-04/05 zero-import-hydrogen sweep (campaign umbrella: goal packet idx 2514, route triage idx 2667).
 

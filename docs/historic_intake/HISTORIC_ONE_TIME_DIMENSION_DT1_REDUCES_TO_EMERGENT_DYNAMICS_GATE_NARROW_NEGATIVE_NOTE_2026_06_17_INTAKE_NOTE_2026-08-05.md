@@ -18,10 +18,6 @@ required before any effective status.
 
 d_t = 1 factors as [LOWER: d_t in {1,3,5,...} from the anomaly/Clifford bridge, conditional on declared premises] intersect [UPPER: d_t <= 1 carried ENTIRELY by the declared premise B-AXIS.3/N5], and a computed witness exhibits a second independent commuting clock on H = tensor_x C^2 — so multi-time is kinematically realizable and N5 is non-vacuous.
 
-Original verdict: d_t = 1 reduces with NO new admission to the emergent-dynamics gate and is NOT derivable on the current surface; the three candidate upper-bound forcings (Tegmark well-posedness, Record single-order, Clifford-within-odd) are external, circular, or symmetry-blind.
-Scope: Proposes no status change and edits no other note; runner TOTAL PASS=9 FAIL=0, deterministic, no RNG.
-Escape conditions (negative claims): The honest open atom: a framework-internal reason the emergent dynamics is single-generator (a registration-direction / one-clock ingredient) excluding the realizable second commuting clock without presupposing it; no such route exists on the current surface, and the sharpest next artifact is a direct N5 no-go.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ d_t = 1 reduced with NO new admission to the emergent-dynamics gate — the time
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): d_t = 1 reduces with NO new admission to the emergent-dynamics gate and is NOT derivable on the current surface; the three candidate upper-bound forcings (Tegmark well-posedness, Record single-order, Clifford-within-odd) are external, circular, or symmetry-blind.
+- Extraction scope (triage compression; may reflect later context): Proposes no status change and edits no other note; runner TOTAL PASS=9 FAIL=0, deterministic, no RNG.
+- Extraction escape conditions (negative claims; triage compression): The honest open atom: a framework-internal reason the emergent dynamics is single-generator (a registration-direction / one-clock ingredient) excluding the realizable second commuting clock without presupposing it; no such route exists on the current surface, and the sharpest next artifact is a direct N5 no-go.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Distinguishes itself explicitly from the arrow admission — N5 governs dimensionality, the arrow governs direction, and d_t = 1 does not reduce to the arrow.
 

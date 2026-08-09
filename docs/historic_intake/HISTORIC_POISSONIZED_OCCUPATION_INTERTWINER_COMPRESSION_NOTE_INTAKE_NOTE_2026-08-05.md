@@ -18,10 +18,6 @@ required before any effective status.
 
 With a(U) = Tr(U)/3 and independent Poisson M, N of mean lambda = beta/2, E[a^M conj(a)^N] = exp[(beta/6)(Tr U + Tr U^dag) - beta], so w_beta(U) = e^beta E[...] exactly; on a finite periodic lattice the normalized partition function and anchored numerator become Poisson expectations of link-Haar amplitudes, and truncating to m + n <= K gives a finite alphabet with an explicit uniform tail bound. At beta = 6, lambda = 3.
 
-Original verdict: Exact law closed, exact finite small low-carrier closure impossible, exact useful resummed representation closed.
-Scope: Exact resummation with truncation tail bound; leaves only a faster evaluator or tighter recursion open.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Exact Poissonized resummed law (the useful exact evaluator surviving the finite 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Exact law closed, exact finite small low-carrier closure impossible, exact useful resummed representation closed.
+- Extraction scope (triage compression; may reflect later context): Exact resummation with truncation tail bound; leaves only a faster evaluator or tighter recursion open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Survives the earlier finite low-carrier no-go and is itself sharpened by the link-channel compression note.
 

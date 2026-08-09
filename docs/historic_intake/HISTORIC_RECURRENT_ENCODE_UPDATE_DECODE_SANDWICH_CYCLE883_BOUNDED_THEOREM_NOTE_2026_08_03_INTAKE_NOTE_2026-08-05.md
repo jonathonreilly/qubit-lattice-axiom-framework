@@ -18,10 +18,6 @@ required before any effective status.
 
 Defining the literal physical serial word S_L := V_L^dagger U_L V_L over Cycle 870's compiled matter law gives exp(-i phi_L) S_L J_L = J_L G_L, hence channel(S_L^n J_L) = channel(J_L G_L^n) for every fixed nonnegative external invocation count n — proved by algebraic induction from the all-vector intertwiner and restored domain rather than a materialized 2^(6N) matrix. Executed at open L=2 (composite 24,826 primitive / 271,178 routed gates, 5,228 support M2) and held L=3 (91,984 / 1,117,604, 20,138), with canonical composite digests 912ff53e... and 7128f62f..., and transported covariance over all 24 proper-cubic frames and 576 ordered products with zero failures.
 
-Original verdict: The recurrent sandwich closes as a positive bounded theorem, retiring forward-only replay by composition while genesis, scheduling, topology, numerical-law selection, time, Record, Born and gravity remain open.
-Scope: Fixed open cubic L=2 and held L=3 on the one supplied clean Cycle-870 embedding; no autonomous genesis or all-volume scheduler claimed; n is not time, duration, or rate; coherently controlling different invocation counts is excluded because the projective phase becomes relative unless compensation is physically compiled.
-Escape conditions (negative claims): Negative-promotion stress test is explicitly FAIL for any impossibility, minimum-content, shared-obstruction, or axiom-pressure promotion: fewer than five normalized families are closed and one construction succeeds; local spent refusal, alternating buffers, moving garbage/entropy rails, local stabilizer pumps, and direct endpoint-incidence preparation all remain open, and none of the remaining boundaries presently requires an axiom.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Recurrent encode-update-decode sandwich: exp(-i phi_L) S_L J_L = J_L G_L for eve
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The recurrent sandwich closes as a positive bounded theorem, retiring forward-only replay by composition while genesis, scheduling, topology, numerical-law selection, time, Record, Born and gravity remain open.
+- Extraction scope (triage compression; may reflect later context): Fixed open cubic L=2 and held L=3 on the one supplied clean Cycle-870 embedding; no autonomous genesis or all-volume scheduler claimed; n is not time, duration, or rate; coherently controlling different invocation counts is excluded because the projective phase becomes relative unless compensation is physically compiled.
+- Extraction escape conditions (negative claims; triage compression): Negative-promotion stress test is explicitly FAIL for any impossibility, minimum-content, shared-obstruction, or axiom-pressure promotion: fewer than five normalized families are closed and one construction succeeds; local spent refusal, alternating buffers, moving garbage/entropy rails, local stabilizer pumps, and direct endpoint-incidence preparation all remain open, and none of the remaining boundaries presently requires an axiom.
 - Extraction red flags: The inherited one-particle mass numbers (analytic 0.4534056541748852, rest 0.4534056541748851, residual 1.11e-16) are stated to remain conditional inputs, not selected laws; audit status remains the independent audit lane's responsibility.
 - Supersession (as known at extraction): Builds on the Cycle-870 physical matter compiler; retires forward-only replay.
 

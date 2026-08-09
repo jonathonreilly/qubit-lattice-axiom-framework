@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes all 4 Gate-2 reviewer items across iters 8-11 (chamber-wide sigma_hier = (2,1,0) unique over 13k chamber points, A-BCC signature (1,0,2) from Tr = 0 and det > 0, split-2 carrier dominance certified at margin 0.115, and a 17/17 DM mapping giving eta_fit/eta_obs = 0.5579), while Gate-1 Bridge A, Bridge B strong-reading and N1 stay narrowed after three negative fresh angles.
 
-Original verdict: The Gate-2 open list is exhausted; the remaining Gate-1 primitives are judged un-derivable within the retained Atlas without new axioms or new dynamics, so the loop stops.
-Scope: 11 loop iterations on branch evening-4-21 against the canonical reviewer surface; 50 tests PASS across iters 8-11.
-Escape conditions (negative claims): States the two escapes for the residual primitives: new framework axioms beyond Cl(3)/Z^3, or new physical-dynamics mechanisms outside the observable-grounded reviewer surface.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -58,6 +54,9 @@ Reviewer-closure loop TERMINAL: all four Gate-2 items closed across iters 8-11 â
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Gate-2 open list is exhausted; the remaining Gate-1 primitives are judged un-derivable within the retained Atlas without new axioms or new dynamics, so the loop stops.
+- Extraction scope (triage compression; may reflect later context): 11 loop iterations on branch evening-4-21 against the canonical reviewer surface; 50 tests PASS across iters 8-11.
+- Extraction escape conditions (negative claims; triage compression): States the two escapes for the residual primitives: new framework axioms beyond Cl(3)/Z^3, or new physical-dynamics mechanisms outside the observable-grounded reviewer surface.
 - Extraction red flags: Labels results 'Nature-grade' on the basis of dense-grid sampling and empirical Lipschitz bounds; N1 is retained as a primitive observational identity at 0.16% deviation, and eta_fit/eta_obs = 0.56 is only O(1) agreement.
 - Supersession (as known at extraction): FAMILY TERMINAL for the reviewer-closure loop (idx 1812-1827): consolidates all 11 iterations and issues the stopping rationale.
 

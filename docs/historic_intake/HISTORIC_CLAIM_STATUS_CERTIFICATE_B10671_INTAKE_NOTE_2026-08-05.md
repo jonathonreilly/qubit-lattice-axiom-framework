@@ -18,10 +18,6 @@ required before any effective status.
 
 Corrects the action-density bound to `J_action <= |m| + 78` on the d = 4, r_W = 1, beta = 6, N_c = 3 symmetric-canonical surface; conditional surface status is the exact_H_locality_bridge, which remains outside this row.
 
-Original verdict: Correction landed at source level; the exact-H locality bridge stays open.
-Scope: One symmetric-canonical surface with fixed d, r_W, beta, N_c; not a parent microcausality promotion.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Correction of a previously published bound, on the record: the action-density bo
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Correction landed at source level; the exact-H locality bridge stays open.
+- Extraction scope (triage compression; may reflect later context): One symmetric-canonical surface with fixed d, r_W, beta, N_c; not a parent microcausality promotion.
 - Extraction red flags: corrects a previously published coefficient; the prior value is not stated here
 - Supersession (as known at extraction): closes_by_correction — corrects a previously stated normalization/coefficient on this row.
 

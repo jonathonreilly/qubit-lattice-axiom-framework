@@ -20,10 +20,6 @@ required before any effective status.
 
 At PDG central (s_12^2, s_13^2) = (0.307, 0.0218) the chamber closure exists only for s_23^2 >= 0.540970 (brentq to 12 digits), where the pinned point saturates q_+ + delta = sqrt(8/3) to 1e-14; over the whole NuFit 5.3 3-sigma rectangle the threshold surface stays in [0.5335, 0.5476], strictly above maximal mixing, so G1 predicts theta_23 in the UPPER octant - falsifiable at JUNO/DUNE/Hyper-K.
 
-Original verdict: The threshold is a structural feature of the retained H-diagonalization map, not a fragility, and it yields a falsifiable upper-octant prediction.
-Scope: A sharpened consequence of the retained PMNS-as-f(H) map plus the chamber constraint; no new axiom or post-axiom selector.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,8 @@ The theta_23 upper-octant threshold: chamber closure exists only for s_23^2 >= 0
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The threshold is a structural feature of the retained H-diagonalization map, not a fragility, and it yields a falsifiable upper-octant prediction.
+- Extraction scope (triage compression; may reflect later context): A sharpened consequence of the retained PMNS-as-f(H) map plus the chamber constraint; no new axiom or post-axiom selector.
 - Extraction red flags: Reports a 'coincidence' that the Schur-Q variational candidate and the PMNS-pinning degeneration locus both lie on the chamber boundary line - flagged as structural observation, but the two arrive there for different reasons.
 - Supersession (as known at extraction): Resolves the SERIOUS-3 theta_23 octant fragility raised against the Physicist-H closure; the same threshold is quoted by Physicist-J (idx 535).
 

@@ -20,10 +20,6 @@ required before any effective status.
 
 IDENTIFIES THE EXACT CAUSE of the Cycle-513 failure: Cycle 513 froze the axis-0 machine-exact matter-nonzero count for the update-3 pre-collision II factor as 35,857 while axis 1 has 35,815 and axis 2 has 35,756 — yet the underlying EXACT SYMBOLIC support is 30,207 on all three axes, and the support above the 1e-14 ceiling is also 30,207 on every axis, with axis-dependent excess coefficients of combined squared norm only 1.054e-31, 1.055e-31 and 1.072e-31. Therefore sum(value != 0j) was an INVALID proper-cubic support fixture — a floating representation predicate, not an algebraic support invariant.
 
-Original verdict: A REPRESENTATION DECISION, not completed update 3: the next growth stage must use exact symbolic support for structural support and resource proofs, because numerical amplitudes remain the evolution surface but machine-zero/nonzero counts CANNOT select support.
-Scope: Every separated prefix and geometry predicate passes on all three axes; all 27/27 exact matter and named-mediator factor rows pass; all 216 frame/factor comparisons pass with a PREDETERMINED exterior-CAR sign census of 12 positive and 12 negative frames and no fitted phase.
-Escape conditions (negative claims): Gate result FAIL for every broad negative; a compiler no-go is premature. Growth within this simulator does not by itself supply a physical parity compiler.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ RETRACTION identifying the exact cause of the Cycle-513 failure: Cycle 513 froze
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): A REPRESENTATION DECISION, not completed update 3: the next growth stage must use exact symbolic support for structural support and resource proofs, because numerical amplitudes remain the evolution surface but machine-zero/nonzero counts CANNOT select support.
+- Extraction scope (triage compression; may reflect later context): Every separated prefix and geometry predicate passes on all three axes; all 27/27 exact matter and named-mediator factor rows pass; all 216 frame/factor comparisons pass with a PREDETERMINED exterior-CAR sign census of 12 positive and 12 negative frames and no fitted phase.
+- Extraction escape conditions (negative claims; triage compression): Gate result FAIL for every broad negative; a compiler no-go is premature. Growth within this simulator does not by itself supply a physical parity compiler.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): RETRACTS the validity of Cycle 513's (idx 3016) frozen nonzero-count fixture — a genuine methodological correction identifying a floating-point artifact masquerading as a covariance failure. Repairs the fixture without completing growth.
 

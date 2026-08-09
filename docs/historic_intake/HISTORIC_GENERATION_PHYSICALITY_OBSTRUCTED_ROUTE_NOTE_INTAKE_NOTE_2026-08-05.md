@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Tabulates all eleven candidate closure results (Fermi-point, rooting undefined, gauge universality, projected inequivalence, EWSB split, Dai-Freed anomaly, scattering distinguishability, universality class, five-fold consistency, Berry/K-theory, little groups) and shows each fails to close the gate; the missing element is the ontological axiom A0 (the lattice is the physical substrate), which is irreducible because the formalism is self-consistent with or without it and no internal signal distinguishes regulator from substrate.
 
-Original verdict: The gate cannot be closed mathematically; the paper-safe claim is 'Conditional on (A0)'.
-Scope: Claims the mathematical content of the lattice structure has been COMPLETELY characterized - the gap is a missing axiom, not a missing computation.
-Escape conditions (negative claims): The escape is explicitly not a computation but an axiom: adopting A0 closes the gate, and the note argues this is the same status every physical framework's foundational ontological claim has.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -57,6 +53,9 @@ The generation-physicality OBSTRUCTION INVENTORY: all eleven closure candidates 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The gate cannot be closed mathematically; the paper-safe claim is 'Conditional on (A0)'.
+- Extraction scope (triage compression; may reflect later context): Claims the mathematical content of the lattice structure has been COMPLETELY characterized - the gap is a missing axiom, not a missing computation.
+- Extraction escape conditions (negative claims; triage compression): The escape is explicitly not a computation but an axiom: adopting A0 closes the gate, and the note argues this is the same status every physical framework's foundational ontological claim has.
 - Extraction red flags: Asserts that no additional theorem exists - a strong exhaustiveness claim about the mathematical surface.
 - Supersession (as known at extraction): Supersedes the CLOSED framing of GENERATION_PHYSICALITY (idx 624) by enumerating exactly why each of its arguments falls short.
 

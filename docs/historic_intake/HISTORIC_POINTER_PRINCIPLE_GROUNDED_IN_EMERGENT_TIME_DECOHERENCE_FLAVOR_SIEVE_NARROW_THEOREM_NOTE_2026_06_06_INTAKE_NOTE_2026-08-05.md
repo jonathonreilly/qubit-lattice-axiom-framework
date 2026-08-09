@@ -18,10 +18,6 @@ required before any effective status.
 
 H_S = M + |K|(J - I) generates emergent-time (record-count I-axis) translation, so its eigenstates are the durable records; an energy-monitoring coupling H_int ~ H_S tensor B dephases all other coherences; and the H_S eigenbasis is the corner (mass) basis when M dominates and the C_3/DFT basis carrying the singlet W (overlap 1.000, the trimaximal column) when |K| dominates - exactly the sieve's dominant-operator pointer principle. Leptons then give large PMNS, quarks V_CKM = I.
 
-Original verdict: The admitted pointer principle is grounded in the emergent-time decoherence dynamics rather than posited.
-Scope: Grounds which basis records form in, not the spectra; uses a generic energy-monitoring decoherence model, so it is a conditional grounding; does not close the flavor sector (r=1/2 count-selector and staggered-Dirac admission untouched).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Pointer-principle re-grounding replacing a REFUTED position-detection grounding 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The admitted pointer principle is grounded in the emergent-time decoherence dynamics rather than posited.
+- Extraction scope (triage compression; may reflect later context): Grounds which basis records form in, not the spectra; uses a generic energy-monitoring decoherence model, so it is a conditional grounding; does not close the flavor sector (r=1/2 count-selector and staggered-Dirac admission untouched).
 - Extraction red flags: Records that a previously used grounding for the same principle was refuted.
 - Supersession (as known at extraction): Replaces the REFUTED position-detection grounding (the corner basis is the momentum basis and generation-blind) with a generation-dependent energy sieve; converts the predictability sieve's open slot into a conditional grounding.
 

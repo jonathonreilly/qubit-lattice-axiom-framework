@@ -18,10 +18,6 @@ required before any effective status.
 
 Antiperiodic boundary conditions are not an extra choice but forced, via five independent routes: spin-statistics from Cl(3) structure, staggered bipartite parity for odd L, the Grassmann fermionic measure, zero-mode lifting in the determinant comparison, and the identification APBC = BZ corner momenta = taste resolution (runner 40/40 PASS).
 
-Original verdict: APBC is derived from spin-statistics, not posited.
-Scope: Answers a specific Codex objection that APBC was an extra boundary-condition choice.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ APBC forced via five independent routes (spin-statistics from Cl(3) etc.) — a 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): APBC is derived from spin-statistics, not posited.
+- Extraction scope (triage compression; may reflect later context): Answers a specific Codex objection that APBC was an extra boundary-condition choice.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

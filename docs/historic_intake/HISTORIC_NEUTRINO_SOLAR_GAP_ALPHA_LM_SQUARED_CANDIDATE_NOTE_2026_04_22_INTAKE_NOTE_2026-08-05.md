@@ -18,10 +18,6 @@ required before any effective status.
 
 Replacing the retained eps/B = alpha_LM/2 with a candidate alpha_LM^2 changes the predicted solar splitting from 4.19e-4 eV^2 (5.6x too big) to 7.56e-5 eV^2, matching the observed 7.41e-5 to 2%, while preserving the atmospheric splitting at 2.22e-3 (8% low) and normal ordering (m_1 = 4.4 < m_2 = 47.5 < m_3 = 48.3 meV).
 
-Original verdict: Would CLOSE the retained solar-gap open lane (9/9 PASS) — the first concrete quantitative match within 2% after ~9 commits / 4 months — but the outstanding structural step is a retained derivation that does not exist on main.
-Scope: Conditional on deriving eps/B = alpha_LM^2 from retained structure via a proposed three-level staircase (k_C = 9) with second-order residual-sharing.
-Escape conditions (negative claims): The required extension is well-scoped and not a new axiom: extend the adjacent-placement theorem to a three-level staircase and prove second-order residual-sharing gives alpha_LM^2.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The solar-gap alpha_LM^2 proposal: first quantitative match on the retained open
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Would CLOSE the retained solar-gap open lane (9/9 PASS) — the first concrete quantitative match within 2% after ~9 commits / 4 months — but the outstanding structural step is a retained derivation that does not exist on main.
+- Extraction scope (triage compression; may reflect later context): Conditional on deriving eps/B = alpha_LM^2 from retained structure via a proposed three-level staircase (k_C = 9) with second-order residual-sharing.
+- Extraction escape conditions (negative claims; triage compression): The required extension is well-scoped and not a new axiom: extend the adjacent-placement theorem to a three-level staircase and prove second-order residual-sharing gives alpha_LM^2.
 - Extraction red flags: A numerical match found by substituting a different coefficient into a retained theorem, with the supporting mechanism explicitly not yet derived.
 - Supersession (as known at extraction): Proposes replacing the RETAINED eps/B = alpha_LM/2 of NEUTRINO_MAJORANA_RESIDUAL_SHARING_SPLIT_THEOREM; its structural proposal is written up at idx_pos 1210.
 

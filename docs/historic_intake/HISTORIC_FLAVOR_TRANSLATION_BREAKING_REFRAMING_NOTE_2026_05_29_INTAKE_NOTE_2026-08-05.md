@@ -18,10 +18,6 @@ required before any effective status.
 
 Translation invariance (axiom A2) makes any translation-invariant mass diagonal in the momentum basis so b = 0 exactly, but the PREDICTIVE Koide relation Q = 1/3 + (2/3)r needs b != 0 - hence a vacuum condensate at the corner-connecting momentum Q* = (pi,pi,0) at strength b/a = 1/sqrt2, i.e. spontaneous translation-symmetry breaking, which three independent computations show the fermion vacuum does not produce.
 
-Original verdict: The Koide value problem IS a spontaneous translation-symmetry-breaking problem, unsupplied by native fermion-vacuum dynamics - a concrete computable target for the bridge-gap action.
-Scope: With b = 0 one has three independent diagonal masses, so Q = 2/3 would be a tuned coincidence of three free numbers rather than the Koide relation.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The unifying reframe: the Koide value problem IS a spontaneous translation-symme
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The Koide value problem IS a spontaneous translation-symmetry-breaking problem, unsupplied by native fermion-vacuum dynamics - a concrete computable target for the bridge-gap action.
+- Extraction scope (triage compression; may reflect later context): With b = 0 one has three independent diagonal masses, so Q = 2/3 would be a tuned coincidence of three free numbers rather than the Koide relation.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Unifies the whole 2026-05-29 arc (retracted flat direction, nonperturbative relocation, Jahn-Teller, multicritical coexistence, heat-kernel frame) into one statement.
 

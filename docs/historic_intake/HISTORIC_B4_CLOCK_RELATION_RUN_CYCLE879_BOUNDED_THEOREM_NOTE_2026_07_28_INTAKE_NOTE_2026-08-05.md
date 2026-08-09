@@ -18,10 +18,6 @@ required before any effective status.
 
 The B=4 relation run on 4,770,145 clock events (5.8x the B=3 corpus, longest clock 6,512 events): within-key exhaustion persists but weakens (278 of 8,171 substantive comparisons carry a whole-cadence dictionary, 3.4% vs 2.7% at B=3), the across-key translation law strengthens, and the orbit-commensurability law BREAKS — it was a B=3 accident.
 
-Original verdict: One law strengthens under a larger B and one law falsifies as an artifact of B=3; the B-AXIS discharge map is updated accordingly.
-Scope: Owner-directed campaign-5 closure of the B-AXIS discharge map's largest open row, with probe deviations disclosed (store cap set to the horizon rather than the nominal 1,024, which would have truncated 1,788 clocks and discarded 1,956,769 events).
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ B=4 discharge map on 4.77M clock events: one law strengthens, one prior orbit-co
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): One law strengthens under a larger B and one law falsifies as an artifact of B=3; the B-AXIS discharge map is updated accordingly.
+- Extraction scope (triage compression; may reflect later context): Owner-directed campaign-5 closure of the B-AXIS discharge map's largest open row, with probe deviations disclosed (store cap set to the horizon rather than the nominal 1,024, which would have truncated 1,788 clocks and discarded 1,956,769 events).
 - Extraction red flags: Falsifies a previously stated orbit-commensurability law; runs with a disclosed deviation from the nominal probe cap.
 - Supersession (as known at extraction): Re-derives the Cycle-866 B=4 probe from the 719 core (matches its declaration exactly: 27 stations, 324 separated placements, census 648).
 

@@ -20,10 +20,6 @@ required before any effective status.
 
 The four candidate carrier axioms (intrinsic Cl_4(C) module, two-orbital CAR Fock, Hermitian anticommutator pair, parity-Z_2 plus Cl_3 triple) collapse to a single structural class — the irreducible Cl_4(C) module axiom on P_A H_cell — with (c) strictly weaker (span rank 4 < 16).
 
-Original verdict: An honest closure of (G1) requires either extending A_min by an explicit Cl_4(C) carrier axiom or accepting that (G1) and (C1) remain open in the current A_min posture.
-Scope: Cycle 5 of the (C1) gate loop after Cycles 2-4 closed frames A1, A2, A4 negatively; branch-local audit-grade note.
-Escape conditions (negative claims): The minimal carrier axiom is statable without observed values or fitted parameters but is non-derivable from A_min per Cycles 2-4; the only escapes named are adding the Cl_4(C) axiom to A_min or leaving the gate open.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Four candidate carrier axioms collapse to ONE structural class (irreducible Cl_4
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): An honest closure of (G1) requires either extending A_min by an explicit Cl_4(C) carrier axiom or accepting that (G1) and (C1) remain open in the current A_min posture.
+- Extraction scope (triage compression; may reflect later context): Cycle 5 of the (C1) gate loop after Cycles 2-4 closed frames A1, A2, A4 negatively; branch-local audit-grade note.
+- Extraction escape conditions (negative claims; triage compression): The minimal carrier axiom is statable without observed values or fitted parameters but is non-derivable from A_min per Cycles 2-4; the only escapes named are adding the Cl_4(C) axiom to A_min or leaving the gate open.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Cycle 5 of the hubble-c1-absolute-scale-gate-20260428 loop, successor to the Cycle 2-4 negative closures of A1/A2/A4 and predecessor to the Cycle 6 stuck fan-out.
 

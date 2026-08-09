@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Computing R from a ratio of thermal freeze-out yields fails because the baryon abundance is an asymmetry relic (n_B - n_Bbar, parameterized by eta ~ 6e-10) not a symmetric freeze-out relic; if baryons froze out symmetrically the density would be orders of magnitude below observation.
 
-Original verdict: No algebraic trick reduces the asymmetry calculation to a cross-section calculation - R is honestly a ONE-parameter prediction using the observed eta, not zero-parameter.
-Scope: Three escape routes were considered and each rejected (compute eta from H, asymmetric dark matter, eta fixed by degrees of freedom at the EWPT).
-Escape conditions (negative claims): The negative dissolves only if eta itself is derived: a full out-of-equilibrium baryogenesis/leptogenesis calculation from H, or an asymmetric-dark-matter model supplying both eta_DM and eta_b; the sphaleron conversion factor B = 28/79 IS framework-computable, but the input lepton asymmetry is not.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Structural no-go: baryon abundance is an asymmetry relic, so no algebraic trick 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): No algebraic trick reduces the asymmetry calculation to a cross-section calculation - R is honestly a ONE-parameter prediction using the observed eta, not zero-parameter.
+- Extraction scope (triage compression; may reflect later context): Three escape routes were considered and each rejected (compute eta from H, asymmetric dark matter, eta fixed by degrees of freedom at the EWPT).
+- Extraction escape conditions (negative claims; triage compression): The negative dissolves only if eta itself is derived: a full out-of-equilibrium baryogenesis/leptogenesis calculation from H, or an asymmetric-dark-matter model supplying both eta_DM and eta_b; the sphaleron conversion factor B = 28/79 IS framework-computable, but the input lepton asymmetry is not.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Its honest 'one-parameter prediction' framing directly contradicts the zero-parameter claims of DM_GRAPH_NATIVE (idx 362) and DM_RELIC_GAP_CLOSURE (idx 398).
 

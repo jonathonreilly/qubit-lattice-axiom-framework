@@ -18,10 +18,6 @@ required before any effective status.
 
 Candidate-retained-grade self-contained finite-volume operator theorem with zero load-bearing in-repo dependencies, zero approved-primitive dependence, zero observed/fitted/literature input, and no open physical selector or source/action bridge inside the stated finite Wilson theorem; the runner implements 6 exact theorem checks plus 10 support/falsifier checks and all three review lanes passed after narrow fixes.
 
-Original verdict: Branch-local classification candidate-retained-grade — explicitly not an audit verdict.
-Scope: A finite Wilson transfer positivity theorem; beta = 6 Perron/thermal data is explicitly outside scope.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean unlanded positive: candidate-retained-grade self-contained finite-volume o
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Branch-local classification candidate-retained-grade — explicitly not an audit verdict.
+- Extraction scope (triage compression; may reflect later context): A finite Wilson transfer positivity theorem; beta = 6 Perron/thermal data is explicitly outside scope.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

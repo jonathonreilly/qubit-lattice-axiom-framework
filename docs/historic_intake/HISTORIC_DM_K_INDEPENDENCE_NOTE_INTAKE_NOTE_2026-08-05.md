@@ -18,10 +18,6 @@ required before any effective status.
 
 The curvature term k/a^2 is 1.2e-29 of the radiation term at T = 40 GeV, so for k in {-1,0,+1} and any T_F > 1 MeV, |Omega_DM(k) - Omega_DM(0)|/Omega_DM(0) < 10^-20; the x_F solver returns identical values for k=0 and k=+1 to machine precision.
 
-Original verdict: Removes the k = 0 flatness bounded assumption from the DM chain; the other bounded assumptions (g_bare = 1, Stosszahlansatz) are unchanged.
-Scope: Freeze-out temperatures T_F > 1 MeV in the radiation era, curvature entering only through H.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ k-independence theorem: curvature term 1.2e-29 of radiation at T_F — removes t
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Removes the k = 0 flatness bounded assumption from the DM chain; the other bounded assumptions (g_bare = 1, Stosszahlansatz) are unchanged.
+- Extraction scope (triage compression; may reflect later context): Freeze-out temperatures T_F > 1 MeV in the radiation era, curvature entering only through H.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Retires check 11 (k=0 flatness) of frontier_dm_friedmann_from_newton​.py.
 

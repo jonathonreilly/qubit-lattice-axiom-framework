@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The transport ratio eta/eta_obs factorises entirely through the source-package observables (gamma, E1, E2, K00, cp1, cp2), every one of which is chamber-blind, so eta/eta_obs = 0.188785929502 at ALL four candidate selector points A/B/C/D and the level set {eta/eta_obs = 1} is EMPTY on the chamber.
 
-Original verdict: The physics requirement eta/eta_obs = 1 cannot pick among the four candidates - the chamber is a level manifold of the transport observable.
-Scope: Retained-atlas-native; uses the current-bank blindness theorem as the load-bearing input.
-Escape conditions (negative claims): The blindness is a property of the current bank: the note explicitly identifies that an observable NOT factoring through the frozen source package would escape the blindness theorem, which is exactly the P3/PMNS lane the sibling notes then exploit.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ eta is chamber-blind (factorizes through chamber-constant observables) at 0.1888
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The physics requirement eta/eta_obs = 1 cannot pick among the four candidates - the chamber is a level manifold of the transport observable.
+- Extraction scope (triage compression; may reflect later context): Retained-atlas-native; uses the current-bank blindness theorem as the load-bearing input.
+- Extraction escape conditions (negative claims; triage compression): The blindness is a property of the current bank: the note explicitly identifies that an observable NOT factoring through the frozen source package would escape the blindness theorem, which is exactly the P3/PMNS lane the sibling notes then exploit.
 - Extraction red flags: The retained transport chain gives eta/eta_obs = 0.1888, a factor ~5 below observation, everywhere on the chamber.
 - Supersession (as known at extraction): none recorded
 

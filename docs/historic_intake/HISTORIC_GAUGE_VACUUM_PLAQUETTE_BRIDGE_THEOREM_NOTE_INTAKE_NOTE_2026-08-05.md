@@ -18,10 +18,6 @@ required before any effective status.
 
 Closes the insertion gap by four exact ingredients: the plaquette is exactly the source derivative of the unique additive local scalar generator W_loc(j) = log Z_1plaq(beta+j) - log Z_1plaq(beta); the scalar 3+1 bridge ratio is A_inf/A_2 = 2/sqrt(3); the plaquette density scales as P(u_0 V) = u_0^4 P(V) so only the fourth root Gamma_sc = (2/sqrt(3))^(1/4) preserves the four-link coupling map; and the incidence factor is 6/4 = 3/2. Hence P(beta) = P_1plaq(beta * (3/2) * (2/sqrt(3))^(1/4)), giving beta_eff = 9.329531846652698, P(6) = 0.593530679977098 and u_0 = 0.877729698485538.
 
-Original verdict: The bridge theorem is closed; what remains is the repo-wide numeric migration from the historical same-surface value 0.5934 to the analytic value, a downstream implementation sweep rather than a theorem gap.
-Scope: The 3+1 scalar route on the minimal APBC block; the uniqueness argument is that a one-link object carries a first root and a two-link object a square root, so only the plaquette's four link powers admit the fourth root.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The scalar-bridge theorem closing the plaquette insertion gap by four exact ingr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The bridge theorem is closed; what remains is the repo-wide numeric migration from the historical same-surface value 0.5934 to the analytic value, a downstream implementation sweep rather than a theorem gap.
+- Extraction scope (triage compression; may reflect later context): The 3+1 scalar route on the minimal APBC block; the uniqueness argument is that a one-link object carries a first root and a two-link object a square root, so only the plaquette's four link powers admit the fourth root.
 - Extraction red flags: Numeric migration on main still pending a dedicated rerun, so downstream lanes still carry the old 0.5934.
 - Supersession (as known at extraction): Closes the gap the companion GAUGE_VACUUM_PLAQUETTE_ANALYTIC_SUPPORT_NOTE (idx 3609, same date) declared open, promoting its support candidate 0.593530679977098 to a theorem value.
 

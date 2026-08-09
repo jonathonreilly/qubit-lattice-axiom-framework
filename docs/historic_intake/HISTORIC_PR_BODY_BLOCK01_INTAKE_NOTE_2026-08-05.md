@@ -18,10 +18,6 @@ required before any effective status.
 
 States the full A_min-to-Q chain: locality is structural (PHYSICAL_LATTICE_NECESSITY section 9) so OP Theorems 1+2 give the unique additive CPT-even scalar generator W = log|det(D+J)| with source domain span{P_x} for local scalar observables; the ONSITE no-go puts Z outside span{P_x} because Z has cross-site entries via the cyclic shift R; Canonical-descent T1 gives the unique trace-preserving local descent E_loc(sI + zZ) = (s - z/3)I; and CRIT kills the reduced traceless coordinate, giving Y = I_2 and Q = 2/3. Runner PASS=29 FAIL=0 including a check that m_e, m_mu, m_tau and Q_obs are not used as proof inputs.
 
-Original verdict: proposed_retained, audit required before effective retained; the strict-reading inference is the load-bearing new piece and is flagged for adjudication.
-Scope: Q only; the block proposes promoting NINE publication-matrix rows if audit ratifies.
-Escape conditions (negative claims): If the strict-reading inference is judged to remain interpretive, the status should drop to support (V4 framing).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -55,6 +51,9 @@ The full A_min-to-Q chain: locality via PHYSICAL_LATTICE_NECESSITY section 9 plu
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): proposed_retained, audit required before effective retained; the strict-reading inference is the load-bearing new piece and is flagged for adjudication.
+- Extraction scope (triage compression; may reflect later context): Q only; the block proposes promoting NINE publication-matrix rows if audit ratifies.
+- Extraction escape conditions (negative claims; triage compression): If the strict-reading inference is judged to remain interpretive, the status should drop to support (V4 framing).
 - Extraction red flags: The chain's newly load-bearing authority (PHYSICAL_LATTICE_NECESSITY section 9) was demoted three days into May for undeclared dependencies; and the second load-bearing authority (OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE) was demoted in the same campaign for five admitted bridge assumptions. Both demotions post-date this proposal.
 - Supersession (as known at extraction): Claims to RETIRE the observed m_e/m_mu/m_tau and Q_obs as load-bearing inputs, and to newly EXPOSE PHYSICAL_LATTICE_NECESSITY_NOTE section 9 as load-bearing - a note that cycle 7 of the May audit campaign (idx 10155) later demotes from proposed_retained to bounded support after finding its declared deps empty.
 

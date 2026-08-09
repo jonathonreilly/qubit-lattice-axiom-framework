@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Boost covariance S D(A^-1 p) S^-1 = D(p) does force the faithful spinor over the scalar, but it is provably blind to the two data that constitute Fermi statistics: S and -S conjugate the kernel identically so the double-valuedness S(2pi) = -1 lies in ker(Spin -> SO(4)) and is neither used nor produced, and tracelessness of Sigma_munu is necessary but not sufficient for half-integer spin (an integer-spin generator is traceless too).
 
-Original verdict: The statistics-blind boost-covariance route cannot supply the fermionic datum; FS sharpens to (A) the half-integer-carrier attachment and (B) delivering the emergent-time Cl(3,0) -> Cl(3,1) e_4-doubling as a positive-energy microcausal massive Dirac field.
-Scope: Group-theoretic and kernel-realization-independent (holds for any gamma-kernel); a 13-agent panel found the proposed cross-site escape true but duplicative of already-retained results, and its sole claimed novelty (rescuing L1) is false.
-Escape conditions (negative claims): The negative bounds only the covariance route. Two named positive residuals remain: (A) the half-integer-carrier attachment, whose only retained forcing route runs through the UNAUDITED Kawamoto-Smit reconstruction; and (B) the e_4-doubling delivery, which is partially supported (the doubling itself is retained) with the open dependency being the rung-C spectrum condition H >= 0 plus reflection positivity. (B) is named highest-leverage.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ The reasons below are the supervisor's selection rationale; they carry no claim 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The statistics-blind boost-covariance route cannot supply the fermionic datum; FS sharpens to (A) the half-integer-carrier attachment and (B) delivering the emergent-time Cl(3,0) -> Cl(3,1) e_4-doubling as a positive-energy microcausal massive Dirac field.
+- Extraction scope (triage compression; may reflect later context): Group-theoretic and kernel-realization-independent (holds for any gamma-kernel); a 13-agent panel found the proposed cross-site escape true but duplicative of already-retained results, and its sole claimed novelty (rescuing L1) is false.
+- Extraction escape conditions (negative claims; triage compression): The negative bounds only the covariance route. Two named positive residuals remain: (A) the half-integer-carrier attachment, whose only retained forcing route runs through the UNAUDITED Kawamoto-Smit reconstruction; and (B) the e_4-doubling delivery, which is partially supported (the doubling itself is retained) with the open dependency being the rung-C spectrum condition H >= 0 plus reflection positivity. (B) is named highest-leverage.
 - Extraction red flags: Records that five independent exercise slices all returned duplicates_existing = true, i.e. the lane was re-deriving retained content.
 - Supersession (as known at extraction): Banks a 13-agent panel verdict; consistent with four standing CAR no-gos and grants the escape's strongest form (a 1-dimensional intertwiner space) in full, which is what makes it duplicative.
 

@@ -18,10 +18,6 @@ required before any effective status.
 
 Reviewer-facing compression of the whole direct lane: six assumptions (physical package, primitive cell, primitive count object class, Axiom Extension P1, gravity matching, standard constants) and an eight-step theorem chain from dim(H_cell) = 16 and rank(P_A) = 4 to c_cell = 1/4 and a = l_P, with per-step supplier notes, verifier commands, exact imports/non-imports and denial points.
 
-Original verdict: Submission claim: on the physical package plus P1 plus the standard area/action normalization, the direct lane derives a = l_P.
-Scope: Explicitly NOT submitted as a theorem of the older minimal ledger in isolation; the minimal-ledger-only objection is to be conceded as a scope objection.
-Escape conditions (negative claims): Denial points named: refusing P1 leaves the state law unforced and the claim must be rescoped; refusing gravity matching leaves the dimensionless coefficient only.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -151,6 +147,9 @@ The reviewer-facing terminal of the whole April Planck lane: six assumptions, de
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Submission claim: on the physical package plus P1 plus the standard area/action normalization, the direct lane derives a = l_P.
+- Extraction scope (triage compression; may reflect later context): Explicitly NOT submitted as a theorem of the older minimal ledger in isolation; the minimal-ledger-only objection is to be conceded as a scope objection.
+- Extraction escape conditions (negative claims; triage compression): Denial points named: refusing P1 leaves the state law unforced and the claim must be rescoped; refusing gravity matching leaves the dimensionless coefficient only.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): The reviewer-facing terminal artifact of the whole April PLANCK_SCALE family, indexing the native derivation packet as its primary theorem packet and listing every supplier note in chain order.
 

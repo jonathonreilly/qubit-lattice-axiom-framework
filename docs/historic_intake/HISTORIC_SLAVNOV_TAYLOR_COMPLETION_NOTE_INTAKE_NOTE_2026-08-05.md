@@ -18,10 +18,6 @@ required before any effective status.
 
 Derives the non-perturbative Slavnov-Taylor identity for the gauged staggered action from three exact ingredients (Ward {Eps,D_stag} = 2mI, bipartite {Eps,D_hop} = 0, G5 centrality), giving {Eps, Lambda_mu} = 0 and D[G5] = G5*D[I]; 26/26 PASS with errors 0.0 to 5.4e-16 across five masses and multiple random SU(3) configurations.
 
-Original verdict: CLOSED: Lane 4 (y_t matching) is upgraded from BOUNDED to CLOSED with no remaining gaps in the lattice-level argument, leaving only ~1% SM RG uncertainty.
-Scope: d=3 staggered lattice, L=4, arbitrary SU(3) gauge configurations; argument relies on G5 centrality, true only for odd d.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The Slavnov-Taylor CLOSED declaration on an L=4 lattice — pulled WITH the flag
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): CLOSED: Lane 4 (y_t matching) is upgraded from BOUNDED to CLOSED with no remaining gaps in the lattice-level argument, leaving only ~1% SM RG uncertainty.
+- Extraction scope (triage compression; may reflect later context): d=3 staggered lattice, L=4, arbitrary SU(3) gauge configurations; argument relies on G5 centrality, true only for odd d.
 - Extraction red flags: Declares a lane CLOSED on the basis of an L=4 lattice and algebraic identities; the underlying y_t chain still imports alpha_s(M_Pl) as BOUNDED.
 - Supersession (as known at extraction): Closes the single open item left by RENORMALIZED_YT_THEOREM_NOTE (idx 1802); FAMILY TERMINAL for the Lane 4 lattice-level argument.
 

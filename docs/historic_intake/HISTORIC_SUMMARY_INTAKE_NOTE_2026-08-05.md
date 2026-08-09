@@ -18,10 +18,6 @@ required before any effective status.
 
 Five-lens physicist panel, all SUSTAINED, plus the final decision surface: E1 (fine clock) gives 182 stamps with 33 monitor-independent absolutes but 68 stamps nothing on the tick ever files; E2 (tick clock) gives 114 stamps reproducing the landed corpus exactly but all monitor-relative, trios never record, the literal trigger does not survive infinite volume, and 73/114 lock content later revised; stabilization is a third structure (56 at set / 126 later / incomplete at horizon), not derivable as a forced threshold. Recommended mechanism: register the chosen reading as a record-cadence primitive with Cycle 859's machine-checked blast radius 9,320 untouched / 69 implicit / 31 confirmation-only refires.
 
-Original verdict: Model-scoped primitive adoption is sound; axiom-text amendment premature; the mathematics privileges no horn, and the supervisor's E2 recommendation is flagged as advice, not audited record.
-Scope: 11-site toy at one prime ring; the lattice/QCA lens explicitly warns that one dynamics on one prime ring is an existence proof, not a law.
-Escape conditions (negative claims): Axiom-text amendment is unblocked only by the general definition + scaling theorem, plus for E2 a non-empty infinite-volume reading.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -51,6 +47,9 @@ Terminal decision surface of the 2026-08-01 foundation review: five physicist le
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Model-scoped primitive adoption is sound; axiom-text amendment premature; the mathematics privileges no horn, and the supervisor's E2 recommendation is flagged as advice, not audited record.
+- Extraction scope (triage compression; may reflect later context): 11-site toy at one prime ring; the lattice/QCA lens explicitly warns that one dynamics on one prime ring is an existence proof, not a law.
+- Extraction escape conditions (negative claims; triage compression): Axiom-text amendment is unblocked only by the general definition + scaling theorem, plus for E2 a non-empty infinite-volume reading.
 - Extraction red flags: Thermodynamicist lens says E2's recurrence-anchored timing is 'thermodynamically backwards'; 73 of E2's 114 stamps lock content later revised - a serious cost to the reading that reproduces the landed corpus. Owner decision was still pending at note time.
 - Supersession (as known at extraction): Terminal summary of the 2026-08-01 foundation review (cycles 856-862, PRs #5878/#5880/#5881/#5882); records 'thirty reversals, every one recorded' program-wide.
 

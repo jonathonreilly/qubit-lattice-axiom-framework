@@ -18,10 +18,6 @@ required before any effective status.
 
 Independent algebraic route Cl(3) = M_2(C) -> Cl^+(3) = H -> Spin(3) = SU(2) = S^3, with 39/39 numerical checks at machine precision (100 random algebra tests residual 4.4e-16, 1000 unit quaternions, Hopf linking number computed 0.9998, simply transitive action on 500 point pairs, lambda_1 = 3/R^2 from the SU(2) Casimir).
 
-Original verdict: BOUNDED: the algebra is airtight but the step from 'SU(2) is the rotation symmetry' to 'M^3 IS SU(2)' needs a simply transitive action, i.e. homogeneity plus isotropy, not derivable from A1+A2.
-Scope: Regular d=3 lattice with staggered structure, axioms A1 (graph) and A2 (unitarity); assumption A4 (spatial homogeneity/isotropy) is additional input.
-Escape conditions (negative claims): Three named routes to close A4: derive isotropy from an isotropic growth rule, an SU(2) anomaly-cancellation argument, or spectral matching to the lattice representation content.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ The independent algebraic route: Cl(3) -> Cl+(3) = H -> Spin(3) = SU(2) = S^3 (3
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED: the algebra is airtight but the step from 'SU(2) is the rotation symmetry' to 'M^3 IS SU(2)' needs a simply transitive action, i.e. homogeneity plus isotropy, not derivable from A1+A2.
+- Extraction scope (triage compression; may reflect later context): Regular d=3 lattice with staggered structure, axioms A1 (graph) and A2 (unitarity); assumption A4 (spatial homogeneity/isotropy) is additional input.
+- Extraction escape conditions (negative claims; triage compression): Three named routes to close A4: derive isotropy from an isotropic growth rule, an SU(2) anomaly-cancellation argument, or spectral matching to the lattice representation content.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Logically independent second path to S^3 with a different gap from the main topological path; feeds idx 1851.
 

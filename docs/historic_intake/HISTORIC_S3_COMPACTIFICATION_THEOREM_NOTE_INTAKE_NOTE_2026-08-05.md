@@ -18,10 +18,6 @@ required before any effective status.
 
 Audit that DOWNGRADES the S^3 claim from 'structural/derived' to BOUNDED, finding two formal gaps: G1, Hamiltonian homogeneity is imported not derived (the prior claim that identical local Hilbert-space factors force regularity is stated to be incorrect), and G2, that closure preserves simple connectivity is unproved. Also flags that no cubic lattice embedding of S^3 exists (the natural periodic closure of Z^3 is T^3).
 
-Original verdict: BOUNDED (near-structural): S^3 is a strong conjecture supported by exact results and reasonable assumptions, not a derived theorem.
-Scope: Audit of the finite-H -> regular graph -> closed -> simply connected -> Perelman chain; runner PASS=10 FAIL=2.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The honest S^3 downgrade: 'structural/derived' -> BOUNDED with two formal gaps n
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): BOUNDED (near-structural): S^3 is a strong conjecture supported by exact results and reasonable assumptions, not a derived theorem.
+- Extraction scope (triage compression; may reflect later context): Audit of the finite-H -> regular graph -> closed -> simply connected -> Perelman chain; runner PASS=10 FAIL=2.
 - Extraction red flags: Explicitly retracts a previously claimed structural result and calls a prior note's regularity argument incorrect; also quotes RP^3 ratio 2.40, disagreeing with both 0.920 (idx 1848) and 2.45 (idx 1840).
 - Supersession (as known at extraction): Directly corrects the prior 'ALL TESTS PASS / structural' framing of S3_COMPACTIFICATION_NOTE (idx 1850) and its Argument A.
 

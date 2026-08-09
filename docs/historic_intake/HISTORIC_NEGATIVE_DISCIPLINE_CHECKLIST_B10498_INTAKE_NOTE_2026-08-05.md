@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Eight attempted routes fail to force L^{-1} = G_0 with H = -Delta_lat fixed; the decisive countermodels are L = 2H and L = H(I+H), which preserve translation, proper-cubic, self-adjoint, finite-range, and Cl(3) covariance yet have different inverses, with exact multipliers differing at k = (pi,0,0) and on nonzero-measure momentum sets. Two independent walls are separated: W1 (derive L^{-1} = G_0 with the propagator fixed) and W2 (derive the propagator selector H = -Delta_lat), and the headline closes W1 negatively while GRANTING W2.
 
-Original verdict: PASS for the narrow exact fixed-propagator non-forcing theorem; the checklist does not support a universal claim that Poisson or a future field-selection theorem is impossible.
-Scope: Logical implication from the named current premise set; no interacting nonlinear-gravity or empirical-viability claim, and no all-finite-range classification.
-Escape conditions (negative claims): A theorem turning common substrate plus field self-consistency into equality of the full inverse graphs; the open record-faithful dynamics PRs #5178, #5237, #5250 classify conditional dynamics families but do NOT supply the bridge. Choosing c = 1 by convention settles normalization only and cannot remove H(I+H).
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Exact non-forcing no-go against landed uniqueness wording: eight routes fail to 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): PASS for the narrow exact fixed-propagator non-forcing theorem; the checklist does not support a universal claim that Poisson or a future field-selection theorem is impossible.
+- Extraction scope (triage compression; may reflect later context): Logical implication from the named current premise set; no interacting nonlinear-gravity or empirical-viability claim, and no all-finite-range classification.
+- Extraction escape conditions (negative claims; triage compression): A theorem turning common substrate plus field self-consistency into equality of the full inverse graphs; the open record-faithful dynamics PRs #5178, #5237, #5250 classify conditional dynamics families but do NOT supply the bridge. Choosing c = 1 by convention settles normalization only and cannot remove H(I+H).
 - Extraction red flags: Two landed notes with uniqueness-sounding titles (SELF_CONSISTENCY_FORCES_POISSON, POISSON_EXHAUSTIVE_UNIQUENESS) are shown to establish only preference within a tested family and a 21-candidate finite diagnostic — neither is a logical forcing result.
 - Supersession (as known at extraction): Targets docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md; DROPS docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md and docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md (a 21-candidate finite diagnostic) as proof witnesses; keeps docs/GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md and docs/CLOSURE_T2_GNEWTON_REAUDIT_NOTE_2026-05-10_t2gnewton.md as prior route warnings whose residuals are NOT retired on origin/main.
 

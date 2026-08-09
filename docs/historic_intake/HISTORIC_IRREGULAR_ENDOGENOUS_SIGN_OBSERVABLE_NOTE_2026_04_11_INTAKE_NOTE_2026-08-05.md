@@ -18,10 +18,6 @@ required before any effective status.
 
 A signed inward-boundary-current observable on the same low-screening surface gives cut1_margin positive on 26/30 rows (mean +9.42e-03) and impulse_margin 26/30 (mean +1.02e-02), but cut2_margin is positive on only 9/30 (mean -1.85e-04) — the k = 2 cut flips negative across most of the audited surface.
 
-Original verdict: Final hold, not retained — a stronger same-surface transport diagnostic that still does not close the irregular endogenous sign lane.
-Scope: mu2 = 0.001, same three irregular families, seeds 42-46, G = 5 and 10, 30 rows, packet family held fixed and only the observable changed; max norm drift 1.33e-15.
-Escape conditions (negative claims): The failure is localized to the k = 2 BFS cut; the note names the next credible step as a different transport definition on the same irregular surface, explicitly not another packet-family sweep.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ The irregular-endogenous-sign lane's FINAL HOLD terminal: strongest same-surface
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Final hold, not retained — a stronger same-surface transport diagnostic that still does not close the irregular endogenous sign lane.
+- Extraction scope (triage compression; may reflect later context): mu2 = 0.001, same three irregular families, seeds 42-46, G = 5 and 10, 30 rows, packet family held fixed and only the observable changed; max norm drift 1.33e-15.
+- Extraction escape conditions (negative claims; triage compression): The failure is localized to the k = 2 BFS cut; the note names the next credible step as a different transport definition on the same irregular surface, explicitly not another packet-family sweep.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Self-describes as the lane's last attempt ('final hold') after the shell-packet family and size-portability checks failed; reads as the terminal note of the IRREGULAR_ENDOGENOUS_SIGN chain.
 

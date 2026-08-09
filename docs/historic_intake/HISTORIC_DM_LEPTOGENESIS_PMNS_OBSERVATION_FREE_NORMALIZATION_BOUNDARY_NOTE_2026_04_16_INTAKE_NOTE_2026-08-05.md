@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The current stack cannot replace eta_{i_*}/eta_obs = 1 by a native value law: the closure source x_* = (0.471675,0.553811,0.664514), y_* = (0.208063,0.464383,0.247554) is a local stationary point of Phi_a only at the tuned a_* = 0.518479949928, while a = 0 overshoots (eta/eta_obs = 1.05100433), a = 1 underproduces (< 0.9), and a bounded search at the tuned a_* does not return the closure source.
 
-Original verdict: Not yet - the observational closure surface is still doing real scientific work; what remains is exactly one missing normalization/value law.
-Scope: Boundary on the CURRENT exact reduced-domain stack only, not a permanent impossibility.
-Escape conditions (negative claims): The negative is conditioned on the current bank's bounded observation-free searches and the one-parameter family Phi_a; deriving the coefficient a natively (e.g. from a canonical first-order transport-response law) escapes it, as does a theorem-grade global selector beyond the local rewrite.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Observation-free normalization no-go: the stack cannot replace eta/eta_obs = 1 b
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Not yet - the observational closure surface is still doing real scientific work; what remains is exactly one missing normalization/value law.
+- Extraction scope (triage compression; may reflect later context): Boundary on the CURRENT exact reduced-domain stack only, not a permanent impossibility.
+- Extraction escape conditions (negative claims; triage compression): The negative is conditioned on the current bank's bounded observation-free searches and the one-parameter family Phi_a; deriving the coefficient a natively (e.g. from a canonical first-order transport-response law) escapes it, as does a theorem-grade global selector beyond the local rewrite.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

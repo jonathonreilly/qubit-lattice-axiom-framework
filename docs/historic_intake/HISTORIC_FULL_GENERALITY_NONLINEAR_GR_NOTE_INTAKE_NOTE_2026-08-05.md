@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 The exact source and bridge packages fix only the scalar/static sector (phi, psi = 1 + phi, chi = 1 - phi, the diagonal conformal candidate, the shell boundary action and the radial a/r projection); the direct microscopic 4D candidate retains a nonzero Einstein residual and the coarse-grained projection that reduces it is a projection result, not a tensorial closure theorem.
 
-Original verdict: Credible route present to a coarse-grained scalar exterior law; full nonlinear GR is not closable now, the missing principle being tensorial matching/completion from microscopic source data to the full 4D metric.
-Scope: Uses the branch's restricted strong-field package as input rather than re-proving it.
-Escape conditions (negative claims): Three named closure routes: prove the exact microscopic source data uniquely determine the full 4D metric including non-isotropic and dynamical components; prove the coarse-grained exterior harmonic law is the UNIQUE tensorial completion of the bridge data; or show the 4D Einstein/Regge residual vanishes for the lifted field without imposing a static isotropic ansatz by hand.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ Full-generality nonlinear GR no-go: only the scalar/static sector is fixed; thre
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Credible route present to a coarse-grained scalar exterior law; full nonlinear GR is not closable now, the missing principle being tensorial matching/completion from microscopic source data to the full 4D metric.
+- Extraction scope (triage compression; may reflect later context): Uses the branch's restricted strong-field package as input rather than re-proving it.
+- Extraction escape conditions (negative claims; triage compression): Three named closure routes: prove the exact microscopic source data uniquely determine the full 4D metric including non-isotropic and dynamical components; prove the coarse-grained exterior harmonic law is the UNIQUE tensorial completion of the bridge data; or show the 4D Einstein/Regge residual vanishes for the lifted field without imposing a static isotropic ansatz by hand.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): none recorded
 

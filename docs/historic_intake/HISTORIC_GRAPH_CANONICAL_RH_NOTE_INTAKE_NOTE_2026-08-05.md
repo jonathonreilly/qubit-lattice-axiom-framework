@@ -18,10 +18,6 @@ required before any effective status.
 
 Five attacks on finding right-handed states without leaving the 3D graph: Hamming-weight parity chi = sz^{x3} is the graph-canonical chirality (chi^2 = +I, anticommutes with all Clifford generators) but anticommutes with T1, T2 so it mixes doublet partners; shift eigenspaces duplicate rather than conjugate; in odd d=3 the volume element G5 commutes with all G_mu and squares to -I so it cannot play the chirality role; while CPT self-conjugation via the real KS algebra and Dirac-sea particle-hole doubling ARE graph-canonical.
 
-Original verdict: The 3D surface cannot produce SU(2) singlets from SU(2) doublets; the 4D step is the minimal additional structure needed to break the L/R degeneracy, and everything else is graph-canonical.
-Scope: Answer splits: YES for antiparticle existence and right-handed quantum numbers, NO for SU(2) chirality.
-Escape conditions (negative claims): The negative is bounded to SU(2)-singlet production: the escape is the 4D chirality gamma_5 step, which the note reframes not as adding time by hand but as the minimal structure that breaks L/R degeneracy.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,9 @@ Graph-canonical RH boundary: the 3D surface cannot produce SU(2) singlets — th
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The 3D surface cannot produce SU(2) singlets from SU(2) doublets; the 4D step is the minimal additional structure needed to break the L/R degeneracy, and everything else is graph-canonical.
+- Extraction scope (triage compression; may reflect later context): Answer splits: YES for antiparticle existence and right-handed quantum numbers, NO for SU(2) chirality.
+- Extraction escape conditions (negative claims; triage compression): The negative is bounded to SU(2)-singlet production: the escape is the 4D chirality gamma_5 step, which the note reframes not as adding time by hand but as the minimal structure that breaks L/R degeneracy.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): Refines the previous 61/61 right-handed derivation by isolating exactly which of its steps needed 4D and which are graph-canonical.
 

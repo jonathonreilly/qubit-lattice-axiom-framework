@@ -22,10 +22,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Every retained ingredient feeding the doublet block reduces to a Hermitian 3x3 carrier on a single C^3 (the right U(3) frame is already gauge-fixed to the positive polar section, and the retained generation algebra acts irreducibly one-sidedly), so K_doublet is Hermitian with four real parameters, the only structure-preserving action is the diagonal U(2), and the independent bifundamental action K -> U_L K U_R^dag does not preserve Hermiticity.
 
-Original verdict: Bifundamental invariance is NOT derivable from Cl(3) on Z^3 via the retained atlas, so the Frobenius-route conditional gate is closed as unavailable and G1 remains OPEN.
-Scope: Five independent lines (L1-L5) all converge; assumes only the five retained atlas ingredients.
-Escape conditions (negative claims): The negative is scoped to derivability from the retained atlas: no weaker invariance already retained pins F1 either, but the gate's antecedent could still be supplied as a new axiom or from a two-sided carrier structure the current sheet does not have (the atlas status is recorded as 'unretained', not 'refuted in principle').
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -50,6 +46,9 @@ Bifundamental invariance NOT derivable from the retained atlas — closes the Fr
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Bifundamental invariance is NOT derivable from Cl(3) on Z^3 via the retained atlas, so the Frobenius-route conditional gate is closed as unavailable and G1 remains OPEN.
+- Extraction scope (triage compression; may reflect later context): Five independent lines (L1-L5) all converge; assumes only the five retained atlas ingredients.
+- Extraction escape conditions (negative claims; triage compression): The negative is scoped to derivability from the retained atlas: no weaker invariance already retained pins F1 either, but the gate's antecedent could still be supplied as a new axiom or from a two-sided carrier structure the current sheet does not have (the atlas status is recorded as 'unretained', not 'refuted in principle').
 - Extraction red flags: Carries an explicit do-NOT-use instruction for publication-grade positive quantitative claims.
 - Supersession (as known at extraction): Closes the conditional closure gate opened by G1_PHYSICIST_F (idx 531).
 

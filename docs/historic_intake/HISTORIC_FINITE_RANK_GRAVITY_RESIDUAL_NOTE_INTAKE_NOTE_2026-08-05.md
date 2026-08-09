@@ -18,10 +18,6 @@ required before any effective status.
 
 The Woodbury identity gives G_W P = G_0 P (I - W G_S)^-1 so any positive-semidefinite multi-site support with off-diagonal mixing still produces an exterior field through one renormalized source q_eff, and the exterior stays exactly harmonic; feeding it directly into the conformastatic ansatz leaves a vacuum Einstein residual |G| ~ 9.85e-2, while the monopole projection of the same field reduces it to 1.52e-4 (a factor ~650).
 
-Original verdict: The exact source foothold now covers a broad finite-rank class, but the remaining gap is sharply why the exact harmonic exterior data reduce to the isotropic-vacuum surface the metric candidate uses.
-Scope: Three exact checks pass at machine precision; the bounded checks use shell-averaged fits with ~5.2% relative RMS error (a = 0.3465, b = 0.6312) at sampled exterior probe points.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -47,6 +43,8 @@ Woodbury finite-rank residual theorem: any PSD multi-site support reduces to one
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The exact source foothold now covers a broad finite-rank class, but the remaining gap is sharply why the exact harmonic exterior data reduce to the isotropic-vacuum surface the metric candidate uses.
+- Extraction scope (triage compression; may reflect later context): Three exact checks pass at machine precision; the bounded checks use shell-averaged fits with ~5.2% relative RMS error (a = 0.3465, b = 0.6312) at sampled exterior probe points.
 - Extraction red flags: The direct common-source candidate is NOT a vacuum Einstein solution; only its monopole projection is close, and the reduction is not derived.
 - Supersession (as known at extraction): Upgrades the earlier rank-one / diagonal-support source theorems to a general positive-semidefinite finite-rank class.
 

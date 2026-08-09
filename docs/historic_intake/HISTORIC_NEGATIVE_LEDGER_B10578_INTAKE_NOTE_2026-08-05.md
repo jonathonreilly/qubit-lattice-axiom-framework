@@ -18,10 +18,6 @@ required before any effective status.
 
 Two prior overbroad routes RETIRED with exact counterexamples: the open equality window fails because theta = pi/12 has a zero eigenvalue but still gives equality, so the equality region is closed; and the arbitrary-r one-negative claim of < 2/3 fails because spectrum (29/10, 1/5, -1/10) gives 423/512 > 2/3, so the general bound is Q(V) < Q(S) with < 2/3 only at r = 1/2. A third route (sign equals chirality) is a different residual and not claimed here.
 
-Original verdict: Two previously stated bounds corrected by explicit counterexamples.
-Scope: One derived algebraic boundary inside a positive theorem; no broad no-go introduced.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Retraction by explicit counterexample: two previously asserted numeric bounds on
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Two previously stated bounds corrected by explicit counterexamples.
+- Extraction scope (triage compression; may reflect later context): One derived algebraic boundary inside a positive theorem; no broad no-go introduced.
 - Extraction red flags: Two numeric bounds previously asserted are refuted by explicit spectra; the surviving statement (< 2/3 only at r = 1/2) is narrower than what was claimed.
 - Supersession (as known at extraction): Retires two prior overbroad statements about the signed-versus-singular readout comparison.
 

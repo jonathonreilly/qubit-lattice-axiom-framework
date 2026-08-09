@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Narrowed claim: current retained, primitive, merged-PR and open-PR surfaces do not supply K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED; five of fourteen inputs are missing (fluctuation determinant object identified, readout functional factors through the complex slot, chiral/holomorphic count on the retained realization, owner ratification, audit acceptance).
 
-Original verdict: Support-only non-supply boundary; native J_cs remains support only and does not close the determinant.
-Scope: The chiral/holomorphic determinant subtarget inside the Koide K1 selector gate.
-Escape conditions (negative claims): Identify the fluctuation determinant object, show the readout functional factors through the complex slot, compute the chiral/holomorphic count on the retained realization, then obtain owner ratification and audit acceptance.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -48,6 +44,9 @@ K1 determinant terminal: five of fourteen inputs missing; the fluctuation-determ
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Support-only non-supply boundary; native J_cs remains support only and does not close the determinant.
+- Extraction scope (triage compression; may reflect later context): The chiral/holomorphic determinant subtarget inside the Koide K1 selector gate.
+- Extraction escape conditions (negative claims; triage compression): Identify the fluctuation determinant object, show the readout functional factors through the complex slot, compute the chiral/holomorphic count on the retained realization, then obtain owner ratification and audit acceptance.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL for the K1 determinant subtarget; packets 2524/2525 feed it, and the batched factoring/count no-go 2526 attacks the same two missing inputs. TERMINAL non-supply boundary for its subtarget in the 2026-07-04/05 zero-import-hydrogen sweep (campaign umbrella: goal packet idx 2514, route triage idx 2667).
 

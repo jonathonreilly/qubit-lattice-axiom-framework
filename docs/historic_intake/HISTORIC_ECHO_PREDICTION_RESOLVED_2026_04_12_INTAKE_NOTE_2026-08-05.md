@@ -18,10 +18,6 @@ required before any effective status.
 
 Four independent lanes explain the null echo search: the action S = L(1-f) absorbs at f > 1, thermal reflectivity gives R ~ 10^-4 to 10^-6 with a mass-independent ratio 8 pi f_1 ~ 9-13, there is no frequency shift, and decisively the evanescent barrier over ~10^38 sites gives tunneling T ~ exp(-10^38 x 88) ~ 10^(-4.6e41), i.e. exactly zero.
 
-Original verdict: The updated prediction is echoes at the pre-registered times with amplitude ZERO; the 48-event null result becomes a confirmation, and any detection would falsify the evanescent-barrier mechanism.
-Scope: Non-rotating frozen star with Planck-scale surface at R_min = N^(1/3) l_Planck; timing predictions unchanged at 58-68 ms for GW150914.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ The echo lane's post-hoc immunization ON THE RECORD: the falsifiable 24.5% echo 
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): The updated prediction is echoes at the pre-registered times with amplitude ZERO; the 48-event null result becomes a confirmation, and any detection would falsify the evanescent-barrier mechanism.
+- Extraction scope (triage compression; may reflect later context): Non-rotating frozen star with Planck-scale surface at R_min = N^(1/3) l_Planck; timing predictions unchanged at 58-68 ms for GW150914.
 - Extraction red flags: A prediction that was falsifiable (24.5% echoes) is converted post hoc into an unfalsifiable-in-practice null after 48 events found nothing.
 - Supersession (as known at extraction): Replaces the earlier prediction of a 24.5% echo amplitude with a free reflectivity parameter.
 

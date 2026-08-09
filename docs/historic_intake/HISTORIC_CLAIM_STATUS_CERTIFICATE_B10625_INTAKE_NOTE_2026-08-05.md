@@ -18,10 +18,6 @@ required before any effective status.
 
 Certifies a quantified projective-ratio implication as a clean positive theorem proved from explicit hypotheses with no dependency or import; open imports none, no cited dependencies.
 
-Original verdict: Review-loop pass; independent audit still required before effective retained.
-Scope: Source/readiness review only; sets no audit status.
-
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -46,6 +42,8 @@ Clean unlanded positive: quantified projective-ratio implication proved from exp
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): Review-loop pass; independent audit still required before effective retained.
+- Extraction scope (triage compression; may reflect later context): Source/readiness review only; sets no audit status.
 - Extraction red flags: claims 'no dependency or import' for a theorem in a stdout-repair cycle — verify against the ledger row it points at
 - Supersession (as known at extraction): none recorded
 

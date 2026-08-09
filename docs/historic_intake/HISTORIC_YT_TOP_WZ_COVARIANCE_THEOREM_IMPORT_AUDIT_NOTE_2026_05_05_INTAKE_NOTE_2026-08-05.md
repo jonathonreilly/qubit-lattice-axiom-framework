@@ -20,10 +20,6 @@ Registered as a bounded registration of a historical negative claim; no live no-
 
 Audit classifying every existing top/W covariance surface on the branch: the marginal-covariance artifact is a no-go not authority, the factorization-independence gate has no production theorem, the deterministic-response gate rejects deterministic W response alone, scout certificates remain schemas, and builders stay open. Runner SUMMARY: PASS=11 FAIL=0.
 
-Original verdict: None can — exact negative boundary, no importable same-surface top-W covariance theorem exists on the PR230 surface.
-Scope: Whether any current-branch artifact can be imported as the product-measure, conditional-independence, or closed-covariance theorem.
-Escape conditions (negative claims): Produce a genuine production/theorem artifact fixing cov_dE_top_dM_W on the same top/W source surface, or measure matched rows.
-
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.
@@ -69,6 +65,9 @@ W/Z covariance terminal: no importable same-surface top-W covariance theorem exi
 
 Written at triage/extraction time; NOT part of the pinned original, carries no authority, and is input for the future auditor only.
 
+- Extraction verdict (triage compression; may reflect later context): None can — exact negative boundary, no importable same-surface top-W covariance theorem exists on the PR230 surface.
+- Extraction scope (triage compression; may reflect later context): Whether any current-branch artifact can be imported as the product-measure, conditional-independence, or closed-covariance theorem.
+- Extraction escape conditions (negative claims; triage compression): Produce a genuine production/theorem artifact fixing cov_dE_top_dM_W on the same top/W source surface, or measure matched rows.
 - Extraction red flags: none recorded
 - Supersession (as known at extraction): TERMINAL of the W/Z covariance sub-chain (2026-05-05); closes the import shortcut left after 2469/2471/2472.
 

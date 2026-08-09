@@ -1,0 +1,199 @@
+{
+  "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py",
+    "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json"
+  ],
+  "AUDIT_TIMEOUT_SEC": 600,
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "certificates": {
+    "DIMENSION_TABLE_REBUILT": {
+      "certificate": "DIMENSION_TABLE_REBUILT",
+      "checker_dimension_sum": 36799,
+      "checker_dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
+      "digest_agrees": true,
+      "first_internal_mismatch": null,
+      "instance_count_agrees": true,
+      "instances_rebuilt": 14374,
+      "internal_route_mismatches": 0,
+      "pass": true,
+      "primes_used": [
+        2147483647,
+        2147483629,
+        2147483587
+      ],
+      "receipt_dimension_sum": 36799,
+      "receipt_dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
+      "routes": [
+        "modular rank",
+        "rank-nullity split",
+        "rational reduced row echelon free-variable basis"
+      ]
+    },
+    "LARGE_INSTANCES_REBUILT": {
+      "certificate": "LARGE_INSTANCES_REBUILT",
+      "pass": true,
+      "rows": [
+        {
+          "agrees": {
+            "base_points": true,
+            "fibre_points": true,
+            "non_negative_normalized_polytope_dimension": true,
+            "orbits_disjoint_from_required_zero": true,
+            "pushforward_mass_dimension": true,
+            "representative_zero_count": true,
+            "solution_space_dimension": true
+          },
+          "checker_values": {
+            "base_points": 132,
+            "fibre_points": 17028,
+            "non_negative_normalized_polytope_dimension": 1408,
+            "orbits_disjoint_from_required_zero": 1,
+            "pushforward_mass_dimension": 1,
+            "representative_zero_count": 15609,
+            "solution_space_dimension": 1409
+          },
+          "name": "twelve_orbits_of_eleven_uniform_fibres",
+          "representative_verified": true
+        },
+        {
+          "agrees": {
+            "base_points": true,
+            "fibre_points": true,
+            "non_negative_normalized_polytope_dimension": true,
+            "orbits_disjoint_from_required_zero": true,
+            "pushforward_mass_dimension": true,
+            "representative_zero_count": true,
+            "solution_space_dimension": true
+          },
+          "checker_values": {
+            "base_points": 132,
+            "fibre_points": 2266,
+            "non_negative_normalized_polytope_dimension": 1408,
+            "orbits_disjoint_from_required_zero": 1,
+            "pushforward_mass_dimension": 1,
+            "representative_zero_count": 847,
+            "solution_space_dimension": 1469
+          },
+          "name": "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut",
+          "representative_verified": true
+        }
+      ],
+      "statement": "each declared larger instance is rebuilt from the receipt's declared parameters alone and every advertised number is recomputed by the checker's rank-nullity split and its own representative"
+    },
+    "PINS": {
+      "both_declared_inputs_are_files_of_this_landing_delta": true,
+      "certificate": "PINS",
+      "declared_inputs": [
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py",
+        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json"
+      ],
+      "git_blobs": {
+        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json": "ad7fe2c733141101f614008c20894406c5bc8bd1",
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py": "e358ad784912444e203bb06bed408501cf2cdb22"
+      },
+      "git_blobs_all_match": true,
+      "import_firewall_hits": [],
+      "pass": true,
+      "primary_closure_contains_no_ancestor_artifact": true,
+      "primary_closure_is_its_own_source_only": true,
+      "primary_declared_closure": [
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py"
+      ],
+      "primary_family_matches_independent_transcription": true,
+      "sha256": {
+        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json": "9bf77b90fdb7e5b6fde99d223a913404d7580d2f254f8d2199bd18668f7292b2",
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py": "a4b3ac215741e2f4b9d015708fbce089fd599cf92cfd821553a6cb08717b2fdf"
+      },
+      "sha256_all_match": true
+    },
+    "PUSHFORWARD_DIMENSION_REBUILT": {
+      "certificate": "PUSHFORWARD_DIMENSION_REBUILT",
+      "checker_mismatches": 0,
+      "instances_rebuilt": 14374,
+      "pass": true,
+      "receipt_base_level_disagreements": 0,
+      "statement": "on every rebuilt instance the pushforward-mass dimension, computed by modular rank on the checker's own base-level matrix, equals the number of orbits disjoint from the required-zero subset"
+    },
+    "RECEIPT_CONSISTENCY": {
+      "certificate": "RECEIPT_CONSISTENCY",
+      "declared_audit_timeout_sec": 600,
+      "every_certificate_in_the_receipt_passes": true,
+      "evidence_closure_is_the_primary_source_only": true,
+      "pass": true,
+      "planted_mutations_all_bite": true,
+      "primary_reports_no_external_scientific_read": true,
+      "receipt_claims_all_pass": true
+    },
+    "TEETH": {
+      "certificate": "TEETH",
+      "pass": true,
+      "statement": "nine planted receipt corruptions, each applied to a deep copy and pushed through the gate that owns it; every one must be refused",
+      "teeth": [
+        {
+          "bites": true,
+          "tooth": "corrupt_dimension_table_digest"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_instance_count"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_dimension_sum"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_base_level_disagreements"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_zero_count_witness_tally"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_large_instance_solution_dimension"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_large_instance_polytope_dimension"
+        },
+        {
+          "bites": true,
+          "tooth": "corrupt_evidence_closure_to_an_ancestor_pin"
+        },
+        {
+          "bites": true,
+          "tooth": "launder_a_failed_certificate_into_all_pass"
+        }
+      ],
+      "teeth_biting": 9,
+      "teeth_total": 9
+    },
+    "WITNESSES_REBUILT": {
+      "certificate": "WITNESSES_REBUILT",
+      "checker_counts": {
+        "instances_where_zero_counts_differ": 5547,
+        "instances_with_a_cross_orbit_signed_solution": 2298,
+        "instances_with_a_disjoint_orbit": 8419,
+        "instances_with_two_distinct_representatives": 5547
+      },
+      "counts_agree": true,
+      "defects": [],
+      "pass": true,
+      "receipt_counts": {
+        "instances_where_zero_counts_differ": 5547,
+        "instances_with_a_cross_orbit_signed_solution": 2298,
+        "instances_with_a_disjoint_orbit": 8419,
+        "instances_with_two_distinct_representatives": 5547
+      },
+      "statement": "the checker rebuilds both non-negative normalized representatives and the cross-orbit signed witness from its own layout and recounts every advertised tally; a distinct second representative with the same pushforward mass and a different zero count is what keeps the retained claim at the pushforward level"
+    }
+  },
+  "checker_verdict": "CORROBORATES",
+  "checks": "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py",
+  "disagreements": [],
+  "fraction_label": "bookkeeping fraction, not probability",
+  "runner": "scripts/frontier_cycle906_orbit_constant_mass_dimension_independent_check_2026_08_09.py"
+}

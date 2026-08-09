@@ -1,0 +1,285 @@
+{
+  "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py"
+  ],
+  "AUDIT_TIMEOUT_SEC": 600,
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "certificates": {
+    "GROUP_STRUCTURE": {
+      "certificate": "GROUP_STRUCTURE",
+      "failure_count": 0,
+      "failures": [],
+      "instances_checked": 14374,
+      "pass": true,
+      "statement": "for every instance the declared generator generates a finite cyclic group -- closed, with identity and inverses -- whose orbits are exactly the declared orbit partition"
+    },
+    "LARGE_DECLARED_INSTANCES": {
+      "certificate": "LARGE_DECLARED_INSTANCES",
+      "dense_event_level_rank_route": "NOT RUN on these two instances: dense fraction-free elimination over more than ten thousand columns is outside this runner's declared budget, so the dense route is exercised only on the exhaustive family, where it agrees with both other routes",
+      "pass": true,
+      "rows": [
+        {
+          "base_points": 132,
+          "checks": {
+            "base_level_dimension_equals_disjoint_orbits": true,
+            "closed_form_equals_basis_length": true,
+            "every_basis_vector_satisfies_both_conditions": true,
+            "representative_is_non_negative": true,
+            "representative_is_normalized": true,
+            "representative_satisfies_both_conditions": true
+          },
+          "declared_parameters": {
+            "fibre_rule": "every base point carries 129 fibre points",
+            "orbit_sizes": [
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "required_zero_rule": "every base point of the first eleven orbits"
+          },
+          "fibre_points": 17028,
+          "name": "twelve_orbits_of_eleven_uniform_fibres",
+          "non_negative_normalized_polytope_dimension": 1408,
+          "orbits_disjoint_from_required_zero": 1,
+          "pushforward_mass_dimension": 1,
+          "representative_zero_count": 15609,
+          "solution_space_dimension": 1409
+        },
+        {
+          "base_points": 132,
+          "checks": {
+            "base_level_dimension_equals_disjoint_orbits": true,
+            "closed_form_equals_basis_length": true,
+            "every_basis_vector_satisfies_both_conditions": true,
+            "representative_is_non_negative": true,
+            "representative_is_normalized": true,
+            "representative_satisfies_both_conditions": true
+          },
+          "declared_parameters": {
+            "fibre_rule": "the last orbit's base points carry 129 fibre points; every other base point carries 7",
+            "orbit_sizes": [
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "required_zero_rule": "every base point of the first ten orbits, plus the first base point of the eleventh orbit"
+          },
+          "fibre_points": 2266,
+          "name": "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut",
+          "non_negative_normalized_polytope_dimension": 1408,
+          "orbits_disjoint_from_required_zero": 1,
+          "pushforward_mass_dimension": 1,
+          "representative_zero_count": 847,
+          "solution_space_dimension": 1469
+        }
+      ],
+      "statement": "the closed-form count, the explicit basis length, the exact base-level rank and the exhibited representative agree on two declared larger instances; their parameters are chosen numbers for scale and describe no repository census or physical configuration"
+    },
+    "MUTATION_TEETH": {
+      "certificate": "MUTATION_TEETH",
+      "pass": true,
+      "probe_instance": [
+        [
+          3,
+          3
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "teeth": [
+        {
+          "bites": true,
+          "detail": "dimension moved 7 -> 8",
+          "tooth": "drop_one_orbit_constancy_row"
+        },
+        {
+          "bites": true,
+          "detail": "dimension moved 7 -> 8",
+          "tooth": "drop_one_vanishing_row"
+        },
+        {
+          "bites": true,
+          "detail": "wrong closed form gives 8 against 7",
+          "tooth": "count_all_orbits_not_the_disjoint_ones"
+        },
+        {
+          "bites": true,
+          "detail": "wrong closed form gives 1 against 7",
+          "tooth": "omit_within_fibre_directions"
+        },
+        {
+          "bites": true,
+          "detail": "vanishing gate rejects it",
+          "tooth": "weighting_on_the_required_zero_subset"
+        },
+        {
+          "bites": true,
+          "detail": "orbit-constancy gate rejects it",
+          "tooth": "orbit_constancy_broken_by_a_single_base_point"
+        },
+        {
+          "bites": true,
+          "detail": "normalization gate rejects it",
+          "tooth": "representative_rescaled_off_total_mass_one"
+        },
+        {
+          "bites": true,
+          "detail": "two distinct normalized non-negative solutions share one pushforward mass",
+          "tooth": "event_level_uniqueness_claim"
+        },
+        {
+          "bites": true,
+          "detail": "exact rank detects the repeated vector",
+          "tooth": "linearly_dependent_basis"
+        }
+      ],
+      "teeth_biting": 9,
+      "teeth_total": 9
+    },
+    "NON_NEGATIVE_WITNESSES": {
+      "certificate": "NON_NEGATIVE_WITNESSES",
+      "defects": [],
+      "instances_where_zero_counts_differ": 5547,
+      "instances_with_a_cross_orbit_signed_solution": 2298,
+      "instances_with_a_disjoint_orbit": 8419,
+      "instances_with_two_distinct_representatives": 5547,
+      "pass": true,
+      "statement": "wherever a disjoint orbit exists, the fibre-uniform weighting and the concentrated weighting are both non-negative, normalized solutions supported inside the disjoint orbits and sharing one pushforward mass; where the fibres allow it they are distinct and have different zero counts, so the zero count belongs to the representative; and a signed solution supported strictly outside every disjoint orbit exists whenever a base point outside the required-zero subset lies in an orbit that meets it and carries two fibre points",
+      "worked_example": {
+        "concentrated_zero_count": 1,
+        "fibre_uniform_zero_count": 0,
+        "fraction_label": "bookkeeping fraction, not probability",
+        "key": [
+          [
+            1
+          ],
+          [
+            [
+              2,
+              0
+            ]
+          ]
+        ],
+        "shared_pushforward_mass": [
+          "1/1"
+        ]
+      }
+    },
+    "SELF_CONTAINMENT": {
+      "AUDIT_INPUT_PATHS": [
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py"
+      ],
+      "certificate": "SELF_CONTAINMENT",
+      "declared_audit_timeout_sec": 600,
+      "declared_closure_contains_no_ancestor_artifact": true,
+      "declared_closure_is_this_runner_source_only": true,
+      "every_declared_path_is_in_this_landing_delta": true,
+      "import_firewall_hits": [],
+      "pass": true,
+      "read_inventory": {
+        "external_or_ancestral_scientific_inputs": [],
+        "package_local_integrity_reads": [
+          "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py"
+        ]
+      },
+      "repository_modules_imported": [],
+      "self_sha256": "a4b3ac215741e2f4b9d015708fbce089fd599cf92cfd821553a6cb08717b2fdf"
+    },
+    "THREE_ROUTES_AGREE": {
+      "base_level_disagreements": 0,
+      "basis_defects": 0,
+      "certificate": "THREE_ROUTES_AGREE",
+      "dimension_max": 12,
+      "dimension_sum": 36799,
+      "dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
+      "distinct_dimensions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "first_disagreement": null,
+      "instances": 14374,
+      "pass": true,
+      "route_disagreements": 0,
+      "statement": "on every instance of the declared exhaustive family the explicit-basis dimension, the exact fraction-free nullspace dimension and the closed-form count are equal; every basis vector satisfies both linear conditions and the basis is exactly independent; and the pushforward-mass dimension equals the number of orbits disjoint from the required-zero subset"
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "family": {
+    "fibre_alphabet_at_five_base_points": [
+      1,
+      2
+    ],
+    "fibre_alphabet_up_to_four_base_points": [
+      1,
+      2,
+      3
+    ],
+    "instances": 14374,
+    "max_base_points": 5,
+    "required_zero_subsets": "every subset of base points"
+  },
+  "fraction_label": "bookkeeping fraction, not probability",
+  "per_instance_dimension_table_digest": "0b5ee150e3dbc3bd4fc34d393e96ba852652ab9b0b4c96b132d8cc341f756728",
+  "runner": "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py",
+  "theorem": {
+    "non_negative_corollary": "adding non-negativity and total mass one confines every solution to the union of the disjoint orbits and leaves a product of simplices of dimension (number of disjoint orbits minus one) plus the sum over base points of those orbits of (fibre size minus one); the fibre-uniform weighting is one point of that set, exhibited, and a second point is exhibited alongside it",
+    "parameterization": "for every instance of the declared structure the solution space of the two linear conditions is spanned by the explicit basis this runner constructs, so its dimension is the number of orbits disjoint from the required-zero subset plus the sum over base points outside that subset of (fibre size minus one)",
+    "pushforward_dimension": "the space of admissible pushforward masses has dimension exactly the number of orbits disjoint from the required-zero subset; in particular, at one disjoint orbit the pushforward mass is determined up to a single scalar",
+    "scope": "conditional on the declared finite structure only; this runner reads no repository census, no symmetry claim, no interface condition and no axiom surface, and asserts nothing about any of them"
+  }
+}

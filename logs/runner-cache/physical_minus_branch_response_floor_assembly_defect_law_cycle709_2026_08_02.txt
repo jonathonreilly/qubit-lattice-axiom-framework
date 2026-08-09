@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/physical_minus_branch_response_floor_assembly_defect_law_cycle709_2026_08_02.py
+runner_sha256: 6184662750a830b3a8ebebb652f81663afb285c9d4f78badcb132cb2f86731f8
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.97
+status: ok
+----- stdout -----
+== measurements (cycle-696 chain, open box, central-edge label-5 edit) ==
+witnesses: plus g=15 minus g=1 census 3+3 constant-sign of 24
+L=3 n_dof=98 null_dim=0 lam_min=4.7e-01 |w|max=6.3e+01 |eps0|_2=9.7e+00 u*kappa_2(Q)=1.5e-14 (relative) heuristic absolute solve scale=1.4e-13
+L=3 plus: dQ=7.1e-15 drho=0.0e+00 db=4.4e-15 deps=1.2e-14 term1=1.3e-15 term2=1.1e-14 closure=7.8e-16
+      law: |term2-pred|/|term2|=9.6e-01 cos(term2,pred)=2.9e-01
+      decomposition rejectors: closure=7.8e-16 drop-term1=1.6e-15 drop-term2=1.1e-14 | E: |E|_F=2.0e-14 nnz=8 |E eps0|_2=3.6e-14 |E eps0|_max=1.7e-14
+L=3 minus: dQ=1.2e-10 drho=0.0e+00 db=2.1e-14 deps=6.9e-11 term1=8.2e-15 term2=6.9e-11 closure=1.2e-15
+      law: |term2-pred|/|term2|=3.2e-04 cos(term2,pred)=1.0e+00
+      decomposition rejectors: closure=1.2e-15 drop-term1=8.4e-15 drop-term2=6.9e-11 | E: |E|_F=1.5e-09 nnz=740 |E eps0|_2=1.2e-09 |E eps0|_max=4.7e-10
+L=7 n_dof=1854 null_dim=0 lam_min=1.1e-02 |w|max=6.6e+01 |eps0|_2=2.4e+01 u*kappa_2(Q)=6.6e-13 (relative) heuristic absolute solve scale=1.6e-11
+L=7 plus: dQ=7.1e-15 drho=0.0e+00 db=3.1e-15 deps=1.1e-12 term1=2.7e-15 term2=1.1e-12 closure=1.1e-15
+      law: |term2-pred|/|term2|=9.8e-01 cos(term2,pred)=4.8e-01
+      decomposition rejectors: closure=1.1e-15 drop-term1=3.1e-15 drop-term2=1.1e-12 | E: |E|_F=1.3e-13 nnz=360 |E eps0|_2=7.3e-14 |E eps0|_max=1.2e-14
+L=7 minus: dQ=1.2e-10 drho=0.0e+00 db=1.1e-14 deps=1.5e-09 term1=3.4e-14 term2=1.5e-09 closure=3.0e-15
+      law: |term2-pred|/|term2|=5.5e-04 cos(term2,pred)=1.0e+00
+      decomposition rejectors: closure=3.0e-15 drop-term1=3.4e-14 drop-term2=1.5e-09 | E: |E|_F=7.0e-09 nnz=15660 |E eps0|_2=5.4e-09 |E eps0|_max=6.3e-10
+sweep L=3 step=2.5e-05 |E_minus|_F=9.8e-09 |E_plus|_F=5.0e-15
+sweep L=3 step=5.0e-05 |E_minus|_F=2.0e-09 |E_plus|_F=0.0e+00
+sweep L=3 step=1.0e-04 |E_minus|_F=1.5e-09 |E_plus|_F=2.0e-14
+sweep L=3 step=2.0e-04 |E_minus|_F=8.2e-10 |E_plus|_F=3.5e-14
+sweep L=3 step=4.0e-04 |E_minus|_F=3.9e-10 |E_plus|_F=3.4e-14
+scale check: dQ_minus * 2*step / u = 2.2e+02 (problem gradient scale, |w|max decade)
+scaling: lam_min L3/L7=4.3e+01 floor L7/L3=2.2e+01 dQ L7/L3=1.0e+00
+scaling (global E, minus): |E|_F L7/L3=4.6e+00 nnz L7/L3=2.1e+01 |E eps0|_2 L7/L3=4.6e+00 |E eps0|_max L7/L3=1.3e+00
+== C0 frame scope, witnesses, solver scope ==
+ok   c0.det 24 frames, det=+1 for all
+ok   c0.census_plus all-plus constant-sign count 3
+ok   c0.census_minus all-minus constant-sign count 3
+ok   c0.bij.L3.plus dof transport bijective
+ok   c0.bij.L3.minus dof transport bijective
+ok   c0.null.L3 null_dim=0
+ok   c0.bij.L7.plus dof transport bijective
+ok   c0.bij.L7.minus dof transport bijective
+ok   c0.null.L7 null_dim=0
+== C1 upstream transport: source exact, load at summation level ==
+ok   c1.rho.L3.plus drho 0.0e+00
+ok   c1.b.L3.plus db 4.4e-15
+ok   c1.rho.L3.minus drho 0.0e+00
+ok   c1.b.L3.minus db 2.1e-14
+ok   c1.rho.L7.plus drho 0.0e+00
+ok   c1.b.L7.plus db 3.1e-15
+ok   c1.rho.L7.minus drho 0.0e+00
+ok   c1.b.L7.minus db 1.1e-14
+== C2 assembly defect: branch dichotomy, size independence ==
+ok   c2.plus.L3 dQ_plus 7.1e-15
+ok   c2.minus.L3 dQ_minus 1.2e-10
+ok   c2.sep.L3 branch separation 1.8e+04
+ok   c2.plus.L7 dQ_plus 7.1e-15
+ok   c2.minus.L7 dQ_minus 1.2e-10
+ok   c2.sep.L7 branch separation 1.8e+04
+ok   c2.size dQ_minus L7/L3 1.0e+00
+ok   c2.global_fro |E|_F grows with the box, L7/L3 4.6e+00
+ok   c2.global_nnz nnz(E) grows with the box, L7/L3 2.1e+01
+ok   c2.global_forcing |E eps0|_2 grows with the box, L7/L3 4.6e+00
+== C3 two-term decomposition with live wrong-value rejectors ==
+ok   c3.closure.L3.plus closure 7.8e-16
+ok   c3.term1.L3.plus term1 1.3e-15
+ok   c3.reject_t2.L3.plus drop-term2 residual / closure 1.4e+01
+ok   c3.closure.L3.minus closure 1.2e-15
+ok   c3.term1.L3.minus term1 8.2e-15
+ok   c3.reject_t2.L3.minus drop-term2 residual / closure 5.8e+04
+ok   c3.closure.L7.plus closure 1.1e-15
+ok   c3.term1.L7.plus term1 2.7e-15
+ok   c3.reject_t2.L7.plus drop-term2 residual / closure 1.0e+03
+ok   c3.closure.L7.minus closure 3.0e-15
+ok   c3.term1.L7.minus term1 3.4e-14
+ok   c3.reject_t2.L7.minus drop-term2 residual / closure 5.1e+05
+ok   c3.reject_t1.L3.minus drop-term1 residual / closure 7.1e+00
+ok   c3.resolved_t1.L3.minus closure / term1 1.5e-01
+ok   c3.reject_t1.L7.minus drop-term1 residual / closure 1.1e+01
+ok   c3.resolved_t1.L7.minus closure / term1 8.8e-02
+ok   c3.unresolved_t1.L3.plus plus-branch term1 at closure noise, ratio 2.0e+00
+ok   c3.unresolved_t1.L7.plus plus-branch term1 at closure noise, ratio 2.7e+00
+ok   c3.dom.L3 term1/term2 1.2e-04
+ok   c3.dom.L7 term1/term2 2.2e-05
+ok   c3.floor.L3 minus deps 6.9e-11
+ok   c3.floor.L7 minus deps 1.5e-09
+ok   c3.plusfloor.L3 plus deps 1.2e-14
+ok   c3.plusfloor.L7 plus deps 1.1e-12
+== C4 first-order law: term2 = push(response(E @ eps0)) ==
+ok   c4.resid.L3 minus rel residual 3.2e-04
+ok   c4.cos.L3 minus cos 1.0e+00
+ok   c4.resid.L7 minus rel residual 5.5e-04
+ok   c4.cos.L7 minus cos 1.0e+00
+ok   c4.reject.L3 plus-branch rejector residual 9.6e-01
+ok   c4.reject.L7 plus-branch rejector residual 9.8e-01
+== C5 step sweep: measured step direction of E over the sampled decade ==
+ok   c5.mono.1 |E|_F 9.8e-09 > 2.0e-09
+ok   c5.mono.2 |E|_F 2.0e-09 > 1.5e-09
+ok   c5.mono.3 |E|_F 1.5e-09 > 8.2e-10
+ok   c5.mono.4 |E|_F 8.2e-10 > 3.9e-10
+ok   c5.ratio F(smallest)/F(largest) 2.5e+01
+ok   c5.plus.1 |E_plus|_F 5.0e-15 at step 2.5e-05
+ok   c5.plus.2 |E_plus|_F 0.0e+00 at step 5.0e-05
+ok   c5.plus.3 |E_plus|_F 2.0e-14 at step 1.0e-04
+ok   c5.plus.4 |E_plus|_F 3.5e-14 at step 2.0e-04
+ok   c5.plus.5 |E_plus|_F 3.4e-14 at step 4.0e-04
+ok   c5.scale dQ*2s/u 2.2e+02
+== C6 size scaling: how much of the floor growth the response carries ==
+ok   c6.lam lam_min softening 4.3e+01
+ok   c6.floor minus floor growth 2.2e+01
+ok   c6.attrib max local entry flat while the floor grows; the response is a substantial contributor, and the forcing |E eps0|_2 grows by 4.6e+00 so the growth is NOT assigned to the response alone
+ok   c6.scale_cmp.L3 heuristic: floor / (u kappa_2(Q) |eps0|_2) 4.8e+02 (no stability factor pinned; not an exclusion)
+ok   c6.scale_cmp.L7 heuristic: floor / (u kappa_2(Q) |eps0|_2) 9.7e+01 (no stability factor pinned; not an exclusion)
+RECEIPT: outputs/physical_minus_branch_response_floor_assembly_defect_law_cycle709_2026_08_02_receipt_2026-08-02.json
+TOTAL: PASS=73 FAIL=0
+
+----- stderr -----
+

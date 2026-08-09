@@ -1,0 +1,129 @@
+{
+  "levels": {
+    "L3": {
+      "eps0_2norm": "9.7e+00",
+      "heuristic_absolute_solve_scale": "1.4e-13",
+      "lam_min": "4.7e-01",
+      "minus": {
+        "E_eps0_2norm": "1.2e-09",
+        "E_eps0_max": "4.7e-10",
+        "E_frobenius": "1.5e-09",
+        "E_nonzeros": 740,
+        "closure": "1.2e-15",
+        "closure_drop_term1": "8.4e-15",
+        "closure_drop_term2": "6.9e-11",
+        "cos": "1.0e+00",
+        "dQ": "1.2e-10",
+        "db": "2.1e-14",
+        "deps": "6.9e-11",
+        "drho": "0.0e+00",
+        "resid": "3.2e-04",
+        "term1": "8.2e-15",
+        "term2": "6.9e-11"
+      },
+      "n_dof": 98,
+      "plus": {
+        "E_eps0_2norm": "3.6e-14",
+        "E_eps0_max": "1.7e-14",
+        "E_frobenius": "2.0e-14",
+        "E_nonzeros": 8,
+        "closure": "7.8e-16",
+        "closure_drop_term1": "1.6e-15",
+        "closure_drop_term2": "1.1e-14",
+        "cos": "2.9e-01",
+        "dQ": "7.1e-15",
+        "db": "4.4e-15",
+        "deps": "1.2e-14",
+        "drho": "0.0e+00",
+        "resid": "9.6e-01",
+        "term1": "1.3e-15",
+        "term2": "1.1e-14"
+      },
+      "relative_conditioning_u_kappa2": "1.5e-14"
+    },
+    "L7": {
+      "eps0_2norm": "2.4e+01",
+      "heuristic_absolute_solve_scale": "1.6e-11",
+      "lam_min": "1.1e-02",
+      "minus": {
+        "E_eps0_2norm": "5.4e-09",
+        "E_eps0_max": "6.3e-10",
+        "E_frobenius": "7.0e-09",
+        "E_nonzeros": 15660,
+        "closure": "3.0e-15",
+        "closure_drop_term1": "3.4e-14",
+        "closure_drop_term2": "1.5e-09",
+        "cos": "1.0e+00",
+        "dQ": "1.2e-10",
+        "db": "1.1e-14",
+        "deps": "1.5e-09",
+        "drho": "0.0e+00",
+        "resid": "5.5e-04",
+        "term1": "3.4e-14",
+        "term2": "1.5e-09"
+      },
+      "n_dof": 1854,
+      "plus": {
+        "E_eps0_2norm": "7.3e-14",
+        "E_eps0_max": "1.2e-14",
+        "E_frobenius": "1.3e-13",
+        "E_nonzeros": 360,
+        "closure": "1.1e-15",
+        "closure_drop_term1": "3.1e-15",
+        "closure_drop_term2": "1.1e-12",
+        "cos": "4.8e-01",
+        "dQ": "7.1e-15",
+        "db": "3.1e-15",
+        "deps": "1.1e-12",
+        "drho": "0.0e+00",
+        "resid": "9.8e-01",
+        "term1": "2.7e-15",
+        "term2": "1.1e-12"
+      },
+      "relative_conditioning_u_kappa2": "6.6e-13"
+    }
+  },
+  "scaling": {
+    "E_eps0_2norm_ratio": "4.6e+00",
+    "E_eps0_max_ratio": "1.3e+00",
+    "E_frobenius_ratio": "4.6e+00",
+    "E_nonzeros_ratio": "2.1e+01",
+    "dQ_ratio": "1.0e+00",
+    "floor_ratio": "2.2e+01",
+    "lam_ratio": "4.3e+01"
+  },
+  "sweep": {
+    "E_minus_F": [
+      "9.8e-09",
+      "2.0e-09",
+      "1.5e-09",
+      "8.2e-10",
+      "3.9e-10"
+    ],
+    "E_plus_F": [
+      "5.0e-15",
+      "0.0e+00",
+      "2.0e-14",
+      "3.5e-14",
+      "3.4e-14"
+    ],
+    "scale_const": "2.2e+02",
+    "steps": [
+      "2.5e-05",
+      "5.0e-05",
+      "1.0e-04",
+      "2.0e-04",
+      "4.0e-04"
+    ]
+  },
+  "total": {
+    "FAIL": 0,
+    "PASS": 73
+  },
+  "witness": {
+    "minus_g": 1,
+    "n_minus": 3,
+    "n_plus": 3,
+    "plus_g": 15
+  }
+}

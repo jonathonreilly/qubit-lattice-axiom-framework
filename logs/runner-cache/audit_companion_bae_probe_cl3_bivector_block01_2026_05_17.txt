@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bae_probe_cl3_bivector_block01_2026_05_17.py
+runner_sha256: 53dd772e7f1b84cea09b78feef1c62487ac2cac7e2a93af6f9c87d3370ab4645
+input_fingerprint_sha256: 27eae3f634dbda3438cf21ddbaa5d97d65e9dd45333fc8405b7299159b48ace1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17
@@ -104,3 +113,6 @@ lattice_wide: checked and not executed — nothing in this probe extends past th
 ========================================================================================
 === TOTAL: PASS=47, FAIL=0 ===
 ========================================================================================
+
+----- stderr -----
+

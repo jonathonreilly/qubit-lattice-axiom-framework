@@ -1,0 +1,136 @@
+{
+ "all_certificates_pass": true,
+ "blocklist": [
+  "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+  "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt",
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+ ],
+ "certificates": {
+  "R0_PINS_BLOCKLIST_AND_LANDED_GATE_AST": {
+   "finding": "pins_match=4/4; BLOCKLIST_text_AST_only=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py']; blocked_modules_loaded=False; swap_word_cnot_order=[('left', 'right'), ('right', 'left'), ('left', 'right')]",
+   "pass": true
+  },
+  "R1_REFUTE_STATE_RESOLVED_CENSUS": {
+   "finding": "independent_state_resolved_changed=4/20; primary=4/20",
+   "pass": true
+  },
+  "R2_REFUTE_UNIFORM_CENSUS": {
+   "finding": "independent_uniform_self_input_changed=0/10; primary=0/10",
+   "pass": true
+  },
+  "R3_REFUTE_GATE_CONSTRUCTION": {
+   "finding": "independent_verdict=CONSTRUCTED; word=CNOT(1->0); D0=[1, 0]; D1=[0, 1]; transition_n1=[0, 1]->[1, 1]",
+   "pass": true
+  },
+  "R4_REFUTE_PRICE_AND_SCOPE": {
+   "finding": "price_route=successful_landed_construction; delta_gate/coupling/axiom/primitive=[0, 0, 0, 0]; uniform independence scoped, not deleted",
+   "pass": true
+  },
+  "R5_CONTROLS": {
+   "finding": "determinism_replay=True; runtime_s=0.003955<1400; stdout_upper_bound_bytes=2738<6000<150000; timeout_s=300<1400; literal_inputs=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py']",
+   "pass": true
+  }
+ },
+ "claim_type": "bounded_theorem",
+ "core_ast_evidence": {
+  "cnot_argument_order": [
+   [
+    "left",
+    "right"
+   ],
+   [
+    "right",
+    "left"
+   ],
+   [
+    "left",
+    "right"
+   ]
+  ],
+  "matches_landed_three_cnot_word": true,
+  "single_cnot_1_to_0_is_landed_gate_instance": true,
+  "swap_word_found": true
+ },
+ "cycle": 970,
+ "independent_findings": {
+  "construction_succeeded": true,
+  "resolved_changed": 4,
+  "resolved_total": 20,
+  "state_mutated_on_neighbor_1": true,
+  "uniform_changed": 0,
+  "uniform_total": 10,
+  "witness_after": [
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  "witness_before": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "witness_distributions": [
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "witness_word": "CNOT(1->0)"
+ },
+ "pins": [
+  {
+   "exists": true,
+   "expected": "cb08af69f87b45ebd1fef2748493139fa249570d3986104857a523bfe79f4d6e",
+   "match": true,
+   "observed": "cb08af69f87b45ebd1fef2748493139fa249570d3986104857a523bfe79f4d6e",
+   "path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py"
+  },
+  {
+   "exists": true,
+   "expected": "ca9e621ee61d5346ff6fbf5e68f454962edfd1c215395dc208545b1c2cd3d654",
+   "match": true,
+   "observed": "ca9e621ee61d5346ff6fbf5e68f454962edfd1c215395dc208545b1c2cd3d654",
+   "path": "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt"
+  },
+  {
+   "exists": true,
+   "expected": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "match": true,
+   "observed": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  },
+  {
+   "exists": true,
+   "expected": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "match": true,
+   "observed": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  }
+ ],
+ "primary_ast_evidence": {
+  "literal_audit_input_paths": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  ],
+  "matches_expected_primary_inputs": true
+ },
+ "role": "independent_checker",
+ "runtime_sec": 0.003954999963752925,
+ "stdout_bytes": 1615,
+ "verdict": "PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT"
+}

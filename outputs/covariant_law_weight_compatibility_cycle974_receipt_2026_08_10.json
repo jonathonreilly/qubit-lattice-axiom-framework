@@ -1,6 +1,4 @@
 {
-  "cache_path": "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt",
-  "cache_sha256": "9eef65645087f118e31a82f2f02fd369a00348a49e6bc3c8e61dd9fbd2a3b4df",
   "certificates": {
     "A_REBUILD": {
       "candidate_rows": {
@@ -469,7 +467,7 @@
         "3826925e019c0e1966a9b85110a397db2c61d33f:scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py (AST)"
       ],
       "runtime_budget_seconds": 1400,
-      "runtime_seconds": 48.52957854105625,
+      "runtime_seconds": 47.1605627090903,
       "sha256": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
@@ -489,5 +487,5 @@
   "claim": "covariant nearest-neighbour XOR law compatibility with the five finite event weightings",
   "cycle": 974,
   "pass": true,
-  "primary_source_sha256": "17d056cc67fcde5f21c8b3ea23ded4d0180ae0d22b6b72893b7540639f78428a"
+  "primary_source_sha256": "08dff97b7da09afbb1c93da95cac47fbbb3b94ff90319f5bbca0237c9ec2196f"
 }

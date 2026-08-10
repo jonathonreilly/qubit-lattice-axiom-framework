@@ -130,7 +130,6 @@ DIRECTIONS = (
 )
 CONDITIONS = tuple(product((0, 1), repeat=6))
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
-CACHE_PATH = ROOT / "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt"
 RECEIPT_PATH = ROOT / "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json"
 
 
@@ -980,16 +979,12 @@ def run() -> tuple[dict, str]:
     output = render_stdout(receipt)
     receipt["pass"] = all(receipt["checks"].values())
     receipt["primary_source_sha256"] = sha256(Path(__file__).read_bytes()).hexdigest()
-    receipt["cache_path"] = str(CACHE_PATH.relative_to(ROOT))
-    receipt["cache_sha256"] = sha256(output.encode()).hexdigest()
     return receipt, output
 
 
 def main() -> int:
     receipt, output = run()
-    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     RECEIPT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CACHE_PATH.write_text(output, encoding="utf-8")
     RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     sys.stdout.write(output)
     return 0 if receipt["pass"] else 1

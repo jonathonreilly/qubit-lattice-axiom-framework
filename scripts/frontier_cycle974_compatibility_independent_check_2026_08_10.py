@@ -38,9 +38,9 @@ AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 EXPECTED_SHA256 = {
-    AUDIT_INPUT_PATHS[0]: "17d056cc67fcde5f21c8b3ea23ded4d0180ae0d22b6b72893b7540639f78428a",
-    AUDIT_INPUT_PATHS[1]: "9eef65645087f118e31a82f2f02fd369a00348a49e6bc3c8e61dd9fbd2a3b4df",
-    AUDIT_INPUT_PATHS[2]: "98bb95f45ab7afe4d3b2427a8fcd8ed47cea344ac77a668acf04c6a981b7e844",
+    AUDIT_INPUT_PATHS[0]: "08dff97b7da09afbb1c93da95cac47fbbb3b94ff90319f5bbca0237c9ec2196f",
+    AUDIT_INPUT_PATHS[1]: "5d017c1449a57db5aeb42bbbb00bcabb646f27d388983a5784a2b83308bbae51",
+    AUDIT_INPUT_PATHS[2]: "bda3ef37e9ae913e38975ec908087d72b8e56aa4cd4d84f5e719cd69f369c8a3",
     AUDIT_INPUT_PATHS[3]: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[4]: "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
 }
@@ -59,7 +59,6 @@ DIRECTIONS = (
 )
 CONDITIONS = tuple(product((0, 1), repeat=6))
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
-CACHE_PATH = ROOT / "logs/runner-cache/frontier_cycle974_compatibility_independent_check_2026_08_10.txt"
 RECEIPT_PATH = ROOT / "outputs/covariant_law_weight_compatibility_cycle974_independent_check_receipt_2026_08_10.json"
 
 
@@ -119,7 +118,9 @@ def controls() -> dict:
     cache_checks = {
         "total_pass": "TOTAL: PASS=4 FAIL=0" in primary_cache,
         "all_five_survive_reported": all(f'"{name}":"SURVIVES"' in primary_cache for name in CANDIDATE_NAMES),
-        "receipt_cache_binding": primary_receipt["cache_sha256"] == sha256(primary_cache.encode()).hexdigest(),
+        "envelope_runner_binding": f"runner_sha256: {sha_rows[AUDIT_INPUT_PATHS[0]]}" in primary_cache,
+        "envelope_timeout_binding": "timeout_sec: 1400" in primary_cache,
+        "envelope_success": "status: ok" in primary_cache and "exit_code: 0" in primary_cache,
         "receipt_source_binding": primary_receipt["primary_source_sha256"] == sha256(primary_source.encode()).hexdigest(),
     }
     loaded = sorted(
@@ -644,16 +645,12 @@ def run() -> tuple[dict, str]:
     output = render(receipt)
     receipt["pass"] = all(receipt["checks"].values())
     receipt["checker_source_sha256"] = sha256(Path(__file__).read_bytes()).hexdigest()
-    receipt["cache_path"] = str(CACHE_PATH.relative_to(ROOT))
-    receipt["cache_sha256"] = sha256(output.encode()).hexdigest()
     return receipt, output
 
 
 def main() -> int:
     receipt, output = run()
-    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     RECEIPT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CACHE_PATH.write_text(output, encoding="utf-8")
     RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     sys.stdout.write(output)
     return 0 if receipt["pass"] else 1

@@ -1,6 +1,6 @@
 {
- "edge_count": 15614,
- "node_count": 5494,
+ "edge_count": 15610,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1058,6 +1058,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "axiom_edit_repair_map_cycle973_note_2026-08-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -1655,8 +1659,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "8f69ac2666b6",
-   "out_degree": 346
+   "deps_hash": "843d0221d9c5",
+   "out_degree": 345
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -13694,10 +13698,6 @@
    "deps_hash": "7749103a0f1f",
    "out_degree": 3
   },
-  "physical_cell_cutting_carrier_parity_law_cycle746_note_2026-08-08": {
-   "deps_hash": "56974cdc9f20",
-   "out_degree": 1
-  },
   "physical_cell_cutting_charge_space_cycle736_note_2026-08-05": {
    "deps_hash": "4296058e250d",
    "out_degree": 3
@@ -15701,10 +15701,6 @@
   "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11": {
    "deps_hash": "7dab68b99d29",
    "out_degree": 1
-  },
-  "record_content_only_shared_effect_descent_bounded_theorem_note_2026-08-12": {
-   "deps_hash": "aa1402df23ce",
-   "out_degree": 3
   },
   "record_content_readout_license_split_registration_unreachability_theorem_note_2026-07-02": {
    "deps_hash": "c228186e4577",

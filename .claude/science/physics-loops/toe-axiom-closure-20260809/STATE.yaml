@@ -126,8 +126,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: exact conditioned-CNOT carrier and extractor equivariance, raw-content type boundary, fixed-versus-transported effect split, and supplied-control spectrum preparation; physical selector, program quotient, splitting or restriction, occurrence, and history remain open
 hypothetical_axiom_status: law-derived density functional or control mixture/eigenbasis plus preparation-program-effect registration and occurrence only; no axiom edit authorized
 review_disposition: block05_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: local_block05_stacked_on_open_6070
-pr_url: null
+pr_status: open_6071_stacked_on_open_6070
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6071
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

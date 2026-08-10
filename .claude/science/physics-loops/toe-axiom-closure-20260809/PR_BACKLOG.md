@@ -44,7 +44,7 @@ CNOT/XOR contact family and explicitly leaves the continuous `M_2(C)` law
 open, so it does not collide. The canonical axiom memo remains untouched; no
 `review-loop` is used.
 
-Block 5 is under direct self-review on branch
+Block 5 is open on branch
 `physics-loop/toe-axiom-closure-block05-20260810`, stacked on the exact PR
 #6070 head `f208666e0fbf9829ef375269b43b7a1dd77e2a9c`. The theorem proves the
 raw Gaussian/density-state type boundary, exact conditioned-CNOT
@@ -55,8 +55,10 @@ reach their intended failure families. N1--N8 rejects any global contact or
 unitary no-go. Harness/graph registration and direct conformance pass. The
 full pipeline reaches only PR #6061's current-main dependency-policy epoch
 stop after all earlier stages pass; 1,055 tracked generated changes and 817
-new ledger shards were cleaned. Final cold diff and stacked delivery remain.
-The canonical axiom memo remains untouched; no `review-loop` is used.
+new ledger shards were cleaned. Final cold diff passed. Opened: PR #6071,
+science commit `517f6d74d7`, on the exact #6070 head. Hard landing order is
+#6063, #6065, #6067, #6070, then #6071. The canonical axiom memo remains
+untouched; no `review-loop` is used.
 
 Completed Block 1 delivery checklist:
 

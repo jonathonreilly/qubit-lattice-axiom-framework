@@ -628,5 +628,16 @@ percentages remain unchanged and no `review-loop` is invoked. Block 14 is
 currently an uncommitted candidate stacked on the exact Block-13 delivery head
 `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Direct vocabulary, strict audit
 lint, graph/link/class-F, premise, Python/YAML, whitespace, cache, exact
-18-path, and canonical checksum gates pass. The isolated pipeline and delivery
-remain to be recorded.
+18-path, and canonical checksum gates pass.
+
+The isolated full pipeline passes premise purity, model-family normalization,
+graph/manifest reconstruction, load-bearing computation, ledger seeding and
+fixed point, sanitization, classifier capture, and effective-status
+computation. Restoration then reproduces only PR #6061's known stale
+dependency-policy epoch manifest. Its 1,066 tracked generated changes and 826
+new ledger shards were discarded with the disposable worktree. Seeded
+changed-evidence readiness checks Block 14 and all 14 stacked claims with zero
+failures and zero control failures.
+
+The exact 18-file science delta is commit `a7b6da269a`. Delivery remains to be
+recorded; the canonical memo and fixed percentages remain unchanged.

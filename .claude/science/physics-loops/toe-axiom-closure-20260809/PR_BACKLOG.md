@@ -231,5 +231,9 @@ seven-family reconstruction agrees, and all 29 process-local mutations fail
 closed. Graph registration is 5,460 nodes / 15,559 edges with note out-degree
 five. The canonical axiom memo is untouched, the fixed TOE percentages do not
 move, and no `review-loop` is used. Direct repository conformance passes; the
-isolated pipeline rehearsal, science commit, and stacked PR delivery are
-pending.
+isolated pipeline passes every stage through effective-status computation and
+then reproduces PR #6061's known dependency-policy epoch mismatch at
+restoration. Its 1,066 tracked generated changes and 826 new shards were
+discarded. Seeded changed evidence checks all 14 stacked claims with zero
+failures or control failures. Science commit is `a7b6da269a`; push and stacked
+PR delivery are pending.

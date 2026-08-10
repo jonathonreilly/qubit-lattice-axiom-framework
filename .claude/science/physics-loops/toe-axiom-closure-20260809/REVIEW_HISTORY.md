@@ -795,5 +795,15 @@ failure already owned by PR #6061. No `review-loop` was invoked.
 - Vocabulary has zero findings; strict audit lint has zero errors; premise
   purity and graph/link/class-F invariants pass. Python compilation, YAML
   parsing, diff whitespace, source-pinned cache, exact 18-path scope, and the
-  canonical axiom checksum also pass. The isolated-pipeline result will be
-  appended before the science commit.
+  canonical axiom checksum also pass.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph/manifest reconstruction, load-bearing computation,
+  ledger seeding/fixed point, sanitization, classifier capture, and effective-
+  status computation. Restoration then reproduces PR #6061's known stale
+  dependency-policy epoch manifest.
+- The disposable rehearsal contains 1,066 tracked generated changes and 826
+  new ledger shards; all were removed with the disposable worktree. Seeded
+  changed-evidence readiness checks Block 14 and all 14 stacked claims with
+  zero failures and zero control failures.
+- The exact 18-file science delta is commit `a7b6da269a`. Push and stacked PR
+  delivery remain pending; no `review-loop` is invoked.

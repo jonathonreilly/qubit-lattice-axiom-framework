@@ -275,6 +275,14 @@ campaign authors no verdict.
 - Direct vocabulary, strict audit lint, graph/link/class-F invariants, premise
   purity, Python/YAML parsing, whitespace, exact 18-path scope, cache
   freshness, and canonical-axiom checksum gates pass.
+- The isolated full pipeline passes premise purity, model-family normalization,
+  graph/manifest reconstruction, load-bearing computation, ledger seeding and
+  fixed point, sanitization, classifier capture, and effective-status
+  computation. Restoration then reproduces only PR #6061's known stale
+  dependency-policy epoch manifest. The disposable 1,066 tracked generated
+  changes and 826 new ledger shards were removed. Seeded changed-evidence
+  readiness checks all 14 stacked claims with zero failures and zero control
+  failures.
 
 No canonical axiom is edited and the fixed TOE percentages do not move. The
 Block 14 source remains bounded support and requires independent audit; this

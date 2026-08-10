@@ -428,3 +428,47 @@ The 18-file science delta is commit `85dc90b6a5` and is open as stacked PR
 #6078 on the exact #6077 head. Hard landing order is #6063, #6065, #6067,
 #6070, #6071, #6074, #6075, #6076, #6077, then #6078. The fixed TOE
 percentages do not move, and no `review-loop` is invoked.
+
+## Block 11 science handoff
+
+Block 11 constructs the geometry family that Block 10 left open. At every
+site, an orientation-preserving coframe supplies cofactor-column face areas;
+symmetric endpoint shares turn them into one local cut action. The resulting
+finite Gibbs law is positive, has local compatible conditionals, transforms
+under all 24 proper cubic rotations, and reduces exactly to the flat
+code-symmetric action.
+
+The flat coframe derivative is the tangential response
+`P_i=tau[(Tr Q_i)I-Q_i]`. Pullback to `F_i[u]=I+D^0u_i` gives exact virtual
+work `delta S/delta u_i=-div^0P_i`. Global force telescopes on every periodic
+fixture; the slab is locally stationary and the singleton is locally forced.
+This separates the off-shell translation identity from the on-shell geometry
+equation rather than calling covariance conservation.
+
+The signed cut is independently `J=partial U`, so `partial J=0` gives an
+off-shell higher-form gauge Ward identity. It is explicitly not
+stress-energy. The same coframe family fixes the generating Hessian as
+`Cov(S',S')-E[S'']`; exact dilation and shear fixtures retain the contact
+term.
+
+Cold review found one further axiom-level wall: a normalized `pi_F` is
+unchanged by an `F`-dependent additive shift of its unnormalized action, while
+absolute coframe response is shifted. Physical closure therefore requires a
+licensed local action representative and geometry-dependent zero, not only a
+probability family. The sufficient candidate amendment now separates that
+representative, its physical unit, and the independent geometry action/update.
+It is not adopted, proved necessary, or claimed minimal.
+
+The primary runner is `PASS=34 FAIL=0` with 5,346 characters of stdout. An
+independent symbolic/exact recomputation passes seven load-bearing families,
+including virtual work `-447/35`; all 34 process-local mutations fail closed
+at named checks. A fresh open-PR sweep finds no collision: PRs #6072/#6066 are
+semantic corpus maps, #6069 is a finite neighbor-word law, and #6073/#6068 are
+cell-cutting rank studies. Harness/graph/cache integration is complete at
+5,457 nodes / 15,543 edges; the note has out-degree five and the harness adds
+the sixth edge. Vocabulary, strict audit lint, graph/link/class-F invariants,
+YAML, Python, whitespace, local links, exact 18-path delta, cache freshness,
+and the canonical-axiom checksum pass. The science commit, isolated full
+pipeline, changed-evidence replay, push, and stacked PR are the remaining
+delivery steps. The canonical memo and fixed TOE percentages remain unchanged,
+and no `review-loop` is invoked.

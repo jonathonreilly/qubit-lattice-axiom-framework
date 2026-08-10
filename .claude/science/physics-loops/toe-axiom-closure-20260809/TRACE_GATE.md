@@ -123,3 +123,24 @@ family, Ward identity, physical action unit, field equation, coupling, and
 regime remain separate obligations. The existing source-convention route
 defeats every broad source or axiom no-go. Candidate clauses remain
 hypothetical, the canonical memo is untouched, and no percentage moves.
+
+Block 11 supplies the off-background family that Block 10 could only name.
+Endpoint-shared cofactor areas define one positive finite coframe-indexed cut
+Gibbs action, and its flat derivative is the tangential surface response
+`tau[(Tr Q)I-Q]`. The full same-family source Hessian contains both connected
+covariance and its local coframe seagull.
+
+Two Ward statements are now exact and separated. Centered-displacement
+pullback gives virtual work and global translation telescoping; local
+`div^0P=0` is on shell and requires geometry dynamics. The signed interface
+is independently a boundary and obeys an off-shell higher-form gauge Ward
+identity, which is not stress-energy conservation.
+
+The remaining axiom trace is sharper, not merely shorter. The physical theory
+must select the geometry-indexed law, license a local unnormalized action
+representative and its geometry-dependent additive zero, fix an action unit,
+and provide a separate geometry action/update, curvature interpretation,
+coupling, and regime. Finite normalization does not supply projective
+consistency or realized dynamics. The candidate amendment is sufficient only
+by premise; it is not adopted or proved necessary. The canonical memo and all
+fixed TOE percentages remain unchanged.

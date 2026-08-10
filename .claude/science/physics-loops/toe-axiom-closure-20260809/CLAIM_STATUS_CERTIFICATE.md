@@ -127,6 +127,29 @@ bare_retained_allowed: false
   stress, gravity, or axiom no-go claims are rejected; geometry-family,
   convention, improvement, Noether/Ward, and field-dynamics routes remain
   live.
+- Block 11 constructs one of those live routes explicitly. Local
+  cofactor-column areas define a positive finite coframe-indexed cut Gibbs
+  action that reduces exactly to Block 10 at `F=I`.
+- Its flat derivative is the tangential surface response
+  `P_i=tau[(Tr Q_i)I-Q_i]`, not the normal cut tensor `Q_i`. The full finite
+  source Hessian contains both connected covariance and a same-family
+  coframe seagull.
+- Pullback through `F_i[u]=I+D^0u_i` gives the exact virtual-work identity
+  `delta S/delta u_i=-div^0 P_i`. Global force vanishes off shell; local
+  force balance follows only from a supplied geometry equation. The wrapping
+  slab is locally stationary and the singleton is locally forced.
+- Independently, the signed interface is `J=partial U`, so `partial J=0`
+  gives an off-shell higher-form source-gauge Ward identity. This is not
+  stress-energy conservation.
+- A normalized `pi_F` does not fix absolute coframe response: an
+  `F`-dependent configuration-independent shift of its unnormalized action
+  leaves `pi_F` unchanged. Physical closure therefore needs a licensed local
+  action representative and geometry-dependent zero as well as an action
+  unit, selected geometry family, and separate geometry dynamics.
+- The candidate amendment records those sufficient interfaces but is not
+  adopted, proved necessary, or claimed minimal. Projective consistency,
+  curvature dynamics, coupling, continuum regime, and realized history
+  remain open, so the fixed TOE percentages do not move.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

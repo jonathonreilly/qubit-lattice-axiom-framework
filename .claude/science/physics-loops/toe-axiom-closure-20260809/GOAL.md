@@ -344,6 +344,46 @@ routes make both broad no-go and axiom-necessity claims untenable. Neither
 candidate is adopted or claimed minimal. No canonical axiom is edited, and no
 TOE percentage moves.
 
+## Block 11 Target And Disposition
+
+Block 11 resolves the mathematical existence branch left by Block 10. For an
+orientation-preserving local coframe `F_i`, assign each axis-normal cut face
+the cofactor-column area `A_i,a=|cof(F_i)e_a|` and share the cut equally
+between its endpoints. The resulting action
+
+`S_cut=tau sum_(i,a)m_i,a A_i,a+<B,J>`
+
+defines one positive normalized finite Gibbs family and reduces at `F=I`,
+`B=0` to `tau C`. With `tau=(log B_code)/2`, it is exactly the Block 10
+action rather than an unrelated tensor insertion.
+
+The complete flat first variation is
+
+`P_i=tau[(Tr Q_i)I-Q_i]`.
+
+For a single face this is the tangential projector, correcting the tempting
+but wrong identification of the normal tensor `Q_i` as area stress. Along a
+centered displacement coframe, exact periodic summation by parts gives
+`delta S_cut/delta u_i=-div^0P_i`. Global force telescopes off shell; the
+wrapping slab has zero local force, while the singleton has nonzero local
+force and zero total. Local conservation therefore needs a separate geometry
+equation.
+
+The signed interface current satisfies `J=partial U` and hence
+`partial J=0` off shell. Its exact two-form source-gauge Ward identity is
+topological and is not energy-momentum conservation. The same coframe family
+also fixes the full generating Hessian
+`Psi''=Cov(S',S')-E[S'']`, including the dilation and shear contact terms.
+
+Cold review sharpened the axiom residual further. A normalized family
+`pi_F` is invariant under `S_F -> S_F+c(F)`, while absolute first and second
+coframe responses are not. A sufficient amendment must therefore register
+the geometry-indexed joint family, a local unnormalized action representative
+and its geometry-dependent additive zero, one physical action unit, and a
+separate local geometry action/update whose combined equation supplies the
+on-shell Ward identity. This is candidate wording only. No canonical axiom is
+edited, no no-go claim ships, and no TOE percentage moves.
+
 ## Trace target
 
 The landed source states:

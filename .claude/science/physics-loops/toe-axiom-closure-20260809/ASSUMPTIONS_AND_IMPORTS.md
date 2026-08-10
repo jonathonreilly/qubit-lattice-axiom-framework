@@ -209,3 +209,25 @@ The theorem imports no physical surface tension, source license, stress-energy
 identification, local metric family, conservation law, gravitational field
 equation, Newton coupling, dynamics, continuum limit, empirical value, or
 realized history.
+
+## Block 11 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Block 10 code-symmetric cut action | flat action boundary | stacked bounded theorem | yes | no physical license or action unit inherited |
+| orientation-preserving local coframes `F_i` | off-background source family | explicitly supplied mathematical field | yes | no physical geometry selection inferred |
+| cofactor-column face areas | local geometry weight | elementary three-dimensional algebra | yes | one declared discretization, not unique curved-cell geometry |
+| symmetric endpoint cut shares | local action carrier | constructed convention | yes | chosen for exact edge equivalence and cubic covariance |
+| finite Gibbs normalization | positive joint law | elementary finite probability | yes | no projective or infinite-volume family inferred |
+| local unnormalized action representative | absolute coframe-response carrier | explicit Block 11 declaration | yes | normalized probabilities alone leave a geometry-dependent additive zero unfixed |
+| centered lattice displacement gradient | virtual-work subfamily | explicit proper-cubic finite difference | yes | its null modes and nonuniqueness are stated |
+| periodic summation by parts | global/local force relation | elementary exact lattice identity | yes | local conservation requires a supplied geometry equation |
+| signed dual surface and two-form source | higher-form Ward carrier | elementary cubical chain/cochain construction | yes | not identified with energy, momentum, mass, or stress |
+| finite log-partition differentiation | first/second source response | elementary exact probability identity | yes | same-family contact term retained |
+| physical action unit, geometry action, curvature equation, coupling, and regime | gravity completion | open imports | no for theorem; yes for TOE closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The theorem imports no selected physical coframe, geometry-dependent action
+zero, action unit, geometry dynamics, curvature functional, Newton coupling,
+continuum completion, projective consistency, causal update, empirical value,
+or realized history.

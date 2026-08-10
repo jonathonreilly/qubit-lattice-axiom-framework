@@ -232,3 +232,28 @@ is a semantic repair map. The existing source-coupled local-action note is a
 live convention route rather than a current axiom theorem, so it is composed
 as a steelman and not claimed as new closure. No open PR collides with the
 Block 10 theorem. PR #6061 still owns the dependency-policy epoch repair.
+
+## Block 11 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| endpoint-shared coframe area action | `tau sum m_i,a |cof(F_i)e_a|` | one positive local finite Gibbs family, exact flat recovery | positive existence closure; physical selection open |
+| normal cut tensor as stress | `Q_i=sum_a m_i,a e_a e_a^T` | area derivative is its tangential complement, not `Q_i` | retire the direct identification |
+| centered displacement pullback | `F_i=I+D^0u_i` | exact virtual work and global translation telescoping | keep as explicit conditional geometry family |
+| matter-only local conservation | `div^0P_i=0` for every cut | true for wrapping planes, false for singleton | require combined geometry equation; no no-go beyond the family |
+| oriented higher-form current | `J=partial U` and `<B,J>` | exact off-shell closure and source-gauge Ward identity | positive topological result; forbid stress-energy relabeling |
+| same-family metric Hessian | derivatives of one `S_cut(F)` | connected covariance minus local seagull | positive source-response completion |
+| normalized probability family alone | `pi_F` modulo `S_F+c(F)` | cannot fix absolute coframe/free-energy response | require registered action representative/additive zero |
+| geometry-family/dynamics amendment | `pi_F`, local `S_F`, source zero, action unit, separate geometry update | sufficient typing and on-shell Ward shape by premise | governance fallback; no edit, necessity, or minimality claim |
+| geometry action and field equation | `delta[S_geometry+s_*S_cut]/delta u=0` | not selected by current construction | highest-value next science route |
+
+## Block 11 live PR sweep
+
+At the Block 11 boundary, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`. PRs #6073/#6068 are exact
+cell-cutting rank/cancellation studies and contain no coframe cut action,
+metric-source family, or Ward identity. PRs #6072/#6066 are pinned semantic
+corpus maps; any coframe phrases occur only inside quoted corpus excerpts.
+PR #6069 is a finite basis-state neighbor-word/XOR covariance law and leaves
+continuous Admissibility and geometry open. No open PR collides with Block 11.
+PR #6061 still owns the dependency-policy epoch repair.

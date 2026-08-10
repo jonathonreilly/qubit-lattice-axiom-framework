@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_cut_surface_coframe_stress_higher_form_ward_geometry_dynamics_boundary_2026_08_10.py
+runner_sha256: 39edb5fcdb36ecccc03b5f9c9c91a6e24f65eee174cd1c1e4f3362f91af57642
+input_fingerprint_sha256: 2d153bed3230aee0ddf290aaf3b85841d1929542ff985329318c32f24387948e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.91
+status: ok
+----- stdout -----
+external_scientific_inputs: none; finite coframe-area, Gibbs, cochain, and virtual-work identities are derived in-source
+package_local_integrity_reads: current axioms, Block-10 cut theorem, source convention, stress-Ward boundary, and scale primitive are source-bound
+analytic_boundary: arbitrary positive local coframes and finite cubic Gibbs laws are analytic; exact diagonal, orbit, K7 coefficient, plane, and singleton fixtures are executed
+physical_boundary: coframe choice, local action representative and unit, geometry dynamics, curvature action, field equation, coupling, and realized history are not selected
+PASS: source-current-axioms the current memo supplies a fixed cubic lattice and leaves source/action, metric, and dynamics open
+PASS: source-cut-parent Block 10 supplies the exact statistical cut action and names the geometry-family/Ward residual
+PASS: source-convention the existing open gate defines insertions and connected responses by source derivatives
+PASS: source-stress-seagull the stress packet requires a full same-family metric Hessian including contact terms
+PASS: source-scale the scale primitive converts units but supplies no dimensionless coupling or selector
+PASS: cubic-domain the exact periodic fixture has 125 sites and all 24 proper cubic rotations
+PASS: signed-support the oriented jump squares to the unsigned cut indicator and code swap reverses only its sign
+PASS: oriented-surface-closure the signed jump has zero integer curl on every plaquette, so the dual surface current is co-closed off shell
+PASS: higher-form-gauge-ward pairing the surface boundary with an arbitrary exact test source vanishes identically
+PASS: two-form-source-locality-covariance the oriented source changes only on six incident faces and code swap is covariant with B -> -B
+PASS: coframe-area cofactor-column norms give unit flat areas and exact diagonal areas (15,10,6)
+PASS: coframe-area-covariance all proper cubic rotations transport cofactor area coordinates by the induced unsigned axis permutation
+PASS: site-edge-area-equivalence the endpoint-shared coframe action equals one count per cut edge times its mean endpoint area
+PASS: flat-cut-recovery at the identity coframe the geometry family reduces exactly to tension times total cut area
+PASS: geometry-code-swap the zero two-form-source coframe action is exactly invariant under code complementation
+PASS: geometry-local-conditional every one-site action increment is the six incident mean-area weights with occupied-neighbor signs
+PASS: flat-local-odds with tension t/2 the flat action increment in units of t is 3-k and the conditional odds exponent is k-3
+PASS: flat-area-first-variation the exact cofactor derivative is dA_a=tr(dF)-dF_aa
+PASS: tangential-piola-map the full flat coframe derivative is P=tension[(Tr Q)I-Q] at every site
+PASS: single-face-tangential-stress one x-normal cut face has response tension*diag(0,1,1), zero normal traction, and trace two tension
+PASS: area-seagull-paths uniform dilation has (A',A'')=(2,2), x-normal stretch leaves A_x fixed, and xy shear has A_x''=1
+PASS: piola-cubic-covariance the flat tangential stress transports covariantly under all 24 proper cubic rotations
+PASS: force-cubic-covariance the centered stress divergence transports as a vector under all 24 proper cubic rotations
+PASS: discrete-virtual-work centered coframe variation obeys exact periodic summation by parts: P:D0v=-(div0 P).v
+PASS: global-translation-ward the total embedding force vanishes identically on every periodic fixture by telescoping
+PASS: flat-interface-on-shell the two planar wrapping interfaces have zero local coframe force at every site
+PASS: curved-interface-force the singleton surface has nonzero local force with zero total, so local stress conservation needs a geometry equation
+PASS: uniform-dilation-hessian the parent K7 uniform-area multiplier has exact seagull coefficient -E[C] and covariance coefficient Var(C)
+PASS: offdiagonal-shear-seagull the cubic line orbit has zero first xy-shear response and exact mean second area insertion C_x=4
+PASS: construction-source-surface the source states the coframe law, tangential stress, virtual-work, higher-form Ward, seagull, and amendment
+PASS: action-representative-boundary the source distinguishes a normalized Gibbs family from its geometry-dependent local action representative
+PASS: boundary-source-surface the source preserves physical, dynamical, projective, no-go, percentage, and governance boundaries
+PASS: machine-status-contract the source carries the bounded upstream-support trace contract
+PASS: canonical-nonmutation coframe family, tangential cut stress, higher-form source, and geometry equation wording is absent from the canonical memo
+per_element: checked signed jumps, unsigned cut support, cofactor face areas, and orientation reversal exactly
+per_site: checked mean-endpoint geometry weights, local conditionals, tangential Piola response, and embedding force
+per_mode: checked uniform dilation, normal stretch, offdiagonal shear seagull, and cubic orbit response
+per_block: checked positive geometry-indexed Gibbs action -> coframe derivative -> virtual work -> on-shell force balance
+lattice_wide: checked integer surface closure, higher-form gauge Ward, all 24 cubic rotations, planar stationarity, and global telescoping
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

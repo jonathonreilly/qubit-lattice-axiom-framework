@@ -177,3 +177,24 @@ Block 10 packages a stacked bounded theorem only if it contains all of:
    axiom edit; and
 7. an exact runner/cache, independent recomputation, mutation sensitivity,
    harness/graph registration, and direct conformance review.
+
+## Block 11
+
+Block 11 packages a stacked bounded theorem only if it contains all of:
+
+1. one explicit positive finite geometry-indexed Gibbs family whose local
+   cofactor-column face areas reduce exactly to the Block 10 cut action;
+2. the complete flat first coframe variation, including the tangential
+   surface projector and all-24 proper-cubic covariance;
+3. an exact centered-displacement virtual-work identity, global translation
+   Ward identity, and planar/singleton fixtures that separate off-shell
+   telescoping from on-shell local force balance;
+4. the oriented integer surface-current closure and its distinct higher-form
+   source-gauge Ward identity, without stress-energy relabeling;
+5. the full same-family log-partition Hessian with both covariance and
+   coframe-seagull terms, including dilation and offdiagonal-shear controls;
+6. an explicit normalized-law/action-representative distinction and narrowly
+   sufficient hypothetical geometry-family/dynamics amendment, with no
+   canonical edit, necessity, minimality, gravity, or no-go claim; and
+7. an exact runner/cache, independent symbolic recomputation, mutation
+   sensitivity, harness/graph registration, and direct conformance review.

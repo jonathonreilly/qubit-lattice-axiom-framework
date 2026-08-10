@@ -612,3 +612,36 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   science delta as `85dc90b6a5`, pushed the dedicated branch, and opened
   mergeable stacked PR #6078 on the exact #6077 head. Hard landing order is
   #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, then #6078.
+
+## Block 11 direct-review record
+
+- The declared endpoint-shared cofactor-area action is one explicit positive
+  finite geometry family and reduces exactly to Block 10 at the identity
+  coframe. Every local conditional comes from that same joint law.
+- Symbolic cofactor differentiation verifies the tangential response rather
+  than the normal cut tensor. All 24 proper cubic rotations transport both
+  the stress and its centered divergence covariantly.
+- Exact periodic summation by parts gives virtual work `-447/35` on the
+  hostile fixture. Global force vanishes off shell, while wrapping-plane and
+  singleton fixtures distinguish local stationarity from local forcing.
+- The oriented surface closure and two-form gauge Ward identity are exact and
+  explicitly separated from stress-energy conservation. Uniform dilation
+  and offdiagonal shear retain both connected and seagull responses.
+- Cold review rejected an initially under-typed axiom candidate: `pi_F` alone
+  is invariant under geometry-dependent additive shifts of its unnormalized
+  action. The corrected sufficient candidate registers a local action
+  representative and its additive zero, action unit, and separate geometry
+  dynamics. No canonical edit or necessity/minimality claim follows.
+- The primary runner is `PASS=34 FAIL=0` with 5,346 characters of stdout. A
+  separate SymPy/Fraction recomputation passes seven independent families.
+  Thirty-four process-local mutations each produce a named nonzero failure.
+- A fresh live sweep finds no collision in PRs #6072, #6073, #6069, #6068,
+  or #6066; their semantic maps, cell-cutting ranks, and finite neighbor-word
+  laws do not construct this coframe action, response, or Ward family.
+- The graph is regenerated at 5,457 nodes / 15,543 edges; the note has
+  out-degree five and the harness supplies one more edge. Vocabulary, strict
+  audit lint, graph/link/class-F invariants, YAML, Python, whitespace, six
+  local links, exact 18-path delta, fresh cache, runner-output ceiling, and
+  canonical checksum pass. Commit-time changed evidence and the isolated full
+  pipeline remain. The canonical memo is byte-identical and `review-loop`
+  remains unused.

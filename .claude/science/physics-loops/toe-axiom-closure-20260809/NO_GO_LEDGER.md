@@ -22,5 +22,10 @@ No no-go or bounded-negative claim is certified at checkpoint zero.
 | binary content-only additive readout as the nontrivial compatible pair action | fixed two-symbol content, strict distinct-Record additivity, finite compatible `A^N B^E` law with `B != 1` | additive cross-ratio is one while the edge action ratio is `B`; code-symmetric and additive one-scalar lines intersect only at zero | N1--N8 complete in Block 9; enlarged content, pair resource, separated additivity, auxiliary field, ordered process, and physical source routes remain live | bounded typed-identification rejection only; no interaction, source-action, axiom, or gravity no-go | `B=1`, physically selected environment label, licensed edge resource, or separate action/source theorem |
 | fixed-background scalar law plus global cubic covariance as a unique conserved metric source | finite periodic cubic binary sector, code-symmetric cut action, local proper-cubic tensor extensions | every extension `S_[lambda,mu](x;h)` agrees at `h=0`, while an exact environment tensor has `P_yz=-2` and the axis-cut tensor has no offdiagonal coordinate; the singleton cut tensor has nonzero local divergence | N1--N8 complete in Block 10; source-convention, geometry-family, improvement, Noether/Ward, dynamics, and field-equation routes remain live; the strongest steelman is accepted | bounded nonuniqueness of the local metric derivative from the fixed-background data only; no source, stress, gravity, axiom-necessity, or global no-go | a registered geometry-dependent law/source family plus a proved local Ward identity and field coupling |
 
+Block 11 adds no negative row. It positively constructs one geometry family
+and two distinct Ward identities while preserving other coframes, geometry
+actions, improvements, dynamics, and continuum completions as live routes.
+No no-go claim ships from that block.
+
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.

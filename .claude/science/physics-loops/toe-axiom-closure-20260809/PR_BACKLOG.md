@@ -155,3 +155,19 @@ disposable worktree. Science commit is `85dc90b6a5`. Hard landing order is
 #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, then #6078.
 The canonical axiom memo is untouched, the fixed TOE percentages do not move,
 and no `review-loop` is used.
+
+Block 11 is in preparation on branch
+physics-loop/toe-axiom-closure-block11-20260810, based on the exact Block 10
+delivery head `05db5edbe17a8a2c78def29bcb96d1872b57c96c`. The explicit coframe
+cut Gibbs action, tangential first variation, centered virtual-work identity,
+global translation Ward identity, oriented higher-form Ward identity,
+same-family covariance/seagull response, action-representative boundary, and
+hypothetical geometry-family/dynamics amendment are complete. The primary
+runner is `PASS=34 FAIL=0`, an independent seven-family recomputation agrees,
+and all 34 mutation probes fail closed. Graph registration is 5,457 nodes /
+15,543 edges with note out-degree five; harness, cache, strict lint, vocabulary,
+graph/link/class-F, YAML, Python, local-link, checksum, whitespace, and exact
+18-path conformance gates pass. Science commit, isolated pipeline,
+changed-evidence replay, push, and stacked PR delivery remain.
+The canonical axiom memo is untouched, the fixed TOE percentages do not move,
+and no `review-loop` is used.

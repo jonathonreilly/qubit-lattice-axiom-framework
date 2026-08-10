@@ -18,10 +18,12 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
     "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt",
     "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json",
+)
+PINNED_SNAPSHOT_SURFACES = (
     "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
     "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
 )
-BLOCKLIST_CITED_PRIMARIES = AUDIT_INPUT_PATHS
+BLOCKLIST_CITED_PRIMARIES = AUDIT_INPUT_PATHS + PINNED_SNAPSHOT_SURFACES
 
 import ast
 from hashlib import sha256
@@ -35,9 +37,9 @@ from time import monotonic
 ROOT = Path(__file__).resolve().parents[1]
 PRIMARY_PATH, PRIMARY_CACHE, PRIMARY_RECEIPT = AUDIT_INPUT_PATHS[:3]
 EXPECTED_SHA256 = {
-    PRIMARY_PATH: "c622cb6634287864f33982b35836c8532155f89fd14801c12000550a4f5969dc",
-    PRIMARY_CACHE: "4ce9f8c2076b775384d3420be613cf03cf954b1ced8f800b86e18749142de11c",
-    PRIMARY_RECEIPT: "d4894bce60db3b0ae5f39fee1f89677f4f52796bb6b2fca51c4f50335d649486",
+    PRIMARY_PATH: "901afd045c6cd7f202d0b73f023c32e6fac300dbb45b01c68a6a7a3f8341a1b3",
+    PRIMARY_CACHE: "237399f4963ce7e6e5ec7c1c6bd956f97f2e1ba7a9b730b33e2c340333eb45bb",
+    PRIMARY_RECEIPT: "d26b60c2eec33ade85d682c9d420eb24a3ec6faeb584c5be512d488ecd22e156",
 }
 CLASS_NAMES = (
     "UNAFFECTED",
@@ -107,6 +109,9 @@ def primary_ast_controls(text: str) -> dict:
     return {
         "literal_pin": literal_assignment(tree, "PINNED_SNAPSHOT_COMMIT"),
         "literal_audit_input_paths": literal_assignment(tree, "AUDIT_INPUT_PATHS"),
+        "literal_pinned_snapshot_surfaces": literal_assignment(
+            tree, "PINNED_SNAPSHOT_SURFACES"
+        ),
         "literal_blocklist": literal_assignment(tree, "BLOCKLIST_EXECUTION"),
         "imports": imports,
         "stdlib_only": all(name.split(".")[0] in allowed_roots for name in imports),
@@ -397,6 +402,10 @@ def main() -> int:
         pins_ok and parsed
         and controls.get("literal_pin") == PINNED_SNAPSHOT_COMMIT
         and controls.get("literal_audit_input_paths") == (
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "docs/audit/data/axiom_premise_nodes.json",
+        )
+        and controls.get("literal_pinned_snapshot_surfaces") == (
             "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
             "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
             "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md",
@@ -493,7 +502,8 @@ def main() -> int:
     r5_ok = (
         deterministic and elapsed < 1400 and AUDIT_TIMEOUT_SEC < 1400
         and output_upper_bound < HOUSE_STDOUT_LIMIT_BYTES < STDOUT_LIMIT_BYTES
-        and tuple(AUDIT_INPUT_PATHS) == tuple(BLOCKLIST_CITED_PRIMARIES)
+        and tuple(BLOCKLIST_CITED_PRIMARIES)
+            == tuple(AUDIT_INPUT_PATHS) + tuple(PINNED_SNAPSHOT_SURFACES)
     )
     r5_finding = (
         f"determinism_replay={deterministic}; runtime_s={elapsed:.6f}<1400; "
@@ -520,7 +530,7 @@ def main() -> int:
         "cycle": 971,
         "role": "independent_checker",
         "specified_to": "REFUTE",
-        "claim_type": "bounded_theorem_measurement",
+        "claim_type": "bounded_theorem",
         "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
         "pins": pin_rows,
         "blocklist": list(BLOCKLIST_CITED_PRIMARIES),

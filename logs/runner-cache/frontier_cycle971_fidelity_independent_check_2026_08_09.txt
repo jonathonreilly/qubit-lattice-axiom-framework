@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py
+runner_sha256: 56056e6ccbb9e33d26a22038033fa255c1e8b6838f6634343c4dc190120a4532
+input_fingerprint_sha256: 3d0fb4120158ef885ad28d3ad3b4c3cc27ca30bc79e84c92eddc17704a13ebd1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 28.60
+status: ok
+----- stdout -----
 ==============================================================================
 CYCLE 971 -- INDEPENDENT FIDELITY CHECK, SPECIFIED TO REFUTE
 ==============================================================================
@@ -6,6 +15,9 @@ PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1433; toke
 PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":32,"NEWLY_WITNESSABLE":1,"SUPPORT_READING_SAFE":626,"UNAFFECTED":774}; full_lists_match=True; classes_digest=7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713
 PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
 PASS R4_REFUTE_AXIOM_PROVENANCE :: independent_authority_checks={"new_distribution_sentence":true,"owner_date":true,"registry_support":true,"support_provenance":true}
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=31.597048<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=28.532962<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json']
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

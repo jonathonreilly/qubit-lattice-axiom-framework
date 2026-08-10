@@ -2,10 +2,8 @@
  "actual_current_surface_status": "bounded-support",
  "all_certificates_pass": true,
  "audit_input_paths": [
-  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
-  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
-  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md",
-  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json"
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "docs/audit/data/axiom_premise_nodes.json"
  ],
  "authority_checks": {
   "availability_support_in_axiom": true,
@@ -32,11 +30,11 @@
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "object_pins={\"axiom_blob\":\"2f5fdd26898f62c17fcabc846761f7785c2eadb1\",\"docs_tree\":\"7dbc99ea9bb07250a72fff4722d37cdc1c573daf\",\"registry_blob\":\"f01d3be864f682584d50eede8b3abe6671bb4719\",\"scripts_tree\":\"b74e1639fc2a2250c0de2a56ad33665533a22c81\",\"snapshot_commit\":\"323d7fc32d77598f74ea6cd4d30c38dda0fe5070\",\"snapshot_tree\":\"45f8bd67eedaccb34918cb6804e850e1ba7f21fb\"}; authority_checks={\"availability_support_in_axiom\":true,\"new_sentence_in_axiom\":true,\"provenance_date_in_axiom\":true,\"registry_has_new_sentence\":true,\"registry_has_support_note\":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=33.682737<1400; stdout_upper_bound_bytes=3042<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']",
+   "finding": "object_pins={\"axiom_blob\":\"2f5fdd26898f62c17fcabc846761f7785c2eadb1\",\"docs_tree\":\"7dbc99ea9bb07250a72fff4722d37cdc1c573daf\",\"registry_blob\":\"f01d3be864f682584d50eede8b3abe6671bb4719\",\"scripts_tree\":\"b74e1639fc2a2250c0de2a56ad33665533a22c81\",\"snapshot_commit\":\"323d7fc32d77598f74ea6cd4d30c38dda0fe5070\",\"snapshot_tree\":\"45f8bd67eedaccb34918cb6804e850e1ba7f21fb\"}; authority_checks={\"availability_support_in_axiom\":true,\"new_sentence_in_axiom\":true,\"provenance_date_in_axiom\":true,\"registry_has_new_sentence\":true,\"registry_has_support_note\":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=28.655270<1400; stdout_upper_bound_bytes=3042<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']",
    "pass": true
   }
  },
- "claim_type": "bounded_theorem_measurement",
+ "claim_type": "bounded_theorem",
  "cycle": 971,
  "determinism_replay": true,
  "measurement": {
@@ -20176,10 +20174,16 @@
   "snapshot_tree": "45f8bd67eedaccb34918cb6804e850e1ba7f21fb"
  },
  "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+ "pinned_snapshot_surfaces": [
+  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
+  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
+  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json"
+ ],
  "reachability_to_target": "none",
  "rewrite_proposals": [],
- "runtime_sec": 33.68273733404931,
+ "runtime_sec": 28.655269957962446,
  "science_digest": "2d64491885c71929afaaea226a6f585c7741ac89a7f87dfcbae3d4bb99dbc280",
- "stdout_bytes": 3185,
+ "stdout_bytes": 3293,
  "trace_class": "methodology"
 }

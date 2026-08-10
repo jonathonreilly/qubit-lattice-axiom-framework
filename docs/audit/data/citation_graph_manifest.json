@@ -1,6 +1,6 @@
 {
- "edge_count": 15478,
- "node_count": 5446,
+ "edge_count": 15479,
+ "node_count": 5447,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1049,6 +1049,10 @@
   "axiom_change_proposal_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "axiom_first_bekenstein_bound_theorem_note_2026-05-01": {
    "deps_hash": "26b03e5d16ee",

@@ -33,6 +33,10 @@ STDOUT_LIMIT_BYTES = 150_000
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 PINNED_SNAPSHOT_COMMIT = "323d7fc32d77598f74ea6cd4d30c38dda0fe5070"
 AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+)
+PINNED_SNAPSHOT_SURFACES = (
     "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
     "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
     "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md",
@@ -505,6 +509,10 @@ def main() -> int:
         and all(authority.values())
         and deterministic
         and tuple(AUDIT_INPUT_PATHS) == (
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "docs/audit/data/axiom_premise_nodes.json",
+        )
+        and tuple(PINNED_SNAPSHOT_SURFACES) == (
             "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
             "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
             "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md",
@@ -525,7 +533,8 @@ def main() -> int:
         f"stdout_upper_bound_bytes={output_upper_bound}<"
         f"{HOUSE_STDOUT_LIMIT_BYTES}<{STDOUT_LIMIT_BYTES}; "
         f"timeout_s={AUDIT_TIMEOUT_SEC}<1400; literal_AUDIT_INPUT_PATHS="
-        f"{list(AUDIT_INPUT_PATHS)}"
+        f"{list(AUDIT_INPUT_PATHS)}; pinned_snapshot_surfaces="
+        f"{list(PINNED_SNAPSHOT_SURFACES)}"
     )
 
     certificates = (
@@ -537,7 +546,7 @@ def main() -> int:
     all_pass = all(ok for _, ok, _ in certificates)
     report = {
         "cycle": 971,
-        "claim_type": "bounded_theorem_measurement",
+        "claim_type": "bounded_theorem",
         "actual_current_surface_status": "bounded-support",
         "trace_class": "methodology",
         "reachability_to_target": "none",
@@ -545,6 +554,7 @@ def main() -> int:
         "rewrite_proposals": [],
         "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
         "audit_input_paths": list(AUDIT_INPUT_PATHS),
+        "pinned_snapshot_surfaces": list(PINNED_SNAPSHOT_SURFACES),
         "blocklist_execution": list(BLOCKLIST_EXECUTION),
         "object_pins": pins,
         "authority_checks": authority,

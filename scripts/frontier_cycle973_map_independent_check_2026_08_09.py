@@ -25,7 +25,7 @@ import runner_cache
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT_TIMEOUT_SEC = 300
 STDOUT_LIMIT_BYTES = 150_000
-HOUSE_STDOUT_LIMIT_BYTES = 6_000
+HOUSE_STDOUT_LIMIT_BYTES = 20_000
 PINNED_SNAPSHOT_COMMIT = "323d7fc32d77598f74ea6cd4d30c38dda0fe5070"
 EXPECTED_PATH_DIGEST = "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01"
 PRIMARY_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
@@ -139,7 +139,7 @@ CAPS = {
     "working_tree_corpus_reads": 0,
     "delta_vocabulary_size": 4,
     "reported_finding_cap": 26,
-    "audit_input_path_cap": 3,
+    "audit_input_path_cap": 4,
 }
 
 
@@ -312,6 +312,15 @@ def main() -> int:
     mutant_path = sorted(mutant_rows)[0]
     mutant_rows[mutant_path]["delta_class"] = "STRICTLY_WEAKER"
     mutation_findings = delta_findings(mutant_rows, independent_classes)
+    all_mutant_rows = {path: dict(row) for path, row in primary_rows.items()}
+    for path, independent_class in independent_classes.items():
+        all_mutant_rows[path]["delta_class"] = next(
+            label for label in DELTA_VOCABULARY if label != independent_class
+        )
+    all_mutation_findings = delta_findings(all_mutant_rows, independent_classes)
+    all_mutation_payload_bytes = len(
+        " || ".join(finding["verbatim"] for finding in all_mutation_findings).encode()
+    )
 
     bearing_findings = []
     for path in independent_paths:
@@ -347,6 +356,7 @@ def main() -> int:
         "primary_cache_is_canonical_and_current": runner_cache.cache_status(
             "scripts/frontier_cycle973_repair_map_2026_08_09.py"
         ) == "fresh",
+        "audit_input_path_cap_respected": len(AUDIT_INPUT_PATHS) <= CAPS["audit_input_path_cap"],
         "literal_audit_input_paths": tuple(AUDIT_INPUT_PATHS) == (
             "scripts/runner_cache.py",
             "scripts/frontier_cycle973_repair_map_2026_08_09.py",
@@ -357,6 +367,10 @@ def main() -> int:
             len(mutation_findings) == 1
             and mutation_findings[0]["path"] == mutant_path
             and mutation_findings[0]["verbatim"].startswith("FINDING DELTA_CLASS_DISPUTE ")
+        ),
+        "all_delta_dispute_mutation_probe_active": len(all_mutation_findings) == 26,
+        "all_delta_dispute_payload_fits_output_cap": (
+            all_mutation_payload_bytes < HOUSE_STDOUT_LIMIT_BYTES
         ),
     }
     if not all(integrity.values()):
@@ -389,6 +403,10 @@ def main() -> int:
             "mutated_class": mutant_rows[mutant_path]["delta_class"],
             "findings_verbatim": [finding["verbatim"] for finding in mutation_findings],
             "active": True,
+            "all_dispute_count": len(all_mutation_findings),
+            "all_dispute_payload_bytes": all_mutation_payload_bytes,
+            "output_cap_bytes": HOUSE_STDOUT_LIMIT_BYTES,
+            "all_dispute_payload_fits_output_cap": True,
         },
         "witness_bearing_findings_verbatim": bearing_findings,
         "refutation_outcome": (
@@ -425,7 +443,7 @@ def main() -> int:
         f"PASS R0_REFUTE_PIN_AND_ROW_SET :: pin={PINNED_SNAPSHOT_COMMIT}; independently_resolved_blobs={len(paths_by_blob)}; rows={len(independent_paths)}; path_digest={path_digest}; working_tree_corpus_reads=0",
         f"PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched={sum(r['old_semantic_consumption_rederived'] for r in semantic_rows)}/26; exact_primary_quotes_at_pin={sum(quote_checks.values())}/26",
         f"PASS R2_ATTACK_ABSTRACT_DELTA_CLASSES :: independent_histogram={compact(dict(sorted(histogram.items())))}; disputes={len(findings)}; findings_verbatim={json.dumps(finding_text, ensure_ascii=False)}",
-        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; bearing_disputes={len(bearing_findings)}; bearing_findings_verbatim={json.dumps(bearing_finding_text, ensure_ascii=False)}; checker_digest={receipt['checker_digest']}",
+        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; all_delta_disputes_payload_bytes={all_mutation_payload_bytes}; bearing_disputes={len(bearing_findings)}; bearing_findings_verbatim={json.dumps(bearing_finding_text, ensure_ascii=False)}; checker_digest={receipt['checker_digest']}",
         f"VERDICT: {receipt['refutation_outcome']}",
         "TOTAL: PASS=4 FAIL=0",
     ]

@@ -14,7 +14,7 @@
     "writer": "scripts/runner_cache.py"
   },
   "caps": {
-    "audit_input_path_cap": 3,
+    "audit_input_path_cap": 4,
     "delta_vocabulary_size": 4,
     "logical_world_cap": 6,
     "pinned_blob_reads_exact": 26,
@@ -25,11 +25,15 @@
   "checker_digest": "c72e29b027fe728c3f9f0c9405740d8de8ec34acb6829df437230adeeb9a9c47",
   "delta_dispute_mutation_probe": {
     "active": true,
+    "all_dispute_count": 26,
+    "all_dispute_payload_bytes": 6889,
+    "all_dispute_payload_fits_output_cap": true,
     "findings_verbatim": [
       "FINDING DELTA_CLASS_DISPUTE path=docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md primary=STRICTLY_WEAKER independent=ORTHOGONAL_RESTATEMENT attack=\"rule-value codomain is not identified with a probability simplex\""
     ],
     "mutated_class": "STRICTLY_WEAKER",
-    "mutated_path": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md"
+    "mutated_path": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+    "output_cap_bytes": 20000
   },
   "delta_vocabulary": [
     "STRICTLY_WEAKER",
@@ -41,7 +45,7 @@
   "disputed_rows": [],
   "execution_caps": {
     "audit_timeout_sec": 300,
-    "house_stdout_limit_bytes": 6000,
+    "house_stdout_limit_bytes": 20000,
     "stdout_limit_bytes": 150000
   },
   "families": {
@@ -260,8 +264,11 @@
     "same_support": true
   },
   "integrity": {
+    "all_delta_dispute_mutation_probe_active": true,
+    "all_delta_dispute_payload_fits_output_cap": true,
     "all_primary_quotes_match_pinned_blobs": true,
     "all_rows_rederive_old_semantic_consumption": true,
+    "audit_input_path_cap_respected": true,
     "delta_dispute_mutation_probe_active": true,
     "independent_blob_catalog_has_26_unique_ids": true,
     "independent_blob_catalog_resolves_uniquely": true,

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle973_map_independent_check_2026_08_09.py
-runner_sha256: 6449be316394b5dad988f53d40012f5356bfb07cdf59b90c203e3382ad15bee2
+runner_sha256: cb5f6e045303e51bdb23d418635edcd3c8b2ed6ab09fd4e401667e104d5fef67
 input_fingerprint_sha256: 6b56db178bef55844bf99666b4e98b3435ce856484fbfb7dfd0948a539bee0b4
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 PASS R0_REFUTE_PIN_AND_ROW_SET :: pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; independently_resolved_blobs=26; rows=26; path_digest=3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01; working_tree_corpus_reads=0
 PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched=26/26; exact_primary_quotes_at_pin=26/26
 PASS R2_ATTACK_ABSTRACT_DELTA_CLASSES :: independent_histogram={"ORTHOGONAL_RESTATEMENT":6,"STRICTLY_STRONGER":8,"STRICTLY_WEAKER":7,"UNDERDETERMINED_BY_TEXT":5}; disputes=0; findings_verbatim="none"
-PASS R3_CONTROLS :: truth_table_modes=['countermodel', 'premise', 'selector']; logical_worlds_per_mode={"countermodel":6,"premise":6,"selector":6}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; bearing_disputes=0; bearing_findings_verbatim="none"; checker_digest=c72e29b027fe728c3f9f0c9405740d8de8ec34acb6829df437230adeeb9a9c47
+PASS R3_CONTROLS :: truth_table_modes=['countermodel', 'premise', 'selector']; logical_worlds_per_mode={"countermodel":6,"premise":6,"selector":6}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; all_delta_disputes_payload_bytes=6889; bearing_disputes=0; bearing_findings_verbatim="none"; checker_digest=c72e29b027fe728c3f9f0c9405740d8de8ec34acb6829df437230adeeb9a9c47
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_ABSTRACT_DELTA_ATTACK
 TOTAL: PASS=4 FAIL=0
 

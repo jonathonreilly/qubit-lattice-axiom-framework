@@ -322,4 +322,7 @@ isolates the inherited policy-epoch mismatch, while a final-head synthetic
 merge adding only the five closed-#6061 governance files passes all 18 stages.
 Changed evidence marks Block 18 alone and all 18 stacked claims forensic-ready
 with no failures or controls. Science commits are `27738fec0a` and
-`d716852134`; push/PR delivery is pending. No `review-loop` is used.
+`d716852134`; conformance is `c34f5ebdc8`. PR #6089 is mergeable and `CLEAN`
+on the exact Block-17 delivery head
+`2144e710711865f0350ccab35e87591dad2ba741`. Hard landing order adds #6089
+after #6088. No `review-loop` is used.

@@ -1081,6 +1081,7 @@ instance or Fourier census.
   static-checkpoint finalization.
 - Seeded changed-evidence readiness checks Block 18 alone and all 18 stacked
   claims with zero failures and zero control failures. Initial science commit
-  is `27738fec0a`; hardening commit is `d716852134`. PR delivery remains
-  pending. No canonical edit, audit verdict, percentage move, or `review-loop`
-  occurs.
+  is `27738fec0a`; hardening commit is `d716852134`; conformance is
+  `c34f5ebdc8`. PR #6089 is mergeable and `CLEAN` on exact Block-17 delivery
+  head `2144e710711865f0350ccab35e87591dad2ba741`. No canonical edit, audit
+  verdict, percentage move, or `review-loop` occurs.

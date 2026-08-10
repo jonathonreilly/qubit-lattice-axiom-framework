@@ -855,7 +855,10 @@ zero errors, publication renders, zero authority-link/class-F violations, and
 static-checkpoint finalization. Changed-evidence readiness marks Block 18
 alone and all 18 stacked claims forensic-ready with no failures or control
 failures. The initial science commit is `27738fec0a`; boundary hardening is
-`d716852134`. Independent audit remains required.
+`d716852134`; conformance is `c34f5ebdc8`. PR #6089 is `CLEAN` and mergeable
+on the exact Block-17 delivery head
+`2144e710711865f0350ccab35e87591dad2ba741`. Independent audit remains
+required.
 
 Candidate wording is corrected to permit either complete variational reaction
 coverage or a demonstrated native nonlinear/boundary lift with a complete

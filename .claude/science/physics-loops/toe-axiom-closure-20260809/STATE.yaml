@@ -356,8 +356,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: the actual homogeneous Regge action lifts the exact extra quadratic branch at cubic order with coefficient minus four square-root two and quartic coefficient 4023 over 256; the complete cubic null-sector polynomial has one shear metric-gradient image that excludes the three declared source metric covectors; full higher-order, finite-amplitude, curved, inhomogeneous, boundary, reaction, and physical selection remain open
 hypothetical_axiom_status: the candidate geometry-history amendment should permit either complete variational null-reaction coverage or a demonstrated native nonlinear curved background or boundary lift with a complete coupled source-compatibility certificate; it remains unadopted, sufficient rather than necessary or minimal, and absent from canonical axioms
 review_disposition: block18_final_head_direct_and_full_synthetic_main_conformance_pass_independent_audit_required
-pr_status: block18_conformance_complete_push_and_stacked_pr_pending
-pr_url: null
+pr_status: block18_open_pr_6089_clean_mergeable_on_exact_block17_delivery_head
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6089
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

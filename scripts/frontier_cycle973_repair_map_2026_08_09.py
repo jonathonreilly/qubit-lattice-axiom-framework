@@ -18,6 +18,9 @@ import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 300
+STDOUT_LIMIT_BYTES = 150_000
+HOUSE_STDOUT_LIMIT_BYTES = 6_000
 PINNED_SNAPSHOT_COMMIT = "323d7fc32d77598f74ea6cd4d30c38dda0fe5070"
 PINNED_OBJECTS = {
     "snapshot_commit": PINNED_SNAPSHOT_COMMIT,
@@ -26,6 +29,7 @@ PINNED_OBJECTS = {
     "scripts_tree": "b74e1639fc2a2250c0de2a56ad33665533a22c81",
 }
 CYCLE971_PROVENANCE_COMMIT = "0c453230c6334d8a9c0569925a8f95d96509e2f4"
+CYCLE971_PR_URL = "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6066"
 CYCLE971_PROVENANCE = (
     {
         "path": "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
@@ -43,19 +47,44 @@ CYCLE971_PROVENANCE = (
         "use": "text provenance for the exact 26-path hand-off set",
     },
 )
+CYCLE970_972_WITNESS_PROVENANCE = {
+    "cycle970_commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+    "cycle970_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062",
+    "cycle972_commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "cycle972_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069",
+    "cycle972_primary_receipt_path": "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json",
+    "cycle972_primary_receipt_sha256": "245bb7001aec024163f62ed28f8434d2a215751219b516cff0aa3ad75c6c2625",
+    "cycle972_science_digest": "a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0",
+    "state_resolved_fact": "six CNOT witness words; dependent fixed-input rows=12/40; XOR truth-table failures=0/768",
+    "covariance_fact": "rotation failures=0/61440; translation-generator failures=0/15360",
+    "uniqueness_fact": "word-law classes=1; state-resolved classes=2",
+    "marginal_fact": "uniform-target-input changed words=0/20; changed edge pairs=0/3840",
+    "marginal_mechanism": "uniform-x XOR permutation identity gives 1/2 for every output and neighbor bit",
+    "support_boundary": "the receipt does not certify a same-support state-resolved witness; no such inference is made here",
+}
 
 RECEIPT_PATH = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
 CACHE_PATH = ROOT / "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt"
+CACHE_FORMAT = "cycle973-runner-cache-v1"
+RUNNER_REL = "scripts/frontier_cycle973_repair_map_2026_08_09.py"
+RECEIPT_REL = "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
+PINNED_SNAPSHOT_SURFACES = (
+    f"{PINNED_SNAPSHOT_COMMIT}:docs/",
+    f"{PINNED_SNAPSHOT_COMMIT}:scripts/",
+)
+AUDIT_INPUT_PATHS: tuple[str, ...] = ()
 
 DELTA_VOCABULARY = {
     "STRICTLY_WEAKER": (
-        "The new-reading proposition is entailed by the old-reading proposition, "
-        "and the converse fails on an allowed same-support weight-change model."
+        "Within the declared S=>P abstraction, the new-reading proposition is "
+        "entailed by the old-reading proposition, and the converse fails on the "
+        "printed same-support weight-change control."
     ),
     "STRICTLY_STRONGER": (
-        "The old-reading proposition is entailed by the new-reading proposition, "
-        "and the converse fails; this occurs when a weaker distribution premise "
-        "is asked to carry the same conditional selector conclusion."
+        "Within the declared S=>P abstraction, the old-reading proposition is "
+        "entailed by the new-reading proposition, and the converse fails; this "
+        "occurs when a weaker distribution premise is asked to carry the same "
+        "conditional selector conclusion."
     ),
     "ORTHOGONAL_RESTATEMENT": (
         "The readings predicate different typed objects or bridges and neither "
@@ -69,14 +98,13 @@ DELTA_VOCABULARY = {
 
 BEARING_VOCABULARY = {
     "BEARS": (
-        "Cycle 970/972 is a covariant unique-law countermodel to identifying "
-        "state-resolved distribution dependence with marginal dependence or "
-        "support variation; it informs this semantic delta but does not discharge "
-        "the row-specific obligation."
+        "The pinned Cycle 970/972 receipt's covariant unique-law witness directly "
+        "exposes the row's state-resolved-versus-uniform-marginal resolution issue; "
+        "it makes no same-support claim and does not discharge the row obligation."
     ),
     "SILENT": (
-        "The Cycle 970/972 state-resolved/marginal separation has no logical role "
-        "in the row's semantic delta."
+        "The row-specific semantic bridge does not turn on the state-resolved "
+        "versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt."
     ),
 }
 
@@ -94,7 +122,7 @@ FAMILIES = {
 
 CAPS = {
     "direct_authoring_provenance_file_cap": 6,
-    "direct_authoring_provenance_files_declared": 3,
+    "direct_authoring_provenance_files_declared": 4,
     "map_row_cap_exact": 26,
     "pinned_corpus_blob_reads_exact": 26,
     "working_tree_corpus_reads": 0,
@@ -114,6 +142,7 @@ def spec(
     obligation: str,
     *,
     quote_mode: str = "paragraph",
+    witness_bearing: str = "SILENT",
 ) -> dict[str, str]:
     return {
         "path": path,
@@ -124,7 +153,7 @@ def spec(
         "delta_class": delta,
         "obligation_id": obligation_id,
         "obligation": obligation,
-        "witness_bearing": "BEARS",
+        "witness_bearing": witness_bearing,
     }
 
 
@@ -245,6 +274,7 @@ ROW_SPECS = (
         "UNDERDETERMINED_BY_TEXT",
         "O973-DISCRIMINATOR-RESOLUTION-SPEC",
         "Specify the conditioning state and marginalization map, then check whether mu variation is equivalent to nonconstant qubit-factor support on both licensed branches.",
+        witness_bearing="BEARS",
     ),
     spec(
         "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md",
@@ -317,6 +347,7 @@ ROW_SPECS = (
         "STRICTLY_STRONGER",
         "O973-TICK-DISTRIBUTION-BRIDGE",
         "Define the tick-induced conditional mu, state its marginalization, and exhaustively verify that landed distribution variation is equivalent to nonzero off-site tick support on the licensed period-2 family.",
+        witness_bearing="BEARS",
     ),
     spec(
         "docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md",
@@ -326,6 +357,7 @@ ROW_SPECS = (
         "UNDERDETERMINED_BY_TEXT",
         "O973-FORTRESS-OPEN-SITE-SUPPORT",
         "At the exact fortress conditions, compute mu_c and verify at least two positive-mass unrecorded alternatives plus the declared state-resolved/marginal dependence behavior.",
+        witness_bearing="BEARS",
     ),
     spec(
         "docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md",
@@ -455,6 +487,35 @@ def pinned_object_report() -> dict[str, str]:
     return actual
 
 
+def semantic_abstraction_control() -> dict:
+    left = {"up": 0.75, "down": 0.25}
+    right = {"up": 0.25, "down": 0.75}
+    left_support = sorted(key for key, value in left.items() if value > 0.0)
+    right_support = sorted(key for key, value in right.items() if value > 0.0)
+    return {
+        "atoms": {"S": "positive support varies", "P": "probability distribution varies"},
+        "relation": "S implies P because unequal supports forbid equal distributions",
+        "converse_control": {"mu_0": left, "mu_1": right},
+        "converse_control_normalized": sum(left.values()) == sum(right.values()) == 1.0,
+        "converse_control_same_support": left_support == right_support,
+        "converse_control_distribution_changed": left != right,
+        "scope": "abstract semantic substitution only; row-specific hypotheses are held fixed, not re-proved",
+    }
+
+
+def cache_envelope(body: str, receipt_text: str) -> str:
+    return "\n".join((
+        f"# cache_format: {CACHE_FORMAT}",
+        f"# runner: {RUNNER_REL}",
+        f"# pinned_snapshot_commit: {PINNED_SNAPSHOT_COMMIT}",
+        f"# receipt: {RECEIPT_REL}",
+        f"# receipt_sha256: {sha256(receipt_text.encode()).hexdigest()}",
+        "# cache_body: deterministic runner stdout follows",
+        body.rstrip("\n"),
+        "",
+    ))
+
+
 def build_rows() -> list[dict]:
     rows = []
     seen: set[str] = set()
@@ -478,9 +539,11 @@ def build_rows() -> list[dict]:
             "what_the_row_asserts_under_old_availability_reading": item["old_assertion"],
             "what_the_same_text_asserts_under_landed_distribution_reading": item["new_assertion"],
             "delta_class": item["delta_class"],
+            "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
             "minimal_discharge": {
                 "obligation_id": item["obligation_id"],
                 "smallest_machine_checkable_fact": item["obligation"],
+                "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
                 "attempted_here": False,
             },
             "cycle970_972_witness": item["witness_bearing"],
@@ -491,6 +554,7 @@ def build_rows() -> list[dict]:
 
 def main() -> int:
     objects = pinned_object_report()
+    semantic_control = semantic_abstraction_control()
     rows = build_rows()
     classes = Counter(row["delta_class"] for row in rows)
     bearings = Counter(row["cycle970_972_witness"] for row in rows)
@@ -508,6 +572,12 @@ def main() -> int:
         ),
         "closed_delta_vocabulary": set(classes) <= set(DELTA_VOCABULARY),
         "closed_witness_vocabulary": set(bearings) <= set(BEARING_VOCABULARY),
+        "same_support_weight_change_control": all((
+            semantic_control["converse_control_normalized"],
+            semantic_control["converse_control_same_support"],
+            semantic_control["converse_control_distribution_changed"],
+        )),
+        "literal_working_tree_audit_input_paths_empty": tuple(AUDIT_INPUT_PATHS) == (),
         "all_obligations_named_and_unattempted": all(
             row["minimal_discharge"]["obligation_id"].startswith("O973-")
             and not row["minimal_discharge"]["attempted_here"]
@@ -526,19 +596,35 @@ def main() -> int:
         "repairs_attempted": 0,
         "status_verdicts_authored": 0,
         "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
+        "pinned_snapshot_surfaces": list(PINNED_SNAPSHOT_SURFACES),
+        "audit_input_paths": list(AUDIT_INPUT_PATHS),
         "pinned_objects": objects,
         "cycle971_text_ast_provenance_commit": CYCLE971_PROVENANCE_COMMIT,
+        "cycle971_pr_url": CYCLE971_PR_URL,
         "cycle971_text_ast_provenance": list(CYCLE971_PROVENANCE),
+        "cycle970_972_witness_provenance": CYCLE970_972_WITNESS_PROVENANCE,
         "families": FAMILIES,
         "caps": CAPS,
         "delta_vocabulary": DELTA_VOCABULARY,
         "bearing_vocabulary": BEARING_VOCABULARY,
+        "semantic_abstraction_control": semantic_control,
         "row_count": len(rows),
         "delta_class_histogram": dict(sorted(classes.items())),
         "witness_bearing_counts": dict(sorted(bearings.items())),
         "meaning_changed_path_digest": digest(paths),
         "rows": rows,
         "integrity": integrity,
+        "cache_contract": {
+            "format": CACHE_FORMAT,
+            "runner": RUNNER_REL,
+            "receipt": RECEIPT_REL,
+            "deterministic_body": True,
+        },
+        "execution_caps": {
+            "audit_timeout_sec": AUDIT_TIMEOUT_SEC,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "house_stdout_limit_bytes": HOUSE_STDOUT_LIMIT_BYTES,
+        },
     }
     receipt["map_digest"] = digest({
         "pin": PINNED_SNAPSHOT_COMMIT,
@@ -557,7 +643,9 @@ def main() -> int:
         "TOTAL: PASS=4 FAIL=0",
     ]
     cache = "\n".join(cache_lines) + "\n"
-    CACHE_PATH.write_text(cache, encoding="utf-8")
+    if len(cache.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
+        raise AssertionError("runner stdout exceeds house cap")
+    CACHE_PATH.write_text(cache_envelope(cache, rendered), encoding="utf-8")
     print(cache, end="")
     return 0
 

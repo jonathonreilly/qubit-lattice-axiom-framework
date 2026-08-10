@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Independent refutation check for the Cycle 973 repair map.
+"""Independent abstract-semantic refutation check for the Cycle 973 map.
 
 The checker does not import the primary.  It carries a separately expressed
-semantic-case catalog, re-derives the path set at the literal Git pin, derives
-strict-strength labels by truth-table entailment, and reports every class
-disagreement as a verbatim finding.  Findings are scientific output, never an
-integrity-gate target.
+semantic-case catalog, reconstructs the path set from an independent pinned
+blob-ID catalog, derives abstract strict-strength labels by truth-table
+entailment, and reports every class disagreement as a verbatim finding.  The
+row-specific mode catalog is a declared manual oracle; it is attacked for
+logical consistency, not independently proved from row physics.  Findings are
+scientific output, never an integrity-gate target.
 """
 from __future__ import annotations
 
@@ -19,11 +21,56 @@ import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 300
+STDOUT_LIMIT_BYTES = 150_000
+HOUSE_STDOUT_LIMIT_BYTES = 6_000
 PINNED_SNAPSHOT_COMMIT = "323d7fc32d77598f74ea6cd4d30c38dda0fe5070"
 EXPECTED_PATH_DIGEST = "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01"
 PRIMARY_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
+PRIMARY_CACHE = ROOT / "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt"
 CHECK_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
 CHECK_CACHE = ROOT / "logs/runner-cache/frontier_cycle973_map_independent_check_2026_08_09.txt"
+CACHE_FORMAT = "cycle973-runner-cache-v1"
+RUNNER_REL = "scripts/frontier_cycle973_map_independent_check_2026_08_09.py"
+RECEIPT_REL = "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+    "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
+    "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+)
+INDEPENDENT_BLOB_IDS = (
+    "20955a2e976f7d3a1f38fed55cd0b1bdd91f82b4",
+    "d7cc44c356540791412a11f708774a55bee5d069",
+    "754e98cb997dcd667986fd3e35b36ad49320a72d",
+    "5dcff503dc34b95976a270af7a1620e3dfe1747e",
+    "e0fadcaf294d5c6c0057e45962947bc1c963bcd3",
+    "06c0893e6bf6e7307ff2c554f9f725cc28cfd225",
+    "060ca434261c21da36c836069059abb1305f3da7",
+    "8f03421ca7dd22e62820670c918c2e8f388c6013",
+    "b3beee9be28d84631acb35af0139ec1848a6fd46",
+    "63ad3f8ec9faf6a50174cdb8c90686f31a53947a",
+    "355ae2f6920a07f941750294b80da86b9739ad5a",
+    "de2d33ef647fc3e0acaf8acfc10e56d3b858afb0",
+    "960274498dc869044f87012300d23516dd5c6c81",
+    "6de6f80c7c1a4ef98275079df4f5b871ee0d0c90",
+    "7dac7b1df9ce0a1d58dac77c93e920c0d851b07a",
+    "9bf32ce61d1b3397c258c98425d7bbc77a5fd481",
+    "0e1ca9482fffb927eb70985cfbc8bd02d773bce6",
+    "7a2c857e57e407e559be5948bda7ffffd32d6ca0",
+    "717f145739244195da6db7bf05a8ff75b59bc980",
+    "2091031b26d477d23fc79a4b2bb49d7968edb76f",
+    "613f6f2107bb562c240048f4eab2ee707212fe7b",
+    "7a71e88cd1965889b4d001fc4f15c028be29d470",
+    "1749ddaaa5066f32fad13942fe27ba55bc0a8a97",
+    "fb255c2ed3b7def6e8adb9239e005d6a9910596f",
+    "7e368d061f3776e780a04844cdc75960a881280e",
+    "f7cf8e9c1ce96a390a821f2086fc16b2c5b11e7d",
+)
+INDEPENDENT_BEARING_PATHS = {
+    "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md",
+    "docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md",
+}
 
 # Modes are an independent adjudication grammar, not copied delta labels.
 # premise: old S, new P; selector: old S=>C, new P=>C;
@@ -78,8 +125,8 @@ SEMANTIC_PATTERNS = (
 )
 
 FAMILIES = {
-    "independent_row_family": "separate 26-case semantic adjudication catalog",
-    "logical_model_family": "truth-table worlds (support variation S, distribution variation P, conclusion C) constrained by S=>P",
+    "independent_row_family": "separate 26-blob pinned membership catalog plus manual semantic-mode catalog",
+    "logical_model_family": "abstract truth-table worlds (support variation S, distribution variation P, conclusion C) constrained by S=>P",
     "typed_attack_family": "support/carrier/rule-value objects versus probability distributions",
     "ambiguity_attack_family": "mixed support/weight or state-resolved/marginal text",
     "quote_attack_family": "pinned substring or Python-AST-constant verification",
@@ -91,6 +138,7 @@ CAPS = {
     "working_tree_corpus_reads": 0,
     "delta_vocabulary_size": 4,
     "reported_finding_cap": 26,
+    "audit_input_path_cap": 3,
 }
 
 
@@ -147,6 +195,34 @@ def truth_table_class(mode: str) -> tuple[str, list[dict]]:
     raise AssertionError(f"non-strict truth-table relation for {mode}: {rows}")
 
 
+def independent_same_support_control() -> dict:
+    left = {"up": 2.0 / 3.0, "down": 1.0 / 3.0}
+    right = {"up": 1.0 / 3.0, "down": 2.0 / 3.0}
+    return {
+        "normalized": abs(sum(left.values()) - 1.0) < 1e-15 and abs(sum(right.values()) - 1.0) < 1e-15,
+        "same_support": {key for key, value in left.items() if value > 0.0} == {key for key, value in right.items() if value > 0.0},
+        "distribution_changed": left != right,
+        "mu_0": left,
+        "mu_1": right,
+    }
+
+
+def reconstruct_paths_from_blob_ids() -> tuple[list[str], dict[str, str]]:
+    listing = git_text("ls-tree", "-r", PINNED_SNAPSHOT_COMMIT, "--", "docs", "scripts")
+    paths_by_blob: dict[str, list[str]] = {}
+    for line in listing.splitlines():
+        metadata, path = line.split("\t", 1)
+        blob_id = metadata.split()[2]
+        paths_by_blob.setdefault(blob_id, []).append(path)
+    resolved = {}
+    for blob_id in INDEPENDENT_BLOB_IDS:
+        matches = paths_by_blob.get(blob_id, [])
+        if len(matches) != 1:
+            raise AssertionError(f"independent blob {blob_id} resolved to {matches}")
+        resolved[blob_id] = matches[0]
+    return sorted(resolved.values()), resolved
+
+
 def source_has_old_semantic_consumption(path: str, body: str) -> bool:
     if any(pattern.search(body) for pattern in SEMANTIC_PATTERNS):
         return True
@@ -172,35 +248,20 @@ def exact_quote_matches(row: dict, body: str) -> bool:
     return quote in body
 
 
-def main() -> int:
-    primary = json.loads(PRIMARY_RECEIPT.read_text(encoding="utf-8"))
-    primary_rows = {row["path"]: row for row in primary["rows"]}
-    independent_paths = sorted(INDEPENDENT_CASES)
-    tree_paths = set(git_text(
-        "ls-tree", "-r", "--name-only", PINNED_SNAPSHOT_COMMIT, "--", "docs", "scripts"
-    ).splitlines())
+def cache_envelope(body: str, receipt_text: str) -> str:
+    return "\n".join((
+        f"# cache_format: {CACHE_FORMAT}",
+        f"# runner: {RUNNER_REL}",
+        f"# pinned_snapshot_commit: {PINNED_SNAPSHOT_COMMIT}",
+        f"# receipt: {RECEIPT_REL}",
+        f"# receipt_sha256: {sha256(receipt_text.encode()).hexdigest()}",
+        "# cache_body: deterministic runner stdout follows",
+        body.rstrip("\n"),
+        "",
+    ))
 
-    semantic_rows = []
-    body_by_path: dict[str, str] = {}
-    for path in independent_paths:
-        body = git_text("show", f"{PINNED_SNAPSHOT_COMMIT}:{path}")
-        body_by_path[path] = body
-        semantic_rows.append({
-            "path": path,
-            "mode": INDEPENDENT_CASES[path][0],
-            "attack": INDEPENDENT_CASES[path][1],
-            "old_semantic_consumption_rederived": source_has_old_semantic_consumption(path, body),
-        })
 
-    path_digest = digest(independent_paths)
-    independent_classes = {}
-    truth_tables = {}
-    for path, (mode, _attack) in INDEPENDENT_CASES.items():
-        derived, table = truth_table_class(mode)
-        independent_classes[path] = derived
-        if table:
-            truth_tables.setdefault(mode, table)
-
+def delta_findings(primary_rows: dict[str, dict], independent_classes: dict[str, str]) -> list[dict]:
     findings = []
     for path in sorted(set(primary_rows) | set(independent_classes)):
         primary_class = primary_rows.get(path, {}).get("delta_class", "MISSING")
@@ -219,6 +280,69 @@ def main() -> int:
                 "attack": attack,
                 "verbatim": verbatim,
             })
+    return findings
+
+
+def main() -> int:
+    primary_receipt_text = PRIMARY_RECEIPT.read_text(encoding="utf-8")
+    primary = json.loads(primary_receipt_text)
+    primary_cache_text = PRIMARY_CACHE.read_text(encoding="utf-8")
+    primary_rows = {row["path"]: row for row in primary["rows"]}
+    independent_paths, paths_by_blob = reconstruct_paths_from_blob_ids()
+    tree_paths = set(git_text(
+        "ls-tree", "-r", "--name-only", PINNED_SNAPSHOT_COMMIT, "--", "docs", "scripts"
+    ).splitlines())
+
+    semantic_rows = []
+    body_by_path: dict[str, str] = {}
+    for path in independent_paths:
+        body = git_text("show", f"{PINNED_SNAPSHOT_COMMIT}:{path}")
+        body_by_path[path] = body
+        semantic_rows.append({
+            "path": path,
+            "mode": INDEPENDENT_CASES[path][0],
+            "attack": INDEPENDENT_CASES[path][1],
+            "old_semantic_consumption_rederived": source_has_old_semantic_consumption(path, body),
+        })
+
+    path_digest = digest(independent_paths)
+    independent_control = independent_same_support_control()
+    recomputed_primary_map_digest = digest({
+        "pin": primary["pinned_snapshot_commit"],
+        "vocabulary": primary["delta_vocabulary"],
+        "rows": primary["rows"],
+    })
+    primary_cache_header = "\n".join((
+        "# cache_format: cycle973-runner-cache-v1",
+        "# runner: scripts/frontier_cycle973_repair_map_2026_08_09.py",
+        f"# pinned_snapshot_commit: {PINNED_SNAPSHOT_COMMIT}",
+        "# receipt: outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+        f"# receipt_sha256: {sha256(primary_receipt_text.encode()).hexdigest()}",
+        "# cache_body: deterministic runner stdout follows",
+    )) + "\n"
+    independent_classes = {}
+    truth_tables = {}
+    for path, (mode, _attack) in INDEPENDENT_CASES.items():
+        derived, table = truth_table_class(mode)
+        independent_classes[path] = derived
+        if table:
+            truth_tables.setdefault(mode, table)
+
+    findings = delta_findings(primary_rows, independent_classes)
+    mutant_rows = {path: dict(row) for path, row in primary_rows.items()}
+    mutant_path = sorted(mutant_rows)[0]
+    mutant_rows[mutant_path]["delta_class"] = "STRICTLY_WEAKER"
+    mutation_findings = delta_findings(mutant_rows, independent_classes)
+
+    bearing_findings = []
+    for path in independent_paths:
+        independent_bearing = "BEARS" if path in INDEPENDENT_BEARING_PATHS else "SILENT"
+        primary_bearing = primary_rows[path]["cycle970_972_witness"]
+        if independent_bearing != primary_bearing:
+            bearing_findings.append(
+                f"FINDING WITNESS_BEARING_DISPUTE path={path} "
+                f"primary={primary_bearing} independent={independent_bearing}"
+            )
 
     quote_checks = {
         path: exact_quote_matches(primary_rows[path], body_by_path[path])
@@ -228,6 +352,8 @@ def main() -> int:
     integrity = {
         "literal_pin_matches_primary": primary["pinned_snapshot_commit"] == PINNED_SNAPSHOT_COMMIT,
         "independent_catalog_has_26_rows": len(independent_paths) == CAPS["row_catalog_exact"],
+        "independent_blob_catalog_has_26_unique_ids": len(INDEPENDENT_BLOB_IDS) == len(set(INDEPENDENT_BLOB_IDS)) == 26,
+        "independent_blob_catalog_resolves_uniquely": len(paths_by_blob) == 26,
         "independent_paths_have_cycle971_digest": path_digest == EXPECTED_PATH_DIGEST,
         "independent_paths_exist_at_pin": set(independent_paths) <= tree_paths,
         "all_rows_rederive_old_semantic_consumption": all(
@@ -237,55 +363,93 @@ def main() -> int:
         "all_primary_quotes_match_pinned_blobs": len(quote_checks) == 26 and all(quote_checks.values()),
         "independent_classes_use_closed_vocabulary": set(independent_classes.values()) <= set(DELTA_VOCABULARY),
         "truth_table_world_cap_respected": all(len(table) <= CAPS["logical_world_cap"] for table in truth_tables.values()),
+        "independent_same_support_control": all(independent_control[key] for key in ("normalized", "same_support", "distribution_changed")),
+        "primary_map_digest_recomputed": recomputed_primary_map_digest == primary["map_digest"],
+        "primary_cache_envelope_and_receipt_pin": primary_cache_text.startswith(primary_cache_header),
+        "witness_bearing_catalog_agrees": not bearing_findings,
+        "literal_audit_input_paths": tuple(AUDIT_INPUT_PATHS) == (
+            "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+            "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
+            "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+        ),
+        "delta_dispute_mutation_probe_active": (
+            len(mutation_findings) == 1
+            and mutation_findings[0]["path"] == mutant_path
+            and mutation_findings[0]["verbatim"].startswith("FINDING DELTA_CLASS_DISPUTE ")
+        ),
     }
     if not all(integrity.values()):
         raise AssertionError(f"integrity failure: {integrity}")
 
     histogram = Counter(independent_classes.values())
     receipt = {
-        "artifact": "Cycle 973 independent repair-map refutation check",
+        "artifact": "Cycle 973 independent abstract-semantic repair-map attack",
         "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
         "families": FAMILIES,
         "caps": CAPS,
         "delta_vocabulary": list(DELTA_VOCABULARY),
-        "logical_relation": "S implies P; P does not imply S because same-support weight changes are allowed",
+        "logical_relation": "abstract S implies P; P does not imply S by the independently printed same-support control",
+        "semantic_scope": "manual per-row mode oracle; abstract logical consistency attack only; row-specific physics hypotheses are not re-proved",
+        "independent_same_support_control": independent_control,
+        "independent_blob_ids": list(INDEPENDENT_BLOB_IDS),
+        "resolved_paths_by_blob": paths_by_blob,
+        "audit_input_paths": list(AUDIT_INPUT_PATHS),
         "truth_tables": truth_tables,
         "independent_path_digest": path_digest,
         "independent_rows": semantic_rows,
         "independent_delta_histogram": dict(sorted(histogram.items())),
-        "primary_map_digest_checked": primary["map_digest"],
+        "primary_map_digest_checked": recomputed_primary_map_digest,
         "disputed_row_count": len(findings),
         "disputed_rows": [finding["path"] for finding in findings],
         "findings_verbatim": [finding["verbatim"] for finding in findings],
         "findings": findings,
+        "delta_dispute_mutation_probe": {
+            "mutated_path": mutant_path,
+            "mutated_class": mutant_rows[mutant_path]["delta_class"],
+            "findings_verbatim": [finding["verbatim"] for finding in mutation_findings],
+            "active": True,
+        },
+        "witness_bearing_findings_verbatim": bearing_findings,
         "refutation_outcome": (
-            "PRIMARY_SURVIVES_INDEPENDENT_DELTA_REFUTATION"
-            if not findings else "DELTA_CLASS_FINDINGS_REPORTED_VERBATIM"
+            "PRIMARY_SURVIVES_INDEPENDENT_ABSTRACT_DELTA_ATTACK"
+            if not findings else "ABSTRACT_DELTA_CLASS_FINDINGS_REPORTED_VERBATIM"
         ),
         "integrity": integrity,
+        "execution_caps": {
+            "audit_timeout_sec": AUDIT_TIMEOUT_SEC,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "house_stdout_limit_bytes": HOUSE_STDOUT_LIMIT_BYTES,
+        },
+        "cache_contract": {
+            "format": CACHE_FORMAT,
+            "runner": RUNNER_REL,
+            "receipt": RECEIPT_REL,
+            "deterministic_body": True,
+        },
     }
     receipt["checker_digest"] = digest({
         "pin": PINNED_SNAPSHOT_COMMIT,
         "paths": independent_paths,
         "classes": independent_classes,
         "findings": findings,
+        "primary_map_digest": recomputed_primary_map_digest,
     })
-    CHECK_RECEIPT.write_text(
-        json.dumps(receipt, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    receipt_text = json.dumps(receipt, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
+    CHECK_RECEIPT.write_text(receipt_text, encoding="utf-8")
 
     finding_text = "none" if not findings else " || ".join(f["verbatim"] for f in findings)
     cache_lines = [
-        f"PASS R0_REFUTE_PIN_AND_ROW_SET :: pin={PINNED_SNAPSHOT_COMMIT}; rows={len(independent_paths)}; path_digest={path_digest}; working_tree_corpus_reads=0",
+        f"PASS R0_REFUTE_PIN_AND_ROW_SET :: pin={PINNED_SNAPSHOT_COMMIT}; independently_resolved_blobs={len(paths_by_blob)}; rows={len(independent_paths)}; path_digest={path_digest}; working_tree_corpus_reads=0",
         f"PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched={sum(r['old_semantic_consumption_rederived'] for r in semantic_rows)}/26; exact_primary_quotes_at_pin={sum(quote_checks.values())}/26",
-        f"PASS R2_ATTACK_DELTA_CLASSES :: independent_histogram={compact(dict(sorted(histogram.items())))}; disputes={len(findings)}; findings_verbatim={json.dumps(finding_text, ensure_ascii=False)}",
-        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; checker_digest={receipt['checker_digest']}",
+        f"PASS R2_ATTACK_ABSTRACT_DELTA_CLASSES :: independent_histogram={compact(dict(sorted(histogram.items())))}; disputes={len(findings)}; findings_verbatim={json.dumps(finding_text, ensure_ascii=False)}",
+        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; bearing_disputes={len(bearing_findings)}; checker_digest={receipt['checker_digest']}",
         f"VERDICT: {receipt['refutation_outcome']}",
         "TOTAL: PASS=4 FAIL=0",
     ]
     cache = "\n".join(cache_lines) + "\n"
-    CHECK_CACHE.write_text(cache, encoding="utf-8")
+    if len(cache.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
+        raise AssertionError("checker stdout exceeds house cap")
+    CHECK_CACHE.write_text(cache_envelope(cache, receipt_text), encoding="utf-8")
     print(cache, end="")
     return 0
 

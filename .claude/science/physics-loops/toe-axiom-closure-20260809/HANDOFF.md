@@ -773,11 +773,12 @@ three, and direct gates pass. The exact stack reaches only the inherited
 stage-7 policy-epoch stop after `4,809` rows / `3,687` runners; the controlled
 five-file overlay passes all 18 stages at checkpoint `b7f009c19958`. Changed
 evidence is clean for `1/1` Block-25 and `25/25` stacked claims. Science
-commit is `315eff4095`; conformance commit and PR delivery remain pending. The
-next law must select the allowed local covariant action representative and its
-unit before deriving global/nonuniform, continuous-zone, and Lorentzian
-response. No canonical edit, percentage move, audit verdict, or `review-loop`
-occurs.
+commit is `315eff4095`; campaign conformance is `61dd9ccfba`. PR #6097 is
+open, mergeable, and `CLEAN`, stacked exactly on Block-24 delivery head
+`298d50332e`. The next law must select the allowed local covariant action
+representative and its unit before deriving global/nonuniform, continuous-zone,
+and Lorentzian response. No canonical edit, percentage move, audit verdict,
+or `review-loop` occurs.
 
 ## Block 17 science handoff
 

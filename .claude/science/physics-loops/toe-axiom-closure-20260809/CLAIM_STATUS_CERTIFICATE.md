@@ -684,8 +684,10 @@ independent_audit_required: true
   reproduces only the inherited stage-7 policy-epoch mismatch after `4,809`
   rows / `3,687` runners; the controlled five-file overlay passes all 18
   stages at checkpoint `b7f009c19958`. Changed evidence is clean for `1/1`
-  Block-25 and `25/25` stacked claims. Science commit is `315eff4095`;
-  conformance, delivery, and independent audit remain pending.
+  Block-25 and `25/25` stacked claims. Science commit is `315eff4095`,
+  campaign conformance is `61dd9ccfba`, and PR #6097 is open, mergeable, and
+  `CLEAN` on exact Block-24 delivery head `298d50332e`. Independent audit
+  remains required.
 - Governance: this is local normalized-family nonidentifiability, not an
   action-selection, locality, covariance, gravity, or axiom no-go; no
   canonical edit, percentage move, audit verdict, or `review-loop`.

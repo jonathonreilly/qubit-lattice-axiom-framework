@@ -91,7 +91,10 @@ stack reproduces only the inherited stage-7 policy-epoch stop after `4,809`
 rows / `3,687` runners; the controlled five-file overlay passes all 18 stages
 at checkpoint `b7f009c19958`. Changed evidence is clean for `1/1` Block-25 and
 `25/25` stacked claims. Science commit is `315eff4095`; conformance and
-delivery remain pending. No `review-loop` is used.
+campaign conformance is `61dd9ccfba`. PR #6097 is open, mergeable, and
+`CLEAN`, stacked exactly on Block-24 delivery head `298d50332e`. PR #6096 is
+a complementary sibling on Block 23 and requires explicit reconciliation,
+not silent inclusion in this stack. No `review-loop` is used.
 
 Block 24 is being packaged on branch
 `physics-loop/toe-axiom-closure-block24-hyperface-seagull-20260810`, stacked on

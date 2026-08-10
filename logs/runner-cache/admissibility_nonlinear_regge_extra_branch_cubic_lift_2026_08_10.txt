@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py
-runner_sha256: 478d35204792d7d558d91556c9623f183f88b35aecbb4f7c806aeefcafd9001c
-input_fingerprint_sha256: cbf428cd88c5d9c990b5b15e8e9e5717325da05657a892a83d6e21041c4efc1b
+runner_sha256: 6dddcfa69cb003c493586183cbebe5f6bcfc202387093b994f26e6b4bb30f5dc
+input_fingerprint_sha256: ebcb7c2bd09471bd72cc22b94bf66843c92bf46709d8901bfc106154cc5f88fe
 timeout_sec: 240
 exit_code: 0
-elapsed_sec: 45.40
+elapsed_sec: 47.61
 status: ok
 ----- stdout -----
 external_scientific_inputs: none; exact Taylor algebra is performed on the supplied actual Regge action
@@ -13,6 +13,8 @@ analytic_boundary: homogeneous action coefficients and the complete cubic null-s
 physical_boundary: full nonlinear source solutions, action selection, boundary, coupling, Lorentzian dynamics, and realized history remain open
 [PASS] source-current-axiom-boundary
 [PASS] source-parent-boundary
+[PASS] source-approved-primitive-boundary
+       the three approved primitives supply no geometry action, source law, constraint, boundary, coupling, or nonlinear solution
 [PASS] exact-coordinate-symmetry
        24 coordinate permutations preserve the complex, hinge classes, and g
 [PASS] exact-extra-vector-geometry
@@ -40,7 +42,7 @@ per_site: checked one complete homogeneous translation cell with all fifty trian
 per_mode: checked the compact k=0 eleven-dimensional null sector, its ten metric coordinates, and its independent extra coordinate
 per_block: checked the positive cubic/quartic lift, complete cubic normal form, declared-source comparison, and candidate-axiom boundary
 lattice_wide: checked an actual periodic L=3 box against the uniform-cell action; inhomogeneous and open-boundary nonlinear solutions were not executed
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

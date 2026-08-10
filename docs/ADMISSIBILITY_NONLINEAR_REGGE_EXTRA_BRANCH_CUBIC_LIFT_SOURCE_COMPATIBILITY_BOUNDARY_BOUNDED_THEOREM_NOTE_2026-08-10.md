@@ -324,13 +324,19 @@ source metric covectors. No full nonlinear source no-go is claimed.
 
 ### N1 — alternative route enumeration
 
-| Route | Attempt against the narrow claim | Result and authority | Marker |
-|---|---|---|---|
-| action orientation | replace `S_R` by `-S_R` | this changes `b` to `-b` but not its span; equations (4)-(5) and the exact runner preserve rank two in (14) | `ATTEMPTED` |
-| extra-coordinate orientation | replace `g,u` by `-g,-u` | `u^2 b` is unchanged, so the metric-gradient line is unchanged; exact branch definition is inherited from the parent note, lines 78-89 | `ATTEMPTED` |
-| arbitrary metric-null admixture | permit all ten `x` coordinates at the same order | all 55 `u x_i x_j` coefficients vanish by seven exact symmetry-orbit representatives, so `partial_x P_3` remains independent of `x`; Section 3 | `ATTEMPTED` |
-| source amplitude or scalar reaction multiplier | rescale any declared covector | scalar rescaling preserves nonparallelism; the exact rank certificates (14) stay two | `ATTEMPTED` |
-| leading massive-mode backreaction | solve the four range equations before the null equations | the parent rank-four Hessian gives range response `O(lambda)` when null displacement is `O(sqrt(lambda))`; substitution first changes the null gradient beyond leading order, not the cubic image | `ATTEMPTED` |
+The five families are normalized by the proof-search tuple *(primary
+object/formulation, load-bearing mechanism or invariant, terminal proof
+obligation)*. Each route is target-equivalent to defeating the narrow
+leading-cubic non-membership statement; none is presented as a route against
+the full nonlinear theory.
+
+| Family | Object / formulation | Mechanism / invariant | Terminal obligation | Result and authority | Marker |
+|---|---|---|---|---|---|
+| action orientation | oriented scalar action `S_R` versus `-S_R` | multiplication sends `b` to `-b` and preserves `span(b)` | enlarge the leading metric-gradient image enough to contain a declared covector | equations (4)-(5) and the exact runner preserve rank two in (14) | `ATTEMPTED` |
+| extra-coordinate orientation | null coordinate chart `g,u` versus `-g,-u` | the metric gradient is quadratic in `u` | change the leading metric-gradient line | `u^2 b` is invariant; the exact inherited branch definition fixes the same line | `ATTEMPTED` |
+| full metric-null admixture | complete cubic polynomial on `M_0 x+u g` | all 55 `u x_i x_j` coefficients vanish by seven exact symmetry-orbit representatives | use arbitrary same-order metric-null coordinates to rotate the image | `partial_x P_3` remains independent of `x`; Section 3 | `ATTEMPTED` |
+| source scaling / scalar reaction | projective declared-source covectors | scalar multiplication preserves matrix rank and parallelism | align a declared covector with `b` by amplitude choice | every exact rank certificate in (14) remains two | `ATTEMPTED` |
+| range-eliminated Lyapunov--Schmidt equation | four-range / eleven-null reduced system | the rank-four Hessian makes the range response `O(lambda)` for null displacement `O(sqrt(lambda))` | alter the leading null equation through massive-mode backreaction | substitution first changes the null gradient beyond leading order, not the cubic image | `ATTEMPTED` |
 
 These are five distinct mechanisms: action sign, coordinate orientation,
 null-sector mixing, source scaling, and range-mode elimination. Higher-order,
@@ -409,6 +415,16 @@ No “new axiom is required” claim is made. Existing partial-closure routes ar
 
 The candidate amendment records a sufficient interface for these routes; it
 does not assign premise weight to an unapproved primitive.
+
+The approved primitive registry was read directly at
+`docs/audit/data/axiom_premise_nodes.json`, followed through each registered
+`current_path`, and checked against the source notes for
+`scale_reference_primitive`, `kinetic_isotropy_primitive`, and
+`realized_state_primitive`. They respectively supply only a units reference,
+kinetic-form isotropy, and pointwise evaluation at a supplied realized state.
+None supplies a geometry action, source law, compact reaction, boundary,
+coupling, or nonlinear solution, so none silently closes or creates the narrow
+cubic wall.
 
 ### N7 — steelman
 

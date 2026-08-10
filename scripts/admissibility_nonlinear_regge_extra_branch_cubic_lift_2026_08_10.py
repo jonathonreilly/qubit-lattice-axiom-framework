@@ -13,6 +13,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from functools import lru_cache
 from itertools import permutations
+import json
 from math import factorial
 from pathlib import Path
 import sys
@@ -38,6 +39,12 @@ REGGE_NOTE_PATH = ROOT / "docs" / (
     "CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_"
     "NARROW_THEOREM_NOTE_2026-06-09.md"
 )
+PREMISE_REGISTRY_PATH = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+PRIMITIVE_PATHS = (
+    ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+)
 
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_NONLINEAR_REGGE_EXTRA_BRANCH_CUBIC_LIFT_SOURCE_COMPATIBILITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md",
@@ -46,6 +53,10 @@ AUDIT_INPUT_PATHS = (
     "docs/CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09.md",
     "scripts/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.py",
     "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
 )
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -499,6 +510,11 @@ def main() -> int:
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
     reaction_note = REACTION_NOTE_PATH.read_text(encoding="utf-8")
     regge_note = REGGE_NOTE_PATH.read_text(encoding="utf-8")
+    premise_registry = json.loads(PREMISE_REGISTRY_PATH.read_text(encoding="utf-8"))
+    primitive_notes = tuple(
+        " ".join(path.read_text(encoding="utf-8").split())
+        for path in PRIMITIVE_PATHS
+    )
     note_flat = " ".join(note.split())
     axiom_flat = " ".join(axiom.split())
 
@@ -516,6 +532,23 @@ def main() -> int:
         "source-parent-boundary",
         "dim K = 11 = 10 constant-metric modes + 1 nonmetric flat branch" in reaction_note
         and "one exactly flat branch" in regge_note,
+    )
+    registered_nodes = {
+        node_id: node["current_path"]
+        for node_id, node in premise_registry["nodes"].items()
+    }
+    checks.check(
+        "source-approved-primitive-boundary",
+        registered_nodes.get("scale_reference_primitive")
+        == "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+        and registered_nodes.get("kinetic_isotropy_primitive")
+        == "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+        and registered_nodes.get("realized_state_primitive")
+        == "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+        and "units conversion, not a physics axiom" in primitive_notes[0]
+        and "It is not a fourth spatial dimension, not a new dynamics" in primitive_notes[1]
+        and "It does not supply a state, state-selection rule" in primitive_notes[2],
+        "the three approved primitives supply no geometry action, source law, constraint, boundary, coupling, or nonlinear solution",
     )
 
     columns = exact_metric_columns()

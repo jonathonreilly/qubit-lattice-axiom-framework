@@ -84,3 +84,11 @@ the bare flat compact equation.
 
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.
+
+| pure homothety or constant-metric-only reaction as a complete compact solution for the declared Block-15/16 source family | actual flat periodic `Q_0`, `S=[s_tf,A,B]`, and reaction columns restricted respectively to `span{M_0I}` or `im M_0` | best homothety residual norm-squares are `133/24+3sqrt(2)/4`, `15/2`, and `27/4`; the exact extra branch pairs as `-sqrt(2)/4,0,3sqrt(2)/4` | N1--N8 complete in the Block-17 landing note; mixed/full KKT, fixed/open, signed/background, curved/nonlinear, lifted, and alternate-carrier routes remain live | two reaction-subspace exclusions only; no compact-gravity, all-constraint, action, boundary, carrier, curved/nonlinear, or axiom-necessity no-go | select a full-null reaction image, lift the branch, change the compact equation/domain, or derive another physical combined action |
+
+Block 17 positively constructs the reopen routes: three mixed reactions close
+the declared source-family equations, four separated reactions expose metric
+and extra-branch handling, and eleven reactions give unique source-agnostic
+homogeneous fixing. The negative result must never be broadened beyond the two
+explicit reaction subspaces.

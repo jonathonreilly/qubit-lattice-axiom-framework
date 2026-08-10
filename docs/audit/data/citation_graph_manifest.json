@@ -1,6 +1,6 @@
 {
- "edge_count": 15572,
- "node_count": 5462,
+ "edge_count": 15580,
+ "node_count": 5463,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -365,6 +365,10 @@
   "admissibility_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f766b94ee65c",
    "out_degree": 6
+  },
+  "admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "d5f980b256b0",
+   "out_degree": 8
   },
   "admissibility_cut_surface_coframe_stress_higher_form_ward_geometry_dynamics_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "088c2e2a5f1e",

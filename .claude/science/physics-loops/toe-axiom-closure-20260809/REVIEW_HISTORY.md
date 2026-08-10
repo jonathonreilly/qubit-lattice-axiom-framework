@@ -971,3 +971,57 @@ audit verdict.
   dependence theorem shares only the regenerated citation-manifest surface;
   it has no Block-16 note, runner, cache, or campaign-state collision. No
   `review-loop` is invoked for Block 16.
+
+## Block 17 promotion-value and cluster-cap gate
+
+- **V1:** closes the explicit Block-16 “compact scale mechanism” ambiguity by
+  computing the complete homogeneous reaction obligation.
+- **V2:** current-main search finds unrelated KKT uses but no compact
+  `rank(P_ker(Q0)S)` theorem or collision with the declared source family.
+- **V3:** the general lower bound/sharpness proof and all radical ranks are
+  exact; actual-Hessian KKT residuals independently test the construction.
+- **V4:** no observed target, fit, literature constant, or continuum Einstein
+  equation is load-bearing.
+- **V5:** the `1/2/3/8/11` ladder, homothety failure, extra-branch witness, and
+  existence-versus-uniqueness split materially change the completion and axiom
+  contract rather than relabeling Block 16.
+
+**Cluster-cap evaluator verdict: `OPEN`.** The seventeenth stacked block has a
+high review burden, but it adds a new general theorem and falsifies the
+specific scalar completion suggested by the prior handoff. The exact extra-
+branch witness also prevents “scale plus shape” from hiding a nonmetric
+obligation. Three/four/eleven-channel KKT constructions give reviewers a
+positive completion hierarchy, while the corrected candidate wording has
+direct governance value. This is independent content, not another network
+instance or Fourier census.
+
+## Block 17 direct-review record
+
+- Confirmed actual `rank Q_0=4`, nullity eleven, metric rank ten, and one exact
+  orthogonal nonmetric branch.
+- Confirmed exact source ranks `1/2/3`, broad ranks `8/11`, and the nonzero
+  `sqrt(2)/2` rank-three minor.
+- Confirmed exact best homothety residuals and extra-branch pairings.
+- Confirmed minimal three-channel, separated four-channel, and full eleven-
+  channel KKT equations and constraints on the unprojected actual Hessian.
+- Confirmed all `504` history means lie in the two-reaction bundle span; a
+  deleted third channel leaves null residual exactly `2` in the numerical
+  control.
+- Confirmed N1--N8 preserves fixed/open, signed/background, curved/nonlinear,
+  lifted, alternate-carrier, and downstream-convention routes. No universal
+  no-go or axiom necessity survives.
+- Primary runner/cache is `PASS=21 FAIL=0`, fresh, with five substantive
+  resolution lines and `2,799` stdout characters.
+- An independent reconstruction that does not import the Block-17 runner
+  rebuilds the exact metric map, source matrices, null projector, homothety
+  residual, and extra branch. It reproduces carrier rank/nullity `4/11`,
+  metric/full-null ranks `10/11`, source ranks `1/2/3/8/11`, determinant
+  `sqrt(2)/2`, KKT ranks `3/4/26`, and worst KKT residuals below `3.5e-15`.
+- Seventeen genuine load-bearing mutations cover current-axiom, primitive,
+  stacked-source, and Regge-source provenance; carrier inventory; declared
+  and broad reaction ranks; homothety; the extra branch; minimal, separated,
+  and full KKT systems; the history span; theorem/no-go source surfaces;
+  canonical nonmutation; and the fixed rubric. Every mutation exits nonzero
+  at exactly one named check with `PASS=20 FAIL=1`.
+- Citation manifest, final cache refresh, strict lint, changed-evidence, and
+  isolated pipeline remain pending. No `review-loop` is invoked.

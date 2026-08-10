@@ -366,3 +366,30 @@ campaign authors no verdict.
 No canonical axiom is edited and the fixed TOE percentages do not move. The
 Block 16 source remains bounded support and requires independent audit; this
 campaign authors no verdict.
+
+## Block 17 Claim Status Certificate
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: exact compact reaction-rank theorem and constructive KKT completions on the supplied flat periodic Regge carrier
+hypothetical_axiom_status: sufficient candidate compact homogeneous reaction clause, unadopted and not proved necessary or minimal
+admitted_observation_status: null
+claim_type_reason: exact finite-dimensional theorem with named carrier, source-family, compact-domain, and physical-selection boundaries
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+- `rank Q_0=4`, nullity eleven, metric-null rank ten, extra branch one.
+- Declared reaction ranks are exactly one, two, and three; broader temporal and
+  actual-edge ranks are eight and eleven.
+- Pure homothety leaves three exact nonzero residuals, and metric-only
+  reactions miss the exact extra branch for `s_tf` and `B`.
+- Three mixed reactions give minimal source-family existence, four separated
+  reactions expose metric/extra handling, and eleven give unique full fixing.
+- N1--N8 passes only for those narrow boundaries. No universal gravity,
+  action, boundary, curved/nonlinear, or axiom-necessity claim ships.
+- Direct conformance and independent audit remain required. No `review-loop`
+  is invoked, and the canonical axioms and fixed percentages remain unchanged.

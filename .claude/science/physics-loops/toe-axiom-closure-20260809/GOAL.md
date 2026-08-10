@@ -586,3 +586,26 @@ a gravity or positive-mass no-go: fixed-global, open, signed/background,
 constraint, curved/lifted, nonlinear, and alternate-carrier mechanisms remain
 live. Existing candidate wording types those choices if adopted, but selects
 none. No canonical edit or fixed-percentage move is made.
+
+## Block 17 Target And Disposition
+
+Block 17 asks the exact question left implicit by Block 16: how many compact
+homogeneous reactions are required, and is the natural scalar homothety
+reaction sufficient?
+
+The target is met at bounded mathematical scope. For any symmetric `Q` and
+declared source matrix `S`, source-family solvability requires and admits
+exactly `rank(P_ker(Q)S)` source-aligned reaction channels. On the actual
+carrier, the bouquet, bundle-history, and combined ranks are `1/2/3`; the
+future-temporal and all-edge ranks are `8/11`.
+
+Pure homothety is not aligned with the three generators. Constant-metric
+scale/shape reactions also miss the extra flat lattice branch for two of them.
+Exact three-, four-, and eleven-channel KKT constructions show respectively
+minimal existence, sector-separated existence, and unique full homogeneous
+fixing.
+
+The physical target is not met: the framework does not select the reaction
+gradients, targets, source family, action unit, boundary/background, branch
+lift, curved/nonlinear equation, or realized history. Candidate axiom wording
+is sharpened but not adopted or edited into the canonical memo.

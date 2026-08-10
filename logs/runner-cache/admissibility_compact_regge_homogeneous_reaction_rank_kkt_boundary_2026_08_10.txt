@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.py
+runner_sha256: 406f790c96eca23c85e86609ca45d21c41efb71cc093554832ac83f9168bf701
+input_fingerprint_sha256: 9a5a7ae35d96d4fd467c981ba383fb180422de814e2ac05e05ad64f7b1ecf3ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.15
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the reaction-rank lemma is finite-dimensional linear algebra on the supplied actual Regge carrier
+package_local_integrity_reads: current axioms, approved primitives, Blocks 12/15/16, and the actual zero-momentum Hessian are source-bound
+analytic_boundary: ranks and radical identities are exact; KKT residuals use the unprojected actual 15-edge Hessian
+physical_boundary: reaction gradients, targets, source family, action, coupling, nonlinear geometry, and realized history remain unselected
+[PASS] source-current-axiom-boundary
+[PASS] source-approved-primitive-boundary
+[PASS] source-prior-compact-boundary
+[PASS] source-regge-zero-inventory
+[PASS] actual-zero-mode-inventory
+       rank(Q0)=4; nullity=11; constant-metric rank=10; extra branch=1
+[PASS] exact-declared-reaction-ranks
+       bouquet/two-stream=1; 504-history family=2; combined family=3
+[PASS] exact-rank-three-certificate
+       selected null-pairing minor=sqrt(2)/2
+[PASS] source-family-rank-ladder
+       all future-temporal rays=8; all actual-edge rays=11
+[PASS] pure-homothety-reaction-fails-declared-generators
+       best scale-only residual norm^2=3*sqrt(2)/4 + 133/24,15/2,27/4
+[PASS] exact-extra-branch-vector
+[PASS] metric-only-reaction-extra-branch-boundary
+       extra overlaps [two-stream,A,B]=-sqrt(2)/4,0,3*sqrt(2)/4
+[PASS] minimal-three-channel-kkt-construction
+       equation=3.433e-15; constraint=8.491e-16
+[PASS] four-channel-sector-separated-kkt-construction
+       equation=2.867e-15; constraint=8.718e-16
+[PASS] full-eleven-channel-unique-kkt-construction
+       KKT rank=26; max residual=1.499e-15
+[PASS] one-source-aligned-channel-control
+       one scalar channel suffices for one fixed source only when aligned to its full null projection
+[PASS] rank-two-reaction-negative-control
+       omitting the third combined-family reaction leaves null residual=2.000000
+[PASS] all-binary-history-reaction-span
+       histories=504; worst span residual=1.710e-15
+[PASS] theorem-source-surface
+[PASS] no-go-discipline-source-surface
+[PASS] canonical-axiom-nonmutation
+[PASS] fixed-rubric-boundary
+per_element: checked all fifteen actual-edge rays, all eight future-temporal rays, and the exact extra-branch covector
+per_site: checked all 504 binary bundle histories through their compact mean sources and common two-reaction span
+per_mode: checked the actual compact k=0 Hessian with eleven null directions and no source projection in the KKT equation
+per_block: checked the general reaction-rank lower bound, exact rank ladder, constructive three/four/eleven-channel completions, and axiom boundary
+lattice_wide: checked the complete declared compact source families; open, curved, nonlinear, alternate-carrier, and background routes remain outside scope
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

@@ -290,3 +290,15 @@ head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`. New PR #6084 is adjacent
 inter-site-gate work and does not collide beyond the generated citation
 manifest. Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074,
 #6075, #6076, #6077, #6078, #6079, #6080, #6081, #6082, #6083, then #6085.
+
+Block 17 is locally complete but not yet delivered on branch
+`physics-loop/toe-axiom-closure-block17-reaction-20260810`, based on exact
+Block-16 delivery head `66f5ce6df27c777da04542804163e3e65476d10c`.
+It packages the general compact reaction-rank theorem, exact declared ranks
+`1/2/3`, broad ranks `8/11`, pure-homothety residuals, extra-branch witness,
+constructive `3/4/11`-channel KKT completions, N1--N8, and the corrected
+candidate amendment. Primary runner/cache is `PASS=21 FAIL=0` and fresh.
+Direct conformance, commit/push, and PR creation remain pending. Intended base
+is `physics-loop/toe-axiom-closure-block16-network-20260810`; intended title is
+`[physics-loop] toe-axiom-closure block17 — bounded_theorem — bounded-support — compact homogeneous reaction rank`.
+No `review-loop` is used.

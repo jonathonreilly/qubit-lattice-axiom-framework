@@ -289,3 +289,28 @@ types the action, carrier, Ward equation, geometry law, and declared zero-mode
 ensemble if adopted. Current axioms still do not select those data, a physical
 source/action unit, coupling, Lorentzian/nonlinear regime, Born law, or realized
 history. No canonical edit or fixed-percentage change occurs.
+
+Block 17 sharpens the compact trace from “scale mechanism” to a complete
+finite-dimensional obligation. The actual compact Hessian has eleven null
+directions. The fixed bouquet source, all `504` bundle-history means, and their
+combined family have exact reaction ranks one, two, and three; future-temporal
+and all-edge families have ranks eight and eleven.
+
+The natural scalar homothety reaction fails after optimal cancellation, and
+even the full constant-metric scale/shape sector misses the independent flat
+lattice branch for `s_tf` and `B`. This exposes a previously hidden distinction
+between metric shape and nonmetric branch handling.
+
+The trace is constructive. Three source-aligned mixed reaction channels give
+minimal existence, four metric/extra-separated channels give a legible carrier
+completion, and eleven full-null channels make the KKT response unique. All
+reactions remain visible in the variational equation; the source is not
+silently projected away.
+
+Reachability remains `upstream_support`: the result tells a combined
+Record-history/geometry law exactly what compact compatibility it must satisfy,
+but does not select that law, its targets, action unit, source identity,
+coupling, curved/nonlinear regime, or realized member. Candidate axiom wording
+is corrected to full null-projection coverage with explicit existence-versus-
+uniqueness and metric-versus-extra-branch typing. No canonical edit, audit
+verdict, or fixed-percentage change occurs.

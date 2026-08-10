@@ -364,3 +364,29 @@ The delivery base is exact PR #6083 head
 mergeable. The coefficient-four Block-15 transverse metric component and this
 block's coefficient-six source-contracted response are distinct observables,
 not a collision. No `review-loop` is used.
+
+## Block 17 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| source-family reaction rank | `r(S)=rank(P_ker(Q0)S)` | exact lower bound and sharp existence theorem | retain as general compact compatibility criterion |
+| declared bouquet/history family | `S=[s_tf,A,B]` | exact ranks one, two, and three; selected minor `sqrt(2)/2` | retain as the corrected compact obligation |
+| pure homothety reaction | one column `z=M(0)I` | exact nonzero best residuals for all three generators; residual family remains rank three | retire as a complete implementation on the named carrier only |
+| arbitrary constant-metric scale/shape reactions | any columns in `im M(0)` | exact extra-branch pairings `-sqrt(2)/4,0,3sqrt(2)/4` | insufficient for `s_tf` and `B` unless the branch is lifted/reacted |
+| minimal mixed KKT completion | three columns spanning `P_ker(Q0)S` | all declared compact equations solve variationally without source projection | positive mathematical existence; gradients/targets unselected |
+| sector-separated KKT completion | three metric source projections plus the exact nonmetric branch `g` | four-channel exact completion | preserve as physically legible action target |
+| full homogeneous KKT completion | all eleven null directions | `26x26` KKT matrix nonsingular for every actual-edge source | positive source-agnostic unique completion; much stronger premise |
+| broad temporal/edge source laws | eight future-temporal or fifteen actual-edge rays | reaction ranks eight and eleven | quantifier warning for future axiom/model wording |
+| open/fixed/background/curved/lifted route | changed domain, source, background, or operator | remains live and evades the narrow flat compact equation | preserve; no universal no-go or axiom necessity |
+| candidate amendment delta | full null-projection coverage plus metric/nonmetric and existence/uniqueness typing | sufficient by premise, not adopted or minimal | record exact wording; do not edit canonical axioms |
+
+## Block 17 live PR sweep
+
+At the Block 17 start, `origin/main` is
+`39c74017b870c27c804e3992f2a11e90336476b2`; exact stacked base PR #6085 is
+`CLEAN` and mergeable. Repo search finds generic KKT applications in unrelated
+PMNS/Koide lanes but no compact homogeneous reaction-rank theorem, no
+`rank(P_ker(Q0)S)` source criterion, and no source-packet collision. New PR
+#6086 concerns inter-site dependence/Born weightings and changes none of the
+Regge carrier, Block-15/16 source rows, homogeneous constraints, or candidate
+geometry wording. No `review-loop` is used.

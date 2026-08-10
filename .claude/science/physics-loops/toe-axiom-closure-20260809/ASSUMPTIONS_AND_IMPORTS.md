@@ -333,3 +333,24 @@ carriers.
 
 No positive-mass theorem, Einstein constraint, curved background, fitted pole,
 physical routing law, probability functional, or selected history is imported.
+
+## Block 17 Assumption And Import Delta
+
+- `A_min` remains Lattice, Qubit, Admissibility, and Record.
+- Approved primitives remain scale reference, kinetic isotropy, and realized
+  state, read from the live primitive registry and their current source notes.
+- Supplied mathematical inputs are the actual Block-16 source generators, the
+  actual zero-momentum Regge Hessian and metric map, finite-dimensional
+  symmetric-matrix/KKT algebra, exact radicals, and Moore-Penrose response.
+- No physical reaction gradient, target, compact boundary, source/action unit,
+  curved background, branch lift, coupling, or realized history is imported.
+- The three-channel source-aligned, four-channel sector-separated, and eleven-
+  channel full-null KKT maps are sufficiency witnesses, not selected laws.
+- No external literature, observed target, fit, continuum Einstein equation,
+  canonical axiom edit, primitive proposal, or audit verdict is used.
+
+The newly exposed import is exact: a physical compact model must select a
+reaction/boundary/background/curved/lifted equation whose image covers the
+complete allowed-source null projection, including the nonmetric branch when
+the current carrier retains it, and must state whether existence or unique
+homogeneous response is intended.

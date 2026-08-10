@@ -319,3 +319,25 @@ Block 16 packages a stacked bounded theorem only if it contains all of:
 7. a source-pinned runner/cache with five resolution certificates, independent
    reconstruction, genuine family mutations, full forced-false sensitivity,
    citation-graph registration, and direct/isolated conformance.
+
+## Block 17 Artifact Plan
+
+Produce one bounded theorem packet that replaces “compact scale mechanism”
+with an exact homogeneous reaction-rank contract:
+
+1. prove the lower bound and sharpness theorem
+   `r(S)=rank(P_ker(Q0)S)`;
+2. compute exact ranks `1/2/3` for the bouquet and all `504` history means,
+   plus `8/11` for the broader temporal/edge inventories;
+3. compute exact best pure-homothety residuals and independent nonmetric-
+   branch pairings;
+4. construct minimal mixed three-channel, sector-separated four-channel, and
+   full-null eleven-channel KKT completions without silent source projection;
+5. land N1--N8 and five-resolution execution certificates;
+6. update the unadopted candidate amendment with full null-projection,
+   metric/nonmetric, and existence/uniqueness typing; and
+7. leave the canonical axioms and fixed TOE percentages unchanged.
+
+The next physical artifact is an action-level derivation of the reaction
+gradients/targets or a curved/nonlinear branch-lift equation. A source-tailored
+projector alone is not that derivation.

@@ -757,3 +757,43 @@ not select the Record/source identity, action weights, compact mechanism,
 physical carrier, geometry dynamics/coupling, Lorentzian/nonlinear law, Born
 functional, or realized history. No canonical edit, percentage move, audit
 verdict, or `review-loop` occurs.
+
+## Block 17 science handoff
+
+Block 17 corrects the leading compact-gravity obligation. The actual
+zero-momentum Regge Hessian has rank four and nullity eleven: ten constant-
+metric directions plus one independent nonmetric flat branch. For any declared
+source matrix `S`, the minimum reaction dimension for compact solvability is
+exactly `rank(P_ker(Q0)S)`.
+
+The fixed tick-plus-face source has rank one, the two bundle endpoints and all
+`504` history means have rank two, and the combined family has rank three. A
+selected `3x3` null-pairing minor is exactly `sqrt(2)/2`. All future-temporal
+rays have rank eight; all actual-edge rays have rank eleven.
+
+A scalar homothety reaction is not the needed rank-one direction. Its best
+residual norm-squares on `s_tf,A,B` are exactly
+`133/24+3sqrt(2)/4`, `15/2`, and `27/4`, and the remainder stays rank three.
+Nor do arbitrary constant-metric shape reactions finish the current carrier:
+the exact extra branch pairs as `-sqrt(2)/4,0,3sqrt(2)/4`.
+
+The block constructs three honest variational completions. Three mixed
+source-aligned reactions give minimal existence for the declared family; four
+metric/extra-separated reactions give the same existence with carrier sectors
+visible; eleven full-null reactions make the `26x26` KKT matrix nonsingular
+for every edge source. These are not post hoc source projections, but their
+physical constraint functions and targets remain unselected.
+
+The primary runner is `PASS=21 FAIL=0` with a fresh source/input-pinned cache
+and `2,799` stdout characters. N1--N8 passes only for the narrow homothety-only
+and metric-only subspace failures. The candidate geometry-indexed
+history/action amendment is sharpened to require full null-projection coverage,
+metric/nonmetric branch handling, and existence-versus-unique-response typing.
+It remains sufficient, unadopted, and nonminimal; a downstream convention or
+changed boundary/background/curved/lifted operator remains valid.
+
+Direct conformance, isolated integration, commit, push, and PR creation are
+pending. Exact stacked base is Block-16 delivery head
+`66f5ce6df27c777da04542804163e3e65476d10c`; PR #6085 is `CLEAN` and
+mergeable. No `review-loop`, canonical axiom edit, audit verdict, or fixed TOE
+percentage change occurs.

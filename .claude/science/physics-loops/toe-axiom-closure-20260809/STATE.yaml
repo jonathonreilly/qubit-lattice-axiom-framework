@@ -1,0 +1,98 @@
+loop_slug: toe-axiom-closure-20260809
+mode: campaign
+target_status: best-honest-status
+started_at: 2026-08-09T19:00:00-04:00
+runtime_budget: 24h
+stop_at: 2026-08-10T19:00:00-04:00
+checkpoint_interval: 30m
+deep_block: 90m
+cycle: 2
+science_block: 1
+branch: physics-loop/toe-axiom-closure-block01-20260809
+base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
+worktree: /private/tmp/toe-axiom-closure.765aJE/worktree
+lock_mode: cooperative
+lock_owner: physics-loop
+lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
+goal: maximize honest TOE closure from the current axiom surface, beginning with the highest-value unoccupied Born-form threshold
+active_route: conformance and adversarial self-review of the one-ancilla frame-lift bounded theorem, followed by a value comparison between native frame closure and physical grading/menu registration
+hard_residual: the stronger campaign target still needs a self-contained no-regularity representation lemma for the compression-invariant qutrit frame function; current-surface Born closure also needs distribution-to-effect-grade identification/functionality and low-arity physical menu eligibility
+target_contract_status: partial_import_bearing_theorem_not_native_completion
+A_min:
+  - Lattice
+  - Qubit
+  - Admissibility
+  - Record
+approved_primitives:
+  - scale_reference_primitive
+  - kinetic_isotropy_primitive
+  - realized_state_primitive
+block_local_allowed_premises:
+  - finite-dimensional real and complex linear algebra
+  - Pauli and Bloch-sphere identities at one M_2(C) site
+  - the explicitly defined scaled-projector domain and menus of arity at most three
+  - menu-independent grading with range, endpoint, and normalization clauses stated in GOAL.md
+forbidden_imports:
+  - the Born trace formula as a premise
+  - continuity, measurability, differentiability, or ray additivity unless derived
+  - any menu of four or more outcomes
+  - the full qubit effect algebra or mixed-projective closure
+  - physical effect registration, measurement context, record-production dynamics, or a selected distribution law
+  - a literature form theorem or observed probability values
+  - a new axiom or primitive
+files_touched:
+  - .claude/science/physics-loops/toe-axiom-closure-20260809/
+  - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
+  - scripts/born_form_binary_ternary_scaled_projector_frame_lift_2026_08_09.py
+  - logs/runner-cache/born_form_binary_ternary_scaled_projector_frame_lift_2026_08_09.txt
+  - docs/CANONICAL_HARNESS_INDEX.md
+open_imports:
+  - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
+  - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
+  - current axioms require a neighborhood-varying probability distribution but do not determine its form or values
+no_go_routes: []
+approach_family_coverage:
+  triangle_functional_equation: reduced_to_special_frame_lemma
+  spherical_harmonic_decomposition: provisional_under_measurability
+  explicit_rogue_construction: five_major_families_excluded
+  finite_exact_certificate: exact_through_odd_degree_nine
+  naimark_frame_lift: bounded_artifact_complete_native_target_blocked_on_named_frame_theorem
+strongest_unresolved_proof_obligation: prove a self-contained no-regularity representation lemma for frame functions induced by top-block compression, or derive distribution-to-effect-grade identification/functionality and universal binary-and-ternary physical menu eligibility from current framework structure
+trace_gate_classification: direct_blocker_closure_at_named_theorem_granularity
+reachability_to_target: advances
+landed_frontier_reachability: closes
+campaign_native_target_reachability: advances
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+conditional_surface_status: exact one-site implication on the supplied grading/menu surface
+hypothetical_axiom_status: candidate wording only; no axiom edit authorized
+review_disposition: self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: ready_to_commit_and_open
+checkpoint_zero_toe_map:
+  operational_quantum_records:
+    repo_science_percent: 95
+    physical_m2_bridge_percent: 92
+    autonomous_closure_percent: 50
+    evidence_ceiling_percent: 99
+  causal_time:
+    repo_science_percent: 76
+    physical_m2_bridge_percent: 72
+    autonomous_closure_percent: 41
+    evidence_ceiling_percent: 99
+  inertia_matter:
+    repo_science_percent: 95
+    physical_m2_bridge_percent: 96
+    autonomous_closure_percent: 75
+    evidence_ceiling_percent: 99
+  gravity_source_resources:
+    repo_science_percent: 70
+    physical_m2_bridge_percent: 45
+    autonomous_closure_percent: 29
+    evidence_ceiling_percent: 94
+  born_probability_realized_history:
+    repo_science_percent: 84
+    physical_m2_bridge_percent: 63
+    autonomous_closure_percent: 34
+    evidence_ceiling_percent: 99
+next_exact_action: commit and push Block 1, open its physics-loop PR with the origin-main epoch blocker disclosed, then pivot to the highest-value nonduplicative physical or native residual
+stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

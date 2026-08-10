@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "no_go",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -30,13 +30,13 @@
     "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29",
     "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.407,
+  "load_bearing_score": 5.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -108,6 +108,6 @@
   },
   "runner_path": "scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py",
   "title": "Charged-Lepton `y_\u03c4` Ward Identity Combined No-Go (2026-05-10)",
-  "transitive_descendants": 29,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.822,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -147,7 +147,7 @@
   },
   "runner_path": "scripts/frontier_yt_fh_top_w_response_ratio_gate.py",
   "title": "Y_T Feynman-Hellmann Top/W Response-Ratio Gate",
-  "transitive_descendants": 4,
+  "transitive_descendants": 3,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

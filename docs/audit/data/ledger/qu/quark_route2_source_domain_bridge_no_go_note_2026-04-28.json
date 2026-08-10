@@ -56,7 +56,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 24.822,
+  "load_bearing_score": 24.813,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -520,7 +520,7 @@
   },
   "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
   "title": "Quark Route-2 Source-Domain Bridge No-Go",
-  "transitive_descendants": 159,
+  "transitive_descendants": 158,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

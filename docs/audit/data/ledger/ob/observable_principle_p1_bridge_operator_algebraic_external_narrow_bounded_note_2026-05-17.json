@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.285,
+  "load_bearing_score": 10.248,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -372,6 +372,6 @@
   },
   "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
   "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note",
-  "transitive_descendants": 38,
+  "transitive_descendants": 37,
   "verdict_rationale": null
 }

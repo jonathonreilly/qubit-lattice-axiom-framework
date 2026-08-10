@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.307,
+  "load_bearing_score": 3.085,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -153,7 +153,7 @@
   },
   "runner_path": "scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py",
   "title": "Flavor \u2014 final step: the asymmetry-2/9 identification is PRINCIPLED-BUT-NOT-FORCED; closing it needs one named generation-space bridge",
-  "transitive_descendants": 6,
+  "transitive_descendants": 5,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

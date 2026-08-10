@@ -55,7 +55,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 35.977,
+  "load_bearing_score": 35.966,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -491,7 +491,7 @@
   },
   "runner_path": "scripts/frontier_s3_time_theta_to_slice_coupling.py",
   "title": "Route 2 Readout to Slice Coupling",
-  "transitive_descendants": 125,
+  "transitive_descendants": 124,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

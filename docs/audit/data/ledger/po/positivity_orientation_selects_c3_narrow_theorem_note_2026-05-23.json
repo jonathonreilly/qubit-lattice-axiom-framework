@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.087,
+  "load_bearing_score": 5.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -179,6 +179,6 @@
   },
   "runner_path": "scripts/frontier_positivity_orientation_selects_c3_discriminator.py",
   "title": "Positivity/Orientation Selects C_3 from S_3 Narrow Theorem",
-  "transitive_descendants": 16,
+  "transitive_descendants": 15,
   "verdict_rationale": null
 }

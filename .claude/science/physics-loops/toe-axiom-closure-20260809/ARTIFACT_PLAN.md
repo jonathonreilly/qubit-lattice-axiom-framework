@@ -97,3 +97,23 @@ Block 6 packages a stacked bounded theorem only if it contains all of:
 6. narrowed hypothetical axiom-side alternatives, with no canonical edit;
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 7
+
+Block 7 packages a stacked bounded theorem only if it contains all of:
+
+1. an injective carrier for one Hermitian qubit effect and one real label
+   inside the existing `M_2(C)` possibility type;
+2. fixed content-only inverse decoders and a finite additive scalar Record
+   readout, with exact simultaneous-unitary covariance;
+3. a normalized atomic effect-weight law for every supplied finite resolution
+   and positive functional;
+4. an exact common-uniformizer factorization, two rational ternary programs,
+   one identical shared-effect atom, and a preparation-varying fixed-decoder
+   control;
+5. a complete N1--N8 gate preserving direct-law, changed-law, contact-process,
+   and history routes;
+6. a narrowed hypothetical Admissibility-side clause that does not enlarge
+   Qubit or Record content and does not edit the canonical memo;
+7. an exact runner/cache, independent symbolic recomputation, mutation
+   sensitivity, harness/graph registration, and direct conformance review.

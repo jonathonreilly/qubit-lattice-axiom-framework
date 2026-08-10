@@ -1,6 +1,6 @@
 {
- "edge_count": 15512,
- "node_count": 5452,
+ "edge_count": 15517,
+ "node_count": 5453,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -361,6 +361,10 @@
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
    "deps_hash": "7026e4c03122",
    "out_degree": 5
+  },
+  "admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "c12edc090f3d",
+   "out_degree": 4
   },
   "admissibility_record_content_decoder_pushforward_effect_descent_independence_bounded_theorem_note_2026-08-10": {
    "deps_hash": "3897af505edd",
@@ -1659,8 +1663,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "227a9e4e74f6",
-   "out_degree": 347
+   "deps_hash": "61a72630ea80",
+   "out_degree": 348
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

@@ -126,3 +126,23 @@ physical partial trace, or claim autonomous occurrence/history.
 The theorem does not import a preferred distribution law, density functional,
 program tag, observed probability, physical comparator, formation site/rate,
 repeated-trial law, or realized-history typicality.
+
+## Block 7 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| current `M_2(C)` one-site domain | effect-label carrier | Qubit baseline | yes | unchanged; no type enlargement |
+| Hermitian qubit effect and one real label | code input | explicit mathematical program | yes | conditional; no physical registration inferred |
+| central anti-Hermitian direction `i ell I` | label coordinate | elementary matrix algebra | yes | derived from existing algebra |
+| Hermitian-part and imaginary-trace maps | fixed content decoders | elementary matrix algebra | yes | proved exactly |
+| normalized positive functional and finite effect resolution | atomic masses/program | explicit conditional inputs | yes | not selected by current axioms |
+| displayed Gaussian second moment and common uniformizer | deterministic atomic-law factorization | stacked bounded parents | yes for factorization | not physically selected |
+| two rational ternary resolutions | exact shared-effect fixtures | constructed finite matrix algebra | yes | mathematical programs only |
+| direct atomic Admissibility distribution | compatible completion | derived conditional measure | yes for positive route | no temporal writer inferred |
+| physical preparation/effect quotient | same-effect registration | open import | no for theorem; yes for TOE closure | not assumed |
+| occurrence, trials, causal order, and histories | autonomous closure | open imports | no for theorem; yes for TOE closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The theorem does not import a preferred positive functional, selected effect
+program, apparatus identity, observed probability, temporal write process,
+formation site/rate, IID trial law, or realized-history typicality.

@@ -1,12 +1,12 @@
 ---
 trace_class: upstream_support
-target_claim_id: admissibility_record_condition_indexed_decoder_program_bridge
-target_blocker_text: "derive a physically registered condition-indexed decoder/program tag while preserving content-only Record readout"
+target_claim_id: admissibility_record_m2_effect_label_atomic_born_law_bridge
+target_blocker_text: "derive or explicitly supply one covariant nearest-neighbor map from physical preparation/program conditions to a normalized positive functional and operational-effect resolution, then connect Record formation events into trials and histories"
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: theorem
 campaign_native_target_reachability: advances
-next_trace_action: "Test whether local contact can compute and store a covariant preparation/program tag and same-effect identity in Record content, or whether Admissibility must select a law shape whose fixed decoder event already carries the varying target mass."
+next_trace_action: "Test whether landed M_2(C)-native contact/action structure selects the positive functional and preparation/effect quotient; otherwise preserve the exact sufficient Admissibility wording as the narrow owner-decision surface and pivot to the trial/history bridge."
 ---
 
 Block 1 closes the named low-arity mathematical frontier at standard-theorem
@@ -54,3 +54,17 @@ threshold realizes the grade exactly, so the trace residual is now physical
 selector/tag storage, same-effect descent, and occurrence—not randomness. The
 current axiom does not supply those interfaces; physical and autonomous TOE
 percentages remain fixed.
+
+Block 7 closes the local storage/type branch of that residual conditionally.
+One codeword `E+i ell I` stores a Hermitian effect and a real outcome label in
+the existing `M_2(C)` domain. Hermitian part and half imaginary trace are fixed
+inverse content decoders, the scalar label is finitely additive over Records,
+and the carrier is covariant under all simultaneous unitary conjugations. A
+supplied positive functional and finite effect resolution define an exact
+atomic output law, and the common Gaussian uniformizer factors that law. Two
+rational ternary programs reproduce the exact shared-effect vectors and share
+one identical codeword; along `C=tP_z`, one fixed decoded atom has varying
+mass. The remaining trace is therefore not Qubit/Record capacity. It is
+selection of the local positive functional and effect program, the physical
+preparation/effect quotient, and occurrence/history. Those current-axiom
+obligations remain open, so the percentages remain fixed.

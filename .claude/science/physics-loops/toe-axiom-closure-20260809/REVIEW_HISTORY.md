@@ -413,3 +413,38 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   science delta as `8a3d56c830`, pushed the dedicated branch, and opened PR
   #6074 on the exact #6071 head. Hard landing order is #6063, #6065, #6067,
   #6070, #6071, then #6074.
+
+## Block 7 direct self-review — in progress
+
+- Read the current canonical axiom and direct PR-conformance specification at
+  the exact stacked head; preserved the no-axiom-edit and audit-authority
+  boundaries and did not invoke `review-loop`.
+- Constructed `kappa(E,ell)=E+i ell I` with fixed Hermitian-part and
+  imaginary-trace inverse decoders, finite additive scalar readout, exact
+  conjugation covariance, and a conditional atomic positive-functional law.
+- The primary runner is `PASS=26 FAIL=0`, with 4,643 stdout characters and a
+  fresh SHA/input-fingerprint cache. Exact fixtures cover two rational ternary
+  effect resolutions, one shared codeword, two conjugations, three preparation
+  centers, and two isotropic extractor members.
+- Independent SymPy verifies six positive effects, both identity resolutions,
+  both weight vectors, the carrier inverse, both conjugations, and the symbolic
+  mass `(t^2+2)/(2(t^2+4))`. Its first exploratory equality assertion was
+  syntactic and failed although the simplified residual was zero; the corrected
+  symbolic-zero assertion passes.
+- Vocabulary lint reports zero findings. Citation topology is regenerated at
+  5,453 nodes / 15,517 edges: one new node of out-degree four plus the intended
+  harness edge, and no other rewire.
+- Eighteen corrected disposable-copy mutations cover all source bindings,
+  dimension capacity, carrier inversion, covariance, label readout, effect
+  resolution, shared incidence, weights, cuts, writer composition, preparation
+  variation, construction/boundary prose, machine status, and N1--N8. The
+  first uniformizer-parent mutation changed only one of two repeated phrases
+  and stayed green; the replacement uses the unique `tag-writing contact`
+  needle and fails at the intended source-binding check. No tracked file is
+  changed by the probes.
+- Direct precommit conformance passes: vocabulary lint has zero findings;
+  strict audit lint has zero errors; graph/link invariants report zero link and
+  class-F violations with the topology delta acknowledged; YAML and Python
+  compile; the runner cache is SHA/input-fingerprint fresh; whitespace and the
+  exact 18-file stacked delta both pass. Full-pipeline disclosure/cleanup,
+  commit/push, and PR creation remain pending at this checkpoint.

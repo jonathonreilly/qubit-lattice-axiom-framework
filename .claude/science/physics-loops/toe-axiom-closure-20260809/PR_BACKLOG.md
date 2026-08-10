@@ -88,3 +88,18 @@ Completed Block 1 delivery checklist:
 - disclose that current-main pipeline completion is blocked by the exact
   dependency-policy drift owned by open PR #6061; do not copy its policy fix;
 - commit and push only the dedicated block branch.
+
+Block 7 is under direct self-review on branch
+`physics-loop/toe-axiom-closure-block07-20260810`, stacked on the exact PR
+#6074 head `567fb074d65b332c4b008629524049f3718c351f`. The exact M2 effect-label
+carrier, fixed inverse decoders, finite additive scalar readout, conditional
+atomic effect-weight law, common-uniformizer factorization, rational
+shared-effect fixtures, source N1--N8 gate, runner/cache, harness row, and
+citation manifest are constructed. The primary runner is `PASS=26 FAIL=0` and
+an independent SymPy route agrees after replacing one syntactic rational-
+expression equality with an exact symbolic-zero comparison. Eighteen corrected
+mutation probes fail at their intended families; one initially ineffective
+repeated-phrase mutation was replaced by a unique parent-source needle. Direct
+precommit conformance and the cold diff pass. Pipeline disclosure/cleanup,
+commit, push, and stacked PR creation remain pending. The canonical axiom memo
+remains untouched; no `review-loop` is used.

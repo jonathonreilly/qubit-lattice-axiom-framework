@@ -142,3 +142,27 @@ decoder, the covariant effect-map theorem, and Cycle 321's finite coarse-CP
 quotient. None constructs the current continuous-measure second-moment/CDF
 compiler or supplies its physical selection and cross-condition preparation
 equivalence.
+
+## Block 7 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| enlarged local content type | external effect plus outcome register | unnecessary for one effect and one real label | retire on declared carrier scope only |
+| central M2 carrier | `E+i ell I` | exact injective covariant code with fixed inverse decoders | positive construction |
+| indexed Gaussian writer | common `U` plus condition/program cuts | exact atomic pushforward to carrier codewords | positive mathematical factorization; no dynamics inferred |
+| direct atomic Admissibility law | `sum_j omega(E_j) delta_(kappa(E_j,ell_j))` | same output law without a temporal writer | keep as simplest compatible completion |
+| changed continuous law | fixed event with condition-dependent mass | remains live outside atomic output | keep live; selection open |
+| contact-derived positive functional/program | local process chooses `omega`, effects, and quotient | not yet derived | rank next |
+| causal trial/history lift | sequence and correlate formed atomic Records | not supplied by one-site law | rank after selector scan |
+| refined axiom addition | Admissibility supplies positive functional, effect resolution, codeword mass, covariance, and physical quotient | sufficient candidate only | governance fallback; no edit |
+
+## Block 7 live PR sweep
+
+At the Block 7 boundary, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`. PR #6072 is a 26-row semantic
+repair-map handoff and changes no axiom, primitive, effective status, audit
+verdict, decoder, positive functional, or tag-writing law. PR #6073 concerns a
+cell-cutting missing-subsum lattice. Neither collides with the M2 carrier or
+supplies the remaining local-law selector. PR #6069 remains useful finite CNOT
+context but does not select a continuous Admissibility functional or physical
+preparation/effect quotient.

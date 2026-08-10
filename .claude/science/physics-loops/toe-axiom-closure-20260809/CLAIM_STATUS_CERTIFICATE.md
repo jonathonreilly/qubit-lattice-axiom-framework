@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact center-independent Gaussian content uniformizer, entire-function classification of every fixed bounded content kernel on one preparation slice, finite-lambda pole mismatch, and condition-indexed threshold escape; selector/tag registration, physical effect quotient, occurrence, and axiom adoption remain open."
+claim_type_reason: "Exact M_2(C) effect-label injection, fixed content decoders, finite additive scalar readout, exact covariant atomic effect-weight laws, shared-effect descent, and common-Gaussian-uniformizer factorization; positive-functional/program selection, physical quotient, occurrence, histories, and axiom adoption remain open."
 trace_class: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "one fixed content-only uniformizer works for every Hermitian center of the displayed Gaussian family, but no fixed bounded content-only kernel realizes the finite-lambda extracted half-projector grade on an open center interval; condition-indexed thresholding succeeds exactly"
-hypothetical_axiom_status: "the remaining candidate interface is narrowed to a stored preparation/program tag, explicitly indexed decoder, or selected alternate law shape, together with same-effect descent and occurrence; no canonical axiom edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "the existing one-site type stores one qubit effect and one real outcome label with fixed inverse decoders, and a supplied positive functional/effect resolution gives an exact fixed-decodable atomic law; physical selection of that law and program quotient is not derived"
+hypothetical_axiom_status: "Qubit/Record type enlargement is removed from the candidate update; the remaining sufficient interface is an Admissibility-side positive-functional/effect-program map plus a physical preparation/effect quotient, with histories separate; no canonical edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -68,6 +68,17 @@ bare_retained_allowed: false
 - A condition-indexed threshold of the common uniformizer realizes the target
   exactly, localizing the remaining physical interface to selector/tag
   storage, same-effect quotient, and occurrence rather than randomness.
+- Block 7 injects one effect plus one real label into the current `M_2(C)`
+  content as `E+i ell I`; Hermitian part and half imaginary trace are fixed
+  inverse decoders, and the scalar label extends additively over Records.
+- A supplied normalized positive functional and finite effect resolution give
+  an exact atomic output law on those codewords. The common Gaussian
+  uniformizer factors that law deterministically, and two rational ternary
+  programs reproduce the exact shared-effect vectors from Block 4.
+- The identical shared codeword has preparation-dependent mass under one
+  fixed output decoder, so no larger Record type or indexed post-formation
+  readout is needed on this route. Selection of the positive functional,
+  effect program, physical quotient, occurrence, and histories remains open.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

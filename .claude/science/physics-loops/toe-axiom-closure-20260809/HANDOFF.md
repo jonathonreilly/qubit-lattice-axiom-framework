@@ -247,3 +247,48 @@ Continue without `review-loop`.
 Next exact action: test a local tag-writing contact construction and its
 content-only storage type before asking for owner authority on the narrowed
 Record/Admissibility update.
+
+## Current M2 effect-label carrier block
+
+Block 7 resolves the storage/type branch positively. For a Hermitian qubit
+effect `E` and real label `ell`, the codeword
+
+`kappa(E,ell)=E+i ell I`
+
+lies in the existing one-site `M_2(C)` domain. Hermitian part and half the
+imaginary trace recover `E` and `ell` exactly, proving injectivity. The carrier
+and decoders are covariant under simultaneous unitary conjugation, and the
+label readout extends additively over finite disjoint Record collections.
+
+For a supplied normalized positive functional `omega` and finite effect
+resolution, `sum_j omega(E_j) delta_(kappa(E_j,ell_j))` is an exact atomic
+possibility law with one fixed content decoder. The common Gaussian uniformizer
+factors this law deterministically. Two rational ternary resolutions reproduce
+the exact vectors `(3/10,19/50,8/25)` and `(3/10,7/20,7/20)`, sharing one
+literal effect-label codeword of mass `3/10`. Along `C=tP_z`, that same decoded
+atom has masses `1/4`, `3/10`, and `3/8` at `t=0,1,2`.
+
+The primary runner is `PASS=26 FAIL=0`; independent SymPy agrees on
+the carrier inverse, two conjugations, six positive effects, both resolutions,
+both weight vectors, and the symbolic preparation-dependent mass. One
+exploratory SymPy assertion compared algebraically equal rational expressions
+syntactically; its residual was exactly zero, and the corrected symbolic-zero
+test passed. The graph is regenerated at 5,453 nodes / 15,517 edges, the
+intended one-node/five-edge delta; the new note has out-degree four and the
+harness gains one edge. Eighteen corrected disposable-copy mutation probes
+reach their intended failure families. The first uniformizer-parent mutation
+changed only one of two repeated phrases and stayed green; replacing it with a
+unique source needle failed at the intended parent-binding check. Direct
+precommit conformance passes with zero strict-lint errors, zero link/class-F
+violations, valid YAML/Python, a fresh cache, and the exact 18-file stacked
+delta. Full pipeline execution remains pending at this checkpoint.
+
+This removes Qubit/Record type enlargement from the candidate update for one
+effect plus one real label. It does not select the positive functional, effect
+program, physical preparation/effect quotient, formation site/rate, trials,
+or history. No canonical axiom is edited, no percentage moves, and no
+`review-loop` is invoked.
+
+Next exact action: run and clean the full pipeline, deliver the stacked block,
+then search landed M2-native contact/action results for a selector of the
+positive functional and physical quotient.

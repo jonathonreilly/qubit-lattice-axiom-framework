@@ -206,6 +206,42 @@ narrow axiom-side alternatives are a stored tag, an explicitly indexed
 readout, or a different law shape whose fixed decoder event already carries
 the varying mass. No canonical axiom is edited, and no TOE percentage moves.
 
+## Block 7 Target And Disposition
+
+Block 7 follows the tagged/direct-law escapes left live by Block 6. It asks
+whether one qubit effect and one outcome label fit inside the existing local
+possibility type, whether one fixed Record readout can recover them, and
+whether the common Gaussian uniformizer can produce an exact atomic law on
+those codewords.
+
+The carrier
+
+`kappa(E,ell)=E+i ell I`
+
+is injective because Hermitian part recovers `E` and half the imaginary trace
+recovers `ell`. It is covariant under all simultaneous unitary conjugations and
+uses five of the eight real coordinates of `M_2(C)`. The label decoder extends
+to a finite additive scalar Record readout.
+
+For any supplied normalized positive functional `omega` and finite effect
+resolution, the atomic law
+
+`sum_j omega(E_j) delta_(kappa(E_j,ell_j))`
+
+is normalized and fixed-decodable. The common Gaussian uniformizer supplies a
+deterministic factorization. Two rational ternary programs reproduce the exact
+vectors `(3/10,19/50,8/25)` and `(3/10,7/20,7/20)` and share one literally
+identical effect-label codeword of mass `3/10`. Along `C=tP_z`, that codeword's
+mass varies as `(t^2+2)/(2(t^2+4))` while its decoder remains fixed.
+
+This closes the local type/storage and mathematical output-decoder questions
+for the displayed conditional route. It does not derive the positive
+functional, effect program, preparation/effect quotient, formation site/rate,
+trials, or history. The candidate update is therefore narrowed away from
+Qubit/Record enlargement and toward an Admissibility-side law-selection and
+physical-quotient clause. No canonical axiom is edited, and no TOE percentage
+moves.
+
 ## Trace target
 
 The landed source states:

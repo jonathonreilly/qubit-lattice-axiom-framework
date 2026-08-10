@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_2026_08_10.py
+runner_sha256: 1a3d57979e7935f3ad268c4a5a0b203505d021fa695033fecc287c1858dbe472
+input_fingerprint_sha256: 9f9eab5290efe9c98f8cd83759100ae640968cf938d7db5b934ba3f22dd5ad54
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: the current axiom and three stacked decoder/compiler/uniformizer boundaries are source-bound; no literature theorem, observed probability, fitted parameter, or external PR artifact is imported
+package_local_integrity_reads: the proposed theorem note is checked for its carrier, atomic law, exact fixtures, trace status, and N1-N8 surfaces; the cache envelope binds every declared input
+analytic_boundary: Gaussian integration, the common-uniform probability transform, general positive-functional normalization, and all-unitary covariance are proved in the source; exact rational carrier, menu, weight, and conjugation fixtures are executed here
+negative_scope: only autonomous law selection, program/preparation registration, occurrence, histories, and axiom adoption are withheld; no global Born, Record, Admissibility, contact, or axiom no-go is claimed
+PASS: source-current-axiom the current M2 possibility, neighborhood-distribution, and content-only additive Record clauses are present
+PASS: source-decoder-parent Block 3 separates decoder registration from effect descent
+PASS: source-compiler-parent Block 4 supplies exact second-moment weights while leaving physical program encoding open
+PASS: source-uniformizer-parent Block 6 supplies the common content uniformizer and indexed-threshold escape
+PASS: carrier-dimension-capacity M2 has eight real coordinates; a Hermitian effect plus one real label uses five and leaves three
+PASS: carrier-left-inverse Hermitian-part and half-imaginary-trace decoders recover every displayed effect-label pair exactly
+PASS: carrier-injectivity the five distinct displayed effect-label pairs produce five codewords with exactly one shared effect-label atom
+PASS: carrier-covariance Pauli-X and phase conjugations commute exactly with effect-label encoding
+PASS: decoder-covariance decoded effect co-transports and decoded label is invariant under both conjugations
+PASS: finite-additive-readout the fixed scalar label readout is zero on empty and additive on disjoint finite Record collections
+PASS: exact-effect-resolutions both rational ternary menus are positive semidefinite resolutions of the identity
+PASS: shared-effect-incidence the two rational programs share only E0 before encoding
+PASS: exact-menu-a-weights the rational menu A has exact weights (3/10,19/50,8/25)
+PASS: exact-menu-b-weights the rational menu B has exact weights (3/10,7/20,7/20)
+PASS: atomic-law-normalization both exact atomic laws have strictly positive masses summing to one
+PASS: shared-effect-atomic-descent the identical shared codeword has mass 3/10 in both supplied programs
+PASS: exact-quantile-cuts the atomic-law cuts are (0,3/10,17/25,1) and (0,3/10,13/20,1)
+PASS: quantile-pushforward every interval length equals its exact atomic mass
+PASS: writer-decoder-composition midpoint samples from every interval write a codeword decoded to the intended effect and label
+PASS: condition-varying-fixed-atom the same decoded E0/label-one atom has masses 1/4, 3/10, and 3/8 at t=0,1,2
+PASS: compiler-nonselection-control the same carrier accepts lambda zero and one while their shared-atom masses remain separated by 1/70
+PASS: construction-source-surface the source states the carrier, fixed decoders, atomic law, pushforward, and exact menu outputs
+PASS: boundary-source-surface the source preserves the type, hypothetical-update, global-negative, governance, and score limits
+PASS: machine-status-contract the source carries the complete bounded upstream-support trace contract
+PASS: canonical-nonmutation the effect-label carrier and atomic Born-law wording are absent from the canonical axiom memo
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, steelman acceptance, and global-negative rejection are visible
+per_element: five distinct rational effects, five encoded effect-label pairs, exact inverse maps, and every quantile interval are checked
+per_site: one M_2(C) output site carries one effect plus one real label with fixed content decoders and an exact finite atomic distribution; no formation event is asserted
+per_mode: identity, Pauli-X, phase conjugation, two program menus, three preparation centers, and two isotropic extractor members are separated exactly
+per_block: the M2 carrier-to-fixed-decoder-to-atomic-effect-weight-to-Gaussian-quantile factorization is checked through the local-law-selection residual
+lattice_wide: checked and not executed — translation/proper-cubic covariance follows for a co-transported supplied program, while physical program registration, occurrence, causal order, and histories remain absent
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

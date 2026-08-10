@@ -1,0 +1,236 @@
+{
+  "cache_path": "logs/runner-cache/frontier_cycle974_compatibility_independent_check_2026_08_10.txt",
+  "cache_sha256": "6b90e75e4ae3da1330e118bb304c0f876081671c53f4ca7fc4cbd38482314a10",
+  "checker_source_sha256": "636e2b0e4f9260788791d3c7e6aeb8b60cdc5d541dee1217ccd3e675ee7a4b80",
+  "checks": {
+    "R0_PINS_BLOCKLIST_AND_AST": true,
+    "R1_REFUTE_REBUILD": true,
+    "R2_REFUTE_COMPATIBILITY": true,
+    "R3_ACTIVE_CORRUPTION_PROBES": true,
+    "R4_SELECTION_BOUNDARY": true,
+    "R5_CONTROLS": true
+  },
+  "cycle": 974,
+  "data": {
+    "candidate_digests_match": true,
+    "controls": {
+      "blocked_modules_loaded": [],
+      "blocklist_execution": [
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py",
+        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt",
+        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json"
+      ],
+      "blocklist_text_ast_json_only": true,
+      "literal_inputs": [
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py",
+        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt",
+        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "pass": true,
+      "pins_match": true,
+      "primary_ast_checks": {
+        "candidate_names": true,
+        "criterion_literal_present": true,
+        "load_bearing_functions": true,
+        "no_import_of_cited_primaries": true
+      },
+      "primary_cache_receipt_checks": {
+        "all_five_survive_reported": true,
+        "receipt_cache_binding": true,
+        "receipt_source_binding": true,
+        "total_pass": true
+      },
+      "sha256": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "9eef65645087f118e31a82f2f02fd369a00348a49e6bc3c8e61dd9fbd2a3b4df",
+        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "98bb95f45ab7afe4d3b2427a8fcd8ed47cea344ac77a668acf04c6a981b7e844",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "17d056cc67fcde5f21c8b3ea23ded4d0180ae0d22b6b72893b7540639f78428a"
+      }
+    },
+    "corruptions": {
+      "all_corruptions_rejected": true,
+      "probes": {
+        "missing_configuration": {
+          "conditional_checks": 0,
+          "event_marginal_match": true,
+          "first_disagreement": {
+            "configuration": [
+              0,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "expected": ">0",
+            "observed": "0",
+            "quantity": "conditioning carrier"
+          },
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "EXCLUDED"
+        },
+        "negative_weight": {
+          "conditional_checks": 0,
+          "event_marginal_match": true,
+          "first_disagreement": null,
+          "nonnegative": false,
+          "normalizable": true,
+          "verdict": "EXCLUDED"
+        },
+        "xnor_instead_of_xor": {
+          "conditional_checks": 128,
+          "event_marginal_match": true,
+          "first_disagreement": {
+            "configuration": [
+              0,
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              0
+            ],
+            "expected": "1",
+            "observed": "0",
+            "quantity": "P(y|x,n)"
+          },
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "EXCLUDED"
+        },
+        "zero_total": {
+          "conditional_checks": 0,
+          "event_marginal_match": true,
+          "first_disagreement": null,
+          "nonnegative": true,
+          "normalizable": false,
+          "verdict": "EXCLUDED"
+        }
+      }
+    },
+    "determinism": true,
+    "disagreements": {
+      "M1_COUNTING": null,
+      "M2_PER_WORLD_UNIFORM": null,
+      "M3_OCCUPATION_WEIGHTED": null,
+      "M4_FORMATION_LIFETIME": null,
+      "M5_FORMATION_MOMENT": null
+    },
+    "event_rebuild": {
+      "event_cardinality": 92260,
+      "event_digest": "de0f650d9bbc483b18e23a5c70f92cf98f6b9972fa85b06ccaff51d7db1051d9",
+      "events_by_tag": {
+        "B0": 47872,
+        "B1": 44224,
+        "F": 164
+      },
+      "formed_worlds": 164,
+      "rows": {
+        "M1_COUNTING": {
+          "integer_numerator_total": 92260,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "6903b3d35ef861846209812ad27baa9b76069abffb6feba9fab78f57fb92eb4c",
+          "positive_weight_events": 92260,
+          "zero_weight_events": 0
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "integer_numerator_total": 802813440,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "539002346474ddd470ab1eb685e2d8b40dba9532196495eea1c1df7c62d49dac",
+          "positive_weight_events": 92260,
+          "zero_weight_events": 0
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "integer_numerator_total": 897595870080,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "d340abcfdc89aee174b6b4c0c45bfaa4297a47839abe60347bdc39522c6c65e7",
+          "positive_weight_events": 19172,
+          "zero_weight_events": 73088
+        },
+        "M4_FORMATION_LIFETIME": {
+          "integer_numerator_total": 29530480287360,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "34698cf72ea084f27f577b3a2f73b85e57395e654916e9b8f181d66688d988e4",
+          "positive_weight_events": 19172,
+          "zero_weight_events": 73088
+        },
+        "M5_FORMATION_MOMENT": {
+          "integer_numerator_total": 2192349344640,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "cb9e9299eb49aab12f2191f9a92c5eb5bbc9ca08bcce30bc4d4dc5ecaf043a34",
+          "positive_weight_events": 16076,
+          "zero_weight_events": 76184
+        }
+      },
+      "worlds": 748
+    },
+    "law_rebuild": {
+      "canonical_pair": {
+        "D0": [
+          1,
+          0
+        ],
+        "D1": [
+          0,
+          1
+        ],
+        "n0": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "n1": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": 0
+      },
+      "changed_edge_pairs": 384,
+      "dependent_word_input_rows": 12,
+      "family_words": 20,
+      "rotation_count": 24,
+      "rotation_failures": [],
+      "rotation_semantic_comparisons": 61440,
+      "state_resolved_class_count": 2,
+      "translation_failures": [],
+      "translation_semantic_comparisons": 15360,
+      "uniform_target_input_changed_pairs": 0,
+      "uniform_target_input_edge_pairs": 3840,
+      "witness_word_count": 6,
+      "word_law_class_count": 1,
+      "xor_failures": []
+    },
+    "runtime_seconds": 116.58739816700108,
+    "stdout_bytes": 1539,
+    "verdicts": {
+      "M1_COUNTING": "SURVIVES",
+      "M2_PER_WORLD_UNIFORM": "SURVIVES",
+      "M3_OCCUPATION_WEIGHTED": "SURVIVES",
+      "M4_FORMATION_LIFETIME": "SURVIVES",
+      "M5_FORMATION_MOMENT": "SURVIVES"
+    }
+  },
+  "pass": true
+}

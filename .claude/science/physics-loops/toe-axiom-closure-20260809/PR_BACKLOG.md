@@ -100,6 +100,10 @@ an independent SymPy route agrees after replacing one syntactic rational-
 expression equality with an exact symbolic-zero comparison. Eighteen corrected
 mutation probes fail at their intended families; one initially ineffective
 repeated-phrase mutation was replaced by a unique parent-source needle. Direct
-precommit conformance and the cold diff pass. Pipeline disclosure/cleanup,
-commit, push, and stacked PR creation remain pending. The canonical axiom memo
-remains untouched; no `review-loop` is used.
+precommit conformance and the cold diff pass. Changed evidence checks one
+Block 7 claim and all seven stacked claims as forensic-ready. The full pipeline
+reaches only PR #6061's current-main dependency-policy epoch stop after all
+earlier stages pass; 1,055 tracked generated changes and 819 new ledger shards
+were cleaned. Opened: PR #6075, science commit `1c87eaedf2`, on the exact #6074
+head. Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074, then
+#6075. The canonical axiom memo remains untouched; no `review-loop` is used.

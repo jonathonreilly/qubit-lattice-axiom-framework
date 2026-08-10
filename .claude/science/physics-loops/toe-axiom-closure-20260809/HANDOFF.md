@@ -281,7 +281,15 @@ changed only one of two repeated phrases and stayed green; replacing it with a
 unique source needle failed at the intended parent-binding check. Direct
 precommit conformance passes with zero strict-lint errors, zero link/class-F
 violations, valid YAML/Python, a fresh cache, and the exact 18-file stacked
-delta. Full pipeline execution remains pending at this checkpoint.
+delta. After ledger seeding, changed-evidence readiness checks one Block 7
+claim and all seven stacked claims as forensic-ready with no failures. The full
+pipeline passes through stale-audit invalidation, then reaches the known PR
+#6061 dependency-policy epoch mismatch: expected `build_citation_graph.py`
+hash `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+current `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+Cleanup restored 1,055 tracked generated changes and removed 819 generated
+ledger shards after verifying every untracked path was under the ledger
+directory.
 
 This removes Qubit/Record type enlargement from the candidate update for one
 effect plus one real label. It does not select the positive functional, effect
@@ -289,6 +297,10 @@ program, physical preparation/effect quotient, formation site/rate, trials,
 or history. No canonical axiom is edited, no percentage moves, and no
 `review-loop` is invoked.
 
-Next exact action: run and clean the full pipeline, deliver the stacked block,
-then search landed M2-native contact/action results for a selector of the
-positive functional and physical quotient.
+The 18-file science delta is committed as `1c87eaedf2` and open as stacked PR
+#6075 on the exact #6074 head. Hard landing order is #6063, #6065, #6067,
+#6070, #6071, #6074, then #6075.
+
+Next exact action: record the delivery head, then search landed M2-native
+contact/action results for a selector of the positive functional and physical
+quotient.

@@ -446,5 +446,25 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   strict audit lint has zero errors; graph/link invariants report zero link and
   class-F violations with the topology delta acknowledged; YAML and Python
   compile; the runner cache is SHA/input-fingerprint fresh; whitespace and the
-  exact 18-file stacked delta both pass. Full-pipeline disclosure/cleanup,
-  commit/push, and PR creation remain pending at this checkpoint.
+  exact 18-file stacked delta both pass.
+- After ledger seeding, changed-evidence readiness checks one Block 7 claim and
+  all seven stacked claims as forensic-ready, with no failures or control
+  failures.
+- The full pipeline passes premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. Restoration then reproduces the current-main
+  dependency-policy epoch stop: the manifest expects
+  `build_citation_graph.py` hash
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  while the current file hashes to
+  `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  PR #6061 owns that repair; this branch does not copy it.
+- Pipeline cleanup restores 1,055 generated tracked changes and removes 819
+  generated ledger shards after confirming all untracked paths lie under
+  `docs/audit/data/ledger/`. The worktree returns clean.
+- The canonical axiom memo is unchanged, no percentage moves, and no
+  `review-loop` is invoked. The final cold diff passes. Committed the 18-file
+  science delta as `1c87eaedf2`, pushed the dedicated branch, and opened PR
+  #6075 on the exact #6074 head. Hard landing order is #6063, #6065, #6067,
+  #6070, #6071, #6074, then #6075.

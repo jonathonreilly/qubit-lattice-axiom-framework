@@ -75,11 +75,13 @@ OPTIONAL_DEPENDENCY_POLICY_SOURCES = {
 # into the repository-wide policy epoch made every additive registration a
 # ~900-row hard reset, so registrations were deferred and the manifest gate
 # went stale (the 2026-08-08 epoch-debt queue item). Under the owner ruling
-# the epoch instead hashes a normalized rendering of the builder with
-# exactly that assignment's source span spliced out, located via the AST
-# (never a regex) so nested braces, comments, and string contents cannot
-# desynchronize the span. Every other byte of the builder stays governed
-# byte-exact, and the carve-out fails closed with
+# the epoch instead hashes a location-bound normalized rendering of the
+# builder: the assignment contents are omitted, but the byte length of the
+# exact prefix is encoded before the remaining bytes.  Moving the assignment
+# therefore remains governed.  The span is located via the AST (never a
+# regex) so nested braces, comments, and string contents cannot desynchronize
+# it. Every other byte of the builder stays governed byte-exact, and the
+# carve-out fails closed with
 # ``ScienceFingerprintError`` unless the name is bound exactly once in the
 # whole module — in ANY binding form, including a second assignment,
 # annotated/augmented assignment, tuple unpacking, walrus, ``del``, an
@@ -97,6 +99,9 @@ OPTIONAL_DEPENDENCY_POLICY_SOURCES = {
 # ---------------------------------------------------------------------------
 CLAIM_SCOPED_HELPER_REGISTRY_SOURCE = "docs/audit/scripts/build_citation_graph.py"
 CLAIM_SCOPED_HELPER_REGISTRY_NAME = "EXPLICIT_PACKET_HELPER_RUNNER_PATHS"
+CLAIM_SCOPED_HELPER_NORMALIZATION_DOMAIN = (
+    b"dependency-policy/helper-registry-normalization-v1\0"
+)
 
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
@@ -304,17 +309,40 @@ def _helper_registry_span(source: bytes, path: Path) -> tuple[int, int]:
             "string constants; anything else is a policy change and needs a "
             "reviewed epoch refresh"
         )
+    # ``ast.parse`` accepts all three Python newline spellings: LF, CRLF, and
+    # lone CR.  Preserve offsets into the original bytes while mirroring that
+    # universal-newline accounting exactly.  Counting LF alone can shift an
+    # AST line onto the following governed line in mixed-newline input.
     line_starts = [0]
-    for index, byte in enumerate(source):
-        if byte == 0x0A:
+    index = 0
+    while index < len(source):
+        byte = source[index]
+        if byte == 0x0D:
+            if index + 1 < len(source) and source[index + 1] == 0x0A:
+                index += 1
             line_starts.append(index + 1)
-    start = line_starts[assignment.lineno - 1] + assignment.col_offset
-    end = line_starts[assignment.end_lineno - 1] + assignment.end_col_offset
+        elif byte == 0x0A:
+            line_starts.append(index + 1)
+        index += 1
+    try:
+        start_line = line_starts[assignment.lineno - 1]
+        end_line = line_starts[assignment.end_lineno - 1]
+    except (IndexError, TypeError) as exc:
+        raise ScienceFingerprintError(
+            f"AST source positions are inconsistent with governed policy "
+            f"bytes: {path}"
+        ) from exc
+    start = start_line + assignment.col_offset
+    end = end_line + assignment.end_col_offset
+    if not (0 <= start <= end <= len(source)):
+        raise ScienceFingerprintError(
+            f"AST source span is outside governed policy bytes: {path}"
+        )
     return start, end
 
 
 def _claim_scoped_registry_normalized_sha256(path: Path) -> str:
-    """Hash the registry-bearing builder with the registry span removed."""
+    """Hash the builder without registry contents but with location bound."""
     try:
         source = path.read_bytes()
     except OSError as exc:
@@ -322,7 +350,19 @@ def _claim_scoped_registry_normalized_sha256(path: Path) -> str:
             f"required scientific provenance surface is unreadable: {path}"
         ) from exc
     start, end = _helper_registry_span(source, path)
-    return hashlib.sha256(source[:start] + source[end:]).hexdigest()
+    try:
+        location = start.to_bytes(8, "big")
+    except OverflowError as exc:
+        raise ScienceFingerprintError(
+            f"helper-registry source offset is not encodable: {path}"
+        ) from exc
+    normalized = (
+        CLAIM_SCOPED_HELPER_NORMALIZATION_DOMAIN
+        + location
+        + source[:start]
+        + source[end:]
+    )
+    return hashlib.sha256(normalized).hexdigest()
 
 
 def dependency_policy_source_sha256(repo_root: Path, path: str) -> str | None:

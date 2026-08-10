@@ -269,14 +269,15 @@ Record each new finding as one bullet:
 
 - `2026-08-08-dependency-policy-epoch-debt-helper-registry`
   Resolved by the reviewed PR #6061 landing. The dependency-policy epoch now
-  hashes `build_citation_graph.py` with only the strictly literal
-  `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` assignment span excluded. Every other
-  builder byte remains governed, and malformed, executable, duplicated, or
-  otherwise rebound registry forms fail closed. Helper source bytes and
-  declared inputs remain bound on each affected claim's own science
-  fingerprint. The controlled manifest advances to `dependency_policy_v3`;
-  generated ledger, queue, status, and restoration outputs were validation
-  residue and did not land through review-loop.
+  hashes a location-bound normalization of `build_citation_graph.py` with
+  only the contents of the strictly literal
+  `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` assignment excluded. Every other
+  builder byte and the assignment's byte position remain governed, and
+  malformed, executable, duplicated, or otherwise rebound registry forms
+  fail closed. Helper source bytes and declared inputs remain bound on each
+  affected claim's own science fingerprint. The controlled manifest advances
+  to `dependency_policy_v3`; generated ledger, queue, status, and restoration
+  outputs were validation residue and did not land through review-loop.
 
 - `2026-07-10-wilson-plane-representation-ring-route`
   Resolved on `main`: the repaired finite-volume `SU(N)` note proves

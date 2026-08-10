@@ -611,7 +611,7 @@ class ScienceFingerprintFixture(unittest.TestCase):
         self.assertTrue(science.dependency_policy_epoch(self.root))
 
     def test_normalized_rendering_matches_an_independent_splice(self) -> None:
-        """The governed hash is the source with exactly the registry removed."""
+        """The governed hash removes contents while binding their location."""
         registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
         self._write(registry_source, self._registry_builder_body())
         raw = (self.root / registry_source).read_bytes()
@@ -623,10 +623,98 @@ class ScienceFingerprintFixture(unittest.TestCase):
             b"}"
         )
         self.assertIn(assignment, raw)
+        start = raw.index(assignment)
+        normalized = (
+            b"dependency-policy/helper-registry-normalization-v1\0"
+            + start.to_bytes(8, "big")
+            + raw[:start]
+            + raw[start + len(assignment):]
+        )
         self.assertEqual(
             science.dependency_policy_source_sha256(self.root, registry_source),
-            hashlib.sha256(raw.replace(assignment, b"", 1)).hexdigest(),
+            hashlib.sha256(normalized).hexdigest(),
         )
+
+    def test_normalized_rendering_honors_all_python_newline_forms(self) -> None:
+        """AST line positions splice the right bytes for LF, CRLF, and CR."""
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        path = self.root / registry_source
+        cases = {
+            "crlf": b"\r\n",
+            "cr": b"\r",
+        }
+        for label, newline in cases.items():
+            with self.subTest(label=label):
+                assignment = (
+                    b"EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {" + newline
+                    + b'    "registered_claim": [' + newline
+                    + b'        "scripts/registered_helper.py",' + newline
+                    + b"    ]," + newline
+                    + b"}"
+                )
+                raw = b"# policy-v1" + newline + assignment + newline + b"TAIL = 1" + newline
+                path.write_bytes(raw)
+                digest = science.dependency_policy_source_sha256(
+                    self.root, registry_source
+                )
+                start = raw.index(assignment)
+                normalized = (
+                    b"dependency-policy/helper-registry-normalization-v1\0"
+                    + start.to_bytes(8, "big")
+                    + raw[:start]
+                    + raw[start + len(assignment):]
+                )
+                self.assertEqual(
+                    digest,
+                    hashlib.sha256(normalized).hexdigest(),
+                )
+                changed = raw.replace(b"TAIL = 1", b"FAIL = 1", 1)
+                path.write_bytes(changed)
+                self.assertNotEqual(
+                    science.dependency_policy_source_sha256(
+                        self.root, registry_source
+                    ),
+                    digest,
+                )
+
+        # A lone CR before an LF-delimited assignment is the mixed-newline
+        # shape that an LF-only line-start table mis-maps onto the tail.
+        assignment = b"EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {}"
+        raw = b"# policy-v1\r" + assignment + b"\nTAIL = 1\n"
+        path.write_bytes(raw)
+        digest = science.dependency_policy_source_sha256(self.root, registry_source)
+        start = raw.index(assignment)
+        normalized = (
+            b"dependency-policy/helper-registry-normalization-v1\0"
+            + start.to_bytes(8, "big")
+            + raw[:start]
+            + raw[start + len(assignment):]
+        )
+        self.assertEqual(
+            digest,
+            hashlib.sha256(normalized).hexdigest(),
+        )
+        path.write_bytes(raw.replace(b"TAIL = 1", b"FAIL = 1", 1))
+        self.assertNotEqual(
+            science.dependency_policy_source_sha256(self.root, registry_source),
+            digest,
+        )
+
+    def test_normalized_rendering_binds_registry_location(self) -> None:
+        """Relocating the registry across executable code changes the hash."""
+        registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE
+        path = self.root / registry_source
+        assignment = b"EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {'c': []}"
+        suffix = b"\nOBSERVED = EXPLICIT_PACKET_HELPER_RUNNER_PATHS['c']\n"
+
+        # Without a location field, deleting the assignment produces exactly
+        # ``suffix`` in both layouts even though only the first executes.
+        path.write_bytes(assignment + suffix)
+        before = science.dependency_policy_source_sha256(self.root, registry_source)
+        path.write_bytes(suffix + assignment)
+        after = science.dependency_policy_source_sha256(self.root, registry_source)
+
+        self.assertNotEqual(before, after)
 
     def test_refresh_tool_matches_gate_by_construction(self) -> None:
         registry_source = science.CLAIM_SCOPED_HELPER_REGISTRY_SOURCE

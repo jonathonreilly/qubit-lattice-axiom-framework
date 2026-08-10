@@ -1,4 +1,4 @@
-# The general target-input law for the bounded inter-site gate — Cycle 975
+# The general target-input law for the bounded inter-site gate
 
 Date: 2026-08-10
 
@@ -6,7 +6,9 @@ Authority: none
 
 Audit: unset; independent audit still required
 
-Status: bounded support. On the declared radius-one, word-length-at-most-one
+Status: proposed_retained
+
+Boundary: On the declared radius-one, word-length-at-most-one
 basis-state family, the target-input simplex has the exact marginal
 neighbour-dependence law `TV=|2p-1|`. The unique marginal-invisible input is
 the uniform law `p=1/2`, even though both fixed-input rows remain
@@ -15,6 +17,13 @@ continuous `M_2(C)` possibility domain and does not fulfill the complete
 Admissibility axiom.
 
 Claim type: bounded_theorem
+
+target_claim_type: bounded_theorem
+
+claim_type_reason: exact finite theorem on a declared radius-one,
+word-length-at-most-one basis-state family
+
+packet_helper_runner: scripts/frontier_cycle975_input_distribution_independent_check_2026_08_10.py
 
 Primary runner:
 
@@ -187,7 +196,8 @@ files:
 The primary replays deterministically, uses exact `Fraction` arithmetic for
 all polynomial coefficients and roots, enforces a 300-second timeout contract,
 and remains below the stricter 6 KB stdout ceiling. Its receipt pins its
-source, live inputs, provenance blobs, and cache.
+source, live inputs, and provenance blobs; the canonical runner-cache header
+independently pins the primary source and declared-input fingerprint.
 
 The independent checker imports neither primary nor core. It parses the
 primary as AST, reconstructs the 20 Boolean maps and every affine comparison,
@@ -200,15 +210,68 @@ a changed symbolic count—were all rejected.
 
 | Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
 |---|---|---|---|---:|---:|---|---|
-| `Z^3` nearest-neighbour star and basis menu | Declared bounded domain | zero-input structural | minimal axiom memo plus declared cap | yes | yes | none inside bounded theorem | explicit |
-| `X`, oriented `CNOT`, `apply_semantic` | Finite truth rows | computed lattice input | landed Cycle-719 core | yes | yes | independent Boolean reconstruction | cross-checked |
+| `Z^3` nearest-neighbour star | Spatial domain | zero-input structural | minimal axiom memo | yes | yes | none inside bounded theorem | framework supplied |
+| `{0,1}` target/neighbor basis menu | Finite possibility-domain selector | explicit normalization/boundary condition | declared theorem cap; not selected by the Qubit axiom | yes | yes | extend the law to measures on the full `M_2(C)` domain | bounded selector |
+| `X`, oriented `CNOT`, `apply_semantic` | Finite truth rows | one computed lattice input | landed Cycle-719 core | yes | yes | independent Boolean reconstruction | cross-checked |
 | Cycle-970 fixed-input witness | Historical residual and exact premise price | support-only provenance | pinned runner AST and note text | no | no | re-derived from Cycle 719 | not executed |
 | Cycle-972 XOR/covariance result | Historical residual and family choice | support-only provenance | pinned runner AST and note text | no | no | re-derived from Cycle 719 | not executed |
-| Common target law `mu_p` on compared branches | Controlled intervention family | admitted normalization | exact family declaration in this note | yes | yes | enlarge to condition-dependent joint inputs in a separate theorem | scoped explicitly |
+| Common target law `mu_p` on compared branches | Controlled intervention family | explicit normalization/boundary condition | exact family declaration in this note | yes | yes | enlarge to condition-dependent joint inputs in a separate theorem | scoped explicitly |
 | Continuous `M_2(C)` probability law | Full Admissibility target | unsupported import if extrapolated | absent | no for bounded theorem | yes for Nature-grade closure | derive a full-domain covariant measure-valued law | remains open |
 
 No observational values, fitted selectors, literature values, or registered
 primitive edits enter the proof.
+
+## No-Go Discipline Gate
+
+The singleton zero set is a negative boundary only inside the declared
+family. It is not an exhaustion result for other input interventions, longer
+gate words, larger gate kinds, or the full possibility domain.
+
+- **N1 — alternative routes:** five distinct enlargements remain live and
+  untested by the negative boundary: (1) length-two or longer words; (2) a
+  target law chosen conditionally on the compared neighbour bit; (3) a joint
+  target-neighbour input with correlations; (4) additional landed gate kinds,
+  including larger-arity words; and (5) probability measures and channels on
+  the full continuous `M_2(C)` domain. The theorem excludes rather than
+  refutes every route in this list.
+- **N2 — wall independence:** no collection of independent derivation walls
+  is claimed. Radius one, word length at most one, the `{0,1}` basis, and a
+  common branch-independent `mu_p` are declared scope coordinates, not an
+  exhaustion theorem.
+- **N3 — hidden-wall scan:** the finite basis selector and common-law
+  intervention are load-bearing and are listed separately in the import
+  table. No observation, fitted value, or primitive registration is hidden.
+- **N4 — residual matching:** the zero-set statement answers only the user
+  residual “which common target-bit input laws erase the incoming-CNOT XOR
+  after marginalization?” Cycle 970 and Cycle 972 are provenance, not
+  negative-premise imports.
+- **N5 — resolution rhetoric:** the primary cache lands the following
+  execution certificate verbatim:
+
+```text
+per_element: checked and executed -- both target basis inputs and outcomes were enumerated for every declared word
+per_site: checked and executed -- the target and all six radius-one neighbour coordinates were enumerated
+per_mode: checked and not executed -- no Fourier or mode decomposition is claimed by this finite basis theorem
+per_block: checked and executed -- every word/input/neighbour/spectator comparison block was enumerated
+lattice_wide: checked and not executed -- this runner claims one target-centred star, not a new lattice-wide computation
+```
+
+- **N6 — partial-closure routes:** the present affine law is complete on its
+  declared family. Any broader route requires a separately declared theorem
+  family; it does not require or justify a new axiom merely to be investigated.
+- **N7 — steelman:** a condition-dependent intervention with
+  `P(X=0|n_d=0)=p_0` and `P(X=0|n_d=1)=p_1` has equal output marginals when
+  `p_0=1-p_1`, a different one-parameter zero set. Likewise, an excluded
+  length-two word can send the target to `y=n_d`, making uniform averaging
+  visible. These are genuine counter-routes to any broader claim and are why
+  the common-law and word-length caps are explicit.
+- **N8 — cross-cycle echo:** Cycle 970 supplied the delta endpoint `p=1` and
+  Cycle 972 supplied the uniform midpoint `p=1/2`; this result interpolates
+  between them by exact affine algebra. It does not repeat their bounded
+  conclusions as evidence for an all-domain no-go.
+
+Disposition: PASS for the narrowly scoped negative boundary. No route outside
+the declared family is ruled out.
 
 ## Trace gate
 
@@ -226,15 +289,16 @@ next_trace_action: "independently audit the bounded theorem; do not extrapolate 
 
 ```yaml
 actual_current_surface_status: bounded-support
+author_status: proposed_retained
+target_claim_type: bounded_theorem
+claim_type_reason: "exact finite theorem on a declared radius-one, word-length-at-most-one basis-state family"
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 conditional_surface_status: "exact on the declared 20-word, radius-one, basis-state target-input simplex"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "finite basis menu and word-length cap; no full continuous M_2(C) probability law"
 audit_required_before_effective_retained: true
-bare_retained_allowed: false
+audit_status_authority: "independent audit lane only"
 ```
 
 ## Verdict
@@ -244,5 +308,5 @@ the nonuniform target-input laws and varies continuously from zero to unit
 strength as `|2p-1|`. The only coexistence point—nonzero state-resolved
 dependence with zero marginal dependence—is the uniform input. Cycle 970's
 `x=0` choice selected one maximally visible endpoint but was not necessary.
-The bounded input-distribution question is closed; the full continuous-domain
-Admissibility law remains open.
+The declared-family input-distribution calculation is complete; the full
+continuous-domain Admissibility law remains open.

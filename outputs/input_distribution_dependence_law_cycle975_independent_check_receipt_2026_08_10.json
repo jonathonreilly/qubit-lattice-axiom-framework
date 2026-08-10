@@ -1,5 +1,6 @@
 {
  "all_certificates_pass": true,
+ "artifact": "input_distribution_dependence_law_independent_refutation",
  "blocklist_execution": [
   "scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py",
   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
@@ -23,26 +24,27 @@
    "pass": true
   },
   "R4_ACTIVE_CORRUPTION_PROBES": {
-   "finding": "active_corruptions=5; false_acceptances=0; mutations={\"corrupt_count\":false,\"erase_affine_signal\":false,\"erase_boundary\":false,\"make_uniform_visible\":false,\"make_x0_necessary\":false}",
+   "finding": "active_corruptions=7; false_acceptances=0; mutations={\"corrupt_count\":false,\"duplicate_and_omit_input_cell\":false,\"erase_affine_signal\":false,\"erase_boundary\":false,\"make_uniform_visible\":false,\"make_x0_necessary\":false,\"stale_declared_input_digest\":false}",
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "source_sha_match=True; cache_sha_match=True; cache_payload_match=True; primary_certificates=4; determinism=True; runtime_s=0.077939",
+   "finding": "source_sha_match=True; canonical_cache_fresh=True; cache_payload_match=True; live_input_pins_match=True; primary_certificates=4; determinism=True; runtime_s=0.079980",
    "pass": true
   }
  },
- "checker_cache_sha256": "87772525c75fe9e047ecbb65eeca7d811fd8dcbc6f34349c74555859ecbf151e",
  "checker_payload": {
   "active_corruption_probes": {
    "false_acceptances": 0,
    "mutations": {
     "corrupt_count": false,
+    "duplicate_and_omit_input_cell": false,
     "erase_affine_signal": false,
     "erase_boundary": false,
     "make_uniform_visible": false,
-    "make_x0_necessary": false
+    "make_x0_necessary": false,
+    "stale_declared_input_digest": false
    },
-   "probe_count": 5
+   "probe_count": 7
   },
   "independent_expected": {
    "boundary_empty": false,
@@ -63,6 +65,13 @@
    ],
    "family_words": 20,
    "fixed_inputs_with_witness": 2,
+   "input_cell_definitions": [
+    "p=0",
+    "0<p<1/2",
+    "p=1/2",
+    "1/2<p<1",
+    "p=1"
+   ],
    "input_cells": 5,
    "input_family": "mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]",
    "marginal_counts_by_representative": {
@@ -103,14 +112,13 @@
     "1/2"
    ]
   },
-  "primary_cache_sha256": "9c3bafe0f585c5b75eb259d74693619a2324f130b7891e4e824bae6894ac321f",
+  "primary_cache_sha256": "a4af41c10b904ac3a20861b954074a42cf4437146f80919bfb518eda17b57714",
   "primary_payload_matches": true,
-  "primary_source_sha256": "dec10260d1b2bfab4ee8b5e91276c2c43e1236e170d266b0d8cb161a9d09fde1",
+  "primary_source_sha256": "a9aedfc057544206209e155ea168a36dc3def2d39280c9a5e921f7752e30f9d9",
   "refute_spec_count": 4
  },
- "checker_source_sha256": "a33f13d62da34862e15ee1a8afe2c56dad661a1516dbc011d6dda87411ae32be",
+ "checker_source_sha256": "239ea53e1f5616d989b0683df0fa4336b28bdde62baf3ab3afda62a548bc0408",
  "checker_type": "independent_refutation_attempt",
- "cycle": 975,
  "imports_core": false,
  "imports_primary": false,
  "primary_read_mode": "AST only; never executed",
@@ -136,6 +144,6 @@
    "target": "source/cache/receipt pins and non-executing AST boundary"
   }
  ],
- "runtime_sec": 0.07793875003699213,
- "stdout_bytes": 2620
+ "runtime_sec": 0.07997974997851998,
+ "stdout_bytes": 3396
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent, refute-specified checker for the Cycle-975 input law.
+"""Independent, refute-specified checker for the target-input law.
 
 This checker imports neither the primary nor the Cycle-719 core.  It parses
 the primary as AST, reconstructs the declared Boolean family directly, and
@@ -14,6 +14,15 @@ HOUSE_STDOUT_LIMIT_BYTES = 6_000
 PRIMARY_PATH = "scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py"
 CORE_PATH = "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
 AXIOM_PATH = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+PRIMARY_RECEIPT_PATH = "outputs/input_distribution_dependence_law_cycle975_receipt_2026_08_10.json"
+PRIMARY_CACHE_PATH = "logs/runner-cache/frontier_cycle975_input_distribution_dependence_law_2026_08_10.txt"
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "outputs/input_distribution_dependence_law_cycle975_receipt_2026_08_10.json",
+    "logs/runner-cache/frontier_cycle975_input_distribution_dependence_law_2026_08_10.txt",
+)
 BLOCKLIST_EXECUTION = (PRIMARY_PATH, CORE_PATH, AXIOM_PATH)
 REFUTE_SPEC = (
     {
@@ -50,6 +59,9 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+import runner_cache
+
 DIRECTIONS = ("+x", "-x", "+y", "-y", "+z", "-z")
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
 REPRESENTATIVES = (Fraction(0), Fraction(1, 4), Fraction(1, 2), Fraction(3, 4), Fraction(1))
@@ -173,6 +185,7 @@ def independent_reconstruction() -> dict:
         "family_words": len(declared_family()),
         "input_family": "mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]",
         "input_cells": 5,
+        "input_cell_definitions": ["p=0", "0<p<1/2", "p=1/2", "1/2<p<1", "p=1"],
         "state_dependent_rows": state_dependent_rows,
         "state_rows": state_rows,
         "state_changed_edge_pairs": state_changed_pairs,
@@ -229,12 +242,31 @@ def parse_cache_payload(cache: str) -> dict | None:
     return json.loads(matches[0]) if len(matches) == 1 else None
 
 
+def canonical_cache_stdout(cache: str) -> str | None:
+    stdout_marker = "----- stdout -----\n"
+    stderr_marker = "\n----- stderr -----"
+    if stdout_marker not in cache or stderr_marker not in cache:
+        return None
+    return cache.split(stdout_marker, 1)[1].split(stderr_marker, 1)[0]
+
+
+def input_pins_survive(controls: dict, current_pins: dict[str, str]) -> bool:
+    declared = controls.get("literal_audit_input_paths", [])
+    recorded = controls.get("sha256", {})
+    return (
+        set(declared) == set(recorded) == set(current_pins)
+        and all(recorded[path] == current_pins[path] for path in declared)
+    )
+
+
 def payload_survives(candidate: dict, expected: dict) -> bool:
     tested_keys = set(expected)
     return tested_keys.issubset(candidate) and all(candidate[key] == expected[key] for key in tested_keys)
 
 
-def active_corruption_probes(primary_payload: dict, expected: dict) -> dict:
+def active_corruption_probes(
+    primary_payload: dict, expected: dict, controls: dict, current_pins: dict[str, str]
+) -> dict:
     mutations = {}
     candidate = deepcopy(primary_payload)
     candidate["zero_set"] = []
@@ -258,6 +290,15 @@ def active_corruption_probes(primary_payload: dict, expected: dict) -> dict:
     candidate = deepcopy(primary_payload)
     candidate["symbolic_nonzero_edge_pairs"] += 1
     mutations["corrupt_count"] = payload_survives(candidate, expected)
+
+    candidate = deepcopy(primary_payload)
+    candidate["input_cell_definitions"][3] = "0<p<1/2"
+    mutations["duplicate_and_omit_input_cell"] = payload_survives(candidate, expected)
+
+    stale_controls = deepcopy(controls)
+    stale_path = next(iter(current_pins))
+    stale_controls["sha256"][stale_path] = "0" * 64
+    mutations["stale_declared_input_digest"] = input_pins_survive(stale_controls, current_pins)
     return {
         "probe_count": len(mutations),
         "false_acceptances": sum(mutations.values()),
@@ -267,9 +308,8 @@ def active_corruption_probes(primary_payload: dict, expected: dict) -> dict:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--primary-receipt", default="outputs/input_distribution_dependence_law_cycle975_receipt_2026_08_10.json")
-    parser.add_argument("--primary-cache", default="logs/runner-cache/frontier_cycle975_input_distribution_dependence_law_2026_08_10.txt")
-    parser.add_argument("--cache-path", default="logs/runner-cache/frontier_cycle975_input_distribution_independent_check_2026_08_10.txt")
+    parser.add_argument("--primary-receipt", default=PRIMARY_RECEIPT_PATH)
+    parser.add_argument("--primary-cache", default=PRIMARY_CACHE_PATH)
     parser.add_argument("--receipt-path", default="outputs/input_distribution_dependence_law_cycle975_independent_check_receipt_2026_08_10.json")
     return parser.parse_args()
 
@@ -287,15 +327,23 @@ def main() -> int:
     primary_path = safe_repo_path(PRIMARY_PATH)
     receipt_path = safe_repo_path(args.primary_receipt)
     primary_cache_path = safe_repo_path(args.primary_cache)
-    checker_cache_path = safe_repo_path(args.cache_path)
     checker_receipt_path = safe_repo_path(args.receipt_path)
     ast_report = parse_primary_ast(primary_path)
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
     primary_cache = primary_cache_path.read_text(encoding="utf-8")
-    cache_payload = parse_cache_payload(primary_cache)
+    cache_header = runner_cache.parse_cache_header(primary_cache)
+    cache_stdout = canonical_cache_stdout(primary_cache)
+    cache_payload = parse_cache_payload(cache_stdout) if cache_stdout is not None else None
     expected = independent_reconstruction()
     primary_payload = receipt.get("checker_payload", {})
-    probes = active_corruption_probes(primary_payload, expected)
+    receipt_controls = receipt.get("controls", {})
+    current_input_pins = {
+        rel: digest_bytes(safe_repo_path(rel))
+        for rel in receipt_controls.get("literal_audit_input_paths", [])
+    }
+    probes = active_corruption_probes(
+        primary_payload, expected, receipt_controls, current_input_pins
+    )
 
     r0_ok = (
         ast_report["has_required_certificates"]
@@ -309,13 +357,13 @@ def main() -> int:
     )
 
     family_keys = (
-        "family_words", "input_family", "input_cells", "state_dependent_rows",
+        "family_words", "input_family", "input_cells", "input_cell_definitions", "state_dependent_rows",
         "state_rows", "state_changed_edge_pairs", "state_edge_pairs",
     )
     r1_ok = all(primary_payload.get(key) == expected[key] for key in family_keys)
     r1_finding = (
         f"family={expected['family_words']} words; input_cells={expected['input_cells']}; "
-        f"state_resolved={expected['state_dependent_rows']}/{expected['state_rows']} rows," 
+        f"state_resolved={expected['state_dependent_rows']}/{expected['state_rows']} rows,"
         f"{expected['state_changed_edge_pairs']}/{expected['state_edge_pairs']} edge_pairs"
     )
 
@@ -336,16 +384,22 @@ def main() -> int:
         f"exact_ordered_pair={expected['exact_970_ordered_pair_inputs']}"
     )
 
-    r4_ok = probes["probe_count"] == len(REFUTE_SPEC) + 1 and probes["false_acceptances"] == 0
+    r4_ok = probes["probe_count"] >= len(REFUTE_SPEC) and probes["false_acceptances"] == 0
     r4_finding = f"active_corruptions={probes['probe_count']}; false_acceptances={probes['false_acceptances']}; mutations={compact(probes['mutations'])}"
 
     source_sha = digest_bytes(primary_path)
     cache_sha = sha256(primary_cache.encode()).hexdigest()
+    input_pins_match = input_pins_survive(receipt_controls, current_input_pins)
+    primary_cache_fresh = runner_cache.cache_identity_status(PRIMARY_PATH) == "fresh"
     receipt_certificates = receipt.get("certificates", {})
     elapsed = monotonic() - started
     r5_ok = (
         receipt.get("primary_source_sha256") == source_sha
-        and receipt.get("primary_cache_sha256") == cache_sha
+        and cache_header is not None
+        and cache_header.get("runner_path") == PRIMARY_PATH
+        and cache_header.get("runner_sha256") == source_sha
+        and primary_cache_fresh
+        and input_pins_match
         and cache_payload == primary_payload
         and receipt.get("all_certificates_pass")
         and all(receipt_certificates.get(name, {}).get("pass") for name in (
@@ -356,9 +410,10 @@ def main() -> int:
         and elapsed < AUDIT_TIMEOUT_SEC < 1400
     )
     r5_finding = (
-        f"source_sha_match={receipt.get('primary_source_sha256') == source_sha}; cache_sha_match="
-        f"{receipt.get('primary_cache_sha256') == cache_sha}; cache_payload_match={cache_payload == primary_payload}; "
-        f"primary_certificates={len(receipt_certificates)}; determinism={receipt.get('determinism_replay')}; runtime_s={elapsed:.6f}"
+        f"source_sha_match={receipt.get('primary_source_sha256') == source_sha}; canonical_cache_fresh="
+        f"{primary_cache_fresh}; cache_payload_match={cache_payload == primary_payload}; live_input_pins_match="
+        f"{input_pins_match}; primary_certificates={len(receipt_certificates)}; "
+        f"determinism={receipt.get('determinism_replay')}; runtime_s={elapsed:.6f}"
     )
 
     certificates = (
@@ -378,20 +433,25 @@ def main() -> int:
         "primary_cache_sha256": cache_sha,
         "refute_spec_count": len(REFUTE_SPEC),
     }
-    lines = ["=" * 78, "CYCLE 975 -- INDEPENDENT INPUT-LAW REFUTATION", "=" * 78]
+    lines = ["=" * 78, "INDEPENDENT INPUT-LAW REFUTATION", "=" * 78]
     lines.extend(f"{'PASS' if ok else 'FAIL'} {name} :: {finding}" for name, ok, finding in certificates)
     lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
     lines.append("VERDICT: " + ("PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT" if all_pass else "PRIMARY_REFUTED_OR_UNVERIFIED"))
+    lines.extend((
+        "per_element: checked and executed -- the independent Boolean reconstruction enumerated both target inputs and outcomes",
+        "per_site: checked and executed -- all six target-neighbour directions on the declared star were enumerated",
+        "per_mode: checked and not executed -- no Fourier or mode decomposition belongs to the reviewed claim",
+        "per_block: checked and executed -- every independent word/input/neighbour/spectator block was enumerated",
+        "lattice_wide: checked and not executed -- the checker refutes only the declared target-centred-star theorem",
+    ))
     lines.append(f"TOTAL: PASS={sum(ok for _, ok, _ in certificates)} FAIL={sum(not ok for _, ok, _ in certificates)}")
     text = "\n".join(lines) + "\n"
     if len(text.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
         sys.stderr.write("stdout budget exceeded\n")
         return 1
-    checker_cache_path.parent.mkdir(parents=True, exist_ok=True)
     checker_receipt_path.parent.mkdir(parents=True, exist_ok=True)
-    checker_cache_path.write_text(text, encoding="utf-8")
     checker_receipt = {
-        "cycle": 975,
+        "artifact": "input_distribution_dependence_law_independent_refutation",
         "checker_type": "independent_refutation_attempt",
         "imports_primary": False,
         "imports_core": False,
@@ -402,7 +462,6 @@ def main() -> int:
         "runtime_sec": elapsed,
         "stdout_bytes": len(text.encode()),
         "checker_source_sha256": digest_bytes(Path(__file__)),
-        "checker_cache_sha256": sha256(text.encode()).hexdigest(),
         "certificates": {name: {"pass": ok, "finding": finding} for name, ok, finding in certificates},
         "all_certificates_pass": all_pass,
     }

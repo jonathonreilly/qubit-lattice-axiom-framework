@@ -347,5 +347,7 @@ isolates only the inherited policy-epoch mismatch; a final-tree overlay adding
 exactly closed PR #6061's five governance files passes all 18 stages. Seeded
 changed-evidence marks Block 19 alone and all 19 stacked claims forensic-ready
 with no failures or controls. Initial science commit is `f13a8ebc4d`.
-Delivery remains to be recorded. Canonical axioms and fixed percentages are
-untouched, and no `review-loop` is used.
+Conformance is `fc3eef6f6d`. PR #6090 is mergeable and `CLEAN` on exact
+Block-18 delivery head `ab40894b9260a31a3fd986eebff00611b13539b4`.
+Hard landing order adds #6090 after #6089 and #6088. Canonical axioms and fixed
+percentages are untouched, and no `review-loop` is used.

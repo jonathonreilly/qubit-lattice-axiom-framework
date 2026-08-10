@@ -934,3 +934,7 @@ overlay of closed PR #6061's five governance files passes all 18 stages with
 Block 19 alone and all 19 stacked claims forensic-ready with no failures or
 control failures. Initial science commit is `f13a8ebc4d`; independent audit
 remains required.
+
+Delivery is PR #6090, mergeable and `CLEAN` on exact Block-18 delivery head
+`ab40894b9260a31a3fd986eebff00611b13539b4`. Conformance commit is
+`fc3eef6f6d`; hard landing order is #6088, #6089, then #6090.

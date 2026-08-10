@@ -363,8 +363,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: one supplied ten-constraint affine compact ensemble has an interval-certified nonlinear Regge background, interval-nonsingular five-normal Hessian, local branches for every sufficiently small homogeneous source projection, interval-certified finite roots for all three declared generators, and complete ten-reaction KKT closure; physical ensemble selection and Lorentzian plus inhomogeneous stability remain open
 hypothetical_axiom_status: the candidate geometry-history amendment should state the selected action and unit, boundary or ensemble, constraint functions and targets, coupling orientation, complete source compatibility, and separately typed Euclidean, Lorentzian, and inhomogeneous stability; it remains unadopted, sufficient rather than necessary or minimal, and may remain a downstream convention
 review_disposition: block19_final_head_direct_and_full_synthetic_main_conformance_pass_independent_audit_required
-pr_status: block19_packaging_on_exact_block18_delivery_head
-pr_url: null
+pr_status: block19_open_pr_6090_clean_mergeable_on_exact_block18_delivery_head
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6090
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

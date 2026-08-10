@@ -1167,3 +1167,7 @@ instance or Fourier census.
 - Seeded changed-evidence readiness marks Block 19 alone forensic-ready with
   six resolved helpers and no failures or controls. Against `origin/main`, all
   19 stacked claims are forensic-ready with no failures or controls.
+- Conformance commit is `fc3eef6f6d`. PR #6090 is mergeable and `CLEAN` on
+  exact Block-18 delivery head `ab40894b9260a31a3fd986eebff00611b13539b4`.
+  Hard landing order adds #6090 after #6089 and #6088. Independent audit
+  remains required.

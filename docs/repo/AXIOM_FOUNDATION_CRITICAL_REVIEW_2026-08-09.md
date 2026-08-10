@@ -105,6 +105,23 @@ Both branches land in the same place, the second one by force:
 > of the possibility each record locks. Consequently every readout is invariant
 > under arbitrary rearrangement of the records among the sites.**
 
+*Adversarial note (added 2026-08-09).* The second branch leans on reading
+"no site is privileged" as a constraint on readouts, which is contestable — that
+sentence is about sites, and a readout is not obviously a law in the
+Qualification's sense. The conclusion does not need it. **Additivity alone gives
+`I(C) = Σ I({r})`, so a readout has no two-record term whatsoever.** Distance,
+adjacency, angle and correlation are irreducibly two-body, so no readout can
+depend on any relation between two records, whether or not `f` depends on the
+site. Relational geometry is unreadable on either reading; only the further
+claim about *absolute* position needs the disputed step.
+
+*Second adversarial note.* This section reads "scalar readout `I` is additive"
+as constraining every readout. It can instead be read as naming one particular
+additive functional and saying nothing about others. Both horns damage the
+foundation, but differently: on the first, the observable class is crippled; on
+the second, the axiom set specifies almost nothing about observables at all. The
+text does not settle which, and §3.2 below holds only on the first reading.
+
 The consequences are severe and immediate. No readout can distinguish two
 configurations that lock the same multiset of possibilities at different places.
 So no readout can detect adjacency, distance, direction, shape, or orientation.
@@ -153,9 +170,14 @@ and no rate. The memo's own reading note confirms the separation: the law
 supplies the odds, the realized state supplies the pick, and the pick is not
 axiom content.
 
-What survives is only the distribution's **support**, since a record can lock
-only a supported possibility. The support constrains what can appear; the
-probability *values* constrain nothing that any readout can register.
+*Corrected 2026-08-09.* The original wording here overstated the mechanism. An
+additive readout over many records *is* sensitive to the empirical frequency of
+locked possibilities, so the values could in principle show up statistically.
+The actual gap is upstream of that: **nothing in the axioms connects the
+distribution's values to locking frequency at all.** Record requires only that a
+locked possibility be admissible, which the memo's reading note defines as lying
+in the distribution's *support*. Support does work; values do not, absent a
+frequency principle the axiom set does not contain.
 
 So the axiom set contains a quantitative structure that is, on its own terms,
 empirically idle. A probability no observable is sensitive to is doing no work.

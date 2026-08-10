@@ -12,22 +12,20 @@ decision**, recorded per that policy's section 1 and section 4 workflow.
 **Supersedes nothing.** `MINIMAL_AXIOMS_2026-06-29.md` remains the axiom
 surface.
 
-> **Probe result, 2026-08-09 — read before section 7.** The claims in this
-> draft have been probed computationally; results are in
-> [`repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md`](repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md).
-> Obligations 1, 2 and 3 are discharged, and the chirality and Born-form claims
-> are confirmed decisively. **Obligation 4 is not discharged and currently looks
-> negative, and round two hardened it:** order-reversal positivity is a
-> knife-edge property. It holds only on an exactly regular causal order with a
-> reflection-symmetric interface layer, and breaks at the smallest perturbation
-> tested (jitter 0.001, violation jumping to 0.41), with no neighbourhood to
-> retreat to. The Benincasa-Dowker d'Alembertian — the named escape route —
-> fails in every configuration including the regular one, and the violation does
-> not shrink with system size. Since Poisson randomness is what supplies Lorentz
-> invariance, the Hilbert-space payoff claimed for the Law axiom's positivity
-> clause in section 4 and section 7 **should be treated as unavailable, not
-> merely unproven.** The three non-substrate repairs are unaffected and
-> confirmed.
+> **Probe result and correction, 2026-08-09 — read before section 3.** The
+> claims here have been probed, then adversarially reviewed; see
+> [`repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md`](repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md)
+> and [`repo/AXIOM_RESET_ADVERSARIAL_REVIEW_2026-08-09.md`](repo/AXIOM_RESET_ADVERSARIAL_REVIEW_2026-08-09.md).
+> Obligations 1-3 are discharged and the chirality and Born-form claims hold.
+> **Two clauses in section 3 have been corrected as a result.** The Law axiom's
+> positivity clause previously asked for reflection positivity, which is a
+> Euclidean construction with no motivation on a Lorentzian substrate; it now
+> asks for a state of positive type, which the Sorkin-Johnston construction
+> delivers on sprinkled causal sets. The Actuality axiom now states effect-menu
+> eligibility explicitly, without which the Born payoff does not follow from the
+> drafted text. An earlier reading of these probes reported that the reset must
+> choose between Lorentz invariance and a Hilbert space; **that conclusion is
+> withdrawn** — it tested the mis-drafted clause.
 
 ---
 
@@ -109,7 +107,9 @@ configuration, invariant under every automorphism of the supplied order.
 The assignment is local: its dependence on an event decays with that event's
 order separation.
 
-The assignment is positive under order reversal.
+The assignment induces a state of positive type on the observable algebra: the
+two-point function is positive-semidefinite, and its antisymmetric part is the
+commutator supplied by the order.
 
 The extensional form of the assignment is not fixed by these axioms. It is the
 theory's single undetermined object.
@@ -119,7 +119,8 @@ theory's single undetermined object.
 Outcomes occur.
 
 An outcome is exactly one of the mutually exclusive alternatives admitted by the
-observable algebra of its region.
+observable algebra of its region. Every finite partition of the region's unit
+into positive observables is such a menu.
 
 These axioms fix which alternatives are available, and with what amplitude. They
 do not fix which one occurs.
@@ -243,14 +244,20 @@ numbers of left- and right-handed Weyl modes. Decay rather than strict
 truncation removes that hypothesis, which is the standard route to lattice
 chirality. **One word, and the chirality obstruction is no longer structural.**
 
-**Positivity under order reversal is the one clause that adds capability, and it
-is why it is worth its cost.** It supplies no operator and no value — it is a
-positivity condition on the assignment. What it buys is the reconstruction
-theorem: reflection positivity is what converts a Euclidean weight into a
-Hilbert space with a self-adjoint, positive Hamiltonian and a spectrum
-condition. So this single structural clause supplies, as consequences rather than
-as axioms, the Hilbert space, unitary dynamics, and positive energy that the
-current foundation lacks entirely.
+**Positivity is the one clause that adds capability, and the form of it matters.**
+It supplies no operator and no value — it is a positivity condition on the
+state the assignment induces. What it buys is a Hilbert space by the GNS
+construction, together with the commutator structure, without either being
+posited.
+
+An earlier draft asked instead for positivity under *order reversal*, on the
+analogy of Euclidean reflection positivity. That was a drafting error: reflection
+positivity exists to Wick-rotate a Euclidean measure, and a substrate defined by
+a causal order is already Lorentzian, with no Euclidean section to rotate from.
+Probing confirmed the error rather than an obstruction — the reflection-positivity
+form fails on every substrate that is not exactly regular, while the
+positive-type form is realised on sprinkled causal sets by the Sorkin-Johnston
+construction.
 
 **Naming the undetermined object is the anti-smuggling clause.** The current
 Admissibility axiom asserts there is *one fixed* rule and never says which, so
@@ -308,14 +315,14 @@ readout determined by content; scalar additivity — plus `a^{-1}`, `c_t = c_s`,
 the realized-state interface — plus a temporal ordering that no axiom supplies
 and every dynamical statement uses.
 
-**Proposed surface — 12 clauses + 1 primitive:**
+**Proposed surface — 13 clauses + 1 primitive:**
 a set of events; a partial order; finiteness of order intervals; a
 region-indexed algebra assignment; isotony; commutation at order-unrelatedness;
 generation of unions from parts; a complex amplitude assignment; its invariance;
-its decay; its positivity under order reversal; outcome occurrence — plus
-`a^{-1}`.
+its decay; its positive-type condition; outcome occurrence; effect-menu
+eligibility — plus `a^{-1}`.
 
-**19 → 13, with the unstated temporal structure now supplied rather than
+**19 → 14, with the unstated temporal structure now supplied rather than
 borrowed.** No named operator, group, dimension, coupling, or value appears in
 either column.
 
@@ -330,7 +337,7 @@ no reset.
 |---|---|
 | Born form | Region algebras have dimension ≥ 3, so Gleason applies; Busch's effect form applies regardless. The current `M_2(C)` choice sits at the one dimension where Gleason gives nothing. |
 | Hilbert space, unitarity, positive energy | Consequences of positivity under order reversal, via the reconstruction theorem. |
-| Chirality | "Local" rather than "nearest-neighbor" removes the Nielsen–Ninomiya hypothesis. |
+| Chirality | "Local" rather than "nearest-neighbor" removes the Nielsen–Ninomiya hypothesis. It removes the obstruction; it does not by itself deliver chiral fermions. |
 | Gauge observables | Region-indexed algebras admit holonomies. A gauge action stops being an import and becomes a *candidate for the amplitude assignment* — a well-posed question rather than a borrowed answer. |
 | Spatial observables | Region-indexing restores position, distance, momentum, correlation functions. |
 | Composition | Stated once, in Observables. |

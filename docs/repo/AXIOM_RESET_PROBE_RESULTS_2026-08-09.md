@@ -24,6 +24,18 @@ Round two, following up the negative:
 
 ---
 
+> **SUPERSEDED IN PART, 2026-08-09.** An adversarial pass
+> ([`AXIOM_RESET_ADVERSARIAL_REVIEW_2026-08-09.md`](AXIOM_RESET_ADVERSARIAL_REVIEW_2026-08-09.md))
+> found that the positivity clause tested below was mis-drafted: reflection
+> positivity is Euclidean and has no motivation on a Lorentzian causal set. The
+> Lorentzian condition is Wightman positivity, and the Sorkin-Johnston
+> construction realises it on the same sprinkled causal sets where the tests
+> below fail (`min eig(W) = -2.5e-15`, commutator reproduced to `3.3e-15`,
+> non-degenerate GNS rank scaling as ~N/2). **The "Lorentz invariance or a
+> Hilbert space, not both" conclusion in sections 1, 3 and 4 is WITHDRAWN.**
+> Sections 2.1 to 2.3 — model existence, the Nielsen-Ninomiya removal, and the
+> Born form — are unaffected and stand.
+
 ## 1. Verdict
 
 **Three of the four claims tested hold. The fourth fails, and it fails in the

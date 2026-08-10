@@ -12,20 +12,33 @@ decision**, recorded per that policy's section 1 and section 4 workflow.
 **Supersedes nothing.** `MINIMAL_AXIOMS_2026-06-29.md` remains the axiom
 surface.
 
-> **Probe result and correction, 2026-08-09 — read before section 3.** The
-> claims here have been probed, then adversarially reviewed; see
-> [`repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md`](repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md)
-> and [`repo/AXIOM_RESET_ADVERSARIAL_REVIEW_2026-08-09.md`](repo/AXIOM_RESET_ADVERSARIAL_REVIEW_2026-08-09.md).
-> Obligations 1-3 are discharged and the chirality and Born-form claims hold.
-> **Two clauses in section 3 have been corrected as a result.** The Law axiom's
-> positivity clause previously asked for reflection positivity, which is a
-> Euclidean construction with no motivation on a Lorentzian substrate; it now
-> asks for a state of positive type, which the Sorkin-Johnston construction
-> delivers on sprinkled causal sets. The Actuality axiom now states effect-menu
-> eligibility explicitly, without which the Born payoff does not follow from the
-> drafted text. An earlier reading of these probes reported that the reset must
-> choose between Lorentz invariance and a Hilbert space; **that conclusion is
-> withdrawn** — it tested the mis-drafted clause.
+> # WITHDRAWN, 2026-08-09
+>
+> **This axiom set is withdrawn and must not be used, cited as a candidate, or
+> repaired clause by clause.** Six independent adversarial reviewers — quantum
+> foundations, algebraic QFT, quantum gravity/causal sets, lattice
+> phenomenology, mathematical rigour, and a journal referee — returned five
+> FATAL verdicts and one Reject. Record and verification:
+> [`repo/AXIOM_RESET_PANEL_REVIEW_2026-08-09.md`](repo/AXIOM_RESET_PANEL_REVIEW_2026-08-09.md).
+>
+> At least four independently sufficient defects: (i) an abelian model satisfies
+> every clause, so nothing quantum is entailed and Bell violation is not
+> derivable; (ii) "the commutator supplied by the order" is a dangling reference
+> that imports a Peierls bracket, hence an action, a dimension and a mass —
+> refuting this draft's entire design principle of smuggling no imports;
+> (iii) ACTUALITY is inconsistent, verified on the menu {I/2, I/2}; (iv) the
+> locality clause contradicts the Lorentz invariance that motivated the
+> substrate change, by Bombelli-Henson-Sorkin. The substrate is also fixed, so
+> the draft contains no gravity, and roughly 90-95% of the content is uncited
+> prior art (BLMS 1987, Haag-Kastler 1964, Sorkin 1994, Johnston 2008,
+> Busch 1999).
+>
+> Two claims made in earlier revisions are withdrawn as errors: the chirality
+> claim was mis-attributed (Nielsen-Ninomiya already permits exponential
+> locality; the escape is Ginsparg-Wilson), and the "net reduction in supplied
+> structure" claim counted clauses rather than models.
+>
+> The material below is retained unaltered for provenance only.
 
 ---
 

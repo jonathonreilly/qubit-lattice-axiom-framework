@@ -154,6 +154,12 @@
       "class": "F",
       "status": "landed",
       "note": "Adversarial pass over the axiom-review, reset-proposal and probe work: seven claims attacked, four survive, two corrected, one refuted. The refuted one is the round-two headline - reflection positivity was a Euclidean clause mis-drafted onto a Lorentzian substrate, and Sorkin-Johnston supplies the Lorentzian positivity it should have asked for. Carries the revised axiom text and the decided next steps. No premise or interpretive weight; excluded from the citation graph; sets, predicts and requests no audit status."
+    },
+    {
+      "path": "docs/repo/AXIOM_RESET_PANEL_REVIEW_2026-08-09.md",
+      "class": "F",
+      "status": "landed",
+      "note": "Six-reviewer independent adversarial panel on the Class-D axiom reset draft: five FATAL, one Reject, unanimous. Records the objections, the author-side verification runners that confirmed five of six checkable ones (and the one that could not be reproduced), and the decision to WITHDRAW the drafted axiom set rather than repair it. No premise or interpretive weight; excluded from the citation graph; sets, predicts and requests no audit status."
     }
   ]
 }

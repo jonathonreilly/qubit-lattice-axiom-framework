@@ -434,3 +434,11 @@ mixing, or direct Ward/connection branch, then close a nonuniform background,
 continuous momentum, and Lorentzian nonlinear stability. The sharpened joint-
 action wording is unadopted; fixed TOE percentages and canonical axioms remain
 unchanged. No `review-loop` is used.
+
+Block 24 executes the retained direct hyperface-seagull route. It closes the
+first-source-order and inertia-shape tests positively, then rejects the
+homogeneous four-orientation span by large full-matrix residuals. Reachability
+remains `upstream_support`: connected covariance, site-dependent contact,
+geometry-dependent normalization, and the complete generator connection are
+untested. Candidate wording is unadopted; percentages and canonical axioms
+remain unchanged. No `review-loop` is used.

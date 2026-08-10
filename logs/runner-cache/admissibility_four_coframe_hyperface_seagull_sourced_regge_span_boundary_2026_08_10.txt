@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_2026_08_10.py
+runner_sha256: 43599b56c01fb879275e5cdc196eebf887c812f1ecea62e3d8d1fc243ed2d995
+input_fingerprint_sha256: de996272c77570a98e87fbc513537eae65e18bc5703fca83512f254dd23db4d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.27
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the coframe Hessians, Regge pullback, and source matrices are reconstructed from repository-local actions
+analytic_boundary: four-coframe hyperarea Hessians are exact rational matrices; pullback spectra and span residuals are double-precision numerical results
+physical_boundary: homogeneous orientation weights, flat symmetric coframe convention, one supplied momentum direction, and the inherited Regge carrier are bounded fixtures
+[PASS] source-and-axiom-boundary: the current axioms select neither this coframe family nor its Regge contact term
+[PASS] retained-carrier-contract: retained notes supply the four-coframe hyperarea action and same-family seagull formula
+[PASS] note-contract: the note states the correct-order positive result and the bounded four-span mismatch
+[PASS] flat-metric-six-mode-pullback: all six Block-23 physical modes lie in the exact flat ten-metric image
+       shape=(10, 6); rank=6; residual=3.981e-15
+[PASS] exact-four-hyperarea-seagulls: each flat unit-hyperface Hessian is an exact rank-nine form on ten symmetric metric entries
+       ranks=[9, 9, 9, 9]; inertias=[(5, 4, 1), (5, 4, 1), (5, 4, 1), (5, 4, 1)]
+[PASS] physical-hyperarea-pullbacks: all four hyperarea seagulls are full rank on the supplied six physical modes
+       inertias=[(5, 1, 0), (3, 3, 0), (2, 4, 0), (2, 4, 0)]
+[PASS] four-orientation-carrier-rank: the four homogeneous orientation seagulls are linearly independent as physical Hermitian forms
+       singular values=[2.102016 1.937259 1.438199 1.143544]
+[PASS] positive-weight-signature-flexibility: strictly positive hyperface weights realize every Block-23 mass inertia
+       examples={(4, 2, 0): (1, 1, 1, 8), (2, 4, 0): (1, 1, 1, 16), (3, 3, 0): (1, 1, 4, 1)}
+[PASS] three-source-four-span-no-overlap: none of the three sourced mass coefficients belongs to the entire real four-orientation seagull span
+       two-stream: Fro=0.964348, op=1.047123, weights=[-0.02144 -0.00984 -0.01461 -0.02007]; bundle-A: Fro=0.895781, op=0.793555, weights=[0.08025 0.20811 0.196   0.13806]; bundle-B: Fro=0.912270, op=0.772399, weights=[-0.05745 -0.12686 -0.11235 -0.0773 ]
+[PASS] signed-weight-and-contact-sign-control: the mismatch already allows arbitrary real weights and is unchanged by reversing the contact sign
+[PASS] direct-seagull-first-order-scaling: a source-linear hyperface action contributes its geometry seagull at the correct O(c) order without a Schur rank jump
+       maximum rescaled-order residual=1.306e-16
+[PASS] inertia-is-not-tensor-matching: matching all three inertia classes does not imply matching any of the three required matrices
+[PASS] bounded-theorem-and-no-go-scope: the note preserves connected, site-dependent, normalization, alternate-carrier, and full connection routes
+N5_CERTIFICATE: resolution=the mismatch is restricted to one flat homogeneous four-hyperface seagull span at the supplied physical direction
+N5_CERTIFICATE: positive_result=the carrier is full-rank, source-linear, and realizes all three target inertia classes
+N5_CERTIFICATE: negative_result=all three full matrices remain outside the unconstrained real four-orientation span with large margins
+N5_CERTIFICATE: live_routes=connected covariance, site-dependent coframes, additive normalization, full Ward connection, and alternate carriers remain open
+N5_CERTIFICATE: physical_boundary=no local source selection, continuous-zone result, Lorentzian dynamics, or nonlinear stability is derived
+per_element: checked all ten symmetric metric entries, four hyperface Hessians, and every entry of three six-mode target matrices
+per_mode: checked the k=0 O(source) coefficient on the six physical modes for one supplied generic momentum direction
+per_block: checked exact hyperarea forms, Regge pullback, positive signature controls, and unconstrained real-span fits
+lattice_wide: checked and not executed — homogeneous weights are not a site-dependent, nonuniform, continuous-zone, Lorentzian, or nonlinear theorem
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

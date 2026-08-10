@@ -7,17 +7,17 @@ stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
 cycle: 24
-science_block: 23
-branch: physics-loop/toe-axiom-closure-block23-joint-ward-schur-20260810
+science_block: 24
+branch: physics-loop/toe-axiom-closure-block24-hyperface-seagull-20260810
 base: origin/main@39c74017b870c27c804e3992f2a11e90336476b2
-worktree: /private/tmp/toe-block23-joint-ward.Uu1ixz
+worktree: /private/tmp/toe-block24-hyperface-seagull.WuFOQu
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
 goal: maximize honest TOE closure from the current axiom surface by stress-testing the nonlinear compact Regge background, constructing an action-native gravity repair where possible, and isolating the exact action-selection and Lorentzian-stability axiom interface without editing canonical axioms
-active_route: construct the minimal joint source-sector completion of the Block-22 six-mode Ward defect, determine its source-signature and coupling-order requirements, and isolate the viable local-action scaling branches
-hard_residual: derive a selected local joint geometry-source action realizing a source-responsive rank-jump, square-root, nonzero-flat-mixing, or direct Ward-connection branch; solve a full nonuniform stationary background; prove continuous-Brillouin and Lorentzian nonlinear closure; constituent-causal rank-one matter and the Born functional/program selector remain separately open
-target_contract_status: constructive_joint_ward_coefficient_completion_with_rank_signature_and_coupling_order_axiom_interface
+active_route: execute the retained direct same-action hyperface seagull on the Block-23 six-mode target and separate coupling-order or inertia success from full tensor matching
+hard_residual: derive the complete connected contact additive-normalization mixed source multiplier and generator-connection tensor from one selected nonuniform joint action, match the full O_k0 matrix across continuous momentum, and prove Lorentzian nonlinear closure; constituent-causal rank-one matter and the Born functional/program selector remain separately open
+target_contract_status: bounded_four_coframe_direct_contact_order_signature_and_full_tensor_span_diagnosis
 A_min:
   - Lattice
   - Qubit
@@ -200,6 +200,9 @@ files_touched:
   - docs/ADMISSIBILITY_SOURCED_REGGE_JOINT_WARD_SCHUR_COMPLETION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.py
   - logs/runner-cache/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.txt
+  - docs/ADMISSIBILITY_FOUR_COFRAME_HYPERFACE_SEAGULL_SOURCED_REGGE_SPAN_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -401,20 +404,24 @@ approach_family_coverage:
   source_direction_dependent_ward_completion: three_reconstructed_mass_coefficients_are_linearly_independent_so_fixed_source_blind_correction_is_excluded
   regular_analytic_schur_order_boundary: B_zero_at_zero_source_and_invertible_C_zero_force_quadratic_not_linear_source_order
   viable_joint_ward_scaling_taxonomy: analytic_rank_jump_square_root_flat_mixing_direct_connection_and_massive_phase_routes_preserved
+  four_coframe_hyperarea_seagulls: exact_four_rank_nine_metric_hessians_with_full_rank_independent_six_mode_regge_pullbacks
+  positive_hyperface_signature_flexibility: strictly_positive_orientation_weights_realize_all_three_source_mass_inertia_classes
+  homogeneous_hyperface_span_boundary: all_three_source_matrices_raise_the_four_orientation_design_rank_to_five_with_relative_frobenius_residual_above_point_89
+  direct_seagull_source_order: source_linear_hyperface_contact_enters_at_O_c_without_auxiliary_rank_jump
   action_native_body_source_repair: bare_residual_two_reduced_below_one_e_minus_13_with_gauge_residual_below_one_e_minus_14
   infrared_einstein_order_preservation: curvature_square_metric_correction_is_O_k4_against_the_Regge_O_k2_leading_operator
-strongest_unresolved_proof_obligation: derive one selected local joint geometry-source action realizing a source-responsive rank-jump, square-root, nonzero-flat-mixing, or direct differentiated-Ward connection at first source order; solve a nonuniform coupled background; prove continuous-zone gauge-quotient closure plus Lorentzian time-dependent nonlinear stability; independently close constituent-causal rank-one matter and the Born functional/program selector
+strongest_unresolved_proof_obligation: derive one selected nonuniform joint geometry-source action and compute its complete connected contact additive-zero mixed source multiplier and differentiated-generator tensor; match minus the full sourced O_k0 coefficient across continuous momentum; prove Lorentzian nonlinear stability; independently close constituent-causal rank-one matter and the Born functional/program selector
 trace_gate_classification: upstream_support
 reachability_to_target: supports
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: all three six-mode O_c source defects admit exact minimal per-branch Schur completions and one common fixed-signature eight-mode completion, but the coefficients are source-direction dependent and regular analytic decoupled invertible mixing begins only at O_c2; a selected local rank-jump, square-root, flat-mixing, or direct connection law remains open together with nonuniform continuous-zone and Lorentzian nonlinear closure
-hypothetical_axiom_status: a candidate joint local source-history covariance law should select one local action, action unit and additive normalization, jointly varied source variables and transformations, and the zero-source rank and amplitude regularity of every mixed/source block; it should derive the stationary or nonstationary differentiated Ward identity and cancel unselected O_k0 terms before the O_k2 pole in a massless phase, while a massive or curved phase derives its scale causal constraints and stability from the same law; this is sufficient or target-equivalent, unadopted, and not proven minimal or necessary
-review_disposition: block23_primary_runner_cache_pass_17_of_17_in_13_point_97_seconds_mutation_pass_17_of_17_graph_5469_nodes_15613_edges_outdegree_4_helpers_11_n1_n8_direct_gates_pass_exact_stack_inherited_policy_epoch_only_after_4807_rows_3685_runners_controlled_five_file_overlay_all_18_stages_checkpoint_3e3feb9fed42_changed_evidence_1_and_23_ready_independent_audit_required
-pr_status: block23_pr_6094_open_mergeable_clean_on_exact_block22_delivery_head_dc23e2f32f_at_conformance_head_66d4cc0d56
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6094
+conditional_surface_status: the retained four_coframe hyperface contact enters at O_c and positive orientation weights realize all three source inertias, but none of the three full six_mode mass matrices lies in the homogeneous real four_orientation span at the supplied direction; connected covariance site dependence additive normalization and the full generator connection remain open with nonuniform continuous_zone and Lorentzian nonlinear closure
+hypothetical_axiom_status: a candidate complete same_action contact law should select one geometry_dependent joint action its unit and additive zero, source and constraint transformations, and the full connected contact mixed source multiplier and generator_connection tensor; the physical quotient must match the complete O_k0 matrix rather than only rank or inertia before the massless O_k2 pole, while a massive phase derives its scale causal constraints and stability; sufficient or target_equivalent, unadopted, not proven minimal or necessary
+review_disposition: block24_primary_runner_cache_pass_13_of_13_in_13_point_27_seconds_mutation_pass_13_of_13_graph_5470_nodes_15617_edges_outdegree_4_direct_gates_pass_pipeline_and_changed_evidence_pending_independent_audit_required
+pr_status: block24_packaging_on_exact_block23_delivery_head_3c781e0585
+pr_url: pending
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -441,5 +448,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: derive which viable first-order joint-Ward branch the retained local action realizes—analytic source-block rank jump, square-root mixing, nonzero flat mixing, or direct connection—then solve a full nonuniform background and certify continuous-Brillouin and Lorentzian nonlinear stability
+next_exact_action: derive the complete same_action tensor D_hyperface plus D_connected plus D_additive_zero plus D_mixed_source plus D_multiplier plus D_connection on one nonuniform joint background and test full matrix cancellation across continuous momentum before Lorentzian nonlinear stability
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

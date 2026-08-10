@@ -1,6 +1,6 @@
 {
- "edge_count": 15613,
- "node_count": 5469,
+ "edge_count": 15617,
+ "node_count": 5470,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -385,6 +385,10 @@
   "admissibility_flat_regge_curvature_squared_branch_lift_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "058ff4819cf4",
    "out_degree": 8
+  },
+  "admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "825e21e7d515",
+   "out_degree": 4
   },
   "admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "bca0a967aa49",

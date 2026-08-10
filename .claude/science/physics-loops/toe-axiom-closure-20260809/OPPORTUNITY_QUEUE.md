@@ -87,3 +87,13 @@ operator at `k` proportional to `sqrt(c)`.
 The leading obligation is no longer an unspecified `R_*(ell,J)`: it is to
 derive which of the rank-jump, square-root, nonzero-flat-mixing, or direct-
 connection branches the local joint action actually realizes.
+
+## Post-Block-24 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | complete same-action Ward tensor | compute connected covariance, site-dependent contact, additive-zero Hessian, and `S_a partial R^a` on one joint nonuniform action | the minimal direct seagull has correct order/signatures but misses full matrices by order-one residuals |
+| 2 | solve one nonuniform stationary background | certified source-responsive configuration and complete second variation | homogeneous orientation totals span only four matrix directions |
+| 3 | continuous Brillouin/Lorentzian closure | exact Ward tensor across momentum plus causal nonlinear stability | current result is one-direction Euclidean `k=0` coefficient data |
+| 4 | alternate local carrier only if the complete tensor fails | new hypercells/invariants with derived coefficients | action enlargement is premature before connected/connection terms are computed |
+| 5 | constituent-causal matter source | selected rank-one history with the same joint action | physical source identity remains open |

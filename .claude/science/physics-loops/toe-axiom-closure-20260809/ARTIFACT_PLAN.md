@@ -480,3 +480,21 @@ complete conditional nonlinear compact solution:
   controlled five-file current-main overlay passes all 18 stages at checkpoint
   `3e3feb9fed42`; changed evidence is clean for `1/1` Block-23 and `23/23`
   stacked claims
+
+## Block 24 — Four-Coframe Hyperface Seagull Span
+
+- theorem note:
+  `docs/ADMISSIBILITY_FOUR_COFRAME_HYPERFACE_SEAGULL_SOURCED_REGGE_SPAN_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_2026_08_10.py` and the same-stem source/input-pinned cache
+- packet scope: exact four-coframe hyperarea Hessians, flat Regge metric
+  pullback, positive-weight inertia controls, complete unconstrained
+  four-orientation span fits against all three source matrices, direct-order
+  control, N1--N8, and refined complete-contact wording
+- exclusions: connected covariance, site-dependent coframes, additive-zero and
+  full generator-connection terms, alternate carriers, nonuniform/continuous-
+  zone/Lorentzian closure, canonical edits, percentage movement, audit
+  verdicts, and `review-loop`
+- conformance: primary cache `PASS=13 FAIL=0`; thirteen isolated mutations
+  each fail exactly one intended check; graph `5,470/15,617`, out-degree four;
+  direct gates pass; pipeline overlay, changed evidence, and delivery pending

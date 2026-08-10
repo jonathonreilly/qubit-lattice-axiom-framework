@@ -162,3 +162,13 @@ The strongest steelman is constructive: explicit per-branch six-mode and
 common eight-mode completions exist. The remaining question is not algebraic
 existence but which local source-responsive scaling branch is selected and
 causally stable.
+
+## Block 24 Homogeneous Hyperface-Seagull Span Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| none of the three supplied source matrices lies in the real span of the four homogeneous unit-hyperface seagulls at the named flat physical direction | exact rank-nine hyperarea Hessians; rank-four pulled carrier; augmented ranks five; relative Frobenius residuals above `0.89`; positive weights realize every target inertia | pass only for this flat symmetric-coframe carrier, homogeneous totals, one direction, and numerical source matrices | do not infer a contact-term, coframe, local action, source law, Regge gravity, continuous-zone, Lorentzian, nonlinear, or axiom no-go | connected covariance, site dependence, additive zero, full generator connection, mixed/singular sector, alternate carrier, massive phase |
+
+The strongest steelman is accepted: the full same-action Ward tensor is not
+the four local area Hessians alone. The bounded result narrows the next
+calculation to the omitted tensor directions.

@@ -1423,3 +1423,25 @@ instance or Fourier census.
 - Science commit is `c236890389`; campaign conformance is `66d4cc0d56`. PR
   #6094 is open, mergeable, and `CLEAN`, stacked exactly on Block-22 delivery
   head `dc23e2f32f`. Independent audit remains required.
+
+## Block 24 Construction Record
+
+- Derived four exact rank-nine flat hyperarea Hessians and pulled them through
+  the exact metric-edge map onto the six Block-23 physical modes.
+- The four pulled forms are full rank and independent; positive weights realize
+  all three source inertia classes, and source-linear contact has correct
+  `O(c)` scaling.
+- Unconstrained real least-squares fits miss the two-stream, Bundle-A, and
+  Bundle-B matrices by relative Frobenius residuals `0.964348`, `0.895781`,
+  and `0.912270`; every augmented design rank is five.
+- N1--N8 preserves connected covariance, site dependence, additive-zero,
+  generator-connection, mixed/singular, alternate-carrier, and massive routes.
+- Primary source/input-pinned cache is `PASS=13 FAIL=0` in `13.27 s`.
+- Thirteen fresh-process runner-copy mutations each exit nonzero at exactly
+  one intended named check; aggregate result is `PASS=13 FAIL=0`.
+- Citation registration is `5,470` nodes / `15,617` edges; the new node has
+  out-degree four. Vocabulary, strict lint, premise purity, model-family
+  normalization, Python/YAML, whitespace, source/input cache, canonical
+  nonmutation, and graph/link/class-F invariant gates pass.
+- Pipeline, changed evidence, commits, delivery, and independent audit remain
+  pending.

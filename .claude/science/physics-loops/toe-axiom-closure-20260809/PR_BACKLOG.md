@@ -80,6 +80,17 @@ exact #6071 head. Hard landing order is #6063, #6065, #6067, #6070, #6071,
 then #6074. The canonical axiom memo remains untouched; no `review-loop` is
 used.
 
+Block 24 is being packaged on branch
+`physics-loop/toe-axiom-closure-block24-hyperface-seagull-20260810`, stacked on
+exact Block-23 delivery head `3c781e0585`. It tests the retained direct
+hyperface contact at full matrix level: correct `O(c)` order, all target
+inertias under positive weights, but order-one no-overlap for all three source
+matrices in the unconstrained real four-orientation span. Primary cache is
+`PASS=13 FAIL=0` in `13.27 s`; thirteen isolated mutations and the direct
+gates pass; graph registration is `5,470/15,617` with out-degree four.
+Pipeline, changed evidence, and delivery remain pending. No `review-loop` is
+used.
+
 Completed Block 1 delivery checklist:
 
 - resolve or honestly demote the exact target;

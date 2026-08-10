@@ -641,3 +641,24 @@ independent_audit_required: true
 - Governance: N1--N8 restricts every exclusion to its declared coefficient and
   regularity class; no physical ghost, universal mode count, gravity no-go,
   axiom/primitive edit, audit verdict, fixed percentage, or `review-loop`.
+
+## Block 24 Four-Coframe Hyperface-Seagull Certificate
+
+- Claim type: `bounded_theorem`.
+- Exact carrier: four rank-nine hyperarea Hessians with `5-/4+/1-zero` on the
+  ten symmetric metric entries.
+- Physical pullback: four independent full-rank forms on the six Block-23
+  modes; positive weights realize all three target inertia classes.
+- Order result: a source-linear hyperface action contributes at `O(c)` without
+  an auxiliary rank jump.
+- Bounded mismatch: all three source matrices raise the carrier design rank
+  from four to five; unconstrained relative Frobenius residuals are
+  `0.964348`, `0.895781`, and `0.912270`.
+- Runner/cache: source/input pinned, `PASS=13 FAIL=0` in `13.27 s`.
+- Thirteen isolated mutations each fail exactly one intended check. The graph
+  is `5,470/15,617` with out-degree four, and direct gates pass. Pipeline,
+  changed evidence, and delivery are pending. Independent audit remains
+  required.
+- Governance: no contact-term, coframe, gravity, axiom, physical ghost, or
+  universal-carrier no-go; no canonical edit, percentage move, audit verdict,
+  or `review-loop`.

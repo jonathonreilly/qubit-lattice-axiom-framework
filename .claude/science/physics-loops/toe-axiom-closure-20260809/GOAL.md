@@ -847,3 +847,17 @@ direct Ward/seagull connection from one selected local joint action.
 After that, solve a nonuniform coupled background and certify continuous-
 momentum and Lorentzian nonlinear closure. Canonical axioms and the fixed TOE
 rubric remain unchanged.
+
+## Block 24 Goal Checkpoint
+
+The strongest direct-contact route now passes the order and signature tests
+but fails full tensor matching on its minimal retained carrier. Four exact
+hyperface seagulls enter at `O(c)`, are full rank on the physical six-space,
+and positive weights realize every target inertia. Yet none of the three
+required matrices lies in their entire real homogeneous span; best relative
+Frobenius residuals exceed `0.89`.
+
+The next exact obligation is the complete same-action tensor: connected
+covariance, site dependence, additive normalization, mixed/source/multiplier
+terms, and `S_a partial R^a` on one nonuniform coupled background. Canonical
+axioms and the fixed TOE rubric remain unchanged.

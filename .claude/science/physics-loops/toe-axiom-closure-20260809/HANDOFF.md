@@ -1113,7 +1113,24 @@ Block-23 and `23/23` stacked claims. Science commit is `c236890389`; PR
 delivery is #6094, open, mergeable, and `CLEAN` at conformance head
 `66d4cc0d56`, stacked exactly on Block-22 delivery head `dc23e2f32f`. The next
 science is to realize one viable scaling branch in a selected local joint
-action, then solve
-a nonuniform coupled background and certify continuous-zone Lorentzian
-nonlinear closure. No canonical edit, percentage move, audit verdict, or
+action, then solve a nonuniform coupled background and certify continuous-zone
+Lorentzian nonlinear closure. No canonical edit, percentage move, audit verdict, or
 `review-loop` occurs.
+
+## Block 24 Hyperface-Seagull Handoff
+
+The retained four-coframe contact enters at the required first source order
+and is far more flexible than an inertia test suggests: four exact hyperarea
+Hessians are independent/full-rank on the six physical modes, and positive
+weights realize every target signature. The complete unconstrained real span
+still misses all three required matrices by `0.896` or more in relative
+Frobenius norm. The minimal direct carrier therefore fails on tensor content,
+not order or sign.
+
+Primary cache is `PASS=13 FAIL=0` in `13.27 s`; thirteen isolated mutations
+each fail exactly one intended check. The graph is `5,470/15,617` with
+out-degree four, and direct gates pass. Pipeline, changed evidence, commits,
+and PR delivery remain pending. The next law must derive connected covariance,
+site-dependent contact, additive normalization, and the generator connection
+on one nonuniform background. No canonical edit, percentage move, audit
+verdict, or `review-loop` occurs.

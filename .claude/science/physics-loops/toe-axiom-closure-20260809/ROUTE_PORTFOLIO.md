@@ -538,3 +538,17 @@ Block 23 proves that the Block-22 defect is algebraically repairable while
 preventing the coefficient factorization from being mistaken for a regular
 decoupled weak-source theory. The exact next decision is which scaling branch
 the local joint action realizes.
+
+## Block 24 Direct-Contact Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| homogeneous four-hyperface seagull | `sum q_mu P_mu` on the six physical modes | correct `O(c)` order, full rank, and all target inertias; no full-matrix overlap for any source | retire this span as a complete repair, retain as one contact component |
+| connected same-family response | `Cov(S',S')` | not tested | highest-priority added tensor direction |
+| site-dependent coframe/contact | nonuniform `q_mu(z)` and Fourier mixing | not tested | required before carrier enlargement |
+| geometry-dependent additive zero | configuration-independent action shift with nonzero geometry Hessian | not selected or fixed | must be explicitly normalized by the physical law |
+| generator connection | `S_a partial_b R^a` | not supplied | jointly derive with the nonuniform background |
+| alternate action/carrier | additional hypercells or invariants | not tested | conditional only after the complete same-action tensor |
+
+The route fails because four homogeneous tensor directions do not match the
+required matrices, not because a direct seagull has the wrong order or inertia.

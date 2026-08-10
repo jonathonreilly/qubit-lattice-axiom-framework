@@ -490,3 +490,17 @@ interpretation, causal inner product, Lorentzian signature, selected action,
 nonuniform background, or physical auxiliary-mode ontology is imported. No
 external science, axiom edit, percentage move, audit verdict, or `review-loop`
 is imported.
+
+## Block 24 Assumptions And Imports
+
+Block 24 imports the retained four-coframe unit-hyperface family, the exact
+flat Regge metric-to-edge map, and the three reconstructed Block-23 source
+matrices. It fixes the symmetric convention `delta E=h/2`, homogeneous
+orientation totals, flat background, and the supplied generic physical
+direction. Hyperarea Hessians are exact rational matrices; pullback spectra
+and least-squares residuals are double-precision with order-one margins.
+
+No connected covariance, site-dependent coframe, geometry-dependent additive
+zero, generator connection, physical action/source selection, continuous-
+zone theorem, Lorentzian law, nonlinear stability, external science, axiom
+edit, percentage move, audit verdict, or `review-loop` is imported.

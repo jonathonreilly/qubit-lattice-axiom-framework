@@ -156,7 +156,7 @@ disposable worktree. Science commit is `85dc90b6a5`. Hard landing order is
 The canonical axiom memo is untouched, the fixed TOE percentages do not move,
 and no `review-loop` is used.
 
-Block 11 is in preparation on branch
+Block 11 is open as PR #6079 from branch
 physics-loop/toe-axiom-closure-block11-20260810, based on the exact Block 10
 delivery head `05db5edbe17a8a2c78def29bcb96d1872b57c96c`. The explicit coframe
 cut Gibbs action, tangential first variation, centered virtual-work identity,
@@ -167,7 +167,12 @@ runner is `PASS=34 FAIL=0`, an independent seven-family recomputation agrees,
 and all 34 mutation probes fail closed. Graph registration is 5,457 nodes /
 15,543 edges with note out-degree five; harness, cache, strict lint, vocabulary,
 graph/link/class-F, YAML, Python, local-link, checksum, whitespace, and exact
-18-path conformance gates pass. Science commit, isolated pipeline,
-changed-evidence replay, push, and stacked PR delivery remain.
-The canonical axiom memo is untouched, the fixed TOE percentages do not move,
-and no `review-loop` is used.
+18-path conformance gates pass. Seeded changed evidence marks the Block 11
+claim and all eleven stacked claims forensic-ready. The isolated pipeline
+passes through stale-audit invalidation and reproduces only PR #6061's known
+dependency-policy epoch mismatch; all generated outputs were removed with the
+disposable worktree. Science commit is `9c3367724d`. PR #6079 is mergeable on
+the exact #6078 head `05db5edbe17a8a2c78def29bcb96d1872b57c96c`.
+Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074, #6075,
+#6076, #6077, #6078, then #6079. The canonical axiom memo is untouched, the
+fixed TOE percentages do not move, and no `review-loop` is used.

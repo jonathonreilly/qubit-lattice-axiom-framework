@@ -642,6 +642,20 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   out-degree five and the harness supplies one more edge. Vocabulary, strict
   audit lint, graph/link/class-F invariants, YAML, Python, whitespace, six
   local links, exact 18-path delta, fresh cache, runner-output ceiling, and
-  canonical checksum pass. Commit-time changed evidence and the isolated full
-  pipeline remain. The canonical memo is byte-identical and `review-loop`
-  remains unused.
+  canonical checksum pass.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph construction, manifest writing, load-bearing
+  computation, ledger seeding/fixed point, sanitization, classifier capture,
+  effective-status computation, and stale-audit invalidation. Restoration
+  then reproduces PR #6061's unchanged dependency-policy epoch mismatch:
+  expected `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  current `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  Its 1,066 tracked changes and 823 new ledger shards were removed with the
+  disposable worktree.
+- Seeded changed-evidence readiness marks Block 11 and all eleven stacked
+  claims forensic-ready with zero failures and zero control failures.
+- The canonical memo is byte-identical, no percentage moves, and no
+  `review-loop` is invoked. Committed the 18-file science delta as
+  `9c3367724d`, pushed the dedicated branch, and opened mergeable stacked PR
+  #6079 on the exact #6078 head. Hard landing order is #6063, #6065, #6067,
+  #6070, #6071, #6074, #6075, #6076, #6077, #6078, then #6079.

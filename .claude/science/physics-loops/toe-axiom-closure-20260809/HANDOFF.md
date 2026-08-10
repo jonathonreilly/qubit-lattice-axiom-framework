@@ -468,7 +468,15 @@ cell-cutting rank studies. Harness/graph/cache integration is complete at
 5,457 nodes / 15,543 edges; the note has out-degree five and the harness adds
 the sixth edge. Vocabulary, strict audit lint, graph/link/class-F invariants,
 YAML, Python, whitespace, local links, exact 18-path delta, cache freshness,
-and the canonical-axiom checksum pass. The science commit, isolated full
-pipeline, changed-evidence replay, push, and stacked PR are the remaining
-delivery steps. The canonical memo and fixed TOE percentages remain unchanged,
-and no `review-loop` is invoked.
+and the canonical-axiom checksum pass. The isolated full pipeline passes every
+stage through stale-audit invalidation and then reproduces only PR #6061's
+known dependency-policy epoch mismatch; its 1,066 tracked generated changes
+and 823 new ledger shards were removed with the disposable worktree. Seeded
+changed evidence marks Block 11 and all eleven stacked claims forensic-ready
+with no failures or control failures.
+
+The 18-file science delta is commit `9c3367724d` and is open as mergeable
+stacked PR #6079 on the exact #6078 head. Hard landing order is #6063, #6065,
+#6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, then #6079. The
+canonical memo and fixed TOE percentages remain unchanged, and no
+`review-loop` is invoked.

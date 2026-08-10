@@ -70,9 +70,11 @@ recorded rather than hidden, and is why this artifact is `meta`, not a theorem.
 ## Results
 
 The four token classes select 1,440 of 15,205 tracked files. The complete,
-disjoint file lists, every file-to-token count, every classification reason,
-and a bounded evidence excerpt for every row are in
-`measurement.consumer_rows` and `measurement.classes` of the primary receipt.
+disjoint file lists, every file-to-token count, and every classification reason
+are in `measurement.consumer_rows` and `measurement.classes` of the primary
+receipt. Rows resolved by a local phrase match also carry a bounded evidence
+excerpt; semantic-reread overrides are identified by their pinned path and
+override reason.
 
 | Class | Files |
 |---|---:|

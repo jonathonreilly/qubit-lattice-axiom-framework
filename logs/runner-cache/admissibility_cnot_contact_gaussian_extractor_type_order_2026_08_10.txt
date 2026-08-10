@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10.py
+runner_sha256: 753cccf021ef9f6e2cf8954d90b78aca9520de40d8edbb7e39b677d5e9988ba3
+input_fingerprint_sha256: c6f1e4379aa78d99521e1f38fcd8d2621de2f18b345a7749db620f09f09a4b25
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: the current axiom, stacked Gaussian compiler, and two tracked conditional process boundaries are source-bound; PR 6069 is prior-art context only and is not executed or imported
+package_local_integrity_reads: the proposed theorem note is checked for construction, boundary, trace status, and N1-N8 surfaces; the cache envelope binds every declared input
+analytic_boundary: the Gaussian density-set measure-zero proof, general conjugation pushforward, and all-lambda formulas are proved in the source; exact rational fixtures are executed here
+negative_scope: only direct sample typing and the declared fixed-input/conditioned-CNOT selection route are bounded; randomized controls, larger instruments, and local process laws remain live
+PASS: source-current-axiom the current M2 possibility, probability-measure, and Record-content clauses are present
+PASS: source-parent-residual Block 4 leaves physical extractor selection and preparation/program registration open
+PASS: source-instrument-type-order the tracked instrument interface starts from a supplied density state and instrument
+PASS: source-process-boundary the finite process reconstruction imports preparation, instrument, Born pairing, and process category
+PASS: raw-content-type-codimension qubit density operators occupy a three-real-dimensional subset of the eight-real-dimensional M2 content space
+PASS: cnot-xor-law the conditioned target law is exactly y=x XOR n on all four basis rows
+PASS: conditioned-conjugation control zero is identity while control one swaps the two target basis projectors
+PASS: conjugation-involution two incoming-X conjugations return every exact matrix fixture
+PASS: gaussian-extractor-fixtures the displayed family gives I/2 at blank, diag(3/5,2/5), and diag(4/7,3/7)
+PASS: extractor-contact-equivariance X-transporting the center transports every tested extractor member by X conjugation
+PASS: pure-control-spectrum-preservation conditioned conjugation preserves trace and determinant on both nontrivial extractor fixtures
+PASS: common-blank-spectrum-boundary the common Gaussian blank is maximally mixed while the Pz extractor has a different determinant
+PASS: fixed-effect-lambda-zero the fixed half-Pz effect changes from 3/10 to 1/5 under incoming control, a gap of 1/10
+PASS: fixed-effect-lambda-one the lambda-one fixed-effect pair is 2/7 and 3/14 with exact gap 1/14
+PASS: fixed-effect-family-gap four exact finite lambda fixtures obey the positive 1/[2(2lambda+5)] contact gap
+PASS: transported-effect-covariance co-transporting the effect restores the original grade for every tested compiler member
+PASS: same-effect-versus-transported-effect fixed-effect descent fails on the biased fixture although transported-effect covariance holds
+PASS: random-control-mixture-lambda-zero a supplied control-one weight 2/5 prepares the raw Pz density operator from a blank target
+PASS: random-control-mixture-lambda-one a supplied control-one weight 3/7 prepares the lambda-one density operator
+PASS: mixture-carrier-not-selector distinct supplied control weights remain valid and produce distinct normalized target states
+PASS: uniform-xor-marginal uniform target mixing gives half-half output for both control conditions
+PASS: deterministic-xor-dependence a fixed target input gives maximally separated point outputs across the two controls
+PASS: xor-dependence-formula the exact marginal response gap is |1-2p| on representative rational target mixtures
+PASS: construction-source-surface the source states the type, equivariance, fixed-effect, and supplied-mixture results
+PASS: boundary-source-surface the source preserves the bounded route and governance limits
+PASS: machine-status-contract the source carries the complete bounded upstream-support trace contract
+PASS: canonical-nonmutation the CNOT/extractor bridge notation is absent from the canonical axiom memo
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, and global-negative rejection are visible
+per_element: all four XOR rows, five exact matrix fixtures, four lambda members, fixed and transported effects, and five target mixtures are checked
+per_site: one target plus one basis-control neighbour is executed at blank, Pz, and X-transported conditions; no autonomous site/program selection is asserted
+per_mode: conditioned conjugation, spectrum preservation, random-control reduction, and fixed-versus-transported effect modes are checked exactly
+per_block: the Gaussian extractor/CNOT carrier chain is checked through state typing, contact equivariance, supplied mixing, and the preparation-quotient boundary
+lattice_wide: checked and not executed — PR 6069 supplies a finite covariant direction orbit, while this theorem rederives one-edge algebra and claims no global continuous compiler
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

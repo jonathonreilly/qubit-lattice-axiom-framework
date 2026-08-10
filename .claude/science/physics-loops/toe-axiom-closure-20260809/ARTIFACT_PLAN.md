@@ -507,5 +507,6 @@ complete conditional nonlinear compact solution:
   mismatch after `4,808` ledger rows and `3,686` classified runners; the
   controlled five-file current-main overlay passes all 18 stages at checkpoint
   `6252de92588d`; changed evidence is clean for `1/1` Block-24 and `24/24`
-  stacked claims; science is `7dd905d312`; conformance and delivery remain
-  pending
+  stacked claims; science is `7dd905d312`, campaign conformance is
+  `b5f5a04c03`, and PR #6096 is open, mergeable, and `CLEAN`, stacked exactly
+  on Block-23 delivery head `3c781e0585`; independent audit remains required

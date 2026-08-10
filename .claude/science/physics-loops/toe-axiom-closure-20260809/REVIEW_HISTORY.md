@@ -1455,5 +1455,6 @@ instance or Fourier census.
   checkpoint `6252de92588d`.
 - Changed-evidence readiness marks Block 24 alone (`1/1`) and all 24 stacked
   claims (`24/24`) ready with zero failures and zero control failures.
-- Science commit is `7dd905d312`; campaign conformance and delivery remain
-  pending. Independent audit remains required.
+- Science commit is `7dd905d312`; campaign conformance is `b5f5a04c03`. PR
+  #6096 is open, mergeable, and `CLEAN`, stacked exactly on Block-23 delivery
+  head `3c781e0585`. Independent audit remains required.

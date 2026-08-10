@@ -466,5 +466,7 @@ nodes / `15,617` edges with out-degree four and twelve helper runners. Direct
 conformance passes. The exact stack reaches only the inherited stage-7 policy
 epoch mismatch; a controlled five-file current-main overlay passes all 18
 stages at checkpoint `6252de92588d`. Changed evidence is clean for `1/1`
-Block-24 and `24/24` stacked claims. Science is `7dd905d312`; conformance and
-delivery remain pending. No `review-loop` is used.
+Block-24 and `24/24` stacked claims. Science is `7dd905d312`; campaign
+conformance is `b5f5a04c03`. PR #6096 is open, mergeable, and `CLEAN`, stacked
+exactly on Block-23 delivery head `3c781e0585`. Independent audit remains
+required. No `review-loop` is used.

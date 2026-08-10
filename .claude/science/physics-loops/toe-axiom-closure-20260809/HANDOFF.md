@@ -1148,5 +1148,7 @@ nonlinear closure. No canonical edit, percentage move, audit verdict, or
   five-file current-main overlay passes all 18 stages at checkpoint
   `6252de92588d`. Changed-evidence readiness is clean for Block 24 alone
   (`1/1`) and all 24 stacked claims (`24/24`). Science commit is `7dd905d312`;
-  conformance and delivery remain pending. No canonical edit, percentage move,
-  audit verdict, or `review-loop` occurs.
+  campaign conformance is `b5f5a04c03`. PR #6096 is open, mergeable, and
+  `CLEAN`, stacked exactly on Block-23 delivery head `3c781e0585`. Independent
+  audit remains required. No canonical edit, percentage move, audit verdict,
+  or `review-loop` occurs.

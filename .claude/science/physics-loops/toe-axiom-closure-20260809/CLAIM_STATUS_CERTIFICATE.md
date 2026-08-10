@@ -660,8 +660,10 @@ independent_audit_required: true
   stack reproduces only the inherited stage-7 policy-epoch mismatch after
   `4,808` rows / `3,686` runners; the controlled five-file overlay passes all
   18 stages at checkpoint `bbe9aca7cae0`. Changed evidence is clean for
-  `1/1` Block-24 and `24/24` stacked claims. Delivery is pending; independent
-  audit remains required.
+  `1/1` Block-24 and `24/24` stacked claims. Science commit is `ec49ca1720`,
+  campaign conformance is `4488ccec8c`, and PR #6095 is open, mergeable, and
+  `CLEAN` on exact Block-23 delivery head `3c781e0585`. Independent audit
+  remains required.
 - Governance: no contact-term, coframe, gravity, axiom, physical ghost, or
   universal-carrier no-go; no canonical edit, percentage move, audit verdict,
   or `review-loop`.

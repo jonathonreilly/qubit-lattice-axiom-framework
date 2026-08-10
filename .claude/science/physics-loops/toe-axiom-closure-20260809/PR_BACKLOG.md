@@ -92,7 +92,10 @@ The exact stack reproduces only the inherited stage-7 policy-epoch stop after
 `4,808` rows / `3,686` runners; the controlled five-file overlay passes all 18
 stages at checkpoint `bbe9aca7cae0`. Changed evidence is clean for `1/1`
 Block-24 and `24/24` stacked claims. Science commit is `ec49ca1720`;
-conformance commit and delivery remain pending. No `review-loop` is used.
+campaign conformance is `4488ccec8c`. PR #6095 is open, mergeable, and
+`CLEAN`, stacked exactly on Block-23 delivery head `3c781e0585`. Hard landing
+order extends through #6088, #6089, #6090, #6091, #6092, #6093, #6094, then
+#6095. No `review-loop` is used.
 
 Completed Block 1 delivery checklist:
 

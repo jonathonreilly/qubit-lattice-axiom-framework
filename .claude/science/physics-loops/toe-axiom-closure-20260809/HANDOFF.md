@@ -1133,8 +1133,9 @@ out-degree four, and direct gates pass. The exact stack reaches only the
 inherited stage-7 policy-epoch stop after `4,808` rows / `3,686` runners; the
 controlled five-file overlay passes all 18 stages at checkpoint
 `bbe9aca7cae0`. Changed evidence is clean for `1/1` Block-24 and `24/24`
-stacked claims. Science commit is `ec49ca1720`; conformance commit and PR
-delivery remain pending. The next law must derive connected covariance,
+stacked claims. Science commit is `ec49ca1720`; campaign conformance is
+`4488ccec8c`. PR #6095 is open, mergeable, and `CLEAN`, stacked exactly on
+Block-23 delivery head `3c781e0585`. The next law must derive connected covariance,
 site-dependent contact, additive normalization, and the generator connection
 on one nonuniform background. No canonical edit, percentage move, audit
 verdict, or `review-loop` occurs.

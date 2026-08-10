@@ -938,3 +938,41 @@ remains required.
 Delivery is PR #6090, mergeable and `CLEAN` on exact Block-18 delivery head
 `ab40894b9260a31a3fd986eebff00611b13539b4`. Conformance commit is
 `fc3eef6f6d`; hard landing order is #6088, #6089, then #6090.
+
+## Block 20 Handoff
+
+Block 20 is based on exact Block-19 delivery head `cc027507f9`. It contains a
+source-bound nonflat Bloch Hessian and a separate flat
+Regge-plus-curvature-square action with `alpha=1/1024`.
+
+Key results:
+
+- double-precision full nonflat soft-mode crossing
+  `x=1.169447062377...`;
+- double-precision pointwise five-normal soft-mode crossing
+  `x=2.425040995164...`;
+- flat `k=0` inertia changes from `4-/0+/11-zero` to
+  `4-/1+/10-zero`;
+- all `25,308` nonzero `L=3,...,10` modes have
+  `9-/2+/4-zero` and worst gauge residual below `5e-14`;
+- all `7,183` declared stress points pass with extra-branch form above `527`;
+- the body source's bare residual `2` becomes `9.69e-14` without projection;
+- the curvature-square metric contribution is `O(k^4)` and the primary
+  runner is `PASS=16 FAIL=0`.
+
+The broad gravity no-go is rejected. The exact remaining route is to derive
+the geometry action/coefficient/background and constraint localization, prove
+an interval root certificate and the continuous gauge-quotient spectrum, and
+construct Lorentzian nonlinear
+sourced evolution. The source note carries N1--N8 and candidate geometry-law
+wording. No canonical edit, fixed-percentage move, or `review-loop` occurs.
+
+Direct conformance passes: the source/input-pinned cache is fresh at
+`PASS=16 FAIL=0`; all 14 fresh-process source-copy mutations fail closed at
+one intended named check each, and an independent 18-case object-level suite
+fails closed across premise, operator, coefficient, inventory, infrared, and
+canonical-nonmutation families;
+vocabulary, strict lint, premise purity, model-family normalization, Python,
+YAML, whitespace, and canonical-nonmutation checks pass. Citation registration
+is `5,466` nodes / `15,593` edges with new-node out-degree eight. Commit,
+push, stacked PR, and independent audit remain pending.

@@ -263,6 +263,24 @@ mergeable and `CLEAN` on the exact #6082 delivery head
 #6080, #6081, #6082, then #6083. The canonical axiom memo and fixed
 percentages are untouched, and no `review-loop` is used.
 
+## Block 20
+
+Branch `physics-loop/toe-axiom-closure-block20-regge-r2-lift-20260810` is
+stacked on exact Block-19 PR #6090 delivery head `cc027507f9`. The science
+packet contains one bounded theorem note, one primary runner, one cache, and
+the campaign trace updates. Initial runner status is `PASS=16 FAIL=0`.
+
+The packet numerically brackets two finite-spatial-momentum soft-mode
+crossings on the Block-19 nonflat background and then supplies a separate flat local
+Regge-plus-curvature-square repair. All 25,308 nonzero finite-torus modes and
+7,183 stress samples retain exactly four gauge zeros; the prior body source
+solves unprojected. N1--N8 rejects every broad gravity no-go. Direct
+conformance passes with a fresh `PASS=16 FAIL=0` cache, 14/14 isolated
+source-copy mutations, an independent 18/18 object-level mutation suite, and
+a `5,466`-node / `15,593`-edge citation graph whose new node has out-degree
+eight. Commit, push, and stacked PR remain to be recorded. Canonical axioms
+and fixed percentages are untouched, and no `review-loop` is used.
+
 Block 16 is being packaged on branch
 `physics-loop/toe-axiom-closure-block16-network-20260810`, based on exact
 Block-15 delivery head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`.

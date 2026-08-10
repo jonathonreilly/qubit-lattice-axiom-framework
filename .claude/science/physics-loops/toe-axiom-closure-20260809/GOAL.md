@@ -654,3 +654,102 @@ stability, projective history, and realized member remain unselected. The
 certified Euclidean stationary point has mixed inertia and is not claimed to
 be a physical instability. Candidate wording is sharpened, not adopted;
 canonical axioms and fixed TOE percentages remain unchanged.
+
+## Block 20 Exact Target Contract
+
+Block 20 attacks the stability/action seam left explicitly open by Block 19.
+It does not try to infer a Lorentzian law from Euclidean data.  It asks two
+finite, falsifiable questions on the repository's actual four-dimensional
+Kuhn/Coxeter Regge carrier.
+
+```text
+Target statement:
+  (A) Construct the complete translation-invariant Hessian of the actual
+      Regge action at the Block-19 nonflat homogeneous background and test
+      both the globally constrained and pointwise-affine interpretations for
+      finite-momentum soft modes.
+  (B) On the flat carrier, replace Block 14's inserted rank-one projector by
+      the local geometry action
+          S_alpha = sum_h A_h (epsilon_h + alpha epsilon_h^2),
+      with a declared positive rational probe coefficient, and determine
+      whether its exact flat Hessian lifts the fifth nonmetric branch while
+      preserving the four gauge modes and the leading Einstein infrared
+      order.  Execute the previously rejected body-edge source without source
+      projection and inventory complete finite-torus modes.
+
+Quantifiers/domain:
+  All fifteen edge classes, all fifty hinge classes and 240 dihedral
+  incidences per translation cell; the exact Block-19 uniform background;
+  Bloch momenta on the named one-parameter soft-mode cuts; every nonzero mode
+  on L=3,...,10 periodic four-tori; and the declared random/corner/
+  high-symmetry Brillouin stress set.  The continuous Brillouin zone is not
+  quantified unless an interval or analytic covering certificate is added.
+
+Allowed premises:
+  The current Lattice/Qubit/Admissibility/Record axioms and three registered
+  primitives; the landed Regge carrier and flat Hessian; Blocks 14 and 19;
+  elementary differential geometry, Schlaefli cancellation, Hermitian linear
+  algebra, and independently enumerated finite periodic actions.
+
+Forbidden weakenings:
+  No inserted projector may count as the action-native repair.  No
+  metric-sector projection may count as an unprojected source solve.  A
+  homogeneous-only calculation does not close (A).  Repeating the already
+  landed fact that deficit-squared curvature is O(k^4) does not close (B).
+
+Required edge/degenerate cases:
+  k=0 constant-metric zero modes; generic nonzero momentum; gauge kernels;
+  the Block-19 k=0 normal Hessian; actual periodic-action second differences;
+  alpha=0 as the unrepaired control; and the small-k metric sector.
+
+Completion witness:
+  Source-bound runner output that reconstructs both Hessians from hinge data,
+  independently matches periodic actions, gives the soft-mode brackets,
+  proves the k=0 branch lift algebraically/numerically, solves the unprojected
+  body source, exhausts the finite-torus inventory, and prints all five N5
+  resolution lines with FAIL=0.  A note must separate exact, exhaustive,
+  sampled, and supplied-coefficient statements.
+
+Outcomes that do not count as closure:
+  Choosing alpha from observation or fitting; claiming the coefficient is
+  selected; calling a Euclidean Hessian crossing a Lorentzian instability;
+  claiming continuous-Brillouin or nonlinear stability from a finite scan;
+  deriving a realized geometry/history law; moving a fixed TOE percentage;
+  or editing the canonical axioms.
+```
+
+The terminal physical obligation is stronger than this bounded target:
+derive or select the complete nonlinear geometry/history law, including the
+higher-curvature coefficient or an alternative lift, then prove Lorentzian,
+time-dependent, and continuous inhomogeneous stability of its sourced
+solution family.  Block 20 can close an action-native linear compatibility
+mechanism and diagnose the nonflat finite-momentum surface; it cannot by
+itself close that physical-law obligation.
+
+## Block 20 Result
+
+Both target subblocks close at bounded grade. The complete nonflat Hessian
+reduces to Block 19 at `k=0`, agrees with an independent periodic action at
+relative error `2.31e-6`, and numerically brackets the two declared spatial
+soft-mode crossings under the global-only and pointwise-affine
+interpretations.
+
+On the separate flat branch, the exact second variation of the local
+deficit-square term is positive on the fifth nonmetric mode and zero on the
+gauge/constant-metric directions. At `alpha=1/1024`, every one of `25,308`
+nonzero torus modes has inertia `9-/2+/4-zero`; all `7,183` stress samples
+agree, the body-source residual falls from exactly `2` to `9.69e-14`, and the
+metric correction scales as `O(k^4)` beside the retained `O(k^2)` Einstein
+term. The primary runner is `PASS=16 FAIL=0`.
+
+Direct conformance passes. Fourteen fresh-process source-copy mutations each
+fail exactly one intended named check; an independent 18-case object-level
+suite also fails closed across premise, operator, bracket, coefficient,
+inventory, infrared, and canonical-nonmutation families. The fresh cache binds
+the runner and all declared inputs, and the citation graph registers `5,466`
+nodes / `15,593` edges with new-node out-degree eight.
+
+This identifies why the Block-19 background is not yet a physical vacuum and
+supplies one action-native repair mechanism without claiming action or
+coefficient selection. Canonical axioms and fixed percentages remain
+unchanged.

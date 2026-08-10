@@ -459,3 +459,35 @@ bare_retained_allowed: false
   ships.
 - Canonical axioms and fixed percentages remain unchanged, no `review-loop` is
   invoked, and independent audit remains required.
+
+## Block 20 Claim Status
+
+```yaml
+claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+negative_scope: two_named_constraint_extensions_of_one_named_nonflat_background_only
+positive_scope: flat_regge_plus_alpha_one_over_1024_curvature_square_on_declared_mode_inventories
+continuous_brillouin_theorem: false
+lorentzian_stability: false
+canonical_axiom_edit: false
+fixed_percentage_move: false
+review_loop_used: false
+independent_audit_required: true
+```
+
+- The double-precision full nonflat operator numerically brackets a spatial
+  soft-mode crossing at `x=1.169447062377...`; the pointwise five-normal
+  operator numerically brackets a distinct one at `x=2.425040995164...`.
+  These are not interval root certificates and do not authorize a gravity
+  no-go.
+- The flat local curvature-square repair leaves `10` metric zeros at `k=0`,
+  exactly `4` gauge zeros at each declared nonzero mode, lifts the fifth
+  branch, and repairs the body source.
+- All `25,308` nonzero modes on `L=3,...,10` pass. The additional `7,183`
+  samples are explicitly nonexhaustive.
+- N1--N8 lands in the source note and the primary cached stdout lands all five
+  substantive N5 resolution lines.
+- The action, dyadic coefficient, background, continuous spectrum, Lorentzian
+  law, nonlinear sourced solution, and realized history remain unselected.

@@ -380,3 +380,20 @@ complete conditional nonlinear compact solution:
 7. update the unadopted candidate wording to require explicit ensemble,
    target, coupling, and stability typing without editing canonical axioms or
    moving fixed TOE percentages.
+
+## Block 20 Artifact Plan
+
+1. Land one bounded theorem note with the complete N1--N8 packet in the note,
+   not only in campaign state or a PR body.
+2. Land one primary runner and source/input-bound cache that reconstruct the
+   nonflat and flat Hessians from all 50 hinges and 240 incidences.
+3. Require two independent periodic-action second differences, both spatial
+   soft-mode brackets, the exact flat curvature-square identity, and the five
+   N5 execution lines.
+4. Exhaust every nonzero mode on `L=3,...,10`, stress the continuous zone only
+   as a declared finite sample, and forbid promotion of that sample to an
+   all-momentum theorem.
+5. Execute the prior body-edge fifth-branch rejector without source projection
+   and require the local action, rather than a rank-one projector, to repair it.
+6. Record candidate geometry-law wording as unadopted and target-equivalent;
+   edit no axiom or primitive and move no fixed percentage.

@@ -1171,3 +1171,39 @@ instance or Fourier census.
   exact Block-18 delivery head `ab40894b9260a31a3fd986eebff00611b13539b4`.
   Hard landing order adds #6090 after #6089 and #6088. Independent audit
   remains required.
+
+## Block 20 science record
+
+- Based on exact Block-19 delivery head `cc027507f9`.
+- Reconstructed the actual nonflat real-space Hessian from every hinge and
+  simplex incidence; its `k=0` five-normal block agrees with Block 19 below
+  `1.5e-12`, and an independent periodic action agrees at relative
+  `2.31e-6`.
+- Located robust spatial determinant brackets at `x=1.169447062377...` for
+  the full operator and `x=2.425040995164...` for the pointwise-normal
+  operator.
+- Derived the exact flat second variation
+  `2 alpha sum_h A_h d_h^dag d_h` of the local deficit-square action.
+- At `alpha=1/1024`, the fifth branch is lifted while ten `k=0` metric zeros
+  and four nonzero-momentum gauge zeros remain. All `25,308` finite-torus
+  modes and `7,183` stress samples pass.
+- The prior body-edge residual falls from exactly `2` to `9.69e-14`; two
+  independent periodic-action reconstructions and the `O(k^4)` infrared
+  scaling pass. Primary runner is `PASS=16 FAIL=0`.
+- N1--N8 lands in the source note and explicitly rejects a broad gravity
+  no-go. Candidate geometry-law wording is unadopted.
+- The source/input-bound cache is fresh at `PASS=16 FAIL=0` with all five
+  substantive N5 execution lines. Fourteen fresh-process source-copy mutations
+  report `PASS=14 FAIL=0`; each fails exactly one intended named check across
+  source and prior-art binding, theorem/no-go scope, kernel and parent
+  reconstruction, action normalization, both brackets, the exact coefficient,
+  source repair, exhaustive inventory, stress sampling, and infrared order.
+- A separate 18-case process-local object suite also fails closed across
+  current-axiom, parent, carrier, prior-art, theorem/no-go, real-space kernel,
+  background, periodic-action, bracket, `k=0` coefficient, body-source,
+  complete finite-torus, Brillouin, infrared-contamination, and canonical-
+  nonmutation families.
+- Citation registration is `5,466` nodes / `15,593` edges; the new node has
+  out-degree eight. Vocabulary, strict lint, premise purity, model-family
+  normalization, Python, YAML, whitespace, cache, and canonical-nonmutation
+  checks pass. Commit and PR remain pending.

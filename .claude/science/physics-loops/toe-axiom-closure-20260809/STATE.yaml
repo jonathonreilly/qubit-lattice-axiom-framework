@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 20
-science_block: 19
-branch: physics-loop/toe-axiom-closure-block19-full-nonlinear-20260810
+cycle: 21
+science_block: 20
+branch: physics-loop/toe-axiom-closure-block20-regge-r2-lift-20260810
 base: origin/main@39c74017b870c27c804e3992f2a11e90336476b2
-worktree: /private/tmp/toe-block19-full-nonlinear.wkpF0i/worktree
+worktree: /private/tmp/toe-block20-regge-r2.kGVNPF/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface by closing the complete nonlinear compact Regge source equation where possible and isolating the exact ensemble-selection and physical-stability axiom interface without editing canonical axioms
-active_route: interval-certified affine metric-tangent nonlinear Regge KKT background, exact five-normal symmetry decomposition, interval-certified finite source continuation, complete fifteen-edge multiplier reconstruction, and Lorentzian plus inhomogeneous stability queue
-hard_residual: physically derive or select the geometry/history action, affine or nonlinear ensemble and targets, action unit and orientation, source law, universal coupling, Lorentzian update and full inhomogeneous stability spectrum, projective completion, and realized member; constituent-causal rank-one matter and the Born functional/program selector remain separately open
-target_contract_status: complete_conditional_nonlinear_compact_source_family_kkt_existence_with_selection_and_stability_boundary
+goal: maximize honest TOE closure from the current axiom surface by stress-testing the nonlinear compact Regge background, constructing an action-native gravity repair where possible, and isolating the exact action-selection and Lorentzian-stability axiom interface without editing canonical axioms
+active_route: complete nonlinear Bloch-Hessian reconstruction on the Block-19 background, double-precision spatial soft-mode bracketing under two named constraint extensions, and a local deficit-squared flat Regge branch lift with exhaustive finite-mode source and infrared tests
+hard_residual: derive or select the geometry/history action and dimensionless coefficient, law-admissible background or boundary sector, constraint localization, source law, universal coupling, continuous-Brillouin-zone quotient, Lorentzian nonlinear update and inhomogeneous stability, projective completion, and realized member; constituent-causal rank-one matter and the Born functional/program selector remain separately open
+target_contract_status: bounded_nonflat_stability_diagnosis_and_action_native_flat_branch_repair_with_selection_and_lorentzian_boundary
 A_min:
   - Lattice
   - Qubit
@@ -88,6 +88,9 @@ block_local_allowed_premises:
   - finite-dimensional KKT systems, orthogonal null projectors, exact source-family reaction ranks, and variational homogeneous constraint reactions
   - exact radical arithmetic for the ten constant-metric zero modes and one independent nonmetric Regge branch
   - exact truncated Taylor jets over Q(sqrt(2),sqrt(3)), coordinate-permutation orbit reduction, simplex Gram minors, and high-precision action reconstruction
+  - Schlaefli-reduced real-space Regge Hessians, Bloch transforms, exact constant-metric tangent maps, and independent finite-periodic action differences
+  - the explicitly supplied local deficit-squared Regge action with dyadic coefficient one over 1024 as a conditional response probe
+  - exhaustive singular-space, inertia, source-solve, and gauge checks on all nonzero L=3 through L=10 Fourier inventories
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -127,6 +130,8 @@ forbidden_imports:
   - treating a pure homothety or constant-metric scale-plus-shape reaction as complete when the full null projection or extra branch remains uncovered
   - treating one nonzero directional cubic coefficient as complete nonlinear source compatibility or stability
   - extrapolating the homogeneous cubic null-sector source-image boundary to higher order, finite amplitude, curved, inhomogeneous, open, reaction, or alternate-carrier equations
+  - promoting either named Block-19 finite-momentum soft mode to a no-go for Regge gravity, alternate backgrounds, nonlinear constraints, higher-curvature actions, open boundaries, or Lorentzian evolution
+  - physically selecting the deficit-squared action, its coefficient, flat background, constraint localization, or Euclidean stability criterion from the current axioms
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -184,6 +189,9 @@ files_touched:
   - docs/ADMISSIBILITY_NONLINEAR_REGGE_EXTRA_BRANCH_CUBIC_LIFT_SOURCE_COMPATIBILITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py
   - logs/runner-cache/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.txt
+  - docs/ADMISSIBILITY_FLAT_REGGE_CURVATURE_SQUARED_BRANCH_LIFT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.py
+  - logs/runner-cache/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -240,6 +248,9 @@ open_imports:
   - current axioms do not choose between three source-aligned mixed reactions, four metric/extra sector-separated reactions, eleven full-null reactions, or a changed boundary/background/curved/lifted equation
   - the actual nonlinear Regge action lifts the independent extra quadratic branch at cubic order, but its complete cubic metric-gradient image is only one shear covector and does not contain the three declared compact source metric covectors
   - quartic and higher mixed null/range terms, finite-amplitude homogeneous branches, curved or inhomogeneous equations, and boundary/reaction completions remain unclassified
+  - the Block-19 nonflat background has a double-precision-bracketed spatial soft mode under the global-only affine interpretation and a distinct double-precision-bracketed spatial soft mode under pointwise affine-normal localization, so neither named extension yet supplies certified uniform Euclidean invertibility; interval root validation remains open
+  - a local deficit-squared action with supplied coefficient one over 1024 repairs the flat fifth branch on all declared inventories and preserves the leading infrared Einstein order, but current axioms derive neither the action nor its coefficient
+  - continuous-zone gauge-quotient closure, a selected nonflat background, nonlinear constraint curvature, Lorentzian evolution, nonlinear sourced stability, coupling, and realized history remain open
   - open-boundary 1 over r shape does not by itself provide projective consistency, nonlinear gravity, or one realized history
 no_go_routes:
   - raw_singleton_measure_identification
@@ -260,6 +271,7 @@ no_go_routes:
   - nonnegative_actual_edge_compact_dilation_boundary_as_universal_source_or_gravity_obstruction
   - positive_network_topology_or_reweighting_as_solution_of_unmodified_flat_compact_regge_zero_mode
   - complete_leading_cubic_null_sector_polynomial_as_full_nonlinear_declared_source_solution
+  - two_named_nonflat_affine_constraint_extensions_as_universal_regge_or_gravity_obstruction
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -353,18 +365,24 @@ approach_family_coverage:
   declared_source_continuations: all_three_generators_close_below_one_e_minus_thirty_eight_at_epsilon_one_over_one_hundred
   finite_source_interval_certificates: three_radius_one_e_minus_nine_five_dimensional_krawczyk_boxes_contract_below_two_point_seven_three_e_minus_three
   ten_reaction_nonlinear_kkt: complete_fifteen_edge_equations_with_unique_metric_multipliers_and_native_extra_equation
-strongest_unresolved_proof_obligation: derive or select one physical geometry/history action and ensemble with explicit targets, unit, source law and coupling, then prove Lorentzian time-dependent and inhomogeneous stability of its sourced solution family and connect it to projective and realized history; independently close constituent-causal rank-one matter and the Born functional/program selector
+  nonflat_global_spatial_soft_mode: double_precision_bracketed_crossing_x_1_point_169447062377_with_inertia_change_on_the_block19_background_not_interval_certified
+  nonflat_pointwise_affine_soft_mode: double_precision_bracketed_crossing_x_2_point_425040995164_with_inertia_change_on_the_block19_background_not_interval_certified
+  flat_curvature_squared_branch_lift: supplied_alpha_one_over_1024_lifts_the_fifth_branch_and_leaves_exactly_ten_constant_metric_zeros_at_k0
+  repaired_finite_torus_inventory: exact_25308_nonzero_modes_L3_through_L10_with_zero_failures_and_inertia_nine_negative_two_positive_four_gauge_zero
+  action_native_body_source_repair: bare_residual_two_reduced_below_one_e_minus_13_with_gauge_residual_below_one_e_minus_14
+  infrared_einstein_order_preservation: curvature_square_metric_correction_is_O_k4_against_the_Regge_O_k2_leading_operator
+strongest_unresolved_proof_obligation: derive or select one physical geometry/history action and dimensionless coefficient together with a law-admissible background or boundary sector and constraint localization, then prove continuous-zone gauge-quotient closure plus Lorentzian time-dependent nonlinear sourced stability and connect it to projective and realized history; independently close constituent-causal rank-one matter and the Born functional/program selector
 trace_gate_classification: upstream_support
 reachability_to_target: supports
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: one supplied ten-constraint affine compact ensemble has an interval-certified nonlinear Regge background, interval-nonsingular five-normal Hessian, local branches for every sufficiently small homogeneous source projection, interval-certified finite roots for all three declared generators, and complete ten-reaction KKT closure; physical ensemble selection and Lorentzian plus inhomogeneous stability remain open
-hypothetical_axiom_status: the candidate geometry-history amendment should state the selected action and unit, boundary or ensemble, constraint functions and targets, coupling orientation, complete source compatibility, and separately typed Euclidean, Lorentzian, and inhomogeneous stability; it remains unadopted, sufficient rather than necessary or minimal, and may remain a downstream convention
-review_disposition: block19_final_head_direct_and_full_synthetic_main_conformance_pass_independent_audit_required
-pr_status: block19_open_pr_6090_clean_mergeable_on_exact_block18_delivery_head
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6090
+conditional_surface_status: the actual Block-19 nonflat background has separately double-precision-bracketed spatial soft-mode crossings under global-only and pointwise affine-normal constraint extensions, while the supplied local Regge-plus-deficit-square flat action with alpha one over 1024 lifts the fifth branch, solves the named body source, has zero failures on 25308 finite-torus modes and 7183 stress samples, and preserves the leading infrared Einstein order; interval root validation, action and coefficient selection, continuous-zone closure, nonflat repair, and Lorentzian nonlinear stability remain open
+hypothetical_axiom_status: a candidate geometry-history law should select a local lattice-covariant action and dimensionless coefficients, a law-admissible background or boundary sector, localization of every constraint, gauge-quotient closure on realized momentum support, the intended infrared gravitational pole and source Ward identity, and stable Lorentzian nonlinear evolution; this wording is sufficient or target-equivalent rather than proven minimal or necessary, remains unadopted, and may instead be derived downstream
+review_disposition: block20_direct_conformance_pass_cache_fresh_source_copy_mutations_14_of_14_object_mutations_18_of_18_graph_5466_nodes_15593_edges_independent_audit_required
+pr_status: block20_science_packet_conformant_uncommitted_stacked_on_block19_pr_6090
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -391,5 +409,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: derive a Lorentzian or time-step geometry-history law for the certified sourced background and compute its homogeneous plus inhomogeneous stability spectrum; in parallel test whether a local covariant law derives the affine ensemble and targets or replaces them by a nonlinear constraint
+next_exact_action: interval-certify the two nonflat determinant crossings, prove or refute continuous-Brillouin-zone gauge-quotient closure for the repaired action, derive or sharply constrain its coefficient and selected background from a local admissibility/history law, and construct the Lorentzian nonlinear sourced evolution and stability test
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

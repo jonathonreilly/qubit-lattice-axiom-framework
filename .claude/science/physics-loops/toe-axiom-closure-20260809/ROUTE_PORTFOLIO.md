@@ -449,3 +449,21 @@ The local mathematical compatibility question is no longer the leading
 gravity obstruction. The active seam is selection of a physical
 geometry/history ensemble and a Lorentzian plus inhomogeneous stability
 certificate. No broad instability or axiom-necessity conclusion is authorized.
+
+## Block 20 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| global-only nonflat constraints | complete `15x15 Q_*(k)` | double-precision crossing `x=1.169447062377...` | reject a current uniform-invertibility claim for this named background; interval validation remains open |
+| pointwise affine normal surface | `N^T Q_*(k)N` | distinct double-precision crossing `x=2.425040995164...` | reject a current uniform-invertibility claim for this obvious localization; do not infer a constraint no-go |
+| overall sign or coordinate chart | sign multiplication or nonsingular congruence | determinant zeros persist | retain only as invariance control |
+| flat Regge branch | exact zero-deficit carrier | restores intended weak-field metric sector but retains fifth lattice zero | retain as physical-vacuum candidate needing branch lift |
+| local deficit-square action | `S_R+alpha sum A epsilon^2`, `alpha=1/1024` | lifts fifth branch, preserves gauge and O(k^2) Einstein order | retain as action-native repair candidate; coefficient selection open |
+| inserted rank-one projector | prior body-source control | repairs algebraically but is not a local selected action | superseded as leading mechanism by deficit square |
+| normalized squared-length intrinsic constraint diagnostic | `M_0^T[(ell^2-ell_flat^2)/(2ell_flat)]=0` and its five-variable square-root parameterization | a 40-digit exploratory Newton pass finds a nearby symmetric root but its uncached Hessian still has four negative and one positive directions | do not promote; keep live only after deriving a covariant physical constraint and adding interval/full-mode certificates |
+| Lorentzian evolution | physical transfer/update spectrum | Euclidean calculation does not supply it | highest-strength remaining gravity target |
+
+The leading science path is positive: derive or select the local repair and
+prove its continuous gauge quotient and Lorentzian nonlinear dynamics. The two
+nonflat roots are diagnostic boundaries, not evidence that gravity cannot
+work.

@@ -106,3 +106,10 @@ declared source family in its supplied ensemble. Its mixed Euclidean inertia
 must not be promoted to a physical instability claim; the strongest remaining
 gravity obligation is physical ensemble/action selection and Lorentzian plus
 inhomogeneous stability.
+
+| Block 20 nonflat finite-momentum boundary | actual Block-19 uniform background under (a) global-only affine constraints and (b) pointwise five-normal affine localization | double-precision determinant/inertia calculations bracket a full-operator crossing at `x=1.169447062377...` and a distinct pointwise-normal crossing at `x=2.425040995164...`; no interval root theorem is claimed | N1--N8 passes only for these two named extensions; alternate background, nonlinear constraints, higher-curvature action, open boundary, and Lorentzian evolution remain live | bounded numerical narrowing, not a gravity or Regge no-go | interval-certify the roots, derive the selected geometry/history law, and prove its complete gauge-quotient Lorentzian spectrum |
+
+The strongest steelman succeeds in the same block: on the flat branch, the
+local `A epsilon^2` action lifts the fifth lattice mode, preserves gauge, and
+repairs the prior body source. This explicitly forbids extrapolating the two
+nonflat roots into a universal negative claim.

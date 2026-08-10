@@ -357,3 +357,23 @@ evolution, stability spectrum, projective completion, or realized member.
 Mixed Euclidean inertia at this one point is not a physical instability no-go.
 Candidate wording types the remaining fields without adoption. No canonical
 edit, audit verdict, or fixed-percentage change occurs.
+
+Block 20 executes the inhomogeneous test that Block 19 left open. On the named
+nonflat background, double-precision determinant/inertia calculations bracket
+a spatial soft-mode crossing in the full operator under global-only
+constraints and a different crossing under pointwise affine
+normal constraints. This narrows those two extensions; it does not license a
+gravity, Regge, curved-background, or constraint universal no-go.
+
+The same block supplies a constructive escape. On the flat carrier, the local
+deficit-square action gives a positive extra-branch Hessian, preserves the
+exact gauge kernel and ten constant-metric zeros, repairs the unprojected body
+source, and enters the metric sector only at `O(k^4)`. Every nonzero mode on
+`L=3,...,10` and every declared stress sample passes the bounded inventory.
+
+Reachability remains `upstream_support` but the carrier defect is materially
+reduced: an action-native repair now exists. The open target is selection or
+derivation of its coefficient/background/constraints, a continuous quotient
+theorem, and Lorentzian nonlinear sourced stability. Candidate wording records
+those obligations without adoption. No canonical edit, audit verdict, or
+fixed-percentage change occurs.

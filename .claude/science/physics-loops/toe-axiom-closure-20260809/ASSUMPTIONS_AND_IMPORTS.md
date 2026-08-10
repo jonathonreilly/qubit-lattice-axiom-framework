@@ -392,3 +392,22 @@ homogeneous response is intended.
 - Approved primitives supply no geometry action, ensemble, target, coupling,
   or stability selector. No external literature, observation, Einstein
   equation, new primitive, canonical axiom edit, or audit verdict is used.
+
+## Block 20 Assumptions And Imports
+
+| Input | Role | Status | Load-bearing boundary |
+|---|---|---|---|
+| Block-19 uniform nonflat root | inhomogeneous Hessian background | retained bounded parent | the root is certified only on its supplied affine homogeneous ensemble |
+| actual Kuhn/Coxeter Regge hinge action | geometry carrier | retained bounded parent | carrier/action selection is not inferred from current axioms |
+| global-only versus pointwise affine constraints | two explicit localization probes | supplied fixtures | neither is called the physical constraint law |
+| `S_alpha=sum_h A_h(epsilon_h+alpha epsilon_h^2)` | local repair action | conditional finite fixture | action form and `alpha=1/1024` are not derived or fitted |
+| flat background | weak-field repair anchor | supplied law-admissible geometry fixture | realized-state primitive does not select it |
+| `L=3,...,10` tori | exhaustive finite spectral domain | exact finite fixtures | no continuous-zone theorem inferred |
+| 7,183 random/corner/path momenta | stress scan | deterministic bounded evidence | not exhaustive and not probabilistic proof |
+| Euclidean Hessian | OS0 linear-response probe | retained carrier plus new action fixture | no Lorentzian instability or stability conclusion inferred |
+| registered primitives | foundation boundary | approved premise nodes | supply only units, kinetic-form isotropy, and pointwise state evaluation; no action, coefficient, background, or dynamics |
+
+No observation, fitted constant, empirical Newton coupling, external theorem,
+new premise, canonical edit, or audit verdict is imported. The continuous
+gauge-quotient spectrum, coefficient selection, Lorentzian evolution, nonlinear
+source completion, and realized geometry/history law remain open.

@@ -1,6 +1,6 @@
 {
- "edge_count": 15585,
- "node_count": 5465,
+ "edge_count": 15593,
+ "node_count": 5466,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -381,6 +381,10 @@
   "admissibility_fixed_metric_nonlinear_regge_kkt_continuation_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "e6d013e0a56f",
    "out_degree": 3
+  },
+  "admissibility_flat_regge_curvature_squared_branch_lift_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "058ff4819cf4",
+   "out_degree": 8
   },
   "admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "bca0a967aa49",

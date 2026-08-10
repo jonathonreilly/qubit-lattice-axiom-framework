@@ -485,3 +485,46 @@ equation, choose coupling orientation/sign and the infrared ensemble, and
 derive nonlinear and realized-history completion. No canonical axiom is
 edited, no necessity/minimality or universal no-go claim is made, and no TOE
 percentage moves.
+
+## Block 14 Target And Disposition
+
+Block 14 executes the two mathematical routes that Block 13 left highest in
+the queue. On the supplied periodic four-dimensional edge carrier, let
+
+`v=(1,0,0,1)` and `A_v,a=2 sum_(n=0)^(L-1)(ell_v(a+nv)-|v|)`.
+
+The path is a genuine repeated-edge closed cycle. Its Fourier source contains
+the complete line factor `F_L(k dot v)`, so multiplication by the actual
+single-edge gauge factor gives the exact telescope
+
+`F_L(theta)(exp(i theta)-1)=exp(iL theta)-1=0`.
+
+Thus a prescribed moving actual-edge history can satisfy all four discrete
+vertex-gauge Ward directions without projection. The static direction is
+exactly the Block-13 tick line; the moving direction is a Euclidean tick-space
+face diagonal.
+
+Two explicit infrared choices are then executed. A signed parallel line at
+transverse separation `b=(0,1,0,0)` supplies the factor
+`1-exp(i k dot b)` and cancels `k=0` exactly. Across `L=3,...,8`, all 1,088
+nonzero pair sources—including 922 with nonzero tick frequency and 98
+disclosed Umklapp modes—are compatible with the full five-dimensional Regge
+null space and solve the unprojected edge equation. Alternatively, removing
+only the compact global mode makes one positive helix compatible and solvable
+on all 1,281 supported nonzero modes.
+
+The per-lattice-step moving principal metric source is exactly
+`v tensor v/|v|`. Its
+gauge-invariant transverse contraction has the unprojected
+`|k|^2 u^T h u -> 2 sqrt(2)` pole and the open three-transverse-dimensional
+`1/r` Green tail. The full body diagonal remains a named fifth-branch control,
+but an explicit rank-one lift of only that branch preserves the four gauge
+zeros and restores solvability, preventing any carrier-independent no-go.
+
+The physical residual is now sharply localized: the signed pair is not
+positive mass; the Euclidean face diagonal is null under naive Lorentzian
+continuation; no history/action selection, causal update, defect-as-Record or
+mass typing, coupling, nonlinear geometry law, or realized history is derived.
+The existing Block-12 candidate wording is already sufficient to type the
+conditional representative and ensemble if adopted. No broader axiom wording
+is needed, no canonical axiom is edited, and no fixed percentage moves.

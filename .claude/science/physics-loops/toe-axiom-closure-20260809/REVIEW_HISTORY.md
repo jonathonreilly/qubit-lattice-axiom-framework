@@ -754,3 +754,46 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   exact #6080 delivery head `a0ed5ebb1c302d2bb4a28c53394ffc3d3554638f`.
   Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074, #6075,
   #6076, #6077, #6078, #6079, #6080, then #6081.
+
+## Block 14 direct-review record
+
+- The actual face-diagonal path is a closed `L`-edge cycle on every declared
+  torus. Direct and analytic Fourier sums agree on a hostile anchored mode,
+  and the complete line factor telescopes with the actual edge-gauge row.
+- The signed transverse line is disjoint on every size and cancels `k=0`
+  exactly. The support inventory is independently reconstructed as 1,088
+  sources among 8,755 modes, with 922 nonzero-tick-frequency, 990 principal,
+  824 principal-dynamic, and 98 Umklapp modes.
+- Direct full-null and unprojected solves pass on all 1,088 pair sources. The
+  primary worst full-null overlap is `6.501e-14`, worst solve residual
+  `4.275e-13`, and worst four-gauge residual `2.309e-14`.
+- Removing only `k=0` leaves one positive line with 1,281 supported nonzero
+  modes. Its worst full-null overlap is `8.447e-14` and worst solve residual
+  `3.466e-13`; the positive zero-mode control remains `8.164966`.
+- The per-lattice-step moving rank-one metric map and four transverse pole
+  directions agree with `2sqrt(2)` at coefficients
+  `2.8284762,2.8285253,2.8285253,2.8284148`; every error improves under
+  momentum halving. The contracted observable is gauge invariant.
+- The body-edge control has gauge residual `5.551e-17`, fifth-branch overlap
+  two, and solve residual two. Adding only the extra-null projector leaves
+  four zeros, gauge residual `3.701e-15`, and solve residual `4.914e-15`.
+- An independent reconstruction, without importing the Block-14 runner,
+  passes seven families. Its worst pair solve residual is `4.342e-13`, worst
+  positive-line solve residual `3.375e-13`, and lifted body residual
+  `4.847e-15`.
+- The primary runner is `PASS=29 FAIL=0`, cache freshness passes, stdout is
+  5,828 characters, and all 29 process-local forced-false mutations produce a
+  named nonzero failure.
+- The source note carries N1--N8 on the landing surface and the cache carries
+  all five substantive resolution certificates. The live-route steelman is
+  accepted and no universal no-go, positive-mass, timelike-dynamics, or axiom-
+  necessity wording survives.
+- The graph is 5,460 nodes / 15,559 edges, the note has out-degree five, and
+  the harness adds one edge. A live open-PR/file sweep finds #6081 `CLEAN` and
+  no collision in #6073, #6069, or #6072. `origin/main` remains
+  `323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.
+- Vocabulary has zero findings; strict audit lint has zero errors; premise
+  purity and graph/link/class-F invariants pass. Python compilation, YAML
+  parsing, diff whitespace, source-pinned cache, exact 18-path scope, and the
+  canonical axiom checksum also pass. The isolated-pipeline result will be
+  appended before the science commit.

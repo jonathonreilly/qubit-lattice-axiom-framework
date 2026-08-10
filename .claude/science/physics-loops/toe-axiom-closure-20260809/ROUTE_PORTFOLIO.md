@@ -304,3 +304,28 @@ finite neighbor-word PRs contain no centered tick-edge improvement, direct
 axial Regge source, or exhaustive static null-space solve. No newer open PR
 collides with Block 13. PR #6061 remains the known dependency-policy epoch
 repair rather than science overlap.
+
+## Block 14 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| repeated-edge closed history | actual `v=(1,0,0,1)` helix and complete line action | exact telescope annihilates all four gauge directions on every torus mode | retain as prescribed dynamic mathematical existence; selection and causal law open |
+| signed transverse pair | `A_v,0-A_v,b` | exact compact-zero-mode cancellation and 1,088 full-null-compatible unprojected solves | retain as one explicit infrared ensemble, not positive mass |
+| fixed-global-mode positive line | one helix with only `k=0` removed | all 1,281 supported nonzero modes are compatible and solvable | retain as conditional positive route; physical constraint selection open |
+| principal moving metric response | per-lattice-step actual metric map on integer `k dot v=0` support | rank-one `vv/|v|`, gauge-invariant `2sqrt(2)/k^2` response, transverse `1/r` tail | retain at Euclidean weak-field scope only |
+| Umklapp boundary | 98 even-`L` Brillouin-edge sources | metric image vanishes while edge source remains compatible and solvable | disclose and exclude from the continuum pole claim |
+| body-diagonal control | full body edge on the fixed quadratic carrier | four-gauge Ward passes; fifth branch and solve residual equal two | bounded carrier fixture only |
+| explicit fifth-branch lift | add the isolated extra-null projector to the quadratic operator | four gauge zeros survive and the body row becomes solvable | proves route viability; not a derived physical higher-order action |
+| balanced multi-edge or combined geometry history | several nonnegative edge currents or a coupled constraint equation | not executed in Block 14 | highest-value route to positive timelike compact matter |
+| existing history/action amendment | Block-12 candidate wording | already types the representative and signed/fixed/open ensemble choices | no broader candidate and no canonical edit |
+
+## Block 14 live PR sweep
+
+At the Block 14 boundary, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`; PR #6081 is `CLEAN`, and no
+newer science PR exists. Direct file inspection of #6073, #6069, and #6072
+shows respectively cell-cutting incidence, a finite covariant neighbor law,
+and an axiom-repair semantic map. None contains a closed helical edge history,
+neutral Regge source pair, fixed-global positive-line solve, or moving Regge
+pole. PR #6061 remains the independent dependency-policy epoch repair. No
+open PR collides with Block 14.

@@ -197,3 +197,38 @@ defect as mass/Record content, provide a conserved worldline and geometry
 equation, fix coupling/sign, choose the infrared ensemble, or realize one
 history. The candidate remains unadopted and the fixed TOE percentages remain
 unchanged.
+
+Block 14 converts the remaining static-history gap into an exact closed-line
+identity. The actual tick-space face-diagonal source is not a time-modulated
+single row: it is the derivative of the complete repeated-edge cycle. Its
+line factor telescopes with the edge gauge factor exactly on every declared
+torus mode.
+
+The infrared trace now branches cleanly. A signed transverse pair cancels the
+compact source exactly and gives 1,088 full-null-compatible unprojected edge
+solves. A fixed-global-mode convention instead retains one positive line and
+gives 1,281 compatible supported nonzero modes. The open boundary retains the
+transverse `1/r` tail. These are three explicit mathematical ensembles rather
+than an unspecified promise that the zero mode can be handled.
+
+The per-lattice-step moving principal source maps to the actual rank-one
+Euclidean tensor
+`v tensor v/|v|`, and its transverse `u^T h u` response is gauge invariant
+because `k dot u=0`. The unprojected pole tends to `2sqrt(2)/k^2`. The 98
+Umklapp edge modes are separated from this continuum statement rather than
+silently folded into it.
+
+The trace still does not reach physical gravity or matter. One positive line
+retains the unconstrained compact zero mode; the signed pair is not positive
+mass; and the Euclidean face diagonal is null rather than subluminal timelike
+under naive Lorentzian continuation. A body-diagonal fifth-branch residual is
+carrier-specific: an explicit algebraic branch lift repairs it while
+preserving four gauge zeros, but no physical higher-order action is derived.
+
+The axiom consequence therefore remains selection rather than missing
+mathematics. The existing geometry-indexed history/action candidate is already
+sufficient to type the fixed action and named infrared ensemble by premise.
+Current axioms still do not select a positive history/source, causal update,
+mass/Record interpretation, geometry dynamics, coupling, nonlinear regime,
+or realized member. No canonical wording is edited and the fixed TOE
+percentages remain unchanged.

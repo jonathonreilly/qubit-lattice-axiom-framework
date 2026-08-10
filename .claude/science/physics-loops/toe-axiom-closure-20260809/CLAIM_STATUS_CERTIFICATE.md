@@ -228,3 +228,54 @@ this campaign authors no verdict.
 No canonical axiom is edited and the fixed TOE percentages do not move. The
 Block 13 source remains bounded support and requires independent audit; this
 campaign authors no verdict.
+
+## Block 14 certificate
+
+- The actual tick-space face-diagonal cycle is the derivative of one complete
+  repeated-edge action, not a single row with an arbitrary time-dependent
+  weight. Its finite line factor gives an exact every-mode telescoping Ward
+  identity. The static member is exactly the Block-13 tick line.
+- A signed transverse pair cancels `k=0` exactly. Across all 8,755 modes of
+  `L=3,...,8`, it has 1,088 nonzero sources, including 922 with nonzero tick
+  frequency, 824 principal dynamic metric modes, and 98 disclosed Umklapp
+  edge modes.
+- Every sourced pair mode has five numerical null directions, negligible
+  overlap with the complete null space, and a direct unprojected edge solve.
+  No gauge-only inference or source projection is substituted for that test.
+- The complementary fixed-global-mode route retains one positive helix and
+  is gauge/full-null compatible and directly solvable on all 1,281 supported
+  nonzero modes. The unconstrained positive `k=0` source still has null and
+  solve residual `8.164966`.
+- On principal support the per-lattice-step moving metric source is exactly
+  `v tensor v/|v|`. The transverse observable is gauge invariant and four
+  directions give `|k|^2 u^T h u -> 2 sqrt(2)` with improving errors and the
+  open `1/(4 pi r_perp)` tail.
+- The full body edge passes four-gauge Ward closure but has fifth-branch and
+  solve residual exactly two on the named quadratic fixture. An explicit
+  rank-one lift of only that branch preserves four gauge zeros and restores
+  solvability, so no higher-order or carrier-universal no-go is earned.
+- The landing note carries the complete N1--N8 packet and the cached stdout
+  carries all five substantive resolution lines. The strongest steelman is
+  accepted: combined geometry, alternate carriers, and balanced nonnegative
+  multi-edge histories remain live.
+- The signed pair is not positive mass, the Euclidean face diagonal is null
+  under naive Lorentzian continuation, and no action/history selector, causal
+  update, mass/Record typing, coupling, nonlinear law, Born functional, or
+  realized history is derived.
+- The existing candidate history/action amendment is already sufficient to
+  type the conditional representative and signed/fixed/open ensemble choices.
+  It remains unadopted, not necessary or minimal, and no broader wording is
+  proposed.
+- The primary runner is `PASS=29 FAIL=0` with 5,828 characters of stdout. An
+  independent reconstruction that does not import the Block-14 runner passes
+  seven families, and all 29 process-local forced-false mutations produce
+  their intended named failure.
+- Citation registration is 5,460 nodes / 15,559 edges; the note has
+  out-degree five and the harness adds one edge.
+- Direct vocabulary, strict audit lint, graph/link/class-F invariants, premise
+  purity, Python/YAML parsing, whitespace, exact 18-path scope, cache
+  freshness, and canonical-axiom checksum gates pass.
+
+No canonical axiom is edited and the fixed TOE percentages do not move. The
+Block 14 source remains bounded support and requires independent audit; this
+campaign authors no verdict.

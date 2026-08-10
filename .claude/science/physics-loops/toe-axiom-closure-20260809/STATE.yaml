@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 14
-science_block: 13
-branch: physics-loop/toe-axiom-closure-block13-20260810
+cycle: 15
+science_block: 14
+branch: physics-loop/toe-axiom-closure-block14-20260810
 base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-worktree: /private/tmp/toe-axiom-block13.o4vhXf/worktree
+worktree: /private/tmp/toe-axiom-block14.wyAUDA/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now converting the affine bag to an exact actual static Regge source and isolating the remaining dynamic-history, compact-zero-mode, action-selection, geometry-dynamics, coupling, nonlinear, and Born obligations
-active_route: signed range-one isolated-defect selector, flat-law-preserving tick-edge line-minus-bag improvement, exact static axial gauge and pure-tick source, exhaustive named-torus full-null compatibility, unprojected Regge lapse pole, and explicit compact/dynamic boundaries
-hard_residual: construct a closed dynamic defect worldline or combined matter-geometry Ward solution and select an infrared ensemble for the nonzero total tick charge; physically select and license the improved joint history/action representative, defect-as-mass/Record carrier, action unit, geometry action/update, coupling orientation/sign, Lorentzian and nonlinear regime, and realized history; Born functional/program selection remains separately open
-target_contract_status: complete_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary
+goal: maximize honest TOE closure from the current axiom surface, now converting the exact static tick edge into a closed prescribed moving history with explicit neutral and fixed-global infrared routes and isolating the remaining positive-timelike, action-selection, geometry-dynamics, coupling, nonlinear, Born, and realized-history obligations
+active_route: actual repeated-edge tick-space face-diagonal cycle, exact telescoping Ward identity, signed transverse neutral pair, fixed-global positive-line route, complete named-torus full-null compatibility, unprojected moving Regge pole, and carrier-specific body-branch controls
+hard_residual: construct a nonnegative compact source with an effectively subluminal timelike balanced multi-edge history or combined matter-geometry Ward solution; physically select and license the joint history/action representative, defect-as-mass/Record carrier, positive source law, action unit, geometry action/update, coupling orientation/sign, Lorentzian and nonlinear regime, and realized history; Born functional/program selection remains separately open
+target_contract_status: complete_closed_helical_history_ward_neutral_ir_regge_response_boundary
 A_min:
   - Lattice
   - Qubit
@@ -73,6 +73,10 @@ block_local_allowed_premises:
   - finite six-neighbor Boolean isolated-defect selectors and exhaustive 128-neighborhood classification
   - centered axial tick-edge length deviations and flat-law-preserving line-minus-bag improvements
   - exhaustive singular-space and direct edge-equation checks on the declared L=3 through L=8 static Fourier inventories
+  - actual repeated-edge closed cycles on finite four-tori and their exact finite geometric structure factors
+  - signed transverse line pairs and explicitly fixed compact global modes as named infrared ensembles
+  - exhaustive singular-space and direct edge-equation checks on the declared L=3 through L=8 moving Fourier inventories
+  - explicit algebraic lifting of one isolated non-gauge quadratic null branch as a route counter-control
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -98,6 +102,9 @@ forbidden_imports:
   - identification of the derived tick source with physical mass or dust
   - insertion of an Einstein equation, Newton coupling, Lorentzian sign, or observed gravitational constant
   - physical selection of the isolated-defect selector, tick-edge improvement, defect-as-mass interpretation, or dynamic worldline
+  - physical identification of a prescribed Euclidean face-diagonal cycle with a massive timelike trajectory
+  - physical licensing of a signed compensating source as positive energy or positive mass
+  - treating an algebraic fifth-branch projector as a derived higher-order geometry action
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -140,6 +147,9 @@ files_touched:
   - docs/ADMISSIBILITY_CENTERED_TICK_EDGE_DEFECT_IMPROVEMENT_EXACT_STATIC_REGGE_SOURCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10.py
   - logs/runner-cache/admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10.txt
+  - docs/ADMISSIBILITY_CLOSED_HELICAL_DEFECT_HISTORY_WARD_NEUTRAL_IR_REGGE_RESPONSE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -179,8 +189,11 @@ open_imports:
   - the centered affine pressure coefficient is derived inside one action family, but no current axiom selects its pressure mechanism or identifies its tick source with physical mass
   - the actual Regge response has a metric-transverse 1 over k squared lapse pole, but current axioms do not select the Regge carrier, action orientation, coupling, or Lorentzian interpretation
   - the centered tick-edge improvement retires the localized static nonzero-mode bag residual on the named carrier, but current axioms do not select that representative or identify its isolated defect with physical mass
-  - the nonzero total tick charge is incompatible with the bare finite periodic Hessian unless a boundary ensemble, global constraint, compensator, curved background, or dynamics handles it
-  - a fixed vertical tick edge at nonzero tick momentum has nonzero gauge and fifth-branch overlap, so a conserved dynamic worldline or combined matter-geometry equation remains open
+  - the repeated-edge closed helix retires the fixed-row dynamic Ward failure but is prescribed Euclidean history data rather than a selected causal update law
+  - one positive closed helix remains incompatible at the unconstrained compact zero mode, while fixed-global and signed-neutral ensembles now close the named mathematical alternatives
+  - the signed transverse pair is not a positive-energy or positive-mass source ensemble
+  - the moving face diagonal is null under naive Lorentzian continuation rather than a derived subluminal timelike trajectory
+  - the body-diagonal source fails the exact quadratic fifth branch, while an algebraic rank-one lift proves that residual is not higher-order or carrier universal
   - open-boundary 1 over r shape does not by itself provide projective consistency, nonlinear gravity, or one realized history
 no_go_routes:
   - raw_singleton_measure_identification
@@ -197,6 +210,7 @@ no_go_routes:
   - fixed_background_scalar_law_and_global_cubic_covariance_as_unique_conserved_metric_source
   - localized_affine_bag_as_exact_bare_finite_periodic_regge_dust_solution
   - bare_periodic_total_tick_charge_and_fixed_dynamic_vertical_line_as_complete_physical_source
+  - single_positive_closed_helix_compact_k0_and_body_edge_fixed_quadratic_carrier_as_universal_obstruction
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -260,18 +274,23 @@ approach_family_coverage:
   unprojected_static_regge_lapse_pole: four_direction_two_tau_limit_and_open_boundary_one_over_r_shape_without_source_projection
   bare_periodic_total_tick_charge: bounded_k0_failure_with_eleven_zero_modes_and_nonzero_direct_residual
   fixed_dynamic_vertical_line: bounded_nonconservation_with_nonzero_gauge_and_separated_fifth_branch_overlap
-strongest_unresolved_proof_obligation: construct a conserved dynamic defect history or combined matter-geometry Ward solution and a declared infrared ensemble without losing the exact static tick source and unprojected lapse pole; then physically select the action representative, defect-as-mass/Record carrier, action unit, geometry update, coupling sign and orientation, Lorentzian/nonlinear regime, projective completion, and realized history; independently close the Born functional/program selector
+  closed_repeated_edge_helical_history: exact_every_mode_telescoping_four_gauge_ward_identity
+  neutral_transverse_helical_pair: exact_k0_cancellation_with_1088_full_null_compatible_unprojected_sources
+  fixed_global_positive_helix: exact_1281_supported_nonzero_mode_full_null_and_direct_solve_inventory
+  moving_face_diagonal_regge_pole: gauge_invariant_per_lattice_step_four_direction_two_sqrt_two_limit_and_transverse_one_over_r_shape
+  body_edge_fifth_branch_and_lift: exact_named_residual_two_and_algebraic_four_gauge_preserving_repair
+strongest_unresolved_proof_obligation: construct a nonnegative compact source with an effectively subluminal timelike balanced multi-edge history or combined matter-geometry Ward solution without losing full-null compatibility and the unprojected infrared pole; then physically select the action representative, defect-as-mass/Record carrier, positive source law, action unit, geometry update, coupling sign and orientation, Lorentzian/nonlinear regime, projective completion, and realized history; independently close the Born functional/program selector
 trace_gate_classification: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: one explicit range-one flat-law-preserving improvement converts the isolated affine bag to an actual axial tick-edge source with exact static gauge compatibility, pure tick metric source, exhaustive named-torus full-null compatibility, unprojected edge solvability, unprojected one-over-k-squared lapse pole, and open one-over-r shape; compact total-charge, dynamic history, physical representative/mass, geometry dynamics, coupling, ensemble, nonlinear, projective, Born, and realized-history selection remain open
-hypothetical_axiom_status: the existing geometry-indexed history/action amendment already registers every geometry-dependent improvement and is sufficient to type this construction; it remains unadopted, not proved necessary or minimal, and no wording is edited into the axioms
-review_disposition: block13_direct_conformance_passed_open_mergeable_6081_with_known_dependency_policy_epoch_stop
-pr_status: block13_open_mergeable_stacked_on_open_6080
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6081
+conditional_surface_status: one explicit actual-edge face-diagonal cycle has an exact every-mode telescoping Ward identity; a signed transverse pair cancels k0 and gives 1088 full-null-compatible unprojected sources, while fixing only k0 gives one positive line 1281 compatible nonzero modes; the per-lattice-step moving principal source has a gauge-invariant unprojected one-over-k-squared pole and transverse one-over-r shape; positive compact mass, timelike causal dynamics, physical representative/source selection, geometry dynamics, coupling, nonlinear, projective, Born, and realized-history selection remain open
+hypothetical_axiom_status: the existing geometry-indexed history/action amendment already registers a fixed history/action representative and open, fixed-global, background-subtracted, or constrained infrared ensemble and is sufficient to type this construction; it remains unadopted, not proved necessary or minimal, no broader wording is needed, and no wording is edited into the axioms
+review_disposition: block14_direct_conformance_passed_isolated_pipeline_pending
+pr_status: block14_uncommitted_candidate_stacked_on_open_6081
+pr_url: pending
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -298,5 +317,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: construct the smallest closed dynamic defect loop whose static segments reduce to the exact tick-edge source, derive its complete edge-current Ward identity on the actual carrier, and test it in an explicit open, fixed-global-mode, or neutralized infrared ensemble without inserting an Einstein target by hand
+next_exact_action: construct the smallest balanced multi-edge or combined matter-geometry history with nonnegative source weights and effective subluminal Lorentzian tangent, then test exact Ward, full-null, compact-infrared, and unprojected long-wave response without inserting a target stress tensor or Einstein equation
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

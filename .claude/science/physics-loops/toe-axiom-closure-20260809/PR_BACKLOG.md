@@ -219,3 +219,17 @@ discarded with the disposable worktree. Changed-evidence readiness checks all
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 #6080, then #6081. The canonical axiom memo is untouched, the fixed TOE
 percentages do not move, and no `review-loop` is used.
+
+Block 14 is prepared on branch
+`physics-loop/toe-axiom-closure-block14-20260810`, based on the exact Block 13
+delivery head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. The actual
+face-diagonal closed history, every-mode telescoping Ward identity, signed
+neutral pair, fixed-global positive line, complete 1,088-pair/1,281-positive
+mode solves, moving Regge pole, body/lift controls, N1--N8 packet, and unchanged
+axiom map are complete. The primary runner is `PASS=29 FAIL=0`; an independent
+seven-family reconstruction agrees, and all 29 process-local mutations fail
+closed. Graph registration is 5,460 nodes / 15,559 edges with note out-degree
+five. The canonical axiom memo is untouched, the fixed TOE percentages do not
+move, and no `review-loop` is used. Direct repository conformance passes; the
+isolated pipeline rehearsal, science commit, and stacked PR delivery are
+pending.

@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10.py
+runner_sha256: 4304bb5f410b8fd3b96ebe258404cd3fb81a3c3fd5c392c1b44975dc45e94890
+input_fingerprint_sha256: 12b49bdcca57e8887b4d5de4183aab4e493627780835699d1616f47a43730734
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 54.48
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the closed-line Ward identity is a finite geometric sum on the supplied edge carrier
+package_local_integrity_reads: current axioms, Block-13 static source, the existing history/action candidate, and the actual Regge Hessian are source-bound
+analytic_boundary: loop closure and the four vertex-gauge Ward directions are exact on every declared torus mode
+physical_boundary: the moving line is prescribed Euclidean history data; positive mass, causal selection, Lorentzian dynamics, coupling, and realization remain open
+[PASS] source-current-axioms: the current axioms do not silently select a moving history, source action, infrared ensemble, or geometry dynamics
+[PASS] source-block13-boundary: Block 13 supplies the exact static tick edge while leaving a conserved dynamic history and compact zero mode open
+[PASS] source-existing-history-amendment: the existing candidate already permits a fixed history action and a background-subtracted zero-mode ensemble
+[PASS] source-regge-boundary: the supplied carrier has fifteen edge classes, four gauge directions, and one extra decoupled branch
+[PASS] source-tick-primitive: equal-form tick graining supplies no history choice, source sign, or dynamics
+[PASS] closed-edge-history: the static and face-diagonal histories are closed L-edge cycles for every L=3 through L=8
+[PASS] transverse-pair-disjointness: translation by one y edge produces a distinct parallel closed helix on every declared torus
+[PASS] static-member-block13: the v=t member is exactly the Block-13 coefficient-two tick-edge source and pure T_tt row
+[PASS] closed-line-fourier-transform: the analytic structure factor equals the direct transform of all seven actual helix edges
+[PASS] dynamic-rank-one-metric-source: on principal support k dot v=0 the moving actual edge maps exactly to v tensor v divided by |v|
+[PASS] dynamic-metric-ward: the principal moving metric source annihilates all four continuum gauge columns
+[PASS] finite-torus-support-inventory: the neutral pair has 1,088 nonzero Fourier sources among all 8,755 modes on L=3 through L=8
+       total=8755; sourced=1088; per-L=[(3, 18, 12), (4, 48, 36), (5, 100, 80), (6, 180, 150), (7, 294, 252), (8, 448, 392)]
+[PASS] dynamic-mode-inventory: 922 sourced modes have nonzero tick frequency; 824 are principal metric-support modes and 98 are disclosed Umklapp modes
+       dynamic=922; principal=990; principal-dynamic=824; Umklapp=98
+[PASS] closed-line-exact-gauge-ward: the telescoping closed-line identity annihilates all four vertex-gauge directions on every declared torus mode
+       max gauge residual=2.309e-14
+[PASS] finite-torus-zero-inventory: every one of the 1,088 nonzero pair sources meets a five-dimensional Regge zero space
+       wrong zero counts=0
+[PASS] finite-torus-full-null-compatibility: the neutral moving pair annihilates the complete Regge null space on all 1,088 sourced modes
+       max full-null overlap=6.501e-14
+[PASS] finite-torus-unprojected-solvability: the actual unprojected edge equation solves on all 1,088 sourced modes
+       max direct solve residual=4.275e-13
+[PASS] single-line-fixed-global-mode-route: after removing only k=0, one positive helix is Ward/full-null compatible and directly solvable on all 1,281 supported nonzero modes
+       supported=1281; gauge=3.919e-15; full-null=8.447e-14; solve=3.466e-13
+[PASS] single-line-zero-mode-control: one positive closed helix retains a nonzero compact k=0 incompatibility
+       null overlap=8.164966; solve residual=8.164966
+[PASS] neutral-pair-zero-mode-cancellation: the signed transverse pair cancels k=0 exactly rather than projecting the source
+[PASS] body-diagonal-extra-branch-control: closed-line gauge conservation alone is insufficient: the full body-diagonal edge lies in the fifth null branch on this carrier
+       gauge=5.551e-17; extra-null=2.000000; solve=2.000000
+[PASS] body-diagonal-lifted-branch-route: an explicit rank-one lift of only the fifth branch preserves four gauge zeros and makes the body source solvable
+       zero-count=4; gauge=3.701e-15; solve=4.914e-15
+[PASS] unprojected-moving-line-pole: four transverse directions give |k|^2 h_vv -> 2 sqrt(2) without source projection
+       coefficients=2.8284762,2.8285253,2.8285253,2.8284148
+[PASS] moving-line-pole-convergence: halving transverse momentum reduces every moving-line pole-coefficient error
+[PASS] open-transverse-green-tail: the moving line pole has the regulated three-transverse-dimensional 1/(4 pi r_perp) Green shape
+[PASS] theorem-source-surface: the note states the closed action, telescoping Ward identity, neutral pair, inventories, pole, Umklapp boundary, and axiom map
+[PASS] no-go-discipline-source-surface: the note carries N1 through N8 and rejects a universal body-diagonal, dynamics, mass, or new-axiom reading
+[PASS] boundary-source-surface: the note preserves Euclidean/Lorentzian, selection, positivity, coupling, nonlinear, Born, and realized-history boundaries
+[PASS] canonical-axiom-nonmutation: the canonical memo contains none of the helical-history or neutral-pair amendment wording
+per_element: checked the actual tick and tick-space face-diagonal line derivatives, rank-one metric map, and body-diagonal rejector
+per_site: checked closed L-edge helices and one disjoint transverse signed pair for every L=3 through L=8
+per_mode: checked 1,281 fixed-global-mode positive-line sources and all 1,088 neutral-pair sources against the complete Regge null space
+per_block: checked static-member inheritance through exact moving Ward identity, neutral infrared cancellation, unprojected pole, and open transverse Green tail
+lattice_wide: checked all 8,755 Fourier modes on six four-tori and solved every sourced edge equation without projection
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

@@ -273,3 +273,24 @@ The improvement is one explicit alternative representative. No uniqueness,
 naturalness, physical selection, Einstein equation, Newton constant,
 Lorentzian potential, arbitrary-lattice extrapolation, or realized history is
 imported.
+
+## Block 14 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Block-13 actual coefficient-two tick edge | static member and normalization | stacked bounded theorem | yes | no dynamic law, mass license, or compact ensemble inherited |
+| actual face-diagonal edge `v=(1,0,0,1)` | moving Euclidean history carrier | source-bound Regge edge class | yes | prescribed data; not a selected or Lorentzian timelike worldline |
+| finite repeated-edge cycles on `L=3,...,8` tori | exact Ward/support domain | explicit finite fixtures | yes | no arbitrary-size or continuous-Brillouin theorem inferred |
+| transverse signed pair | compact zero-mode ensemble | explicit background-subtracted construction | yes for the pair theorem | not a positive-energy or positive-mass ensemble |
+| fixed-global-mode domain | alternate infrared ensemble | explicitly declared constraint | yes for the positive-line nonzero-mode result | not selected by current axioms or geometry dynamics |
+| actual Regge Hessian and metric map | full-null, solve, and pole probe | source-bound bounded theorem | yes | carrier/action selection remains open |
+| rank-one fifth-branch projector | algebraic counter-control | explicitly constructed operator change | yes only for route viability | not claimed to arise from a physical higher-order action |
+| naive Lorentzian continuation | interpretation boundary | diagnostic only | no | identifies the face diagonal as null, not a physical continuation theorem |
+| physical positive mass, Record typing, action/history selector, causal update, coupling, and nonlinear law | TOE completion | open imports | no for theorem; yes for physical closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+No observed constant, Einstein equation, target stress tensor, fitted coupling,
+physical source sign, Lorentzian dynamics, probability law, or realized history
+is imported. The existing candidate history/action amendment is sufficient to
+type the fixed representative and named infrared ensembles only if adopted;
+it is not treated as current authority.

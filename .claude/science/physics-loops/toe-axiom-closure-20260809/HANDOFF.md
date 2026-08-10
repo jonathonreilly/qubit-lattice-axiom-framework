@@ -586,3 +586,47 @@ mergeable stacked PR #6081 on the exact #6080 delivery head
 `a0ed5ebb1c302d2bb4a28c53394ffc3d3554638f`. Hard landing order is #6063,
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 #6080, then #6081.
+
+## Block 14 science handoff
+
+Block 14 turns the static tick edge into one prescribed moving actual-edge
+history. The complete face-diagonal cycle has an exact telescoping four-gauge
+Ward identity on every declared torus mode. Its static member is exactly the
+Block-13 coefficient-two tick source.
+
+A signed transverse pair cancels the compact source without projection. On
+the six `L=3,...,8` four-tori, all 1,088 nonzero pair sources have five null
+directions, full-null compatibility, and direct unprojected edge solves; 922
+have nonzero tick frequency, 824 are principal dynamic metric modes, and 98
+are disclosed Umklapp modes. Fixing only the global mode supplies the other
+explicit route: one positive line solves on all 1,281 supported nonzero modes.
+
+The per-lattice-step principal moving source maps exactly to
+`v tensor v/|v|`. Its transverse
+gauge-invariant response has the unprojected `2sqrt(2)/k^2` pole and open
+`1/r` tail. The body-diagonal fifth-branch control has residual two, while an
+explicit algebraic lift of that branch preserves four gauge zeros and repairs
+the solve; this keeps higher-order/carrier routes live.
+
+The primary runner is `PASS=29 FAIL=0` with fresh source/input fingerprints
+and 5,828 stdout characters. An independent eigenspace/lstsq reconstruction
+passes seven families, and all 29 process-local forced-false mutations fail at
+their intended checks. The citation graph is 5,460 nodes / 15,559 edges, with
+note out-degree five and one harness edge.
+
+The source-landed no-go packet narrows the controls to one unconstrained
+positive compact line and one body row on the exact quadratic carrier. The
+signed pair is not positive mass, the Euclidean diagonal is not a derived
+timelike trajectory, and action/history selection, causal update, mass/Record
+typing, geometry dynamics, coupling, nonlinear completion, Born selection,
+and realized history remain open.
+
+The existing candidate history/action amendment already types the conditional
+representative and named infrared ensembles if adopted. It remains
+hypothetical; no broader candidate or canonical edit is needed. The fixed TOE
+percentages remain unchanged and no `review-loop` is invoked. Block 14 is
+currently an uncommitted candidate stacked on the exact Block-13 delivery head
+`d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Direct vocabulary, strict audit
+lint, graph/link/class-F, premise, Python/YAML, whitespace, cache, exact
+18-path, and canonical checksum gates pass. The isolated pipeline and delivery
+remain to be recorded.

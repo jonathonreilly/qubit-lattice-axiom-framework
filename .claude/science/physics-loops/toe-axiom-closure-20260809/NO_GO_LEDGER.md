@@ -44,5 +44,19 @@ The steelman is adopted: compact charge balance and dynamic worldline closure
 are ordinary live completion mechanisms. The negative content does not extend
 beyond the two displayed bare equations.
 
+Block 14 executes three of those live routes. A genuine repeated-edge closed
+history repairs the fixed-row dynamic Ward failure, a signed parallel pair
+cancels the compact zero mode, and fixing only the global mode leaves one
+positive line compatible on all 1,281 supported nonzero modes. The Block-13
+fixtures remain true for their exact equations but no longer support any broad
+dynamic-history or all-ensemble reading.
+
+| single positive closed helix at compact `k=0` and full body edge on the exact quadratic carrier | one coefficient-two face-diagonal helix on the unconstrained periodic zero mode; separately, one coefficient-two full body-diagonal row at `k dot w=0` | the positive line has null/solve residual `8.164966`; the body row passes four-gauge Ward but has fifth-branch overlap and solve residual exactly two | N1--N8 complete in the Block-14 landing note; signed, fixed-global, open, face-diagonal, and explicit fifth-branch-lift routes are executed; combined geometry, alternate triangulation, and balanced junctions remain live | two named fixed-problem controls only; no positive-mass, timelike-history, carrier, gravity, or universal no-go | derive a nonnegative balanced source/history or a physical coupled constraint/lift without changing the claimed fixture silently |
+
+The explicit rank-one fifth-branch lift preserves the four gauge zeros and
+makes the body source solvable. It is an algebraic counter-control rather than
+a physical action, and it forbids promoting the quadratic body residual to a
+higher-order or carrier-independent obstruction.
+
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.

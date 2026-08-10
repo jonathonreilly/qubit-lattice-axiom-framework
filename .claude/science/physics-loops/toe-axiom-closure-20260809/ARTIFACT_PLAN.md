@@ -246,3 +246,27 @@ Block 13 packages a stacked bounded theorem only if it contains all of:
 7. a source-pinned runner/cache, independent SVD/lstsq recomputation, full
    process-local mutation sensitivity, harness/graph registration, and direct
    conformance review.
+
+## Block 14
+
+Block 14 packages a stacked bounded theorem only if it contains all of:
+
+1. one actual repeated-edge tick-space face-diagonal cycle whose static member
+   is exactly the Block-13 coefficient-two tick line;
+2. the exact finite telescoping Ward identity for the complete closed line,
+   including every declared torus mode and no source projection;
+3. one disjoint signed parallel pair with exact `k=0` cancellation, complete
+   `L=3,...,8` support/dynamic/Umklapp inventory, full-five-null compatibility,
+   and direct unprojected edge solves;
+4. the complementary fixed-global-mode route for one positive line, covering
+   every supported nonzero mode, plus the retained positive compact `k=0`
+   control;
+5. an unprojected gauge-invariant moving-line pole, transverse `1/r` Green
+   tail, body-diagonal fifth-branch rejector, and explicit branch-lift
+   counter-control;
+6. a landing-surface N1--N8 packet and exact axiom consequence showing that
+   the existing candidate wording remains sufficient, with no canonical edit,
+   axiom necessity, positive-mass, timelike-dynamics, or percentage claim; and
+7. a source-pinned runner/cache, independent eigenspace/lstsq recomputation,
+   full named-check mutation sensitivity, harness/graph registration, and
+   direct repository conformance review.

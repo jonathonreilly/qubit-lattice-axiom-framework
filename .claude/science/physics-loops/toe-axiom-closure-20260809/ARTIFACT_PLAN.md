@@ -16,3 +16,16 @@ mathematics closes natively or only at named-theorem granularity:
 
 A partial derivation remains in the loop pack unless it establishes a useful,
 nonduplicative exact lemma with direct trace to the named blocker.
+
+## Block 2
+
+Block 2 packages a stacked bounded theorem only if it contains all of:
+
+1. an exact finite contradiction for raw singleton identification;
+2. a current-axiom-compatible atomless family defeating finite restriction;
+3. an exact shared-effect atomic witness defeating automatic functionality;
+4. a complete N1--N8 gate preserving constructive closure routes;
+5. a typed sufficient axiom candidate that composes with Block 1 without
+   editing the canonical memo;
+6. an exact runner, content-pinned cache, canonical harness row, citation
+   graph entry, and direct conformance review.

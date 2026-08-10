@@ -58,6 +58,31 @@ the special qutrit frame functions induced by top-block compression. The
 bounded theorem may ship with that import exposed; the exact campaign target
 must remain `advances`, not `closes`.
 
+## Block 2 Target And Disposition
+
+Block 2 asks what the August 5 Admissibility distribution must become, or be
+proved to induce, before Block 1 is physically applicable. The locked target
+is not a broad axiom-necessity claim. It tests the two direct conversions from
+one probability measure on all `M_2(C)` possibilities to finite effect-menu
+probabilities:
+
+1. raw singleton mass `w(E)=mu({E})`;
+2. normalized finite restriction `K(E|M)=mu({E})/mu(M)`.
+
+Completion requires an exact contradiction or witness at each failed route,
+a live constructive escape analysis, and a typed sufficient candidate clause.
+The resulting theorem proves that raw singleton mass fails on two disjoint
+binary menus, that normalized restriction is undefined for an allowed
+full-support atomless family, and that an exact atomic restriction can be
+contextual on two ternary menus sharing one effect. It identifies the
+sufficient remaining interface as registered measurable outcome partitions
+that push the existing Admissibility measure to a conditional Record-readout
+menu kernel, descent to the same effect across menus, null/certain endpoint
+values, and binary/ternary physical coverage.
+
+This closes the type diagnosis. It does not close the physical interface,
+prove that an axiom edit is necessary, or authorize a canonical edit.
+
 ## Trace target
 
 The landed source states:

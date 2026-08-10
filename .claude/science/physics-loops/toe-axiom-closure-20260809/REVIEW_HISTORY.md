@@ -98,3 +98,57 @@ cache was mutated.
 Disposition: ready to commit and open as a bounded-theorem physics-loop PR.
 The only incomplete repository-wide gate is the disclosed current-main epoch
 failure already owned by PR #6061. No `review-loop` was invoked.
+
+## Block 2 axiom-interface synthesis
+
+- Re-read the exact August 5 Admissibility measure/support wording rather than
+  relying on the pre-revision July diagnoses.
+- Separated whole-domain normalization `mu(M_2(C))=1` from normalization
+  conditional on each finite outcome menu.
+- Proved the raw singleton route contradictory using the disjoint `x` and `z`
+  projective binary menus.
+- Constructed a full-support atomless Gaussian family whose scalar center
+  varies with the cubic-invariant neighbor occupancy count. It is compatible
+  with the current structural wording and makes every finite-menu restriction
+  `0/0` despite every exact effect being supported.
+- Constructed two exact ternary scaled-projector menus sharing one effect and
+  an atomic squared-trace measure whose normalized restrictions give that
+  effect `25/142` and `2/11`.
+- Preserved the barycenter/evaluation, Record event-algebra, apparatus-context,
+  and physical program-quotient routes as live under a complete N1--N8 gate.
+- Mapped a sufficient typed addition: registered measurable outcome partitions
+  pushing the existing Admissibility measure to a Record-readout menu kernel,
+  same-effect descent, null/certain endpoint values, and binary/ternary
+  coverage. No axiom edit or necessity claim was made.
+- Primary runner after controlled-status hardening: `PASS=20 FAIL=0`; cached
+  stdout is 3.8 KB and content/input fingerprints are fresh.
+- Eleven disposable-copy mutations each produced exactly one named failure and
+  a nonzero exit: current Admissibility sentence, raw mass-two predicate,
+  asymmetric ternary vector, `25/142` contextual target, the N8 heading, the
+  controlled trace-class field, the full-domain candidate coverage sentence,
+  the independent binary-menu identity check, the null endpoint, the
+  forming-Record probability link, and the measure-to-event pushforward.
+- An implementation-independent SymPy matrix recomputation verified both menu
+  sums, all rank-one determinants, four distinct binary projectors,
+  `Z=509/200`, and the exact values `25/142`, `2/11`, and `-9/1562`.
+- Vocabulary lint reports zero findings; strict audit lint reports no errors;
+  all 15 local file-link occurrences resolve; graph/link invariants pass with the
+  intended one-node/six-edge topology delta acknowledged.
+- Changed-audit-evidence reports `checked=0`, `failures=0`, and
+  `control_failures=0`; the new row is not selected until ledger seeding, while
+  its primary cache already carries the complete N5 certificate.
+- The full pipeline passed premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. It then reproduced the current-main dependency-policy
+  epoch stop in the restoration step: the manifest pins
+  `build_citation_graph.py` at
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  while the current file hashes to
+  `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  Open PR #6061 owns that policy repair; this science branch does not copy it.
+- Pipeline cleanup restored 1,044 generated tracked changes and removed 814
+  newly generated ledger shards. All are deterministic and recoverable by
+  rerunning the pipeline; the intended staged science delta remained intact.
+- Final cold diff and stacked-delta sanity passed against the exact PR #6063
+  head. `review-loop` remains unused.

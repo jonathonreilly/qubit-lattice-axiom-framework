@@ -1,12 +1,19 @@
 # PR Backlog
 
-Block 1 is mathematically packaged and ready to open. Every block-local gate
-below passes; the full pipeline reaches the current-main dependency-policy
-epoch failure already owned by open PR #6061.
+Block 1 is mathematically packaged and open as PR #6063 at commit
+`6ecca8e8f1`. Every block-local gate passed; its full pipeline reached the
+current-main dependency-policy epoch failure already owned by open PR #6061.
 
-Opened: PR #6063, commit `6ecca8e8f1`.
+Block 2 is stacked on PR #6063 in branch
+`physics-loop/toe-axiom-closure-block02-20260810`. Its local theorem and runner
+are complete. The cache is fresh, the graph manifest is regenerated, eleven
+load-bearing mutation probes fail closed, and the independent SymPy
+recomputation agrees. Direct conformance passes. The full pipeline reproduces
+only the current-main dependency-policy epoch stop owned by PR #6061; all
+generated churn has been removed. Final cold diff and stacked-delta sanity
+pass. The canonical axiom memo remains untouched.
 
-Before any Block 1 PR:
+Completed Block 1 delivery checklist:
 
 - resolve or honestly demote the exact target;
 - refresh `origin/main` and repeat the statement-level prior-art sweep;

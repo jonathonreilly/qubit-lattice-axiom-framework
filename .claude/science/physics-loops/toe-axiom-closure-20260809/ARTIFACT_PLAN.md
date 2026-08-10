@@ -341,3 +341,19 @@ with an exact homogeneous reaction-rank contract:
 The next physical artifact is an action-level derivation of the reaction
 gradients/targets or a curved/nonlinear branch-lift equation. A source-tailored
 projector alone is not that derivation.
+
+## Block 18 Artifact Plan
+
+Produce one bounded theorem packet that executes the native nonlinear-lift
+route on the actual Regge action:
+
+1. compute the first nonzero action coefficient along the exact extra branch;
+2. reconstruct the complete cubic polynomial on all eleven quadratic null
+   directions, not only the one-dimensional path;
+3. compare its exact metric-gradient image with the three declared compact
+   source covectors;
+4. verify the result independently and against an actual periodic box;
+5. land N1--N8 and all five resolution certificates;
+6. correct the unadopted candidate reaction-or-demonstrated-lift wording; and
+7. leave higher-order, mixed-range, curved, inhomogeneous, reaction, and
+   boundary routes open, with no canonical edit or fixed-percentage move.

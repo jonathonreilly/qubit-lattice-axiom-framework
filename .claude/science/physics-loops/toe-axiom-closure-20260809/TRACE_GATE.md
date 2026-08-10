@@ -314,3 +314,21 @@ coupling, curved/nonlinear regime, or realized member. Candidate axiom wording
 is corrected to full null-projection coverage with explicit existence-versus-
 uniqueness and metric-versus-extra-branch typing. No canonical edit, audit
 verdict, or fixed-percentage change occurs.
+
+Block 18 crosses the first native nonlinear branch-lift seam. On the actual
+Regge action, the independent quadratic zero branch is lifted exactly at
+cubic order, with positive quartic correction. “Exactly flat branch” is now
+restricted to the quadratic Hessian.
+
+The complete cubic trace is also exact. On all eleven quadratic null
+directions, the metric-gradient image is one fixed shear covector. None of the
+three declared compact source metric covectors lies on that line. This is a
+leading-cubic local statement, not a full nonlinear source obstruction.
+
+Reachability remains `upstream_support`: the result retires one hypothetical
+reaction requirement but does not solve or select the complete nonlinear
+source equation, boundary/background, action unit/orientation, coupling,
+Lorentzian/history law, Born selector, or realized member. Candidate wording
+now accepts either full variational reaction coverage or a demonstrated native
+lift with complete coupled source compatibility. No canonical edit, audit
+verdict, or fixed-percentage change occurs.

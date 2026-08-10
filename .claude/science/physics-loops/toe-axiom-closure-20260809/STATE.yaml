@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 18
-science_block: 17
-branch: physics-loop/toe-axiom-closure-block17-reaction-20260810
+cycle: 19
+science_block: 18
+branch: physics-loop/toe-axiom-closure-block18-nonlinear-regge-20260810
 base: origin/main@39c74017b870c27c804e3992f2a11e90336476b2
-worktree: /private/tmp/toe-block17-reaction.hW7IBO
+worktree: /private/tmp/toe-block18-nonlinear.kX8TBf
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now replacing the vague compact scale-mode residual with the exact homogeneous null-projection rank, proving the minimum variational reaction dimension for the declared source histories, and separating constant-metric reactions from the extra Regge branch while identifying the corrected candidate axiom contract
-active_route: exact reaction-rank theorem r(S)=rank(P_ker(Q0)S), declared source ranks one two and three, full temporal and edge rank ladder eight and eleven, pure-homothety residuals, exact nonmetric branch covector, and constructive three-channel, four-channel, and eleven-channel KKT completions
-hard_residual: physically derive or select the homogeneous reaction gradients and targets, or replace them by one curved nonlinear lifted background or open-boundary geometry law, within the same selected Record-history/source action; then supply constituent-causal rank-one matter, action unit, geometry dynamics, coupling/sign, Lorentzian completion, projective history, and realized member; Born functional/program selection remains separately open
-target_contract_status: complete_compact_reaction_rank_and_constructive_kkt_boundary
+goal: maximize honest TOE closure from the current axiom surface by executing the actual nonlinear Regge branch-lift route, determining the complete cubic null-sector action and declared-source image, and sharpening the reaction-or-lift candidate axiom contract without editing canonical axioms
+active_route: exact number-field Taylor expansion of the actual homogeneous Regge action, native cubic and quartic lift of the extra quadratic branch, complete cubic null-sector polarization, exact source-covector comparison, and controlled full-equation continuation queue
+hard_residual: compute the quartic and higher null/range effective tensor or solve the complete nonlinear fifteen-edge sourced equation, then physically select the action/source law, unit, boundary/background, coupling and orientation, Lorentzian dynamics, projective history, and realized member; constituent-causal rank-one matter and the Born functional/program selector remain separately open
+target_contract_status: exact_native_cubic_lift_complete_cubic_null_sector_and_leading_source_image_boundary
 A_min:
   - Lattice
   - Qubit
@@ -87,6 +87,7 @@ block_local_allowed_premises:
   - explicit degree-one composite chord length laws and their local edge derivatives
   - finite-dimensional KKT systems, orthogonal null projectors, exact source-family reaction ranks, and variational homogeneous constraint reactions
   - exact radical arithmetic for the ten constant-metric zero modes and one independent nonmetric Regge branch
+  - exact truncated Taylor jets over Q(sqrt(2),sqrt(3)), coordinate-permutation orbit reduction, simplex Gram minors, and high-precision action reconstruction
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -124,6 +125,8 @@ forbidden_imports:
   - promoting the flat compact positive-cone separator to a positive-mass, curved, nonlinear, alternate-carrier, boundary-independent, or universal gravity no-go
   - identifying a source-aligned null reaction basis with a physically selected constraint law
   - treating a pure homothety or constant-metric scale-plus-shape reaction as complete when the full null projection or extra branch remains uncovered
+  - treating one nonzero directional cubic coefficient as complete nonlinear source compatibility or stability
+  - extrapolating the homogeneous cubic null-sector source-image boundary to higher order, finite amplitude, curved, inhomogeneous, open, reaction, or alternate-carrier equations
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -178,6 +181,9 @@ files_touched:
   - docs/ADMISSIBILITY_COMPACT_REGGE_HOMOGENEOUS_REACTION_RANK_KKT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.py
   - logs/runner-cache/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.txt
+  - docs/ADMISSIBILITY_NONLINEAR_REGGE_EXTRA_BRANCH_CUBIC_LIFT_SOURCE_COMPATIBILITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py
+  - logs/runner-cache/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -232,6 +238,8 @@ open_imports:
   - the declared compact source generators have exact reaction ranks one, two, and three, but current axioms do not select their reaction gradients, targets, or even the source family
   - a pure homothety reaction leaves exact nonzero null residuals, and constant-metric scale-plus-shape reactions miss the independent nonmetric branch for the tick-plus-face and B generators
   - current axioms do not choose between three source-aligned mixed reactions, four metric/extra sector-separated reactions, eleven full-null reactions, or a changed boundary/background/curved/lifted equation
+  - the actual nonlinear Regge action lifts the independent extra quadratic branch at cubic order, but its complete cubic metric-gradient image is only one shear covector and does not contain the three declared compact source metric covectors
+  - quartic and higher mixed null/range terms, finite-amplitude homogeneous branches, curved or inhomogeneous equations, and boundary/reaction completions remain unclassified
   - open-boundary 1 over r shape does not by itself provide projective consistency, nonlinear gravity, or one realized history
 no_go_routes:
   - raw_singleton_measure_identification
@@ -251,6 +259,7 @@ no_go_routes:
   - single_positive_closed_helix_compact_k0_and_body_edge_fixed_quadratic_carrier_as_universal_obstruction
   - nonnegative_actual_edge_compact_dilation_boundary_as_universal_source_or_gravity_obstruction
   - positive_network_topology_or_reweighting_as_solution_of_unmodified_flat_compact_regge_zero_mode
+  - complete_leading_cubic_null_sector_polynomial_as_full_nonlinear_declared_source_solution
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -334,18 +343,21 @@ approach_family_coverage:
   source_aligned_kkt_completion: exact_minimal_three_channel_existence_construction
   sector_separated_kkt_completion: exact_four_channel_metric_plus_extra_branch_construction
   full_homogeneous_kkt_completion: exact_eleven_channel_unique_response_construction
-strongest_unresolved_proof_obligation: construct and physically select one combined Record-history-plus-geometry action whose allowed source family and homogeneous reaction gradients/targets satisfy complete null-projection coverage, or whose curved nonlinear lifted background or open boundary removes that obligation, while also deriving constituent-causal rank-one matter, action unit, geometry update, coupling sign and orientation, Lorentzian and nonlinear equations, projective completion, and realized history; independently close the Born functional and program selector
+  native_nonlinear_extra_branch_lift: exact_minus_four_sqrt_two_cubic_and_4023_over_256_quartic_coefficients_on_actual_action
+  complete_cubic_null_sector: exact_one_shear_metric_gradient_image_and_zero_u_metric_squared_tensor
+  leading_cubic_declared_source_comparison: exact_rank_two_nonparallel_certificates_for_all_three_generators
+strongest_unresolved_proof_obligation: compute the quartic and higher mixed null/range effective action or prove a controlled solution branch of the complete nonlinear fifteen-edge sourced equation, then physically select the combined Record-history/geometry action, source family, unit, boundary/background, coupling and orientation, Lorentzian dynamics, projective completion, and realized history; independently close constituent-causal rank-one matter and the Born functional/program selector
 trace_gate_classification: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: the compact actual Regge Hessian has eleven null directions; the fixed bouquet source, all 504 bundle-history means, and their combined family require exact reaction ranks one, two, and three, while all temporal and all edge rays require eight and eleven; pure homothety fails every declared generator, metric-only reactions miss the extra branch for two generators, and constructive three/four/eleven-channel KKT systems close existence, sector separation, or unique response respectively; physical reaction selection, Record/source action, causal matter, geometry dynamics, coupling, nonlinear, projective, Born, and realized-history selection remain open
-hypothetical_axiom_status: the candidate geometry-indexed history/action amendment should add complete compact null-projection coverage, explicit constant-metric versus nonmetric-branch treatment, variational rather than post hoc reactions, and existence-versus-unique-response typing; it remains unadopted, is sufficient rather than proved necessary or minimal, can remain a downstream convention, and no wording is edited into the canonical axioms
-review_disposition: block17_direct_conformance_complete_independent_audit_required
-pr_status: block17_science_and_conformance_pushed_pr_6088_clean_mergeable
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6088
+conditional_surface_status: the actual homogeneous Regge action lifts the exact extra quadratic branch at cubic order with coefficient minus four square-root two and quartic coefficient 4023 over 256; the complete cubic null-sector polynomial has one shear metric-gradient image that excludes the three declared source metric covectors; full higher-order, finite-amplitude, curved, inhomogeneous, boundary, reaction, and physical selection remain open
+hypothetical_axiom_status: the candidate geometry-history amendment should permit either complete variational null-reaction coverage or a demonstrated native nonlinear curved background or boundary lift with a complete coupled source-compatibility certificate; it remains unadopted, sufficient rather than necessary or minimal, and absent from canonical axioms
+review_disposition: block18_science_packet_primary_pass_conformance_pending_independent_audit_required
+pr_status: block18_science_packet_in_progress_not_yet_pushed
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -372,5 +384,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: derive one local covariant action whose homogeneous constraint gradients and targets realize the exact three-channel source-family reaction space without source tuning, or construct one curved nonlinear background or branch-lift equation that removes the compact residual while preserving the nonzero-mode Ward identities and long-wave pole
+next_exact_action: compute the quartic null-range effective tensor and run a controlled continuation of all fifteen homogeneous source equations; if no certified branch closes, execute the curved inhomogeneous or explicit boundary-reaction route without broadening the cubic boundary
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

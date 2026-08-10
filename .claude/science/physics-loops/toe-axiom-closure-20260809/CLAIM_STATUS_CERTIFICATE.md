@@ -394,3 +394,28 @@ bare_retained_allowed: false
 - Direct conformance is complete; independent audit remains required. No
   `review-loop` is invoked, and the canonical axioms and fixed percentages
   remain unchanged.
+
+## Block 18 Claim Status Certificate
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: advances
+conditional_surface_status: exact native cubic lift and complete cubic null-sector normal form on the supplied homogeneous actual Regge action
+hypothetical_axiom_status: sufficient reaction-or-demonstrated-lift clause with complete source-compatibility certificate, unadopted and nonminimal
+admitted_observation_status: null
+claim_type_reason: exact action coefficients and source covectors with homogeneous, Taylor-order, carrier, and physical-selection boundaries
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+- The extra quadratic zero branch is lifted exactly at cubic order with
+  coefficient `-4sqrt(2)` and quartic coefficient `4023/256`.
+- The complete cubic null-sector polynomial has one shear metric-gradient
+  direction; all `u x_i x_j` coefficients vanish exactly.
+- None of the three declared compact source metric covectors is parallel to
+  that image. N1--N8 passes only for this leading-cubic statement.
+- No full nonlinear source no-go, action selection, stability theorem, or
+  axiom necessity is claimed. Canonical axioms and fixed percentages remain
+  unchanged, and no `review-loop` is invoked.

@@ -92,3 +92,9 @@ the declared source-family equations, four separated reactions expose metric
 and extra-branch handling, and eleven reactions give unique source-agnostic
 homogeneous fixing. The negative result must never be broadened beyond the two
 explicit reaction subspaces.
+
+| complete leading cubic null-sector polynomial as the sole compact reaction to the declared sources | actual homogeneous Regge action, `delta ell=M_0x+ug`, Taylor order three, and sources `[s_tf,A,B]` | exact `P_3=8u^2 sum_shear x-4sqrt(2)u^3`, so the metric-gradient image is one shear line while every declared metric source covector has rank two with it | N1--N8 complete in the Block-18 landing note; action sign, branch sign, arbitrary metric mixing, source scaling, and leading massive-mode elimination are attempted | leading-cubic local non-membership only; no full nonlinear, finite-amplitude, curved, inhomogeneous, boundary, reaction, gravity, or axiom no-go | compute the quartic/null-range tensor and controlled full-equation continuation, or select a reaction/boundary/background completion |
+
+Block 18 positively retires exact all-order flatness of the extra branch. Its
+negative comparison must never be broadened beyond the complete cubic
+polynomial and three displayed source covectors.

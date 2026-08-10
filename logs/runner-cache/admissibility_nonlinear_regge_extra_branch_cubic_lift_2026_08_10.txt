@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py
+runner_sha256: 478d35204792d7d558d91556c9623f183f88b35aecbb4f7c806aeefcafd9001c
+input_fingerprint_sha256: cbf428cd88c5d9c990b5b15e8e9e5717325da05657a892a83d6e21041c4efc1b
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 45.40
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact Taylor algebra is performed on the supplied actual Regge action
+package_local_integrity_reads: current axioms, Block 17, and the retained 4D Kuhn/Coxeter carrier are source-bound
+analytic_boundary: homogeneous action coefficients and the complete cubic null-sector polynomial are exact in Q(sqrt(2),sqrt(3))
+physical_boundary: full nonlinear source solutions, action selection, boundary, coupling, Lorentzian dynamics, and realized history remain open
+[PASS] source-current-axiom-boundary
+[PASS] source-parent-boundary
+[PASS] exact-coordinate-symmetry
+       24 coordinate permutations preserve the complex, hinge classes, and g
+[PASS] exact-extra-vector-geometry
+       g is unit and exactly orthogonal to all ten constant-metric tangents
+[PASS] exact-cubic-metric-polarization
+       b=(0,0,0,0,8,8,8,8,8,8); all seven S4 orbits of the symmetric u*x*x tensor vanish
+[PASS] exact-extra-quadratic-nullity
+       one exact Hessian pairing vanishes in each of the four edge-weight orbits
+[PASS] exact-nonlinear-extra-branch-lift
+       S_R(tg)=-4*sqrt(2)*t^3+(4023/256)*t^4+O(t^5) per translation cell
+[PASS] exact-declared-source-null-covectors
+[PASS] leading-cubic-source-image-boundary
+       the cubic metric-gradient image is span(b); each declared metric source covector is nonparallel
+[PASS] independent-high-precision-action-reconstruction
+       max coefficient error=0.0
+[PASS] actual-periodic-box-action-match
+       S_cell(-0.02)=4.779398893046e-05; S_cell(+0.02)=-4.276061801390e-05
+[PASS] nondegenerate-simplex-domain
+       connected positive-Gram interval around zero is approximately (-0.458860264424,0.340150409120)
+[PASS] theorem-source-surface
+[PASS] no-go-discipline-source-surface
+[PASS] canonical-axiom-nonmutation
+per_element: checked exact Taylor coefficients for all four edge-weight symmetry orbits and both metric-component orbits
+per_site: checked one complete homogeneous translation cell with all fifty triangle classes and all two hundred forty dihedral contributions
+per_mode: checked the compact k=0 eleven-dimensional null sector, its ten metric coordinates, and its independent extra coordinate
+per_block: checked the positive cubic/quartic lift, complete cubic normal form, declared-source comparison, and candidate-axiom boundary
+lattice_wide: checked an actual periodic L=3 box against the uniform-cell action; inhomogeneous and open-boundary nonlinear solutions were not executed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

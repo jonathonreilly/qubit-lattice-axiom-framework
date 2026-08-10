@@ -309,3 +309,12 @@ Block-17 claim and all 17 stacked claims with zero failures or controls.
 Science commit is `1ca614c439`; conformance commit is `26a0ee9feb`. PR #6088
 is mergeable and `CLEAN`. Hard landing order adds #6088 after #6085. No
 `review-loop` is used.
+
+Block 18 is being packaged on branch
+`physics-loop/toe-axiom-closure-block18-nonlinear-regge-20260810`, based on
+exact Block-17 delivery head `2144e710711865f0350ccab35e87591dad2ba741`.
+It adds the exact native cubic/quartic extra-branch lift, complete cubic
+null-sector normal form, declared-source covector comparison, N1--N8 packet,
+and corrected candidate reaction-or-lift wording. Primary runner/cache is
+`PASS=15 FAIL=0` and source/input pinned. PR delivery and final conformance are
+pending; no `review-loop` is used.

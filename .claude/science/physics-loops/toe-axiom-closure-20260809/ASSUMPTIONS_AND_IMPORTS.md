@@ -354,3 +354,19 @@ reaction/boundary/background/curved/lifted equation whose image covers the
 complete allowed-source null projection, including the nonmetric branch when
 the current carrier retains it, and must state whether existence or unique
 homogeneous response is intended.
+
+## Block 18 Assumption And Import Delta
+
+- The mathematical object is the same actual four-dimensional Kuhn/Coxeter
+  Regge action and exact Block-17 branch `g`; no new carrier, projector,
+  source, or continuum action is imported.
+- Exact Taylor arithmetic in `Q(sqrt(2),sqrt(3))`, coordinate permutations,
+  Gram determinants, and finite-dimensional order counting are block-local.
+- The action is evaluated through fourth order along `g` and through third
+  order on the complete null sector. No uncomputed higher-order tensor is
+  assumed zero.
+- Physical action selection, orientation/unit, source/history law, coupling,
+  boundary/background, Lorentzian continuation, stability, and realized
+  member remain open imports.
+- No literature coefficient, observation, fit, Einstein equation, primitive,
+  canonical axiom edit, or audit verdict is imported.

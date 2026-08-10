@@ -809,3 +809,49 @@ stacked claims with zero failures and zero control failures. Science commit is
 mergeable on exact Block-16 delivery head
 `66f5ce6df27c777da04542804163e3e65476d10c`. No `review-loop`, canonical axiom
 edit, audit verdict, or fixed TOE percentage change occurs.
+
+## Block 18 science handoff
+
+Block 18 executes the native nonlinear branch-lift route left open by Block
+17. On the actual homogeneous four-dimensional Kuhn/Coxeter Regge action, the
+exact unit extra branch has per-cell expansion
+
+    S_R(tg)=-4sqrt(2)t^3+(4023/256)t^4+O(t^5).
+
+Thus the branch is flat through quadratic order only. The retained nonlinear
+action itself supplies a cubic lift; an independent reaction along `g` is not
+mandatory merely to remove all-order flatness.
+
+Exact polarization on the complete eleven-dimensional quadratic null space
+gives
+
+    P_3(M_0x+ug)=8u^2(x_xy+x_xz+x_xt+x_yz+x_yt+x_zt)-4sqrt(2)u^3.
+
+All pure-metric cubic terms and all `u x_i x_j` terms vanish. The complete
+cubic metric-gradient image is therefore one shear covector. The exact metric
+covectors of `s_tf,A,B` are each nonparallel to it. This is only a leading-
+cubic local boundary: quartic/higher mixed tensors, finite-amplitude branches,
+range-mode backreaction, curved/inhomogeneous equations, Block-17 reactions,
+and changed boundary/background sectors remain live.
+
+The primary runner is `PASS=15 FAIL=0` with a source/input-pinned cache.
+Independent 70-digit reconstruction agrees below `1e-55`; the actual periodic
+`L=3` box matches the uniform-cell action; exact Gram minors place the local
+nondegenerate branch in approximately
+`(-0.458860264424,0.340150409120)`. The note lands N1--N8 and all five N5
+resolution certificates. Ten process-local mutations fail closed across the
+load-bearing geometry, action, source, independent-control, domain, symmetry,
+orbit, and source-binding families. Citation registration is `5,464` nodes /
+`15,582` edges with the new node at out-degree two; direct vocabulary, strict
+lint, premise/model-family, claim-typing, Python/YAML, whitespace, exact
+17-path, cache, and canonical-nonmutation gates pass.
+
+Candidate wording is corrected to permit either complete variational reaction
+coverage or a demonstrated native nonlinear/boundary lift with a complete
+coupled source-compatibility certificate. It remains sufficient, unadopted,
+and nonminimal. Canonical axioms and fixed TOE percentages are unchanged.
+
+Next exact action: compute the quartic null/range effective tensor and perform
+a controlled continuation of the complete fifteen-edge homogeneous source
+equations; if that does not close, pivot to a curved/inhomogeneous or explicit
+boundary/reaction completion. Do not invoke `review-loop`.

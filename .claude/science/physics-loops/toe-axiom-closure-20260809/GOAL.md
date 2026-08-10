@@ -609,3 +609,21 @@ The physical target is not met: the framework does not select the reaction
 gradients, targets, source family, action unit, boundary/background, branch
 lift, curved/nonlinear equation, or realized history. Candidate axiom wording
 is sharpened but not adopted or edited into the canonical memo.
+
+## Block 18 Target And Disposition
+
+Block 18 executes the highest-ranked native nonlinear branch-lift route. The
+bounded target is met: the extra quadratic branch is lifted at cubic order,
+its quartic correction is exact, and the complete cubic polynomial on all
+eleven null directions is known.
+
+This retires the premise that a separate reaction along `g` is mandatory
+merely to remove all-order flatness. It does not retire compact-source
+compatibility: the cubic metric-gradient image is one shear line, while all
+three declared source metric covectors are nonparallel.
+
+The physical target remains open at the full nonlinear fifteen-edge equation,
+action/source selection, unit/orientation, boundary/background, coupling,
+Lorentzian dynamics, projective history, Born selector, and realized member.
+Candidate wording is corrected, not adopted, and canonical axioms are
+untouched.

@@ -392,3 +392,16 @@ families and change none of the Regge carrier, Block-15/16 source rows,
 homogeneous constraints, or candidate geometry wording; #6084/#6086 share
 only the regenerated citation-manifest surface. Block 17 is open as clean,
 mergeable PR #6088. No `review-loop` is used.
+
+## Block 18 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| native nonlinear extra lift | actual `S_R(ell_flat+t g)` | exact cubic `-4sqrt(2)t^3`; quartic `4023/256` | retain as action-native lift; an independent `g` reaction is not mandatory merely for lifting |
+| complete cubic null mixing | `delta ell=M_0x+ug` | exact `P_3=8u^2 sum_shear x-4sqrt(2)u^3`; all `u x_i x_j` terms vanish | retain as complete local normal form |
+| declared source comparison | `M_0^T[s_tf,A,B]` against the cubic metric-gradient image | every source gives rank two with the one shear vector | retain narrow leading-cubic boundary only |
+| leading massive-mode elimination | four nonnull Hessian directions | response begins at the next effective order and cannot change the cubic image | retain order-count control; compute quartic effective tensor next |
+| quartic/higher mixed branch | full null/range Taylor tensor | unclassified beyond the pure-`g` quartic coefficient | highest-value next local route |
+| finite-amplitude full equation | all fifteen homogeneous lengths | exploratory roots are noncertifying and omitted | controlled continuation remains live |
+| curved/inhomogeneous/boundary/reaction route | changed field/domain or Block-17 KKT terms | outside the cubic polynomial and able to change compatibility | preserve; no full nonlinear no-go |
+| candidate amendment delta | reaction coverage or demonstrated native lift plus complete source certificate | sufficient by premise, not adopted or minimal | record wording; do not edit canonical axioms |

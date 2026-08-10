@@ -1048,3 +1048,28 @@ instance or Fourier census.
   share at most the mechanically regenerated citation manifest and have no
   Block-17 science-packet or campaign-state collision. No `review-loop` is
   invoked.
+
+## Block 18 science record
+
+- Reassembled all 50 triangle classes and 240 dihedral incidences with exact
+  Taylor jets over `Q(sqrt(2),sqrt(3))`.
+- Confirmed coefficients `0,0,0,-4sqrt(2),4023/256` through order four along
+  the exact unit extra branch.
+- Confirmed all 24 coordinate permutations, both metric-component orbits, and
+  all seven symmetric metric-pair orbits, yielding the complete cubic normal
+  form with zero `u x_i x_j` tensor.
+- Confirmed exact quadratic nullity in all four edge-weight orbits and the
+  nondegenerate interval `(-0.458860264424,0.340150409120)`.
+- Confirmed exact source covectors and rank-two nonparallel certificates.
+- Independent 70-digit reconstruction agrees below `1e-55`; the original
+  periodic `L=3` box agrees with the uniform-cell action.
+- Ten process-local mutations fail closed across branch geometry, hinge
+  incidence, cubic-angle algebra, source rows, independent reconstruction,
+  periodic-box normalization, Gram boundaries, coordinate symmetry,
+  metric-pair orbit coverage, and source-note/N1--N8 binding.
+- Primary cache is `PASS=15 FAIL=0` with all five N5 resolution lines.
+  Citation registration is `5,464` nodes / `15,582` edges with the new node at
+  out-degree two. Vocabulary, strict lint, premise/model-family, staged claim
+  typing, Python/YAML, whitespace, exact 17-path, cache, and canonical-
+  nonmutation gates pass. Full integration and PR delivery remain pending. No
+  canonical edit, audit verdict, percentage move, or `review-loop` occurs.

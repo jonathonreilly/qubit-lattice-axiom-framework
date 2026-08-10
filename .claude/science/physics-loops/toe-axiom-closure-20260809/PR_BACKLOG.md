@@ -512,6 +512,10 @@ intervention and zero-contact result, and a configuration-dependent anchored
 full-tensor escape. Primary cache is `PASS=17 FAIL=0` in `13.1 s`; seventeen
 isolated fresh-process forced failures pass; graph registration is
 `5,473/15,629` with out-degree five and fifteen helpers. Direct conformance
-passes; exact-stack/overlay pipelines, changed evidence, commit, push, and PR
-delivery remain pending. PR #6096 is a complementary proper-length sibling requiring
+passes. The exact stack reaches only the inherited stage-7 dependency-policy
+epoch mismatch after `4,811` rows / `3,689` runners; the controlled five-file
+current-main overlay passes all 18 stages at checkpoint `87d3c253d997`.
+Changed evidence is clean for `1/1` Block-27 and `27/27` stacked claims.
+Science commit is `2d350c4f8e`; campaign conformance, push, and PR delivery
+remain pending. PR #6096 is a complementary proper-length sibling requiring
 explicit reconciliation. No `review-loop` is used.

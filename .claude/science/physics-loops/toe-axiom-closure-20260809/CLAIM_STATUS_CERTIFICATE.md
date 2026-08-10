@@ -755,6 +755,11 @@ independent_audit_required: true
   connected/contact, generator, and pure-geometry routes remain live. No
   source/gravity/axiom no-go, canonical edit, percentage move, audit verdict,
   or `review-loop`.
-- Conformance and delivery: direct gates pass; exact-stack pipeline,
-  controlled current-main overlay, changed evidence, commit, push, PR, and
+- Conformance: direct gates pass. The exact stack reproduces only the inherited
+  stage-7 dependency-policy epoch mismatch after `4,811` rows / `3,689`
+  runners. A controlled five-file current-main overlay passes all 18 stages
+  and finalizes checkpoint `87d3c253d997`. Changed evidence is clean for Block
+  27 alone (`1/1`) and the full stack (`27/27`), with zero failures and zero
+  control failures.
+- Science commit: `2d350c4f8e`; campaign conformance, push, PR delivery, and
   independent audit remain pending.

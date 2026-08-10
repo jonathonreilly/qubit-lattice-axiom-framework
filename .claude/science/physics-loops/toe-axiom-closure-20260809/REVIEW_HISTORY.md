@@ -1539,6 +1539,12 @@ instance or Fourier census.
   exactly one intended named check; aggregate result is `PASS=17 FAIL=0`.
 - Citation registration is `5,473` nodes / `15,629` edges; the new node has
   out-degree five and fifteen resolved helper runners.
-- Direct conformance passes; exact-stack/controlled-overlay pipelines, changed
-  evidence, commits, push, and independent audit remain pending. No canonical
-  axiom, fixed percentage, audit verdict, or `review-loop` is changed.
+- Direct conformance passes. The exact stack seeds `4,811` rows and classifies
+  `3,689` runners before reproducing only the inherited stage-7 dependency-
+  policy epoch mismatch. A controlled five-file current-main overlay passes
+  all 18 stages and finalizes checkpoint `87d3c253d997`.
+- Changed-evidence readiness marks Block 27 alone (`1/1`) and all 27 stacked
+  claims (`27/27`) ready with zero failures and zero control failures.
+- Science commit is `2d350c4f8e`; campaign conformance, push, PR delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.

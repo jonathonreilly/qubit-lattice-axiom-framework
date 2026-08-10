@@ -572,5 +572,8 @@ complete conditional nonlinear compact solution:
 - construction evidence: primary cache `PASS=17 FAIL=0` in `13.1 s`;
   seventeen isolated fresh-process forced failures each trip exactly one
   named check; graph `5,473/15,629`, out-degree five, with fifteen resolved
-  helpers; direct gates pass; exact-stack and controlled-overlay pipelines are
-  pending
+  helpers; direct gates pass; the exact stack reaches only the inherited
+  stage-7 dependency-policy epoch mismatch after `4,811` rows / `3,689`
+  runners; the controlled five-file current-main overlay passes all 18 stages
+  at checkpoint `87d3c253d997`; changed evidence is clean for `1/1` Block-27
+  and `27/27` stacked claims; science commit `2d350c4f8e`; delivery pending

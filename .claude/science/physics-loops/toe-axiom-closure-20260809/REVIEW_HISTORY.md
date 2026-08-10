@@ -1443,5 +1443,11 @@ instance or Fourier census.
   out-degree four. Vocabulary, strict lint, premise purity, model-family
   normalization, Python/YAML, whitespace, source/input cache, canonical
   nonmutation, and graph/link/class-F invariant gates pass.
-- Pipeline, changed evidence, commits, delivery, and independent audit remain
-  pending.
+- The exact stack seeds `4,808` rows and classifies `3,686` runners before
+  reproducing only the inherited stage-7 dependency-policy epoch mismatch. A
+  controlled five-file current-main overlay passes all 18 stages and finalizes
+  checkpoint `bbe9aca7cae0`.
+- Changed-evidence readiness marks Block 24 alone (`1/1`) and all 24 stacked
+  claims (`24/24`) ready with zero failures and zero control failures.
+- Science commit is `ec49ca1720`; conformance commit, delivery, and independent
+  audit remain pending.

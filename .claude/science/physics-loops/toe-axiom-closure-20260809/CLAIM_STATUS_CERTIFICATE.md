@@ -656,9 +656,12 @@ independent_audit_required: true
   `0.964348`, `0.895781`, and `0.912270`.
 - Runner/cache: source/input pinned, `PASS=13 FAIL=0` in `13.27 s`.
 - Thirteen isolated mutations each fail exactly one intended check. The graph
-  is `5,470/15,617` with out-degree four, and direct gates pass. Pipeline,
-  changed evidence, and delivery are pending. Independent audit remains
-  required.
+  is `5,470/15,617` with out-degree four, and direct gates pass. The exact
+  stack reproduces only the inherited stage-7 policy-epoch mismatch after
+  `4,808` rows / `3,686` runners; the controlled five-file overlay passes all
+  18 stages at checkpoint `bbe9aca7cae0`. Changed evidence is clean for
+  `1/1` Block-24 and `24/24` stacked claims. Delivery is pending; independent
+  audit remains required.
 - Governance: no contact-term, coframe, gravity, axiom, physical ghost, or
   universal-carrier no-go; no canonical edit, percentage move, audit verdict,
   or `review-loop`.

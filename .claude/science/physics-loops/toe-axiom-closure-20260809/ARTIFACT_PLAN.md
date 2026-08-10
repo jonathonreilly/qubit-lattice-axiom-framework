@@ -497,4 +497,8 @@ complete conditional nonlinear compact solution:
   verdicts, and `review-loop`
 - conformance: primary cache `PASS=13 FAIL=0`; thirteen isolated mutations
   each fail exactly one intended check; graph `5,470/15,617`, out-degree four;
-  direct gates pass; pipeline overlay, changed evidence, and delivery pending
+  direct gates pass; the exact stack stops only at the inherited stage-7
+  dependency-policy epoch mismatch after `4,808` rows / `3,686` runners; the
+  controlled five-file overlay passes all 18 stages at checkpoint
+  `bbe9aca7cae0`; changed evidence is clean for `1/1` Block-24 and `24/24`
+  stacked claims; delivery pending

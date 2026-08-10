@@ -1129,8 +1129,12 @@ not order or sign.
 
 Primary cache is `PASS=13 FAIL=0` in `13.27 s`; thirteen isolated mutations
 each fail exactly one intended check. The graph is `5,470/15,617` with
-out-degree four, and direct gates pass. Pipeline, changed evidence, commits,
-and PR delivery remain pending. The next law must derive connected covariance,
+out-degree four, and direct gates pass. The exact stack reaches only the
+inherited stage-7 policy-epoch stop after `4,808` rows / `3,686` runners; the
+controlled five-file overlay passes all 18 stages at checkpoint
+`bbe9aca7cae0`. Changed evidence is clean for `1/1` Block-24 and `24/24`
+stacked claims. Science commit is `ec49ca1720`; conformance commit and PR
+delivery remain pending. The next law must derive connected covariance,
 site-dependent contact, additive normalization, and the generator connection
 on one nonuniform background. No canonical edit, percentage move, audit
 verdict, or `review-loop` occurs.

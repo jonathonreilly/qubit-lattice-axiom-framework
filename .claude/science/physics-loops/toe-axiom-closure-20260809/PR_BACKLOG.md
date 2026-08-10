@@ -88,8 +88,11 @@ inertias under positive weights, but order-one no-overlap for all three source
 matrices in the unconstrained real four-orientation span. Primary cache is
 `PASS=13 FAIL=0` in `13.27 s`; thirteen isolated mutations and the direct
 gates pass; graph registration is `5,470/15,617` with out-degree four.
-Pipeline, changed evidence, and delivery remain pending. No `review-loop` is
-used.
+The exact stack reproduces only the inherited stage-7 policy-epoch stop after
+`4,808` rows / `3,686` runners; the controlled five-file overlay passes all 18
+stages at checkpoint `bbe9aca7cae0`. Changed evidence is clean for `1/1`
+Block-24 and `24/24` stacked claims. Science commit is `ec49ca1720`;
+conformance commit and delivery remain pending. No `review-loop` is used.
 
 Completed Block 1 delivery checklist:
 

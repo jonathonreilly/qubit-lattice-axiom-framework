@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_2026_08_10.py
+runner_sha256: 79cc9fe00670640f7e7cf0f26ed2e2cd7b44a330f526c09a4b2992c2a805955a
+input_fingerprint_sha256: 8a253834c455aa99c4953e66d933b083a456f305265e1718b63a970a70fcf9c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the finite binary compatibility theorem and cubic count classification are proved in-source from exact conditional odds
+package_local_integrity_reads: current axioms and three explicit local-measure, global-history, and source-action boundaries are source-bound
+analytic_boundary: square-generation of monotone hypercube paths and the all-environment cubic classification are proved generally; exact rational fixtures are executed
+negative_scope: local normalization and covariance alone do not force static full-conditional compatibility; no axiom inconsistency, global-law impossibility, or gravity no-go is claimed
+PASS: source-current-axiom the one-site distribution, nearest-neighbor determination, covariance, and nondynamics clauses are present
+PASS: source-local-measure-parent the preceding local measure is typed on one M2 possibility domain
+PASS: source-global-history-parent the existing process-law corpus keeps projective consistency explicit
+PASS: source-action-parent the gravity source-action identification remains explicitly open
+PASS: general-square-necessity all exact square curls vanish for conditionals derived from an arbitrary positive four-site joint law
+PASS: general-path-reconstruction path integration recovers every arbitrary joint weight up to the unique common scale
+PASS: general-normalized-uniqueness normalization removes the common scale and reproduces the unique positive joint law
+PASS: general-full-conditionals every recovered one-site conditional probability equals its supplied odds conversion
+PASS: single-kernel-mutation one exact local-odds mutation creates nonzero square curl
+PASS: path-dependence-control the same mutation makes two orders from 00 to 11 disagree
+PASS: cubic-count-constraint-rank the exact all-environment first-difference constraints have rank five and nullity two
+PASS: cubic-count-affine-basis constant and neighbor-count vectors are independent null vectors and therefore span every compatible logit
+PASS: compatible-cubic-rule the exact rule has geometric odds 2^(k-3), affine logit, full support, and genuine neighbor variation
+PASS: compatible-code-swap-symmetry the compatible fixture obeys q(6-k)=1-q(k) and q(3)=1/2
+PASS: hostile-local-rule-strength the hostile rule is normalized, strictly positive, count-varying, monotone, and code-swap symmetric
+PASS: hostile-nongeometric-odds its exact successive odds ratios are not constant
+PASS: hostile-square-witness independent exterior counts a=0,b=1 give path products 1/14 and 1/9, so no positive joint law has these as full conditionals
+PASS: proper-cubic-group the exact signed-permutation construction produces all 24 proper cubic neighbor permutations
+PASS: count-rule-covariance every one of 64 neighbor patterns keeps its good and hostile probabilities under all 24 proper cubic rotations
+PASS: ising-action-conditionals the exact finite action A^(sum x)B^(active edges) reproduces q(a+y) and q(b+x) on both sites
+PASS: ising-action-square the compatible fixture gives the same exact 1/16 ratio along both update orders
+PASS: ising-action-normalization the derived two-site finite-volume law is positive and normalized
+PASS: construction-source-surface the source states the square criterion, cubic classification, action, hostile witness, and candidate compatibility clause
+PASS: boundary-source-surface the source preserves governance, percentage, semantic-alternative, and global-negative limits
+PASS: machine-status-contract the source carries the bounded upstream-support trace contract
+PASS: canonical-nonmutation the compatibility, projective joint-law, and Ising-action wording is absent from the canonical memo
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, accepted steelman, and broad-negative rejection are visible
+per_element: seven exact conditional probabilities, their odds, six first differences, and both two-path products are checked
+per_site: a binary central M2 code has one normalized full-support conditional law for each neighbor count
+per_mode: general four-site reconstruction, compatible geometric odds, hostile symmetric odds, and a one-entry mutation are separated
+per_block: local conditionals -> square compatibility -> unique finite joint law -> cubic Ising-type action is checked
+lattice_wide: covariance is checked over all 24 proper cubic rotations; infinite-volume existence, dynamics, formation order, realized history, and gravity identification are not executed
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

@@ -146,3 +146,23 @@ repeated-trial law, or realized-history typicality.
 The theorem does not import a preferred positive functional, selected effect
 program, apparatus identity, observed probability, temporal write process,
 formation site/rate, IID trial law, or realized-history typicality.
+
+## Block 8 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| current sitewise neighbor-conditioned distributions | local kernel surface | Admissibility baseline | yes | source-bound; no global meaning inferred |
+| finite binary code {-I_2,+I_2} | exact test subalphabet | constructed inside M2(C) | yes | no physical code selection inferred |
+| strict positivity | conditional-odds/path theorem | explicit scope premise | yes | zero-support components remain open |
+| square-curl equations | compatibility criterion | derived finite algebra | yes | proved necessary and sufficient |
+| count-only cubic symmetry | action classification | explicit specialization | yes | stronger than generic proper-cubic covariance |
+| code-swap symmetry | optional one-parameter reduction | explicit conditional symmetry | no for main theorem | not inferred from Qubit or Admissibility |
+| finite exterior condition | finite-volume action | explicit boundary datum | yes | no infinite-volume phase selection |
+| projectively consistent family of finite-region joint laws | candidate axiom consequence | open physical/global interface | no for theorem; yes for foundation-level closure | not assumed |
+| ordered update process | alternative semantics | live route | no | scheduler/dynamics not supplied |
+| gravity source/tensor identity | physical interpretation | open import | no | statistical action is not called gravity |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+No literature theorem, observed value, fitted parameter, update order,
+formation law, global M2 measure, realized member, metric, curvature carrier,
+stress tensor, or Newton coupling is imported.

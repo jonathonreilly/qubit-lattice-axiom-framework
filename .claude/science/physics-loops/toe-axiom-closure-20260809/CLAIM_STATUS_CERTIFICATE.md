@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact M_2(C) effect-label injection, fixed content decoders, finite additive scalar readout, exact covariant atomic effect-weight laws, shared-effect descent, and common-Gaussian-uniformizer factorization; positive-functional/program selection, physical quotient, occurrence, histories, and axiom adoption remain open."
+claim_type_reason: "Exact finite binary square-curl compatibility, unique joint-law reconstruction, cubic count-only geometric-odds classification, derived finite Ising-type action, and an exact all-24-covariant hostile rule; continuous M2 compatibility, dynamics, history, gravity identification, and axiom adoption remain open."
 trace_class: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "the existing one-site type stores one qubit effect and one real outcome label with fixed inverse decoders, and a supplied positive functional/effect resolution gives an exact fixed-decodable atomic law; physical selection of that law and program quotient is not derived"
-hypothetical_axiom_status: "Qubit/Record type enlargement is removed from the candidate update; the remaining sufficient interface is an Admissibility-side positive-functional/effect-program map plus a physical preparation/effect quotient, with histories separate; no canonical edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "strictly positive finite binary sitewise kernels are full conditionals of one positive joint law exactly when every two-site square has zero multiplicative curl; count-only cubic compatibility forces affine logit and a finite nearest-neighbor action"
+hypothetical_axiom_status: "one sufficient Admissibility addition requires the sitewise laws to be full conditionals of a covariant, projectively consistent family of finite-region joint laws; ordered update-kernel semantics remains live; no canonical edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -79,6 +79,21 @@ bare_retained_allowed: false
   fixed output decoder, so no larger Record type or indexed post-formation
   readout is needed on this route. Selection of the positive functional,
   effect program, physical quotient, occurrence, and histories remains open.
+- Block 8 separates one normalized distribution at each site from a
+  compatible joint law across sites.
+- On a finite strictly positive binary sector, vanishing multiplicative curl
+  on every two-site square is necessary and sufficient; path integration
+  constructs the unique normalized joint law.
+- For a count-only cubic rule, compatibility in every edge environment is
+  equivalent to geometric conditional odds and therefore an affine logit and
+  nearest-neighbor Ising-type finite action.
+- A normalized monotone code-swap-symmetric rule remains invariant under all
+  24 proper cubic rotations yet fails with exact path products 1/14 and 1/9.
+- This is not an axiom inconsistency: an ordered update-kernel reading remains
+  live but needs a scheduler/dynamics and does not imply the static action.
+- Physical binary-code selection, general M2 compatibility, finite-to-infinite
+  consistency, realized history, and source/tensor/gravity identification
+  remain open.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

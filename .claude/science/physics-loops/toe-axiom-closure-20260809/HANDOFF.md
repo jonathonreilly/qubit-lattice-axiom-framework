@@ -304,3 +304,39 @@ The 18-file science delta is committed as `1c87eaedf2` and open as stacked PR
 Next exact action: record the delivery head, then search landed M2-native
 contact/action results for a selector of the positive functional and physical
 quotient.
+
+## Block 8 science handoff
+
+The selector/history prior-art check found that the broad non-IID frequency
+route is already closed conditionally by Cycle 21 and that the qubit
+functional representation is already closed conditionally by Cycle 20. The
+campaign therefore pivoted to the weakest TOE lane and tested the
+local-to-global meaning of the revised Admissibility distribution.
+
+For finite strictly positive binary full-conditionals, Block 8 proves:
+
+- a positive joint law exists exactly when every two-site configuration
+  square has zero multiplicative curl;
+- path integration constructs that law uniquely;
+- nearest-neighbor locality makes only adjacent-site squares load-bearing;
+- a cubic count-only rule is compatible exactly when its odds are geometric,
+  so its logit is affine and its finite-volume action is nearest-neighbor
+  Ising type; and
+- an exact normalized, monotone, code-swap-symmetric rule is invariant under
+  all 24 proper cubic rotations but fails one square with path products 1/14
+  and 1/9.
+
+The update-kernel interpretation remains live and is accepted as the main
+steelman; it needs a scheduler/dynamics and may be order dependent. The exact
+candidate Admissibility addition is global compatibility/projective
+consistency, not an action formula and not a gravity clause. The physical
+binary code, continuous M2 law, formation order, realized history, and
+source/tensor identification remain open.
+
+The primary runner is PASS=27 FAIL=0 with 4,511 characters of stdout. An
+independent SymPy elimination confirms the two-site compatibility condition,
+rank five/nullity two of the cubic logit system, the compatible 1/16 path, the
+hostile 1/14 and 1/9 paths, and exact action conditionals. Harness/graph
+registration, mutations, direct conformance, commit, push, and stacked PR
+delivery remain to be completed. No canonical axiom is edited, no percentage
+moves, and no review-loop is invoked.

@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 8
-science_block: 7
-branch: physics-loop/toe-axiom-closure-block07-20260810
+cycle: 9
+science_block: 8
+branch: physics-loop/toe-axiom-closure-block08-20260810
 base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-worktree: /private/tmp/toe-axiom-block07.fifjfO/worktree
+worktree: /private/tmp/toe-axiom-block08.uG4cDV/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now testing whether the existing M_2(C) possibility type can carry a fixed-decodable effect/label atomic law and isolating the remaining local-law selection obligation
-active_route: exact M2 effect-label carrier plus conditional atomic positive-functional law and common-Gaussian-uniformizer factorization
-hard_residual: derive or adopt a covariant nearest-neighbor selector for the normalized positive functional, finite effect program, and physical preparation/effect quotient, then connect formation events into trials and realized histories; the stronger native frame lemma remains separately open
-target_contract_status: complete_m2_effect_label_carrier_plus_conditional_atomic_born_law_factorization
+goal: maximize honest TOE closure from the current axiom surface, now testing whether sitewise Admissibility distributions compose into one compatible joint law and whether compatibility derives an action on a cubic binary sector
+active_route: exact finite binary square-curl compatibility theorem plus cubic count-only affine-logit and Ising-action classification
+hard_residual: choose or derive full-conditional compatibility versus an ordered update process, extend the selected physical law beyond the finite binary sector, and identify any derived statistical action with physical source/tensor response; Born functional/program selection and realized histories remain separately open
+target_contract_status: complete_finite_binary_compatibility_and_cubic_count_action_axiom_boundary
 A_min:
   - Lattice
   - Qubit
@@ -45,6 +45,11 @@ block_local_allowed_premises:
   - elementary Gaussian convolution, dominated differentiation, entire-function identity, and exact rational pole arithmetic
   - central anti-Hermitian effect-label encoding, Hermitian-part and imaginary-trace decoding, and finite additive scalar sums
   - normalized positive linear functionals and finite atomic measures as explicit conditional mathematical objects
+  - finite strictly positive binary full-conditionals and exact conditional odds
+  - configuration-hypercube square relations, monotone path integration, and exact rational rank calculations
+  - the central binary code {-I_2,+I_2} as an explicit mathematical subalphabet of M_2(C)
+  - proper-cubic neighbor permutations and count-only conditional rules
+  - finite-region normalized weights and their derived statistical action as conditional mathematical objects
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -57,6 +62,10 @@ forbidden_imports:
   - direct identification of a generic raw M_2(C) realization with a density operator
   - a selected control weight, eigenbasis, partial-trace implementation, or physical CNOT program
   - a physically selected preparation/program index, positive functional, effect resolution, operational quotient, or alternate distribution shape
+  - full-conditional compatibility, projective consistency, or a global joint law as unstated current-axiom content
+  - a formation/update order, scheduler, rate, causal dynamics, or realized history
+  - physical selection of the binary code or its code-swap symmetry
+  - identification of the derived finite statistical action with gravity, curvature, stress, or Newton coupling
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -81,6 +90,9 @@ files_touched:
   - docs/ADMISSIBILITY_M2_EFFECT_LABEL_RECORD_CARRIER_ATOMIC_BORN_LAW_FACTORIZATION_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_2026_08_10.py
   - logs/runner-cache/admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_2026_08_10.txt
+  - docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -100,6 +112,10 @@ open_imports:
   - the current M_2(C) type can store one effect plus one real label, but current axioms do not select the positive functional, effect program, or atomic law that gives those codewords Born-form masses
   - current axioms do not register the physical preparation/effect quotient needed to identify equivalent neighbor conditions and outcomes
   - current axioms do not turn one-shot atomic masses into formation sites/rates, trials, causal order, frequencies, or one realized history
+  - current axioms do not explicitly state that sitewise distributions are compatible full conditionals of one joint law
+  - current axioms do not choose between static full-conditional semantics and an ordered update-kernel semantics
+  - finite-region compatibility does not itself supply projective consistency across regions, infinite-volume selection, dynamics, or one realized member
+  - the exact binary statistical action is not identified with a gravitational source/action, curvature carrier, tensor response, coupling, or scale
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
@@ -110,6 +126,7 @@ no_go_routes:
   - direct_raw_gaussian_sample_as_density_state
   - conditioned_cnot_covariance_as_unique_compiler_selector
   - fixed_bounded_content_decoder_for_gaussian_open_center_family
+  - local_normalization_covariance_and_code_swap_as_static_full_conditional_compatibility
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -140,18 +157,23 @@ approach_family_coverage:
   conditional_atomic_effect_weight_law: exact_normalized_fixed_decoded_shared_effect_atoms_for_supplied_positive_functional_and_program
   common_uniformizer_atomic_factorization: exact_deterministic_pushforward_on_displayed_gaussian_family
   record_type_enlargement_for_effect_plus_real_label: retired_unnecessary_on_declared_carrier_scope
-strongest_unresolved_proof_obligation: derive a physical covariant nearest-neighbor selector for one normalized positive functional, finite operational-effect program, and preparation/effect quotient, then derive occurrence/trial/history structure; otherwise preserve the exact sufficient Admissibility wording for explicit owner decision
+  finite_binary_square_curl_compatibility: exact_necessary_and_sufficient_with_unique_path_integrated_joint_law
+  cubic_count_only_compatibility: exact_geometric_odds_affine_logit_classification
+  finite_binary_statistical_action: exact_nearest_neighbor_ising_type_form_for_compatible_count_rules
+  symmetric_hostile_local_rule: exact_all_24_covariant_full_support_on_code_witness_with_paths_one_fourteenth_and_one_ninth
+  full_conditional_versus_update_kernel_semantics: explicitly_separated_with_update_route_live
+strongest_unresolved_proof_obligation: derive or adopt one global compatibility/update semantics for the physical Admissibility law, then prove its finite/infinite history consistency and physical source/tensor identification; independently derive the Born positive-functional/program quotient and formation/history structure
 trace_gate_classification: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: exact existing-type effect-label carrier, fixed inverse content decoders, finite additive scalar readout, conditional atomic effect-weight law, shared-effect atom, and common-uniformizer factorization; physical functional/program selection, quotient, occurrence, and history remain open
-hypothetical_axiom_status: no Qubit or Record type enlargement is needed for one effect plus one real label; the remaining sufficient candidate is an Admissibility-side positive-functional/effect-program map and physical preparation/effect quotient, with histories separate; no axiom edit authorized
-review_disposition: block07_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: open_6075_stacked_on_open_6074
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6075
+conditional_surface_status: exact finite positive binary square-curl equivalence, unique joint-law reconstruction, cubic count-only geometric-odds classification, derived finite Ising-type action, and exact covariant hostile witness; continuous M2, dynamics, history, and gravity identification remain open
+hypothetical_axiom_status: one sufficient Admissibility addition makes the sitewise distributions one-site full conditionals of a covariant, projectively consistent family of finite-region joint laws; update-kernel semantics remains a live alternative; no axiom edit authorized
+review_disposition: block08_direct_self_review_in_progress
+pr_status: local_block08_not_yet_open
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -178,5 +200,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: complete Block 7 delivery recording, then test landed M_2(C)-native contact/action structure for a physical positive-functional and operational-quotient selector before pivoting to the causal trial/history bridge
+next_exact_action: complete Block 8 mutation sensitivity, harness/graph registration, direct conformance, and stacked PR delivery; then test the derived binary statistical action against physical source/tensor bridge obligations
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

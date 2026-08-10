@@ -468,3 +468,32 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   science delta as `1c87eaedf2`, pushed the dedicated branch, and opened PR
   #6075 on the exact #6074 head. Hard landing order is #6063, #6065, #6067,
   #6070, #6071, #6074, then #6075.
+
+## Block 8 direct-review record
+
+- Prior-art search found no in-repo finite full-conditional square-curl or
+  cubic count-logit classification. Cycle 21 already owns the broad non-IID
+  frequency theorem, Cycle 20 owns conditional qubit functional
+  representation, Cycle 30 keeps global history consistency explicit, and
+  Cycle 33 supplies one architecture-specific local-to-global route.
+- The finite binary theorem proves necessity and sufficiency of zero
+  multiplicative curl, constructive unique joint-law recovery, adjacent-edge
+  reduction under locality, and geometric odds / affine logit for every
+  compatible count-only cubic rule.
+- The exact hostile rule is normalized, strictly positive on its two-code
+  support, monotone, code-swap symmetric, and invariant across all 24 proper
+  cubic rotations, yet its two square paths are 1/14 and 1/9.
+- The update-kernel steelman is accepted. The negative scope does not call the
+  axioms inconsistent and does not exclude ordered processes, supplied global
+  laws, architecture-specific gluing, continuous specifications, or
+  deterministic routes.
+- The primary runner passes 27 checks with 4,511 characters of stdout. An
+  independent SymPy route confirms the two-site elimination, rank
+  five/nullity two, exact compatible and hostile path products, and action
+  conditionals.
+- The candidate axiom wording is hypothetical global compatibility and
+  projective consistency only. The statistical action is not called gravity;
+  binary-code selection, continuous M2 extension, dynamics, realized history,
+  and source/tensor identification remain open.
+- No canonical axiom is edited, no percentage moves, and no `review-loop` is
+  invoked. Mutation, graph, conformance, and delivery checks remain pending.

@@ -166,3 +166,18 @@ cell-cutting missing-subsum lattice. Neither collides with the M2 carrier or
 supplies the remaining local-law selector. PR #6069 remains useful finite CNOT
 context but does not select a continuous Admissibility functional or physical
 preparation/effect quotient.
+
+## Block 8 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| supplied positive joint law | arbitrary finite binary weights | derived conditionals close every square and reconstruct uniquely | positive control |
+| square-curl integration | strictly positive binary full-conditionals | necessary and sufficient for one finite joint law | exact general theorem |
+| compatible cubic count rule | q(k) with geometric odds | affine logit and exact finite nearest-neighbor action | positive action-shape derivation |
+| symmetric hostile count rule | monotone all-24-covariant q(k) | two paths give 1/14 and 1/9 | retire automatic static compatibility |
+| ordered update kernel | apply the local law under a supplied scheduler | remains a valid path-law route and may be order dependent | keep live; dynamics required |
+| direct global process law | supply projectively consistent histories first | local kernels become derived conditionals | keep live |
+| architecture-specific gluing | CP/process contraction plus boundary | Cycle 33 proves one positive family | keep live |
+| continuous full-M2 specification | general regular conditional measures | not covered by the binary theorem | rank next only with physical candidate |
+| compatible-law axiom addition | sitewise laws are full conditionals of a covariant, projectively consistent family of finite-region laws | sufficient global typing | governance fallback; no edit |
+| gravity identification | call the derived statistical action source/curvature | unsupported by compatibility alone | forbid until tensor/source theorem |

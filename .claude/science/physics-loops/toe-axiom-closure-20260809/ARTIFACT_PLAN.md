@@ -117,3 +117,24 @@ Block 7 packages a stacked bounded theorem only if it contains all of:
    Qubit or Record content and does not edit the canonical memo;
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 8
+
+Block 8 packages a stacked bounded theorem only if it contains all of:
+
+1. a necessary-and-sufficient finite binary full-conditional compatibility
+   theorem with constructive unique joint-law recovery;
+2. an exact reduction of nearest-neighbor compatibility tests to adjacent
+   two-site configuration squares;
+3. a complete cubic count-only classification forcing geometric odds,
+   affine logit, and a derived finite-region nearest-neighbor action;
+4. one compatible exact fixture and one normalized, monotone,
+   code-swap-symmetric, all-24-covariant hostile fixture with unequal path
+   products;
+5. an explicit separation of full-conditional and ordered update-kernel
+   semantics, with a complete N1--N8 gate;
+6. narrowly sufficient hypothetical Admissibility wording for a covariant,
+   projectively consistent family of finite-region joint laws, without editing the canonical memo or
+   calling the statistical action gravity;
+7. an exact runner/cache, independent symbolic recomputation, mutation
+   sensitivity, harness/graph registration, and direct conformance review.

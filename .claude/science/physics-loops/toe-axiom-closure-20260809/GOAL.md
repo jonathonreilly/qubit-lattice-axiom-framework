@@ -242,6 +242,35 @@ Qubit/Record enlargement and toward an Admissibility-side law-selection and
 physical-quotient clause. No canonical axiom is edited, and no TOE percentage
 moves.
 
+## Block 8 Target And Disposition
+
+Block 8 asks whether the sitewise probability distributions named by the
+revised Admissibility axiom can be interpreted as simultaneous full
+conditionals of one joint law, and what local action follows when they can.
+
+The positive target is exact and finite: derive a necessary-and-sufficient
+compatibility criterion for strictly positive binary full-conditionals,
+construct the unique joint law, and specialize the theorem to a
+translation/proper-cubic-covariant rule depending only on the number of
+occupied neighbors.
+
+The result is zero multiplicative curl on every two-site configuration square.
+For the cubic count rule, compatibility forces geometric odds o_k=A B^k,
+equivalently an affine logit, and the finite-region joint law has a derived
+nearest-neighbor Ising-type action. An exact compatible code-swap-symmetric
+fixture gives both square paths 1/16. An exact normalized, monotone,
+code-swap-symmetric, all-24-covariant hostile rule gives 1/14 and 1/9, so the
+named local structural clauses do not automatically supply static
+full-conditional compatibility.
+
+The ordered update-kernel reading remains live and is explicitly accepted; it
+requires an order/scheduler and does not imply the static action. One
+hypothetical Admissibility addition makes the sitewise laws full conditionals
+of a covariant, projectively consistent family of finite-region joint laws. No
+canonical axiom is edited.
+The physical binary code, continuous M2 extension, dynamics, histories, and
+gravity source/tensor identification remain open, so no TOE percentage moves.
+
 ## Trace target
 
 The landed source states:

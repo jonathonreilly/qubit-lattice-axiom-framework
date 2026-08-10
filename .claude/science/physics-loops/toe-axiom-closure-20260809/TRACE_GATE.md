@@ -1,12 +1,12 @@
 ---
 trace_class: upstream_support
-target_claim_id: admissibility_record_m2_effect_label_atomic_born_law_bridge
-target_blocker_text: "derive or explicitly supply one covariant nearest-neighbor map from physical preparation/program conditions to a normalized positive functional and operational-effect resolution, then connect Record formation events into trials and histories"
+target_claim_id: admissibility_local_to_global_compatibility_and_action_bridge
+target_blocker_text: "decide whether sitewise nearest-neighbor probability distributions are compatible conditionals of one global law, and identify the exact axiom-side obligation if they are not"
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: theorem
 campaign_native_target_reachability: advances
-next_trace_action: "Test whether landed M_2(C)-native contact/action structure selects the positive functional and preparation/effect quotient; otherwise preserve the exact sufficient Admissibility wording as the narrow owner-decision surface and pivot to the trial/history bridge."
+next_trace_action: "Test whether the selected physical M2 law supplies a compatible finite/infinite specification or an ordered update process, then test whether its derived statistical action has a physical source/tensor response rather than identifying it by name."
 ---
 
 Block 1 closes the named low-arity mathematical frontier at standard-theorem
@@ -68,3 +68,20 @@ mass. The remaining trace is therefore not Qubit/Record capacity. It is
 selection of the local positive functional and effect program, the physical
 preparation/effect quotient, and occurrence/history. Those current-axiom
 obligations remain open, so the percentages remain fixed.
+
+Block 8 moves to the local-to-global probability/action seam shared by the
+Record and gravity lanes. For every finite strictly positive binary family it
+proves that zero multiplicative curl on every two-site square is necessary and
+sufficient for one positive joint law; path integration reconstructs that law
+uniquely. On a cubic count-only sector, compatibility forces geometric odds,
+an affine logit, and an exact nearest-neighbor finite statistical action. A
+normalized monotone code-swap-symmetric rule remains covariant under all 24
+proper cubic rotations but fails with path products 1/14 and 1/9.
+
+The trace advances because the full-conditional/update-kernel choice is now
+explicit and the finite binary action shape is derived. It does not close:
+the update interpretation remains live, general M2 and infinite-volume
+consistency are open, one realized history is not selected, and the
+statistical action is not identified with gravity, curvature, stress, or a
+physical coupling. The candidate compatibility wording is hypothetical and
+no percentage moves.

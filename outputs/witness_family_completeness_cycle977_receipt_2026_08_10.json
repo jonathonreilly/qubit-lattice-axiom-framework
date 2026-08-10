@@ -1,0 +1,3180 @@
+{
+ "actual_current_surface_status": "bounded-support",
+ "admitted_observation_status": null,
+ "all_certificates_pass": true,
+ "artifact": "witness_family_completeness",
+ "audit_required_before_effective_retained": true,
+ "bare_retained_allowed": false,
+ "certificates": {
+  "A_ENLARGED_FAMILY": {
+   "finding": "word_length_cap=1; spatial_support=target-centred_radius-one_7-site_star; support_size_cap=3; gate_alphabet=['X', 'CNOT', 'TOF']; family_words=155=1I+7X+42CNOT+105TOF",
+   "pass": true
+  },
+  "B_WITNESS_CENSUS": {
+   "finding": "witness_words=21/155; dependent_word_input_rows=42/310; changed_edge_pairs=1344/59520; conditioned_configurations=19840; witnesses=['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)', 'TOF(+x,-x->C)', 'TOF(+x,+y->C)', 'TOF(+x,-y->C)', 'TOF(+x,+z->C)', 'TOF(+x,-z->C)', 'TOF(-x,+y->C)', 'TOF(-x,-y->C)', 'TOF(-x,+z->C)', 'TOF(-x,-z->C)', 'TOF(+y,-y->C)', 'TOF(+y,+z->C)', 'TOF(+y,-z->C)', 'TOF(-y,+z->C)', 'TOF(-y,-z->C)', 'TOF(+z,-z->C)']",
+   "pass": true
+  },
+  "C_CLASS_STRUCTURE": {
+   "finding": "induced_law_classes=3; representatives=[('CNOT(+x->C)', 'x XOR n_+x', 6), ('TOF(+x,+y->C)', 'x XOR n_+x AND n_+y', 12), ('TOF(+x,-x->C)', 'x XOR n_+x AND n_-x', 3)]; rotation_checks=476160; translation_checks=119040; bridge_checks=19840; covariance_verdict=COVARIANT; non_covariant_witnesses=[]",
+   "pass": true
+  },
+  "D_CONTROLS": {
+   "finding": "legacy=6/20; added=15/135; added_words_by_kind={'X': 0, 'CNOT': 30, 'TOF': 105}; added_witnesses_by_kind={'X': 0, 'CNOT': 0, 'TOF': 15}; source_reads=6<=6; sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; provenance_pins_match=True; determinism_replay=True; runtime_s=14.139728<timeout_s=300; stdout_upper_bound=3936<6000<150000",
+   "pass": true
+  }
+ },
+ "checker_payload": {
+  "added_witness_count": 15,
+  "added_witnesses_by_kind": {
+   "CNOT": 0,
+   "TOF": 15,
+   "X": 0
+  },
+  "bridge_checks": 19840,
+  "bridge_failure_count": 0,
+  "changed_edge_pairs": 1344,
+  "class_count": 3,
+  "classes": [
+   {
+    "covariant": true,
+    "law": "x XOR n_+x",
+    "member_count": 6,
+    "members": [
+     "CNOT(+x->C)",
+     "CNOT(+y->C)",
+     "CNOT(+z->C)",
+     "CNOT(-x->C)",
+     "CNOT(-y->C)",
+     "CNOT(-z->C)"
+    ],
+    "representative": "CNOT(+x->C)"
+   },
+   {
+    "covariant": true,
+    "law": "x XOR n_+x AND n_+y",
+    "member_count": 12,
+    "members": [
+     "TOF(+x,+y->C)",
+     "TOF(+x,+z->C)",
+     "TOF(+x,-y->C)",
+     "TOF(+x,-z->C)",
+     "TOF(+y,+z->C)",
+     "TOF(+y,-z->C)",
+     "TOF(-x,+y->C)",
+     "TOF(-x,+z->C)",
+     "TOF(-x,-y->C)",
+     "TOF(-x,-z->C)",
+     "TOF(-y,+z->C)",
+     "TOF(-y,-z->C)"
+    ],
+    "representative": "TOF(+x,+y->C)"
+   },
+   {
+    "covariant": true,
+    "law": "x XOR n_+x AND n_-x",
+    "member_count": 3,
+    "members": [
+     "TOF(+x,-x->C)",
+     "TOF(+y,-y->C)",
+     "TOF(+z,-z->C)"
+    ],
+    "representative": "TOF(+x,-x->C)"
+   }
+  ],
+  "conditioned_configurations": 19840,
+  "dependent_word_input_rows": 42,
+  "edge_pair_comparisons": 59520,
+  "family_covariant": true,
+  "family_descriptor_digest": "fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497",
+  "family_kind_counts": {
+   "CNOT": 42,
+   "TOF": 105,
+   "X": 7,
+   "identity": 1
+  },
+  "family_size": 155,
+  "legacy_witness_count": 6,
+  "non_covariant_witnesses": [],
+  "rotation_checks": 476160,
+  "rotation_failure_count": 0,
+  "science_digest": "bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929",
+  "translation_checks": 119040,
+  "translation_failure_count": 0,
+  "witness_count": 21,
+  "witness_names": [
+   "CNOT(+x->C)",
+   "CNOT(-x->C)",
+   "CNOT(+y->C)",
+   "CNOT(-y->C)",
+   "CNOT(+z->C)",
+   "CNOT(-z->C)",
+   "TOF(+x,-x->C)",
+   "TOF(+x,+y->C)",
+   "TOF(+x,-y->C)",
+   "TOF(+x,+z->C)",
+   "TOF(+x,-z->C)",
+   "TOF(-x,+y->C)",
+   "TOF(-x,-y->C)",
+   "TOF(-x,+z->C)",
+   "TOF(-x,-z->C)",
+   "TOF(+y,-y->C)",
+   "TOF(+y,+z->C)",
+   "TOF(+y,-z->C)",
+   "TOF(-y,+z->C)",
+   "TOF(-y,-z->C)",
+   "TOF(+z,-z->C)"
+  ],
+  "witness_signature_digest": "1cceceaa1e1b2ca574ab39c7dcb9f3eba0729ddf4e38628461bc5276abadca97",
+  "word_input_rows": 310
+ },
+ "claim_type": "bounded_theorem",
+ "conditional_surface_status": "exact on the declared radius-one, word-length-at-most-one landed basis-state gate family",
+ "controls": {
+  "all_inputs_exist_worktree_relative": true,
+  "axiom_covariance_needle_matches": true,
+  "axiom_distribution_needle_matches": true,
+  "blocklist_cited_primaries": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "blocklist_text_only": true,
+  "executable_substrate": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+  "literal_audit_input_paths": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  ],
+  "literal_source_read_count": 6,
+  "primary_source_sha256": "28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4",
+  "provenance_never_executed": true,
+  "provenance_pins_match": true,
+  "sha256": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  "substrate_gate_alphabet_matches": true,
+  "substrate_gate_probe": [
+   [
+    "X",
+    [
+     0
+    ]
+   ],
+   [
+    "CNOT",
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    "TOF",
+    [
+     0,
+     1,
+     2
+    ]
+   ]
+  ],
+  "text_ast_provenance": {
+   "cycle972_note": {
+    "bounded_scope_present": true,
+    "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "expected_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+    "observed_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+    "path": "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+    "read_mode": "text only",
+    "witness_context_present": true
+   },
+   "cycle972_runner": {
+    "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "declares_census": true,
+    "declares_family": true,
+    "expected_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+    "observed_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+    "path": "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
+    "read_mode": "AST only; never executed"
+   },
+   "cycle975_note": {
+    "bounded_scope_present": true,
+    "commit": "cfe4f1316aa961e19463c50de0d6d89b0dbdb63c",
+    "expected_blob": "5ccef8dd95178460fa39642a7376d9919b386dcf",
+    "observed_blob": "5ccef8dd95178460fa39642a7376d9919b386dcf",
+    "path": "docs/INPUT_DISTRIBUTION_DEPENDENCE_LAW_CYCLE975_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+    "read_mode": "text only",
+    "witness_context_present": true
+   },
+   "cycle975_runner": {
+    "commit": "cfe4f1316aa961e19463c50de0d6d89b0dbdb63c",
+    "declares_census": true,
+    "declares_family": true,
+    "expected_blob": "663029bfe1e937fd95278427cd417f98ea1ca0c6",
+    "observed_blob": "663029bfe1e937fd95278427cd417f98ea1ca0c6",
+    "path": "scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py",
+    "read_mode": "AST only; never executed"
+   }
+  }
+ },
+ "cycle": 977,
+ "determinism_replay": true,
+ "family_horizon": {
+  "excluded": [
+   "words of length >=2",
+   "support outside the seven-site star",
+   "continuous M_2(C) distributions"
+  ],
+  "family_description": "every distinct length-zero/one word over landed basis-state X, CNOT, and TOF with all operands inside the target-centred radius-one seven-site star; no within-star adjacency restriction",
+  "family_size": 155,
+  "gate_alphabet": [
+   "X",
+   "CNOT",
+   "TOF"
+  ],
+  "neighbour_condition_horizon": "all 2^6 basis-bit conditions",
+  "spatial_horizon": "target-centred radius-one seven-site star",
+  "support_size_cap": 3,
+  "target_input_menu": [
+   0,
+   1
+  ],
+  "within_star_adjacency_restriction": false,
+  "word_length_cap": 1
+ },
+ "findings": {
+  "census": {
+   "changed_atoms_digest": "74542ac40eef559d4a7029044bc0a6af272233188a1c06fb3597394919cb08cc",
+   "changed_edge_pairs": 1344,
+   "conditioned_configurations": 19840,
+   "dependent_word_input_rows": 42,
+   "edge_pair_comparisons": 59520,
+   "rows": [
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "I"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "I"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y",
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+z",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+z,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+z",
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+z,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-x->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-x->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-y->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,+z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+z,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+z,-z->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+x->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+x->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-y->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,+z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+z,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+z,-z->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-x->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-y->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,+z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+z,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+z,-z->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-x->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+y->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,+z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+z,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+z,-z->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-x->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-y->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,-z->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(C,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(C,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-x->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+x,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+x,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-x,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-x,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,-y->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(+y,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(+y,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "TOF(-y,+z->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "TOF(-y,+z->-z)"
+    }
+   ],
+   "witness_signature_digest": "1cceceaa1e1b2ca574ab39c7dcb9f3eba0729ddf4e38628461bc5276abadca97",
+   "witness_word_count": 21,
+   "witness_words": [
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "induced_target_law_anf": "x XOR n_+x",
+     "law_signature_sha256": "46d38b82b179ca17267692694c68fa1fe78a4b88441851cf731f3ea57611ecd6",
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "induced_target_law_anf": "x XOR n_-x",
+     "law_signature_sha256": "6aad9db6b0575214f1260d6f489d0992606ef379145f5e25168c7d7cc12e1db2",
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "induced_target_law_anf": "x XOR n_+y",
+     "law_signature_sha256": "0ca92278d12093785fcee22c20afcdce30c014898eb48d6fb97ead4c40da2336",
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "induced_target_law_anf": "x XOR n_-y",
+     "law_signature_sha256": "46da90c7ec7ed70a9a842c6821bdb13cba2776565945ad195c03ae2d75a22a60",
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "induced_target_law_anf": "x XOR n_+z",
+     "law_signature_sha256": "60381b2d7a3bea61b1bb7cfeb3a2923b223adf57cfb5415d0ddec1b42323737d",
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "induced_target_law_anf": "x XOR n_-z",
+     "law_signature_sha256": "6f4fb46c4aa92e4bd52438113645abe292d0b22e2d5bd8963cb8f4d2ea00d1e1",
+     "word_name": "CNOT(-z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-x"
+     ],
+     "induced_target_law_anf": "x XOR n_+x AND n_-x",
+     "law_signature_sha256": "a2c4013ad435bf90f9968433d6ed1fdcbfd67ffe0df99bdcadbf082678e1d9bb",
+     "word_name": "TOF(+x,-x->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+x",
+      "+y"
+     ],
+     "induced_target_law_anf": "x XOR n_+x AND n_+y",
+     "law_signature_sha256": "dc77b678fc7666277a1189627e982a99a7f7292e74535d33993a4015f2f4eee2",
+     "word_name": "TOF(+x,+y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-y"
+     ],
+     "induced_target_law_anf": "x XOR n_+x AND n_-y",
+     "law_signature_sha256": "320a8fef3f22c9da06cee3d76809529713f37b235fbc9b31a362bf8c50ea97fa",
+     "word_name": "TOF(+x,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+x",
+      "+z"
+     ],
+     "induced_target_law_anf": "x XOR n_+x AND n_+z",
+     "law_signature_sha256": "cb41855ca18b9a260c4552da6f195e1b4b53bf03006a01237e5cc2d057ebe3c2",
+     "word_name": "TOF(+x,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+x",
+      "-z"
+     ],
+     "induced_target_law_anf": "x XOR n_+x AND n_-z",
+     "law_signature_sha256": "97e00aefb5a63aef48d9107004ec2b4f083e03e39df6575ee3cbfcebd80770fd",
+     "word_name": "TOF(+x,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-x"
+     ],
+     "induced_target_law_anf": "x XOR n_-x AND n_+y",
+     "law_signature_sha256": "7650c004131fe04d0c61023725639a93678d77a50a60847d731e47f9ebb644e8",
+     "word_name": "TOF(-x,+y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "-x",
+      "-y"
+     ],
+     "induced_target_law_anf": "x XOR n_-x AND n_-y",
+     "law_signature_sha256": "27a4489e03c153ac7b421db2ad97f16ff88e42c0c5e3536e5c3d8a2a898fd000",
+     "word_name": "TOF(-x,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+z",
+      "-x"
+     ],
+     "induced_target_law_anf": "x XOR n_-x AND n_+z",
+     "law_signature_sha256": "b80b2f79d8eab1d3239316016012e0611746b9fa033246c7ca0dcb784799148c",
+     "word_name": "TOF(-x,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "-x",
+      "-z"
+     ],
+     "induced_target_law_anf": "x XOR n_-x AND n_-z",
+     "law_signature_sha256": "e5cbac25d417030afe8ebd5c7c600a54adb680f96a37cc8490f9564e0afec8cf",
+     "word_name": "TOF(-x,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-y"
+     ],
+     "induced_target_law_anf": "x XOR n_+y AND n_-y",
+     "law_signature_sha256": "266482d2221802622bd5cabc533aaae86dea354c40ededa1b609f35900e7b1bb",
+     "word_name": "TOF(+y,-y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+y",
+      "+z"
+     ],
+     "induced_target_law_anf": "x XOR n_+y AND n_+z",
+     "law_signature_sha256": "6fc68bbffdeb69264d3d8a0680f1bffe0189c2afe6e3b0d7f218455f39654ff4",
+     "word_name": "TOF(+y,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+y",
+      "-z"
+     ],
+     "induced_target_law_anf": "x XOR n_+y AND n_-z",
+     "law_signature_sha256": "169bae8a1915201fc5f10360210ecd7316848a107edb35c8e4d1d31a00eb1acc",
+     "word_name": "TOF(+y,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+z",
+      "-y"
+     ],
+     "induced_target_law_anf": "x XOR n_-y AND n_+z",
+     "law_signature_sha256": "9dbb9b57f47e8278cb56b62195533ceaa6aca2af381e254b82a5c582418f14af",
+     "word_name": "TOF(-y,+z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "-y",
+      "-z"
+     ],
+     "induced_target_law_anf": "x XOR n_-y AND n_-z",
+     "law_signature_sha256": "a9b1b4902d8870c54e0c0eee12846e63a8317eb51ac25d3f09f6a105a7a79814",
+     "word_name": "TOF(-y,-z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "dependent_neighbour_bits": [
+      "+z",
+      "-z"
+     ],
+     "induced_target_law_anf": "x XOR n_+z AND n_-z",
+     "law_signature_sha256": "f4a145021922b10abb199a1cb74ecb75f1085ff4f46e9873388105a5cd6f7a25",
+     "word_name": "TOF(+z,-z->C)"
+    }
+   ],
+   "word_input_rows": 310
+  },
+  "class_structure": {
+   "family_covariant": true,
+   "induced_law_class_count": 3,
+   "induced_law_classes": [
+    {
+     "class_id": "L1",
+     "covariant": true,
+     "failure_words": [],
+     "local_rotation_orbit_size": 6,
+     "member_count": 6,
+     "member_words": [
+      "CNOT(+x->C)",
+      "CNOT(+y->C)",
+      "CNOT(+z->C)",
+      "CNOT(-x->C)",
+      "CNOT(-y->C)",
+      "CNOT(-z->C)"
+     ],
+     "proper_rotation_stabilizer_size": 4,
+     "representative_induced_target_law_anf": "x XOR n_+x",
+     "representative_word": "CNOT(+x->C)",
+     "rotation_semantic_comparisons": 18432,
+     "translation_semantic_comparisons": 4608
+    },
+    {
+     "class_id": "L2",
+     "covariant": true,
+     "failure_words": [],
+     "local_rotation_orbit_size": 12,
+     "member_count": 12,
+     "member_words": [
+      "TOF(+x,+y->C)",
+      "TOF(+x,+z->C)",
+      "TOF(+x,-y->C)",
+      "TOF(+x,-z->C)",
+      "TOF(+y,+z->C)",
+      "TOF(+y,-z->C)",
+      "TOF(-x,+y->C)",
+      "TOF(-x,+z->C)",
+      "TOF(-x,-y->C)",
+      "TOF(-x,-z->C)",
+      "TOF(-y,+z->C)",
+      "TOF(-y,-z->C)"
+     ],
+     "proper_rotation_stabilizer_size": 2,
+     "representative_induced_target_law_anf": "x XOR n_+x AND n_+y",
+     "representative_word": "TOF(+x,+y->C)",
+     "rotation_semantic_comparisons": 36864,
+     "translation_semantic_comparisons": 9216
+    },
+    {
+     "class_id": "L3",
+     "covariant": true,
+     "failure_words": [],
+     "local_rotation_orbit_size": 3,
+     "member_count": 3,
+     "member_words": [
+      "TOF(+x,-x->C)",
+      "TOF(+y,-y->C)",
+      "TOF(+z,-z->C)"
+     ],
+     "proper_rotation_stabilizer_size": 8,
+     "representative_induced_target_law_anf": "x XOR n_+x AND n_-x",
+     "representative_word": "TOF(+x,-x->C)",
+     "rotation_semantic_comparisons": 9216,
+     "translation_semantic_comparisons": 2304
+    }
+   ],
+   "landed_coordinate_bridge_comparisons": 19840,
+   "landed_coordinate_bridge_failures": [],
+   "non_covariant_witnesses": [],
+   "proper_rotation_count": 24,
+   "realized_group": "Z^3 semidirect product O+_cubic",
+   "rotation_family_closure_failures": [],
+   "rotation_group_closed": true,
+   "rotation_semantic_comparisons": 476160,
+   "rotation_semantic_failures": [],
+   "translation_semantic_comparisons": 119040,
+   "translation_semantic_failures": []
+  },
+  "undercount": {
+   "added_witness_count": 15,
+   "added_witness_words": [
+    "TOF(+x,+y->C)",
+    "TOF(+x,+z->C)",
+    "TOF(+x,-x->C)",
+    "TOF(+x,-y->C)",
+    "TOF(+x,-z->C)",
+    "TOF(+y,+z->C)",
+    "TOF(+y,-y->C)",
+    "TOF(+y,-z->C)",
+    "TOF(+z,-z->C)",
+    "TOF(-x,+y->C)",
+    "TOF(-x,+z->C)",
+    "TOF(-x,-y->C)",
+    "TOF(-x,-z->C)",
+    "TOF(-y,+z->C)",
+    "TOF(-y,-z->C)"
+   ],
+   "added_witnesses_by_gate_kind": {
+    "CNOT": 0,
+    "TOF": 15,
+    "X": 0
+   },
+   "added_word_count": 135,
+   "added_words_by_gate_kind": {
+    "CNOT": 30,
+    "TOF": 105,
+    "X": 0
+   },
+   "enlarged_family_size": 155,
+   "exact_reason": "the 20-word family was exhaustive only after imposing a two-site arity restriction and centre-edge CNOT restriction; the enlarged family adds every TOF and every off-centre CNOT supported in the star.  Any added witnesses are measured separately by gate kind, so the census does not assume which exclusion mattered",
+   "legacy_family_size": 20,
+   "legacy_is_subset": true,
+   "legacy_witness_count_in_enlarged_semantics": 6
+  }
+ },
+ "hypothetical_axiom_status": null,
+ "primary_source_sha256": "28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4",
+ "proposal_allowed": false,
+ "proposal_allowed_reason": "finite basis-state and one-step support cap; not the full continuous M_2(C) distribution law",
+ "reachability_to_target": "closes",
+ "runtime_sec": 14.139727917034179,
+ "science_digest": "bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929",
+ "stdout_bytes": 3697,
+ "trace_class": "direct_blocker_closure"
+}

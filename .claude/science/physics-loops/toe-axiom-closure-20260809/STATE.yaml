@@ -187,9 +187,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: exact binary content-only readout/action cross-ratio separation, unique site-plus-edge coefficient recovery, trivial one-line intersection, and finite positive covariance response; physical source/action licensing, action unit, stress tensor, metric coupling, continuous M2, dynamics, history, and gravity remain open
 hypothetical_axiom_status: a weak pair-resource clause carries the interaction and a stronger log-law clause with one registered action unit identifies a physical source action; neither is adopted or edited
-review_disposition: block09_direct_self_review_in_progress
-pr_status: local_block09_not_yet_open
-pr_url: null
+review_disposition: block09_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: open_6077_stacked_on_open_6076
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6077
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -216,5 +216,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: complete Block 9 mutation sensitivity, graph/harness registration, direct conformance, and stacked PR delivery; then test the highest-value conserved stress/tensor or continuous-M2 route without relabeling covariance as gravity
+next_exact_action: test whether any current-axiom or approved-primitive route independently licenses the site/edge statistical coordinates as a conserved physical stress/source tensor with metric response; if not, state the exact axiom update rather than relabeling covariance as gravity
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

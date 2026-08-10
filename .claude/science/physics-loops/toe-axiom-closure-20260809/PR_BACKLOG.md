@@ -123,14 +123,17 @@ policy epoch mismatch after earlier stages pass. Science commit is
 #6075, then #6076. The canonical axiom memo remains untouched; no
 `review-loop` is used.
 
-Block 9 is under direct self-review on branch
+Block 9 is open as PR #6077 from branch
 physics-loop/toe-axiom-closure-block09-20260810, stacked on the exact PR #6076
 head f9810ba279c04950eb2fc1157b5cec2ba6911f4e. The binary additive-readout /
 pair-action cross-ratio separation, unique Boolean site-plus-edge
 decomposition, exact `-log B` coefficient, trivial one-line intersection,
 site/edge covariance response, two hypothetical axiom clauses, N1--N8 gate,
-runner/cache, and harness row are constructed. The primary runner is PASS=30
-FAIL=0 and an independent SymPy calculation agrees. Mutation sensitivity,
-graph registration, direct repository conformance, commit, push, and stacked
-PR delivery remain pending. The canonical axiom memo remains untouched; no
-`review-loop` is used.
+runner/cache, and harness row are complete. The primary runner is PASS=30
+FAIL=0, the independent SymPy calculation agrees, and all 27 mutation probes
+fail closed. Graph and direct repository conformance pass. Seeded evidence
+checks Block 9 and all nine stacked claims forensic-ready. The isolated
+pipeline reproduces only PR #6061's known dependency-policy epoch mismatch
+after earlier stages pass. Science commit is `ddef3817b2`. Hard landing order
+is #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, then #6077. The
+canonical axiom memo remains untouched; no `review-loop` is used.

@@ -545,5 +545,25 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   called a stress tensor or gravity.
 - The primary runner passes 30 checks with 4,736 characters of stdout. An
   independent SymPy recomputation agrees. The two axiom clauses are
-  hypothetical only. Mutation, graph, conformance, and delivery checks remain
-  pending; no canonical edit, percentage move, or `review-loop` occurs.
+  hypothetical only. Twenty-seven disposable mutations cover source binding,
+  algebra, fixtures, response, wording, governance, trace, and N1--N8; each
+  exits nonzero at its intended family.
+- The graph is regenerated at 5,455 nodes / 15,530 edges. The new note has
+  out-degree five, the harness adds its sixth edge, and repository invariants
+  pass with zero link or class-F violations and an acknowledged topology
+  delta. Strict audit lint has zero errors; vocabulary lint, YAML, Python,
+  whitespace, cache freshness, and the exact 18-file stacked delta pass.
+- Seeded changed-evidence readiness checks one Block 9 claim and all nine
+  stacked claims as forensic-ready with no failures or control failures.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph construction, manifest writing, load-bearing
+  computation, ledger seeding, sanitization, classifier capture, effective-
+  status computation, and stale-audit invalidation. Restoration then
+  reproduces only PR #6061's known dependency-policy epoch mismatch. The
+  disposable worktree held 1,065 tracked generated changes and 821 new ledger
+  shards, all removed with the worktree.
+- The canonical axiom memo remains byte-identical to `origin/main`, no
+  percentage moves, and no `review-loop` is invoked. Committed the 18-file
+  science delta as `ddef3817b2`, pushed the dedicated branch, and opened
+  stacked PR #6077 on the exact #6076 head. Hard landing order is #6063,
+  #6065, #6067, #6070, #6071, #6074, #6075, #6076, then #6077.

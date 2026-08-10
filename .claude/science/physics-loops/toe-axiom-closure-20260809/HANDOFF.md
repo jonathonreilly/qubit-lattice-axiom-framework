@@ -370,6 +370,17 @@ response; the rational `A=1/8,B=2` fixture is positive definite.
 The primary runner is PASS=30 FAIL=0 with 4,736 characters of stdout. An
 independent SymPy route agrees on the line intersection, Boolean coefficients,
 cross-ratio, exact means/covariance, and determinant numerator 860672.
-Harness/graph registration, mutation sensitivity, direct conformance, commit,
-push, and stacked PR delivery remain pending. No canonical axiom is edited, no
-percentage moves, and no `review-loop` is invoked.
+Twenty-seven disposable mutations reach their intended named failure families.
+The graph is 5,455 nodes / 15,530 edges; the new note has out-degree five and
+the harness supplies its sixth edge. Strict lint, vocabulary, cache, Python,
+YAML, whitespace, graph, link, class-F, and exact-delta checks pass. Seeded
+changed-evidence readiness marks Block 9 and all nine stacked claims forensic-
+ready with no failures or control failures. The isolated full pipeline passes
+through stale-audit invalidation and then reproduces only PR #6061's known
+dependency-policy epoch mismatch. Its 1,065 tracked generated changes and 821
+new ledger shards existed only in a disposable worktree that was removed.
+
+The 18-file science delta is commit `ddef3817b2` and is open as stacked PR
+#6077 on the exact #6076 head. Hard landing order is #6063, #6065, #6067,
+#6070, #6071, #6074, #6075, #6076, then #6077. No canonical axiom is edited,
+no percentage moves, and no `review-loop` is invoked.

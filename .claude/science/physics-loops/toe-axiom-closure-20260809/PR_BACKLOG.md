@@ -4,6 +4,8 @@ Block 1 is mathematically packaged and ready to open. Every block-local gate
 below passes; the full pipeline reaches the current-main dependency-policy
 epoch failure already owned by open PR #6061.
 
+Opened: PR #6063, commit `6ecca8e8f1`.
+
 Before any Block 1 PR:
 
 - resolve or honestly demote the exact target;

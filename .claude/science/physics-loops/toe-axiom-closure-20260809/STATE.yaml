@@ -67,7 +67,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: exact one-site implication on the supplied grading/menu surface
 hypothetical_axiom_status: candidate wording only; no axiom edit authorized
 review_disposition: self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: ready_to_commit_and_open
+pr_status: open_6063
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6063
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -94,5 +95,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: commit and push Block 1, open its physics-loop PR with the origin-main epoch blocker disclosed, then pivot to the highest-value nonduplicative physical or native residual
+next_exact_action: pivot to a fresh Block 2 worktree and compare the native compression-invariant frame lemma against the nonduplicative physical event/effect registration residual
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

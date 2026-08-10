@@ -1,6 +1,6 @@
 {
- "edge_count": 15496,
- "node_count": 5449,
+ "edge_count": 15502,
+ "node_count": 5450,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -345,6 +345,10 @@
   "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08": {
    "deps_hash": "17b0cde87f4c",
    "out_degree": 3
+  },
+  "admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "8338a3e0e019",
+   "out_degree": 5
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
    "deps_hash": "7026e4c03122",
@@ -1647,8 +1651,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "c662545bd004",
-   "out_degree": 344
+   "deps_hash": "118412c7166b",
+   "out_degree": 345
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

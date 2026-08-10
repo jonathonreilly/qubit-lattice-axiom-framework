@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact measurable decoder/partition equivalence, paired full-support Gaussian decoder nonselection, and exact contextual shared-effect separation, plus a refined hypothetical decoder/effect-quotient cut; no physical decoder, quotient, or axiom adoption is derived."
-trace_class: negative_route_pruning
+claim_type_reason: "Exact fixed-condition Gaussian second-moment density-operator extraction, quantile content-decoder pushforward, shared-effect descent, and bounded extractor-nonselection/atomic controls; physical compiler selection, program registration, cross-condition preparation equivalence, occurrence, and axiom adoption remain open."
+trace_class: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "a measurable content decoder is equivalent to the outcome partition and normalizes by pushforward; current Record clauses do not select the displayed decoder, and decoder registration does not automatically force effect descent"
-hypothetical_axiom_status: "one refined preparation/program decoder plus operational-effect quotient addition is mapped; no canonical axiom edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "a complete measure-to-density-operator-to-quantile-decoder-to-effect-grade compiler exists on the displayed Gaussian family at fixed condition; physical selection, atom splitting outside that completion, and the physical preparation/program quotient remain open"
+hypothetical_axiom_status: "one explicit Gaussian compiler and a narrower selection/registration residual are mapped; no canonical axiom edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -36,8 +36,19 @@ bare_retained_allowed: false
 - Block 3 reduces a measurable partition to a finite-label content decoder and
   uses one constructed Gaussian law, content-only additive indicator readouts,
   and exact ternary menu arithmetic. It supplies no physical decoder program.
-- Decoder selection, the operational-effect quotient, endpoint values, and
-  physical low-arity program coverage remain open interfaces.
+- Decoder selection, the physical operational-effect quotient, global endpoint
+  registration, and physical low-arity program coverage remain open interfaces.
+- Block 4 derives one density-operator candidate and an exact uniformizer from
+  the explicit Gaussian law. It then constructs program-relative quantile
+  fibers whose pushforward is the extracted effect grade at one fixed
+  mathematical condition.
+- This construction closes normalization, endpoints, supplied-menu coverage,
+  and same-effect descent only inside each displayed fixed-condition compiler.
+- The isotropic `lambda` family proves bounded extractor nonselection, and the
+  atomic control proves that the general current measure class does not supply
+  deterministic splitting for arbitrary nontrivial target grades.
+- Physical compiler selection, a general splitting resource, physical program
+  occurrence, and cross-condition preparation equivalence remain open.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

@@ -219,3 +219,75 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   change; it does not supply a content decoder, operational-effect quotient,
   endpoint law, or universal program family, so it does not collide with this
   block. `review-loop` remains unused here.
+
+## Block 4 Gaussian compiler synthesis
+
+- Replaced the initial finite-instrument extension target with the higher-value
+  constructive route already exposed by Block 3's explicit Gaussian law.
+- Computed `E[A A^dagger]=C^2+2I` analytically and normalized it to the
+  positive trace-one density-operator candidate
+  `(C^2+2I)/(Tr(C^2)+4)`.
+- Proved that `Re Tr(A-C)` is standard normal and that its Gaussian CDF is a
+  fixed-condition uniformizer. Cumulative effect weights therefore define an
+  explicit Borel program-relative content decoder for every supplied finite
+  ordered resolution.
+- On the two exact hostile ternary menus at `C=P_z`, independently recomputed
+  the weight vectors `(3/10,19/50,8/25)` and `(3/10,7/20,7/20)`, so the shared
+  effect descends to `3/10` inside the compiler.
+- Constructed the covariant isotropic family
+  `(C^2+(2+lambda)I)/(Tr(C^2)+4+2lambda)`. The `lambda=1` member gives `2/7`
+  to the shared effect, leaving an exact `1/70` physical-selection gap.
+- Constructed the covariant atomic control `nu_C=delta_C`. At blank `C=0`, a
+  deterministic singleton-support decoder cannot realize the half-half target,
+  isolating atom splitting or stochastic decoding as a separate interface.
+- Tightened the scope after a cold read: effect descent and content-only status
+  are asserted only at fixed `C` with a supplied ordered program. A changed
+  apparatus may change the neighbor condition and extracted density operator;
+  cross-condition preparation equivalence remains open.
+- Completed the source-level no-go discipline gate. N1 executes eight routes;
+  N2 collapses the residual to three pairwise-independent walls; N3 exposes all
+  supplied conditions; N4 matches five exact source residuals; N5 covers all
+  five rhetoric resolutions; N6 preserves live partial-closure routes; N7
+  accepts the physical-selection steelman; N8 records the cross-cycle movement.
+- The primary runner initially exposed two real authoring defects: a prior
+  source phrase mismatch and an atomic-support set construction. Both were
+  repaired rather than waived. The current fresh run is `PASS=29 FAIL=0` with
+  complete per-element/site/mode/block/lattice-wide lines and stdout below the
+  6,000-character ceiling.
+- An independent SymPy calculation agrees on both density operators, both
+  menu sums, all exact weights, both cut vectors, and the `1/70` gap.
+- Eighteen process-local mutations cover current-source binding, stacked
+  residuals, prior boundaries, Gaussian moments, density positivity,
+  covariance, menu geometry, compiler weights, effect descent, quantile cuts,
+  decoder totality, the atomic boundary, construction/boundary source anchors,
+  machine status, N1--N8, and canonical nonmutation. Each reaches its intended
+  named nonzero failure family; no tracked file is changed by the probes.
+- Registered the source and runner in the canonical harness and regenerated
+  the citation manifest at 5,450 nodes and 15,502 edges, the intended one-node/
+  six-edge delta. The new note has out-degree five and the harness gains one.
+- The canonical axiom memo remains unchanged, no percentage moves, and no
+  `review-loop` is invoked. Direct repository conformance and final stacked
+  delivery are the remaining Block 4 packaging steps.
+- A live open-PR sweep after `origin/main` remained at `323d7fc32d` found new
+  PR #6068. Its four-file cell-cutting small-matrix/rank census explicitly uses
+  four-cube symmetry rather than the Admissibility axiom's proper-cubic
+  covariance and changes no axiom, primitive, measure, decoder, effect
+  quotient, or compiler-selection interface; it does not collide with Block 4.
+- Direct conformance passes: vocabulary lint has zero findings; strict audit
+  lint has zero errors; graph/link invariants report zero link and class-F
+  violations with the topology delta acknowledged; YAML and Python compile;
+  changed-audit-evidence reports 25 changed stacked paths with no failures or
+  control failures.
+- The full pipeline passed premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. It then reproduced the current-main dependency-policy
+  epoch stop in restoration: the manifest pins `build_citation_graph.py` at
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  while the current file hashes to
+  `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  PR #6061 owns that repair; this branch does not copy it.
+- Pipeline cleanup restored 1,048 generated tracked changes and removed 816
+  new ledger shards after verifying every untracked path lay under
+  `docs/audit/data/ledger/`. The 18 intended staged paths remain and no
+  unrelated working-tree residue remains.

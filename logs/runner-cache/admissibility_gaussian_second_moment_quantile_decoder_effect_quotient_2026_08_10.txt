@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10.py
+runner_sha256: c098602459dd6739bda76e8f4ffd2dffd24dda7fe97bbc6a8e9e93ea54744d70
+input_fingerprint_sha256: 67fa678866d631debb932776da97a6df82dc35630875c7cfc72fa9e0ed87fdb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: the current axiom, stacked Gaussian/menu parents, and three explicit instrument/effect prior boundaries are source-bound; no observed, fitted, or target probability is read
+package_local_integrity_reads: the proposed theorem note is checked for its construction, boundary, machine status, and N1-N8 surfaces; the cache envelope binds every declared input
+analytic_boundary: Gaussian integration, the probability-integral transform, Borel measurability, and general covariance are source proofs; the runner checks exact finite parameters and independent controls
+negative_scope: only the displayed isotropic compiler family and singleton-support deterministic half-half target are rejected as unique/universal routes
+PASS: source-current-axiom the exact current probability and content-only additive Record clauses are present
+PASS: source-parent-residual Block 3 leaves the map to rho, physical program compiler, and operational quotient open
+PASS: source-menu-parent the stacked menu parent supplies both exact shared-effect ternary menus
+PASS: source-effect-prior the covariant effect prior leaves effect selection conditional on repeat certainty
+PASS: source-finite-process-prior the prior finite decoder uses a supplied trace/Kraus four-state domain
+PASS: source-physical-quotient-prior the prior physical quotient does not derive a general effect-only quotient
+PASS: gaussian-noise-moment eight real coordinates with variance one-half give E[Z Zdagger]=2I
+PASS: second-moment-density the raw normalized second moment gives I/2 at blank and diag(3/5,2/5) at Pz
+PASS: isotropic-family-density the lambda-one member is diag(4/7,3/7) and both fixtures are positive trace one
+PASS: density-operator-extractor-variation the second-moment density operator changes between blank and all-Pz conditions
+PASS: density-operator-extractor-covariance an exact Pauli-X control transports the center and extracted density operator by conjugation
+PASS: trace-uniformizer-parameters the centered real trace has exact Gaussian mean zero and variance one
+PASS: exact-menu-geometry both shared-effect ternary programs are exact scaled-projector resolutions
+PASS: shared-effect-incidence the exact ternary programs share only E0
+PASS: raw-compiler-menu-a the raw second-moment compiler gives exact menu-A weights (3/10,19/50,8/25)
+PASS: raw-compiler-menu-b the raw second-moment compiler gives exact menu-B weights (3/10,7/20,7/20)
+PASS: effect-grade-normalization all four exact compiler vectors are nonnegative and normalized
+PASS: effect-descent at one fixed Gaussian condition, the shared effect receives one value in both contexts for each compiler member
+PASS: compiler-nonselection-gap lambda zero and one give the shared effect the exact positive difference 1/70
+PASS: quantile-cuts the exact cumulative cuts are (0,3/10,17/25,1) and (0,3/10,13/20,1)
+PASS: quantile-pushforward uniform interval lengths reproduce every exact effect weight
+PASS: quantile-decoder-totality midpoints of every nonempty interval receive exactly their ordered labels
+PASS: grade-endpoints the extracted density operator evaluates the null and certain effects as zero and one
+PASS: atomic-deterministic-boundary a singleton-support deterministic decoder attains only (1,0) or (0,1), never half-half
+PASS: construction-source-surface the source states the moment, density operator, uniformizer, pushforward, and exact menu outputs
+PASS: boundary-source-surface the source states the bounded nonselection, atomic boundary, and governance limit
+PASS: machine-status-contract the source carries the complete bounded upstream-support trace contract
+PASS: canonical-nonmutation the second-moment/quantile compiler notation is absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, and global-negative rejection are visible
+per_element: all eight Gaussian coordinates, exact second moments, five menu effects, four weight vectors, and singleton atomic support are checked
+per_site: one M_2(C) site is executed at blank and all-Pz neighbor conditions; no physical site-selection or formation process is asserted
+per_mode: the centered trace uniformizer and an exact simultaneous Pauli-X conjugation control are checked; no spectral-mode exhaustion is claimed
+per_block: the fixed-condition measure-to-density-operator-to-quantile-decoder-to-effect-grade chain is checked on two ternary programs and one atomic binary control
+lattice_wide: checked and not executed — translation/proper-cubic covariance is analytic for the center rule, while global program dynamics and histories remain absent
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

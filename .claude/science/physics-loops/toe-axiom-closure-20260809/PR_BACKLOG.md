@@ -27,6 +27,19 @@ generated residue has been removed. Commit, push, and stacked PR delivery
 are complete. Opened: PR #6067, commit `4374cbd5b9`. Hard landing order is
 #6063, then #6065, then #6067. The canonical axiom memo remains untouched.
 
+Block 4 is under direct self-review on branch
+`physics-loop/toe-axiom-closure-block04-20260810`, stacked on the exact PR
+#6067 head `bcd2edf4dad188554e9341f412639916efc8a953`. The fixed-condition
+Gaussian density-operator/quantile compiler, isotropic selection control,
+atomic splitting control, source-level N1--N8 gate, runner/cache, harness row,
+and citation-manifest entry are constructed. The runner is `PASS=29 FAIL=0`,
+the independent symbolic route agrees, and eighteen process-local mutations
+reach their intended failure families. Direct conformance passes. The full
+pipeline reproduces only PR #6061's current-main dependency-policy epoch stop,
+and all 1,048 tracked plus 816 untracked generated outputs were cleaned. Final
+cold diff remains before commit, push, and a stacked PR. The canonical axiom
+memo remains untouched; no `review-loop` is used.
+
 Completed Block 1 delivery checklist:
 
 - resolve or honestly demote the exact target;

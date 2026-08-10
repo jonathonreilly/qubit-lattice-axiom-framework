@@ -71,3 +71,21 @@ frequency interpretation.
 The theorem does not import a density state, Born evaluation, physical
 apparatus occurrence, global formation process, frequency law, or selected
 operational quotient.
+
+## Block 4 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Block 3 Hermitian-neighbor-average Gaussian `mu_C` | explicit possibility law | constructed stacked parent | yes | current-compatible completion, not selected |
+| complex Gaussian second moment `E[Z Z^dagger]=2I` | density-operator candidate | elementary analytic calculation | yes | proved in source and fixture-checked |
+| centered trace CDF `Phi(Re Tr(A-C))` | content uniformizer | elementary probability-integral transform | yes | derived only on the displayed atomless Gaussian law |
+| ordered supplied effect resolution | decoder program parameter | mathematical condition | yes | no physical carrier or occurrence inferred |
+| trace evaluation of the extracted density operator | target interval lengths | constructed compiler output | yes | not imported as a physical Born law |
+| isotropic `lambda I` extractor family | selection control | constructed hostile family | yes for bounded nonselection | no global non-derivability claim |
+| atomic `delta_C` family and regularized extractor | splitting control | constructed current-compatible family | yes for boundary | rejects only universal deterministic realization |
+| physical preparation/program quotient | cross-condition bridge | open import | no for theorem; yes for physical closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The fixed-condition compiler does not import physical state identity,
+apparatus registration, cross-program preparation equivalence, Record
+occurrence, repeated trials, or realized-history typicality.

@@ -108,6 +108,37 @@ apparatus condition, registers a program-relative content decoder, and adds an
 operational-effect quotient across programs. It remains hypothetical; no
 canonical axiom is edited.
 
+## Block 4 Target And Disposition
+
+Block 4 asks whether the explicit Gaussian completion can construct the whole
+mathematical compiler that Block 3 left open, and then asks exactly which parts
+still lack physical authority.
+
+The positive target is fixed-condition and constructive: derive a
+density-operator candidate from `mu_C`, build a content uniformizer, cut it at
+the resulting effect weights for every supplied finite ordered resolution, and
+verify exact shared-effect descent on the two hostile ternary menus. The
+negative target is bounded to an explicit extractor family and one atomic
+control; no global non-derivability claim is permitted.
+
+The displayed Gaussian law gives
+
+`rho_C=(C^2+2I)/(Tr(C^2)+4)`
+
+and `Phi(Re Tr(A-C))` is uniform. Quantile cuts therefore push the existing
+measure to `Tr(rho_C E)` exactly. At `C=P_z`, the two shared-effect menus both
+give `E_0` weight `3/10`. An isotropic `lambda I` family preserves the whole
+compiler while changing that weight to `2/7` at `lambda=1`, and a singleton
+atomic family cannot deterministically realize a half-half target.
+
+Thus the fixed-condition mathematical compiler is constructed, not merely
+postulated. The remaining physical walls are collapsed to: (1) selection of a
+density-operator/compiler map, (2) atom splitting outside the Gaussian
+completion, and (3) physical preparation/program registration and quotient,
+including cross-condition equivalence and occurrence. No canonical axiom is
+edited, and the fixed TOE percentages do not move because none of those
+physical/autonomous obligations is retired.
+
 ## Trace target
 
 The landed source states:

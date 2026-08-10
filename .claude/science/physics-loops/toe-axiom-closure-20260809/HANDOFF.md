@@ -116,3 +116,41 @@ operation normal form and Cycle 321's coarse-CP quotient; require an explicit
 contact/pointer encoding before treating a decoder as physical. If that route
 only relocates the target, state the exact residual rather than editing the
 canonical axiom memo.
+
+## Current Gaussian compiler block
+
+Block 4 executes a stronger positive route than merely extending the finite
+CNOT witness. For the explicit full-support Gaussian law `A=C+Z`, direct
+integration gives `E[A A^dagger]=C^2+2I`; normalizing supplies a positive
+trace-one density-operator candidate. The centered statistic
+`Re Tr(A-C)` is standard normal, so its Gaussian CDF is uniform. Cutting that
+scalar at cumulative `Tr(rho_C E_i)` weights gives a Borel program-relative
+content decoder whose pushforward is exact for every supplied finite ordered
+effect resolution at the same fixed condition.
+
+At `C=P_z`, the hostile menus have exact weights
+`(3/10,19/50,8/25)` and `(3/10,7/20,7/20)`, so their shared effect descends to
+`3/10`. This is a complete fixed-condition mathematical compiler, not a
+physical Born derivation. An isotropic extractor family gives the same
+structural compiler with shared-effect value `2/7` at `lambda=1`, proving only
+bounded physical nonselection. A covariant singleton-support law cannot
+deterministically realize a half-half binary target, isolating atom splitting
+as a separate general-law resource.
+
+The three exact residuals are density-operator/compiler selection, atom
+splitting outside the Gaussian completion, and the physical
+preparation/program quotient that registers programs, holds a preparation
+fixed across apparatus-dependent conditions, and causes Records. The source
+contains a complete N1--N8 gate and no global no-go. The primary runner is
+`PASS=29 FAIL=0`; an independent SymPy recomputation agrees on both density
+operators, both exact menu resolutions and weight vectors, and the `1/70`
+selection gap. Eighteen process-local mutation probes each reach their named
+failure family. The graph is regenerated at 5,450 nodes / 15,502 edges, with
+the new note at out-degree five. The canonical axiom memo is unchanged and
+the checkpoint-zero percentages remain fixed. Continue without `review-loop`.
+
+Next exact action: test whether an explicit local contact/pointer program
+selects and physically encodes this compiler while preserving a preparation
+class across program-dependent neighbor conditions. If it cannot, report the
+narrow candidate axiom delta; do not edit canonical axioms without owner
+authorization.

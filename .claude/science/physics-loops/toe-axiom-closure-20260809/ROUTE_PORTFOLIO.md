@@ -35,6 +35,19 @@ families are tracked separately in `APPROACH_REGISTRY.md`.
 | physical program quotient | derive cross-program equivalence from contact/pointer dynamics | one coarse-CP quotient exists; general effect quotient remains open | rank next |
 | refined axiom addition | program decoder, operational-effect map/descent, endpoints, low-arity coverage | sufficient by Block 1, not necessary | governance fallback only |
 
+## Block 4 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| normalized second moment | `rho_C=E[A A^dagger]/Tr(E[A A^dagger])` on the explicit Gaussian law | exact positive trace-one density-operator candidate | use as constructive compiler member |
+| centered trace uniformizer | `Phi(Re Tr(A-C))` | exact uniform scalar at fixed `C`; quantile fibers realize every supplied finite menu | positive construction |
+| fixed-condition effect quotient | `w_C(E)=Tr(rho_C E)` | normalization, endpoints, and shared-effect descent close inside the compiler | positive construction, not physical quotient |
+| isotropic extractor family | add `lambda I` before normalization | all displayed compiler properties survive while `E_0` changes by `1/70` | keep physical selection open |
+| atomic deterministic decoder | `nu_C=delta_C` at blank condition | cannot realize a half-half target without splitting | keep ancilla/stochastic route live |
+| locked-output CP instrument | derive program effects and decoder from a physical operation | finite conditional prior art exists; no continuous-law compiler or preparation quotient | rank next |
+| coarse-CP quotient | quotient proportional hidden refinements | exact finite prior result does not identify all effect-equal programs across changed conditions | use as partial ingredient only |
+| refined axiom addition | select extractor/uniformizer, register programs, and identify preparation equivalence | sufficient on mapped domain, not necessary | governance fallback only |
+
 ## Prior-art sweep
 
 Searched authority: `origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.
@@ -86,3 +99,14 @@ adjacent PRs affect routing but do not collide:
   result.
 - PR #6064 and the remaining recent open stack concern cell-cutting symmetry,
   ranks, and exact covers rather than the Admissibility/Born interface.
+- PR #6066 measures axiom-fidelity corpus usage but adds no decoder, effect
+  quotient, density-operator extractor, or physical program premise.
+- PR #6068 is a cell-cutting small-matrix/rank census under four-cube
+  symmetry. Its four-file delta changes no axiom, primitive, Admissibility
+  measure, Record decoder, effect quotient, or compiler-selection surface.
+
+The Block 4 source also checked Cycle 284's supplied finite trace/Kraus
+decoder, the covariant effect-map theorem, and Cycle 321's finite coarse-CP
+quotient. None constructs the current continuous-measure second-moment/CDF
+compiler or supplies its physical selection and cross-condition preparation
+equivalence.

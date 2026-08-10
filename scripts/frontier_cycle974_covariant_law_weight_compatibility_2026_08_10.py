@@ -12,7 +12,6 @@ from __future__ import annotations
 
 import ast
 import json
-import subprocess
 import sys
 from collections import Counter
 from fractions import Fraction
@@ -32,18 +31,22 @@ AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150 * 1024
 HOUSE_STDOUT_LIMIT_BYTES = 6000
 AUDIT_INPUT_PATHS = (
+    "outputs/cycle974_cited_primary_provenance_2026_08_10.json",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "978302583fc5e58b883f1970c73a335fc4d9366984773875ea2b6dd969ad538c",
     AUDIT_INPUT_PATHS[1]:
+        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    AUDIT_INPUT_PATHS[2]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
 }
 EXPECTED_INPUT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
-    AUDIT_INPUT_PATHS[1]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
+    AUDIT_INPUT_PATHS[0]: "d2b4197f3417ec85e0fcb148db89146b742fafe3",
+    AUDIT_INPUT_PATHS[1]: "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+    AUDIT_INPUT_PATHS[2]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
 }
 
 PROVENANCE = (
@@ -131,6 +134,7 @@ DIRECTIONS = (
 CONDITIONS = tuple(product((0, 1), repeat=6))
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
 RECEIPT_PATH = ROOT / "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json"
+PROVENANCE_BUNDLE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
 
 
 def compact(value: object) -> str:
@@ -160,15 +164,12 @@ def ast_literal_assignment(tree: ast.Module, name: str):
     raise KeyError(name)
 
 
-def provenance_controls() -> dict:
-    rows = []
+def capture_provenance_bundle() -> int:
+    """One-shot maintainer action; normal certification never needs git objects."""
+    import subprocess
+
+    entries = []
     for item in PROVENANCE:
-        note = subprocess.check_output(
-            ["git", "cat-file", "-p", item["note_blob"]]
-        )
-        runner = subprocess.check_output(
-            ["git", "cat-file", "-p", item["runner_blob"]]
-        )
         note_ref_blob = subprocess.check_output(
             ["git", "rev-parse", f'{item["commit"]}:{item["note_path"]}'],
             text=True,
@@ -177,8 +178,47 @@ def provenance_controls() -> dict:
             ["git", "rev-parse", f'{item["commit"]}:{item["runner_path"]}'],
             text=True,
         ).strip()
-        note_text = note.decode("utf-8")
-        tree = ast.parse(runner, filename=item["runner_path"])
+        if note_ref_blob != item["note_blob"] or runner_ref_blob != item["runner_blob"]:
+            raise AssertionError((item["label"], note_ref_blob, runner_ref_blob))
+        entries.append({
+            "label": item["label"],
+            "commit": item["commit"],
+            "note_path": item["note_path"],
+            "note_blob": item["note_blob"],
+            "runner_path": item["runner_path"],
+            "runner_blob": item["runner_blob"],
+            "note_text": subprocess.check_output(
+                ["git", "cat-file", "-p", item["note_blob"]], text=True
+            ),
+            "runner_source": subprocess.check_output(
+                ["git", "cat-file", "-p", item["runner_blob"]], text=True
+            ),
+        })
+    payload = {
+        "schema": "cycle974-cited-primary-text-ast-provenance-v1",
+        "capture_rule": "commit:path resolved to the declared blob before payload capture",
+        "entries": entries,
+    }
+    PROVENANCE_BUNDLE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    PROVENANCE_BUNDLE_PATH.write_text(
+        json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    print(PROVENANCE_BUNDLE_PATH.relative_to(ROOT))
+    return 0
+
+
+def provenance_controls() -> dict:
+    bundle = json.loads(PROVENANCE_BUNDLE_PATH.read_text(encoding="utf-8"))
+    by_label = {entry["label"]: entry for entry in bundle["entries"]}
+    rows = []
+    for item in PROVENANCE:
+        entry = by_label[item["label"]]
+        note = entry["note_text"].encode("utf-8")
+        runner = entry["runner_source"].encode("utf-8")
+        note_blob = git_blob(note)
+        runner_blob = git_blob(runner)
+        note_text = entry["note_text"]
+        tree = ast.parse(entry["runner_source"], filename=item["runner_path"])
         functions = {
             node.name for node in tree.body if isinstance(node, ast.FunctionDef)
         }
@@ -186,9 +226,9 @@ def provenance_controls() -> dict:
             "label": item["label"],
             "commit": item["commit"],
             "note_path": item["note_path"],
-            "note_blob": note_ref_blob,
+            "note_blob": note_blob,
             "runner_path": item["runner_path"],
-            "runner_blob": runner_ref_blob,
+            "runner_blob": runner_blob,
             "note_text_needles_match": all(
                 needle in note_text for needle in item["note_needles"]
             ),
@@ -203,16 +243,26 @@ def provenance_controls() -> dict:
             )
             row["candidate_names_match"] = tuple(row["ast_candidate_names"]) == CANDIDATE_NAMES
         row["pass"] = bool(
-            note_ref_blob == item["note_blob"]
-            and runner_ref_blob == item["runner_blob"]
+            entry["commit"] == item["commit"]
+            and entry["note_path"] == item["note_path"]
+            and entry["runner_path"] == item["runner_path"]
+            and entry["note_blob"] == item["note_blob"] == note_blob
+            and entry["runner_blob"] == item["runner_blob"] == runner_blob
             and row["note_text_needles_match"]
             and row["runner_ast_functions_match"]
             and row.get("candidate_names_match", True)
         )
         rows.append(row)
     return {
+        "bundle_schema": bundle.get("schema"),
+        "bundle_entry_count": len(bundle["entries"]),
         "rows": rows,
-        "all_pins_and_text_ast_checks_match": all(row["pass"] for row in rows),
+        "all_pins_and_text_ast_checks_match": bool(
+            bundle.get("schema") == "cycle974-cited-primary-text-ast-provenance-v1"
+            and len(bundle["entries"]) == len(PROVENANCE)
+            and set(by_label) == {item["label"] for item in PROVENANCE}
+            and all(row["pass"] for row in rows)
+        ),
         "blocked_modules_loaded": sorted(
             name for name in sys.modules
             if any(item["runner_path"].removesuffix(".py").endswith(name) for item in PROVENANCE)
@@ -751,6 +801,122 @@ def dependence_law_rebuild() -> dict:
     }
 
 
+def evaluate_extension(
+    vector: tuple,
+    carrier: dict | None = None,
+    use_xnor_kernel: bool = False,
+) -> dict:
+    """Mechanically test the declared product extension, including its failures."""
+    if carrier is None:
+        carrier = {
+            (local_input, condition): Fraction(1, 128)
+            for local_input in (0, 1) for condition in CONDITIONS
+        }
+    total = sum(vector)
+    nonnegative = all(value >= 0 for value in vector)
+    normalizable = total > 0
+    carrier_total = sum(carrier.values(), Fraction(0))
+    event_marginal_match = carrier_total == 1
+    first_disagreement = None
+    conditional_checks = 0
+    if not nonnegative:
+        first_disagreement = {
+            "configuration": None,
+            "quantity": "min_e w_i(e)",
+            "observed": str(min(vector)),
+            "expected": ">=0",
+        }
+    elif not normalizable:
+        first_disagreement = {
+            "configuration": None,
+            "quantity": "sum_e w_i(e)",
+            "observed": str(total),
+            "expected": ">0",
+        }
+    elif not event_marginal_match:
+        first_disagreement = {
+            "configuration": None,
+            "quantity": "sum_{x,n} q(x,n)",
+            "observed": str(carrier_total),
+            "expected": "1",
+        }
+    else:
+        for local_input in (0, 1):
+            for condition in CONDITIONS:
+                mass = carrier.get((local_input, condition), Fraction(0))
+                if mass <= 0:
+                    first_disagreement = {
+                        "configuration": [local_input, list(condition)],
+                        "quantity": "q(x,n)",
+                        "observed": str(mass),
+                        "expected": ">0",
+                    }
+                    break
+                forced_y = local_input ^ condition[0] ^ int(use_xnor_kernel)
+                for outcome in (0, 1):
+                    conditional_checks += 1
+                    numerator = mass if outcome == forced_y else Fraction(0)
+                    observed = numerator / mass
+                    expected = Fraction(int(outcome == (local_input ^ condition[0])))
+                    if observed != expected:
+                        first_disagreement = {
+                            "configuration": [local_input, list(condition), outcome],
+                            "quantity": "P_i(y|x,n)",
+                            "observed": str(observed),
+                            "expected": str(expected),
+                        }
+                        break
+                if first_disagreement:
+                    break
+            if first_disagreement:
+                break
+    survives = bool(
+        nonnegative and normalizable and event_marginal_match
+        and first_disagreement is None
+    )
+    return {
+        "verdict": "SURVIVES" if survives else "EXCLUDED",
+        "nonnegative": nonnegative,
+        "normalizable": normalizable,
+        "event_marginal_factor": str(carrier_total),
+        "event_marginal_matches": event_marginal_match,
+        "conditional_scalar_checks": conditional_checks,
+        "first_disagreement": first_disagreement,
+    }
+
+
+def active_compatibility_controls() -> dict:
+    reference = (1, 2, 0)
+    missing_configuration_carrier = {
+        (local_input, condition): Fraction(1, 127)
+        for local_input in (0, 1) for condition in CONDITIONS
+        if not (local_input == 0 and condition == (0,) * 6)
+    }
+    probes = {
+        "valid_xor": evaluate_extension(reference),
+        "negative_weight": evaluate_extension((-1, 2, 0)),
+        "zero_total": evaluate_extension((0, 0, 0)),
+        "missing_configuration": evaluate_extension(
+            reference, carrier=missing_configuration_carrier
+        ),
+        "xnor_instead_of_xor": evaluate_extension(reference, use_xnor_kernel=True),
+    }
+    expected = {
+        "valid_xor": "SURVIVES",
+        "negative_weight": "EXCLUDED",
+        "zero_total": "EXCLUDED",
+        "missing_configuration": "EXCLUDED",
+        "xnor_instead_of_xor": "EXCLUDED",
+    }
+    return {
+        "expected_verdicts": expected,
+        "probes": probes,
+        "all_controls_decisive": all(
+            probes[name]["verdict"] == verdict for name, verdict in expected.items()
+        ),
+    }
+
+
 def compatibility_test(candidates: dict, event_data: dict, law: dict) -> dict:
     rows = {}
     vectors = candidates["vectors"]
@@ -759,46 +925,13 @@ def compatibility_test(candidates: dict, event_data: dict, law: dict) -> dict:
     for name in CANDIDATE_NAMES:
         vector = vectors[name]
         total = sum(vector)
-        nonnegative = all(value >= 0 for value in vector)
-        normalized = total > 0
-        event_marginal_factor = sum(q for _x in (0, 1) for _condition in CONDITIONS)
-        event_marginal_match = event_marginal_factor == 1
-        first_conditional_failure = None
-        conditional_checks = 0
-        if normalized:
-            for local_input in (0, 1):
-                for condition in CONDITIONS:
-                    forced_y = local_input ^ condition[0]
-                    denominator = Fraction(total, total) * q
-                    for outcome in (0, 1):
-                        conditional_checks += 1
-                        numerator = denominator if outcome == forced_y else Fraction(0)
-                        observed = numerator / denominator
-                        expected = Fraction(int(outcome == forced_y))
-                        if observed != expected and first_conditional_failure is None:
-                            first_conditional_failure = {
-                                "x": local_input,
-                                "condition": list(condition),
-                                "y": outcome,
-                                "observed": str(observed),
-                                "expected": str(expected),
-                            }
-        survives = bool(
-            nonnegative and normalized and event_marginal_match
-            and first_conditional_failure is None
-        )
+        evaluation = evaluate_extension(vector)
         positive_index = candidates["candidates"][name]["first_positive_event_index"]
         atom_numerator = vector[positive_index]
         rows[name] = {
-            "verdict": "SURVIVES" if survives else "EXCLUDED",
-            "nonnegative": nonnegative,
-            "normalizable": normalized,
+            **evaluation,
             "event_marginal_identity": "sum_{x,n,y} P_i(e,x,n,y)=p_i(e)",
-            "event_marginal_factor": str(event_marginal_factor),
-            "event_marginal_matches": event_marginal_match,
             "conditional_identity": "P_i(y|x,n)=1{y=x XOR n_d}",
-            "conditional_scalar_checks": conditional_checks,
-            "first_disagreement": first_conditional_failure,
             "exact_extension_witness": {
                 "event_atom": list(events[positive_index]),
                 "p_i_event": f"{atom_numerator}/{total}",
@@ -816,12 +949,60 @@ def compatibility_test(candidates: dict, event_data: dict, law: dict) -> dict:
         "excluded": excluded,
         "survivor_count": len(survivors),
         "excluded_count": len(excluded),
+        "active_controls": active_compatibility_controls(),
     }
+
+
+def selection_status(compatibility: dict) -> dict:
+    survivor_count = compatibility["survivor_count"]
+    excluded_count = compatibility["excluded_count"]
+    status = {
+        "survivors": compatibility["survivors"],
+        "excluded": compatibility["excluded"],
+        "freedom_before": len(CANDIDATE_NAMES),
+        "freedom_after": survivor_count,
+        "absolute_reduction": len(CANDIDATE_NAMES) - survivor_count,
+        "fractional_reduction": str(Fraction(len(CANDIDATE_NAMES) - survivor_count, len(CANDIDATE_NAMES))),
+        "born_wall_stands": survivor_count > 1,
+        "does_not_supply": (
+            "a local-to-event lift", "an event-marginal selector",
+            "an occurrence rule", "a Born rule",
+        ),
+    }
+    if survivor_count > 1:
+        status.update({
+            "case": "RESIDUAL_FREEDOM",
+            "selected_weighting": None,
+            "selection_premises": (),
+            "refutation_target": None,
+        })
+    elif survivor_count == 1:
+        status.update({
+            "case": "SINGLETON_SELECTION",
+            "selected_weighting": compatibility["survivors"][0],
+            "selection_premises": (
+                "the five reconstructed finite event weightings are exhaustive candidates",
+                "the existential joint-extension criterion",
+                "strictly positive normalized q(x,n)",
+                "the certified XOR conditional on every radius-one configuration",
+            ),
+            "refutation_target": None,
+        })
+    else:
+        status.update({
+            "case": "NO_SURVIVOR_REFUTATION",
+            "selected_weighting": None,
+            "selection_premises": (),
+            "refutation_target": "the declared compatibility criterion or a landed input row",
+        })
+    status["partition_count"] = survivor_count + excluded_count
+    return status
 
 
 def render_stdout(receipt: dict) -> str:
     candidates = receipt["certificates"]["A_REBUILD"]["candidate_rows"]
     compatibility = receipt["certificates"]["B_COMPATIBILITY_TEST"]
+    selection = receipt["certificates"]["C_SELECTION_STATUS"]
     lines = ["CYCLE974_COVARIANT_LAW_WEIGHT_COMPATIBILITY"]
     lines.append(
         "A_REBUILD " + ("PASS" if receipt["checks"]["A_REBUILD"] else "FAIL")
@@ -841,9 +1022,13 @@ def render_stdout(receipt: dict) -> str:
     )
     lines.append(
         "C_SELECTION_STATUS " + ("PASS" if receipt["checks"]["C_SELECTION_STATUS"] else "FAIL")
-        + f" :: five_to={compatibility['survivor_count']}; excluded={compatibility['excluded_count']};"
-        + " reduction=0/5 (0%); Born weighting wall stands unchanged;"
-        + " the covariant law fixes a conditional kernel but supplies no local-to-event lift or event-marginal selector"
+        + f" :: case={selection['case']}; five_to={selection['freedom_after']};"
+        + f" excluded={compatibility['excluded_count']};"
+        + f" reduction={selection['absolute_reduction']}/5"
+        + f" ({20 * selection['absolute_reduction']}%);"
+        + f" wall_stands={selection['born_wall_stands']};"
+        + f" selected={selection['selected_weighting']};"
+        + f" refutation_target={selection['refutation_target']}"
     )
     controls = receipt["certificates"]["D_CONTROLS"]
     lines.append(
@@ -867,6 +1052,7 @@ def run() -> tuple[dict, str]:
     candidates = candidate_rebuild(full)
     law = dependence_law_rebuild()
     compatibility = compatibility_test(candidates, full, law)
+    selection = selection_status(compatibility)
     full_prefix = tuple(
         event for event in full["events"]
         if event[1] <= DETERMINISM_ORBITS * full["program_stations"]
@@ -901,17 +1087,53 @@ def run() -> tuple[dict, str]:
         and law["uniform_target_input_edge_pairs"] == 3_840
         and law["uniform_target_input_changed_pairs"] == 0
     )
-    b_pass = all(
-        row["verdict"] == (
-            "SURVIVES" if row["nonnegative"] and row["normalizable"]
-            and row["event_marginal_matches"] and row["first_disagreement"] is None
-            else "EXCLUDED"
+    b_pass = bool(
+        compatibility["active_controls"]["all_controls_decisive"]
+        and tuple(compatibility["rows"]) == CANDIDATE_NAMES
+        and set(compatibility["survivors"]).isdisjoint(compatibility["excluded"])
+        and set(compatibility["survivors"]) | set(compatibility["excluded"]) == set(CANDIDATE_NAMES)
+        and all(
+            all(
+                row[key] == evaluate_extension(candidates["vectors"][name])[key]
+                for key in (
+                    "verdict", "nonnegative", "normalizable",
+                    "event_marginal_factor", "event_marginal_matches",
+                    "conditional_scalar_checks", "first_disagreement",
+                )
+            )
+            for name, row in compatibility["rows"].items()
         )
-        for row in compatibility["rows"].values()
     )
     c_pass = bool(
-        compatibility["survivor_count"] + compatibility["excluded_count"] == 5
-        and (compatibility["survivor_count"] <= 1 or compatibility["survivor_count"] > 1)
+        selection["partition_count"] == len(CANDIDATE_NAMES)
+        and selection["freedom_before"] == len(CANDIDATE_NAMES)
+        and selection["freedom_after"] == compatibility["survivor_count"]
+        and selection["absolute_reduction"] == len(CANDIDATE_NAMES) - compatibility["survivor_count"]
+        and selection["fractional_reduction"] == str(Fraction(selection["absolute_reduction"], len(CANDIDATE_NAMES)))
+        and (
+            (
+                selection["case"] == "RESIDUAL_FREEDOM"
+                and selection["freedom_after"] > 1
+                and selection["born_wall_stands"]
+                and selection["selected_weighting"] is None
+                and selection["refutation_target"] is None
+            )
+            or (
+                selection["case"] == "SINGLETON_SELECTION"
+                and selection["freedom_after"] == 1
+                and not selection["born_wall_stands"]
+                and selection["selected_weighting"] == compatibility["survivors"][0]
+                and bool(selection["selection_premises"])
+                and selection["refutation_target"] is None
+            )
+            or (
+                selection["case"] == "NO_SURVIVOR_REFUTATION"
+                and selection["freedom_after"] == 0
+                and not selection["born_wall_stands"]
+                and selection["selected_weighting"] is None
+                and bool(selection["refutation_target"])
+            )
+        )
     )
     d_pass = bool(
         controls["pass"] and determinism_replay and runtime < AUDIT_TIMEOUT_SEC
@@ -938,19 +1160,7 @@ def run() -> tuple[dict, str]:
                 "provenance": controls["provenance"],
             },
             "B_COMPATIBILITY_TEST": compatibility,
-            "C_SELECTION_STATUS": {
-                "survivors": compatibility["survivors"],
-                "excluded": compatibility["excluded"],
-                "freedom_before": 5,
-                "freedom_after": compatibility["survivor_count"],
-                "absolute_reduction": 5 - compatibility["survivor_count"],
-                "fractional_reduction": str(Fraction(5 - compatibility["survivor_count"], 5)),
-                "born_wall_stands": compatibility["survivor_count"] > 1,
-                "does_not_supply": (
-                    "a local-to-event lift", "an event-marginal selector",
-                    "an occurrence rule", "a Born rule",
-                ),
-            },
+            "C_SELECTION_STATUS": selection,
             "D_CONTROLS": {
                 "literal_audit_input_paths": controls["literal_audit_input_paths"],
                 "sha256": controls["sha256"],
@@ -983,6 +1193,10 @@ def run() -> tuple[dict, str]:
 
 
 def main() -> int:
+    if sys.argv[1:] == ["--capture-provenance"]:
+        return capture_provenance_bundle()
+    if sys.argv[1:]:
+        raise SystemExit("usage: runner [--capture-provenance]")
     receipt, output = run()
     RECEIPT_PATH.parent.mkdir(parents=True, exist_ok=True)
     RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")

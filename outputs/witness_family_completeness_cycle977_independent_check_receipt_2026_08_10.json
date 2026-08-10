@@ -31,7 +31,7 @@
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "literal_reads=3<=6; input_sha256={\"logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt\":\"5f0ba8800c9c36275bf669c9fa5e54a60c839dc1052f9e58fbc289a021037d1b\",\"outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json\":\"8335aebe6cc1d5d7e86515883bb293cff84ba8d22a5baaa0691045e67de4499d\",\"scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py\":\"28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4\"}; determinism_replay=True; runtime_s=13.710894<timeout_s=300; stdout_upper_bound=3385<6000<150000",
+   "finding": "literal_reads=3<=6; input_sha256={\"logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt\":\"5f0ba8800c9c36275bf669c9fa5e54a60c839dc1052f9e58fbc289a021037d1b\",\"outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json\":\"8335aebe6cc1d5d7e86515883bb293cff84ba8d22a5baaa0691045e67de4499d\",\"scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py\":\"28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4\"}; determinism_replay=True; runtime_s=13.594234<timeout_s=300; stdout_upper_bound=3385<6000<150000",
    "pass": true
   }
  },
@@ -170,6 +170,6 @@
   "R4": "reject active corruptions in family, census, laws, classes, covariance, and undercount cause",
   "R5": "enforce deterministic replay, read cap, runtime, and stdout controls"
  },
- "runtime_sec": 13.710894249961711,
+ "runtime_sec": 13.594233709038235,
  "stdout_bytes": 1937
 }

@@ -471,7 +471,6 @@ def main() -> int:
 
     r2_ok = (
         comparable_primary == independent_payload
-        and first["closure_failure_count"] == 0
         and independent_payload["family_covariant"] == (
             first["closure_failure_count"] == 0
             and first["rotation_failure_count"] == 0

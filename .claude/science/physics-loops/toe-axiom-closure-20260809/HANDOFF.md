@@ -740,7 +740,11 @@ passes; seeded evidence checks Block 16 alone and all 16 stacked claims with
 zero failures or control failures. The isolated full pipeline passes through
 effective-status computation and then reproduces only PR #6061's governed
 dependency-policy epoch mismatch at restoration; its 1,066 tracked generated
-changes and 828 new shards stay disposable. The exact 17-file science commit
+changes and 828 new shards were discarded. A clean synthetic merge of current
+`origin/main` adds only PR #6061's five governance files and passes the entire
+pipeline through restoration, stage-18 invariants, and checkpoint
+finalization. This isolates the exact-base stop to stacked-ancestor lag rather
+than a Block-16 defect. The exact 17-file science commit
 is `1effedfb5e`; conformance is commit `f789b7128f`. PR #6085 is `CLEAN` and
 mergeable on the exact #6083 delivery head
 `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`. New PR #6084 is adjacent

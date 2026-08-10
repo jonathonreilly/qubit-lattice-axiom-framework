@@ -277,8 +277,11 @@ and direct conformance pass at 5,462 nodes / 15,572 edges with no new
 canonical-harness weave. The exact 17-file science commit is `1effedfb5e`.
 The isolated full pipeline passes through effective-status computation and
 then reproduces only PR #6061's governed dependency-policy epoch mismatch at
-restoration; 1,066 tracked generated changes and 828 new shards remain
-disposable. Seeded changed evidence checks Block 16 alone and all 16 stacked
+restoration; 1,066 tracked generated changes and 828 new shards were
+discarded. A synthetic merge of current `origin/main` adds only PR #6061's
+five governance files and passes every pipeline stage plus final checkpoint
+verification, proving the exact-base stop is inherited stack lag. Seeded
+changed evidence checks Block 16 alone and all 16 stacked
 claims with zero failures or control failures. The canonical memo is
 untouched, the fixed TOE percentages do not move, and no `review-loop` is
 used. Science commit is `1effedfb5e`; conformance commit is

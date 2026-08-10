@@ -953,9 +953,15 @@ audit verdict.
   load-bearing computation, 4,800-row ledger seeding/fixed point, sanitization,
   classifier capture for 3,678 runners, and effective-status computation.
   Restoration then reproduces only PR #6061's governed dependency-policy epoch
-  mismatch. Its 1,066 tracked generated changes and 828 new shards remain in a
-  disposable worktree. Seeded changed-evidence checks Block 16 alone and all
-  16 stacked claims with zero failures and zero control failures.
+  mismatch. Its 1,066 tracked generated changes and 828 new shards were
+  removed with the disposable worktree. A separate clean synthetic merge of
+  current `origin/main@39c74017b870c27c804e3992f2a11e90336476b2` adds only
+  PR #6061's five governance files and passes the complete pipeline through
+  restoration, downstream queues, strict lint, rendering, stage-18
+  invariants, and static-checkpoint finalization. Seeded changed-evidence
+  checks Block 16 alone and all 16 stacked claims with zero failures and zero
+  control failures. This separates ancestor lag from Block-16 science or
+  evidence defects.
 - The exact 17-file science commit is `1effedfb5e`; conformance is commit
   `f789b7128f`. PR #6085 is `CLEAN` and mergeable on the exact PR #6083
   delivery head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`. Hard landing order is

@@ -209,5 +209,11 @@ N1--N8 packet, and unchanged candidate axiom map are complete. The primary
 runner is `PASS=28 FAIL=0`; an independent eight-family SVD/lstsq computation
 agrees and all 28 process-local mutations fail closed. Graph registration is
 5,459 nodes / 15,553 edges with note out-degree four. Direct conformance and
-PR delivery remain pending. The canonical axiom memo is untouched, the fixed
-TOE percentages do not move, and no `review-loop` is used.
+repository integration pass. The isolated full pipeline reaches only PR
+#6061's known dependency-policy epoch mismatch after every earlier stage
+passes; 1,066 tracked generated changes and 825 new ledger shards were
+discarded with the disposable worktree. Changed-evidence readiness checks all
+13 stacked claims with zero failures or control failures. Science commit is
+`baf9372b1c`; push and PR delivery remain. The canonical axiom memo is
+untouched, the fixed TOE percentages do not move, and no `review-loop` is
+used.

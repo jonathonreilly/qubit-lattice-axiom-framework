@@ -563,9 +563,23 @@ passes eight load-bearing families, and all 28 process-local mutations fail
 at their intended checks. Citation registration is 5,459 nodes / 15,553
 edges, with note out-degree four and a canonical harness edge.
 
+Direct repository conformance passes: vocabulary has zero findings, strict
+audit lint has zero errors, graph/link/class-F invariants pass, YAML and Python
+parse, the source-pinned cache is fresh, the staged science delta is exactly
+18 paths, and the canonical axiom checksum is unchanged. The isolated full
+pipeline passes premise purity, model-family normalization, graph/manifest
+construction, load-bearing computation, ledger seeding/fixed point,
+sanitization, classifier capture, and effective-status computation. Audit
+restoration then reproduces only PR #6061's known dependency-policy epoch
+manifest mismatch. Its 1,066 tracked generated changes and 825 new ledger
+shards were removed with the disposable worktree. Seeded changed-evidence
+readiness marks Block 13 and all 13 stacked claims forensic-ready with zero
+failures and zero control failures.
+
 The existing candidate history/action amendment is sufficient to register the
 new improvement but remains hypothetical. Physical representative/mass
 selection, action unit, geometry update, coupling/sign, infrared ensemble,
 nonlinear completion, Born selector, and realized history remain open. The
 canonical memo and fixed percentages are unchanged, and no `review-loop` is
-invoked. PR delivery is pending direct conformance and the stacked push.
+invoked. The 18-file science delta is commit `baf9372b1c`; stacked push and PR
+delivery remain.

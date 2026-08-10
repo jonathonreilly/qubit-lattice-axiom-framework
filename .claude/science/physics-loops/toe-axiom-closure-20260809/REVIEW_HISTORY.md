@@ -734,10 +734,20 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   stdout certificate. It adopts the compact/dynamic steelman and rejects any
   universal no-go, new-axiom requirement, or physical-mass claim.
 - The graph is regenerated at 5,459 nodes / 15,553 edges; the note has
-  out-degree four and the harness adds one edge. Remaining direct repository,
-  isolated-pipeline, and changed-evidence gates are pending.
+  out-degree four and the harness adds one edge. Vocabulary, strict audit
+  lint, graph/link/class-F invariants, YAML, Python, whitespace, exact 18-path
+  scope, source-pinned cache freshness, and the canonical checksum pass.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph/manifest construction, load-bearing computation,
+  ledger seeding/fixed point, sanitization, classifier capture, and
+  effective-status computation. Restoration then reproduces PR #6061's known
+  dependency-policy epoch mismatch. Its 1,066 tracked generated changes and
+  825 new ledger shards were removed with the disposable worktree.
+- Seeded changed-evidence readiness checks Block 13 and all 13 stacked claims
+  as forensic-ready with zero failures and zero control failures.
 - A live open-PR sweep at `2026-08-10T09:52:42Z` finds #6080 `CLEAN`, no
   newer science PR, and no collision in the cell-cutting, semantic-map, or
   finite neighbor-word stacks. `origin/main` remains `323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.
 - The canonical memo is byte-identical to the stacked base, no percentage
-  moves, and no `review-loop` is invoked.
+  moves, and no `review-loop` is invoked. The exact 18-file science delta is
+  commit `baf9372b1c`; stacked push and PR delivery remain.

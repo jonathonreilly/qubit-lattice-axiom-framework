@@ -1023,5 +1023,28 @@ instance or Fourier census.
   and full KKT systems; the history span; theorem/no-go source surfaces;
   canonical nonmutation; and the fixed rubric. Every mutation exits nonzero
   at exactly one named check with `PASS=20 FAIL=1`.
-- Citation manifest, final cache refresh, strict lint, changed-evidence, and
-  isolated pipeline remain pending. No `review-loop` is invoked.
+- The final source/input-pinned cache remains fresh at `PASS=21 FAIL=0` and
+  carries all five substantive resolution lines. Citation registration is
+  `5,463` nodes / `15,580` edges; the new theorem node has out-degree eight.
+- Vocabulary, strict audit lint, premise purity, model-family normalization,
+  graph/link/class-F invariants, Python compilation, YAML parsing, whitespace,
+  exact 17-path scope, cache freshness, and canonical nonmutation pass.
+- The isolated exact-base pipeline passes graph/manifest reconstruction,
+  4,801-row seeding and fixed point, sanitization, 3,679-runner
+  classification, and effective-status computation. Restoration then
+  reproduces only the governed dependency-policy epoch mismatch inherited
+  from the stack base.
+- A clean synthetic merge adds only closed PR #6061's five governance files
+  and passes every full-pipeline stage through restoration, queues, strict
+  lint, render, invariants, and static-checkpoint finalization. Its 1,077
+  tracked generated changes and 829 new ledger shards were removed with the
+  disposable worktree; the exact-base rehearsal's 1,066/829 generated files
+  were likewise removed.
+- Seeded changed-evidence readiness checks Block 17 alone and all 17 stacked
+  claims with zero failures and zero control failures.
+- The exact 17-file science commit is `1ca614c439`. PR #6088 is mergeable and
+  `CLEAN` on exact PR #6085 head
+  `66f5ce6df27c777da04542804163e3e65476d10c`. PRs #6084, #6086, and #6087
+  share at most the mechanically regenerated citation manifest and have no
+  Block-17 science-packet or campaign-state collision. No `review-loop` is
+  invoked.

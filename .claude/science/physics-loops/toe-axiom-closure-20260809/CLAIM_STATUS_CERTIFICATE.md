@@ -391,5 +391,6 @@ bare_retained_allowed: false
   reactions expose metric/extra handling, and eleven give unique full fixing.
 - N1--N8 passes only for those narrow boundaries. No universal gravity,
   action, boundary, curved/nonlinear, or axiom-necessity claim ships.
-- Direct conformance and independent audit remain required. No `review-loop`
-  is invoked, and the canonical axioms and fixed percentages remain unchanged.
+- Direct conformance is complete; independent audit remains required. No
+  `review-loop` is invoked, and the canonical axioms and fixed percentages
+  remain unchanged.

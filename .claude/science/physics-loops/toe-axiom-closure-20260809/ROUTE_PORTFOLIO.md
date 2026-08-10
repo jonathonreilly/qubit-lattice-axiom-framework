@@ -382,11 +382,13 @@ not a collision. No `review-loop` is used.
 
 ## Block 17 live PR sweep
 
-At the Block 17 start, `origin/main` is
+At the Block 17 delivery sweep, `origin/main` is
 `39c74017b870c27c804e3992f2a11e90336476b2`; exact stacked base PR #6085 is
 `CLEAN` and mergeable. Repo search finds generic KKT applications in unrelated
 PMNS/Koide lanes but no compact homogeneous reaction-rank theorem, no
-`rank(P_ker(Q0)S)` source criterion, and no source-packet collision. New PR
-#6086 concerns inter-site dependence/Born weightings and changes none of the
-Regge carrier, Block-15/16 source rows, homogeneous constraints, or candidate
-geometry wording. No `review-loop` is used.
+`rank(P_ker(Q0)S)` source criterion, and no source-packet collision. PRs #6084,
+#6086, and #6087 concern inter-site dependence/Born weighting or witness
+families and change none of the Regge carrier, Block-15/16 source rows,
+homogeneous constraints, or candidate geometry wording; #6084/#6086 share
+only the regenerated citation-manifest surface. Block 17 is open as clean,
+mergeable PR #6088. No `review-loop` is used.

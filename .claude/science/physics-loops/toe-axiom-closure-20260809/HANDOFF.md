@@ -792,8 +792,19 @@ metric/nonmetric branch handling, and existence-versus-unique-response typing.
 It remains sufficient, unadopted, and nonminimal; a downstream convention or
 changed boundary/background/curved/lifted operator remains valid.
 
-Direct conformance, isolated integration, commit, push, and PR creation are
-pending. Exact stacked base is Block-16 delivery head
-`66f5ce6df27c777da04542804163e3e65476d10c`; PR #6085 is `CLEAN` and
-mergeable. No `review-loop`, canonical axiom edit, audit verdict, or fixed TOE
-percentage change occurs.
+Direct conformance is complete. An independent reconstruction reproduces the
+`1/2/3/8/11` ladder, radical residuals, extra-branch pairings, and KKT ranks;
+17 genuine load-bearing mutations each fail exactly one named check. The
+citation manifest is `5,463` nodes / `15,580` edges with one new out-degree-
+eight node. Vocabulary, strict audit lint, premise purity, model-family,
+graph/link, Python/YAML, whitespace, cache, and canonical-nonmutation gates
+pass.
+
+The exact-base cold pipeline passes through effective-status computation and
+then reproduces only the inherited dependency-policy epoch mismatch. A clean
+synthetic merge of closed PR #6061's five governance files passes all 18
+pipeline stages. Seeded changed-evidence checks Block 17 alone and all 17
+stacked claims with zero failures and zero control failures. Science commit is
+`1ca614c439`. PR #6088 is `CLEAN` and mergeable on exact Block-16 delivery
+head `66f5ce6df27c777da04542804163e3e65476d10c`. No `review-loop`, canonical
+axiom edit, audit verdict, or fixed TOE percentage change occurs.

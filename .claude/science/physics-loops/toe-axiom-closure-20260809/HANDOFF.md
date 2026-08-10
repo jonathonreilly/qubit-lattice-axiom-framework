@@ -58,8 +58,14 @@ route-exhaustion claim.
 
 The primary runner is `PASS=20 FAIL=0`; eleven mutation probes fail exactly at
 their targets; an independent SymPy calculation agrees. The source, cache,
-harness row, and citation manifest are staged on the stacked branch. Remaining
-delivery actions are commit, push, and the stacked PR. The full
+harness row, and citation manifest are open as stacked PR #6065 at commit
+`4b12a78d16`, with #6063 as a hard parent. The full
 pipeline reproduces only the current-main dependency-policy epoch mismatch
 owned by PR #6061; 1,044 tracked generated changes and 814 generated ledger
 shards were removed after the run. Continue without `review-loop`.
+
+Next campaign block: test a constructive derivation of the registered
+measurable outcome partitions and same-effect descent from Record plus
+Admissibility. If current structure underdetermines them, seek an exact paired-
+model witness and report the residual axiom update; do not edit the canonical
+axiom memo without owner authorization.

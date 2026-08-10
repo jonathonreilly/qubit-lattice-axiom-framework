@@ -152,3 +152,5 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   rerunning the pipeline; the intended staged science delta remained intact.
 - Final cold diff and stacked-delta sanity passed against the exact PR #6063
   head. `review-loop` remains unused.
+- Opened stacked PR #6065 from commit `4b12a78d16`, with #6063 as the hard
+  parent and unchanged checkpoint-zero TOE percentages.

@@ -6,10 +6,10 @@ Authority: none
 
 Audit: unset; independent audit still required
 
-Status: bounded support. On the stipulated finite record-write event model and
-the declared radius-one, word-length-at-most-one basis-state family, all five
-finite-measure candidates admit an exact joint extension whose site
-conditional is the unique covariant XOR law. No event weighting is selected.
+On the stipulated finite record-write event model and the declared radius-one,
+word-length-at-most-one basis-state family, all five finite-measure candidates
+admit an exact joint extension whose site conditional is the unique covariant
+XOR law. No event weighting is selected.
 
 Claim type: bounded_theorem
 
@@ -30,6 +30,10 @@ Receipts:
 
 - [`covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json`](../outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json)
 - [`covariant_law_weight_compatibility_cycle974_independent_check_receipt_2026_08_10.json`](../outputs/covariant_law_weight_compatibility_cycle974_independent_check_receipt_2026_08_10.json)
+
+Self-contained cited-primary provenance:
+
+- [`cycle974_cited_primary_provenance_2026_08_10.json`](../outputs/cycle974_cited_primary_provenance_2026_08_10.json)
 
 Constitutional effect: none. No axiom, primitive, registry, policy, audit
 result, effective-status surface, probability postulate, or Born rule is added
@@ -194,31 +198,33 @@ weighting.
 Finding verbatim:
 
 ```text
-C_SELECTION_STATUS PASS :: five_to=5; excluded=0; reduction=0/5 (0%); Born weighting wall stands unchanged; the covariant law fixes a conditional kernel but supplies no local-to-event lift or event-marginal selector
+C_SELECTION_STATUS PASS :: case=RESIDUAL_FREEDOM; five_to=5; excluded=0; reduction=0/5 (0%); wall_stands=True; selected=None; refutation_target=None
 ```
 
 ## D_CONTROLS
 
 The primary has literal, worktree-relative `AUDIT_INPUT_PATHS`, SHA/blob pins,
-text/AST-only provenance blocklists, no loaded blocked module, deterministic
-short-replay/full-prefix agreement, runtime below 1,400 seconds, and stdout
-below both the 6 KB house ceiling and the requested 150 KB ceiling.
+a committed bundle containing the full blob-pinned text/AST provenance inputs,
+no normal-run dependency on branch-only Git objects, no loaded blocked module,
+deterministic short-replay/full-prefix agreement, runtime below 1,400 seconds,
+and stdout below both the 6 KB house ceiling and the requested 150 KB ceiling.
 
 Finding verbatim:
 
 ```text
-D_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=47.161<1400; stdout_bytes=2497<6000<150000
+D_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=47.479<1400; stdout_bytes=2430<6000<150000
 ```
 
 ## Independent refutation outcome
 
 The checker does not import or execute the primary. It parses the primary as
 AST, reads its cache/receipt as data, performs two independent full event
-replays with scalar gate execution, rebuilds the XOR law with a separate
-Boolean interpreter, and constructs the 24 rotations from oriented frames.
-It then applies active corruptions. A negative weight, zero total mass, missing
-conditioning configuration, and XOR-to-XNOR mutation are all excluded. The
-XNOR corruption gives the exact counter-witness
+replays with bit-packed lane execution, rebuilds the XOR law with a separate
+Boolean interpreter, constructs the 24 rotations from oriented frames, and
+executes all 15,360 translated-coordinate commutation comparisons. It then
+applies active corruptions. A negative weight, zero total mass, missing
+conditioning configuration, XOR-to-XNOR mutation, and untranslated-control
+transport mutation are all rejected. The XNOR corruption gives the exact counter-witness
 `(x,n,y)=(0,(0,0,0,0,0,0),0)`, observed `0`, expected `1`.
 
 ```text
@@ -227,8 +233,8 @@ R0_PINS_BLOCKLIST_AND_AST PASS :: pins=True; text_AST_JSON_only=True; blocked_mo
 R1_REFUTE_REBUILD PASS :: events=92260; candidate_digests_match=True; law={"canonical_pair":{"D0":[1,0],"D1":[0,1],"n0":[0,0,0,0,0,0],"n1":[1,0,0,0,0,0],"x":0},"changed_edge_pairs":384,"dependent_word_input_rows":12,"family_words":20,"rotation_count":24,"rotation_failures":[],"rotation_semantic_comparisons":61440,"state_resolved_class_count":2,"translation_failures":[],"translation_semantic_comparisons":15360,"uniform_target_input_changed_pairs":0,"uniform_target_input_edge_pairs":3840,"witness_word_count":6,"word_law_class_count":1,"xor_failures":[]}
 R2_REFUTE_COMPATIBILITY PASS :: verdicts={"M1_COUNTING":"SURVIVES","M2_PER_WORLD_UNIFORM":"SURVIVES","M3_OCCUPATION_WEIGHTED":"SURVIVES","M4_FORMATION_LIFETIME":"SURVIVES","M5_FORMATION_MOMENT":"SURVIVES"}; disagreement_witnesses={"M1_COUNTING":null,"M2_PER_WORLD_UNIFORM":null,"M3_OCCUPATION_WEIGHTED":null,"M4_FORMATION_LIFETIME":null,"M5_FORMATION_MOMENT":null}
 R3_ACTIVE_CORRUPTION_PROBES PASS :: rejected=negative_weight,zero_total,missing_configuration,XNOR; XNOR_witness={"configuration":[0,[0,0,0,0,0,0],0],"expected":"1","observed":"0","quantity":"P(y|x,n)"}
-R4_SELECTION_BOUNDARY PASS :: survivors=5/5; excluded=0; reduction=0/5; local-to-event lift absent; wall stands unchanged
-R5_CONTROLS PASS :: determinism=True; runtime_s=95.804<1400; stdout_bytes=1538<6000<150000
+R4_SELECTION_BOUNDARY PASS :: case=RESIDUAL_FREEDOM; survivors=5/5; excluded=0; reduction=0/5; wall_stands=True
+R5_CONTROLS PASS :: determinism=True; runtime_s=96.645<1400; stdout_bytes=1528<6000<150000
 REFUTATION_OUTCOME: NO_DISCREPANCY_FOUND
 TOTAL: PASS=6 FAIL=0
 ```

@@ -38,9 +38,9 @@ AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 EXPECTED_SHA256 = {
-    AUDIT_INPUT_PATHS[0]: "08dff97b7da09afbb1c93da95cac47fbbb3b94ff90319f5bbca0237c9ec2196f",
-    AUDIT_INPUT_PATHS[1]: "5d017c1449a57db5aeb42bbbb00bcabb646f27d388983a5784a2b83308bbae51",
-    AUDIT_INPUT_PATHS[2]: "bda3ef37e9ae913e38975ec908087d72b8e56aa4cd4d84f5e719cd69f369c8a3",
+    AUDIT_INPUT_PATHS[0]: "02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648",
+    AUDIT_INPUT_PATHS[1]: "1e6e0e77b49e1bc8ae646419b4ea0a84045ead3362710536eb7e95d52d263ebd",
+    AUDIT_INPUT_PATHS[2]: "0b2eb35fcb0a2d68a1f968b8f6fabc0a4348fb77fb852eb89d140a020f105645",
     AUDIT_INPUT_PATHS[3]: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[4]: "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
 }
@@ -417,6 +417,75 @@ def rotate_condition(condition: tuple, rotation: tuple) -> tuple:
     return tuple(mapping[direction] for direction in DIRECTIONS)
 
 
+def add_coordinate(left: tuple, right: tuple) -> tuple:
+    return tuple(a + b for a, b in zip(left, right))
+
+
+def coordinate_state(target: tuple, local_input: int, condition: tuple) -> dict:
+    state = {target: local_input}
+    state.update({
+        add_coordinate(target, direction): condition[index]
+        for index, direction in enumerate(DIRECTIONS)
+    })
+    return state
+
+
+def global_descriptor(descriptor: tuple, target: tuple) -> tuple:
+    def place(site):
+        return target if site == "C" else add_coordinate(target, site)
+
+    if descriptor[0] == "I":
+        return "I", target
+    if descriptor[0] == "X":
+        return "X", place(descriptor[1])
+    return "CNOT", place(descriptor[1]), place(descriptor[2])
+
+
+def coordinate_apply(state: dict, descriptor: tuple) -> dict:
+    after = dict(state)
+    if descriptor[0] == "I":
+        return after
+    if descriptor[0] == "X":
+        after[descriptor[1]] = after.get(descriptor[1], 0) ^ 1
+        return after
+    after[descriptor[2]] = after.get(descriptor[2], 0) ^ after.get(descriptor[1], 0)
+    return after
+
+
+def translate_state(state: dict, translation: tuple) -> dict:
+    return {
+        add_coordinate(site, translation): value
+        for site, value in state.items()
+    }
+
+
+def translate_global_descriptor(descriptor: tuple, translation: tuple) -> tuple:
+    return (descriptor[0],) + tuple(
+        add_coordinate(site, translation) for site in descriptor[1:]
+    )
+
+
+def translation_corruption_probe() -> dict:
+    origin = (0, 0, 0)
+    translation = (0, 1, 0)
+    condition = (1, 0, 0, 0, 0, 0)
+    descriptor = global_descriptor(("CNOT", DIRECTIONS[0], "C"), origin)
+    before = coordinate_state(origin, 0, condition)
+    expected = translate_state(coordinate_apply(before, descriptor), translation)
+    translated_before = translate_state(before, translation)
+    transported = translate_global_descriptor(descriptor, translation)
+    corrupted = (transported[0], descriptor[1], transported[2])
+    observed = coordinate_apply(translated_before, corrupted)
+    target = add_coordinate(origin, translation)
+    return {
+        "translation": translation,
+        "quantity": "translated target output",
+        "expected": expected[target],
+        "observed_under_untranslated_control": observed[target],
+        "corruption_rejected": observed[target] != expected[target],
+    }
+
+
 def independent_law_rebuild() -> dict:
     words = family()
     witnesses = []
@@ -456,6 +525,23 @@ def independent_law_rebuild() -> dict:
                     rotation_checks += 1
                     if bool_outcome(descriptor, local_input, condition) != bool_outcome(transported, local_input, rotate_condition(condition, rotation)):
                         rotation_failures.append((descriptor, local_input, condition))
+    translation_failures = []
+    translation_checks = 0
+    origin = (0, 0, 0)
+    for translation in DIRECTIONS:
+        for descriptor in words:
+            placed = global_descriptor(descriptor, origin)
+            transported = translate_global_descriptor(placed, translation)
+            for local_input in (0, 1):
+                for condition in CONDITIONS:
+                    translation_checks += 1
+                    before = coordinate_state(origin, local_input, condition)
+                    left = translate_state(coordinate_apply(before, placed), translation)
+                    right = coordinate_apply(translate_state(before, translation), transported)
+                    if left != right:
+                        translation_failures.append(
+                            (translation, descriptor, local_input, condition)
+                        )
     marginal_changes = 0
     for descriptor in words:
         for direction_index in range(6):
@@ -478,8 +564,8 @@ def independent_law_rebuild() -> dict:
         "rotation_count": len(rotations),
         "rotation_semantic_comparisons": rotation_checks,
         "rotation_failures": rotation_failures,
-        "translation_semantic_comparisons": 6 * len(words) * 2 * len(CONDITIONS),
-        "translation_failures": [],
+        "translation_semantic_comparisons": translation_checks,
+        "translation_failures": translation_failures,
         "word_law_class_count": int(orbit == set(DIRECTIONS)),
         "state_resolved_class_count": 2 if orbit == set(DIRECTIONS) else None,
         "uniform_target_input_edge_pairs": len(words) * 6 * len(OTHER_CONTEXTS),
@@ -554,21 +640,27 @@ def active_corruptions(reference_vector: tuple) -> dict:
         "missing_configuration": evaluate_weighting(reference_vector, missing_configuration_carrier),
         "xnor_instead_of_xor": evaluate_weighting(reference_vector, xnor=True),
     }
+    translation_transport = translation_corruption_probe()
     return {
         "probes": probes,
-        "all_corruptions_rejected": all(row["verdict"] == "EXCLUDED" for row in probes.values()),
+        "translation_transport": translation_transport,
+        "all_corruptions_rejected": bool(
+            all(row["verdict"] == "EXCLUDED" for row in probes.values())
+            and translation_transport["corruption_rejected"]
+        ),
     }
 
 
 def render(receipt: dict) -> str:
     checks = receipt["checks"]
     data = receipt["data"]
+    selection = data["selection_boundary"]
     lines = ["CYCLE974_COMPATIBILITY_INDEPENDENT_CHECK"]
     lines.append(f"R0_PINS_BLOCKLIST_AND_AST {'PASS' if checks['R0_PINS_BLOCKLIST_AND_AST'] else 'FAIL'} :: pins={data['controls']['pins_match']}; text_AST_JSON_only=True; blocked_modules_loaded={data['controls']['blocked_modules_loaded']}")
     lines.append(f"R1_REFUTE_REBUILD {'PASS' if checks['R1_REFUTE_REBUILD'] else 'FAIL'} :: events={data['event_rebuild']['event_cardinality']}; candidate_digests_match={data['candidate_digests_match']}; law={compact(data['law_rebuild'])}")
     lines.append(f"R2_REFUTE_COMPATIBILITY {'PASS' if checks['R2_REFUTE_COMPATIBILITY'] else 'FAIL'} :: verdicts={compact(data['verdicts'])}; disagreement_witnesses={compact(data['disagreements'])}")
     lines.append(f"R3_ACTIVE_CORRUPTION_PROBES {'PASS' if checks['R3_ACTIVE_CORRUPTION_PROBES'] else 'FAIL'} :: rejected=negative_weight,zero_total,missing_configuration,XNOR; XNOR_witness={compact(data['corruptions']['probes']['xnor_instead_of_xor']['first_disagreement'])}")
-    lines.append(f"R4_SELECTION_BOUNDARY {'PASS' if checks['R4_SELECTION_BOUNDARY'] else 'FAIL'} :: survivors=5/5; excluded=0; reduction=0/5; local-to-event lift absent; wall stands unchanged")
+    lines.append(f"R4_SELECTION_BOUNDARY {'PASS' if checks['R4_SELECTION_BOUNDARY'] else 'FAIL'} :: case={selection['case']}; survivors={selection['survivor_count']}/5; excluded={selection['excluded_count']}; reduction={selection['reduction']}/5; wall_stands={selection['wall_stands']}")
     lines.append(f"R5_CONTROLS {'PASS' if checks['R5_CONTROLS'] else 'FAIL'} :: determinism={data['determinism']}; runtime_s={data['runtime_seconds']:.3f}<1400; stdout_bytes={data['stdout_bytes']}<6000<150000")
     lines.append("REFUTATION_OUTCOME: NO_DISCREPANCY_FOUND" if all(checks.values()) else "REFUTATION_OUTCOME: DISCREPANCY_FOUND")
     lines.append(f"TOTAL: PASS={sum(checks.values())} FAIL={len(checks)-sum(checks.values())}")
@@ -593,6 +685,19 @@ def run() -> tuple[dict, str]:
     }
     verdicts = {name: row["verdict"] for name, row in evaluations.items()}
     disagreements = {name: row["first_disagreement"] for name, row in evaluations.items()}
+    survivor_count = sum(value == "SURVIVES" for value in verdicts.values())
+    excluded_count = sum(value == "EXCLUDED" for value in verdicts.values())
+    selection_boundary = {
+        "case": (
+            "RESIDUAL_FREEDOM" if survivor_count > 1
+            else "SINGLETON_SELECTION" if survivor_count == 1
+            else "NO_SURVIVOR_REFUTATION"
+        ),
+        "survivor_count": survivor_count,
+        "excluded_count": excluded_count,
+        "reduction": len(CANDIDATE_NAMES) - survivor_count,
+        "wall_stands": survivor_count > 1,
+    }
     corruptions = active_corruptions(rebuilt_a["vectors"]["M1_COUNTING"])
     determinism = rebuilt_a["event_digest"] == rebuilt_b["event_digest"]
     runtime = monotonic() - started
@@ -618,7 +723,18 @@ def run() -> tuple[dict, str]:
         "R1_REFUTE_REBUILD": r1,
         "R2_REFUTE_COMPATIBILITY": all(verdict == "SURVIVES" for verdict in verdicts.values()) and not any(disagreements.values()),
         "R3_ACTIVE_CORRUPTION_PROBES": corruptions["all_corruptions_rejected"],
-        "R4_SELECTION_BOUNDARY": tuple(verdicts) == CANDIDATE_NAMES and sum(value == "SURVIVES" for value in verdicts.values()) == 5,
+        "R4_SELECTION_BOUNDARY": bool(
+            tuple(verdicts) == CANDIDATE_NAMES
+            and survivor_count + excluded_count == len(CANDIDATE_NAMES)
+            and selection_boundary["survivor_count"]
+                == primary["certificates"]["C_SELECTION_STATUS"]["freedom_after"]
+            and selection_boundary["excluded_count"]
+                == len(primary["certificates"]["C_SELECTION_STATUS"]["excluded"])
+            and selection_boundary["reduction"]
+                == primary["certificates"]["C_SELECTION_STATUS"]["absolute_reduction"]
+            and selection_boundary["wall_stands"]
+                == primary["certificates"]["C_SELECTION_STATUS"]["born_wall_stands"]
+        ),
         "R5_CONTROLS": bool(control["pass"] and determinism and runtime < AUDIT_TIMEOUT_SEC),
     }
     receipt = {
@@ -631,6 +747,7 @@ def run() -> tuple[dict, str]:
             "law_rebuild": law,
             "verdicts": verdicts,
             "disagreements": disagreements,
+            "selection_boundary": selection_boundary,
             "corruptions": corruptions,
             "determinism": determinism,
             "runtime_seconds": runtime,

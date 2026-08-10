@@ -119,6 +119,8 @@
       "provenance": {
         "all_pins_and_text_ast_checks_match": true,
         "blocked_modules_loaded": [],
+        "bundle_entry_count": 3,
+        "bundle_schema": "cycle974-cited-primary-text-ast-provenance-v1",
         "rows": [
           {
             "ast_candidate_names": [
@@ -169,6 +171,104 @@
       "worlds_in_census": 748
     },
     "B_COMPATIBILITY_TEST": {
+      "active_controls": {
+        "all_controls_decisive": true,
+        "expected_verdicts": {
+          "missing_configuration": "EXCLUDED",
+          "negative_weight": "EXCLUDED",
+          "valid_xor": "SURVIVES",
+          "xnor_instead_of_xor": "EXCLUDED",
+          "zero_total": "EXCLUDED"
+        },
+        "probes": {
+          "missing_configuration": {
+            "conditional_scalar_checks": 0,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": [
+                0,
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "expected": ">0",
+              "observed": "0",
+              "quantity": "q(x,n)"
+            },
+            "nonnegative": true,
+            "normalizable": true,
+            "verdict": "EXCLUDED"
+          },
+          "negative_weight": {
+            "conditional_scalar_checks": 0,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": null,
+              "expected": ">=0",
+              "observed": "-1",
+              "quantity": "min_e w_i(e)"
+            },
+            "nonnegative": false,
+            "normalizable": true,
+            "verdict": "EXCLUDED"
+          },
+          "valid_xor": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "verdict": "SURVIVES"
+          },
+          "xnor_instead_of_xor": {
+            "conditional_scalar_checks": 1,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": [
+                0,
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                0
+              ],
+              "expected": "1",
+              "observed": "0",
+              "quantity": "P_i(y|x,n)"
+            },
+            "nonnegative": true,
+            "normalizable": true,
+            "verdict": "EXCLUDED"
+          },
+          "zero_total": {
+            "conditional_scalar_checks": 0,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": null,
+              "expected": ">0",
+              "observed": "0",
+              "quantity": "sum_e w_i(e)"
+            },
+            "nonnegative": true,
+            "normalizable": false,
+            "verdict": "EXCLUDED"
+          }
+        }
+      },
       "auxiliary_conditioning_carrier": "q(x,n)=1/128; arbitrary strictly positive q gives the same conditional kernel and event marginal",
       "criterion": "existential joint-extension criterion: a normalized event weighting p_i survives iff there exists P_i(e,x,n,y) with event marginal p_i and conditional P_i(y|x,n)=1{y=x XOR n_d} on every fixed-input radius-one configuration; mechanically use P_i=p_i(e)*q(x,n)*1{y=x XOR n_d}, q=1/128.  Exclude only on nonnegative/normalization failure, event-marginal mismatch, or a first conditional configuration mismatch.",
       "excluded": [],
@@ -427,6 +527,7 @@
     "C_SELECTION_STATUS": {
       "absolute_reduction": 0,
       "born_wall_stands": true,
+      "case": "RESIDUAL_FREEDOM",
       "does_not_supply": [
         "a local-to-event lift",
         "an event-marginal selector",
@@ -437,6 +538,10 @@
       "fractional_reduction": "0",
       "freedom_after": 5,
       "freedom_before": 5,
+      "partition_count": 5,
+      "refutation_target": null,
+      "selected_weighting": null,
+      "selection_premises": [],
       "survivors": [
         "M1_COUNTING",
         "M2_PER_WORLD_UNIFORM",
@@ -452,9 +557,11 @@
       "full_prefix_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
       "git_blobs": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+        "outputs/cycle974_cited_primary_provenance_2026_08_10.json": "d2b4197f3417ec85e0fcb148db89146b742fafe3",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad"
       },
       "literal_audit_input_paths": [
+        "outputs/cycle974_cited_primary_provenance_2026_08_10.json",
         "docs/MINIMAL_AXIOMS_2026-06-29.md",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
       ],
@@ -467,14 +574,15 @@
         "3826925e019c0e1966a9b85110a397db2c61d33f:scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py (AST)"
       ],
       "runtime_budget_seconds": 1400,
-      "runtime_seconds": 47.1605627090903,
+      "runtime_seconds": 47.47850795905106,
       "sha256": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "outputs/cycle974_cited_primary_provenance_2026_08_10.json": "978302583fc5e58b883f1970c73a335fc4d9366984773875ea2b6dd969ad538c",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
       },
       "sha_pins_match": true,
       "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
-      "stdout_bytes": 2497,
+      "stdout_bytes": 2430,
       "stdout_limit_bytes": 6000
     }
   },
@@ -487,5 +595,5 @@
   "claim": "covariant nearest-neighbour XOR law compatibility with the five finite event weightings",
   "cycle": 974,
   "pass": true,
-  "primary_source_sha256": "08dff97b7da09afbb1c93da95cac47fbbb3b94ff90319f5bbca0237c9ec2196f"
+  "primary_source_sha256": "02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648"
 }

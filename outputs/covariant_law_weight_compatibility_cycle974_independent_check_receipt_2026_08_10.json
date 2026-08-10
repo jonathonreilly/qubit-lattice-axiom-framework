@@ -1,5 +1,5 @@
 {
-  "checker_source_sha256": "bc137b3dcda10519fc5c05f423ee8668a88a525fa82a1a445fc9c0220ea90fba",
+  "checker_source_sha256": "fb11bcc8856d37d45c207ca0934bf0774a3b7589274aa20a4838e400bf656260",
   "checks": {
     "R0_PINS_BLOCKLIST_AND_AST": true,
     "R1_REFUTE_REBUILD": true,
@@ -44,10 +44,10 @@
       },
       "sha256": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "5d017c1449a57db5aeb42bbbb00bcabb646f27d388983a5784a2b83308bbae51",
-        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "bda3ef37e9ae913e38975ec908087d72b8e56aa4cd4d84f5e719cd69f369c8a3",
+        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "1e6e0e77b49e1bc8ae646419b4ea0a84045ead3362710536eb7e95d52d263ebd",
+        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "0b2eb35fcb0a2d68a1f968b8f6fabc0a4348fb77fb852eb89d140a020f105645",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "08dff97b7da09afbb1c93da95cac47fbbb3b94ff90319f5bbca0237c9ec2196f"
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648"
       }
     },
     "corruptions": {
@@ -116,6 +116,17 @@
           "normalizable": false,
           "verdict": "EXCLUDED"
         }
+      },
+      "translation_transport": {
+        "corruption_rejected": true,
+        "expected": 1,
+        "observed_under_untranslated_control": 0,
+        "quantity": "translated target output",
+        "translation": [
+          0,
+          1,
+          0
+        ]
       }
     },
     "determinism": true,
@@ -222,8 +233,15 @@
       "word_law_class_count": 1,
       "xor_failures": []
     },
-    "runtime_seconds": 95.80361320800148,
-    "stdout_bytes": 1538,
+    "runtime_seconds": 96.64456483302638,
+    "selection_boundary": {
+      "case": "RESIDUAL_FREEDOM",
+      "excluded_count": 0,
+      "reduction": 0,
+      "survivor_count": 5,
+      "wall_stands": true
+    },
+    "stdout_bytes": 1528,
     "verdicts": {
       "M1_COUNTING": "SURVIVES",
       "M2_PER_WORLD_UNIFORM": "SURVIVES",

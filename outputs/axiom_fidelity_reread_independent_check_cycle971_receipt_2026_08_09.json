@@ -1,0 +1,127 @@
+{
+ "all_certificates_pass": true,
+ "authority_checks": {
+  "new_distribution_sentence": true,
+  "owner_date": true,
+  "registry_support": true,
+  "support_provenance": true
+ },
+ "blocklist": [
+  "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
+  "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt",
+  "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json",
+  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
+  "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/"
+ ],
+ "certificates": {
+  "R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO": {
+   "finding": "pins_match=3/3; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']",
+   "pass": true
+  },
+  "R1_REFUTE_CONSUMER_CENSUS": {
+   "finding": "independent_tracked/consumers=15205/1433; token_totals={\"admissible_possibility\":235,\"availability\":2788,\"nearest_neighbor_conditions\":94,\"vary_with\":191}; row_digest=a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f; exact_rows_match=True",
+   "pass": true
+  },
+  "R2_REFUTE_DELTA_CLASSIFICATION": {
+   "finding": "independent_class_counts={\"MEANING_CHANGED\":32,\"NEWLY_WITNESSABLE\":1,\"SUPPORT_READING_SAFE\":626,\"UNAFFECTED\":774}; full_lists_match=True; classes_digest=7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713",
+   "pass": true
+  },
+  "R3_REFUTE_VACUITY_PROBE": {
+   "finding": "independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]",
+   "pass": true
+  },
+  "R4_REFUTE_AXIOM_PROVENANCE": {
+   "finding": "independent_authority_checks={\"new_distribution_sentence\":true,\"owner_date\":true,\"registry_support\":true,\"support_provenance\":true}",
+   "pass": true
+  },
+  "R5_CONTROLS": {
+   "finding": "determinism_replay=True; runtime_s=31.597048<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']",
+   "pass": true
+  }
+ },
+ "claim_type": "bounded_theorem_measurement",
+ "cycle": 971,
+ "determinism_replay": true,
+ "independent_summary": {
+  "class_counts": {
+   "MEANING_CHANGED": 32,
+   "NEWLY_WITNESSABLE": 1,
+   "SUPPORT_READING_SAFE": 626,
+   "UNAFFECTED": 774
+  },
+  "classes_digest": "7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713",
+  "consumer_file_count": 1433,
+  "marginal_literal_branch_pairs": 0,
+  "marginal_paths": [],
+  "row_digest": "a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f",
+  "state_literal_branch_pairs": 1,
+  "state_paths": [
+   "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
+  ],
+  "token_totals": {
+   "admissible_possibility": 235,
+   "availability": 2788,
+   "nearest_neighbor_conditions": 94,
+   "vary_with": 191
+  },
+  "tracked_file_count": 15205
+ },
+ "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+ "pins": [
+  {
+   "exists": true,
+   "expected": "c622cb6634287864f33982b35836c8532155f89fd14801c12000550a4f5969dc",
+   "match": true,
+   "observed": "c622cb6634287864f33982b35836c8532155f89fd14801c12000550a4f5969dc",
+   "path": "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py"
+  },
+  {
+   "exists": true,
+   "expected": "4ce9f8c2076b775384d3420be613cf03cf954b1ced8f800b86e18749142de11c",
+   "match": true,
+   "observed": "4ce9f8c2076b775384d3420be613cf03cf954b1ced8f800b86e18749142de11c",
+   "path": "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt"
+  },
+  {
+   "exists": true,
+   "expected": "d4894bce60db3b0ae5f39fee1f89677f4f52796bb6b2fca51c4f50335d649486",
+   "match": true,
+   "observed": "d4894bce60db3b0ae5f39fee1f89677f4f52796bb6b2fca51c4f50335d649486",
+   "path": "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json"
+  }
+ ],
+ "primary_ast_controls": {
+  "imports": [
+   "__future__",
+   "ast",
+   "collections",
+   "hashlib",
+   "json",
+   "pathlib",
+   "re",
+   "subprocess",
+   "sys",
+   "time"
+  ],
+  "literal_audit_input_paths": [
+   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
+   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/",
+   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json"
+  ],
+  "literal_blocklist": [
+   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**",
+   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**"
+  ],
+  "literal_pin": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+  "stdlib_only": true,
+  "uses_git_ls_tree": true,
+  "uses_git_show": true,
+  "working_tree_corpus_reads": false
+ },
+ "role": "independent_checker",
+ "runtime_sec": 31.597048250027,
+ "specified_to": "REFUTE",
+ "stdout_bytes": 2222,
+ "verdict": "PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT"
+}

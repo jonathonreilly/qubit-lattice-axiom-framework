@@ -69,3 +69,41 @@ measurable outcome partitions and same-effect descent from Record plus
 Admissibility. If current structure underdetermines them, seek an exact paired-
 model witness and report the residual axiom update; do not edit the canonical
 axiom memo without owner authorization.
+
+## Current decoder block
+
+Block 3 reduces the abstract partition to its exact Record-facing object. A
+measurable finite-label content decoder `d:X->L` is equivalent to its labeled
+preimage partition, and `K(i)=mu(d^{-1}(i))` is normalized automatically.
+
+On one explicit full-support Gaussian family centered by the Hermitian average
+of six neighbor contents, opposite half-space decoders are both content-only,
+additive, proper-cubic covariant, and simultaneously unitary covariant. With
+the same `mu`, they give the positive label `Phi(1)` and `Phi(-1)`. Two exact
+ternary program decoders sharing `E_0` give that effect the same distinct pair.
+Thus decoder selection and effect descent are independent on the displayed
+completion; no global decoder no-go or axiom necessity is claimed.
+
+The refined sufficient interface has four parts:
+
+1. a preparation/program split `(p,a)` using the current full-condition
+   measure `mu_{p,a}`;
+2. a measurable program-relative content decoder `d_{p,a}` and its
+   pushforward kernel;
+3. a registered operational-effect map whose probabilities descend to one
+   `w_p`, including null/certain endpoints;
+4. physical programs for every binary and ternary resolution in the full
+   scaled domain.
+
+The primary runner is `PASS=26 FAIL=0`, with a fresh 4.6 KB cache. Fifteen
+disposable-copy mutations fail at their intended named gates, and an
+independent SymPy recomputation agrees on both menu identities, rank-one
+effects, Gaussian mean/variance, context signs, and the positive exact decoder
+gap `erf(1/sqrt(2))`. Direct conformance passes, including the final
+path/line N4 source-matching and primitive-registry scan. The full pipeline
+reproduces only the current-main dependency-policy epoch stop owned by PR
+#6061; 1,047 tracked generated changes and 815 generated ledger shards were
+cleaned afterward. The graph is regenerated at 5,449 nodes / 15,496 edges with
+the intended one-node/seven-edge delta. The canonical axiom memo is unchanged.
+Final cold diff, commit, push, and the PR stacked on #6065 remain. Continue
+without `review-loop`.

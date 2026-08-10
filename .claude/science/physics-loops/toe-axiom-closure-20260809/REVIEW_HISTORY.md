@@ -154,3 +154,61 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   head. `review-loop` remains unused.
 - Opened stacked PR #6065 from commit `4b12a78d16`, with #6063 as the hard
   parent and unchanged checkpoint-zero TOE percentages.
+
+## Block 3 decoder/effect-descent synthesis
+
+- Identified a measurable finite-label content decoder with its labeled
+  preimage partition and derived normalized pushforward from the current
+  measure; no second probability primitive is introduced.
+- Constructed a Hermitian-neighbor-average full-support Gaussian family and
+  checked all 24 proper-cubic shell permutations plus simultaneous
+  conjugation covariance.
+- Constructed opposite content-only additive binary readouts on the same law,
+  giving `Phi(1)` and `Phi(-1)`.
+- Constructed exact Borel decoders on the two Block 2 ternary menus, assigning
+  their shared effect the same two distinct values.
+- Kept barycenter/evaluation, CP instrument, universal decoder, and physical
+  operational-quotient routes live under a complete source-level N1--N8 gate.
+- Refined the sufficient candidate to split preparation class from apparatus
+  program and to register a content decoder plus operational-effect quotient.
+  No canonical axiom edit or necessity claim was made.
+- Primary runner: `PASS=26 FAIL=0`; the fresh cache is 4.6 KB.
+- An independent SymPy route verifies both exact menu sums, all rank-one
+  determinants, Gaussian mean and variance one, opposite invariant context
+  signs, and decoder gap `erf(1/sqrt(2))>0`.
+- Fifteen disposable-copy or process-local mutations each produce the intended named nonzero
+  failure: current Record clause, Gaussian dimension, cubic rotation count,
+  Gaussian mean, decoder boundary, record-identity/content separation,
+  selection inequality, ternary geometry, context sign, effect-descent value,
+  decoder equivalence text, candidate pushforward, controlled trace class, N8
+  gate, and canonical nonmutation.
+- Registered the source/runner in the canonical harness and regenerated the
+  citation manifest: 5,449 nodes and 15,496 edges, an intended one-node/
+  seven-edge delta; the new note has out-degree six and the harness gains one.
+- Direct conformance passes: vocabulary lint has zero findings; strict audit
+  lint has zero errors; graph/link invariants report zero link and class-F
+  violations with the topology delta acknowledged; YAML and Python compile;
+  changed-audit-evidence reports 22 changed stacked paths with no failures or
+  control failures.
+- A cold read against the complete PR conformance specification added the
+  required `next_trace_action`, a path/line and yes/no N4 residual-match table,
+  and the explicit approved-primitive scan. The runner cache was regenerated
+  on those final source bytes and remains `PASS=26 FAIL=0` and SHA-fresh.
+- The full pipeline passed premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. It then reproduced the current-main dependency-policy
+  epoch stop in the restoration step: the manifest pins
+  `build_citation_graph.py` at
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  while the current file hashes to
+  `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  Open PR #6061 owns that repair and reports the full pipeline passing there.
+- Pipeline cleanup restored 1,047 generated tracked changes and removed 815
+  newly generated ledger shards. Every untracked path was first verified under
+  `docs/audit/data/ledger/`; all removed outputs are deterministic and
+  recoverable by rerunning the pipeline.
+- The canonical axiom memo remains byte-identical to `origin/main`. The exact
+  stacked merge base and current HEAD are both
+  `e4610cbb4d3217b05481b8ba00b34ab63579ff0f`. Remaining: final cold diff,
+  commit, push, and stacked PR. `review-loop` remains unused.

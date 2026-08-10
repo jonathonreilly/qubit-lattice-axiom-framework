@@ -16,6 +16,16 @@ pass. The canonical axiom memo remains untouched.
 Opened: PR #6065, commit `4b12a78d16`. Hard landing order is #6063, then
 #6065.
 
+Block 3 is local on branch
+`physics-loop/toe-axiom-closure-block03-20260810`, stacked on PR #6065. The
+decoder/partition theorem, paired Gaussian decoder witness, contextual
+shared-effect witness, refined candidate wording, and primary runner/cache are
+constructed. Fifteen mutation probes fail closed and an independent SymPy
+recomputation agrees. Direct repository conformance passes; the full pipeline
+reproduces only PR #6061's current-main dependency-policy epoch stop, and all
+generated residue has been removed. Commit, push, and stacked PR delivery
+remain. The canonical axiom memo remains untouched.
+
 Completed Block 1 delivery checklist:
 
 - resolve or honestly demote the exact target;

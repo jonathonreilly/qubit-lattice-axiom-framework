@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact finite and measure-theoretic separation of one global possibility measure from a normalized effect-functional Record-readout menu kernel, plus a hypothetical measurable-partition pushforward cut composed with the Block 1 theorem; no physical partition or axiom adoption is derived."
+claim_type_reason: "Exact measurable decoder/partition equivalence, paired full-support Gaussian decoder nonselection, and exact contextual shared-effect separation, plus a refined hypothetical decoder/effect-quotient cut; no physical decoder, quotient, or axiom adoption is derived."
 trace_class: negative_route_pruning
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "raw singleton identification is impossible; finite restriction is not universally defined or effect-functional; registered partition/pushforward, effect descent, endpoints, and coverage are sufficient"
-hypothetical_axiom_status: "one sufficient typed addition is mapped; no canonical axiom edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "a measurable content decoder is equivalent to the outcome partition and normalizes by pushforward; current Record clauses do not select the displayed decoder, and decoder registration does not automatically force effect descent"
+hypothetical_axiom_status: "one refined preparation/program decoder plus operational-effect quotient addition is mapped; no canonical axiom edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -33,6 +33,11 @@ bare_retained_allowed: false
 - Registered measurable outcome partitions, effect descent, endpoint values,
   and physical low-arity coverage remain hypothetical interfaces, not supplied
   premises of the current foundation.
+- Block 3 reduces a measurable partition to a finite-label content decoder and
+  uses one constructed Gaussian law, content-only additive indicator readouts,
+  and exact ternary menu arithmetic. It supplies no physical decoder program.
+- Decoder selection, the operational-effect quotient, endpoint values, and
+  physical low-arity program coverage remain open interfaces.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

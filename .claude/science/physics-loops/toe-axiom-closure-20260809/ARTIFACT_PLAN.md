@@ -29,3 +29,19 @@ Block 2 packages a stacked bounded theorem only if it contains all of:
    editing the canonical memo;
 6. an exact runner, content-pinned cache, canonical harness row, citation
    graph entry, and direct conformance review.
+
+## Block 3
+
+Block 3 packages a stacked bounded theorem only if it contains all of:
+
+1. a general measurable decoder / labeled-partition equivalence;
+2. an exact current-wording-compatible Gaussian completion;
+3. two content-only additive decoder laws with one measure and distinct exact
+   pushforward probabilities;
+4. an exact contextual shared-effect decoder witness;
+5. a complete N1--N8 gate preserving physical decoder, CP-instrument,
+   barycenter, and operational-quotient routes;
+6. refined sufficient wording that separates preparation from program
+   conditions and does not edit the canonical memo;
+7. an exact runner/cache, independent calculation, mutation sensitivity,
+   harness/graph registration, and direct conformance review.

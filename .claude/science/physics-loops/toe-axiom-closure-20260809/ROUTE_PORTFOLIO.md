@@ -22,6 +22,19 @@ families are tracked separately in `APPROACH_REGISTRY.md`.
 | physical program quotient | contact compiler plus operational equivalence and recurrent coverage | partial prior art exists; full interface open | rank next |
 | typed axiom addition | measurable outcome partitions/pushforward, effect descent, null/certain endpoints, binary/ternary coverage | sufficient by Block 1, not proven necessary | governance fallback only |
 
+## Block 3 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| content decoder | measurable finite-label map on locked `M_2(C)` content | exactly equivalent to a labeled measurable partition; pushforward normalizes | positive reduction |
+| Record additivity selector | recordwise scalar sum of decoder indicators | opposite decoders both satisfy the clause and disagree | retire as selector on displayed completion |
+| covariance selector | proper-cubic neighbor average and simultaneous unitary conjugation | both decoder orbits survive | retire as unique selector on displayed completion |
+| automatic effect descent | two exact shared-effect ternary decoder programs | shared fiber masses are `Phi(1)` and `Phi(-1)` | retire as automatic |
+| barycenter/evaluation | derive a state from `mu` and a physical effect evaluation | state map and evaluation remain supplied | keep live |
+| CP instrument route | derive decoder/effects from locked-output operations | physical instrument, state typing, and effect selection remain open | keep live |
+| physical program quotient | derive cross-program equivalence from contact/pointer dynamics | one coarse-CP quotient exists; general effect quotient remains open | rank next |
+| refined axiom addition | program decoder, operational-effect map/descent, endpoints, low-arity coverage | sufficient by Block 1, not necessary | governance fallback only |
+
 ## Prior-art sweep
 
 Searched authority: `origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.

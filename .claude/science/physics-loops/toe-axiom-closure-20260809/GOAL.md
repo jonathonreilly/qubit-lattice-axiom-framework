@@ -83,6 +83,31 @@ values, and binary/ternary physical coverage.
 This closes the type diagnosis. It does not close the physical interface,
 prove that an axiom edit is necessary, or authorize a canonical edit.
 
+## Block 3 Target And Disposition
+
+Block 3 asks whether Record's content-only additive readout clauses select the
+measurable outcome partition identified in Block 2, and whether a registered
+partition automatically descends to one value of a shared effect.
+
+The positive target is to replace the abstract partition with its exact
+Record-facing object. The negative target is bounded: on one explicit
+current-wording-compatible Gaussian completion, construct two lawful
+content-only additive decoders with the same measure and covariance but
+different label probabilities; then construct exact ternary decoder programs
+that share one effect but give it different probabilities. No global
+non-derivability or axiom-necessity claim is permitted.
+
+The result identifies a measurable finite-label content decoder with its
+preimage partition and derives normalized pushforward automatically. The
+paired Gaussian readouts give `Phi(1)` and `Phi(-1)`. The contextual ternary
+pair gives the same two values to one shared effect. Thus decoder registration
+and effect descent are independent walls on the displayed completion.
+
+The refined sufficient candidate separates a preparation class from the full
+apparatus condition, registers a program-relative content decoder, and adds an
+operational-effect quotient across programs. It remains hypothetical; no
+canonical axiom is edited.
+
 ## Trace target
 
 The landed source states:

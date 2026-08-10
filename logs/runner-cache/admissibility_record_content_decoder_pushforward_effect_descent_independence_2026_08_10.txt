@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_record_content_decoder_pushforward_effect_descent_independence_2026_08_10.py
+runner_sha256: 2a37c771014f6b34d1afa64c45435fd440a2226a801faff110af367c73ef4c29
+input_fingerprint_sha256: fea5c89dd9ebb3f75a4fb2c5b0cf1e9f344f7389340087b10bef7c9e8af0103c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and four explicit prior boundary sources are source-bound; no observational, fitted, or target-value input is used
+package_local_integrity_reads: the proposed source note is checked for its decoder, candidate, status, and N1-N8 surfaces; the cache envelope binds every declared input
+analytic_boundary: Borel measurability, atomlessness, and strict Gaussian half-space inequality are source proofs; the runner checks their exact finite parameters and independent controls
+negative_scope: only decoder nonselection on the displayed Gaussian completion and automatic effect descent for the displayed two-menu family are rejected
+PASS: source-current-record the exact current content-only additive Record clause is present
+PASS: source-parent-interface Block 2 names registered measurable outcome partitions and same-effect descent separately
+PASS: source-finite-prior the finite prior exposes an affine simplex of content-determined weights
+PASS: source-physical-prior the physical prior does not derive a general effect-only quotient
+PASS: source-outcome-operation the supplied locked-output normal form makes the effect unique without selecting it
+PASS: gaussian-normalization the pi^-4 density normalizes on the eight-real-dimensional matrix domain
+PASS: proper-cubic-neighbor-covariance all 24 proper-cubic shell permutations preserve the neighbor-average center
+PASS: neighbor-condition-variation the fixed center rule changes between all-zero and all-Pz neighbor conditions
+PASS: simultaneous-unitary-covariance an exact Pauli-X control preserves the content statistic under simultaneous conjugation
+PASS: gaussian-marginal-parameters the declared content statistic has exact Gaussian mean one and variance one
+PASS: binary-decoder-partitions both opposite decoders assign exactly one label to negative, boundary, and positive controls
+PASS: decoder-content-only duplicated record contents receive the same label independent of record identity
+PASS: record-readout-additivity recordwise indicator sums are exactly additive on disjoint finite collections
+PASS: gaussian-pushforward-normalization the opposite half-space probabilities sum to one
+PASS: gaussian-decoder-selection the same measure gives the two positive labels strictly different probabilities Phi(1) and Phi(-1)
+PASS: ternary-menu-a the asymmetric decoder program is an exact scaled-projector resolution
+PASS: ternary-menu-b the symmetric decoder program is an exact scaled-projector resolution
+PASS: shared-effect-incidence the two decoder programs share exactly E0 and otherwise contain distinct effects
+PASS: invariant-context-sign the trace-coefficient rule assigns opposite exact signs to the two menu contexts
+PASS: context-decoder-totality each contextual decoder assigns exactly one of three labels on all sign controls
+PASS: effect-descent-separation normalized content decoders assign the shared effect Phi(1) and Phi(-1)
+PASS: decoder-equivalence-surface the source states the decoder/partition equivalence, pushforward, Record link, and descent boundary
+PASS: candidate-sufficiency-surface the refined candidate separates preparation, program, decoder, effect quotient, endpoints, and coverage
+PASS: machine-status-contract the source uses controlled bounded-support and negative-route-pruning fields
+PASS: canonical-nonmutation the hypothetical decoder/program/effect-quotient notation is absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the global-negative rejection are source-visible
+per_element: exact Gaussian center/statistic data, two binary decoders, and the shared ternary effect E0 are checked
+per_site: one M_2(C) site at a declared six-neighbor condition is executed; no global formation process is asserted
+per_mode: all 24 proper-cubic shell permutations and an exact simultaneous-conjugation control are checked; no spectral exhaustion is claimed
+per_block: decoder/partition pushforward, decoder selection, and same-effect descent are separated; endpoints and coverage remain explicit walls
+lattice_wide: checked and not executed — covariance of the neighbor-average rule is analytic/local; no lattice-wide dynamics or decoder no-go is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

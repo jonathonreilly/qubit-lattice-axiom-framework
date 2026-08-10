@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 3
-science_block: 2
-branch: physics-loop/toe-axiom-closure-block02-20260810
+cycle: 4
+science_block: 3
+branch: physics-loop/toe-axiom-closure-block03-20260810
 base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-worktree: /private/tmp/toe-axiom-block02.9HQCoL/worktree
+worktree: /private/tmp/toe-axiom-block03.cLlsmv/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now isolating the exact Admissibility update needed for a physical Born interface
-active_route: exact separation of the global possibility measure from registered outcome partitions, menu-indexed normalized kernels, and effect-functional grades
-hard_residual: derive or adopt measurable outcome partitions that push the existing Admissibility measure to a conditional Record-readout menu kernel, same-effect descent across physical registrations, null/certain endpoint values, and universal binary-and-ternary scaled-domain menu coverage; the stronger native frame lemma remains separately open
-target_contract_status: exact_type_separation_plus_hypothetical_sufficient_axiom_cut
+goal: maximize honest TOE closure from the current axiom surface, now reducing the Admissibility/Record event interface to a measurable content decoder and operational-effect quotient
+active_route: exact decoder-partition equivalence plus paired Gaussian tests of decoder selection and same-effect descent
+hard_residual: derive or adopt a physical content decoder for each registered program, an operational-effect quotient across programs at fixed preparation, null/certain endpoint values, and universal binary-and-ternary scaled-domain program coverage; the stronger native frame lemma remains separately open
+target_contract_status: exact_decoder_equivalence_plus_paired_nonselection_and_contextual_witnesses
 A_min:
   - Lattice
   - Qubit
@@ -34,6 +34,8 @@ block_local_allowed_premises:
   - menu-independent grading with range, endpoint, and normalization clauses stated in GOAL.md
   - elementary finite additivity and Gaussian probability measures on the eight-real-dimensional space M_2(C)
   - exact scaled-projector menu arithmetic used as hostile restriction witnesses
+  - finite-label measurable maps and their preimage partitions
+  - content-only recordwise scalar sums as hostile readout completions
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -51,15 +53,23 @@ files_touched:
   - docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_global_measure_menu_kernel_type_separation_2026_08_10.py
   - logs/runner-cache/admissibility_global_measure_menu_kernel_type_separation_2026_08_10.txt
+  - docs/ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_record_content_decoder_pushforward_effect_descent_independence_2026_08_10.py
+  - logs/runner-cache/admissibility_record_content_decoder_pushforward_effect_descent_independence_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
   - current axioms require a neighborhood-varying probability distribution but do not determine its form or values
   - current axioms do not register measurable outcome partitions that push the whole-domain measure to normalized conditional kernels on finite local menus
   - current axioms do not require same-effect probability descent across different physical menu registrations
+  - current Record wording constrains a supplied content readout but does not select a measurable finite-label decoder
+  - current axioms do not split preparation equivalence from apparatus/program conditions
+  - current axioms do not register an operational-effect map or quotient across programs
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
+  - content_decoder_selection_on_displayed_gaussian_completion
+  - automatic_effect_descent_from_decoder_pushforward
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -69,18 +79,22 @@ approach_family_coverage:
   raw_singleton_measure_identification: exact_two_disjoint_binary_menu_contradiction
   normalized_finite_menu_restriction: exact_atomless_undefined_and_atomic_contextual_witnesses
   typed_menu_kernel_axiom_cut: measurable_partition_pushforward_sufficient_when_composed_with_block_1_not_adopted_or_proven_necessary
-strongest_unresolved_proof_obligation: derive registered measurable outcome partitions, effect functionality, null/certain endpoints, and low-arity physical coverage from Record and Admissibility dynamics, or obtain explicit owner authority for the candidate axiom addition
+  measurable_decoder_partition_equivalence: exact_positive_type_reduction
+  content_decoder_selection: exact_paired_gaussian_nonselection_on_declared_completion
+  automatic_effect_descent: exact_contextual_decoder_witness
+  refined_decoder_effect_quotient_cut: sufficient_when_composed_with_block_1_not_adopted_or_proven_necessary
+strongest_unresolved_proof_obligation: derive the physical program-indexed content decoder and operational-effect quotient, plus endpoints and low-arity program coverage, from Record and Admissibility dynamics, or obtain explicit owner authority for the refined candidate addition
 trace_gate_classification: negative_route_pruning
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: exact one-site rejection of raw singleton identification and of normalized finite restriction as a universal or automatically effect-functional bridge; physical outcome-partition derivation remains open
-hypothetical_axiom_status: candidate wording only; no axiom edit authorized
-review_disposition: self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: open_6065_stacked_on_open_6063
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6065
+conditional_surface_status: exact decoder-partition equivalence, paired Gaussian decoder nonselection, and contextual shared-effect separation; physical decoder and effect quotient remain open
+hypothetical_axiom_status: refined decoder-plus-effect-quotient candidate wording only; no axiom edit authorized
+review_disposition: block03_ready_to_commit
+pr_status: block03_local_stacked_on_open_6065
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -107,5 +121,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: launch Block 3 from PR 6065 and test whether Record plus Admissibility derives measurable outcome partitions and same-effect descent; if not, construct an exact paired-model underdetermination witness and sharpen the narrow axiom update without editing canonical files
+next_exact_action: cold-read the final stacked delta, commit and push Block 3, then open its PR on 6065 without editing canonical axioms
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

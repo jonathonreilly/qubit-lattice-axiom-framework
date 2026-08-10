@@ -53,3 +53,21 @@ governance choice, not a derivation and not current-surface closure.
 The negative theorem does not import a Born formula, selected density matrix,
 instrument, apparatus context, observed probability, global sampler, or
 frequency interpretation.
+
+## Block 3 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| current `mu_eta` and Record readout clauses | exact semantic baseline | current axioms | yes | no decoder/effect content inferred |
+| measurable finite-label map / fiber partition | positive type reduction | elementary measurable-set machinery | yes | proved in source |
+| Hermitian neighbor-average Gaussian family | paired local completion | constructed zero-input law | yes | full support, atomless, covariant; not selected |
+| `Phi(1)` and `Phi(-1)` | decoder pushforward values | elementary Gaussian marginal | yes | exact formulas; no observation |
+| content-only indicator sum | hostile scalar Record readout | constructed completion | yes | tests selection only |
+| two exact ternary menus | shared-effect decoder witness | inherited objects, independently rechecked | yes | mathematical programs only |
+| program-indexed decoder and effect quotient | sufficient closure interface | hypothetical candidate | consequence map only | not current authority |
+| physical decoder/program compiler or CP instrument | constructive escape | open import | no for theorem; yes for physical closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent user authority | no | not performed |
+
+The theorem does not import a density state, Born evaluation, physical
+apparatus occurrence, global formation process, frequency law, or selected
+operational quotient.

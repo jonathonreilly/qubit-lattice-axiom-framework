@@ -98,3 +98,11 @@ explicit reaction subspaces.
 Block 18 positively retires exact all-order flatness of the extra branch. Its
 negative comparison must never be broadened beyond the complete cubic
 polynomial and three displayed source covectors.
+
+| strict Euclidean extremum at the Block-19 certified stationary point on the declared affine constraint surface | actual homogeneous Regge action or its overall negative, ten affine constraints, and the interval-certified five-normal background | full normal Hessian inertia is `4-/1+`; action sign swaps it to `1-/4+`, and invertible coordinate changes preserve mixed inertia | N1--N8 complete in the Block-19 theorem note; action sign, coordinate/branch orientation, affine multipliers, and infinitesimal declared-source continuations are attempted, while nonlinear constraints, other roots, curved/time-dependent backgrounds, inhomogeneous modes, boundaries, and Lorentzian evolution remain live | one stationary point and one affine Euclidean surface only; no physical instability, all-background, Lorentzian, gravity, or axiom no-go | derive the selected Lorentzian/time-dependent law and spectrum, or repeat the certified search with a physically derived nonlinear constraint/background |
+
+Block 19 positively closes local nonlinear equation existence for the complete
+declared source family in its supplied ensemble. Its mixed Euclidean inertia
+must not be promoted to a physical instability claim; the strongest remaining
+gravity obligation is physical ensemble/action selection and Lorentzian plus
+inhomogeneous stability.

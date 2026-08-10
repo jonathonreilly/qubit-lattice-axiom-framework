@@ -627,3 +627,30 @@ action/source selection, unit/orientation, boundary/background, coupling,
 Lorentzian dynamics, projective history, Born selector, and realized member.
 Candidate wording is corrected, not adopted, and canonical axioms are
 untouched.
+
+## Block 19 Target And Disposition
+
+Block 19 executes the full nonlinear continuation left open by Block 18. The
+bounded mathematical target is met in one explicit compact ensemble. Ten
+affine equations fix the constant-metric tangent coordinates, leaving four
+massive normal directions plus the native nonlinear branch. The resulting
+five-normal system has a nonzero interval-certified symmetric background and
+an interval-separated nonsingular Hessian. An exact tetrahedral normal basis
+makes the full `S_4` decomposition and the `10+5` direct sum algebraic rather
+than floating-coordinate dependent.
+
+The implicit-function theorem therefore supplies a local stationary branch
+for every sufficiently small homogeneous source projection. At
+`epsilon=1/100`, radius-`10^-9` five-dimensional Krawczyk boxes certify one
+unique root for each declared generator, and the complete fifteen-edge
+residual is balanced by unique ten-component metric KKT multipliers. Native
+Regge nonlinearity supplies the equation that required an eleventh reaction
+in the flat quadratic theory.
+
+This is significant gravity-lane progress, but the autonomous physical target
+is not met. The affine ensemble, targets, action unit and orientation, source
+law, coupling, Lorentzian evolution, time-dependent and inhomogeneous
+stability, projective history, and realized member remain unselected. The
+certified Euclidean stationary point has mixed inertia and is not claimed to
+be a physical instability. Candidate wording is sharpened, not adopted;
+canonical axioms and fixed TOE percentages remain unchanged.

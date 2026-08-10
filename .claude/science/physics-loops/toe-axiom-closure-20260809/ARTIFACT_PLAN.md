@@ -357,3 +357,26 @@ route on the actual Regge action:
 6. correct the unadopted candidate reaction-or-demonstrated-lift wording; and
 7. leave higher-order, mixed-range, curved, inhomogeneous, reaction, and
    boundary routes open, with no canonical edit or fixed-percentage move.
+
+## Block 19 Artifact Plan
+
+Produce one bounded theorem packet that converts Block 18's native lift into a
+complete conditional nonlinear compact solution:
+
+1. state ten explicit affine constant-metric constraints and prove the exact
+   `10+5` direct-sum decomposition of all fifteen homogeneous edge directions;
+2. find a nonzero symmetric stationary background of the actual Regge action
+   and certify it with outward-rounded interval arithmetic;
+3. certify nonsingularity of the complete five-normal Hessian, separating the
+   symmetric two-dimensional and three equivalent anisotropic blocks;
+4. apply the implicit-function theorem and certify all three declared source
+   generators at one common small coupling with full five-dimensional
+   outward-rounded Krawczyk boxes;
+5. reconstruct the complete fifteen-edge KKT equations with ten unique metric
+   multipliers and no independent reaction along the nonlinear branch;
+6. independently replay the original periodic action, land the narrowly
+   scoped Euclidean-inertia N1--N8 packet, and preserve all physical stability
+   routes; and
+7. update the unadopted candidate wording to require explicit ensemble,
+   target, coupling, and stability typing without editing canonical axioms or
+   moving fixed TOE percentages.

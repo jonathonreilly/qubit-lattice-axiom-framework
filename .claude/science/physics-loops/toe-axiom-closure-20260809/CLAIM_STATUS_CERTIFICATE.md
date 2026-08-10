@@ -424,3 +424,38 @@ bare_retained_allowed: false
   passes all 18 pipeline stages, and changed-evidence readiness marks Block 18
   alone plus all 18 stacked claims forensic-ready with no failures or control
   failures. Independent audit remains required.
+
+## Block 19 Claim Status Certificate
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: complete local nonlinear source-family KKT existence on one supplied affine metric-tangent compact ensemble, including interval-certified finite roots for all three declared generators
+hypothetical_axiom_status: sufficient explicit ensemble/action/target/coupling and separately typed stability clause, unadopted and nonminimal
+admitted_observation_status: null
+claim_type_reason: exact direct-sum and KKT algebra, exact S_4 normal decomposition, interval-certified background and full normal nondegeneracy, plus five-dimensional interval certificates for all three finite source continuations on one named homogeneous carrier
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+- The ten metric tangents and five normal directions form an exact direct sum;
+  the normal sector contains four massive Hessian modes and the native
+  nonlinear extra branch.
+- A radius-`10^-9` interval Krawczyk box certifies the symmetric stationary
+  background. Interval bounds keep both the symmetric-block determinant and
+  each of the three equivalent anisotropic entries away from zero.
+- The implicit-function theorem gives local branches for every sufficiently
+  small homogeneous source projection. Radius-`10^-9` five-dimensional
+  Krawczyk boxes certify unique `epsilon=1/100` roots for the two-stream,
+  bundle-A, and bundle-B generators, with contraction at most `2.728e-3`.
+- Every complete residual lies in the ten-dimensional metric-reaction image,
+  so ten affine KKT multipliers close all fifteen equations and native
+  nonlinearity replaces the quadratic eleventh reaction.
+- The full normal Hessian has inertia `4-/1+`. N1--N8 authorizes only the
+  statement that this point is not a strict Euclidean extremum on this affine
+  surface; no Lorentzian, dynamical, curved, inhomogeneous, or gravity no-go
+  ships.
+- Canonical axioms and fixed percentages remain unchanged, no `review-loop` is
+  invoked, and independent audit remains required.

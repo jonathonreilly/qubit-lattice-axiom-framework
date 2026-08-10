@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_fixed_metric_nonlinear_regge_kkt_continuation_2026_08_10.py
+runner_sha256: c9a91ffdc2b7cf7ba125713a5a6637c0aa04f65d23ea1bf4794c4f60a6f59082
+input_fingerprint_sha256: 7091eed43851e027f6b6c0dbe18c3bebf67e91bfabee661ef846e0fc673e3879
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 131.41
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the construction uses the supplied actual Regge action and declared compact sources
+package_local_integrity_reads: current axioms, Block 17 reaction ranks, Block 18 nonlinear lift, and the retained Regge carrier are source-bound
+analytic_boundary: the background and all three finite source continuations have interval Krawczyk certificates
+physical_boundary: the ten affine metric-tangent constraints, targets, action selection, coupling, Lorentzian stability, and realized history remain unselected
+[PASS] source-current-axiom-boundary
+[PASS] source-parent-boundary
+[PASS] source-approved-primitive-boundary
+       approved primitives supply no geometry action, compact ensemble, boundary target, coupling, or stability rule
+[PASS] exact-affine-metric-tangent-normal-decomposition
+       ten metric tangents plus four massive normals and the nonlinear extra branch span all fifteen edge directions
+[PASS] symmetric-subspace-invariance
+       all 24 coordinate permutations preserve the 50-hinge/240-incidence triangulation, fix the two symmetric normals, and permute four zero-sum anisotropic vectors spanning the standard three-dimensional sector
+[PASS] interval-certified-constrained-background
+       a=0.01762891145280264; u=0.1522365512153478; radius=1.0e-9; Krawczyk contraction=5.504e-04
+[PASS] full-five-normal-stationarity-and-nondegeneracy
+       normal Hessian eigenvalues=[-39.835547491,-13.055486774,-13.055486774,-13.055486774,  3.151407011]; interval det_2 upper=-125.489977; anisotropic upper=-13.054960
+[PASS] three-interval-certified-source-continuations
+       two-stream: center=(0.017339462143,0.00046665327432,-0.0001939141693,-0.0001939141693,0.1511941071), residual=1.658e-58, radius=1.0e-9, contraction=2.709e-03; bundle-A: center=(0.017745864568,-0.001860447975,-0.001860447975,-0.001860447975,0.150221081), residual=1.809e-52, radius=1.0e-9, contraction=2.728e-03; bundle-B: center=(0.018342069611,0.0014290423143,0.0014290423143,0.0014290423143,0.15660868399), residual=4.666e-59, radius=1.0e-9, contraction=2.500e-03
+[PASS] ten-channel-kkt-closure
+       each complete equation residual lies in the ten-dimensional metric-reaction image; the eleventh reaction of the quadratic completion is replaced by native nonlinear response
+[PASS] independent-periodic-box-action-reconstruction
+       background/bundle-B per-cell action errors=[7.129e-14,2.341e-14]; background gradient max=8.721e-09; bundle-B source-direction gradient error=9.678e-09
+[PASS] theorem-source-surface
+[PASS] no-go-discipline-source-surface
+[PASS] canonical-axiom-nonmutation
+per_element: checked all fifteen homogeneous edge directions through the ten-plus-five direct-sum decomposition
+per_site: checked the full fifty-hinge, two-hundred-forty-incidence action per translation cell
+per_mode: checked the compact k=0 five-normal nonlinear system and all ten affine metric reactions
+per_block: checked one interval-certified background, its full normal Hessian, and all three declared source continuations
+lattice_wide: checked the homogeneous periodic sector; curved, time-dependent, inhomogeneous, and open-boundary stability remain outside scope
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

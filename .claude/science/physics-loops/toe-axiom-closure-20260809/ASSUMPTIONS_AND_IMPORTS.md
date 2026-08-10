@@ -370,3 +370,25 @@ homogeneous response is intended.
   member remain open imports.
 - No literature coefficient, observation, fit, Einstein equation, primitive,
   canonical axiom edit, or audit verdict is imported.
+
+## Block 19 Assumption And Import Delta
+
+- The actual homogeneous Kuhn/Coxeter Regge action, exact `M_0` map, extra
+  branch `g`, and three declared sources are inherited source-bound objects.
+- The ten affine equations `M_0^T(ell-ell_flat)=0`, their zero targets, and the
+  choice of the resulting compact ensemble are explicitly supplied model data;
+  they are not derived from the current axioms or renamed physical necessity.
+- Finite-dimensional constrained variational calculus, second-order automatic
+  differentiation, outward-rounded interval arithmetic, the Krawczyk theorem,
+  coordinate symmetry, and the ordinary implicit-function theorem are
+  block-local mathematical tools.
+- The source amplitude `epsilon=1/100` is a common continuation probe, not a
+  measured or fitted coupling. The theorem itself is local for every
+  sufficiently small homogeneous source projection.
+- The mixed Euclidean Hessian inertia is not imported as a physical
+  instability statement. Lorentzian continuation, time-dependent and
+  inhomogeneous spectra, curved backgrounds, nonlinear constraints, action
+  orientation/unit, and realized history remain open.
+- Approved primitives supply no geometry action, ensemble, target, coupling,
+  or stability selector. No external literature, observation, Einstein
+  equation, new primitive, canonical axiom edit, or audit verdict is used.

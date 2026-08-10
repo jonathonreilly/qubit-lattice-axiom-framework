@@ -1085,3 +1085,42 @@ instance or Fourier census.
   `c34f5ebdc8`. PR #6089 is mergeable and `CLEAN` on exact Block-17 delivery
   head `2144e710711865f0350ccab35e87591dad2ba741`. No canonical edit, audit
   verdict, percentage move, or `review-loop` occurs.
+
+## Block 19 science record
+
+- Proved the exact direct sum of ten constant-metric tangents with four
+  massive normal modes and the native nonlinear extra branch.
+- Found the nonzero coordinate-symmetric constrained background and certified
+  existence and uniqueness in a radius-`10^-9` interval Krawczyk box.
+- Used coordinate symmetry and outward-rounded intervals to separate the
+  symmetric-block determinant and all three equivalent anisotropic Hessian
+  entries from zero; numerical inertia is `4-/1+`.
+- Applied the implicit-function theorem to every sufficiently small
+  homogeneous source projection and certified the three declared generators
+  at `epsilon=1/100` with radius-`10^-9` five-dimensional Krawczyk boxes;
+  their maximum width contraction is `2.728e-3`.
+- Reconstructed the complete fifteen-edge KKT equations with unique ten-
+  component metric multipliers and no inserted reaction along the native
+  nonlinear branch.
+- Independently replayed the original periodic `L=3` Regge action at the
+  background and bundle-B branch, agreeing below `8e-14`.
+- Centrally differenced that independent periodic action in the exact normal
+  coordinates: the background gradient maximum is `8.721e-9` and the
+  bundle-B source-direction gradient error is `9.678e-9`.
+- The exact tetrahedral normal basis, all 24 coordinate permutations, and the
+  three finite source boxes are computed independently of the floating
+  orthonormal eigenbasis used only for the displayed spectrum.
+- Primary source/input-pinned cache is `PASS=13 FAIL=0`. The theorem note lands
+  all N1--N8 and five resolution surfaces while preserving nonlinear-
+  constraint, curved, time-dependent, inhomogeneous, boundary, and Lorentzian
+  routes.
+- Thirteen process-local load-bearing mutations each fail their intended
+  family: current axiom, stacked parents, primitive registry, exact normal
+  decomposition, coordinate-symmetry irrep, certified background center, full
+  Hessian gap, finite-source target, ten-channel KKT rank, independent periodic
+  action, theorem surface, N1--N8 surface, and canonical nonmutation. The final
+  corrected harness reports `PASS=13 FAIL=0`; its first pass exposed three
+  repeated-phrase mutations, which were corrected to remove every occurrence.
+- Direct conformance, graph registration, full pipeline, changed evidence,
+  commit, and PR status remain to be recorded. No canonical
+  edit, audit verdict, fixed-percentage move, or `review-loop` occurs.

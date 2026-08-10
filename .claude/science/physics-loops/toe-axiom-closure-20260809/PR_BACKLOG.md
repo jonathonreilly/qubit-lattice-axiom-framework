@@ -326,3 +326,21 @@ with no failures or controls. Science commits are `27738fec0a` and
 on the exact Block-17 delivery head
 `2144e710711865f0350ccab35e87591dad2ba741`. Hard landing order adds #6089
 after #6088. No `review-loop` is used.
+
+Block 19 is being packaged on branch
+`physics-loop/toe-axiom-closure-block19-full-nonlinear-20260810`, based on
+exact Block-18 delivery head `ab40894b9260a31a3fd986eebff00611b13539b4`.
+It adds the affine metric-tangent nonlinear KKT completion: exact `10+5`
+decomposition and `S_4` normal basis, interval-certified symmetric background,
+interval-separated full normal Hessian, IFT source-family existence, three
+five-dimensional finite-source Krawczyk certificates, ten-reaction complete
+KKT closure, independent periodic-action reconstruction, N1--N8, and the
+updated candidate ensemble/stability wording. Independent periodic-action
+finite differences reproduce the background and bundle-B source-direction
+normal equations within `9.678e-9`.
+All thirteen process-local load-bearing mutations are detected at their named
+check families.
+Primary runner/cache is `PASS=13 FAIL=0` and source/input pinned. Delivery,
+direct conformance, synthetic-main integration, and changed-evidence checks
+remain to be recorded. Canonical axioms and fixed percentages are untouched,
+and no `review-loop` is used.

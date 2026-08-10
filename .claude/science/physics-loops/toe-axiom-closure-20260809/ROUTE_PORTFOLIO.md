@@ -411,3 +411,41 @@ governance epoch lag, the synthetic-main configuration passes all 18 pipeline
 stages, and changed-evidence readiness passes Block 18 alone plus the complete
 18-claim stack. The quartic null/range effective tensor remains the highest-
 value next route; no broader negative conclusion is authorized.
+
+## Block 19 route comparison
+
+The landed prior-art sweep was refreshed at
+`origin/main@39c74017b870c27c804e3992f2a11e90336476b2`. It searched both noun
+orders and title families:
+
+    git grep -n -iE '(Krawczyk.*Regge|Regge.*Krawczyk|nonlinear.*KKT.*Regge|Regge.*nonlinear.*KKT|five-normal|ten affine.*constraint|constraint.*ten affine|nonzero.*Regge.*background|Regge.*stationary.*background)' origin/main -- 'docs/*.md' 'docs/**/*.md'
+    git ls-tree -r --name-only origin/main -- docs/ | rg -i '(regge|kkt|nonlinear|constraint)'
+    git grep -n -iE '(nonlinear.*reaction|reaction.*nonlinear|implicit.function.*Regge|Regge.*implicit.function)' origin/main -- docs/audit/data/derivation_obligations.json 'docs/audit/data/ledger/*.json' 'docs/*.md' 'docs/**/*.md'
+
+The only semantic near-hit was the conditional log-determinant/tensor-product
+operator in `docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md` and
+its extension note. Those notes do not evaluate the actual Kuhn/Coxeter Regge
+action, impose this affine metric-tangent ensemble, find this nonzero
+background, certify a five-normal Hessian, or execute these source generators.
+The landed Coxeter/Regge notes stop at flat Hessians, dispersions, or other
+carriers. Open stacked PRs #6088 and #6089 supply dependencies, not the present
+finite-amplitude construction. Classification: **open after matched-hit
+review**, not already proved or refuted on matching premises.
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| affine metric-tangent ensemble | `M_0^T(ell-ell_flat)=0` | ten metric constraints leave a complete five-normal system with an exact tetrahedral `S_4` basis | retain as explicit conditional compact ensemble; physical selection open |
+| nonlinear symmetric background | actual Regge action on `a r+u g` | radius-`10^-9` interval-certified nonzero root | retain as constructive native completion |
+| full normal nondegeneracy | symmetric `2x2` block plus three anisotropic irreps | interval determinant and entries exclude zero; inertia `4-/1+` | supports IFT existence; not a Euclidean minimum or physical-stability theorem |
+| arbitrary small homogeneous source | five-normal source projection | IFT gives one local branch through the certified root | retain as family theorem, stronger than three fitted instances |
+| declared source execution | two-stream, bundle A, and bundle B at `epsilon=1/100` | three radius-`10^-9` five-dimensional Krawczyk boxes contract by at most `2.728e-3` | retain existence-and-uniqueness certificates, not only numerical residuals |
+| complete nonlinear KKT closure | ten affine metric reactions plus native nonlinear extra equation | all fifteen equations close; unique ten multipliers | retires the eleventh reaction in this ensemble only |
+| overall action sign or coordinate change | `S_R` versus `-S_R`; invertible normal bases | mixed inertia survives | narrow negative only for strict Euclidean extremum at this point |
+| nonlinear constraint surface | coordinate-dependent gradients and multiplier Hessian | not executed; can change stability | preserve as highest-value ensemble-repair route |
+| Lorentzian/time-dependent/inhomogeneous law | selected evolution operator and full mode spectrum | not supplied | highest-value physical gravity route |
+| candidate amendment delta | explicit action/unit, ensemble/targets, coupling, source compatibility, and separately typed stability | sufficient by premise, unadopted and nonminimal | record wording; do not edit canonical axioms |
+
+The local mathematical compatibility question is no longer the leading
+gravity obstruction. The active seam is selection of a physical
+geometry/history ensemble and a Lorentzian plus inhomogeneous stability
+certificate. No broad instability or axiom-necessity conclusion is authorized.

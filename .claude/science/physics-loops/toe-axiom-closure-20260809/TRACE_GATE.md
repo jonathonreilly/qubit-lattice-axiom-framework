@@ -332,3 +332,28 @@ Lorentzian/history law, Born selector, or realized member. Candidate wording
 now accepts either full variational reaction coverage or a demonstrated native
 lift with complete coupled source compatibility. No canonical edit, audit
 verdict, or fixed-percentage change occurs.
+
+Block 19 crosses the complete conditional nonlinear compact-equation seam.
+Ten explicit affine constant-metric constraints leave a five-normal system in
+which the actual Regge action has a nonzero interval-certified background.
+The full normal Hessian is interval-separated from singularity, so the
+implicit-function theorem supplies local branches for every sufficiently
+small homogeneous source projection.
+
+All three declared source generators are continued explicitly and certified
+by five-dimensional interval Krawczyk boxes at `epsilon=1/100`; each complete
+fifteen-edge residual is balanced by unique ten-component metric KKT
+multipliers. Native nonlinearity therefore supplies the extra equation that
+needed an eleventh reaction in the flat quadratic theory. The original
+periodic action independently reproduces the background and one sourced
+branch.
+
+Reachability remains `upstream_support` and materially supports the target:
+bare compact
+nonlinear source compatibility is no longer the leading obstruction on this
+supplied ensemble. Current axioms still do not select that ensemble, its
+targets, action unit/orientation, coupling, source/history law, Lorentzian
+evolution, stability spectrum, projective completion, or realized member.
+Mixed Euclidean inertia at this one point is not a physical instability no-go.
+Candidate wording types the remaining fields without adoption. No canonical
+edit, audit verdict, or fixed-percentage change occurs.

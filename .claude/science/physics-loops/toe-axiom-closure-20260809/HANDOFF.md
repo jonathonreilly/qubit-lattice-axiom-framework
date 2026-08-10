@@ -869,3 +869,58 @@ Next exact action: compute the quartic null/range effective tensor and perform
 a controlled continuation of the complete fifteen-edge homogeneous source
 equations; if that does not close, pivot to a curved/inhomogeneous or explicit
 boundary/reaction completion. Do not invoke `review-loop`.
+
+## Block 19 science handoff
+
+Block 19 closes the full nonlinear continuation target conditionally. Impose
+the ten explicit affine compact constraints
+
+    M_0^T(ell-ell_flat)=0.
+
+Their five-dimensional normal complement contains the four nonzero flat-
+Hessian directions and Block 18's nonlinear extra direction. On the actual
+Regge action, the coordinate-symmetric normal system has the certified root
+
+    a_*=0.0176289114528026416711151626901...,
+    u_*=0.152236551215347790334070142791... .
+
+An outward-rounded radius-`10^-9` Krawczyk box maps strictly inside itself
+with contraction `5.504e-4`. Coordinate symmetry splits the full normal
+Hessian into a symmetric `2x2` block and three equivalent anisotropic entries;
+interval bounds keep the determinant and anisotropic entries strictly away
+from zero. Its numerical eigenvalues are
+`(-39.835547491,-13.055486774,-13.055486774,-13.055486774,3.151407011)`.
+
+The implicit-function theorem now gives a unique local constrained branch for
+every sufficiently small homogeneous source projection. At common probe
+amplitude `epsilon=1/100`, radius-`10^-9` five-dimensional Krawczyk boxes
+certify unique two-stream, bundle-A, and bundle-B roots, with maximum
+contraction `2.728e-3`. Each complete fifteen-edge residual lies in
+`image(M_0)`, producing unique ten-component KKT multipliers. Thus native
+nonlinearity replaces Block 17's eleventh quadratic reaction in this supplied
+ensemble.
+
+The primary runner/cache is `PASS=13 FAIL=0`. The independent original
+periodic `L=3` action agrees at the background and bundle-B branch to
+`7.129e-14` and `2.341e-14`; independent central differences reproduce the
+background normal gradient and bundle-B source-direction equation within
+`9.678e-9`. N1--N8 applies only to the narrow fact that this point is not a
+strict Euclidean extremum on the affine surface: inertia is `4-/1+`. No
+Lorentzian, dynamical, curved, inhomogeneous, or gravity no-go is authorized.
+
+Thirteen process-local load-bearing mutations all fail closed across the
+runner's source-binding, exact geometry, symmetry, certified-background,
+Hessian, finite-source, KKT, independent-control, note/N-gate, and canonical-
+nonmutation families. The corrected mutation harness is `PASS=13 FAIL=0`.
+
+The physical deficit is now sharply typed. Current axioms do not select the
+ensemble, constraint targets, action unit/orientation, source law, coupling,
+Lorentzian update, stability spectrum, projective history, or realized member.
+The candidate amendment makes those fields explicit but remains unadopted,
+sufficient rather than necessary or minimal, and may remain a downstream
+convention. Canonical axioms and fixed TOE percentages are unchanged.
+
+Next exact action: derive a Lorentzian/time-dependent law and compute its full
+homogeneous plus inhomogeneous stability spectrum, while testing whether the
+affine ensemble and targets follow from a local covariant geometry/history
+law. Do not invoke `review-loop`.

@@ -279,6 +279,11 @@ The isolated full pipeline passes through effective-status computation and
 then reproduces only PR #6061's governed dependency-policy epoch mismatch at
 restoration; 1,066 tracked generated changes and 828 new shards remain
 disposable. Seeded changed evidence checks Block 16 alone and all 16 stacked
-claims with zero failures or control failures. Push and PR remain pending. The
-canonical memo is untouched, the fixed TOE percentages do not move, and no
-`review-loop` is used.
+claims with zero failures or control failures. The canonical memo is
+untouched, the fixed TOE percentages do not move, and no `review-loop` is
+used. Science commit is `1effedfb5e`; conformance commit is
+`f789b7128f`. PR #6085 is mergeable and `CLEAN` on the exact #6083 delivery
+head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`. New PR #6084 is adjacent
+inter-site-gate work and does not collide beyond the generated citation
+manifest. Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074,
+#6075, #6076, #6077, #6078, #6079, #6080, #6081, #6082, #6083, then #6085.

@@ -741,7 +741,12 @@ zero failures or control failures. The isolated full pipeline passes through
 effective-status computation and then reproduces only PR #6061's governed
 dependency-policy epoch mismatch at restoration; its 1,066 tracked generated
 changes and 828 new shards stay disposable. The exact 17-file science commit
-is `1effedfb5e`; PR delivery remains to be appended.
+is `1effedfb5e`; conformance is commit `f789b7128f`. PR #6085 is `CLEAN` and
+mergeable on the exact #6083 delivery head
+`d6e789784c34fbc0daf20626e34ff9f7e948d5ce`. New PR #6084 is adjacent
+inter-site-gate work with no science-packet collision. Hard landing order is
+#6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078,
+#6079, #6080, #6081, #6082, #6083, then #6085.
 
 Existing candidate wording already types the mathematical choices but does
 not select the Record/source identity, action weights, compact mechanism,

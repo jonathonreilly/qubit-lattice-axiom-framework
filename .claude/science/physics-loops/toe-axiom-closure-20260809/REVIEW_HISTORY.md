@@ -956,5 +956,12 @@ audit verdict.
   mismatch. Its 1,066 tracked generated changes and 828 new shards remain in a
   disposable worktree. Seeded changed-evidence checks Block 16 alone and all
   16 stacked claims with zero failures and zero control failures.
-- The exact 17-file science commit is `1effedfb5e`. Delivery remains to be
-  recorded after push and PR creation. No `review-loop` is invoked.
+- The exact 17-file science commit is `1effedfb5e`; conformance is commit
+  `f789b7128f`. PR #6085 is `CLEAN` and mergeable on the exact PR #6083
+  delivery head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`. Hard landing order is
+  #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078,
+  #6079, #6080, #6081, #6082, #6083, then #6085.
+- A final live sweep finds new PR #6084 on `main`. Its input-distribution
+  dependence theorem shares only the regenerated citation-manifest surface;
+  it has no Block-16 note, runner, cache, or campaign-state collision. No
+  `review-loop` is invoked for Block 16.

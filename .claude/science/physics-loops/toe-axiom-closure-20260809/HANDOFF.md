@@ -1218,9 +1218,10 @@ passes. The exact stack reaches only the inherited stage-7 dependency-policy
 epoch mismatch after `4,811` rows / `3,689` runners; the controlled five-file
 current-main overlay passes all 18 stages at checkpoint `87d3c253d997`.
 Changed evidence is clean for `1/1` Block-27 and `27/27` stacked claims.
-Science commit is `2d350c4f8e`; delivery remains pending. The highest-priority
-next object is a local covariant geometry-dependent RN score/joint interaction,
-combined with a separate selected pure-geometry action or causal update. PR
-#6096 remains a complementary proper-length route for later explicit
-reconciliation. No canonical edit, percentage move, audit verdict, or
-`review-loop` occurs.
+Science commit is `2d350c4f8e`; campaign conformance is `e04ff49385`. PR #6099
+is open, mergeable, and `CLEAN`, stacked exactly on Block-26 delivery head
+`8281f0a0ea`. The highest-priority next object is a local covariant geometry-
+dependent RN score/joint interaction, combined with a separate selected pure-
+geometry action or causal update. PR #6096 remains a complementary proper-
+length route for later explicit reconciliation. No canonical edit, percentage
+move, audit verdict, or `review-loop` occurs. Independent audit is required.

@@ -104,6 +104,10 @@ adjacent PRs affect routing but do not collide:
 - PR #6068 is a cell-cutting small-matrix/rank census under four-cube
   symmetry. Its four-file delta changes no axiom, primitive, Admissibility
   measure, Record decoder, effect quotient, or compiler-selection surface.
+- PR #6069 classifies 20 finite basis-state length-zero/one words and finds six
+  covariant incoming-CNOT/XOR witnesses. It strengthens the local contact
+  ingredient, but its own boundary leaves the continuous `M_2(C)`
+  Admissibility law and compiler open.
 
 The Block 4 source also checked Cycle 284's supplied finite trace/Kraus
 decoder, the covariant effect-map theorem, and Cycle 321's finite coarse-CP

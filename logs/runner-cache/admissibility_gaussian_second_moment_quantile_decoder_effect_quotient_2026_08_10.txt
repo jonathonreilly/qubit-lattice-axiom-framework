@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10.py
 runner_sha256: c098602459dd6739bda76e8f4ffd2dffd24dda7fe97bbc6a8e9e93ea54744d70
-input_fingerprint_sha256: 67fa678866d631debb932776da97a6df82dc35630875c7cfc72fa9e0ed87fdb2
+input_fingerprint_sha256: 879c3c9cc3d9de309825bcea6fa49130f851c61e88ab6b5c986af99b49bcf2d6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05

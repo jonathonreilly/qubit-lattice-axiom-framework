@@ -291,3 +291,8 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   new ledger shards after verifying every untracked path lay under
   `docs/audit/data/ledger/`. The 18 intended staged paths remain and no
   unrelated working-tree residue remains.
+- PR #6070 was opened on the exact #6067 head and reports mergeable. A
+  same-boundary sweep then found new PR #6069: its finite 20-word census has
+  six covariant incoming-CNOT/XOR witnesses, but its claim boundary explicitly
+  leaves the continuous `M_2(C)` Admissibility law open. It is a next-block
+  contact seed and does not collide with the fixed-condition compiler.

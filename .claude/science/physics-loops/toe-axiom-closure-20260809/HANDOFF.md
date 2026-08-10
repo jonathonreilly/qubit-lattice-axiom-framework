@@ -154,3 +154,10 @@ selects and physically encodes this compiler while preserving a preparation
 class across program-dependent neighbor conditions. If it cannot, report the
 narrow candidate axiom delta; do not edit canonical axioms without owner
 authorization.
+
+Live adjacent input: PR #6069 now supplies an exact proper-cubic/translation-
+covariant census of the finite length-zero/one basis-state word family, with
+six incoming-CNOT/XOR dependence witnesses. Its stated boundary leaves the
+continuous `M_2(C)` Admissibility law open. Use it as a finite contact seed for
+the next physical compiler-selection attempt, not as a continuous decoder or
+preparation-quotient theorem.

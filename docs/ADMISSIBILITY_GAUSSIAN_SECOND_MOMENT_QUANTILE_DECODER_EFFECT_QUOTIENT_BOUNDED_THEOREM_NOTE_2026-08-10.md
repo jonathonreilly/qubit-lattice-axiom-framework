@@ -386,7 +386,7 @@ No global no-go is certified.
 | atomic deterministic decoder | test the same target construction on `delta_0` | half-half weights cannot be split by a deterministic singleton-support decoder (Theorem 5 above) | **ATTEMPTED** |
 | locked-output CP instrument | derive effects from supplied rank-one Record-forming operations | the [covariant effect source](COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md) derives unique effects only conditionally; the physical instrument/state input remains open | **ATTEMPTED** |
 | coarse-CP operational quotient | identify hidden proportional refinements physically | the [Cycle 321 source](work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md) closes its finite pair, not all effect-equal programs | **ATTEMPTED** |
-| inter-site CNOT pointer | use neighbor-sensitive two-site contact as a binary program | [PR #6062](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062) is basis-binary with a supplied target input and no continuous `M_2(C)` measure/compiler | **ATTEMPTED** |
+| inter-site CNOT pointer | use neighbor-sensitive two-site contact as a binary program | [PR #6062](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062) and [PR #6069](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069) supply finite basis-state CNOT/XOR witnesses and covariance, but no continuous `M_2(C)` measure/compiler | **ATTEMPTED** |
 | atom-splitting ancilla | add a continuous or finite splittable program variable | remains a viable constructive escape; the [current four axioms](MINIMAL_AXIOMS_2026-06-29.md) supply no such variable | **ATTEMPTED** |
 
 The first four routes are executed here. The remaining four are exact
@@ -475,8 +475,11 @@ sources. The scale reference supplies units only, kinetic isotropy supplies a
 kinetic-form ratio only, and the realized-state primitive supplies pointwise
 evaluation without a state, measure, probability rule, normalization, or
 selector. None supplies the compiler interfaces above. In-flight PR #6062 is a
-bounded basis-binary CNOT response witness; PR #6066 is an axiom-fidelity corpus
-measurement. Neither changes the current premise surface or closes this target.
+bounded basis-binary CNOT response witness; PR #6069 sharpens the finite
+length-zero/one word family to six covariant incoming-CNOT/XOR witnesses but
+explicitly leaves the continuous `M_2(C)` law open; PR #6066 is an
+axiom-fidelity corpus measurement. None changes the current premise surface or
+closes this target.
 
 ### N7 — hostile steelman
 

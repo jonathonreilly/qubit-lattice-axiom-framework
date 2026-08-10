@@ -37,8 +37,12 @@ the independent symbolic route agrees, and eighteen process-local mutations
 reach their intended failure families. Direct conformance passes. The full
 pipeline reproduces only PR #6061's current-main dependency-policy epoch stop,
 and all 1,048 tracked plus 816 untracked generated outputs were cleaned. Final
-cold diff remains before commit, push, and a stacked PR. The canonical axiom
-memo remains untouched; no `review-loop` is used.
+cold diff passed. Opened: PR #6070, science commit `bde5c2d749`, on the exact
+#6067 head. GitHub reports it mergeable; hard landing order is #6063, #6065,
+#6067, then #6070. New PR #6069 strengthens only the finite basis-state
+CNOT/XOR contact family and explicitly leaves the continuous `M_2(C)` law
+open, so it does not collide. The canonical axiom memo remains untouched; no
+`review-loop` is used.
 
 Completed Block 1 delivery checklist:
 

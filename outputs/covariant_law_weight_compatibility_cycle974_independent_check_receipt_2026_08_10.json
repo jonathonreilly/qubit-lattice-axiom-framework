@@ -1,7 +1,5 @@
 {
-  "cache_path": "logs/runner-cache/frontier_cycle974_compatibility_independent_check_2026_08_10.txt",
-  "cache_sha256": "6b90e75e4ae3da1330e118bb304c0f876081671c53f4ca7fc4cbd38482314a10",
-  "checker_source_sha256": "636e2b0e4f9260788791d3c7e6aeb8b60cdc5d541dee1217ccd3e675ee7a4b80",
+  "checker_source_sha256": "bc137b3dcda10519fc5c05f423ee8668a88a525fa82a1a445fc9c0220ea90fba",
   "checks": {
     "R0_PINS_BLOCKLIST_AND_AST": true,
     "R1_REFUTE_REBUILD": true,
@@ -38,16 +36,18 @@
       },
       "primary_cache_receipt_checks": {
         "all_five_survive_reported": true,
-        "receipt_cache_binding": true,
+        "envelope_runner_binding": true,
+        "envelope_success": true,
+        "envelope_timeout_binding": true,
         "receipt_source_binding": true,
         "total_pass": true
       },
       "sha256": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "9eef65645087f118e31a82f2f02fd369a00348a49e6bc3c8e61dd9fbd2a3b4df",
-        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "98bb95f45ab7afe4d3b2427a8fcd8ed47cea344ac77a668acf04c6a981b7e844",
+        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "5d017c1449a57db5aeb42bbbb00bcabb646f27d388983a5784a2b83308bbae51",
+        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "bda3ef37e9ae913e38975ec908087d72b8e56aa4cd4d84f5e719cd69f369c8a3",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "17d056cc67fcde5f21c8b3ea23ded4d0180ae0d22b6b72893b7540639f78428a"
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "08dff97b7da09afbb1c93da95cac47fbbb3b94ff90319f5bbca0237c9ec2196f"
       }
     },
     "corruptions": {
@@ -222,8 +222,8 @@
       "word_law_class_count": 1,
       "xor_failures": []
     },
-    "runtime_seconds": 116.58739816700108,
-    "stdout_bytes": 1539,
+    "runtime_seconds": 95.80361320800148,
+    "stdout_bytes": 1538,
     "verdicts": {
       "M1_COUNTING": "SURVIVES",
       "M2_PER_WORLD_UNIFORM": "SURVIVES",

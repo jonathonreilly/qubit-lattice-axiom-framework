@@ -1,4 +1,4 @@
-# The covariant neighbour law does not select an event weighting — Cycle 974
+# All five event weightings admit the covariant neighbour law — Cycle 974
 
 Date: 2026-08-10
 
@@ -156,6 +156,27 @@ Finding verbatim:
 B_COMPATIBILITY_TEST PASS :: criterion=existential joint-extension criterion: a normalized event weighting p_i survives iff there exists P_i(e,x,n,y) with event marginal p_i and conditional P_i(y|x,n)=1{y=x XOR n_d} on every fixed-input radius-one configuration; mechanically use P_i=p_i(e)*q(x,n)*1{y=x XOR n_d}, q=1/128.  Exclude only on nonnegative/normalization failure, event-marginal mismatch, or a first conditional configuration mismatch.; verdicts={"M1_COUNTING":"SURVIVES","M2_PER_WORLD_UNIFORM":"SURVIVES","M3_OCCUPATION_WEIGHTED":"SURVIVES","M4_FORMATION_LIFETIME":"SURVIVES","M5_FORMATION_MOMENT":"SURVIVES"}; witness_pair={"condition_n_d_0":[0,0,0,0,0,0],"condition_n_d_1":[1,0,0,0,0,0],"distribution_n_d_0":[1,0],"distribution_n_d_1":[0,1],"fixed_target_input":0}
 ```
 
+## Exact target and proof-obligation graph
+
+Target statement: for each of the five rebuilt normalized event weightings
+`p_i` on the stipulated finite event space, construct a joint distribution
+whose event marginal is `p_i` and whose local conditional is the rebuilt XOR
+kernel on every declared fixed-input neighbour configuration.
+
+| Obligation | Disposition |
+|---|---|
+| Rebuild each `p_i` as a nonnegative vector with positive finite total | proved here by the landed-substrate event scan; independently recomputed cell-for-cell by normalized-vector digest |
+| Rebuild the local kernel and its declared covariance/class count | proved here by exhaustive primary and independent Boolean enumerations |
+| Show the product construction is nonnegative and normalized | exact finite sum: `sum_e p_i(e)=1`, `sum_(x,n) q(x,n)=1`, and the indicator has one allowed `y` |
+| Recover the event marginal | exact finite sum over `(x,n,y)` gives multiplicative factor `1` |
+| Recover the XOR conditional at every declared configuration | exact numerator/denominator cancellation, checked in 256 scalar entries per weighting |
+| Cover degenerate inputs | zero-total, negative-entry, missing-configuration, and XNOR corruptions are actively rejected; zero event weights remain allowed because they do not make any `(x,n)` conditioning event null |
+
+No terminal lemma is imported or target-equivalent: the joint distribution is
+given explicitly. The strongest missing statement is outside this theorem's
+target—a derivation that identifies record-write atoms with local
+configurations strongly enough to select an event marginal.
+
 ## C_SELECTION_STATUS
 
 The covariant uniqueness result fixes the conditional kernel. It does not fix
@@ -186,7 +207,7 @@ below both the 6 KB house ceiling and the requested 150 KB ceiling.
 Finding verbatim:
 
 ```text
-D_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=48.530<1400; stdout_bytes=2497<6000<150000
+D_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=47.161<1400; stdout_bytes=2497<6000<150000
 ```
 
 ## Independent refutation outcome
@@ -207,7 +228,7 @@ R1_REFUTE_REBUILD PASS :: events=92260; candidate_digests_match=True; law={"cano
 R2_REFUTE_COMPATIBILITY PASS :: verdicts={"M1_COUNTING":"SURVIVES","M2_PER_WORLD_UNIFORM":"SURVIVES","M3_OCCUPATION_WEIGHTED":"SURVIVES","M4_FORMATION_LIFETIME":"SURVIVES","M5_FORMATION_MOMENT":"SURVIVES"}; disagreement_witnesses={"M1_COUNTING":null,"M2_PER_WORLD_UNIFORM":null,"M3_OCCUPATION_WEIGHTED":null,"M4_FORMATION_LIFETIME":null,"M5_FORMATION_MOMENT":null}
 R3_ACTIVE_CORRUPTION_PROBES PASS :: rejected=negative_weight,zero_total,missing_configuration,XNOR; XNOR_witness={"configuration":[0,[0,0,0,0,0,0],0],"expected":"1","observed":"0","quantity":"P(y|x,n)"}
 R4_SELECTION_BOUNDARY PASS :: survivors=5/5; excluded=0; reduction=0/5; local-to-event lift absent; wall stands unchanged
-R5_CONTROLS PASS :: determinism=True; runtime_s=116.587<1400; stdout_bytes=1539<6000<150000
+R5_CONTROLS PASS :: determinism=True; runtime_s=95.804<1400; stdout_bytes=1538<6000<150000
 REFUTATION_OUTCOME: NO_DISCREPANCY_FOUND
 TOTAL: PASS=6 FAIL=0
 ```
@@ -245,16 +266,28 @@ next_trace_action: "if selection is pursued, derive a local-to-event lift or an 
 
 ```yaml
 actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 conditional_surface_status: "exact on the stipulated 92,260-atom event model and declared radius-one basis-state law under the existential joint-extension criterion"
 hypothetical_axiom_status: null
 admitted_observation_status: null
+claim_type_reason: "explicit joint-extension theorem with exhaustive finite rebuilds; bounded by the stipulated event model and declared gate family"
 proposal_allowed: false
 proposal_allowed_reason: "finite stipulated event model and finite gate family; no full continuous-domain law and no event-weight selection"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+## Review record
+
+Pre-review conformance converted both caches to the repository's
+`runner_cache.execute_and_write_cache` envelope, refreshed every downstream
+SHA pin, and reframed the headline as the positive existence theorem actually
+proved. The primary is standalone audit evidence; the independent checker is
+corroborative refutation evidence and is not a load-bearing packet helper.
+No-Go Discipline is not applicable: the theorem supplies five explicit
+constructions and does not claim that another selection route is impossible.
 
 ## Verdict
 

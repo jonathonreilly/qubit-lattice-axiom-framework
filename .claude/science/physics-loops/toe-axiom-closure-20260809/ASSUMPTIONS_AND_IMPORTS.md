@@ -166,3 +166,25 @@ formation site/rate, IID trial law, or realized-history typicality.
 No literature theorem, observed value, fitted parameter, update order,
 formation law, global M2 measure, realized member, metric, curvature carrier,
 stress tensor, or Newton coupling is imported.
+
+## Block 9 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| fixed binary central code | readout/action comparison domain | stacked explicit test sector | yes | no physical-code selection inferred |
+| content-only additive scalar Record readout | one-body comparison surface | Record baseline under strict distinct-record reading | yes | separated-additivity steelman remains live |
+| compatible `A^N B^E` law | statistical action | stacked Block 8 theorem | yes | physical action licensing not inherited |
+| Boolean inclusion-exclusion | unique interaction decomposition | elementary finite algebra | yes | proved directly |
+| finite periodic six-regular cubic quotient | code-swap line comparison | explicit test specialization | yes | literal finite-region boundary/exterior cases remain separate |
+| code-swap symmetry | one-parameter interacting family | supplied optional symmetry | yes for line comparison | not inferred from current axioms |
+| Cycle 698 pair-kernel shape | prior-art interface | source-bound bounded note | no for arithmetic | value/sign/licensing not borrowed |
+| Cycle 871 additive action ansatz | comparison line | source-bound declared model | yes for implication map | physical readout/action bridge not borrowed |
+| finite site/edge coupling variations | statistical response coordinates | explicit mathematical parameters | yes | not identified as physical sources |
+| physical `S=-log pi` license and action unit | source/action bridge | open import / hypothetical clause | no for theorem; yes for physical closure | not assumed |
+| conserved stress tensor and metric/curvature coupling | gravity bridge | open import | no | covariance indices are not relabeled |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The theorem does not import enlarged Record content, a separated-additivity
+interpretation, auxiliary field, physical source operation, action unit,
+conservation law, stress tensor, metric response, Newton coupling, dynamics,
+or realized history.

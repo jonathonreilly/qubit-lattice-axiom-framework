@@ -349,3 +349,27 @@ axiom memo is untouched and no percentage moves. The 18-file science delta is
 commit `735ad6e618` and open as stacked PR #6076 on the exact #6075 head. Hard
 landing order is #6063, #6065, #6067, #6070, #6071, #6074, #6075, then #6076.
 No `review-loop` is invoked.
+
+## Block 9 science handoff
+
+The gravity/source sweep found that Cycle 698 already classifies a covariant
+range-one pair carrier but leaves its value, sign, range, and licensing open.
+Cycle 871 prices a declared strictly additive action ansatz as one scalar while
+warning that equal dimensions imply no bridge. Recent carrier/cutting PRs add
+finite geometry classifiers but no M2 source/action, stress tensor, or physical
+identification.
+
+Block 9 composes those surfaces with the compatible `A^N B^E` action. The
+binary content-only additive Record readout has zero pair curl and cross-ratio
+one; the action has edge curl `-log B` and cross-ratio `B`. Boolean
+inclusion-exclusion uniquely recovers one site term and one unordered edge
+term. Under code swap, the interacting and additive one-scalar lines intersect
+only at the trivial `B=1` point. Exact site/edge derivatives give a covariance
+response; the rational `A=1/8,B=2` fixture is positive definite.
+
+The primary runner is PASS=30 FAIL=0 with 4,736 characters of stdout. An
+independent SymPy route agrees on the line intersection, Boolean coefficients,
+cross-ratio, exact means/covariance, and determinant numerator 860672.
+Harness/graph registration, mutation sensitivity, direct conformance, commit,
+push, and stacked PR delivery remain pending. No canonical axiom is edited, no
+percentage moves, and no `review-loop` is invoked.

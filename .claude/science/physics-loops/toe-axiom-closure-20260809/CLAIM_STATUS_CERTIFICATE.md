@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact finite binary square-curl compatibility, unique joint-law reconstruction, cubic count-only geometric-odds classification, derived finite Ising-type action, and an exact all-24-covariant hostile rule; continuous M2 compatibility, dynamics, history, gravity identification, and axiom adoption remain open."
+claim_type_reason: "Exact binary content-only readout/action cross-ratio separation, unique Boolean site-plus-edge decomposition, conditional pair coefficient -log B, trivial intersection of two one-scalar families, and exact positive site/edge covariance response; physical source/action licensing, action unit, stress tensor, metric coupling, gravity, dynamics, history, and axiom adoption remain open."
 trace_class: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "strictly positive finite binary sitewise kernels are full conditionals of one positive joint law exactly when every two-site square has zero multiplicative curl; count-only cubic compatibility forces affine logit and a finite nearest-neighbor action"
-hypothetical_axiom_status: "one sufficient Admissibility addition requires the sitewise laws to be full conditionals of a covariant, projectively consistent family of finite-region joint laws; ordered update-kernel semantics remains live; no canonical edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "on the fixed binary code, content-only additive Record readout has zero pair curl while the compatible action has edge curl -log B; the unique interaction carrier is one unordered edge coefficient and its supplied-coupling response is a positive-semidefinite covariance"
+hypothetical_axiom_status: "a weak pair-resource clause carries the interaction; a stronger physical log-law source/action clause with one registered action unit identifies it physically; neither is edited, adopted, proved necessary, or claimed minimal"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -94,6 +94,17 @@ bare_retained_allowed: false
 - Physical binary-code selection, general M2 compatibility, finite-to-infinite
   consistency, realized history, and source/tensor/gravity identification
   remain open.
+- Block 9 proves that every scalar readout fixed by the two binary contents and
+  additive over distinct Records is one-body and has unit edge cross-ratio.
+- The compatible `A^N B^E` law has edge cross-ratio `B`, so for `B != 1` its
+  statistical action is not an affine calibration of that readout.
+- Boolean inclusion-exclusion uniquely recovers site coefficient `-log A` and
+  nearest-neighbor pair coefficient `-log B`, with no higher interactions.
+- Under code swap, the interacting and strictly additive action families are
+  each one-dimensional but intersect only at the trivial `B=1` point.
+- Site/edge coupling derivatives yield exact expectation and covariance
+  response. Physical source licensing, action units, conservation, stress,
+  metric coupling, gravity, dynamics, and realized history remain open.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

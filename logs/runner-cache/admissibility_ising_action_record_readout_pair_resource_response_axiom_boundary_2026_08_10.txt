@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_2026_08_10.py
+runner_sha256: 0b560b9d07637491ca77826e86ad64f6e46b4e1e2d961f74a2f9dca4bad22204
+input_fingerprint_sha256: ba1de4afe9fec46e2659cc430379063dbea073e5bbed43b1fabbd0680cff0ab0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; finite Boolean interaction algebra and exact rational response are proved in-source
+package_local_integrity_reads: current axioms and compatible-action, pair-kernel, source-pricing, and weak-field boundaries are source-bound
+analytic_boundary: arbitrary finite one-body and Boolean-decomposition theorems are proved generally; exact path, cubic, and two-site fixtures are executed
+negative_scope: the fixed binary content-only readout does not equal a nontrivial pair action; enlarged content, pair resources, auxiliary fields, and physical source routes remain live
+PASS: source-current-record content-only scalar readout, finite additivity, and the source/action open gate are present
+PASS: source-compatible-action-parent the preceding action, code-swap relation, and gravity boundary are present
+PASS: source-pair-parent the pair shape and its open value/sign/range/licensing boundary are present
+PASS: source-pricing-parent the additive action ansatz and nonimplication warning are present
+PASS: source-weak-field-parent the physical weak-field packet preserves full-Einstein and Newton-unit boundaries
+PASS: additive-zero-curl arbitrary site-dependent two-content additive weights have zero mixed difference on every square
+PASS: action-edge-curl the pair action mixed difference equals its edge coefficient in every environment
+PASS: action-nonedge-curl the same action has zero mixed difference on every nonedge
+PASS: multiplicative-cross-ratio one-body content weights give ratio one while the exact compatible edge fixture gives B=2
+PASS: cross-ratio-mutation-control removing the pair factor collapses the hostile B=2 witness to the one-body ratio
+PASS: mobius-singletons every singleton Boolean coefficient equals the site coefficient
+PASS: mobius-edges every nearest-neighbor pair coefficient equals the edge coefficient and every nonedge is zero
+PASS: mobius-higher-order all Boolean coefficients of order three and four vanish
+PASS: mobius-unique-reconstruction the complete coefficient table reconstructs the action on all sixteen configurations
+PASS: higher-order-mutation-control an injected three-site interaction is detected by its exact third-order coefficient
+PASS: site-edge-feature-rank constant, site count, and edge count are exactly three independent configuration functions
+PASS: proper-cubic-pair-orbit all 24 proper rotations act transitively on the six range-one edge directions
+PASS: six-regular-cubic-fixture the periodic 3-cube fixture has 27 sites, 81 undirected edges, and degree six
+PASS: code-swap-edge-identity complementing occupation gives E(1-x)=|E|-6N+E on the exact cubic fixture
+PASS: code-swap-action-line u=-3v makes the six-regular action code-swap invariant up to one constant
+PASS: one-line-trivial-intersection singleton and adjacent-pair configurations force the interacting and additive one-scalar lines to meet only at zero
+PASS: response-exact-means the two-site site/edge sufficient statistics have exact mean (5,5,1)/41
+PASS: response-exact-covariance the exact Hessian/covariance matrix has the displayed rational entries
+PASS: response-positive-definite all three exact leading principal minors are positive with numerators 180, 32144, and 860672
+PASS: response-variance-identity every tested rational linear combination has nonnegative variance from the covariance form
+PASS: construction-source-surface the source states the cross-ratio, edge coefficient, line comparison, response, and both candidate clauses
+PASS: boundary-source-surface the source preserves governance, percentage, alternative-carrier, steelman, and global-negative limits
+PASS: machine-status-contract the source carries the bounded upstream-support trace contract
+PASS: canonical-nonmutation pair-resource, log-law action, and source-coordinate wording is absent from the canonical memo
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, accepted steelman, and broad-negative rejection are visible
+per_element: two Record content weights, one site coefficient, one edge coefficient, and three response coordinates are checked
+per_site: arbitrary site-dependent additive weights have zero pair curl; uniform cubic site terms and code swap are separated
+per_mode: content-only readout, site-plus-edge statistical action, enlarged-content/pair-resource alternatives, and source response are distinct
+per_block: compatible law -> cross-ratio -> unique pair resource -> one-line nonidentity -> covariance response is checked
+lattice_wide: the six-regular periodic cubic identity and all 24 proper rotations are checked; physical source licensing, stress conservation, metric response, gravity, dynamics, and history are not executed
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

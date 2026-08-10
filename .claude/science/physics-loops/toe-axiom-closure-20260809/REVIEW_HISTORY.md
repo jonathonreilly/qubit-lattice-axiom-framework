@@ -523,3 +523,27 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   as `735ad6e618`, pushed the dedicated branch, and opened mergeable stacked PR
   #6076 on the exact #6075 head. Hard landing order is #6063, #6065, #6067,
   #6070, #6071, #6074, #6075, then #6076.
+
+## Block 9 direct-review record
+
+- Prior-art search found Cycle 698 already owns the conditional range-one pair
+  shape, while Cycle 871 owns the declared additive action parameter count and
+  explicitly denies implication from equal dimensions. Neither supplies the
+  Block 8 coefficient or a physical bridge.
+- Recent PRs #6043--#6048 classify finite carrier/cutting geometry but supply
+  no M2 source/action, stress tensor, metric coupling, or conflicting theorem.
+- The binary content-only additive readout has zero pair mixed difference and
+  unit cross-ratio; the compatible action has exact edge coefficient `-log B`
+  and ratio `B`.
+- Boolean inclusion-exclusion uniquely recovers site and unordered-edge terms,
+  with every nonedge and higher interaction coefficient zero.
+- The code-symmetric interacting line and strictly additive line are each
+  one-dimensional but have trivial intersection, supplying the missing
+  implication map rather than equating parameter counts.
+- The finite site/edge response is exactly a covariance Hessian. The rational
+  fixture has positive principal numerators 180, 32144, and 860672; it is not
+  called a stress tensor or gravity.
+- The primary runner passes 30 checks with 4,736 characters of stdout. An
+  independent SymPy recomputation agrees. The two axiom clauses are
+  hypothetical only. Mutation, graph, conformance, and delivery checks remain
+  pending; no canonical edit, percentage move, or `review-loop` occurs.

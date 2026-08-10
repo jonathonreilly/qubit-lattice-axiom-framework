@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 9
-science_block: 8
-branch: physics-loop/toe-axiom-closure-block08-20260810
+cycle: 10
+science_block: 9
+branch: physics-loop/toe-axiom-closure-block09-20260810
 base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-worktree: /private/tmp/toe-axiom-block08.uG4cDV/worktree
+worktree: /private/tmp/toe-axiom-block09.xZkZgw/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now testing whether sitewise Admissibility distributions compose into one compatible joint law and whether compatibility derives an action on a cubic binary sector
-active_route: exact finite binary square-curl compatibility theorem plus cubic count-only affine-logit and Ising-action classification
-hard_residual: choose or derive full-conditional compatibility versus an ordered update process, extend the selected physical law beyond the finite binary sector, and identify any derived statistical action with physical source/tensor response; Born functional/program selection and realized histories remain separately open
-target_contract_status: complete_finite_binary_compatibility_and_cubic_count_action_axiom_boundary
+goal: maximize honest TOE closure from the current axiom surface, now composing the compatible binary action with Record readout, pair-resource, and physical source/tensor obligations
+active_route: exact content-only readout versus edge-action cross-ratio, unique Boolean pair coefficient, one-line implication map, and finite site/edge covariance response
+hard_residual: independently license the statistical log-law and its action unit as a physical source action, derive conserved stress/tensor indices and metric/curvature coupling, and extend compatibility beyond the finite binary sector; Born functional/program selection and realized histories remain separately open
+target_contract_status: complete_binary_readout_pair_action_resource_response_axiom_boundary
 A_min:
   - Lattice
   - Qubit
@@ -50,6 +50,9 @@ block_local_allowed_premises:
   - the central binary code {-I_2,+I_2} as an explicit mathematical subalphabet of M_2(C)
   - proper-cubic neighbor permutations and count-only conditional rules
   - finite-region normalized weights and their derived statistical action as conditional mathematical objects
+  - finite Boolean mixed differences, multiplicative cross-ratios, and inclusion-exclusion coefficients
+  - finite log-partition differentiation and exact covariance matrices
+  - six-regular periodic cubic graphs for the code-swap comparison
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -66,6 +69,8 @@ forbidden_imports:
   - a formation/update order, scheduler, rate, causal dynamics, or realized history
   - physical selection of the binary code or its code-swap symmetry
   - identification of the derived finite statistical action with gravity, curvature, stress, or Newton coupling
+  - identification of the statistical action with the content-only Record readout or a physical source action
+  - physical licensing of a pair resource, action unit, source coordinate, conserved stress tensor, or metric response
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -93,6 +98,9 @@ files_touched:
   - docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_2026_08_10.py
   - logs/runner-cache/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_2026_08_10.txt
+  - docs/ADMISSIBILITY_ISING_ACTION_RECORD_READOUT_PAIR_RESOURCE_RESPONSE_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -116,6 +124,9 @@ open_imports:
   - current axioms do not choose between static full-conditional semantics and an ordered update-kernel semantics
   - finite-region compatibility does not itself supply projective consistency across regions, infinite-volume selection, dynamics, or one realized member
   - the exact binary statistical action is not identified with a gravitational source/action, curvature carrier, tensor response, coupling, or scale
+  - the fixed two-symbol content-only additive Record readout has no pair curl and therefore is not the nontrivial compatible edge action
+  - the exact pair coefficient -log B remains statistical until a source/action license and action unit are supplied
+  - the site/edge covariance response has sufficient-statistic indices, not a derived conserved stress tensor or spacetime metric response
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
@@ -127,6 +138,7 @@ no_go_routes:
   - conditioned_cnot_covariance_as_unique_compiler_selector
   - fixed_bounded_content_decoder_for_gaussian_open_center_family
   - local_normalization_covariance_and_code_swap_as_static_full_conditional_compatibility
+  - binary_content_only_additive_readout_as_nontrivial_compatible_pair_action
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -162,18 +174,22 @@ approach_family_coverage:
   finite_binary_statistical_action: exact_nearest_neighbor_ising_type_form_for_compatible_count_rules
   symmetric_hostile_local_rule: exact_all_24_covariant_full_support_on_code_witness_with_paths_one_fourteenth_and_one_ninth
   full_conditional_versus_update_kernel_semantics: explicitly_separated_with_update_route_live
-strongest_unresolved_proof_obligation: derive or adopt one global compatibility/update semantics for the physical Admissibility law, then prove its finite/infinite history consistency and physical source/tensor identification; independently derive the Born positive-functional/program quotient and formation/history structure
+  binary_content_additive_readout_pair_curl: exact_zero_versus_edge_minus_log_b_separation
+  boolean_pair_resource_decomposition: exact_unique_site_plus_unordered_edge_coefficients
+  code_symmetric_vs_additive_one_scalar_lines: exact_trivial_intersection
+  finite_site_edge_response: exact_expectation_and_positive_semidefinite_covariance_hessian
+strongest_unresolved_proof_obligation: derive or adopt a physical log-law source/action license and action unit, then construct a conserved stress/tensor carrier and metric/curvature response; independently extend the physical Admissibility law beyond the finite binary sector and derive Born/program/history selection
 trace_gate_classification: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: exact finite positive binary square-curl equivalence, unique joint-law reconstruction, cubic count-only geometric-odds classification, derived finite Ising-type action, and exact covariant hostile witness; continuous M2, dynamics, history, and gravity identification remain open
-hypothetical_axiom_status: one sufficient Admissibility addition makes the sitewise distributions one-site full conditionals of a covariant, projectively consistent family of finite-region joint laws; update-kernel semantics remains a live alternative; no axiom edit authorized
-review_disposition: block08_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: open_6076_stacked_on_open_6075
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6076
+conditional_surface_status: exact binary content-only readout/action cross-ratio separation, unique site-plus-edge coefficient recovery, trivial one-line intersection, and finite positive covariance response; physical source/action licensing, action unit, stress tensor, metric coupling, continuous M2, dynamics, history, and gravity remain open
+hypothetical_axiom_status: a weak pair-resource clause carries the interaction and a stronger log-law clause with one registered action unit identifies a physical source action; neither is adopted or edited
+review_disposition: block09_direct_self_review_in_progress
+pr_status: local_block09_not_yet_open
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -200,5 +216,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: search current-main and open PRs for the strongest physical source/tensor bridge applicable to the derived binary statistical action, then construct an exact test that cannot identify gravity by name alone
+next_exact_action: complete Block 9 mutation sensitivity, graph/harness registration, direct conformance, and stacked PR delivery; then test the highest-value conserved stress/tensor or continuous-M2 route without relabeling covariance as gravity
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

@@ -181,3 +181,26 @@ preparation/effect quotient.
 | continuous full-M2 specification | general regular conditional measures | not covered by the binary theorem | rank next only with physical candidate |
 | compatible-law axiom addition | sitewise laws are full conditionals of a covariant, projectively consistent family of finite-region laws | sufficient global typing | governance fallback; no edit |
 | gravity identification | call the derived statistical action source/curvature | unsupported by compatibility alone | forbid until tensor/source theorem |
+
+## Block 9 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| binary content-only additive readout | `C+dN` | zero pair curl / unit cross-ratio | cannot equal nontrivial `B != 1` action |
+| unordered nearest-neighbor pair resource | `uN+vE` | exact unique completion with `v=-log B` | positive statistical carrier; physical license open |
+| enlarged M2 content label | store neighbor/action share in each Record | remains mathematically live | preserve; selection and consistency required |
+| separated-additivity reading | permit contact defect | Cycle 698 route remains live | preserve; canonical meaning not decided here |
+| auxiliary field | linearize pair interaction on enlarged carrier | remains live | preserve; imports field and measure |
+| log-law source/action clause | `S_phys=s_*[-log pi]+C` | sufficient physical identification by premise | governance fallback; no edit |
+| site/edge source response | gradient/Hessian of `log Z` | exact means and covariance | positive susceptibility, not stress/gravity |
+| tensor/metric identification | relabel covariance indices as spacetime | unsupported | forbid without conservation and coupling theorem |
+
+## Block 9 live PR sweep
+
+At the Block 9 boundary, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`. PRs #6043--#6048 concern exact
+carrier/cutting censuses, intrinsic shapes, distances, and count variances.
+They do not supply an M2 source/action identification, stress tensor, metric
+response, or physical coupling. PRs #6072 and #6073 remain semantic-map and
+cell-cutting work. None collides with the cross-ratio, pair-coefficient, or
+response theorem. PR #6061 still owns the dependency-policy epoch repair.

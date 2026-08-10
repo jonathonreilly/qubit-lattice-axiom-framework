@@ -271,6 +271,39 @@ canonical axiom is edited.
 The physical binary code, continuous M2 extension, dynamics, histories, and
 gravity source/tensor identification remain open, so no TOE percentage moves.
 
+## Block 9 Target And Disposition
+
+Block 9 composes the derived binary action with the current Record scalar. It
+tests whether the action is already the content-only additive readout, whether
+the pair carrier left open by Cycle 698 gains an exact coefficient, and what
+source response exists before any stress/metric identification.
+
+Every readout fixed by the two declared contents and additive over distinct
+Records is `C+dN`, hence has zero pair mixed difference and unit
+multiplicative cross-ratio. The compatible action `uN+vE` has edge mixed
+difference `v=-log B` and cross-ratio `B`. For `B != 1`, no affine calibration
+of the binary content-only readout equals that action.
+
+Boolean inclusion-exclusion supplies the unique completion: site coefficient
+`-log A`, one unordered nearest-neighbor pair coefficient `-log B`, zero
+nonedge and higher coefficients. On a finite periodic six-regular cubic
+quotient, code swap makes the interacting family `v(E-3N)`. It and the
+strictly additive line `kappa N`
+are both one-dimensional but meet only at zero. This provides the implication
+map that parameter counting alone lacked.
+
+Varying supplied site/edge couplings gives exact expectation and covariance
+response. The `A=1/8,B=2` fixture has mean `(5,5,1)/41` and a positive-definite
+rational response matrix. This is statistical susceptibility, not a physical
+source or stress tensor.
+
+The weak hypothetical clause adds a count-once unordered pair resource. The
+stronger clause identifies the physical source action with one fixed action
+unit times `-log pi` and registers site/edge variations as source coordinates.
+Neither is adopted. Stress conservation, tensor indices, metric/curvature
+response, coupling, scale, dynamics, and history remain open, so no TOE
+percentage moves.
+
 ## Trace target
 
 The landed source states:

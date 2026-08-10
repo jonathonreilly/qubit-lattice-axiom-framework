@@ -1,12 +1,12 @@
 ---
 trace_class: upstream_support
-target_claim_id: admissibility_local_to_global_compatibility_and_action_bridge
-target_blocker_text: "decide whether sitewise nearest-neighbor probability distributions are compatible conditionals of one global law, and identify the exact axiom-side obligation if they are not"
+target_claim_id: admissibility_statistical_action_to_physical_source_tensor_bridge
+target_blocker_text: "identify whether the compatible binary statistical action is the additive Record readout, a separate pair resource, or a physical source action, and determine what tensor/metric bridge is still missing"
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: theorem
 campaign_native_target_reachability: advances
-next_trace_action: "Test whether the selected physical M2 law supplies a compatible finite/infinite specification or an ordered update process, then test whether its derived statistical action has a physical source/tensor response rather than identifying it by name."
+next_trace_action: "Test a supplied physical M2 Admissibility law for an independently licensed site/edge source coordinate and conserved tensor response; do not rename statistical covariance as stress-energy."
 ---
 
 Block 1 closes the named low-arity mathematical frontier at standard-theorem
@@ -85,3 +85,19 @@ consistency are open, one realized history is not selected, and the
 statistical action is not identified with gravity, curvature, stress, or a
 physical coupling. The candidate compatibility wording is hypothetical and
 no percentage moves.
+
+Block 9 composes the action with the current Record readout and source/resource
+boundaries. On the fixed binary content, every content-only additive scalar is
+one-body and has zero pair curl / unit cross-ratio. The compatible action has
+edge curl `-log B` / cross-ratio `B`, so the nontrivial action is not an affine
+calibration of that readout. Boolean inclusion-exclusion uniquely recovers one
+site term and one count-once unordered edge term. Code swap reduces the
+interacting action to one scalar, but that line intersects the one-scalar
+strictly additive action line only at zero.
+
+Supplied site/edge coupling variations give exact expectations and a
+positive-semidefinite covariance Hessian. This advances the resource/response
+trace without closing it: pair-resource licensing, physical `-log pi`
+identification, action unit, conserved stress/tensor indices, metric/curvature
+coupling, dynamics, and realized history remain open. The two candidate axiom
+clauses are hypothetical, and no percentage moves.

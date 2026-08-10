@@ -138,3 +138,22 @@ Block 8 packages a stacked bounded theorem only if it contains all of:
    calling the statistical action gravity;
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 9
+
+Block 9 packages a stacked bounded theorem only if it contains all of:
+
+1. an exact classification of the declared binary content-only additive
+   Record readout and its zero pair mixed difference / unit cross-ratio;
+2. an exact comparison with the Block 8 action, including edge/nonedge curl
+   and a rational `B=2` witness;
+3. the unique Boolean site-plus-edge decomposition and exact conditional pair
+   coefficient `-log B`;
+4. an implication map proving that the code-symmetric interacting one-scalar
+   family and Cycle 871 additive one-scalar family intersect only at zero;
+5. an exact finite site/edge expectation-covariance response theorem and
+   positive rational fixture, without calling susceptibility a stress tensor;
+6. separate hypothetical pair-resource and physical log-law source/action
+   clauses, with a complete N1--N8 gate and no canonical edit; and
+7. an exact runner/cache, independent symbolic recomputation, mutation
+   sensitivity, harness/graph registration, and direct conformance review.

@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "input_distribution_dependence_law_cycle975_bounded_theorem_note_2026-08-10": [
+        "scripts/frontier_cycle975_input_distribution_independent_check_2026_08_10.py",
+    ],
     # Cycle 973's sibling checker independently reconstructs the pinned
     # 26-blob catalog and attacks the manual semantic map without importing
     # the primary runner.

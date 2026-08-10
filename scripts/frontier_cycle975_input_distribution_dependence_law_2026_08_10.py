@@ -597,13 +597,16 @@ def main() -> int:
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
     report = {
         "artifact": "input_distribution_dependence_law",
-        "author_status": "proposed_retained",
         "target_claim_type": "bounded_theorem",
         "claim_type_reason": "exact finite theorem on a declared radius-one, word-length-at-most-one basis-state family",
         "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure",
         "reachability_to_target": "closes",
         "conditional_surface_status": "exact on the declared radius-one, word-length-at-most-one basis-state family",
+        "hypothetical_axiom_status": None,
+        "admitted_observation_status": None,
+        "audit_required_before_effective_retained": True,
+        "bare_retained_allowed": False,
         "law_formula": LAW_FORMULA,
         "marginal_identity": MARGINAL_IDENTITY,
         "findings": first,

@@ -43,8 +43,28 @@ Receipts:
 - [`input_distribution_dependence_law_cycle975_receipt_2026_08_10.json`](../outputs/input_distribution_dependence_law_cycle975_receipt_2026_08_10.json)
 - [`input_distribution_dependence_law_cycle975_independent_check_receipt_2026_08_10.json`](../outputs/input_distribution_dependence_law_cycle975_independent_check_receipt_2026_08_10.json)
 
-Constitutional effect: none. No axiom, primitive, registry, policy, audit
-result, or effective-status surface is edited.
+## Review record
+
+Hard landing condition: the restricted audit packet must include the
+independent checker through this exact claim-scoped mapping, and review must
+verify that the resolver returns it before landing:
+
+```python
+EXPLICIT_PACKET_HELPER_RUNNER_PATHS[
+    "input_distribution_dependence_law_cycle975_bounded_theorem_note_2026-08-10"
+] = [
+    "scripts/frontier_cycle975_input_distribution_independent_check_2026_08_10.py",
+]
+```
+
+The mapping is landed in
+[`build_citation_graph.py`](audit/scripts/build_citation_graph.py); omission is
+a hard failure, not a deferred PR-body request.
+
+Constitutional effect: none. No axiom, primitive, premise classification,
+audit result, or effective-status surface is edited. The sole control-plane
+edit is the claim-scoped packet-helper mapping required to expose the
+independent checker to the restricted audit packet.
 
 ## Exact gate family, input family, and caps
 
@@ -227,13 +247,25 @@ The singleton zero set is a negative boundary only inside the declared
 family. It is not an exhaustion result for other input interventions, longer
 gate words, larger gate kinds, or the full possibility domain.
 
-- **N1 — alternative routes:** five distinct enlargements remain live and
-  untested by the negative boundary: (1) length-two or longer words; (2) a
-  target law chosen conditionally on the compared neighbour bit; (3) a joint
-  target-neighbour input with correlations; (4) additional landed gate kinds,
-  including larger-arity words; and (5) probability measures and channels on
-  the full continuous `M_2(C)` domain. The theorem excludes rather than
-  refutes every route in this list.
+- **N1 — alternative routes:** the attack target is the narrow assertion that
+  some declared word or input law might contradict the singleton zero set.
+  The five normalized gate-mechanism routes below exhaust the declared word
+  family; each was `ATTEMPTED` by the
+  [`primary runner`](../scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py)
+  using the landed [`Cycle-719 core`](../scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py).
+
+| Route | Attempt | Why it does not refute the declared boundary | Honesty marker | Authority/evidence |
+|---|---|---|---|---|
+| Empty word | Seek hidden neighbour dependence with no gate | `y=x`, so every neighbour difference polynomial is identically zero | `ATTEMPTED` | landed Cycle-719 `apply_semantic`; primary full census |
+| Target `X` | Seek a second marginal zero from the complemented target permutation | `y=x XOR 1` is neighbour-independent for every `p` | `ATTEMPTED` | landed Cycle-719 `X`; primary full census |
+| Neighbour `X` | Seek target dependence through a one-site neighbour mutation | the target remains `y=x`; all six neighbour-`X` words are identically independent | `ATTEMPTED` | landed Cycle-719 `X`; primary full census |
+| Outgoing `CNOT(a->a+d)` | Seek target dependence when the target controls its neighbour | CNOT preserves its control, so the target remains `y=x` | `ATTEMPTED` | landed Cycle-719 `CNOT`; primary full census |
+| Incoming `CNOT(a+d->a)` | Seek another root or a failure of the XOR marginal identity | exact truth rows give differences `(-1+2p,1-2p)`, whose sole `[0,1]` root is `p=1/2`, for all six directions and 32 spectator contexts | `ATTEMPTED` | landed Cycle-719 `CNOT`; primary plus independent checker |
+
+  Five broader enlargements remain live rather than ruled out: longer words,
+  neighbour-conditioned target laws, correlated joint inputs, additional
+  gate kinds, and measures/channels on full `M_2(C)`. They are outside the
+  negative claim and therefore are not misreported as failed N1 routes.
 - **N2 — wall independence:** no collection of independent derivation walls
   is claimed. Radius one, word length at most one, the `{0,1}` basis, and a
   common branch-independent `mu_p` are declared scope coordinates, not an
@@ -241,10 +273,18 @@ gate words, larger gate kinds, or the full possibility domain.
 - **N3 — hidden-wall scan:** the finite basis selector and common-law
   intervention are load-bearing and are listed separately in the import
   table. No observation, fitted value, or primitive registration is hidden.
-- **N4 — residual matching:** the zero-set statement answers only the user
-  residual “which common target-bit input laws erase the incoming-CNOT XOR
-  after marginalization?” Cycle 970 and Cycle 972 are provenance, not
-  negative-premise imports.
+- **N4 — residual matching:** the zero-set statement answers only “which
+  common target-bit input laws erase the incoming-CNOT XOR after
+  marginalization?” The provenance residuals are checked rather than counted
+  as no-go witnesses:
+
+| Cited provenance | Residual attacked there | Current residual | Match? | Disposition |
+|---|---|---|---|---|
+| `6fd0de0a:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md` | existence of a fixed-`x=0` state-resolved witness | boundary over every common `mu_p` | no | provenance only; zero witness weight |
+| `3826925e:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md` | covariance/uniqueness of XOR and the uniform `p=1/2` marginal | full one-parameter zero set and strength | partial only at `p=1/2` | provenance only; zero witness weight for the general law |
+
+  The current boundary therefore stands on its new exhaustive affine check,
+  not on residual-mismatched prior conclusions.
 - **N5 — resolution rhetoric:** the primary cache lands the following
   execution certificate verbatim:
 
@@ -259,16 +299,29 @@ lattice_wide: checked and not executed -- this runner claims one target-centred 
 - **N6 — partial-closure routes:** the present affine law is complete on its
   declared family. Any broader route requires a separately declared theorem
   family; it does not require or justify a new axiom merely to be investigated.
-- **N7 — steelman:** a condition-dependent intervention with
-  `P(X=0|n_d=0)=p_0` and `P(X=0|n_d=1)=p_1` has equal output marginals when
-  `p_0=1-p_1`, a different one-parameter zero set. Likewise, an excluded
-  length-two word can send the target to `y=n_d`, making uniform averaging
-  visible. These are genuine counter-routes to any broader claim and are why
-  the common-law and word-length caps are explicit.
-- **N8 — cross-cycle echo:** Cycle 970 supplied the delta endpoint `p=1` and
-  Cycle 972 supplied the uniform midpoint `p=1/2`; this result interpolates
-  between them by exact affine algebra. It does not repeat their bounded
-  conclusions as evidence for an all-domain no-go.
+- **N7 — steelman:** *A hostile reviewer should reject any claim that the
+  uniform law is the unique physically invisible input without first allowing
+  the target law itself to respond to the neighbour, because the
+  [`Admissibility axiom`](MINIMAL_AXIOMS_2026-06-29.md) explicitly makes local
+  probability distributions neighbour-conditioned. With
+  `P(X=0|n_d=0)=p_0` and `P(X=0|n_d=1)=p_1`, the two output marginals are equal
+  on the actionable line `p_0=1-p_1`, not only at one point; an excluded
+  length-two word can also send the target to `y=n_d` and make uniform input
+  visible. The terminal obligation for a broader result is therefore a
+  two-branch/joint-input and longer-word classification.* This steelman is
+  convincing against the broad reading, so that reading is explicitly not
+  shipped. It does not break the declared common-`mu_p`, length-at-most-one
+  theorem, where the five N1 routes are exhausted.
+- **N8 — cross-cycle echo:** the targeted repository/provenance search used
+  `fixed input`, `uniform marginal`, `XOR`, `requires new axiom`, and
+  `cannot be derived from A_min`. The only residual-matched predecessors are
+  the pinned Cycle-970 and Cycle-972 objects in N4. Cycle 970's fixed-input
+  premise was retired by enlarging `{delta_0}` to both state rows; Cycle 972's
+  uniform-only marginal was retired by enlarging `{mu_(1/2)}` to the full
+  common-law simplex. The same retirement mechanism—enlarge the declared
+  input family—would produce the two-branch/joint-input route named by the N7
+  steelman, so this note leaves it open rather than declaring a broader wall.
+  No similar prior “new axiom required” wall is invoked or inherited here.
 
 Disposition: PASS for the narrowly scoped negative boundary. No route outside
 the declared family is ruled out.
@@ -289,7 +342,6 @@ next_trace_action: "independently audit the bounded theorem; do not extrapolate 
 
 ```yaml
 actual_current_surface_status: bounded-support
-author_status: proposed_retained
 target_claim_type: bounded_theorem
 claim_type_reason: "exact finite theorem on a declared radius-one, word-length-at-most-one basis-state family"
 trace_class: direct_blocker_closure
@@ -299,6 +351,7 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 audit_status_authority: "independent audit lane only"
+bare_retained_allowed: false
 ```
 
 ## Verdict

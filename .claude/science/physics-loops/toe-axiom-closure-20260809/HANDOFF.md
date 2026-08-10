@@ -982,3 +982,8 @@ classifications. A clean disposable overlay of current-main commit
 `39c74017b8` adds exactly five governance files and passes all 18 stages.
 Changed-evidence readiness finds Block 20 alone and all 20 stacked claims
 forensic-ready with no failures or control failures.
+
+Delivery is PR #6091, mergeable and `CLEAN` on exact Block-19 delivery head
+`cc027507f96222006ab99af353ca555da130042d`. Science commit is `4f06880082`;
+conformance is `ebde69de32`. Hard landing order is #6088, #6089, #6090, then
+#6091. Independent audit remains required.

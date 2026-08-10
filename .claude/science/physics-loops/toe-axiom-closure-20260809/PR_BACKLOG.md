@@ -280,8 +280,10 @@ runner-copy mutations, and a `5,466`-node / `15,593`-edge citation graph whose
 new node has out-degree eight. Science commit is `4f06880082`; conformance
 passes the exact-base/controlled-overlay pipeline separation, and changed-
 evidence readiness is clean for Block 20 alone and all 20 stacked claims.
-Conformance recording, push, and stacked PR remain. Canonical axioms
-and fixed percentages are untouched, and no `review-loop` is used.
+Science commit is `4f06880082`; conformance is `ebde69de32`. PR #6091 is
+mergeable and `CLEAN` on exact Block-19 delivery head `cc027507f9`. Hard
+landing order adds #6091 after #6090, #6089, and #6088. Canonical axioms and
+fixed percentages are untouched, and no `review-loop` is used.
 
 Block 16 is being packaged on branch
 `physics-loop/toe-axiom-closure-block16-network-20260810`, based on exact

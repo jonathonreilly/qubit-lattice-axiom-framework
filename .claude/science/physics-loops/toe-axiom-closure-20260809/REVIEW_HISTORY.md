@@ -1233,3 +1233,6 @@ instance or Fourier census.
   claims are forensic-ready with no failures or control failures.
 - No `review-loop` or audit verdict application was used. Independent audit
   remains required.
+- Conformance commit is `ebde69de32`. PR #6091 is mergeable and `CLEAN` on
+  exact Block-19 delivery head `cc027507f96222006ab99af353ca555da130042d`.
+  Hard landing order adds #6091 after #6090, #6089, and #6088.

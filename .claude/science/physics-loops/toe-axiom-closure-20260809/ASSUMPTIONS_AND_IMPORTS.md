@@ -518,3 +518,19 @@ depend on geometry and the named source tangent. No locality, covariance,
 cellwise gluing, global integrability, one joint source coordinate, physical
 representative selection, Lorentzian law, external science, canonical edit,
 percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 26 Assumptions And Imports
+
+Block 26 imports the finite strictly positive normalized-family definition,
+the exact Block-25 common-shift theorem, the retained finite coframe cut action,
+and the current Record/readout boundary. Logarithms, probability ratios,
+finite differentiation, and product-factorization algebra are allowed. The
+distinguished null configuration and the positive joint family are explicit
+conditional inputs, not consequences of current axioms.
+
+The `L=2` coframe fixture, its 256 binary configurations, the supplied
+two-form source, and the exact rational geometry path are bounded retained
+controls. No zero-support extension, family-selection law, action unit,
+locality/covariance/gluing theorem, projective limit, pure-geometry action,
+stationary nonuniform solution, Lorentzian dynamics, external science,
+canonical edit, percentage move, audit verdict, or `review-loop` is imported.

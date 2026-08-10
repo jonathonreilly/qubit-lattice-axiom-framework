@@ -1484,3 +1484,29 @@ instance or Fourier census.
   #6097 is open, mergeable, and `CLEAN`, stacked exactly on Block-24 delivery
   head `298d50332e`. Independent audit remains required. Complementary sibling
   PR #6096 is not part of this stack and requires explicit reconciliation.
+
+## Block 26 Construction Record
+
+- Proved exact uniqueness of `A_x=-log(pi_x/pi_null)` among all finite
+  strictly positive normalized-family representatives with `A_null=0`.
+- Proved exact normalized-family reconstruction, invariance of relative first
+  and second geometry derivatives, and additivity for factorized independent
+  families.
+- Checked the retained nonuniform coframe cut action on all 256 binary
+  configurations: exact null/full anchoring for the supplied source,
+  complement/log-odds equality at zero source, and persistence along an exact
+  nontrivial geometry path.
+- Reclassified Block-25's nonzero common Hessians as new joint interactions,
+  not anchored matter-action equivalences; maximum inherited completion
+  residual remains `2.037e-15`.
+- Applied N1--N8 to preserve zero-support, family-selection, unit,
+  locality/gluing, projective, pure-geometry, complete-Ward, continuous-zone,
+  and Lorentzian routes.
+- Primary source/input-pinned cache is `PASS=14 FAIL=0` in `14.4 s`.
+- Fourteen isolated fresh-process forced failures each exit nonzero at exactly
+  one intended named check; aggregate result is `PASS=14 FAIL=0`.
+- Citation registration is `5,472` nodes / `15,624` edges; the new node has
+  out-degree four and fourteen resolved helper runners.
+- Direct conformance passes; exact-stack/controlled-overlay pipelines, changed
+  evidence, commits, push, and independent audit remain pending. No canonical
+  axiom, fixed percentage, audit verdict, or `review-loop` is changed.

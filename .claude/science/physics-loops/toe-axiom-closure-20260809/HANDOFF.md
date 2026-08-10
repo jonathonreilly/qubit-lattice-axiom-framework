@@ -1161,3 +1161,30 @@ Block-23 delivery head `3c781e0585`. The next law must derive connected covarian
 site-dependent contact, additive normalization, and the generator connection
 on one nonuniform background. No canonical edit, percentage move, audit
 verdict, or `review-loop` occurs.
+
+## Block 26 Null-Record Action-Anchor Handoff
+
+The normalized-family ambiguity now has an exact minimal repair. Once a
+finite strictly positive joint Record family and distinguished null
+configuration are registered, `A_x=-log(pi_x/pi_null)` is the unique
+dimensionless matter/source action with `A_null=0`. It reconstructs every
+probability, removes the complete common-shift freedom, fixes relative
+geometry derivatives, and adds for factorized independent families.
+
+The retained nonuniform coframe cut family realizes the anchor exactly. Empty
+and full configurations have zero action for the supplied two-form source;
+all 256 finite configurations satisfy complement/log-odds equality at zero
+source, and the null anchor persists along the exact geometry path. The
+nonzero Block-25 completions therefore remain algebraic controls but become
+new joint interactions rather than normalization equivalences.
+
+Primary cache is `PASS=14 FAIL=0` in `14.4 s`; fourteen isolated fresh-process
+forced failures each trip exactly one intended check. The graph is
+`5,472/15,624`, with out-degree four and fourteen resolved helpers. Direct
+conformance passes; exact-stack and controlled-overlay pipelines remain. The exact residual is
+not "gravity is impossible": current axioms do not register the joint family,
+equate Record readout with action, fix the action unit, or supply the separate
+pure-geometry action/causal update. Those are now the highest-priority axiom
+or downstream-law decisions. PR #6096's proper-length source result remains a
+complementary sibling to reconcile after this linear stack. No canonical edit,
+percentage move, audit verdict, or `review-loop` occurs.

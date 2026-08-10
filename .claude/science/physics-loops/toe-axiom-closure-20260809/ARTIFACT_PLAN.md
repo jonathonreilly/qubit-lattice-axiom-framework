@@ -524,3 +524,24 @@ complete conditional nonlinear compact solution:
   controlled five-file overlay passes all 18 stages at checkpoint
   `b7f009c19958`; changed evidence is clean for `1/1` Block-25 and `25/25`
   stacked claims; commits and delivery pending
+
+## Block 26 — Null-Record Log-Odds Action Anchor
+
+- theorem note:
+  `docs/ADMISSIBILITY_NULL_RECORD_LOG_ODDS_ACTION_REPRESENTATIVE_ANCHOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_null_record_log_odds_action_representative_anchor_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: exact finite positive-family representative uniqueness,
+  normalized-family reconstruction, relative geometry-derivative invariance,
+  independent-product additivity, exact retained coframe cut realization,
+  Block-25 completion reclassification, N1--N8, and a typed unadopted
+  source/action plus pure-geometry amendment interface
+- exclusions: physical joint-family or null-state selection, zero-probability
+  sectors, action-unit derivation, locality/covariance/gluing, projective
+  consistency, pure-geometry dynamics, complete stationary Ward response,
+  continuous-zone/Lorentzian closure, canonical edits, percentage movement,
+  audit verdicts, and `review-loop`
+- construction evidence: primary cache `PASS=14 FAIL=0` in `14.4 s`; fourteen
+  isolated fresh-process forced failures each trip exactly one named check;
+  graph `5,472/15,624`, out-degree four, with fourteen resolved helpers;
+  direct gates pass; exact-stack and controlled-overlay pipelines are pending

@@ -876,3 +876,32 @@ covariant joint action/equivalence class whose allowed shifts, unit,
 source/constraint transformations, global integrability, and complete Ward
 tensor are derived before continuous-zone and Lorentzian stability. Canonical
 axioms and fixed percentages remain unchanged.
+
+## Block 26 Target And Disposition
+
+Block 26 attacks that representative-selection wall with the weakest exact
+candidate repair. For a finite strictly positive normalized configuration
+family with a distinguished null configuration, it asks whether the condition
+`A_null(g)=0` uniquely fixes the dimensionless matter/source action and whether
+the retained coframe cut family actually realizes that condition.
+
+The answer is exact and positive:
+
+`A_x(g)=-log[pi_x(g)/pi_null(g)]`.
+
+This is the unique null-anchored representative, reproduces the full family,
+cancels every common geometry shift, fixes all relative geometry derivatives,
+and composes additively for independent factorized families. The retained
+cut action has empty/full action zero and passes the complete 256-configuration
+finite fixture. Block-25 common completions are consequently new interactions,
+not anchored matter-action equivalences.
+
+This repairs the mathematical ambiguity but remains conditional. Current
+Record wording gives `I(empty)=0` only for scalar readout and explicitly does
+not identify readout with action. The exact axiom/law interface is now:
+register the positive joint family and null configuration; identify the
+dimensionless matter/source action with null log odds; fix the physical action
+unit; and register the source-independent pure-geometry action or causal
+update separately. Locality, covariance, projective consistency, the complete
+stationary Ward tensor, continuous momentum, and Lorentzian nonlinear closure
+remain open. No canonical axiom or fixed percentage is changed.

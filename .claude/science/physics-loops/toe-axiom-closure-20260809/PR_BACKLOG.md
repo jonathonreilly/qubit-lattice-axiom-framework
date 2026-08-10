@@ -485,3 +485,16 @@ Block-23 and `23/23` stacked claims. Science is `c236890389`; PR #6094 is
 open, mergeable, and `CLEAN` at conformance head `66d4cc0d56`,
 stacked exactly on Block-22 delivery head `dc23e2f32f`. No `review-loop` is
 used.
+
+Block 26 is local on branch
+`physics-loop/toe-axiom-closure-block26-null-record-anchor-20260810`, stacked
+on exact Block-25 delivery head `4268fc8339`. The note and runner prove the
+unique finite positive null-log-odds action representative, its derivative
+and product properties, exact retained coframe-cut realization, and the
+reclassification of Block-25 common completions as new interactions. Primary
+cache is `PASS=14 FAIL=0` in `14.4 s`; fourteen isolated fresh-process forced
+failures pass; graph registration is `5,472/15,624` with out-degree four and
+fourteen resolved helpers. Direct conformance passes; exact-stack/overlay
+pipelines, changed evidence, commit, push, and PR delivery remain pending. PR #6096 is a
+complementary proper-length sibling requiring later explicit reconciliation.
+No `review-loop` is used.

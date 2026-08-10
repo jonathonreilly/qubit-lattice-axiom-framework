@@ -566,3 +566,19 @@ required matrices, not because a direct seagull has the wrong order or inertia.
 The key distinction is now exact: normalized Record probabilities fix relative
 weights, while absolute geometry response requires additional physical
 representative authority.
+
+## Block 26 Null-Anchor Repair Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| null-Record log-odds representative | `A_x=-log(pi_x/pi_null)`, `A_null=0` | unique for every finite strictly positive registered family; exact reconstruction and derivative invariance | retain as the minimal representative repair |
+| retained coframe cut realization | declared cut action on the nonuniform `L=2` fixture | exact null/full anchoring; all 256 zero-source complement/log-odds checks pass | retain as a concrete compatible matter/source family |
+| unrestricted Block-25 common completion | nonzero `F_s(g)` with target Hessian | violates the null anchor unless constant to the required derivative order | reclassify as a new joint interaction needing separate authority |
+| alternate reference sector | non-null reference when `pi_null=0` | not covered by the theorem | live zero-support extension |
+| registered local/projective anchored family | one covariant family across cells, backgrounds, and marginals | not derived from current axioms | highest-priority source/action law interface |
+| source-independent pure geometry | `G[g]` or a causal geometry update outside normalized matter odds | invisible to the anchored matter probabilities | independently required before a gravitational field equation |
+| complete stationary/Lorentzian response | combined action/update on a nonuniform background | not computed | physical endpoint |
+
+The conditional repair works; the remaining failure is law selection, not an
+algebraic inconsistency. Current `I(empty)=0` is a readout rule and cannot be
+silently promoted to the action anchor.

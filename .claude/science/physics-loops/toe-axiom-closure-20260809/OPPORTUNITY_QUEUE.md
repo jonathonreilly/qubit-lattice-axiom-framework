@@ -107,3 +107,13 @@ connection branches the local joint action actually realizes.
 | 3 | complete same-action Ward tensor | sum connected/contact/mixed/multiplier/connection terms from that action | representative selection precedes meaningful tensor comparison |
 | 4 | continuous Brillouin/Lorentzian closure | full quotient cancellation plus causal nonlinear spectrum | all current contact results are local Euclidean coefficient statements |
 | 5 | constituent-causal matter and Born/history selectors | one rank-one history and registered functional/program | separate root obligations remain open |
+
+## Post-Block-26 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | axiom-derived or explicitly registered anchored joint family | derive the positive Record family, distinguished null state, null-log-odds action identity, and action unit from local clauses—or isolate the minimal amendment | the representative ambiguity is repaired conditionally, but current Record readout does not authorize the repair physically |
+| 2 | separate pure-geometry action or causal update | one source-independent local geometry law combined stationarily with the anchored matter action | normalized matter probabilities cannot determine this sector even after anchoring |
+| 3 | complete nonuniform same-action Ward tensor | connected, contact, mixed/source, multiplier, and generator-connection terms on one solved background | only this comparison can decide whether the Block-23 `O(c)` defect is canceled physically |
+| 4 | continuous Brillouin and Lorentzian nonlinear closure | prove the selected quotient/update over the continuous zone and causal evolution | current evidence is finite, local, and Euclidean |
+| 5 | reconcile proper-length sibling and close independent TOE roots | serialize PR #6096's support/contact theorem, then pursue rank-one matter and Born/history selectors | complementary science must be preserved without conflating stack ancestry |

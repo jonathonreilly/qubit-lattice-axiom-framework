@@ -691,3 +691,33 @@ independent_audit_required: true
 - Governance: this is local normalized-family nonidentifiability, not an
   action-selection, locality, covariance, gravity, or axiom no-go; no
   canonical edit, percentage move, audit verdict, or `review-loop`.
+
+## Block 26 Null-Record Action-Anchor Certificate
+
+- Claim type: `bounded_theorem`.
+- Exact theorem: every finite strictly positive normalized family with a
+  distinguished null row has the unique dimensionless representative
+  `A_x=-log(pi_x/pi_null)` satisfying `A_null=0`.
+- Exact consequences: the anchored action reconstructs the whole family,
+  removes every common geometry shift, fixes all relative first and second
+  geometry derivatives, and adds under factorized independent products.
+- Retained realization: empty and full cut configurations have exact zero
+  action for the supplied nonuniform coframe and arbitrary two-form source;
+  all 256 `L=2` configurations obey complement/log-odds equality at zero
+  source, and the anchor persists on an exact nontrivial geometry path.
+- Completion boundary: Block-25 common Hessians are nonzero (minimum norm
+  `0.154893`) while completing the three quotient tensors below `2.037e-15`;
+  the anchor therefore classifies them as new joint interactions, not
+  matter-action normalization equivalences.
+- Runner/cache: source/input pinned, `PASS=14 FAIL=0` in `14.4 s`.
+- Mutation sensitivity: fourteen isolated fresh-process forced failures exit
+  nonzero at exactly one intended named check (`PASS=14 FAIL=0`).
+- Citation graph: `5,472` nodes / `15,624` edges; the new node has out-degree
+  four and fourteen resolved helper runners.
+- Governance: Record's current `I(empty)=0` readout clause is not promoted to
+  an action law. The candidate joint-family/null-anchor/action-unit and
+  separate pure-geometry clauses remain unadopted. No gravity no-go,
+  canonical edit, percentage move, audit verdict, or `review-loop`.
+- Conformance and delivery: direct gates pass; the exact-stack pipeline,
+  controlled current-main overlay, changed-evidence checks, commit, push, and
+  independent audit remain pending.

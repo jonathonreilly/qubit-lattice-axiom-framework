@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_null_record_log_odds_action_representative_anchor_boundary_2026_08_10.py
+runner_sha256: 3d0eeacebe932fec3f6986699506ccccf0d75343be767cc3581fc69cdccb68c6
+input_fingerprint_sha256: 5048c15e3f3e92165017a3899025655db407ba4484a3737e84c7c854bfb1d54d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 14.38
+status: ok
+----- stdout -----
+external_scientific_inputs: none; null-anchor uniqueness is exact finite probability algebra and the cut/source controls are repository-local
+analytic_boundary: the finite positive-family and factorized-composition theorems are exact; the Block-25 source matrices are double-precision reconstructions
+physical_boundary: the anchor does not select a joint family, action unit, pure-geometry action, source interaction, or Lorentzian update
+[PASS] source-and-axiom-boundary: Record supplies I(empty)=0 but current axioms leave source/action and dynamics outside their content
+[PASS] retained-parent-chain: Block 25 supplies the common-shift ambiguity and the retained cut family supplies an explicit representative
+[PASS] note-contract: the note states uniqueness, cut-family realization, the separate geometry action, and bounded scope
+[PASS] exact-normalized-common-shift: a configuration-independent geometry function leaves every normalized probability unchanged
+[PASS] null-log-odds-representative: A_x=-log(pi_x/pi_0)=S_x-S_0 is common-shift invariant and has A_0=0
+[PASS] unique-null-anchor: two representatives of one positive family with vanishing null row have zero common difference
+[PASS] anchored-family-reconstruction: the null-anchored log-odds action reproduces the complete normalized family
+[PASS] geometry-derivative-invariance: all first and second geometry derivatives relative to the null configuration are identifiable
+[PASS] independent-product-additivity: the null-anchored action of a factorized family is the sum of the two anchored actions
+[PASS] retained-cut-null-and-full-anchor: the empty and full configurations have zero action for a nonuniform coframe and arbitrary supplied two-form source
+       empty/full actions=(Fraction(0, 1), Fraction(0, 1))
+[PASS] retained-cut-complement-and-log-odds: at zero two-form source the exact cut action is complement symmetric and already equals its null-anchored representative
+       configurations checked=256
+[PASS] anchor-persists-across-geometry: the cut null/full anchors persist along a nontrivial exact coframe path while a sourced configuration responds
+       singleton path actions=[Fraction(182, 55), Fraction(42, 11), Fraction(238, 55)]
+[PASS] block25-common-completion-is-not-anchored-equivalence: the Block-25 common completions are nonzero and exact, so the null anchor reclassifies them as new joint interactions
+       minimum shift norm=0.154893; maximum completion residual=2.037e-15
+[PASS] bounded-theorem-and-next-law: the anchor fixes only the matter/source representative and leaves family selection, geometry action, unit, projective limit, and Lorentzian closure open
+N5_CERTIFICATE: resolution=the finite positive normalized-family common shift is fixed uniquely by the null matter-action anchor
+N5_CERTIFICATE: retained_realization=the nonuniform coframe cut family is exactly empty/full anchored and recovered from null log odds
+N5_CERTIFICATE: completion_boundary=Block-25 nonzero common Hessians become new joint interactions rather than normalization equivalences
+N5_CERTIFICATE: live_routes=joint-family selection, allowed anchored counterterms, pure geometry, projective consistency, source transformations, and causal updates remain open
+N5_CERTIFICATE: axiom_boundary=Record I(empty)=0 is not a source/action identity, action unit, or geometry law
+per_element: checked every symbolic family row, every factorized product row, and all 256 binary configurations of the exact L=2 cut fixture
+per_mode: checked every entry of the three Block-25 fifteen-edge completion tensors and their six-mode projections
+per_block: checked normalized-family algebra, null-anchor uniqueness, exact cut realization, and source/geometry separation
+lattice_wide: checked and not executed — no projective-limit, continuous-zone, Lorentzian, or nonlinear theorem is claimed
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

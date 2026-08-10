@@ -182,3 +182,14 @@ calculation to the omitted tensor directions.
 The strongest steelman is accepted: admissible counterterms may be restricted
 by locality, covariance, gluing, and global consistency. Those restrictions
 must be part of the selected physical law before geometry variation.
+
+## Block 26 Null-Anchor Repair Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| a distinguished null configuration uniquely fixes the action representative of a finite strictly positive normalized family | exact probability-ratio theorem, derivative invariance, product additivity, and full 256-configuration retained cut realization | pass only after the positive family and null state are supplied; the current readout clause is not an action identity | do not infer that current axioms select the family, that zero-support sectors are covered, or that pure geometry, gravity dynamics, locality, projective consistency, or Lorentzian closure follows | derive/register the joint family and null anchor; fix the unit; add a separately selected pure-geometry action/update; compute the complete stationary Ward tensor |
+
+The repair defeats a broad "normalization makes gravity impossible" claim.
+It also blocks the opposite overclaim that any probability-preserving common
+shift is a physical equivalence: after anchoring, a nonzero common Hessian is
+a new source/geometry interaction and requires independent law authority.

@@ -450,3 +450,18 @@ remains `upstream_support`: connected covariance, site-dependent contact,
 geometry-dependent normalization, and the complete generator connection are
 untested. Candidate wording is unadopted; percentages and canonical axioms
 remain unchanged. No `review-loop` is used.
+
+Block 26 repairs the normalized-family representative ambiguity conditionally.
+For every finite strictly positive registered family with a distinguished null
+configuration, null log odds give the unique dimensionless action with zero
+null row. The retained coframe cut family realizes that anchor exactly, so
+relative matter/source geometry response is no longer arbitrary once the
+registration premise is supplied.
+
+Reachability remains `upstream_support`, not direct TOE closure. Current
+Record wording does not register the family, identify readout with action,
+fix the physical action unit, or provide the separate source-independent
+pure-geometry action/update. Local/projective consistency, the complete
+stationary nonuniform Ward tensor, continuous momentum, and Lorentzian
+nonlinear stability remain open. Candidate wording is unadopted; percentages
+and canonical axioms remain unchanged. No `review-loop` is used.

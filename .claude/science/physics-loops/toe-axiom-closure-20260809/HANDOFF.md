@@ -384,3 +384,38 @@ The 18-file science delta is commit `ddef3817b2` and is open as stacked PR
 #6077 on the exact #6076 head. Hard landing order is #6063, #6065, #6067,
 #6070, #6071, #6074, #6075, #6076, then #6077. No canonical axiom is edited,
 no percentage moves, and no `review-loop` is invoked.
+
+## Block 10 science handoff
+
+The highest-value gravity/source scan found a stronger positive mechanism than
+the Block 9 site/edge susceptibility. For any finite regular binary graph,
+code symmetry converts the entire compatible action exactly into one-half
+`log B` times the occupied/unoccupied edge cut. On the periodic cubic
+quotient, the cut is the closed cubical boundary of occupied dual cubes,
+directional couplings resolve its orientation, and one-site flips give the
+exact local area variation.
+
+Block 10 also classifies the local-source ambiguity instead of hiding it.
+Every endpoint allocation has the same total action; allocations differ by a
+graph-Laplacian contact improvement, and code swap fixes the equal-endpoint
+member inside that family. Under the supplied weak-field graph-Poisson packet,
+the corresponding potentials differ by the exact occupation contact term, so
+non-cut exterior edge gradients agree.
+
+The fixed-background-to-stress step does not close. Two explicit local
+proper-cubic-covariant geometry extensions agree at zero source but have
+inequivalent first variations; the exact `L=3` witness has an offdiagonal
+`P_yz=-2` absent from the axis-cut tensor. The natural cut tensor also has
+nonzero local divergence on a singleton. Therefore global cubic covariance
+and one scalar law do not select a conserved stress or metric derivative.
+The existing source-coupled local-action convention remains a live steelman,
+so no broad source, gravity, or axiom-necessity no-go is shipped.
+
+The primary runner is `PASS=33 FAIL=0`. A separate exact recomputation checks
+five cubic fixtures, all 128 `K_7` configurations, 512 endpoint-source cases,
+and the offdiagonal tensor witness. All 27 process-local mutations fail
+closed. The citation graph is 5,456 nodes / 15,537 edges; the new note has
+out-degree six and the harness supplies one additional edge. The canonical
+axiom memo remains untouched. Vocabulary, strict audit lint, graph/link/class-F
+invariants, YAML, Python, whitespace, exact-delta, source-link, and cache gates
+pass. The fixed TOE percentages do not move, and no `review-loop` is invoked.

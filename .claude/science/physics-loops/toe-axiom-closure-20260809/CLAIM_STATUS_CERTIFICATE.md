@@ -105,6 +105,28 @@ bare_retained_allowed: false
 - Site/edge coupling derivatives yield exact expectation and covariance
   response. Physical source licensing, action units, conservation, stress,
   metric coupling, gravity, dynamics, and realized history remain open.
+- Block 10 proves on every supplied finite `q`-regular binary graph that the
+  code-symmetric action is exactly `(log B/2)` times the occupied/unoccupied
+  edge cut. On the cubic quotient this is a closed dual cubical two-chain,
+  with exact local variation and directional covariance response.
+- Every declared endpoint-local allocation has the same total action and
+  differs from the equal-endpoint density by a graph-Laplacian contact
+  improvement. Code swap uniquely fixes the equal-endpoint member inside
+  that family; it does not establish that the density is a physical source.
+- Under the supplied graph-Poisson response, endpoint choices change the
+  potential by the exact local occupation contact term, so non-cut exterior
+  edge gradients agree. The field operator, coupling, and physical source
+  identification remain conditional.
+- Two explicit local translation/proper-cubic-covariant geometry extensions
+  agree on the fixed-background scalar action but have different first
+  variations, including an exact offdiagonal witness. The displayed cut
+  tensor also has nonzero local divergence on a singleton despite global
+  telescoping.
+- Therefore fixed-background action plus global covariance does not uniquely
+  determine a local metric derivative or conserved stress. Broad source,
+  stress, gravity, or axiom no-go claims are rejected; geometry-family,
+  convention, improvement, Noether/Ward, and field-dynamics routes remain
+  live.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

@@ -137,3 +137,16 @@ pipeline reproduces only PR #6061's known dependency-policy epoch mismatch
 after earlier stages pass. Science commit is `ddef3817b2`. Hard landing order
 is #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, then #6077. The
 canonical axiom memo remains untouched; no `review-loop` is used.
+
+Block 10 is prepared on branch
+physics-loop/toe-axiom-closure-block10-20260810, stacked on the exact PR #6077
+head 34fc697e4d5660e099c763f7aaa6d9375e23ca8a. The general cut-area theorem,
+cubic dual-surface response, endpoint source-improvement family, conditional
+Poisson contact identity, covariant metric-extension nonuniqueness witness,
+local-divergence boundary, hypothetical geometry-family clauses, source
+N1--N8 gate, runner/cache, and harness row are complete. The primary runner is
+PASS=33 FAIL=0, the independent exact recomputation agrees, and all 27
+mutation probes fail closed. Graph registration is 5,456 nodes / 15,537 edges
+with note out-degree six. Direct conformance passes; isolated pipeline
+verification remains the pre-PR gate. The canonical axiom memo is untouched,
+the fixed TOE percentages do not move, and no `review-loop` is used.

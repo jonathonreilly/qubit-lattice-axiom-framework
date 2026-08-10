@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 10
-science_block: 9
-branch: physics-loop/toe-axiom-closure-block09-20260810
+cycle: 11
+science_block: 10
+branch: physics-loop/toe-axiom-closure-block10-20260810
 base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-worktree: /private/tmp/toe-axiom-block09.xZkZgw/worktree
+worktree: /private/tmp/toe-axiom-block10.F1Owj9/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now composing the compatible binary action with Record readout, pair-resource, and physical source/tensor obligations
-active_route: exact content-only readout versus edge-action cross-ratio, unique Boolean pair coefficient, one-line implication map, and finite site/edge covariance response
-hard_residual: independently license the statistical log-law and its action unit as a physical source action, derive conserved stress/tensor indices and metric/curvature coupling, and extend compatibility beyond the finite binary sector; Born functional/program selection and realized histories remain separately open
-target_contract_status: complete_binary_readout_pair_action_resource_response_axiom_boundary
+goal: maximize honest TOE closure from the current axiom surface, now converting the compatible code-symmetric action into exact cut geometry and isolating the local source, Ward, metric-family, and field-dynamics obligations
+active_route: exact regular-graph cut-area action, cubic dual-surface and directional response, endpoint source-improvement family, conditional Poisson contact response, and covariant metric-extension nonuniqueness
+hard_residual: license the statistical cut action physically, supply a geometry-dependent law/source family, derive a locally conserved stress/Ward identity and field equation/coupling, and extend compatibility beyond the finite binary sector; Born functional/program selection and realized histories remain separately open
+target_contract_status: complete_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary
 A_min:
   - Lattice
   - Qubit
@@ -53,6 +53,11 @@ block_local_allowed_premises:
   - finite Boolean mixed differences, multiplicative cross-ratios, and inclusion-exclusion coefficients
   - finite log-partition differentiation and exact covariance matrices
   - six-regular periodic cubic graphs for the code-swap comparison
+  - elementary regular-graph degree, internal-edge, and cut identities
+  - directional cubic cuts, dual cubical boundaries, and all 24 proper rotations
+  - endpoint-local edge allocations and exact graph-Laplacian improvements
+  - supplied graph-Poisson response as an explicitly conditional composition
+  - local proper-cubic tensor extensions and exact lattice-divergence calculations
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -71,6 +76,8 @@ forbidden_imports:
   - identification of the derived finite statistical action with gravity, curvature, stress, or Newton coupling
   - identification of the statistical action with the content-only Record readout or a physical source action
   - physical licensing of a pair resource, action unit, source coordinate, conserved stress tensor, or metric response
+  - physical identification of the cut coefficient as a surface tension or gravitational action
+  - a geometry-dependent probability-law family, local Ward identity, field equation, or coupling
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -101,6 +108,9 @@ files_touched:
   - docs/ADMISSIBILITY_ISING_ACTION_RECORD_READOUT_PAIR_RESOURCE_RESPONSE_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_2026_08_10.py
   - logs/runner-cache/admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_2026_08_10.txt
+  - docs/ADMISSIBILITY_CODE_SWAP_CUT_AREA_LOCAL_SOURCE_IMPROVEMENT_METRIC_RESPONSE_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -127,6 +137,10 @@ open_imports:
   - the fixed two-symbol content-only additive Record readout has no pair curl and therefore is not the nontrivial compatible edge action
   - the exact pair coefficient -log B remains statistical until a source/action license and action unit are supplied
   - the site/edge covariance response has sufficient-statistic indices, not a derived conserved stress tensor or spacetime metric response
+  - the exact code-symmetric statistical action is a cut-area functional, but no current axiom licenses it as physical surface tension or source action
+  - code swap selects the equal-endpoint density only inside a supplied local allocation family and does not type it as the gravitational source
+  - fixed-background scalar action and global cubic covariance do not select an off-background metric family or unique local first variation
+  - the natural cut tensor is not locally conserved on the exact singleton witness, and no current source supplies its Ward improvement or field dynamics
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
@@ -139,6 +153,7 @@ no_go_routes:
   - fixed_bounded_content_decoder_for_gaussian_open_center_family
   - local_normalization_covariance_and_code_swap_as_static_full_conditional_compatibility
   - binary_content_only_additive_readout_as_nontrivial_compatible_pair_action
+  - fixed_background_scalar_law_and_global_cubic_covariance_as_unique_conserved_metric_source
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -178,18 +193,24 @@ approach_family_coverage:
   boolean_pair_resource_decomposition: exact_unique_site_plus_unordered_edge_coefficients
   code_symmetric_vs_additive_one_scalar_lines: exact_trivial_intersection
   finite_site_edge_response: exact_expectation_and_positive_semidefinite_covariance_hessian
-strongest_unresolved_proof_obligation: derive or adopt a physical log-law source/action license and action unit, then construct a conserved stress/tensor carrier and metric/curvature response; independently extend the physical Admissibility law beyond the finite binary sector and derive Born/program/history selection
+  code_symmetric_cut_area_action: exact_regular_graph_half_log_b_cut_functional
+  cubic_dual_cut_surface: exact_closed_two_chain_local_variation_and_directional_covariance
+  endpoint_source_improvement: exact_one_parameter_laplacian_contact_family_with_code_swap_even_member
+  conditional_poisson_contact_response: exact_exterior_noncut_gradient_invariance_with_source_and_operator_supplied
+  fixed_background_metric_extension: exact_covariant_first_variation_nonuniqueness_with_offdiagonal_witness
+  cut_tensor_local_conservation: exact_singleton_divergence_failure_with_global_telescoping
+strongest_unresolved_proof_obligation: construct or adopt a source-contained geometry-dependent law for the exact cut action, prove a local Ward/conservation identity up to explicit improvements, and separately supply the field equation/coupling; independently extend the physical Admissibility law beyond the finite binary sector and derive Born/program/history selection
 trace_gate_classification: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: exact binary content-only readout/action cross-ratio separation, unique site-plus-edge coefficient recovery, trivial one-line intersection, and finite positive covariance response; physical source/action licensing, action unit, stress tensor, metric coupling, continuous M2, dynamics, history, and gravity remain open
-hypothetical_axiom_status: a weak pair-resource clause carries the interaction and a stronger log-law clause with one registered action unit identifies a physical source action; neither is adopted or edited
-review_disposition: block09_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: open_6077_stacked_on_open_6076
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6077
+conditional_surface_status: exact regular-graph cut-area action, cubic closed dual surface, local flip law, directional covariance response, endpoint source-improvement family, conditional Poisson contact response, and fixed-background metric-extension nonuniqueness; physical action licensing, geometry family, Ward conservation, field equation, coupling, continuous M2, dynamics, history, and gravity remain open
+hypothetical_axiom_status: a weak equal-endpoint interface-source convention and a stronger projectively consistent geometry-family log-law/source-variation clause are sufficient bridge shapes; neither is adopted, proved necessary, claimed minimal, or edited into the axioms
+review_disposition: block10_direct_self_review_passed_pipeline_pending
+pr_status: pending_stacked_on_open_6077
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -216,5 +237,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: test whether any current-axiom or approved-primitive route independently licenses the site/edge statistical coordinates as a conserved physical stress/source tensor with metric response; if not, state the exact axiom update rather than relabeling covariance as gravity
+next_exact_action: construct a source-contained local geometry family for the exact cut action and test a discrete Ward identity up to explicit improvements; if the route remains underdetermined, preserve the exact geometry-family axiom candidate and keep field dynamics as a separate obligation
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

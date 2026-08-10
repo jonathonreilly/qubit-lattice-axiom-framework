@@ -157,3 +157,23 @@ Block 9 packages a stacked bounded theorem only if it contains all of:
    clauses, with a complete N1--N8 gate and no canonical edit; and
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 10
+
+Block 10 packages a stacked bounded theorem only if it contains all of:
+
+1. the general `qN=2E+C` regular-graph identity and exact conversion of the
+   code-symmetric compatible action into one-half `log B` times cut area;
+2. the anisotropic cubic cut action, one-site variation, closed dual
+   two-chain, and exact directional mean/covariance response;
+3. an exact endpoint-local source-allocation family, code-swap selection of
+   its equal-endpoint member, and conditional graph-Poisson contact identity;
+4. two explicit local proper-cubic-covariant geometry extensions that agree
+   at fixed background but have inequivalent first variations;
+5. an exact local-divergence witness separating global covariance from a
+   conserved stress/Ward identity;
+6. weak and strong hypothetical source/action bridge clauses, a complete
+   N1--N8 gate rejecting the broad source/gravity no-go, and no canonical
+   axiom edit; and
+7. an exact runner/cache, independent recomputation, mutation sensitivity,
+   harness/graph registration, and direct conformance review.

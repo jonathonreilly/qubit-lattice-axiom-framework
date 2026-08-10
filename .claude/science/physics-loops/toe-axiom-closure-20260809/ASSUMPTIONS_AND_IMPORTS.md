@@ -188,3 +188,24 @@ The theorem does not import enlarged Record content, a separated-additivity
 interpretation, auxiliary field, physical source operation, action unit,
 conservation law, stress tensor, metric response, Newton coupling, dynamics,
 or realized history.
+
+## Block 10 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| compatible code-symmetric binary action | cut-area input | stacked Block 9 theorem | yes | statistical only; no physical action license inherited |
+| finite `q`-regular graph and cubic `L=3` quotient | exact geometry | elementary finite graph input | yes | general cut identity plus executed cubic fixtures |
+| directional log couplings and partition derivatives | response coordinates | explicit mathematical parameters | yes | statistical source coordinates only |
+| endpoint allocation parameter `theta` | local-density classification | constructed convention family | yes | equal endpoint is selected only inside this declared family by code swap |
+| graph Laplacian and zero-mode projector | conditional weak-field composition | source-bound bounded parent | yes for contact identity | no physical field operator or gravity identification inherited |
+| local tensor source `h_i` | off-background extension probe | explicit external mathematical source | yes for nonuniqueness | not supplied by current axioms |
+| environment-gradient tensor `p_i=d_i d_i^T` | inequivalent covariant extension | elementary local construction | yes | counterexample to uniqueness, not a physical stress tensor |
+| scale-reference primitive | conversion to physical units | approved primitive | no for dimensionless theorem | supplies no source, coupling, selector, or dimensionless coefficient |
+| source-coupled local-action convention | live partial-closure route | source-bound open gate | no for theorem | defeats any broad claim that no source route exists |
+| geometry-dependent law, Ward identity, field equation, and coupling | physical gravity bridge | open imports | no for theorem; yes for TOE closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The theorem imports no physical surface tension, source license, stress-energy
+identification, local metric family, conservation law, gravitational field
+equation, Newton coupling, dynamics, continuum limit, empirical value, or
+realized history.

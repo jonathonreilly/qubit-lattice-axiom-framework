@@ -304,6 +304,46 @@ Neither is adopted. Stress conservation, tensor indices, metric/curvature
 response, coupling, scale, dynamics, and history remain open, so no TOE
 percentage moves.
 
+## Block 10 Target And Disposition
+
+Block 10 takes the code-symmetric line seriously as geometry. On any finite
+`q`-regular binary graph, `qN=2E+C`, so `u=-(q/2)v` converts the complete
+compatible action into
+
+`S_stat=(log B/2) C`.
+
+On a periodic cubic quotient, directional couplings give
+`S_stat=(1/2)sum_a (log B_a)C_a`; a one-site flip changes `C_a` by
+`2(1-k_a)`. The cut edges are the boundary plaquettes of the union of
+occupied dual cubes and hence form a closed cubical two-chain. An exact
+24-rotation line orbit isolates zero bulk-area variance and two diagonal
+shear modes of eigenvalue twelve. These are statistical surface-response
+coordinates, not yet metric stress.
+
+Every endpoint-local allocation of a cut edge belongs to an exact
+one-parameter family. All members sum to the same action, and
+
+`rho^(theta)-rho^(1/2)=(log B/2)(theta-1/2)Lx`.
+
+Code swap fixes `theta=1/2` within this family. Under the supplied weak-field
+graph-Poisson equation, potentials differ by the corresponding occupation
+contact term, so exterior edge gradients away from the cut agree.
+
+The decisive boundary is constructive: two local proper-cubic-covariant
+geometry extensions agree exactly at zero source but have inequivalent first
+variations. One contains an exact offdiagonal `yz` component absent from the
+axis-cut tensor. The latter also has nonzero local divergence on a singleton.
+Thus fixed-background scalar action and global covariance do not select a
+local metric derivative, Ward identity, conserved stress tensor, or gravity.
+
+The weak candidate clause declares the equal-endpoint interface source. The
+strong candidate supplies a projectively consistent geometry-indexed law,
+identifies one physical action unit times `-log pi[g]`, and defines local
+source/stress by variation of that same family. Existing source-convention
+routes make both broad no-go and axiom-necessity claims untenable. Neither
+candidate is adopted or claimed minimal. No canonical axiom is edited, and no
+TOE percentage moves.
+
 ## Trace target
 
 The landed source states:

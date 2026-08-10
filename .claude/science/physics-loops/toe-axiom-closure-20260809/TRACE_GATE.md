@@ -1,12 +1,12 @@
 ---
 trace_class: upstream_support
-target_claim_id: admissibility_statistical_action_to_physical_source_tensor_bridge
-target_blocker_text: "identify whether the compatible binary statistical action is the additive Record readout, a separate pair resource, or a physical source action, and determine what tensor/metric bridge is still missing"
+target_claim_id: admissibility_cut_surface_to_conserved_physical_metric_source_bridge
+target_blocker_text: "turn the compatible pair action and site/edge response into a physically licensed, locally conserved source/stress tensor with metric or curvature response"
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: theorem
 campaign_native_target_reachability: advances
-next_trace_action: "Test a supplied physical M2 Admissibility law for an independently licensed site/edge source coordinate and conserved tensor response; do not rename statistical covariance as stress-energy."
+next_trace_action: "Construct a source-contained local geometry family for the exact cut action and test its discrete Ward identity up to explicit improvements; then separate that source theorem from the still-independent field equation and coupling."
 ---
 
 Block 1 closes the named low-arity mathematical frontier at standard-theorem
@@ -101,3 +101,25 @@ trace without closing it: pair-resource licensing, physical `-log pi`
 identification, action unit, conserved stress/tensor indices, metric/curvature
 coupling, dynamics, and realized history remain open. The two candidate axiom
 clauses are hypothetical, and no percentage moves.
+
+Block 10 identifies the code-symmetric action itself as exact interface
+geometry. On every finite regular binary graph it is one-half `log B` times
+the occupied/unoccupied cut. On the periodic cubic quotient the cut is a
+closed dual cubical two-chain, its one-site variation is exact, and directional
+partition derivatives give cut means and covariances. This retires the
+action-shape-to-surface-shape question without licensing a physical action.
+
+Endpoint-local source allocations form one exact improvement class. Code swap
+fixes the equal-endpoint member inside that family, and a supplied graph-
+Poisson response turns every other choice into an occupation contact term;
+exterior non-cut edge gradients agree. The trace advances because a concrete
+weak source convention and its ambiguity are now explicit.
+
+It does not close the gravity bridge. Two local proper-cubic-covariant
+geometry extensions agree on the fixed-background scalar action but have
+inequivalent first variations, and the natural cut tensor is not locally
+divergence-free on the singleton witness. An off-background geometry/source
+family, Ward identity, physical action unit, field equation, coupling, and
+regime remain separate obligations. The existing source-convention route
+defeats every broad source or axiom no-go. Candidate clauses remain
+hypothetical, the canonical memo is untouched, and no percentage moves.

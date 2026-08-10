@@ -1,6 +1,6 @@
 {
- "edge_count": 15530,
- "node_count": 5455,
+ "edge_count": 15537,
+ "node_count": 5456,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -353,6 +353,10 @@
   "admissibility_cnot_contact_gaussian_extractor_type_order_bounded_theorem_note_2026-08-10": {
    "deps_hash": "39228824ed51",
    "out_degree": 4
+  },
+  "admissibility_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "f766b94ee65c",
+   "out_degree": 6
   },
   "admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "bca0a967aa49",
@@ -1671,8 +1675,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "02fb0f927a21",
-   "out_degree": 350
+   "deps_hash": "16103549cf2e",
+   "out_degree": 351
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

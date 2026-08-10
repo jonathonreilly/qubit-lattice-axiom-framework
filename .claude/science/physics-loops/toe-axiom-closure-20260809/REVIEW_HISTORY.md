@@ -567,3 +567,35 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   science delta as `ddef3817b2`, pushed the dedicated branch, and opened
   stacked PR #6077 on the exact #6076 head. Hard landing order is #6063,
   #6065, #6067, #6070, #6071, #6074, #6075, #6076, then #6077.
+
+## Block 10 direct-review record
+
+- The source sweep distinguishes the new cut-area identity from prior
+  physical-M2 source tournaments, weak-field supplied-source packets,
+  metric-Hessian/Ward boundaries, and the existing source-coupled local-action
+  convention. Recent cell-cutting and neighbor-word PRs do not collide.
+- On every finite regular graph, code symmetry converts the full compatible
+  action exactly into one-half `log B` times the edge cut. The cubic cut is a
+  closed dual two-chain with exact local variation and directional response.
+- The endpoint allocation family has invariant total source and exact
+  Laplacian improvement differences; code swap fixes the equal-endpoint
+  member only inside that family. Conditional Poisson potentials differ by a
+  local occupation contact term.
+- Two proper-cubic-covariant geometry extensions agree on the fixed-
+  background action but have inequivalent first variations. The exact
+  offdiagonal witness and singleton-divergence calculation prevent a
+  covariance-as-conserved-stress overclaim.
+- The primary runner passes 33 checks. A separate exact enumerator checks five
+  cubic fixtures, every `K_7` configuration, 512 endpoint allocations, and
+  the tensor witness. All 27 corrected process-local mutations exit nonzero.
+- N1--N8 is source-complete. The strongest source-convention/geometry-family
+  steelman is accepted, broad source/gravity/axiom no-go wording is rejected,
+  and the narrow fixed-background nonuniqueness claim retains live
+  improvement, Ward, dynamics, and field-equation routes.
+- The graph is regenerated at 5,456 nodes / 15,537 edges. The note has
+  out-degree six and the harness contributes one additional edge. Vocabulary,
+  strict audit lint, graph/link/class-F invariants, YAML, Python, whitespace,
+  exact 18-file delta, source links, runner cache, and axiom checksum pass.
+  Isolated-pipeline evidence remains pending at this record.
+- The canonical axiom memo is byte-identical to the stacked base, no
+  percentage moves, and no `review-loop` is invoked.

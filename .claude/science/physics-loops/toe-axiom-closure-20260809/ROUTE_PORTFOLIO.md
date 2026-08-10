@@ -204,3 +204,31 @@ They do not supply an M2 source/action identification, stress tensor, metric
 response, or physical coupling. PRs #6072 and #6073 remain semantic-map and
 cell-cutting work. None collides with the cross-ratio, pair-coefficient, or
 response theorem. PR #6061 still owns the dependency-policy epoch repair.
+
+## Block 10 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| code-symmetric regular-graph action | `u=-(q/2)v` in `uN+vE` | exactly `(log B/2)` times the edge cut | positive geometry theorem |
+| dual-surface tension | occupied dual cubes and their boundary plaquettes | exact closed cubical two-chain and local area variation | strongest interface interpretation; physical units and history remain open |
+| anisotropic directional response | supplied `B_a` and cuts `C_a` | exact means/covariances and diagonal shear modes | positive statistical response, not metric stress |
+| code-swap-even endpoint source | equal split of each cut-edge action | unique inside the declared endpoint family; other members differ by `Lx` | keep as weak convention candidate |
+| conditional graph-Poisson composition | `L phi=P0 rho^(theta)` | endpoint choices differ by an occupation contact term; exterior non-cut gradients agree | bounded positive source-improvement result |
+| fixed-background cut tensor | diagonal oriented cut shares | local and covariant, but singleton divergence is nonzero | forbid relabeling as conserved stress |
+| geometry-family extension | `S_[lambda,mu](x;h)` with cut and environment tensors | same background scalar action, inequivalent first variations | exact nonuniqueness boundary |
+| source-coupled local action | existing `open_gate` convention route | can define derivatives downstream | preserve; defeats broad source/axiom no-go |
+| physical geometry-family clause | compatible `pi[g]`, one action unit, same-family derivative and Ward law | sufficient bridge shape by premise | governance fallback; no edit or minimality claim |
+| gravity field equation | couple a selected conserved source to curvature/field dynamics | not supplied by the cut theorem | rank after geometry/Ward construction |
+
+## Block 10 live PR sweep
+
+At the Block 10 boundary, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`. PRs #6043--#6048 and #6073
+concern finite cell-cutting incidence geometry and do not contain the binary
+`3N-E=C/2` action identity, endpoint improvement family, metric-extension
+witness, or physical source bridge. PR #6069 supplies a finite covariant
+neighbor-word law but no scalar geometry family or Ward identity. PR #6072
+is a semantic repair map. The existing source-coupled local-action note is a
+live convention route rather than a current axiom theorem, so it is composed
+as a steelman and not claimed as new closure. No open PR collides with the
+Block 10 theorem. PR #6061 still owns the dependency-policy epoch repair.

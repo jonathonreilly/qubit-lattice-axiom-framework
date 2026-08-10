@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary_2026_08_10.py
+runner_sha256: 200ad38d35e5c464f72081c64f0b99488905f6186b994442ce535f6653ee545b
+input_fingerprint_sha256: 2986aa7a06114e9592eb7b9bb0dd3ce67255e7bf69c9c3f3d510710c16ba1db3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+external_scientific_inputs: none; regular-graph cuts, finite Gibbs response, and source-improvement algebra are proved in-source
+package_local_integrity_reads: current axioms, Block-9 action, weak-field source response, stress-Ward boundary, and scale primitive are source-bound
+analytic_boundary: arbitrary regular-graph and finite-partition identities are general; cubic, K7, orbit, source, and tensor fixtures are executed exactly
+negative_scope: one fixed-background scalar law does not select a unique local metric derivative; source conventions, metric families, dynamics, and physical bridges remain live
+PASS: source-current-axioms the cubic lattice and probability clause are present while source/action remains outside axiom content
+PASS: source-action-parent Block 9 supplies the code-symmetric action and preserves the stress and metric boundary
+PASS: source-weak-field the weak-field packet requires a supplied source in a graph-Laplacian variational equation
+PASS: source-stress-boundary the stress packet leaves the full metric-source Hessian and physical spin-two identification open
+PASS: source-scale-primitive the approved scale reference converts units but supplies no dimensionless source or coupling
+PASS: source-convention-route the existing open-gate route treats local source derivatives as an explicit convention rather than an axiom theorem
+PASS: cubic-quotient the periodic L=3 fixture has 27 sites, 27 edges per axis, 81 total edges, and degree six
+PASS: directional-degree-cut each axis obeys 2N=2E_a+C_a on every exact cubic fixture
+PASS: code-complement-cut code complementation preserves every directional cut and has the exact internal-edge transform
+PASS: anisotropic-cut-action A times the three B_a equals one exactly converts the compatible action to one-half sum t_a C_a
+PASS: isotropic-area-law on the six-regular line 3N-E equals one-half the cut size, including empty and full zero-area phases
+PASS: local-flip-area adding one occupied site changes C_a by 2(1-k_a) and the action by sum t_a(1-k_a)
+PASS: conditional-odds-exponent the isotropic local log odds (k-3)t are exactly minus the cut-action increment
+PASS: dual-surface-closure every primal plaquette meets the cut in even parity, so dual cut plaquettes form a closed cubical two-chain
+PASS: cubic-cut-orbit-response all 24 proper rotations give mean cuts (4,4,4) and exact diagonal-shear covariance diag 8 offdiag -4
+PASS: cubic-response-modes the orbit has zero fixed-area bulk variance and two positive diagonal-shear eigenvalues equal to twelve
+PASS: k7-exact-partition the degree-six B=4 fixture has Z=4663/2048, half occupancy, and uniform-phase probability 4096/4663
+PASS: cut-susceptibility the exact cut mean is 3948/4663 and one-quarter cut variance is 30572220/21743569
+PASS: volume-source-separation empty and full configurations have the same zero cut action but opposite nonzero magnetization
+PASS: endpoint-source-total every endpoint-allocation parameter has the same total source equal to one-half t times the cut
+PASS: source-improvement-family rho_theta minus rho_half is exactly (t/2)(theta-1/2) times the graph Laplacian of occupation
+PASS: source-code-swap code swap sends endpoint allocation theta to 1-theta and fixes the equal-endpoint density
+PASS: poisson-improvement-contact L applied to zero-mean occupation equals Lx, so Poisson potentials differ by the exact local improvement
+PASS: exterior-improvement-invariance the potential improvement is constant on each phase and has zero edge gradient away from the cut
+PASS: cut-orientation-tensor the covariant axis-cut tensor is diagonal and its trace is the total cut area
+PASS: covariance-not-conservation the singleton cut tensor has nonzero local lattice divergence although its global divergence telescopes to zero
+PASS: metric-extension-offdiagonal a covariant range-one environment tensor has P_yz=P_zy=-2 while the axis-cut tensor has no offdiagonal coordinate
+PASS: metric-extension-covariance all 24 proper rotations transport the environment tensor by P to R P R-transpose
+PASS: construction-source-surface the source states the cut law, flip variation, improvement identity, Poisson contact term, and candidate clause
+PASS: boundary-source-surface the source preserves governance, percentages, tensor typing, steelman, and convention-reframe routes
+PASS: machine-status-contract the source carries the bounded upstream-support trace contract
+PASS: canonical-nonmutation cut-area action, endpoint source, metric family, and stress derivative wording is absent from the canonical memo
+PASS: no-go-gate N1-N8, primitive registry, residual matching, accepted steelman, and broad-negative rejection all land in-source
+per_element: checked each binary edge disagreement and each occupied-to-empty local flip contribution exactly
+per_site: checked directional neighbour counts, endpoint source shares, graph-Laplacian improvements, and local divergence
+per_mode: checked bulk and diagonal-shear cut responses; offdiagonal metric stress is not executed — the axis-cut carrier has no such coordinate
+per_block: checked compatible action -> closed dual cut surface -> local source family -> conditional Poisson contact response
+lattice_wide: checked degree-six periodic cubic identities and 24 rotations; physical action licensing, conserved spacetime stress, metric dynamics, and gravity are not executed
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

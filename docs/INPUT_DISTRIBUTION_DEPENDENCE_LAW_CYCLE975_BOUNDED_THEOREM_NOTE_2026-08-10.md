@@ -47,8 +47,9 @@ d in {+e_x,-e_x,+e_y,-e_y,+e_z,-e_z}.
 
 The spatial horizon is the seven-site target-centred star. The word-length
 cap is one. The gate menu is exactly the identity, `X`, and oriented `CNOT`
-as executed by the landed Cycle-719 `apply_semantic` substrate. The distinct
-word family is
+as executed by the landed
+[`Cycle-719 core`](../scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py).
+The distinct word family is
 
 ```text
 1 identity + 7 X + 12 oriented centre-neighbour CNOT = 20 words.
@@ -171,9 +172,10 @@ primitives.
 
 The primary reads Cycle 970 and Cycle 972 only as pinned provenance. Runner
 blobs are parsed as AST and never executed; note blobs are read as text. The
-Cycle-719 core is the sole executable science substrate. The minimal-axiom
-memo is text-only cited authority. The explicit source/provenance read ledger
-contains exactly six files:
+Cycle-719 core is the sole executable science substrate. The
+[`minimal-axiom memo`](MINIMAL_AXIOMS_2026-06-29.md) is text-only cited
+authority. The explicit source/provenance read ledger contains exactly six
+files:
 
 1. Cycle-970 primary runner at commit `6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad`;
 2. Cycle-970 theorem note at the same commit;

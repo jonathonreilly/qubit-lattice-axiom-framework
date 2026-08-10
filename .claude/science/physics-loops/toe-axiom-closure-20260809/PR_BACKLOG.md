@@ -273,6 +273,12 @@ chord, and a strengthened N1--N8 homothety-separator packet. The primary runner
 is `PASS=33 FAIL=0`; an independent seven-family reconstruction agrees,
 fifteen genuine mutations fail closed, and all 33 named checks emit a failure
 under forced-false mutation. Citation-graph registration, refreshed cache,
-direct/isolated conformance, commit, push, and PR remain to be recorded. The
+and direct conformance pass at 5,462 nodes / 15,572 edges with no new
+canonical-harness weave. The exact 17-file science commit is `1effedfb5e`.
+The isolated full pipeline passes through effective-status computation and
+then reproduces only PR #6061's governed dependency-policy epoch mismatch at
+restoration; 1,066 tracked generated changes and 828 new shards remain
+disposable. Seeded changed evidence checks Block 16 alone and all 16 stacked
+claims with zero failures or control failures. Push and PR remain pending. The
 canonical memo is untouched, the fixed TOE percentages do not move, and no
 `review-loop` is used.

@@ -734,8 +734,14 @@ remain live.
 The primary runner is `PASS=33 FAIL=0`; the independent SVD/lstsq route passes
 seven families. Fifteen genuine family mutations and all 33 forced-false named
 checks fail closed. N1--N8 and all five resolution classes land with the
-source/cache. Citation graph, direct/isolated conformance, commit, and PR
-delivery records remain to be appended after execution.
+source/cache. Citation registration passes at 5,462 nodes / 15,572 edges with
+note out-degree seven and no new canonical-harness weave. Direct conformance
+passes; seeded evidence checks Block 16 alone and all 16 stacked claims with
+zero failures or control failures. The isolated full pipeline passes through
+effective-status computation and then reproduces only PR #6061's governed
+dependency-policy epoch mismatch at restoration; its 1,066 tracked generated
+changes and 828 new shards stay disposable. The exact 17-file science commit
+is `1effedfb5e`; PR delivery remains to be appended.
 
 Existing candidate wording already types the mathematical choices but does
 not select the Record/source identity, action weights, compact mechanism,

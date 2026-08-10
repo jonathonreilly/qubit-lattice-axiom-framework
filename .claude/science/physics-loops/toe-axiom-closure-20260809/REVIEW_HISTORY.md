@@ -941,6 +941,20 @@ audit verdict.
 - The Block-15 coefficient-four unit-transverse metric response and the
   Block-16 coefficient-six source-contracted response are different
   observables and agree with their respective source normalizations.
-- The primary runner is `PASS=33 FAIL=0`. Cache, citation graph,
-  direct/isolated conformance, exact scope, commit, and delivery checks remain
-  to be recorded after execution. No `review-loop` is invoked.
+- The primary runner is `PASS=33 FAIL=0`; its fresh source/input-pinned cache
+  contains 3,347 stdout characters. Citation registration is exactly 5,462
+  nodes / 15,572 edges, with note out-degree seven and no new canonical-
+  harness weave.
+- Direct conformance passes: changed-path vocabulary has zero findings, strict
+  audit lint has zero errors, premise purity and model-family plus
+  graph/link/class-F invariants pass, and Python, YAML, whitespace, exact
+  17-path scope, cache freshness, and canonical-axiom checksum pass.
+- The isolated full pipeline passes graph/manifest reconstruction,
+  load-bearing computation, 4,800-row ledger seeding/fixed point, sanitization,
+  classifier capture for 3,678 runners, and effective-status computation.
+  Restoration then reproduces only PR #6061's governed dependency-policy epoch
+  mismatch. Its 1,066 tracked generated changes and 828 new shards remain in a
+  disposable worktree. Seeded changed-evidence checks Block 16 alone and all
+  16 stacked claims with zero failures and zero control failures.
+- The exact 17-file science commit is `1effedfb5e`. Delivery remains to be
+  recorded after push and PR creation. No `review-loop` is invoked.

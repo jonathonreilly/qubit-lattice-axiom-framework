@@ -1181,7 +1181,11 @@ new joint interactions rather than normalization equivalences.
 Primary cache is `PASS=14 FAIL=0` in `14.4 s`; fourteen isolated fresh-process
 forced failures each trip exactly one intended check. The graph is
 `5,472/15,624`, with out-degree four and fourteen resolved helpers. Direct
-conformance passes; exact-stack and controlled-overlay pipelines remain. The exact residual is
+conformance passes. The exact stack reaches only the inherited stage-7
+policy-epoch stop after `4,810` rows / `3,688` runners; the controlled five-file
+current-main overlay passes all 18 stages at checkpoint `016787d4c504`.
+Changed evidence is clean for `1/1` Block-26 and `26/26` stacked claims.
+Science commit is `8274dab185`; conformance, push, and delivery remain. The exact residual is
 not "gravity is impossible": current axioms do not register the joint family,
 equate Record readout with action, fix the action unit, or supply the separate
 pure-geometry action/causal update. Those are now the highest-priority axiom

@@ -718,6 +718,11 @@ independent_audit_required: true
   an action law. The candidate joint-family/null-anchor/action-unit and
   separate pure-geometry clauses remain unadopted. No gravity no-go,
   canonical edit, percentage move, audit verdict, or `review-loop`.
-- Conformance and delivery: direct gates pass; the exact-stack pipeline,
-  controlled current-main overlay, changed-evidence checks, commit, push, and
-  independent audit remain pending.
+- Conformance: direct gates pass. The exact stack reproduces only the inherited
+  stage-7 policy-epoch mismatch after `4,810` rows / `3,688` runners. A
+  controlled five-file current-main overlay passes all 18 stages and finalizes
+  checkpoint `016787d4c504`. Changed evidence is clean for Block 26 alone
+  (`1/1`) and the full stack (`26/26`), with zero failures and zero control
+  failures.
+- Science commit: `8274dab185`; campaign-conformance commit, push, PR delivery,
+  and independent audit remain pending.

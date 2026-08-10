@@ -494,7 +494,11 @@ and product properties, exact retained coframe-cut realization, and the
 reclassification of Block-25 common completions as new interactions. Primary
 cache is `PASS=14 FAIL=0` in `14.4 s`; fourteen isolated fresh-process forced
 failures pass; graph registration is `5,472/15,624` with out-degree four and
-fourteen resolved helpers. Direct conformance passes; exact-stack/overlay
-pipelines, changed evidence, commit, push, and PR delivery remain pending. PR #6096 is a
+fourteen resolved helpers. Direct conformance passes. The exact stack reaches
+only the inherited stage-7 policy-epoch stop after `4,810` rows / `3,688`
+runners; the controlled five-file current-main overlay passes all 18 stages at
+checkpoint `016787d4c504`. Changed evidence is clean for `1/1` Block-26 and
+`26/26` stacked claims. Science commit is `8274dab185`; conformance, push, and
+PR delivery remain pending. PR #6096 is a
 complementary proper-length sibling requiring later explicit reconciliation.
 No `review-loop` is used.

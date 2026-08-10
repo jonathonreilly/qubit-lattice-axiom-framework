@@ -170,3 +170,30 @@ The candidate geometry-indexed history/action amendment now names those
 missing interfaces but supplies them only by premise. It is not adopted,
 necessary, minimal, or edited into the canonical memo. The fixed TOE
 percentages remain unchanged.
+
+Block 13 executes the alternate-improvement route rather than merely naming
+it. A signed range-one isolated-defect selector multiplies a centered
+line-minus-bag geometry term that is identically zero at flat geometry. On an
+isolated static tube, the complete edge source becomes one actual axial tick
+edge with the normalization inherited from Block 12.
+
+The static gauge identity and pure tick metric source are exact. Across all
+1,281 nonzero modes on the named `L=3,...,8` tori, the actual unprojected edge
+source is compatible with the full five-dimensional null space and the direct
+edge equation solves. The unprojected metric response retains the four-
+direction `1/k^2` lapse pole and open-boundary `1/r` tail.
+
+The trace therefore retires Block 12's localized nonzero-mode residual for
+this improved static source. It does not close the compact total-charge zero
+mode or dynamic history: at `k=0` the source is outside the bare periodic
+Hessian range, and at `k_tau!=0` a fixed vertical edge has nonzero gauge and
+fifth-branch overlap. The exhaustive statement is finite-inventory, not a
+universal Brillouin-zone theorem.
+
+The axiom trace changes from source existence to physical selection and
+dynamics. The existing candidate amendment already covers geometry-dependent
+improvements, but current axioms do not select this representative, type the
+defect as mass/Record content, provide a conserved worldline and geometry
+equation, fix coupling/sign, choose the infrared ensemble, or realize one
+history. The candidate remains unadopted and the fixed TOE percentages remain
+unchanged.

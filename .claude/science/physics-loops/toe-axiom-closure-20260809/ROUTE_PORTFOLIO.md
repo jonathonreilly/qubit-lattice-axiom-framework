@@ -281,3 +281,26 @@ counts; they do not construct this four-coframe worldvolume, affine bag, or
 Regge monopole response. PRs #6072/#6066 are semantic corpus maps, and #6069
 is a finite neighbor-word/XOR law. No open PR collides with Block 12. PR #6061
 still owns the dependency-policy epoch repair.
+
+## Block 13 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| signed radius-one defect selector | center plus six spatial neighbor bits | exactly two nonzero neighborhoods, complement odd, proper-cubic scalar | retain as local sector selector; no physical ontology inferred |
+| tick-edge line-minus-bag improvement | `I_iso=d_iso(L-B)` | flat law unchanged; isolated bag becomes one actual tick edge; plane untouched | retain as explicit residual-cancelling representative |
+| actual static gauge identity | axial edge at `k_tau=0` | all four vertex-gauge columns annihilated analytically; metric row is pure tick | retain as exact carrier identity |
+| fifth-branch compatibility | actual Hessian null spaces on all nonzero `L=3,...,8` modes | all 1,281 modes have five zeros and negligible full-null overlap | retain at named finite-inventory scope only |
+| unprojected edge/metric solve | no source projection | direct edge solve closes and four directions give `|k|^2h_tau_tau->2tau` | retain as strongest static weak-field bridge |
+| compact nonzero charge | actual `k=0` Hessian and one tick charge | eleven zeros and nonzero direct residual | bounded bare-periodic boundary; infrared routes remain live |
+| fixed dynamic vertical line | one mixed `k_tau!=0` mode | nonzero gauge and separately extracted fifth-branch overlap | reject as complete worldline; construct a closed dynamic history next |
+| candidate history/action amendment | existing Block-12 wording | already covers every geometry-dependent improvement | no broader axiom candidate; governance fallback only |
+
+## Block 13 live PR sweep
+
+As of `2026-08-10T09:52:42Z`, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070` and PR #6080 is `CLEAN` on the
+exact Block-11 branch. The open #6043--#6073 cell-cutting, semantic-map, and
+finite neighbor-word PRs contain no centered tick-edge improvement, direct
+axial Regge source, or exhaustive static null-space solve. No newer open PR
+collides with Block 13. PR #6061 remains the known dependency-policy epoch
+repair rather than science overlap.

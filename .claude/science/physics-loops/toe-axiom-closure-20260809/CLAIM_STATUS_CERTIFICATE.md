@@ -188,3 +188,43 @@ note remains bounded support and requires independent audit.
 
 The Block 12 source remains bounded support and requires independent audit;
 this campaign authors no verdict.
+
+## Block 13 certificate
+
+- The signed range-one selector is `+1` only on the isolated occupied
+  neighborhood, `-1` only on the isolated hole, and zero on the other 126
+  neighborhoods. It reverses under code complement and is a proper-cubic
+  scalar.
+- `I_iso=d_iso(L-B)` vanishes configuration by configuration at flat
+  geometry. On an isolated static occupied tube it replaces the complete
+  affine bag by `L=2tau(ell_tau-1)`; it is zero everywhere on the wrapping
+  plane fixture.
+- The coefficient two is uniquely inherited from the Block-12 homogeneous
+  source because the actual unit tick edge has metric derivative one-half. It
+  is not fitted to a Newton target.
+- At `k_tau=0`, the actual axial source annihilates every vertex-gauge column
+  analytically and maps exactly to pure `T_tau_tau=tau`. The old bag's generic
+  gauge/extra-null residuals are recomputed before their explicit cancellation.
+- Every one of 1,281 nonzero static modes on `L=3,...,8` has five numerical
+  zero modes. The full-null overlap is below `2e-13` and the unprojected edge
+  solve residual below `5e-12`; this finite inventory is not promoted to a
+  symbolic all-momentum theorem.
+- Without source projection, four long-wave directions give
+  `|k|^2 h_tau_tau -> 2tau`, with improving errors under momentum halving and
+  the open-boundary `1/r` kernel retained.
+- The bare periodic nonzero-charge `k=0` equation remains incompatible. A
+  fixed line with `k_tau!=0` has both nonzero gauge and separated fifth-branch
+  overlap. The N1--N8 packet preserves open/fixed/neutralized/curved ensembles,
+  combined geometry constraints, and dynamic worldlines as live routes.
+- The existing candidate history/action amendment already covers this
+  geometry-dependent improvement. It is unadopted, not necessary or minimal,
+  and does not select a physical defect, mass, action, coupling, sign,
+  ensemble, nonlinear law, Born functional, or realized history.
+- The primary runner is `PASS=28 FAIL=0`. An independent SVD/lstsq
+  recomputation passes eight families, and all 28 process-local mutations
+  produce their intended named failure. The graph is 5,459 nodes / 15,553
+  edges with note out-degree four and one harness edge.
+
+No canonical axiom is edited and the fixed TOE percentages do not move. The
+Block 13 source remains bounded support and requires independent audit; this
+campaign authors no verdict.

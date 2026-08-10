@@ -252,3 +252,24 @@ No observed constant, fitted pressure, Einstein equation, continuum Regge
 theorem, physical mass definition, or universal infrared prescription is
 imported. The coefficient `p/tau=4` is fixed internally by homogeneous spatial
 stationarity, while the overall coupling and sign remain open.
+
+## Block 13 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Block-12 centered affine bag | inherited source and normalization | stacked bounded theorem | yes | its generic residuals are recomputed as an active control; no physical mass license is inherited |
+| six-neighbor binary radius-one neighborhood | isolated-defect selector domain | current Lattice locality plus explicit binary specialization | yes | selector classification is exhaustive on all 128 assignments |
+| actual axial tick edge and line-averaged metric map | replacement source carrier | source-bound Regge theorem | yes | edge/action selection is not inferred from current axioms |
+| coefficient `2tau` | line-source normalization | derived from the inherited `T_tau_tau=tau` and exact edge derivative `1/2` | yes | not fitted to Newton's law or observation |
+| finite tori `L=3,...,8` | full-null inventory | explicit finite fixtures | yes for the exhaustive claim | no arbitrary-size or continuous-Brillouin theorem inferred |
+| Moore-Penrose and independent SVD/lstsq solves | null/range diagnostics | elementary finite-dimensional linear algebra | yes | direct residuals, not solver success flags, are load bearing |
+| open-boundary Green kernel | static radial consequence | explicit infrared ensemble | yes for `1/r` shape | compact `k=0` incompatibility remains visible |
+| physical defect/mass/Record identification | TOE interpretation | open import | no for theorem; yes for physical closure | not assumed |
+| dynamic conserved history and geometry equation | causal/gravity completion | open import | no for static theorem; yes for autonomous closure | the `k_tau!=0` control remains nonconserved |
+| action representative/unit, coupling orientation/sign, infrared ensemble, and nonlinear completion | physical geometry selection | open imports | no for theorem; yes for physical gravity | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The improvement is one explicit alternative representative. No uniqueness,
+naturalness, physical selection, Einstein equation, Newton constant,
+Lorentzian potential, arbitrary-lattice extrapolation, or realized history is
+imported.

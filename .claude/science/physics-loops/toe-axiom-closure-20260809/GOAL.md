@@ -443,3 +443,45 @@ action/update with orientation and coupling, the combined conservation
 equation, and the zero-mode/boundary ensemble. This candidate wording is
 sufficient only by premise. No canonical axiom is edited, no necessity or
 minimality claim is made, and no TOE percentage moves.
+
+## Block 13 Target And Disposition
+
+Block 13 executes Block 12's highest-value live route: an explicit local
+flat-law-preserving source improvement. For a spatial cell and its six nearest
+neighbors,
+
+`d_iso=x_i prod_(j~i)(1-x_j)-(1-x_i)prod_(j~i)x_j`
+
+selects only an isolated occupied cell or isolated hole. With `B` the centered
+Block-12 bag deviation and `L=2tau(ell_tau-1)` one actual axial tick-edge
+deviation, the improvement is
+
+`I_iso=d_iso(L-B)`.
+
+It vanishes for every configuration at flat geometry, is complement covariant,
+and does not activate on a wrapping plane. On the isolated static tube it
+replaces the full bag source by `s_line=2tau e_tau-edge`. The coefficient is
+fixed by the inherited homogeneous source and the actual edge derivative
+`d ell_tau/d h_tau_tau=1/2`, not by a Newton target.
+
+For static momentum, the axial gauge factor is exactly zero and the metric
+source is exactly pure tick. Direct checks against the actual Regge Hessian
+cover all 1,281 nonzero modes on spatial tori `L=3,...,8`; every mode has five
+zeros, the line is compatible with their full null space, and the unprojected
+edge equation solves to direct residual below `5e-12`. The unprojected metric
+response retains `|k|^2h_tau_tau->2tau` and the open `1/r` shape.
+
+This retires the Block-12 `O(k^3)` gauge and `O(k^2)` extra-null residual only
+for the improved named static source. It does not retire the compact nonzero-
+charge `k=0` compatibility condition, and a fixed vertical line at
+`k_tau!=0` is not a conserved dynamic history. The finite inventory is not an
+arbitrary-lattice or continuous-momentum theorem.
+
+The candidate axiom consequence does not need broader wording: Block 12's
+Geometry-indexed history/action amendment already registers every
+geometry-dependent improvement. Physical closure must still select the
+representative and mass/Record carrier, supply a dynamic history and geometry
+equation, choose coupling orientation/sign and the infrared ensemble, and
+derive nonlinear and realized-history completion. No canonical axiom is
+edited, no necessity/minimality or universal no-go claim is made, and no TOE
+percentage moves.

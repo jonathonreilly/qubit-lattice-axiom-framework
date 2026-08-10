@@ -33,5 +33,16 @@ Block 12's negative statement is deliberately restricted to the bare finite
 periodic equation for the displayed localized source. Its exact wrapping-plane
 solution and six live completion families prohibit any broader no-go wording.
 
+Block 13 retires Block 12's generic nonzero-mode gauge and extra-null residuals
+for one new improved isolated static source. The Block-12 row remains true for
+its named affine-bag fixture but is not evidence against alternate local
+representatives.
+
+| bare periodic total tick charge and fixed dynamic vertical line | one actual axial tick-edge source at `k=0`, or the same fixed line at one named `k_tau!=0` mixed mode | the periodic `k=0` Hessian has eleven zeros and direct residual `1.802776`; the dynamic control has gauge norm `0.7947` and separated fifth-branch overlap `0.00661` | N1--N8 complete in Block 13; open/infinite, fixed-global-mode, compensating/background, curved/balanced, combined-geometry, dynamic-worldline, and neutral-pair routes remain live | two bounded bare-fixture statements only; no compact-gravity, dynamic-matter, mass, action, axiom, or universal no-go | choose a non-bare infrared ensemble or construct a closed combined matter-geometry history |
+
+The steelman is adopted: compact charge balance and dynamic worldline closure
+are ordinary live completion mechanisms. The negative content does not extend
+beyond the two displayed bare equations.
+
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.

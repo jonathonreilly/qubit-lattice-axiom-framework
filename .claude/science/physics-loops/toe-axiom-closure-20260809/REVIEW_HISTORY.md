@@ -704,3 +704,40 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   `5926d3ee93`, pushed the dedicated branch, and opened mergeable stacked PR
   #6080 on the exact #6079 delivery head. Hard landing order is #6063, #6065,
   #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079, then #6080.
+
+## Block 13 direct-review record
+
+- All 128 radius-one binary neighborhoods are classified independently. The
+  selector is signed under complement, invariant under proper spatial cubic
+  permutations, and zero on the wrapping-plane fixture.
+- The local `I_iso=d_iso(L-B)` term is identically zero at flat geometry and
+  exactly converts the selected isolated bag to one actual axial tick edge.
+  The coefficient two follows from the inherited unit tick source and the
+  actual metric derivative one-half.
+- The static axial gauge row is exactly zero and the metric row is pure tick.
+  The old bag's generic gauge and extra-null residuals are active controls;
+  the explicit counter-improvement cancels both and changes the metric source
+  only at `O(k^2)`.
+- Every one of 1,281 nonzero modes on `L=3,...,8` has five numerical null
+  directions. The worst full-null overlap is `9.243e-15` and direct
+  unprojected edge residual `1.273e-13`.
+- Four unprojected long-wave directions give coefficients
+  `2.0001042,2.0000347,2.0000148,1.9999884`; halving momentum improves every
+  error and the regulated open kernel retains `1/(4 pi r)` shape.
+- The compact `k=0` residual is `1.802776`. The mixed dynamic control has
+  gauge norm `0.7947` and a separately extracted fifth-branch overlap
+  `0.006607`, preventing static evidence from being promoted to a worldline.
+- The primary runner is `PASS=28 FAIL=0`. A separate SVD/lstsq recomputation
+  passes eight families, and 28 process-local mutations each produce the
+  intended named failure.
+- The source note carries the complete N1--N8 packet and five-resolution
+  stdout certificate. It adopts the compact/dynamic steelman and rejects any
+  universal no-go, new-axiom requirement, or physical-mass claim.
+- The graph is regenerated at 5,459 nodes / 15,553 edges; the note has
+  out-degree four and the harness adds one edge. Remaining direct repository,
+  isolated-pipeline, and changed-evidence gates are pending.
+- A live open-PR sweep at `2026-08-10T09:52:42Z` finds #6080 `CLEAN`, no
+  newer science PR, and no collision in the cell-cutting, semantic-map, or
+  finite neighbor-word stacks. `origin/main` remains `323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.
+- The canonical memo is byte-identical to the stacked base, no percentage
+  moves, and no `review-loop` is invoked.

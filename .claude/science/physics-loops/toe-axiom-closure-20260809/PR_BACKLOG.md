@@ -198,3 +198,16 @@ on the exact #6079 delivery head
 `60ff548ab2ec9963d4e0e607e2e0428854f0e3cf`. Hard landing order is #6063,
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 then #6080.
+
+Block 13 is packaged on branch
+`physics-loop/toe-axiom-closure-block13-20260810`, based on the exact Block 12
+delivery head `a0ed5ebb1c302d2bb4a28c53394ffc3d3554638f`. The signed
+isolated-defect selector, centered tick-edge line-minus-bag improvement,
+analytic static gauge/pure-tick source, exhaustive 1,281-mode full-null and
+unprojected edge solves, unprojected lapse pole, compact/dynamic controls,
+N1--N8 packet, and unchanged candidate axiom map are complete. The primary
+runner is `PASS=28 FAIL=0`; an independent eight-family SVD/lstsq computation
+agrees and all 28 process-local mutations fail closed. Graph registration is
+5,459 nodes / 15,553 edges with note out-degree four. Direct conformance and
+PR delivery remain pending. The canonical axiom memo is untouched, the fixed
+TOE percentages do not move, and no `review-loop` is used.

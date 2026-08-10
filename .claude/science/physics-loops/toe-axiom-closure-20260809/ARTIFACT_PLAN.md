@@ -222,3 +222,27 @@ Block 12 packages a stacked bounded theorem only if it contains all of:
    minimality, universal no-go, or percentage claim; and
 7. an exact runner/cache, independent recomputation, full mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 13
+
+Block 13 packages a stacked bounded theorem only if it contains all of:
+
+1. one explicit proper-cubic, complement-covariant range-one isolated-defect
+   selector, with exhaustive classification of all 128 local neighborhoods;
+2. a centered `I_iso=d_iso(L-B)` action improvement that vanishes for every
+   flat configuration, replaces the isolated bag by one actual axial tick
+   edge, and leaves the wrapping-plane sector unchanged;
+3. an internally fixed line coefficient, exact static gauge identity, and
+   exact pure tick metric source on the source-bound Regge carrier;
+4. exhaustive full-null and unprojected edge-equation checks on every nonzero
+   static mode of `L=3,...,8`, with the finite inventory and numerical scope
+   stated explicitly rather than promoted to an all-momentum theorem;
+5. an unprojected four-direction lapse pole, convergence control, open `1/r`
+   tail, and active old-bag, compact-`k=0`, and `k_tau!=0` controls;
+6. a complete N1--N8 packet, an exact axiom/convention consequence map showing
+   the Block-12 amendment remains sufficient, and no canonical edit,
+   necessity, minimality, universal no-go, physical mass, or percentage claim;
+   and
+7. a source-pinned runner/cache, independent SVD/lstsq recomputation, full
+   process-local mutation sensitivity, harness/graph registration, and direct
+   conformance review.

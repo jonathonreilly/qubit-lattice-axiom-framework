@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10.py
+runner_sha256: 9f9c35e92e98c2f28ea07c2eea3ca623972790dcd122c9fb4b593f73611e4bf6
+input_fingerprint_sha256: 940d1e69e3a70f774a13fdc00f19686d312a6f0c95b718e847e908ef5e854484
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 28.40
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the line coefficient is fixed by the internally derived Block-12 homogeneous source
+package_local_integrity_reads: current axioms, Block-12 bag residuals, equal-form tick graining, and the actual Regge Hessian are source-bound
+analytic_boundary: flat-law preservation, axial metric source, and static gauge Ward are exact; extra-null compatibility is exhaustive on named finite tori
+physical_boundary: defect/action selection, mass identification, coupling, sign, infrared ensemble, and dynamic histories remain open
+[PASS] source-current-axioms: the current axioms do not silently supply a history action, source/action bridge, or physical mass
+[PASS] source-block12-residual: Block 12 names the localized gauge, extra-null, and periodic-zero-mode residuals attacked here
+[PASS] source-regge-boundary: the supplied Regge carrier has four gauge zeros plus one extra non-metric zero branch at nonzero momentum
+[PASS] source-tick-primitive: the approved primitive grants equal-form tick graining but no dynamics, mass, source, or selector
+[PASS] isolated-defect-classification: the range-one selector is +1 only on an isolated occupied site, -1 only on an isolated hole, and zero otherwise
+[PASS] defect-complement-covariance: binary complement reverses the signed isolated-defect indicator exactly on all 128 neighborhoods
+[PASS] flat-law-preserving-counter-improvement: the actual centered Kuhn bag and centered tick line make d_iso(L-B) vanish on all 128 flat neighborhoods
+[PASS] unique-line-normalization: the actual unit tick edge has metric derivative one-half, so preserving Block-12 T_tt=1 uniquely fixes line coefficient two
+[PASS] homogeneous-source-preservation: the bag-to-line counter-improvement has zero homogeneous metric source and preserves the derived tick-only normalization
+[PASS] isolated-source-replacement: on the selected isolated unit tube, the local counter-improvement replaces the complete bag edge row by the tick-edge line row
+[PASS] wrapping-plane-preservation: the range-one correction vanishes on every site of the periodic wrapping-plane fixture
+[PASS] counterterm-cancels-bag-residuals: the finite local line-minus-bag stencil cancels both named generic residuals rather than projecting the source
+       bag gauge=4.849e-03, bag null=5.315e-03; corrected gauge=0.000e+00, corrected null=2.357e-14
+[PASS] counterterm-leading-source-neutrality: the correcting stencil changes the metric source only at order k squared and therefore preserves the monopole residue
+       measured metric-source exponent=1.999624
+[PASS] static-axial-gauge-ward: for k_tick=0 the actual tick-edge source annihilates all four discrete vertex-gauge columns identically
+[PASS] static-pure-tick-metric-source: for every static momentum the line row maps exactly to pure unit T_tt with zero spatial stress and shift
+[PASS] finite-torus-mode-inventory: every nonzero static mode on each periodic spatial torus L=3 through L=8 has exactly five Regge zero modes
+       modes=1281; wrong zero counts=0
+[PASS] finite-torus-full-null-compatibility: the tick-edge source annihilates the complete five-dimensional null space on all 1,281 exhaustive nonzero modes
+       max gauge=0.000e+00; max full-null overlap=9.243e-15
+[PASS] finite-torus-unprojected-solvability: the unprojected actual edge equation solves on all 1,281 exhaustive nonzero static modes
+       max solve residual=1.273e-13
+[PASS] isolated-source-additivity: two separated static defect lines retain exact gauge/full-null compatibility and additive tick charge
+[PASS] unprojected-regge-lapse-pole: without any source projection, four directions give |k|^2 h_tt -> 2 in the actual Regge metric Hessian
+       coefficients=2.0001042,2.0000347,2.0000148,1.9999884
+[PASS] unprojected-pole-convergence: halving momentum reduces every unprojected lapse-pole coefficient error
+[PASS] open-boundary-green-tail: the unprojected static pole retains the regulated open-boundary 1/(4 pi r) Green shape
+[PASS] periodic-zero-mode-boundary: the nonzero total tick charge still lies outside the bare k=0 periodic Hessian range
+       null overlap=1.802776; solve residual=1.802776
+[PASS] dynamic-history-control: a tick-dependent Fourier mode is not covered: the fixed vertical line then has nonzero gauge and extra-null overlap
+       gauge=7.947e-01; separated extra-null overlap=6.607e-03
+[PASS] proper-cubic-source-covariance: all 24 proper spatial cubic rotations preserve both the range-one neighbor class and the tick-only source
+[PASS] theorem-source-surface: the note states the local correction, exact line source, exhaustive scope, unprojected pole, axiom map, and N1-N8 packet
+[PASS] boundary-source-surface: the note preserves action-selection, physical-mass, periodic, dynamic-history, no-go, governance, and percentage boundaries
+[PASS] canonical-axiom-nonmutation: the canonical memo contains none of the tick-edge defect improvement or candidate-amendment wording
+per_element: checked the actual axial tick-edge metric derivative, unique coefficient two, and exact static gauge factor
+per_site: checked all 128 range-one neighborhoods, isolated bag-to-line replacement, complement covariance, and plane nonactivation
+per_mode: checked every nonzero static Fourier mode on L=3 through L=8 tori against gauge, full null space, and edge solvability
+per_block: checked local counter-improvement through unprojected Regge lapse pole, convergence, and regulated radial Green tail
+lattice_wide: checked 1,281 nonzero periodic modes and separately retained the incompatible nonzero total-charge k=0 mode
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

@@ -536,3 +536,36 @@ stacked PR #6080 on the exact #6079 delivery head
 `60ff548ab2ec9963d4e0e607e2e0428854f0e3cf`. Hard landing order is #6063,
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 then #6080. The canonical memo and fixed TOE percentages remain unchanged.
+
+## Block 13 science handoff
+
+Block 13 finds the explicit local improvement left open by Block 12. The
+signed six-neighbor selector has exactly two nonzero neighborhoods among 128.
+Multiplying it by the centered line-minus-bag deviation preserves the entire
+flat law, maps an isolated occupied tube to one actual axial tick edge, and
+leaves the wrapping-plane sector untouched.
+
+The actual static edge source has an analytic zero gauge row and exact pure
+tick metric source. Exhaustive direct diagonalization and unprojected solves
+cover 1,281 nonzero modes on `L=3,...,8`; every mode has five zeros, the worst
+full-null overlap is below `2e-13`, and the worst edge-equation residual is
+below `5e-12`. Four long-wave directions retain the unprojected
+`|k|^2h_tau_tau->2tau` pole and the open `1/r` kernel.
+
+The compact nonzero-charge `k=0` equation and fixed-line `k_tau!=0` control
+remain negative. The latter has nonzero gauge and a separately extracted
+fifth-branch overlap, so the theorem remains static. The source N1--N8 packet
+keeps open/fixed/neutralized/curved ensembles, combined geometry constraints,
+and dynamic worldlines live.
+
+The primary runner is `PASS=28 FAIL=0`; an independent SVD/lstsq computation
+passes eight load-bearing families, and all 28 process-local mutations fail
+at their intended checks. Citation registration is 5,459 nodes / 15,553
+edges, with note out-degree four and a canonical harness edge.
+
+The existing candidate history/action amendment is sufficient to register the
+new improvement but remains hypothetical. Physical representative/mass
+selection, action unit, geometry update, coupling/sign, infrared ensemble,
+nonlinear completion, Born selector, and realized history remain open. The
+canonical memo and fixed percentages are unchanged, and no `review-loop` is
+invoked. PR delivery is pending direct conformance and the stacked push.

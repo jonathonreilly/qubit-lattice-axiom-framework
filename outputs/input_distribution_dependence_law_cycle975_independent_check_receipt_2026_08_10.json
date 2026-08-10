@@ -28,7 +28,7 @@
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "source_sha_match=True; canonical_cache_fresh=True; cache_payload_match=True; live_input_pins_match=True; primary_certificates=4; determinism=True; runtime_s=0.079980",
+   "finding": "source_sha_match=True; canonical_cache_fresh=True; cache_payload_match=True; live_input_pins_match=True; primary_certificates=4; determinism=True; runtime_s=0.077165",
    "pass": true
   }
  },
@@ -112,9 +112,9 @@
     "1/2"
    ]
   },
-  "primary_cache_sha256": "a4af41c10b904ac3a20861b954074a42cf4437146f80919bfb518eda17b57714",
+  "primary_cache_sha256": "01a2dc5631b69be72a833dac0c650dfc39955bb21f36586ed0e54f23c67c732c",
   "primary_payload_matches": true,
-  "primary_source_sha256": "a9aedfc057544206209e155ea168a36dc3def2d39280c9a5e921f7752e30f9d9",
+  "primary_source_sha256": "9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb",
   "refute_spec_count": 4
  },
  "checker_source_sha256": "239ea53e1f5616d989b0683df0fa4336b28bdde62baf3ab3afda62a548bc0408",
@@ -144,6 +144,6 @@
    "target": "source/cache/receipt pins and non-executing AST boundary"
   }
  ],
- "runtime_sec": 0.07997974997851998,
+ "runtime_sec": 0.07716529199387878,
  "stdout_bytes": 3396
 }

@@ -1,8 +1,10 @@
 {
  "actual_current_surface_status": "bounded-support",
+ "admitted_observation_status": null,
  "all_certificates_pass": true,
  "artifact": "input_distribution_dependence_law",
- "author_status": "proposed_retained",
+ "audit_required_before_effective_retained": true,
+ "bare_retained_allowed": false,
  "certificates": {
   "A_INPUT_FAMILY": {
    "finding": "input_family=mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]; exact_cells=5; family_words=20; full_state_resolved=12/40 rows,384/7680 edge_pairs; cell_counts=[('p=0', 'marginal 6/20 words and 192/3840 edge pairs'), ('0<p<1/2', 'marginal 6/20 words and 192/3840 edge pairs'), ('p=1/2', 'marginal 0/20 words and 0/3840 edge pairs'), ('1/2<p<1', 'marginal 6/20 words and 192/3840 edge pairs'), ('p=1', 'marginal 6/20 words and 192/3840 edge pairs')]",
@@ -17,7 +19,7 @@
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; provenance_blobs={\"cycle970_note\":\"f7b788d8076e7864bc5dbcbb33cb9e49554e494a\",\"cycle970_runner\":\"4670bcb9d83cfc039f1336398c6a4aa4af014f7c\",\"cycle972_note\":\"e328562ec0ff3b80acef65c490bb5903cc3e8438\",\"cycle972_runner\":\"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15\"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; determinism_replay=True; runtime_s=0.602459<timeout_s=300; stdout_upper_bound=3487<6000<150000",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; provenance_blobs={\"cycle970_note\":\"f7b788d8076e7864bc5dbcbb33cb9e49554e494a\",\"cycle970_runner\":\"4670bcb9d83cfc039f1336398c6a4aa4af014f7c\",\"cycle972_note\":\"e328562ec0ff3b80acef65c490bb5903cc3e8438\",\"cycle972_runner\":\"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15\"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; determinism_replay=True; runtime_s=0.561721<timeout_s=300; stdout_upper_bound=3487<6000<150000",
    "pass": true
   }
  },
@@ -102,7 +104,7 @@
    "docs/MINIMAL_AXIOMS_2026-06-29.md",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
   ],
-  "primary_source_sha256": "a9aedfc057544206209e155ea168a36dc3def2d39280c9a5e921f7752e30f9d9",
+  "primary_source_sha256": "9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb",
   "provenance_never_executed": true,
   "provenance_pins_match": true,
   "sha256": {
@@ -902,11 +904,12 @@
    ]
   }
  },
+ "hypothetical_axiom_status": null,
  "law_formula": "for W_d=CNOT(a+d->a), y=x XOR n_d",
  "marginal_identity": "P_p(y=0|n_d=0)=p, P_p(y=0|n_d=1)=1-p; TV(P_p(.|0),P_p(.|1))=|2p-1|",
- "primary_source_sha256": "a9aedfc057544206209e155ea168a36dc3def2d39280c9a5e921f7752e30f9d9",
+ "primary_source_sha256": "9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb",
  "reachability_to_target": "closes",
- "runtime_sec": 0.6024588749278337,
+ "runtime_sec": 0.5617205000016838,
  "science_digest": "aaed6bacc407cac135187bb68d077acc3baa7458e0d01ded392194872d6487b5",
  "stdout_bytes": 3403,
  "target_claim_type": "bounded_theorem",

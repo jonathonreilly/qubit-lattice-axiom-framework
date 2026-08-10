@@ -304,9 +304,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: one equal-positive-weight tick-plus-face-diagonal closed-line mixture has an exact every-mode Ward identity, beta sqrt two minus one timelike mean current, 2369 fixed-global full-null-compatible unprojected nonzero sources, and a source-derived shared-transverse coefficient-four pole; the strictly positive uniform edge-length dilation null vector exactly excludes every nonzero nonnegative actual-edge source from the bare compact flat quadratic range; one connected rank-one massive history, selected compact constraint or counter-source, physical representative/source selection, geometry dynamics, coupling, nonlinear, projective, Born, and realized-history selection remain open
 hypothetical_axiom_status: the existing geometry-indexed history/action amendment already registers a fixed history/action representative and open, fixed-global, background-subtracted, or constrained infrared ensemble and is sufficient to type this construction; it remains unadopted, not proved necessary or minimal, no broader wording is needed, and no wording is edited into the axioms
-review_disposition: block15_science_candidate_complete_direct_conformance_passed_isolated_pipeline_pending
-pr_status: block15_local_science_candidate_stacked_on_exact_block14_delivery_head
-pr_url: null
+review_disposition: block15_direct_and_isolated_conformance_passed_with_known_dependency_policy_epoch_stop
+pr_status: block15_science_committed_conformance_passed_awaiting_push_and_pr
+pr_url: pending
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

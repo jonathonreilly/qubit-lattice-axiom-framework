@@ -848,11 +848,23 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   findings; strict audit lint has zero errors; premise purity and
   graph/link/class-F invariants pass. Python compilation, YAML parsing, diff
   whitespace, source-pinned cache, and canonical nonmutation also pass.
-- A live sweep at `2026-08-10T12:14Z` finds PR #6082 `CLEAN` and mergeable on
+- A live sweep at `2026-08-10T12:26Z` finds PR #6082 `CLEAN` and mergeable on
   exact head `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`, no newer TOE-closure
   science PR, and `origin/main` at
-  `39c74017b870c27c804e3992f2a11e90336476b2`. The isolated full-pipeline and
-  changed-evidence rehearsals remain the conformance step.
+  `39c74017b870c27c804e3992f2a11e90336476b2`. Open PRs #6073, #6069, and
+  #6072 share only the mechanically regenerated citation manifest; there is
+  no note, runner, cache, or campaign-checkpoint collision.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph/manifest reconstruction, load-bearing computation,
+  ledger seeding and fixed point, sanitization, classifier capture, and
+  effective-status computation. Restoration then reproduces only the known
+  governed dependency-policy epoch mismatch.
+- The disposable rehearsal contains 1,066 tracked generated changes and 827
+  new ledger shards; all were removed with the disposable worktree. Seeded
+  changed-evidence readiness checks Block 15 alone and all 15 stacked claims
+  with zero failures and zero control failures.
 - The canonical memo and fixed TOE percentages are unchanged. No universal
   compact-source, single-worldline, physical-mass, or dynamics claim is made,
   and no `review-loop` is invoked.
+- The exact 18-file science delta is commit `8cc86adec4`; push and stacked PR
+  delivery remain pending.

@@ -251,6 +251,10 @@ pole, and the exact compact nonnegative-cone dilation separator. The runner is
 `PASS=28 FAIL=0`; the seven-family independent reconstruction agrees and all
 28 isolated forced-false mutations fail closed. Graph registration is 5,461
 nodes / 15,565 edges with note out-degree five. Direct repository conformance
-passes; isolated full-pipeline and seeded changed-evidence rehearsals remain
-before opening the stacked PR. The canonical axiom memo and fixed percentages
-are untouched, and no `review-loop` is used.
+passes. The isolated pipeline passes every stage through effective-status
+computation and then reproduces the known governed dependency-policy epoch
+mismatch at restoration. Its 1,066 tracked generated changes and 827 new
+ledger shards were discarded. Seeded changed evidence checks Block 15 alone
+and all 15 stacked claims with zero failures or control failures. Science
+commit is `8cc86adec4`; push and stacked PR delivery are pending. The canonical
+axiom memo and fixed percentages are untouched, and no `review-loop` is used.

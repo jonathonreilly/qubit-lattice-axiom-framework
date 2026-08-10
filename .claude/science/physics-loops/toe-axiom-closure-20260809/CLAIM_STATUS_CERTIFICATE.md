@@ -329,8 +329,10 @@ campaign authors no verdict.
   out-degree five and the harness adds one edge. Direct vocabulary, strict
   audit lint, graph/link/class-F invariants, premise purity, Python/YAML,
   whitespace, source-pinned cache, and canonical-axiom gates pass. The
-  isolated full-pipeline result is recorded in the conformance checkpoint;
-  no audit verdict is authored here.
+  isolated full pipeline passes through effective-status computation, then
+  reproduces the governed dependency-policy epoch stop at restoration. Seeded
+  changed-evidence readiness checks Block 15 and all 15 stacked claims with no
+  failures or control failures. No audit verdict is authored here.
 
 No canonical axiom is edited and the fixed TOE percentages do not move. The
 Block 15 source remains bounded support and requires independent audit; this

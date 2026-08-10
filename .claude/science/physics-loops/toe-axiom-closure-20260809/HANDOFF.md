@@ -688,8 +688,18 @@ Direct vocabulary, strict audit lint, graph/link/class-F, premise, Python/YAML,
 whitespace, cache, and canonical checksum gates pass. The live stack has PR
 #6082 `CLEAN` and mergeable on exact head
 `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`; `origin/main` is
-`39c74017b870c27c804e3992f2a11e90336476b2`. The isolated full pipeline and
-seeded changed-evidence rehearsal remain the conformance step before delivery.
+`39c74017b870c27c804e3992f2a11e90336476b2`. The only shared path with open
+PRs #6073, #6069, and #6072 is the mechanically regenerated citation manifest;
+there is no note, runner, cache, or campaign-checkpoint collision.
+
+The isolated full pipeline passes premise purity, model-family normalization,
+graph/manifest reconstruction, load-bearing computation, ledger seeding and
+fixed point, sanitization, classifier capture, and effective-status
+computation. Restoration then reproduces only the known governed dependency-
+policy epoch mismatch. Its 1,066 tracked generated changes and 827 new ledger
+shards were discarded with the disposable worktree. Seeded changed-evidence
+readiness checks Block 15 alone and all 15 stacked claims with zero failures
+and zero control failures.
 
 The existing history/action amendment is sufficient to type the conditional
 fixed action and fixed-global ensemble if adopted. It remains hypothetical;
@@ -697,3 +707,6 @@ no canonical axiom or fixed TOE percentage changes, and no `review-loop` is
 invoked. The next exact route is a connected positive locally force-balanced
 rank-one timelike junction, or a source-bound sign-indefinite geometry/
 constraint contribution that cancels the compact dilation pairing.
+
+The exact 18-file science delta is commit `8cc86adec4`. Push and stacked PR
+delivery remain pending.

@@ -48,6 +48,20 @@ families are tracked separately in `APPROACH_REGISTRY.md`.
 | coarse-CP quotient | quotient proportional hidden refinements | exact finite prior result does not identify all effect-equal programs across changed conditions | use as partial ingredient only |
 | refined axiom addition | select extractor/uniformizer, register programs, and identify preparation equivalence | sufficient on mapped domain, not necessary | governance fallback only |
 
+## Block 5 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| direct raw-sample state typing | identify `A in M_2(C)` with a density operator | density body has Gaussian measure zero | retire on displayed full-support law |
+| conditioned CNOT covariance | `T_n(A)=X^n A X^n` and pushforward of `mu_C` | exact measure and extractor equivariance for every `lambda` | keep as carrier; retire as selector |
+| fixed-effect descent | hold `E_0=(1/2)P_z` fixed across controls | exact pairs `(3/10,1/5)` and `(2/7,3/14)` | cannot supply same-effect quotient |
+| simultaneous state/effect transport | co-transport `rho` and `E` by `X` | grade is exactly invariant | positive covariance, but effects differ |
+| pure fixed-control preparation | conjugate one common blank target | spectrum is preserved and cannot reach the varying extractor family | retire for declared common-blank route |
+| random/coherent control preparation | supplied one-weight `q`, CNOT, and control restriction | exactly prepares `diag(1-q,q)` for every supplied `q` | positive carrier; selection remains open |
+| direct Gaussian comparator | threshold the existing trace-CDF uniformizer at compiler weights | mathematically available; physical controller, program, and occurrence absent | rank next |
+| nonunitary/record process | select a stationary density functional and instrument from local dynamics | not tested by the conditioned-unitary boundary | keep live |
+| refined axiom addition | register law-derived density/control map, program/effect quotient, splitting, and occurrence | candidate consequence map only | governance fallback only |
+
 ## Prior-art sweep
 
 Searched authority: `origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.

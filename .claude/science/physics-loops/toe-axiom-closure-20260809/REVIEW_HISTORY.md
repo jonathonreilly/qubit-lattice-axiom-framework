@@ -296,3 +296,58 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   six covariant incoming-CNOT/XOR witnesses, but its claim boundary explicitly
   leaves the continuous `M_2(C)` Admissibility law open. It is a next-block
   contact seed and does not collide with the fixed-condition compiler.
+
+## Block 5 CNOT contact/type-order synthesis
+
+- Re-derived the finite basis-control contact algebra on arbitrary one-site
+  matrices as `T_n(A)=X^n A X^n`; PR #6069 remains adjacent context rather
+  than a load-bearing branch dependency.
+- Proved the raw-content type boundary: the density-operator body is
+  three-real-dimensional inside raw `M_2(C)` dimension eight and has measure
+  zero under the full-support Gaussian.
+- Proved measure and extractor equivariance for the whole isotropic family.
+  Every `lambda` survives conditioned-CNOT covariance, so the contact is a
+  carrier rather than a compiler selector.
+- Separated fixed-effect descent from simultaneous state/effect covariance.
+  At `C=P_z`, the exact fixed-effect pairs are `(3/10,1/5)` and
+  `(2/7,3/14)`, with general gap `1/[2(2lambda+5)]`; co-transport restores the
+  grade only by changing the effect.
+- Proved the positive supplied-control escape: CNOT plus control restriction
+  prepares `diag(1-q,q)` from a blank target. The exact Block 4 fixtures use
+  `q=2/5` and `q=3/7`, while every supplied `q` remains valid.
+- Executed the complete N1--N8 discipline. Nine materially distinct routes
+  were attempted, three walls were audited for independence, hidden inputs
+  and source residuals were matched, live partial closures were preserved, and
+  the strongest comparator/controller steelman was accepted. No global
+  unitary/contact no-go or axiom-necessity claim is made.
+- The primary runner is `PASS=28 FAIL=0`, including substantive
+  per-element/site/mode/block/lattice-wide output. An independent SymPy route
+  reproduces the all-`lambda` density, effect-gap, preparation, and XOR
+  formulas.
+- Eighteen disposable-copy mutations cover current/parent/prior source
+  bindings, dimension, XOR, conjugation, extractor, spectrum, effects,
+  mixtures, source boundaries, machine status, canonical nonmutation, and the
+  N1--N8 gate. Each reaches its intended named failure family; no tracked file
+  is changed by the probes.
+- Registered the source and runner in the canonical harness and regenerated
+  the citation manifest at 5,451 nodes / 15,507 edges, the intended one-node/
+  five-edge delta. The new note has out-degree four and the harness gains one.
+- Direct conformance passes: vocabulary lint has zero findings; strict audit
+  lint has zero errors; graph/link invariants report zero link and class-F
+  violations with the topology delta acknowledged; YAML and Python compile;
+  the runner cache is SHA/input-fingerprint fresh; whitespace and the exact
+  18-file stacked delta both pass.
+- The full pipeline passed premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. It then reproduced the current-main dependency-policy
+  epoch stop in restoration: the manifest pins `build_citation_graph.py` at
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  while the current file hashes to
+  `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  PR #6061 owns that repair; this branch does not copy it.
+- Pipeline cleanup restored 1,055 generated tracked changes and removed 817
+  new ledger shards after verifying every untracked path lay under
+  `docs/audit/data/ledger/`. The intended staged delta remains exact.
+- The canonical axiom memo is unchanged, no percentage moves, and no
+  `review-loop` is invoked. Final cold diff and stacked delivery remain.

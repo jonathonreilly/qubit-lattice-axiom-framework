@@ -89,3 +89,21 @@ operational quotient.
 The fixed-condition compiler does not import physical state identity,
 apparatus registration, cross-program preparation equivalence, Record
 occurrence, repeated trials, or realized-history typicality.
+
+## Block 5 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| full-support Gaussian `mu_C` and isotropic extractor family | typed contact target | constructed stacked parent | yes | mathematical completion only; not physically selected |
+| qubit density-operator body inside `M_2(C)` | direct-sample type test | elementary finite-dimensional geometry | yes | dimension/measure proof supplied in source |
+| Pauli `X` and conditioned CNOT | one-edge contact program | explicit route premise | yes | algebraically rederived; not a preferred current-axiom basis |
+| pushforward under `A -> X^n A X^n` | covariance carrier | elementary measure transport | yes | proves equivariance, not selection |
+| fixed half-`P_z` effect | same-effect stress test | explicit mathematical effect | yes | no physical effect registration inferred |
+| randomized/coherent control of supplied weight `q` | positive preparation escape | conditional finite-system input | yes for the escape only | weight, eigenbasis, reduction, and occurrence remain supplied |
+| finite CNOT census in PR #6069 | adjacent prior-art context | external unlanded branch | no | not imported or executed; one-edge algebra is rederived |
+| density functional, physical program quotient, and Record occurrence | physical closure | open imports | no for theorem; yes for TOE closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The theorem does not identify generic raw possibility content with a density
+operator, select `lambda`, select `q`, import an observed probability, infer a
+physical partial trace, or claim autonomous occurrence/history.

@@ -139,6 +139,39 @@ including cross-condition equivalence and occurrence. No canonical axiom is
 edited, and the fixed TOE percentages do not move because none of those
 physical/autonomous obligations is retired.
 
+## Block 5 Target And Disposition
+
+Block 5 tests the strongest finite contact seed now available: whether the
+basis-control CNOT/XOR law can type raw Gaussian possibility content as a
+density state, select one member of the Block 4 extractor family, or physically
+prepare its spectrum from a common blank.
+
+The positive target is an exact algebraic extension of the finite basis-state
+contact to arbitrary `M_2(C)` matrices and probability laws. The negative
+target is bounded to direct raw-sample typing and the declared conditioned-
+CNOT route. No global contact, unitary, instrument, or axiom-necessity no-go is
+permitted.
+
+The qubit density-operator body has real dimension three inside the
+eight-real-dimensional raw possibility space, hence it has measure zero under
+the full-support Gaussian. Conditioned CNOT acts as
+`T_n(A)=X^n A X^n`, and the whole isotropic extractor family is equivariant:
+
+`rho_(T_n#mu)^(lambda)=X^n rho_mu^(lambda) X^n`.
+
+Thus contact transports every `lambda`; it selects none. At `C=P_z`, the same
+fixed half-projector effect gives `(3/10,1/5)` across the two controls for
+`lambda=0` and `(2/7,3/14)` for `lambda=1`. Co-transporting the effect restores
+the grade but changes the effect, so it is not the required same-effect
+quotient. A supplied control-one weight `q` does prepare `diag(1-q,q)` from a
+blank target, including `q=2/5` and `q=3/7`; the CNOT is therefore an exact
+carrier, not a selector of the weight or eigenbasis.
+
+The residual axiom-side obligation is now more precise: derive a density
+functional or equivalent control weight/eigenbasis from the local law, then
+derive physical program/effect registration, splitting or restriction, and
+Record occurrence. No canonical axiom is edited, and no TOE percentage moves.
+
 ## Trace target
 
 The landed source states:

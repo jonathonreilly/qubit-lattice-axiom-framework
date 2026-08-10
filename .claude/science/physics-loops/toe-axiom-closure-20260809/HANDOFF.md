@@ -161,3 +161,45 @@ six incoming-CNOT/XOR dependence witnesses. Its stated boundary leaves the
 continuous `M_2(C)` Admissibility law open. Use it as a finite contact seed for
 the next physical compiler-selection attempt, not as a continuous decoder or
 preparation-quotient theorem.
+
+## Current CNOT contact/type-order block
+
+Block 5 consumes that finite contact seed without importing PR #6069 as a
+load-bearing dependency. The one-edge calculation is rederived for arbitrary
+target matrices: a basis-control incoming CNOT gives
+`T_n(A)=X^n A X^n`, pushes `mu_C` to `mu_(X^n C X^n)`, and transports every
+isotropic extractor member by the same conjugation.
+
+The type order matters. Qubit density operators occupy three real dimensions
+inside the eight-real-dimensional raw `M_2(C)` carrier, so the full-support
+Gaussian assigns their set measure zero. A generic raw realization is not a
+channel input without a derived density functional. Contact covariance does
+not provide that selector: every finite `lambda` survives.
+
+At `C=P_z`, holding `E_0=(1/2)P_z` fixed gives `(3/10,1/5)` across controls at
+`lambda=0` and `(2/7,3/14)` at `lambda=1`; the general positive gap is
+`1/[2(2lambda+5)]`. Co-transporting `E_0` restores the grade exactly, but
+compares different effects and is not the same-effect quotient. A supplied
+random or coherent control with one-weight `q` prepares `diag(1-q,q)` from a
+blank target, including the two displayed spectra at `q=2/5` and `q=3/7`.
+CNOT is therefore a carrier of a supplied spectrum, not a selector of `q` or
+the eigenbasis.
+
+The primary runner is `PASS=28 FAIL=0`. An independent SymPy derivation agrees
+on the all-`lambda` state and gap formulas and both preparation weights.
+Eighteen process-local mutations reach their intended named failure families.
+The source carries the complete N1--N8 gate and explicitly preserves
+comparators, dissipative instruments, randomized controls, and record-derived
+processes as live routes; no global contact/unitary no-go is claimed. The
+graph is regenerated at 5,451 nodes / 15,507 edges; the new note has out-degree
+four and the harness gains one row. Direct conformance passes. The full
+pipeline reaches only the known current-main dependency-policy epoch mismatch
+owned by PR #6061 after every earlier stage passes; 1,055 tracked generated
+changes and 817 generated ledger shards were cleaned. The canonical axiom memo
+and checkpoint-zero percentages remain unchanged. Continue without
+`review-loop`.
+
+Next exact action: test whether the existing Gaussian trace-CDF can be made a
+law-derived physical comparator/controller with a registered effect program
+and Record occurrence, or whether that construction necessarily supplies the
+same selector and program quotient it is meant to derive.

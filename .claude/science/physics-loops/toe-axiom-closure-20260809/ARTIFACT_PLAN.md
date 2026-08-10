@@ -63,3 +63,20 @@ Block 4 packages a stacked bounded theorem only if it contains all of:
 6. a hypothetical physical compiler interface, with no canonical axiom edit;
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 5
+
+Block 5 packages a stacked bounded theorem only if it contains all of:
+
+1. the exact density-set type/codimension boundary for the displayed
+   full-support Gaussian law;
+2. an algebraic conditioned-CNOT extension and measure/extractor equivariance
+   proof on arbitrary one-site matrices;
+3. exact fixed-effect versus transported-effect calculations for at least two
+   extractor members;
+4. an exact positive supplied-control preparation factorization that leaves
+   control-weight and eigenbasis selection visible;
+5. a complete N1--N8 gate rejecting any global contact/unitary no-go;
+6. a narrowed hypothetical axiom-side residual, with no canonical edit;
+7. an exact runner/cache, independent symbolic recomputation, mutation
+   sensitivity, harness/graph registration, and direct conformance review.

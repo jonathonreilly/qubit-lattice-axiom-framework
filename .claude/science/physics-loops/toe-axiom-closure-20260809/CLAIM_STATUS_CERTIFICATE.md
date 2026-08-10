@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact fixed-condition Gaussian second-moment density-operator extraction, quantile content-decoder pushforward, shared-effect descent, and bounded extractor-nonselection/atomic controls; physical compiler selection, program registration, cross-condition preparation equivalence, occurrence, and axiom adoption remain open."
+claim_type_reason: "Exact Gaussian raw-content type boundary, conditioned-CNOT measure/extractor equivariance, fixed-versus-transported effect separation, and supplied-control spectrum preparation; density-functional/control selection, physical program quotient, occurrence, and axiom adoption remain open."
 trace_class: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "a complete measure-to-density-operator-to-quantile-decoder-to-effect-grade compiler exists on the displayed Gaussian family at fixed condition; physical selection, atom splitting outside that completion, and the physical preparation/program quotient remain open"
-hypothetical_axiom_status: "one explicit Gaussian compiler and a narrower selection/registration residual are mapped; no canonical axiom edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "conditioned CNOT exactly transports the displayed Gaussian and every isotropic extractor member; supplied control weights exactly prepare the displayed spectra, but contact does not select the density functional, weight, eigenbasis, same-effect quotient, or occurrence"
+hypothetical_axiom_status: "the remaining candidate interface is narrowed to a law-derived density functional or control weight/eigenbasis plus physical program/effect quotient, splitting or restriction, and occurrence; no canonical axiom edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -49,6 +49,16 @@ bare_retained_allowed: false
   deterministic splitting for arbitrary nontrivial target grades.
 - Physical compiler selection, a general splitting resource, physical program
   occurrence, and cross-condition preparation equivalence remain open.
+- Block 5 proves that generic raw Gaussian content is almost surely not a
+  density operator before a density functional is supplied.
+- The conditioned-CNOT contact transports the full isotropic extractor family
+  covariantly and therefore does not select its `lambda` member.
+- Fixed-effect descent and simultaneous state/effect transport are distinct:
+  the former has exact positive gaps, while the latter compares different
+  effects and is not the required operational quotient.
+- A supplied control mixture can prepare each displayed spectrum exactly, but
+  the control weight, eigenbasis, restriction interface, and occurrence remain
+  open physical inputs.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

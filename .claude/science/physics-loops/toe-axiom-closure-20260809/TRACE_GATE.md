@@ -1,12 +1,12 @@
 ---
 trace_class: upstream_support
-target_claim_id: admissibility_record_physical_decoder_effect_quotient_bridge
-target_blocker_text: "derive a physical program-indexed content decoder and operational-effect quotient"
+target_claim_id: admissibility_record_physical_compiler_selection_bridge
+target_blocker_text: "derive physical compiler selection and preparation/program registration from local contact dynamics"
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: theorem
 campaign_native_target_reachability: advances
-next_trace_action: "Test whether explicit local contact/pointer dynamics selects and encodes the Gaussian density-operator/quantile compiler while identifying one preparation across program-dependent conditions; otherwise map the narrow owner-authorized axiom delta."
+next_trace_action: "Test a local Gaussian quantile comparator/controller or nonunitary Record process that derives rather than supplies the density functional, control weight/eigenbasis, physical program quotient, and occurrence."
 ---
 
 Block 1 closes the named low-arity mathematical frontier at standard-theorem
@@ -32,3 +32,14 @@ control isolates the need for splitting outside that completion. Physical
 program registration, cross-condition preparation equivalence, occurrence,
 and realized-history extension remain open. The trace therefore advances as
 upstream support without moving physical or autonomous TOE percentages.
+
+Block 5 extends the finite basis CNOT/XOR seed to arbitrary one-site matrices.
+The raw Gaussian almost surely misses the density-operator body, so channel
+semantics require a prior state-typing map. Conditioned CNOT transports the
+Gaussian and every isotropic extractor member by `X` conjugation and therefore
+does not select the compiler. A supplied control mixture prepares each target
+spectrum exactly, but supplies rather than derives its weight, eigenbasis,
+restriction, and occurrence. Fixed-effect grades differ even where simultaneous
+state/effect transport is covariant, so the physical same-effect quotient also
+remains open. This retires two direct routes without retiring the physical or
+autonomous obligation; the percentages remain fixed.

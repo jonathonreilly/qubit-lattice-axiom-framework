@@ -404,5 +404,11 @@ source roots, two sourced momentum brackets, and a two-witness pointwise
 coefficient no-overlap with full-quotient escape preserved. Primary
 runner/cache is `PASS=16 FAIL=0`; all 16 fresh-process runner-copy mutations
 exit nonzero at exactly one intended named check (`PASS=16 FAIL=0`). Graph is
-`5,467/15,602` with out-degree nine. Direct conformance and delivery remain
-pending. No `review-loop` is used.
+`5,467/15,602` with out-degree nine. Direct conformance is complete; delivery
+remains pending. The exact stack reaches only the inherited stage-7 policy-epoch
+mismatch after `4,805` rows and `3,683` runner classifications; an exact
+five-file current-main `39c74017b8` overlay passes all 18 stages and finalizes
+checkpoint `f8c59d2c5727`. Changed-evidence readiness is clean for Block 21
+alone (`1/1`) and all 21 stacked claims (`21/21`). Science is `e03fb0527c`;
+graph conformance is
+`08e4aa3640`. Delivery remains pending. No `review-loop` is used.

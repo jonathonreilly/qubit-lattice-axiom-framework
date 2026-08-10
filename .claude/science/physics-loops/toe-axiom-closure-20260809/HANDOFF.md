@@ -1042,3 +1042,12 @@ is `5,467/15,602`, out-degree nine. The exact next path is a law-selected
 covariant sourced constraint/gauge quotient on a full nonuniform solution,
 then continuous-zone and Lorentzian stability. No canonical edit, percentage
 move, audit verdict, or `review-loop` occurs.
+
+Direct conformance passes. The exact stack rebuilds `5,467` graph nodes /
+`15,602` edges, seeds `4,805` rows, and classifies `3,683` runners before
+reproducing only the inherited stage-7 dependency-policy epoch mismatch. A
+clean disposable overlay of exactly current-main `39c74017b8`'s five governed
+policy files passes all 18 stages and finalizes checkpoint `f8c59d2c5727`.
+Changed-evidence readiness marks Block 21 alone (`1/1`) and all 21 stacked
+claims (`21/21`) forensic-ready with zero failures and zero control failures.
+Science commit is `e03fb0527c`; graph-conformance commit is `08e4aa3640`.

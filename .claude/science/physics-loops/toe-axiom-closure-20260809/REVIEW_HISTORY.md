@@ -1323,4 +1323,16 @@ instance or Fourier census.
   Every mutation exits nonzero at exactly one intended named check; aggregate
   result is `PASS=16 FAIL=0`.
 - No canonical edit, fixed-percentage move, audit verdict, or `review-loop`
-  occurs. Direct conformance and delivery remain pending.
+  occurs.
+- Direct vocabulary, strict lint, premise purity, model normalization,
+  Python/YAML, whitespace, source/input cache, exact 17-path scope, canonical-
+  axiom nonmutation, and graph/link/class-F invariant gates pass.
+- The exact stacked pipeline rebuilds `5,467` nodes / `15,602` edges, seeds
+  `4,805` rows, and classifies `3,683` runners before reproducing only the
+  inherited stage-7 dependency-policy epoch mismatch. A clean disposable
+  overlay of exactly the five governed files from current-main `39c74017b8`
+  passes all 18 stages and finalizes checkpoint `f8c59d2c5727`.
+- Changed-evidence readiness marks Block 21 alone (`1/1`) and all 21 stacked
+  claims (`21/21`) forensic-ready with zero failures and zero control failures.
+  Science commit is `e03fb0527c`; graph-conformance commit is `08e4aa3640`.
+  Delivery remains pending and independent audit is required.

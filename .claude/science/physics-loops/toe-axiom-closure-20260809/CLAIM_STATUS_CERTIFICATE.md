@@ -555,5 +555,12 @@ independent_audit_required: true
   nonzero at exactly one intended named check (`PASS=16 FAIL=0`).
 - Citation graph: `5,467` nodes / `15,602` edges; new out-degree nine and
   nine resolved helpers.
+- Direct conformance passes. The exact stack reaches only its inherited
+  stage-7 dependency-policy epoch mismatch after seeding `4,805` rows and
+  classifying `3,683` runners. A disposable overlay of exactly the five
+  governed files from current-main `39c74017b8` passes all 18 stages and
+  finalizes checkpoint `f8c59d2c5727`. Changed-evidence readiness marks Block
+  21 alone (`1/1`) and all 21 stacked claims (`21/21`) forensic-ready with
+  zero failures and zero control failures. Independent audit remains required.
 - Governance: no axiom/primitive, audit status, ledger/queue, fixed
   percentage, or `review-loop` mutation.

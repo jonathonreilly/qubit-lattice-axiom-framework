@@ -1,0 +1,343 @@
+{
+  "artifact": "Cycle 973 independent repair-map refutation check",
+  "caps": {
+    "delta_vocabulary_size": 4,
+    "logical_world_cap": 6,
+    "pinned_blob_reads_exact": 26,
+    "reported_finding_cap": 26,
+    "row_catalog_exact": 26,
+    "working_tree_corpus_reads": 0
+  },
+  "checker_digest": "75a4a17555829be6841e544d810ee65bd3cfbb264403042fa9e70bf8a66fbe72",
+  "delta_vocabulary": [
+    "STRICTLY_WEAKER",
+    "STRICTLY_STRONGER",
+    "ORTHOGONAL_RESTATEMENT",
+    "UNDERDETERMINED_BY_TEXT"
+  ],
+  "disputed_row_count": 0,
+  "disputed_rows": [],
+  "families": {
+    "ambiguity_attack_family": "mixed support/weight or state-resolved/marginal text",
+    "independent_row_family": "separate 26-case semantic adjudication catalog",
+    "logical_model_family": "truth-table worlds (support variation S, distribution variation P, conclusion C) constrained by S=>P",
+    "quote_attack_family": "pinned substring or Python-AST-constant verification",
+    "typed_attack_family": "support/carrier/rule-value objects versus probability distributions"
+  },
+  "findings": [],
+  "findings_verbatim": [],
+  "independent_delta_histogram": {
+    "ORTHOGONAL_RESTATEMENT": 6,
+    "STRICTLY_STRONGER": 8,
+    "STRICTLY_WEAKER": 7,
+    "UNDERDETERMINED_BY_TEXT": 5
+  },
+  "independent_path_digest": "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01",
+  "independent_rows": [
+    {
+      "attack": "rule-value codomain is not identified with a probability simplex",
+      "mode": "typed",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md"
+    },
+    {
+      "attack": "support-set chirality and probability-law chirality require an explicit lift",
+      "mode": "typed",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md"
+    },
+    {
+      "attack": "neighbor-dependent support implies distribution dependence but not conversely",
+      "mode": "premise",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md"
+    },
+    {
+      "attack": "support-indexed adjacency is stronger than conditional probability dependence",
+      "mode": "premise",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md"
+    },
+    {
+      "attack": "the exhibited set rule does not define a probability law",
+      "mode": "typed",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md"
+    },
+    {
+      "attack": "monotone set containment is not a statement about weights",
+      "mode": "typed",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md"
+    },
+    {
+      "attack": "factor-support and distribution variation are different filters without the realization bridge",
+      "mode": "typed",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md"
+    },
+    {
+      "attack": "the foundation-context assertion loses support nonconstancy",
+      "mode": "premise",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md"
+    },
+    {
+      "attack": "positive-support membership is stronger than weight variation",
+      "mode": "premise",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/MATTER_REALIZATION_KS_HOP_BRIDGE_EDGE_DIAG_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-06.md"
+    },
+    {
+      "attack": "a weaker distribution premise is asked to select the same K1 conclusion",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md"
+    },
+    {
+      "attack": "carrier reachability is not probability-support identification",
+      "mode": "typed",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md"
+    },
+    {
+      "attack": "constant support does not exclude neighbor-dependent K0 weights",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md"
+    },
+    {
+      "attack": "conditioning and marginalization resolution is unstated",
+      "mode": "ambiguous",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md"
+    },
+    {
+      "attack": "same-support K0 weight changes attack K1-only selection",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md"
+    },
+    {
+      "attack": "frame transport does not remove same-support K0 weight changes",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md"
+    },
+    {
+      "attack": "qubit algebra gaps do not classify conditional weight changes",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md"
+    },
+    {
+      "attack": "the supplied bridge names both formation support and weights",
+      "mode": "ambiguous",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md"
+    },
+    {
+      "attack": "the declared set rule has no declared probabilities",
+      "mode": "ambiguous",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md"
+    },
+    {
+      "attack": "a support-changing countermodel can be lifted to the weaker distribution premise",
+      "mode": "countermodel",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md"
+    },
+    {
+      "attack": "the availability counterexample can satisfy a weaker distribution premise",
+      "mode": "countermodel",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/THETA_DEFECT_CLOSURE_FROM_ADMISSIBILITY_TEST_BOUNDED_NOTE_2026-07-03.md"
+    },
+    {
+      "attack": "distribution variation need not imply nonzero off-site tick support",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md"
+    },
+    {
+      "attack": "the number of positive-mass alternatives and the marginal are unstated",
+      "mode": "ambiguous",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md"
+    },
+    {
+      "attack": "neighbor-dependent distribution is weaker than neighbor-dependent support",
+      "mode": "premise",
+      "old_semantic_consumption_rederived": true,
+      "path": "docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md"
+    },
+    {
+      "attack": "the axiom guard and the executable set control test different objects",
+      "mode": "ambiguous",
+      "old_semantic_consumption_rederived": true,
+      "path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py"
+    },
+    {
+      "attack": "the executable selector has no K0 conditional-weight exclusion",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py"
+    },
+    {
+      "attack": "the gauged executable selector has no conditional-weight model",
+      "mode": "selector",
+      "old_semantic_consumption_rederived": true,
+      "path": "scripts/realized_kinetic_branch_selection_gauged_background_invariance_2026_07_02.py"
+    }
+  ],
+  "integrity": {
+    "all_primary_quotes_match_pinned_blobs": true,
+    "all_rows_rederive_old_semantic_consumption": true,
+    "independent_catalog_has_26_rows": true,
+    "independent_classes_use_closed_vocabulary": true,
+    "independent_paths_exist_at_pin": true,
+    "independent_paths_have_cycle971_digest": true,
+    "literal_pin_matches_primary": true,
+    "primary_and_independent_path_sets_match": true,
+    "truth_table_world_cap_respected": true
+  },
+  "logical_relation": "S implies P; P does not imply S because same-support weight changes are allowed",
+  "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+  "primary_map_digest_checked": "56e0f43f19ad2588b8cb3d78d19c94997e1bf8ce9e5e731e6f5d5d6fb15b94fe",
+  "refutation_outcome": "PRIMARY_SURVIVES_INDEPENDENT_DELTA_REFUTATION",
+  "truth_tables": {
+    "countermodel": [
+      {
+        "C": false,
+        "P": false,
+        "S": false,
+        "new": false,
+        "old": false
+      },
+      {
+        "C": true,
+        "P": false,
+        "S": false,
+        "new": false,
+        "old": false
+      },
+      {
+        "C": false,
+        "P": true,
+        "S": false,
+        "new": true,
+        "old": false
+      },
+      {
+        "C": true,
+        "P": true,
+        "S": false,
+        "new": false,
+        "old": false
+      },
+      {
+        "C": false,
+        "P": true,
+        "S": true,
+        "new": true,
+        "old": true
+      },
+      {
+        "C": true,
+        "P": true,
+        "S": true,
+        "new": false,
+        "old": false
+      }
+    ],
+    "premise": [
+      {
+        "C": false,
+        "P": false,
+        "S": false,
+        "new": false,
+        "old": false
+      },
+      {
+        "C": true,
+        "P": false,
+        "S": false,
+        "new": false,
+        "old": false
+      },
+      {
+        "C": false,
+        "P": true,
+        "S": false,
+        "new": true,
+        "old": false
+      },
+      {
+        "C": true,
+        "P": true,
+        "S": false,
+        "new": true,
+        "old": false
+      },
+      {
+        "C": false,
+        "P": true,
+        "S": true,
+        "new": true,
+        "old": true
+      },
+      {
+        "C": true,
+        "P": true,
+        "S": true,
+        "new": true,
+        "old": true
+      }
+    ],
+    "selector": [
+      {
+        "C": false,
+        "P": false,
+        "S": false,
+        "new": true,
+        "old": true
+      },
+      {
+        "C": true,
+        "P": false,
+        "S": false,
+        "new": true,
+        "old": true
+      },
+      {
+        "C": false,
+        "P": true,
+        "S": false,
+        "new": false,
+        "old": true
+      },
+      {
+        "C": true,
+        "P": true,
+        "S": false,
+        "new": true,
+        "old": true
+      },
+      {
+        "C": false,
+        "P": true,
+        "S": true,
+        "new": false,
+        "old": false
+      },
+      {
+        "C": true,
+        "P": true,
+        "S": true,
+        "new": true,
+        "old": true
+      }
+    ]
+  }
+}

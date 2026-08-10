@@ -1449,5 +1449,11 @@ instance or Fourier census.
   four and twelve helper runners. Vocabulary, strict lint, premise purity,
   model-family normalization, Python, YAML, whitespace, and source/input cache
   gates pass.
-- Exact pipeline/overlay diagnosis, changed evidence, commits, and delivery
-  remain pending. Independent audit remains required.
+- The exact stack seeds `4,808` rows and classifies `3,686` runners before
+  reproducing only the inherited stage-7 dependency-policy epoch mismatch. A
+  controlled five-file current-main overlay passes all 18 stages and verifies
+  checkpoint `6252de92588d`.
+- Changed-evidence readiness marks Block 24 alone (`1/1`) and all 24 stacked
+  claims (`24/24`) ready with zero failures and zero control failures.
+- Science commit is `7dd905d312`; campaign conformance and delivery remain
+  pending. Independent audit remains required.

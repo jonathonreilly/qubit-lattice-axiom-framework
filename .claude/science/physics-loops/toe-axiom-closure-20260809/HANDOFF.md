@@ -1142,6 +1142,11 @@ nonlinear closure. No canonical edit, percentage move, audit verdict, or
   at exactly one intended named check (`PASS=16 FAIL=0`). The citation graph is
   `5,470` nodes / `15,617` edges; the new node has out-degree four and twelve
   helper runners. Direct vocabulary, strict lint, premise purity, model-family
-  normalization, Python, YAML, whitespace, and cache gates pass. Exact
-  pipeline, changed evidence, commits, and delivery remain pending. No
-  canonical edit, percentage move, audit verdict, or `review-loop` occurs.
+  normalization, Python, YAML, whitespace, and cache gates pass. The exact
+  stack seeds `4,808` rows and classifies `3,686` runners before reproducing
+  only the inherited stage-7 dependency-policy epoch mismatch. A controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `6252de92588d`. Changed-evidence readiness is clean for Block 24 alone
+  (`1/1`) and all 24 stacked claims (`24/24`). Science commit is `7dd905d312`;
+  conformance and delivery remain pending. No canonical edit, percentage move,
+  audit verdict, or `review-loop` occurs.

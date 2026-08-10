@@ -463,5 +463,8 @@ chart supplies the required constructive escape. Primary source/input-pinned
 cache is `PASS=16 FAIL=0` in `13.91 s`; all sixteen fresh-process mutations
 fail closed at exactly one named check, and graph registration is `5,470`
 nodes / `15,617` edges with out-degree four and twelve helper runners. Direct
-conformance passes. Exact pipeline, changed evidence, commits, and delivery
-remain pending. No `review-loop` is used.
+conformance passes. The exact stack reaches only the inherited stage-7 policy
+epoch mismatch; a controlled five-file current-main overlay passes all 18
+stages at checkpoint `6252de92588d`. Changed evidence is clean for `1/1`
+Block-24 and `24/24` stacked claims. Science is `7dd905d312`; conformance and
+delivery remain pending. No `review-loop` is used.

@@ -503,4 +503,9 @@ complete conditional nonlinear compact solution:
   named check (`PASS=16 FAIL=0`); citation graph `5,470/15,617`, new out-degree
   four, with twelve helper runners; vocabulary, strict lint, premise purity,
   model-family normalization, Python, YAML, whitespace, and cache gates pass;
-  exact pipeline, changed evidence, commits, and delivery remain pending
+  the exact stack reaches only the inherited stage-7 dependency-policy epoch
+  mismatch after `4,808` ledger rows and `3,686` classified runners; the
+  controlled five-file current-main overlay passes all 18 stages at checkpoint
+  `6252de92588d`; changed evidence is clean for `1/1` Block-24 and `24/24`
+  stacked claims; science is `7dd905d312`; conformance and delivery remain
+  pending

@@ -1,0 +1,6 @@
+PASS R0_REFUTE_PIN_AND_ROW_SET :: pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; rows=26; path_digest=3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01; working_tree_corpus_reads=0
+PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched=26/26; exact_primary_quotes_at_pin=26/26
+PASS R2_ATTACK_DELTA_CLASSES :: independent_histogram={"ORTHOGONAL_RESTATEMENT":6,"STRICTLY_STRONGER":8,"STRICTLY_WEAKER":7,"UNDERDETERMINED_BY_TEXT":5}; disputes=0; findings_verbatim="none"
+PASS R3_CONTROLS :: truth_table_modes=['countermodel', 'premise', 'selector']; logical_worlds_per_mode={"countermodel":6,"premise":6,"selector":6}; checker_digest=75a4a17555829be6841e544d810ee65bd3cfbb264403042fa9e70bf8a66fbe72
+VERDICT: PRIMARY_SURVIVES_INDEPENDENT_DELTA_REFUTATION
+TOTAL: PASS=4 FAIL=0

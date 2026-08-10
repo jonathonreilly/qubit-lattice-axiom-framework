@@ -1,0 +1,294 @@
+#!/usr/bin/env python3
+"""Independent refutation check for the Cycle 973 repair map.
+
+The checker does not import the primary.  It carries a separately expressed
+semantic-case catalog, re-derives the path set at the literal Git pin, derives
+strict-strength labels by truth-table entailment, and reports every class
+disagreement as a verbatim finding.  Findings are scientific output, never an
+integrity-gate target.
+"""
+from __future__ import annotations
+
+from collections import Counter
+from hashlib import sha256
+import ast
+import json
+from pathlib import Path
+import re
+import subprocess
+
+
+ROOT = Path(__file__).resolve().parents[1]
+PINNED_SNAPSHOT_COMMIT = "323d7fc32d77598f74ea6cd4d30c38dda0fe5070"
+EXPECTED_PATH_DIGEST = "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01"
+PRIMARY_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
+CHECK_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
+CHECK_CACHE = ROOT / "logs/runner-cache/frontier_cycle973_map_independent_check_2026_08_09.txt"
+
+# Modes are an independent adjudication grammar, not copied delta labels.
+# premise: old S, new P; selector: old S=>C, new P=>C;
+# countermodel: old S&!C, new P&!C; with S=>P.
+# typed and ambiguous are refutation outcomes outside truth-table comparison.
+INDEPENDENT_CASES = {
+    "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md": ("typed", "rule-value codomain is not identified with a probability simplex"),
+    "docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md": ("typed", "support-set chirality and probability-law chirality require an explicit lift"),
+    "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md": ("premise", "neighbor-dependent support implies distribution dependence but not conversely"),
+    "docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md": ("premise", "support-indexed adjacency is stronger than conditional probability dependence"),
+    "docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md": ("typed", "the exhibited set rule does not define a probability law"),
+    "docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md": ("typed", "monotone set containment is not a statement about weights"),
+    "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md": ("typed", "factor-support and distribution variation are different filters without the realization bridge"),
+    "docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md": ("premise", "the foundation-context assertion loses support nonconstancy"),
+    "docs/MATTER_REALIZATION_KS_HOP_BRIDGE_EDGE_DIAG_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-06.md": ("premise", "positive-support membership is stronger than weight variation"),
+    "docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md": ("selector", "a weaker distribution premise is asked to select the same K1 conclusion"),
+    "docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md": ("typed", "carrier reachability is not probability-support identification"),
+    "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md": ("selector", "constant support does not exclude neighbor-dependent K0 weights"),
+    "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md": ("ambiguous", "conditioning and marginalization resolution is unstated"),
+    "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md": ("selector", "same-support K0 weight changes attack K1-only selection"),
+    "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md": ("selector", "frame transport does not remove same-support K0 weight changes"),
+    "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md": ("selector", "qubit algebra gaps do not classify conditional weight changes"),
+    "docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md": ("ambiguous", "the supplied bridge names both formation support and weights"),
+    "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md": ("ambiguous", "the declared set rule has no declared probabilities"),
+    "docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md": ("countermodel", "a support-changing countermodel can be lifted to the weaker distribution premise"),
+    "docs/THETA_DEFECT_CLOSURE_FROM_ADMISSIBILITY_TEST_BOUNDED_NOTE_2026-07-03.md": ("countermodel", "the availability counterexample can satisfy a weaker distribution premise"),
+    "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md": ("selector", "distribution variation need not imply nonzero off-site tick support"),
+    "docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md": ("ambiguous", "the number of positive-mass alternatives and the marginal are unstated"),
+    "docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md": ("premise", "neighbor-dependent distribution is weaker than neighbor-dependent support"),
+    "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py": ("ambiguous", "the axiom guard and the executable set control test different objects"),
+    "scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py": ("selector", "the executable selector has no K0 conditional-weight exclusion"),
+    "scripts/realized_kinetic_branch_selection_gauged_background_invariance_2026_07_02.py": ("selector", "the gauged executable selector has no conditional-weight model"),
+}
+
+MODE_CLASS = {
+    "typed": "ORTHOGONAL_RESTATEMENT",
+    "ambiguous": "UNDERDETERMINED_BY_TEXT",
+}
+DELTA_VOCABULARY = (
+    "STRICTLY_WEAKER",
+    "STRICTLY_STRONGER",
+    "ORTHOGONAL_RESTATEMENT",
+    "UNDERDETERMINED_BY_TEXT",
+)
+SEMANTIC_PATTERNS = (
+    re.compile(r"available\s+possibilities.{0,260}(?:vary|depend).{0,260}(?:neighbor|neighbour)", re.I | re.S),
+    re.compile(r"(?:neighbor|neighbour)[- ]dependent availability", re.I),
+    re.compile(r"availability[- ]variation", re.I),
+    re.compile(r"availability.{0,220}(?:vary|depend).{0,220}(?:neighbor|neighbour)", re.I | re.S),
+    re.compile(r"varying availability", re.I),
+    re.compile(r"available\s+possibilities.{0,220}depend.{0,120}NN conditions", re.I | re.S),
+)
+
+FAMILIES = {
+    "independent_row_family": "separate 26-case semantic adjudication catalog",
+    "logical_model_family": "truth-table worlds (support variation S, distribution variation P, conclusion C) constrained by S=>P",
+    "typed_attack_family": "support/carrier/rule-value objects versus probability distributions",
+    "ambiguity_attack_family": "mixed support/weight or state-resolved/marginal text",
+    "quote_attack_family": "pinned substring or Python-AST-constant verification",
+}
+CAPS = {
+    "row_catalog_exact": 26,
+    "logical_world_cap": 6,
+    "pinned_blob_reads_exact": 26,
+    "working_tree_corpus_reads": 0,
+    "delta_vocabulary_size": 4,
+    "reported_finding_cap": 26,
+}
+
+
+def compact(value: object) -> str:
+    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+
+
+def digest(value: object) -> str:
+    return sha256(compact(value).encode()).hexdigest()
+
+
+def git_bytes(*args: str) -> bytes:
+    return subprocess.run(
+        ("git", *args), cwd=ROOT, check=True, capture_output=True
+    ).stdout
+
+
+def git_text(*args: str) -> str:
+    return git_bytes(*args).decode("utf-8", errors="replace")
+
+
+def formula(mode: str, old: bool, s: bool, p: bool, c: bool) -> bool:
+    if mode == "premise":
+        return s if old else p
+    if mode == "selector":
+        antecedent = s if old else p
+        return (not antecedent) or c
+    if mode == "countermodel":
+        antecedent = s if old else p
+        return antecedent and not c
+    raise AssertionError(mode)
+
+
+def truth_table_class(mode: str) -> tuple[str, list[dict]]:
+    if mode in MODE_CLASS:
+        return MODE_CLASS[mode], []
+    worlds = [
+        (s, p, c)
+        for s in (False, True)
+        for p in (False, True)
+        for c in (False, True)
+        if (not s) or p
+    ]
+    rows = [
+        {"S": s, "P": p, "C": c, "old": formula(mode, True, s, p, c), "new": formula(mode, False, s, p, c)}
+        for s, p, c in worlds
+    ]
+    old_implies_new = all((not row["old"]) or row["new"] for row in rows)
+    new_implies_old = all((not row["new"]) or row["old"] for row in rows)
+    if old_implies_new and not new_implies_old:
+        return "STRICTLY_WEAKER", rows
+    if new_implies_old and not old_implies_new:
+        return "STRICTLY_STRONGER", rows
+    raise AssertionError(f"non-strict truth-table relation for {mode}: {rows}")
+
+
+def source_has_old_semantic_consumption(path: str, body: str) -> bool:
+    if any(pattern.search(body) for pattern in SEMANTIC_PATTERNS):
+        return True
+    if path.endswith(".py"):
+        tree = ast.parse(body, filename=path)
+        strings = "\n".join(
+            node.value for node in ast.walk(tree)
+            if isinstance(node, ast.Constant) and isinstance(node.value, str)
+        )
+        return any(pattern.search(strings) for pattern in SEMANTIC_PATTERNS)
+    return False
+
+
+def exact_quote_matches(row: dict, body: str) -> bool:
+    quote = row["quoted_old_semantics_consumption"]["exact_quoted_source_block"]
+    extraction = row["quoted_old_semantics_consumption"]["quote_extraction"]
+    if extraction.startswith("exact Python AST"):
+        tree = ast.parse(body, filename=row["path"])
+        return any(
+            isinstance(node, ast.Constant) and node.value == quote
+            for node in ast.walk(tree)
+        )
+    return quote in body
+
+
+def main() -> int:
+    primary = json.loads(PRIMARY_RECEIPT.read_text(encoding="utf-8"))
+    primary_rows = {row["path"]: row for row in primary["rows"]}
+    independent_paths = sorted(INDEPENDENT_CASES)
+    tree_paths = set(git_text(
+        "ls-tree", "-r", "--name-only", PINNED_SNAPSHOT_COMMIT, "--", "docs", "scripts"
+    ).splitlines())
+
+    semantic_rows = []
+    body_by_path: dict[str, str] = {}
+    for path in independent_paths:
+        body = git_text("show", f"{PINNED_SNAPSHOT_COMMIT}:{path}")
+        body_by_path[path] = body
+        semantic_rows.append({
+            "path": path,
+            "mode": INDEPENDENT_CASES[path][0],
+            "attack": INDEPENDENT_CASES[path][1],
+            "old_semantic_consumption_rederived": source_has_old_semantic_consumption(path, body),
+        })
+
+    path_digest = digest(independent_paths)
+    independent_classes = {}
+    truth_tables = {}
+    for path, (mode, _attack) in INDEPENDENT_CASES.items():
+        derived, table = truth_table_class(mode)
+        independent_classes[path] = derived
+        if table:
+            truth_tables.setdefault(mode, table)
+
+    findings = []
+    for path in sorted(set(primary_rows) | set(independent_classes)):
+        primary_class = primary_rows.get(path, {}).get("delta_class", "MISSING")
+        independent_class = independent_classes.get(path, "MISSING")
+        if primary_class != independent_class:
+            attack = INDEPENDENT_CASES.get(path, ("missing", "path absent from independent catalog"))[1]
+            verbatim = (
+                f"FINDING DELTA_CLASS_DISPUTE path={path} "
+                f"primary={primary_class} independent={independent_class} "
+                f"attack={json.dumps(attack, ensure_ascii=False)}"
+            )
+            findings.append({
+                "path": path,
+                "primary_class": primary_class,
+                "independent_class": independent_class,
+                "attack": attack,
+                "verbatim": verbatim,
+            })
+
+    quote_checks = {
+        path: exact_quote_matches(primary_rows[path], body_by_path[path])
+        for path in independent_paths
+        if path in primary_rows
+    }
+    integrity = {
+        "literal_pin_matches_primary": primary["pinned_snapshot_commit"] == PINNED_SNAPSHOT_COMMIT,
+        "independent_catalog_has_26_rows": len(independent_paths) == CAPS["row_catalog_exact"],
+        "independent_paths_have_cycle971_digest": path_digest == EXPECTED_PATH_DIGEST,
+        "independent_paths_exist_at_pin": set(independent_paths) <= tree_paths,
+        "all_rows_rederive_old_semantic_consumption": all(
+            row["old_semantic_consumption_rederived"] for row in semantic_rows
+        ),
+        "primary_and_independent_path_sets_match": set(primary_rows) == set(independent_paths),
+        "all_primary_quotes_match_pinned_blobs": len(quote_checks) == 26 and all(quote_checks.values()),
+        "independent_classes_use_closed_vocabulary": set(independent_classes.values()) <= set(DELTA_VOCABULARY),
+        "truth_table_world_cap_respected": all(len(table) <= CAPS["logical_world_cap"] for table in truth_tables.values()),
+    }
+    if not all(integrity.values()):
+        raise AssertionError(f"integrity failure: {integrity}")
+
+    histogram = Counter(independent_classes.values())
+    receipt = {
+        "artifact": "Cycle 973 independent repair-map refutation check",
+        "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
+        "families": FAMILIES,
+        "caps": CAPS,
+        "delta_vocabulary": list(DELTA_VOCABULARY),
+        "logical_relation": "S implies P; P does not imply S because same-support weight changes are allowed",
+        "truth_tables": truth_tables,
+        "independent_path_digest": path_digest,
+        "independent_rows": semantic_rows,
+        "independent_delta_histogram": dict(sorted(histogram.items())),
+        "primary_map_digest_checked": primary["map_digest"],
+        "disputed_row_count": len(findings),
+        "disputed_rows": [finding["path"] for finding in findings],
+        "findings_verbatim": [finding["verbatim"] for finding in findings],
+        "findings": findings,
+        "refutation_outcome": (
+            "PRIMARY_SURVIVES_INDEPENDENT_DELTA_REFUTATION"
+            if not findings else "DELTA_CLASS_FINDINGS_REPORTED_VERBATIM"
+        ),
+        "integrity": integrity,
+    }
+    receipt["checker_digest"] = digest({
+        "pin": PINNED_SNAPSHOT_COMMIT,
+        "paths": independent_paths,
+        "classes": independent_classes,
+        "findings": findings,
+    })
+    CHECK_RECEIPT.write_text(
+        json.dumps(receipt, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    finding_text = "none" if not findings else " || ".join(f["verbatim"] for f in findings)
+    cache_lines = [
+        f"PASS R0_REFUTE_PIN_AND_ROW_SET :: pin={PINNED_SNAPSHOT_COMMIT}; rows={len(independent_paths)}; path_digest={path_digest}; working_tree_corpus_reads=0",
+        f"PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched={sum(r['old_semantic_consumption_rederived'] for r in semantic_rows)}/26; exact_primary_quotes_at_pin={sum(quote_checks.values())}/26",
+        f"PASS R2_ATTACK_DELTA_CLASSES :: independent_histogram={compact(dict(sorted(histogram.items())))}; disputes={len(findings)}; findings_verbatim={json.dumps(finding_text, ensure_ascii=False)}",
+        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; checker_digest={receipt['checker_digest']}",
+        f"VERDICT: {receipt['refutation_outcome']}",
+        "TOTAL: PASS=4 FAIL=0",
+    ]
+    cache = "\n".join(cache_lines) + "\n"
+    CHECK_CACHE.write_text(cache, encoding="utf-8")
+    print(cache, end="")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

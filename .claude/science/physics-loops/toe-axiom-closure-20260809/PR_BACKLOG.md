@@ -177,7 +177,7 @@ Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074, #6075,
 #6076, #6077, #6078, then #6079. The canonical axiom memo is untouched, the
 fixed TOE percentages do not move, and no `review-loop` is used.
 
-Block 12 is prepared on branch
+Block 12 is open as PR #6080 from branch
 `physics-loop/toe-axiom-closure-block12-20260810`, based on the exact Block 11
 delivery head `60ff548ab2ec9963d4e0e607e2e0428854f0e3cf`. The four-coframe
 worldvolume, Kuhn-hyperface Regge source, centered affine bag balance,
@@ -193,5 +193,8 @@ dependency-policy epoch mismatch; its 1,066 tracked generated changes and 824
 new shards remain disposable. Seeded changed evidence marks all 12 stacked
 claims forensic-ready with zero failures or control failures. The canonical
 axiom memo remains untouched, the fixed TOE percentages do not move, and no
-`review-loop` is used. Record the science commit, PR number, and final hard
-landing order after delivery.
+`review-loop` is used. Science commit is `5926d3ee93`. PR #6080 is mergeable
+on the exact #6079 delivery head
+`60ff548ab2ec9963d4e0e607e2e0428854f0e3cf`. Hard landing order is #6063,
+#6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+then #6080.

@@ -530,3 +530,9 @@ worldvolumes, and lifted extra branches remain live. The candidate
 history/action amendment is sufficient only by premise and is not adopted,
 necessary, minimal, or edited into the axioms. The fixed TOE percentages do
 not move, and no `review-loop` is invoked.
+
+The 18-file science delta is commit `5926d3ee93` and is open as mergeable
+stacked PR #6080 on the exact #6079 delivery head
+`60ff548ab2ec9963d4e0e607e2e0428854f0e3cf`. Hard landing order is #6063,
+#6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+then #6080. The canonical memo and fixed TOE percentages remain unchanged.

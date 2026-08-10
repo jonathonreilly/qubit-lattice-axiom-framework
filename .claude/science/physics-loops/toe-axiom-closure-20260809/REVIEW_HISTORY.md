@@ -700,4 +700,7 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   checks Block 12 and all 12 stacked claims, including the actual Regge helper
   runner, with zero failures and zero control failures.
 - The canonical memo is byte-identical, no percentage moves, and no
-  `review-loop` is invoked. Delivery commit/PR details are added after push.
+  `review-loop` is invoked. Committed the 18-file science delta as
+  `5926d3ee93`, pushed the dedicated branch, and opened mergeable stacked PR
+  #6080 on the exact #6079 delivery head. Hard landing order is #6063, #6065,
+  #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079, then #6080.

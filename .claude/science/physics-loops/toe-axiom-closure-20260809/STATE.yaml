@@ -254,9 +254,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: one explicit four-coframe worldvolume now reduces exactly to the spatial cut, maps through an actual Kuhn-Regge edge carrier, and admits a flat-law-preserving affine bag with exact tick-only source and a metric-transverse open-boundary one-over-r response; the unprojected localized source retains named gauge, extra-null, and periodic-zero-mode residuals, while physical family, pressure, mass, action, carrier, geometry dynamics, coupling, ensemble, nonlinear, projective, and history selection remain open
 hypothetical_axiom_status: a geometry-indexed history/action amendment registering the joint tick law, local unnormalized action representative and absolute zero/unit, coframe-metric-edge carrier, selected geometry action/update, orientation/coupling, combined conservation law, and zero-mode/boundary ensemble is sufficient to type the construction; it is not adopted, proved necessary, claimed minimal, or edited into the axioms
-review_disposition: block12_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker_pending_delivery
-pr_status: block12_prepared_stacked_on_open_6079
-pr_url: pending
+review_disposition: block12_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: open_6080_stacked_on_open_6079
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6080
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

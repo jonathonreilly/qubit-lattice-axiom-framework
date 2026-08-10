@@ -12,6 +12,18 @@ decision**, recorded per that policy's section 1 and section 4 workflow.
 **Supersedes nothing.** `MINIMAL_AXIOMS_2026-06-29.md` remains the axiom
 surface.
 
+> **Probe result, 2026-08-09 — read before section 7.** The claims in this
+> draft have been probed computationally; results are in
+> [`repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md`](repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md).
+> Obligations 1, 2 and 3 are discharged, and the chirality and Born-form claims
+> are confirmed decisively. **Obligation 4 is not discharged and currently looks
+> negative:** order-reversal positivity holds on a regular causal order but
+> fails on a sprinkled one for every non-degenerate member of the order-local
+> quadratic action family tested (625 actions scanned, zero passing). Since the
+> sprinkling is what supplies Lorentz invariance, the Hilbert-space payoff
+> claimed for the Law axiom's positivity clause in section 4 and section 7
+> **should not be relied on** pending a wider action class.
+
 ---
 
 ## 1. What this proposes, and the test it has to pass
@@ -382,22 +394,28 @@ formality. Listed in the order they should be discharged:
 4. **State positivity under order reversal precisely** on an order-theoretic
    substrate. Reflection positivity is standard on a Euclidean lattice; its
    order-theoretic form is the least settled clause in this draft and should be
-   treated as the main technical risk.
+   treated as the main technical risk. **PROBED 2026-08-09 — negative so far.**
+   Positive on a lattice and on a regular causal order; fails on sprinkled
+   causal sets across a 625-action scan of the order-local quadratic family,
+   with violations of the same order as the Gram matrix itself. The next probe
+   is the Benincasa-Dowker causal-set d'Alembertian, which lies outside the
+   scanned family.
 5. **Derive the Born form** from Observables plus Law. This is the payoff check:
    if it does not go through, the reset has not bought what §7 claims.
 6. **Decide the C\*-typing question** in §4 — posit it, or derive it from
    operational postulates.
 
-Obligations 1 and 4 are the ones that could sink the draft. Neither is addressed
-here.
+Obligations 1 and 4 are the ones that could sink the draft. **Obligation 1 is
+now discharged by probe; obligation 4 is probed and currently negative.**
 
 ## 10. Recommendation
 
-Adopt nothing yet. Discharge obligations 1, 3, and 4 first, since together they
-determine whether the reset is real or merely tidier.
+Adopt nothing yet. Obligations 1 and 3 are now discharged by probe; obligation
+4 is probed and currently negative, and it is the one that determines whether
+the substrate change is real or merely tidier.
 
-If the owner wants motion before then, **the three non-substrate redrafts are
-separable and each is individually defensible**: amplitude for probability
+**The three non-substrate redrafts are separable, individually defensible, and
+now have direct computational support**: amplitude for probability
 (withdraws an assumption the theory says it cannot make), local for
 nearest-neighbor (one word, removes a theorem-grade obstruction), and
 region-indexed observables for additive readout (deletes the clause behind the

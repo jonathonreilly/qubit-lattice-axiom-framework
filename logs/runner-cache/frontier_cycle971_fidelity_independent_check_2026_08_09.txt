@@ -1,21 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py
-runner_sha256: 56056e6ccbb9e33d26a22038033fa255c1e8b6838f6634343c4dc190120a4532
-input_fingerprint_sha256: 3d0fb4120158ef885ad28d3ad3b4c3cc27ca30bc79e84c92eddc17704a13ebd1
+runner_sha256: 47e8aa4a123f68680c761a30bfc4251b28ec6bd4fb5c2b4af5a07356be027a31
+input_fingerprint_sha256: e61a61faa82eef3c5e0258452c6c74dc5724868f320dab0831b61b6b636bf9fd
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 28.60
+elapsed_sec: 148.98
 status: ok
 ----- stdout -----
 ==============================================================================
-CYCLE 971 -- INDEPENDENT FIDELITY CHECK, SPECIFIED TO REFUTE
+INDEPENDENT AXIOM-FIDELITY CHECK, SPECIFIED TO REFUTE
 ==============================================================================
-PASS R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO :: pins_match=3/3; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']
-PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1433; token_totals={"admissible_possibility":235,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":191}; row_digest=a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f; exact_rows_match=True
-PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":32,"NEWLY_WITNESSABLE":1,"SUPPORT_READING_SAFE":626,"UNAFFECTED":774}; full_lists_match=True; classes_digest=7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713
-PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
+PASS R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO :: file_pins_present_or_match=4/4; stable_science_digest_match=True; cache_contract_match=True; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']
+PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1440; token_totals={"admissible_possibility":240,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":193}; row_digest=a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f; exact_path_token_rows_match=True
+PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":26,"NEWLY_WITNESSABLE":0,"SUPPORT_READING_SAFE":70,"UNAFFECTED":1344}; adjudication_manifest_valid=True; adjudication_manifest_sha256=e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c; full_lists_match=True; classes_digest=389004fadd21329b142498f9af6042ad74d66b63561da88bdfb37750b67b9c59
+PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; pinned_python_files_scanned=5646; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
 PASS R4_REFUTE_AXIOM_PROVENANCE :: independent_authority_checks={"new_distribution_sentence":true,"owner_date":true,"registry_support":true,"support_provenance":true}
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=28.532962<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json']
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=148.924364<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 

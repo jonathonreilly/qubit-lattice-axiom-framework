@@ -10,24 +10,25 @@
   "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
   "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt",
   "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json",
+  "outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json",
   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
   "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/"
  ],
  "certificates": {
   "R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO": {
-   "finding": "pins_match=3/3; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']",
+   "finding": "file_pins_present_or_match=4/4; stable_science_digest_match=True; cache_contract_match=True; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']",
    "pass": true
   },
   "R1_REFUTE_CONSUMER_CENSUS": {
-   "finding": "independent_tracked/consumers=15205/1433; token_totals={\"admissible_possibility\":235,\"availability\":2788,\"nearest_neighbor_conditions\":94,\"vary_with\":191}; row_digest=a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f; exact_rows_match=True",
+   "finding": "independent_tracked/consumers=15205/1440; token_totals={\"admissible_possibility\":240,\"availability\":2788,\"nearest_neighbor_conditions\":94,\"vary_with\":193}; row_digest=a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f; exact_path_token_rows_match=True",
    "pass": true
   },
   "R2_REFUTE_DELTA_CLASSIFICATION": {
-   "finding": "independent_class_counts={\"MEANING_CHANGED\":32,\"NEWLY_WITNESSABLE\":1,\"SUPPORT_READING_SAFE\":626,\"UNAFFECTED\":774}; full_lists_match=True; classes_digest=7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713",
+   "finding": "independent_class_counts={\"MEANING_CHANGED\":26,\"NEWLY_WITNESSABLE\":0,\"SUPPORT_READING_SAFE\":70,\"UNAFFECTED\":1344}; adjudication_manifest_valid=True; adjudication_manifest_sha256=e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c; full_lists_match=True; classes_digest=389004fadd21329b142498f9af6042ad74d66b63561da88bdfb37750b67b9c59",
    "pass": true
   },
   "R3_REFUTE_VACUITY_PROBE": {
-   "finding": "independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]",
+   "finding": "independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; pinned_python_files_scanned=5646; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]",
    "pass": true
   },
   "R4_REFUTE_AXIOM_PROVENANCE": {
@@ -35,59 +36,68 @@
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "determinism_replay=True; runtime_s=28.532962<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json']",
+   "finding": "determinism_replay=True; runtime_s=148.924364<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']",
    "pass": true
   }
  },
- "claim_type": "bounded_theorem",
- "cycle": 971,
+ "claim_type": "meta",
  "determinism_replay": true,
  "independent_summary": {
+  "adjudication_manifest_sha256": "e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c",
+  "adjudication_manifest_valid": true,
   "class_counts": {
-   "MEANING_CHANGED": 32,
-   "NEWLY_WITNESSABLE": 1,
-   "SUPPORT_READING_SAFE": 626,
-   "UNAFFECTED": 774
+   "MEANING_CHANGED": 26,
+   "NEWLY_WITNESSABLE": 0,
+   "SUPPORT_READING_SAFE": 70,
+   "UNAFFECTED": 1344
   },
-  "classes_digest": "7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713",
-  "consumer_file_count": 1433,
+  "classes_digest": "389004fadd21329b142498f9af6042ad74d66b63561da88bdfb37750b67b9c59",
+  "consumer_file_count": 1440,
   "marginal_literal_branch_pairs": 0,
   "marginal_paths": [],
-  "row_digest": "a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f",
+  "row_digest": "a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f",
   "state_literal_branch_pairs": 1,
   "state_paths": [
    "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
   ],
   "token_totals": {
-   "admissible_possibility": 235,
+   "admissible_possibility": 240,
    "availability": 2788,
    "nearest_neighbor_conditions": 94,
-   "vary_with": 191
+   "vary_with": 193
   },
-  "tracked_file_count": 15205
+  "tracked_file_count": 15205,
+  "tracked_python_file_count": 5646
  },
  "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
  "pins": [
   {
    "exists": true,
-   "expected": "901afd045c6cd7f202d0b73f023c32e6fac300dbb45b01c68a6a7a3f8341a1b3",
+   "expected": "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
    "match": true,
-   "observed": "901afd045c6cd7f202d0b73f023c32e6fac300dbb45b01c68a6a7a3f8341a1b3",
+   "observed": "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
    "path": "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py"
   },
   {
    "exists": true,
-   "expected": "237399f4963ce7e6e5ec7c1c6bd956f97f2e1ba7a9b730b33e2c340333eb45bb",
+   "expected": "stable science digest checked after parse",
    "match": true,
-   "observed": "237399f4963ce7e6e5ec7c1c6bd956f97f2e1ba7a9b730b33e2c340333eb45bb",
+   "observed": "512b43397217d5604500343d75b791d188206d2c324e3d816840a8020083c525",
    "path": "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt"
   },
   {
    "exists": true,
-   "expected": "d26b60c2eec33ade85d682c9d420eb24a3ec6faeb584c5be512d488ecd22e156",
+   "expected": "stable science digest checked after parse",
    "match": true,
-   "observed": "d26b60c2eec33ade85d682c9d420eb24a3ec6faeb584c5be512d488ecd22e156",
+   "observed": "c3c25de48b46f4aecf32b0e56a1a07275beec932bbb16eb3e16308d4fc7b8455",
    "path": "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json"
+  },
+  {
+   "exists": true,
+   "expected": "e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c",
+   "match": true,
+   "observed": "e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c",
+   "path": "outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json"
   }
  ],
  "primary_ast_controls": {
@@ -124,8 +134,8 @@
   "working_tree_corpus_reads": false
  },
  "role": "independent_checker",
- "runtime_sec": 28.532961749937385,
+ "runtime_sec": 148.92436395795085,
  "specified_to": "REFUTE",
- "stdout_bytes": 2119,
+ "stdout_bytes": 2544,
  "verdict": "PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT"
 }

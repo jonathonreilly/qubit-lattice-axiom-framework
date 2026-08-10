@@ -1,12 +1,18 @@
-# cache_format: cycle973-runner-cache-v1
-# runner: scripts/frontier_cycle973_repair_map_2026_08_09.py
-# pinned_snapshot_commit: 323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-# receipt: outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json
-# receipt_sha256: 7d7958bff24c883ed7bf8a390de24caa6d9a133fd91eff9821b966fa76bbe5c6
-# cache_body: deterministic runner stdout follows
+===== runner cache v1 =====
+runner: scripts/frontier_cycle973_repair_map_2026_08_09.py
+runner_sha256: fa22e714e93a0abcad14728bd34fb494d98066417f0aed2722feac5f6ac6d335
+input_fingerprint_sha256: 42a8fa72dbd75575f2cced9889afe4e0af88c9d3abebcf1e98f5826c0051f242
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
 PASS A_PINNED_SNAPSHOT :: commit=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; objects={"docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; working_tree_corpus_reads=0
 PASS B_EXACT_ROW_SET :: rows=26; path_digest=3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01; paths_sorted_unique=True
 PASS C_EXACT_QUOTES_AND_OBLIGATIONS :: exact_quotes=26; named_unattempted_obligations=26; pinned_blob_reads=26
 PASS D_CLOSED_MAP :: delta_histogram={"ORTHOGONAL_RESTATEMENT":6,"STRICTLY_STRONGER":8,"STRICTLY_WEAKER":7,"UNDERDETERMINED_BY_TEXT":5}; witness_counts={"BEARS":3,"SILENT":23}; map_digest=f863cd6edac1d2fd4ccace04596f908b1cabb204c4e3c554384a781261c7aade
 VERDICT: CYCLE973_26_ROW_REPAIR_MAP_EMITTED
 TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

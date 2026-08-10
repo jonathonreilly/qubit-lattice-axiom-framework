@@ -19,6 +19,8 @@ from pathlib import Path
 import re
 import subprocess
 
+import runner_cache
+
 
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT_TIMEOUT_SEC = 300
@@ -29,11 +31,10 @@ EXPECTED_PATH_DIGEST = "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f328
 PRIMARY_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
 PRIMARY_CACHE = ROOT / "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt"
 CHECK_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
-CHECK_CACHE = ROOT / "logs/runner-cache/frontier_cycle973_map_independent_check_2026_08_09.txt"
-CACHE_FORMAT = "cycle973-runner-cache-v1"
 RUNNER_REL = "scripts/frontier_cycle973_map_independent_check_2026_08_09.py"
 RECEIPT_REL = "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
 AUDIT_INPUT_PATHS = (
+    "scripts/runner_cache.py",
     "scripts/frontier_cycle973_repair_map_2026_08_09.py",
     "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
     "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
@@ -248,19 +249,6 @@ def exact_quote_matches(row: dict, body: str) -> bool:
     return quote in body
 
 
-def cache_envelope(body: str, receipt_text: str) -> str:
-    return "\n".join((
-        f"# cache_format: {CACHE_FORMAT}",
-        f"# runner: {RUNNER_REL}",
-        f"# pinned_snapshot_commit: {PINNED_SNAPSHOT_COMMIT}",
-        f"# receipt: {RECEIPT_REL}",
-        f"# receipt_sha256: {sha256(receipt_text.encode()).hexdigest()}",
-        "# cache_body: deterministic runner stdout follows",
-        body.rstrip("\n"),
-        "",
-    ))
-
-
 def delta_findings(primary_rows: dict[str, dict], independent_classes: dict[str, str]) -> list[dict]:
     findings = []
     for path in sorted(set(primary_rows) | set(independent_classes)):
@@ -286,7 +274,6 @@ def delta_findings(primary_rows: dict[str, dict], independent_classes: dict[str,
 def main() -> int:
     primary_receipt_text = PRIMARY_RECEIPT.read_text(encoding="utf-8")
     primary = json.loads(primary_receipt_text)
-    primary_cache_text = PRIMARY_CACHE.read_text(encoding="utf-8")
     primary_rows = {row["path"]: row for row in primary["rows"]}
     independent_paths, paths_by_blob = reconstruct_paths_from_blob_ids()
     tree_paths = set(git_text(
@@ -312,14 +299,6 @@ def main() -> int:
         "vocabulary": primary["delta_vocabulary"],
         "rows": primary["rows"],
     })
-    primary_cache_header = "\n".join((
-        "# cache_format: cycle973-runner-cache-v1",
-        "# runner: scripts/frontier_cycle973_repair_map_2026_08_09.py",
-        f"# pinned_snapshot_commit: {PINNED_SNAPSHOT_COMMIT}",
-        "# receipt: outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
-        f"# receipt_sha256: {sha256(primary_receipt_text.encode()).hexdigest()}",
-        "# cache_body: deterministic runner stdout follows",
-    )) + "\n"
     independent_classes = {}
     truth_tables = {}
     for path, (mode, _attack) in INDEPENDENT_CASES.items():
@@ -365,9 +344,11 @@ def main() -> int:
         "truth_table_world_cap_respected": all(len(table) <= CAPS["logical_world_cap"] for table in truth_tables.values()),
         "independent_same_support_control": all(independent_control[key] for key in ("normalized", "same_support", "distribution_changed")),
         "primary_map_digest_recomputed": recomputed_primary_map_digest == primary["map_digest"],
-        "primary_cache_envelope_and_receipt_pin": primary_cache_text.startswith(primary_cache_header),
-        "witness_bearing_catalog_agrees": not bearing_findings,
+        "primary_cache_is_canonical_and_current": runner_cache.cache_status(
+            "scripts/frontier_cycle973_repair_map_2026_08_09.py"
+        ) == "fresh",
         "literal_audit_input_paths": tuple(AUDIT_INPUT_PATHS) == (
+            "scripts/runner_cache.py",
             "scripts/frontier_cycle973_repair_map_2026_08_09.py",
             "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
             "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
@@ -421,10 +402,11 @@ def main() -> int:
             "house_stdout_limit_bytes": HOUSE_STDOUT_LIMIT_BYTES,
         },
         "cache_contract": {
-            "format": CACHE_FORMAT,
+            "format": "canonical scripts/runner_cache.py envelope",
             "runner": RUNNER_REL,
             "receipt": RECEIPT_REL,
-            "deterministic_body": True,
+            "writer": "scripts/runner_cache.py",
+            "deterministic_stdout": True,
         },
     }
     receipt["checker_digest"] = digest({
@@ -438,18 +420,18 @@ def main() -> int:
     CHECK_RECEIPT.write_text(receipt_text, encoding="utf-8")
 
     finding_text = "none" if not findings else " || ".join(f["verbatim"] for f in findings)
+    bearing_finding_text = "none" if not bearing_findings else " || ".join(bearing_findings)
     cache_lines = [
         f"PASS R0_REFUTE_PIN_AND_ROW_SET :: pin={PINNED_SNAPSHOT_COMMIT}; independently_resolved_blobs={len(paths_by_blob)}; rows={len(independent_paths)}; path_digest={path_digest}; working_tree_corpus_reads=0",
         f"PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched={sum(r['old_semantic_consumption_rederived'] for r in semantic_rows)}/26; exact_primary_quotes_at_pin={sum(quote_checks.values())}/26",
         f"PASS R2_ATTACK_ABSTRACT_DELTA_CLASSES :: independent_histogram={compact(dict(sorted(histogram.items())))}; disputes={len(findings)}; findings_verbatim={json.dumps(finding_text, ensure_ascii=False)}",
-        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; bearing_disputes={len(bearing_findings)}; checker_digest={receipt['checker_digest']}",
+        f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; bearing_disputes={len(bearing_findings)}; bearing_findings_verbatim={json.dumps(bearing_finding_text, ensure_ascii=False)}; checker_digest={receipt['checker_digest']}",
         f"VERDICT: {receipt['refutation_outcome']}",
         "TOTAL: PASS=4 FAIL=0",
     ]
     cache = "\n".join(cache_lines) + "\n"
     if len(cache.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
         raise AssertionError("checker stdout exceeds house cap")
-    CHECK_CACHE.write_text(cache_envelope(cache, receipt_text), encoding="utf-8")
     print(cache, end="")
     return 0
 

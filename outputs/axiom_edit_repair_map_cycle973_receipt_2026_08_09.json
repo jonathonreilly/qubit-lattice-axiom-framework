@@ -1,17 +1,20 @@
 {
   "actual_current_surface_status": "bounded-support",
   "artifact": "Cycle 973 bounded 26-row repair map hand-off",
-  "audit_input_paths": [],
+  "audit_input_paths": [
+    "scripts/frontier_cycle973_repair_map_2026_08_09.py"
+  ],
   "audit_status_authority": "independent audit lane only",
   "bearing_vocabulary": {
     "BEARS": "The pinned Cycle 970/972 receipt's covariant unique-law witness directly exposes the row's state-resolved-versus-uniform-marginal resolution issue; it makes no same-support claim and does not discharge the row obligation.",
     "SILENT": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt."
   },
   "cache_contract": {
-    "deterministic_body": true,
-    "format": "cycle973-runner-cache-v1",
+    "deterministic_stdout": true,
+    "format": "canonical scripts/runner_cache.py envelope",
     "receipt": "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
-    "runner": "scripts/frontier_cycle973_repair_map_2026_08_09.py"
+    "runner": "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+    "writer": "scripts/runner_cache.py"
   },
   "caps": {
     "delta_vocabulary_size": 4,
@@ -28,6 +31,9 @@
     "covariance_fact": "rotation failures=0/61440; translation-generator failures=0/15360",
     "cycle970_commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
     "cycle970_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062",
+    "cycle970_primary_receipt_path": "outputs/inter_site_gate_cycle970_receipt_2026_08_09.json",
+    "cycle970_primary_receipt_sha256": "dbf6c1bea9a22750aaf2a0483357c9e38f18b64669177aa9f75b8ae7e8be04f0",
+    "cycle970_primary_receipt_url": "https://raw.githubusercontent.com/jonathonreilly/qubit-lattice-axiom-framework/6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad/outputs/inter_site_gate_cycle970_receipt_2026_08_09.json",
     "cycle972_commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
     "cycle972_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069",
     "cycle972_primary_receipt_path": "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json",
@@ -35,6 +41,8 @@
     "cycle972_science_digest": "a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0",
     "marginal_fact": "uniform-target-input changed words=0/20; changed edge pairs=0/3840",
     "marginal_mechanism": "uniform-x XOR permutation identity gives 1/2 for every output and neighbor bit",
+    "premise_status": "task-supplied Where-this-stands premise; external links are immutable provenance, not runtime inputs",
+    "runtime_dependency_on_sibling_refs": false,
     "state_resolved_fact": "six CNOT witness words; dependent fixed-input rows=12/40; XOR truth-table failures=0/768",
     "support_boundary": "the receipt does not certify a same-support state-resolved witness; no such inference is made here",
     "uniqueness_fact": "word-law classes=1; state-resolved classes=2"
@@ -75,6 +83,7 @@
     "house_stdout_limit_bytes": 6000,
     "stdout_limit_bytes": 150000
   },
+  "external_provenance_runtime_dependency": false,
   "families": {
     "corpus_family": "tracked docs/ and scripts/ blobs at the literal snapshot pin",
     "delta_family": "the four closed-vocabulary relations in delta_vocabulary",
@@ -88,8 +97,8 @@
     "all_quotes_nonempty_and_pinned": true,
     "closed_delta_vocabulary": true,
     "closed_witness_vocabulary": true,
+    "literal_audit_input_is_executable_catalog": true,
     "literal_snapshot_objects_match": true,
-    "literal_working_tree_audit_input_paths_empty": true,
     "row_count_is_task_contract_26": true,
     "row_paths_unique_and_sorted": true,
     "same_support_weight_change_control": true

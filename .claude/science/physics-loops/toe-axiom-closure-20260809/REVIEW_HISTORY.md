@@ -866,5 +866,8 @@ failure already owned by PR #6061. No `review-loop` was invoked.
 - The canonical memo and fixed TOE percentages are unchanged. No universal
   compact-source, single-worldline, physical-mass, or dynamics claim is made,
   and no `review-loop` is invoked.
-- The exact 18-file science delta is commit `8cc86adec4`; push and stacked PR
-  delivery remain pending.
+- The exact 18-file science delta is commit `8cc86adec4`; conformance is commit
+  `eb73bfaff1`. PR #6083 is mergeable and `CLEAN` on the exact #6082 delivery
+  head `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`. Hard landing order is #6063,
+  #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+  #6080, #6081, #6082, then #6083; no `review-loop` is invoked.

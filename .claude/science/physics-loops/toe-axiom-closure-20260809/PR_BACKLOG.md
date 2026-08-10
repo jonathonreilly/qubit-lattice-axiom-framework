@@ -256,5 +256,9 @@ computation and then reproduces the known governed dependency-policy epoch
 mismatch at restoration. Its 1,066 tracked generated changes and 827 new
 ledger shards were discarded. Seeded changed evidence checks Block 15 alone
 and all 15 stacked claims with zero failures or control failures. Science
-commit is `8cc86adec4`; push and stacked PR delivery are pending. The canonical
-axiom memo and fixed percentages are untouched, and no `review-loop` is used.
+commit is `8cc86adec4`; conformance commit is `eb73bfaff1`. PR #6083 is
+mergeable and `CLEAN` on the exact #6082 delivery head
+`ac8fbb5e4e705c74cf5c0e85902433a137ce0195`. Hard landing order is #6063,
+#6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+#6080, #6081, #6082, then #6083. The canonical axiom memo and fixed
+percentages are untouched, and no `review-loop` is used.

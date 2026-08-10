@@ -623,13 +623,18 @@ independent_audit_required: true
 - Live route: realize one of those branches in a selected local joint action,
   then solve a nonuniform background and prove continuous-zone Lorentzian
   nonlinear closure.
-- Runner/cache: source/input pinned, `PASS=17 FAIL=0` in `13.86 s`, with all
+- Runner/cache: source/input pinned, `PASS=17 FAIL=0` in `13.97 s`, with all
   five substantive N5 resolution lines and stdout below the cache limit.
 - Mutation sensitivity: all seventeen fresh-process runner-copy mutations
   exit nonzero at exactly one intended named check (`PASS=17 FAIL=0`).
 - Citation graph: `5,469` nodes / `15,613` edges; the new node has out-degree
-  four and eleven resolved helper runners. Direct gates, pipeline, changed
-  evidence, and delivery remain pending.
+  four and eleven resolved helper runners.
+- Conformance: direct gates pass. The exact stack reproduces only its inherited
+  stage-7 dependency-policy epoch mismatch after 4,807 rows and 3,685 runner
+  classifications. A five-file current-main overlay passes all 18 stages at
+  checkpoint `3e3feb9fed42`. Changed evidence is clean for Block 23 alone
+  (`1/1`) and the full stack (`23/23`), with zero failures and control failures.
+- Science commit: `c236890389`; delivery remains pending.
 - Governance: N1--N8 restricts every exclusion to its declared coefficient and
   regularity class; no physical ghost, universal mode count, gravity no-go,
   axiom/primitive edit, audit verdict, fixed percentage, or `review-loop`.

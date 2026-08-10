@@ -1102,11 +1102,15 @@ explicit coefficient completion embeds analytically through `B,C=O(c)`, which
 has a zero-source rank jump; square-root mixing, nonzero flat mixing, and a
 direct differentiated-Ward/seagull term remain distinct live routes.
 
-Primary runner/cache is source/input pinned at `PASS=17 FAIL=0` in `13.86 s`;
+Primary runner/cache is source/input pinned at `PASS=17 FAIL=0` in `13.97 s`;
 all seventeen fresh-process runner-copy mutations fail exactly one intended
 named check. Citation registration is `5,469/15,613`, with out-degree four and
-eleven resolved helper runners. Direct gates, exact-stack/overlay diagnosis,
-changed evidence, and PR delivery remain pending. The next science is to
+eleven resolved helper runners. Direct gates pass. The exact stack reaches
+only its inherited stage-7 policy-epoch mismatch after 4,807 rows and 3,685
+runner classifications; the five-file current-main overlay passes all 18
+stages at checkpoint `3e3feb9fed42`. Changed evidence is clean for `1/1`
+Block-23 and `23/23` stacked claims. Science commit is `c236890389`; PR
+delivery remains pending. The next science is to
 realize one viable scaling branch in a selected local joint action, then solve
 a nonuniform coupled background and certify continuous-zone Lorentzian
 nonlinear closure. No canonical edit, percentage move, audit verdict, or

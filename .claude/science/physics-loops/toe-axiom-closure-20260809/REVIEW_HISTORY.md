@@ -1402,7 +1402,7 @@ instance or Fourier census.
   embedding instead uses a `p=q=1` zero-source rank jump.
 - Preserved square-root mixing, nonzero flat mixing, direct Ward/seagull
   terms, singular multipliers, and massive phases under N1--N8.
-- Primary source/input-pinned cache is fresh at `PASS=17 FAIL=0` in `13.86 s`,
+- Primary source/input-pinned cache is fresh at `PASS=17 FAIL=0` in `13.97 s`,
   with all five N5 resolution lines.
 - Seventeen fresh-process runner-copy mutations cover premise/note/carrier
   binding, every rank/signature/completion/kernel theorem, source dependence,
@@ -1411,5 +1411,14 @@ instance or Fourier census.
   is `PASS=17 FAIL=0`.
 - Citation graph is `5,469` nodes / `15,613` edges; the new note has out-degree
   four and eleven resolved helper runners.
-- Direct gates, exact-stack/overlay diagnosis, changed evidence, commits, and
-  delivery are pending. Independent audit remains required.
+- Vocabulary, strict lint, premise purity, model normalization, Python/YAML,
+  whitespace, source/input cache, canonical nonmutation, and graph/link/class-F
+  invariant gates pass.
+- The exact stack seeds 4,807 rows and classifies 3,685 runners before
+  reproducing only the inherited stage-7 dependency-policy epoch mismatch. A
+  five-file current-main overlay passes all 18 stages and verifies checkpoint
+  `3e3feb9fed42`.
+- Changed-evidence readiness marks Block 23 alone (`1/1`) and all 23 stacked
+  claims (`23/23`) ready with zero failures and zero control failures.
+- Science commit is `c236890389`; delivery is pending. Independent audit
+  remains required.

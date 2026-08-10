@@ -442,7 +442,11 @@ minimal joint-Ward coefficient completion and coupling-order boundary: six
 modes per source branch, one common fixed-signature eight-mode sector, source-
 direction dependence, and the exclusion of a first-order repair by regular
 analytic decoupled invertible Schur mixing. Primary source/input-pinned cache
-is `PASS=17 FAIL=0` in `13.86 s`; all seventeen fresh-process mutations fail
+is `PASS=17 FAIL=0` in `13.97 s`; all seventeen fresh-process mutations fail
 exactly one intended named check. Graph is `5,469/15,613`, with out-degree
-four and eleven resolved helper runners. Direct gates, pipeline/overlay,
-changed evidence, and delivery remain pending. No `review-loop` is used.
+four and eleven resolved helper runners. Direct gates pass. The exact stack
+reaches only the inherited stage-7 policy-epoch mismatch after 4,807 rows and
+3,685 runner classifications; a five-file current-main overlay passes all 18
+stages at checkpoint `3e3feb9fed42`. Changed evidence is clean for `1/1`
+Block-23 and `23/23` stacked claims. Science is `c236890389`; delivery remains
+pending. No `review-loop` is used.

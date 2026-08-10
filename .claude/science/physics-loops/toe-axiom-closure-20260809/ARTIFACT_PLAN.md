@@ -472,8 +472,11 @@ complete conditional nonlinear compact solution:
   local action, source dynamics, regularity/rank-jump selection, nonuniform or
   continuous-zone closure, Lorentzian stability, canonical axiom edits, fixed
   TOE movement, audit verdicts, and `review-loop`
-- conformance: source/input-pinned cache `PASS=17 FAIL=0` in `13.86 s`; all
+- conformance: source/input-pinned cache `PASS=17 FAIL=0` in `13.97 s`; all
   seventeen fresh-process mutations fail exactly one named check; graph
   `5,469/15,613` with out-degree four and eleven resolved helper runners;
-  direct gates, exact-stack diagnosis, and controlled current-main overlay
-  remain pending
+  direct gates pass; the exact stack reaches only the inherited stage-7
+  policy-epoch mismatch after 4,807 rows and 3,685 runner classifications; a
+  controlled five-file current-main overlay passes all 18 stages at checkpoint
+  `3e3feb9fed42`; changed evidence is clean for `1/1` Block-23 and `23/23`
+  stacked claims

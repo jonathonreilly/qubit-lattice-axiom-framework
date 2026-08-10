@@ -419,3 +419,8 @@ bare_retained_allowed: false
 - No full nonlinear source no-go, action selection, stability theorem, or
   axiom necessity is claimed. Canonical axioms and fixed percentages remain
   unchanged, and no `review-loop` is invoked.
+- The hardened primary runner/cache is `PASS=16 FAIL=0`; ten process-local
+  load-bearing mutations fail closed. Final-head synthetic-main integration
+  passes all 18 pipeline stages, and changed-evidence readiness marks Block 18
+  alone plus all 18 stacked claims forensic-ready with no failures or control
+  failures. Independent audit remains required.

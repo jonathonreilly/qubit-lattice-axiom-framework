@@ -1067,9 +1067,20 @@ instance or Fourier census.
   incidence, cubic-angle algebra, source rows, independent reconstruction,
   periodic-box normalization, Gram boundaries, coordinate symmetry,
   metric-pair orbit coverage, and source-note/N1--N8 binding.
-- Primary cache is `PASS=15 FAIL=0` with all five N5 resolution lines.
+- Primary cache is `PASS=16 FAIL=0` with all five N5 resolution lines and an
+  explicit approved-primitive registry boundary.
   Citation registration is `5,464` nodes / `15,582` edges with the new node at
   out-degree two. Vocabulary, strict lint, premise/model-family, staged claim
   typing, Python/YAML, whitespace, exact 17-path, cache, and canonical-
-  nonmutation gates pass. Full integration and PR delivery remain pending. No
-  canonical edit, audit verdict, percentage move, or `review-loop` occurs.
+  nonmutation gates pass.
+- The exact-base cold pipeline passes all pre-restore stages and reproduces
+  only the inherited dependency-policy epoch mismatch. A final-head synthetic
+  merge of current `origin/main` adds exactly five closed-#6061 governance
+  files and passes all 18 stages: 4,802 ledger rows at fixed point, 3,680
+  classified runners, strict lint with zero errors, stage-18 invariants, and
+  static-checkpoint finalization.
+- Seeded changed-evidence readiness checks Block 18 alone and all 18 stacked
+  claims with zero failures and zero control failures. Initial science commit
+  is `27738fec0a`; hardening commit is `d716852134`. PR delivery remains
+  pending. No canonical edit, audit verdict, percentage move, or `review-loop`
+  occurs.

@@ -834,7 +834,7 @@ cubic local boundary: quartic/higher mixed tensors, finite-amplitude branches,
 range-mode backreaction, curved/inhomogeneous equations, Block-17 reactions,
 and changed boundary/background sectors remain live.
 
-The primary runner is `PASS=15 FAIL=0` with a source/input-pinned cache.
+The primary runner is `PASS=16 FAIL=0` with a source/input-pinned cache.
 Independent 70-digit reconstruction agrees below `1e-55`; the actual periodic
 `L=3` box matches the uniform-cell action; exact Gram minors place the local
 nondegenerate branch in approximately
@@ -845,6 +845,17 @@ orbit, and source-binding families. Citation registration is `5,464` nodes /
 `15,582` edges with the new node at out-degree two; direct vocabulary, strict
 lint, premise/model-family, claim-typing, Python/YAML, whitespace, exact
 17-path, cache, and canonical-nonmutation gates pass.
+
+The exact-base cold pipeline reaches only the inherited dependency-policy
+epoch mismatch after passing every earlier stage. A final-head synthetic merge
+of current `origin/main` adds exactly the five closed-#6061 governance files
+and passes the complete 18-stage pipeline: 5,464 graph nodes / 15,582 edges,
+4,802 ledger rows at fixed point, 3,680 classified runners, strict lint with
+zero errors, publication renders, zero authority-link/class-F violations, and
+static-checkpoint finalization. Changed-evidence readiness marks Block 18
+alone and all 18 stacked claims forensic-ready with no failures or control
+failures. The initial science commit is `27738fec0a`; boundary hardening is
+`d716852134`. Independent audit remains required.
 
 Candidate wording is corrected to permit either complete variational reaction
 coverage or a demonstrated native nonlinear/boundary lift with a complete

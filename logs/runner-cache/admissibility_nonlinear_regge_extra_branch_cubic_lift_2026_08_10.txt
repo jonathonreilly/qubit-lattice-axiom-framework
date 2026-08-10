@@ -45,4 +45,3 @@ lattice_wide: checked an actual periodic L=3 box against the uniform-cell action
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
-

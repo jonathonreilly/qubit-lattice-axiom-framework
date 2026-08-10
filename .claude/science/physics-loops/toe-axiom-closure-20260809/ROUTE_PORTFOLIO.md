@@ -405,3 +405,9 @@ mergeable PR #6088. No `review-loop` is used.
 | finite-amplitude full equation | all fifteen homogeneous lengths | exploratory roots are noncertifying and omitted | controlled continuation remains live |
 | curved/inhomogeneous/boundary/reaction route | changed field/domain or Block-17 KKT terms | outside the cubic polynomial and able to change compatibility | preserve; no full nonlinear no-go |
 | candidate amendment delta | reaction coverage or demonstrated native lift plus complete source certificate | sufficient by premise, not adopted or minimal | record wording; do not edit canonical axioms |
+
+Final-head conformance is complete: the exact-base stop is isolated to inherited
+governance epoch lag, the synthetic-main configuration passes all 18 pipeline
+stages, and changed-evidence readiness passes Block 18 alone plus the complete
+18-claim stack. The quartic null/range effective tensor remains the highest-
+value next route; no broader negative conclusion is authorized.

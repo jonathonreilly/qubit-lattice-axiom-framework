@@ -310,11 +310,16 @@ Science commit is `1ca614c439`; conformance commit is `26a0ee9feb`. PR #6088
 is mergeable and `CLEAN`. Hard landing order adds #6088 after #6085. No
 `review-loop` is used.
 
-Block 18 is being packaged on branch
+Block 18 is conformance-complete on branch
 `physics-loop/toe-axiom-closure-block18-nonlinear-regge-20260810`, based on
 exact Block-17 delivery head `2144e710711865f0350ccab35e87591dad2ba741`.
 It adds the exact native cubic/quartic extra-branch lift, complete cubic
 null-sector normal form, declared-source covector comparison, N1--N8 packet,
-and corrected candidate reaction-or-lift wording. Primary runner/cache is
-`PASS=15 FAIL=0` and source/input pinned. PR delivery and final conformance are
-pending; no `review-loop` is used.
+approved-primitive boundary, and corrected candidate reaction-or-lift wording.
+Primary runner/cache is `PASS=16 FAIL=0` and source/input pinned; ten genuine
+mutations fail closed. Direct conformance passes. The exact-base pipeline
+isolates the inherited policy-epoch mismatch, while a final-head synthetic
+merge adding only the five closed-#6061 governance files passes all 18 stages.
+Changed evidence marks Block 18 alone and all 18 stacked claims forensic-ready
+with no failures or controls. Science commits are `27738fec0a` and
+`d716852134`; push/PR delivery is pending. No `review-loop` is used.

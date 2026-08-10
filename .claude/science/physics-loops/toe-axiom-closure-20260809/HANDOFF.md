@@ -1014,4 +1014,5 @@ dependency-policy epoch mismatch after `5,466` graph nodes / `15,593` edges,
 overlay of current-main commit `39c74017b8` passes all 18 stages. Seeded
 changed-evidence readiness checks the extension alone and all 20 stacked
 claims with no failures or control failures. Extension science commit is
-`d2223e5a3d`; delivery recording remains pending.
+`d2223e5a3d`; conformance commit is `c664cdc0da`. Both are pushed to PR #6091,
+which was observed open, mergeable, and `CLEAN` at the conformance head.

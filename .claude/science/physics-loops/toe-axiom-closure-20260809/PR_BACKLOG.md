@@ -298,8 +298,10 @@ each (`PASS=18 FAIL=0`). Citation registration remains `5,466` nodes /
 dependency-policy epoch mismatch after `4,804` rows and `3,682` runner
 classifications; a five-file current-main policy overlay passes all 18 stages.
 Changed-evidence readiness is clean for the extension alone and all 20 stacked
-claims. Extension science commit is `d2223e5a3d`; conformance delivery remains
-to be recorded.
+claims. Extension science commit is `d2223e5a3d`; conformance is complete at
+`c664cdc0da`. PR #6091 is open, mergeable, and `CLEAN`; its body
+now records the coefficient interval, 18/18 mutation result, and controlled
+pipeline evidence.
 
 Block 16 is being packaged on branch
 `physics-loop/toe-axiom-closure-block16-network-20260810`, based on exact

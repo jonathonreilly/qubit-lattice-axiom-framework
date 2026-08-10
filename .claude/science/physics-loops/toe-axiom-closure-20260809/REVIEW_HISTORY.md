@@ -1280,4 +1280,7 @@ instance or Fourier census.
   `39c74017b8` passes all 18 stages.
 - Changed-evidence readiness checks the extension alone and all 20 stacked
   claims with zero failures or control failures. Extension science commit is
-  `d2223e5a3d`; conformance commit and delivery recording remain pending.
+  `d2223e5a3d`; conformance commit is `c664cdc0da`.
+- Both commits are pushed to PR #6091. The PR is open, mergeable, and `CLEAN`
+  on the exact Block-19 delivery base; its body records the extension evidence
+  and preserves the hard landing order through #6090 then #6091.

@@ -1,15 +1,22 @@
 {
   "actual_current_surface_status": "bounded-support",
   "artifact": "Cycle 973 bounded 26-row repair map hand-off",
+  "audit_input_paths": [],
   "audit_status_authority": "independent audit lane only",
   "bearing_vocabulary": {
-    "BEARS": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-    "SILENT": "The Cycle 970/972 state-resolved/marginal separation has no logical role in the row's semantic delta."
+    "BEARS": "The pinned Cycle 970/972 receipt's covariant unique-law witness directly exposes the row's state-resolved-versus-uniform-marginal resolution issue; it makes no same-support claim and does not discharge the row obligation.",
+    "SILENT": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt."
+  },
+  "cache_contract": {
+    "deterministic_body": true,
+    "format": "cycle973-runner-cache-v1",
+    "receipt": "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+    "runner": "scripts/frontier_cycle973_repair_map_2026_08_09.py"
   },
   "caps": {
     "delta_vocabulary_size": 4,
     "direct_authoring_provenance_file_cap": 6,
-    "direct_authoring_provenance_files_declared": 3,
+    "direct_authoring_provenance_files_declared": 4,
     "map_row_cap_exact": 26,
     "pinned_corpus_blob_reads_exact": 26,
     "snapshot_path_families": 2,
@@ -17,6 +24,22 @@
     "working_tree_corpus_reads": 0
   },
   "claim_type": "meta",
+  "cycle970_972_witness_provenance": {
+    "covariance_fact": "rotation failures=0/61440; translation-generator failures=0/15360",
+    "cycle970_commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+    "cycle970_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062",
+    "cycle972_commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "cycle972_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069",
+    "cycle972_primary_receipt_path": "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json",
+    "cycle972_primary_receipt_sha256": "245bb7001aec024163f62ed28f8434d2a215751219b516cff0aa3ad75c6c2625",
+    "cycle972_science_digest": "a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0",
+    "marginal_fact": "uniform-target-input changed words=0/20; changed edge pairs=0/3840",
+    "marginal_mechanism": "uniform-x XOR permutation identity gives 1/2 for every output and neighbor bit",
+    "state_resolved_fact": "six CNOT witness words; dependent fixed-input rows=12/40; XOR truth-table failures=0/768",
+    "support_boundary": "the receipt does not certify a same-support state-resolved witness; no such inference is made here",
+    "uniqueness_fact": "word-law classes=1; state-resolved classes=2"
+  },
+  "cycle971_pr_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6066",
   "cycle971_text_ast_provenance": [
     {
       "path": "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
@@ -43,9 +66,14 @@
   },
   "delta_vocabulary": {
     "ORTHOGONAL_RESTATEMENT": "The readings predicate different typed objects or bridges and neither row proposition entails the other without an extra identification.",
-    "STRICTLY_STRONGER": "The old-reading proposition is entailed by the new-reading proposition, and the converse fails; this occurs when a weaker distribution premise is asked to carry the same conditional selector conclusion.",
-    "STRICTLY_WEAKER": "The new-reading proposition is entailed by the old-reading proposition, and the converse fails on an allowed same-support weight-change model.",
+    "STRICTLY_STRONGER": "Within the declared S=>P abstraction, the old-reading proposition is entailed by the new-reading proposition, and the converse fails; this occurs when a weaker distribution premise is asked to carry the same conditional selector conclusion.",
+    "STRICTLY_WEAKER": "Within the declared S=>P abstraction, the new-reading proposition is entailed by the old-reading proposition, and the converse fails on the printed same-support weight-change control.",
     "UNDERDETERMINED_BY_TEXT": "The row mixes historical, supplied, or resolution-ambiguous readings, so its text does not determine one comparable old/new proposition."
+  },
+  "execution_caps": {
+    "audit_timeout_sec": 300,
+    "house_stdout_limit_bytes": 6000,
+    "stdout_limit_bytes": 150000
   },
   "families": {
     "corpus_family": "tracked docs/ and scripts/ blobs at the literal snapshot pin",
@@ -61,10 +89,12 @@
     "closed_delta_vocabulary": true,
     "closed_witness_vocabulary": true,
     "literal_snapshot_objects_match": true,
+    "literal_working_tree_audit_input_paths_empty": true,
     "row_count_is_task_contract_26": true,
-    "row_paths_unique_and_sorted": true
+    "row_paths_unique_and_sorted": true,
+    "same_support_weight_change_control": true
   },
-  "map_digest": "56e0f43f19ad2588b8cb3d78d19c94997e1bf8ce9e5e731e6f5d5d6fb15b94fe",
+  "map_digest": "f863cd6edac1d2fd4ccace04596f908b1cabb204c4e3c554384a781261c7aade",
   "meaning_changed_path_digest": "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01",
   "measurement_only": true,
   "pinned_objects": {
@@ -74,15 +104,21 @@
     "snapshot_tree": "45f8bd67eedaccb34918cb6804e850e1ba7f21fb"
   },
   "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+  "pinned_snapshot_surfaces": [
+    "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
+    "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/"
+  ],
   "repairs_attempted": 0,
   "row_count": 26,
   "rows": [
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-DISTRIBUTION-RULE-CODOMAIN",
         "smallest_machine_checkable_fact": "Encode each classified rule value as a normalized probability distribution and machine-check equivariance plus the asserted support/value projection."
       },
@@ -99,11 +135,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The framework supplies a neighbor-conditioned probability distribution; the note's scalar/frame rule-value channels are not thereby identified with either that distribution or its support."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-BOOTSTRAP-SUPPORT-LIFT",
         "smallest_machine_checkable_fact": "Set A(c)=supp(mu_c) for the note's rule and rerun the nonemptiness, improper-orbit, and propagation-closure checks on A."
       },
@@ -120,11 +158,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "A probability distribution exists at each condition and varies state-resolved, but its support need not carry the note's chirality or propagation action."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-COMPOSITE-SUPPORT-NONCONSTANCY",
         "smallest_machine_checkable_fact": "Exhibit two allowed neighbor conditions whose one-site distribution supports differ, while separately preserving the note's stated absence of a pair-level menu."
       },
@@ -141,11 +181,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The minimal axioms supply a neighbor-dependent one-site probability distribution and still no pair-level domain or entangled-menu eligibility; support dependence is no longer supplied."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-BONDED-PAIR-SUPPORT-BRIDGE",
         "smallest_machine_checkable_fact": "Machine-check that the positive support relevant to the bonded-pair construction changes with an adjacent condition and is the same support object consumed by T2."
       },
@@ -162,11 +204,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "A site's probability distribution is indexed by nearest-neighbor conditions; that is weaker than nonconstant support and does not itself supply a bonded-pair carrier."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-DYNAMICS-UNIFORM-SUPPORT-LIFT",
         "smallest_machine_checkable_fact": "Define mu_c uniformly on every nonempty exhibited available set and check normalization, covariance, supp(mu_c)=A(c), and mu_c!=mu_c' for the displayed control conditions."
       },
@@ -183,11 +227,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same set-valued rule remains a model choice, while the landed axiom concerns a probability distribution that the row never defines; the support model and distribution assertion are unlinked typed statements."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-FROZEN-REGION-DISTRIBUTION-LIFT",
         "smallest_machine_checkable_fact": "Construct a normalized mu_c with support exactly the exhibited union-over-recorded-neighbors set and rerun the boundary containment and cavity controls."
       },
@@ -204,11 +250,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The landed clause constrains a probability distribution, while the note's monotone-containment theorem remains about an independently exhibited support-valued rule."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-PROTOCOL-DISTRIBUTION-REALIZATION",
         "smallest_machine_checkable_fact": "Supply an explicit protocol-to-mu map and machine-check that the note's all-axis factor-support predicate is equivalent to the required state-resolved distribution variation on the named ten protocols."
       },
@@ -225,11 +273,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "Distribution variation may occur at fixed factor support, so the landed clause and the note's factor-support predicate are different typed filters."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-ARENA-SPLIT-SUPPORT-NONCONSTANCY",
         "smallest_machine_checkable_fact": "Exhibit two neighbor conditions on the arena surface with different positive supports for the landed distributions."
       },
@@ -246,11 +296,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The current foundation requires neighbor-varying probability distributions; the exchange-split calculation is unchanged, but support variation is not supplied."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-KS-EDGE-DIAG-POSITIVE-MASS",
         "smallest_machine_checkable_fact": "Check that every edge/diagonal projector used by the bridge has positive mu_c mass at its stated condition and that the relevant supports change where claimed."
       },
@@ -267,11 +319,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "Only the probability distribution must vary; edge/diagonal positive-support membership does not follow from that variation."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-K1-BILINEAR-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "Under an explicit kinetic-to-distribution bridge, exhaust the licensed K0 class and prove every mu_c is neighbor-constant while a K1 mu_c varies."
       },
@@ -288,11 +342,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same K1 conclusion would have to follow from the weaker fact that probabilities vary, even though K0 can vary weights on constant support."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-PLAQUETTE-DEPENDENCY-SUPPORT-LIFT",
         "smallest_machine_checkable_fact": "Machine-check that every term carrier lies in supp(mu_c) generated from its stated one-step dependency set and that this identification is covariant."
       },
@@ -309,11 +365,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "Neighbor-conditioned probabilities do not identify the carrier support of a term with the distribution's positive support or prove one-tick reachability."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-RECORD-KINETIC-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "Under the record/kinetic realization, prove all licensed K0 conditional distributions are identical across neighbor contents and construct one varying K1 distribution with record-eligible positive support."
       },
@@ -330,11 +388,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same branch discrimination would have to follow from distribution variation, although K0's constant support can carry condition-dependent weights."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_bearing_reason": "The pinned Cycle 970/972 receipt's covariant unique-law witness directly exposes the row's state-resolved-versus-uniform-marginal resolution issue; it makes no same-support claim and does not discharge the row obligation.",
       "cycle970_972_witness": "BEARS",
       "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-DISCRIMINATOR-RESOLUTION-SPEC",
         "smallest_machine_checkable_fact": "Specify the conditioning state and marginalization map, then check whether mu variation is equivalent to nonconstant qubit-factor support on both licensed branches."
       },
@@ -351,11 +411,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The landed reading asks whether a probability distribution varies, but the row does not specify state-resolved versus marginal evaluation or a distribution-to-qubit-support map."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-K1-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "Under a pinned kinetic-to-mu realization, prove K0 cannot realize any allowed state-resolved distribution change and K1 can, with the quantifiers covering the full licensed two-class surface."
       },
@@ -372,11 +434,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same K1 selection would be asserted from the weaker premise that the distribution varies, which allows same-support weight changes on K0."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-FRAME-ORBIT-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "For every licensed local-U(1) frame, prove the induced mu family is neighbor-constant on K0 and varying on K1, and verify the property is a frame-orbit class function."
       },
@@ -393,11 +457,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "A distribution-variation selector would be transported over that orbit without text excluding same-support K0 weight variation, strengthening the conditional selection claim."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-GAUGED-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "For every tested fixed background and both branches, construct the induced mu and verify K0 equality and K1 inequality across neighbor conditions after factor recovery."
       },
@@ -414,11 +480,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same K1-only conclusion would have to hold for distribution variation, which need not change support and is not fixed by the qubit-algebra gaps."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-SPECTRAL-SUPPORT-BRIDGE",
         "smallest_machine_checkable_fact": "Specify mu_c and check supp(mu_c) equals the nontrivial spectral-projector set of F(c) at the witness conditions, with no appended response sector."
       },
@@ -435,11 +503,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The conditional bridge may mean support or weights under the landed distribution reading, and the text mentions both formation support and weights without fixing which varies."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-ATOM-POSITIVE-MASS",
         "smallest_machine_checkable_fact": "Define the declared mu_c and check P1 has positive mass at every claimed lock condition, supp(mu_c) equals the declared rule, and mu_c varies at the stated control."
       },
@@ -456,11 +526,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "Availability is positive support of a probability distribution, but the row and runner mix a declared support rule with the landed distribution sentence without specifying probabilities."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-KINETIC-COUNTERMODEL-DISTRIBUTION",
         "smallest_machine_checkable_fact": "Extend the exact countermodel with a normalized covariant mu_c satisfying the landed state-resolved variation sentence and rerun the unchanged kinetic/corner falsifier."
       },
@@ -477,11 +549,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same countermodel would refute selection from the weaker distribution-variation premise once a compatible distribution is supplied; distribution variation alone is easier to satisfy."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-THETA-COUNTERMODEL-DISTRIBUTION",
         "smallest_machine_checkable_fact": "Attach normalized distributions to every encoded condition with support equal to the exhibited availability set and rerun the dn!=0 witness."
       },
@@ -498,11 +572,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "A probability-distribution encoding satisfying the weaker landed variation premise would likewise fail to force dn=0 if lifted from the same support witness."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_bearing_reason": "The pinned Cycle 970/972 receipt's covariant unique-law witness directly exposes the row's state-resolved-versus-uniform-marginal resolution issue; it makes no same-support claim and does not discharge the row obligation.",
       "cycle970_972_witness": "BEARS",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-TICK-DISTRIBUTION-BRIDGE",
         "smallest_machine_checkable_fact": "Define the tick-induced conditional mu, state its marginalization, and exhaustively verify that landed distribution variation is equivalent to nonzero off-site tick support on the licensed period-2 family."
       },
@@ -519,11 +595,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same mover selection would have to follow from distribution variation, including same-support state-resolved weight changes whose uniform marginal can be constant."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_bearing_reason": "The pinned Cycle 970/972 receipt's covariant unique-law witness directly exposes the row's state-resolved-versus-uniform-marginal resolution issue; it makes no same-support claim and does not discharge the row obligation.",
       "cycle970_972_witness": "BEARS",
       "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-FORTRESS-OPEN-SITE-SUPPORT",
         "smallest_machine_checkable_fact": "At the exact fortress conditions, compute mu_c and verify at least two positive-mass unrecorded alternatives plus the declared state-resolved/marginal dependence behavior."
       },
@@ -540,11 +618,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "Unrecorded sites have a probability distribution whose support defines availability, but only the distribution must depend on neighbors; the text does not resolve how many positive-mass alternatives or which marginal is meant."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_WEAKER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-DIAGNOSIS-DISTRIBUTION-NONDYNAMICS",
         "smallest_machine_checkable_fact": "Machine-check a neighbor-conditioned mu on the cited architecture and separately verify that no transition/update or evolving-site-state map is present in the supplied law fields."
       },
@@ -561,11 +641,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "Admissibility makes the probability distribution depend on neighbor conditions and still supplies no actual evolving possibility; the support-dependence part is dropped."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-RUNNER-ATOM-DISTRIBUTION-CONTROL",
         "smallest_machine_checkable_fact": "Add an independent mu_c construction whose support is R_varying and assert normalization, positive-mass atom eligibility, and state-resolved inequality at the AD4 conditions."
       },
@@ -582,11 +664,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The guard string matches the landed distribution sentence, but the executable control varies only a set and never constructs a probability distribution, leaving the tested proposition ambiguous."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-RUNNER-K1-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "Enumerate the induced conditional distributions for every licensed K0/K1 representative and assert K0 equality, K1 inequality, normalization, and the declared conditioning resolution."
       },
@@ -603,11 +687,13 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same selector label would claim K1-only selection from distribution variation, though K0 constant support can carry condition-dependent weights."
     },
     {
-      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
-      "cycle970_972_witness": "BEARS",
+      "cycle970_972_bearing_reason": "The row-specific semantic bridge does not turn on the state-resolved versus uniform-marginal distinction checked by the pinned Cycle 970/972 receipt.",
+      "cycle970_972_witness": "SILENT",
       "delta_class": "STRICTLY_STRONGER",
+      "delta_scope": "abstract S=>P semantic substitution with every other row-specific hypothesis held fixed",
       "minimal_discharge": {
         "attempted_here": false,
+        "minimality_scope": "sole missing old-to-new semantic bridge with all other row premises and conclusions held fixed",
         "obligation_id": "O973-RUNNER-GAUGED-DISTRIBUTION-SEPARATION",
         "smallest_machine_checkable_fact": "For every listed background seed, construct the branch-conditioned mu family and assert K0 equality and K1 inequality across the exact neighbor controls after factor recovery."
       },
@@ -624,8 +710,30 @@
       "what_the_same_text_asserts_under_landed_distribution_reading": "The same test label would infer K1-only selection from distribution variation without excluding same-support K0 weight changes."
     }
   ],
+  "semantic_abstraction_control": {
+    "atoms": {
+      "P": "probability distribution varies",
+      "S": "positive support varies"
+    },
+    "converse_control": {
+      "mu_0": {
+        "down": 0.25,
+        "up": 0.75
+      },
+      "mu_1": {
+        "down": 0.75,
+        "up": 0.25
+      }
+    },
+    "converse_control_distribution_changed": true,
+    "converse_control_normalized": true,
+    "converse_control_same_support": true,
+    "relation": "S implies P because unequal supports forbid equal distributions",
+    "scope": "abstract semantic substitution only; row-specific hypotheses are held fixed, not re-proved"
+  },
   "status_verdicts_authored": 0,
   "witness_bearing_counts": {
-    "BEARS": 26
+    "BEARS": 3,
+    "SILENT": 23
   }
 }

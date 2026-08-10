@@ -1,6 +1,18 @@
 {
-  "artifact": "Cycle 973 independent repair-map refutation check",
+  "artifact": "Cycle 973 independent abstract-semantic repair-map attack",
+  "audit_input_paths": [
+    "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+    "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
+    "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
+  ],
+  "cache_contract": {
+    "deterministic_body": true,
+    "format": "cycle973-runner-cache-v1",
+    "receipt": "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json",
+    "runner": "scripts/frontier_cycle973_map_independent_check_2026_08_09.py"
+  },
   "caps": {
+    "audit_input_path_cap": 3,
     "delta_vocabulary_size": 4,
     "logical_world_cap": 6,
     "pinned_blob_reads_exact": 26,
@@ -8,7 +20,15 @@
     "row_catalog_exact": 26,
     "working_tree_corpus_reads": 0
   },
-  "checker_digest": "75a4a17555829be6841e544d810ee65bd3cfbb264403042fa9e70bf8a66fbe72",
+  "checker_digest": "c72e29b027fe728c3f9f0c9405740d8de8ec34acb6829df437230adeeb9a9c47",
+  "delta_dispute_mutation_probe": {
+    "active": true,
+    "findings_verbatim": [
+      "FINDING DELTA_CLASS_DISPUTE path=docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md primary=STRICTLY_WEAKER independent=ORTHOGONAL_RESTATEMENT attack=\"rule-value codomain is not identified with a probability simplex\""
+    ],
+    "mutated_class": "STRICTLY_WEAKER",
+    "mutated_path": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md"
+  },
   "delta_vocabulary": [
     "STRICTLY_WEAKER",
     "STRICTLY_STRONGER",
@@ -17,15 +37,48 @@
   ],
   "disputed_row_count": 0,
   "disputed_rows": [],
+  "execution_caps": {
+    "audit_timeout_sec": 300,
+    "house_stdout_limit_bytes": 6000,
+    "stdout_limit_bytes": 150000
+  },
   "families": {
     "ambiguity_attack_family": "mixed support/weight or state-resolved/marginal text",
-    "independent_row_family": "separate 26-case semantic adjudication catalog",
-    "logical_model_family": "truth-table worlds (support variation S, distribution variation P, conclusion C) constrained by S=>P",
+    "independent_row_family": "separate 26-blob pinned membership catalog plus manual semantic-mode catalog",
+    "logical_model_family": "abstract truth-table worlds (support variation S, distribution variation P, conclusion C) constrained by S=>P",
     "quote_attack_family": "pinned substring or Python-AST-constant verification",
     "typed_attack_family": "support/carrier/rule-value objects versus probability distributions"
   },
   "findings": [],
   "findings_verbatim": [],
+  "independent_blob_ids": [
+    "20955a2e976f7d3a1f38fed55cd0b1bdd91f82b4",
+    "d7cc44c356540791412a11f708774a55bee5d069",
+    "754e98cb997dcd667986fd3e35b36ad49320a72d",
+    "5dcff503dc34b95976a270af7a1620e3dfe1747e",
+    "e0fadcaf294d5c6c0057e45962947bc1c963bcd3",
+    "06c0893e6bf6e7307ff2c554f9f725cc28cfd225",
+    "060ca434261c21da36c836069059abb1305f3da7",
+    "8f03421ca7dd22e62820670c918c2e8f388c6013",
+    "b3beee9be28d84631acb35af0139ec1848a6fd46",
+    "63ad3f8ec9faf6a50174cdb8c90686f31a53947a",
+    "355ae2f6920a07f941750294b80da86b9739ad5a",
+    "de2d33ef647fc3e0acaf8acfc10e56d3b858afb0",
+    "960274498dc869044f87012300d23516dd5c6c81",
+    "6de6f80c7c1a4ef98275079df4f5b871ee0d0c90",
+    "7dac7b1df9ce0a1d58dac77c93e920c0d851b07a",
+    "9bf32ce61d1b3397c258c98425d7bbc77a5fd481",
+    "0e1ca9482fffb927eb70985cfbc8bd02d773bce6",
+    "7a2c857e57e407e559be5948bda7ffffd32d6ca0",
+    "717f145739244195da6db7bf05a8ff75b59bc980",
+    "2091031b26d477d23fc79a4b2bb49d7968edb76f",
+    "613f6f2107bb562c240048f4eab2ee707212fe7b",
+    "7a71e88cd1965889b4d001fc4f15c028be29d470",
+    "1749ddaaa5066f32fad13942fe27ba55bc0a8a97",
+    "fb255c2ed3b7def6e8adb9239e005d6a9910596f",
+    "7e368d061f3776e780a04844cdc75960a881280e",
+    "f7cf8e9c1ce96a390a821f2086fc16b2c5b11e7d"
+  ],
   "independent_delta_histogram": {
     "ORTHOGONAL_RESTATEMENT": 6,
     "STRICTLY_STRONGER": 8,
@@ -191,21 +244,71 @@
       "path": "scripts/realized_kinetic_branch_selection_gauged_background_invariance_2026_07_02.py"
     }
   ],
+  "independent_same_support_control": {
+    "distribution_changed": true,
+    "mu_0": {
+      "down": 0.3333333333333333,
+      "up": 0.6666666666666666
+    },
+    "mu_1": {
+      "down": 0.6666666666666666,
+      "up": 0.3333333333333333
+    },
+    "normalized": true,
+    "same_support": true
+  },
   "integrity": {
     "all_primary_quotes_match_pinned_blobs": true,
     "all_rows_rederive_old_semantic_consumption": true,
+    "delta_dispute_mutation_probe_active": true,
+    "independent_blob_catalog_has_26_unique_ids": true,
+    "independent_blob_catalog_resolves_uniquely": true,
     "independent_catalog_has_26_rows": true,
     "independent_classes_use_closed_vocabulary": true,
     "independent_paths_exist_at_pin": true,
     "independent_paths_have_cycle971_digest": true,
+    "independent_same_support_control": true,
+    "literal_audit_input_paths": true,
     "literal_pin_matches_primary": true,
     "primary_and_independent_path_sets_match": true,
-    "truth_table_world_cap_respected": true
+    "primary_cache_envelope_and_receipt_pin": true,
+    "primary_map_digest_recomputed": true,
+    "truth_table_world_cap_respected": true,
+    "witness_bearing_catalog_agrees": true
   },
-  "logical_relation": "S implies P; P does not imply S because same-support weight changes are allowed",
+  "logical_relation": "abstract S implies P; P does not imply S by the independently printed same-support control",
   "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
-  "primary_map_digest_checked": "56e0f43f19ad2588b8cb3d78d19c94997e1bf8ce9e5e731e6f5d5d6fb15b94fe",
-  "refutation_outcome": "PRIMARY_SURVIVES_INDEPENDENT_DELTA_REFUTATION",
+  "primary_map_digest_checked": "f863cd6edac1d2fd4ccace04596f908b1cabb204c4e3c554384a781261c7aade",
+  "refutation_outcome": "PRIMARY_SURVIVES_INDEPENDENT_ABSTRACT_DELTA_ATTACK",
+  "resolved_paths_by_blob": {
+    "060ca434261c21da36c836069059abb1305f3da7": "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md",
+    "06c0893e6bf6e7307ff2c554f9f725cc28cfd225": "docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md",
+    "0e1ca9482fffb927eb70985cfbc8bd02d773bce6": "docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "1749ddaaa5066f32fad13942fe27ba55bc0a8a97": "docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md",
+    "2091031b26d477d23fc79a4b2bb49d7968edb76f": "docs/THETA_DEFECT_CLOSURE_FROM_ADMISSIBILITY_TEST_BOUNDED_NOTE_2026-07-03.md",
+    "20955a2e976f7d3a1f38fed55cd0b1bdd91f82b4": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+    "355ae2f6920a07f941750294b80da86b9739ad5a": "docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md",
+    "5dcff503dc34b95976a270af7a1620e3dfe1747e": "docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+    "613f6f2107bb562c240048f4eab2ee707212fe7b": "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md",
+    "63ad3f8ec9faf6a50174cdb8c90686f31a53947a": "docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+    "6de6f80c7c1a4ef98275079df4f5b871ee0d0c90": "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "717f145739244195da6db7bf05a8ff75b59bc980": "docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md",
+    "754e98cb997dcd667986fd3e35b36ad49320a72d": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+    "7a2c857e57e407e559be5948bda7ffffd32d6ca0": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+    "7a71e88cd1965889b4d001fc4f15c028be29d470": "docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md",
+    "7dac7b1df9ce0a1d58dac77c93e920c0d851b07a": "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "7e368d061f3776e780a04844cdc75960a881280e": "scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py",
+    "8f03421ca7dd22e62820670c918c2e8f388c6013": "docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+    "960274498dc869044f87012300d23516dd5c6c81": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "9bf32ce61d1b3397c258c98425d7bbc77a5fd481": "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "b3beee9be28d84631acb35af0139ec1848a6fd46": "docs/MATTER_REALIZATION_KS_HOP_BRIDGE_EDGE_DIAG_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+    "d7cc44c356540791412a11f708774a55bee5d069": "docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+    "de2d33ef647fc3e0acaf8acfc10e56d3b858afb0": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "e0fadcaf294d5c6c0057e45962947bc1c963bcd3": "docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md",
+    "f7cf8e9c1ce96a390a821f2086fc16b2c5b11e7d": "scripts/realized_kinetic_branch_selection_gauged_background_invariance_2026_07_02.py",
+    "fb255c2ed3b7def6e8adb9239e005d6a9910596f": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py"
+  },
+  "semantic_scope": "manual per-row mode oracle; abstract logical consistency attack only; row-specific physics hypotheses are not re-proved",
   "truth_tables": {
     "countermodel": [
       {
@@ -339,5 +442,6 @@
         "old": true
       }
     ]
-  }
+  },
+  "witness_bearing_findings_verbatim": []
 }

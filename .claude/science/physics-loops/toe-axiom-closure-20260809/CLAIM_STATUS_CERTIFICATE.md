@@ -633,7 +633,8 @@ independent_audit_required: true
   stage-7 dependency-policy epoch mismatch after 4,807 rows and 3,685 runner
   classifications. A five-file current-main overlay passes all 18 stages at
   checkpoint `3e3feb9fed42`. Changed evidence is clean for Block 23 alone
-  (`1/1`) and the full stack (`23/23`), with zero failures and control failures.
+  (`1/1`) and the full stack (`23/23`), with zero failures and zero control
+  failures.
 - Science commit: `c236890389`; delivery remains pending.
 - Governance: N1--N8 restricts every exclusion to its declared coefficient and
   regularity class; no physical ghost, universal mode count, gravity no-go,

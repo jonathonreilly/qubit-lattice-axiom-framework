@@ -79,8 +79,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: exact one-site rejection of raw singleton identification and of normalized finite restriction as a universal or automatically effect-functional bridge; physical outcome-partition derivation remains open
 hypothetical_axiom_status: candidate wording only; no axiom edit authorized
 review_disposition: self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: block02_local_stacked_on_open_6063
-pr_url: null
+pr_status: open_6065_stacked_on_open_6063
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6065
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -107,5 +107,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: finish the Block 2 source/runner pack, run mutation and repository conformance, then open a stacked PR on Block 1
+next_exact_action: launch Block 3 from PR 6065 and test whether Record plus Admissibility derives measurable outcome partitions and same-effect descent; if not, construct an exact paired-model underdetermination witness and sharpen the narrow axiom update without editing canonical files
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

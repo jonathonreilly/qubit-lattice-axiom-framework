@@ -13,6 +13,9 @@ only the current-main dependency-policy epoch stop owned by PR #6061; all
 generated churn has been removed. Final cold diff and stacked-delta sanity
 pass. The canonical axiom memo remains untouched.
 
+Opened: PR #6065, commit `4b12a78d16`. Hard landing order is #6063, then
+#6065.
+
 Completed Block 1 delivery checklist:
 
 - resolve or honestly demote the exact target;

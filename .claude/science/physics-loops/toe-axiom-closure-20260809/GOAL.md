@@ -559,3 +559,30 @@ remain live.
 The existing Block-12 candidate wording already types the fixed action and
 fixed-global ensemble if adopted. No broader axiom candidate is needed, no
 canonical wording is edited, and no fixed percentage moves.
+
+## Block 16 Target And Disposition
+
+Block 16 executes the connected/balanced-network routes left by Block 15.
+A positive tick-plus-face bouquet sharing exactly one vertex has an optional
+piecewise-causal identity routing with coarse speed `1/2`, while its aggregate
+unit-tangent current is timelike. All 2,369 supported nonzero bouquet sources
+annihilate the full five-null space and solve directly.
+
+A second construction gives two nonnegative spatial-permutation-symmetric
+temporal bundles with exact common current `J_A=J_B=(2,2,2,6)`. Every one of
+504 spatially uniform binary histories is locally balanced; all 2,768
+supported nonzero history-mode pairs are full-null compatible and directly
+solvable. Their contrast is pure spatial shear with a coefficient-six pole.
+
+Equal-coefficient temporal junctions are rigid on the current eight-direction
+inventory: the exact number-field coefficient matrix has rank eight, so only
+direction-class-preserving relabelings survive. An explicit composite chord
+does produce the rank-one tensor for `u=(1,0,0,2)`, but uses one negative edge
+coefficient and retains positive compact scale charge.
+
+The Block-15 compact separator therefore survives every tested positive
+topology and reweighting. This strengthens the route decision without becoming
+a gravity or positive-mass no-go: fixed-global, open, signed/background,
+constraint, curved/lifted, nonlinear, and alternate-carrier mechanisms remain
+live. Existing candidate wording types those choices if adopted, but selects
+none. No canonical edit or fixed-percentage move is made.

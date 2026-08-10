@@ -263,3 +263,29 @@ source/Record interpretation, geometry dynamics, coupling, nonlinear regime,
 or realized member. The existing candidate wording remains sufficient by
 premise. No canonical wording is edited and the fixed TOE percentages remain
 unchanged.
+
+Block 16 crosses the connected/balanced positive-network seam. The tick-plus-
+face bouquet is a connected positive actual-edge source with a coarse timelike
+piecewise-causal routing, and the matched bundle family supplies exact local
+balance for every binary history. Both families solve every supported named
+nonzero Regge mode without projection. Local Ward compatibility is no longer
+the leading obstruction.
+
+The compact trace remains analytic. The identity-metric edge variation
+`z_d=|d|/2` is strictly positive and lies in the zero-momentum Regge kernel.
+Every nonzero positive edge source has positive overlap with `z`, while every
+bare Hessian-image source has zero overlap. Connected topology and unequal
+positive reweighting therefore cannot repair the unmodified flat compact
+equation.
+
+This is a scale-mode boundary, not a physical gravity no-go. Signed/background
+reaction, fixed-global scale, open boundary, curved or lifted scale/shape
+geometry, nonlinear combined equations, and alternate carriers remain live.
+The bouquet is rank two, the weighted bundle includes spacelike constituents,
+and neither construction selects Record identity routing or dynamics.
+
+The exact axiom implication is unchanged: the existing candidate already
+types the action, carrier, Ward equation, geometry law, and declared zero-mode
+ensemble if adopted. Current axioms still do not select those data, a physical
+source/action unit, coupling, Lorentzian/nonlinear regime, Born law, or realized
+history. No canonical edit or fixed-percentage change occurs.

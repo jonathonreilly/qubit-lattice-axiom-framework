@@ -342,3 +342,25 @@ open PR collides with Block 14.
 | connected balanced junction | locally force-balanced positive network with one rank-one timelike effective source | not executed; a simple kink leaves a corner force | highest-value next causal/matter route |
 | shared-transverse response | actual source and metric-sector Regge equation | four directions tend to source-derived coefficient four | retain as unprojected two-stream weak-field slice |
 | existing history/action amendment | Block-12 candidate wording | already types the fixed action and fixed-global/open/constraint choices | no broader candidate and no canonical edit |
+
+## Block 16 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| connected positive bouquet | closed tick and face lines sharing one vertex | 2,369 nonzero-mode solves; coarse speed `1/2`; rank-two source | retain as connected causal/timelike aggregate bridge; routing/source selection open |
+| matched nonnegative bundles | `A_r=2sqrt2` at `r=1`; `B_0=3`, `B_2=sqrt3` | exact common current; 504 histories balance; 2,768 modes solve | retain pure-shear channel; spacelike `B` constituents forbid particle claim |
+| equal-tension junction | rational relations over `Q(sqrt2,sqrt3)` | rank eight, so direction-class counts cannot convert | retain narrow rigidity; unequal weights and other carriers live |
+| compact homothety separator | `z=M(0)I` against positive edge-source cone | exact all-cone exclusion survives the new positive networks | retain at five-premise scope only |
+| composite timelike chord | `2[sqrt(2l_t^2+2l_f^2-l_x^2)-sqrt5]` | exact rank-one metric row; one negative edge coefficient; positive scale charge | retain `k=0` control; finite-momentum carrier open |
+| signed/fixed/open ensemble | Blocks 14--15 routes | each evades the narrow compact premise explicitly | preserve as live physical/convention options |
+| curved/lifted combined geometry | scale/shape equation or nonlinear constraint | not executed | highest-value next science route |
+| existing candidate amendment | Block-12 wording | already types action/carrier/Ward/geometry/ensemble by premise | no broader candidate and no canonical edit |
+
+## Block 16 live PR sweep
+
+The delivery base is exact PR #6083 head
+`d6e789784c34fbc0daf20626e34ff9f7e948d5ce`; `origin/main` is
+`39c74017b870c27c804e3992f2a11e90336476b2`. PR #6083 is `CLEAN` and
+mergeable. The coefficient-four Block-15 transverse metric component and this
+block's coefficient-six source-contracted response are distinct observables,
+not a collision. No `review-loop` is used.

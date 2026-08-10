@@ -1,6 +1,6 @@
 {
- "edge_count": 15565,
- "node_count": 5461,
+ "edge_count": 15572,
+ "node_count": 5462,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -409,6 +409,10 @@
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",
    "out_degree": 4
+  },
+  "admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "b431044c389f",
+   "out_degree": 7
   },
   "admitted_event_interbank_allocator_handoff_cycle717_bounded_theorem_note_2026-07-26": {
    "deps_hash": "17377b1eecff",

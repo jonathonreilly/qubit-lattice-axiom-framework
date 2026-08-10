@@ -70,5 +70,17 @@ The positive source is a two-stream mixture. Its exact timelike mean current
 does not close a connected rank-one massive worldline, and the compact
 separator does not apply to sign-indefinite geometry contributions.
 
+Block 16 executes the connected-positive and unequal-weight reopen conditions.
+The tick/face bouquet and matched bundle histories close every supported named
+nonzero mode, so local topology, balance, and positive reweighting supply no
+evidence for a broader obstruction.
+
+| nonzero componentwise-nonnegative edge-length source in the unmodified flat compact zero-mode equation | all fifteen actual edge-length coordinates at `k=0`, fixed bare quadratic Regge Hessian, periodic compact domain | `z=M(0)I` has `z_d=|d|/2>0` and `Q_R(0)z=0`; therefore `z dot s>0` for every nonzero positive-cone source while every Hessian-image source has zero overlap | N1--N8 complete in the Block-16 landing note; positive topology, unequal reweighting, and a composite chord are attempted, while signed, fixed/open, curved/lifted, and alternate-carrier routes remain live | exact convex-cone boundary on five named premises only; no positive-mass, gravity, causal-particle, nonlinear, carrier, boundary, or axiom no-go | select an open/fixed/background/constraint/curved scale-mode mechanism or change the source/operator/carrier with one physical combined law |
+
+The composite chord shows that one negative edge coefficient is not sufficient:
+its positive degree-one scale charge still fails `k=0`. It is not an
+exhaustion of signed sources. The narrow separator must not be promoted beyond
+the bare flat compact equation.
+
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.

@@ -714,3 +714,31 @@ head `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`. Hard landing order is #6063,
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 #6080, #6081, #6082, then #6083. The canonical memo and fixed percentages
 remain unchanged.
+
+## Block 16 science handoff
+
+Block 16 closes Block 15's connected/balanced-positive-network search at
+nonzero modes. The connected tick-plus-face bouquet is positive, has a coarse
+timelike piecewise-causal routing, and solves all 2,369 supported nonzero
+sources. Two distinct nonnegative temporal bundles share exact current
+`(2,2,2,6)`; all 504 binary histories balance and all 2,768 supported nonzero
+history modes solve.
+
+The compact result remains exact: `z=M(0)I` has components `|d|/2>0` and lies
+in the bare `Q_R(0)` kernel. No nonzero componentwise-positive edge source lies
+in its image. Connected topology, unequal positive weights, and the composite
+rank-one chord do not evade the stated separator. Signed/background,
+fixed-global, open-boundary, curved/lifted, and alternate-carrier mechanisms
+remain live.
+
+The primary runner is `PASS=33 FAIL=0`; the independent SVD/lstsq route passes
+seven families. Fifteen genuine family mutations and all 33 forced-false named
+checks fail closed. N1--N8 and all five resolution classes land with the
+source/cache. Citation graph, direct/isolated conformance, commit, and PR
+delivery records remain to be appended after execution.
+
+Existing candidate wording already types the mathematical choices but does
+not select the Record/source identity, action weights, compact mechanism,
+physical carrier, geometry dynamics/coupling, Lorentzian/nonlinear law, Born
+functional, or realized history. No canonical edit, percentage move, audit
+verdict, or `review-loop` occurs.

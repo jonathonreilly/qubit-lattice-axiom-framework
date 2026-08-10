@@ -871,3 +871,76 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   head `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`. Hard landing order is #6063,
   #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
   #6080, #6081, #6082, then #6083; no `review-loop` is invoked.
+
+## Block 16 promotion-value and cluster-cap gate
+
+- **V1 — specific obstruction closed:** Block 15 leaves the explicit live
+  route `connected balanced junction` and says its source is two disjoint
+  streams. Block 16 closes the connected/local-balance part: the bouquet has
+  one shared vertex with exact balance, and every binary bundle history is
+  locally balanced. Rank-one constituent-causal matter remains open and is not
+  claimed closed.
+- **V2 — new derivation and search:** at
+  `origin/main@39c74017b870c27c804e3992f2a11e90336476b2`, searches for both noun
+  orders of matched temporal bundles, equal-coefficient junctions, compact
+  homothety/positive-cone separation, and timelike bouquets found no landed
+  match. The exact Block-15 branch search found only its disjoint two-stream
+  note and its expressly unexecuted connected-junction route. The new content
+  is the connected bouquet, the exact unequal-weight common-current bundle
+  pair, all 504 histories and 2,768 supported modes, number-field rank-eight
+  rigidity, and the composite-chord control.
+- **V3 — not already mechanically complete:** no. Existing primitives supply
+  the carrier, not the exact bundle weights, the history family, the
+  number-field rigidity proof, or their full Regge source inventory. Those are
+  new framework-specific constructions rather than a textbook post-processing
+  of an existing runner.
+- **V4 — marginal content:** yes. Exact current matching over
+  `Q(sqrt(2),sqrt(3))`, exhaustive history-mode solvability, and a connected
+  piecewise-causal routing are nontrivial structural results.
+- **V5 — no one-step variant:** the closest prior block is Block 15. It uses
+  two disjoint equal-weight streams and one common-support metric observable;
+  Block 16 changes network topology, introduces unequal algebraic bundle
+  weights and history switching, proves junction rigidity, and supplies a
+  separate pure-shear response. This is not a relabeling.
+
+**Cluster-cap evaluator verdict: `OPEN`.** This is the sixteenth stacked
+campaign block and therefore carries a high marginal-review burden. It clears
+that burden because its load-bearing premise is new: exact equality of two
+distinct nonnegative temporal-bundle currents permits arbitrary binary
+switching while preserving local balance. That structure is absent from the
+prior gravity blocks, which use one static line, one helix, a signed pair, or
+two disjoint fixed streams. The connected bouquet separately executes the
+live topology route named by Block 15, while the rank-eight number-field
+calculation proves why equal coefficients cannot accomplish the same class
+conversion. Review can isolate four decisive objects—the current identity,
+504-history balance, 2,768-mode Regge inventory, and compact homothety stress
+test—without replaying the earlier source constructions. The marginal review
+value is therefore more than another instance count: it distinguishes local
+network balance from rank-one matter and moves the hard residual to a
+constituent-causal carrier plus selected compact geometry mechanism. The
+packet remains bounded support, leaves the percentages fixed, and seeks no
+audit verdict.
+
+## Block 16 direct-review record
+
+- The connected positive bouquet and matched nonnegative bundles are derived
+  from actual edge rows. Their timelike quantities are explicit coarse or
+  aggregate diagnostics; rank-one and constituent-causality limits are stated.
+- The exhaustive counts are 2,369 supported bouquet sources among 8,755 modes
+  and 2,768 supported source modes among every one of 504 binary histories.
+  Complete five-null overlaps and direct unprojected solves pass.
+- `z_d=|d|/2>0` and `Q_R(0)z=0` give an analytic all-cone separator. Connected
+  topology, unequal positive weights, and the composite chord are explicit
+  stress tests; the complete N1--N8 scope audit preserves every changed-premise
+  escape.
+- An independent reconstruction that does not import the Block-16 runner
+  passes seven algebraic/SVD/lstsq families. Fifteen genuine source, junction,
+  weight, history, pole, bouquet, homothety, chord, landing-packet, and axiom
+  mutations fail at their intended families. All 33 named checks also fail
+  under process-local forced-false probes.
+- The Block-15 coefficient-four unit-transverse metric response and the
+  Block-16 coefficient-six source-contracted response are different
+  observables and agree with their respective source normalizations.
+- The primary runner is `PASS=33 FAIL=0`. Cache, citation graph,
+  direct/isolated conformance, exact scope, commit, and delivery checks remain
+  to be recorded after execution. No `review-loop` is invoked.

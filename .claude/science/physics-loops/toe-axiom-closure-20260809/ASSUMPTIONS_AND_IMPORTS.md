@@ -314,3 +314,22 @@ tensor, physical Lorentzian law, probability law, or realized history is
 imported. The compact separator does not classify sign-indefinite combined
 geometry sources, curved/nonlinear equations, open/fixed domains, or alternate
 carriers.
+
+## Block 16 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Blocks 14--15 closed tick and face lines | connected bouquet/source building blocks | stacked bounded theorems | yes | no physical identity routing or action selection inherited |
+| eight positive-coordinate temporal edge classes | bundle carrier | source-bound finite inventory | yes | not the full signed proper-cubic orbit |
+| weights `2sqrt(2)`, `3`, and `sqrt(3)` | exact common-current solution | internally derived algebra | yes | not fitted; constituent-causality boundary stated |
+| finite tori and every binary history `L=3,...,8` | exhaustive certificate domain | explicit finite fixtures | yes | no arbitrary-size or continuous-Brillouin theorem |
+| actual Regge Hessian and metric map | null/range and response carrier | source-bound bounded theorem | yes | carrier/action selection remains open |
+| identity-metric homothety | compact separating null covector | exact constant-metric Regge zero mode | yes | proves only the bare flat compact positive-cone boundary |
+| naive Lorentzian form | timelike/causal diagnostic | interpretation diagnostic | no | no Lorentzian dynamics theorem inferred |
+| composite chord law | rank-one counter-control | explicit degree-one local construction | yes only for the control | finite-momentum Ward realization remains open |
+| kinetic-isotropy and realized-state primitives | tick form and pointwise evaluation | approved premise nodes | limited | supply no dynamics, source, state, selector, or boundary condition |
+| Record/source identity, action unit, compact mechanism, geometry dynamics/coupling, nonlinear law, Born rule, and realized history | TOE completion | open imports | no for theorem; yes for physical closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+No positive-mass theorem, Einstein constraint, curved background, fitted pole,
+physical routing law, probability functional, or selected history is imported.

@@ -295,3 +295,27 @@ Block 15 packages a stacked bounded theorem only if it contains all of:
 7. a source-pinned runner/cache, independent null/range recomputation, full
    named-check mutation sensitivity, harness/graph registration, and direct
    repository conformance review.
+
+## Block 16
+
+Block 16 packages a stacked bounded theorem only if it contains all of:
+
+1. one connected positive actual-edge bouquet with exact junction support, a
+   coarse timelike piecewise-causal routing, and explicit rank-two and
+   identity-selection boundaries;
+2. two distinct nonnegative spatial-permutation-symmetric temporal bundles
+   with exact common current and an exhaustive `504`-history local-balance
+   certificate;
+3. complete five-null compatibility and direct unprojected solves for all
+   `2,369` supported bouquet sources and `2,768` supported history-mode pairs;
+4. exact pure-shear descent, two independently reconstructed coefficient-six
+   long-wave poles, equal-coefficient junction rigidity, and a composite
+   rank-one timelike-chord control;
+5. an analytic positive homothety null vector and all-cone compact separator,
+   now stress-tested against connected topology and unequal positive weights;
+6. a complete N1--N8 packet with open/fixed/signed/curved/alternate routes
+   preserved and no canonical edit, new-axiom necessity, universal no-go, or
+   percentage claim; and
+7. a source-pinned runner/cache with five resolution certificates, independent
+   reconstruction, genuine family mutations, full forced-false sensitivity,
+   citation-graph registration, and direct/isolated conformance.

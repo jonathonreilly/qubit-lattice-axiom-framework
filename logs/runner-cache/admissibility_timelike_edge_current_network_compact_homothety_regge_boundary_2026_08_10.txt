@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_2026_08_10.py
+runner_sha256: d137c98094d4e9c1d829eec59fc74559586070d21a8b5b28b04bb1cd84d67a37
+input_fingerprint_sha256: 88772d6e4476a973e839841d836c74cd18ae635e2c16c5935e45a34c2940408a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 54.55
+status: ok
+----- stdout -----
+external_scientific_inputs: none; all current, bundle, Fourier, and homothety identities are derived on the supplied edge carrier
+package_local_integrity_reads: current axioms, Block-14 closed lines, Block-15 positive two-stream boundary, equal-form tick graining, and the actual Regge Hessian are source-bound
+analytic_boundary: positive balanced currents and the compact homothety separator are exact; full-null inventories are finite and named
+physical_boundary: aggregate current is not a selected rank-one massive trajectory, and the weighted bundle includes spacelike primitive edges
+[PASS] source-current-axioms
+[PASS] source-prior-frontier
+[PASS] source-existing-history-amendment
+[PASS] source-regge-boundary
+[PASS] source-tick-primitive
+[PASS] source-realized-state-boundary
+[PASS] future-temporal-edge-inventory
+[PASS] equal-weight-junction-rigidity
+       number-field coefficient rank=8
+[PASS] positive-permutation-symmetric-bundles
+[PASS] exact-bundle-current-identity
+[PASS] strictly-timelike-aggregate-current
+[PASS] binary-history-local-balance
+[PASS] binary-history-mode-inventory
+       per-L=[(3, 8, 6, 12), (4, 16, 14, 34), (5, 32, 30, 120), (6, 64, 62, 260), (7, 128, 126, 756), (8, 256, 254, 1586)]
+[PASS] binary-history-full-null-compatibility
+       gauge=2.308e-15; full-null=7.755e-15
+[PASS] binary-history-unprojected-solvability
+       max normalized solve residual=2.180e-13
+[PASS] binary-history-positive-mean-control
+       normalized k0 solve range=[3.207135,3.464102]
+[PASS] binary-contrast-pure-shear-map
+[PASS] binary-shear-unprojected-pole
+       coefficients=6.0200401,6.0050025,6.0012502,6.0003125
+[PASS] binary-shear-pole-convergence
+[PASS] positive-bouquet-connected-support
+[PASS] positive-bouquet-timelike-routing
+[PASS] positive-bouquet-mode-inventory
+       per-L=[(3, 44, 18, 8), (4, 111, 48, 15), (5, 224, 100, 24), (6, 395, 180, 35), (7, 636, 294, 48), (8, 959, 448, 63)]
+[PASS] positive-bouquet-full-null-compatibility
+       gauge=5.678e-15; full-null=1.136e-13
+[PASS] positive-bouquet-unprojected-solvability
+       max direct solve residual=1.001e-12
+[PASS] positive-bouquet-zero-mode-control
+       homothety=12.071068; solve=13.537799
+[PASS] compact-homothety-null-vector
+       norm=2.8284271; Q0 residual=7.126e-15
+[PASS] nonnegative-source-cone-separation
+       extreme overlap range=[1.000000,2.000000]
+[PASS] composite-timelike-chord-control
+[PASS] positive-bouquet-unprojected-pole
+       coefficients=6.0000781,6.0000781,6.0000391
+[PASS] theorem-source-surface
+[PASS] no-go-discipline-source-surface
+[PASS] boundary-source-surface
+[PASS] canonical-axiom-nonmutation
+per_element: checked all fifteen positive edge-source extreme rays, eight temporal unit directions, two bundles, and the composite chord
+per_site: checked exact incoming-outgoing balance for every vertex of all 504 binary bundle histories and the connected bouquet junction
+per_mode: checked all 2,768 supported binary history-mode pairs and every one of 2,369 nonzero bouquet sources against five null directions
+per_block: checked number-field junction rigidity, positive timelike currents, unprojected tensor and transverse poles, and the axiom boundary
+lattice_wide: checked all 8,755 Fourier modes on six four-tori, every binary history of lengths three through eight, and every compact mean
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

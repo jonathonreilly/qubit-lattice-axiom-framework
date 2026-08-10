@@ -337,3 +337,32 @@ campaign authors no verdict.
 No canonical axiom is edited and the fixed TOE percentages do not move. The
 Block 15 source remains bounded support and requires independent audit; this
 campaign authors no verdict.
+
+## Block 16 certificate
+
+- A connected positive tick-plus-face bouquet has a coarse piecewise-causal
+  routing of speed `1/2` and timelike aggregate unit current. Its source is
+  explicitly rank two and does not select the identity routing.
+- All 2,369 supported nonzero bouquet sources among 8,755 named torus modes
+  annihilate the full five-dimensional Regge null space and solve directly.
+- Two nonnegative temporal bundle rows have exact common current
+  `(2,2,2,6)`. Every one of 504 binary histories balances locally; all 2,768
+  supported nonzero history-mode sources pass full-null and direct solves.
+- The bundle contrast is pure spatial shear. Independent momentum-halving
+  checks give coefficient-six unprojected poles for the shear and bouquet.
+- The exact compact homothety has `z_d=|d|/2>0` and `Q_R(0)z=0`. Connected
+  topology, unequal positive weights, and the composite chord do not evade its
+  all-cone separation on the stated five-premise compact carrier.
+- The N1--N8 packet preserves signed, fixed-global, open, curved/lifted, and
+  alternate-carrier routes and rejects any universal gravity, positive-mass,
+  causal-particle, or axiom-necessity interpretation.
+- The primary runner is `PASS=33 FAIL=0`; an independent reconstruction passes
+  seven families. Fifteen genuine family mutations and all 33 process-local
+  forced-false checks fail closed as intended.
+- Existing candidate history/action wording types the relevant data if
+  adopted. It selects none of them, and this mathematics requires no broader
+  canonical wording.
+
+No canonical axiom is edited and the fixed TOE percentages do not move. The
+Block 16 source remains bounded support and requires independent audit; this
+campaign authors no verdict.

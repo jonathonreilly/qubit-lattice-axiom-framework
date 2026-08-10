@@ -262,3 +262,17 @@ mergeable and `CLEAN` on the exact #6082 delivery head
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 #6080, #6081, #6082, then #6083. The canonical axiom memo and fixed
 percentages are untouched, and no `review-loop` is used.
+
+Block 16 is being packaged on branch
+`physics-loop/toe-axiom-closure-block16-network-20260810`, based on exact
+Block-15 delivery head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`.
+It adds the connected positive bouquet, matched nonnegative bundle histories,
+complete 2,369/2,768 nonzero-mode inventories, pure-shear and source-contracted
+coefficient-six poles, equal-coefficient junction rigidity, the composite
+chord, and a strengthened N1--N8 homothety-separator packet. The primary runner
+is `PASS=33 FAIL=0`; an independent seven-family reconstruction agrees,
+fifteen genuine mutations fail closed, and all 33 named checks emit a failure
+under forced-false mutation. Citation-graph registration, refreshed cache,
+direct/isolated conformance, commit, push, and PR remain to be recorded. The
+canonical memo is untouched, the fixed TOE percentages do not move, and no
+`review-loop` is used.

@@ -1,6 +1,6 @@
 {
- "edge_count": 15478,
- "node_count": 5446,
+ "edge_count": 15479,
+ "node_count": 5447,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2673,6 +2673,10 @@
   "coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_bounded_theorem_note_2026-07-12": {
    "deps_hash": "1f68cb010723",
    "out_degree": 3
+  },
+  "covariant_dependence_law_cycle972_bounded_theorem_note_2026-08-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "covariant_effect_map_nonselection_and_repeat_certainty_collapse_bounded_theorem_note_2026-07-11": {
    "deps_hash": "de5fccd291ab",

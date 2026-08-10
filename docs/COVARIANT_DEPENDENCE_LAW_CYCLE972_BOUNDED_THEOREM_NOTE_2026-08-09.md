@@ -59,8 +59,9 @@ The family consists of the distinct words
 = 20 words.
 ```
 
-`TOF` is excluded by its three-wire arity. Words of length two or more and
-continuous `M_2(C)` distributions are outside the declared horizon. In
+`TOF` is excluded by the declared two-site gate-kind/arity condition; this is
+a material family choice, not a consequence of radius one or the word-length
+cap alone. Words of length two or more and continuous `M_2(C)` distributions are outside the declared horizon. In
 particular, the marginal statement below is not extrapolated to longer
 landed words.
 
@@ -74,7 +75,10 @@ D[W,a,x](y | n) = 1{applying W to the seven-site basis state outputs y at a}.
 
 The primary imports and calls the real landed `apply_semantic` method. The
 coordinate translation check separately mutates a copied coordinate-state
-dictionary; no mutation claim is inferred from unchanged metadata.
+dictionary. Before using that coordinate representation, the primary compares
+it pointwise with landed `apply_semantic` on all 20 words, both target inputs,
+and all 64 conditions: 2,560 bridge comparisons with zero failures. No
+mutation claim is inferred from unchanged metadata.
 
 ## Full witness census
 
@@ -112,6 +116,8 @@ word/input rows out of 40, and 384 changed one-bit edge comparisons out of
 7,680. Those 12 rows contain 768 of the 2,560 enumerated conditioned
 configurations. Identity, every `X`, and every outward
 `CNOT(a -> a+d)` is independent of all six neighbour bits at target `a`.
+The primary also checks the claimed XOR value and unchanged control bit on all
+`6*2*64=768` witness truth-table rows; both failure counts are zero.
 
 The certificate checks only family construction and count reconciliation. It
 does not require six witnesses, or any witness, for PASS.
@@ -158,7 +164,9 @@ single law `y=x XOR n_d`.
 
 The covariance certificate gates group construction, closure, exhaustive
 comparison totals, failure-list reconciliation, and orbit-stabilizer
-bookkeeping. It would pass and report a non-covariant witness as a finding.
+bookkeeping. The gate does not require a full orbit or an orbit-stabilizer
+product for the observed witness subset, so it would pass and report a
+non-covariant witness as a finding.
 
 ## Why the uniform marginal erases the dependence
 
@@ -183,6 +191,12 @@ one-bit marginal comparisons, breaks marginal independence. This is the
 precise coexistence mechanism: state-resolved dependence is removed by a
 uniform average over the variable that XOR permutes.
 
+The length cap is essential. For example, the excluded length-two word
+`CNOT(a -> a+d); CNOT(a+d -> a)` sends the target to `y=n_d`, so uniform
+averaging over the original `x` would not erase neighbour dependence. No claim
+about that word or any other longer landed word is included in the `0/20`
+result.
+
 ## Independent refutation outcome
 
 The checker imports neither primary nor core. It blocklists all five cited
@@ -190,9 +204,11 @@ inputs from execution, parses the Python inputs as AST, independently
 reconstructs the gate family with Boolean semantics, and constructs the 24
 rotations from oriented orthonormal frames rather than signed permutations.
 It reproduced the 20-word census, six witnesses, two state-resolved classes,
-one word-law class, covariance, and the zero marginal result. Four active
-corruptions—witness count, covariance flag, class count, and marginal
-count—were all rejected.
+one word-law class, every exact XOR/control truth-table row, 61,440 transported
+rotation comparisons, 15,360 translated-state comparisons, and the zero
+marginal result. Five active corruptions—witness count, covariance flag, class
+count, marginal count, and an XOR-to-XNOR truth-table mutation—were all
+rejected.
 
 ```text
 PASS R0_PINS_BLOCKLIST_AND_AST
@@ -214,8 +230,10 @@ executed, while its note blob `f7b788d8076e7864bc5dbcbb33cb9e49554e494a`
 is read as text. The primary confirms the earlier five-word family and its
 declared open covariant residual before extending the orientation horizon.
 The landed axiom and Cycle-719 core are SHA-pinned in the receipt. Both
-runners replay deterministically, declare 300-second timeouts, and remain
-under the stricter 6 KB stdout ceiling.
+runners replay deterministically, declare and enforce 300-second timeouts,
+bind the primary receipt/cache to the current primary source and live landed
+inputs, and remain under the stricter 6 KB stdout ceiling. Receipts are written
+only after the actual stdout-size gate passes.
 
 ## Trace gate
 

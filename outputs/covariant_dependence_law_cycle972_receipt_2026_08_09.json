@@ -3,11 +3,11 @@
  "all_certificates_pass": true,
  "certificates": {
   "A_FULL_WITNESS_CENSUS": {
-   "finding": "family_words=20=1_identity+7_X+12_oriented_CNOT; neighbour_conditions=64; witness_words=6/20; dependent_word_x_rows=12/40; changed_edge_pairs=384/7680; witnesses=['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)']",
+   "finding": "family_words=20=1_identity+7_X+12_oriented_CNOT; neighbour_conditions=64; witness_words=6/20; dependent_word_x_rows=12/40; changed_edge_pairs=384/7680; witnesses=['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)']; xor_truth_table_failures=0/768; control_preservation_failures=0/768",
    "pass": true
   },
   "B_COVARIANCE_MEASUREMENT": {
-   "finding": "group=Z3_semidirect_Oplus_cubic; rotations=24; rotation_checks=61440; translation_generator_checks=15360; covariance_verdict=COVARIANT; non_covariant_witnesses=[]",
+   "finding": "group=Z3_semidirect_Oplus_cubic; rotations=24; rotation_checks=61440; landed_coordinate_bridge_failures=0/2560; translation_generator_checks=15360; covariance_verdict=COVARIANT; non_covariant_witnesses=[]",
    "pass": true
   },
   "C_ORBIT_PARTITION": {
@@ -19,7 +19,7 @@
    "pass": true
   },
   "E_CONTROLS_AND_PROVENANCE": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=1.128563<1400; stdout_upper_bound_bytes=3757<6000<150000; timeout_s=300<1400",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=1.206511<timeout_s=300; stdout_upper_bound_bytes=3868<6000<150000; timeout_s=300<1400",
    "pass": true
   }
  },
@@ -54,6 +54,7 @@
    "docs/MINIMAL_AXIOMS_2026-06-29.md",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
   ],
+  "primary_source_sha256": "d027afa1d04ff3f70257d0f32e361d3c9d325bbd937b49a81fd939a1c90795cb",
   "provenance_pins_match": true,
   "sha256": {
    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
@@ -64,7 +65,7 @@
  "determinism_replay": true,
  "family_horizon": {
   "excluded": [
-   "TOF (three-wire arity)",
+   "TOF (excluded by the declared two-site gate-kind/arity condition)",
    "words of length >=2",
    "continuous M_2(C) distributions"
   ],
@@ -88,6 +89,8 @@
    "class_interpretation": "one spatial word-law class; two state-resolved classes because proper lattice motions do not flip x=0 and x=1",
    "covariant": true,
    "group_action": "(a,d,x) maps to (R a+t,R d,x); target bit x is not acted on",
+   "landed_coordinate_bridge_comparisons": 2560,
+   "landed_coordinate_bridge_failures": [],
    "non_covariant_witnesses": [],
    "proper_rotation_count": 24,
    "realized_group": "Z^3 semidirect product with the 24 proper signed-permutation cubic rotations",
@@ -164,10 +167,13 @@
    "changed_edge_pairs_digest": "fb4c1a2f6e57d4c3cfc966c81732c3e17c4e385b92633f38634851861e0c64ff",
    "conditioned_configurations": 2560,
    "conditioned_configurations_in_dependent_rows": 768,
+   "control_preservation_failures": [],
+   "controls_preserved": true,
    "dependent_word_local_input_rows": 12,
    "edge_pair_comparisons": 7680,
    "family": "all 20 distinct length-zero/one words on a target-centred seven-site nearest-neighbour star: identity; X on each of seven sites; and CNOT in both orientations on each of six centre-neighbour edges",
    "family_words": 20,
+   "law_truth_table_comparisons": 768,
    "neighbour_condition_count": 64,
    "rows": [
     {
@@ -519,7 +525,9 @@
    "witness_words": [
     {
      "changed_edge_pairs": 64,
+     "control_preservation_failures": [],
      "induced_target_map": "y=x XOR n_d",
+     "law_truth_table_comparisons": 128,
      "reads_neighbour_bit": "+x",
      "separated_pairs": [
       {
@@ -592,11 +600,14 @@
       }
      ],
      "target_coordinate_moved": "a",
-     "word_name": "CNOT(+x->C)"
+     "word_name": "CNOT(+x->C)",
+     "xor_law_failures": []
     },
     {
      "changed_edge_pairs": 64,
+     "control_preservation_failures": [],
      "induced_target_map": "y=x XOR n_d",
+     "law_truth_table_comparisons": 128,
      "reads_neighbour_bit": "-x",
      "separated_pairs": [
       {
@@ -669,11 +680,14 @@
       }
      ],
      "target_coordinate_moved": "a",
-     "word_name": "CNOT(-x->C)"
+     "word_name": "CNOT(-x->C)",
+     "xor_law_failures": []
     },
     {
      "changed_edge_pairs": 64,
+     "control_preservation_failures": [],
      "induced_target_map": "y=x XOR n_d",
+     "law_truth_table_comparisons": 128,
      "reads_neighbour_bit": "+y",
      "separated_pairs": [
       {
@@ -746,11 +760,14 @@
       }
      ],
      "target_coordinate_moved": "a",
-     "word_name": "CNOT(+y->C)"
+     "word_name": "CNOT(+y->C)",
+     "xor_law_failures": []
     },
     {
      "changed_edge_pairs": 64,
+     "control_preservation_failures": [],
      "induced_target_map": "y=x XOR n_d",
+     "law_truth_table_comparisons": 128,
      "reads_neighbour_bit": "-y",
      "separated_pairs": [
       {
@@ -823,11 +840,14 @@
       }
      ],
      "target_coordinate_moved": "a",
-     "word_name": "CNOT(-y->C)"
+     "word_name": "CNOT(-y->C)",
+     "xor_law_failures": []
     },
     {
      "changed_edge_pairs": 64,
+     "control_preservation_failures": [],
      "induced_target_map": "y=x XOR n_d",
+     "law_truth_table_comparisons": 128,
      "reads_neighbour_bit": "+z",
      "separated_pairs": [
       {
@@ -900,11 +920,14 @@
       }
      ],
      "target_coordinate_moved": "a",
-     "word_name": "CNOT(+z->C)"
+     "word_name": "CNOT(+z->C)",
+     "xor_law_failures": []
     },
     {
      "changed_edge_pairs": 64,
+     "control_preservation_failures": [],
      "induced_target_map": "y=x XOR n_d",
+     "law_truth_table_comparisons": 128,
      "reads_neighbour_bit": "-z",
      "separated_pairs": [
       {
@@ -977,10 +1000,13 @@
       }
      ],
      "target_coordinate_moved": "a",
-     "word_name": "CNOT(-z->C)"
+     "word_name": "CNOT(-z->C)",
+     "xor_law_failures": []
     }
    ],
-   "word_local_input_rows": 40
+   "word_local_input_rows": 40,
+   "xor_law_failures": [],
+   "xor_law_holds": true
   },
   "uniform": {
    "any_word_breaks_marginal_independence": false,
@@ -1220,8 +1246,8 @@
  },
  "law_formula": "for W_d=CNOT(a+d->a), target output y=x XOR n_d",
  "reachability_to_target": "closes",
- "runtime_sec": 1.1285633329534903,
- "science_digest": "b5ee092e70e0f7532d38337f1d1091e149acf97f53187af1c3d1164fc0375979",
- "stdout_bytes": 2385,
+ "runtime_sec": 1.2065112079726532,
+ "science_digest": "a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0",
+ "stdout_bytes": 2932,
  "trace_class": "direct_blocker_closure"
 }

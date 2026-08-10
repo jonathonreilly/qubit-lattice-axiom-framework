@@ -12,7 +12,7 @@ This block maps the 26 Cycle 971 `MEANING_CHANGED` rows into exact source
 quotes, old- and new-reading assertions, one closed-vocabulary semantic delta,
 one smallest machine-checkable discharge obligation, and a Cycle 970/972
 witness-bearing flag. It changes no landed source row, axiom, primitive,
-ledger, or audit status and asserts that no row is wrong.
+ledger, or audit status and makes no assertion that any row is right or wrong.
 
 The complete machine-readable hand-off is
 [`outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json`](../outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json).

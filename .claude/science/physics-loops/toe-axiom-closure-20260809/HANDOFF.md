@@ -805,6 +805,7 @@ then reproduces only the inherited dependency-policy epoch mismatch. A clean
 synthetic merge of closed PR #6061's five governance files passes all 18
 pipeline stages. Seeded changed-evidence checks Block 17 alone and all 17
 stacked claims with zero failures and zero control failures. Science commit is
-`1ca614c439`. PR #6088 is `CLEAN` and mergeable on exact Block-16 delivery
-head `66f5ce6df27c777da04542804163e3e65476d10c`. No `review-loop`, canonical
-axiom edit, audit verdict, or fixed TOE percentage change occurs.
+`1ca614c439`; conformance commit is `26a0ee9feb`. PR #6088 is `CLEAN` and
+mergeable on exact Block-16 delivery head
+`66f5ce6df27c777da04542804163e3e65476d10c`. No `review-loop`, canonical axiom
+edit, audit verdict, or fixed TOE percentage change occurs.

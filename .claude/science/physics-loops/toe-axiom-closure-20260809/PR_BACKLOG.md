@@ -306,5 +306,6 @@ cache, and canonical-nonmutation gates. The exact-base pipeline reaches the
 known inherited policy-epoch mismatch only; adding closed PR #6061's five
 governance files makes the complete pipeline pass. Seeded readiness checks one
 Block-17 claim and all 17 stacked claims with zero failures or controls.
-Science commit is `1ca614c439`; PR #6088 is mergeable and `CLEAN`. Hard
-landing order adds #6088 after #6085. No `review-loop` is used.
+Science commit is `1ca614c439`; conformance commit is `26a0ee9feb`. PR #6088
+is mergeable and `CLEAN`. Hard landing order adds #6088 after #6085. No
+`review-loop` is used.

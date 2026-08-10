@@ -1042,8 +1042,8 @@ instance or Fourier census.
   were likewise removed.
 - Seeded changed-evidence readiness checks Block 17 alone and all 17 stacked
   claims with zero failures and zero control failures.
-- The exact 17-file science commit is `1ca614c439`. PR #6088 is mergeable and
-  `CLEAN` on exact PR #6085 head
+- The exact 17-file science commit is `1ca614c439`; conformance commit is
+  `26a0ee9feb`. PR #6088 is mergeable and `CLEAN` on exact PR #6085 head
   `66f5ce6df27c777da04542804163e3e65476d10c`. PRs #6084, #6086, and #6087
   share at most the mechanically regenerated citation manifest and have no
   Block-17 science-packet or campaign-state collision. No `review-loop` is

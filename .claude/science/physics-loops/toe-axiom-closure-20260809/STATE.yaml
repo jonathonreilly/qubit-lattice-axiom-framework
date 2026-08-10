@@ -344,7 +344,7 @@ target_claim_type: bounded_theorem
 conditional_surface_status: the compact actual Regge Hessian has eleven null directions; the fixed bouquet source, all 504 bundle-history means, and their combined family require exact reaction ranks one, two, and three, while all temporal and all edge rays require eight and eleven; pure homothety fails every declared generator, metric-only reactions miss the extra branch for two generators, and constructive three/four/eleven-channel KKT systems close existence, sector separation, or unique response respectively; physical reaction selection, Record/source action, causal matter, geometry dynamics, coupling, nonlinear, projective, Born, and realized-history selection remain open
 hypothetical_axiom_status: the candidate geometry-indexed history/action amendment should add complete compact null-projection coverage, explicit constant-metric versus nonmetric-branch treatment, variational rather than post hoc reactions, and existence-versus-unique-response typing; it remains unadopted, is sufficient rather than proved necessary or minimal, can remain a downstream convention, and no wording is edited into the canonical axioms
 review_disposition: block17_direct_conformance_complete_independent_audit_required
-pr_status: block17_science_commit_pushed_pr_6088_clean_mergeable_conformance_checkpoint_pending
+pr_status: block17_science_and_conformance_pushed_pr_6088_clean_mergeable
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6088
 checkpoint_zero_toe_map:
   operational_quantum_records:

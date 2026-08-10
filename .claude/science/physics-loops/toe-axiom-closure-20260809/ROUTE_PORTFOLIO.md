@@ -501,3 +501,22 @@ nonlinear/Lorentzian selector, not further dyadic sampling.
 The evidence shifts the bottleneck from coefficient existence to the
 background/source/constraint law. It does not establish a universal action or
 gravity obstruction.
+
+## Block 22 Sourced Ward-Quotient Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| inherited flat-gauge complement | `ker G_0(k)^dagger` on `Q_B(k)` | `9-/2+` at both fixed-normal obstruction witnesses | retain as a genuine witness escape |
+| Frobenius-nearest Ward completion | `(I-P_0)Q_B(I-P_0)` | exact four-dimensional inherited kernel; same eleven nonzero eigenvalues | useful algebraic control, not a selected local action |
+| weak-source tangent pencil | six-mode `K` from the flat `O(k^2)` Schur limit and source matrices `M_s=dQ_s/dc` | `K` has `5-/1+`; `M_s` have `3-/3+`, `4-/2+`, `2-/4+`; positive roots determine `k/sqrt(c)` | retain as the exact numerical mechanism localizing the source Ward defect |
+| direct weak-source branches | all three stationary branches at `c=1e-5` | two, one, and three roots reproduce every pencil ratio within `1.2e-4` | confirms the perturbative law without fitted prefactors |
+| generic sourced infrared path | quotient on `k=x(1,0.7,-0.4,0.2)` | four numerical crossings and five successive inertia chambers | reject uniform-inertia claim for inherited `G_0` |
+| deterministic stress inventory | six symmetry lines, 15 corners, 8,192 random points | five chambers across 11,279 matrices | bounded diagnosis only; no continuous theorem |
+| finite periodic inventory | all 8,749 nonzero `L=3,...,8` modes | zero failures and minimum gap `0.088317...` | explicit finite-volume aliasing control; never substitute it for IR-order analysis |
+| background-dependent source connection | `R_*(ell,J)` plus differentiated joint Ward identity | not supplied | highest-priority constructive route |
+| full nonuniform/Lorentzian law | coupled solution and causal evolution | not supplied | physical endpoint |
+
+Projection changes the high-momentum verdict but cannot supply the terms in
+the differentiated sourced Ward identity. The unwanted `O(c)` mass matrices
+now identify what a selected connection must cancel or reinterpret. The next
+move is law construction, not another projector or scalar coefficient scan.

@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_sourced_regge_flat_gauge_quotient_ward_completion_boundary_2026_08_10.py
+runner_sha256: a308611dae2a70ee85a7d7bcbe998b50789c50fb8be7537a1f743b101f66bc5a
+input_fingerprint_sha256: 5b95e23c340d9bc0fb3639d01eb860edde76a0c288bbe16072809b1d8f880650
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 62.16
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the quotient, Ward completion, roots, and stress inventory are reconstructed from repository-local Regge data
+package_local_integrity_reads: current axioms, approved primitives, Block 21, and the retained Regge carrier are source-bound
+analytic_boundary: the projector identity is algebraic; tangent spectra, weak-source scaling, and finite-source path roots are double-precision numerical results
+physical_boundary: the inherited flat gauge map, Euclidean signature, homogeneous external-source branches, action, and coefficient remain supplied fixtures
+[PASS] source-and-axiom-boundary: the current foundation does not select the sourced gauge/constraint connection
+[PASS] source-note-contract: the note states both the witness escape and the four-crossing inherited-gauge boundary
+[PASS] source-parent-carrier: Block 21 supplies the interval-certified source and the fixed-N no-overlap being tested
+[PASS] bundle-b-source-reconstruction: the Block-21 Bundle-B stationary point is independently reconstructed before quotienting
+       residual=1.452e-38; iterations=5; deficit max=0.058010
+[PASS] flat-connected-six-mode-kinetic-limit: the inherited flat quotient has six massless physical directions with the intended five-negative/one-positive O(k^2) kinetic form
+       rank=4; low/massive=6/5; kinetic=(5, 1, 0); minimum |eigenvalue|=0.702223; step ratio=6.459e-07
+[PASS] three-source-O-k0-mass-splitting: the three retained sourced branch tangents generate nonzero O(k^0) physical mass matrices with source-dependent wrong infrared inertias
+       two-stream: mass=(3, 3, 0), gap=0.027745, Ward slope=11.721712; bundle-A: mass=(4, 2, 0), gap=0.140173, Ward slope=5.567366; bundle-B: mass=(2, 4, 0), gap=0.040347, Ward slope=36.669691
+[PASS] weak-source-square-root-crossovers: the generalized pencils predict every positive-coupling infrared crossing and direct coupling-1e-5 roots follow k proportional to sqrt(coupling)
+       two-stream: predicted=[0.185251, 0.363637], actual=[0.185205, 0.36362]; bundle-A: predicted=[0.827791], actual=[0.82779]; bundle-B: predicted=[0.304643, 0.53834, 0.594215], actual=[0.304657, 0.53843, 0.59433]
+[PASS] weak-source-direct-Ward-scaling: direct nonlinear source branches reproduce the tangent mass matrices, Ward defects, and three non-target infrared chambers
+       two-stream: IR=(7, 4, 0), mass error=1.850e-04, Ward error=2.306e-05; bundle-A: IR=(8, 3, 0), mass error=5.892e-06, Ward error=2.080e-06; bundle-B: IR=(6, 5, 0), mass error=3.906e-04, Ward error=9.111e-05
+[PASS] flat-gauge-quotient-witness-escape: the momentum-covariant inherited-gauge quotient escapes both fixed-N high-momentum witnesses
+       inertias=[(9, 2, 0), (9, 2, 0)]; gaps=['0.123891196', '0.145884042']
+[PASS] inherited-flat-gauge-ward-defect: the sourced geometry Hessian does not annihilate the inherited flat vertex-displacement map
+       witness spectral defects=['0.441292408', '0.508760488']
+[PASS] frobenius-nearest-hermitian-ward-completion: (I-P)Q(I-P) has the inherited gauge kernel and exactly the quotient nonzero spectrum
+       maximum algebra/spectrum error=4.263e-14; inertias=[(9, 2, 4), (9, 2, 4), (7, 4, 4)]
+[PASS] generic-path-four-crossing-sequence: the inherited-gauge quotient has four simple numerical inertia crossings on the named sourced path
+       roots=0.051280258968,0.069887007257,0.088715895888,0.204407087874; inertias=[(7, 4, 0), (8, 3, 0), (9, 2, 0), (10, 1, 0), (9, 2, 0)]
+[PASS] bounded-stress-inertia-inventory: the deterministic sourced quotient inventory contains five inertia chambers rather than a uniform target chamber
+       points=11279; counts={(7, 4, 0): 35, (8, 3, 0): 19, (9, 2, 0): 11150, (10, 1, 0): 69, (6, 5, 0): 6}; minimum gap=6.975e-06; maximum Ward defect=0.547993
+[PASS] finite-torus-infrared-aliasing: all L=3 through L=8 quotient modes miss the narrow sourced infrared chambers found by the continuum-path probe
+       modes=8749; target failures=0; minimum gap=0.088317
+[PASS] bounded-theorem-and-no-go-scope: the source licenses only the inherited-flat-gauge bounded diagnosis and preserves the covariant completion route
+per_element: checked all fifteen edge classes in the sourced action Hessian and the fifteen-dimensional Ward completion
+per_site: checked all fifty hinge classes inherited by the independently reconstructed Bundle-B kernel
+per_mode: checked weak-source roots, two high-momentum witnesses, four finite-source path roots, 11,279 stress points, and 8,749 torus modes
+per_block: checked all three retained weak-source branches plus the interval-backed Bundle-B quotient and algebraic Ward completion
+lattice_wide: checked and not executed — finite tori and sampled paths are not a continuous-zone, local source-connection, nonuniform-field, or Lorentzian theorem
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

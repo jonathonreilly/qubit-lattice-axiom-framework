@@ -448,3 +448,25 @@ signs are double-precision bounded facts with order-one margins.
 The candidate geometry/history wording is sufficient or target-equivalent,
 unadopted, and not proven minimal or necessary. It may instead be derived
 downstream. No canonical premise is changed.
+
+## Block 22 Assumptions And Imports
+
+Block 22 imports the Block-21 Regge-plus-curvature-square carrier, its three
+retained homogeneous external-source families, and the exact inherited flat
+vertex-displacement map. The action, `alpha=1/1024`, Euclidean signature,
+homogeneous source representatives, and source-coupling coordinate are
+explicit model fixtures rather than consequences of the current axioms.
+
+The flat six-mode kinetic limit, all three source-tangent mass matrices, their
+generalized-pencil ratios, and the direct `c=1e-5` roots are reconstructed from
+repository-local data. The tangent spectra and roots are double-precision
+numerical results with step-halving and direct-branch controls, not interval
+matrix theorems. The Frobenius-nearest Hermitian completion is exact algebra;
+its inherited momentum projector is not imported as a local covariant source
+law.
+
+The 11,279-point stress inventory and all 8,749 nonzero `L=3,...,8` modes are
+bounded domains. Their disagreement is an explicit finite-volume infrared
+aliasing diagnosis, not continuous-zone coverage. No observation, fitted
+constant, external scientific input, new primitive, canonical axiom edit,
+audit verdict, fixed-percentage move, or `review-loop` is imported.

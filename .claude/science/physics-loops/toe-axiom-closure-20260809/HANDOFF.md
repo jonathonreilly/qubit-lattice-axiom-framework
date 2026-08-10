@@ -1053,3 +1053,29 @@ claims (`21/21`) forensic-ready with zero failures and zero control failures.
 Science commit is `e03fb0527c`; graph-conformance commit is `08e4aa3640`.
 Campaign conformance is `13601983e9`. PR #6092 is open, mergeable, and
 `CLEAN`, stacked exactly on Block-20 delivery head `4338b09d21`.
+
+## Block 22 Sourced Ward-Quotient Handoff
+
+Block 22 tests the momentum-dependent orthogonal complement of the inherited
+flat vertex-displacement map on the interval-backed Bundle-B continuation.
+It escapes both Block-21 fixed-normal witnesses with `9-/2+` inertia and gaps
+`0.123891...` and `0.145884...`. Algebraically,
+`(I-P_0)Q_B(I-P_0)` is the unique Frobenius-nearest Hermitian completion with
+the inherited gauge image in its kernel and the same quotient spectrum.
+
+The inherited map is not a sourced gauge law. Along
+`k=x(1,0.7,-0.4,0.2)` the quotient crosses at `0.051280258968...`,
+`0.069887007257...`, `0.088715895888...`, and `0.204407087875...`; 11,279
+stress matrices split across five inertia chambers.
+
+The new perturbative result explains those crossings. The flat quotient's six
+massless modes have `O(k^2)` inertia `5-/1+`; the three retained source
+tangents instead produce `O(c)` mass inertias `3-/3+`, `4-/2+`, and `2-/4+`.
+Their generalized pencils predict two, one, and three `k/sqrt(c)` roots, all
+reproduced by direct `c=1e-5` branches. All 8,749 nonzero `L=3,...,8` modes
+still pass, exposing finite-volume IR aliasing. Primary cache is fresh at
+`PASS=15 FAIL=0` in `62.16 s`; all 15 fresh-process runner-copy mutations fail
+exactly one intended named check. N1--N8 licenses only this inherited-map
+bounded diagnosis. Graph and direct conformance are in progress; delivery
+remains pending. No canonical edit, percentage move, audit verdict, or
+`review-loop` occurs.

@@ -137,3 +137,16 @@ they are numerical, not interval roots. The strongest steelman is accepted:
 constant pointwise normals are likely the wrong physical localization, so the
 next route is to derive the covariant sourced quotient rather than broaden the
 negative claim.
+
+## Block 22 Inherited-Flat-Gauge Quotient Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| the inherited flat vertex-displacement quotient and its Frobenius-nearest Hermitian Ward completion do not retain the flat infrared inertia on the three retained weak-source branches or uniform inertia on the fixed homogeneous Bundle-B path/inventory | six-mode `O(k^2)` kinetic inertia `5-/1+`; source `O(c)` mass inertias `3-/3+`, `4-/2+`, `2-/4+`; direct `c=1e-5` roots reproduce all pencil `k/sqrt(c)` ratios; exact projector/completion algebra; witness escape `9-/2+`; four finite-source roots `0.051280258968...` through `0.204407087875...`; five chambers on 11,279 points; 8,749 torus modes miss the narrow IR | pass only for this inherited map, three retained source branches, homogeneous background, Euclidean action/coefficient, path, witnesses, and bounded inventories | do not claim a covariant sourced quotient, local connection, gravity, Regge, action family, all sources/backgrounds, physical instability, or axioms fail | background-dependent `R_*(ell,J)`, source/multiplier connection, full nonuniform solution, continuous zone, richer action, law-selected massive/curved phase, Lorentzian law |
+
+The strongest steelman is accepted. Differentiating the joint source Ward
+identity supplies `grad S dot dR`, mixed-source, and multiplier-curvature terms
+that the orthogonal completion cannot create. The unwanted `O(c)` mass matrix
+localizes why the flat `O(k^2)` generator fails, but does not determine the
+covariant replacement. The fixed-normal witness negative is retired for this
+quotient, so this is a new infrared boundary, not a cross-cycle echo.

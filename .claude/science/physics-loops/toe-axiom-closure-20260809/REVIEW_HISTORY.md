@@ -1338,3 +1338,38 @@ instance or Fourier census.
   Campaign conformance is `13601983e9`. PR #6092 is open, mergeable, and
   `CLEAN` on exact Block-20 delivery head `4338b09d21`; independent audit is
   required.
+
+## Block 22 inherited-flat-gauge sourced quotient science record
+
+- Reconstructed the interval-backed Bundle-B center at residual `1.452e-38`
+  and rebuilt its complete sourced 50-hinge Hessian.
+- Projected onto `ker G_0(k)^dagger`. Both Block-21 fixed-normal obstruction
+  witnesses become `9-/2+`, so their negative does not transfer to this
+  momentum-dependent quotient.
+- Proved algebraically that `(I-P_0)Q_B(I-P_0)` is the unique Frobenius-nearest
+  Hermitian matrix annihilating the inherited gauge image and has exactly the
+  quotient's eleven nonzero eigenvalues. Numerical algebra/spectrum error is
+  `4.263e-14`.
+- Derived the six-dimensional flat physical Schur limit with `O(k^2)` inertia
+  `5-/1+`. Differentiating all three source branches at `c=0` gives `O(c)`
+  mass inertias `3-/3+`, `4-/2+`, and `2-/4+`, with nonzero Ward slopes.
+- The positive generalized-pencil roots predict two, one, and three
+  `k/sqrt(c)` crossovers. Direct `c=1e-5` branches reproduce every ratio within
+  `1.2e-4` and have IR inertias `7-/4+`, `8-/3+`, and `6-/5+`.
+- Bracketed four generic-path roots at `0.051280258968...`,
+  `0.069887007257...`, `0.088715895888...`, and `0.204407087875...`, with
+  chamber sequence `7-/4+`, `8-/3+`, `9-/2+`, `10-/1+`, `9-/2+`.
+- The 11,279-point deterministic inventory contains five inertia chambers;
+  the maximum inherited Ward defect is `0.547993...`.
+- All 8,749 nonzero modes on the `L=3,...,8` four-tori have target inertia and
+  minimum gap `0.088317...`, so the finite grids miss the narrow IR chambers.
+- N1--N8 preserves the background-dependent local source connection, full
+  nonuniform solution, continuous zone, richer action, and Lorentzian law.
+  Primary cache is source/input pinned at `PASS=15 FAIL=0` in `62.16 s`.
+- Fifteen fresh-process runner-copy mutations cover axiom/note/parent binding,
+  source reconstruction, the flat kinetic limit, all three weak-source checks,
+  witness escape, Ward defect/completion, path roots, both inventories, and
+  bounded scope. Every mutation exits nonzero at exactly one intended named
+  check; aggregate result is `PASS=15 FAIL=0`.
+- Graph registration and remaining direct conformance are in progress;
+  delivery remains pending.

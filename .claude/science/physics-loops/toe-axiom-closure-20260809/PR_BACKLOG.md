@@ -414,3 +414,18 @@ graph conformance is
 `08e4aa3640`; campaign conformance is `13601983e9`. PR #6092 is open,
 mergeable, and `CLEAN` on the exact Block-20 delivery base. No `review-loop`
 is used.
+
+Block 22 is being packaged on branch
+`physics-loop/toe-axiom-closure-block22-sourced-ward-quotient-20260810`,
+stacked on exact Block-21 delivery head `c8c58fc23f`. Its distinct review
+object is the momentum-dependent inherited flat-gauge quotient and its
+Frobenius-nearest Hermitian Ward completion. It derives the flat six-mode
+`O(k^2)` kinetic matrix, all three retained source `O(c)` mass matrices, and
+their generalized `k/sqrt(c)` crossover law with direct weak-source controls.
+It retires the two fixed-normal high-momentum witnesses for this route, then
+brackets four finite-source roots, inventories five chambers across 11,279
+momenta, and shows all 8,749 `L=3,...,8` modes miss the narrow IR defect.
+Primary runner/cache is `PASS=15 FAIL=0`; all 15 fresh-process runner-copy
+mutations fail exactly one intended named check (`PASS=15 FAIL=0`). Graph and
+remaining direct conformance are in progress; delivery remains pending. No
+`review-loop` is used.

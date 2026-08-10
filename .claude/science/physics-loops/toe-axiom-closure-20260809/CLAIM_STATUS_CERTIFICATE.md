@@ -566,3 +566,30 @@ independent_audit_required: true
   Block-20 delivery head `4338b09d21`.
 - Governance: no axiom/primitive, audit status, ledger/queue, fixed
   percentage, or `review-loop` mutation.
+
+## Block 22 Inherited-Flat-Gauge Ward-Quotient Certificate
+
+- Claim type: `bounded_theorem`.
+- Positive escape: the momentum-dependent inherited flat-gauge quotient has
+  inertia `9-/2+` at both Block-21 fixed-normal obstruction witnesses.
+- Infrared mechanism: the flat quotient has six massless directions with
+  `O(k^2)` inertia `5-/1+`, but the three source tangents generate nonzero
+  `O(c)` mass matrices with inertias `3-/3+`, `4-/2+`, and `2-/4+`.
+- Scaling control: the resulting generalized pencils predict two, one, and
+  three positive `k/sqrt(c)` roots; direct `c=1e-5` branches reproduce every
+  ratio within `1.2e-4` and have IR inertias `7-/4+`, `8-/3+`, and `6-/5+`.
+- Algebraic theorem: `(I-P_0)Q_B(I-P_0)` is the unique Frobenius-nearest
+  Hermitian completion whose kernel contains the inherited gauge image; its
+  eleven nonzero eigenvalues equal the quotient spectrum.
+- Bounded diagnosis: four numerical Bundle-B generic-path roots traverse five
+  inertia chambers; the 11,279-point inventory contains all five, while every
+  one of 8,749 nonzero `L=3,...,8` torus modes misses the narrow IR defect.
+- Live route: derive the background-dependent local geometry/source generator,
+  differentiated Ward identity, and full nonuniform coupled solution before
+  continuous-zone and Lorentzian certification.
+- Runner/cache: source/input pinned, `PASS=15 FAIL=0`, `62.16 s`, with all five
+  N5 resolution lines.
+- Mutation sensitivity: all 15 fresh-process runner-copy mutations exit
+  nonzero at exactly one intended named check (`PASS=15 FAIL=0`).
+- Governance: N1--N8 passes only for the inherited-map bounded diagnosis; no
+  axiom/primitive, audit verdict, fixed percentage, or `review-loop` mutation.

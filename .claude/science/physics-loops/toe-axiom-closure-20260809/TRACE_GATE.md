@@ -405,3 +405,18 @@ full sourced field equations, richer actions, and Lorentzian evolution remain
 live. The exact new axiom interface is source/constraint localization and the
 covariant sourced second variation; candidate wording is unadopted. Fixed TOE
 percentages and canonical axioms remain unchanged. No `review-loop` is used.
+
+Block 22 executes the momentum-dependent inherited-flat-gauge escape preserved
+by Block 21. It retires both fixed-normal high-momentum witnesses on that
+quotient and proves the exact algebraic Ward-completion theorem. The stronger
+gain is mechanistic: the flat physical sector starts at `O(k^2)`, whereas all
+three supplied homogeneous source tangents introduce non-target `O(c)` mass
+matrices whose positive generalized-pencil roots are reproduced directly.
+Finite `L=3,...,8` tori miss the resulting narrow infrared chambers.
+
+Reachability remains `upstream_support`, not direct TOE closure. The new exact
+obligation is to derive the local background-dependent geometry/source
+generator `R_*(ell,J)`, its differentiated Ward-connection terms, and a full
+nonuniform coupled solution before continuous-zone and Lorentzian certification.
+Candidate law wording is unadopted; fixed TOE percentages and canonical axioms
+remain unchanged. No `review-loop` is used.

@@ -57,3 +57,19 @@ criteria therefore do not select `1/1024`.
 
 The tracked unsourced fold and sourced crossings move background,
 constraint, and source-law selection ahead of further coefficient sampling.
+
+## Post-Block-22 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | derive `R_*(ell,J)` and the differentiated source Ward identity | local formulas for the background-dependent geometry/source generator, mixed Hessian, multiplier curvature, and `grad S dot dR` terms; prove a selected massless phase has no unselected `O(k^0)` source term | all three retained source tangents generate wrong-signature `O(c)` mass matrices that dominate the flat `O(k^2)` sector |
+| 2 | solve one full nonuniform coupled source background | repository-local field equations and a certified stationary solution without affine metric freezing | a homogeneous normal root cannot determine the connection terms |
+| 3 | continuous Brillouin theorem on the selected quotient | analytic infrared-order control plus an interval or analytic cover with fixed physical inertia and exact Ward rank | the current 11,279-point inventory has five chambers, while all 8,749 `L=3,...,8` modes miss the narrow defect |
+| 4 | Lorentzian nonlinear sourced evolution | causal transfer/symplectic spectrum with the same selected source law | Euclidean Ward projection is not physical stability |
+| 5 | enlarge the local action only if the selected quotient fails | second independent invariant with law-derived coefficients | both scalar retuning and flat-map projection are now diagnosed, but the true connection remains untested |
+
+Block 22 retires the two Block-21 high-momentum witnesses for a momentum-
+dependent quotient. It simultaneously shows that algebraic Ward projection
+cannot substitute for the missing local sourced connection law: the exact
+diagnostic is an `O(c)` source mass term overtaking the `O(k^2)` flat graviton
+operator at `k` proportional to `sqrt(c)`.

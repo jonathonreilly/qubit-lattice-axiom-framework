@@ -807,3 +807,24 @@ background, and prove the continuous gauge-quotient and Lorentzian nonlinear
 stability there. If that selected quotient still fails, enlarge the local
 action basis and derive its coefficients. Canonical axioms and the fixed TOE
 rubric remain unchanged.
+
+## Block 22 Goal Checkpoint
+
+The inherited flat vertex-displacement quotient is a real escape from Block
+21's fixed-normal high-momentum obstruction: both witnesses have quotient
+inertia `9-/2+`. Its unique Frobenius-nearest Hermitian Ward completion is
+`(I-P_0)Q_B(I-P_0)` and has exactly the same eleven nonzero eigenvalues.
+
+The failure mechanism is now localized. The flat six-mode sector starts at
+`O(k^2)` with inertia `5-/1+`; all three retained source tangents add nonzero
+`O(c)` mass matrices with wrong signatures, and every generalized
+`k/sqrt(c)` crossover is reproduced on direct `c=1e-5` branches. Four
+finite-source roots traverse five Bundle-B chambers. All 8,749 nonzero
+`L=3,...,8` torus modes pass, proving that coarse grids can miss this IR
+boundary.
+
+The exact next obligation is `R_*(ell,J)` itself: derive the background-
+dependent local geometry/source generator and differentiated Ward-connection
+terms on a full nonuniform coupled solution, then prove that a selected
+massless phase begins at `O(k^2)`. Canonical axioms and the fixed TOE rubric
+remain unchanged.

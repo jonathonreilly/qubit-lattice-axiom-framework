@@ -1,6 +1,6 @@
 {
- "edge_count": 15602,
- "node_count": 5467,
+ "edge_count": 15609,
+ "node_count": 5468,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -429,6 +429,10 @@
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",
    "out_degree": 4
+  },
+  "admissibility_sourced_regge_flat_gauge_quotient_ward_completion_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "2dda77e3330a",
+   "out_degree": 7
   },
   "admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "b431044c389f",

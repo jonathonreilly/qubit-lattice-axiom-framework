@@ -28,27 +28,6 @@ them.
 Current science/open-lane follow-ups:
 
 
-- `2026-08-08-dependency-policy-epoch-debt-helper-registry`
-  Scope: `docs/audit/scripts/build_citation_graph.py`
-  (`EXPLICIT_PACKET_HELPER_RUNNER_PATHS`),
-  `docs/audit/data/dependency_policy_epoch.json`, and claim-scoped
-  packet-helper registrations.
-  Finding: dependency-policy epoch debt: helper-registry edits (cycles
-  869/870/872/873/874 landed; the AC2-salvage registration for
-  `exact_algebra_salvage_bounded_support_note_2026-08-08` pending as a
-  hard landing condition in that note's Review record) were made without
-  an epoch refresh because a refresh mass-invalidates ~860 legacy audits
-  (independently measured at 891 hard resets under
-  `legacy_dependency_policy_epoch_changed` /
-  `science_changed:dependency_policy_epoch`). The governed exact-hash
-  gate on `DEPENDENCY_POLICY_SOURCES` therefore reports an epoch
-  mismatch against the registry's current bytes on `main`.
-  Disposition: `science-needed`; owner decision required — a dedicated
-  policy pass must reconcile the exact-hash epoch gate with helper-registry
-  evolution (do not refresh the epoch ad hoc: ~860-891 legacy audits reset)
-  claim-scoped helper registration from the governed
-  dependency-extraction source, or adding the reviewed machine-readable
-  equivalence/impact record the review-loop guard requires).
 - `2026-08-07-premise-epoch-reset-narrative-staleness`
   Scope: hand-authored narrative surfaces on `main` after the
   framework-premise-epoch invalidation refresh (887 audits reset to
@@ -287,6 +266,18 @@ Record each new finding as one bullet:
   optional link to a longer packet in work history
 
 ## Queue History
+
+- `2026-08-08-dependency-policy-epoch-debt-helper-registry`
+  Resolved by the reviewed PR #6061 landing. The dependency-policy epoch now
+  hashes a location-bound normalization of `build_citation_graph.py` with
+  only the contents of the strictly literal
+  `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` assignment excluded. Every other
+  builder byte and the assignment's byte position remain governed, and
+  malformed, executable, duplicated, or otherwise rebound registry forms
+  fail closed. Helper source bytes and declared inputs remain bound on each
+  affected claim's own science fingerprint. The controlled manifest advances
+  to `dependency_policy_v3`; generated ledger, queue, status, and restoration
+  outputs were validation residue and did not land through review-loop.
 
 - `2026-07-10-wilson-plane-representation-ring-route`
   Resolved on `main`: the repaired finite-volume `SU(N)` note proves

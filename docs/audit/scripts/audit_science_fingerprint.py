@@ -13,6 +13,8 @@ security boundary and must have one producer/comparator.
 """
 from __future__ import annotations
 
+import argparse
+import ast
 import hashlib
 import json
 import re
@@ -54,7 +56,75 @@ OPTIONAL_DEPENDENCY_POLICY_SOURCES = {
     "docs/audit/data/owner_governed_premise_nodes.json",
 }
 
+# ---------------------------------------------------------------------------
+# Claim-scoped helper-registry carve-out
+# (owner ruling 2026-08-09, "amend gate + restore"; ACTIVE_REVIEW_QUEUE item
+#  2026-08-08-dependency-policy-epoch-debt-helper-registry).
+#
+# ``build_citation_graph.py`` remains a governed dependency-policy source,
+# byte-exact EXCEPT for the ``EXPLICIT_PACKET_HELPER_RUNNER_PATHS``
+# assignment. That dict registers additional helper-runner source files for
+# individual claims' restricted audit packets. Registrations are additive
+# claim-scoped metadata, not dependency-interpretation policy: each
+# registered helper lands on the affected row's ``helper_runner_paths``,
+# where ``science_fingerprint_v2`` already binds that helper's exact bytes
+# and declared inputs on the registered claim itself. A new registration
+# therefore perturbs only the registered claim's own fingerprint; it cannot
+# change how dependencies, premises, chain sufficiency, or evidence
+# readiness are interpreted for any other row. Hashing the registry bytes
+# into the repository-wide policy epoch made every additive registration a
+# ~900-row hard reset, so registrations were deferred and the manifest gate
+# went stale (the 2026-08-08 epoch-debt queue item). Under the owner ruling
+# the epoch instead hashes a location-bound normalized rendering of the
+# builder: the assignment contents are omitted, but the byte length of the
+# exact prefix is encoded before the remaining bytes.  Moving the assignment
+# therefore remains governed.  The span is located via the AST (never a
+# regex) so nested braces, comments, and string contents cannot desynchronize
+# it. Every other byte of the builder stays governed byte-exact, and the
+# carve-out fails closed with
+# ``ScienceFingerprintError`` unless the name is bound exactly once in the
+# whole module — in ANY binding form, including a second assignment,
+# annotated/augmented assignment, tuple unpacking, walrus, ``del``, an
+# import alias, a wildcard import, a ``def``/``async def``/``class``, a
+# parameter, a
+# ``for``/``with``/``except``/``match`` binding, a PEP 695 type parameter
+# (``def f[NAME]``, ``class C[NAME]``, ``type A[NAME] = ...``, and the
+# ``**NAME``/``*NAME`` spellings), a ``type NAME = ...`` alias, or a
+# ``global``/
+# ``nonlocal`` declaration — by a single-target module-level assignment
+# whose value is a strictly literal ``{str: [str, ...]}`` display. Nothing
+# executable (``**`` unpacking, a call, a comprehension, a name reference,
+# a starred element) may sit inside the excluded span, because those bytes
+# would otherwise carry live policy semantics outside the governed hash.
+# ---------------------------------------------------------------------------
+CLAIM_SCOPED_HELPER_REGISTRY_SOURCE = "docs/audit/scripts/build_citation_graph.py"
+CLAIM_SCOPED_HELPER_REGISTRY_NAME = "EXPLICIT_PACKET_HELPER_RUNNER_PATHS"
+CLAIM_SCOPED_HELPER_NORMALIZATION_DOMAIN = (
+    b"dependency-policy/helper-registry-normalization-v1\0"
+)
+
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+
+# PEP 695 (Python 3.12+) introduced a binding form that no earlier node type
+# covers: a type parameter list on ``def``/``class``/``type`` binds each
+# parameter name through ``ast.TypeVar`` / ``ast.ParamSpec`` /
+# ``ast.TypeVarTuple`` nodes whose ``name`` field is a plain ``str``.  The
+# lookups are guarded so this module stays importable on pre-3.12
+# interpreters, where the syntax cannot be written at all.
+_TYPE_PARAM_NODE_TYPES = tuple(
+    node_type
+    for node_type in (
+        getattr(ast, "TypeVar", None),
+        getattr(ast, "ParamSpec", None),
+        getattr(ast, "TypeVarTuple", None),
+    )
+    if isinstance(node_type, type)
+)
+_TYPE_ALIAS_NODE_TYPES = tuple(
+    node_type
+    for node_type in (getattr(ast, "TypeAlias", None),)
+    if isinstance(node_type, type)
+)
 
 
 class ScienceFingerprintError(ValueError):
@@ -109,6 +179,206 @@ def _file_sha256(path: Path, *, required: bool = False) -> str | None:
                 f"required scientific provenance surface is unreadable: {path}"
             ) from exc
         return None
+
+
+def _binds_registry_name(node: ast.AST) -> bool:
+    """True when ``node`` is a construct that binds the registry name.
+
+    Every binding form Python has is enumerated here on purpose.  The
+    carve-out's security promise is that the spliced-out span is the module's
+    ONE definition of the registry, so a second construct that could rebind,
+    shadow, alias, or delete the name has to fail the gate rather than be
+    silently ignored while its own bytes leave the governed surface.
+    """
+    name = CLAIM_SCOPED_HELPER_REGISTRY_NAME
+    if isinstance(node, ast.Name):
+        # Assign/AnnAssign/AugAssign targets, tuple/list unpacking, walrus,
+        # for/with/comprehension targets (Store), and `del NAME` (Del).
+        return node.id == name and isinstance(node.ctx, (ast.Store, ast.Del))
+    if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
+        return node.name == name
+    if isinstance(node, ast.alias):
+        # `import x as NAME`, `from m import NAME`, `import NAME.sub`, and
+        # `from m import *`, which can bind any name and so is never decidable
+        # as safe from the source alone.
+        if node.name == "*":
+            return True
+        return (node.asname or node.name.split(".", 1)[0]) == name
+    if isinstance(node, ast.ExceptHandler):
+        return node.name == name
+    if isinstance(node, (ast.Global, ast.Nonlocal)):
+        return name in node.names
+    if isinstance(node, ast.arg):
+        return node.arg == name
+    if isinstance(node, (ast.MatchAs, ast.MatchStar)):
+        return node.name == name
+    if isinstance(node, ast.MatchMapping):
+        return node.rest == name
+    if _TYPE_PARAM_NODE_TYPES and isinstance(node, _TYPE_PARAM_NODE_TYPES):
+        # PEP 695 type parameters: `def f[NAME]()`, `class C[NAME]`,
+        # `type Alias[NAME] = ...`, and the `**NAME` (ParamSpec) / `*NAME`
+        # (TypeVarTuple) spellings.  Each binds NAME inside its own scope and
+        # would otherwise shadow the registry with bytes outside the splice.
+        return getattr(node, "name", None) == name
+    if _TYPE_ALIAS_NODE_TYPES and isinstance(node, _TYPE_ALIAS_NODE_TYPES):
+        # `type NAME = ...`.  The statement's own target is an ``ast.Name`` in
+        # Store context, so the ``ast.Name`` branch above already reports it;
+        # naming the statement explicitly keeps the enumeration complete and
+        # only ever raises the binding count, which cannot turn a refusal into
+        # an acceptance.
+        alias_target = getattr(node, "name", None)
+        return (
+            isinstance(alias_target, ast.Name)
+            and alias_target.id == name
+            and isinstance(alias_target.ctx, (ast.Store, ast.Del))
+        )
+    return False
+
+
+def _is_literal_registry_dict(value: ast.AST) -> bool:
+    """True only for a strictly literal ``{str: [str, ...]}`` display.
+
+    Nothing that can execute, unpack, or read another name may sit inside the
+    excluded span: `**other`, a call, a comprehension, a name reference, an
+    f-string, or a starred element would all be live policy-bearing code
+    hidden from the governed hash.  ``ast.Constant`` string keys and
+    list/tuple-of-``ast.Constant``-string values are the entire admissible
+    grammar.
+    """
+    if not isinstance(value, ast.Dict):
+        return False
+    if len(value.keys) != len(value.values):
+        return False
+    for key, element_list in zip(value.keys, value.values):
+        # A ``None`` key is `**mapping` unpacking, not a literal entry.
+        if not (isinstance(key, ast.Constant) and isinstance(key.value, str)):
+            return False
+        if not isinstance(element_list, (ast.List, ast.Tuple)):
+            return False
+        for element in element_list.elts:
+            if not (
+                isinstance(element, ast.Constant)
+                and isinstance(element.value, str)
+            ):
+                return False
+    return True
+
+
+def _is_registry_literal_assignment(node: ast.AST) -> bool:
+    """True for the one module-level statement the carve-out may exclude."""
+    return (
+        isinstance(node, ast.Assign)
+        and len(node.targets) == 1
+        and isinstance(node.targets[0], ast.Name)
+        and node.targets[0].id == CLAIM_SCOPED_HELPER_REGISTRY_NAME
+        and _is_literal_registry_dict(node.value)
+    )
+
+
+def _helper_registry_span(source: bytes, path: Path) -> tuple[int, int]:
+    """Locate the exact byte span of the helper-registry assignment.
+
+    AST end positions (UTF-8 byte columns) identify the statement span, so
+    nested braces, inline comments, and string contents inside the dict can
+    never desynchronize the splice the way a regex could. Fails closed when
+    the name is bound anywhere in the module in any form other than exactly
+    one module-level, single-target, strictly literal ``{str: [str, ...]}``
+    assignment.
+    """
+    try:
+        tree = ast.parse(source.decode("utf-8"))
+    except (SyntaxError, ValueError, UnicodeDecodeError) as exc:
+        raise ScienceFingerprintError(
+            f"governed policy source is not parseable Python: {path}: {exc}"
+        ) from exc
+    bindings = [node for node in ast.walk(tree) if _binds_registry_name(node)]
+    if len(bindings) != 1:
+        raise ScienceFingerprintError(
+            f"{CLAIM_SCOPED_HELPER_REGISTRY_NAME} must be bound exactly once "
+            f"in {path}: found {len(bindings)} bindings"
+        )
+    assignment = next(
+        (node for node in tree.body if _is_registry_literal_assignment(node)),
+        None,
+    )
+    if assignment is None:
+        raise ScienceFingerprintError(
+            f"{CLAIM_SCOPED_HELPER_REGISTRY_NAME} in {path} must be a "
+            "single-target module-level literal-dict assignment whose keys "
+            "are string constants and whose values are lists/tuples of "
+            "string constants; anything else is a policy change and needs a "
+            "reviewed epoch refresh"
+        )
+    # ``ast.parse`` accepts all three Python newline spellings: LF, CRLF, and
+    # lone CR.  Preserve offsets into the original bytes while mirroring that
+    # universal-newline accounting exactly.  Counting LF alone can shift an
+    # AST line onto the following governed line in mixed-newline input.
+    line_starts = [0]
+    index = 0
+    while index < len(source):
+        byte = source[index]
+        if byte == 0x0D:
+            if index + 1 < len(source) and source[index + 1] == 0x0A:
+                index += 1
+            line_starts.append(index + 1)
+        elif byte == 0x0A:
+            line_starts.append(index + 1)
+        index += 1
+    try:
+        start_line = line_starts[assignment.lineno - 1]
+        end_line = line_starts[assignment.end_lineno - 1]
+    except (IndexError, TypeError) as exc:
+        raise ScienceFingerprintError(
+            f"AST source positions are inconsistent with governed policy "
+            f"bytes: {path}"
+        ) from exc
+    start = start_line + assignment.col_offset
+    end = end_line + assignment.end_col_offset
+    if not (0 <= start <= end <= len(source)):
+        raise ScienceFingerprintError(
+            f"AST source span is outside governed policy bytes: {path}"
+        )
+    return start, end
+
+
+def _claim_scoped_registry_normalized_sha256(path: Path) -> str:
+    """Hash the builder without registry contents but with location bound."""
+    try:
+        source = path.read_bytes()
+    except OSError as exc:
+        raise ScienceFingerprintError(
+            f"required scientific provenance surface is unreadable: {path}"
+        ) from exc
+    start, end = _helper_registry_span(source, path)
+    try:
+        location = start.to_bytes(8, "big")
+    except OverflowError as exc:
+        raise ScienceFingerprintError(
+            f"helper-registry source offset is not encodable: {path}"
+        ) from exc
+    normalized = (
+        CLAIM_SCOPED_HELPER_NORMALIZATION_DOMAIN
+        + location
+        + source[:start]
+        + source[end:]
+    )
+    return hashlib.sha256(normalized).hexdigest()
+
+
+def dependency_policy_source_sha256(repo_root: Path, path: str) -> str | None:
+    """Hash one governed dependency-policy source under the current rule.
+
+    Single producer for both the epoch gate (``dependency_policy_epoch``)
+    and the manifest refresh path
+    (``refresh_dependency_policy_manifest``), so the comparator and the
+    manifest writer can never disagree about the governed byte surface.
+    """
+    if path == CLAIM_SCOPED_HELPER_REGISTRY_SOURCE:
+        return _claim_scoped_registry_normalized_sha256(repo_root / path)
+    return _file_sha256(
+        repo_root / path,
+        required=path not in OPTIONAL_DEPENDENCY_POLICY_SOURCES,
+    )
 
 
 def _load_json_object(path: Path, label: str) -> dict:
@@ -251,6 +521,10 @@ def framework_premise_epoch(repo_root: Path) -> str:
     )
 
 
+def _dependency_policy_manifest_path(repo_root: Path) -> Path:
+    return repo_root / "docs" / "audit" / "data" / "dependency_policy_epoch.json"
+
+
 def dependency_policy_epoch(repo_root: Path) -> str:
     """Bind the rules that decide dependency identity and chain sufficiency.
 
@@ -258,18 +532,17 @@ def dependency_policy_epoch(repo_root: Path) -> str:
     dependency changes while its stored status string does not.  Hashing these
     governed policy surfaces makes a premise/admission/readiness rule change a
     deliberate re-audit event whose blast radius is visible in review.
+
+    The claim-scoped helper registry inside ``build_citation_graph.py`` is
+    excluded from the governed byte surface (see the carve-out note above
+    ``CLAIM_SCOPED_HELPER_REGISTRY_SOURCE``); the rest of that builder and
+    every other source stay governed byte-exact.
     """
     actual_sources = {
-        path: _file_sha256(
-            repo_root / path,
-            required=path not in OPTIONAL_DEPENDENCY_POLICY_SOURCES,
-        )
+        path: dependency_policy_source_sha256(repo_root, path)
         for path in DEPENDENCY_POLICY_SOURCES
     }
-    manifest_path = (
-        repo_root / "docs" / "audit" / "data" /
-        "dependency_policy_epoch.json"
-    )
+    manifest_path = _dependency_policy_manifest_path(repo_root)
     manifest = _load_json_object(manifest_path, "dependency-policy epoch")
     if (
         manifest.get("schema") != "dependency_policy_epoch_manifest_v1"
@@ -688,3 +961,87 @@ def judgment_fingerprint_change(before: object, row: dict) -> str | None:
     if before["digest"] == current["digest"]:
         return None
     return "audit_judgment_changed_without_new_fingerprint"
+
+
+def refresh_dependency_policy_manifest(
+    repo_root: Path,
+    *,
+    epoch: str | None = None,
+) -> dict:
+    """Recompute the controlled manifest under the current governed-hash rule.
+
+    This is the reviewed apply-and-write refresh path: it reuses
+    ``dependency_policy_source_sha256`` (the same single producer the epoch
+    gate compares against), so a refreshed manifest matches the gate by
+    construction.  It preserves the manifest's schema and description and
+    only replaces the source hashes, plus the epoch label when a new one is
+    supplied.  Refreshing the manifest is itself a policy-epoch move: every
+    stored science fingerprint and the legacy deployment baseline keep the
+    old digest, so run it only inside a reviewed policy pass.
+    """
+    manifest_path = _dependency_policy_manifest_path(repo_root)
+    manifest = _load_json_object(manifest_path, "dependency-policy epoch")
+    if manifest.get("schema") != "dependency_policy_epoch_manifest_v1":
+        raise ScienceFingerprintError(
+            "dependency-policy epoch manifest has an unsupported schema; "
+            "refusing to refresh"
+        )
+    if epoch is not None:
+        if not isinstance(epoch, str) or not epoch:
+            raise ScienceFingerprintError("epoch label must be a non-empty string")
+        manifest["epoch"] = epoch
+    if not isinstance(manifest.get("epoch"), str) or not manifest["epoch"]:
+        raise ScienceFingerprintError(
+            "dependency-policy epoch manifest has no epoch label"
+        )
+    manifest["sources"] = {
+        path: dependency_policy_source_sha256(repo_root, path)
+        for path in DEPENDENCY_POLICY_SOURCES
+    }
+    manifest_path.write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return manifest
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Inspect the governed science epochs, or refresh the "
+            "dependency-policy epoch manifest under the current rule "
+            "(reviewed policy passes only)."
+        )
+    )
+    parser.add_argument(
+        "--refresh-dependency-policy-manifest",
+        action="store_true",
+        help=(
+            "Recompute docs/audit/data/dependency_policy_epoch.json from the "
+            "governed sources and write it in place."
+        ),
+    )
+    parser.add_argument(
+        "--epoch",
+        default=None,
+        help=(
+            "New epoch label to record while refreshing "
+            "(requires --refresh-dependency-policy-manifest)."
+        ),
+    )
+    args = parser.parse_args(argv)
+    repo_root = Path(__file__).resolve().parents[3]
+    if args.refresh_dependency_policy_manifest:
+        manifest = refresh_dependency_policy_manifest(repo_root, epoch=args.epoch)
+        print(f"dependency-policy manifest refreshed: epoch={manifest['epoch']}")
+        print(f"dependency_policy_epoch: {dependency_policy_epoch(repo_root)}")
+        return 0
+    if args.epoch is not None:
+        parser.error("--epoch requires --refresh-dependency-policy-manifest")
+    print(f"framework_premise_epoch: {framework_premise_epoch(repo_root)}")
+    print(f"dependency_policy_epoch: {dependency_policy_epoch(repo_root)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

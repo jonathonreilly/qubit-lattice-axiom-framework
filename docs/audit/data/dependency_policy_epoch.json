@@ -1,6 +1,6 @@
 {
   "description": "Reviewed identity of the policy surfaces that determine citation dependencies, accepted-premise classification, chain sufficiency, and audit readiness. Any source hash change must update this controlled manifest through review-loop; science_fingerprint_v2 then invalidates affected judgments under the new epoch.",
-  "epoch": "dependency_policy_v2",
+  "epoch": "dependency_policy_v3",
   "schema": "dependency_policy_epoch_manifest_v1",
   "sources": {
     "docs/audit/FRESH_LOOK_REQUIREMENTS.md": "9893d3d632ae3fc3dc0584b7d6c430f7429448d70d9761797a37d36b3f9f6be8",
@@ -8,8 +8,8 @@
     "docs/audit/data/owner_governed_premise_nodes.json": null,
     "docs/audit/data/source_path_aliases.json": "f99befd84da12bba9a39659fcb30fd98e4065873f80de19942110a8249297638",
     "docs/audit/data/tier_a_admissions.json": null,
-    "docs/audit/scripts/audit_science_fingerprint.py": "23ca0c90aff6cc0f3f53e63d2930a8751e1d5dfffa3357debed0a1d9906f5348",
-    "docs/audit/scripts/build_citation_graph.py": "20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415",
+    "docs/audit/scripts/audit_science_fingerprint.py": "ab604aa6fad2a1a8697698efda93f758c769203c1dfc16d09b614c3198214250",
+    "docs/audit/scripts/build_citation_graph.py": "235e8b82fd460d29f0798f13df129d2f896aa31d4c14566f179e200dc6194c5b",
     "docs/audit/scripts/classify_runner_passes.py": "00bbc8c1dadef177542b0a98c75ead2e15c13c94c4b5595406d9818ec9129289",
     "docs/audit/scripts/compute_audit_queue.py": "9cfe60140554ac19c38bfd8637d3a5348b665beae6059d61e127af1b9cba1ff6",
     "docs/audit/scripts/compute_effective_status.py": "f0a78fd0679b6c94684224af74938a6b6f108f64b32bbb713470827eac4ac422",

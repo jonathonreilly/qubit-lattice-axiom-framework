@@ -269,9 +269,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: one explicit range-one flat-law-preserving improvement converts the isolated affine bag to an actual axial tick-edge source with exact static gauge compatibility, pure tick metric source, exhaustive named-torus full-null compatibility, unprojected edge solvability, unprojected one-over-k-squared lapse pole, and open one-over-r shape; compact total-charge, dynamic history, physical representative/mass, geometry dynamics, coupling, ensemble, nonlinear, projective, Born, and realized-history selection remain open
 hypothetical_axiom_status: the existing geometry-indexed history/action amendment already registers every geometry-dependent improvement and is sufficient to type this construction; it remains unadopted, not proved necessary or minimal, and no wording is edited into the axioms
-review_disposition: block13_direct_conformance_passed_with_known_dependency_policy_epoch_stop
-pr_status: block13_science_commit_baf9372b1c_ready_to_push_and_open_stacked_on_6080
-pr_url: null
+review_disposition: block13_direct_conformance_passed_open_mergeable_6081_with_known_dependency_policy_epoch_stop
+pr_status: block13_open_mergeable_stacked_on_open_6080
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6081
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

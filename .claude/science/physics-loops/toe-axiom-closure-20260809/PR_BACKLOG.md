@@ -214,6 +214,8 @@ repository integration pass. The isolated full pipeline reaches only PR
 passes; 1,066 tracked generated changes and 825 new ledger shards were
 discarded with the disposable worktree. Changed-evidence readiness checks all
 13 stacked claims with zero failures or control failures. Science commit is
-`baf9372b1c`; push and PR delivery remain. The canonical axiom memo is
-untouched, the fixed TOE percentages do not move, and no `review-loop` is
-used.
+`baf9372b1c`; PR #6081 is mergeable on the exact #6080 delivery head
+`a0ed5ebb1c302d2bb4a28c53394ffc3d3554638f`. Hard landing order is #6063,
+#6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+#6080, then #6081. The canonical axiom memo is untouched, the fixed TOE
+percentages do not move, and no `review-loop` is used.

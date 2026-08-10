@@ -581,5 +581,8 @@ new improvement but remains hypothetical. Physical representative/mass
 selection, action unit, geometry update, coupling/sign, infrared ensemble,
 nonlinear completion, Born selector, and realized history remain open. The
 canonical memo and fixed percentages are unchanged, and no `review-loop` is
-invoked. The 18-file science delta is commit `baf9372b1c`; stacked push and PR
-delivery remain.
+invoked. The 18-file science delta is commit `baf9372b1c` and is open as
+mergeable stacked PR #6081 on the exact #6080 delivery head
+`a0ed5ebb1c302d2bb4a28c53394ffc3d3554638f`. Hard landing order is #6063,
+#6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+#6080, then #6081.

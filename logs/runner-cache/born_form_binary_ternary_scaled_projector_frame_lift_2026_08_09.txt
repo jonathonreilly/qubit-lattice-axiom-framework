@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/born_form_binary_ternary_scaled_projector_frame_lift_2026_08_09.py
+runner_sha256: a3da8c10f73b000646f733ba4c8804eca88ea73599acfcfeeff8ad434167b1fa
+input_fingerprint_sha256: 945d2b80a34e72352fe7e81f015a2badae6e20bc02d7539b31947fcb13f0c44b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.63
+status: ok
+----- stdout -----
+external_scientific_inputs: canonical axiom wording, the landed frame-theorem record, and the landed open-question note are read only for source and boundary gates
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; the cache envelope separately binds this runner and every declared input
+standard_theorem_boundary: the dimension-three frame-function theorem is named and not represented as finitely recomputed
+PASS: source-admissibility the canonical source says the local distribution is nearest-neighbor determined and varying
+PASS: source-frame the named theorem record states the dimension-at-least-three frame representation
+PASS: source-frontier the landed comparison explicitly records the scaled ternary question
+PASS: surface-status the note keeps conditional support, hypothetical axiom wording, and independent audit explicit
+PASS: zero-to-binary the standard qutrit basis compresses to two qubit projectors and one zero effect
+PASS: zero-to-binary-sum dropping the zero leaves an exact binary resolution of the qubit identity
+PASS: fourier-unitary the exact Fourier columns form an orthonormal qutrit basis
+PASS: fourier-compression the three compressed Fourier effects sum exactly to the qubit identity
+PASS: fourier-scaled-rank-one each compressed Fourier effect has trace two-thirds and determinant zero
+PASS: rational-unitary the independent rational columns form an exact orthonormal basis
+PASS: rational-compression the independent rational compression is a three-member scaled rank-one resolution
+PASS: cubic-hostile-control the smooth binary cubic grading gives exact trine sum five-fourths rather than one
+PASS: ancilla-positive-factor the ancilla expectation is exactly the squared norm of the last factor column
+PASS: polynomial-basis the odd sphere-polynomial normal form through degree nine has fifty-five coefficients per radius
+PASS: polynomial-born-kernel the three independent radius-weighted linear Born modes lie in the exact ternary kernel
+PASS: polynomial-rank one exact rational ternary orbit leaves only the three linear Born modes through degree nine
+per_element: exact scaled rank-one compression, zero-effect handling, trace, determinant, and cubic-weight identities are checked element by element
+per_site: one complete M_2(C) site and its one-dimensional qutrit dilation are checked; no multi-site carrier is asserted
+per_mode: odd sphere-polynomial sections through degree nine are checked by exact modular rank; the general frame theorem is named, not executed
+per_block: this single theorem block checks the compression, hostile control, source boundaries, and conditional claim surface together
+lattice_wide: checked and not executed — the theorem is one-site conditional mathematics and makes no lattice-wide registration claim
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

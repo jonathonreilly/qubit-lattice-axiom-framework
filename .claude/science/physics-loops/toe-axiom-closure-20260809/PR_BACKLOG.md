@@ -276,9 +276,11 @@ Regge-plus-curvature-square repair. All 25,308 nonzero finite-torus modes and
 7,183 stress samples retain exactly four gauge zeros; the prior body source
 solves unprojected. N1--N8 rejects every broad gravity no-go. Direct
 conformance passes with a fresh `PASS=16 FAIL=0` cache, 14/14 isolated
-source-copy mutations, an independent 18/18 object-level mutation suite, and
-a `5,466`-node / `15,593`-edge citation graph whose new node has out-degree
-eight. Commit, push, and stacked PR remain to be recorded. Canonical axioms
+runner-copy mutations, and a `5,466`-node / `15,593`-edge citation graph whose
+new node has out-degree eight. Science commit is `4f06880082`; conformance
+passes the exact-base/controlled-overlay pipeline separation, and changed-
+evidence readiness is clean for Block 20 alone and all 20 stacked claims.
+Conformance recording, push, and stacked PR remain. Canonical axioms
 and fixed percentages are untouched, and no `review-loop` is used.
 
 Block 16 is being packaged on branch

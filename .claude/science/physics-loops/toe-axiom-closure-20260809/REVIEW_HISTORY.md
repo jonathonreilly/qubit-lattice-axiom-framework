@@ -1193,17 +1193,43 @@ instance or Fourier census.
 - N1--N8 lands in the source note and explicitly rejects a broad gravity
   no-go. Candidate geometry-law wording is unadopted.
 - The source/input-bound cache is fresh at `PASS=16 FAIL=0` with all five
-  substantive N5 execution lines. Fourteen fresh-process source-copy mutations
+  substantive N5 execution lines. Fourteen fresh-process runner-copy mutations
   report `PASS=14 FAIL=0`; each fails exactly one intended named check across
   source and prior-art binding, theorem/no-go scope, kernel and parent
   reconstruction, action normalization, both brackets, the exact coefficient,
   source repair, exhaustive inventory, stress sampling, and infrared order.
-- A separate 18-case process-local object suite also fails closed across
-  current-axiom, parent, carrier, prior-art, theorem/no-go, real-space kernel,
-  background, periodic-action, bracket, `k=0` coefficient, body-source,
-  complete finite-torus, Brillouin, infrared-contamination, and canonical-
-  nonmutation families.
 - Citation registration is `5,466` nodes / `15,593` edges; the new node has
   out-degree eight. Vocabulary, strict lint, premise purity, model-family
   normalization, Python, YAML, whitespace, cache, and canonical-nonmutation
-  checks pass. Commit and PR remain pending.
+  checks pass. Science commit is `4f06880082`; conformance recording and PR
+  delivery remain pending.
+
+## Block 20 conformance record
+
+- The exact 17-file science delta is commit `4f06880082`; it edits no
+  canonical axiom, approved primitive, audit verdict, ledger row, queue, or
+  fixed TOE percentage.
+- The source/input-pinned cache is fresh at `PASS=16 FAIL=0`, exits zero in
+  `53.57 s`, keeps stdout below the repository limit, and carries all five
+  substantive N5 resolution lines.
+- Fourteen fresh-process runner-copy mutations each exit nonzero at exactly
+  one intended named check. Their aggregate harness result is
+  `PASS=14 FAIL=0`.
+- The citation graph registers `5,466` nodes and `15,593` edges. The new node
+  has out-degree eight and resolves eight helper runners.
+- Vocabulary, premise purity, model-family normalization, Python compilation,
+  YAML parsing, whitespace, staged 17-path scope, cache freshness,
+  graph/link/class-F invariants, and canonical nonmutation pass.
+- The exact stacked tree rebuilds the graph, reaches a `4,804`-row seed fixed
+  point, classifies `3,682` runners, and computes effective status. At stage 7
+  it reproduces only the inherited dependency-policy epoch mismatch because
+  the stack forked immediately before current-main commit `39c74017b8`.
+- A clean disposable overlay adds exactly that current-main commit's five
+  governance files. The complete 18-stage pipeline then passes restoration,
+  downstream queues, strict lint with zero errors, publication rendering,
+  authority-link/class-F invariants, and static-checkpoint finalization.
+- Seeded changed-evidence readiness marks Block 20 alone forensic-ready with
+  no failures or control failures. Against `origin/main`, all 20 stacked
+  claims are forensic-ready with no failures or control failures.
+- No `review-loop` or audit verdict application was used. Independent audit
+  remains required.

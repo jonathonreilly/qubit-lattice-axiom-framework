@@ -742,12 +742,10 @@ agree, the body-source residual falls from exactly `2` to `9.69e-14`, and the
 metric correction scales as `O(k^4)` beside the retained `O(k^2)` Einstein
 term. The primary runner is `PASS=16 FAIL=0`.
 
-Direct conformance passes. Fourteen fresh-process source-copy mutations each
-fail exactly one intended named check; an independent 18-case object-level
-suite also fails closed across premise, operator, bracket, coefficient,
-inventory, infrared, and canonical-nonmutation families. The fresh cache binds
-the runner and all declared inputs, and the citation graph registers `5,466`
-nodes / `15,593` edges with new-node out-degree eight.
+Direct conformance passes. Fourteen fresh-process runner-copy mutations each
+fail exactly one intended named check. The fresh cache binds the runner and
+all declared inputs, and the citation graph registers `5,466` nodes / `15,593`
+edges with new-node out-degree eight.
 
 This identifies why the Block-19 background is not yet a physical vacuum and
 supplies one action-native repair mechanism without claiming action or

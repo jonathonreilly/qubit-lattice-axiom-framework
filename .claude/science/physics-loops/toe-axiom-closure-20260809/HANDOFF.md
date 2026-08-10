@@ -968,11 +968,17 @@ sourced evolution. The source note carries N1--N8 and candidate geometry-law
 wording. No canonical edit, fixed-percentage move, or `review-loop` occurs.
 
 Direct conformance passes: the source/input-pinned cache is fresh at
-`PASS=16 FAIL=0`; all 14 fresh-process source-copy mutations fail closed at
-one intended named check each, and an independent 18-case object-level suite
-fails closed across premise, operator, coefficient, inventory, infrared, and
-canonical-nonmutation families;
+`PASS=16 FAIL=0`; all 14 fresh-process runner-copy mutations fail closed at
+one intended named check each;
 vocabulary, strict lint, premise purity, model-family normalization, Python,
 YAML, whitespace, and canonical-nonmutation checks pass. Citation registration
-is `5,466` nodes / `15,593` edges with new-node out-degree eight. Commit,
-push, stacked PR, and independent audit remain pending.
+is `5,466` nodes / `15,593` edges with new-node out-degree eight. Science
+commit is `4f06880082`; conformance recording, push, stacked PR, and
+independent audit remain pending.
+
+The exact stacked pipeline reaches only the inherited stage-7 dependency-
+policy epoch mismatch after a `4,804`-row fixed point and `3,682` runner
+classifications. A clean disposable overlay of current-main commit
+`39c74017b8` adds exactly five governance files and passes all 18 stages.
+Changed-evidence readiness finds Block 20 alone and all 20 stacked claims
+forensic-ready with no failures or control failures.

@@ -411,4 +411,6 @@ five-file current-main `39c74017b8` overlay passes all 18 stages and finalizes
 checkpoint `f8c59d2c5727`. Changed-evidence readiness is clean for Block 21
 alone (`1/1`) and all 21 stacked claims (`21/21`). Science is `e03fb0527c`;
 graph conformance is
-`08e4aa3640`. Delivery remains pending. No `review-loop` is used.
+`08e4aa3640`; campaign conformance is `13601983e9`. PR #6092 is open,
+mergeable, and `CLEAN` on the exact Block-20 delivery base. No `review-loop`
+is used.

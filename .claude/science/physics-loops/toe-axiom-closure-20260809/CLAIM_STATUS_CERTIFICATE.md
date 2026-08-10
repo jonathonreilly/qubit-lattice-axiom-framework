@@ -562,5 +562,7 @@ independent_audit_required: true
   finalizes checkpoint `f8c59d2c5727`. Changed-evidence readiness marks Block
   21 alone (`1/1`) and all 21 stacked claims (`21/21`) forensic-ready with
   zero failures and zero control failures. Independent audit remains required.
+- Delivery: PR #6092 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-20 delivery head `4338b09d21`.
 - Governance: no axiom/primitive, audit status, ledger/queue, fixed
   percentage, or `review-loop` mutation.

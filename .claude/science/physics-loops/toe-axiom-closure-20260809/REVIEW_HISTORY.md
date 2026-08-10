@@ -1335,4 +1335,6 @@ instance or Fourier census.
 - Changed-evidence readiness marks Block 21 alone (`1/1`) and all 21 stacked
   claims (`21/21`) forensic-ready with zero failures and zero control failures.
   Science commit is `e03fb0527c`; graph-conformance commit is `08e4aa3640`.
-  Delivery remains pending and independent audit is required.
+  Campaign conformance is `13601983e9`. PR #6092 is open, mergeable, and
+  `CLEAN` on exact Block-20 delivery head `4338b09d21`; independent audit is
+  required.

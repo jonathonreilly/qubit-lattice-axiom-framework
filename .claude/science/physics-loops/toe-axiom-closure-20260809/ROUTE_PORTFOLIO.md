@@ -329,3 +329,16 @@ and an axiom-repair semantic map. None contains a closed helical edge history,
 neutral Regge source pair, fixed-global positive-line solve, or moving Regge
 pole. PR #6061 remains the independent dependency-policy epoch repair. No
 open PR collides with Block 14.
+
+## Block 15 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| positive two-stream history | `A_v,0+A_t,b` with disjoint closed lines and inherited coefficient two | exact every-mode Ward closure with no negative source weight | retain as prescribed positive mixture; selection and connection open |
+| timelike mean-current diagnostic | time-column of `tt+vv/sqrt(2)` | `beta=sqrt(2)-1`, positive Lorentz norm, and nonzero source determinant | retain as aggregate diagnostic; reject one-particle/rank-one reading |
+| fixed-global positive inventory | union of tick and helix Fourier supports without `k=0` | 2,369 full-null-compatible direct unprojected solves, including 1,088 dynamic modes | retain as strongest positive carrier result; physical constraint selection open |
+| compact dilation separator | positive `ell=M(0)(2I)` in `ker Q(0)` | every nonzero nonnegative actual-edge source has forbidden positive pairing | retain as exact bounded cone boundary only |
+| sign-indefinite combined geometry | independently derived source or constraint term cancelling the dilation pairing | not executed in Block 15 | live compact route; must be derived rather than projected |
+| connected balanced junction | locally force-balanced positive network with one rank-one timelike effective source | not executed; a simple kink leaves a corner force | highest-value next causal/matter route |
+| shared-transverse response | actual source and metric-sector Regge equation | four directions tend to source-derived coefficient four | retain as unprojected two-stream weak-field slice |
+| existing history/action amendment | Block-12 candidate wording | already types the fixed action and fixed-global/open/constraint choices | no broader candidate and no canonical edit |

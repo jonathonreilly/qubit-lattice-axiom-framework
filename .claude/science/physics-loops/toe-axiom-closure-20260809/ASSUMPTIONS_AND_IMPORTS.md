@@ -294,3 +294,23 @@ physical source sign, Lorentzian dynamics, probability law, or realized history
 is imported. The existing candidate history/action amendment is sufficient to
 type the fixed representative and named infrared ensembles only if adopted;
 it is not treated as current authority.
+
+## Block 15 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Block-14 closed tick and face-diagonal actions | separately conserved positive stream members | stacked bounded theorem | yes | no physical selector, compact solution, or timelike particle inherited |
+| equal positive stream coefficients | smallest inherited-normalization mixture | explicit construction choice | yes for the mixture theorem | not selected by current axioms or claimed unique |
+| disjoint transverse tick anchor | prevents line intersection on named tori | explicit finite fixture | yes for the stated two-stream object | no arbitrary network or junction theorem inferred |
+| naive Lorentzian time-column diagnostic | classifies the aggregate current | diagnostic only | yes for `beta` wording | not a Lorentzian continuation, causal velocity law, or mass identification |
+| fixed-global variational domain | removes the compact constant geometry equation | explicitly declared constraint | yes for the 2,369-mode result | not selected by current axioms or geometry dynamics |
+| uniform edge-length dilation | exact positive null separator at `k=0` | source-bound constant metric mode | yes | applies only to the flat quadratic actual-edge source cone |
+| source-derived `-1/2` Einstein comparator | fixes the shared-transverse coefficient four | stacked Regge bounded theorem | yes for the comparator target | no Einstein equation or physical gravitational coupling imported |
+| physical single-worldline connection, source/action selector, compact constraint/counter-source, coupling, and nonlinear law | TOE completion | open imports | no for theorem; yes for physical closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+No observed speed, mass, Newton constant, fitted mixture weight, target stress
+tensor, physical Lorentzian law, probability law, or realized history is
+imported. The compact separator does not classify sign-indefinite combined
+geometry sources, curved/nonlinear equations, open/fixed domains, or alternate
+carriers.

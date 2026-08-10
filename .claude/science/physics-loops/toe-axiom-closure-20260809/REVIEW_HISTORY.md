@@ -810,3 +810,49 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Hard landing order is #6063,
   #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
   #6080, #6081, then #6082; no `review-loop` is invoked.
+
+## Block 15 direct-review record
+
+- The actual construction is an equal-positive sum of two disjoint separately
+  closed actual-edge lines. Direct and analytic Fourier transforms agree to
+  `5.097e-16`; the worst four-gauge residual across all 8,755 declared modes
+  is `1.607e-14`.
+- The physical symmetric-tensor conversion agrees exactly with
+  `t tensor t+v tensor v/sqrt(2)`. The time-column speed is
+  `0.414213562373`, its Lorentz norm is `2.414213562373`, and the positive
+  `x,t` determinant is `0.707106781187`, separating the mixture from a
+  rank-one dust row.
+- The independent support reconstruction finds 2,369 nonzero sources and
+  1,088 dynamic sources among 8,755 modes, with per-size counts
+  `(44,18), (111,48), (224,100), (395,180), (636,294), (959,448)`.
+  Every supported nonzero mode has five null directions; worst full-null
+  overlap is `1.078e-13` and worst unprojected solve residual is
+  `1.001e-12`.
+- The independent compact calculation gives metric-identity error
+  `4.441e-16`, `||Q(0)ell||=3.355e-14`, and
+  `ell dot s_+(0)=24.142135623731`. The concrete compact null and solve
+  residuals are both `13.537799`.
+- The independent source-derived continuum coefficients are four to floating
+  precision. The four actual smaller-momentum coefficients are
+  `4.0001677, 4.0001677, 4.0000694, 4.0001048`; all improve under halving,
+  with worst solve residual `1.235e-11` and zero continuum-gauge residual.
+- The primary runner is `PASS=28 FAIL=0`; its source/input-pinned cache is
+  fresh and contains 5,538 stdout characters. The seven-family independent
+  reconstruction imports the Block-14 carrier and Regge probe but not the
+  Block-15 runner.
+- All 28 fresh-process forced-false mutations exit nonzero at exactly one
+  named check with `PASS=27 FAIL=1`. The mutation harness itself was restarted
+  after an initial shared-worker state-leak control was correctly rejected.
+- Citation registration is 5,461 nodes / 15,565 edges, the note has
+  out-degree five, and the harness adds one edge. Vocabulary has zero
+  findings; strict audit lint has zero errors; premise purity and
+  graph/link/class-F invariants pass. Python compilation, YAML parsing, diff
+  whitespace, source-pinned cache, and canonical nonmutation also pass.
+- A live sweep at `2026-08-10T12:14Z` finds PR #6082 `CLEAN` and mergeable on
+  exact head `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`, no newer TOE-closure
+  science PR, and `origin/main` at
+  `39c74017b870c27c804e3992f2a11e90336476b2`. The isolated full-pipeline and
+  changed-evidence rehearsals remain the conformance step.
+- The canonical memo and fixed TOE percentages are unchanged. No universal
+  compact-source, single-worldline, physical-mass, or dynamics claim is made,
+  and no `review-loop` is invoked.

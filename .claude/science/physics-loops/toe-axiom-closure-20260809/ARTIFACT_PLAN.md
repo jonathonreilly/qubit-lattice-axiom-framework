@@ -270,3 +270,28 @@ Block 14 packages a stacked bounded theorem only if it contains all of:
 7. a source-pinned runner/cache, independent eigenspace/lstsq recomputation,
    full named-check mutation sensitivity, harness/graph registration, and
    direct repository conformance review.
+
+## Block 15
+
+Block 15 packages a stacked bounded theorem only if it contains all of:
+
+1. one equal-positive-weight sum of a disjoint closed tick line and the
+   Block-14 closed face-diagonal line, with direct Fourier equality and an
+   exact every-mode two-telescope Ward identity;
+2. the exact common-support metric tensor, time-column current,
+   `beta=sqrt(2)-1`, positive Lorentz norm, and a nonzero `x,t` determinant
+   that prevents a one-particle rank-one reading;
+3. the complete `L=3,...,8` fixed-global support inventory, all 2,369
+   supported nonzero full-five-null checks, and direct unprojected solves;
+4. the exact uniform-dilation identity `ell=M(0)(2I)`, compact null relation
+   `Q(0)ell=0`, and positive-cone range separator for every nonzero
+   nonnegative actual-edge source;
+5. the source-derived continuum coefficient and a four-direction unprojected
+   shared-transverse `|k|^2 q^T h q ->4` response, with the two-stream rather
+   than one-worldline boundary explicit;
+6. a landing-surface N1--N8 packet and exact axiom consequence preserving
+   fixed-global, open, sign-indefinite combined-geometry, curved/nonlinear,
+   alternate-carrier, and connected-junction routes; and
+7. a source-pinned runner/cache, independent null/range recomputation, full
+   named-check mutation sensitivity, harness/graph registration, and direct
+   repository conformance review.

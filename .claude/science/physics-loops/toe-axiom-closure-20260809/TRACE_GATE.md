@@ -232,3 +232,34 @@ Current axioms still do not select a positive history/source, causal update,
 mass/Record interpretation, geometry dynamics, coupling, nonlinear regime,
 or realized member. No canonical wording is edited and the fixed TOE
 percentages remain unchanged.
+
+Block 15 changes the positive/timelike seam. It adds one disjoint positive
+closed tick line to the positive closed face-diagonal line. Each stream keeps
+its own exact telescope, so the sum is Ward-conserved without a signed source
+or a kinked-path corner force.
+
+On common principal support, the source is exactly
+`t tensor t+v tensor v/sqrt(2)`. Its time-column has
+`beta=sqrt(2)-1` and positive Lorentz norm under the declared diagnostic.
+The positive `x,t` determinant shows the advance is a timelike aggregate
+current, not one rank-one massive worldline.
+
+The fixed-global trace is complete on the named inventory: 2,369 supported
+nonzero positive sources have five null directions, annihilate the complete
+null space, and solve the unprojected edge equation. The shared-transverse
+mean-current response tends to the source-derived coefficient four.
+
+The compact trace is now exact rather than a numerical residual. The
+strictly positive uniform edge-length vector is a constant-metric Regge zero
+mode. Its pairing with every nonzero nonnegative actual-edge source is
+positive, while every `Q(0)` range vector must pair to zero. The bare compact
+flat quadratic nonnegative cone is therefore excluded.
+
+This boundary reaches a named blocker but not physical gravity. Fixed-global
+and open domains already evade it; sign-indefinite combined geometry, curved
+or nonlinear equations, alternate carriers, and connected balanced networks
+remain live. Current axioms still do not select the streams, constraint,
+source/Record interpretation, geometry dynamics, coupling, nonlinear regime,
+or realized member. The existing candidate wording remains sufficient by
+premise. No canonical wording is edited and the fixed TOE percentages remain
+unchanged.

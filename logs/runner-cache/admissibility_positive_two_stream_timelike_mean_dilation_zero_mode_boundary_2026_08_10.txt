@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_positive_two_stream_timelike_mean_dilation_zero_mode_boundary_2026_08_10.py
+runner_sha256: 7b702f3cd261e6514120417ad61e4a2086464f8b868aecc45e3206a6f94a3085
+input_fingerprint_sha256: 6db3f746291654aacf6e16d1d8f442c7b81b956aca5b5b47d2c563670e7bd4a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 40.00
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the positive two-stream action and dilation separator use the supplied actual edge carrier
+package_local_integrity_reads: current axioms, Block-14 closed lines, the existing history/action candidate, and the Regge Hessian are source-bound
+analytic_boundary: equal positive tick and face-diagonal lines give exact Ward closure and a timelike mean-current diagnostic
+physical_boundary: the source is a prescribed two-stream mixture; compact k0, physical selection, coupling, nonlinear dynamics, and realization remain open
+[PASS] source-current-axioms: the current axioms do not select the positive two-stream action, history ensemble, or geometry dynamics
+[PASS] source-parent-boundary: Block 14 leaves positive compact and subluminal timelike completion as the next exact seam
+[PASS] source-existing-history-amendment: the existing candidate types a fixed positive history family and a fixed-global ensemble only if adopted
+[PASS] source-regge-boundary: the supplied carrier has fifteen actual edge classes, constant metric zero modes, and one extra quadratic branch
+[PASS] source-tick-primitive: equal-form tick graining supplies no stream weights, Lorentzian interpretation, or dynamics
+[PASS] positive-disjoint-closed-streams: the construction is two disjoint closed actual-edge lines with equal strictly positive coefficients for every L=3 through L=8
+[PASS] two-stream-fourier-transform: the analytic source equals the direct transform of every edge in both seven-edge lines
+[PASS] two-stream-exact-gauge-ward: the two separate line telescopes annihilate all four vertex-gauge directions on every declared torus mode
+       max gauge residual=1.607e-14
+[PASS] positive-two-stream-metric-source: the common-support per-step metric source is t tensor t plus v tensor v divided by sqrt(2)
+[PASS] timelike-mean-current: the source time-column has exact subluminal speed beta=sqrt(2)-1 and positive Lorentz norm
+       beta=0.414213562373; j_t^2-j_x^2=2.414213562373
+[PASS] two-stream-not-single-dust-row: the x-t source block has positive determinant and is a mixture rather than one rank-one massive worldline
+       det(T_xt block)=0.707106781187
+[PASS] common-support-metric-ward: the positive two-stream metric source annihilates the continuum gauge columns on kx=kt=0 support
+[PASS] positive-two-stream-support-inventory: the fixed-global positive mixture has 2,369 supported nonzero sources among all 8,755 modes
+       total=8755; sourced=2369; per-L=[(3, 44, 18), (4, 111, 48), (5, 224, 100), (6, 395, 180), (7, 636, 294), (8, 959, 448)]
+[PASS] positive-two-stream-dynamic-inventory: 1,088 supported sources have nonzero tick frequency
+       dynamic=1088
+[PASS] positive-two-stream-zero-inventory: every one of the 2,369 supported nonzero sources meets a five-dimensional Regge zero space
+[PASS] positive-two-stream-full-null-compatibility: the positive mixture annihilates the complete Regge null space on all supported nonzero modes
+       max full-null overlap=1.078e-13
+[PASS] positive-two-stream-unprojected-solvability: the actual unprojected edge equation solves on all 2,369 supported nonzero modes
+       max direct solve residual=1.001e-12
+[PASS] dilation-vector-metric-identity: the strictly positive edge-length vector is exactly the line-averaged uniform metric dilation
+[PASS] dilation-vector-zero-mode: the flat edge-length dilation is a compact Regge zero vector
+       ||Q(0) ell||=3.355e-14
+[PASS] positive-cone-dilation-separator: the positive dilation null vector strictly separates every nonzero nonnegative actual-edge source from Range Q(0)
+       ell dot s_plus(0)=24.142135623731
+[PASS] positive-two-stream-zero-mode-control: the concrete positive mixture retains the compact k=0 incompatibility without source projection
+       null overlap=13.537799; solve residual=13.537799
+[PASS] continuum-two-stream-target: the source-derived minus-one-half Einstein comparator gives the exact shared-transverse mean-current coefficient four
+[PASS] unprojected-two-stream-pole: four shared-transverse directions give |k|^2 q^T h q -> 4 without source projection
+       coefficients=4.0001677,4.0001677,4.0000694,4.0001048
+[PASS] two-stream-pole-convergence: halving shared-transverse momentum reduces every pole-coefficient error
+[PASS] theorem-source-surface: the note states the positive action, exact Ward identity, timelike mean, inventory, dilation separator, and pole
+[PASS] no-go-discipline-source-surface: the note carries N1 through N8 and restricts the dilation result to the bare compact quadratic carrier
+[PASS] boundary-source-surface: the note preserves mixture-versus-worldline, Lorentzian, selection, coupling, nonlinear, Born, and realized-history boundaries
+[PASS] canonical-axiom-nonmutation: the canonical memo contains none of the positive-two-stream or dilation-separator wording
+per_element: checked positive actual tick and face-diagonal edge weights, their metric tensor, and the compact dilation separator
+per_site: checked two disjoint separately closed streams and the exact force balance of each complete line for every L=3 through L=8
+per_mode: checked all 2,369 supported nonzero positive-mixture sources against the complete Regge null space and the compact k0 control
+per_block: checked timelike mean-current diagnostics, the exact nonnegative-cone boundary, and the unprojected shared-transverse pole
+lattice_wide: checked all 8,755 Fourier modes on six four-tori; every supported nonzero equation solves without projection
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

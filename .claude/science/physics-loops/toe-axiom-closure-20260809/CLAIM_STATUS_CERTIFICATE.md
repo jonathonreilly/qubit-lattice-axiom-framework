@@ -287,3 +287,51 @@ campaign authors no verdict.
 No canonical axiom is edited and the fixed TOE percentages do not move. The
 Block 14 source remains bounded support and requires independent audit; this
 campaign authors no verdict.
+
+## Block 15 certificate
+
+- One disjoint closed tick line is added to the Block-14 face-diagonal line
+  with equal positive coefficients. Direct and analytic Fourier sums agree,
+  and the two complete line factors separately telescope against the actual
+  vertex-gauge rows.
+- On common support the per-step metric source is exactly
+  `t tensor t+v tensor v/sqrt(2)`. Its time-column has
+  `beta=sqrt(2)-1` and Lorentz norm `1+sqrt(2)>0` under the declared naive
+  diagnostic.
+- The positive `x,t` determinant is `1/sqrt(2)`, so the source is certified as
+  a two-stream mixture rather than one rank-one massive worldline.
+- Removing only the compact constant geometry variation leaves 2,369
+  supported nonzero sources across `L=3,...,8`, including 1,088 with nonzero
+  tick frequency. Every source meets five null directions, annihilates the
+  complete null space, and solves the unprojected edge equation.
+- The positive uniform edge-length vector is exactly `ell=M(0)(2I)` and lies
+  in `ker Q(0)`. Every nonzero nonnegative actual-edge source has
+  `ell dot s>0`, so Hermitian range-null orthogonality excludes the entire
+  cone from the bare compact flat quadratic range.
+- This is not a universal compact-source no-go. Fixed-global and open domains
+  are explicit routes; sign-indefinite combined geometry, curved/nonlinear
+  equations, alternate carriers, and connected balanced junctions remain
+  live under the complete N1--N8 packet.
+- The source-derived `-1/2` Einstein comparator gives coefficient four. Four
+  actual unprojected shared-transverse Regge directions converge to
+  `|k|^2 q^T h q=4` with improving errors.
+- No action/history selector, causal update, single massive worldline,
+  physical mass/Record map, compact constraint/counter-source, coupling,
+  nonlinear law, Born functional, or realized history is derived.
+- The existing candidate history/action amendment is already sufficient to
+  type the conditional fixed action and fixed-global ensemble. It remains
+  unadopted, not necessary or minimal, and no broader wording is proposed.
+- The primary runner is `PASS=28 FAIL=0` with 5,538 characters of cached
+  stdout. An independent reconstruction that does not import the Block-15
+  runner passes seven families, and all 28 fresh-process forced-false
+  mutations produce exactly one intended named failure.
+- Citation registration is 5,461 nodes / 15,565 edges; the note has
+  out-degree five and the harness adds one edge. Direct vocabulary, strict
+  audit lint, graph/link/class-F invariants, premise purity, Python/YAML,
+  whitespace, source-pinned cache, and canonical-axiom gates pass. The
+  isolated full-pipeline result is recorded in the conformance checkpoint;
+  no audit verdict is authored here.
+
+No canonical axiom is edited and the fixed TOE percentages do not move. The
+Block 15 source remains bounded support and requires independent audit; this
+campaign authors no verdict.

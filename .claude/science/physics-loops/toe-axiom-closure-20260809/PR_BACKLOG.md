@@ -240,3 +240,17 @@ commit is `c9a68765da`. PR #6082 is mergeable and `CLEAN` on the exact #6081
 delivery head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Hard landing order is
 #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078,
 #6079, #6080, #6081, then #6082.
+
+Block 15 is locally complete on branch
+`physics-loop/toe-axiom-closure-block15-20260810`, based on exact Block-14
+delivery head `ac8fbb5e4e705c74cf5c0e85902433a137ce0195`. It packages one equal-
+positive tick-plus-face-diagonal closed-line source, exact every-mode Ward
+closure, a subluminal timelike mean-current diagnostic, the complete 2,369-
+source fixed-global solve inventory, a coefficient-four shared-transverse
+pole, and the exact compact nonnegative-cone dilation separator. The runner is
+`PASS=28 FAIL=0`; the seven-family independent reconstruction agrees and all
+28 isolated forced-false mutations fail closed. Graph registration is 5,461
+nodes / 15,565 edges with note out-degree five. Direct repository conformance
+passes; isolated full-pipeline and seeded changed-evidence rehearsals remain
+before opening the stacked PR. The canonical axiom memo and fixed percentages
+are untouched, and no `review-loop` is used.

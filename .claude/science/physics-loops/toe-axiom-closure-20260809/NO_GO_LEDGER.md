@@ -58,5 +58,17 @@ makes the body source solvable. It is an algebraic counter-control rather than
 a physical action, and it forbids promoting the quadratic body residual to a
 higher-order or carrier-independent obstruction.
 
+Block 15 executes the positive balanced-stream route without changing the
+Block-14 line coefficients. One disjoint tick line plus one face-diagonal
+line has a timelike aggregate current and solves all 2,369 supported nonzero
+modes on the fixed-global domain. This retires any reading that actual-edge
+positivity forces a lightlike aggregate or destroys nonzero-mode solvability.
+
+| nonzero nonnegative actual-edge source on the bare compact flat quadratic carrier | `s>=0`, `s!=0` in the fifteen actual edge-length coordinates at `k=0`, with the constant geometry variation retained | the strictly positive uniform edge-length dilation satisfies `ell=M(0)(2I)`, `Q(0)ell=0`, and `ell dot s>0`, while every range vector must pair to zero with `ell` | N1--N8 complete in the Block-15 landing note; fixed-global and open domains are executed, while sign-indefinite combined geometry, curved/nonlinear equations, alternate carriers, and connected balanced junctions remain live | exact flat-quadratic compact actual-edge-cone boundary only; no universal source, matter, gravity, action, axiom, or dynamics no-go | derive and select a constraint/counter-source or change the bounded operator/domain/carrier premise explicitly |
+
+The positive source is a two-stream mixture. Its exact timelike mean current
+does not close a connected rank-one massive worldline, and the compact
+separator does not apply to sign-indefinite geometry contributions.
+
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.

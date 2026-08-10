@@ -528,3 +528,34 @@ mass typing, coupling, nonlinear geometry law, or realized history is derived.
 The existing Block-12 candidate wording is already sufficient to type the
 conditional representative and ensemble if adopted. No broader axiom wording
 is needed, no canonical axiom is edited, and no fixed percentage moves.
+
+## Block 15 Target And Disposition
+
+Block 15 executes the smallest positive multi-stream route left by Block 14.
+It adds one disjoint closed tick line to the closed face-diagonal line with
+equal positive coefficients. Each line telescopes separately, so the complete
+source obeys the actual four-gauge Ward identity on every declared mode.
+
+On common principal support, the per-step metric source is
+`t tensor t+(v tensor v)/sqrt(2)`. Its time-column has
+`beta=sqrt(2)-1` and positive Lorentz norm under the declared naive Lorentzian
+diagnostic. The positive `x,t` determinant is `1/sqrt(2)`, so the result is
+explicitly a two-stream mixture rather than one rank-one massive worldline.
+
+After removing only the compact constant geometry variation, all 2,369
+supported nonzero sources on `L=3,...,8` are compatible with the full
+five-dimensional Regge null space and solve the unprojected edge equation.
+The shared-transverse mean-current response tends to the source-derived
+coefficient four.
+
+The compact boundary is exact. The strictly positive edge-length vector
+`ell=M(0)(2I)` lies in `ker Q(0)`. Every nonzero nonnegative actual-edge
+source has `ell dot s>0`, while every source in `Range Q(0)` must pair to zero
+with `ell`. Therefore no source in that nonnegative cone solves the bare
+compact flat quadratic equation. Fixed-global, open, sign-indefinite combined-
+geometry, curved/nonlinear, alternate-carrier, and connected-junction routes
+remain live.
+
+The existing Block-12 candidate wording already types the fixed action and
+fixed-global ensemble if adopted. No broader axiom candidate is needed, no
+canonical wording is edited, and no fixed percentage moves.

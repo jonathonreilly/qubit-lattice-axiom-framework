@@ -644,3 +644,56 @@ The exact 18-file science delta is commit `a7b6da269a`; conformance is commit
 #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
 #6080, #6081, then #6082. The canonical memo and fixed percentages remain
 unchanged.
+
+## Block 15 science handoff
+
+Block 15 adds one disjoint positive tick line to the Block-14 positive
+face-diagonal line. Each complete line telescopes separately, so the sum has
+an exact four-gauge Ward identity on every declared torus mode without a
+signed compensator.
+
+On common support the per-step metric source is exactly
+`t tensor t+v tensor v/sqrt(2)`. Its time-column has
+`beta=sqrt(2)-1` and Lorentz norm `1+sqrt(2)` under the declared naive
+Lorentzian diagnostic. The positive `x,t` determinant `1/sqrt(2)` proves that
+this is a two-stream mixture rather than one rank-one massive worldline.
+
+Removing only the compact constant geometry variation leaves 2,369 supported
+nonzero sources across `L=3,...,8`, including 1,088 with nonzero tick
+frequency. Every source meets five null directions, annihilates the complete
+null space, and solves the unprojected edge equation. The worst full-null
+overlap is `1.078e-13` and the worst direct solve residual is `1.001e-12`.
+
+At `k=0`, the strictly positive actual-edge length vector is exactly
+`ell=M(0)(2I)` and satisfies `Q(0)ell=0`. Hence every nonzero nonnegative
+actual-edge source has `ell dot s>0` and is outside the bare compact flat
+quadratic range. This is a scoped cone boundary, not a universal compact-
+source or gravity no-go: fixed-global, open, sign-indefinite combined-
+geometry, curved/nonlinear, alternate-carrier, and connected-junction routes
+remain live.
+
+The source-derived continuum comparator gives coefficient four. Four actual
+unprojected shared-transverse Regge directions give
+`4.0001677, 4.0001677, 4.0000694, 4.0001048` at the smaller momentum, with
+every error improving under halving and worst equation residual
+`1.235e-11`.
+
+The primary runner is `PASS=28 FAIL=0` with a fresh source/input-pinned cache
+and 5,538 stdout characters. An independent reconstruction without importing
+the Block-15 runner passes seven families. All 28 isolated forced-false
+mutations exit nonzero with exactly one named failure. Citation registration
+is 5,461 nodes / 15,565 edges, with note out-degree five and one harness edge.
+
+Direct vocabulary, strict audit lint, graph/link/class-F, premise, Python/YAML,
+whitespace, cache, and canonical checksum gates pass. The live stack has PR
+#6082 `CLEAN` and mergeable on exact head
+`ac8fbb5e4e705c74cf5c0e85902433a137ce0195`; `origin/main` is
+`39c74017b870c27c804e3992f2a11e90336476b2`. The isolated full pipeline and
+seeded changed-evidence rehearsal remain the conformance step before delivery.
+
+The existing history/action amendment is sufficient to type the conditional
+fixed action and fixed-global ensemble if adopted. It remains hypothetical;
+no canonical axiom or fixed TOE percentage changes, and no `review-loop` is
+invoked. The next exact route is a connected positive locally force-balanced
+rank-one timelike junction, or a source-bound sign-indefinite geometry/
+constraint contribution that cancels the compact dilation pairing.

@@ -23,11 +23,10 @@ degree nine. The source note includes the sufficient candidate axiom wording
 and a complete N1-N8 firewall: it does not claim that an axiom edit is
 necessary.
 
-Direct conformance, five mutation probes, cache refresh, citation-manifest
+Block 1 is open as PR #6063. Direct conformance, five mutation probes, cache refresh, citation-manifest
 regeneration, strict lint, link invariants, and cold diff review are complete.
 The full pipeline's only stop is current-main dependency-policy drift owned by
-open PR #6061. Next exact action: commit, push, and open the Block 1 bounded
-theorem PR, then pivot to the native frame lemma or the physical
+open PR #6061. Next exact action: pivot to the native frame lemma or the physical
 distribution-to-effect-grade/menu-eligibility bridge. Do not duplicate PR
 #6062's basis-menu CNOT witness. Do not edit canonical axiom files. Do not
 invoke `review-loop`.

@@ -1,5 +1,5 @@
 {
- "edge_count": 15601,
+ "edge_count": 15602,
  "node_count": 5467,
  "nodes": {
   "3d_correction_master_note": {
@@ -423,8 +423,8 @@
    "out_degree": 1
   },
   "admissibility_regge_curvature_squared_sourced_continuation_constraint_localization_boundary_bounded_theorem_note_2026-08-10": {
-   "deps_hash": "1b5963db9357",
-   "out_degree": 8
+   "deps_hash": "67fb006c0d10",
+   "out_degree": 9
   },
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",

@@ -553,7 +553,7 @@ independent_audit_required: true
   `8.759e-8`.
 - Mutation sensitivity: all 16 fresh-process runner-copy mutations exit
   nonzero at exactly one intended named check (`PASS=16 FAIL=0`).
-- Citation graph: `5,467` nodes / `15,601` edges; new out-degree eight and
+- Citation graph: `5,467` nodes / `15,602` edges; new out-degree nine and
   nine resolved helpers.
 - Governance: no axiom/primitive, audit status, ledger/queue, fixed
   percentage, or `review-loop` mutation.

@@ -1313,7 +1313,7 @@ instance or Fourier census.
   variation on the selected constraint/gauge quotient. It is unadopted,
   sufficient or target-equivalent, and not proven minimal or necessary.
 - Primary source/input-pinned cache is fresh at `PASS=16 FAIL=0` in `158.21 s`.
-  Citation graph is `5,467` nodes / `15,601` edges; new out-degree is eight
+  Citation graph is `5,467` nodes / `15,602` edges; new out-degree is nine
   with nine resolved helper runners. Vocabulary, strict lint, premise purity,
   model normalization, Python, and whitespace gates pass.
 - Sixteen fresh-process runner-copy mutations cover axiom/note binding, both

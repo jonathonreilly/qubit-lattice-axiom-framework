@@ -404,5 +404,5 @@ source roots, two sourced momentum brackets, and a two-witness pointwise
 coefficient no-overlap with full-quotient escape preserved. Primary
 runner/cache is `PASS=16 FAIL=0`; all 16 fresh-process runner-copy mutations
 exit nonzero at exactly one intended named check (`PASS=16 FAIL=0`). Graph is
-`5,467/15,601` with out-degree eight. Direct conformance and delivery remain
+`5,467/15,602` with out-degree nine. Direct conformance and delivery remain
 pending. No `review-loop` is used.

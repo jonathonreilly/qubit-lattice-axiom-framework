@@ -422,7 +422,7 @@ complete conditional nonlinear compact solution:
   `scripts/admissibility_regge_curvature_squared_nonflat_continuation_2026_08_10.py`
 - source/input-pinned cache:
   `logs/runner-cache/admissibility_regge_curvature_squared_nonflat_continuation_2026_08_10.txt`
-- graph registration: one `bounded_theorem` node with eight explicit upstream
+- graph registration: one `bounded_theorem` node with nine explicit upstream
   edges and nine resolved helper runners
 - packet scope: full off-flat curvature-square Hessian, tracked unsourced fold,
   three interval-certified source continuations, Bundle-B periodic action

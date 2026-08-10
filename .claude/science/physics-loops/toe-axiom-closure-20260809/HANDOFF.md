@@ -1038,7 +1038,7 @@ so this is a constraint-localization diagnosis, not a gravity no-go.
 
 Primary cache is fresh at `PASS=16 FAIL=0`; all 16 fresh-process runner-copy
 mutations exit nonzero at exactly one intended named check. Graph registration
-is `5,467/15,601`, out-degree eight. The exact next path is a law-selected
+is `5,467/15,602`, out-degree nine. The exact next path is a law-selected
 covariant sourced constraint/gauge quotient on a full nonuniform solution,
 then continuous-zone and Lorentzian stability. No canonical edit, percentage
 move, audit verdict, or `review-loop` occurs.

@@ -86,9 +86,12 @@ exact Block-24 delivery head `298d50332e`. It proves exact normalized-family
 additive-zero nonidentifiability and constructs full-tensor source-linear
 gauge-null completions for all three source matrices. Primary cache is
 `PASS=13 FAIL=0` in `14.35 s`; thirteen isolated mutations and direct gates
-pass; graph registration is `5,471/15,620` with out-degree three. Pipeline,
-changed evidence, commits, and delivery remain pending. No `review-loop` is
-used.
+pass; graph registration is `5,471/15,620` with out-degree three. The exact
+stack reproduces only the inherited stage-7 policy-epoch stop after `4,809`
+rows / `3,687` runners; the controlled five-file overlay passes all 18 stages
+at checkpoint `b7f009c19958`. Changed evidence is clean for `1/1` Block-25 and
+`25/25` stacked claims. Science commit is `315eff4095`; conformance and
+delivery remain pending. No `review-loop` is used.
 
 Block 24 is being packaged on branch
 `physics-loop/toe-axiom-closure-block24-hyperface-seagull-20260810`, stacked on

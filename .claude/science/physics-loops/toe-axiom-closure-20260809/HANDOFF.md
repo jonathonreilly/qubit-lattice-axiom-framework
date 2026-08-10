@@ -769,11 +769,15 @@ inherited-gauge residual `4.580e-16`.
 
 Primary cache is `PASS=13 FAIL=0` in `14.35 s`; thirteen isolated mutations
 each fail exactly one intended check. Graph is `5,471/15,620` with out-degree
-three, and direct gates pass. Pipeline, changed evidence, commits, and PR
-delivery remain pending. The next law must select the allowed local covariant
-action representative and its unit before deriving global/nonuniform,
-continuous-zone, and Lorentzian response. No canonical edit, percentage move,
-audit verdict, or `review-loop` occurs.
+three, and direct gates pass. The exact stack reaches only the inherited
+stage-7 policy-epoch stop after `4,809` rows / `3,687` runners; the controlled
+five-file overlay passes all 18 stages at checkpoint `b7f009c19958`. Changed
+evidence is clean for `1/1` Block-25 and `25/25` stacked claims. Science
+commit is `315eff4095`; conformance commit and PR delivery remain pending. The
+next law must select the allowed local covariant action representative and its
+unit before deriving global/nonuniform, continuous-zone, and Lorentzian
+response. No canonical edit, percentage move, audit verdict, or `review-loop`
+occurs.
 
 ## Block 17 science handoff
 

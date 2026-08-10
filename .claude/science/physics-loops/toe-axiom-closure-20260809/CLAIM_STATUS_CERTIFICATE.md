@@ -680,8 +680,12 @@ independent_audit_required: true
   inherited gauge columns to `4.580e-16`, and enter at `O(c)`.
 - Runner/cache: source/input pinned, `PASS=13 FAIL=0` in `14.35 s`.
 - Thirteen isolated mutations each fail exactly one intended check. Graph is
-  `5,471/15,620` with out-degree three, and direct gates pass. Pipeline,
-  changed evidence, commits, delivery, and independent audit remain pending.
+  `5,471/15,620` with out-degree three, and direct gates pass. The exact stack
+  reproduces only the inherited stage-7 policy-epoch mismatch after `4,809`
+  rows / `3,687` runners; the controlled five-file overlay passes all 18
+  stages at checkpoint `b7f009c19958`. Changed evidence is clean for `1/1`
+  Block-25 and `25/25` stacked claims. Science commit is `315eff4095`;
+  conformance, delivery, and independent audit remain pending.
 - Governance: this is local normalized-family nonidentifiability, not an
   action-selection, locality, covariance, gravity, or axiom no-go; no
   canonical edit, percentage move, audit verdict, or `review-loop`.

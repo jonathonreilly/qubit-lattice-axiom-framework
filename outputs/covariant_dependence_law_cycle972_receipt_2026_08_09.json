@@ -1,0 +1,1227 @@
+{
+ "actual_current_surface_status": "bounded-support",
+ "all_certificates_pass": true,
+ "certificates": {
+  "A_FULL_WITNESS_CENSUS": {
+   "finding": "family_words=20=1_identity+7_X+12_oriented_CNOT; neighbour_conditions=64; witness_words=6/20; dependent_word_x_rows=12/40; changed_edge_pairs=384/7680; witnesses=['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)']",
+   "pass": true
+  },
+  "B_COVARIANCE_MEASUREMENT": {
+   "finding": "group=Z3_semidirect_Oplus_cubic; rotations=24; rotation_checks=61440; translation_generator_checks=15360; covariance_verdict=COVARIANT; non_covariant_witnesses=[]",
+   "pass": true
+  },
+  "C_ORBIT_PARTITION": {
+   "finding": "word_law_classes=1; state_resolved_classes=2; state_representatives=[('CNOT(-x->C)', 0), ('CNOT(-x->C)', 1)]; local_orbit_sizes=[6, 6]; stabilizers=[4, 4]",
+   "pass": true
+  },
+  "D_MARGINAL_MEASUREMENT": {
+   "finding": "uniform_target_input_changed_words=0/20; changed_edge_pairs=0/3840; identity=(1/2) sum_{x in {0,1}} 1{y=x XOR n_d}=1/2 for each y,n_d; any_break=False; scope=declared_length_zero/one_family",
+   "pass": true
+  },
+  "E_CONTROLS_AND_PROVENANCE": {
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=1.128563<1400; stdout_upper_bound_bytes=3757<6000<150000; timeout_s=300<1400",
+   "pass": true
+  }
+ },
+ "claim_type": "bounded_theorem",
+ "controls": {
+  "all_inputs_exist_worktree_relative": true,
+  "blocklist_cited_primaries": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "blocklist_text_only": true,
+  "cycle970_text_ast_provenance": {
+   "note": {
+    "declares_full_covariant_law_open": true,
+    "expected_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+    "observed_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+    "path": "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+    "read_mode": "text only",
+    "reports_four_of_twenty": true
+   },
+   "runner": {
+    "expected_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+    "has_declared_family_function": true,
+    "has_state_resolved_census_function": true,
+    "observed_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+    "path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+    "read_mode": "AST only; never executed"
+   }
+  },
+  "executable_substrate": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+  "landed_axiom_needle_matches": true,
+  "literal_audit_input_paths": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  ],
+  "provenance_pins_match": true,
+  "sha256": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  }
+ },
+ "cycle": 972,
+ "determinism_replay": true,
+ "family_horizon": {
+  "excluded": [
+   "TOF (three-wire arity)",
+   "words of length >=2",
+   "continuous M_2(C) distributions"
+  ],
+  "family_description": "all 20 distinct length-zero/one words on a target-centred seven-site nearest-neighbour star: identity; X on each of seven sites; and CNOT in both orientations on each of six centre-neighbour edges",
+  "family_size": 20,
+  "gate_kinds": [
+   "identity",
+   "X",
+   "CNOT"
+  ],
+  "neighbour_condition_horizon": "all 2^6 basis-bit conditions",
+  "spatial_horizon": "one target-centred radius-one nearest-neighbour star",
+  "target_input_menu": [
+   0,
+   1
+  ],
+  "word_length_cap": 1
+ },
+ "findings": {
+  "covariance": {
+   "class_interpretation": "one spatial word-law class; two state-resolved classes because proper lattice motions do not flip x=0 and x=1",
+   "covariant": true,
+   "group_action": "(a,d,x) maps to (R a+t,R d,x); target bit x is not acted on",
+   "non_covariant_witnesses": [],
+   "proper_rotation_count": 24,
+   "realized_group": "Z^3 semidirect product with the 24 proper signed-permutation cubic rotations",
+   "rotation_family_closure_failures": [],
+   "rotation_group_closed": true,
+   "rotation_semantic_comparisons": 61440,
+   "rotation_semantic_failures": [],
+   "state_resolved_class_count": 2,
+   "state_resolved_orbits": [
+    {
+     "fixed_target_input": 0,
+     "global_orbit_parameterization": "a in Z^3 and d in {+/-e_x,+/-e_y,+/-e_z}",
+     "global_space_group_orbit_cardinality": "countably infinite",
+     "local_rotation_orbit_size": 6,
+     "proper_rotation_stabilizer_size": 4,
+     "representative_word": "CNOT(-x->C)"
+    },
+    {
+     "fixed_target_input": 1,
+     "global_orbit_parameterization": "a in Z^3 and d in {+/-e_x,+/-e_y,+/-e_z}",
+     "global_space_group_orbit_cardinality": "countably infinite",
+     "local_rotation_orbit_size": 6,
+     "proper_rotation_stabilizer_size": 4,
+     "representative_word": "CNOT(-x->C)"
+    }
+   ],
+   "translation_generators": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     -1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "translation_semantic_comparisons": 15360,
+   "translation_semantic_failures": [],
+   "word_law_class_count": 1,
+   "word_law_orbits": [
+    {
+     "global_orbit_parameterization": "a in Z^3 and d in {+/-e_x,+/-e_y,+/-e_z}",
+     "global_space_group_orbit_cardinality": "countably infinite",
+     "local_rotation_orbit_size": 6,
+     "proper_rotation_stabilizer_size": 4,
+     "representative_word": "CNOT(-x->C)"
+    }
+   ]
+  },
+  "resolved": {
+   "changed_edge_pair_comparisons": 384,
+   "changed_edge_pairs_digest": "fb4c1a2f6e57d4c3cfc966c81732c3e17c4e385b92633f38634851861e0c64ff",
+   "conditioned_configurations": 2560,
+   "conditioned_configurations_in_dependent_rows": 768,
+   "dependent_word_local_input_rows": 12,
+   "edge_pair_comparisons": 7680,
+   "family": "all 20 distinct length-zero/one words on a target-centred seven-site nearest-neighbour star: identity; X on each of seven sites; and CNOT in both orientations on each of six centre-neighbour edges",
+   "family_words": 20,
+   "neighbour_condition_count": 64,
+   "rows": [
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "I"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "I"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "X(-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "X(-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent_neighbour_bits": [],
+     "depends_on_neighbour_condition": false,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 0,
+     "word_name": "CNOT(-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "depends_on_neighbour_condition": true,
+     "edge_pair_comparisons": 192,
+     "local_input": 1,
+     "word_name": "CNOT(-z->C)"
+    }
+   ],
+   "witness_word_count": 6,
+   "witness_words": [
+    {
+     "changed_edge_pairs": 64,
+     "induced_target_map": "y=x XOR n_d",
+     "reads_neighbour_bit": "+x",
+     "separated_pairs": [
+      {
+       "distribution_n_d_0": [
+        1,
+        0
+       ],
+       "distribution_n_d_1": [
+        0,
+        1
+       ],
+       "fixed_target_input": 0,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      },
+      {
+       "distribution_n_d_0": [
+        0,
+        1
+       ],
+       "distribution_n_d_1": [
+        1,
+        0
+       ],
+       "fixed_target_input": 1,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      }
+     ],
+     "target_coordinate_moved": "a",
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "induced_target_map": "y=x XOR n_d",
+     "reads_neighbour_bit": "-x",
+     "separated_pairs": [
+      {
+       "distribution_n_d_0": [
+        1,
+        0
+       ],
+       "distribution_n_d_1": [
+        0,
+        1
+       ],
+       "fixed_target_input": 0,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      },
+      {
+       "distribution_n_d_0": [
+        0,
+        1
+       ],
+       "distribution_n_d_1": [
+        1,
+        0
+       ],
+       "fixed_target_input": 1,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      }
+     ],
+     "target_coordinate_moved": "a",
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "induced_target_map": "y=x XOR n_d",
+     "reads_neighbour_bit": "+y",
+     "separated_pairs": [
+      {
+       "distribution_n_d_0": [
+        1,
+        0
+       ],
+       "distribution_n_d_1": [
+        0,
+        1
+       ],
+       "fixed_target_input": 0,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      },
+      {
+       "distribution_n_d_0": [
+        0,
+        1
+       ],
+       "distribution_n_d_1": [
+        1,
+        0
+       ],
+       "fixed_target_input": 1,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      }
+     ],
+     "target_coordinate_moved": "a",
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "induced_target_map": "y=x XOR n_d",
+     "reads_neighbour_bit": "-y",
+     "separated_pairs": [
+      {
+       "distribution_n_d_0": [
+        1,
+        0
+       ],
+       "distribution_n_d_1": [
+        0,
+        1
+       ],
+       "fixed_target_input": 0,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      },
+      {
+       "distribution_n_d_0": [
+        0,
+        1
+       ],
+       "distribution_n_d_1": [
+        1,
+        0
+       ],
+       "fixed_target_input": 1,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      }
+     ],
+     "target_coordinate_moved": "a",
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "induced_target_map": "y=x XOR n_d",
+     "reads_neighbour_bit": "+z",
+     "separated_pairs": [
+      {
+       "distribution_n_d_0": [
+        1,
+        0
+       ],
+       "distribution_n_d_1": [
+        0,
+        1
+       ],
+       "fixed_target_input": 0,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      },
+      {
+       "distribution_n_d_0": [
+        0,
+        1
+       ],
+       "distribution_n_d_1": [
+        1,
+        0
+       ],
+       "fixed_target_input": 1,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      }
+     ],
+     "target_coordinate_moved": "a",
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 64,
+     "induced_target_map": "y=x XOR n_d",
+     "reads_neighbour_bit": "-z",
+     "separated_pairs": [
+      {
+       "distribution_n_d_0": [
+        1,
+        0
+       ],
+       "distribution_n_d_1": [
+        0,
+        1
+       ],
+       "fixed_target_input": 0,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      },
+      {
+       "distribution_n_d_0": [
+        0,
+        1
+       ],
+       "distribution_n_d_1": [
+        1,
+        0
+       ],
+       "fixed_target_input": 1,
+       "other_five_neighbour_bits": "arbitrary",
+       "replicated_other_contexts": 32,
+       "target_neighbour_input_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "target_neighbour_output_pair": [
+        [
+         1,
+         0
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "target_state_mutates_between_branches": true
+      }
+     ],
+     "target_coordinate_moved": "a",
+     "word_name": "CNOT(-z->C)"
+    }
+   ],
+   "word_local_input_rows": 40
+  },
+  "uniform": {
+   "any_word_breaks_marginal_independence": false,
+   "averaging_identity": "(1/2) sum_{x in {0,1}} 1{y=x XOR n_d}=1/2 for each y,n_d",
+   "changed_edge_pair_comparisons": 0,
+   "changed_edge_pairs_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "changed_word_rows": 0,
+   "conditioned_configurations": 1280,
+   "definition": "Dbar[W,a](y|n)=(D[W,a,0](y|n)+D[W,a,1](y|n))/2",
+   "edge_pair_comparisons": 3840,
+   "reason": "for fixed neighbour condition, every declared target map is a permutation of x",
+   "rows": [
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "I"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(C)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(+x)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(-x)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(+y)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(-y)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(+z)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "X(-z)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "breaks_marginal_independence": false,
+     "dependent_neighbour_bits": [],
+     "distinct_marginals": [
+      [
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "word_name": "CNOT(-z->C)"
+    }
+   ],
+   "scope": "the declared 20-word length-zero/one family only; longer landed words are outside the horizon",
+   "word_rows": 20
+  }
+ },
+ "law_formula": "for W_d=CNOT(a+d->a), target output y=x XOR n_d",
+ "reachability_to_target": "closes",
+ "runtime_sec": 1.1285633329534903,
+ "science_digest": "b5ee092e70e0f7532d38337f1d1091e149acf97f53187af1c3d1164fc0375979",
+ "stdout_bytes": 2385,
+ "trace_class": "direct_blocker_closure"
+}

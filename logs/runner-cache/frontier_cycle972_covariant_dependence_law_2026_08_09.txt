@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py
+runner_sha256: b07dee12937e3358fdbb7433da85be8491e0554155fc39e1ae8832b6edb75926
+input_fingerprint_sha256: 873beb966b5f5764c825d6c10142cac4ea9c3c47322087ea075249380cfd0d17
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.54
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 972 -- COVARIANT NEIGHBOUR-DEPENDENCE LAW
+==============================================================================
+PASS A_FULL_WITNESS_CENSUS :: family_words=20=1_identity+7_X+12_oriented_CNOT; neighbour_conditions=64; witness_words=6/20; dependent_word_x_rows=12/40; changed_edge_pairs=384/7680; witnesses=['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)']
+PASS B_COVARIANCE_MEASUREMENT :: group=Z3_semidirect_Oplus_cubic; rotations=24; rotation_checks=61440; translation_generator_checks=15360; covariance_verdict=COVARIANT; non_covariant_witnesses=[]
+PASS C_ORBIT_PARTITION :: word_law_classes=1; state_resolved_classes=2; state_representatives=[('CNOT(-x->C)', 0), ('CNOT(-x->C)', 1)]; local_orbit_sizes=[6, 6]; stabilizers=[4, 4]
+PASS D_MARGINAL_MEASUREMENT :: uniform_target_input_changed_words=0/20; changed_edge_pairs=0/3840; identity=(1/2) sum_{x in {0,1}} 1{y=x XOR n_d}=1/2 for each y,n_d; any_break=False; scope=declared_length_zero/one_family
+PASS E_CONTROLS_AND_PROVENANCE :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=1.128563<1400; stdout_upper_bound_bytes=3757<6000<150000; timeout_s=300<1400
+CHECKER_PAYLOAD: {"changed_edge_pair_comparisons":384,"covariant":true,"dependent_word_local_input_rows":12,"edge_pair_comparisons":7680,"family_words":20,"marginal_changed_edge_pairs":0,"marginal_changed_words":0,"marginal_edge_pairs":3840,"marginal_word_rows":20,"non_covariant_witnesses":[],"proper_rotation_count":24,"science_digest":"b5ee092e70e0f7532d38337f1d1091e149acf97f53187af1c3d1164fc0375979","state_orbit_sizes":[6,6],"state_resolved_class_count":2,"state_stabilizer_sizes":[4,4],"witness_word_count":6,"witness_word_names":["CNOT(+x->C)","CNOT(-x->C)","CNOT(+y->C)","CNOT(-y->C)","CNOT(+z->C)","CNOT(-z->C)"],"word_law_class_count":1,"word_local_input_rows":40}
+VERDICT: BOUNDED_COVARIANT_DEPENDENCE_LAW_CHARACTERIZED
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

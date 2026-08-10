@@ -17,12 +17,17 @@ surface.
 > [`repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md`](repo/AXIOM_RESET_PROBE_RESULTS_2026-08-09.md).
 > Obligations 1, 2 and 3 are discharged, and the chirality and Born-form claims
 > are confirmed decisively. **Obligation 4 is not discharged and currently looks
-> negative:** order-reversal positivity holds on a regular causal order but
-> fails on a sprinkled one for every non-degenerate member of the order-local
-> quadratic action family tested (625 actions scanned, zero passing). Since the
-> sprinkling is what supplies Lorentz invariance, the Hilbert-space payoff
-> claimed for the Law axiom's positivity clause in section 4 and section 7
-> **should not be relied on** pending a wider action class.
+> negative, and round two hardened it:** order-reversal positivity is a
+> knife-edge property. It holds only on an exactly regular causal order with a
+> reflection-symmetric interface layer, and breaks at the smallest perturbation
+> tested (jitter 0.001, violation jumping to 0.41), with no neighbourhood to
+> retreat to. The Benincasa-Dowker d'Alembertian — the named escape route —
+> fails in every configuration including the regular one, and the violation does
+> not shrink with system size. Since Poisson randomness is what supplies Lorentz
+> invariance, the Hilbert-space payoff claimed for the Law axiom's positivity
+> clause in section 4 and section 7 **should be treated as unavailable, not
+> merely unproven.** The three non-substrate repairs are unaffected and
+> confirmed.
 
 ---
 
@@ -398,8 +403,11 @@ formality. Listed in the order they should be discharged:
    Positive on a lattice and on a regular causal order; fails on sprinkled
    causal sets across a 625-action scan of the order-local quadratic family,
    with violations of the same order as the Gram matrix itself. The next probe
-   is the Benincasa-Dowker causal-set d'Alembertian, which lies outside the
-   scanned family.
+   The Benincasa-Dowker causal-set d'Alembertian has since been tested and
+   fails in every configuration, including on a regular order; the violation is
+   not finite-size; and there is no neighbourhood of regularity where positivity
+   survives. Discharging this obligation would need a qualitatively different
+   amplitude class or a different notion of positivity.
 5. **Derive the Born form** from Observables plus Law. This is the payoff check:
    if it does not go through, the reset has not bought what §7 claims.
 6. **Decide the C\*-typing question** in §4 — posit it, or derive it from

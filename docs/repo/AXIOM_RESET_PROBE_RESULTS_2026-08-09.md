@@ -17,6 +17,11 @@ audit status.
 - `scripts/probe_axiom_reset_born_effect_menu_2026_08_09.py` — 6 PASS / 0 FAIL
 - `scripts/probe_axiom_reset_order_reversal_positivity_2026_08_09.py` — **5 PASS / 3 FAIL**
 
+Round two, following up the negative:
+
+- `scripts/probe_axiom_reset_bd_dalembertian_positivity_2026_08_09.py` — **0 PASS / 4 FAIL**
+- `scripts/probe_axiom_reset_positivity_confound_2026_08_09.py` — **1 PASS / 8 FAIL**
+
 ---
 
 ## 1. Verdict
@@ -32,15 +37,25 @@ substrate the reset exists to enable.**
 
 The failure has a specific shape, and the shape is the finding:
 
-> Order-reversal positivity **holds on a regular causal order** and **fails on a
-> sprinkled one**, for every non-degenerate action in the family tested. But a
-> regular causal order has a preferred frame, exactly like a lattice. Sprinkling
-> is what buys Lorentz invariance. So within this test, **the reset cannot have
-> both Lorentz invariance and the positivity clause that was supposed to deliver
-> the Hilbert space.**
+> Order-reversal positivity is a **knife-edge** property. It holds on an exactly
+> regular causal order with a reflection-symmetric interface layer, and fails —
+> immediately, and at essentially full magnitude — for any departure from
+> regularity, down to the smallest perturbation tested. A Poisson sprinkling is
+> what supplies Lorentz invariance, and it is maximally far from regular.
+
+So within these tests, **the reset cannot have both Lorentz invariance and the
+positivity clause that was supposed to deliver the Hilbert space** — and there is
+no compromise position between them, because the transition is discontinuous
+rather than gradual.
 
 That is a direct tension between two of the proposal's headline claims, and it
 was not visible from the text.
+
+**Round two corrects round one on the mechanism.** The first pass reported
+"positivity holds on a regular causal order and fails on a sprinkled one." That
+is true as far as it goes, but it conflated two variables — the regular case
+also carried an interface layer that the sprinkled case lacked — and it implied
+a gradient where there is a step. Section 3.2 gives the corrected account.
 
 ## 2. What holds
 
@@ -172,6 +187,56 @@ The initial version of this scan reported one apparent success. It was
 (`‖M‖_F = 0.0`), hence trivially positive semi-definite and physically empty.
 Rejecting degenerate Gram matrices removes it, and the corrected count is zero.
 
+## 3.2 Round two: isolating the mechanism
+
+**A confound in round one.** The regular test used a causal set containing a
+`t = 0` layer, with the positive half taken to be `t > 0`; the sprinkled test
+used a mirrored construction with no such layer. Regularity and interface
+presence were varied together. A 2x2 with one construction, one action and one
+test separates them:
+
+| link action, λ=0.2 | interface | no interface |
+|---|---|---|
+| **regular** | **PASS** — violation `0.0000` | FAIL — `0.1489` |
+| **sprinkled** | FAIL — `0.6337` | FAIL — `0.3445` |
+
+Neither clean diagnosis survives. It is not the interface alone — sprinkled with
+an interface fails, and fails *worse* than without one. It is not regularity
+alone — regular without an interface fails. **Positivity requires the
+conjunction**, and round one's regular case passed because it happened to have
+both.
+
+**The Benincasa-Dowker action fails everywhere, including on a regular order.**
+This was the named follow-up, the literature's natural causal-set action, and
+the one clearly outside round one's scanned family. Symmetrised and given a mass
+term large enough to make the kernel positive-definite, it is negative in every
+configuration tested — `0.6153` on a regular order with an interface, `0.5288`
+sprinkled with an interface, and `-1.410` worst min eigenvalue on mirrored
+sprinklings. At smaller masses the kernel is not positive-definite at all and
+the Gaussian is not normalisable. **The named escape route is closed.**
+
+**The violation is not a finite-size effect.** Sweeping the sprinkled system from
+12 to 50 events, the violation normalised by the Gram matrix scale runs
+`0.152 → 0.256 → 0.282 → 0.291 → 0.274 → 0.260` — a log-log slope against `N` of
+**+0.332**. It saturates around 0.26–0.29 rather than washing out.
+
+**There is no neighbourhood of regularity.** This is the sharpest result. Taking
+the one passing cell — regular order, interface present, violation exactly
+`0.0000` — and jittering the event positions:
+
+| jitter | 0.0 | 0.001 | 0.005 | 0.02 | 0.05 | 0.15 | 0.40 |
+|---|---|---|---|---|---|---|---|
+| violation | **0.0000** | 0.4068 | 0.3759 | 0.3536 | 0.4075 | 0.4134 | 0.3617 |
+
+Positivity breaks at the smallest perturbation tested, and the violation jumps
+straight to roughly its fully-sprinkled magnitude. It does not degrade
+gracefully. **Order-reversal positivity, in these action families, is a
+measure-zero property of the exactly regular configuration.**
+
+Since exact regularity is precisely what carries a preferred frame, and Poisson
+randomness is precisely what removes one, the two requirements are not merely in
+tension — they are separated by a discontinuity with nothing in between.
+
 ## 4. What this means for the proposal
 
 **The three cheap repairs are confirmed and should be treated as safe.**
@@ -187,12 +252,19 @@ sprinkled substrate, these probes do not support that. The clause is not merely
 unproven there — the natural order-local action family appears to be
 **incompatible** with it.
 
-**The tension is structural, not incidental.** Lorentz invariance was the entire
-reason to prefer an order-theoretic substrate, and it requires the sprinkling,
-because a regular causal order carries a preferred frame just as a lattice does.
-The probes place positivity on the regular side of that divide. Either a wider
-action class recovers positivity on sprinklings, or the reset must give up one
-of the two things it was designed to deliver.
+**The tension is structural, not incidental, and round two makes it sharp.**
+Lorentz invariance was the entire reason to prefer an order-theoretic substrate,
+and it requires the sprinkling, because a regular causal order carries a
+preferred frame just as a lattice does. Positivity sits on the exactly-regular
+point and nowhere near it. Across two action families, two interface
+configurations, six system sizes and a jitter sweep, **exactly one configuration
+out of everything tested was positive, and it was the fully regular one.**
+
+The proposal's own recommendation — take the three cheap repairs, treat the
+substrate change as an owner call — survives. What does not survive is the
+reason given for the substrate change being attractive. As drafted, the Law
+axiom's positivity clause does not deliver a Hilbert space on a frame-free
+substrate, and no tested action makes it do so.
 
 ## 5. Limits of these probes
 
@@ -209,18 +281,28 @@ Stated so the negative is not over-read:
 - **One construction of the involution.** The mirrored sprinkling is one way to
   obtain an order-reversing symmetry; others may behave differently, and links
   crossing the mirror directly may be atypical.
-- **The literature's natural candidate was not tested.** The Benincasa–Dowker
-  causal-set d'Alembertian is the obvious action to try next, and is not in the
-  scanned family. **This is the single most valuable follow-up probe**, and until
-  it is run the negative should be read as "the natural family fails" rather than
-  "no action works."
+- **Two action families now, not one.** The Benincasa–Dowker operator has been
+  tested and fails. That closes the named follow-up, but two families are still
+  not all families — in particular, non-Gaussian amplitudes and non-quadratic
+  actions remain untested, as do higher-dimensional causal sets.
+- **The interface construction is one choice among several.** A `t = 0` layer of
+  θ-fixed events is the natural analogue of lattice site reflection; a link-type
+  reflection with no fixed events is the other, and both were tested. Other
+  antichain choices for the reflection surface were not.
 
 ## 6. Recommendation
 
 Unchanged for the three cheap repairs: take them, they are confirmed.
 
-Changed for the substrate: **do not treat the Hilbert-space payoff as available.**
-Before the substrate change can be argued on its merits, obligation 4 needs
-either a wider action class that restores positivity on sprinklings — starting
-with the Benincasa–Dowker operator — or an explicit admission that the reset
-delivers Lorentz invariance *or* a reconstruction theorem, but not both.
+Hardened for the substrate: **the Hilbert-space payoff should be treated as
+unavailable, not merely unproven.** The named escape route is now closed, the
+violation is not finite-size, and there is no neighbourhood of regularity to
+retreat to. Obligation 4 would need a qualitatively different amplitude class —
+non-Gaussian, or a different notion of positivity altogether — and the honest
+statement in the meantime is that the drafted reset delivers Lorentz invariance
+*or* a reconstruction theorem, but not both.
+
+This does not sink the reset. It relocates it: the three non-substrate repairs
+stand on their own evidence, and the substrate change should be argued, if at
+all, on background independence and the frame problem rather than on a
+Hilbert-space payoff it does not currently deliver.

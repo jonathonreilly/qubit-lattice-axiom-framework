@@ -452,3 +452,16 @@ Block-23 and `23/23` stacked claims. Science is `c236890389`; PR #6094 is
 open, mergeable, and `CLEAN` at conformance head `66d4cc0d56`,
 stacked exactly on Block-22 delivery head `dc23e2f32f`. No `review-loop` is
 used.
+
+Block 24 is being constructed on branch
+`physics-loop/toe-axiom-closure-block24-regge-source-seagull-20260810`, stacked
+on exact Block-23 delivery head `3c781e0585`. Its distinct review object is the
+proper-length direct-contact transfer: the active `2/3/4` edge supports cannot
+cancel full-rank six-mode source coefficients, and a coordinate-only seagull
+cancels the geometry connection at full stationarity. One common six-edge
+chart supplies the required constructive escape. Primary source/input-pinned
+cache is `PASS=16 FAIL=0` in `13.91 s`; all sixteen fresh-process mutations
+fail closed at exactly one named check, and graph registration is `5,470`
+nodes / `15,617` edges with out-degree four and twelve helper runners. Direct
+conformance passes. Exact pipeline, changed evidence, commits, and delivery
+remain pending. No `review-loop` is used.

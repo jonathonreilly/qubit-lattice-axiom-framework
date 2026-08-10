@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_proper_length_source_seagull_support_rank_connection_boundary_2026_08_10.py
+runner_sha256: 6c75b366f4b13c0ac86167bd752e082f52e92707ca90ec221b6887a6e2e2294a
+input_fingerprint_sha256: e56f0cad425ef5d2c8d7260d00e1d9dd8b761f93b2b7286c2c62730cc2ebfcd6
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.91
+status: ok
+----- stdout -----
+external_scientific_inputs: none; all source rows, metric maps, and mass coefficients are reconstructed from repository-local retained carriers
+analytic_boundary: the support-rank and stationary pullback cancellations are exact finite-dimensional theorems; Regge mass coefficients are double-precision reconstructions
+physical_boundary: the proper-length contact class is not a selected source law, and the result does not decide nonuniform histories, dynamical source variables, or a curved or massive phase
+[PASS] source-and-axiom-boundary: the current axioms select neither this proper-length completion nor a joint gravity/source law
+[PASS] retained-carrier-boundary: the parent names the direct seagull route while the retained history action is affine in actual edge lengths
+[PASS] note-contract: the note states the strict support-rank and coordinate-connection boundaries
+[PASS] six-mode-affine-metric-carrier: the Block-23 physical zero modes lie in the ten-dimensional affine metric tangent
+       affine residual=3.901e-15; induced Gram error=2.237e-15
+[PASS] full-rank-parent-coefficients: all three O(source) coefficients retain the full-rank Block-23 inertias
+       inertias=((3, 3, 0), (4, 2, 0), (2, 4, 0)); ranks=(np.int64(6), np.int64(6), np.int64(6))
+[PASS] declared-source-support-inventory: the two-stream and bundle rows touch exactly two, three, and four positive edge classes
+       support counts=(2, 3, 4); smallest positive weights=(2.0, 2.8284271247461903, 1.7320508075688772)
+[PASS] proper-length-first-and-second-variation: ell_e(g)=sqrt(v_e^T g v_e) has r_e=d ell_e and d2 ell_e=-r_e tensor r_e/ell_e
+       max first error=2.444e-11; max mixed-second error=4.019e-09
+[PASS] proper-length-contact-ranks: the projected proper-length seagulls have ranks two, three, and four
+       support ranks=(np.int64(2), np.int64(3), np.int64(4)); contact ranks=(np.int64(2), np.int64(3), np.int64(4)); representation error=3.440e-15
+[PASS] support-rank-cancellation-boundary: any direct Hessian confined to the active source-edge coordinates leaves nonzero six-mode rank
+       Sylvester lower bounds on residual rank=(np.int64(4), np.int64(3), np.int64(2))
+[PASS] proper-length-seagull-does-not-cancel: the sign-fixed proper-length source contact leaves every six-mode coefficient nonsingular
+       contacted inertias=((3, 3, 0), (3, 3, 0), (2, 4, 0)); minimum gap=0.000884
+[PASS] scalar-rescaling-does-not-cancel: even the Frobenius-best scalar multiple of each proper-length contact leaves a large residual
+       best scalars=-0.038712, -0.310173, -0.286843; relative residuals=0.971376, 0.934283, 0.648075
+[PASS] stationary-pullback-cancellation: for S_g(ell)-c J dot ell at a full stationary point, the geometry connection and proper-length source seagull cancel exactly
+       maximum connection-plus-seagull residual=0.000e+00
+[PASS] no-coordinate-only-repair: rewriting the same affine edge source through metric or coframe variables cannot create an independent physical repair
+[PASS] six-edge-spreading-escape: a six-edge chart admits an algebraic source-responsive contact completion, so the narrow support bound is not a gravity no-go
+       chart=((0, 0, 0, 1), (0, 0, 1, 1), (0, 1, 0, 0), (0, 1, 1, 0), (1, 0, 0, 0), (1, 0, 1, 0)); condition=1.834997; completion residual=6.956e-16; contact inertias=((3, 3, 0), (2, 4, 0), (4, 2, 0))
+[PASS] live-structural-routes: geometry-spreading contact, dynamical p=q=1 source blocks, nonuniform closed histories, and curved phases remain explicit live routes
+[PASS] bounded-theorem-and-no-go-scope: the result retires only support-confined direct contacts and coordinate-only seagull transfer
+N5_CERTIFICATE: resolution=the negative is restricted to direct Hessians confined to each retained source row's active edge coordinates and to coordinate-only proper-length rewrites
+N5_CERTIFICATE: constructive_route=a common six-edge physical chart explicitly supports source-responsive coefficient cancellation
+N5_CERTIFICATE: excluded_rhetoric=no gravity, Regge, source, seagull, worldline, or axiom impossibility is claimed
+N5_CERTIFICATE: live_routes=geometry-spreading contacts, dynamical source variables, nonuniform closed histories, richer actions, and curved or massive phases remain open
+N5_CERTIFICATE: physical_boundary=source selection, locality, full stationarity, continuous momentum, Lorentzian evolution, and nonlinear stability are not derived
+per_element: checked all fifteen actual edge classes, every active source edge, and one common six-edge escape chart
+per_mode: checked the six homogeneous flat physical metric modes at the O(source) coefficient; no nonzero-momentum theorem is claimed
+per_block: checked the two-stream, Bundle-A, and Bundle-B source rows and their proper-length contacts
+lattice_wide: checked and not executed — no nonuniform source field, continuous-zone, finite-torus, Lorentzian, or nonlinear action theorem is claimed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

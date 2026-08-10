@@ -87,3 +87,17 @@ operator at `k` proportional to `sqrt(c)`.
 The leading obligation is no longer an unspecified `R_*(ell,J)`: it is to
 derive which of the rank-jump, square-root, nonzero-flat-mixing, or direct-
 connection branches the local joint action actually realizes.
+
+## Post-Block-24 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | derive a geometry-spreading or dynamical local source action | one source insertion differentiates through at least six independent geometry combinations, or complete `p=q=1` mixed/source Hessian blocks arise from local history variables | proper-length support contacts are rank-forbidden and coordinate-only seagulls cancel |
+| 2 | solve one fully stationary nonuniform closed-history background | exact translated Ward-compatible source, source transformation, multiplier curvature, and certified coupled solution | the current homogeneous roots retain ten reactions and cannot decide the full connection law |
+| 3 | classify the derived source sector's zero-coupling rank | identify gauge/constraint content and prove no unintended physical modes | Block 23 permits a rank jump only if its origin and role are derived |
+| 4 | continuous Brillouin and Lorentzian closure | exact Ward rank/inertia across continuous momentum, then causal transfer/symplectic stability | all current source-mass/contact results are homogeneous Euclidean coefficients |
+| 5 | curved or massive alternative | derive the curvature/mass scale and causal stability instead of forcing `M_s=0` | cancellation is a selected massless-phase target, not a universal gravity requirement |
+
+The direct proper-length shortcut is retired. The highest-value path is now a
+genuine local joint action with wider geometry support or dynamical source
+variables, followed immediately by full nonuniform stationarity.

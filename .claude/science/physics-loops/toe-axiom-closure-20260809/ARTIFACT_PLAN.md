@@ -480,3 +480,27 @@ complete conditional nonlinear compact solution:
   controlled five-file current-main overlay passes all 18 stages at checkpoint
   `3e3feb9fed42`; changed evidence is clean for `1/1` Block-23 and `23/23`
   stacked claims
+
+## Block 24 — Proper-Length Source Contact And Connection Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_REGGE_PROPER_LENGTH_SOURCE_SEAGULL_SUPPORT_RANK_CONNECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner:
+  `scripts/admissibility_regge_proper_length_source_seagull_support_rank_connection_boundary_2026_08_10.py`
+- source/input-pinned cache:
+  `logs/runner-cache/admissibility_regge_proper_length_source_seagull_support_rank_connection_boundary_2026_08_10.txt`
+- packet scope: six-mode affine-metric embedding, all fifteen proper-length
+  variations, exact `2/3/4` source-support/contact ranks, support-confined
+  residual-rank theorem, sign-fixed and scalar-best contacts, fully stationary
+  geometry-connection/source-seagull cancellation, common six-edge spreading
+  escape, N1--N8, and sharpened unadopted local-action interface
+- exclusions: all geometry-spreading contacts, dynamical source/history
+  variables, partial-stationary reaction curvature, full nonuniform solutions,
+  continuous momentum, curved/massive interpretation, Lorentzian stability,
+  canonical axiom edits, fixed TOE movement, audit verdicts, and `review-loop`
+- validated execution: source/input-pinned cache `PASS=16 FAIL=0` in `13.91 s`;
+  all sixteen fresh-process runner-copy mutations fail at exactly one intended
+  named check (`PASS=16 FAIL=0`); citation graph `5,470/15,617`, new out-degree
+  four, with twelve helper runners; vocabulary, strict lint, premise purity,
+  model-family normalization, Python, YAML, whitespace, and cache gates pass;
+  exact pipeline, changed evidence, commits, and delivery remain pending

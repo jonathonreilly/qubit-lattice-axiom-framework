@@ -490,3 +490,26 @@ interpretation, causal inner product, Lorentzian signature, selected action,
 nonuniform background, or physical auxiliary-mode ontology is imported. No
 external science, axiom edit, percentage move, audit verdict, or `review-loop`
 is imported.
+
+## Block 24 Assumptions And Imports
+
+- Imported exactly: Block 23's six affine-metric physical modes and three
+  numerical full-rank `O(c)` coefficients, the exact fifteen-edge metric map,
+  and the three retained compact source rows.
+- Derived rather than imported: the proper-length first/second variation,
+  projected contact ranks `2/3/4`, the support-confined residual-rank bounds
+  `4/3/2`, stationary pullback cancellation, and the common six-edge escape.
+- The support-rank theorem assumes the new direct Hessian is confined to the
+  active edge coordinates of each source row. Geometry-spreading and
+  dynamical source terms explicitly violate that condition and remain live.
+- The coordinate-cancellation theorem assumes the source remains affine in
+  independent edge lengths and the complete action is fully stationary. The
+  ten-reaction homogeneous roots are not silently promoted to that condition.
+- The proper-length metric family is an explicit conditional rewrite, not a
+  selected matter law or fitted counterterm. The six-edge completion is a
+  target-tailored algebraic steelman, not a physical action.
+
+No external theorem, observed constant, fitted parameter, new premise,
+canonical axiom edit, percentage move, audit verdict, or `review-loop` is
+imported. Nonuniform source stationarity, action selection, locality,
+continuous momentum, Lorentzian dynamics, and nonlinear stability remain open.

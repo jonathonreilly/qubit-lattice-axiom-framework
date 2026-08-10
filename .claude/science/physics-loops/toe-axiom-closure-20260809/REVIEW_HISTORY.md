@@ -1423,3 +1423,31 @@ instance or Fourier census.
 - Science commit is `c236890389`; campaign conformance is `66d4cc0d56`. PR
   #6094 is open, mergeable, and `CLEAN`, stacked exactly on Block-22 delivery
   head `dc23e2f32f`. Independent audit remains required.
+
+## Block 24 Construction Record
+
+- Derived `d^2 ell_e=-r_e tensor r_e/ell_e` on the exact fifteen-edge metric
+  map and independently checked every first and mixed-second variation.
+- The six physical modes lie in the affine metric tangent with residual
+  `3.901e-15`; all three parent `M_s` remain rank six.
+- Active source counts, support-row ranks, and contact ranks are all `2/3/4`.
+  Sylvester therefore gives residual-rank bounds `4/3/2` for every
+  support-confined direct Hessian.
+- Sign-fixed proper-length contacts remain nonsingular. Even Frobenius-best
+  scalar multiples leave relative residuals `0.971376/0.934283/0.648075`.
+- At full stationarity the geometry connection `-C_s` and source seagull
+  `+C_s` cancel exactly. This coordinate identity is not applied to the
+  ten-reaction homogeneous roots without their missing connection terms.
+- A common six-edge chart with condition `1.834997` constructs exact
+  source-responsive completion below `7e-16`, defeating every broad no-go.
+- Primary source/input-pinned cache is fresh at `PASS=16 FAIL=0` in `13.91 s`
+  with five N5 lines. Vocabulary, strict lint, premise purity, model-family
+  normalization, Python, and whitespace gates pass.
+- Sixteen fresh-process runner-copy mutations each exit nonzero at exactly one
+  intended named check (`PASS=16 FAIL=0`).
+- Citation graph is `5,470` nodes / `15,617` edges; the new note has out-degree
+  four and twelve helper runners. Vocabulary, strict lint, premise purity,
+  model-family normalization, Python, YAML, whitespace, and source/input cache
+  gates pass.
+- Exact pipeline/overlay diagnosis, changed evidence, commits, and delivery
+  remain pending. Independent audit remains required.

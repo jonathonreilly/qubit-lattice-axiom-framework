@@ -847,3 +847,23 @@ direct Ward/seagull connection from one selected local joint action.
 After that, solve a nonuniform coupled background and certify continuous-
 momentum and Lorentzian nonlinear closure. Canonical axioms and the fixed TOE
 rubric remain unchanged.
+
+## Block 24 Goal Checkpoint
+
+The first direct-Ward/seagull transfer is now resolved. The proper-length
+source action touches only two, three, and four independent edge classes on
+the retained two-stream and bundle rows, so its six-mode contacts have ranks
+`2/3/4`. Every Block-23 coefficient has rank six. No support-confined direct
+contact can cancel it: the residual ranks are at least `4/3/2` for every
+coefficient and every scalar rescaling.
+
+A coordinate-only rescue is also closed. Rewriting the same affine edge
+source through metric or coframe coordinates produces a source seagull that
+exactly cancels the geometry connection at full stationarity; adding it alone
+would double count. A common six-edge chart proves that a geometry-spreading
+or dynamical source action remains algebraically capable of completion.
+
+The exact next obligation is therefore to derive that wider local action—or a
+`p=q=1` dynamical history/source sector—and solve a fully stationary
+nonuniform Ward-compatible background. Canonical axioms and the fixed TOE
+rubric remain unchanged.

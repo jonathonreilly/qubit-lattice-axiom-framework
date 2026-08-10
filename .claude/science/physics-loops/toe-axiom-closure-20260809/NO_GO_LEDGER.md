@@ -162,3 +162,15 @@ The strongest steelman is constructive: explicit per-branch six-mode and
 common eight-mode completions exist. The remaining question is not algebraic
 existence but which local source-responsive scaling branch is selected and
 causally stable.
+
+## Block 24 Proper-Length Contact And Coordinate-Transfer Boundaries
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| no direct Hessian confined to the active `2/3/4` edge coordinates of the retained source rows can cancel the rank-six `M_s` | exact factorization through an `m_s`-row restriction; `rank(M_s+D_s)>=6-m_s`; reconstructed proper-length ranks `2/3/4`; sign-fixed contacts remain nonsingular; scalar-best residuals `0.971/0.934/0.648` | pass only for the three retained rows, six homogeneous modes, and support-confined direct contacts | do not claim all local contacts, matter actions, seagulls, Regge gravity, or the axioms fail | six-edge geometry spreading, area/volume/simplex contacts, dynamical source variables, nonuniform closed histories, richer/perfect action, curved or massive phase |
+| a nonlinear metric/coframe rewrite of the same affine edge source is not an independent repair at full stationarity | exact chain rule: geometry connection `-C_s` plus source seagull `+C_s` is zero, leaving `L^dag H_g L` | pass only for an affine source in independent edge lengths at a fully stationary point | do not apply the cancellation to the reacted homogeneous roots without reaction/source-connection terms | partial-stationary constraint curvature, non-affine source action, mixed/source Schur blocks, full nonuniform generator |
+
+The strongest steelman is executed: one common well-conditioned six-edge
+physical chart supports source-responsive cancellation below `7e-16`. It is
+not a selected law, but it proves the negative is a support and coordinate
+boundary rather than a gravity no-go.

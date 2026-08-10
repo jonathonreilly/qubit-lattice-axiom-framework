@@ -434,3 +434,17 @@ mixing, or direct Ward/connection branch, then close a nonuniform background,
 continuous momentum, and Lorentzian nonlinear stability. The sharpened joint-
 action wording is unadopted; fixed TOE percentages and canonical axioms remain
 unchanged. No `review-loop` is used.
+
+Block 24 executes the direct proper-length seagull transfer left by Block 23.
+The six physical modes are affine-metric modes, but the retained source rows
+touch only two, three, and four independent edges. Their direct contacts have
+the same ranks and cannot cancel the rank-six source coefficients. A second
+exact theorem shows that a coordinate-only source seagull cancels the geometry
+connection at full stationarity rather than supplying a new interaction.
+
+Reachability remains `upstream_support`, not direct TOE closure. One common
+six-edge chart constructs coefficient cancellation and preserves a genuine
+geometry-spreading or dynamical `p=q=1` source action as the leading route.
+Full nonuniform stationarity, continuous momentum, and Lorentzian nonlinear
+stability remain open. Candidate wording is unadopted; fixed TOE percentages
+and canonical axioms remain unchanged. No `review-loop` is used.

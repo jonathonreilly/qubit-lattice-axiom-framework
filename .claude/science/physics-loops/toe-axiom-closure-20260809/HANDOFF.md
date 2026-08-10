@@ -1117,3 +1117,31 @@ action, then solve
 a nonuniform coupled background and certify continuous-zone Lorentzian
 nonlinear closure. No canonical edit, percentage move, audit verdict, or
 `review-loop` occurs.
+
+## Block 24 proper-length source-contact construction record
+
+- Reconstructed the Block-23 six-mode carrier and proved it lies in the exact
+  affine metric tangent to residual `3.901e-15`.
+- Derived the proper-length source contact on all fifteen actual edge classes.
+  The two-stream, Bundle-A, and Bundle-B contacts have ranks `2/3/4`, matching
+  their active source-edge restrictions.
+- Proved any direct Hessian confined to those source coordinates leaves
+  residual rank at least `4/3/2`; sign-fixed and optimally rescaled contacts
+  therefore cannot cancel the full-rank `M_s`.
+- Proved the fully stationary pullback identity: for the same affine edge
+  source, the apparent source seagull exactly cancels the geometry connection.
+  Adding it alone would double count a coordinate term.
+- Exhausted all six-edge charts and constructed one common condition-`1.835`
+  source-responsive algebraic escape with residual below `7e-16`, preserving
+  geometry-spreading and dynamical joint actions.
+- N1--N8 keeps nonuniform closed histories, partial-stationary constraint
+  curvature, `p=q=1` source dynamics, richer actions, and curved/massive phases
+  live. This is not a gravity no-go or axiom-necessity result.
+- Primary source/input-pinned cache is fresh at `PASS=16 FAIL=0` in `13.91 s`,
+  with all five N5 lines. All sixteen fresh-process runner-copy mutations fail
+  at exactly one intended named check (`PASS=16 FAIL=0`). The citation graph is
+  `5,470` nodes / `15,617` edges; the new node has out-degree four and twelve
+  helper runners. Direct vocabulary, strict lint, premise purity, model-family
+  normalization, Python, YAML, whitespace, and cache gates pass. Exact
+  pipeline, changed evidence, commits, and delivery remain pending. No
+  canonical edit, percentage move, audit verdict, or `review-loop` occurs.

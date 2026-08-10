@@ -641,3 +641,34 @@ independent_audit_required: true
 - Governance: N1--N8 restricts every exclusion to its declared coefficient and
   regularity class; no physical ghost, universal mode count, gravity no-go,
   axiom/primitive edit, audit verdict, fixed percentage, or `review-loop`.
+
+## Block 24 Proper-Length Contact Certificate
+
+- Claim type: `bounded_theorem`.
+- Carrier: the Block-23 six-mode frame lies in the affine metric tangent with
+  residual `3.901e-15` and induced Gram error `2.237e-15`.
+- Contact theorem: `d^2 ell_e=-r_e tensor r_e/ell_e`; the three proper-length
+  source contacts have ranks `2/3/4`, exactly their active-edge support ranks.
+- Support boundary: every direct Hessian confined to those active coordinates
+  leaves residual rank at least `4/3/2`; no scalar rescaling can cancel any
+  full-rank `M_s`.
+- Numerical control: sign-fixed contacted inertias are `3-/3+`, `3-/3+`, and
+  `2-/4+`, with minimum gap `0.000884`; Frobenius-best relative residuals are
+  `0.971376`, `0.934283`, and `0.648075`.
+- Coordinate theorem: at full stationarity for the affine edge source, the
+  geometry connection and source proper-length seagull cancel exactly; a
+  coordinate rewrite is not a new action.
+- Steelman: one common six-edge physical chart has condition `1.834997` and
+  admits source-responsive cancellation below `7e-16`.
+- Runner/cache: source/input pinned, `PASS=16 FAIL=0` in `13.91 s`, with all
+  five substantive N5 resolution lines.
+- Governance: N1--N8 applies only to support-confined contacts and the fully
+  stationary coordinate rewrite; no gravity no-go, axiom necessity, canonical
+  edit, audit verdict, percentage move, or `review-loop`.
+- Mutation sensitivity: all sixteen fresh-process runner-copy mutations exit
+  nonzero at exactly one intended named check (`PASS=16 FAIL=0`).
+- Citation graph: `5,470` nodes / `15,617` edges; new out-degree four and
+  twelve helper runners. Vocabulary, strict lint, premise purity, model-family
+  normalization, Python, YAML, whitespace, and cache gates pass.
+- Exact pipeline, changed evidence, commits, and delivery remain pending.
+  Independent audit is required.

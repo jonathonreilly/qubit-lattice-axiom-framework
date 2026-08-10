@@ -538,3 +538,20 @@ Block 23 proves that the Block-22 defect is algebraically repairable while
 preventing the coefficient factorization from being mistaken for a regular
 decoupled weak-source theory. The exact next decision is which scaling branch
 the local joint action realizes.
+
+## Block 24 Proper-Length Contact Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| proper-length source seagull | `U_s(g)=-c sum J_e sqrt(v_e^T g v_e)` | projected ranks `2/3/4`; every sign-fixed contact remains nonsingular | retire as a complete six-mode cancellation |
+| arbitrary active-support contact | any Hermitian Hessian on the source row's `2/3/4` edge coordinates | residual rank at least `4/3/2` | retire only this support-confined class |
+| coordinate-only metric/coframe rewrite | same affine edge source under `ell=ell(y)` | source seagull cancels geometry connection at full stationarity | do not count as a new action; adding one side double counts |
+| six-edge geometry spreading | common well-conditioned physical edge chart | source-responsive contacts cancel every `M_s` below `7e-16` | live algebraic interface; derive locality/covariance instead of fitting it |
+| dynamical history/source sector | complete mixed/source Hessian with `p=q=1` | capable of an `O(c)` Schur term | highest-priority physical construction alongside spreading contact |
+| nonuniform closed history | translated Ward-compatible source plus full field solution | not executed | required to replace the reacted homogeneous surrogate |
+| curved or massive phase | retain and interpret `M_s` with derived scale/stability | not excluded | live alternative to massless cancellation |
+
+Block 24 retires the naive direct-seagull transfer without broadening it into a
+gravity negative. The action must either spread a source insertion across at
+least six physical geometry combinations, introduce dynamical joint variables,
+or select and stabilize a curved/massive phase.

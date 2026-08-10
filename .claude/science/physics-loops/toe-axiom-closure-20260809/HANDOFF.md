@@ -239,8 +239,10 @@ out-degree four and the harness gains one row. Direct conformance passes. The
 full pipeline reaches only the known current-main dependency-policy epoch
 mismatch owned by PR #6061 after every earlier stage passes; 1,055 tracked
 generated changes and 818 generated ledger shards were cleaned. The canonical
-axiom memo and checkpoint-zero percentages remain unchanged. Continue without
-`review-loop`.
+axiom memo and checkpoint-zero percentages remain unchanged. The 18-file
+science delta is open as stacked PR #6074 at commit `8a3d56c830`, on the exact
+#6071 head; hard order is #6063, #6065, #6067, #6070, #6071, then #6074.
+Continue without `review-loop`.
 
 Next exact action: test a local tag-writing contact construction and its
 content-only storage type before asking for owner authority on the narrowed

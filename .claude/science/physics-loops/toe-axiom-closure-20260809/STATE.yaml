@@ -138,8 +138,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: exact center-independent Gaussian content uniformizer, fixed bounded decoder entire-response classification, finite-lambda pole mismatch, and condition-indexed threshold realization; physical selector/tag, effect quotient, occurrence, and history remain open
 hypothetical_axiom_status: stored preparation-program tag, explicitly indexed decoder, or selected alternate law shape plus same-effect descent and occurrence only; no axiom edit authorized
 review_disposition: block06_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: local_block06_stacked_on_open_6071
-pr_url: null
+pr_status: open_6074_stacked_on_open_6071
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6074
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

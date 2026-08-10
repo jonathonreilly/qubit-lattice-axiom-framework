@@ -409,4 +409,7 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   new ledger shards after verifying every untracked path lay under
   `docs/audit/data/ledger/`. The intended staged delta remains exact.
 - The canonical axiom memo is unchanged, no percentage moves, and no
-  `review-loop` is invoked. Final cold diff and stacked delivery remain.
+  `review-loop` is invoked. The final cold diff passed. Committed the 18-file
+  science delta as `8a3d56c830`, pushed the dedicated branch, and opened PR
+  #6074 on the exact #6071 head. Hard landing order is #6063, #6065, #6067,
+  #6070, #6071, then #6074.

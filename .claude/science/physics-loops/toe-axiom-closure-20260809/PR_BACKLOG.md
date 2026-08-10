@@ -60,7 +60,7 @@ science commit `517f6d74d7`, on the exact #6070 head. Hard landing order is
 #6063, #6065, #6067, #6070, then #6071. The canonical axiom memo remains
 untouched; no `review-loop` is used.
 
-Block 6 is under direct self-review on branch
+Block 6 is open on branch
 `physics-loop/toe-axiom-closure-block06-20260810`, stacked on the exact PR
 #6071 head `1971fe51962e05b0b70a5723fd955c27f9067d0b`. The theorem constructs a
 single center-independent Gaussian content uniformizer, classifies every fixed
@@ -72,8 +72,10 @@ families. N1--N8 rejects any global decoder/Record no-go. Harness/graph
 registration and direct conformance pass. The full pipeline reaches only PR
 #6061's current-main dependency-policy epoch stop after all earlier stages
 pass; 1,055 tracked generated changes and 818 new ledger shards were cleaned.
-Final cold diff and stacked delivery remain. The canonical axiom memo remains
-untouched; no `review-loop` is used.
+Final cold diff passed. Opened: PR #6074, science commit `8a3d56c830`, on the
+exact #6071 head. Hard landing order is #6063, #6065, #6067, #6070, #6071,
+then #6074. The canonical axiom memo remains untouched; no `review-loop` is
+used.
 
 Completed Block 1 delivery checklist:
 

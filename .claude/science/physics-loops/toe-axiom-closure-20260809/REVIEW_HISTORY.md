@@ -1268,4 +1268,16 @@ instance or Fourier census.
   The added controls cover the coefficient-window note contract, `k=0` and
   finite crossing margins, periodic normalization, correction-quotient
   positivity, and infrared order.
-- Citation refresh, direct conformance, commit, and push remain pending.
+- Citation registration remains `5,466` nodes / `15,593` edges with the
+  strengthened note at out-degree eight and eight helper runners.
+- Vocabulary reports zero violations; strict audit lint has zero errors;
+  premise purity, model-family normalization, Python compilation, YAML,
+  whitespace, source-pinned cache, graph/link/class-F invariants, and
+  canonical nonmutation pass.
+- The exact stacked pipeline reaches only the inherited stage-7 dependency-
+  policy epoch mismatch after a `4,804`-row fixed point and `3,682` runner
+  classifications. A clean five-file overlay of current-main commit
+  `39c74017b8` passes all 18 stages.
+- Changed-evidence readiness checks the extension alone and all 20 stacked
+  claims with zero failures or control failures. Extension science commit is
+  `d2223e5a3d`; conformance commit and delivery recording remain pending.

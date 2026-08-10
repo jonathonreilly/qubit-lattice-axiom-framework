@@ -1007,3 +1007,11 @@ live. N1--N8 passes only at this narrow scope. The primary runner is
 at exactly one intended named check each (`PASS=18 FAIL=0`). The cluster
 verdict is `FOLD` into PR #6091; do not open another adjacent gravity PR. No
 canonical edit, audit verdict, percentage move, or `review-loop` occurs.
+
+Direct conformance passes. The exact stack reaches only the inherited
+dependency-policy epoch mismatch after `5,466` graph nodes / `15,593` edges,
+`4,804` seeded rows, and `3,682` runner classifications. A clean disposable
+overlay of current-main commit `39c74017b8` passes all 18 stages. Seeded
+changed-evidence readiness checks the extension alone and all 20 stacked
+claims with no failures or control failures. Extension science commit is
+`d2223e5a3d`; delivery recording remains pending.

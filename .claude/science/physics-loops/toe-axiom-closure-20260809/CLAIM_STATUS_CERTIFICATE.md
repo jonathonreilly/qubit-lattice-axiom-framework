@@ -521,3 +521,8 @@ independent_audit_required: true
 - The source/input-pinned primary runner is fresh at `PASS=16 FAIL=0`.
   Eighteen fresh-process runner-copy mutations each fail exactly one intended
   named check, for an aggregate `PASS=18 FAIL=0` mutation result.
+- Direct gates pass. The exact stack reproduces only its inherited
+  dependency-policy epoch mismatch; the controlled current-main overlay
+  passes all 18 pipeline stages. Changed evidence marks the extension alone
+  and all 20 stacked claims forensic-ready with no failures or control
+  failures. Independent audit remains required.

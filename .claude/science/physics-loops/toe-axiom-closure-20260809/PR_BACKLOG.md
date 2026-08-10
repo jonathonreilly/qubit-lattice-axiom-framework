@@ -293,8 +293,13 @@ range, and endpoint infrared controls. N1--N8 rejects a universal coefficient
 no-go; the extension cluster-cap verdict is `FOLD`, so no Block-21 PR will be
 opened. The refreshed primary cache is `PASS=16 FAIL=0`, and all 18
 fresh-process runner-copy mutations fail at exactly one intended named check
-each (`PASS=18 FAIL=0`). Citation refresh, direct conformance, commit, and push
-remain to be recorded.
+each (`PASS=18 FAIL=0`). Citation registration remains `5,466` nodes /
+`15,593` edges. The exact-stack pipeline reproduces only the inherited
+dependency-policy epoch mismatch after `4,804` rows and `3,682` runner
+classifications; a five-file current-main policy overlay passes all 18 stages.
+Changed-evidence readiness is clean for the extension alone and all 20 stacked
+claims. Extension science commit is `d2223e5a3d`; conformance delivery remains
+to be recorded.
 
 Block 16 is being packaged on branch
 `physics-loop/toe-axiom-closure-block16-network-20260810`, based on exact

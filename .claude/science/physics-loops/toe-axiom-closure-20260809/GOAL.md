@@ -777,6 +777,14 @@ finite-mode crossing margins, the correction-quotient positivity margin, and
 the infrared-order control; the aggregate mutation result is
 `PASS=18 FAIL=0`.
 
+Direct conformance passes. The exact stacked tree rebuilds `5,466` citation
+nodes / `15,593` edges, seeds `4,804` ledger rows, and classifies `3,682`
+runners before reproducing only the inherited stage-7 dependency-policy epoch
+mismatch. A disposable overlay of current-main commit `39c74017b8` changes
+exactly the five governed policy files and passes all 18 pipeline stages.
+Changed-evidence readiness marks the extension alone and all 20 stacked claims
+forensic-ready with zero failures or control failures.
+
 This closes the bounded linear-selector question negatively without claiming
 that stronger physics cannot select a coefficient. N1--N8 preserves the
 continuous-zone, nonlinear, Lorentzian, coarse-grained, background, and

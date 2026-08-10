@@ -418,4 +418,13 @@ closed. The citation graph is 5,456 nodes / 15,537 edges; the new note has
 out-degree six and the harness supplies one additional edge. The canonical
 axiom memo remains untouched. Vocabulary, strict audit lint, graph/link/class-F
 invariants, YAML, Python, whitespace, exact-delta, source-link, and cache gates
-pass. The fixed TOE percentages do not move, and no `review-loop` is invoked.
+pass. Changed-evidence readiness checks the Block 10 claim and all ten stacked
+claims with no failures or control failures. The isolated pipeline reaches
+only PR #6061's known dependency-policy epoch mismatch after all earlier
+stages pass; its 1,066 tracked generated paths and 822 new ledger shards were
+removed with the disposable worktree.
+
+The 18-file science delta is commit `85dc90b6a5` and is open as stacked PR
+#6078 on the exact #6077 head. Hard landing order is #6063, #6065, #6067,
+#6070, #6071, #6074, #6075, #6076, #6077, then #6078. The fixed TOE
+percentages do not move, and no `review-loop` is invoked.

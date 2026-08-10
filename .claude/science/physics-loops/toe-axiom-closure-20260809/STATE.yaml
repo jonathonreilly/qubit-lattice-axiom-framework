@@ -208,9 +208,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: exact regular-graph cut-area action, cubic closed dual surface, local flip law, directional covariance response, endpoint source-improvement family, conditional Poisson contact response, and fixed-background metric-extension nonuniqueness; physical action licensing, geometry family, Ward conservation, field equation, coupling, continuous M2, dynamics, history, and gravity remain open
 hypothetical_axiom_status: a weak equal-endpoint interface-source convention and a stronger projectively consistent geometry-family log-law/source-variation clause are sufficient bridge shapes; neither is adopted, proved necessary, claimed minimal, or edited into the axioms
-review_disposition: block10_direct_self_review_passed_pipeline_pending
-pr_status: pending_stacked_on_open_6077
-pr_url: null
+review_disposition: block10_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: open_6078_stacked_on_open_6077
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6078
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

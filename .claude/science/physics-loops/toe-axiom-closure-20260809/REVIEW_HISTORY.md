@@ -596,6 +596,19 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   out-degree six and the harness contributes one additional edge. Vocabulary,
   strict audit lint, graph/link/class-F invariants, YAML, Python, whitespace,
   exact 18-file delta, source links, runner cache, and axiom checksum pass.
-  Isolated-pipeline evidence remains pending at this record.
+  Changed-evidence readiness checks one Block 10 claim and all ten stacked
+  claims with no failures or control failures.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph construction, manifest writing, load-bearing
+  computation, ledger seeding, sanitization, classifier capture, effective-
+  status computation, and stale-audit invalidation. Restoration then
+  reproduces PR #6061's known dependency-policy epoch mismatch: expected
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  current `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  The disposable worktree held 1,066 tracked generated paths and 822 new
+  ledger shards, all removed with the worktree.
 - The canonical axiom memo is byte-identical to the stacked base, no
-  percentage moves, and no `review-loop` is invoked.
+  percentage moves, and no `review-loop` is invoked. Committed the 18-file
+  science delta as `85dc90b6a5`, pushed the dedicated branch, and opened
+  mergeable stacked PR #6078 on the exact #6077 head. Hard landing order is
+  #6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, then #6078.

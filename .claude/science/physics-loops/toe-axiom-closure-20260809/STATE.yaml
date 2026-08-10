@@ -92,9 +92,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: exact decoder-partition equivalence, paired Gaussian decoder nonselection, and contextual shared-effect separation; physical decoder and effect quotient remain open
 hypothetical_axiom_status: refined decoder-plus-effect-quotient candidate wording only; no axiom edit authorized
-review_disposition: block03_ready_to_commit
-pr_status: block03_local_stacked_on_open_6065
-pr_url: null
+review_disposition: block03_open_6067_self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: open_6067_stacked_on_open_6065
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6067
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -121,5 +121,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: cold-read the final stacked delta, commit and push Block 3, then open its PR on 6065 without editing canonical axioms
+next_exact_action: launch Block 4 from PR 6067 and attack a physical program-indexed decoder and operational-effect quotient via locked-output CP operations and the existing coarse-CP quotient, without editing canonical axioms
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

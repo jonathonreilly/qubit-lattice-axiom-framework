@@ -210,5 +210,12 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   recoverable by rerunning the pipeline.
 - The canonical axiom memo remains byte-identical to `origin/main`. The exact
   stacked merge base and current HEAD are both
-  `e4610cbb4d3217b05481b8ba00b34ab63579ff0f`. Remaining: final cold diff,
-  commit, push, and stacked PR. `review-loop` remains unused.
+  `e4610cbb4d3217b05481b8ba00b34ab63579ff0f`. The final cold diff passed.
+- Committed the 18-file delta as `4374cbd5b9`, pushed the dedicated branch,
+  and opened stacked PR #6067 on the exact PR #6065 head. GitHub reports the
+  PR mergeable; hard order is #6063, #6065, then #6067.
+- A final live-PR sweep found new PR #6066. Its nine-file bounded corpus
+  measurement reports axiom-fidelity consumer counts and no axiom or primitive
+  change; it does not supply a content decoder, operational-effect quotient,
+  endpoint law, or universal program family, so it does not collide with this
+  block. `review-loop` remains unused here.

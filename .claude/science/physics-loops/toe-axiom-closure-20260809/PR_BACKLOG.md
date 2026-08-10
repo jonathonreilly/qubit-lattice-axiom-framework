@@ -24,7 +24,8 @@ constructed. Fifteen mutation probes fail closed and an independent SymPy
 recomputation agrees. Direct repository conformance passes; the full pipeline
 reproduces only PR #6061's current-main dependency-policy epoch stop, and all
 generated residue has been removed. Commit, push, and stacked PR delivery
-remain. The canonical axiom memo remains untouched.
+are complete. Opened: PR #6067, commit `4374cbd5b9`. Hard landing order is
+#6063, then #6065, then #6067. The canonical axiom memo remains untouched.
 
 Completed Block 1 delivery checklist:
 

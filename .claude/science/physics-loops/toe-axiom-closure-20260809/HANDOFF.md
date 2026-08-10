@@ -105,5 +105,14 @@ reproduces only the current-main dependency-policy epoch stop owned by PR
 #6061; 1,047 tracked generated changes and 815 generated ledger shards were
 cleaned afterward. The graph is regenerated at 5,449 nodes / 15,496 edges with
 the intended one-node/seven-edge delta. The canonical axiom memo is unchanged.
-Final cold diff, commit, push, and the PR stacked on #6065 remain. Continue
-without `review-loop`.
+The 18-file delta is open as stacked PR #6067 at commit `4374cbd5b9`, on the
+exact #6065 head; hard order is #6063, #6065, then #6067. New PR #6066 is a
+bounded axiom-fidelity corpus measurement and supplies none of the remaining
+decoder/effect interfaces. Continue without `review-loop`.
+
+Next campaign block: attack the physical program-indexed decoder and
+operational-effect quotient constructively. Start from the locked-output CP
+operation normal form and Cycle 321's coarse-CP quotient; require an explicit
+contact/pointer encoding before treating a decoder as physical. If that route
+only relocates the target, state the exact residual rather than editing the
+canonical axiom memo.
